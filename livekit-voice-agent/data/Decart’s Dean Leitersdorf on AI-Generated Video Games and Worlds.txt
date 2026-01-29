@@ -1,0 +1,3676 @@
+00:00 so we we we launched the ois a few weeks
+00:02 
+
+00:02 ago and really you know when we launch
+00:05 
+
+00:05 it the the incredible thing from a tech
+00:06 
+
+00:06 perspective was oh this is the first
+00:08 
+
+00:08 video model that actually runs real time
+00:10 
+
+00:10 and you can interact with it in response
+00:11 
+
+00:11 to user actions you can move around the
+00:13 
+
+00:13 world you can break blocks you can place
+00:15 
+
+00:15 blocks and so we we got this this nice
+00:17 
+
+00:17 game without a game engine okay but
+00:20 
+
+00:20 that's not interesting why is this
+00:22 
+
+00:22 actually interesting and so to answer
+00:24 
+
+00:24 that forget about Oasis Oasis one think
+00:27 
+
+00:27 about say Oasis 3 okay
+00:31 
+
+00:31 and and imagine this so imagine for a
+00:34 
+
+00:34 sec just just go just put Tech aside for
+00:36 
+
+00:36 a second imagine you're looking at a
+00:38 
+
+00:38 mirror okay and you have this magical
+00:41 
+
+00:41 mirror you can you can talk to it okay
+00:43 
+
+00:43 you can you can tell it to do cool
+00:44 
+
+00:44 things you can say hey I'm I'm here and
+00:46 
+
+00:46 here's my hand and I want I want to hold
+00:48 
+
+00:48 a sword okay can you give me a sword and
+00:50 
+
+00:50 then you look at yourself in the mirror
+00:50 
+
+00:50 and boom there's a sword in the mirror
+00:52 
+
+00:52 where your where your hand is okay and
+00:54 
+
+00:54 and you move your hand around and the
+00:55 
+
+00:55 sword moves and you can be like no no no
+00:57 
+
+00:57 make the sword bigger or make it blue
+00:59 
+
+00:59 and it changes and you can be like okay
+01:00 
+
+01:00 now turn me into Game of Thrones and
+01:03 
+
+01:03 everything around you become Game of
+01:04 
+
+01:04 Thrones and then you get a crown and
+01:05 
+
+01:05 everything and you can be like I don't
+01:06 
+
+01:06 let my crown change it a bit and then
+01:08 
+
+01:08 you start jumping and you move around
+01:10 
+
+01:10 and and the mirror responds to that
+01:14 
+
+01:14 okay and that's interesting now the
+01:17 
+
+01:17 reason that's interesting is because
+01:19 
+
+01:19 it's a completely different experience
+01:21 
+
+01:21 than anything we've had before on Earth
+01:25 
+
+01:25 and it it allows us to to to kind of
+01:27 
+
+01:27 Channel our imagination through through
+01:29 
+
+01:29 screens that we can see it connects it
+01:31 
+
+01:31 connects two things it connects the what
+01:32 
+
+01:32 we see in our minds and what we can see
+01:34 
+
+01:34 with our eyes and so that's that's where
+01:37 
+
+01:37 we're going with this how can we in in a
+01:40 
+
+01:40 sentence how can gen AI really allow us
+01:43 
+
+01:43 to connect our imagination to what we
+01:45 
+
+01:45 see on our
+01:47 
+
+01:47 screens and with that we can take it
+01:50 
+
+01:50 into into really worlds that we didn't
+01:52 
+
+01:52 explore before it it can change
+01:53 
+
+01:53 everything from applications we can't we
+01:55 
+
+01:55 can't do today all the way to how we
+01:57 
+
+01:57 even interact with with computers with
+02:01 
+
+02:01 [Music]
+02:17 
+
+02:17 Hardware hey everyone I'm sha McGuire
+02:20 
+
+02:20 I'm a partner at sequa Capital today my
+02:22 
+
+02:22 partner Sonia hang and I are going to
+02:24 
+
+02:24 interview Dean ladder storf Dean is a
+02:26 
+
+02:26 brilliant young mind he grew up back and
+02:29 
+
+02:29 forth between Israel and the United
+02:30 
+
+02:30 states he was the youngest person ever
+02:32 
+
+02:32 to get a PhD from the tech neon at
+02:33 
+
+02:33 Israel at 23 years old at least until
+02:36 
+
+02:36 his younger brother beat him and got his
+02:38 
+
+02:38 PhD when he was 21 Dart is trying to
+02:42 
+
+02:42 deliver delightful AI
+02:45 
+
+02:45 experiences really trying to let people
+02:47 
+
+02:47 interact with their imagination and
+02:49 
+
+02:49 other people's imaginations in a way
+02:51 
+
+02:51 that's never been possible before to do
+02:53 
+
+02:53 this they are fully vertically
+02:55 
+
+02:55 integrated optimizing everything from as
+02:57 
+
+02:57 low level as Cuda kernels up to
+02:59 
+
+02:59 designing their own own models training
+03:01 
+
+03:01 the models and then at the end of the
+03:03 
+
+03:03 day delivering experiences over the next
+03:05 
+
+03:05 few months we're going to see some
+03:07 
+
+03:07 pretty impressive launches from these
+03:10 
+
+03:10 guys Dean thank you for joining us today
+03:13 
+
+03:13 I was just playing Oasis this morning I
+03:14 
+
+03:14 had so much fun so let me start by
+03:16 
+
+03:16 asking Oasis a fully playable AI game
+03:20 
+
+03:20 engine it's like what is it why did you
+03:21 
+
+03:21 launch it about Oasis so we we we
+03:23 
+
+03:23 launched o OES a few weeks
+03:25 
+
+03:25 ago and really you know when we launched
+03:28 
+
+03:28 it the the incredible thing from a tech
+03:29 
+
+03:29 perspective was this is the first video
+03:31 
+
+03:31 model that actually runs real time and
+03:33 
+
+03:33 you can interact with it in response to
+03:34 
+
+03:34 user actions you can move around the
+03:36 
+
+03:36 world you can break blocks you can place
+03:37 
+
+03:37 blocks and so we we got this this nice
+03:40 
+
+03:40 game without a game engine okay but
+03:43 
+
+03:43 that's not interesting why is this
+03:45 
+
+03:45 actually interesting and so to answer
+03:46 
+
+03:46 that forget about Oasis Oasis one think
+03:50 
+
+03:50 about say Oasis 3 okay and and imagine
+03:54 
+
+03:54 this so imagine for a sec just just go
+03:57 
+
+03:57 just put Tech aside for a second imagine
+03:60 
+
+03:60 you're looking at a
+04:01 
+
+04:01 mirror okay and you have this magical
+04:03 
+
+04:03 mirror that you can you can talk to it
+04:05 
+
+04:05 okay you can you can tell it to do cool
+04:07 
+
+04:07 things you can say hey I'm I'm here and
+04:09 
+
+04:09 here's my hand and I want I want to hold
+04:11 
+
+04:11 a sword okay can you give me a sword and
+04:12 
+
+04:12 then you look at yourself in the mirror
+04:13 
+
+04:13 and boom there's a sword in the mirror
+04:15 
+
+04:15 where your where your hand is okay and
+04:17 
+
+04:17 and you move your hand around and the
+04:18 
+
+04:18 sword moves and you can be like no no no
+04:19 
+
+04:19 make the sword bigger make it blue and
+04:22 
+
+04:22 it changes and you can be like okay now
+04:23 
+
+04:23 turn me into Game of Thrones and
+04:26 
+
+04:26 everything around you become Game of
+04:27 
+
+04:27 Thrones and you get a crown and
+04:28 
+
+04:28 everything and you can be like I don't
+04:29 
+
+04:29 like my crown change it a bit and then
+04:31 
+
+04:31 you start jumping and you move around
+04:33 
+
+04:33 and and the mere response to that
+04:37 
+
+04:37 okay and that's interesting now the
+04:40 
+
+04:40 reason that's interesting is because
+04:41 
+
+04:41 it's a completely different experience
+04:44 
+
+04:44 than anything we've had before on Earth
+04:47 
+
+04:47 and it it allows us to to to kind of
+04:50 
+
+04:50 Channel our imagination through through
+04:51 
+
+04:51 screens that we can see it connects it
+04:54 
+
+04:54 connects two things it connects the what
+04:55 
+
+04:55 we see in our minds and what we can see
+04:57 
+
+04:57 with our eyes and so that's that's where
+04:60 
+
+05:00 we're going with this how can we in in a
+05:03 
+
+05:03 sentence how can geni really allow us to
+05:06 
+
+05:06 connect our imagination to what we see
+05:09 
+
+05:09 on our
+05:10 
+
+05:10 screens and with that we can take it
+05:13 
+
+05:13 into into really worlds that we didn't
+05:14 
+
+05:14 explore before it it can change
+05:16 
+
+05:16 everything from applications we can't we
+05:18 
+
+05:18 can't do today all the way to how we
+05:20 
+
+05:20 even interact with with computers or
+05:23 
+
+05:23 with Hardware I love the mirror let's
+05:25 
+
+05:25 let's take it further where where are
+05:27 
+
+05:27 you going with that is this is this a
+05:29 
+
+05:29 social media thing is this are you
+05:31 
+
+05:31 building a game are you building a world
+05:34 
+
+05:34 you know a world model an interactive
+05:36 
+
+05:36 World model like how should I think
+05:37 
+
+05:37 about you know what is dcart what is
+05:39 
+
+05:39 oasis so let me ask you
+05:42 
+
+05:42 this what problem does chat gbt solve
+05:46 
+
+05:46 homework homework great and what else
+05:48 
+
+05:48 ises it all it makes it easier to talk
+05:50 
+
+05:50 to computers nice Sean knows the answer
+05:53 
+
+05:53 because CU I spent a lot of time with
+05:55 
+
+05:55 you Sean classic Sean I spent a lot of
+05:58 
+
+05:58 time with you but exactly that the tldr
+06:00 
+
+06:00 is changy but he doesn't solve any given
+06:02 
+
+06:02 problem it's it helps you do your
+06:03 
+
+06:03 homework better it helps you write
+06:04 
+
+06:04 emails it helps you summarize exactly
+06:07 
+
+06:07 now it doesn't solve a problem it
+06:10 
+
+06:10 overcomes some fundamental limitation
+06:11 
+
+06:11 which is exactly what Sean was saying
+06:13 
+
+06:13 that it overcomes this communication
+06:14 
+
+06:14 barrier between humans and computers
+06:16 
+
+06:16 computers speak in structured languages
+06:18 
+
+06:18 humans in unstructured languages or in
+06:20 
+
+06:20 languages with complex structure that
+06:23 
+
+06:23 llms just bridge that Gap and let
+06:25 
+
+06:25 computers and machines interact with
+06:26 
+
+06:26 each other in in a language that we can
+06:28 
+
+06:28 both understand
+06:30 
+
+06:30 that itself the second you have that you
+06:32 
+
+06:32 get a hundred different things that are
+06:34 
+
+06:34 solved on top of that so what you get
+06:36 
+
+06:36 with the mirror or what you get with
+06:38 
+
+06:38 with generative interactive video is you
+06:42 
+
+06:42 get that communication barrier now
+06:44 
+
+06:44 overcome not just with text but also
+06:47 
+
+06:47 with what we can see now computers will
+06:49 
+
+06:49 be able to see the world the way we see
+06:51 
+
+06:51 it and they'll be able to show us the
+06:52 
+
+06:52 world in ways that we can understand and
+06:56 
+
+06:56 you solve that you solve you give your
+06:59 
+
+06:59 you build a platform form that allows
+07:00 
+
+07:00 you to build everything on top of that
+07:02 
+
+07:02 from nextg Snapchat or Tik Tok to
+07:06 
+
+07:06 simulators for for fighter
+07:08 
+
+07:08 pilots okay and that's and that's the
+07:11 
+
+07:11 cool thing here and that's if you know
+07:13 
+
+07:13 now we're in
+07:15 
+
+07:15 2024 I think one of the one of the most
+07:17 
+
+07:17 fun things we had at the cart is that
+07:19 
+
+07:19 we're founding a
+07:21 
+
+07:21 company when you have an opportunity to
+07:23 
+
+07:23 build something that doesn't solve a
+07:25 
+
+07:25 problem but overcomes a limitation 99%
+07:27 
+
+07:27 of companies solve problems when when
+07:30 
+
+07:30 when you look at companies that come to
+07:31 
+
+07:31 pitch seya or pitch any other VC they
+07:33 
+
+07:33 start with here's the problem here's how
+07:35 
+
+07:35 big the problem is that's her Tam and
+07:37 
+
+07:37 everything and here's how you're going
+07:39 
+
+07:39 to solve the problem and usually the
+07:41 
+
+07:41 first two stay the same otherwise you
+07:43 
+
+07:43 call it a pivot right you say okay this
+07:45 
+
+07:45 the problem I'm solving if you change
+07:46 
+
+07:46 the problem you're solving you call that
+07:47 
+
+07:47 a pivot and you 500 times you change the
+07:50 
+
+07:50 way you're going to solve it that's 99%
+07:52 
+
+07:52 of companies and that's we can do in any
+07:55 
+
+07:55 regular
+07:56 
+
+07:56 year there moments in history recently
+07:60 
+
+07:60 it's been like once every decade maybe
+08:02 
+
+08:02 15 years that you actually have the
+08:04 
+
+08:04 chance to build something that doesn't
+08:06 
+
+08:06 solve a problem but just overcomes a
+08:08 
+
+08:08 limitation
+08:10 
+
+08:10 and let me ask you this in a different
+08:12 
+
+08:12 way is the Mac a consumer product or an
+08:16 
+
+08:16 Enterprise
+08:18 
+
+08:18 product and is it a hardware company or
+08:20 
+
+08:20 a software is a hardware company or a
+08:21 
+
+08:21 software company and and what problem
+08:23 
+
+08:23 does it solve okay and it's if you try
+08:27 
+
+08:27 to give me a list of problems that the
+08:28 
+
+08:28 personal computer olves you'd have
+08:31 
+
+08:31 everything from gaming to
+08:34 
+
+08:34 Excel and that's a nice thing about this
+08:37 
+
+08:37 that you you're you're building an
+08:39 
+
+08:39 insane piece of tech that you'll be able
+08:40 
+
+08:40 to productize in so many different ways
+08:42 
+
+08:42 yeah I love that one of the things that
+08:45 
+
+08:45 was so cool about what you've built is
+08:46 
+
+08:46 that there's no game engine inside as as
+08:49 
+
+08:49 far as I can tell like what do you think
+08:51 
+
+08:51 that means like do you think do you
+08:52 
+
+08:52 think that game engines are an artifact
+08:54 
+
+08:54 of the past or like what does that mean
+08:57 
+
+08:57 game engines were supposed to make it
+09:00 
+
+09:00 so that we can so that one player one
+09:02 
+
+09:02 one person can create a world and a
+09:05 
+
+09:05 different person can interact with that
+09:06 
+
+09:06 world right that that's that's the
+09:08 
+
+09:08 purpose of game engines you have the
+09:09 
+
+09:09 game developer and you have the the user
+09:11 
+
+09:11 that uses that and it might go for also
+09:13 
+
+09:13 for movies or whatever other people use
+09:15 
+
+09:15 game engines for uh right unreal has
+09:17 
+
+09:17 been used for movies a lot recently as
+09:20 
+
+09:20 well now that was that that is a very
+09:23 
+
+09:23 valuable product and it has it has lots
+09:25 
+
+09:25 of advantages to it the the world is
+09:27 
+
+09:27 very consistent you can you can really
+09:29 
+
+09:29 make things very accurate the problem is
+09:32 
+
+09:32 that it does take a lot of time to to
+09:34 
+
+09:34 interact with it people people like
+09:36 
+
+09:36 taking the basic game and like turning
+09:39 
+
+09:39 into a bunch of different things and you
+09:41 
+
+09:41 know it's it's as we as we got into this
+09:43 
+
+09:43 and we actually saw what people do with
+09:44 
+
+09:44 it do you know there's an actual mod to
+09:46 
+
+09:46 put Pokemon inside Minecraft okay you
+09:49 
+
+09:49 can walk around the forest and there
+09:50 
+
+09:50 there's Pokemon running around that's an
+09:52 
+
+09:52 actual mod someone built okay and so
+09:55 
+
+09:55 people inherently have this oh we have
+09:58 
+
+09:58 we got this platform and we want to
+09:59 
+
+09:59 change so that's a nice thing about mods
+10:02 
+
+10:02 what you get here is that because what's
+10:05 
+
+10:05 running your your game or your
+10:07 
+
+10:07 environment is an AI you can interact
+10:10 
+
+10:10 with it in the ways we're used to
+10:11 
+
+10:11 interacting with AI you'd be able to say
+10:13 
+
+10:13 hey can you can you turn this into like
+10:15 
+
+10:15 Elsa themed and then boom everything
+10:17 
+
+10:17 becomes El themed and can you can you
+10:18 
+
+10:18 add a flying elephant and there's a
+10:20 
+
+10:20 flying elephant in the game and it's not
+10:22 
+
+10:22 just there as a picture you can actually
+10:23 
+
+10:23 interact with it you can you know like I
+10:25 
+
+10:25 know punch the elephant and it punches
+10:26 
+
+10:26 you back or whatever whatever you can do
+10:27 
+
+10:27 with the elephants and
+10:31 
+
+10:31 so I think that if the if this trend
+10:34 
+
+10:34 were to replace game engines it would
+10:35 
+
+10:35 have to be at the state that you can
+10:37 
+
+10:37 program for it so that it's it's some
+10:40 
+
+10:40 machine that one person can build worlds
+10:43 
+
+10:43 on and the other can interact
+10:45 
+
+10:45 with and that is definitely coming and
+10:48 
+
+10:48 not only that it's going to be much
+10:50 
+
+10:50 easier to to program for this you can
+10:52 
+
+10:52 just use words you don't have to write
+10:54 
+
+10:54 code and and even if you if even if you
+10:56 
+
+10:56 do know how to write code you can
+10:58 
+
+10:58 iterate so much faster on it
+11:01 
+
+11:01 so basically to summarize this I think
+11:04 
+
+11:04 what what this will allow us to do is
+11:06 
+
+11:06 we'll just get we'll get modding much
+11:08 
+
+11:08 much much much much faster and we'll get
+11:10 
+
+11:10 interactive
+11:12 
+
+11:12 modding to get a little more technical
+11:15 
+
+11:15 for a second um like you're the first
+11:18 
+
+11:18 video model I've ever seen that has
+11:20 
+
+11:20 real-time inference what are some of the
+11:22 
+
+11:22 things that go into having real- time
+11:24 
+
+11:24 inference like you know how hard is it
+11:26 
+
+11:26 and just like give us give us some of
+11:28 
+
+11:28 the flavors of what goes into that if we
+11:31 
+
+11:31 go back like 3 four months like back to
+11:33 
+
+11:33 the
+11:34 
+
+11:34 summer I I don't remember where this was
+11:37 
+
+11:37 published but there were a few headlines
+11:38 
+
+11:38 about oh when blackw chips come out when
+11:42 
+
+11:42 VI's blackw chips come out we'll get
+11:44 
+
+11:44 realtime video okay Hoppers just can't
+11:47 
+
+11:47 do it the h100s can't do it we have to
+11:49 
+
+11:49 wait for nvidia's next generation and
+11:52 
+
+11:52 and I I think I heard this from from
+11:53 
+
+11:53 quite a few different sources it was
+11:55 
+
+11:55 there was there was there were like two
+11:57 
+
+11:57 weeks during the summer where everyone
+11:58 
+
+11:58 was saying that for some reason
+12:00 
+
+12:00 okay and and no h100s can actually do it
+12:04 
+
+12:04 okay and to to pull that off you have to
+12:08 
+
+12:08 do two things at once you have to change
+12:11 
+
+12:11 a lot of things around the model itself
+12:14 
+
+12:14 not every video model can be run real
+12:16 
+
+12:16 time you have to train the model
+12:17 
+
+12:17 differently the architecture needs to
+12:19 
+
+12:19 look different now it's it's not major
+12:22 
+
+12:22 architectural changes but you do have to
+12:24 
+
+12:24 make them on the other hand you also
+12:26 
+
+12:26 have to do lots of the systems level
+12:28 
+
+12:28 stuff you actually have to write your
+12:29 
+
+12:29 own kud kernels you have to write we
+12:31 
+
+12:31 threw out like pie torches garbage
+12:33 
+
+12:33 collector and like half of it from
+12:35 
+
+12:35 scratch okay and you really have to
+12:37 
+
+12:37 write everything on the systems level as
+12:38 
+
+12:38 well to actually pull this off so
+12:42 
+
+12:42 because if you do only one of the two
+12:44 
+
+12:44 you'll be waiting for someone else to do
+12:46 
+
+12:46 the other half for you if you if you're
+12:48 
+
+12:48 only doing the systems level part then
+12:51 
+
+12:51 you won't be able to pull this off
+12:52 
+
+12:52 because you won't have a model that
+12:53 
+
+12:53 that's ready to be interacted with this
+12:55 
+
+12:55 way if you do just the modeling stuff
+12:57 
+
+12:57 you won't have the systems level support
+12:58 
+
+12:58 to be able to to make you run real
+13:01 
+
+13:01 time can you say a word on how the model
+13:03 
+
+13:03 works like you know is it Transformer
+13:05 
+
+13:05 based is it similar to like this the
+13:07 
+
+13:07 soras of the world like what have you
+13:09 
+
+13:09 built on the model side yeah tldr it's
+13:11 
+
+13:11 it's it's exactly like the soras of the
+13:13 
+
+13:13 world just the prompt is user actions
+13:15 
+
+13:15 instead of text like that's the easiest
+13:17 
+
+13:17 way to think about it like thing like
+13:18 
+
+13:18 you have text to video models right you
+13:20 
+
+13:20 have Sora that you put in a sentence and
+13:23 
+
+13:23 you get a video same thing here just you
+13:26 
+
+13:26 put in uh a pro your prompt is like your
+13:29 
+
+13:29 keyboard actions and your past frames
+13:32 
+
+13:32 and it generates the next frame okay so
+13:34 
+
+13:34 how do you get the data between actions
+13:36 
+
+13:36 and and video so so yeah you do have to
+13:38 
+
+13:38 do some pre-processing steps here that
+13:39 
+
+13:39 you don't do with with regular video
+13:41 
+
+13:41 models uh for for example you do have to
+13:44 
+
+13:44 take you know the raw recordings of hey
+13:46 
+
+13:46 this is this is the game play and to
+13:48 
+
+13:48 label it at each step with uh with the
+13:50 
+
+13:50 action that's being taken and so you
+13:52 
+
+13:52 know we we we train a small model that
+13:54 
+
+13:54 that does that it actually doesn't need
+13:56 
+
+13:56 too much data like you can solve that
+13:58 
+
+13:58 with a small model that doesn't need too
+14:00 
+
+14:00 many examples and so you can just have
+14:02 
+
+14:02 your your our team just you know played
+14:04 
+
+14:04 for a bit recorded that you get you get
+14:06 
+
+14:06 a small model and then you you use that
+14:08 
+
+14:08 to label all your data super interesting
+14:10 
+
+14:10 and are you building a world model or
+14:12 
+
+14:12 like or is this just purely pixel
+14:14 
+
+14:14 representation nice so so it's it is
+14:16 
+
+14:16 it's it's the the beautiful thing here
+14:18 
+
+14:18 is that it's purely pixel representation
+14:21 
+
+14:21 now let's let's compare that to exactly
+14:22 
+
+14:22 what you were saying with like World
+14:24 
+
+14:24 models or 3D stuff and and the other
+14:27 
+
+14:27 things and AI like for for for more than
+14:29 
+
+14:29 a decade there's been the general
+14:31 
+
+14:31 question of do you solve stuff end to
+14:32 
+
+14:32 end or do you uh take an existing
+14:35 
+
+14:35 workflow and make something more
+14:36 
+
+14:36 efficient okay like there could have
+14:38 
+
+14:38 been two ways to solve this problem you
+14:39 
+
+14:39 could just say hey game engines exist
+14:41 
+
+14:41 Unity is amazing unreal is amazing let's
+14:44 
+
+14:44 just plug into that workflow okay let's
+14:47 
+
+14:47 build text to 3D so I'll describe an
+14:50 
+
+14:50 elephant and I'll get you know the 3D
+14:51 
+
+14:51 mesh of an elephant and that'll be
+14:53 
+
+14:53 embedded into unity and unreal or
+14:55 
+
+14:55 whatever game engine you're using okay
+14:57 
+
+14:57 so compare that to the end to end
+14:59 
+
+14:59 solution of at the end of the day what I
+15:02 
+
+15:02 have is a screen the screen needs to
+15:04 
+
+15:04 show something and that needs to work
+15:07 
+
+15:07 okay and and at the end of the day what
+15:10 
+
+15:10 people you do is they they see their
+15:11 
+
+15:11 computer screen and they touch their
+15:12 
+
+15:12 keyboard and they move their Mouse and
+15:14 
+
+15:14 that's your interface and you solve this
+15:15 
+
+15:15 end to end from from keystroke to frame
+15:19 
+
+15:19 okay so obviously these these two are
+15:21 
+
+15:21 competing
+15:22 
+
+15:22 directions now over time I think that
+15:26 
+
+15:26 there will be some merging between them
+15:28 
+
+15:28 cu the from technical perspective they
+15:30 
+
+15:30 each have their own advantages the first
+15:31 
+
+15:31 is much more consistent over time it's
+15:34 
+
+15:34 much easier to say oh here's this object
+15:37 
+
+15:37 here's how it looks and when it'll come
+15:38 
+
+15:38 back in two hours it'll look exactly the
+15:41 
+
+15:41 same and the other one the the the end
+15:43 
+
+15:43 to end pixel the fusion version that
+15:46 
+
+15:46 does pixels in pixel space that that one
+15:49 
+
+15:49 is much more easy to work around it's
+15:53 
+
+15:53 it's much more flexible you can really
+15:55 
+
+15:55 say oh the no no change the elephant's
+15:56 
+
+15:56 tail it's it's too big or you can you
+15:58 
+
+15:58 can actually edit it live in a way that
+16:02 
+
+16:02 that's just more Dynamic so I I do think
+16:04 
+
+16:04 that long term though these two things
+16:07 
+
+16:07 will converge Y and just if if if we
+16:12 
+
+16:12 like you know roughly map this out so
+16:14 
+
+16:14 today we really just have prompt to
+16:17 
+
+16:17 pixels like key strokes to pixels you
+16:21 
+
+16:21 could in theory say that the right way
+16:22 
+
+16:22 to solve this and say like the next two
+16:24 
+
+16:24 or three years is to have two models to
+16:27 
+
+16:27 have a model that think Transformers
+16:30 
+
+16:30 right Transformers went uh you have one
+16:33 
+
+16:33 model that's in charge of holding some
+16:36 
+
+16:36 state state of the game and that's
+16:39 
+
+16:39 that's unrelated to pixels it's like
+16:40 
+
+16:40 literally just like a llm wise
+16:42 
+
+16:42 Transformer okay it just gets the
+16:44 
+
+16:44 current state it gets the new user's
+16:45 
+
+16:45 action and just outputs changes to that
+16:48 
+
+16:48 state yep and you have one model that's
+16:50 
+
+16:50 doing that and then the second model
+16:52 
+
+16:52 takes that state and renders it to
+16:53 
+
+16:53 pixels so it makes sense that that's
+16:56 
+
+16:56 roughly where we'll converge because
+16:58 
+
+16:58 that will really take into account both
+16:60 
+
+16:60 the advantage of world models and the
+17:02 
+
+17:02 advantages of the fusion models Do you
+17:04 
+
+17:04 want to build both of those
+17:06 
+
+17:06 models of course I mean yeah
+17:10 
+
+17:10 definitely I love it but yeah one of the
+17:12 
+
+17:12 things for me we are I will say that we
+17:14 
+
+17:14 are a bit off like it will take some
+17:15 
+
+17:15 time to reach that stage yeah one of the
+17:18 
+
+17:18 things for me that like really caught my
+17:21 
+
+17:21 attention about Dean and and dart is
+17:25 
+
+17:25 they have this ambition to be completely
+17:27 
+
+17:27 vertically integrated like these guys
+17:30 
+
+17:30 understand you know literally down to
+17:33 
+
+17:33 electrons and how I'm serious like they
+17:35 
+
+17:35 understand how to like electrons move in
+17:38 
+
+17:38 logic gates and even like alternate
+17:41 
+
+17:41 logic gates and how you can represent
+17:44 
+
+17:44 them you know in levels even below
+17:46 
+
+17:46 assembly you know how you can change you
+17:49 
+
+17:49 know then in like in assembly Cuda
+17:51 
+
+17:51 kernels like you can go they literally
+17:53 
+
+17:53 go all the way from electrons to pixels
+17:58 
+
+17:58 that your I see and they're optimizing
+17:60 
+
+17:60 every single level in there and I I I
+18:03 
+
+18:03 think you by doing that I think they'll
+18:05 
+
+18:05 always have like a kind of 10x plus
+18:08 
+
+18:08 advantage over anyone that's just on the
+18:10 
+
+18:10 application layer actually so talk about
+18:13 
+
+18:13 this because Sean loves to talk about
+18:14 
+
+18:14 this um you know the I think the counter
+18:17 
+
+18:17 argument would be specialization right
+18:19 
+
+18:19 you know there's 10 10,000 very smart
+18:21 
+
+18:21 people at Nvidia at you know choose your
+18:23 
+
+18:23 favorite company working on this you
+18:25 
+
+18:25 should focus on building the best
+18:26 
+
+18:26 possible user experience and the viral
+18:28 
+
+18:28 Loop and things like that so talk about
+18:31 
+
+18:31 talk about your decision to be
+18:31 
+
+18:31 vertically integrated let me actually
+18:34 
+
+18:34 say something because Dean can't brag
+18:36 
+
+18:36 about himself the way we can brag about
+18:38 
+
+18:38 him but I I've been studying business
+18:43 
+
+18:43 models my whole life has been a passion
+18:44 
+
+18:44 of mine from a young age and for myself
+18:48 
+
+18:48 like Google to me is one of the most
+18:49 
+
+18:49 amazing companies of all time one of the
+18:51 
+
+18:51 most amazing business models and I
+18:53 
+
+18:53 worked at Google for a few years I
+18:55 
+
+18:55 really feel like people have the wrong
+18:58 
+
+18:58 understanding of what was Google's OTE
+18:59 
+
+18:59 for worth I also think people have the
+19:01 
+
+19:01 wrong understanding of what is nvidia's
+19:02 
+
+19:02 Moote today um but for me with Google
+19:06 
+
+19:06 like obviously Sergey and Larry had
+19:08 
+
+19:08 invented P rank pag rank was a very
+19:11 
+
+19:11 beautiful algorithm but it's actually it
+19:13 
+
+19:13 was like a deep Insight but it's very
+19:16 
+
+19:16 simple to implement it's like a very
+19:18 
+
+19:18 basic graph theoretical idea um and it
+19:21 
+
+19:21 was a published paper so like once
+19:23 
+
+19:23 pedant came out everyone replicated it
+19:25 
+
+19:25 very quickly for me the real advantage
+19:28 
+
+19:28 of Google was that
+19:29 
+
+19:29 these guys were some of the best in the
+19:32 
+
+19:32 world at distributed systems and like
+19:34 
+
+19:34 lowlevel systems
+19:35 
+
+19:35 optimization and they had this very
+19:38 
+
+19:38 profound Insight from early on that
+19:40 
+
+19:40 basically all the other search engines
+19:43 
+
+19:43 were buying Sun Microsystems like server
+19:46 
+
+19:46 racks the way they would get fault
+19:48 
+
+19:48 tolerance was by was by buying expensive
+19:51 
+
+19:51 Hardware um whereas for Google they
+19:54 
+
+19:54 realized that they can buy just cheap
+19:56 
+
+19:56 consumer commodity Hardware that failes
+19:59 
+
+19:59 all the time you know you buy Intel
+20:01 
+
+20:01 Pentium processors that are in your
+20:02 
+
+20:02 gaming computer or like Sandisk memory
+20:06 
+
+20:06 um and you know you need five times as
+20:10 
+
+20:10 many total flops or five times as many
+20:13 
+
+20:13 bits to get the same performance because
+20:15 
+
+20:15 of all the failure rates but the cost
+20:18 
+
+20:18 per flop is like 150th so you can have
+20:21 
+
+20:21 like a 10x cost optimization 10x cost
+20:24 
+
+20:24 Advantage by really leaning into
+20:27 
+
+20:27 distributed systems and getting the most
+20:28 
+
+20:28 out of the hardware and what that led to
+20:31 
+
+20:31 with Google is like for me when I looked
+20:33 
+
+20:33 back on when I first started using it it
+20:35 
+
+20:35 was this very very simple front end it
+20:37 
+
+20:37 was literally just a white web page with
+20:39 
+
+20:39 like a search box it was a I think a
+20:42 
+
+20:42 worse front end than Yahoo at the time
+20:44 
+
+20:44 um you know Yahoo also had chat rooms
+20:47 
+
+20:47 and other like these kind of flashier
+20:49 
+
+20:49 exciting things but Google had this
+20:52 
+
+20:52 magical back end like all the magic to
+20:54 
+
+20:54 me of Google was on the back end and I
+20:56 
+
+20:56 think that back end the performance came
+20:58 
+
+20:58 from this cost advantage and it came
+20:60 
+
+20:60 from the fact that they had optimized
+21:01 
+
+21:01 all the way down to the bare metal and
+21:05 
+
+21:05 with Dean and dart I the story really
+21:08 
+
+21:08 rhymes with me and look we need to say
+21:10 
+
+21:10 humble like this company hasn't done
+21:12 
+
+21:12 jack yet we need to you know we
+21:15 
+
+21:15 it's it's a very long way before they
+21:17 
+
+21:17 deserve a comparison to Google but and
+21:20 
+
+21:20 forworth seoa you know led the series a
+21:23 
+
+21:23 co-led the series a in in Google I'm
+21:26 
+
+21:26 very proud of that also led the seed in
+21:28 
+
+21:28 Nvidia so you know we have good history
+21:31 
+
+21:31 good track record good good track record
+21:33 
+
+21:33 also you know series a and apple um but
+21:37 
+
+21:37 commercial break is over commercial
+21:38 
+
+21:38 break is over but but anyways like it
+21:41 
+
+21:41 just I
+21:43 
+
+21:43 think I think to really deliver these
+21:46 
+
+21:46 like delightful like say a delightful
+21:48 
+
+21:48 mirror experience which is a very simil
+21:50 
+
+21:50 very simple front end I think you need
+21:53 
+
+21:53 this absolutely insane backend that is
+21:56 
+
+21:56 optimized the bare metal and I think
+21:58 
+
+21:58 it's kind of All or Nothing Like if you
+22:00 
+
+22:00 can't deliver real time I don't think
+22:03 
+
+22:03 it's very good uh and and I don't think
+22:06 
+
+22:06 you can deliver real time in the next
+22:08 
+
+22:08 year without going all the way to the
+22:09 
+
+22:09 bottom and so I just I don't know for me
+22:12 
+
+22:12 I think you kind of have to do that and
+22:15 
+
+22:15 these guys are the only ones I've seen
+22:17 
+
+22:17 doing that well said wow I I I love I
+22:20 
+
+22:20 love what Sean just said uh because two
+22:23 
+
+22:23 two things two things really caught my
+22:25 
+
+22:25 attention uh what one is about the
+22:27 
+
+22:27 vertical integration we'll we'll touch
+22:28 
+
+22:28 about that SEC and it goes back to your
+22:30 
+
+22:30 original question the second is really
+22:32 
+
+22:32 about
+22:33 
+
+22:33 so I won't name names but I was I was
+22:36 
+
+22:36 speaking to someone who's very very very
+22:38 
+
+22:38 executive at Google recently okay and
+22:41 
+
+22:41 just you know reminiscing about uh about
+22:43 
+
+22:43 the past and trying to hear because I
+22:45 
+
+22:45 was I was three months old when Google
+22:46 
+
+22:46 was founded okay so I was I I was around
+22:49 
+
+22:49 back I I was around back then but not
+22:50 
+
+22:50 really paying attention and knowing you
+22:54 
+
+22:54 Dean you might have been paying
+22:57 
+
+22:57 attention um
+22:59 
+
+22:59 you know so so so I I was trying to
+23:02 
+
+23:02 understand exactly what what happened
+23:03 
+
+23:03 there like why why that was interesting
+23:05 
+
+23:05 it came from like you know unrelated
+23:07 
+
+23:07 conversation and the way that person
+23:10 
+
+23:10 brought it up we're talking about how
+23:12 
+
+23:12 GPU clusters are just unreliable okay
+23:15 
+
+23:15 just you know in in general today if you
+23:17 
+
+23:17 try to train a model like the one we
+23:18 
+
+23:18 trained uh on any cluster okay whether
+23:21 
+
+23:21 it's hyperscalers or GPU clouds that
+23:23 
+
+23:23 thing's going to crash every few hours
+23:25 
+
+23:25 okay and and you're going to have like
+23:27 
+
+23:27 the weirdest things okay you'll have one
+23:30 
+
+23:30 node crashing and it'll be because two
+23:32 
+
+23:32 other nodes have dust on the cable
+23:34 
+
+23:34 between them okay and there won't be any
+23:37 
+
+23:37 error to really tell you that that's
+23:38 
+
+23:38 what's happening okay so your training
+23:40 
+
+23:40 room will just crash and you're like
+23:41 
+
+23:41 okay why did it crash and you'll try
+23:43 
+
+23:43 rebooting it and it won't work and then
+23:45 
+
+23:45 you'll try removing random nodes until
+23:46 
+
+23:46 you understand what happens and that's
+23:48 
+
+23:48 the state of the entire industry okay
+23:49 
+
+23:49 pretty much like the only ones training
+23:51 
+
+23:51 that that don't see this are probably
+23:52 
+
+23:52 Google and open AI cuz cuz they really
+23:55 
+
+23:55 built they really built everything down
+23:57 
+
+23:57 to like Google built everything down to
+23:59 
+
+23:59 the hardware as well open a had a lot of
+24:01 
+
+24:01 time to really focus a lot on these
+24:03 
+
+24:03 reliability stuff but anyone else who
+24:05 
+
+24:05 training from the big companies to the
+24:07 
+
+24:07 small startups they're all experiencing
+24:10 
+
+24:10 this and so I was talking to this to
+24:12 
+
+24:12 this person who's very very high up at
+24:15 
+
+24:15 Google and they said hey we're today
+24:18 
+
+24:18 with with like training today is like
+24:21 
+
+24:21 back where CPUs were in the90s like for
+24:24 
+
+24:24 forget like kubernetes there was no
+24:27 
+
+24:27 VMware yeah okay nothing was reliable
+24:31 
+
+24:31 and your servers would just crash all
+24:33 
+
+24:33 the time and you had the exact same
+24:35 
+
+24:35 thing that most companies didn't want to
+24:37 
+
+24:37 deal with that and so they just either
+24:40 
+
+24:40 paid for the premium service that was
+24:41 
+
+24:41 somehow
+24:42 
+
+24:42 better a so they both paid more money
+24:45 
+
+24:45 but B they also paid with
+24:47 
+
+24:47 time like the the the broken Hardware
+24:50 
+
+24:50 exists before the the the stable
+24:53 
+
+24:53 Hardware exists sure we'll get to stable
+24:55 
+
+24:55 training runs in a year in two years
+24:58 
+
+24:58 whenever that will happen Okay Nvidia
+25:01 
+
+25:01 will make their chips more stable
+25:02 
+
+25:02 they'll make their their code more
+25:04 
+
+25:04 stable the GPU clouds will figure out
+25:06 
+
+25:06 stuff around this that'll happen it's
+25:08 
+
+25:08 it's not the state today if you want to
+25:10 
+
+25:10 train model today you're going to face
+25:12 
+
+25:12 all of that and
+25:13 
+
+25:13 so one of the things that it's really a
+25:16 
+
+25:16 challenge you have to deal with and at
+25:17 
+
+25:17 the cart we just we deal with it okay
+25:21 
+
+25:21 the reason we can so so so the model
+25:23 
+
+25:23 that you saw Oasis okay Oasis Oasis one
+25:27 
+
+25:27 Oasis one can converges from start to
+25:29 
+
+25:29 finish in 20 hours wow and compare you
+25:34 
+
+25:34 can compare that like we we we know what
+25:35 
+
+25:35 the we have lots
+25:37 
+
+25:37 of joint work or communication with
+25:40 
+
+25:40 other AI labs they were all shocked by
+25:43 
+
+25:43 this now they talk like really about the
+25:45 
+
+25:45 best Labs training training diffusion
+25:46 
+
+25:46 models for this model the their
+25:48 
+
+25:48 convergence would usually take around
+25:50 
+
+25:50 two weeks and it's not it's both because
+25:54 
+
+25:54 they're not using optimized systems
+25:56 
+
+25:56 layer stuff but also because they crash
+25:59 
+
+25:59 every few
+25:60 
+
+26:00 hours or every few days or whatever we
+26:03 
+
+26:03 can actually hold it we we we can okay
+26:05 
+
+26:05 we can we can we can actually hold the
+26:06 
+
+26:06 training run end to end without crashing
+26:08 
+
+26:08 we can also hold a training run for a
+26:09 
+
+26:09 week or for two weeks without crashing
+26:12 
+
+26:12 and that reliability part really really
+26:15 
+
+26:15 resonates with with what happened back
+26:16 
+
+26:16 then now the thing about it is is is
+26:19 
+
+26:19 that it's really not simple to pull off
+26:22 
+
+26:22 it's you see like we have this internal
+26:25 
+
+26:25 dock I think it's around 200 Pages now
+26:28 
+
+26:28 of everything that can go wrong when
+26:29 
+
+26:29 you're training a model and it's
+26:32 
+
+26:32 everything from if you see this erir on
+26:35 
+
+26:35 this node then yeah tell tell your
+26:37 
+
+26:37 Hardware operators that these two nodes
+26:39 
+
+26:39 have a problem between them these other
+26:41 
+
+26:41 nodes have a problem between them and
+26:43 
+
+26:43 all the way to and here's here's a fun
+26:45 
+
+26:45 one at a certain point as we're training
+26:48 
+
+26:48 Oasis uh we were doing the training run
+26:51 
+
+26:51 and we we we we needed we needed some uh
+26:55 
+
+26:55 synthetic data to generate as well and
+26:57 
+
+26:57 so we said okay well we we have this
+26:59 
+
+26:59 cluster it has a ton of gpus CPUs
+27:01 
+
+27:01 as well like great it has lots of gpus
+27:04 
+
+27:04 but there's lots of CPUs and and they're
+27:06 
+
+27:06 being like they're utilized by 3% or
+27:08 
+
+27:08 something okay we we can just use this
+27:10 
+
+27:10 and just generate lots of synthetic data
+27:12 
+
+27:12 on the same cluster as the training is
+27:13 
+
+27:13 happening okay uh by the way this like
+27:16 
+
+27:16 blew blew the minds of our GPU Cloud
+27:19 
+
+27:19 they were like you guys are using the
+27:21 
+
+27:21 cluster to like 200% you're using the
+27:23 
+
+27:23 CPUs you're using the gpus and you're
+27:25 
+
+27:25 using we we we even use like the the
+27:27 
+
+27:27 infin band to send data around during
+27:28 
+
+27:28 training so like we're at we're we're
+27:30 
+
+27:30 we're getting a lot more out of the
+27:31 
+
+27:31 cluster than than is like should be
+27:34 
+
+27:34 expected okay now that all makes sense
+27:38 
+
+27:38 so on on one hand you know you have this
+27:40 
+
+27:40 like the gpus are utilized the CPUs are
+27:42 
+
+27:42 not utilized so you run like synthetic
+27:43 
+
+27:43 data in parallel it's not supposed to
+27:45 
+
+27:45 utilize it uses just the CPUs and so
+27:48 
+
+27:48 it's not supposed to hurt anything and
+27:50 
+
+27:50 then your training ground doesn't work
+27:52 
+
+27:52 okay and you get a random air that
+27:55 
+
+27:55 literally says the team will know how to
+27:57 
+
+27:57 say this better but the era that you get
+27:59 
+
+27:59 is something like missing lock file and
+28:01 
+
+28:01 the data
+28:02 
+
+28:02 loader okay it's like how are these two
+28:05 
+
+28:05 related do you know want to know how
+28:06 
+
+28:06 they related they related like this the
+28:09 
+
+28:09 synthetic data gen was using up uh more
+28:13 
+
+28:13 RAM which is which is fine but it caused
+28:17 
+
+28:17 uh sorry no was uh as okay to move the
+28:19 
+
+28:19 data around between the different nodes
+28:21 
+
+28:21 as the synthetic data was being
+28:22 
+
+28:22 generated it was using uh more Network
+28:25 
+
+28:25 bandwidth than before and that caused
+28:28 
+
+28:28 Python's data loader to take uh one of
+28:32 
+
+28:32 its lock files that's usually Network
+28:34 
+
+28:34 mapped and move it to be uh swap it out
+28:37 
+
+28:37 to disk okay and that caused the state
+28:40 
+
+28:40 that different nodes had different lock
+28:43 
+
+28:43 files and and that caused the the the
+28:46 
+
+28:46 data loader to crash okay now I'm
+28:48 
+
+28:48 probably saying this wrong and the
+28:49 
+
+28:49 team's probably like listening to this
+28:51 
+
+28:51 and like no Dean you're getting all
+28:52 
+
+28:52 wrong but that's the tldr of what
+28:54 
+
+28:54 happened okay you did something that was
+28:56 
+
+28:56 supposed to make
+28:57 
+
+28:57 sense and you got a random err and
+28:60 
+
+29:00 that's the dayto day and we have a 200
+29:02 
+
+29:02 Page dock of all of these things and so
+29:04 
+
+29:04 that's my and this is a simple example
+29:06 
+
+29:06 that Dean is happy to share like there's
+29:09 
+
+29:09 you know there's it's one of the simpler
+29:11 
+
+29:11 ones there's 100x harder more important
+29:15 
+
+29:15 things that they've had to figure out um
+29:18 
+
+29:18 one that I think is also relatively
+29:20 
+
+29:20 simple but it's just kind of shows the
+29:22 
+
+29:22 current state of AI and Dean feel free
+29:23 
+
+29:23 if you don't want to talk about this
+29:25 
+
+29:25 don't talk about it but they got access
+29:29 
+
+29:29 to a new cluster and somehow the cluster
+29:32 
+
+29:32 had not installed memory yet uh but the
+29:36 
+
+29:36 gpus have some very small amount of
+29:38 
+
+29:38 onboard memory and so like most people
+29:42 
+
+29:42 would just not even be able to use the
+29:44 
+
+29:44 gpus can you share anything about this
+29:46 
+
+29:46 story yeah so this this this is actually
+29:48 
+
+29:48 a nice story so you
+29:50 
+
+29:50 know we call this the best place on
+29:53 
+
+29:53 Earth to train a video model training a
+29:55 
+
+29:55 video model isn't just the cluster it's
+29:56 
+
+29:56 everything surrounding the cluster okay
+29:58 
+
+29:58 okay you need to have the storage there
+29:59 
+
+29:59 you need to have the networking there
+30:01 
+
+30:01 there's there's so much that needs to go
+30:02 
+
+30:02 into building the best place on Earth to
+30:04 
+
+30:04 train of video model and we're actually
+30:06 
+
+30:06 very far away from them okay like I'm
+30:08 
+
+30:08 assuming that roughly over the next half
+30:10 
+
+30:10 year lots of this will stabilize and lot
+30:12 
+
+30:12 lots of the GPU clouds are working on
+30:14 
+
+30:14 this um but yeah with one of the
+30:17 
+
+30:17 Clusters that we got to there wasn't any
+30:19 
+
+30:19 storage and by the way it wasn't even
+30:21 
+
+30:21 with one it happened with a few clusters
+30:22 
+
+30:22 and different clouds okay that you know
+30:25 
+
+30:25 the clouds they bring the gpus and and
+30:27 
+
+30:27 they try f so focus on getting the h100s
+30:30 
+
+30:30 that you know they forgot the memory or
+30:33 
+
+30:33 the storage and it's fine and it's okay
+30:35 
+
+30:35 and they were and and they were going to
+30:36 
+
+30:36 install it they they would get there but
+30:38 
+
+30:38 you know they try to release everything
+30:39 
+
+30:39 as as fast as possible which is great
+30:41 
+
+30:41 which makes sense and so okay there was
+30:43 
+
+30:43 there was no you know stable Storage
+30:46 
+
+30:46 storage optimized nose that you can use
+30:48 
+
+30:48 or or an S3 bucket or something that you
+30:50 
+
+30:50 can use and so we said okay well the
+30:54 
+
+30:54 like every node has like you know a few
+30:56 
+
+30:56 ssds connected to it what if we just you
+30:59 
+
+30:59 know build our own mini fake distributed
+31:02 
+
+31:02 file system on top of that okay and and
+31:05 
+
+31:05 that's what we did and and it worked and
+31:08 
+
+31:08 it was there were so many things to
+31:10 
+
+31:10 overcome to make that
+31:12 
+
+31:12 happen but it it works at the end of the
+31:14 
+
+31:14 day and that's and that's I think and it
+31:16 
+
+31:16 goes back to your question about
+31:17 
+
+31:17 vertical
+31:19 
+
+31:19 integration vertical integration so I'm
+31:22 
+
+31:22 I'm Sha Sha knows business much better
+31:24 
+
+31:24 than I do and has been around all all
+31:27 
+
+31:27 the these fields way longer than I have
+31:29 
+
+31:29 okay I I did phds and like I just called
+31:32 
+
+31:32 you
+31:34 
+
+31:34 old I was using Google when when it
+31:38 
+
+31:38 first came out and I bought nid shares
+31:40 
+
+31:40 in IPO which also right around was born
+31:44 
+
+31:44 so I think IP before I was born no 96 99
+31:48 
+
+31:48 I think 99 okay okay
+31:51 
+
+31:51 um but yeah as as far as I see it and
+31:53 
+
+31:53 correct me if I'm wrong vertical
+31:54 
+
+31:54 integration usually gives you two things
+31:56 
+
+31:56 it gives you a cost reduction like
+31:57 
+
+31:57 higher margins or whatever
+31:59 
+
+31:59 and it gives you the ability to move
+32:00 
+
+32:00 faster maybe it gives you a third thing
+32:02 
+
+32:02 because usually things give you three
+32:03 
+
+32:03 things but who knows so I think here in
+32:06 
+
+32:06 AI the more important part sure they're
+32:09 
+
+32:09 both important but I think the second
+32:10 
+
+32:10 one is even more important than the
+32:12 
+
+32:12 first because at the end of the day if
+32:15 
+
+32:15 you look at all the problems we're
+32:16 
+
+32:16 facing great they will be solved but
+32:19 
+
+32:19 it'll take time for them to be solved
+32:21 
+
+32:21 and if you you know I think that there
+32:24 
+
+32:24 was a great article I think at the
+32:26 
+
+32:26 information about how it was like a few
+32:29 
+
+32:29 months ago that people who leave Google
+32:32 
+
+32:32 to start startups suddenly realize that
+32:34 
+
+32:34 nothing works because everything works
+32:35 
+
+32:35 inside Google and then you go outside
+32:37 
+
+32:37 like oh there's no storage or oh the my
+32:40 
+
+32:40 my cloud provider doesn't provide me
+32:42 
+
+32:42 with this I actually need to take care
+32:44 
+
+32:44 of this and so okay fine over time these
+32:47 
+
+32:47 things will stabilize and your clouds
+32:49 
+
+32:49 will provide you what the cloud needs to
+32:51 
+
+32:51 provide you and you'll have great
+32:53 
+
+32:53 companies that provide you with like
+32:55 
+
+32:55 middle layer for the system stuff or
+32:57 
+
+32:57 even for the the model training stuff
+32:59 
+
+32:59 will make lots of easier lots offf
+33:00 
+
+33:00 easier for you
+33:02 
+
+33:02 but if you really do everything end to
+33:04 
+
+33:04 endend you can you can get to Market a
+33:06 
+
+33:06 year before everyone else you can get to
+33:07 
+
+33:07 Market two years before everyone else
+33:09 
+
+33:09 and that's and that's I think what's key
+33:11 
+
+33:11 here because even if we go to to uh the
+33:13 
+
+33:13 Google story or open theia story Tech
+33:16 
+
+33:16 modes don't last right sure Google
+33:20 
+
+33:20 Google is a great search engine Bing is
+33:22 
+
+33:22 probably not that bad okay sure maybe
+33:25 
+
+33:25 Google has more data so so they're able
+33:27 
+
+33:27 to do now but Microsoft you company
+33:28 
+
+33:28 theyve been working on Bing for so long
+33:30 
+
+33:30 it's a good search engine they have the
+33:32 
+
+33:32 tech it still doesn't mean that now Bing
+33:35 
+
+33:35 and Google are are balanced right so at
+33:39 
+
+33:39 the end of the day the the entire game
+33:41 
+
+33:41 here is get your Tech mode quickly and
+33:45 
+
+33:45 then convert fast two years before
+33:47 
+
+33:47 everyone else like Google and like open
+33:48 
+
+33:48 AI did and work as fast as possible to
+33:51 
+
+33:51 convert that to different notes and
+33:53 
+
+33:53 that's and that and that's the game here
+33:55 
+
+33:55 that that's what you have to play
+33:56 
+
+33:56 because we can all say okay you know
+33:58 
+
+33:58 what sequ invested all good let's put
+34:01 
+
+34:01 the money in the bank for a sec okay
+34:02 
+
+34:02 let's let's get some interest on that
+34:04 
+
+34:04 we'll go be on the beach for like 2
+34:05 
+
+34:05 years wait for everything to stabilize
+34:07 
+
+34:07 we'll come back in two years and then
+34:09 
+
+34:09 we'll build the same company and that'll
+34:11 
+
+34:11 be great but someone else would have
+34:12 
+
+34:12 done it
+34:13 
+
+34:13 before and and that's and that's that's
+34:16 
+
+34:16 that's I think why we chose to be
+34:17 
+
+34:17 vertically integrated I love it what's
+34:19 
+
+34:19 your remote going to
+34:21 
+
+34:21 be long-term or short-term both both
+34:24 
+
+34:24 both perfect short-term Tech okay
+34:27 
+
+34:27 short-term Tech Tech and that's and
+34:29 
+
+34:29 that's great and we have the best
+34:30 
+
+34:30 systems layer stuff and we're also doing
+34:32 
+
+34:32 the model layer stuff as well so we're
+34:34 
+
+34:34 fully integrating and that and that's
+34:35 
+
+34:35 your that's your remes at the end of the
+34:37 
+
+34:37 day short
+34:39 
+
+34:39 term
+34:41 
+
+34:41 longterm longterm I think that's a
+34:43 
+
+34:43 that's a great question and let me let
+34:46 
+
+34:46 me share something that I found really
+34:48 
+
+34:48 interesting okay
+34:52 
+
+34:52 so there is a new weaker version of
+34:56 
+
+34:56 network effects that exists today that
+34:58 
+
+34:58 didn't exist
+34:60 
+
+34:60 before and that Network effect is called
+35:02 
+
+35:02 what people say on Tik
+35:04 
+
+35:04 Tok now why is that interesting okay we
+35:07 
+
+35:07 one of the companies that I I really
+35:10 
+
+35:10 that we learned a lot from and that I
+35:12 
+
+35:12 think is is an actually really really
+35:14 
+
+35:14 good company they did end up selling to
+35:16 
+
+35:16 is character AI they didn't they didn't
+35:17 
+
+35:17 end up selling to Google and uh wanting
+35:20 
+
+35:20 to go back to training big models but
+35:23 
+
+35:23 character there's a lot to learn from
+35:25 
+
+35:25 character and one of the things that the
+35:27 
+
+35:27 second they took off they had lots of
+35:30 
+
+35:30 competition instantly like fine they
+35:33 
+
+35:33 their Tech mode lasted for like half a
+35:35 
+
+35:35 year until met released open source
+35:36 
+
+35:36 models and then other people started
+35:39 
+
+35:39 running this they they they were still
+35:41 
+
+35:41 vertically integrated and so they were
+35:43 
+
+35:43 able to be 10x cheaper than everyone
+35:44 
+
+35:44 else which was great but one of the
+35:47 
+
+35:47 things that really stood out to me was
+35:49 
+
+35:49 their Tik Tok mode if you go on Tik Tok
+35:53 
+
+35:53 and you look for any character that
+35:54 
+
+35:54 competitor fine you'll find a video of
+35:57 
+
+35:57 that competitor and then you'll scroll
+35:58 
+
+35:58 and you'll see a 100 videos of character
+36:01 
+
+36:01 and if you even you know even if you go
+36:03 
+
+36:03 on the videos which are not character
+36:05 
+
+36:05 all the comments are full of character
+36:08 
+
+36:08 and if you talk to a random character AI
+36:11 
+
+36:11 user they don't even know the
+36:13 
+
+36:13 competition and so we have somehow
+36:16 
+
+36:16 literally because of Tik Tok there is a
+36:18 
+
+36:18 new Mo of what people say about you on
+36:21 
+
+36:21 Tik Tok and and do you have a a mini
+36:24 
+
+36:24 Network effect there a mini Rand I'm not
+36:28 
+
+36:28 sure if it's a network effect or brand
+36:29 
+
+36:29 effect but why is this different from
+36:31 
+
+36:31 just brand
+36:33 
+
+36:33 so so it's very similar to it's similar
+36:35 
+
+36:35 to Brand okay but it's it's in your face
+36:39 
+
+36:39 like brand like 20 years ago was okay
+36:42 
+
+36:42 did you hear your friends talking about
+36:43 
+
+36:43 this or your parents talking about this
+36:46 
+
+36:46 here you're always on like the younger
+36:48 
+
+36:48 generation especially they're always on
+36:49 
+
+36:49 Tik Tok and so they just see this
+36:52 
+
+36:52 instantly and so there's even a big
+36:55 
+
+36:55 question of whether OTE like that could
+36:58 
+
+36:58 survive for for the 2 three years until
+37:00 
+
+37:00 you need uh until you get your long-term
+37:02 
+
+37:02 Moe of like insane brand like Googles or
+37:04 
+
+37:04 a distribution brand or something like
+37:06 
+
+37:06 that or distribution mode or something
+37:08 
+
+37:08 like that so I think we're really in
+37:10 
+
+37:10 this new market here yeah that we're not
+37:13 
+
+37:13 necessarily going to have the same Moes
+37:15 
+
+37:15 we had 10 years
+37:16 
+
+37:16 ago super interesting Hardware is always
+37:19 
+
+37:19 the best mode
+37:20 
+
+37:20 though and for worth like Google I think
+37:24 
+
+37:24 you know they elevated what was
+37:27 
+
+37:27 initially like a software mode and a
+37:30 
+
+37:30 distributed systems mode to becoming a
+37:33 
+
+37:33 hardware mode um I I personally think
+37:37 
+
+37:37 that Google has not like leveraged that
+37:41 
+
+37:41 Mo enough you know on the application
+37:43 
+
+37:43 layer they haven't had that many really
+37:47 
+
+37:47 like fantastic breakout you know
+37:49 
+
+37:49 consumer
+37:50 
+
+37:50 products since the early days but they
+37:54 
+
+37:54 have an absolutely gigantic you know
+37:57 
+
+37:57 cost advantage
+37:58 
+
+37:58 really because on the hardware layer
+37:60 
+
+37:60 when I was at Google there was a there
+38:02 
+
+38:02 was this project that just Absolut blew
+38:04 
+
+38:04 my mind and gave me a prepared mind for
+38:06 
+
+38:06 a few Investments which is basically
+38:08 
+
+38:08 Google built Optical interconnects to
+38:10 
+
+38:10 move data in in data centers this in the
+38:15 
+
+38:15 like one of the papers if you Google
+38:16 
+
+38:16 Jupiter Rising like Google data center
+38:19 
+
+38:19 you'll find the papers and basically
+38:21 
+
+38:21 these Optical switches by turning them
+38:23 
+
+38:23 on basically about doubled the
+38:25 
+
+38:25 performance of the data centers like
+38:26 
+
+38:26 these one switch is mainly racked to
+38:28 
+
+38:28 Rack in data centers you know going
+38:30 
+
+38:30 moving from electrons to photons
+38:33 
+
+38:33 and you know these switches were
+38:35 
+
+38:35 insanely hard to build and basically
+38:38 
+
+38:38 everyone outside of Google if you ask
+38:39 
+
+38:39 them at the time is it possible to build
+38:41 
+
+38:41 you know this 100 terabit per second
+38:44 
+
+38:44 switch or whatever they'd say absolutely
+38:46 
+
+38:46 no way but they did it people didn't
+38:48 
+
+38:48 even know for years that Google had this
+38:51 
+
+38:51 and you know it reduced power
+38:52 
+
+38:52 consumption of the data center by 30% or
+38:55 
+
+38:55 something just like those things are
+38:57 
+
+38:57 real fundamental Moes um I think it's
+39:01 
+
+39:01 always hard to know like what the Moes
+39:02 
+
+39:02 will be for accompanying the future but
+39:06 
+
+39:06 I do I I strongly believe like Hardware
+39:09 
+
+39:09 is the ultimate Moe in in part
+39:12 
+
+39:12 because like there's always going to be
+39:14 
+
+39:14 an extreme delay to move atoms like to
+39:18 
+
+39:18 you know spin up Fabs to get power to
+39:21 
+
+39:21 build a power plants like even in a
+39:23 
+
+39:23 world with AGI you know the time skill
+39:26 
+
+39:26 of Hardware even in a world with billion
+39:28 
+
+39:28 Optimus robots like the time scale to
+39:31 
+
+39:31 make new hardware will be much slower or
+39:35 
+
+39:35 the time scale will be longer um so
+39:37 
+
+39:37 anyways I hope Dart has a hard remote
+39:39 
+
+39:39 some I I I think I agree with you on
+39:40 
+
+39:40 that like longterm okay you know this
+39:43 
+
+39:43 actually goes back to when we were
+39:45 
+
+39:45 founding the carts so I said
+39:47 
+
+39:47 okay we're in this we we we we called it
+39:50 
+
+39:50 the golden ticket we we got this this
+39:52 
+
+39:52 ticket that you get once in your life of
+39:54 
+
+39:54 starting a company and in a time where
+39:56 
+
+39:56 going back to what we're discussing
+39:58 
+
+39:58 before starting company in a time we can
+39:60 
+
+39:60 solve some fundamental limitation and
+40:01 
+
+40:01 not like there's some huge Tech shift
+40:03 
+
+40:03 going on and we said okay there there
+40:05 
+
+40:05 there three huge companies you can build
+40:08 
+
+40:08 here that was our analysis of the field
+40:11 
+
+40:11 a you can build an Nvidia
+40:13 
+
+40:13 competitor and if if you like the the
+40:16 
+
+40:16 next gen chip that's actually built for
+40:18 
+
+40:18 AI and it'll be very tough to do but and
+40:21 
+
+40:21 Nvidia you know Nvidia is not just a a
+40:23 
+
+40:23 chip giant but they're a they're supply
+40:25 
+
+40:25 chain giant okay insanely hard to do but
+40:29 
+
+40:29 you know if you hustle your way around
+40:31 
+
+40:31 everyone in the industry wants to help
+40:32 
+
+40:32 you and so it's it's it's doable if you
+40:35 
+
+40:35 really if you really Excel on the
+40:37 
+
+40:37 business side two was uh to build the
+40:40 
+
+40:40 next
+40:41 
+
+40:41 AWS like there is there is an
+40:44 
+
+40:44 opportunity because the the workloads
+40:47 
+
+40:47 themselves are changing there is an
+40:49 
+
+40:49 opportunity to be able to to build a new
+40:51 
+
+40:51 Cloud very very very tough because in
+40:53 
+
+40:53 that market there's a default winner if
+40:55 
+
+40:55 if you all lose the big three will still
+40:58 
+
+40:58 win the big three plus Oracle or the the
+40:60 
+
+40:60 other clouds as well and the third was
+41:02 
+
+41:02 create new
+41:03 
+
+41:03 experiences that new experiences will
+41:06 
+
+41:06 will happen and these experiences will
+41:08 
+
+41:08 be drastic enough so that the next
+41:10 
+
+41:10 trillion dollar company can come out of
+41:12 
+
+41:12 these in in five years and not in 30
+41:14 
+
+41:14 years and so we we had to choose one to
+41:17 
+
+41:17 start with we chose the experience as
+41:19 
+
+41:19 one but a definitely strong second was
+41:22 
+
+41:22 let's build an Nvidia competitor one and
+41:25 
+
+41:25 so I we we we we we we have that
+41:28 
+
+41:28 lingering thought of one day we'll get
+41:30 
+
+41:30 back to this I see why you two are
+41:33 
+
+41:33 friends um I want to close it out with
+41:35 
+
+41:35 one last question if everything goes
+41:37 
+
+41:37 right what is what is Dart in 10 15 20
+41:40 
+
+41:40 years and what experiences have you
+41:42 
+
+41:42 crafted and like what is the future of
+41:43 
+
+41:43 consumer entertainment I don't know if
+41:46 
+
+41:46 that's the right
+41:47 
+
+41:47 market and I'll say this and I'll give
+41:50 
+
+41:50 credit to to James from Sequoya here cuz
+41:53 
+
+41:53 he he's the one who coined this
+41:55 
+
+41:55 term uh generate experiences
+41:58 
+
+41:58 GX okay and we we call this ux is dead
+42:04 
+
+42:04 Long Live
+42:05 
+
+42:05 GX okay
+42:08 
+
+42:08 basically we're going to have new
+42:11 
+
+42:11 experiences that are generated in ways
+42:15 
+
+42:15 that that match how humans want to
+42:17 
+
+42:17 interact with computers and that
+42:20 
+
+42:20 encapsulates everything from character
+42:23 
+
+42:23 AI a generated experience to real-time
+42:26 
+
+42:26 video models or generated experience
+42:28 
+
+42:28 and and that's what we're going to see
+42:31 
+
+42:31 the card at the end of the day is a
+42:32 
+
+42:32 generated experiences company we're
+42:34 
+
+42:34 implementing this with being fully
+42:35 
+
+42:35 vertically integrated with having the
+42:37 
+
+42:37 systems layer at the end of the day
+42:40 
+
+42:40 you're a generated experiences company
+42:43 
+
+42:43 you're creating the new the new wave of
+42:45 
+
+42:45 experiences that that's going to touch
+42:48 
+
+42:48 every single person on the planet and
+42:50 
+
+42:50 that's where the card is now the only
+42:52 
+
+42:52 question is whether it does take 10 or
+42:54 
+
+42:54 15 years it'll in today's age it might
+42:57 
+
+42:57 take less
+42:58 
+
+42:58 it took it took a long time for the
+42:59 
+
+42:59 previous Titans to to to rule the
+43:02 
+
+43:02 world I I don't know if it'll take that
+43:06 
+
+43:06 long this time it definitely take at
+43:07 
+
+43:07 least five years you operate on a
+43:09 
+
+43:09 different time scale than a lot of the
+43:11 
+
+43:11 best AI researchers that are in our
+43:12 
+
+43:12 orbit and I really respect that about
+43:14 
+
+43:14 you uh should we close out with a rapid
+43:16 
+
+43:16 fire round sure start off uh favorite AI
+43:19 
+
+43:19 app other than
+43:21 
+
+43:21 Oasis has to be between chat and
+43:23 
+
+43:23 character has to be between chat and
+43:25 
+
+43:25 character what he his character for not
+43:28 
+
+43:28 using character okay but on the basic
+43:31 
+
+43:31 notion of that we'll have these apps
+43:35 
+
+43:35 that are entities that have that hold a
+43:37 
+
+43:37 some kind of relationship whether it's
+43:39 
+
+43:39 friendship or whether it's utilitarian
+43:41 
+
+43:41 with hundreds of millions of people I
+43:42 
+
+43:42 think that's an insane platform that's
+43:44 
+
+43:44 going to be the basis
+43:46 
+
+43:46 for so many things going forward yeah I
+43:49 
+
+43:49 love that favorite AI company could be
+43:51 
+
+43:51 the same as the last answer same as the
+43:53 
+
+43:53 last same as the last answer um okay
+43:55 
+
+43:55 let's see when did you first program a
+43:57 
+
+43:57 computer first program a computer uh
+44:00 
+
+44:00 when I was 13 Bots for
+44:03 
+
+44:03 RuneScape okay great game runscape I
+44:06 
+
+44:06 botted the hell out of it for years
+44:09 
+
+44:09 until six years in I used a bot that I
+44:12 
+
+44:12 downloaded from the internet 24 hours
+44:13 
+
+44:13 later got banned are we going to have ai
+44:15 
+
+44:15 generated video games first or AI
+44:17 
+
+44:17 generated novels and I mean at the you
+44:19 
+
+44:19 know at the level where I would actually
+44:21 
+
+44:21 pay for
+44:21 
+
+44:21 it um you're going to have the first
+44:25 
+
+44:25 thing you're going to have is a platform
+44:26 
+
+44:26 that lets other people use creativity to
+44:28 
+
+44:28 create this content because AI is still
+44:30 
+
+44:30 far away from creating creative content
+44:32 
+
+44:32 a super interesting okay who's your
+44:35 
+
+44:35 favorite scientist
+44:37 
+
+44:37 ever favorite scientist Uh I that that
+44:40 
+
+44:40 one I like that one I like
+44:43 
+
+44:43 it's you know there's there's a reason
+44:45 
+
+44:45 we chose the name the
+44:47 
+
+44:47 cart we chose the name the
+44:50 
+
+44:50 cart
+44:51 
+
+44:51 um because so okay I'll answer first of
+44:55 
+
+44:55 all I'll answer the question favorite
+44:56 
+
+44:56 scientist is the Vint cuz I think he's
+44:58 
+
+44:58 he's both an insane scientist and
+44:60 
+
+44:60 engineer and somehow was able to get
+45:02 
+
+45:02 people to fund his projects okay he was
+45:05 
+
+45:05 like if if you go back to Da Vinci like
+45:07 
+
+45:07 he he literally was a great scientist
+45:09 
+
+45:09 engineer and somehow knew how to raise
+45:10 
+
+45:10 money from from back from from VC's back
+45:12 
+
+45:12 then which were Kings okay um so yeah
+45:17 
+
+45:17 definitely Da Vinci and theard and Tesla
+45:20 
+
+45:20 are close seconds the reason we chose
+45:23 
+
+45:23 the name the card was we looked at Tesla
+45:25 
+
+45:25 we like okay we we love both that
+45:26 
+
+45:26 company and the name and we needed we
+45:29 
+
+45:29 needed some someone who does who
+45:32 
+
+45:32 resembles the same same thing that
+45:34 
+
+45:34 Nicole Tesla resembled to uh the company
+45:36 
+
+45:36 Tesla and for that that was the cart
+45:39 
+
+45:39 because you know I think therefore I am
+45:41 
+
+45:41 resembles almost a lot of what a ey is
+45:44 
+
+45:44 to
+45:45 
+
+45:45 do perfect note to end on danan
+45:48 
+
+45:48 congratulations on what you've done
+45:50 
+
+45:50 thank you for joining us today we love
+45:51 
+
+45:51 this conversation and I'm not going to
+45:53 
+
+45:53 congratulate you haven't done jack
+45:55 
+
+45:55 yet let's build something insane but but
+45:57 
+
+45:57 I love the sentiment we we we can't
+45:59 
+
+45:59 celebrate until we really win yeah okay
+46:02 
+
+46:02 there's no celebrating small wins
+46:05 
+
+46:05 [Music]
+46:17 
+
+46:17 [Music]
+46:24 
+
+46:24 [Applause]
+46:25 
+
+46:25 [Music]

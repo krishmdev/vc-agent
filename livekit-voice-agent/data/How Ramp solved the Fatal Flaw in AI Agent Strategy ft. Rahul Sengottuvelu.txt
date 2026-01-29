@@ -1,0 +1,168 @@
+00:02 Raul's at RAMP and today he's going to
+00:04 talk to you about why agents fail and
+00:07 how not to lose. Raul, tell us about how
+00:11 not to fail, how to win.
+00:14 Cool. So, first of all, who is this talk
+00:18 for? Then we'll cover how AI agent
+00:21 assistants fail. And then we'll talk
+00:23 about why they fail and how to fix it.
+00:25 And I just have one core idea I want to
+00:28 communicate. So if you follow along you
+00:29 might catch
+00:30 it. So this talk is for people with
+00:33 distribution. So people are already
+00:34 winning people that have users and
+00:36 mature software products that have been
+00:37 built over time. Um and maybe everyone
+00:40 else or founders here are selling to
+00:41 them or obviously trying to invest in
+00:42 those founders. So everyone really
+00:45 here. So let's look at some examples of
+00:47 mature companies uh and their agents,
+00:49 right? They're not really outlier
+00:51 successes. I'm not going to go into
+00:52 details of why each of them are bad. But
+00:55 here's a very common example like that
+00:57 all of us have like experienced. It's
+00:58 like you ask this AI agent assistant,
+00:60 you're like, "Hey, book a flight for
+01:01 me." And it ends up booking it for you.
+01:03 And then you try to do anything else and
+01:05 it immediately fails, resulting in a
+01:06 really frustrating experience. You see
+01:08 this over and over again. So if I ask in
+01:10 Google Slides and you bold all the text
+01:11 on the slide and it's like the slide AI,
+01:13 it says, "Sorry, I can't do that." So
+01:15 what can you do? If you ask Siri how you
+01:18 slabed, it's like, "Sorry, I can't help
+01:19 with that." You just see this these
+01:20 experiences over and over again and
+01:22 these are the biggest software companies
+01:23 out there. So maybe we should think
+01:26 about why and maybe not repeat those
+01:28 mistakes. So the pattern is people are
+01:31 building these feature incomplete
+01:32 secondass experiences that frustrates
+01:34 their users and seems like everyone
+01:36 fails in the same way. So going deeper
+01:39 this is what their app looks like what's
+01:41 your app looks like. Usually there's a
+01:43 front end there's a back end and this is
+01:44 probably your mental model of like
+01:45 what's going on behind the scenes. But
+01:48 actually, the bigger you are and the
+01:50 older you are, your app gets really
+01:51 complex and really wide. And so there's
+01:53 tons of API endpoints and features and
+01:55 it gets really horizontal uh and quite
+01:58 messy over time. And so this what this
+02:00 is what ends up uh happening when you
+02:02 build uh tools on top. So you're
+02:04 actually stuck on this really long path
+02:06 to feature par with your existing front
+02:08 end. So you're slowly building more and
+02:11 more tools that the LM can use in order
+02:13 to do stuff for your users. So what ends
+02:15 up happening here is like maybe you gave
+02:17 the the LM a book a flight tool but
+02:21 change my seat is like all the way down
+02:22 in the feature road map it's very hard
+02:24 to communicate to your user that that's
+02:25 not supported and what exactly the the
+02:28 uh feature set
+02:30 is and makes what makes this issue worse
+02:33 is like actually you have this like
+02:35 really stacked like jacked front-end
+02:37 team and PMs and designers UX people
+02:39 building this great front-end experience
+02:40 for humans and you have this agent team
+02:42 strap on to the side and trying to catch
+02:44 up and build the same tools and every
+02:46 feature that comes out. So, you're
+02:49 already starting off like far behind and
+02:52 you're also much slower or weaker than
+02:54 the people who are building your main
+02:56 product. So, everyone here probably
+02:58 agrees building an agent the front end
+03:00 is probably really easy. It's all about
+03:02 what tools you give it. So, and you can
+03:03 also call it an MCP or an ADA or or many
+03:06 other uh terms for it. But really, it's
+03:08 like you have these services and they're
+03:10 successful and you're winning and you
+03:11 have all this distribution. You probably
+03:13 want to build a tool calling interface
+03:15 over all your features, not just some of
+03:16 them, and expose it to as many agents as
+03:18 possible because agents uh and Harrison
+03:20 I think we'll be talking about agent
+03:21 economy later, but agents will be
+03:23 calling lots of tools uh in their work
+03:25 and the sooner you just you have those
+03:27 tools that are uh complete over your
+03:28 feature set, the better better off you
+03:30 might be. So don't mess this up, right?
+03:34 But it's also really hard. So here's the
+03:36 core insight. So instead of you going
+03:39 through every single feature one by one,
+03:41 every single endpoint and strapping on
+03:43 tools on your back end, you actually
+03:45 want to computer use yourself uh on the
+03:47 front end. So before you let someone
+03:49 computer use you, you can either
+03:50 computer use yourself or you can build
+03:52 huristics and scaffolding on top of your
+03:54 front end to make this really easy. So
+03:57 let's talk about various other reasons
+03:58 why this is really hard, right? So
+03:60 there's authentication involved. You
+04:02 want to give the agent access to the
+04:03 same features and documents and tools
+04:05 that the user has access to. Typically
+04:08 in enterprise software, there's like
+04:09 user roles and provisioning
+04:11 authentication. That is also really
+04:13 frustrating and really hard to support.
+04:15 If you end up building tools off your
+04:16 front end, you're actually leveraging
+04:18 all the work, not fighting against it of
+04:20 all your front-end uh designers and PMs.
+04:23 So don't re reinvent the wheel. And I'll
+04:25 show you how this works in
+04:28 ramp. So if you ask the the ramp
+04:31 assistant to change your card branding,
+04:33 it's actually really like niche feature
+04:34 that we have in our product. And we
+04:36 probably wouldn't get to adding that as
+04:39 a tool to our agent if we just built the
+04:41 traditional way. We actually ended up
+04:43 building this like computer use agent
+04:45 that spins up a a browser with that
+04:48 user's credentials in the background,
+04:50 pulls up, and then navigates the front
+04:52 entry. The user doesn't see that though.
+04:54 The user of course just sees that the
+04:56 the agent didn't work for it.
+04:58 Um and in this way you're actually like
+05:00 end up supporting all your tools in one
+05:02 fell swoop as opposed to going one by
+05:04 one and like building a frustrating
+05:05 experience for users. So not only is uh
+05:10 do you have feature complete agent you
+05:12 also end up simplifying the task for
+05:15 computer use agent. So maybe it'll work
+05:17 in a few years maybe in a while but if
+05:20 you do end up using it today it's
+05:21 probably not going to be reliable. So if
+05:24 you build it yourself, you end up having
+05:26 your own nav tree. You can simplify with
+05:29 uh DOM heristics and if you have your
+05:30 component library, you can render that
+05:32 into a CLI. You can scaffold the
+05:34 unreliable parts and focus on what's
+05:36 broken and not the other way where you
+05:37 start off with nothing. If you want to
+05:39 talk about specifics, um this is my
+05:42 email. Uh but yeah, that's how we do a
+05:44 ramp.

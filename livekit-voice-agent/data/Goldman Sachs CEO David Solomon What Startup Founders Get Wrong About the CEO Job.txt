@@ -1,0 +1,5035 @@
+00:00 Goldman Sachs has been around for 155
+00:02 
+
+00:02 years and there's been a lot said about
+00:04 
+
+00:04 Goldman Sachs's culture and Goldman
+00:05 
+
+00:05 Sachs's culture is unique. But I would
+00:07 
+
+00:07 also say it's constantly changing
+00:10 
+
+00:10 >> and you better be working at defining
+00:12 
+
+00:12 what you want it to be and constantly
+00:15 
+
+00:15 reshaping it and amplifying what you
+00:17 
+
+00:17 think really matters. The general ethos
+00:19 
+
+00:19 of the firm is if you build trust with
+00:21 
+
+00:21 clients, if you take a long-term view,
+00:23 
+
+00:23 if you do the right thing, good things
+00:25 
+
+00:25 will happen. And I I've watched that in
+00:28 
+
+00:28 my career and I believe it deeply.
+00:47 
+
+00:47 Okay, this is a special episode with
+00:48 
+
+00:48 David Solomon, the CEO of Goldman Sachs,
+00:51 
+
+00:51 an incredible company, been around 150
+00:54 
+
+00:54 years, just a terrific person in a
+00:57 
+
+00:57 terrific company. We get into a whole
+00:58 
+
+00:58 bunch of topics. One was decision-m and
+01:01 
+
+01:01 in particular, you've got something
+01:03 
+
+01:03 going, it's kind of wobbling. When do
+01:06 
+
+01:06 you double down and when do you pull
+01:08 
+
+01:08 away? and he's he recently has had a
+01:11 
+
+01:11 Whopper decision where they had a
+01:12 
+
+01:12 consumer partnership with Apple and they
+01:15 
+
+01:15 recently basically walked away from that
+01:17 
+
+01:17 partnership and so we get behind the
+01:19 
+
+01:19 scenes on that decision. I think it was
+01:21 
+
+01:21 pretty interesting. He credits culture a
+01:23 
+
+01:23 lot with why they've been around for 150
+01:25 
+
+01:25 years. I've had a ton of CEOs and it's
+01:27 
+
+01:27 really thrived. He's really thrived in
+01:29 
+
+01:29 the job and we get into culture. Culture
+01:32 
+
+01:32 is a big reason why HubSpot's only 19
+01:34 
+
+01:34 years has been successful as well. I
+01:36 
+
+01:36 hope you like the episode. David is very
+01:38 
+
+01:38 sharp. Uh I he joined the company. It
+01:41 
+
+01:41 had a 40 billion market cap I believe
+01:44 
+
+01:44 and now it's something like 160 billion
+01:47 
+
+01:47 less than a decade later. So he's very
+01:49 
+
+01:49 very good and very thoughtful. Hope you
+01:51 
+
+01:51 enjoy it. Thanks for joining us.
+01:53 
+
+01:53 >> Thank you for having me.
+01:54 
+
+01:54 >> Um when I was a CEO, I really admired
+01:58 
+
+01:58 Steve Jobs. Um I tried to emulate him. I
+02:03 
+
+02:03 kind of really studied him and followed
+02:05 
+
+02:05 his playbook and it largely served me
+02:07 
+
+02:07 pretty well. Who's your Steve Jobs?
+02:10 
+
+02:10 >> That's a great question. I, you know,
+02:12 
+
+02:12 I'd start by saying that, you know,
+02:13 
+
+02:13 Steve was obvious obviously
+02:15 
+
+02:15 extraordinary in the context of what he
+02:17 
+
+02:17 did.
+02:18 
+
+02:18 >> Although I don't know that most public
+02:22 
+
+02:22 company CEOs
+02:24 
+
+02:24 could model Steve and get away with it
+02:27 
+
+02:27 in uh in today's in today's world. But
+02:30 
+
+02:30 he was extraordinary in terms of his his
+02:33 
+
+02:33 his his focus, you know, his vision for
+02:36 
+
+02:36 what he thought really mattered. I don't
+02:38 
+
+02:38 I've thought a lot about this because
+02:40 
+
+02:40 I've been asked similar questions, you
+02:41 
+
+02:41 know, over the years. And I I don't have
+02:43 
+
+02:43 a Steve Jobs.
+02:45 
+
+02:45 >> One of the things on your Mount
+02:47 
+
+02:47 Rushmore.
+02:47 
+
+02:47 >> Well, I mean there there that you know,
+02:48 
+
+02:48 I mentioned, you know, some people right
+02:50 
+
+02:50 now that I, you know, I watch and I I I
+02:52 
+
+02:52 think enormously high. I mentioned Satia
+02:55 
+
+02:55 um Nadella and you know one of the
+02:58 
+
+02:58 things I've learned from him in my own
+02:59 
+
+02:59 journey as a CEO is he's an incredibly
+03:02 
+
+03:02 empathetic leader
+03:04 
+
+03:04 >> and you know it's hard you know to move
+03:07 
+
+03:07 an organization and also exhibit empathy
+03:12 
+
+03:12 >> um and um and so I've you know I've
+03:14 
+
+03:14 watched some of what Sati has done you
+03:17 
+
+03:17 know in that context because um you know
+03:19 
+
+03:19 I think I think he leads with an
+03:20 
+
+03:20 enormous amount of empathy besides the
+03:22 
+
+03:22 fact that he's a great strategic thinker
+03:23 
+
+03:23 and a whole bunch of other things.
+03:24 
+
+03:24 >> Um he's done an extraordinary job with
+03:26 
+
+03:26 uh with Microsoft
+03:28 
+
+03:28 >> but then you also you know you can also
+03:32 
+
+03:32 you know pick and choose you know people
+03:35 
+
+03:35 that you know at times have led
+03:37 
+
+03:37 extraordinary transformations.
+03:39 
+
+03:39 you know his his journey is a different
+03:43 
+
+03:43 one at this point for a variety of
+03:44 
+
+03:44 reasons but there was a period of time
+03:46 
+
+03:46 where I was really watching the way Bob
+03:48 
+
+03:48 Iger was transforming Disney and you
+03:51 
+
+03:51 know it was a difficult transformation
+03:53 
+
+03:53 and so
+03:55 
+
+03:55 I've tried to pick out things that are
+03:58 
+
+03:58 going on with different CEOs and
+04:00 
+
+04:00 constantly say what can I learn one of
+04:02 
+
+04:02 the great advantages I have in my job is
+04:04 
+
+04:04 part of my job is to travel around and
+04:06 
+
+04:06 spend time with CEOs
+04:07 
+
+04:07 >> interesting people
+04:07 
+
+04:07 >> so you get with interesting people so
+04:09 
+
+04:09 you get ask them, you know, why you
+04:11 
+
+04:11 doing this? Why'd you do this? How did
+04:12 
+
+04:12 this work? So, I get a lot of private
+04:14 
+
+04:14 time with with CEOs to really reflect
+04:17 
+
+04:17 and that's helped me a lot in my own my
+04:19 
+
+04:19 own journey as a CEO.
+04:20 
+
+04:20 >> You've worked for some legends, uh,
+04:22 
+
+04:22 Lloyd Blankfine, Hank Pollson. Did they
+04:26 
+
+04:26 mentor or coach you? Is there things you
+04:29 
+
+04:29 took from them that were incredibly
+04:31 
+
+04:31 valuable that all of us can learn from?
+04:33 
+
+04:33 >> I learned a lot from both of them. And
+04:35 
+
+04:35 you learned different. They they they
+04:36 
+
+04:36 had different skills. They had different
+04:37 
+
+04:37 personalities. into different things.
+04:39 
+
+04:39 Lloyd was an incredible risk manager, an
+04:41 
+
+04:41 incredible risk manager, and he had a he
+04:43 
+
+04:43 had an incredible ability to really
+04:48 
+
+04:48 sweat and worry about the things that
+04:50 
+
+04:50 had a small probability of happening.
+04:53 
+
+04:53 But boy oh boy, the fact that he was
+04:55 
+
+04:55 that way when we went into the financial
+04:57 
+
+04:57 crisis, you know, he was two steps ahead
+04:60 
+
+04:60 a lot of other uh a lot of other bank
+05:01 
+
+05:01 CEOs and I think was really
+05:03 
+
+05:03 extraordinary as a risk manager in that
+05:05 
+
+05:05 context. You know, Hank Hank was Hank
+05:09 
+
+05:09 was driven. He had a great nose for
+05:13 
+
+05:13 client relationships and how to get
+05:14 
+
+05:14 things done. And Hank also, you know,
+05:17 
+
+05:17 Hank had an incredible compass. And you
+05:20 
+
+05:20 know, one of the things that I
+05:21 
+
+05:21 definitely
+05:21 
+
+05:21 >> What do you mean by that?
+05:24 
+
+05:24 >> He believe he we all need a compass, you
+05:26 
+
+05:26 know, in these jobs and you want that
+05:28 
+
+05:28 compass pointing north. And one of the
+05:31 
+
+05:31 complicated things about being a CEO is
+05:32 
+
+05:32 there are a whole lot of things that are
+05:34 
+
+05:34 constantly banging on you trying to
+05:35 
+
+05:35 knock your compass off of north. And
+05:38 
+
+05:38 sometimes it takes enormous, you know,
+05:40 
+
+05:40 resilience and determination to keep
+05:42 
+
+05:42 that compass keep it pointed in the
+05:43 
+
+05:43 direction that you know is right while
+05:46 
+
+05:46 there's a lot of noise or agida. And you
+05:49 
+
+05:49 know, one of the things I learned from
+05:50 
+
+05:50 Hank and I just remember I remember
+05:52 
+
+05:52 sitting in a meeting with him, you know,
+05:55 
+
+05:55 early on when I was at Goldman Sachs and
+05:57 
+
+05:57 somebody was suggesting something and
+05:58 
+
+05:58 there was a lot of momentum for it and
+05:60 
+
+05:60 he just said, "Well, we're not going to
+06:01 
+
+06:01 do that."
+06:02 
+
+06:02 >> Okay.
+06:02 
+
+06:02 >> And it was completely against it was
+06:05 
+
+06:05 completely against kind of the consensus
+06:07 
+
+06:07 of the room and he was he was being a
+06:08 
+
+06:08 CEO because he thought it was wrong. He
+06:10 
+
+06:10 said, "We're not going to do that."
+06:11 
+
+06:11 >> And so I you know I think it's um I
+06:13 
+
+06:13 think you can learn from a lot of
+06:14 
+
+06:14 people. I had a great mentor who wasn't
+06:17 
+
+06:17 a CEO who actually you know if you would
+06:20 
+
+06:20 if you would frame the question around
+06:21 
+
+06:21 who's the most important mentor
+06:24 
+
+06:24 >> you've had in your career was a
+06:25 
+
+06:25 gentleman named Richie Metric okay
+06:27 
+
+06:27 >> who I worked for at Bear Sterns in the
+06:29 
+
+06:29 1990s been the CFO of Interstate
+06:33 
+
+06:33 Bakeries he'd been a lawyer
+06:34 
+
+06:34 >> he was also just intuitively one of the
+06:37 
+
+06:37 smartest people I've ever met in my
+06:38 
+
+06:38 career and I've met a lot of smart
+06:40 
+
+06:40 people but he had a profound impact on
+06:44 
+
+06:44 teaching me at a time when I was in my
+06:46 
+
+06:46 late 20s and my early 30s and I was kind
+06:48 
+
+06:48 of rising up in an organization
+06:49 
+
+06:49 relatively quickly. He really taught me
+06:53 
+
+06:53 to be self-reflective and really
+06:56 
+
+06:56 understand strengths and weaknesses
+06:59 
+
+06:59 >> and you know be pretty hard on myself
+07:01 
+
+07:01 about things that I had to change
+07:03 
+
+07:03 >> if I wanted to advance. He forced me to
+07:05 
+
+07:05 look at myself at a time where I had,
+07:07 
+
+07:07 you know, less maturity, less of an
+07:09 
+
+07:09 ability to really I was just going
+07:11 
+
+07:11 >> and he for forced me to pause and really
+07:13 
+
+07:13 think about myself and how I could make
+07:14 
+
+07:14 myself better. And he had a profound had
+07:16 
+
+07:16 a profound impact on me.
+07:17 
+
+07:17 >> Okay. Interesting. There's it's a little
+07:20 
+
+07:20 bit fashionable in Silicon Valley these
+07:22 
+
+07:22 days that people are saying you got a
+07:24 
+
+07:24 much better return on your investment by
+07:26 
+
+07:26 investing in your strengths and making
+07:28 
+
+07:28 them stronger versus fixing your
+07:31 
+
+07:31 weaknesses and you should just hire
+07:32 
+
+07:32 around your weaknesses. Any reaction to
+07:35 
+
+07:35 that? I I think to be successful over a
+07:40 
+
+07:40 very very long career where you're going
+07:42 
+
+07:42 to be in leadership positions and
+07:44 
+
+07:44 ultimately rise up to lead a big
+07:48 
+
+07:48 organization. And by the way, it's very
+07:49 
+
+07:49 different from a founder leads an
+07:51 
+
+07:51 organization because they created it.
+07:52 
+
+07:52 >> Yes.
+07:53 
+
+07:53 >> And they anoint themselves founder. It's
+07:55 
+
+07:55 theirs.
+07:56 
+
+07:56 >> Yes.
+07:58 
+
+07:58 you know, rising up to lead a 150-y old
+07:60 
+
+07:60 organization like Goldman Sachs,
+08:03 
+
+08:03 >> you better have a lot of strengths, you
+08:05 
+
+08:05 better be working on your weaknesses,
+08:07 
+
+08:07 okay?
+08:08 
+
+08:08 >> Because if you're not doing all of the
+08:09 
+
+08:09 above, first of all, it's a random walk
+08:11 
+
+08:11 to begin with because there's so many
+08:13 
+
+08:13 talented people. And you know, one of
+08:15 
+
+08:15 the things I've always talked about is
+08:16 
+
+08:16 serendipity and timing.
+08:18 
+
+08:18 >> Um, and I think serendipity and timing
+08:20 
+
+08:20 have a lot to do with who winds up in
+08:22 
+
+08:22 the in the CEO jobs in these in these
+08:24 
+
+08:24 organizations.
+08:25 
+
+08:25 Um, but I think you better be working on
+08:28 
+
+08:28 the, you know, the whole package if you
+08:30 
+
+08:30 want to put yourself into the ring and
+08:32 
+
+08:32 have a chance to, uh, to come out of the
+08:34 
+
+08:34 ring. Got it.
+08:35 
+
+08:35 >> To come to come out of the ring.
+08:37 
+
+08:37 >> Another kind of
+08:39 
+
+08:39 something floating in the air in Silicon
+08:41 
+
+08:41 Valley is founders really hiring for
+08:45 
+
+08:45 slope versus experience. So, the very
+08:48 
+
+08:48 young, very intelligent, high slope
+08:51 
+
+08:51 person versus someone who's sort of been
+08:54 
+
+08:54 there and done that. Um, and you talked
+08:57 
+
+08:57 earlier about about just smart and and I
+09:01 
+
+09:01 it reminds me um I'm a Boston sports fan
+09:04 
+
+09:04 and the in the Boston Celtics have an
+09:06 
+
+09:06 announcer named Tommy Heinson and Tommy
+09:09 
+
+09:09 Heinson very announcer. He was really
+09:12 
+
+09:12 good. And the Celtics had like a backup
+09:14 
+
+09:14 backup center who was very low skill but
+09:19 
+
+09:19 was giant. And I remember Heinstein
+09:21 
+
+09:21 saying, you know, he may not have a lot
+09:23 
+
+09:23 of skill, but you can't teach seven
+09:25 
+
+09:25 feet. And I kind of think the same with
+09:28 
+
+09:28 smart. You can't teach smart. So, how
+09:30 
+
+09:30 much is it about smart versus
+09:32 
+
+09:32 experience? I kind of think you guys are
+09:34 
+
+09:34 famous for hiring very bright young
+09:36 
+
+09:36 people and moving them up. We're we're
+09:38 
+
+09:38 as an organization, we're
+09:39 
+
+09:39 extraordinarily lucky that we have so
+09:41 
+
+09:41 many incredibly bright people that are
+09:43 
+
+09:43 interested in working and spending time
+09:45 
+
+09:45 at Goldman Sachs. But,
+09:47 
+
+09:47 >> you know, I'm I'm in the camp of smart
+09:49 
+
+09:49 enough.
+09:50 
+
+09:50 >> Okay.
+09:51 
+
+09:51 Um, you have to be smart enough,
+09:55 
+
+09:55 but the smartest person in the world
+09:58 
+
+09:58 without a whole package of other things
+10:00 
+
+10:00 not going to navigate Goldman Sachs
+10:02 
+
+10:02 well. Not going to be successful in
+10:03 
+
+10:03 Goldman Sachs, you know, over the over
+10:05 
+
+10:05 the, um, over the long run.
+10:07 
+
+10:07 >> You know, the human elements,
+10:09 
+
+10:09 um, the ability to connect, resilience,
+10:14 
+
+10:14 >> determination,
+10:16 
+
+10:16 striving for excellence, you know,
+10:18 
+
+10:18 things that matter, you know,
+10:19 
+
+10:19 everywhere.
+10:20 
+
+10:20 It's interesting when you talk, you
+10:22 
+
+10:22 know, you live in a founder world.
+10:24 
+
+10:24 >> I live in an established company world
+10:26 
+
+10:26 and I deal with founders as clients.
+10:28 
+
+10:28 But,
+10:30 
+
+10:30 >> you know, it's um, you know, this this
+10:32 
+
+10:32 this concept of of slope versus
+10:34 
+
+10:34 experience. I live in a world where
+10:36 
+
+10:36 experience is worth a lot. I live in a
+10:39 
+
+10:39 world, if you sit around the management
+10:41 
+
+10:41 committee table at Goldman Sachs,
+10:44 
+
+10:44 >> the level of experience and the judgment
+10:46 
+
+10:46 that comes from that experience is
+10:48 
+
+10:48 extraordinary. underrated in your mind.
+10:50 
+
+10:50 >> And and hugely underrated. And by the
+10:52 
+
+10:52 way, hugely necessary kind of big
+10:54 
+
+10:54 differentiator for the firm.
+10:55 
+
+10:55 >> Okay.
+10:56 
+
+10:56 >> Um you can't you can't teach experience.
+10:59 
+
+10:59 >> No,
+10:60 
+
+10:60 >> that doesn't mean somebody without
+11:01 
+
+11:01 experience can't do very very well. But
+11:04 
+
+11:04 it's you know it's
+11:05 
+
+11:05 >> I mean someone can't watch this podcast
+11:07 
+
+11:07 and then run Goldman Sachs and not be
+11:09 
+
+11:09 able to do it.
+11:10 
+
+11:10 >> Well, a lot of people there are a lot of
+11:11 
+
+11:11 people that can run Goldman Sachs and
+11:13 
+
+11:13 maybe if they do they'll have less bumps
+11:14 
+
+11:14 and bruises than I do. But um
+11:17 
+
+11:17 >> you know experience experience matters
+11:18 
+
+11:18 in these big organizations and when it
+11:20 
+
+11:20 matters it doesn't matter when things
+11:22 
+
+11:22 are going well.
+11:23 
+
+11:23 >> It matters when the bumps come.
+11:25 
+
+11:25 >> Yeah.
+11:26 
+
+11:26 >> Um and you know you've got to make
+11:27 
+
+11:27 difficult judgments and and making those
+11:29 
+
+11:29 judgments and and they're not they're
+11:31 
+
+11:31 not 9010 judgments. They're 5149
+11:34 
+
+11:34 judgments.
+11:34 
+
+11:34 >> No easy decisions at the CEO desk.
+11:36 
+
+11:36 >> By the way, if it's an easy decision, it
+11:38 
+
+11:38 doesn't make it to my desk. One of the
+11:39 
+
+11:39 things I've realized is I don't have to
+11:41 
+
+11:41 make a lot of decisions.
+11:41 
+
+11:41 >> What's the best of two shitty options?
+11:43 
+
+11:43 >> Yeah. where that is that is oftentimes
+11:46 
+
+11:46 what CEOs face.
+11:47 
+
+11:47 >> Yeah.
+11:48 
+
+11:48 >> Okay. A lot of people listening are VP
+11:50 
+
+11:50 of such and such in XYZ scaleup company
+11:55 
+
+11:55 and they want to be CEO of a company
+11:58 
+
+11:58 someday. Um you were kind of hired from
+12:01 
+
+12:01 the outside, you rose up to CEO. Advice
+12:04 
+
+12:04 to those folks who are on that kind of
+12:05 
+
+12:05 track who want to be not found a company
+12:08 
+
+12:08 but become a CEO. And I think basic in
+12:10 
+
+12:10 tech a lot of companies are getting
+12:12 
+
+12:12 older and a lot of founders are going to
+12:14 
+
+12:14 step aside in the next few years and a
+12:16 
+
+12:16 new generation will kind of come up and
+12:17 
+
+12:17 take over them. Advice for those folks.
+12:20 
+
+12:20 What was a younger David thinking about
+12:22 
+
+12:22 back then?
+12:23 
+
+12:23 >> Well, I think I think one of the things
+12:26 
+
+12:26 that's interesting when I was you know I
+12:29 
+
+12:29 joined Goldman Sachs at 37. I had I had
+12:31 
+
+12:31 actually I had worked early in my career
+12:34 
+
+12:34 at Drexel Burnham and then Drexel
+12:35 
+
+12:35 Bernham went out of business and I wound
+12:36 
+
+12:36 up at Bear Sterns and I did very well at
+12:38 
+
+12:38 Beer Sterns. I rose up into a relatively
+12:40 
+
+12:40 senior position at Bear Sterns in my
+12:42 
+
+12:42 mid30s.
+12:44 
+
+12:44 And when I joined Goldman Sachs, I
+12:47 
+
+12:47 certainly did not aspire to be the CEO
+12:49 
+
+12:49 of Goldman Sachs. You know, I aspired to
+12:52 
+
+12:52 to practice the trade of investment
+12:55 
+
+12:55 banking, be super successful at it,
+12:56 
+
+12:56 impact the organization.
+12:58 
+
+12:58 >> Yeah.
+12:58 
+
+12:58 >> I I decided that I was a big
+12:60 
+
+13:00 organization person.
+13:01 
+
+13:01 >> Okay.
+13:02 
+
+13:02 >> Um,
+13:02 
+
+13:02 >> what do you mean by that?
+13:03 
+
+13:03 >> I I loved, you know, there's a dynamic
+13:06 
+
+13:06 in a large organization. the resources,
+13:09 
+
+13:09 the access, the platform that I found
+13:12 
+
+13:12 very very appealing and the leadership
+13:14 
+
+13:14 opportunity, you know, in big platforms.
+13:17 
+
+13:17 I found that very very appealing. So I
+13:19 
+
+13:19 was leading, you know, in my 30s at Bear
+13:21 
+
+13:21 Stories, but then at Goldman Sachs, you
+13:23 
+
+13:23 know, I was managing hundreds and
+13:24 
+
+13:24 hundreds of people. Yeah. Um, very
+13:25 
+
+13:25 quickly, thousands of people.
+13:27 
+
+13:27 >> Um, and I really I enjoyed that. I
+13:30 
+
+13:30 enjoyed the platform. I enjoyed being a
+13:32 
+
+13:32 part of an institution. It wasn't about
+13:34 
+
+13:34 me. It was about, you know, stewarding
+13:36 
+
+13:36 >> Yeah.
+13:37 
+
+13:37 >> stewarding the institution. I really I
+13:39 
+
+13:39 really enjoyed that.
+13:40 
+
+13:40 >> But I never, my goal wasn't to be the
+13:43 
+
+13:43 CEO of Goldman Sachs. In fact, I I
+13:46 
+
+13:46 >> in some ways I'm the unlikely CEO. Okay.
+13:48 
+
+13:48 >> Um I came from the outside. I was never,
+13:50 
+
+13:50 you know, you can go back and you can
+13:52 
+
+13:52 look at some articles, you know, the
+13:53 
+
+13:53 dark horse candidate this the unlike. I
+13:55 
+
+13:55 mean, a lot of it serendipity, a lot of
+13:57 
+
+13:57 it's luck, but it wasn't it wasn't my
+13:59 
+
+13:59 principal goal. Now, at the same time, I
+14:02 
+
+14:02 just told you that I liked leading
+14:03 
+
+14:03 people. And so, I knew I was developing
+14:07 
+
+14:07 skills that gave me the possibility of
+14:11 
+
+14:11 leading a organization. But what I was
+14:13 
+
+14:13 focused on was developing skills and
+14:16 
+
+14:16 seeing where the road took me, not kind
+14:19 
+
+14:19 of pointing to a seat and saying, "How
+14:21 
+
+14:21 do I get to that seat?"
+14:22 
+
+14:22 >> Yeah.
+14:22 
+
+14:22 >> Um, and so my advice to people that
+14:26 
+
+14:26 really want to run a big enterprise,
+14:27 
+
+14:27 Yeah. is you've got to do a lot of
+14:29 
+
+14:29 different things. So, one of the great
+14:31 
+
+14:31 benefits that I got at Goldman Sachs is
+14:34 
+
+14:34 I did a lot of different things.
+14:35 
+
+14:35 >> They moved you around.
+14:36 
+
+14:36 >> They moved me around and I, you know, I
+14:38 
+
+14:38 was I was running all of credit trading
+14:39 
+
+14:39 when I joined the firm. Yeah.
+14:41 
+
+14:41 >> And then Hank Paulson came and said to
+14:42 
+
+14:42 me, "You're going to go run equity
+14:44 
+
+14:44 capital markets." And I said, "Well, I
+14:45 
+
+14:45 really like this job." And he said, "No,
+14:47 
+
+14:47 you're going to go do this."
+14:48 
+
+14:48 >> Yeah.
+14:48 
+
+14:48 >> Um, and so it was it was a completely
+14:51 
+
+14:51 different thing.
+14:51 
+
+14:51 >> Do you think startups should do that?
+14:52 
+
+14:52 They've got a high potential person move
+14:54 
+
+14:54 even though they're great in moving the
+14:56 
+
+14:56 needle in what they are doing. Should
+14:58 
+
+14:58 they have rotation type?
+14:59 
+
+14:59 >> It's harder. It's harder. It's harder in
+15:01 
+
+15:01 a startup.
+15:01 
+
+15:01 >> Yeah.
+15:01 
+
+15:01 >> Okay. It's harder in a startup because
+15:03 
+
+15:03 you you have you have a limited number
+15:04 
+
+15:04 of people do again big enterprises and
+15:08 
+
+15:08 platforms. This is one of the things
+15:09 
+
+15:09 that's really attractive about working
+15:10 
+
+15:10 at a big enterprise like Goldman Sachs.
+15:13 
+
+15:13 You can move around and do a lot of
+15:14 
+
+15:14 things. Yeah.
+15:15 
+
+15:15 >> And a startup that's trying to scale in
+15:17 
+
+15:17 a business,
+15:18 
+
+15:18 >> you know, you don't you don't have that
+15:19 
+
+15:19 same luxury. you you can't you can't the
+15:23 
+
+15:23 organization can't be as patient you
+15:25 
+
+15:25 know to some degree so they they really
+15:26 
+
+15:26 are they really are different things but
+15:28 
+
+15:28 if you want to lead if you want to
+15:30 
+
+15:30 really lead people and lead big parts of
+15:32 
+
+15:32 organizations or ultimately lead an
+15:33 
+
+15:33 organization
+15:35 
+
+15:35 >> I think you've got to try to do a
+15:36 
+
+15:36 variety of different things and really
+15:38 
+
+15:38 gain experience
+15:39 
+
+15:39 >> do you think failure is important along
+15:40 
+
+15:40 that road
+15:41 
+
+15:41 >> I I think failure is important for
+15:42 
+
+15:42 everyone because you know there's
+15:44 
+
+15:44 there's no one
+15:46 
+
+15:46 >> do you feel like man I fell on my face
+15:48 
+
+15:48 on the way
+15:48 
+
+15:48 >> I I mean I fell on my
+15:50 
+
+15:50 you know, so many times. I mean, so many
+15:52 
+
+15:52 times and I I can tell you, you know,
+15:54 
+
+15:54 crazy stories about being, you know,
+15:56 
+
+15:56 really learning what it is, you know, to
+15:58 
+
+15:58 be responsible things. Goldman Sachs is
+16:00 
+
+16:00 a very competitive place. We compete to
+16:02 
+
+16:02 a very high standard. I I mean, here's a
+16:04 
+
+16:04 small, you know, anecdotal story. It was
+16:07 
+
+16:07 uh I I was over I had flown over to
+16:11 
+
+16:11 Ireland to play golf for three days with
+16:14 
+
+16:14 a group of guys I went to college with
+16:17 
+
+16:17 because it was the year when we all
+16:19 
+
+16:19 turned 40.
+16:21 
+
+16:21 >> And I had just started running the
+16:23 
+
+16:23 equity capital markets business at
+16:25 
+
+16:25 Goldman Sachs. And when I when you know
+16:29 
+
+16:29 we got over there um and that night
+16:33 
+
+16:33 we're having dinner and this is you know
+16:35 
+
+16:35 cell phones existed but it wasn't the
+16:37 
+
+16:37 same constant text and everybody in
+16:39 
+
+16:39 touch but I checked my message after
+16:41 
+
+16:41 dinner so it would have been uh you know
+16:44 
+
+16:44 10:30 at night so it's going to be 5:30
+16:46 
+
+16:46 in New York.
+16:48 
+
+16:48 We had missed a $2 billion equity deal
+16:52 
+
+16:52 for uh for Accenture and people were
+16:56 
+
+16:56 going apoplelectic as how it could
+16:57 
+
+16:57 happen because we had led their IPO, you
+16:59 
+
+16:59 know, a year earlier and we missed this
+17:01 
+
+17:01 $2 billion equity deal.
+17:03 
+
+17:03 >> And you know what, my area, I was
+17:05 
+
+17:05 responsible. I was figuring out how to
+17:06 
+
+17:06 get myself back to New York. I was back
+17:08 
+
+17:08 in the office the next morning dealing
+17:10 
+
+17:10 with it. And it's, you know, that's you
+17:12 
+
+17:12 learn from those things. Yeah. Okay.
+17:14 
+
+17:14 Because the world was like, "Okay,
+17:15 
+
+17:15 you're in charge. How could this happen
+17:17 
+
+17:17 on your watch? Now I tell the story now
+17:20 
+
+17:20 it's 25 years later it's one deal but
+17:23 
+
+17:23 that ethos of competing to that level of
+17:25 
+
+17:25 excellence that level of accountability
+17:28 
+
+17:28 those are things that have really made
+17:30 
+
+17:30 Goldman Sachs what it is over a long
+17:31 
+
+17:31 period of time and if you want to lead
+17:33 
+
+17:33 in that organization
+17:35 
+
+17:35 >> you know you have to when when things
+17:36 
+
+17:36 don't go right you have to run to them
+17:38 
+
+17:38 and you have to jump on them and so I
+17:39 
+
+17:39 mean that's happened so many different
+17:41 
+
+17:41 times in my career different ways
+17:43 
+
+17:43 different things
+17:44 
+
+17:44 >> bad judgments on people chose the wrong
+17:46 
+
+17:46 people had to correct
+17:48 
+
+17:48 Mhm.
+17:49 
+
+17:49 >> By the way, I mean, one of the most
+17:50 
+
+17:50 difficult decisions I made was for us to
+17:53 
+
+17:53 step away from some of the consumer
+17:54 
+
+17:54 business that we had started.
+17:55 
+
+17:55 >> Yeah, let's talk about that.
+17:56 
+
+17:56 >> Yeah. Um,
+17:58 
+
+17:58 >> that I don't think that was your bet.
+18:00 
+
+18:00 >> Well, I didn't I didn't start it. I, you
+18:02 
+
+18:02 know, I I didn't start it. The the the
+18:03 
+
+18:03 theision
+18:05 
+
+18:05 roll back the history a little bit. So,
+18:07 
+
+18:07 it's
+18:07 
+
+18:07 >> Sure.
+18:08 
+
+18:08 >> The thing that I find interesting about
+18:09 
+
+18:09 it after running HubSpot is like you've
+18:11 
+
+18:11 got your core businesses. They're going
+18:13 
+
+18:13 great. It's like and they're big markets
+18:15 
+
+18:15 and you're you're deep in the markets.
+18:18 
+
+18:18 Should we just triple down on that or
+18:19 
+
+18:19 should we take a risk and do something
+18:21 
+
+18:21 new is one question in my head I always
+18:24 
+
+18:24 wrestle that. The second question is
+18:26 
+
+18:26 okay we did that bet. It's going okay
+18:31 
+
+18:31 if we just put enough resource on it
+18:34 
+
+18:34 would work. And so the decision to go
+18:36 
+
+18:36 into it I think is interesting. And the
+18:37 
+
+18:37 decision, I'm sure you doubled down a
+18:39 
+
+18:39 couple times about the decision to step
+18:41 
+
+18:41 away. That's fascinating to me.
+18:44 
+
+18:44 >> Well, there there are a couple things. I
+18:46 
+
+18:46 mean, it's it's it's a complex story as
+18:48 
+
+18:48 these things always are. And and
+18:50 
+
+18:50 >> you know, there's a there's a press
+18:52 
+
+18:52 narrative around it that
+18:54 
+
+18:54 >> what's the real narrative?
+18:55 
+
+18:55 >> Well, the reason that we the reason that
+18:56 
+
+18:56 we there are a number of reasons why we
+18:58 
+
+18:58 decided to move into the business, but a
+19:00 
+
+19:00 big reason we decided to look at the
+19:03 
+
+19:03 business was to start to build a deposit
+19:05 
+
+19:05 platform.
+19:06 
+
+19:06 >> Yeah. because the firm was the largest
+19:08 
+
+19:08 wholesale funer in the world and there
+19:09 
+
+19:09 are a lot of things that you want to be
+19:10 
+
+19:10 the largest in the world. Wholesale
+19:12 
+
+19:12 funer as a financial institution is not
+19:14 
+
+19:14 one of them.
+19:15 
+
+19:15 >> Okay.
+19:16 
+
+19:16 >> Okay.
+19:17 
+
+19:17 >> So, you know, deposits represent, you
+19:19 
+
+19:19 know, a much more stable base and
+19:21 
+
+19:21 because we hadn't grown up as a bank. We
+19:23 
+
+19:23 did not have a deposit platform and
+19:25 
+
+19:25 digitization was allowing the concept of
+19:27 
+
+19:27 digital deposits. And so the original
+19:29 
+
+19:29 idea was we'll build a digital deposit
+19:31 
+
+19:31 platform and we'll we'll make some
+19:33 
+
+19:33 consumer loans and we'll see what we can
+19:36 
+
+19:36 create out of it.
+19:37 
+
+19:37 >> Was this bubbling under the surface for
+19:39 
+
+19:39 a year 10 years?
+19:40 
+
+19:40 >> No, there was there was there was a very
+19:42 
+
+19:42 famous meeting out in the east end of
+19:44 
+
+19:44 Long Island at Gary Cohen's house who
+19:46 
+
+19:46 was the president with a group of the
+19:47 
+
+19:47 senior leaders brainstorm. Yeah.
+19:50 
+
+19:50 Brainstorming around growth ideas that
+19:52 
+
+19:52 would move the firm forward. This was
+19:54 
+
+19:54 this was surfaced by by a couple of
+19:56 
+
+19:56 other people. not me, a couple other
+19:58 
+
+19:58 people there. I was running investment
+19:59 
+
+19:59 banking at the time and Lloyd decided
+20:02 
+
+20:02 that that he wanted to do it and then
+20:04 
+
+20:04 shortly after we started that
+20:07 
+
+20:07 um Apple approached us as to whether or
+20:10 
+
+20:10 not we wanted to look at partnering with
+20:12 
+
+20:12 them on a credit card and I think you
+20:14 
+
+20:14 know there the thought process was one
+20:17 
+
+20:17 of the largest most important companies
+20:18 
+
+20:18 in the world you know if you're going to
+20:20 
+
+20:20 do this very interesting partner very
+20:22 
+
+20:22 interesting tech partner and so a
+20:25 
+
+20:25 decision was made that we'd go down that
+20:26 
+
+20:26 road we'd try to do it And one of the
+20:28 
+
+20:28 reasons we were attracted to Apple is
+20:30 
+
+20:30 Apple wanted to do it differently.
+20:32 
+
+20:32 >> Hold on, let me stop you there. You're
+20:34 
+
+20:34 you're in Long Island. You're having
+20:36 
+
+20:36 that discussion. A couple guys present
+20:38 
+
+20:38 it.
+20:38 
+
+20:38 >> And was there a lot of debate around it?
+20:41 
+
+20:41 How does Goldman make a decision like
+20:43 
+
+20:43 that? Is it is it consensus? Were there
+20:45 
+
+20:45 a bunch of people in the room said,
+20:46 
+
+20:46 "Hey, this is crazy." There was a lot of
+20:48 
+
+20:48 debate and there were a lot of people
+20:49 
+
+20:49 offering opinions, but ultimately
+20:52 
+
+20:52 >> the decision to launch the the deposit
+20:54 
+
+20:54 platform and um and start the small
+20:56 
+
+20:56 lending business that we called Marcus
+20:58 
+
+20:58 ultimately was Lloyd's call.
+20:59 
+
+20:59 >> Okay.
+20:60 
+
+20:60 >> Yeah. And that's
+21:00 
+
+21:00 >> and was it contrarian to what the room
+21:03 
+
+21:03 generally wanted?
+21:03 
+
+21:03 >> No, it wasn't it wasn't contrary
+21:05 
+
+21:05 although there were people like why
+21:06 
+
+21:06 would we do this? But I I think the
+21:08 
+
+21:08 deposit thing was a really important
+21:10 
+
+21:10 strategic decision. I think that was
+21:12 
+
+21:12 right. And then how did you decide you
+21:14 
+
+21:14 didn't have any experience in that who
+21:16 
+
+21:16 to give that opportunity to as opposed
+21:19 
+
+21:19 to acquiring in the space? Here's here's
+21:21 
+
+21:21 where I think, you know, and this is all
+21:23 
+
+21:23 hindsight, you know, and hindsight's
+21:25 
+
+21:25 very easy, obviously, because with
+21:26 
+
+21:26 hindsight, you know, you're going to be
+21:28 
+
+21:28 mostly right.
+21:29 
+
+21:29 >> Mostly
+21:29 
+
+21:29 >> I think I think one of the um I think
+21:32 
+
+21:32 one of the big mistakes we made, this is
+21:35 
+
+21:35 a little bit culture, and I've I've
+21:36 
+
+21:36 tried to evolve this a little bit. The
+21:38 
+
+21:38 firm always
+21:41 
+
+21:41 operated as we did new things and we
+21:43 
+
+21:43 grew the firm that we've got lots of
+21:44 
+
+21:44 smart people and we can figure it out.
+21:46 
+
+21:46 It was very insular. There was never a
+21:49 
+
+21:49 view that you know let's go get real
+21:53 
+
+21:53 expertise from the outside.
+21:55 
+
+21:55 >> Now that evolved a little bit by the way
+21:57 
+
+21:57 that's one of the reasons why I wound up
+21:58 
+
+21:58 at the firm
+21:60 
+
+21:60 >> um because I had an expertise that there
+22:01 
+
+22:01 wasn't there wasn't it wasn't expertise
+22:04 
+
+22:04 that was heavily embedded in the firm.
+22:06 
+
+22:06 Um but um
+22:09 
+
+22:09 but I think with hindsight we would have
+22:11 
+
+22:11 been better if we really wanted
+22:12 
+
+22:12 strategically to be in that business to
+22:14 
+
+22:14 buy a more established platform instead
+22:15 
+
+22:15 of starting from scratch. Now what's
+22:17 
+
+22:17 also lost in the story and the narrative
+22:20 
+
+22:20 is we built some very very good things.
+22:22 
+
+22:22 First of all the deposit platform is
+22:24 
+
+22:24 very big and very successful and the
+22:26 
+
+22:26 firm is enormous benefits from the fact
+22:29 
+
+22:29 that we have this digital deposit
+22:30 
+
+22:30 platform. Enormous benefits and that's
+22:33 
+
+22:33 worth a lot a lot of money. Yeah.
+22:35 
+
+22:35 >> Um and it's very important for the
+22:37 
+
+22:37 firm's funding and the way the firm is
+22:38 
+
+22:38 competitively positioned.
+22:40 
+
+22:40 credit card platform with Apple is an
+22:43 
+
+22:43 extraordinary product and service. And
+22:46 
+
+22:46 you know, while it's it's out in the
+22:47 
+
+22:47 world that we're not going to be a
+22:48 
+
+22:48 long-term Yeah.
+22:49 
+
+22:49 >> you know, holder of that, it's something
+22:52 
+
+22:52 that we built with Apple. Yeah.
+22:53 
+
+22:53 >> That is really terrific. It's the And
+22:56 
+
+22:56 it's it's a great product. It's a great
+22:57 
+
+22:57 service and it's really working now. So,
+23:01 
+
+23:01 what prompted the decision? The decision
+23:04 
+
+23:04 was prompted by the fact that the
+23:06 
+
+23:06 regulatory environment had significantly
+23:09 
+
+23:09 changed. We and other financial
+23:12 
+
+23:12 institutions were dealing with
+23:13 
+
+23:13 regulatory changes and it became very
+23:15 
+
+23:15 hard to organically scale that to a
+23:19 
+
+23:19 place I see
+23:20 
+
+23:20 >> that you could really make it work.
+23:22 
+
+23:22 >> The firm was feeling some pressure
+23:23 
+
+23:23 because it was a tough time after the
+23:25 
+
+23:25 Russian invasion of Ukraine and asset
+23:28 
+
+23:28 prices in 2022. We had a lot of
+23:31 
+
+23:31 regulatory pressure and
+23:34 
+
+23:34 you know a group of us in the senior
+23:35 
+
+23:35 leadership said this is not working. We
+23:37 
+
+23:37 can make it work, but it's going to be
+23:39 
+
+23:39 very, very hard. But it's small and it's
+23:42 
+
+23:42 distracting us from the things that can
+23:44 
+
+23:44 really create significant market cap and
+23:46 
+
+23:46 value. And so we made the tough decision
+23:50 
+
+23:50 to park it. It was a tough call. But
+23:52 
+
+23:52 there's also a very a lot of attention
+23:54 
+
+23:54 on it, unfortunately, for such a small
+23:56 
+
+23:56 thing.
+23:56 
+
+23:56 >> I mean, if you if you really go back and
+23:58 
+
+23:58 think about it, you know, the firm was
+23:60 
+
+23:60 doing well.
+24:01 
+
+24:01 >> Yeah. And this was less than 5% of the
+24:04 
+
+24:04 firm's revenues.
+24:05 
+
+24:05 >> And it was getting attention as though
+24:07 
+
+24:07 it was 40% of the firm's revenues and
+24:09 
+
+24:09 40% of the firm's capital.
+24:11 
+
+24:11 >> But that affected the decision because
+24:13 
+
+24:13 it was distracting from the progress we
+24:15 
+
+24:15 were making in other things.
+24:17 
+
+24:17 >> You know, in the long run, it may or may
+24:20 
+
+24:20 not have been in the broad breath of
+24:23 
+
+24:23 what Goldman Sachs will become over the
+24:24 
+
+24:24 next 50 years the right decision, but it
+24:27 
+
+24:27 was definitely the right decision for
+24:28 
+
+24:28 that time. and it helped clarify the
+24:32 
+
+24:32 focus of the firm and get the attention
+24:34 
+
+24:34 back on to all the good things the firm
+24:35 
+
+24:35 was doing. And I think we've benefited
+24:36 
+
+24:36 enormously the last few years, you know,
+24:38 
+
+24:38 from that.
+24:39 
+
+24:39 >> You just talk about that decision like
+24:41 
+
+24:41 CEOs face that type of decision all the
+24:43 
+
+24:43 time of like should we double down or
+24:46 
+
+24:46 should we just pull the band-aid off and
+24:48 
+
+24:48 pull out? Um was that bubbling for a
+24:52 
+
+24:52 couple months, a couple years? Was there
+24:56 
+
+24:56 another group saying, "Hey, we just need
+24:57 
+
+24:57 to double down and get the right people.
+24:59 
+
+24:59 is going to work. Can you just kind of
+24:60 
+
+24:60 take us in the room and take us inside
+25:01 
+
+25:01 your It was a very tough call you made.
+25:03 
+
+25:03 >> You know, one of the things about
+25:04 
+
+25:04 Goldman Sachs, Goldman Sachs has been a
+25:06 
+
+25:06 partnership for 140 years. And I think
+25:09 
+
+25:09 one of the things that you know that as
+25:11 
+
+25:11 a leadership team we're most proud of
+25:14 
+
+25:14 over the last over the last seven years
+25:17 
+
+25:17 um is that we've really kind of
+25:20 
+
+25:20 completed the journey to really getting
+25:23 
+
+25:23 the leadership the broad leadership the
+25:25 
+
+25:25 partnership because we still have this
+25:26 
+
+25:26 concept of partnership
+25:28 
+
+25:28 >> really focused
+25:29 
+
+25:29 >> on delivering for shareholders and we're
+25:32 
+
+25:32 fully making the transition from kind of
+25:35 
+
+25:35 being a public company but still
+25:36 
+
+25:36 operating more like a distributed
+25:38 
+
+25:38 partnership ship versus now really being
+25:39 
+
+25:39 a public company and really working for
+25:41 
+
+25:41 the whole of the company
+25:43 
+
+25:43 >> and um you know that that that was a
+25:46 
+
+25:46 tough thing to manage. So when whenever
+25:48 
+
+25:48 you know whenever there are headwinds at
+25:50 
+
+25:50 Goldman Sachs
+25:52 
+
+25:52 people get very critical of anything
+25:53 
+
+25:53 that's not working because they see it
+25:55 
+
+25:55 as affecting them.
+25:57 
+
+25:57 >> Yeah.
+25:57 
+
+25:57 >> You know very directly. I think we're in
+25:59 
+
+25:59 a better place in terms of how you know
+26:02 
+
+26:02 we operate around that all but there was
+26:04 
+
+26:04 a lot of pressure from people in the
+26:06 
+
+26:06 organization that thought that it was
+26:08 
+
+26:08 going to cost you know them money in the
+26:10 
+
+26:10 short term
+26:12 
+
+26:12 >> but that that really wasn't weighing
+26:14 
+
+26:14 what was what was weighing was the fact
+26:18 
+
+26:18 that I still think there was a belief I
+26:21 
+
+26:21 knew I had a belief that with a much
+26:23 
+
+26:23 longer term lens we were doing something
+26:26 
+
+26:26 that could be very interesting and
+26:28 
+
+26:28 really give the firm another leg of
+26:30 
+
+26:30 growth.
+26:30 
+
+26:30 >> Yeah.
+26:31 
+
+26:31 >> But I knew that it was going to be very
+26:35 
+
+26:35 rough to get there given both the
+26:36 
+
+26:36 regulatory environment and the current
+26:38 
+
+26:38 market environment and just where kind
+26:40 
+
+26:40 of the
+26:40 
+
+26:40 >> the culture of the firm felt. And so,
+26:44 
+
+26:44 you know, went and talked to the board
+26:46 
+
+26:46 and the board's initial response was no,
+26:48 
+
+26:48 no, no, no, no. Okay.
+26:50 
+
+26:50 >> Yeah. No, no, no, no, no.
+26:51 
+
+26:51 >> And, you know, we we talked about it and
+26:54 
+
+26:54 we worked through it over
+26:55 
+
+26:55 >> one meeting or is this over
+26:56 
+
+26:56 >> over a few months? I see.
+26:58 
+
+26:58 >> Over a few months. I mean, I, you know,
+26:59 
+
+26:59 I was over multiple board meetings, but
+27:01 
+
+27:01 it was over, it was over a few months,
+27:03 
+
+27:03 >> but um, you know, I look back at
+27:05 
+
+27:05 decisions I've had to make. That was
+27:09 
+
+27:09 in some ways that was the hardest
+27:11 
+
+27:11 decision. In other ways, as as a team we
+27:15 
+
+27:15 did the work and we talked about it, it
+27:16 
+
+27:16 became an easier decision because it
+27:19 
+
+27:19 became clear this was going to be the
+27:20 
+
+27:20 right thing for the firm at this time.
+27:22 
+
+27:22 >> Okay. A lot of start I work with a lot
+27:24 
+
+27:24 of these hot AI startups and they all
+27:27 
+
+27:27 want to partner with whoever with open
+27:30 
+
+27:30 AI with Apple with SAP with you name it.
+27:33 
+
+27:33 My company partnered with Google and
+27:35 
+
+27:35 Salesforce you partner with Apple. Um
+27:40 
+
+27:40 advice on dancing with giants.
+27:45 
+
+27:45 >> Well, you know Apple obviously is a
+27:47 
+
+27:47 bigger company than Goldman Sachs.
+27:49 
+
+27:49 Goldman Sachs is no peanut startup. Um,
+27:52 
+
+27:52 and so I would say
+27:54 
+
+27:54 >> but big companies I would say partners
+27:56 
+
+27:56 would say there was more I that's that's
+27:58 
+
+27:58 exactly where I was go. I would say it
+27:60 
+
+27:60 was more of a peer relationship
+28:02 
+
+28:02 >> but partnerships between companies are
+28:05 
+
+28:05 tough.
+28:06 
+
+28:06 >> And you know what I would say to you
+28:09 
+
+28:09 know accelerating or scaling up young
+28:11 
+
+28:11 companies that want to partner with
+28:14 
+
+28:14 these you know these big platforms
+28:17 
+
+28:17 you know most partnerships don't work.
+28:19 
+
+28:19 >> Yeah. And
+28:22 
+
+28:22 there better be really compelling, you
+28:25 
+
+28:25 know, glue to that partnership or, you
+28:28 
+
+28:28 know, chances of it working or low. I
+28:30 
+
+28:30 mean, the you and I know, I mean, you
+28:32 
+
+28:32 partnerships are hard. Yeah,
+28:33 
+
+28:33 >> partnerships are very hard.
+28:35 
+
+28:35 Organizations have different cultures,
+28:36 
+
+28:36 different expectations, and partnerships
+28:38 
+
+28:38 are very, very hard. Now, that doesn't
+28:40 
+
+28:40 mean there aren't some great
+28:41 
+
+28:41 partnerships.
+28:42 
+
+28:42 Um, but to have them really work, you've
+28:45 
+
+28:45 got to have really good alignment of
+28:47 
+
+28:47 incentives, of purpose, of incentives,
+28:50 
+
+28:50 >> and a governance structure that can
+28:52 
+
+28:52 assure that the, for lack of a better
+28:55 
+
+28:55 term, the friction in each organization
+28:57 
+
+28:57 doesn't doesn't make it harder for those
+28:59 
+
+28:59 for that partnership to move forward.
+29:01 
+
+29:01 >> I'm just going to go back a minute ago.
+29:02 
+
+29:02 You talked about solving for
+29:04 
+
+29:04 shareholders
+29:05 
+
+29:05 and I I talked to founders and some
+29:08 
+
+29:08 founders like there's three constituents
+29:10 
+
+29:10 that you can solve for. You really
+29:12 
+
+29:12 double down on the shareholders or
+29:13 
+
+29:13 really double down the employees or
+29:15 
+
+29:15 really double down on your customers.
+29:18 
+
+29:18 Where does where's sort of Goldman's
+29:20 
+
+29:20 energy? Um where's your energy on that?
+29:24 
+
+29:24 I'm not gonna let you off the hook and
+29:25 
+
+29:25 say all three. Well, I I you don't have
+29:28 
+
+29:28 to you don't have to let me off the
+29:29 
+
+29:29 hook, but I'll I'll talk about a couple
+29:31 
+
+29:31 of things of the way I think about it.
+29:33 
+
+29:33 >> Okay?
+29:34 
+
+29:34 >> So, first of all, for any business,
+29:36 
+
+29:36 >> okay, if you don't have a product or
+29:38 
+
+29:38 service that you're selling to somebody
+29:41 
+
+29:41 that is value ad, you don't have a
+29:42 
+
+29:42 business.
+29:44 
+
+29:44 >> Okay? So, let's just start with whether
+29:46 
+
+29:46 it's clients or it's customers or it's
+29:48 
+
+29:48 fine,
+29:48 
+
+29:48 >> you know. So, what is true north for
+29:50 
+
+29:50 Goldman Sachs? True North for Goldman
+29:52 
+
+29:52 Sachs is client.
+29:54 
+
+29:54 You know, we know
+29:55 
+
+29:55 >> it sounds like investors have a loud
+29:57 
+
+29:57 voice.
+29:58 
+
+29:58 >> Well, investors do have a loud voice.
+29:59 
+
+29:59 We'll come to that in a second. But just
+30:00 
+
+30:00 if I if I finish this if I finish this
+30:02 
+
+30:02 thought,
+30:04 
+
+30:04 >> you know, client centricity is true
+30:06 
+
+30:06 north. It's one of the firm's four core
+30:08 
+
+30:08 values.
+30:09 
+
+30:09 >> Okay.
+30:10 
+
+30:10 >> Client service, partnership, integrity,
+30:14 
+
+30:14 excellence, four core values. But client
+30:16 
+
+30:16 service,
+30:17 
+
+30:17 client centricity is kind of true north.
+30:20 
+
+30:20 And the general ethos of the firm is if
+30:23 
+
+30:23 you build trust with clients, if you
+30:25 
+
+30:25 take a long-term view, if you do the
+30:27 
+
+30:27 right thing,
+30:28 
+
+30:28 >> good things will happen.
+30:29 
+
+30:29 >> It's a long game, good things will
+30:31 
+
+30:31 happen. And I I've watched that in my
+30:33 
+
+30:33 career and I believe it deeply.
+30:35 
+
+30:35 >> Really deeply. Now, if good things
+30:38 
+
+30:38 happen with clients and our business,
+30:41 
+
+30:41 good things happen for shareholders. And
+30:44 
+
+30:44 you can't be confused. If you are not
+30:46 
+
+30:46 delivering for shareholders, you're not
+30:48 
+
+30:48 going to be able to do good things for
+30:50 
+
+30:50 clients because what do we deliver? What
+30:52 
+
+30:52 do we deliver to clients? We devote
+30:54 
+
+30:54 people, capital, and technology. And we
+30:57 
+
+30:57 marry those things together. And you
+31:00 
+
+31:00 know, if you're not performing for
+31:01 
+
+31:01 shareholders, your ability to have the
+31:03 
+
+31:03 resources and the capability to be
+31:05 
+
+31:05 really good for your clients gets
+31:06 
+
+31:06 limited.
+31:07 
+
+31:07 >> Now, here's the tricky thing. In our
+31:09 
+
+31:09 business, we have to have extraordinary
+31:11 
+
+31:11 people in our business to be able to do
+31:13 
+
+31:13 any of this for shareholders or for
+31:14 
+
+31:14 clients. So, I don't want to go back to
+31:17 
+
+31:17 you're not going to let me do it, but I
+31:18 
+
+31:18 need to I need I need to I need to
+31:20 
+
+31:20 deliver for all three. Okay. And it's
+31:22 
+
+31:22 almost like it's almost like as a
+31:24 
+
+31:24 leadership team, it's kind of like we're
+31:25 
+
+31:25 conducting an orchestra, and we've got
+31:27 
+
+31:27 to, you know, conduct the orchestra
+31:29 
+
+31:29 between, you know, clients, people,
+31:32 
+
+31:32 shareholders, and we've got to make it
+31:33 
+
+31:33 all sound beautiful. And and at the
+31:36 
+
+31:36 moment, we're going through a period
+31:37 
+
+31:37 where it really does sound beautiful,
+31:38 
+
+31:38 and I kind of like that. But I've also
+31:40 
+
+31:40 been through other periods where it kind
+31:42 
+
+31:42 of sounded like something was out of
+31:44 
+
+31:44 tune. And then you've got to you got to
+31:45 
+
+31:45 figure out how to get back into balance.
+31:46 
+
+31:46 >> Okay, speaking of orchestras, like I had
+31:49 
+
+31:49 an old boss that used to say, "We're not
+31:50 
+
+31:50 an orchestra, we're a jazz band." Um,
+31:52 
+
+31:52 and I work with all these founders that
+31:55 
+
+31:55 they're in 40 person companies going to
+31:57 
+
+31:57 400, going to 4,000, going to 40,000.
+31:60 
+
+32:00 And they're it slows everything slows
+32:04 
+
+32:04 down as they get bigger. And man, they
+32:07 
+
+32:07 complain about it. Uh, and they always
+32:09 
+
+32:09 ask me like, "Brian, how do I how do I
+32:12 
+
+32:12 keep the speed and the intensity and the
+32:14 
+
+32:14 missionary zeal as we go from 40 to 400
+32:17 
+
+32:17 to 4,000?" You seem to be moving pretty
+32:20 
+
+32:20 briskly for a 40,000 person or advice
+32:24 
+
+32:24 for these founders.
+32:25 
+
+32:25 >> Well, one of the things that's just
+32:27 
+
+32:27 interesting is I'm not scaling an
+32:30 
+
+32:30 organization from 4,000 to 40,000 to
+32:33 
+
+32:33 400,000. you know, I inherited
+32:37 
+
+32:37 I I I stepped into my role with an
+32:39 
+
+32:39 organization that had about 36 or 38,000
+32:42 
+
+32:42 people. And today, you know, I'm I'm in
+32:45 
+
+32:45 the eighth year of my tenure, just
+32:47 
+
+32:47 started the eth year of my tenure,
+32:49 
+
+32:49 >> and we have, you know, 48 or 49,000.
+32:52 
+
+32:52 >> So, we've had nice growth.
+32:54 
+
+32:54 >> But, you know, the bigger thing is that
+32:56 
+
+32:56 we've taken the revenues from 34 billion
+32:58 
+
+32:58 kind of on average where they were in
+32:60 
+
+32:60 the last decade to kind of 55 to 60
+33:02 
+
+33:02 billion. And I think the market cap's
+33:04 
+
+33:04 four or 5x.
+33:05 
+
+33:05 >> Yeah, we've taken the market cap from 60
+33:07 
+
+33:07 70 billion to 250 billion. So, we've
+33:09 
+
+33:09 done we've done a really
+33:10 
+
+33:10 >> we've done a really nice job at growing
+33:12 
+
+33:12 the firm.
+33:13 
+
+33:13 >> You know, the firm our firm scales
+33:17 
+
+33:17 there. There are businesses in our firm
+33:19 
+
+33:19 that scale with people, but there are a
+33:21 
+
+33:21 lot of businesses that scale with
+33:22 
+
+33:22 capital. And so, you know, one of the
+33:25 
+
+33:25 things I think we got really right that
+33:28 
+
+33:28 really helped our market shares,
+33:29 
+
+33:29 particularly in our core business, is we
+33:31 
+
+33:31 put more financial resources. We scaled
+33:32 
+
+33:32 more capital into the business and
+33:34 
+
+33:34 decided we were going to lean into
+33:36 
+
+33:36 providing more resources which
+33:38 
+
+33:38 generated, you know, more more return. I
+33:41 
+
+33:41 on this point though of of nimleness,
+33:43 
+
+33:43 you know, this all gets to culture and
+33:45 
+
+33:45 and and you know, one of the things that
+33:47 
+
+33:47 I think Goldman Sachs has been around
+33:48 
+
+33:48 for 155 years and there's been a lot
+33:51 
+
+33:51 said about Goldman Sachs's culture and
+33:52 
+
+33:52 Goldman Sachs's culture is unique, but I
+33:54 
+
+33:54 would also say it's constantly changing.
+33:57 
+
+33:57 >> And the most
+33:58 
+
+33:58 >> is that an intentional change or is it
+33:60 
+
+33:60 bottomup changing?
+34:01 
+
+34:01 >> It's it's both. I mean, it's both. But
+34:03 
+
+34:03 but here's the thing. you better be
+34:05 
+
+34:05 working at defining what you want it to
+34:07 
+
+34:07 be and constantly reshaping it and
+34:10 
+
+34:10 amplifying what you think really
+34:11 
+
+34:11 matters. And you know, I'll give you an
+34:12 
+
+34:12 example
+34:13 
+
+34:13 >> of something we did that I think just
+34:16 
+
+34:16 shows you how we think about this and
+34:17 
+
+34:17 why it's it's so so important.
+34:21 
+
+34:21 Co was awful for everybody,
+34:24 
+
+34:24 was awful for businesses, particularly
+34:26 
+
+34:26 awful for our business. Think about our
+34:28 
+
+34:28 business. We have 49,000 people. 50% of
+34:31 
+
+34:31 them are in their 20s. It is an
+34:33 
+
+34:33 apprenticeship culture. They're coming
+34:35 
+
+34:35 to the firm to spend time with people
+34:38 
+
+34:38 and all of a sudden the whole ecosystem
+34:41 
+
+34:41 is like often a different it's it's like
+34:44 
+
+34:44 you know we were we were on Earth now
+34:46 
+
+34:46 we're on Mars. Right. Okay.
+34:48 
+
+34:48 >> Right.
+34:48 
+
+34:48 >> And so you know in that in that context
+34:51 
+
+34:51 it frayed at our culture and there was a
+34:54 
+
+34:54 lot going on during that period of time
+34:55 
+
+34:55 was fraying at everybody's culture. But
+34:58 
+
+34:58 as soon as we got to a point which was
+34:60 
+
+34:60 like okay we're going to go move forward
+35:02 
+
+35:02 as a leadership team we said we have to
+35:05 
+
+35:05 kind of reinvest and reinvigorate our
+35:08 
+
+35:08 culture and here's what we decided to
+35:10 
+
+35:10 do. We said we're going to make a big
+35:11 
+
+35:11 investment in this. So there are 450
+35:13 
+
+35:13 Goldman Sachs partners. We said we are
+35:16 
+
+35:16 going to take the time to send during
+35:18 
+
+35:18 the course of a year. It ultimately took
+35:20 
+
+35:20 us 15 months. We're going to send all
+35:22 
+
+35:22 the partners off in groups of 25 offsite
+35:26 
+
+35:26 for two days to talk about the culture,
+35:30 
+
+35:30 what's important in the culture, and
+35:32 
+
+35:32 what their responsibility is to steward
+35:35 
+
+35:35 that culture. Okay. And reinvigorate it.
+35:37 
+
+35:37 And I committed to have a three-hour,
+35:39 
+
+35:39 four-h hour dinner with every single one
+35:41 
+
+35:41 of those cohorts over 15 months.
+35:43 
+
+35:43 >> Okay. How much weight did you gain
+35:44 
+
+35:44 during that time?
+35:45 
+
+35:45 >> I, you know, I tried to eat very little.
+35:47 
+
+35:47 And uh but but the point is, think about
+35:50 
+
+35:50 it. the most senior people of the firm.
+35:52 
+
+35:52 >> Yeah.
+35:53 
+
+35:53 >> All going away in cohorts of 25 to spend
+35:56 
+
+35:56 two days together. So offline for two
+35:58 
+
+35:58 days. The CEO committing to do 20
+36:00 
+
+36:00 dinners.
+36:02 
+
+36:02 >> Okay.
+36:03 
+
+36:03 >> It was a big commitment. You know what?
+36:05 
+
+36:05 We came out of that and the firm was
+36:07 
+
+36:07 aligned on what mattered culturally.
+36:09 
+
+36:09 Okay.
+36:09 
+
+36:09 >> And there were some changes and there
+36:10 
+
+36:10 were some, you know, nuance things, you
+36:12 
+
+36:12 know, still foundational values, but it
+36:15 
+
+36:15 was a kick in the pants to everybody.
+36:17 
+
+36:17 Hey, we own this. We have to steward it.
+36:19 
+
+36:19 We have to feel figure out in the new
+36:20 
+
+36:20 world that we're in how do we make this
+36:23 
+
+36:23 really exceptional so that all the
+36:25 
+
+36:25 things that make Goldman Sachs
+36:26 
+
+36:26 exceptional continue to be. And so one
+36:28 
+
+36:28 of the things that's just interesting
+36:29 
+
+36:29 when I when I talk to founders and
+36:31 
+
+36:31 startups they talk about their cultures.
+36:33 
+
+36:33 >> Okay. And the first thing going on in my
+36:35 
+
+36:35 mind is that's great but the company's
+36:37 
+
+36:37 been around for seven years. Okay.
+36:40 
+
+36:40 >> How do how do you find a culture in a
+36:42 
+
+36:42 company that's been around for seven
+36:43 
+
+36:43 years? How are you putting your mark on
+36:45 
+
+36:45 what it's going to be? What's it going
+36:46 
+
+36:46 to be at 15 years versus seven? It's a
+36:49 
+
+36:49 very different thing
+36:50 
+
+36:50 >> when you don't have you know that
+36:52 
+
+36:52 foundation but culture in all
+36:54 
+
+36:54 organizations requires commitment
+36:57 
+
+36:57 investment focus
+36:60 
+
+36:60 you know that that matters in all big
+37:02 
+
+37:02 small growing scaling established
+37:05 
+
+37:05 >> you know one or two things that came out
+37:07 
+
+37:07 of all those dinners in that big confab
+37:10 
+
+37:10 that were like we're this is what our
+37:12 
+
+37:12 culture is and this is where our culture
+37:14 
+
+37:14 isn't where there a couple of things
+37:16 
+
+37:16 that you're like this really changed Um
+37:18 
+
+37:18 I you know I think I think you know a
+37:21 
+
+37:21 recind of underwriting of what it meant
+37:23 
+
+37:23 to hold the organization to a standard
+37:25 
+
+37:25 of excellence. I see
+37:26 
+
+37:26 >> that that
+37:27 
+
+37:27 >> you felt that was slipping.
+37:28 
+
+37:28 >> You know, it it slipped. If you think
+37:30 
+
+37:30 about what was going on in 2020, 21,22.
+37:33 
+
+37:33 I mean, here's
+37:35 
+
+37:35 >> saying, you know what, I can do anything
+37:37 
+
+37:37 from home that I can do from the office.
+37:39 
+
+37:39 Okay, it's not the same level of
+37:41 
+
+37:41 excellence as where do I show up today?
+37:44 
+
+37:44 How do I bring people along? How do I be
+37:47 
+
+37:47 committed?
+37:48 
+
+37:48 >> It's just different
+37:49 
+
+37:49 >> at least in our business. I'm not going
+37:50 
+
+37:50 to say in our business. So, you know,
+37:53 
+
+37:53 really re-underwriting that level of
+37:55 
+
+37:55 excellence and also getting people to
+37:57 
+
+37:57 really rethink, you know, there is no
+37:59 
+
+37:59 perfection.
+38:00 
+
+38:00 >> Okay. But, you know, excellence is
+38:04 
+
+38:04 something that you can choose.
+38:05 
+
+38:05 >> Okay.
+38:05 
+
+38:05 >> And really re-underwriting that in the
+38:07 
+
+38:07 culture I think was something that came
+38:08 
+
+38:08 out of this. The other thing that came
+38:09 
+
+38:09 out of it as an exercise which wasn't
+38:13 
+
+38:13 really about defining the culture but I
+38:14 
+
+38:14 think helps a lot is it really allowed
+38:19 
+
+38:19 us as a leadership team and allowed me
+38:21 
+
+38:21 as the CEO to reunderwite the strategy
+38:24 
+
+38:24 and the way we wanted to communicate
+38:25 
+
+38:25 around the strategy and really get the
+38:27 
+
+38:27 whole leadership of the organization 450
+38:29 
+
+38:29 strong 100% on board with where we were
+38:32 
+
+38:32 going. And when you get a big
+38:34 
+
+38:34 organization, you get the top 450 people
+38:36 
+
+38:36 all aligned
+38:38 
+
+38:38 on strategically where you're going,
+38:40 
+
+38:40 boy, you get a lot of output.
+38:42 
+
+38:42 >> I think it's absolutely fascinating how
+38:44 
+
+38:44 long you folks have been around and and
+38:46 
+
+38:46 thrived. It's very rare. Uh my company's
+38:51 
+
+38:51 19 years old, super proud of it. I'd
+38:54 
+
+38:54 like to be around in 150 not me, but I'd
+38:56 
+
+38:56 like the company to be around in 155
+38:59 
+
+38:59 years. What advice would you give me?
+39:02 
+
+39:02 What advice would you give founders like
+39:03 
+
+39:03 me?
+39:04 
+
+39:04 >> I I think it's the wrong I think it's
+39:05 
+
+39:05 the wrong lens. Okay.
+39:07 
+
+39:07 >> Okay. I I And look, it's interesting if
+39:10 
+
+39:10 you go back to companies that were
+39:11 
+
+39:11 founded, you know, in the middle of the
+39:13 
+
+39:13 19th century, there aren't that many
+39:14 
+
+39:14 left. No.
+39:15 
+
+39:15 >> Okay. And
+39:17 
+
+39:17 >> by the way, companies founded now, you
+39:19 
+
+39:19 know, 100 years from now, there won't be
+39:20 
+
+39:20 that many left.
+39:21 
+
+39:21 >> I think that it's a random walk to
+39:24 
+
+39:24 create a hundred-y old company.
+39:26 
+
+39:26 >> And in the distribution, the world
+39:28 
+
+39:28 changes, the competitive landscape
+39:30 
+
+39:30 changes. Um, the goal should be to build
+39:33 
+
+39:33 the best business you can, the best
+39:35 
+
+39:35 company you can. And as long as you're
+39:38 
+
+39:38 doing that, you're really adding value
+39:40 
+
+39:40 to your clients, your customers, you
+39:42 
+
+39:42 know, you're adding value, opportunities
+39:43 
+
+39:43 will emerge that will allow you to go
+39:45 
+
+39:45 further, further, and further
+39:48 
+
+39:48 >> and you never know where it will wind
+39:49 
+
+39:49 up. But the world changes. I mean, go
+39:51 
+
+39:51 look, go take
+39:53 
+
+39:53 >> You guys change though. The world
+39:54 
+
+39:54 change, you change. Is there something
+39:56 
+
+39:56 about the culture
+39:58 
+
+39:58 >> like you pivot?
+39:59 
+
+39:59 >> We pivot. You pivoted huge scale.
+40:01 
+
+40:01 >> We've we've pivoted at huge scale. Um
+40:04 
+
+40:04 >> you know the history of Goldman Sachs is
+40:06 
+
+40:06 littered with moments where the firm
+40:08 
+
+40:08 came this close to going out of
+40:09 
+
+40:09 business.
+40:10 
+
+40:10 >> You can go back to 19 I mean I you can
+40:12 
+
+40:12 go back to 1929 of course
+40:14 
+
+40:14 >> there was there was but not just the
+40:16 
+
+40:16 crash during the crash there was
+40:18 
+
+40:18 actually something called the Goldman
+40:19 
+
+40:19 Sachs Trading Corporation which was a
+40:21 
+
+40:21 public entity that we know that
+40:23 
+
+40:23 basically plummeted and almost took the
+40:25 
+
+40:25 firm you know almost took the firm down.
+40:28 
+
+40:28 Um, pen, we were the commercial paper
+40:30 
+
+40:30 underwriter for Penn Central when Pen
+40:32 
+
+40:32 Central went bankrupt in the 1970s and
+40:35 
+
+40:35 that almost took the firm down. But just
+40:37 
+
+40:37 back to the question, you have pivoted
+40:39 
+
+40:39 at scale and I see startups pivoting but
+40:41 
+
+40:41 once they get to scale, they kind of
+40:42 
+
+40:42 stay heavy on the rails. They don't
+40:45 
+
+40:45 pivot when stuff comes. Tell me like for
+40:47 
+
+40:47 example, you pivoted pretty hard in AI.
+40:49 
+
+40:49 You've leaned in very hard on it. Um,
+40:52 
+
+40:52 you for a large company, you were pretty
+40:54 
+
+40:54 early on that train. I think we're good
+40:56 
+
+40:56 at figuring out how technology can make
+40:58 
+
+40:58 us better at what we do. But here's the
+40:59 
+
+40:59 here's here's the thing I think you have
+41:01 
+
+41:01 to be focused on. What do we do? We are,
+41:05 
+
+41:05 in my humble opinion, the best
+41:08 
+
+41:08 investment bank in the world.
+41:11 
+
+41:11 >> Yes,
+41:12 
+
+41:12 >> we
+41:14 
+
+41:14 run one of the two best trading
+41:16 
+
+41:16 businesses in the world. And the
+41:18 
+
+41:18 combination of kind of investment
+41:19 
+
+41:19 banking and trading, that's what Goldman
+41:21 
+
+41:21 Sachs is. We are the best in the world
+41:23 
+
+41:23 at it in my humble opinion. Yeah.
+41:25 
+
+41:25 >> Um certainly nobody would dispute that
+41:27 
+
+41:27 we're not one of the best in the world
+41:29 
+
+41:29 at that. And as long as we're really
+41:32 
+
+41:32 good at that and we continue to win at
+41:34 
+
+41:34 that and that's something that the world
+41:36 
+
+41:36 needs, you know, you can perpetuate if
+41:38 
+
+41:38 you make the right decisions and the
+41:39 
+
+41:39 right pivots. We also have become fifth,
+41:43 
+
+41:43 sixth, seventh, depending on how you
+41:44 
+
+41:44 look at it, largest active asset manager
+41:47 
+
+41:47 in the world. We supervised 3.3.4
+41:49 
+
+41:49 trillion dollars and that business is
+41:51 
+
+41:51 growing. We we said publicly we're going
+41:53 
+
+41:53 to grow at high single high single
+41:55 
+
+41:55 digits. We're growing it better than
+41:57 
+
+41:57 that. We've got an extraordinary wealth
+41:58 
+
+41:58 franchise and that business, you know,
+42:00 
+
+42:00 we have a right to win
+42:02 
+
+42:02 >> and we're a leader. And so, you know,
+42:04 
+
+42:04 ultimately to really sustain, you've got
+42:07 
+
+42:07 to really deliver value and you've got
+42:09 
+
+42:09 to have leading franchises. You have to
+42:11 
+
+42:11 have scale and you have a right to win.
+42:13 
+
+42:13 And the reason that that most business
+42:16 
+
+42:16 >> 20 years ago are gone.
+42:20 
+
+42:20 You're not. Yes, you have a right to
+42:22 
+
+42:22 win, but there was a bunch of pivots and
+42:24 
+
+42:24 a bunch of bets and through three
+42:27 
+
+42:27 different CEOs. What is it?
+42:30 
+
+42:30 >> You know, it's the culture's
+42:31 
+
+42:31 contributed, the quality of the people's
+42:33 
+
+42:33 contributed, the brand built over a long
+42:35 
+
+42:35 period of time.
+42:36 
+
+42:36 >> Is there a risking mentality inside the
+42:38 
+
+42:38 firm?
+42:38 
+
+42:38 >> We have a great we have a great risk
+42:40 
+
+42:40 takingaking. We have a great
+42:41 
+
+42:41 riskmanagement culture inside the firm.
+42:42 
+
+42:42 The reason that most that lots of
+42:44 
+
+42:44 financial institutions go away is not
+42:46 
+
+42:46 because they have a risk-taking culture
+42:48 
+
+42:48 or maybe it's because they don't have a
+42:50 
+
+42:50 risk management culture. So they make
+42:52 
+
+42:52 mistakes and you know financial firms
+42:53 
+
+42:53 are levered and they they get they get
+42:55 
+
+42:55 into uh they get into trouble.
+42:57 
+
+42:57 >> Yeah.
+42:57 
+
+42:57 >> You know decisions decisions around over
+42:60 
+
+42:60 decades things we would do wouldn't do.
+43:02 
+
+43:02 When the world goes left you know we
+43:04 
+
+43:04 think left is we go slower.
+43:07 
+
+43:07 >> Yeah.
+43:07 
+
+43:07 >> Um you don't have to be first
+43:10 
+
+43:10 >> in financial services. I think even
+43:13 
+
+43:13 second mover advantage is underrated.
+43:15 
+
+43:15 >> Yeah.
+43:15 
+
+43:15 >> Um succession planning.
+43:18 
+
+43:18 >> I'm sure there were some folks that
+43:20 
+
+43:20 didn't work out, but it seems like
+43:21 
+
+43:21 Goldman's very good at that. And I think
+43:23 
+
+43:23 a lot of tech companies are going to
+43:24 
+
+43:24 have to go through it. What did they
+43:26 
+
+43:26 were what are they doing right? Like you
+43:28 
+
+43:28 you're the last three seem like you seem
+43:30 
+
+43:30 like I'm a winner of a succession
+43:32 
+
+43:32 planning output. Um what are they doing?
+43:35 
+
+43:35 I think one of the things that's
+43:38 
+
+43:38 interesting about Goldman Sachs is there
+43:40 
+
+43:40 are ext the senior leadership at Goldman
+43:42 
+
+43:42 Sachs is an extraordinary group of
+43:43 
+
+43:43 people. I sit around, you know, the
+43:45 
+
+43:45 small table, whether it's the management
+43:46 
+
+43:46 committee, which is a slightly bigger
+43:48 
+
+43:48 table
+43:49 
+
+43:49 >> or even with, you know, the the closest
+43:51 
+
+43:51 group of of senior leaders at the firm
+43:52 
+
+43:52 and I'm in awe at how smart and talented
+43:55 
+
+43:55 and capable and committed and um
+43:58 
+
+43:58 extraordinary, you know, that group of
+43:59 
+
+43:59 people is. So, let's just start by the
+44:01 
+
+44:01 fact there were lots of people that
+44:02 
+
+44:02 could have run Goldman Sachs. goes back
+44:03 
+
+44:03 to the serendipity point.
+44:05 
+
+44:05 >> You know,
+44:06 
+
+44:06 >> Lloyd Blankfine got sick in 2015
+44:09 
+
+44:09 >> and he decided that he was going to deal
+44:12 
+
+44:12 with his treatment and continue to run
+44:14 
+
+44:14 the firm and then come back. There are
+44:15 
+
+44:15 people who would have gotten sick and
+44:17 
+
+44:17 said, "You know what? I'm sick. I'm
+44:19 
+
+44:19 going to step away." Okay. Had he
+44:21 
+
+44:21 stepped away, I wouldn't be CEO. At that
+44:23 
+
+44:23 point, the firm probably would make Gary
+44:25 
+
+44:25 Con the CEO. So, because Gary was the,
+44:27 
+
+44:27 you know, the president of the firm at
+44:28 
+
+44:28 that point in time. So, you know,
+44:29 
+
+44:29 serendipity and luck. If the succession
+44:32 
+
+44:32 had happened in 2013 or 2014 or 2015, it
+44:35 
+
+44:35 wouldn't have been me. But it happened,
+44:36 
+
+44:36 it happened in 2018.
+44:37 
+
+44:37 >> Did the board interview you and several
+44:40 
+
+44:40 other people and was there a rigorous
+44:41 
+
+44:41 process?
+44:42 
+
+44:42 >> The board the board knows the senior
+44:44 
+
+44:44 leadership really well. The board knows
+44:46 
+
+44:46 the senior leadership really well and
+44:48 
+
+44:48 ours is a firm where there are lots of
+44:49 
+
+44:49 people that can run the firm.
+44:51 
+
+44:51 >> Um, ultimately there's got to be a
+44:52 
+
+44:52 decision.
+44:53 
+
+44:53 >> Um, and look, I think succession is
+44:55 
+
+44:55 very,
+44:56 
+
+44:56 >> you know, very, very important. And one
+44:58 
+
+44:58 of the things I'm proud of is that we
+45:00 
+
+45:00 have a very stable senior leadership
+45:02 
+
+45:02 team at the firm right now. We've been
+45:03 
+
+45:03 working together and executing, you
+45:06 
+
+45:06 know, on this plan over the last seven
+45:08 
+
+45:08 years. And I think it's one of the
+45:09 
+
+45:09 reasons why we're making really good
+45:10 
+
+45:10 progress.
+45:11 
+
+45:11 >> Okay. Back to a point you made. You're
+45:12 
+
+45:12 you're apprenticeship culture. You hire
+45:14 
+
+45:14 tons of young folks who are smart. My
+45:18 
+
+45:18 son's in business school now and
+45:20 
+
+45:20 everyone in his class wants to work for
+45:22 
+
+45:22 you.
+45:23 
+
+45:23 What's going to happen 10 years from now
+45:27 
+
+45:27 with AI and that apprenticeship culture
+45:30 
+
+45:30 and bringing all these folks in? Do you
+45:32 
+
+45:32 think it changes? Like what's your
+45:33 
+
+45:33 where's your head at on that?
+45:35 
+
+45:35 >> I I think there's always change at the
+45:38 
+
+45:38 margin, but I think the substance of who
+45:41 
+
+45:41 we are and what we are and what we do
+45:43 
+
+45:43 and the fact that we need lots of very
+45:44 
+
+45:44 bright people interacting together.
+45:46 
+
+45:46 Yeah.
+45:47 
+
+45:47 >> Building trust.
+45:48 
+
+45:48 >> Um I don't think that changes. And
+45:50 
+
+45:50 here's here's the analogy I give you.
+45:52 
+
+45:52 And I've been talking about this for a
+45:53 
+
+45:53 number of years. And so um you know
+45:55 
+
+45:55 there's some people that will listen to
+45:56 
+
+45:56 this will say I've heard David you know
+45:58 
+
+45:58 say this before. When I started in 1984
+46:01 
+
+46:01 >> one of my first assignments was to go do
+46:03 
+
+46:03 a common stock comparison.
+46:05 
+
+46:05 >> Okay.
+46:06 
+
+46:06 >> Comparing five regional banks and how
+46:08 
+
+46:08 their stock had traded for five years.
+46:11 
+
+46:11 That was a big assignment. How'd you go
+46:12 
+
+46:12 do that? You went to the library. What
+46:15 
+
+46:15 was the only data source that existed in
+46:17 
+
+46:17 the world that had the closing stock
+46:19 
+
+46:19 price for every stock that traded for
+46:21 
+
+46:21 every single day? Back issues of the
+46:23 
+
+46:23 Wall Street Journal. So you went to the
+46:25 
+
+46:25 library, you went to the microfich and
+46:27 
+
+46:27 you took out on microfich back issues of
+46:29 
+
+46:29 the Wall Street Journal. You did all the
+46:30 
+
+46:30 work to go through all the old issues of
+46:33 
+
+46:33 the journal and find the specific stock
+46:35 
+
+46:35 prices. You took out green line graph
+46:38 
+
+46:38 paper and you plotted the graph. You
+46:40 
+
+46:40 then took it to a Xerox machine and
+46:42 
+
+46:42 copied it. And then you went to your
+46:44 
+
+46:44 client and you showed them this and they
+46:46 
+
+46:46 said, "Wow, thank you for helping us
+46:48 
+
+46:48 understand this." It took, I mean, I
+46:50 
+
+46:50 don't know, it took four to six hours to
+46:52 
+
+46:52 do the work to do it. Technology has
+46:55 
+
+46:55 constantly made super productive people
+46:58 
+
+46:58 more productive, more capable. I see
+47:01 
+
+47:01 this the same way. Now, of course,
+47:04 
+
+47:04 technology also replaces certain jobs
+47:07 
+
+47:07 100%. We don't have a lot of toll
+47:09 
+
+47:09 collectors. No,
+47:10 
+
+47:10 >> you know, anymore.
+47:11 
+
+47:11 >> But that doesn't mean when you get into
+47:14 
+
+47:14 the things that we do, which is a lot
+47:16 
+
+47:16 about trust,
+47:19 
+
+47:19 personal relationships,
+47:21 
+
+47:21 um, advice, you know, at the center of a
+47:24 
+
+47:24 lot of what we we do. These become tools
+47:27 
+
+47:27 that enhance, speed up, and allow us to
+47:29 
+
+47:29 do it even in a broader context. We're
+47:30 
+
+47:30 still going to need a lot of people to
+47:32 
+
+47:32 do it. Okay? and they're just they will
+47:33 
+
+47:33 be trained with different skills with
+47:35 
+
+47:35 different skills in different you know
+47:38 
+
+47:38 in in different ways and of course
+47:39 
+
+47:39 >> you know I I you know let's let's take
+47:41 
+
+47:41 one that I just I just think is is
+47:44 
+
+47:44 obvious
+47:45 
+
+47:45 >> okay all companies have massive
+47:48 
+
+47:48 financial reporting and accounting
+47:49 
+
+47:49 functions
+47:51 
+
+47:51 >> the operational
+47:53 
+
+47:53 processes for that are going to be
+47:55 
+
+47:55 different and they're going to have a
+47:56 
+
+47:56 different number of people associated
+47:57 
+
+47:57 with them but that doesn't mean that
+48:01 
+
+48:01 you're not going to have people in other
+48:02 
+
+48:02 ways. I mean, you know, for me, I'm
+48:04 
+
+48:04 excited about what this technology does
+48:07 
+
+48:07 because we're looking at how we can
+48:09 
+
+48:09 reimagine processes that actually free
+48:11 
+
+48:11 up the capacity for us to invest in more
+48:15 
+
+48:15 people for our businesses that actually
+48:17 
+
+48:17 scale with people
+48:18 
+
+48:18 >> because we're somewhat limited. We've
+48:20 
+
+48:20 got to deliver returns every year. We
+48:21 
+
+48:21 can't scale as quickly as we want or as
+48:23 
+
+48:23 fast as we want. So, I think it's an
+48:25 
+
+48:25 unbelievable opportunity. It's
+48:27 
+
+48:27 accelerating certain things that are
+48:29 
+
+48:29 very cool, but I also don't think it's
+48:31 
+
+48:31 fundamentally changing the core of what
+48:33 
+
+48:33 we do and how we do it. It just makes
+48:34 
+
+48:34 it, you know, more it's a very powerful
+48:37 
+
+48:37 tool for very productive people.
+48:39 
+
+48:39 >> Okay, I'm going to ask you one more
+48:40 
+
+48:40 question that your team told me not to
+48:43 
+
+48:43 ask, so we can cut it out.
+48:45 
+
+48:45 >> You can ask me anything.
+48:46 
+
+48:46 >> Uh, I thought it was super cool that you
+48:49 
+
+48:49 were a CEO DJ. like it it elevated your
+48:52 
+
+48:52 brand in this one consumer's mind and
+48:55 
+
+48:55 Goldman's brand. It seemed like
+48:60 
+
+48:60 I just thought it was [ __ ] cool. It
+49:02 
+
+49:02 seemed like you got talked out of that.
+49:04 
+
+49:04 Um
+49:04 
+
+49:04 >> well, a couple of things. First of all,
+49:06 
+
+49:06 I mean I I I I have to go back and tell
+49:08 
+
+49:08 my team it's not me telling my team I
+49:10 
+
+49:10 don't want to talk about this. It's for
+49:11 
+
+49:11 some reason, you know, people on my team
+49:14 
+
+49:14 thinking that we shouldn't talk about
+49:15 
+
+49:15 this. And um
+49:16 
+
+49:16 >> that's not Do you stop doing it?
+49:18 
+
+49:18 >> I stopped doing it publicly. Yeah,
+49:20 
+
+49:20 >> I still do it.
+49:21 
+
+49:21 >> It seemed like people were complaining
+49:22 
+
+49:22 that you were doing doing what happened,
+49:25 
+
+49:25 you know, what happened at at the
+49:27 
+
+49:27 beginning of the first few years.
+49:28 
+
+49:28 >> Yeah.
+49:29 
+
+49:29 >> Um, you know, I wasn't, you know, I was
+49:30 
+
+49:30 doing it eight to 10 times a year
+49:32 
+
+49:32 publicly. It's not I was giving money to
+49:33 
+
+49:33 charity every time I did it. It's not
+49:35 
+
+49:35 it's not as though I was doing it every
+49:37 
+
+49:37 weekend or something, but
+49:39 
+
+49:39 >> it's a hobby. It's a passion. I really
+49:42 
+
+49:42 enjoy it. It's creative.
+49:44 
+
+49:44 >> Yeah.
+49:44 
+
+49:44 >> And when everything was going right, it
+49:46 
+
+49:46 was great. in 2022 when the firm started
+49:49 
+
+49:49 having some speed bumps because the
+49:50 
+
+49:50 environment changed and we were
+49:51 
+
+49:51 wrestling with some of this stuff around
+49:52 
+
+49:52 consumer.
+49:53 
+
+49:53 >> So, you caught some flack.
+49:54 
+
+49:54 >> I caught some flack and and by the way,
+49:56 
+
+49:56 I thought I was going to catch some flak
+49:58 
+
+49:58 if things weren't perfect, but boy, I
+50:01 
+
+50:01 caught a lot more flack than than I
+50:03 
+
+50:03 thought I would. And by the way, I
+50:04 
+
+50:04 caught a lot of flack on a lot of stuff,
+50:05 
+
+50:05 not just the fact that I DJed
+50:07 
+
+50:07 occasionally.
+50:08 
+
+50:08 >> Um,
+50:10 
+
+50:10 and so I kind of reached the conclusion
+50:12 
+
+50:12 this is becoming a distraction. M
+50:14 
+
+50:14 >> and look, I I think it's unfortunate
+50:16 
+
+50:16 because nobody cares that I do lots of
+50:18 
+
+50:18 other things with my free time. They
+50:20 
+
+50:20 really shouldn't care about this.
+50:21 
+
+50:21 >> I still do it privately and I'll do it
+50:23 
+
+50:23 publicly again because I really enjoy it
+50:25 
+
+50:25 and and it's a great it's a great
+50:27 
+
+50:27 creative outlet and I feel lucky that
+50:29 
+
+50:29 I've had the opportunity to do it.
+50:31 
+
+50:31 >> I I think you're cool.
+50:32 
+
+50:32 >> Hardly.
+50:33 
+
+50:33 >> I think you're a great steward for the
+50:35 
+
+50:35 company. They're lucky to have you. I
+50:36 
+
+50:36 want to congratulate you on all your
+50:38 
+
+50:38 success and thanks for coming on the
+50:39 
+
+50:39 podcast.
+50:40 
+
+50:40 >> Well, thank you for having me. I really
+50:41 
+
+50:41 enjoyed it. Good to be with you.
+50:42 
+
+50:42 >> Pleasure. Thanks a lot.
+50:44 
+
+50:44 >> Okay. Hope you like that. He's very
+50:46 
+
+50:46 sharp. Um just my take on his vibe is
+50:51 
+
+50:51 very polished, very articulate, very
+50:55 
+
+50:55 CEOish, and it's a similar vibe to other
+50:59 
+
+50:59 professional CEOs I've interviewed like
+51:01 
+
+51:01 Nikesh at Powalto. Um is also like this.
+51:05 
+
+51:05 Um and I don't know you well, but I bet
+51:08 
+
+51:08 you could use a little polish yourself.
+51:09 
+
+51:09 So maybe watching him, you'll learn a
+51:11 
+
+51:11 few tips. Well, I ask everybody on these
+51:13 
+
+51:13 pods like what's important when you're
+51:15 
+
+51:15 hiring people. And he he likes to say
+51:18 
+
+51:18 you want them smart enough. They don't
+51:19 
+
+51:19 have to be rocket science, but kind of
+51:21 
+
+51:21 smart enough. But he really values
+51:24 
+
+51:24 judgment and experience. Most startups
+51:26 
+
+51:26 don't. Um I look at HubSpot like half
+51:29 
+
+51:29 our exec team is kind of homegrown and
+51:32 
+
+51:32 half is hire from the outside. I don't
+51:34 
+
+51:34 know if that's the right ratio, but his
+51:36 
+
+51:36 is a lot of kind of been there, done
+51:38 
+
+51:38 that people. I think that's pretty
+51:39 
+
+51:39 interesting the way he thinks about it.
+51:41 
+
+51:41 We talk a lot about decisions. We talk
+51:42 
+
+51:42 about the Apple decisions. And to me,
+51:45 
+
+51:45 it's just like you're always choosing as
+51:46 
+
+51:46 a CEO between two shitty decisions. No
+51:49 
+
+51:49 easy decisions ever reach your desk. And
+51:52 
+
+51:52 to me, that's just life in the big city.
+51:54 
+
+51:54 You've got a lot of that and get used to
+51:55 
+
+51:55 it. Okay. I like the segment on his
+51:58 
+
+51:58 Apple decision. Uh they made a bet on
+52:01 
+
+52:01 the consumer business and a big
+52:03 
+
+52:03 partnership in Apple. And there's it
+52:07 
+
+52:07 reminded me of a book a guy named Seth
+52:08 
+
+52:08 Goden wrote a long time ago and on the
+52:10 
+
+52:10 cover of the book was something called
+52:12 
+
+52:12 the dip. It's a line and there's a dip
+52:14 
+
+52:14 and then it comes across. And when
+52:16 
+
+52:16 you're heading down the dip on a new
+52:18 
+
+52:18 project like they were, you don't know
+52:20 
+
+52:20 if you're about to hit the bottom and
+52:21 
+
+52:21 come up the other side. You don't know
+52:22 
+
+52:22 if it just keeps going down. In his
+52:24 
+
+52:24 case, he was like, I think it's going to
+52:26 
+
+52:26 keep going down. We're going to kill it.
+52:28 
+
+52:28 That's very hard to do. We have lots of
+52:31 
+
+52:31 these inside of HubSpot over the years
+52:32 
+
+52:32 where project's going okay. We funded it
+52:36 
+
+52:36 pretty well and the people inside that
+52:38 
+
+52:38 project are like just give us six more
+52:40 
+
+52:40 months and give us some more money and
+52:42 
+
+52:42 we're going to get through the dip and
+52:43 
+
+52:43 it's going to rip. Um versus just
+52:46 
+
+52:46 killing it. And we tend to to give it a
+52:50 
+
+52:50 lifeline. And I think more often than
+52:52 
+
+52:52 not, we should say no to those things.
+52:54 
+
+52:54 Anyway, those are kind of my thoughts on
+52:56 
+
+52:56 decision-m.
+52:58 
+
+52:58 say no more often and kill stuff more
+53:01 
+
+53:01 often. Uh I think people aren't
+53:03 
+
+53:03 disciplined enough about that. Those big
+53:05 
+
+53:05 partnerships are hard. Um and people
+53:10 
+
+53:10 always want to partner with the giant in
+53:12 
+
+53:12 their industry and the life expectancy
+53:15 
+
+53:15 of those partnerships are pretty low. Um
+53:19 
+
+53:19 a few tips on kind of dancing with
+53:22 
+
+53:22 elephants. Uh the first is if you're
+53:24 
+
+53:24 going to do a partnership, you need to
+53:26 
+
+53:26 make sure your incentives are really
+53:27 
+
+53:27 well aligned.
+53:29 
+
+53:29 And you need to make sure like if we do
+53:31 
+
+53:31 this, your P&L is moving and their P&L
+53:34 
+
+53:34 is moving in the correct direction
+53:36 
+
+53:36 because if the spreadsheets aren't
+53:37 
+
+53:37 moving, there's no point really in doing
+53:39 
+
+53:39 it. And the third is you kind of need to
+53:42 
+
+53:42 know the CEO. The CEOs need to be
+53:45 
+
+53:45 committed because as you go through
+53:47 
+
+53:47 annual budgeting cycles, partnerships
+53:49 
+
+53:49 can get defunded. So if the CEOs are
+53:51 
+
+53:51 connected, that helps a lot. Those are
+53:54 
+
+53:54 if you're entering into a big giant
+53:56 
+
+53:56 partnership, try to get those things
+53:57 
+
+53:57 right. Okay. Asked him, you want your
+53:60 
+
+54:00 company around for 150 years. What's
+54:02 
+
+54:02 your advice? First of all, he credited
+54:03 
+
+54:03 luck quite a bit, but he largely
+54:05 
+
+54:05 credited culture. And I'll tell you my
+54:08 
+
+54:08 journey with culture at HubSpot. When we
+54:10 
+
+54:10 first started the company called the
+54:13 
+
+54:13 first three years, my co-founder and I
+54:15 
+
+54:15 were like, "Culture is BS. Don't even
+54:18 
+
+54:18 bring it up. can't like let's not talk
+54:21 
+
+54:21 about it. And then I joined a CEO group
+54:24 
+
+54:24 and one of the CEOs in the CEO group was
+54:27 
+
+54:27 Colin Engel. He made the he was iO
+54:30 
+
+54:30 vacuum cleaners and I remember I sat
+54:32 
+
+54:32 down next to him at that at first it was
+54:34 
+
+54:34 a CEO group meeting and it was my first
+54:37 
+
+54:37 one. I didn't know how it worked but
+54:40 
+
+54:40 they have a topic for the whole day and
+54:42 
+
+54:42 the topic on my first meeting was
+54:44 
+
+54:44 culture ship. And so we went through the
+54:47 
+
+54:47 whole morning and I was talking with
+54:49 
+
+54:49 Colin at lunch and Colin says, you know,
+54:51 
+
+54:51 you don't seem to like this topic much.
+54:53 
+
+54:53 I'm like, nah, I think it's a waste of
+54:55 
+
+54:55 time. And he says to me, you know,
+54:57 
+
+54:57 Brian,
+54:59 
+
+54:59 culture is how people make decisions
+55:01 
+
+55:01 when you're not in a room. Culture is
+55:03 
+
+55:03 how you really scale. Yeah, good. I'm
+55:06 
+
+55:06 dug in. Colin says it's true. I'm I'm
+55:08 
+
+55:08 in. And I go back to the office the next
+55:10 
+
+55:10 day and my co-founder
+55:13 
+
+55:13 um says, "Well, how was the meeting?
+55:14 
+
+55:14 How's Colin?"
+55:16 
+
+55:16 And I said, "It was great. I loved it."
+55:18 
+
+55:18 What'd you talk about? We talked about
+55:20 
+
+55:20 culture. Oh, that's too bad. Waste of
+55:24 
+
+55:24 time. He said, "No, Darmsh.
+55:27 
+
+55:27 Culture is how people make decisions
+55:29 
+
+55:29 when you're not in the room. Culture is
+55:31 
+
+55:31 how you really scale your company." And
+55:33 
+
+55:33 in a very weak moment, he agreed to be
+55:35 
+
+55:35 our culture sar. And we did two things
+55:37 
+
+55:37 on culture that really worked. One was
+55:39 
+
+55:39 we started measuring net promoter scores
+55:41 
+
+55:41 of our employees. And we've been doing
+55:43 
+
+55:43 that for 19 years. Really useful metric.
+55:45 
+
+55:45 And the other is we we basically
+55:48 
+
+55:48 designed the culture. We designed the
+55:50 
+
+55:50 relationship between the company and and
+55:52 
+
+55:52 the employee and we built a deck called
+55:54 
+
+55:54 our culture code. And the way we thought
+55:57 
+
+55:57 about it was we have a product that we
+55:59 
+
+55:59 sell to our customers. It has to be
+56:00 
+
+56:00 unique and really valuable and it pulls
+56:02 
+
+56:02 customers in. Our second product we sell
+56:05 
+
+56:05 to our employees has to be unique and
+56:08 
+
+56:08 really valuable to pull those employees
+56:09 
+
+56:09 in. So we spend a lot of time on it and
+56:12 
+
+56:12 it's part of HubSpot's secret sauce is
+56:14 
+
+56:14 our culture code and the way we kind of
+56:16 
+
+56:16 think about that. So I would I would
+56:17 
+
+56:17 encourage you folks to do that. If you
+56:19 
+
+56:19 want to be around for 150 years, think a
+56:21 
+
+56:21 lot about culture. I like the way he
+56:23 
+
+56:23 talked about serendipity in there and I
+56:25 
+
+56:25 think that matters. There's a book by
+56:30 
+
+56:30 Jim Collins on why amazingly successful
+56:34 
+
+56:34 companies fail. And if you look at like
+56:36 
+
+56:36 the the top 100 most successful
+56:38 
+
+56:38 companies in the world, you know, even
+56:41 
+
+56:41 25 years ago to today, man, it's just
+56:44 
+
+56:44 totally changed. So like there's a lot
+56:45 
+
+56:45 of disruption that happens. And Jim
+56:47 
+
+56:47 Collins studied these companies that
+56:49 
+
+56:49 stumble. And he's got this whole kind of
+56:52 
+
+56:52 ladder of things that go wrong, but the
+56:54 
+
+56:54 first step on the ladder is hubris born
+56:57 
+
+56:57 of success. And he talks about these
+56:59 
+
+56:59 companies falling into the trap. He's
+57:01 
+
+57:01 got a great quote and it goes, "Those
+57:04 
+
+57:04 who fail to acknowledge the role luck
+57:06 
+
+57:06 may have played in their success and
+57:08 
+
+57:08 thereby overestimate their own merit and
+57:10 
+
+57:10 capabilities will have succumbed to
+57:13 
+
+57:13 hubris." I wish all of you to avoid that
+57:16 
+
+57:16 hubris trap and I'll see you all on the
+57:19 
+
+57:19 next episode of Long Strange Trek.

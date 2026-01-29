@@ -1,0 +1,426 @@
+00:03 Next up, we have Jim Fan. You all know
+00:05 him. Come on up, Jim. Jensen was talking
+00:08 about him just this morning. He is not
+00:10 only director of AI at NVIDIA, but also
+00:13 distinguished research scientist, and
+00:16 he'll talk to us about physical
+00:19 AI. So, a couple days ago, I saw a blog
+00:22 post that caught my attention. It says,
+00:24 "We passed a touring test and nobody
+00:27 noticed." Well, touring test used to be
+00:30 sacred, right? It's the holy grail of
+00:32 computer science, right? The idea that
+00:34 you can't tell the difference between a
+00:36 conversation from a human or from a
+00:39 machine. And then it just so happens
+00:41 that we got there. We just got there.
+00:44 And you know, like people are upset when
+00:48 um O3 Mini took a few more seconds to
+00:51 think or that Claude is not able to
+00:53 debug your nasty nasty code, right? And
+00:57 then we shrug off every LM breakthrough
+00:59 as just yet another
+01:01 Tuesday. You guys in the room are the
+01:03 hardest crowd to impress. So I would
+01:07 like to propose something very simple
+01:09 called the physical touring test. And
+01:12 the idea is like this, right? You host a
+01:16 hackathon party on a Sunday night and
+01:19 this is what you end up with. Uh your
+01:22 partners yelling at you and you're like,
+01:24 "Ah, damn. On Monday morning, I want to
+01:26 tell someone to clean up this mess and
+01:29 make me a very nice candle lit dinner so
+01:31 my partner can be happy. And then you
+01:35 come home to this and you cannot tell if
+01:38 this was from a human or from a
+01:41 machine's work. Right? Simple enough.
+01:43 The physical touring test. But where are
+01:46 we now? Are we getting
+01:48 close? Well, uh, look at this cumul
+01:50 robot getting ready for work. It didn't
+01:53 make it, right? And how about our dogs
+01:55 and the banana peel?
+01:57 Ah, yeah. And the robot instruct, you
+02:02 know, to to to make you a breakfast
+02:03 cereal. Well, it correctly identifies
+02:05 the milk. I I I will give that a minus,
+02:08 right? It's well intentioned. Oh, it
+02:10 spoon feeds you. It's a VIP experience,
+02:13 right? Look at that. I'm jealous. I got
+02:16 no one to spoon feed me. Yeah, this is
+02:20 where we're at.
+02:21 So why is it so damn hard to solve the
+02:24 physical touring
+02:26 test? You guys know that LM researchers
+02:28 complain a lot, right? They complain a
+02:31 lot. And recently some um some guy named
+02:34 Ilia, he complained. He said um the LM
+02:37 pre-training is running out of data. And
+02:41 he even called the internet the fossil
+02:43 fuel of AI. And he said we're running
+02:45 out of data to train LOM. Well, just
+02:48 spend one day with roboticist and you'll
+02:50 know that how spoiled the LM researchers
+02:53 are. We don't even get the fossil fuel.
+02:57 So, this is a data collection session at
+02:60 NVIDIA headquarters. There's a cafe in
+03:02 Nvidia and we have these humanoid robots
+03:04 set up where we operate them and collect
+03:07 the data. And this is what the data look
+03:09 like, right? The robot joint control
+03:12 signals. And these are continuous values
+03:15 over time. And you cannot scrape this
+03:18 from the internet. You can't find it on
+03:19 Wikipedia, on YouTube, on Reddit,
+03:21 anywhere. So you have to collect it
+03:24 yourself. And how do we collect it? We
+03:27 have a very um sophisticated way, but
+03:29 also very expensive way called
+03:32 teleoperation. Well, you can have a
+03:33 human wear something of a VR headset
+03:36 that recognizes your hand pose and
+03:38 streams to the robot. And in this way,
+03:41 you can teach the robot what to do, like
+03:43 pick up a bread out of a toaster and
+03:45 then pour honey over it. But you can
+03:46 imagine this is a very slow and painful
+03:48 process, right? So if you put it on the
+03:51 scaling plot, basically it doesn't scale
+03:54 at all. The real robot data is the human
+03:58 fuel. It's worse than the fossil fuel.
+03:60 You're burning human fuel. And what's
+04:02 worse, it's at most 24 hours per robot
+04:05 per day. And in fact, you'll get much
+04:07 less than that because the human gets
+04:08 tired and the robots get tired even more
+04:10 than the humans. So this is what you get
+04:14 and what to do, right? How to break this
+04:19 barrier? Where is the nuclear energy for
+04:22 robotics? We got to have clean energy.
+04:24 Can't live on fossil fuel
+04:26 forever. Well, enter simulation. We got
+04:29 to leave the physical world and then do
+04:31 something in simulation. So we trained
+04:34 this robot hand to do superhuman
+04:37 dextrous tasks as spin in a pen in a
+04:39 simulation and um well it's it's super
+04:42 human with respect to me because I
+04:43 couldn't spin pen and I I just gave up
+04:45 you know a long time ago in childhood
+04:47 and I'm glad that my robot at least in
+04:49 simulation can do it better than I do.
+04:51 So how do we train hand to do a
+04:53 sophisticated task like this? There are
+04:56 two ideas. One is you got to simulate at
+04:58 10,000 times faster than real time.
+05:01 Meaning that you should have 10,000
+05:03 environments running in parallel on a
+05:05 single GPU doing physics simulation.
+05:07 That's number one. And number two, the
+05:09 10,000 copies of the environment cannot
+05:12 all be identical. You got to vary some
+05:14 parameters like gravity, friction, and
+05:16 weight. And we call that domain
+05:18 randomization. And that gives us the
+05:20 simulation principle, right? Why does it
+05:22 work? So imagine if a neuronet is able
+05:25 to control a robot to solve a million
+05:28 different worlds then it may very well
+05:30 solve the a million and first world
+05:32 which is our physical reality. So in
+05:35 other words, our physical world is in
+05:37 distribution of this
+05:40 training and then how we apply this you
+05:43 can build a digital twin right a
+05:45 onetoone copy of the robot and the world
+05:48 and then you training simulation you
+05:50 test it on the real world directly
+05:52 transfers right zero shop and you can do
+05:55 a hand and this is the most impressive
+05:57 task that we could do. So basically you
+05:59 have a robot dog on a ball and then um
+06:02 we transfer that to real world. This is
+06:06 uh at at pen uh at upen and basically
+06:10 someone walking the robot dog. Um our
+06:13 researcher super weird looks like a
+06:15 black mirror episode and this is this is
+06:17 called Dr. Eureka actually like one of
+06:19 researcher tried his dog on the yoga
+06:21 ball. At least we're super dog dexterity
+06:23 right now. Yeah the dog cannot do it
+06:26 right. And next we can also apply that
+06:29 to much more complicated robots like the
+06:31 humanoid. And these humanoid robots they
+06:34 went through 10 years worth of training
+06:36 in only two hours of simulation time to
+06:39 learn
+06:41 walking and then you can transfer that
+06:43 and it doesn't matter what the
+06:44 embodiment is as long as you have the
+06:46 robot model you simulate it and you can
+06:48 do the
+06:48 walking and can we do more than walking
+06:51 right? So as we are controlling our body
+06:55 you can track any pose that you want
+06:57 track any key point follow any velocity
+06:59 vector that you want and this is called
+07:01 the whole body control problem of
+07:03 humanoid and it's really difficult but
+07:05 we can train that right on
+07:07 10,000 simulations running parallel and
+07:11 we can transfer that zero shot without
+07:13 any fine tuning to the real robot. So
+07:15 this is at the Nvidia lab. We actually
+07:18 need to slow down the video. So the
+07:20 first video is in real time and the next
+07:22 video is slowed down. So you can see the
+07:24 sophistication of the motion that it
+07:27 does. It imitates the human all these
+07:28 agile motions while standing balanced.
+07:31 And guys, how big of the neuronet
+07:34 network it is required to do this? It is
+07:37 1.5 million parameters not billion. 1.5
+07:40 million parameters is enough to capture
+07:43 the subconscious processing of the human
+07:45 body. The systemwide reasoning 1.5
+07:48 million
+07:49 parameters. So if we put this on this
+07:52 diagram where you have the speed versus
+07:54 a diversity of a simulation I think we
+07:57 call this simulation 1.0 the digital
+07:59 twin paradigm where it is a classical
+08:02 vectorzed physics engine and then you
+08:04 can run that to 10,000 up to a million
+08:07 frames per second. But the issue is you
+08:09 got to build a digital twin. You need
+08:11 someone to build a robot to build
+08:12 environment and everything, right?
+08:14 That's very tedious and manual. So, can
+08:16 we start generating parts of the
+08:19 simulation? All of these 3D assets are
+08:22 generated by 3D gener model. All of
+08:25 these textures from stable diffusion or
+08:27 any diffusion you would like. All of
+08:30 these layouts generated by PR and LM to
+08:32 write XML. And putting all of these
+08:35 together, we built a framework called
+08:36 Roboccasta, which is a large scale
+08:38 simulation, a compositional simulation
+08:41 of everyday tasks. And everything here,
+08:44 right, except the robot, everything is
+08:46 generated. You can compose different
+08:47 scenes, but it still relies uh on this
+08:50 classical engine to run, but you can
+08:52 already get a lot of task from it. So
+08:54 now what we can do is we can have a
+08:56 human again do the tally up, but this
+08:58 time you tally up in simulation. You
+09:01 don't tally up a real robot. You tell it
+09:02 up in simulation. You replay that
+09:04 trajectory in simulation and you add all
+09:07 the great hardware accelerated rate
+09:09 tracing to make these beautiful scenes
+09:11 with lighting. And you can even vary the
+09:13 motion. Right? If you uh teleoperate and
+09:16 then move the cup from here to here, you
+09:18 don't have to demonstrate moving cup
+09:20 from here to here or from here to here
+09:22 again. And then putting all of these you
+09:25 have one human demonstration in a
+09:27 simulation through environment
+09:28 generation. You can multiply that to n.
+09:30 And for motion generation, m * n. And I
+09:33 promise you, this is the only math that
+09:35 you're going to do today. That's how we
+09:37 multiply the data. And then you put it
+09:41 together. Column one and three are the
+09:43 real videos from our real robot. And
+09:46 column two to four are from the roboc
+09:49 simulation all generated. So you can
+09:51 still tell that these textures are not
+09:53 real, but they're kind of close enough.
+09:56 And what do we call the things that are
+09:58 close enough? We call it the paradigm of
+09:60 the digital cousin. It's not the digital
+10:02 twin, but it kind of captures the right.
+10:05 So digital cousin and these simulations
+10:07 run slower, but there are this kind of
+10:09 hybrid generative physics engine where
+10:12 we generate parts of it and then
+10:14 delegate the rest to the classical
+10:16 graphics
+10:17 pipeline. Now simulate this scene,
+10:21 right? You got soft body, you got fluid,
+10:24 you got everything. It's gonna take a
+10:26 very long time for artists or graphics
+10:29 engineer to simulate this scene
+10:31 properly. So if we look at how graphics
+10:34 evolved, it took 30 years to go from the
+10:36 left to the
+10:39 right. And it just took video generated
+10:42 models one year to go from left to the
+10:46 right, simulating all the deformable
+10:48 right noodles, right? It lost some sense
+10:51 of humor here, but that's a price I'm
+10:53 willing to pay for latest Sora VO,
+10:56 right? All these strateg models only one
+10:58 year. And that's the power of scaling
+10:60 and datadriven
+11:02 process. Do you recall this video I
+11:05 showed at the
+11:06 beginning? I tricked you guys. There's
+11:09 not a real pixel in this video. It is
+11:11 fully generated by a custom model.
+11:16 So what we do is we take a general
+11:19 purpose open-source right
+11:21 state-of-the-art video generation model
+11:23 and we fine-tune it on domain data
+11:25 collected in our real robot lab and all
+11:27 of these are generated and now you can
+11:29 prompt the model to imagine different
+11:32 futures right to simulate the
+11:34 counterfactuals. So you see these two
+11:36 frames are the exact same but given
+11:38 different language the generated video
+11:40 is actually going to follow language and
+11:42 do the right thing even though this
+11:44 motion never happened in the real
+11:46 world. And then you can do this. It the
+11:48 video diffusion model doesn't care how
+11:50 complex the scene is, right? It doesn't
+11:52 care if there's like fluid or soft body
+11:54 and the same scene you can ask it to
+11:56 pick up different things. It will
+11:57 actually use the right hand to grab the
+11:60 object and put it in the basket. And
+12:03 these all generated all of these are
+12:05 generated. None of a pixel is real. It
+12:07 gets all these kind of reflection
+12:09 correct. Um right all all of all of
+12:12 those interactions correct. And uh one
+12:15 of my favorite is uh the robot playing
+12:17 ukulele over there. So basically um the
+12:21 the video model probably has seen
+12:23 millions of human like lots of humans
+12:24 playing ukulele and then it just
+12:27 simulates the robot finger to do that.
+12:28 Even though the hardware doesn't
+12:30 actually support it, the video gen
+12:31 generation model can do it. So if we put
+12:34 this in perspective, right, this is
+12:37 simulation 2.0 Z where it's got a lot of
+12:40 diversity but it could run pretty slow
+12:43 these days and nobody calls it but I'm
+12:45 calling it the digital nomad right which
+12:48 is wondering into the dream space our
+12:51 video diffusion model and what is a
+12:54 video diffusion model right it is a
+12:55 compression of hundreds of millions of
+12:58 internet videos into this kind of
+12:59 simulation of the multiverse so just
+13:02 like Doctor Strange right you
+13:03 instantiate the robot in the dream space
+13:06 and basically the robot can now interact
+13:08 with objects everywhere uh everything
+13:11 everywhere all at
+13:13 once. So you have this embodied scaling
+13:16 law. Um, okay. So Jensen left, but uh I
+13:20 think he's going to like this a lot,
+13:21 right? So you need a lot of
+13:23 compute to scale up the classical
+13:26 simulation and that's the sim 1.x
+13:28 series. The issue is as you scale this
+13:31 up, it's going to hit a wall because the
+13:33 diversity is limited in this handcrafted
+13:35 system. And then this is the neural
+13:38 world models, the sim 2.0 that's going
+13:40 to scale exponentially with compute. And
+13:42 that's a point where the neuronet
+13:44 network outperforms a classical graphics
+13:48 engineer. And together these two adding
+13:51 up that will be our nuclear power to
+13:53 scale up the next generation of robotics
+13:56 systems. Uh the more you buy the more
+13:59 you say the more you save. So at the
+14:01 beginning whoever says that the compute
+14:04 situation is going to improve not worse
+14:06 burn this figure into a retina and think
+14:09 again. And you put all those data into
+14:12 what we call visual language action
+14:14 model that takes in pixels and
+14:16 instruction and output motor control and
+14:19 uh you get uh what we open sourced at uh
+14:22 March GTC Jensen's keynote called the
+14:25 Groot N1 model and we run on the robot
+14:28 you know it could be romantic sometimes
+14:31 um yeah you can't imagine how much
+14:33 cleaning we did during during training
+14:36 so yeah it's able to grasp the champagne
+14:38 in in this one it did it perfectly
+14:40 Yeah, they do very well. And then it can
+14:44 also do some industrial tasks, pick up
+14:46 some of the factory objects and it can
+14:48 also do multi-root coordination. So
+14:51 group N1 is fully open source and
+14:54 actually the future series of the model
+14:56 will also be open source because we're
+14:57 following Jensen's paradigm of open
+14:59 source and democratizing physical
+15:03 AI. Great. So what's next? Where do we
+15:06 go after we solve physical AI? I will
+15:09 say the next thing is the physical API.
+15:13 You know, throughout human history,
+15:14 right, 5,000 years, we have much better
+15:16 tools, right? Much better society in
+15:19 general, but the way we make dinner and
+15:21 do a lot of hand labor are still more or
+15:23 less the same, right, from the Egyptian
+15:25 times. And maybe for 99% of the human
+15:29 history, we have this structure where
+15:33 you go from raw materials through human
+15:34 labor and you build civilization. And
+15:37 maybe in the last 1% or like 50 years,
+15:40 we have human labor shrinking and we
+15:42 have these highly specialized, highly
+15:45 sophisticated robot systems that can do
+15:47 one thing at a time. And it's very
+15:49 expensive to program, but they still
+15:51 live out our society. And that's what we
+15:53 have right now. And this is the future
+15:55 is to push that blue bar all over the
+15:57 place, all over there, and have the
+15:59 physical API, right? Just like LOM API,
+16:02 moving around chunks of digits of bits.
+16:06 The physical API moves around chunks of
+16:09 atoms. You basically give your software
+16:12 a physical actuator to change, right,
+16:14 the physical world. And on top of this
+16:17 physical API, there's going to be a new
+16:20 economy, a new paradigm where you have
+16:22 physical prompting, right? How do you
+16:24 instruct these robots? How do you teach
+16:25 them? Language sometimes not enough. You
+16:28 can have physical app store and skill
+16:30 economy. So let's say Michelle chef
+16:32 doesn't need to just go to the kitchen
+16:34 every day. He can teach a robot and then
+16:38 basically deliver Michelling dinner as a
+16:42 service. And I should quote Jensen here
+16:45 again that future everything that moves
+16:48 will be
+16:50 autonomous. And one day you'll come home
+16:52 right to a clean sofa and a candle lit
+16:56 dinner and um your partner's smiling at
+16:59 you instead of yelling at you for not
+17:00 doing the dirty laundry. That still
+17:02 motivates me every day, right? and um
+17:05 you bought two humanoid robots last
+17:07 month. It's running group N7 and those
+17:10 robots just fade into the background,
+17:12 right? Kind of like an ambient
+17:14 intelligence. It fades into the
+17:16 background and you wouldn't even notice
+17:18 the moment that we pass the physical
+17:21 touring test and that day will simply be
+17:24 remembered as another Tuesday. Thanks.

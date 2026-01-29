@@ -1,0 +1,3571 @@
+00:00 If you think about it, there's like a
+00:01 
+
+00:01 third shift between midnight and 8 a.m.
+00:04 
+
+00:04 roughly, right? That people tend not to
+00:06 
+
+00:06 work because they're sleeping.
+00:08 
+
+00:08 >> Imagine if operations like logistics
+00:10 
+
+00:10 could still run during that shift,
+00:11 
+
+00:11 right?
+00:12 
+
+00:12 >> Um and then same thing, imagine you're a
+00:14 
+
+00:14 field service technician, you need a
+00:15 
+
+00:15 part. Like how amazing would it be if
+00:17 
+
+00:17 the part could just get delivered to
+00:18 
+
+00:18 you? Like that is something that's going
+00:20 
+
+00:20 to be a nice augment to operations. So
+00:22 
+
+00:22 it's interesting because typically when
+00:24 
+
+00:24 you see automation kick in um again
+00:26 
+
+00:26 volume increases, right? Because costs
+00:28 
+
+00:28 come down. there's way more demand out
+00:30 
+
+00:30 there than people realize because
+00:32 
+
+00:32 sometimes you'll say, "Yeah, I could use
+00:33 
+
+00:33 that part, but I don't need to deliver
+00:34 
+
+00:34 it if it's going to cost 50 bucks for
+00:36 
+
+00:36 someone to drive it to me." Yeah. If it
+00:37 
+
+00:37 costs five bucks or or no bucks, like
+00:40 
+
+00:40 how awesome would that be? So, we kind
+00:41 
+
+00:41 of view it as like it will increase the
+00:43 
+
+00:43 speed that the world operates at.
+01:02 
+
+01:02 In this episode, we talk with Sanjit
+01:03 
+
+01:03 Biswas, founder and CEO of Samsara.
+01:06 
+
+01:06 Sanjett formerly founded Moroi and has a
+01:08 
+
+01:08 legendary reputation amongst Sequoia's
+01:11 
+
+01:11 founders. So, I'm excited to welcome him
+01:13 
+
+01:13 today for a conversation about physical
+01:14 
+
+01:14 AI. Samsara is a $20 billion market cap
+01:18 
+
+01:18 public company with sensors deployed in
+01:19 
+
+01:19 streaming data from millions of vehicles
+01:21 
+
+01:21 capturing 90 billion miles annually.
+01:24 
+
+01:24 Sanjett shares his insights about the
+01:26 
+
+01:26 constraints of physical AI from running
+01:28 
+
+01:28 inference on 2 to 10 watt edge devices
+01:31 
+
+01:31 to why the messy diversity of real world
+01:33 
+
+01:33 data is both the biggest challenge and
+01:35 
+
+01:35 opportunity for embodied AI. If you're
+01:37 
+
+01:37 building in robotics or physical AI,
+01:39 
+
+01:39 this conversation offers a rare
+01:41 
+
+01:41 perspective from somebody who's actually
+01:42 
+
+01:42 scaled it. Enjoy the show.
+01:46 
+
+01:46 Sanjit, thank you so much for joining us
+01:48 
+
+01:48 today. you are a legendary Sequoia
+01:50 
+
+01:50 founder and it is a delight to have you
+01:52 
+
+01:52 uh back at Sequoia.
+01:53 
+
+01:53 >> Thanks for having me. It's great to be
+01:54 
+
+01:54 back.
+01:55 
+
+01:55 >> Um I want to start with your background.
+01:57 
+
+01:57 So you you went from MIT's RoofNet
+02:00 
+
+02:00 project to co-founding Moroi through its
+02:03 
+
+02:03 1.2 billion acquisition and you are now
+02:06 
+
+02:06 the founder and CEO of Samsara, a 23
+02:09 
+
+02:09 billion market cap company um with the
+02:12 
+
+02:12 best ticker on the on the public
+02:13 
+
+02:13 markets. Uh what's what's the through
+02:15 
+
+02:15 line? and tell tell me about your your
+02:17 
+
+02:17 personal passions and and experiences
+02:19 
+
+02:19 and what the through line is between all
+02:20 
+
+02:20 of that.
+02:21 
+
+02:21 >> Yeah, so uh I'm an engineer by
+02:22 
+
+02:22 background. So studied E and CS. Um I
+02:25 
+
+02:25 went to undergrad out here at Stanford,
+02:26 
+
+02:26 went to MIT for grad school and that's
+02:28 
+
+02:28 where we worked on this project called
+02:30 
+
+02:30 roofnet. So the throughine for me has
+02:31 
+
+02:31 been about building cool products, cool
+02:34 
+
+02:34 technologies that have real world impact
+02:36 
+
+02:36 and roofnet this is like over 20 years
+02:38 
+
+02:38 ago. The idea was could you build really
+02:40 
+
+02:40 big wireless networks because at you
+02:43 
+
+02:43 know kind of early 2000s Wi-Fi was not
+02:45 
+
+02:45 mainstream. It was a brand new
+02:46 
+
+02:46 technology. Internet access was just
+02:49 
+
+02:49 becoming mainstream and is still pretty
+02:51 
+
+02:51 expensive. And so we saw this
+02:53 
+
+02:53 opportunity to take Wi-Fi chips and all
+02:55 
+
+02:55 that technology and use it to build
+02:56 
+
+02:56 really big networks. And so we kind of
+02:58 
+
+02:58 had this idea that uh internet access
+02:60 
+
+03:00 should be everywhere, right? It should
+03:01 
+
+03:01 be in the air.
+03:02 
+
+03:02 >> And how would you do that? We need to
+03:04 
+
+03:04 build a big network. So that was
+03:05 
+
+03:05 roofnet. And then with Samsara uh it's a
+03:07 
+
+03:07 bit of a different sort of focus. We
+03:09 
+
+03:09 focus on the world of physical
+03:10 
+
+03:10 operations. So think all the
+03:11 
+
+03:11 infrastructure companies whether it's
+03:13 
+
+03:13 energy utilities, construction,
+03:14 
+
+03:14 logistics like all these real world
+03:16 
+
+03:16 physical industries and the idea has
+03:18 
+
+03:18 been real world impact through things
+03:19 
+
+03:19 like risk reduction, improving
+03:21 
+
+03:21 efficiency, um improving sustainability,
+03:23 
+
+03:23 just using all this data and now AI.
+03:25 
+
+03:25 >> Yeah. Um physical AI feels like it's
+03:28 
+
+03:28 finally going through an inflection
+03:29 
+
+03:29 moment. You've been building Samsara for
+03:31 
+
+03:31 the better part of a decade now. What
+03:33 
+
+03:33 did you see at the time and like how has
+03:35 
+
+03:35 the field changed? Why why now?
+03:37 
+
+03:37 >> Yeah. So, if I rewind 10 years to when
+03:39 
+
+03:39 we were founding the company, we had a
+03:42 
+
+03:42 couple of sort of intuitive bets or
+03:44 
+
+03:44 guesses. And the why now for us at that
+03:46 
+
+03:46 point was connectivity. So, we'd been
+03:48 
+
+03:48 through the Moroi journey and we'd seen
+03:50 
+
+03:50 internet access go from being kind of
+03:52 
+
+03:52 rare and inexpensive to being
+03:54 
+
+03:54 ubiquitous. So, this is 2015 for
+03:56 
+
+03:56 reference.
+03:57 
+
+03:57 >> Um, we saw basically the ability to
+03:60 
+
+03:60 process large amounts of data really
+04:01 
+
+04:01 coming online. So the cloud had matured.
+04:04 
+
+04:04 Um we were seeing the beginnings of the
+04:05 
+
+04:05 GPU wave. Um and if you remember back to
+04:09 
+
+04:09 2015, Nvidia was a player and they were
+04:11 
+
+04:11 doing a lot of interesting like embedded
+04:13 
+
+04:13 GPUs. So if you picked up a Nintendo
+04:15 
+
+04:15 Switch back then, it had amazing
+04:16 
+
+04:16 graphics, but it fit in your hand. And
+04:18 
+
+04:18 so we saw compute was getting really
+04:20 
+
+04:20 good. And then we saw sensors really
+04:22 
+
+04:22 specifically cameras were getting really
+04:24 
+
+04:24 good because this is probably seven,
+04:26 
+
+04:26 eight years after the iPhone launch. So
+04:28 
+
+04:28 cameras had gotten extraordinary. Um,
+04:30 
+
+04:30 and you combine all these three things
+04:32 
+
+04:32 together. You've got connectivity,
+04:33 
+
+04:33 you've got compute, and you've got
+04:34 
+
+04:34 sensors, cameras. And we said this is
+04:36 
+
+04:36 the sort of like makings for u total sea
+04:40 
+
+04:40 change when it comes to ability to
+04:42 
+
+04:42 process data in real world context.
+04:44 
+
+04:44 >> Wonderful. Okay. I'm excited to nerd out
+04:46 
+
+04:46 more about uh technical questions on the
+04:48 
+
+04:48 frontier of physical AI. Before we get
+04:50 
+
+04:50 into it, maybe can you just say a word
+04:51 
+
+04:51 on Tamsara for our listeners? Um I guess
+04:55 
+
+04:55 how much of the business is you know I
+04:56 
+
+04:56 think of it as very much a having had
+04:58 
+
+04:58 roots in commercial trucking. How much
+04:60 
+
+04:60 of the business is that today and what
+05:02 
+
+05:02 do you see the ultimate vision of
+05:03 
+
+05:03 Samsara being?
+05:04 
+
+05:04 >> Yeah so we really focus on the broad
+05:06 
+
+05:06 world of physical operations. So think
+05:08 
+
+05:08 about all these different kinds of
+05:09 
+
+05:09 industries. Trucking is definitely one
+05:10 
+
+05:10 of them. It's about 20 25% of our
+05:13 
+
+05:13 business. So logistics and and big
+05:14 
+
+05:14 trucks on the road. A lot of our
+05:16 
+
+05:16 business now is related to field service
+05:17 
+
+05:17 and construction. So other big kind of
+05:19 
+
+05:19 frontline industries. Uh but we also are
+05:22 
+
+05:22 starting to do work in like um public
+05:24 
+
+05:24 sector. So we work with local
+05:25 
+
+05:25 governments. We work with student
+05:27 
+
+05:27 transit. So we just signed like the
+05:29 
+
+05:29 largest yellow school bus operator in
+05:31 
+
+05:31 North America which is pretty cool. Um
+05:33 
+
+05:33 and we work in industries like aviation.
+05:35 
+
+05:35 So think about like labor intensive
+05:37 
+
+05:37 asset heavy industries that really power
+05:39 
+
+05:39 the infrastructure of the planet.
+05:41 
+
+05:41 >> Wonderful.
+05:42 
+
+05:42 >> Can I go back to your comment on so at
+05:44 
+
+05:44 the time there was a why now around
+05:45 
+
+05:45 bandwidth compute and cameras.
+05:47 
+
+05:47 >> Yeah. And it sounds like you may not
+05:50 
+
+05:50 have necessarily had a crystal ball on
+05:52 
+
+05:52 what was going to happen with AI.
+05:53 
+
+05:53 >> Yeah.
+05:54 
+
+05:54 >> But you kind of felt like you're on the
+05:55 
+
+05:55 right side of history and that with
+05:57 
+
+05:57 those raw ingredients, you'd be able to
+05:59 
+
+05:59 do increasingly sophisticated stuff over
+06:01 
+
+06:01 time.
+06:01 
+
+06:01 >> Yeah.
+06:02 
+
+06:02 >> Um what I'm curious about I feel like
+06:04 
+
+06:04 there are a lot of founders today who
+06:06 
+
+06:06 are kind of in a similar position where
+06:08 
+
+06:08 nobody has a crystal ball. We don't
+06:09 
+
+06:09 really know what's coming, but you kind
+06:11 
+
+06:11 of know that whatever capabilities
+06:12 
+
+06:12 you're going to have tomorrow are very
+06:14 
+
+06:14 different and better than whatever
+06:15 
+
+06:15 capabilities you have today.
+06:16 
+
+06:16 >> Yeah. So I guess the question is like
+06:19 
+
+06:19 since you kind of had a directional
+06:20 
+
+06:20 sense for where the world was going, how
+06:22 
+
+06:22 did that influence the way you built the
+06:24 
+
+06:24 business? Like was there anything
+06:25 
+
+06:25 specifically you did just kind of in
+06:28 
+
+06:28 anticipation of this inevitable
+06:29 
+
+06:29 direction that the world was going?
+06:31 
+
+06:31 >> Well, actually the historical context is
+06:33 
+
+06:33 important. So our first company Moroi,
+06:35 
+
+06:35 which was uh funded by Sequoia, we were
+06:38 
+
+06:38 domain experts. So we knew a ton about
+06:40 
+
+06:40 networking because that's what we'd been
+06:41 
+
+06:41 working on in terms of our PhD. With
+06:43 
+
+06:43 Samsara, it was kind of the opposite. We
+06:45 
+
+06:45 knew nothing about this domain. Like
+06:46 
+
+06:46 we'd never driven a commercial truck
+06:47 
+
+06:47 before, never worked in a warehouse. And
+06:49 
+
+06:49 so we were sort of eyes open about it.
+06:51 
+
+06:51 What we did have was that intuitive
+06:53 
+
+06:53 sense of the compounding rate of those
+06:55 
+
+06:55 underlying technologies. So we said,
+06:56 
+
+06:56 okay, there's this really interesting
+06:58 
+
+06:58 like problem space, this world of
+06:60 
+
+06:60 physical operations. It's kind of like
+07:02 
+
+07:02 overlooked, especially 10 years ago. No
+07:03 
+
+07:03 one was really talking about
+07:04 
+
+07:04 infrastructure the way they are now.
+07:06 
+
+07:06 >> But there are, you know, things are
+07:08 
+
+07:08 changing very quickly behind the scenes
+07:10 
+
+07:10 in terms of tooling. So that intuition
+07:12 
+
+07:12 is exactly sort of what we were powered
+07:14 
+
+07:14 by and we said even if it's not
+07:17 
+
+07:17 mainstream yet or it's not ready yet
+07:19 
+
+07:19 certainly in 5 to 10 years which is
+07:21 
+
+07:21 about now it will be possible to do this
+07:23 
+
+07:23 stuff. So I think for a lot of the
+07:25 
+
+07:25 current founders it's kind of like if
+07:26 
+
+07:26 you look at AI model capabilities even
+07:28 
+
+07:28 when like you know the chat GPT moment
+07:31 
+
+07:31 happened these models weren't perfect
+07:33 
+
+07:33 they've gotten a lot better in the last
+07:34 
+
+07:34 2 three years and they're going to get
+07:36 
+
+07:36 even better in the next two to three
+07:37 
+
+07:37 years. I think technical people
+07:38 
+
+07:38 understand that in a way that consumers
+07:40 
+
+07:40 and customers often may not see yet.
+07:43 
+
+07:43 >> So I think you have an embedded systems
+07:45 
+
+07:45 background and you know you're one of
+07:47 
+
+07:47 the unique people that's you know
+07:49 
+
+07:49 operated at the intersection of hard the
+07:50 
+
+07:50 hardware and software worlds. Um I'm
+07:53 
+
+07:53 curious what are the things that make
+07:55 
+
+07:55 building AI in the physical world
+07:58 
+
+07:58 different than you know running AI in
+08:00 
+
+08:00 big data centers?
+08:01 
+
+08:01 >> Uh a couple of things. Well the it it
+08:03 
+
+08:03 actually is a lot of fun. So the
+08:05 
+
+08:05 physical world is very diverse. Um, you
+08:07 
+
+08:07 know, you see a lot of companies now
+08:08 
+
+08:08 working on physical intelligence and
+08:10 
+
+08:10 world models and it's because the
+08:11 
+
+08:11 training data set is really broad and
+08:13 
+
+08:13 vast.
+08:14 
+
+08:14 >> Um, so if you think about our products,
+08:16 
+
+08:16 we have products like dash cams that end
+08:18 
+
+08:18 up on the roads on millions of vehicles.
+08:20 
+
+08:20 They see like 99% of the US roads. It's
+08:23 
+
+08:23 just an incredible data set. You've got
+08:24 
+
+08:24 urban, you've got rural, you've got
+08:25 
+
+08:25 residential, you've got weather. And so,
+08:28 
+
+08:28 uh, we see all these like interesting
+08:29 
+
+08:29 exceptional cases. So, the training data
+08:31 
+
+08:31 is really interesting. and then what we
+08:33 
+
+08:33 can apply all the inference and and
+08:35 
+
+08:35 basically pattern matching to is also
+08:37 
+
+08:37 interesting. So I think that's the most
+08:39 
+
+08:39 fun part. The most challenging part
+08:41 
+
+08:41 though is how messy it is and how
+08:43 
+
+08:43 distributed it is. So um for our
+08:45 
+
+08:45 products it's it's not practical for us
+08:48 
+
+08:48 to just stream all the data to the
+08:50 
+
+08:50 cloud. It would be like a crazy
+08:51 
+
+08:51 bandwidth bill. Um you need pretty
+08:54 
+
+08:54 massive data centers if you think about
+08:55 
+
+08:55 millions of video streams like
+08:57 
+
+08:57 constantly running inference. And so we
+08:59 
+
+08:59 have a much more distributed
+09:00 
+
+09:00 architecture where we actually run in
+09:02 
+
+09:02 the cameras themselves. And that changes
+09:05 
+
+09:05 uh your compute and power footprint. You
+09:07 
+
+09:07 know, we're talking about 2 to 10 watts,
+09:09 
+
+09:09 not like kilowatts, right? Um but you
+09:12 
+
+09:12 can do a lot more because you've got
+09:14 
+
+09:14 millions of them.
+09:15 
+
+09:15 >> H And so what does it like? How do you
+09:17 
+
+09:17 run I'm thinking some of these large
+09:19 
+
+09:19 LLMs, even even the image image models
+09:21 
+
+09:21 are
+09:22 
+
+09:22 >> very large right now that people are
+09:24 
+
+09:24 working with. Are you are you running
+09:25 
+
+09:25 just very bespoke small models on on 2
+09:28 
+
+09:28 to 10 watts? That's that doesn't give
+09:30 
+
+09:30 you much.
+09:31 
+
+09:31 >> It doesn't give you a lot of room and
+09:32 
+
+09:32 that's a fun engineering problem. So um
+09:33 
+
+09:33 if you think about it, these
+09:34 
+
+09:34 state-of-the-art models, they are very
+09:36 
+
+09:36 large. So you're talking about like you
+09:38 
+
+09:38 know hundreds of millions of parameters
+09:39 
+
+09:39 or billions of parameters that is simply
+09:42 
+
+09:42 not possible. So our footprint is much
+09:44 
+
+09:44 more similar to what you can run on like
+09:45 
+
+09:45 your mobile phone, right? Um so it's not
+09:48 
+
+09:48 tiny. It's not a microcontroller. It
+09:49 
+
+09:49 runs Linux. It's got like hundreds of
+09:51 
+
+09:51 megs of memory, maybe gigs. um but it's
+09:55 
+
+09:55 it's not like a big data center right so
+09:57 
+
+09:57 what we tend to do is we will um train
+09:60 
+
+09:60 models in the cloud we'll basically
+10:01 
+
+10:01 distill them down or use teacher models
+10:03 
+
+10:03 so we'll use a big model to basically
+10:05 
+
+10:05 instruct a small model that's really
+10:07 
+
+10:07 designed for our use case because we
+10:09 
+
+10:09 don't need to be able to answer you know
+10:11 
+
+10:11 what the capital France is right like
+10:13 
+
+10:13 that's not something the dash cam has to
+10:15 
+
+10:15 encounter but we do need to be able to
+10:17 
+
+10:17 understand what is the risk profile on
+10:18 
+
+10:18 the road so we train it with the data
+10:20 
+
+10:20 that's relevant for the task
+10:21 
+
+10:21 >> how much of the data you see 99% of US
+10:24 
+
+10:24 highways or US roads. How much of that
+10:27 
+
+10:27 data can you make use of? How much of
+10:28 
+
+10:28 that data do you make use of?
+10:30 
+
+10:30 >> Yeah. Um we can make use of a lot of it
+10:33 
+
+10:33 and u we basically have the ability to
+10:35 
+
+10:35 train over like this entire data set.
+10:37 
+
+10:37 There is a very practical question of
+10:39 
+
+10:39 like okay you run a tokenizer at the
+10:41 
+
+10:41 edge you you send all these to the cloud
+10:43 
+
+10:43 what do you do with it? And what's cool
+10:45 
+
+10:45 about that is what we do with it this
+10:46 
+
+10:46 year is so much more interesting than
+10:48 
+
+10:48 what we could do with it two three years
+10:49 
+
+10:49 ago. So two to three years ago and and
+10:52 
+
+10:52 these products really started around
+10:53 
+
+10:53 this idea of reducing risk. So if you
+10:55 
+
+10:55 think about the problem we're trying to
+10:56 
+
+10:56 solve, it's that you know our operations
+10:59 
+
+10:59 customers they operate on these roads
+11:01 
+
+11:01 every day. It's actually the riskiest
+11:03 
+
+11:03 thing that they do is more so than
+11:04 
+
+11:04 construction or working in oil and gas.
+11:06 
+
+11:06 Driving on the highway getting to and
+11:08 
+
+11:08 from the job site is where they incur
+11:10 
+
+11:10 like most of their like fatality or or
+11:12 
+
+11:12 kind of high severity risk. M
+11:14 
+
+11:14 >> so uh the question is how do you go take
+11:17 
+
+11:17 all these images and tokens and turn it
+11:18 
+
+11:18 into a risk signal right um couple years
+11:21 
+
+11:21 ago we said you know the biggest risk we
+11:23 
+
+11:23 are seeing right now is mobile phone
+11:25 
+
+11:25 usage right like people are on their
+11:26 
+
+11:26 mobile device while driving a big truck
+11:28 
+
+11:28 and that's super risky so we built a
+11:30 
+
+11:30 detector for that
+11:32 
+
+11:32 >> um you do that and you say okay we can
+11:34 
+
+11:34 solve this problem we can detect mobile
+11:35 
+
+11:35 phones what else drives risk um now
+11:38 
+
+11:38 we're seeing things like weather right
+11:39 
+
+11:39 and weather's always been a risk factor
+11:41 
+
+11:41 it's not a brand new one but it's now
+11:43 
+
+11:43 something we can detect using these
+11:44 
+
+11:44 pretty sophisticated models. Training a
+11:47 
+
+11:47 weather detector using like old school
+11:49 
+
+11:49 convolutional networks like an AlexNet
+11:51 
+
+11:51 style model, you would have gotten a lot
+11:53 
+
+11:53 of things wrong. You couldn't tell the
+11:54 
+
+11:54 road conditions. Once you use more
+11:57 
+
+11:57 sophisticated models like the ones we
+11:58 
+
+11:58 have today, you can really figure it
+11:60 
+
+11:60 out. So that's the cool thing is there
+12:01 
+
+12:01 are these unlocks that happen every
+12:03 
+
+12:03 couple years as model capabilities
+12:04 
+
+12:04 increase and our data set increases. So
+12:07 
+
+12:07 these two things like really work in our
+12:08 
+
+12:08 favor. Is there an upcoming unlock that
+12:11 
+
+12:11 you are most looking forward to
+12:13 
+
+12:13 >> uh in terms of our product sad or just
+12:15 
+
+12:15 in general
+12:15 
+
+12:15 >> a new capability that's going to unlock
+12:17 
+
+12:17 some new use case or some new feature
+12:19 
+
+12:19 for your product?
+12:20 
+
+12:20 >> You know I feel like we are seeing just
+12:23 
+
+12:23 such incredible foundational model
+12:25 
+
+12:25 capabilities that are making it possible
+12:27 
+
+12:27 to just inference over huge amounts of
+12:29 
+
+12:29 data. So historically what we did is we
+12:32 
+
+12:32 understood like what was happening in
+12:33 
+
+12:33 the moment right? So like I said mobile
+12:35 
+
+12:35 phone detection or not wearing a seat
+12:37 
+
+12:37 belt or following distance. Now we can
+12:39 
+
+12:39 start to really look over the course of
+12:40 
+
+12:40 a trip and we're not only detecting like
+12:43 
+
+12:43 negative like risky downside events, but
+12:45 
+
+12:45 we can actually detect good behaviors
+12:47 
+
+12:47 too. And I'm really excited about that
+12:48 
+
+12:48 because frontline workers 80 90% of the
+12:50 
+
+12:50 time they're doing a great job. No one's
+12:52 
+
+12:52 able to recognize it because no one sees
+12:54 
+
+12:54 it. So what's awesome is we can now see
+12:56 
+
+12:56 that someone's doing awesome and give
+12:58 
+
+12:58 them a high five or like some kind of
+13:00 
+
+13:00 recognition or kudos that is like making
+13:03 
+
+13:03 people's day and it's a cool like silver
+13:05 
+
+13:05 lining side effect of having all this
+13:07 
+
+13:07 stuff running. So anyway, it's kind of a
+13:09 
+
+13:09 unexpected upside sort of thing. Yeah.
+13:12 
+
+13:12 >> And do you think it'll be video
+13:13 
+
+13:13 reasoning models that sort of empower
+13:16 
+
+13:16 that? I know you can't run a ton you
+13:18 
+
+13:18 can't run giant models at the edge, but
+13:19 
+
+13:19 are you doing stuff server side that
+13:22 
+
+13:22 takes advantage of
+13:23 
+
+13:23 >> LLM? Yeah, I should have mentioned that.
+13:24 
+
+13:24 So um the model's connected. Um we have
+13:27 
+
+13:27 a ton of inference running at the edge.
+13:28 
+
+13:28 is running continuously because when
+13:30 
+
+13:30 you're driving there's like continuous
+13:31 
+
+13:31 risk and then we're taking those tokens
+13:34 
+
+13:34 we're streaming them up and and addition
+13:36 
+
+13:36 you know we have images we have video we
+13:38 
+
+13:38 have other kinds of telemetry um and
+13:40 
+
+13:40 then we can go and run all kinds of
+13:42 
+
+13:42 sophisticated things in the cloud so if
+13:43 
+
+13:43 we need to understand when an accident
+13:45 
+
+13:45 happened what really happened we can run
+13:47 
+
+13:47 a full video language model like like a
+13:50 
+
+13:50 reasoning model essentially in the cloud
+13:51 
+
+13:51 and that can say oh this was actually
+13:53 
+
+13:53 defensive driving and this guy got cut
+13:56 
+
+13:56 off or these were the conditions so that
+13:58 
+
+13:58 is really cool. Um, we couldn't have
+13:60 
+
+13:60 done that 5 years ago.
+14:01 
+
+14:01 >> Do you believe in world models? Loaded
+14:03 
+
+14:03 question.
+14:04 
+
+14:04 >> Um, I do. I'm I'm cautiously optimistic
+14:07 
+
+14:07 about them, but I think you need a
+14:08 
+
+14:08 tremendous amount of data.
+14:10 
+
+14:10 >> Yeah. Are you guys training your own
+14:11 
+
+14:11 world models?
+14:12 
+
+14:12 >> We are not building our own world model.
+14:14 
+
+14:14 Um, and I think it that requires a very
+14:16 
+
+14:16 specific kind of focus, but uh in the
+14:19 
+
+14:19 same way we don't train our own like
+14:21 
+
+14:21 base foundation models, but we are
+14:23 
+
+14:23 looking forward to using them at some
+14:24 
+
+14:24 point.
+14:24 
+
+14:24 >> Yeah. And I imagine you have an
+14:26 
+
+14:26 incredibly rich data set that might be
+14:27 
+
+14:27 useful.
+14:28 
+
+14:28 >> We do. Yeah. We see about 90 billion
+14:31 
+
+14:31 miles on our system every year. So, it's
+14:33 
+
+14:33 a lot of driving.
+14:34 
+
+14:34 >> Yeah. It seems like the sensor footprint
+14:37 
+
+14:37 you've built out is like a tech nerd's
+14:39 
+
+14:39 dream, right? Most people dream of a
+14:42 
+
+14:42 connected world and, you know, you
+14:44 
+
+14:44 should be able to have so much telemetry
+14:46 
+
+14:46 on all these different attributes of the
+14:47 
+
+14:47 physical world. But as far as I can
+14:50 
+
+14:50 tell, you're one of the only companies
+14:51 
+
+14:51 that's really out gone out and, you
+14:54 
+
+14:54 know, put sensors on the physical world
+14:55 
+
+14:55 in a meaning in a really meaningful way.
+14:57 
+
+14:57 >> Why do you think that is? And what's the
+15:00 
+
+15:00 key to actually being able to make that
+15:01 
+
+15:01 dream happen versus have it just be a,
+15:03 
+
+15:03 you know, tech nerds tech nerd's dream?
+15:05 
+
+15:05 >> Yeah, first of all, it it takes uh it
+15:08 
+
+15:08 takes a village to actually get the
+15:10 
+
+15:10 stuff out there. Um, and I think that's
+15:12 
+
+15:12 maybe one other big difference between
+15:13 
+
+15:13 just pure software and physical world.
+15:16 
+
+15:16 Yeah. Is we have to get the products
+15:18 
+
+15:18 installed, so they're installed in
+15:19 
+
+15:19 millions of vehicles. We have to train
+15:21 
+
+15:21 frontline workforces on like what the
+15:23 
+
+15:23 stuff is and what it's doing. Um, and
+15:25 
+
+15:25 then we have to provide value to all
+15:27 
+
+15:27 these customers kind of from day one,
+15:29 
+
+15:29 right? Like they have to get something
+15:30 
+
+15:30 out of it. Um, you combine all this
+15:32 
+
+15:32 together and you get this big footprint.
+15:34 
+
+15:34 But it's been hard because you need
+15:36 
+
+15:36 thousands of people at our scale now to
+15:37 
+
+15:37 do this and to do the change management
+15:40 
+
+15:40 like the installs and all that kind of
+15:41 
+
+15:41 stuff. Um you know there are a few
+15:43 
+
+15:43 companies that have data sets of the
+15:45 
+
+15:45 scale but it's like Tesla and probably
+15:47 
+
+15:47 us right and then Whimo there's
+15:49 
+
+15:49 thousands of Whimos but not millions and
+15:50 
+
+15:50 maybe it will be millions in the future
+15:52 
+
+15:52 but we're not there yet. So that gives
+15:54 
+
+15:54 you a sense of how much effort is just
+15:56 
+
+15:56 like sheer willpower is required to get
+15:59 
+
+15:59 this stuff out there. Speaking of which,
+16:00 
+
+16:00 I um I think there are a lot of founders
+16:04 
+
+16:04 right now who are technical founders
+16:06 
+
+16:06 like yourself
+16:07 
+
+16:07 >> um who've built something cool
+16:11 
+
+16:11 and
+16:12 
+
+16:12 are now encountering this crazy
+16:15 
+
+16:15 supercharged race to scale that the AI
+16:18 
+
+16:18 wave seems to have brought. And so I
+16:21 
+
+16:21 guess the question is you are a
+16:23 
+
+16:23 technical founder.
+16:24 
+
+16:24 I think both Samsara and Moroi have been
+16:28 
+
+16:28 known for go to market execution.
+16:31 
+
+16:31 >> And so maybe the question is like how
+16:33 
+
+16:33 important has go to market execution
+16:35 
+
+16:35 been to your success and as a technical
+16:39 
+
+16:39 founder was it was it obvious to you at
+16:42 
+
+16:42 the beginning that it was going to be
+16:43 
+
+16:43 that important or kind of what was your
+16:45 
+
+16:45 journey like in
+16:46 
+
+16:46 >> in like appreciating the importance of
+16:48 
+
+16:48 go to market execution if that makes
+16:50 
+
+16:50 sense.
+16:50 
+
+16:50 >> Yeah. I'm replaying like 20 years in my
+16:52 
+
+16:52 head really fast. So uh when we started
+16:54 
+
+16:54 Moroi at that point in time like I had
+16:58 
+
+16:58 never sold anything in my life. In fact
+16:60 
+
+16:60 like I
+17:01 
+
+17:01 >> as an engineering nerd like I avoided
+17:03 
+
+17:03 any situation where there was like you
+17:05 
+
+17:05 know you know those like fundraiser you
+17:07 
+
+17:07 have to sell candy bars at school like I
+17:08 
+
+17:08 would like I was like does anyone need a
+17:10 
+
+17:10 website for this thing? Like you just
+17:11 
+
+17:11 like try to find some way out of it. So
+17:13 
+
+17:13 I I really was not like a salesperson in
+17:15 
+
+17:15 terms of background and no one in my
+17:17 
+
+17:17 family had done sales. So it was very
+17:18 
+
+17:18 foreign. Um, the thing that turned me on
+17:21 
+
+17:21 to it was this idea of this is what it
+17:23 
+
+17:23 takes to get the product out there. And
+17:24 
+
+17:24 if the product's not out there, it's not
+17:25 
+
+17:25 having impact. So if you're driven by
+17:27 
+
+17:27 impact, if that's what motivates you,
+17:29 
+
+17:29 it's fun to see people using it, right?
+17:31 
+
+17:31 Um, and then this is what makes us
+17:32 
+
+17:32 sustainable. So with Moroi, we were
+17:34 
+
+17:34 growing the company between 2006, it was
+17:37 
+
+17:37 acquired in 2012. In the middle of that
+17:39 
+
+17:39 was a great financial crisis, right? Um,
+17:41 
+
+17:41 there wasn't a lot of funding at the
+17:43 
+
+17:43 time. Like risk capital was just like
+17:44 
+
+17:44 turned off. So we basically had to make
+17:47 
+
+17:47 the company operate at break even,
+17:48 
+
+17:48 right? or or thereabouts. And that's
+17:50 
+
+17:50 what really convinced us like we have to
+17:52 
+
+17:52 figure out how to have sustainable sales
+17:54 
+
+17:54 execution and a model that's highly
+17:56 
+
+17:56 predictable. And as engineers, we're
+17:58 
+
+17:58 like, hey, this is actually a big
+17:59 
+
+17:59 engineering problem, right?
+18:01 
+
+18:01 >> Um and then that stuck with us with
+18:03 
+
+18:03 Samsara. We're talking about impact at
+18:04 
+
+18:04 scale.
+18:05 
+
+18:05 >> Uh we raised capital along the way, but
+18:07 
+
+18:07 actually we reinvested way more just
+18:09 
+
+18:09 from the revenue of the company, the
+18:11 
+
+18:11 gross margin. So if you look at our
+18:13 
+
+18:13 numbers, we're public now. So you can
+18:14 
+
+18:14 kind of go back through the balance
+18:15 
+
+18:15 sheet. Um, you can see we've invested
+18:18 
+
+18:18 probably close to three billion dollars
+18:19 
+
+18:19 just in getting the stuff out there,
+18:21 
+
+18:21 right? R&D, customer success, all that
+18:23 
+
+18:23 stuff. That is only possible with a lot
+18:25 
+
+18:25 of sales, right? Um, so once you
+18:28 
+
+18:28 understand the why, you can kind of buy
+18:29 
+
+18:29 into it and say, "I'm going to figure
+18:30 
+
+18:30 this out." It was not natural for us,
+18:33 
+
+18:33 but it was a pivot that that ended up
+18:36 
+
+18:36 being something we had to do, and I'm
+18:37 
+
+18:37 really glad we figured it out and have
+18:39 
+
+18:39 been getting better at it each year.
+18:40 
+
+18:40 >> Yeah.
+18:41 
+
+18:41 >> Moro, you were a domain expert. Samsara
+18:44 
+
+18:44 you were not when you started the
+18:45 
+
+18:45 company. Why why go and pick that
+18:48 
+
+18:48 domain?
+18:49 
+
+18:49 >> I think it was curiosity. Um and this is
+18:52 
+
+18:52 a little bit of like you going back to
+18:54 
+
+18:54 sort of curious nerd roots like you just
+18:56 
+
+18:56 find yourself like reading books and
+18:57 
+
+18:57 wondering how stuff works. Um so after
+19:01 
+
+19:01 Moroi we actually didn't have a plan to
+19:02 
+
+19:02 start another company. Uh there was a
+19:04 
+
+19:04 while I thought I was going to go back
+19:05 
+
+19:05 to grad school finish the PhD kind of
+19:07 
+
+19:07 thing. Uh my co-founder John Bickett
+19:10 
+
+19:10 he's like way smarter. He's like that's
+19:12 
+
+19:12 never going to work. But uh you go do
+19:15 
+
+19:15 that and in that period of time I
+19:16 
+
+19:16 realized that academic research is very
+19:18 
+
+19:18 long feedback loop kind of slow cycle
+19:20 
+
+19:20 but there were a lot of other
+19:22 
+
+19:22 interesting problems that caught my
+19:23 
+
+19:23 attention. So I I got interested I think
+19:25 
+
+19:25 in energy at that time. So I was like
+19:27 
+
+19:27 learning about um how the electrical
+19:29 
+
+19:29 grid worked or the time didn't work
+19:31 
+
+19:31 because photovoltaics and renewables
+19:32 
+
+19:32 were coming online. Um I started getting
+19:34 
+
+19:34 curious about nuclear about um
+19:37 
+
+19:37 satellites and things like that. So,
+19:38 
+
+19:38 it's kind of fun to be able to just open
+19:40 
+
+19:40 your mind up to everything when you've
+19:42 
+
+19:42 been like laser focused on one thing.
+19:44 
+
+19:44 >> Yeah.
+19:44 
+
+19:44 >> And then over and over, um, I found
+19:46 
+
+19:46 myself and then John found himself like
+19:48 
+
+19:48 attracted to this world of
+19:49 
+
+19:49 infrastructure. And so it was just
+19:51 
+
+19:51 curiosity about this part of the world
+19:52 
+
+19:52 that felt pretty overlooked.
+19:55 
+
+19:55 >> Really cool. What do you think of
+19:57 
+
+19:57 autonomy? And that might be a loaded
+19:59 
+
+19:59 question. Yeah. But, you know, I two
+20:01 
+
+20:01 years ago I avoided getting in wayos.
+20:02 
+
+20:02 Now I don't think now I don't think
+20:04 
+
+20:04 twice. I feel safer in a Whimo than not
+20:06 
+
+20:06 in one. Um what's your what's your point
+20:08 
+
+20:08 of view?
+20:09 
+
+20:09 >> Um super excited about it. Very bullish.
+20:11 
+
+20:11 I think uh it's been a long time coming.
+20:13 
+
+20:13 When I was in undergrad at Stanford,
+20:15 
+
+20:15 they were doing the first like DARPA
+20:16 
+
+20:16 Grand Challenge cars. So this is like 20
+20:18 
+
+20:18 plus years ago now.
+20:19 
+
+20:19 >> And like you said, Whimos have gone from
+20:21 
+
+20:21 kind of like prototype test to like I
+20:23 
+
+20:23 prefer Whimo, right? It's super
+20:25 
+
+20:25 consistent.
+20:26 
+
+20:26 >> Um you know, there's lots of things to
+20:28 
+
+20:28 like about it. So our view on it is
+20:30 
+
+20:30 autonomy happens and it actually
+20:32 
+
+20:32 increases the operational intensity of
+20:34 
+
+20:34 the world, right? So, if you think about
+20:35 
+
+20:35 it, there's like a third shift between
+20:37 
+
+20:37 midnight and 8 a.m. roughly, right? That
+20:40 
+
+20:40 people tend not to work because they're
+20:41 
+
+20:41 sleeping. Imagine if operations like
+20:44 
+
+20:44 logistics could still run during that
+20:46 
+
+20:46 shift, right?
+20:47 
+
+20:47 >> Um, and then same thing, imagine you're
+20:49 
+
+20:49 a field service technician, you need a
+20:50 
+
+20:50 part, like how amazing would it be if
+20:52 
+
+20:52 the part could just get delivered to
+20:53 
+
+20:53 you. Like that is something that's going
+20:55 
+
+20:55 to be a nice augment to operations. So,
+20:57 
+
+20:57 we're a fan of it. Um, our view on it is
+20:59 
+
+20:59 we think it's an and not not an or
+21:01 
+
+21:01 exclusive. Um, and it's it's interesting
+21:04 
+
+21:04 because typically when you see
+21:05 
+
+21:05 automation kick in, um, again, volume
+21:08 
+
+21:08 increases, right? Because costs come
+21:09 
+
+21:09 down, there's way more demand out there
+21:11 
+
+21:11 than people realize because sometimes
+21:13 
+
+21:13 you'll say, "Yeah, I could use that
+21:14 
+
+21:14 part, but I don't need to deliver it if
+21:16 
+
+21:16 it's going to cost 50 bucks for someone
+21:17 
+
+21:17 to drive it to me." Yeah. If it costs
+21:19 
+
+21:19 five bucks or or no bucks, like how
+21:21 
+
+21:21 awesome would that be? So, we kind of
+21:22 
+
+21:22 view it as like it will increase the
+21:24 
+
+21:24 speed that the world operates at.
+21:26 
+
+21:26 >> You think it's happen on roads only or
+21:28 
+
+21:28 you have customers with warehouses and
+21:29 
+
+21:29 forklifts and all the above? like you
+21:31 
+
+21:31 think autonomy will hit all those
+21:32 
+
+21:32 sectors.
+21:33 
+
+21:33 >> So I think autonomy already hit the
+21:35 
+
+21:35 warehouse. Um we have a lot of customers
+21:37 
+
+21:37 with big like you know logistics
+21:38 
+
+21:38 warehouses and really about 10 years ago
+21:41 
+
+21:41 they started getting automated in a
+21:42 
+
+21:42 meaningful way and it's pretty rare for
+21:44 
+
+21:44 me to go into like a um heavily you know
+21:48 
+
+21:48 industrialized environment without
+21:49 
+
+21:49 seeing automation. And that's everything
+21:51 
+
+21:51 from like lift systems to big arms
+21:53 
+
+21:53 moving things.
+21:54 
+
+21:54 >> And it actually is welcomed by the
+21:56 
+
+21:56 people in the warehouse because it helps
+21:58 
+
+21:58 reduce injury. So if you think about it,
+21:60 
+
+21:60 frontline workers are putting themselves
+22:01 
+
+22:01 at risk when they do their job every
+22:03 
+
+22:03 day. Yeah. It it is not a great outcome
+22:05 
+
+22:05 to get hurt lifting a pallet or, you
+22:07 
+
+22:07 know, doing something like that. So that
+22:09 
+
+22:09 is, I think, a good sort of um preview
+22:12 
+
+22:12 of what we're going to see out on the
+22:13 
+
+22:13 road. And then I think after that
+22:15 
+
+22:15 there's a construction site and job
+22:16 
+
+22:16 site.
+22:17 
+
+22:17 >> Yeah. Humanoids, yes or no?
+22:19 
+
+22:19 >> Uh cautiously optimistic. Little bit
+22:21 
+
+22:21 scary. I won't lie. They they feel like
+22:24 
+
+22:24 they're in that kind of creepy uncanny
+22:25 
+
+22:25 valley like when you see them walking
+22:27 
+
+22:27 around without heads or or hands or
+22:28 
+
+22:28 something. Um
+22:29 
+
+22:29 >> have you seen Neo for
+22:31 
+
+22:31 >> I have that that's a friendly one. Yeah.
+22:33 
+
+22:33 Um but I I think uh it's it reminds me
+22:36 
+
+22:36 of where self-driving was about 10 years
+22:37 
+
+22:37 ago. So probably not a tomorrow but it
+22:40 
+
+22:40 does feel inevitable. So as the
+22:41 
+
+22:41 capabilities increase uh it's going to
+22:43 
+
+22:43 be really exciting.
+22:44 
+
+22:44 >> Yeah.
+22:45 
+
+22:45 >> How does the role that Samsara plays in
+22:47 
+
+22:47 the world change as we have more and
+22:49 
+
+22:49 more autonomy over time? Well, I kind of
+22:52 
+
+22:52 think of it as digital transformation.
+22:53 
+
+22:53 So, if you zoom way out, that's what
+22:55 
+
+22:55 customers are are excited about is how
+22:57 
+
+22:57 do we digitize these operations that
+22:59 
+
+22:59 have been around 50, 100 years in some
+23:01 
+
+23:01 cases.
+23:02 
+
+23:02 >> And most of our customers, they welcome
+23:03 
+
+23:03 new technology. So, they adopted
+23:06 
+
+23:06 computers for, you know, route planning
+23:08 
+
+23:08 like in the 1970s or something like
+23:10 
+
+23:10 that. So, they're not against
+23:11 
+
+23:11 technology. It's is it going to help? Is
+23:13 
+
+23:13 it going to be relevant? So our take is
+23:15 
+
+23:15 you're going to want like a platform to
+23:17 
+
+23:17 see all of your operations for all of
+23:19 
+
+23:19 these different operations to interact.
+23:21 
+
+23:21 So you can see your frontline workers,
+23:23 
+
+23:23 you could see all your vehicles, you
+23:24 
+
+23:24 could see your assets, know what needs
+23:26 
+
+23:26 maintenance. All of these problems will
+23:28 
+
+23:28 will be evergreen. You're going to want
+23:29 
+
+23:29 to maintain your assets like 20, 30
+23:31 
+
+23:31 years from now. Maybe they're robots and
+23:33 
+
+23:33 maybe they move on their own, but they
+23:35 
+
+23:35 still need maintenance, for example. Um,
+23:37 
+
+23:37 and then same thing when you've got
+23:38 
+
+23:38 customerf facing or end customerf facing
+23:40 
+
+23:40 teams, you're still going to need to
+23:42 
+
+23:42 orchestrate hopefully thousands of
+23:44 
+
+23:44 people, right? And they may have help
+23:46 
+
+23:46 from robots and humanoids and all kinds
+23:48 
+
+23:48 of stuff behind the scenes, but how do
+23:50 
+
+23:50 you kind of run the entire operation? So
+23:52 
+
+23:52 that's what we focus on is the big
+23:53 
+
+23:53 picture as opposed to any specific
+23:55 
+
+23:55 product or technology.
+23:57 
+
+23:57 >> How do you see the future of humans and
+23:59 
+
+23:59 AI interacting in the physical world and
+24:02 
+
+24:02 in the industries that you serve?
+24:04 
+
+24:04 Well, I think they're getting closer and
+24:06 
+
+24:06 closer. So, 10 years ago when we started
+24:08 
+
+24:08 Simsara, most of our customers did run
+24:11 
+
+24:11 on a lot of like pen and paper process.
+24:13 
+
+24:13 Like 2015, it's it's not the distant
+24:15 
+
+24:15 past, right? Like it really has been a
+24:17 
+
+24:17 change that they've gone from pen and
+24:19 
+
+24:19 paper to apps. I think as AI kicks in,
+24:22 
+
+24:22 you see many of them like using um voice
+24:25 
+
+24:25 bots for a freight brokerage, right?
+24:27 
+
+24:27 Like that's a brand new phenomenon
+24:28 
+
+24:28 really in the last year
+24:30 
+
+24:30 >> and they've taken to it very quickly.
+24:31 
+
+24:31 It's automating tasks. So I kind of
+24:33 
+
+24:33 think of it as where are there where is
+24:35 
+
+24:35 there high task intensity a lot of like
+24:37 
+
+24:37 repetitive task work and can AI help?
+24:39 
+
+24:39 Absolutely. So that's where we're seeing
+24:41 
+
+24:41 like very high rates of adoption. Um I
+24:44 
+
+24:44 think the stuff that's not changing at
+24:45 
+
+24:45 least not yet is the physical work
+24:47 
+
+24:47 itself is still being done by people
+24:49 
+
+24:49 because it requires a lot of exception
+24:50 
+
+24:50 handling. So construction is a great
+24:52 
+
+24:52 example. So much diversity in
+24:54 
+
+24:54 construction. Um we are not to the point
+24:56 
+
+24:56 where you can automate it the way you
+24:57 
+
+24:57 could automate like car manufacturing
+24:59 
+
+24:59 for example. Do you think AI is, you
+25:02 
+
+25:02 know, you mentioned it's something that
+25:04 
+
+25:04 prevents risky behavior in humans? Um,
+25:06 
+
+25:06 are you also seeing it kind of coach
+25:08 
+
+25:08 humans in these operational environments
+25:11 
+
+25:11 to actually perform better?
+25:12 
+
+25:12 >> Yeah. So, um, you know, and first just
+25:15 
+
+25:15 thinking about risk, coaching makes a
+25:17 
+
+25:17 big difference. So, there's risk
+25:18 
+
+25:18 detection like you know, please put down
+25:20 
+
+25:20 your mobile phone, but then if it's a
+25:22 
+
+25:22 habit of yours, um, we actually want to
+25:24 
+
+25:24 coach you to help break the habit,
+25:26 
+
+25:26 right? And um if you kind of look at the
+25:29 
+
+25:29 impact we're able to have with
+25:30 
+
+25:30 customers, we often reduce risk like by
+25:33 
+
+25:33 75%. So you know threequarters of the
+25:35 
+
+25:35 risk comes out of the system maybe half
+25:37 
+
+25:37 of that can come from the automated like
+25:40 
+
+25:40 in the- moment inc cab alert and then
+25:42 
+
+25:42 the other half comes from coaching and
+25:44 
+
+25:44 then that same coaching can be applied
+25:45 
+
+25:45 to like fuel efficiency. You can
+25:47 
+
+25:47 actually train drivers to operate heavy
+25:49 
+
+25:49 equipment in really smart ways and you
+25:51 
+
+25:51 can gamify it, right? So that's the kind
+25:53 
+
+25:53 of like cool opportunity that AI has is
+25:55 
+
+25:55 process just enormous amounts of data,
+25:57 
+
+25:57 more data than any human could do. You
+25:60 
+
+25:60 look at patterns across thousands or
+26:01 
+
+26:01 millions of vehicles and then turn it
+26:03 
+
+26:03 into actionable insight. That's
+26:05 
+
+26:05 coaching. Um so you can apply it to
+26:07 
+
+26:07 safety, you can apply it to efficiency.
+26:08 
+
+26:08 It's it's pretty cool.
+26:10 
+
+26:10 >> What's the organizing principle of your
+26:12 
+
+26:12 uh product portfolio? You started from
+26:14 
+
+26:14 dash cams, it's expanded out from there.
+26:16 
+
+26:16 Yeah.
+26:16 
+
+26:16 >> Maybe just tell us the history of how
+26:17 
+
+26:17 the product portfolio has expanded and
+26:19 
+
+26:19 and how you see the future.
+26:20 
+
+26:20 >> Yeah. So we actually started with GPS
+26:22 
+
+26:22 tracking or telematics. So um 2015 dash
+26:25 
+
+26:25 cams were not quite viable yet. Um but
+26:29 
+
+26:29 >> because of the cost or
+26:30 
+
+26:30 >> um yeah cost and both like the back haul
+26:33 
+
+26:33 cost of bandwidth but also uh the cost
+26:35 
+
+26:35 of the cameras and things like that. But
+26:37 
+
+26:37 what was surprising to us was in 2015
+26:41 
+
+26:41 most of the operational environments we
+26:42 
+
+26:42 went into no one had any idea where
+26:44 
+
+26:44 their field teams were. Not in real
+26:46 
+
+26:46 time. And there was this like disconnect
+26:48 
+
+26:48 because Uber and Door Dash had started
+26:50 
+
+26:50 to happen, right? And so it was weird.
+26:52 
+
+26:52 The gig economy had real-time tracking,
+26:55 
+
+26:55 but then like the logistics, like long
+26:57 
+
+26:57 haul logistics economy was still getting
+26:59 
+
+26:59 like breadcrumbs like every 10 to I
+27:01 
+
+27:01 think it was like 5 to 15 minutes. And
+27:04 
+
+27:04 uh this probably predates most of the
+27:05 
+
+27:05 people who listen to to the show, but um
+27:08 
+
+27:08 there was this platform Map Quest that
+27:10 
+
+27:10 predated like Google Maps, right? So
+27:11 
+
+27:11 late '9s Map Quest, like vintage map,
+27:13 
+
+27:13 right?
+27:14 
+
+27:14 >> Sony wasn't around that. you'd have to
+27:16 
+
+27:16 you'd have to print out the map quest
+27:17 
+
+27:17 directions and then take your piece of
+27:19 
+
+27:19 paper to figure out where you were going
+27:21 
+
+27:21 >> and it was this kind of like grainy it
+27:22 
+
+27:22 looked like you know Minecraft level
+27:24 
+
+27:24 graphics. Um the the amazing part was
+27:26 
+
+27:26 our customers now back then were using
+27:29 
+
+27:29 Map Quest printouts and their system for
+27:32 
+
+27:32 uh GPS tracking was built on top of Map
+27:35 
+
+27:35 Quest. So I would go on site and I would
+27:36 
+
+27:36 say whoa we can help with this. So that
+27:38 
+
+27:38 was product number one was GPS tracking.
+27:40 
+
+27:40 Um that got uh that basically got us off
+27:43 
+
+27:43 the ground and and got us into
+27:45 
+
+27:45 customers. And from there we started
+27:47 
+
+27:47 figuring out well really the bigger
+27:50 
+
+27:50 challenge for them was managing risk
+27:51 
+
+27:51 because at that point in time it was
+27:53 
+
+27:53 mid2010s. People did have phones in
+27:55 
+
+27:55 their pockets and um they actually asked
+27:58 
+
+27:58 us we're getting into a lot of
+27:59 
+
+27:59 accidents. Do you have a dash cam you
+28:00 
+
+28:00 recommend that works well with your
+28:02 
+
+28:02 system?
+28:02 
+
+28:02 >> So we said if we built one for you would
+28:04 
+
+28:04 you use it? And they said yeah
+28:05 
+
+28:05 absolutely. So John, my co-founder,
+28:07 
+
+28:07 remember he went to like Amazon, ordered
+28:09 
+
+28:09 like a webcam, plugged it into the USB
+28:11 
+
+28:11 port, and like over the weekend wrote
+28:13 
+
+28:13 some code to get a basic webcam working.
+28:15 
+
+28:15 We brought it back to the customers the
+28:17 
+
+28:17 next week, they tried it, they loved it,
+28:19 
+
+28:19 and then we were watching the videos
+28:21 
+
+28:21 with them, and you could see as people
+28:22 
+
+28:22 were getting to accidents, they like had
+28:24 
+
+28:24 their phone out, right?
+28:25 
+
+28:25 >> And so we said, could we build a
+28:27 
+
+28:27 detection for that? So that's where the
+28:28 
+
+28:28 AI part of the dash cam came from. It's
+28:30 
+
+28:30 very iterative. Um, and that has now
+28:32 
+
+28:32 become our largest product, but it's
+28:34 
+
+28:34 sold with the the first product. So, you
+28:36 
+
+28:36 asked about the the kind of portfolio
+28:38 
+
+28:38 strategy. It's concentric circles. It's
+28:40 
+
+28:40 keep doing what we started with. Um,
+28:42 
+
+28:42 core use case, adjacent use case. What
+28:45 
+
+28:45 else can we do? What else can we do?
+28:46 
+
+28:46 What else can we do? And now we have
+28:47 
+
+28:47 about 10 products out there.
+28:49 
+
+28:49 >> Really cool. You mentioned kind of the
+28:51 
+
+28:51 back haul and and network bandwidth
+28:53 
+
+28:53 being a binding constraint. I'm curious
+28:55 
+
+28:55 if you think the growing adoption of
+28:57 
+
+28:57 Starlink and just you know internet
+28:59 
+
+28:59 everywhere is going to change what it's
+29:00 
+
+29:00 possible to do in the physical world.
+29:02 
+
+29:02 >> Um absolutely. So we started Samsara
+29:06 
+
+29:06 right around the 3G 4G transition and
+29:09 
+
+29:09 the unlock was actually um YouTube
+29:12 
+
+29:12 right. So if you remember 2015 everyone
+29:14 
+
+29:14 was like starting to watch YouTube and
+29:16 
+
+29:16 baseball games and stuff on their phone.
+29:18 
+
+29:18 That drove data consumption way up on
+29:19 
+
+29:19 the carrier. the marginal cost per
+29:21 
+
+29:21 gigabyte came way down and we were able
+29:24 
+
+29:24 to piggyback on that right and so that
+29:26 
+
+29:26 was really cool. I think something
+29:27 
+
+29:27 similar is happening now not just with
+29:29 
+
+29:29 5G which is like the networks have
+29:31 
+
+29:31 invested even more. Yeah.
+29:32 
+
+29:32 >> Um but now with satellite right like the
+29:35 
+
+29:35 cost of building Starlink is enormous
+29:37 
+
+29:37 like I don't know how much is being
+29:38 
+
+29:38 spent on it's like many tens of billions
+29:40 
+
+29:40 right and launch capacity and know so on
+29:43 
+
+29:43 >> but the marginal cost to add another
+29:45 
+
+29:45 device to Starlink is pretty low right
+29:47 
+
+29:47 and that's like the cost for any network
+29:49 
+
+29:49 effect. Um so we're excited about that
+29:51 
+
+29:51 because it'll help us get that last like
+29:53 
+
+29:53 1% of coverage. Um, and a lot of our
+29:55 
+
+29:55 customers are in super remote rural
+29:57 
+
+29:57 areas. Um, like we have a lot of
+29:59 
+
+29:59 customers in energy like oil and gas.
+30:01 
+
+30:01 Yeah.
+30:01 
+
+30:01 >> There there are no roads where they
+30:02 
+
+30:02 operate and so there's not that much
+30:04 
+
+30:04 cellular coverage either.
+30:05 
+
+30:05 >> Do you think that does away with some of
+30:07 
+
+30:07 the constraints of running AI on the
+30:09 
+
+30:09 edge? Uh, meaning like today you can
+30:11 
+
+30:11 only use some percentage of you can only
+30:13 
+
+30:13 stream back some percentage of data and
+30:15 
+
+30:15 you do a lot of onboard compute.
+30:17 
+
+30:17 >> Yeah. Yeah.
+30:17 
+
+30:17 >> In a world of just internet everywhere
+30:19 
+
+30:19 where it's just a lot faster and cheaper
+30:21 
+
+30:21 to to send all data back and forth,
+30:23 
+
+30:23 could you be doing a lot of it server
+30:25 
+
+30:25 side and could you be doing a lot more?
+30:27 
+
+30:27 >> You could do more of it, but it's funny
+30:29 
+
+30:29 how like when stuff gets cheaper, you
+30:31 
+
+30:31 find a way to do more, right? And so
+30:33 
+
+30:33 when I think it's like a compression
+30:35 
+
+30:35 problem, right? Like and if the workload
+30:38 
+
+30:38 was static, like if you were just trying
+30:39 
+
+30:39 to get GPS data into the cloud, yes,
+30:41 
+
+30:41 just stream it all, right? Like it's not
+30:42 
+
+30:42 a big deal. If you're trying to get one
+30:44 
+
+30:44 frame per second video from an outward
+30:46 
+
+30:46 facing camera in the cloud, no problem.
+30:48 
+
+30:48 But if you want HD video from a 360 view
+30:50 
+
+30:50 of a truck, like eight cameras,
+30:52 
+
+30:52 >> that's a lot of video. Um, and then same
+30:55 
+
+30:55 thing if you want it with all the other
+30:56 
+
+30:56 telemetry that we get, it becomes pretty
+30:59 
+
+30:59 big. So I think you could potentially do
+31:01 
+
+31:01 it.
+31:02 
+
+31:02 >> Um, but if you can push some of that to
+31:04 
+
+31:04 the edge and and kind of like compress
+31:06 
+
+31:06 it down, everyone benefits from it. H do
+31:09 
+
+31:09 you think controls and autonomy could
+31:11 
+
+31:11 ultimately be running in the cloud or
+31:13 
+
+31:13 you think that's something people always
+31:14 
+
+31:14 want to run on device?
+31:16 
+
+31:16 >> That one I think you're probably going
+31:18 
+
+31:18 to see edge compute for a long time. Um
+31:20 
+
+31:20 and actually if we kind of go a little
+31:22 
+
+31:22 technical for a second, one of the
+31:24 
+
+31:24 challenges there has been around power
+31:25 
+
+31:25 and compute and cost, right? So if you
+31:27 
+
+31:27 think about like a Tesla full
+31:28 
+
+31:28 self-driving computer, it's a couple
+31:30 
+
+31:30 thousand bucks. It takes many hundreds
+31:32 
+
+31:32 of watts of energy and they're like the
+31:34 
+
+31:34 first company to be making it really
+31:36 
+
+31:36 practical at at scale. Whimo's probably
+31:38 
+
+31:38 a bit more.
+31:39 
+
+31:39 >> Um, and so I do think that we will
+31:42 
+
+31:42 continue to see those sorts of
+31:43 
+
+31:43 approaches because safety is like such a
+31:45 
+
+31:45 big deal. Like you've got humans in the
+31:47 
+
+31:47 cab, you've got humans on the road. Um,
+31:49 
+
+31:49 you don't want like, you know, a network
+31:51 
+
+31:51 outage to like affect, you know,
+31:53 
+
+31:53 people's lives.
+31:54 
+
+31:54 >> Yeah. If we're sitting here in 2030,
+31:56 
+
+31:56 what do you think is the biggest way
+31:58 
+
+31:58 that
+31:58 
+
+31:58 >> AI has transformed the physical world
+32:00 
+
+32:00 and physical operations?
+32:02 
+
+32:02 >> I think a couple of thoughts. One is
+32:04 
+
+32:04 we're pretty early, right? right? We're
+32:06 
+
+32:06 at the end of 2025. The sort of AI
+32:09 
+
+32:09 adoption curve in physical operations,
+32:11 
+
+32:11 we're still at the base of it.
+32:13 
+
+32:13 >> And so by 2030, I think we'll have run
+32:15 
+
+32:15 up the curve where be much more
+32:17 
+
+32:17 mainstream in the same way that like
+32:19 
+
+32:19 using apps is much more mainstream now
+32:20 
+
+32:20 than it was 5 10 years ago. Um so I
+32:23 
+
+32:23 think you'll see the current
+32:24 
+
+32:24 technologies basically experience a lot
+32:26 
+
+32:26 more diffusion like get out there. I
+32:28 
+
+32:28 think we're going to see net new
+32:29 
+
+32:29 technologies. Like I'm super excited
+32:31 
+
+32:31 about augmented reality and wearables.
+32:33 
+
+32:33 Like that's going to make a huge
+32:34 
+
+32:34 difference to frontline workforces where
+32:36 
+
+32:36 they have to have their hands free
+32:37 
+
+32:37 >> and it brings AI like into their ear. A
+32:39 
+
+32:39 lot of folks have AirPods in, right? Um
+32:41 
+
+32:41 but having like sort of visual feedback,
+32:44 
+
+32:44 being able to run like a VLM to
+32:46 
+
+32:46 understand what's going on in the
+32:47 
+
+32:47 environment that will be possible in
+32:49 
+
+32:49 2030. It's not quite possible yet, but
+32:52 
+
+32:52 you can just feel it. It's like right on
+32:53 
+
+32:53 the cusp.
+32:55 
+
+32:55 >> Maybe it'll be glasses. It'll maybe
+32:57 
+
+32:57 it'll be some of these new devices that
+32:58 
+
+32:58 are under the wraps that that probably
+33:00 
+
+33:00 communicate with. Yeah.
+33:02 
+
+33:02 >> What's your favorite personal use of AI?
+33:04 
+
+33:04 >> Personal use of AI.
+33:06 
+
+33:06 >> Um well, I love the the sort of voice
+33:08 
+
+33:08 models like I talk to AI like whenever
+33:11 
+
+33:11 I'm driving to or from work like I'm I'm
+33:13 
+
+33:13 chatting with it and it's not always
+33:14 
+
+33:14 about anything specific like it's kind
+33:16 
+
+33:16 of whatever's on my mind. So, I love
+33:18 
+
+33:18 that.
+33:19 
+
+33:19 >> Um I've become a big fan of like chat
+33:21 
+
+33:21 GPT pulse for example. like it's just
+33:24 
+
+33:24 cool that it tells you about for me
+33:25 
+
+33:25 events that are happening in the Bay
+33:27 
+
+33:27 Area. I've got three kids stuff it kind
+33:29 
+
+33:29 of knows its interest, right? So that
+33:31 
+
+33:31 the whole idea that AI could um know you
+33:34 
+
+33:34 better than you to some extent is really
+33:36 
+
+33:36 profound.
+33:37 
+
+33:37 >> Um so I love that on the personal side
+33:38 
+
+33:38 it kind of exposes us new experiences
+33:40 
+
+33:40 that we wouldn't have known about like
+33:42 
+
+33:42 you know a music performance or
+33:44 
+
+33:44 something like that that my kids would
+33:45 
+
+33:45 like.
+33:46 
+
+33:46 >> Yeah. Yeah. How much of the value that
+33:48 
+
+33:48 you give customers do you think is
+33:49 
+
+33:49 thanks to AI versus thanks to all the
+33:52 
+
+33:52 other technology that you're building?
+33:55 
+
+33:55 >> It's an interesting question. Um, we
+33:57 
+
+33:57 don't really like split it out because
+33:59 
+
+33:59 like there's value in the data, but if
+34:02 
+
+34:02 no one looks at the data, it it doesn't
+34:04 
+
+34:04 have impact, right? So, one of the
+34:06 
+
+34:06 things we've heard from customers is
+34:07 
+
+34:07 this concern about data overload. Like
+34:09 
+
+34:09 if you have sensor streams from every
+34:12 
+
+34:12 vehicle and every frontline worker and
+34:13 
+
+34:13 every asset, what do you do with it all?
+34:15 
+
+34:15 Right? And so AI is pretty awesome in
+34:17 
+
+34:17 terms of really helping just distill
+34:19 
+
+34:19 that down to something actionable. So
+34:21 
+
+34:21 that's why I don't think you can like
+34:22 
+
+34:22 split the two apart anymore. Um but it's
+34:25 
+
+34:25 transformative. It's gamechanging. And I
+34:27 
+
+34:27 spent a lot of time on the road. Like
+34:28 
+
+34:28 last week I was in um Texas, like all
+34:31 
+
+34:31 over um big food distributor, big oil
+34:34 
+
+34:34 and gas company. Uh spent time with like
+34:36 
+
+34:36 the Home Depot. And it's just cool
+34:38 
+
+34:38 hearing how they're using the data in
+34:40 
+
+34:40 such creative ways and um ones that they
+34:42 
+
+34:42 didn't have on their sort of uh roadmap
+34:44 
+
+34:44 when they started with us, but they're
+34:46 
+
+34:46 like, "Hey, if we can use this data to
+34:48 
+
+34:48 help do time card punches, right? Like
+34:51 
+
+34:51 get someone started on their shift and
+34:52 
+
+34:52 they don't have to walk to the office,
+34:53 
+
+34:53 that's awesome." Or if we can share this
+34:55 
+
+34:55 data with our end customer and let them
+34:57 
+
+34:57 know we're almost there or we're
+34:58 
+
+34:58 delayed, that's pretty cool. So it's
+35:00 
+
+35:00 really neat to see these emergent use
+35:02 
+
+35:02 cases.
+35:02 
+
+35:02 >> Really cool. It's it's great to dream on
+35:05 
+
+35:05 all the way that AI can kind of seep
+35:06 
+
+35:06 into all these different workflows and
+35:09 
+
+35:09 everyday lives.
+35:10 
+
+35:10 >> Yeah. And it's never any one thing.
+35:11 
+
+35:11 That's what I love about this is like
+35:13 
+
+35:13 every quarter we get exposed to some new
+35:15 
+
+35:15 use case. And a lot of it is um just you
+35:18 
+
+35:18 spend time with the customer, you
+35:20 
+
+35:20 understand their operation and then you
+35:22 
+
+35:22 come up with like hey if we did that
+35:23 
+
+35:23 would like would a voice bot that made
+35:26 
+
+35:26 uh ETA delivery phone calls be useful to
+35:28 
+
+35:28 you?
+35:29 
+
+35:29 >> And many of our customers don't even
+35:30 
+
+35:30 know that's possible. They've never
+35:41 
+
+35:41 >> curious and your point of view on you
+35:44 
+
+35:44 know there's so much talk of us versus
+35:46 
+
+35:46 China geopolitics and our industrial
+35:49 
+
+35:49 base really needs to catch up or
+35:51 
+
+35:51 robotics or manufacturing or physical AI
+35:53 
+
+35:53 really needs to catch up.
+35:54 
+
+35:54 >> I'm curious if you've seen that actually
+35:56 
+
+35:56 accelerate customer conversations or
+35:58 
+
+35:58 have an impact on your business in any
+35:59 
+
+35:59 way.
+36:01 
+
+36:01 not in my customer conversations. I do
+36:03 
+
+36:03 think there's this like palpable sense
+36:05 
+
+36:05 of we need to modernize and like how do
+36:07 
+
+36:07 we how do we just rethink the way the
+36:10 
+
+36:10 infrastructure runs. So many of our
+36:12 
+
+36:12 customers are involved in data center
+36:13 
+
+36:13 buildouts right now. Um they're the
+36:15 
+
+36:15 energy utility, they're the construction
+36:16 
+
+36:16 company like there's a lot going on
+36:18 
+
+36:18 there and I think that has everyone
+36:20 
+
+36:20 thinking okay what does this mean for us
+36:22 
+
+36:22 and like what should be different about
+36:24 
+
+36:24 our business? So there's a lot of
+36:25 
+
+36:25 introspection going on. I haven't gotten
+36:27 
+
+36:27 the sense it's like US versus China, but
+36:29 
+
+36:29 it's more of like could we do this
+36:30 
+
+36:30 differently now? We're like firmly in
+36:32 
+
+36:32 the 21st century, right? Like it's what
+36:34 
+
+36:34 should be different now than the way
+36:36 
+
+36:36 that like you know previous generations
+36:38 
+
+36:38 ran these operations?
+36:39 
+
+36:39 >> Wonderful.
+36:41 
+
+36:41 >> You've been a multi-time legendary
+36:43 
+
+36:43 founder. Uh any advice for for young
+36:46 
+
+36:46 technical founders who are out building
+36:48 
+
+36:48 an AI right now?
+36:50 
+
+36:50 >> I think it's an amazing time to build
+36:52 
+
+36:52 whether you've done this before or
+36:53 
+
+36:53 you're starting it for the first time.
+36:55 
+
+36:55 like
+36:55 
+
+36:55 >> just the tools that are available um
+36:58 
+
+36:58 it's incredible and like to some extent
+37:01 
+
+37:01 um you know everything's getting
+37:03 
+
+37:03 magnified or amplified right so I think
+37:05 
+
+37:05 about whether it's codecs or cursor or
+37:09 
+
+37:09 all these like automated coding tools if
+37:11 
+
+37:11 you have an idea now you can like sort
+37:13 
+
+37:13 of manifest it into something real so
+37:16 
+
+37:16 much more easily than when we started
+37:18 
+
+37:18 Samar even when we started Moroi like
+37:19 
+
+37:19 back then we were like racking ser we'd
+37:21 
+
+37:21 like buy servers from Dell and like take
+37:23 
+
+37:23 them to the data center and set Like can
+37:25 
+
+37:25 you imagine? It's just like how slow
+37:26 
+
+37:26 that feels now.
+37:27 
+
+37:27 >> I can't even imagine that.
+37:28 
+
+37:28 >> It's actually hard to imagine. And but
+37:30 
+
+37:30 that is happening and we will look back
+37:32 
+
+37:32 10 years from now and say can you
+37:33 
+
+37:33 believe we did X, right? And I don't
+37:35 
+
+37:35 even know what X is but it will feel so
+37:37 
+
+37:37 different. So it's fun to be on these
+37:39 
+
+37:39 like exponential curves and the best
+37:41 
+
+37:41 place to be on that is to be building,
+37:43 
+
+37:43 right? Yeah.
+37:44 
+
+37:44 >> Really cool. Thank you so much for
+37:45 
+
+37:45 taking the time to share your story and
+37:47 
+
+37:47 what you all are up to on the AI side at
+37:49 
+
+37:49 Samsara.
+37:49 
+
+37:49 >> Thanks. Thanks for having me.

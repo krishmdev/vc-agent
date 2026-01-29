@@ -1,0 +1,868 @@
+00:00 a lesson that I've seen people learn
+00:02 over and over again in this field is
+00:04 like you know we we think that we can do
+00:06 things that are smarter than what the
+00:07 models do by writing it ourselves but as
+00:10 the field progresses the models come up
+00:12 with um better solutions to things than
+00:13 humans do the like probably like number
+00:15 one lesson of machine learning is like
+00:17 you get what you optimize for and so um
+00:19 if you if you're able to set up the
+00:21 system such that you can optimize
+00:22 directly for the outcome that you're
+00:24 looking for um the results are going to
+00:26 be much much better than if you sort of
+00:27 try to glue together models that are not
+00:29 optimized end end for for the the tasks
+00:31 that you're trying to have them do so my
+00:34 like like long-term guidance is that um
+00:36 you know I think like reinforcement
+00:38 learning um tuning on top of models is
+00:41 probably going to be a critical part of
+00:42 how the most powerful agents get built
+01:02 we're excited to welcome Issa fulford
+01:04 and Josh Tobin who lead the Deep
+01:05 research product at openai Deep research
+01:08 launched 3 weeks ago and has quickly
+01:10 become a hit product used by many Tech
+01:12 luminaries like the cisin for everything
+01:14 from industry analysis to medical
+01:16 research to birthday party planning deep
+01:19 research was trained using endtoend
+01:20 reinforcement learning on hard browsing
+01:22 and reasoning tasks and is the second
+01:25 product in a series of agent lunches
+01:26 from openai with the first being
+01:28 operator we talked to ISA and Josh about
+01:31 everything from Deep researchers use
+01:32 cases to how the technology Works under
+01:34 the hood to what we should expect in
+01:36 future agent lunches from open AI Issa
+01:39 and Josh welcome to the
+01:41 show thank you thank you so much for
+01:43 joining us excited to be here thank you
+01:45 for having us um so maybe let's start
+01:47 with like what is deep research tell us
+01:49 about the origin stories and what this
+01:50 product is doing so deep research is a
+01:54 agent that is able to search many online
+01:58 websites and it can create very
+02:00 comprehensive reports um it can do tasks
+02:03 that would take humans many hours to
+02:04 complete and it's in chat gbt and it
+02:07 takes like 5 to 30 minutes to to answer
+02:09 you and so it's able to do much more
+02:11 in-depth research and answer your
+02:13 questions with much more detail um and
+02:15 specific sources than regular chat gbt
+02:17 response would be able to do it's one of
+02:20 the first agents that we've released so
+02:22 we released operator um pretty recently
+02:24 as well and so um deep research is the
+02:27 second agent and you know we'll release
+02:29 many more in um in future what's the
+02:32 origin story behind deep research like
+02:34 when did you choose to do this what was
+02:36 the inspiration and how many people work
+02:37 on it like what what did it take to
+02:39 bring this to poition good question this
+02:40 is before my time so to hear yeah so I
+02:44 think um maybe around a year ago we were
+02:47 seeing a lot of success internally with
+02:49 um this new reasoning Paradigm and
+02:52 training uh models to think before
+02:54 responding and we were focusing a lot on
+02:58 um Math and Science domains but I think
+02:60 that that the other thing that this kind
+03:01 of new reasoning model um regime unlocks
+03:05 is the ability to do longer Horizon
+03:07 tasks that involve like AG gench kind of
+03:10 you know abilities and so we thought you
+03:13 know a lot of people do tasks that
+03:15 require a lot of online research or a
+03:17 lot of external context and that
+03:20 involves a lot of reasoning and
+03:21 discriminating between sources and you
+03:23 have to be quite creative to do those
+03:24 kinds of things and I think we finally
+03:26 had models or a way of training models
+03:29 um that would allow us to to be able to
+03:32 um tackle some of those tasks so we
+03:34 decided to try and start training models
+03:37 to um do first browsing tasks so using
+03:40 like the same methods that we used to
+03:42 train reasoning models but on more real
+03:43 world tasks was it your idea and Josh
+03:46 how did you get involved at first uh it
+03:48 was like me and Yos ptil um who as our
+03:51 opening ey is working on a a similar um
+03:54 project that will be released at some
+03:56 point which we very excited about um and
+03:58 we we built an original
+04:01 um and then also with Thomas Dimson
+04:03 who's one of those people who just is an
+04:06 amazing engineer like will dive into
+04:09 anything and just you know get loads of
+04:10 things on so it was very fun yeah and I
+04:13 I joined more recently I uh rejoined
+04:15 opening I about six months ago um uh
+04:18 from my startup I was uh out opening ey
+04:20 in the early days and um was looking
+04:22 around the projects um when I rejoined
+04:24 and got very interested in some of our
+04:26 HMT efforts including this one and uh
+04:29 and got involved through that
+04:30 amazing well tell us a little about who
+04:32 you built it for yeah I mean it's it's
+04:34 really for anyone who does knowledge
+04:36 work as part of their um as part of
+04:38 their day-to-day job or really as part
+04:40 of their life um so we're seeing uh a
+04:43 lot of the usage come from people using
+04:45 it for work um doing things like uh you
+04:48 know research as part of their jobs um
+04:51 for uh you know understanding U markets
+04:55 companies uh real estat a lot of
+04:59 scientific research medical I think
+05:01 we've seen a lot of U medical examples
+05:03 as well um and and one of the things
+05:05 we're really excited about as well is um
+05:07 you this this style of like uh I just
+05:10 need to go out and spend many hours
+05:11 doing something that um you know where I
+05:13 have to do a bunch of web searches and
+05:15 Cate a bunch of information is not just
+05:16 a work thing but it's also um useful for
+05:19 shopping and uh travel as well so we're
+05:22 excited for the the plus launch so that
+05:24 more people will be able to try deep
+05:26 research and maybe we'll see some new
+05:27 use cases as well it's definitely one of
+05:29 the products I've used the most over the
+05:30 last couple weeks it's been amazing
+05:32 using it for work for work definitely
+05:34 also for fun like what are you using it
+05:35 for oh for me oh my goodness um so I was
+05:38 thinking about buying a new car and I
+05:40 was trying to figure out when the next
+05:41 model was going to be released for the
+05:42 car and there's all these speculative
+05:44 blog posts like there's patterns from
+05:46 the manufacturer and so I asked deep
+05:47 research can you break down all the
+05:50 gossip about this car and then all of
+05:52 the facts about what they've done what
+05:54 this automakers in before and it put
+05:56 together an amazing report that told me
+05:57 maybe wait a couple months but this year
+06:00 like in the next few months it should
+06:01 come out yeah like one of the things
+06:03 that's really cool about it is it's it's
+06:05 uh like it's not just for going Broad
+06:06 and Gathering all of the information
+06:08 about a source but it's also really good
+06:10 at finding like very obscure like weird
+06:13 facts on the internet um like if you
+06:15 have something very specific you want to
+06:17 know that you might might not just turn
+06:18 up in the first page of search results
+06:20 it's good at that kind of thing too so
+06:21 that's cool what are some of the
+06:23 surprising use cases that you've seen o
+06:26 I think the thing I've been most
+06:28 surprised by is how many people are
+06:30 using it for coding yeah um which wasn't
+06:33 really a use case i' considered but I've
+06:34 seen a lot of people on Twitter and in
+06:37 various places where we get feedback
+06:39 using it for coding and code search and
+06:41 also for finding the latest
+06:44 documentation on a certain package or
+06:45 something and helping them write a
+06:46 script or something so yeah I'm like I'm
+06:48 kind of embarrassed that we didn't think
+06:50 of that as a use case because it's like
+06:51 you know for chbt users it seems so
+06:53 obvious but um it's I know it's
+06:55 impressive how well it works how do you
+06:57 think the balance of business versus
+06:58 individual use case will will evolve
+07:00 over time like you mentioned the plus
+07:02 launch that's happening you know in a
+07:05 year's time or two years time would you
+07:06 guess this is mostly a business tool or
+07:08 mostly a consumer tool I would say
+07:10 hopefully both uh I think it's a pretty
+07:13 General um capability which and I think
+07:16 it's something that we do both in work
+07:18 and in personal life so yeah I'm excited
+07:20 about both I think the the magic of it
+07:22 is like um it just saves people a lot of
+07:25 time um you know if there's uh something
+07:29 that might have taken you hours or in
+07:30 some cases we've heard like days um
+07:33 people can just put it in here and get
+07:34 you know 90% of what they would have
+07:37 come out up with on their own um and so
+07:41 yeah I I tend to think there's like
+07:43 there's more tasks like that in uh
+07:45 business than there are in personal but
+07:48 I mean I think for sure it's going to be
+07:49 part of people's lives and both yeah
+07:52 it's really become the majority of my
+07:53 uses for CHC I just always pick deep
+07:55 research rather than normal so what are
+07:58 you saying in terms of consumer use
+07:59 cases and what are you excited about I
+08:01 think a lot of shopping travel
+08:05 recommendations um I've personally used
+08:08 the model a lot I've been using it for
+08:10 months to do these kinds of things um we
+08:12 were in Japan for the for the launch of
+08:15 deep research so it was very helpful and
+08:16 finding restaurants with very specific
+08:19 requirements and finding things that I
+08:21 wouldn't have like necessarily found
+08:23 yeah and I found it like when you have
+08:25 um something it's like the kind of thing
+08:28 where you know if you're shopping maybe
+08:30 for something expensive or you're
+08:31 planning a trip that uh is special or
+08:33 you want to spend a lot of uh uh that
+08:37 you're you want to spend a lot of time
+08:38 thinking about it's like for me you know
+08:41 I might go and spend hours and hours
+08:43 like trying to read everything on the
+08:45 internet about this one this product
+08:46 that I'm interested in buying um like
+08:49 scouring all the reviews and uh the
+08:51 forums and stuff like that and deep
+08:53 research can put together um kind of
+08:55 like something like that very quickly
+08:58 and so it's it's really useful for that
+08:59 that kind of thing the model is also
+09:01 very good at instruction following so if
+09:03 you have a query with many different
+09:06 parts or many different
+09:07 questions so if you don't you want the
+09:10 information about the product but you
+09:11 also want comparisons to all other
+09:13 products and you also want um
+09:15 information information about reviews
+09:17 from you know Reddit or something like
+09:20 that you can give loads of different
+09:21 requirements and it will do all of them
+09:23 for you yeah another another uh tip is
+09:25 like just ask it to format it in in a
+09:28 table it will usually do that anyway but
+09:30 it's uh like if you it's really helpful
+09:32 to have like a table with a bunch of
+09:34 citations and things like that um for
+09:36 all the categories of things that you
+09:37 want to research yeah there are also
+09:39 some features that hopefully we get into
+09:40 the product at some point but the model
+09:41 is able to the underlying model is able
+09:44 to embed images so it can find images of
+09:46 the products um and it's also this is
+09:49 not a consumer use case but it's able to
+09:52 create graphs as well and then embed
+09:54 those in its response so hopefully that
+09:56 will come to chbt soon as well nerdy
+09:59 cons use case yeah yeah well and
+10:02 speaking of nerdy consumer use cases uh
+10:05 also like personal personalized
+10:07 education is a really interesting use
+10:09 case like if there's if there's a topic
+10:11 that you've been meaning to learn about
+10:12 um you know if you uh uh need to brush
+10:15 up on your your biology or uh or you
+10:18 know you want to learn about like um
+10:20 like like some some world event it's um
+10:22 it's really good at you know put put in
+10:24 all the information about um what you
+10:26 feel like you don't understand what
+10:28 aspects of it you wanted to go do
+10:29 research on it and it'll put together a
+10:30 nice report for you one of my friends is
+10:33 considering starting a cpg company and
+10:36 he's been using it so much to find
+10:39 similar products to see if specific um
+10:41 names are already you know the domains
+10:44 already taken Market sizing like all of
+10:47 these different things um so that's been
+10:49 that's been fun to he'll share the
+10:50 reports with me and I'll read them so
+10:52 it's been pretty fun to see another like
+10:53 fun use case is that it's really good at
+10:55 finding like a single like obscure fact
+10:58 on the internet like if there's like a
+11:00 uh you know like a an obscure TV show or
+11:03 something um that you want to you know
+11:06 to like find like one particular episode
+11:08 of of or something like that it'll go
+11:10 and it'll go deep and uh find the like
+11:12 one reference to it on the web oh yeah
+11:15 my my brother's friend's dad had this
+11:17 very
+11:18 specific fact um it was about some
+11:23 Austrian General who was in power during
+11:25 a certain a death of someone during a
+11:27 battle like a very Niche question and
+11:30 apparently chat gbt had previously
+11:31 answered it wrong and he was very sure
+11:33 that it was wrong so he went to the
+11:34 public library and found a record and
+11:36 found that it was wrong and so then um
+11:38 deep research was able to get it right
+11:40 so we sent it to him and he was he was
+11:42 excited um what is the rough mental
+11:45 model for you know what deep research is
+11:47 excellent at today and uh you know where
+11:50 should people be using the O Series of
+11:53 models where should where should they be
+11:55 using deep research what deep research
+11:57 really excels at is if you have a sort
+12:00 of detailed description of what you want
+12:03 and in order to get the best possible
+12:05 answer requires reading a lot of the
+12:07 internet um if you have kind of like
+12:10 more of a a vag question um it'll help
+12:13 you kind of clarify what you want but
+12:15 it's I mean it's it's really at its best
+12:16 when there's like a specific set of
+12:18 information that you're looking for and
+12:20 I think it's it's very good at
+12:22 synthesizing information at encounters
+12:24 it's very good at finding um specific
+12:27 like hard to find information um but
+12:30 it's maybe less and it can make kind of
+12:33 some new insights I guess from what it
+12:35 from what it encounters but I don't
+12:37 think it's NE it's not making new
+12:39 scientific discoveries yet um and then I
+12:42 think using the O Series model for for
+12:46 me if I'm asking for something to do
+12:48 with coding usually it doesn't require
+12:52 knowledge outside of what the model
+12:53 already knows from it like pre-training
+12:56 so you would usually use 01 Pro or o1
+12:59 for coding or3 mini high and so deep
+13:03 research are a great example of where
+13:05 some of the new product directions for
+13:06 open AI are going I'm curious how to the
+13:09 extent you can share how does it work
+13:12 the model that powers deep research um
+13:14 is a fine-tune version of 03 which is
+13:16 our most advanced um reasoning model and
+13:20 we specifically trained it on um hard
+13:23 browsing tasks that we collected as well
+13:26 as um reason other reasoning tasks and
+13:29 so
+13:30 it also has access to a browsing tool
+13:32 and python tool so through training um
+13:35 end to end on those tasks it learned
+13:37 like strategies to to solve them um and
+13:40 the resulting resulting models good at
+13:43 online search and Analysis yeah and like
+13:45 intuitively the way you can think about
+13:46 it is um you make this sort of this
+13:50 request ideally a detailed request about
+13:52 what you want the model thinks hard
+13:53 about that um it searches for
+13:55 information it pulls that information
+13:57 and it reads it um it understands how it
+13:60 relates to that request and then decides
+14:02 um what to search for next in order to
+14:04 get kind of closer to the final answer
+14:05 that you want um and it's trained to do
+14:08 a good job of pulling together um all of
+14:10 those all that information into a nice
+14:12 tidy report um with citations that point
+14:15 back the original information that I
+14:16 found yeah I think what's new about deep
+14:20 research as an agent at capability is
+14:24 that because we have the ability to
+14:26 train end to end there are a lot of
+14:28 things that uh that you have to do in
+14:30 the process of doing research that you
+14:32 couldn't really predict beforehand so I
+14:34 don't think it's possible to write some
+14:36 kind of language model program or script
+14:38 that would be as flexible as what the
+14:41 model's able to learn through training
+14:42 where where it's actually reacting to
+14:44 live web information and based on
+14:46 something it sees it has to make it
+14:48 change its strategy and um things like
+14:50 that so we actually see it doing pretty
+14:52 creative searches um you you can read
+14:55 the The Chain of Thought summary and I'm
+14:56 sure you can see sometimes it it's very
+14:59 um very smart about how it how it comes
+15:01 up with the next thing to look for so
+15:03 John Carlson had a tweet that went
+15:05 somewhat viral you know how much of the
+15:07 magic of deep research is you know real
+15:09 time access to web content and how much
+15:13 of the magic is in kind of Chain of
+15:15 Thought uh can can you maybe shed some
+15:17 light on that um I think it's definitely
+15:22 a combination I think you can see that
+15:24 because there are other sear products
+15:26 that don't um necessarily they weren't
+15:28 trained ENT and so um won't be as
+15:32 flexible in responding to um you
+15:36 responding to information and accounts
+15:37 won't be as creative about how to solve
+15:40 specific problems because they weren't
+15:41 specifically trained for that purpose um
+15:44 so it's definitely a combination I mean
+15:45 it's a fine tun version of 03 O3 is a
+15:47 very smart and Powerful Model A lot of
+15:50 the analysis capability um is also from
+15:53 the underlying 03 model training um but
+15:57 so I think it's definitely a combination
+15:59 before open AI um was working at a
+16:02 startup and uh we were uh dabbling and
+16:05 building agents um kind of the way that
+16:08 I see most people describe building
+16:10 agents on on uh on the internet um which
+16:13 is essentially you know you uh you
+16:15 construct this graph of operations and
+16:18 some of the nodes in that graph are
+16:19 language models um and so you can the
+16:21 language model can decide what to do
+16:22 next but the overarching logic of the
+16:25 you know sequence of steps that H uh
+16:27 that happen is defined by a human and um
+16:30 what we found is that it's really it's
+16:32 like powerful way of building things to
+16:34 get quickly to a prototype but um it
+16:37 falls down pretty quickly in the real
+16:38 world because it's very hard to
+16:40 anticipate all the scenarios um that the
+16:43 model might face and think about all the
+16:45 different branches of the path that you
+16:46 might want to take um in addition to
+16:48 that the um models often are not the
+16:51 best decision makers um at nodes and
+16:53 that graph because they weren't trained
+16:55 to do to make those decisions they were
+16:56 trained to do things that look similar
+16:58 to that um and so I think the the uh the
+17:01 the thing that's really powerful about
+17:03 this model um is that it's trained
+17:06 directly end to end to solve the kinds
+17:08 of tasks that uh that users are using it
+17:11 to solve so you don't have to set up a
+17:13 graph or make those node like decisions
+17:16 in the back on the architecture on the
+17:17 back end it's all driven by the model
+17:19 itself yeah can you say more about this
+17:21 because you know it seems like that's
+17:23 one of the very opinionated decisions
+17:25 that you've made and clearly it's worked
+17:27 um there's so many companies that are
+17:28 building on your API um kind of
+17:31 prompting uh to you know to you know
+17:34 solve specific tasks for specific users
+17:37 do you think all a lot of those
+17:38 applications would be better served by
+17:40 kind of having you know trained models
+17:42 end to end for their specific workflows
+17:45 I think if you have a very specific
+17:47 workflow that is quite predictable it
+17:49 makes a lot of sense to do something um
+17:51 like just described but if you have
+17:53 something that um has a lot of edge
+17:56 cases or um it needs to be be quite
+17:59 flexible then I think something similar
+18:02 to deep research is probably a better
+18:04 approach yeah I I think like the
+18:06 guidance I give people is um the the one
+18:09 thing that you don't want to bake into
+18:10 the model is like kind of hard and fast
+18:12 rules um like if you have you know a
+18:15 database that you don't want the model
+18:16 to touch or something like that it's
+18:18 it's better to encode that in in human
+18:20 written logic but I think it's kind of
+18:22 like a a lesson that I've seen people
+18:25 learn over and over again in this field
+18:26 is like um you know we we think that we
+18:29 can do things that are smarter than what
+18:31 the models do by writing it ourselves
+18:33 but uh in reality like usually the mo
+18:36 like as the field progresses the model
+18:38 come up with um better solutions to
+18:40 things than humans do and um and uh also
+18:44 like you know um the like probably like
+18:47 number one lesson of machine learning is
+18:48 like you get what you optimize for and
+18:50 so um if you if you're able to set up
+18:52 the system such that you can optimize
+18:54 directly for the outcome that you're
+18:55 looking for um the results are going to
+18:57 be much much better than if you sort of
+18:59 try to glue together models that are not
+19:01 optimized end to end for for the the
+19:03 tasks that you're trying to have them do
+19:04 so my like like long-term guidance is
+19:07 that um you know I think like
+19:09 reinforcement learning um tuning on top
+19:11 of models is probably going to be a
+19:13 critical part of how the most powerful
+19:15 agents get built what were the biggest
+19:17 technical challenges along the way to to
+19:19 making this work I well I mean maybe I
+19:21 can say as like an observer um rather
+19:23 than someone who was involved in this
+19:25 from the beginning but it seems like
+19:26 kind of one of the uh the things that um
+19:29 that Isa and the rest of the team worked
+19:30 really really hard on and was kind of
+19:32 like one of the hidden keys to success
+19:33 was like um making really high quality
+19:35 data sets um it's uh you know another
+19:39 one of those like age-old lessons in
+19:40 machine learning that people keep
+19:41 relearning but the the quality of the
+19:43 data that you put into the model is is
+19:45 probably the biggest determining factor
+19:46 in the quality of the model that you get
+19:47 on the other side and then have someone
+19:50 like um Edward Edward son who's other um
+19:54 person who works on the project who just
+19:57 any data set he will optimize so
+19:59 that's a secret to
+20:01 success find your Edward yes great great
+20:04 machine learning uh uh model training
+20:07 how do you make sure that it's right
+20:09 yeah so that's obviously a core part of
+20:13 this model and product is that we want
+20:16 it to be users to be able to trust the
+20:18 outputs so part of that is we have um
+20:23 citations and so um users are able to
+20:26 see where the model is um citing
+20:29 information from and we during training
+20:33 that's something that we actually like
+20:34 try and make sure is um correct but it's
+20:37 still possible for the model to make
+20:39 mistakes or hallucinate or trust a
+20:41 source that maybe isn't the most um
+20:43 trust worthy source of information so
+20:45 that's definitely an active area where
+20:47 we're want to continue improving the
+20:49 model how should we think about this
+20:51 together with you know 03 and operator
+20:53 and other different releases like does
+20:56 this use operator do do these all build
+20:58 on top of each other or are they all
+20:60 kind of a series of different
+21:01 applications of o03 uh today these are
+21:04 pretty disconnected um but you can kind
+21:06 of um you can imagine kind of where
+21:08 we're going with this uh right which is
+21:10 like um the the ultimate agent that um
+21:15 people will have access to at some point
+21:18 in the future should be able to do um
+21:21 you know not just web search or using a
+21:23 computer or any of the other types of
+21:25 actions that you'd want like kind of a a
+21:28 human assistant to do but should be able
+21:29 to fuse all these things in a more
+21:31 natural way any other design decisions
+21:34 that you know you've taken that are
+21:35 maybe not obvious at first
+21:37 glance I think one of them is the the
+21:40 clarification flow so if you've used
+21:42 deep research the model will ask you
+21:44 questions before starting its research
+21:47 and usually chat gbt maybe will ask you
+21:49 a question at the end of its response
+21:50 but it usually doesn't have such um uh
+21:52 that kind of behavior upfront um and
+21:54 that was intentional because um you will
+21:58 get the best response from the research
+21:59 model if the prompt is very well
+22:02 specified and detailed and think that
+22:04 it's not the natural user Behavior to
+22:07 give all of the information in um the
+22:10 first prompt so we wanted to make sure
+22:12 that if you're going to wait five
+22:14 minutes 30 minutes that your response is
+22:17 as detailed and satisfactory so um we
+22:22 added this additional step to make sure
+22:24 that the user provides all the detail
+22:26 that we would need and I've actually
+22:28 seen a bunch of of people on Twitter are
+22:29 saying that they have this flow or that
+22:31 they will talk to 01 or 01 Pro or to
+22:35 help um make their prompt more detailed
+22:38 and then once they're happy with the
+22:39 prompt then they'll send it to deep
+22:40 research which is interesting um so
+22:43 people are finding their own own
+22:44 workflow so how to use
+22:46 this so there's been three different
+22:48 deep research products launched in the
+22:50 last few months tell us a little about
+22:52 what makes you guys special and how we
+22:53 should think about
+22:55 it and they're all called Deep research
+22:58 right they're
+22:59 research yeah not a lot of naming
+23:00 creativity in this field um I I think
+23:04 people should uh should try all them for
+23:06 themselves and get a feel I think uh I
+23:08 think the the difference in like quality
+23:10 um I think they they all have pros and
+23:12 cons but I think the the difference will
+23:14 be clear um but like what that comes
+23:17 down to is just the way that this model
+23:19 was built um and the the um sort of the
+23:23 effort that went into um constructing
+23:25 the data sets and then the the engine
+23:27 that we have with the O Series mod
+23:28 models um which allows us to just um
+23:32 optimize models uh to make things that
+23:35 are like really smart and really high
+23:36 quality we had the 01 team on the
+23:38 podcast last year and we were joking
+23:39 that open I is not that good at naming
+23:41 things I will say this is your best
+23:42 named product deep
+23:44 researches at least it describes what it
+23:46 does I guess
+23:48 yeah so I'm curious to hear a little
+23:50 about where you want to go from here you
+23:52 have deep research today what do you
+23:53 think it looks like a year from now and
+23:55 what maybe are complimentary things you
+23:56 want to build along the way well
+23:59 excited to expand the data sources that
+24:04 the model has access to we've trained a
+24:06 model that's generally very good at
+24:07 browsing public information but um it
+24:11 should also be able to to search private
+24:13 data as well and then I think just
+24:15 pushing the
+24:17 capabilities um further so it could be
+24:19 better at browsing it could be better at
+24:21 analysis and then and then thinking
+24:23 about how this fits into our agent road
+24:25 map more broadly um like I think the the
+24:28 recipe here is um something that's going
+24:31 to scale to a pretty wide range of use
+24:34 cases um things that are uh can surprise
+24:38 people how well they work um but this
+24:40 idea of you take a a state-of-the-art
+24:42 reasoning model you give it access to
+24:44 the same tools um that that humans can
+24:47 use to uh to do their jobs or to go
+24:49 about their daily lives and then you
+24:51 optimize directly for the kinds of
+24:53 outcomes that um that you're looking
+24:56 that uh you want the agent to be able to
+24:57 do um that recipe there's like really
+24:60 nothing stopping that recipe from
+25:01 scaling to more and more complex tasks
+25:03 um so I feel like yeah AGI is like an
+25:06 operational problem now um and uh I
+25:09 think yeah um a lot of things to come in
+25:11 that general formula I'm so Sam had a
+25:14 pretty striking quote of deep research
+25:16 will take over a single DIN percentage
+25:18 of all economically viable tasks
+25:20 valuable tasks in the world how should
+25:22 we think about that I think of it as
+25:25 like um
+25:27 it's deep research is not capable of uh
+25:32 doing all of what you do um but it is
+25:35 capable of saving you like hours or
+25:37 sometimes in some cases days at a time
+25:40 um and so I I think like uh what we're
+25:42 hopefully relatively close to is um deep
+25:45 research in the agents that we build
+25:48 next and the Agents that we build on top
+25:49 of it um giving you you know 1 5 10 25%
+25:55 of your time back depending on the type
+25:57 of work that you do I mean
+25:59 I think you've already automated 80% of
+26:01 what I do so it's definitely on the
+26:03 higher end for me we just need to start
+26:05 writing checks I guess
+26:07 yeah are there entire job categories
+26:10 that you think are kind of more at risk
+26:12 is the wrong word but like more in the
+26:14 in the strike zone for what deep
+26:15 research is exceptional so for example
+26:17 I'm thinking Consulting uh but like Are
+26:19 there specific categories that you think
+26:21 are more in strikes on yeah I used to be
+26:23 consultant I don't think any jobs are at
+26:24 risk like I I don't really think of this
+26:26 as like a labor replacement kind of
+26:28 thing um at all like it's uh but for
+26:31 these types of knowledge work jobs where
+26:34 like where you are spending a lot of
+26:35 your time kind of looking through
+26:37 information and making conclusions I I
+26:39 think it's uh it's going to give people
+26:41 superpowers yeah I'm very excited about
+26:43 a lot of the medical use cases just the
+26:46 ability to um find all of the literature
+26:50 or all of the recent cases um for a
+26:53 certain condition I think I've already
+26:55 seen a lot of doctors posting about this
+26:58 or like they've reached out to us and
+26:60 said oh we used it for this thing we
+27:01 used it to help find um a clinical trial
+27:04 for this patient or something like that
+27:05 so just people who are already so busy
+27:07 just saving some time or um it's maybe
+27:11 something that they wouldn't have had
+27:12 time to do so and now they they are able
+27:14 to have that information for them yeah
+27:16 and I think the like the impact of that
+27:19 is like maybe a little bit more profound
+27:21 than it sounds on the surface right it's
+27:22 not just like it's not just like uh you
+27:24 know getting 5% of your time back but
+27:26 it's um the the type of that might have
+27:29 taken you four hours or eight hours to
+27:30 do um now you can do for you know um a
+27:34 chat gbt subscription and 5 minutes and
+27:37 so like what types of things would you
+27:39 do if you had infinite time that now
+27:41 maybe you can do like many many copies
+27:43 of so like you know you should should
+27:45 you do uh research on every single
+27:47 possible startup that you could invest
+27:49 in instead of just the ones that you
+27:50 have time to meet with things like that
+27:51 or on the consumer side one thing that
+27:53 I'm thinking of is you know the the
+27:54 working mom that's too busy to plan a
+27:56 birthday party for the for her like now
+27:59 it's now it's doable so it's I agree
+28:01 with you it's way more important than 5%
+28:03 of your time it's all the things you
+28:04 couldn't do before
+28:06 exactly what does this change about
+28:09 education and the way we should learn
+28:11 and you know what what will you be
+28:12 teaching your kids now that we're in a
+28:14 world of agents in deep research yeah
+28:16 education's been like one of the top few
+28:18 things that people use it for um I think
+28:21 it's I mean this is true for atrib
+28:23 generally it's it's like a if uh like
+28:25 learning things by talking to um an AI
+28:29 system that is able to like
+28:31 personalize uh the information that it
+28:33 gives you based on what you tell it or
+28:36 uh maybe in the future what it knows
+28:37 about you um feels like a much more
+28:40 efficient way to learn and a much more
+28:42 engaging way to learn than uh like
+28:43 reading textbooks we have some lightning
+28:46 round questions all right okay your
+28:49 favorite deep research use case I'll say
+28:51 yeah like personalized education just
+28:53 like learning about anything I want to
+28:54 learn about i' I've already mentioned
+28:56 this but I think a lot of the
+28:59 personal stories that people have shared
+29:01 about finding information about a
+29:04 diagnosis that they received or someone
+29:06 in that family received have been really
+29:09 great to
+29:11 see okay we saw a few application
+29:13 categories breakout last year so for
+29:15 example coding being being an obvious
+29:17 one what application categories do you
+29:19 think will break out this year I mean
+29:21 clearly agents agents I was gonna say
+29:24 too okay 2025 is the year of the agent I
+29:27 think so yeah and then how do you think
+29:29 about what piece of content that you
+29:31 should recommend people reading to read
+29:33 to learn more about agents or where the
+29:34 state of AI is
+29:37 going could be an author too training
+29:41 data this podcast
+29:44 not I think it's it's like um it's so
+29:47 hard to keep up with the
+29:48 state-of-the-art in AI um I think the
+29:51 like the general advice I have for
+29:53 people is like um pick one or two
+29:55 subtopics that you're really interested
+29:57 in and go like cu cre a list of people
+29:59 who are we think are saying interesting
+30:01 things about it and like how to find
+30:03 those one or two things you're
+30:04 interested in um maybe actually that's a
+30:06 good deep research use case like you
+30:08 know go go uh go use it to F like go
+30:11 deep on things that you want to learn
+30:12 more about this this is a bit old now
+30:15 but I think a few years ago I watched
+30:17 the I think it's called like foundations
+30:19 of RL or something like this from pel
+30:23 and it's um it's it's a few years old
+30:27 but I think that it was a good
+30:28 introduction to reinforcement Landing so
+30:30 yeah would definitely second any any
+30:32 content by uh Peter AAL my grad school
+30:34 adviser yeah oh yeah
+30:37 yeah okay reinforcement learning is it
+30:40 you know it kind of went through a peak
+30:42 and then felt like it was in a little
+30:43 bit of adrum again is speaking again is
+30:45 is that the right read on what's
+30:46 happening with RL it's so back yeah so
+30:49 back yeah why why now because everything
+30:52 else is
+30:53 working like uh I think if you um maybe
+30:57 people have been following the field for
+30:58 a while we'll remember the Y laon cake
+31:00 analog analogy if you're building a cake
+31:04 um then most of the cake is the cake and
+31:08 then there's a little bit of frosting
+31:09 and then there's a few cherries on top
+31:11 and the analogy was that like
+31:12 unsupervised learning there's the cake
+31:14 supervised learning is the frosting and
+31:16 uh reinforcement learning is the
+31:17 cherries on top when we in the field
+31:19 were working on reinforcement learning
+31:20 back in you know 2015 2016 it's kind of
+31:23 like I think uh uh Yan lon's analogy
+31:26 which I think in retrospect is probably
+31:27 correct is that we were like trying to
+31:29 add the cherries before we had the cake
+31:31 um but now we have language models that
+31:33 are pre-trained on massive amounts of
+31:35 data and are incredibly capable um we
+31:38 know how to uh how to you know do uh
+31:41 supervised fine tuning on those language
+31:43 models to make them good at instruction
+31:44 following and like generally doing the
+31:46 things that people want them to do and
+31:48 so now that that works really well it's
+31:49 like very ripe to uh to tune those
+31:52 models for any kind of use case that you
+31:54 can define a reward function for great
+31:57 okay so from this lightning we got
+31:59 agents will be you know the breakout
+32:01 category in 2025 and reinforcement
+32:03 learning is so back I love it um thank
+32:07 you guys so much for joining us we we
+32:08 love this conversation congratulations
+32:10 on an incredible product and we can't
+32:12 wait to see what comes with it thank you
+32:14 thank you thank you
+32:28 oh

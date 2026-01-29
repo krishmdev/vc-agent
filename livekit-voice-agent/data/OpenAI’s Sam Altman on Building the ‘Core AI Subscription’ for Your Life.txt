@@ -1,0 +1,829 @@
+00:02 Our next guest needs no introduction, so
+00:06 I'm not going to bother introducing him,
+00:08 Sam Alman. I will just say Sam is now
+00:11 three for three and joining us to share
+00:13 his thoughts at the three AI events that
+00:15 we've had, which we really appreciate.
+00:17 So, I just want to say thank you for
+00:18 being here. This was our first office.
+00:20 That's right. Oh, that's right. Say that
+00:22 again. Yeah, this was this was our first
+00:25 office. So, it's nice to be back. Let's
+00:28 go back to the first office here. He
+00:30 started in 2016.
+00:32 2016. We just had Jensen here who said
+00:34 that he delivered the first GGX1 system
+00:39 over here. He did. Yeah. It's amazing
+00:40 how small that thing looks now. Oh.
+00:43 Versus what? Well, the current boxes are
+00:45 still huge. But yeah, it was a fun
+00:46 throwback. How heavy was it? That was
+00:49 still when you could kind of like lift
+00:51 one yourself.
+00:53 He said it was about 70 lbs. Yeah. I
+00:55 mean, it was heavy, but you could carry
+00:56 it. So, um, did you imagine that you'd
+00:60 be here today in 2016?
+01:03 Uh, no. It was like, uh, we were sitting
+01:06 over there and there were, you know, 14
+01:08 of us or something and you were hacking
+01:10 on this new system. I mean, even that
+01:13 was like a we were sitting around like
+01:14 looking at whiteboards trying to talk
+01:16 about what we should do. Like this was a
+01:18 ve it's almost impossible to sort of
+01:22 overstate how
+01:24 much we were like a research lab with no
+01:27 with with a very strong belief and
+01:29 direction and conviction but no real
+01:31 kind of like action plan. I mean, not
+01:34 only was like the idea of a company or a
+01:36 product sort of unimaginable, the spec
+01:38 like LLMs as an idea were still very far
+01:41 off. And so, trying to play video games.
+01:45 Trying to play video games. Are you
+01:46 still trying to play video games? Now,
+01:48 we're pretty good at that.
+01:52 Um, all right. So, um, it took you
+01:54 another six years for the first consumer
+01:57 product to come out, which is ChatGpt.
+01:59 along the way. How did you sort of think
+02:00 about milestones to get something to
+02:03 that level as like an accident of
+02:04 history? The the uh the first consumer
+02:07 product was not Chacht. That's right. It
+02:09 was Dolly. Um the first product was uh
+02:13 the
+02:14 API. So we had built, you know, we kind
+02:17 of went through a few different things.
+02:18 We we were we had a a few directions
+02:20 that we really wanted to bet on.
+02:22 Eventually, as I mentioned, we said,
+02:23 "Well, we got to build a system to see
+02:25 if it's working. And we're not just
+02:27 writing research papers. So, we're going
+02:28 to see if we can, you know, play a video
+02:29 game. Well, we're going to see if we can
+02:31 do a robot hand. We're going to see if
+02:32 we can do a few other things. And at
+02:35 some point in there, uh, one person and
+02:38 then initially and then eventually a
+02:39 team got excited about trying to do
+02:41 unsupervised learning and to build
+02:42 language models. And that led to GPT1
+02:46 and then GPT2 and and and by the time of
+02:48 GBT3, we both thought we had something
+02:51 that was kind of cool, but we couldn't
+02:53 figure out what to do with it. Um, and
+02:56 also we realized we needed a lot more
+02:58 money to keep scaling. You know, we had
+03:00 done GBD3, we wanted to go to GPT4. We
+03:03 were heading into the world of
+03:04 billion-dollar models. It's like hard to
+03:05 do those as a pure science experiment
+03:07 unless you're like a particle
+03:08 accelerator or something. Um, even then
+03:10 it's hard. So, we started thinking,
+03:12 okay, we we both need to figure out how
+03:15 this can become a business that can
+03:16 sustain the investment that it requires.
+03:18 And also like we have a sense that this
+03:22 is heading towards something actually
+03:23 useful and we had put GPT2 out as model
+03:27 weights and not that much had happened.
+03:28 Um one of the things that I had just
+03:31 observed about
+03:34 uh companies products in general is if
+03:37 you do an API it usually works somehow
+03:39 on the upside. This was like true across
+03:41 many many YC companies. And also that if
+03:45 you make something much easier to use,
+03:47 there's usually a huge benefit to that.
+03:49 So we're like, well, it's kind of hard
+03:51 to run these models, they're getting
+03:52 big, we'll go write some software, do a
+03:54 really good job of running them. And and
+03:57 also we'll then rather than build a
+03:59 product cuz we couldn't figure out what
+03:60 to build. Um we will hope that somebody
+04:03 else finds something to build. And so I
+04:05 forget exactly when, but maybe it was
+04:07 like June of 2020. Um, we put out GPT3
+04:10 in the API
+04:12 and the world didn't care, but sort of
+04:15 Silicon Valley did. They're like, "Oh,
+04:16 this is kind of cool. This is pointing
+04:18 at something." And there was this weird
+04:19 thing where like we got almost no
+04:22 attention from most of the world. And
+04:24 some startup founders uh were like, "Oh,
+04:26 this is really cool." Or like I mean
+04:28 some of them are like this is AGI. Um,
+04:31 the only people that
+04:33 built real businesses with the GPT3 API
+04:36 that I can remember were these company a
+04:38 few companies that did like
+04:39 copyrightiting as a service. That was
+04:41 kind of the only thing GPT3 was over the
+04:43 economic threshold on.
+04:46 Um, but one thing we did notice which
+04:49 eventually led to ChatGpt is even though
+04:52 people couldn't build a lot of great
+04:54 businesses with the GPT3 API, people
+04:56 love to talk to it in the playground.
+04:59 And it was terrible at chat. We had not
+05:00 at that point figured out how to do RHF
+05:02 to make it easy to chat with, but people
+05:04 loved to do it anyway.
+05:07 And in some sense, that was the kind of
+05:11 only killer use other than copyrighting
+05:13 of the API product that led us to
+05:16 eventually build chat GPT. By the time
+05:17 Chat GPT 3.5 came out, there were maybe
+05:20 like eight categories instead of one
+05:22 category where you could build a
+05:23 business with the API. Um but but our
+05:28 conviction that like people just want to
+05:29 talk to the model had gotten really
+05:31 strong. So we had done Dolly and Dolly
+05:33 was doing okay but we knew we kind of
+05:34 wanted to build especially along with um
+05:38 the finetuning we were able to do we
+05:39 knew we wanted to build this model this
+05:41 product to let you talk to the model
+05:44 and it launched in 2022 or something uh
+05:49 I think yeah about six years when the
+05:51 first November 30th 2022 yeah so there
+05:55 was a lot of work leading up to that and
+05:58 2022 launched today it has over 500
+06:00 million people who talk to it on a
+06:02 weekly basis. Yeah. I mean, people
+06:06 All right. All right. So, um, by the
+06:09 way, uh, get ready for some audience
+06:11 questions because that's what that was
+06:12 Sam's request. Um, you've been here for
+06:14 three every single one of the ascents as
+06:17 Pat mentioned and there's been some lots
+06:19 of ups and downs, but seems like the
+06:21 last six months it's just been shipping,
+06:23 shipping, shipping. you shipped a lot of
+06:26 thought stuff and it's amazing to see
+06:28 the product velocity, the shipping
+06:30 velocity continue to increase. So this
+06:32 is like multi- sort of part question.
+06:36 How have you gotten a large company to
+06:37 like increase product velocity over
+06:40 time? I I I think a mistake that a lot
+06:42 of companies make is they get big and
+06:44 they don't do any they don't do more
+06:46 things. So they just like get bigger
+06:47 because you're supposed to get bigger
+06:48 and they still ship the same amount of
+06:50 product and that's when like the
+06:52 molasses really takes hold. I I like I
+06:55 am a big believer that you want everyone
+06:56 to be busy. You want teams to be small.
+06:59 You want like to do a lot of things
+07:02 relative to the number of people you
+07:03 have. Otherwise, you just have like 40
+07:05 people in every meeting and huge fights
+07:07 over who gets like what tiny part of the
+07:09 product. Um there there was that there
+07:11 was this like old observation of
+07:13 business that like a a a good executive
+07:15 is a busy executive because you don't
+07:17 people like muddling around. Um
+07:20 but I I think it's like a good
+07:24 I you know at our company and many other
+07:26 companies like researchers, engineers,
+07:28 product people, they drive almost all
+07:29 the value and you want those people to
+07:32 be busy and high impact. So if you're
+07:33 going to grow, you better do a lot more
+07:35 things otherwise you kind of just have a
+07:38 lot of people sitting in your room
+07:39 fighting or meeting or talking about
+07:41 whatever. Um so we try to have you know
+07:44 relatively small numbers of people with
+07:45 huge amounts of responsibility. Um and
+07:47 the way to make that work is to do a lot
+07:49 of things.
+07:51 And also like we have to do a lot of
+07:55 things like that the to go kind of I
+07:57 think I think we we really do now have
+07:59 an opportunity to go build one of these
+08:03 important internet platforms. Um but to
+08:07 do that like if we really are going to
+08:09 be people's like personalized AI that
+08:13 they use across many different services
+08:14 and you know over their life and across
+08:17 all of these
+08:18 different all these different like kind
+08:20 of main categories and all the smaller
+08:23 ones that we need to uh figure out how
+08:24 to enable then that's just a lot of
+08:26 stuff to go build. Anything you're
+08:29 particularly proud of that you've
+08:30 launched in the last six months?
+08:33 I mean, the models are so good now.
+08:35 Like, they they still have areas to get
+08:38 better, of course, and we're working on
+08:39 that fast, but
+08:41 like I think at this point, Chad GBT is
+08:45 a very good product because the model's
+08:47 very good. I mean, there's other stuff
+08:48 that matters, too, but the I am like I'm
+08:52 amazed that one model can do so many
+08:53 things so well. You're building small
+08:56 models and large models. You're doing a
+08:60 lot of things as you said. So, how do
+09:02 this audience stay out of uh your ways
+09:06 and not be roadkill?
+09:09 Um, I mean, like I I I think the way to
+09:12 model us is we want to build we want to
+09:15 be people's like core AI subscription
+09:18 and way to use that thing. Some of that
+09:21 will be like what you do inside of Chad
+09:23 GPT.
+09:25 Um, we'll have a couple of other kind of
+09:28 like really key parts of that
+09:30 subscription.
+09:31 But
+09:32 mostly we will hopefully build this
+09:35 smarter and smarter model. We'll have
+09:37 these surfaces
+09:39 like future devices, future things that
+09:41 are sort of similar to operating
+09:43 systems, whatever. Um, and then you know
+09:46 we want we have not yet figured out
+09:49 exactly I think what the sort of
+09:52 API or SDK or whatever you want to call
+09:55 it is to like really be our platform.
+09:57 But we will. It may take us a few tries,
+09:59 but we will. Um, and I hope that that
+10:02 enables like just an unbelievable amount
+10:05 of wealth creation in the world and
+10:06 other people to build onto that. But
+10:09 yeah, we're going to go for like the
+10:10 core AI subscription and the model and
+10:12 then um the kind of core services and
+10:14 there will be a ton of other stuff to
+10:15 build. Okay. So, don't be the Core AI
+10:18 subscription, but you can do everything
+10:19 else.
+10:21 We're going to try. I mean, if you can
+10:22 make a better Corei subscription
+10:24 offering than us, go ahead. That'd be
+10:25 great. Okay. Um, it's rumored that
+10:29 you're raising $40 billion or something
+10:32 like that at $340 billion valuation.
+10:35 It's rumors that it's I don't know if I
+10:37 think we announced it. We're okay. Well,
+10:39 if I just want to make sure that you
+10:41 announced it. Um, what's the what's your
+10:44 scale of ambition from there? From here,
+10:48 we're going to like try to make great
+10:49 models and ship good products and
+10:51 there's no master plan beyond that. Like
+10:53 we're gonna I I I think like Sure. No, I
+10:56 I I I mean there's I see plenty of open
+10:59 eye people in the audience. They can
+11:00 vouch for that. Like we don't we don't
+11:03 sit there and have like I I am a big
+11:05 believer that you can kind of like do
+11:07 the things in front of you, but if you
+11:09 like try to work backwards from like
+11:10 kind of we have this crazy complex
+11:12 thing.
+11:14 Um that doesn't usually work as well.
+11:17 Like the the we we know that we need
+11:19 tons of AI infrastructure. like we know
+11:21 we need to go build out massive amounts
+11:23 of like AI factory volume. Um we know
+11:27 that we need to keep making models
+11:28 better. We know that we need to like
+11:30 build a great top of the stack like kind
+11:32 of consumer product and all the pieces
+11:34 that go into that.
+11:37 But we pride ourselves on being like
+11:40 nimble and adjusting tactics as the
+11:42 world adjusts. And so the products
+11:45 um you know the products that we're
+11:47 going to build next year we're probably
+11:48 not even thinking about right now.
+11:51 And we believe we can build uh a set of
+11:55 products that people really really love.
+11:57 Um and we have like unwavering
+11:59 confidence in that and we believe we can
+12:01 build great models. I' I've actually
+12:03 never felt more optimistic about our
+12:05 research road map than I do right now.
+12:07 Um what's on the research road map?
+12:09 Really smart models.
+12:11 Um but but in terms of like the steps in
+12:16 front of us, we kind of take those one
+12:18 or two at a time. So you believe in
+12:20 working forwards, not necessarily
+12:21 working backwards. I have heard some
+12:24 people talk about these brilliant
+12:26 strategies of how they're this is where
+12:27 they're going to go and they're going to
+12:28 work backwards and you know this is take
+12:30 over the world and this is the thing
+12:31 before that and this is that and this is
+12:32 that and this is that and this is that
+12:33 and here's where we are today. I have
+12:35 never seen those people like really
+12:36 massively succeed. Got it. Who who has a
+12:42 question? There's a mic coming your way
+12:44 being thrown.
+12:48 Um, what do you think the larger
+12:51 companies are getting wrong about
+12:52 transforming their organizations to be
+12:55 more AI native in terms of both using
+12:56 the tooling as well as producing
+12:58 products? It's been, you know, it's
+13:00 smaller companies are clearly just
+13:02 beating the crap out of out of larger
+13:04 ones when it comes to innovation
+13:05 here. I I think this basically happens
+13:09 every major tech revolution. Um, there's
+13:13 nothing to me surprising about it. The
+13:14 thing that they're getting wrong is the
+13:16 same thing they always get wrong, which
+13:17 is like people get incredibly stuck in
+13:20 their ways. Organizations get incredibly
+13:22 stuck in their ways. If things are
+13:24 changing a lot every quarter or two and
+13:26 you have
+13:27 like an information security council
+13:29 that meets once a year to decide what
+13:31 applications you're going to allow and
+13:33 what it means to like put data into a
+13:35 system, like it it's just it's so
+13:37 painful to watch what happens here. But
+13:39 like, you know, this is this is creative
+13:42 destruction. This is why startups win.
+13:44 this is like how the industry moves
+13:45 forward. Um I am I'd say I feel like
+13:48 disappointed but not surprised at the
+13:50 rate that big companies are willing to
+13:52 do this. Um they
+13:55 will my kind of prediction would be that
+13:57 there's another like couple of years of
+13:58 fighting pretending like this isn't
+14:00 going to reshape everything and then
+14:02 there's like a capitulation and a last
+14:04 minute scramble and it's sort of too
+14:06 late and in general startups just sort
+14:09 of like blow past people doing it the
+14:11 old way. Um, I mean this happens to
+14:14 people too like
+14:15 watching watching like
+14:18 a you know someone who
+14:22 started maybe you like talk to an
+14:25 average 20-year-old and watch how they
+14:26 use chat GBT and then you go talk to
+14:30 like an average 35-year-old and how they
+14:31 they use it or some other service and
+14:33 like the difference is unbelievable. It
+14:35 reminds me of like, you know, when the
+14:37 smartphone came out and like every kid
+14:40 was able to use it super well and older
+14:42 people just like took like three years
+14:43 to figure out how to do basic stuff. And
+14:45 then of course people integrate, but but
+14:47 the the sort of like generational divide
+14:49 on AI tools right now is crazy and I
+14:51 think companies are just another symptom
+14:53 of that.
+14:54 Anybody else have a question?
+14:58 Just to follow up on that, um, what are
+14:60 the cool use cases that you're seeing
+15:01 young people using with Touch EPT that
+15:04 might surprise us?
+15:08 They really do use it like an operating
+15:09 system.
+15:11 um they have like complex ways to set it
+15:13 up to connect it to like a bunch of
+15:15 files and they have like fairly complex
+15:17 prompts memorized in their head or like
+15:19 you know in something where they paste
+15:21 in and out and um
+15:25 the I mean that stuff I think is all
+15:27 cool and impressive and there's this
+15:28 other thing where like they don't really
+15:30 make life decisions without asking like
+15:31 chbt what they should do. Um, and it has
+15:34 like the full context on every person in
+15:36 their life and what they've talked about
+15:37 and you know that like the memory thing
+15:38 has been a real change there. But but
+15:40 yeah, I
+15:42 think gross oversimplification, but like
+15:46 older people use Chachi PT as a Google
+15:48 replacement. Maybe people in their 20s
+15:51 and 30s use it as like
+15:53 a life advisor something and then like
+15:58 people in college use it as an operating
+16:01 system.
+16:02 How do you use it inside of OpenAI?
+16:06 Um, I mean it writes a lot of our code.
+16:08 How much? I don't know the number. And
+16:10 also when people say the number I think
+16:12 is always this very dumb thing cuz like
+16:14 you said Microsoft code is 30 20 30%
+16:17 written measuring by lines of code is
+16:18 just such an insane way to like I don't
+16:20 I I maybe the meaningful thing I could
+16:23 maybe the thing I could say is it's
+16:24 writing meaningful code like it's
+16:26 writing I don't know how much but it's
+16:27 like writing the the the parts that
+16:29 actually matter. That's That's
+16:31 interesting. Next question. Hey Sam, mic
+16:34 going away. Is this okay? Hey, Sam. Uh,
+16:37 I thought it was interesting that
+16:40 the answer to Alfred's question about
+16:42 where you guys want to go is focus
+16:44 mostly around consumer and being the
+16:46 core subscription and also most of your
+16:48 revenue comes from consumer
+16:50 subscriptions. Why keep the API in 10
+16:52 years? I really hope that all of this
+16:56 merges into one thing. like you should
+16:58 be able to sign in with OpenAI to other
+17:00 services. Other services should have an
+17:02 incredible SDK to like take over the
+17:04 chat GBT um UI at some point. But like
+17:09 to the degree that you are going to have
+17:11 a personalized AI that knows you, that
+17:13 has your information, that knows what
+17:15 you want to share later, and you know
+17:16 has all this context on you, you'll want
+17:19 to be able to use that in a lot of
+17:20 places. Now, I agree that the current
+17:23 version of the API is very far off that
+17:25 vision, but I think we can get there.
+17:29 Uh yeah, I maybe have a follow-up
+17:31 question to that one. You kind of took
+17:33 mine. Um but like a lot of us who are
+17:35 building application layer companies, we
+17:37 want to like use those building blocks,
+17:39 those different API components, maybe
+17:40 the deep research API which is not a
+17:42 release thing but could be uh and and
+17:45 build stuff with them like is that going
+17:47 to be a priority like enabling that
+17:49 platform for us? How should we think
+17:50 about that? Yeah,
+17:52 I I think I hope something in between
+17:55 those that there is sort of like a new
+17:58 protocol on the level of HTTP for the
+18:02 future of the internet where things get
+18:04 federated and broken down into like much
+18:06 smaller components and agents are like
+18:08 constantly exposing and using different
+18:10 tools and authentication, payment, data
+18:14 transfer, it's all like built in at this
+18:16 level that everybody trusts. everything
+18:18 talk to everything.
+18:24 And I I don't quite think we know what
+18:27 that looks like, but it's like coming
+18:28 out of the fog. Um, and as we get a
+18:31 better sense for that, again, it'll
+18:33 probably take us like a few iterations
+18:35 toward that to get there. But that's
+18:37 kind of where I would like to see things
+18:38 go.
+18:43 Hey, Sam. Uh, back here. Uh, my name is
+18:45 Roy. I'm curious, uh, the AI would
+18:49 obviously do better with more input
+18:51 data. Is there any thought to feeding
+18:54 sensor data, uh, and what type of sensor
+18:58 data, whether it's temperature, uh, you
+19:01 know, things in the physical world that
+19:03 you could feed in that it could better
+19:04 understand reality. People do that a
+19:08 lot. uh people like put that into you
+19:10 know people have whatever they build
+19:11 things where they just put sensor data
+19:13 into like an API and like an 03 API call
+19:15 or whatever and for some use cases it
+19:17 does work super well. Um I'd say that
+19:19 the latest models seem to do a good job
+19:21 with this and they used to not. Uh so
+19:23 we'll probably bake it in more
+19:25 explicitly at some point but there's
+19:26 already like a lot happening there.
+19:29 Hi Sam. Uh I was really excited to play
+19:31 with the voice model in the playground
+19:33 and so I have two questions. The first
+19:35 is how important uh is voice to open AAI
+19:39 in terms of like stack ranking for
+19:41 infrastructure and can you share a
+19:43 little bit about how you think it'll
+19:45 show up in the product and chat GBT the
+19:47 core thing.
+19:49 I think voice is extremely important.
+19:52 Honestly, we just we have not made a
+19:53 good enough voice product yet. That's
+19:55 fine. Like it took us a while to make a
+19:56 good enough text model too. Um, we will
+19:58 crack that code eventually and when we
+20:01 do, um, I think a lot of people are
+20:03 going to want to use voice interaction a
+20:06 lot more. I I am super when we first
+20:11 launched our current voice mode, the
+20:13 thing that was most interesting to me
+20:15 was it was a new stream on top of like
+20:17 the touch interface and I you could talk
+20:19 and be like clicking around on your
+20:21 phone at the same time. And I continue
+20:23 to think there's something amazing to do
+20:25 about like voice plus guey interaction
+20:29 that we have not cracked. But before
+20:32 that, we'll just make voice really
+20:33 great. And when we do, I think there's a
+20:35 not only is it cool with existing
+20:37 devices, but I I sort of think voice
+20:39 will enable a totally new class of
+20:41 devices if you can make it feel like
+20:43 truly human level voice.
+20:46 Similar question. Similar question about
+20:48 coding. I'm curious, is coding just
+20:50 another vertical application or is it
+20:51 more central to the future of open AI?
+20:53 That one's more central to the future of
+20:54 open AI. Um, coding I think will be
+20:59 how these
+21:01 models kind
+21:05 of right now if you ask CHP a response,
+21:09 you get text back, maybe you get an
+21:10 image. Um, you would like to get a whole
+21:12 program back. You would like, you know,
+21:14 custom rendered code for every response
+21:16 or at least I would. um you would like
+21:18 the ability for these models to go make
+21:20 things happen in the world and writing
+21:22 code I think will be very central to how
+21:24 you like actuate the world and call a
+21:26 bunch of APIs or whatever. So I I would
+21:28 say coding will be more
+21:31 in a central category. We'll obviously
+21:33 expose it through our API on our
+21:35 platform as well. Um but you know chat
+21:38 GBT should be excellent at writing code.
+21:41 So we're going to move from the world of
+21:43 assistants to agents to basically
+21:45 applications all the way through.
+21:48 I I I think it'll feel yeah like very
+21:52 continuous but yes
+21:54 u so you have conviction in the road map
+21:57 about smarter models awesome I have this
+21:59 mental model there's some ingredients
+22:00 like more data bigger data centers a
+22:03 transformer architecture test time
+22:05 compute what's like an underrated
+22:07 ingredient or something that's going to
+22:08 be part of that mix that like maybe
+22:10 isn't in the mental model of most of
+22:25 Um, I mean that's kind of the each of
+22:27 those things are really hard and you
+22:29 know obviously
+22:31 like the highest leverage thing is still
+22:34 big algorithmic breakthroughs and I
+22:36 think there still probably are some 10
+22:38 x's or 100 x's left not very many but
+22:40 even one or two is a big deal.
+22:43 Um but you know yeah it's kind of like
+22:46 algorithms, data, compute those are sort
+22:50 of the big ingredients.
+22:52 Uh
+22:54 hi uh so my question is you run one of
+22:58 the best ML teams in the world. Uh, how
+23:00 do you balance between uh letting smart
+23:03 people like Issa chase uh deeply
+23:06 research or something else that seems
+23:07 exciting versus going top down and being
+23:09 like we're going to build this, we're
+23:11 going to make it happen. We don't know
+23:12 if it'll work. There are some projects
+23:15 that require so much coordination that
+23:17 there has to be a little bit of like top
+23:18 down quarterbacking, but I think most
+23:21 people try to do way too much of that.
+23:25 I I I mean this is like there's probably
+23:29 other ways to run good AI research or
+23:31 good research labs in general, but when
+23:33 we started OpenAI, we spent a lot of
+23:36 time trying to understand
+23:40 uh what a well-run research lab looks
+23:43 like. And you had to go really far back
+23:46 in the past. In fact, almost everyone
+23:47 that could like help advise us on this
+23:49 was dead. Um it had been like a long
+23:51 time since there had been good good
+23:52 research labs.
+23:55 And you know people ask us a lot like
+23:59 why why does open AI like repeatedly
+24:02 innovate and why do the other AI labs
+24:03 like sort of copy or why do like biolab
+24:06 x not do good work and biolab y does do
+24:08 good work or whatever. And we sort of
+24:11 keep saying like here's the principles
+24:12 we've observed. Here's how we learned
+24:14 them. Here's what we looked at in the
+24:15 past. And then everybody says great um
+24:17 but I'm going to go do the other thing.
+24:19 We said that's fine. Like you came to us
+24:20 for advice. Like you do what you want.
+24:22 Um but I find it remarkable how much
+24:26 these few principles that we've tried to
+24:28 run our research lab on which we did not
+24:30 invent. We shamelessly copied from other
+24:32 good research labs in history um have
+24:34 worked for us. And then people who have
+24:37 had some smart reason about why they
+24:38 were going to do something else, it
+24:39 didn't work.
+24:43 Um, so it seems to me that uh these
+24:47 large models uh one of the really
+24:50 fascinating things as like a lover of
+24:51 knowledge about them is that they
+24:53 potentially embody and allow us to
+24:55 answer these like amazing long-standing
+24:57 questions in the humanities about
+24:59 cyclical changes and artistic uh
+25:02 interesting things or even like uh you
+25:04 know to what extent systematic prejudice
+25:06 and other sorts of things are really
+25:07 happening in society and can we sort of
+25:09 detect these and I'm uh very subtle
+25:11 things which we we could never really do
+25:14 more than hypothesize before. And I'm
+25:16 wondering whether OpenAI has a thought
+25:18 about or even a roadmap for working with
+25:21 academic researchers say to help unlock
+25:24 some of these new things we could learn
+25:26 for the first time in the humanities and
+25:28 in the social sciences. We do um yeah I
+25:32 mean it's amazing to see what people are
+25:33 doing there. We do have academic
+25:34 research programs where we partner and
+25:37 you know do some custom work but mostly
+25:40 people just say like I want access to
+25:41 the model or maybe I want access to the
+25:42 base model and I think we're really good
+25:44 at that. Uh one of the kind of cool
+25:48 things about what we do is so much of
+25:50 our incentive structure is pushed
+25:52 towards making the models as smart and
+25:54 cheap and widely accessible as possible
+25:56 that that serves academics and the
+25:58 really the whole world very well. So,
+26:01 you know, we we have we do some custom
+26:03 partnerships, but we often find that
+26:07 what researchers or users really want is
+26:10 just for us to make the general model
+26:11 better across the board. Um, and so we
+26:14 we try to focus, you know, kind of 90%
+26:15 of our thrust vector on that.
+26:18 I'm curious how you're thinking about
+26:19 customization. So, you mentioned the
+26:21 federated like sign in with OpenAI,
+26:23 bringing your memories, your context.
+26:25 I'm just curious if you think
+26:27 customization and like these different
+26:28 post- training on like application
+26:30 specific things is a band-aid for or
+26:32 trying to make the core models better
+26:34 and how you're thinking about that.
+26:38 I mean in some sense I think the like
+26:41 platonic ideal state is uh a very tiny
+26:45 reasoning model with a trillion tokens
+26:47 of context that you put your whole life
+26:49 into. The model never retrains. The
+26:51 weights never customize. But that thing
+26:53 can like reason across your whole
+26:54 context and do it efficiently. And every
+26:58 conversation you've ever had in your
+26:59 life, every book you've ever read, every
+27:01 email you've ever read, um, every
+27:03 everything you've ever looked at is in
+27:04 there, plus connected all your data from
+27:06 other sources. And, you know, your life
+27:09 just keeps appending to the context and
+27:11 your company just does the same thing
+27:13 for all your company's data. Um, we
+27:15 can't get there today. Uh but but I I
+27:20 think of kind of like anything else as a
+27:22 a compromise off that platonic ideal and
+27:25 that is how I would eventually I hope we
+27:28 do customization. One last question in
+27:30 the back. Hi Sam, thanks for your time.
+27:33 Where do you think most of the value
+27:35 creation we come from in the next 12
+27:37 months? Would it be maybe advanced
+27:39 memory capabilities or maybe security or
+27:43 protocols that allow agents to do more
+27:45 stuff and interact with the real world?
+27:55 Um I mean in some sense the value will
+27:57 continue to come from really three
+27:60 things like building out more
+28:01 infrastructure, smarter models
+28:04 and building the kind of scaffolding to
+28:06 integrate this stuff into society. And
+28:08 if you push on those, I think the rest
+28:10 will sort itself out. Um, at at a higher
+28:13 level of
+28:14 detail, I kind of think 2025 will be a
+28:17 year of sort of agents doing work.
+28:21 Coding in particular, I would expect to
+28:23 be a dominant category. I think there'll
+28:25 be a few others too. Um, next year is a
+28:28 year where I would expect more like
+28:30 uh sort of AI discovering new stuff and
+28:34 maybe we have AIs make some very large
+28:37 scientific discoveries or assist humans
+28:39 in doing that. And you know, I'm I am
+28:41 kind of a believer that most of the sort
+28:44 of real sustainable economic growth in
+28:46 human history comes from once you've
+28:49 like kind of spread out and colonized
+28:50 the earth, most of it comes from just
+28:52 better scientific knowledge and and then
+28:54 implementing that for the world. And
+28:56 then 27 I I would guess is the year
+28:58 where like that all moves from the sort
+29:00 of intellectual realm to the physical
+29:01 world and robots go from a curiosity to
+29:05 like a serious economic creator of
+29:07 value. But that was like an off the top
+29:09 of my head kind of guess right now. Can
+29:11 I close with a few quick questions?
+29:15 Great. One of which is um chat uh GPT5.
+29:18 Is that going to be just all smarter
+29:20 than all of us here?
+29:23 Um I mean if you think you're like way
+29:26 smarter than 03 then maybe you have a
+29:28 little bit of a ways to go but 03 is
+29:30 already pretty smart.
+29:32 Um two personal questions. Last time you
+29:35 were here, you had just come off a blip
+29:38 with open AI. Uh given some perspective
+29:42 now in distance, you got any advice for
+29:45 founders here about resilience,
+29:49 endurance,
+29:52 strength?
+29:56 Um it gets easier over time. I think
+29:59 like you will face a lot of adversity in
+30:03 your journey as a founder
+30:05 and the the kind of challenges get
+30:09 harder and higher stakes but the
+30:12 emotional toll gets easier as you kind
+30:14 of go through more bad things. So it's
+30:16 uh you know in some sense
+30:19 like it does it yeah even though like
+30:23 abstractly the challenges get bigger and
+30:26 harder the your ability to deal with
+30:28 them the sort of resilience you build up
+30:30 gets easier like with each one you you
+30:32 kind of go through.
+30:36 Um and then I like I I think the the
+30:39 hardest thing about the big challenges
+30:42 that come as a founder is not the moment
+30:45 when they happen. Uh like a lot of
+30:48 things go wrong in the history of a
+30:49 company.
+30:51 Um in the acute thing you can kind of
+30:54 like you know you get a lot of support,
+30:56 you can function a lot of adrenaline.
+30:57 like that's, you know, you're kind of
+30:59 like e even the really big stuff like
+31:02 your company runs out of money and
+31:03 fails, like a lot of people will come
+31:05 and support you. Um, and you kind of get
+31:07 through it and go on to the new thing.
+31:08 The thing that I think is harder to sort
+31:11 of manage your own psychology through is
+31:13 the sort of like fallout after. Um, and
+31:17 I think if there's, you know, people
+31:19 focus a lot about how to work in that
+31:21 one moment during the crisis. And the
+31:24 really valuable thing to learn is how
+31:26 you like pick up the pieces. There's
+31:28 much less talk about that. I think
+31:30 there's I've never actually found
+31:32 something good to point founders to to
+31:34 go read about, you know, not how you
+31:36 deal with the real crisis on day zero or
+31:38 day one or day two, but on day 60 as
+31:41 you're just trying to like rebuild after
+31:43 it. Um, and that's that's the area that
+31:46 I think you can like practice and get
+31:48 better at. Thank you, Sam. Yeah, you're
+31:50 officially still on paternity leave. I
+31:52 know. So, thank you for coming in and
+31:54 speaking with us. Appreciate it. Thank
+31:55 you.

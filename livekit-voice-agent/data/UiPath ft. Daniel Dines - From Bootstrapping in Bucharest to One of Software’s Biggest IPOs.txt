@@ -1,0 +1,2722 @@
+00:01 [Music]
+00:02 
+
+00:02 I was joking with my team saying our
+00:05 
+
+00:05 strategy is like ji scan strategy you
+00:09 
+
+00:09 should go faster than them you know how
+00:11 
+
+00:11 they conquer China their army was faster
+00:14 
+
+00:14 than Chinese Army so they were defeating
+00:16 
+
+00:16 all the Chinese cities and they couldn't
+00:19 
+
+00:19 catch them so that was kind of my
+00:21 
+
+00:21 strategy let's go let's spread let's see
+00:23 
+
+00:23 where it works and let's double down on
+00:26 
+
+00:26 it and they thought I'm
+00:29 
+
+00:29 crazy wel to Crucible moments a podcast
+00:33 
+
+00:33 about the critical Crossroads and
+00:34 
+
+00:34 inflection points that shaped some of
+00:36 
+
+00:36 the world's most remarkable companies
+00:39 
+
+00:39 I'm your host and the managing partner
+00:40 
+
+00:40 of seoa capital rof bua all businesses
+00:44 
+
+00:44 rely on a number of repetitive tasks
+00:47 
+
+00:47 data entry payroll processing Inventory
+00:50 
+
+00:50 management and they take up time
+00:52 
+
+00:52 requiring someone to manually type in
+00:53 
+
+00:53 the same figures over and over again
+00:57 
+
+00:57 today's story is about the unlikely rise
+00:59 
+
+00:59 of uip path a company that pounced on an
+01:02 
+
+01:02 opportunity to eliminate some of this
+01:04 
+
+01:04 repetitive work replacing it with
+01:06 
+
+01:06 software operating in the background of
+01:08 
+
+01:08 an application this technology is known
+01:11 
+
+01:11 as robotic process automation or RPA and
+01:15 
+
+01:15 uip paath is harnessed it to save Untold
+01:18 
+
+01:18 hours and dollars for companies around
+01:21 
+
+01:21 the
+01:22 
+
+01:22 world when we think of the world's Tech
+01:24 
+
+01:24 hubs Bucharest Romania is not usually at
+01:27 
+
+01:27 the top of the list but after
+01:29 
+
+01:29 bootstrapping for near nearly a decade
+01:31 
+
+01:31 out of an apartment in the Eastern
+01:33 
+
+01:33 European city Daniel Dyan saw an opening
+01:36 
+
+01:36 for the nent RPA category and placed a
+01:39 
+
+01:39 risky bet pivoting his entire company
+01:42 
+
+01:42 around it from humble beginnings uipath
+01:45 
+
+01:45 became the fastest growing SAS company
+01:47 
+
+01:47 ever only to face Crucible moments in
+01:51 
+
+01:51 navigating Growing Pains today the
+01:54 
+
+01:54 company faces new challenges as it
+01:56 
+
+01:56 adapts to the changing AI landscape to
+01:59 
+
+01:59 further Revolution uiz the way we work
+02:02 
+
+02:02 this is the story of
+02:06 
+
+02:06 [Music]
+02:10 
+
+02:10 uipath my name is Daniel D I am the
+02:13 
+
+02:13 founder and CEO of uipath growing up in
+02:16 
+
+02:16 Romania I wanted to become a writer but
+02:20 
+
+02:20 I soon discovered that I have no Talent
+02:23 
+
+02:23 actually for writing and in communist
+02:27 
+
+02:27 Romania that involved anyway a lot of
+02:31 
+
+02:31  I was under a pressure to make
+02:34 
+
+02:34 my own living since I was 19 I had to
+02:38 
+
+02:38 sustain myself and at that point I
+02:40 
+
+02:40 remember I was probably making like $30
+02:43 
+
+02:43 a month just before his 20th birthday
+02:46 
+
+02:46 Daniel received a gift from his
+02:48 
+
+02:48 girlfriend that would change the course
+02:50 
+
+02:50 of his life she had this book called uh
+02:53 
+
+02:53 introduction to C++ or programming C++
+02:57 
+
+02:57 of the inventor of the language itself
+02:60 
+
+02:60 be
+03:00 
+
+03:00 St I started to read it and I I read it
+03:03 
+
+03:03 more like fiction and I got really
+03:07 
+
+03:07 enered by the language a friend of mine
+03:10 
+
+03:10 from University told me there is a guy
+03:12 
+
+03:12 that hires
+03:14 
+
+03:14 developers he hired both of us but
+03:18 
+
+03:18 basically without any kind of interview
+03:20 
+
+03:20 it was just a discussion so I started to
+03:23 
+
+03:23 work with this guy but initially he he
+03:25 
+
+03:25 didn't have a computer to give to me
+03:28 
+
+03:28 because it was a small firm with I think
+03:31 
+
+03:31 maybe like 10 people but they were all
+03:33 
+
+03:33 working during the day but he offered me
+03:36 
+
+03:36 to go there during the night so I had
+03:38 
+
+03:38 access to their best computer at that
+03:40 
+
+03:40 time so I changed for the next 6 month
+03:44 
+
+03:44 my entire life I was working basically
+03:47 
+
+03:47 from like 8: to 6:00 in the morning I
+03:51 
+
+03:51 was basically just sleeping working on
+03:55 
+
+03:55 the computer and I learned so much it
+03:58 
+
+03:58 was I was really immersed and I I built
+04:01 
+
+04:01 basically my entire career on that six
+04:04 
+
+04:04 month over the next few years Daniel
+04:07 
+
+04:07 continued to H his skills as a developer
+04:10 
+
+04:10 in 2001 he landed a job at Microsoft in
+04:14 
+
+04:14 Seattle after learning the ropes at a
+04:16 
+
+04:16 major tech company Daniel became
+04:18 
+
+04:18 determined to start a business of his
+04:20 
+
+04:20 own he moved back to Romania and
+04:22 
+
+04:22 launched desk over in the early years
+04:25 
+
+04:25 desk over focused on Outsourcing and
+04:27 
+
+04:27 building software developer kits but
+04:29 
+
+04:29 miles from any major Tech Hub the
+04:31 
+
+04:31 company faced challenges Europe has a
+04:34 
+
+04:34 very fragmented ecosystem so in in the
+04:37 
+
+04:37 US of course there there is New York
+04:40 
+
+04:40 there there is Miami there are other
+04:41 
+
+04:41 ecosystems but Silicon Valley is so
+04:44 
+
+04:44 concentrated when it comes to talent you
+04:46 
+
+04:46 have mentorship and expertise just
+04:48 
+
+04:48 around the corner and that wasn't the
+04:51 
+
+04:51 case for Daniel and for his co-founders
+04:53 
+
+04:53 starting in in Bucharest my name is
+04:55 
+
+04:55 Luana Alexandre and I'm a partner at
+04:58 
+
+04:58 sequa I was born and raised in Romania
+05:00 
+
+05:00 but I have to be honest I had not
+05:03 
+
+05:03 focused on Romania as as a country that
+05:06 
+
+05:06 had a lot of potential to create these
+05:09 
+
+05:09 outliers the idea of raising capital in
+05:13 
+
+05:13 2005 in Romania was unheard of I
+05:16 
+
+05:16 bootstrapped the company by doing some
+05:19 
+
+05:19 Consulting work so we were all working
+05:21 
+
+05:21 in a small flat it was a very very small
+05:26 
+
+05:26 company they were all male uh software
+05:30 
+
+05:30 developers who were pretty isolated by
+05:33 
+
+05:33 themselves I was the first female I was
+05:35 
+
+05:35 a junior developer at the time and uh it
+05:38 
+
+05:38 wasn't very easy for me to start my name
+05:42 
+
+05:42 is Andra chich kmos and I'm a VP of
+05:45 
+
+05:45 product at uipath Daniel helped us a lot
+05:48 
+
+05:48 in letting us express our opinions
+05:51 
+
+05:51 although most of the times at least in
+05:53 
+
+05:53 the beginning were wrong and encouraging
+05:56 
+
+05:56 us to speak up and say whatever crossed
+05:59 
+
+05:59 our mind and if it was a good idea it
+06:02 
+
+06:02 was always built on and included in the
+06:05 
+
+06:05 development process so we started having
+06:08 
+
+06:08 a lot of parties we started playing
+06:10 
+
+06:10 poker nights we starting debating a lot
+06:13 
+
+06:13 more it it was really really nice like a
+06:16 
+
+06:16 family debates over dinner I started to
+06:19 
+
+06:19 do some uh some products the first
+06:22 
+
+06:22 commercially
+06:24 
+
+06:24 viable application was this SDK type of
+06:28 
+
+06:28 software that a developer could have use
+06:31 
+
+06:31 and read the text on any application we
+06:34 
+
+06:34 were building a software Library which
+06:37 
+
+06:37 are the building parts of any software
+06:40 
+
+06:40 product that was automating your actions
+06:43 
+
+06:43 and to to give you an example cuz uh I
+06:45 
+
+06:45 remember when Daniel first explained to
+06:47 
+
+06:47 me I went home and my friends asked me
+06:49 
+
+06:49 okay so what will you do there and I
+06:51 
+
+06:51 said I I didn't understood but it sound
+06:53 
+
+06:53 interesting so I think this is what most
+06:56 
+
+06:56 of our um customers thought in the
+06:59 
+
+06:59 beginning as well so at that time the
+07:01 
+
+07:01 browsers for example didn't have that
+07:04 
+
+07:04 remember your password functionality so
+07:06 
+
+07:06 every time you wanted to join something
+07:08 
+
+07:08 you needed to remember and type your own
+07:11 
+
+07:11 username and password our library was
+07:14 
+
+07:14 able to do this automation for you just
+07:16 
+
+07:16 like the browser does it today we were
+07:19 
+
+07:19 doing initially things that we kind of
+07:22 
+
+07:22 liked as a developers we thought this is
+07:24 
+
+07:24 a cool thing to build this stuff it was
+07:26 
+
+07:26 kind of hackery in a way but not not not
+07:30 
+
+07:30 really a business Vision our primary
+07:33 
+
+07:33 customer was actually the software
+07:35 
+
+07:35 developer they were individuals that
+07:37 
+
+07:37 were some were working in companies some
+07:39 
+
+07:39 were freelancing and it was quite hard
+07:42 
+
+07:42 for it to take off as a developer tool
+07:46 
+
+07:46 dedicated to hardcore developers we had
+07:49 
+
+07:49 customers that use it but not many we
+07:52 
+
+07:52 were like the engine of a card but we
+07:54 
+
+07:54 didn't have all the other
+07:56 
+
+07:56 parts desk over struggled to find
+07:58 
+
+07:58 product Market fit but in 2012 Daniel
+08:01 
+
+08:01 received an email that would alter the
+08:03 
+
+08:03 company's trajectory we got this request
+08:07 
+
+08:07 from someone who show a demo of our
+08:11 
+
+08:11 product and they put their personal
+08:13 
+
+08:13 address but they didn't mention any
+08:15 
+
+08:15 business or anything so at that point I
+08:17 
+
+08:17 was on the verge of ignoring that
+08:20 
+
+08:20 request but I don't know I had a hunch
+08:22 
+
+08:22 you know there is this gut feeling
+08:25 
+
+08:25 sometimes that tells you maybe you
+08:27 
+
+08:27 should follow that lead the request was
+08:30 
+
+08:30 from a manager at a business process
+08:32 
+
+08:32 Outsourcing company in Chennai India who
+08:35 
+
+08:35 needed to reliably automate some of the
+08:37 
+
+08:37 company's manual tasks he wanted to see
+08:39 
+
+08:39 how desk over compared to a larger
+08:42 
+
+08:42 British tech company called Blue prism
+08:44 
+
+08:44 that worked on robotic process
+08:46 
+
+08:46 automation or RPA I never heard about
+08:49 
+
+08:49 blue prism or RPA at that time but I
+08:52 
+
+08:52 said I have no idea who they are let me
+08:55 
+
+08:55 search on the internet and I did a quick
+08:58 
+
+08:58 search why I was talking to him I didn't
+09:01 
+
+09:01 read much but I said it seems like this
+09:04 
+
+09:04 is a big company I don't think we can
+09:07 
+
+09:07 compare in any shape with them but he
+09:09 
+
+09:09 was patient and he started to work with
+09:12 
+
+09:12 us more to understand he really liked
+09:15 
+
+09:15 our approach so we had this visual low
+09:18 
+
+09:18 code that was really novelty at that
+09:22 
+
+09:22 time and in all RPA space it was only us
+09:25 
+
+09:25 and blue prison that had this low code
+09:27 
+
+09:27 approach so we had a nice flowcharts to
+09:30 
+
+09:30 design and Automation and nobody else
+09:33 
+
+09:33 had that at this point and basically he
+09:36 
+
+09:36 was actually looking to get some
+09:37 
+
+09:37 leverage on blue pris and they were
+09:40 
+
+09:40 really considered kind of
+09:43 
+
+09:43 inflexible the company in India invited
+09:45 
+
+09:45 desk over to come to chenai to see if
+09:48 
+
+09:48 its software Library could automate some
+09:50 
+
+09:50 of the BP's processes I also said yes
+09:54 
+
+09:54 without missing a heartbeat I displaced
+09:57 
+
+09:57 three people some of my best people to
+09:59 
+
+09:59 go to India for 3 months at cost so this
+10:02 
+
+10:02 is how we got into into RPA and I got
+10:06 
+
+10:06 the wind of what RPA is I was a part of
+10:10 
+
+10:10 the three people team that went to India
+10:12 
+
+10:12 the experience in India was very eye
+10:15 
+
+10:15 opening for us we used to go every day
+10:18 
+
+10:18 into the office in India we were
+10:21 
+
+10:21 automating part of the process something
+10:24 
+
+10:24 wasn't working we went back to our hotel
+10:26 
+
+10:26 we implemented the fix or the new
+10:28 
+
+10:28 feature that was requ required to
+10:30 
+
+10:30 automate that part we went with a new
+10:32 
+
+10:32 version of the product the next day and
+10:35 
+
+10:35 automated the part that was missing when
+10:37 
+
+10:37 we returned to to Bucharest it was like
+10:40 
+
+10:40 a light for us we said okay this is what
+10:42 
+
+10:42 we can do to make their lives better the
+10:45 
+
+10:45 companies better to bring them real
+10:48 
+
+10:48 value I wouldn't call us a company at
+10:50 
+
+10:50 that point when we went in India we were
+10:53 
+
+10:53 a small group of people that wanted to
+10:56 
+
+10:56 bring value to their customers when they
+10:58 
+
+10:58 finally discovered though we I have
+10:60 
+
+10:60 customers and that was the moment that
+11:02 
+
+11:02 we decide to to switch and focus on RPA
+11:07 
+
+11:07 I realized that actually that's a much
+11:10 
+
+11:10 bigger Market than what we were going
+11:14 
+
+11:14 for before I couldn't imagine that there
+11:18 
+
+11:18 are so many inefficiencies in the world
+11:21 
+
+11:21 of business Enterprise business
+11:24 
+
+11:24 processes it has become obvious to me
+11:27 
+
+11:27 that we have to go all in after that
+11:33 
+
+11:33 market after 8 years of bootstrapping
+11:36 
+
+11:36 and looking for product Market fit
+11:39 
+
+11:39 Daniel made a crucible decision desk
+11:41 
+
+11:41 over would shift its focus entirely to
+11:45 
+
+11:45 RPA there was no risk for us at that
+11:48 
+
+11:48 point we were going to die anyway in uh
+11:52 
+
+11:52 in our little market there are moments
+11:55 
+
+11:55 when you you go you feel like you are in
+11:58 
+
+11:58 a fog and you don't know which direction
+12:00 
+
+12:00 to go and you go carefully and suddenly
+12:04 
+
+12:04 the fog clears up and you see where you
+12:06 
+
+12:06 go and then you go very fast that was us
+12:10 
+
+12:10 after kind of 8 years of uh going in the
+12:16 
+
+12:16 fog we went right after the target it
+12:20 
+
+12:20 was very easy for us to just follow
+12:22 
+
+12:22 customer requests based on
+12:26 
+
+12:26 that we knew that blue prism had an
+12:30 
+
+12:30 indirect sales motion meaning they sold
+12:32 
+
+12:32 exclusively through the channel they
+12:34 
+
+12:34 didn't have direct conversations with
+12:36 
+
+12:36 their customers my name is Brandon deer
+12:38 
+
+12:38 I'm the chief strategy officer and COO
+12:40 
+
+12:40 of our goto market organization at
+12:42 
+
+12:42 uipath and I think this is something
+12:44 
+
+12:44 that set us apart very early on was that
+12:46 
+
+12:46 we wanted to go direct we wanted to have
+12:48 
+
+12:48 customer empathy and centricity we
+12:51 
+
+12:51 wanted to originate uh product
+12:52 
+
+12:52 Innovation new feature ideas worldclass
+12:55 
+
+12:55 support and we wanted to do it all
+12:57 
+
+12:57 through the voice and the feedback loop
+13:00 
+
+13:00 of having a onetoone relationship with
+13:02 
+
+13:02 our customers in 2013 disover released a
+13:06 
+
+13:06 new RPA Focus product they called it
+13:10 
+
+13:10 uipath Studio we've built our first
+13:15 
+
+13:15 orchestration in our product it was a
+13:18 
+
+13:18 little bit patchy but you have a product
+13:20 
+
+13:20 that is capable of building one
+13:22 
+
+13:22 Automation and you need to build another
+13:24 
+
+13:24 product that can scale deploy and scale
+13:27 
+
+13:27 hundreds of
+13:28 
+
+13:28 automation in time we built all the
+13:31 
+
+13:31 other building blocks that allowed us to
+13:33 
+
+13:33 automate a business process from one way
+13:36 
+
+13:36 end to the other and with the input
+13:39 
+
+13:39 visible both for the people that are
+13:41 
+
+13:41 actually doing the job the mundane tasks
+13:45 
+
+13:45 but also for the SE Suite or management
+13:47 
+
+13:47 Suite to see how their automations are
+13:50 
+
+13:50 performing the other thing that came up
+13:52 
+
+13:52 quite often with customers was just more
+13:55 
+
+13:55 a more robust and more scalable
+13:57 
+
+13:57 architecture because when you run Many
+13:60 
+
+13:60 Robots at scale automating many many
+14:02 
+
+14:02 processes the last thing you want is for
+14:05 
+
+14:05 these robots to break down because then
+14:07 
+
+14:07 you still have to have humans go and fix
+14:09 
+
+14:09 them um and you're trying to automate
+14:11 
+
+14:11 this work you're not trying to create
+14:13 
+
+14:13 extra work customers wanted RPA and it
+14:16 
+
+14:16 was a lot about Daniel and the team yes
+14:19 
+
+14:19 creating more demand but mostly
+14:21 
+
+14:21 fulfilling the demand that was already
+14:24 
+
+14:24 out there one of the key things to learn
+14:27 
+
+14:27 and to remember while you are a St up is
+14:30 
+
+14:30 that your Market fit may not be the one
+14:34 
+
+14:34 that you're thinking of may not be the
+14:35 
+
+14:35 one that you're actually uh serving
+14:38 
+
+14:38 today but if you are open and if you
+14:42 
+
+14:42 allow yourself to look outside to uh
+14:45 
+
+14:45 interact with all the opportunities that
+14:47 
+
+14:47 come you may actually discover that your
+14:50 
+
+14:50 Market fit is other and is the one that
+14:52 
+
+14:52 is more appropriate for
+14:56 
+
+14:56 you imagine eight years working in a a
+14:59 
+
+14:59 garage you know that you build some kind
+15:01 
+
+15:01 of good technology but nothing moves you
+15:04 
+
+15:04 don't die but you don't grow either
+15:07 
+
+15:07 after you get so much beating I think
+15:10 
+
+15:10 you don't stop it gets you prepared I
+15:13 
+
+15:13 felt this is the moment that we all were
+15:18 
+
+15:18 waiting for but our real growth was
+15:21 
+
+15:21 after we first concluded our seed around
+15:25 
+
+15:25 after achieving product Market fit the
+15:27 
+
+15:27 company began attracting attention from
+15:29 
+
+15:29 from investors in Europe as it was
+15:31 
+
+15:31 taking off in 2015 Daniel changed the
+15:33 
+
+15:33 name of the company from desk over to
+15:36 
+
+15:36 uip path I happened to go to Bucharest
+15:40 
+
+15:40 for for a weekend and I thought let me
+15:42 
+
+15:42 take one day um and meet some of the
+15:45 
+
+15:45 smartest people in the tech ecosystem in
+15:48 
+
+15:48 bucarest at the time luchiana was
+15:51 
+
+15:51 working for the Venture Capital firm
+15:53 
+
+15:53 atel in Bucharest she met uipath's seed
+15:56 
+
+15:56 investor who insisted on making an
+15:58 
+
+15:58 introduction to
+16:01 
+
+16:01 Daniel I remember when I went to visit
+16:03 
+
+16:03 the company one of the co-founders said
+16:06 
+
+16:06 something to me that I still remember
+16:08 
+
+16:08 after seven years now um I said I'm so
+16:11 
+
+16:11 excited to see a Romanian company with
+16:14 
+
+16:14 so much potential and and they were
+16:16 
+
+16:16 almost offended they said we are a
+16:19 
+
+16:19 Silicon Valley company but we're
+16:21 
+
+16:21 building in Romania and with Daniel
+16:24 
+
+16:24 after spending many hours together a few
+16:27 
+
+16:27 things became obvious
+16:29 
+
+16:29 he was highly
+16:31 
+
+16:31 intelligent he had an unusual level of
+16:35 
+
+16:35 determination which is reflected in the
+16:37 
+
+16:37 fact that for 10 years he did not give
+16:40 
+
+16:40 up I think at some point he called
+16:42 
+
+16:42 himself unemployable looking for product
+16:45 
+
+16:45 Market fit for a decade uh takes a lot
+16:48 
+
+16:48 of resilience that's really unique so he
+16:52 
+
+16:52 had this attitude that this is it or
+16:54 
+
+16:54 nothing else there's no choice but to
+16:56 
+
+16:56 win there's no choice but to succeed and
+16:58 
+
+16:58 he was very
+16:60 
+
+16:60 confident it it came across in many ways
+17:03 
+
+17:03 but but one of the ways was when we
+17:05 
+
+17:05 signed the term sheet I still remember
+17:09 
+
+17:09 he said with just a lot of conviction
+17:12 
+
+17:12 this is going to be a very successful
+17:14 
+
+17:14 company luchana and Excel led a $30
+17:17 
+
+17:17 million series a financing the company's
+17:20 
+
+17:20 pivot to RPA had completely transformed
+17:22 
+
+17:22 it from obscurity to one of the hottest
+17:25 
+
+17:25 Tech startups in Europe but Daniel
+17:28 
+
+17:28 wasn't satisfied so we have finished
+17:33 
+
+17:33 2016 with 5 million in ARR and in 2017
+17:38 
+
+17:38 we were thinking we will finish the year
+17:40 
+
+17:40 maybe 30 35 so it was really huge growth
+17:44 
+
+17:44 and I I could have seen that actually
+17:47 
+
+17:47 this is becoming a big category and at
+17:50 
+
+17:50 that point we were still number three in
+17:54 
+
+17:54 the market but what I realize is it's
+17:57 
+
+17:57 that's there is a big pull from the
+17:59 
+
+17:59 market and this is going to accelerate
+18:03 
+
+18:03 into next year and actually the number
+18:06 
+
+18:06 one company will take the Lion Share and
+18:08 
+
+18:08 if if we can become prominently clearly
+18:12 
+
+18:12 the number one RPA company it will be a
+18:15 
+
+18:15 no-brainer decision for many customers
+18:17 
+
+18:17 so and we will get the biggest market
+18:21 
+
+18:21 share some Crucible moments land on your
+18:23 
+
+18:23 doorstep others hide in plain sight
+18:26 
+
+18:26 demanding you identify them and act
+18:30 
+
+18:30 while many would have been happy with
+18:31 
+
+18:31 the company's trajectory Daniel sensed
+18:34 
+
+18:34 the fleeting opportunity to change gears
+18:36 
+
+18:36 and Leap Frog the competition to become
+18:38 
+
+18:38 the clear winner in a big
+18:41 
+
+18:41 category we knew pretty well our
+18:43 
+
+18:43 competitors and we knew where they were
+18:46 
+
+18:46 as as Revenue I think the biggest one
+18:48 
+
+18:48 was probably maybe 70 80 at that point
+18:53 
+
+18:53 and I knew that they are probably going
+18:55 
+
+18:55 to 100 next year based on their growth
+18:58 
+
+18:58 and in the board meeting at that time
+18:60 
+
+18:60 when we were discussing the budget for
+19:04 
+
+19:04 2018 I remember Lana
+19:07 
+
+19:07 alandre telling me Danielle I will be
+19:11 
+
+19:11 very happy if next year you'll deliver
+19:13 
+
+19:13 like $70 million of ARR and I told them
+19:18 
+
+19:18 we need to be twice as big Revenue eyes
+19:20 
+
+19:20 as our competitors so I want to build
+19:24 
+
+19:24 the company to deliver $200 million in
+19:28 
+
+19:28 2018 and and they thought I'm crazy
+19:32 
+
+19:32 clearly the thing about large numbers is
+19:35 
+
+19:35 that the bigger you get the harder it is
+19:38 
+
+19:38 to maintain your growth rate and if you
+19:40 
+
+19:40 do the organizational challenges are
+19:43 
+
+19:43 immense going from 5 million to 35
+19:46 
+
+19:46 million in Revenue in a year is one
+19:48 
+
+19:48 thing but to go from 30 million to 200
+19:51 
+
+19:51 is something else
+19:53 
+
+19:53 entirely I remember this board meeting
+19:56 
+
+19:56 where Daniel put out a plan to go from
+19:59 
+
+19:59 35 million to 200 at the time a a very
+20:04 
+
+20:04 very aggressive growth plan and I
+20:06 
+
+20:06 remember saying Daniel even if we double
+20:08 
+
+20:08 from 35 to 70 that will be a great year
+20:12 
+
+20:12 I remember it because Daniel reminds me
+20:14 
+
+20:14 all the
+20:15 
+
+20:15 time to get there Daniel borrowed a
+20:18 
+
+20:18 strategy from the history books
+20:22 
+
+20:22 literally at that point I was joking
+20:25 
+
+20:25 with my team saying our strategy is like
+20:28 
+
+20:28 uh
+20:29 
+
+20:29 JIS Kong strategy we both read the same
+20:33 
+
+20:33 book which was the biography of genis
+20:36 
+
+20:36 Kong and there was this Obsession around
+20:38 
+
+20:38 the speed you should go faster than them
+20:41 
+
+20:41 you know how they conquered China their
+20:43 
+
+20:43 army was faster than Chinese Army so
+20:45 
+
+20:45 they were defeating all the Chinese
+20:47 
+
+20:47 cities and they couldn't catch them so
+20:50 
+
+20:50 that that was kind of my strategy let's
+20:53 
+
+20:53 go let's spread let's see where it works
+20:55 
+
+20:55 and let's double down on
+20:57 
+
+20:57 it he talked about about the gisan
+20:60 
+
+20:60 strategy all the time once uh an idea
+21:03 
+
+21:03 comes to mind usually while he reads
+21:05 
+
+21:05 something he repeats it and thinks about
+21:08 
+
+21:08 it and repeats it and repeats it until I
+21:11 
+
+21:11 think it makes sense to everyone the
+21:14 
+
+21:14 genas con strategy would mean expanding
+21:16 
+
+21:16 into multiple International markets
+21:19 
+
+21:19 simultaneously including the US and
+21:21 
+
+21:21 Japan and rapidly scaling up The uip
+21:23 
+
+21:23 Path team to serve them going to
+21:26 
+
+21:26 multiple markets simultaneously was uh I
+21:30 
+
+21:30 think a product of our
+21:33 
+
+21:33 exuberance I would say that at the time
+21:35 
+
+21:35 there was no Playbook yet I think that
+21:38 
+
+21:38 uipath is one of the first companies
+21:40 
+
+21:40 that built out this Playbook uipath also
+21:44 
+
+21:44 carefully examine the practices of
+21:46 
+
+21:46 competitors in order to differentiate
+21:49 
+
+21:49 themselves our competitors they were at
+21:51 
+
+21:51 the Forefront of all of our
+21:52 
+
+21:52 conversations what are the things that
+21:54 
+
+21:54 they were coming out with what are the
+21:55 
+
+21:55 things that they're talking about in
+21:57 
+
+21:57 their press releases and their document
+21:59 
+
+21:59 ation when we met with respective
+22:01 
+
+22:01 customers that were already using their
+22:04 
+
+22:04 Technologies we'd ask them what is it
+22:06 
+
+22:06 about them that you love how do you
+22:07 
+
+22:07 derive value what have they shared with
+22:09 
+
+22:09 you in terms of future things that
+22:11 
+
+22:11 you're excited about how have you
+22:14 
+
+22:14 compared and contrast our capabilities
+22:16 
+
+22:16 versus theirs I think early on we saw
+22:18 
+
+22:18 that there was kind of a naive neglect
+22:21 
+
+22:21 from the blue prism shop around customer
+22:24 
+
+22:24 support and white glove service and so
+22:26 
+
+22:26 we completely rotated towards providing
+22:29 
+
+22:29 the best support anything the customer
+22:30 
+
+22:30 wanted we did you know it was like an
+22:32 
+
+22:32 anx Black Card concierge type service
+22:34 
+
+22:34 you called uipath as a customer or
+22:37 
+
+22:37 prospective account we gave you our all
+22:39 
+
+22:39 and it didn't matter who you talked to
+22:41 
+
+22:41 you could have called me direct you
+22:42 
+
+22:42 could have called Daniel direct I think
+22:44 
+
+22:44 RP was great to uipath but uipath was
+22:47 
+
+22:47 also great to RPA the company invested a
+22:50 
+
+22:50 lot in category building in customer
+22:53 
+
+22:53 education in just giving customers a
+22:56 
+
+22:56 delightful experience which which is
+22:58 
+
+22:58 what promotes more and more of this
+22:60 
+
+22:60 product to be
+23:02 
+
+23:02 sold uip path met Daniel's audacious
+23:06 
+
+23:06 goal growing from $5 million in Revenue
+23:09 
+
+23:09 to $35 million to nearly $200 million
+23:13 
+
+23:13 year over-year this astronomical rise
+23:17 
+
+23:17 made uipath the fastest growing SAS
+23:19 
+
+23:19 company in history at the time uipath
+23:22 
+
+23:22 moved its headquarters to New York and
+23:24 
+
+23:24 opened 30 offices in 16 countries the
+23:29 
+
+23:29 stories are very very rare at the time
+23:31 
+
+23:31 in my experience it was almost unheard
+23:33 
+
+23:33 of at this point the UI path story was
+23:37 
+
+23:37 pretty crazy it was probably the quote
+23:40 
+
+23:40 unquote hottest startup in Europe and
+23:43 
+
+23:43 and one of the hottest startups in the
+23:45 
+
+23:45 US they had access to really great
+23:47 
+
+23:47 talent it was overall incredibly
+23:50 
+
+23:50 exciting but I will say it also made us
+23:53 
+
+23:53 a little bit nervous because the revenue
+23:55 
+
+23:55 growth was spectacular the employee
+23:58 
+
+23:58 growth was also spectacular it seemed
+24:01 
+
+24:01 like every day there was 10 new people
+24:04 
+
+24:04 in the office and it wasn't that big an
+24:06 
+
+24:06 office it was probably equipped to hold
+24:08 
+
+24:08 I don't know 150 or so people I remember
+24:12 
+
+24:12 uh going to the men's room and turning
+24:14 
+
+24:14 the corner and there was a line looping
+24:17 
+
+24:17 all the way across the desk where the
+24:19 
+
+24:19 engineers sat and the engineers are
+24:21 
+
+24:21 sitting there you know trying to have
+24:22 
+
+24:22 their quiet time you know conduct their
+24:24 
+
+24:24 coding and trying to work in some peace
+24:26 
+
+24:26 and quiet and you've got a line of gu
+24:29 
+
+24:29 you know kind of doing an S wrap around
+24:31 
+
+24:31 their desks and it was just this moment
+24:33 
+
+24:33 of like one you could see they were
+24:34 
+
+24:34 pissed off and super irritated but it
+24:36 
+
+24:36 was also like kind of funny you know to
+24:38 
+
+24:38 see and and all of these people had just
+24:40 
+
+24:40 started you know we were busting at the
+24:42 
+
+24:42 seams we moved to a bigger office and
+24:45 
+
+24:45 you see suddenly 100 people in a room
+24:47 
+
+24:47 and you have to talk to 100 people it
+24:50 
+
+24:50 was kind of insane the feeling for me
+24:53 
+
+24:53 and you have all sorts of faces and they
+24:56 
+
+24:56 look with trust in you and things were
+24:58 
+
+24:58 growing and yeah it was crazy good times
+25:02 
+
+25:02 it's the best feeling in the world
+25:03 
+
+25:03 really the gasan strategy had paid off
+25:07 
+
+25:07 uip paath had cornered the RPA Market
+25:10 
+
+25:10 but in 2019 it became obvious that this
+25:13 
+
+25:13 extraordinary growth came at a
+25:17 
+
+25:17 price and I think that there's always
+25:19 
+
+25:19 dichotomies of trade-off between speed
+25:22 
+
+25:22 and quality and process we're seeing two
+25:26 
+
+25:26 different things on the one hand we're
+25:28 
+
+25:28 seeing a lot of customer demand um and
+25:30 
+
+25:30 we're seeing a very fast growing Market
+25:33 
+
+25:33 where uipath is really solidifying his
+25:37 
+
+25:37 position as the leader in fact is
+25:38 
+
+25:38 growing much faster than competitors and
+25:41 
+
+25:41 the reviews of their product are really
+25:43 
+
+25:43 positive compared to other players in
+25:45 
+
+25:45 the market so on the one hand that's
+25:46 
+
+25:46 going really well on the other hand
+25:49 
+
+25:49 we're starting to feel internal
+25:51 
+
+25:51 organizational pains from having added
+25:54 
+
+25:54 so many people in such a short period of
+25:56 
+
+25:56 time and and the companies obviously
+25:59 
+
+25:59 burning quite a lot of money at this
+26:00 
+
+26:00 point as well given the meaningful
+26:02 
+
+26:02 increase in the organization from 100
+26:05 
+
+26:05 150 people to about 3,000 people in only
+26:08 
+
+26:08 a couple of years because when you add
+26:10 
+
+26:10 3,000 people in two years of course it's
+26:13 
+
+26:13 impossible to do that in the most
+26:15 
+
+26:15 structured process driven disciplined
+26:17 
+
+26:17 Manner and that became clear to the
+26:20 
+
+26:20 board and it became clear to Daniel as
+26:23 
+
+26:23 well it's a very risky game you got into
+26:27 
+
+26:27 we were in a bad position we were we
+26:30 
+
+26:30 were really getting into our cash in
+26:34 
+
+26:34 2019 UI PA's projected cash burn was
+26:38 
+
+26:38 $150 million but the company ended up at
+26:41 
+
+26:41 a number almost triple that amount the
+26:44 
+
+26:44 company consumed $400
+26:48 
+
+26:48 million Corner a market isn't for the
+26:51 
+
+26:51 faint of heart it sounds like hey let's
+26:53 
+
+26:53 go let's go build an incredible company
+26:55 
+
+26:55 and make a ton of money and that sounds
+26:57 
+
+26:57 great and in actuality to do it you need
+27:00 
+
+27:00 to make a lot of mistakes painful
+27:03 
+
+27:03 mistakes along the way you need to
+27:05 
+
+27:05 really feel some pain it's hard to
+27:06 
+
+27:06 realize the cost of all of these things
+27:09 
+
+27:09 in any given moment as you're making
+27:11 
+
+27:11 those decisions you end up with a lot of
+27:14 
+
+27:14 people with poorly defined roles that
+27:16 
+
+27:16 you made a lot of big offers to you end
+27:19 
+
+27:19 up with a lot of big customers that you
+27:20 
+
+27:20 made a lot of big Promises to the
+27:23 
+
+27:23 explosive growth finally brought a
+27:25 
+
+27:25 reckoning how could the company re in
+27:28 
+
+27:28 costs to grow in a sustainable way I
+27:32 
+
+27:32 think we really were fighting for our
+27:33 
+
+27:33 lives it was a matter of life and death
+27:36 
+
+27:36 at that moment and that's part of the
+27:37 
+
+27:37 reason that we were forced to cut so
+27:40 
+
+27:40 deeply and so quickly we have to do a
+27:42 
+
+27:42 hard course correct we had to fire 10%
+27:46 
+
+27:46 of our people I think there is no
+27:48 
+
+27:48 tougher feeling than to tell someone you
+27:52 
+
+27:52 know that we have to part ways because
+27:55 
+
+27:55 it's a disappointment it's a
+27:57 
+
+27:57 disappointment in yourself first of all
+27:60 
+
+27:60 you feel their pain you feel their
+28:03 
+
+28:03 disappointment it I it never gets easy
+28:07 
+
+28:07 it's it's hard it's the hardest part I
+28:09 
+
+28:09 think of of business it's a pain that
+28:14 
+
+28:14 makes you to act in a way that you'll
+28:17 
+
+28:17 never feel it
+28:19 
+
+28:19 again uath had to make some very hard
+28:21 
+
+28:21 decisions while the company was still
+28:23 
+
+28:23 growing very fast so on the one hand you
+28:26 
+
+28:26 can be out there celebrating incredible
+28:28 
+
+28:28 growth like very few companies had from
+28:32 
+
+28:32 5 million to 35 to 170 to 370 this is
+28:36 
+
+28:36 really spectacular but at the same time
+28:38 
+
+28:38 you have to be very very honest with
+28:40 
+
+28:40 yourself about how the health of your
+28:42 
+
+28:42 organization the culture the
+28:45 
+
+28:45 productivity of your organization fixing
+28:47 
+
+28:47 problems doing more with less I think as
+28:51 
+
+28:51 a leader you also have to be really
+28:53 
+
+28:53 really honest with yourself about all
+28:55 
+
+28:55 these things and Daniel did that
+28:59 
+
+28:59 the measures taken to rightsize the
+29:00 
+
+29:00 business in 2019 meant that uipath
+29:02 
+
+29:02 headed into 2020 a leaner and more
+29:05 
+
+29:05 numble company this paid off during the
+29:07 
+
+29:07 pandemic allowing them to weather the
+29:09 
+
+29:09 crisis and its economic instability
+29:11 
+
+29:11 better than
+29:12 
+
+29:12 competitors in 2020 uipath's Revenue
+29:15 
+
+29:15 broke $600 million and then in April
+29:19 
+
+29:19 2021 uipath had one of the largest
+29:22 
+
+29:22 software IPOs in history it was a
+29:25 
+
+29:25 breathtaking rise from a company that
+29:27 
+
+29:27 just a few years earlier was only a
+29:29 
+
+29:29 handful of Engineers operating out of a
+29:32 
+
+29:32 small apartment in
+29:34 
+
+29:34 Bucharest the IPO moment itself still
+29:38 
+
+29:38 feels like a dream I think the moment I
+29:41 
+
+29:41 personally realized we we actually ipoed
+29:44 
+
+29:44 was the night of the party when I was
+29:47 
+
+29:47 looking at an ie sculpture with uipath
+29:51 
+
+29:51 and New York Stock Exchange and I said
+29:53 
+
+29:53 why are these words together it makes no
+29:55 
+
+29:55 sense oh we just ipoed today okay now it
+30:02 
+
+30:02 does utilizing so-called computer vision
+30:06 
+
+30:06 technology uip paath had always relied
+30:08 
+
+30:08 on a form of AI for its process
+30:10 
+
+30:10 automation but in late 2022 open AI
+30:14 
+
+30:14 release of chat GPT upended the AI
+30:18 
+
+30:18 landscape I don't know that anyone was
+30:20 
+
+30:20 fully prepared for the power of
+30:23 
+
+30:23 generative artificial intelligence I
+30:25 
+
+30:25 think it came fast and furious and I
+30:28 
+
+30:28 remember the first time I heard about
+30:31 
+
+30:31 GPT was probably two and a half three
+30:33 
+
+30:33 years ago and there were a bunch of
+30:36 
+
+30:36 really um kind of complex white Papers
+30:39 
+
+30:39 written on that if you were part of the
+30:40 
+
+30:40 AI Community you know you were listening
+30:42 
+
+30:42 to researchers to begin to talk about it
+30:44 
+
+30:44 but its application at least within the
+30:47 
+
+30:47 Enterprise was not widely accepted uh I
+30:51 
+
+30:51 I don't think a lot of people saw it as
+30:53 
+
+30:53 a real threat to what they were doing
+30:55 
+
+30:55 today everyone in Enterprise software
+30:57 
+
+30:57 has been building you know their Tech
+30:59 
+
+30:59 and training their data and acquiring
+31:01 
+
+31:01 customers for so long how could
+31:02 
+
+31:02 something come in and disrupt that in an
+31:05 
+
+31:05 automated fashion overnight and have
+31:07 
+
+31:07 seemingly unlimited Intelligence on
+31:10 
+
+31:10 everything for uip the rise of
+31:13 
+
+31:13 generative AI posed an existential
+31:16 
+
+31:16 question would the capabilities of alms
+31:18 
+
+31:18 impact the relevance of RPA how should
+31:21 
+
+31:21 uip path adapt we started with computer
+31:24 
+
+31:24 vision so to understand screens we
+31:27 
+
+31:27 extended that computer vision technology
+31:29 
+
+31:29 to understand documents semi-structured
+31:32 
+
+31:32 document and it was kind of natural to
+31:35 
+
+31:35 incorporate
+31:39 
+
+31:39 J it's kind of clear to me that if we
+31:42 
+
+31:42 don't go to combine gen with automation
+31:47 
+
+31:47 we will become extinct we will become
+31:50 
+
+31:50 irrelevant to the Enterprises I think
+31:53 
+
+31:53 the main challenge with Gen for
+31:55 
+
+31:55 businesses right now is from the the
+31:59 
+
+31:59 reliability of gen it's so smart but
+32:02 
+
+32:02 it's like hiring an unstable Geniuses
+32:05 
+
+32:05 and most companies would like stable
+32:08 
+
+32:08 decent level of intelligence and I think
+32:11 
+
+32:11 this is where most of the challenges are
+32:15 
+
+32:15 but having the automation creating
+32:17 
+
+32:17 better grounding for llms I think will
+32:20 
+
+32:20 go a long
+32:22 
+
+32:22 distance when a new technology like this
+32:24 
+
+32:24 evolves I think if you're not at the
+32:26 
+
+32:26 Forefront of it you're like in a place
+32:28 
+
+32:28 to be displaced and so we're investing
+32:32 
+
+32:32 everything that we have to ensure that
+32:35 
+
+32:35 our products are not just keeping up
+32:37 
+
+32:37 with the market but actually pushing the
+32:39 
+
+32:39 market as it relates to all the
+32:41 
+
+32:41 different capabilities around
+32:43 
+
+32:43 automation I think it's very important
+32:45 
+
+32:45 for uipath to have the AI capabilities
+32:49 
+
+32:49 that fix the customers problems but also
+32:52 
+
+32:52 to be able to explain to them this is
+32:55 
+
+32:55 not an AI problem you can automate this
+32:59 
+
+32:59 with this tool or this tool or any other
+33:03 
+
+33:03 process and it will be maybe more cheap
+33:06 
+
+33:06 and more reliable for you I think they
+33:08 
+
+33:08 complement each other I don't think it
+33:10 
+
+33:10 can ever be outdated the RPA category
+33:14 
+
+33:14 can't be eliminated alog together our
+33:17 
+
+33:17 platform having our low code approach is
+33:20 
+
+33:20 very suitable to use the to build an llm
+33:23 
+
+33:23 up and when you pair it with automation
+33:26 
+
+33:26 the result is exponential IAL uip paath
+33:30 
+
+33:30 has released a number of products
+33:31 
+
+33:31 combining Genai and RPA like AI Center
+33:35 
+
+33:35 which lets users easily add ml models to
+33:37 
+
+33:37 existing uip path automations there's
+33:40 
+
+33:40 also a clipboard AI a tool specifically
+33:42 
+
+33:42 designed for copying and pasting large
+33:44 
+
+33:44 amounts of data and uipath autopilot a
+33:47 
+
+33:47 tool anyone can use to supercharge
+33:50 
+
+33:50 productivity a uipath autopilot is one
+33:53 
+
+33:53 of the best examples of AI working with
+33:55 
+
+33:55 RPA and helping our our platform deliver
+33:60 
+
+33:60 the the AI benefits to our customers we
+34:02 
+
+34:02 have autopilot for developers autopilot
+34:05 
+
+34:05 for testers autopilot for reporting and
+34:08 
+
+34:08 what this actually does is it brings the
+34:12 
+
+34:12 value and the power of our platform to
+34:15 
+
+34:15 people that uh don't know how to build
+34:19 
+
+34:19 the processes end to end and they don't
+34:21 
+
+34:21 have the Deep technical skills it's more
+34:24 
+
+34:24 like you're talking to a friend in
+34:25 
+
+34:25 layman terms and autopilot can generate
+34:29 
+
+34:29 for you the test cases the workflows the
+34:31 
+
+34:31 automations they reporting and this will
+34:34 
+
+34:34 be really helpful both for the beginners
+34:37 
+
+34:37 and for non-technical people but also
+34:40 
+
+34:40 for advanced developers that want to
+34:42 
+
+34:42 validate their work our main proposition
+34:45 
+
+34:45 is automation will make the models more
+34:48 
+
+34:48 reliable and how AI can help us I think
+34:51 
+
+34:51 we've become much crisper over the last
+34:54 
+
+34:54 18 months I see actually a new dawn in a
+34:58 
+
+34:58 way for automation now many people
+35:01 
+
+35:01 realize that AI without automation
+35:04 
+
+35:04 doesn't really get to the full benefit
+35:07 
+
+35:07 of AI and to quote one of uh our
+35:11 
+
+35:11 longtime customer he said to me recently
+35:15 
+
+35:15 Daniel we talk a lot about AI but most
+35:18 
+
+35:18 of time we end up talking about
+35:22 
+
+35:22 automation to prioritize the company's
+35:25 
+
+35:25 integration of RPA with llms and ensure
+35:29 
+
+35:29 the company remains relevant in the AI
+35:31 
+
+35:31 era in January 2024 Daniel decided to
+35:35 
+
+35:35 step away from his position as CEO to
+35:37 
+
+35:37 take on the role of Chief Innovation
+35:39 
+
+35:39 officer it was very helpful for me
+35:42 
+
+35:42 considering all the evolution of AI to
+35:45 
+
+35:45 be there to put my mind completely there
+35:48 
+
+35:48 Daniel had some time as the chief
+35:50 
+
+35:50 Innovation officer of the company word
+35:52 
+
+35:52 his primary domain his primary uh effort
+35:56 
+
+35:56 was spent on all all things product and
+35:58 
+
+35:58 engineering and I think that was a
+36:01 
+
+36:01 really incredible opportunity for him
+36:03 
+
+36:03 and for the company for him to get
+36:05 
+
+36:05 extremely deep into the weeds in a
+36:07 
+
+36:07 domain that he's super passionate about
+36:09 
+
+36:09 I think the things that Daniel's been
+36:10 
+
+36:10 working on for the last year around
+36:12 
+
+36:12 semantic automation around agentic AI
+36:15 
+
+36:15 process orchestration these are the
+36:17 
+
+36:17 things that are probably going to shape
+36:18 
+
+36:18 the future of the
+36:20 
+
+36:20 company but do Daniel focused on product
+36:23 
+
+36:23 Innovation it was a rocky period for the
+36:25 
+
+36:25 company's leadership team it was on Old
+36:28 
+
+36:28 Guard versus new guard type of you know
+36:32 
+
+36:32 dynamic in the company which was kind of
+36:36 
+
+36:36 not very healthy I got a little bit
+36:39 
+
+36:39 disconnected also from customers from
+36:42 
+
+36:42 Partners doing all this and the company
+36:45 
+
+36:45 has become more and more siloed not that
+36:48 
+
+36:48 we are not talking but I think somehow
+36:52 
+
+36:52 organizations mimic the leader to mend
+36:56 
+
+36:56 divisions and Propel the company in a
+36:58 
+
+36:58 New Direction in May 2024 Daniel stepped
+37:01 
+
+37:01 back into the role of CEO the rapid
+37:04 
+
+37:04 change in leadership rattled the public
+37:06 
+
+37:06 markets and youi stock saw a steep drop
+37:10 
+
+37:10 in share
+37:11 
+
+37:11 price the last two months were probably
+37:15 
+
+37:15 some of the toughest maybe the toughest
+37:18 
+
+37:18 it was it was a different order of
+37:20 
+
+37:20 magnitude from 2009 talking to investors
+37:24 
+
+37:24 after our earnings call it was really
+37:26 
+
+37:26 some of the toughest moments it's the
+37:29 
+
+37:29 disappointment of people that put the
+37:31 
+
+37:31 trust in you it's to me it's extremely
+37:34 
+
+37:34 hard to to get over it at a human level
+37:37 
+
+37:37 it's terrible but at an intellectual
+37:40 
+
+37:40 level I think we are doing the right
+37:42 
+
+37:42 thing I think that my returning as the
+37:45 
+
+37:45 CEO revigor Ates a bit for us as a
+37:49 
+
+37:49 company maybe it's the it's the best
+37:51 
+
+37:51 move we can move faster I can connect
+37:55 
+
+37:55 faster I can break the silos to meet the
+37:58 
+
+37:58 no new people or old people it's just
+38:01 
+
+38:01 one we're putting the company back on
+38:04 
+
+38:04 track and of course it's going to take
+38:06 
+
+38:06 it's going to take you know a few
+38:08 
+
+38:08 quarters until we'll see the results but
+38:12 
+
+38:12 we we're are seeing the early signs in
+38:15 
+
+38:15 the company I think we're all super
+38:17 
+
+38:17 bullish on the future of the company we
+38:20 
+
+38:20 made a number of refinements to how we
+38:22 
+
+38:22 build where we spend time how we ship
+38:25 
+
+38:25 and I think our product strategy has
+38:28 
+
+38:28 really honed in on something quite
+38:30 
+
+38:30 special for the future today uipath has
+38:34 
+
+38:34 10,800 customers in over 100 countries
+38:37 
+
+38:37 it continues to be the leader in RPA I
+38:41 
+
+38:41 think uipath today in many respects is
+38:44 
+
+38:44 special because it has the same values
+38:47 
+
+38:47 that Daniel had set forth all those
+38:49 
+
+38:49 years ago it has the same Mission people
+38:52 
+
+38:52 no longer need to be stuck in those
+38:54 
+
+38:54 keystrokes in those Mouse clicks moving
+38:56 
+
+38:56 data between systems and different end
+38:58 
+
+38:58 applications and that allows them to
+39:00 
+
+39:00 focus on higher level more strategic
+39:03 
+
+39:03 thinking we always joked in the earlier
+39:06 
+
+39:06 days that uipath was a tenure in the
+39:09 
+
+39:09 making overnight success it is the
+39:12 
+
+39:12 largest enterprise software company
+39:14 
+
+39:14 coming out of Europe in the last decade
+39:16 
+
+39:16 or more and one may expect this company
+39:19 
+
+39:19 to start in London or Paris or Munich
+39:23 
+
+39:23 and that wasn't the case the company
+39:24 
+
+39:24 started in a in a pretty small country
+39:27 
+
+39:27 in Eastern Europe
+39:28 
+
+39:28 that doesn't have a developed technology
+39:30 
+
+39:30 ecosystem and from there Daniel and the
+39:33 
+
+39:33 team found their way to global
+39:36 
+
+39:36 domination in RPA and to winning not
+39:38 
+
+39:38 only in Europe but winning in the US as
+39:40 
+
+39:40 well and I think that's really
+39:42 
+
+39:42 inspirational and and to this day
+39:44 
+
+39:44 Founders come and and want to meet me
+39:47 
+
+39:47 and want to talk to me because they they
+39:50 
+
+39:50 think that that's a really great story
+39:52 
+
+39:52 and then and because Daniel is such a
+39:54 
+
+39:54 role model and because they showed that
+39:56 
+
+39:56 you know with great people
+39:58 
+
+39:58 with the right ambition you can build
+39:60 
+
+39:60 something great from
+40:02 
+
+40:02 anywhere I think no Crucible moment will
+40:06 
+
+40:06 look the same to me I think it's
+40:08 
+
+40:08 essential to be surrounded by by people
+40:11 
+
+40:11 you trust board members your executive
+40:15 
+
+40:15 team and collectively go through these
+40:18 
+
+40:18 moments it's so important to to come
+40:21 
+
+40:21 together and talk and really in all good
+40:25 
+
+40:25 will find Solutions if even if it's
+40:28 
+
+40:28 sometimes it's the wrong direction but
+40:31 
+
+40:31 by moving you learn and then if you have
+40:35 
+
+40:35 the will to course correct you will find
+40:39 
+
+40:39 eventually the right
+40:46 
+
+40:46 [Music]
+40:48 
+
+40:48 way this has been Crucible moments a
+40:51 
+
+40:51 podcast from sequa capital
+40:56 
+
+40:56 [Music]
+41:05 
+
+41:05 Crucible moments is produced by the Epic
+41:07 
+
+41:07 stories and Vox creative podcast teams
+41:10 
+
+41:10 along with sequa
+41:12 
+
+41:12 [Music]
+41:14 
+
+41:14 capital special thanks to Daniel dines
+41:17 
+
+41:17 luchana lexandre Brandon deer and Andre
+41:20 
+
+41:20 Trish kush for sharing their stories
+41:24 
+
+41:24 [Music]

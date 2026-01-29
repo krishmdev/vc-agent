@@ -1,0 +1,192 @@
+00:02 Zach and Open Evidence are trying to
+00:04 really help those people that are
+00:07 helping the people in our society in
+00:08 greatest need with an AI that elevates
+00:12 and propels forward healthcare
+00:14 providers. Zach.
+00:19 All right. Thank you. All right. So,
+00:21 Open Evidence is a medical search
+00:23 platform for physicians. Uh and in the
+00:25 last 12 months, we've grown to have over
+00:27 25% of US practicing physicians as
+00:29 monthly active users. And the average
+00:31 user uses us every single day. Uh and so
+00:34 one of the really special things about
+00:35 this moment is that we hear very
+00:37 frequently from our users about how
+00:39 they're using open evidence and telling
+00:40 us their stories. And so I thought what
+00:42 better way to give a demo of open
+00:45 evidence and this platform than just
+00:47 collectively walking through a very real
+00:50 story that someone has told us exactly
+00:52 about. Um, so we got this note a few
+00:54 days ago from Dr. Susan Wolver, and
+00:56 Susan said, um, "Good morning. I want to
+00:58 tell you about how Owie helped me that
+00:60 you may not have heard about yet. I'm an
+01:01 internal medicine physician who recently
+01:03 had to respond to a medical emergency in
+01:05 flight. Um, Owie helped me to understand
+01:08 how immunompromised the patient was and
+01:09 helped me make a treatment plan I might
+01:11 not have otherwise made. I'd be happy to
+01:12 tell you more if you're interested.
+01:14 Thank you for providing an AI product
+01:15 that I can
+01:16 trust." Um, all right. So, we're going
+01:18 to put ourselves in Susan's shoes and
+01:20 walk through as a demo, you know,
+01:21 exactly what she went through and how
+01:23 she used open evidence. So, Susan's on a
+01:25 plane and she hears what I suspect most
+01:27 doctors spend most of their lives
+01:29 preparing for, which is, is there a
+01:31 doctor on board? Uh, and so she goes to
+01:34 investigate and it turns out that
+01:35 there's a 63-year-old uh man who has
+01:38 over the course of the flight developed
+01:40 a pretty severe uh rash over the uh on
+01:43 his arm and it's kind of unclear what it
+01:46 is. She suspects that it might be
+01:48 chickenpox. So we're going to follow her
+01:53 steps. Um so depending on where he's
+01:56 been traveling, it could be more or less
+01:57 likely that it's chickenpox. And
+01:58 depending on the incubation period, um
+02:00 that'll that'll help inform, you know,
+02:02 what is this is this chickenpox? Is this
+02:04 something else? Uh something like that.
+02:06 So she puts in open evidence um gets an
+02:09 answer. Um in this case, this is a
+02:10 pretty simple question. Um it doesn't
+02:12 require crazy references. you know, one
+02:13 of the key references is the CDC yellow
+02:15 book, which um is just a trusted
+02:17 resource in the space. And turn turns
+02:18 out the answer in this case was 15 days.
+02:20 And so, working through talking with the
+02:22 patient, it it turns out yes, actually
+02:23 this this actually very well could be
+02:25 chickenpox. But here's where it gets
+02:26 complicated. Uh it turns out the patient
+02:28 also had prostate cancer and was on a
+02:31 drug called extendi for prostate cancer.
+02:33 So chickenpox is not super serious if
+02:36 you're a kid. Um, if you're an adult, it
+02:38 can be very serious, but if you're an
+02:39 imunocmpromised adult, it can be
+02:41 extremely extremely serious and very
+02:42 dangerous to the extent of potentially
+02:44 in this case having to perform an
+02:46 emergency landing or turning the plane
+02:47 around or something like that. Uh, and
+02:49 so the question she asked was the
+02:53 following. Um, she had some idea that,
+02:56 you know, he the patient could be
+02:58 imunocmpromised. uh many cancer drugs do
+03:01 uh suppress the immune system and often
+03:04 cancer itself acts uh as some amount of
+03:06 imunosuppressive. So in this case um
+03:08 open evidence is going to search over um
+03:11 you know all trusted references the
+03:13 medical literature we're looking at
+03:14 leading journals such as the journal of
+03:16 imunotherapy of cancer recent research
+03:18 from you know just a few months ago in
+03:20 principle uh and the answer that she
+03:22 gets is um that the level of
+03:24 imunosuppression is moderate. So yes
+03:26 she'll be a little bit imunosh
+03:28 suppressed but you know probably it's
+03:30 they don't have to turn the plane
+03:31 around. Um but still there's a question
+03:33 of what you know what do we do in this
+03:35 case? So she asked the third question um
+03:37 here which is how to manage chickenp fox
+03:39 in this case and this is you know really
+03:41 trying to get a sense of how urgent is
+03:43 this? Is this something that we really
+03:44 need to get this guy medical attention
+03:46 in the next 30 minutes or can this wait
+03:48 a little
+03:49 bit? Um and in this case open evidence
+03:52 tells her um a series of drugs and kind
+03:54 of a a reasonable treatment plan for how
+03:57 to uh how to progress in the situation.
+03:59 It's based on again you know recent
+04:01 literature um and and trusted resources.
+04:05 Um and the answer is yeah there does
+04:07 there should be some urgency to to
+04:09 getting drugs um soon but you know they
+04:12 don't need this person doesn't need a
+04:13 drug in the next 30 minutes or they're
+04:14 going to die. And so on the basis of
+04:16 this um they don't turn the plane around
+04:19 they keep going and everyone kind of
+04:20 continues on their day. They make the
+04:22 treatment available upon landing and uh
+04:24 everyone's okay. Uh and so for me I
+04:27 think what this is what this really
+04:28 highlights I think about open evidence
+04:30 and and really about uh patient care
+04:32 much more broadly is that every single
+04:34 patient is a longtail. Every patient has
+04:36 their own core morbidities and context
+04:38 and it's just really hard to be a
+04:39 doctor. It's really hard to there's just
+04:41 no way to cram all that into one
+04:43 person's head. Uh and so open evidence
+04:45 acts as kind of a shoulder that
+04:46 physicians can lean on that they can uh
+04:48 that they can use to help them with
+04:50 their job. Um and you know so that's
+04:52 really the reason um we've gone through
+04:54 this example for the past three minutes
+04:56 of this you know exact one specific
+04:58 patient case. This is something that
+04:59 right now is happening 10 times a second
+05:01 around the United States and around the
+05:02 entire
+05:04 world. Um all right so everything I've
+05:06 just described is open evidence as it
+05:08 exists today. Uh and uh there's a ton of
+05:11 stuff that we're working on right now
+05:12 that I'm super excited about. We're
+05:13 getting more into uh directly into
+05:15 physician workflows. We're building out
+05:17 new modalities for medical reasoning and
+05:19 uh medical research. Uh and then there's
+05:21 one more thing which I wanted to give
+05:23 just a very small sneak peek to this
+05:25 group here. Uh and that is um the
+05:28 following. So for as much medical
+05:31 reasoning and for as much medical
+05:32 knowledge as there is that's written
+05:33 down somewhere in papers and guidelines
+05:35 in the literature there's as much or
+05:36 more that's only that only exists in you
+05:40 know distributed across millions of wet
+05:42 brains, millions of physicians around
+05:44 the world. Uh and because of our scale,
+05:47 open evidence now has the unique
+05:48 opportunity for the first time in
+05:49 history to actually be the entity that
+05:52 takes all of that, encodes that, um
+05:55 fetches all that information and
+05:56 aggregates it and then puts it back into
+05:58 open evidence to uh improve answers and
+06:00 to improve care for everyone. So I'm not
+06:02 going to get uh at all deep into this
+06:04 example but um here literally just this
+06:06 week um this is the first example I'm
+06:08 sharing here um where this is a question
+06:10 and answer where for the first time this
+06:13 answer has been augmented by the
+06:15 aggregate clinical wisdom of some of the
+06:17 best GI doctors in the entire world and
+06:19 the effect is that it goes into um the
+06:22 system and we're able to provide better
+06:23 answers and better care uh than we
+06:25 otherwise would. So that's what I have.
+06:27 Thank you.

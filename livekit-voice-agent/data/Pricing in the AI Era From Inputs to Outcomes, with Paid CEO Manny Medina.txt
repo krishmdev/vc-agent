@@ -1,0 +1,1294 @@
+00:00 your customer will always default to
+00:02 some like the easiest way to buy which
+00:03 is either you know some kind of fixed
+00:05 price or a consumption price for the
+00:07 first year to see if it works but if it
+00:09 does work it is up to the AI agent
+00:12 builder and creator to go back to the
+00:14 same customer and say let's align on
+00:15 things that are important to you and
+00:16 charge for it
+00:34 Greetings today we're joined by Manny
+00:36 Medina founder of Paid paid helps
+00:39 Agentic AI companies make money by
+00:41 dialing in their pricing and costs manny
+00:45 experienced the problem he's now solving
+00:47 with his previous venture Outreach where
+00:49 he first encountered the challenges of
+00:51 pricing and margin management challenges
+00:53 that are becoming top of mind as Agenta
+00:56 companies move from experimentation into
+00:59 production paid provides the
+01:01 infrastructure that helps AI companies
+01:02 transition from simple activity- based
+01:04 pricing to more sophisticated
+01:06 value-based approaches allowing them to
+01:09 capture their fair share of the value
+01:11 they create for their customers
+01:13 in this episode we'll explore Manny's
+01:15 contrarian views on AI pricing models
+01:18 his framework for the four pricing
+01:20 approaches that are working today why he
+01:23 believes specialized AI agents targeting
+01:25 narrow problems are printing money and
+01:28 what it takes to build a successful
+01:30 business in the age of AI agents we hope
+01:33 you
+01:34 enjoy all right we're here in London for
+01:37 a very special episode of Training Data
+01:39 with paid founder Manny Medina manny
+01:41 welcome to the show great thank you for
+01:42 having me this is awesome all right
+01:43 we're gonna start off with a high level
+01:45 question okay in the world of AI apps
+01:48 Yep these are your customers so I think
+01:50 you have a pretty good sense of what's
+01:51 working and what's not working yep
+01:53 what's working
+01:55 so I think that we are right now in if
+01:59 you were to take the analogy of hedgehog
+02:01 versus fox we're in hedgehog land i love
+02:04 I love where this analogy is going
+02:06 so like if you take up a very narrow
+02:09 problem and then you hedgehog into it
+02:11 and you become the best at that one
+02:13 thing that is printing money right now
+02:16 like everyone that I'm seeing what's a
+02:17 good example um a good example for
+02:20 instance I love what Quandre is doing i
+02:24 love what Expo is doing in your
+02:26 portfolio i love what um Happy Robot is
+02:30 doing um there are very narrow cases of
+02:33 problems that have a lot of people in it
+02:35 mhm that don't have a clear solution for
+02:38 software like there's no software to
+02:40 solve that problem um it's peopleheavy
+02:44 and and it's interesting because they're
+02:47 not replacing people right now but
+02:48 they're replacing BPOS so whatever you
+02:51 see BPOS having a big role that is food
+02:55 for the apex predator that we're seeing
+02:57 right now in the world of AI which is AI
+02:59 agents and for the uninitiated what is
+03:01 Quandry what is Expo what is Happy Robot
+03:03 so Quandre does policy renewals okay uh
+03:07 another one that is adjacent to it is a
+03:09 company called Owl that does um they
+03:11 they they're in the insurance space too
+03:13 but they when they but they review
+03:15 claims they review claims data again
+03:17 super tiny like you look at it and you
+03:18 pass because you think that the world is
+03:20 really small but when you look at all
+03:21 the amounts of claims that people do and
+03:23 the ones that get left over you know
+03:25 they're taking care of those um Happy
+03:28 Robot is is doing is calling truckers on
+03:31 behalf of brokers hm so if you want to
+03:33 send beer from Milwaukee to Boston and
+03:36 you call you call a broker to find your
+03:38 trucker Happy Robot spins up 2,000
+03:40 agents agents call the truckers which is
+03:43 you know a guy and a dog and they
+03:45 negotiate with each other until they
+03:47 book the load and then they call the
+03:49 trucker all the way all the way to
+03:50 delivery and of course once that
+03:52 Milwaukee beer gets to Boston the
+03:53 Bostononians are going to send it right
+03:54 back
+03:56 exactly gota throw it over exactly but
+03:59 somebody has to move the beer around so
+04:01 like so this this is a thing um and and
+04:05 Expo of course does uh pentesting and
+04:08 you know again they took out the the
+04:09 pentesting agencies they they rank them
+04:11 they look like the best and then they
+04:12 run it for you so these are in my mind
+04:14 very narrow problems so like Expo
+04:16 doesn't come and say I'm going to be uh
+04:18 a full cyber security solution which
+04:20 eventually they will be but that you're
+04:21 saying like I'm just going to
+04:22 continuously bang against the door of
+04:25 every single app and back and back end
+04:27 that you have and I'm just going to u
+04:29 figure out a way to penetrate it and
+04:31 that's going to happen you know with the
+04:33 highest quality possible um and it's
+04:36 going to happen continuously which is
+04:37 unavailable right now and is the
+04:39 converse also true the things that are
+04:41 not working or things that are too broad
+04:42 in scope at the moment I
+04:45 there is a lot of traction in things
+04:47 that are broad in scope in terms of like
+04:49 companies coming out and they're doing
+04:51 okay they're quite well like Harvey is
+04:53 doing quite well um and they're they're
+04:56 not so broad in scope like they're
+04:57 narrow into like the legal system um but
+04:60 I'm excited for you know what Crosby is
+05:02 going to do for instance you know they
+05:03 are they're tackling the problem in a in
+05:05 a in a in the the similar space but with
+05:08 a different approach just like full out
+05:10 replacing you know the the the lawyer
+05:12 you know for commercial for commercial
+05:14 contracts um but if you go too broad
+05:17 like for instance AISDRs is a little too
+05:19 broad and that encompasses a lot of
+05:22 things and means a lot of different
+05:24 things for a lot of different people
+05:25 there's there's going to be swirl so I
+05:27 don't I don't I don't like to
+05:29 characterize it into like you know
+05:30 what's working what's not working i
+05:31 characterize into what's working now and
+05:33 what's not working yet okay you see what
+05:35 I mean like what's going to what is
+05:37 going to be refined and eventually come
+05:39 through like for instance the one that I
+05:41 that I'm waiting for with baited breath
+05:43 is AI assistants uh for like EAS like
+05:46 who's going to be my AIA and you know I
+05:49 think there's Lindy and there is Fixer
+05:51 out there but they're not quite quite
+05:54 quite there yet you see what I like
+05:56 they're not they're not um for instance
+05:58 I I love I I love fixer but I have three
+06:01 time zones that I work through like I
+06:02 you know my my co-founders in India
+06:04 sometimes and like most of our customers
+06:06 are in Pacific zone I'm here um and like
+06:10 getting that to work out just right
+06:12 doesn't quite work for me but if I had
+06:14 like one time zone and I had like one
+06:16 line of business like a like if I'm a
+06:18 real estate broker they are perfect like
+06:21 perfect fit for that particular thing so
+06:23 like big problem narrow application
+06:25 nailed it we have a on the EA front we
+06:28 have a founder to introduce you to he's
+06:30 he's in stealth so I can't say his name
+06:31 but okay it's coming perfect all right
+06:34 love to see it because I This is one of
+06:36 those problems that I'm just going to
+06:37 wait i'm not like I you know I had an EA
+06:40 forever and I'm just I'm going to bite
+06:42 the bullet and just gonna wait for AI to
+06:44 catch up so I'm I'm ready guys send me
+06:47 business
+06:48 do you have a sense for which markets
+06:50 are likely to be transformed sooner
+06:53 rather than later and which markets are
+06:54 going to be more resistant to AI
+06:56 transformation
+06:58 um so I have this I heard this thesis
+07:01 when I came up with the idea um for for
+07:04 paid it was right around when Strawberry
+07:06 dropped and you guys wrote that paper on
+07:09 on the the uh the shift to um to
+07:12 cognition actto
+07:13 one i I remember where I was like it's
+07:16 one of those things that like I I read
+07:18 the paper and then I I listened to
+07:20 somebody reading the paper and like I
+07:22 remember where I was like there's so
+07:24 many episodes in your life you remember
+07:25 where you were when that happened like I
+07:26 remember exactly where I was when that
+07:27 happened it just hit me
+07:30 um and I I was I was listening to I
+07:33 think it was
+07:35 u from Kleiner who had this hypothesis
+07:40 that I actually fully disagree with so
+07:42 fully disagree yeah so his hypothesis is
+07:44 that AI is going to start with the
+07:46 highest paying jobs okay because that's
+07:48 where the money is right so it makes
+07:50 logical sense right you go and target
+07:52 the the most expensive job and you
+07:53 displace those you know developers
+07:54 lawyers accountants doctors i actually
+07:57 disagree with that hypothesis i think AI
+07:59 is the highest paid people will buy AI
+08:02 as a side thing and ditch it with the
+08:05 same regularity that they ditch other
+08:07 things in their lives i think AI is
+08:08 going to stick the landing where it
+08:11 actually takes over our role fully that
+08:15 nobody else wants to do so for instance
+08:17 nobody wakes up and wants to be an
+08:19 insurance actuary or an insurance
+08:21 adjuster our partner Ruf Boto would beg
+08:23 to differ yeah perhaps perhaps the only
+08:26 licensed actuary in the world of venture
+08:27 capital all right so So I'm sure there's
+08:29 an exception to that but no like these
+08:31 are jobs that are hard to that are hard
+08:33 to backfill yes so you know when Quandry
+08:37 does is um this policy renewals people
+08:39 like they're just like they're replacing
+08:41 people that are exiting the business and
+08:43 they're not filling it back on right um
+08:46 the same thing was like nobody wants to
+08:47 wake up and like work for a BO banging
+08:49 out the phone like they do that job for
+08:50 like six months on on the way to a
+08:52 different job so the turnover on these
+08:54 jobs are really high so what I'm
+08:56 observing from my end is that the
+08:57 companies that are doing really well are
+08:59 addressing pools of labor that are
+09:02 either disappearing because of
+09:03 retirement or they want to do something
+09:05 else yes or they're B or they're run by
+09:08 BPOS yes and in that segment I'm seeing
+09:10 a lot of stickiness i'm seeing a lot of
+09:13 expansions i'm seeing a lot of growth
+09:15 and really good economics yes like I can
+09:17 charge whatever I want you know my upper
+09:20 bound of my price is the labor cost my
+09:22 lower bound on my price is my margin and
+09:25 and people are going to town on that so
+09:26 like in terms of like people
+09:28 experimenting with like outcome based
+09:29 etc that's where I see the majority of
+09:30 my of my traction in the broader applica
+09:33 the reason I disagree with like you know
+09:35 the rich job replacement is because
+09:37 everyone is going to go there you see
+09:39 what I mean if OpenAI needs another
+09:40 source of revenue or Trump needs another
+09:42 source of revenue they're going to go
+09:43 after lawyers and accountants why
+09:44 because it's hard and they pay a lot and
+09:46 they buy everything so like I feel like
+09:48 that market is going to be hot for now
+09:49 and then it's going to be super
+09:50 competitive and then you're going to
+09:52 have a lot of people in it see I I
+09:54 wonder if you can have your cake and eat
+09:55 it too i wonder I wonder if both you and
+09:56 Mimoon are correct in the sense that for
+09:59 the higher paying more creative jobs y I
+10:02 think the co-pilot approach and I don't
+10:04 mean Microsoft co-pilot i mean the the
+10:06 approach of AI that has given people
+10:07 superpowers seems to really be working
+10:09 you know Harvey and legal or open
+10:11 evidence and medicine whereas for the
+10:13 jobs that are lower paying and a little
+10:15 bit less creative the full autopilot
+10:17 approach seems to be working where
+10:19 you're fully replacing the work with an
+10:20 autonomous agent that can do it better
+10:23 faster cheaper and so I wonder if it's
+10:24 both and then as far as modes for the
+10:26 co-pilots I think you're right that
+10:27 because those are big categories where
+10:28 there seems to be a lot of money there's
+10:30 going to be a lot of competition i think
+10:31 what we're also seeing is collaborative
+10:33 workflows which are kind of the eighth
+10:35 wonder of the world as it as it comes to
+10:37 software right you know collaborative
+10:38 workflow flows still work right right
+10:41 you you tend to get pretty deeply
+10:43 embedded into your customer and then
+10:44 once you're in there you're providing a
+10:45 ton of value and they don't they don't
+10:47 really want to switch right no it's so
+10:49 it's true but I I think the world has
+10:51 changed a little bit in that you know I
+10:55 don't know that you're going to see
+10:55 Asanas anymore or or service nows or
+10:58 like any of those like you know they
+10:60 work in the collaborative world workflow
+11:02 when it didn't exist and they were you
+11:03 know revolutionary i think now anyone
+11:06 can spin up you know you can vibe code a
+11:08 service now and this is a good topic so
+11:11 vibe code are you a believer or not
+11:12 where are you on vibe coding i think I
+11:15 we're dude we spun up paid in like a
+11:18 month and a half you are a vibe coder
+11:20 and half of it was vi coding yeah i mean
+11:22 no we have to throw it away but this is
+11:24 the beauty of V coding you can throw it
+11:25 away and respin it yeah you know what I
+11:27 mean like there's no like there's a lot
+11:28 of people getting hung up on like the
+11:29 whole debugging thing you don't debug
+11:31 VIP code just throw it away and you
+11:33 start and you put it in production and
+11:35 when it breaks you start you know it's
+11:37 wonderful you can always start this is
+11:39 very comforting to your customers yes
+11:41 well I don't have a lot yet so so I
+11:43 don't have a big problem but eventually
+11:44 it will be a big problem and to start is
+11:46 is is a very easy thing so but back to
+11:48 the the workflow question I think that
+11:49 you're right so if you become a
+11:51 definitive workflow for X Y Z like it's
+11:53 definitely a sticky point i just think
+11:56 that the the the the speed of
+11:58 competition is really high right now yes
+12:01 and co-pilots have the the explanability
+12:04 of the value of a co-pilot is really
+12:06 hard to land like how do I how do I
+12:08 differentiate one co-pilot versus the
+12:09 next versus the next versus the next and
+12:11 they're all can come and say I'm I'm the
+12:12 same as X but better or cheaper and that
+12:15 just that's a recipe for swirl so unless
+12:18 they specialize in verticals and say
+12:20 like if you are um you know if Harvey
+12:22 were to say like for I don't know um
+12:26 patent law I am the best and I got 78%
+12:30 of the market boom right but now you're
+12:34 moving into the very narrow application
+12:35 with very narrow set in a very rich
+12:37 market is rich because you own the whole
+12:39 of it not because the whole market is
+12:41 rich you see what I'm saying so that's
+12:42 that's my but look we're all
+12:43 hypothesizing here like I make money
+12:45 either way so so I'm happy for all of it
+12:47 to work out so you're trying to jump in
+12:49 to help with this on pricing and
+12:50 packaging what are you seeing work today
+12:53 so I'm seeing four things stick in the
+12:56 landing with a plum with Gusto one is
+13:02 you know clearly charging by activity
+13:05 you know that's an easy one is you know
+13:07 has a credit consumption type model and
+13:09 you can you can show the activity that
+13:11 was done fairly easily the other one
+13:14 that I'm seeing more is changing by
+13:16 workflow when you string a number of
+13:18 activities and you say this workflow is
+13:20 cost this much like a document review
+13:22 right because then you can separate
+13:24 documents that are small from documents
+13:26 that are long and complicated because
+13:27 they have different consumption patterns
+13:29 and it feels like you're getting closer
+13:30 to value based pricing as opposed to
+13:33 costbased pricing exactly exactly so
+13:35 like the moving to a workflow allows you
+13:37 to move out of the the thread mill of
+13:39 charging for you know for pure work to
+13:41 charging for actually that is worth
+13:42 something somebody and then eventually
+13:45 you'll get to some kind of outcome and
+13:47 what I I've been recommending to my
+13:49 customer it's not out there yet but I'm
+13:50 going to give it a push is to charge
+13:52 instead of charging per outcome get an
+13:55 outcome bonus meaning if an outcome
+13:57 happens of a particular quality that is
+13:59 measurable charge for it that way it it
+14:03 be it opens the door to a conversation
+14:05 of value alignment and the moment you
+14:07 open another door conversation
+14:08 followment and then you start getting
+14:09 into more bespoke contracts with each of
+14:11 your customers which are super hard to
+14:13 rip out and historically that's been a
+14:15 tough pricing model to pull off do you
+14:17 think AI changes that i think AI changes
+14:19 completely completely changes that
+14:20 because in the in the past um we wanted
+14:23 to put everyone in these little boxes
+14:25 you know called SKS and then we wanted
+14:27 to count SKS and HQ will have a you know
+14:29 a discretionary amount of discounting
+14:31 whatnot um that's a that was a world of
+14:34 rows and columns and you don't need that
+14:36 anymore you can you know if you go to
+14:38 the largest companies again like a
+14:40 service or a sales force all their large
+14:42 contracts are bespoke you know so you
+14:45 know you send off uh you know Paul Smith
+14:48 or you know their CRO to go and sit down
+14:51 with you know the counterparty he comes
+14:52 back with a deal and the deal has all
+14:55 sorts of complications in it that
+14:56 doesn't belong into the like the the CPQ
+14:59 world you know what I mean and I don't
+15:00 know why in the agentic world you
+15:02 wouldn't do that all the time with the
+15:04 customers that you want to go big with
+15:06 and there is no re you know you can
+15:08 always put a chat interface to say
+15:10 interpret this contract for me and give
+15:11 me the annualized value you can inquire
+15:14 you know the all the the body of
+15:16 contractes you have done and get a sense
+15:17 for like your unit economics and your
+15:19 growth and like what this looks like so
+15:21 I think that custom contracts is is a is
+15:23 is is here okay you had four things
+15:25 there's activity based there was
+15:27 workflow based was outcome a third
+15:29 outcome is a third and the other one the
+15:31 fourth is pay by agent pay by agent how
+15:33 does that work and so I've been working
+15:36 with a lot of the AISDR companies to get
+15:40 into to in introduce this as a concept
+15:44 because an a lot of the what they're
+15:47 doing is replacing say 80% of what a
+15:50 normal SDR would do and an an SDR you
+15:52 know fully loaded will cost you
+15:53 somewhere between 70 and $90,000 a year
+15:56 so you can pay instead of saying a
+15:57 platform fee say like you know I'm going
+15:59 to deploy x many agents the agent is
+16:01 going to do this amount of work that is
+16:02 equivalent of a $90,000 a year uh sr I'm
+16:06 going to charge you 20,000 per agent the
+16:08 agent is going to deliver this much work
+16:10 and you can pay me a bonus for meeting
+16:12 for meeting booked yeah how do you how
+16:14 do you
+16:15 define I guess how do you define the job
+16:17 of an SDR do you just say hey your human
+16:19 SDRs have a certain quota this agent's
+16:21 going to hit the same quota yeah when
+16:23 you hire an SDR the first thing you get
+16:24 is activity yeah so you get x many calls
+16:27 x many meetings x you have a book of
+16:30 accounts you have you know uh contacts
+16:31 within each that account and each each
+16:33 of those contacts get an activity right
+16:35 so that's where you get the you know 100
+16:37 calls a day type of SCRs you can do the
+16:39 same thing with an AISR you can say like
+16:40 you're going to you're going to draw a a
+16:43 boundary around the activity that this
+16:45 agent is going to do and then you're
+16:46 going to charge for that agent because
+16:48 the output is the same right and then
+16:50 and then your job is to say look instead
+16:52 of paying 90,000 pay 20,000 for the
+16:55 agent and then pay me a bonus for
+16:57 meeting booked pay me a bonus for you
+16:59 know opportunity close one which is very
+17:01 similar to to the equivalent of hiring
+17:03 which is the hiring of a of a of a human
+17:06 in the flesh sr and you get to dip into
+17:09 the into the um headcount pool of budget
+17:13 as opposed to the tools pull of budget
+17:14 so you're not in the RevOps purview in
+17:16 terms of like where my head where my
+17:18 budget is coming from you're on the HR
+17:20 which is far larger so that's what I'm
+17:22 sort of like trying to steer people away
+17:24 from
+17:25 um from you know charging like like it
+17:28 was a tool because then you're
+17:30 constrained right like then the CRO has
+17:32 a budget for so many things and you get
+17:34 a sliver of that as opposed to like full
+17:36 headcom replacement what are the
+17:38 pitfalls with that you're seeing with
+17:40 companies that are ending up in the
+17:42 charging as a tool bucket rather than
+17:43 charging for the work um that then you
+17:46 get pigeon hole into seats i guess like
+17:48 what are people doing that makes them
+17:50 get pigeonholed a lot of what I'm seeing
+17:52 selling is the vast majority of AI agent
+17:56 companies are doing PC's right now i
+17:57 mean they look like contracts and they
+17:59 look like their money blah blah blah
+18:00 blah blah but in reality every company
+18:02 in the planet got a AI mandate so
+18:05 somebody in that company went and you
+18:06 know pursue some software and then they
+18:08 bought it and they bought it as software
+18:10 and as a trial vibe revenue yeah 100%
+18:14 vibe revenue okay so like so now you
+18:16 have the the the vibe revenue curve and
+18:18 now soon we're going to come into
+18:20 renewal land and that's going to
+18:22 separate you know the wheat from the
+18:24 chaff and at that point you're going to
+18:26 figure out who real who got real
+18:27 stickiness and who doesn't and that's
+18:29 where the the real monetization scheme
+18:31 is going to come in because they're
+18:32 going to figure out like who made money
+18:33 who didn't make money what kind of value
+18:34 I deliver or not they'll see the
+18:35 outcomes and then we'll see the Right
+18:37 exactly 100% and it's funny because you
+18:39 know a lot of my early customers um I
+18:42 told them that how I thought about the
+18:43 world and I said like "Yeah that will
+18:44 never happen." And now they're calling
+18:45 me back and be like "Hey I just got my
+18:47 first contract that only pays me per
+18:49 outcome and I calling you because I
+18:52 don't know who else to call." So I feel
+18:54 like this is going to be pulled by the
+18:56 buyer
+18:58 you see what I mean as a way to mitigate
+18:59 risk yeah because AI is is risky in in a
+19:02 number of dimensions and outcome
+19:04 actually lowers your risk is this in the
+19:06 the four things you mentioned activity
+19:08 workflow outcome agent is that a
+19:12 maturity curve of sorts like is is the
+19:14 is the idea that you want to get to
+19:17 selling agents or maybe you want to get
+19:18 to selling outcomes it's a fascinating
+19:20 question so the answer is is um a tit I
+19:24 think it's there is a maturity element
+19:25 into it but it's a little bit of like
+19:27 making your own adventure element to it
+19:28 in that in that um there's a bottom line
+19:32 so everybody has to get out of of
+19:34 selling by by activity
+19:37 if you stay there somebody will come
+19:39 along and say I'll do the same thing for
+19:41 cheaper yeah and then you are in in a
+19:44 nightmare scenario in which there is
+19:46 tons of others who look just like you
+19:47 messaging is just like you and the only
+19:49 way to separate the weed from the chaff
+19:51 is to try and now you're like turnurning
+19:53 from one to the next so so yes there is
+19:56 a maturity level in that if you don't
+19:58 move out of that bottom one which is
+20:00 easy to sell you'll get competed out um
+20:04 once you get into workflows then you're
+20:05 into value based pricing and then you're
+20:07 defining what the workflow is and why is
+20:08 that important and then you are in a
+20:10 deeper conversation and that forces a
+20:11 much better alignment uh and that
+20:13 requires some so I guess the answer to a
+20:15 question is yes that requires some level
+20:16 of maturity to have that conversation
+20:18 with your customer your customer will
+20:20 always default to some like the easiest
+20:21 way to buy which is either you know some
+20:23 kind of fixed price or a consumption
+20:25 price for the first year to see if it
+20:27 works but if it does work it is up to
+20:30 the AI agent builder and creator to go
+20:32 back to the same customer and say "Let's
+20:33 align on things that are important to
+20:34 you and charge for it." Do you have any
+20:36 sense of which markets are likely to
+20:39 stay with value based pricing and which
+20:41 markets are likely to collapse into
+20:42 costbased pricing have you seen sort of
+20:45 early indications from the companies
+20:47 that you're talking with or working with
+20:49 you know of markets that are trending in
+20:50 one direction or the other so what I'm
+20:52 seeing right now is that for those who
+20:55 are targeting BO budgets yes to win that
+20:59 business they go at the BO price and
+21:02 lower it and they say I'm going to do
+21:04 the same as a BO cheaper 247 and I'm
+21:07 going to accumulate all the data of that
+21:09 the BPO used to do yep but I'm see but
+21:12 again I'm seeing that as an intermediate
+21:14 step like that is not the full step
+21:15 that's just a way to get into the market
+21:17 and win it
+21:19 um then I
+21:21 wonder the BPO is not gonna just sit
+21:24 there and like just take it you know I
+21:26 mean like this is this is relatively
+21:27 large companies and they can just as
+21:29 much buy somebody's technology and
+21:30 deploy it so I wonder what will happen
+21:32 once the VPO turns around and like
+21:34 deploys their own agents replaces their
+21:36 own people uses the data that they have
+21:39 internally to train or or to make it
+21:41 better um and then go to town and and
+21:44 defend themselves um I was actually uh
+21:48 talking to you know BCG about this and
+21:51 they wouldn't tell me that they're doing
+21:52 a lot of engagement with BPOS but I sort
+21:54 of like sensed it and I don't know that
+21:56 they're just going to sit on their hands
+21:58 and like see their business go away like
+21:60 that will never happen right so like I
+22:01 wonder how does the game sort of like
+22:03 levels if you would like when what is
+22:06 the balance of trade i I don't I don't
+22:07 know the answer to that but I I think
+22:08 that to get into a market you see a lot
+22:11 of initial you know let's price it the
+22:13 easiest way for somebody to consume but
+22:15 to advance into the market you
+22:16 immediately switch to something else
+22:18 like in the alo that everywhere like
+22:20 everyone came in and charging by some
+22:21 kind of like token or credit or like
+22:23 activity but then it became a blood bath
+22:25 and there's like 50 of these guys and
+22:27 they all kind of like sound the same
+22:28 unless you start putting making some
+22:30 assertions of your quality and putting
+22:33 your pricing to back that assertion
+22:34 meaning I'm going to get you five
+22:36 qualified meetings or I'm going to
+22:37 charge you per agent that replaces a
+22:39 human being then you're going to get you
+22:41 know competed away
+22:43 and as you move into these more the
+22:45 later maturities of pricing models how
+22:47 do you see people measure and actually
+22:48 implement these things
+22:50 um I think that's kind of the beauty and
+22:54 that to each customer the definition of
+22:56 success is going to be a little bit
+22:58 different and a little bit of like I
+23:02 feel like I was like John the Baptist
+23:04 walking around like being locus and
+23:05 money and like like looking like a crazy
+23:07 man telling people that they should do
+23:08 bespoke contracts and everybody was
+23:10 looking at me like I'm crazy now it's
+23:12 coming around to say like be you know
+23:14 the ability for you to understand your
+23:15 customer's business and price and and
+23:18 contract around it and have the engine
+23:20 behind it to support it is actually a
+23:22 competitive advantage in a world in
+23:24 which you all have the same tools but it
+23:26 wasn't obvious now it wasn't obvious
+23:29 when I started like you know remember
+23:30 you we we talked in like September last
+23:33 year like it wasn't obvious back then
+23:34 it's getting a little bit more obvious
+23:36 now as we're turning on the lights in
+23:37 different parts of the market where
+23:39 people are saying "Yeah we need to do
+23:40 something that you know is very unique
+23:41 to me so that I can protect that that um
+23:44 that asset or that contract." Second of
+23:46 all you know I think it was Seth Goden
+23:48 who said "Pricing is part of your
+23:50 story." You know what I mean and how do
+23:52 you differentiate your market is your
+23:53 story has to be different and if your
+23:55 story is different and your pricing is
+23:57 the same your story ends up being the
+23:59 same you see what I mean so aligning
+24:01 with and and this is why like Sierra
+24:02 doesn't have pricing on their on their
+24:04 on their main page because they're
+24:05 sitting down with each customer and
+24:07 they're finding out what's important to
+24:08 them is it time to resolution is it that
+24:12 the customer resolves a ticket and then
+24:14 buys something is it you know a c set is
+24:17 it MPS like what is it right and then
+24:19 you you build a box around and you say
+24:21 that that's that's your outcome function
+24:23 and it's just the same as a objective
+24:24 function in in in in in uh machine
+24:27 learning like you create this function
+24:29 of where you want everything to go and
+24:30 then you keep iterate to towards it yep
+24:33 yeah well put all right talk a bit about
+24:35 the cost side of the equation and how
+24:37 margins play into this um so it's really
+24:40 interesting because this is another one
+24:43 that I'm I'm contrary like everybody's
+24:45 telling me that the cost of tokens is
+24:46 going to go down and this is going to
+24:47 become a commodity and whatever whatever
+24:50 um I think in a world of reasoning yep
+24:53 where is inference time compute worth
+24:56 more than training time compute i just
+24:58 don't see how the at least in the
+24:60 immediate future I just don't see how
+25:01 the this the token price goes down
+25:04 because you're going to require like
+25:05 deeper level thinking so what the
+25:06 problem with agents right now is that
+25:08 you you sort of like workflow them right
+25:10 so you you know you you go to you know
+25:12 land graph and you you put your boxes
+25:14 and what what what the does and
+25:16 like you string them together but the
+25:18 fundamental problem with that is if you
+25:19 have a hallucination at the very
+25:21 beginning of that chain you're screwed
+25:22 like you have all sorts of like you know
+25:24 bad activity happening all through and
+25:26 like that there's no amount of evil that
+25:27 is going to like rescue you out of that
+25:29 so like the better way to do it is to
+25:31 have the the the the model do most of
+25:33 the work you see what I mean as opposed
+25:35 to have like these little boxes of work
+25:37 have the model do most of the work have
+25:38 a good you know evil um framework to
+25:41 make sure that you know that it's doing
+25:42 the thing that it's supposed to be doing
+25:43 and then enroll it out in that world
+25:45 where you have less error rate the the
+25:48 the I don't see that that the cost per
+25:50 token going down i see that if nothing
+25:53 else is going to go up as the models get
+25:54 more advanced and like smarter well or
+25:56 it could be the horse race between
+25:58 volume and price and price for a fixed
+26:01 workload may go down over time but
+26:03 workloads increase right because you're
+26:05 throwing more compute at things at
+26:06 inference time or because you're just
+26:08 doing more sophisticated jobs yeah I
+26:10 think over the long arc of history I
+26:12 think you're absolutely right i think in
+26:13 the very short term as we're trying to
+26:15 figure this out I just don't I just
+26:17 don't know is sort of the short of it
+26:19 and and the second thing that I'm seeing
+26:20 actually which is my big aha moment is
+26:23 that
+26:24 um agents are using one modality and the
+26:26 moment you nail the modality you want to
+26:27 use all these other modalities right so
+26:29 you you do text and then you want that
+26:31 to do a phone call or to take an inbound
+26:33 call and to do call or to like an avatar
+26:35 or whatever that is and then you're
+26:37 incurring costs that are not LLM but are
+26:39 thirdparty APIs so the full cost of the
+26:41 full service you got your cloud cost you
+26:43 got your LLM cost and then you have like
+26:45 all this other stuff that you have to
+26:46 buy to make it sync in different in the
+26:48 different modalities in which it's used
+26:50 or even like you know buying data or
+26:52 like you know buying whatever and that
+26:54 is what's driving up the cost so if you
+26:56 look at a say an avatar company or a
+26:58 phoning you know agent their cost is not
+27:01 quite the LLM their cost is how long are
+27:03 you going to stay on the phone and like
+27:05 um the number of dials that you do or
+27:07 like how long does the avatar run etc
+27:09 like those are those are compounding
+27:10 costs that you have to look out for so
+27:11 like um the problem that we have right
+27:14 now in in cost mode is that because
+27:18 everything like all the activity of the
+27:19 agent goes down through this evil
+27:20 framework that as acts as a proxy before
+27:23 the token goes to the LLM you don't know
+27:26 who's incurring what cost so you don't
+27:28 know what customer is profitable to you
+27:29 what customer is negatively impacting
+27:31 your margins you don't know what agent
+27:32 is doing good job what agent isn't you
+27:34 see it as a whole you see what I mean
+27:36 and that's is why like the margin
+27:37 problem is such a a bear to to solve
+27:40 well and generally speaking margins are
+27:41 a reflection of the amount of value that
+27:43 you're providing to your customer do you
+27:46 see that in AI apps right now or is
+27:47 there a mismatch between the amount of
+27:49 value that companies are providing and
+27:51 the margins that they're able to get
+27:53 it's a mismatch because people don't
+27:54 know how to price and people don't know
+27:57 their cost yeah so this is why the
+27:59 problem compounds a little bit in that
+28:02 you know agent companies are relatively
+28:04 new so they come to the market just
+28:05 trying to like get business right so I
+28:07 I'll price in whatever way you want to
+28:09 buy and only later I find out whether I
+28:11 win or or lost you see what I mean so I
+28:14 think that this is this is just the
+28:15 beginning of the game that as they
+28:17 understand the unit economics they're
+28:18 going to price better as they understand
+28:19 the value delivery they will price
+28:21 better but they just don't see it yet so
+28:23 for instance we build this thing in pay
+28:25 that you know we look at an activity or
+28:28 a workflow and then we make this call to
+28:31 to the service that tells us what is a
+28:33 human equivalent of the same work mhm in
+28:36 what country right so you know if the
+28:38 work is kind of hard you know it goes
+28:40 looks up the type of work how long how
+28:42 much would that person make per hour and
+28:44 how long does the work take and returns
+28:45 a value m so we give our customers this
+28:48 little bit of pricing guidance that says
+28:50 the the human equivalent of the same
+28:51 amount of work is this you can price up
+28:54 to that point you see what I mean or at
+28:56 least use that to go and say I need an
+28:58 increase in in in in what I'm getting
+28:60 paid because this is actually pretty
+29:01 expensive but without that it's it's uh
+29:04 it's kind of tricky and it's not like
+29:06 you have Simon Coocher like Price
+29:08 Intelligent alongside you guiding you
+29:10 all along right they come in once a year
+29:11 and then they they they peace out you
+29:14 know you're left holding the
+29:16 Whereas you actually need guidance on
+29:17 this stuff every time you talk to your
+29:19 customer to get that you're getting
+29:21 you're getting your your prices worth
+29:22 like the the problem we're seeing is
+29:24 that the value is accuring to the to the
+29:26 customer not to the pro not to the agent
+29:28 business they're capturing all the value
+29:30 of all the savings and that needs to
+29:32 change
+29:34 so you started a company to help this
+29:35 tell us a little about why and what your
+29:36 mission behind it is um when we were
+29:39 rolling out agents at
+29:41 outreach and I wanted to understand the
+29:44 business the business fundamentals of
+29:46 the agents my margins the value that I'm
+29:48 adding and how am I adding value adding
+29:50 value the underpinning software
+29:53 supporting me was not helpful was not
+29:56 built for a world in which pricing needs
+29:60 to evolve um where um the agents are
+30:04 doing are delivering more than just you
+30:06 know bits and bites are delivering this
+30:07 ful outcomes and that just stuck in my
+30:10 head as I moved to London and I step
+30:12 aside from being a CEO and I sort of
+30:14 like noodle on that and and the problem
+30:16 kept on bugging me so I'm like is is
+30:18 this a problem that was just me or you
+30:20 know who else had this problem so I
+30:21 spent you know a couple months just
+30:23 calling friends and you know other
+30:25 founders um and I always have this trick
+30:27 right like I I know a lot about sales
+30:30 right and they know a lot about agents
+30:32 so we will do a cross education you know
+30:33 ask me like an AMA like you ask me
+30:35 anything about like building out sales
+30:37 teams and I ask them about like what
+30:38 it's like to run an agent business and I
+30:41 found that this monet like running the
+30:44 business itself was all spreadsheets so
+30:47 when I and and that's number one number
+30:50 two um some of the problems were
+30:52 actually difficult but not intractable
+30:54 difficult there was just a lot of work
+30:56 you see what I mean so I love when there
+30:57 is a problem that is big people are
+30:59 hacking around it and the problem is not
+31:01 like simple as like you know you know a
+31:04 couple lines of code kind of solves it
+31:06 um so we that that sort of was the
+31:09 inspiration behind it um solving the
+31:12 problem number three I wanted to build a
+31:14 company that I get to work with like the
+31:18 new founders like you know um because
+31:21 they were building a company themselves
+31:23 and that kind of energy just drives me
+31:25 so like you know the most fun thing to
+31:27 do when I was running outreach was
+31:28 customer
+31:29 conversations um but the customer
+31:32 conversations at the founders level are
+31:34 so raw are so full of like wonder and
+31:37 mystery and energy and like I can just
+31:40 see my energy tank just going up and up
+31:42 and up in every single one of those
+31:43 conversations i'm like I want to do this
+31:45 for a living like this is this is a
+31:46 great place to like exist um and the
+31:49 market is going to be big and it's a a
+31:51 small enough market that I can just call
+31:53 call everybody and like most people will
+31:55 return my call because it's founder to
+31:57 founder stuff you know i mean I seen
+31:58 your problem maybe I can help you maybe
+31:60 you can help me and boom you're in
+32:01 you're in a conversation so like it
+32:03 didn't almost feel like selling it felt
+32:04 like I was solutioning um and at the end
+32:07 of the day like I I told them where I'm
+32:08 building this thing and they like yeah
+32:09 let me try it and like I had a 100%
+32:11 history on people who said let me try it
+32:13 i'm like oh let's go
+32:16 the worst could happen if somebody buys
+32:17 something you know I mean like we
+32:18 haven't actually said explicitly what is
+32:20 paid so maybe maybe just answer that
+32:22 question what is paid yeah thank you um
+32:24 so paid is the business engine for AI
+32:27 companies so what we do at paid is that
+32:30 we build the entirety of your billing
+32:34 invoicing monetization
+32:37 um pricing even at this point we're
+32:41 doing collections revenue recognition so
+32:44 the entirety of your back vendor
+32:46 management margin management so the
+32:47 entirety of the back office you need to
+32:49 get your business up and running to
+32:50 understand the unit economics and run
+32:52 your business that's what we're building
+32:54 at paid and our first foray into the
+32:57 market was our monetization engine and
+32:58 our margin management engine which is
+33:00 the biggest problem that we're seeing in
+33:02 the market but we're building the
+33:03 adjacent so the problem compounds right
+33:05 like the moment you solve monetization
+33:07 and and uh invoicing then you need to
+33:09 solve collections the moment you solve
+33:10 margin then you need to solve vendor
+33:12 management and so on and so forth so you
+33:14 we're just building the unified layer
+33:15 that allows you to run your business in
+33:16 one place how much of what you learned
+33:19 at outreach transfers directly to
+33:21 building paid and how much is new
+33:24 um the human aspect is the same building
+33:28 teams is the same inspiring is the same
+33:30 selling ahead of capability is the same
+33:33 um
+33:35 the what's new
+33:38 is how savvy the world has become in
+33:41 terms of company building uh I think you
+33:44 made this joke in in our in our podcast
+33:46 that you know you look at a AI agent
+33:48 company you take the hood off and it's
+33:50 just building a company yes and the
+33:53 building company part has gotten so much
+33:55 smarter like everyone that I talked to
+33:58 like is way more advanced than I was at
+34:01 the same stage in my building of
+34:03 outreach where people have seen you know
+34:05 what happened in SAS the whole arc and
+34:07 they're building completely differently
+34:08 i was going to say is that a good thing
+34:10 or a bad thing because I think the
+34:11 positive case would be people are better
+34:12 informed they're just making better
+34:14 decisions and they're expediting a lot
+34:16 of the aspects of building a company
+34:17 that are not unique to their specific
+34:19 company i think the negative case would
+34:21 be that people are blindly pattern
+34:24 matching and not understanding the
+34:26 causal determinants that actually lead
+34:28 to healthy businesses over time do you
+34:31 think it's more the former it's a good
+34:33 thing or more the latter it's a bad
+34:34 thing maybe somewhere in the middle case
+34:36 dependent um to be frank I haven't
+34:39 stopped to think about that particular
+34:40 question but if I were to put a a
+34:44 qualifier to it I think that the initial
+34:46 conditions are different meaning they're
+34:48 starting from a point in that I'm going
+34:50 to keep the company small i'm going to
+34:53 own more of my destiny so we're going to
+34:55 raise in a different way we're not going
+34:56 to be growth at all cost i see I've seen
+34:60 it from several founders already that
+35:02 they take more time honing in who their
+35:04 ideal customer profile is y and making
+35:07 sure that they scale that versus scaling
+35:09 everything yeah so when I started
+35:11 outreach um I was always trying to
+35:14 figure out what what are the edges of my
+35:15 market who shouldn't I be selling to and
+35:17 it turns out I can sell to everybody and
+35:18 that actually makes the problem worse
+35:20 right because I can sell to a startup i
+35:24 can sell to a very large company like
+35:25 Adobe was one of my earliest customers
+35:26 as much as I can sell to the Hillary
+35:28 campaign as much as I can say to a repo
+35:30 company they all have communication
+35:32 problems they all have workflow problems
+35:33 but they all have completely different
+35:35 ways of getting to them um honing in the
+35:38 product for their particular solution
+35:40 and it was really hard for me to let go
+35:42 and I sort of like wallow in the sea of
+35:45 business that I had from every walk of
+35:47 life where if I were to relive my
+35:49 company I would like really hone it in
+35:51 with intention and say like okay so what
+35:54 does make outreach a billion dollar you
+35:56 know run rate company and then like
+35:58 stack from there um I'm seeing these new
+36:00 founders coming with that point of view
+36:02 I'm like what is it the the narrowest
+36:04 profile that I can sell without a lot of
+36:06 friction
+36:07 and then going up from there now the
+36:09 problem with that is then they they may
+36:10 be restraining their ICP i mean they may
+36:13 not be trying they're not be
+36:14 experimental enough to grow the company
+36:16 to a from single product to
+36:18 multi-product to platform yeah but
+36:20 quality tends to scale right if you
+36:22 really nail it for a small audience and
+36:24 you can start compounding from there
+36:26 that's probably better than being
+36:27 mediocre for a big audience 100% and
+36:29 like it and it just makes life more fun
+36:31 because your road map is a lot clearer
+36:34 your you know your tickets they all look
+36:36 the same so like the scaling of all the
+36:37 other operations is actually easier when
+36:39 you have one type of customer that
+36:40 you're serving with excellence and then
+36:42 you get known the word of mouth gets
+36:44 bigger like all that happens uh more
+36:46 organically again like I wish I knew
+36:48 that you know I started outreach and it
+36:50 was faster to to like all right let's
+36:51 narrow narrow narrow narrow narrow let's
+36:53 stay super focused on this two things or
+36:55 one thing all right Manny so how does
+36:57 one get started with paid so it's a
+36:58 great question we are now on boarding
+37:00 manually uh to make sure that we have
+37:03 all the pieces dialed to your business
+37:06 um so you apply and there's a short
+37:09 questionnaire as like you know
+37:10 monetization margins and you know what
+37:12 breaks you in we'll schedule a
+37:14 conversation for on boarding and the the
+37:16 beauty of being an early stage startup
+37:18 is that all the onboarding is done by me
+37:20 and my my small team we make sure that
+37:23 we're capturing your agent work
+37:25 correctly we're making sure that we're
+37:26 guiding you with best practices because
+37:28 we understand the market at this point
+37:30 we've seen pretty much everything under
+37:31 the sun so we understand your market how
+37:33 you usually charge and give you a few
+37:34 ideas uh get your your invoicing trail
+37:37 going get your margin trail going so you
+37:39 have visibility into you know how you're
+37:40 making money and you know we'll be a
+37:43 short call away at all times so just
+37:45 apply make sure that you have an agent
+37:47 business and some customers and then
+37:48 we'll take care of you from there on and
+37:50 what what's it like to be part of your
+37:52 team maybe what words would you use to
+37:54 describe the culture of paid i know this
+37:56 is super trite but the first word that
+37:59 comes to mind is fun uh and and the and
+38:01 the reason it's fun is because we're
+38:03 serving an industry that in itself is
+38:05 fun like you know everyone in everyone
+38:08 that I talk to that is building agents
+38:10 out there like they can't believe
+38:12 they're doing this for a living you know
+38:14 they can't believe they're like like
+38:16 these are like what a time to be alive
+38:18 what a time to be alive like they're
+38:19 doing stuff that and they're getting
+38:21 paid to have fun so like all our
+38:23 conversations are super fun like nobody
+38:25 like like in I remember when I was in
+38:27 SAS there's a lot of people who are
+38:28 stressed out and there's all this like
+38:30 you know milestones and whatever so
+38:32 maybe because everyone is early stage
+38:33 right now so there is not a whole lot of
+38:35 growth rounds happening so nobody has
+38:37 like a a number that they have to hit or
+38:38 like an efficiency they have to hit um
+38:41 but everyone is just like enjoying the
+38:43 discovery so it's a little bit like that
+38:45 book from uh basis of like innovate and
+38:47 wonder like everyone is like innovating
+38:49 and wondering like living the art of the
+38:51 possible with like models improving
+38:53 every seven months months like you have
+38:55 a new toy to play with like every seven
+38:57 months um I think the ability so this is
+39:00 understated the ability to vibe code an
+39:03 idea to just at least show how it works
+39:06 and then actually build it has made the
+39:08 the iterations and the conversations so
+39:10 much faster like you know you can just
+39:13 like say like we think we should build
+39:15 this or I have you know I have a lot of
+39:17 energy around this thing and you can
+39:19 just write it and you can see it work
+39:20 and you can tweak it a little bit and
+39:22 then present it in front of everybody
+39:23 and sell it like you're selling
+39:25 internally to another to another person
+39:26 so this ability for us to be brass
+39:30 stacks in terms of like what we're
+39:31 building for whom we're building being
+39:33 so small and getting so much work done
+39:35 in a small team and being so close to
+39:37 our customer because we're early it's
+39:39 just fun i think I think that's the best
+39:41 word to describe it very cool love it
+39:43 all right let's jump into the lightning
+39:44 round you ready all right let's do it
+39:46 all right question number one who is on
+39:48 your Mount Rushmore of
+39:51 founders
+39:52 um Jeff Bezos for sure okay um he's a
+39:57 he's a he's a a big a big name founder
+39:59 in my in my life um I have a lot of
+40:03 friends that are founders i just I just
+40:05 really that really inspire me you know
+40:08 uh like Todd also from Pendo he's he's a
+40:11 great founder that I just find he's a
+40:13 great human being as well um I really
+40:16 like what you know Sam Alman has done
+40:19 with uh with OpenAI i think the ability
+40:21 to just you know push out innovation
+40:23 with regularity and and be a showman in
+40:27 in the world i think it's it's something
+40:28 that I aspire to be
+40:31 um you know the Collison brothers are
+40:34 really special to me because they're so
+40:36 voracious in their appetite and their
+40:37 reading and the and how they think about
+40:39 the world that you know they're so um uh
+40:44 even though they're they're very young
+40:45 they're so wise that I really look up to
+40:47 them awesome what's one piece of content
+40:49 that every AI founder should read
+40:52 you know I've been thinking about this
+40:54 one a lot because the thing that changed
+40:58 my perspective in AI is actually a very
+40:60 old book about a statistical natural
+41:03 language processing that it was written
+41:05 by a guy called last is his name is Rich
+41:07 Manning it it was mandatory reading at
+41:09 Stanford uh computer science program on
+41:12 the natural language program course i
+41:14 don't know that it is anymore because
+41:15 it's so old but it's like one of those
+41:17 like oldie by goody kind of thing where
+41:19 they tell you how to you know you know
+41:22 how a marov chain works how you know the
+41:25 you know the length of u of the look
+41:28 back and look forward to try to predict
+41:29 the next word it's like the early days
+41:32 of machine learning and a lot of the
+41:33 stuff that we're doing right now is
+41:34 still based on this statistical approach
+41:37 y so I know that you know a lot of
+41:38 advances have been done and like the you
+41:40 know we now you know cut tokens in many
+41:43 different ways and optimize in many
+41:44 different ways but I feel like if you
+41:46 don't understand where all came from I
+41:48 don't know that you're going to get
+41:49 where this where it's going so that book
+41:51 is it's actually not a hard read even
+41:53 though it sounds like a hard read it's a
+41:55 fairly easy read it's written in a
+41:57 fairly you know normal and accessible
+41:59 way and I can't believe more people
+42:00 haven't read it yet what AI product can
+42:04 you not live without oh perplexity
+42:06 that's an easy one what What do you do
+42:08 with perplexity oh we do everything like
+42:10 we It's so weird no seriously it's so
+42:12 weird like fashion advice or like you
+42:14 know my f like Yeah so the hardest thing
+42:18 for me is to have to take a driving test
+42:21 again like come on like you know I know
+42:23 it's the wrong side of the road and
+42:24 everything but like having to relearn
+42:26 everything is just absurd and I've been
+42:29 re you know pushing away learning how to
+42:31 drive here in in the UK and my my wife
+42:33 had to beat the bullet because one of us
+42:34 had to drive at some point and she just
+42:37 went to perplexity and look for like you
+42:39 know advice on finding a good person to
+42:42 help her out to drive and like she found
+42:44 this is super guy that has helped her go
+42:47 from zero to driving in like no time
+42:48 which I' I've you know I didn't know
+42:50 perplexia can do that but like it can so
+42:52 it's it's taken over pretty much every
+42:53 aspect of our life at that end of course
+42:55 um I don't write anything without
+42:57 anthropic anymore like Claude is my
+42:59 constant companion for pretty much
+43:01 everything I do it's like my It's like a
+43:03 friend that I talk to and I shouldn't be
+43:05 talking to
+43:07 if we were to have imaginary friends
+43:09 Claude is mine models are commoditizing
+43:11 yes or no uh no not yet not in a world
+43:15 of reasoning i I think that we're just
+43:17 scratching the surface of where this can
+43:19 go and there's a lot to go
+43:22 um like if you see every new model
+43:25 coming out the input tokens are like far
+43:27 more expensive than the the one they
+43:28 leave behind like but by by a factor of
+43:30 like six or seven or eight like not by a
+43:32 small amount and I think that this is
+43:35 just going to continue as we discover
+43:37 new things on what date did we or will
+43:40 we reach AGI
+43:43 i think
+43:45 it's I think it's kind of here already
+43:48 just in a underused kind of way m um we
+43:51 haven't really bottom out everything a
+43:53 model can do so I think it's just it's
+43:55 behind door number three or something
+43:56 like I think it's it's already here we
+43:58 just haven't acknowledged that it is
+44:00 and then what was your what's your most
+44:02 optimistic future state for AI describe
+44:04 it um it's a it's a scaffold for human
+44:08 imagination i think we also haven't
+44:10 really you know absorb how much smarter
+44:13 we get when we have somebody else doing
+44:15 a lot of the thinking and discovering
+44:17 for us uh it's sort of like when
+44:19 somebody props you up on the shoulders
+44:20 like all of a sudden you can see farther
+44:22 and and longer is a AI is doing the same
+44:24 thing for us we can we will now be able
+44:26 to see farther and longer and like come
+44:27 up with like things that were impossible
+44:30 before and but can't such a time to be
+44:33 alive yeah last question one piece of
+44:35 advice for AI founders is stay focused
+44:39 on a very narrow set of
+44:43 customers don't worry about
+44:45 TAM disregard and they say this all the
+44:48 love in the world disregard BC advice
+44:50 about big Tams small Tams will be big
+44:52 TAMs as long as you deliver a superb
+44:55 experience awesome thank you Manny thank
+44:57 you thank you that was awesome

@@ -1,0 +1,3529 @@
+00:00 you know if I was a Founder right now I
+00:01 
+
+00:01 would absolutely adopt open source um it
+00:04 
+
+00:04 forces me though to look at the
+00:06 
+
+00:06 engineering complexion of my or right
+00:08 
+
+00:08 and think like I I'm going to need
+00:09 
+
+00:09 people doing L Ops and and uh and you
+00:13 
+
+00:13 know things like you know F data fine
+00:15 
+
+00:15 tuning and and how to build Rag and
+00:17 
+
+00:17 things and apis there's plenty of apis
+00:20 
+
+00:20 that allow you to do this but like
+00:21 
+
+00:21 ultimately you want control like your
+00:23 
+
+00:23 Moote is your data your mode is your
+00:25 
+
+00:25 interaction with users
+00:28 
+
+00:28 [Music]
+00:43 
+
+00:43 hi everyone welcome to training data
+00:46 
+
+00:46 today we're excited to welcome Joe speac
+00:48 
+
+00:48 director of PM for generative AI at meta
+00:51 
+
+00:51 where he leads llama and thirdparty
+00:52 
+
+00:52 ecosystem efforts Joe spent the last
+00:55 
+
+00:55 decade in AI leading product at piie
+00:57 
+
+00:57 torch and working on initiatives that
+00:58 
+
+00:58 span protein folding and AI math many of
+01:01 
+
+01:01 which have spun out for meta into their
+01:03 
+
+01:03 own startups we're speaking to Joe just
+01:06 
+
+01:06 2 days after the Llama 3.1 405b launch
+01:09 
+
+01:09 and we're excited to get his view on
+01:10 
+
+01:10 questions like where is the open source
+01:13 
+
+01:13 ecosystem headed will models commoditize
+01:15 
+
+01:15 even at the frontier is model
+01:17 
+
+01:17 development becoming more like software
+01:19 
+
+01:19 development and what's next in agents
+01:22 
+
+01:22 and reasoning small models data and
+01:26 
+
+01:26 more Joe thank you so much for being
+01:28 
+
+01:28 here today we're so excited to have you
+01:30 
+
+01:30 just two days after the Llama 3.1 405b
+01:33 
+
+01:33 launch um it's an Incredible Gift to the
+01:36 
+
+01:36 ecosystem we'd love to learn a little
+01:38 
+
+01:38 bit more about how you what specific
+01:40 
+
+01:40 capabilities you think the 405b is
+01:43 
+
+01:43 particularly unique at especially in
+01:45 
+
+01:45 comparison to the other state-of-the-art
+01:47 
+
+01:47 models oh thanks so much for having me
+01:49 
+
+01:49 this is so much fun um I haven't done a
+01:50 
+
+01:50 podcast like this since I pre-co so it's
+01:53 
+
+01:53 like fun to be in the same room and just
+01:54 
+
+01:54 like uh you know chatting about this
+01:56 
+
+01:56 cool stuff um yeah I mean we're we're
+01:59 
+
+01:59 like Beyond excited and meta uh this was
+02:01 
+
+02:01 something that I think a lot of us have
+02:03 
+
+02:03 been working on for such a long time
+02:04 
+
+02:04 months and months and months and you
+02:06 
+
+02:06 know we we kind of put out that nice
+02:08 
+
+02:08 little like appetizer I'll call it in
+02:10 
+
+02:10 April like llama 3 and and like I was
+02:13 
+
+02:13 actually like are people really GNA like
+02:15 
+
+02:15 be that excited about these models and
+02:17 
+
+02:17 and like their response was like through
+02:18 
+
+02:18 the roof like oh my God like everyone's
+02:20 
+
+02:20 excited but they really don't know
+02:22 
+
+02:22 what's really coming and so like yeah
+02:24 
+
+02:24 kind of hold that kind of had to hold
+02:27 
+
+02:27 that back for for a while and kind of
+02:28 
+
+02:28 keep it to ourselves and like then kind
+02:30 
+
+02:30 of build up for this this launch um and
+02:32 
+
+02:32 the 405b is a monster it's a great model
+02:35 
+
+02:35 um and I think the biggest thing we've
+02:38 
+
+02:38 learned about the for of IB is it's just
+02:40 
+
+02:40 a great it's like a massive teacher for
+02:41 
+
+02:41 other models and we um we kind of had
+02:43 
+
+02:43 that plan all along because when you
+02:44 
+
+02:44 have a big model um you can use it for
+02:47 
+
+02:47 like improving small models or just like
+02:49 
+
+02:49 you know distillation and mean that's
+02:50 
+
+02:50 how the eight and70s became um the great
+02:53 
+
+02:53 models that they are I mean in terms of
+02:55 
+
+02:55 like capabilities like you know we we
+02:57 
+
+02:57 listen to the community we listen
+02:58 
+
+02:58 obviously to our own product teams right
+03:00 
+
+03:00 because we had to build build products
+03:02 
+
+03:02 for for meta and I mean long context was
+03:04 
+
+03:04 like one of the biggest things people
+03:05 
+
+03:05 wanted and we have you know much longer
+03:07 
+
+03:07 context internally even then we released
+03:10 
+
+03:10 and but it we saw like just the use case
+03:12 
+
+03:12 use cases like start to build up uh
+03:14 
+
+03:14 multilingual I mean we're a global
+03:15 
+
+03:15 company um so we released more languages
+03:18 
+
+03:18 um many many more to come because
+03:20 
+
+03:20 obviously like meta has billions of
+03:22 
+
+03:22 people on their platform and hundreds of
+03:24 
+
+03:24 countries and so um I think that was
+03:27 
+
+03:27 like to me those are like table Stakes
+03:29 
+
+03:29 things but they're like done well um on
+03:31 
+
+03:31 the models like I think like we spent um
+03:34 
+
+03:34 a lot of time in post trainining um on
+03:37 
+
+03:37 on our different languages and improving
+03:39 
+
+03:39 them and safety just they're really
+03:41 
+
+03:41 really high quality um so we don't just
+03:43 
+
+03:43 like pre-train on like a ton of data and
+03:45 
+
+03:45 say look at us we're multilingual um you
+03:47 
+
+03:47 know we actually did a lot of work in in
+03:50 
+
+03:50 in our sft phase and super FIS fine fine
+03:52 
+
+03:52 tuning and um a lot of safety work um I
+03:55 
+
+03:55 think one of the coolest things that I'm
+03:57 
+
+03:57 excited about um well there a couple
+03:58 
+
+03:58 things I'm excited about but one is tool
+04:01 
+
+04:01 use like I think model oh my God zero
+04:03 
+
+04:03 shot tool use uh this is going to be
+04:05 
+
+04:05 crazy for the community um I'm going we
+04:07 
+
+04:07 show a few examples like we can show
+04:09 
+
+04:09 like calling wolf from or we can know
+04:10 
+
+04:10 Brave search or Google search um and it
+04:12 
+
+04:12 works really great but Zer not tool use
+04:15 
+
+04:15 is going to be a game changer um the
+04:17 
+
+04:17 ability to kind of call a code code
+04:18 
+
+04:18 interpreter and actually like run code
+04:20 
+
+04:20 um or um you know kind of build your own
+04:23 
+
+04:23 kind of you know plugin um for things
+04:25 
+
+04:25 like Rag and other things like can have
+04:26 
+
+04:26 that really be state-of-the-art uh I
+04:28 
+
+04:28 think it's going to be a really game big
+04:30 
+
+04:30 Game Changer and I think just the fact
+04:32 
+
+04:32 that we released um the 405 itself and
+04:36 
+
+04:36 we changed our license so you can
+04:37 
+
+04:37 actually use our data like that was a
+04:39 
+
+04:39 big deal like that was a big discussion
+04:41 
+
+04:41 we we had many meetings with Mark on
+04:43 
+
+04:43 that and we uh and ultimately like
+04:46 
+
+04:46 landing on a place where um you know
+04:48 
+
+04:48 this was like this pain point for the
+04:50 
+
+04:50 community for so long they're like these
+04:52 
+
+04:52 closed models like I can't use the
+04:53 
+
+04:53 outputs or maybe I I can use them but
+04:56 
+
+04:56 maybe I'm using them slightly
+04:57 
+
+04:57 unscrupulously or whatever um like we
+04:60 
+
+04:60 actually are encouraging people to do it
+05:02 
+
+05:02 I'm sure that was a tough decision to
+05:04 
+
+05:04 make it walk us through the things that
+05:06 
+
+05:06 you had to consider and actually making
+05:07 
+
+05:07 that leap to to open up license
+05:10 
+
+05:10 Licensing in that way yeah licing so
+05:12 
+
+05:12 permissible oh licensing is like a huge
+05:14 
+
+05:14 Topic in itself obviously you probably
+05:16 
+
+05:16 spend the whole podcast talking about it
+05:17 
+
+05:17 I don't want to uh but we could um I
+05:21 
+
+05:21 think we wanted number one just to
+05:23 
+
+05:23 unlock new things like I think we wanted
+05:25 
+
+05:25 to to have the 405 and our llama 3.1
+05:28 
+
+05:28 models differentiate give people new
+05:29 
+
+05:29 capability like just like we just looked
+05:31 
+
+05:31 at like what people were really like
+05:33 
+
+05:33 excited about in the community not only
+05:35 
+
+05:35 in like in kind of Enterprise and and
+05:37 
+
+05:37 and products but also in the research
+05:39 
+
+05:39 Community because we obviously have a um
+05:42 
+
+05:42 a research team and you know we work
+05:44 
+
+05:44 with Academia and we we we talk to folks
+05:47 
+
+05:47 I mean you know Percy L Stanford texts
+05:49 
+
+05:49 me all the time saying you know when are
+05:50 
+
+05:50 you GNA release it when are you to
+05:51 
+
+05:51 release it can I use it can I use it and
+05:53 
+
+05:53 Percy
+05:54 
+
+05:54 like you know stay stay stay patient um
+05:58 
+
+05:58 but I think we um
+06:00 
+
+06:00 we we heard them and we we knew kind of
+06:02 
+
+06:02 what they wanted and and I think
+06:05 
+
+06:05 ultimately we wanted um llama everywhere
+06:08 
+
+06:08 we wanted just adoption you know maximal
+06:11 
+
+06:11 adoption really the world using it and
+06:12 
+
+06:12 building on it and I think Mark even
+06:14 
+
+06:14 used in his um his letter he put out
+06:17 
+
+06:17 like um you know the new standard or or
+06:19 
+
+06:19 standardized so I think like to do that
+06:21 
+
+06:21 you kind of have to enable stuff like
+06:23 
+
+06:23 that right you kind of have to unblock
+06:25 
+
+06:25 all these different use cases and really
+06:28 
+
+06:28 look at what the community wants to do
+06:30 
+
+06:30 and make sure that that you don't have
+06:31 
+
+06:31 these kind of artificial barriers and
+06:33 
+
+06:33 that's what the discussion really was
+06:35 
+
+06:35 and um and so actually even beyond that
+06:37 
+
+06:37 we started working with you know
+06:38 
+
+06:38 Partners like Nvidia and AWS and they
+06:40 
+
+06:40 started building distillation recipes
+06:42 
+
+06:42 and even synthetic gen data generation
+06:45 
+
+06:45 Services which is pretty cool I mean you
+06:48 
+
+06:48 can start to use those and actually
+06:50 
+
+06:50 create specialized models from it um and
+06:52 
+
+06:52 the the data that you I mean we know how
+06:54 
+
+06:54 good the data is because we use it in
+06:55 
+
+06:55 our smaller models it's really good and
+06:57 
+
+06:57 it improves our models significantly so
+07:00 
+
+07:00 I want to pull on the open source thre a
+07:02 
+
+07:02 little bit more sure and I've read Z's
+07:05 
+
+07:05 Manifesto it was great uh but I'm I'm
+07:08 
+
+07:08 still I'm trying to wrap my head around
+07:11 
+
+07:11 like what what's in it for meta this is
+07:12 
+
+07:12 a massive investment to open source in
+07:15 
+
+07:15 some ways you're laying a lot of money
+07:17 
+
+07:17 on the table because you now have a
+07:18 
+
+07:18 state-of-the-art model that you offering
+07:20 
+
+07:20 to everybody for free and so I guess is
+07:24 
+
+07:24 this an offensive move is this a
+07:25 
+
+07:25 defensive move like what's in it for
+07:27 
+
+07:27 meta I mean we've so
+07:30 
+
+07:30 well first of all our business model
+07:31 
+
+07:31 doesn't depend on this model to make us
+07:34 
+
+07:34 money directly so we're uh we're not uh
+07:37 
+
+07:37 you know selling a cloud service we've
+07:38 
+
+07:38 never been a cloud company um we we've
+07:42 
+
+07:42 always uh worked I would say with a
+07:44 
+
+07:44 partner ecosystem all the way back to
+07:45 
+
+07:45 like the five years I was like helping
+07:47 
+
+07:47 to to lead pytorch and you know the
+07:49 
+
+07:49 ecosystem in the community built around
+07:50 
+
+07:50 that like we never um built a service we
+07:53 
+
+07:53 probably could have in some way but it
+07:55 
+
+07:55 would have been weird um we saw
+07:58 
+
+07:58 basically going back to py we kind of
+07:60 
+
+07:60 saw it as this kind of lingua franka
+08:03 
+
+08:03 kind of bridge you know to this like
+08:05 
+
+08:05 area of high entropy all this kind of
+08:07 
+
+08:07 weird way to say it but like there's all
+08:09 
+
+08:09 this Innovation happening how do we kind
+08:11 
+
+08:11 of build a bridge to it and actually be
+08:12 
+
+08:12 able to harness all that Innovation and
+08:14 
+
+08:14 the way to do that is to be open is to
+08:16 
+
+08:16 kind of get the World building on your
+08:18 
+
+08:18 stuff and I think that's that ethos is
+08:20 
+
+08:20 kind of carried over into Lama and um
+08:22 
+
+08:22 you know if you look at P George like
+08:24 
+
+08:24 that was a huge way for us to kind of
+08:26 
+
+08:26 pull in you know at the time when we
+08:29 
+
+08:29 really start working on pitori in
+08:30 
+
+08:30 Earnest um computer vision and like CNN
+08:33 
+
+08:33 and all that you remember that old old
+08:35 
+
+08:35 times now um and uh but we actually
+08:38 
+
+08:38 would see these architectures come like
+08:40 
+
+08:40 constantly the people would and they
+08:42 
+
+08:42 write code and they publish it in P
+08:44 
+
+08:44 torch and we take it internally we
+08:46 
+
+08:46 evaluated people would open source
+08:47 
+
+08:47 models and put them out on you know
+08:48 
+
+08:48 model zoos and we'd evaluate them and
+08:51 
+
+08:51 we'd see just how quickly the community
+08:53 
+
+08:53 was was improving things and we actually
+08:55 
+
+08:55 leverage that especially for like
+08:57 
+
+08:57 Integrity applications where we release
+08:59 
+
+08:59 like hateful memes and some of these
+09:00 
+
+09:00 other uh data sets we just saw the
+09:03 
+
+09:03 improvements like week over week month
+09:05 
+
+09:05 over month and it was built on something
+09:06 
+
+09:06 that it's like we were using internally
+09:08 
+
+09:08 so it's very easy for us to just take it
+09:10 
+
+09:10 in inside so I think like llama is is is
+09:14 
+
+09:14 definitely similar in that regard where
+09:17 
+
+09:17 you know when when we when Academia and
+09:19 
+
+09:19 when companies start to Red Team these
+09:21 
+
+09:21 models or you know try and jailbreak
+09:22 
+
+09:22 them we want people to do that to our
+09:24 
+
+09:24 models and so we can improve and I think
+09:26 
+
+09:26 that's a big reason um and it's it's
+09:30 
+
+09:30 like be careful what you wish for right
+09:31 
+
+09:31 of course but like it's it's the same
+09:33 
+
+09:33 with Linux right the Linux is open
+09:35 
+
+09:35 source and the konel is open source and
+09:36 
+
+09:36 people will you know it's much more
+09:38 
+
+09:38 secure when when things are transparent
+09:40 
+
+09:40 and and bugs can be pushed faster and
+09:42 
+
+09:42 and so that helps us a lot um I I think
+09:46 
+
+09:46 it's you know there's also the angle of
+09:49 
+
+09:49 you know we um you know we don't want
+09:53 
+
+09:53 this to to turn into kind of a um a
+09:56 
+
+09:56 completely closed environment like I I
+09:58 
+
+09:58 think just like today if you deal if you
+09:59 
+
+09:59 look at like Linux and windows and like
+10:02 
+
+10:02 in my opinion um there's you know
+10:05 
+
+10:05 there's there's room for both right
+10:06 
+
+10:06 there's room for clothes room for open
+10:09 
+
+10:09 and people use depending on what they
+10:11 
+
+10:11 need and and the applications um I think
+10:13 
+
+10:13 that there's going to be a a world of
+10:15 
+
+10:15 you know of open models and I think
+10:16 
+
+10:16 there's going to be world of closed
+10:17 
+
+10:17 models and I think that's totally fine
+10:19 
+
+10:19 what what was the primary argument
+10:21 
+
+10:21 against open sourcing was there
+10:23 
+
+10:23 one um I mean there was definitely like
+10:26 
+
+10:26 competitive concerns we talked through
+10:28 
+
+10:28 you know do you want to give your
+10:29 
+
+10:29 technology you know put it out there and
+10:32 
+
+10:32 and that and I think uh we're like less
+10:34 
+
+10:34 concerned about that because we're
+10:36 
+
+10:36 moving we're moving really fast yeah
+10:38 
+
+10:38 like if you look back I mean I've been
+10:39 
+
+10:39 you know back I've been in meta like
+10:41 
+
+10:41 close to what six or seven years now and
+10:44 
+
+10:44 like in the last um you know year year
+10:47 
+
+10:47 or so we've done you we had a connect
+10:49 
+
+10:49 launch um we released purple llama last
+10:52 
+
+10:52 December we released llama 3 um 3.1
+10:56 
+
+10:56 before that we released llama 2 in July
+10:59 
+
+10:59 llama one was like in February so like
+11:01 
+
+11:01 just if you think about the like the
+11:03 
+
+11:03 pace incredible the pace of innovation
+11:05 
+
+11:05 that's like coming out of our team and
+11:06 
+
+11:06 our our our company is like just at a
+11:08 
+
+11:08 crazy Pace right now so I I'm not too
+11:11 
+
+11:11 worried about it I don't think we're
+11:12 
+
+11:12 that worried about it um so I'd love to
+11:17 
+
+11:17 um kind of move into your personal views
+11:19 
+
+11:19 on the broader ecosystem I think a lot
+11:21 
+
+11:21 of the questions that people have center
+11:23 
+
+11:23 around what happens to the value of all
+11:25 
+
+11:25 these models um especially as meta open
+11:29 
+
+11:29 sources more of them at the
+11:30 
+
+11:30 state-of-the-art level um with llama 3.1
+11:34 
+
+11:34 with open AI launching chbd 40 mini what
+11:36 
+
+11:36 is your view on do models commoditize
+11:39 
+
+11:39 even at the seat of-the-art
+11:40 
+
+11:40 Frontier well this is a great question I
+11:43 
+
+11:43 mean I I think if you look at just in
+11:44 
+
+11:44 the last two weeks I mean 40 mini is a
+11:47 
+
+11:47 really really good model um you know
+11:50 
+
+11:50 input I think input per million tokens
+11:52 
+
+11:52 is something like 15 cents 60 cents out
+11:55 
+
+11:55 uh so it's incredibly like cheap to run
+11:59 
+
+11:59 um but but it's also an excellent model
+12:01 
+
+12:01 like it's just like they they've done an
+12:02 
+
+12:02 incredible job in dist distilling and
+12:05 
+
+12:05 getting to something that's like really
+12:06 
+
+12:06 really performant yet really really
+12:07 
+
+12:07 cheap um so I think like uh you know Sam
+12:10 
+
+12:10 is is definitely pushing on that um and
+12:12 
+
+12:12 then if you look at what we've done in
+12:13 
+
+12:13 like last week and pushing out I would
+12:15 
+
+12:15 say like pretty pretty compelling stud
+12:18 
+
+12:18 their models across the Spectrum um I I
+12:21 
+
+12:21 do think like it's rapidly getting to a
+12:24 
+
+12:24 place where you know the model is is
+12:26 
+
+12:26 going to be kind of a commodity I mean I
+12:27 
+
+12:27 think there's this Frontier of like data
+12:30 
+
+12:30 um where you know I mean we can
+12:32 
+
+12:32 certainly gather data from the internet
+12:34 
+
+12:34 we can license data but at some point
+12:36 
+
+12:36 there is kind of like some Frontier of
+12:38 
+
+12:38 limitations I think that we're all going
+12:40 
+
+12:40 to have and um this goes back to our
+12:42 
+
+12:42 conversation know this week on you know
+12:43 
+
+12:43 kind of a bitter lesson of of data and
+12:45 
+
+12:45 scale and you know compute is that
+12:47 
+
+12:47 enough it's probably not quite enough
+12:49 
+
+12:49 but it's like compute and data becomes
+12:53 
+
+12:53 kind of um if you have enough of both um
+12:55 
+
+12:55 you know you can kind of get like a
+12:57 
+
+12:57 first order approximation of the
+12:58 
+
+12:58 state-of-the-art with without any
+12:60 
+
+12:60 anything else is kind of what we've seen
+13:02 
+
+13:02 so I do think models are commoditizing I
+13:04 
+
+13:04 think the value is elsewhere and I look
+13:06 
+
+13:06 at meta and I look at our products I
+13:08 
+
+13:08 look like what we're building like
+13:09 
+
+13:09 that's honestly where the value is for
+13:11 
+
+13:11 us it's meta AI it's our agent um you
+13:14 
+
+13:14 know it's all the the technology that
+13:16 
+
+13:16 we're going to put into Instagram and
+13:17 
+
+13:17 WhatsApp and and all of our our and
+13:19 
+
+13:19 products where we actually are going to
+13:21 
+
+13:21 monetize where we're actually going to
+13:23 
+
+13:23 you know to add real value the model
+13:26 
+
+13:26 itself I think definitely will keep will
+13:27 
+
+13:27 keep innovating new modalities new
+13:29 
+
+13:29 languag
+13:30 
+
+13:30 um new capabilities that's what you know
+13:32 
+
+13:32 that's what research is right it's
+13:33 
+
+13:33 pushing the frontier the emerging
+13:35 
+
+13:35 capabilities and then we can leverage
+13:37 
+
+13:37 those in products um but the models are
+13:39 
+
+13:39 definitely like pushing in that
+13:40 
+
+13:40 direction yeah if that's the case and
+13:43 
+
+13:43 all these existing companies that have
+13:45 
+
+13:45 massive distribution and wonderful
+13:46 
+
+13:46 applications that they're already that
+13:48 
+
+13:48 are already out in the wild can just
+13:50 
+
+13:50 adopt these state-of-the-art models what
+13:52 
+
+13:52 advice would you give to the whole wave
+13:54 
+
+13:54 of new startups that are trying to make
+13:56 
+
+13:56 it out there either building their own
+13:58 
+
+13:58 models using other of the art models and
+13:60 
+
+13:60 then trying to build applications on top
+14:03 
+
+14:03 yeah I mean there's definitely like some
+14:04 
+
+14:04 model companies or companies that are
+14:06 
+
+14:06 building you know they're training
+14:07 
+
+14:07 pre-training Foundation models and it's
+14:09 
+
+14:09 expensive it's like I think we're you
+14:11 
+
+14:11 know I can't say how much llama three
+14:13 
+
+14:13 cost but it was very expensive and you
+14:16 
+
+14:16 know llama 4 is going to be even more
+14:17 
+
+14:17 expensive um and so I to me given kind
+14:22 
+
+14:22 of the state of play and things it to me
+14:24 
+
+14:24 it doesn't make that much sense if I was
+14:25 
+
+14:25 a startup to try and go and and do a
+14:28 
+
+14:28 pre-training like I think like llama
+14:30 
+
+14:30 models are absolutely incredible as
+14:31 
+
+14:31 foundations um to build on and so um I
+14:35 
+
+14:35 do think like there is um you know if I
+14:37 
+
+14:37 was a Founder right now I would
+14:38 
+
+14:38 absolutely adopt open source um it
+14:40 
+
+14:40 forces me though to look at the
+14:42 
+
+14:42 engineering complexion of my or right
+14:44 
+
+14:44 and think like I I'm going to need
+14:46 
+
+14:46 people doing L Ops and and uh and you
+14:50 
+
+14:50 know things like you know F data fine
+14:52 
+
+14:52 tuning and and how to build Rag and
+14:54 
+
+14:54 things and apis there's plenty of apis
+14:56 
+
+14:56 that allow you to do this but like
+14:58 
+
+14:58 ultimately you want control
+14:60 
+
+14:60 like your Moe is your data your Moe is
+15:01 
+
+15:01 your interaction with users and you're
+15:05 
+
+15:05 also you may want to deploy these things
+15:06 
+
+15:06 onto a device at some point and uh and
+15:09 
+
+15:09 have kind of a mixed interaction or
+15:10 
+
+15:10 something uh you might want to have like
+15:12 
+
+15:12 small like simp simpler queries like
+15:14 
+
+15:14 running on your device and have like you
+15:16 
+
+15:16 know very low latency interactions with
+15:18 
+
+15:18 your your users you might want to split
+15:20 
+
+15:20 you know and have like a more
+15:21 
+
+15:21 cloud-based approach for more complex
+15:23 
+
+15:23 queries uh more complex interactions um
+15:26 
+
+15:26 and I think like the open source
+15:27 
+
+15:27 approach gives you that flexibility it
+15:29 
+
+15:29 gives you the ability to modify the
+15:31 
+
+15:31 models directly you own the weights um
+15:33 
+
+15:33 you can run the weights you can distill
+15:34 
+
+15:34 them yourself um there's going to be
+15:36 
+
+15:36 distillation services that allow you to
+15:38 
+
+15:38 take your weights to still them down to
+15:40 
+
+15:40 something smaller like that's pretty
+15:41 
+
+15:41 awesome we're like just now seeing the
+15:43 
+
+15:43 beginnings of that uh so I think like in
+15:47 
+
+15:47 my mind like control matters a lot and
+15:50 
+
+15:50 uh and ownership of the weights there
+15:52 
+
+15:52 are a lot of like API Services where
+15:54 
+
+15:54 you'll do fine tuning your model so
+15:56 
+
+15:56 you're bringing your own data you're
+15:57 
+
+15:57 fine tuning um and they use something
+15:60 
+
+15:60 called low rank adaptation or Laura and
+16:03 
+
+16:03 unfortunately you don't actually have
+16:04 
+
+16:04 access to those lower weights at the end
+16:05 
+
+16:05 of it you're kind of like forced to use
+16:07 
+
+16:07 their inference so you're like um let's
+16:10 
+
+16:10 see I'm kind of like hell hostage here
+16:11 
+
+16:11 like I've given my data I don't have
+16:14 
+
+16:14 access to like the actual IP that was
+16:16 
+
+16:16 generated from that data and now I have
+16:18 
+
+16:18 to forced to use their inference service
+16:19 
+
+16:19 like that's not a good deal so I think
+16:21 
+
+16:21 the you know open source kind of like
+16:23 
+
+16:23 brings inherent Freedom yes um that I
+16:26 
+
+16:26 think that approach doesn't
+16:28 
+
+16:28 so what do you think of Mr Large was
+16:31 
+
+16:31 announced I think maybe a day after
+16:33 
+
+16:33 llama 3 3.1 um what do you think of them
+16:36 
+
+16:36 and I guess more broadly for everybody
+16:38 
+
+16:38 at the frontier is everyone kind of
+16:41 
+
+16:41 pursuing the same recipes the same
+16:43 
+
+16:43 techniques the same uh kind of compute
+16:46 
+
+16:46 scale data Etc and and so like you know
+16:48 
+
+16:48 everyone's kind of going to be roughly
+16:50 
+
+16:50 similar at the frontier or do you think
+16:51 
+
+16:51 you guys are doing something very
+16:53 
+
+16:53 different so um first of all I'm I'm NR
+16:56 
+
+16:56 I me an amazing team um it was one of my
+16:58 
+
+16:58 old teams in Fair yeah um they were
+16:60 
+
+16:60 working on through improving and Ai and
+17:02 
+
+17:02 Mathematics so Gom and Tim and the team
+17:04 
+
+17:04 are Maran they're they're incredible
+17:07 
+
+17:07 Joe's just talking about fun
+17:10 
+
+17:10 banter last night there so I mean this
+17:13 
+
+17:13 this was like one of the scrappiest
+17:15 
+
+17:15 teams um that I've ever worked with I
+17:17 
+
+17:17 mean the the team uh I don't think ever
+17:20 
+
+17:20 slept um so it was like basically by day
+17:22 
+
+17:22 they're doing like prob even less now
+17:24 
+
+17:24 probably even less now I mean they would
+17:25 
+
+17:25 push the state of Y in like Ai and th
+17:27 
+
+17:27 improving and you know um
+17:29 
+
+17:29 during the day and we published some
+17:31 
+
+17:31 work on that um you know I think uh what
+17:34 
+
+17:34 a couple years ago now geeez um and uh
+17:37 
+
+17:37 but by night you know they were
+17:38 
+
+17:38 basically like scrappily like grabbing
+17:40 
+
+17:40 compute to train llama one and so they
+17:43 
+
+17:43 were uh you know we were building large
+17:45 
+
+17:45 language models um several years ago in
+17:46 
+
+17:46 in Fair and you know that team basically
+17:49 
+
+17:49 just um like they were just really
+17:51 
+
+17:51 ambitious and they they were kind of
+17:53 
+
+17:53 working by night and that's really where
+17:55 
+
+17:55 llama 1 came from um so the team was
+17:58 
+
+17:58 great I mean I think they they're doing
+18:00 
+
+18:00 uh really good work I think they're
+18:01 
+
+18:01 definitely challenged in that they're
+18:03 
+
+18:03 trying to also like open source models
+18:05 
+
+18:05 but also make money and you know like
+18:09 
+
+18:09 models like 40 mini are not helping them
+18:13 
+
+18:13 um because like and this is I think why
+18:15 
+
+18:15 they change their license for example to
+18:17 
+
+18:17 like you know to have research only
+18:19 
+
+18:19 license which kind of makes sense um
+18:21 
+
+18:21 because they were you know open sourcing
+18:22 
+
+18:22 models and they immediately like their
+18:24 
+
+18:24 own ecosystem is like competing with
+18:26 
+
+18:26 them in a lot of ways because they'll
+18:28 
+
+18:28 release a model they'll host it like use
+18:29 
+
+18:29 this model but then they have you know
+18:31 
+
+18:31 together and fireworks and lepton and
+18:33 
+
+18:33 all these companies that you know
+18:35 
+
+18:35 provide like a sometimes a lower cost um
+18:38 
+
+18:38 you know per million token like like
+18:40 
+
+18:40 offering so it's really tough business
+18:42 
+
+18:42 right
+18:42 
+
+18:42 now um in terms of like large 2 I think
+18:45 
+
+18:45 it's a really good model I mean I we
+18:46 
+
+18:46 just on paper I haven't evaluated it we
+18:49 
+
+18:49 haven't looked at it internally yet um
+18:51 
+
+18:51 uh I think uh if you look at like
+18:54 
+
+18:54 artificial analysis I think they added
+18:56 
+
+18:56 up in kind of like the it was a little
+18:59 
+
+18:59 was under I think like the 70b model uh
+19:02 
+
+19:02 in terms of like quality but you know
+19:03 
+
+19:03 that's like a blended you know they
+19:05 
+
+19:05 blend a bunch of benchmarks to to make
+19:07 
+
+19:07 that uh distinction um but on paper it
+19:09 
+
+19:09 looks really good we're going to
+19:10 
+
+19:10 evaluate it um I think you know to for
+19:13 
+
+19:13 me anyway like the more the merrier like
+19:15 
+
+19:15 the more models are out there the more
+19:16 
+
+19:16 companies are doing this the better it's
+19:18 
+
+19:18 not like we're not going to be the only
+19:19 
+
+19:19 one and I think that's good that we're
+19:21 
+
+19:21 not the only one um so and I think like
+19:24 
+
+19:24 more generally like the Gen space like
+19:26 
+
+19:26 you wake up every single day and you
+19:27 
+
+19:27 kind of expect something like this right
+19:29 
+
+19:29 you expect them all to be released or
+19:30 
+
+19:30 something groundbreaking to happen and
+19:32 
+
+19:32 that's kind of like the fun of being in
+19:33 
+
+19:33 it so totally totally do you think
+19:35 
+
+19:35 everyone at the frontier is comparable
+19:37 
+
+19:37 though like are you all pursuing
+19:38 
+
+19:38 comparable strategies yeah this this is
+19:41 
+
+19:41 actually a good question because you
+19:43 
+
+19:43 know if you read the Llama 3 paper um
+19:45 
+
+19:45 which was I think 96 pages we ended up
+19:47 
+
+19:47 at right lots of citations obviously lot
+19:50 
+
+19:50 of sharing lots of sharing um lots of
+19:53 
+
+19:53 like uh you know contributors and and
+19:55 
+
+19:55 core contributors and that so like it
+19:57 
+
+19:57 was it was a it was a detailed paper
+19:59 
+
+19:59 and uh Lawrence and Angela on the team
+20:02 
+
+20:02 spearheaded writing that and I think
+20:03 
+
+20:03 that was like one of the hardest things
+20:05 
+
+20:05 like developing the model was like
+20:06 
+
+20:06 relatively easy compared to writing the
+20:08 
+
+20:08 paper it was it was a lot of work um
+20:11 
+
+20:11 pulling that paper together I think uh
+20:13 
+
+20:13 if you look at llama 3 um you know there
+20:16 
+
+20:16 was a lot of I would say Innovation that
+20:17 
+
+20:17 happened but also we didn't um like we
+20:20 
+
+20:20 also
+20:21 
+
+20:21 didn't uh I would say take on like a lot
+20:24 
+
+20:24 of research risk either yeah so I would
+20:26 
+
+20:26 say like the the primary things we
+20:28 
+
+20:28 really did with llama with the 45b
+20:30 
+
+20:30 especially was was really pushing scale
+20:33 
+
+20:33 I mean it was still you know we grp CER
+20:35 
+
+20:35 attention for example so you know gqa
+20:38 
+
+20:38 and that improves inference time and you
+20:40 
+
+20:40 know kind of helps solve the kind of
+20:42 
+
+20:42 quadratic attention uh computational
+20:45 
+
+20:45 challenge uh we trained on you know over
+20:47 
+
+20:47 15 trillion tokens we in post trainining
+20:49 
+
+20:49 we use synthetic data which improved the
+20:51 
+
+20:51 models on the smaller models quite a bit
+20:54 
+
+20:54 uh we trained on over 16,000 gpus um on
+20:57 
+
+20:57 our training runs which is something we
+20:58 
+
+20:58 hadn't done before
+20:59 
+
+20:59 um it's really really hard to do that
+21:02 
+
+21:02 because gpus fail and you know off the
+21:05 
+
+21:05 table yeah I mean it's everyone's like
+21:07 
+
+21:07 oh I'm just going to train in 100,000
+21:09 
+
+21:09 gpus like good luck right you better
+21:11 
+
+21:11 have a really really great infro team a
+21:12 
+
+21:12 really great um mlc Team you better be
+21:16 
+
+21:16 like ready to innovate um at that level
+21:18 
+
+21:18 because it's just non-trivial um
+21:20 
+
+21:20 everyone says it's easy or says you can
+21:22 
+
+21:22 do it it's down trivial so I think like
+21:25 
+
+21:25 I almost look at llama 3 is very similar
+21:28 
+
+21:28 to like the gbd three paper so if you if
+21:30 
+
+21:30 you ever talked to like Tom he was a
+21:31 
+
+21:31 lead author Tom Brown now at anthropic
+21:34 
+
+21:34 and there's a reason why Tom was the
+21:35 
+
+21:35 first author on that paper is because
+21:37 
+
+21:37 like a lot of the Innovation was really
+21:38 
+
+21:38 scale it was really like how do I take
+21:41 
+
+21:41 something that's you know like an
+21:43 
+
+21:43 architecture and like push it as as hard
+21:45 
+
+21:45 as we can push it and that involves like
+21:48 
+
+21:48 a lot at like the mlis kind of layer and
+21:51 
+
+21:51 infr layer and like how do I scale the
+21:53 
+
+21:53 algorithm um and uh and so I think that
+21:56 
+
+21:56 was really like the mentality we had
+21:58 
+
+21:58 with like llama 3 and L
+21:60 
+
+21:60 3.1 and um I mean internally obviously
+22:02 
+
+22:02 we have great research team we have Fair
+22:04 
+
+22:04 we have research in our org and we're
+22:05 
+
+22:05 looking at lots of different
+22:07 
+
+22:07 architectures ande and and other things
+22:10 
+
+22:10 um and so uh you know so I think we you
+22:13 
+
+22:13 know who knows what L will be we got a
+22:15 
+
+22:15 lot of candidate architectures and we're
+22:16 
+
+22:16 we're looking at it but um but it's kind
+22:19 
+
+22:19 of a trade-off it's a trade-off between
+22:20 
+
+22:20 how much risk you take on as like for
+22:22 
+
+22:22 research and potentially how much reward
+22:26 
+
+22:26 or you know the ceiling of the potential
+22:27 
+
+22:27 improvements versus just taking
+22:30 
+
+22:30 something that's relatively known and
+22:31 
+
+22:31 like pushing scale and getting that um
+22:33 
+
+22:33 to to improve even more so ultimately
+22:36 
+
+22:36 this becomes a trade off I think this is
+22:38 
+
+22:38 such an interesting point I actually
+22:39 
+
+22:39 also think it makes llama and and meta
+22:42 
+
+22:42 quite unique in the strategy it's taking
+22:44 
+
+22:44 the words that I like getting used
+22:45 
+
+22:45 yesterday were is model development
+22:47 
+
+22:47 becoming more like software development
+22:50 
+
+22:50 um I'm curious to hear if you think I
+22:52 
+
+22:52 think um uh unlike what many of the
+22:56 
+
+22:56 other labs have been doing on pushing
+22:57 
+
+22:57 more of the research uh um you guys have
+22:60 
+
+22:60 been focused on just executing on
+23:02 
+
+23:02 strategies that you know work do you see
+23:04 
+
+23:04 that representative of the continuous
+23:07 
+
+23:07 strategy you think as you extend llama
+23:09 
+
+23:09 out 4 five 678 and then also how do you
+23:12 
+
+23:12 think the other research lobs and maybe
+23:14 
+
+23:14 some of the other startups in the
+23:15 
+
+23:15 ecosystem will react will they kind of
+23:17 
+
+23:17 switch and ve a little bit more to the
+23:18 
+
+23:18 strategy that you've been
+23:20 
+
+23:20 taking I mean it's a really great
+23:22 
+
+23:22 question I don't we don't have all the
+23:23 
+
+23:23 answers for sure I think um but there's
+23:25 
+
+23:25 definitely like some somewhere in the
+23:27 
+
+23:27 middle right now is kind of where I see
+23:29 
+
+23:29 things Landing where you know we will
+23:31 
+
+23:31 we'll continue to push you know and on
+23:34 
+
+23:34 execution we'll continue to push models
+23:36 
+
+23:36 out we'll continue because we want our
+23:37 
+
+23:37 products to to itly improve um as well
+23:40 
+
+23:40 so we want met AI um you know improving
+23:43 
+
+23:43 constantly and so we're so there's
+23:44 
+
+23:44 definitely like a software engineering
+23:46 
+
+23:46 you know um analog here that that that's
+23:49 
+
+23:49 happening where you know you can imagine
+23:50 
+
+23:50 something like a llama train um and you
+23:52 
+
+23:52 know new features new kidabilities get
+23:54 
+
+23:54 on that train and and we have a model
+23:57 
+
+23:57 release um you know it's it's it's
+23:59 
+
+23:59 actually it's much easier when you start
+23:60 
+
+23:60 to componentize the capabilities too
+24:02 
+
+24:02 like we're doing that with safety right
+24:03 
+
+24:03 now and you saw in the in the release we
+24:05 
+
+24:05 released um uh promp guard and and new
+24:08 
+
+24:08 Lum guard and and you can iterate on
+24:10 
+
+24:10 those components externally and it's
+24:11 
+
+24:11 great um obviously the core model is
+24:13 
+
+24:13 much more difficult I do think um you
+24:17 
+
+24:17 know we'll we'll start to include or
+24:18 
+
+24:18 start to to kind of push on the research
+24:20 
+
+24:20 side because um as well because I the
+24:22 
+
+24:22 architecture like is going to evolved I
+24:24 
+
+24:24 mean you've seen like um you know what
+24:26 
+
+24:26 ai2 for example has done with their
+24:27 
+
+24:27 Jambo and their you know Ma and everyone
+24:30 
+
+24:30 kind of thinks Mamba is like a new
+24:31 
+
+24:31 architecture that's that could have
+24:33 
+
+24:33 promise um I think what's interesting
+24:35 
+
+24:35 though is like to truly understand like
+24:37 
+
+24:37 the capabilities of the architecture you
+24:40 
+
+24:40 kind of have to push the scale and I
+24:42 
+
+24:42 think that's what's missing right now in
+24:43 
+
+24:43 the ecosystem is you know if you look at
+24:45 
+
+24:45 Academia and Academia is like a lot of
+24:47 
+
+24:47 Absolut brilliant people there but they
+24:49 
+
+24:49 don't have a lot of access to compute
+24:51 
+
+24:51 and that's a problem because they have
+24:52 
+
+24:52 these great ideas but they have no way
+24:54 
+
+24:54 to truly execute them at the level
+24:56 
+
+24:56 that's needed to really understand who
+24:58 
+
+24:58 will this actually scale because like
+25:00 
+
+25:00 the the Java paper and and and model was
+25:03 
+
+25:03 really interesting and the benchmarks
+25:04 
+
+25:04 are great but they didn't scale it
+25:06 
+
+25:06 Beyond I think like under 10 billion
+25:08 
+
+25:08 parameters so you're like okay what
+25:10 
+
+25:10 happens when you know we we train this
+25:11 
+
+25:11 in 100s like does it actually do you
+25:14 
+
+25:14 still see those improvements or not and
+25:15 
+
+25:15 no one really at least outside of these
+25:17 
+
+25:17 Labs knows the answer yet um so I think
+25:20 
+
+25:20 that's like one challenge um so I think
+25:22 
+
+25:22 like to me we're going to get into this
+25:23 
+
+25:23 hybrid space of you know we are going to
+25:25 
+
+25:25 push definitely on architecture we have
+25:27 
+
+25:27 a very very smart um and well
+25:29 
+
+25:29 accomplished research team um but we
+25:31 
+
+25:31 also are going to be like you know we
+25:33 
+
+25:33 are going to be executing and I think
+25:35 
+
+25:35 that's when we we start to get like a
+25:37 
+
+25:37 recipe um you know we're going to push
+25:39 
+
+25:39 it to the limits and you know we are
+25:41 
+
+25:41 going to start you know release we're
+25:43 
+
+25:43 going to continue to release more models
+25:44 
+
+25:44 on it but in parallel to that I we have
+25:46 
+
+25:46 to push on architecture yeah um and I
+25:48 
+
+25:48 think it just makes sense because the
+25:50 
+
+25:50 next breakthrough you know at some point
+25:51 
+
+25:51 you're going to reach a like a like a
+25:53 
+
+25:53 kind of a theoretical limit and you need
+25:55 
+
+25:55 to evolve the architecture all right so
+25:58 
+
+25:58 I see kind of a little bit of an in
+25:60 
+
+25:60 between um and obviously that we're
+26:02 
+
+26:02 really good at execution I think we're
+26:04 
+
+26:04 pretty good at execution um but we're
+26:06 
+
+26:06 also good in research and we just need
+26:07 
+
+26:07 to marry those two so it makes sense
+26:09 
+
+26:09 because like research and products are
+26:10 
+
+26:10 very different right like one is should
+26:13 
+
+26:13 be pretty deterministic the product side
+26:15 
+
+26:15 and one is inherently non-deterministic
+26:18 
+
+26:18 right it's like is this going to work I
+26:19 
+
+26:19 don't know it's a really big bet um if
+26:22 
+
+26:22 it fails it's research like um it it
+26:25 
+
+26:25 should have like a non-zero chance of
+26:27 
+
+26:27 completely blowing up in our face we
+26:28 
+
+26:28 just go in another another Direction but
+26:30 
+
+26:30 that's that's what research is so I'm
+26:33 
+
+26:33 curious about one branch of where a lot
+26:34 
+
+26:34 of I think model research is happening
+26:36 
+
+26:36 right now agentic reasoning and you I
+26:38 
+
+26:38 think you all have announced uh really
+26:40 
+
+26:40 great results in reasoning I'm curious
+26:43 
+
+26:43 maybe at a very basic level how do you
+26:45 
+
+26:45 define reasoning and then are you all
+26:48 
+
+26:48 seeing reasoning fall out of kind of
+26:50 
+
+26:50 scale during pre-training are you is it
+26:52 
+
+26:52 post trainining and is there a lot of
+26:54 
+
+26:54 work left to do on the reasoning side
+26:57 
+
+26:57 yeah reasoning is a bit of a loaded area
+26:59 
+
+26:59 um I mean you could argue it's it's you
+27:00 
+
+27:00 know things like um you know multi-step
+27:03 
+
+27:03 like you know and I think the the best
+27:04 
+
+27:04 unfortunately the best examples we have
+27:05 
+
+27:05 are like the you know kind of like the
+27:08 
+
+27:08 sort of semi- gimmicky you know um you
+27:11 
+
+27:11 know Bob is driving the bus and like he
+27:13 
+
+27:13 pick you know like those kind of like
+27:14 
+
+27:14 things right you if if you troll local
+27:16 
+
+27:16 llama you'll see a billion of those
+27:17 
+
+27:17 right um so uh but but those actually
+27:20 
+
+27:20 Force the model to take multiple steps
+27:22 
+
+27:22 to respond to you and think through and
+27:23 
+
+27:23 and logically kind of respond um I think
+27:27 
+
+27:27 coding is actually really like you know
+27:29 
+
+27:29 when you look at like pre-training um
+27:32 
+
+27:32 and uh so like to answer your question
+27:33 
+
+27:33 directly like reasoning improvements
+27:36 
+
+27:36 come in both posttraining and
+27:37 
+
+27:37 pre-training um so what we've learned um
+27:40 
+
+27:40 which is now like everyone's like oh of
+27:42 
+
+27:42 course this is the case but definitely
+27:44 
+
+27:44 like the last year or so everyone's kind
+27:45 
+
+27:45 of learned that you know code um having
+27:48 
+
+27:48 a lot of code in your kind of
+27:49 
+
+27:49 pre-training Corpus really improves
+27:51 
+
+27:51 reasoning but that's we you to think
+27:53 
+
+27:53 about it like of course duh um it's step
+27:55 
+
+27:55 by step it's very logical it's you know
+27:58 
+
+27:58 code is very is just logical by nature
+27:60 
+
+27:60 and kind of step by step and like if you
+28:02 
+
+28:02 incorporate a lot of that in your
+28:03 
+
+28:03 pre-training your model will like reason
+28:04 
+
+28:04 better um and then we we of course like
+28:07 
+
+28:07 look at um examples in in in post
+28:10 
+
+28:10 training and like super you know sft um
+28:13 
+
+28:13 to improve as well so you know we look
+28:15 
+
+28:15 at the pre model we um and it kind of
+28:18 
+
+28:18 depends on how you balance things as
+28:20 
+
+28:20 well like you can because you can
+28:21 
+
+28:21 balance like how well your model reasons
+28:24 
+
+28:24 with how well it you know um you know
+28:27 
+
+28:27 responds in different languages like
+28:28 
+
+28:28 ultimately in Post Trading like
+28:29 
+
+28:29 everything is a little bit of a
+28:30 
+
+28:30 trade-off like you can super optimize
+28:32 
+
+28:32 things for coding if you want to and we
+28:34 
+
+28:34 did that with code llama um it was
+28:36 
+
+28:36 really great but of course the model
+28:37 
+
+28:37 will suffer like in other areas and so
+28:40 
+
+28:40 ultimately it becomes what like kind of
+28:42 
+
+28:42 like Paro Frontier of like capabilities
+28:44 
+
+28:44 we want to like bring out if it's a
+28:46 
+
+28:46 general model and I think like um yeah I
+28:49 
+
+28:49 mean ultimately it's a trade-off um so
+28:51 
+
+28:51 anyone can kind of pick a benchmark or
+28:53 
+
+28:53 some some capability and say I'm going
+28:55 
+
+28:55 to Super optimize for it and say by the
+28:57 
+
+28:57 way I'm better than GPD 4
+28:59 
+
+28:59 well great um anyone can do that like
+29:01 
+
+29:01 but is your model as generally capable
+29:03 
+
+29:03 as gbd4 or llama 3.1 or whatever like
+29:06 
+
+29:06 that I think is a different stor so what
+29:08 
+
+29:08 do you think are the future levers to
+29:09 
+
+29:09 unlock reasoning um uh for for anyone
+29:13 
+
+29:13 going
+29:14 
+
+29:14 forward I mean the obvious answer is
+29:17 
+
+29:17 data um I mean the more data that the
+29:20 
+
+29:20 more um you know code and and supervised
+29:23 
+
+29:23 data that you can get I think is like is
+29:25 
+
+29:25 a natural um answer
+29:30 
+
+29:30 um I mean I think we need to find
+29:32 
+
+29:32 applications as well for how we like
+29:34 
+
+29:34 Define it and that would help us like
+29:35 
+
+29:35 once you've kind of start finding like
+29:37 
+
+29:37 those kind of killer applications then
+29:39 
+
+29:39 you can like then you kind of know where
+29:41 
+
+29:41 to kind of focus in terms of your your G
+29:44 
+
+29:44 exactly what you're sing for like and
+29:45 
+
+29:45 this goes back to like evals and like
+29:48 
+
+29:48 what is what is your eval because we're
+29:49 
+
+29:49 starting to saturate evals and so uh we
+29:52 
+
+29:52 we tend to as a community like we Define
+29:55 
+
+29:55 a a benchmark or a metric and we just
+29:58 
+
+29:58 just like optimize the living hell out
+29:59 
+
+29:59 of it and it's great but then you
+30:02 
+
+30:02 actually uh look at the model in an
+30:04 
+
+30:04 actual environment and you're like oh
+30:06 
+
+30:06 well that model has a better mlu score
+30:09 
+
+30:09 great but like how does it actually
+30:11 
+
+30:11 respond well it doesn't respond as well
+30:13 
+
+30:13 but but it has a better Mare and so I
+30:16 
+
+30:16 think we need better evals and better
+30:17 
+
+30:17 benchmarks that allow us
+30:19 
+
+30:19 to you know I would say like find clear
+30:23 
+
+30:23 line of sight to actual interactions and
+30:25 
+
+30:25 and I think like you know the the live
+30:29 
+
+30:29 what is it called the Abacus um
+30:31 
+
+30:31 Benchmark the live uh live bench I think
+30:33 
+
+30:33 it's called I can't remember the name it
+30:34 
+
+30:34 um is pretty is pretty good I was
+30:36 
+
+30:36 looking at that and of course like Alm
+30:37 
+
+30:37 CIS and CHF out Arena like these are
+30:39 
+
+30:39 more natural even though you know still
+30:42 
+
+30:42 not perfect but it's like moving in the
+30:44 
+
+30:44 right direction of things are like more
+30:48 
+
+30:48 human like interactions versus like a
+30:50 
+
+30:50 static data set um they static prompt
+30:53 
+
+30:53 set that is uh is not that helpful so I
+30:56 
+
+30:56 think like once we start to find these
+30:57 
+
+30:57 other like what us use cases make sense
+30:59 
+
+30:59 we're going to start to generate more
+31:01 
+
+31:01 data and you're going to start to
+31:02 
+
+31:02 improve the model there um and you're
+31:04 
+
+31:04 going to and hopefully that kind of has
+31:06 
+
+31:06 again line of sight to a benchmark or
+31:08 
+
+31:08 eal that um actually feels like it
+31:12 
+
+31:12 improves an end product and a lot of
+31:14 
+
+31:14 this actually depends on the end product
+31:15 
+
+31:15 of course like what is my application
+31:17 
+
+31:17 yeah so yeah out of curiosity I within
+31:20 
+
+31:20 large research Labs coding and math have
+31:23 
+
+31:23 always been uh two primary categories
+31:25 
+
+31:25 I'm trying to unlock reasoning in the
+31:27 
+
+31:27 startup V go ISM now we're seeing more
+31:29 
+
+31:29 folks who really want to go from the
+31:31 
+
+31:31 math angle do you have a perspective on
+31:33 
+
+31:33 whether or not that has led to
+31:35 
+
+31:35 interesting
+31:37 
+
+31:37 unlocks I mean I mean the answer is yeah
+31:40 
+
+31:40 I mean I think we if you look at our
+31:41 
+
+31:41 data or at least our models we've like
+31:44 
+
+31:44 Cody and math have been I would say the
+31:46 
+
+31:46 primary lovers um so uh I mean it's it's
+31:52 
+
+31:52 yeah I mean I think that's like having
+31:53 
+
+31:53 more obviously is better because
+31:54 
+
+31:54 obviously math is also very logical and
+31:56 
+
+31:56 very like stepwise um so I obviously you
+31:59 
+
+31:59 can see the pattern here um the more
+32:00 
+
+32:00 data you have like that that kind of
+32:02 
+
+32:02 follows that sort of pattern um the more
+32:04 
+
+32:04 your model is going to be able to reason
+32:05 
+
+32:05 and you can see that in how how actually
+32:07 
+
+32:07 models respond like if they start and
+32:10 
+
+32:10 you ask them to like respond and like
+32:12 
+
+32:12 step me through your thinking process
+32:13 
+
+32:13 right and it'll actually do that and
+32:15 
+
+32:15 some models do better than others um so
+32:18 
+
+32:18 anything like anything like that I think
+32:19 
+
+32:19 scientific papers like also there's like
+32:23 
+
+32:23 um you know we we had a uh um we had
+32:26 
+
+32:26 some like uh uh projects in out of fair
+32:30 
+
+32:30 that like trained on you know like
+32:32 
+
+32:32 archived papers and you can see like not
+32:34 
+
+32:34 only is like code and math like pure
+32:36 
+
+32:36 mathematics but also like scientific
+32:37 
+
+32:37 paper which just like science scientists
+32:39 
+
+32:39 are very logical and how they write
+32:41 
+
+32:41 things and how they stepwise and and how
+32:43 
+
+32:43 they like create images of their like
+32:45 
+
+32:45 charts and stuff and like that also I
+32:47 
+
+32:47 think we've seen like just general
+32:49 
+
+32:49 scientific information like helps as
+32:50 
+
+32:50 well so Gala sorry galactico was our
+32:54 
+
+32:54 project yeah so so Robin Ross from the
+32:56 
+
+32:56 papers of the code team that still in my
+32:60 
+
+32:60 opinion like one of the coolest projects
+33:01 
+
+33:01 ever um it got a lot of like bad press
+33:04 
+
+33:04 but wow what like they were ahead of
+33:06 
+
+33:06 their time in my opinion
+33:07 
+
+33:07 so I'd love to talk a little bit about
+33:09 
+
+33:09 small models um given the scale of
+33:12 
+
+33:12 capital and the compute that many
+33:15 
+
+33:15 startups have the 8B and 70b models are
+33:18 
+
+33:18 an incredible gift to the ecosystem um
+33:21 
+
+33:21 and it's funny that you called them
+33:22 
+
+33:22 appetizers at the start because I think
+33:24 
+
+33:24 they're super powerful for that for that
+33:26 
+
+33:26 set but they're also really powerful for
+33:27 
+
+33:27 a number of different applications um
+33:30 
+
+33:30 where you want smaller models um and so
+33:32 
+
+33:32 I'm curious to hear what do you hope to
+33:33 
+
+33:33 see developers use the 8B and 70b models
+33:36 
+
+33:36 uh for given that they are best in glass
+33:39 
+
+33:39 um for their um size of model so it's
+33:42 
+
+33:42 interesting though when we released uh
+33:44 
+
+33:44 yeah we released what April llama 3 we
+33:46 
+
+33:46 released an eight8 and a 70 the
+33:48 
+
+33:48 appetizers as we call them um you know
+33:51 
+
+33:51 the 8B was actually better than the lus
+33:53 
+
+33:53 70b by leaps so we were um you know I
+33:57 
+
+33:57 had to look at the chart um and and I
+33:60 
+
+33:60 was like is this right yeah like is that
+34:02 
+
+34:02 really the case and we're like yeah like
+34:05 
+
+34:05 it really is I it was that much better
+34:07 
+
+34:07 what's the intuition for how that
+34:09 
+
+34:09 happens I mean it was more data we we
+34:12 
+
+34:12 had what 7x more
+34:13 
+
+34:13 data um obviously like we we put a bunch
+34:16 
+
+34:16 more compute at it as well so you know
+34:20 
+
+34:20 going back to like Computing data you
+34:22 
+
+34:22 know being uh you know we're pushing on
+34:24 
+
+34:24 those so I think like we just you know
+34:26 
+
+34:26 we saw like just like it's almost like
+34:28 
+
+34:28 you you know every generation which is
+34:30 
+
+34:30 again the generations are accelerating
+34:32 
+
+34:32 you start to see you know the the
+34:34 
+
+34:34 benchmarks for like a large model
+34:36 
+
+34:36 basically get like you know pushed down
+34:39 
+
+34:39 into the smaller like size regime and so
+34:41 
+
+34:41 you know 70 becomes an eight and you
+34:43 
+
+34:43 know like we have internally we have
+34:45 
+
+34:45 models where the eight is you know like
+34:47 
+
+34:47 on a much even smaller than eight
+34:49 
+
+34:49 actually we're starting to see like
+34:50 
+
+34:50 really nice benchmarks um on even
+34:52 
+
+34:52 smaller models so you continue to see
+34:55 
+
+34:55 like and that you know that that the
+34:56 
+
+34:56 models improve at smaller scale and that
+34:58 
+
+34:58 I think is just we're pushing the the
+34:60 
+
+34:60 architecture we're pushing pushing scale
+35:02 
+
+35:02 and we're starting you know we haven't
+35:04 
+
+35:04 quite saturated it yet and I think
+35:05 
+
+35:05 that's really interesting so um you know
+35:08 
+
+35:08 for me uh one of the biggest reasons
+35:12 
+
+35:12 that I think it like a small
+35:13 
+
+35:13 architecture is useful is um obviously
+35:16 
+
+35:16 on device everyone loves to talk about
+35:18 
+
+35:18 on device and and Apple's you know
+35:20 
+
+35:20 talking about that and and Google has
+35:22 
+
+35:22 you know Gemma models and Gemini running
+35:24 
+
+35:24 and in Android devices so I think like
+35:26 
+
+35:26 on device makes sense I think um safety
+35:28 
+
+35:28 is kind of interesting because you know
+35:30 
+
+35:30 one of the things we you know we have um
+35:33 
+
+35:33 our own internal versions of L guard
+35:34 
+
+35:34 which we used that are orchestrated for
+35:36 
+
+35:36 applications internally at the company
+35:38 
+
+35:38 at meta and uh you know today they're
+35:41 
+
+35:41 built on an 8B model which is kind of
+35:43 
+
+35:43 expensive to run if you think about a a
+35:45 
+
+35:45 safety model that's kind of like the
+35:46 
+
+35:46 secondary model and so I do think you
+35:49 
+
+35:49 know internally we've been experimenting
+35:50 
+
+35:50 with much smaller models in that in that
+35:53 
+
+35:53 regard and uh it creates efficiency it
+35:55 
+
+35:55 lowers latency uh so um CU really you
+35:59 
+
+35:59 know those models are really just
+36:00 
+
+36:00 classifiers you know they're not really
+36:02 
+
+36:02 autor regressive like chat like
+36:04 
+
+36:04 interfaces they really just classify
+36:07 
+
+36:07 like an in the input a prompt of you
+36:09 
+
+36:09 know does that violate you know this
+36:11 
+
+36:11 whatever category in the taxonomy in the
+36:13 
+
+36:13 output um the model when it generates
+36:15 
+
+36:15 does it does it violate that kind of
+36:16 
+
+36:16 stuff so you can actually push those
+36:18 
+
+36:18 even further um I think that there's
+36:21 
+
+36:21 also like really interesting cases
+36:23 
+
+36:23 though for like on device um where you
+36:26 
+
+36:26 almost have like when you think about
+36:29 
+
+36:29 privacy and you think about data you
+36:30 
+
+36:30 want to have like your data stay on
+36:32 
+
+36:32 device you can think about you know like
+36:35 
+
+36:35 a rag like architecture on device so you
+36:37 
+
+36:37 have data you know even even your chat
+36:39 
+
+36:39 history that's like on say WhatsApp or
+36:41 
+
+36:41 or other things you can imagine like
+36:43 
+
+36:43 that model having access to to data
+36:45 
+
+36:45 aggregating it and then running some
+36:47 
+
+36:47 type of you know almost like a mini
+36:48 
+
+36:48 Vector database right where you're we
+36:51 
+
+36:51 using Rag and doing your kind of fuzzy
+36:53 
+
+36:53 search fuzzy or fuzzy matching and with
+36:55 
+
+36:55 your like small model and
+36:58 
+
+36:58 that becomes it kind of own system in
+36:60 
+
+36:60 itself and you can basically do things
+37:02 
+
+37:02 like local summarization like I don't
+37:04 
+
+37:04 know like I get so many text messages
+37:06 
+
+37:06 like yeah you know hey like summarize my
+37:08 
+
+37:08 last 15 messages please because like
+37:10 
+
+37:10 I've been in meetings and I haven't
+37:11 
+
+37:11 looked at my phone um and that's like
+37:13 
+
+37:13 super useful and then I don't have to
+37:14 
+
+37:14 send you know data up to the cloud or
+37:16 
+
+37:16 anywhere else so there's like those kind
+37:18 
+
+37:18 of use cases I think that where small
+37:19 
+
+37:19 models actually are going to be really
+37:20 
+
+37:20 compelling and then for like super
+37:22 
+
+37:22 complex queries and and things obviously
+37:25 
+
+37:25 like you have a big model in the cloud
+37:27 
+
+37:27 that can always you know surface those
+37:29 
+
+37:29 but for like many things I think like on
+37:30 
+
+37:30 device or even you know in the edge and
+37:32 
+
+37:32 on Prem um these small models actually
+37:34 
+
+37:34 can do pretty good you talked about kind
+37:36 
+
+37:36 of scaling up computes and data as you
+37:38 
+
+37:38 know the two fundamental vectors to
+37:41 
+
+37:41 improve performance I guess there's been
+37:43 
+
+37:43 a lot of chatter about how we are going
+37:44 
+
+37:44 to hit a wall or maybe we're not going
+37:46 
+
+37:46 to hit a wall on data and maybe
+37:47 
+
+37:47 synthetic data is the answer Etc I'm
+37:49 
+
+37:49 curious your perspective on that like
+37:51 
+
+37:51 are is there an impending wall that
+37:52 
+
+37:52 we're going to hit most likely of you
+37:54 
+
+37:54 know cheap accessible data what do you
+37:57 
+
+37:57 think how Howes is scale beyond that I
+37:59 
+
+37:59 mean I think we've we've shown with this
+38:00 
+
+38:00 release that synthetic data does help a
+38:02 
+
+38:02 lot I mean I think we've uh you know in
+38:04 
+
+38:04 pre-training um you know we train on 15
+38:07 
+
+38:07 training tokens or give or take and um
+38:10 
+
+38:10 and in post training uh we generated a
+38:12 
+
+38:12 ton of you know millions of of of of
+38:15 
+
+38:15 annotated synthetic data um a lot of it
+38:18 
+
+38:18 generated by the 45b um we OB obviously
+38:20 
+
+38:20 paid you know for annotations as well um
+38:24 
+
+38:24 I do think um synto data is like a
+38:28 
+
+38:28 potential path forward I think it's
+38:29 
+
+38:29 going to like we we know now um and the
+38:32 
+
+38:32 kind of proof is in the models right
+38:33 
+
+38:33 it's like great to talk about it and
+38:34 
+
+38:34 that um I do think you know data is
+38:37 
+
+38:37 going to be a challenge at some point
+38:38 
+
+38:38 for us and this is why I think you know
+38:41 
+
+38:41 uh companies are licensing a lot of data
+38:43 
+
+38:43 these days to get access I mean open
+38:45 
+
+38:45 eyes licensing data we're licensing
+38:46 
+
+38:46 certainly data um I think uh having
+38:50 
+
+38:50 access to uh services that generate data
+38:54 
+
+38:54 uh to improve models is you know is
+38:56 
+
+38:56 important so I think that inherently is
+38:58 
+
+38:58 an advantage for a lot of companies I
+38:59 
+
+38:59 mean Google has YouTube right um they
+39:01 
+
+39:01 can uh I'm sure is is is a value to them
+39:06 
+
+39:06 so um which kind of implies that you
+39:09 
+
+39:09 know uh bigger companies have an
+39:10 
+
+39:10 advantage which is not something we
+39:12 
+
+39:12 that's anything new right we've been
+39:13 
+
+39:13 talked about this for a long time um in
+39:15 
+
+39:15 terms of a data wall I don't know I mean
+39:16 
+
+39:16 I think we're not there yet um I would
+39:20 
+
+39:20 say like let's let's talk another Let's
+39:21 
+
+39:21 do let's schedule this for like a year
+39:23 
+
+39:23 out and let's see where we are next year
+39:26 
+
+39:26 um you know I'll save my calendar for
+39:28 
+
+39:28 one year exactly from now and um met AI
+39:32 
+
+39:32 but uh you know let's talk in the ear
+39:33 
+
+39:33 and see where we are but I we haven't
+39:35 
+
+39:35 hit it yet um and we're still scaling
+39:37 
+
+39:37 and we're still you know uh we're still
+39:39 
+
+39:39 Gathering a lot of data and we're
+39:40 
+
+39:40 generating data um and our models are
+39:42 
+
+39:42 still like continue to impr grw so yeah
+39:46 
+
+39:46 let's close it out with some rapid fire
+39:48 
+
+39:48 questions sure sounds great and what
+39:49 
+
+39:49 year do you think will surpass the 50%
+39:51 
+
+39:51 threshold on sweet
+39:54 
+
+39:54 bench I good
+39:56 
+
+39:56 question uh
+39:58 
+
+39:58 if if I've learned anything it'll be
+39:59 
+
+39:59 faster than whatever um whatever answer
+40:01 
+
+40:01 I give you um because I think any
+40:04 
+
+40:04 Benchmark will as soon as we zero in on
+40:06 
+
+40:06 it people are going to go and and figure
+40:07 
+
+40:07 it out so um I don't have an answer it
+40:09 
+
+40:09 it'll be fast I'm sure you know one of
+40:11 
+
+40:11 the questions we have been asking people
+40:13 
+
+40:13 is in what year will an open source
+40:15 
+
+40:15 model surpass the other companies on the
+40:17 
+
+40:17 front front the other models on the
+40:18 
+
+40:18 frontier and we have to take out that
+40:20 
+
+40:20 question now thanks to you all this I
+40:23 
+
+40:23 mean it's it's true we're we're we're
+40:27 
+
+40:27 almost there I mean I think 45b is
+40:29 
+
+40:29 incredible it's definitely um it's
+40:30 
+
+40:30 definitely in that class yeah absolutely
+40:32 
+
+40:32 which is incredible will meta always
+40:34 
+
+40:34 open source
+40:36 
+
+40:36 llama I mean I think Mark's pretty
+40:38 
+
+40:38 committed you saw his letter um I mean
+40:41 
+
+40:41 we've we've open sourced you know for
+40:43 
+
+40:43 for years and years now back to py
+40:44 
+
+40:44 George to fair to Lava models we're I
+40:48 
+
+40:48 mean this isn't something that's a flash
+40:49 
+
+40:49 in the pan for the company the company's
+40:51 
+
+40:51 been committed to open source for a long
+40:52 
+
+40:52 time so I I wouldn't Never Say Never but
+40:55 
+
+40:55 like I mean the company and Mark are
+40:56 
+
+40:56 really committed Amazing Joe thank you
+40:58 
+
+40:58 so much for being here today and and
+41:01 
+
+41:01 also for all the work that you're giving
+41:03 
+
+41:03 to the entire ecosystem uh I think the
+41:05 
+
+41:05 entire AI Community is has very much
+41:08 
+
+41:08 grateful for all the work that you've
+41:09 
+
+41:09 done with pushing out llama and the
+41:11 
+
+41:11 advancements to come it's a huge team um
+41:13 
+
+41:13 check out the paper look at all the all
+41:15 
+
+41:15 the all the acknowledgements I me we
+41:17 
+
+41:17 spent all of yesterday reading it we
+41:19 
+
+41:19 need like the Star Wars like scrolling
+41:20 
+
+41:20 text of all the contributors because it
+41:22 
+
+41:22 it was an incredibly big team I was
+41:24 
+
+41:24 thinking about that same so my hats off
+41:27 
+
+41:27 to the team this was a total I mean this
+41:29 
+
+41:29 is this absolutely took a village to get
+41:31 
+
+41:31 get Lama out there and and I'm so proud
+41:33 
+
+41:33 and excited to represent the team here
+41:35 
+
+41:35 so thank you thank you
+41:38 
+
+41:38 [Music]
+41:44 
+
+41:44 [Music]
+41:54 
+
+41:54 [Music]

@@ -1,0 +1,5404 @@
+00:00 Just like the fact that this whole thing
+00:02 
+
+00:02 works, it's kind of mind-blowing.
+00:04 
+
+00:04 >> Yeah.
+00:05 
+
+00:05 >> Right. Like you you build this like
+00:07 
+
+00:07 loosely brain inspired thing that has
+00:10 
+
+00:10 very general purpose learning algorithm.
+00:12 
+
+00:12 You feed it data and it somehow gets it
+00:15 
+
+00:15 and gets it way better than anything
+00:17 
+
+00:17 we've ever had before. And this applies
+00:19 
+
+00:19 to robots and it applies to vision and
+00:21 
+
+00:21 language and sound and all kinds of
+00:23 
+
+00:23 other things. And like I think if you
+00:26 
+
+00:26 stop for a second and just think about
+00:28 
+
+00:28 it how it works and and that it works,
+00:31 
+
+00:31 it's just like absolutely mind-blowing.
+00:50 
+
+00:50 In this episode, we sit down with Carol
+00:51 
+
+00:51 and Toby of Physical Intelligence, a
+00:53 
+
+00:53 company building foundation models for
+00:55 
+
+00:55 robotics. Carol and Toby explain why the
+00:57 
+
+00:57 classical approach of breaking robotics
+00:59 
+
+00:59 down into perception, planning, and
+01:01 
+
+01:01 control was fundamentally wrong, and how
+01:03 
+
+01:03 endto-end learning with reinforcement
+01:04 
+
+01:04 learning is finally making deployment
+01:06 
+
+01:06 possible. You'll hear how they achieved
+01:08 
+
+01:08 robust real world performance, getting
+01:10 
+
+01:10 robots to make coffee for 13 hours
+01:12 
+
+01:12 straight, and how these models
+01:13 
+
+01:13 generalize across radically different
+01:15 
+
+01:15 tasks from surgical robots to drone
+01:17 
+
+01:17 flying in ways that we don't fully
+01:19 
+
+01:19 understand. We also talk about the
+01:21 
+
+01:21 technical insights behind Pi Star 0.6,
+01:24 
+
+01:24 which is physical intelligence's newest
+01:26 
+
+01:26 model that learns from experience using
+01:27 
+
+01:27 reinforcement learning. Enjoy the show.
+01:31 
+
+01:31 >> Carl, Toby, thank you so much for
+01:33 
+
+01:33 joining us here today.
+01:34 
+
+01:34 >> Thank you for having us. excited to talk
+01:36 
+
+01:36 everything physical intelligence,
+01:37 
+
+01:37 general robotics, etc. Uh maybe before
+01:39 
+
+01:39 we get into it, just for our audience,
+01:41 
+
+01:41 can you share a little bit about what
+01:42 
+
+01:42 physical intelligence is and the mission
+01:43 
+
+01:43 that you're after?
+01:44 
+
+01:44 >> Yeah, so at physical intelligence, we
+01:47 
+
+01:47 are building robotic foundation models.
+01:49 
+
+01:49 These are models that in principle
+01:52 
+
+01:52 should have should be able to have any
+01:54 
+
+01:54 robot do any task. Um, and over the past
+01:58 
+
+01:58 one and a half years or so, we started
+02:01 
+
+02:01 building the we we we created the right
+02:03 
+
+02:03 building blocks that show how these
+02:06 
+
+02:06 models could scale. So, we've shown that
+02:09 
+
+02:09 they're able to control many different
+02:10 
+
+02:10 robotic form factors, many different
+02:12 
+
+02:12 types of robots. We've also shown that
+02:14 
+
+02:14 they're able to generalize, so you can
+02:15 
+
+02:15 bring it to completely new environments
+02:17 
+
+02:17 and what it takes for them to
+02:18 
+
+02:18 generalize. And this this last release
+02:21 
+
+02:21 that we just had called Pi Star06 that
+02:24 
+
+02:24 we also wanted to tell you more about um
+02:26 
+
+02:26 shows how we can get them to uh good
+02:29 
+
+02:29 performance so that they're starting to
+02:32 
+
+02:32 become deployable.
+02:34 
+
+02:34 >> And this is really important to us
+02:35 
+
+02:35 because we want to see this technology
+02:36 
+
+02:36 actually deployed in the real world but
+02:38 
+
+02:38 also because we don't have the benefit
+02:41 
+
+02:41 of having the the free data on the
+02:44 
+
+02:44 internet. There is no data of robot
+02:47 
+
+02:47 actions. So we need to create the data
+02:49 
+
+02:49 sets ourselves.
+02:51 
+
+02:51 >> So we are after the the problem of
+02:53 
+
+02:53 physical intelligence, after the problem
+02:54 
+
+02:54 of creating foundation models for
+02:56 
+
+02:56 robots. Uh and we've made quite a lot of
+02:58 
+
+02:58 progress.
+02:59 
+
+02:59 >> Wonderful. And can I ask why the
+03:01 
+
+03:01 decision to build foundation models as
+03:03 
+
+03:03 opposed to you know there are companies
+03:04 
+
+03:04 that are building fully vertically
+03:06 
+
+03:06 integrated robotic products right now.
+03:08 
+
+03:08 Uh you you know this the Sunday launch
+03:10 
+
+03:10 last month is in the back of my head.
+03:12 
+
+03:12 You can buy a cute little robot helper
+03:13 
+
+03:13 for your household. There's companies
+03:15 
+
+03:15 working on cooking robots. There's
+03:17 
+
+03:17 obviously the humanoid companies. Um why
+03:18 
+
+03:18 build a foundation model versus build
+03:20 
+
+03:20 build a robot yourselves?
+03:22 
+
+03:22 >> Yeah. So I think if you look at the
+03:24 
+
+03:24 history of robotics, it's very very
+03:26 
+
+03:26 clear to me and I think to many
+03:28 
+
+03:28 roboticists that we've been always
+03:30 
+
+03:30 bottlenecked on intelligence.
+03:32 
+
+03:32 >> We've had robots that are capable of
+03:34 
+
+03:34 doing incredible things whether it's in
+03:36 
+
+03:36 the home or in industrial settings.
+03:38 
+
+03:38 We've seen robots more than a decade ago
+03:41 
+
+03:41 that if TA operated they can clean the
+03:44 
+
+03:44 entire house
+03:46 
+
+03:46 and the the the really important caveat
+03:48 
+
+03:48 is if operated. So if there is a human
+03:51 
+
+03:51 mind behind it, it's clear that the
+03:53 
+
+03:53 hardware is capable of doing lots of
+03:55 
+
+03:55 different things. And for a very long
+03:58 
+
+03:58 time, robotics companies have been
+03:60 
+
+03:60 structured the way you described where
+04:02 
+
+04:02 you kind of think of creating a specific
+04:04 
+
+04:04 robot that's designed to do just a
+04:05 
+
+04:05 single task or a single application.
+04:08 
+
+04:08 And instead what we thought would be
+04:11 
+
+04:11 would really help the field is to focus
+04:13 
+
+04:13 on the bottleneck on the intelligence.
+04:15 
+
+04:15 So we created a company to focus on that
+04:17 
+
+04:17 bottleneck because we think that this is
+04:20 
+
+04:20 if we if we address that bottleneck, we
+04:22 
+
+04:22 can actually make robots happen. And if
+04:25 
+
+04:25 you do it any other way, you're
+04:27 
+
+04:27 basically not making as much progress on
+04:28 
+
+04:28 the bottleneck as you could be.
+04:30 
+
+04:30 >> So we thought we would just target this
+04:32 
+
+04:32 problem headon. Focus on the
+04:34 
+
+04:34 intelligence and if we can do that, that
+04:36 
+
+04:36 would lead to many different vertical
+04:38 
+
+04:38 products. it will lead to, you know,
+04:40 
+
+04:40 robots being deployed in the home in in
+04:43 
+
+04:43 industrial settings basically anywhere.
+04:45 
+
+04:45 >> Can I just pressure that, test that a
+04:46 
+
+04:46 little bit? Um, so on the hardware side,
+04:49 
+
+04:49 like I've seen the latest videos, for
+04:50 
+
+04:50 example, of the the Optimus hand. It
+04:53 
+
+04:53 it's like it's exquisite. It's a it's a
+04:54 
+
+04:54 piece of art. Um, and I hadn't seen the
+04:58 
+
+04:58 videos of people, you know, teleoperated
+04:59 
+
+04:59 robots cleaning houses 10 years ago, but
+05:01 
+
+05:01 I'm wondering if there's a set of tasks
+05:03 
+
+05:03 that's, you know, maybe now just on the
+05:05 
+
+05:05 cusp of becoming possible. for example,
+05:07 
+
+05:07 cooking or like being able to, you know,
+05:09 
+
+05:09 peel and dice an onion that like you
+05:12 
+
+05:12 couldn't have done with with hardware
+05:13 
+
+05:13 prior to where we currently are. So, how
+05:15 
+
+05:15 much of a why now do you think hardware
+05:17 
+
+05:17 is or isn't?
+05:18 
+
+05:18 >> So, there's a lot of progress in
+05:20 
+
+05:20 hardware
+05:21 
+
+05:21 >> um especially in humanoid hardware
+05:23 
+
+05:23 >> like dextrous hands for instance, as you
+05:25 
+
+05:25 mentioned, they're
+05:26 
+
+05:26 >> that I think they're much better now
+05:28 
+
+05:28 than they were even few years ago.
+05:30 
+
+05:30 >> Yeah.
+05:31 
+
+05:31 >> Um but that still doesn't address the
+05:33 
+
+05:33 bottleneck. We could have had robots
+05:35 
+
+05:35 operating, you know, chopping vegetables
+05:37 
+
+05:37 or doing cooking even with simple
+05:40 
+
+05:40 grippers before. The problem is that we
+05:43 
+
+05:43 don't have the intelligence to operate
+05:44 
+
+05:44 these robots.
+05:45 
+
+05:45 >> And the more complex the hardware is,
+05:48 
+
+05:48 um, it it doesn't really resolve that
+05:51 
+
+05:51 bottleneck, right? Like it it allows you
+05:53 
+
+05:53 to do more potentially,
+05:55 
+
+05:55 >> but you're still bottlenecked by the
+05:56 
+
+05:56 fundamental challenge of robots not
+05:58 
+
+05:58 being intelligent enough.
+05:59 
+
+05:59 >> I see. So hardware may raise the ceiling
+06:01 
+
+06:01 on what you're able to do but like the
+06:03 
+
+06:03 with the capability floor we're not even
+06:04 
+
+06:04 there yet.
+06:05 
+
+06:05 >> That's right. So even with simple robots
+06:07 
+
+06:07 we are not yet at the level of a human
+06:08 
+
+06:08 operator.
+06:10 
+
+06:10 >> So the limit being the intelligence
+06:12 
+
+06:12 layer. What's the limit to developing
+06:14 
+
+06:14 the intelligence? Is that collecting
+06:15 
+
+06:15 data? Is it doing it cheaply? Because
+06:20 
+
+06:20 you know you've broken down the problem.
+06:21 
+
+06:21 We're going to keep asking you why why
+06:23 
+
+06:23 and just drill down further. So what's
+06:25 
+
+06:25 the next layer of the okay what's the
+06:26 
+
+06:26 bottleneck for solving intelligence
+06:28 
+
+06:28 generalization?
+06:30 
+
+06:30 >> It's a it's a good question. Um so we
+06:32 
+
+06:32 thought about it in terms of three
+06:34 
+
+06:34 factors. We refer to them as capability,
+06:37 
+
+06:37 generalization and performance.
+06:40 
+
+06:40 Um with capability our our idea was that
+06:44 
+
+06:44 we want to get to the point where as
+06:46 
+
+06:46 long as you can collect data for
+06:48 
+
+06:48 something for a task or for a robot you
+06:50 
+
+06:50 should have a model that should be able
+06:51 
+
+06:51 to to replicate that to automate that
+06:53 
+
+06:53 task. Mhm.
+06:54 
+
+06:54 >> This is something that we've gotten to
+06:56 
+
+06:56 fairly quickly. Um, this was our PI zero
+06:58 
+
+06:58 release around a year ago or so,
+07:01 
+
+07:01 >> showing that it's basically possible
+07:02 
+
+07:02 that if you can collect data for any
+07:04 
+
+07:04 task, for any robot, you should be able
+07:06 
+
+07:06 to automate it and all should be able to
+07:07 
+
+07:07 learn it. Um, the next challenge is
+07:10 
+
+07:10 around generalization and this is still
+07:12 
+
+07:12 an open challenge. So, we wanted to get
+07:14 
+
+07:14 to the point where the robots can just
+07:16 
+
+07:16 work zero shot and you can just bring
+07:18 
+
+07:18 them to a new home for instance and they
+07:20 
+
+07:20 should know how to operate in that home.
+07:22 
+
+07:22 And this is a really really difficult
+07:24 
+
+07:24 problem, right? Like if you if you put a
+07:26 
+
+07:26 robot in a new home, it needs to
+07:27 
+
+07:27 understand, you know, where different
+07:29 
+
+07:29 items are, that the counters look
+07:31 
+
+07:31 different, the lighting is different
+07:32 
+
+07:32 that what you've seen in the past and so
+07:34 
+
+07:34 on. And I wouldn't say that this problem
+07:36 
+
+07:36 is solved, but I think we start to get a
+07:39 
+
+07:39 handle on how to how to solve it and how
+07:41 
+
+07:41 it scales. And the only answer to
+07:44 
+
+07:44 generalization that we know in machine
+07:45 
+
+07:45 learning is through diversity of data.
+07:47 
+
+07:47 So if you see a lot of different diverse
+07:50 
+
+07:50 data sets, you should be able to
+07:51 
+
+07:51 generalize to to a setting that is
+07:53 
+
+07:53 similar to the one you've seen. And this
+07:55 
+
+07:55 is something that we've seen with our
+07:56 
+
+07:56 PIO5 release in April of this year that
+07:59 
+
+07:59 we we got to the point where we can
+08:00 
+
+08:00 bring a robot to a new home that it's
+08:02 
+
+08:02 never been to before and it's able to to
+08:04 
+
+08:04 to operate in that home. It's not
+08:06 
+
+08:06 perfect yet, but at least it has some
+08:08 
+
+08:08 kind of common sense on, you know, how
+08:10 
+
+08:10 to go about simple tasks like cleaning
+08:12 
+
+08:12 up the kitchen and things like that. And
+08:14 
+
+08:14 then the last challenge that is also not
+08:16 
+
+08:16 fully solved yet is performance. So how
+08:18 
+
+08:18 can we get these models to the point
+08:20 
+
+08:20 where the performance is good enough so
+08:21 
+
+08:21 we can actually deploy them
+08:23 
+
+08:23 >> right and deployments here are really
+08:25 
+
+08:25 really important because as I mentioned
+08:27 
+
+08:27 before we also need to gather data and I
+08:30 
+
+08:30 think that is going going to be the most
+08:31 
+
+08:31 scalable way of collecting data because
+08:33 
+
+08:33 you'll have robots out there in the
+08:34 
+
+08:34 world doing economically valuable tasks
+08:37 
+
+08:37 and that way that the cost of that data
+08:39 
+
+08:39 collection is basically negative and the
+08:41 
+
+08:41 more the more broadly you can deploy
+08:43 
+
+08:43 this technology the more data you'll be
+08:45 
+
+08:45 getting and I think in the limit that
+08:47 
+
+08:47 will that will be the biggest source of
+08:49 
+
+08:49 the data you can imagine much bigger
+08:50 
+
+08:50 than internet data for instance
+08:52 
+
+08:52 >> and how far away do you think we are
+08:54 
+
+08:54 from generalization or from a
+08:56 
+
+08:56 performance level that maybe it's a
+08:59 
+
+08:59 controlled environment maybe it's a
+09:00 
+
+09:00 general environment in homes or offices
+09:03 
+
+09:03 but not the whole
+09:04 
+
+09:04 >> whole world if you could limit that what
+09:07 
+
+09:07 >> where do you think generalization
+09:08 
+
+09:08 performance will will need to be before
+09:12 
+
+09:12 we can deploy these kind of robots
+09:14 
+
+09:14 >> I think we are actually fairly close to
+09:17 
+
+09:17 deploy deploying these robots. We
+09:18 
+
+09:18 started deploying them ourselves
+09:20 
+
+09:20 already. We thought this was something
+09:22 
+
+09:22 that was going to take something like 5
+09:23 
+
+09:23 years to get to the point where the
+09:25 
+
+09:25 technology is actually ready to deploy a
+09:27 
+
+09:27 robot in a in a commercial setting and
+09:29 
+
+09:29 have it do something valuable. But we've
+09:31 
+
+09:31 done it I think two months ago or
+09:33 
+
+09:33 something like that. Um, so I think
+09:36 
+
+09:36 we're now getting to that threshold that
+09:39 
+
+09:39 that the models are useful enough,
+09:41 
+
+09:41 they're perform performant enough and
+09:43 
+
+09:43 they can do enough of variety of tasks
+09:46 
+
+09:46 to be actually useful. So that's a
+09:48 
+
+09:48 really really exciting moment. Um, we I
+09:51 
+
+09:51 think we just crossed that threshold.
+09:53 
+
+09:53 Uh, I think it's still to be determined
+09:55 
+
+09:55 how wide is the aperture of where we can
+09:57 
+
+09:57 deploy. There are some tasks where the
+09:59 
+
+09:59 failure can be really catastrophic.
+10:01 
+
+10:01 Maybe these are not the best tasks to
+10:02 
+
+10:02 deploy just yet. There are some tasks
+10:04 
+
+10:04 that require a ton of generalization
+10:05 
+
+10:05 like deploying in the homes or that are
+10:07 
+
+10:07 you know have privacy concerns or safety
+10:10 
+
+10:10 concerns and so on. Maybe these are not
+10:12 
+
+10:12 the best places to deploy just yet but I
+10:14 
+
+10:14 think there is that the aperture is
+10:16 
+
+10:16 growing as we collect more data as these
+10:18 
+
+10:18 models get better we can deploy them in
+10:20 
+
+10:20 more and more settings. So uh I think
+10:22 
+
+10:22 we're we're starting to get there.
+10:24 
+
+10:24 >> Where is the current aperture that
+10:25 
+
+10:25 you're deploying right now?
+10:27 
+
+10:27 Um so we are actually this is this is a
+10:30 
+
+10:30 really difficult question to answer
+10:32 
+
+10:32 because with these foundation models
+10:34 
+
+10:34 sometimes you don't fully know. Um so
+10:38 
+
+10:38 kind of similarly to to how with uh
+10:40 
+
+10:40 large language models um you know you
+10:43 
+
+10:43 you train this model you kind of cook it
+10:45 
+
+10:45 in house you try to make the best job
+10:47 
+
+10:47 possible and then at the very end you
+10:49 
+
+10:49 get this artifact and you can't really
+10:51 
+
+10:51 predict how good the artifact is going
+10:53 
+
+10:53 to be. you kind of have to test it and
+10:56 
+
+10:56 that's where we are with these models as
+10:57 
+
+10:57 well. So for instance, we open source
+10:60 
+
+10:60 them so that we are not the only ones
+11:02 
+
+11:02 testing it and we're not the bottleneck
+11:04 
+
+11:04 in knowing what their capabilities are.
+11:06 
+
+11:06 And by open sourcing them, we see them
+11:08 
+
+11:08 being applied to actually many more
+11:10 
+
+11:10 applications that we could have
+11:11 
+
+11:11 imagined. Things like
+11:13 
+
+11:13 driving or surgical robots or um
+11:17 
+
+11:17 agriculture and and and places like
+11:20 
+
+11:20 that. So I don't have a very good
+11:23 
+
+11:23 estimate of what the aperture is. I
+11:24 
+
+11:24 think it's wider than what I had
+11:26 
+
+11:26 expected.
+11:27 
+
+11:27 >> Mhm. And I think it's also will be it
+11:29 
+
+11:29 will be growing over time. The more data
+11:31 
+
+11:31 these models get, the more mature they
+11:32 
+
+11:32 get. I think the aperture will continue
+11:34 
+
+11:34 to grow. I would add maybe like on the
+11:37 
+
+11:37 performance level like as you said the
+11:39 
+
+11:39 aperture is is probably wider the
+11:42 
+
+11:42 starting point is wider than we thought
+11:43 
+
+11:43 but at the same time of course if you
+11:45 
+
+11:45 actually want each of those starting
+11:47 
+
+11:47 points that you start at for each of
+11:48 
+
+11:48 those applications to be at a level
+11:50 
+
+11:50 where people would want to use this as a
+11:53 
+
+11:53 day-to-day driving you know their
+11:55 
+
+11:55 businesses where there's probably still
+11:57 
+
+11:57 quite a bit of hill climbing to do in
+11:59 
+
+11:59 terms of performance right so we've with
+12:01 
+
+12:01 this release that we're going to talk
+12:02 
+
+12:02 about a little bit in a bit I guess the
+12:04 
+
+12:04 pi star we've made progress on like
+12:06 
+
+12:06 learning from experience data getting
+12:08 
+
+12:08 that back and making the models better
+12:10 
+
+12:10 when they are deployed um it's still for
+12:13 
+
+12:13 a lot of things you that I can naively
+12:16 
+
+12:16 imagine that there'd be lots of
+12:17 
+
+12:17 scenarios where there's a really really
+12:19 
+
+12:19 long tale of things that can go wrong or
+12:22 
+
+12:22 that you can encounter that we we don't
+12:24 
+
+12:24 yet have a great grasp on like how to
+12:26 
+
+12:26 completely solve I would say as well
+12:28 
+
+12:28 >> and you guys have been really great
+12:29 
+
+12:29 about publishing your results uh with a
+12:32 
+
+12:32 lot of transparency releasing open
+12:33 
+
+12:33 source
+12:34 
+
+12:34 Um, so whatever you're comfortable
+12:36 
+
+12:36 sharing, can you can you talk about what
+12:38 
+
+12:38 your overall technical architecture so
+12:40 
+
+12:40 to speak is? And do you think that that
+12:43 
+
+12:43 the architecture to kind of get to this
+12:44 
+
+12:44 promised land is, you know, pretty much
+12:46 
+
+12:46 baked and it'll be variations on the
+12:49 
+
+12:49 theme of where we are and we just need
+12:50 
+
+12:50 to collect a ton of data or do you think
+12:52 
+
+12:52 that, you know, the architecture is
+12:54 
+
+12:54 still still being figured out?
+12:56 
+
+12:56 I would say so we can maybe start with
+12:58 
+
+12:58 like a little bit discussing like where
+12:59 
+
+12:59 we're at now and then we can like go
+13:01 
+
+13:01 into the details of like how that might
+13:03 
+
+13:03 change. So at the moment, you know, the
+13:05 
+
+13:05 the architecture is very analogous to
+13:07 
+
+13:07 how um you know, VLMs and are are built
+13:11 
+
+13:11 that probably, you know, most of you
+13:13 
+
+13:13 interact with on a day-to-day basis,
+13:15 
+
+13:15 right? Type something in and put the
+13:16 
+
+13:16 image in and ask it to read what's on
+13:18 
+
+13:18 the image and and so on. And and we've
+13:20 
+
+13:20 kind of like started from um the same
+13:23 
+
+13:23 standpoint of you know there's a model
+13:25 
+
+13:25 that's trained on internet scale data
+13:27 
+
+13:27 and it's ingested um image data and text
+13:30 
+
+13:30 and and we're adding all this robotics
+13:31 
+
+13:31 data and our training actually
+13:33 
+
+13:33 predominantly now is on robotics data on
+13:36 
+
+13:36 data that we have collected ourselves.
+13:37 
+
+13:37 We have a little bit of that internet
+13:40 
+
+13:40 data in the mix but the majority of it
+13:42 
+
+13:42 is robotics data. the architecture as
+13:44 
+
+13:44 kind of this vision language model and
+13:47 
+
+13:47 we add something on the side which is
+13:49 
+
+13:49 what we call the action model the action
+13:52 
+
+13:52 expert the the part of the model that
+13:54 
+
+13:54 actually then has to drive the robot
+13:56 
+
+13:56 right that basically looks at the image
+13:58 
+
+13:58 and the instruction is getting and and
+14:00 
+
+14:00 has to perform the task has to send um
+14:03 
+
+14:03 commands to the robot and so broadly
+14:05 
+
+14:05 it's like a transformer model that is a
+14:08 
+
+14:08 a fairly large model up to like some
+14:10 
+
+14:10 billion parameters at this point uh that
+14:12 
+
+14:12 we is that we pre-train on our robotics
+14:14 
+
+14:14 data and on on internet data. Um and uh
+14:17 
+
+14:17 it is trained largely in initially from
+14:20 
+
+14:20 human demonstration data. Carol
+14:22 
+
+14:22 mentioned this earlier a little bit and
+14:23 
+
+14:23 we we have this demonstration data
+14:25 
+
+14:25 teleoperated data of humans trying to
+14:27 
+
+14:27 get the robot to do stuff. So that's the
+14:30 
+
+14:30 the architecture that looks like now and
+14:32 
+
+14:32 like roughly the scaling um that we're
+14:35 
+
+14:35 getting is from scaling our data and we
+14:37 
+
+14:37 use models similar to what comes from
+14:39 
+
+14:39 the VLM world. um how that might change
+14:42 
+
+14:42 I think is an is an open question. I I
+14:45 
+
+14:45 think there's lots of opportunities in
+14:48 
+
+14:48 in adding more capabilities to these
+14:50 
+
+14:50 models that we're also exploring. Right?
+14:52 
+
+14:52 You can imagine that um you know you you
+14:55 
+
+14:55 might want more context in these models.
+14:57 
+
+14:57 You might want more um more more cameras
+15:01 
+
+15:01 added to to the robots that the model
+15:03 
+
+15:03 then needs to be able to uh to use. you
+15:06 
+
+15:06 might want uh to have a better
+15:08 
+
+15:08 understanding of the physical world in
+15:10 
+
+15:10 the sense of you know understanding
+15:12 
+
+15:12 exactly what's in the room, what can
+15:14 
+
+15:14 break, what is easily movable and so on.
+15:16 
+
+15:16 So there's lots to be done I think in
+15:18 
+
+15:18 those capabilities and also changing the
+15:20 
+
+15:20 architecture around and I I wouldn't be
+15:22 
+
+15:22 surprised if in like five six years we
+15:25 
+
+15:25 look back and we say oh you know maybe
+15:29 
+
+15:29 the the backbone of the model that we
+15:31 
+
+15:31 used at the time which currently is
+15:33 
+
+15:33 comes from this VM land has changed
+15:35 
+
+15:35 maybe we've moved on and we we use
+15:37 
+
+15:37 something uh slightly different I think
+15:39 
+
+15:39 that will evolve over time but I think
+15:42 
+
+15:42 the the foundation of like the data and
+15:46 
+
+15:46 how we bring it into the model will
+15:48 
+
+15:48 probably stay stay like this.
+15:49 
+
+15:49 >> Got it. And should I think about it as
+15:50 
+
+15:50 it's pixels or signals in and then
+15:53 
+
+15:53 actions out. Is that and like like a
+15:56 
+
+15:56 single single big neural net?
+15:58 
+
+15:58 >> It's one big model. Yeah. It's really
+15:60 
+
+15:60 just basically images in text in uh text
+16:03 
+
+16:03 out and and actions out at this point.
+16:05 
+
+16:05 Yeah.
+16:05 
+
+16:05 >> And are you I guess do you have a
+16:07 
+
+16:07 separate kind of locomotion versus
+16:10 
+
+16:10 manipulation stack? Maybe this this
+16:12 
+
+16:12 might be a good time to talk about kind
+16:14 
+
+16:14 of just the historical evolution in in
+16:16 
+
+16:16 robotics and the various different waves
+16:18 
+
+16:18 of learning uh and how it pertains to
+16:20 
+
+16:20 your stack.
+16:21 
+
+16:21 >> Yeah. So for a long time even before
+16:24 
+
+16:24 learning arrived here, people thought
+16:26 
+
+16:26 that robotics is one of these problems
+16:28 
+
+16:28 where you can if you put enough people
+16:30 
+
+16:30 on it, enough engineers, they can think
+16:32 
+
+16:32 really hard about it and eventually
+16:35 
+
+16:35 write the code that will you know have
+16:36 
+
+16:36 the robot do anything in the world. Um
+16:40 
+
+16:40 and you know people have tried really
+16:41 
+
+16:41 really hard to do it this way and then
+16:43 
+
+16:43 it turned out that the world is just way
+16:45 
+
+16:45 too complex.
+16:46 
+
+16:46 >> Yep.
+16:46 
+
+16:46 >> Right. Like you can't just write every
+16:47 
+
+16:47 single every single case you'll
+16:49 
+
+16:49 encounter in the real world.
+16:50 
+
+16:50 >> So that doesn't work
+16:52 
+
+16:52 >> and and also as we were you know trying
+16:54 
+
+16:54 to work on on that version of the
+16:56 
+
+16:56 problem what ended up happening is
+16:58 
+
+16:58 people did what they usually do. They
+17:00 
+
+17:00 try to break down this problem into
+17:02 
+
+17:02 smaller sub problems. So like rather
+17:03 
+
+17:03 than working on the full robotics
+17:04 
+
+17:04 problem, you would say there's a
+17:06 
+
+17:06 perception aspect of the problem,
+17:08 
+
+17:08 there's a control aspect of the problem,
+17:09 
+
+17:09 there's the planning part of the
+17:11 
+
+17:11 problem. And this almost grew into
+17:12 
+
+17:12 different communities.
+17:14 
+
+17:14 >> There's a planning community, there's
+17:15 
+
+17:15 controls community, there's they have
+17:16 
+
+17:16 their own conferences, their own
+17:17 
+
+17:17 problems and all of that.
+17:19 
+
+17:19 >> Yeah.
+17:20 
+
+17:20 >> So then as we realized that you know
+17:21 
+
+17:21 it's not really possible to to handwrite
+17:23 
+
+17:23 all of these rules,
+17:25 
+
+17:25 >> people thought that uh we should learn
+17:26 
+
+17:26 them. We should learn them from data
+17:28 
+
+17:28 which is seems like a really good idea,
+17:30 
+
+17:30 right? This is how we learn too. Um but
+17:33 
+
+17:33 what ended up happening is that they
+17:34 
+
+17:34 started learning each one of those
+17:36 
+
+17:36 components these these bro broke down
+17:38 
+
+17:38 components separate through learning
+17:40 
+
+17:40 separately.
+17:40 
+
+17:40 >> Yeah.
+17:41 
+
+17:41 >> So you would have a perception layer
+17:43 
+
+17:43 that is fully learned. Maybe you'll have
+17:44 
+
+17:44 a control layer that is learned. Maybe
+17:46 
+
+17:46 you'll have a planner that is learned.
+17:48 
+
+17:48 >> And that showed some progress. It was
+17:51 
+
+17:51 better than what we had before.
+17:52 
+
+17:52 >> Yeah. But then turn out that breaking
+17:54 
+
+17:54 down these pro this problem into these
+17:55 
+
+17:55 subcomponents actually is the piece that
+17:57 
+
+17:57 doesn't work
+17:58 
+
+17:58 >> because you know when I try to you know
+18:01 
+
+18:01 pick up this glass I don't think about
+18:02 
+
+18:02 it in terms of perception and then
+18:04 
+
+18:04 planning and then control I just I just
+18:06 
+
+18:06 go for it I just pick up the glass and
+18:08 
+
+18:08 it's just all very natural. So it turned
+18:11 
+
+18:11 out that the that this pipeline approach
+18:13 
+
+18:13 where you have these predefined
+18:15 
+
+18:15 interfaces that like perception gives
+18:17 
+
+18:17 you the position of the object and then
+18:19 
+
+18:19 the planner gives you the trajectory and
+18:21 
+
+18:21 the control executes it. Those
+18:23 
+
+18:23 interfaces are the pieces that that
+18:24 
+
+18:24 broke down. So everything that we
+18:26 
+
+18:26 thought we knew how we work was always
+18:29 
+
+18:29 wrong.
+18:30 
+
+18:30 >> So then we then arrived to the next
+18:32 
+
+18:32 stage of this where we said well maybe
+18:34 
+
+18:34 just breaking down this problem was a
+18:35 
+
+18:35 bad idea to begin with.
+18:37 
+
+18:37 >> Yeah.
+18:37 
+
+18:37 >> So let's just train the whole thing end
+18:39 
+
+18:39 to end. Right. So we'll take whatever uh
+18:43 
+
+18:43 uh the the the kind of the sensory
+18:44 
+
+18:44 inputs as input to the network and we'll
+18:46 
+
+18:46 have actions as the output. That's what
+18:48 
+
+18:48 we refer to as the endto-end approach
+18:50 
+
+18:50 where you try to go straight from pixels
+18:51 
+
+18:51 to actions
+18:52 
+
+18:52 >> and we'll we'll have the network figure
+18:54 
+
+18:54 out or the learning algorithm figure out
+18:56 
+
+18:56 how to split it into these different
+18:58 
+
+18:58 components if it's even possible.
+18:59 
+
+18:59 >> Yeah. Um, and then while we were doing
+19:03 
+
+19:03 that, we figured that it actually
+19:04 
+
+19:04 requires a ton of data to do this. And
+19:08 
+
+19:08 often it breaks when it requires some
+19:10 
+
+19:10 kind of common sense. And to gather that
+19:12 
+
+19:12 common sense through first first person
+19:15 
+
+19:15 action data sets is really, really hard
+19:17 
+
+19:17 because you would need to experience
+19:18 
+
+19:18 every single thing in the world to do
+19:20 
+
+19:20 this.
+19:20 
+
+19:20 >> Yeah. And that's where we stumbled upon
+19:23 
+
+19:23 vision language action models where we
+19:25 
+
+19:25 can use models that were pre-trained on
+19:27 
+
+19:27 internet data that already have pretty
+19:29 
+
+19:29 good understanding of how the world
+19:31 
+
+19:31 works. Um, and we can utilize that
+19:34 
+
+19:34 knowledge so that we don't need to
+19:35 
+
+19:35 experience everything firsthand.
+19:37 
+
+19:37 >> You can just add some action components
+19:39 
+
+19:39 on top of it and have a common world
+19:41 
+
+19:41 understanding and connect it to how to
+19:43 
+
+19:43 actually perform things in the world.
+19:45 
+
+19:45 >> I see.
+19:45 
+
+19:45 >> And that's more or less where we're at
+19:46 
+
+19:46 today.
+19:47 
+
+19:47 >> I see. Um now at at physical
+19:49 
+
+19:49 intelligence we figured few other
+19:51 
+
+19:51 things. So how do you scale how do you
+19:53 
+
+19:53 start to scale these models? How do you
+19:54 
+
+19:54 get them to generalize? How do you get
+19:56 
+
+19:56 them to perform much better? How do you
+19:58 
+
+19:58 have them move much faster? How do you
+19:60 
+
+19:60 get them to the point where you can
+20:01 
+
+20:01 start deploying them? But I think
+20:02 
+
+20:02 largely we're still in this in this era
+20:04 
+
+20:04 of how do you bring some of the common
+20:07 
+
+20:07 sense knowledge from the internet
+20:08 
+
+20:08 pre-training? How do you make these
+20:10 
+
+20:10 models very general so that they can
+20:11 
+
+20:11 work on any robot and perform motions?
+20:14 
+
+20:14 >> And can I ask for something like
+20:15 
+
+20:15 reasoning, right? there's there's so
+20:17 
+
+20:17 much stuff happening in the you know
+20:18 
+
+20:18 reasoning side of the large language
+20:19 
+
+20:19 model space. Do you get the benefits of
+20:22 
+
+20:22 that uh in as part of your VA backbone?
+20:25 
+
+20:25 Do you have reasoning kind of emerge as
+20:27 
+
+20:27 a consequence of what you're doing as
+20:28 
+
+20:28 you train these end to end? Or can I
+20:30 
+
+20:30 think about you know some of the
+20:31 
+
+20:31 benefits of what's happening in the LLM
+20:33 
+
+20:33 world? Do they do they benefit you or
+20:35 
+
+20:35 not? I mean I think definitely the molds
+20:38 
+
+20:38 that we have today they are already
+20:41 
+
+20:41 planning actions not just at a what is
+20:43 
+
+20:43 the immediate action but kind of what is
+20:45 
+
+20:45 the what are the next 50 things I I need
+20:48 
+
+20:48 to do right so like the next 50 time
+20:50 
+
+20:50 steps in in some sense it's a very short
+20:52 
+
+20:52 horizon 50 steps means like a like a
+20:54 
+
+20:54 second or or two right and it also
+20:57 
+
+20:57 additionally kind of decomposes tasks
+20:59 
+
+20:59 into subtasks in language space already
+21:01 
+
+21:01 so um when you when we ask it oh clean
+21:04 
+
+21:04 the kitchen the first subtask it might
+21:07 
+
+21:07 uh pick out to do is like, oh, I have to
+21:08 
+
+21:08 drive to the counter and then I have to
+21:10 
+
+21:10 like blah blah blah blah pick up the the
+21:12 
+
+21:12 glass, move the glass into the sink. Um,
+21:15 
+
+21:15 so
+21:16 
+
+21:16 >> it already has those aspects in in some
+21:19 
+
+21:19 sense, right? So like it decomposes task
+21:21 
+
+21:21 into subtask because it gives itself its
+21:23 
+
+21:23 own subtask and it predicts like a
+21:25 
+
+21:25 little bit of a horizon of how actions
+21:27 
+
+21:27 go. So so some of it is already there. I
+21:29 
+
+21:29 think um I think in the future there
+21:32 
+
+21:32 will probably be more of it. I do
+21:34 
+
+21:34 totally expect that um you know all the
+21:37 
+
+21:37 advances on like RL training for
+21:39 
+
+21:39 reasoning all these things will will
+21:40 
+
+21:40 also make their way into robotics. Yeah.
+21:42 
+
+21:42 >> Um and I think it's kind of interesting
+21:44 
+
+21:44 to think about because it's it's maybe a
+21:47 
+
+21:47 little different than than the RL for
+21:51 
+
+21:51 math problems that people do for example
+21:53 
+
+21:53 right because I think those are very
+21:55 
+
+21:55 easy for easy for us humans to think of
+21:57 
+
+21:57 as like textual problems right you think
+22:00 
+
+22:00 through them in your head in like text.
+22:03 
+
+22:03 Okay, if I change this formula this way,
+22:06 
+
+22:06 I will get this outcome and so on. And I
+22:08 
+
+22:08 think for the physical intelligence part
+22:10 
+
+22:10 of it, it will probably be a bit more
+22:12 
+
+22:12 than that, right? It's it's going to be
+22:13 
+
+22:13 a little bit different when you try to
+22:15 
+
+22:15 learn a new sport, for example, when I I
+22:18 
+
+22:18 recently started to try to learn how to
+22:20 
+
+22:20 play tennis. And you know, I don't think
+22:22 
+
+22:22 through in my head of like I need to now
+22:24 
+
+22:24 grab the racket, I need to move it here
+22:26 
+
+22:26 and I need to do this swing. But it's
+22:28 
+
+22:28 more like you think through the motion
+22:30 
+
+22:30 itself, right? I you you think about
+22:32 
+
+22:32 like how does your body move? How maybe
+22:35 
+
+22:35 um maybe you plan in some sense
+22:37 
+
+22:37 trajectories of objects around you in
+22:39 
+
+22:39 your head. And so those things I think
+22:41 
+
+22:41 we'll see come into the models more over
+22:43 
+
+22:43 time.
+22:44 
+
+22:44 >> Yeah, I I I suspect that over time.
+22:47 
+
+22:47 Right now we're in a place where we
+22:49 
+
+22:49 benefit quite a bit from vision language
+22:51 
+
+22:51 models. I think it's it's very very
+22:54 
+
+22:54 likely that that that's going to reverse
+22:58 
+
+22:58 >> that a lot of the the shortcomings that
+22:60 
+
+22:60 we see in LLMs today are kind of baked
+23:03 
+
+23:03 in are because we are focused on on the
+23:06 
+
+23:06 text problem on problems like math and
+23:08 
+
+23:08 coding.
+23:08 
+
+23:08 >> Yeah.
+23:09 
+
+23:09 >> And I think robotics would will offer
+23:11 
+
+23:11 this this new avenue
+23:13 
+
+23:13 >> where you need to kind of rethink how
+23:15 
+
+23:15 how to think about reasoning. reasoning
+23:17 
+
+23:17 should probably happen in some kind of
+23:19 
+
+23:19 abstract space where you know you can
+23:21 
+
+23:21 reason a little bit in text, you can
+23:22 
+
+23:22 reason a little bit in images, maybe you
+23:24 
+
+23:24 can reason in trajectories or in know
+23:26 
+
+23:26 all kinds of different spaces to arrive
+23:28 
+
+23:28 at the answer. And robotics provides
+23:31 
+
+23:31 this really nice test bed where um
+23:36 
+
+23:36 you're grounded in the physical world.
+23:38 
+
+23:38 Um there is not that much data yet. So
+23:41 
+
+23:41 you kind of need to deal with some of
+23:42 
+
+23:42 the the difficulties that come with
+23:44 
+
+23:44 that. But I think it will provide for
+23:47 
+
+23:47 for new findings that will then be
+23:49 
+
+23:49 reapplied to to the LLM world.
+23:53 
+
+23:53 >> Speaking about data, give us a sense of
+23:56 
+
+23:56 I don't know how you measure the sort of
+23:58 
+
+23:58 magnitude of data you've already
+23:59 
+
+23:59 collected and how much you would like to
+24:01 
+
+24:01 collect in the next year. Not I'm sure
+24:04 
+
+24:04 more is better, but like what is the
+24:06 
+
+24:06 magnitude we're talking about?
+24:07 
+
+24:07 >> Yeah, data is um it's one of those
+24:10 
+
+24:10 things that's actually fairly nuance.
+24:12 
+
+24:12 It's not just a matter of quantity.
+24:13 
+
+24:13 >> Yeah. uh quality obviously matters but
+24:16 
+
+24:16 also things like diversity and even when
+24:19 
+
+24:19 you think about the quality or diversity
+24:21 
+
+24:21 of robot data these are not very
+24:23 
+
+24:23 strictly defined terms um right like if
+24:26 
+
+24:26 you if you go for the same tasks in like
+24:28 
+
+24:28 10 different ways is this diverse data
+24:30 
+
+24:30 or not or how do you compare it to the
+24:32 
+
+24:32 diversity of the data if you go for like
+24:34 
+
+24:34 10 different glasses
+24:36 
+
+24:36 >> right
+24:36 
+
+24:36 >> um so this is something that I don't
+24:39 
+
+24:39 think we as a community fully understand
+24:40 
+
+24:40 like how to uh characterize the data how
+24:43 
+
+24:43 to describe describe diversity, how to
+24:45 
+
+24:45 describe the quality of the data, how
+24:46 
+
+24:46 how to make it very very rigorous. Um,
+24:51 
+
+24:51 and we're also finding out that uh those
+24:55 
+
+24:55 there are some aspects of the of the
+24:57 
+
+24:57 data that really really matter. Like for
+24:59 
+
+24:59 instance, if you want to get to a
+25:00 
+
+25:00 certain performance on a task, you're
+25:02 
+
+25:02 not going to get there by just
+25:04 
+
+25:04 increasing the quantity of the data you
+25:05 
+
+25:05 already have. uh we've been working on
+25:08 
+
+25:08 these three different tasks for the pi
+25:10 
+
+25:10 pi star6 release and we've noticed
+25:12 
+
+25:12 fairly early on that if we just keep on
+25:15 
+
+25:15 collecting more and more data the same
+25:16 
+
+25:16 way that we've been collecting so far
+25:18 
+
+25:18 the performance plateaus you're not
+25:20 
+
+25:20 going to just keep on getting better. So
+25:22 
+
+25:22 you need to find either new ways of
+25:24 
+
+25:24 collecting it or you need to start
+25:26 
+
+25:26 thinking about what kind of data will
+25:28 
+
+25:28 result in better performance. And this
+25:30 
+
+25:30 is where things like reinforcement
+25:32 
+
+25:32 learning and and and things like this
+25:34 
+
+25:34 can really can really really help.
+25:36 
+
+25:36 >> Let's talk reinforcement learning and
+25:38 
+
+25:38 let's talk pi pi star 0.6. Is the star a
+25:42 
+
+25:42 nod to to to qstar or okay
+25:45 
+
+25:45 >> effectively trying to get to like policy
+25:48 
+
+25:48 star actually optimal
+25:49 
+
+25:49 >> policy star. Okay. Wonderful. Can maybe
+25:51 
+
+25:51 just say a word though on what you guys
+25:52 
+
+25:52 are doing uh with pi star 0.6 and then
+25:56 
+
+25:56 we can dive into what RL means for your
+25:57 
+
+25:57 world.
+25:58 
+
+25:58 >> Yeah, for sure. So I mean I think the
+25:60 
+
+25:60 main if we want to contrast it to what
+26:02 
+
+26:02 we talked about earlier the main
+26:03 
+
+26:03 difference is that up to that point
+26:05 
+
+26:05 basically all of the robotics
+26:07 
+
+26:07 foundational model learning that that
+26:09 
+
+26:09 we've done was basically demonstration
+26:12 
+
+26:12 data um teleoperated going into the
+26:14 
+
+26:14 model. The model is trained kind of like
+26:16 
+
+26:16 just imitate that data, right? And now
+26:18 
+
+26:18 with this new model pi star6, what we're
+26:21 
+
+26:21 using is basically um RL from um
+26:25 
+
+26:25 experience that the robot collects
+26:27 
+
+26:27 itself by actually running a policy. So
+26:29 
+
+26:29 we start with the initial policy is this
+26:31 
+
+26:31 demonstration train policy and then you
+26:33 
+
+26:33 deploy it. You try to actually have the
+26:35 
+
+26:35 robot solve the task and then it
+26:37 
+
+26:37 additionally uh gets kind of reward
+26:39 
+
+26:39 signals given by humans and it can also
+26:42 
+
+26:42 get correction. So where the human
+26:43 
+
+26:43 intervenes and says oh actually you know
+26:45 
+
+26:45 what this is not right let's let's do
+26:46 
+
+26:46 this a little differently and that data
+26:49 
+
+26:49 that process basically that data is
+26:50 
+
+26:50 collected gets comes back in and the
+26:53 
+
+26:53 model kind of uses that data to try and
+26:55 
+
+26:55 figure out which of the data can I kind
+26:57 
+
+26:57 of kind of like should I reinforce
+26:58 
+
+26:58 should I do more of and which of I do
+27:00 
+
+27:00 less of and uh and basically improve
+27:03 
+
+27:03 itself over time basically that's kind
+27:04 
+
+27:04 of the big distinction and having that
+27:07 
+
+27:07 stream of real data coming in is kind of
+27:10 
+
+27:10 the missing piece that Carol was talking
+27:12 
+
+27:12 about that allows us to now escape this
+27:15 
+
+27:15 plateau that we otherwise we were
+27:16 
+
+27:16 finding we were kind of like
+27:19 
+
+27:19 >> getting to.
+27:19 
+
+27:19 >> Yeah. And I guess in my brain I I think
+27:22 
+
+27:22 viral is you know you're hill climbing
+27:25 
+
+27:25 on your reward signal. And so how do you
+27:26 
+
+27:26 make sure you're how do you make sure
+27:28 
+
+27:28 you're generalizing as you as you hill
+27:30 
+
+27:30 climb on these specific tasks? The way
+27:32 
+
+27:32 we're thinking about this for for this
+27:34 
+
+27:34 specific kind of problem is like you
+27:36 
+
+27:36 have this sort of general model and it
+27:38 
+
+27:38 achieves some performance that isn't
+27:40 
+
+27:40 isn't great. And now your first
+27:44 
+
+27:44 goal actually isn't to further
+27:45 
+
+27:45 generalize. You want to kind of solve
+27:47 
+
+27:47 this specific task first, right? Like so
+27:49 
+
+27:49 we deploy it and we have we've picked
+27:51 
+
+27:51 like three four tasks. So it has to
+27:53 
+
+27:53 generalize across tasks. Nonetheless,
+27:54 
+
+27:54 the method has to generalize. But when
+27:56 
+
+27:56 you're actually kind of deploying it and
+27:58 
+
+27:58 trying to start this RL process, you
+27:60 
+
+27:60 really care about let's make sure I nail
+28:02 
+
+28:02 down this task and I kind of nail it
+28:05 
+
+28:05 down in a way where I can um where I can
+28:09 
+
+28:09 can solve it from many different
+28:10 
+
+28:10 positions and I can deal with all the
+28:12 
+
+28:12 long tail of failures that I that I will
+28:14 
+
+28:14 encounter. Right? So in some sense the
+28:16 
+
+28:16 the generalization and the performance
+28:18 
+
+28:18 here may seem at odds when you look at
+28:20 
+
+28:20 it from like oh wait but now you're like
+28:22 
+
+28:22 just doing this one task but um but
+28:25 
+
+28:25 really at the end of the day what what
+28:28 
+
+28:28 we want to do is we have the same method
+28:30 
+
+28:30 the same process that deploys to each of
+28:32 
+
+28:32 these tasks and then kind of gets the
+28:34 
+
+28:34 performance high and then we can have
+28:36 
+
+28:36 all of that data across all of these
+28:37 
+
+28:37 tasks and we bring that data back
+28:39 
+
+28:39 basically right so in in in that sense
+28:41 
+
+28:41 it's not actually at odds if that makes
+28:43 
+
+28:43 sense. Yep, that makes sense. How much
+28:45 
+
+28:45 of the RL are you doing? It sounds like
+28:47 
+
+28:47 this is a this is an in real life RL.
+28:50 
+
+28:50 Can you talk a little bit about the
+28:52 
+
+28:52 approach to how much RL you're doing in
+28:53 
+
+28:53 sim versus in real life?
+28:55 
+
+28:55 >> Um, so we have taken a quite uh like
+28:59 
+
+28:59 real world first approach as opposed to
+29:02 
+
+29:02 uh using sim. We are exploring sim of
+29:04 
+
+29:04 course uh as well as uh as a research
+29:07 
+
+29:07 tool. But all the RL we've done for the
+29:09 
+
+29:09 PI star 6 paper is actually on real
+29:12 
+
+29:12 systems in the real world. And the
+29:14 
+
+29:14 reason for that is that it's actually
+29:15 
+
+29:15 really really hard to model again we can
+29:18 
+
+29:18 we can get back to like long tail of
+29:20 
+
+29:20 failures that you see when you when you
+29:21 
+
+29:21 do deployments. I can give you a lot of
+29:23 
+
+29:23 examples from the tasks that we've
+29:25 
+
+29:25 actually looked at for this release
+29:27 
+
+29:27 where there were failure modes that we
+29:28 
+
+29:28 we saw that if you had just done done a
+29:31 
+
+29:31 simulation of it you might not have seen
+29:33 
+
+29:33 it. So to give you an example, um we
+29:35 
+
+29:35 have this one task which is uh you have
+29:38 
+
+29:38 to build a box, right? So this is an
+29:39 
+
+29:39 actual deployment task where the goal is
+29:42 
+
+29:42 um we build these little uh cardboard
+29:45 
+
+29:45 boxes to put chocolate into such that uh
+29:47 
+
+29:47 they can then be packaged up and and and
+29:49 
+
+29:49 and sent out basically. So it's building
+29:52 
+
+29:52 a chocolate box basically. Um, and
+29:54 
+
+29:54 building this box, uh, initially, you
+29:57 
+
+29:57 know, worked great and then there was
+29:59 
+
+29:59 these new shipments of boxes coming in
+30:01 
+
+30:01 and they come in as like a flattened
+30:03 
+
+30:03 sheet of cardboard and then these
+30:05 
+
+30:05 cardboards that came in in this new
+30:07 
+
+30:07 shipment were kind of not perfectly
+30:09 
+
+30:09 perforated. So, they were sticking
+30:11 
+
+30:11 together, right? And then the robot
+30:12 
+
+30:12 starts like grabbing them, puts them on
+30:14 
+
+30:14 a table to to to try to build this box
+30:16 
+
+30:16 and like has two boxes suddenly on the
+30:18 
+
+30:18 table, right? And this is something that
+30:19 
+
+30:19 wouldn't happen in sim if you had
+30:21 
+
+30:21 written like a nice simulator that would
+30:23 
+
+30:23 where you would just get individual
+30:24 
+
+30:24 cardboards and like fold them. Um and so
+30:27 
+
+30:27 now you have to deal with this problem,
+30:28 
+
+30:28 right? And if you just learn everything
+30:30 
+
+30:30 in sim and then try to deploy it, you
+30:32 
+
+30:32 wouldn't encounter it. So we encounter
+30:33 
+
+30:33 it and then our um kind of method can
+30:37 
+
+30:37 kind of figure out that oh actually what
+30:38 
+
+30:38 I need to do is I need to separate this
+30:40 
+
+30:40 and I can I need to move that uh that
+30:44 
+
+30:44 second piece back and and build the box
+30:45 
+
+30:45 basically. And we see a lot of successes
+30:47 
+
+30:47 for ARL being applied in sim and
+30:49 
+
+30:49 transferred to the real world especially
+30:51 
+
+30:51 in locomotion.
+30:52 
+
+30:52 >> Yeah.
+30:53 
+
+30:53 >> And we we haven't really seen that kind
+30:56 
+
+30:56 of success in manipulation
+30:58 
+
+30:58 >> for for these kind of methods.
+30:60 
+
+30:60 >> And I think maybe one reason for that is
+31:02 
+
+31:02 that with with locomotion with trying to
+31:04 
+
+31:04 move around, it seems that the the
+31:07 
+
+31:07 biggest part of the problem is modeling
+31:08 
+
+31:08 your own body. So if you can figure out
+31:11 
+
+31:11 how to model you yourself as a robot,
+31:13 
+
+31:13 you're basically like almost there. So,
+31:16 
+
+31:16 uh, you can do this modeling simulation
+31:19 
+
+31:19 exercise once because you only can do
+31:21 
+
+31:21 it, you only have to do it for you
+31:23 
+
+31:23 yourself, for this one robot, and then
+31:25 
+
+31:25 you're basically done. If you do it
+31:26 
+
+31:26 really, really well, it should transfer.
+31:29 
+
+31:29 >> With manipulation, however, the problem
+31:30 
+
+31:30 is not how you move your own body, it's
+31:32 
+
+31:32 how the world reacts to it. You're
+31:34 
+
+31:34 actually changing the world around you.
+31:36 
+
+31:36 >> It's not difficult to figure out how to
+31:37 
+
+31:37 move your hand from A to B. It's
+31:39 
+
+31:39 difficult to figure out how this affects
+31:41 
+
+31:41 the objects you're interacting with. And
+31:44 
+
+31:44 now the problem is no longer just
+31:45 
+
+31:45 modeling your own robot. You have to
+31:47 
+
+31:47 model the entire world, right? Like
+31:49 
+
+31:49 every single object that you might be
+31:51 
+
+31:51 interacting with, every single task you
+31:53 
+
+31:53 can think of. And that's where we see
+31:55 
+
+31:55 scaling problems.
+31:57 
+
+31:57 >> And that's I think why we haven't seen
+31:59 
+
+31:59 those kind of methods be as effective in
+32:01 
+
+32:01 in in manipulation.
+32:03 
+
+32:03 >> What was the headline of the results
+32:04 
+
+32:04 from pi star 0.6? and you know where
+32:08 
+
+32:08 where do you see the model get after RL
+32:10 
+
+32:10 on the on the test that you cared about
+32:12 
+
+32:12 and what do you think that means about
+32:14 
+
+32:14 your overall training recipe going
+32:15 
+
+32:15 forward?
+32:17 
+
+32:17 >> Yeah, so I think for me the most
+32:19 
+
+32:19 impressive thing honestly for me
+32:20 
+
+32:20 personally to see was just have these
+32:22 
+
+32:22 models run for hours at a time recover
+32:25 
+
+32:25 from lots of different failures and and
+32:28 
+
+32:28 basically just keep going and at the
+32:30 
+
+32:30 same time do that at a at a at a rate
+32:33 
+
+32:33 that is actually much better than the
+32:35 
+
+32:35 initial model that we started with.
+32:36 
+
+32:36 Right. So the headline figures were we
+32:38 
+
+32:38 increased kind of throughput of the
+32:40 
+
+32:40 policies by over 2x on on these three
+32:42 
+
+32:42 tasks. So there's one task was this box
+32:44 
+
+32:44 building task I already talked about.
+32:46 
+
+32:46 One was the uh making uh coffee with an
+32:48 
+
+32:48 actual kind of industrial scale espresso
+32:50 
+
+32:50 machine and the other one uh was kind of
+32:53 
+
+32:53 like folding laundry.
+32:54 
+
+32:54 >> Y
+32:55 
+
+32:55 >> um and so for each of them we managed to
+32:56 
+
+32:56 like make the base policy that was
+32:58 
+
+32:58 trained just from a demonstrations much
+32:60 
+
+32:60 much faster. Um and also make it be able
+33:03 
+
+33:03 to recover from failures much much
+33:04 
+
+33:04 better. Um and so seeing that actually
+33:08 
+
+33:08 in action when you you you sit there
+33:10 
+
+33:10 right we have if you go to our website
+33:12 
+
+33:12 you you can look at the videos u we have
+33:15 
+
+33:15 the robot serve coffee for 13 hours in a
+33:19 
+
+33:19 row or fold laundry for 4 hours things
+33:22 
+
+33:22 like that um actually seeing that life
+33:25 
+
+33:25 changes the way you think about these
+33:27 
+
+33:27 models
+33:28 
+
+33:28 >> you know changes the way at least I
+33:30 
+
+33:30 think about um it actually being
+33:32 
+
+33:32 realistic that we can deploy them that
+33:34 
+
+33:34 that we and do it in a way where it's
+33:36 
+
+33:36 not just a toy demo which is shown once
+33:39 
+
+33:39 but is actually kind of doing the real
+33:41 
+
+33:41 thing fully
+33:42 
+
+33:42 >> and and and that's been really a
+33:43 
+
+33:43 challenge in robotics that I don't think
+33:45 
+
+33:45 many people are aware of. Yeah.
+33:46 
+
+33:46 >> Like you know you see so many videos of
+33:48 
+
+33:48 robots doing cool things and you know we
+33:50 
+
+33:50 post these videos too there like there's
+33:52 
+
+33:52 basically like anything you want robot
+33:54 
+
+33:54 to do there's probably already a video
+33:55 
+
+33:55 of a robot doing that.
+33:56 
+
+33:56 >> Yeah.
+33:57 
+
+33:57 >> Um but you know you can take as many
+33:59 
+
+33:59 takes as you will as you want. you can
+34:02 
+
+34:02 you can keep on recording until you get
+34:03 
+
+34:03 the perfect shot. Um, and the problem
+34:06 
+
+34:06 that I think everybody encounters is the
+34:09 
+
+34:09 reliability of these models. How
+34:10 
+
+34:10 performant they are, how fast they can
+34:12 
+
+34:12 they can go about the task, how how for
+34:15 
+
+34:15 how long you can actually deploy them
+34:16 
+
+34:16 without failure.
+34:18 
+
+34:18 >> And I think this is the biggest
+34:20 
+
+34:20 bottleneck in terms of deploying these
+34:21 
+
+34:21 models in the real world
+34:23 
+
+34:23 >> because you know if you if if they break
+34:25 
+
+34:25 every every other trial, they're not
+34:27 
+
+34:27 really deployable,
+34:28 
+
+34:28 >> right? And this is this is I think the
+34:30 
+
+34:30 most important breakthrough for us with
+34:32 
+
+34:32 this Py Star06 release that we can
+34:35 
+
+34:35 actually start getting to a place where
+34:37 
+
+34:37 they are deployable. Yeah.
+34:39 
+
+34:39 >> Where we use these robots in our office
+34:40 
+
+34:40 to serve us coffee or we can give them
+34:42 
+
+34:42 to to people at PI to fold laundry in
+34:44 
+
+34:44 their home or we can deploy them uh and
+34:47 
+
+34:47 have them fold boxes for real and that
+34:50 
+
+34:50 is really really exciting.
+34:52 
+
+34:52 Should we think about what you guys are
+34:53 
+
+34:53 doing with reinforcement learning as
+34:55 
+
+34:55 primarily a you know a customer
+34:57 
+
+34:57 deployment reliability
+34:59 
+
+34:59 uh points then like you can now make
+35:02 
+
+35:02 sure that you can you know go reliably
+35:04 
+
+35:04 deploy the the coffee making model on a
+35:06 
+
+35:06 customer site and it's it's going to be
+35:08 
+
+35:08 fast enough it's it's not going to fail
+35:10 
+
+35:10 over long time horizons. Um so it's it's
+35:13 
+
+35:13 it's more of a customer deployment
+35:14 
+
+35:14 innovations versus like a fundamental
+35:17 
+
+35:17 kind of capability um innovation or is
+35:19 
+
+35:19 it both? I think it's both. I think I
+35:22 
+
+35:22 mean Carl, you said this a little bit
+35:23 
+
+35:23 earlier. I think um to some extent the
+35:27 
+
+35:27 robots that we really really want,
+35:28 
+
+35:28 right? The robot that you want as home
+35:30 
+
+35:30 which can do your laundry, do your
+35:32 
+
+35:32 dishes, cook for you, drive around, and
+35:34 
+
+35:34 also the robot that people want in these
+35:36 
+
+35:36 smaller businesses, maybe solving a real
+35:38 
+
+35:38 problem that they have that they don't
+35:40 
+
+35:40 want to automate in a classical way
+35:41 
+
+35:41 because it's too expensive, like
+35:43 
+
+35:43 building a chocolate box. Those are
+35:45 
+
+35:45 things where the robot has to be
+35:47 
+
+35:47 reliable. has to be good and it has to
+35:49 
+
+35:49 have the capability to do a new task
+35:51 
+
+35:51 that it hasn't seen in initial training
+35:53 
+
+35:53 stages. I think it's unrealistic for us
+35:55 
+
+35:55 to assume that you know we can just
+35:59 
+
+35:59 go with like more and more human data
+36:01 
+
+36:01 collection go bigger bigger bigger we
+36:03 
+
+36:03 will do that but there is always going
+36:05 
+
+36:05 to be a limit to to how good and how
+36:07 
+
+36:07 much data you can you can get and how
+36:09 
+
+36:09 good the initial policy is going to be
+36:11 
+
+36:11 so I think it is that what what you said
+36:13 
+
+36:13 in terms of we if we want deployments we
+36:15 
+
+36:15 need this but also I think increasingly
+36:18 
+
+36:18 over the next years we will I expect we
+36:21 
+
+36:21 will see that we will do these
+36:22 
+
+36:22 deployments and that data will actually
+36:23 
+
+36:23 become really valuable as a source for
+36:26 
+
+36:26 pre-training, for making our models
+36:28 
+
+36:28 better themselves. And we'll rely more
+36:31 
+
+36:31 and more on autonomous data collection
+36:32 
+
+36:32 is my prediction at least uh over the
+36:35 
+
+36:35 next coming years to kind of build that
+36:38 
+
+36:38 host of data that convex hull of all the
+36:41 
+
+36:41 tasks that we want robots uh eventually
+36:43 
+
+36:43 to do such that the models like ingests
+36:47 
+
+36:47 this and and becomes good at at doing
+36:48 
+
+36:48 them and interpolating
+36:50 
+
+36:50 >> and I think of it as a new capability.
+36:51 
+
+36:51 We haven't so far figured out how to
+36:53 
+
+36:53 learn from your own experience or
+36:55 
+
+36:55 there's been many attempts but I don't
+36:57 
+
+36:57 think we've seen it done at scale
+36:59 
+
+36:59 >> uh to like a very to to to the extent
+37:02 
+
+37:02 that actually shows a convincing result
+37:04 
+
+37:04 that allows you to deploy something.
+37:06 
+
+37:06 >> Yeah.
+37:06 
+
+37:06 >> And this is why this result was was
+37:09 
+
+37:09 really really important to us. We wanted
+37:11 
+
+37:11 to get to the point where they can learn
+37:12 
+
+37:12 from their own experience.
+37:13 
+
+37:13 >> Yeah. uh because you know similarly to
+37:15 
+
+37:15 to to how we learn you know you can
+37:18 
+
+37:18 learn a little bit from watching videos
+37:20 
+
+37:20 and pract and and you know maybe
+37:22 
+
+37:22 learning from others but at some point
+37:24 
+
+37:24 you need to learn on the job.
+37:25 
+
+37:25 >> You need to try the thing yourself. You
+37:27 
+
+37:27 need to see how your actions impact what
+37:29 
+
+37:29 you actually want to achieve.
+37:30 
+
+37:30 >> Yeah.
+37:30 
+
+37:30 >> And make your own conclusions and try to
+37:32 
+
+37:32 learn that way.
+37:33 
+
+37:33 >> Yeah.
+37:33 
+
+37:33 >> And I think this is the first step
+37:35 
+
+37:35 towards that.
+37:36 
+
+37:36 >> You're reminding me of the uh do you
+37:37 
+
+37:37 guys read the Rich Sutton age of
+37:39 
+
+37:39 experience paper this year? I love I
+37:41 
+
+37:41 thought it was very profound. Um, do you
+37:44 
+
+37:44 think that this unlocks
+37:46 
+
+37:46 kind of continual learning in robotics
+37:48 
+
+37:48 for y'all? Will this be part of that?
+37:50 
+
+37:50 >> It kind of depends what people mean by
+37:52 
+
+37:52 continual learning. I think it's um,
+37:55 
+
+37:55 it's definitely more continual than what
+37:57 
+
+37:57 we've done in the past where, you know,
+37:59 
+
+37:59 you have like a big pre-training mixture
+38:01 
+
+38:01 and maybe like a post-training mixture
+38:03 
+
+38:03 and you like, you know, you you you sit
+38:06 
+
+38:06 down, you work really really hard and
+38:07 
+
+38:07 then you come up with an artifact and
+38:09 
+
+38:09 like that's it. Yeah.
+38:10 
+
+38:10 >> Right. like the artifact is done and
+38:12 
+
+38:12 there's not much you can do to change
+38:13 
+
+38:13 it.
+38:15 
+
+38:15 >> Now, this is a much more of a living
+38:17 
+
+38:17 thing, right? Like we we start with a
+38:19 
+
+38:19 process similar to this, but then you
+38:22 
+
+38:22 deploy it and then it keeps on learning,
+38:24 
+
+38:24 >> right? So, it's much more continual in
+38:26 
+
+38:26 that sense that that it it tries new
+38:28 
+
+38:28 things. It it tries to learn from its
+38:29 
+
+38:29 own experience and it keeps on getting
+38:31 
+
+38:31 better.
+38:32 
+
+38:32 >> Yeah.
+38:32 
+
+38:32 Now I I think there is still room to for
+38:35 
+
+38:35 it to be much more continual
+38:37 
+
+38:37 >> where it can acquire new skills that way
+38:40 
+
+38:40 >> or it can be even much faster in doing
+38:43 
+
+38:43 this.
+38:43 
+
+38:43 >> Yeah.
+38:44 
+
+38:44 >> Um it can probably reason throughout
+38:45 
+
+38:45 this process. So I I think there's a
+38:48 
+
+38:48 spectrum of like how much you can learn
+38:50 
+
+38:50 on the job and this is really promising
+38:53 
+
+38:53 because it shows that you can do it but
+38:55 
+
+38:55 I think we can make it much much better.
+38:58 
+
+38:58 >> Yeah, I would agree. I would say we're
+38:59 
+
+38:59 at the very beginning of of this, right?
+39:02 
+
+39:02 And it's not it's not it's definitely
+39:04 
+
+39:04 not continuous learning in the classical
+39:06 
+
+39:06 sense that people would have thought
+39:07 
+
+39:07 about it of like data streams and then
+39:08 
+
+39:08 the the whole thing turns and it just uh
+39:11 
+
+39:11 ultimately leads leads all the way to I
+39:14 
+
+39:14 don't know AGI or something like this
+39:15 
+
+39:15 yet but you know it's it's a first step
+39:17 
+
+39:17 I I would say we're moving in the right
+39:19 
+
+39:19 direction there and there's lots more to
+39:20 
+
+39:20 be done and I think I will say from even
+39:23 
+
+39:23 from this release like I was personally
+39:26 
+
+39:26 impressed and to some extent you know
+39:28 
+
+39:28 shocked how good these models actually
+39:30 
+
+39:30 are at picking up little things that you
+39:33 
+
+39:33 put back into the data. I was surprised
+39:35 
+
+39:35 that even with just like human
+39:37 
+
+39:37 corrections for um there was one example
+39:40 
+
+39:40 for uh for tamping when when we do so
+39:42 
+
+39:42 tamping is a specific part of making an
+39:45 
+
+39:45 espresso, right? You like put the the
+39:47 
+
+39:47 beans and you have to tamp down the
+39:49 
+
+39:49 >> the best part.
+39:49 
+
+39:49 >> Yeah, the best part. You have to tamp
+39:51 
+
+39:51 down coffee before. So
+39:54 
+
+39:54 >> there you go. See, I'm not a I'm not a
+39:56 
+
+39:56 coffee expert.
+39:57 
+
+39:57 >> It's a skill issue. going to get it just
+39:60 
+
+39:60 right.
+40:00 
+
+40:00 >> That's right. And so our robot in the
+40:02 
+
+40:02 beginning like tammed way too hard
+40:04 
+
+40:04 because uh it's just happened to be the
+40:06 
+
+40:06 case that you know the initial human
+40:08 
+
+40:08 demonstrations were just making sure
+40:09 
+
+40:09 that you know let's make sure the coffee
+40:10 
+
+40:10 grounds are flat so we can put it in. Um
+40:12 
+
+40:12 and then the robot was like tamping
+40:14 
+
+40:14 really hard and like almost lifting
+40:15 
+
+40:15 itself off the table when we looked at
+40:16 
+
+40:16 we're likeoo that's that's a bit much.
+40:18 
+
+40:18 And so with just I don't know it was I
+40:21 
+
+40:21 think 30 to 50 episodes there's a really
+40:23 
+
+40:23 small range of corrections that humans
+40:25 
+
+40:25 did and we feed that data back and the
+40:27 
+
+40:27 model actually starts like being much
+40:29 
+
+40:29 more gentle and doing the correct thing
+40:30 
+
+40:30 and I was really surprised by that
+40:32 
+
+40:32 because you you think you know this
+40:33 
+
+40:33 model has been pre-trained on these
+40:35 
+
+40:35 millions and millions of episodes and
+40:37 
+
+40:37 now you're just doing a little
+40:38 
+
+40:38 correction and that actually works. So
+40:40 
+
+40:40 seeing that happen was was a thing that
+40:42 
+
+40:42 I think is pointing towards this
+40:44 
+
+40:44 continual learning part which I find
+40:45 
+
+40:45 impressive. Can I ask though to and I'm
+40:49 
+
+40:49 the thing I'm still hung up on is
+40:50 
+
+40:50 generalizations. So, as I learn how to
+40:52 
+
+40:52 tamp better, does that make me better at
+40:54 
+
+40:54 folding boxes or not?
+40:57 
+
+40:57 >> Uh, in this specific case, no. But the
+41:01 
+
+41:01 mechanism is the same that you can also
+41:04 
+
+41:04 employ to fix the, oh, I have two boxes
+41:06 
+
+41:06 in front of me that are sort of stuck
+41:08 
+
+41:08 together and I need to pull them apart,
+41:10 
+
+41:10 right? Because you can get 30
+41:12 
+
+41:12 corrections for the stamping part. You
+41:14 
+
+41:14 get 30 corrections for the pulling boxes
+41:17 
+
+41:17 apart.
+41:17 
+
+41:17 >> Yeah.
+41:18 
+
+41:18 >> Bit. You get 30 corrections for oh, you
+41:21 
+
+41:21 know, this box wasn't like neatly folded
+41:23 
+
+41:23 together. And all of this accumulates
+41:25 
+
+41:25 together to then give you this more
+41:27 
+
+41:27 generalized improvement, I would say.
+41:29 
+
+41:29 >> Okay. So, it's a repeatable recipe, but
+41:30 
+
+41:30 they don't necessarily cross
+41:32 
+
+41:32 crosspollinate.
+41:33 
+
+41:33 >> Yeah. I mean we I would expect that as
+41:36 
+
+41:36 we scale this up, we might see also
+41:38 
+
+41:38 things actually kind of transfer from
+41:40 
+
+41:40 from A to B if there is motions that are
+41:42 
+
+41:42 kind of similar across tasks. But at
+41:44 
+
+41:44 this point, yeah, I would say it's more
+41:46 
+
+41:46 like a repeated recipe.
+41:47 
+
+41:47 >> Yeah.
+41:47 
+
+41:47 >> And and yeah, we we see a lot of
+41:49 
+
+41:49 generalization from pre-training where
+41:51 
+
+41:51 you train on more and more tasks, more
+41:53 
+
+41:53 and more data.
+41:54 
+
+41:54 >> You see that it's much easier to onboard
+41:55 
+
+41:55 any new task or you see tasks that
+41:58 
+
+41:58 appear zero shot that you didn't expect
+41:59 
+
+41:59 before. And this keeps on improving. we
+42:03 
+
+42:03 uh we kick off a pre-training run at
+42:06 
+
+42:06 certain cadence and every single time we
+42:08 
+
+42:08 start seeing that the model keeps on
+42:09 
+
+42:09 getting better because there's more data
+42:11 
+
+42:11 being fed in there's more improvements
+42:13 
+
+42:13 that we're making to the pre-training
+42:14 
+
+42:14 process and so on and I also suspect
+42:17 
+
+42:17 that as we have more and more of these
+42:19 
+
+42:19 models deployed doing all kinds of
+42:21 
+
+42:21 different tasks they also bring data
+42:22 
+
+42:22 back in and I think one way where we
+42:26 
+
+42:26 where I'm I'm quite certain where we'll
+42:28 
+
+42:28 see more generalization is from that
+42:29 
+
+42:29 process
+42:30 
+
+42:30 >> that as you deploy these models the the
+42:33 
+
+42:33 the data comes back, the models get
+42:35 
+
+42:35 better, you can deploy them more, then
+42:37 
+
+42:37 the the models get better, you can
+42:38 
+
+42:38 deploy them more and so on.
+42:40 
+
+42:40 >> Yeah.
+42:40 
+
+42:40 >> And I think maybe it's worthwhile for
+42:42 
+
+42:42 this point that you brought up. We
+42:44 
+
+42:44 haven't really talked about one like
+42:46 
+
+42:46 crucial detail aspect of this pie
+42:49 
+
+42:49 recipe, which is that the model has kind
+42:51 
+
+42:51 of two parts. One is the policy that is
+42:53 
+
+42:53 trying to like improve, right, via
+42:55 
+
+42:55 corrections and and RL feedback. And the
+42:57 
+
+42:57 other part is how do you actually get
+42:58 
+
+42:58 this RL feedback, right? So we've talked
+43:00 
+
+43:00 a little bit I've mentioned like you
+43:02 
+
+43:02 know humans might correct and that's the
+43:04 
+
+43:04 human correction part and the RL
+43:06 
+
+43:06 feedback part is is a little different
+43:08 
+
+43:08 and it's kind of in already has some of
+43:10 
+
+43:10 these aspects of of generalization that
+43:12 
+
+43:12 I think you're you you're like trying to
+43:14 
+
+43:14 search for which is that the way we do
+43:16 
+
+43:16 this is we we first basically get humans
+43:20 
+
+43:20 to uh to to tell us basically whether a
+43:23 
+
+43:23 specific attempt of making the coffee or
+43:25 
+
+43:25 doing the box was uh successful or not.
+43:28 
+
+43:28 So there will be like human labels
+43:29 
+
+43:29 provided with these episodes and then we
+43:31 
+
+43:31 train something which is called a value
+43:33 
+
+43:33 function to try and predict basically
+43:36 
+
+43:36 from my given point of where I am in my
+43:38 
+
+43:38 in the task will I likely be succeeding
+43:41 
+
+43:41 or failing basically. And this value
+43:44 
+
+43:44 function is then used as kind of a
+43:46 
+
+43:46 baseline to to decide whether for this
+43:49 
+
+43:49 data point should I like bump that up or
+43:52 
+
+43:52 should I bump that down depending on
+43:54 
+
+43:54 whether I expect that I will be uh
+43:57 
+
+43:57 moving towards success or or I'm more
+43:60 
+
+43:60 likely to move towards failure. And one
+44:02 
+
+44:02 thing that we saw when we trained these
+44:03 
+
+44:03 value functions. So those are trained
+44:05 
+
+44:05 basically from the same kind of backbone
+44:07 
+
+44:07 on the same kind of model but they're
+44:10 
+
+44:10 pre-trained before the actual policy is
+44:12 
+
+44:12 trained that that actually runs the
+44:14 
+
+44:14 task. When we trained these value
+44:15 
+
+44:15 functions, we see that um adding more
+44:18 
+
+44:18 data from different tasks actually helps
+44:20 
+
+44:20 there and the model starts being
+44:22 
+
+44:22 actually really quite good at at least
+44:25 
+
+44:25 for for certain tasks at knowing when it
+44:27 
+
+44:27 will fail beforehand and before it is
+44:30 
+
+44:30 obvious for me. For example, when I look
+44:32 
+
+44:32 at a video of it trying to insert uh the
+44:36 
+
+44:36 um
+44:37 
+
+44:37 >> uh filter
+44:38 
+
+44:38 >> the porter filter. Thank you. See, I'm
+44:40 
+
+44:40 I'm I'm not good at making coffee and
+44:42 
+
+44:42 trying to insert a porter filter into
+44:44 
+
+44:44 the the coffee machine. It kind of knows
+44:46 
+
+44:46 that it doesn't quite have the right
+44:48 
+
+44:48 angle before that happens. So like 30 40
+44:50 
+
+44:50 steps before that actually happens, the
+44:52 
+
+44:52 value function kind of if you look at
+44:53 
+
+44:53 the prediction drops and and saying,
+44:55 
+
+44:55 "Oh, this this is not good in this
+44:56 
+
+44:56 specific episode. So I I shouldn't
+44:58 
+
+44:58 include this data."
+44:60 
+
+44:60 >> Interesting.
+45:00 
+
+45:00 >> And this gets better with more data and
+45:02 
+
+45:02 more tasks.
+45:03 
+
+45:03 >> And so this is an interesting
+45:04 
+
+45:04 counterpoint to the the Karpathy like
+45:06 
+
+45:06 slurping bits from a straw thing, right?
+45:08 
+
+45:08 because you're not you're not waiting
+45:09 
+
+45:09 for that final bits at the end. You're
+45:12 
+
+45:12 you're actually getting a lot of signal
+45:13 
+
+45:13 along the way.
+45:14 
+
+45:14 >> I I think ARL is just like a such a vast
+45:17 
+
+45:17 field and there's so many different
+45:18 
+
+45:18 approaches to it and people often
+45:21 
+
+45:21 associate ARL with something like a
+45:23 
+
+45:23 policy gradient method or um you know
+45:27 
+
+45:27 very specific on policy learning
+45:29 
+
+45:29 approaches. And to mel is more of a
+45:33 
+
+45:33 problem definition and there is many
+45:35 
+
+45:35 many approaches that get around the
+45:36 
+
+45:36 problem that you're referring to which
+45:38 
+
+45:38 is that you know you only get the reward
+45:40 
+
+45:40 at the very very end and it's not really
+45:42 
+
+45:42 scalable for very long horizon tasks.
+45:44 
+
+45:44 There are things like value functions.
+45:46 
+
+45:46 There are things like temporal
+45:47 
+
+45:47 difference learning that try to get
+45:49 
+
+45:49 around this problem where you constantly
+45:50 
+
+45:50 make predictions and you do it in a
+45:52 
+
+45:52 sequential way.
+45:54 
+
+45:54 >> And this is maybe another one of these
+45:57 
+
+45:57 one of these things where I think
+45:59 
+
+45:59 robotics can really help the the broader
+46:01 
+
+46:01 AI community
+46:03 
+
+46:03 >> because we don't have the advantage of
+46:05 
+
+46:05 having a perfect language simulator
+46:07 
+
+46:07 where you can run as many simulations as
+46:09 
+
+46:09 you would like. Instead, you need to do
+46:11 
+
+46:11 it in the real world. So you need to
+46:12 
+
+46:12 make more efficient methods and
+46:14 
+
+46:14 therefore we need to learn value
+46:15 
+
+46:15 functions and things like this and I
+46:17 
+
+46:17 think this will
+46:18 
+
+46:18 >> these will be really valuable
+46:19 
+
+46:19 everywhere.
+46:20 
+
+46:20 >> Yeah. Can I push a little bit on I'd
+46:22 
+
+46:22 love to understand you know internet
+46:25 
+
+46:25 video seems like it's part of the recipe
+46:27 
+
+46:27 but not a huge focus right now as I see
+46:29 
+
+46:29 it like do you think that there's gold
+46:31 
+
+46:31 left to be mined in internet video and
+46:33 
+
+46:33 then if you look at what's happening in
+46:35 
+
+46:35 video models right now uh world models
+46:38 
+
+46:38 um
+46:39 
+
+46:39 to what extent do you think that's going
+46:41 
+
+46:41 to be a you know discontinuous jump in
+46:44 
+
+46:44 model capabilities and you know an
+46:45 
+
+46:45 important part of your your model uh
+46:47 
+
+46:47 pipeline
+46:48 
+
+46:48 >> yeah um I think maybe There are two
+46:51 
+
+46:51 questions there. One is about the data
+46:53 
+
+46:53 like how do you bootstrap yourself to
+46:55 
+
+46:55 the point where you can start deploying.
+46:57 
+
+46:57 Um and the other question is you know
+46:59 
+
+46:59 what about what about video models and
+47:01 
+
+47:01 kind of the world model aspects of it.
+47:03 
+
+47:03 Um so on the data point I I think we are
+47:08 
+
+47:08 now in this bootstrap phase where
+47:10 
+
+47:10 basically anything goes like whatever
+47:12 
+
+47:12 you you can figure out how to like add
+47:14 
+
+47:14 to the model
+47:16 
+
+47:16 >> to to to its benefit I think it's good
+47:19 
+
+47:19 whether you can add sim whether you can
+47:20 
+
+47:20 add human videos some kind of handheld
+47:23 
+
+47:23 devices human tele operations I think it
+47:26 
+
+47:26 kind of doesn't matter you just need to
+47:27 
+
+47:27 figure out some way to bootstrap
+47:29 
+
+47:29 yourself to the point where you can
+47:31 
+
+47:31 deploy these models because I think in
+47:33 
+
+47:33 the long term there's going to be this
+47:35 
+
+47:35 bootstrap phase but then there's going
+47:36 
+
+47:36 to going to be the deployment phase and
+47:39 
+
+47:39 I think deployment phase will be will
+47:41 
+
+47:41 provide much much more data than
+47:43 
+
+47:43 anything you could do in the bootstrap
+47:44 
+
+47:44 phase.
+47:45 
+
+47:45 >> So we're in this kind of like weird spot
+47:47 
+
+47:47 right now where we tried many different
+47:49 
+
+47:49 things try to see what what sticks to
+47:51 
+
+47:51 just get us to the deployment threshold.
+47:52 
+
+47:52 >> I see.
+47:53 
+
+47:53 >> And once you can deploy I think that
+47:54 
+
+47:54 will vastly be be much greater than than
+47:57 
+
+47:57 anything you can do uh before that. Um
+48:00 
+
+48:00 so so that's also what we are sprinting
+48:02 
+
+48:02 towards. That's why we want to start
+48:04 
+
+48:04 deploying these models. That's why we
+48:05 
+
+48:05 want to do this at you know with many
+48:07 
+
+48:07 different tasks in in in many different
+48:10 
+
+48:10 environments so that we can just have
+48:12 
+
+48:12 this very uh powerful data engine. Um
+48:16 
+
+48:16 now on the on the world modeling side of
+48:18 
+
+48:18 things I think the world models and our
+48:22 
+
+48:22 approaches are kind of targeting at the
+48:24 
+
+48:24 same problem. the problem of
+48:25 
+
+48:25 counterfactuals
+48:27 
+
+48:27 >> of how do you or a credit assignment
+48:29 
+
+48:29 problem, right? Like how do you figure
+48:30 
+
+48:30 out which actions were the ones that
+48:33 
+
+48:33 actually matter for your success and how
+48:35 
+
+48:35 would the world have evolved had you had
+48:37 
+
+48:37 you taken a different action?
+48:39 
+
+48:39 >> And one way you can do this is by
+48:41 
+
+48:41 predicting what would have happened,
+48:42 
+
+48:42 right? Like rolling out a full video of,
+48:44 
+
+48:44 you know, if I if I put this porta
+48:46 
+
+48:46 filter a little bit differently, you
+48:48 
+
+48:48 know, where would I end up and would
+48:50 
+
+48:50 this be a failure or a success? Or you
+48:53 
+
+48:53 can do this through reinforcement
+48:54 
+
+48:54 learning and it it does it through a
+48:57 
+
+48:57 slightly different mechanism a little
+48:58 
+
+48:58 bit more implicitly but it fundamentally
+48:60 
+
+49:00 targets a very similar problem.
+49:02 
+
+49:02 >> Uh we are exploring all of those
+49:04 
+
+49:04 approaches and try to see you know how
+49:06 
+
+49:06 to how to really solve the
+49:07 
+
+49:07 counterfactual problem.
+49:10 
+
+49:10 >> Um I don't think there is a an answer
+49:13 
+
+49:13 yet. Uh but we see we see a lot of
+49:16 
+
+49:16 progress with with reinforcement
+49:17 
+
+49:17 learning that we that we've just shown
+49:19 
+
+49:19 with with pi star with pi star6. But I
+49:22 
+
+49:22 think there is probably room for for
+49:23 
+
+49:23 many many other approaches too.
+49:25 
+
+49:25 >> Awesome. Can we talk about once you guys
+49:27 
+
+49:27 get past that bootstrap phase? Let's
+49:29 
+
+49:29 talk about customer deployments a little
+49:30 
+
+49:30 bit. What do you bring to a customer?
+49:32 
+
+49:32 What do you sell them? And then um how
+49:34 
+
+49:34 do you imagine that's going to evolve
+49:35 
+
+49:35 over time? Like are you selling them a
+49:37 
+
+49:37 fully vertically integrated robotic
+49:39 
+
+49:39 solution? Are you selling them a model
+49:40 
+
+49:40 that they have to figure out how to
+49:42 
+
+49:42 integrate into their operations? Like
+49:43 
+
+49:43 how does this all work?
+49:45 
+
+49:45 >> Uh the the the real answer is we don't
+49:47 
+
+49:47 know yet.
+49:47 
+
+49:47 >> Yeah. Um, we we are still figuring that
+49:51 
+
+49:51 out.
+49:51 
+
+49:51 >> Yeah.
+49:52 
+
+49:52 >> Uh, we are still quite early in in the
+49:54 
+
+49:54 technology as you can as you can tell.
+49:57 
+
+49:57 We are just starting to to even get to
+49:59 
+
+49:59 the threshold where we can start
+50:00 
+
+50:00 deploying these things. Um, so we
+50:04 
+
+50:04 believe we should focus on the on the
+50:06 
+
+50:06 technology first to figure out how to
+50:08 
+
+50:08 get it to the point where it's actually
+50:09 
+
+50:09 easy to deploy
+50:11 
+
+50:11 >> and expand this aperture that we're
+50:12 
+
+50:12 talking about initially.
+50:14 
+
+50:14 And robotics the history of of robotics
+50:18 
+
+50:18 startups is is very often gets to this
+50:21 
+
+50:21 point where you develop a technology for
+50:24 
+
+50:24 for some period of time. You started
+50:26 
+
+50:26 with this grand vision of what it should
+50:27 
+
+50:27 be able to enable, how general purpose
+50:30 
+
+50:30 it will be and as soon as you pick an
+50:32 
+
+50:32 application that you want to apply it
+50:33 
+
+50:33 to, you're kind of stuck. You start
+50:36 
+
+50:36 cutting corners. You start uh figuring
+50:38 
+
+50:38 out very special purpose solutions just
+50:40 
+
+50:40 for this application. and very quickly
+50:42 
+
+50:42 you become you know an application
+50:45 
+
+50:45 company that just focuses on let's say
+50:47 
+
+50:47 warehouse pick and place robots and
+50:49 
+
+50:49 that's it. Uh and we really want to
+50:51 
+
+50:51 avoid that future. We think we have a
+50:53 
+
+50:53 chance to really solve physical
+50:55 
+
+50:55 intelligence
+50:57 
+
+50:57 >> and the the benefits of doing this will
+50:59 
+
+50:59 far outweigh any single applications
+51:01 
+
+51:01 that we can focus on now. So we want to
+51:04 
+
+51:04 make sure that the technology is as
+51:05 
+
+51:05 general as possible, as easily
+51:06 
+
+51:06 deployable as possible. This aperture is
+51:08 
+
+51:08 as wide as possible and and then we'll
+51:12 
+
+51:12 start figuring out how to commercialize
+51:14 
+
+51:14 it. And as you said, there could be many
+51:17 
+
+51:17 different ways of doing this. Uh there's
+51:19 
+
+51:19 probably ways that we can't think of
+51:20 
+
+51:20 just yet because they will depend on how
+51:22 
+
+51:22 the technology goes. Uh whether it's an
+51:25 
+
+51:25 uh whether you can be a model provider,
+51:27 
+
+51:27 fully vertical solution or you sell
+51:28 
+
+51:28 robots or or whatever else. But I think
+51:30 
+
+51:30 it's a little too premature to answer
+51:33 
+
+51:33 this question. It will give you a lot of
+51:34 
+
+51:34 comfort, you know, just to like pick one
+51:37 
+
+51:37 of us.
+51:37 
+
+51:37 >> Give Alfred a lot of comfort.
+51:38 
+
+51:38 >> Yeah, Alfred will be happy with us. But
+51:40 
+
+51:40 I think it's just too early.
+51:42 
+
+51:42 >> No, you guys have a grand grand vision.
+51:44 
+
+51:44 So, thank you for working on physical
+51:46 
+
+51:46 intelligence. It's a it's a wonderful
+51:48 
+
+51:48 wonderful improvement just for Pi
+51:50 
+
+51:50 Star06. It's just a huge um sort of
+51:54 
+
+51:54 breakthrough and so congratulations on
+51:56 
+
+51:56 all the success you've had.
+51:57 
+
+51:57 >> Thank you.
+51:59 
+
+51:59 Can I follow up with a spicy question?
+52:01 
+
+52:01 >> Sure.
+52:02 
+
+52:02 >> So, as you said, this vision is so
+52:04 
+
+52:04 grand, so broad, you're doing all these
+52:06 
+
+52:06 different things.
+52:07 
+
+52:07 I'm I'm sure you've you've studied all
+52:10 
+
+52:10 previous robotics like um efforts and
+52:13 
+
+52:13 they've largely as you said applied an
+52:15 
+
+52:15 application to an application and they
+52:18 
+
+52:18 get narrower and narrower
+52:20 
+
+52:20 and one of the most successful cases of
+52:23 
+
+52:23 a large application is self-driving and
+52:25 
+
+52:25 Whimo or Tesla have done enormously well
+52:30 
+
+52:30 but if I had to go back in history you
+52:33 
+
+52:33 know I learned about self-driving when
+52:36 
+
+52:36 Sebastian through and was on the stage
+52:37 
+
+52:37 of TED in I think 200 2009 2010 and he
+52:43 
+
+52:43 talked about the thing where they won
+52:45 
+
+52:45 the DARPER challenge that was 2007
+52:49 
+
+52:49 and we're in 2025 and the thing barely
+52:52 
+
+52:52 goes from San Francisco down here. They
+52:55 
+
+52:55 kind of can do it now, but they take
+52:57 
+
+52:57 local roads. They can't even get on the
+52:59 
+
+52:59 freeway. If you do such a generalized
+53:01 
+
+53:01 job, how long is the runway or the
+53:04 
+
+53:04 timeline that you're thinking about to
+53:06 
+
+53:06 build for generalization and
+53:08 
+
+53:08 performance?
+53:09 
+
+53:09 >> Yeah. So, there are some aspects of the
+53:12 
+
+53:12 problem that make it easier than
+53:13 
+
+53:13 self-driving and some that make it
+53:15 
+
+53:15 harder.
+53:15 
+
+53:15 >> Yeah.
+53:16 
+
+53:16 >> Um, one thing that makes it easier is
+53:18 
+
+53:18 that we don't need to deploy it only
+53:22 
+
+53:22 when it's 100% reliable, right? There's
+53:24 
+
+53:24 many many tasks out there that even if
+53:27 
+
+53:27 you're at 95% reliability, you're
+53:29 
+
+53:29 totally fine. If you have a robot in
+53:31 
+
+53:31 your home folding your laundry and every
+53:33 
+
+53:33 100 item, you know, it doesn't fold it
+53:35 
+
+53:35 perfectly, you'll be totally fine.
+53:36 
+
+53:36 >> You just call your your child to go fold
+53:38 
+
+53:38 the
+53:39 
+
+53:39 >> That's right.
+53:41 
+
+53:41 We still We still need chores.
+53:43 
+
+53:43 >> Yeah,
+53:44 
+
+53:44 >> exactly. Um and with self-driving,
+53:46 
+
+53:46 that's not the case, right? Like if you
+53:48 
+
+53:48 fail every hundth time catastrophically,
+53:50 
+
+53:50 that's that's a big problem.
+53:51 
+
+53:51 >> Yeah. Um so I think in terms of
+53:53 
+
+53:53 deploying this technology it might be
+53:54 
+
+53:54 easier. Now we also benefit from the
+53:58 
+
+53:58 fact that this is a different era of
+54:01 
+
+54:01 technology. We we are at the era of
+54:03 
+
+54:03 vision language models of foundation
+54:05 
+
+54:05 models that that have some some common
+54:07 
+
+54:07 sense
+54:08 
+
+54:08 >> and we learn a lot of lessons between
+54:11 
+
+54:11 >> what was it 2009 and 2025 and we can
+54:14 
+
+54:14 benefit from all of those. Um so I think
+54:17 
+
+54:17 that also really really helps and these
+54:19 
+
+54:19 are much more general purpose solutions
+54:21 
+
+54:21 than what we had in the past. Um at the
+54:24 
+
+54:24 same time there are some things that
+54:26 
+
+54:26 will be very challenging right like
+54:27 
+
+54:27 there isn't just a single application.
+54:29 
+
+54:29 This is a very general purpose solution
+54:31 
+
+54:31 that can be applied to driving but also
+54:33 
+
+54:33 to manipulation and locomotion and
+54:35 
+
+54:35 flying and all kinds of other things.
+54:38 
+
+54:38 And I think it's to be seen how much
+54:39 
+
+54:39 harder this is. So far, based on what
+54:42 
+
+54:42 we've experienced, it doesn't seem to be
+54:45 
+
+54:45 that much harder to be honest. It seems
+54:48 
+
+54:48 that if you if you tackle
+54:51 
+
+54:51 this with with a very general purpose
+54:54 
+
+54:54 kind of mindset from the get-go, it
+54:57 
+
+54:57 turns out that it can generalize fairly
+54:58 
+
+54:58 well. And there is something about
+54:60 
+
+54:60 physical intelligence that we don't
+55:01 
+
+55:01 fully understand that allows these
+55:02 
+
+55:02 models to generalize between driving and
+55:06 
+
+55:06 making coffee and flying a drone and
+55:08 
+
+55:08 operating a surgical robot. even though
+55:10 
+
+55:10 they seem so far apart from each other
+55:12 
+
+55:12 and it seems that these should be all
+55:13 
+
+55:13 different models and different
+55:15 
+
+55:15 applications, these models somehow can
+55:17 
+
+55:17 make sense out of all of that data. And
+55:19 
+
+55:19 that gives me a lot of hope that maybe
+55:21 
+
+55:21 the problem is not that much harder and
+55:22 
+
+55:22 it might be actually easier. Um, so I
+55:27 
+
+55:27 think it's a fair question, but I also
+55:29 
+
+55:29 don't want to draw the wrong conclusions
+55:30 
+
+55:30 from what we've seen from from
+55:32 
+
+55:32 self-driving.
+55:33 
+
+55:33 >> That's beautiful. Congratulations. What
+55:35 
+
+55:35 result is impressed you the most outside
+55:37 
+
+55:37 of results you think? That's a great
+55:39 
+
+55:39 question.
+55:40 
+
+55:40 >> Yeah, it's a good question actually.
+55:42 
+
+55:42 >> I can start. I've been I've been really
+55:43 
+
+55:43 impressed by the video models what you
+55:46 
+
+55:46 mentioned earlier. I saw them few years
+55:48 
+
+55:48 ago. I worked on on aspects of them few
+55:51 
+
+55:51 years ago
+55:52 
+
+55:52 >> and I didn't expect this trajectory to
+55:54 
+
+55:54 be the improvement to be so steep like
+55:57 
+
+55:57 they're basically indistinguishable
+55:58 
+
+55:58 right now from reality and they can do
+56:00 
+
+56:00 incredible things. Um so that's been
+56:04 
+
+56:04 really really impressive and really
+56:05 
+
+56:05 surprising to me. Yeah, I would say I'm
+56:08 
+
+56:08 still in awe to some extent that we've
+56:11 
+
+56:11 gotten to this place where we do seem to
+56:14 
+
+56:14 get models that do seem generally
+56:16 
+
+56:16 intelligent to a level that I really
+56:19 
+
+56:19 didn't foresee coming out of uh out of
+56:21 
+
+56:21 just next token prediction. I'm I'm
+56:23 
+
+56:23 still amazed with this and like every
+56:25 
+
+56:25 little advance that I see, you know,
+56:27 
+
+56:27 winning IMO mass challenges or um you
+56:31 
+
+56:31 know, applying it to finding new stuff
+56:34 
+
+56:34 in science to me. Yeah, there are so
+56:36 
+
+56:36 many things this year where I thought
+56:38 
+
+56:38 like, wow, there's still there's still a
+56:40 
+
+56:40 lot of progress to be made even though
+56:42 
+
+56:42 it felt like at the beginning of the
+56:43 
+
+56:43 year maybe this whole pre-training
+56:45 
+
+56:45 business of LLMs is kind of maybe uh
+56:47 
+
+56:47 petering out a bit. Um yeah, realizing
+56:49 
+
+56:49 that there's like this whole almost
+56:51 
+
+56:51 second breath of uh yeah, fresh air
+56:54 
+
+56:54 basically coming in.
+56:55 
+
+56:55 >> Yeah, I would maybe add to this just
+56:56 
+
+56:56 like the fact that this whole thing
+56:58 
+
+56:58 works, it's kind of mind-blowing.
+57:00 
+
+57:00 >> Yeah, I don't think we like fully
+57:02 
+
+57:02 realize how ridiculous this is, right?
+57:05 
+
+57:05 like you you build this like loosely
+57:08 
+
+57:08 brain inspired thing that has very
+57:10 
+
+57:10 general purpose learning algorithm. You
+57:12 
+
+57:12 feed it data and it somehow gets it and
+57:15 
+
+57:15 gets it way better than anything we've
+57:17 
+
+57:17 ever had before. And this applies to
+57:19 
+
+57:19 robots and it applies to vision and
+57:21 
+
+57:21 language and sound and all kinds of
+57:23 
+
+57:23 other things. And like I think if you
+57:26 
+
+57:26 stop for a second and just think about
+57:28 
+
+57:28 it how it works and and that it works,
+57:31 
+
+57:31 it's just like absolutely mind-blowing.
+57:33 
+
+57:33 Like the fact that we can have robots,
+57:35 
+
+57:35 you can put it in a home and it kind of
+57:37 
+
+57:37 knows what to do in a home that it's
+57:39 
+
+57:39 never been to before
+57:40 
+
+57:40 >> or it can make coffee for 13 hours
+57:42 
+
+57:42 straight or, you know, things like that.
+57:44 
+
+57:44 And this is from this very general
+57:46 
+
+57:46 purpose
+57:48 
+
+57:48 thing that that trains fully end to end
+57:51 
+
+57:51 that we don't fully understand, but it
+57:53 
+
+57:53 seems to start to get it. That to me is
+57:56 
+
+57:56 just
+57:56 
+
+57:56 >> mind-blowing.
+57:57 
+
+57:57 >> We're in a simulation.
+58:01 
+
+58:01 It's what that's what Sonia believes
+58:03 
+
+58:03 that that we're living in a simulation.
+58:05 
+
+58:05 But it is interesting, right? Like in
+58:06 
+
+58:06 science, they teach you to take a big
+58:07 
+
+58:07 problem and break it up into smaller and
+58:09 
+
+58:09 smaller problems. And then basically
+58:11 
+
+58:11 somebody realized that that's maybe not
+58:13 
+
+58:13 the best way to train
+58:15 
+
+58:15 machines or robots of any kind.
+58:17 
+
+58:17 >> And to be honest, the whole machine
+58:19 
+
+58:19 learning like AI field made that same
+58:21 
+
+58:21 mistake actually to some extent, right?
+58:22 
+
+58:22 We were working for a long time, people
+58:24 
+
+58:24 were working on solving individual
+58:26 
+
+58:26 problems very deeply basically, right?
+58:28 
+
+58:28 And then over time there is this like
+58:31 
+
+58:31 notion of oh if we can put it all
+58:33 
+
+58:33 together like do multitask learning if
+58:35 
+
+58:35 we could do that really really well we
+58:36 
+
+58:36 do much better and then but then the
+58:39 
+
+58:39 fact that that all happened just because
+58:41 
+
+58:41 we switched to this you know general
+58:43 
+
+58:43 pre-training objective and then it just
+58:45 
+
+58:45 all falls out that's the part that is is
+58:47 
+
+58:47 the surprising bit right
+58:48 
+
+58:48 >> do you think it's like an accordion
+58:50 
+
+58:50 where we go from one framework to the
+58:51 
+
+58:51 other framework we take big problems
+58:53 
+
+58:53 break them up into smaller smaller and
+58:55 
+
+58:55 smaller ones that work for a period of
+58:56 
+
+58:56 time then it stopped working and and
+58:58 
+
+58:58 we're like, "All right, let's go back to
+58:59 
+
+58:59 the big problem and try to solve it more
+59:01 
+
+59:01 generally and go back and forth."
+59:03 
+
+59:03 >> I don't see us going back.
+59:04 
+
+59:04 >> Yeah, I don't see us going back. I think
+59:06 
+
+59:06 there's a lot of approaches or a lot of
+59:09 
+
+59:09 people saying that, you know, you need
+59:10 
+
+59:10 the best of both worlds and you need
+59:12 
+
+59:12 some kind of way of incorporating the
+59:13 
+
+59:13 rules that we already know about like,
+59:15 
+
+59:15 you know, Newtonian physics. You don't
+59:17 
+
+59:17 need to learn that. We already know how
+59:18 
+
+59:18 it works. So, can you just like put it
+59:20 
+
+59:20 somehow into the weights? But, uh, from
+59:23 
+
+59:23 what we've seen so far, it it doesn't
+59:25 
+
+59:25 work. If you try to do this, you kind of
+59:27 
+
+59:27 limit the ability to to learn new
+59:29 
+
+59:29 things. And I don't think there's the
+59:32 
+
+59:32 best of both worlds. I think we just go
+59:34 
+
+59:34 all the way learning. And it's kind of
+59:35 
+
+59:35 interesting to, you know, how similarly
+59:38 
+
+59:38 to how we learn. You would think that if
+59:40 
+
+59:40 there was a way to pre-bake all of the
+59:42 
+
+59:42 intelligence, the evolution would have
+59:44 
+
+59:44 figured this out. You would have just
+59:45 
+
+59:45 been born, you know, knowing everything
+59:47 
+
+59:47 there is to know. And we see this with
+59:49 
+
+59:49 some other species, right? Like I think
+59:51 
+
+59:51 deer when they when they get born
+59:53 
+
+59:53 they're basically like as smart as they
+59:55 
+
+59:55 will ever be. Like they don't really
+59:56 
+
+59:56 learn much throughout their lifetime.
+59:59 
+
+59:59 But for intelligent species like like
+60:01 
+
+60:01 humans but also I think crows for
+60:03 
+
+60:03 instance they have these childhood
+60:05 
+
+60:05 periods the adolescence period where
+60:08 
+
+60:08 they're not very smart to begin with but
+60:10 
+
+60:10 they have to learn from their own
+60:11 
+
+60:11 experience and it doesn't come
+60:13 
+
+60:13 pre-baked. You kind of have to earn it
+60:15 
+
+60:15 on your own. And um I think there is
+60:19 
+
+60:19 something something to that. Um you need
+60:22 
+
+60:22 to just experience the world and and
+60:23 
+
+60:23 learn from that. And I think that's the
+60:25 
+
+60:25 lesson we're learning in in machine
+60:27 
+
+60:27 learning as well in AI that you know we
+60:31 
+
+60:31 we think we know how we think but we
+60:33 
+
+60:33 actually don't. And we just need to let
+60:36 
+
+60:36 the algorithm learn it from data.
+60:38 
+
+60:38 >> Same thing with raising a child. We I
+60:40 
+
+60:40 think I know how my son is thinking but
+60:42 
+
+60:42 I don't.
+60:43 
+
+60:43 >> Yeah. Yeah. I have a I have a a small
+60:46 
+
+60:46 daughter and yeah, it's just so
+60:48 
+
+60:48 surprising like
+60:49 
+
+60:49 >> they learn so fast.
+60:50 
+
+60:50 >> They learn so fast and you don't know
+60:51 
+
+60:51 where they get it from.
+60:53 
+
+60:53 >> Hopefully from the parents.
+60:54 
+
+60:54 >> Hopefully.
+60:56 
+
+60:56 >> She definitely knows some things that
+60:57 
+
+60:57 they didn't teach her.
+60:59 
+
+60:59 >> Thank you guys so much.
+61:00 
+
+61:00 >> It's a really beautiful mission you're
+61:02 
+
+61:02 building after. Thank you for coming to
+61:04 
+
+61:04 share.
+61:04 
+
+61:04 >> Thank you. Thanks for having us. Thanks
+61:06 
+
+61:06 for having us.

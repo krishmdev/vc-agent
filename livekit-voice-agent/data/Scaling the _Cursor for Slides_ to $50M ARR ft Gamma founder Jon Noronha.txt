@@ -1,0 +1,299 @@
+00:00 We all start some new project with this blank page saying enter presentation title and it's like my god where do I
+00:06 start? I have to outline all the slides. I got to figure out my story. What's the hook? What are the key moments? What
+00:12 it's going to look like? What fonts am I going to use? What colors? What imagery do I need? And you get stuck in this
+00:18 spiral of like thinking through all these things. Totally. And so when we actually built AI that solved our blank page problem, it turned
+00:24 out that it solved everybody else's blank page problem too. Suddenly they could just go from a vague idea to a
+00:30 fully worked out rough draft. And suddenly their job was editing, not starting from scratch.
+00:39 [Music]
+00:52 Today we're joined by John Nurona, founder of Gamma, our cursor for slides. Gamma is a canonical example of
+00:58 application layer success in AI. Image generation models were the initial product breakthrough and these AI
+01:04 tailwinds have now carried Gamma to 50 million plus AR 50 plus million users and cash flow positive. John discusses
+01:11 practical lessons for builders on multimodel orchestration running extensive AB tests fine-tuning versus
+01:17 prompt engineering cost efficiency and more. He also shares thoughts on how Gamma is solving the cold start problem
+01:23 and their future roadmap towards more agentic editing experiences. Enjoy the show.
+01:29 John, thank you so much for joining us on Training Data today. Great to be here. Thanks for having me. Let's start with what is Gamma? Why'd
+01:35 you start the company? So, we started the company back in 2020 and the original vision has not really
+01:40 changed up till now. We wanted to reinvent presentations. Uh my co-founder Grant came to me with the idea back in
+01:47 2020 and he was talking about how he was just spending all of his time sitting outside on a park bench trying to call
+01:53 into conference calls because wife was using you know the one spot in their house with a desk. This was the depths of co and we were all in our houses and
+01:59 he was joining all these conference calls staring at his little tiny phone trying to follow along to these PowerPoint decks people were doing on
+02:05 Zoom. And the moment he brought this up days I know I was like that's all I do too. All I do is just sit on Zoom calls all
+02:11 day and look at Google Slides decks, alternating with maybe making Google Slides decks along the way. And neither one's very fun for me. And so, as soon
+02:18 as he mentioned it, I was like, man, this is such an exciting opportunity to reinvent this thing, which on the one
+02:24 hand, slides are the language of business. They are the way that we all communicate at work, especially around
+02:29 highstakes ideas like for you. Anytime somebody pitches you, I'm sure is with a slide deck. Um, and yet, if you ask
+02:35 anybody in almost any walk of life, do you enjoy making slides? this is how you want to communicate. You generally get
+02:41 some kind of ick reaction like a I hate having to do that. I hate I hate how slides make me look bad. I hate how I
+02:47 spend 90% of the time on formatting and just 10% on the content. I hate how everyone's judging me for how they look
+02:54 and not what I'm saying. And so Gamma's vision came out of this almost universal problem. People need to do visual
+03:00 communication. They want to look great, but current tools don't cut it. And so we wanted to reinvent that. not just by
+03:05 making a new editor for making PowerPoints, but for actually rethinking the format itself.
+03:11 That's so cool. By the way, I'm one of those shameful people that actually likes making slides. So, I guess I've now realized that I'm a weirdo.
+03:16 Yeah, you are the 1%. Congratulations. So, Gamma today is an amazing success
+03:22 story in the AI application layer. I think you guys announced you're at 50 million plus of ARR uh cash flow
+03:28 positive team of 30 people. So, congratulations. Did it always feel like this? No, absolutely not. It's been it's
+03:35 been a long road to get here. There are no overnight successes. As I said, we started the company in 2020 before all
+03:41 this AI stuff had taken off. And did you know the AI stuff was going to happen when you started the company? Absolutely not. I actually remember
+03:47 trying the first version of GPT3, which actually also came out in 2020. And I was one of the first people, I think, to
+03:52 get access. And we tried it out and I just wanted to see could this make slides because we were already working
+03:57 on it. I wanted to see if I gave it a document, could it summarize the key bullet points? Could it do the opposite? take bullet points and turn it into, you
+04:03 know, paragraphs of text. And the answer was no at the time. It just wasn't there yet. Um, and so I kind of thought, wow,
+04:09 this is neat. But I dismissed it. And for several years, we went down a very different path. Um, we were very much
+04:14 focused on this future of work thesis, thinking about remote async work, trying to build an alternative to slides that
+04:21 was more interactive, more webpage-like, more responsive. And we ended up in this zone of sort of medium traction, some
+04:28 product market fit, but not enough to be probably like a VC scale business, not enough to really take off with
+04:33 exponential growth. And got to a pretty difficult point maybe two years into our journey where we had that middling
+04:39 product market fit. We had a dwindling runway and we probably wouldn't have made it especially because the economy
+04:44 around us was just going crazy. It was a period of uh inflation going up, interest rates going up, banks crashing,
+04:50 including our own Silicon Valley bank. So we had some very rough periods along the way and uh frankly I would say what
+04:57 saved us was generative AI getting good just in time. So we were already at this
+05:02 point of facing some I'll say existential angst of are we going to make it as a company but we started
+05:07 checking back in on all this AI stuff over a period of two years. And for me what really caught my eye was actually
+05:13 not language models it was image models. stable diffusion had come out that summer and I was seeing everybody on
+05:19 Twitter posting these silly little things they were making in stable diffusion. It wasn't serious work yet,
+05:24 but there was this magic and this virality to seeing what AI could do. I think Dolli was also taking off at the
+05:30 same time and I started to realize this is the thing that can really change presentations because what are we doing
+05:36 when we're presenting ideas? We're doing a lot of visual design and we're often decorating things sort of pointlessly to
+05:41 fill space. probably PowerPoint ski innovation was actually clip art uh maybe 30 years ago. Um but nobody's
+05:47 really come up with what's the next clip art and I saw stable diffusion in Deli and I'm like this is by far the most
+05:52 compelling thing I've ever seen that could do it. That's a really interesting insight. So it wasn't even the language model side
+05:57 that made you think there's there's a why now for your business. It was the visual uh the image model side.
+06:02 Absolutely. They're just so magnetic, so magical. Um, but ironically the image models taking off made us revisit the
+06:08 text models and say what's been happening with this GPT3 thing that we heard about a while ago and I remember trying it out and just
+06:13 trying some of the same early prompts I tried two years earlier and suddenly they worked. Uh, and they actually
+06:19 worked quite well. Everyone sees chat GPT as an overnight success as well but it turns out OpenAI had been improving
+06:24 the models all that time as well. And in particular the thing they've been working on was instruction tuning. So
+06:30 making it so that you could actually give a prompt the way a human would like please write this thing or format this thing and it would listen to you. Very
+06:36 simple innovation that I think under the whole chat GPT takeoff and so suddenly we realized we had all the ingredients
+06:43 to not just be a tool for making presentations but actually just make the presentation for you. That's super cool.
+06:49 Uh can you say a word on you know I think you guys mentioned pre-AII you had this cold start problem. Um, how do you
+06:56 think AI has is uh changing that problem for you all? Well, it's funny you say that because yes, we had a cold start problem which
+07:03 was that we had launched this product into beta with middling traction and the reason it wasn't taking off was the
+07:08 activation rate at the very start. So, 100 people would sign up and 95 or so
+07:13 would fall off in the first few minutes of using the product cuz they get dropped into this like new innovative tool that was actually just a blank
+07:19 page. And we'd say, "Look how cool it is. It's got so many features." And they'd say, "Yeah, but like what can I
+07:24 make? what can I do with it? And they would pretty much all fall off along the way except for the few dieards who would
+07:30 manage to power through that blank page. And so the reason we seized on AI early on was we thought it could solve our
+07:36 blank page problem. We thought it could speed us through showing something magical where a user would get it. I think what we failed to appreciate until
+07:42 we actually launched it was that it wasn't our blank page problem being solved. It was the user's blank page problem. And if you think back to like
+07:49 why are presentations so intimidating and frustrating, it's because we all start some new project with this blank
+07:54 page saying enter presentation title and it's like my god, where do I start? I have to outline all the slides. I got to
+08:00 figure out my story. What's the hook? What are the key moments? What it's going to look like? What fonts am I
+08:06 going to use? What colors? What imagery do I need? And you get stuck in this spiral of like thinking through all these things.
+08:11 Totally. And so when we actually built AI that solved our blank page problem, it ser turned out that it solved
+08:17 everybody else's blank page problem too. Suddenly they could just go from a vague idea to a fully worked out rough draft.
+08:24 And suddenly their job was editing, not starting from scratch. Yeah. No, I've I've loved that. And I've
+08:29 actually used Gamma a lot. I get asked to give a lot of presentations about AI and it's so refreshing to just give
+08:35 Gamma, you know, a document and like turn this into a slide deck versus having to sit there in front of a bank blank page and figure out what I'm going
+08:41 to talk about. Well, thank you for trying it. We we always appreciate it. And yeah, that's the magic too. We use it every day internally. I think it's part of our
+08:47 success is I love having a dog foodable product, a thing you can use every day. Totally. Um, tell me about the hard work
+08:52 that goes into and this go plays into the whole debate of how much value is in the application layer. um tell me about
+08:58 the stuff that you do in between the foundation models and your users. Yeah, really good question. I think this
+09:04 is where so much of our work the last few years uh has gone. And I would say there's a couple different categories of
+09:10 it. The first is actually the medium itself. So I mentioned that where we started was we didn't want to just be a
+09:16 presentation clone, a PowerPoint clone. We wanted to be our own unique format. And so we came up with something that
+09:22 our users describe as if notion and Canva had a baby. So what does that mean? Uh the notion part is it's block
+09:29 based and writing based. So you're not actually dragging boxes around and moving them the way you are in Google slides. You're actually just typing and
+09:36 we try to bring whatever you type to life and feel visual. Uh but the canvas side is we have all
+09:41 this visual range. So we have diagrams and charts and visuals and crazy theming and templates that sort of all make it
+09:47 feel a bit more magical. But the key thing is that we do that part for you. You don't need to actually know what's
+09:53 going to look right. You just type and you get something grayed out. And so actually a huge part of what we do as a company is not anything to do with
+09:59 prompts or fine-tuning. It's just actually tuning those core building blocks. How do we have the best diagrams, the best layouts, the best
+10:06 visual themes? And those become our arsenal that AI is let loose on. Uh it's
+10:11 the building blocks that it works on. And what goes into that? Like what what allows you to create the best visual
+10:16 themes or the best diagrams. Well, one thing that goes in is taste. So this is probably a big difference from when you know people think about
+10:23 what if I just type the same thing into say chat GPT. We actually have a pretty big team of designers. In fact for a
+10:28 while our company was one-third designers. Uh it was four out of 12 designers which is very unusual I think
+10:35 in Silicon Valley especially at the early stage. But um we put a ton of care into what will great output look like.
+10:41 Our whole philosophy is that we do the great design so that you don't have to. Uh but it's also quite data driven. uh
+10:46 we spend a lot of time looking at what users are trying to do in our product and where things get lost and also a lot
+10:52 of analysis of like what do presentations out there in the world have. AI is great for this by the way at
+10:57 turnurning through for example thousands of external slide decks and telling us what are the common layouts and designs
+11:03 and things that are there. Yeah. What are some of the insights you've learned from the data of where people tend to get lost and where you've
+11:08 solved that their product? You know, if you think about the process of making a presentation, there's actually this
+11:14 whole series of hurdles that come along the way. There's sort of a storytelling and structure phase where it's like, how
+11:19 do I even want to say this? And then there's a formatting and design phase. And we are certainly looking to improve
+11:25 on both, but in particular in the formatting and design phase, there's actually just certain common tricks that for an AI are so easy, but for a human
+11:32 are so tedious. One simple trick is don't just try one thing. Try 10 different designs and pick the best one.
+11:39 easy to say when you're an AI that can do it all in about three seconds. For a human, that's incredibly timeconuming.
+11:44 Um, another simple trick is uh with imagery, making all the images in your presentation the same color palette. Um,
+11:51 easy to say when you're an AI that can generate the image from scratch. Hard to do when you're a human pulling from like Google image search or your own library
+11:57 and making everything just perfectly tuned. So, I would say that we're trying to stack up a lot of those tricks into something that actually no human could
+12:04 do. And and when you generate 10 different options, how do you figure out what's the best one? Oh, such a good question.
+12:09 Uh, so my background, I don't think I shared is before Gamma, I worked at Optimizely uh in a product role.
+12:16 Optimizely for those who don't know, was AB testing you'll actually use. So we sort of pioneered AB testing as a
+12:21 universal practice in how marketers tune their ideas and then also how products get launched. And that's actually been a
+12:26 through line through my whole career in product management. I did a ton of AB testing before that at Microsoft and now
+12:32 we do a huge amount of it at Gamma. So every time a new model comes out, so for example, as we're recording this today,
+12:38 Sam Alman is on stage announcing GPT5. Um, literally right now there's somebody on our team who's actually making a code
+12:45 update on our side so that we can implement GPT5 and run a test on it. And we go through a couple different
+12:51 phases of testing when a new model comes out. Uh, we do have evals, so we try to automatically measure is this thing
+12:56 better than previous models. Uh but it turns out we're in a creative domain where there's often no right answer and
+13:02 so it's really hard to run evals and just say oh GPT5 is better than Claude
+13:07 sonnet by 2.7%. There's actually not a metric for that. But we do have are a bunch of real users
+13:14 and we're lucky to now have millions of users that we can actually run these experiments on. And so sometime this afternoon we're
+13:19 going to start an AB test of GPT5 against Claude against Gemini and we're going to actually measure a whole series
+13:25 of user behaviors when we generate a presentation. We're going to actually ask users what they think through ratings, but we're also going to measure
+13:32 how much did they edit the final output. Uh how much did they export it to other tools? Did they share it? And finally,
+13:38 did they convert from a free customer to a paying customer? And we have run probably hundreds of these experiments.
+13:44 And we have learned very carefully which models work well for which tasks and on top of that um what aspects of our
+13:51 prompts work well. So I would say we skew pretty heavily on the idea of prompt engineering. We have quite
+13:57 complex prompts in our products and quite complex orchestration of prompts and every piece of those is the product
+14:03 of some degree of AB testing and experimentation to find out what actually resonates. Data flywheel in action. Nobody better
+14:10 to build the data flywheel than the optimizely guys. Absolutely. Um are you on the prompt? So it's primarily prompt engineering as opposed
+14:16 to fine-tuning. Is there a reason for that? Honestly, we just haven't found that fine-tuning works all that well. Uh
+14:21 fine-tuning is something that I've seen so much hype around in the industry, mostly coming frankly from companies that do fine-tuning for you. Um but in
+14:28 our own experience, fine-tuning seems to hobble the model's actual intelligence and also frankly what we found is that
+14:34 fine-tuning seems to be popular among open source models, but we actually have not seen the open source models come nearly close to the closed source
+14:41 foundation models. Interesting. So for us, our daily drivers are like claude, Gemini, and uh GPT rather than
+14:48 some of these open source models that get a lot. Okay. So, name your favorite child. Claude, Gemini, GPT. Like, what is each best at?
+14:53 You know, uh, if I had to choose, I'm a Claude stand. Uh, I would say we are very, very heavy Claude users. And in
+14:60 particular, I think what we found about Claude was it just has a certain taste to it about what actually looks good.
+15:06 There's this creativity and it's remarkable because it doesn't show up in any benchmark. Um, when all these
+15:11 companies talk about their models, they're first of all, they're always talking about software engineering. At this point, coding is the dominant use
+15:17 case of AI. It's the killer app. And so all these companies are optimizing for like reasoning, tool use, and coding. We
+15:24 are not a coding platform. We are a visual expression platform. And so all the benchmarks are useless. We have to
+15:29 throw them out and run our own experiments. Uh Claude has been the best. Although funnily enough, earlier
+15:34 versions of Cloud sometimes work better than new ones as they've kind of gone down this coding optimized path.
+15:40 I think the one that's most slept on is probably Gemini though. Um Gemini is by far our most heavily used model. Um, and
+15:46 that's because they really win on cost efficiency. When it comes to intelligence per dollar, nothing beats
+15:52 Gemini Flash, which is like probably our daily driver. And maybe this ties another thing about our company, which is we actually really care about
+15:58 margins, unlike maybe a lot of other AI companies in this space. We've always tried to operate since we had AI at cash
+16:04 flow positive and think about how we can offer these things sustainably. Yeah. What are the reasoning models?
+16:10 Have those been an unlock for you all? Surprisingly, no. What we've actually run these experiments and what we found
+16:15 is that the longer a model thinks the less creative it gets. I think reasoning works really well on questions that have
+16:21 a right answer like creating a math proof or solving a coding problem. They really don't seem to work well in any
+16:27 kind of creative writing domain. Huh, that's so interesting. And in particular uh an unfavored child,
+16:33 we just found that deepync was a total dud for our use case despite all the hype of like, oh my god, these open
+16:39 source models can reason. Huh. Yeah. Um, what about on the image generation side? Any favorite models?
+16:44 We have a lot of favorite children in image generation. I think we have around 20 different image models that we support in our product and we take a
+16:50 similar approach of AB testing them all. I think in image models uh there's not as much of one right answer. Um, I think
+16:56 our most heavily used models come from ideoggram and Flux. They have some really great models and amazing
+17:02 progress. But we've also been really amazed by what OpenAI's GPT image can do. It is so powerful at text and
+17:08 infographic type content. And so we're mixing in where we can uh but also trying to figure out how to serve it cost effectively.
+17:13 Totally. I want to go back to this data flywheel and kind of prompt tuning concept. Um are you familiar with DSPY?
+17:19 Yeah. Um are you guys using that or any other methods to kind of automatically engineer your prompts? We're actually not. No, we've tried DSPY
+17:26 a little bit, but we haven't found it helpful for us. Um I think there's a couple reasons for that. We've actually really valued sort of the legibility and
+17:33 readability of our own prompts. We almost view prompts as uh user experience as things that a designer can
+17:39 work on, things that a PM can work on, not just things that engineers write and optimize. I think another thing is that
+17:45 we really care about crossmodel reusability. So I mentioned that for example, Claude and Gemini and GPT each
+17:51 have their own strengths. We use all those models in concert. We test them against each other constantly. Also, at
+17:57 any given time, one of these models is broken and you have to use a different one. And so we care a lot about that portability. And we found that tools
+18:03 like DSPY are really good at microoptimizing one very specific sensitive combination, but we care a lot
+18:10 about generality. And so are you handcrafting your prompts then? Uh well, Cloud is handcrafting them for
+18:17 us. I would say we we use a lot of cloud code to iterate on our prompts, but we do a lot of human review and iteration
+18:23 guidance of what to do. Yeah. Super interesting. Well, that's about the elephant in the room, which I think is competition. Yeah.
+18:28 Like I mean slides, I agree with you. Visual communication. It's one of the most pervasive forms of communication,
+18:35 especially in the business world. And therefore, you have a lot of 800 pound gorillas in the room. Absolutely. That
+18:41 are going to be competing with you. Um, who scares you? The one that scares us most is still
+18:47 PowerPoint and to a lesser extent, Google Slides. Uh, because they are still the dominant incumbents. Um, we're
+18:53 proud proud to have millions of monthly active users, but the stat that I heard is that PowerPoint and Google Slides
+18:58 each have 500 million monthly active users. So, there's like a billion or so Slides users out there, and we are still
+19:05 only the tiniest fraction of that. So, we still view ourselves very much as an insurgent trying to take on these very
+19:10 big incumbents. Um, luckily for us, those companies have been fairly slowmoving with AI. Um, I think we're
+19:17 actually lucky that agentic coding has taken up so much of everyone's attention because these productivity use cases
+19:23 have actually been neglected by some of the big players. Um, I think the other big source of competition for us is the foundation models themselves. So, we saw
+19:30 chat GPT agent come out just a few weeks ago. It makes powerpoints thankfully for us, not very good ones, but we know
+19:36 that'll change and we know these will get better. And so, I think for us, we're still trying to lean into our
+19:41 differentiation. How can we be as distinct as possible from PowerPoint, from Chat EPT? How can we bring a huge
+19:48 amount of our own taste on top of just what the models can do? But it's this delicate dance because on the one hand, we care a lot about being
+19:54 different. We don't want to just be a PowerPoint builder at the end of the day because PowerPoint will eventually
+19:59 become a great PowerPoint builder. We want to become a great gamma builder. We want to be our own visual storytelling
+20:05 platform and really our own medium. And yet we also have to be familiar because we're kind of crossing this chasm where
+20:11 our first 50 million users were early adopters who want to try the newest thing. I think our next 100 million or
+20:17 so users are going to be maybe this early majority that need things to be convenient, need things to be familiar,
+20:23 need things to fit into existing workflows, especially as we also make this transition from pure BTOC to start
+20:28 to do B2B as well. And so we're kind of on this tight rope trying to figure out how to be familiar and yet innovative.
+20:33 Totally. What about Canva? I view them as somebody that's been beloved for their taste and design. Um, obviously
+20:40 some of their usages, uh, slide driven. How do you think about them? First and foremost, I would say we view
+20:45 them as an inspiration. I think they're a very inspiring company in terms of what they've achieved. They've really
+20:51 paved a path that we're trying to follow. I think they've proven a couple really interesting things about how you can build a company. Uh, they've proven
+20:58 that PLG can work at enormous scale. So, they have the stat that I've heard about Canva is that they didn't hire a single
+21:04 salesperson until they had $500 million of AR. Uh, which is crazy because I think most companies aspire to ever
+21:10 reach 500 million using any strategy whatsoever. Certainly, we do. Um, and yet they managed it with this sort of
+21:16 SMB focused strategy um, and a huge library of sort of templates. And so, we
+21:21 want to follow that trail that they blazed. I think we're taking a somewhat different path than they are though
+21:27 because Canva is first and foremost a design tool uh where you drag and drop things into place and use templates to
+21:32 do it. We've always had this different DNA from where we started in the pandemic of actually being a writing based tool. And that's why we kind of
+21:39 also compare ourselves to notion as maybe another index point of this company where you didn't need to have any design skill whatsoever to make
+21:46 something really beautiful and magical. And I think notion is also an inspiration at integrating AI into their
+21:51 platform as well. And so, yes, I think we'll compete with Canva more and more head-on over time, but I'm hoping we can
+21:57 forge our own path versus just trying to be a copycat. Totally. Um, I remember at some point a
+22:03 couple years ago, there were three or four of these, you know, AI slide creation uh tools, for lack of a better
+22:09 word, and you guys really you really want out and a couple of others have pivoted or or gone sideways. Why do you
+22:16 think that is? That's true. It's been a very competitive space in the past and I think we've managed to make it a little
+22:21 bit less competitive for now at least. I would point to a couple differentiators. Uh the first one is that we've just
+22:27 always had a pretty lean paranoid mindset. So I think some of the other companies you're referring to raised quite a lot of money and built pretty
+22:32 big teams. Um and we always had the mindset that AI world is changing really
+22:38 really fast. And the most important trait that will determine our success is our ability to pivot and adapt. And so
+22:44 that's led us to have quite a small team I would say relative to our traction. Um we've cared a lot about keeping that
+22:50 sort of lean mechanic. Um it's also impacted our spending just in a very tactical way in terms of how many
+22:56 dollars we're willing to spend on inference. So many AI companies now are operating at a loss. I think that
+23:02 includes many of our competitors who were running these tools like GPT4 and Dolly that were just tremendously
+23:08 expensive when they came out. And I think it's this classic mechanic of selling dollars for 75 cents. You can
+23:13 get a lot of growth, but it's not sustainable. And I think a lot of companies really hit the crunch of doing something unsustainable. And so that's
+23:19 also become a part of our DNA is we really care a lot about cost efficiency in everything that we do. We really care
+23:25 about maintaining that cash flow positivity because we think it's the foundation that will propel us to keep
+23:30 moving faster than everyone else. Um, what advice do you have for other founders building in the application layer?
+23:36 Uh first and foremost I would think about what is your unique perspective on the market that you're tackling. For us
+23:43 at Gamma our unique perspective is all about differentiating the medium itself. So we've always been very clear to
+23:49 ourselves. We are not just trying to make a PowerPoint builder. We're trying to create a new format to replace the
+23:54 slide deck. And that's guided many many of our product choices. It's also angered our users sometimes. It's not a
+23:60 sort of a panacea u but I think it's helped us to navigate what is a very competitive market. And so I would
+24:06 definitely encourage other founders in this space to think about their unique lens. Um so for example I'd be wary of
+24:12 making yet another vibe coding startup. There are so many companies that are doing pretty much the same thing in this space. I would think about what is the
+24:19 neglected area where people are not applying AI and even potentially you want to go against the grain of what the
+24:25 foundation models are training for. So, um, the reason these VI coding tools are taking off is that the foundation models
+24:31 themselves are so good at coding and it's so clear that the foundation models are optimizing for that. I think if you
+24:37 work on something they're not optimizing for as much, but is still adjacent, you'll have a little bit better luck at making progress without being smooshed
+24:44 by the giant dinosaurs out there. Um, I would also really try to incorporate some form of experimentation and really
+24:51 encourage trying multiple different models. I think people tend to lock into one model provider and just assume that
+24:57 it's the best out there. But the innovation out there is so rapid and
+25:02 uneven and unpredictable that I think you have to plan for a world where on any given day of the week there's a
+25:07 different best model out there. Yeah, we got the optimizely DNA coming out here. I'd love to close by talking a
+25:13 bit about the future of how you see gamma. Um maybe so right now you all have something like 250 million gamas
+25:20 have been creating created on your platform. What are you seeing in terms of the usage so far? What are folks
+25:25 using you for and how has that evolved over time as the underlying models have gotten better and as your platform has
+25:30 gotten better? Yeah, so you know we started and really reached product market fit with this use case of presentations and even
+25:36 presentations turn out to be a very wide world. Everything from a very visual TED talk type presentation to a very wordy
+25:43 consulting or ibanking slide. And so we actually see quite a lot of room within presentations to just keep improving and
+25:49 doing better. But we also discovered all these interesting adjacencies that we hadn't necessarily planned on from the
+25:54 start. The first one was simply documents. And when I say documents, I don't mean like plain text Google docs.
+26:00 I mean things like uh PDF proposals and brochures and shiny reports that you
+26:06 give to a customer and white papers. There's actually all of these things. You know, if the market share of
+26:11 PowerPoint is like 500 million people, I think for PDF it's like a billion people. I think there's just an enormous number of these visual outputs people
+26:18 are creating that don't quite fit the classification of a slide deck and we've actually seen tremendous pull there and
+26:24 built out a lot of product for that. Uh the next one that really surprised us was websites. So a lot of people started
+26:30 making these things in gamma and realizing that the gamma they made worked well as a personal website or
+26:35 their small company or agency website. Um similar to how notion docs actually kind of get used as these little mini
+26:40 I was going to make the exact same comparison. Yeah. Yeah. Again, they're a big inspiration to us and we realized this
+26:46 is a great uh market to compete in because websites are so sticky um and they're so meaningful to people in terms
+26:52 of being their public face to the world. And so we launched a sites product last year as well. And so we keep finding
+26:58 these adjacencies and pulling and it's making us realize that we are much more than an AI presentation tool. Uh we're
+27:04 still thinking about how to formulate it, but I think our our latest mindset is that we're a visual storytelling platform. And what that means is that
+27:11 anytime you have something high stakes and important you want to convey and especially when you're kind of like a
+27:17 book being judged for your cover where people really care how it looks, Gamma is a really great place to go and we want to serve that through many
+27:23 different use cases. I love that. Um, say a word on what should users expect from you over the
+27:29 near to medium term? How how will the products evolve? We have some really big things coming out just next month, so in September.
+27:35 Uh, maybe just to give a bit of a tease of what's coming. We are doing a lot to improve our core editing experience. Um
+27:42 really expanding our visual range and variety. So we have this goal of making every gamma feel wildly different and
+27:48 anything that you sort of imagine that you want to achieve with it you can just get uh through easy prompting. Uh so
+27:54 that's a big one for us. We're building a lot more agentic editing. So you can just delegate to the AI and say, you
+28:00 know, this five slide presentation should really be 20 and can you expand more on section 3 and maybe redo the visuals in this other part just by
+28:07 talking to it. Uh and then a big one that I'm really excited about is that we're launching an API. So we've had a
+28:14 really surprising amount of interest in this. I think there are so many companies that as part of their work just need to create some kind of visual
+28:20 output based on some sort of workflow. So, uh, a simple example is a sales team
+28:25 where a new prospect comes in and you want to tee up a pitch to that prospect. And so, what if you could just take your
+28:32 CRM, pipe in all the notes you've had from them and get a pre-anned pitch deck in your template that you can just go
+28:37 and take to that prospect without the hour of salesperson time and let's just say mingling that might have gone on uh
+28:44 when they did it. And I'm actually surprised by how many investors I hear from that say, "Actually, I have like 10
+28:50 startups in my portfolio that need something like this." Uh, because there's so many startups that do really valuable work for people and just need a
+28:56 way to show it off. So, we're really excited for that to launch, too. Super exciting. Remember Karpathy
+29:01 tweeted, "What is the cursor for slide?" That's right. Everybody showed up in the comments saying, "Gamma." Um, it's
+29:07 really cool to hear the story of both how you guys have gotten so far. the combination of vision of scrainess of
+29:16 you know everything you're doing in the model orchestration and experimentation layer um and also kind of how you see
+29:22 the future of aentic editing uh and and what's to come. So thank you so much for sharing the story of of gamma today and
+29:28 I can't wait to see you guys continue to change uh the future of visual communication. Thanks so much for having me. It was so
+29:34 great to be here. [Music]
+29:43 [Music]
+29:52 [Music]

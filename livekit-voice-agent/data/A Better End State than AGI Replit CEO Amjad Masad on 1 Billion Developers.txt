@@ -1,0 +1,2166 @@
+00:00 you know um what is special about humans
+00:03 and what's uh replicable in in the
+00:06 machines and at least in the in the near
+00:09 term um my view is that AI is going to
+00:13 get really good at um uh sort of two
+00:18 things that are highly represented in
+00:20 the data and things that you can
+00:23 construct a very good RL environment
+00:25 for. So what what can you construct a
+00:27 great RL environment for? Um like
+00:30 obviously with Alpha Zero games right uh
+00:33 games are famous for you can you can
+00:36 have these self-play sort of algorithms
+00:39 that develop over time. Um now with
+00:41 reasoning models um you know math is an
+00:45 environment that especially with lean uh
+00:48 it's like a code uh almost like an
+00:51 expression of of math that can be
+00:52 executed uh that that's like a great you
+00:56 know RL environment I think code
+00:58 execution as well so running the code
+01:00 and and then you know um doing
+01:03 reinforcement learning on that um and
+01:06 and things that are already represented
+01:08 on GitHub and and things like that. Uh
+01:10 but but there's a lot of other domains
+01:12 where we actually still don't know what
+01:14 we're how we're going to make them
+01:16 better. Like uh new fundamentally new
+01:18 ideas, new knowledge. Um it's not
+01:21 entirely clear how we're going to get
+01:22 there. You can't can you use RL for
+01:25 these like more software things? Perhaps
+01:27 you create a word model. You can
+01:29 approximate these things. But I feel
+01:31 like the sort of the ideas
+01:35 um and the creativity and the sense of
+01:38 like coming up with really novel things
+01:41 and understanding the world world in
+01:43 very complicated intractable way and you
+01:47 know coming up with an idea that could
+01:49 fundamentally change how things work or
+01:50 change the world I think will still have
+01:52 be the domain of the of the human.
+02:12 Hello and welcome to Training Data. I'm
+02:14 David Khan and I'll be the guest host on
+02:15 today's episode interviewing Amrad
+02:17 Masad, the founder and CEO of Replet.
+02:20 Amrad's vision of the future is a world
+02:22 in which a billion people on the
+02:24 internet become developers. And in
+02:26 today's episode, we imagine how these
+02:28 billion developers will reshape the
+02:30 economy, society, culture, and more. A
+02:33 lot of people talk about AGI as a
+02:35 utopian vision of the future where
+02:36 people aren't working and there's
+02:38 universal basic income. But what if
+02:40 there's a different vision of the
+02:41 future? What if people are working,
+02:43 they're working as developers, and they
+02:44 radically change segments of the economy
+02:46 that we never thought we could
+02:48 revolutionize? Things like healthcare,
+02:50 education, industrials, and more. That's
+02:52 the topic of today's episode. Enjoy.
+02:56 I'm Jad. Welcome. Thanks for coming on
+02:58 the podcast. Thank you. My pleasure. You
+03:00 and I have known each other I think five
+03:02 years now and I had the chance to invest
+03:04 in you four years ago at CO2. So I've
+03:06 been able to see the journey. One thing
+03:08 that's been true for you since the first
+03:09 day I met you and I think for maybe a
+03:11 decade even before I met you is you've
+03:13 been talking about this idea of a
+03:15 billion developers coming on the
+03:16 internet which is a bold idea. Maybe
+03:18 it's gotten more consensus as AI has
+03:20 come around. Maybe tell us a little bit
+03:22 about that idea. When did that intuition
+03:24 first hit you and how has that journey
+03:27 evolved? Before we get to that, I
+03:29 remember I actually remember the first
+03:30 time we met. It was in our Bryant office
+03:33 which is actually kind of a home a loft.
+03:36 We're in the basement sitting downstairs
+03:38 and so we worked slash lived in this
+03:40 like really small place in San
+03:41 Francisco. Um and um in terms of uh the
+03:46 billion developers, it's just like you
+03:48 know uh ever since I uh I was a kid, I
+03:51 started programming really early on.
+03:53 Like my first experience with computers
+03:55 was uh when I was 6 years old. Um and
+03:58 like by seven I was trying to make
+03:59 things uh with it. The first program I
+04:02 made was for my younger brother to learn
+04:05 math and I've done such a good job at it
+04:08 that he works at Replet today. Uh so um
+04:13 uh it just always felt like making
+04:15 software is the natural thing to do at a
+04:17 computer on a computer and I was
+04:18 actually surprised that this is the
+04:21 domain of the expert as opposed to this
+04:23 thing that anyone can do. Um and uh you
+04:27 know through thinking about why is that
+04:29 the case uh it just felt like a lot of
+04:32 tools were complicated. Actually they
+04:33 were getting more complicated over time.
+04:35 So if you think when when I was a
+04:37 teenager kind of building a business, it
+04:39 was Visual Basic uh and I can like you
+04:41 know make an app and Visual Basic with
+04:43 database and everything kind of shrink
+04:44 wrap everything into an EXE and and sell
+04:47 it. Um and then the web web came along
+04:50 and it just felt like a lot more
+04:52 complicated. Uh it was more powerful.
+04:54 You can deliver things over the
+04:56 internet. And then the uh complexity
+04:58 didn't stop. Like if you think about a
+05:01 JavaScript application today, um you
+05:04 know there's there's a lot of things you
+05:06 need to do. You need to spend perhaps
+05:07 hours uh if you're new, you might spend
+05:10 days kind of setting up the development
+05:12 environment and learning all these
+05:14 asteric things like you know what is
+05:15 webpack and what is transpolation
+05:18 compilation and all that. Um and it just
+05:21 felt uh kind of worse than when I when I
+05:24 started. Um and there was kind of no
+05:27 reason I I I didn't feel like there was
+05:29 an intrinsic reason for that. there's
+05:30 all these perhaps social phenomena that
+05:33 made it so that programming is uh a lot
+05:37 more complex and one is this
+05:38 decentralized nature of open source when
+05:40 open source took over and it wasn't
+05:43 Microsoft product managers kind of
+05:44 designing how programming should look
+05:46 like but I felt like even then you can
+05:49 you can have you can have the open
+05:51 source ecosystem being this
+05:53 decentralized innovation machine uh but
+05:55 you can h you can create um experiences
+05:59 on On top of that, by mixing the best of
+06:02 the open source to create amazing
+06:05 experiences. Um, in the old language of
+06:07 of open source hackers, there's the
+06:09 cathedral and the bizaar. And the idea
+06:11 of the bizaar is this complicated mess.
+06:13 And this is where, you know, open source
+06:15 software lives. And the and the
+06:16 cathedral is like something like Apple
+06:18 or or Microsoft where where you're
+06:19 designing it top down. Uh, but I was
+06:22 like, well, that's a kind of a false
+06:23 dichotomy. We can build cathedrals from
+06:25 bizaars, right?
+06:28 uh and and and that's been kind of the
+06:30 driving motivation for for replet and I
+06:32 felt like okay if you make programming
+06:34 something that um more people can do by
+06:37 removing this complexity a lot more
+06:39 people would want to use it and the
+06:41 nature of computing changes uh because
+06:44 no longer is there's this big divide
+06:46 between what it means to be a developer
+06:48 and what it means to uh uh to be a user
+06:52 of applications which was the original
+06:54 vision for computing Um, and so this was
+06:57 the drive behind that. And it just, you
+07:01 know, also the opportunities presented
+07:02 by being a programmer is is kind of
+07:04 amazing. And I'm sure we'll get into my
+07:07 story, but like the fact that I was able
+07:08 to make all this money uh when I was a
+07:11 kid, was able to get an 01 visa to get
+07:14 to the US and I felt bad opportunity
+07:16 could be a lot more accessible to
+07:17 people. Maybe take us just to start like
+07:20 take us 10 years into the future or I
+07:21 don't know, you tell me how many years
+07:23 from now it is when there are a billion
+07:24 developers. what does the world look
+07:26 like? How does the economy look? I mean,
+07:28 I think you have this sort of
+07:29 imagination about all the ways that
+07:31 we're going to build software and the
+07:32 ways that businesses are going to be
+07:33 built are different. And to me, it's it
+07:36 is somewhat of a utopian vision of the
+07:38 future. I know tell us a little bit
+07:39 about what that looks like. Yeah, I try
+07:41 not to be too utopian. Uh, but a a few
+07:44 things on that.
+07:46 Um, one is the nature of if if
+07:50 essentially anyone can program and most
+07:53 knowledge workers would want to develop
+07:55 or make make applications or solve
+07:57 problems using um using software and AI.
+08:01 Uh the nature of what it means to be a
+08:03 company kind of changes. uh because if
+08:05 you think about companies today, we have
+08:07 these roles and we have these silos and
+08:09 kind of the way companies are structured
+08:11 are based on the sort of factory
+08:14 pipeline from the sort of industrial
+08:16 revolution. Actually, if you look at
+08:18 society today, a lot of it hasn't really
+08:20 been updated since uh since the
+08:23 industrial revolution. So the main
+08:26 innovation slash sort of work innovation
+08:29 from that era is the pipeline is the
+08:32 idea you know you do this one thing and
+08:33 then you pass you know whatever you're
+08:36 making to the next person eventually
+08:38 there's a car or a toy whatever at the
+08:40 end of the uh at the end of factory
+08:42 chain and you know society is sort of
+08:45 designed but that's like the main design
+08:47 principle that we have and so you look
+08:49 at the school for example you start at
+08:51 like you know kindergarten you go to
+08:52 first grade second And it's like
+08:54 everything is like kind of created like
+08:56 that. And even in companies it's like uh
+08:58 oh you have the you know the you know
+09:02 the product manager you know creating a
+09:05 PRD and then it goes to the designer and
+09:07 then it goes to uh an engineer and then
+09:10 it goes to a release engineer and then
+09:12 the product is out there goes to
+09:14 marketers goes to UX researchers and
+09:16 then uh and so always the silos and the
+09:20 and this pipeline model if you have
+09:23 journalists that can make uh that can
+09:26 make increasingly more complicated
+09:28 things and can use computing to to its
+09:30 true core to solve problems. I think I
+09:33 think you're um you're going to have
+09:36 people in the organization that can
+09:37 solve problem across the board. So if
+09:40 you're someone in sales and you want to
+09:43 uh you want to you have an idea to drive
+09:45 more sales, you might spin up uh sort of
+09:48 like an SDR agent that does this one
+09:49 specific thing that's based on an idea
+09:51 that that you have. There's no there's
+09:53 no this separation. Oh, well, I need to
+09:55 go to my boss to uh to go kind of uh
+10:00 hire someone to do the SDR. You can
+10:02 actually spin up an agent that does that
+10:04 exact thing that you want to do. Um
+10:06 perhaps maybe you're on a customer call
+10:09 and a customer is asking uh how can I do
+10:13 this X Y and Z with your with your
+10:15 product and perhaps your API or SDK. Now
+10:18 traditionally you have to go back to
+10:20 engineering and you have to ask them how
+10:21 to do that and you have to kind of but
+10:23 in this world you can spin up something
+10:25 like replet agent and you can say well
+10:27 yeah prototype this thing for me and
+10:29 show the customer in real time by the
+10:31 way all the stories that I'm saying are
+10:32 real things uh from our customers and so
+10:35 they uh you could think about it as just
+10:37 a a company is a set of uh generalist
+10:41 problem solvers solvers and you see that
+10:44 in startups right we see that in
+10:45 startups but I think that's going to be
+10:47 the pace at scale. Um the other thing is
+10:52 um the way we construct software uh I
+10:55 think will change. So if you think about
+10:58 uh how we construct software um again
+11:03 when you look within one company you see
+11:04 this like sort of fact theory pipeline
+11:06 but you also when you look at uh the
+11:09 economy in general you also see the same
+11:11 sort of separation between different
+11:13 companies and how the products get made.
+11:15 For example, the supply chain, right? Uh
+11:17 in software, we have some sort of supply
+11:19 chain where you have like a, you know,
+11:20 database company and then you have a
+11:23 sort of infrastructure hosting company
+11:24 and then you have a you know whatever
+11:27 front-end uh company that's delivering
+11:29 actually goods and services. Um and and
+11:32 I think uh the going from the industrial
+11:35 age to the network era, I think that the
+11:37 way we construct thing will become more
+11:39 like a like a network. Um and so uh you
+11:43 know you can imagine the way software is
+11:46 constructed is if we have something like
+11:49 uh crypto, bitcoin, um stable coins,
+11:54 things that are able to lets people to
+11:57 transact uh without having to know each
+11:60 other, trust each other. You can imagine
+12:02 software being constructed where I am uh
+12:04 sitting in front of software agents and
+12:06 I'm going to say okay well I need to to
+12:08 create this product uh and the agents is
+12:11 going to be like oh well I'm going to go
+12:12 grab this database from this area this
+12:15 you know thing that sends SMS or email
+12:17 from this area and by the way they're
+12:19 going to cost this much and as an agent
+12:21 they actually have a wallet I'm going to
+12:22 be able to pay for them and when I'm
+12:25 going to publish my software my software
+12:26 is monetized and whenever there's like a
+12:29 dollar that comes in it kind of flows it
+12:31 through the entire network. Um, and so
+12:33 there's this ambient services that I'm
+12:36 that my my software agent is able to
+12:38 compose um without necessarily having
+12:42 any sort of centralized system. And all
+12:43 these services are operated by hackers
+12:45 and people that are making money on the
+12:47 internet. Um and so so I think I think
+12:51 the nature of software itself and the
+12:52 nature of companies and perhaps the
+12:54 nature of the economy would change when
+12:56 everyone can be a generalist uh software
+12:60 and AI agent creator. Yeah. Maybe taking
+13:02 that last point on the economy to its
+13:04 logical extreme macroeconomics itself
+13:06 changes in a in a world where everyone's
+13:08 a developer. You have all these stories.
+13:10 A lot of your users are abroad. They're
+13:11 in other countries. You have users in
+13:14 how many countries do you have guys
+13:15 users in now? Uh every country. China is
+13:18 is is uh is the you know is harder but
+13:21 we have some some users there but
+13:22 basically every other country so how do
+13:24 you think like the global economy
+13:25 changes the way the economy works today
+13:27 the people you're empowering how does
+13:28 this change how these economies work so
+13:31 I I think one concrete thing um I think
+13:33 Petal talked about this paradox of um uh
+13:38 the internet where the internet was
+13:40 supposed to be the great equalizer yet
+13:42 it centralized all the wealth in Silicon
+13:45 Valley and this this one one area. Um,
+13:49 and so why is the case like this this
+13:52 thing that is purely
+13:54 virtual could have been and perhaps
+13:56 should have been uh much more
+13:58 decentralized. Um, and there there are
+14:01 all these things you can say about
+14:03 network effects and and and things like
+14:05 that. But you know ultimately I think
+14:07 that uh part of the problem is yes we
+14:10 think about this technology as
+14:12 accessible but it's not as accessible as
+14:13 we think it is. Um, for example, there's
+14:17 um a university student in India that uh
+14:22 was living in some uh rural area, but he
+14:25 was going to school to study computer
+14:27 science and but didn't have a computer
+14:29 or laptop. He had an Android phone at
+14:31 home. Um and he uh he would go and
+14:35 replet and um start programming and
+14:38 learning how to code on his phone
+14:39 because we have a mobile app. Um and
+14:41 then he started picking up u tasks from
+14:44 our bounties uh platform. So bounties is
+14:47 the ability for people on our platform
+14:50 to provide uh services uh to to to
+14:54 others platform. Thinking behind it is
+14:56 like we have a lot of people with time
+14:58 then we have a lot of people with money
+14:59 and no time. So a lot of people with
+15:01 time and money and it's like obvious
+15:02 trade. Um so a lot of people learn to co
+15:05 platform and they want to earn. So we
+15:06 want to present opportunities for them.
+15:08 Uh and so we we had an entrepreneur here
+15:11 in the US um build actually a technical
+15:14 recruiter uh building a recruiting app
+15:17 but he was running into problems uh and
+15:19 he was able to go on our bounties
+15:21 platform hire this kid and for this kid
+15:24 to kind of fix some of those problems
+15:26 and for this entrepreneur to be able to
+15:28 ship his applications. So and that kid
+15:30 made money made more money than his
+15:32 entire family would make for an entire
+15:34 year. Um and so yes, the opportunities
+15:37 will will get distributed. Obviously,
+15:38 this is more providing labor services,
+15:41 but you can imagine it actually creating
+15:43 a company uh and creating something that
+15:45 could that could be scalable uh and that
+15:48 way uh perhaps uh that this uh massive
+15:53 wealth generation machine that we call
+15:54 the internet will be accessible to more
+15:56 people in the world. Yeah, that's
+15:58 amazing. When I think about your vision,
+15:59 I think it's fundamentally this
+16:01 empowering economic vision. I think it's
+16:03 a vision of wealth. It's a vision of
+16:04 prosperity. It's a vision of giving
+16:07 opportunity to people like and we'll
+16:08 talk about your story, but people like
+16:10 you when you were a kid. Um I'm curious
+16:13 to question to you like what do you
+16:14 think is the macro because you know
+16:16 you're more of a finance uh brain. Like
+16:17 what do you think the macro implications
+16:19 of of everything that we just talked
+16:20 about? I think that if we go down this
+16:21 route of having a billion developers,
+16:23 the question is what are all the sectors
+16:24 of the economy today that are not
+16:26 techified? If you will, they're going to
+16:27 get techified. And so you think about
+16:29 healthcare, you think about education,
+16:30 you think about these enormous
+16:32 percentages of GDP that fundamentally
+16:34 have not been touched by Silicon Valley
+16:36 and touched by Silicon Valley
+16:37 technology. And the thing that I think
+16:40 about is well the barrier to entry was
+16:43 high for these industries. And so in
+16:45 order to build something for these
+16:46 industries, you had to go sell to them.
+16:47 It was difficult. It was tricky. And so
+16:48 what were the lowest barriers to entry?
+16:51 Consumer. You and I can go download
+16:53 Facebook on our phone. And e-commerce.
+16:55 We want to buy things. And it's pretty
+16:56 easy to make money buying things. And so
+16:58 you think about social and e-commerce as
+16:60 sort of the initial engines that kind of
+17:01 got going as the economy was techified.
+17:04 And this is where the you think about
+17:06 the wage rate for a software engineer is
+17:08 being a proxy for how valuable software
+17:09 engineers are. Um and so the wage rate
+17:13 has continued to go up. It's sort of one
+17:14 of these surprising things. You would
+17:16 think that as the more supply of
+17:17 software engineers came into the market,
+17:18 the wage rate would go down. And what
+17:20 that tells you is the value that
+17:22 software engineers drive is actually
+17:23 higher than the wage rate. Mhm. Um, and
+17:26 so I think companies like Replet and as
+17:29 you see this next wave of developers
+17:31 come, you're going to have this
+17:33 incredible prosperity from the value
+17:35 that they're going to go create. The
+17:36 thing that excites me is what are all
+17:38 the sectors of the economy where we can
+17:39 go create this value such that the kid
+17:42 in India who's using replet is going to
+17:43 extract some of that value and create
+17:45 prosperity for his family but also such
+17:47 that the consumer at the under end of
+17:50 that experience call it a healthcare
+17:51 experience call it a government
+17:52 experience whatever it might be is also
+17:55 acrewing value and so we've seen that
+17:57 value creation but to the extent that
+17:60 there's 100 million people I think
+18:01 who've created GitHub accounts today and
+18:03 there's going to be a billion and so you
+18:04 have this incredible will increase. Um I
+18:07 think there's a lot more to come.
+18:09 There's also like a cultural impact,
+18:11 right? Like where uh Silicon Valley, you
+18:14 know, as much as we have this global
+18:15 view of the of the world and we can uh
+18:18 because we have so many immigrants, we
+18:20 can actually relate to to a lot of those
+18:22 people, but there's limits to that. You
+18:23 know, I remember when I was working at
+18:25 Facebook, um, we were redesigning the
+18:27 photos experience on on desktop and, uh,
+18:30 we designed this amazing kind of
+18:32 vertical scrolling experience where
+18:34 everything was scrolling after the, you
+18:35 know, iPhone came out. Um, and everyone
+18:38 was excited about it and then we went
+18:40 and did an AV test and all the metrics
+18:43 tanked. Uh, it's like what is this? Did
+18:45 we create some crappy product that
+18:46 didn't didn't work? And then the UX
+18:49 researchers did did some tests and then
+18:53 nothing came back as not working.
+18:55 Everyone was was happy about the
+18:57 product. Then one product manager
+18:58 actually looked and dug into the metric
+19:00 and found that most like most like you
+19:04 know the majority of Facebook desktop
+19:07 users use it on the on the netbooks or
+19:10 like those um uh those laptops where
+19:14 it's like wider screen and they don't
+19:16 have a lot of vertical space. And that
+19:18 was mind-blowing to me where everyone in
+19:21 as Silicon Valley have these like
+19:23 amazing sort of MacBooks uh and uh and
+19:27 so so their their limit to how much we
+19:29 can relate and I think they the products
+19:31 that we build is often uh not as
+19:34 suitable to these culture and creates
+19:37 this flattening of of the world whereas
+19:39 when you have sort of innovation
+19:41 decentralized I think they're going to
+19:43 be able to create applications that are
+19:45 that are more local that can like
+19:47 benefit benefit their their communities
+19:48 and I think there's less of that today.
+19:50 Yeah. And you've architected your
+19:51 product this way. Maybe you could I
+19:52 think this is like one of the secrets of
+19:54 Replet that people don't fully
+19:55 understand is how do you make a product
+19:57 how do you make a coding product that's
+19:58 actually good on mobile, right? Is is
+19:60 sort of people think of this landscape
+20:01 and there's a lot of hard work that goes
+20:03 into that. How do you make it work on
+20:04 all these devices, right? Maybe talk to
+20:06 us a little bit how you how you've done
+20:07 that. Yeah. Well, initially I mean the
+20:10 the main breakthrough of the uh you know
+20:13 open source project that we become
+20:14 wrapped of the company was that I you
+20:16 know I I was the first to compile a
+20:20 bunch of programming languages to
+20:22 JavaScript to run in the browser. So
+20:24 this technology becomes WM later on. But
+20:26 you know uh I was on the ground floor.
+20:28 It was like a research project by
+20:30 Mozilla. It was called Ncriptton. Um and
+20:34 uh me and my friend were able to compile
+20:36 C Python to JavaScript using using this
+20:39 technology and we contributed a lot to
+20:41 it. We had to create um sort of a Unix
+20:44 emulation layer in the browser. It was
+20:46 like very complicated project. Uh but it
+20:48 captured people's imagination. We put it
+20:50 up on hacker news. it went super viral
+20:52 and uh people got got really excited
+20:54 about it. I remember one highlight at
+20:56 the time was Brendan Ike, the inventor
+20:58 of JavaScript, like tweeting about it. I
+20:60 was like, "Wow, you know, we're like
+21:02 kids in Jordan like building this thing
+21:03 and and people got people, you know,
+21:06 very important people got excited about
+21:07 it." Um, and at the time I thought that
+21:11 was like the the best thing. the the
+21:13 problem is um when I tried to load it on
+21:16 on on phones uh they would crash
+21:19 especially low-end uh like Android
+21:21 phones and uh I even wanted to work on
+21:24 like these Nokia Symbian phones at the
+21:26 time and it's because we were
+21:28 downloading tens of megabytes of of
+21:31 JavaScript. Um so it worked for a lot of
+21:34 people. people are excited about it, but
+21:36 the problem with client side execution
+21:39 is that a lot of people's machines are
+21:41 just not very good. Um and so when we
+21:45 when we went to when I went to uh work
+21:48 at at code academy and maybe I'm
+21:50 skipping a little bit in our story uh uh
+21:53 we we again we wanted more and more
+21:55 people in the world to to learn how to
+21:57 code and we started having users in
+21:58 Africa and other places like that and
+22:00 the computers would not handle tens of
+22:03 megabytes of JavaScript to download and
+22:04 then so I started building the sort of
+22:07 backend execution environment such that
+22:09 when you're what what you're using on
+22:11 your phone is really a thin client And
+22:13 any code you're typing is just going to
+22:14 the server executing and like coming
+22:16 back to to the client. And then the you
+22:19 need to make it so that you hyper
+22:21 optimize the JavaScript application such
+22:23 that it's very small. It does
+22:25 incremental loading. All of that stuff
+22:27 with React right now is really easy. But
+22:29 back in 2011, it was actually quite hard
+22:31 to do. We had to invent a lot of kind of
+22:34 web technologies to kind of make it make
+22:36 it work. Um, and you know, still to this
+22:40 day, like if you go to the app store and
+22:41 download the Raflet app, it's actually
+22:43 one of the smaller apps on the app
+22:45 store, uh, it's less than 100 megabytes,
+22:48 I think, uh, whereas most apps is on or
+22:51 of gigabytes. Um, why do you think that
+22:53 is like the IDE market is one of the I
+22:56 think the last markets to to move to the
+22:59 cloud. And if you talk to a lot of
+23:00 Silicon Valley developers today, they
+23:02 still want, you know, the local thing on
+23:03 their laptop. you know you cannot make
+23:06 me run this thing in the cloud whereas
+23:07 every other piece of software we've used
+23:09 people have eventually given in and you
+23:11 know Google sheets and uh Figma and all
+23:13 these amazing uh cloudnative companies
+23:15 why do you think developers have been
+23:18 kind of the last last market to move to
+23:20 the cloud what is the saying where like
+23:21 the shoe maker is walking around
+23:24 barefoot or something like that there's
+23:26 a at least in Arabic there's the saying
+23:28 where uh you know people who make things
+23:30 for other people are often not
+23:31 satisfying their own needs I think
+23:33 there's some of And I think there's some
+23:36 cultural aspect like you you know you
+23:39 can't really uh you know I can't really
+23:41 pinpoint a real sort of technical
+23:44 problem that can't be solved or can't be
+23:46 mitigated that prevents people from like
+23:48 coding in the cloud. I think a lot of it
+23:50 is cultural. There's this sense of
+23:52 control over the stuff on my machine. Um
+23:55 and you know there's this old kind of
+23:58 joke in programming where progress in
+24:00 programming happens one generation at a
+24:03 time. Uh so you need the old generations
+24:05 to sort of retire. So for the new
+24:07 generation by the way all the folks that
+24:10 are learn to code on on on rap code
+24:12 academy and things like that I think you
+24:14 they're coming into the market now they
+24:16 have no problem with with you know
+24:18 coding on on cloud products. I love
+24:20 that. Another question back to the
+24:22 origin of the company. Did you foresee
+24:24 that we were going to have LLMs and you
+24:26 know sonnet and all these amazing models
+24:28 to actually transform coding back when
+24:31 you started the company originally? So
+24:33 um when I was working on uh at code
+24:36 academy and then I went to work at
+24:37 Facebook uh and before that on on the
+24:40 open source droplet what I was doing is
+24:42 wrangling code. So I was writing
+24:44 compilers, transpilers, parsers um and
+24:48 those things are very fiddly and very
+24:51 complicated uh programs. Um, and it just
+24:55 felt like, you know, it just felt like
+24:59 this this laborious thing that like
+25:01 machines should be better at. It's like,
+25:03 you know, parsing this character and
+25:05 like, you know, putting it in in a node
+25:07 and trying to understand the structure
+25:08 of the program. And I read this paper in
+25:11 in 2012, which I think sort of is an
+25:13 underrated uh paper that should be a
+25:15 legendary sort of on on the order, maybe
+25:17 not on the order, but kind of similar to
+25:19 to attention is all you need. um it's
+25:21 called on the naturalness of software
+25:24 and and and this group they they're
+25:27 making the argument that uh NLP can be
+25:30 applied to to code and they make a
+25:33 statistical argument um about how code
+25:37 kind of um is statistically like natural
+25:40 language there there isn't a lot of
+25:41 daylight between them and so they build
+25:43 an engram model and they use the engram
+25:46 model to uh do uh completion and by the
+25:50 way you scale engram engram models like
+25:52 um engram models were the original
+25:54 language models and uh famously Google
+25:56 did this like trillion parameter engram
+25:59 model that was like pretty good at
+26:00 translating the very very simple simple
+26:03 things that's trying to uh you know
+26:05 predict the next uh character based on
+26:07 frequency y um so uh they constructed
+26:12 that thing and then it was performing
+26:14 well it wasn't performing as well as IDE
+26:17 completions but then they used uh static
+26:21 methods like IDA completions to rank the
+26:24 completions from the uh from the
+26:27 language model and the result was
+26:30 superior and programmers rated as
+26:32 superior and it actually did more
+26:34 completions than this uh static methods
+26:36 on their own or the classical kind of
+26:38 algorithmic methods. So at that point it
+26:41 just felt like okay we're you know
+26:43 that's the future like you know you know
+26:46 deep learning and things like that we're
+26:48 coming on the scene and neural networks
+26:50 and if this very simple thing is able to
+26:55 to to to to have such results I'm sure
+26:58 we're going to have better things and so
+27:00 try to do something like that uh but it
+27:04 didn't it didn't work really well at the
+27:06 time but actually when I pitched uh you
+27:08 know I think the Ced deck it is out
+27:10 there on the internet but one uh one uh
+27:14 one slide in it I try to do like the
+27:16 Elon Musk master plan which everyone
+27:18 does these days but basically it's like
+27:20 you know the Elon Musk master plan which
+27:22 really amazing uh it's like oh we're
+27:24 going to build the roadster it's going
+27:26 to be expensive we're going to use that
+27:27 money to fund you know the next
+27:29 generation and that'll create economies
+27:30 of scale and then so on and they did it
+27:34 uh basically it was like uh we're going
+27:36 to create uh this website for hobbyists
+27:40 learners and teachers and we're going to
+27:41 grow it that way and that way we're
+27:43 going to get a lot of data about how
+27:45 people use and learn programming then
+27:47 we're able to train machine learning
+27:48 models and it's going to be this like AI
+27:50 powered uh you know uh tool and then
+27:54 that would be a tool that's like more
+27:56 powerful than traditional software uh
+27:59 you know tools and therefore would let
+28:02 people come to the side learn how to
+28:04 code make things and deploy them. Um and
+28:06 that was like in 2015. Um and so every
+28:10 year I would try to do something with
+28:12 machine learning and uh the first time
+28:15 that I got a glimpse of something
+28:17 working was
+28:18 GBT2. Um and there was a lot of
+28:20 experiments at the time. uh you know a
+28:22 lot of the early community around GPT
+28:25 kind of had that feeling that okay this
+28:27 is working because you saw GPT1 you saw
+28:29 GPT2 it scale even GPT2 there was like
+28:32 two sets of weights one more parameters
+28:34 you could tell that scaling is working
+28:38 and so when GPT3 came it was amazing it
+28:40 was like you know groundbreaking event
+28:42 for a lot of us it was the chat GPD
+28:44 moment uh because Chad GD was not it was
+28:47 like a UI innovation perhaps some
+28:50 finetuning Uh but it was it was really
+28:53 clear that it was here and it was coming
+28:55 and I started orienting the company to
+28:57 take advantage of that. Do you want to
+28:59 talk to us a bit about replet agent? I
+29:00 mean that feels like a transformative
+29:03 moment in this company and almost like
+29:05 the whole company you got these millions
+29:06 of users you had this community and
+29:08 almost like the whole company was built
+29:10 for this moment. Talk to us a bit about
+29:12 replet agent. Yeah so
+29:14 um every year so we implemented co-pilot
+29:18 like features. were actually the first
+29:20 uh startup to uh train code code models
+29:24 outside of Microsoft and OpenAI and we
+29:26 open source them for a small time there
+29:28 were soda models there were three
+29:29 billion parameters um and and that was
+29:32 really exciting but the the thing that I
+29:34 thought would be transformative is
+29:36 agents uh I actually had a you know
+29:39 thread that went viral at the time in
+29:40 2022 about how software agents will
+29:42 change programming and perhaps the
+29:45 economy um and so uh every every year
+29:48 we're trying I remember we tried it with
+29:51 GBG3. Um the context window wrangling
+29:54 that we had to do was insane. Like we
+29:56 had to um every time we generate like a
+29:59 class or a function or whatever, we'd
+30:01 have to like summarize it like into one
+30:04 sentence and put it back into context to
+30:06 be able to kind of iterate. Uh so that
+30:08 didn't work. uh 2023 you had AutoGPT and
+30:12 things like that come out and you could
+30:14 tell like oh the models are getting
+30:16 better at like you know like being
+30:19 coherent a little longer but it was it
+30:21 wasn't working very well. October 2023 I
+30:25 I I gave a talk
+30:28 uh a TED talk uh and I talked about how
+30:31 how in the future people make software
+30:33 and in it I talked about agents. I kind
+30:36 of predicted uh sort of test time
+30:38 scaling as well where I was saying like
+30:41 um uh you know there's going to be a
+30:43 trade-off between you know cost speed
+30:45 and accuracy and uh sometimes you want
+30:48 to like pour more compute or time into
+30:51 into a task um and you're going to have
+30:54 these plans and the agent will iterate
+30:56 on these plans and and build a software.
+30:58 You're going to be a human in the loop
+30:59 where you're the sort of the creative
+31:00 engine. It was the plan. it was the road
+31:03 map for what we're going to build and 24
+31:05 I think around the time 40 came out um
+31:08 it felt like uh like we're almost there
+31:12 and so I I essentially put the entire
+31:14 company on that and in fact we actually
+31:16 did a layoff uh in in May 2024 partly to
+31:21 to kind of cut burn and focus uh but the
+31:24 other part is like I knew in my bones
+31:27 that that was the way to go and we were
+31:28 doing a lot of other random things that
+31:30 were unimportant Um, so between uh sort
+31:33 of March, the first time I got a demo
+31:37 from someone on the AI team, uh, Zen on
+31:41 our team, he he showed me something and
+31:44 I I could immediately feel like we're
+31:46 we're there. It was like almost like a
+31:48 baby a baby kind of agent. Uh so we
+31:52 spent uh seven, eight months working on
+31:55 it and then
+31:57 um it just felt like we were on this
+32:02 treadmill fixing one bug after the
+32:04 other, you know, trying to make it
+32:05 coherent. Uh the transformative thing
+32:08 that happened is like June 24 when
+32:11 Sonnet 3.5 came out and Sonnet 3.5 had
+32:15 two important properties. Actually, the
+32:18 main property that that people don't
+32:19 really talk about all that much is
+32:21 Sonnet was able to generate
+32:24 uh a uh like thousands of tokens like I
+32:29 think up to 32,000 tokens of code
+32:34 coherence code like so you can it can
+32:36 oneshot a repo almost. Uh whereas with
+32:40 GPT40 when you're doing agents you're
+32:42 writing one function at a time and then
+32:44 testing. If you remember the cognition
+32:46 demo, it's like, oh, they write one
+32:48 thing, they go to the browser, they
+32:50 write one thing, they go to browser. And
+32:51 that was like that was intractable. That
+32:53 was very very expensive. And we thought
+32:54 that's not not going to work. And the
+32:56 thing that sonnet wrote at the time is
+32:58 like writing high quality code and not
+32:60 being lazy about it because the problem
+33:02 with OpenAI's products were lazy. They
+33:05 there's a real problem laziness where
+33:06 it's a it it like you ask it to do
+33:09 something and and and at one point it
+33:12 adds a comment and says the rest of the
+33:13 code here
+33:16 bro I asked you to make that program why
+33:18 are you asking me slash it is like a
+33:21 human
+33:24 yeah and uh so so it was this uh huge
+33:27 unlock and we felt like we're going to
+33:29 be able to ship soon uh you know there's
+33:32 always this tension you know the quality
+33:34 and when do you own a ship? And so we
+33:36 set um we set a deadline for my birthday
+33:39 uh September 5th and and and it was so
+33:42 contentious actually at least one person
+33:44 in the team kind of quit because they
+33:46 thought we're not ready and he was
+33:47 partially right. Um and we launched uh
+33:51 agent and there was a lot of excitement
+33:53 because really it's the first software
+33:55 agent that works on the market uh the
+33:57 very first and and people got really
+33:59 excited because uh oh you can try this
+34:02 thing and you can get a glimpse of the
+34:04 future. Oh this thing can bring it in a
+34:05 database and like provision it for you.
+34:07 It can run a migration. It can like
+34:09 deploy my app. Um but then as it escaped
+34:13 the kind of early adopters uh it was you
+34:16 know a lot of people were disappointed
+34:18 because it was actually kind of
+34:21 crappy and uh so we sprinted between uh
+34:24 September and then uh December we had
+34:27 something we're really proud of and we
+34:28 exited the beta um and although we're
+34:31 we're growing well then we we grew
+34:33 really fast uh from there and people got
+34:35 a lot of value out of it. Now we have
+34:37 version two coming and uh it's rolled
+34:40 out to to some beta users and uh we've
+34:43 done AB tests and it is um it is
+34:47 anywhere depending on the metric we're
+34:49 looking at between 50 and 500% better.
+34:52 Wow. Uh so uh it created 50% better
+34:56 daily retention, 50% conversion, 50%
+34:58 better uh engagement. But the the metric
+35:00 that was really great was um uh new
+35:04 users are twice more likely to deploy an
+35:06 app that they made with agents and um
+35:10 power users are you know five six times
+35:13 more likely to deploy an app uh that
+35:16 they made uh and deployment of replet is
+35:19 very very important because that's one
+35:21 of what makes replet great is that you
+35:23 can go from an idea to a deploy thing
+35:25 and we see uh people who deploy are 10
+35:28 times more likely to retain
+35:30 on on replet. So that metric we we track
+35:32 very well. So now I look at V1, I'm like
+35:34 this crappy thing like we got to we we
+35:37 got to ship V2 as soon as possible and
+35:40 I'm like on the team and so we're
+35:41 starting to roll it out now and it it's
+35:43 it's really really good. Can you give us
+35:45 some of the intuition for how you've
+35:47 gotten it so much better because I
+35:48 imagine it's still Sonnet 3.5 that still
+35:51 seems like the sort of model that
+35:52 everyone likes right now under the hood.
+35:54 like how have you maybe what's the
+35:55 behind the scenes for how the agent
+35:57 actually works and how you've gotten it
+35:58 to be so much better when the base
+35:59 models are very similar. Yeah. So
+36:02 um at the 3.5 sort of era the um uh we
+36:07 had to build this like a fairly
+36:09 complicated multi- aent system and we're
+36:11 talking about langraph earlier where you
+36:14 know there was a state machine component
+36:15 to it. Um, and there's a lot of non AI
+36:21 uh uh state transitions that we're
+36:24 having to make. So that the more you put
+36:27 into the eye, the the worse decisions it
+36:30 often makes and less coherent it is. So,
+36:32 so context window was still very
+36:34 important uh because there are actually
+36:36 studies showing that although you know
+36:38 these models are uh kind of advertising
+36:42 a million tokens actually after
+36:45 something like you know 32,000 tokens
+36:48 reasoning in in a lot of benchmark just
+36:51 like tank like crazy right um and so uh
+36:56 there's a lot of context window
+36:58 wrangling and so we had a manager and it
+36:60 had a different context than the editor
+37:02 than the debugger because we had to kind
+37:05 of um make sure they they're isolated
+37:07 and they have their different memories
+37:09 and and things like that. Um and you
+37:12 know the tooling between all these
+37:14 things had to had to be different. We
+37:16 built our own sort of protocol for the
+37:20 agent to call tools because actually
+37:22 tool calling was not very reliable at
+37:23 the time. It would like hallucinate
+37:25 tools. or hallucinate arguments or so
+37:27 there was a lot of engineering behind it
+37:29 to to make it work when uh computer use
+37:33 uh from anthropic came out so that was
+37:36 3.5 v2 the moment we laid our eyes on it
+37:40 we felt that there's something important
+37:42 that wasn't getting marketed that was uh
+37:45 that was start of a of a of a transition
+37:48 which is they actually it looks like
+37:50 they actually fine-tuned it for long uh
+37:54 for uh long horizon horizon in reasoning
+37:56 because if you want something to do
+37:58 computer use, you're going to have all
+37:59 these images and context and it's going
+38:01 to have to kind of continuously like
+38:04 click on things, reason, think about
+38:06 what to do next, click on the other
+38:07 thing. And so you can actually roll out
+38:11 a long uh chain of tool calls uh
+38:16 without that big of a degradation in in
+38:20 and reasoning. Um and so we started
+38:23 rearchitecting the uh the model of the
+38:26 agent to be uh uh let's call it um less
+38:31 less multi- aent and more single
+38:34 threaded uh because the because the
+38:36 models are getting good at it and that's
+38:38 like a much bigger simplification. It
+38:40 added other challenges, but it's a much
+38:42 bigger subocation over the the existing
+38:45 model. And so kind of the lesson to to
+38:47 learn is that you have to constantly
+38:49 rewrite the systems because you want to
+38:52 make use of the next version of and you
+38:56 want to be able to predict what's coming
+38:57 down the line. When 3.7 came out, uh,
+39:01 you know, cursor had a big problem with
+39:03 integrating it. Everyone hated it on
+39:05 cursor. I think just they just recently
+39:07 fixed it. And the reason is because
+39:09 again 3.7 is more agentic. And so when
+39:12 you try to use it and this composer
+39:14 style request response, it is not very
+39:17 good at that. It's actually worse at
+39:18 that because it's trying to kind of make
+39:20 decisions that but you're not giving it
+39:22 the space to to kind of do this looping.
+39:26 Um and and so and so you there's a
+39:30 really kind of tough lesson for
+39:33 engineering and product teams. If you
+39:35 overoptimize for the present
+39:37 capabilities, you're gonna enter a local
+39:40 uh maxima that is uh quite hard to move
+39:44 out of. There's like an innovator's
+39:45 dilemma problem on the order of months.
+39:48 You know, innovator's dilemma used to be
+39:50 like on the order of decades, right? Uh
+39:52 where you know, a company has an
+39:54 innovation, reaches a certain uh height
+39:57 of success uh based on a product that
+40:00 they made that's people really love. But
+40:02 then there's a disruptive technology and
+40:05 they don't make use of it because it
+40:06 might be destructive for their current
+40:08 business where it cannibalizes their
+40:10 business and so they tend to not pay
+40:13 attention to it and fight it. The
+40:15 classic example is like um Kodak had a
+40:18 digital camera product but they didn't
+40:20 actually launch it because I was going
+40:22 to cannibalize their film business which
+40:23 was the thing that's making the money
+40:25 actually. Um and this kind of thing is
+40:28 happening on the order months which is
+40:30 really hard to wrap your head around.
+40:31 And so the the move fast break things is
+40:34 actually very very important today right
+40:36 more than ever and you you have to have
+40:38 you have to be okay with your with
+40:40 sometimes like delivering crappy
+40:42 experiences. You mentioned cursor. What
+40:44 do you make of the entire lands it feels
+40:46 like the landscape of coding tools has
+40:49 just exploded in the last six months and
+40:52 you know developers are reaching for for
+40:54 new IDs. You know many more people who
+40:56 didn't consider themselves developers
+40:57 before are entering the market. what's
+40:59 your view of the market landscape and
+41:01 how how do you think of as you know the
+41:03 ideal person that chooses replets versus
+41:06 one of these other tools? Yeah, so so I
+41:08 think um there are incremental
+41:12 uh innovations and there are sort of
+41:15 more uh disruptive clean slate uh
+41:19 innovations and I would put replet in
+41:21 the latter category. So um you to you
+41:24 take VS Code and you build an amazing AI
+41:26 experience on top of it. Really cursor
+41:29 is like a fantastic experience. A lot of
+41:31 people on our team use it. Um the the
+41:34 thing is it is by definition
+41:36 incremental. You took a piece of
+41:39 software that you know Microsoft has
+41:41 been building for over a decade and you
+41:43 added this you know much better
+41:45 experience on top of it but you're still
+41:47 you're still kind of it is still
+41:50 literally this additional layer. uh with
+41:53 um with rap agent we actually took a
+41:55 clean slate uh approach to that and I
+41:57 was like okay what do we need to make it
+41:60 that people aren't coding at all uh like
+42:04 you know we we want to kind of drive
+42:05 towards this vision of of no coding not
+42:08 only no coding no DevOps no it like we
+42:12 don't want you to set up a database we
+42:14 don't want you to write migrations like
+42:15 writing migrations is the worst thing
+42:17 ever like you know if people don't talk
+42:20 about this but one of the worst things
+42:21 about building software ware is being
+42:23 able to keep your version control, your
+42:26 database schema and your you know sort
+42:28 of deployment settings and configuration
+42:31 in constant in lock step. Um and most
+42:34 actually most outages when you read the
+42:37 postmortems from Google cloud or AWS
+42:39 it's like a configuration error and
+42:41 usually it's outdated configuration the
+42:43 software changes but they forget an
+42:45 environment variable configuration. Uh
+42:47 and so when you have an agent actually
+42:49 do these things is actually much better
+42:51 at at doing that. And so the system that
+42:54 we built for the agent is this uh sort
+42:57 of transactional lock step system that
+42:60 um does you know uh these transformation
+43:02 one at a time. When you hit revert and
+43:05 replet it actually uh reverts the code
+43:08 but also reverts the database changes um
+43:12 and other environmental thing
+43:14 environment variables things like that.
+43:16 So uh there's all these things that we
+43:19 thought about where uh you as a as a
+43:23 developer coming to replet the thing you
+43:26 have to worry about the most is your
+43:28 ideas. Mhm. you know, you don't have to
+43:31 worry about where do I get object
+43:35 storage and how do I configure my
+43:36 buckets, right? Whereas when you're
+43:39 sitting in cursor, um there's either
+43:42 someone in your company, a backend
+43:44 engineer worrying about these things and
+43:45 you're basically hooking into these APIs
+43:48 or uh you're having to build them from
+43:50 scratch and like it it would help you
+43:52 hit those APIs but you still have to
+43:54 architect the larger system. So I think
+43:56 there's like a fundamental category
+43:58 difference between these things. Uh
+44:01 these products are hooking into existing
+44:03 systems and require a lot of existing
+44:05 support around these systems whereas
+44:07 replet is trying to be the final tool
+44:11 you have to adopt in order to build a
+44:13 piece of software. One thing I've heard
+44:15 from users when I talk to them about
+44:16 replet agent and deploying on replet,
+44:18 one of the things that people love is
+44:20 that you can go straight to deployment
+44:21 and that replet does the whole thing.
+44:23 You start from nothing and you end up
+44:24 with a fully deployed system. Can you
+44:26 talk a little about that? How do you
+44:28 think the deployment space plays into
+44:30 this? You guys in some ways are not
+44:32 comparable to a lot of these other
+44:33 companies in the sense that you can go
+44:35 all the way on replet. How do you think
+44:37 about that last mile? Who cares about
+44:39 that and and how does that play into the
+44:40 long-term vision? Yeah. So, um, in the
+44:43 same way that I can say that cursor
+44:45 helps you with coding, doesn't help you
+44:46 with the other stuff. Versel helps you
+44:48 with hosting, doesn't help you with the
+44:50 other stuff, right? And again it's like
+44:53 this back to the cathedral and the
+44:54 bazaar is sort of like a bazaar and you
+44:56 need to kind of find all these tools and
+44:59 configure them and figure out whereas uh
+45:01 sort of replet I mean another sushi
+45:03 analogy there's alakart and there's
+45:05 alicas replet is alakas we're going to
+45:08 make we think we have great taste and
+45:10 we're going to make the design choices
+45:12 for you and it's not for a lot of people
+45:14 if you want to make all these choices
+45:17 don't come up with I mean there's a lot
+45:18 of other products out there So um I in
+45:22 terms of like the deployment system the
+45:25 uh if you want to reach a billion people
+45:28 eventually like making software at
+45:30 priority uh most of them will not know
+45:34 how to set up a deployment environment
+45:36 and therefore the replet product needs
+45:39 to have a deployment environment
+45:40 basically had that's how we approach
+45:42 product in general you know um in the
+45:45 early days of replet there was always
+45:46 this narrative of um it's students it's
+45:49 young people as people learning how to
+45:50 code. It feels like in recent years
+45:52 that's really changed and maybe AI has
+45:54 enabled that. I was talking to a Netflix
+45:56 engineer who's telling me about how he's
+45:57 using Replet. Paul Graham has obviously
+45:59 always been a big advocate of Replet uh
+46:01 and one of the early believers in the
+46:03 company. How do you think the user
+46:05 persona has changed and how will it
+46:07 continue to evolve over time? How
+46:08 amazing of a visionary is is Paul? Like
+46:10 how can you look at a crappy uh toy like
+46:14 Raplet and just see that oh that this
+46:16 one day could could be really big or the
+46:18 idea that people are leaving uh you know
+46:20 are sleeping on mattresses and other
+46:22 people's homes that's going to be
+46:23 like$100 billion dollar company. Um it's
+46:26 incredible. Yeah, it is it is
+46:27 fascinating. Um in in ter he's also
+46:31 incredibly good human and he's been uh
+46:32 very supportive uh during very difficult
+46:35 times and in the company when when
+46:36 others uh weren't. Um it was frustrating
+46:40 for a long time that like oh Replet is
+46:42 as is a toy a hobby toy students you
+46:45 know kids
+46:46 teenagers on the one hand I was excited
+46:49 by it because like we had a group of
+46:51 users that are willing to experiment
+46:53 that are willing to kind of try to find
+46:55 the future of software the future what
+46:57 we just talked about of you know being
+46:58 able to have a economy built into the
+47:01 software infrastructure and we tried a
+47:03 lot of that and I think it's going to
+47:05 work we still have like the main missing
+47:08 thing was the agent but all these things
+47:10 are going to work and there's this
+47:12 co-evolution that happened with these
+47:14 users that was was very important. The
+47:16 other thing that that perception was
+47:18 important because um sort of competitors
+47:22 weren't paying attention. Uh they looked
+47:24 at rep like oh that's a toy thing why
+47:26 would I pay attention to it? uh a very
+47:29 close uh uh friend of mine and someone
+47:31 who's uh looked up to in the in the ind
+47:34 industry visit us the other day and uh
+47:36 visit you know a lot of our friends um
+47:40 and he he was telling him he was using
+47:42 replet to kind of prototype ideas for a
+47:44 new company and everyone was like well
+47:46 isn't that isn't that like the toy thing
+47:48 that I'm working on was like well no
+47:50 it's very useful for me and I you that's
+47:52 how I'm able to iterate on these ideas
+47:54 very quickly so now yeah the perception
+47:56 is is changing
+47:58 Um and partly look I mean we we took
+48:01 explicit decisions to make the product
+48:04 more premium. Actually what's
+48:06 fascinating now is a product replet is
+48:08 the most expensive product on the
+48:09 market. Uh with cursor composer I think
+48:12 one request is 4 cents with replet one
+48:15 request is 25 cents. Uh and the reason
+48:19 we did that is like we just we really
+48:20 want to build an agent. We don't want to
+48:22 build codegen tool. And if you want to
+48:25 build an agent, it's going to be
+48:26 expensive. It's gonna iterate and and um
+48:30 it's going to call a bunch of tools with
+48:32 every request. Um and so uh it did
+48:36 alienate some some users and that partly
+48:40 uh also shifted the perception and and
+48:42 kind of more professionals uh got on
+48:44 board. But if we're going to reach a
+48:46 billion people, we need to we need to go
+48:49 down market again. But I think you know
+48:52 I think we started in one end and now
+48:54 we're starting in another end. Uh and
+48:56 we'll meet in the middle I guess at some
+48:58 point. But I guess that replet is the
+49:00 sort of the more roadster now and as we
+49:03 drive cost down by you know perhaps
+49:06 using more open source models and and
+49:09 things like that it's going to become
+49:10 more and more accessible to people. What
+49:12 do you think of vibes coding? I don't
+49:15 really like this term. I think you you
+49:16 shouldn't fight it because uh I actually
+49:20 didn't like Gen AI either. It's just I
+49:24 don't know. Same. Yeah.
+49:27 I don't know. It just like cheapens the
+49:30 possibilities. Yeah. It's just like oh
+49:32 this thing that generates things.
+49:35 Well, actually you can build agents and
+49:37 not just generate things. It can
+49:39 actually reason.
+49:41 Um and vibe coding is
+49:44 um makes sense if you're sort of
+49:47 starting from a position of coder and
+49:49 you're Andre Karpathy and you don't want
+49:52 to kind of worry too much about the code
+49:53 and you keep hitting enter whatever but
+49:56 if you're if you're starting with
+49:57 rockload you're actually not starting
+49:58 from a position of code you're starting
+50:00 from um an idea you're starting from an
+50:04 idea that you're iterating on and uh and
+50:07 then you go in and the agent is
+50:09 unfolding this code in front of you. You
+50:11 actually when you're using replication,
+50:13 you don't have uh the luxury to to to
+50:18 look at the code. So, so uh now we have
+50:20 another product called assistant and
+50:22 assistant is for more advanced people
+50:24 and that you can do more bite coding
+50:26 there because it's like request response
+50:28 and you can like kind of review the code
+50:30 and and do all of that.
+50:34 Um, if I were to explain rapid, it's
+50:36 just vibe. Like don't code vibe. Not
+50:40 vibe coding, just vibe. You've always
+50:42 been a bit of a contrarian. One idea
+50:43 that's very popular now in Silicon
+50:45 Valley is AGI. There's this idea there's
+50:47 going to be no software engineers. And
+50:48 you sort of have the opposite view.
+50:49 There's going to be a billion software
+50:50 engineers. Talk to how do you think
+50:52 about AGI? What is AGI in your view? And
+50:55 uh, how do you what do what would you
+50:56 say to all the people who say I talked
+50:58 to a lot of software engineers and
+50:59 they're like, well, I'm not going to
+50:60 have a job. I'm worried about not having
+51:01 a job. I'm worried about no one's going
+51:03 to have a job. We're all just going to
+51:04 be on universal basic income and all
+51:06 this stuff. Like Replet is in some ways
+51:08 the opposite vision, right, of like
+51:10 we're actually all going to have jobs.
+51:11 They're just going to be very powerful
+51:12 and we're going to be able to do all
+51:13 these amazing things. I I think it's
+51:16 like a fundamental is philosophical
+51:18 difference. uh like what you know um
+51:23 what is special about humans and what's
+51:25 uh replicable in in the machines and at
+51:28 least in the in the near term um my view
+51:32 is that AI is going to get really good
+51:36 at um uh sort of two things that are
+51:40 highly represented in the data and
+51:43 things that you can construct a very
+51:45 good RL environment for. So what what
+51:48 can you construct a great RL environment
+51:49 for? Um like obviously with Alpha Zero
+51:53 games, right? Uh games are famous for
+51:56 you can you can have these self-play
+51:59 sort of algorithms that develop over
+52:01 time. Um now with reasoning models um
+52:04 you know math is an environment that
+52:07 especially with lean uh it's like a code
+52:10 uh almost like an expression of of math
+52:13 that can be executed. uh that that's
+52:15 like a great you know RL environment I
+52:18 think code execution as well so running
+52:21 the code and and then you know um doing
+52:24 reinforcement learning on that um and
+52:27 and things that are already represented
+52:29 on GitHub and and things like that. Uh
+52:31 but but there's a lot of other domains
+52:33 where we actually still don't know what
+52:35 we're how we're going to make them
+52:37 better like uh new fundamentally new
+52:39 ideas, new knowledge. um it's not
+52:42 entirely clear how we're going to get
+52:44 there. you can can you use RL for these
+52:46 like more software things perhaps you
+52:48 create a word model you can approximate
+52:51 these things but I feel like the sort of
+52:54 the ideas
+52:56 um and the creativity and the sense of
+52:59 like coming up with really novel things
+53:02 and understanding the world world in
+53:04 very complicated interactable way and
+53:08 you know coming up with an idea that
+53:09 could fundamentally change how things
+53:11 work or change the world I think will
+53:13 still have be the domain of the of the
+53:15 human and AGI will have AGI but it would
+53:18 be a functional AGI meaning it would do
+53:21 the jobs that h a lot of humans are
+53:24 doing today by virtue of the training
+53:26 data being available and by virtue of
+53:28 some of these jobs having like ground
+53:30 truth that you can uh you can train on
+53:33 uh and the reason I call it functional
+53:34 AGI is because it's fundamentally not
+53:37 general in that you can throw it in a uh
+53:40 super novel environment and for it to uh
+53:44 efficiently learn uh things especially
+53:48 when they're you know when there's not
+53:51 explicit feedback um and be able to uh
+53:56 to be successful in that environment
+53:58 which uh which which you know the
+54:00 definition of the universal AI uh which
+54:04 it doesn't feel like we're trending that
+54:05 way but I do think that you can reach
+54:07 something u so the definition of AGI at
+54:10 a lot of these companies is doing
+54:12 economic ically useful activities in
+54:13 front of a computer, right? I mean, they
+54:16 it's like a remote worker is what AGI I
+54:18 feel like we're going to get there. Uh
+54:20 but um if I have a remote worker, I'm
+54:23 going to like create a 100 remote
+54:25 workers and implement all my ideas.
+54:27 Yeah. And and I still it's a tool. It's
+54:29 useful for me. Is it going to replace
+54:31 me? Well, if I am like a code monkey,
+54:34 it's going to replace me. But if I see
+54:37 my place in the world as as someone who
+54:40 can generate ideas and create products
+54:42 and services because I understand what
+54:45 people want and how how the economy
+54:48 works and all of that. I think I think
+54:49 that's still irreplaceable. I want to
+54:51 talk to you a little bit about your life
+54:52 story. You touched on coming to the US,
+54:55 the O1 visa, growing up in Jordan. And
+54:57 maybe start at the beginning for people
+54:58 who don't know your story because it's a
+54:60 really inspiring story and in some ways
+55:02 your whole life has built up to Replet.
+55:05 It's not just a company. I mean your
+55:06 wife works at the company, your cousin
+55:08 works at the like this is like your
+55:09 whole life and your whole mission all
+55:11 in. Bring us to the beginning like how
+55:13 did how did this all come together? How
+55:15 did you get to the US? How did you get
+55:16 into Silicon Valley? Yeah. Yeah. So my
+55:19 one of my first memories um just as a as
+55:22 a child I don't know if you remember
+55:24 your first memory but I remember very
+55:26 vividly that my father uh kind of
+55:29 getting this this machine and like
+55:31 opening this this box and like putting
+55:34 it together and I was fascinated by it
+55:36 even before I knew what it does. And I I
+55:40 walk walk over him and I kind of look
+55:42 over his shoulder, him sitting at the
+55:45 keyboard and sort of uh finger uh sort
+55:49 of typing. He had like a big manual like
+55:53 you know you throw it at someone it
+55:55 could really hurt them. and he would he
+55:57 was reading into it but one by one and
+55:59 he was like finger typing um cd mkdir
+56:04 you know these dos commands and um and I
+56:07 remember feeling that it just wow this
+56:11 is like uh this is a machine that you
+56:14 can talk to like you know what is a doss
+56:17 it is like a rappel you know this is
+56:19 where uh the rapid name comes from read
+56:21 val print loop like you can uh have a
+56:25 essentially a conversation with this
+56:27 machine. Uh so my father would like go
+56:29 and like attend uh classes to learn uh
+56:34 computer computers and he would like you
+56:36 know every night he would come in with
+56:38 all these notebooks. Uh he's like such a
+56:41 such a big nerd. Um
+56:43 the apple doesn't fall far from the
+56:45 tree. I I'm different than my father. Um
+56:49 uh so my father is a Palestinian
+56:51 refugee. grew up uh with like this u
+56:55 intense focus on education. Like if
+56:57 we're going to make it, we're going to
+56:59 we're going to have to be like the best
+57:01 educated. We're going to have to be like
+57:03 better than anyone else. We're going to
+57:04 so is like a a students and working
+57:07 really hard. Um my mom is sort of the uh
+57:11 the opposite. My mom is like a sort of a
+57:13 free spirit. Uh she was a um into
+57:18 poetry. She taught me a lot of poetry uh
+57:21 when I was a kid and I was actually able
+57:23 to um it was like there's an art to
+57:27 telling um Arabic poetry uh and uh and
+57:31 so I was this mix of two things because
+57:34 I can be very intuitive. I can be uh I
+57:37 can go uh on purely in intuition and and
+57:40 take a lot of risk based on some kind of
+57:42 idea or vision or something that I that
+57:44 I feel feel good about. And I also have
+57:46 this like very analytical mind and I can
+57:50 sit and be be such a uh you know uh pain
+57:54 in the butt about about being so
+57:56 rigorous about certain things and that's
+57:57 that's really my father's uh inspiration
+57:60 and and so um you know you know one day
+58:03 my father comes home and I I'm sitting
+58:05 in front of the computer and he was he
+58:07 was mad. He put all his savings into
+58:10 this machine and and
+58:12 and I was like, you know, opened the
+58:15 computer apart, uh took the parts out,
+58:18 put them back in, and I was like, "No,
+58:20 don't get angry. I know exactly how to
+58:22 use it. I know exactly how it works."
+58:24 And I I showed him how to use it. I
+58:27 showed him essentially how to create
+58:29 things, how to open applications that
+58:31 he's been studying all this time. And he
+58:33 was like, "Okay, this is fascinating."
+58:35 You know, all right, it's yours.
+58:38 And the first uh program that I wrote, I
+58:41 think I mentioned it earlier, was to uh
+58:43 teach my younger brother uh math. And
+58:45 and I I thought, okay, I can use this uh
+58:48 this thing, this conversational machine,
+58:50 which I still think about it that way
+58:52 obviously with AI that that really
+58:54 happened. Yeah. And this idea that you
+58:56 can sit in front of it, learn something,
+58:58 play games, do something fun. Um and so
+59:02 uh that was the first program that I
+59:04 built. And then um when I was a
+59:07 teenager, I was really obsessed in um
+59:10 Counter-Strike. So I would go to these
+59:12 internet and land gaming cafes and I
+59:15 would like, you know, whatever money
+59:18 scraps of money I have, I would like put
+59:20 it in into that and just play play a lot
+59:22 of Counter Strike and and strategy games
+59:25 and things like that. I got very good at
+59:27 them to the point that it was like a
+59:29 source of income. I was actually winning
+59:30 tournaments and and things like that. uh
+59:34 you got into esports uh early on. So
+59:36 that's like another branch of my life.
+59:38 But um one of those one of the things I
+59:41 noticed uh about um uh uh about those
+59:45 businesses is they were running on pen
+59:47 and paper. I'm like you have all these
+59:48 computers you can just write software
+59:50 for it. So I did write this like client
+59:52 service software that did accounting
+59:54 that uh gave people you know accounts
+59:56 and user username and password and
+59:59 manage their their their time on the
+60:01 system and their um and also did
+60:04 security so that people can't format
+60:06 their computers or do you know install
+60:08 malware and started selling that uh and
+60:11 made a lot of money on that. I sold it
+60:14 to a lot of uh businesses uh in Jordan.
+60:17 Um, by the time I got I got to college,
+60:19 I had this idea that, you know, AI is
+60:22 gonna get so good, you know, we're not
+60:24 gonna have to write write software. Um,
+60:26 it just felt like um software is this
+60:28 like pedestrian thing that that that you
+60:31 do. It's like not that interesting. It's
+60:34 just like you just do it to like make
+60:36 things. And at the time like these these
+60:38 wizards of code generations were coming
+60:40 out from Microsoft. So when I went to
+60:42 school, I actually studied um more on
+60:45 the electrical engineering side,
+60:47 especially because my father thought
+60:49 that computer science was not a real
+60:51 field because the engineering
+60:54 association of Jordan would not admit
+60:56 you into the as an engineer if you don't
+60:59 have like uh you know electrical
+61:01 engineering. Uh and by the way, my
+61:03 father is the vice president of this
+61:04 organization. I didn't know that. I
+61:06 learned something new. He really loves
+61:08 that uh engineering organization. So but
+61:11 but throughout my college experience I
+61:13 got I got really into programming
+61:14 languages. I started reading Paul Graham
+61:16 started reading hacker news. Paul
+61:17 program wrote a lot on on lisp. He
+61:20 actually has a book called on lisp. Uh
+61:22 and pgram's view of programming
+61:26 languages is more of an art rather than
+61:29 than a science. Like these artifacts are
+61:32 aesthetic artifacts and not just
+61:35 functional artifacts. And that also
+61:37 played into the reason to create replet
+61:41 because I wanted to try all these
+61:42 programming languages and there wasn't a
+61:44 place on the internet internet to be
+61:45 able to try all these programming
+61:47 languages and you know uh after I
+61:50 created replet that breakthrough that I
+61:51 talked about earlier it went viral in
+61:54 the US a bunch of um tech companies
+61:56 started adopting it if you remember 2010
+61:59 111 there was the MOO kind of hype you
+62:02 know we have AI hype now there's a like
+62:04 blip period where there's like to
+62:06 massive online courses, right? Udacity
+62:09 came out at that period. Corsera came
+62:11 out, Code Academy. Uh, and I got a bunch
+62:14 of um, they all started using Replet, by
+62:16 the way, and I got a bunch of offers. I
+62:19 eventually decided to uh, come to the
+62:21 US, got an 01 visa, uh, because a lot of
+62:24 my work was published in the news and
+62:25 everywhere else. And so it was it was it
+62:28 was possible to get an 01 visa. Landed
+62:30 in New York early 2011.
+62:33 uh the only money that I had was uh
+62:37 taken from me at the airport and the
+62:39 reason is in the uh airport in Aman uh I
+62:44 I had like perhaps $700. Those are the
+62:46 money that I'm going to the US with. And
+62:50 the uh folks at the airport did not know
+62:52 what a no one visa is. apparently like
+62:55 no one in Jordan had ever gotten no one
+62:57 visa to get to the US and they didn't
+62:59 think it was like a um a resident visa.
+63:03 They thought it was like a visitor visa
+63:05 and that I needed a ticket back and I
+63:08 was like no it's like I can go there I
+63:10 can work it's a work visa and they
+63:11 didn't believe me. I was like go look it
+63:13 up on the internet. They didn't believe
+63:14 me and they made me buy a ticket back
+63:16 and that was something like 500 $600. So
+63:19 I arrived there with like about a
+63:20 hundred
+63:21 bucks and my salary was $80,000 70 or
+63:25 $80,000 in in New York City. That's
+63:27 pretty big. Yeah. Well, not in New York
+63:29 City when your rent is like $2,000. I
+63:32 think at some point you had um someone
+63:34 offered to buy the company for a lot of
+63:36 money. How did you decide to turn that
+63:37 down? That seems like that was a pretty
+63:38 big decision coming from this
+63:39 background. You grew up, you made it to
+63:41 the US, you got this job, then you have
+63:43 an offer to buy your company for
+63:45 life-changing amount of money. Insane
+63:47 amount of money. We were like six people
+63:48 at the time and you know the numbers
+63:51 that were thrown around is between 500
+63:53 million to a billion uh dollars. We're
+63:55 six people. Um and so it would have made
+63:58 me uh insanely rich, right? Um so
+64:03 uh and it was a tough time. My
+64:07 uh I wasn't really happy about the
+64:09 culture then like we grew to six, seven
+64:11 people or something like that from from
+64:13 the three that our family essentially.
+64:16 And um we hired people that I didn't
+64:18 like very much and and the culture was
+64:20 changing and and I kind of wanted to do
+64:22 a reset. Um and um at the same time uh
+64:27 my mom was diagnosed with with cancer
+64:31 back in Jordan and I had to go back the
+64:33 entire family had to go back which is
+64:35 half the team. Wow.
+64:36 um to spend time with with my mother.
+64:39 And it was very stressful time. And um
+64:43 and um the thing that
+64:46 uh made me which is like the absolute
+64:49 rational thing to do is stick the money,
+64:52 go home and and and um you know live I
+64:56 guess happily ever after or something.
+64:59 But um I felt two things. Uh one is
+65:06 my dreams, right? I I've had the dream
+65:08 of being in Silicon Valley for so long.
+65:11 Like the first time I knew about Silicon
+65:12 Valley is through a lowbudget movie
+65:15 called the the Pirates of Silicon Valley
+65:17 where it's the dramatized fight between
+65:21 Steve Jobs and uh and Bill Gates. And I
+65:24 was like, "Wow, this Silicon Valley
+65:26 place is like there must be like flying
+65:28 cars and like really you like mass
+65:31 advanced technology." of course you come
+65:33 here and it's like it's like the
+65:34 suburbs. Um but but I always wanted to
+65:38 be here. I thought the innovation I was
+65:39 really I was reading about all these
+65:42 entrepreneurs and I I I felt like this
+65:45 is the most important thing and those
+65:46 people are heroes. Um and I felt like
+65:50 the weight of Silicon Valley also on my
+65:52 shoulders because um Paul Graham, you
+65:56 know, Mark Andre and other people that I
+65:58 really respect uh invested in the
+66:00 company and like they all have like very
+66:03 high hopes for it and and and they
+66:05 they're all really excited about it and
+66:08 um and I felt like I don't want to let
+66:10 people down. Uh, and I felt like if I
+66:13 sold the company, it would have be it
+66:15 wouldn't be I wouldn't have achieved the
+66:17 potential of it and
+66:20 um and and maybe I would regret it in
+66:22 the future. And um and it's like, okay,
+66:27 being rich is is good. You know, I think
+66:29 I think money is actually great and and
+66:32 improves your lives in many ways. Allows
+66:34 you to focus on on the things you love.
+66:37 Um but you know, what are you going to
+66:40 be? you're going to be
+66:41 another, you know, rich Silicon Valley
+66:43 dude. And there's a lot of them, you
+66:45 know, going to like write invest do
+66:48 angel investing. It was like your life
+66:49 is kind of a little boring and and you
+66:51 you never kind of want to take the pain
+66:53 again unless you're El Musk to kind of
+66:55 like go start a start another company
+66:57 and put your life's force and energy
+66:59 into it. And so for all these reasons,
+67:02 uh we decided to to turn it down. Now
+67:05 you have 40 million users. Yes. and and
+67:09 uh you know we achieved the valuation
+67:11 over the uh what were we going to sold
+67:13 for and I think the company is actually
+67:14 underpriced now it's a lot of grit to
+67:17 get here from six people I want to talk
+67:19 a bit about your management style you
+67:20 have a unique management style I
+67:21 remember seeing one time on the internet
+67:23 you you said like I'm now the VP of
+67:24 engineering of replet I feel like over
+67:26 the years there's always been you're a
+67:28 hands-on leader your leadership style
+67:30 maybe has become more popular but it
+67:32 wasn't it wasn't popular six seven years
+67:34 ago when you were doing this like how
+67:36 did you develop your leader ersship
+67:37 style. What advice do you have for
+67:38 founders as they think about running
+67:40 their companies? In some way, it's a
+67:41 deficiency. You know, uh Jensen now
+67:43 talks uh talks a lot about uh him not
+67:46 being sort of a great manager and him
+67:48 having all these reports and only uh you
+67:50 know, talking to everyone in these big
+67:52 meetings and and being, you know, giving
+67:55 feedback publicly, not not really doing
+67:57 performance reviews in the traditional
+67:58 way and and all of that. Um and in some
+68:02 way I would say it is a perhaps lack of
+68:06 skill in terms of like how to do
+68:08 traditional management. Um the
+68:11 management style that I have is similar
+68:13 to like how I would like lead a open
+68:17 source project or how I would lead uh a
+68:21 sports team back home. I've always been
+68:23 a leader uh and I've always been a sort
+68:26 of a hands-on leader where it is this
+68:30 duality of uh micromanaging and trusting
+68:35 people like it is actually not at odds
+68:39 to to do these things and the most
+68:41 inspiring leaders both can go dig into
+68:43 the details and give very precise
+68:46 direction but then like really trust
+68:48 people to deliver on those things and
+68:50 also trust people to have their own
+68:52 innovation, their own ideas. Um the way
+68:54 I managed the company from the start is
+68:56 I had a um a text file inside rapid. I
+69:00 used it as a sort of a notebook. Um and
+69:02 the text file had everyone's names and
+69:05 the one thing that I think they should
+69:06 be working on or the one thing that I
+69:08 expect them to deliver on. And every
+69:10 week when I meet everyone, we would go
+69:12 around the table and I would tell them
+69:14 did you do this thing? Uh and it's
+69:16 either yes or no or something there go
+69:20 right or or something like that. And
+69:21 then the other question, what are you
+69:23 going to do next week? Uh, and so it's
+69:25 like, okay, they did that last week or
+69:27 they didn't do it. Why did they fail?
+69:29 What happened? And here's what you do uh
+69:32 what they're going to do the next week.
+69:33 By the way, my exacts still write that.
+69:35 Everyone in the company, every week on
+69:38 Friday, they write, "Here's what I got
+69:40 done this week. Here's what I'm planning
+69:42 to do next week." And so uh and so I can
+69:47 still keep in my head what most of the
+69:50 company can do uh or is working on. Like
+69:54 I can walk around and tell you this this
+69:56 guy's working this this this person is
+69:58 working on this. Um so partly is I can
+70:01 keep a lot of complexity in my head and
+70:02 I can like really be able to kind of um
+70:06 make these um these you know very deep
+70:09 decision about how like a sort of one
+70:13 button should work uh inside the product
+70:16 or or how uh certain marketing ideas we
+70:20 should we should run and and so I can go
+70:22 between all these different departments
+70:24 and and and be able to go all in into
+70:27 the details s and then kind of zoom zoom
+70:30 back out. Um, and also, you know, uh,
+70:34 just having really high expectations. If
+70:36 someone if week over week that person
+70:38 who said they were going to get that
+70:40 thing done and they they couldn't, it's
+70:42 like an obvious reason to let them go,
+70:45 it's like not that complicated. And so,
+70:48 Replet has an high attrition rate,
+70:50 especially in the first few months of
+70:52 people joining.
+70:54 um 20 30% of people are going to either
+70:57 leave or get let go because they're not
+71:00 able to keep pace of the environment or
+71:03 they get confused about how to work in
+71:05 that kind of environment. The other
+71:06 thing I think that's unique about your
+71:08 culture, I remember I attended some all
+71:10 team dinner at an all you can eat
+71:12 barbecue restaurant. I don't know if you
+71:13 remember this. And there's all these
+71:14 young people around the table and some
+71:16 of them didn't even go to college,
+71:18 graduate college. I mean, you seem to
+71:20 recruit for raw talent. Yes. And that's
+71:22 something that a lot of people talk
+71:23 about doing, they want to do, but it's
+71:25 hard to do. How do you do that? How do
+71:27 you filter people? How do you find these
+71:29 people? Um, how do you give them leeway?
+71:31 How do you train them? Talk to us a
+71:33 little bit about how that how that
+71:35 happens. Yeah. First of all, I am uh uh
+71:38 you need to be able to work with weirdos
+71:40 and misfits. Um, and I was able to do
+71:45 that whether it's instinctively or
+71:47 whether I relate to them being sort of
+71:49 myself a weirdo and misfit. Um and uh
+71:54 and I can see talents certain people
+71:55 like even back in in my college years
+71:58 like finding those people that like have
+71:60 hidden talents and being able to harness
+72:01 it somehow. I have this feeling of like
+72:05 um if if someone has a talent that is
+72:07 not being put to good use, I feel like a
+72:10 sense of waste and like you know this
+72:12 this needs to be harnessed uh somehow
+72:15 and I think that's sort of a good
+72:17 management skill. Um but uh in terms of
+72:22 so so first of all you shouldn't have
+72:24 allergy towards these people uh I
+72:26 remember uh my wife and co-founder Haya
+72:30 when we hired Mason he was like
+72:32 18-year-old kid he um he was you know I
+72:36 joke that he's a runaway kid from from
+72:38 Santa Cruz which is partly true he left
+72:40 Santa Cruz uh in high school he wasn't
+72:43 happy he wasn't happy with his family
+72:44 with the school he went up to the city
+72:46 he went to um one of those boot camps uh
+72:52 those boot camps were using were using
+72:54 replet all of them and one of them was
+72:56 sending me bug bug reports I'm like look
+72:58 I don't have a lot of people who work on
+72:59 this why don't you send me your best
+73:00 engineers it's like look I'm going to
+73:02 send you this kid he's really awkward
+73:03 but he's one of our best so he came in
+73:06 and I remember ha one day was like oh
+73:08 this kid like doesn't doesn't open the
+73:11 door doesn't keep the door open behind
+73:12 him he like literally slams the door on
+73:14 me he's like well he's not really
+73:16 thinking about you he's like thinking
+73:17 back code as he's walking around. Right?
+73:20 So, uh and still to this day, uh I see
+73:23 people doing that. But,
+73:25 um the first thing is most people I
+73:29 think just reject these people outright
+73:31 when they can't communicate with them or
+73:33 they can't uh relate to them. Um and
+73:36 then the other thing like uh you know,
+73:39 they're going to spike on certain things
+73:41 and then they're going to be not great
+73:43 at at some other things, right? And so
+73:46 uh but you know you can construct a team
+73:50 where it all fits together. Uh where the
+73:53 the peaks uh of of someone is the values
+73:56 of someone else, right? uh someone is
+73:58 really good at, you know, shipping
+74:02 thousands of lines of code and someone
+74:04 else is really good at testing it and
+74:06 very methodical about code reviews. And
+74:08 you know, if you have one who's like a
+74:10 cowboy slinging code and another is like
+74:12 a little more careful uh and like
+74:14 meticulous and rigorous and perhaps a
+74:16 little annoying of of how good how
+74:18 meticulous they are, put these two
+74:20 things together, there's a lot of
+74:21 tension, but at the end of the day, you
+74:23 get you get a good good product. So you
+74:26 want to balance the team uh in a way um
+74:31 and uh you you want to go to to hire
+74:34 from places that uh other people aren't
+74:36 going to and you know that's that gives
+74:39 you an advantage because everyone's
+74:40 competing over the existing talents uh
+74:43 on the market. So for us a lot of it was
+74:46 go going to replet. A lot of it was
+74:48 running hackathons or running uh sort of
+74:50 prizes on replet and uh and you know
+74:54 some kids win and we fly them out to to
+74:56 SF to work with us and you know we've
+74:59 had anywhere from 16 17 18 21 years old
+75:03 uh you know join the team and even on
+75:06 the older side um uh people who haven't
+75:09 had uh traditional jobs before or were
+75:12 ND game hackers that that joined the
+75:15 team Um so yeah I mean it's it's a sort
+75:18 of a diversity of sources. If I am
+75:20 starting a company today I would try to
+75:22 like find
+75:24 um niche communities. Uh this is where
+75:28 you'll find like some really underrated
+75:30 uh talent whether it's a niche community
+75:32 around a niche crypto project or a niche
+75:35 um program language. Um that's where I
+75:39 would look first. You mentioned your
+75:41 wife Haya a couple times. Uh what's it
+75:43 been like building a company with your
+75:44 wife? Um depends on the day.
+75:49 Uh we um we've worked together uh you
+75:54 know we met at work uh back in Jordan.
+75:57 We were working at this uh company where
+75:60 recruited um actually a foreigner came
+76:03 to Jordan as part of a job from Belgium
+76:06 and he decided that he loved Jordan a
+76:08 lot. He loved the desert and he wanted
+76:10 to build a company there. So I was the
+76:12 first employee there and Haya was the
+76:14 second. She was a designer. I was an
+76:15 engineer and he pitched us on this idea.
+76:18 We're going to do
+76:19 consulting and then we're going to build
+76:21 a product on the on the side and that
+76:22 and then we're going to become a product
+76:24 company. By the way, every company that
+76:25 has his idea never becomes a product
+76:27 company. I'm sure you've seen some of
+76:28 them. Um and so uh the company was very
+76:32 dysfunctional. He was nonpresent. And so
+76:34 it was like the inmates were running the
+76:36 asylum. Uh so I and I ended up like
+76:38 working on a lot of projects together
+76:40 just just for fun. And um and um and
+76:44 then we we started dating, which dating
+76:46 in Jordan is not real dating. You like
+76:48 go out for a cup of coffee. She had like
+76:50 a 7 700 p.m. curfew. And so and so um
+76:56 and then by the time I started working
+76:59 on on the open source uh replet, she
+77:01 actually contributed the um the logo and
+77:04 a few other designs. She helped with a
+77:06 few other things. And then when uh I got
+77:09 the um uh visa to come to the US um we
+77:13 we got married and very young. I was
+77:15 like 24 at the time. Um and then she she
+77:19 joined me in the US. We continued
+77:20 working on projects uh the whole time.
+77:23 We worked on art projects, worked on
+77:25 games, all these other things. Um, and
+77:28 then when the time came to to start the
+77:31 company, uh, I was kind of like looking
+77:33 for co-founders, uh, because I'm like,
+77:35 "Oh, yeah, YC says that you you need to
+77:38 have co-founders and I guess it's like
+77:40 best to have co-founders." And I was
+77:42 like going in these co-founder dates and
+77:44 trying to meet people and all of that.
+77:46 And then she was like, "Well, I can, you
+77:48 know, I can I can start the company with
+77:50 you." I was like, "It's going to be
+77:52 really painful. Like, it's really,
+77:54 really painful. Like, are you sure you
+77:55 want to go through that?" And she's
+77:57 like, "Yeah, yeah, of course." Like, "I
+77:59 saw you, you know, with Code Academy and
+78:00 like, you know, I can do that." Uh,
+78:03 three or four months later, she's like,
+78:05 "I underestimated how hard this thing
+78:08 is." But uh she she obviously lived up
+78:10 to the to the challenge and I think
+78:12 overall it um it uh strengthened our
+78:18 relationship because when I was at code
+78:20 academy and I was you know working you
+78:22 know uh 12hour 14-hour days she she
+78:27 didn't really relate like what kind of
+78:28 job requires that kind of commitment and
+78:31 then with replet we were both doing
+78:33 that. So, it's not like, you know, your
+78:35 your partner is going off in the
+78:37 morning, not returning until midnight on
+78:39 the weekend. They're they're wasted and
+78:42 they they can't really do anything fun
+78:44 and and so you don't really have this
+78:46 great relationship with them if you have
+78:49 a startup founder and you're kind of you
+78:50 have a regular job. But if you're both
+78:52 founders, you're actually going through
+78:54 this together. Uh and I think um I think
+78:57 that ends up being uh being good. And uh
+79:00 you know at the time it was actually
+79:01 working against us because venture
+79:03 capitalists do not like um you know
+79:07 husband wife uh founders there wasn't a
+79:09 lot of examples at the time obviously
+79:11 the most famous example is um Paul
+79:15 Graham and Jessica uh but then now
+79:17 there's like the Canva founders and a
+79:19 bunch of other companies that that made
+79:22 it work but there are challenges too
+79:24 like um you know right now we're fully
+79:27 sort of fully committed to the but also
+79:30 we have kids and so how do you how do
+79:32 you manage how do you manage this that
+79:34 that adds quite a bit of stress and
+79:36 pressure uh on us. Um, and then the
+79:39 other thing is when something is going
+79:42 wrong in the company, like a lot of
+79:44 people can go home and can disconnect
+79:47 because they, you know, find comfort and
+79:49 and talking to their spouse about other
+79:51 things. But when Hay and I go home,
+79:53 we're talking about the problems and the
+79:55 problems kind of percolate and and and
+79:57 they end up seeming bigger and and
+79:59 worse. And so you you start to have you
+80:02 start to need rules around when do you
+80:04 actually talk about work and you're
+80:06 constantly breaking those rules
+80:08 obviously because you're thinking about
+80:09 something. So I I think it is a
+80:11 challenge and I think it is at the same
+80:13 time there's there's something very
+80:16 uh very unique and and and and good
+80:19 about it. Yeah. Well, it's impressive
+80:20 how well you made it worked and you guys
+80:22 have a really great dynamic. Thank you.
+80:24 All right. Lightning round. We have some
+80:26 lightning round questions. Uh are
+80:27 scaling laws going to hold? Yes, it it
+80:31 uh scaling different things. We're just
+80:33 going to keep keep finding things to
+80:35 scale. What is the best piece of advice
+80:37 you've gotten? Uh Paul Graham uh asked
+80:41 me this question. I I was stressed at
+80:44 the time and he told me, "Is this your
+80:46 life's work?" Like, "Are you going to be
+80:48 working on this 10, 20 years from now?"
+80:50 And I said, "Yes." And he said, "Well,
+80:53 why are you worrying too much about the
+80:54 daily uh tribulations?" like uh if to
+80:59 just settle into the fact that even if
+81:02 things are not great today, you're going
+81:03 to be able to fix them and you're going
+81:04 to be able to turn things around as long
+81:08 obviously as long as you're not dying.
+81:09 And that's why you know Paul always
+81:11 talks about not dying and surviving as a
+81:13 as a company. What is your favorite new
+81:16 AI app? Uh I'm kind of a lot because I
+81:19 make a lot of things myself and I use
+81:21 Replet to to make them. Uh I use I use
+81:24 the basics like you know chatup tea
+81:26 perplexity but then I spin up I spin up
+81:29 pieces of software every day uh to to
+81:33 use I guess uh manis is an interesting
+81:36 demo. Yeah. Um it's actually pushing on
+81:41 this idea that we talked about of like
+81:43 how long can models work while saying
+81:46 while saying coherence and I think they
+81:48 showed that they can go for an hour uh
+81:50 with with some coherence. Since you
+81:52 brought up Rebblelet apps, what's a cool
+81:53 Rebblelet app that you've seen recently?
+81:56 Uh there are a lot of business things
+81:58 that that are are, you know, are are
+82:00 fascinating. Um one cool thing that I um
+82:04 I I went to New York. I was meeting a
+82:07 few investors and and customers and I
+82:09 met with uh Sears Home Services. That's
+82:13 a century old company. I didn't know it
+82:16 still existed, but apparently the home
+82:18 services department still existed. I met
+82:20 this very cool trendy team. They kind of
+82:23 easily work at a startup. They're
+82:25 working at Sears. And they told me that
+82:27 six months ago they finished the cobalt
+82:29 migration and and it took them 6 months.
+82:32 And then I started asking him like what
+82:34 kind of other tools do you use? They use
+82:36 any SAS software and they don't have any
+82:39 ERP software any like these modern SAS
+82:42 SAS software. and they leaprogged an
+82:46 entire generation of um of software to
+82:52 uh start using Grapplet to create agents
+82:55 to manage their business. That's really
+82:57 cool. Yeah. So they they have these uh
+82:59 field workers that every morning they
+83:01 wake up and they're like, "Oh, how do I,
+83:03 you know, optimize my routes to kind of
+83:05 earn the most and service the most
+83:06 customers?" So they built like an AI
+83:09 tool that actually gives them the most
+83:11 optimal route that they use every day,
+83:13 for example. Yeah. By the way, that that
+83:15 team is nontechnical. They're all
+83:17 operations uh people. It's insane that
+83:19 you go from cobalt to replet and you
+83:21 skip everything in between. I mean it
+83:23 does does we were talking about this at
+83:24 the beginning of the conversation, but
+83:25 it gives you a sense of the sectors of
+83:27 the economy that are going to get
+83:28 transformed by this technology. Favorite
+83:30 book? I am a strange loop. Uh Douglas
+83:34 Hustad. Yeah. Uh, I actually disagree
+83:37 with the conclusion slash uh premise
+83:39 perhaps of the book, but it's still like
+83:41 one of the best books exploring concepts
+83:44 like AGI, concepts like consciousness
+83:46 and the soul and what it means to be a
+83:48 human versus what it means to be a
+83:50 machine intelligence. Um, what is the
+83:53 foundation model that you're you like
+83:55 most or most impressed by? Uh, I mean
+83:58 Claude is the uh is the best. I mean 3.7
+84:01 is is really the best at doing agent
+84:04 stuff. person who's influenced your
+84:05 life. Uh I think uh my mom had this uh
+84:11 supernatural belief in me like she uh
+84:14 she would talk about all the great
+84:17 things that I was going to do even when
+84:18 I was a very small kid and she uh she
+84:23 gave me this again uh um unwarranted at
+84:27 times confidence uh in myself.
+84:30 recommended reading on AI
+84:33 um you know Twitter uh like uh it's
+84:37 really awesome you know I I think it got
+84:39 degraded recently but um you uh but but
+84:42 like there's so many papers that you
+84:43 find on Twitter or so many snippets of
+84:45 information just like like go read those
+84:47 papers skimm and I think you'll learn
+84:49 about what's coming down the line by
+84:51 just reading the literature
+84:53 last question who is the most underrated
+84:55 person in AI I think um Michael Katasta
+84:60 the head of AI now present at Replet um
+85:03 like I don't think he's very public but
+85:07 um he was um one of the early pioneers
+85:10 of um LMS's uh for code um and and he's
+85:15 a great leader as well and and visionary
+85:18 around where AI for code is uh is
+85:21 headed. Super impressive guy. I love
+85:23 every conversation I have with him. All
+85:25 right. Well, thank you for coming on the
+85:27 podcast. I really appreciate our
+85:29 friendship. Thank you for doing this.
+85:30 Thank you. I mean, I appreciate your
+85:32 belief in us and and I think you saw
+85:34 something special really long time ago
+85:36 and like all these things that you
+85:37 notice about what's special about Replet
+85:39 and and I really appreciate that. Thank
+85:40 you. We're still 4% there. 40 million
+85:42 users. We got 960 million to go. Yeah.
+85:46 Exciting times ahead. Thanks, AJ. Thank
+85:48 you.

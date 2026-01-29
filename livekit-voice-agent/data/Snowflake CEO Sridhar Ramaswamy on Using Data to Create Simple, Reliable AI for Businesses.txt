@@ -1,0 +1,4348 @@
+00:00 the the product that makes even the
+00:03 
+
+00:03 people that go I have gbd4 I have an
+00:06 
+
+00:06 army of software Engineers um the thing
+00:09 
+
+00:09 that even they struggle with is things
+00:11 
+
+00:11 like a reliable talk to your data
+00:13 
+
+00:13 application because even with gbd4 out
+00:15 
+
+00:15 of the box you end up getting 45 odd per
+00:18 
+
+00:18 reliability meaning it gets half the
+00:21 
+
+00:21 questions wrong when it tries to answer
+00:23 
+
+00:23 it um we are well in the '90s and we are
+00:26 
+
+00:26 racing to get to like 99% reliability on
+00:29 
+
+00:29 talk to your data applications obviously
+00:32 
+
+00:32 we restrict the domain and turn this
+00:34 
+
+00:34 into more of a software engineering
+00:35 
+
+00:35 problem than just like a pure AI model
+00:38 
+
+00:38 problem um but that's the thing that
+00:40 
+
+00:40 makes every snowflake customer perk up
+00:42 
+
+00:42 and go like I want that because even the
+00:46 
+
+00:46 people with the money and the resources
+00:47 
+
+00:47 to spend on software engineering teams
+00:50 
+
+00:50 um very quickly realize that this is a
+00:52 
+
+00:52 wall that they are likely not going to
+00:54 
+
+00:54 break through
+00:57 
+
+00:57 [Music]
+01:12 
+
+01:12 today we're excited to welcome Shar
+01:13 
+
+01:13 ramaswami CEO of
+01:16 
+
+01:16 snowflake snowflake is one of the most
+01:18 
+
+01:18 important Enterprise companies in the
+01:20 
+
+01:20 public markets it's the default cloud
+01:22 
+
+01:22 data platform but today the question of
+01:27 
+
+01:27 what role does snowflake have to play in
+01:29 
+
+01:29 the world of AI looms large Shar is
+01:33 
+
+01:33 somebody we've known for a couple
+01:34 
+
+01:34 decades he actually started on the very
+01:36 
+
+01:36 same day as our partner Bill Korn at
+01:38 
+
+01:38 Google back in April of 2003 we backed
+01:42 
+
+01:42 Shar in his own startup Neva which was
+01:43 
+
+01:43 an AI driven search engine snowflake
+01:46 
+
+01:46 acquired Neva which is how Shar became
+01:48 
+
+01:48 the successor to Frank
+01:50 
+
+01:50 slutman rarely have we encountered
+01:52 
+
+01:52 somebody who is as in the Weeds on the
+01:54 
+
+01:54 technology but also as commercially
+01:57 
+
+01:57 Savvy as Shar and he will join us today
+01:60 
+
+01:60 to to talk about what AI means for
+02:01 
+
+02:01 snowflake the importance of safety nets
+02:04 
+
+02:04 the open source Community the
+02:06 
+
+02:06 competitive landscape and the Practical
+02:08 
+
+02:08 applications of AI that he's seeing in
+02:11 
+
+02:11 the Enterprise through his lens as CEO
+02:13 
+
+02:13 of snowflake we hope you
+02:16 
+
+02:16 enjoy all right Shar we're excited to
+02:19 
+
+02:19 have you here with us today you're a
+02:21 
+
+02:21 technologist by trade youve spent a lot
+02:24 
+
+02:24 of time in the consumer world and you
+02:25 
+
+02:25 are now at the helm of one of the most
+02:28 
+
+02:28 important Enterprise companies of Our
+02:29 
+
+02:29 Generation so
+02:31 
+
+02:31 before we jump in we have a lot that we
+02:32 
+
+02:32 want to know about Enterprise AI what
+02:34 
+
+02:34 snowflake is up to some of your
+02:36 
+
+02:36 predictions on the world of AI before we
+02:37 
+
+02:37 jump in though just a level set can you
+02:39 
+
+02:39 give us a couple words on your personal
+02:42 
+
+02:42 background and then just for people who
+02:43 
+
+02:43 aren't familiar which is probably not a
+02:45 
+
+02:45 lot but just for fun for people who
+02:48 
+
+02:48 aren't familiar what's snowflake so who
+02:50 
+
+02:50 Street are what's snowflake let's start
+02:51 
+
+02:51 there that's great uh bad Sonia super
+02:55 
+
+02:55 excited to be here at iconic seoa home
+02:58 
+
+02:58 to many many uh Legends I admire um yeah
+03:03 
+
+03:03 I'm a computer Scientist by training uh
+03:05 
+
+03:05 early career as an academic I joke to
+03:08 
+
+03:08 people that I'm a reformed academic
+03:10 
+
+03:10 because I was like I wanted to do things
+03:11 
+
+03:11 with more impact um super lucky to be a
+03:15 
+
+03:15 an early part of Google um where I
+03:18 
+
+03:18 joined one of the greatest businesses
+03:20 
+
+03:20 ever invented by uh Humanity which is
+03:23 
+
+03:23 the search ads business uh I ran that
+03:25 
+
+03:25 for close to a decade all of ads in
+03:27 
+
+03:27 Commerce at Google um for uh 5 years
+03:30 
+
+03:30 helped grow that business from a billion
+03:32 
+
+03:32 and a half to over $120 billion in uh in
+03:35 
+
+03:35 Revenue um and then funded by seoa did a
+03:39 
+
+03:39 uh an ambitious startup called Neva
+03:41 
+
+03:41 which wanted to modestly rethink what
+03:43 
+
+03:43 search meant um before getting acquired
+03:46 
+
+03:46 by Snowflake and becoming its uh CEO uh
+03:50 
+
+03:50 and snowflake is the AI data clock our
+03:53 
+
+03:53 core thesis is that a cloud computing
+03:56 
+
+03:56 platform that puts data at its Center um
+03:59 
+
+03:59 is going to be way better for Enterprise
+04:03 
+
+04:03 customers to act on data um than a
+04:06 
+
+04:06 generic Cloud um and AI of course we
+04:09 
+
+04:09 think of as a transformational
+04:11 
+
+04:11 technology that is going to change every
+04:14 
+
+04:14 aspect of how data is stored how it gets
+04:16 
+
+04:16 moved around and of course how it's
+04:19 
+
+04:19 accessed um we have over 10,000
+04:22 
+
+04:22 customers uh made 2.6 Bill last year but
+04:26 
+
+04:26 at the center of everything Enterprise
+04:28 
+
+04:28 and data that's a super a quick blurb
+04:31 
+
+04:31 perfect thank you and and so you have
+04:32 
+
+04:32 10,000 or so customers I know you've met
+04:35 
+
+04:35 at least hundred probably hundreds of
+04:37 
+
+04:37 them since you took over hundreds of
+04:38 
+
+04:38 them by now so there you go so I'm
+04:40 
+
+04:40 guessing you have a pretty decent read
+04:42 
+
+04:42 on what's going on in the world of
+04:44 
+
+04:44 Enterprise AI so maybe we'll just start
+04:46 
+
+04:46 there what's going on in the world of
+04:47 
+
+04:47 Enterprise AI what are you seeing at
+04:48 
+
+04:48 your customers first of all people get
+04:52 
+
+04:52 that this is going to be
+04:53 
+
+04:53 transformational you know lots of
+04:55 
+
+04:55 Technologies um have Skeptics I'm sure
+04:57 
+
+04:57 you have run it into folks who all like
+04:58 
+
+04:58 ah mobile it's not going to be it thing
+05:00 
+
+05:00 this browser like so l in um it takes a
+05:03 
+
+05:03 while for people to absorb I think
+05:06 
+
+05:06 what's different about AI first and
+05:07 
+
+05:07 foremost is people are like I get what
+05:11 
+
+05:11 this can do I think some of the power um
+05:14 
+
+05:14 is just like honestly looking at the
+05:17 
+
+05:17 magic that Chad GPD is anyone that like
+05:20 
+
+05:20 has interacted with it asked you to
+05:22 
+
+05:22 write a poem asked you to create an
+05:23 
+
+05:23 image knows like wow this is something
+05:25 
+
+05:25 that's very special so the level of
+05:28 
+
+05:28 awareness is incredibly High um and uh
+05:32 
+
+05:32 and we have thousands of customers that
+05:34 
+
+05:34 are in various stages of implementing AI
+05:37 
+
+05:37 solutions they span the gamut um from
+05:40 
+
+05:40 people like Bayer that are very excited
+05:43 
+
+05:43 by the idea of giving business users
+05:45 
+
+05:45 access to business data without going
+05:48 
+
+05:48 through like an elaborate you need an
+05:49 
+
+05:49 analyst you need a bi tool you need blah
+05:51 
+
+05:51 blah blah you need a week before a
+05:53 
+
+05:53 change can be made they're like I just
+05:55 
+
+05:55 want to put data into the hands of
+05:57 
+
+05:57 people that need it right now um but but
+05:60 
+
+05:60 we also have dozens of people that are
+06:02 
+
+06:02 using AI as a transformation engine so
+06:05 
+
+06:05 for example if you have unstructured
+06:06 
+
+06:06 data whether it's an image or let's say
+06:09 
+
+06:09 like a transcript previously you had to
+06:11 
+
+06:11 run a software engineering project to
+06:13 
+
+06:13 figure out what's this image about now
+06:16 
+
+06:16 you feed it into a model ask it a
+06:17 
+
+06:17 question and you get the answer and so
+06:20 
+
+06:20 people are super excited by things like
+06:22 
+
+06:22 that we have a product called document
+06:23 
+
+06:23 AI which extracts structured information
+06:26 
+
+06:26 from document say like contracts um all
+06:28 
+
+06:28 of us have contracts sitting around in
+06:30 
+
+06:30 our company folders that have all kinds
+06:31 
+
+06:31 of magic numbers um that ideally you
+06:34 
+
+06:34 want to do analysis on so there's a wide
+06:36 
+
+06:36 variety of cases that people um are
+06:39 
+
+06:39 implementing and sending into production
+06:41 
+
+06:41 but I would say stuff at the bottom
+06:43 
+
+06:43 which is how do you transform data more
+06:46 
+
+06:46 effectively more flexibly and stuff at
+06:48 
+
+06:48 the top which is how do you make data
+06:51 
+
+06:51 easily available to all kinds of
+06:53 
+
+06:53 business users in new ways in
+06:55 
+
+06:55 interactive ways um I would say that's
+06:57 
+
+06:57 the sandwich in terms of what are people
+06:59 
+
+06:59 wanting to do with data mhm and can you
+07:01 
+
+07:01 say a couple words on snowflakes right
+07:03 
+
+07:03 to win so some of the things you
+07:05 
+
+07:05 mentioned like data transformation for
+07:06 
+
+07:06 example feels like that is very close to
+07:08 
+
+07:08 the Core Business of snowflake but then
+07:11 
+
+07:11 there are some things that are maybe a
+07:12 
+
+07:12 bit further a field you know if somebody
+07:14 
+
+07:14 wants to deploy an Enterprise agent of
+07:16 
+
+07:16 some sort they can use snowflake to do
+07:18 
+
+07:18 it but what's snowflakes right to win in
+07:20 
+
+07:20 that situation so can you just say a
+07:21 
+
+07:21 couple words about how snowflake fits
+07:23 
+
+07:23 into this overall landscape and sort of
+07:24 
+
+07:24 the right to win um so first and
+07:27 
+
+07:27 foremost um the basic approach that we
+07:30 
+
+07:30 took to AI um sort of enabling or
+07:35 
+
+07:35 infusing AI into snowflake is um it
+07:39 
+
+07:39 should be an axelin for everything that
+07:41 
+
+07:41 you do with snowflake that's what cortex
+07:43 
+
+07:43 AI is it's a model Garden but it's more
+07:46 
+
+07:46 than that uh snowflake Prides itself on
+07:49 
+
+07:49 super tight integration of its various
+07:51 
+
+07:51 product features um and this is not
+07:53 
+
+07:53 another service that's part of snowflake
+07:55 
+
+07:55 it's built into snowflake this means
+07:58 
+
+07:58 that um any analyst that has access to
+08:01 
+
+08:01 SQL has access to Ai and so it's a
+08:04 
+
+08:04 massive democratizing mechanism um and
+08:07 
+
+08:07 then the early applications that we have
+08:10 
+
+08:10 built like document AI are a very
+08:13 
+
+08:13 natural next in the progression of what
+08:15 
+
+08:15 people want to do um which is hey I want
+08:19 
+
+08:19 to act on the data that is within
+08:21 
+
+08:21 snowflakes perview by both expanding the
+08:23 
+
+08:23 data that snowflake has access to Via
+08:25 
+
+08:25 things like Iceberg which is basically
+08:27 
+
+08:27 an interoperable uh storage format for
+08:30 
+
+08:30 cloud storage um but then providing
+08:32 
+
+08:32 things like document AI we just make a
+08:35 
+
+08:35 whole bunch of AI applications that
+08:38 
+
+08:38 previously used to be software
+08:39 
+
+08:39 engineering projects into two commands
+08:42 
+
+08:42 that an analyst can issue and so our
+08:45 
+
+08:45 first lens very much is that um AI
+08:49 
+
+08:49 should become easy um trivial for data
+08:53 
+
+08:53 that is sitting in Snowflake 100% there
+08:56 
+
+08:56 are going to be applications that are
+08:58 
+
+08:58 you know Cutting Edge or going to
+08:60 
+
+08:60 involve many many different Services um
+09:03 
+
+09:03 but the angle that we bring to all of
+09:06 
+
+09:06 those customers is we make reliable Ai
+09:09 
+
+09:09 and this is a topic that we can get into
+09:12 
+
+09:12 so for example I tell people you have no
+09:14 
+
+09:14 business believing the raw output of a
+09:16 
+
+09:16 language model for anything you can't
+09:18 
+
+09:18 actually do any business with that
+09:20 
+
+09:20 because it's ungrounded it doesn't
+09:22 
+
+09:22 understand truth from falsehood doesn't
+09:24 
+
+09:24 understand Authority um so we make
+09:26 
+
+09:26 things like you know creating a grounded
+09:28 
+
+09:28 chatbot again as I said two commands not
+09:30 
+
+09:30 a software engineering project um
+09:33 
+
+09:33 similarly with cortex analyst which is
+09:35 
+
+09:35 our talk to talk to your data API we
+09:38 
+
+09:38 bring the full power off we know
+09:39 
+
+09:39 everything about the schema all the
+09:41 
+
+09:41 queries that have been run on the schema
+09:42 
+
+09:42 the semantic context on the schema we
+09:44 
+
+09:44 can produce a reliable um you know
+09:48 
+
+09:48 application um that others are going to
+09:50 
+
+09:50 struggle to create so we are leveraging
+09:52 
+
+09:52 our strengths in data um to make AI
+09:55 
+
+09:55 products better are they're going to be
+09:58 
+
+09:58 like specialist app ations that can only
+10:01 
+
+10:01 be done with GPD photo and a custom
+10:04 
+
+10:04 integration with a bunch of other stuff
+10:06 
+
+10:06 absolutely um but that's not what we are
+10:08 
+
+10:08 after the bulk of our customers want to
+10:10 
+
+10:10 get work done they're not in the
+10:11 
+
+10:11 business of doing research with AI and
+10:13 
+
+10:13 are you seeing customers bring net new
+10:15 
+
+10:15 data that maybe didn't sit inside
+10:17 
+
+10:17 snowflake historically into snowflake
+10:19 
+
+10:19 because of your AI services and and how
+10:20 
+
+10:20 do you think about your right to win as
+10:22 
+
+10:22 it comes to the data that's not in
+10:23 
+
+10:23 Snowflake yet uh this is a broader
+10:25 
+
+10:25 question um I think one of the things
+10:27 
+
+10:27 that uh I've actually been a good part
+10:30 
+
+10:30 of is in expanding the lens of data that
+10:34 
+
+10:34 snowflake should play in Snowflake um as
+10:37 
+
+10:37 you know is uh first of all it's close
+10:39 
+
+10:39 Source software for the most part the
+10:41 
+
+10:41 code engine is close Source just like
+10:43 
+
+10:43 search um but we also had a proprietary
+10:45 
+
+10:45 storage format um where data was
+10:47 
+
+10:47 ingested into snowflake um and uh kept
+10:50 
+
+10:50 in this format but um what we
+10:53 
+
+10:53 consistently heard from customers and
+10:55 
+
+10:55 I'm sure like you hear all the time is
+10:57 
+
+10:57 there is 100 or a thousand times more
+10:60 
+
+10:60 data sitting in cloud storage than there
+11:02 
+
+11:02 is inside a specialized player like
+11:05 
+
+11:05 snowflake um and more and more industry
+11:08 
+
+11:08 Trends have been towards interoperable
+11:10 
+
+11:10 data people want their uh want their
+11:12 
+
+11:12 data to be accessible from multiple
+11:14 
+
+11:14 places so for example if they want to
+11:16 
+
+11:16 write their own bspoke applications most
+11:18 
+
+11:18 people don't want to do that but the
+11:20 
+
+11:20 biggest ones do um they want the data to
+11:23 
+
+11:23 sit in cloud storage where yes snowflake
+11:26 
+
+11:26 perhaps can write it and read it um but
+11:29 
+
+11:29 other applications should also be able
+11:30 
+
+11:30 to read it so we made a big push around
+11:32 
+
+11:32 Iceberg which is the interoperable
+11:34 
+
+11:34 format we also announced a cloud catalog
+11:36 
+
+11:36 recently the idea is that in 10 years um
+11:40 
+
+11:40 data is going to be sitting um mostly in
+11:43 
+
+11:43 the cloud mostly in cloud storage which
+11:45 
+
+11:45 is very cheap um mostly in interoperable
+11:48 
+
+11:48 formats accessible via open catalogs and
+11:52 
+
+11:52 this is the place where we see there
+11:54 
+
+11:54 being so much more access to data from
+11:58 
+
+11:58 Snowflake so everything from data
+11:59 
+
+11:59 engineer ing an AI um now comes into our
+12:02 
+
+12:02 purview um we have customers that for
+12:04 
+
+12:04 example are doing things like oh let's
+12:06 
+
+12:06 run a video model using snowflakes
+12:08 
+
+12:08 container services on data that is
+12:10 
+
+12:10 sitting in S3 extract transcripts and
+12:12 
+
+12:12 stick it into um into snowflake so it's
+12:15 
+
+12:15 just a very different world we are
+12:16 
+
+12:16 playing in makes sense and then so the
+12:18 
+
+12:18 let's say for the data that's currently
+12:19 
+
+12:19 sitting in uh one of the hyperscalers
+12:22 
+
+12:22 for example um you started the
+12:24 
+
+12:24 conversation by saying you know the the
+12:25 
+
+12:25 core uh tenant of the company is that
+12:27 
+
+12:27 when you build your infrastructure kind
+12:29 
+
+12:29 of all around the processing of data you
+12:31 
+
+12:31 can do better things what are some of
+12:32 
+
+12:32 the ways that you're able to kind of
+12:34 
+
+12:34 offer better AI services around the data
+12:36 
+
+12:36 that doesn't currently sit in snowlake
+12:38 
+
+12:38 but that you're hoping customers will
+12:39 
+
+12:39 bring in versus you know what the
+12:40 
+
+12:40 hyperscalers are doing already yeah and
+12:42 
+
+12:42 can I add on to that real quick because
+12:43 
+
+12:43 one of the things that we have heard
+12:45 
+
+12:45 from customers is at either end of the
+12:47 
+
+12:47 spectrum you've got at one end of the
+12:50 
+
+12:50 spectrum work directly with open AI send
+12:53 
+
+12:53 your data you know into their into their
+12:55 
+
+12:55 Cloud um and maybe have some nervousness
+12:58 
+
+12:58 around whether that is going to leak
+12:60 
+
+12:60 into the model or whether they have the
+13:01 
+
+13:01 right security and privacy sort of
+13:03 
+
+13:03 governance around it um at the other end
+13:05 
+
+13:05 of the spectrum you can just do
+13:06 
+
+13:06 everything yourself grab a model off a
+13:08 
+
+13:08 hugging face build it internally you
+13:10 
+
+13:10 know super safe super secure but pretty
+13:12 
+
+13:12 painful to do all that and then the
+13:14 
+
+13:14 middle ground you've got Amazon Bedrock
+13:18 
+
+13:18 or you've got a snowflake and they both
+13:20 
+
+13:20 kind of have a value prop of Best of
+13:22 
+
+13:22 Both Worlds we're going to make it easy
+13:24 
+
+13:24 for you but it's also safe and trusted
+13:26 
+
+13:26 and secure and all that good stuff and
+13:28 
+
+13:28 so I think um my angle on Sonia's
+13:31 
+
+13:31 question is like for somebody who's
+13:32 
+
+13:32 making a practical decision about sort
+13:35 
+
+13:35 of what should I build in Snowflake
+13:37 
+
+13:37 versus what should I build on Bedrock or
+13:39 
+
+13:39 a comparable cloud service what leans
+13:41 
+
+13:41 people in the direction of snowflake um
+13:44 
+
+13:44 it's the fact that uh everything that uh
+13:47 
+
+13:47 you want whether it is data security
+13:51 
+
+13:51 data governance ease of use um all come
+13:55 
+
+13:55 out of the box the incredible power that
+13:57 
+
+13:57 comes with core snowflakes plat form
+13:59 
+
+13:59 including things like collaboration
+14:02 
+
+14:02 other third party applications we make
+14:04 
+
+14:04 AI simple 100% there are those people
+14:08 
+
+14:08 that will say I want to take data um
+14:12 
+
+14:12 that's sitting in cloud storage or even
+14:14 
+
+14:14 in another application I want to bring
+14:16 
+
+14:16 it into cloud storage I want to recreate
+14:19 
+
+14:19 uh accles you know Access Control list
+14:22 
+
+14:22 um and then I want to create a vector
+14:24 
+
+14:24 index using a bspoke um you know Vector
+14:27 
+
+14:27 indexing solution um and then I will
+14:30 
+
+14:30 stitch together uh I I'll figure out
+14:32 
+
+14:32 which model that I want to use whether
+14:34 
+
+14:34 it's an API or something that I host
+14:37 
+
+14:37 myself um and then I will use Lang chain
+14:41 
+
+14:41 and write like custom routing Logic for
+14:43 
+
+14:43 my application um I can assure you that
+14:47 
+
+14:47 you know 99.9% of our customers want no
+14:50 
+
+14:50 part of this you know that's just the
+14:52 
+
+14:52 reality um all those poor people wanted
+14:56 
+
+14:56 was a chatbot to run on 100,000 docks
+14:59 
+
+14:59 that that they have so that they can
+15:01 
+
+15:01 replace the annoying search box for FAQs
+15:05 
+
+15:05 on their site with you know here's a
+15:07 
+
+15:07 solution that just works um and our take
+15:11 
+
+15:11 is uh uh yes whatever governance you've
+15:13 
+
+15:13 had before works out of the box um and
+15:16 
+
+15:16 your data does not go anywhere else you
+15:19 
+
+15:19 have the same Rock Solid guarantee that
+15:22 
+
+15:22 snowflake will never use your data to
+15:24 
+
+15:24 train any uh like Cross customer model
+15:28 
+
+15:28 um and uh and we will be very efficient
+15:31 
+
+15:31 um and cost effective from just like
+15:33 
+
+15:33 overall cost of running the solution but
+15:36 
+
+15:36 snowflakes magic honestly is we make the
+15:39 
+
+15:39 hard simple and it's things like total
+15:41 
+
+15:41 cost of ownership um many of our
+15:43 
+
+15:43 customers uh you know are our banks um
+15:48 
+
+15:48 they are Healthcare institutions um they
+15:50 
+
+15:50 are finan you know are other kind like
+15:52 
+
+15:52 we play a lot um in the media space as
+15:54 
+
+15:54 well um most of our customers want to
+15:57 
+
+15:57 solve problems not solve technology for
+15:59 
+
+15:59 the sake of uh for the sake of
+16:01 
+
+16:01 Technology you know we have a foundation
+16:03 
+
+16:03 model team they're very focused on
+16:05 
+
+16:05 things like how do we you know get
+16:07 
+
+16:07 models that a better grounded generation
+16:10 
+
+16:10 how do we get them to follow directions
+16:12 
+
+16:12 well how do we get them to say no to
+16:14 
+
+16:14 questions that they should not be
+16:16 
+
+16:16 answering when it comes to let's say
+16:18 
+
+16:18 like talk to your data you know so we
+16:20 
+
+16:20 focus on Specialized areas like that uh
+16:23 
+
+16:23 but the biggest reason to use uh
+16:25 
+
+16:25 snowflake for a lot of our customers is
+16:28 
+
+16:28 10% software engineering project with a
+16:31 
+
+16:31 whole lot of risk about data and
+16:32 
+
+16:32 security and what else can happen um
+16:35 
+
+16:35 turns into six hours of work for and
+16:37 
+
+16:37 analyst um we are good at that we proud
+16:40 
+
+16:40 of that so it sounds like the oneliner
+16:42 
+
+16:42 might be it's kind of the the level or
+16:44 
+
+16:44 the layer at which you're intersecting
+16:46 
+
+16:46 these products if you're working with
+16:48 
+
+16:48 one of the public clouds you're still
+16:49 
+
+16:49 very much at the infrastructure layer
+16:51 
+
+16:51 building a lot yourself snowflake you're
+16:53 
+
+16:53 at the platform layer a lot of the hard
+16:54 
+
+16:54 work's been done for you and our
+16:56 
+
+16:56 long-term bet Pat and Sonia is that
+16:59 
+
+16:59 ecosystems move Upstream there was a
+17:01 
+
+17:01 time not so long ago um where I don't
+17:04 
+
+17:04 know our parents our grandparents knew
+17:06 
+
+17:06 every part of a car yeah they're like oh
+17:09 
+
+17:09 so manly to change a carburetor and get
+17:12 
+
+17:12 oil in between your nails I got to be
+17:14 
+
+17:14 honest with you I'm still impressed
+17:15 
+
+17:15 every time my dad knows exactly what is
+17:17 
+
+17:17 wrong with the car yes you know while
+17:19 
+
+17:19 I'm willing to go to you know go to
+17:21 
+
+17:21 strength training every day getting oil
+17:22 
+
+17:22 in between my fingers uh you know with
+17:24 
+
+17:24 my car does not sound so attractive
+17:27 
+
+17:27 anymore um and so one you can work with
+17:30 
+
+17:30 csps and you can be like I have a model
+17:32 
+
+17:32 Garden here I have a caching service
+17:34 
+
+17:34 there I have a database here I will
+17:36 
+
+17:36 Stitch all of this together um as I said
+17:39 
+
+17:39 everything turns into a software
+17:41 
+
+17:41 engineering project um for us you're
+17:43 
+
+17:43 like no that's just a little data
+17:46 
+
+17:46 pipeline that you set up and here is a
+17:48 
+
+17:48 beautiful UI that you get if you want a
+17:51 
+
+17:51 chatbot uh obviously you can do more but
+17:54 
+
+17:54 you don't have to yeah whether your
+17:56 
+
+17:56 customers building on Snowflake and are
+17:58 
+
+17:58 there certain types of AI applications
+17:60 
+
+17:60 that are better suited to be built on
+18:01 
+
+18:01 snowflake than others um as I said the
+18:04 
+
+18:04 the categories of AI applications um
+18:06 
+
+18:06 come naturally from the kind of data
+18:09 
+
+18:09 that you know that are that are already
+18:10 
+
+18:10 there um I would say the broadest
+18:13 
+
+18:13 broadest use case um is really using
+18:16 
+
+18:16 cortex AI via SQL um in either
+18:20 
+
+18:20 interactive queries and dashboards or in
+18:23 
+
+18:23 jobs that people are running and so
+18:25 
+
+18:25 these span the gamut from oh let's do
+18:27 
+
+18:27 sentiment detection with a small model
+18:29 
+
+18:29 it doesn't really have to even be that
+18:31 
+
+18:31 expensive uh so that's just like
+18:33 
+
+18:33 literally it's one function call um or
+18:36 
+
+18:36 uh let's do other kinds of data
+18:38 
+
+18:38 extraction um where as I said you have
+18:40 
+
+18:40 things like a transcript or maybe
+18:42 
+
+18:42 clinician notes um you you take that out
+18:45 
+
+18:45 uh and uh um you know you you get
+18:48 
+
+18:48 structured data from it um or the other
+18:51 
+
+18:51 thing that I talked about document AI
+18:52 
+
+18:52 which is you extract structured data
+18:54 
+
+18:54 from things like receipts from contracts
+18:57 
+
+18:57 uh so on and so forth that's kind of our
+18:59 
+
+18:59 Sweet Spot um but I have to say the the
+19:03 
+
+19:03 product that makes even the people that
+19:06 
+
+19:06 go I have gbd4 I have an army of
+19:09 
+
+19:09 software Engineers um the thing that
+19:11 
+
+19:11 even they struggle with is things like a
+19:13 
+
+19:13 reliable talk to your data application
+19:16 
+
+19:16 because even with gbd4 out of the box
+19:18 
+
+19:18 you end up getting 45 odd per
+19:20 
+
+19:20 reliability meaning it gets half the
+19:22 
+
+19:22 questions wrong when it tries to answer
+19:24 
+
+19:24 it um we are well in the '90s and we are
+19:28 
+
+19:28 racing to get like 99% reliability on
+19:31 
+
+19:31 talk to your data applications obviously
+19:34 
+
+19:34 we restrict the domain and turn this
+19:36 
+
+19:36 into more of a software engineering
+19:37 
+
+19:37 problem than just like a pure AI model
+19:40 
+
+19:40 problem um but that's the thing that
+19:42 
+
+19:42 makes every snowflake customer perk up
+19:44 
+
+19:44 and go like I want that because even the
+19:47 
+
+19:47 people with the money and the resources
+19:49 
+
+19:49 to spend on software engineering teams
+19:52 
+
+19:52 um very quickly realize that this is a
+19:54 
+
+19:54 wall that they are likely not going to
+19:56 
+
+19:56 break through and how do you accomplish
+19:58 
+
+19:58 that like maybe peel back for us how
+19:60 
+
+19:60 you're able to get to the 90s per uh are
+20:03 
+
+20:03 you training your own models are you
+20:05 
+
+20:05 just tell us about you know how how how
+20:07 
+
+20:07 this all becomes possible it's it's it's
+20:09 
+
+20:09 systems design okay um just like the
+20:11 
+
+20:11 magic of how you make uh a coding agent
+20:15 
+
+20:15 or an effect less a coding agent more an
+20:18 
+
+20:18 effective co-pilot work in practice it's
+20:20 
+
+20:20 not always the like the giant models it
+20:23 
+
+20:23 is carefully breaking problems down uh
+20:26 
+
+20:26 so that you present the right context to
+20:28 
+
+20:28 the model it's in deciding things like
+20:31 
+
+20:31 oh I see the problem of answering a
+20:34 
+
+20:34 question whether to answer a question is
+20:37 
+
+20:37 different from how to answer the
+20:39 
+
+20:39 question so you can specialize and have
+20:42 
+
+20:42 different models for these different
+20:43 
+
+20:43 subtasks and also what's the um
+20:47 
+
+20:47 basically the I I I call this a like a
+20:51 
+
+20:51 problem definition a product structure
+20:53 
+
+20:53 question we structure the product of
+20:56 
+
+20:56 Cortex analyst um so that it is more
+20:58 
+
+20:58 restrictive than a free flow domain um
+21:01 
+
+21:01 what I mean by that is um schemas are
+21:04 
+
+21:04 weird things people do random stuff they
+21:07 
+
+21:07 have horrible column names um that mean
+21:09 
+
+21:09 completely the opposite every company
+21:11 
+
+21:11 has its own definition for revenue and
+21:13 
+
+21:13 if you like take the best model on the
+21:16 
+
+21:16 planet and Let it Loose on an arbitrary
+21:18 
+
+21:18 schema the likelihood that it's actually
+21:20 
+
+21:20 going to understand the Nuance of what's
+21:23 
+
+21:23 in there um close to zero like you know
+21:26 
+
+21:26 our big deployments for example our
+21:27 
+
+21:27 customers have 200,000 tables and you
+21:30 
+
+21:30 can bet that there are several tens of
+21:32 
+
+21:32 thousands of tables with the word
+21:33 
+
+21:33 Revenue in it um they just don't have
+21:36 
+
+21:36 the same meaning so it's really like
+21:38 
+
+21:38 problem definition to me by the way this
+21:40 
+
+21:40 goes back to the magic of product um I
+21:43 
+
+21:43 think of like any amazing founder any
+21:45 
+
+21:45 amazing um product manager as someone
+21:48 
+
+21:48 that can visualize what's like the right
+21:50 
+
+21:50 trade-off to be making in order to
+21:52 
+
+21:52 create something that has broad
+21:54 
+
+21:54 applicability and that's the thing that
+21:56 
+
+21:56 we have done here we constrain the
+21:57 
+
+21:57 problem but as I said also explicitly
+21:60 
+
+21:60 train for things like when to refuse
+22:02 
+
+22:02 questions um as opposed to trying to
+22:04 
+
+22:04 pretend that you can answer every
+22:06 
+
+22:06 question um but obviously there's a
+22:08 
+
+22:08 Precision recall trade-off there you can
+22:10 
+
+22:10 get 100% Precision by answering no
+22:12 
+
+22:12 question that's not the goal you want to
+22:14 
+
+22:14 be useful but still be precise but it's
+22:16 
+
+22:16 a lot of software insuring um I want to
+22:19 
+
+22:19 go in a slightly different direction
+22:20 
+
+22:20 sure okay which that that reminded me of
+22:22 
+
+22:22 this and I don't know why but but you
+22:25 
+
+22:25 guys you
+22:26 
+
+22:26 seem the product velocity at snowflake
+22:30 
+
+22:30 seems to have inflected to the positive
+22:32 
+
+22:32 yeah even in the last 6 months or so and
+22:35 
+
+22:35 we've worked with a lot of Founders
+22:37 
+
+22:37 where you know the bigger the company
+22:38 
+
+22:38 gets the slower and slower the velocity
+22:41 
+
+22:41 becomes and so I guess I'm curious what
+22:44 
+
+22:44 have you guys done to positively inflect
+22:46 
+
+22:46 product velocity because that's hard to
+22:48 
+
+22:48 do when you're dealing with an
+22:49 
+
+22:49 organization at the scale of snowflake
+22:51 
+
+22:51 uh I've done this many times before um
+22:54 
+
+22:54 and the formula uh is always roughly the
+22:57 
+
+22:57 same which is first and foremost you
+22:60 
+
+22:60 make sure that you have a safety net
+23:02 
+
+23:02 that you believe in um which is you have
+23:06 
+
+23:06 like regression test so you don't blow
+23:08 
+
+23:08 up big functionality um but if you're
+23:11 
+
+23:11 pushing hard enough um you will make
+23:14 
+
+23:14 mistakes um and so you have to
+23:15 
+
+23:15 distinguish between different kinds of
+23:18 
+
+23:18 mistakes um for a database company um
+23:20 
+
+23:20 there are catastrophic mistakes like if
+23:23 
+
+23:23 you write data badly it's going to take
+23:25 
+
+23:25 you months to get out of that so you
+23:27 
+
+23:27 know so you need to understand and like
+23:29 
+
+23:29 what is risk um and then you build the
+23:31 
+
+23:31 safety net for things like uh as I said
+23:34 
+
+23:34 uh to detect problems before they happen
+23:36 
+
+23:36 but in case you do have problems how you
+23:38 
+
+23:38 get out quickly um at Google for example
+23:42 
+
+23:42 um we built Auto experiment scaling
+23:44 
+
+23:44 Frameworks um basically you would you
+23:47 
+
+23:47 know come up with a new experiment all
+23:49 
+
+23:49 new change all changes went through this
+23:50 
+
+23:50 experiment framework um and this thing
+23:52 
+
+23:52 would automatically say I'm going to run
+23:55 
+
+23:55 this on a machine watch it for 15
+23:56 
+
+23:56 minutes make sure that it the machine
+23:58 
+
+23:58 doesn't crash and then it roll it out to
+23:60 
+
+23:60 .1% 1% 10% with measurement all along
+24:03 
+
+24:03 the way all of a sudden you have
+24:05 
+
+24:05 velocity because someone can design
+24:06 
+
+24:06 people can design a whole bunch of
+24:08 
+
+24:08 experiments they're sort of now pushed
+24:09 
+
+24:09 out uh so as I said the first part is
+24:12 
+
+24:12 the safety Network and so we spend a lot
+24:14 
+
+24:14 of time on on that the second part is
+24:17 
+
+24:17 the inner loop productivity which is how
+24:19 
+
+24:19 quickly can you get like a single change
+24:22 
+
+24:22 um in quickly because ultimately it ends
+24:25 
+
+24:25 up being the decider for how many
+24:27 
+
+24:27 changes are you going to are you are you
+24:29 
+
+24:29 going to get through and then there
+24:31 
+
+24:31 system design snowflake actually went
+24:33 
+
+24:33 through a process that predates me
+24:35 
+
+24:35 starting about two years ago of how to
+24:38 
+
+24:38 make the system extensible as I said at
+24:40 
+
+24:40 snowflake we are very proud of the
+24:42 
+
+24:42 single unified product um but that can
+24:45 
+
+24:45 become like you know something that gets
+24:48 
+
+24:48 in the way of speed and so you have to
+24:50 
+
+24:50 design carefully for how do you make
+24:52 
+
+24:52 things extensible so things like AI um
+24:55 
+
+24:55 basically took advantage of that uh of
+24:58 
+
+24:58 off that framework um and then to a
+25:01 
+
+25:01 certain extent to be honest with you it
+25:03 
+
+25:03 is also the focus that leadership needs
+25:06 
+
+25:06 to bring on what is important how do you
+25:08 
+
+25:08 drive Clarity um at all times with all
+25:11 
+
+25:11 teams there is an Infinity of work to be
+25:13 
+
+25:13 done yeah um and driving that Clarity
+25:16 
+
+25:16 driving a sense of accountability with
+25:18 
+
+25:18 AI team for example I force every team
+25:21 
+
+25:21 uh to make promises for uh yes or three
+25:24 
+
+25:24 months but also what are you going to do
+25:25 
+
+25:25 the next two weeks um and calibrate
+25:27 
+
+25:27 yourself on did you on the things that
+25:29 
+
+25:29 you were doing um that you said you were
+25:31 
+
+25:31 going to be doing um it's pretty much in
+25:33 
+
+25:33 my mind if you want to get better and
+25:35 
+
+25:35 better life boils down to say what
+25:37 
+
+25:37 you're going to do and do what you said
+25:39 
+
+25:39 you you know you would do yeah um and
+25:42 
+
+25:42 and examine and make things make things
+25:45 
+
+25:45 better um and so it's a bunch of things
+25:47 
+
+25:47 that I've been there um that I've been
+25:49 
+
+25:49 building up at snowflake but certainly I
+25:52 
+
+25:52 bring this sense of quality and speed
+25:57 
+
+25:57 are both requirements in in what we do
+26:00 
+
+26:00 um it's a uh it's a change um but people
+26:04 
+
+26:04 like the idea um of uh just getting more
+26:07 
+
+26:07 things done yeah you know like you and I
+26:10 
+
+26:10 have never met a software engineer that
+26:11 
+
+26:11 says like yep I want to release that day
+26:13 
+
+26:13 after tomorrow it's like no you want to
+26:15 
+
+26:15 get it done today and so that itself
+26:18 
+
+26:18 builds momentum when you release a bunch
+26:20 
+
+26:20 of products and you have a lot of
+26:21 
+
+26:21 customers that are using it that becomes
+26:23 
+
+26:23 positive energy for the team to build on
+26:25 
+
+26:25 the good behavior um that kind of got
+26:27 
+
+26:27 you there and so I would say the team
+26:29 
+
+26:29 has responded very very well and I told
+26:31 
+
+26:31 them Hey listen this is the world of AI
+26:34 
+
+26:34 stuff changes every week um and you need
+26:37 
+
+26:37 to build with uh with that speed um I
+26:40 
+
+26:40 I'm I'm very happy with how the team has
+26:42 
+
+26:42 responded is there anything in
+26:43 
+
+26:43 particular that you're most proud of in
+26:45 
+
+26:45 terms of what you guys have done in AI
+26:47 
+
+26:47 thus far as a cortex analyst is probably
+26:50 
+
+26:50 the hardest product that we have
+26:53 
+
+26:53 designed and launched um things like uh
+26:57 
+
+26:57 uh cortex AI which is like our platform
+26:59 
+
+26:59 a layer I'm I'm proud of it um but you
+27:02 
+
+27:02 know it is it is sort of predictable
+27:04 
+
+27:04 infrastructure work even though there's
+27:06 
+
+27:06 a lot underneath in terms of hey should
+27:09 
+
+27:09 you use V VM or something else how do
+27:11 
+
+27:11 you optimize F inference how do you get
+27:14 
+
+27:14 capacity in like this annoyingly crazy
+27:16 
+
+27:16 world where it's very hard to get your
+27:18 
+
+27:18 hands on gpus there's a bunch of stuff
+27:21 
+
+27:21 um but to me that is a unique that
+27:24 
+
+27:24 things like that things like document AI
+27:27 
+
+27:27 are a unique combination of our
+27:29 
+
+27:29 strengths being applied to new areas in
+27:32 
+
+27:32 ways that can make a big difference to
+27:34 
+
+27:34 our customers yeah um and you know but
+27:37 
+
+27:37 you also know Pat that this is a little
+27:39 
+
+27:39 bit of like you know who's your favorite
+27:41 
+
+27:41 child so I can't really do that um and
+27:43 
+
+27:43 so there's a there's a bunch of stuff
+27:45 
+
+27:45 like even if you take Polaris which is
+27:47 
+
+27:47 our Cloud catalog you know done in a
+27:49 
+
+27:49 matter of three months and so um I think
+27:53 
+
+27:53 there's a lot of energy within within
+27:55 
+
+27:55 the team because um you know it's a slow
+27:58 
+
+27:58 message but it's getting through that
+27:60 
+
+27:60 you can have speed and quality they're
+28:03 
+
+28:03 just different aspects of the same
+28:05 
+
+28:05 problem um and my firm belief All
+28:08 
+
+28:08 Through My Life um is that virtuosity
+28:12 
+
+28:12 Trump's strategy all day long what does
+28:15 
+
+28:15 that mean um your speed of execution
+28:18 
+
+28:18 your speed of reacting to situations um
+28:22 
+
+28:22 is going to Trump strategy very very
+28:25 
+
+28:25 quickly yes you need strategy um but
+28:28 
+
+28:28 life is never about fixed strategy
+28:30 
+
+28:30 because we live in a very very Dynamic
+28:33 
+
+28:33 World um it's hard to predict which
+28:35 
+
+28:35 product is going to be wildly successful
+28:37 
+
+28:37 what your competitor is going to do like
+28:39 
+
+28:39 we're going to talk about like gbd 5
+28:41 
+
+28:41 it's like it's a big unknown whether
+28:43 
+
+28:43 it's going to come out and what impact
+28:45 
+
+28:45 that's going to have so I place a huge
+28:48 
+
+28:48 amount of emphasis on you just need to
+28:50 
+
+28:50 be really really quick um at at what you
+28:54 
+
+28:54 do and I would say like that's the
+28:56 
+
+28:56 message that I'm trying to convey um to
+28:58 
+
+28:58 the team that's very um I see nice
+29:00 
+
+29:00 continuity from the slutman uh era into
+29:04 
+
+29:04 the Shar era because I I know I've heard
+29:06 
+
+29:06 Frank say at least a few times the
+29:07 
+
+29:07 general patent quotes a good plan
+29:10 
+
+29:10 executed violently today is better than
+29:11 
+
+29:11 a perfect plan tomorrow 100% 100% and uh
+29:16 
+
+29:16 and and I said that
+29:18 
+
+29:18 adaptability um Napoleon has a famous
+29:20 
+
+29:20 quote which roughly I mean it's not his
+29:23 
+
+29:23 it predates him it roughly translates
+29:25 
+
+29:25 into you know I I commit
+29:29 
+
+29:29 and I
+29:30 
+
+29:30 adap um which is you go into an
+29:32 
+
+29:32 important area knowing that you're not
+29:34 
+
+29:34 going to know everything um and then
+29:36 
+
+29:36 you're adaptive to the situation that
+29:38 
+
+29:38 actually presents itself yeah are there
+29:40 
+
+29:40 any misconceptions about Snowflake and
+29:42 
+
+29:42 AI that you want to debunk uh we are a
+29:44 
+
+29:44 real player um it used to be that
+29:46 
+
+29:46 snowflake used to be thought of as
+29:48 
+
+29:48 somebody that didn't really get um get
+29:50 
+
+29:50 AI um and uh you know but uh like early
+29:55 
+
+29:55 on uh we relied on things like more of a
+29:58 
+
+29:58 partnership oriented strategy for AI but
+30:00 
+
+30:00 my big um sort of observation
+30:04 
+
+30:04 realization um is that AI is a like it's
+30:09 
+
+30:09 a platform change in the sense that it
+30:13 
+
+30:13 is a new way in which you and I and
+30:15 
+
+30:15 everybody else in the world is going to
+30:17 
+
+30:17 get to software is going to get to
+30:20 
+
+30:20 Applications um and uh and so once we
+30:23 
+
+30:23 had that realization out came a bunch of
+30:26 
+
+30:26 product consequences which is a needs to
+30:28 
+
+30:28 be Central to snowflake um we need to
+30:31 
+
+30:31 make it super easy to both build
+30:32 
+
+30:32 applications but also build the most
+30:35 
+
+30:35 important applications ourselves Cort
+30:38 
+
+30:38 cortex analyst for example is a direct
+30:40 
+
+30:40 to business user application we've never
+30:43 
+
+30:43 really done things like that before it
+30:45 
+
+30:45 is driven by a strong belief um that AI
+30:49 
+
+30:49 is going to disrupt how information is
+30:51 
+
+30:51 going to be consumed very very broadly
+30:54 
+
+30:54 um and uh you know I am proud of having
+30:57 
+
+30:57 a world-class team uh from bottom to top
+31:00 
+
+31:00 from Foundation models to inference
+31:03 
+
+31:03 experts uh to product Engineers that
+31:05 
+
+31:05 integrate the AI uh plus also the
+31:09 
+
+31:09 product Engineers that are creating
+31:10 
+
+31:10 applications on top of uh on top of AI
+31:15 
+
+31:15 that combined with things like broad
+31:17 
+
+31:17 data access which is Polaris and um uh
+31:21 
+
+31:21 you know Iceberg uh I think puts us in a
+31:23 
+
+31:23 very very good position can we zoom out
+31:26 
+
+31:26 and ask a little bit about your I guess
+31:28 
+
+31:28 your hypotheses and your hot takes on
+31:30 
+
+31:30 the future of AI absolutely I just think
+31:32 
+
+31:32 you are so well positioned you you
+31:33 
+
+31:33 probably built one of the first if not
+31:35 
+
+31:35 the first kind of llm native consumer
+31:37 
+
+31:37 applications at Neva uh now and now
+31:40 
+
+31:40 obviously from your seat that snowflake
+31:41 
+
+31:41 you see so much um maybe first on the on
+31:44 
+
+31:44 the llm kind of Race To scale like what
+31:47 
+
+31:47 do you think about all that are we
+31:49 
+
+31:49 reaching the limits of scale like what's
+31:51 
+
+31:51 next for those guys I mean obviously
+31:53 
+
+31:53 this can go in a couple of different
+31:56 
+
+31:56 directions um I talked to a lot of
+31:58 
+
+31:58 experts
+31:59 
+
+31:59 um and uh you know there is a collective
+32:02 
+
+32:02 belief that there is a GPD 5 in the
+32:05 
+
+32:05 Horizon um what I don't think anyone has
+32:09 
+
+32:09 a
+32:10 
+
+32:10 um a clear bar for is what that's going
+32:15 
+
+32:15 to represent yeah um gbd4 was very cool
+32:19 
+
+32:19 um much faster it also integrated
+32:22 
+
+32:22 multimodality natively in a way that's
+32:25 
+
+32:25 pretty that's pretty amazing um but when
+32:27 
+
+32:27 you think about reasoning capabilities
+32:30 
+
+32:30 the ability to come up with plans for
+32:31 
+
+32:31 how to execute stuff um it didn't feel
+32:34 
+
+32:34 like it represented a step change um and
+32:39 
+
+32:39 uh while agents um are you know very hot
+32:44 
+
+32:44 uh similar to Cortex you know until
+32:46 
+
+32:46 cortex analyst came along uh people
+32:48 
+
+32:48 didn't really believe that you could
+32:50 
+
+32:50 build reliable talko data application
+32:52 
+
+32:52 they were always kind of hidden this um
+32:54 
+
+32:54 and remember the bar is very high um if
+32:56 
+
+32:56 you're giving data to a business user
+32:58 
+
+32:58 user like 75% accuracy is like one out
+33:01 
+
+33:01 of four wrong um and uh so I think the
+33:04 
+
+33:04 big unknown is whether these models are
+33:07 
+
+33:07 going to represent a a big step forward
+33:12 
+
+33:12 in things like multi-step reasoning um
+33:15 
+
+33:15 and if they can they're going to unleash
+33:18 
+
+33:18 like a whole new class of applications
+33:20 
+
+33:20 that you and I just cannot imagine um
+33:23 
+
+33:23 right now you know on the other hand I
+33:25 
+
+33:25 think when it comes to driving broad
+33:27 
+
+33:27 adoption
+33:29 
+
+33:29 um there is a lot that can be done with
+33:32 
+
+33:32 existing models so many things that are
+33:34 
+
+33:34 useful for you and me um every single
+33:38 
+
+33:38 day whether it's a piece of mail that
+33:40 
+
+33:40 we're looking at or looking through a
+33:41 
+
+33:41 PDF just think about all the TDM that
+33:44 
+
+33:44 all of us have to go through um and so I
+33:46 
+
+33:46 think there is huge impact to be had
+33:48 
+
+33:48 simply in AI technology just permeating
+33:51 
+
+33:51 software as we know it especially the uh
+33:54 
+
+33:54 the user input part of uh of software um
+33:58 
+
+33:58 so unlike other Technologies I think
+34:00 
+
+34:00 like there is enough that AI has already
+34:02 
+
+34:02 delivered that is going to have a
+34:04 
+
+34:04 meaningfully large impact on society is
+34:07 
+
+34:07 just going to take a while to uh to run
+34:09 
+
+34:09 out um you know I sincerely hope we
+34:13 
+
+34:13 don't get to a phase where uh you need
+34:16 
+
+34:16 uh a billion dollars to train a great
+34:18 
+
+34:18 new model I actually think that while
+34:20 
+
+34:20 what that model can do is cool I think
+34:23 
+
+34:23 it also reduces the number of people
+34:25 
+
+34:25 that can have models like that to a very
+34:27 
+
+34:27 small number
+34:28 
+
+34:28 um and I think competition is just
+34:31 
+
+34:31 overall uh healthy um so but it's very
+34:34 
+
+34:34 hard to make a call you mentioned this a
+34:36 
+
+34:36 little bit but I'm curious to get your
+34:37 
+
+34:37 take on it a bit more
+34:40 
+
+34:40 um you know if gp5 is delayed or not a
+34:43 
+
+34:43 big step up or whatever the case might
+34:45 
+
+34:45 be or if you just imagine a world in
+34:47 
+
+34:47 which the current capabilities of the
+34:49 
+
+34:49 foundation models that's what we've got
+34:52 
+
+34:52 and it comes down to how do we Implement
+34:54 
+
+34:54 those how do we optimize those how do we
+34:56 
+
+34:56 tune those one of the things that we
+34:58 
+
+34:58 hear from a lot of people building an AI
+35:00 
+
+35:00 the first couple weeks are like magic
+35:02 
+
+35:02 everything is amazing this is great yep
+35:05 
+
+35:05 and then the next few months are pretty
+35:06 
+
+35:06 painful oh shoot it can't do this corner
+35:08 
+
+35:08 case it can't do that corner case it's
+35:10 
+
+35:10 not quite accurate enough and people get
+35:12 
+
+35:12 really frustrated and sometimes they can
+35:15 
+
+35:15 engineer their way out of it sometimes
+35:16 
+
+35:16 they can't but sometimes it leaves
+35:19 
+
+35:19 people feeling kind of disillusioned
+35:20 
+
+35:20 like this stuff's not as good as I
+35:22 
+
+35:22 thought it was you know maybe the time's
+35:23 
+
+35:23 not right and so I'd love to get your
+35:26 
+
+35:26 take if we froze the capabilities of the
+35:27 
+
+35:27 found models
+35:29 
+
+35:29 today what sort of changes will we see
+35:32 
+
+35:32 in the Enterprise landscape over the
+35:34 
+
+35:34 next handful of years what sort of stuff
+35:36 
+
+35:36 will we not see because we're just not
+35:38 
+
+35:38 ready for it yet to me this is this is
+35:40 
+
+35:40 honestly the magic of software
+35:41 
+
+35:41 engineering part
+35:45 
+
+35:45 of what I feel we have implicitly
+35:49 
+
+35:49 accepted with Chad
+35:51 
+
+35:51 GPT um is it's sort of like is it's
+35:56 
+
+35:56 omniscience you're like it can do
+35:58 
+
+35:58 everything they don't say it in fact
+36:01 
+
+36:01 they they go to they take pains to not
+36:03 
+
+36:03 say it but just like Google search never
+36:06 
+
+36:06 tells you that's a dumb
+36:09 
+
+36:09 query think about it right kind of fun
+36:11 
+
+36:11 if it did if it right but there are lots
+36:13 
+
+36:13 of dumb queries that people type into it
+36:14 
+
+36:14 Google's like oh I type lots of dumb
+36:16 
+
+36:16 queries yeah they're like oh here are
+36:18 
+
+36:18 100 million pages on the VB and here are
+36:20 
+
+36:20 the 10 best Pages for you pad for your
+36:22 
+
+36:22 dumb
+36:24 
+
+36:24 query um and so I think it's like it's a
+36:28 
+
+36:28 some of it is good oldfashioned uh you
+36:33 
+
+36:33 know AI enthusiasm it can do everything
+36:37 
+
+36:37 uh but some of it is just also plain
+36:39 
+
+36:39 dumb you should not be doing that uh to
+36:43 
+
+36:43 me this is where things like okay um
+36:47 
+
+36:47 let's actually make grounded chat Bots
+36:49 
+
+36:49 the norm for you know like interacting
+36:52 
+
+36:52 with information yeah um the model is uh
+36:57 
+
+36:57 there you know this application should
+36:59 
+
+36:59 tell you where it got where it got the
+37:01 
+
+37:01 information from it should be very easy
+37:03 
+
+37:03 for you to verify said piece of uh of
+37:06 
+
+37:06 information and feel good yeah that
+37:08 
+
+37:08 you're actually getting something
+37:10 
+
+37:10 similarly you need a test framework you
+37:12 
+
+37:12 know um like Harrison talked about an
+37:15 
+
+37:15 observability framework to do this on an
+37:16 
+
+37:16 ongoing basis but I think sometimes when
+37:19 
+
+37:19 it comes to things like chat Bots uh
+37:21 
+
+37:21 people forget wait like there is such a
+37:22 
+
+37:22 thing as a set of regression test there
+37:24 
+
+37:24 is such a thing um as acceptance
+37:27 
+
+37:27 criteria for s software everything that
+37:29 
+
+37:29 we have like if somebody were to build a
+37:31 
+
+37:31 new application um like one of your
+37:33 
+
+37:33 Founders your expectation is that you
+37:36 
+
+37:36 know they got their clue together um and
+37:39 
+
+37:39 are actually testing stuff before they
+37:40 
+
+37:40 give it to customers yeah and somehow in
+37:42 
+
+37:42 the world of AI we're like no no no no
+37:43 
+
+37:43 no it doesn't matter and these models
+37:46 
+
+37:46 you know react pretty violently to the
+37:48 
+
+37:48 addition of a period in a prom MH um and
+37:51 
+
+37:51 so so I think there needs to be this
+37:53 
+
+37:53 this idea that like you need good
+37:56 
+
+37:56 oldfashioned software engineering and
+37:58 
+
+37:58 you need to measure the performance of
+37:60 
+
+37:60 these things um and uh and so I think
+38:03 
+
+38:03 this is where it goes uh you know away
+38:06 
+
+38:06 from these are hobby projects that can
+38:08 
+
+38:08 be hit or miss to you know here somebody
+38:11 
+
+38:11 that can actually software engineer this
+38:12 
+
+38:12 for you and we think of that as a core
+38:15 
+
+38:15 strength of what we bring to the table
+38:17 
+
+38:17 which is like you should be able to have
+38:20 
+
+38:20 a predictable way to say you know this
+38:23 
+
+38:23 chat part is going to work or this agent
+38:25 
+
+38:25 likee application this is the success
+38:27 
+
+38:27 rate that it's going to have um or this
+38:30 
+
+38:30 is what cortex analyst is going to do
+38:31 
+
+38:31 for you in your domain um so that you're
+38:35 
+
+38:35 like okay I feel good about about
+38:37 
+
+38:37 deploying it um so even if GPD 5 did not
+38:40 
+
+38:40 happen I think there is a lot of magic
+38:43 
+
+38:43 to be done um but it's also just work
+38:48 
+
+38:48 yeah yeah yeah yeah well put well what's
+38:50 
+
+38:50 the um I forget who said it there's a
+38:53 
+
+38:53 quote that we use every now and then uh
+38:56 
+
+38:56 people miss most great opportun unities
+38:58 
+
+38:58 because they tend to be wearing
+38:60 
+
+38:60 coveralls and they look like work you
+39:02 
+
+39:02 know I think this is one of those where
+39:04 
+
+39:04 like anything else if you want it to be
+39:06 
+
+39:06 great you got to work pretty hard on it
+39:08 
+
+39:08 you got you got you got to you got to
+39:09 
+
+39:09 sweat it out and to me this is also the
+39:12 
+
+39:12 place um where the thinking of recall as
+39:17 
+
+39:17 something that you should tune thinking
+39:19 
+
+39:19 of recall as an important part of how
+39:22 
+
+39:22 you think about these applications any
+39:24 
+
+39:24 ml engineer worth their Sal salt will
+39:26 
+
+39:26 promptly come and tell you it's like
+39:28 
+
+39:28 okay I have an au curve for you what are
+39:31 
+
+39:31 they trying to say they're basically
+39:32 
+
+39:32 trying to say there is a tradeoff
+39:34 
+
+39:34 between how much you squeeze the model
+39:36 
+
+39:36 to do and how good it is there's no
+39:39 
+
+39:39 perfect answer that's really what the a
+39:41 
+
+39:41 curve represents um and the more we
+39:44 
+
+39:44 think of AI applications as also having
+39:47 
+
+39:47 this Au curve there are trade-offs to be
+39:49 
+
+39:49 made between um reliability and ability
+39:53 
+
+39:53 to respond and that's a very conscious
+39:55 
+
+39:55 factor in how you should think um about
+39:58 
+
+39:58 things I think the better off we are
+39:60 
+
+39:60 going to be in terms of where can they
+40:02 
+
+40:02 deliver value yeah yeah going to go back
+40:04 
+
+40:04 to the point you said a little bit
+40:05 
+
+40:05 earlier about reasoning and kind of that
+40:08 
+
+40:08 delivering the next big leap uh
+40:09 
+
+40:09 hopefully for gp5 and and and Claude Etc
+40:14 
+
+40:14 uh it seems like the approach that most
+40:15 
+
+40:15 folks are taking is kind of bringing in
+40:18 
+
+40:18 search at inference time and and a lot
+40:20 
+
+40:20 of more inference time compute and kind
+40:22 
+
+40:22 of this alphao style search stuff I'm
+40:25 
+
+40:25 curious just giv you are you know one of
+40:28 
+
+40:28 the best people in the world at search
+40:29 
+
+40:29 like do you think that is the path to
+40:31 
+
+40:31 the promised land on on the research
+40:32 
+
+40:32 side for for bringing reasoning into
+40:34 
+
+40:34 these General models give me a little
+40:36 
+
+40:36 bit more context like I can certainly
+40:37 
+
+40:37 see how search plays a role in how these
+40:39 
+
+40:39 models operate but um can you just tell
+40:42 
+
+40:42 me a little bit more yeah so I mean if
+40:43 
+
+40:43 you take a the example of you know if if
+40:45 
+
+40:45 you take Alpha go um and uh you're
+40:48 
+
+40:48 trying to decide what move to do next um
+40:50 
+
+40:50 if you can if you can kind of create a
+40:53 
+
+40:53 branching tree of um here are all the
+40:55 
+
+40:55 possible moves from here and um
+40:58 
+
+40:58 do a search kind of over that of like
+40:60 
+
+40:60 here's what move I should do next um I
+41:02 
+
+41:02 think people are trying to bring that
+41:03 
+
+41:03 logic into out of the gaming World um
+41:06 
+
+41:06 and into domains like I don't know if
+41:08 
+
+41:08 you saw Devon's
+41:09 
+
+41:09 cognition um where they're effectively
+41:12 
+
+41:12 searching over different things that you
+41:13 
+
+41:13 can do in your coding as well and so
+41:15 
+
+41:15 just like at inference time just giving
+41:17 
+
+41:17 the model kind of the ability to like
+41:18 
+
+41:18 search possible paths to decide what to
+41:20 
+
+41:20 do yeah there have been a number of
+41:22 
+
+41:22 papers um you know on this I think even
+41:25 
+
+41:25 nebs had a bunch of pap first about
+41:28 
+
+41:28 searching over domains as you as as you
+41:30 
+
+41:30 come up with a plan um what I don't
+41:35 
+
+41:35 have to me it's important to understand
+41:37 
+
+41:37 I I'm prating the name of the neps paper
+41:39 
+
+41:39 but it also had the same problem they
+41:41 
+
+41:41 were doing Tre search um is that they
+41:45 
+
+41:45 fundamentally rely on uh a model
+41:49 
+
+41:49 typically a neural network um being able
+41:52 
+
+41:52 to to do things like grade a particular
+41:56 
+
+41:56 uh point in a like a state space yeah um
+42:00 
+
+42:00 basically like Alpo for example um you
+42:03 
+
+42:03 know has pretty solid ideas about what
+42:06 
+
+42:06 is an advantageous position versus what
+42:08 
+
+42:08 is not um and the search is Guided by
+42:11 
+
+42:11 you know by that um what isn't clear in
+42:15 
+
+42:15 sort of you know um very open-ended
+42:18 
+
+42:18 questions is as you come up with
+42:20 
+
+42:20 alternatives for the search space um you
+42:23 
+
+42:23 know can you actually grade them
+42:25 
+
+42:25 effectively if it's like an open-ended
+42:26 
+
+42:26 plan certainly number of these
+42:29 
+
+42:29 techniques work well for games that have
+42:31 
+
+42:31 structure um in which you can actually
+42:34 
+
+42:34 learn um what does optimal mean and you
+42:36 
+
+42:36 can begin to optimize um towards it what
+42:40 
+
+42:40 I don't have as good a feel for is um
+42:43 
+
+42:43 let's take like you know something as
+42:44 
+
+42:44 simple as cooking um you would think
+42:47 
+
+42:47 it's you know it's simple but if you
+42:49 
+
+42:49 take I don't know 10 ingredients and 20
+42:52 
+
+42:52 steps that you can take along the way um
+42:55 
+
+42:55 and various things that you can do in
+42:57 
+
+42:57 each of these 20 steps and the steps
+42:58 
+
+42:58 themselves can be short they can be long
+43:01 
+
+43:01 uh you quickly end up with like this
+43:03 
+
+43:03 crazy combinatorial explosion of
+43:05 
+
+43:05 different ways of doing things and yet
+43:08 
+
+43:08 there is just one perfect recipe or two
+43:10 
+
+43:10 or three that's the part honestly I
+43:13 
+
+43:13 don't have a good feel for in terms of
+43:16 
+
+43:16 like how do you even begin to measure
+43:18 
+
+43:18 the jump um in terms of cognitive
+43:20 
+
+43:20 ability um it's easy in structured
+43:23 
+
+43:23 environments but like out in the real
+43:25 
+
+43:25 world where you're trying to do some
+43:27 
+
+43:27 pretty compx comp Lex things I think it
+43:28 
+
+43:28 becomes trickier um we've built
+43:30 
+
+43:30 prototypes um for uh basically like
+43:34 
+
+43:34 agent analysts but it's again a
+43:36 
+
+43:36 structured space yeah um so what we do
+43:38 
+
+43:38 one one thing I've done numbers like
+43:41 
+
+43:41 pretty much all my life I used to do
+43:43 
+
+43:43 whatever household finances from my dad
+43:45 
+
+43:45 when I was 10 same like we did in a
+43:46 
+
+43:46 notebook um and over the past 20 years
+43:49 
+
+43:49 every day I get like this email um that
+43:52 
+
+43:52 tells me how my company did the previous
+43:53 
+
+43:53 day used to be called be counters at
+43:55 
+
+43:55 Google every day you got you got a
+43:57 
+
+43:57 report card um every few weeks something
+43:59 
+
+43:59 would go wrong like you know you made
+44:02 
+
+44:02 less money somewhere um and we would
+44:04 
+
+44:04 like start this predictable problem like
+44:07 
+
+44:07 predictable exercise of some poor
+44:09 
+
+44:09 analyst would like go drill down into a
+44:11 
+
+44:11 bunch of different things blah blah blah
+44:12 
+
+44:12 blah blah look at slice stuff and then
+44:14 
+
+44:14 they would come back with like oh Shar
+44:16 
+
+44:16 it was like Easter in Germany and
+44:19 
+
+44:19 Ascension Day in Brazil and that's why
+44:21 
+
+44:21 our numbers were off and it took like a
+44:24 
+
+44:24 decade to model all of these complex
+44:26 
+
+44:26 things in the world R into like a
+44:28 
+
+44:28 prediction model so you're like okay I
+44:30 
+
+44:30 can I can begin to predict but if you
+44:32 
+
+44:32 think about it the analysis that they do
+44:34 
+
+44:34 is constraint it's pretty much If a
+44:36 
+
+44:36 metric is wrong go slice it by 10
+44:38 
+
+44:38 different dimensions go look at the
+44:40 
+
+44:40 results see where likely the problem is
+44:43 
+
+44:43 um certainly we have built prototypes of
+44:45 
+
+44:45 this AI analyst that can remove 60 70%
+44:49 
+
+44:49 of the work that is needed in actually
+44:50 
+
+44:50 diagnosing prop it's pretty free form
+44:53 
+
+44:53 but you can make a you can make a
+44:54 
+
+44:54 language if you can tell a language
+44:55 
+
+44:55 model these are my attributes oh go call
+44:58 
+
+44:58 cortex analyst with all of these
+44:59 
+
+44:59 parameters get the output take a look at
+45:01 
+
+45:01 it and then tell me what I should do
+45:02 
+
+45:02 next um so you can begin to automate
+45:05 
+
+45:05 some of it so that this actually useful
+45:07 
+
+45:07 um so you can do things like that but a
+45:10 
+
+45:10 much more open-ended problem um of here
+45:13 
+
+45:13 are a hundred different things
+45:15 
+
+45:15 incomparable things you can do and how
+45:17 
+
+45:17 do you judge and how do you prune I
+45:19 
+
+45:19 think that's a part I honestly don't
+45:21 
+
+45:21 have good intuition for totally I want
+45:24 
+
+45:24 to ask about search in a different sense
+45:25 
+
+45:25 if that's okay um you obviously have a
+45:29 
+
+45:29 incredible point of view on search given
+45:30 
+
+45:30 your time at Google and and at Neva and
+45:33 
+
+45:33 it seems like right now the you know the
+45:36 
+
+45:36 consumer world is watching excitedly and
+45:38 
+
+45:38 nervously about you know is um is there
+45:41 
+
+45:41 going to be a new kind of search king
+45:43 
+
+45:43 crown um I'm curious your take on on on
+45:46 
+
+45:46 the whole kind of AI search space right
+45:48 
+
+45:48 now how about a hot take on perplexity
+45:50 
+
+45:50 do you have a hot take on
+45:51 
+
+45:51 perplexity like look uh I'm happy for
+45:54 
+
+45:54 perplexity uh and it reminds you again
+45:57 
+
+45:57 that right time you know uh right time
+45:60 
+
+45:60 right place matters a lot at Neva you
+46:02 
+
+46:02 know which uh converged on to a view of
+46:05 
+
+46:05 what search should be that was very
+46:07 
+
+46:07 similar to perplexity we were just two
+46:09 
+
+46:09 three years early um and timing ends up
+46:12 
+
+46:12 being everything um you can think of
+46:16 
+
+46:16 perplexity as uh as like a consumer
+46:20 
+
+46:20 manifestation of how we want to deal
+46:23 
+
+46:23 with
+46:24 
+
+46:24 information like it's just um let's face
+46:26 
+
+46:26 it uh I want to look through an
+46:29 
+
+46:29 eight-page doc to find the two lines
+46:31 
+
+46:31 that I really care about said no
+46:34 
+
+46:34 one but that's search um and so in that
+46:37 
+
+46:37 sense it's absolutely um the right place
+46:40 
+
+46:40 I think the more important question is
+46:44 
+
+46:44 um whether the business of search which
+46:47 
+
+46:47 is carefully preserved with business
+46:51 
+
+46:51 contracts not with consumer Choice uh
+46:54 
+
+46:54 consumer choice is fiction um in a whole
+46:57 
+
+46:57 bunch of things that uh that we do um we
+46:60 
+
+46:60 eat what's put in front of us um and we
+47:02 
+
+47:02 will search with the uh the default
+47:04 
+
+47:04 search engine that came in our browsers
+47:07 
+
+47:07 okay we might resist it but on aggregate
+47:09 
+
+47:09 with Humanity that's the reality of of
+47:12 
+
+47:12 the world and so I um you know I I would
+47:17 
+
+47:17 say that that is the bigger challenge um
+47:20 
+
+47:20 because search is mostly locked up by a
+47:23 
+
+47:23 few players that control the entry
+47:26 
+
+47:26 points um but I think that's the
+47:28 
+
+47:28 fundamental problem which is it is very
+47:33 
+
+47:33 difficult um to break into the business
+47:36 
+
+47:36 of
+47:37 
+
+47:37 search consumers don't like doing stuff
+47:40 
+
+47:40 and this also gets to one of the kind of
+47:41 
+
+47:41 broader questions in the world of AI
+47:43 
+
+47:43 right now which is incumbents versus
+47:45 
+
+47:45 startups and historically the battle is
+47:49 
+
+47:49 can the incumbents with distribution
+47:50 
+
+47:50 build cool products y before the
+47:53 
+
+47:53 startups with cool products build
+47:55 
+
+47:55 distribution and I think search is a
+47:56 
+
+47:56 great example exle that you might have
+47:58 
+
+47:58 the coolest product in the world it's
+47:59 
+
+47:59 awfully hard to change consumer Behavior
+48:01 
+
+48:01 that's right that's right um AI is an
+48:04 
+
+48:04 interesting test case for this because
+48:05 
+
+48:05 so much of the coolness of the products
+48:09 
+
+48:09 is available through the open source
+48:11 
+
+48:11 world or through thirdparty models and
+48:14 
+
+48:14 so it feels like it might be a scenario
+48:16 
+
+48:16 in which incumbents are advantaged
+48:19 
+
+48:19 versus the startups but do you have a
+48:20 
+
+48:20 point of view on that I would take two
+48:22 
+
+48:22 different lens uh to this one um one is
+48:26 
+
+48:26 what you said about models uh open
+48:29 
+
+48:29 source models plus players like meta
+48:32 
+
+48:32 that basically have infinite budgets
+48:35 
+
+48:35 yeah um under willing to open source
+48:36 
+
+48:36 models I think the world of creating
+48:39 
+
+48:39 models from scratch um unless you have
+48:43 
+
+48:43 an attached hyperscaler an attached
+48:46 
+
+48:46 business um looks very very hard yeah um
+48:50 
+
+48:50 and uh um you know so I think as I said
+48:54 
+
+48:54 I hope this doesn't go to like an ergo
+48:57 
+
+48:57 uh three GPD 5 class models that the
+48:59 
+
+48:59 world has because I think it's a bad
+49:01 
+
+49:01 ending for uh for the world uh so I
+49:04 
+
+49:04 would definitely say that Foundation
+49:07 
+
+49:07 model companies um without a strong
+49:11 
+
+49:11 business um to accompany them it can be
+49:13 
+
+49:13 a product like I think open AI has
+49:15 
+
+49:15 created a pretty solid product it's not
+49:17 
+
+49:17 just a foundation model yeah um I think
+49:20 
+
+49:20 that's one thing to keep in mind um I'd
+49:22 
+
+49:22 answer your second question um of sort
+49:26 
+
+49:26 of disruption SL Innovation uh from a
+49:29 
+
+49:29 historical lens uh I think of every
+49:33 
+
+49:33 generation of Silicon Valley companies
+49:36 
+
+49:36 um as learning from the previous ones um
+49:40 
+
+49:40 they are uh smarter they know the ways
+49:43 
+
+49:43 in which things can be disrupted uh and
+49:47 
+
+49:47 they lean in pretty heavily uh you know
+49:50 
+
+49:50 we all know um for example the uh the
+49:55 
+
+49:55 IBM to the mid-range computer computer
+49:57 
+
+49:57 sort of disruption um and then the decks
+49:60 
+
+50:00 and sgis of the world uh then getting
+50:03 
+
+50:03 disrupted by the microsofts of the uh of
+50:06 
+
+50:06 the world um and then the web coming
+50:09 
+
+50:09 along leading to the rise of companies
+50:11 
+
+50:11 like Google or
+50:13 
+
+50:13 mobile um I would say that in each and
+50:17 
+
+50:17 every one of these transitions um
+50:20 
+
+50:20 powerful incumbents with very large
+50:22 
+
+50:22 Pockets um have shown an ability to lean
+50:26 
+
+50:26 in sooner lean in fast Master at Google
+50:28 
+
+50:28 for example when I was there we leaned
+50:30 
+
+50:30 in very heavily um into the home
+50:34 
+
+50:34 assistance because Alexa was going to
+50:37 
+
+50:37 take over the world that was going to be
+50:39 
+
+50:39 the way in which you and I and everybody
+50:41 
+
+50:41 else searched we were terrified um and
+50:44 
+
+50:44 we put a pile of money into it and
+50:47 
+
+50:47 nothing came off it and it didn't matter
+50:51 
+
+50:51 why because the cost of a disruption um
+50:55 
+
+50:55 is way higher than the amount of
+50:57 
+
+50:57 investment that you have to make um i'
+51:00 
+
+51:00 would say now this is generation five or
+51:02 
+
+51:02 something to that effect I'd say all the
+51:05 
+
+51:05 incumbents are very aware of what can be
+51:09 
+
+51:09 disrupted um and they lean into it like
+51:12 
+
+51:12 there's a bunch of strategic thinkers as
+51:13 
+
+51:13 I told you I think of AI as basically
+51:16 
+
+51:16 shuffling the tiles on Enterprise
+51:19 
+
+51:19 software and a part of me goes like you
+51:21 
+
+51:21 know no way snowflake is going to be
+51:23 
+
+51:23 leading the charge when it comes to AI
+51:26 
+
+51:26 not waiting for for it to develop but I
+51:28 
+
+51:28 think you see every Enterprise AI
+51:31 
+
+51:31 company lean in the same way and so this
+51:33 
+
+51:33 to me would be the question about how
+51:35 
+
+51:35 much disruption is AI going to drive in
+51:39 
+
+51:39 consumer software certainly there'll be
+51:41 
+
+51:41 new categories to me if I were a startup
+51:44 
+
+51:44 um I'd feel a lot more comfortable that
+51:46 
+
+51:46 I'm creating a new category image
+51:48 
+
+51:48 creation like done in a mass scale
+51:50 
+
+51:50 clearly amazing but the same goes for
+51:53 
+
+51:53 video same goes for voice there's a
+51:54 
+
+51:54 bunch of specialization that you can do
+51:56 
+
+51:56 here them to marketing um new things
+51:59 
+
+51:59 feel like a much safer bet in the AI
+52:02 
+
+52:02 world than you know take your pick I can
+52:05 
+
+52:05 do XYZ faster because I am AI
+52:10 
+
+52:10 enabled I don't think of that as having
+52:12 
+
+52:12 a whole lot of legs yeah do you think
+52:14 
+
+52:14 chat JB has a chance of becoming the
+52:16 
+
+52:16 next Google and to your point on
+52:17 
+
+52:17 consumer choice being a mirage and like
+52:20 
+
+52:20 you know business deals or or where this
+52:21 
+
+52:21 stuff gets locked down like I'm curious
+52:24 
+
+52:24 what you think of the Apple chat GPT
+52:25 
+
+52:25 deal I think chat GP I mean the the
+52:28 
+
+52:28 phone is a is a pretty interesting place
+52:31 
+
+52:31 um to me um the phone because it's a
+52:34 
+
+52:34 controlled environment actually offers
+52:37 
+
+52:37 enormous potential for
+52:39 
+
+52:39 consumers um I tell people something as
+52:43 
+
+52:43 ridiculous as copying I don't know an
+52:46 
+
+52:46 address like from your calendar or a
+52:49 
+
+52:49 piece of email or to Uber so dumb so
+52:52 
+
+52:52 hard um you know like you would think
+52:55 
+
+52:55 City would like you know do this um copy
+52:60 
+
+52:60 copy the address from this email from
+53:01 
+
+53:01 Pat and stick it into stick it into Uber
+53:03 
+
+53:03 so I can get an Uber um so to me I think
+53:07 
+
+53:07 like there's a huge amount of potential
+53:08 
+
+53:08 again in like mundane applications um
+53:11 
+
+53:11 and because the mobile ecosystem is a uh
+53:14 
+
+53:14 is a pretty closed one where Apple can
+53:17 
+
+53:17 mandate things like you must have apis
+53:20 
+
+53:20 that make it possible to access your
+53:22 
+
+53:22 functionality um using language models
+53:25 
+
+53:25 or else
+53:27 
+
+53:27 you might not get any traffic that
+53:29 
+
+53:29 sounds like a pretty good incentive for
+53:30 
+
+53:30 everybody uh to kind of get in line so I
+53:33 
+
+53:33 think there's a huge amount of potential
+53:34 
+
+53:34 there I honestly wish there was more
+53:36 
+
+53:36 innovation in this space because again
+53:39 
+
+53:39 all of this is super doable technology
+53:42 
+
+53:42 you and I can argue about should this be
+53:44 
+
+53:44 done in the cloud what can be done on
+53:45 
+
+53:45 the phone but like as a consumer do you
+53:48 
+
+53:48 care I'm like we have great connections
+53:50 
+
+53:50 I'm kind of like if this thing works
+53:51 
+
+53:51 only when I'm connected to the internet
+53:53 
+
+53:53 I'll take it um and so to me those are
+53:56 
+
+53:56 those are sort of uh you know those
+53:58 
+
+53:58 those are details um I actually think
+54:00 
+
+54:00 Chad gbd um is an amazing product
+54:04 
+
+54:04 there's underlying technology um but in
+54:08 
+
+54:08 so many different ways um they've
+54:10 
+
+54:10 actually created a stunningly beautiful
+54:12 
+
+54:12 product experience yeah um that spans
+54:15 
+
+54:15 the gamut from you know they've turned
+54:18 
+
+54:18 pretty much like visually illiterate
+54:20 
+
+54:20 people like me into budding artists I
+54:23 
+
+54:23 tell people it's like I'm good with
+54:24 
+
+54:24 words I can talk all day long I can
+54:26 
+
+54:26 write all all day long um and the magic
+54:29 
+
+54:29 that I can do with chat GPD is truly
+54:31 
+
+54:31 amazing um that or uh even even things
+54:35 
+
+54:35 like I you know for example like I'm on
+54:37 
+
+54:37 this language cck I'm learning Hindi and
+54:40 
+
+54:40 I at some point I was like oh I'm
+54:41 
+
+54:41 struggling with these numbers um but off
+54:43 
+
+54:43 comes a prompt that says Hey I want a
+54:46 
+
+54:46 CSV that translates numbers just a
+54:48 
+
+54:48 string of numbers to Hindi and can you
+54:49 
+
+54:49 do that can you just give me a CSV file
+54:51 
+
+54:51 that I can import into Quizlet that
+54:53 
+
+54:53 literally is faster for me to type than
+54:56 
+
+54:56 to describe to you
+54:58 
+
+54:58 I type it in out comes a CSV file in 10
+54:60 
+
+54:60 seconds I download it into Quizlet I
+55:02 
+
+55:02 have a
+55:03 
+
+55:03 quiz um and so and pretty much
+55:06 
+
+55:06 everything that I used to do with Python
+55:07 
+
+55:07 scripts on structured data I just do
+55:10 
+
+55:10 like with with English you just upload
+55:12 
+
+55:12 the CSV file and you're like oh add
+55:14 
+
+55:14 these two columns do this other thing
+55:15 
+
+55:15 format it into this nice table and get
+55:17 
+
+55:17 it out for me um it's it's magic so I
+55:20 
+
+55:20 think there's absolutely a there there
+55:23 
+
+55:23 in terms of like is it a great product
+55:26 
+
+55:26 and a great business um but you know
+55:31 
+
+55:31 being the king of search is like a few
+55:32 
+
+55:32 more zeros they don't come easy to
+55:34 
+
+55:34 people yeah all right uh should we close
+55:38 
+
+55:38 with a couple of quick fire questions
+55:40 
+
+55:40 rapid fire questions yeah let's do it
+55:42 
+
+55:42 okay who do you admire most in the world
+55:45 
+
+55:45 of AI who do I admire most in the world
+55:48 
+
+55:48 of AI
+55:52 
+
+55:52 um I admire the people that are in you
+55:56 
+
+55:56 know like working on things like
+56:00 
+
+56:00 Foundation models um that are able to do
+56:04 
+
+56:04 it on on on the cheap without the
+56:07 
+
+56:07 Infinity of resources um so for example
+56:10 
+
+56:10 people like uh Arthur or Danny uh I
+56:14 
+
+56:14 think they've gotten Danny yogot from
+56:16 
+
+56:16 Rea I think they've gotten just like a
+56:18 
+
+56:18 remarkable amount of uh things done or
+56:21 
+
+56:21 from our own team folks like samam and
+56:23 
+
+56:23 yushang uh to me they represent so much
+56:26 
+
+56:26 creativity because I go and tell them ah
+56:28 
+
+56:28 limited budget and what can you you know
+56:30 
+
+56:30 what what can you do um I think there
+56:33 
+
+56:33 are there are a set of just like amazing
+56:35 
+
+56:35 Earnest people that are driving research
+56:38 
+
+56:38 under tight constraints um so there's
+56:41 
+
+56:41 there's obviously lots and lots of
+56:42 
+
+56:42 people um but it's the it's it's the
+56:45 
+
+56:45 doers that are doing the work um
+56:47 
+
+56:47 imagining our future um that I'm a huge
+56:50 
+
+56:50 fan of what's your favorite AI
+56:53 
+
+56:53 application uh Chad gbd by far easy one
+56:56 
+
+56:56 easy one um just the utility that I get
+56:59 
+
+56:59 from it day in and day out is just truly
+57:01 
+
+57:01 remarkable okay follow up then uh what's
+57:03 
+
+57:03 an AI app that you wish existed um like
+57:06 
+
+57:06 an actual talk to your phone that can
+57:08 
+
+57:08 actually mediate between apps um that
+57:11 
+
+57:11 would be that would be super cool
+57:12 
+
+57:12 because remember as I said like just
+57:13 
+
+57:13 flipping between applications doing very
+57:15 
+
+57:15 uh you know little things such such such
+57:17 
+
+57:17 a pain yeah all right we're going to end
+57:19 
+
+57:19 on an optimistic question what is the
+57:22 
+
+57:22 best thing that can happen in the world
+57:25 
+
+57:25 of AI over the next or 10 years what
+57:27 
+
+57:27 what would you be most excited to see
+57:29 
+
+57:29 coming out of the world of AI software
+57:32 
+
+57:32 which you can think of as encoding our
+57:37 
+
+57:37 thinking uh capturing our ability to
+57:40 
+
+57:40 think um and act in real world situation
+57:43 
+
+57:43 clearly has been transformational over
+57:45 
+
+57:45 the past 50 plus you know years um to me
+57:50 
+
+57:50 AI as a as an
+57:54 
+
+57:54 enabler um of access both to the act of
+57:57 
+
+57:57 creating software but using software um
+58:01 
+
+58:01 to all of the people in the world would
+58:03 
+
+58:03 be a significant step up and as I said I
+58:06 
+
+58:06 don't think it's like lots of fancy new
+58:09 
+
+58:09 technology that you need the newer
+58:11 
+
+58:11 technology can certainly help newer
+58:13 
+
+58:13 classes of
+58:14 
+
+58:14 applications um you know I was very
+58:17 
+
+58:17 proud of the fact that we put Google
+58:19 
+
+58:19 search thanks to things like Android
+58:21 
+
+58:21 into the hands of pretty much every
+58:23 
+
+58:23 human being on the planet it's it is a
+58:25 
+
+58:25 gen you know you can be cynical about
+58:27 
+
+58:27 technology but was a genuine step
+58:29 
+
+58:29 forward for Humanity um to me just like
+58:32 
+
+58:32 AI models as like the new layer between
+58:35 
+
+58:35 humans and software and software and
+58:37 
+
+58:37 software um is actually a significant
+58:40 
+
+58:40 step forward just in having this
+58:43 
+
+58:43 functionality be vastly more accessible
+58:45 
+
+58:45 to lots more people as I said both in
+58:48 
+
+58:48 the creation aspects but also in the
+58:50 
+
+58:50 consumption aspect I think that's a
+58:52 
+
+58:52 pretty cool thing to look forward
+58:54 
+
+58:54 awesome thank you Shar thanks for doing
+58:56 
+
+58:56 this thank you Pat thank you Sonia thank
+58:58 
+
+58:58 you
+58:60 
+
+58:60 [Music]
+59:12 
+
+59:12 [Music]

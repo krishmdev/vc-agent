@@ -1,0 +1,594 @@
+00:00 for OpenAI across the board, it's really important that we kind of like iteratively deploy technology in a way where we're not just like dropping
+00:06 bombshells on the world when there's like some big research breakthrough. We want to co-evolve society with the
+00:11 technology. And so that's why we really thought it was important to like do this now and like do in a way where, you know, we've hit this again this kind of
+00:17 like GPT 3.5 moment for video. Let's make sure the world is kind of aware of what's possible now and also, you know,
+00:24 start to get society comfortable in like figuring out the rules of the road for this kind of like longer term vision for
+00:30 where there are just copies of yourself running around in Sora in the ether like doing tasks and like reporting back in
+00:36 the physical world because that is where we are headed long term. [Music]
+00:55 Today on Trading Data, we sit down with the team behind OpenAI's Sora, Bill Peebles, Thomas Dimpson, and Rohan
+01:01 Sahai. You'll hear about space-time tokens, building internal world simulators, and how optimizing for
+01:06 creation instead of consumption is just better for social platforms. This conversation goes way beyond video
+01:12 generation and into questions about how society will co-evolve with powerful simulation technologies. We promise that
+01:19 this was an actual real world conversation and not a video generation, but we don't know how to prove that to
+01:24 you. Let's jump in. Hey guys, thank you for being here at Sequoa. Congratulations on Sora. Thank
+01:31 you. Um maybe you could tell us a little bit about yourselves and how you got to open AAI and Sora.
+01:36 Yeah. Uh I'm Bill. I'm the head of the Sora team at OpenAI. Uh I had a pretty traditional path. Came through undergrad
+01:42 doing research on video generation then continued that work at Berkeley. Uh and then started at OpenAI working on Sora
+01:49 uh from you know the first day I joined. And I'm Thomas. I work as an engineering lead inside of Sora. um have a bit of a
+01:57 longer story but I uh was worked at Instagram for about uh seven years doing
+02:03 some of the early kind of machine learning systems and recommener systems there but it was very tiny company was about 40 people then I quit did my own
+02:10 startup for a while which was Minecraft and the browser um which we've talked about a couple times and uh I think that
+02:16 openai noticed that we had a very cracked product team there and so uh they acquired our company and I've been bouncing around different products
+02:22 inside of OpenAI and on the research side as well on I was training. Um, but super happy we landed kind of together
+02:28 on Sora to bring this thing to life. It was a really cool product in between two, like the global illumination
+02:34 product. Oh yeah, I still believe in it. Yeah, me too. Awesome. I'm Rohan. I've been at OpenAI
+02:39 for about two and a half years. Started as an IC on Chat GPT. Um, but then as soon as I saw the video gen research, I
+02:46 got quickly sora pill and made my way over there. Uh, and so currently lead the Sora product team. before that just
+02:52 startups, big companies within kind of the valley, bunch of random stuff. Yeah. Cool. Well, Bill, you are the
+02:59 inventor of the diffusion transformer. Can you tell us what that is? Yeah. Um, so most people are pretty
+03:05 familiar with auto reggressive transformers, which is the core tech that powers a lot of language models that are out there. So there you
+03:11 generate tokens one at a time and you condition on all the previous ones to generate the future. Diffusion
+03:16 transformers are a little bit different. So instead of using auto reggressive modeling as kind of the core objective,
+03:21 you're using this technique called diffusion, which at a very high level basically involves taking some signal,
+03:27 for example, video, adding a ton of noise to it, and then training neural networks to predict the noise that you
+03:33 applied. And this is kind of a different kind of iterative generative modeling. So instead of generating token by token as
+03:39 you do in auto reggressive models, diffusion models generate by gradually removing noise one step at a time. And
+03:46 in Sora one uh we really kind of popularized this technique for video generation models. So if you look at all
+03:51 of the other competitor models that are out there both in the states and in China most of them are based on dits diffusion transformers. And a big part
+03:58 of that is because dits are a really powerful inductive bias for video. So because you're generating the whole video simultaneously you really solve
+04:06 issues where quality can like degrade or change over time which was kind of like a big problem for prior video generation
+04:11 systems which Dits ended up fixing. So that's kind of why you're seeing them proliferate within video generation stacks
+04:17 when I try to visualize it. I mean for each diffusion you have a matrix of pixels and then you do the entire video
+04:24 at the same time which you can basically see as different frames I imagine. Can you visualize that as you know a
+04:29 matrix of matrices that basically transforms over time? Yeah, it's a good question. So we really kind of consider things at the
+04:35 granularity of like space-time tokens which is sort of like an insane phrase. Um but you know whereas you know for
+04:42 example characters are very fundamental building block for language for vision it's really this notion of a space-time
+04:47 patch right you can just imagine this little cuboid that composes both X and Y like spatial dimensions as well as a
+04:54 temporal local and that really is kind of like the minimal building block that you can like build visual generative
+05:00 models out of. And so diffusion transformers sort of consider these uh almost you can think of it like uh voxil
+05:06 by voxil. Um and you know in the traditional versions of these these diffusion transformer models um you have
+05:14 all of these little space-time patches talking with all the other ones and that's how you actually are able to get properties like object permanence to
+05:20 fall out because uh basically you have full global context of everything going on in the video at every position in
+05:26 spaceime which is like a very powerful uh property for a neural network to have. Mhm. Yeah.
+05:32 And is that the equivalent of the attention mechanism is the object's movement throughout the video?
+05:37 Yeah, that's right. So, in our like Sor1 blog post on video generation models as world simulators, we kind of laid out
+05:43 some visuals uh which sort of go into exactly your point here which is really attention is like a very powerful
+05:48 mechanism, right, for sharing communication like sharing information across spaceime. And if you represent
+05:55 data in this way, right, where you patchify it into a bunch of these space-time tokens, um, as long as
+06:00 you're, you know, properly using the attention mechanism, that allows you to transfer information throughout the entire video all at once.
+06:06 What are the biggest differences between Sora 1 and two? And I remember with the original Sora 1, you were already seeing
+06:11 kind of emergent properties where the more you scale, uh, the more it's able to do things like understand physics.
+06:17 What is is Sora 2 purely a function of scaling or what are the biggest differences? Yeah, that's a great question. Um, you
+06:22 know, we've spent a long time really just doing like core generative modeling research uh since the Sora 1 launch to really figure how figure out how we get
+06:29 the next step function improvement and video generation capabilities. Um, we really kind of operated from first
+06:35 principles, right? So, we really want these models to be extremely good at physics. We want them to kind of feel
+06:41 intelligent in a way that I'd say like most prior video generation models don't. So by that I really mean you know if you look at kind of any of the
+06:47 previous set of models that were out there you'll notice a lot of this kind of like effects that happen like if you try to do any sort of complicated
+06:53 sequence of like physical interactions right for example like spiking gymnastics classic uh
+06:59 riding a dragon like you did riding a dragon that was fun that that happened for real actually Constantine um not
+07:04 about that um uh you know there are like very clear problems with the past generation of
+07:11 models that that we really like set out to solve with Sora And I think one thing that's really cool about this model compared to prior ones is that um when
+07:19 the model makes a mistake, it actually fails in a very unique way that we haven't seen before. And so concretely uh for example, if uh let's say like the
+07:26 text input to Sora is a basketball star wants to like shoot a hoop, right? Shoot a free throw. If he misses in the model,
+07:34 Sora will not just like magically guide the basketball to go into the hoop, right? To be overoptimistic about respecting what the user asked for. it
+07:40 will actually defer to the laws of physics most of the time. And the basket will actually like rebound off the backboard. And so this is a very
+07:46 interesting distinction, right, between like model failure and like agent failure. Agent as in the agent that Sora
+07:52 is like implicitly simulating as it's generating video. Um, and we haven't really seen this very unique kind of
+07:57 like semantic failure case in like prior video models. This is really new with Sora 2. Um, it's kind of a result of, you know, just the investment we put in
+08:04 like really uh doing like the core generative modeling research to like get this massive improvement in capability.
+08:09 Hm. Okay. So, not purely a function of scale. You're actually, you know, there's there's some concept of agents
+08:15 implicit in this. There's, you know, there's things you're doing beyond just scaling up the model. Well, the the notion of agents, I'd say,
+08:20 is actually mostly like implicit from from scale. Um, like, you know, in the same way where uh we kind of
+08:27 showed that object permanence, right, begins to emerge in store one pre-training once you hit some like critical uh flops threshold. Uh we see
+08:33 similar kinds of things happen as we like push the next frontier, right? So you begin to see these agents act more
+08:39 intelligently. You begin to see the laws of physics be respected in a way that they aren't at like lower compute scales.
+08:44 How does the concept of a space-time latent patch relate to a space-time token relate to object permanence and
+08:52 how things move through the physical world? Yeah, that's a great question. So I'd say space-time patch and spacetime token
+08:57 are more or less synonymous with one another. Um I'll use them interchangeably. You know what's really
+09:02 beautiful, right, is when people started scaling up language models um from like GPT1 to GPT2 to GPT3, we really began to
+09:11 see the emergence of like world models internally in these systems. And what's kind of beautiful about this, right, is
+09:17 there's incredibly simple tokenizers that actually go into like creating the data that we train these systems on. But
+09:23 despite this very simple representation right you know um like BP characters what have you uh when you put enough
+09:30 compute and data into these systems like in order to actually solve this task of predicting the next token you need to
+09:36 develop an internal representation of how the world functions right you need to like simulate things uh and like you
+09:41 know the models will make lots of mistakes right now at like low compute scales but as you continue pushing you know from 3 to four to five you just see
+09:47 these internal world models get more and more robust and it's really analogous for video right and in many ways more
+09:52 explicit. So I think it's easier to picture what like a world model or a world simulator looks like with video data, right? Because it is literally
+09:58 representing like the raw observational bits of like all of reality. But what's really remarkable, right, is because
+10:04 these spacetime patches are just this like very simple and like highly reusable representation that can apply
+10:10 to like any type of data, right? Whether it's just like video footage of like this set, whether it's like anime,
+10:15 cartoons, like whatever it is. um you're just able to build like one neural network that can operate on this vast
+10:22 extremely diverse set of data and really build these like incredibly powerful representations that model like very
+10:28 generalizable properties of the world right it's useful to have a world simulator to predict like how a cartoon will unfold and likewise it's useful for
+10:34 predicting how you know this conversation might unfold and so that really puts a lot of optimization pressure on Sora to like grock these
+10:40 like core fundamental concepts in a very like data efficient way did you have to put effort into
+10:46 selecting the data such that it reflected the physical world. For example, I'd imagine if you have data from the physical world, it
+10:53 all abides the laws of physics, but you mentioned anime that might not always
+10:58 abide in the laws of physics. Did you have to be selective or did it naturally find patterns that separated that out?
+11:04 That's a really great question. Um, we did spend a lot of time, you know, really thinking about,
+11:09 you know, what does like the optimal data mix for like a world simulator kind of look like? And to your point, you know, I think
+11:15 in some cases we'll make decisions that, you know, maybe are for like making the model really fun. Like for example,
+11:20 people love generating anime, but you know, do not necessarily like perfectly represent uh like the laws of physics
+11:26 that are like directly useful for like real world applications. So like to put it another way, right? I think in anime
+11:32 there are certain primitives that are simplified that are actually probably useful for understanding the real world. You know, people still locomote through
+11:38 scenes, for example. But like if there's like some crazy dragon that's like flying around, that's probably like not so useful for like rocking aerodynamics
+11:44 or something. Dragon Ball Z is more or less how I learned athletics, you know? There you go. The motion and Super Saiyan.
+11:50 I think there it is an interesting question like that. I do not know the answer to whether somehow like
+11:57 pre-training on simplified representations of like the visual world whether that's like sketches or like
+12:02 some other modality like you know makes you more efficient at like rocking these concepts. I think it's actually a very interesting scientific question that we
+12:09 we need to understand better. Do you think we're close to exhausting the number of pre-training tokens there are out there or do you think video data
+12:15 is just video is just so massive and it's actually one of the more untapped uh vats of data? Yeah, I the way I kind
+12:20 of think about this is the intelligence per bit of video is much lower than something like text data, but if you integrate over all of the data that
+12:27 really exists out there, uh the total is much higher. So to directly answer your question, you know, I think it's hard to
+12:33 imagine ever fully running out of video data. There's just like so many ways that it exists in the world um that
+12:41 like, you know, you will be in a regime where you can continue just like add more and more data to these pre-training runs and continue to see gains for like
+12:47 a very long time, I suspect. Yeah. you think we'll ever discover new physics? There's the LLM world of, you know,
+12:52 Einstein thinking the whiteboard. It's equivalent to these LLM thinking. There's also just the if you develop a
+12:57 perfect simulator and you just simulate physics better and better, you you might learn things about the world that we haven't learned yet.
+13:03 I totally think that this is like bound to happen one day. And like, you know, I think we probably need
+13:08 even like we probably need one more step function change I'd say in like model quality to like really get to a point where for example, you can think about
+13:14 doing like scientific experiments in the models. But like you could imagine, right, one day you have a world simulator that is like generalized so
+13:20 well to the laws of physics that like you don't even need like a wet lab in the real world anymore, right? You can just like run biological experiments
+13:26 within Sora itself. And like again, this needs like a lot of work to like really get to a point where like you have a system that's robust enough to do this
+13:32 reliably. Um but you know internally like again we view Sora 1 as kind of being like the GPT1 moment for video. It
+13:38 was like really the first time things started working for that modality. Sora 2 we really view as like GBT 3.5 uh in
+13:44 terms of like it really being able to like kickstart um you know the world's creative juices and like really like
+13:50 break through this kind of usability barrier where we're seeing like mass adoption of these models and we're going to need a GPT4 breakthrough to really
+13:57 get this to the point where this is useful for like the sciences as we're seeing now with GPT5 right like I feel like every day on Twitter I see another
+14:03 like convex optimization lower bound get like improved by GBD5 Pro
+14:08 um and I think eventually we're going to see the same thing happening for the sciences with Sora Do you think you need physical world embodiment to get there
+14:14 or do you think a lot of it can be done in effectively in sim? You know, I am like always amazed, you
+14:20 know, every time we like push another like 10x compute into these models like what just like magically falls out of
+14:26 it. Um, with like very limited changes in kind of like what we're training on and like the fundamental like approach
+14:31 to to what we're doing. Um, you know, I suspect some amount of like physical agency will certainly help. I I have a
+14:38 hard time believing it will like make you worse at like you know modeling like collisions or like something else. Um
+14:44 video only is like quite remarkable though and I wouldn't be surprised if it's actually kind of like AGI complete for like building like a general purpose
+14:50 world simulator. So for this concept of a general purpose world simulator, a world model, yeah, where you can do
+14:56 science experiments in that world, do you think that video is the sole or some
+15:02 combination of video and text are the combined data inputs and you train it on
+15:09 this type of uh this type of model or is it going to be does it have to be based
+15:15 on more structured laws of physics that are understood and laws of biology that
+15:20 are understood? I think it probably depends a lot on um the specific use case you're kind of envisioning for for
+15:26 the world simulator. Like for example, if you just really want to build like an accurate model of how like a basketball
+15:32 game is played, I actually think like only video data and like maybe audio as well or like kind of sufficient to to
+15:37 build that system. Not of me playing basketball. That would be an inaccurate very bad player of
+15:42 basketball you know. Uh you actually like Sora's current understanding of how people play
+15:48 basketball. Constantine may be at your level. Wow. Okay, that makes you know that makes sense. It's possible. It's possible.
+15:54 Uh I think he just dissed you. I I like it's accurate. But it's better than mine, Constantine, for what? That was like a Sora one
+15:60 situation. You're at Sora, too. We'll toss some hoops. Is that what they'll say? Like, you know, I'm down. I'm down. Yeah.
+16:06 Shoot some hoops. Thanks. Toss some hoops. Thomas's first first statement in the podcast. I'm also at your level.
+16:13 Um, you know, I think it is an interesting question like what are all of the modalities that should be present
+16:19 in like this kind of general purpose sim system. Like certainly, you know, if you add more modalities, I have a hard time believing it will like decrease the
+16:25 intelligence. I also think there's an argument to be made that um just, you know, adding more and more
+16:31 does not provide like significant marginal value compared to like, you know, full mastery of like video and audio for example. I think it's an
+16:37 interesting open question. I'm not I'm not actually sure right now. Um, and it's something we need to understand more. Yeah. So cool. Sonia a minute ago
+16:43 mentioned Einstein on a whiteboard and obviously that makes me think of you Thomas and your hair.
+16:50 Me too. Knew it was coming. It had it had to come. Like if if any
+16:55 hair gives the feeling of space-time tokens. It's definitely
+17:01 definitely yours at some point. You know, Bill, you're the creator of this
+17:06 revolutionary technology that has changed the way that AI video is created. At some point you from Soro 1
+17:12 to Soro 2 said hey alto together you said there needs to be an application around this. There's some benefit to an
+17:17 application. You brought together some of the best product people in the world. How did that crew come together at
+17:23 OpenAI? Yeah it's a I mean the story is never as linear as you might think it is. Um so I
+17:29 think that I mean we've had a product team on Sora since the get-go. Rohan was like uh spearheading that effort in the
+17:35 Sora one days but I think Bill's right when he says it was really like a GPT1 kind of moment. we're seeing pockets of
+17:40 very interesting things there. Um, but the models were not like, you know, models without sound, videos without
+17:45 sound. It's like a very different kind of environment. And so, um, we're working on that surface mostly targeted
+17:51 on on kind of like a proumer, uh, demographic. And separately, I mean, I can probably go into more details of all
+17:57 that. Um, separately, we're also just kind of exploring different social applications of AI uh, inside of OpenAI
+18:04 and like what that could look like. We had a lot of prototypes, most of which were quite bad. Um, and when we started
+18:10 to see some of the magic was actually with image genen, um, before it had been released, uh, we were playing with it
+18:16 internally in a social context. And the social context was really interesting to see that what people were doing is you'd
+18:22 sort of like take an image and then you'd have like a chain of remixes of that image where like I don't know,
+18:28 there was a it's a duck and then now the duck's on somebody's head and now everything's upside down and they're smoking a
+18:33 cigarette like uh just a lot of weird things. Yeah. It's like and um we were
+18:39 seeing this, we're like, "Oh, this is kind of like a very interesting thing that like you know, nobody can really do that with like social media because it's
+18:45 so hard to create something or riff on something. It like is such a high barrier to entry action. Um maybe you
+18:51 have to get a go get a camera set up and not it's not just like thinking of the idea. There's actually a lot of things
+18:56 involved." And so we were like, "Okay, this is a very magical behavior. How can we kind of productize that behavior?" Um and we're
+19:04 mostly thinking of it away from Sora. Um, some of the Sora research was still ongoing and I mean there were signs of
+19:09 life but it wasn't like quite there yet in productized form. Bill probably had it in his head somewhere. He's like I can see the future but that's fine. Uh
+19:16 I'm a little bit more can't can't quite see the future yet. So um uh so we were
+19:21 just exploring that. I think we we tried a few things and then at some point the the research was really uh just showing
+19:27 very clear value of even iterative deployment style value of like oh this is something that people will really
+19:33 want. And so we went into this project like two or three months ago. Was it
+19:38 wasn't very long. It was like July 4th. Wow. July 4th. Yeah. Um that's when you disappeared, Thomas.
+19:44 That's when it disappeared. Yeah. Exactly. So um and we just kind of locked in like, okay, we're finally doing it. You
+19:50 know, that's always a moment. Um and uh we started with without any magical
+19:56 features, just like okay, let's just try to get a native video environment where you can hear the audio full screen. Um
+20:03 and we did some quick generations. Things were showing very they're very cool, very fun, very interesting. Um and
+20:11 because of that image genen experience, we sort of had thought like okay, what's the the magical here magical thing here is that like barrier to entry is very
+20:17 very low for creation. Um coming from Instagram, that's like it's impossible to get people to create on Instagram and
+20:23 that's the most valuable thing that people do. Um so what does that unlock? And it's like, okay, well, that remix
+20:29 thing from image genen that kind of could still apply here. And so we brainstormed all these things about how
+20:35 could remixes work and like what does a remix mean here? Um, one of those was this like cameo thing, which I think
+20:41 also Bill had in his head, but this, you know, wasn't is in the ether. It was in the ether for sure. Um, but we
+20:47 just were like hacking together things on the product. It was see if this works. Um, I I didn't think it would
+20:52 work at all. Um, but it was on the list and there were a few other things on the list. Some of them were pretty crazy. It
+20:57 was like a Why didn't you think it would work? I am bad at predicting technology
+21:05 that like uh it wasn't super clear to me that you could like, you know, take a likeness of a of a person and have that
+21:10 kind of imagined into a video form um and whether it would work or not. And so
+21:16 we had early prototypes of different things of like people reacting in the in the video corner or uh stuff like that.
+21:21 But when when we saw cameos just start to work and even playing internally we're like Ron do you remember that day
+21:27 where we're like the feed is entirely cameos it's entirely it just went from
+21:32 you know we didn't have that feature once we had that feature product market fit on the team all everything we were generating was all of each other
+21:39 inside must have seen the meme potential I mean yeah that's I think at first
+21:45 we were just like this is hilarious this is amazing and then like a week later we were like this is still all we
+21:51 Um, there's something here. Yeah. I mean, at first we were actually a little bit like, is this good? Like,
+21:56 hey, the cameos, it's just all cameos now. Does anyone else care about this? People care about other people doing
+22:02 stuff. And um, we kind of got to the point where we're like, no, no, this is actually good. Like, it's actually, it feels like I'm coming back to see. And
+22:09 it really humanized it uh a lot where like a lot of AI video is just um kind
+22:16 of static scenes that are quite beautiful, quite interesting, might have extremely complicated uh things going on, but they lose that human touch and
+22:23 uh it really felt like it was coming back into it. So another learning from Image Gen 2, like Image Genen took off and had viral
+22:30 moments because I think you could put yourselves in these scenes in accessible ways that weren't possible before.
+22:35 obviously this massive like put me in a gibli scene um people taking selfies
+22:41 with their idols and stuff like that and so the ca once you know once you actually kind of thought about it it's like yeah cameo feature makes a lot of
+22:47 sense you put yourself in all these scenes that's way more exciting you and your friends it's novel it's like not
+22:53 something you could do before yeah and then that combined with remixes I mean cameo is kind of remix to begin with but then you start to think about
+22:59 okay well now I can riff on Roan doing something or whatever it is but Bill had
+23:04 you wrapped in an action figure package and it was it's been remixed like an insane number of times. Thousand of times. Yeah. So like uh just
+23:12 very very crazy things that kind of go on and very emergent. A lot of stuff that I would have never thought of
+23:17 actually. How many generations of you guys have been like publicly posted at this point? I have no idea. Uh I know I'm 11,000 or so.
+23:24 I was like a little less than that. I Wow. Yeah. It's crazy. What has surprised you about the types
+23:29 of users that are really sticking with Sora? Who is it really a hit with? If you just go to the latest feed, which is
+23:35 just like the fire hose, astronaut mode of everything. Yeah, it's it's space-time Thomas mode. Um, it's wild
+23:42 out there. But that gives you a pretty good snapshot into like just everything happening. I mean, I think we have
+23:48 like uh almost 7 million generations happening a day. So, you can imagine there's just a ton of information there.
+23:54 Uh, it's one of my favorite ways to just get product feedback. It is so diverse the type of stuff people are doing, the
+23:59 type of people. There'll be like a complete variety of age. Some people just doing envisioning themselves in
+24:06 scenes that seem like motivation oriented. People just memeing with their friends, people cameoing some of like
+24:12 the public figures on the platform that have have done cameos. So, I think the the diversity has has surprised me. I
+24:18 was kind of expecting this sort of like, you know, the Twitter AI crowd to like heavily dominate the feed. They
+24:24 definitely dominate like the press cycles, uh, at least the ones that, you know, we're most exposed to. But in
+24:30 terms of people actually using this, it's it's quite a wide variety. And um last thing I'll say is a bigger
+24:35 departure from like the sort of niche AI film crowd that existed before, which is great early adopters, but now you kind
+24:42 of get these I I thought it would start there, but it felt like it started with just a way wider range of people. Um I
+24:49 think getting to the top of the app store helps with that. You just get people who are like browsing and see this thing. My mother keeps cameoing Thomas.
+24:59 So weird. There are real stories like that. You said 11,000.
+25:05 She's done 10,000 of them. Uh Thomas, you wrote the original algorithm, if I'm right, for for the
+25:12 Instagram uh ranking ranking algo. Uh there was a lot in the Sora 2 blog post
+25:18 about how you guys are clearly being very intentional about how you want to do ranking in the algo. Can you can you
+25:23 talk a little bit about lessons learned from Instagram and how you're approaching it over at Sora? Yeah. Uh I mean there's there's a lot to
+25:28 cover in that. Um I think that the first thing to think about when we think about
+25:34 these platforms or think about sor specifically is it is the thing thing I was mentioning before about creation. Um, so, uh, soar enables basically
+25:42 everybody to be a creator on this platform and that is a very very different environment than something
+25:47 like Instagram where you have this like extreme power law of the people that are creating. Um, and the power power law
+25:53 just naturally gets more uh narrow. What's the right word there? But more uh head heavy. Yes. Um, so
+26:01 sometimes I feel like I have to defend myself on the Instagram uh algorithm side. We actually did it for I mean we
+26:07 did it for a reason. It was to solve a problem. it wasn't just kind of like a random decision to, you know, optimize
+26:12 for ads or something like that. Um, and the the reason we did that was that we noticed that like what was happening on
+26:18 Instagram over time was um because it was chronologically ordered, every single person that posted was guaranteed
+26:25 to have the top slot of all their followers. And so if you think about that for a second, the incentive for
+26:31 somebody in that environment is actually to create constantly because they are guaranteed distribution when they create. Um and over time because of this
+26:39 like power law becoming heavier and heavier um or like more headheavy um
+26:45 those type of people which are great they provide a lot of value to the ecosystem u but they start to crowd out
+26:50 people you really care about and so um maybe you follow National Geographic or something not to dunk on National
+26:56 Geographic I love them but um you know if they're posting 20 times a day your friend's not they don't have the same uh
+27:02 like optimization objective they're probably just a picture of their coffee or Um, and so you'd have 20 Nat Geo posts
+27:09 and then one picture that you actually really cared about that you never really scrolled to. Um, and there's not too
+27:14 many solutions to that problem if you have a guaranteed ordering. Um, one of them is that you have to unfollow all
+27:20 these accounts that you maybe care about but care about not as much as the person that posts once a day. Um, and the other
+27:27 is that you have to permute the uh permute the feed. And so we went with
+27:32 that path. We tried it. We tested it out internally. it was very kind of controversial to do. Um, and but I I
+27:39 think that you can actually kind of like math this out. It's like a proof that basically over time you're going to have to take control over distribution on the
+27:46 platform uh in order to prevent these kind of issues and show people what they actually care about. So that's why we did it. Um, and it it actually showed a
+27:52 lot of value. I remember the early tests. I won't get into the numbers on them, but they were um pretty unambiguous actually about this was
+27:58 showing more people that you cared about. It was improving your experience with the platform. It actually moved creation, which is unusual. it made
+28:04 people create more because they were seeing more content that was like accessible to them. Um, but I also think
+28:10 that these things can go astray over time and I won't say like the Instagram algorithm is unequivocally bad or
+28:16 unequivocally good. Um, but when we started to open up to more unconnected content and uh ad pressure was very
+28:23 strong. There's a also a natural company incentive to optimize for just blind consumption because that's how you make
+28:30 money. Um, so, uh, maybe cheaper content or maybe just like get people to scroll more and more and more and more. Uh, and
+28:36 that also can encourage people to create less, uh, because it's just like a more mindless scrolling mode. Um,
+28:41 but you guys have very concretely committed to doing things to prevent that kind of behavior.
+28:47 Yeah. Um, we have we have a lot of mitigations there in place, but I I think uh, what it really comes down to
+28:53 me is just like what are we trying to do as a platform? And I think the magic of this technology is that everybody is a
+28:59 creator. And so we want this feed to be optimized for you to create to inspire
+29:04 you to create. And that can be like sometimes when you think of inspiration, you think of like, oh, it's this
+29:10 beautiful crazy scene that's so elegant. Uh when I think about that, I I think of like a meme culture or something really
+29:16 funny or like oh that's cool. I've got a riff on that. And I think that's a very different brain mode when you're browsing the feed. Um and of course we
+29:24 have lots of other things in place. So like I think it starts with an incentives. That's our incentive right here is to encourage more creation in
+29:30 the ecosystem. Um, but there are certainly use cases we want to prevent. We're not going to get them right all
+29:36 the time. Um, it's very challenging. It's a very living system. It's also very hard to write a recommener system
+29:41 when you have no data and you don't know what to recommend or you don't know how the platform's going to evolve. Um, but
+29:46 that's like basically how I kind of think about the incentives of feed. And then Roan, we have a lot of mitigations
+29:52 in place that I think you've been kind of like thinking about and maybe even more deeply than I have. uh about like
+29:58 preventing maybe the the extreme cases and so um I don't know if you you want to talk a little bit.
+30:03 Yeah, happy to. But one thing before you I mean just one thing to add is that the stated intent of like optimizing for
+30:09 creation is working really well. Y it's almost 100% of people who like get past the invite code and all that on the app
+30:15 end up creating on day one. Um when they come back it's like 70% of the time they come back they're creating and 30% of
+30:22 people are actually even posting to the feed. So not just like generating for themselves, they're actually like posting into the ecosystem, which is
+30:27 incredible testament to the model, how fun it is, and to like how what we're optimizing for is actually working pretty pretty well right now. Um, but
+30:34 yeah, beyond that, I mean like one of the top of mind things is I think we don't want this just to be like a a
+30:39 mindless scroll and beyond just optimizing for creation in the ranking algorithm. There are things we can do
+30:45 like trying to just get you out of this sort of flow state um of just like
+30:50 consumption and push you into like creative mode. I think there's a great article on this called like the curve linear nature of casinos where they
+30:57 design it so you never have to make any decisions. It's just like you walk in a circle, there's no windows, all that kind of stuff.
+31:03 um we can be very intentional about not doing that and like you know whether it's an infeed unit that's like hey you
+31:10 just kind of viewed a couple videos in this domain why don't you try creating something um or other ways to just kind
+31:15 of like push you out of that we we actually have things like that in the product um yeah those are some of the
+31:20 things that come to mind yeah I really commend you guys for what you've done to you know make sure that
+31:25 there there's a version of the world where video model as world simulator could have just ended up with us you
+31:31 know each retreating into our own computer screens and just becoming addicted and just retreating into ourselves. And I think the amount to
+31:38 which you're, you know, prioritizing the the human element and the social element, I think that the care you've
+31:44 put into that really shows. I don't think we would have launched like a feed of just like AI content that
+31:49 wasn't that didn't have a human feel like just I don't think that excited us. And as soon as we we like had the
+31:55 product, we had Cameo, and we had that feeling internally, um, we were like, "Okay, this is actually a little different than
+32:01 Yeah, I don't know. I don't think it was totally obvious." Again, it was like a pretty crazy sprint to go through this. Uh,
+32:06 and it wasn't like super obvious to us what what would emerge, but I think that the idea it makes sense in
+32:14 retrospect, but it was a completely not obvious product decision. The cameos would be the thing. Yeah. Um, where it's like, of course, you just
+32:20 want to see your friends doing cool things, so it's like, that makes sense. Um, but I I was never actually that afraid of competitive pressure in that
+32:27 that crazy product phase because I was like we sort of had these all these non-trivial decisions that are obvious
+32:33 in retrospect but were not obvious at the time that were sort of building on top of each other. It's like okay cameos. Well, there's also a version of
+32:39 Cameo where you have a crazy flow that's just for you and it's a oneplayer mode Cameo and you like go through this
+32:44 onboarding flow and do your stuff. But we were already seeing these interesting dynamics where it's like, well, I could tag Rohan into my video. That's crazy.
+32:51 like and then we can have like an argument or like I'm gonna have a anime fight doesn't matter. Um and I was like
+32:57 okay so that's that's actually the human element that's the that's the magic of this is actually strangely more social
+33:03 than a lot of social networks even though it's all AI generated content. So very unintuitive.
+33:08 Totally. Is it a separate is it fine-tuned version of Sora 2 or is it like is a separate model from what's available
+33:14 over the API or is it the same between the app and product? So we currently exposing like
+33:19 the models in the same state across API and and the app. Okay. Really interesting. Um what are you seeing people do on the API side? Uh
+33:27 and is it different from the types of things people are doing on the on the consumer app? The motivation behind even launching an
+33:33 API is just like support of these longtail use cases. is like we have this vision of enabling you know um chat GPT
+33:39 scale level consumer audience with this tech but there's tons of very niche things out there you can imagine people
+33:46 who are much you know with sor one we went out and talked in a lot of these studios what we heard from them is like they want to integrate this in this
+33:52 specific part of their stack in this specific way and we'd love to support all these longtail use cases but we
+33:58 don't want to build a thousand different kind of interfaces for this stuff so that's the kind of stuff we're excited to see with the API so far it's been you
+34:05 It's been kind those kind of like a little bit more of a niche company not trying to build like a first-party
+34:10 social app but maybe um you know has some either film making kind of audience
+34:16 or kind of people they're supporting or even just like we've defin we've seen some like people trying to you know I
+34:22 think there was like a some company making um they were doing something with CAD where they were like using Yeah.
+34:29 Yeah. Yeah. That's cool. Um so there's there's there's cool use cases out there. I think we're still getting a sense of what they are. Yeah,
+34:35 I think there's a lot that can be done with these things. I think about gaming all the time just based on my background
+34:40 and I'm you know AI and gaming is always a very controversial subject, but it's very clear that there's a there's a place and
+34:46 there's a role. Um maybe it doesn't have to interrupt the creative process can enhance it and um I'm pretty excited
+34:51 to see some of those use cases emerge. Do you think the video models are good enough now to for people to be able to
+34:57 build video games on top of the API or do you think we're still another rev or two away? I have my own take on this. I was going
+35:03 to say never bet against the ways people can be creative with technology to build like someone will be able to build a
+35:09 game and maybe has built a game already. Will it feel look and feel like a you know obviously there's latency with
+35:15 this model so you'd have to do all sorts of crazy stuff to get around that but like I think that your mind immediately
+35:20 goes to like kind of the obvious sort of things that you would do in gaming and we've seen some of that sort of stuff uh
+35:25 certainly in research blogs and that that kind of thing. Uh my mind often goes to like, okay, this is like a creative tool that's a little bit
+35:31 different. Um and the types of games that really excite me there, I'll just go off on one, which is like there's a
+35:37 game called Infinite Craft, uh which is the world's simplest game. It's a web game where you just take elements. It's
+35:43 like fire, water, earth. You have like four elements to start and you just drag them and it love this game.
+35:48 It it combines into something new. And the thing it combines with is like a it's LLM based. So, it's like fire and
+35:54 and and earth might be a volcano. Um, and then volcano plus water might be an
+36:01 underwater volcano or Godzilla or something like that. You always end up in Godzilla for some reason. I don't know why. Um, but uh that's a game that
+36:08 like it's like, oh, it kind of makes sense where it's like, yeah, you don't really need a crafting tree. The LM can derive this crafting tree and it's a
+36:14 process of discovery. Um, and so I think there's a lot of untapped stuff in that
+36:20 space where again I like the idea of a process of discovery. In fact, my phil
+36:26 philosophical philosophical view on LLMs and video models to some extent is that it is a process of discovery. These are
+36:31 all in the weights. You're just unlocking it with like a secret code, which is your prompt. Um, and I I love
+36:37 that. That is that is very magical. That was always in gaming. That was the thing that like excited me the most was
+36:42 discovering something new, especially if it was a true discovery. it wasn't put there by somebody else. Maybe they just
+36:48 enabled the mechanics around it. So I think there's a huge opportunity in that space of uh of gaming when you think
+36:55 about games in just a different thing and like embrace this technology in a very different way. It reminds me of how uh some of the
+37:01 earliest use cases for GPT3 were kind of these text games. Um so it's different from how you think
+37:06 of a you know video like a playable video game, but actually a lot of these mechanics are very game-like.
+37:11 Exactly. Yeah. I think there's a there's still constraints and I think that's going to be like the mechanism design and that's still very human. Um like a
+37:19 lot of the early games with GP3 that kind of like yeah it was fun for a minute and then it kind of went off the rails and you're like I don't really know what I'm doing anymore. Um but
+37:26 again like this is sort of in some ways so Sor feels like a little bit of that where it's got a little bit of gaming um
+37:32 DNA inside of it where it feels very fun and different and exploratory. So I I like things like that and uh I think
+37:38 there's going to be more use cases that we can't even think of. It's too creative. What are you guys seeing on the creative film making side? Like is
+37:44 that an important target market? Do you want to do you want to empower the long tail or do you want to empower the the head so to speak of the creative market?
+37:50 I think it's a really good question. You know, we've benefited a lot from um
+37:56 creatives who are really willing to like go all in on you know even like the early technology like Dolly 1, Dolly 2
+38:02 and really like help steer us uh along the path. And like I think it's
+38:07 important that we continue to you know build things for for those folks and we are working on some things that are like
+38:13 more targeted towards like creative power users long term. At the same time you know I do think like AI is a very
+38:18 democratizing tool right at its best. And so what's kind of beautiful about the sor platform in general right is
+38:24 whenever someone kind of strikes cool right you see one of these like beautiful anime prompts that like goes to like the very top of the feed for
+38:31 everyone um like anybody can go and remix that right? everyone has the power to like build on top of that and like
+38:37 learn from all of these people who come in with this like incredible knowledge about uh how to like really get the most
+38:43 out of these tools. Um and so I am really excited just to see the net creativity of humanity just increase as
+38:49 a result of this. Um but I think a big part of that right is continuing to empower people who are always at the
+38:54 frontier which are these like more pro-oriented like creator um type folks and so we want to keep investing in them
+39:00 as well. We've nerded out for a while, like almost a couple years now, about
+39:05 that vision of feature film. Yeah. Length content. Like, yes, you have these amazing cameos
+39:11 and shorter content, but at some point the individual creator, this has been something that you've been excited about
+39:17 for a very long time. Yeah. When do we get there? You know, is there a point where we have a feature film
+39:22 that is created on Sora 2? Yeah. And how do we consume it? Is it in the Sora app? Is it posted somewhere else
+39:29 online? Do you go to a movie theater and watch it? Yeah, it's a great question. I mean, I think this will happen in stages to some
+39:35 extent. So, like if you guys watch the right, the launch video. I mean, that was made by like Daniel Frighen who's on the Sora team and he already with these
+39:43 tools, right, is able to pump out these like incredibly compelling short stories within like days at most. I mean, he
+39:50 literally made that like all by himself in almost no time. And he's been like continuing to like put new ones out
+39:55 there on like the open eye Twitter since. Um like clearly this is like massively compressing the latency uh
+40:01 that's associated with like film making. Um I think to get to the point where like really anybody can do this, right?
+40:08 Like any kid in their home can just like fire up the app or store.com or something and go and make this. It's
+40:14 really like an economics problem of like the video models. Video is the most intensive comput intensive modality to
+40:20 work with. It's extremely expensive and you know we're making good progress on the research team like really continuing
+40:25 to figure out ways to make this affordable for everyone long term. Like right now for example you know the store app is like totally free. Um in the
+40:31 future there will probably be ways where people can pay money to get more access to the models um just because that's the
+40:37 only way we can really scale this further. Um but uh you know I think we are not far off from this world where
+40:43 anybody can really like have the tools to make amazing content. You know, I think there's going to be like a lot of bad movies that get created by this, but
+40:49 like likewise, you know, there's probably the next great film director who is just kind of like sitting uh, you
+40:55 know, in their parents house like still in high school or something and just like has not had the investment or the tools to be able to like really see
+41:01 their vision come to life. And we're going to find like absolutely like amazing things from like giving this technology to like the whole world.
+41:06 I'm looking forward to the feature film length Constantine's Greek Odyssey. Me too. Coming to theaters near you.
+41:12 We're all in it together actually. Different characters. I play the cyclops and um it's a it's a good one.
+41:19 I think um just to touch on that one one more thing the something I've learned from recommener systems over and over
+41:24 again is that like oftentimes so the tools getting more people more creative is going to be a huge unlock for just
+41:32 you know making people more more creative in general and because you don't need this access to this like film making equipment all that sort of stuff.
+41:38 Um but we do consistently see that things content is like also a social phenomenon in a way and like uh movies
+41:45 and all that all all everything you see out there is kind of a bit of a social phenomenon in addition to the actual
+41:51 content itself. And so I think we're going to enter a very interesting world where you know there's so many people
+41:57 creating and so much content out there um that even the idea that people aren't paying attention to and watching it is
+42:02 going to become more and more important. Um, and I think that's actually going to make the quality of content just to kind
+42:08 of elevate because there's this anybody can create and actually it's going to be the consumption that's going to be quite
+42:14 limited which is very different than the world we live in today. You guys are very thoughtful and intentional about how you treated IP
+42:20 holders. Can you say a word on that? you know, we've been in close partnership with like a bunch of folks across the
+42:26 industry and like really trying to like both show them kind of this like new
+42:31 technology, right, that is actually like a huge value proposition um for rights holders across the board, right? And
+42:37 like we're hearing so much excitement from the folks we're talking with. like they really see this as being like, you know, a new frontier for again like, you
+42:44 know, every kid in the world having the ability to like go and like use um like some of this beloved IP and like really
+42:50 like bring it into their lives in a way that feels much more personal and custom than what's been possible before.
+42:55 Um at the same time, you know, we really want to make sure that we're doing this like in the right way. So we've been like really trying to take feedback and
+43:02 like really uh steer our road map in a way where we know that you know both users are going to have an awesome
+43:07 experience getting to use this IP but also the rights holders are going to get you know properly monetized and rewarded
+43:13 um in a way that you know everyone wins basically. So, we're right now actively working on trying to scope out the exact
+43:18 details about like how we're going to, you know, for example, make it so if you want to cameo your favorite character
+43:24 from some like beloved film or something, um, you can do that in a way where uh, you have access to it, but
+43:30 like monetization will flow back to the rights holder, right? So, really trying to figure out this kind of like new economy for creators. Uh, we kind of
+43:37 just have to create this from scratch right now. There's a lot of deep questions about how to do this the right way. And you know, as with everything
+43:43 with this app, we come into it with like an open mind and we hear feedback and we iterate quickly. You know, we're not
+43:48 sure where this is going to totally converge. Uh but we're working closely with people to figure it out. Really cool. What's ahead?
+43:57 Pets. Yeah, I think I mean one when Sorry, what came
+44:03 is that one of the most demanded features? Break for me. It is. Bill's demanding. Uh no,
+44:08 it will remind us we were just talking about curing diseases and role models and uh now we're to the future.
+44:14 Uh this is something um no it's actually so that's definitely true. We've committed to that. It's coming. Um but
+44:20 we we I promise the uh we actually had Bill's dog as like when we were playing
+44:26 around with this rocket. The good boy. Yeah. And actually was very very cool um
+44:31 to actually feature a pet. You can imagine where that goes. It doesn't have to necessarily be a pet. Um, could be
+44:37 anything. A clock or whatever you have. Um, clock. Well, yeah. Yeah. Yeah. Um, do
+44:42 you have a special clock? Actually, it's really compelling. I didn't think it could be so compelling until Thomas showed me this clock. It's
+44:48 like a sentient clock. It's a Well, but it's it's like based on like a a real clock. Yeah. I I had a clock. My father was a
+44:54 my father was a technology person for a while. This company, Veraritoss, gave him a clock for his like whatever
+44:60 anniversary. Anyway, so I have it on my my uh my uh like table somewhere and uh
+45:07 there's this old Simpsons episode where they talk about a walking clock and for some reason that's just been an earworm in my head for the last 30 years. And so
+45:14 I always it's like you know they're telling some joke and it's like is it a walking clock? Is it a walking clock?
+45:19 It's like walking clock and then it's like no man it's my dog. And so it connected in my brain where I was like, "Okay, rocket walking clock." And then
+45:26 so I tried it Thomas.
+45:32 Uh yeah. So it connected my brain and we've been playing around with this um just to see if we can get it to work and
+45:38 whether there's something special there, which is part of the fun of being on the solar team is you get to play with this emergent crazy technology and like maybe
+45:45 it does something you wouldn't even expected. So, I recorded a a two second video of my clock and then uh I gave it
+45:52 some cameo instructions and I said, "You're just a walking clock. You're walking clock. You talk like you talk. You're a character." And then I
+45:58 generated my first video and it was insane. It was crazy. It was a walking
+46:03 clock. And then I had one where uh it was talking to Bill uh and Bill was like, "I didn't think it would ever land
+46:10 the pet cameo feature." And then uh the walking clock's like, "Here I am. You know, I just landed." So, it's coming.
+46:17 It's all internal memes. Talk about emergent IP. Yeah. Who needs Pokemon when you can have a
+46:22 walking clock. What's the greatest IP? One thing to add in terms of the future. I think on the feature film question,
+46:27 something something I think about all the time is like what you know what what will that actually look like? I think my I mean caveat,
+46:34 Bill's the only one who who's good at predicting the future here. Um, question. My sense is that the, you
+46:40 know, as we get to longer forms, what our equivalent of a feature film will look and feel very very different from
+46:47 what a feature film is today. you know, I don't know exactly what that looks like, but I think on the subject of
+46:53 creators and what what's coming in the world, I think a new medium and a new class of creators, new class could in
+46:58 include a lot of existing creators and um and support existing sort of mediums and stuff like that. But I think we're
+47:05 just in the early innings of of what I imagine will be the next film industry rather than thinking about this being a
+47:11 future film. But I think there'll be something new. There's some anecdote. I hope this is true because I say it all the time, but apparently when the
+47:18 recording camera like, you know, hit the world, the first thing people did was record plays.
+47:23 This is like the least interesting thing you could do with a recording camera. It's like, what what's the big idea? Oh, we people don't have to travel around
+47:29 acting. We can just film them and distribute it. And then someone was like, wait a minute, we can make a film
+47:34 and film in all these different areas. And I feel like we haven't we're in like the first inning of so many different
+47:40 sort of things that people will do with this technology, especially as the constraints change with latency and length and all that kind of stuff.
+47:46 So cool and fun film history uh nerd fact is one of the original videos, and
+47:53 we should check this as well, but I think the original video was made just down the peninsula uh to settle a bet on
+48:00 if a horse when it galloped all four legs, it left the ground. And I could
+48:06 see a world where you have new that is an example of new scientific discovery. People didn't actually have an answer to
+48:12 that. Now that you have a new simulation format, what are we going to be able to discover in that?
+48:19 It will be crazy. And I think one one broader point here is, you know, this app right now feels very familiar in a
+48:25 lot of ways, right? Is like a social media network at its core. But fundamentally like the way that like we
+48:31 really view it internally right is with cameo we've kind of introduced the lowest bandwidth way to give information
+48:39 to Sora about yourself right aspects about your appearance about your voice etc you can imagine over time that like
+48:46 that bandwidth will greatly increase right so the model deeply understands your relationships with other people it
+48:53 understands you know more than just how you look on any given day um it's you know seen your like how you've grown up,
+48:59 all of these details about yourself and will really be able to almost function as like a digital clone, right? So like
+49:04 there's really a world where the SOR app almost becomes this like mini alternate reality that's running on your phone. You have versions of yourself that can
+49:11 go off and interact with other people's digital clones. You can do knowledge work. It's not just for entertainment, right? And it really involves more into
+49:18 a platform which is really aligned with kind of where these like world simulation capabilities are headed long term. Um, and I think when that happens,
+49:24 the kind of immersion things we will see are crazy. And, you know, for open AI across the board, it's really important
+49:30 that we kind of like iteratively deploy technology in a way where we're not just like dropping bombshells on the world when there's like some big research
+49:36 breakthrough. We want to co-evolve society with the technology. And so, that's why we really thought it was
+49:41 important to like do this now and like do in a way where, you know, we've hit this again this kind of like GP 3.5 moment for video. Let's make sure the
+49:47 world is kind of aware of what's possible now. And also, you know, start to get society comfortable in like
+49:53 figuring out the rules of the road for this kind of like longer term vision for where again there are just copies of
+49:60 yourself running around in Sora in the ether like just doing tasks and like reporting back in the physical world
+50:05 because that is where we are headed long term. So cool. So you're building the multiverse actually kind of. Yeah.
+50:11 Okay. Well, can can me go and find my soulmate somewhere in there? I mean, anything is possible in the
+50:16 multiverse. That's call for action everyone. It is kind of crazy though because and
+50:22 now I'm going to sound to totally cuckoo but if we're in a computed you know environment you're building the perfect
+50:29 simulator that kind of is the way you ultimately understand and break out of the computed environment right like are we getting
+50:35 closer to the heart of the matrix matrix some very deep existential questions. Yeah. Yeah.
+50:41 What's your guys pee of we're simulated like this is all rising.
+50:46 Yeah. Want me to? Oh, I'm I'm low. I'm Yeah. Oh, man. But yeah, it's okay.
+50:52 You're really uh Okay. I respect I'm just like, you know what? Sometimes it's got to be real. Yeah.
+50:57 I feel like I'm at like solid 60%. I don't know. Like, more likely than not at this point.
+51:02 I'm I'm I'm there, too. Whoa. Yeah. Zero. Should we make Should we make a call on
+51:08 it? Yeah. Trivally small. Settle that. What's the oracle on that?
+51:15 Sor 10. We'll answer 10. Yeah. Yeah. What do you think are the theoretical limits to Sora?
+51:22 Yeah, it's actually a great question. Um, I've thought a little bit about this. Like I think there's like a
+51:28 question, can you eventually like simulate like a GPU cluster right in Sora or something? And I I I assume there are some very well-defined limits
+51:37 on like the amount of computation you can run within one of these systems like
+51:42 given the amount of compute you're actually running it on. Um, I've not like thought deeply enough about this, but I think there are some like there's
+51:50 some like existential questions there that need to get resolved. Yeah. Yeah. See, that's why his PIM is so high.
+51:56 Fascinating. Wow. Got a few lightning round questions for the team that we just kind of generated on the fly here. Um, and take your time.
+52:05 Jump in whenever you have an answer. Your favorite cameo on Sora to date and
+52:10 what happened. That is so tough. I have I have a hot one. Go.
+52:17 Uh, shocker. Yeah. Okay. So, the there was this Tik Tok trend of I I and I got
+52:23 obsessed with them. I don't know why, but these Chinese factory tours where they're like, "Hello, I'm the chili this
+52:30 is the chili factory." They get like one like and it's me. Uh, and it's like they're showing their chili factory and they're like, "It's the chili factory."
+52:36 Like, "This is amazing." Uh, and or like there's an industrial uh chemical one. is uh
+52:43 yeah, I've lost the name, but there's an industrial uh uh chem chemical factory. And uh the first day um I had my cameo
+52:51 options open just because I was like, I just want to see what happens. Uh and uh the first day late at night um I opened
+52:60 my cameos and I was starting to get tagged in factory tour uh cameos that
+53:06 were all in Chinese. And I was like, I'm I'm in the Chili Factory. And I was so
+53:12 excited. I get zero likes. I liked it. It was just me, but I was like, I'm the Chili Factory guy now. I'm like doing
+53:19 the ribbon cutting at the Chili Factory. Amazing. Uh that's too deep of a cutout. So, congratulations.
+53:25 Fun fact, I actually have done Chinese Factory tours in real life and they are truly epic. Yeah.
+53:30 Uh there's this one just I saw Mark Cuban and Jorts dancing around that that
+53:36 got me. Um, but I mean my more back to the like just I scrolling the latest
+53:41 feed and just seeing like the wholesome content of people like doing things with their friends actually I think what brings me the most joy of they're not
+53:48 like super liked, but it's like people just like getting a lot of, you know, value obviously from just like making
+53:54 videos with their friends. So Sam has so many bangers. I like the one of him doing like this K-pop dance routine
+54:01 about like GPUs or something. It's very good. Actually, I would put it on my Spotify. Like we had the full song.
+54:07 Wow. It was very good. It was like generated by Sora. It's like like very compelling. Yeah.
+54:12 All right. Well, that leads to the next one because you mentioned Spotify. What does an AI fully generated AI win first?
+54:20 Oscar, Grammy, Emmy. I think the like logical answer is
+54:26 like the a short winning an Oscar. Yeah, I think that's probably right. Yeah. What would we win it for? like for like
+54:33 a thesort the George trilogy. Yeah. We need we need new content. Yeah. From
+54:40 I do think if people stitch things together in interesting ways like Yeah. I think there's you can actually start to make some very compelling
+54:45 storytelling in that. And um I don't think it's like it doesn't really feel like AI anymore. The the
+54:50 content I'm seeing like that that was actually something I noticed with Sor as well. Just like throw it wasn't even noticing it was AI. Um it was just kind
+54:57 of interesting content. That's a more interesting question. Would will we know? Oh yeah,
+55:03 maybe it's already happened. Maybe it's already happened. I feel like for Oscars, one of the cool
+55:10 things that'll be unlocked is this long tale of epic stories in history, stories
+55:16 of heroism and struggle and all of these things that have been locked up because
+55:21 of the cost of creating. You know, as a as a history enthusiast, I cannot wait
+55:28 for AI to unlock all of those stories. Have you seen the Bible video app? No, I haven't.
+55:33 Oh, it's really good. I'll show it to you after. Like, perfect example. Yeah. Or there's this movie, The Last Duel, a
+55:39 few years ago about this this really terrible crime that was committed in med
+55:44 medieval France that was historically relevant and, you know, basically says a lot about humanity. and it just got
+55:50 picked up because eventually Hollywood picked up this important story about humanity, but how many more are there in
+55:56 human history? That's going to be really cool. Um, favorite character from any
+56:01 film or TV show. I have a really random one. Go for it. Uh, you guys seen Madagascar?
+56:08 Yeah. King Julian. Oh, played by Sasha Sasha Baron Cohen. He's a lemur. He's a lemur king.
+56:14 Absolutely. It's just like it's a banger. It's his humor meets kid-friendly storytelling. It's just it's just
+56:19 perfect. I play a lot of video games, so I mean your classic answer is going to be like Mario or something like that. Although
+56:25 I'll do the deeper cut of we were always joking the rapper. Yeah. Yeah. Bara the Rappa like old old PlayStation game, one
+56:32 of the original rhythm games. And it's got a great artistic style and it's got great IP of just this little dog.
+56:38 What is he? A dog. He's a dog. Yeah. Yeah. That's a good pick. When I was a kid, I
+56:44 played the like Pokemon trading card game competitively for a while. Um, so I was like really in like the Pokemon
+56:50 rabbit hole. So like I don't know Pikachu or
+56:55 Pikachu mudcips. Super non-consensus like a fringe deep cut. Um, okay. First
+57:04 world model scientific discovery. Most specific possible. Obviously you're not going to say the discovery. I
+57:12 suspect it will be something related to like classical physics like wow a better theory of turbulence or
+57:18 something. That would be my guess. I was guessing that it was gonna be something like that. I was like
+57:23 Navier Stokes. I don't know. Yeah, some fluid dynamics thing that's maybe hard to understand. Um now there's a lot of
+57:28 like unsolved kind of problems there. I think sometimes they call it like continuum mechanics where it's like in between. Um and we don't have good
+57:34 models of them. something that lends itself to simulation just like the amount of iterations you can do of a
+57:40 simulation unlocking something which I I don't yeah something in that realm the
+57:45 last thing we'll be able to accurately simulate I do think there's like a set of
+57:51 physical phenomenon for which video data is like a poor choice of representation
+57:56 right so like for example is it really efficient to learn about
+58:02 you know like high-speed particle collision or something from like video footage maybe. Um I really think video
+58:10 is at its best when you know the phenomenon that you're trying to learn about is just natively represented uh in
+58:17 the physical world. And so when you when you need to do like you know like quantum mechanics or some other
+58:23 discipline where you know it's more theoretical we don't have like video footage beyond
+58:28 you can't see it. Yeah. Things that we've like manually rendered for like educational purposes. It feels like a weaker medium for
+58:35 understanding those things. So, I suspect those would come last. I guess it's the things we don't have sensors for. Right. Right.
+58:41 Yeah. Maybe the last things we care to simulate is another way of thinking about the answer. I don't know. I mean,
+58:47 people aren't doing much with smell right now. You know, maybe that's green fields. I've been meaning to tell you about
+58:52 that. It's kind of awkward. We're still trying to figure out how to simulate Thomas with bad hair.
+58:57 Oh, yeah. It remains an unsolved problem. Not even Sora can do it. Thomas's hair flow. Just general
+59:03 guzzling ketchup. Yes, there was a there was a a good round of people being bald. We were all bald
+59:09 gens were good actually. Kind of cool. That's a that's a use case that doesn't I don't really talk about very much but it's like
+59:15 visualization when you're B. Yeah. Everybody wants to be B. No. It's just like you just see yourself in some different context. I
+59:21 think that can be quite powerful even like therapeutic in some ways where you just like see yourself in some context that you either want or don't want
+59:27 yourself to kind of be in and just see see yourself. It's a real use case. Yeah. Yeah. True. Guys, thank you so much for coming. From
+59:34 space-time tokens to object permanence, world models that will enable scientific
+59:40 discovery, the democratization of creation, all the way to walking clocks, you guys
+59:47 have covered it all. Thank you so much. And uh the future is being created by you.
+59:52 Thanks, Constantine. Thanks, Sonia. Thank you.
+59:58 Heat. [Music]
+60:08 [Music]
+60:22 Heat.

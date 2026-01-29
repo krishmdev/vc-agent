@@ -1,0 +1,3190 @@
+00:01 [Music]
+00:02 
+
+00:02 the strategy of the team was we don't
+00:04 
+
+00:04 know how Reddit works or why Reddit
+00:07 
+
+00:07 Works therefore we're not going to
+00:09 
+
+00:09 change anything because we might break
+00:10 
+
+00:10 it and so they literally that was their
+00:12 
+
+00:12 strategy was don't change anything and
+00:14 
+
+00:14 then when I would talk to the team that
+00:16 
+
+00:16 they were so torn on this they were like
+00:18 
+
+00:18 we don't like the way Reddit is being
+00:20 
+
+00:20 used there's some content on here and
+00:22 
+
+00:22 communities on here that are really bad
+00:24 
+
+00:24 we don't like that we hate that but we
+00:27 
+
+00:27 feel powerless to get rid of it because
+00:28 
+
+00:28 if we get rid of it we're going to break
+00:29 
+
+00:29 Reddit but I told them is what you're
+00:32 
+
+00:32 describing to me as like if we change we
+00:34 
+
+00:34 die but the situation is if we don't
+00:36 
+
+00:36 change we're dead and was like that's
+00:38 
+
+00:38 why I'm here is reddit's dying and we
+00:40 
+
+00:40 have to change we have no
+00:44 
+
+00:44 choice welcome to Crucible moments a
+00:47 
+
+00:47 podcast about the critical Crossroads
+00:49 
+
+00:49 and inflection points that shaped some
+00:51 
+
+00:51 of the world's most remarkable companies
+00:53 
+
+00:53 I'm your host and the managing partner
+00:55 
+
+00:55 of SEO capital rof W to the unacquainted
+01:00 
+
+01:00 may look like a Labyrinth of message
+01:02 
+
+01:02 boards but to the devoted faithful of
+01:05 
+
+01:05 which there are 90 million daily active
+01:07 
+
+01:07 users and thousands of volunteer
+01:09 
+
+01:09 moderators it is a place to converse
+01:12 
+
+01:12 debate and connect founded in 2005 by
+01:16 
+
+01:16 college roommates today Reddit is one of
+01:19 
+
+01:19 the biggest sources of online
+01:20 
+
+01:20 information and one of the most visited
+01:23 
+
+01:23 sites on the internet but reddit's path
+01:26 
+
+01:26 was Securus and riddled with points of
+01:29 
+
+01:29 near failure controversies and crises a
+01:32 
+
+01:32 sale and a spin out resignations and
+01:35 
+
+01:35 business reinventions shaped Reddit into
+01:38 
+
+01:38 the juger it is now these are The
+01:41 
+
+01:41 Crucible moments that defined the front
+01:43 
+
+01:43 page of the
+01:48 
+
+01:48 internet my name is Steve Huffman I'm
+01:50 
+
+01:50 the co-founder and CEO of Reddit there's
+01:53 
+
+01:53 a long story behind the idea of Reddit I
+01:57 
+
+01:57 had had an idea for ordering food
+02:00 
+
+02:00 from your cell phone this was back in
+02:04 
+
+02:04 like 2004
+02:06 
+
+02:06 2005 and my college roommate at the time
+02:10 
+
+02:10 Alexis ohanyan I shared that idea with
+02:12 
+
+02:12 him and he liked it too and so it's
+02:14 
+
+02:14 something that we had talked about doing
+02:16 
+
+02:16 at the same time we learned that Paul
+02:19 
+
+02:19 Graham was giving a talk called how to
+02:22 
+
+02:22 start a startup during our spring break
+02:24 
+
+02:24 of our fourth year at
+02:26 
+
+02:26 uba and my girlfriend at the time over
+02:30 
+
+02:30 me talking about this and suggested that
+02:32 
+
+02:32 we go and so that's why we went to that
+02:34 
+
+02:34 talk I wasn't really familiar with Paul
+02:37 
+
+02:37 but when I heard about the talk I was
+02:39 
+
+02:39 like we got to go dude who cares about
+02:41 
+
+02:41 spring break like you know there's
+02:43 
+
+02:43 terrible screen glare on the beach let's
+02:45 
+
+02:45 go to Boston instead I'm Alexis ohanyan
+02:48 
+
+02:48 co-founder of Reddit and former
+02:49 
+
+02:49 executive chairman we go up we hear Paul
+02:52 
+
+02:52 speak Steve wants to go get an autograph
+02:55 
+
+02:55 for one of his books and then I followed
+02:58 
+
+02:58 by inviting Paul out for a drink and and
+03:00 
+
+03:00 he agreed Steven Alexis pitched Paul gra
+03:03 
+
+03:03 their mobile food ordering app and he
+03:05 
+
+03:05 was interested it just so happened gra
+03:07 
+
+03:07 was about to launch a startup
+03:09 
+
+03:09 accelerator called y combinator Paul
+03:12 
+
+03:12 encouraged us to apply with the idea
+03:15 
+
+03:15 that he had heard and so we applied with
+03:17 
+
+03:17 that idea but we're rejected Paul the
+03:21 
+
+03:21 following day after saying we couldn't
+03:23 
+
+03:23 do YC called us and said hey if you want
+03:25 
+
+03:25 to be in my combinator we'd like you in
+03:27 
+
+03:27 it but you need to work on something
+03:28 
+
+03:28 else Paul was enamored with this idea of
+03:31 
+
+03:31 like what is going to replace the New
+03:32 
+
+03:32 York Times when the front page needs to
+03:35 
+
+03:35 be more than just what one editorial
+03:37 
+
+03:37 board what one publication can decide
+03:41 
+
+03:41 and his idea for that something else was
+03:45 
+
+03:45 a version of delicious delicious was a
+03:48 
+
+03:48 website at the time that among other
+03:50 
+
+03:50 things invented tagging it was a social
+03:51 
+
+03:51 bookmarking website he was like I have
+03:53 
+
+03:53 this idea where if it was delicious but
+03:55 
+
+03:55 the content was good and so we went back
+03:58 
+
+03:58 to Boston and then we mashed it up with
+04:01 
+
+04:01 another idea I had which was Slash dot
+04:05 
+
+04:05 which was another website at the time
+04:06 
+
+04:06 basically slop not just for Tech news
+04:09 
+
+04:09 because slat was this website for Tech
+04:11 
+
+04:11 news but it had this really great
+04:13 
+
+04:13 community that was was really what slash
+04:16 
+
+04:16 was about and so that initial idea for
+04:18 
+
+04:18 Reddit was a combination of the
+04:20 
+
+04:20 delicious social
+04:22 
+
+04:22 bookmarking and the slash. community and
+04:26 
+
+04:26 conversation Sten Alexis received a
+04:28 
+
+04:28 $112,000 check from YC as part of the
+04:31 
+
+04:31 inaugural class they decided on the name
+04:33 
+
+04:33 Reddit as in I readit on Reddit they
+04:36 
+
+04:36 built a simple userfriendly platform for
+04:38 
+
+04:38 sharing and discussing topics in one
+04:41 
+
+04:41 centralized place which at the time was
+04:43 
+
+04:43 a
+04:45 
+
+04:45 novelty 2005 was a lot at first it was
+04:49 
+
+04:49 the first time BR band was greater than
+04:52 
+
+04:52 D and you have to also have to
+04:55 
+
+04:55 understand in 2005 this is pre social
+04:57 
+
+04:57 media my name is Alfred Lynn and I'm a
+04:60 
+
+04:60 partner at sequa Capital so you know in
+05:02 
+
+05:02 some sense Reddit and YouTube which was
+05:05 
+
+05:05 also founded in 2005 were the first of
+05:08 
+
+05:08 its kind to combine user generated
+05:10 
+
+05:10 content and community and so Reddit is
+05:14 
+
+05:14 this social content and community site
+05:17 
+
+05:17 that in some sense was never seen before
+05:20 
+
+05:20 and they were the first to do this
+05:22 
+
+05:22 because of how we got into why
+05:23 
+
+05:23 combinator with that like extra
+05:25 
+
+05:25 attention from Paul we got extra
+05:27 
+
+05:27 attention in the batch as well for
+05:29 
+
+05:29 better for work
+05:30 
+
+05:30 and so he was really putting a lot of
+05:32 
+
+05:32 pressure on me to get this thing
+05:34 
+
+05:34 launched he sent this email that said
+05:36 
+
+05:36 why haven't you launched yet is it
+05:38 
+
+05:38 because you can't or because you think
+05:41 
+
+05:41 it's not ready yet and I don't know
+05:43 
+
+05:43 which is worse and So I responded to him
+05:45 
+
+05:45 with a link I was like here it is here's
+05:47 
+
+05:47 Reddit and then he linked to Reddit from
+05:50 
+
+05:50 his blog which was a popular blog
+05:51 
+
+05:51 without telling me so that's how we
+05:53 
+
+05:53 launched I was just working on Reddit
+05:55 
+
+05:55 and all of a sudden the error log
+05:57 
+
+05:57 started scrolling really fast and so
+05:59 
+
+05:59 that's when we got our first users I
+06:01 
+
+06:01 thought it was a pretty basic website it
+06:03 
+
+06:03 had mainstream content it had some Niche
+06:05 
+
+06:05 content and it was a pretty good way uh
+06:08 
+
+06:08 for you to read about anything and
+06:11 
+
+06:11 engage in interesting conversations
+06:13 
+
+06:13 around the content the UI was very very
+06:15 
+
+06:15 simple Simplicity was part of the reason
+06:17 
+
+06:17 why I believe people gravitated to
+06:21 
+
+06:21 Reddit um because of the usability there
+06:23 
+
+06:23 were moments where we'd get a spike and
+06:26 
+
+06:26 then a significant number of users stuck
+06:27 
+
+06:27 around and it just kept growing
+06:31 
+
+06:31 the community was starting to kind of
+06:32 
+
+06:32 kick off we didn't think as a community
+06:34 
+
+06:34 at that point we just thought of it as
+06:35 
+
+06:35 being a kind of a neat product to
+06:37 
+
+06:37 service interesting content my name is
+06:39 
+
+06:39 Chris slow I'm the CTO and founding
+06:42 
+
+06:42 engineer at Reddit I first met Steven
+06:44 
+
+06:44 Alexis back in June of 2005 Steve and
+06:48 
+
+06:48 Alexis moved into Chris's apartment and
+06:50 
+
+06:50 threw themselves into work at the time I
+06:53 
+
+06:53 was also going through grad school so I
+06:54 
+
+06:54 was in my fifth year of my PhD at
+06:57 
+
+06:57 Harvard uh doing experimental physics
+06:59 
+
+06:59 and so my schedule was a little bit more
+07:01 
+
+07:01 normal in that I would wake up at like
+07:02 
+
+07:02 7:00 in the morning and go to lab and
+07:05 
+
+07:05 then work on my startup at night whereas
+07:07 
+
+07:07 um Steve was definitely kind of rotated
+07:10 
+
+07:10 into like kind of night hours and so I
+07:11 
+
+07:11 think they were going to bed a couple
+07:13 
+
+07:13 hours before I was getting up and so I
+07:15 
+
+07:15 remember it started off with a couple of
+07:17 
+
+07:17 Mornings in a row where I woke up and of
+07:20 
+
+07:20 course the first thing I did was check
+07:21 
+
+07:21 Reddit because everyone was checking
+07:23 
+
+07:23 Reddit at that point on the third day in
+07:24 
+
+07:24 a row where I woke up and uh Reddit was
+07:26 
+
+07:26 actually down kind of went over and
+07:28 
+
+07:28 knocked on Steve's door and it's was
+07:29 
+
+07:29 like hey hey Steve reddits down but the
+07:31 
+
+07:31 third day he was just fed up with it he
+07:33 
+
+07:33 just showed me how to restart it so
+07:35 
+
+07:35 technically I started working at Reddit
+07:36 
+
+07:36 before I actually started working at
+07:37 
+
+07:37 Reddit as the team immersed themselves
+07:40 
+
+07:40 in building Reddit they began to
+07:41 
+
+07:41 consider how best to organize content
+07:44 
+
+07:44 posted to the site one of the I think
+07:47 
+
+07:47 ideas that was important to us is that
+07:49 
+
+07:49 we not over categorize things and this
+07:52 
+
+07:52 is part of this kind of broader idea
+07:55 
+
+07:55 that we are not the editors we are not
+07:57 
+
+07:57 The Gatekeepers and the categorizing
+07:59 
+
+07:59 things by topic is one of the things
+08:01 
+
+08:01 that editors do and so we're like that's
+08:03 
+
+08:03 not what we do but what happened is as
+08:05 
+
+08:05 Reddit grew what started off as a
+08:08 
+
+08:08 cohesive uh Community started to
+08:12 
+
+08:12 fracture this fracturing led to a
+08:15 
+
+08:15 defining feature of Reddit the
+08:17 
+
+08:17 subreddit the first subreddit that we
+08:20 
+
+08:20 made I would say intentionally to have a
+08:22 
+
+08:22 different community on Reddit which is
+08:24 
+
+08:24 the point of subreddits was programming
+08:27 
+
+08:27 I was sad that the programming content
+08:29 
+
+08:29 was no longer the most popular content
+08:31 
+
+08:31 on Reddit because the politics was
+08:33 
+
+08:33 becoming more and more popular the front
+08:35 
+
+08:35 page was now mostly politics and I
+08:39 
+
+08:39 didn't like that it was like I was like
+08:41 
+
+08:41 bredd it was this fun place and now it's
+08:43 
+
+08:43 this angry place and so I made the
+08:47 
+
+08:47 politics subreddit so that the political
+08:49 
+
+08:49 content could live in its own place and
+08:51 
+
+08:51 then I waged this like uh campaign I'm
+08:55 
+
+08:55 going to regret saying this but I waged
+08:57 
+
+08:57 like the sock puppet campaign of me and
+08:59 
+
+08:59 lots of my Al anytime somebody posted
+09:01 
+
+09:01 politics outside of the politics
+09:03 
+
+09:03 subreddit I said this doesn't belong
+09:05 
+
+09:05 here put it in the politics
+09:06 
+
+09:06 subreddit at the time IID really wanted
+09:09 
+
+09:09 tags because I believe that was going to
+09:12 
+
+09:12 help the site grow faster CU you could
+09:14 
+
+09:14 have one post tagged to multiple things
+09:17 
+
+09:17 Steve was really adamant about
+09:19 
+
+09:19 communities and he definitely got this
+09:20 
+
+09:20 one right the concept of subred in
+09:22 
+
+09:22 generally is what allows Reddit to scale
+09:25 
+
+09:25 because people are diverse they have
+09:27 
+
+09:27 diverse interests The Wider our user
+09:30 
+
+09:30 bases audiences are and the more diverse
+09:34 
+
+09:34 they are the less appealing that single
+09:37 
+
+09:37 shared space is but as Reddit continued
+09:41 
+
+09:41 to scale 2006 brought growing pains and
+09:44 
+
+09:44 personal stress I get a call from the
+09:47 
+
+09:47 mom of my then girlfriend who was
+09:49 
+
+09:49 studying abroad she had had this
+09:52 
+
+09:52 horrible accident Fallen five six
+09:54 
+
+09:54 stories from her apartment she was in a
+09:56 
+
+09:56 coma I flew out there spent about a week
+09:58 
+
+09:58 with her and the family and then about
+10:00 
+
+10:00 two months later I get another call that
+10:03 
+
+10:03 my mom had just had a seizure they had
+10:05 
+
+10:05 brought her in to the hospital done a
+10:07 
+
+10:07 scan and they found a stage for gleo
+10:10 
+
+10:10 blastoma tumor so brain cancer terminal
+10:12 
+
+10:12 brain cancer and So within the first few
+10:15 
+
+10:15 months of building this company coming
+10:16 
+
+10:16 right out of college feeling
+10:18 
+
+10:18 invulnerable I am hit with this backtack
+10:22 
+
+10:22 trauma it was kind of a a little bit of
+10:24 
+
+10:24 a lonely time by the time we got into
+10:27 
+
+10:27 2006 there were four of us working on
+10:29 
+
+10:29 Reddit uh it was me uh and Alexis the
+10:32 
+
+10:32 co-founders and then Aaron Schwarz and
+10:35 
+
+10:35 Chris slow but at the time uh Alexis was
+10:39 
+
+10:39 going through his mom was sick his mom
+10:41 
+
+10:41 had cancer and so Alexis was going
+10:43 
+
+10:43 through that Chris was still a full-time
+10:46 
+
+10:46 student at Harvard and so he was working
+10:49 
+
+10:49 evenings with us and at that point Aaron
+10:53 
+
+10:53 wasn't working on Reddit anymore and so
+10:56 
+
+10:56 for 2006 that left me
+10:60 
+
+10:60 basically working on Reddit by myself
+11:03 
+
+11:03 dayto day and most of what I was doing
+11:06 
+
+11:06 at that time was just trying to keep
+11:07 
+
+11:07 reddit online I was 20 I don't know what
+11:09 
+
+11:09 it was 21 22 kind of learning learning
+11:12 
+
+11:12 the hard way all the like systems
+11:15 
+
+11:15 engineering to keep a website of that
+11:17 
+
+11:17 scale online you know while the plane
+11:20 
+
+11:20 was
+11:21 
+
+11:21 flying meanwhile major tech companies
+11:24 
+
+11:24 like Google and Yahoo began taking
+11:26 
+
+11:26 notice expressing interest in a
+11:28 
+
+11:28 potential acquisition
+11:31 
+
+11:31 Yahoo in 2005 2006 was still a fairly
+11:34 
+
+11:34 massive player when Yahoo flew us out a
+11:37 
+
+11:37 few months in to starting Reddit and the
+11:39 
+
+11:39 executive had us in this meeting room
+11:41 
+
+11:41 and when he asked for our traffic and I
+11:43 
+
+11:43 gave it to him he just laughed and he
+11:44 
+
+11:44 said you're rounding error compared to
+11:46 
+
+11:46 Yahoo what are you doing here that
+11:49 
+
+11:49 comment ended up printed out and mounted
+11:51 
+
+11:51 in our bathroom as a little reminder of
+11:54 
+
+11:54 like it just said you're rounding her
+11:56 
+
+11:56 and I think that helped to actually if
+11:57 
+
+11:57 anything kind of galvanize us I mean I'm
+11:59 
+
+11:59 not going to say that we continue to
+11:60 
+
+11:60 build out a spite but the spite didn't
+12:02 
+
+12:02 hurt later that year Reddit received a
+12:04 
+
+12:04 call from another interested buyer one
+12:07 
+
+12:07 outside the tix spere that at first
+12:09 
+
+12:09 glance didn't seem like an obvious
+12:11 
+
+12:11 partner Kan ass came into the picture
+12:14 
+
+12:14 wanting to buy Reddit K Nas um they're a
+12:18 
+
+12:18 publisher and so most of their content
+12:21 
+
+12:21 is in magazines and they're probably
+12:22 
+
+12:22 looking for a way to transform their
+12:24 
+
+12:24 business to be a lot more internet
+12:26 
+
+12:26 friendly than publishing focused the
+12:30 
+
+12:30 pitch was actually that hey okay Reddit
+12:32 
+
+12:32 is this increasingly large presence of
+12:35 
+
+12:35 being able to effectively like redirect
+12:38 
+
+12:38 eyeballs and sling traffic right like we
+12:40 
+
+12:40 aggregate content and we rank content
+12:43 
+
+12:43 and we're able to show what is the
+12:45 
+
+12:45 current really hot things that are
+12:47 
+
+12:47 present on the web without any real
+12:50 
+
+12:50 other way to kind of get to it whereas K
+12:52 
+
+12:52 was effectively a it's a media platform
+12:54 
+
+12:54 right they generate content and so the
+12:56 
+
+12:56 pitch was effectively with our powers
+12:58 
+
+12:58 combined we can be
+13:02 
+
+13:02 unstoppable after a series of
+13:04 
+
+13:04 conversations cond Nast made an
+13:06 
+
+13:06 acquisition offer of $10 million barely
+13:10 
+
+13:10 a year old Reddit faced a crucible
+13:12 
+
+13:12 decision do you sell to an old media
+13:15 
+
+13:15 Empire or gamble on creating a part of
+13:18 
+
+13:18 the internet's
+13:20 
+
+13:20 future when Kan ass came into the
+13:23 
+
+13:23 picture wanting to buy Reddit I almost
+13:26 
+
+13:26 felt like that was an escape because I
+13:28 
+
+13:28 didn't know I didn't feel like that sit
+13:29 
+
+13:29 situation we were in was sustainable all
+13:32 
+
+13:32 I could see was like oh I'm just kind of
+13:34 
+
+13:34 holding this thing together by my
+13:36 
+
+13:36 fingernails the whole thing was just
+13:38 
+
+13:38 kind of wild right this is less than a
+13:39 
+
+13:39 year or a year roughly from when we had
+13:41 
+
+13:41 gotten into YC and we're talking about
+13:44 
+
+13:44 an acquisition like Steve was working
+13:47 
+
+13:47 like 16 hour days just kind of like
+13:49 
+
+13:49 continuously grinding I was doing the
+13:51 
+
+13:51 night shift effectively doing like grad
+13:52 
+
+13:52 school by day and then working on Reddit
+13:54 
+
+13:54 by night and then you know sleeping
+13:56 
+
+13:56 maybe 4 hours a night it was wild to
+13:58 
+
+13:58 think that like all that Blood Sweat and
+13:59 
+
+13:59 Tears had actually gone into like we can
+14:01 
+
+14:01 we can sell this we had $72,000 in the
+14:05 
+
+14:05 bank at this point it changes your
+14:07 
+
+14:07 perspective on things when probably six
+14:09 
+
+14:09 months later I'm meeting with this guy
+14:12 
+
+14:12 this bizdev guy from con and n and he
+14:14 
+
+14:14 says Hey we'd like to buy your company
+14:16 
+
+14:16 and that the price is $10 million I'm
+14:19 
+
+14:19 thinking my God I could make
+14:21 
+
+14:21 life-changing money my parents will not
+14:23 
+
+14:23 make this money their entire lives and
+14:25 
+
+14:25 I'm going to make it for 12 months worth
+14:26 
+
+14:26 of work and and get to let my know that
+14:30 
+
+14:30 her you know unflagging support and
+14:32 
+
+14:32 belief in me was worth it on top of it
+14:34 
+
+14:34 all you know at that point there wasn't
+14:36 
+
+14:36 really a monetization route for Reddit
+14:37 
+
+14:37 we didn't advertise we didn't have any
+14:39 
+
+14:39 real way to make money uh we're still
+14:41 
+
+14:41 also a fairly Lean Startup we thought
+14:44 
+
+14:44 that would give us the best chance at
+14:45 
+
+14:45 survival because resources were so
+14:48 
+
+14:48 scarce I had also thought more shallowly
+14:51 
+
+14:51 that this is what we were supposed to do
+14:54 
+
+14:54 those were the stories that I had read
+14:56 
+
+14:56 about during the bubble when I was in
+14:58 
+
+14:58 high school was people starting
+14:59 
+
+14:59 companies and then selling them and then
+15:01 
+
+15:01 leaving their acquire and starting
+15:03 
+
+15:03 another company and that's more or less
+15:05 
+
+15:05 what Paul and YC evangelized as well and
+15:08 
+
+15:08 so part of me felt like we were
+15:09 
+
+15:09 fulfilling the prophecy I remember
+15:11 
+
+15:11 having a conversation Paul and Jessica
+15:13 
+
+15:13 Jessica Livingston co-founder of Y
+15:15 
+
+15:15 combinator had me over to their house
+15:18 
+
+15:18 and they said listen we got to talk
+15:20 
+
+15:20 because at the time we weren't shipping
+15:22 
+
+15:22 a ton and this is like maybe q1 of 2006
+15:26 
+
+15:26 and and they were like listen like if if
+15:28 
+
+15:28 things AR going great on the enging
+15:29 
+
+15:29 front you know and you've got this offer
+15:32 
+
+15:32 like you should sell this company and he
+15:34 
+
+15:34 and they just said they were like look
+15:36 
+
+15:36 this is a great opportunity this company
+15:38 
+
+15:38 is in distress like they're not shipping
+15:40 
+
+15:40 and if a software company's not shipping
+15:42 
+
+15:42 it's not good also frankly I I know I
+15:45 
+
+15:45 was just too naive to really understand
+15:47 
+
+15:47 what that like change of control could
+15:50 
+
+15:50 really look like in October 2006 K Nas's
+15:53 
+
+15:53 acquisition of Reddit closed Steve
+15:56 
+
+15:56 Alexis and Chris moved into the wired
+15:58 
+
+15:58 offices in San
+15:60 
+
+15:60 Francisco acquisition in some sense it
+16:03 
+
+16:03 it is a crucible moment because it is a
+16:07 
+
+16:07 milestone of some sorts somebody gets
+16:10 
+
+16:10 some level of liquidity and in many
+16:14 
+
+16:14 situations when that happens people's
+16:17 
+
+16:17 revealed preferences show up their
+16:19 
+
+16:19 stated preference might be that they
+16:21 
+
+16:21 want to focus on the vision of the
+16:23 
+
+16:23 company and when an acquisition happens
+16:27 
+
+16:27 and some people get a little bit of
+16:28 
+
+16:28 liquidity they their reveal preference
+16:30 
+
+16:30 might be you know I made
+16:33 
+
+16:33 X that's enough for my bank account and
+16:36 
+
+16:36 therefore I'm done versus following
+16:38 
+
+16:38 through on their vision and so it's it's
+16:42 
+
+16:42 a little dangerous if you don't have an
+16:44 
+
+16:44 aligned team on the vision both Steve
+16:47 
+
+16:47 and Alexis were still focused on their
+16:49 
+
+16:49 vision and so when they were acquired by
+16:52 
+
+16:52 K N they still continue to stick around
+16:55 
+
+16:55 and continue to build the the product
+16:58 
+
+16:58 for for a couple more years beyond the
+17:02 
+
+17:02 acquisition one of the mistakes of the
+17:05 
+
+17:05 acquisition was this idea of that
+17:07 
+
+17:07 advertising was transferable to Reddit
+17:10 
+
+17:10 and Reddit is a drastically different
+17:12 
+
+17:12 product than style.com or especially
+17:14 
+
+17:14 then it was more on the kind of like
+17:16 
+
+17:16 snarky techy nerdy kind of axis and so
+17:20 
+
+17:20 it was very hard to have the same sort
+17:22 
+
+17:22 of transferability of ads onto Reddit
+17:24 
+
+17:24 and so we weren't even quite breaking
+17:26 
+
+17:26 even with that modest staff in fact if
+17:28 
+
+17:28 anything the trick part was uh Hey
+17:31 
+
+17:31 server cost scale with users the
+17:33 
+
+17:33 property had matured to a level where
+17:36 
+
+17:36 they needed different DNA inside of C
+17:39 
+
+17:39 Nas to run with the business and it was
+17:43 
+
+17:43 hard to attract the type of talent that
+17:46 
+
+17:46 they were looking for when it was inside
+17:49 
+
+17:49 of K
+17:51 
+
+17:51 Nas in 2009 with the media industry
+17:55 
+
+17:55 under pressure and Reddit struggling for
+17:57 
+
+17:57 resources inside of onast Steve left to
+18:00 
+
+18:00 start the travels side hipmunk along
+18:03 
+
+18:03 with Adam Goldstein Alexis left to start
+18:06 
+
+18:06 a career in investing Chris however
+18:09 
+
+18:09 stayed on deciding to leave is another
+18:12 
+
+18:12 story that I've changed a lot over the
+18:15 
+
+18:15 years the and so I I'll tell you what I
+18:18 
+
+18:18 think was my reasoning was that's what I
+18:21 
+
+18:21 was supposed to do now there was also
+18:24 
+
+18:24 the fact that I wanted to start another
+18:26 
+
+18:26 company uh I was no longer an owner of
+18:28 
+
+18:28 Reddit I was an employee of K Nast
+18:30 
+
+18:30 working on Reddit we couldn't take on VC
+18:33 
+
+18:33 to grow like we couldn't take on Capital
+18:36 
+
+18:36 to invest in the growth engine and when
+18:38 
+
+18:38 the pro is is succeeding by every every
+18:40 
+
+18:40 kind of growth metric but not succeeding
+18:42 
+
+18:42 as a business that's kind of the medy
+18:45 
+
+18:45 startup spot right and so it's almost
+18:47 
+
+18:47 like we were kind of stuck in I us a
+18:49 
+
+18:49 joke we like we're kind of stuck in
+18:50 
+
+18:50 carbonite in a lost ditch effort to jump
+18:53 
+
+18:53 start the business inside of cond Nast a
+18:56 
+
+18:56 small but determined Reddit team decided
+18:58 
+
+18:58 to take their survival
+18:59 
+
+18:59 into their own
+19:01 
+
+19:01 hands we launched Reddit Gold in summer
+19:05 
+
+19:05 of 2010 but this was just about the time
+19:08 
+
+19:08 where I was considering uh departing
+19:10 
+
+19:10 Reddit and so I definitely had a little
+19:13 
+
+19:13 bit of a like eff it we're doing it live
+19:15 
+
+19:15 uh feel uh at that point in my career
+19:18 
+
+19:18 and and frankly it was out of a certain
+19:20 
+
+19:20 amount of desperation it was like okay
+19:23 
+
+19:23 if we can't sell ads uh or we can't sell
+19:25 
+
+19:25 enough ads and our self-service product
+19:27 
+
+19:27 is advertising product is still growing
+19:29 
+
+19:29 let's just see if we can sell
+19:30 
+
+19:30 subscriptions and the original pitch was
+19:32 
+
+19:32 actually kind of funny and that we
+19:33 
+
+19:33 didn't even offer anything back we were
+19:35 
+
+19:35 just like if you all go through with
+19:37 
+
+19:37 this we will find products to build you
+19:40 
+
+19:40 and so we got a fantastic first pass of
+19:44 
+
+19:44 of donations the point where we opened
+19:46 
+
+19:46 up a PayPal account and the reason for
+19:47 
+
+19:47 it was well New York summer hours people
+19:50 
+
+19:50 generally leave and kind of go to The
+19:52 
+
+19:52 Hamptons or wherever they go during the
+19:54 
+
+19:54 summer on Fridays pretty early and so if
+19:56 
+
+19:56 we launched it later on a Friday maybe
+19:59 
+
+19:59 no one would notice until Monday at
+20:00 
+
+20:00 which point we'd have a giant pile of
+20:02 
+
+20:02 cash we could say but but look it worked
+20:04 
+
+20:04 and so we kind of turned it on and I
+20:06 
+
+20:06 remember we were we went out to lunch
+20:08 
+
+20:08 and we were just sitting there the whole
+20:09 
+
+20:09 time on our phones reloading the PayPal
+20:11 
+
+20:11 box watching the counter just go up in a
+20:15 
+
+20:15 way that was like I think we raised more
+20:16 
+
+20:16 in the first day than we had made in ads
+20:19 
+
+20:19 for that month when the cond Nast
+20:22 
+
+20:22 Executives returned on Monday morning
+20:24 
+
+20:24 they were impressed if a little annoyed
+20:27 
+
+20:27 by the Reddit Gold Gambit but ultimately
+20:29 
+
+20:29 the subscription model couldn't generate
+20:31 
+
+20:31 enough revenue for cond Nas to justify
+20:33 
+
+20:33 keeping Reddit under its umbrella in
+20:35 
+
+20:35 2011 in an unusual move cond Nest spun
+20:39 
+
+20:39 Reddit out into an independent company
+20:41 
+
+20:41 once again in general these these
+20:44 
+
+20:44 Acquisitions and spin outs are are rare
+20:47 
+
+20:47 um in my career I've probably seen a few
+20:50 
+
+20:50 of these but but they're very rare there
+20:52 
+
+20:52 are very few of these situations where a
+20:54 
+
+20:54 company gets acquired then they get spun
+20:56 
+
+20:56 out spinning it out a couple years years
+20:59 
+
+20:59 later really I think was an opportunity
+21:01 
+
+21:01 to like really take a proper series a
+21:04 
+
+21:04 really to kind of go through those like
+21:05 
+
+21:05 the the awkward middle years of a
+21:07 
+
+21:07 startup that we all have grown to love
+21:09 
+
+21:09 and hate of like you know everyone has
+21:11 
+
+21:11 to have their awkward series B otherwise
+21:12 
+
+21:12 you don't really realize exactly what
+21:14 
+
+21:14 the what the product is for and what the
+21:15 
+
+21:15 business is for in reddit's case that
+21:17 
+
+21:17 just happened to happen like close to 10
+21:19 
+
+21:19 years after the founding of the company
+21:21 
+
+21:21 the spin-off from cond Nast allowed
+21:22 
+
+21:22 Reddit to fundraise and bring in new
+21:24 
+
+21:24 Talent including CEO yishan Wong who had
+21:28 
+
+21:28 previously LED engineering at PayPal and
+21:30 
+
+21:30 Facebook in 2014 Sam Alman LED Reddit
+21:34 
+
+21:34 series B which included an investment
+21:37 
+
+21:37 from Sequoia Alexis also joined the
+21:39 
+
+21:39 Reddit board bringing a co-founder's
+21:41 
+
+21:41 perspective back to the
+21:43 
+
+21:43 company but from 2012 to 2015 a series
+21:47 
+
+21:47 of crises plagued the company from toxic
+21:50 
+
+21:50 subreddits and harmful content to
+21:53 
+
+21:53 moderators in open
+21:55 
+
+21:55 Revolt the moderators had a lot of G es
+21:60 
+
+21:60 over safety the content policy or the
+22:03 
+
+22:03 lack of a Content policy some mod
+22:06 
+
+22:06 thought Reddit didn't do anything on
+22:07 
+
+22:07 safety and and and others thought Reddit
+22:09 
+
+22:09 was doing too much up until that point
+22:11 
+
+22:11 that reddit's content policy was
+22:12 
+
+22:12 basically we don't remove things the
+22:14 
+
+22:14 reasoning was the reasoning we had used
+22:17 
+
+22:17 since the beginning of Reddit which is
+22:18 
+
+22:18 we are not the editors we are not The
+22:19 
+
+22:19 Gatekeepers this is community run we did
+22:22 
+
+22:22 and still do believe in free speech and
+22:24 
+
+22:24 free expression but one of the lessons
+22:26 
+
+22:26 we were learning at that moment is it's
+22:30 
+
+22:30 very easy to take a kind of absolutist
+22:34 
+
+22:34 free speech position when you don't have
+22:36 
+
+22:36 any issues when you start to be
+22:38 
+
+22:38 confronted with like real issues then
+22:41 
+
+22:41 you have to start making hard
+22:42 
+
+22:42 decisions what do you do when the trolls
+22:45 
+
+22:45 start to win is really what was starting
+22:47 
+
+22:47 to happen I think what I've learned over
+22:49 
+
+22:49 my uh very long career RIT now is that
+22:53 
+
+22:53 98% of people are actually good and
+22:56 
+
+22:56 funny and just want to be left alone to
+22:59 
+
+22:59 do their thing and just you know are
+23:01 
+
+23:01 pretty overall going to be good actors
+23:03 
+
+23:03 if you set up the situation to allow
+23:04 
+
+23:04 them to to be good actors that other 2%
+23:08 
+
+23:08 are just jerks and the game if there is
+23:12 
+
+23:12 a game is to make sure that that 2% of
+23:14 
+
+23:14 jerks doesn't dominate the discourse for
+23:16 
+
+23:16 the other 98% because they're going to
+23:18 
+
+23:18 try um and I think that you know the the
+23:21 
+
+23:21 the the story of the internet has been
+23:24 
+
+23:24 how those jerks have often times taken
+23:26 
+
+23:26 the narrative away and taken the story
+23:27 
+
+23:27 away
+23:29 
+
+23:29 these incidents beg the question what
+23:31 
+
+23:31 belongs on Reddit the platform was built
+23:34 
+
+23:34 on ideals of Free Speech but where do
+23:36 
+
+23:36 you draw a line what is the role of
+23:38 
+
+23:38 community moderators to take down
+23:40 
+
+23:40 harmful content and when does the
+23:43 
+
+23:43 company itself need to step in ever
+23:46 
+
+23:46 since the spin out of Reddit it was
+23:48 
+
+23:48 clear to the community that Reddit was
+23:51 
+
+23:51 going to grow up and become a business
+23:53 
+
+23:53 there was this friction between the
+23:55 
+
+23:55 company and the community the Reddit
+23:56 
+
+23:56 Community became increasingly big jurant
+23:59 
+
+23:59 towards Reddit the company and Reddit
+24:02 
+
+24:02 employees were such active users of
+24:06 
+
+24:06 Reddit they felt like they were not just
+24:08 
+
+24:08 employees of the company they were also
+24:11 
+
+24:11 Reddit community members and some of
+24:12 
+
+24:12 them were moderators and so the Reddit
+24:15 
+
+24:15 employees had difficulty
+24:18 
+
+24:18 delineating the community's wishes and
+24:21 
+
+24:21 the company's objectives it it was a
+24:24 
+
+24:24 unique problem that I don't think I've
+24:26 
+
+24:26 ever saw in any other company that I've
+24:29 
+
+24:29 worked with for the first half of
+24:31 
+
+24:31 2015 Reddit kind of lurched from crisis
+24:35 
+
+24:35 to crisis and then we just got to the
+24:38 
+
+24:38 point in it was July of 2015 where
+24:41 
+
+24:41 Reddit was going through its basically
+24:43 
+
+24:43 biggest crisis to date which felt to me
+24:46 
+
+24:46 like the final crisis like this is going
+24:48 
+
+24:48 to kill the company the local cause was
+24:53 
+
+24:53 Reddit had terminated an employee who
+24:57 
+
+24:57 did mod relations so basically she was
+24:60 
+
+25:00 the main liaison with the
+25:02 
+
+25:02 moderators there was a well-loved
+25:05 
+
+25:05 community team member a a Reddit
+25:07 
+
+25:07 employee who was the main kind of
+25:09 
+
+25:09 coordinator with moderators who was let
+25:12 
+
+25:12 go and so that departure was like the
+25:17 
+
+25:17 match that Lit the Tinder Box of the
+25:19 
+
+25:19 community just being upset with we're
+25:22 
+
+25:22 changing the rules you fired our
+25:24 
+
+25:24 favorite person that was really just
+25:27 
+
+25:27 kind of the straw that broke the camel's
+25:28 
+
+25:28 back the users were in basically open
+25:31 
+
+25:31 revolt and then they had shut their
+25:32 
+
+25:32 subreddits down and so Reddit was
+25:34 
+
+25:34 basically offline at that moment and was
+25:37 
+
+25:37 the first time we had seen anything like
+25:39 
+
+25:39 that Reddit was like truly offline if it
+25:42 
+
+25:42 stayed offline for too long it would
+25:43 
+
+25:43 just be gone in July of 2015 Reddit went
+25:47 
+
+25:47 dark thousands of moderators made their
+25:50 
+
+25:50 subreddits private meaning no one could
+25:53 
+
+25:53 post and no one could comment the site
+25:56 
+
+25:56 came to a standstill this moment would
+25:59 
+
+25:59 come to be known as the great Reddit
+26:01 
+
+26:01 blackout of 2015
+26:04 
+
+26:04 or gon but went from you know a couple
+26:08 
+
+26:08 of these little these little Sparks led
+26:10 
+
+26:10 to 50% of communities on Reddit blacking
+26:13 
+
+26:13 out calling for the departure of the CEO
+26:17 
+
+26:17 at the time and just like basically
+26:19 
+
+26:19 calling for people's heads full
+26:20 
+
+26:20 pitchforks and torches which again it's
+26:22 
+
+26:22 Reddit so pitch forks and torches are
+26:23 
+
+26:23 effectively one of the things that
+26:24 
+
+26:24 people love the most on Reddit just
+26:26 
+
+26:26 tough when they directed back at Reddit
+26:29 
+
+26:29 the friction just became worse and worse
+26:31 
+
+26:31 and you know if the company doesn't
+26:34 
+
+26:34 exist the community will also not
+26:36 
+
+26:36 exist Ellen po had replaced isan Wang a
+26:40 
+
+26:40 CEO after he resigned in 2014 she
+26:43 
+
+26:43 stepped down after a user petition
+26:46 
+
+26:46 called for her resignation just a week
+26:48 
+
+26:48 after the site went dark pow then
+26:51 
+
+26:51 published an oped in the Washington Post
+26:53 
+
+26:53 called the trolls are winning the battle
+26:56 
+
+26:56 for the internet and the challenges for
+26:59 
+
+26:59 isan and for Ellen was not that they
+27:02 
+
+27:02 they were not good as being a CEO of a
+27:05 
+
+27:05 company of the size of Reddit at the
+27:08 
+
+27:08 time it was they didn't have the founder
+27:12 
+
+27:12 moral authority to push back on the
+27:13 
+
+27:13 community so Sam called Steve I called
+27:17 
+
+27:17 Steve and we started to put the full
+27:20 
+
+27:20 court press on getting him to think very
+27:23 
+
+27:23 seriously about leaving hipmunk and
+27:27 
+
+27:27 coming back to Reddit
+27:29 
+
+27:29 I was super absorbed with hitmon and
+27:32 
+
+27:32 that was like really the only
+27:33 
+
+27:33 conversation i' had about Reddit in
+27:35 
+
+27:35 years and we were in the middle of an
+27:37 
+
+27:37 m&a process for hmun so we were trying
+27:38 
+
+27:38 to sell the company so I promised Adam I
+27:41 
+
+27:41 said I'm not going to leave Adam knew I
+27:43 
+
+27:43 was having conversations with right it
+27:45 
+
+27:45 as and and I was like Adam I'm not going
+27:47 
+
+27:47 to leave while we're in the middle of
+27:48 
+
+27:48 this
+27:48 
+
+27:48 process Steve faced a crucible decision
+27:52 
+
+27:52 six years out should he leave one
+27:54 
+
+27:54 company he'd founded to save the other
+27:58 
+
+27:58 literally every single person I knew
+28:00 
+
+28:00 called or texted or emailed and said
+28:03 
+
+28:03 what is going on you have to go back to
+28:05 
+
+28:05 Reddit and had a conversation with
+28:07 
+
+28:07 Michael cyel who's then and still now a
+28:10 
+
+28:10 very close friend of mine now is on
+28:12 
+
+28:12 reddit's board and he told me I should
+28:14 
+
+28:14 go back it was a long conversation I
+28:16 
+
+28:16 think it was the Saturday morning I
+28:18 
+
+28:18 called uh I called Sam and said hey like
+28:21 
+
+28:21 I'll I'll do this and called Adam and
+28:24 
+
+28:24 had to break that promise to him to not
+28:26 
+
+28:26 leave hmun during that time this was and
+28:30 
+
+28:30 and still is I think the hardest
+28:31 
+
+28:31 decision I've ever had to make is to
+28:33 
+
+28:33 break that promise to Adam and to hit
+28:35 
+
+28:35 monk my reasoning was Reddit is more
+28:38 
+
+28:38 important to the world than hitmon will
+28:40 
+
+28:40 ever be and it'd be a real shame if
+28:43 
+
+28:43 Reddit didn't live up to his potential
+28:44 
+
+28:44 or even worse
+28:46 
+
+28:46 died just a little over a week after
+28:49 
+
+28:49 reddit's biggest user Revolt Steve
+28:52 
+
+28:52 officially stepped back into the role of
+28:55 
+
+28:55 CEO Steve returning to redit was a
+28:59 
+
+28:59 crucible moment because he had the moral
+29:01 
+
+29:01 authority to state where the company
+29:04 
+
+29:04 began and end and where the community
+29:06 
+
+29:06 began and end so put some distance
+29:09 
+
+29:09 between the company's objectives and the
+29:12 
+
+29:12 community objectives and making sure
+29:15 
+
+29:15 that um when you're an employee you work
+29:17 
+
+29:17 for the company you're focused on
+29:20 
+
+29:20 completing the company objectives and
+29:22 
+
+29:22 the community may mostly be right but
+29:25 
+
+29:25 there are certain situations where
+29:27 
+
+29:27 they're not right and the company has to
+29:30 
+
+29:30 make the decision on when to make a call
+29:33 
+
+29:33 on that and I don't think that that was
+29:35 
+
+29:35 an easy line to draw there's a few
+29:39 
+
+29:39 things that I thought needed to be done
+29:43 
+
+29:43 that weren't being done the most
+29:44 
+
+29:44 important of which is Reddit needed a
+29:46 
+
+29:46 Content policy because that was kind of
+29:48 
+
+29:48 the beginning of Reddit starting to ban
+29:50 
+
+29:50 subreddits and content prior to that
+29:52 
+
+29:52 Reddit didn't really do that when I
+29:53 
+
+29:53 would talk to the team they were so torn
+29:56 
+
+29:56 on this they were like we we don't like
+29:58 
+
+29:58 like the way Reddit is being used
+29:60 
+
+29:60 there's some content on here and
+30:01 
+
+30:01 communities on here that are really bad
+30:03 
+
+30:03 we don't like that we hate that but we
+30:06 
+
+30:06 feel powerless to get rid of it because
+30:07 
+
+30:07 if we get rid of it we're going to break
+30:09 
+
+30:09 Reddit and so it was extremely
+30:11 
+
+30:11 demoralizing for the team what I told
+30:13 
+
+30:13 them is well like you're describing to
+30:16 
+
+30:16 me as like if we change we die but the
+30:19 
+
+30:19 situation is if we don't change we're
+30:21 
+
+30:21 dead like and it's like that's why I'm
+30:23 
+
+30:23 here is reddit's dying and we have to
+30:24 
+
+30:24 change we have no choice so I and the
+30:27 
+
+30:27 team wrote the first content
+30:30 
+
+30:30 policy the way I like talking about it
+30:33 
+
+30:33 to non internet people is it's kind of
+30:36 
+
+30:36 like Javit Center so imagine an infinite
+30:39 
+
+30:39 Convention Center where reddit's a place
+30:42 
+
+30:42 where you can come and host conventions
+30:45 
+
+30:45 and they all happen right next to each
+30:46 
+
+30:46 other now sometimes they show up in
+30:48 
+
+30:48 Pikachu costumes for the r/ pookemon
+30:51 
+
+30:51 community sometimes they show up for the
+30:53 
+
+30:53 Mets Community you are also implicitly
+30:57 
+
+30:57 validating those communities when you're
+30:59 
+
+30:59 the javet center and you're saying hey
+31:01 
+
+31:01 there's a bunch of people loving the
+31:02 
+
+31:02 Pokemon and then here's a bunch of
+31:03 
+
+31:03 people doing some really awful racist
+31:05 
+
+31:05 stuff and that's where I draw that line
+31:10 
+
+31:10 we did make one mistake there which is
+31:13 
+
+31:13 there's no such thing as a perfect line
+31:15 
+
+31:15 there's always gray area and you always
+31:17 
+
+31:17 need to be interpreting and kind of
+31:19 
+
+31:19 adapting and changing the policies and
+31:21 
+
+31:21 interpreting the policies and and kind
+31:22 
+
+31:22 of growing as the problems change but we
+31:24 
+
+31:24 got that first content policy out there
+31:26 
+
+31:26 and we started enforcing it pissed a lot
+31:29 
+
+31:29 of people off but I would say it made
+31:30 
+
+31:30 the vast majority of people feel a lot
+31:33 
+
+31:33 better that got us on the path to
+31:36 
+
+31:36 eventually like
+31:38 
+
+31:38 recovery and I just remember there was a
+31:40 
+
+31:40 change in about 2018 where we were kind
+31:42 
+
+31:42 of working our way down this list of
+31:44 
+
+31:44 communities that were extremely toxic
+31:46 
+
+31:46 and we banned another one and the
+31:47 
+
+31:47 response we got was like geez about time
+31:50 
+
+31:50 guys why what took you so long it was
+31:52 
+
+31:52 like this big shift all of a sudden now
+31:54 
+
+31:54 like the kind of like the good users
+31:56 
+
+31:56 could speak again and they were like we
+31:58 
+
+31:58 were waiting for you to finish cleaning
+31:59 
+
+31:59 that up when Steve came back he was
+32:01 
+
+32:01 undeterred he pressed forward he hired a
+32:04 
+
+32:04 new management team he redesigned the
+32:06 
+
+32:06 site he moved uh Reddit onto mobile and
+32:10 
+
+32:10 more importantly he built the business
+32:13 
+
+32:13 with Steve back at the helm and the
+32:15 
+
+32:15 crises abating Reddit turned its
+32:17 
+
+32:17 attention toward operating as a self-
+32:19 
+
+32:19 sustaining business finally seizing
+32:22 
+
+32:22 control of its own destiny one of the
+32:25 
+
+32:25 other major things in the last Epoch has
+32:27 
+
+32:27 been to try to convert Reddit the
+32:30 
+
+32:30 community social science project into
+32:33 
+
+32:33 Reddit the actual sustainable business
+32:35 
+
+32:35 that happens to run a community social
+32:37 
+
+32:37 science project it's not possible to run
+32:41 
+
+32:41 Reddit without money the revenue
+32:43 
+
+32:43 everybody knew sucked there just wasn't
+32:45 
+
+32:45 a whole lot of Revenue Reddit wasn't
+32:46 
+
+32:46 measuring users accurately in 2015 so we
+32:50 
+
+32:50 also had 12 million
+32:52 
+
+32:52 Dau but Reddit reported Maus and so they
+32:57 
+
+32:57 reported Maus in the like 200 millions
+32:59 
+
+32:59 or something which is like huge but
+33:01 
+
+33:01 advertisers really care about da and
+33:03 
+
+33:03 when I remember calculating it with our
+33:05 
+
+33:05 head of product at the time Alex he was
+33:07 
+
+33:07 like dude there's only 12 million users
+33:09 
+
+33:09 here so we're like that was the oh [ __ ]
+33:12 
+
+33:12 moment I like oh this platform is
+33:13 
+
+33:13 actually smaller than I think people
+33:15 
+
+33:15 think I'd say we started with the
+33:17 
+
+33:17 beginning of Reddit being a a real
+33:19 
+
+33:19 business was when Jen Wong joined us uh
+33:21 
+
+33:21 in 2018 when we first got to Reddit in
+33:24 
+
+33:24 2018 my first priorities were to think
+33:27 
+
+33:27 about what business model we wanted to
+33:30 
+
+33:30 pursue to become a self-sustaining
+33:32 
+
+33:32 business my name is Jed Wong COO of
+33:35 
+
+33:35 Reddit I think we still believe there
+33:37 
+
+33:37 are a lot of different business models
+33:39 
+
+33:39 hiding within Reddit but we wanted to
+33:41 
+
+33:41 land on one that we could invest in
+33:44 
+
+33:44 because you can't pursue everything at
+33:45 
+
+33:45 the same time and one that would be
+33:46 
+
+33:46 reasonably quick in scale with users and
+33:50 
+
+33:50 we lended on Advertising because it
+33:52 
+
+33:52 keeps Reddit free and open which is
+33:54 
+
+33:54 really important Reddit really believes
+33:56 
+
+33:56 in the open internet and allowing you
+33:58 
+
+33:58 users to have access to information and
+34:01 
+
+34:01 we knew that that could scale really
+34:04 
+
+34:04 nicely as we grew users as we've seen
+34:06 
+
+34:06 with other
+34:08 
+
+34:08 businesses well we wanted to build an
+34:11 
+
+34:11 advertising business so there's lots of
+34:13 
+
+34:13 conversations inside the boardroom to
+34:16 
+
+34:16 make sure that when we build the
+34:17 
+
+34:17 advertising business we did not upset
+34:20 
+
+34:20 the Reddit Community because the
+34:22 
+
+34:22 community is the reason why the users
+34:25 
+
+34:25 are so sticky and they come back again
+34:27 
+
+34:27 and again
+34:31 
+
+34:31 Reddit faced another Crossroads could it
+34:34 
+
+34:34 scale an Advertising based business
+34:36 
+
+34:36 model without alienating its
+34:40 
+
+34:40 community and I wrote a post that said
+34:43 
+
+34:43 hey look we need to survive to survive
+34:45 
+
+34:45 we have to make money we have two ways
+34:47 
+
+34:47 of making money we can either raise
+34:49 
+
+34:49 money and be beholden to VCS forever or
+34:52 
+
+34:52 we can monetize ourselves with ads
+34:55 
+
+34:55 that's the choice and the users got it
+34:58 
+
+34:58 they got it it was important to us to
+34:60 
+
+34:60 build an advertising business that was
+35:03 
+
+35:03 in harmony with our values and that's
+35:04 
+
+35:04 what I spent a lot of my time thinking
+35:05 
+
+35:05 about is like okay you know how would we
+35:07 
+
+35:07 have an advertising business that our
+35:09 
+
+35:09 community you know who has strong
+35:11 
+
+35:11 feelings on lots of things was in
+35:13 
+
+35:13 harmony with the values of our community
+35:15 
+
+35:15 and so being a business and being clear
+35:18 
+
+35:18 about that to our community was more
+35:22 
+
+35:22 intentional than probably other
+35:23 
+
+35:23 companies we are an extremely Mission
+35:26 
+
+35:26 driven company but we are a company and
+35:29 
+
+35:29 a business and so having that dialogue
+35:31 
+
+35:31 with our community and users was
+35:32 
+
+35:32 important it had to be explicit we had
+35:34 
+
+35:34 to bring the community along with
+35:37 
+
+35:37 it though Reddit is a social product
+35:39 
+
+35:39 it's not really as social as many of the
+35:42 
+
+35:42 other social products right users have
+35:44 
+
+35:44 personas but they don't really have
+35:46 
+
+35:46 personal information we don't know who
+35:48 
+
+35:48 the users are we know what they like and
+35:50 
+
+35:50 so a lot of the work in building and
+35:52 
+
+35:52 scaling the product that we've had to
+35:54 
+
+35:54 figure out has been how do we explain to
+35:56 
+
+35:56 advertisers the value proposition of
+35:57 
+
+35:57 Reddit as distinct from the rest of the
+35:59 
+
+35:59 social space where you have maybe a much
+36:01 
+
+36:01 more direct line of like we know who
+36:03 
+
+36:03 this person is we know where they live
+36:04 
+
+36:04 we know where they went to high school
+36:06 
+
+36:06 we are an anonymous platform we've never
+36:08 
+
+36:08 changed that we've never forced login to
+36:10 
+
+36:10 get access to information even though
+36:13 
+
+36:13 other platforms do and that in um makes
+36:15 
+
+36:15 for a a rich login graph but we don't do
+36:17 
+
+36:17 that another part was allowing for all
+36:20 
+
+36:20 parts of the human experience Reddit
+36:21 
+
+36:21 covers adult NSFW we're very thoughtful
+36:24 
+
+36:24 about you know hey that content is part
+36:26 
+
+36:26 of the human experience it has to stay
+36:28 
+
+36:28 we don't run ads there that's very
+36:30 
+
+36:30 important to our advertisers we have
+36:32 
+
+36:32 human review of all subreddits make sure
+36:34 
+
+36:34 they're appropriate for ads so I think
+36:36 
+
+36:36 we found a way to allow for all parts of
+36:39 
+
+36:39 the human experience to persist on
+36:41 
+
+36:41 Reddit and yet have a really brand safe
+36:43 
+
+36:43 advertising
+36:45 
+
+36:45 business from a starting point of $15
+36:48 
+
+36:48 million when Steve returned Reddit grew
+36:50 
+
+36:50 to $456 million in 2021 and $84 million
+36:57 
+
+36:57 in 2023
+36:58 
+
+36:58 clearing the way for a successful IPO in
+37:01 
+
+37:01 March of
+37:02 
+
+37:02 2024 red is always going to change our
+37:05 
+
+37:05 number one value is evolved we're always
+37:07 
+
+37:07 going to try to change for the right
+37:08 
+
+37:08 reasons now sometimes we get it wrong
+37:11 
+
+37:11 historically sometimes we haven't done a
+37:12 
+
+37:12 great job but what's really fun about
+37:14 
+
+37:14 working at Reddit today is we're doing a
+37:16 
+
+37:16 I think a much better job the quality
+37:19 
+
+37:19 level is much higher and we're really
+37:21 
+
+37:21 delivering on stuff that users have
+37:23 
+
+37:23 wanted for a long time RIT would not be
+37:26 
+
+37:26 a public company today without having
+37:29 
+
+37:29 scaled Revenue to the size that it is
+37:31 
+
+37:31 today I don't think the company would
+37:33 
+
+37:33 exist today if they had not made these
+37:36 
+
+37:36 changes post IPO Reddit continues to
+37:39 
+
+37:39 consider ways to iterate on its business
+37:41 
+
+37:41 model to support its user base and
+37:44 
+
+37:44 strengthen its Financial
+37:45 
+
+37:45 profile Reddit is one of the biggest
+37:49 
+
+37:49 content corpuses on the internet and for
+37:52 
+
+37:52 every topical area it has incredible
+37:56 
+
+37:56 expertise and insight that people want
+37:58 
+
+37:58 you know Sports mavens Beauty mavens you
+38:00 
+
+38:00 name it and some of that content is so
+38:04 
+
+38:04 good that it is the equivalent of a
+38:07 
+
+38:07 media company and so creating an
+38:10 
+
+38:10 opportunity for some of those people
+38:13 
+
+38:13 those creators those thought leaders who
+38:15 
+
+38:15 are sharing the thoughts to be able to
+38:18 
+
+38:18 earn money from that I think seems
+38:21 
+
+38:21 sensible that's just one business model
+38:23 
+
+38:23 of many that could be on Reddit it is
+38:26 
+
+38:26 our duty to be a self sufficient
+38:28 
+
+38:28 business because if you believe in our
+38:30 
+
+38:30 mission then we should endure we've been
+38:33 
+
+38:33 around 19 years another 19 years at
+38:35 
+
+38:35 least and the only way to do that and
+38:38 
+
+38:38 control your own fate is to control your
+38:40 
+
+38:40 economics and whether you can self-fund
+38:43 
+
+38:43 all the things that you want to
+38:45 
+
+38:45 do like our relationship with the
+38:47 
+
+38:47 moderators is a forever work in progress
+38:50 
+
+38:50 I think it's always important to first
+38:53 
+
+38:53 and foremost keep our eye on the prize
+38:56 
+
+38:56 and so for us that's our mission
+38:58 
+
+38:58 Community belonging empowerment for
+38:59 
+
+38:59 everyone in the
+39:01 
+
+39:01 world now more day-to-day we want Reddit
+39:04 
+
+39:04 to be great we love Reddit we all use
+39:06 
+
+39:06 Reddit we want to be proud of our work
+39:08 
+
+39:08 and so in any moment there's a lot of
+39:11 
+
+39:11 noise outside external noise Reddit
+39:13 
+
+39:13 should do this Reddit should do that
+39:15 
+
+39:15 Reddit shouldn't do this that was so
+39:16 
+
+39:16 stupid like what the CEO said in those
+39:19 
+
+39:19 moments we just have to tune most of it
+39:21 
+
+39:21 out today Reddit is home to thousands of
+39:24 
+
+39:24 communities endless conversations and
+39:27 
+
+39:27 authentic human connection for all its
+39:30 
+
+39:30 users and Reddit is today the 18th most
+39:33 
+
+39:33 visited website in the world and that's
+39:35 
+
+39:35 I think that's a pretty big
+39:38 
+
+39:38 deal I think that at every step along
+39:40 
+
+39:40 the way for Reddit we've thought how
+39:42 
+
+39:42 could this get any larger it's gotten
+39:44 
+
+39:44 larger and getting a chance to watch
+39:46 
+
+39:46 some of our very early decisions on how
+39:51 
+
+39:51 communities should be built have proven
+39:52 
+
+39:52 out to be highly scalable across several
+39:55 
+
+39:55 orders of magnitude of traffic and
+39:57 
+
+39:57 across that that kind of increase in in
+39:59 
+
+39:59 user base is just fantastic and humbling
+40:03 
+
+40:03 Reddit has been bigger than I ever
+40:06 
+
+40:06 thought it would be since August 2005
+40:10 
+
+40:10 the fact that we have any users at all
+40:12 
+
+40:12 is sometimes a little bit of a surprise
+40:15 
+
+40:15 now what has surprised me truly
+40:16 
+
+40:16 surprised me about Reddit is we've
+40:18 
+
+40:18 always believed in the agency of people
+40:20 
+
+40:20 right the users create the communities
+40:22 
+
+40:22 the users submit the content they rank
+40:24 
+
+40:24 the content their conversations like are
+40:27 
+
+40:27 the community they are the community
+40:29 
+
+40:29 we've always believed it's like the
+40:30 
+
+40:30 people will do amazing things but what
+40:32 
+
+40:32 so fun is that what I didn't realize is
+40:36 
+
+40:36 people's capacity to do amazing things
+40:39 
+
+40:39 every day is like a 100x greater than
+40:43 
+
+40:43 what we thought of and we were
+40:44 
+
+40:44 optimistic people in 2005 but we just
+40:47 
+
+40:47 see people helping each other supporting
+40:49 
+
+40:49 each other being funny doing interesting
+40:51 
+
+40:51 things changing the world because that's
+40:53 
+
+40:53 just how people are but it's actually
+40:55 
+
+40:55 been even more good and powerful than we
+40:57 
+
+40:57 have
+40:58 
+
+40:58 I think than I ever imagined we've been
+41:01 
+
+41:01 through at Reddit a number of crises
+41:04 
+
+41:04 they have been challenging for me and
+41:06 
+
+41:06 the team I often in those moments remind
+41:08 
+
+41:08 the company that we've been through
+41:10 
+
+41:10 crises before and gotten through them
+41:13 
+
+41:13 you know this whatever this whatever is
+41:14 
+
+41:14 going on right now it's going to not
+41:15 
+
+41:15 going to last forever but we have to
+41:17 
+
+41:17 work our way out also there are times
+41:19 
+
+41:19 when things are relatively peaceful
+41:21 
+
+41:21 where I'll remind the company hey things
+41:24 
+
+41:24 have been peaceful before and then
+41:26 
+
+41:26 something happened so enjoy it do your
+41:30 
+
+41:30 work rest up appreciate this moment for
+41:33 
+
+41:33 what it is because there's something
+41:35 
+
+41:35 coming there always is and so I think
+41:38 
+
+41:38 try to be measured uh in those moments
+41:42 
+
+41:42 and just constantly remind people that
+41:44 
+
+41:44 we get to work on something really
+41:46 
+
+41:46 special and even if it's hard even if
+41:48 
+
+41:48 we're in a difficult moment at the end
+41:50 
+
+41:50 of the day we get to work on Reddit and
+41:52 
+
+41:52 that uh is something that we should
+41:55 
+
+41:55 never take for granted
+41:59 
+
+41:59 [Music]
+42:04 
+
+42:04 this has been Crucible moments a podcast
+42:07 
+
+42:07 from SE
+42:09 
+
+42:09 [Music]
+42:18 
+
+42:18 Capital Crucible moments is produced by
+42:21 
+
+42:21 the Epic stories and Vox creative
+42:23 
+
+42:23 podcast teams along with seoa capital
+42:29 
+
+42:29 special thanks to Steve Huffman Alexis
+42:31 
+
+42:31 Ohanian Chris slow Alfred Lynn and Jen
+42:35 
+
+42:35 Wong for sharing their
+42:37 
+
+42:37 stories incidental audio created by 11
+42:40 
+
+42:40 Labs a seoa partner
+42:45 
+
+42:45 [Music]

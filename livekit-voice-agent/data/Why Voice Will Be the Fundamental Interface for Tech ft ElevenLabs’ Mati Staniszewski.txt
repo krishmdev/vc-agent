@@ -1,0 +1,689 @@
+00:00 late 2021 the inspiration came from Peter was about to watch a movie with
+00:05 his with his girlfriend she didn't speak English so they turned it up in Polish and that kind of brought us back to
+00:11 something we grew up with where every po every every movie you watch in Polish um every foreign movie watched in Polish
+00:17 has all the voices so whether it's male voice or female voice um still narrated with one single character like
+00:24 monotonous narration it's like a horrible experience and it still happens today and I was like "Wow." Um we think
+00:32 this will change
+00:37 [Music]
+00:49 greetings today we're talking with Mattie Stenosvski from 11 Labs about how
+00:54 they've carved out a defensible position in AI audio even as the big foundation
+00:59 model labs expand into voice as part of their push to multimodality
+01:05 we dig into the technical differences between building voice AI versus text it turns out they're surprisingly different
+01:12 in terms of the data and the architectures matty walks us through how 11 Labs has
+01:18 stayed competitive by focusing narrowly on audio including some of the specific
+01:23 engineering hurdles they've had to overcome and what enterprise customers actually care about beyond the
+01:29 benchmarks we also explore the future of voice as an interface
+01:35 the challenges of building AI agents that can handle real conversations and AI's potential to break language
+01:42 barriers matty shares his thoughts on building a company in Europe and why he thinks we might hit human level voice
+01:48 interaction sooner than expected we hope you enjoy the show
+01:54 mati welcome to the show
+ thank you for having me
+ all right first question there was a school of thought a few years ago
+02:01 when 11 Labs really started ripping that you guys are going to be roadkill for
+02:07 the foundation models and yet here you are still doing pretty well what happened like how how were you able to
+02:15 stave off the multimodality you know big foundation model labs and kind of carve out this really interesting position for
+02:22 yourselves it's uh you know exciting last few years and it's definitely true we still need
+02:27 to keep keep on our toes to be able to keep winning the fight of foundation models but I think the the usual and
+02:36 definitely true advice is is staying focused and staying focused in our case on audio both as a company of course the
+02:42 do research and the product but we ultimately stayed focused on the audio uh which really helped but the you know
+02:48 probably the biggest question uh under that question is is through the years we've been able to
+02:54 build some of the best research models and and out compete the the big labs and here you know credit to to to to my
+03:01 co-founder who I think is a genius pot who has been able to both do some of the
+03:07 first innovations in the space and then assemble a rockstar team that we have today at the company that is continually
+03:13 pushing what's possible in audio and it's like you know when we started uh
+03:18 there was very little research done in audio most people focused on LMS some focus on image you know a lot more uh
+03:24 easy to see the results uh frequently more exciting for people doing research to work in those fields so there's a lot
+03:30 less focus put onto audio and the the set of innovations that happened in the
+03:36 years prior the diffusion models the transformer models weren't really applied to that domain in a in an efficient way um and we've been able to
+03:43 to bring that in in those first years where for the first time the texttospech
+03:49 models were able to understand the context of the text and deliver that that that audio experience in a just
+03:55 such a better tonality and emotion and so that was the starting point that really differentiated our work to to
+04:01 other works which was the the true research innovation but then fast following after that first first piece
+04:06 was uh was building all the product around it to be able to actually use that research it's uh as you you know
+04:13 we've we've seen so many times it's like it's not only the model that matters it also matters how you deliver that experience to the user yeah and in our
+04:20 case whether it's narrating and creating audio books whether it's voiceovers whether it's turning movies to other languages whether it's adding text to
+04:28 speech and in the agents or building the entire conversational experience um that
+04:33 layer keeps keeps helping us to to win across across the foundational models
+04:38 and hyperscalers
+ okay there's a lot here and we're going to come back and dig in on a bunch of aspects of that but you mentioned your co-founder Peter i
+04:46 believe you guys met in high school in Poland is that right can you kind of tell us the origin story of how you two got to know each other and then maybe
+04:52 the origin story of how this business came together
+ the uh I'm in the I'm probably in the luckiest position ever
+04:59 we met with 15 years ago in high school um the the we uh we started an IB uh
+05:06 class in in in Poland in Warso and uh took all the same classes so so kind of
+05:12 everything and we hit it off pretty quickly on some of the mathematics classes we both love mathematics so we
+05:18 uh we started both uh sitting together uh spending a lot of time together and
+05:23 that kind of morphed from outside the school uh um time together as well and then over the years we we kind of did it
+05:30 all from from living together studying together working together uh traveling together and and now 15 years in we are
+05:37 still best friends uh you know with the time is on our side which is helpful has building a company together strengthened
+05:43 the relationship or has
+ There were ups and downs for sure but but I think it did i think it did i think it's it's uh
+05:50 it's battle tested it
+ definitely battle tested it and it was like you know when when uh the company started taking off
+05:58 we um it's hard to know how long the horizon
+06:03 of this intense work will will happen initially it was like okay this is the next four weeks we just need to push
+06:08 trust each other that we'll do well on on different aspects and and just continue pushing um and then there was
+06:15 another four weeks another four weeks and then we realized like actually this going to be in the next 10 years and
+06:20 there was just no real time for anything else we were just like just do 11 laps and and nothing else and over time and I
+06:28 think this happened organically but looking back at it it definitely helped uh we we now try to still stay in close
+06:35 touch in what's happening in our personal lives uh where we are in the world um and um and spend some time
+06:42 together um still speaking about work but outside of the work context and I
+06:48 think this was very healthy for um for now I know for so long and I kind of
+06:55 seen him evolve personally through those years but I kind of still stay in close touch to to that as well it's important
+07:01 to make sure that your co-founder and your executives and your team are able to bring their best self to work and not
+07:07 just completely ignoring everything that's happened on the personal front exactly
+ and then to your second question
+07:12 you know part of the inspiration for for 11 laps came so so maybe the longer story so there are two parts first
+07:18 through the years um when he was at Google I was a palunteer we would do hack weekend projects together
+ okay so
+07:24 like trying to explore new technology for fun and that was everything from um
+07:31 building recommendation algorithms so we tried to build this uh model where you would be presented with a few different
+07:37 things and if you select one of those the next set of things you're presented with gets closer and optimizes closer to
+07:43 your previous selection deployed it had a lot of fun then we did the same uh with with crypto we try to understand
+07:50 the risk in crypto and build like a risk analyzer for crypto very hard
+ didn't
+07:55 fully work but but but but it was good attempt in the first uh one of the first crypto heights uh uh to to try to
+08:03 provide like the analytics around it and then we created a project in audio so we created a project which analyze how we
+08:09 speak and gave you tips on how to
+ when was this
+ early 2021
+ okay
+ early 2021 um
+08:16 that was kind of the first opening this is what's possible across audio space this is the state-of-the-art these are
+08:21 the models that do theization understanding of speech this is where the speech generation looks like and
+08:26 then late 2021 the inspiration came from and like the the more of the aha moment
+08:32 from from Poland from where you're from where uh in this case Peter was about to
+08:38 watch a movie with his with his girlfriend she didn't speak English so they turned it up in Polish and that
+08:43 kind of brought us back to something we grew up with where every po every every movie you watch in Polish um every
+08:48 foreign movie watched in Polish has all the voices so whether it's male voice or female voice um still narrated with one
+08:55 single character like monotonous narration it's like a horrible experience and it still happens today
+09:02 and it was like wow um we think this will change this will change we think the technology and what will happen with
+09:09 some of the innovations will allow us to enjoy that content in in the original
+09:14 delivery in the original incredible uh voice and and and let's let's let's make
+09:20 make it happen and change it of course expanded since then it's not only that we realized the same problem exists
+09:25 across most content not being accessible in audio just in English um how the
+09:30 dynamic interactions will will evolve um and of course how the audio will transmit the the language barrier too
+09:37 was there any particular paper or capability that you saw that made you
+09:43 think okay now is the time for this to change
+ well attention is all you need is
+09:48 definitely one which which which which you know was so um so crisp um and clear
+09:55 in terms of what's possible
+ yeah but um maybe to to give like um a different
+10:01 angle to the to the answer I think the interesting piece was was less so than the paper there was this incredible open
+10:08 source repo so that was like slightly later in as we started discovering like is it even possible and there was a a
+10:15 tortoise TTS effectively
+ um which is a model uh an open source um model that
+10:22 was kind of created at the time it provided incredible results of replicating a voice and generating
+10:28 speech it wasn't very stable but it kind of have some glips into like wow this is
+10:33 this is this is incredible
+ um and that was um that was already as we were
+10:39 deeper into the the the company so like maybe a first year in um so in 2022 um
+10:46 but that was that was like another element of like okay this is this is this is possible some great ideas there
+10:53 and then of course we've spent most of our time like what other things we can innovate through start from scratch
+10:59 bring the transformer diffusion into the audio space um and um and that that kind
+11:05 of heal it's just another level of
+ of like human quality where you could
+11:10 actually feel like it's a human human voice
+ let's yeah let's talk a bit about how you've
+11:15 actually built what you've built as far as the product goes what aspects of what works in text port directly over to
+11:23 audio and what's completely different different skill set different techniques i'm curious how similar the two are and
+11:30 where some of the real differences are yeah the first thing is you know the there's kind of those three components
+11:35 that come come into um the model the there's the compute there's the data there's the model architecture um and
+11:43 the model architecture is is has some ideas but is very different but then the data is also quite different in both in
+11:51 terms of what's what's accessible and and uh in in how you how you need that
+11:56 data to be able to train the models and in compute the models are smaller so you don't need as much compute which which
+12:01 allows us to given a lot of the innovations need to happen on the on the model side or the data side you can
+12:07 still out compete foundational models uh rather than just just the usual
+ not at a big compute disadvantage
+ exactly yeah uh
+12:14 but the data was I think the first piece which is different where in in text you can reliably tech take the text that
+12:21 exists and it it it it will it will work in audio
+12:26 the um the data first of all there's m much less of the high quality audio that
+12:32 actually would get you the result you need and then the second it frequently doesn't come with transcription or with
+12:38 a high accurate um text of of what was spoken And that was that's like kind of
+12:45 lacking in the in the space where you need to spend a lot of time and then there's a third component something that will be coming across in the in the
+12:52 current generation of models um which is not only what was said so the transcript of of of the audio but also how was it
+12:59 said
+ what emotions did you use who said it what are some of the non-verbal elements that were said that kind of
+13:05 almost not doesn't exist especially at the high quality and um and that's where you need to spend a lot of time that's
+13:11 where we've spent a lot of time in the early days too of being able to create effectively a more of a uh a speechto
+13:18 text model uh and like a pipeline with with additional uh set of manual
+13:24 labelers to to to do that work
+ um and that's very different from from text
+13:29 where you just need to spend a lot more cycles um and then the model level you
+13:34 you effectively you know you have this step of in the in in in the in the first generation a text to speech model of
+13:41 understanding the context and and bringing that to emotion but of course you um you need to kind of predict the
+13:48 next sound rather than the predict the next text token y and um and that both
+13:54 depends on the on the on the prior but can also depend on the on the what happens after um like an easy example is
+14:01 like uh you know what a what a wonderful day um let's say it's a passage of a
+14:06 book then you kind of think okay this is positive emotion I should read it in a positive way but if you have a what a
+14:11 wonderful day I said it sarcastically then suddenly it changes the entire meaning and you kind of need to adjust that in the audio delivery as well put a
+14:18 punch line in a different in the different spot so that was definitely different where that contextual
+14:23 understanding was was a was a tricky thing and then the other model thing that's that's the very different you
+14:29 have the text to to speech element but then you have also the voice element
+ so the kind of the other innovation that we
+14:35 spend a lot of time working on is how can you create and represent voices uh
+14:41 to hire accurate uh um way of of what was in the original and um we we found
+14:48 like this decoding and coding um way which was slightly different to the to the space we weren't hard coding or
+14:54 predicting any specific features so we weren't like trying to optimize is the voice male or is the voice female or
+14:60 what's the age of the voice instead we effectively uh let the let the model
+15:05 decide what the characteristics should should be
+ um and then I found a way to to to bring that into into the speech so
+15:13 now of course when you have the texttospech model it will take the context of the text as one input and the
+15:18 second will take the voice as a second input and based on the voice delivery if it's more calm or dynamic both of those
+15:24 will merge together and then give the kind of the end output which um which
+15:29 was um of course very different type of of of of work than the text models
+15:35 amazing what sort of people have you needed to hire to be able to build this
+15:42 i imagine it's a different skill set than most AI companies
+ the uh there's a
+15:48 and it kind of changed over time but I think the the first first difference and
+15:53 this is probably less skill set difference but more approach difference we've started fully remote uh we wanted
+15:59 to hire the best researchers wherever they are we we we we knew we we where they are uh there's probably like 50 to
+16:06 100 great people in audio based at least you know on the open source work or the papers that they release or the
+16:11 companies that they worked in um that we would admire so you so the top of the
+16:17 funnel is pretty limited because so much fewer people worked on on the research so we decided let's attract them uh um
+16:24 um and and get them into the company wherever wherever they are and that that kind of really helped um the second
+16:29 thing was you know given um given we want to make it exciting for a lot of people to to to to uh to work but also
+16:37 we think this is the best way to to run a lot of the research we try to make the the the researchers extremely close to
+16:44 to deployment to actually seeing the results of their work so the cycle from being able to research something to
+16:49 bringing it in front of all the people is super short yeah
+ uh and you get that immediate feedback of how is it working
+16:56 um then we have a kind of separate than research we have research engineers that focus less on like the innovation of the
+17:04 entire kind of new architecture of the models but taking existing models improving them changing them deploying
+17:10 them at scale uh and here frequently you've seen other companies call our research engineers researchers given
+17:16 that the work would be would be um as as complex in those in those companies but
+17:22 uh but that kind of really helped us to create a new innovation bring that innovation extend it and deploy it and
+17:29 then the layer around the research that we've created is probably very different where we effectively have now a group of
+17:34 of of voice coaches data labelers that are trained by voice coaches in how to understand the audio your data how to
+17:42 label that how to label the emotions and then they get re-reviewed by the voice coaches whether it's good or bad um
+17:48 because most of the traditional companies didn't really support audio labeling in that same that same way uh
+17:54 but that's I think the biggest difference is you you needed to be excited about some part of the audio
+17:60 work to really be able to create um and and dedicate yourself to to the level we
+18:05 we want and um and we you know we're small we're especially at the time small
+18:12 company you would be willing to embrace that independence that high ownership
+18:18 that it takes that you are effectively you know working on a specific research theme uh yourself and um and of course
+18:26 there's some some interaction some guidance from others but a lot of the heavy lifting is individual and and
+18:32 creating that work um which which takes a different mindset and I thing we've been able to to now we have like a team
+18:39 of of 15 research and research engineers almost and they are incredible
+ what have
+18:44 some of the major kind of step function changes in the quality of the product or
+18:50 the applicability of the product been over the last few years i I remember kind of early I think it was early
+18:56 2023ish when you guys started to explode or maybe late 2023 I forget um and it
+19:02 seemed like some of it was on the heels of the Harry Potter Balenciaga video that went viral where it was an 11 Labs
+19:07 voice that was doing it um it seems like you've had these moments in the consumer world where something goes viral and it
+19:14 traces back to you but beyond that from from a product standpoint what have been kind of the major inflection points that
+19:19 have opened up new markets or spurred more developer enthusiasm you know it's it's the what you mentioned is is
+19:26 probably one of the key things we are trying to do and and continuously even now we see this is like one of the key things to really get the adoption out
+19:33 there which is
+ have the proumer uh um
+19:39 deployment and and actually bringing it to to everyone out there when we create a new technology showing to the world
+19:44 that it's possible and then kind of supplementing that of the top down bringing it to the specific companies we
+19:50 work with and the reason for this is kind of twofold one is the these groups of people are just so much more eager
+19:56 and quick to adopt and and and and create that technology and the second one frequently when you when you uh when
+20:03 we create a lot of the the the both the product and the research work the set of
+20:08 use cases that might be created uh we have of course some predictions but there's just so many more that we have
+20:15 wouldn't expect like the example you gave that wouldn't have come to our mind that this is something that people might be be creating and trying to do um and
+20:22 that was definitely something where uh where where we continuously even now
+20:28 when we create new models we try to bring it to to the entirety of the user base learn from them and and and and and
+20:33 increase that um and it kind of goes in those in those waves where we have a new model release um we bring it broad um
+20:41 then then kind of the proumer adoption is there and then the enterprise adoption follows with additional product
+20:48 additional reliability that needs to happen and then once again we have a new step release in a new function and kind
+20:54 of the cycle repeats so we tried to really embrace it um through the history the first one the very first one was
+21:01 when we when we had our beta model so that you you were right was like when we released it publicly early 2023 okay
+21:07 late 2022 we're iterating in the in the beta with subset of of users
+ and we had
+21:15 a lot of book authors in that subset
+ and we had this like literally a small text
+21:20 box in our product where you could um where you could input the text and and
+21:25 get the speech out it was like a tweet length effectively and uh we had one of those book authors copy paste his entire
+21:32 book inside this this box download it then at the time you wouldn't you it was
+21:38 uh most of the platforms banned AI content okay
+ he managed to upload it h
+21:43 they thought it's human h started getting great reviews on that platform and then came back to us with set of his
+21:51 friends and other book authors saying like hey we really need it this is incredible and that kind of triggered
+21:57 this first like mini virality moment with book authors very very keen then we had another similar moment around the
+22:03 same period where we there that was one of the first models that could that could laugh we released this blog post
+22:10 that the first AI that can laugh and people picked it up like wow this is incredible this is really working and we
+22:15 got a lot of the the early users then of course the the theme that you mentioned which was a lot of the creators and I
+22:21 think there's like a completely new trend that started around this time where it shifted into no um no face
+22:29 channels effectively you don't have the the creator in the in the frame and then you have narration of that creator
+22:36 across something that's happening and that started going like like wildfire in the in the first six months of the work
+22:41 where of course we were providing the narration and the speech and the voices for a lot of those uh a lot of those use
+22:47 cases and and and that was that was great to see then late 2023 early 2024
+22:55 we released our work in mult other languages that's one of the first moments where you could um you could
+23:01 really create the narration um across other most famous European languages and
+23:07 our dubbing product so that's kind of back to the original vision we created finally a way for you to have the audio
+23:13 and bring it to another language while still sounding the same
+ and um and that
+23:18 uh that kind of triggered this other small virality moment of people people uh creating the videos and there was
+23:25 like this you know the the expected ones which is just the traditional content but also unexpected ones where we had
+23:31 someone trying to dub singing videos okay
+ which the model we didn't know will work on and it kind of didn't work but
+23:37 it gave you like a drunken singing result so then it went few times viral
+23:42 too for for for that result uh which was which was fun to see um and then in 2025
+23:50 at the early time now um and we are seeing like kind of it's recurrently now
+23:56 everybody is creating an agent mhm
+ uh we started adding the voice to a lot of those agents and it became um both very
+24:04 easy to do uh for a lot of people to like have the entire orchestration speech to text the LM responses text to
+24:10 speech um to make it seamless and we had now few use cases which started getting
+24:16 a lot of traction a lot of adoption most recently we worked with Epic Games to
+24:22 recreate The Voice of Darth Vader which players um uh there's just so many
+24:30 so many people using and trying to get uh the conversation with Darth Vader in
+24:35 Fortnite which which is like just just just immense uh immense scale and of course you know most of the users are
+24:42 are trying to have a a a great conversation use him as a companion in in the game some people are trying to
+24:49 like stretch whether whether he will say something that he shouldn't be able to say so you see all those attempts as
+24:54 well uh but luckily the product is holding up and it's actually keeping it relatively uh relatively both
+25:01 performative and safe to actually keep him on on the on the rails um I think
+25:06 about some of the dubbing use cases one of the viral ones was when we worked with Lex Freedman and and he interviewed
+25:12 Prime Minister Narendra Modi uh and we turned the conversation which happened between English through Lex and Narodi
+25:18 spoke Hindi and we turned the conversation into English so you could actually listen to both of them speaking
+25:24 together um and then similarly we turned both of them to Hindi so you heard Lex speaking Hindi and that went also
+25:31 extremely viral in in India where people were both watching both of those versions and in US people were watching
+25:37 the English version so that was like a a nice way of tying it back to the to the beginning um but I think they especially
+25:44 as you think about the future the agents and like just seeing them pop up in in new ways uh is is is going to be so
+25:51 frequent like both early developers building building everything from Stripe
+25:56 integration and being able to process refunds through to to the companion um use cases all the way through to the
+26:03 true enterprise is is is kind of having probably a few viral moments ahead
+ yeah say more about what you're seeing in
+26:08 voice agents right now seems like that's quickly become a pretty popular interaction pattern what's working
+26:14 what's not working you know where are your customers really having success where are some of your customers kind of getting stuck
+ and and before I answer
+26:21 maybe a question back to you do you see do you see uh a lot more companies
+26:26 building agents across across the companies that are coming through Sika we we yeah we absolutely do and I think
+26:33 most people have this long-term vision that it's sort of a Hunen style avatar
+26:38 powered by an 11 Labs voice where it's this humanlike agent that you're interacting with and I think most people
+26:44 start with simpler modalities and kind of work their way up so we see a lot of textbased agents sort of proliferating
+26:51 throughout the enterprise stack and I I imagine there are lots of consumer applications for that as well but we
+26:56 tend to see a lot of the enterprise stuff it's it's it's similar definitely what we are seeing both on the new
+27:01 startups being created where it's like everybody is building an agent um and then enterprise side too is like can be
+27:06 so helpful for the process internally and like taking a step back what what we think and and believe from kind of the
+27:13 start is voice will fundamentally be the interface for interacting with technology it would be one of the most
+27:21 you know it's it's probably the modality we've known from when the human um genre
+27:26 was was born as the kind of first way that humans interacted um and it carries just so much more than than text does
+27:33 like it carries the emotions the inonation the imperfections we can understand each other we can um
+ we can
+27:39 based on on the emotional cues respond in a very different ways um so I kind of
+27:45 that's where our our start happened where where we think the voice will be that that interface and build not just
+27:52 the texttospech element but seeing our clients try to use the text to speech and do the whole conversational
+27:58 application can we provide them a solution that helps them abstract this away
+ yeah and um you know we've seen
+28:06 we've seen it from from like the traditional domains and to speak for for a few it's like in healthcare space yeah
+28:12 we've seen people try to automate some of the work they cannot do with nurses as an example a company like hypocratic
+28:18 will uh automate the calls that nurses need to take to the patients to remind
+28:24 them about taking medicine ask how they are feeling capture that information back so then the doctors can actually
+28:29 process that in a much more efficient way and um and voice became critical where a lot of those people cannot be
+28:35 reached otherwise and the voice call is just the easiest thing to do then uh
+28:41 very traditional probably the the the quickest moving one is customer support
+28:47 so many companies uh both from the call center and the traditional customer support trying to build the voice
+28:53 internally in the companies whether it's companies like Deutsche Telecom all the way through um to um to to the to the
+29:01 new companies um everybody is trying to find a way to to deliver better experience and and now voice voice is
+29:07 possible um and then um what is probably the one of the most exciting for me is education where like could you be
+29:15 learning through having that voice delivery in a new way um I'm a I used to at least be a a chess player or like a
+29:22 amateur chess player and um and we work with chess.com where you can uh uh I
+29:27 don't know if you're a user of chess.com i am but I'm a very bad chess player okay okay but so maybe so that's a great
+29:33 cue one one of the things is we are trying to build effectively a a
+29:38 narration which which guides you through the game um so you can learn how to play better m
+ and there's a version of that
+29:45 where hopefully you will be able to work with some of the iconic chess players where you can like have the delivery
+29:51 from Magnus Carlson or Gary Kaspar or Hikaro Nakamura to guide you through the game and get even better while you play
+29:57 it um which which would be phenomenal and I think this will be one of the common things we'll see where like everybody will have their personal tutor
+30:04 for the subject that they want with voice that they relate to and they and they can get closer um and that's on the
+30:12 kind of on the enterprise side but then on the consumer side too we we've seen kind of completely new ways of augmenting the way you can you can
+30:18 deliver the content uh like the the work with the Time magazine where you can read the article
+30:25 you can listen to the article but you can also speak to the article so you worked effectively during the person of
+30:30 the year release where you could ask the questions about
+ how they became person of the year
+ tell me more about other
+30:36 people of the of the year uh and and kind of dive into that a little bit a little bit deeper and then we as a
+30:42 company everyone are trying to build an agent that people can can interact and and see the art of possible most
+30:47 recently we um we've created an agent for my favorite physicist uh or one of
+30:54 the two with with working with his family Richard Fayman where you can actually
+31:00 he's my favorite too
+ okay great great he's I mean he he's such an amazing way
+31:05 to like
+ both deliver the knowledge in educational like simple way and humoristic way and and just like the way
+31:13 he speaks is also amazing and the way he writes is amazing so uh so that was that
+31:18 was that was amazing and I think this will like alter where maybe in the future you will have like you know his his cultic lectures or um one of his
+31:27 book uh where you can you can listen to to it in his voice and then dive into like some of his background and and
+31:34 understand that bit better like surely you're joking Mr fayman and like yes dive into this I
+ would love I would love
+31:40 to I would love to hear a reading of that book in his voice
+ that'd be amazing yeah 100%
+ for some of the enterprise
+31:46 applications or maybe the consumer applications as well it it seems like
+31:52 there are a lot of situations where the interface is not the interface might be the enabler but it's not the bottleneck
+31:58 the bottleneck is sort of the underlying business logic or the underlying context that's required to actually have the
+32:04 right sort of conversation with your customer or whoever the the user is um
+32:09 how often do you run into that what's what's your sense for where those bottlenecks are getting removed you know
+32:15 and where they might still be a little bit sticky at the moment
+ the benefit of us working so closely with a lot of companies where we where we bring our
+32:22 engineers to work directly with them frequently results in us kind of diving into seeing some of the common
+32:27 bottlenecks and when we've started you know the you think about the conversational AI stack you have the the
+32:34 kind of that the speechtoext element of understanding what you say you have the LM piece of of generating the response and then text to speech to narrate it
+32:40 back um and then you have the entire turnt taking model to to to deliver that
+32:46 um that experience in a good way but really that's just the the enabler but then like you said you to be able to
+32:52 deliver the right response you need both the knowledge base um the business uh
+32:58 base or or or the business information about how you want to actually generate that response and what's relevant in a
+33:04 specific context and then you need the functions and integrations to trigger the right set of actions
+ and in our case
+33:09 we've kind of we've we've built that that stack around the product so companies we work with can bring that
+33:15 knowledge base relatively easily um have access to rag if they want to enable
+33:20 this uh are able to that on the fly if they if they need to and then of course build the functions around it and the
+33:26 set of very common common themes is definitely coming across where um the
+33:32 the the deeper the enterprise you go the the the more integrations will start becoming more important whether it's you
+33:37 know simple things like Twilio or SIP trunking to make the phone call um or whether it's connecting to the CRM
+33:44 system of choice that they have or working with the past providers or the current providers where those companies
+33:50 are deployed like Genesis that's that's definitely a common common theme where um where that's probably taking the most
+33:57 time of like how do you have the entire suite of integrations that works reliably and and the business can easily
+34:05 connect to their to their logic in our case of course this is increasing and like kind of every next company we work
+34:11 with already benefits from a lot of the integrations that were built um so that's probably the the most frequent
+34:18 one the integrations itself knowledge base isn't as big of an issue but that depends on the company like if we if we
+34:24 work with a company that you know it's it's it's it's um we've seen kind of it all from like how well organized the
+34:31 knowledge is inside of the company if it's a company that has been spending a lot of effort on on digitizing already
+34:37 and creating like some version of source of truth where that information lies and how
+ relatively easy to on board them and
+34:44 then as we go to u more complex one and I don't know if I can mention anyone uh
+34:50 but uh the the it can it can get pretty gnarly and then we work with them on like okay that's what we need to do as
+34:55 the first as the first step
+ some of the protocols that are being developed to like standardize that standardize that
+35:01 like MCP is is definitely is definitely helpful something that we we also are bringing into the fold um as as you know
+35:08 you you don't want to you don't want to spend the time on all the integrations if if if the services can provide that
+35:13 as a yes easy stand away
+ well and and you mentioned anthropic one of the things that you plug into is the
+35:19 foundation models themselves and I I imagine there's a bit of a co-opetition
+35:25 dynamic where sometimes you're competing with their voice functionality sometimes you're you're working with them to
+35:30 provide a solution for a customer How how do you manage that like how does that I imagine there are a bunch of founders listening who are in similar
+35:37 positions where they work with foundation models but they kind of compete with foundation model i'm just cur how do you manage that
+ i think the
+35:44 main thing that we've realized is is most of them are complimentary to like work like conversational AI yeah
+ and
+35:50 we're trying to stay agnostic from using one provider but I think the main thing is is true and um and happened over the
+35:58 especially last year now now that I think about it h is that we are not trying to rely only on one we are trying
+36:04 to have many of them together in the fold and that kind of goes to both like one what if they develop into being a
+36:10 closer competition where uh you know maybe they won't pro be able to provide the service to us or the service becomes
+36:18 too blurry or we you know we of course are not using any of the data back to them
+36:23 could that be a concern in the future so kind of that piece but also the second piece um is
+36:30 the when you develop like a product like conversational AI which allows you to deploy your voice AI agent all our
+36:36 customers will have a different preference for using the LM but frequently or even more frequently you
+36:42 want kind of this um this cascading mechanism that what if one LM isn't working at a given time go through and
+36:49 and and and have that kind of the second second layer of support or third layer to perform pretty well and we've seen
+36:55 this work extremely successfully so to a large extent treat them as partners happy to be partners with many of them
+37:01 and um and hopefully that continues and if we if we are competing um there'll be a good competition too let me ask you on
+37:08 the product what do your customers care the most about one sort of meme over the
+37:13 last year or so has been people who keep touting benchmarks are kind of missing the point you know there are a lot of
+37:18 things beyond the benchmarks that customers really care about what is it your customers really care about
+ the um
+37:24 the and very true on the benchmark side especially in audio but if our customers care about three things quality both
+37:31 like how expressive it is in in both English and other languages and that's probably the top one like if you don't
+37:36 have quality everything else doesn't doesn't matter of course the thresholds of quality will depend on the use case
+37:42 it's a different threshold for narration for delivery in the in the agentic space
+37:48 and dubbing second one is latency
+ you won't be able to deliver a conversational agent if the latency
+37:54 isn't good enough but that's where the interesting combination will happen between like what's the quality versus
+37:60 latency uh benchmark that um that you that you have and then the third one
+38:06 which which is especially useful at that scale is reliability like can I deploy at scale like the Epic Games example
+38:13 where millions of player are interacting with and the system holds up it's still performative still works extremely well
+38:20 and time and time again we've seen that the the kind of being able to scale and and reliably deliver that infrastructure
+38:26 is is critical can I ask you how how far do you think we are from
+38:31 highly or fully reliable human or superhuman quality
+38:36 effectively zero latency voice interaction and and maybe the
+38:42 related question is how does the nature of the engineering
+38:47 challenges you face change as we get closer and inevitably surpass that sort
+38:53 of threshold the ideal like we would we
+38:58 uh we would love to prove that it's possible this year
+ that you can like cross the touring test of speaking with
+39:06 an agent and you just would say like this is like speaking another human i think it's a very ambitious goal but I think it's possible
+ I think it's
+39:12 possible um if if if if not this year then hopefully early in 2026 but uh but
+39:19 I think I think we can do it i think we can do it you know you will have you'll probably have different groups of of of of users too where some people will uh
+39:27 will kind of be very attuned and and you will be much harder to pass the Turing test for them but for majority of people
+39:35 I hope we are able to get it to to to that level this year i think the biggest
+39:40 question and and that's kind of where the timeline is a little bit more dependent is will it be the model that
+39:45 that we have today which is a cascading model where you have the speechto text lamb text to speech so like kind of
+39:52 three separate pieces that can be performative yeah yeah
+ or do you have like the omni um model where you train
+39:58 them together truly duplex style where the delivery is is is much better and
+40:03 that's that's that's effectively what we are uh uh kind of trying to assess
+ um we
+40:11 are doing both we are now then the one in production is the is the cascading model soon the one will deploy will be a
+40:17 truly duplex model um and I think the main thing that you will see is the kind
+40:23 of the reliability versus expressivity trade-off i think latency we can get pretty good on both sides um but but
+40:30 similarly there might be some trade-off of latency where where the true duplex model will always be quicker uh will be
+40:36 a little bit more expressive but less reliable and the cascaded model is definitely more reliable can be
+40:42 extremely expressive but maybe not as as as contextually responsive uh and then
+40:49 latency will be a little bit harder so that will be a huge engineering challenge and I think no no company has
+40:55 been able to do it well like fuse the the the modality of LMS with audio well
+41:00 so I hope we'll be the first one
+ uh which is the the internal internal big goal but we you know we've seen we've
+41:07 seen probably the OpenAI work the meta work that that are dabbling in in there um I don't think it passed the Turing
+41:13 test yet
+ um so hopefully hopefully we'll be the first
+ awesome and then you mentioned earlier that you think of and
+41:20 you have thought of voice as sort of a new default interaction mode for a lot of technology can you paint that picture
+41:27 a little bit more you know let's say we're five or 10 years down the road how do you imagine just the way people live
+41:33 with technology the way people interact with technology changes as a result of
+41:38 your model getting so good
+ i think the first like you know there there will be this beautiful uh part where kind of
+41:44 technology will will go into the background so you can really focus on on on on learning on human interaction and
+41:51 then you will have it like accessible through through voice versus through through the screen um I think the first
+41:57 piece will be the education i think the there will be like an entire change where all of us will have the the the
+42:03 kind of the guiding voice whether we are learning mathematics and are going through the notes or whether we are um
+42:09 uh trying to learn a new language and interact with with a native speaker to guide you through how to pronounce
+42:15 things um and I think this will be the first theme where in the next five 10 years it will be the the default that you will
+42:22 have um the the agents voice agents to to help you through that learning second
+42:28 thing which um
+ which will be interesting how this like affects the whole cultural
+42:33 exchange around the world i think you will be able to to go to another country and interact with another person while
+42:40 still carrying your own voice your own emotion inonation and the person can understand you m
+ um it will be an
+42:45 interesting question how that techn is delivered is it the headphone is it neural link is it another technology but
+42:52 um but it will happen and I think we we hopefully can make it happen if you uh you know if you if you read hitchhiker's
+42:58 guide to galaxy there's this concept of bubblefish i think bubblefish will be will be there and and and and and the
+43:04 technology um will make it possible so that will be a second huge huge theme um
+43:11 and I think the generally like you know we we've spoke about this personal tutor example but I think there will be other
+43:16 set of assistants and agents that all of us have that that just can can be sent to to perform tasks on our behalf and to
+43:24 perform a lot of those tasks you will need you will need voice whether it's you know booking a booking a restaurant
+43:30 or whether it's um jumping into a specific specific meeting to take notes
+43:36 and summarize that in the style that you need you want to be able to perform the action ction or whether it's it's it's
+43:41 it's calling a customer support and the customer support agent responding so that'll be an interesting theme of like
+43:47 agent to agent interaction yeah
+ uh and like how does authenticated how do you know it's real or not but of course
+43:53 voice will will play a a big role in in in all all three like the the education
+43:58 I think um and generally how we learn things will will be so dependent on that the um the kind of the universal
+44:06 translator um piece will will have voice at the at the forefront and then the the
+44:11 general services around the the life will will be will be so crucially voice
+44:17 driven
+ very cool um and you mentioned authentication i was going to ask you about that so one one of the fears that
+44:23 always comes up is impersonation can you talk about how you've handled that to date and maybe how it's evolved to date
+44:29 and where you see it headed from here yeah the the way we started and that was like a a big piece for us from the start
+44:36 is for all the content generated 11 labs you can trace it back to the specific account that generated it um so we have
+44:44 a pretty robust mechanism of of tying the audio output to to to the account
+44:49 and it can take action so that provenence is is extremely important and I think will be increasingly important
+44:55 in the future where you want to be able to understand what's the AI content or or not AI content or maybe it will shift
+45:02 even step deeper where you will rather than authenticating AI you'll also
+45:07 authenticate humans so you'll have ondevice authentication that okay this is Matty calling
+ another person the
+45:14 second thing is is is the wider set of like the moderation of is it a call
+45:20 trying to do fraud and scam or is this a um a voice that that might be not authenticated which we do as a company
+45:27 and and that kind of evolved over time to what extent we do it and how we do it so moderating on the voice on the text
+45:33 level and then the third thing kind of stretching the what we've started ourselves on like the the provenence
+45:40 component is like how can we train models and work with other companies to not only train it for 11 labs but also
+45:46 open source technology which is of course prevalent in that space other commercial models and um and it's it's
+45:53 it's you know it's possible of course as open source develops it always will be a cat and mouse game whether you can
+45:58 actually catch it but we worked a lot with with other companies like or or academia like University of Berkeley to
+46:05 actually deliver those models and and and um and be able to detect it um so and and that's kind of the guiding
+46:11 especially now that the more we take the kind of the leading position in deploying new technology like the conversational AI soon a new model we
+46:18 try to um we try to spend even more time on the trying to understand like what are the safety mechanism that we can
+46:25 that we can bring in to make it as useful for good actors and minimize
+46:30 the bad actors so yeah
+ that's the the usual trade-off there
+ um can we talk about Europe for a minute
+ let's do it
+46:36 okay guess you're you're a remote company but you're based in London what have been the advantages of being based
+46:42 in Europe what have been some of the disadvantages of being based in Europe it's a great question the um I think the
+46:48 advantage for us was uh was the talent being able to attract some of the best talent and you know frequently people
+46:54 say that the um there's like uh uh lack of drive in the people in in Europe we
+47:01 haven't felt that at all we feel like these people are so passionate we have like I think such an incredible team we
+47:08 try to run it with small teams but everybody is um is it's just like
+47:13 pushing all the time so excited about what we can do and some of the most hardworking people I had a pleasure to
+47:19 work with and it's such a high caliber of people too so talent was a extremely
+47:24 positive surprise for for us of like how how how the team kind of got constructed and especially now as we continue hiring
+47:32 people whether it's uh people across broader Europe Central Eastern Europe like just the caliber is is is super
+47:38 high um second thing which which um
+47:44 which I think is is true where you know there's this uh wider
+47:50 um feeling where Europe is behind um and and likely it's in many ways it's true
+47:55 like AI innovation is being led in US um countries in Asia are closely following
+48:01 Europe is behind um but the energy for the people is to to really change that and I think it's shifted from over last
+48:07 years where it was like a little little bit more cautious over when we started the company now like we feel the the
+48:15 keenness and and we want to be at the forefront of that and I think getting that energy from people and that drive
+48:21 was was a lot easier so that's probably an advantage where we can just just move quicker the companies are actually keen
+48:27 to adopt increasingly uh which which which is helping and as as a company in
+48:32 Europe um really as a global company but with with a lot of people in Europe it helps us uh deploy with those companies
+48:38 too and maybe there's another flavor and last flavor of that which is Europe specific but also global specific so
+48:45 when we started company we didn't really think about any specific region like we
+48:50 are you know a a Polish company or British company or or US company Um but I think was one thing was true where we
+48:57 where we wanted it to be a global solution
+ and not only from deployment perspective but also from the core of of
+49:04 what we are trying to achieve where it's like how do we bring audio and make it accessible in all those different
+49:09 languages so it kind of was the through through the spine of the company from the start from the core of the company
+49:14 and um and that definitely helped us where now when we have a lot of people in a lot of different regions they speak
+49:21 the language they can work with the clients and that I think likely helped that we were at Europe at the time because we were able to to bring a lot
+49:28 of people and optimize for that local experience on the other side what was definitely
+49:33 harder is you know in US there's this incredible community of you have people with the drive but you also have the
+49:39 people that have been through this journey a few times
+ and you can learn from those people so much easier and
+49:44 there's just so many of people that created companies exited companies led a
+49:50 function at a different scale than than most of the companies in Europe um so
+49:55 it's kind of almost granted that you can learn from those people just by being around them and being able to ask the questions that's much was much harder I
+50:02 think especially in the early days to just be able to ask those like not even ask the questions but know what
+50:08 questions to ask uh of course we we've been lucky to to partner with with with incredible
+50:14 investors through the years to help us through through through those questions uh but um but that was that was harder I
+50:21 think in in in Europe um and then the second is is probably the flip side of
+50:27 of you know while I'm positive there is the enthusiasm now in Europe uh I think
+50:32 it was lacking over last years i think US was
+ like excitingly taking the
+50:37 approach of of of leading over especially um over over last year and and creating the ecosystem to like let
+50:44 it flourish i think Europe is still figuring it out and that's that's you know whether it's the regulatory things
+50:49 that like you AI act that I think will will not not contribute to us
+50:57 accelerating um which which people are trying to figure out there's the enthusiasm but I think it's is slowing
+51:03 it out
+ but the first one is definitely the bigger disadvantage
+ yeah should we do a quick fire round
+ let's do it
+ okay
+51:11 what is your favorite AI application that you personally use and it can't be 11 labs or 11 reader
+51:21 it it it really changes over time uh but perplexity is is was I think and is one
+51:27 of my one of my favorites
+ really what is it what is uh and for you what does perplexity give you that chat GBT or
+51:34 Google doesn't give you
+ yeah the CHBD is also amazing uh Chipd is also amazing i
+51:40 think for a long time it was um being able to go deeper and understand the sources
+ um that was I hesitated a little
+51:47 bit of the wasis where where I think CHGPT now has a lot more of that of that
+51:52 of that component so I tend to use both in in many of those cases
+ um you know
+51:59 for a long time a nonAI application but I think they are trying to build AI application like my favorite app would
+52:05 be Google maps i like I I I think it's incredible i I'm it's it's it's it's such a powerful application um but let
+52:13 me pull my screen what other applications do I have
+ well while you're doing that I I will I will go to Google
+52:18 Maps and just browse yeah
+ I'll just go to Google Maps and explore some location that I've never been to before
+ it's 100%
+52:26 i mean it's it's it's uh it's great as a search function of the area too it's uh
+52:31 it's great um as a niche application um I like FYI this is a will I am uh
+52:37 startup
+ oh okay
+ which is like a combination of well it started as a communication app but now it's more of
+52:43 the radio app
+ okay
+ um like when I curiosity is there um cloud is great too
+52:51 i like I use cloud for very different things than than than GPT like any deeper coding elements prototyping I was
+52:58 use cloud uh cloud um and I and I love it actually no i do have a real like
+53:05 more real recent answer which is lovable yeah lovable was uh
+ Do you use it at all
+53:10 for 11 Labs or do you just use it personally to
+ ah that's true i think more like you know the my life is 11
+53:18 laps like I it's it's a so the truth is all those applications yes i it's like all of these I used partly for big time
+53:26 for 11 laps too um but but yeah I lovable I use for for 11 Labs um but
+53:32 like exploring new things too every so often I will use I use Lovable which ultimately is tied to to 11 Labs but um
+53:38 but it's great for prototyping
+ very cool and like um pulling up a quick demo for a client uh it's it's it's it's great
+53:46 very cool
+ so 11 related I guess
+ all right who
+ what was your favorite one
+ my
+53:51 favorite one you know it's funny so yesterday we had a team meeting and everybody everybody checked with chat
+53:57 GPT to see how many queries they sub they they'd submitted in the last 30 days and I'd done like 300 in the last 30 days i was like oh yeah that's pretty
+54:03 good pretty good user and Andrew similarly had done about 300 in the last 30 days um some of the younger folks on
+54:09 our team it was a thousand plus and so not not only I'm a big DAU of of chat
+54:16 GPT and I thought I was a power user but apparently not compared to what some other people are doing um I know it's a
+54:21 very generic answer but it it's unbelievable how much you can do in one app at this point
+ do you use Cloud as
+54:27 well
+ uh I use Cloud a little bit but not nearly as much the The other app that I use every single day which I'm very
+54:33 contrarian on is Quip which is which was Brett Taylor's company from years ago
+54:38 that got sold to Salesforce and I'm pretty sure that I'm the only DAU at this point but I'm just hoping
+54:45 Salesforce doesn't shut it down because my whole life is in Quip
+ i use We use a Palunteer i like Quip cool is good
+ it's
+54:51 really good yeah no they nailed the basics like they nailed the basics didn't get bogged down in bells and whistles just nailed the basics great
+54:57 experience
+ um all right who is uh who in the world of AI do you admire most
+ these
+55:03 are like hard rap not not rapid fire questions but I think um I really like
+55:09 Deis
+ tell me more i it's it's you know both um his the um
+55:18 I think he is always straight to the point he he he can speak very deeply about the research but he also has
+55:24 created through the years so many incredible work himself you know of course leading a lot of the research
+55:30 work but I kind of like that combination that he he has been doing the research and and and and now now leading it um
+55:38 and whether this was the like alpha fold which which I think is like truly a new
+55:44 new it's like everybody I think agrees here but like a true frontier for for
+55:49 the world and and like kind of taking what you know while most people focus on on part of the AI work he is kind of
+55:56 trying to bring it to to to um to biology I mean Darday is of course trying to do that too so it's it's going
+56:02 to be incredible like what this evolves to uh but then that he was like you know creating games in the early days was
+56:07 incredible chess player has been like trying to find a way for AI to win across all those games it's um it's like
+56:14 the versality of how he he both can lead the deployment of research can is
+56:19 probably one of the best researchers himself
+ stays extremely humble um and
+56:24 just like honest intellectually honest i feel like you know
+ we were speaking with with Dis he or Sarah Damis you would uh
+56:32 you would get an honest answer and um yeah that's it he's he's amazing
+ very
+56:38 cool all right last one hot take on the future of AI some belief that you feel
+56:46 medium too strongly about that you feel is underhyped or maybe contrarian
+56:51 i feel like it's a an answer that you would expect maybe to some extent but I do think the whole cross-lingual aspect
+56:60 is still like totally underhyped like if you will be able to go any place and
+57:05 speak that language and people can like truly speak with yourself
+ um and whether this will be initially like the delivery
+57:11 of content and then future delivery of communication I think this will like change the world of how we see it like I
+57:17 think one of the biggest barriers is in those conversations that you cannot really understand the other person of course it has a textual comp component
+57:23 to it like be able to translate it well but then also the voice delivery and uh I feel like this is completely
+57:29 underhyped it's like no no Nobody
+ do you think the device that enables that exists yet
+57:35 no I don't think so
+ it won't be the phone won't be glasses might be some other form factor
+ i think it will it
+57:40 will have many forms i think people will have you know glasses i think headphones will be one of the first which will be
+57:47 the easiest
+ um I mean glasses for sure will be there too um but I don't think everybody will will will wear the
+57:53 glasses and then you know like is there some version of of of a of a non-invasive
+57:59 neural link that that people can can have while they travel um that'll be an
+58:04 interesting like attachment to the body that that actually works um do you think
+58:10 it's do you think it's underhyped or do you think it's hyped enough this use case
+ um I would I would probably bundle
+58:17 that into the overall idea of sort of ambient computing where you are able to
+58:22 focus on human beings technology fades into the background it's passively absorbing what's happening around you
+58:29 using that context to help make you smarter help you do things you know help translate whatever the case may be yeah
+58:35 I think that that absolutely fits into my mental model of where the world is headed but I do wonder what what will
+58:40 the form factor be that enables that i think it's pretty what are the enabling technologies that allow for the business
+58:46 logic and that sort of thing to work starting to come into focus what's the form factor is still
+ to be determined
+58:53 but I I absolutely agree with that
+ yeah maybe that's maybe that's the reason it's not um hyped enough that you don't
+58:59 Yeah people can't picture it awesome Mati thanks so much
+ Pat thank
+59:04 you so much for having me it was great conversation
+ it's been a pleasure [Music]
+59:14 [Music]
+59:24 [Music]

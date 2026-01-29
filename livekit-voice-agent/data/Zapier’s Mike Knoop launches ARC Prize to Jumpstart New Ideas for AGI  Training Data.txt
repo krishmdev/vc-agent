@@ -1,0 +1,4897 @@
+00:00 right now I think the um what I see
+00:03 
+
+00:03 happening is there's sort of this
+00:04 
+
+00:04 mythical story of a very bad outcome
+00:06 
+
+00:06 once we get to like super intelligence
+00:08 
+
+00:08 right it's a very theoretical driven
+00:09 
+
+00:09 story it's not grounded in sort of
+00:11 
+
+00:11 empirical evidence it's it's basically
+00:12 
+
+00:12 based on sort of reasoning our way to
+00:14 
+
+00:14 like this outcome and I think the only
+00:16 
+
+00:16 way that we can really really
+00:17 
+
+00:17 effectively and truly set good policy is
+00:18 
+
+00:18 by you have to look at what the systems
+00:19 
+
+00:19 can and can't do and then regulate or
+00:21 
+
+00:21 decide make decisions at that point
+00:23 
+
+00:23 about what what it can or can't do I
+00:24 
+
+00:24 think anything else is sort of like you
+00:26 
+
+00:26 know you're you're cutting off potential
+00:28 
+
+00:28 really really good Futures way too early
+00:31 
+
+00:31 [Music]
+00:46 
+
+00:46 hi and welcome to training data we have
+00:49 
+
+00:49 with us today Mike n co-founder of
+00:51 
+
+00:51 zapier Mike has recently stepped up to
+00:53 
+
+00:53 co-found and sponsor The Arc prize which
+00:55 
+
+00:55 is one of the most unique benchmarks in
+00:57 
+
+00:57 AI that measures a machine's ability to
+00:59 
+
+00:59 truly learn things intelligently versus
+01:02 
+
+01:02 just to parot patterns in the training
+01:03 
+
+01:03 data we're excited to ask Mike for an
+01:06 
+
+01:06 update on how things are going with The
+01:07 
+
+01:07 Arc prize 2 weeks in and to hear his
+01:10 
+
+01:10 views on why we need radically different
+01:12 
+
+01:12 approaches and benchmarks to achieve
+01:14 
+
+01:14 true general
+01:17 
+
+01:17 intelligence Mike thanks for being here
+01:18 
+
+01:18 today so we're excited to talk about the
+01:21 
+
+01:21 ark AGI initiative uh before we get into
+01:25 
+
+01:25 that I'd love to spend a few minutes on
+01:28 
+
+01:28 your background at zapier because I
+01:30 
+
+01:30 think zapier has emerged as probably one
+01:33 
+
+01:33 of the best examples of what an existing
+01:37 
+
+01:37 application company can do with the
+01:39 
+
+01:39 power of AI and the way that you guys
+01:41 
+
+01:41 were sort of early to that the way that
+01:43 
+
+01:43 it's now kind of interwoven in the
+01:45 
+
+01:45 product has been really interesting to
+01:46 
+
+01:46 watch so maybe can you just say a few
+01:48 
+
+01:48 words on what is zapier and what has
+01:50 
+
+01:50 your approach to AI been at zapier yeah
+01:52 
+
+01:52 zapier is a workflow automation platform
+01:55 
+
+01:55 we support 6,000 different Integrations
+01:57 
+
+01:57 things from Salesforce to Gmail to uh G
+01:60 
+
+01:60 you know
+02:01 
+
+02:01 any basically S software that you can
+02:02 
+
+02:02 imagine we connect with and I think the
+02:04 
+
+02:04 unique thing about zapier is it's
+02:05 
+
+02:05 intended to be very easy to use for
+02:07 
+
+02:07 non-technical users so the majority of
+02:08 
+
+02:08 zapier customers users would not
+02:11 
+
+02:11 self-identify with being a programmer or
+02:13 
+
+02:13 being technical being an engineer
+02:14 
+
+02:14 something like that um even though I I
+02:16 
+
+02:16 also I'm kind of think of myself as an
+02:18 
+
+02:18 engineer and I find lots of interesting
+02:20 
+
+02:20 use cases for zapper but the large
+02:21 
+
+02:21 majority of our users don't and um I
+02:24 
+
+02:24 think that's what uh is is quite special
+02:26 
+
+02:26 about zapier and what why people tend to
+02:28 
+
+02:28 like fall in love with it is um you know
+02:29 
+
+02:29 the sort of of power and leverage that
+02:31 
+
+02:31 you get be as a non-technical user being
+02:33 
+
+02:33 able to um you know have software do
+02:35 
+
+02:35 work for you basically and I think
+02:37 
+
+02:37 that's it in an interesting way the
+02:39 
+
+02:39 exact same promise of AI right like
+02:41 
+
+02:41 that's what people want of AI they want
+02:43 
+
+02:43 software that's just going to do more
+02:44 
+
+02:44 work for them um and so in in many ways
+02:46 
+
+02:46 I think the mission of zapier and sort
+02:48 
+
+02:48 of the mission and purpose of AI
+02:50 
+
+02:50 intersect and I've been sort of like I
+02:53 
+
+02:53 guess call me AI curious I've since all
+02:54 
+
+02:54 the way back to college and I gave like
+02:57 
+
+02:57 a whole all hands at zappier um kimer
+02:60 
+
+02:60 what you year but like when the gpt3
+03:01 
+
+03:01 paper came out and show that to little
+03:02 
+
+03:02 company and so i' been sort of tracking
+03:04 
+
+03:04 and following along the progress um but
+03:06 
+
+03:06 it really wasn't until I think January
+03:08 
+
+03:08 of 20122 when the I think it this was
+03:09 
+
+03:09 the Chain of Thought paper um when that
+03:11 
+
+03:11 one came out that I saw that and really
+03:15 
+
+03:15 surprised me because I thought I'd
+03:16 
+
+03:16 priced in everything that sort of AI
+03:17 
+
+03:17 language models could sort of do up to
+03:19 
+
+03:19 that point and this idea of like you
+03:21 
+
+03:21 know let's think step by step this Chain
+03:23 
+
+03:23 of Thought technique breaking down these
+03:24 
+
+03:24 language models as just tools for
+03:26 
+
+03:26 reasoning in of you know just a One-Shot
+03:28 
+
+03:28 sort of completion or or chat engine
+03:30 
+
+03:30 um felt felt um very special and
+03:34 
+
+03:34 something that I think most people
+03:35 
+
+03:35 didn't expect that they could do even
+03:36 
+
+03:36 though the technology had been out there
+03:37 
+
+03:37 for over a year at that point and so
+03:39 
+
+03:39 that actually that kind of moment caused
+03:40 
+
+03:40 me to give up my exact team Ro I was
+03:42 
+
+03:42 running all of our product engineering
+03:44 
+
+03:44 at the time and I went back to basically
+03:45 
+
+03:45 being an individual contributor of the
+03:47 
+
+03:47 company as an AI researcher alongside my
+03:49 
+
+03:49 co-founder Brian and um have to talk
+03:51 
+
+03:51 more about sort of that Journey but uh
+03:53 
+
+03:53 yeah I think that's what caus zappier to
+03:55 
+
+03:55 be relatively early in terms of AI what
+03:58 
+
+03:58 are some of the things that you've put
+03:59 
+
+03:59 into the product that you're most proud
+04:01 
+
+04:01 of at zure in terms of AI
+04:04 
+
+04:04 features you know at this point I
+04:07 
+
+04:07 think zapier is pretty I'd say there's
+04:10 
+
+04:10 like probably two main places where
+04:12 
+
+04:12 we've gotten a lot of value uh from AI
+04:14 
+
+04:14 um the first is that over half the
+04:16 
+
+04:16 company now individual level uses AI on
+04:17 
+
+04:17 a daily basis and I know this because
+04:20 
+
+04:20 we're actually measuring zapp's own
+04:21 
+
+04:21 platform usage of our own company so
+04:23 
+
+04:23 this is like we have over half the
+04:24 
+
+04:24 company like building zaps building
+04:26 
+
+04:26 automations that use an AI step like a
+04:28 
+
+04:28 chatu PT step in the middle you know
+04:30 
+
+04:30 either to do so content generation or
+04:32 
+
+04:32 data extraction over unstructured text
+04:34 
+
+04:34 um all sorts of really interesting use
+04:36 
+
+04:36 cases we can sort of talk about in fact
+04:37 
+
+04:37 one of the top internally use cases is
+04:39 
+
+04:39 probably getting us about um I think
+04:42 
+
+04:42 like 100x labor enhancement rate wow
+04:45 
+
+04:45 which which has been phenomal what is
+04:47 
+
+04:47 that uh yeah you want to talk about it
+04:49 
+
+04:49 yeah yeah um I mean HX Improvement we
+04:51 
+
+04:51 got to talk about that I think it's our
+04:52 
+
+04:52 it's it's our personal like high water
+04:54 
+
+04:54 mark for what we've been able to achieve
+04:56 
+
+04:56 um using AI internally for like an
+04:57 
+
+04:57 operational perspective and so um zapier
+05:01 
+
+05:01 has uh uh these things on our website
+05:03 
+
+05:03 called zap templates they're effectively
+05:05 
+
+05:05 recipes that help users figure out what
+05:07 
+
+05:07 can zapier do and and help them get
+05:09 
+
+05:09 started and these templates are um in
+05:12 
+
+05:12 order to make them they're all they've
+05:13 
+
+05:13 all been historically handmade because
+05:15 
+
+05:15 they require a bit of right brain and a
+05:16 
+
+05:16 bit of Left Brain uh they're very um you
+05:19 
+
+05:19 know creative you have to inspire the
+05:21 
+
+05:21 end user the customer you know would be
+05:23 
+
+05:23 user of what what could happier do for
+05:24 
+
+05:24 you what's the outcome what's the ROI
+05:26 
+
+05:26 you might get um and then there's also a
+05:28 
+
+05:28 very like technical way they have to
+05:30 
+
+05:30 crafted and built as well you have the
+05:31 
+
+05:31 map Json fields from one integration app
+05:33 
+
+05:33 to another integration app to make sure
+05:34 
+
+05:34 it actually works and together that's
+05:36 
+
+05:36 what actually helps users get started
+05:37 
+
+05:37 and activate the of the product and we
+05:40 
+
+05:40 had a ho of maybe a million of these
+05:43 
+
+05:43 things that we knew we wanted to build
+05:45 
+
+05:45 that we hadn't built yet because they're
+05:46 
+
+05:46 just they take so much effort the sort
+05:48 
+
+05:48 of rate of production for a contractors
+05:49 
+
+05:49 was about 10 a day up until last summer
+05:53 
+
+05:53 and uh we had a person a member of our I
+05:55 
+
+05:55 think it was our partner marketing team
+05:57 
+
+05:57 actually a background by the way in
+05:58 
+
+05:58 freelance writing who built a zap a
+06:01 
+
+06:01 system of actually several zaps using
+06:04 
+
+06:04 open AI some middle steps here built an
+06:06 
+
+06:06 endend system that whenever a new
+06:07 
+
+06:07 integration got launched on zapier it
+06:10 
+
+06:10 would automatically try to like figure
+06:11 
+
+06:11 out what are the most interesting zap
+06:12 
+
+06:12 templates that could be built write the
+06:14 
+
+06:14 inspirational use case behind it because
+06:16 
+
+06:16 there we tons we have millions of these
+06:17 
+
+06:17 things already today with lots of
+06:18 
+
+06:18 training data and then also do the
+06:20 
+
+06:20 exacting field mapping as well and we
+06:23 
+
+06:23 moved the human in that workflow from
+06:26 
+
+06:26 the do Loop to the review Loop so
+06:28 
+
+06:28 instead of having those contractors now
+06:30 
+
+06:30 actually generating them thinking really
+06:31 
+
+06:31 hard about what the use cases should be
+06:32 
+
+06:32 in building the sort of field mappings
+06:35 
+
+06:35 um now they're basically reviewing
+06:37 
+
+06:37 output from from the system in a
+06:39 
+
+06:39 spreadsheet and saying yes this one is
+06:40 
+
+06:40 good this one's bad this one's good this
+06:42 
+
+06:42 one's bad and the funny thing is because
+06:44 
+
+06:44 the cost of production of generating
+06:46 
+
+06:46 these things as solo we don't even try
+06:47 
+
+06:47 to fix the bad ones we just throw them
+06:49 
+
+06:49 away and say well just generate another
+06:50 
+
+06:50 stack and throw them on top and so that
+06:52 
+
+06:52 rate of production is about a th a day
+06:54 
+
+06:54 now so we've gone from you know 10 a day
+06:55 
+
+06:55 to a th a day per per sort of contractor
+06:57 
+
+06:57 and uh we've been shipping away steadily
+06:59 
+
+06:59 at that whole a million and keeping up
+07:01 
+
+07:01 with sort of the launch of like new
+07:02 
+
+07:02 Integrations on app
+07:04 
+
+07:04 here I think one of the main things that
+07:07 
+
+07:07 that showed me was um you know probably
+07:10 
+
+07:10 the space you want to look for in you
+07:11 
+
+07:11 know businesses if you're thinking about
+07:12 
+
+07:12 how to deploy I is like really up like
+07:14 
+
+07:14 top of funnel or bottom of funnel tend
+07:16 
+
+07:16 to be like you want to get something
+07:17 
+
+07:17 that's really close to like an important
+07:18 
+
+07:18 conversion right for your business and
+07:20 
+
+07:20 then you know I think if you can
+07:22 
+
+07:22 identify um any manual work that your
+07:24 
+
+07:24 organization does that has ey volume um
+07:28 
+
+07:28 where human is doing the work uh I think
+07:30 
+
+07:30 those are sort of opportunities to like
+07:31 
+
+07:31 introspect and say okay is there an
+07:33 
+
+07:33 opportunity to get that human out of a
+07:34 
+
+07:34 do Loop and and sort of craft a system
+07:36 
+
+07:36 that can do the work but then put the
+07:37 
+
+07:37 human in the review lip which is still
+07:39 
+
+07:39 quite needed at the sort of maturity
+07:40 
+
+07:40 level of the technology today but um
+07:42 
+
+07:42 still phenomenal from an RI perspective
+07:44 
+
+07:44 are there any metrics you can share on
+07:46 
+
+07:46 the impact zapier AI has had on the
+07:48 
+
+07:48 overall zapier
+07:50 
+
+07:50 business the the biggest one today is
+07:53 
+
+07:53 we're just about to hit 10 million AI
+07:56 
+
+07:56 tasks per month now I think we're at a
+07:58 
+
+07:58 run rate for about 10 million AI tasks
+07:60 
+
+07:60 per month uh and I think what's I I
+08:03 
+
+08:03 think I I would love to be shown wrong
+08:05 
+
+08:05 or if corrected if you know examples um
+08:08 
+
+08:08 but I think at this point zapier might
+08:10 
+
+08:10 be the biggest automated AI platform in
+08:12 
+
+08:12 the world in the sense you know ever
+08:14 
+
+08:14 there's a lot of researchers
+08:15 
+
+08:15 entrepreneurs Builders who are trying to
+08:17 
+
+08:17 build these like agentic AI systems
+08:19 
+
+08:19 where the AI is sort of working without
+08:21 
+
+08:21 sort of human you know in the loop and
+08:24 
+
+08:24 um yeah I think at this point with 10
+08:26 
+
+08:26 million antit tasks a month we zapper
+08:27 
+
+08:27 may be the like biggest example of that
+08:29 
+
+08:29 in the world right
+08:31 
+
+08:31 now really cool can we talk about rgi
+08:34 
+
+08:34 Let's Do It um maybe start with a recap
+08:37 
+
+08:37 of of what is rgi why did you and
+08:40 
+
+08:40 franois set out to to set establish this
+08:43 
+
+08:43 priz yeah this was um so a follow on to
+08:46 
+
+08:46 my like AI curiosity so you know the
+08:48 
+
+08:48 reason I gave up my EXA team role back
+08:50 
+
+08:50 in
+08:51 
+
+08:51 2022 um was I kind of wanted to know for
+08:53 
+
+08:53 myself like are we in path r or not I
+08:55 
+
+08:55 felt like very important to know for
+08:56 
+
+08:56 zapper Mission but also just like as a
+08:58 
+
+08:58 human I was very curious and wanted to
+08:59 
+
+08:59 know like is this going to happen like
+09:00 
+
+09:00 it you know there there's definitely
+09:01 
+
+09:01 some interesting scaling that's
+09:02 
+
+09:02 happening is that sufficient to um like
+09:05 
+
+09:05 get to I think you know what naively I
+09:07 
+
+09:07 had in my head as like this you know
+09:09 
+
+09:09 super intelligence AGI and you know
+09:12 
+
+09:12 surprisingly what I learned is the
+09:13 
+
+09:13 answer is no um I Revisited actually got
+09:17 
+
+09:17 to first know France wet who is my
+09:19 
+
+09:19 co-founder on Arc prize um I first heard
+09:23 
+
+09:23 about him and got exposed to his
+09:24 
+
+09:24 research back during Co actually it was
+09:26 
+
+09:26 during 2020 he did I think another
+09:27 
+
+09:27 podcast where he was uh explaining his
+09:30 
+
+09:30 paper 2019 paper on measure of
+09:32 
+
+09:32 intelligence where he tried to formalize
+09:35 
+
+09:35 a definition of what AI actually is yeah
+09:38 
+
+09:38 I thought it was interesting at the time
+09:39 
+
+09:39 but you know I kind of parked it there
+09:40 
+
+09:40 lots of other stuff going on at zapier
+09:41 
+
+09:41 and doing our own AI product building
+09:44 
+
+09:44 but as zapier got more into sort of uh
+09:46 
+
+09:46 building with AI I built my intuition of
+09:48 
+
+09:48 what language models could do but the
+09:49 
+
+09:49 apparent limits were I started getting
+09:51 
+
+09:51 more into AI evals and trying to like
+09:54 
+
+09:54 understand where sort of the limits were
+09:55 
+
+09:55 what could we expect from a on a product
+09:57 
+
+09:57 building perspective like where are
+09:58 
+
+09:58 where are our products going to like tap
+09:60 
+
+09:60 out where should we invest our
+10:01 
+
+10:01 engineering and research effort versus
+10:02 
+
+10:02 just wait for the technology to keep
+10:04 
+
+10:04 scaling and mature and um you know the
+10:07 
+
+10:07 thing I found was that most AI evals
+10:08 
+
+10:08 were saturating up to human level
+10:09 
+
+10:09 performance and there was
+10:11 
+
+10:11 accelerating and when I went back to
+10:13 
+
+10:13 look at the arc um eval back from
+10:16 
+
+10:16 2019 expected to see a similar Trend and
+10:19 
+
+10:19 um in instead what I found was basically
+10:20 
+
+10:20 the opposite not only had it not reached
+10:22 
+
+10:22 Human Performance yet but it was
+10:23 
+
+10:23 actually decelerating over time and this
+10:26 
+
+10:26 was like really supremely sort of
+10:28 
+
+10:28 surprising to me um and uh maybe it's
+10:31 
+
+10:31 worth defining you know we use these
+10:33 
+
+10:33 terms of AGI but like what's the actual
+10:35 
+
+10:35 correct definition for it right I think
+10:37 
+
+10:37 there's a kind of popular definition in
+10:39 
+
+10:39 the world today actually there probably
+10:40 
+
+10:40 two schools of thought I think one
+10:41 
+
+10:41 school of thought that I see is Agi is
+10:43 
+
+10:43 undefinable we shouldn't even try um
+10:45 
+
+10:45 this is a quite popular perspective and
+10:47 
+
+10:47 I think the other school of thought is
+10:49 
+
+10:49 um you know uh that AGI is the system
+10:52 
+
+10:52 that can do the majority of economically
+10:54 
+
+10:54 useful work humans do this was
+10:55 
+
+10:55 popularized by open Ai and the Microsoft
+10:57 
+
+10:57 deal this is actually like in their
+10:59 
+
+10:59 their deal together uh like once this is
+11:01 
+
+11:01 achieved like open a retains all the
+11:03 
+
+11:03 future IP is very interesting I think v
+11:05 
+
+11:05 no Coastal actually might get credit for
+11:06 
+
+11:06 coining that definition um but
+11:08 
+
+11:08 nonetheless I think because of open a
+11:10 
+
+11:10 success that definition has sort of um
+11:13 
+
+11:13 become accepted by by a lot of people
+11:15 
+
+11:15 and as a Target and goal we should shoot
+11:16 
+
+11:16 for uh the challenge is I think it's
+11:18 
+
+11:18 it's a fine goal by the way um and I
+11:20 
+
+11:20 think current model architecture may be
+11:21 
+
+11:21 within spitting distance of it um I
+11:23 
+
+11:23 think it says way more probably about
+11:25 
+
+11:25 like what the majority of humans do for
+11:26 
+
+11:26 work if it's a true goal than what AGI
+11:28 
+
+11:28 actually is though and France wad
+11:31 
+
+11:31 defines AGI as the efficiency of
+11:34 
+
+11:34 acquiring new
+11:35 
+
+11:35 skill that's it and here's like a quick
+11:39 
+
+11:39 thought experiment I think you can use
+11:40 
+
+11:40 to chort of like kind of grock this is
+11:43 
+
+11:43 we've had AI systems now for you know
+11:44 
+
+11:44 many years five plus years that can beat
+11:46 
+
+11:46 humans at games like go chess poker
+11:50 
+
+11:50 diplomacy even and um the fact remains
+11:55 
+
+11:55 that you cannot take any one of those
+11:56 
+
+11:56 systems that was built to beat one of
+11:58 
+
+11:58 those games and simply retrain it with
+12:00 
+
+12:00 new data new experience to beat humans
+12:03 
+
+12:03 at another game instead what researchers
+12:05 
+
+12:05 and Builders and Engineers have to do is
+12:06 
+
+12:06 they have to like go back to zero they
+12:08 
+
+12:08 have to tear it all down rethink of new
+12:10 
+
+12:10 algorithms new architectures new ideas
+12:12 
+
+12:12 of course new training data as well
+12:14 
+
+12:14 often new amounts of scale um in order
+12:17 
+
+12:17 to beat that next game and yet this is
+12:20 
+
+12:20 in complete contrasts to how you two
+12:23 
+
+12:23 both learn right I could like sit you
+12:25 
+
+12:25 both down here teach you a new card game
+12:26 
+
+12:26 in probably about an hour I could
+12:28 
+
+12:28 probably show you a new board game and
+12:29 
+
+12:29 get you up to proficiency within a
+12:30 
+
+12:30 couple hours and that fact is what makes
+12:35 
+
+12:35 I think it's highly represented what
+12:36 
+
+12:36 makes you generally intelligent it's
+12:37 
+
+12:37 your ability to very quickly and
+12:39 
+
+12:39 efficiently sort of gain skill in order
+12:42 
+
+12:42 to accomplish some open-ended or novel
+12:44 
+
+12:44 task that you've like never encountered
+12:46 
+
+12:46 before in your life and that's what's
+12:47 
+
+12:47 special about Arc so Arc AGI is an eval
+12:50 
+
+12:50 that tries to take that definition and
+12:52 
+
+12:52 actually measure it and it was designed
+12:54 
+
+12:54 specifically to resist the ability to
+12:56 
+
+12:56 memorize the Benchmark which is very
+12:58 
+
+12:58 different from most other AI EV that are
+12:60 
+
+12:60 out there um every task is completely
+13:02 
+
+13:02 novel and there's a private test set
+13:03 
+
+13:03 that no one's seen outside of a handful
+13:05 
+
+13:05 of people that have like taken it to
+13:06 
+
+13:06 verify that you know all of the puzzles
+13:08 
+
+13:08 are solvable um and that degree of
+13:10 
+
+13:10 novelty and that degree of not having
+13:12 
+
+13:12 ever been seen before is what makes Arc
+13:14 
+
+13:14 a really really strong Benchmark for
+13:15 
+
+13:15 trying to distinguish between you know
+13:17 
+
+13:17 this more narrow AI that can be beaten
+13:19 
+
+13:19 largely through memorization techniques
+13:21 
+
+13:21 and egi which is you know a system that
+13:23 
+
+13:23 can sort very very rapidly and
+13:24 
+
+13:24 efficiently acquire this skill at test
+13:26 
+
+13:26 time what is the definite what is the
+13:28 
+
+13:28 definition of efficiency
+13:30 
+
+13:30 I imagine there's a compute component a
+13:32 
+
+13:32 data component what's the definition of
+13:34 
+
+13:34 efficiently and efficiently acquire new
+13:35 
+
+13:35 skill yeah
+13:37 
+
+13:37 FR uh I'll probably do a bad job trying
+13:39 
+
+13:39 to like summarize his research if you
+13:40 
+
+13:40 want to read more by the way his
+13:42 
+
+13:42 onmeasure of intelligence paper is like
+13:43 
+
+13:43 the source of Truth for all of this
+13:44 
+
+13:44 stuff I think it's really really good um
+13:47 
+
+13:47 and I think one other before I get to
+13:49 
+
+13:49 the answer I think one other important
+13:50 
+
+13:50 thing to sort of see is that Arc has
+13:52 
+
+13:52 been unbeaten since 2019 and I think
+13:54 
+
+13:54 it's endurance to date is probably the
+13:57 
+
+13:57 strongest set of empirical evidence that
+13:59 
+
+13:59 the like underlying concepts of the
+14:00 
+
+14:00 definition are correct which is why I
+14:02 
+
+14:02 think it's worth paying attention to and
+14:03 
+
+14:03 why it's such a special eval and special
+14:04 
+
+14:04 set of research um so I think for inst
+14:07 
+
+14:07 why I would sort of describe efficiency
+14:09 
+
+14:09 as the ability for a system to sort of
+14:11 
+
+14:11 translate from core knowledge priors to
+14:13 
+
+14:13 being able to like um attack uh sort of
+14:17 
+
+14:17 like a an uh the sort of search bace um
+14:20 
+
+14:20 or task space around it and so a very
+14:22 
+
+14:22 weak generalizable system is only going
+14:23 
+
+14:23 to be able to take on sort of very
+14:26 
+
+14:26 near-term adjacent tasks to sort of the
+14:28 
+
+14:28 core data the core knowledge that it was
+14:30 
+
+14:30 that system was trained on whereas like
+14:31 
+
+14:31 a highly generalizable system is going
+14:33 
+
+14:33 to be able to have a much larger field
+14:35 
+
+14:35 of sort of tasks and Novelty that it's
+14:37 
+
+14:37 able to attack and be able to be able
+14:39 
+
+14:39 effectively do um with a small set of
+14:42 
+
+14:42 training data and and that's what we
+14:44 
+
+14:44 hope to see with the eventual solution
+14:45 
+
+14:45 for AR AI as well is that you know if
+14:47 
+
+14:47 someone's able to beat it the goal is to
+14:49 
+
+14:49 get 85% on the eval um today's
+14:51 
+
+14:51 state-ofthe-art is I think 39% as we
+14:53 
+
+14:53 record this and I think what's special
+14:55 
+
+14:55 is if if someone can actually beat Arc
+14:57 
+
+14:57 at the 85% um that would mean that
+15:00 
+
+15:00 you've created a computer program that
+15:02 
+
+15:02 can um be trained on this very small set
+15:05 
+
+15:05 of core knowledge priers things like
+15:07 
+
+15:07 gold directedness objectness symmetry
+15:09 
+
+15:09 rotation these are these are sort of
+15:11 
+
+15:11 things that even that emerge very early
+15:12 
+
+15:12 in childhood development and be able to
+15:15 
+
+15:15 use those core knowledge priors and
+15:17 
+
+15:17 recombine them and synthesize them into
+15:18 
+
+15:18 new programs in order to solve tasks
+15:20 
+
+15:20 with exacting accuracy that um that
+15:23 
+
+15:23 system has never seen before never been
+15:25 
+
+15:25 exposed to in its training data that
+15:26 
+
+15:26 would be a really really important thing
+15:28 
+
+15:28 um particularly application layer where
+15:30 
+
+15:30 like the number one problem today is
+15:31 
+
+15:31 like hallucination accuracy and
+15:32 
+
+15:32 consistency and that results in this low
+15:34 
+
+15:34 user trust which limits deployment of
+15:36 
+
+15:36 like real AI right now you have some
+15:38 
+
+15:38 peculiar rules for competing for the
+15:40 
+
+15:40 price I think there's a limit on how
+15:41 
+
+15:41 much computer you can use you can't use
+15:43 
+
+15:43 the internet I don't know if you can use
+15:45 
+
+15:45 uh gpc4 and Clos models like why set
+15:49 
+
+15:49 those why put those limits in in place
+15:52 
+
+15:52 yeah so the two big ones are you're
+15:54 
+
+15:54 right you so on the um the competition
+15:56 
+
+15:56 so on kaggle and kaggle enforces no
+15:58 
+
+15:58 internet and you have limited compute so
+16:01 
+
+16:01 specifically you get 1 p100 for 12 hours
+16:04 
+
+16:04 and no internet means you can't use
+16:05 
+
+16:05 Frontier close models they're you know
+16:07 
+
+16:07 available through apis like Claude Sonet
+16:09 
+
+16:09 or gemini or gbd4 or
+16:12 
+
+16:12 40 um maybe a little take an order I
+16:16 
+
+16:16 think the compute one is maybe more
+16:17 
+
+16:17 interesting the reason for the compute
+16:18 
+
+16:18 limit is to Target efficiency first and
+16:21 
+
+16:21 foremost because if there wasn't any
+16:23 
+
+16:23 compute limit at all then you could
+16:26 
+
+16:26 simply Define AGI as saying it's just a
+16:28 
+
+16:28 system that can that can acquire skill
+16:30 
+
+16:30 with no degree of efficiency attached to
+16:32 
+
+16:32 it and if that was true that would mean
+16:34 
+
+16:34 that this system could Brute Force
+16:35 
+
+16:35 basically every possible program think
+16:37 
+
+16:37 through every possible future outcome
+16:39 
+
+16:39 here generate every possible single Arch
+16:40 
+
+16:40 type of puzzle and use that in order to
+16:42 
+
+16:42 sort of win the challenge and we know
+16:44 
+
+16:44 that's not actually what happens in
+16:45 
+
+16:45 human general intelligence um the
+16:48 
+
+16:48 thought you can read more in sort of
+16:48 
+
+16:48 Fran paper about why but the way that I
+16:51 
+
+16:51 think about it is you know you can think
+16:52 
+
+16:52 about it you can introspect even
+16:54 
+
+16:54 yourself while you're taking the arc
+16:55 
+
+16:55 puzzles and see that when you're trying
+16:57 
+
+16:57 to solve one of these that you're not
+16:59 
+
+16:59 brute forcing every possible
+17:01 
+
+17:01 transformation from the pattern trying
+17:03 
+
+17:03 to recognize the pattern and apply it to
+17:04 
+
+17:04 the test instead you're using your
+17:06 
+
+17:06 intuition you're using your prior
+17:07 
+
+17:07 experience to try and identify maybe
+17:09 
+
+17:09 three four five possible possibilities
+17:12 
+
+17:12 of like what the pattern is and then you
+17:14 
+
+17:14 check them right in your head and I
+17:16 
+
+17:16 think this shows that like humans that
+17:17 
+
+17:17 the sort of efficiency humans have is
+17:19 
+
+17:19 not brute forcing every possible you
+17:20 
+
+17:20 know solution and checking it's actually
+17:22 
+
+17:22 there's there efficiency so the the
+17:24 
+
+17:24 compute limit um it it sort of forces
+17:28 
+
+17:28 researchers to reckon with that
+17:30 
+
+17:30 definition now I think it is worth
+17:32 
+
+17:32 important acknowledging like we don't
+17:33 
+
+17:33 know exactly how much compute is
+17:34 
+
+17:34 necessary to beat arit and we're going
+17:35 
+
+17:35 to like keep upping the compute bar over
+17:37 
+
+17:37 time is what what I expect for example
+17:40 
+
+17:40 we already up it we over 2x it from uh
+17:43 
+
+17:43 prior versions the competition so I
+17:44 
+
+17:44 think a prior us you got somewhere
+17:45 
+
+17:45 between like two and five hours to run
+17:47 
+
+17:47 on the GPU we we we bumped that up to 12
+17:50 
+
+17:50 um interestingly all of the stavr
+17:52 
+
+17:52 techniques right now are actually maxing
+17:53 
+
+17:53 out that 12h hour run time as well so I
+17:55 
+
+17:55 do expect we'll we'll keep continue to
+17:56 
+
+17:56 increase it over time but but I think it
+17:58 
+
+17:58 is an important tool in order to like
+17:60 
+
+17:60 force the generality out of the sort of
+18:02 
+
+18:02 full solution that we're looking for and
+18:04 
+
+18:04 then new internet is a little more of a
+18:05 
+
+18:05 practical reason you know we're trying
+18:06 
+
+18:06 to reduce cheating reduce contamination
+18:08 
+
+18:08 reduce overfitting not be able to leak
+18:10 
+
+18:10 the private test set and largely just
+18:14 
+
+18:14 increase confidence that when we reach
+18:15 
+
+18:15 the 85% grand prize Mark that someone
+18:17 
+
+18:17 has actually beaten Arc um and be able
+18:21 
+
+18:21 to sort of say that with some sense of
+18:23 
+
+18:23 sort of authority and confidence that's
+18:25 
+
+18:25 that's a true statement one of France
+18:27 
+
+18:27 wm's goals for Arc prize is to establish
+18:30 
+
+18:30 a public Benchmark of progress towards
+18:33 
+
+18:33 or or maybe towards AGI or maybe the
+18:35 
+
+18:35 lack of progress towards AGI and have it
+18:38 
+
+18:38 be sort of a trusted public tool that
+18:39 
+
+18:39 you know policy makers you know students
+18:42 
+
+18:42 entrepreneurs Venture capitalists um you
+18:45 
+
+18:45 know employees everyone can look at to
+18:47 
+
+18:47 get a sense of you know how close or or
+18:49 
+
+18:49 far are we away from this sort of
+18:51 
+
+18:51 important technology existing and then
+18:53 
+
+18:53 using that Insight in order to help try
+18:55 
+
+18:55 to drive more AI researchers to work
+18:56 
+
+18:56 again on exploring new ideas which is
+18:58 
+
+18:58 something that's unfortunately kind of
+18:60 
+
+18:60 fallen out of favor in the last several
+19:01 
+
+19:01 years as LMS have taken off what what
+19:04 
+
+19:04 have you seen or maybe what do you
+19:06 
+
+19:06 expect to be true about the efforts that
+19:09 
+
+19:09 are successful or more successful toward
+19:11 
+
+19:11 AR AGI that makes them different from
+19:14 
+
+19:14 what we're seeing out of the frontier
+19:16 
+
+19:16 models and the big research Labs yeah so
+19:19 
+
+19:19 the it gets into like the details of
+19:21 
+
+19:21 like how does an LM work because that's
+19:22 
+
+19:22 kind of the B most Frontier AI
+19:23 
+
+19:23 researchers lives have been taking the
+19:25 
+
+19:25 last coule years is we're going to scale
+19:26 
+
+19:26 up language models and that's going to
+19:27 
+
+19:27 more scale more data is going to get us
+19:28 
+
+19:28 age out and even though that's the
+19:31 
+
+19:31 dominant story I actually don't think
+19:32 
+
+19:32 it's what most of the labs actually
+19:34 
+
+19:34 believe internally most of them are
+19:35 
+
+19:35 working on new ideas um so I think
+19:37 
+
+19:37 there's like an interesting story there
+19:39 
+
+19:39 but it is definitely in their interest
+19:40 
+
+19:40 to sort of promote a very strong
+19:41 
+
+19:41 Narrative of like scale is all you need
+19:43 
+
+19:43 don't compete with us you know we're
+19:44 
+
+19:44 just going to steamroll you to see here
+19:46 
+
+19:46 yeah um I think there's true competitive
+19:48 
+
+19:48 dynamics that ofers in the market that
+19:50 
+
+19:50 have that that are unfortunately I think
+19:53 
+
+19:53 shaping a lot of attention investment um
+19:57 
+
+19:57 effort away from exploring new ideas and
+20:00 
+
+20:00 if it is true that new ideas are needed
+20:03 
+
+20:03 which I believe it is and I think AR egi
+20:05 
+
+20:05 and Arc price show that like at least
+20:07 
+
+20:07 some new idea is needed then due to the
+20:10 
+
+20:10 sort of competitive dynamics that
+20:11 
+
+20:11 emerged in the market over the last
+20:12 
+
+20:12 couple years we're kind of like headed
+20:13 
+
+20:13 in the wrong direction right there's
+20:14 
+
+20:14 like um you know the all the frontier
+20:17 
+
+20:17 research has basically gone close Source
+20:19 
+
+20:19 the gp4 paper had no technical details
+20:21 
+
+20:21 shared in it the GPD the gemi paper had
+20:23 
+
+20:23 no technical deal shared on its longer
+20:24 
+
+20:24 context Innovation things like that and
+20:27 
+
+20:27 and yet this is like in direct contrast
+20:30 
+
+20:30 to the history of how we even got here
+20:31 
+
+20:31 today uh right the sort of innovation
+20:33 
+
+20:33 set that led the sort of chain of of
+20:35 
+
+20:35 research that led from you know ilot
+20:37 
+
+20:37 sequence to sequence paper at Google out
+20:39 
+
+20:39 to Jacob's University back to Google
+20:41 
+
+20:41 then to Alec gradford and back to ilot
+20:42 
+
+20:42 open AI like there's like a six or seven
+20:45 
+
+20:45 year chain of research that only
+20:47 
+
+20:47 happened because of open sharing open
+20:49 
+
+20:49 progress and open science and I think
+20:51 
+
+20:51 that's a bit unfortunate that we don't
+20:54 
+
+20:54 we don't really have that right now um
+20:55 
+
+20:55 again somewhat just due to the market
+20:57 
+
+20:57 dynamics and Commercial Success of of of
+20:59 
+
+20:59 language models kind of forcing a lot of
+21:01 
+
+21:01 that closed frener research up so um
+21:04 
+
+21:04 yeah one of the goals of our priz is to
+21:05 
+
+21:05 help counterbalance a lot of those
+21:07 
+
+21:07 things um you were asking about
+21:09 
+
+21:09 difference between look like it what you
+21:12 
+
+21:12 said resonates because it seems like a
+21:15 
+
+21:15 lot of the foundation model companies
+21:17 
+
+21:17 are going down very similar somewhat
+21:20 
+
+21:20 clearly defined paths and I'm sure that
+21:22 
+
+21:22 internally there's all sorts of work
+21:23 
+
+21:23 being done to find the next breakthrough
+21:25 
+
+21:25 in architecture but in terms of what's
+21:27 
+
+21:27 working today they're all fairly similar
+21:29 
+
+21:29 paths Y and I imagine though BS yes and
+21:32 
+
+21:32 I imagine though what works for the sake
+21:33 
+
+21:33 of rgi is going to be a little bit of a
+21:35 
+
+21:35 different shape yep and I'm wondering if
+21:37 
+
+21:37 you're starting to see what shape that
+21:39 
+
+21:39 may take got it and have a sense for
+21:41 
+
+21:41 what may be different about this more
+21:43 
+
+21:43 General architecture than what we're
+21:45 
+
+21:45 seeing out of the foundation models
+21:47 
+
+21:47 great so I think um you know a a useful
+21:52 
+
+21:52 um shortcut on how to think about
+21:54 
+
+21:54 language models is that they are
+21:56 
+
+21:56 effectively doing very high dimensional
+21:57 
+
+21:57 memorization right they're bble to train
+21:60 
+
+22:00 and memorize tons and tons of examples
+22:02 
+
+22:02 and apply them in slightly adjacent
+22:04 
+
+22:04 contexts I I don't want to under I don't
+22:06 
+
+22:06 want to dismiss language models too much
+22:07 
+
+22:07 because I think that they are very
+22:08 
+
+22:08 special something very magical and
+22:10 
+
+22:10 something very that has lots of economic
+22:11 
+
+22:11 utility zappier is an existence proof of
+22:13 
+
+22:13 that fact alone so um you know I I don't
+22:15 
+
+22:15 want to like um throw it under the bus
+22:17 
+
+22:17 too much I think there's some like
+22:18 
+
+22:18 really good things that it has like
+22:19 
+
+22:19 unlocked um uh as a technology goes but
+22:23 
+
+22:23 there are limits to it and you know
+22:25 
+
+22:25 there are the the sort of limits are um
+22:28 
+
+22:28 you know not being able ble to
+22:29 
+
+22:29 effectively leverage its training data
+22:31 
+
+22:31 to compose it or combine it at test time
+22:34 
+
+22:34 to go attack and like accomplish novel
+22:37 
+
+22:37 tasks that had never seen before in its
+22:39 
+
+22:39 training data that's what Arc sort of
+22:41 
+
+22:41 shows right is that this is like a skill
+22:43 
+
+22:43 that these language models don't don't
+22:44 
+
+22:44 sort of possess I think it's kind of
+22:46 
+
+22:46 maybe um useful to look at the history
+22:48 
+
+22:48 of the high score so far and maybe where
+22:50 
+
+22:50 where we expect it to go so from uh when
+22:52 
+
+22:52 when the eval was first introduced in
+22:54 
+
+22:54 2019 2020 the first there was a small
+22:57 
+
+22:57 cgo competition that ran to kind of get
+22:58 
+
+22:58 a B Baseline when it was 20% and from
+23:00 
+
+23:00 20% to 30% the uh techniques that worked
+23:03 
+
+23:03 were effectively um researchers cre
+23:06 
+
+23:06 crafted a like handcrafted domain
+23:08 
+
+23:08 specific language by looking at the
+23:10 
+
+23:10 puzzles that were in part of the public
+23:11 
+
+23:11 test set there's there's two test sets
+23:13 
+
+23:13 there's a public set and then the
+23:14 
+
+23:14 private one that's the sayate of the art
+23:15 
+
+23:15 is measure on and they looked at the
+23:17 
+
+23:17 public Des set and they try to infer and
+23:18 
+
+23:18 write down programs in Python code or C
+23:21 
+
+23:21 or whatever uh what are the like
+23:23 
+
+23:23 individual Transformations that like you
+23:25 
+
+23:25 do in your head to go from the you know
+23:27 
+
+23:27 one puzzle to the next and so that they
+23:29 
+
+23:29 called this a DSL and then they wrote a
+23:31 
+
+23:31 Brute Force search to try and search
+23:33 
+
+23:33 through all possible like permutations
+23:34 
+
+23:34 and combinations of those subprograms
+23:36 
+
+23:36 order to like find the general pattern
+23:38 
+
+23:38 and then apply it at real time and that
+23:41 
+
+23:41 got to about 30% what's gotten from 30%
+23:43 
+
+23:43 up to close to 40% now is a slightly
+23:45 
+
+23:45 different technique um this is uh Jack
+23:48 
+
+23:48 Cole and his approach is effectively
+23:49 
+
+23:49 using a code-based open source language
+23:52 
+
+23:52 model and doing test time fine-tuning so
+23:55 
+
+23:55 he has some pre-training down on the
+23:57 
+
+23:57 code gen model and then at test time
+23:59 
+
+23:59 taking the the puzzles they get the
+24:00 
+
+24:00 novel puzzles that's never been seen
+24:02 
+
+24:02 before and perating variations of it and
+24:05 
+
+24:05 then training this like cod genen based
+24:07 
+
+24:07 model in order to write that program
+24:09 
+
+24:09 then and find a program that fits the
+24:11 
+
+24:11 pattern and then apply it a test time
+24:12 
+
+24:12 and that's gotten to
+24:13 
+
+24:13 40% I suspect that we probably
+24:17 
+
+24:17 have I bet we have the ideas in the air
+24:21 
+
+24:21 already to get to like the 50% Mark May
+24:23 
+
+24:23 maybe even a little beyond the 50% Mark
+24:25 
+
+24:25 without a lot of new innovation I bet
+24:27 
+
+24:27 just ensembling or combining the sort of
+24:30 
+
+24:30 existing idea sets that have already
+24:32 
+
+24:32 worked towards AR probably gets you
+24:33 
+
+24:33 about halfway um I think to get to the
+24:36 
+
+24:36 85% Mark in or Beyond I think it the
+24:39 
+
+24:39 solution the ultimate solution probably
+24:41 
+
+24:41 looks more like the shape
+24:43 
+
+24:43 of um at least to solve Arc something
+24:45 
+
+24:45 that looks like a you know a deep
+24:47 
+
+24:47 learning guided DSL generator where you
+24:50 
+
+24:50 have some sort of instead of hand coding
+24:52 
+
+24:52 and hand crafting the DSL um like ahead
+24:54 
+
+24:54 of time by trying to infer from the
+24:56 
+
+24:56 public test set what those like sub
+24:57 
+
+24:57 programs would be you need would it
+24:59 
+
+24:59 generate that DSL dynamically right by
+25:01 
+
+25:01 looking at the puzzles um in real time
+25:03 
+
+25:03 and being able to learn from past
+25:05 
+
+25:05 puzzles and apply that towards future
+25:06 
+
+25:06 puzzles this is also another important
+25:08 
+
+25:08 thing humans do when they're going
+25:08 
+
+25:08 through the arc set sometimes the first
+25:10 
+
+25:10 or second puzzle are actually a little
+25:11 
+
+25:11 trickier because you're orienting
+25:12 
+
+25:12 yourself around what am I doing what
+25:13 
+
+25:13 task am I doing what does the possible
+25:15 
+
+25:15 solution space look like and then as you
+25:17 
+
+25:17 get further into the task set they tend
+25:19 
+
+25:19 to get a little easier because you've
+25:20 
+
+25:20 they start you know some of the rec the
+25:22 
+
+25:22 the sort of space of possible
+25:23 
+
+25:23 Transformations is just finite so you
+25:25 
+
+25:25 start kind of recognizing patterns there
+25:26 
+
+25:26 and then combining that with some sort
+25:28 
+
+25:28 of Deep based program synthesis engine
+25:31 
+
+25:31 something that can um not bir force all
+25:34 
+
+25:34 possible programs of how to combine
+25:36 
+
+25:36 those dsls together but something that
+25:37 
+
+25:37 has some sort of you know deep learning
+25:39 
+
+25:39 approach to like shape which program
+25:42 
+
+25:42 traces do you try to generate or test
+25:45 
+
+25:45 and try against the pattern and then
+25:46 
+
+25:46 again it kind of goes back to this human
+25:48 
+
+25:48 introspection of how how how we take the
+25:50 
+
+25:50 puzzles which is we're we're not brute
+25:51 
+
+25:51 forcing all possible you know programs
+25:53 
+
+25:53 in our head instead we're trying to
+25:55 
+
+25:55 identify just a handful of likely
+25:56 
+
+25:56 candidates and then testing those
+25:57 
+
+25:57 deterministically in our head and app
+25:58 
+
+25:58 finding the one that works it's really
+25:60 
+
+26:00 interesting that code generation and
+26:01 
+
+26:01 program synthesis kind of underlies all
+26:03 
+
+26:03 of the methods you just talked about um
+26:06 
+
+26:06 it's and there's something something
+26:08 
+
+26:08 very special there like program
+26:09 
+
+26:09 synthesis is very general allows you to
+26:11 
+
+26:11 actually get closer to that definition
+26:13 
+
+26:13 of generalized intelligence that you
+26:15 
+
+26:15 mentioned at the beginning it's very
+26:17 
+
+26:17 exacting and I think this is one of the
+26:20 
+
+26:20 reasons why the solution to RI is going
+26:23 
+
+26:23 to be
+26:24 
+
+26:24 useful um very quickly so uh there's um
+26:28 
+
+26:28 we were talking this before there's a
+26:29 
+
+26:29 history of like toy AI benchmarks over
+26:32 
+
+26:32 the last 10 15 years that you know kind
+26:34 
+
+26:34 of looked like Arc there were games
+26:35 
+
+26:35 there were puzzles and really never
+26:37 
+
+26:37 amounted to much in terms of being
+26:39 
+
+26:39 beaten they they all got handily beaten
+26:40 
+
+26:40 as sort of scale emerged and um you know
+26:43 
+
+26:43 they they really didn't add to or our
+26:45 
+
+26:45 understanding of how to build useful AI
+26:47 
+
+26:47 systems and so what's one of the common
+26:49 
+
+26:49 questions I've been feeling the last
+26:50 
+
+26:50 couple weeks is like what's different
+26:51 
+
+26:51 about Arc what is is that you know isn't
+26:53 
+
+26:53 that likely to just happen here again
+26:55 
+
+26:55 and I think the reason why we're likely
+26:58 
+
+26:58 to see something much more useful
+26:60 
+
+26:60 assuming we get like a really good
+27:01 
+
+27:01 solution Arc um from the sort of first
+27:04 
+
+27:04 you know grand prize win is that the
+27:07 
+
+27:07 number one problem at the application
+27:09 
+
+27:09 layer and this we see this with zpp here
+27:10 
+
+27:10 too with our new AI Bots that we
+27:12 
+
+27:12 launched a couple months ago um been
+27:14 
+
+27:14 surprising to me in how that has gotten
+27:17 
+
+27:17 adopted actually by our users um you
+27:19 
+
+27:19 know there there's like how I kind of
+27:20 
+
+27:20 describe it there's a lot of concentric
+27:22 
+
+27:22 rings of use cases that you can use ai
+27:24 
+
+27:24 ai automation for and what we're seeing
+27:26 
+
+27:26 is people are sort of restricting the
+27:28 
+
+27:28 use cases for the AI Bots where they're
+27:30 
+
+27:30 sort of fully automated totally hands
+27:31 
+
+27:31 off to the use cases where there's um a
+27:34 
+
+27:34 sort of a very low need for user trust
+27:38 
+
+27:38 or where where the sort of let say that
+27:40 
+
+27:40 different way if um if it goes wrong
+27:43 
+
+27:43 it's not catastrophically bad uh so they
+27:45 
+
+27:45 deployed for use cases like personal
+27:47 
+
+27:47 productivity or team based like workflow
+27:49 
+
+27:49 automation things where you know if it's
+27:51 
+
+27:51 wrong or it's right only nine out of 10
+27:53 
+
+27:53 times or it takes me you know maybe a
+27:55 
+
+27:55 couple days to like really work with the
+27:57 
+
+27:57 system to like do the prompt in
+27:58 
+
+27:58 engineering to steer it towards getting
+27:60 
+
+27:60 maybe 95 99% reliability that's
+28:02 
+
+28:02 acceptable because the risk of being
+28:04 
+
+28:04 wrong is just you know quite low in
+28:05 
+
+28:05 order to get much higher up and expand
+28:08 
+
+28:08 the number of concentric rings to you
+28:09 
+
+28:09 know moderate risk to high risk
+28:10 
+
+28:10 deployment scenarios where we want these
+28:12 
+
+28:12 systems working autonomously we're going
+28:13 
+
+28:13 to need that the main thing that is
+28:15 
+
+28:15 missing is user confidence in the
+28:17 
+
+28:17 exacting nature of what it can do and
+28:19 
+
+28:19 what it can't do um this is what zapier
+28:22 
+
+28:22 like core classic gives us right is like
+28:24 
+
+28:24 it's a terministic engine to execute
+28:26 
+
+28:26 automation so you know once you build it
+28:28 
+
+28:28 and set up it's going to do the exact
+28:29 
+
+28:29 same thing every single time but that's
+28:30 
+
+28:30 also what makes it fragile and hard to
+28:32 
+
+28:32 use and on contrast you know these like
+28:34 
+
+28:34 AI Core based LM systems that are
+28:36 
+
+28:36 totally autonomous have the opposite set
+28:38 
+
+28:38 of trade-offs right they're much easier
+28:39 
+
+28:39 to use you can steer them guide them and
+28:41 
+
+28:41 fix them entirely through natural
+28:42 
+
+28:42 language but because the accuracy is
+28:45 
+
+28:45 still inexact confidence is low and I
+28:47 
+
+28:47 think that's what Arc gets us a solution
+28:49 
+
+28:49 to Arc at 85 or 100% means that you've
+28:52 
+
+28:52 written a again you've written a
+28:53 
+
+28:53 computer program that can generalize
+28:54 
+
+28:54 from like very simple core knowledge
+28:56 
+
+28:56 priors to Sol with exacting accuracy
+28:58 
+
+28:58 100% reliability these like sight unseen
+29:01 
+
+29:01 puzzles and I think that that tool as a
+29:05 
+
+29:05 for that will be a new tool in like the
+29:06 
+
+29:06 programs toolkit basically in terms of
+29:07 
+
+29:07 building products and Building Systems
+29:09 
+
+29:09 that can achieve that same
+29:11 
+
+29:11 thing we're two weeks in I think to when
+29:13 
+
+29:13 you launched Arc AGI prize um what have
+29:17 
+
+29:17 you learned so far like what what types
+29:18 
+
+29:18 of people are working and and competing
+29:20 
+
+29:20 on this is it like the pedigree
+29:22 
+
+29:22 researchers are the big Labs is it
+29:24 
+
+29:24 Scrappy Hustler types like who's
+29:26 
+
+29:26 competing how many teams are submitting
+29:28 
+
+29:28 Solutions yeah let's see so um the the
+29:31 
+
+29:31 response by the way after launch was
+29:32 
+
+29:32 phenomenal was much bigger than we
+29:33 
+
+29:33 expected uh I think we had we were like
+29:35 
+
+29:35 trending on Twitter twice during the
+29:37 
+
+29:37 launch week the number one kle
+29:39 
+
+29:39 competition in the world over a million
+29:41 
+
+29:41 social views I think over all the launch
+29:42 
+
+29:42 channels so just very phenomenal I'm
+29:44 
+
+29:44 really thankful for everyone who helped
+29:45 
+
+29:45 sort of promote and helped share Arc um
+29:48 
+
+29:48 hopefully we actually like can get a
+29:49 
+
+29:49 solution here in in some some short time
+29:52 
+
+29:52 um I think that
+29:55 
+
+29:55 like the most interesting thing about
+29:57 
+
+29:57 the folks that are working towards there
+29:58 
+
+29:58 probably um a historical answer here and
+30:00 
+
+30:00 then what I've seen over the last two
+30:01 
+
+30:01 weeks so the historical answer is most
+30:03 
+
+30:03 of the people that have worked on Arc
+30:05 
+
+30:05 are Outsiders to the field they like um
+30:08 
+
+30:08 this is not actually the first year that
+30:09 
+
+30:09 there's ever been a contest about there
+30:10 
+
+30:10 was a past competition called arthon it
+30:12 
+
+30:12 was much smaller it was hosted of a um
+30:14 
+
+30:14 uh this lab 42 AI lab in Switzerland um
+30:18 
+
+30:18 and so last year there was actually 300
+30:20 
+
+30:20 teams that worked on trying to beat Arc
+30:22 
+
+30:22 and again no one sort of Beat It and
+30:25 
+
+30:25 almost to my knowledge all of those
+30:27 
+
+30:27 teams were a effectively individuals or
+30:30 
+
+30:30 effective you know Outsiders in some way
+30:31 
+
+30:31 they're not you know people at like big
+30:33 
+
+30:33 AI Labs they're folks with backgrounds
+30:35 
+
+30:35 and you know engineering mechanical
+30:37 
+
+30:37 engineering or video game programming or
+30:40 
+
+30:40 physics um folks that just kind of like
+30:42 
+
+30:42 got curious and interested in the
+30:43 
+
+30:43 problem at hand and and I actually think
+30:45 
+
+30:45 that's more likely than not where the
+30:47 
+
+30:47 Breakthrough for Arc is going to come
+30:48 
+
+30:48 from is I think it's going to come from
+30:49 
+
+30:49 an outsider somebody who like some of
+30:53 
+
+30:53 you just thinks a little bit differently
+30:54 
+
+30:54 or has a different set of life
+30:55 
+
+30:55 experience so they're able to like you
+30:56 
+
+30:56 know cross-pollinate a couple like
+30:58 
+
+30:58 really ideas across Fields um that's one
+31:01 
+
+31:01 of the reasons why um I I put as much
+31:03 
+
+31:03 money as we did at AR priz I felt like
+31:05 
+
+31:05 the progress was idea rate limited
+31:07 
+
+31:07 actually and one of the best ways to
+31:09 
+
+31:09 sort of increase the amount of ideas is
+31:10 
+
+31:10 to try and blow up awareness which is
+31:12 
+
+31:12 what the the launch kind of did over the
+31:14 
+
+31:14 last two weeks the um I've kind of seen
+31:17 
+
+31:17 like two probably like camps of people
+31:19 
+
+31:19 at least on Twitter emerge I think
+31:20 
+
+31:20 there's one Camp of people who are sort
+31:22 
+
+31:22 of the uh um you know they're in it for
+31:24 
+
+31:24 the mission they they they they agree
+31:25 
+
+31:25 with the underlying concept they they
+31:27 
+
+31:27 think that like we do need to some new
+31:28 
+
+31:28 ideas they're excited to like try and
+31:29 
+
+31:29 figure out what those are and then
+31:31 
+
+31:31 there's like a second group of people
+31:32 
+
+31:32 that are sort of like I'm going to prove
+31:33 
+
+31:33 you wrong LMS are definitely enough
+31:34 
+
+31:34 scale is definitely what we need and I'm
+31:37 
+
+31:37 going to do my best to go like feed this
+31:38 
+
+31:38 Benchmark just using like existing
+31:40 
+
+31:40 off-the-shelf technology and uh and sort
+31:42 
+
+31:42 of prove you wrong so I'm I'm actually
+31:44 
+
+31:44 quite happy for both those games to
+31:45 
+
+31:45 exist uh I one of those approaches is is
+31:47 
+
+31:47 currently up in the leaderboards right
+31:49 
+
+31:49 um so uh yeah we can we can break break
+31:51 
+
+31:51 some sort of news here so we're uh this
+31:54 
+
+31:54 week this Thursday we're launching or I
+31:55 
+
+31:55 guess when this comes out have launched
+31:56 
+
+31:56 just a couple days in the past a brand
+31:58 
+
+31:58 new public task leaderboard so we talked
+32:01 
+
+32:01 about how um Arc doesn't allow internet
+32:03 
+
+32:03 access and there's compute limits I know
+32:06 
+
+32:06 personally how unsatisfying that is to
+32:08 
+
+32:08 not be able to use Frontier models
+32:09 
+
+32:09 though I also want to know how good can
+32:11 
+
+32:11 GPD 4 how good can cloudon it like do
+32:13 
+
+32:13 against this Benchmark um and also
+32:16 
+
+32:16 because um you no computer internet kind
+32:18 
+
+32:18 of also is a bit of a barrier entry
+32:20 
+
+32:20 right you have to use open source models
+32:21 
+
+32:21 you have to do um just like quite a bit
+32:23 
+
+32:23 of intering work have to do before you
+32:24 
+
+32:24 can even start just testing and
+32:25 
+
+32:25 experimenting so we're goingon to be
+32:27 
+
+32:27 we're we're launching a new public task
+32:29 
+
+32:29 leaderboard it's going to be a secondary
+32:31 
+
+32:31 leaderboard we're going to be committing
+32:32 
+
+32:32 about $150,000 for a reproducible fund
+32:35 
+
+32:35 towards this secondary leaderboard it
+32:38 
+
+32:38 won't be officially part of the
+32:39 
+
+32:39 competition this year um you know we
+32:41 
+
+32:41 want to incre we want to like maintain
+32:43 
+
+32:43 that aspect of like Assurance on you
+32:45 
+
+32:45 know cheating and contamination over
+32:47 
+
+32:47 fitting with the private test set and
+32:48 
+
+32:48 that's also the test set that has sort
+32:50 
+
+32:50 of the most empirical evidence against
+32:52 
+
+32:52 it over the last four years but the
+32:53 
+
+32:53 secondary leaderboard is going to allow
+32:55 
+
+32:55 folks to um basically submit scores
+32:58 
+
+32:58 towards against the 400 public task set
+32:60 
+
+32:60 and we'll verify reproduce the scores
+33:01 
+
+33:01 locally to sort of Ensure good like
+33:03 
+
+33:03 fitting with um with the approach and
+33:05 
+
+33:05 and we'll publish that and you're right
+33:07 
+
+33:07 the the I think the top scor one of the
+33:09 
+
+33:09 top scores on that is this guy Ryan
+33:10 
+
+33:10 greenblat he came out a couple days
+33:12 
+
+33:12 after um the competition launched with a
+33:15 
+
+33:15 pretty interesting novel approach
+33:16 
+
+33:16 actually towards beating it and he's
+33:18 
+
+33:18 using gbd 40 and but not not just gbd4 I
+33:22 
+
+33:22 think the interesting thing is he's he
+33:24 
+
+33:24 created a like an outer loop around 40
+33:27 
+
+33:27 where he is using 40 to generate
+33:30 
+
+33:30 programs or sample from GPD 40 these
+33:34 
+
+33:34 like program these reasoning traces to
+33:36 
+
+33:36 um beat the task or identify the
+33:38 
+
+33:38 patterns then testing these patterns
+33:40 
+
+33:40 against uh ATT against the
+33:43 
+
+33:43 demonstrations that then finding the one
+33:44 
+
+33:44 who works on applying it and that's that
+33:46 
+
+33:46 approach seems to be getting in the like
+33:48 
+
+33:48 uh 40 like low 40s maybe 40% 41
+33:50 
+
+33:50 somewhere in that range and um it's
+33:54 
+
+33:54 pretty interesting because I think it's
+33:56 
+
+33:56 you know someone might look at that I
+33:57 
+
+33:57 think and it sort of at first blush say
+33:59 
+
+33:59 well isn't that evidence and skill is
+34:00 
+
+34:00 all you need and I do think there is
+34:02 
+
+34:02 something interesting there right it's
+34:03 
+
+34:03 like it's showing that hey the more
+34:04 
+
+34:04 training data these things have the more
+34:06 
+
+34:06 sort of um you know programs that they
+34:08 
+
+34:08 can spit out that might be kind of right
+34:10 
+
+34:10 uh but it also shows that I think that
+34:13 
+
+34:13 new ideas are needed still uh like this
+34:15 
+
+34:15 outer loop is novel like that might
+34:18 
+
+34:18 actually be Frontier llm reasoning that
+34:21 
+
+34:21 Ryan published and we're going to make
+34:23 
+
+34:23 all the approach whenever we put um um
+34:25 
+
+34:25 similar to Arc prize we're going to like
+34:27 
+
+34:27 open source all the code for all the
+34:28 
+
+34:28 reproducible solutions so folks can can
+34:30 
+
+34:30 take these and apply them and try to
+34:31 
+
+34:31 reproduce them and sort of using private
+34:33 
+
+34:33 close or open close open uh open source
+34:36 
+
+34:36 models for the sort of the closed
+34:37 
+
+34:37 private data set um yeah I do think it's
+34:40 
+
+34:40 pretty interesting uh what how much
+34:43 
+
+34:43 Innovation you get when you um how much
+34:45 
+
+34:45 ination we've gotten over the last few
+34:46 
+
+34:46 weeks is just a result of putting even
+34:47 
+
+34:47 just the awareness against the public
+34:50 
+
+34:50 test are the faults at the big research
+34:52 
+
+34:52 Labs like why are they not working
+34:53 
+
+34:53 towards this Benchmark because it almost
+34:55 
+
+34:55 like when you explain the Benchmark it's
+34:58 
+
+34:58 seems so clear that obviously this is
+35:01 
+
+35:01 the thing you want to solve you don't
+35:01 
+
+35:01 want to solve the memorizing the
+35:03 
+
+35:03 textbook um use case why do you think
+35:06 
+
+35:06 the folks with the big research Labs
+35:07 
+
+35:07 aren't trying to sell this Benchmark or
+35:08 
+
+35:08 are
+35:09 
+
+35:09 they so I am aware of a handful of big a
+35:13 
+
+35:13 Labs that have tried in the past um
+35:15 
+
+35:15 seever several years ago so like you
+35:17 
+
+35:17 know this was perhaps at smaller scale
+35:19 
+
+35:19 with weaker models and things like that
+35:21 
+
+35:21 I would uh one of the things I would
+35:23 
+
+35:23 hope is that actually more do in the
+35:24 
+
+35:24 future actually um love to see if there
+35:26 
+
+35:26 was if we could make ARG AGI an actual
+35:29 
+
+35:29 measure on some of the model cards that
+35:31 
+
+35:31 get reported against future models I
+35:32 
+
+35:32 think that would be like a really cool
+35:33 
+
+35:33 thing we're willing to do it so if
+35:35 
+
+35:35 anyone is listening to this and wants to
+35:36 
+
+35:36 reach out and make that happen uh more
+35:38 
+
+35:38 than happy to work with them and find
+35:39 
+
+35:39 some way to do that
+35:41 
+
+35:41 um if I had to
+35:44 
+
+35:44 guess well let let me say let me not
+35:47 
+
+35:47 guess unless say what I have more sort
+35:49 
+
+35:49 of confidence in
+35:51 
+
+35:51 um I've been surveying once I got
+35:54 
+
+35:54 exposed to Fran's work again and was
+35:56 
+
+35:56 sort of for deep think deeping thinking
+35:58 
+
+35:58 deeply about rgi I started serving a lot
+35:60 
+
+35:60 of my like friends and researchers in SF
+36:02 
+
+36:02 in the Bay Area about had they heard of
+36:04 
+
+36:04 France SW and had they heard of Arc and
+36:06 
+
+36:06 France is pretty good name recognition
+36:07 
+
+36:07 because he's like really big on Twitter
+36:09 
+
+36:09 um been big on Twitter for many years
+36:11 
+
+36:11 probably nine out of 10 people I talked
+36:13 
+
+36:13 to like knew who France was was maybe
+36:16 
+
+36:16 one in 10 two in 10 had heard about the
+36:19 
+
+36:19 arcal and uh probably half those were
+36:22 
+
+36:22 confused because there's like five other
+36:24 
+
+36:24 AI evals called Arc uh and I had to like
+36:26 
+
+36:26 sort of do some uh so I had to like you
+36:29 
+
+36:29 know disambiguate uh with them so it had
+36:31 
+
+36:31 really low awareness this was one of the
+36:33 
+
+36:33 first things I asked Fran about when I
+36:35 
+
+36:35 when I met him for the first time in
+36:36 
+
+36:36 person this year I asked him why do you
+36:39 
+
+36:39 think that is why do you think you have
+36:40 
+
+36:40 such high awareness but Ark has such low
+36:42 
+
+36:42 awareness and as the answer effectively
+36:45 
+
+36:45 was that it's hard you know the way that
+36:49 
+
+36:49 benchmarks um G like gain popularity and
+36:53 
+
+36:53 notoriety is we make progress towards
+36:55 
+
+36:55 them right researchers um are working
+36:57 
+
+36:57 against it some has an idea they have a
+36:59 
+
+36:59 breakthrough they publish that in a
+37:00 
+
+37:00 paper that paper gets picked up and
+37:02 
+
+37:02 cited by others other that generates
+37:04 
+
+37:04 awareness and attention other
+37:04 
+
+37:04 researchers say o interesting okay
+37:06 
+
+37:06 something might be possible now on this
+37:08 
+
+37:08 like really hard Benchmark and and so
+37:10 
+
+37:10 you get the Snowball Effect right of
+37:12 
+
+37:12 like attention and because Arc has sort
+37:14 
+
+37:14 of endured with very low rates of
+37:16 
+
+37:16 progress in fact decelerating progress
+37:19 
+
+37:19 over the last you know four years um I
+37:21 
+
+37:21 think anyone kind of in a lab looking at
+37:24 
+
+37:24 that would just say well maybe the
+37:25 
+
+37:25 time's not right for it yet maybe we
+37:26 
+
+37:26 don't have the idea set in the world
+37:27 
+
+37:27 Maybe we don't have the scale we need
+37:29 
+
+37:29 yet in order to sort of beat this thing
+37:31 
+
+37:31 and it looks like a toy and it doesn't
+37:33 
+
+37:33 like you know I don't fully understand
+37:35 
+
+37:35 why I don't get the necessary import how
+37:37 
+
+37:37 it's qualitatively different haven't
+37:38 
+
+37:38 just spent that much time we got a
+37:39 
+
+37:39 million other benchmarks I could use and
+37:41 
+
+37:41 um you know I I think that's some of
+37:43 
+
+37:43 somewhat of the dynamic that has existed
+37:45 
+
+37:45 in the past and and is one of the again
+37:47 
+
+37:47 reasons why we launch dark prize right I
+37:49 
+
+37:49 think there there are some there's lots
+37:51 
+
+37:51 of like Market um tools you can use to
+37:53 
+
+37:53 like shape markets and shape Innovation
+37:55 
+
+37:55 and I think prizes do have a narrow uh
+37:58 
+
+37:58 there's a narrow spot where prizes can
+37:60 
+
+37:60 be like outrageously effective and it's
+38:02 
+
+38:02 where like the idea is small and it's
+38:04 
+
+38:04 and it's like idea rate limited one
+38:06 
+
+38:06 person or a small team can make that
+38:07 
+
+38:07 breakthrough and it's very quickly and
+38:10 
+
+38:10 easily inspectable reproducible and like
+38:12 
+
+38:12 build and you can build on top of it
+38:14 
+
+38:14 rapidly and uh so all those sort of
+38:16 
+
+38:16 boxes got checked and yeah one of the
+38:19 
+
+38:19 reasons why I uh decided to go price and
+38:22 
+
+38:22 well and you've mentioned curiosity
+38:24 
+
+38:24 around AI or AGI dating back to college
+38:27 
+
+38:27 that was sparked a few years ago in the
+38:29 
+
+38:29 context of zapier and has kind of been
+38:31 
+
+38:31 nurtured ever since um Beyond The
+38:34 
+
+38:34 Curiosity I'm curious why this is
+38:36 
+
+38:36 important meaning if you could paint the
+38:38 
+
+38:38 picture of what life looks like for the
+38:42 
+
+38:42 world post AGI yeah where we've defined
+38:45 
+
+38:45 it as the ability to efficiently acquire
+38:47 
+
+38:47 new skills um what do you think that
+38:51 
+
+38:51 version of the future looks like like
+38:52 
+
+38:52 why is this an important thing to to
+38:54 
+
+38:54 solve the thing that I I feel like I
+38:57 
+
+38:57 have a unique insight into at this point
+38:59 
+
+38:59 having spent a lot of time thinking
+39:01 
+
+39:01 about Arc and this AGI definition is I
+39:05 
+
+39:05 suspect the Advent of AGI is going to
+39:07 
+
+39:07 look very differently than most people
+39:10 
+
+39:10 expect especially of the group who are
+39:12 
+
+39:12 in the camp that like AGI is undefinable
+39:14 
+
+39:14 because it's so mythical and you know
+39:17 
+
+39:17 scary or big or awesome that like we
+39:19 
+
+39:19 can't even hope to ever Define it it's
+39:21 
+
+39:21 just going to be this like magical
+39:22 
+
+39:22 special thing and you know it turns out
+39:25 
+
+39:25 like you know something that I I believe
+39:27 
+
+39:27 quite is the definitions are really
+39:29 
+
+39:29 important because definitions allow us
+39:32 
+
+39:32 to create benchmarks and benchmarks
+39:35 
+
+39:35 allow us as a society to measure
+39:37 
+
+39:37 progress and set goals towards things
+39:40 
+
+39:40 that we care about and want to happen
+39:43 
+
+39:43 and this idea of efficiently acquiring
+39:46 
+
+39:46 skill one of the you we've talked about
+39:47 
+
+39:47 a handful of times today but one of the
+39:48 
+
+39:48 direct near-term things that you get
+39:50 
+
+39:50 from that is you get systems that can do
+39:53 
+
+39:53 exacting accuracy generalization from a
+39:55 
+
+39:55 small set of core priors and apply
+39:57 
+
+39:57 towards novel solutions that is again
+39:59 
+
+39:59 the number one problem that raate limits
+40:02 
+
+40:02 AI adoption for more real world use
+40:04 
+
+40:04 cases today and so you that's the that's
+40:07 
+
+40:07 what you're going to see you're going to
+40:08 
+
+40:08 see B basically like the application
+40:09 
+
+40:09 layer of AI get like amazingly good at
+40:12 
+
+40:12 accuracy consistency low hallucination
+40:14 
+
+40:14 rates which is going to allow us to use
+40:16 
+
+40:16 it in in a much more unfettered way in a
+40:19 
+
+40:19 much more trusted way
+40:21 
+
+40:21 because we because of because of like
+40:24 
+
+40:24 the underlying way that in which it's
+40:26 
+
+40:26 built um so I I think that's like an the
+40:29 
+
+40:29 reason I think that's important I think
+40:31 
+
+40:31 that's the reason why I think that's
+40:32 
+
+40:32 important is you know I think there's a
+40:36 
+
+40:36 lot of we don't know what that set of
+40:38 
+
+40:38 capabilities is going to build on top of
+40:40 
+
+40:40 into the future right there's lots of
+40:42 
+
+40:42 unknowns I think of how AI AGI evolves
+40:45 
+
+40:45 beyond the actual Inception moment of a
+40:47 
+
+40:47 system that can efficiently acquire
+40:49 
+
+40:49 skill but I think it's going to be a
+40:52 
+
+40:52 much more gradual and incremental roll
+40:54 
+
+40:54 out where there's a lot of contact with
+40:56 
+
+40:56 reality as we build an Eng these systems
+40:59 
+
+40:59 which is going to give us as like a
+41:01 
+
+41:01 society a lot of time to update based on
+41:03 
+
+41:03 what those capabilities what what it can
+41:04 
+
+41:04 do what it can't do and make decisions
+41:07 
+
+41:07 at that point about how do we want to
+41:09 
+
+41:09 like deploy this technology where might
+41:11 
+
+41:11 we as a society say we don't want to
+41:12 
+
+41:12 deploy for this set of use cases um you
+41:15 
+
+41:15 know I think that's one of the reasons
+41:18 
+
+41:18 why um I've been so sort of such an
+41:20 
+
+41:20 proponent I think of of uh open source
+41:22 
+
+41:22 AGI progress with with Arc prize is like
+41:25 
+
+41:25 right now I think the um what I
+41:27 
+
+41:27 happening is there's sort of this
+41:29 
+
+41:29 mythical story of a very bad outcome
+41:31 
+
+41:31 once we get to like super intelligence
+41:32 
+
+41:32 right it's a very theoretical driven
+41:34 
+
+41:34 story it's not grounded in sort of
+41:35 
+
+41:35 empirical evidence it's it's basically
+41:37 
+
+41:37 based on sort of reasoning our way to
+41:39 
+
+41:39 like this outcome and I think the only
+41:41 
+
+41:41 way that we can really really
+41:42 
+
+41:42 effectively and truly set good policy is
+41:43 
+
+41:43 by you have to look at what the systems
+41:44 
+
+41:44 can and can't do and then regulate or
+41:46 
+
+41:46 decide make decisions at that point
+41:47 
+
+41:47 about what what it can or can't do I
+41:49 
+
+41:49 think anything else is sort of like you
+41:51 
+
+41:51 know you're you're cutting off potential
+41:52 
+
+41:52 really really good Futures way too early
+41:54 
+
+41:54 and and that's sort of what's happening
+41:55 
+
+41:55 I think with a lot of this early AI
+41:57 
+
+41:57 regulation where
+41:58 
+
+41:58 um you know I'll try to you know be be
+42:00 
+
+42:00 the paint the good side of this picture
+42:02 
+
+42:02 it's like hey I care you know maybe the
+42:03 
+
+42:03 risk of this bad outcome is so high in
+42:05 
+
+42:05 the future that we should like pause
+42:06 
+
+42:06 here um I think the the risk of that is
+42:09 
+
+42:09 you you've like trimmed off every
+42:10 
+
+42:10 possible possible good path of the
+42:12 
+
+42:12 future way too early and the reason this
+42:14 
+
+42:14 way toly is because we still need new
+42:16 
+
+42:16 ideas um we we we need new ideas from
+42:19 
+
+42:19 researchers we need new ideas from
+42:20 
+
+42:20 students we need new ideas from young
+42:22 
+
+42:22 people we need new ideas from from Labs
+42:24 
+
+42:24 um otherwise we're actually there's like
+42:26 
+
+42:26 like a chance that we've like never
+42:27 
+
+42:27 actually the like high degree of useful
+42:29 
+
+42:29 AGI that we that we actually want um and
+42:33 
+
+42:33 so that's kind of my Nuance take I think
+42:34 
+
+42:34 on like probably what the like Advent of
+42:37 
+
+42:37 AGI looks like I think it's much less
+42:38 
+
+42:38 likely to be like a moment in time and
+42:40 
+
+42:40 much more likely to be a stair step of
+42:43 
+
+42:43 technology that we build on um on top of
+42:45 
+
+42:45 past technology and that creates a lot
+42:47 
+
+42:47 of moments to sort of update beliefs
+42:49 
+
+42:49 based on what it can and can't
+42:51 
+
+42:51 do do you have any predictions on when
+42:53 
+
+42:53 we'll cross 85% on Arc
+42:56 
+
+42:56 price you know before the competition
+42:58 
+
+42:58 started my uh there was a the first data
+43:02 
+
+43:02 scientist we hired at AB here um gave me
+43:04 
+
+43:04 this idea a long time ago I stuck with
+43:05 
+
+43:05 me he he said um the longer it goes the
+43:08 
+
+43:08 longer it
+43:09 
+
+43:09 goes and so it's this idea that like the
+43:12 
+
+43:12 longer something takes the more you
+43:13 
+
+43:13 should update your prior about it's
+43:14 
+
+43:14 going to take longer to be so coming
+43:16 
+
+43:16 into this year my expectation was like
+43:17 
+
+43:17 hey at least three or four years
+43:19 
+
+43:19 probably before we get to the grand
+43:20 
+
+43:20 prize Mark based on sort of like past um
+43:23 
+
+43:23 based on the past track record uh having
+43:25 
+
+43:25 seen what we've seen over the last like
+43:27 
+
+43:27 two or three weeks weeks though uh I
+43:29 
+
+43:29 think it is quite likely we get to 50%
+43:30 
+
+43:30 during this competition period um I
+43:33 
+
+43:33 would be very surprised and I I I'd be
+43:36 
+
+43:36 surprised in a good way if we actually
+43:37 
+
+43:37 get to the 85% grand prize in this
+43:39 
+
+43:39 competition period um but I think it is
+43:42 
+
+43:42 uh not unlikely that we crested the 50%
+43:46 
+
+43:46 Mark before um the uh the end of or
+43:48 
+
+43:48 middle of November which is when the
+43:50 
+
+43:50 contest period ends for for 2024 and is
+43:52 
+
+43:52 there a good why now because people have
+43:53 
+
+43:53 been trying at this for five years now
+43:55 
+
+43:55 and and you know you're you're
+43:56 
+
+43:56 galvanizing interest around it and now
+43:58 
+
+43:58 you know a lot more researchers around
+43:60 
+
+43:60 the world are interested in Ai and
+44:01 
+
+44:01 solving hard problems um but is there a
+44:03 
+
+44:03 good why now in terms of enabling
+44:05 
+
+44:05 techniques Technologies Etc that's
+44:06 
+
+44:06 different now than than five years ago
+44:08 
+
+44:08 when when fris first kind of defined The
+44:10 
+
+44:10 Benchmark if it is true that
+44:15 
+
+44:15 um deep learning is an important part of
+44:17 
+
+44:17 the solution right uh a deep learning
+44:20 
+
+44:20 guided program synthesis engine or a DSL
+44:23 
+
+44:23 that is generated on the fly through
+44:25 
+
+44:25 deep learning technique if that's it's
+44:27 
+
+44:27 true the world has a lot of experience
+44:29 
+
+44:29 now on building and engineering and
+44:31 
+
+44:31 scaling such systems over the last three
+44:33 
+
+44:33 or four years and there's a lot more
+44:34 
+
+44:34 compute online which brings the cost
+44:37 
+
+44:37 down into a territory where some of
+44:38 
+
+44:38 these things may have just been out of
+44:40 
+
+44:40 practical cost
+44:41 
+
+44:41 before um for example actually Ryan
+44:44 
+
+44:44 Green blats Solution right now is uh
+44:47 
+
+44:47 maxing out our cost limits we're going
+44:48 
+
+44:48 to have against the public leaderboard
+44:49 
+
+44:49 cost $10,000 to generate the 8,000
+44:53 
+
+44:53 reasoning sample traces from GPD 40 that
+44:56 
+
+44:56 he then deterministically checks
+44:58 
+
+44:58 and so that would have been a technique
+44:60 
+
+44:60 that would not have been possible you
+45:01 
+
+45:01 know three or four years ago in in
+45:03 
+
+45:03 anywhere so I think if it is true that
+45:05 
+
+45:05 there's amount of like a minimum amount
+45:06 
+
+45:06 of scale that's necessary to be Arc I
+45:07 
+
+45:07 think hey we've gotten more of that in
+45:09 
+
+45:09 the last three or four years than we had
+45:10 
+
+45:10 when the first comp just ran and then I
+45:12 
+
+45:12 think the other way now is just um can't
+45:15 
+
+45:15 largely due to awareness uh if if it
+45:17 
+
+45:17 truly is
+45:20 
+
+45:20 um actually let me answer the opposite
+45:23 
+
+45:23 like I think the risk that it is uh the
+45:25 
+
+45:25 reason we launch dark prize is that it
+45:26 
+
+45:26 is actually not
+45:28 
+
+45:28 now right it's like actually it's not
+45:31 
+
+45:31 going to happen is the problem um it's
+45:33 
+
+45:33 not a why now it's not like oh the ideas
+45:34 
+
+45:34 are in the world we just need to like
+45:35 
+
+45:35 get people to work on it the the risk is
+45:37 
+
+45:37 that it is it's actually not why now um
+45:40 
+
+45:40 and not why now is I think a much more
+45:41 
+
+45:41 interesting story right around this like
+45:42 
+
+45:42 LM driven you know uh focused attention
+45:45 
+
+45:45 on sort of LM Solutions only the closed
+45:48 
+
+45:48 research due to the competitive Dynamics
+45:50 
+
+45:50 all of these things have like shifted
+45:51 
+
+45:51 and shaped attention away from the new
+45:53 
+
+45:53 ideas and towards scale towards LMS
+45:56 
+
+45:56 towards like you know um face yeah
+45:59 
+
+45:59 application lay Ai and I think that we
+46:03 
+
+46:03 think we need some shaping reshaping
+46:05 
+
+46:05 back towards the new idea set so
+46:07 
+
+46:07 hopefully uh the why now is because Arc
+46:09 
+
+46:09 has now lots of attention to be seen do
+46:12 
+
+46:12 you think llms will be part of the
+46:15 
+
+46:15 solution I'm curious what you think of
+46:17 
+
+46:17 it seems like in in the big research
+46:19 
+
+46:19 Labs right now a lot of the frontier
+46:21 
+
+46:21 researches around let's merge kind of
+46:23 
+
+46:23 llms with the insights that you get from
+46:25 
+
+46:25 the inference Temp comput and the qar
+46:27 
+
+46:27 alphao stuff I'm curious what you think
+46:29 
+
+46:29 of that kind of direction of research I
+46:32 
+
+46:32 there's some like pretty interesting
+46:34 
+
+46:34 research I've come across with like
+46:35 
+
+46:35 Transformers that the Transformers are
+46:38 
+
+46:38 capable as an architecture of
+46:41 
+
+46:41 representing um very deep deductive
+46:44 
+
+46:44 reasoning change with 100% accuracy I
+46:46 
+
+46:46 think this is interesting the challenge
+46:47 
+
+46:47 with them is actually we just don't have
+46:48 
+
+46:48 the learning algorithm back propagation
+46:49 
+
+46:49 is an ineffective learning algorithm in
+46:51 
+
+46:51 order to teach a transer architecture a
+46:54 
+
+46:54 set of network weights that can do
+46:55 
+
+46:55 deductive reasoning with 100% accuracy
+46:58 
+
+46:58 and so I think it's possible that the
+46:59 
+
+46:59 systems that we kind of or at least the
+47:01 
+
+47:01 Core Concepts that underly language
+47:03 
+
+47:03 models have sufficient capability in
+47:06 
+
+47:06 order to do this type of reasoning and
+47:09 
+
+47:09 we have not yet discovered the like
+47:11 
+
+47:11 algorithm that can train the model in
+47:13 
+
+47:13 the right way we haven't quite
+47:14 
+
+47:14 discovered the right outer loop around
+47:16 
+
+47:16 the Transformer that is going to do the
+47:18 
+
+47:18 program synthesis engine or the DSL
+47:20 
+
+47:20 generator um I I I feel more confident
+47:23 
+
+47:23 in saying that like deep learning is
+47:25 
+
+47:25 almost certainly going to be a part of
+47:26 
+
+47:26 the grand PR in some way I bet it's it
+47:28 
+
+47:28 won't I'm pretty confident it wouldn't
+47:30 
+
+47:30 be just like a you know a pure
+47:32 
+
+47:32 deterministic program is going to be how
+47:33 
+
+47:33 we how it gets solved um I think
+47:36 
+
+47:36 Transformers are effectively the
+47:38 
+
+47:38 technology that has the
+47:40 
+
+47:40 most has the highest degree of awareness
+47:42 
+
+47:42 on Research like literature there's a
+47:44 
+
+47:44 lot of Hardware now that's going towards
+47:45 
+
+47:45 accelerating Transformer based models I
+47:47 
+
+47:47 think actually just uh earlier there was
+47:49 
+
+47:49 like an Asic that got announced recently
+47:51 
+
+47:51 that's trying to accelerate like the
+47:52 
+
+47:52 transform architecture so to the degree
+47:53 
+
+47:53 that actually like some degree of like
+47:55 
+
+47:55 scaler computer is necessary to be Arc I
+47:56 
+
+47:56 think those are like things that I would
+47:58 
+
+47:58 say I'm bullish on sort of the transer
+47:59 
+
+47:59 architecture though I would point out
+48:01 
+
+48:01 that the um search base of alternative
+48:03 
+
+48:03 architectur is quite Rich right we've
+48:05 
+
+48:05 had maybe like nine or 10 now mainline
+48:08 
+
+48:08 architectures from Transformers to lstm
+48:10 
+
+48:10 CS CNN RNN xlsm State space models um
+48:15 
+
+48:15 this would suggest that the search Bas
+48:16 
+
+48:16 of those architectures is quite Rich
+48:18 
+
+48:18 actually and they all have like slightly
+48:19 
+
+48:19 different varying properties um so uh
+48:23 
+
+48:23 like I think it's certainly possible
+48:25 
+
+48:25 that someone comes up with some
+48:26 
+
+48:26 Innovation there um
+48:27 
+
+48:27 I'm less confident or like bullish that
+48:30 
+
+48:30 llms in their exact form are going to be
+48:33 
+
+48:33 part of the 85% solution though I would
+48:35 
+
+48:35 think it probably like a subcomponent of
+48:37 
+
+48:37 the architecture instead of the entire
+48:38 
+
+48:38 application system
+48:40 
+
+48:40 itself when somebody does ultimately hit
+48:44 
+
+48:44 the
+48:45 
+
+48:45 85%
+48:46 
+
+48:46 threshold what do you hope they do with
+48:48 
+
+48:48 the solution like what would you like to
+48:50 
+
+48:50 see out of that
+48:52 
+
+48:52 person other than submit it to the
+48:54 
+
+48:54 leader
+48:55 
+
+48:55 word so I this one thing we didn't talk
+48:58 
+
+48:58 about a ton but um you know one of our
+48:60 
+
+48:60 prizes goals is to accelerate open
+49:01 
+
+49:01 progress towards AGI so we're going to
+49:04 
+
+49:04 be requiring that in order to claim the
+49:06 
+
+49:06 prize money you do have to publicly
+49:07 
+
+49:07 share and reprod publicly share
+49:09 
+
+49:09 reproducible code and put it into the
+49:11 
+
+49:11 public domain and this is this goes for
+49:13 
+
+49:13 both the public leader board and the
+49:14 
+
+49:14 official competition leader board as
+49:16 
+
+49:16 well um you know this is with the spirit
+49:19 
+
+49:19 of trying to re accelerate open progress
+49:23 
+
+49:23 again so that we have research in small
+49:25 
+
+49:25 ways out in public that other
+49:27 
+
+49:27 researchers can build on top of and
+49:29 
+
+49:29 hopefully stair sear we actually
+49:31 
+
+49:31 actually building Ai and not getting
+49:32 
+
+49:32 stuck in sort of the plateau that we're
+49:34 
+
+49:34 that we're in today um so I think that's
+49:36 
+
+49:36 probably my first B C I've actually seen
+49:38 
+
+49:38 a handful of people online that have
+49:39 
+
+49:39 said hey if you got a soltion in rcgi uh
+49:41 
+
+49:41 you know I'll give you this like you
+49:43 
+
+49:43 know million dollar offer my
+49:45 
+
+49:45 company yeah exactly which you know I on
+49:47 
+
+49:47 one hand I'm like okay that's like kind
+49:50 
+
+49:50 of interesting um but you know on the
+49:52 
+
+49:52 other hand I'm kind of like you know I
+49:54 
+
+49:54 think that's like great awareness and it
+49:55 
+
+49:55 shows actually like the importance of of
+49:58 
+
+49:58 solving this um I think more people are
+49:59 
+
+49:59 starting
+50:00 
+
+50:00 to become aware of the lack of progress
+50:03 
+
+50:03 lack of Frontier progress I think Arc is
+50:04 
+
+50:04 kind of becoming a lightning rod for um
+50:07 
+
+50:07 folks that want an actual measure
+50:09 
+
+50:09 towards this I think growing sentiment
+50:11 
+
+50:11 in the field
+50:12 
+
+50:12 today should we close out with some
+50:15 
+
+50:15 rapid fire questions yeah let's do it
+50:17 
+
+50:17 okay who do you admire most in AI I mean
+50:19 
+
+50:19 Fran is a bit of a cop answer I would
+50:22 
+
+50:22 have go found a dark prize if I didn't
+50:24 
+
+50:24 admire and respect his his work over the
+50:26 
+
+50:26 last four years I mean I think the two
+50:28 
+
+50:28 people that I have learned the most from
+50:30 
+
+50:30 like directly and have inspired my own
+50:32 
+
+50:32 belief and work um Brit Sutton and Chile
+50:35 
+
+50:35 both of them published papers in 2019
+50:37 
+
+50:37 right Rich Sutton published The Bitter
+50:38 
+
+50:38 lesson which I think is fairly well
+50:39 
+
+50:39 known now in the industry at this point
+50:41 
+
+50:41 um I think his idea that is quite right
+50:44 
+
+50:44 there with maybe the one Aster that um
+50:47 
+
+50:47 uh you know the uh the one aspect that
+50:49 
+
+50:49 has not yet had skill applied to it is
+50:51 
+
+50:51 architectur search itself um you know
+50:53 
+
+50:53 we've certainly have unbiased search and
+50:55 
+
+50:55 learning applied on the INF side in the
+50:57 
+
+50:57 training side but uh every architecture
+50:58 
+
+50:58 still has a very human handcrafted story
+51:01 
+
+51:01 and journey to it which uh is an
+51:02 
+
+51:02 important Insight I think about that and
+51:04 
+
+51:04 then un measure of intelligence from
+51:05 
+
+51:05 cholet in 2019 and I think both of these
+51:08 
+
+51:08 papers are or in like or I guess maybe
+51:11 
+
+51:11 um sence was more of a blog post but
+51:14 
+
+51:14 both of these pieces of writing I think
+51:15 
+
+51:15 are very important because history is
+51:17 
+
+51:17 proven them right as time has gone on um
+51:20 
+
+51:20 language models Transformer scale has
+51:21 
+
+51:21 sort of shown sat's ideas to be even
+51:23 
+
+51:23 more true than they were in 2019 and I
+51:25 
+
+51:25 think the endurance of Arc has shown
+51:27 
+
+51:27 francois's definition of AI to be um
+51:30 
+
+51:30 more and more true as time has gone
+51:32 
+
+51:32 on what is your most contrarian point of
+51:35 
+
+51:35 view in
+51:37 
+
+51:37 AI I feel like everything we've talking
+51:39 
+
+51:39 about today most people don't agree with
+51:40 
+
+51:40 me hzo uh all right we'll count it I
+51:44 
+
+51:44 like
+51:45 
+
+51:45 um scale is not all you need well new
+51:49 
+
+51:49 ideas are
+51:51 
+
+51:51 needed what's your favorite AI app other
+51:53 
+
+51:53 than
+51:55 
+
+51:55 zappier uh let me look and see what do I
+51:57 
+
+51:57 have I have a handful I think I'm not
+51:59 
+
+51:59 going to like surprise you with anything
+52:01 
+
+52:01 so I've got chat TBT perplexity and
+52:04 
+
+52:04 Claude and I'm a pain user of all three
+52:06 
+
+52:06 of those Services you know um one
+52:08 
+
+52:08 interesting thing actually I'll add I
+52:10 
+
+52:10 have gotten way more value out of
+52:13 
+
+52:13 language model based tooling over the
+52:15 
+
+52:15 last like call it six months than um I
+52:19 
+
+52:19 ever did in the first aspect when I was
+52:21 
+
+52:21 starting to start work on it at zapier
+52:23 
+
+52:23 and it's because one of the things are
+52:24 
+
+52:24 really really good at the thing they're
+52:26 
+
+52:26 perhaps like best at is
+52:28 
+
+52:28 summarizing tons of unstructured text
+52:31 
+
+52:31 and helping be like an educational
+52:33 
+
+52:33 tutorial for you so it's significantly
+52:36 
+
+52:36 like ramped up my learning rate on
+52:38 
+
+52:38 actually building with AI build like
+52:39 
+
+52:39 learning like these fundamental
+52:41 
+
+52:41 different architectures um you know
+52:43 
+
+52:43 starting to actually do like model
+52:44 
+
+52:44 training something app really hasn't
+52:46 
+
+52:46 done but I've started to do myself over
+52:47 
+
+52:47 the last six months to get you know a
+52:49 
+
+52:49 sense of of of that type of work and
+52:52 
+
+52:52 yeah language models and AI tooling has
+52:53 
+
+52:53 definitely accelerated my learning
+52:55 
+
+52:55 process awesome all right last question
+52:58 
+
+52:58 let's do something optimistic something
+52:60 
+
+52:60 that we can all dream about what change
+53:03 
+
+53:03 in the world are you most excited to see
+53:05 
+
+53:05 over the next five or 10 years as a
+53:07 
+
+53:07 result of
+53:09 
+
+53:09 AI I think
+53:12 
+
+53:12 the I've always wanted to like live in
+53:14 
+
+53:14 the future I think that's maybe a
+53:16 
+
+53:16 something that has always driven me
+53:17 
+
+53:17 towards like working on like Frontier
+53:18 
+
+53:18 Tech I've always you know bought the
+53:20 
+
+53:20 latest gadget I always tried the latest
+53:22 
+
+53:22 app I think it's led me to work on
+53:23 
+
+53:23 zapier and and Ai and um
+53:28 
+
+53:28 it's one of the reasons I'm working AI
+53:29 
+
+53:29 right now is because I think it's like
+53:30 
+
+53:30 the biggest thing you can I can
+53:31 
+
+53:31 potentially have an influence on trying
+53:33 
+
+53:33 to pull forward pull forward that
+53:35 
+
+53:35 future you know I personally
+53:39 
+
+53:39 get I I think like one of the things
+53:41 
+
+53:41 that feels very limited from AI right
+53:43 
+
+53:43 now is that with the narrow form of AI
+53:46 
+
+53:46 that we have if we never get to AI what
+53:49 
+
+53:49 that will mean is that we will always be
+53:52 
+
+53:52 rate limited on developing things by the
+53:55 
+
+53:55 human that's in the loop
+53:58 
+
+53:58 and that means we'll never have ai
+54:01 
+
+54:01 systems that can invent and discover
+54:05 
+
+54:05 and sort of innovate alongside humans
+54:09 
+
+54:09 and really help pull forward and push
+54:11 
+
+54:11 forward the frontier in I think a lot of
+54:15 
+
+54:15 really interesting ways like I you know
+54:16 
+
+54:16 understand more about the universe and
+54:17 
+
+54:17 vent discover new pharmaceutical things
+54:20 
+
+54:20 um you know and discover new physics um
+54:24 
+
+54:24 discover how to build AI you know I
+54:27 
+
+54:27 think we're always going to be rate
+54:29 
+
+54:29 limited by the human today and I think
+54:31 
+
+54:31 if you just sort of care about living in
+54:33 
+
+54:33 the future and you want to pull forward
+54:34 
+
+54:34 the good aspects of the future some form
+54:36 
+
+54:36 of AGI is necessary to do
+54:38 
+
+54:38 that awesome thank you Mike thank you
+54:41 
+
+54:41 both for having me
+54:43 
+
+54:43 [Music]
+54:49 
+
+54:49 [Music]
+54:59 
+
+54:59 [Music]

@@ -1,0 +1,1200 @@
+00:02 I I just said look like I don't know if
+00:04 this company's going to be around in 3
+00:06 to 6 months but what I can tell you is
+00:07 that it's going to be the most memorable
+00:09 3 to 6 months of your life in your
+00:12 career working here this is the largest
+00:14 fastest growing video service out there
+00:15 and whatever it's going to do it's going
+00:17 to be a story not just for your story
+00:19 book but it's going to be a story of the
+00:21 internet and you know that could be a
+00:22 bad story a good story but it will be a
+00:24 story that people will know
+00:28 about welcome to Crucible moments a
+00:31 podcast about the critical Crossroads
+00:32 and inflection points that shaped some
+00:34 of the world's most remarkable companies
+00:37 I'm your host and the managing partner
+00:39 of square capital r bua today's episode
+00:43 is about YouTube one of the most
+00:45 important technology platforms of our
+00:48 time over 700,000 hours of video footage
+00:51 are uploaded to YouTube Every Day by
+00:55 empowering everyone to broadcast
+00:57 themselves and the world around them it
+00:59 has transformed
+01:01 Society but back in 2005 when YouTube
+01:04 was founded by Steve Chen Chad Hurley
+01:06 and jav Kim Broadband was just emerging
+01:10 in the United States it wasn't clear
+01:12 that the internet could even support
+01:13 video say nothing of the massive scale
+01:15 we take for granted today YouTube was a
+01:19 Longshot idea and initially almost no
+01:22 one noticed it
+01:31 this story is particularly important to
+01:33 me I met the co-founders when we all
+01:35 worked together at PayPal after joining
+01:38 sequa YouTube was one of the first
+01:40 startups I partnered with and it changed
+01:42 the trajectory of my career when sequa
+01:45 led the initial funding for YouTube the
+01:47 company comprised just the three
+01:49 founders and they were working out of
+01:51 Chad's Garage in midow park a short
+01:53 drive from our office it was an exciting
+01:56 time for all of us and for the future of
+01:58 the internet as a whole today's episode
+02:01 is about YouTube's early days in just
+02:04 over a year leading up to its
+02:06 acquisition by Google the company
+02:08 confronted Crucible moments that would
+02:10 reshape the technology landscape and
+02:12 popular culture itself all while dodging
+02:15 lawsuits that threaten to kill the
+02:17 business
+02:18 prematurely this is the startup story of
+02:22 YouTube my name is Steve Chen and I was
+02:25 the co-founder and CTO of YouTube I came
+02:29 to Silicon Valley in 1999 to join PayPal
+02:33 and I think I was one of its first 10
+02:36 employees very early on I really was
+02:39 driven towards coming into Silicon
+02:41 Valley where technology is kind of
+02:44 combined with just ideas and and and
+02:46 being able to be created into a product
+02:48 that people use at PayPal Steve met
+02:51 product designer Chad Hurley and
+02:53 software engineer Javid Kim after
+02:56 PayPal's meteoric rise IPO and
+02:58 acquisition by eBay the they began
+03:00 thinking about their next move it was a
+03:04 difficult decision to make at that point
+03:06 about what to what to do next I knew
+03:08 that the opportunities to either join
+03:11 another startup just like PayPal or
+03:14 Facebook or working for a much larger
+03:17 company much more established and maybe
+03:19 starting a career um or even just
+03:21 staying on at PayPal at the time those
+03:24 were all options I was still in my mids
+03:27 where I said look like I'm going to give
+03:29 myself that period of 2 years or it was
+03:33 about $100,000 of money that ID saved up
+03:35 from the PayPal days and I was like if I
+03:38 run out then I'm going to go back and
+03:40 and pursue this career path but I would
+03:43 really be reluctant to do this without
+03:45 at least trying sometime to make a few
+03:48 swings at the plate and that was
+03:50 ultimately the reason for me getting
+03:53 fully behind a startup of my own
+03:55 creation Steve Chad and Javid began
+03:58 discussing ideas for a company they
+04:00 could start together I had a lot of
+04:03 experience with Chad working together on
+04:06 many products and features over and over
+04:07 over a period of time we had already
+04:09 been working together for over five
+04:12 years Chad was the consumer designer and
+04:15 he was actually the person who designed
+04:17 the original PayPal logo and was
+04:19 responsible for a lot of the ease of use
+04:21 and the delightful design elements in
+04:23 the PayPal website jav had also dropped
+04:26 out of school to join the company and so
+04:28 I remember him working incredibly hard
+04:30 at PayPal while simultaneously doing
+04:32 night studies to be able to complete his
+04:35 degree we had been meeting up for some
+04:37 time discussing various ideas that we
+04:39 wanted to work on this is Javid Kim one
+04:42 of YouTube's co-founders there were a
+04:44 few things happening that were you know
+04:47 really um significant for the formation
+04:49 of this idea so the first thing that
+04:51 comes to mind is the Indian Ocean
+04:53 tsunami that happened on December 26
+04:56 2004 the Indian Ocean tsunami event was
+04:58 one of the first times I remember
+05:00 where the content recorded by everyday
+05:03 people became really significant so
+05:05 there were no professional like
+05:07 newscasters on site I was following this
+05:09 event and it was difficult to find the
+05:11 videos right so there would be some of
+05:13 these videos were spreading on web
+05:15 servers so you had to download the file
+05:17 first it would be in some unknown codec
+05:20 and you might not have the codec
+05:22 installed so then you wouldn't be able
+05:23 to play it remember this was 2005 most
+05:27 homes in the United States were just
+05:29 getting Broadband into internet for the
+05:30 first time the iPhone hadn't yet
+05:33 launched watching and sharing videos
+05:34 online was a slow and Byzantine process
+05:38 many times videos that were taken in a
+05:40 certain device would not work if you
+05:41 were playing it on a different device um
+05:44 and this is still before this is years
+05:45 before the iPhone right and so you still
+05:47 there was just the the work there and
+05:48 you usually had to download additional
+05:50 software you couldn't just watch
+05:51 anything inside the browser and so I
+05:53 think like uh the real reason about
+05:56 YouTube was still trying to think about
+05:59 what is next we did think that video was
+06:00 going to be the next thing um that it
+06:02 was just naturally LED there in terms of
+06:05 if photo sharing was really catching on
+06:07 people were used to sharing uploading
+06:08 photos with one another but videos was
+06:10 still new and I think that in many ways
+06:12 it was still it was still a challenge
+06:14 whether or not it was even feasible to
+06:17 use internet as the backbone we still
+06:19 had to figure out a lot of these sort of
+06:22 uh technical challenges right on just
+06:24 all the different codecs out there how
+06:26 do you deal with this how do you do uh
+06:28 embedding of a video inside a browser
+06:30 without forcing people to have to
+06:31 download another piece of app to do it
+06:34 so I remember seeing an ad on some
+06:36 website where they were using flash to
+06:38 serve up the video and I was really
+06:40 Blown Away by that cuz I had never seen
+06:42 that before and I didn't even know that
+06:44 flash could play videos and as soon as I
+06:47 saw that I thought wow this could really
+06:48 solve the whole problem with these video
+06:50 codecs with all these different video
+06:52 formats and that was sort of the spark
+06:54 you know what if we had a site where
+06:56 anyone could upload videos and you could
+06:58 serve the videos with flash
+07:01 meanwhile along with the expansion of
+07:03 broadband digital cameras with Native
+07:06 video recording capabilities were
+07:07 becoming widely accessible and Cloud
+07:09 infrastructure was just beginning to
+07:11 take shape this gave YouTube the perfect
+07:15 why now but the Founder's initial idea
+07:17 was to Target a very specific vertical
+07:21 we weren't as bold to say we were going
+07:23 to become the video platform the for the
+07:26 entire internet uh there was a service
+07:28 called hot.com and it was just people
+07:30 uploading photos of themselves and I
+07:34 think uh if you were to visit the site
+07:36 as a visitor you had two choices when
+07:39 you saw a photo you had the ability to
+07:42 vote up on hot and vote down or not and
+07:45 the next photo would come and hot or not
+07:47 we just thought oh well why don't we
+07:48 just do a video version of this service
+07:50 this site and so we came up we I think
+07:53 it was on Valentine's Day in 2005 when
+07:56 we actually registered domain for
+07:58 youtube.com
+07:60 the first version was a dating site and
+08:02 so the interface was completely
+08:04 different from what you see today you
+08:06 cannot really uh choose the video that
+08:09 you're being shown right so you see a
+08:11 random video you have to rate the video
+08:13 1 to 10 and then you see the next video
+08:16 but uh after we did all this and
+08:19 launched a service in around May of 2005
+08:22 we released it and yeah a week went by
+08:25 and zero videos were uploaded so the
+08:27 dating site lasted for one week
+08:30 before we made the change to YouTube as
+08:32 it stands today so flicker was probably
+08:35 the biggest photo sharing site at the
+08:37 time we decided hey you know what
+08:39 instead of being like the hotter knut
+08:41 for video we're just going to be let's
+08:44 say flicker for video I think like the
+08:46 good decision there was okay like
+08:48 instead of giving up why don't we give
+08:50 this another try instead of it being
+08:52 focused on dating videos let's just open
+08:55 it up completely to General any video
+08:57 that you want to upload and you want to
+08:59 share but even when you make it more
+09:02 generalized to say any types of videos
+09:04 It's not like as soon as we made that
+09:05 change we saw a huge acceleration of
+09:10 growth the concept of going viral is so
+09:13 synonymous with YouTube that it's hard
+09:15 to imagine now but even after an early
+09:18 pivot from a dating site initially it
+09:21 was crickets no one
+09:24 noticed it was not an overnight success
+09:27 I was working on the site and I would
+09:29 tail the access log meaning it would
+09:32 display like the most recent hit on the
+09:34 web server and I remember tailing this
+09:37 log and there would be absolutely no
+09:41 records for 24 hours so there were many
+09:43 days where not a single person on the
+09:45 internet not even us not not even the
+09:48 three of us would go hit the site so it
+09:51 felt a little bit demoralizing at the
+09:53 time like okay how is this possible like
+09:55 we have all these videos I think it's a
+09:57 cool idea but basically not one person
+10:00 on the planet has looked at this in the
+10:02 last day in business there's a principle
+10:05 known as the network effect the more
+10:07 participants are connected to a network
+10:09 the more valuable it becomes early on
+10:12 the founders faced a crucible moment how
+10:15 could they get anyone to start using
+10:16 YouTube in the first place to get the
+10:18 network effect started one of the
+10:21 analogies I often gave people at this
+10:22 time was with a consumer product it all
+10:25 needs to hang together it's a little bit
+10:27 like listening to a piece of music if 95
+10:29 % of the notes are correct it sounds
+10:31 awful you know a painting that just has
+10:33 a few brush Strokes in the wrong places
+10:35 and suddenly it's not a masterpiece
+10:37 anymore the atmosphere that we try to
+10:40 create inside YouTube is that if you
+10:41 have an idea present it and and we'll
+10:43 try it out and let's see what sticks on
+10:45 the wall we would just launch all sorts
+10:47 of things like I mean uh I remember like
+10:49 working all night on a feature where it
+10:51 doesn't exist anymore but it's like
+10:53 video responses where you end up having
+10:55 like you like this video so much and you
+10:56 wanted to create a video in response to
+10:58 the video you almost have almost a a
+11:01 conversation that that happens where
+11:03 each person that speaks is in the form
+11:04 of another pre-recorded video that
+11:07 doesn't exist today but it's an example
+11:09 of like look that was just um one of the
+11:12 engineers that had this idea that
+11:14 thought and we said yeah let's we don't
+11:16 know let's let's try it let's give it a
+11:19 shot over time the company iterated with
+11:22 lots of other ideas I mean one simple
+11:23 one is the the video would play
+11:24 automatically as soon as the page loaded
+11:26 you didn't have to move your cursor and
+11:28 go click a play button it it seems like
+11:30 such a small feature but it's all these
+11:32 little things that the company did that
+11:34 all together summed up into a delightful
+11:36 experience for
+11:37 users eventually the lever that truly
+11:40 unlocked growth was a feature that they
+11:43 built at the very
+11:45 beginning the direct embedding of the
+11:48 YouTube video was something that we had
+11:51 built in from day one this is a new
+11:53 brand that you just created a new domain
+11:55 that you just registered in order for
+11:57 you to get this brand out there you
+11:59 really need did the platforms and
+12:01 foundations that people were already
+12:03 familiar with to be able to want to
+12:06 adopt a new service and so we made it so
+12:09 you could put a video in an embedded
+12:12 video on Craigslist you could embed a
+12:14 video on eBay you could embed a video on
+12:17 any platform that allowed you to insert
+12:19 HTML code at the time but we still
+12:21 needed a reason for people to want to
+12:24 adopt this new platform and in 2005 for
+12:27 YouTube that ended up being Myspace a
+12:30 lot of people were sending photos but
+12:32 they didn't have a way to be able to
+12:34 share videos what you would do on
+12:36 MySpace you would encounter one friend
+12:39 that would be showing a video inside
+12:41 their profile it would have a YouTube
+12:44 logo and maybe it's the first time
+12:46 you've seen it but then maybe 5 minutes
+12:47 later you see another friend with
+12:49 another video with the YouTube logo but
+12:51 by you know 2 3 four five days of this
+12:53 and you start seeing more videos
+12:55 ultimately you do click through and you
+12:57 do go to that YouTube link and then
+12:59 ultimately you find other videos that
+13:01 you're going to watch on YouTube and you
+13:03 share it so that virality that YouTube
+13:06 was able to get was really built off of
+13:08 Myspace but it was done in an organic
+13:10 manner in which we spent zero dollar on
+13:14 actual marketing and advertising uh and
+13:16 it was all just built on the consumers
+13:19 the users themselves were ening like
+13:22 with the uh the services that YouTube
+13:24 provided for their own needs and they
+13:26 helped us Market the
+13:28 product the embed feature gave YouTube
+13:30 the initial turn of the flywheel that it
+13:32 needed in order for the network effect
+13:34 to take hold over the following months
+13:37 an active ecosystem started growing in
+13:40 the early days there wasn't you know
+13:41 like one day where it suddenly started
+13:43 taking off but what would happen is that
+13:45 suddenly like every week we would get
+13:47 like some clip that went viral I think
+13:49 one of the first was it was this uh
+13:52 person like throwing quarters um into a
+13:55 jar on the other side of the room and
+13:57 that was really impressive so it it was
+13:59 you know starting to happen that every
+14:01 week there would be some crazy new
+14:03 really interesting clip but just once a
+14:05 week right and then it start to happen
+14:08 more often so then it was like every 3
+14:10 Days Every 2 days and of course
+14:12 eventually every day there would be some
+14:14 amazing new content so that's kind of
+14:17 how it took off in late 2005 less than a
+14:20 year after launch and having found
+14:22 initial traction the founders went out
+14:24 to raise financing in part to cover the
+14:26 quickly accelerating costs of hosting
+14:29 and Serv
+14:30 videos like most investment decisions we
+14:33 make at sare Capital the decision to
+14:35 Back YouTube was controversial there
+14:38 were few precedents at this point for
+14:42 Consumer internet companies following
+14:44 the Doom crash being able to scale
+14:46 successfully and build thriving
+14:48 businesses I thought YouTube could
+14:50 become the destination for user
+14:52 generated video on the internet that
+14:54 they had a spectacular team and that the
+14:57 product was delightful and easy to use
+14:59 soon after we LED YouTube's first
+15:01 financing and the small team moved into
+15:04 the sequa office while they looked for
+15:06 their own space it became clear that
+15:08 YouTube was scaling at an unprecedented
+15:11 rate it also found its way into the
+15:13 cultural Zeitgeist it became common to
+15:15 see people huddled around a laptop
+15:17 watching the latest viral video in 2005
+15:21 it was this dawning era period of the
+15:23 internet there were two big videos that
+15:25 received a million video views one of
+15:27 them was a
+15:30 Saturday Night Live video clip and then
+15:32 the another one was it was a Nike video
+15:35 of like ronino juggling the soccer ball
+15:37 off of a gopost and I think it was
+15:39 uploaded by a user by the name of Joe B
+15:43 and so it seemed like it was like a user
+15:44 but it was actually Nike itself and we
+15:46 ended up flying up to Oregon to meet up
+15:47 with the Nike team and the marketing
+15:49 team and praise to them to to even at
+15:51 that time in 2005 to experiment around
+15:54 with different ways of marketing to
+15:55 consumers in a Dawning age of Internet
+15:58 videos but those two videos like okay
+16:01 there's something here that's about
+16:03 virality of videos viral videos became
+16:07 part of the culture and YouTube views
+16:09 continued to climb in a surprise move
+16:12 Javed left the company to pursue a
+16:14 graduate degree meanwhile Steve and Chad
+16:17 set about recruiting a team to help them
+16:20 build out the platform I was upfront
+16:22 with them to say I don't know if this
+16:24 company's going to be around in 3 to 6
+16:25 months but what I can tell you is that
+16:27 it's going to be the most memorable 3 to
+16:29 six months of your life in your career
+16:32 working here this is the largest fastest
+16:34 growing video service out there and
+16:35 whatever it's going to do it's going to
+16:37 be a story not just for your story book
+16:39 but it's going to be a story of the
+16:40 internet and you know that couldn't be a
+16:42 bad story a good story but it will be a
+16:44 story that people know YouTube's growth
+16:47 was exploding barely a year old the
+16:50 challenge was no longer how to get
+16:51 anyone to notice the platform but how to
+16:54 keep the site from crashing under the
+16:55 strain of new
+16:57 users those early growth days of YouTube
+17:01 they're exciting and they're just filled
+17:03 with stories there are still many of
+17:05 them the large majority of them are
+17:06 Untold much of the growth of the company
+17:11 wasn't so much on the product and
+17:12 Engineering side as you would have in
+17:14 many startups where you're still
+17:16 building more features it was still uh
+17:18 quite a technical achievement to
+17:20 continue to just scale out the service
+17:22 from the back end from the system side
+17:24 from the infrastructure side we were
+17:26 using up to something like 40% of the
+17:28 internet's bandwidth at that
+17:30 time and this is one of the keys that
+17:32 people didn't quite fathom at the time
+17:33 was the team had done an incredible job
+17:36 from an engineering point of view to
+17:38 leverage the beginnings of cloud
+17:40 infrastructure different early stage
+17:43 Cloud vendors AWS didn't yet exist we
+17:46 were able to leverage thirdparty vendors
+17:48 for cloud infrastructure and the company
+17:50 was using open source software to really
+17:52 drive down the cost you had companies
+17:56 back then in 2005 that were trying to
+17:58 kind of out market and and out with
+18:01 their competitors in the hosting Space
+18:04 by saying that we're going to offer you
+18:06 2,000 gigabytes of data transfer for
+18:09 free knowing at least they thought
+18:11 knowing that nobody possibly could use
+18:14 2,000 gigabytes of data transfer on a
+18:16 single machine there just wasn't enough
+18:18 until we came along we were on this like
+18:22 M Pop shop called like server Beach and
+18:25 they they're prettyy small operation but
+18:27 we got some kind of deal where we got
+18:28 unlimited with and we're like oh my God
+18:31 this is awesome let's take advantage
+18:32 this as much as possible my name is upan
+18:35 my title at YouTube was senior software
+18:38 engineer you have the team behind server
+18:40 Beach that were they were freaking out
+18:43 about like who is this startup with
+18:46 seven people or something in Silicon
+18:48 Valley that's using up not just their
+18:50 entire bandwidth from their data centers
+18:52 but they had a whole second like it was
+18:54 supposed to be remaining as like a
+18:56 backup uh connection into their data
+18:58 centers we were using up all of it we
+18:60 had a model where anytime we measured as
+19:02 we approached 2,000 GB of data transfer
+19:05 per machine I just went on and just got
+19:07 another machine and so another 2,000
+19:09 gabes another 2,000 and there's no way
+19:12 that that was going to be a sustainable
+19:13 model for them but of course not their
+19:15 CU before YouTube nobody was
+19:17 pushing out this much amount of traffic
+19:20 when we were looking at projections we
+19:21 were going to Max them out like in no
+19:23 time basically uh so that was quite a
+19:25 bit scary and then like the other side
+19:27 was just like yeah the cost of this B
+19:29 with it's like the building's on fire
+19:30 basically nobody expected a service just
+19:32 to come out of nowhere in 2005 and
+19:35 occupy up what 20 30% of the internet's
+19:38 traffic in a matter of months um and not
+19:40 knowing where it was going to continue
+19:42 to go YouTube had innovated with managed
+19:45 Cloud hosting to get to scale in a
+19:47 cost-effective way but with the cloud
+19:49 providers crying uncle on the terms
+19:51 they'd originally offered they faced a
+19:54 Crossroads YouTube would need to build
+19:56 its own infrastructure
+19:59 as we looked at the future costs of
+20:02 running our infrastructure in managed
+20:05 hosting the numbers were very concerning
+20:08 my name is Colin Corbett and I was the
+20:11 director of networking at YouTube one of
+20:13 the things I did when I first joined was
+20:15 to go and sign us up for our first data
+20:17 center so that we would operate our own
+20:19 infrastructure and be able to more
+20:22 closely control the costs as a result we
+20:24 ended up negotiating our own bandwidth
+20:27 we ended up negotiating our server price
+20:30 and we also also our networking
+20:32 equipment we were able to negotiate
+20:34 down we had to be buying up every one of
+20:37 the machines you had to be going into
+20:38 the trucks on Saturday Sunday mornings
+20:40 to pull the machines out of the trucks
+20:42 bringing them up in the elevators and
+20:44 plugging each one of the ethernet cables
+20:46 and yourselves power was an issue just
+20:48 to power these huge racks and machines
+20:51 um you had to know but the problem back
+20:53 then was you have to physically order
+20:55 your machines four to six weeks before
+20:58 you have to be there on the spot at the
+20:60 parking lot when it gets delivered you
+21:02 have to be the one that actually brings
+21:03 up these 42u racks these 100 PB racks of
+21:06 machines and then you have to plug in
+21:08 everything yourself including network
+21:09 cables power cables I joined in January
+21:12 and the data center was ready to accept
+21:15 traffic in March our managed hosting
+21:17 provider couldn't keep up their
+21:18 equipment had effectively failed on us
+21:20 and so what was supposed to be this nice
+21:22 gradual migration was the website is
+21:25 down the database won't be fixed for
+21:27 days we need a cut tonight to our
+21:30 equipment we did our forced migration
+21:32 because we had no other
+21:34 choice but even as YouTube migrated to
+21:37 its own infrastructure its unrelenting
+21:39 growth continued to present daunting
+21:42 challenges so one example was we
+21:46 realized we were going to run out of web
+21:48 capacity in a few days Saturday was
+21:51 always our Peak day and we' had a new
+21:55 rack of equipment on order for new web
+21:56 servers on order and
+21:59 we worked with our integrator to get our
+22:01 rack ready and you know they it wasn't
+22:03 due for weeks and we convinced them
+22:04 please bring it as soon as you could so
+22:06 they got the rack to us I think at 6:00
+22:09 on a Friday and then they dropped it off
+22:11 and then we wanted to get it positioned
+22:13 and we had our data center ready to do
+22:15 that but they only had one person on
+22:17 staff the racks fully assembled weighed
+22:19 between 1,600 to
+22:21 2500 and so we couldn't get it up the
+22:24 ramp to actually get it to our data
+22:26 center so I called a Klein who also was
+22:29 on the team and he and his wife showed
+22:31 up and we all three pushed it up this
+22:33 ramp to get it to the data center Hall
+22:36 so that it could then be that night it
+22:39 was bolted down the network was set up
+22:42 the systems were imaged and everything
+22:45 was deployed and so we actually made it
+22:47 through that
+22:49 night I wasn't actually like really
+22:52 confident for the bandwidth side at
+22:54 least until like we got Colin and I was
+22:56 like okay we have a little bit of
+22:58 breathing room now maybe in so many ways
+23:01 the 2005 2006 was a period when
+23:04 Broadband penetration was just really
+23:06 starting to hit the masses in the US and
+23:10 it was still on the server side I think
+23:12 YouTube was the first case where you
+23:15 really really needed High Network
+23:17 bandwidth and that it required a lot
+23:20 more from the server side than was ever
+23:22 needed before 2005 it was a great team
+23:25 and we all would you know we all relied
+23:27 on each other and we all worked really
+23:29 well to get the uh keep the
+23:31 infrastructure running if we hadn't
+23:32 opened it I I think we'd have had a few
+23:34 things the uh I think our hosting
+23:37 providers wouldn't have been able to
+23:39 keep up in scale and the second one
+23:42 there was that I think the monthly fees
+23:44 from the hosting providers they would
+23:46 have kept climbing and uh we would have
+23:48 run out of money
+23:50 sooner by 2006 YouTube began to focus on
+23:54 generating advertising revenue and
+23:56 building a sustainable business their
+23:59 engineering Feats meant YouTube could
+24:00 serve videos coste effectively and earn
+24:03 a margin even with low ad rates but they
+24:05 immediately found themselves in
+24:07 Uncharted legal Waters what were the
+24:10 implications of earning ad revenue on
+24:12 user generated videos if they contained
+24:15 copyrighted
+24:17 materials I join YouTube as its 23rd
+24:20 employee on my first day Steve one of
+24:24 the founders handed me a sealed box from
+24:26 Ikea and invited me to W my desk my name
+24:30 is zahava LaVine and I was the general
+24:32 counsel and vice president of business
+24:34 Affairs for YouTube I was YouTube's
+24:37 first
+24:38 lawyer YouTube reached out to me because
+24:40 I was one of a handful of tech startup
+24:43 lawyers at the time with deep experience
+24:45 with licensing music for online services
+24:48 of the 23 employees most were under the
+24:52 age of 25 at 37 I often felt like the
+24:57 adult in the room and at times I felt
+24:59 like the corporate grandmother in the
+25:01 very early days uh we knew that for
+25:05 YouTube as a platform to be able to
+25:08 survive and grow and continue to grow we
+25:11 needed to find a fair way to work with
+25:15 all the parties that are engaged on the
+25:17 platform and that included the content
+25:20 creators uh that included the content
+25:23 owners if the content creators were
+25:25 using certain pieces of content that
+25:27 they didn't create themselves and then
+25:28 then of course the advertisers and the
+25:31 marketers that are willing to be able to
+25:32 put their branding and pay for
+25:34 advertising on the platform YouTube had
+25:37 just started experimenting with running
+25:39 ads on the site when I joined but
+25:41 YouTube's ability to run ads was limited
+25:43 by legal concerns users started
+25:45 uploading videos that contained
+25:48 commercial music in all different ways
+25:50 some uploaded copies of official we
+25:53 called It MTV Style music videos but
+25:56 more frequently users were uploading
+25:57 videos ofs eles either alone or with
+26:00 friends singing songs or dancing to
+26:03 music playing in the background the
+26:05 biggest question for me was whether
+26:07 YouTube could build an Advertising based
+26:09 Revenue model without becoming liable
+26:11 for all of the infringing content that
+26:13 users uploaded to the site so copyright
+26:16 was an important issue out of the gate
+26:19 this came up as an important issue as we
+26:21 did references before committing to the
+26:23 investment from those who had
+26:25 experienced the Napster episode you know
+26:28 we're trying to learn from the mistakes
+26:30 that others had made before the
+26:31 financing had even closed already
+26:34 working with attorneys to make sure that
+26:35 we understood exactly what the law
+26:37 provided for to make sure that we did
+26:39 all the right things at the company
+26:41 Napster was one of the first cases where
+26:45 Mass adoption about sharing music
+26:47 content on the internet and they took a
+26:51 very aggressive approach in their
+26:52 defense on how they were going to
+26:55 address the the music labels and the
+26:58 this the Distributors on what was
+27:01 allowed and not allowed on their
+27:03 platform and I think that from the case
+27:07 of YouTube I don't remember the exact
+27:09 dates but YouTube was after Napster but
+27:11 we certainly knew about Napster at the
+27:13 time and it was no like that's not the
+27:15 model to take in
+27:18 1998 Congress passed a law called the
+27:21 Digital Millennium Copyright Act or the
+27:23 dmca and this law was designed to
+27:26 balance the rights of copyright owners
+27:27 on the one hand and online service
+27:29 providers on the other and the dmca
+27:32 strikes this balance by providing for a
+27:34 limitation of liability known as a safe
+27:37 harbor for online service providers who
+27:39 comply with certain requirements
+27:41 designed to address copyright
+27:43 infringement it was clear to me that if
+27:45 YouTube qualified for this dmca Safe
+27:47 Harbor it had the potential to be wildly
+27:49 successful but if it didn't and YouTube
+27:52 could be held liable for copyright
+27:53 infringement for all of the infringing
+27:55 user videos I couldn't see how the
+27:58 company could be successful it it would
+27:60 all come down to whether YouTube was
+28:02 eligible for this dmca Safe Harbor but
+28:04 the law wasn't clear on its face there
+28:06 was a lot of ambiguity I called a friend
+28:09 of mine who happens to be one of the
+28:10 world's great copyright lawyers and I
+28:12 asked for his advice we met at one of my
+28:14 favorite dive bars in the mission in San
+28:16 Francisco I just asked him will YouTube
+28:19 just face massive lawsuits and get sued
+28:21 out of existence he Shrugged his
+28:23 shoulders and said who knows on one
+28:26 level earning any Revenue at all
+28:28 entailed some risk for YouTube Revenue
+28:31 was quote Financial benefit that someone
+28:33 would surely claim was directly
+28:35 attributable to infringement but if we
+28:37 couldn't earn Revenue we had no business
+28:40 if we have to be the first movers in
+28:42 figuring this out what is the way to
+28:44 make everybody happy in this
+28:47 picture YouTube believed it was shielded
+28:49 by the dmca's Safe Harbor clause and
+28:52 that it could create a business model
+28:55 that would be a win-win for creators
+28:57 copyright holders and itself but other
+28:60 parties in the entertainment industry
+29:01 did not agree with that interpretation
+29:04 to put it lightly Hollywood were The
+29:07 Gatekeepers and then YouTube opened its
+29:10 own gate and a lot of people walked
+29:12 through it the music companies and and
+29:15 Hollywood had large anti-piracy teams
+29:18 that were sending us hundreds and in
+29:20 some cases thousands of copyright
+29:22 takedown notices a week we realized
+29:24 pretty quickly that we would need to
+29:26 close content licenses with theic music
+29:28 industry and Hollywood although YouTube
+29:31 managed to negotiate deals with
+29:32 companies like Warner Music and Emi
+29:35 others were
+29:37 strident Universal Music Group fully
+29:40 Unleashed an orchestrated campaign of
+29:43 fear tactics on us after months of
+29:46 somewhat friendly negotiations I
+29:48 remember umg just suddenly flipped on us
+29:51 I recall one exac with with whom I had
+29:54 previously had a good relationship
+29:56 literally scream at me over the phone
+29:59 YouTube was built on the backs of our
+30:02 artists and owes us hundreds of millions
+30:04 of dollars the single worst business
+30:07 meeting of my life was when I flew down
+30:11 to Los Angeles for a meeting with
+30:13 Universal Music they put all of their
+30:16 senior heavy lawyers in a conference
+30:18 room and as soon as the meeting began
+30:21 they started waving a copy of a lawsuit
+30:24 complaint and demanding tons of money it
+30:27 really struck me that they were not
+30:29 interested in a win-win relationship
+30:31 with the service and that they would do
+30:33 everything in their power to make our
+30:35 life
+30:36 miserable I mean they hold all the cards
+30:40 you you have something on your platform
+30:42 that is owned by Universal and there
+30:44 aren't that many choices that you could
+30:46 take it didn't take long in this meeting
+30:49 before Chad agreed to pay a big sum of
+30:52 money in exchange for a license
+30:54 agreement we would still need to hammer
+30:56 out a sum of money we had no no way to
+30:59 pay at the time I thought that meeting
+31:01 was just awful I was sure we had
+31:04 substantially overpaid I was sick to my
+31:06 stomach and I was worried that other
+31:09 music companies would adopt the same
+31:12 tactics to try to extort crazy amounts
+31:14 of money from
+31:15 us I had rarely encountered a business
+31:18 experience like this you know Silicon
+31:20 Valley just has a very different tone
+31:22 and mentality when it comes to business
+31:24 relationships and a much more of a
+31:25 win-win let's build something together
+31:27 attitude the idea that you were going to
+31:29 create value and yes there there there's
+31:31 a question about exactly how to divide
+31:32 the pi but ultimately the goal should be
+31:35 grow the pi as big as possible and the
+31:38 sense I got from my meeting at Universal
+31:39 Music was a fixed mindset there's only
+31:42 so much value and we Universal need to
+31:44 do everything in our power to squeeze as
+31:46 much out of this as possible to your
+31:48 detriment that was a pivotal meeting
+31:50 honestly I think that that meeting
+31:52 really shook us as a team because of the
+31:56 aggression and antagonism they displayed
+31:59 it was truly hostile I think this umg
+32:02 Shakedown was a turning point I think it
+32:05 was a turning point for Chad and
+32:07 possibly sequa I think it helped Chad
+32:09 and ruoff appreciate the gravity of our
+32:12 copyright issues and perhaps warm up to
+32:14 the idea that selling YouTube to a
+32:17 company that could commit more resources
+32:19 to our legal challenges was not a
+32:22 terrible
+32:23 idea it was now clear that a flood of
+32:26 litigation from rights holders was in
+32:28 evitable YouTube's life was on the line
+32:31 how would this young company be able to
+32:33 handle massive lawsuits from some of the
+32:34 world's biggest corporations there was a
+32:37 potential solution however that could
+32:39 not only help protect the company from
+32:41 impending lawsuits but ensure its
+32:43 longevity various companies had shown
+32:46 interest in acquiring YouTube including
+32:48 Google whose own video product had
+32:50 failed to catch on with users anytime
+32:54 you contemplate the sale of your company
+32:56 I think it should be called a crucible
+32:57 moment
+32:59 it's at this point where the founders
+33:01 even if they have the ambition to build
+33:03 something enduring that is Standalone
+33:06 they may feel that the company's future
+33:08 is in better hands with somebody else
+33:10 that can help them realize that ultimate
+33:12 Vision unfortunately often times big
+33:14 companies swallow little companies and
+33:17 maybe by accident smother them they
+33:19 don't enable them to realize their
+33:22 potential in 2006 a decision had to be
+33:27 made within the board about what our
+33:29 next major step was going to be for
+33:31 YouTube and whether or not that was
+33:33 going to be through an acquisition or do
+33:36 we continue to operate as an independent
+33:39 company and try to figure all this out
+33:41 ourselves and me honest with you we're
+33:44 kind of forced down that path of going
+33:46 down the acquisition route with Google
+33:49 was really on the on the legal side of
+33:52 things we were just too small we could
+33:55 barely even hire because everybody was
+33:58 so busy keeping it all together with
+33:60 Band-Aids at that time it was clear to
+34:03 me that we needed help I was worried at
+34:07 that time that if we didn't sell the
+34:09 company it would be very expensive and
+34:11 timec consuming for us to fight the
+34:12 copyright battles I had confidence that
+34:15 we would Prevail Prevail but in 2006 you
+34:19 didn't have the kind of late stage
+34:21 financing environment that you have
+34:22 today it wasn't easy for us to go and
+34:25 raise hundred or $200 million to fight
+34:27 the lawsuit and so I also think it would
+34:29 have been pretty tricky to go and raise
+34:31 money for the explicit purpose of
+34:34 winning a lawsuit so I think it was
+34:36 daunting to be able to take on that
+34:37 challenge as an independent business so
+34:40 for me the that was a very difficult
+34:42 period like the product was working
+34:44 great the engineers we had a great team
+34:47 but it was really survival of this
+34:50 product of being able to share videos
+34:53 online on the Internet space is that
+34:54 going to be feasible or not is it time
+34:57 to sell the company in order for YouTube
+34:59 to really truly reach its potential it
+35:02 really would benefit greatly to be
+35:05 working in tandem in collaboration Under
+35:08 the Umbrella of a Google rather than
+35:10 trying to do it independently on its own
+35:12 we decided internally and this was still
+35:14 mostly through Chad and me to say like
+35:17 look in order for this thing to scale
+35:19 out we really need a bigger partner and
+35:21 um somebody to be able to hand hold us
+35:23 through this but there was a risk if the
+35:26 big media companies caught wind of a
+35:28 potential acquisition they might
+35:30 accelerate the lawsuits they'd been
+35:33 threatening we reached out directly to
+35:35 the board of Google and uh we arranged a
+35:38 meeting to talk about engage their
+35:41 interest on look like we want to move
+35:42 forward with a sale but we need to move
+35:45 quickly on this we need to do it in a
+35:48 kind of affertive secretive manner
+35:49 because we don't want it to be known by
+35:52 Universal and Emi that we're talking to
+35:54 a much bigger company for an acquisition
+35:57 in internally deciding that we want to
+35:60 move forward with an acquisition to
+36:02 talks internally about who potential
+36:06 acquire hers could be to meeting with
+36:11 the key individuals in these firms and
+36:13 these companies that can actually make
+36:15 that decision to actually writing out
+36:17 the the actual contractual terms on the
+36:21 and all the way to finalizing it and
+36:24 making the announcement on Wall Street
+36:26 all that was compressed into less than
+36:28 one week's
+36:30 time the sale of YouTube to Google has
+36:33 got to be one of the fastest deals of
+36:35 its size of all time I think it took
+36:38 something like five days from signing
+36:40 the term sheet to signing the long form
+36:43 and I think it was probably the hardest
+36:44 5 days of my life I was operating on
+36:47 pure adrenaline while helping negotiate
+36:50 the merger agreements for the sale of
+36:52 YouTube to Google two other things were
+36:54 going on first we needed to close the
+36:57 three remaining major record label
+36:60 licensing deals that we had been
+37:01 negotiating at that point for months
+37:03 Google wanted them done before close so
+37:06 in three days we finished these deals
+37:09 that would normally take months and on
+37:13 top of that in addition to negotiating
+37:15 these record label deals YouTube was
+37:17 moving offices that very same weekend
+37:21 the move had been planned for months
+37:24 like there was nothing we could do to
+37:25 stop it and I remember Chris Maxi and I
+37:27 were in the office in San Mato above
+37:30 amichi at like 2 a.m. on a Saturday
+37:33 morning um night morning trying to
+37:36 finish the record company deals we were
+37:38 sending drafts back and forth with the
+37:41 record companies at like in the middle
+37:42 of the night and we'd print each draft
+37:45 and mark up our comments and pen and
+37:48 suddenly in the middle of all this our
+37:50 printer stopped working and we were like
+37:52 what's going on and we realized the
+37:54 movers had unplugged it and were like
+37:56 packing it up and we had to B them like
+37:58 sir I know you're just doing your job
+38:00 but please leave the printers I promise
+38:02 we're authorized to instruct you to
+38:04 leave the printers it was nuts I slept
+38:07 for only a few hours the entire time and
+38:10 in a hotel room right next door to our
+38:12 Law Firm I didn't even bother going home
+38:15 and we got it all done in November 2006
+38:19 Google acquired YouTube for $1.65
+38:21 billion a staggering sum at the time
+38:24 Google asked stepen Chad to stay on to
+38:26 lead YouTube as a Standalone brand under
+38:29 its umbrella and phased out its Google
+38:31 video
+38:33 product I think there was a real meeting
+38:35 of the mind and an
+38:36 appreciation that Google's interest was
+38:39 in helping YouTube flourish and it was
+38:41 clear to the founders that Google had a
+38:44 sincere desire to enable YouTube as an
+38:47 independent business to flourish they
+38:49 made very clear commitments that the
+38:51 company could retain its independent
+38:52 brand it wouldn't be called Google video
+38:54 it would be called YouTube they would
+38:56 maintain a separate office in and Carlos
+38:58 and they wouldn't all have to move down
+39:00 to Mountain View where Google's
+39:02 headquarters was based and Google also
+39:05 was willing to make the investment
+39:07 necessary to fight the copyright Lawes
+39:10 that have been filed and also to invest
+39:12 infrastructure the data center
+39:14 infrastructure to enable YouTube to
+39:15 continue to grow into the the scale that
+39:17 it's achieved today I I'm just still
+39:20 grateful of the way that Google handled
+39:22 that acquisition that they still um were
+39:24 able to put us in control to trust a
+39:27 couple 28y olds to run this thing Google
+39:29 did a fantastic job in never completely
+39:33 enforcing this Google umbrella over
+39:36 YouTube they continue to even till this
+39:38 day YouTube stays separate in terms of a
+39:40 lot of its reporting structure
+39:42 organizational structure and even just
+39:43 physical addresses of the buildings
+39:45 their YouTube offices and their Google
+39:47 offices Google had the resources to
+39:50 defer revenue and to take the Long View
+39:53 sure enough just a few months after
+39:56 Google acquired YouTube
+39:58 the major media conglomerate sued Google
+40:01 seeking over a billion dollars in
+40:03 Damages they argued that YouTubers
+40:05 responsible for all the copyright
+40:07 infringement of the of users who it
+40:09 alleged uploaded over
+40:12 150,000 clips of Viacom owned
+40:15 programming without authorization which
+40:18 had collectively been viewed 1.5 billion
+40:21 times this was it this was the
+40:23 existential lawsuit we all knew was
+40:25 coming and it got worse because short
+40:27 shortly after Viacom Su at least two
+40:30 class actions were filed against Google
+40:32 on behalf of sports leagues and music
+40:34 Publishers and a class of quote all
+40:39 copyright holders in the world unquote
+40:42 that was uh quite
+40:45 something YouTube's sale to Google was
+40:48 The Crucible moment that enabled all the
+40:51 subsequent Crucible moments that make
+40:54 YouTube what it is today I'm absolutely
+40:57 clear that we made the right decision to
+40:60 sell it with that amount of time at the
+41:01 time that we did and to sell it to
+41:03 Google there was a high risk that
+41:05 YouTube would have never made it out of
+41:07 2006 2007 if it weren't for that
+41:10 acquisition with
+41:12 Google Google not only had the resources
+41:15 to fight the lawsuits against YouTube
+41:17 but it also supported YouTube as the
+41:19 company deployed systems to instantly
+41:21 identify copyrighted materials posted to
+41:24 the
+41:26 site one of the heralded pieces of
+41:28 technology that YouTube built that
+41:31 assured its survival and honestly why I
+41:34 think the company has thrived is
+41:36 copyright ID
+41:38 tags with Google's resources and while
+41:41 we were litigating the Viacom lawsuit we
+41:44 worked very hard to build very
+41:46 sophisticated automated systems to
+41:49 accommodate copyright management and
+41:51 content licensing at
+41:54 scale with Google's help YouTube was
+41:57 able to design and build a Content ID
+41:59 system that was substantially more
+42:02 robust the system scans each of the
+42:06 millions of YouTube videos uploaded
+42:09 every day against a massive database of
+42:13 sound recordings and audiovisual works
+42:15 provided by copyright owners all around
+42:18 the globe and when the system detects a
+42:20 match meaning that it's identified
+42:23 third-party copyrighted material and a
+42:25 user uploaded video the system honors
+42:28 the rights holders choice to either
+42:30 license it monetize it and share in the
+42:32 revenue or to have it removed from the
+42:35 site and like an overwhelming majority
+42:37 of the content of the rights holders
+42:39 using the content ID system elect to
+42:42 license their content and share the
+42:44 revenue on on YouTube as far as I know
+42:48 the YouTube content identification
+42:50 system is the most advanced system of
+42:52 its kind in the world to this day it's
+42:56 been crucial it you know it wins the
+42:59 hearts and minds of copyright holders
+43:00 that know that YouTube is a partner to
+43:02 theirs not an adversary YouTube is a
+43:05 valuable distribution partner it
+43:07 generates Revenue that it shares back
+43:08 with these copyright
+43:10 owners by building a platform to
+43:12 responsibly share Revenue with creators
+43:14 and rights holders alike YouTube would
+43:17 go on to single-handedly bring about the
+43:19 so-called Creator economy enabling
+43:22 everyday users to monetize their
+43:25 content in 2010 a District Court
+43:28 throughout viacom's lawsuit ruling that
+43:31 YouTube was in fact eligible for the
+43:33 dmca Safe Harbor and therefore protected
+43:36 from copyright
+43:38 liability YouTube is nearly 20 years old
+43:42 and due to its ubiquity and reach has
+43:45 shaped some of the most seminal cultural
+43:47 moments of the 21st
+43:49 century one of the most like memorable
+43:54 moments for me at YouTube was when we re
+43:57 received a call in 2007 from CNN they
+44:01 wanted to host the Democratic debates
+44:04 for the elections in 2007 at the time uh
+44:08 and they wanted to do it using utilizing
+44:12 and partnering with YouTube where the
+44:14 questions wouldn't just be coming from
+44:16 the two three moderators uh but it would
+44:19 actually be coming from YouTube users
+44:21 and that was when I was started
+44:22 realizing this is far bigger than
+44:24 something that we created back in 2005
+44:28 today YouTube has over 2 and a half
+44:32 billion monthly active users including
+44:35 more than 100 million paid subscribers a
+44:38 little over a third of the world's
+44:41 entire population watches YouTube every
+44:45 month YouTube achieved many impressive
+44:49 accomplishments and Crucible moments in
+44:52 its early years the technical
+44:54 infrastructure required to store and
+44:56 deliver and unprecedented volume of
+44:59 video content around the world the
+45:01 historic licensing deals with the music
+45:04 industry that licensed on a blanket
+45:06 basis for the first time ever entire
+45:09 cataloges of music for use and user
+45:11 uploaded videos it's not fair to look at
+45:14 the end result of where I am when the
+45:17 finish line of see where YouTube is and
+45:19 to see how all this magic happened I
+45:21 think it's a lot more realistic to look
+45:23 at where I was in 2005 and when I was
+45:26 there in 2005
+45:27 it was a video dating service that we
+45:30 thought was going to be the next big
+45:33 thing right and of course it went
+45:34 through hundreds of cycles of evolution
+45:36 and path turning and and turns to be
+45:39 able to get to where YouTube is today
+45:41 but in order for it to reach YouTube to
+45:43 reach to the state that it was at those
+45:45 first few steps had to be taken from us
+45:48 as the founders and the entrepreneurs of
+45:49 the company multiple Generations are
+45:51 watching YouTube as their primary source
+45:54 of entertainment source of Education
+45:57 source of content globally all around
+45:60 the world um and people are entirely
+46:02 creating careers completely just built
+46:05 off of YouTube the
+46:07 platform the key message is that if you
+46:10 have an idea if you want to start
+46:12 something I think just don't ask anybody
+46:15 else just um especially don't ask your
+46:17 mom like I did at least once in your
+46:19 life I just recommend highly try to do
+46:22 something on your own especially if you
+46:23 do have an idea that's been brewing in
+46:25 your head for a while like try it and
+46:27 you'll know 3 to 6 months uh if it's
+46:30 going to work and even if it doesn't
+46:32 work it's going to be the most memorable
+46:35 3 to 6 months of your life it's so fun
+46:38 to try to actually create something and
+46:40 an idea that you have and it's so
+46:42 entertaining such a great gift when you
+46:44 actually see other users using this
+46:47 product idea that you had in your head
+46:49 it's just hard to be able to get that
+46:51 same kind of return on anything else you
+46:53 do in life
+46:59 one of the unsung heroes in the YouTube
+47:01 story is Susan wiesi an early Google
+47:05 employe who championed acquiring YouTube
+47:07 and later served as its CEO for 9 years
+47:10 until 2023 tragically she passed away in
+47:14 August 2024 Susan's contributions and
+47:17 stewardship of the brand were critical
+47:19 to YouTube scaling into the global
+47:21 platform it is today
+47:29 this has been Crucible moments a podcast
+47:32 from sequa
+47:43 Capital Crucible moments is produced by
+47:46 the Epic stories and Vox creative
+47:47 podcast teams along with sequa
+47:52 capital special thanks to Steve Chen
+47:55 Java Kim upan Colin Corbett and zahava
+47:59 Levine for sharing their stories

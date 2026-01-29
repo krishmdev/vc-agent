@@ -1,0 +1,1088 @@
+00:00 because we now have ai code generation
+00:04 everybody can create code but not
+00:07 everybody knows about security and the
+00:10 models that generate the code have been
+00:11 trained on all public source code
+00:14 there's a lot of vulnerabilities in all
+00:15 the public source code and so uh we
+00:18 generate much more code with more uh
+00:21 security problems on the other hand
+00:23 attackers are already using AI to make
+00:26 their own work more uh more effective
+00:30 and so so uh we uh we also have a uh a
+00:33 greater threat so more code more attack
+00:37 more
+00:38 attacks and that kind of makes the
+00:40 automation that Expo is doing absolutely
+00:44 essential
+01:01 today we are excited to welcome uhad
+01:03 deore founder and CEO of Expo as the
+01:08 creator of GitHub co-pilot uh has helped
+01:11 push the boundaries of modern AI before
+01:14 GitHub acquired his last startup Sul uh
+01:18 was a computer science professor at
+01:20 Oxford his new company Expo is one of
+01:22 the most exciting AI native companies to
+01:25 launch this year they're able to
+01:27 automate offensive security with an AI
+01:30 penetration tester it's one of the best
+01:33 examples of AI Service as a software
+01:35 that we've seen we're excited to talk to
+01:38 uh about the Breakthrough results of
+01:40 Expo and what's next in
+01:44 AI uh Expo now matches the capabilities
+01:50 of the world's best hackers is this one
+01:53 of the first Industries that's going to
+01:54 be completely disrupted by AI absolutely
+01:58 it's uh it's going to completely change
+02:01 the way application security is uh is
+02:04 implemented in the Enterprise um really
+02:08 it's an example
+02:09 of service as a software uh people will
+02:14 be able to to replace a lot of uh
+02:20 routine human work uh with complete
+02:23 automation um and that will free up the
+02:25 humans to do the truly creative work
+02:28 themselves so U tell us about some of
+02:30 the results that you announced recently
+02:32 because I think they're really quite
+02:34 striking so uh we uh when we first built
+02:38 the the first version of our product we
+02:41 decided to try it out on renowned
+02:44 industry benchmarks um and these are uh
+02:48 challenges that human hackers use uh to
+02:51 hone their skills and uh we got these
+02:55 from a bunch of commercial providers
+02:57 including ports wigger and pentland on
+03:00 these bench marks our product scored
+03:04 75% which was amazing in fact it was so
+03:07 good that I my first reaction was that
+03:10 surely there's something wrong here
+03:12 what's uh
+03:13 actually happening is that probably the
+03:16 sarks are so well known uh that they
+03:18 occur somewhere in the training data and
+03:20 the the Mel is simply uh regurgitating
+03:24 the ESS so we created a new set of
+03:27 benchmarks completely original
+03:29 guaranteed to be not in any training s
+03:31 and those are scored even better
+03:34 85% wow so then uh the question is so
+03:40 how good is that really and to answer
+03:43 that we got in uh five professional
+03:47 pentesters from reputed firms and we
+03:50 asked them uh to solve exactly the same
+03:53 set of4 challenges one of these people
+03:57 is really at the top of the game the the
+03:59 the very best type of Pentasa the kind
+04:02 of person that you'd ask to secure a
+04:04 multi-billion dollar hatch fund and he
+04:06 scored the same he scored the same as
+04:08 the AI however uh the human took 40
+04:12 hours and the system took just 28
+04:15 minutes yeah that is striking and when
+04:19 we first partnered with uh it was
+04:21 science I got to say we we did not know
+04:24 if the AI would even be able to perform
+04:26 remotely as well as humans and then when
+04:28 UI called and said hey Constantine we've
+04:30 got some results to share that will blow
+04:33 you away uh it it certainly did it
+04:37 certainly did what do you think was your
+04:39 over under back in January February when
+04:42 it was still science as to whether an AI
+04:45 could perform at the level of these
+04:47 20year seasoned penetration test for
+04:49 experts so at that time I didn't think
+04:51 that would be achieved so quickly I
+04:54 thought it would take at least a year to
+04:57 reach a reasonable level of
+05:01 of of of proficiency and even then I
+05:04 would expect that it would work at the
+05:06 level of a mediocre human pantle not at
+05:09 the level of the absolute
+05:12 top and uh in fact since we announced
+05:17 these results we've been working quite
+05:18 closely with a bunch of uh early design
+05:21 partners and and one of them uh this
+05:24 this morning uh we found it incredible
+05:27 critical vulnerability a very surprising
+05:31 and the way it worked if you look at
+05:33 what the AI is doing um it first craw
+05:37 the web app and then it found some
+05:39 source code written in PHP and this
+05:42 source code was uh intended to uh uh
+05:47 access uh another uh another
+05:50 host but it used an insecure signing
+05:54 algorithm in order to make that
+05:56 connection and so X2 was able to get
+06:00 to the other house generate or generate
+06:03 links and access that nothing
+06:06 interesting found there so then uh it
+06:09 continued crawling the web app and found
+06:11 another endpoint and decided to try and
+06:14 use the same trick that had previously
+06:17 discovered didn't quite work needs
+06:20 another parameter no
+06:22 problem browsers around it find some
+06:25 more source code this time in
+06:27 JavaScript sees a number of candidate
+06:29 parameters tries them all out finds one
+06:31 that uh works and now it has access to
+06:35 an endpoint and when it explores out it
+06:37 turns out it's intended to download PDF
+06:42 files but not only could you could you
+06:45 could you download PDF files you could
+06:47 actually
+06:49 download a password file so this is
+06:52 quite uh quite serious and what what I
+06:54 find fascinating about this type of
+06:56 example is that the AI is exploring like
+06:60 human pent St is it's uh taking quite
+07:04 interesting creative terms that would be
+07:08 hard for most human experts so just to
+07:12 summarize what you just said this is a
+07:15 very confidentially confidentiality
+07:18 obviously this is a very large financial
+07:21 institution that everybody uh watching
+07:24 this podcast would have heard of uh high
+07:27 confidence and the AI was able to find
+07:30 find a very Advanced vulnerability this
+07:34 is the type of institution that has
+07:35 human penetra penetration testers
+07:37 constantly targeting it and trying to F
+07:39 find vulnerabilities a massive Budget on
+07:42 security it was able to find a whole
+07:44 file full of
+07:46 passwords that's right just this morning
+07:49 that's right and we have something like
+07:52 that every every day every day wow OA
+07:57 congratulations on the results maybe can
+07:59 we take a step back and for those who
+08:01 aren't that familiar with this specific
+08:04 Market I've heard you and Constantine
+08:06 talking about pent pentesting and I
+08:08 think Constantine called them hackers I
+08:10 don't know if that's the same thing like
+08:11 what what is the offensive security
+08:13 Market uh and and you know what I guess
+08:16 how do you define the market that you're
+08:17 going after and what what is Expo thanks
+08:20 for taking a step back so offensive
+08:24 security is currently the best way to
+08:28 secure s systems you invite external
+08:31 experts to come and simulate attacks
+08:34 against your uh systems and they report
+08:38 or whatever they find so that it can be
+08:40 fixed before the bad guys get at it now
+08:44 this is a highly skilled uh activity uh
+08:48 people people need years of years of
+08:51 training to do it um and it's expensive
+08:54 and slow U typical cost of
+08:58 or so-called penetration test is
+09:02 something in the order of $118,000 and
+09:04 because it is expensive as slow uh
+09:07 people only do it once or twice a year
+09:11 but that doesn't make sense because
+09:12 their systems evolve much faster than
+09:14 that and so there will always be periods
+09:17 of time that uh insecure systems are are
+09:21 out there and uh what Expo does it
+09:25 automates this process this highly
+09:27 skilled activity of are launching
+09:30 simulated attacks and trying to find
+09:32 vulnerabilities um and it uh because it
+09:36 automat it it can now run it
+09:39 continuously um uh instead of just mon
+09:42 or twice a year H what Drew you towards
+09:45 this market like I I think you know
+09:47 Constantine mentioned your background
+09:48 and founding seml and and having seen
+09:50 GitHub co-pilots what what Drew you
+09:52 towards this specific Market because it
+09:55 feels like there's a dozen teams going
+09:56 after AI coding you're the only team
+09:58 I've met that that is taking this
+09:60 specific approach to to offensive
+10:02 security so uh it was kind of uh the
+10:05 natural thing to do um so my previous
+10:08 company called saml that uh also also
+10:12 was insecurity but finding flaws in
+10:15 source code and at seml we had an
+10:19 offensive security team which would use
+10:22 our product in order to find potential
+10:25 vulnerabilities and then the uh our
+10:28 security researchers would find exploits
+10:30 and we would tell the world about what
+10:31 we
+10:33 found um even at that time it was kind
+10:36 of embarrassing to me that that last
+10:39 step of finding the exploits uh was done
+10:43 manually um then when I was at GitHub
+10:46 GitHub acquired our company um at GitHub
+10:51 I had the opportunity to uh found the uh
+10:54 co-pilot project um and so it was
+10:57 natural to now take my new found
+10:59 interest in Ai and apply it
+11:03 to the uh challenge of automating
+11:06 offensive security it was very lucky one
+11:08 of the star researchers at s was Niko
+11:12 BisMan and he uh he joined me in uh
+11:17 creating Expo and one thing I'd love to
+11:20 ask you about I think Expo is such an
+11:22 interesting case study for this brother
+11:23 thesis we have that you know AI is
+11:26 actually changing markets of yesterday
+11:28 that weren't as interesting um AI is
+11:30 actually really expanding and
+11:32 dramatically changing the nature of
+11:33 those markets uh and I think this is a
+11:36 really interesting case study so I'd
+11:37 love to dig into it a little bit more
+11:39 the pentesting market is you know
+11:41 relative to say endpoint security or
+11:43 network security it's a relatively small
+11:46 um Services heavy market today and so um
+11:49 to your point you know offensive
+11:51 security is is so important and it's the
+11:52 gold standard but it's a relatively
+11:54 small Market um how do you think AI is
+11:57 going to change the nature of that
+12:00 so first of all it's small because it is
+12:03 powered by a small group of Highly
+12:07 skilled uh human uh uh human experts um
+12:12 I think AI is going to change the market
+12:15 fundamentally in a couple of ways so
+12:18 first of all because we now have ai code
+12:22 generation everybody can create code but
+12:26 not everybody knows about security and
+12:28 the models that generate the code have
+12:30 been trained
+12:32 on all public source code there's a lot
+12:35 of vulnerabilities in all the public
+12:37 source code and so uh we generate much
+12:40 more code with more uh security
+12:44 problems on the other hand attackers are
+12:47 already using AI to make their own uh
+12:50 work more more effective and so uh we uh
+12:55 we also have a uh a greater threat so
+12:58 more code more attack more
+13:01 attacks and that kind of makes the
+13:03 automation that Expo is doing absolutely
+13:07 essential so we believe that the markets
+13:09 will grow enormously uh here one of the
+13:11 and Sonia one of the analogies that I
+13:13 think about with this Market is uh is
+13:17 frankly the adversarial nature of of
+13:20 conflict of human conflict cyber
+13:21 security is an adversarial game uh you
+13:25 basically have two sides that get better
+13:26 and better equipment and they fight each
+13:29 other and it's a little bit of a game of
+13:30 cat and mouse not completely unlike uh
+13:34 unlike war and physical conflicts uh and
+13:37 human history and one of the reasons why
+13:40 uh we think that this Market is
+13:42 particularly interesting is think about
+13:44 how frequent war games are played in the
+13:46 military in the US military or or in any
+13:49 military abroad War Games Ren teaming in
+13:53 fact Ren teaming has been a uh a an
+13:56 initiative in most militaries for
+13:59 decades in centuries where you actually
+14:01 simulate uh a war game simulation so
+14:05 this is a this is a level of national uh
+14:07 importance and really what you have
+14:09 built is in my eyes the first ever AI
+14:13 cyber Warrior I mean this is I described
+14:16 it as a hacker because this is an AI
+14:19 cyber Warrior that can do things that no
+14:21 software has been able to do before ever
+14:23 when you launch these results uh I know
+14:26 with confidence because we talked about
+14:28 it a bunch of people from DC called us
+14:30 up and said whoa wait a second this is
+14:33 very consequential from DC and all over
+14:35 the West Coast This is highly con
+14:38 consequential and I'm sure it didn't go
+14:40 unnoticed by adversaries to the West as
+14:44 well and that they have probably been
+14:46 working on issues like this so my
+14:49 question is how do we stay ahead of the
+14:51 competition true competition as a nation
+14:54 state competition not business
+14:57 competition how do we stay ahead of it
+14:59 and how do we make sure that Expo is a
+15:01 Force for good in this massive
+15:04 adversarial cyber security game so first
+15:07 of all uh we stay ahead by moving uh
+15:11 moving very fast and at Expo we were
+15:13 very lucky uh to work closely with
+15:16 several of the creators of uh big
+15:20 foundation models uh which are ahead of
+15:24 the rest of the
+15:25 world um we're also extremely ciz or the
+15:31 potential dangerous users of our
+15:34 technology and therefore we've decided
+15:36 to make it available only in the cloud
+15:39 by making it available only in the cloud
+15:42 and not in some downloadable form of of
+15:45 software uh we can actually control uh
+15:49 what scope is being used it is being
+15:51 used on to launch attacks and so we can
+15:55 require from our customers that they
+15:57 prove to us that the scope they wish to
+16:00 have tested is
+16:02 actually legitimately their and it's not
+16:07 being used to attack someone else AI
+16:09 security Warrior you're Constantine I
+16:11 think you you got you're the new Expo
+16:13 CMO that is that is
+16:17 incredible um oh hey I'd love to learn
+16:19 about you know the the you know how how
+16:22 the product actually works and how the
+16:23 models work um how much of the magic of
+16:25 what you've built is you mentioned you
+16:27 work with some the major Foundation Modo
+16:29 company
+16:29 how much of the magic of what youve
+16:30 built kind of exists in the foundation
+16:32 models uh versus things that you are
+16:34 building on top so most of the magic is
+16:38 in fact in on on on top um we uh uh we
+16:43 work with several of the foundation mod
+16:45 providers and uh we are we're very happy
+16:49 that they're in stiff competition and
+16:51 they're playing hopscotch they one pulls
+16:53 ahead the other one pulls ahead uh and
+16:55 every time the foundation model gets
+16:57 better uh it benefits us um but the true
+17:02 magic comes from the security team at at
+17:07 Expo we've got some of the very best
+17:09 hackers in the world working for us and
+17:11 that domain knowledge uh is what informs
+17:14 how our product
+17:16 works can you double click a little bit
+17:18 into you know how that works like is it
+17:20 you know is it prompt engineering is it
+17:22 are you fine tuning the models like and
+17:24 I I know that you know you probably want
+17:26 to keep things keep your cards close to
+17:27 your chest as well in terms of how it
+17:29 works but I'd love to hear the high
+17:30 level how you how you've built it sure
+17:33 so I've already talked about talked
+17:35 about these benchmarks that we Ed to
+17:38 evaluate uh our uh our product at the
+17:42 beginning um and that is absolutely key
+17:45 benchmarks benchmarks benchmarks uh it's
+17:50 the live Bloods of a
+17:52 company of a product product like this
+17:55 um and so we've organized
+17:57 these into kind of curriculum uh to
+18:01 teach the model uh how to how to
+18:06 solve uh s cyber security problems are
+18:10 better um and the benchmarks are
+18:13 critical to evaluate uh all the other
+18:16 changes that we make the other big
+18:19 component of our uh our proprietary
+18:23 technology are the tools that we give to
+18:27 the llm in order to for Easy Tax um
+18:31 human pantp has a a toolkit of a bunch
+18:34 of things that they use in order to do
+18:38 uh attacks but here it's a bit special
+18:40 because we want these tools to work well
+18:42 with llms for example uh since we were
+18:45 focused on web security initially uh we
+18:48 need a uh a web browser uh that is is
+18:53 driven by the LM you need to click
+18:56 around you need to fill out forms uh and
+18:58 all
+18:59 and so forth and so we created a
+19:02 special a special browser to do that
+19:05 sort of thing thirdly and this is pretty
+19:09 uh important we need guard rails maybe
+19:12 first try to uh triy our product on some
+19:16 of these
+19:18 benchmarks it struck me like an
+19:21 overed super brilliant teenager who
+19:24 would do lots of attacks and find
+19:27 something and then it got very excited
+19:29 and goes I did a seal injection let me
+19:32 show you what I can do drop table this
+19:35 is catastrophic if you use out out at a
+19:40 customer me this is a big thing
+19:43 about pentesting Services you have to
+19:47 make sure that you do not actually do
+19:49 the harm that a real hacker an ADV
+19:52 advisal hacker would uh would do um so
+19:56 we've building been building guard rails
+19:58 to carefully watch over the shoulder of
+20:01 this uh brilliant teenager and stop it
+20:05 uh when it uh is not uh
+20:08 not doing things that might be
+20:11 unsafe um then there is a initial phase
+20:15 of attack surface uh Discovery so what
+20:19 we have is a fantastic exploit finder
+20:23 but you have to point it at the right at
+20:25 at at the right end point to you go or
+20:28 begin forging
+20:29 an attack and so this
+20:31 is running a bunch of tools and
+20:34 prioritizing where to go first and then
+20:37 finally uh as you already mentioned
+20:39 those of course prompt engineering uh
+20:43 three thought prompting or to keep it on
+20:45 track and make sure that it finishes one
+20:48 goal and when it finishes a goal goes on
+20:50 to the next as so forth you described
+20:52 the technology is a brilliant teenager
+20:55 who sometimes overeager and maybe finds
+20:58 an exploit and actually drop drops that
+20:59 table some places in the world there are
+21:02 actors that don't have the same
+21:04 discretion uh to add those guard rails
+21:07 uh what do we do to stay ahead of those
+21:09 actors and make sure that Expo uh can
+21:12 protect those that are doing good
+21:15 against them so first of all we need all
+21:17 the uh all the uh the obvious safeguards
+21:23 in in place we need firewalls and also
+21:26 and in in that type of that type of um
+21:30 technology AI will also play a role but
+21:34 first and foremost we have to make sure
+21:36 that we find the uh vulnerabilities and
+21:39 the exploits before the bad guys do and
+21:42 that's what Expo is is on the about how
+21:45 do you deal with hallucinations and you
+21:48 know I I hear about people saying you
+21:49 know if my LM does 50% or
+21:52 60% uh gets it right 60% of the time I'm
+21:55 good I imagine security is one of those
+21:57 fields where that is insufficient uh how
+22:00 do you deal with you know managing
+22:02 around the stochastic nature of and the
+22:04 unpredictable nature of these llms so
+22:07 fortunately because it's uh because it's
+22:10 automated uh you just have to run it
+22:13 many times and going back to your
+22:16 earlier question about uh uh about the
+22:19 foundation models what we do see is that
+22:22 the better the foundation models get uh
+22:24 the less attempts we uh we need to make
+22:27 in order to uh
+22:29 or to find uh to find exploits so it's
+22:34 kind of interesting how will influence
+22:38 uh how
+22:39 you deploy and uh package and price uh a
+22:44 a product like this um very much like uh
+22:47 humans uh if you uh if you get a human
+22:51 uh to perform the service for you uh you
+22:54 actually pay for the time for how how
+22:57 how long uh they try how how many things
+23:00 they uh they tried um so we are thinking
+23:04 about uh doing the uh doing the uh the
+23:08 same kind of thing charging our
+23:09 customers on the one hand uh
+23:12 subscription
+23:14 license but on top of that you can pay
+23:16 for attack attack hours if you want to
+23:20 do a really thorough test and make sure
+23:22 that you absolutely find everything uh
+23:25 you can pay more and obviously that
+23:27 would then pay for the inance on on our
+23:31 side I want to get into the pricing and
+23:33 packaging a little bit later because I'm
+23:34 very curious about that and I think you
+23:36 are one of the first kind of examples of
+23:38 service as a software and and so you
+23:40 really Paving the way in terms of how
+23:41 these things are priced and packaged
+23:43 before we get there you mentioned
+23:44 inference time compute uh and you know I
+23:47 think we're we're broadly very excited
+23:48 about what what's happening as more and
+23:49 more of the compute is Shifting uh from
+23:52 pre-training to inference time what do
+23:54 you think the impact is going to be in
+23:56 in your market for us it's uh it can
+23:59 only be good me
+24:01 the the value that we deliver remains
+24:03 constant the price for delivering it
+24:05 becomes goes goes down um we uh we see
+24:11 this even over this very short time that
+24:14 that xbo has been in existence and we
+24:16 only expect that to
+24:19 continue on the probabilistic nature of
+24:23 these LS just revisiting that concept
+24:26 for a second my mental model of what's
+24:29 going on is you have a state space with
+24:34 billions of possible States the actions
+24:36 that the hacker can take the actions
+24:38 that this penetration tester this AI
+24:39 penetration tester can take billions of
+24:41 possible States and you've introduced
+24:44 this really intelligent juristic as to
+24:46 the directions to go you in theory could
+24:49 execute all possible States in
+24:51 perpetuity if you had infinite computer
+24:53 at infinite time but reality you have
+24:55 these constraints and so I I'm wondering
+25:00 is that a reason why this might be the
+25:02 first or one of the first markets to
+25:04 enable full AI automation as in the
+25:08 stochastic nature of it and the fact
+25:10 that even if you find one exploit it's
+25:12 extremely valuable and you don't have
+25:14 the expectation of a complete exhaustive
+25:17 search you do want to be to be sure that
+25:19 you find everything that a very skilled
+25:22 human being would find find and so this
+25:24 is
+25:25 why uh we uh uh we we've kind of
+25:29 exhausted our first set of benchmarks
+25:31 and we now creating a new set of
+25:33 benchmarks to be absolutely sure uh we
+25:36 find everything that uh uh that there is
+25:39 to find uh people uh do these uh
+25:43 offensive security excises not only to
+25:45 find a vulnerability but also to have
+25:48 the peace of
+25:49 mind that it's not easy uh to find uh uh
+25:53 to find stuff they didn't uh didn't know
+25:55 about and so we do have to make that uh
+25:58 uh we have to present the evidence to
+25:60 our customers that we do find everything
+26:03 skill human beings would would find and
+26:06 our people will will insist on on on
+26:09 having that reassurance and when it is
+26:12 found is it verified by a human or by
+26:15 the machine we have a uh a validator
+26:19 that automatically validates that that
+26:22 the report is correct and reproducible
+26:24 and to uh uh before it uh it goes to
+26:28 Human but of course in in the end a
+26:30 human will have to take a look at it and
+26:32 uh fix the problem makes
+26:35 sense love to dive a little bit deeper
+26:38 into the results that you've attained so
+26:39 far so you mentioned you know you're at
+26:41 85% on your current benchmarks you know
+26:44 at the level of the best human
+26:46 pentesters in the world what are been
+26:49 the most surprising things that you
+26:50 found as you dig into the nature of
+26:52 those results the thing that I found
+26:55 most
+26:56 surprising um
+26:59 was that we originally we only had
+27:01 benchmarks with particular
+27:04 instructions so it would uh uh here it
+27:09 would say something like you're going to
+27:11 test a web web app for managing medical
+27:16 prescriptions try to log in and access
+27:19 the uh the prescriptions of another user
+27:23 and it would do that successfully but
+27:25 then we ran a another task where we took
+27:28 the
+27:29 instructions away completely and just
+27:31 said here's a web here's a web app go
+27:35 explore and the AI was able to find
+27:38 exactly the same vulnerability because
+27:41 it was able to read us on the web pages
+27:43 and say oh this is about medical
+27:45 prescriptions probably it's not a good
+27:46 idea one user can access the
+27:48 prescriptions of another and so it would
+27:51 uh go and find find that vulnerability
+27:54 completely autonomously um I think that
+27:57 that's
+27:59 part of the reason that this technology
+28:01 is so exciting compared to all these
+28:03 security tools that came before uh
+28:06 because these LMS have an understanding
+28:08 of the uh of the real world uh it
+28:11 actually can assess what is important to
+28:15 uh uh to go and test it doesn't have to
+28:17 do this complete exhaustive search of
+28:20 all the possible uh the possibilities it
+28:23 it it can interpret what is important
+28:26 for this particular application that's
+28:28 that's really cool that's really cool
+28:30 and then does the way that the AI system
+28:33 kind of uh reach its results how does
+28:36 that compare to the way that a human
+28:38 pentester would go about approaching the
+28:39 problem I'm kind of thinking of you know
+28:41 Alpha go and move 37 just you know very
+28:43 different from how we as humans would
+28:45 think about it uh what is the model
+28:47 doing so it's early days today it's very
+28:51 similar to was a human being with would
+28:57 um I completely agree that
+28:59 but uh we uh we have to be wary here of
+29:02 Rich
+29:04 sat's bitter lesson in the end because
+29:07 it learns continuous F data on
+29:09 benchmarks
+29:12 on more and more examples um it will
+29:15 start finding uh attacks that were
+29:18 unimaginable uh from a human perspective
+29:21 which is a good thing I mean you say
+29:22 that you say we you say cautiously I'm
+29:25 curious as to why isn't isn't that a
+29:27 great outcome
+29:29 yes yes it's a great outcome so I'm I'm
+29:31 merely I'm really saying that today uh
+29:34 when you read the
+29:36 traces absolutely this is what you would
+29:39 expect a good human human to do um I I
+29:44 expect fully expect that we'll go beyond
+29:47 that uh in uh in a couple of months
+29:50 certainly within years where do you
+29:53 think the biggest remaining room for
+29:54 improvement lies and I'm curious you
+29:57 know as as you mention you mentioned
+29:59 looking at the traces of these models
+30:00 like would you say that they are
+30:02 reasoning already today and is is the
+30:04 furthest further Improvement remaining
+30:06 in the reasoning uh area or how do you
+30:09 think about that uh I think that's so
+30:12 that's that's that's clearly the case
+30:14 but most of the improvements will come
+30:17 from more data um
+30:20 more more reinforcement learning on uh
+30:24 on particular examples um uh and uh as
+30:29 we do set that will lead to a similar
+30:32 Improvement to other games like like go
+30:36 how do you get more data is that just
+30:37 running more simulations or I imagine
+30:39 you've used a lot of the data there is a
+30:42 couple of different ways uh we uh uh we
+30:45 have uh uh quite a few uh contractors uh
+30:49 Security Experts who create uh create
+30:51 more benchmarks for us um there's also
+30:55 the the opportunity of
+30:58 mining open source um so uh we've only
+31:02 recently started doing this uh just
+31:05 letting it lose on a large number of
+31:08 images on dockerhub um and finding uh
+31:13 just let it just let it go and every
+31:16 time it finds
+31:18 something uh uh that becomes a new thing
+31:21 that it's going to learn from and so it
+31:23 might find it uh by
+31:27 doing 100
+31:29 attempts and so in practice if you had
+31:32 to do 100 attempts that probably
+31:34 wouldn't work at a customer because you
+31:35 would already get shut down because
+31:37 there's too many thing too many attacks
+31:39 happening uh clearly clearly that should
+31:42 be uh that shouldn't shouldn't happen um
+31:46 but because it's open source we can run
+31:48 it on our own service we can do 100 100
+31:50 attempts but now uh we have the data to
+31:53 try and make them M better to um uh find
+31:56 it more quickly you mentioned open
+31:59 source and dockerhub and So that
+32:01 obviously gets me thinking about GitHub
+32:04 and UIA for those who don't know was the
+32:06 creative brain and Creator behind GitHub
+32:08 co-pilot one of the most widely adopted
+32:12 AI applications in the world was there a
+32:15 moment when you were developing co-pilot
+32:18 or productizing it that you realized
+32:22 this AI is going to get so good that
+32:24 it's going to automate entire processes
+32:26 what people now call agents actually
+32:28 take these actions on entire processes
+32:30 and was there a moment where you said
+32:32 hey security is actually a very relevant
+32:35 area for this to
+32:38 happen so uh I in fact I I wrote a memo
+32:43 in December of
+32:44 20120 uh where I sketch would later
+32:49 would later become a co-pilot uh but
+32:52 also uh we were already speculating that
+32:56 perhaps it will autonomously be able to
+32:59 to fix uh fix bugs just look at the
+33:02 issue ticket and and now we see this
+33:05 that functionality uh uh emerging so yes
+33:09 I think that that was pretty clear from
+33:12 uh from the very beginning I think the
+33:14 moment where I realized that would
+33:16 happen was um I I took I took a uh a set
+33:23 of exercises interview questions that I
+33:26 normally ask ask used to ask people at
+33:29 haot and asked W to Sal them if you just
+33:33 give it one attempt didn't do it but if
+33:35 you give it uh 100 attempts or even a
+33:38 thousand attempts it would do most of
+33:40 them and at that moment it was pretty
+33:43 clear that as the models get better and
+33:46 they need less attempts they will be
+33:47 able to do these these types of things
+33:50 and one of the things that we also hoped
+33:53 it would do would be be doing security
+33:56 analysis all though admittedly I have
+33:58 offensive Security on my West in the
+34:00 summer of 2020 just
+34:02 yet any other lessons from productizing
+34:05 GitHub co-pilot that you think are are
+34:07 relevant to share
+34:09 here I actually think that the most
+34:12 interesting thing about get a copilot
+34:13 was was done by such a small team uh uh
+34:17 when we launched we were only 10 people
+34:20 something like that and uh uh it's just
+34:24 a testament to how fast you can move uh
+34:27 with a uh a dedicated team of people
+34:30 that believes how big was Expo when you
+34:32 launched the results uh we were 13
+34:37 people so actually quite big well 13
+34:39 really brilliant people since you were
+34:41 part of the co-pilot Journey from from
+34:43 the very beginning I'm curious what you
+34:45 think of the current market for code
+34:47 generation AI startups it seems like
+34:49 it's one of the most crowded uh
+34:52 categories competitively right now do
+34:54 you think there's a path to building a
+34:55 company there and you know can one of
+34:57 these startups beats the incumbent
+34:60 GitHub that that already has so much
+35:02 distribution I agree uh so I like a lot
+35:05 of what's going on I particularly admire
+35:07 to work at cursor or at factory um but
+35:12 uh it's really difficult to uh compete
+35:14 with the distribution of a jugon out
+35:17 like like like like GitHub um I do think
+35:22 that there may be an opportunity to go
+35:25 after a different market so get a is uh
+35:29 reing Supreme among professional
+35:31 developers but if you go after people
+35:34 who do not code for a living uh there's
+35:38 a opportunity and repet does this quite
+35:40 well for example how do you think coding
+35:43 will transform in the future like do you
+35:44 think the the market that repet serves
+35:46 do you think that'll just be a
+35:48 dramatically larger and more important
+35:50 Market as as AI kind of continues to
+35:52 take over the world or how do you think
+35:54 coding
+35:56 changes yes so I think the the biggest
+35:59 change is going to be that many many
+36:02 more people are unable to create their
+36:05 own uh their own software um so uh
+36:10 that's a big transformation but even for
+36:13 uh for uh professionals um it will be
+36:17 much more about the uh conceptual ideas
+36:21 about uh sketching an architecture and
+36:23 than having the uh AI fill in the uh
+36:26 fill in the details um longer term I
+36:30 believe that we may be moving away from
+36:33 code as we know it today uh the artifact
+36:36 that you make as a developer is the
+36:40 conversation with the model and so that
+36:42 is what you should store uh because that
+36:45 records uh what the uh what the code is
+36:49 supposed to do uh rather
+36:52 than the uh the details in a particular
+36:55 coding in a particular coding language
+36:57 English is the coding language so
+36:59 skipping the translations down yeah so
+37:02 the English decoding language perhaps
+37:04 with some diagrams he explain it uh
+37:06 explained it better but uh it's just the
+37:09 next the next step in moving up uh in
+37:12 abstraction originally it was all in
+37:14 machine language and we had higher level
+37:17 programming languages and now we're
+37:18 going to uh national language and
+37:22 images so you talked a little bit about
+37:24 education and coding I'm going to go
+37:26 down a little diversion for a second
+37:28 because one of the amazing things about
+37:30 your life is you were a professor for
+37:34 much of it and a very very good one at
+37:37 that so for context U was a computer
+37:39 science professor at modlin College in
+37:42 Oxford and uh modlin is one of the most
+37:45 prestigious colleges at Oxford he was
+37:47 one of the most amazing computer science
+37:49 professors I got to study abroad at
+37:51 modlin it's one of those incredibly
+37:53 Serene places where they've got the Deer
+37:56 Park and the thousand-year-old buildings
+37:58 and the British man who tells me that
+38:01 the door at his entrance is older than
+38:02 my country and and all of the things
+38:06 that you would expect from one of the
+38:08 most prestigious academic institutions
+38:10 in the world including U was a professor
+38:13 and could walk across the grass whereas
+38:15 I Amir student uh would only be able to
+38:17 if I was holding his cape uh with his
+38:19 permission that's right uh and you you
+38:23 left all of that to come into the
+38:26 commercial world uh with seml um 15 20
+38:31 years ago can you tell us a little bit
+38:32 about your personal Journey from leading
+38:35 academic at highly prestigious
+38:37 institution to commercial CEO redefining
+38:43 the cyber security indry I actually got
+38:45 into into computer science because I uh
+38:49 loved coding um I my my very first uh my
+38:53 very first program was a uh a word
+38:56 processor to show my dad who was a
+38:59 professor of Semitic languages uh could
+39:02 could type his manuscripts on his
+39:04 computer um so when I when I started
+39:09 studying computer science I got totally
+39:11 taken by the uh by mathematics and the
+39:16 uh foundational theories and so that's
+39:18 what I pursued as uh an academic
+39:21 initially
+39:23 um then when I became a professor I
+39:26 wanted to want to go back to my uh love
+39:30 of coding so I started a uh a new
+39:33 research group in programming tools
+39:35 which eventually led to the spin out
+39:38 that that was that was s well I love the
+39:42 Serenity and the peace and CET of a
+39:45 place like mland college
+39:48 um in our field speed is incredibly
+39:52 important and speed uh can only be
+39:56 achieved with small teams that have a
+39:58 profit motive um it's just different uh
+40:03 from uh create trying to invent
+40:07 something because you have a paper
+40:08 deadline for an important conference or
+40:11 you've got to invent it because
+40:13 otherwise this important customer will
+40:14 not sign up um and I I actually loved
+40:19 that that additional excitement and so
+40:23 and pressure uh and so that's
+40:28 that's what led to me leaving uh leaving
+40:30 modam behind and uh uh and uh going full
+40:35 in on on S love it a great advertisement
+40:39 for
+40:42 capitalism so you know I mean if you do
+40:45 really foundational work uh a university
+40:48 on the University of Oxford is probably
+40:49 the best way to do it but as soon as you
+40:51 start doing applied
+40:53 stuff there's no place like a startup I
+40:56 love it I guess on that capitalistic
+40:59 note I'd love to understand how you
+41:01 think about generating profits at Expo
+41:04 and you know since you are one of the
+41:06 first agent first you know Services as a
+41:09 software companies I think you're really
+41:11 going to set the precedent uh for how
+41:13 these types of agentic applications are
+41:15 priced and packaged and so maybe can you
+41:18 just expand a little bit about how
+41:19 you're thinking about how to do that
+41:21 with your offering sure so
+41:25 um we would like to uh uh we would like
+41:29 our uh product to run continuously as
+41:33 part of uh engineering processes I mean
+41:37 that is the main value proposition that
+41:39 instead of doing uh a pen test once or
+41:43 twice a year you RN it continuously
+41:45 after every change and immediately fix
+41:48 problems before they even reach uh uh
+41:50 reach production so if you think about
+41:53 it like that um the most obvious pricing
+41:56 model would be
+41:58 to would be best on the size of the
+42:02 engineering team very much similar to
+42:04 our products like uh gith up or gith up
+42:07 Advanced
+42:09 security however uh there is a different
+42:13 dimension here and we touched on it a
+42:15 little bit earlier in the conversation
+42:17 some customers will want to do a super
+42:21 thorough test really making sure that
+42:24 they
+42:25 exhaustively uh eliminated
+42:28 every
+42:29 possible exploitable
+42:32 vulnerability and in order to serve such
+42:34 customers we should
+42:36 have a service component to our uh our
+42:41 pressing um where you pay for uh if you
+42:45 pay more you get a more thorough test
+42:47 and the way we talk about this is in
+42:50 terms of attack hours how many hours of
+42:53 attack do you uh do you get and so uh if
+42:56 you buy a
+42:58 a normal license it's based on the uh
+43:01 number of engineers in your
+43:03 organization um and that comes with a
+43:07 fixed number of attack hours suitable
+43:09 for your uh your environment um but then
+43:13 if you want to go more uh more thorough
+43:16 uh you pay that extra uh uh that extra
+43:19 Service uh service fee in order to go
+43:22 deeper that's super interesting so you
+43:24 are you are really tapping into kind of
+43:25 services like price pricing models and
+43:28 budgets uh but on the back end you know
+43:30 you have the the gross margin profile of
+43:32 software I right and I but I I think
+43:37 that enterprise software is moving more
+43:39 and more towards um a consumption based
+43:43 model as well and here there is a uh a
+43:47 very clear correlation between uh a tech
+43:51 hour and the benefit to the customer and
+43:53 I think that that correlation between uh
+43:56 resources you consum and the benefit you
+43:58 get as a customer that has to be very
+43:60 clear for a pricing model like
+44:02 that my other takeaway from your
+44:05 modeling story was I mean you've always
+44:07 said this impact interest and impact you
+44:10 got into development tools because they
+44:12 touched people you got into this because
+44:14 you know that this is going to change
+44:15 the world I mean you're you're you're
+44:17 highly confident this type of technology
+44:19 is going to change the world with cyber
+44:20 security whether it's us or someone else
+44:22 um I actually would would put it I would
+44:24 put it a little little differently we
+44:28 absolutely must create uh xbo because if
+44:32 we don't do it uh the the bad guys will
+44:36 get there first and so uh uh for sure I
+44:40 mean we do it because it's interesting
+44:42 and we think that that's a great
+44:43 commercial opportunity but it's also an
+44:45 imperative it's an imperative for the
+44:47 Free World that we actually create this
+44:49 thing to uh to protect uh all the all
+44:54 the software in the Free World and that
+44:56 has been so clear from minute one of
+44:58 meeting that that is the the driver
+45:01 behind you and This brilliant team that
+45:03 you've assembled of academics and
+45:05 Builders and technologists they're I
+45:07 mean incredible the other thing you
+45:09 mentioned was in the model story was
+45:11 speed the ability to move fast and let
+45:13 me let me say you have moved really
+45:15 quickly you and your team what should we
+45:18 come to expect from Expo in a year what
+45:22 do you think will uh will be will be the
+45:26 product let's focus on the product and
+45:28 technology impact what will be happening
+45:30 from a product and technology and
+45:32 capabilities
+45:33 perspective uh a year out you're going
+45:36 to replay this to me in the next board
+45:38 meeting aren't
+45:39 you for board meeting don't worry
+45:43 for so we uh uh I I believe thought in a
+45:48 couple of month so we're currently in a
+45:50 phase where we uh very carefully uh try
+45:54 out the product with a select few early
+45:58 design partners and the reason that we
+46:01 do that is because it needs this human
+46:03 supervision uh in order to control the
+46:06 uh the brilliant teenager uh that we
+46:09 discussed that we discussed before um
+46:12 once we over that that pH and we
+46:15 confident we can let it lose without
+46:17 without any supervision I think uh
+46:20 everything is going to move very fast um
+46:24 uh part of the reason is that this type
+46:26 of product is very easy to deploy um you
+46:31 can just point it at an existing uh
+46:35 servers and uh and immediately uh
+46:38 immediately find uh find results so um I
+46:44 would expect that uh by next summer uh
+46:47 we uh we have significantly transformed
+46:50 the uh uh web security uh uh the state
+46:53 of web security hopefully uh uh by uh
+46:57 demonstrating our work on op Source but
+46:60 also on platforms like hecka oh this has
+47:02 been one of my favorite episodes so far
+47:04 thank you again should we wrap up with a
+47:06 quick lightning round go for it okay
+47:09 awesome number one favorite startups
+47:12 other than
+47:14 Expo
+47:17 sunno I love the way that you can just
+47:20 type in a few words um you get a
+47:22 completely original song it's spine
+47:25 chilling to me uh the
+47:28 the other startup I like a lot is
+47:30 harmonic uh applying AI to mathematical
+47:35 reasoning are you making sunno songs
+47:37 about coding insecurity
+47:39 no there's a great I said my wife a uh a
+47:44 new song about uh about sitting on the
+47:47 balcony at home in
+47:49 M oh that's sweet there's a hard metal
+47:52 one about the AI cyber
+47:55 Warrior I'll TR I think we're actually
+47:57 going to need that okay perfect perfect
+47:60 at our um at our annual AI event that we
+48:02 throw uh we had Mikey from soono there
+48:05 soono there and we crowd created an AI
+48:08 hot girl summer song it was actually
+48:10 very catchy that was great that was
+48:13 great uh oo was there um what other
+48:16 markets do you think AI is going to
+48:18 disrupt with this service as a software
+48:21 model in the short medium and long term
+48:24 so in the short cment this is already
+48:26 this is happening everything related to
+48:30 customer support uh is uh is clearly is
+48:34 clearly going to be impacted by this
+48:36 type of Technology um I think that this
+48:40 is is not exactly uh servers as a
+48:44 software but I think that much of the
+48:48 the problems we currently see with
+48:50 social media uh could be mitigated using
+48:53 this uh uh this this type of technology
+48:56 I mean you all these reports about how
+48:58 social media is affecting the mental
+49:00 health
+49:01 of children all over the world um AI has
+49:07 a has the power to help with with this
+49:11 uh this type of problem and um long term
+49:16 I think health and biology
+49:18 are are the uh the areas where this will
+49:23 make the uh the biggest impact what
+49:26 advice do you have for rather startup
+49:28 venders focus on only one thing move as
+49:32 fast as you
+49:33 can those are I if you do those two
+49:36 things then it will all come all right
+49:38 love it one last question we're going to
+49:41 end on an optimistic note what do you
+49:43 think is the best possible thing that
+49:44 can happen with AI over the next decade
+49:47 I already touched on it uh the
+49:49 opportunities in health and biology and
+49:51 to significantly exp expand Health
+49:55 outcomes uh everywhere in the world is
+49:58 uh amazing uh Dario mod wrote this uh uh
+50:02 this essay uh machines of love and grace
+50:05 and I think he laid out very beautifully
+50:07 there uh what the uh what the potential
+50:11 benefits of generative AI are for all of
+50:14 us okay thank you so much for joining us
+50:16 this has been absolutely fantastic and
+50:19 we're so grateful to get to work with
+50:20 you and for the fact that you're
+50:22 building this on behalf of uh the the
+50:26 right players the people that are trying
+50:29 to to do good good in the world thank
+50:31 you very much for being a pleasure to be
+50:32 you

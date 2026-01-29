@@ -1,0 +1,2641 @@
+00:00 hey everyone we're here on training data
+00:03 
+
+00:03 it's uh great to be here I'm a longtime
+00:05 
+
+00:05 listener and fan of seoa capital pretty
+00:07 
+
+00:07 exciting to have us the host of another
+00:09 
+
+00:09 podcast join as guests yeah I really
+00:12 
+
+00:12 just want to say a huge huge thank you
+00:14 
+
+00:14 thanks for having us on the show yeah
+00:16 
+
+00:16 seriously thank you to Sonia and Pat for
+00:18 
+
+00:18 having us I mean it sounds like we're on
+00:19 
+
+00:19 the show because we've had lots of
+00:20 
+
+00:20 listeners ourselves listeners of Deep
+00:22 
+
+00:22 dive oh yeah we've made a ton of audio
+00:24 
+
+00:24 overview since we launched so it's nice
+00:26 
+
+00:26 to get to talk about it definitely a
+00:27 
+
+00:27 cool experience getting to be here and
+00:29 
+
+00:29 exciting to share what we're going to do
+00:30 
+
+00:30 next exactly it we keep learning and
+00:33 
+
+00:33 getting better for you we're glad you're
+00:35 
+
+00:35 along for the ride so yeah keep
+00:37 
+
+00:37 listening keep listening and stay
+00:39 
+
+00:39 curious we promise to keep diving deep
+00:42 
+
+00:42 and uh bringing you even better options
+00:45 
+
+00:45 in the future stay curious
+00:49 
+
+00:49 [Music]
+01:04 
+
+01:04 two weeks ago a mysterious experimental
+01:06 
+
+01:06 product from Google became the talk of
+01:08 
+
+01:08 the tone notebook LM an AI powered
+01:11 
+
+01:11 research tool that went viral for its
+01:13 
+
+01:13 ability to create staggeringly and
+01:15 
+
+01:15 hilariously realistic podcasts from any
+01:17 
+
+01:17 sorts material today we're excited to
+01:20 
+
+01:20 feature Risa Martin and Jason Spielman
+01:22 
+
+01:22 the product and design leads on Notebook
+01:24 
+
+01:24 LM at Google we talked to Risa and Jason
+01:27 
+
+01:27 about the inspiration for the product
+01:29 
+
+01:29 the development process for a project
+01:31 
+
+01:31 like this inside a large organization
+01:32 
+
+01:32 like Google the surprising use cases
+01:35 
+
+01:35 that have emerged and what's next for
+01:37 
+
+01:37 Notebook
+01:39 
+
+01:39 LM Risa Jason thank you so much for
+01:41 
+
+01:41 joining us today and we're glad that we
+01:43 
+
+01:43 could get you on today before your AI
+01:46 
+
+01:46 podcast host take over the podcasting
+01:47 
+
+01:47 world and put us out of a job so thank
+01:49 
+
+01:49 you for joining us thank you for having
+01:51 
+
+01:51 us I'd love to start by asking you know
+01:53 
+
+01:53 people are calling notebook LM Google's
+01:56 
+
+01:56 chat GPT moment it was an experimental
+01:59 
+
+01:59 product kind of in preview mode and just
+02:01 
+
+02:01 went virals the gpus are going bur you
+02:04 
+
+02:04 guys are you know the Talk of the Town
+02:06 
+
+02:06 do you agree with that take I mean chat
+02:09 
+
+02:09 gbt was was pretty big for me and so to
+02:12 
+
+02:12 imagine the comparison there for me
+02:14 
+
+02:14 feels a little bit like whoa is it um
+02:17 
+
+02:17 but I think what we're seeing from a lot
+02:19 
+
+02:19 of people is that it's having a similar
+02:21 
+
+02:21 impact of like wow this is AI this is
+02:23 
+
+02:23 what AI can do so that's been really
+02:25 
+
+02:25 cool yeah and I think I would agree in
+02:27 
+
+02:27 some sense that the first time I listen
+02:29 
+
+02:29 to an audio overview
+02:31 
+
+02:31 you know when that second host came on
+02:32 
+
+02:32 it really was like a mindblowing
+02:35 
+
+02:35 experience but I think it's also like at
+02:37 
+
+02:37 the underlying layer like the fact that
+02:39 
+
+02:39 we have Gemini 1.5 Pro digesting all
+02:42 
+
+02:42 this really complicated information um
+02:44 
+
+02:44 and spitting it out in a way that's
+02:46 
+
+02:46 pretty concise um I think like the combo
+02:48 
+
+02:48 of those to me is definitely like a
+02:50 
+
+02:50 pretty unbelievable moment just for
+02:53 
+
+02:53 everyone who's listening what what is
+02:54 
+
+02:54 notebook for anybody that hasn't played
+02:55 
+
+02:55 with the products yet yeah notebook is
+02:58 
+
+02:58 an AI powered research and writing tool
+03:01 
+
+03:01 but I think nowadays it's more commonly
+03:03 
+
+03:03 known as upload a source and then it
+03:05 
+
+03:05 will generate an audio overview for you
+03:07 
+
+03:07 or podcast and did that happen by
+03:09 
+
+03:09 accident like did you start out wanting
+03:11 
+
+03:11 to build a you know a podcast host
+03:13 
+
+03:13 killer or did that did that come out by
+03:16 
+
+03:16 by accident somehow I think you know
+03:18 
+
+03:18 honestly uh we were always working on
+03:21 
+
+03:21 the different modalities for output I
+03:23 
+
+03:23 think voice was the next one and we
+03:24 
+
+03:24 chose dialogue did we know that it was
+03:27 
+
+03:27 going to be a killer I want say no I I
+03:30 
+
+03:30 think I thought it was pretty magical
+03:32 
+
+03:32 but the way that it's really landed with
+03:33 
+
+03:33 people has been delightful and
+03:35 
+
+03:35 surprising well and I know you guys have
+03:37 
+
+03:37 been working on Notebook LM for a while
+03:39 
+
+03:39 can you take us back to the beginning of
+03:40 
+
+03:40 the project you know what was the
+03:42 
+
+03:42 initial idea how did it come to be yeah
+03:45 
+
+03:45 I mean I remember I was working on AI
+03:48 
+
+03:48 Test Kitchen and this was last year and
+03:52 
+
+03:52 uh notebook actually started as a 20%
+03:54 
+
+03:54 project we had one engineer who had been
+03:57 
+
+03:57 working on something called talk to
+03:59 
+
+03:59 small Corp
+04:01 
+
+04:01 and super
+04:02 
+
+04:02 funny great consumer brand I was like
+04:05 
+
+04:05 what is a corpus uh but then I would
+04:07 
+
+04:07 chat with him he was like Hey you know
+04:08 
+
+04:08 it's really the idea that you can use
+04:10 
+
+04:10 llms to talk to your data try to extract
+04:13 
+
+04:13 stuff from it and I was like oh that's
+04:15 
+
+04:15 super interesting started thinking about
+04:17 
+
+04:17 okay what are the practical use cases
+04:19 
+
+04:19 here and I actually went to school as an
+04:22 
+
+04:22 adult learner and it to me I was like
+04:25 
+
+04:25 wait a second if I use an llm and I
+04:28 
+
+04:28 understood what llms could do and I
+04:30 
+
+04:30 could use this maybe to talk to
+04:31 
+
+04:31 something like a textbook oh this is
+04:34 
+
+04:34 pretty exciting I could see how that
+04:35 
+
+04:35 could that could change my life it could
+04:36 
+
+04:36 change lots of lives and that's when we
+04:39 
+
+04:39 started really revving on like hey what
+04:41 
+
+04:41 do we build to introduce the first
+04:43 
+
+04:43 version of this to people and you know
+04:46 
+
+04:46 it was in May of 23 that we introduced
+04:48 
+
+04:48 project hwind and it was just that you
+04:50 
+
+04:50 uploaded a source a PDF you can chat
+04:53 
+
+04:53 with it yeah I think that the fact that
+04:55 
+
+04:55 we are Source grounded is what makes the
+04:58 
+
+04:58 product so unique um I think even when I
+05:00 
+
+05:00 started thinking about this project I
+05:03 
+
+05:03 didn't realize that everything in my
+05:04 
+
+05:04 life that I create often has some sort
+05:07 
+
+05:07 of Prior artifact or document that I
+05:10 
+
+05:10 used to create something new um and so I
+05:12 
+
+05:12 think you know right now at least I
+05:14 
+
+05:14 would call this like a source grounded
+05:15 
+
+05:15 tool um but we're really becoming a
+05:17 
+
+05:17 source grounded tool for creation um and
+05:19 
+
+05:19 a bunch of other stuff as well are there
+05:22 
+
+05:22 any stats you can share about notebook
+05:24 
+
+05:24 LM I think what I'll share is that we
+05:27 
+
+05:27 were on a steady growth path before a
+05:30 
+
+05:30 overviews but since we launched it it's
+05:32 
+
+05:32 sort of rapidly accelerated and that's
+05:34 
+
+05:34 been really exciting it's been a really
+05:36 
+
+05:36 good hook to bring people into the
+05:38 
+
+05:38 product um I think the other thing I'll
+05:40 
+
+05:40 say is that while it brings people in uh
+05:44 
+
+05:44 people generally stay for the rest of
+05:45 
+
+05:45 the features and that's been also really
+05:47 
+
+05:47 interesting to see in terms of like what
+05:49 
+
+05:49 people are trying to get out of a tool
+05:50 
+
+05:50 like notebook so the podcast or the
+05:52 
+
+05:52 audio overview experience is absolutely
+05:55 
+
+05:55 magical can you tell us a little bit
+05:56 
+
+05:56 about how it works behind the scenes
+05:58 
+
+05:58 like how did you make it so lifelike how
+05:60 
+
+05:60 did you make it how do you make the
+06:01 
+
+06:01 dialogue so good and engaging it just
+06:03 
+
+06:03 draws you in like how do you do it yeah
+06:06 
+
+06:06 I mean first I'll tell you it was a lot
+06:08 
+
+06:08 of work it was a lot of teamwork there
+06:10 
+
+06:10 is a lot of craftsmanship that really
+06:12 
+
+06:12 went into it but at the heart of it is
+06:14 
+
+06:14 really Google's models you've got Gemini
+06:16 
+
+06:16 1.5 which is such an incredible model in
+06:19 
+
+06:19 terms of taking all of that data that
+06:21 
+
+06:21 you give to notebook LM and then
+06:23 
+
+06:23 producing something new out of it and
+06:25 
+
+06:25 then you have the voice models the Audio
+06:27 
+
+06:27 models that back uh notebook LM I'd say
+06:30 
+
+06:30 the real sort of Powerhouse between
+06:32 
+
+06:32 those two is something we've built
+06:34 
+
+06:34 called content studio and that's really
+06:37 
+
+06:37 what brings to life sort of the the
+06:39 
+
+06:39 editorial right between you bringing
+06:41 
+
+06:41 your content and then coming out with
+06:44 
+
+06:44 the podcast there's some editorial
+06:46 
+
+06:46 Liberty that we take with the
+06:48 
+
+06:48 studio and so in the future do you see
+06:50 
+
+06:50 yourself exposing the studio out to
+06:52 
+
+06:52 people you know make this make this one
+06:54 
+
+06:54 funnier make make this one more serious
+06:57 
+
+06:57 so I think like that we hear a lot like
+06:59 
+
+06:59 particularly because so many people are
+07:01 
+
+07:01 using it so many people are delighted by
+07:03 
+
+07:03 it I think the next step is then people
+07:06 
+
+07:06 want the knobs right they want to be
+07:08 
+
+07:08 able to control it and this is where you
+07:10 
+
+07:10 know my gut reaction was okay let's ship
+07:12 
+
+07:12 the knobs but I'm trying to have a
+07:16 
+
+07:16 little bit more discipline in thinking
+07:19 
+
+07:19 that hey you know people fell in love
+07:20 
+
+07:20 with it because it was delightful it was
+07:22 
+
+07:22 magical how do I ship delightful and
+07:24 
+
+07:24 magical knobs totally that you know
+07:27 
+
+07:27 there's only so much I can do but but I
+07:29 
+
+07:29 think there's a way and so I'm very
+07:31 
+
+07:31 interested in doing that I actually do
+07:33 
+
+07:33 think part of the explosion of audio
+07:35 
+
+07:35 overviews was the fact it was a simple
+07:37 
+
+07:37 oneclick experience you know I was on
+07:40 
+
+07:40 the with my grandma trying to explain
+07:41 
+
+07:41 her how to use it and it actually didn't
+07:43 
+
+07:43 take any explanation you know I'm like
+07:45 
+
+07:45 okay drop in a source she's like oh I
+07:47 
+
+07:47 see I click this button to generate it
+07:49 
+
+07:49 and I think that the the ease of
+07:50 
+
+07:50 creation really actually is what
+07:52 
+
+07:52 catalyzed so much explosion um and so I
+07:55 
+
+07:55 think when we as we think about adding
+07:58 
+
+07:58 these knobs I think we want to do in a
+07:60 
+
+07:60 way that's very intentional also just
+08:02 
+
+08:02 like fun you mentioned people come for
+08:05 
+
+08:05 the podcast and then stay for everything
+08:06 
+
+08:06 else what are some of the best use cases
+08:09 
+
+08:09 you've seen for the everything else I
+08:11 
+
+08:11 think um I'd say one of the most
+08:13 
+
+08:13 surprising ones I talked a little bit
+08:15 
+
+08:15 about the educational use case it was
+08:16 
+
+08:16 very personal to me and I saw a lot of
+08:18 
+
+08:18 students and a lot of Educators using
+08:21 
+
+08:21 notebook LM but what's been surprising
+08:25 
+
+08:25 is to see the amount of people that are
+08:27 
+
+08:27 using notebook LM at work so one good
+08:30 
+
+08:30 example is we run we ran a pilot case
+08:33 
+
+08:33 study inside of Google and So within the
+08:35 
+
+08:35 ads team we have a lot of AD sellers ad
+08:37 
+
+08:37 Specialists and I didn't know this but
+08:40 
+
+08:40 for these ad sellers a lot of their
+08:42 
+
+08:42 sales training and documentation are
+08:44 
+
+08:44 hundreds of pages long and I was just
+08:46 
+
+08:46 like how does anybody learn this right
+08:47 
+
+08:47 and then the stuff changes all the time
+08:50 
+
+08:50 and so it's very hard to keep track of
+08:52 
+
+08:52 how something works you know well enough
+08:55 
+
+08:55 such that you can sell it and what the
+08:57 
+
+08:57 sales teams normally do or before book
+08:60 
+
+08:60 LM what they would do is they would ping
+09:01 
+
+09:01 each other they' be like Hey Joe right
+09:04 
+
+09:04 how does this thing work how do I
+09:05 
+
+09:05 position it for this client you wait for
+09:08 
+
+09:08 Joe to respond and then you're like okay
+09:09 
+
+09:09 let me copy paste this into an email
+09:11 
+
+09:11 fiddle it a little bit and that was it
+09:14 
+
+09:14 um but it turns out people like Joe who
+09:16 
+
+09:16 have a lot of that knowledge and read
+09:18 
+
+09:18 all of this documentation they build the
+09:20 
+
+09:20 notebooks and then they distribute it to
+09:23 
+
+09:23 their sales associates and then that's
+09:26 
+
+09:26 hundreds of people automatically that
+09:28 
+
+09:28 are using the notebook because now they
+09:29 
+
+09:29 don't have to pick
+09:30 
+
+09:30 and that that's really interesting to me
+09:32 
+
+09:32 because I was like oh it's like a really
+09:34 
+
+09:34 simple use case and then there's so much
+09:36 
+
+09:36 more that you can really build on top of
+09:38 
+
+09:38 that totally actually was just hearing I
+09:40 
+
+09:40 was talking to a friend who's in sales
+09:42 
+
+09:42 who was like dude it's it's great I made
+09:44 
+
+09:44 this whole notebook and I when I'm on
+09:47 
+
+09:47 calls I don't know the answer I can
+09:48 
+
+09:48 quickly ask and get a response and so I
+09:50 
+
+09:50 think that this idea of knowledge
+09:52 
+
+09:52 distribution is really helpful for large
+09:54 
+
+09:54 sales team or data um data centers and
+09:56 
+
+09:56 stuff um I think another use case that I
+09:60 
+
+09:60 think is really interesting that
+10:00 
+
+10:00 actually you may align with is I have a
+10:02 
+
+10:02 lot of friends who work in Venture and
+10:04 
+
+10:04 PE and um this idea of a confidential
+10:07 
+
+10:07 information memorandum a Sim you know I
+10:09 
+
+10:09 never heard of this before um but I have
+10:11 
+
+10:11 a friend who he's like this is my whole
+10:13 
+
+10:13 job is basically going through these
+10:15 
+
+10:15 packets of information and so what I do
+10:18 
+
+10:18 is I take these you know these documents
+10:20 
+
+10:20 I receive or slides I put it in a
+10:22 
+
+10:22 notebook and I'm able to now way faster
+10:24 
+
+10:24 than before go through all this fairly
+10:27 
+
+10:27 complex information um and I think that
+10:30 
+
+10:30 he was you know he was telling me he
+10:31 
+
+10:31 like 10 xed his job speed you know which
+10:34 
+
+10:34 is great and it's just this is
+10:35 
+
+10:35 empowering him to be faster podcast host
+10:38 
+
+10:38 and Venture Capital you are really going
+10:39 
+
+10:39 after our jobs I we're helping out your
+10:42 
+
+10:42 jobs I don't I don't think yeah what
+10:44 
+
+10:44 have been the moments that have
+10:45 
+
+10:45 surprised you the most for me it was you
+10:47 
+
+10:47 know the moment where the the AI hosts
+10:49 
+
+10:49 kind of realized that they their AI that
+10:51 
+
+10:51 was like this really cool moments but
+10:53 
+
+10:53 what what what have been the moments
+10:54 
+
+10:54 along the way that have surprised you
+10:55 
+
+10:55 the most I mean I'll I'll start I was I
+10:59 
+
+10:59 was going to bed this was last weekend I
+11:01 
+
+11:01 think or just several days ago um and I
+11:04 
+
+11:04 was on Twitter probably not healthy to
+11:06 
+
+11:06 be doing this before bed but I was check
+11:08 
+
+11:08 Twitter it's Fire by the
+11:11 
+
+11:11 way I I was scrolling through and I saw
+11:14 
+
+11:14 the poop fart one if folks haven't heard
+11:17 
+
+11:17 it I also now I'm just like this is a
+11:20 
+
+11:20 very important mention by the way like
+11:21 
+
+11:21 if you haven't heard it you really do
+11:23 
+
+11:23 need to understand how magical this one
+11:25 
+
+11:25 is okay if folks have not heard the poop
+11:26 
+
+11:26 fart one somebody de to us somebody
+11:30 
+
+11:30 decided they were going to upload a
+11:31 
+
+11:31 document where the the only words in the
+11:33 
+
+11:33 doc were poop and fart over and over and
+11:35 
+
+11:35 over and over again so it was a pretty
+11:36 
+
+11:36 lengthy doc but it was just those two
+11:38 
+
+11:38 words and I saw that's what they had
+11:41 
+
+11:41 done with it they described it and I was
+11:42 
+
+11:42 like oh man should I listen now it's 11
+11:45 
+
+11:45 o' if I tap this and it's a safety flag
+11:49 
+
+11:49 I'm not going to be able to go to bed
+11:51 
+
+11:51 right because I'm G to have to open a
+11:52 
+
+11:52 bug I'm going to Ping the engineers it's
+11:53 
+
+11:53 like hey we got this thing going on I
+11:56 
+
+11:56 was like all right I'll just listen and
+11:58 
+
+11:58 it's actually un
+12:00 
+
+12:00 unbelievable I also like I saw it and I
+12:02 
+
+12:02 was like uh oh like we let's let's let's
+12:05 
+
+12:05 see what this is going to be and you
+12:06 
+
+12:06 listen you're like oh this is this is
+12:08 
+
+12:08 fantastic like this is even better than
+12:10 
+
+12:10 I could have ever imagined it was one of
+12:12 
+
+12:12 those mods where I was like Well Done
+12:13 
+
+12:13 notebook good little guy solving the
+12:15 
+
+12:15 right Goins
+12:17 
+
+12:17 clearly amazing um what design choices
+12:20 
+
+12:20 have you made that that have made
+12:22 
+
+12:22 notebook work so well and so intuitive
+12:25 
+
+12:25 for people you know I think that I
+12:27 
+
+12:27 clarify we're still making those
+12:29 
+
+12:29 decisions um I think right now we're
+12:31 
+
+12:31 very much in the process of you know
+12:34 
+
+12:34 launching quickly and then working
+12:35 
+
+12:35 closely with our users to understand
+12:38 
+
+12:38 what's best and what they want um you
+12:40 
+
+12:40 know Tech is evolving so fast right now
+12:43 
+
+12:43 that it's really hard to know what's
+12:44 
+
+12:44 even possible and so I think that we're
+12:46 
+
+12:46 really pushing for this model where we
+12:48 
+
+12:48 launch quickly and then work kind of
+12:50 
+
+12:50 alongside our users to build the best
+12:52 
+
+12:52 product um but to answer your question
+12:54 
+
+12:54 more specifically I think that one thing
+12:56 
+
+12:56 that we've done that I think was almost
+12:59 
+
+12:59 a happy accident in a way was make that
+13:01 
+
+13:01 left Source panel really clear I think
+13:04 
+
+13:04 that we are a source grounded project
+13:06 
+
+13:06 and we need to make that clear that
+13:07 
+
+13:07 you're talking to the sources that
+13:09 
+
+13:09 you've uploaded and so I think that um
+13:11 
+
+13:11 having those sources there on the left
+13:13 
+
+13:13 is like a pretty crucial part of this
+13:14 
+
+13:14 project um I do also think though as I
+13:17 
+
+13:17 was mentioning earlier audio overviews
+13:19 
+
+13:19 being one click um seem to actually pay
+13:22 
+
+13:22 off that it we we like really leaned
+13:24 
+
+13:24 into the simple experience um but that
+13:26 
+
+13:26 being said there's a lot more coming and
+13:28 
+
+13:28 we're actively working with you users to
+13:29 
+
+13:29 improve the project product I think one
+13:33 
+
+13:33 thing that I'll I'll chime in in terms
+13:34 
+
+13:34 of like design choices and and really I
+13:36 
+
+13:36 think on the product prioritization sort
+13:39 
+
+13:39 of side of things is really thinking
+13:41 
+
+13:41 through what does it take to make
+13:43 
+
+13:43 something new
+13:45 
+
+13:45 intuitive and it's really hard
+13:48 
+
+13:48 especially something as nuanced as like
+13:50 
+
+13:50 oh first you have to upload a source
+13:52 
+
+13:52 like users generally like bulk at that
+13:54 
+
+13:54 step like why right like I don't have to
+13:57 
+
+13:57 upload a source to chat GPT I don't have
+13:58 
+
+13:58 to upload a source to Gemini it just
+14:00 
+
+14:00 works and so I think we still have a lot
+14:02 
+
+14:02 of work to do uh around the it just
+14:05 
+
+14:05 works
+14:06 
+
+14:06 category what do you think are the
+14:08 
+
+14:08 biggest challenges remaining as you you
+14:10 
+
+14:10 know kind of bring people on to this new
+14:12 
+
+14:12 a AI native experience yeah I think that
+14:15 
+
+14:15 we're kind of in this quote unquote
+14:17 
+
+14:17 skoric era of AI design um and I think
+14:21 
+
+14:21 to explain skor ISM it's when a virtual
+14:23 
+
+14:23 object reflects a real world object and
+14:26 
+
+14:26 that was seen in early iOS when the um
+14:29 
+
+14:29 the app had a leather bounding at the
+14:31 
+
+14:31 top and the pad was yellow and that was
+14:33 
+
+14:33 made to kind of ease users into this uh
+14:36 
+
+14:36 virtual world from the physical world
+14:38 
+
+14:38 and I think now we're seeing something
+14:39 
+
+14:39 similar with AI where we need to build
+14:42 
+
+14:42 uis that help meet users where they are
+14:44 
+
+14:44 and I think right now we're doing our
+14:46 
+
+14:46 best to kind of be really creative and
+14:48 
+
+14:48 think about these new kind of crazy um
+14:51 
+
+14:51 experiences but also understanding that
+14:54 
+
+14:54 many of these users this is the first
+14:55 
+
+14:55 time interacting with artificial
+14:57 
+
+14:57 intelligence how do you think about you
+14:59 
+
+14:59 know one thing I think mid Journey has
+15:01 
+
+15:01 done extremely well is just making it
+15:03 
+
+15:03 easy to you know get over the blank wall
+15:06 
+
+15:06 prompt problem and so like to me that's
+15:08 
+
+15:08 something that mid Journey has done
+15:09 
+
+15:09 extremely well are there any other
+15:10 
+
+15:10 applications that have kind of
+15:12 
+
+15:12 approached some of these UI challenges
+15:14 
+
+15:14 that you
+15:15 
+
+15:15 admire I have one uh recently I just
+15:19 
+
+15:19 tried
+15:20 
+
+15:20 Pika and I really love the Pika effects
+15:23 
+
+15:23 where you can see exactly what's going
+15:25 
+
+15:25 to happen to your image if you if you
+15:27 
+
+15:27 upload one because Pika is similar in to
+15:29 
+
+15:29 the that you have to upload something
+15:30 
+
+15:30 and then you have to maybe write a
+15:31 
+
+15:31 prompt or choose an effect and I think
+15:34 
+
+15:34 it was really well done where it's like
+15:35 
+
+15:35 hey here's a preview right it will
+15:37 
+
+15:37 squish the thing I was like oh this is
+15:40 
+
+15:40 fascinating and of course I uploaded
+15:42 
+
+15:42 there was like one that was like cake I
+15:44 
+
+15:44 uploaded a a drink a picture of a drink
+15:47 
+
+15:47 and I was like make it cake and just
+15:49 
+
+15:49 like the anticipation of the drink is
+15:52 
+
+15:52 going to become cake I was like come on
+15:53 
+
+15:53 come on come on I was like should I pay
+15:55 
+
+15:55 for it now it was like my first
+15:56 
+
+15:56 generation too I was ready to pay for it
+15:59 
+
+15:59 and I that's that's how I knew I was
+16:00 
+
+16:00 like oh like there's definitely
+16:02 
+
+16:02 something there about show the user
+16:04 
+
+16:04 what's on the flip side that I think
+16:06 
+
+16:06 really incentivizes the user to not only
+16:09 
+
+16:09 you know give you the image but like
+16:11 
+
+16:11 they're really excited to see what
+16:12 
+
+16:12 happens and then you know if you're me
+16:15 
+
+16:15 you're like take my $10 yeah so it's
+16:18 
+
+16:18 really effective you know I think for me
+16:22 
+
+16:22 I love Cloud artifacts um I think
+16:25 
+
+16:25 they've done such an amazing job of
+16:26 
+
+16:26 co-creation um we've talked a lot about
+16:29 
+
+16:29 writing code creation um and it was
+16:31 
+
+16:31 awesome to see kind of others in the
+16:33 
+
+16:33 space thinking about that as well um I
+16:35 
+
+16:35 think that right now as I was just
+16:37 
+
+16:37 briefly mentioning like we're in this
+16:38 
+
+16:38 space where we want to equal the
+16:40 
+
+16:40 hierarchy between you know Ai and human
+16:43 
+
+16:43 and I think we definitely don't want to
+16:44 
+
+16:44 take your jobs we want just want to help
+16:46 
+
+16:46 support your jobs you know and I think
+16:48 
+
+16:48 that cloud artifacts was like a perfect
+16:49 
+
+16:49 example of that in my mind which was
+16:51 
+
+16:51 cool you can talk to the chat but also
+16:53 
+
+16:53 start building out something on this
+16:54 
+
+16:54 right side as well how do you think your
+16:56 
+
+16:56 product kind of you know compare and
+16:58 
+
+16:58 contrast to the approach that cloud has
+16:60 
+
+16:60 taken like do you think it's you know
+17:01 
+
+17:01 similar things that you're going after
+17:03 
+
+17:03 or how do you think about the
+17:05 
+
+17:05 differences I mean I think first and
+17:07 
+
+17:07 foremost right now at least we're a
+17:08 
+
+17:08 source grounded tool which um kind of
+17:11 
+
+17:11 immediately makes us a bit different um
+17:13 
+
+17:13 that being said I think we're thinking a
+17:15 
+
+17:15 lot about creation broadly um utilizing
+17:18 
+
+17:18 the sources that you've uploaded well I
+17:20 
+
+17:20 think I think to that point like the
+17:23 
+
+17:23 contextualization of your llm
+17:25 
+
+17:25 interactions is really powerful and I
+17:27 
+
+17:27 think it creates like a stickier user
+17:29 
+
+17:29 experience I think that you know if I
+17:32 
+
+17:32 had to guess like the folks at Claude
+17:34 
+
+17:34 probably know this or the folks at
+17:35 
+
+17:35 anthropic the folks at open AI probably
+17:37 
+
+17:37 know this certainly the people at Google
+17:39 
+
+17:39 know this but I think there is a
+17:41 
+
+17:41 question of when to introduce it and
+17:43 
+
+17:43 what are the right surfaces so I think
+17:45 
+
+17:45 this is where for Notebook LM I'm
+17:47 
+
+17:47 excited because we started there right
+17:49 
+
+17:49 so there's like a a little bit of hey as
+17:51 
+
+17:51 people catch on to the importance of
+17:54 
+
+17:54 like Source grounded workflows Source
+17:56 
+
+17:56 grounded stories this could be the tool
+17:59 
+
+17:59 that they're looking for and if we just
+18:00 
+
+18:00 Sprint at this hopefully we'll get
+18:02 
+
+18:02 farther along you know before before
+18:04 
+
+18:04 everybody else who's juggling all of
+18:05 
+
+18:05 these other use cases you mentioned
+18:07 
+
+18:07 earlier that you know chat is kind of
+18:09 
+
+18:09 the skoric interface for for AI and that
+18:13 
+
+18:13 you guys are experimenting with crazier
+18:15 
+
+18:15 things like what what might the crazier
+18:16 
+
+18:16 things look or feel like give us a taste
+18:19 
+
+18:19 you know I think that just at a high
+18:21 
+
+18:21 level I'm super intrigued with these
+18:23 
+
+18:23 kind of dynamic uis actually think
+18:26 
+
+18:26 Claude is an example of that right you
+18:27 
+
+18:27 see this artifact come in that wasn't
+18:29 
+
+18:29 originally there um I think we're
+18:31 
+
+18:31 thinking a lot about how to we're trying
+18:33 
+
+18:33 to do a lot here right Reading Writing
+18:36 
+
+18:36 and I think there's only so much that
+18:38 
+
+18:38 you can do before a user gets
+18:39 
+
+18:39 overwhelmed and so I think we're really
+18:42 
+
+18:42 exploring how do we take advantage of
+18:44 
+
+18:44 what you're doing at that moment um
+18:46 
+
+18:46 while also not overwhelming you with all
+18:48 
+
+18:48 the other
+18:49 
+
+18:49 possibilities I think for me I think a
+18:51 
+
+18:51 lot about leaning more into new
+18:53 
+
+18:53 modalities which is what does it mean
+18:56 
+
+18:56 from an input and an output side and um
+18:59 
+
+18:59 I do a lot of prototyping on my own and
+19:01 
+
+19:01 experiment with a lot of my own
+19:03 
+
+19:03 behaviors and one of my favorite ones is
+19:05 
+
+19:05 sort of the idea that I can sort of walk
+19:06 
+
+19:06 and talk with my llm right or with like
+19:09 
+
+19:09 an AI sort of ecosystem and one of my
+19:13 
+
+19:13 favorite recent examples is I started
+19:15 
+
+19:15 doing this with a Daily Journal where
+19:17 
+
+19:17 instead of writing my journal I just go
+19:19 
+
+19:19 back and forth and it creates the
+19:21 
+
+19:21 journal log for me and then it creates a
+19:23 
+
+19:23 visualization of basically like hey you
+19:26 
+
+19:26 know this week you had more bad days
+19:27 
+
+19:27 than good or you had more good days than
+19:29 
+
+19:29 bad here are the things right that made
+19:31 
+
+19:31 you happy here are the things that made
+19:33 
+
+19:33 you upset and I think there's a lot of
+19:36 
+
+19:36 richness there um in interaction where I
+19:39 
+
+19:39 think about it it's like hey Source
+19:40 
+
+19:40 grounded AI of course there's like some
+19:42 
+
+19:42 really practical sort of work use cases
+19:45 
+
+19:45 there there's some educational use cases
+19:47 
+
+19:47 but the personal ones are also really
+19:49 
+
+19:49 compelling and so I'm trying to think
+19:50 
+
+19:50 about how how do I take these learnings
+19:53 
+
+19:53 and bring it back into notebook LM and
+19:55 
+
+19:55 you know probably in something like the
+19:57 
+
+19:57 mobile app right we might see more of
+19:59 
+
+19:59 that
+19:60 
+
+19:60 so you know have you know you have
+20:02 
+
+20:02 lightning in a bottle with notebook LM
+20:04 
+
+20:04 where where do you hope to take it from
+20:06 
+
+20:06 here I think honestly just keep going I
+20:10 
+
+20:10 just want to keep building more cool
+20:11 
+
+20:11 stuff we want to deepen the experience
+20:14 
+
+20:14 for users we want to make it really
+20:16 
+
+20:16 useful I think there's a lot of magic
+20:20 
+
+20:20 right now a lot of delight and I think
+20:21 
+
+20:21 we want to deliver on the promise of
+20:23 
+
+20:23 that that initial hit and just show
+20:25 
+
+20:25 people like hey you can you stick around
+20:28 
+
+20:28 it's going to be great what do you think
+20:29 
+
+20:29 is the biggest thing missing from the
+20:31 
+
+20:31 product today oh well I'll say if I
+20:35 
+
+20:35 could you know rewind back in time and
+20:38 
+
+20:38 build more things as part of this launch
+20:41 
+
+20:41 I would definitely build a better share
+20:42 
+
+20:42 experience just the amount of uh you
+20:45 
+
+20:45 know when I scroll on X and I see all
+20:48 
+
+20:48 the videos and visualizers that people
+20:50 
+
+20:50 use instead of like our native one you
+20:53 
+
+20:53 know as a as a product lead I'm like oh
+20:56 
+
+20:56 I'm missing out on Counting this user
+20:57 
+
+20:57 here because they're on different
+20:59 
+
+20:59 surface now so I think for me it's
+21:01 
+
+21:01 really the sharing uh and sort of
+21:03 
+
+21:03 collaboration around uh the audio
+21:05 
+
+21:05 overviews that's missing and I think as
+21:07 
+
+21:07 we started talking about I think I'm
+21:09 
+
+21:09 really excited about the addition of a
+21:11 
+
+21:11 of a writing experience um I think that
+21:14 
+
+21:14 we know that people are often doing Q&A
+21:17 
+
+21:17 and then taking that answer to then
+21:18 
+
+21:18 create something new and so I'm just
+21:20 
+
+21:20 excited to help kind of fulfill that
+21:22 
+
+21:22 whole user Journey how do you make it
+21:24 
+
+21:24 like are you Pro prompt engineering to
+21:26 
+
+21:26 make it kind of like do you tell it to
+21:29 
+
+21:29 like you know conversational funny like
+21:32 
+
+21:32 how what are you doing on the technology
+21:33 
+
+21:33 yeah how do you design the personalities
+21:34 
+
+21:34 I'm really curious about that too so
+21:36 
+
+21:36 there's a lot um that we do in the
+21:39 
+
+21:39 background and I think you hit on some
+21:42 
+
+21:42 really good aspects of it especially
+21:45 
+
+21:45 around you know the show is called Deep
+21:47 
+
+21:47 dive right there's clearly Two Hosts and
+21:50 
+
+21:50 what I'll say is that there's a lot more
+21:53 
+
+21:53 editorial Liberty that the personas
+21:56 
+
+21:56 themselves take to generate that show
+21:60 
+
+21:60 and I think that's where you know even
+22:02 
+
+22:02 for me I am always interested to see
+22:04 
+
+22:04 where they're going to take the show
+22:05 
+
+22:05 based on the sources that are uploaded
+22:07 
+
+22:07 oh interesting so you've given each of
+22:09 
+
+22:09 the sources its own personality its own
+22:11 
+
+22:11 how how it approaches things and then
+22:13 
+
+22:13 you let it create the podcast yeah in a
+22:16 
+
+22:16 nutshell I think like that's the that's
+22:18 
+
+22:18 the best explanation for what we've got
+22:20 
+
+22:20 going and so when we think about the
+22:22 
+
+22:22 editing experience right it's like oh
+22:24 
+
+22:24 what are the controls for something like
+22:25 
+
+22:25 that of course like there's like basic
+22:27 
+
+22:27 stuff which is maybe I don't don't want
+22:29 
+
+22:29 a deep dive maybe I want a different
+22:30 
+
+22:30 show maybe I want a different length
+22:32 
+
+22:32 maybe I want shorter maybe I want longer
+22:34 
+
+22:34 maybe I just want a spec you know uh
+22:37 
+
+22:37 specify a topic instead of like the
+22:38 
+
+22:38 whole thing because today it's like an
+22:40 
+
+22:40 overview based uh audio so I think
+22:43 
+
+22:43 there's there's a lot there that we can
+22:45 
+
+22:45 tweak but the heart of it is really this
+22:48 
+
+22:48 editorial Liberty around your sources
+22:50 
+
+22:50 and trying to give you an overview of it
+22:53 
+
+22:53 and every time I've joked that you're
+22:54 
+
+22:54 going to take our jobs you say you say
+22:55 
+
+22:55 we're not but I don't know if you're
+22:57 
+
+22:57 just saying that to be nice because what
+22:59 
+
+22:59 you've generated is legitimately so good
+23:01 
+
+23:01 and so the real question I have is when
+23:03 
+
+23:03 you say that it's not good enough to
+23:04 
+
+23:04 replace real podcast like why why do you
+23:06 
+
+23:06 say that because it to me it feels good
+23:07 
+
+23:07 enough to replace a real podcast I think
+23:09 
+
+23:09 you know I think that's like a a good
+23:11 
+
+23:11 question and one that I I try to
+23:13 
+
+23:13 approach really carefully particularly
+23:15 
+
+23:15 because hey if there's real risk I want
+23:17 
+
+23:17 to I want to look at it in the eye and
+23:19 
+
+23:19 say okay how how do we how do we address
+23:21 
+
+23:21 this but from what I've seen a lot of
+23:25 
+
+23:25 what people are making are not the same
+23:27 
+
+23:27 things that I feel like we would of a
+23:29 
+
+23:29 real podcast about right like do I want
+23:32 
+
+23:32 to listen do I want to take an article
+23:34 
+
+23:34 and make a podcast out of it that
+23:35 
+
+23:35 replaces you know one of my favorite
+23:36 
+
+23:36 podcast Lenny's right I listen to
+23:38 
+
+23:38 Lenny's all the time it's like no I want
+23:39 
+
+23:39 to listen to Lenny I want to listen to
+23:41 
+
+23:41 what he thinks about this particular
+23:42 
+
+23:42 topic um and and then what's funny is
+23:45 
+
+23:45 like people are making audio overviews
+23:47 
+
+23:47 of things like their resumés right their
+23:49 
+
+23:49 LinkedIn bio or startup Founders putting
+23:52 
+
+23:52 in their landing pages and trying to
+23:53 
+
+23:53 figure out oh was my messaging clear
+23:55 
+
+23:55 like that stuff is really cool because
+23:57 
+
+23:57 it's like no one's ever going to make a
+23:58 
+
+23:58 podcast of that I mean maybe not at this
+24:00 
+
+24:00 stage right but um that's where I think
+24:03 
+
+24:03 okay this feels really good it feels
+24:05 
+
+24:05 like we've created a space where
+24:07 
+
+24:07 personalized generation really is about
+24:10 
+
+24:10 meeting my needs exactly where I'm at
+24:13 
+
+24:13 and there isn't an existing thing out
+24:14 
+
+24:14 there and that's really special it does
+24:16 
+
+24:16 almost feel like a different media type
+24:18 
+
+24:18 like sure it sounds like a podcast but I
+24:20 
+
+24:20 think you give great examples to kind of
+24:22 
+
+24:22 prove all these random use cases people
+24:24 
+
+24:24 are using it for but I think there's
+24:26 
+
+24:26 also a reason that reaction videos are
+24:28 
+
+24:28 so popular online like people aren't
+24:30 
+
+24:30 just listening to this right now because
+24:32 
+
+24:32 of us because they want to hear from
+24:34 
+
+24:34 both of you who are in this space and I
+24:35 
+
+24:35 think that's also important to remember
+24:37 
+
+24:37 when they came out podcasts I will say
+24:39 
+
+24:39 like one interesting thing about the
+24:41 
+
+24:41 dynamic is even though people are
+24:43 
+
+24:43 sharing the audio overviews that they're
+24:45 
+
+24:45 generating they're very personal it's
+24:47 
+
+24:47 like I made this for me I didn't make it
+24:50 
+
+24:50 for you to listen to my resume it was me
+24:53 
+
+24:53 I was delighted by the audio overview of
+24:55 
+
+24:55 my resume or there's this really cool
+24:57 
+
+24:57 Tik Tok of where this uh woman uploads
+24:60 
+
+24:60 her diary from 2004 it's like it was
+25:04 
+
+25:04 interesting to listen to that together
+25:05 
+
+25:05 but it was really her reaction to her
+25:07 
+
+25:07 diary that you know she wasn't going to
+25:09 
+
+25:09 listen to a podcast about that ever um
+25:11 
+
+25:11 one of my favorite use cases actually I
+25:13 
+
+25:13 don't know if this was in the Discord
+25:15 
+
+25:15 but somebody recently took um they said
+25:17 
+
+25:17 over the weekend their group chat with
+25:19 
+
+25:19 their college friends had blown up and
+25:21 
+
+25:21 so they they didn't read the messages
+25:24 
+
+25:24 but they took all of it and they copy
+25:25 
+
+25:25 pasted it into a dock and they're like
+25:28 
+
+25:28 well Monday morning I'm going to listen
+25:30 
+
+25:30 to what my college friend said on my
+25:31 
+
+25:31 drive to work I like this incredible and
+25:34 
+
+25:34 I think that's what personalized
+25:35 
+
+25:35 generation is so in a world of chat
+25:38 
+
+25:38 boxes where did the idea hey people want
+25:41 
+
+25:41 to listen to this people want to consume
+25:43 
+
+25:43 this content in podcast form like where
+25:46 
+
+25:46 did that idea come from yeah I mean I
+25:49 
+
+25:49 think that it goes back a little bit to
+25:51 
+
+25:51 something Jason was saying which is how
+25:53 
+
+25:53 do we deliver new things in a
+25:55 
+
+25:55 recognizable format or in a way that's
+25:58 
+
+25:58 easy for people to understand such that
+26:01 
+
+26:01 they would be willing to try it and I
+26:03 
+
+26:03 think the combination of upload your
+26:06 
+
+26:06 Source generate a new voice thing we're
+26:09 
+
+26:09 like well what are what's the universe
+26:10 
+
+26:10 of voice things that we could generate
+26:12 
+
+26:12 we have this really powerful voice model
+26:14 
+
+26:14 and we experimented we were like we
+26:15 
+
+26:15 could do a monologue we could do a
+26:17 
+
+26:17 dialogue we could give the user a switch
+26:20 
+
+26:20 but it was really the dialogue that was
+26:22 
+
+26:22 resonating with people because it was
+26:24 
+
+26:24 like oh it's podcast right it's not just
+26:26 
+
+26:26 like a text to speech like reading the
+26:29 
+
+26:29 output like we typically expect and I
+26:31 
+
+26:31 think once we saw how much that
+26:34 
+
+26:34 delighted people we knew that was the
+26:35 
+
+26:35 thing to
+26:36 
+
+26:36 ship okay so you now have this killer
+26:38 
+
+26:38 feature in the podcast and you have an
+26:40 
+
+26:40 incredibly General horizontal surface as
+26:42 
+
+26:42 well where do you go from here like do
+26:44 
+
+26:44 you go deeper into the podcast thing or
+26:46 
+
+26:46 do you go build out when do we get
+26:48 
+
+26:48 YouTube videos yeah yeah I think you
+26:51 
+
+26:51 know that's just that's a cost problem
+26:54 
+
+26:54 we could drop those in now as an input
+26:56 
+
+26:56 but an output yeah I think we gota we
+26:57 
+
+26:57 got to work on that a little bit yeah I
+26:59 
+
+26:59 think uh it's exciting because the road
+27:02 
+
+27:02 map is I don't want to say it's fairly
+27:04 
+
+27:04 straightforward I feel like I'm going to
+27:05 
+
+27:05 jinx myself and some things going to
+27:06 
+
+27:06 happen tomorrow but um we know that we
+27:09 
+
+27:09 want to deliver on the promise of
+27:11 
+
+27:11 bringing in all the inputs that matter
+27:13 
+
+27:13 to you and letting you use the power of
+27:15 
+
+27:15 AI to create something new and I think
+27:17 
+
+27:17 the podcasts are definitely one type of
+27:20 
+
+27:20 output that we want to go deeper on
+27:22 
+
+27:22 especially because we've seen how much
+27:23 
+
+27:23 people care about them so that's one
+27:25 
+
+27:25 part of it but I think we want to
+27:27 
+
+27:27 deliver on the rest like the more
+27:28 
+
+27:28 practical things as well just because
+27:30 
+
+27:30 like everybody everybody has a different
+27:32 
+
+27:32 preference right even even I think uh
+27:34 
+
+27:34 this was two days ago someone was like
+27:36 
+
+27:36 Hey can you just like output better code
+27:38 
+
+27:38 it's like podcast is cool but can you
+27:40 
+
+27:40 just output better code I was like oh
+27:43 
+
+27:43 that's a good idea I mean it was it was
+27:44 
+
+27:44 on the road map and I was like yeah for
+27:46 
+
+27:46 sure we should just deepen the
+27:47 
+
+27:47 investment into like the outputs
+27:49 
+
+27:49 themselves well I'm going to ask you a
+27:51 
+
+27:51 sensitive question okay not sensitive in
+27:54 
+
+27:54 terms of like emotionally sensitive
+27:58 
+
+27:58 see that too if you want we're both here
+28:00 
+
+28:00 to help actually possibly sensitive
+28:02 
+
+28:02 question um you guys it seems like you
+28:05 
+
+28:05 have executed on this much the way you
+28:08 
+
+28:08 might see a startup execute on something
+28:10 
+
+28:10 like pretty Scrappy lean team move fast
+28:13 
+
+28:13 a lot of user feedback iterate in real
+28:15 
+
+28:15 time you know release something
+28:17 
+
+28:17 imperfect to the world and like you know
+28:19 
+
+28:19 kind of test it you know test it in uh
+28:22 
+
+28:22 you know in production
+28:24 
+
+28:24 um which seems a bit different than what
+28:27 
+
+28:27 people might stere stereotypically
+28:29 
+
+28:29 expect of something coming out of Google
+28:31 
+
+28:31 and so I guess the question is in what
+28:33 
+
+28:33 ways has being part of Google helped
+28:37 
+
+28:37 with notebook LM and and what ways have
+28:39 
+
+28:39 you maybe broken the mold a bit uh with
+28:42 
+
+28:42 this project I that's such a good
+28:44 
+
+28:44 question um I think I'll start from the
+28:49 
+
+28:49 perspective of what's been great and
+28:50 
+
+28:50 what's been really special at Google
+28:53 
+
+28:53 which is the two top things that I'll
+28:55 
+
+28:55 say access to the models before you know
+28:59 
+
+28:59 they're fully ready and just being able
+29:01 
+
+29:01 to see the capabilities that are being
+29:03 
+
+29:03 planned helps me to think about the the
+29:05 
+
+29:05 way we build the product in a different
+29:08 
+
+29:08 way which is okay knowing that these
+29:10 
+
+29:10 capabilities are coming how can I make
+29:13 
+
+29:13 this particular Journey better and
+29:14 
+
+29:14 that's been really that's been really
+29:15 
+
+29:15 good uh I'd say the second thing that's
+29:18 
+
+29:18 been really special is just really the
+29:19 
+
+29:19 people this just really smart really
+29:22 
+
+29:22 talented and really collaborative people
+29:25 
+
+29:25 that also just want to build cool things
+29:28 
+
+29:28 and so having the combination of these
+29:30 
+
+29:30 two things is really for me as a product
+29:32 
+
+29:32 Builder is like wow right like this is
+29:34 
+
+29:34 it this is all I need and I can just
+29:36 
+
+29:36 like all I have to do is execute I just
+29:38 
+
+29:38 have to deliver and if I keep going like
+29:40 
+
+29:40 we'll ship something interesting I think
+29:42 
+
+29:42 on maybe the stuff that like doesn't
+29:45 
+
+29:45 quite fit the mold or maybe things that
+29:47 
+
+29:47 we've done a little bit differently I'd
+29:48 
+
+29:48 say that um coming into Labs I knew the
+29:52 
+
+29:52 most important thing for us to do would
+29:54 
+
+29:54 be to
+29:55 
+
+29:55 ship and it's easier not to ship
+29:59 
+
+29:59 than it is to actually do it right like
+30:01 
+
+30:01 especially you know from my experience
+30:03 
+
+30:03 with Google I think there are many times
+30:05 
+
+30:05 that I second guessed myself I was like
+30:07 
+
+30:07 oh how would it affect this or that like
+30:09 
+
+30:09 there's so many considerations but I
+30:12 
+
+30:12 think once you change your orientation
+30:13 
+
+30:13 to no the p is to ship and you have to
+30:16 
+
+30:16 do it at all costs and now I'm about to
+30:19 
+
+30:19 say it on the podcast and I hope our
+30:21 
+
+30:21 Engineers aren't listening also create a
+30:23 
+
+30:23 lot of fake deadlines right and it's
+30:26 
+
+30:26 it's really funny it's really funny
+30:28 
+
+30:28 because it works so I'll be like guys
+30:29 
+
+30:29 October 10th we have to do it it has to
+30:31 
+
+30:31 ship and everyone's like October 10th
+30:33 
+
+30:33 that's in two weeks it's like yeah what
+30:35 
+
+30:35 do we do and they're like all right we
+30:37 
+
+30:37 got to like do it now it's like oh yeah
+30:38 
+
+30:38 I know and so we just like really crank
+30:40 
+
+30:40 on it and it's you know I I'm I'm making
+30:43 
+
+30:43 light of it but for the most part people
+30:45 
+
+30:45 don't really ask like what what's
+30:47 
+
+30:47 happening on October 10th and so it
+30:49 
+
+30:49 works it works for us it's it's worked
+30:51 
+
+30:51 for two years so hopefully they really
+30:52 
+
+30:52 don't listen to keep going that's good
+30:55 
+
+30:55 but I do also think right now I do
+30:57 
+
+30:57 actually think there is a conception
+30:59 
+
+30:59 that Google's slow you know in my seven
+31:01 
+
+31:01 years of Google I've actually been
+31:02 
+
+31:02 surprised how quickly things move but
+31:04 
+
+31:04 you just also have teams that are really
+31:06 
+
+31:06 big that affect billions of users every
+31:09 
+
+31:09 day I think we're in a sweet spot now
+31:11 
+
+31:11 where you have all the values of an
+31:13 
+
+31:13 incumbent like a big company like the
+31:15 
+
+31:15 scale and you know the data but I do
+31:18 
+
+31:18 think also now because we're a small
+31:20 
+
+31:20 team of you know about 10 people we also
+31:22 
+
+31:22 can move quickly yeah we can't wait to
+31:25 
+
+31:25 see what you guys continue to build with
+31:26 
+
+31:26 the product and Hope hopefully don't put
+31:28 
+
+31:28 us out of a job too soon but it really
+31:30 
+
+31:30 is delightful what you've built so far
+31:32 
+
+31:32 congratulations thank you thank you for
+31:34 
+
+31:34 having us on this has been really fun
+31:36 
+
+31:36 thank you
+31:46 
+
+31:46 [Music]
+31:51 
+
+31:51 [Music]

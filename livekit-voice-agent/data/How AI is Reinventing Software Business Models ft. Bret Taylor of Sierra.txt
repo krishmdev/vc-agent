@@ -1,0 +1,961 @@
+00:02 Next up, we have Brett Taylor. He was
+00:04 part of the, I think, first APM program
+00:06 at Google where he famously rewrote all
+00:09 of Google Maps in a weekend. Then he
+00:12 founded a company. Then he went ahead
+00:13 and was just CTO of Facebook for a
+00:15 while. And then he founded another
+00:17 company, which we're lucky enough to be
+00:19 in business with him on, which is
+00:20 redefining the front door for
+00:22 businesses. and Brett will be joined by
+00:24 our partner RVY who used to deliver
+00:27 groceries and now gives people
+00:31 money. About the same. Please welcome RV
+00:34 and
+00:39 Brett. Yeah, but a lot of groceries.
+00:41 Okay.
+00:43 Um I thought Pat was saying I was the
+00:46 legend, so I was pretty pretty upset
+00:47 when apparently it was Brett. You're a
+00:49 legend to me. Thank you. I really
+00:50 appreciate you saying that. Having Jeff
+00:52 Dean and then Brett Taylor is like
+00:54 having like LeBron and Steph of
+00:57 engineers. It's amazing. Or Ruof, two
+00:59 random rugby people that only you know,
+01:01 you know, like that maybe an analogy
+01:02 you'd get. Um, all right. I want to ask
+01:06 you a
+01:06 question. There's very few people that
+01:08 have been described as 10,000x engineers
+01:11 probably in general, but also extremely
+01:13 extremely few people who've done that
+01:14 and also been good at enterprise sales.
+01:17 Okay. Um, and I think one of the things
+01:20 that'll be fun today is we can like be
+01:22 like high flutin and talk about where
+01:23 the world's going, but we can also talk
+01:24 about like how to sell things. And so
+01:26 the question I have before we get to
+01:28 tactical advice on that is like what
+01:30 made you even think that you could do
+01:32 something other than just be an amazing
+01:34 engineer?
+01:36 Yeah, I actually think this is uh one of
+01:38 the greatest challenges to overcome as
+01:40 an entrepreneur. uh this is really
+01:42 reductive but I think if you talk to an
+01:45 entrepreneur they often have some unique
+01:47 insight on the business they're
+01:48 creating. So maybe it's a technical
+01:49 insight. If they come from a background
+01:51 in say business development, maybe they
+01:53 see an opportunity in the market uh that
+01:55 they can take advantage of as a
+01:56 partnership or business opportunity uh
+01:59 in the financial services industry.
+02:01 Maybe you see an inefficiency in the
+02:02 market you can take advantage of. The
+02:05 issue I see with a lot of entrepreneurs
+02:06 is you sort of become single issue
+02:07 voters. It's like every time there's a
+02:10 problem uh in your business, if you're a
+02:12 product person, you go change the
+02:14 product. There's always the like famed
+02:16 redesign like the dead cat bounce before
+02:18 your company gets destroyed. And it
+02:21 turns out that as you're growing your
+02:23 business at any given point, you may
+02:26 have a go to market problem, you may
+02:27 have a product problem, you have a
+02:28 competitive problem. And I think the
+02:31 hardest thing is when you come out of
+02:33 business with what you're comfortable
+02:34 with, you regress to sort of what makes
+02:36 you comfortable. For me, uh my most like
+02:41 vulnerable moment was when I was 29. and
+02:43 I became the CTO of Facebook. Uh I was
+02:46 one of the older people at Facebook at
+02:47 the time.
+02:48 Good. Well, I didn't know what the what
+02:51 I was about to cuss. I shouldn't cuss. I
+02:52 didn't know what I was doing. You told
+02:54 me this was recorded. I have to like I
+02:56 think that you should not give away
+02:57 state secrets about open
+02:59 a fine. It's good. And um I uh I
+03:03 wouldn't have self-described that I was
+03:04 sort of struggling in my job, but I
+03:06 think I was. I was sort of trying to do
+03:07 everything myself. Uh, and Cheryl
+03:10 Sanberg, who was the chief operating
+03:12 officer at the time, took me aside and
+03:13 kind of had a sort of come to Jesus
+03:15 conversation with me. Um, essentially
+03:17 saying, "You need to hold your team to
+03:19 as high of a standards you hold
+03:20 yourself. You need to stop trying to do
+03:22 the work yourself and you need to
+03:24 identify the people who aren't meeting
+03:26 your needs, replace them, but you need
+03:28 you're not scaling the way you're
+03:29 operating effectively." And it was kind
+03:32 of the conversation I needed to have at
+03:34 that moment. I felt really shitty for
+03:36 about an hour and then like woke up the
+03:38 next day with kind of a fire in my
+03:39 belly. And I realized upon reflection uh
+03:44 she didn't sort of diagnose it this way,
+03:46 but upon my reflection I was going into
+03:48 work every day and trying to say how do
+03:50 I conform this job to me and my
+03:52 strengths. Um and instead of thinking
+03:55 like what's the most important thing to
+03:57 do in this job today even if it's not
+03:59 something I find delightful or
+04:01 interesting. So, I sort of came at the
+04:02 job uh and I I always modeled it as
+04:05 giving myself advice like I was sort of
+04:07 my own board of directors and sometimes
+04:10 it would be people, sometimes it would
+04:11 be business, sometimes it would be
+04:12 technology. I was the CTO so hopefully
+04:14 it wasn't that some of the time. Um and
+04:18 interestingly enough, um I got more joy
+04:20 from it. Um I realized at that point I
+04:23 actually just appreciated having an
+04:24 impact more than I appreciated any act
+04:26 of doing my job. And so I ended up with
+04:28 this really nice reinforcement of, wow,
+04:32 I'm better at my job than I was last
+04:34 month because I'm not just doing what I
+04:37 like or what I feel comfortable doing.
+04:39 Um, and that ended up like a really
+04:40 virtuous cycle. So I've had a I've been
+04:42 a little bit of a chameleon. I've, you
+04:44 know, it's interesting. If I meet people
+04:45 from Facebook, they think of me as an
+04:47 engineer. If I meet people from
+04:48 Salesforce, they think of me like a
+04:50 suit, you know, like or I don't know,
+04:52 generously. I something the boss. And
+04:55 I'm not any one of those things. I just
+04:56 sort of showed up every day to, you
+04:58 know, be uh to have an impact. And as I
+05:00 said, I just I gain a ton of joy from
+05:03 it. And the reason I bring it up for the
+05:05 entrepreneurs in the room is I think at
+05:06 every stage of your company at the
+05:08 beginning, product is all that matters.
+05:11 You know, finding your first and happy
+05:13 customers. As you scale, what you need
+05:16 to be great at changes. And I think
+05:18 having uh the self-awareness and
+05:20 self-reflection to actually change what
+05:22 you spend your time on is actually I
+05:24 think one of the greatest challenges of
+05:26 not having your company sort of get away
+05:28 from you and continuing to be effective
+05:30 leader at that company. I I would tell
+05:32 you I think it's something just so you
+05:34 have it. It's something I have taken and
+05:36 sharing with my kids which is like don't
+05:38 let something you're good at become who
+05:40 you are. Right. And I think that that is
+05:42 something I've learned from you that I
+05:44 really appreciate and I think you're
+05:45 doing in the day-to-day. So tell people
+05:47 about Sierra. Why did you and Clay start
+05:48 it? What's the vision? What are you guys
+05:50 up to? Uh at Sierra, we help companies
+05:53 build customerf facing AI agents. Um we
+05:56 started on the hypothesis that uh every
+05:59 company's main digital interface will be
+06:02 an AI agent, you know, and maybe in in
+06:06 uh 20 years ago, your main digital
+06:08 presence was your website, your dot. Uh
+06:11 remember listing on Yahoo directory was
+06:13 the bees knees, you know, back in the
+06:14 day. Um I do I do remember that. Yeah.
+06:18 Thank you for Yeah. Thank you for
+06:19 noticing. Yeah. You know, and then for a
+06:21 lot of brands, whether it was like your
+06:22 social profile or your mobile app, you
+06:25 know, companies have a lot of different
+06:26 digital touch points today. Our
+06:28 hypothesis, I don't know if you measured
+06:30 it like what percentage of digital
+06:31 interactions happen on a touchcreen now
+06:33 versus a keyboard. It never replaces,
+06:35 but it certainly sort of displaces. Our
+06:38 hypothesis is you fast forward 5 years,
+06:40 the vast majority of digital
+06:42 interactions will happen via an agent.
+06:44 And as a consequence, every company will
+06:46 need their singular agent, not plural,
+06:49 the one that has their brand at the top
+06:50 that represents the whole of their
+06:52 customer experience. And um so we've uh
+06:55 worked with a lot of different companies
+06:57 from ADT home security to Sirius XM to
+07:00 help them build their primary customer-f
+07:03 facing AI agent. Um a lot of it is AI
+07:06 and it's an agent, but a lot of it is
+07:08 also business. You know, like what is
+07:09 the customer experience you're providing
+07:11 for ADT home security? your alarm might
+07:13 be going off, your alarm might be broken
+07:15 for SiriusXM, someone might want a
+07:17 better price on their plan uh because
+07:19 their promotional period expired. So,
+07:21 it's actually really interesting because
+07:23 just like your website, I don't think
+07:24 most people think of websites as a piece
+07:26 of technology nowadays, right? It's
+07:27 almost just an expression of your brand
+07:29 and your business, that's actually kind
+07:31 of the agents that that companies are
+07:33 building on our platform. Uh but I hope,
+07:35 you know, if we're successful, if you
+07:36 run across an branded AI agent in the
+07:38 wild, I hope it's powered by our
+07:40 platform. That's what we're trying to
+07:41 do. And one of the things that comes up
+07:43 a lot is like what are the foundation
+07:44 models going to do versus what are the
+07:46 application layer companies going to go
+07:48 do, right? And I think you have probably
+07:50 the most unique vantage point on this
+07:52 being the chair of OpenAI as well as
+07:53 building an application layer company.
+07:55 So can you help our founders here think
+07:58 about what is going to belong to them
+08:00 versus the foundation models? Yeah, I've
+08:03 um I'll say strong opinion loosely held
+08:06 uh on this. So I think there's really
+08:08 three big markets that I see and I'll
+08:10 end with the one I think is the most
+08:11 exciting. Uh first you have the
+08:14 foundation models and Jeff said
+08:16 something similar to this but I think
+08:17 there's going to be a ton of
+08:18 consolidation in the foundation model
+08:20 market. It's fundamentally just a
+08:22 capital intensive business just like
+08:24 building data centers. Effectively it is
+08:25 building data centers you know at the
+08:27 core of the expense. And as a
+08:29 consequence, it just, you know, if you
+08:30 have large-scale capex, you can generate
+08:33 more capex and it sort of benefits
+08:35 scale. And as a consequence, I think
+08:37 it'll end up a little bit like the cloud
+08:38 infrastructure market, a handful of
+08:40 players, relatively low margin, but very
+08:43 very high scale and sort of collecting
+08:45 taxes from everyone in the AI ecosystem.
+08:48 Uh I think the the next market is is
+08:50 really making tools, the proverbial
+08:52 pickaxes and the gold rush. Um and uh I
+08:56 think you know a lot of uh companies
+08:58 created prior to large language models
+08:59 like you know data bricks and snowflake
+09:01 will sort of be in that category but a
+09:03 lot of new ones as well. Um there's a
+09:06 lot of nuance there. I think that will
+09:07 be a market that can really uh be
+09:11 threatened by the foundation model
+09:12 companies. I imagine every cloud
+09:15 infrastructure company has some there's
+09:17 probably an AWS or Azure equivalent to
+09:20 what they do. And so you end up with a
+09:22 naturally sort of more challenging, but
+09:24 it can be very high scale. Um, but it's
+09:26 just a you definitely are closer to the
+09:28 sun, you know, the closer you are to the
+09:30 models themselves. And then there's the
+09:32 AI applied AI market. And I actually
+09:35 think this will manifest its form as as
+09:37 agents. Um, so uh, you know, there's
+09:40 companies like Harvey that make an agent
+09:41 for the legal profession. There's
+09:43 companies like Sierra that make it for
+09:44 customer experience. Uh, there's
+09:46 companies that make it for marketing.
+09:48 There's companies that do for visual
+09:49 effects. Uh my view is this is sort of
+09:52 the new software as a service. Um
+09:54 companies will the form factor of
+09:56 purchasing AI will be purchasing an
+09:58 agent that does a job. Um I I think
+10:02 there's a it's a really exciting time. I
+10:04 actually I think I have assume a lot of
+10:05 folks in this room are working on sort
+10:07 of applied applications in AI. Um the
+10:10 reason I think it's exciting are sort of
+10:11 twofold. One is I think it's the way
+10:14 software should be consumed. Uh I think
+10:16 right now a lot of particularly large
+10:18 enterprises uh in the excitement after
+10:21 chat GBT licensed a lot of models and
+10:23 and as we all know software is like a
+10:25 lawn. You have to tend to it. So I think
+10:27 there's a lot of buyer remorse right now
+10:29 from a lot of spend and a lot of proofs
+10:32 of concept but not a lot of value. Um
+10:34 the second thing is I think it changes
+10:36 the markets. you know, there's these
+10:38 markets where like selling enhanced
+10:40 productivity to attorneys is not like a
+10:43 huge tam and so you sort of run up
+10:45 against just a natural thing like even
+10:46 if you get you know 80% market share how
+10:49 big could this company be you know but
+10:51 if you're actually selling antirust
+10:53 review or or something I don't know much
+10:55 about the law so I just made that sound
+10:57 credible really you you are the you
+10:59 know crisis to the stars and you don't
+11:02 know anything about the law that seems
+11:04 you know it turns out the crisis to the
+11:06 stars
+11:08 um you know uh that has a ton of value
+11:11 um because you're essentially you know
+11:13 providing something that very high cost
+11:15 labor produced before and as a
+11:17 consequence I think if you look at the
+11:19 total addressable market of you know all
+11:21 these vertical specific domain specific
+11:24 agents the market is gigantic um and
+11:27 actually it's interesting if you look at
+11:28 the public markets if you look at the
+11:30 top uh you know five software companies
+11:32 that dominate um the S&amp;P 500 that
+11:35 dominate the stock market. None of them
+11:37 are sort of pure play software as a
+11:39 service companies. Obviously, Microsoft
+11:40 is and it has some enterprise software.
+11:42 Amazon has AWS, but they're
+11:44 infrastructure companies. They're
+11:45 consumer. Um, and if you look at the
+11:48 software as a service companies, Service
+11:50 Now, Salesforce, SAP, Oracle, they're
+11:52 all sort of in that sort of 200 to30
+11:54 billion market cap range, you wonder in
+11:58 this new world of agents, will we see
+11:60 our first trillion dollar sort of
+12:02 applied enterprise software company? And
+12:04 I I think the answer is yes. Uh because
+12:06 you're going from selling productivity
+12:08 enhancement to selling outcomes and
+12:10 outcomes are valuable. Uh some outcomes
+12:12 are extremely valuable. Um and so I
+12:15 think there's been a little
+12:17 understandably a little too much
+12:18 excitement around the models themselves.
+12:20 Not that I I mean obviously at Open Eye
+12:23 were very excited about it, but as an
+12:25 entrepreneur I think that it's sort of
+12:27 the the pickaxes are obvious, but
+12:29 actually the value is elsewhere in my
+12:31 mind. I think the value is taking these
+12:34 this amazing next generation technology
+12:37 solving a very valuable business problem
+12:39 that was high cost before and selling
+12:41 something valuable for an order of
+12:44 magnitude less money than the current
+12:46 cost is really easy. Um so I
+12:49 just think it's a great business and I'm
+12:51 I'm super excited about the future of
+12:52 the software industry as a consequence.
+12:54 What do you think is the right way to
+12:56 price those outcomes when you think
+12:58 about them? Right. I think that there's
+13:00 all the former seatbased models, right?
+13:02 And now Sierra obviously does it
+13:04 differently. How applicing model and
+13:07 then also talk about how applicable you
+13:08 think that is or isn't to other agent
+13:10 companies. Yeah, at Sierra we do we call
+13:13 it outcomesbased pricing. So uh for our
+13:15 median customer that typically means
+13:17 when the AI agent resolves the issue for
+13:20 the customer autonomously there's a
+13:21 pre-negotiated rate for that and if we
+13:23 do have to escalate to a person it's
+13:25 free. uh we do that just to align with
+13:27 the the business model of our customers
+13:29 and uh I actually view it as sort of a
+13:31 natural evolution of software. We went
+13:33 from uh box software with a perpetual
+13:36 license to you know once you delivered
+13:38 software in a browser most everyone's on
+13:41 the same version. you needed to sort of
+13:43 invent a new business model to sustain
+13:45 R&amp;D which led to software as a service
+13:48 subscription based business and we just
+13:50 thought from first principles and said
+13:51 hey if you're selling software that
+13:54 completes a job what is sort of the
+13:55 secular business model for that and it
+13:57 felt like let's pay for a job well done
+13:59 you know sales people get paid a sales
+14:00 commission you know why not the AI as
+14:02 well um it it does really disrupt the
+14:06 way you build a software company in my
+14:08 mind though um if you look at
+14:09 particularly the enterprise software
+14:11 ecosystem
+14:12 there tends to be sort of an armslength
+14:14 relationship between software vendors
+14:16 and customers. Uh typically you'll sell
+14:19 a piece of software and be done. Uh then
+14:22 you'll have systems integrators come in
+14:24 and spend you know for large scale
+14:26 enterprise software deployments
+14:28 sometimes 6 months or a year to
+14:30 implement that software. Um and that's
+14:32 well I mean by the time the software is
+14:33 being used you know the vendor has been
+14:35 probably not gone they're probably going
+14:36 to sell them more things but effectively
+14:38 gone for uh 6 to 12 months that so as a
+14:43 consequence there's almost like an
+14:44 active disassociation with the act with
+14:46 the outcomes um and so you end up with a
+14:50 confluence of I think a lot of different
+14:52 factors that I think are interesting uh
+14:54 there was a question just before I
+14:55 walked up here about you know uh agents
+14:58 that can code what will that do to the
+14:59 professional services industry broadly
+15:02 um there's a question of if the right
+15:03 thing for AI software is outcomes, how
+15:06 do you actually align your company with
+15:08 that kind of accountability? I think it
+15:10 sort of blows up a lot of the model. Um
+15:12 but that's why, you know, as Steve Jobs
+15:15 said, it's more fun to be a pirate than
+15:16 it is to be in the Navy. And I think
+15:17 it's a really good time to be a startup
+15:19 because, uh most people in this room are
+15:21 not encumbered by a business model. Um
+15:24 which is a funny way of thinking about
+15:26 it. But if you look at the history of
+15:28 software, Salesforce beating seable
+15:30 systems uh you know service now beating
+15:32 the plethora of ITSM companies that came
+15:34 before it's actually
+15:37 much closing a technology gap in your
+15:40 product is is hard but not impossible.
+15:43 Changing your business model is really
+15:45 hard. Uh, and you look at Microsoft
+15:48 transitioning from Windows to Azure and
+15:50 how incredibly awkward that transition
+15:53 was and Satcha deserves a bunch of
+15:56 credit. Shantenu did a great job at
+15:58 Adobe going to ratible revenue, but
+16:00 there's like a graveyard of CEOs who've
+16:02 been fired because they couldn't make
+16:04 that transition in part because public
+16:06 company investors are horribly impatient
+16:08 in these things. And so I just think
+16:10 that what's exciting about AI is I think
+16:12 it's going to give rise to new delivery
+16:14 models, new technology models, but as
+16:16 importantly, new business models. And I
+16:18 think that if you think about what are
+16:20 the opportunities for startups relative
+16:22 to incumbents, don't lose sight of the
+16:24 business models. I actually think it's
+16:25 usually um one of the greatest
+16:28 advantages that startups have relative
+16:29 to incumbents. Yeah, I I think
+16:31 historically speed has been something,
+16:32 but I think on this point it's like you
+16:34 also have this enormous benefit of, you
+16:35 know, you're not encumbered by the old
+16:37 business model. Well, you referenced the
+16:39 uh previous companies that you've been
+16:40 in and you started. One of the things
+16:42 we've talked about is like there are
+16:43 things that are similar about building a
+16:45 company now and there are things that
+16:46 are different. What are some of the
+16:48 things that are the same as the previous
+16:50 companies that you've built that you're
+16:51 doing now? And what are some of the
+16:52 things that are different? Uh well, at
+16:56 Friend Feed, my not so successful social
+16:58 network, we built our own servers. Can
+17:00 you tell the story? Can you tell the
+17:02 story about the Facebook IPO real quick?
+17:04 just about friend feed for everyone
+17:05 where uh you got recognized. Um can you
+17:08 I'll I'll do that then. I'll do it then.
+17:10 I'll do that. Okay. It's a good story.
+17:11 It's a good story. We stand between
+17:12 these people and drinks, man. You got to
+17:14 make them laugh like let's go. You know,
+17:15 hit them with something. You're pulling
+17:17 out the deep cuts.
+17:19 Um you know, I think a lot has changed
+17:21 just in the infrastructure world. You
+17:22 know, I think literally we built our own
+17:24 servers uh at friend feed and you know
+17:28 like brought them into the colo. We
+17:30 brought our site down once by tripping
+17:31 over a power wire in the colo. Uh that
+17:35 was Sajjie Sajie's fault. We love him.
+17:38 No, I'm just kidding. It was like so
+17:39 it's just a different era. Um you know I
+17:42 do think it is uh as we've uh
+17:45 virtualized infrastructure uh and built
+17:49 you know just the software development
+17:50 life cycle we have today from uh cloud
+17:53 infrastructure like Azure and Amazon web
+17:55 services to GitHub and GitHub actions
+17:57 and you know all the incredible open
+17:59 source libraries
+18:01 um and then you have sort of the virtual
+18:03 infrastructure to help support your
+18:05 companies like you know ramp you know
+18:07 and rippling you end up where uh there's
+18:11 a certain like there's a very different
+18:14 level of focus now in starting a
+18:16 company. Uh it used to be you just had
+18:18 to do all these things to like build the
+18:20 scaffolding of your company and it was
+18:21 actually like a non-trivial amount of
+18:24 work. And the thing I find just so
+18:26 exciting about like the future of
+18:29 entrepreneurship is you there's just so
+18:31 little overhead now in terms of just
+18:33 like intellectual overhead. Uh, and I
+18:36 remember actually just how hard it was
+18:38 to get like credit cards for our
+18:39 employees. Like they had to all get a
+18:40 credit check. I'm like, are you kidding
+18:42 me? Like it's it's our bank account.
+18:44 Like what are they? And you know, now
+18:45 you can, you know, print a virtual, you
+18:47 know, uh, credit card with, you know,
+18:48 things like ramp. It's so easy. Um, so I
+18:52 think we've just seen every aspect of
+18:54 starting a company that was about sort
+18:56 of like the operational sort of
+18:58 scaffolding infrastructure to do so. Uh,
+19:00 many startups that you all have funded
+19:02 are now doing that. And so as a
+19:04 consequence, you can focus on just
+19:06 purely what defines your company and
+19:09 what makes it different. My color
+19:12 commentary on that is I actually think
+19:13 one of the mistakes a lot of smaller
+19:16 companies make is spending their
+19:17 resources and time on things that aren't
+19:20 core to their business. Uh and it's a
+19:23 it's more than a hidden cost. I think
+19:25 like every ounce of time you're spending
+19:27 on something that fundamentally should
+19:29 be a commodity to your business is time
+19:32 you're not spending on like selling your
+19:33 product to more customers or like
+19:35 working on like true differentiation and
+19:37 it takes a lot of discipline because a
+19:39 lot of those things are like catnip you
+19:40 know it's like fun to work on that part
+19:42 of your business and I always like to
+19:44 say like you know what Clay who's
+19:47 somewhere around here we always talk
+19:48 about like what will make us happy a
+19:50 year from now and that's always our
+19:51 metric and then some you could take it
+19:53 to 10 years if you want to be like no
+19:55 one knows what the hell is going to
+19:56 happen in 10 years. By the way, if you
+19:57 don't know what's going to happen in 10
+19:58 years, nobody knows what's going to
+19:59 happen in 10 years. And I do think it's
+20:01 very clarifying and I just think it's I
+20:04 it always surprises me how much I tend
+20:05 towards some of those things that are,
+20:07 you know, wholly undifferiated at this
+20:09 point. Okay. Well, you mentioned some of
+20:11 the companies that Sierra works with,
+20:13 right? And some of those are companies
+20:15 that have been around for a long time,
+20:17 right? They are established companies.
+20:18 What does the T and ADT stand for?
+20:21 Telegraph. Telegraph. Okay. So, how do
+20:23 establish companies? It's cool, by the
+20:25 way. Home security over telegraph. I
+20:27 actually imagine someone coming to like
+20:29 the Sequoia of that day. It's like home
+20:31 security over telegraph. It's like
+20:34 YouTube for cats, you know, and like and
+20:36 uh and it and they built that business.
+20:38 It really was. And now they're actually
+20:40 doing home security with AI agents. What
+20:42 a cool privilege. I think it's awesome.
+20:44 And you know, it's a better acronym than
+20:46 AD AI, you know. Um Okay. So, but what
+20:48 do they have to do? What are the ones
+20:50 that are going to succeed? what are they
+20:51 going to do to in a world of changing
+20:53 technology and what are the ones that
+20:54 are not going to succeed? What is
+20:56 holding them back?
+20:58 So, and how can this group help all of
+21:01 those established companies succeed?
+21:03 Yeah.
+21:05 So, I think it's a really interesting
+21:07 opportunity for uh companies in
+21:10 competitive markets like home security
+21:12 um or a company like SiriusXM that's got
+21:15 incredible unique original content, but
+21:17 they have a lot of cord cutting and a
+21:19 lot of competition around them. You have
+21:22 this technology and AI that drives
+21:24 incredible amounts of productivity in
+21:27 departments that had previously been
+21:28 incredibly underserved uh by software.
+21:31 uh everything from you know largecale
+21:33 contact centers to we talked about
+21:35 things like legal departments large
+21:37 operations departments um and as a
+21:40 consequence companies that lean into
+21:42 this can really change the cost
+21:44 structure of their business um uh if you
+21:46 think about I mean there's companies
+21:47 that have like 20,000 person contact
+21:50 centers and you know this costs hundreds
+21:52 of millions of dollars every single year
+21:54 and if you can take all of that opex and
+21:57 put it back into your business you can
+21:60 lower prices you can invest in growth
+22:02 and so it's really interesting I think
+22:04 it is one of those opportunities where
+22:06 these shovelready applications of AI
+22:09 even if it's indirect because they can
+22:11 drive such structural changes to the uh
+22:15 essentially essentially the unit
+22:17 economics of so many companies
+22:19 businesses I think it will change market
+22:22 share and so I think that it's a little
+22:24 bit like the birth of the internet you
+22:26 know and you know Walmart did very well
+22:28 uh since the birth of the browser even
+22:31 in the face of Amazon, there were a lot
+22:32 of retailers like Blockbuster who did
+22:35 not. And so I think uh because most
+22:39 executives running these companies now
+22:41 lived through the web browser era, saw
+22:44 the birth of the smartphone uh and saw
+22:46 the growth of things like Instacart and
+22:48 Door Dash and others. They see this.
+22:51 They're not and they're they're modeling
+22:53 what is the future of our industry going
+22:55 to look like. And you know, you
+22:56 mentioned enterprise sales. I think the
+22:59 key thing about selling anything is
+23:03 speaking the language of your customer
+23:05 and having empathy. Um, I think one of
+23:07 the things I see a lot with
+23:08 entrepreneurs is they'll go into a
+23:10 meeting and sell their product. Um, if
+23:12 you ever see a really good salesperson,
+23:14 the first thing you'll see them do is
+23:16 ask a lot of questions. But then the
+23:18 next thing you need to do is actually
+23:19 listen and understand what they're
+23:22 saying and then reflect the value that
+23:25 your technology provides through the
+23:27 problems that they just described. And I
+23:30 actually think that actually a lot of
+23:31 the technologies in AI will immediately
+23:33 benefit a lot of these businesses, but
+23:35 they're being pitched by 20 AI vendors
+23:38 every single day. And they all sound the
+23:39 same. They literally all sound the same.
+23:41 you could see like the you know first
+23:43 call deck of startups that do completely
+23:45 different things and there's like the
+23:46 same words on the slides and so this is
+23:49 the I think the really opportunity right
+23:51 now is how do you actually stand out in
+23:53 such a saturated market I actually Clay
+23:56 and I talk a lot about this because we
+23:57 both started web design companies in
+23:59 high school you know like during the dot
+24:01 bubble I went door todoor flower shops
+24:04 he did more like graphical things for I
+24:06 think he made a little more money than
+24:07 you did in high school yeah I it's he
+24:10 did his
+24:11 successful. He also got sued by the
+24:13 California Raisins, but that's a whole
+24:14 another story. Um, so true story, his
+24:17 name's Clay. He named his company
+24:19 Claymation. Bad look. Um, sorry, Clay. I
+24:23 didn't know this a public. It's public
+24:24 now. Um, love you, man.
+24:27 Uh, and this guy doesn't know anything
+24:29 about the law. Yeah. uh we we talk a lot
+24:34 about the experience that you we were
+24:37 young and I not in the center of it
+24:38 during the dotcom bubble where you
+24:40 didn't just have Google you had alt
+24:42 vista all the web uh you had intome
+24:45 which was a B2B search player that was
+24:48 uh quite we respected quite a bit uh you
+24:50 had amazon.com and you had buy.com and
+24:53 half.com you had eBay and you know you
+24:55 had uh PayPal and all the other folks
+24:58 pursuing payments I think now like
+25:01 victors write the history book. So you
+25:03 you look at all these magnificent coming
+25:05 out of that era and you forget that it
+25:08 was like a fight to the death. Um the
+25:10 idea that hey maybe we should search the
+25:12 internet was not exactly novel. Um the
+25:16 but the actual like detailed execution
+25:19 of those ideas was paramount. And I
+25:21 think you know going back to like how do
+25:23 you help companies like ADT succeed? the
+25:26 first thing you need to do is like show
+25:28 up as a partner to them and help them
+25:30 solve their acute business problems. And
+25:33 that's a uncomfortable sort of
+25:35 conversation because I think a lot of
+25:36 people don't feel equipped to do it. Uh
+25:38 you know, one trick that I would just
+25:40 recommend is before you meet a customer,
+25:41 do deep research on them. And by that I
+25:43 mean like the actual feature deep
+25:44 research and chat dbt. Um you know, show
+25:48 up educated in these conversations. And
+25:50 I think you find the more you spend
+25:53 researching your customer and
+25:54 understanding their needs and less time
+25:56 you thinking about like the next feature
+25:57 going to launch, the better that
+25:59 conversation will go. And I think you'll
+26:01 end up finding that, you know, sweet
+26:03 spot between like where is the
+26:04 intersection of what you do differently
+26:06 and actual business value. That's
+26:08 awesome. Let's go to audience questions.
+26:09 I just realized that I've taken up a lot
+26:11 of Brett's time. So, uh, please go
+26:13 ahead.
+26:17 Thank you. Um,
+26:23 hi, I'm Robin. What are your learnings
+26:25 in building branded AI agents for
+26:27 specific verticals and how is it
+26:29 different to building horizontally?
+26:33 Uh, I really believe in verticals in AI.
+26:37 Uh I think that if you think about what
+26:41 the job proverbally of an AI agent is uh
+26:45 for a telecommunications company and you
+26:47 think about what's important to them uh
+26:50 versus uh say a commercial bank uh
+26:54 versus say a residential uh bank uh
+26:58 versus an insurance company who might be
+26:60 concerned about claims processing versus
+27:01 a health insurance company that's uh you
+27:04 know answering things like explanation
+27:06 of benefits.
+27:07 every single one of those applications
+27:09 is actually quite specialized and you
+27:11 know right now uh I think that the
+27:15 companies that can actually provide
+27:16 value quickly around these core
+27:19 workflows of these businesses that are
+27:20 actually valuable to them uh actually
+27:23 sort of when I talk about sort of like
+27:25 coming into those conversations and
+27:26 actually providing value really quickly
+27:28 just have a leg up. Um I am fairly
+27:32 skeptical of horizontal AI platforms.
+27:35 Um, it doesn't mean they won't succeed
+27:36 by the way. There's always an exception
+27:38 to every rule. But, uh, you know, things
+27:40 like lang chain I think probably will
+27:42 succeed. They're open source and you
+27:44 know, you end up sort of you need to
+27:45 sort of develop a horizontal business in
+27:47 a different way. But it just, you know,
+27:49 pure play enterprise business. I think
+27:52 it's very hard to go in with a
+27:54 horizontal platform because there's just
+27:56 lots of good enough. Um, there's lots of
+27:58 homegrown solutions. There's lots of not
+27:60 invented here. Um, and you know, having
+28:03 a slightly better mouse trap is rarely
+28:06 uh, you know, doesn't pass the like
+28:07 vitamin painkiller uh, threshold
+28:10 generally speaking. So, my rule of thumb
+28:12 is like the closer you get to uh,
+28:15 solving a problem for a company, the
+28:17 more successful your your business will
+28:19 be, assuming you're talking about an
+28:20 enterprise business. Um, and you know,
+28:23 the other thing that I I really learned
+28:25 uh from Mark Ben off at Salesforce is
+28:28 like if you have one successful
+28:29 customer, make it two, and if you have
+28:31 two, make it 10. And if you have 10,
+28:33 make it 100. Um, I do think there's a
+28:35 certain amount of tactical excellence
+28:37 that comes in when you're building a B2B
+28:39 software business. And ivory tower
+28:42 cleverness rarely wins. It doesn't mean
+28:45 you shouldn't have a long-term strategy
+28:46 by the way, but uh there's a certain if
+28:49 you focus on making your customers
+28:51 successful, that's where the truth is
+28:53 and where your like product should go.
+28:55 Um sometimes you can be led astray by
+28:57 that mechanism. You like the the first
+28:59 one was not representative. That's
+29:01 rarely the concern though. Usually it's
+29:04 uh being very very clever and sort of
+29:06 ivory tower with your strategy. So
+29:08 that's why I love verticals.
+29:10 Uh maybe one more. Hey Brad. Um I was
+29:13 really interested in the question around
+29:14 how you price uh AI agents.
+29:17 Specifically, have you seen customers
+29:18 being more open to you taking a cut of
+29:20 cost savings or of incremental revenue
+29:23 that you've created? And what are the
+29:25 main kind of push backs that you that
+29:26 you're hearing from customers? Because
+29:28 impact pricing has been historically
+29:30 quite hard. Um so wondering what you're
+29:32 seeing there. Yeah. Um we see interest
+29:35 in both. Um, you know, if you're owned
+29:38 by a private equity firm and have a big
+29:40 bunch of debt, you probably say the word
+29:42 Ebatel like 20 times a day. It's like
+29:44 what you do at private equity owned
+29:46 companies. And you probably care a lot
+29:48 about cost savings. Um, though, and if
+29:50 you're That's basically all you do. You
+29:52 just walk around. Yeah. Yeah. He
+29:55 actually really simplified it. He got
+29:57 it. Yeah. It's like, see, I I know
+29:60 finance too. Yeah. Yeah. Yeah. you have
+30:03 not ever let an oified version of
+30:05 yourself slow you down you know please
+30:06 and
+30:07 uh in contrast you know if you're in a
+30:10 very competitive market like if you talk
+30:12 to any CEO they generally care more
+30:14 about growth than they do cost savings
+30:16 and in fact I think one of the
+30:18 counterintuitive things there's lots of
+30:20 talk about with models becoming cheaper
+30:22 will demand for infrastructure go down
+30:23 no in fact demand will go up just
+30:25 because new use cases will emerge I
+30:28 think the same will be true of most cost
+30:29 savings in AI I think most sophisticated
+30:31 companies will recoup those soft cost
+30:33 savings and reinvest in growth. And so
+30:36 it won't actually be cost savings
+30:38 necessarily. It will actually uh flow to
+30:40 other parts of the business just because
+30:41 that's what capitalism does, right? It's
+30:43 like you know what saving a lot of money
+30:45 for what reason? Like you want to grow,
+30:46 you want to beat your competitors. Um so
+30:50 sort of first principles and and our
+30:52 lived experience is that you know
+30:53 topline matters more. There's just no
+30:55 doubt about it. And if you can drive a
+30:56 measurable topline outcome that's always
+30:59 more valuable. But cost savings do
+31:01 matter because fundamentally if you you
+31:03 know look at sort of productivity growth
+31:05 in the world over the past 30 years it
+31:07 hasn't been as uh dramatic as I think
+31:09 many people thought it would be after
+31:10 the '9s where we saw a huge uh spike in
+31:13 productivity growth. So fundamentally
+31:15 just like in the economy we're driving
+31:17 efficiency productivity in the economy
+31:19 and so the answer is definitely both.
+31:22 The interesting thing about cost savings
+31:23 is I assume those will be compressed
+31:26 over time. You know, right now most of
+31:28 your AI startups are being compared to
+31:31 the labor costs. 10 years from now when
+31:33 it's all AI agents, you're going to be
+31:34 compared to other AI agent. So the other
+31:36 thing about cost savings is it's a
+31:38 temporary drug, you know, because the
+31:42 costs of actually all these things are
+31:44 going to change because of the presence
+31:45 of of technology. Um, so it's a little
+31:48 bit like, you know, your mobile phone
+31:49 plans or actually always think about as
+31:51 like the computers we used to buy
+31:53 growing up in the the 80s and 90s. they
+31:55 would get cheaper and better every
+31:57 single time. And that's sort of where we
+31:58 are in this AI market. So our view is
+32:01 that like figure out what the outcomes
+32:03 are that your customers want and it
+32:05 really depends on the application
+32:06 honestly. Um even how you price it is
+32:09 interesting. One of my favorite stories,
+32:10 I don't know if this is actually true,
+32:11 but I uh I heard it and even if it's not
+32:14 true, it changed I think which was uh
+32:16 when LinkedIn was at one point um trying
+32:19 to grow the recruiting business, they
+32:21 started to do they started out with some
+32:23 usagebased model, but it turns out HR
+32:26 departments don't have a lot of uh
+32:28 license to spend like you know in a
+32:30 variable amount. So making it a
+32:32 subscription model just help with the
+32:34 procurement process. I love that example
+32:37 because it's a really nuanced and
+32:39 insightful go to market point which is
+32:41 that department HR is generally a cost
+32:43 center in most companies unlike
+32:46 marketing departments which have like
+32:47 you know money flowing from the the
+32:49 ceiling you know this is a department
+32:50 that has to go through a pretty rigorous
+32:52 procurement department so actually going
+32:54 to a subscription model was necessary to
+32:57 actually sell a product into that
+32:58 department it's that type of thing I
+33:00 think is where it's like is it cost
+33:02 savings or topline yes both also like
+33:05 who are you selling to? How do they buy?
+33:08 Uh who are the gate uh gatekeepers to
+33:10 approving how they spend? That's how you
+33:13 grow like an enterprise software
+33:14 business. You really need to understand
+33:16 who your decision makers are, who's
+33:18 approving it, and actually like how do
+33:20 they budget? Um and I have a lot of
+33:22 counterintuitive things, but it's like
+33:23 sometimes easier for companies to prepay
+33:25 for things than to pay on demand.
+33:27 Counterintuitive, but just I think
+33:28 that's like you really need to get into
+33:30 the details of your buying cycle to
+33:31 answer that in a in a accurate way. I'm
+33:34 going to wrap us up. Brett, thank you.
+33:35 Uh they say you should do business with
+33:37 people you like, trust, and admire, and
+33:39 you are that for me. So, I really
+33:40 appreciate you doing this, and all of us
+33:42 do as well. Thank you. Thank you.

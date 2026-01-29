@@ -1,0 +1,1043 @@
+00:00 I get on a call with a customer, Gong
+00:02 already prepares me for the meeting. The
+00:04 way it used to work, you know, I'd get
+00:06 like five people from the account. We
+00:07 schedule like a premeating briefing.
+00:09 They prepare a document with all the
+00:11 questions and it's probably like five
+00:14 hours of some highly paid people. Now,
+00:17 it's 30 seconds, right? It just means
+00:19 it's read. If I have a question, I ask.
+00:20 So, it's a it's a huge uh huge
+00:23 timesaver. And uh you know, we're not
+00:25 even yet at like level five driving. So
+00:29 the potential is like uh uh way bigger
+00:32 if you remember like 75% of of sellers
+00:34 time is not customerf facing that's the
+00:37 data everything else is uh is the the
+00:40 opportunity
+00:57 size. Hi and welcome to training data.
+01:00 Today we're excited to welcome Amit
+01:02 Bendov, CEO and founder of Gong, which
+01:04 is one of the most beloved companies in
+01:06 the modern-day sales world and also one
+01:08 of the very first AI native application
+01:11 companies. We interviewed Amit about
+01:13 Gong's evolution from a wedge into a
+01:15 platform, specifically from a
+01:16 transcription tool into a broader
+01:18 revenue intelligence platform and heard
+01:20 more from Amit on his prediction for
+01:22 what the sales team of the future might
+01:24 look like and Gong's role in building
+01:26 that future. Enjoy the show.
+01:29 Amit, thank you so much for joining us
+01:31 today. We are delighted to have you on
+01:32 the show. You are one of the OG AI
+01:35 applications and absolutely beloved uh
+01:38 company in the sales world and so
+01:40 looking forward to having you on
+01:41 training data. I'm excited to be here.
+01:44 Let's jump right in. I want to start
+01:45 with one of the hot topics in the AI
+01:48 sales world right now, which is do you
+01:51 believe that AI is going to take over
+01:52 the role of the SDR? Uh completely. Uh
+01:55 no, not in the near future. not not with
+01:57 the current technology. I do think that
+01:59 a lot of the BDR work uh will be done by
+02:02 AI and it's a good thing. So it's it's
+02:04 not binary like uh but short answer not
+02:08 in the next like few years. Definitely
+02:10 not if it's a complex outbound SDRs AI
+02:13 is not going to be able to totally
+02:15 replace that. Got it. Okay. Follow-up
+02:17 question. Um do you think that CRM will
+02:20 exist in five years time in a future
+02:23 where we have a lot of agents running
+02:24 around doing a lot of sales related
+02:26 activity? What is the role of the CRM in
+02:28 that future? Yeah, I'm sure CRM will
+02:31 exist in 20 years like it's not going
+02:33 away. Uh there's so much built in there
+02:35 just like you know mainframes are still
+02:37 there even though there's like much
+02:39 better uh technology. Uh I don't believe
+02:42 that managing in managing customers CRM
+02:44 is going to be at the epicenter. We're
+02:46 moving from a CRM centric world to a
+02:48 more like AIcentric world. CRM uh
+02:51 manages customers, their data and a lot
+02:53 of other things but it's not managing
+02:55 the operations, the activities and and
+02:58 uh how to engage uh customers. So that's
+03:00 for sure it's still there. Uh people um
+03:04 tend to underestimate how much there is
+03:06 in CRM. There's quite a bit and uh it
+03:08 definitely will live for a while. Aid in
+03:12 that AIcentric world, what is the role
+03:14 of the software? What is the role of the
+03:16 humans?
+03:17 Uh the role of the software we we're try
+03:21 we're starting to understand the role of
+03:23 the human is actually less clear and I
+03:24 think we will be surprised. It's hard to
+03:26 predict uh what it will be. I'm sure
+03:30 it'll change uh roles there are roles
+03:32 today you know prompt engineer is the
+03:34 obvious one right that didn't we
+03:36 couldn't even like imagine like uh 30
+03:38 years ago um SDR did not exist people as
+03:43 will it did not exist 30 years ago like
+03:45 this is like a modern invention and it
+03:48 might go away so to be like different
+03:49 roles uh you know I'd say in general the
+03:53 current technology anything based on
+03:54 transformer uh is fit for certain types
+03:57 of work it cannot replace humans
+03:59 whenever there's like accountability or
+04:01 decision making or creativity
+04:04 uh we're not even close to that right so
+04:08 humans will still uh be in control I
+04:11 believe for a while but AI can do a lot
+04:14 of the work so you know definitely I
+04:16 could do an amazing job reviewing a
+04:18 contract right now and redlinining all
+04:20 the hot topics even suggesting uh
+04:22 correction right we would not let AI
+04:25 sign a contract or even send a contract
+04:26 or send a proposal right there's always
+04:28 like a lawyer that will need to do that.
+04:30 So, um I think the roles will shift uh
+04:34 to humans that are augmented and using
+04:36 AI as as a tool for, you know, quite a
+04:40 few
+04:41 tasks. You know, in our industry
+04:43 specific, there is this number that goes
+04:45 around that uh 75% of what sellers are
+04:50 doing is non-selling uh activity. So,
+04:53 three out of four dollars that we're
+04:55 paying them is to do admin and
+04:57 non-essential work. All of that could be
+04:60 uh replaced by AI. That that'll be
+05:02 pretty exciting. I mean, take us back to
+05:05 2015 when you founded Gong meeting
+05:08 transcription like why did you start
+05:09 with that? Uh and what was what was the
+05:12 vision always to build a meeting
+05:14 transcription tool or to build something
+05:16 very different from that? Uh no actually
+05:19 uh the vision was never about
+05:21 transcription like uh so when I started
+05:23 a company we we were like uh at my
+05:25 previous company before starting gong we
+05:27 were recording calls and I was using a
+05:29 transcription service the the real
+05:32 reason that I didn't want to read
+05:34 transcript like there's like uh there
+05:36 there's so many of them going on who has
+05:38 the time to do it I have a little bit of
+05:40 an add so I'm I'm not the person to
+05:43 either like listen at great lengths or
+05:46 read Um so
+05:49 uh I wanted something that would take
+05:50 all the information and translate in
+05:52 structured data. Um and transcription is
+05:56 just just a way in a process in in in
+05:58 the in the pipeline that you need to uh
+06:02 capture the audio and video transcribe
+06:05 then uh identify topics and themes and
+06:08 other things and then use it in
+06:10 structured data. So that was the idea.
+06:13 Um we started with meetings because that
+06:16 was kind of the big black hole. We could
+06:19 kind of see other things that are
+06:21 happening and activities but this is
+06:22 like uh like very rich data set that we
+06:27 knew nothing about and nobody was doing
+06:29 anything. So that's why we started with
+06:30 that. Amid I remember in those early
+06:33 days there was this period of time where
+06:35 Gong was one of many and then it felt
+06:37 from the outside looking in it felt
+06:39 almost overnight all of a sudden Gong
+06:41 was one of one. What did you guys get so
+06:43 right in those early days? Um I actually
+06:46 think we have like more competition
+06:48 right now and I I always tell the team
+06:50 the the more success we are we're going
+06:51 to have more. So if you look at uh when
+06:54 we started we thought that we were alone
+06:57 because there are other companies in
+06:58 sales we didn't know about it. Thank god
+06:60 we didn't know. uh uh but we found that
+07:03 there are like two others uh now there
+07:05 are dozens of companies and and I hope
+07:08 to have like hundreds like in a few
+07:09 years like if you look at how many
+07:11 companies are in CRM there are hundreds
+07:12 so if the market grows there there's an
+07:14 opportunity but that's that's a very
+07:16 important uh question there's never like
+07:19 a moment there are always moments where
+07:22 uh people predicted our our death or or
+07:24 doom or whatever so um 20 I think 2017
+07:31 or something. So, we didn't know that we
+07:32 have competition. Like I I started going
+07:35 because I said, "Oh, like I have this
+07:37 problem. I'm scratching my own itch.
+07:39 Nothing exists. Maybe we should start a
+07:41 company." And then I found there's
+07:43 um another company that was like better
+07:46 funded, like a little bit ahead of us,
+07:48 you know, maybe like cooler
+07:50 technology. And when I when I uh
+07:53 realized that I I I still have the
+07:56 recording from our old hands. We're like
+07:58 a very small company at the time. But so
+07:59 I'm like by the end of this year there's
+08:01 only one goal that matters. We're going
+08:03 to be number one or nothing else
+08:05 matters. Like I'm not interested in this
+08:07 company if we're not number one clear
+08:09 leader. So like in SAS there is no
+08:12 second prize at least nothing that I'm
+08:14 interested in. And we have to be and we
+08:16 decide define
+08:18 metrics first how much we're going to
+08:20 win and second it's not us. We're going
+08:22 to be the undisputed leader. So we even
+08:24 put metrics like how much uh media share
+08:26 or LinkedIn or social media share and we
+08:29 wanted to have with 2x all the others
+08:32 combined that was the goal right and we
+08:35 hit it and first the gaps first it's
+08:38 like very neck to neck then you get a
+08:41 little win it's very hard and I think we
+08:43 started even a little behind but the
+08:46 strong gets stronger once you start
+08:47 opening a gap of like you know let's say
+08:50 5 10% it becomes easier the sales people
+08:53 become more
+08:54 confident, customers start to see and
+08:56 then the gap widens and then you get new
+08:59 competitors. So we started there was
+09:00 like chorus and exact vision none of
+09:02 them is an independent
+09:04 company. Then people said okay like
+09:06 outreach and sales loft are going to eat
+09:09 you. Uh when we before we raised money
+09:11 said Google and Amazon are going to uh
+09:13 eat you. So there's always like uh
+09:15 competition but you have you absolutely
+09:19 have to win. It's very hard at first,
+09:22 but once you start opening the gap, it
+09:24 gets easier and then you get new
+09:26 competitors. Uh so you you're never
+09:29 you're never alone. If you're alone,
+09:31 you're you're you're in trouble. You're
+09:32 in the wrong market. I mean, my view as
+09:35 the you know, the person on the
+09:36 sidelines who was, you know, doing the
+09:37 investment memo work at the time was the
+09:40 thing that you all did that was really
+09:41 special was you won the hearts and minds
+09:43 of your customer and you were really
+09:45 really customer focused. Um, and you
+09:48 know, like this was at at the time
+09:49 meaning transcription was kind of
+09:51 newish, like the a lot of the, you know,
+09:53 models weren't weren't that
+09:54 state-of-the-art yet. And so a lot of
+09:56 the other companies were thinking
+09:57 technology out and you were really going
+09:59 customer back and you knew how to win
+10:01 over those hearts and minds and I think
+10:02 to this day that is the thing that is so
+10:04 special about Gong. You go talk to any
+10:06 sales rep, sales team, it's like it's
+10:08 gong gong gong and they, you know, they
+10:10 get googly eyes when they think about
+10:11 you. Absolutely. That's that that's a
+10:14 great point, Sonia. Thank you. Like it's
+10:16 not that uh yeah the fact that you want
+10:18 to win doesn't doesn't win the battle,
+10:20 right? You have you have to do it the
+10:22 right way. And we're like always looking
+10:26 at customer problems that we can solve
+10:29 uh better than than anyone else, right?
+10:31 And always looking ahead and our goal is
+10:33 always to be almost like every two year
+10:36 to be a new company, right? I'm a big
+10:38 Beatles fan. Sorry, that's my age. Um,
+10:42 and I told uh the team, I always tell
+10:44 them that I want to be like the Beatles
+10:46 like every two years it's almost like a
+10:48 new band, totally different kind of
+10:49 music. And I said if we don't do it,
+10:51 we're dead. So if all we do like medium
+10:53 recording today, we'd be dead because
+10:55 like oh that's like everybody can do
+10:57 that. So we always have to reinvent,
+10:59 take great care of customers.
+11:02 Um, and people think the competition is
+11:07 like a a zero sum game almost like a
+11:09 football like you know like bowl
+11:11 possession and all of that. It's more
+11:12 like an Easter egg hunt, right? If you
+11:15 see don't don't know where all the other
+11:16 kids are running. Just find the ones
+11:18 that are your own that nobody's seeing
+11:20 and get as many of them as you can. I
+11:22 just watched my toddler try to do his
+11:24 first Easter egg hunt. He he did not
+11:25 find find very many of those.
+11:27 Um, so when you started the company, you
+11:30 know, this was a pre- OpenenAI or pre-
+11:32 chat GBT era at least, and there weren't
+11:34 really great foundation models to build
+11:36 upon. And so I remember back when we
+11:38 invested, you know, you had a very
+11:40 state-of-the-art kind of model research
+11:42 lab in Israel that was doing a lot of
+11:44 uh, you know, speech to text um, and and
+11:47 model technology. To what extent was
+11:49 that a source of competitive advantage
+11:51 for you then? And is it still a source
+11:53 of competitive advantage for you today?
+11:55 Uh, great question. So we went back and
+11:57 forth on this I think like two or three
+11:58 times and I still I'm still not sure
+11:60 we've seen the last chapter in this. So
+12:02 when we started we did not have our
+12:04 transcription engine. We're using just
+12:06 like a web API. I was the opinion now we
+12:09 should have one. It's so core to what we
+12:11 do. But Elon my co-founder the smarter
+12:14 half said no like it's we only have like
+12:16 six million. I don't want to like invest
+12:18 in something like get like you know 3%
+12:20 more accuracy. let's see what people
+12:22 want to buy first develop the app and
+12:25 then once we raise more money uh we
+12:27 developed so we we started with
+12:28 something it's like really not it was an
+12:31 okay service just duct tape it to and
+12:33 got to the application and got the first
+12:36 thing that actually works and we saw
+12:38 what was important our competitors were
+12:40 investing a lot in like real-time
+12:42 transcription and all the cool
+12:44 technology that never made like a real
+12:46 difference for customers so I'm glad in
+12:49 in hindsight that I listened to Elon and
+12:52 we didn't burn our um serious a money on
+12:55 a transcription engine but then once we
+12:58 uh started uh you're right at that time
+13:01 we had to rely on things like nuance
+13:03 right which was like very expensive and
+13:05 people don't even know what it is today
+13:06 but uh and and and not great uh so we
+13:11 decided to now now we can invest we
+13:14 started our own team we hired some of
+13:15 the best uh uh speech people like um in
+13:19 Israel own. There are quite a few of
+13:21 them and develop our own and it was like
+13:24 better quality and a lot cheaper. So
+13:26 that was a competitive uh
+13:28 advantage. Um and now we used um we use
+13:34 anything from some of the Amazon
+13:36 services and and whisper for some of the
+13:38 things. We still have our own models for
+13:41 some languages where the others don't do
+13:43 a good enough job. uh but if they do uh
+13:48 we'll be happy to switch to uh service
+13:50 like our transcription is not our core
+13:52 competency we're very good at this but
+13:54 we're at the AI application layer uh
+13:58 this is very low level that we do it uh
+13:60 it's like it's like a car battery right
+14:02 if we if we can find something we'll
+14:04 develop it but if we can find
+14:06 something's better and cheaper we'll use
+14:08 it I'm glad you brought up real time
+14:10 transcription because that was one of
+14:12 those I remember you know from the
+14:14 technology out. That was one of those
+14:15 like of course Gong should go in that
+14:17 direction and I think you like stuck to
+14:19 your conviction on that's not what our
+14:21 customer wants and so even though that
+14:22 may be the cooler technology like this
+14:24 is like what our customer wants is you
+14:25 know actually coaching workflows and and
+14:27 the ability to you know analyze
+14:29 competitor mentions after the fact and
+14:31 so like that I think is a great example
+14:33 of thinking customer back versus
+14:34 technology out. Yes. Yes. Absolutely. We
+14:38 have like uh since we started every time
+14:40 we're always asked about real time which
+14:41 is like you know it makes like total
+14:43 sense right except that uh the
+14:45 technology doesn't really work to this
+14:47 day and the value is questionable right
+14:50 so I'm we still have not uh not seen it
+14:54 like in action like in in a great way. I
+14:56 want to talk about generative AI and so
+14:59 you started this company back in the
+15:01 days of what I would call predictive or
+15:03 analytical AI and a lot of the value uh
+15:05 is in that you know how many times are
+15:07 your competitors being mentioned you
+15:09 know if you talk about this feature
+15:10 first or do your win weights go up and I
+15:12 think a lot of the value is in that uh
+15:15 tell me about what you see as you know
+15:17 the opportunity for gong in a kind of
+15:19 generative AI technology era well I mean
+15:22 these are exciting days uh
+15:25 And when we uh started company 2016,
+15:29 even 2015, we're starting to think about
+15:31 it. We the model that we used is a
+15:34 self-driving car, right? Autonomous
+15:37 system and and self-driving car of like
+15:40 five levels. Uh level five being like
+15:42 fully self-driving and level one is kind
+15:45 of like uh alerts of sorts, right? in
+15:47 and uh we envision an autonomous
+15:50 application that runs a revenue
+15:52 organization that you tell what my
+15:54 revenue goals is and I need to
+15:55 understand how to break it down to goals
+15:57 and how to help from the leaders to the
+15:59 individual uh sellers uh how to run the
+16:02 things that was like total science
+16:04 fiction. The technology didn't exist
+16:06 back then. It still doesn't fully exist.
+16:08 There are still components that are that
+16:10 are missing. But every time uh we're
+16:12 able to uh every time we
+16:16 assess what's real today, what's
+16:18 available, what's the state-of-the-art,
+16:20 not the hype, what we can really do
+16:22 reliably and create a great customer
+16:24 experience that we can stand behind and
+16:27 integrate
+16:28 uh into our solution and and uh
+16:32 generative AI was uh was was a game
+16:35 changer. you know, things like
+16:36 summarizing calls is something that uh
+16:38 we wanted to do in in
+16:42 2016. Um, I actually hired a news
+16:46 editor, a TV news editor, and I I wanted
+16:49 to see because we wanted to take, okay,
+16:51 take like 60 minutes and create like a
+16:53 like a 30 second news reel like you do
+16:56 on TV or sports, right? And I paid
+16:59 someone, I gave a recording, said,
+16:60 "Okay, why don't you create something
+17:01 for me?" And um we did probably like 20
+17:06 20 attempts and I gave up because
+17:09 they're not they're not good and and you
+17:12 understand that actually summarizing you
+17:14 already it's already biased in some way.
+17:16 So now you could do it like super easy.
+17:18 So it creates like a ton of value uh
+17:21 some of the um holy grail apps that
+17:25 people ask for you know tell me what's
+17:27 going on with this account. So now I
+17:28 could just ask like we're at the end of
+17:30 our quarter right now. So I could log in
+17:33 and just say hey like uh how is this
+17:35 deal progressing? Like what could make
+17:37 it go wrong? Like it can I can I help
+17:39 with anything? It'll tell you it's
+17:41 pretty uh pretty amazing. Uh on a market
+17:44 side
+17:46 um it provided like a huge tailwind for
+17:49 us. So we we're grateful not just for
+17:51 the technology but what it did in market
+17:53 awareness. So when we started, Gong is
+17:56 is is an AI company or an AI application
+17:59 company more
+18:00 precisely, but we we never spoke about
+18:04 it like it was like third level
+18:06 messaging that this is like AI
+18:08 technology because it would scare the
+18:09 heck out of people. So especially we
+18:11 sell to non-technical people. We sell to
+18:13 CRO and uh business uh users that aren't
+18:17 super technical. So if you talk about AI
+18:20 that seems like scary and science
+18:21 fiction. So it was like third level
+18:23 messaging. You had to double click like
+18:25 at least a couple times. But now uh we
+18:29 got a lot of people calling us, hey my
+18:32 CEO uh was asked on an earning call if
+18:35 they um plan to increase or how are they
+18:38 going to plan to increase sales
+18:39 productivity with AI? Do you have
+18:41 something with AI? So the the openness
+18:43 and the excitement and uh um chat made
+18:47 it so um accessible at a consumer level
+18:52 that uh that's that's super exciting. On
+18:56 that note, I think a lot of you know a
+18:58 lot of companies boards are focused top
+19:01 down on how AI is changing productivity
+19:03 metrics. And I think in coding for
+19:04 example, it's been pretty exciting to
+19:06 see a lot of companies are now
+19:07 reporting, you know, 20 to 30% increases
+19:10 in engineering velocity and metrics like
+19:12 that. Uh what have you seen on the sales
+19:14 side? What has been the impact of of
+19:16 using AI uh for your customers in the
+19:19 revenue orgs? Um we've seen uh dramatic
+19:23 changes. So some of our customers um
+19:26 have seen as much like uh 60% more sales
+19:29 capacity
+19:31 and and just by you know you can measure
+19:35 it like lots of different way let's say
+19:36 you know a person can handle like 50
+19:38 accounts now they can do 100 accounts
+19:40 right so that's like uh just by saving
+19:43 all the time so a lot of the the tasks
+19:46 are just becoming redundant even like
+19:50 you don't need to talk to as many people
+19:52 anymore not There's the fun part of
+19:54 talking to other people, but not like
+19:56 what happened, what I'm going to do,
+19:58 because now everything is visible. Um, I
+20:01 get on a call with a customer. Gong
+20:03 already prepares me for the meeting. So,
+20:06 I don't need to call the account team.
+20:09 Usually, the way it used to work, you
+20:11 know, I'd get like five people from the
+20:12 account. We schedule like a premeating
+20:14 briefing. They prepare a document with
+20:16 all the questions and it's probably like
+20:19 five hours of some highly paid people.
+20:22 Now it's 30 seconds, right? It just
+20:24 means to read. If I have a question, I
+20:26 ask. So it's a it's a huge uh huge
+20:28 timesaver and uh you know we're not even
+20:31 yet at like level five driving. So the
+20:35 potential is like uh uh way bigger. If
+20:37 you remember like 75% of of sellers time
+20:40 is not customerf facing. That's the
+20:42 data. Everything else is uh is the the
+20:46 opportunity size. What level are we at
+20:48 today and what's the path to getting to
+20:50 level five? It depends. Uh so there are
+20:53 like there there are different
+20:55 components like for example at gong so
+20:57 some are at level two and some are level
+20:58 three and some are at level four. Uh
+21:01 level four is is almost like uh driving.
+21:04 So if I you know let's say I get on a
+21:07 call with a customer gong would al
+21:10 create like the email for me but I have
+21:12 to click send. So this is like level
+21:14 four. It's almost like I'm in control
+21:16 which is smart. That's level four. Level
+21:20 five is when it'll send the email on my
+21:23 behalf. Um, it'll take it'll take a
+21:26 little bit of time. Some things are
+21:28 easier than others and something are are
+21:30 not um not as mission uh critical,
+21:33 right? If I if you want to do people
+21:36 everybody talk about like outbound SDRs,
+21:38 right? Cold calling. This is a pretty
+21:40 poor choice for current state of AR
+21:43 because first it's hard. It's very hard
+21:45 for people to do it. Second, if it goes
+21:48 wrong, right, it's very damaging to your
+21:51 brand, right? As we've seen, if you've
+21:55 seen some of the cursor um uh service
+21:57 agent uh you know, changing privacy
+21:60 policy or or
+22:02 um airlines. So, I wouldn't let like AI
+22:04 talk to my customers like uh except for
+22:07 like very simple cases like support
+22:09 tickets that are pretty um confined and
+22:13 but not anything that is uh uh complex.
+22:16 So for those uh uh it's still going to
+22:19 be level four until we get uh conviction
+22:22 that the technology can be 100% trusted.
+22:24 But some some areas are you know if it's
+22:26 not uh for example now we have like role
+22:29 playing right uh AI you could just
+22:31 practice do practice call with AI and
+22:34 it'll it'll give you feedback right if
+22:36 this thing doesn't work 100% it's no big
+22:38 deal like yeah like a little bit
+22:40 annoying but uh you're not embarrassed
+22:42 in front of customers is that with like
+22:44 a ver virtual avatar uh yes yes yes oh
+22:47 super cool yes the comment on until it's
+22:50 100% trusted do you think people or or I
+22:52 guess in terms of what you've observed
+22:54 with your customers and the users of the
+22:56 product. Do people hold AI to a higher
+22:58 standard than they hold themselves? I I
+23:00 would guess most of those reps or BDRs
+23:03 or SDRs are not 100% all the time. Um,
+23:08 yes and no. So the yes, um, actually fun
+23:13 fact, like when we started Gong, we
+23:14 actually did not show the transcription,
+23:17 right? So you couldn't see the
+23:19 transcription was there but someone
+23:20 advised us like a smart person that did
+23:22 it like in other applications don't show
+23:24 the transcript because it's
+23:26 70% accurate which means like three out
+23:30 of 10 words will be wrong when someone
+23:32 reads that it'll just be an awful user
+23:34 experience. So we hit it we allow them
+23:36 to search we show some things and now
+23:37 people were super happy but we couldn't
+23:39 show the thing because it just wasn't
+23:42 good. So people do uh expect uh
+23:46 perfection with AI. You know, someone uh
+23:48 a self-driving a Tesla makes an
+23:50 accident, right? It's it's major
+23:52 headlines, right? But you know, people
+23:54 make so many more accidents like and
+23:56 nobody talks about.
+23:58 That said, I do see that the reactions
+24:02 to uh for example, when people ask
+24:05 questions at Gong or they get the
+24:07 summaries or they get everybody's very
+24:10 excited. they know it's not perfect like
+24:13 it's you know maybe 80 85% correct but
+24:16 the value because it's so fast right and
+24:20 so easy
+24:22 uh I don't see a lot of people
+24:24 complaining so I think people are able
+24:26 to tolerate somewhat lower quality for
+24:28 ease of use so for example when I when I
+24:30 was a teenager right we had like hi-fi
+24:32 systems right that's how you listen to
+24:34 music and and people like either like on
+24:36 headphones uh and or like on on mono
+24:39 just one speaker right How how can you
+24:41 listen to that? Just poor audio quality,
+24:44 right? But it's so easy that people are
+24:46 willing to put up with the uh simpler
+24:50 and easier uh technology and this is
+24:52 like definitely a lot simpler. So, we
+24:53 see a lot of generally the the sentiment
+24:55 is very positive. I have no idea what a
+24:58 hi-fi system is. Uh yes, I bought my
+25:01 wife wanted to kill me, but I bought
+25:02 like major speakers in our basement and
+25:05 uh and she said, "You did what?" Yeah.
+25:08 But it just meets that that audio
+25:09 quality. Love it. Uh I mean what's your
+25:13 take on agents and how are you guys
+25:15 approaching agents building selling
+25:18 agents at Kong? We think agents are
+25:20 real. Uh they're again like a lot of
+25:23 other things. There is a bit like
+25:24 inflated expectations right now. It's
+25:26 like it's going to do everything. So So
+25:28 everybody like uh excuse me agents
+25:30 aren't taking your job anytime soon. But
+25:32 they can definitely take parts of your
+25:34 job. uh the parts that you you you don't
+25:37 like doing and and it's a waste of your
+25:39 time.
+25:40 So we uh the approach that we're taking
+25:44 is like uh task specific agents. They're
+25:47 not developed like uh do anything.
+25:49 There's no writing code. So we uh have
+25:51 for example like u we spoke about like
+25:53 briefer, right? So here's like brief me
+25:56 for encount. So there's an agent that
+25:58 trained for this task. It has parameters
+26:01 and it's built in the workflow, right?
+26:04 So uh that's and we have dozens of them.
+26:08 That's the approach that we
+26:10 believe are are great for for enterprise
+26:13 applications. Uh general purpose are
+26:16 very hard to nail because they could go
+26:18 in all sorts of directions. Uh uh but
+26:22 it's a real thing. Uh also interesting
+26:24 the line between like simple automation
+26:25 and agents like isn't clear. Uh if you
+26:28 look at it some of them like it's some
+26:30 it's the same thing but it's also very
+26:32 different. So the question can they make
+26:34 decisions uh again for non-critical
+26:36 decision decisions that aren't like like
+26:39 a huge deal they can definitely do a
+26:41 great job but um agents uh can
+26:44 definitely do
+26:45 um quite a bit of of our work. Have the
+26:49 newer model capabilities and in
+26:51 particular the reasoning models have
+26:53 those uh unlocked new capabilities for
+26:56 gong? Not yet. I think that there's
+26:60 um there's a line that uh I'm not sure
+27:04 that even like a transformer uh
+27:07 technology is capable of which is like
+27:09 can you rely 100% of something that will
+27:12 be true right just truthfulness like not
+27:15 99% 100%. Right? So there's a category
+27:18 of work that has to be you know you send
+27:22 a proposal to a
+27:23 customer that can't be like 99% right if
+27:27 it if it's like 1% of the cases and you
+27:29 send something is like totally wrong
+27:30 pricing or over discounting or something
+27:33 is like a hallucination so even with the
+27:36 reasoning it's getting better so I think
+27:37 it increases the classes that of tasks
+27:40 that are that make sense but uh if you
+27:45 talk like AGI or things that are that
+27:48 are absolutely like must happen um you
+27:52 know calculate commissions to sellers
+27:54 right you get it wrong it's it's it's
+27:57 very bad right so I think it's it's a
+28:00 it's a quantitative uh improvement still
+28:02 not a qualitative qualitative is that's
+28:04 100% trusty and that'll be some would
+28:07 say even if it's like you know uh Yan
+28:09 Lun or or David Deutsch they would say
+28:11 like it's it's not even with the realm
+28:13 of transformer technology because of the
+28:15 statistical nature of of uh the
+28:19 approach. Do you agree with Yan's take?
+28:22 Um yes. Uh but I also know there's a
+28:25 possibility that maybe like uh and he's
+28:28 like much smarter than I am that we're
+28:30 not seeing that someone would uh approve
+28:32 us wrong which would be great. But uh
+28:34 yeah, right now
+28:36 um there's also uh an issue of
+28:40 accountability and
+28:42 um both legal uh but also from a a work
+28:45 perspective. For example, Gong now has
+28:48 the ability to update all CR all
+28:51 opportunity records. For example, so
+28:54 that's a no-brainer, right? Nobody needs
+28:55 to log in CRM and update fields anymore,
+28:58 right? Some companies still want like
+29:01 the seller to say yes yes yes because
+29:03 otherwise they can blame AI for oh I I
+29:06 didn't say that right it's like AI and
+29:08 AI could be wrong right it's like the
+29:09 the risk of
+29:10 error so there's a different analog
+29:14 computer and a digital computer right
+29:15 digital computer uh has error correction
+29:18 which means you know if a message was
+29:20 sent right over a line there's errors
+29:23 it'll get there exactly as it is right
+29:25 and and
+29:27 transformer maybe it'll be enhanced in a
+29:30 way that we're not thinking about. It'll
+29:31 take like different kind of technology
+29:32 to get there. My two cents.
+29:35 Yeah. What do you think uh the sales
+29:38 team of the future is going to look
+29:39 like? And and maybe maybe you don't have
+29:41 a high fidelity point of view on that,
+29:42 but how quickly do you think you know
+29:46 the composition the team composition of
+29:48 a sales team is going to change? If like
+29:50 if you take the software engineering
+29:51 world as analogy, I think that's
+29:52 changing rapidly in terms of size of
+29:55 software engineering teams, skill sets.
+29:57 How quickly do you think the sales uh
+29:59 world is going to change by contrast? Um
+30:02 it's already changing. I think that uh
+30:03 it'll it'll be gradual. So there are
+30:06 things that you know very transactional
+30:08 sales for example, but you know I want
+30:09 to buy an iPhone or or something
+30:12 uh that that'll that'll go first because
+30:15 that that could certainly be automated
+30:17 or I want to upgrade my uh cellular plan
+30:20 or whatever it is, right? That that can
+30:23 be handled. complex things like I want
+30:26 to buy a house or or a mortgage or
+30:29 enterprise software that's like uh
+30:31 that's more complicated but um I do not
+30:35 see people doing clerical work um right
+30:39 just updating forms I do not see the
+30:42 traditional forecasting I do think that
+30:44 uh there are things that
+30:46 are some very uh farreaching
+30:49 consequences right right now people are
+30:51 doing manual forecasting right I don't
+30:53 think that's necess necessary because uh
+30:55 uh software and AI can do a way better
+30:59 job all things you know companies have
+31:02 sales stages in the process every
+31:04 company has you know their five or six
+31:07 stages you don't really need that that's
+31:10 a management tool for that was created
+31:12 like you know 50 years ago so we can get
+31:14 some visibility to where the process is
+31:16 but uh actually everything can be done
+31:20 um way smarter with AI so I think the
+31:24 process can change, the people can
+31:25 change. Uh people would uh we see great
+31:28 adoption of uh the technology because
+31:30 again it's so easy that it's
+31:33 crossgenerational right now that people
+31:36 are very eager and and sometimes their
+31:39 imagination is even faster than our um
+31:43 speed of development. Oh, can you do
+31:45 this? Can you do that? So people are
+31:46 very eager and I think that they'll be
+31:49 augmented by our the BDR role. Uh I'm
+31:52 not sure that uh it'll be it'll be
+31:54 around not necessarily because the
+31:56 software is going to replace but uh
+31:58 sellers could do their own thing right
+32:00 if they have the right tools. So fewer
+32:02 people could do more work. Remember BDR
+32:04 did not exist 30 years ago. It was
+32:06 created for fast hyperrowth fast
+32:09 companies. Most companies in the world
+32:10 don't have that. So I think we can
+32:13 augment the sellers and they'll be able
+32:15 to uh address a lot more customers. I
+32:18 mean, it's it's easy to imagine that
+32:20 sales team of the future being smaller
+32:22 on balance than the sales teams of the
+32:24 present. Each individual is far more
+32:26 productive because of wonderful tools
+32:28 like Gong that give them superpowers.
+32:30 The thing I'm curious about is for for
+32:32 you as a business, you create a lot of
+32:34 value with the product that you offer.
+32:37 You capture that value today, I believe,
+32:39 primarily through a seatbased pricing
+32:41 model. If there's this counterveailing
+32:43 force on seats, which is ironically
+32:45 you're making people more productive,
+32:47 therefore they need fewer seats. Over
+32:49 time, how does your pricing and
+32:50 packaging evolve? How do you capture
+32:52 more of that value that you're creating
+32:54 if seats aren't going up as fast as they
+32:56 might have historically? That that's a I
+32:58 love the question, Pat. So, um there are
+33:02 multiple forces. First, I'm not sure
+33:03 there'll be fewer sellers. They'll be
+33:05 different, but uh the economy grows kind
+33:08 of GDP grows over time. There'll be uh
+33:10 products and services we're not
+33:11 imagining right now that are uh that
+33:14 that will be there. So it's not
+33:15 necessarily like fewer people but people
+33:17 will be more efficient but we will start
+33:21 to add the consumption level uh uh or
+33:25 usage pricing like this year we're
+33:26 coming with an orchestration product
+33:28 that will be a great fit. When we
+33:30 started gong actually we asked people
+33:32 like do you want to do it like uh based
+33:35 on usage or based on seats and most
+33:39 people that we serve it most buyers said
+33:42 oh per seat right now because they use
+33:44 like CRM as an anchor point right and
+33:46 and uh
+33:48 and we didn't want to innovate on too
+33:50 many fronts so we said okay we innovate
+33:52 on the product pricing we'll keep it
+33:54 like simple but
+33:57 we always um and And it probably in in
+34:00 in in the pitch deck like from series B
+34:03 or whenever we did we said like this
+34:04 this will be AI will be bigger than
+34:06 cloud right because cloud is an IT
+34:08 revolution and AI is is a work
+34:10 revolution. So we never saw oursel as
+34:14 software company but more like a bo and
+34:19 uh and and um and the potential is 10
+34:22 times bigger because if you take you
+34:25 know most sales tax like you know
+34:27 thousand dollars a seat then I think it
+34:28 could easily be like you know thousand
+34:30 or or um or more per month because if
+34:35 you think of how many you know people
+34:37 are making 200,000 or costing $200,000 a
+34:40 year you save 70% as 140,000 right you
+34:42 take 10% of that it's still a bargain
+34:45 for the CFO right and for the company so
+34:49 the potential is is absolutely there
+34:51 whether it's like a usage base or just
+34:53 hiring higher uh per seat uh pricing uh
+34:57 it has to be aligned with with the value
+34:59 but uh I think we're the world is more
+35:02 ready now
+35:04 uh to look at uh uh value pricing I want
+35:08 to do a quick aside from AI for a second
+35:10 because I think that Gong is one of the
+35:12 only companies that's really, you know,
+35:15 reinflected revenue growth at pretty
+35:17 meaningful scale. Uh talk talk to us
+35:21 about what it was like going through,
+35:22 you know, sales tech winter over the
+35:25 last couple years and and how you made
+35:26 it through to the other side and and any
+35:28 lessons for other founders. Do we really
+35:30 want to get into that, Sonia? Like uh uh
+35:33 it was a it was like uh so early 2023
+35:37 really uh uh facing like a tough tough
+35:39 headwind, right? the market was uh was
+35:41 was tanking. It was like this perfect
+35:43 storm everything and we uh uh we almost
+35:46 came to uh to a halt. Uh very
+35:48 challenging and demoralizing to the
+35:51 team. Uh and you know when he says
+35:53 customers they say we love you but we're
+35:55 we're leaving or some companies going
+35:56 out of business. So it was it was tough.
+35:59 Uh but uh I never lost conviction that
+36:03 uh we can turn this uh um around right
+36:06 and we started uh rolling our sleeves
+36:09 and got to work. So we launched two new
+36:12 two new products forecast and engage
+36:14 like in in in great speed. Fortunately
+36:17 we had enough money so we we raised a
+36:20 lot of money. Uh we never burnt a lot of
+36:23 money. So when we always need people ask
+36:24 why are you raising? He said this is
+36:26 like for a rainy day that we didn't know
+36:28 when it's going to come but we knew it
+36:29 will. Right. So we decided that u where
+36:34 everybody were laying off people. We
+36:35 said this is an opportunity for us.
+36:37 It'll be harder for the competition. Now
+36:39 we're going to keep the foot on the gas
+36:40 pedal. Uh that's one. Second we improved
+36:43 our act. Uh when we sell uh we had to
+36:47 create like a like a bulletproof
+36:49 business case that the CFO would
+36:51 approve. It's not just just that you
+36:53 know buy gong because it's cool and it
+36:55 will change your life. So it has to show
+36:57 real value how we support
+37:00 customers and um we we tried a lot of
+37:04 things and the um you don't see
+37:07 immediate impact. Some of the things
+37:08 that you're doing it might take like two
+37:10 three quarters. So you you're
+37:11 experimenting with quite a few things
+37:12 and nothing seems to be working. So it's
+37:15 very uh very challenging um um situation
+37:19 but the team was able to turn it around.
+37:21 So all these things uh eventually uh the
+37:26 product uh beefing up the product suite
+37:28 improving our game and uh fortunately uh
+37:33 chat GPT came out and it gave us a huge
+37:35 boost. There are a lot of people who
+37:36 spelled like the death of gong. Oh now
+37:38 everybody can do um can do generative
+37:41 will make everything possible. that was
+37:44 slightly exaggerated. Uh so but that
+37:47 actually gave us like a a really nice
+37:49 tailwind because customers saw like a
+37:51 lot more value in the solution. Uh so
+37:53 all these things together
+37:55 um helped us turn it around and now
+37:57 we're um we're accelerating. I don't
+37:60 know when this will be aired but even
+38:01 like this quarter is even like faster
+38:03 than the uh the previous quarter. Sonia,
+38:05 I'll give you like a love it look. Yeah.
+38:08 Yeah. It's uh so we had it's now seven
+38:10 consecutive quarters like the of of
+38:12 accelerating and uh you know we we hope
+38:15 we have not seen the end. I mean I think
+38:18 your grit and the way that you dug in
+38:21 and just you know led the company
+38:23 through that period and you know never
+38:26 lost any any confidence whatsoever in in
+38:29 the uh in the full vision for what gone
+38:31 could become. I think it's I have huge
+38:34 respect and admiration, we all do, uh,
+38:36 for how you weathered that storm and I
+38:37 think you've now earned the right to
+38:38 really go big and and go purs pursue
+38:41 that that big ambition. Should we close
+38:43 it out with some rapid fire questions?
+38:45 Oh, I'm nervous, but yeah, bring it on.
+38:48 Okay, these are intended to be like one
+38:49 one word or one one sentence answers.
+38:51 Uh, whatever comes to mind quickly. Um,
+38:54 okay. Favorite new AI application in
+38:57 your personal life or at work other than
+38:59 Gong? Uh, chat GPD easily. I use it like
+39:03 15 times a day. Easily. Yeah. Yeah. For
+39:06 everything. I don't want to tell you for
+39:07 what, but yeah.
+39:10 All right. How about one piece of advice
+39:12 for founders who are building AI
+39:14 companies at the application layer.
+39:17 Keep your eyes on the customer. Talk to
+39:19 customer. Don't believe your investors,
+39:22 the influencers, all of that. I love you
+39:25 all. Just just talk to customers. See
+39:27 what they really need. be the fastest
+39:29 thing that works now. Not like in two
+39:33 years where where the hype is just
+39:34 follow keep your eyes on the ball. Love
+39:37 it. I I don't love that so much. I'm
+39:40 kidding. I'm kidding. I'm goes rapid. If
+39:42 you give me a little more time, maybe
+39:43 I'll give you more politically correct.
+39:45 I'm completely kidding. Uh in in two or
+39:48 three years time, will we have virtual
+39:50 avatars actually selling to customers
+39:52 directly? Yes or no? Uh yes. Yes. Yes. I
+39:56 think for for simple simple products uh
+39:59 yeah that's definitely a possibility.
+40:01 How about one recommended piece of
+40:03 content for people who are interested in
+40:05 AI something they should read or listen
+40:07 to just you know just follow your
+40:10 interest. I I I I'm not loyal to any one
+40:12 source. I listen all all kind of things.
+40:14 I just put like my interest on YouTube
+40:16 and that's how I find information and
+40:18 and uh look at it. Uh I I do like um the
+40:24 beginning of infinity by David Deutsch.
+40:26 It's it's not the easiest read, but it's
+40:28 this book. It's not just on AI, but it
+40:30 talks about what's next. Like uh AI is
+40:32 part of it. And uh
+40:35 um this is kind of like a mind-changing
+40:38 uh book in my mind. I mean, do you think
+40:40 AI is capable of fully autonomously
+40:42 signing a million-dollar contract? Uh
+40:45 and what year will that happen?
+40:48 uh not in the next like three to five
+40:51 years in my opinion. Um
+40:54 it'll it'll need something that's beyond
+40:57 transformers, something that that is not
+40:60 like an analog computer is more digital
+41:01 that can be relied 100%. So and
+41:04 and I don't know what it is and I don't
+41:07 know that anyone knows today what it is,
+41:08 but it'll it'll take like different
+41:10 level of technology. This is recorded.
+41:12 So let's put something on a calendar for
+41:14 like 3 to five years and see if I was
+41:16 wrong or right.
+41:17 Let's do it. I think you've tended to be
+41:19 right whenever we've disagreed in the
+41:20 past. Me, uh, thank you so much for
+41:23 joining us today. We've really enjoyed
+41:24 the discussion and congratulations on
+41:26 persevering through sales tech winter
+41:28 and making it through to this very
+41:30 exciting time for AI and for the world.
+41:32 Well, it was fun. Thank you so much.

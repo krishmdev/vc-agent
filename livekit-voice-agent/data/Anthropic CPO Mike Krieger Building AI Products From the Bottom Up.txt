@@ -1,0 +1,779 @@
+00:03 You all might know Mike of course as
+00:05 chief product officer of Anthropic, but
+00:07 you were also Sequoia founder at one
+00:09 point. Is that right? Yeah. And for a
+00:11 hot week. For a hot week. And what was
+00:13 that company? It was Instagram.
+00:15 Instagram. Thank you. Welcome everyone.
+00:17 Mike Lauren, take it from here. Thank
+00:20 you for joining, Mike. Yeah, happy to be
+00:22 here. Hey, everyone. Um, so those you
+00:24 may not know, but Mike is actually a
+00:25 content nerd, so it's pretty fun to have
+00:26 the AI filmmaker ahead of us. Where do
+00:29 you think the world of AI content is
+00:30 going? I think regardless of like the
+00:34 medium or how much AI is being used to
+00:36 create things, I think you'll keep
+00:37 coming back to like is there a story
+00:39 being told? Is there a person behind the
+00:41 content that people can connect to and
+00:42 ultimately like react to over time? Um,
+00:45 and so it's like another tool in the
+00:47 toolbox of a storyteller. Um, and I'm
+00:50 curious how you guys think about as you
+00:52 build more content, as more pixels get
+00:54 generated, how do you help people build
+00:55 control? like Enthropic has done a
+00:56 really nice job of helping us understand
+00:59 models with mechanistic interpretability
+01:01 and where are models how do you make
+01:03 Golden Gate clawed how do you think
+01:05 about giving that option to your users
+01:06 and your customers yeah I think you know
+01:10 there's probably things that are useful
+01:11 at a point in time right now like
+01:12 there's you know talk about watermarking
+01:14 and like oh is this AI generated but you
+01:16 know and maybe this was in the
+01:18 conversation earlier today I wasn't here
+01:19 in the morning but the majority of
+01:21 content will be AI generated so the
+01:23 distinction of like was this made by AI
+01:24 or not I think is going to be a not
+01:26 useful one. Um, I think there will still
+01:28 be interesting questions of like
+01:30 derivation and providence and and those
+01:32 kinds of things. They can get easier uh
+01:34 with AI. I mean, it's funny to bring it
+01:36 back to blockchain, which I feel like is
+01:37 not a cool thing to talk about anymore,
+01:39 but like was like theoretically one of
+01:40 the problems that was being solved with
+01:42 blockchain is probably much more doable
+01:43 when like the entire N10 pipeline um um
+01:46 is bits. Um but yeah, I think like the
+01:49 the things that were important in the
+01:51 past world like what did you source like
+01:54 is there a citation like when I think
+01:55 about like documents is still important
+01:56 and more doable now. Um but like whether
+01:59 it's AI generated I think is like not
+02:01 the interesting question going forward.
+02:03 Interesting. And so let's dive into
+02:05 Enthropic a little bit and some of the
+02:07 products you guys are building there.
+02:08 You guys have done a really nice job
+02:09 with artifacts with the coding models
+02:11 with MCP. I'm curious for you as a
+02:14 product officer, chief product officer,
+02:16 what your framework is for building
+02:17 products and how do you make them how do
+02:20 you make them the products better than
+02:21 just the model itself? Yeah, I think um
+02:24 I guess two thoughts on this. Like one
+02:26 is um the things that were useful in the
+02:28 Instagram age are still useful now,
+02:31 right? Which is like are you solving a
+02:32 real problem for people? Like if you're
+02:34 creating a developer tool, are you
+02:35 enabling you to do something interesting
+02:37 and novel and quickly? If you're
+02:38 building an enduser product, like are
+02:40 you meeting the needs of people where
+02:41 they actually are? So I think that like
+02:43 remains as important now as it ever has
+02:45 been. I think what's different and a
+02:47 lesson I had to unlearn is like on
+02:48 Instagram we did a much more sort of
+02:50 tops down you know 3 to six month time
+02:53 frame you know of of planning. Thomas in
+02:56 the third row can relate to this. We
+02:57 were definitely much more like plan and
+02:59 deliver it. I think this is true at
+03:01 anthropic and in talking to kind of my
+03:02 counterparts in open at other places
+03:04 like you just have to allow for much
+03:06 more bottoms of creativity because most
+03:08 I think the best products are the ones
+03:09 that are built very close to the model
+03:10 and you can only kind of tell what
+03:12 they're capable of like pretty late in
+03:13 the process and so I've just learned to
+03:15 kind of invert the sort of part of the
+03:19 like creative process to be much more
+03:21 bottoms up which you know as like a bit
+03:23 of a control person it's like a little
+03:24 hard but I think it's also like opened
+03:26 up some really interesting things like
+03:27 artifacts was a research prototype that
+03:30 then got taken by like a designer and an
+03:32 engineer and then shipped to production.
+03:34 I think I've heard that story not just
+03:35 from us but from other like creators in
+03:37 the space as well. Yeah. Could you
+03:39 actually give us some examples? I'd be
+03:40 curious maybe MCP is one of the more
+03:42 interesting products the whole industry
+03:43 is starting to adopt. Where did that
+03:44 come from and what's the story? Yeah,
+03:46 it's funny for MCB because I actually
+03:47 like recently was like I was like, you
+03:49 know, half of my job is making memes and
+03:51 sharing them internally. And one of I
+03:52 was like making a meme around like when
+03:54 MCP was created. It was like a twinkle
+03:56 in like two people's eyes. And I was
+03:58 like went back and it really started
+03:59 from like watching us try to implement I
+04:01 think at the time we're implementing
+04:02 like Google Drive integration and then
+04:04 we were imp implementing GitHub
+04:05 integration and like those things should
+04:07 have more in common than not, right?
+04:08 It's like you're bringing context into
+04:09 the model. Um and we had done like two
+04:11 completely different interp uh like uh
+04:13 implementations internally and the third
+04:14 one that we were like queuing up was
+04:16 going to be like yet another uh
+04:18 completely you know bespoke thing and
+04:19 you know usually like my general pattern
+04:21 is like do things three times and on the
+04:23 third time you can try to figure out
+04:24 what the abstractions are and this is
+04:26 definitely that case where it's like all
+04:27 right what is in common here and where
+04:28 are things going uh but it definitely
+04:30 was not like a top down like we need a
+04:32 protocol for like better interacting
+04:33 with models it was again two engineers
+04:35 being like yes I think this is a good
+04:36 idea let's go let's go prototype and
+04:38 build it um and then like just spending
+04:41 the time like let's make the protocol
+04:42 better. let's like make it truly open so
+04:44 it's going to get adopted beyond
+04:45 entropic because we think there's value
+04:46 in not just us like owning a protocol
+04:48 but instead it being much more
+04:50 standardized um and then iterated on
+04:52 from there and now it's gotten much more
+04:53 of a community flavor where you know we
+04:56 tropic you know we're over a thousand
+04:58 people but still feels very startupy
+04:60 like we're working with like places like
+05:01 Microsoft and Amazon that have like all
+05:03 sorts of four-letter acronyms like you
+05:06 know I actually was going to cite them
+05:07 but I don't even remember some of them
+05:08 but it's like deep you know
+05:09 authentication like identity management
+05:12 with Exchange servers. I'm like, these
+05:13 are not the considerations that we think
+05:14 of a priority, but they are when you
+05:16 actually open it up to a broader group.
+05:18 Yeah, that's awesome. And where do you
+05:19 think it goes from here? It's been
+05:21 interesting to see a lot of the people
+05:22 in this room adopt MCP. You guys had a
+05:24 new release I think yesterday around
+05:26 integrations. Um, so like once you have
+05:28 the seed that comes bottoms up, how do
+05:30 you nurture it and grow it? Yeah, I
+05:31 think the two areas like MCP adjacent I
+05:34 get most excited about. One is around
+05:35 just taking action. So a lot of like V1
+05:37 of these projects was around like how do
+05:39 you bring context into the models? um
+05:41 like we launch our integrations where
+05:42 you can pull in like GitHub, you can
+05:44 launch like Zapier actions, but I think
+05:46 like the the right mode or like the
+05:48 actually taking actions is going to be
+05:49 much more uh important going forward
+05:51 because ideally you want these things to
+05:53 actentically not just in retrieving but
+05:54 also being able to automate workflows.
+05:56 The second one is like when MCPs and
+05:58 just agents more generally interact with
+06:00 each other and what the right protocol
+06:02 is. It feels early to try to standardize
+06:04 this too much. Like I know Google's
+06:05 doing agent to agent like I think we're
+06:07 still exploring what like the right
+06:08 patterns are. Um but that I think is
+06:10 going to be very interesting like
+06:12 internally we talk about like at what
+06:13 point will your agents hire other agents
+06:15 and what does that economy of you know
+06:17 uh of things even look like. So that is
+06:19 what I get really excited about going
+06:20 forward. That's awesome. So at this
+06:22 point um you guys have done an amazing
+06:24 job with your coding products that feels
+06:25 like it's more than just bottoms up a
+06:27 couple people tinkering with it. I'm
+06:29 curious how you think about it as a
+06:30 focus and what you guys have gotten
+06:32 right so far. Yeah, I mean even coding
+06:34 like I have a lot of awe of watching our
+06:36 researchers like uh it's also you know
+06:39 you can have a top down sort of like
+06:40 idea of where to go but so much like
+06:42 research innovation comes from like a
+06:43 couple people you know pushing the
+06:45 boundaries of um RL like Dan was talking
+06:47 about earlier right like there's like
+06:48 like a lot of these things come from
+06:50 discovery and that process needs to be
+06:52 pretty much bottoms up. I think a thing
+06:54 that we've tried to do well on the
+06:55 coding side is um not just focused on
+06:58 the benchmarks but also really like is
+07:00 it generating code that people like
+07:02 working with or is it generating good
+07:04 outcomes as well and so that's like a
+07:05 thing that we'll we'll definitely
+07:07 continue to to push on as well but it's
+07:08 been interesting like you know we
+07:11 definitely did not coin like the term
+07:12 vibe coding I think that that has like
+07:13 its natural limit in terms of like but
+07:16 it can create interesting things but is
+07:17 that like the way you're going to want
+07:18 to do an entire like codebase with like
+07:20 a team of 100 like definitely not right
+07:22 and so I I think we're we're internally
+07:24 figuring out what the role of like
+07:26 generating code is within our code base.
+07:27 We use it a ton. Over half of our pull
+07:29 requests are cloud code generated.
+07:30 Probably at this point it's probably
+07:31 over 70%. But what does that mean for
+07:34 code review is something that we're
+07:35 figuring like you can get then you can
+07:36 get cloud code review or PR but then
+07:37 it's like turtles all the way down and
+07:39 like at what point do you have that that
+07:41 like oversight around like is this like
+07:42 going to lead us to an architectural
+07:43 dead end? Does that matter if you can
+07:45 like overpower the usual like tech debt
+07:47 rewrite with um AI coding like we're and
+07:50 I think probably other folks like in
+07:52 labs working on like coding models like
+07:54 kind of patient zero for some of these
+07:55 for better and for worse. I was actually
+07:57 very curious to hear about some of the
+07:59 second order effects of coding agents
+08:00 getting much better like code reviews is
+08:03 one like I'm curious as more everyone
+08:05 can write software where do we go? I
+08:07 mean internally I think like what I'm
+08:09 realizing is like it makes all of your
+08:10 other inefficiencies as a product
+08:12 organization like extremely painful
+08:14 because now it's like the alignment
+08:15 meeting is like it's not just standing
+08:17 in the way of like an hour of
+08:18 engineering work that would happen. it's
+08:19 like standing in the way of like the
+08:20 equivalent of like four or eight hours,
+08:22 you know, and so I think it's made made
+08:24 it like I think our product organization
+08:26 is going to break very much so with like
+08:29 with faster uh with code jet it just
+08:31 makes it very painful when you're like
+08:32 like it's even more wasted time with
+08:34 like driving alignment and the models
+08:36 are not helpful with that really. I mean
+08:38 they can synthesize meetings they can
+08:40 maybe like tee up the next conversation
+08:41 but they're not like they're not yet at
+08:43 the point where they're like
+08:44 organizationally driving uh decision-m
+08:47 interesting. Um I mean you guys are
+08:49 using a lot of enthropic at anthropic.
+08:51 Um here these are a couple examples. I'm
+08:52 curious what are the things that you're
+08:54 doing or that you've tried in the last
+08:56 six 12 months that everyone here should
+08:57 be using with your models or others to
+08:60 make them work better. I think what's
+09:01 been cool has been seeing like different
+09:02 disciplines inside the company that are
+09:04 not technical start using the models a
+09:06 lot. um and whether that's you know
+09:08 people in sales using it for meeting
+09:10 prep and you know they start from just
+09:12 using like what's available and then
+09:13 like some blocker becomes really
+09:15 apparent then maybe we'll build
+09:16 something bespoke in there. Um so that's
+09:18 been interesting but it's still less
+09:21 evenly distributed than you might expect
+09:22 even at an AI lab. I think there's uh
+09:24 even within a team like the salesperson
+09:26 that knows how to use it really well and
+09:28 the people are like doing it more
+09:29 traditionally and like the former person
+09:31 might be more effective or more like you
+09:33 know hit fewer blockers but it's not yet
+09:35 like yes it's like a requirement that
+09:37 everybody's going to use. Um myself like
+09:41 I just use it as a thought partner. So
+09:42 whenever I write anything whether it's
+09:44 like a strategy doc or a planning thing
+09:45 or performance review like uh I kind of
+09:48 re it's almost like in the same way that
+09:50 I started feeling weird trying to code
+09:52 on flights like after co-pilot where
+09:55 you're like oh wait I really feel like
+09:56 I'm half the engineer I usually am
+09:57 because this thing is not uh helping me
+09:59 go through like I feel that way now
+10:00 about if I write something and I don't
+10:02 have that extra sort of cycle through
+10:04 claude I'm like ah this is probably not
+10:06 like getting fully vetted. Um earlier
+10:08 Sam talked about how people in their 20s
+10:10 are the ones they're using these models
+10:11 the best. You're definitely closer to
+10:13 being in your 20s in your model usage
+10:15 which is fun to see. Yeah. Although it's
+10:16 like also surprising seeing like how
+10:19 people enter the workplace like we've
+10:20 been doing more work with universities
+10:21 and like you know they'll come into work
+10:24 in a very different way in terms of like
+10:26 the expectation of how much they're
+10:27 going to use Genai and like there not
+10:29 being a stigma for it. This is a big
+10:30 piece like some of our most successful
+10:32 internal products are ones that have
+10:33 shared visibility. like we like do a lot
+10:35 of things within Slack with with cloud
+10:37 integrated with internal tooling and
+10:39 I've learned that's really helpful for
+10:40 breaking down even at anthropic this
+10:42 like ooh did you make that with AI
+10:44 versus like yeah I did like it saved me
+10:45 like two hours like of course like I did
+10:47 other like better things to do than like
+10:48 write this performance review or
+10:50 something right and so like uh like even
+10:52 watching my time in this like last year
+10:53 and a half of like oh I don't know about
+10:55 like cloud and performance reviews to
+10:56 like now it being encouraged is is I I
+10:58 think a positive development uh of
+10:60 course you should read the result and
+11:01 make sure it actually acts but the thing
+11:02 that was really wacky was um our we have
+11:05 like a internal thing that can do you
+11:07 know go across all of Slack and all
+11:08 internal documents and but it's a public
+11:10 it's either a public or a private
+11:12 channel depending on how you want to use
+11:13 it but most people use the public
+11:14 version and what was happening around
+11:16 performance review season just a couple
+11:17 weeks ago is people using it to like
+11:19 generate their first drafts which was
+11:20 like very interesting in public so I
+11:22 don't know like I I wonder how much
+11:24 people who come up with just the
+11:25 assumption that you're going to use AI
+11:26 for a lot of what you're doing are just
+11:29 going to be more comfortable and not
+11:30 have that stigma around usage it kind of
+11:31 reminds me of the early midjourney days
+11:33 Yeah. Yeah. Yeah. Exactly. Like that
+11:35 shared visibility of usage is I still I
+11:37 still think very important. I think
+11:38 we're still at like the very beginning
+11:39 of how people even understand how to use
+11:41 this in their work. Yeah. It feels like
+11:42 there's a bunch of social opportunities
+11:43 which we haven't seen a lot of yet
+11:45 actually. Yeah. Um I'm curious to hear
+11:48 what's next for anthropic. Like you guys
+11:50 have done a lot on code. You've been
+11:52 thinking about the enterprise. Maybe
+11:53 there's more models coming up. Whatever
+11:55 you can share, we would love to hear.
+11:56 And then while he's answering that,
+11:57 we're going to do audience questions
+11:59 after this one. So start thinking what
+12:01 other people might have to ask and we'll
+12:02 jump to that next. Yeah, I think for us
+12:04 like on the both the model and the
+12:06 product side, it's like I know the word
+12:07 agent is like you know I'm looking at
+12:09 you know David and Robo and it's like
+12:10 top of mind for a lot of people. I think
+12:12 we we want to be as much as possible
+12:14 like powering a lot of that use case. So
+12:17 a lot of the like coding is the fir I
+12:18 think of as the first uh example of a
+12:21 broader theme which is can the models
+12:22 work for hours at a time like there was
+12:24 the meta chart from earlier and I think
+12:26 that that like is like I'm not going to
+12:28 call it our road map but it is like our
+12:30 goal which is like can the models work
+12:32 autonomously for longer and they're
+12:33 going to need things like memory they're
+12:34 going to need like advanced tool use
+12:36 they're going to need to onboard
+12:37 themselves organizationally like it's
+12:38 not stops being just about the model
+12:40 also is like the kind of full complement
+12:42 of things that you build around it like
+12:44 is it verifiable is like what does
+12:46 logging look like when you have a
+12:47 hundred agents working in your company
+12:48 rather than just one and like I don't
+12:50 think we'll like we won't play all the
+12:52 parts of that stack but hopefully we can
+12:54 enable a lot of that through the models
+12:55 and some of the building blocks nice and
+12:57 do you have any new models coming soon
+12:58 soon maybe maybe soon we always have new
+13:02 models coming soon yeah I look forward
+13:04 to seeing them I mean it's hilarious
+13:05 people like oh cloud 37 is still like
+13:08 377 is still the most popular cursor
+13:10 model and it's so old I'm like dude we
+13:11 released that in February it's like it's
+13:13 like the pace is very crazy uh And uh
+13:16 we'll have something cool soon. I'm
+13:19 excited for it. Do we have any questions
+13:21 from folks in the audience for
+13:26 There's one behind you, Daria, too. It's
+13:28 a comically large microphone. I like it.
+13:30 It's throwable. Wait me now. It's
+13:32 throwable. We need that. The one behind
+13:34 you or I'll go. Okay, I'll go. What's
+13:36 the You're a product person. What's the
+13:38 like what what keeps you up at night
+13:39 from a product perspective? Like what's
+13:41 the hardest product question you're
+13:42 dealing with right now?
+13:47 I still think I'll speak for our
+13:49 products, but I think this is generally
+13:50 true. Like these products are really
+13:52 like hard to use effectively for most
+13:55 people approaching it for the first
+13:56 time. Um like we'll build things that I
+13:58 think are useful and then like they'll
+13:59 be good workflows, but it's still a
+14:01 little bit too much of like if you hold
+14:02 it the right way, you can have like
+14:03 incredible results, but like a little
+14:05 bit off the beaten path or like if you
+14:07 don't have the insight of like, oh, you
+14:08 know, bring data this way or like this
+14:10 is what you can do and do these
+14:11 workflows. that still feels very like
+14:14 we're very far from like the first time
+14:15 you open Instagram it's like what do you
+14:16 do this thing you take a photo and like
+14:17 it's like it's definitely not that and
+14:19 part of that's being you know primarily
+14:21 more like work oriented than than like
+14:24 pure sort of like you know personal use
+14:26 case oriented but that keeps me up at
+14:28 night which is like I like there's still
+14:30 a huge overhang of like how models are
+14:32 useful to people and their capabilities
+14:34 today
+14:38 um so there's a certain future in AI27
+14:41 that is being predicted did and how does
+14:43 your world view like match or differ
+14:45 from that or where do things go? What's
+14:48 your commentary on that post in general?
+14:50 I think like maybe two reactions. One um
+14:54 like the importance of compute it's like
+14:56 it's not a novel or particularly
+14:57 profound statement but like like is I
+15:01 imagine a top topic of conversation open
+15:03 it's one at anthropic as well. So like
+15:05 what is our current compute story?
+15:06 What's like the next generation of
+15:07 compute like who do we partner with etc.
+15:10 So like that emphasis and the numbers in
+15:12 there are like pretty directionally
+15:14 correct overall. So I thought that was
+15:15 interesting. Um the one that I think is
+15:18 the most interesting like open question
+15:20 about whether it will play out this way
+15:22 is the like holding models back from
+15:25 release because they're going to be more
+15:26 useful and deploy internally. I even
+15:28 just saw there's an interview with um
+15:32 with Mark Zuckerberg like this week with
+15:34 at strategy and he was talking about
+15:35 like offering an API for llama and like
+15:37 the trade-off around like using some of
+15:39 the compute like that conversation is
+15:40 happening at every lab right which is
+15:42 incrementally do you spend the extra
+15:44 time on RL or do you spend that time
+15:46 like with a customer use case or do you
+15:48 spend it on you know your next pre-train
+15:51 and like um that allocation of relative
+15:54 compute is going to be incredibly more
+15:55 important and then at one point you're
+15:57 like wow Like if we have a very large
+15:58 product that is going to take a lot of
+15:59 inference and like that's highly
+16:01 profitable and that's useful but it is
+16:03 like directly taking time from from
+16:05 capacity for research you know and
+16:07 that's not even like research for the
+16:08 known runs it's also research for your
+16:11 wacky ideas from the two people in a
+16:13 room that like have an interesting new
+16:15 idea about how to scale that could
+16:16 become the next test time compute. So,
+16:18 um, that was very like closely matched
+16:21 and, um, it'll be this fascinating like
+16:24 we're kind of getting into this natural
+16:25 experiment with like Ilia's like SSI not
+16:27 commercializing from the beginning and
+16:28 like will they be in an advantage and
+16:30 that they can throw all of their compute
+16:31 towards training. I don't know. I feel
+16:33 like we've learned a lot from having our
+16:35 models out in the wild. I don't think we
+16:36 would have built like 37 sonnet the way
+16:38 we did it if it hadn't been for the like
+16:41 market feedback and seeing real use
+16:43 cases. So, I'm a big believer in having
+16:45 like an offering in the market. So, like
+16:47 that's probably the least plausible but
+16:50 will be interesting to watch over the
+16:51 next few years.
+16:53 I'm curious in a giant uh research plus
+16:57 product or how you balance um either you
+17:00 could imagine the product defines what
+17:03 sort of research happens and everything
+17:05 is vertically integrated and maybe
+17:06 that's the best product experience
+17:07 versus research which might want to just
+17:09 make the smartest models possible to
+17:11 push the frontier and then product sort
+17:13 of gets whatever happens and and makes
+17:15 do with it. like how do you uh how do
+17:17 you think about that? Yeah, that's such
+17:19 a good question. Um I think uh I I push
+17:22 our product teams and like in
+17:24 combination with research to be like if
+17:25 we are shipping things that could have
+17:27 easily been built just on top of our API
+17:29 and have like no other like way in which
+17:31 like at least their initial version
+17:32 wasn't better than what could be done
+17:34 like what are we doing? It's like we do
+17:35 have like these incredible researches on
+17:37 the other side. I would not say we were
+17:39 doing an like artifact is probably the
+17:41 best example of that where like you know
+17:42 that was fine tuned into the model it's
+17:44 useful etc. Um but then I think there
+17:46 was a a play like a phase where we
+17:48 weren't doing that as much of that and
+17:49 like I think we're getting back to now
+17:51 being like all right a full fully
+17:53 functioning product pod entropic should
+17:54 include applied AI should include
+17:56 somebody from like we have our cloud
+17:57 skills team which is basically like our
+17:59 finetuning team um to actually to
+18:01 succeed there but that's still probably
+18:03 only like what 10% of the research team
+18:05 is doing. And then hopefully the other
+18:07 things they're doing are generally
+18:08 useful like better instruction following
+18:10 is useful because then we can like do
+18:11 these things overall. Um, but I've
+18:13 always been interested with open air how
+18:14 they have like you all have like the
+18:16 chatbt model that is in the API that
+18:18 presumably not very many people use
+18:19 through the API but is like available
+18:20 there. Um, and whether we should like
+18:22 also have a like more fine-tuned like
+18:25 product oriented version. We've gotten
+18:26 away without that so far which is useful
+18:28 and mostly in compute preservation
+18:29 reasons but might actually be holding us
+18:31 back for some more differentiated
+18:32 product experiences.
+18:36 Um, thank you for taking the time. Uh, I
+18:39 was curious ho how you see um kind of we
+18:43 talked we heard Sam talk about being the
+18:45 one subscription for all things AI kind
+18:48 of integrating into all aspects of life
+18:49 and being that one-stop shop. How do you
+18:52 see anthropics positioning relative to
+18:55 that? I guess specifically I come from a
+18:56 world where you know I work on windsurf
+18:58 where we consume a ton of wind of
+19:00 enthropic but then I also use chatbt as
+19:02 like my app right and so do you draw a
+19:05 distinction when you're thinking about
+19:06 product strategy and what are you
+19:08 thinking long term in terms of those two
+19:09 things converging diverging
+19:12 I think in like there's a there it's a a
+19:16 question I think about a lot
+19:18 um there's what we find is like a lot of
+19:20 people at least at this phase in the
+19:22 product evolution like are comfortable
+19:23 like moving across or paying for
+19:25 multiple, right? And I'm sure you guys
+19:26 have seen this as well where it's like
+19:28 they're not replacement, right? Like
+19:29 people will pay for windsurf but also be
+19:31 in uh like might still subscribe to
+19:33 cloud or chatgpt in order uh in order to
+19:35 get something else, right? Or like a
+19:37 different workflow. I think that's
+19:38 sustainable in the short to midun and
+19:40 maybe in the long run there's going to
+19:41 be like maybe more desire for
+19:43 consolidation or maybe we end up with
+19:45 some maybe this sounds really dystopian
+19:46 like some version of like the like cable
+19:48 bundle of some of these things where you
+19:50 know there there's a little bit more of
+19:51 these. you can probably come up with a
+19:52 sexier name than the cable bundle for
+19:54 AI. Um, but there's probably something
+19:57 something to that regards. And then
+19:58 there's like the power users for whom
+19:60 like moving across things is valuable.
+20:02 Like we launched Cloud Max and like the
+20:03 top user request was like, can I use
+20:05 this for cloud code tokens? So, we
+20:06 launched that yesterday because it
+20:07 seemed like a natural evolution of yeah,
+20:08 if you're paying $200 a month for cloud,
+20:10 you're not going to probably be able to
+20:12 consume all of it using cloud AI. And
+20:14 that's where the bundle starts being
+20:15 useful. I thought it was interesting
+20:16 with with chatbt plus is the highest
+20:18 tier, right? where there's like yeah you
+20:20 can burn that down off of video gen or
+20:21 you can do it off you know on coding use
+20:23 case etc. I think that that at least
+20:25 feels valuable a product idea or concept
+20:28 that we've been thinking about is like
+20:29 it might be useful to be able to bring
+20:30 your tokens to other products as well
+20:32 which especially if you're bootstrapping
+20:34 a product and you might not be ready to
+20:35 pay get somebody to pay $ 20 to $200 a
+20:38 month like but they're already paying
+20:39 $200 somewhere else like maybe that's a
+20:41 useful way where they can get started
+20:46 right there.
+20:47 Hi Mike, thanks for being here. Um, uh,
+20:50 what's your take on how agent to agents,
+20:53 the new standard will play out over time
+20:56 and should we be waiting for something a
+20:58 new standard from anthropic? Yeah, we're
+21:01 like we have a lot of uh sort of wacky
+21:03 internal prototypes of agents talking to
+21:05 each other which I think will help
+21:06 inform like what are the right
+21:07 primitives that we want to have in
+21:09 there. Um, a question that I don't think
+21:12 anybody has solved yet from a research
+21:13 perspective, at least nothing that I've
+21:14 seen publicly, that is going to be very
+21:16 important, especially when agents start
+21:17 being sort of like your avatar out in
+21:20 the world representative of you or your
+21:21 company is like better discernment
+21:24 around like what you reveal and what you
+21:27 engage in, right? It's like
+21:29 um what is like if you're transacting
+21:31 with a vendor, sure you can re reveal a
+21:33 credit card information, but it's just
+21:34 like some other random agent you're
+21:36 talking to, probably not, right? if it's
+21:37 company to company what gets revealed
+21:39 and what gets um sort of withheld. So
+21:41 that is both a protocol but I think it's
+21:43 actually like a research question like
+21:44 models sometimes like they want to
+21:46 please so they want they'll want to tell
+21:47 you information but like how do we or
+21:49 they want to be too they're going to be
+21:50 too refusally if you like like never
+21:52 reveal any company information right so
+21:54 that sort of nuance and discernment
+21:56 feels unsolved um and then the other one
+21:58 that I like alluded to is just like
+22:00 auditability at scale is something
+22:02 that's going to be really interesting
+22:03 again I think like there will be
+22:04 products built on top of of that uh to
+22:07 solve that need but I was having a
+22:08 conversation with the founder last week
+22:09 around like what is identity management
+22:11 for agents and like what is you know do
+22:13 they have names like I don't know that
+22:15 feels kind of a little bit too
+22:17 anthropomorphic but maybe that's useful
+22:18 but feels like an agent should be better
+22:21 at doing the hundth task in the first
+22:23 which implies some kind of like
+22:24 longitudinal memory right um and there's
+22:27 going to be ones that are more like your
+22:28 extension of your work versus ones that
+22:30 are like wholly like an entire other
+22:32 employee right so I think those feel
+22:35 less like protocol questions and more
+22:36 like both like product and research
+22:38 questions to
+22:41 Hi Mike, thanks for your time. What do
+22:43 you think most people building in the
+22:45 application layer are getting wrong?
+22:49 I don't know about getting it wrong, but
+22:51 I think a a thing I've observed is like
+22:54 uh products that start sort of AI light
+22:56 and go AI heavy like tend to put AI like
+22:59 either in like a sidebar or like a it it
+23:02 ends up feeling like a secondary sort of
+23:04 surface and then especially as you move
+23:06 more and more agentically it's like
+23:08 harder and harder to make that like as
+23:09 full fullfeatured as you would want it
+23:11 to be. And so that's one thing which is
+23:13 like at what point do you rethink the
+23:15 kind of core sort of building blocks of
+23:17 your of your product to actually be more
+23:19 AI native. I think that's one. The other
+23:20 one is a shocking number of AI like
+23:24 native products don't expose the
+23:26 primitives of the application to the
+23:28 models enough. And what I mean by that
+23:30 is like you ask it something and you're
+23:31 like oh I can't sorry I can't do that
+23:33 for you Dave because like it hasn't been
+23:34 built that way. Maybe those two points
+23:36 are linked right when you build like
+23:38 I've built a guey and then like I've
+23:39 stapled a model on top. you don't
+23:41 necessarily think that like that model
+23:42 should actually be your like primary
+23:45 user of your application in a lot of
+23:46 ways.
+23:48 All right, Mike, thank you so much for
+23:50 joining us. Yeah, thank you all.

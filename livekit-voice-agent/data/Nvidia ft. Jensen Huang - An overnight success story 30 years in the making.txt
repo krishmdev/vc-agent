@@ -1,0 +1,2806 @@
+00:01 [Music]
+00:01 
+
+00:01 I was confronted with a situation where
+00:03 
+
+00:03 we would finish the project and die or
+00:06 
+
+00:06 not finish the project and die right
+00:08 
+
+00:08 away we were very concerned about are we
+00:11 
+
+00:11 going to lose this company or not we
+00:13 
+
+00:13 only got one shot and if you have one
+00:15 
+
+00:15 shot that chip has to be perfect but how
+00:17 
+
+00:17 do you build a perfect chip the first
+00:20 
+
+00:20 [Music]
+00:22 
+
+00:22 time welcome to Crucible moments a
+00:25 
+
+00:25 podcast about the critical Crossroads
+00:27 
+
+00:27 and inflection points that shaped some
+00:28 
+
+00:28 of the world's most remarkable comp
+00:30 
+
+00:30 companies I'm your host rof buam almost
+00:34 
+
+00:34 exactly one year ago in November of 2022
+00:38 
+
+00:38 chat GPT took the World by storm within
+00:41 
+
+00:41 5 days it had 1 million users within 8
+00:44 
+
+00:44 weeks 100 million it was the fastest
+00:47 
+
+00:47 adoption of a new technology product the
+00:49 
+
+00:49 world had ever seen what fewer people
+00:52 
+
+00:52 know however is the decades long story
+00:55 
+
+00:55 of the company that developed the
+00:57 
+
+00:57 technology that chat GPT and much of AI
+01:00 
+
+01:00 as we know it today relies on today
+01:03 
+
+01:03 we're looking at Nvidia the technology
+01:06 
+
+01:06 company founded in 1993 by Jensen Hong
+01:10 
+
+01:10 Chris malikowski and Curtis Priam their
+01:13 
+
+01:13 initial idea was to create 3D graphics
+01:15 
+
+01:15 cards for gamers nvidia's eventual shift
+01:19 
+
+01:19 towards AI is one of the most remarkable
+01:21 
+
+01:21 business pivots in history it has
+01:24 
+
+01:24 spotlighted Nvidia on our cultural stage
+01:26 
+
+01:26 and cemented the company as a global
+01:28 
+
+01:28 leader in AI computing
+01:32 
+
+01:32 The Crucible moments in today's episode
+01:34 
+
+01:34 Center on nvidia's willingness to bet on
+01:37 
+
+01:37 unproven markets years ahead of time
+01:40 
+
+01:40 we'll look at how Nvidia took a risk at
+01:42 
+
+01:42 its outset entering a competitive field
+01:44 
+
+01:44 and targeting a user base few took
+01:47 
+
+01:47 seriously how days from bankruptcy they
+01:50 
+
+01:50 scrapped their product architecture
+01:52 
+
+01:52 entirely and embarked on a timeline so
+01:55 
+
+01:55 ambitious no one thought they could pull
+01:56 
+
+01:56 it off and how the company finally
+01:59 
+
+01:59 dominant and G gaming decided to stake
+02:01 
+
+02:01 its future on a radically new field that
+02:04 
+
+02:04 many doubted would ever become a viable
+02:08 
+
+02:08 Market I'm Jensen Wong I'm the president
+02:11 
+
+02:11 and CEO of Nvidia I met Chris and Curtis
+02:14 
+
+02:14 they were at some Microsystems I was at
+02:16 
+
+02:16 LS logic so we were all from the
+02:18 
+
+02:18 workstation industry and all we had to
+02:20 
+
+02:20 worked on were Sun workstations and and
+02:22 
+
+02:22 valid workstations and things like that
+02:25 
+
+02:25 this was in the ' 80s back when most
+02:27 
+
+02:27 computers were bulky expensive machines
+02:30 
+
+02:30 really only available to businesses that
+02:32 
+
+02:32 could afford them Sun Microsystems
+02:34 
+
+02:34 manufactured high-end computer
+02:36 
+
+02:36 workstations and LSI logic specialized
+02:38 
+
+02:38 in semiconductors concurrent with a
+02:41 
+
+02:41 computer Revolution was the race to
+02:42 
+
+02:42 create the most sophisticated computer
+02:45 
+
+02:45 chips very few companies had the ability
+02:48 
+
+02:48 to build their own chips with the
+02:49 
+
+02:49 exception of IBM really at the time and
+02:52 
+
+02:52 so son was venturing into building semic
+02:55 
+
+02:55 custom chips for their computers Chris
+02:57 
+
+02:57 and Curtis were building chips at some
+02:59 
+
+02:59 Microsystems and I was the assigned
+03:01 
+
+03:01 engineer to work with them from LSI
+03:03 
+
+03:03 logic so in essence Jensen was assigned
+03:06 
+
+03:06 to me and that started a friendship
+03:08 
+
+03:08 between the three of us my name is Chris
+03:10 
+
+03:10 malikowski I'm senior vice president
+03:12 
+
+03:12 fellow and co-founder of Nvidia
+03:15 
+
+03:15 Corporation we really hit it off Chris
+03:18 
+
+03:18 and Curtis are are um uh two of the best
+03:21 
+
+03:21 Engineers I've ever known incredible
+03:23 
+
+03:23 people Visionary and architecture and
+03:26 
+
+03:26 design and uh really really enjoyed
+03:28 
+
+03:28 working with them the CHP most companies
+03:30 
+
+03:30 were focused on developing were central
+03:33 
+
+03:33 processing units or CPUs the general
+03:36 
+
+03:36 purpose chips that execute commands
+03:38 
+
+03:38 entered into a computer but in the early
+03:40 
+
+03:40 '90s Chris Curtis and Jensen were tasked
+03:43 
+
+03:43 with building something more challenging
+03:46 
+
+03:46 a graphics card a chip that could be
+03:48 
+
+03:48 inserted into Sun's workstations
+03:50 
+
+03:50 alongside the CPU to render graphics on
+03:53 
+
+03:53 screen the three of us went about
+03:55 
+
+03:55 building this graphic subsystem that was
+03:57 
+
+03:57 challenging LSI logic who had announced
+03:60 
+
+03:60 the they knew how to build chips this
+04:01 
+
+04:01 size had never done it and we were able
+04:04 
+
+04:04 to get the job done each sort of staying
+04:06 
+
+04:06 in our lane and being good at what we
+04:08 
+
+04:08 did one year there were quite a few
+04:10 
+
+04:10 changes in the computer architecture and
+04:14 
+
+04:14 the graphics architecture at Sun and the
+04:16 
+
+04:16 architecture that Chris and Curtis
+04:18 
+
+04:18 worked on fell out of favor and they
+04:20 
+
+04:20 decided to leave the company Chris and
+04:23 
+
+04:23 Curtis reached out to me and asked me if
+04:25 
+
+04:25 I would like to leave MSI logic and join
+04:27 
+
+04:27 them to build a company and first of all
+04:30 
+
+04:30 none of us knew what company we would
+04:32 
+
+04:32 build and I told them that you know I
+04:35 
+
+04:35 wish them well they're going to do great
+04:36 
+
+04:36 I was gamefully employed and really
+04:38 
+
+04:38 happy doing what I was doing they kept
+04:41 
+
+04:41 asking me and finally I said well you
+04:42 
+
+04:42 know tell you what the one we just go
+04:44 
+
+04:44 out and we can think through what kind
+04:46 
+
+04:46 of company you guys can go build and so
+04:48 
+
+04:48 we would meet at Denny's which is right
+04:50 
+
+04:50 at the corner of capital and beresa this
+04:53 
+
+04:53 place in East San Jose I used to wash
+04:55 
+
+04:55 dishes at Denny's and I was a bus boy at
+04:58 
+
+04:58 Denny's and I was a waiter at Denny's so
+04:59 
+
+04:59 I I really like Den's I mean Denny's I
+05:01 
+
+05:01 consider my first company you know and
+05:03 
+
+05:03 and so we would go hang out there and
+05:05 
+
+05:05 was always a fun thing for me and a fun
+05:06 
+
+05:06 thing for them we just sit there and you
+05:08 
+
+05:08 know drink a bunch of coffee and you
+05:10 
+
+05:10 know the thing that's really great about
+05:11 
+
+05:11 Denny's is is all you can drink we'd
+05:14 
+
+05:14 show up we'd order one bottomless cup of
+05:16 
+
+05:16 coffee and then you know work for 4
+05:18 
+
+05:18 hours so we just sat there until we ran
+05:20 
+
+05:20 out of ideas we ran out of things to
+05:21 
+
+05:21 talk about and go home and you know come
+05:23 
+
+05:23 back and do it again the PC Revolution
+05:26 
+
+05:26 was just beginning in Earnest and the
+05:28 
+
+05:28 trio recognized this as an important why
+05:31 
+
+05:31 now for their nent company this is now
+05:34 
+
+05:34 1993 the PC Revolution really started
+05:38 
+
+05:38 1995 we knew that the PC was able to
+05:41 
+
+05:41 reach price points and a level of of
+05:43 
+
+05:43 ease abuse that might actually have a
+05:45 
+
+05:45 chance to become you know quite
+05:47 
+
+05:47 pervasive and so we were excited about
+05:49 
+
+05:49 the PC Revolution and uh we thought okay
+05:53 
+
+05:53 well what application would we bring to
+05:54 
+
+05:54 the PC and what would we enable as this
+05:57 
+
+05:57 computer becomes a consumer computer and
+05:59 
+
+05:59 goes into the home you know what would
+06:01 
+
+06:01 would you do with it well the one thing
+06:03 
+
+06:03 you would do with it more than anything
+06:04 
+
+06:04 in the world is play games the
+06:06 
+
+06:06 capability the graphics capability the
+06:08 
+
+06:08 multimedia capability of of the PC was
+06:10 
+
+06:10 non-existent at the time there were no
+06:12 
+
+06:12 sound there was no microphones there
+06:14 
+
+06:14 were no speakers there no video there's
+06:16 
+
+06:16 no Graphics basically it was a text
+06:20 
+
+06:20 terminal and we thought you know maybe
+06:22 
+
+06:22 3D Graphics would be the the the thing
+06:24 
+
+06:24 that'd be really cool and for the very
+06:25 
+
+06:25 first time you have a platform that
+06:27 
+
+06:27 could both be a computer and used for
+06:29 
+
+06:29 you know whatever you want to use it for
+06:32 
+
+06:32 uh you could also use it to play games
+06:34 
+
+06:34 and um we just need to go build a chip
+06:36 
+
+06:36 that makes it possible to play
+06:38 
+
+06:38 games none of us had even seen a PC
+06:41 
+
+06:41 before so we had to go buy a PC we
+06:42 
+
+06:42 bought a Gateway 2000 nobody even knows
+06:45 
+
+06:45 how to program Windows uh or Doss nobody
+06:47 
+
+06:47 even seen dos and so we had to tear it
+06:50 
+
+06:50 apart um start learning about the
+06:53 
+
+06:53 industry if you were to go to market
+06:57 
+
+06:57 research firms and you ask them what
+06:59 
+
+06:59 what's the market sized for 3D graphics
+07:01 
+
+07:01 for PCS in 1993 the answer would have
+07:04 
+
+07:04 been zero my name is Mark Stevens I
+07:07 
+
+07:07 joined seoa in 1989 and in
+07:11 
+
+07:11 1993 I became the seoa representative on
+07:15 
+
+07:15 the board of directors of Nvidia marus
+07:17 
+
+07:17 since left Square by the way but remains
+07:19 
+
+07:19 on nvidia's board Chris Curtis and
+07:22 
+
+07:22 Jensen who still hadn't left his job at
+07:25 
+
+07:25 alysi logic wrestled with the idea of
+07:28 
+
+07:28 launching a company that made three
+07:30 
+
+07:30 Graphics chips for personal computers
+07:32 
+
+07:32 but they realized if they were to move
+07:34 
+
+07:34 forward they would have two major
+07:36 
+
+07:36 factors working against them the first
+07:39 
+
+07:39 was
+07:40 
+
+07:40 competition the market for 2D graphics
+07:44 
+
+07:44 for PCs was crowded at this point the
+07:47 
+
+07:47 differentiation here was Nvidia was
+07:49 
+
+07:49 going after 3D Graphics but there's a
+07:52 
+
+07:52 whole raft of Chip copies that came out
+07:54 
+
+07:54 in the 1980s you had companies like xyl
+07:57 
+
+07:57 linkx and Altera companies like serus
+07:60 
+
+07:60 logic and chips and Technologies one
+08:03 
+
+08:03 could argue you know why does why did
+08:05 
+
+08:05 the world need Nvidia why did the world
+08:07 
+
+08:07 need another Graphics chip company in
+08:09 
+
+08:09 addition to a crowded chip Market the
+08:11 
+
+08:11 second Factor working against Nvidia was
+08:14 
+
+08:14 its target audience and the chips
+08:16 
+
+08:16 intended use you know the people who did
+08:19 
+
+08:19 gaming on PC at that point were were
+08:22 
+
+08:22 teenagers gaming it just didn't have a
+08:24 
+
+08:24 lot of respect it just didn't feel like
+08:26 
+
+08:26 a first year business that everybody got
+08:28 
+
+08:28 and everybody appreciated
+08:30 
+
+08:30 and the overall gaming Market was much
+08:33 
+
+08:33 smaller at the time versus the market
+08:36 
+
+08:36 for movies and and other media forms the
+08:39 
+
+08:39 gaming Market is has become huge on a
+08:41 
+
+08:41 worldwide basis but back then gaming on
+08:44 
+
+08:44 a PC was a fairly small
+08:47 
+
+08:47 application games were just thought of
+08:50 
+
+08:50 of not serious applications Alfred Lynn
+08:54 
+
+08:54 I'm a partner at squir Capital
+08:56 
+
+08:56 throughout my life I've always been
+08:57 
+
+08:57 fascinated by Nvidia and and fascinated
+09:00 
+
+09:00 with games even though I decided not to
+09:02 
+
+09:02 do any of that professionally but I've
+09:04 
+
+09:04 been fascinated with game consoles and
+09:06 
+
+09:06 the graphics and how you could represent
+09:09 
+
+09:09 Graphics the most efficient way I would
+09:12 
+
+09:12 say a lot of things that don't seem
+09:14 
+
+09:14 serious a lot of things that seem like
+09:16 
+
+09:16 toys can very much start out that way
+09:19 
+
+09:19 but over time they have this ability to
+09:22 
+
+09:22 blossom into other
+09:25 
+
+09:25 applications The Crucible decision for
+09:27 
+
+09:27 Curtis Chris and Jensen was
+09:30 
+
+09:30 do you enter a hyperco competitive field
+09:32 
+
+09:32 of triip making where you have to fight
+09:34 
+
+09:34 to stand out and if you do do you
+09:37 
+
+09:37 position your renovation as a 3D chip
+09:39 
+
+09:39 for gamers an unproven Market at the
+09:41 
+
+09:41 time and bet on the potential of that
+09:44 
+
+09:44 market to
+09:48 
+
+09:48 grow there are several things that we
+09:50 
+
+09:50 say in the company and and that is do
+09:52 
+
+09:52 you believe it or not the first
+09:54 
+
+09:54 principles say you start from your
+09:56 
+
+09:56 assumptions whatever you believe and you
+09:58 
+
+09:58 break it all down and and it says
+09:60 
+
+09:60 therefore you should do this there go
+10:03 
+
+10:03 this so why don't you do it for what
+10:06 
+
+10:06 reason don't you do it and so if you
+10:09 
+
+10:09 believe this is going to change the
+10:10 
+
+10:10 Computing industry altogether for what
+10:12 
+
+10:12 reason don't you take this first move
+10:15 
+
+10:15 just start I think it was towards the
+10:18 
+
+10:18 end of 1992 beginning of
+10:21 
+
+10:21 1993 I that I said okay Chris and Curtis
+10:24 
+
+10:24 I'll go do it with you guys and February
+10:27 
+
+10:27 17th my birthday in 1993 was my first
+10:29 
+
+10:29 day of
+10:30 
+
+10:30 work the founders began looking for
+10:32 
+
+10:32 investors for their new company and
+10:34 
+
+10:34 Jensen went to meet with his old boss
+10:36 
+
+10:36 the head of alisi logic Wilfred cargan
+10:40 
+
+10:40 wil look if you're going to start a
+10:41 
+
+10:41 company go talk to Don Valentine and
+10:44 
+
+10:44 while I was sitting there he picked up
+10:46 
+
+10:46 the phone and he said hey Don I'm going
+10:47 
+
+10:47 to send a kid your way he's one of my
+10:49 
+
+10:49 best employees I'm not sure what he's
+10:52 
+
+10:52 going to do but give him money I went to
+10:55 
+
+10:55 SEO Don Valentine was there and and he
+10:58 
+
+10:58 just scares you and and I was 29 I just
+11:01 
+
+11:01 turned 30 I did a horrible job with the
+11:03 
+
+11:03 pitch but thankfully he was already
+11:05 
+
+11:05 instructed to uh to give me money Don at
+11:08 
+
+11:08 the end he just said one thing he said
+11:10 
+
+11:10 if you lose my money I'll kill
+11:12 
+
+11:12 you we were working in a small office at
+11:16 
+
+11:16 a strip mall I think we probably hired
+11:18 
+
+11:18 up to 20 people or something like that
+11:21 
+
+11:21 and here we are we're going to build a
+11:23 
+
+11:23 new chip for a new industry and so we
+11:25 
+
+11:25 just started from first principles and
+11:27 
+
+11:27 started building it up and and we
+11:28 
+
+11:28 specified this chip call
+11:30 
+
+11:30 mv1 the mv1 chip was the first device of
+11:33 
+
+11:33 the company delivered to the market I
+11:35 
+
+11:35 believe it took us 18 to 24 months to to
+11:39 
+
+11:39 deliver the chip after the company was
+11:40 
+
+11:40 founded and we thought it was going to
+11:42 
+
+11:42 be a great chip the reality is the chip
+11:44 
+
+11:44 was a failure it was a a great
+11:48 
+
+11:48 technology achievement it was a terrible
+11:50 
+
+11:50 product you know when you're done
+11:52 
+
+11:52 describing mv1 it sounds like an
+11:55 
+
+11:55 octopus because what kind of a chip does
+11:58 
+
+11:58 the PC industry Buy
+11:60 
+
+11:60 that has 3D Graphics video processing
+12:04 
+
+12:04 audio wave table processing IO Port game
+12:08 
+
+12:08 Port
+12:09 
+
+12:09 acceleration has this programming model
+12:12 
+
+12:12 called UDA no applications that run for
+12:15 
+
+12:15 it you know what do you call this thing
+12:17 
+
+12:17 that sounds like an octopus you know
+12:18 
+
+12:18 when you pull it out of the box it
+12:21 
+
+12:21 actually comes with these dongles and
+12:22 
+
+12:22 and these dongles makes it kind of feel
+12:24 
+
+12:24 like an
+12:25 
+
+12:25 octopus and and you need all these
+12:27 
+
+12:27 things because you got to you know
+12:28 
+
+12:28 connect the whole computer to it the way
+12:31 
+
+12:31 I've always thought about it is we built
+12:33 
+
+12:33 a Swiss army knife with lots of
+12:36 
+
+12:36 functions and the chip was overpriced
+12:40 
+
+12:40 for what the market wanted the market
+12:42 
+
+12:42 wanted a 3D Graphics chip and that's it
+12:44 
+
+12:44 and they wanted it as cheap as they
+12:45 
+
+12:45 could get it and as fast as they could
+12:48 
+
+12:48 get it and so uh it was a
+12:52 
+
+12:52 flop our customer partner uh Diamond
+12:56 
+
+12:56 multimedia uh we sold them 250,000 mb1s
+12:59 
+
+12:59 the retail sales wasn't very good and so
+13:02 
+
+13:02 Diamond panicked they returned basically
+13:05 
+
+13:05 most of those product to us 250,000
+13:08 
+
+13:08 units went out 250,000 well
+13:12 
+
+13:12 249,000 came back and practically put us
+13:15 
+
+13:15 out of
+13:16 
+
+13:16 business we learned a lot from that from
+13:20 
+
+13:20 that failure you know nowadays people
+13:22 
+
+13:22 refer to this as product Market fit and
+13:25 
+
+13:25 so we had a very good product but the
+13:28 
+
+13:28 fit was not there V ofv pricing and
+13:32 
+
+13:32 functionality I had to learn all of
+13:34 
+
+13:34 those things and you know how do you
+13:36 
+
+13:36 position against the competition because
+13:38 
+
+13:38 the customer is always thinking of
+13:39 
+
+13:39 Alternatives and so your PC companies
+13:42 
+
+13:42 are trying to figure out okay so this
+13:43 
+
+13:43 mv1 you can't compare to anything but
+13:46 
+
+13:46 it's not as good as this thing at this
+13:49 
+
+13:49 it's not as good as that thing at that
+13:50 
+
+13:50 but it's incredibly good together it's
+13:53 
+
+13:53 really hard to buy things like that
+13:54 
+
+13:54 nobody goes to the store device with
+13:55 
+
+13:55 army up and it's something you get for
+13:57 
+
+13:57 Christmas and so in every single way way
+13:59 
+
+13:59 from product strategy go to market how
+14:02 
+
+14:02 to think about the competition I think
+14:03 
+
+14:03 about positioning how do you even price
+14:05 
+
+14:05 it uh not to mention why would you go
+14:07 
+
+14:07 build such a thing in the beginning or
+14:09 
+
+14:09 there are other ways to go build it I
+14:10 
+
+14:10 mean the list of of mistakes that we
+14:13 
+
+14:13 made and that I made in the first three
+14:15 
+
+14:15 years of the company you could really
+14:17 
+
+14:17 write a book I think the lesson that we
+14:19 
+
+14:19 learned at seoa was that we might have
+14:23 
+
+14:23 been too early you know the investing in
+14:26 
+
+14:26 the 3D Graphics PC market
+14:29 
+
+14:29 uh and that's always a risk or a fear
+14:33 
+
+14:33 that we have as early stage investors
+14:35 
+
+14:35 the failure mechanism for most Venture
+14:38 
+
+14:38 back technology companies is that
+14:40 
+
+14:40 they're too early to Market not too late
+14:43 
+
+14:43 to Market we were out there sort of
+14:45 
+
+14:45 waiting you know on our surfboard in the
+14:48 
+
+14:48 Pacific Ocean waiting for that big wave
+14:50 
+
+14:50 Market wave to come in and you know if
+14:54 
+
+14:54 if the wave never comes in you never get
+14:55 
+
+14:55 to Shore and you freeze to death out in
+14:57 
+
+14:57 the middle of the ocean while the
+14:59 
+
+14:59 failure of the nv1 chip was apparent
+15:02 
+
+15:02 there was a bright spot on the horizon
+15:04 
+
+15:04 the company was simultaneously
+15:05 
+
+15:05 developing the nv2 in partnership with
+15:08 
+
+15:08 the video game company Sega sega's
+15:11 
+
+15:11 latest game at the time was you know
+15:13 
+
+15:13 virtual fighter and Daytona and virtal
+15:15 
+
+15:15 cop and you know really really fantastic
+15:18 
+
+15:18 3D arcade games they were completely
+15:21 
+
+15:21 revolutionary Sega was also looking for
+15:23 
+
+15:23 a partner to build their next Generation
+15:24 
+
+15:24 console and it opened doors for us both
+15:28 
+
+15:28 in trying to build their next Generation
+15:30 
+
+15:30 console as well as encouraging them to
+15:33 
+
+15:33 take the Sega games over to
+15:35 
+
+15:35 PCS on the engineering side the nv1 and
+15:39 
+
+15:39 nv2 were developed to support an
+15:41 
+
+15:41 architecture that rendered images using
+15:43 
+
+15:43 quadrangles when Nvidia first launched
+15:46 
+
+15:46 it was the only company in the market
+15:47 
+
+15:47 making 3D Graphics chips for PCs but
+15:51 
+
+15:51 soon other 3D Graphics companies began
+15:54 
+
+15:54 to emerge and their chips supported a
+15:56 
+
+15:56 different type of architecture one that
+15:59 
+
+15:59 rendered images using
+16:01 
+
+16:01 triangles the architecture we chose was
+16:04 
+
+16:04 clever at the time but it turned out to
+16:06 
+
+16:06 have been wrong architecture completely
+16:08 
+
+16:08 this is 1995 Microsoft had come out with
+16:11 
+
+16:11 Windows 95 and the API called DirectX is
+16:15 
+
+16:15 the architecture that everybody else
+16:16 
+
+16:16 uses except us we had never even
+16:19 
+
+16:19 implemented a graphics architecture like
+16:22 
+
+16:22 DirectX before and the rest of the
+16:24 
+
+16:24 industry now some 50 companies are all
+16:27 
+
+16:27 over us and so the question is what do
+16:30 
+
+16:30 we do if we had finished that game
+16:32 
+
+16:32 console with Sega and fulfilled our
+16:36 
+
+16:36 contract we would have spent two years
+16:37 
+
+16:37 working on the wrong architecture while
+16:40 
+
+16:40 everybody else is racing ahead in this
+16:42 
+
+16:42 new world that quite frankly we kind of
+16:44 
+
+16:44 started on the other hand if we didn't
+16:47 
+
+16:47 finish the contract then we run out of
+16:50 
+
+16:50 money and so I was confronted with a
+16:52 
+
+16:52 situation where we would finish the
+16:54 
+
+16:54 project and die or not finish the
+16:57 
+
+16:57 project and die right away your first
+16:59 
+
+16:59 trip is a failure and your second triip
+17:03 
+
+17:03 is doomed Nvidia had arrived at a
+17:06 
+
+17:06 crucible moment do you finish the job
+17:08 
+
+17:08 you started and hope the revenue can
+17:10 
+
+17:10 sustain you or do you break your
+17:12 
+
+17:12 contract scrap your entire architecture
+17:14 
+
+17:14 and start from
+17:16 
+
+17:16 scratch this existential moment for our
+17:20 
+
+17:20 company was pretty difficult you know
+17:22 
+
+17:22 heated discussion uh among us to try to
+17:25 
+
+17:25 figure out what to do and I think the
+17:27 
+
+17:27 final decision was the right one one
+17:29 
+
+17:29 which is we have to figure out what is
+17:31 
+
+17:31 the the right path forward longterm and
+17:34 
+
+17:34 work our way back and the long-term
+17:37 
+
+17:37 answer of course is we have to support
+17:39 
+
+17:39 this new architecture this new graphics
+17:41 
+
+17:41 AR it's called inverse texture mapping
+17:44 
+
+17:44 and we have to abandon the forward
+17:46 
+
+17:46 texture mapping architecture that we had
+17:48 
+
+17:48 started and whatever we have to do to
+17:51 
+
+17:51 achieve that is the right thing to do so
+17:53 
+
+17:53 I went to Sega and to the credit of
+17:56 
+
+17:56 their CEO IR madrean I told them our
+17:59 
+
+17:59 circumstance is that if we finish this
+18:00 
+
+18:00 game console for you our company would
+18:03 
+
+18:03 be out of business and quite frankly I
+18:06 
+
+18:06 think that this architecture that we
+18:08 
+
+18:08 would build for you would be the wrong
+18:10 
+
+18:10 architecture because the world is moving
+18:11 
+
+18:11 towards this other approach called
+18:13 
+
+18:13 imerse rendering ERS tecture maing he
+18:16 
+
+18:16 asked me what I'm asking him to do and
+18:18 
+
+18:18 so I I told him that although there's no
+18:21 
+
+18:21 reason for him to do this I would like
+18:24 
+
+18:24 him to let us off of our contract
+18:27 
+
+18:27 relieve us of our responsibility of
+18:30 
+
+18:30 fulfilling the contract but pay us in
+18:33 
+
+18:33 full and they got absolutely nothing out
+18:35 
+
+18:35 of it there's no reason for him to do it
+18:39 
+
+18:39 and he thought about it for a couple
+18:40 
+
+18:40 days and you know came back to me and
+18:42 
+
+18:42 and said you know I'd like to help
+18:45 
+
+18:45 you you can't discount the kindness of
+18:49 
+
+18:49 people when you're starting your company
+18:51 
+
+18:51 when you you're you benefit than the
+18:52 
+
+18:52 kindness of all the people that support
+18:53 
+
+18:53 you but in this particular case it was
+18:55 
+
+18:55 some $5 million I think it was that they
+18:58 
+
+18:58 continued pay us it was all the money
+18:60 
+
+18:60 that we had and it gave us just enough
+19:02 
+
+19:02 money to hunker
+19:05 
+
+19:05 down after the failure of nv1 and then
+19:09 
+
+19:09 after nv2 sort of being abandoned we
+19:14 
+
+19:14 were very concerned as investors you
+19:16 
+
+19:16 know at this point we're probably three
+19:18 
+
+19:18 years into the company something like
+19:20 
+
+19:20 that and uh it wasn't clear if Nvidia
+19:25 
+
+19:25 was ever going to sort of have Escape
+19:28 
+
+19:28 velos
+19:29 
+
+19:29 one of the things that Jensen uh he said
+19:32 
+
+19:32 this for many many years was we're only
+19:35 
+
+19:35 30 days away from going out of business
+19:37 
+
+19:37 well the fact of the matter is on a few
+19:40 
+
+19:40 occasions in the mid 90s that was true
+19:43 
+
+19:43 from you know because we were burning
+19:44 
+
+19:44 cash and developing through these uh
+19:48 
+
+19:48 Graphics devices you you needed some of
+19:51 
+
+19:51 the best Hardware in Silicon engineers
+19:54 
+
+19:54 in Silicon Valley and these folks do not
+19:58 
+
+19:58 come cheaply
+19:59 
+
+19:59 especially when we were competing with
+20:00 
+
+20:00 silicon Graphics which was sort of a
+20:02 
+
+20:02 Jugger at the time for engineering
+20:04 
+
+20:04 talent and Apple at the time so we were
+20:08 
+
+20:08 very concerned about are we going to
+20:10 
+
+20:10 lose this company or not with the L of
+20:13 
+
+20:13 their resources the company mounted one
+20:15 
+
+20:15 more attempt at a breakthrough chip we
+20:18 
+
+20:18 only got one shot and if you have one
+20:20 
+
+20:20 shot that chip has to be perfect but how
+20:22 
+
+20:22 do you build a perfect chip the first
+20:24 
+
+20:24 time nobody knew how to do that because
+20:27 
+
+20:27 in the old days you would build a chip
+20:30 
+
+20:30 bring it up write software for it find
+20:33 
+
+20:33 bugs iterate the chip tape it out again
+20:36 
+
+20:36 bring up more software until you get it
+20:37 
+
+20:37 done so tape out to production was often
+20:40 
+
+20:40 times at least a year year and a half I
+20:44 
+
+20:44 told the team that look we we get one
+20:45 
+
+20:45 tape out and they said why because if we
+20:47 
+
+20:47 need more than one tape out we don't
+20:49 
+
+20:49 need it we'll be out of business and so
+20:52 
+
+20:52 we get one
+20:53 
+
+20:53 shine in times of crisis when real
+20:56 
+
+20:56 quality CEOs are on display and this was
+20:59 
+
+20:59 a time where we as investors and board
+21:02 
+
+21:02 members discovered that Jensen was
+21:04 
+
+21:04 really unique in the way he managed a
+21:08 
+
+21:08 crisis I said let's work backwards if we
+21:11 
+
+21:11 get one shot what do we have to do to
+21:14 
+
+21:14 make sure that that one shot was perfect
+21:16 
+
+21:16 and so we have to do all the software in
+21:18 
+
+21:18 advance we had to do everything in
+21:19 
+
+21:19 advance and we did it in about six to
+21:23 
+
+21:23 seven eight months and uh on complete
+21:26 
+
+21:26 fumes and there was this other company
+21:28 
+
+21:28 that went out of business at the time
+21:29 
+
+21:29 and I'd heard about it it's called iOS
+21:32 
+
+21:32 and iOS had buil this thing called an
+21:34 
+
+21:34 emulator an end system emulator we
+21:37 
+
+21:37 called iOS they said thanks for calling
+21:39 
+
+21:39 but we're out of business and I said
+21:42 
+
+21:42 really that's insane we we really could
+21:44 
+
+21:44 use one of your instruments it's like a
+21:46 
+
+21:46 size of a refrigerator you plug it into
+21:49 
+
+21:49 the uh the PC that you want to emulate
+21:51 
+
+21:51 for and you pretend it's called
+21:53 
+
+21:53 emulation you pretend like you're the
+21:55 
+
+21:55 final chip and he says we have one in
+21:56 
+
+21:56 the warehouse that's an inventory if you
+21:59 
+
+21:59 want it we'll sell it to you and so we
+22:01 
+
+22:01 bought the scraps out of a company that
+22:03 
+
+22:03 was going out of business and we
+22:06 
+
+22:06 emulated uh Revo 128 mv3 the first PC
+22:10 
+
+22:10 chip the world's ever emulated and we
+22:12 
+
+22:12 taped out the chip and the chip worked
+22:14 
+
+22:14 the first time unsurprisingly to me
+22:17 
+
+22:17 anyhow that the genius of the the people
+22:21 
+
+22:21 that were at Nvidia would come up with
+22:24 
+
+22:24 the world's best inverse texture mapping
+22:27 
+
+22:27 engine in compl completely crushed
+22:30 
+
+22:30 everyone and revolutionized what we know
+22:33 
+
+22:33 today about modern computer Graphics we
+22:37 
+
+22:37 changed the way that chips were designed
+22:39 
+
+22:39 we changed the way that you tape out
+22:42 
+
+22:42 chips the way almost everything about
+22:44 
+
+22:44 our company today um yeah we Sav the
+22:47 
+
+22:47 company the Rea 128 was a feat of
+22:51 
+
+22:51 engineering and in its first four months
+22:53 
+
+22:53 sold 1 million units even more
+22:56 
+
+22:56 importantly the expedited process of
+22:58 
+
+22:58 building building and testing the Reaver
+22:59 
+
+22:59 allowed Nvidia to then launch its next
+23:02 
+
+23:02 chips at a Cadence more than twice as
+23:04 
+
+23:04 fast as competitors at the beginning
+23:07 
+
+23:07 Nvidia was behind but soon probably soon
+23:11 
+
+23:11 after 1999 they were just far ahead of
+23:15 
+
+23:15 their competition and you can just see
+23:17 
+
+23:17 it so when Quake 3 Arena came out in
+23:22 
+
+23:22 1997 you just could see how much better
+23:25 
+
+23:25 the Nvidia chips performed against
+23:27 
+
+23:27 others
+23:29 
+
+23:29 nvidia's fifth chip was its first
+23:31 
+
+23:31 programmable chip it was called the
+23:33 
+
+23:33 GeForce
+23:35 
+
+23:35 256 that was the world's first GPU and
+23:37 
+
+23:37 that was um adding programmability to
+23:40 
+
+23:40 acceleration so we created the world's
+23:43 
+
+23:43 first programmable accelerator a
+23:45 
+
+23:45 programmable accelerator is accelerated
+23:48 
+
+23:48 Computing and the benefit of accelerator
+23:51 
+
+23:51 is whatever you designed it to do it
+23:52 
+
+23:52 does it incredibly efficiently and so no
+23:55 
+
+23:55 matter how effective a CPU is with a
+23:58 
+
+23:58 programmable accelerator you could be a
+23:59 
+
+23:59 thousand times more effective this
+24:01 
+
+24:01 programmability would prove critical to
+24:03 
+
+24:03 the company's next chapter but it also
+24:05 
+
+24:05 paid immedia dividends with programmable
+24:08 
+
+24:08 shaders enabled by GeForce gpus video
+24:11 
+
+24:11 games exploded in creativity and
+24:14 
+
+24:14 popularity Nvidia went public in 1999
+24:17 
+
+24:17 and in a twist of fate Microsoft whose
+24:20 
+
+24:20 direct X architecture nearly sidelined
+24:22 
+
+24:22 Nvidia in its early years chose GeForce
+24:25 
+
+24:25 to power its new project the Xbox
+24:29 
+
+24:29 it took five generations for them to get
+24:32 
+
+24:32 this Graphics acceleration right before
+24:34 
+
+24:34 they produced their first GPU and so the
+24:38 
+
+24:38 company was founded in
+24:39 
+
+24:39 1993 and I don't think they released the
+24:43 
+
+24:43 G4S 256 until late
+24:47 
+
+24:47 1999 so it was a long time of just
+24:51 
+
+24:51 iterating iterating iterating until they
+24:53 
+
+24:53 got it right to produce the first GPU
+24:57 
+
+24:57 unit if you you solve really hard
+24:59 
+
+24:59 problems that nobody else can solve
+25:01 
+
+25:01 which is what inidia has done and your
+25:04 
+
+25:04 patient you can build a tremendous
+25:06 
+
+25:06 company over
+25:09 
+
+25:09 time the success of the GeForce carried
+25:12 
+
+25:12 Nidia into the mid 2000s but as with all
+25:15 
+
+25:15 companies that break new ground
+25:17 
+
+25:17 eventually competitors catch up and
+25:20 
+
+25:20 while Nvidia had solidified its position
+25:23 
+
+25:23 as a major player in the 3D Graphics
+25:25 
+
+25:25 market for PC games over time it
+25:27 
+
+25:27 singular ity its shine began to fade the
+25:31 
+
+25:31 PC market at that point was starting to
+25:33 
+
+25:33 ASM toote and growth and we were worried
+25:36 
+
+25:36 about that and since we were selling
+25:38 
+
+25:38 into the PC we still had to contend with
+25:40 
+
+25:40 Intel as a competitor uh AMD to some
+25:43 
+
+25:43 extent and so we felt we were always
+25:45 
+
+25:45 going to be sort of boxed into the PC
+25:48 
+
+25:48 gaming market and always knocking heads
+25:51 
+
+25:51 with intel if we didn't develop a brand
+25:53 
+
+25:53 new market that nobody else was in
+25:56 
+
+25:56 Nvidia had invented the GPU and and it
+25:58 
+
+25:58 was a programmable device which means
+26:01 
+
+26:01 that it could be programmed and adapted
+26:03 
+
+26:03 for applications outside of gaming the
+26:07 
+
+26:07 2006 release of Cuda at general purpose
+26:10 
+
+26:10 programming interface for nvidia's gpus
+26:13 
+
+26:13 opened the door for use cases far beyond
+26:16 
+
+26:16 gaming molecular Dynamics seismic
+26:19 
+
+26:19 processing CT reconstruction image
+26:22 
+
+26:22 processing a whole bunch of different
+26:23 
+
+26:23 things I remember starting to hear and
+26:26 
+
+26:26 musing about a lot of graduates students
+26:29 
+
+26:29 for their research found these you know
+26:31 
+
+26:31 Graphics chips at their local electronic
+26:33 
+
+26:33 store and they were writing simulators
+26:34 
+
+26:34 on them and doing research on them
+26:37 
+
+26:37 universities after another researchers
+26:39 
+
+26:39 realized that by buying this gaming card
+26:43 
+
+26:43 called GeForce you add it to your
+26:45 
+
+26:45 computer you essentially have a personal
+26:47 
+
+26:47 supercomputer one of the scientists that
+26:49 
+
+26:49 I saw was in Taiwan and he was a Quantum
+26:53 
+
+26:53 chemist and I was in Taiwan at the time
+26:56 
+
+26:56 and he reached out to me and said you
+26:58 
+
+26:58 you know come and see something and and
+26:59 
+
+26:59 I went to n National Taiwan University
+27:01 
+
+27:01 and he opened his his closet and there
+27:05 
+
+27:05 was his giant array of gForce cards
+27:08 
+
+27:08 sitting on all these shelves with these
+27:11 
+
+27:11 house fans rotating and he said I built
+27:13 
+
+27:13 my own personal
+27:15 
+
+27:15 supercomputer and and he said to me that
+27:18 
+
+27:18 because of our work because of your work
+27:20 
+
+27:20 he's able to do his work in his lifetime
+27:24 
+
+27:24 and I
+27:27 
+
+27:27 simultaneously Andrew Ang was working on
+27:29 
+
+27:29 deep learning at the time so around 2008
+27:33 
+
+27:33 2009 my students and I started to work
+27:36 
+
+27:36 on and push the idea that gpus could be
+27:39 
+
+27:39 used for deep learning for neuron
+27:42 
+
+27:42 networks hi my name is Andrew I'm
+27:45 
+
+27:45 managing General partner of AI fund
+27:47 
+
+27:47 Avengers studio and I also lead deep
+27:49 
+
+27:49 learning.ai and Landing AI you know new
+27:53 
+
+27:53 networks have been around for a long
+27:54 
+
+27:54 time for many decades and still have
+27:56 
+
+27:56 gpus but I I think the conversions of
+27:59 
+
+27:59 these two ideas um came for a couple
+28:03 
+
+28:03 reasons one is we finally had enough
+28:07 
+
+28:07 data that we needed that compute to feed
+28:10 
+
+28:10 into new networks and then there was one
+28:12 
+
+28:12 other breakthrough technology I remember
+28:14 
+
+28:14 at Sanford when my students were telling
+28:17 
+
+28:17 me hey Andrew does this thing called K
+28:20 
+
+28:20 there not that easy to program but there
+28:22 
+
+28:22 letting people use gpus for something
+28:24 
+
+28:24 different could we build a server to use
+28:26 
+
+28:26 gpus and see if they could scale up deep
+28:28 
+
+28:28 learning and one of my students at the
+28:31 
+
+28:31 time Ian Goodfellow who was my undergrad
+28:34 
+
+28:34 helped me build a GPU server in his La
+28:36 
+
+28:36 room um and that server wound up being
+28:39 
+
+28:39 what we used for our first deep learning
+28:43 
+
+28:43 experiments to train neuron networks we
+28:45 
+
+28:45 started to see 10x or even 100x speedups
+28:49 
+
+28:49 training new networks on gpus because we
+28:51 
+
+28:51 could do a thousand or 10,000 Things in
+28:54 
+
+28:54 parallel rather than one step after
+28:56 
+
+28:56 another that's a total Game Changer of
+28:58 
+
+28:58 what you can do with new networks
+29:00 
+
+29:00 meanwhile in Toronto Canada hinton's lab
+29:04 
+
+29:04 was doing the same thing Yan LA's lab in
+29:06 
+
+29:06 New York University was doing the same
+29:07 
+
+29:07 thing they all kind of simultaneously
+29:09 
+
+29:09 reached out to us and we realized that
+29:11 
+
+29:11 maybe there's a new type of computing
+29:13 
+
+29:13 model that we could create this was just
+29:15 
+
+29:15 before Alex net the first breakthrough
+29:17 
+
+29:17 in computer image recognition in 2012
+29:20 
+
+29:20 and years before Alo AI was still a
+29:23 
+
+29:23 niche Pursuit the biggest risk of trying
+29:27 
+
+29:27 to pursue the AI Market was very similar
+29:30 
+
+29:30 to the risks the company had encountered
+29:34 
+
+29:34 back at its founding the market for AI
+29:36 
+
+29:36 chips in 2012
+29:39 
+
+29:39 20145 it was a zero billion dollar
+29:42 
+
+29:42 market and Jensen always likes to say
+29:44 
+
+29:44 that you know we're investing in Z
+29:46 
+
+29:46 billion dollar markets this would be
+29:48 
+
+29:48 spending R&D dollars on a market that
+29:50 
+
+29:50 may never materialize there was no
+29:53 
+
+29:53 guarantee that AI would ever really
+29:55 
+
+29:55 emerge because keep in mind AI I had had
+29:58 
+
+29:58 many stops and starts over the last 40
+30:00 
+
+30:00 years I mean AI has been around as a
+30:04 
+
+30:04 computer science concept for decades but
+30:07 
+
+30:07 it had never really taken off as a huge
+30:10 
+
+30:10 Market opportunity this is the type of
+30:12 
+
+30:12 risk that unless uh you've survived
+30:15 
+
+30:15 building a startup you're probably
+30:17 
+
+30:17 allergic to doing and the reason for
+30:19 
+
+30:19 that is at this time we're public we're
+30:21 
+
+30:21 multibillion dollar company we're
+30:23 
+
+30:23 actually successful now and you know
+30:25 
+
+30:25 we've dodged several life-threatening ch
+30:28 
+
+30:28 es nobody wants to derail the company
+30:30 
+
+30:30 they want to defend the company and
+30:31 
+
+30:31 protect the Company Success can make you
+30:33 
+
+30:33 risk averse for two decades Nvidia had
+30:37 
+
+30:37 been synonymous with chips for gaming on
+30:40 
+
+30:40 PCS should the company stay in its lane
+30:43 
+
+30:43 or stake their future on a market that
+30:44 
+
+30:44 was unproven but which leadership and
+30:47 
+
+30:47 researchers around the world felt had
+30:49 
+
+30:49 enormous potential at some point
+30:52 
+
+30:52 somebody said you know this actually is
+30:54 
+
+30:54 a way to expand the market there's a lot
+30:56 
+
+30:56 of opportunity for computation that
+30:58 
+
+30:58 wasn't strictly put a color up on the
+31:01 
+
+31:01 screen so in order to capture that and
+31:04 
+
+31:04 maybe take advantage of this growing
+31:06 
+
+31:06 undercurrent of desire to get access to
+31:09 
+
+31:09 this you know Jensen and the team were
+31:11 
+
+31:11 willing to go for Z billion dollar
+31:13 
+
+31:13 business to on the hopes because you you
+31:15 
+
+31:15 got to believe what you got to believe
+31:17 
+
+31:17 then you put your money with your mouth
+31:18 
+
+31:18 this so if we thought this was likely to
+31:20 
+
+31:20 be an important segment of the market
+31:23 
+
+31:23 that we could tap into that we could
+31:24 
+
+31:24 grow our Tam to then then you do but you
+31:28 
+
+31:28 know I I credit a lot of people not me
+31:31 
+
+31:31 with with the courage to just go do it
+31:34 
+
+31:34 and uh and and let's see where it takes
+31:37 
+
+31:37 us Nvidia made a crucible decision that
+31:40 
+
+31:40 would change not only its own trajectory
+31:43 
+
+31:43 but that of the entire technology
+31:45 
+
+31:45 industry they would commit to AI
+31:49 
+
+31:49 Computing this was a giant pivot for our
+31:51 
+
+31:51 company we're adding cost we're adding
+31:53 
+
+31:53 people we have to learn new skills it
+31:55 
+
+31:55 took our attention away from our nor
+31:57 
+
+31:57 normal day-to-day competition in
+31:59 
+
+31:59 computer graphics and gaming the
+32:00 
+
+32:00 company's Focus was steered away from
+32:03 
+
+32:03 its Core Business and it wasn't just in
+32:05 
+
+32:05 one place is all over the company it was
+32:07 
+
+32:07 a wholesale pivot in this new
+32:12 
+
+32:12 direction to Jensen's credit I saw him
+32:15 
+
+32:15 leap early and place a very significant
+32:18 
+
+32:18 bet he started to allocate more
+32:20 
+
+32:20 resources to it pretty quickly I was
+32:23 
+
+32:23 impressed that the CEO of a large
+32:24 
+
+32:24 company that he saw it clearly enough to
+32:27 
+
+32:27 commit his compet to this direction
+32:28 
+
+32:28 early as a CEO or anybody who's trying
+32:31 
+
+32:31 to steer the the ship in a New Direction
+32:34 
+
+32:34 you have to have some intermittent some
+32:36 
+
+32:36 some near-term positive reinforcements
+32:39 
+
+32:39 and so you have to keep promoting the
+32:40 
+
+32:40 idea whenever something good happens uh
+32:43 
+
+32:43 that reinforces the direction you're
+32:45 
+
+32:45 going you have to you know put into
+32:47 
+
+32:47 perspective what is this why is this
+32:49 
+
+32:49 important how does this help us get to
+32:52 
+
+32:52 the next level when we pivoted to ship
+32:54 
+
+32:54 in that direction uh we sought out every
+32:58 
+
+32:58 single AI researcher on the planet and
+33:01 
+
+33:01 our platform being useful to them was
+33:03 
+
+33:03 the positive feedback that we were
+33:05 
+
+33:05 getting at the time which is the reason
+33:06 
+
+33:06 why I'm friends with you know all of the
+33:08 
+
+33:08 world's great um AI researchers they
+33:11 
+
+33:11 were all helpful in providing the early
+33:14 
+
+33:14 indications of future success along the
+33:16 
+
+33:16 way for me and you got to make a big
+33:19 
+
+33:19 deal out of those small wins I think we
+33:21 
+
+33:21 realized that Nvidia was the spearhead
+33:24 
+
+33:24 of the AI Revolution really within the
+33:26 
+
+33:26 last two to 3 years we saw our gpus
+33:31 
+
+33:31 being adopted by large scale data
+33:33 
+
+33:33 centers and cloud service providers we
+33:37 
+
+33:37 began to see the applications again in
+33:40 
+
+33:40 transportation health care that was
+33:43 
+
+33:43 really when we discovered hey this is
+33:45 
+
+33:45 going to be
+33:47 
+
+33:47 a very diverse and a multi-billion
+33:52 
+
+33:52 dollar opportunity that had you know 10
+33:56 
+
+33:56 years or 15 years in front of of
+33:59 
+
+33:59 it for the last 30 years or so the
+34:01 
+
+34:01 computer industry has been advancing at
+34:03 
+
+34:03 about 10 times every 5 years Mo law mu's
+34:06 
+
+34:06 law is the famous prediction that CPU
+34:08 
+
+34:08 performance will double roughly every 2
+34:10 
+
+34:10 years or 10 times every 5 years now with
+34:14 
+
+34:14 AI uh we're advancing at the chip level
+34:17 
+
+34:17 at the system level at the algorithm
+34:19 
+
+34:19 level and also at the AI level and so
+34:22 
+
+34:22 because you have so many different
+34:23 
+
+34:23 layers moving at the same time for the
+34:25 
+
+34:25 very first time we're seeing compounded
+34:29 
+
+34:29 exponentials and if you go back and just
+34:31 
+
+34:31 look at what how far we've gone since
+34:33 
+
+34:33 imag net Alex net we've Advanced
+34:35 
+
+34:35 Computing by about a million times not a
+34:38 
+
+34:38 thousand times a million times not a 100
+34:41 
+
+34:41 times a million times and we're here now
+34:43 
+
+34:43 compounding at a million times every 10
+34:46 
+
+34:46 years this new Pace at which Computing
+34:48 
+
+34:48 is advancing a million times every 10
+34:51 
+
+34:51 years has been affectionately dubbed
+34:53 
+
+34:53 hang's law and so the question is what
+34:56 
+
+34:56 can you solve in the past that you were
+34:59 
+
+34:59 waiting for a million times to solve a
+35:01 
+
+35:01 problem that you thought you know I
+35:02 
+
+35:02 could solve this probably in about 30
+35:04 
+
+35:04 years well if you can solve it in about
+35:06 
+
+35:06 30 years you're probably going to solve
+35:07 
+
+35:07 it in five that's the big realization
+35:10 
+
+35:10 that's groundbreaking that's really the
+35:13 
+
+35:13 reason why I think it's an inflection
+35:15 
+
+35:15 point things that look far on the
+35:16 
+
+35:16 horizon you really really got to think
+35:18 
+
+35:18 about it not in decade time frame but in
+35:21 
+
+35:21 years time frame nvidia's acceleration
+35:24 
+
+35:24 of computing now includes a platform for
+35:26 
+
+35:26 transforming data centers and cloud
+35:28 
+
+35:28 computing and extends Beyond AI to
+35:31 
+
+35:31 anything that can be
+35:33 
+
+35:33 simulated as Jensen looks to the Future
+35:36 
+
+35:36 Nvidia is already building hardware and
+35:38 
+
+35:38 software for everything from digital
+35:40 
+
+35:40 twins to climate modeling to drug
+35:44 
+
+35:44 Discovery everybody suddenly wants to
+35:47 
+
+35:47 know where we came from I find it
+35:49 
+
+35:49 humorous that where the hell these guys
+35:52 
+
+35:52 come from you know we thought they were
+35:54 
+
+35:54 just gaming and and suddenly the the
+35:56 
+
+35:56 cudas stuff it allowed us to make a
+35:60 
+
+35:60 difference in markets that weren't
+36:02 
+
+36:02 gaming which I think then helped people
+36:04 
+
+36:04 value the fact that gaming was such a
+36:07 
+
+36:07 strong market and such an economically
+36:08 
+
+36:08 large Market we did what was necessary
+36:11 
+
+36:11 to continue to move the needle stay in
+36:14 
+
+36:14 business long enough to let the ideas
+36:16 
+
+36:16 come together I met somebody the other
+36:19 
+
+36:19 day and she said how do you feel about
+36:20 
+
+36:20 your success and I said well feels like
+36:23 
+
+36:23 this overnight success was 30 years in
+36:25 
+
+36:25 the
+36:26 
+
+36:26 making this a concept we talk about at
+36:28 
+
+36:28 squa called the time span of discretion
+36:31 
+
+36:31 what is the time scale across which you
+36:32 
+
+36:32 operate how do you stretch your
+36:34 
+
+36:34 imagination to make an enduring impact
+36:37 
+
+36:37 no founder has embodied this notion like
+36:39 
+
+36:39 Jensen it's been 30 years since Nvidia
+36:42 
+
+36:42 launched not many of us think in 30-year
+36:45 
+
+36:45 time frames and paradoxically by seeing
+36:48 
+
+36:48 its decades long Vision through the
+36:49 
+
+36:49 fruition today in VI technology is
+36:52 
+
+36:52 enabling us to accomplish far more in
+36:54 
+
+36:54 far less
+36:55 
+
+36:55 time every CEO's job is supposed to look
+36:58 
+
+36:58 around corners by definition we should
+37:00 
+
+37:00 be able to connect more dots the CEO
+37:03 
+
+37:03 also has to be the most bold about what
+37:06 
+
+37:06 opportunities what problems we can go
+37:08 
+
+37:08 solve that nobody imagines us solving
+37:11 
+
+37:11 you want to be the person who believes
+37:15 
+
+37:15 the company can achieve more than the
+37:17 
+
+37:17 company believes it can when you're a
+37:19 
+
+37:19 startup CEO you're zero and you're
+37:22 
+
+37:22 trying to become something more than
+37:24 
+
+37:24 that the idea that you would be a global
+37:27 
+
+37:27 anything is insanely ambitious by almost
+37:31 
+
+37:31 all measures we shouldn't be here there
+37:33 
+
+37:33 are only so many diving catches you can
+37:34 
+
+37:34 make in life and it's not just diving
+37:37 
+
+37:37 cat doesn't mean luck uh it does require
+37:39 
+
+37:39 a lot of effort you have to realize it's
+37:41 
+
+37:41 existential you have to be surrounded by
+37:43 
+
+37:43 amazing people and the people that that
+37:47 
+
+37:47 um uh did those diving catches many of
+37:49 
+
+37:49 them most of them are still here so it's
+37:52 
+
+37:52 pretty
+37:56 
+
+37:56 amazing
+37:57 
+
+37:57 this has been Crucible moments a podcast
+37:60 
+
+37:60 from sequa Capital we'll be back with
+38:02 
+
+38:02 season 2 next year if you have an idea
+38:05 
+
+38:05 for a company we should feature
+38:07 
+
+38:07 questions about company building or any
+38:08 
+
+38:08 feedback on the show we'd love to hear
+38:10 
+
+38:10 from you email us at ideas Crucible
+38:14 
+
+38:14 moments.com in the meantime keep an eye
+38:17 
+
+38:17 out for bonus material coming soon
+38:20 
+
+38:20 thanks for
+38:26 
+
+38:26 listening
+38:30 
+
+38:30 Crucible moments is produced by the Epic
+38:32 
+
+38:32 stories and fox creative podcast teams
+38:35 
+
+38:35 along with seoa
+38:37 
+
+38:37 capital special thanks to Jensen Wong
+38:40 
+
+38:40 Chris malikowski Alfred lnn Andrew in
+38:44 
+
+38:44 and Mark Stevens for sharing their
+38:53 
+
+38:53 stories

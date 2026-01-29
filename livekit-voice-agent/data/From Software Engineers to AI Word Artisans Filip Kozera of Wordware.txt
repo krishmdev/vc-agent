@@ -1,0 +1,3040 @@
+00:00 uh we have 30 million software engineers
+00:03 
+
+00:03 in the world and we have
+00:05 
+
+00:05 750 million active users of Excel and
+00:09 
+
+00:09 now uh you'll ask like how does wordware
+00:11 
+
+00:11 compareed to Excel and what Excel did in
+00:15 
+
+00:15 the 80s to data analytics and numbers is
+00:19 
+
+00:19 what we are trying to do to AI so in the
+00:22 
+
+00:22 80s you either had to have a team of
+00:23 
+
+00:23 data analytics um people or Engineers um
+00:27 
+
+00:27 or you're using a calculator and I would
+00:30 
+
+00:30 say the calculator equivalent here is
+00:32 
+
+00:32 the chat GPT that you every time you
+00:34 
+
+00:34 need to redo the conversation and you
+00:36 
+
+00:36 every time you need to instill your um
+00:39 
+
+00:39 own needs into it what wordware is
+00:41 
+
+00:41 trying to do is saying hey a lot of the
+00:44 
+
+00:44 things that you do are repeatable
+00:47 
+
+00:47 similar to excel um and you can encode
+00:50 
+
+00:50 your taste into it um with wordware
+00:55 
+
+00:55 [Music]
+01:10 
+
+01:10 today we're joined by Philip kazera
+01:12 
+
+01:12 co-founder of wordware who's building
+01:13 
+
+01:13 tools to help bridge the gap between
+01:15 
+
+01:15 human creativity and AI Philip shares
+01:17 
+
+01:17 his vision for why English is becoming
+01:19 
+
+01:19 the new Assembly Language for llms why
+01:22 
+
+01:22 he believes that the future belongs not
+01:23 
+
+01:23 just to coders but to people he calls
+01:25 
+
+01:25 word Artisans who can communicate
+01:27 
+
+01:27 effectively their Creative Vision to an
+01:29 
+
+01:29 AI system and what that means for the
+01:31 
+
+01:31 future of programming
+01:33 
+
+01:33 computers Philip thank you so much for
+01:36 
+
+01:36 joining us today I'm excited to learn
+01:38 
+
+01:38 about you and wordware um and get your
+01:40 
+
+01:40 take on how you know programming
+01:42 
+
+01:42 computers is fundamentally going to
+01:44 
+
+01:44 change with large language models so
+01:46 
+
+01:46 thank you for in it for the invite let's
+01:47 
+
+01:47 dig right in I want to start with Andre
+01:50 
+
+01:50 karpathy he had a tweet in 2023 that
+01:52 
+
+01:52 went viral the hottest new programming
+01:55 
+
+01:55 language is English what do you make of
+01:57 
+
+01:57 that and what does it mean relative to
+01:59 
+
+01:59 what you are trying to build at word
+02:01 
+
+02:01 um I think syntax will not be as
+02:03 
+
+02:03 important you know everyone will be
+02:05 
+
+02:05 somewhat of a coder people used to have
+02:07 
+
+02:07 to know python now English is enough
+02:10 
+
+02:10 however you still need to know what
+02:11 
+
+02:11 you're trying to say and in that way I
+02:15 
+
+02:15 would say um you know not everyone will
+02:18 
+
+02:18 be able to use it because some people
+02:20 
+
+02:20 don't have that much to say and I would
+02:23 
+
+02:23 maybe rephrase it a little bit in a
+02:25 
+
+02:25 little bit more of an exciting way for
+02:27 
+
+02:27 us is that the Assembly Language
+02:31 
+
+02:31 um to llms is English but you still have
+02:34 
+
+02:34 to structure it in the right way and you
+02:36 
+
+02:36 still have to use some of the concepts
+02:38 
+
+02:38 even from typical programming in order
+02:40 
+
+02:40 to actually make sure that it does what
+02:43 
+
+02:43 it's supposed to do you heard it here
+02:45 
+
+02:45 first okay English is not the hottest
+02:47 
+
+02:47 new program programming language it is
+02:49 
+
+02:49 the new Assembly Language and at wordwar
+02:52 
+
+02:52 you were trying to build that new
+02:53 
+
+02:53 programming language uh to work with
+02:55 
+
+02:55 that new that new Assembly Language I
+02:57 
+
+02:57 think bringing structure to human AI
+02:59 
+
+02:59 collaboration ation is something that
+03:02 
+
+03:02 I've chosen to spend the next 10 years
+03:04 
+
+03:04 of my life on um and it's an exciting
+03:08 
+
+03:08 problem because uh you know right now
+03:10 
+
+03:10 we're trying to mix the structure of
+03:12 
+
+03:12 programming which is very rigid and um
+03:17 
+
+03:17 deterministic with something that's
+03:19 
+
+03:19 intrinsically
+03:20 
+
+03:20 fuzzy and that Maring of these Concepts
+03:23 
+
+03:23 and choosing the right affordances and
+03:26 
+
+03:26 the right obstruction layers um for that
+03:29 
+
+03:29 communication to be
+03:31 
+
+03:31 incredibly easy yet enable people to do
+03:35 
+
+03:35 complex things is hard and this is what
+03:37 
+
+03:37 we are trying to do with wordware as the
+03:39 
+
+03:39 engine to enable the right mix of the
+03:42 
+
+03:42 two let's talk a little bit more about
+03:45 
+
+03:45 no code I remember back when when I
+03:47 
+
+03:47 first got to Sequoia in 2018 I remember
+03:48 
+
+03:48 no code was the hottest thing ever and
+03:51 
+
+03:51 it was like you know we're not going to
+03:52 
+
+03:52 we're not going to program anymore um
+03:54 
+
+03:54 and you know obviously some no code
+03:56 
+
+03:56 companies have done extremely well like
+03:57 
+
+03:57 rol for example uh but by and large we
+03:60 
+
+03:60 still have you know we have software
+04:01 
+
+04:01 Engineers today and so so far that no
+04:04 
+
+04:04 code promise hasn't really come to
+04:06 
+
+04:06 fruition what's different now like what
+04:08 
+
+04:08 has changed um I think coming back to
+04:10 
+
+04:10 what I just said as well uh the Assembly
+04:13 
+
+04:13 Language is English and um you I kind of
+04:19 
+
+04:19 have this small insecurity when people
+04:21 
+
+04:21 call wordware a no code Tool uh because
+04:25 
+
+04:25 we have not yet reached um a ceiling
+04:28 
+
+04:28 with any of our clients so you can
+04:30 
+
+04:30 achieve absolutely everything we've
+04:33 
+
+04:33 created you know an ability to put in
+04:35 
+
+04:35 code execution blocks which if you want
+04:38 
+
+04:38 an escape Hutch and wordware is not
+04:40 
+
+04:40 fully capable of everything uh you still
+04:42 
+
+04:42 can do it um and in that way you know
+04:45 
+
+04:45 the document format of how to structure
+04:49 
+
+04:49 agents um and how to write them down one
+04:52 
+
+04:52 by one is still very similar to how code
+04:55 
+
+04:55 works we still have loops we still have
+04:58 
+
+04:58 conditional statements and we you know
+04:59 
+
+04:59 have calling other flows which really is
+05:02 
+
+05:02 function calling you know um so in a way
+05:05 
+
+05:05 we don't see ourselves as a no code Tool
+05:08 
+
+05:08 uh and we kind of believe that the word
+05:11 
+
+05:11 Crafters uh the word Artisans uh of the
+05:15 
+
+05:15 future are still coding it's just uh you
+05:18 
+
+05:18 know they are structuring the English in
+05:20 
+
+05:20 a very precise way uh to make sure that
+05:22 
+
+05:22 the prompt is populated in the right
+05:24 
+
+05:24 manner h word crafters and word oens I
+05:27 
+
+05:27 like it wordware Engineers you've heard
+05:29 
+
+05:29 it here for
+05:31 
+
+05:31 how are you using the English language
+05:33 
+
+05:33 then to make you know since you bristle
+05:35 
+
+05:35 at the no code term how are you making
+05:37 
+
+05:37 no code more codel like and maybe this
+05:40 
+
+05:40 is a good time to to just give a 30
+05:41 
+
+05:41 second overview on you know the word we
+05:43 
+
+05:43 product and how people use it to build
+05:45 
+
+05:45 things sure so um by trying to bring
+05:49 
+
+05:49 that structure to the intrinsically
+05:51 
+
+05:51 fuzzy English language we've created an
+05:53 
+
+05:53 editor where you can use the similar
+05:55 
+
+05:55 Concepts to software engineering looping
+05:59 
+
+05:59 conditional statements functions calling
+06:00 
+
+06:00 functions um and marry it in that editor
+06:05 
+
+06:05 in that natural language um IDE uh in a
+06:09 
+
+06:09 way that people can construct agents
+06:11 
+
+06:11 something that we are not we are not
+06:13 
+
+06:13 coaching uh we go straight to agents and
+06:17 
+
+06:17 in my definition um agents are almost
+06:20 
+
+06:20 like they are still software they are
+06:22 
+
+06:22 still a little bit like software taking
+06:24 
+
+06:24 in inputs and out outputting outputs but
+06:27 
+
+06:27 some of the stages of what they do is
+06:28 
+
+06:28 fuzzy so so uh marrying that structure
+06:32 
+
+06:32 in the editor uh whatever you build
+06:34 
+
+06:34 there whatever you iterate on there you
+06:36 
+
+06:36 then have three different ways of
+06:38 
+
+06:38 deploying it you can deploy it as an API
+06:40 
+
+06:40 that will power your product or that AI
+06:43 
+
+06:43 button or that AI chatbot that is a
+06:45 
+
+06:45 little bit more complex than just doing
+06:47 
+
+06:47 a vanilla API code to CLA or open AI
+06:50 
+
+06:50 That's number one uh number two is you
+06:53 
+
+06:53 can deploy it as a workflow where you
+06:56 
+
+06:56 know the main uh part of the workflow is
+06:59 
+
+06:59 not like zap here it's more AI native uh
+07:02 
+
+07:02 and the Really the brain of the AI is a
+07:05 
+
+07:05 little bit more complex than couple
+07:07 
+
+07:07 prompts trunk together and the Third Way
+07:09 
+
+07:09 the third thing that we're building is
+07:11 
+
+07:11 the GitHub for AI let's say uh for
+07:14 
+
+07:14 people to share and what they've done
+07:17 
+
+07:17 and other people are able to then Fork
+07:19 
+
+07:19 it and use these things as components
+07:22 
+
+07:22 again marrying some concept from
+07:24 
+
+07:24 software engineering you need other
+07:25 
+
+07:25 people's components and libraries and
+07:27 
+
+07:27 you know you want to be building on top
+07:29 
+
+07:29 of the uh on the shoulders of the Giants
+07:31 
+
+07:31 of of these AI thinkers so again
+07:33 
+
+07:33 wordware engine editor way to actually
+07:36 
+
+07:36 create these agents and then three
+07:37 
+
+07:37 different ways to deploy I think one of
+07:40 
+
+07:40 the beauties of code is just its
+07:42 
+
+07:42 expressibility and its Precision you
+07:44 
+
+07:44 know you know exactly what you were
+07:46 
+
+07:46 telling the machine to do um and you
+07:48 
+
+07:48 were you know expressing it in some
+07:49 
+
+07:49 languages in the most precise way
+07:51 
+
+07:51 possible English is not like that to
+07:53 
+
+07:53 your point it's fuzzy and so as you are
+07:55 
+
+07:55 turning the English language more Cod
+07:57 
+
+07:57 like should I think about that as you
+07:58 
+
+07:58 know helping with the control ability
+08:00 
+
+08:00 and the stability of that or you know
+08:03 
+
+08:03 what is the I guess abstract thing you
+08:04 
+
+08:04 were doing with English to to make it
+08:06 
+
+08:06 more programmable yeah I think uh you're
+08:10 
+
+08:10 exactly correct we are trying to bring a
+08:12 
+
+08:12 little bit more structure it's not all
+08:13 
+
+08:13 the way because if you go all the way to
+08:15 
+
+08:15 a programming language you lose the
+08:17 
+
+08:17 fuzziness and you lose the power of it
+08:19 
+
+08:19 um but it's hard and right now most of
+08:22 
+
+08:22 the people you know we had this wave of
+08:25 
+
+08:25 Val evaluation software uh companies at
+08:27 
+
+08:27 some stage and what we've realized with
+08:30 
+
+08:30 bunch of companies that we work with is
+08:32 
+
+08:32 that they don't know like they don't
+08:34 
+
+08:34 have these data sets to use for eval and
+08:37 
+
+08:37 what we came up with is um that editor
+08:40 
+
+08:40 very quickly uh gets you to understand
+08:44 
+
+08:44 and have develop an intuition of what
+08:46 
+
+08:46 works and what doesn't work and for now
+08:49 
+
+08:49 this is the most important thing it's
+08:50 
+
+08:50 clicking run a 100 times quickly and
+08:53 
+
+08:53 making sure that what you've written
+08:54 
+
+08:54 here has enough structure in order to
+08:58 
+
+08:58 Output things on the right side that you
+08:59 
+
+08:59 want
+09:00 
+
+09:00 and in that way you know as long as you
+09:03 
+
+09:03 know what you're trying to achieve uh
+09:05 
+
+09:05 and this is very hard you know we have a
+09:07 
+
+09:07 lot of companies coming in and just
+09:09 
+
+09:09 saying AI predict weather I literally
+09:11 
+
+09:11 had a big customer say can you guys like
+09:14 
+
+09:14 predict weather for me and you know
+09:16 
+
+09:16 that's not the case you need a document
+09:18 
+
+09:18 where you outline what you're trying to
+09:19 
+
+09:19 do and you know even that document that
+09:22 
+
+09:22 has enough structure if you have done
+09:25 
+
+09:25 you know an intro those are the inputs
+09:27 
+
+09:27 you'll be you'll be playing around with
+09:30 
+
+09:30 images and PDFs and then you will
+09:32 
+
+09:32 manipulate it in this way and then
+09:33 
+
+09:33 you'll get some outputs and developing
+09:36 
+
+09:36 that
+09:37 
+
+09:37 intuition um is just enough structure
+09:40 
+
+09:40 for today soon maybe we'll be able to do
+09:44 
+
+09:44 better evolves but for now a lot of
+09:47 
+
+09:47 people really don't know at the moment
+09:49 
+
+09:49 when they start playing around with
+09:50 
+
+09:50 wordware they don't know what they are
+09:52 
+
+09:52 trying to achieve and one of our
+09:54 
+
+09:54 customers coin this term of speed of
+09:57 
+
+09:57 creativity with wordware is uh is higher
+10:01 
+
+10:01 so they learn what they are actually
+10:03 
+
+10:03 trying to do as they encounter problems
+10:07 
+
+10:07 with the underlying models and they
+10:09 
+
+10:09 realize Gemini 2.0 pro might be better
+10:13 
+
+10:13 and maybe Gemini can take huge
+10:16 
+
+10:16 PDFs um and Claud can kind of take PDFs
+10:20 
+
+10:20 but smaller and then dpt4 cannot take
+10:22 
+
+10:22 PDFs and you know they develop that
+10:25 
+
+10:25 understanding and that helps them to
+10:27 
+
+10:27 structurize their
+10:28 
+
+10:28 faults how do you instruct the machine
+10:31 
+
+10:31 to go from intent to outcome like let's
+10:33 
+
+10:33 say I'm a brilliant filmmaker and I want
+10:35 
+
+10:35 you know I want to use wordware to
+10:38 
+
+10:38 create the next the next uh hit um what
+10:41 
+
+10:41 do I do uh in wordwar in order to make
+10:43 
+
+10:43 that happen yeah so for now we focus on
+10:46 
+
+10:46 knowledge workers where that is a little
+10:49 
+
+10:49 bit easier I think using your example
+10:53 
+
+10:53 for figuring out how the future will be
+10:57 
+
+10:57 you know if we have let's say you know
+11:01 
+
+11:01 George Lucas playing around
+11:03 
+
+11:03 hypothetically playing around with gpt7
+11:06 
+
+11:06 and trying to create Star Wars
+11:09 
+
+11:09 um he might type in just the prompt
+11:12 
+
+11:12 being like the two
+11:14 
+
+11:14 sentences uh and he would just say hey
+11:16 
+
+11:16 create a movie about wars between Star
+11:18 
+
+11:18 systems and that's just enough to give a
+11:22 
+
+11:22 model an ability to run on its own and
+11:26 
+
+11:26 this is actually not what you want you
+11:28 
+
+11:28 want to convey your cre ative Vision
+11:30 
+
+11:30 which for now in word is just knowledge
+11:32 
+
+11:32 work but soon it will be all work where
+11:36 
+
+11:36 it needs that human sprinkle that human
+11:39 
+
+11:39 taste and these are the things that I
+11:42 
+
+11:42 really value is like people say oh
+11:45 
+
+11:45 nobody will have a job whatsoever I
+11:47 
+
+11:47 don't agree with it at all I think the
+11:50 
+
+11:50 human taste and how you do things will
+11:52 
+
+11:52 matter even more and I use this George
+11:54 
+
+11:54 Lucas example because it's a little bit
+11:56 
+
+11:56 easier to understand how taste is
+11:58 
+
+11:58 influencing that but everywhere writing
+12:02 
+
+12:02 a good email is um is dependent on Good
+12:05 
+
+12:05 Taste figuring out I was just hiring for
+12:09 
+
+12:09 an executive assistant and like everyone
+12:12 
+
+12:12 in our company needs to show that taste
+12:15 
+
+12:15 and needs to show a little bit more
+12:17 
+
+12:17 conviction in the way that they do
+12:19 
+
+12:19 things so for executive
+12:21 
+
+12:21 assistant like she needed to choose a
+12:23 
+
+12:23 right restaurant for our offsite you
+12:25 
+
+12:25 know and that also has taste I don't
+12:27 
+
+12:27 want to trust nii with this um um so
+12:30 
+
+12:30 yeah that's kind of that sprinkle of
+12:32 
+
+12:32 human touch is very important so taste
+12:35 
+
+12:35 as the last Bastion of humanity I think
+12:37 
+
+12:37 so I think uh creativity and taste do
+12:40 
+
+12:40 you think do you think machines can
+12:42 
+
+12:42 learn human taste I think they can um
+12:46 
+
+12:46 but that's not the point there is an
+12:48 
+
+12:48 interesting analogy here um they put
+12:52 
+
+12:52 humans into an MRI machine and they've
+12:55 
+
+12:55 shown them two different pieces of art
+12:57 
+
+12:57 both of them were done by AI
+13:00 
+
+13:00 and uh we they told the people hey one
+13:03 
+
+13:03 is created by a human artist and another
+13:06 
+
+13:06 one is created by AI our brains work
+13:09 
+
+13:09 completely differently and our different
+13:12 
+
+13:12 parts of the brain fire when we assume
+13:15 
+
+13:15 human intent behind something so you
+13:17 
+
+13:17 know I can create a song and just like
+13:21 
+
+13:21 it will be a good song with sunno
+13:23 
+
+13:23 whatever and send it to my friend and
+13:24 
+
+13:24 he'll be like yeah it's a cool song but
+13:27 
+
+13:27 if I ingrain my intent and I'll create a
+13:30 
+
+13:30 song about our um you know skiing trip
+13:33 
+
+13:33 to shamoni and I'll make it funny and I
+13:37 
+
+13:37 will that intent will be there I'm
+13:39 
+
+13:39 pretty sure his brain will be firing in
+13:41 
+
+13:41 a completely different way giving him
+13:44 
+
+13:44 like giving him a completely different
+13:46 
+
+13:46 experience in that way does that make
+13:47 
+
+13:47 sense it makes a lot of sense yeah I
+13:49 
+
+13:49 love it I'm going to transition to
+13:51 
+
+13:51 talking about the next billion
+13:52 
+
+13:52 developers and you've alluded to this a
+13:54 
+
+13:54 few times in the conversation and I I
+13:56 
+
+13:56 really want to just pull on that thread
+13:58 
+
+13:58 so you started this you know this this
+13:60 
+
+13:60 conversation by saying you know there's
+14:02 
+
+14:02 a certain set of people in the world
+14:04 
+
+14:04 that know how to code uh but there's a
+14:05 
+
+14:05 different set of people in this world
+14:07 
+
+14:07 that have creativity and have ideas um
+14:10 
+
+14:10 do you think that set of people is
+14:12 
+
+14:12 larger is is that is that how we get to
+14:14 
+
+14:14 the next billion
+14:15 
+
+14:15 developers there's an interesting
+14:17 
+
+14:17 analogy here uh we have 30 million
+14:20 
+
+14:20 software engineers in the world and we
+14:22 
+
+14:22 have
+14:23 
+
+14:23 750 million active users of Excel and
+14:26 
+
+14:26 now uh you will ask like how does
+14:28 
+
+14:28 wordware comp to Excel and what Excel
+14:32 
+
+14:32 did in the 80s to data analytics and
+14:36 
+
+14:36 numbers is what we are trying to do to
+14:38 
+
+14:38 AI so in the 80s you either had to have
+14:41 
+
+14:41 a team of data analytics um people or
+14:44 
+
+14:44 Engineers um or you're using a
+14:46 
+
+14:46 calculator and I would say the
+14:48 
+
+14:48 calculator equivalent here is the chart
+14:50 
+
+14:50 GPT that you every time you need to redo
+14:52 
+
+14:52 the conversation and you every time you
+14:54 
+
+14:54 need to instill your um own needs into
+14:57 
+
+14:57 it what wordware is trying to do is
+15:01 
+
+15:01 saying hey a lot of the things that you
+15:03 
+
+15:03 do are repeatable similar to excel um
+15:07 
+
+15:07 and you can encode your taste into it um
+15:10 
+
+15:10 with wordware um and I I believe that
+15:16 
+
+15:16 that taste will be important as as
+15:18 
+
+15:18 mentioned before and I think the next
+15:20 
+
+15:20 500 million or a billion um users of AI
+15:24 
+
+15:24 might be calling them I don't know what
+15:25 
+
+15:25 will be the term hopefully it's wordware
+15:27 
+
+15:27 engineer but uh you know word Artisan or
+15:30 
+
+15:30 or whoever and the really important part
+15:33 
+
+15:33 here is that they need to know what the
+15:36 
+
+15:36 AI is supposed to do many many many
+15:39 
+
+15:39 times you know we are a horizontal tool
+15:41 
+
+15:41 and people come to us and they say hey
+15:44 
+
+15:44 what can I do with
+15:47 
+
+15:47 AI and I tend to explain it as if for
+15:52 
+
+15:52 now it's an intern but intern after
+15:54 
+
+15:54 University and you need to write out on
+15:57 
+
+15:57 a piece of P like piece of paper
+15:60 
+
+15:60 a couple things that you would want to
+16:01 
+
+16:01 do with the intern so you need to say
+16:04 
+
+16:04 hey um this is your job this is the you
+16:06 
+
+16:06 know title of of what you're trying to
+16:09 
+
+16:09 do here are some of the documents or
+16:11 
+
+16:11 inputs that you'll be working with um
+16:14 
+
+16:14 here are the data sources and here's the
+16:16 
+
+16:16 the output that I'm expecting of you and
+16:19 
+
+16:19 the important caveat here that people
+16:20 
+
+16:20 don't often understand is that the data
+16:22 
+
+16:22 sources has to be something that you
+16:24 
+
+16:24 trust you can't just say hey go and
+16:27 
+
+16:27 search the internet because often you
+16:29 
+
+16:29 you end up with things that you
+16:31 
+
+16:31 don't agree with and if the intern works
+16:34 
+
+16:34 on top of that that's a problem and
+16:36 
+
+16:36 another one is and this is very
+16:38 
+
+16:38 important is that you're going to trust
+16:39 
+
+16:39 the intern with this so you know if you
+16:42 
+
+16:42 want to send a thousand emails uh to
+16:45 
+
+16:45 every person that that that needs a
+16:47 
+
+16:47 response in your inbox with some people
+16:50 
+
+16:50 you just want trust an intern to do this
+16:52 
+
+16:52 um and this is how like AI Works uh
+16:56 
+
+16:56 right now so as long as you have a job
+16:57 
+
+16:57 right now that you say hey if I have an
+17:00 
+
+17:00 one intern I could easily explain it to
+17:02 
+
+17:02 them and a lot of our work is like this
+17:05 
+
+17:05 right now we often read an email go
+17:07 
+
+17:07 search and Dropbox go search notion and
+17:09 
+
+17:09 then we create a response that is
+17:11 
+
+17:11 essentially based on this database that
+17:13 
+
+17:13 we curate um then you can be using Ai
+17:18 
+
+17:18 and I think more and more this knowledge
+17:20 
+
+17:20 work is going to be automated and I
+17:22 
+
+17:22 think know in that way the next billion
+17:25 
+
+17:25 people are going to be um are going to
+17:27 
+
+17:27 need two things in
+17:30 
+
+17:30 what actions to happen and taste how do
+17:33 
+
+17:33 you want to do this and all of the rest
+17:35 
+
+17:35 will will feel like CEOs of the biggest
+17:38 
+
+17:38 Enterprise because we will have a
+17:39 
+
+17:39 thousand knowledge workers working
+17:41 
+
+17:41 beneath us and trying to actually
+17:44 
+
+17:44 execute on these two things what I heard
+17:47 
+
+17:47 just now was a lot of automation about
+17:48 
+
+17:48 knowledge
+17:49 
+
+17:49 work the I mean the thing that I'm most
+17:52 
+
+17:52 intrigued about within Ai and within
+17:54 
+
+17:54 generative AI is its generative capacity
+17:57 
+
+17:57 uh including the ability to create
+17:59 
+
+17:59 create you know you mentioned the George
+18:00 
+
+18:00 Lucas example but also to create you
+18:02 
+
+18:02 know new applications new marketplaces
+18:07 
+
+18:07 uh you know new products and so do you
+18:09 
+
+18:09 imagine do you see wordware primarily
+18:11 
+
+18:11 serving you know making the knowledge
+18:12 
+
+18:12 worker more productive or do you see it
+18:15 
+
+18:15 also uh assisting in kind of the
+18:17 
+
+18:17 creation of new products Services uh you
+18:21 
+
+18:21 know pieces of art um for now it's
+18:24 
+
+18:24 mostly about the productive work I would
+18:26 
+
+18:26 say um it's you know the AI engine is
+18:31 
+
+18:31 the AI heart of your product is wordware
+18:34 
+
+18:34 um currently we have not dipped into the
+18:36 
+
+18:36 generative UI part of things we're not
+18:39 
+
+18:39 lovable um we've actually used lovable
+18:42 
+
+18:42 to um you know rra our AI hard um for
+18:46 
+
+18:46 some of our customers and that has
+18:49 
+
+18:49 worked great I'm just so impressed with
+18:52 
+
+18:52 their product talk more about this uh
+18:54 
+
+18:54 lovable I think also sees themselves as
+18:57 
+
+18:57 you know enabling the next billion
+18:58 
+
+18:58 Developers you see you you have a
+19:00 
+
+19:00 similar Vision uh you know how do you
+19:03 
+
+19:03 think your view of how the world will go
+19:05 
+
+19:05 foots with with their
+19:07 
+
+19:07 view um and like why didn't you CH
+19:10 
+
+19:10 choose to make a you know that style of
+19:13 
+
+19:13 of a no code tool yeah because the way
+19:16 
+
+19:16 that I see the word developer is a
+19:19 
+
+19:19 little bit different they see the word
+19:21 
+
+19:21 developer as what developers do today
+19:23 
+
+19:23 which is you know a lot of SAS is a wrap
+19:27 
+
+19:27 around a database with some dashboard
+19:30 
+
+19:30 and ability to manipulate that data uh
+19:33 
+
+19:33 they are creating a much more
+19:35 
+
+19:35 personalized D dashboards you know and
+19:38 
+
+19:38 um a lot of people are going to create
+19:41 
+
+19:41 incredible vertical size based on
+19:43 
+
+19:43 lovable and I think that's incredible
+19:46 
+
+19:46 and the one thing that was missing
+19:47 
+
+19:47 through all of this is that they not
+19:49 
+
+19:49 only grabb the UI part they also grabed
+19:52 
+
+19:52 the database part which many people do
+19:54 
+
+19:54 not know how to manipulate and hence
+19:56 
+
+19:56 they unlocked a lot more use cases
+19:59 
+
+19:59 whatever but what we are trying to to
+20:02 
+
+20:02 say is that this part of like creating a
+20:05 
+
+20:05 generative U creating a UI on top of a
+20:08 
+
+20:08 database is not the future the future is
+20:12 
+
+20:12 to actually utilize this reasoning
+20:15 
+
+20:15 engine that an lmlm is in a productive
+20:18 
+
+20:18 Manner and we focus on that that that
+20:21 
+
+20:21 you know substance of AI at the
+20:23 
+
+20:23 beginning you know in the future like we
+20:26 
+
+20:26 might want to expose that engine as a in
+20:29 
+
+20:29 a UI maybe it's a chatboard maybe it's
+20:32 
+
+20:32 you know digesting some images Etc um
+20:35 
+
+20:35 but the real important part is the AI
+20:37 
+
+20:37 engine and yeah so if you think about an
+20:40 
+
+20:40 app as you know there's the UI there's
+20:41 
+
+20:41 the application logic and there's a
+20:43 
+
+20:43 database what you're saying is you know
+20:44 
+
+20:44 you really want to just you know knock
+20:46 
+
+20:46 it out of the park on the application
+20:48 
+
+20:48 logic so to speak yes and I think you
+20:50 
+
+20:50 know
+20:52 
+
+20:52 um the databases that we used to work on
+20:56 
+
+20:56 were um discret and and right now we are
+20:60 
+
+20:60 able to work on um a lot more data which
+21:04 
+
+21:04 is not structurized and this is the big
+21:07 
+
+21:07 big difference right now a lot of sasses
+21:10 
+
+21:10 right now will still work in a similar
+21:12 
+
+21:12 manner just the database is fuzzy and
+21:15 
+
+21:15 the database might be what you see uh
+21:17 
+
+21:17 every day and how the hell would you put
+21:20 
+
+21:20 that in a typical normal you know
+21:22 
+
+21:22 database um and I think working on top
+21:25 
+
+21:25 of that context is the really exciting
+21:27 
+
+21:27 part for me let's go back to this
+21:29 
+
+21:29 concept of word Artisans or wordware
+21:32 
+
+21:32 Engineers if everything goes right of
+21:35 
+
+21:35 you know what's your vision of what a
+21:36 
+
+21:36 wordware engineer looks like in 10 years
+21:39 
+
+21:39 oh that's a tough one um
+21:42 
+
+21:42 I've have been thinking a lot
+21:47 
+
+21:47 about what does work look like in 10
+21:50 
+
+21:50 years for human
+21:53 
+
+21:53 beings and I was struggling with this at
+21:56 
+
+21:56 the beginning because um
+21:59 
+
+21:59 it's really hard to understand people's
+22:01 
+
+22:01 jobs even today and often I boil it down
+22:04 
+
+22:04 to um the software that they use they
+22:07 
+
+22:07 can talk a big game about strategy and
+22:09 
+
+22:09 you know I said the mission and in the
+22:11 
+
+22:11 end of the day I ask them do you do
+22:13 
+
+22:13 meetings do you do email do you do
+22:15 
+
+22:15 PowerPoint presentations do you work in
+22:17 
+
+22:17 Excel what exact or do you work in code
+22:20 
+
+22:20 and I just want to understand what does
+22:23 
+
+22:23 work look like in 10 years and like what
+22:25 
+
+22:25 are you really working with you know is
+22:27 
+
+22:27 it a hair like the movie Hair uh like
+22:31 
+
+22:31 interface when you just talk to the AI
+22:33 
+
+22:33 and it does a lot of work for you I
+22:35 
+
+22:35 think to be honest voice is kind of not
+22:38 
+
+22:38 the best modality to express that hence
+22:42 
+
+22:42 I kind of think that in its simplest
+22:44 
+
+22:44 form wordware is a document where you
+22:46 
+
+22:46 jot down your thoughts and you do it in
+22:49 
+
+22:49 a more structured way uh wordware a
+22:52 
+
+22:52 copilot AI is helping you throughout um
+22:56 
+
+22:56 structuring it and in the end of the day
+22:58 
+
+22:58 you behave like a CEO which sets the
+23:01 
+
+23:01 strategy intent and all of that on that
+23:04 
+
+23:04 piece of paper essentially on this blank
+23:06 
+
+23:06 canvas and you draw that Vision maybe
+23:10 
+
+23:10 it's even more than words it's just you
+23:12 
+
+23:12 know you generate this vision of how the
+23:15 
+
+23:15 how your own Enterprise works and you
+23:18 
+
+23:18 know I look at different things around
+23:20 
+
+23:20 us and I see furniture or shoes or
+23:22 
+
+23:22 whatever and I think there is taste
+23:25 
+
+23:25 ingrained into what kind of shoe would
+23:27 
+
+23:27 you like to make so in 10 years if
+23:29 
+
+23:29 somebody wants to be become a um a
+23:33 
+
+23:33 creator of the best brand of
+23:36 
+
+23:36 shoes it becomes about it that shoe
+23:39 
+
+23:39 becomes a luxury object which has
+23:41 
+
+23:41 ingrained taste and intent in it and
+23:45 
+
+23:45 then a bunch of things in the end will
+23:47 
+
+23:47 be um will happen on its own the really
+23:51 
+
+23:51 tough Parts even manufacturing it and so
+23:53 
+
+23:53 on will happen on its own but what's
+23:56 
+
+23:56 your job in the future is talking to
+23:58 
+
+23:58 other CEOs I think we will not humans
+24:02 
+
+24:02 don't want to lose that control so you
+24:04 
+
+24:04 will talk with other CEOs about maybe
+24:06 
+
+24:06 doing a partnership with your shoe brand
+24:09 
+
+24:09 and somebody else you have to be still
+24:13 
+
+24:13 critical about the intent of the other
+24:15 
+
+24:15 person and you have to instill taste and
+24:18 
+
+24:18 your own Creative Vision into that shoe
+24:21 
+
+24:21 do you think that you know do you think
+24:23 
+
+24:23 a billion people globally will be
+24:25 
+
+24:25 capable of programming a machine uh in
+24:28 
+
+24:28 English language the way you describe or
+24:30 
+
+24:30 in wordware documents the way you
+24:31 
+
+24:31 describe because it does require you
+24:33 
+
+24:33 know it's it's almost like pseudo coding
+24:35 
+
+24:35 and you know there is logic there's
+24:37 
+
+24:37 there's loops and things like that I
+24:39 
+
+24:39 guess maybe talk about today like do you
+24:41 
+
+24:41 need to be technical in order to use
+24:42 
+
+24:42 wordware like who is the ICP today and
+24:45 
+
+24:45 what is needed to move that ICP so that
+24:47 
+
+24:47 you can reach a billion developers yeah
+24:49 
+
+24:49 I
+24:50 
+
+24:50 think um right now what we've enabled is
+24:53 
+
+24:53 people who are somewhat technical CEOs
+24:56 
+
+24:56 technical PMS high up in the orc chart
+24:60 
+
+24:60 to ingrain their own like kind of think
+25:03 
+
+25:03 that they know what needs to happen and
+25:05 
+
+25:05 get there quicker you know so um MOX
+25:09 
+
+25:09 from instacart for example uh he is a
+25:12 
+
+25:12 founder and he spent four days just you
+25:14 
+
+25:14 know refining his idea in wordware
+25:18 
+
+25:18 instead of hiring a whole team but he is
+25:21 
+
+25:21 somewhat you know analytically minded
+25:24 
+
+25:24 and for now that's the case uh we did
+25:26 
+
+25:26 not want to make too much magic because
+25:28 
+
+25:28 the the models were not there um right
+25:31 
+
+25:31 now what we're doing is we're moving
+25:33 
+
+25:33 more into that blank canvas when you
+25:35 
+
+25:35 just describe the idea and we take care
+25:37 
+
+25:37 of guessing the right structure and you
+25:40 
+
+25:40 still will be able to you know in a very
+25:42 
+
+25:42 fine grained way edit it but you will
+25:46 
+
+25:46 start playing a lot more we'll probably
+25:48 
+
+25:48 use O3 to get you to the first draft of
+25:52 
+
+25:52 how that flow works and um when we kind
+25:56 
+
+25:56 of loop Back to the Future of how it
+25:59 
+
+25:59 will all look like and really whether
+26:01 
+
+26:01 we'll have 1 billion developers you know
+26:03 
+
+26:03 working in wordware it becomes a much
+26:06 
+
+26:06 bigger question here it becomes a
+26:08 
+
+26:08 question of like will a billion people
+26:10 
+
+26:10 want to do productive work like you know
+26:12 
+
+26:12 we just talked about the shoe how many
+26:15 
+
+26:15 people will have the drive to put out
+26:18 
+
+26:18 something to the world and they will
+26:20 
+
+26:20 want to express that Creative Vision
+26:22 
+
+26:22 maybe in you know post resource scarcity
+26:25 
+
+26:25 world most of the people want work but I
+26:28 
+
+26:28 think will still have the equivalent of
+26:30 
+
+26:30 billionaires and it will be about
+26:32 
+
+26:32 influence it will be be about taste and
+26:34 
+
+26:34 it will be about how you utilize your
+26:37 
+
+26:37 own resources and how do you multiply it
+26:39 
+
+26:39 to have the equivalent of future money
+26:41 
+
+26:41 and I went a little bit deep here but
+26:44 
+
+26:44 for what it's worth I think that I think
+26:46 
+
+26:46 the innate drive to create is like a
+26:49 
+
+26:49 deeply human drive and I think that
+26:51 
+
+26:51 exists in a post post capitalistic world
+26:54 
+
+26:54 I also have that opinion and I really
+26:56 
+
+26:56 believe in humans like I want them to
+26:58 
+
+26:58 succeed like somebody asked me one of
+27:00 
+
+27:00 our prospective employees asked me what
+27:03 
+
+27:03 like Philip in 10 years what do you want
+27:06 
+
+27:06 there to be like what what what what
+27:08 
+
+27:08 have you done and I want to save like
+27:10 
+
+27:10 the human Creative Vision I don't want
+27:13 
+
+27:13 everything to be AI I really have the
+27:16 
+
+27:16 pleasure when I go to an artisan shop on
+27:18 
+
+27:18 my holiday and I know that somebody put
+27:20 
+
+27:20 in the intent and put in the work and I
+27:22 
+
+27:22 want to interact with it and I want to
+27:24 
+
+27:24 interact with the story of it okay so
+27:26 
+
+27:26 today your ICP is the analytical career
+27:29 
+
+27:29 which is a little bit of a unicorn uh
+27:31 
+
+27:31 and over time as you kind of lower as
+27:33 
+
+27:33 the models get better as you iterate on
+27:34 
+
+27:34 your interface you'll lower the bar so
+27:36 
+
+27:36 it'll really be just more of the
+27:37 
+
+27:37 creative is is as your ideal user you're
+27:40 
+
+27:40 going to lower the bar of how analytical
+27:41 
+
+27:41 you need to be in order to use word yes
+27:44 
+
+27:44 but at the same time you know my use of
+27:46 
+
+27:46 the word creative is not to what most
+27:49 
+
+27:49 people associate it with right now I
+27:51 
+
+27:51 think a good creative is also you know
+27:54 
+
+27:54 using growth channels in the right
+27:56 
+
+27:56 manner they are creative about
+27:58 
+
+27:58 everything that they do in this new
+27:60 
+
+28:00 uncertain word of AI where everything is
+28:03 
+
+28:03 changing and you know I'm not thinking
+28:05 
+
+28:05 only about an artist that's
+28:08 
+
+28:08 painting on the canvas it's it's I I
+28:11 
+
+28:11 think creativity is um can basically
+28:16 
+
+28:16 show itself in so many different aspects
+28:18 
+
+28:18 of work let's talk about user interfaces
+28:21 
+
+28:21 and you know the future goys the gooes
+28:24 
+
+28:24 of the future um right before we filmed
+28:27 
+
+28:27 this podcast you made the analogy that
+28:28 
+
+28:28 you know Transformers or the new
+28:30 
+
+28:30 transistor maybe say a little bit more
+28:31 
+
+28:31 about that and what you think the new
+28:32 
+
+28:32 guey is going to be so I think the
+28:35 
+
+28:35 analogy here is that if um the llm is
+28:41 
+
+28:41 the well if Transformer is the the new
+28:43 
+
+28:43 transistor and it's being packaged as
+28:45 
+
+28:45 the model the model is kind of the main
+28:47 
+
+28:47 frame let's call it you know and then we
+28:50 
+
+28:50 took our sweet time to utilize the power
+28:55 
+
+28:55 of that main frame in a guey that's
+28:57 
+
+28:57 accessible by billions of people you
+28:60 
+
+28:60 know there has been really two big um
+29:03 
+
+29:03 spikes there the first was the desktop
+29:05 
+
+29:05 you know and apple came coming up with
+29:07 
+
+29:07 their guey um and the second one was
+29:10 
+
+29:10 mobile and um you know right now we are
+29:14 
+
+29:14 almost like exposing the numbers and the
+29:17 
+
+29:17 logic in a chat style thing and nobody
+29:20 
+
+29:20 has had a better idea we think that the
+29:24 
+
+29:24 document style is better for create like
+29:27 
+
+29:27 doing kind of more complex work um
+29:31 
+
+29:31 because often when you're trying to
+29:32 
+
+29:32 achieve something you just give it two
+29:34 
+
+29:34 sentences and the model just runs on its
+29:36 
+
+29:36 own and it's just enough the two
+29:38 
+
+29:38 sentences our lead investor recently
+29:40 
+
+29:40 said that the two sentences is just
+29:42 
+
+29:42 about enough for a model to hang itself
+29:45 
+
+29:45 on and you know you will get something
+29:48 
+
+29:48 completely different than what you
+29:49 
+
+29:49 actually wanted and this is a problem of
+29:51 
+
+29:51 like lovable ende devant of this world
+29:53 
+
+29:53 as well um but I basically think that uh
+29:59 
+
+29:59 there are better goys coming and you
+30:01 
+
+30:01 know whether they will be based on AR or
+30:05 
+
+30:05 um you know there will be an assistant
+30:07 
+
+30:07 that's listening to everything that we
+30:09 
+
+30:09 do I that was actually my first company
+30:11 
+
+30:11 um augmenting human memory of always on
+30:14 
+
+30:14 listening devices using gpt2 and BD I've
+30:16 
+
+30:16 been in this uh ah you've been in this
+30:18 
+
+30:18 since the gpt2 days I mean I my research
+30:21 
+
+30:21 wasn't into lstms which are the
+30:22 
+
+30:22 precursor to the Transformer
+30:24 
+
+30:24 architecture and I've been in this for a
+30:25 
+
+30:25 while I think nobody has yet delivered
+30:27 
+
+30:27 on this I want everything that I hear to
+30:30 
+
+30:30 be somewhere in a searchable database
+30:33 
+
+30:33 that also has the perfect context about
+30:35 
+
+30:35 me you know the way that I want to do
+30:38 
+
+30:38 things and I think those affordances and
+30:42 
+
+30:42 those like we called it goey but it's
+30:44 
+
+30:44 really the underlying like way of
+30:47 
+
+30:47 interacting with
+30:48 
+
+30:48 intelligence uh is is not going to be
+30:51 
+
+30:51 mainly chat I just I just don't believe
+30:53 
+
+30:53 it programmable documents do you think
+30:56 
+
+30:56 that is fundamentally what word looks
+30:59 
+
+30:59 like UI wise and call it 5
+31:01 
+
+31:01 years um I think there is more and more
+31:04 
+
+31:04 magic in it and uh I would believe that
+31:09 
+
+31:09 I want people still to be able to do
+31:11 
+
+31:11 that fine grain work you know we've
+31:13 
+
+31:13 we've linked it with George Lucas doing
+31:15 
+
+31:15 the the movie you know in a way you
+31:18 
+
+31:18 almost want to firstly start with the
+31:20 
+
+31:20 high level thing the two sentence
+31:22 
+
+31:22 description and then zoom in and zoom in
+31:24 
+
+31:24 and zoom in and create you know modules
+31:27 
+
+31:27 which make the best scene that is 5
+31:30 
+
+31:30 seconds and then combine them together
+31:32 
+
+31:32 in that way so what I would like
+31:34 
+
+31:34 wordware to be is uh to
+31:37 
+
+31:37 transcend uh obstruction layers and you
+31:40 
+
+31:40 know be able to zoom It All Out start
+31:43 
+
+31:43 with a sentence and have it run maybe
+31:47 
+
+31:47 see whether it's working in the right
+31:48 
+
+31:48 Manner and then as you seeing that some
+31:51 
+
+31:51 things are not doing the thing that you
+31:53 
+
+31:53 want them to do is to be able to zoom in
+31:55 
+
+31:55 and so and see maybe you know four
+31:58 
+
+31:58 senten of exactly what it's doing and
+31:60 
+
+31:60 what are the inputs to this what it's
+32:02 
+
+32:02 trying to do in the middle and what are
+32:03 
+
+32:03 the outputs you know that's kind of the
+32:05 
+
+32:05 most simple one level in and then you
+32:08 
+
+32:08 want to zoom in more and more and more
+32:10 
+
+32:10 as you def re redefine and reiterate on
+32:14 
+
+32:14 your idea of how this should be done how
+32:18 
+
+32:18 did you arrive at the current user
+32:20 
+
+32:20 interface I think it does feel really
+32:22 
+
+32:22 novel uh compared to how others are you
+32:25 
+
+32:25 know enabling AI Builders today how did
+32:27 
+
+32:27 you arrive at the current user interface
+32:29 
+
+32:29 was it more experimentation listening to
+32:31 
+
+32:31 users was it you philosophizing about
+32:34 
+
+32:34 you know what it should be I think
+32:37 
+
+32:37 uh currently the and currently and
+32:42 
+
+32:42 before the approach to creating these
+32:44 
+
+32:44 agents was a Blog based on a 2d
+32:48 
+
+32:48 canvas and once you know we I've been
+32:51 
+
+32:51 building agents for a long time you know
+32:53 
+
+32:53 I think you know March 2023 I put out
+32:56 
+
+32:56 the first article about how to build
+32:58 
+
+32:58 agent and me and Robert my co-founder
+33:00 
+
+33:00 we've been in this for a long time and
+33:03 
+
+33:03 the more the better the models got the
+33:07 
+
+33:07 prompting became more difficult because
+33:09 
+
+33:09 you can do more complex things with it
+33:12 
+
+33:12 so at some stage there was this movement
+33:14 
+
+33:14 of like the prompt is going away so on
+33:16 
+
+33:16 we actually really disagreed with it and
+33:18 
+
+33:18 that that idea has gone a little bit
+33:20 
+
+33:20 it's it's like you know we came back did
+33:23 
+
+33:23 a loop again and be like actually
+33:25 
+
+33:25 communicating your vision is really
+33:26 
+
+33:26 important and when we tried to
+33:28 
+
+33:28 communicate our vision which was a
+33:30 
+
+33:30 little bit ahead of what the models
+33:32 
+
+33:32 could have done at the time we started
+33:34 
+
+33:34 to not notice that the 2D canvas uh is
+33:38 
+
+33:38 just not enough like if you do a
+33:40 
+
+33:40 reflection Loop inside of a reflection
+33:42 
+
+33:42 Loop you run out of
+33:44 
+
+33:44 dimensions and we basically really like
+33:48 
+
+33:48 the way that code is structured code has
+33:50 
+
+33:50 an ability to uh Express very very
+33:54 
+
+33:54 complex uh Concepts in a way that is
+33:58 
+
+33:58 still like you can still manipulate it
+34:01 
+
+34:01 and understand it think about trying to
+34:04 
+
+34:04 structure the you know the whole Uber up
+34:07 
+
+34:07 with all of like everything in it on a
+34:09 
+
+34:09 2d canvas it would become so cluttered
+34:13 
+
+34:13 and so messy you know you can do the big
+34:15 
+
+34:15 picture thing but not really the you
+34:17 
+
+34:17 know you you don't want Engineers to be
+34:19 
+
+34:19 interacting in that that way you want
+34:21 
+
+34:21 the engineers on the future wordware
+34:23 
+
+34:23 Engineers to be interactive with
+34:25 
+
+34:25 something that's easy to grasp the
+34:27 
+
+34:27 structure of very complex systems
+34:29 
+
+34:29 whereas the Uber app actually could
+34:30 
+
+34:30 probably be described in pseudo code uh
+34:33 
+
+34:33 and it seems like you're you know you're
+34:35 
+
+34:35 getting people closer to that Vision
+34:36 
+
+34:36 versus the 2D canvas um yes and I think
+34:40 
+
+34:40 you know the most important part here is
+34:42 
+
+34:42 that Uber has an agent equivalent and
+34:46 
+
+34:46 this is what we are trying to build you
+34:47 
+
+34:47 know if you want an agent to decide
+34:51 
+
+34:51 where is that person going and where are
+34:53 
+
+34:53 they starting their journey and whether
+34:55 
+
+34:55 they will accept uh that charge or you
+34:57 
+
+34:57 know you want to maybe make sure that
+34:59 
+
+34:59 the charge is right for that particular
+35:01 
+
+35:01 person there is an agent equivalent
+35:03 
+
+35:03 there and you know people are going like
+35:07 
+
+35:07 people can build that agent on wordware
+35:09 
+
+35:09 it's not like you're going to create
+35:11 
+
+35:11 that whole UI with with with with for
+35:14 
+
+35:14 Uber and I think you know probably Uber
+35:17 
+
+35:17 is the right obstruction layer you don't
+35:19 
+
+35:19 want to be ordering an Uber through a
+35:21 
+
+35:21 chatbot or through like a voice-based
+35:23 
+
+35:23 thing or you know but you might want an
+35:27 
+
+35:27 Uber to be uh to be ordered for you if
+35:30 
+
+35:30 you have a calendar invite so you know
+35:33 
+
+35:33 in a way that like for your personal use
+35:35 
+
+35:35 Uber is nice because you can click
+35:37 
+
+35:37 around and the agent will not always
+35:39 
+
+35:39 know but I was coming here and I wanted
+35:43 
+
+35:43 like a wayo actually wayo can't get that
+35:45 
+
+35:45 far yet but I wanted the wayo to be
+35:47 
+
+35:47 ordered and to be ordered perfectly when
+35:49 
+
+35:49 I need this and it's almost like a
+35:51 
+
+35:51 assistant personal assistant would do
+35:52 
+
+35:52 this for me and now that capability is
+35:55 
+
+35:55 open to everyone so we'll soon have
+35:57 
+
+35:57 these kind of ordinances and these kind
+35:59 
+
+35:59 of obstruction layers there I think
+36:00 
+
+36:00 that's a great note to end on should we
+36:02 
+
+36:02 end on a lightning round uh let's go
+36:05 
+
+36:05 okay one one or two sentence answers
+36:07 
+
+36:07 only uh okay first question what is your
+36:11 
+
+36:11 most hot take or contrarian take in AI
+36:14 
+
+36:14 not related to word wear or everything
+36:15 
+
+36:15 we just
+36:17 
+
+36:17 discussed uh pre-training was still
+36:21 
+
+36:21 going to matter and deep seek is a
+36:24 
+
+36:24 little blimp that people liked to uh
+36:28 
+
+36:28 people jumped on because people love a
+36:31 
+
+36:31 good drama and it was connected to China
+36:34 
+
+36:34 and actually it doesn't matter that much
+36:36 
+
+36:36 um okay I know I said lightning round
+36:38 
+
+36:38 but you you have to say more what what
+36:40 
+
+36:40 do you mean it doesn't matter that much
+36:41 
+
+36:41 I mean they utilize some cool techniques
+36:44 
+
+36:44 and the rest of the community is going
+36:46 
+
+36:46 to learn from that uh however you know
+36:51 
+
+36:51 like the fact that they like trained it
+36:53 
+
+36:53 for a little bit cheaper for like a lot
+36:55 
+
+36:55 cheaper does not involve all the
+36:57 
+
+36:57 experimentation that they did before
+36:59 
+
+36:59 that and you know I'm I don't know if
+37:02 
+
+37:02 I'm supposed to say that but I'm pretty
+37:03 
+
+37:03 sure they had access to the best nvidias
+37:05 
+
+37:05 as well for that
+37:07 
+
+37:07 experimentation and um it's not that
+37:11 
+
+37:11 novel like people jumped on it because
+37:13 
+
+37:13 they were like oh my God China is taking
+37:15 
+
+37:15 over the race and so on and Nvidia stock
+37:18 
+
+37:18 price like plummeted and I just think
+37:20 
+
+37:20 it's another place where some models
+37:22 
+
+37:22 were trained that were open sourced and
+37:24 
+
+37:24 it's not going to you know we're not
+37:26 
+
+37:26 going to remember it in like a like like
+37:28 
+
+37:28 a year or like even six months or maybe
+37:31 
+
+37:31 they will take over but the model
+37:33 
+
+37:33 doesn't really matter that much how you
+37:35 
+
+37:35 kind of work with that best model out
+37:37 
+
+37:37 there that's what matters that is a hot
+37:40 
+
+37:40 take indeed okay next question who's
+37:42 
+
+37:42 going to have the best Frontier Model
+37:43 
+
+37:43 next year o um I think open AI is always
+37:49 
+
+37:49 super bullish and they always promise a
+37:50 
+
+37:50 lot and then uh I was just on a talk
+37:53 
+
+37:53 with with uh Sam outman on the yci
+37:56 
+
+37:56 retreat and the O3 that the way that he
+37:58 
+
+37:58 pictured it sounded
+38:00 
+
+38:00 great but I think we both know that they
+38:03 
+
+38:03 overpromise a little bit a lot uh and I
+38:07 
+
+38:07 love anthropic uh I think their kind of
+38:10 
+
+38:10 vision and their kind of the way that
+38:12 
+
+38:12 they've created this is great but
+38:14 
+
+38:14 recently Gemini 2.0 pro with their
+38:17 
+
+38:17 abilities to you know ingest 6,000 pages
+38:20 
+
+38:20 of of PDF is really blowing my mind so
+38:23 
+
+38:23 end of the story is I have no clue this
+38:26 
+
+38:26 is a place where this is a place where
+38:28 
+
+38:28 it's super fragmented and people have
+38:30 
+
+38:30 zero loyalty pre-training is hitting a
+38:33 
+
+38:33 wall I think you know famous people
+38:35 
+
+38:35 including Ilia have been have included
+38:37 
+
+38:37 saying something to that extent recently
+38:39 
+
+38:39 agree or
+38:40 
+
+38:40 disagree uh disagree uh right now I
+38:44 
+
+38:44 think you know it's the intelligence of
+38:47 
+
+38:47 a model is linked logarithmically to the
+38:49 
+
+38:49 resources that is are needed to train it
+38:53 
+
+38:53 but you know doing a 2X of intelligence
+38:57 
+
+38:57 is
+38:58 
+
+38:58 in its on its own exponential like if
+39:02 
+
+39:02 I'm smarter tox than somebody else it
+39:05 
+
+39:05 doesn't mean I'll do 2x of the work it
+39:08 
+
+39:08 means that I'll find ways that probably
+39:10 
+
+39:10 mean I'm a 10x or even more favorite new
+39:14 
+
+39:14 AI app not wordware uh I would say I
+39:17 
+
+39:17 started to edit content because uh we
+39:19 
+
+39:19 need to explain and educate people a
+39:22 
+
+39:22 little bit more about both wordware and
+39:23 
+
+39:23 AI so the script is something that I've
+39:26 
+
+39:26 been I've been loving and I use granola
+39:29 
+
+39:29 every day uh and the newest model that
+39:31 
+
+39:31 I'm really impressed is the Gemini 2.0
+39:33 
+
+39:33 pro um I really like it that is that's a
+39:36 
+
+39:36 hot take as well I haven't heard much of
+39:38 
+
+39:38 that from people I think it came out
+39:40 
+
+39:40 like four days ago so people have not
+39:42 
+
+39:42 been playing around with it their PDF
+39:44 
+
+39:44 capabilities are awesome what
+39:46 
+
+39:46 application or application category do
+39:48 
+
+39:48 you think will really go mainstream and
+39:50 
+
+39:50 hit this year I would love to see I'm
+39:53 
+
+39:53 personally very very involved with that
+39:56 
+
+39:56 call um AI having the context of your
+39:60 
+
+39:60 life and being able to you know
+40:03 
+
+40:03 basically make better decisions based on
+40:05 
+
+40:05 the context and you know I've
+40:08 
+
+40:08 rewind which you know I think it they
+40:11 
+
+40:11 are called Limitless right now I've
+40:13 
+
+40:13 ordered their pendant by the way it's
+40:15 
+
+40:15 been like a year and a half and I still
+40:17 
+
+40:17 don't have it uh I don't know send it to
+40:20 
+
+40:20 me you're listening please send it uh
+40:23 
+
+40:23 and I had to change a color cuz I they
+40:26 
+
+40:26 didn't have the color but I would love
+40:29 
+
+40:29 for there to be a provider which has a
+40:32 
+
+40:32 lot more context and can do the personal
+40:35 
+
+40:35 stuff for me uh don't you think that's
+40:37 
+
+40:37 Apple over time I was just about to say
+40:40 
+
+40:40 I think ideally that n421 model or
+40:45 
+
+40:45 whatever it's called of the AR glasses
+40:47 
+
+40:47 that they are trying to push out there
+40:49 
+
+40:49 which I think Facebook has taken over a
+40:51 
+
+40:51 little bit maybe we'll see early um
+40:54 
+
+40:54 stages of that and I think they're the
+40:57 
+
+40:57 only ones where the Privacy really like
+41:00 
+
+41:00 they have a good brand around privacy
+41:03 
+
+41:03 and two even if you're new AR glasses
+41:07 
+
+41:07 run out of battery it's still cool to be
+41:09 
+
+41:09 wearing a
+41:10 
+
+41:10 $5,000 you know uh piece of hardware and
+41:15 
+
+41:15 maybe does the ux but I don't know
+41:18 
+
+41:18 what's that ux and like a microphone so
+41:21 
+
+41:21 far
+41:22 
+
+41:22 failed um yeah single piece of content
+41:26 
+
+41:26 that an AI official AO should read or
+41:29 
+
+41:29 watch I would say all of the deep
+41:32 
+
+41:32 learning.ai resources everyone like we
+41:37 
+
+41:37 have bunch of candidates apply for jobs
+41:39 
+
+41:39 by the way we are hiring whatever I
+41:41 
+
+41:41 should be looking uh very very
+41:43 
+
+41:43 aggressively so come join wordware but
+41:46 
+
+41:46 uh The Deep learning. a resources are
+41:49 
+
+41:49 awesome and they explain everything from
+41:52 
+
+41:52 uh from the bottom layer all the way to
+41:55 
+
+41:55 the Practical uh layer of how to
+41:57 
+
+41:57 actually get it done um I also think if
+41:59 
+
+41:59 you don't understand the underlying
+42:01 
+
+42:01 technology go see free blue one brown an
+42:05 
+
+42:05 incredible Channel on YouTube and they
+42:07 
+
+42:07 explain everything super well um yeah I
+42:10 
+
+42:10 think wonderful your Lightning Run was
+42:13 
+
+42:13 full of hot takes I didn't even have to
+42:14 
+
+42:14 ask you for a specific hot take uh well
+42:17 
+
+42:17 philli thank you so much for coming on I
+42:18 
+
+42:18 really enjoyed chatting about you know
+42:20 
+
+42:20 how you see the world evolving from
+42:22 
+
+42:22 developers to word Artisans or word you
+42:25 
+
+42:25 know word uh wear engineers everything
+42:28 
+
+42:28 goes right and appreciate you sitting
+42:30 
+
+42:30 down to share your vision and your hot
+42:31 
+
+42:31 takes thank you for having me thank you
+42:34 
+
+42:34 [Music]
+42:47 
+
+42:47 [Music]

@@ -1,0 +1,756 @@
+00:02 All right, my name is Packer Radio. I'm
+00:04 a partner at Sequoia. Sonia and
+00:07 Constantine and all of our partners at
+00:09 Sequoia will be your hosts for the day.
+00:12 Now, before we get into the real meat of
+00:16 the day, me and Sonia and Constantine
+00:19 are going to just share a few
+00:21 perspectives on some of the things that
+00:23 we've learned over the last year or so.
+00:26 And we're painfully aware that we're the
+00:28 appetizer, not the entree. I I got an
+00:31 email from one of the founders that I
+00:33 work with yesterday who said, "Oh, hey
+00:35 man, I'm going to be a little bit late
+00:36 to this thing. I'll probably show up at
+00:37 like 9:35." I was like, "Well, that's
+00:40 oddly specific. That's exactly when
+00:42 Jensen comes on." And so, so look, we
+00:46 get it. But we're going to share a
+00:47 couple thoughts and then we'll get into
+00:49 the real stuff. All right. First off,
+00:52 some calibration. What do we think is
+00:54 going on in the world of
+00:56 AI? Simple framework that we use to look
+00:58 at markets. What is it? The Don
+01:01 Valentine question. So what? Why does it
+01:03 matter? Why now? It may be inevitable,
+01:05 but is it imminent? And then finally,
+01:08 what now? What do we do? How do we take
+01:10 advantage of this? How do we play to
+01:11 win? And we've talked about each of
+01:12 these in years past, but we're going to
+01:14 update some of our thinking over the
+01:15 next couple of minutes here. And I
+01:17 actually I gota be honest with you, I
+01:18 had a real banger on the what, but
+01:21 Constantine delicately suggested that
+01:23 telling a room full of AI people what AI
+01:25 is not a great idea. So, we're actually
+01:27 going to jump straight to the so what.
+01:29 Okay, just for fun, who remembers this
+01:31 slide from last year. All right, thank
+01:34 you. Wonderful. Top row, cloud
+01:37 transition. Bottom row, AI transition.
+01:41 Left side of the page, yesterday. Middle
+01:44 of the page, today. right side of the
+01:46 page tomorrow. What does it say? It says
+01:50 that the cloud at 400 billion of revenue
+01:54 is bigger than the global software
+01:56 market when that transition began. If we
+01:58 reason by analogy, the market we're
+02:01 going after in the world of AI services,
+02:04 the starting point is at least an order
+02:06 of magnitude bigger. The end point 10 or
+02:08 20 years from now has a chance to be
+02:11 absolutely
+02:12 massive. Important point. Now, we've
+02:15 actually updated our thinking. It's not
+02:18 just the services market that AI has
+02:20 gone
+02:21 after. It's both services and
+02:26 software. Means that both of these
+02:28 profit pools are under attack.
+02:31 We've seen plenty of companies that
+02:32 start with software, gets a little bit
+02:35 smarter, becomes more of a co-pilot,
+02:37 gets a little bit smarter, becomes more
+02:38 of an autopilot, and they actually
+02:41 progress from selling a tool into
+02:43 software budget to selling an outcome to
+02:46 selling work into labor budget. Both of
+02:50 these TAMs are up for
+02:53 grabs. Okay, who remembers this slide
+02:55 from last
+02:56 year? Oh man, I'm a little sad. That was
+02:58 only like three, four people. All right,
+02:60 there's one more. All right. All right.
+03:01 All right. Thank you. Don't be bashful.
+03:02 You guys can raise your hands. Okay.
+03:05 This layer cake represents the waves of
+03:08 technology that have stacked up over the
+03:11 last several decades to bring us to the
+03:14 present
+03:14 moment. There are two points to this
+03:18 slide. One, AI is in fact imminent, not
+03:23 just
+03:24 inevitable. The precedent conditions are
+03:26 in place.
+03:28 compute,
+03:30 networks,
+03:32 data,
+03:34 distribution, talent. We have all the
+03:36 ingredients we need. So, we're ready to
+03:38 go. Second point of this slide, these
+03:41 waves tend to be additive and so the
+03:44 opportunity is much bigger than it's
+03:46 been for prior waves. It's also coming
+03:50 much
+03:51 faster. Now, I hate this slide. X-axis
+03:56 time, Y-axis vanity metric. People use
+03:59 this to justify all manner of sins.
+04:01 Okay, but the observation is correct.
+04:03 Things are happening faster and faster
+04:05 and faster and faster than they have
+04:06 before. But not a lot of people have dug
+04:08 in on why. And so we just want to take a
+04:10 second on. If you think about the
+04:12 physics of distribution, you just need
+04:14 three things. People have to know about
+04:16 your thing. They have to want your
+04:17 thing. And they have to be able to buy
+04:18 your thing. That's it. Does anybody
+04:21 remember that
+04:23 logo? When the cloud transition got
+04:26 going, nobody was paying attention. Ben
+04:27 off had to do these crazy gorilla
+04:29 marketing tactics to get anybody to pay
+04:30 attention. AI is very different.
+04:34 November 30, 2022, chat GPT comes out.
+04:36 The entire world is paying attention to
+04:40 AI. Middle column, these are the
+04:42 combined monthly active users for Reddit
+04:46 and the artist formerly known as
+04:48 Twitter.
+04:49 didn't exist at the start of the cloud
+04:51 transition, barely existed at the start
+04:53 of the mobile transition. Somewhere
+04:54 between 1.2 and 1.8 billion people on
+04:57 these platforms today. Not the only way
+04:59 to find out about cool stuff, but a
+05:01 pretty good way to find out about cool
+05:03 stuff. Right side of the page, let's
+05:06 imagine you listen to Benoff. There are
+05:08 only 200 million people connected to the
+05:10 internet. Today, it's 5.6 billion. It's
+05:13 effectively every household and every
+05:14 business in the world. And so, what does
+05:16 all this mean?
+05:18 means the rails are in place and when
+05:21 the starting gun went off there were no
+05:24 barriers to adoption. This is not an AI
+05:26 specific phenomenon. This is the new
+05:28 reality of technology distribution. The
+05:30 physics have changed. Train tracks are
+05:32 in
+05:34 place. Okay, another slide from last
+05:37 year. What do we do about it? Where do
+05:39 we play to win? Two points on this
+05:42 slide. Number
+05:43 one, a lot of white space. Again, this
+05:46 is a slide from last year. There's a
+05:48 little less white space now. People are
+05:50 starting to break out, but for the most
+05:52 part, the opportunity is still wide
+05:53 open. Point number two, these
+05:57 logos represent the companies that got
+06:00 to a billion plus of revenue. We don't
+06:03 care about unicorns. We care about
+06:05 revenue and free cash flow. Got to a
+06:07 billion plus of revenue during prior
+06:10 transitions. Most of them are at the top
+06:12 of the page.
+06:14 Most of them are at the application
+06:16 layer. We have believed and we continue
+06:19 to believe that the same will be true
+06:20 for AI. The value is at the application
+06:23 layer. But guess
+06:25 what? You got
+06:27 competition. We got a second scaling
+06:30 law. We got test time compute. We got
+06:33 reasoning with tool use and inter agent
+06:36 communication that allows the foundation
+06:39 models to get pretty far into the
+06:41 application layer.
+06:42 What do you do if you're a startup and
+06:44 you're not building a vertically
+06:45 integrated business? Go from the
+06:47 customer back. Think vertical specific.
+06:50 Think function specific. Deal with
+06:52 complex problems that might require a
+06:54 human in the loop. But this is the race.
+06:57 This is where the value is going to be.
+06:59 This should be top of mind for
+07:02 everybody. Okay. How do we play to win?
+07:06 All right. You come on. You guys can
+07:07 laugh. This is a good one. All right.
+07:10 How do we play to win? Well, we showed
+07:12 this last year, so I'll presume you're
+07:13 not laughing because you saw it last
+07:14 year. So 95% of building a company in AI
+07:17 is just building a company. It's the
+07:19 same old stuff. Solve an important
+07:20 problem in a unique and compelling way.
+07:22 Get great people to follow you. All that
+07:23 good stuff. The other 5% is AI specific.
+07:27 And in the context of that race for the
+07:29 application layer, there are a few
+07:30 things to consider. This is the Leone
+07:33 merchandising cycle. Our partner Doug
+07:37 Leone, the goat, spent 40 years lovingly
+07:42 crafting this little piece of content.
+07:45 This represents everything you need to
+07:47 take an idea in your brain and turn it
+07:50 into a product in the hand of your
+07:51 customers. Okay, that idea has to turn
+07:54 into a product that has to be built by
+07:56 an engineering team that has to be taken
+07:58 to market and sold and supported. This
+07:60 is the value chain. Bottom of this page
+08:02 is the tech out point of view. Top of
+08:05 this page is the customer back point of
+08:07 view. That's how you can build moes
+08:09 across the entire value chain. Your
+08:12 customer is not sure what they want out
+08:14 of AI. You can have an opinion. You can
+08:17 give them an end toend solution that
+08:18 just solves the problem as opposed to
+08:20 throwing a tool over the fence. You can
+08:22 build data flywheels with the usage data
+08:25 of your own product. That's something
+08:26 that nobody else has. You can be of the
+08:29 industry for the industry, kind of like
+08:31 what open evidence does for the medical
+08:32 industry. You can speak their language.
+08:35 Harvey sends lawyers in to talk with law
+08:37 firms. And I got to be honest with you,
+08:40 we wouldn't recommend Ford deployed
+08:41 engineers, but you can do it. Tough way
+08:43 to live, but you can do it. You can put
+08:45 a big bear hug around your customers in
+08:47 a way that foundation models probably
+08:49 won't. By the way, we love foundation
+08:51 models, too, but we're assuming that
+08:52 most of you are not building foundation
+08:53 models. Most of you are building
+08:57 applications. Okay, I have two more
+08:59 slides, then we'll hand it off.
+09:02 So, we get asked the question a lot.
+09:04 What do you look for in AI companies?
+09:06 And again, 95% of it is the same stuff
+09:08 that we look for in any company. Okay,
+09:11 here's the 5% that's AI specific. Point
+09:13 number one,
+09:15 revenue. Vibe revenue can kill you.
+09:18 Everybody loves five revenue. Feels so
+09:20 good. Oh my god, we have so much
+09:22 revenue. Go look at it. Okay. Is it tire
+09:26 kicking or are you actually creating
+09:27 durable behavior change? Okay. Oh, I
+09:30 don't have the metrics to do that. Yes,
+09:32 you do. Inspect the adoption, the
+09:34 engagement, the retention. What are
+09:36 people actually doing with your product?
+09:39 And don't delude yourself into thinking
+09:40 you have real revenue when you have vibe
+09:41 revenue because it'll bite you. Okay,
+09:43 the good vibes piece of this is
+09:45 important, too. Actually, real quick,
+09:46 Andrew Reed, are you in here? Vibe
+09:48 check. How we doing?
+09:51 How's everybody doing? I don't care
+09:52 about you. How's everybody
+09:53 doing? Impeccable. I heard impeccable
+09:56 vibes. Okay, good. You need good vibes
+09:57 with your customers. What does it mean?
+09:58 Your customers have to trust you and you
+09:60 have to earn that trust. Trust is more
+10:03 important than your product at this
+10:04 point in time where we are in the cycle.
+10:06 The product will get better. If they
+10:08 trust you to make it better, you're in
+10:09 good shape. If they don't trust you to
+10:11 make it better, you're in bad shape.
+10:13 Point number two, margins. We don't
+10:16 necessarily care where your gross margin
+10:17 is today. The COGS component of that is
+10:20 probably going to keep going down. You
+10:22 know, cost per token is down 99% in the
+10:24 last 12 to 18 months. That cost curve is
+10:26 going to continue. those cogs are going
+10:27 to go down. I know it's stepping up with
+10:29 test time compute and all that, but
+10:30 that's going to go down too. The price
+10:33 component of that, if you are
+10:34 successfully marching from selling a
+10:36 tool to selling an outcome and you're
+10:39 going up that value chain and you can
+10:41 capture more of that value, your price
+10:43 point is probably going to go up too.
+10:44 And so your gross margins may not be
+10:46 great today, but you should have a good
+10:48 path to really healthy gross margins
+10:50 over time. And then point number three,
+10:53 data flywheel. Raise your hand if you
+10:55 got a data
+10:57 flywheel.
+10:59 Okay, what business metric does that
+11:01 data flywheel
+11:03 move? Okay, I see less certainty. I got
+11:07 good news and I got bad news. Good news
+11:10 is if you can't answer that question, I
+11:11 still love
+11:13 you. The bad news is your data flywheel
+11:16 is
+11:17 Either you don't have a data
+11:19 flywheel or it just doesn't matter.
+11:22 It needs to tie to a business metric or
+11:25 it just doesn't matter. And this is
+11:26 really important because this is one of
+11:28 the best modes that you can
+11:30 build. Last
+11:32 slide. Who can tell me how these two
+11:34 things go
+11:37 together? I'd be really impressed if you
+11:39 can. It's not logical at all. All right.
+11:43 Nature hates a
+11:45 vacuum. There is We'll get there.
+11:51 Nature hates a vacuum. There is a
+11:53 tremendous sucking sound in the market
+11:56 right now for
+11:58 AI. All of the macroeconomic stuff,
+12:01 tariffs and interest rate noise doesn't
+12:04 matter. The rising tide of technology
+12:06 adoption absolutely swamps any of the
+12:09 volatility that you see in the markets.
+12:11 Ignore it. Okay? There is a tremendous
+12:14 sucking sound in the market and if you
+12:16 don't get in front of it, somebody else
+12:18 will because nature hates a vacuum. And
+12:22 so all the stuff we just said about
+12:24 modes and metrics and whatever
+12:25 notwithstanding, you are in a run like
+12:28 heck business right now. Now is the time
+12:30 to go at maximum velocity all of the
+12:33 time.
+12:40 Thank you, Pat. So I'm going to use my f
+12:42 my section to focus on what's happening
+12:44 with AI right now. And we'll start with
+12:46 a quick year in review both from the
+12:48 customer back and from the technology
+12:49 out. So first a year in review. Back in
+12:52 2023 we showed this chart of the ratio
+12:55 of daily to monthly active users for AI
+12:58 native applications versus for
+12:60 traditional mobile apps. And the
+13:01 punchline at the time was that AI apps
+13:03 had terrible engagement ratios. Hype
+13:05 exceeded reality in the data.
+13:08 We're very pleased to report that that
+13:10 punchline has now changed dramatically.
+13:12 It's been stunning to see, for example,
+13:14 the daily month to monthly active ratio
+13:16 for chat GPT climb the curve and now
+13:18 getting close to Reddit levels. I think
+13:20 this is extremely good news. It means
+13:22 that more and more of us are getting
+13:24 value out of AI and we're all climbing
+13:26 the ladder together on how to weave AI
+13:28 into our daily
+13:29 lives. And sometimes that usage is good
+13:32 and fun. I personally melted an
+13:34 embarrassing number of GPUs trying to
+13:35 jiblify everything. Uh but while the jib
+13:38 moment was fun and it was viral, the
+13:41 more exciting thing is all the deeper
+13:42 things that we're just uh scratching the
+13:44 surface of. So for example, advertising,
+13:46 the ability to create stunningly
+13:47 accurate and beautiful ad copy.
+13:49 Education, the ability to visualize new
+13:51 concepts with the snap of a finger.
+13:53 Healthcare, the ability to diagnose
+13:55 patients better with an app like open
+13:56 open evidence. We're just scratching the
+13:58 surface of what's possible. And as the
+13:60 AI models become more and more capable,
+14:01 the things we can do with them through
+14:03 this front door become more and more
+14:05 profound. Okay. Who here has seen the
+14:07 movie Her? Okay. Uh, and we have Brendan
+14:11 in the audience today. Um, we still
+14:13 don't have AI scar Joe, but 2024 gave us
+14:16 what I would call the her moment for
+14:18 voice. And voice generation went from
+14:20 almost there to fully crossing the
+14:21 uncanny valley. I've had a few folks say
+14:24 that, but keep your cards close to your
+14:27 chest. Let's see if I can truly blow
+14:28 your mind. You ever seen the movie Her?
+14:31 Oh, yeah. Her classic. Walking Phoenix
+14:35 really nailed that falling for your OS
+14:38 thing, right? Makes you wonder what the
+14:40 future holds.
+14:42 Sesame's voice demo was incredible,
+14:44 Brendan. I'm excited to see what you
+14:45 build. And it's crazy how quickly the
+14:47 gap between science fiction and reality
+14:49 is closing on us. And it feels like the
+14:51 touring test really just snuck up on us.
+14:53 Actually, hat tip for that to to Jim Fan
+14:55 who tweeted it and I stole it for this
+14:56 presentation. So, hi
+14:58 Jim. Um, finally, the breakout
+15:00 application category of the year was
+15:02 coding, which reached screaming product
+15:04 market fit. Anthropics Claude 35 sonnet
+15:07 dropped last fall, triggering a rapid
+15:09 vibe shift in the coding landscape. And
+15:11 people are now using AI coding for
+15:12 really impressive things. So, for
+15:14 example, this person vibe coded their
+15:15 own docend alternative. And so whether
+15:18 you're a veteran 10x engineer or
+15:20 somebody who has no idea how to code, we
+15:22 do think that AI is fundamentally
+15:23 changing the accessibility, the speed,
+15:26 and the economics of software
+15:28 creation. From the technology back, the
+15:30 bad news is that pre-training does seem
+15:32 to be slowing down. We've scaled
+15:34 pre-training by nine or 10 orders of
+15:36 magnitude since the Alexet days, and
+15:38 that means a lot of the lowhanging fruit
+15:40 has been picked. The research ecosystem
+15:42 is finding new ways to break through.
+15:44 The most important breakthrough was
+15:46 reasoning from OpenAI. We were lucky
+15:48 enough to have Noam Brown from the
+15:50 Strawberry team give us a preview of
+15:52 what was going to happen with reasoning
+15:53 at AI Ascent last year and this year
+15:55 we're happy to have Dan Roberts in the
+15:57 audience who's going to be giving
+15:58 another talk on what's happening with O3
+15:60 and reasoning ahead. But it's not just
+16:01 reasoning, it's synthetic data, it's
+16:03 tool use, it's it's aic scaffolding. All
+16:05 of these things are combining combining
+16:07 to create new ways for us to scale
+16:09 intelligence.
+16:11 Enthropics MCP created strong ecosystem
+16:13 and networks and we're also excited to
+16:15 see what that does to accelerate agentic
+16:17 tool
+16:18 use. So all of this bigger base models,
+16:21 inference time reasoning, tool use, it's
+16:24 all combining to create AI that's
+16:26 capable of increasingly sophisticated
+16:27 tasks. The meter benchmark is one good
+16:30 quantitative uh measure of this. But I
+16:32 think what's even more powerful is
+16:34 talking to each of you about the types
+16:36 of things that are only possible now
+16:37 because of 03 or operator or deep
+16:40 research or
+16:42 sonnet. And then finally, a lot of the
+16:44 most exciting technology innovation in
+16:46 AI right now is happening at that blurry
+16:48 boundary between research and product.
+16:51 And I think the two breakthrough
+16:52 examples of this over the last year were
+16:53 Deep Research and Notebook LM. And we're
+16:56 excited to have the creators of both of
+16:58 those products in the audience with us
+16:59 today. Risa and Jason from Notebook who
+17:01 are creating a new company called Hu and
+17:03 uh Issa Hulford from
+17:05 OpenAI.
+17:09 Okay, let's talk about where value will
+17:11 occur in the AI stack. I remember
+17:13 debating this question with my wonderful
+17:15 partners at Sequoia at the time. I was
+17:17 personally the the midwit in the middle
+17:19 of this uh this chart saying like ah I
+17:22 don't know about the GPG rappers. And I
+17:24 remember my partners, Pat in particular,
+17:26 were adamant that the value was going to
+17:28 acrue to the applica uh to the
+17:30 application layer. And I remember
+17:32 thinking like, okay, Pat, sure, good
+17:35 luck with that. Uh but having seen how
+17:39 the last few years have played out, I
+17:41 think you were right, Pat. Uh you belong
+17:43 over here. Good job.
+17:45 uh if you if you see where value has
+17:47 been created, if you see companies like
+17:48 Harvey and Open Evidence really creating
+17:50 that customer back value, we very much
+17:52 believe that the application layer is
+17:54 where the value will ultimately acrue
+17:56 and that the battleground is
+17:57 intensifying in this layer of the stack
+17:59 with the foundation models increasingly
+18:01 competing
+18:02 here. Okay, quick aside, the joke's
+18:04 actually on all of us because the real
+18:06 undisputed king of the stack who was
+18:08 making all the dollars was the goat
+18:10 himself, Jensen Hang, uh who we're
+18:12 excited to hear from shortly.
+18:14 Okay, back to the application
+18:19 layer. Uh we now think that the first
+18:22 cohort of AI's killer apps has emerged.
+18:24 Whether it's chat GPT, Harvey, Glean,
+18:26 Sierra, Cursor, A Bridge, but there's a
+18:29 whole set of new companies on the rise
+18:31 across a very rich and diverse set of
+18:33 end markets uh including Listen Labs,
+18:35 including Open Evidence. We're excited
+18:37 to feature many of you uh today.
+18:41 Another prediction is that many of these
+18:43 new companies will be agent first and
+18:45 that the agents these companies are
+18:46 selling will evolve from prototypes that
+18:48 are often just pieced together today to
+18:50 ones that are really robust. And we see
+18:52 two paths that companies are taking to
+18:54 build that. Uh path one orchestration
+18:56 with rigorous testing and eval path two
+18:59 agents tuned on endto-end tasks. And
+19:02 we're excited to hear more on this from
+19:03 both Harrison of Langchain and Issa of
+19:06 OpenAI today. Our next prediction on the
+19:09 shape of agent companies in 2025 is
+19:11 vertical agents. Vertical agents are a
+19:14 wonderful opportunity for startup
+19:15 founders who deeply understand a domain.
+19:17 And we see companies creating agents
+19:18 that are trained end to end to excel in
+19:21 a very specific workflow using
+19:23 techniques including reinforcement
+19:24 learning on synthetic data and user user
+19:26 data to make AI systems very performant
+19:29 at very specific tasks. And the evidence
+19:31 we've seen so far makes us really
+19:33 optimistic in security. Expo is now
+19:36 showing that they have an agent that can
+19:38 outperform human penetration testers. In
+19:40 DevOps, Traversal is showing that they
+19:42 can create an AI troubleshooter that is
+19:44 better than the best human
+19:45 troubleshooters. Um, same goes in
+19:47 networking with meter and networking
+19:48 engineers. And so all of this, all these
+19:50 data points, they're early, but they
+19:52 make us very optimistic that vertical
+19:54 agents trained to solve a very specific
+19:56 problem can outperform the best humans
+19:58 today. One final prediction on agents in
+20:01 2025. We're entering an abundance era.
+20:04 code as the first market category to tip
+20:07 will offer us a preview into what that
+20:09 abundance era actually means. What
+20:11 happens when labor is cheap and
+20:13 plentiful? Are we going to get a bunch
+20:14 of AI slop? And what happens when taste
+20:17 becomes the scarce asset? We're excited
+20:19 to see the continued progress of coding
+20:21 agents and what that does to the
+20:22 technology landscape, but also as a
+20:24 harbinger for how other industries will
+20:26 be changed by AI. I'll turn it over to
+20:29 Constantine. Thank you, Sonia. All
+20:31 right. Great job.
+20:34 with you. All right, good morning
+20:36 everyone. Thank you, Sonia. Thank you,
+20:39 Pat. So, we just talked about really big
+20:43 important topics. The so what, why does
+20:46 this matter so incredibly much. The what
+20:49 now, what's going on in the world, the
+20:51 state of AI today and its immediate
+20:53 future. Now, we're going to take a step
+20:55 back. We're going to think through
+20:58 predictions about what's coming in the
+21:01 mid and long term. In this section,
+21:03 we'll have three parts. We'll talk about
+21:05 what we see as the major next wave.
+21:08 Then, we'll get into the technology
+21:10 needed to achieve that wave. And then
+21:13 finally, we'll talk about what it means
+21:15 for each of us, our day-to-day lives. A
+21:18 year ago, AIScent was all about agents.
+21:22 We were talking about agents and they
+21:24 were just beginning to form into
+21:25 businesses. The topic was really these
+21:28 machine assistants that eventually we
+21:30 predicted would come together as machine
+21:33 networks. These machine networks are now
+21:35 broadly called agent
+21:37 swarms. They play a role in many of your
+21:40 companies and are beginning to form into
+21:43 a really critical part of the AI stack.
+21:45 Agents working with each other, against
+21:47 each other, collaborating, doing
+21:49 reasoning with each other. In the years
+21:52 to come, we think that this matures even
+21:54 further into an agent
+21:58 economy. An agent economy is one in
+22:01 which agents don't just communicate
+22:04 information. They transfer
+22:06 resources. They can make
+22:09 transactions. They keep track of each
+22:12 other. They understand trust and
+22:14 reliability. And they actually have
+22:16 their own economy.
+22:19 Well, this economy doesn't cut out
+22:21 humans. It's all about humans. The
+22:23 agents work with the people and the
+22:25 people work with the agents in this
+22:28 agent
+22:30 economy. But in order to achieve that
+22:33 very big important next wave that we're
+22:35 all going to enter, we have a lot of
+22:39 important technical challenges and we'll
+22:41 talk about three of them. Frankly, this
+22:43 room is going to be addressing those
+22:44 three as as you build. Well, the first
+22:47 is persistent identity. When when we
+22:50 talk about a persistent identity, we
+22:51 really mean two things. The first is the
+22:54 agent itself needs to be persistent. If
+22:56 you're doing business with someone and
+22:58 they change dayto-day, you you probably
+23:02 won't be doing business with them for
+23:03 very long. That dramatically different
+23:06 experience will take its toll. The agent
+23:09 is going to have to be able to persist
+23:11 on its own personality and its own
+23:13 understanding. The second type of
+23:14 persistence is understanding you.
+23:17 Similarly, if you're doing business with
+23:18 a person and they they don't remember
+23:20 anything about you, they can hardly
+23:22 remember your name, that's also a big
+23:25 challenge to trust and reliability.
+23:28 Now, we've been trying everything from
+23:30 rag and vector DBs to really long
+23:34 context windows, but everyone in this
+23:35 room knows that there are still major
+23:37 challenges in true memory and
+23:39 self-learning on that true memory and
+23:41 actually getting the agents to be able
+23:43 to be consistent where it matters and
+23:46 and only differ in the areas where they
+23:48 should be
+23:49 differing. The second major technology
+23:52 shift is we need to have seamless
+23:54 communication protocols.
+23:57 Now the great news is everyone seems to
+23:59 be focused on this now. But imagine
+24:03 personal computing without seamless
+24:06 communication protocols. No TCP IP, no
+24:10 internet. We're just now building that
+24:13 protocol layer. And there's certainly a
+24:15 lot of excitement around MCP. It's so
+24:17 great to see the big players
+24:19 collaborating and working together to
+24:22 come up with this is just one but a
+24:25 series of protocols that are going to
+24:26 allow for transfer of information,
+24:28 transfer of value, and transfer of
+24:31 trust. Finally, security. This is a
+24:34 topic that's going to be on the rise and
+24:37 is certainly on top of many of your
+24:38 minds. If you can't meet the person
+24:41 you're doing business with palm to palm,
+24:44 face to face, that importance of
+24:46 security and trust is even further
+24:48 elevated. You can't with
+24:51 agents. So, we're going to have an
+24:52 entire cottage industry formed around
+24:55 that trust, that security, and it will
+24:59 be even more important in the agent
+25:01 economy than it already is in our
+25:04 current economy.
+25:06 So, we talked about the technology
+25:07 needed to get to this big wave, to get
+25:09 to this agent economy. Now, let's talk a
+25:11 little bit about what it's going to mean
+25:12 for each of us. Well, first of all, it's
+25:16 going to change our mindsets. And and
+25:18 frankly, this room is already there on
+25:21 what we're calling the stochastic
+25:23 mindset. The stochcastic mindset is a
+25:26 departure from determinism. You know, a
+25:29 lot of us fell in love with computer
+25:30 science because it was so
+25:32 deterministic, right? You program the
+25:35 computer to do something, it does it.
+25:37 Even if that results in a sag fault.
+25:39 Now, we're entering an era of computing
+25:42 that's going to be stochastic. If you
+25:44 ask a computer to remember the number
+25:46 73, it'll remember that tomorrow, next
+25:48 week, next month. If you ask a person or
+25:52 an AI, well, it might remember 73. It
+25:56 might remember 37, 72, 74, the next
+25:60 prime, 79, or nothing at all. The point
+26:04 here is that this is going to be
+26:06 materially different thinking from what
+26:08 we've done in the decades
+26:11 past. Second change is a management
+26:15 mindset. And this management mindset is
+26:18 going to be all about understanding what
+26:20 your agents can and can't do for you.
+26:23 Everybody knows that being a really good
+26:25 IC engineer is pretty different from
+26:26 being a great engineering manager. And
+26:29 this is going to be the transition that
+26:31 most of the economy is going to make
+26:33 into more complex managerial decisions
+26:38 like blocking processes and giving
+26:41 feedback. And I really hope it doesn't
+26:43 result in year-end reviews of
+26:46 agents. Let's try to avoid that. The
+26:49 third major change for each of us is a
+26:52 combination of the previous two. way
+26:55 more leverage with significantly less
+26:58 certainty. We're entering a world where
+27:00 you can do more, but you have to be able
+27:03 to manage that uncertainty and manage
+27:05 risks. And in this
+27:08 world, everyone in this room is
+27:11 extremely well suited to thrive.
+27:14 A year ago at AIScent, we talked about
+27:18 this chart and we were talking about
+27:20 leverage because we said individual
+27:21 functions at an organization will begin
+27:25 to have AI agents. And then we predicted
+27:28 that these functions would begin to
+27:29 merge. They'd cluster and entire
+27:32 processes would be completed by AI
+27:35 agents. We even made the prediction that
+27:37 we'd have the first oneperson unicorn.
+27:40 Now, that hasn't happened yet, but we
+27:44 have seen companies scale faster than
+27:46 ever before with fewer people than ever
+27:49 before. And we do think we're going to
+27:51 get to the highest level of leverage
+27:53 that we've ever seen in this
+27:55 economy. Eventually, these processes and
+27:57 agents are going to merge. You're going
+27:59 to have neural networks within very
+28:02 large complex neural networks. A network
+28:05 of these neural
+28:06 networks. And this is going to change
+28:11 everything. It's going to reinvent
+28:13 individual
+28:14 work. It's going to
+28:17 rewire
+28:18 companies. And it's going to recreate
+28:21 the
+28:22 economy. Thank you all for joining us.
+28:25 We're going to have an amazing AI sent
+28:26 today. And we're very grateful for you
+28:28 being with us.

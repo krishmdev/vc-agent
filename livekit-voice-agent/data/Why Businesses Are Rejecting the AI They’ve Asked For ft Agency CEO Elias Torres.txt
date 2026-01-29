@@ -1,0 +1,3664 @@
+00:00 In the past, I would be like the minute
+00:02 
+
+00:02 I had something that kind of like loaded
+00:03 
+
+00:03 on your browser, like I wanted to charge
+00:05 
+
+00:05 you, you know? It's like a dollar. I was
+00:08 
+
+00:08 like, "Yes, I got a dollar." This time,
+00:10 
+
+00:10 I'm like, "I don't want your money."
+00:12 
+
+00:12 It's like, I want to know that you're
+00:13 
+
+00:13 obsessed and that is so sticky and I'm
+00:16 
+
+00:16 going to do everything at your company.
+00:18 
+
+00:18 There's so many founders that they think
+00:20 
+
+00:20 that they just because they built
+00:22 
+
+00:22 something that they got it right. People
+00:24 
+
+00:24 are delusional. People have $50 million
+00:26 
+
+00:26 in revenue and they're delusional that
+00:27 
+
+00:27 that product works. You know, this time
+00:30 
+
+00:30 around, I really want to do it right. I
+00:32 
+
+00:32 want to build something that people like
+00:34 
+
+00:34 like throwing money at me and saying
+00:36 
+
+00:36 like this is really there's nothing like
+00:38 
+
+00:38 it. This is this is my journey now.
+00:45 
+
+00:45 [Music]
+00:57 
+
+00:57 We're really excited to share today's
+00:58 
+
+00:58 episode of Training Data with you. Today
+01:00 
+
+01:00 we have Alias Torres, someone we've
+01:03 
+
+01:03 known for more than a decade across
+01:04 
+
+01:04 three companies. We first met Alias when
+01:07 
+
+01:07 he was busy rebuilding the core platform
+01:09 
+
+01:09 for HubSpot many, many years ago. After
+01:12 
+
+01:12 that, we got into business with him with
+01:14 
+
+01:14 Drift, which was his second startup. And
+01:16 
+
+01:16 then more recently, we got into business
+01:18 
+
+01:18 with Elias on agency, his third startup.
+01:21 
+
+01:21 Agency is in the midst of redefining
+01:24 
+
+01:24 customer experience. And so today, we'll
+01:27 
+
+01:27 hear a bit about what that means and
+01:29 
+
+01:29 also how to build a company in a world
+01:32 
+
+01:32 of AI. We hope you enjoy.
+01:36 
+
+01:36 Alias, welcome to the show.
+01:38 
+
+01:38 >> Thank you. I've been waiting this for
+01:40 
+
+01:40 this moment my whole life.
+01:42 
+
+01:42 >> I know you have. I know you have. uh you
+01:44 
+
+01:44 know we had we had this wonderful script
+01:46 
+
+01:46 all planned and then over the last few
+01:47 
+
+01:47 minutes we got into some real hot takes.
+01:49 
+
+01:49 Why don't we just start with the hot
+01:50 
+
+01:50 takes? Tell us what's going on in the
+01:51 
+
+01:51 world of AI.
+01:52 
+
+01:52 >> I think that um everybody's asking for
+01:55 
+
+01:55 AI. Everybody says they want it and when
+01:58 
+
+01:58 you come and bring it to them, they just
+02:00 
+
+02:00 reject it. You know, it's like the
+02:02 
+
+02:02 messiah has arrived and everybody's like
+02:04 
+
+02:04 no, we don't want it. And I I think it's
+02:06 
+
+02:06 um it's a super interesting time, right?
+02:08 
+
+02:08 because we have the best technology uh
+02:11 
+
+02:11 mankind has ever created. Uh it is so
+02:14 
+
+02:14 intelligent, it is so smart, it's so
+02:16 
+
+02:16 capable, but yet uh people are like
+02:19 
+
+02:19 demanding this level of perfection
+02:22 
+
+02:22 >> uh when they're not even able to like
+02:23 
+
+02:23 use a chat prompt to ask like a basic
+02:25 
+
+02:25 question, right?
+02:26 
+
+02:26 >> And so I think that we are completely
+02:29 
+
+02:29 misunderstanding the technology and its
+02:31 
+
+02:31 capabilities.
+02:32 
+
+02:32 >> So it's an expectation mismatch, not not
+02:35 
+
+02:35 necessarily a technological flaw. Well,
+02:38 
+
+02:38 I think I think in in some ways um we're
+02:41 
+
+02:41 used to preAI technology, right? That it
+02:43 
+
+02:43 was able to look up a a string from a
+02:46 
+
+02:46 database and it was a perfect lookup and
+02:48 
+
+02:48 a perfect match. And so I think they're
+02:50 
+
+02:50 used to that
+02:51 
+
+02:51 >> level of perfection. And so when you
+02:52 
+
+02:52 bring any possibility of of um a
+02:56 
+
+02:56 different answer or a different
+02:58 
+
+02:58 solution,
+02:59 
+
+02:59 >> I think people are struggling with that
+03:01 
+
+03:01 imperfection.
+03:01 
+
+03:01 >> So we're used to narrow functionality,
+03:04 
+
+03:04 perfect accuracy. All of a sudden, we
+03:06 
+
+03:06 have broad functionality, imperfect
+03:08 
+
+03:08 accuracy, and people are having a hard
+03:10 
+
+03:10 time with that transition.
+03:11 
+
+03:11 >> Yeah. I I think I see a lot of customers
+03:13 
+
+03:13 being like half full, you know, half
+03:16 
+
+03:16 empty.
+03:16 
+
+03:16 >> Yeah.
+03:17 
+
+03:17 >> I my approach to to AI is like if it's
+03:20 
+
+03:20 doing 10% more than I wasn't doing
+03:22 
+
+03:22 before, if it's doing 20%, 30%, I'm
+03:25 
+
+03:25 extremely happy. Like I I don't have to
+03:27 
+
+03:27 do that. It saved me time.
+03:28 
+
+03:28 >> But other people, if it's like if it's
+03:31 
+
+03:31 not 100% perfect, I rather have none.
+03:33 
+
+03:33 >> Yeah. And and I think that's a very
+03:35 
+
+03:35 dangerous take for people to take.
+03:36 
+
+03:36 >> And and actually the example that comes
+03:38 
+
+03:38 to mind is one that you've shared with
+03:39 
+
+03:39 us before which is around how you manage
+03:41 
+
+03:41 your own email.
+03:42 
+
+03:42 >> Correct.
+03:42 
+
+03:42 >> Do you care to share that example?
+03:44 
+
+03:44 >> Which one? The one that I u So let me
+03:46 
+
+03:46 see if I if I get this one right. So it
+03:48 
+
+03:48 was agency right? Agency can like read
+03:51 
+
+03:51 all my email and uh creates drafts and
+03:54 
+
+03:54 automatically like I can reply to
+03:56 
+
+03:56 everybody. So, usually what I'm doing is
+03:59 
+
+03:59 when I'm demoing the product, I let I'm
+04:01 
+
+04:01 like I open my entire inbox to the
+04:03 
+
+04:03 customers right now. It's so it's like I
+04:05 
+
+04:05 I really not to worry about it yet, I
+04:08 
+
+04:08 guess. But, uh I'm like, "Oh, I just had
+04:11 
+
+04:11 this meeting with this customer and we
+04:12 
+
+04:12 had this thing and I'm going to send
+04:14 
+
+04:14 this followup and I just I just hit the
+04:17 
+
+04:17 send button, you know, and is this the
+04:19 
+
+04:19 is this the example?" Yeah, because we
+04:20 
+
+04:20 were we were talking about um how like
+04:23 
+
+04:23 the email deluge is just untenable at
+04:26 
+
+04:26 this point and like people spend hours
+04:27 
+
+04:27 and hours a day managing their email or
+04:30 
+
+04:30 at least a lot of people do and like the
+04:32 
+
+04:32 AI product that I would love to pay for
+04:33 
+
+04:33 is one that can just take care of my
+04:34 
+
+04:34 email. We were having this conversation.
+04:36 
+
+04:36 You're like
+04:36 
+
+04:36 >> I don't spend any time managing my
+04:38 
+
+04:38 email. I actually just let agency do it
+04:39 
+
+04:39 for me.
+04:40 
+
+04:40 >> Absolutely.
+04:40 
+
+04:40 >> Which is not the point of agency, but
+04:42 
+
+04:42 it's one of the things agency can do.
+04:43 
+
+04:43 >> Yeah. And I think that's a that's a
+04:44 
+
+04:44 that's a great example. I think that
+04:46 
+
+04:46 narrows it, right? is that we generate
+04:47 
+
+04:47 these emails for customers and
+04:49 
+
+04:49 follow-ups. And the thing is that if
+04:50 
+
+04:50 you're managing, if you're trying to
+04:52 
+
+04:52 manage, you know, 500, you know,
+04:53 
+
+04:53 pipeline and you're trying to
+04:54 
+
+04:54 communicate to everybody, what's best
+04:57 
+
+04:57 that you deliver two perfect emails or
+04:60 
+
+04:60 that you send something to all 500
+05:02 
+
+05:02 prospects, right?
+05:03 
+
+05:03 >> Because they individually don't know how
+05:05 
+
+05:05 much time you're spending on it, but
+05:07 
+
+05:07 just that just say ping and like send
+05:09 
+
+05:09 that email, right, to follow up. And so
+05:11 
+
+05:11 what happens is with with my customers,
+05:13 
+
+05:13 right, is like I'm sending this messages
+05:16 
+
+05:16 and I kind of like almost don't I look
+05:18 
+
+05:18 at it I might cringe sometimes but I
+05:21 
+
+05:21 send it because partly is this I don't
+05:24 
+
+05:24 know stage of my life maybe because I'm
+05:26 
+
+05:26 old. I'm like I already know that I'm
+05:28 
+
+05:28 never going to say anything perfect. So
+05:30 
+
+05:30 if it goes out it goes out and like as
+05:33 
+
+05:33 long as I you know it's it's going to be
+05:34 
+
+05:34 fine. But the problem is I see customers
+05:37 
+
+05:37 I watch them on on recordings, right, of
+05:39 
+
+05:39 using the product for from a user
+05:40 
+
+05:40 experience perspective and I'm like,
+05:42 
+
+05:42 "Wow, this person just spent 20 minutes
+05:45 
+
+05:45 and they really didn't edit the email."
+05:48 
+
+05:48 Sometimes they're just changing the
+05:49 
+
+05:49 salutation or like they didn't like how
+05:52 
+
+05:52 it was too aggressive to say, "Here's my
+05:54 
+
+05:54 calendar link." And they were like, "And
+05:56 
+
+05:56 let me know times." And then they're
+05:58 
+
+05:58 like 20 minutes later and the email gets
+05:60 
+
+05:60 sent. And so I think that that's
+06:01 
+
+06:01 fundamentally
+06:03 
+
+06:03 why businesses can't scale today because
+06:06 
+
+06:06 there's humans in the middle, you know,
+06:08 
+
+06:08 to to add so much delay and and and
+06:11 
+
+06:11 obstacles and slowdowns in in the in the
+06:14 
+
+06:14 pursuit of delivering a customer
+06:15 
+
+06:15 experience, you know.
+06:16 
+
+06:16 >> So you're saying people are scared to
+06:18 
+
+06:18 let AI take the wheel and they should
+06:20 
+
+06:20 just let AI take the wheel? I
+06:21 
+
+06:21 >> I think so. I think we need to choose
+06:23 
+
+06:23 what really matters, you know, like kind
+06:26 
+
+06:26 of oneway doors, two-way doors. We need
+06:28 
+
+06:28 to say like is is this going to like we
+06:31 
+
+06:31 need to also have a little bit more
+06:32 
+
+06:32 leniency and forgiveness like if if an
+06:34 
+
+06:34 email goes out you know that didn't say
+06:37 
+
+06:37 exactly the right thing or hallucinated
+06:39 
+
+06:39 I think we all should be a little bit
+06:41 
+
+06:41 more forgiving and be like it's okay
+06:42 
+
+06:42 don't worry and and remove that fear
+06:44 
+
+06:44 from people. I think we both sides the
+06:47 
+
+06:47 sending and the receiving needs to be a
+06:49 
+
+06:49 little bit more um more chill.
+06:52 
+
+06:52 >> Yeah.
+06:52 
+
+06:52 >> I'm going to use that excuse next time I
+06:54 
+
+06:54 say some crazy [ __ ] that picks off that.
+06:57 
+
+06:57 Sorry, it's the AI.
+06:60 
+
+06:60 >> But isn't that what we do normally?
+07:01 
+
+07:01 >> Yeah. We say crazy [ __ ] and then it's
+07:03 
+
+07:03 like like the guy that stole the hat
+07:06 
+
+07:06 from the kid, you know, at at the US
+07:08 
+
+07:08 Open. Yes, exactly.
+07:09 
+
+07:09 >> First says some crazy [ __ ] then he says
+07:10 
+
+07:10 some other crazy [ __ ] It's a he could
+07:13 
+
+07:13 just throw an AI, too. Might as well,
+07:15 
+
+07:15 you know.
+07:16 
+
+07:16 >> Hold on. We might be sued by him right
+07:17 
+
+07:17 now.
+07:19 
+
+07:19 >> You didn't specify which guy, so I think
+07:20 
+
+07:20 we're good. Um, normally on on Trading
+07:23 
+
+07:23 Data, we don't really get into personal
+07:25 
+
+07:25 stories, but I actually think your
+07:26 
+
+07:26 personal story is pretty exceptional and
+07:28 
+
+07:28 pretty unique and so could you maybe
+07:30 
+
+07:30 just say a couple words about how your
+07:33 
+
+07:33 childhood shaped the sort of
+07:35 
+
+07:35 entrepreneur that you have become?
+07:37 
+
+07:37 >> Yeah, absolutely. I think that I am an
+07:39 
+
+07:39 engineer judge just for the sake of it.
+07:41 
+
+07:41 I've written code before, but let's talk
+07:44 
+
+07:44 about uh let's talk about the personal
+07:46 
+
+07:46 stuff. Absolutely. I think uh I grew up
+07:49 
+
+07:49 in um in Nicarawa in I would say what we
+07:52 
+
+07:52 call a communist era right so very
+07:55 
+
+07:55 little third world country you know I I
+07:58 
+
+07:58 I still have a shock I go into people's
+08:01 
+
+08:01 homes not that I go without like I do
+08:03 
+
+08:03 like they invite me you know just make
+08:05 
+
+08:05 sure I get confused we're not breaking
+08:06 
+
+08:06 in I get conf we're not breaking in here
+08:08 
+
+08:08 but uh then um I go in and like I open
+08:12 
+
+08:12 the fridge and it's just like just full
+08:14 
+
+08:14 of food Americans just like boxes and
+08:18 
+
+08:18 boxes and snacks and and more. Every
+08:21 
+
+08:21 every drawer you open if you came to my
+08:23 
+
+08:23 house in Nicaragua,
+08:25 
+
+08:25 everything was empty. Like the only
+08:27 
+
+08:27 things that would be in there is like a
+08:28 
+
+08:28 few pots and pans. Like I literally
+08:30 
+
+08:30 remember this as a kid be like there's
+08:32 
+
+08:32 absolutely nothing to eat. There would
+08:35 
+
+08:35 be like, you know, just the food that
+08:37 
+
+08:37 you were going to make for that meal
+08:39 
+
+08:39 kind of thing. It's like it's like just
+08:41 
+
+08:41 in time, you know, and so that's just
+08:43 
+
+08:43 it's a lot of scarcity, right? And so
+08:45 
+
+08:45 you grow up with um you know remember
+08:47 
+
+08:47 telling my mother we'd be like I would
+08:50 
+
+08:50 ask for things and one time my mom said
+08:52 
+
+08:52 something like I would give you anything
+08:54 
+
+08:54 I have anything I could if I'm not
+08:57 
+
+08:57 giving it to you because I can't. So and
+08:59 
+
+08:59 so I learned to ask like mom if you can
+09:02 
+
+09:02 buy me this gift you know if you can't
+09:04 
+
+09:04 buy me this. So it's just like a
+09:06 
+
+09:06 completely different um uh world than
+09:10 
+
+09:10 the world that we live in in a first
+09:12 
+
+09:12 world country um America you know
+09:15 
+
+09:15 greatest country in the world you know
+09:17 
+
+09:17 it's so then uh but then it's like uh
+09:20 
+
+09:20 and then how we're living today right
+09:22 
+
+09:22 and a lot of people are like at least
+09:23 
+
+09:23 the world that I'm living in today is
+09:25 
+
+09:25 just like the extreme opposite of that.
+09:27 
+
+09:27 >> Yeah. What was your first job
+09:29 
+
+09:29 >> pre IBM? I mean, your actual first job
+09:33 
+
+09:33 that you got paid any sort of money for
+09:34 
+
+09:34 for doing any sort of work?
+09:37 
+
+09:37 >> I think there's a competition. The one
+09:38 
+
+09:38 that sounds better is the one I was like
+09:40 
+
+09:40 cleaning the offices with my mother. Uh,
+09:42 
+
+09:42 but at this we did both. I was working
+09:44 
+
+09:44 at McDonald's and cleaning offices when
+09:47 
+
+09:47 we first came to this country that that
+09:49 
+
+09:49 I got paid. I was 17 years old.
+09:51 
+
+09:51 >> And I remember you told me your mom had
+09:53 
+
+09:53 a laptop and you became tech support and
+09:56 
+
+09:56 this is how you got introduced to
+09:57 
+
+09:57 technology. that that was uh that was
+09:59 
+
+09:59 pre- United States. So, well, I I I came
+10:02 
+
+10:02 I spent two years with my father. I
+10:04 
+
+10:04 didn't grow up with my dad and uh he
+10:06 
+
+10:06 bought this like computer. I don't know.
+10:09 
+
+10:09 It's like, you know, people would bring
+10:10 
+
+10:10 him stuff that I don't know where it
+10:12 
+
+10:12 came from. Uh yeah, it was stolen. And
+10:14 
+
+10:14 so, he would buy stuff and um and he
+10:16 
+
+10:16 would just bring it home. And so, the
+10:19 
+
+10:19 thing that caught my attention, I have a
+10:20 
+
+10:20 half brother and and he just loved
+10:22 
+
+10:22 fixing cars. And then my dad brought
+10:24 
+
+10:24 this computer and my my half brother did
+10:26 
+
+10:26 not look at it. I don't know if it was a
+10:28 
+
+10:28 drawn by it or drawn the fact that my
+10:30 
+
+10:30 brother wasn't using it and I just
+10:33 
+
+10:33 started using word perk and and like
+10:35 
+
+10:35 Lotus 123 in the 80s. I was like in
+10:38 
+
+10:38 sixth, seventh grade. I did junior high
+10:39 
+
+10:39 in LA. Uh and uh I just love like like
+10:45 
+
+10:45 typing on that thing and trying to get
+10:46 
+
+10:46 the printer to work. No internet, no
+10:49 
+
+10:49 communication, no user group. I just me
+10:52 
+
+10:52 in the garage is just trying to figure
+10:53 
+
+10:53 this thing out.
+10:54 
+
+10:54 >> Yeah. And then when I went back to
+10:56 
+
+10:56 Nicaragua, my mother had a laptop. I
+10:58 
+
+10:58 show up in Nicaragua in the 80s and my
+10:60 
+
+10:60 mom has a laptop. She's she's a um a
+11:03 
+
+11:03 professor. She's a you know, PhD, a
+11:05 
+
+11:05 veterinarian at the university. And she
+11:07 
+
+11:07 has a laptop. And I'm just like, why do
+11:09 
+
+11:09 you have a lap? This is Nicaragua. And
+11:12 
+
+11:12 and so I started helping her and being
+11:14 
+
+11:14 like her tech support at the university.
+11:16 
+
+11:16 >> Mostly I just broke the computer and
+11:18 
+
+11:18 then I would take it to it to get it
+11:19 
+
+11:19 fixed.
+11:20 
+
+11:20 And then your first job
+11:23 
+
+11:23 kind of post university was IBM. Is that
+11:26 
+
+11:26 right?
+11:26 
+
+11:26 >> Absolutely. Yeah.
+11:27 
+
+11:27 >> And um we don't need to talk about IBM
+11:30 
+
+11:30 necessarily, but tell me about the
+11:31 
+
+11:31 moment that you met David Canel.
+11:33 
+
+11:33 >> Yeah. I I think I I I worked at IBM with
+11:35 
+
+11:35 an amazing group of people. I I'll say
+11:38 
+
+11:38 that my first 1999, my first project at
+11:41 
+
+11:41 IBM, I was building a chatbot that you
+11:43 
+
+11:43 could look up look up people's phone
+11:45 
+
+11:45 numbers. uh this called like blue pages
+11:48 
+
+11:48 like instead of yellow pages at IBM
+11:51 
+
+11:51 and I learned so much. I built so much.
+11:54 
+
+11:54 It was an amazing thing but I just got
+11:56 
+
+11:56 fed up. 400,000 people, you cannot make
+11:60 
+
+11:60 a huge impact in that company. It's just
+12:02 
+
+12:02 too political. Uh I imagine me and the
+12:04 
+
+12:04 400,000 person organization. And so I
+12:07 
+
+12:07 just kept trying to uh I kept making
+12:09 
+
+12:09 connections in Boston and the tech in
+12:11 
+
+12:11 the tech scene. It took me a long time.
+12:14 
+
+12:14 Then I finally met David and um first I
+12:18 
+
+12:18 never seen another another Hispanic
+12:20 
+
+12:20 Latino in tech, you know, I was like,
+12:21 
+
+12:21 "Okay, like I liked him. I I felt like I
+12:25 
+
+12:25 trusted him more to join his startup
+12:27 
+
+12:27 because a lot of people were asking me
+12:29 
+
+12:29 to join their startups and I did not
+12:30 
+
+12:30 know how to choose one. I chose him
+12:33 
+
+12:33 because I just felt comfortable, you
+12:35 
+
+12:35 know, I felt that he he understood me
+12:37 
+
+12:37 and that I could trust him. And um and
+12:40 
+
+12:40 the first thing he did is like he
+12:42 
+
+12:42 offered me to take over his prior job at
+12:44 
+
+12:44 some other company. And I was like
+12:47 
+
+12:47 uh what what do you mean just be VP of
+12:50 
+
+12:50 engineering at your company? But in the
+12:52 
+
+12:52 end, I really decided to join him uh in
+12:54 
+
+12:54 the in the in this company called
+12:56 
+
+12:56 Lookery. It was my first tech startup
+12:58 
+
+12:58 because I needed to try something
+13:01 
+
+13:01 outside of uh of IBM.
+13:03 
+
+13:03 >> Yeah. What was it like going from
+13:04 
+
+13:04 400,000 people to 40 people or whatever?
+13:07 
+
+13:07 >> No, it was like 10.
+13:08 
+
+13:08 >> There you go.
+13:09 
+
+13:09 >> Uh I was working I had a desk and I
+13:12 
+
+13:12 lived in Lowel, Massachusetts. I had a
+13:14 
+
+13:14 desk in my bedroom. So I would get up
+13:17 
+
+13:17 and sit down and I would just work 24/7.
+13:21 
+
+13:21 like it was like that that that stage of
+13:24 
+
+13:24 my life was like three babies in diapers
+13:28 
+
+13:28 uh working 24/7
+13:31 
+
+13:31 uh just it was so exhausting like
+13:34 
+
+13:34 literally I was like the main engineer
+13:36 
+
+13:36 in the company and I had to build
+13:38 
+
+13:38 everything so I went from building stuff
+13:40 
+
+13:40 that nobody care nobody used at IBM and
+13:43 
+
+13:43 they're like to like I was the sole
+13:46 
+
+13:46 person responsible uh but it was it was
+13:49 
+
+13:49 the best not I have many best times.
+13:52 
+
+13:52 Sorry. It was the it was when I started
+13:54 
+
+13:54 using AWS.
+13:56 
+
+13:56 >> Ah,
+13:56 
+
+13:56 >> and I started using the cloud and it was
+13:59 
+
+13:59 mindboggling from like ordering and
+14:01 
+
+14:01 buying blade servers and requesting
+14:03 
+
+14:03 stuff through IBM, you know, procurement
+14:05 
+
+14:05 systems to do anything to like pushing a
+14:08 
+
+14:08 button S3 and ECS uh EC2 and it was like
+14:14 
+
+14:14 I was just blown away that I could be
+14:15 
+
+14:15 this one person orchestrating and
+14:18 
+
+14:18 building everything without needing
+14:19 
+
+14:19 anybody.
+14:20 
+
+14:20 >> Yeah. So that was a huge unlock.
+14:22 
+
+14:22 >> And then you guys started Performable.
+14:24 
+
+14:24 So that was your first company that you
+14:26 
+
+14:26 founded. Agency is your third company
+14:28 
+
+14:28 that you founded. Um you guys started
+14:30 
+
+14:30 Performable and after a few years joined
+14:33 
+
+14:33 HubSpot, which is where we intersected.
+14:36 
+
+14:36 >> Yeah.
+14:36 
+
+14:36 >> And for people's benefit, um and I think
+14:39 
+
+14:39 Brian and Dash would agree with this
+14:41 
+
+14:41 characterization. HubSpot in the early
+14:43 
+
+14:43 days had an amazing story and like an
+14:45 
+
+14:45 okay product. And then you and David
+14:48 
+
+14:48 joined with your team from performable.
+14:50 
+
+14:50 And originally the mandate was to build
+14:52 
+
+14:52 out a particular piece of the product,
+14:54 
+
+14:54 but then you ended up with
+14:55 
+
+14:55 responsibility for the whole thing and
+14:57 
+
+14:57 rebuilt it from scratch and sort of the
+14:59 
+
+14:59 second phase of HubSpot thanks to you
+15:01 
+
+15:01 guys was great story, great product. Can
+15:04 
+
+15:04 you say a couple words about what it was
+15:06 
+
+15:06 like joining HubSpot and then sort of
+15:10 
+
+15:10 how over the time you were there you you
+15:13 
+
+15:13 managed not only to scale with the
+15:14 
+
+15:14 organization but to kind of like
+15:16 
+
+15:16 reinvent it in some ways.
+15:18 
+
+15:18 >> To me professionally it was a big
+15:20 
+
+15:20 breakout moment. you know, you go from
+15:23 
+
+15:23 from tinkering with computers and we're
+15:26 
+
+15:26 perfect and or like launching a few EC2
+15:29 
+
+15:29 instances and and building a few web
+15:31 
+
+15:31 apps to to really having to support
+15:34 
+
+15:34 5,000 customers. I went from like 20
+15:37 
+
+15:37 customers at performable to like 5,000
+15:39 
+
+15:39 customers immediately.
+15:42 
+
+15:42 And that was a shocker to me because
+15:44 
+
+15:44 one, what I care more about is customer
+15:47 
+
+15:47 experience, right? My customers at
+15:49 
+
+15:49 Performable would text me and they would
+15:51 
+
+15:51 say this is broken. And I would open my
+15:53 
+
+15:53 computer, edit the code and say reload.
+15:56 
+
+15:56 When you have 5,000 customers, you can't
+15:58 
+
+15:58 do that. So I had to learn how to scale
+16:01 
+
+16:01 in every sense of the word, right? We
+16:03 
+
+16:03 had we had a huge urgency. We had major
+16:06 
+
+16:06 major churn. Uh the product did not work
+16:09 
+
+16:09 at all. Uh and the team did not function
+16:13 
+
+16:13 either. So we had to like rebuild the
+16:15 
+
+16:15 team, rebuild the product and rebuild
+16:17 
+
+16:17 the trust with the customers, right?
+16:19 
+
+16:19 That this product was going to actually
+16:20 
+
+16:20 achieve, you know, uh what what it was
+16:23 
+
+16:23 going to do and I also had to learn how
+16:26 
+
+16:26 to scale myself as a leader and the most
+16:28 
+
+16:28 important thing I would say that I
+16:30 
+
+16:30 learned there was like hiring at scale.
+16:32 
+
+16:32 >> I was going to ask you about that
+16:33 
+
+16:33 actually because you I believe you hired
+16:35 
+
+16:35 Andrew Bleki.
+16:36 
+
+16:36 >> Yeah.
+16:36 
+
+16:36 >> Um before he started Clavio. I believe
+16:38 
+
+16:38 you hired Christopher O'Donnell. Yeah.
+16:40 
+
+16:40 you know, before he went on to build
+16:42 
+
+16:42 HubSpot CRM and and start a company of
+16:44 
+
+16:44 his own. I believe he had a handful of
+16:47 
+
+16:47 really exceptional hires. And it's not
+16:50 
+
+16:50 obvious that a midstage marketing
+16:53 
+
+16:53 software company in Boston would be able
+16:55 
+
+16:55 to attract such great people. And so I'm
+16:58 
+
+16:58 curious like what were you looking for
+16:60 
+
+16:60 in people that you hired? And then maybe
+17:02 
+
+17:02 what did you do to help them sort of
+17:06 
+
+17:06 have such growth in their careers?
+17:09 
+
+17:09 I think I think so many people are
+17:10 
+
+17:10 exceptional and it's a combination of
+17:12 
+
+17:12 giving them a chance and also role
+17:14 
+
+17:14 modeling after them. Uh what what
+17:17 
+
+17:17 becoming an outlier really really means
+17:20 
+
+17:20 and so I I I would say like
+17:24 
+
+17:24 am I as successful as I am because of
+17:26 
+
+17:26 who I was so early or is because a lot
+17:29 
+
+17:29 of people also shaped me along the way
+17:31 
+
+17:31 to teach me what was possible, right?
+17:34 
+
+17:34 and and made me want to go after and
+17:36 
+
+17:36 accomplish those same things like just
+17:37 
+
+17:37 like Brian and Dsh for example, right?
+17:39 
+
+17:39 Yeah.
+17:39 
+
+17:39 >> And so I think all these people uh
+17:41 
+
+17:41 there's so many people there's there's
+17:42 
+
+17:42 Whitney, there's Jared, current EVP at
+17:45 
+
+17:45 HubSpot that is still there running the
+17:47 
+
+17:47 the entire system.
+17:48 
+
+17:48 >> I forgot about Whitney. Yeah, good
+17:49 
+
+17:49 point.
+17:50 
+
+17:50 >> There there's a few more, right?
+17:52 
+
+17:52 Amazing. Not that I'm like keeping track
+17:53 
+
+17:53 of them, but
+17:55 
+
+17:55 it just it just makes me really proud
+17:57 
+
+17:57 like to have people that I've been able
+17:59 
+
+17:59 to influence their lives and their
+18:01 
+
+18:01 careers, right? Uh, but it was it was
+18:04 
+
+18:04 really um they were at the places where
+18:07 
+
+18:07 I was. I was at a garage just tinkering
+18:10 
+
+18:10 with Word Perfect. They were doing, you
+18:12 
+
+18:12 know, the crappiest jobs that you could
+18:15 
+
+18:15 possibly think of.
+18:16 
+
+18:16 >> Yeah.
+18:16 
+
+18:16 >> And so my my thing is I give people a a
+18:20 
+
+18:20 shot, right? And I can, you know, test
+18:21 
+
+18:21 their intelligence from the
+18:23 
+
+18:23 conversation, see if they can keep up,
+18:25 
+
+18:25 see if they have um u hunger, they have
+18:28 
+
+18:28 grit, and then just bringing them along
+18:30 
+
+18:30 for the ride. And then they get to
+18:32 
+
+18:32 choose the path that they they take
+18:33 
+
+18:33 after. Right. Yeah. And so I think that
+18:36 
+
+18:36 I just I don't hire for credentials. I
+18:38 
+
+18:38 don't hire for where you came from, what
+18:41 
+
+18:41 you said you did. And I actually like if
+18:43 
+
+18:43 you have all that stuff, I'm kind of
+18:45 
+
+18:45 like rule you out immediately.
+18:47 
+
+18:47 >> Suspicious.
+18:47 
+
+18:47 >> It's just it's sus. Totally sus.
+18:50 
+
+18:50 >> Yeah.
+18:51 
+
+18:51 >> Let's talk about Drift real quick just
+18:53 
+
+18:53 because. So startup number one,
+18:55 
+
+18:55 Performable. Startup number two, Drift,
+18:58 
+
+18:58 which again was you and and David Canel.
+19:01 
+
+19:01 And I know that your experience at Drift
+19:03 
+
+19:03 helped to shape the idea for agency. So,
+19:06 
+
+19:06 can you just say a word about what was
+19:08 
+
+19:08 Drift and what aspects of Drift kind of
+19:11 
+
+19:11 gave you the insight for agency, which
+19:13 
+
+19:13 you're building now?
+19:14 
+
+19:14 >> I mean, I think that um uh the thing
+19:17 
+
+19:17 that we learned at HubSpot was time to
+19:20 
+
+19:20 value, right? It's like how long does it
+19:24 
+
+19:24 take for the customer to experience the
+19:26 
+
+19:26 value in the product that you're
+19:27 
+
+19:27 building for them and and at HubSpot it
+19:29 
+
+19:29 takes a long time. You have to build
+19:31 
+
+19:31 blogs, you have to build ranking in in
+19:33 
+
+19:33 SEO and Google and you have to get leads
+19:36 
+
+19:36 and you have to become a brand. So it's
+19:38 
+
+19:38 you're being you're you're coaching the
+19:39 
+
+19:39 customer from day one to like
+19:42 
+
+19:42 you know like we're in here for a
+19:44 
+
+19:44 journey and and and at a low price which
+19:46 
+
+19:46 is an unbelievable achievement for Hepot
+19:49 
+
+19:49 to be at the revenue that it is today
+19:50 
+
+19:50 right at the scale. But I would say that
+19:53 
+
+19:53 uh at Drift we were kind of like
+19:55 
+
+19:55 something I always kept thinking with
+19:56 
+
+19:56 David and we were like how can we get
+19:58 
+
+19:58 time to value and so we we were patient
+20:01 
+
+20:01 in the beginning. We spent about two
+20:03 
+
+20:03 years wandering through the desert
+20:05 
+
+20:05 trying to figure out like what should we
+20:07 
+
+20:07 work on? That was
+20:08 
+
+20:08 >> Yeah, I remember it began as HR
+20:09 
+
+20:09 software.
+20:09 
+
+20:09 >> Oh my god. Yeah, let's not talk about
+20:11 
+
+20:11 that.
+20:15 
+
+20:15 God, there's a bad joke in there. So, we
+20:17 
+
+20:17 were we were trying to do like glass
+20:18 
+
+20:18 door. It was like a secret uh app at
+20:21 
+
+20:21 that time. Remember secret? Uh people
+20:23 
+
+20:23 could say like secretly like anonymously
+20:26 
+
+20:26 what's going on at their company. Yeah,
+20:28 
+
+20:28 >> cuz we were using we were obsessed with
+20:29 
+
+20:29 team dynamics and culture at HubSpot.
+20:32 
+
+20:32 >> But then we we kept pivoting and
+20:34 
+
+20:34 pivoting like we would pivot like every
+20:36 
+
+20:36 month. Every time Pat would stop by in
+20:37 
+
+20:37 Boston to see us like so what are you
+20:39 
+
+20:39 guys working on? Oh, a new Dropbox. It's
+20:42 
+
+20:42 like what are you doing now? A new
+20:44 
+
+20:44 Pinterest. What about now? Survey
+20:47 
+
+20:47 Monkey. It's it's like literally every
+20:49 
+
+20:49 month I would just tell the team that
+20:51 
+
+20:51 was not a good idea. We're going to try
+20:53 
+
+20:53 another one. So one, we spent two years
+20:55 
+
+20:55 being super patient and finding
+20:56 
+
+20:56 something we want. And the thing that I
+20:58 
+
+20:58 realized is like you got to go back to
+20:60 
+
+21:00 what you know. You experience compounds
+21:04 
+
+21:04 and you got to just like stick with it.
+21:05 
+
+21:05 And so we we we went on a huge diversion
+21:10 
+
+21:10 and then came back to like closer and
+21:12 
+
+21:12 closer and closer to the app, to
+21:14 
+
+21:14 service, to customer, and and we were
+21:16 
+
+21:16 like where we were next door to HubSpot.
+21:18 
+
+21:18 So we were not going to do marketing and
+21:20 
+
+21:20 we were not gonna I was not gonna build
+21:21 
+
+21:21 another CRM. And they was like no. And
+21:24 
+
+21:24 so we started focusing in from support
+21:26 
+
+21:26 then we went in app and then we went
+21:29 
+
+21:29 back to leads and and the idea was to if
+21:33 
+
+21:33 you could deploy this that can
+21:34 
+
+21:34 immediately start getting you more leads
+21:36 
+
+21:36 without any human effort. That was a
+21:38 
+
+21:38 scaling point, right? And automation,
+21:41 
+
+21:41 right? So we we had a chatbot that would
+21:44 
+
+21:44 be the the receptionist the the welcome
+21:47 
+
+21:47 uh reception at at your on your
+21:48 
+
+21:48 homepage. Instead of asking you to fill
+21:50 
+
+21:50 out a form, it could ask you questions.
+21:51 
+
+21:51 you can inform you, deliver you some
+21:53 
+
+21:53 value, book a calendar meeting, uh route
+21:56 
+
+21:56 it to the right rep and and send a
+21:58 
+
+21:58 notification to the cell phone of the of
+21:60 
+
+21:60 the rep and just make connections faster
+22:03 
+
+22:03 and and remove the friction and and that
+22:06 
+
+22:06 was fantastic, right? That worked,
+22:07 
+
+22:07 right? I think that that helped us take
+22:09 
+
+22:09 off. We did many things right, but the
+22:12 
+
+22:12 reality uh this product was shallow,
+22:15 
+
+22:15 right? in that it wasn't too deeply
+22:18 
+
+22:18 penetrated because it was only solving
+22:20 
+
+22:20 one basic step in the customer journey.
+22:23 
+
+22:23 It only did like the first connection.
+22:26 
+
+22:26 >> Yeah.
+22:28 
+
+22:28 >> But the problem that aroused then after
+22:30 
+
+22:30 is like everybody would be like, well, I
+22:33 
+
+22:33 came back to the website. Why doesn't it
+22:34 
+
+22:34 recognize? What does it pick up where it
+22:37 
+
+22:37 left off? I already had this
+22:38 
+
+22:38 conversation. I already explained this.
+22:41 
+
+22:41 How come when I'm inside the app, it
+22:43 
+
+22:43 doesn't know, you know, what I said
+22:45 
+
+22:45 before, my support tickets and my
+22:47 
+
+22:47 whatever, right? And so there was this
+22:50 
+
+22:50 >> this dream I had of like how could we
+22:52 
+
+22:52 always know everything about the
+22:54 
+
+22:54 customer and how could we always apply
+22:56 
+
+22:56 that information
+22:58 
+
+22:58 >> in every exchange that we have should we
+23:00 
+
+23:00 should know our customer, right? And so
+23:02 
+
+23:02 it was a pain that we didn't have the
+23:04 
+
+23:04 technology to be able to deliver that.
+23:06 
+
+23:06 >> Y
+23:06 
+
+23:06 >> and so uh I think that was one struggle.
+23:09 
+
+23:09 The other struggle I would say was that
+23:12 
+
+23:12 we
+23:15 
+
+23:15 we built quickly, we built brand, we
+23:17 
+
+23:17 build product, we have amazing speed to
+23:19 
+
+23:19 market. Uh
+23:22 
+
+23:22 but then we didn't have the ability to
+23:25 
+
+23:25 scale like the you know here we always
+23:28 
+
+23:28 think like well just just hire more
+23:29 
+
+23:29 bodies and and just raise more money.
+23:33 
+
+23:33 Don't worry about spending and just like
+23:35 
+
+23:35 it it'll resolve itself out. we can
+23:37 
+
+23:37 always scale it later and and I think
+23:40 
+
+23:40 that that's fundamentally flawed and I
+23:42 
+
+23:42 don't know if people still get that to
+23:45 
+
+23:45 tell you the truth
+23:46 
+
+23:46 >> in the in this age of AI. I think that
+23:48 
+
+23:48 is the whole point
+23:50 
+
+23:50 >> uh of AI is to prove that out but other
+23:52 
+
+23:52 people are like just hire we'll worry
+23:54 
+
+23:54 about it later. And I think that that
+23:55 
+
+23:55 was my biggest lesson at Drift that I
+23:60 
+
+23:60 always like talking to my customers. I
+24:02 
+
+24:02 always like
+24:03 
+
+24:03 to text me, call me. I just I'm an
+24:06 
+
+24:06 extrovert and I I just thrive on that uh
+24:10 
+
+24:10 on relationships and um when we got to
+24:13 
+
+24:13 the point when we started having
+24:14 
+
+24:14 thousands and thousands of customers at
+24:16 
+
+24:16 Drift, I just could no longer talk to
+24:19 
+
+24:19 them, right? I could no longer know
+24:21 
+
+24:21 them. And and usually when when a CSM
+24:24 
+
+24:24 calls you because it's a churn of
+24:26 
+
+24:26 somebody that I might have emailed once
+24:29 
+
+24:29 commonly hasn't saved this churn,
+24:31 
+
+24:31 it's just too late.
+24:32 
+
+24:32 >> Yeah,
+24:33 
+
+24:33 >> you can't do that. I mean, I might have
+24:35 
+
+24:35 a success rate of like 20% if I promise
+24:38 
+
+24:38 them the world and I'm going to be there
+24:39 
+
+24:39 for you. That's shallow. That's that's
+24:42 
+
+24:42 hypocritical. That's that's not the
+24:44 
+
+24:44 truth, you know. And so I I felt that
+24:46 
+
+24:46 pain uh intimately of
+24:50 
+
+24:50 what happens when you scale and what
+24:52 
+
+24:52 happens when you have 800 people 600 I
+24:56 
+
+24:56 keep track you know and it's just like
+24:59 
+
+24:59 uh you spend more time managing the
+25:01 
+
+25:01 people their promotions their growth
+25:04 
+
+25:04 their on boarding their recruiting their
+25:05 
+
+25:05 entertainment the town halls and I think
+25:08 
+
+25:08 that just consumed us and and realized
+25:12 
+
+25:12 that that took our eyes from the ball of
+25:14 
+
+25:14 the customer and the product. And I
+25:15 
+
+25:15 think that that's where we we we paid
+25:17 
+
+25:17 the price and not being able to build a
+25:18 
+
+25:18 a legendary company as we we dreamed to
+25:21 
+
+25:21 to build from the beginning.
+25:22 
+
+25:22 >> And and Drift, you know, Drift was
+25:24 
+
+25:24 ultimately still worth more than a
+25:26 
+
+25:26 billion dollars. And so, you know, your
+25:28 
+
+25:28 second first startup success, you know,
+25:31 
+
+25:31 joined HubSpot, second startup success
+25:33 
+
+25:33 of greater magnitude. And at that point,
+25:37 
+
+25:37 you know, you're you're kind of like a
+25:38 
+
+25:38 walking example of the American dream.
+25:40 
+
+25:40 You know, like you came to this country
+25:41 
+
+25:41 with nothing and through smarts and
+25:42 
+
+25:42 hustle and sheer force of will, you
+25:44 
+
+25:44 know, you built these amazing things and
+25:46 
+
+25:46 put your life in a totally different
+25:48 
+
+25:48 position for, you know, for you and your
+25:50 
+
+25:50 family. You could have ridden off into
+25:51 
+
+25:51 the sunset and just like called it a
+25:54 
+
+25:54 called it a career. Like why why do it
+25:57 
+
+25:57 all over again?
+25:59 
+
+25:59 >> Well, I did I did ride into the sunset.
+26:01 
+
+26:01 I I did that for like seven months. I
+26:03 
+
+26:03 think that people did, you know,
+26:04 
+
+26:04 traveled the world, did all this stuff,
+26:06 
+
+26:06 but it's a is it's extremely empty and
+26:08 
+
+26:08 boring, I would say. Uh, but I I was I
+26:11 
+
+26:11 was kite surfing in in in Tatoua,
+26:14 
+
+26:14 Jericho in Brazil, you know, with some
+26:17 
+
+26:17 friends.
+26:19 
+
+26:19 Majestic place. This is the first time
+26:20 
+
+26:20 I'm actually disconnecting. Like, this
+26:22 
+
+26:22 is my first trip after I leave drift.
+26:25 
+
+26:25 And I'm like, wow. I have no meetings. I
+26:28 
+
+26:28 have nothing to do. And I'm just like
+26:29 
+
+26:29 the whole morning we're just staring in
+26:32 
+
+26:32 this like cababana just looking at this
+26:33 
+
+26:33 ocean, empty beaches. It's a very remote
+26:36 
+
+26:36 area in in the north uh north east of
+26:40 
+
+26:40 Brazil and uh I'm like wow I need to
+26:43 
+
+26:43 learn how to meditate and how to just be
+26:46 
+
+26:46 one with nature. And in the afternoon we
+26:48 
+
+26:48 would go kite surfing and then chachi
+26:51 
+
+26:51 launches you know and I'm just like
+26:54 
+
+26:54 showing everybody and explain and I
+26:55 
+
+26:55 don't even know how to explain. It's
+26:56 
+
+26:56 like how does he know how to answer
+26:58 
+
+26:58 this? and and and and so the first day
+27:01 
+
+27:01 that I'm off really mentally is the day
+27:05 
+
+27:05 Chad GPT launches and I'm just like this
+27:07 
+
+27:07 is the greatest moment in in in in
+27:09 
+
+27:09 mankind and I'm just like [ __ ] I got to
+27:12 
+
+27:12 go back in you know it's like I I feel
+27:14 
+
+27:14 like I worked all my life I always
+27:16 
+
+27:16 considered myself an imposttor uh not
+27:18 
+
+27:18 anymore you know that's we we've
+27:21 
+
+27:21 achieved that but the thing is like all
+27:23 
+
+27:23 my life I'm like I didn't go to this
+27:25 
+
+27:25 school I I didn't build in the valley
+27:27 
+
+27:27 I'm in Austin, this company fails. It's
+27:29 
+
+27:29 only, you know, this all this stuff. And
+27:31 
+
+27:31 I'm like, I didn't have enough because
+27:33 
+
+27:33 of this. I didn't have this network. I
+27:34 
+
+27:34 didn't know investors. I didn't know
+27:36 
+
+27:36 this. I didn't know English. And now I'm
+27:38 
+
+27:38 like, I I [ __ ] know everything. It's
+27:40 
+
+27:40 like I know everybody. I know I built
+27:43 
+
+27:43 the systems enough to prove to millions
+27:45 
+
+27:45 of users and this and that and revenue,
+27:48 
+
+27:48 sales, and I'm not just going to sit
+27:50 
+
+27:50 here when all these people that don't
+27:52 
+
+27:52 know anything are like building AI
+27:54 
+
+27:54 startups. [ __ ] no. I'm just I'm jumping
+27:56 
+
+27:56 back in. You know, it's so like uh I I
+27:59 
+
+27:59 was like this is the moment. And I I
+28:02 
+
+28:02 will say the the the cheesy cringy
+28:04 
+
+28:04 answer to this is also as a Latino I
+28:07 
+
+28:07 feel an obligation.
+28:09 
+
+28:09 >> You know, it's like
+28:11 
+
+28:11 most people would die to be in the
+28:13 
+
+28:13 position that I that I am in right now.
+28:16 
+
+28:16 and to squander going back to that day
+28:18 
+
+28:18 in my house in Nicaragua with no food to
+28:20 
+
+28:20 squander resources and opportunity and
+28:23 
+
+28:23 just so like time earned, work earned,
+28:27 
+
+28:27 you know, to just sit around and just
+28:31 
+
+28:31 kite surf in Brazil, you know, or like
+28:34 
+
+28:34 surf in Fiji or I just think it's a
+28:37 
+
+28:37 waste. Like while I'm on this earth, I
+28:39 
+
+28:39 have to do something. And then going
+28:40 
+
+28:40 back to being a role model, people want
+28:43 
+
+28:43 to see what what someone that looks like
+28:45 
+
+28:45 you is capable of achieving. And and I'm
+28:48 
+
+28:48 like, I can't sit this this one out,
+28:51 
+
+28:51 right? And so that's when I like called
+28:53 
+
+28:53 you and I'm like, can I come to base
+28:55 
+
+28:55 camp? Can I get like reconnected, fired
+28:57 
+
+28:57 up with this stuff? I think I came to AI
+28:59 
+
+28:59 uh ascent
+29:01 
+
+29:01 and and and that's when the moment it
+29:03 
+
+29:03 was like, let's [ __ ] go.
+29:05 
+
+29:05 >> Yeah.
+29:05 
+
+29:05 >> You know,
+29:06 
+
+29:06 >> yeah. Early 2023, I remember you came to
+29:07 
+
+29:07 AI Ascent and then you started talking
+29:09 
+
+29:09 with OpenAI.
+29:10 
+
+29:10 >> Yes.
+29:11 
+
+29:11 >> And one of the problems they were having
+29:13 
+
+29:13 was they had all these enterprises whose
+29:15 
+
+29:15 immediate thought was, can we deploy
+29:17 
+
+29:17 this thing in a customerf facing way?
+29:19 
+
+29:19 Kind of like the drift business in some
+29:21 
+
+29:21 ways. And so I remember you kind of jump
+29:24 
+
+29:24 back in on that and then evolve the idea
+29:27 
+
+29:27 into what agency has become, which is
+29:30 
+
+29:30 very different. And can you just say a
+29:31 
+
+29:31 word? We we kind of backed into this
+29:32 
+
+29:32 earlier. We were talking about the email
+29:33 
+
+29:33 stuff, but can you just say a word like
+29:35 
+
+29:35 what is agency and like what problem
+29:37 
+
+29:37 does it solve for customers? Why is that
+29:39 
+
+29:39 problem important? Can you just say a
+29:41 
+
+29:41 few words about that?
+29:42 
+
+29:42 >> Yeah, the the problem that everyone in
+29:44 
+
+29:44 the world has is that they struggle to
+29:48 
+
+29:48 deliver a great customer experience and
+29:51 
+
+29:51 the only way that they can solve that
+29:52 
+
+29:52 problem today is not with technology but
+29:54 
+
+29:54 is with humans. And so humanled
+29:59 
+
+29:59 deliver customer experience it's almost
+30:02 
+
+30:02 an impossible thing. And so what agency
+30:05 
+
+30:05 is building is AIled customer
+30:07 
+
+30:07 experience. How do we truly scale uh
+30:10 
+
+30:10 customer experience beyond our wildest
+30:12 
+
+30:12 imaginations without needing a human in
+30:14 
+
+30:14 every step of the way? Right? So that's
+30:16 
+
+30:16 that's what I'm really solving for. Um
+30:19 
+
+30:19 and I it kind of like came through. I
+30:22 
+
+30:22 just I love life right in now that I'm
+30:24 
+
+30:24 older because you can trace back all the
+30:26 
+
+30:26 steps and so I gave you a whole bunch of
+30:28 
+
+30:28 them but um Brazil Chad GPT AI Ascent
+30:33 
+
+30:33 you introduced me to OpenAI OpenAI says
+30:36 
+
+30:36 we're just like 200 people we we do not
+30:39 
+
+30:39 know how to talk to all these customers
+30:40 
+
+30:40 we can't tell them how to like prompt
+30:42 
+
+30:42 stuff and would you help us there was a
+30:45 
+
+30:45 a jump there's a there's a cohort of
+30:47 
+
+30:47 companies that were like let's build
+30:48 
+
+30:48 services and AI and let's start there
+30:50 
+
+30:50 and so I kind of did that and build a
+30:52 
+
+30:52 consultancy uh and just started
+30:55 
+
+30:55 servicing all kinds of customers like
+30:57 
+
+30:57 the MBA, Red Bull, crazy companies. One
+31:00 
+
+31:00 of them was Glaio. Uh, you know, Andrew,
+31:04 
+
+31:04 I said, "What do you need help with?"
+31:05 
+
+31:05 And he's like, "I need help delivering
+31:07 
+
+31:07 customer experience." You know, it's
+31:09 
+
+31:09 like, "How do I help my customers
+31:12 
+
+31:12 understand
+31:14 
+
+31:14 um what the potential is of using Clear
+31:16 
+
+31:16 View? How do we give them advice?" Which
+31:18 
+
+31:18 is the job of a CSM, right? And so,
+31:21 
+
+31:21 like, how can a CSM know be an expert?
+31:25 
+
+31:25 Every CSM that you hire be an expert.
+31:28 
+
+31:28 the the number one in the world expert
+31:30 
+
+31:30 in clear view itself or in e-commerce
+31:32 
+
+31:32 marketing.
+31:33 
+
+31:33 >> So that's where AI comes in.
+31:35 
+
+31:35 >> And when he first asked me to do this, I
+31:37 
+
+31:37 said no [ __ ] way. I don't I don't
+31:40 
+
+31:40 know if that that if I could do that and
+31:42 
+
+31:42 imagine like what would my company would
+31:44 
+
+31:44 be bigger than yours. He's like just do
+31:45 
+
+31:45 it. So he just, you know, rolls rolls
+31:48 
+
+31:48 reversed, right? And he's like go do it.
+31:50 
+
+31:50 Go do things. And so we we built a um a
+31:54 
+
+31:54 model that understood
+31:56 
+
+31:56 every customer and every one of their
+31:58 
+
+31:58 interactions and understand what was
+32:00 
+
+32:00 working, what was not working and be
+32:02 
+
+32:02 able to classify the entire usage of
+32:04 
+
+32:04 every user in the company and start
+32:06 
+
+32:06 being able to deliver tailor uh advice,
+32:09 
+
+32:09 right? And so and then the whole thing
+32:11 
+
+32:11 started clicking for me where was like
+32:12 
+
+32:12 what if I can just deliver the QBR? what
+32:14 
+
+32:14 if I can just like uh do you know create
+32:17 
+
+32:17 a video explaining that and saving time
+32:19 
+
+32:19 to the customer and and and so then I
+32:22 
+
+32:22 was like this is great like this is the
+32:26 
+
+32:26 moment where like this is what I want to
+32:28 
+
+32:28 solve and uh and I wasn't sure right
+32:32 
+
+32:32 that that that was going to be it and
+32:33 
+
+32:33 that literally that day like Brian
+32:36 
+
+32:36 Holligan sends me a text like you know
+32:38 
+
+32:38 he he had been uh sending me all these
+32:42 
+
+32:42 messages romancing me and then this that
+32:44 
+
+32:44 day is like I have an idea for you, you
+32:46 
+
+32:46 know, it's like let's disrupt the world,
+32:49 
+
+32:49 you know, let's let's disrupt the the
+32:51 
+
+32:51 this this entire industry and I'm like
+32:53 
+
+32:53 what are you talking about? It's like
+32:54 
+
+32:54 it's about the people we can't scale,
+32:56 
+
+32:56 you know, how do we solve this problem
+32:58 
+
+32:58 and in customer experience let's do it
+33:00 
+
+33:00 and uh then we called you and that's how
+33:04 
+
+33:04 agency was born. You know, it's it's
+33:06 
+
+33:06 just things just accelerate. you know,
+33:09 
+
+33:09 >> must have been a really cool full circle
+33:11 
+
+33:11 moment going from chat bots at IBM uh to
+33:15 
+
+33:15 to now chat is working and and going
+33:18 
+
+33:18 from, you know, you're only solving the
+33:19 
+
+33:19 transactional part of the conversation
+33:21 
+
+33:21 at Drift to now you want to, you know,
+33:23 
+
+33:23 manage the entire customer experience.
+33:25 
+
+33:25 It's incredible full circle of it.
+33:27 
+
+33:27 >> Yeah. I think that a lot of people are
+33:29 
+
+33:29 struggling. They're having an identity
+33:31 
+
+33:31 crisis with AI of like what should I do?
+33:34 
+
+33:34 What will I be replaced? And to me, I I
+33:37 
+
+33:37 think
+33:38 
+
+33:38 What I've learned, what I see a lot of a
+33:40 
+
+33:40 lot of founders struggle with is or
+33:43 
+
+33:43 people is like what's my purpose? Like
+33:45 
+
+33:45 what am I going to do and and what am I
+33:47 
+
+33:47 going to do that's going to last? So
+33:48 
+
+33:48 what am I going to do that is big? And
+33:50 
+
+33:50 so to me finding the problem of customer
+33:53 
+
+33:53 experience is so soothing and
+33:56 
+
+33:56 reassuring. It's like the hardest thing.
+33:59 
+
+33:59 I'm not saying it's easy, but I I I just
+34:02 
+
+34:02 can't think of how this will ever be
+34:06 
+
+34:06 solved.
+34:07 
+
+34:07 It's like whatever customer experience
+34:10 
+
+34:10 we could like most customer experience
+34:11 
+
+34:11 in the world sucks. Like I it's like I
+34:14 
+
+34:14 would say like the best I could think of
+34:16 
+
+34:16 maybe could be like a fancy hotel, you
+34:19 
+
+34:19 know, like sometimes. But I don't want
+34:21 
+
+34:21 to name my hotel that I stay here, but
+34:23 
+
+34:23 now if I ask them to send me some
+34:25 
+
+34:25 delivery or medicine or something,
+34:27 
+
+34:27 they're like that'll be $4, Mr. Torres.
+34:29 
+
+34:29 Like why am I paying thousands of
+34:30 
+
+34:30 dollars in this room and you're charging
+34:32 
+
+34:32 me $4 for delivering me like my Tylenol?
+34:36 
+
+34:36 It's like and then I got this food that
+34:38 
+
+34:38 you want I don't want to come down. It's
+34:39 
+
+34:39 like that'll be $7, you know, and so and
+34:43 
+
+34:43 this is like the great exper the
+34:44 
+
+34:44 greatest experience you can get today. I
+34:46 
+
+34:46 think in customer like that's where you
+34:48 
+
+34:48 get pampered.
+34:48 
+
+34:48 >> Yeah. Uh do you have any customers on
+34:50 
+
+34:50 agency today and any favorite customer
+34:52 
+
+34:52 stories
+34:52 
+
+34:52 >> here? Classic Sequoia is like what's the
+34:54 
+
+34:54 revenue? What's the curve?
+34:56 
+
+34:56 >> Let's talk about ARR.
+34:57 
+
+34:57 >> Let's talk about AR.
+34:58 
+
+34:58 >> We went through your growth rate. What's
+34:60 
+
+34:60 your gross margin?
+35:01 
+
+35:01 >> Yeah, what's your gross margin?
+35:02 
+
+35:02 Actually, we can talk about that. That
+35:04 
+
+35:04 this is a [ __ ] show. I don't know how
+35:06 
+
+35:06 we're going to survive with this LLM
+35:08 
+
+35:08 cost. I think it's an entire pyramid
+35:10 
+
+35:10 scheme here.
+35:11 
+
+35:11 >> Well, actually say a word about that.
+35:12 
+
+35:12 Yeah.
+35:13 
+
+35:13 >> Yeah. I mean, I I think so we have over
+35:15 
+
+35:15 50 customers using the product, right?
+35:17 
+
+35:17 It's I I don't give a [ __ ] about numbers
+35:19 
+
+35:19 and stuff like that. I'm building for
+35:20 
+
+35:20 them. I'm solving. I'm really delighted.
+35:23 
+
+35:23 I was trying to get more customers and
+35:25 
+
+35:25 Brian said, "Stick with the customers
+35:27 
+
+35:27 you have. Make them like so wildly
+35:30 
+
+35:30 successful." And I was like,
+35:32 
+
+35:32 >> you're right. I think I think that's
+35:34 
+
+35:34 important is that there there are more
+35:35 
+
+35:35 customers that you could go get, but
+35:36 
+
+35:36 you're focused right now on just making
+35:38 
+
+35:38 these 50 like deliriously happy with the
+35:40 
+
+35:40 product.
+35:40 
+
+35:40 >> That that's exactly where I am. Right.
+35:42 
+
+35:42 And so and so back to the cost stuff. So
+35:45 
+
+35:45 so we we've been working with them and
+35:47 
+
+35:47 and and I have a really
+35:51 
+
+35:51 it's hard going multiple times around
+35:53 
+
+35:53 because this time around in the past I
+35:55 
+
+35:55 would be like the minute I had something
+35:56 
+
+35:56 that kind of like loaded on your browser
+35:58 
+
+35:58 like I wanted to charge you, you know? I
+36:00 
+
+36:00 was like, "A dollar." I was like, "Yes,
+36:03 
+
+36:03 I got a dollar." This time I'm like, "I
+36:05 
+
+36:05 don't want your money." It's like, I
+36:07 
+
+36:07 want to know that you're obsessed and
+36:08 
+
+36:08 that is so sticky and I'm going to do
+36:10 
+
+36:10 everything at your company and I don't
+36:13 
+
+36:13 want to make my There's so many founders
+36:16 
+
+36:16 that they think that they just because
+36:18 
+
+36:18 they built something that they got it
+36:20 
+
+36:20 right. People are delusional. People
+36:22 
+
+36:22 have $50 million in revenue and they're
+36:24 
+
+36:24 delusional that that product works. You
+36:26 
+
+36:26 know, this time around, I really want to
+36:28 
+
+36:28 do it right. I want to build something
+36:30 
+
+36:30 that people like like throwing money at
+36:32 
+
+36:32 me and saying like this is really
+36:35 
+
+36:35 there's nothing like it. This is this is
+36:37 
+
+36:37 my journey now, right? So I want to
+36:38 
+
+36:38 build something real, right? That is not
+36:41 
+
+36:41 going to like just I I think most of SAS
+36:43 
+
+36:43 out there that we ever built that I ever
+36:45 
+
+36:45 built just created more work for the
+36:47 
+
+36:47 user. I want something that takes the
+36:49 
+
+36:49 work off, right? And so this I'm being
+36:52 
+
+36:52 more patient, right? And maybe it hurts
+36:54 
+
+36:54 me, maybe it doesn't, but I got great
+36:56 
+
+36:56 found great investors like Pat and he's
+36:58 
+
+36:58 not rushing me. So um sometimes but I
+37:02 
+
+37:02 would say that uh what what's really
+37:04 
+
+37:04 hard is
+37:06 
+
+37:06 uh I'm trying to understand my number
+37:08 
+
+37:08 one goal right is I want to create a
+37:09 
+
+37:09 company that is a billion in revenue
+37:12 
+
+37:12 with less than 100 employees right it
+37:14 
+
+37:14 was one of one of the first ones saying
+37:15 
+
+37:15 out there and and people were like
+37:17 
+
+37:17 you're crazy you're crazy uh and and I
+37:20 
+
+37:20 really mean it right mo most of my team
+37:22 
+
+37:22 is engineers right and we're just
+37:24 
+
+37:24 building the product because the where
+37:26 
+
+37:26 most of the money and where the
+37:27 
+
+37:27 headcount goes is in customer exper in
+37:30 
+
+37:30 in in GTM and customer experience.
+37:32 
+
+37:32 >> Yep.
+37:32 
+
+37:32 >> And so I want to solve that. I want to
+37:34 
+
+37:34 get that right so we can build the
+37:36 
+
+37:36 companies of the future.
+37:38 
+
+37:38 There's a there's a lot of lack of
+37:40 
+
+37:40 creativity and we're in the most
+37:41 
+
+37:41 creative company country in the world.
+37:44 
+
+37:44 But what I see out there in products is
+37:45 
+
+37:45 like everybody's building the same chat,
+37:47 
+
+37:47 you know, uh meeting recorder, the note
+37:49 
+
+37:49 summarizer and the email drafter. Right.
+37:51 
+
+37:51 Well, I remember when you started
+37:52 
+
+37:52 agency, one of the HubSpot, you know,
+37:55 
+
+37:55 um, principles or norms has always been
+37:59 
+
+37:59 when they zigg, we zag, right? And I
+38:01 
+
+38:01 think when you started agency, the zigg
+38:03 
+
+38:03 was all these AISDR companies.
+38:06 
+
+38:06 >> And your zag was no, no, we'll let them
+38:08 
+
+38:08 take the front end of the business.
+38:10 
+
+38:10 We're going to deal with the back end of
+38:11 
+
+38:11 the business because that's where the
+38:12 
+
+38:12 pain actually is and that's where the
+38:13 
+
+38:13 value is built. Um, and so I think
+38:15 
+
+38:15 you've you sort of zagged when people
+38:17 
+
+38:17 were zigging and I think over the last
+38:18 
+
+38:18 year or so that's proven to be a good
+38:19 
+
+38:19 decision. Um, but can you say a word
+38:21 
+
+38:21 about like what can AI do today? What
+38:25 
+
+38:25 can it not do today? And so in the
+38:27 
+
+38:27 product that you've built, where is AI
+38:29 
+
+38:29 like or the product itself really
+38:31 
+
+38:31 nailing it? And where do you feel like
+38:33 
+
+38:33 there is maybe still a capability gap in
+38:36 
+
+38:36 terms of what can be done?
+38:38 
+
+38:38 >> Well, I I think that if we're optimist
+38:40 
+
+38:40 AI is infinitely capable
+38:44 
+
+38:44 in the theoretical uh
+38:45 
+
+38:45 >> in the fullness of time
+38:46 
+
+38:46 >> in the fullness of time, right? But
+38:48 
+
+38:48 today it's actually not that smart. And
+38:52 
+
+38:52 so like you know it's like you have to
+38:54 
+
+38:54 write paragraphs and paragraphs to maybe
+38:56 
+
+38:56 get the right answer. 42. It's so you
+38:60 
+
+38:60 know if you type the wrong word or if
+39:02 
+
+39:02 you try it again it's just a different
+39:03 
+
+39:03 answer. And so that's the part that
+39:06 
+
+39:06 today's humans brains just can't cope
+39:08 
+
+39:08 with it. And so when you're trying to
+39:09 
+
+39:09 deliver experience to the customer
+39:11 
+
+39:11 you're trying to figure out uh what is
+39:12 
+
+39:12 it that you're exactly trying to do
+39:14 
+
+39:14 right? Are you trying to just come up
+39:16 
+
+39:16 with the better word to reply to the
+39:18 
+
+39:18 customer or you trying to let the AI
+39:19 
+
+39:19 actually do and manage the customer
+39:22 
+
+39:22 experience? And so I think where where
+39:24 
+
+39:24 we're struggling is that if we cannot
+39:26 
+
+39:26 even trust the AI to draft your own
+39:28 
+
+39:28 email that you're about to hit the
+39:30 
+
+39:30 button, how much worse is going to be
+39:31 
+
+39:31 for us to let the AI make decisions on
+39:34 
+
+39:34 10,000 customers on a daily basis on its
+39:37 
+
+39:37 own? Mhm. And
+39:38 
+
+39:38 >> so we built the first part of agency,
+39:40 
+
+39:40 which is what most people are trying to
+39:42 
+
+39:42 do today, which is this,
+39:45 
+
+39:45 you know, customer 360 foundational.
+39:48 
+
+39:48 Let's bring all that information into
+39:49 
+
+39:49 one place and be able to ask questions.
+39:51 
+
+39:51 But what most people are not realizing
+39:53 
+
+39:53 is that if you require a human to go
+39:55 
+
+39:55 type into that chat box,
+39:58 
+
+39:58 you're dead on arrival.
+40:00 
+
+40:00 >> Everybody's so confused and even in the
+40:03 
+
+40:03 valley of like building tools that are
+40:04 
+
+40:04 like just helping a human do something.
+40:07 
+
+40:07 I'm done with that. Like I I don't want
+40:09 
+
+40:09 to do that. I I It's like It bores me to
+40:12 
+
+40:12 death to type stuff into Chad GPT. I I
+40:14 
+
+40:14 like I'm a CEO now. Like I'm spoiled.
+40:17 
+
+40:17 I'm, you know, living my best life. I
+40:18 
+
+40:18 just want to tell people what to do one
+40:20 
+
+40:20 time and they do it 10,000 times. And so
+40:23 
+
+40:23 that's kind of what I really want, you
+40:25 
+
+40:25 know, AI to do for me.
+40:26 
+
+40:26 >> It's like how can we instruct AI to do
+40:29 
+
+40:29 one task infinitely?
+40:32 
+
+40:32 >> And and most people are stuck like
+40:33 
+
+40:33 people and don't get me started on the
+40:35 
+
+40:35 word agents, right? Everybody like talks
+40:37 
+
+40:37 about agents and and like okay send me a
+40:39 
+
+40:39 summary after my meeting to my email who
+40:42 
+
+40:42 gives a [ __ ] like like I can always go
+40:44 
+
+40:44 ask that question but it's what do I do
+40:46 
+
+40:46 with it? So what I'm doing is I'm doing
+40:48 
+
+40:48 the very first principles in in the in
+40:50 
+
+40:50 in the companies that I'm working with
+40:52 
+
+40:52 because people just keep asking me oh
+40:54 
+
+40:54 can you generate me a dashboard about
+40:56 
+
+40:56 the customers and and then so what
+41:01 
+
+41:01 >> yeah what do you want to do with the
+41:02 
+
+41:02 dashboard? do with the dashboard and say
+41:04 
+
+41:04 and so, oh well, I want to click on this
+41:06 
+
+41:06 and then do this.
+41:08 
+
+41:08 Why can't I do that? And then what do
+41:09 
+
+41:09 you want me to do that? You want me to
+41:10 
+
+41:10 go after the renewals? You want me to go
+41:12 
+
+41:12 tell the rep? And then what are you
+41:14 
+
+41:14 going to tell the rep? Oh, I'm going to
+41:16 
+
+41:16 tell them to email the customer. Why
+41:17 
+
+41:17 can't I just email the customer? Right.
+41:19 
+
+41:19 And so that's the journey I'm in that
+41:20 
+
+41:20 I'm enjoying. But it's it's really hard.
+41:23 
+
+41:23 I have to deprogram the entire business
+41:26 
+
+41:26 world. Yeah.
+41:27 
+
+41:27 >> Because they're used to working and
+41:28 
+
+41:28 operating this way. And you know, I was
+41:33 
+
+41:33 Brian had his birthday. I was I was at
+41:35 
+
+41:35 his house. Uh I showed up with his
+41:37 
+
+41:37 glasses and then he was like in shock.
+41:40 
+
+41:40 He said then he's never seen them
+41:41 
+
+41:41 before. And said then it was um one of
+41:44 
+
+41:44 one of his old friends because Brian is
+41:46 
+
+41:46 old. I'm old. I can say I'm I can say
+41:48 
+
+41:48 anything I want now. I'm old too.
+41:50 
+
+41:50 one of his old retired VCs. It's like
+41:53 
+
+41:53 came like to me like an oracle and he
+41:56 
+
+41:56 was saying, "Alias, my advice to you,
+41:60 
+
+42:00 forget everything you've ever learned.
+42:03 
+
+42:03 Forget the pattern recognition. Forget
+42:05 
+
+42:05 your experience. Forget all that. That's
+42:07 
+
+42:07 [ __ ]
+42:09 
+
+42:09 Just got to like try new things." And
+42:11 
+
+42:11 he's like telling me to let go and not
+42:13 
+
+42:13 like rely on the past because sometimes
+42:16 
+
+42:16 like experienced founders, we get stuck
+42:18 
+
+42:18 in that way. And it was like this
+42:20 
+
+42:20 deprogramming right to just charge into
+42:24 
+
+42:24 the future. And and that's my challenge
+42:26 
+
+42:26 of like how do I become uh a change
+42:29 
+
+42:29 agent to our customers to really believe
+42:33 
+
+42:33 in in in stop worrying about the things
+42:36 
+
+42:36 that we were doing before and focus on
+42:37 
+
+42:37 the right thing that they can do and
+42:39 
+
+42:39 they can have that one-on-one with their
+42:40 
+
+42:40 customer with the top customer. But a
+42:42 
+
+42:42 lot of stuff that we're doing is really
+42:44 
+
+42:44 unnecessary because we just didn't have
+42:47 
+
+42:47 the technology. But it's going to take a
+42:49 
+
+42:49 long time for AI to be prompted into
+42:53 
+
+42:53 into success of like read this
+42:56 
+
+42:56 dashboard, make this concrete and do
+42:58 
+
+42:58 this just even doing one of those
+43:00 
+
+43:00 workflows consistently every time.
+43:04 
+
+43:04 >> Yeah,
+43:04 
+
+43:04 >> it it's it's going to take a lot of
+43:05 
+
+43:05 prompting, but there's a lot of stuff
+43:07 
+
+43:07 that you can bring change internally as
+43:09 
+
+43:09 a customer experience, you know,
+43:11 
+
+43:11 platform. uh we can bring things to
+43:13 
+
+43:13 resolve a lot of internal um
+43:16 
+
+43:16 inefficiencies but the most valuable
+43:18 
+
+43:18 thing is delivering that directly to the
+43:20 
+
+43:20 customer.
+43:21 
+
+43:21 >> All right, last question. Let's end on a
+43:22 
+
+43:22 high note. What are you most optimistic
+43:26 
+
+43:26 for in our AI future?
+43:29 
+
+43:29 >> I think that what I'm most optimistic is
+43:32 
+
+43:32 I want people to uh be able to leverage
+43:35 
+
+43:35 uh to use their agency more. You know, I
+43:38 
+
+43:38 think that we have worked so hard for
+43:40 
+
+43:40 all of our our our history. Uh and I
+43:43 
+
+43:43 think we need to stop uh so focused on
+43:47 
+
+43:47 like hard hard work and then being able
+43:50 
+
+43:50 to like do what we're best at doing,
+43:53 
+
+43:53 right? Which is taking initiative,
+43:55 
+
+43:55 making decisions, choosing a a purpose,
+43:58 
+
+43:58 choosing a customer, choosing a an
+43:60 
+
+43:60 audience and go serve them, right? but
+44:03 
+
+44:03 be able to leverage AI to do the work
+44:05 
+
+44:05 right around us and not be afraid of it
+44:07 
+
+44:07 that is really taking away our agency
+44:09 
+
+44:09 because it just can't you know
+44:11 
+
+44:11 >> great company name humans have agency
+44:14 
+
+44:14 >> indeed awesome alias thank you so much
+44:17 
+
+44:17 >> thank you for having me
+44:18 
+
+44:18 >> thank you
+44:19 
+
+44:19 [Music]
+44:26 
+
+44:26 [Music]
+44:36 
+
+44:36 [Music]

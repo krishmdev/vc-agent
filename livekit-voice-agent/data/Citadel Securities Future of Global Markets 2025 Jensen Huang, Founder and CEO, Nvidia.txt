@@ -1,0 +1,577 @@
+00:05 Good morning everyone. Um, my name is Constantine Buer and I'm a partner at
+00:10 Sequoia Capital focused on AI investing. Both Nvidia and Citadel Securities
+00:17 actually have a lot in common. Uh, they're both exceptional businesses.
+00:22 They really well-run, really brilliant leaders. Um they are exceptionally
+00:30 well-run. They were both powered by the computing revolution and both are
+00:36 leaders in their respective industries with technology. They also have another lesserk known fact in both cases their
+00:42 first outside investor was Sequoia Capital. So when $1 million they they risked $1 million
+00:50 in Nvidia in 1993. You were worth it.
+00:59 one solid million dollars went way out on the limb. It was a little more into Citadel.
+01:08 Um, so when we were asked to speak about AI at this conference, it was incredibly
+01:13 clear who the best person in the world to speak would be. It's the man who has built the entire infrastructure for the
+01:21 AI revolution upon which all of this AI rests and the man who built the most
+01:27 valuable company in the world. Please join me in welcoming Jensen Hong. Oh, thanks.
+01:39 It's nice to wake up this way. Well, you've been working for hours. Yes, I have. Um so uh Jensen we have a
+01:48 room full of institutional investors who are some of the best in the world. They manage many trillions of AUM and
+01:55 they are constantly looking for edge. Uh you are someone who always has edge and
+02:01 every one of our conversations you have compelling insights about what the future is going to look like. In the
+02:06 next 60 minutes, we have an ambitious agenda uh to cover stories of the edge
+02:12 from the very beginning of NVIDIA all the way through its rise to the center of the AI revolution. And then we'll
+02:17 spend the majority of the time on what's next for Nvidia and AI. Okay. So, let's start at the very beginning.
+02:23 It's 1993. You're 30 years old. What's the insight that gave you the edge to
+02:29 start Nvidia? We were going through uh uh basically
+02:34 the PC revolution and the revolution of CPUs. It was the era of Moors law. It
+02:41 was the the time when uh integrated microprocessors uh Intel u Moore's law uh the scaling
+02:49 the scaling laws of transistors uh that was the buzz and that was nearly all of
+02:56 the investment dollars in Silicon Valley in the computer industry. and and uh we observed uh something a
+03:04 little different. We said uh there are many problems that one of the benefits of the CPU is general purpose
+03:10 but the the fundamental problem of general purpose technologies is that they tend not to be very good extremely
+03:17 good at very hard problems and so we conjecture two things. one, we
+03:22 observed that that um there are problems that we could solve with uh an
+03:30 accelerator uh that is more domain specific, more targeted and those problems could be
+03:36 interesting to solve. And we observed that that general purpose technologies, the shrinking of these transistors would
+03:44 eventually reach the limits. the idea that you could keep reducing the size of
+03:49 transistors and scaling it using this this technique. It's it's a it's a set
+03:54 of heruristics called Dinard scaling and Dinard scaling and uh me and Conway came
+03:60 up with what are really the fundamental principles behind Moore's law and if you go back to those you'll you'll discover
+04:06 that that there will be a limit to how far you can shrink transistors and at someday uh you'll get you'll get
+04:12 diminishing returns and there are large computing problems. We believe that the computing problems that we could solve
+04:17 are nearly infinite in scale. And so one of these days a new type of computing approach would emerge and we you know we
+04:25 we uh focused our company on on um on augmenting supplementing uh general
+04:31 purpose computing with this technology called accelerated computing. And so that was really the the observation and
+04:37 and you said something earlier about about um how how Nvidia is always ahead of the
+04:44 curve. Mhm. Um often times often times if you reason about things from first principles,
+04:51 what's what's working today incredibly well, uh if you could reason about it from first principles and ask yourself
+04:57 on what foundation is that first principle built on top and how would that change over time, it allows you to
+05:04 to uh you know hopefully see around corners. So when you built the graphics
+05:11 accelerator Yeah. uh you were early to the party, but then hundreds of other competitors
+05:16 sprung up. Yeah. You eventually won in that market. In the early 2000s, you said, "Hey, this
+05:22 technology might be able to generalize itself." You're talking about the generalization of a CPU. Perhaps the GPU
+05:28 could also be generalized for more processing. Let's talk about CUDA. Yeah.
+05:33 How did that come about? Where did you get that insight? The story goes that it's from researchers. How did you read
+05:40 their work and conclude that the GPU could be a general computing device? Well, the um so first of all the the
+05:49 reason why Nvidia was hard to build was because we had to invent a new technology and invent a market. M
+05:57 and at the time in 1993 uh in order to create a new computing
+06:02 platform you need a large market and silicon graphics which doing 3D graphics
+06:08 at the time the markets are too small to enable a new computing platform
+06:13 and and so if we wanted to create a new computing architecture we need a new a large market and that large market
+06:18 didn't exist because the architecture didn't exist you got the chicken and the egg problem and so some what what Nvidia
+06:23 became good at and and the modern modern 3D graphics video game market we we
+06:30 contributed tremendously to and so Sequoa Capital's big issue at the time with Nvidia's uh funding principle
+06:37 is that we had to go invent the technology and the market simultaneously and the odds of that happening is
+06:43 approximately 0%. And I still remember when I pitched the story and I said and
+06:49 and Don Valentine at the time he says well Jensen where's your where's your app? Where's the killer app? And I said,
+06:54 I was I Oh, yeah. There's this company called Electronic Arts. And I didn't realize uh Don had just invested in
+07:00 Electronic Arts. And I said, "Alonic Arts? They're going to create we're going to help them create 3D graphics games and and we're going to create this
+07:07 market." And he goes, "You know, Jensen, I want you to know that we invested in Electronic Arts and their CTO is 14
+07:12 years old and it's driven to work. And you're telling me that's your killer app?" And so anyhow u we we uh we
+07:20 created the modern 3D graphics uh gaming ecosystem and as you know it's one of the largest entertainment industries in
+07:27 the world. Um the the fundamental problem of 3D graphics is basically
+07:32 simulating reality. If you go back to first principles, what it's doing is trying to recreate reality and the the
+07:39 the uh the fundamental the mathematics of of um uh reproducing uh
+07:46 photorealistic images and dynamic worlds is you know fundamentally physics simulation. And so uh linear algebra is
+07:53 obviously very important to it. and and um uh we we realize that concept uh and
+08:00 so the question is how do you bring something general purpose into something very very specialized
+08:07 and that's the great that's the great invention of our company we invented the technology we invented the market and we
+08:13 invent invented the pathways for us to systematically grow from a very
+08:18 vertically focused industry to eventually become more and more general purpose and so that that hardly ever happens and
+08:27 that pathway was hard to do but I don't want to take up the rest of the time explaining it but I I think the the um
+08:33 CUDA's invention is part invention of the technology
+08:39 which is observation um of how we can generalize our GPUs uh
+08:45 but it's a lot of it is about the invention of new products how to take it to market invention of new strategies
+08:52 how to get the market to adopt and and event and invent inventing essentially ecosystems that ultimately
+08:59 creates the flywheel that makes a computing platform happen. So we invented all of those things. They're
+09:04 all brand new. And and if you go back, you take a take a step back and you ask yourself aside from ARM and aside from
+09:11 x86, what is another computing platform that exists in the world that almost everybody uses?
+09:17 Doesn't exist. And so inventing a new computing platform rarely happens. And
+09:22 uh in our case it took us almost 30 years. So uh you were able to take this very
+09:29 specialized extremely high performant acceleration device and generalize it so that
+09:35 researchers and academics around the world would be able to run their processing much faster. You know that
+09:42 the Moors law limitations that they were up against all of a sudden were relaxed dramatically. Yeah.
+09:47 Now let's jump forward to the early 2010s. Yeah. At the time, deep learning was
+09:52 kind of an academic backwater. Uh the idea of neural networks had gone through a winter phase. Then in 2012, there was
+10:01 a breakthrough with Alexet and computer vision. And that was all accelerated on
+10:06 Nvidia GPUs. Was that the moment that you realized this AI revolution was becoming real?
+10:13 And if so, how did you capitalize on it? What was the edge to make Nvidia the center of this revolution?
+10:19 Yeah. two two uh two serendipitous two serendipitous moments and then one
+10:26 which is just a great again first principled observation about deep learning. Um the serendipity
+10:33 um started with I was trying to solve computer vision and and um uh we wanted
+10:39 to solve computer vision for a lot of different reasons whether it you know well anyways we want to solve computer
+10:44 vision and and um uh computer vision computer vision was was uh really
+10:50 brittle really hard to generalize um a collection of a whole bunch of tricks and I really really hated um uh how how
+10:58 the the industry was evolving and and and really quite frustrated with the progress. Uh meanwhile,
+11:06 one of our major strategies of of um uh democratizing the architecture uh is to
+11:13 go to higher to get scientists in higher education to use our our platform, use
+11:18 CUDA and and so I started with seismic processing, molecular dynamics, particle
+11:23 physics, you know, quantum chemistry. I went, you know, I took I took Nvidia CUDA everywhere. And actually there was
+11:30 a there was a there was a strategy at the company called CUDA everywhere that that meant Jensen schleing CUDA all over
+11:38 the world. And so I went to universities everywhere and we we meet with researchers and and and um that
+11:45 initiative of getting CUDA into higher education and researchers everywhere
+11:51 caused uh some researchers to reach out to us uh in 2012 2011 and uh Jeff Hinton
+11:58 was uh trying to solve uh computer vision and Andrew Ang was trying to solve computer vision
+12:04 and Yan Lun was trying to solve computer vision because there was this there a contest coming up called imageet that
+12:11 Fay is in charge of and I was trying to solve computer vision and so when you're
+12:17 naturally trying to solve a problem and then all these interesting people are solving similar problems they attract your attention so that's serendipity
+12:24 um the the the thing that that was great observation is that that um uh we could
+12:31 create a a new type of solver for them that's called coup DNN kind of like the sequel of in storage computing
+12:39 We invented KDNN which is which is in network computing if you will and that
+12:45 that way of doing computation this library called KUDNN uh made it possible for all of them to use CUDA
+12:52 successfully. Um but the thing that that was was I saw the same results as
+12:58 everybody else and you know everybody saw the big jump in in uh computer vision effectiveness. But but where
+13:05 where we took it further was we reasoned about so so this is so good at computer vision and why and what else could it be
+13:12 good at and the ability for for um deep neural
+13:18 networks uh to be extremely deep meaning because each layer is trained
+13:23 independently of the others and you could back propagate um from a
+13:29 loss function all the way back to its input uh you could learn almost any function and we came to the conclusion
+13:35 this is a universal function approximator and if we can then add to it state which
+13:42 is you know CNN was was a a a kind of a a two-dimensional
+13:49 um multi-dimensional uh pattern recognizer and then RNN's gave you a
+13:54 state machine within it and LSTM gives you a even better state machine and then transformers give you
+13:59 the ultimate state machine and so so the the idea that that we would have a
+14:05 universal function approximator that can learn almost any function. Well, the question is is what problem
+14:11 can it solve? Now you invert the pro invert the question and we came to the conclusion
+14:16 most of the problems we wanted to solve uh could have a deep learning component to it. And so we decided uh you know how
+14:23 would we reason about uh where deep learning could be 10 years from now, 20 years from now. We broke down the
+14:28 computation problem and we came to the conclusion that every single chip, every single system, every software, every
+14:35 every single layer of the computing stack could be reinvented. And that that decision to go after it
+14:42 was probably, you know, one of the better decisions in history. I I was doing AI research at the time at
+14:48 Stanford and the major constraint was always the compute. Yeah. you know, we had limited clusters
+14:55 in order to run these algorithms and Nvidia came in and not only relaxed that
+15:00 compute but made it possible with with the CUDA infrastructure. Yeah, that is largely your history. You make
+15:07 more and more compute possible. In 2016, you very famously created the world's
+15:13 first AI factory, the DGX1. Yeah. Uh, you actually handd delivered it to Elon
+15:18 Musk at OpenAI at Well, I built this brand new computer and and it's it doesn't look it doesn't
+15:25 look like anything the world's ever seen before. It doesn't work like anything the world's ever seen before and and I
+15:31 remember announcing it at GTC and literally the audience was just like this. Nobody knew what I was talking
+15:37 about and that was a joke. And so so with the same
+15:43 amount of applause and so so I announced this thing everybody go uh-huh and literally on that GTC I was on I invited
+15:52 Elon to talk about self the two of us were working on self-driving cars and so so uh he came on stage and he says
+15:58 Jensen what's that computer I said DJX1 let me and I built it for this reason he goes he goes I could use one and I I
+16:05 finally got a PO and and then he goes he goes uh he goes yeah I have this nonprofit
+16:11 I said, "Oh, oh, you know, when when you build
+16:17 something brand new, the last thing you want to hear is your first customer is a nonprofit." And so, anyhow, anyhow, I I
+16:23 delivered I delivered uh I was the the the Door Dash computer guy and I I uh
+16:29 Door Dashed this this computer up to San Francisco and and uh the company was OpenAI.
+16:36 It is a very profitable nonprofit or revenue scale nonprofit. Oh, we've been working together for a
+16:42 long time. Every every every model has been built on Nvidia since. Yeah. And and this thing is huge physically.
+16:48 When Jensen's talking about a computer, we're talking about a massive device. Nvidia's GPUs. When they say our GPUs,
+16:54 people imagine little GPUs. Our GPU is one GPU is now rack scale. It's two
+16:60 tons, uh, 120,000 watts, about $3 million. That's a GPU. We also
+17:08 sell smaller GPUs, the ones that Jeff Hinton used that that's like $1,000,
+17:13 $500 that plugs into your PC, and you could use it for video games or AI and things like that. Um, but we also have
+17:20 bigger GPUs. And then and then a one gigawatt AI factory GPU is about, you
+17:26 know, $50 billion. So, so tell us about these AI factories because you might have the small one might be the AI
+17:32 blender. Uh, but then you have the really big one, these AI factories that you went all in in 2016 and started to
+17:39 say the world is going to need AI factories. How did you get that edge, that conviction, and then you got to reason about it. Exactly. You got to
+17:46 reason about it. So, so we built the first one, DGX1. It was the most expensive computer the world's ever seen. $300,000 per node
+17:53 and and um it wasn't that successful. Uh and so I came to the conclusion uh we
+18:00 didn't make it big enough and so we made a bigger one and the second one became super successful
+18:07 and and now the question then becomes uh how how large do you make it and how how
+18:13 hard do you drive computation the reason why things are moving so fast is Nvidia's product cycles and the way we
+18:20 innovate the way we design we we're not designing a chip we're designing an entire infrastructure all at one time
+18:26 where the only company in the world today that you can give a building, some power, and a blank sheet of paper and we
+18:31 can create everything within it. All of the networking, all the switches, all the CPUs, all the GPUs, you know,
+18:37 all of the technology within that entire factory, we can build and we can and and it all runs the the same software stack
+18:44 from Nvidia. And because we we can integrate like that, we can also move
+18:50 extremely fast. So I could redesign the next years, then re redesign the next
+18:55 years, and every single year they're all software compatible. The benefit of software compatibility is velocity. The reason why the PC was able
+19:03 to move so fast was because they were all Windows compatible. And and uh and therefore, by definition, if you're
+19:10 compliant with the stack, you could build chips as fast as you like. And so we're now building AI factories as fast
+19:17 as we like, at the limits of what's physically possible. And so um and
+19:22 because we're innovating at such incredible scale and we're co-designing meaning we're changing algorithms we're
+19:28 changing software we're changing networking and CPUs and GPUs all at the same time we break out of Moore's laws
+19:35 limits which is as you know slowing down and so generationally we introduce
+19:41 performance levels by about 10 times I mean it's an incredible level of performance that we give to the market
+19:47 every single every single year. The reason why we do that is we believe that
+19:54 just around the horizon is a problem that is so large you need um a larger
+19:60 computer, faster computer on the one hand. On the other hand, when we increase performance at the same power,
+20:07 we're decreasing your cost. M and so our we're driving cost down incredibly fast which allows customers
+20:15 to do bigger things which allows them to generate more revenues uh from the same
+20:21 factory and so Nvidia's you know adoption today is because we are both
+20:27 the highest performance we're the highest scale and so if you want giant systems you could do so and we're the
+20:34 lowest cost. our performance is so high. You know,
+20:39 for example, if your if your data center is one gigawatt, you're not going to get more than that. You're one gigawatt. And so if our per
+20:46 per watt our energy performance per unit of energy used is three times
+20:53 your company can generate three times more revenues in that factory. That's why I call it a factory.
+20:59 It's not a data center. It's a factory. They're making money from it. and and so these AI factories
+21:04 wants to keep driving the scale up. They want to keep driving the revenues up. They want to keep driving the throughput up and so that's the reason why we're
+21:11 innovating so fast and it's it's hard to keep up with us and and um well it also
+21:17 explains why we're successful. Jensen, you have shifted from a component to a whole platform. That's
+21:23 the AI factory concept. for an investor audience. Can you break down what goes into the platform and then also start to
+21:31 talk about what's next for what the platform looks like?
+21:36 Well, the the um uh you know there there are CPUs, GPUs, uh
+21:44 network processors. There are three types of switches. There's a scaleup switch that turns one rack into a whole
+21:52 computer. We invented rack scale computing. It's called scale scaling up. You scale it out by taking a whole lot
+21:58 of these racks and connecting them together. That switch and that networking has a bunch of software on it. Software on on top of all this
+22:05 stuff. And then you take you you create one giant system the size of this building. And this this building would
+22:11 probably be about a 100 megawatts. A gigawatt is is um a few thousand acres.
+22:17 And then you um connect all these data centers together with even networking so that all of the all the data centers can
+22:23 think together. And so that's what we that's what we built together. That's what we built today. Um
+22:29 there are several reasons why infrastructure is being built so fast and and um there's some some questions
+22:38 that that uh uh floating around about about the bubble and comparing it to the year 2000. And so just just to compare
+22:45 it uh during the time of 2000 internet companies don't there were hospital.com
+22:51 there was pets.com um most of the internet companies were not profitable uh and the size of the whole internet
+22:58 industry was about 2030 billion dollars if you recall and uh today
+23:04 uh the the the first thing you need to observe is that AI isn't just about the
+23:10 brand new companies OpenAI and Anthropic and others AI is transforming the way
+23:15 that hyperscalers do work. Like for example, search is now powered by AI.
+23:21 Recommener systems, how you see ads and news and and um uh stories are now
+23:26 movies generated by uh recommener by AI. Uh user generated content. So basically
+23:33 Google's business, Amazon's business, Meta's business, hundreds of billions of dollars of revenues are all powered by
+23:38 AI. Now even in the absence of open AI and anthropic this entire hypers scale
+23:45 industry is being powered by AI and so the first thing to observe is that whole thing needs to go from classical CPUs
+23:52 with classical machine learning to now deep learning with AI. So that transition alone is hundreds of
+24:00 billions of dollars. Does that make sense? Absolutely. And so so that's one. The second thing is that we now have this new market.
+24:07 this new market is called, you know, AI and and this it's got a new industry and
+24:12 they produce AI and so open AI is the anthropics, the XAIs, the uh Gemini uh from Google of
+24:21 course and Meta is going to be an AI maker and so this entire layer of AI
+24:26 model makers is also building AI factories and these AIs are going to
+24:32 power the next generation of new opportunities and this is where the Harveys, the uh Open Evidence, uh um uh
+24:41 the Cursors. I mean, you right, you see all of these AI native companies and
+24:47 they're going to be connected to AI models and they're going to they're going to go after for the very first
+24:54 time in history an industry that never was addressable
+24:59 and that's the labor industry and it's digital labor digital cogn called agentic AI is going is going to
+25:07 supplement and augment the enterprise market. So for example, Nvidia already today we use a 100% of
+25:14 our software engineers, 100% of our chip designers. Every single engineer in today is augmented by cursor. We use
+25:20 cursive largely inside our company. And so so we now have AIS for all of our engineers. Productivity gains uh the
+25:27 work that we do in so much better. Uh you also see that there's a new industry showing up. It's called
+25:34 physical AI. So you have enterprise AI, you got physi physical AI are um are
+25:41 augmenting labor. And so for example, a robo taxi is essentially a digital
+25:48 chauffeur, right? And uh we're now going to have AIs that are going to be embodying um
+25:54 going to embed into anything that moves. And so, uh, in the case of a robo taxi,
+26:00 it's a steering wheel and wheels, but you're going to pick an pick, you know, uh, pick and pick and place arms. You're
+26:06 going to have one arm, two arms, you got, you know, three legs, all kinds of different embodiment. And so, these two
+26:11 industries represent about a hundred trillion dollars of the world's economy. And for the very first time, we have
+26:17 technology that's going to be able to augment that. And so, that's the reason why, you know, people are so excited about about the
+26:24 next next wave of AI. So let's talk for a moment on the previous wave because
+26:30 you mentioned how AI has already been offering an ROI. And for the investor
+26:35 audience, I think the Meta example is a great case study because in Q4 2022,
+26:42 Apple basically removed attribution data from Meta. And you all saw hundreds of
+26:47 billions of dollars of market cap decline. And the Meta team said, "How are we going to fix this?" They fixed
+26:52 that with AI powered by Nvidia GPUs. That's right. Yeah. And they got their attribution back up
+26:58 to where it was. And that has recovered many hundreds of billions. It's over a trillion higher than it was at its low.
+27:05 And that is all ROI that was powered really by your GPUs. What what meta was
+27:11 classically not just meta but but um is one of the most complicated systems
+27:17 software systems is called a recommener system. And there's a couple of basic technologies. One of them is called
+27:24 collaborative filtering, which is which is based on what I'm doing um and looking at what everybody else is doing.
+27:30 If we have similar patterns, it would recommend maybe the same movie to me, the same next item in your grocery list,
+27:37 you know, a book to me, a video to me, so on so forth. And then the other thing is called a content filtering. just
+27:44 based on who I am and my preferences and uh based on on what that book actually
+27:50 is, uh you might be able to recommend that book to me. And so that recommener system is the largest software ecosystem
+27:57 in the world. And that ecosystem is moving very significantly, very quickly to AI. And so you're going to need a you
+28:04 mountain of GPUs. And those systems were made famous by the Netflix challenge a couple decades ago.
+28:10 Now, Netflix, their recommendations are all powered by AI. And Amazon, as you said, when you go and purchase
+28:16 something, a significant number is by a recommendation system by AI,
+28:21 search to AI, moving search to AI, all of this is being powered now. Tik Tok to AI, right? Google Shorts AI.
+28:28 I mean, without it and now now um uh all of the personalized ads are going to AI.
+28:34 Yeah. So, just amount of AI is just incredible. And that has nothing to do notice I've just described a whole bunch
+28:40 of classical use cases. Well, quantitative trading is going to move to AI. What used to be human
+28:47 engineered feature extraction is going to move towards AI. And I think that's actually an area that
+28:53 Citadel Securities has pioneered for the past 20ome years. So that's the classical AI.
+28:59 Citadel Citadel is a great customer. Thank you. Uh so that is a classical example and
+29:05 for the investor audience talking about AI ROI it's already there in the form of trillions of market cap
+29:11 uh let's talk about what's next for spend so 2025 estimates can be as high
+29:17 as 500 billion dollars of AI investment in the ground where do we go from here
+29:24 does this become a multi-t trillion dollar a year investment category yeah so the manufacturing the foundry
+29:31 part of AI, if you will, is the model makers. They're kind of like, think of them like wafer makers. The applications of that
+29:40 and and one way of thinking about AI is is the large language models. It that's
+29:46 the operating system, if you will, of the modern computer. And and you build applications on top of
+29:53 these AI models. Not just one AI model, but a system of AI models. Okay? Okay. And so applications have a you know it's
+29:60 going to have a collection of different AIs that it connects together and and so
+30:05 the question is what's the application space on top? The the most sensible way of thinking about the application space
+30:11 on top aside from all all of the whatever applications we have are going to be improved by AI that we've been
+30:17 talking about. Uh a simple metaphor is just digital humans and so uh a digital
+30:23 software engineer right AI coding. Mhm. It it's going to be a couple of trillion
+30:28 dollar market opportunity probably um you know a AI digital nurses uh AI
+30:36 accountants AI uh lawyers AI right so there's AI marketeteers so that we call
+30:41 all of that agentic AI and that technology is is uh evolving very nicely
+30:47 and so for the very first time technology is no longer just a tool used
+30:52 by accountants tools used by software engineers we're going to become digital software engineers
+30:59 and I wouldn't be surprised if you you license some and you hire some
+31:05 and so depending on the quality and depending on the the deep expertise uh and so future workforces in enterprise
+31:12 will be a combination of uh humans and and digital humans and some of them will
+31:17 be open AI based and some of it would be uh Harvey based or you know open
+31:22 evidence or cursor or you rep replet or you know lovable or some
+31:29 of it will be third party and some of them you'll homegrow and so we homegrow a lot of our own AIs
+31:35 because we have a lot of proprietary knowledge and data that we want to protect and uh and we have we have
+31:40 skills in developing those AIs over time more and more people will be able to cultivate uh their own digital AIS
+31:46 because it'll just be easier easier to do so and so enterprise agentic AI uh
+31:54 you know obviously uh augmenting the labor force is trillions of dollars of opportunity.
+32:00 And what's unique about about AI also versus previous software is that AI
+32:08 needs to uh think. Meaning you can't pre-ompile it, put it
+32:13 into a binary, download it, and use it. It's got to process all the time. And the reason why it has to process is it
+32:20 has to take your context. It has to think about what you want it to do and then produce an output. And so it's
+32:26 thinking and thinking and generating. It needs a machine. It needs computers to
+32:32 do that. And that's the reason why AI factories exist. And so these AI factories will be in the cloud. They might be beyond prem.
+32:39 They'll they'll be all over the world. and and I you know it's part of the the AI infrastructure if you will but
+32:45 there's there's going to be a whole lot of thinking uh to produce these these uh we call them tokens but basically
+32:51 intelligence and so so that's the cognitive AI the digital workforce if
+32:57 you will and then the second one is robotics you know for the very first time
+33:03 so let me give you a thought experiment you know why robotics is so close
+33:08 um as you know as you know you can now prompt an AI and it could
+33:15 generate uh you know prompt uh Jensen picking up a bottle uh opening it and
+33:20 taking a sip. Okay, and it would generate the video of me right opening up a bottle, taking a sip. Well, if it
+33:26 can generate all that, why can't it maneuver a robot to do that?
+33:34 And so you your thought experiment would suggest that, you know, that's probably very likely. Now, if you could design a
+33:41 digital chauffeur that could drive a car, why can't you have a robot, a physical
+33:49 robot drive a car? And so, so if a physical robot, if you can embody a physical robot to even
+33:54 drive a car, why can't you embody a pick and, you know, pick and place arm or any
+33:60 type of robotics? And so, notice we have the ability to embody almost anything.
+34:05 We could pick up pick up uh knives and forks and it becomes an extension of our
+34:11 body and somehow we articulate it. We could pick up a baseball bat and use it as an extension of our body. Um and so
+34:17 we embody these physical extensions. future future AIs will be able to
+34:23 embody, you know, and manipulate a car, um, robotic arms, a human or robot,
+34:31 a surgical robot, um, you know, so on so forth. And so, so I think these two these two markets are
+34:39 are within reach of um, uh, of AI. And then lastly, if I just give you one
+34:45 example, you know, whenever you see the observation of one thing, the rest of it is just engineering, right? And so, and
+34:52 so we now we've now seen the the evidence of one excellent thing, which
+34:57 is a rob a digital an AI software coder,
+35:02 which is the reason why we use it so much. If you can have an AI software coder, why can't you have that AI
+35:08 software coder also uh write software to be a marketing campaign or write
+35:14 software to you know help you solve any accounting, you know, whatever whatever you want to do. And so
+35:20 so almost the the existence of that says the rest of it is engineering. Mhm.
+35:26 And then and then we now have robo taxis. You know, it's a embodied robot
+35:31 that controls a steering wheel and and wheels and um why if that exists, why
+35:38 can't you generalize that? And so the rest of it is just engineering. And so I I think it's it that's a good way to
+35:43 reason from first principles um how likely it is we're going to be able to have this technology proliferate across
+35:50 uh industries and society. And then the next thing that you have to reason about is okay, so how do you scale this out?
+35:56 How do you deliver this intelligence to all of these different applications? Well, you need AI factories. And so,
+36:03 so let's talk a little more about robotics. Uh, you have an exceptional robotics team, one of your executives
+36:09 who runs robotics here today. Uh, in a previous conversation, you shared some insight about how robotics
+36:16 might play out. You know, is it going to be a single humanoid project? Is it going to be open source projects? How
+36:21 are those open source projects going to tie back? How do you think robotics will actually manifest in the physical world
+36:27 and on what timeline? Um well, robo taxis are here now.
+36:33 Yep. and their their ability to generalize from city to city to city is
+36:38 really really getting fast and and the reason for that is because the same fundamental technology we went through
+36:44 the same journey and and for all the the the quant quantitative trading the algorithmic trading uh people in the
+36:52 room you went from human engineered features machine learning to uh using more and more deep learning
+36:59 and and um uh you know embedding certain modalities and uh multimodality uh
+37:06 models to to now uh largely end to end
+37:11 and the reason why the reason why and and it's multimodal um uh in this journey we we became more
+37:19 and more generalizable and and um the the AI model that you use
+37:26 for self-driving car and the AI model that you use for a human or robot is highly similar.
+37:33 It's just in two different embodiment. And the reason why I know that for sure is because I can drive a car
+37:41 and I can man manipulate my body. It's the same intelligence. And so and I could pick up fork and
+37:48 knife and somehow I, you know, pretend like I'm a surgeon, you know, and doing
+37:54 surgery on a on a steak, you know, and so so you could notice it's the same AI
+38:00 in different embodiment. Mhm. And so that's that's where AI is going. Robotics is going towards a general more
+38:07 and more generalizable AIs that are that are multi-mbodiment.
+38:13 It's multimodality. It's multi-mbodiment. And in order in order to create this future, you need three things. You need
+38:19 the AI factory I was talking about where you have to train the models. And you need a place where the AI could
+38:27 learn how to be an AI um without without having to come into the world right away. So it could try trillions of
+38:34 different iterations inside a virtual world. Well, that virtual world resembles a video game. And so the AI is basically
+38:42 playing a game inside a virtual world like a video game character. and it obeys the laws of physics and and uh
+38:51 when it's done learning how to be a great video game player because the sim tore gap is extremely
+38:59 low because the simulator is really really good. We call it omniverse. That omniverse computer then the robot can
+39:07 come out of that virtual world and this world become one more version of the
+39:12 virtual worlds it's played in and it comes into the physical world. when it comes into the physical world,
+39:18 it needs a computer as well. So you need three computers. You need the AI computer, training computer, you need
+39:23 the simulation, the lab, the the virtual world computer, and then you need a computer where the robot actually
+39:29 operates the brain. And so Nvidia offers all three of those computers and we work with just about
+39:35 every robotics company, self-driving car company, you know, robotics of different embodiment. And this is likely going to
+39:42 be one of the largest markets of all. So Nvidia touches just about everything in technology now and as you've said in the
+39:48 past, you start with zero billion dollar markets and have helped turn them into trillion dollar markets. Robotics is one
+39:54 of the next frontier markets. Are there any other next frontier markets that you're particularly excited about? You
+40:00 mentioned healthcare a moment ago. Is that one you're passionate about? Are there others that the investors in the
+40:06 room should be on the lookout for? Well, the technology the technology needed for healthcare is really complicated. Um, and we're making fast
+40:13 progress. If you can understand uh the meaning of words, sequences of
+40:20 characters, you might you might you might um and and you could understand the meaning of structures like the
+40:26 virtual world. Okay? Like when you when you look at the reason why we're able to generate video is because we understand
+40:32 the virtual world to generate an image a representation of the virtual of the world. And so if you can generate video,
+40:40 it must be because you understand the world. If you can generate if you can understand worlds, is it possible that you understand proteins and chemicals
+40:46 that have structure? And the answer is yes. And and so we're increasingly uh getting closer to closer to understand the
+40:52 meaning of proteins, alpha fold and others. uh we're able to understand the meaning of cells and we
+40:58 recently um uh did did a a partnership with ARC and uh EVO 2 uh comes very is
+41:05 one of the first uh examples of a large language model that a foundation model for cell representation. So you you can
+41:12 now talk to it and say um I want you to generate uh other cells of this these properties. Uh and or
+41:21 uh you could talk to a cell, you know, uh what are what are your your um
+41:26 properties and um uh what can you bind to and what what can you um
+41:32 your metabolism, what can you activate with? And so you could talk to a cell like you could talk to talk to a
+41:38 chatbot. And so uh understanding the meaning of of uh proteins um you know so
+41:45 anyways there's a a lot of progress there. I mean the list goes on. I mean the um
+41:52 I'm excited about about uh uh the work that we're doing to uh bring AI into
+41:59 telecommunications. Uh 5G and 6G will be revolutionized by AI. Uh I'm excited about about u the
+42:06 collaboration we have with uh uh quantum computers so that we can we can pull in
+42:11 the quantum computer schedule by about a decade by creating quantum GPU hybrid
+42:17 computing systems uh where we do the error correction we control the quantum computer we do the post-processing uh
+42:24 and so so we have a new new architecture called CUDA Q which extends CUDA to
+42:29 quantum and that that's getting incredible adoption And so there yeah there's there's a whole bunch of problems we can
+42:35 now solve that were hard hard to solve before. Let's talk a little bit about sovereign
+42:41 AI. We just had Mario jogging on the stage. He was talking about the importance of new investments in technology for the
+42:47 European Union including obviously AI at a large scale. This revolution is
+42:54 materially different and that governments are highly involved both in potentially regulating but also in
+43:00 purchasing AI factories. Uh can you tell us what do you think is the way forward
+43:06 both for sovereign AI how countries have their own AI systems and also for import
+43:12 exports how we as the United States should be interfacing with the rest of the world with AI?
+43:19 Well, um, no country can afford to outsource all
+43:25 of their their nation's data so that and import your own intelligence back to
+43:31 yourself. And I I just think on first principle, that's not sensible. And um, however, no, nobody needs to uh,
+43:39 only build everything themselves. you could you could buy, you could import um but you shouldn't give up on the
+43:46 production of your own national uh intelligence and and so I I I think the
+43:53 today the technology is rather hard um but it's getting easier and easier very very quickly and there's an enormous
+43:60 amount of open-source uh capability and so so I would I wouldn't give up on on
+44:06 um building your own sovereign AI. I wouldn't give up on on um uh taking the
+44:11 data that you have and creating your own national intelligence from it. And and and now countries all over the world are
+44:17 are um are doing so. And so I think sovereign AI is likely every country is
+44:22 likely to um import some um buy some and also build some and and uh there's a lot
+44:30 of capabilities to doing that. And and so we're we're seeing just a lot of momentum around sovereign AI. Uh the UK
+44:36 is doing it, you know, I was I was in France. We uh support a company called Mistral. In UK there's a company called
+44:43 Nscale. Um there's a company called Nibbius. Uh in in uh uh in Italy there's
+44:49 a there's several companies. In Spain there's several companies. Uh Germany there's several companies in and so
+44:54 there's companies all over the world. In in um in in Japan there's companies, you know, in Korea there's companies. And so
+45:01 there sovereign AI is cropping up all over the world. Yeah. So, one country that's come up a
+45:06 lot is China. Uh, what's the right thing for the United States in terms of exports to China of AI factories?
+45:14 Well, AI is a new technology and we have to think about before we, you know, we have to be thoughtful about about
+45:21 ultimately how to regulate it. Um, United States of course wants wants to
+45:26 win the AI race and I think I think um the policy makers uh all want to do the
+45:32 right thing and they want America to to win. Um, however,
+45:39 it's important to be mindful that what is what harms China um could often times
+45:45 also harm America and even worse. Mhm. And so before before we leap towards um
+45:53 policies that are hurtful to other people, uh take a step back and and and
+45:58 maybe reflect on what are the policies that are helpful to America and and um it it it probably is the case
+46:08 uh that you have to go back to first principles again. In the case of AI, what's most important about AI and any
+46:14 computing, any software industry, the developers are vitally important as you
+46:19 know and so winning developers is what creates the future platform. And we want
+46:25 the world to be built on American technology, you know, and and Nvidia is a proud American company and and um we
+46:31 want we want, of course, we we hope that we could create American technology that the world's built upon. Well, a lot of
+46:38 the AI researchers are in China. You know, China has about 50% of the world's AI researchers. Uh, incredible schools,
+46:46 incredible focus in AI, lots of passion around AI. And I think it's a mistake to
+46:51 not have those researchers build AI on American technology
+46:57 on first principles. I think that's a mistake. And so the question is how how
+47:02 do you balance winning staying ahead on the other hand ensuring that the world
+47:08 builds on American tech stack that's the balance
+47:13 and in order to balance you have to have nuance and it it's probably not you know
+47:19 all or nothing and so nuance a nuance strategy that that that um uh changes
+47:25 that that um uh you know is is uh uh changing over time uh has a you know
+47:34 that allows United States to stay ahead while we continue to win researchers around the world is probably the right
+47:40 balance and and that that's what I would advocate at the moment uh we are 100%
+47:46 out of China and so China is 0% of we went from 95% market share to 0%
+47:55 and so I can't imagine any policy maker thinking that that's a good idea
+48:00 that whatever policy we implemented uh caused one of caused America to lose
+48:07 one of the largest markets in the world to 0%. But anyhow, in all of our forecast, if there are any shareholders
+48:12 out there, all of our forecast, we're we're assuming zero zero for China. If
+48:17 anything happens in China, which I hope it will, it'll be a bonus. But it's a large market. Uh China is the second
+48:24 largest computer market in the world. Uh it is a vibrant ecosystem. I think it's a mistake for United States to not
+48:31 participate and and um and so hope hopefully we'll we'll continue to uh to
+48:37 uh explain and and inform and and uh uh hold out hope for for for a change in
+48:43 policy. Jensen, you were at our offices recently uh for an AI conference we were holding
+48:50 and you had some really brilliant insights into the future of AI security
+48:55 and the importance of it. It's somewhat related. Uh there are nation state actors that might interfere with AI.
+49:02 There are individual users that might use AI incorrectly. What do you think
+49:07 the future of AI security looks like? Well, AI security in the future is going
+49:13 to look a little bit like cyber security. It's going it's going to require that
+49:18 that uh we all work as a community. Um, you probably know this, all of your
+49:24 cyber security, your your chief security officers, uh, we're all one large
+49:29 community and when when somebody finds a a um,
+49:35 you know, some intrusion, uh, we share it with everybody. Whenever we find a vulnerability, we share with everybody.
+49:42 And so, uh, it's very likely that the future of AI security will be like cyber
+49:47 security. Um, second, if the marginal cost of
+49:52 intelligence, the marginal cost of AI goes to zero, if the marginal cost of AI goes to zero, then why wouldn't the
+49:59 marginal cost of security focused AI go also to zero? And so that's that's very
+50:05 clear. It's very likely that every AI will be surrounded by a whole bunch of cyber security AIS watching it.
+50:12 And so we're going to have lots and lots of AI protectors.
+50:18 thousands of them, millions of them inside the company, outside the company. And so that's that's uh kind of the
+50:25 future of uh the idea that that an AI has to itself be good is good, but I
+50:33 don't think we should rely on it. Mhm. And so just like the idea that a piece of software should be properly
+50:39 functioning we we like but the idea that it could have bugs or you know it could
+50:45 be a virus or whatever it is could have it could be an intruder we have to assume and so we're going to we're going
+50:50 to make AI advance as safely as possible. Um but we're all going to also
+50:55 surround AI with a lot of security AIS. You shared that really the dynamics of
+51:01 the physical world are decoupled in this digital world where in the physical world you might have one security person
+51:08 to a hundred normal people. It could be inverted in an AI world. Yeah.
+51:13 You also shared this idea that I found my for example like cyber security. Yeah.
+51:18 Yeah. We have a lot more cyber security agents than we have people working in the company on cyber security. You also
+51:25 shared this idea that in the future we're not just going to have rendered computation, but everything is going to
+51:31 be generated. Can you unpack what that prediction is and what that means for
+51:37 Nvidia? Well, the the great the best example of that um a couple of examples. Let's uh
+51:43 perplexity. Everything that you see on perplexity when you ask it a question is completely
+51:48 generated 100%. 100% of everything you see is generated. And yet in the past before Perplexity,
+51:55 you would type in something and it would give you an a list and you would go and
+52:00 click on it and all of that content was um written by somebody or gen created by
+52:08 somebody a priori. So search is storagebased computing. It's
+52:15 retrievalbased computing. It's retrieving information for you to consume yourself. Perplexity or AI is
+52:22 generating it goes and studies it goes and reads all the content and it generates it for you.
+52:28 Okay. So perplexity is a great example of the classical computer approach. We
+52:34 go retrieve a file and read it to a generative approach perplexity which is
+52:39 AI based. Another one which is um look at the videos that we see today. you know, Sora
+52:46 is of course uh nano banana, of course, you know, all
+52:51 of those pixels are generated. It's conditioned and prompted by you. You know, you might you might give it a
+52:57 an initial seed of something and say, uh, you know, I would like I would like you to generate a video of Constantine
+53:03 and and Jensen having a fireside chat and and then you would to prompt it and
+53:08 say this fireside chat's going to talk. They're going to talk about, you know, crazy stuff. For those online, this is
+53:14 real actually. And and then and then Sora would generate it. And so every single pixel,
+53:21 every single motion, every single word is gener generated. So so the the the the way of computation in the future
+53:28 will likely be generative. And let me just give you one final idea.
+53:34 A 100% of what you and I just went through is generated.
+53:40 Every question you asked me, I didn't run back to my office and retrieve something and bring it to you.
+53:46 Is this what you meant, Constantine? And then you read it aloud for everybody to hear. That's yesterday's computer.
+53:53 Today's computer is we just we're just interacting. And so we are generating everything in real time based on the
+54:00 context that is happening right here, based on the audience, based on what's happening around the world. And so we're
+54:06 generating everything real time. That's the future computer. you know, your future computer is is a
+54:12 CEO in front of you or it's a artist, it's a you know, it's a poet, it's a storyteller, and you collaborate with it
+54:19 to create unique content for yourself. And so the future of computation is 100%
+54:25 generative and behind it you need an AI factory which is the reason why I'm 100%
+54:32 certain we're at the beginning of this journey and and um you know we're a few hundred
+54:39 billion dollars a few extremely small we're only a few hundred billion dollars
+54:44 of infrastructure built for what likely will be trillions of
+54:50 dollars of infrastructure built each year. And so that's the easiest way to think
+54:56 through it. And that computing paradigm is so much more like the human mind.
+55:01 Yeah. It's thinking, you know, it's thinking. So if you're up for it, how about we generate a few lightning round answers.
+55:08 Okay. Okay. Okay. Uh just in the last few minutes together. I'm sure fried chicken is the answer.
+55:15 I don't know what the question is for that one. Um so let's jump in. Uh what's
+55:20 one KPI that Wall Street underweights
+55:27 in the future of AI factories? Your throughput per unit energy governs the
+55:33 revenues of your customers. It's not just about selecting a better
+55:38 chip. It's about deciding what your revenues are going to be. And in fact,
+55:44 if you go back and look at all the CSPs, the ones that chose right saw revenue
+55:50 growth and the ones that slow down subsequently chose right.
+55:57 And so you you could you could see you could see it playing out and people are starting to understand it. per your
+56:04 throughput token it's called tokens token generation rate per unit energy of
+56:11 your factory is your revenues the most underrated piece of Nvidia's
+56:18 platform um most people talk about CUDA and CUDA is
+56:26 very important but there's a suite of libraries that sit on top of CUDA and I mentioned one earlier today it's called
+56:31 coup DNN And it is probably one of the most important libraries ever created in
+56:37 the history of humanity. Uh the past the previous one was called SQL SQL and this
+56:44 one QDNN uh there's a few others KUDF litho which is going to be used for
+56:50 semiconductor manufacturing lithography. We have about 350 of these libraries and
+56:55 these libraries that is Nvidia's treasure trove. What's one technology that you think is
+57:02 wildly undervalued and one that you think might be overvalued?
+57:10 Um, undervalued. Undervalued. Undervalued.
+57:18 Wow. Um I I think that that um
+57:23 a the virtual world for physical AI to learn to be to learn to
+57:30 be a good physical AI. We call it omniverse is is hard to understand but it is it is
+57:37 deeply undervalued and and not not because people use it and don't they just don't know they need it yet. And uh
+57:44 but now Omniverse is sweeping across the robotics industry and uh everybody now
+57:50 gets it. Um once you start building robots, you'll start to realize, you know, how visionary it was that we
+57:55 started working on Omniverse almost a decade ago. And um and so Omniverse is
+58:00 is really important. Uh what's the book that most shaped your
+58:06 business and leadership philosophy? Uh um one of my favorite books was was uh
+58:14 the your you know everybody's first calculus book that's when you realize that math was was um
+58:21 in motion. Um that was a good book. Uh all of all of Clay's books, Christensen's books and
+58:28 he's passed but but good friend. Uh all of his books were great. Um uh Al Al
+58:34 Re's positioning book really good book. if you haven't had a chance. Of course,
+58:40 you know, Sapion's always good. Um, but but those are good ones. You know, Jeffrey's book on crossing a chasm.
+58:47 That's a good book. But all of Christensen's book, read them all. Favorite comfort food.
+58:55 There you go. Fried chicken. There you go. Okay, we got it in. All right.
+58:60 And then last question. If you were a CIO in the audience with $10 billion to
+59:06 allocate toward AI in the coming years, what would you invest it into? I would right away um experiment with
+59:14 building your own uh AI. I mean I just you know the fact of the matter is we
+59:20 take pride in on boarding employees and how the the method by which you do so
+59:26 the culture by which you bring them into the philosophies of your company uh the operating methods the practices that
+59:33 that that makes your company what it is. Um the the um the collection of data and
+59:39 knowledge that you've embodied over time that you make accessible to them. And so so that that is what defines a company
+59:45 in the past. A company of the future includes that of course but you need to do that for AI. You need to onboard
+59:52 digital you need to onboard AI employees. There's methodology for onboarding AI employees for uh we call
+59:60 them fine-tuning but basically teaching them you know the the the the uh the the
+60:05 culture of the knowledge of the skills of um evaluation methods and and so the
+60:11 entire flywheel of your agentic employee is something that you need to go and learn how to do. Uh I tell my CIO uh our
+60:19 company's IT department they're going to be the HR department of agentic AI in the future. They're going to be the HR
+60:25 department of of uh uh digital employees of the future and those digital
+60:30 employees are going to work with our of course biological ones and and that's going to be the shape of our company in
+60:36 the future and so if you get a chance to do that I would do that right away. Thank you Jensen. Well, we heard an
+60:41 incredible story. Really, the story of Nvidia is one of exceptional generalization. From an accelerated
+60:48 graphics processor to the technology that powers all of AI in the world
+60:53 today, from a component and the world's first GPU to all of the components in a platform and the world's AI factory. We
+61:01 talked about how services are the baseline for this new revolution and how robotics are in all of our future. We
+61:08 covered foreign policy. We even touched on fried chicken. You did it all, Jensen. Thank you so much.
+61:15 Thank you. Good job. Thank you. [Applause]

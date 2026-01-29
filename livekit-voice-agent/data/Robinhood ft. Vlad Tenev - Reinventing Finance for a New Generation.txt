@@ -1,0 +1,446 @@
+00:02 the FED went from cutting rates to zero and injecting a whole bunch of stimulus
+00:08 into the economy due to co to the fastest period of hiking rates in
+00:16 multiple decades and so we had this big problem which was what do you do when
+00:21 people don't want to invest and when all of these trends that helped grow our business tremendously during the
+00:28 pandemic now suddenly we're like L [Music]
+00:33 reversing welcome to Crucible moments a podcast about the critical Crossroads
+00:38 and inflection points that shaped some of the world's most remarkable companies I'm your host and the managing partner
+00:46 of seoa capital rof bua founded in 2013 Robin Hood single-handedly transformed
+00:53 stock trading from a cumbersome expensive process to a free mobile first
+00:58 experience geared toward a New
+01:04 Generation co-founders Vladimir tenv and beu but set out to democratize finance
+01:11 for all and make stock trading accessible to anyone with a few Taps on
+01:16 their smartphone but their Journey would entail harrowing challenges many of
+01:21 which took place under the harsh glare of the public eye from the mem stock
+01:27 phenomenon and ensuing backlash to Reinventing itself amid a market
+01:33 meltdown Robin Hood has had to prove itself again and again yet today Robin
+01:40 Hood continues to redefine what it means to be an investor in the 21st century
+01:45 shaking up the finance industry in ways no one could have anticipated just a
+01:51 decade ago I'm Vladimir tenv co-founder and chief executive officer at Robin Hood so
+01:59 my co-founder beay and I met at Stanford and we're both in the physics department
+02:05 we met actually doing summer research so if if you think about the set of folks
+02:10 that go to Stanford and kind of narrow it down to those that choose to study Physics and then narrow it down even
+02:17 further to the ones that want to stick around on campus during the summer for
+02:23 basically no money and continue to study Physics you you get to like a pretty committed and passionate and small group
+02:30 of people and I continued on to graduate school uh intending to become a
+02:35 professor of mathematics so I went down at uccla he was up in Marin County and
+02:42 my first month at grad school which was his first month at at his new job in finance Leeman Brothers went under and
+02:50 we had kind of the beginnings of the global financial crisis and he calls me
+02:55 up when I'm in grad school uh one month and basically he pitched me on creating
+03:02 an algorithmic trading firm ourselves and at first I thought it was kind of a
+03:07 crazy idea but I wasn't having an amazing time in in grad school as well
+03:15 and I generally you know like to try new things uh the idea of like working with
+03:21 him again really appealed to me and so I decided to spend my summer kind of
+03:27 hacking on trading strategies with him in San Francisco Isco and even though
+03:32 our first business didn't really end up working the idea of being an
+03:38 entrepreneur and having complete control over your destiny and the only thing between you and kind of your ultimate
+03:45 success and failure is the quality of the code that you write and the business strategy that really appealed to me I'd
+03:52 never been more passionate about anything professional I was working
+03:57 basically all of my waking hours when I wasn't sleeping or eating I would just
+04:02 like work the kind of like act of Entrepreneurship was so intoxicating to
+04:08 me that I couldn't even imagine doing anything else the Pair worked on two
+04:14 trading companies which they describe as moderate failures but as they gained
+04:20 deeper insight into the financial industry they began to notice glaring
+04:25 shortcomings it was a strange phenomenon I mean back then people forget but whenever we had a big financial
+04:31 transaction to do we would log on to our desktops to do it my name is Andrew Reid I'm a partner at sequa you would hit
+04:38 some menu button and you would descend into the scaffolding of some system that felt like it was built in the
+04:45 1980s the idea of paying bills or making investment decisions or making
+04:50 investment transactions on the phone seems natural and normal and I think
+04:55 everyone feels that way but 10 years ago even this was very very strange remember
+05:02 nothing nothing had been started since eade in 1998 in America nothing so those
+05:09 interfaces that you even log in today they still look very stale they haven't
+05:14 changed my name is Micky Mala I'm the founder of rivit capital and we've been
+05:19 a shareholder and partner to Robin Hood since 2013 the founders also noticed the
+05:25 world changing in several profound ways that created an opportunity for an
+05:30 entirely new kind of financial services company it was really three things one
+05:36 the rise of electronic trading and the complete change in the markets that kind
+05:42 of that Revolution injected into Finance it was the rise of mobile which was like
+05:49 a tectonic shift and new platforms became created that were built with Mobile in mind and if you remember after
+05:57 the global financial crisis there was a ton of dis discontent and disillusionment particularly among young
+06:04 people of how the financial industry worked and these Millennials they saw
+06:10 the global financial crisis a lot of their relatives and Friends lost their jobs in my case my cohort had graduated
+06:18 from college some of them had jobs at Leman brothers and pretty much as soon as they came in you saw these images of
+06:24 them taking their cardboard boxes out of the office in New York and they had to find something else to do and so there
+06:31 was this distrust and discontent young people felt like the financial system didn't work for them and that manifested
+06:38 in things like the Occupy Wall Street movement and large-scale Global protests
+06:44 and that also provided an opportunity for us to create a new brand because there was no Affinity no loyalty among
+06:51 young people to the established big Legacy Brands the big Financial companies and by creating Robin Hood I
+06:59 think we kind of tapped into that nerve Vlad and beu had a bold
+07:06 potentially revolutionary idea a mobile trading application with a power to
+07:11 democratize the financial industry but this posed challenges they would need to
+07:17 change entrenched attitudes about Finance products with weary consumers
+07:22 the founders faced their first Crucible moment how do you create an application that can attract users who are inclined
+07:29 to to dismiss your entire category what Robin Hood brought was a
+07:35 level of Simplicity that took away the intimidation of those complex graphs and
+07:40 those complex Microsoft 1995 SQL kind of dashboards into a very simple swipe and
+07:48 gestures and very thoughtful UI and that was what made it very not intimidating
+07:55 for people to sign up to reinvent trading for the mobile age Vlad and beu
+08:01 designed Robin Hood with a look and feel of a modern social media app it was Sleek colorful and most importantly easy
+08:10 to use it felt super responsive fast the user experience was incredibly intuitive
+08:16 and you you would submit a trade and it would process quickly and your information would update immediately and
+08:22 you could view your portfolio in real time and to anybody who wanted to get started investing it was night and day
+08:31 in addition to a frictionless mobile first design Vlad and beu made another decision that would come to define the
+08:39 platform it was important from the very beginning to us that Robin Hood was commission free because we wanted to
+08:47 give every possible chance for our product to succeed and we knew that a 7
+08:54 to10 commission was actually a big barrier and if you were someone that was
+08:60 starting with $100 $7 to10 is a significant percentage of the total
+09:06 amount you would be investing and so we thought that there was something very very powerful both about B being
+09:12 commission free and the account minimums which we lowered to zero as well you know a lot of Brokers had $2,000 account
+09:19 minimums that you needed to put in before you even started investing and we
+09:24 knew that if we were actually able to deliver this we would open up the market
+09:29 to a lot more people particularly young people without very much money to invest while Vlad and beu felt strongly about
+09:37 removing Financial barriers to entry many were skeptical about whether the
+09:42 company could build a business with this model Robin Hood when they started free
+09:49 trading had been tried many times before and had failed so people or Skeptics
+09:54 saying free trading doesn't work our thesis was that brokerages have many
+09:60 ways of making money they make money from margin lending they make money from
+10:05 the unused cash balances that are sitting in customers accounts there's a
+10:10 revenue stream called payment for order flow where you get rebates from market makers and if you look at the revenue
+10:18 that commissions comprised of a broker it was less than 50% the revenue from
+10:24 commissions range from somewhere around 10% to 30% so
+10:30 we knew it would be possible if we could sacrifice even up to 30% of the revenue
+10:36 if we built the company using modern technology and made it operate much more efficiently than a typical Legacy broker
+10:44 if we didn't need brick and mortar if we didn't need the headcount so I think I think in that sense that was the
+10:51 thinking of how we could build a sophisticated brokerage firm with the technology of a Silicon Valley
+10:59 Engineering company the founders felt they had a winning formula for attracting users but
+11:05 they faced a specific hurdle theyd need to clear to get Robin Hood off the ground the other confounding variable
+11:13 was that because we were regulated entity there's restrictions on how much you can market right so until you have
+11:20 the license you can't really Market your product the conventional wisdom of Silicon Valley at the time was that you
+11:27 would actually launch what's called a minimum viable product and you would try
+11:32 to get customer feedback and ideally you would do that before putting in a huge
+11:38 capital expenditure to actually get the thing off the ground and so that that just wasn't possible and we need to
+11:44 demonstrate to The Regulators that we had at least a year of capital to
+11:49 operate with before we would even get the the license so we we had this catch22 situation where investors wanted
+11:58 to invest in a company that had some traction and was drisk to some degree
+12:03 but we had the the regulated side of the business and we needed the capital in order to get the license we ended up
+12:10 having to like get super creative there were not many people doing Financial Services back then fintech was not a
+12:16 thing and we heard that there were these two kids from Stanford doing this company around it and I was having lunch
+12:23 at a sushi place here in downtown paloalto and on the table next to me Vlad is pitching to an angel investor
+12:29 and I get to listen to the pitch while I'm having lunch with somebody else I was paying more attention to his peit than to than to our lunch and so I came
+12:37 back to the office and said we got to go meet these guys and that's how we met them super early what made lad and beu
+12:45 an attractive team to partner with was their love for the space they truly went
+12:52 really deep in understanding how could they make this happen they was not just
+12:58 building an app like some hey I'm going to build an app that was the era where people were just building apps for the
+13:03 sake of saying that they have a mobile app we took all pitches we pitched everyone we could find we knocked on 75
+13:11 doors 75 investors probably much more than that we scratched and clawed we
+13:16 committed to not paying ourselves a salary until we got the approval because we wanted to demonstrate hey if this
+13:22 business doesn't eat we're not going to eat either backed by VC financing and with
+13:28 its brokerage license in the works Robin Hood began to look for ways to generate interest with
+13:34 consumers we knew that there would be uh a significant period of time between
+13:41 when we actually got the license and we could on board our first customers because there was there was a lot that
+13:46 needed to be built and the stakes were were much higher for a financial product
+13:51 you know when you're dealing with people's money you you had to make sure things were much more buttoned up we
+13:58 thought if you have to wait for a product you might as well like inject a little bit of creativity and Delight
+14:05 into that experience and there there was a company shortly before we launched called
+14:10 mailbox and one thing they created was like this experience of being on a wait
+14:17 list and they had turned the experience of kind of waiting for this product into
+14:22 a product in and of itself and so we were inspired by that a little bit we
+14:28 thought we would create an incentive for the most Avid most committed early
+14:33 adopters to share the product with their friends the thers implemented a feature
+14:39 where referring friends to the wait list allowed users to advance in the queue it instantly caught people's
+14:46 attention when the wait list hit a few thousand people which it did on day one
+14:53 we thought that was just amazing we we didn't anticipate getting to thousands of people on the wait list very quickly
+14:59 at all it went viral on Reddit and then it went to number one on Hacker News on
+15:05 a Saturday we had 50,000 signups in the first week we had about a million people
+15:12 join within the first year of of us announcing the product which I think at
+15:17 the time was the largest pre-launch demand for for a Consumer Finance product in history that early weight
+15:25 list viral moment of people telling their friends about Robin Hood signing up inviting people moving up the wait
+15:32 list to me that was the first example of many of Robin Hood Crossing this
+15:37 threshold from Financial Services application to culturally relevant
+15:43 consumer application and it also just spoke to the unique and compelling value
+15:48 proposition that Robin had offered we had iterated on a couple of projects uh
+15:54 as as entrepreneurs before we kind of like were able to announce the the full Robin Hood Pro
+15:60 and those projects had all failed and no matter how many growth hacks we did or
+16:05 how we could Market the product or what kind of referral mechanism we put in we just had a hard time getting anyone to
+16:12 stick with the product they didn't have product Market fit and the experience of
+16:17 launching Robin Hood was qualitatively different with the FIV around the wait
+16:22 list Robin Hood had broken through the noise but they still had to prove they could convert all the interest into to
+16:29 real users there was still a little bit of skepticism though I mean you hear a
+16:35 million people on a wait list I think the the initial thought was that maybe
+16:40 very few of those people would convert to actual funded brokerage accounts with
+16:46 money in them I remember I said listen I don't believe in that willing list you're probably going to have 10%
+16:52 convert uh a great campaign is 3% you'll probably have 10% because people are
+16:58 really early adopters but don't expect this to be crazy and they looked at me and said I think you're wrong we think
+17:05 we're going to convert 60 70% of the waiting list and I said listen I want to
+17:10 be wrong but I've never seen this and and they did hundreds of thousands of
+17:16 people on the wait list converted to users when Robin Hood launched publicly in March 2015 the company had over 2
+17:25 billion in transactions by the end of the year and kept growing exponentially from there the momentum attracted new
+17:32 investing Partners including sequa it was only a few years into the company's formation it was already
+17:40 incredibly obvious to anybody paying close enough attention that Robin Hood was poised to up in this entire industry
+17:49 Robin Hood knew they were disrupting The Brokerage industry but what happened next caught them by surprise a very
+17:57 strange thing happened which was the that basically all of the incumbent competitors all of the big Financial
+18:04 brokerage houses Dro commissions to zero all at the same time like within weeks
+18:09 of each other and I I haven't found an analog of this I kind of say that it
+18:16 would be like all the Legacy car makers recognizing that electric vehicles are the future and like abandoning internal
+18:23 combustion engines within weeks of each other I remember that moment vividly because it was fall of 2019 I was on my
+18:30 honeymoon and my phone just started buzzing and it was uh like it was almost
+18:35 as if it was in concert right it was Schwab and TD and erade were dropping
+18:41 commissions to zero and it was just very strange thing because it felt somehow
+18:48 like it was always going to happen but kind of hard to believe it would happen all at once the stock prices of some of
+18:55 these companies that were public just getting decimated to the point where those companies couldn't continue as
+19:01 Standalone companies they had to merge and be gobbled up by their larger competitors if you were cynical you
+19:08 would say Robin Hood's value proposition went from better faster cheaper to better faster and in a vacuum that would
+19:14 be a very frightening moment at the same time you know for those of us who really signed up for the mission of Robin Hood
+19:21 delivering value to customers it was this moment of catharsis where it became
+19:26 clear in one immediate moment that the whole idea of the company had
+19:33 worked the incumbent companies actually didn't need these Commissions in the
+19:38 first place this was money they were pulling out of consumer's Pockets because they had the luxury of doing so
+19:45 and again one small group of people in paloalto launched a product 5 years later it's free for everybody whether
+19:52 you sign up for Robin Hood or not there was heightened pressure like it's good for customers that this happened but
+19:58 Robin Hood also so had to work even harder to distinguish ourselves in what was a very competitive Marketplace so I
+20:05 think this was this this ju toos of facing the business reality with the
+20:11 other reality that we had kind of created a fundamental change and kind of
+20:16 created the new standard for for how our entire industry operated Robin Hood continued to Corner
+20:24 the commission free trading category through 2019 but early 2020 ushered in a period
+20:31 of financial chaos with stocks gting as the pandemic set in trading volume
+20:39 exploded we were dealing with so much load and so much growth that things were
+20:45 cracking across the entire infrastructure landscape I still remember the date March 2nd of 2020 we
+20:53 had what was basically a full day trading outage very painful for our
+20:59 customers painful for me as an engineer social media platforms you know Facebook
+21:05 but they have outages and customers can't log in they've even had ones that are multiple days but if you're dealing
+21:12 with people's money particularly in a time like the pandemic where the markets
+21:18 were moving up and down 5 plus per every single day it's heightened
+21:25 pressure that wasn't because someone pushed a button on a server was because the load was absolutely insane this
+21:32 wasn't like a long-term impairment sequa made a large $200 million investment
+21:37 into Robin Hood that next week just because it was clear to me that Robin
+21:42 Hood was still the dominant force in this industry and would be for many years to come and basically what we had
+21:48 to do was we put all of our best people you know our our best resources on just
+21:55 making sure that we could scale our systems uh for from clearing to trading to really everything and we had to
+22:04 significantly slow down new product development just to make sure we could keep up with the
+22:10 growth Robin Hood was able to raise capital and stabilize its systems but in
+22:16 early 2021 amid boredom inducing pandemic lockdowns and massive fiscal
+22:23 stimulus a new investing Behavior emerged fueled by the scale and speed of
+22:29 of the internet consumers were gripped by a stock speculation craze that reverberated at an unprecedented Pace
+22:37 Robin Hood would be thrust into the Global Spotlight in a way few companies
+22:42 ever are in early 2021 there was what is
+22:49 referred to as the mem stock period where literally millions of retail
+22:55 investors primarily were seeking in in put from Reddit and a particular
+23:02 subreddit of Wall Street bets that encouraged everyone to buy no matter the
+23:07 price stocks like GameStop AMC there were a handful of others my name is
+23:13 Jason Warick and I'm the Chief Financial Officer at Robin Hood the meme stock
+23:18 phenomenon was pretty crazy it came out of left field I don't think anyone was
+23:24 anticipating that even a week before it happened I mean there were a lot of people that were buying them just
+23:29 because of what was going on on social media but there were a lot of people that cared very deeply about them too
+23:36 and I think they viewed companies like GameStop and AMC as being unfairly
+23:43 treated during the pandemic I mean you can imagine these are brick and mortar Legacy retailers there was a lot of
+23:51 nostalgia value in them and the government had come in and shut everything down there was some empathy
+23:57 for these companies it started off as kind of an amusing
+24:03 headline but really quickly as we saw Millions join the
+24:08 platform and demonstrate buying only activity regardless of the price uh we
+24:15 started to quickly realize this is an unusual moment what was on my mind was I
+24:21 just want to make sure that we're doing everything we can to be up and reliable and that we don't have any infrastructure issues and you know the
+24:28 the last thing that occurred to me was that um we we would have to shut down
+24:34 trading to comply with capital requirements and these sort of Arcane rules and that we would be kind of
+24:42 wrapped into some almost political debate around hedge funds colluding with
+24:49 the US government to to shut down trading the stock market met the internet in a way that nobody could
+24:57 forecast and created this incredibly intense moment where Robin Hood found itself at
+25:04 the epicenter of Front Page News in the early morning hours of
+25:09 January 28th 2021 the nscc an organization that oversees
+25:15 clearing settlement and risk management for brokerages demanded Robin Hood post
+25:21 3.7 billion dollar in cash reserves to mitigate the risk of mem stock trading
+25:27 activity on its platform it was an unprecedented number basically the way
+25:35 that these Capital calls are delivered are through automated files that kind of
+25:40 get sent in the middle of the night and there was a file that was sent that was received by our operations team and it
+25:49 had uh $3 billion collateral call on it and up until that time the total amount
+25:57 of capital that Robin Hood had raised was in the hundreds of millions the first I heard about this
+26:06 was from a phone call in the middle of the night most nights my phone's on mute
+26:11 and so I I'm really grateful that for whatever reason I had unmuted my phone
+26:17 and was awoken it was probably 2:30 or so in the morning I remember getting a
+26:23 phone call from vad early in the morning had to be before 5: in the morning an
+26:29 entrepreneur should always know who is the first person they call when the hits a fan and that phone call is one of
+26:36 the most important phone calls that you got to be able to do because that phone call is not about judging it's not about
+26:42 criticizing it's about having a mindset to enter into action that set off really
+26:49 probably 3 to five days of just non-stop work and response from the team across
+26:55 the company obviously this is full crisis mode and you're in absolute like problem solving because you know this is
+27:01 something that has been foed upon you from a rigid
+27:06 machine we got on the phone as a leadership group and brought together uh
+27:13 experts in the area to First understand what was the the request that we were
+27:20 receiving and decide on how to respond to the nscc about this collateral call I
+27:28 told Vlad that number has no sense to your volume and I said to him listen
+27:34 let's let's divide and conquer have your team called them back and says you do not agree with the number don't accept
+27:41 it because there's no explanation I think the volume they did on the stocks
+27:46 that were considered gamestoy stocks like the meme stocks was probably a few hundred million dollars that day the
+27:52 previous day so why would you have to post collateral for 10 times the trading volume the collateral had no no sense to
+27:59 any metric of any time in history as by a regulator ever I said go and fight it
+28:06 don't accepted while Robin Hood I think got the Lion Share of the press we were
+28:11 not alone in this other brokerages we were hearing were also experiencing this
+28:17 same level of collateral call and then I remember seeing Vlad and Vlad is and was
+28:23 one of the you know steadiest hands I've ever seen Robin Hood worked the phones
+28:28 with the nscc trying to lower the collateral requirements while Mickey Andrew and others looked for emergency
+28:36 capital I think what ended up happening was the collateral requirements were subsequently lowered I think the NC
+28:44 applied discretion vad was saying hey they're revisiting the number it may not be three it may be 1.2 and or 1.5 and at
+28:53 the same time I remember I called our bank CEO for rivet for silicon Bley Bank
+28:59 Greg Becker I woke him up and said Greg how many times have I asked you for a favor and he says this is the second
+29:06 time in 10 years the first time was really expensive what do you need I says we need to wire half a billion dollars
+29:12 of our money to Robin Hood in the next 4 hours he says you what and to the credit
+29:21 we worked for the next 4 hours and by 9:30 in the morning we had a green light to wire $500 million to Robin Hood we
+29:29 took that half a million to a billion two by 10 something in the morning but the team didn't feel they were in the
+29:36 clear yet we just didn't know what was going to happen the next day or the day after we just had no idea and they
+29:41 wanted to sleep better at night because imagine you're running on fumes you're opening millions of accounts you're
+29:47 serving millions of customers mem stock Mania crypto Mania too many Manas at the same time something else could happen
+29:54 let's have excess Capital we wanted to make sure we were in a position for that to never happen again and
+30:02 that's what really kicked off the fundraising that happened over the next
+30:07 few days and we ended up raising a couple of billion dollars I think it was
+30:13 between three and 4 billion at the end of the day just so that we would have plenty of Headroom and cushion to open
+30:19 it up in the future Robin Hood managed to raise a $3.4 billion War chest in
+30:26 days a multiple of what it had previously raised in its 7 years of existence but the public backlash was
+30:34 only beginning ultimately the collateral
+30:39 requirements were met but in order to comply with our Clearing House deposit requirements Robin Hood Securities which
+30:46 was the clearing firm that we created had to restrict opening new positions in
+30:52 a whole bunch of stocks including GameStop what everyone was worried about on the operation team was what's going
+30:60 to happen the next day or if like this trend of exponential growth continues
+31:07 and people keep piling in on a global level into a small handful of names are
+31:15 those requirements going to get into the tens of billions hundreds of billions and so ultimately it was kind of
+31:23 planning for the future that led to us to enact trading restrictions on these names
+31:29 and that was very painful it was very painful for us I mean no doubt it was painful for customers as
+31:35 well when Robin Hood took down the buy button on a handful of stocks including
+31:44 GameStop it elicited a really visceral reaction from our customers there was a
+31:51 feeling that every point that GameStop stock went up was you know hurting the
+31:56 man and helping this company that people felt love and Nostalgia for and there
+32:04 was a feeling that by restricting people from buying the stock but allowing them
+32:10 to sell the stock that this was unfairly depressing the price of GameStop or
+32:16 AMC the restrictions on buying meme stocks sparked public outrage a
+32:23 conspiracy theory took hold that Robin Hood had been pressured by hedge funds who were shorting stops stock a
+32:30 narrative that spread in the media and among some politicians Vlad and other
+32:35 industry leaders even had to testify at a congressional hearing to explain what
+32:40 had happened you don't study for this you don't read books about this you are not prepared for something like this you
+32:47 are not prepared for the pressure of Twitter hating you Twitter having
+32:52 conspiracy theories readit believing that you have you have an evil plan and you are Darth Bader for threats for
+33:00 death threats for the worst of the wors those things psychologically take a much
+33:07 bigger burden and they take a long time to heal because you're trying your best
+33:12 to serve your customers with the promise that you had when you started the company which is democratized financial
+33:18 services for all I think fundamentally they felt
+33:23 betrayed and it was a horrible feeling to have as a leadership team knowing
+33:30 that customers felt so betrayed and it was an incredibly complicated storyline
+33:38 to articulate on why did Robin Hood have to do that that was like an incredibly
+33:43 intense period this was like much deeper than a PR crisis there was challenges with trust from the user base from the
+33:50 customers from the community I thought that this was not going to fall in the
+33:56 laps of Robin Hood as their fault but it did and I missed the mark the world the
+34:03 congressman the Senators the media everybody turn and point the finger to
+34:09 Robin Hood as the blame of this it was obviously an incredibly negative press cycle they made movies about it
+34:15 navigating through that I think created a huge amount of loss of trust in the company by some of its core users Vlad
+34:22 went on a big tour thereafter to like try to like really provide transparency to customer is on exactly we got this
+34:30 deposit requirement here's what we had to do to explain you know the company's problem solving in that incredibly
+34:37 challenging circumstance then there was this this Narrative of collusion with
+34:42 hedge funds that we had to make sure that we dispelled so I was just like
+34:48 trying to put myself out there a lot more and I'd always been a very heads
+34:54 down person like focus on the work I didn't really do a ton of media or
+34:60 podcasts but I think at that time it was clear that I needed to do more and even
+35:06 though it was uncomfortable and it wasn't the most fun topic customers were
+35:12 just confused and the public was confused maybe they'd heard of Robin Hood for the first time with GameStop
+35:19 and AMC and in this controversy so um I had to put myself out there a lot more
+35:25 and you know do a lot of uncomfortable Sation just to kind of clear the air
+35:30 about what had happened it was a trying time I was
+35:36 really pleased with the way the leadership team stuck together and responded but it was exhausting exciting
+35:46 it was scary and it was super disappointing to have disappointed our customers that way we ended up pushing
+35:53 for industry changes including lowering the settlement period that's required of
+35:58 trades and that that ended up becoming law and now in terms of communicating
+36:04 with customers both for me personally and the company I think we're much better at it and we're sort of more
+36:10 comfortable in in our own skin as a public company and me as an individual
+36:15 so even even though it was painful I think it it was a very valuable process of maturation that had kicked off in us
+36:23 if you actually like try to put that whole moment into a bubble just the conspiracy theories and the outrage and
+36:31 Vlad going on a clubhouse with Elon Musk raising 3 billion dollars in a weekend
+36:37 you know it almost sounds like out of a fever dream when you talk about it in hindsight when you're facing the true
+36:43 first hurdle or massive hurdle you have
+36:48 two options most Founders will either sink and a very few will swim and Thrive
+36:56 and they had to do that that's why it's such a crucial moment in their history a
+37:02 few months later in July of 2021 Robin Hood went public even as it continued
+37:07 working to rebuild user trust but 2022 with Rising inflation Rising
+37:15 interest rates and a market meltdown would bring entirely new
+37:20 challenges the FED went from cutting rates to zero and injecting a whole
+37:26 bunch of stimulus into the the economy due to co to the fastest period of
+37:34 hiking rates in multiple decades and what typically happens when rates go up
+37:39 is investing in stocks and other risk assets becomes less attractive because imagine if if you can earn a 5% yield
+37:48 risk-free just by holding cash the bar to like making a successful investment
+37:53 is is much higher so you tended to see a movement away from people open open up brokerage accounts and placing trades
+37:60 and investing towards different types of behaviors Robin Hood basically since our
+38:06 founding was focused on being the best place for people to get started investing and so we we had this big
+38:12 problem which was what do you do when people don't want to invest and when all of these trends that helped grow our
+38:18 business tremendously during the pandemic now suddenly we like sharply reversing 2022
+38:26 was a hard time for theany it was a Slowdown I think it was a crucible moment in 2022 because we had
+38:34 to adapt and respond to changing circumstances and we had to embrace a
+38:41 new way of thinking there is exhaustion a fear of making decisions because you
+38:46 were being scrutinized for so long on everything that you did or said or didn't do or didn't say and they had to
+38:53 re-energize themselves grow their own confidence again I I think it was a very useful exercise to kind of step back
+39:02 almost like manufacturing an outof Body Experience so if you were a third-party
+39:08 Observer that was observing yourself in action kind of running the company and making your decisions and doing the
+39:14 day-to-day what would you say and are there things that perhaps we're holding
+39:19 on to As Leaders trading activity declined sharply as inflation fears took over and
+39:28 nearly half of Robin Hood's users left the platform from the frenzy peak of
+39:33 2021 it was the kind of Crucible moment that calls for reflection and
+39:39 reinvention one of the pieces of advice I remember is any company that successfully navigates a
+39:46 downturn does it by strengthening the core of the business so you have to find
+39:51 if you don't know what the core of the business is you have to find it and then you have to strengthen it and the
+39:57 observation that that I made at that time was the core of the business was active Traders so it wasn't novices but
+40:04 it was actually folks that maybe had become more sophisticated Advanced users
+40:11 trading things like options Advanced equities the advanced active Traders
+40:18 were the resilient piece of our business and that's because you know they're
+40:24 they're sophisticated enough to have strategies to deploy when markets are moving sideways or even coming down and
+40:30 so they tend to be more resilient and they tend to like continue to trade even when markets are not going up when we
+40:38 looked at our business in 2022 what we realized was the more active and
+40:43 sophisticated a customer was the less happy they were with the service and
+40:49 when we kind of like deeply understood this we realized it was a five alarm
+40:54 fire I mean if you think about any business you're most engaged active customers should be the ones that are
+40:59 happier with the service but in our case we had kind of the opposite effect we basically were not building for those
+41:05 customers we were building for first timers but we had never like
+41:11 triangulated toward this important customer base I think what we didn't really realize was that by making Robin
+41:19 Hood available to everyone it would also become a platform that was desirable for
+41:26 more active and sophisticated Traders I mean they too see the benefit of no trade commissions and access on the
+41:33 mobile phone and I think one of our early missteps is our failure to really
+41:40 recognize active Traders as an important constituent and what happened was during
+41:46 a downturn that ended up in us remobilizing the company essentially
+41:51 refounding the company towards active Traders as like the core constituent along with prioritizing
+41:59 active Traders Robin Hood also worked to diversify its product offerings Beyond equities trading now customers are
+42:07 engaging with us in a variety of ways that just wasn't available before there's retirement accounts we have
+42:16 approaching 10 billion dollar of customers invested in retirement savings through us we have high yield cash sweep
+42:24 balances where customers can earn industry leading return for their uninvested cash
+42:31 Securities lending which is a great way for customers to augment the yield that they have on their Investments and so on
+42:39 and as we continue to diversify the way that we serve our customers this
+42:46 naturally leads to more revenue streams for the company and a stronger Financial
+42:52 footing and we're as of last quarter now up to eight business lines that have
+42:58 Revenue run rates that are over hundred million that is a recipe for really
+43:05 strong financial positioning going forward as they normalized their
+43:10 operations they sort of went and and talked about how do we serve the Millennials our customers because guess
+43:17 what the founders and the management team are millennials that's their age and they have to have retirement
+43:24 accounts for their kids and have all these products and care about high yield interest where before they didn't
+43:30 because you were all in all in on stocks every day so the evolution of the product stack is also the evolution of
+43:37 the team as they've aged in the middle pack of the Millennials so when they say they're going to serve the Millennials
+43:43 with all the financial products they mean it because it's them they're serving their own generation fast
+43:49 forward to 2024 and you know the Stock's gone from $8 a share to 24 wherever is
+43:55 today and it wasn't decisions of 2024 that that have caused the stock to triple it was the decisions of 2021 2022
+44:03 2023 the hard work cultural resets the trust building the focus on customers and on
+44:11 products in 2022 when we were in the beginning of this strategic shift it was
+44:16 a very harrowing experience and yeah it was it was definitely a different type
+44:22 of challenge if if you have to like refocus your business and move a lot of resources and focus on a new type of
+44:28 customer there was a lot of uncertainty and it it took a lot of conviction and just a a ton of hard work by a lot of
+44:36 amazing team members to successfully navigate that the strategy worked Robin
+44:42 Hood has continued to set new Revenue records in 2024 despite having fewer users trading than in the height of mem
+44:49 stock Mania in 2021 Robin Hood today compared to the first time I met them it
+44:57 has a same core DNA they truly still want of democratized financial services
+45:03 with very big differences from back then they're understanding that this is a long-term game not an overnight Sprint
+45:11 Robin Hood's Legacy is not yet written I think they have earned the right to keep
+45:16 playing and I think the Legacy will be written when the Millennials retired and
+45:24 we are still 25 30 years away from that I think Rob positioned himself now is an
+45:29 extremely valuable company not because of hype or a hype multiple but because
+45:34 of lots of profits in a quality long-term business I'm reminded of uh the Winston Churchill quote If You're
+45:41 Going Through Hell keep going I think a lot of a lot of navigating these things
+45:47 is to just put one foot in front of the other and keep going and I think
+45:54 ultimately nobody that's been successful hasn't gone through a bunch of challenges probably if you don't you're
+45:59 not pushing hard enough and you're not challenging yourself enough I think at the end of the day despite all the
+46:06 change what really matters to people is being in control of their finances
+46:11 having the tools that allow them to make decisions I think over the next few decades it's going to be clear to people
+46:18 that they can't really rely on others you can't rely on your employer or really the government to like make sure
+46:25 your finances are in order and you're secure and what we can do is make sure
+46:31 we give people the best tools and we can use technology to solve the problems of being in control and managing your
+46:37 finances and we can do that not just with investing but all aspects of it
+46:43 across the board for taking on your your first loan building credit retiring
+46:49 building your wealth and I think from the very beginning the the ethos of the company has been to deliver tools that
+46:57 were previously used only by the wealthy and and make them available to mass
+47:02 Market consumers and I think there's a lot there's a lot that remains to be done across the board for helping people
+47:10 secure their financial [Music]
+47:18 Futures this has been Crucible moments a podcast from seoa capital
+47:24 [Music]
+47:30 Crucible moments is produced by the Epic stories and fox creative podcast teams along with seoa
+47:36 capital special thanks to Vladimir tenf Jason Warick Nikki Mala and Andrew Reid
+47:43 for sharing their stories incidental audio created by 11 Labs the seoa partner
+47:53 [Music]

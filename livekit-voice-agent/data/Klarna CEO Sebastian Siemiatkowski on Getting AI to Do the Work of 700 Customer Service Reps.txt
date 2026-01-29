@@ -1,0 +1,4114 @@
+00:00 I feel it's different with copy and
+00:02 
+
+00:02 image in copy though there in the llms
+00:06 
+
+00:06 are much less impressed and I think the
+00:09 
+
+00:09 reason for that is that at least how the
+00:12 
+
+00:12 llms work is they work towards the
+00:14 
+
+00:14 average so they are trained towards the
+00:17 
+
+00:17 average and creativity is not the
+00:20 
+
+00:20 average
+00:22 
+
+00:22 [Music]
+00:37 
+
+00:37 it was 2010 when we first got into
+00:39 
+
+00:39 business with a young man named
+00:41 
+
+00:41 Sebastian based in
+00:43 
+
+00:43 Stockholm fast forward to 2024 and Clara
+00:47 
+
+00:47 is a Global Payments and commerce
+00:50 
+
+00:50 Behemoth Clara recently made its Mark in
+00:53 
+
+00:53 the world of AI by sharing some of the
+00:56 
+
+00:56 results of a product that they built for
+00:59 
+
+00:59 customer facing workflows
+01:01 
+
+01:01 clar has been one of the more aggressive
+01:03 
+
+01:03 experimenters in the world of AI both
+01:05 
+
+01:05 with external workflows as well as
+01:07 
+
+01:07 internal use
+01:08 
+
+01:08 cases Sebastian joins us today to say a
+01:12 
+
+01:12 few words about what they built and
+01:13 
+
+01:13 where he sees this world
+01:16 
+
+01:16 headed Sebastian welcome to the show
+01:19 
+
+01:19 thank you for having me so you you have
+01:22 
+
+01:22 become a poster child perhaps the
+01:25 
+
+01:25 canonical example of putting AI into
+01:28 
+
+01:28 reduction inside of your business
+01:31 
+
+01:31 to make life better for your customers
+01:33 
+
+01:33 and to make things more efficient
+01:34 
+
+01:34 internally and so the thing that
+01:36 
+
+01:36 everybody is desperate to know about is
+01:39 
+
+01:39 how did you do it why did you do it what
+01:40 
+
+01:40 lessons have you learned what are the
+01:42 
+
+01:42 pros and cons everything related to the
+01:44 
+
+01:44 customer support implementation that you
+01:46 
+
+01:46 guys have done but before we get into
+01:49 
+
+01:49 that unless we put the cart before the
+01:51 
+
+01:51 horse can you just give us two words for
+01:53 
+
+01:53 people who may not be customers uh what
+01:56 
+
+01:56 is Clara give us a sense for the size
+01:58 
+
+01:58 and the scope and the and the business
+01:59 
+
+01:59 that clar's in
+02:00 
+
+02:00 sure um so I mean it basically started
+02:04 
+
+02:04 as a payment solution for shopping
+02:06 
+
+02:06 online um often associated with this buy
+02:08 
+
+02:08 noway lator thing but actually today we
+02:12 
+
+02:12 do about100 billion do worth of volume
+02:14 
+
+02:14 across the world we have a half a
+02:16 
+
+02:16 million Merchants we have about 100
+02:18 
+
+02:18 million consumers they can all both pay
+02:22 
+
+02:22 the full amount what we call debit and
+02:24 
+
+02:24 they can pay in installments and use
+02:26 
+
+02:26 credit and it's also a fintech and a Neo
+02:29 
+
+02:29 Bank in the sense that we have cards
+02:30 
+
+02:30 does balances the whole thing we are a
+02:32 
+
+02:32 fully regulated bank and there's about
+02:34 
+
+02:34 4,000
+02:36 
+
+02:36 employes got it and 100 million plus
+02:38 
+
+02:38 customers in 20 plus countries we can
+02:40 
+
+02:40 see how the customer support
+02:42 
+
+02:42 implementation got to the scill that it
+02:43 
+
+02:43 did I think there are a lot of people
+02:46 
+
+02:46 who have contemplated doing something
+02:48 
+
+02:48 like what you guys did there are very
+02:50 
+
+02:50 few people who have actually executed
+02:52 
+
+02:52 against it and so maybe the first
+02:54 
+
+02:54 question we'll ask ask you about this is
+02:56 
+
+02:56 how did you do it like how did you guys
+02:58 
+
+02:58 get into production so quickly with
+02:60 
+
+02:60 something that seems to be pretty darn
+03:02 
+
+03:02 effective sure um so I think you can
+03:04 
+
+03:04 start at the I mean the first thing that
+03:06 
+
+03:06 happened to me at least was like
+03:07 
+
+03:07 November uh 2022 I'm on Twitter and then
+03:11 
+
+03:11 I see people saying you should really
+03:13 
+
+03:13 try out this thing called CHP I tried it
+03:15 
+
+03:15 out and I'm blown away like I was like
+03:17 
+
+03:17 wow this is like amazing I've never seen
+03:19 
+
+03:19 anything like this or at least maybe
+03:21 
+
+03:21 when I tried Google 20 years ago but
+03:22 
+
+03:22 this is no this is even more impressive
+03:24 
+
+03:24 and so at that point of time I was like
+03:26 
+
+03:26 okay this is really cool but then
+03:28 
+
+03:28 holidays came Christmas and then after
+03:29 
+
+03:29 that I was like ooh you know we have to
+03:32 
+
+03:32 lean into this and let's see if we can
+03:34 
+
+03:34 get hold of Sam mman and open Ai and and
+03:38 
+
+03:38 so forth and I realized that soon Sam is
+03:40 
+
+03:40 going to be a person who's going to be
+03:41 
+
+03:41 impossible to get a meeting with so I
+03:42 
+
+03:42 got to try before everyone else and so
+03:44 
+
+03:44 finally you know lucky for me I had sey
+03:46 
+
+03:46 as a shareholder in in both clana and
+03:49 
+
+03:49 open AI said I was a good opener I got
+03:51 
+
+03:51 it and I flew to San Francisco
+03:52 
+
+03:52 pretending that I was going there for
+03:53 
+
+03:53 other business but meeting Sam was the
+03:55 
+
+03:55 only reason um originally my time for
+03:58 
+
+03:58 meeting was 2 hours by the time I got
+03:59 
+
+03:59 there it was only 30 minutes left
+04:01 
+
+04:01 because the secretary was like down
+04:03 
+
+04:03 prioritizing my meeting uh and I came in
+04:05 
+
+04:05 and I sat down with Sam I was like I got
+04:07 
+
+04:07 a pitch to him that working with this
+04:09 
+
+04:09 European bank fintech is going to be a
+04:12 
+
+04:12 great um a great client to test open AI
+04:15 
+
+04:15 products on because what I really wanted
+04:16 
+
+04:16 to accomplish was to use us as a guinea
+04:19 
+
+04:19 pig I wanted to make sure that we would
+04:21 
+
+04:21 always try the latest greatest and that
+04:23 
+
+04:23 they would find us as a great client to
+04:25 
+
+04:25 work and develop things with and we
+04:27 
+
+04:27 managed to establish that relationship
+04:29 
+
+04:29 and we had a you know a joint slack
+04:31 
+
+04:31 Channel start experimenting a lot and
+04:33 
+
+04:33 then we the second thing that we did was
+04:36 
+
+04:36 important to me was to encourage people
+04:38 
+
+04:38 internally to really lean in and try it
+04:41 
+
+04:41 and originally there was tons of these
+04:42 
+
+04:42 like concerns what about data what about
+04:44 
+
+04:44 this so we made sure to very quickly
+04:47 
+
+04:47 solve these things so we were gdpr
+04:48 
+
+04:48 compliant and that we could set the
+04:50 
+
+04:50 right structures around it since we're a
+04:52 
+
+04:52 bank and all that and really make sure
+04:54 
+
+04:54 that everyone in the company would
+04:55 
+
+04:55 experiment with it and then it just
+04:57 
+
+04:57 happened to be so that some people were
+04:59 
+
+04:59 more curious and more passionate and
+05:01 
+
+05:01 some people were less and that was fine
+05:03 
+
+05:03 but some people leaned in and it
+05:05 
+
+05:05 happened to be so that one of the teams
+05:06 
+
+05:06 that leaned in started looking at a
+05:08 
+
+05:08 fairly actually complex Challenge in a
+05:11 
+
+05:11 way which was what we call dispute
+05:13 
+
+05:13 resolution and dispute resolution in the
+05:15 
+
+05:15 bank is basically a customer calls us
+05:17 
+
+05:17 and says hey I didn't get that package
+05:19 
+
+05:19 and the merant says but I did ship that
+05:20 
+
+05:20 package and then we have to be like a
+05:22 
+
+05:22 small Mei court that basically gathers
+05:24 
+
+05:24 all the evidence and decides whether you
+05:26 
+
+05:26 know who has who's done wrong and who's
+05:28 
+
+05:28 done right right and what are we going
+05:29 
+
+05:29 to do on this transaction who's going to
+05:31 
+
+05:31 cover the cost and these errands are
+05:33 
+
+05:33 very complex they require a lot of
+05:35 
+
+05:35 evidence a lot of emails back and forth
+05:37 
+
+05:37 and communication with both the consumer
+05:38 
+
+05:38 and the merchant takes a lot of time and
+05:41 
+
+05:41 there's always been a backlog and it's
+05:43 
+
+05:43 always frustrating because customers
+05:44 
+
+05:44 wait a lot before they get the final
+05:45 
+
+05:45 outcome and so we started experimenting
+05:49 
+
+05:49 just to see if CHP and these Services
+05:51 
+
+05:51 could help us make basically like a
+05:54 
+
+05:54 co-pilot help us take those decisions
+05:56 
+
+05:56 faster and I think to some degree what's
+05:60 
+
+05:60 important here is that you know a lot of
+06:02 
+
+06:02 it comes back to the creativity of the
+06:04 
+
+06:04 team um and we had a lot of teams in
+06:07 
+
+06:07 clana some were more successful someone
+06:08 
+
+06:08 L this team happened just to be very
+06:10 
+
+06:10 very strong and really good at what they
+06:11 
+
+06:11 were doing and very creative and they
+06:13 
+
+06:13 found and built away what is actually
+06:15 
+
+06:15 today referred to as Rags they built
+06:18 
+
+06:18 already back then they realized that
+06:19 
+
+06:19 would be a good solution and within two
+06:23 
+
+06:23 months they were demoing internally to
+06:25 
+
+06:25 us and others that they had managed to
+06:27 
+
+06:27 build a co-pilot that basically helped
+06:30 
+
+06:30 accelerate the process and also increase
+06:32 
+
+06:32 the quality of the decision- making
+06:34 
+
+06:34 because it was it was making sure that
+06:36 
+
+06:36 we actually really you know took in all
+06:39 
+
+06:39 the irrelevant information and then took
+06:41 
+
+06:41 a decision on these disputes and we said
+06:44 
+
+06:44 look this is amazing let's put it in
+06:45 
+
+06:45 production um so far just as a co-pilot
+06:49 
+
+06:49 and then the team you know which was
+06:50 
+
+06:50 crazy like two months later we suddenly
+06:53 
+
+06:53 get this slack message in tally which
+06:55 
+
+06:55 says um we're out of errands can you
+06:58 
+
+06:58 send us more tickets and um that's never
+07:01 
+
+07:01 happened like this has been a constant
+07:02 
+
+07:02 backlog was just like this is really
+07:05 
+
+07:05 impressive and then we said look it's be
+07:07 
+
+07:07 crazy to try to see how we could you
+07:10 
+
+07:10 know um increase the pace of this and
+07:13 
+
+07:13 actually even answer customer service
+07:15 
+
+07:15 erand and uh and that was that and then
+07:18 
+
+07:18 that team went on that challenge I think
+07:21 
+
+07:21 to us what was most critical was one of
+07:24 
+
+07:24 the rules that we agreed on was that the
+07:26 
+
+07:26 customer should always know if they
+07:28 
+
+07:28 speak to AI or if they speak to human M
+07:31 
+
+07:31 um and that's been important but when we
+07:34 
+
+07:34 wanted to start testing this we had a
+07:36 
+
+07:36 bug and the bug was that for a few
+07:39 
+
+07:39 thousand conversations it wasn't clear
+07:41 
+
+07:41 that it was
+07:42 
+
+07:42 Ai and when we then looked at the which
+07:46 
+
+07:46 was you know not intended but the
+07:48 
+
+07:48 conclusion was we could read a few
+07:49 
+
+07:49 thousand transcripts of conversations
+07:52 
+
+07:52 where the human wasn't a the customer
+07:54 
+
+07:54 wasn't aware that it was AI answering
+07:56 
+
+07:56 and we realized that the AI was doing
+07:58 
+
+07:58 heck of a good job
+08:00 
+
+08:00 and that made us conclude that it's the
+08:04 
+
+08:04 most important thing to us was that
+08:05 
+
+08:05 customer satisfaction would be equal or
+08:08 
+
+08:08 greater than um what um you know it it
+08:13 
+
+08:13 was with a human agent and as we saw
+08:15 
+
+08:15 that we started reach that point um then
+08:19 
+
+08:19 it became we became less nervous about
+08:21 
+
+08:21 putting this into real production and
+08:23 
+
+08:23 actually try it right so I think that
+08:25 
+
+08:25 like you know it was really the effort
+08:27 
+
+08:27 of that amazing team that kind of tested
+08:29 
+
+08:29 and iterated and let a few you know
+08:31 
+
+08:31 lucky shots that along the way that then
+08:34 
+
+08:34 allowed us to put it into production
+08:36 
+
+08:36 amazing um there are so many questions
+08:38 
+
+08:38 that we want to ask to follow up on this
+08:40 
+
+08:40 so maybe we'll start with you mentioned
+08:43 
+
+08:43 that rag is part of the architecture can
+08:45 
+
+08:45 you say a few more words about the
+08:46 
+
+08:46 implementation itself and sort of where
+08:48 
+
+08:48 does open AI end and Clara begin in
+08:50 
+
+08:50 terms of what you guys have built on top
+08:53 
+
+08:53 to make this work well I think that the
+08:56 
+
+08:56 uh I it's funny cuz in general I'm
+08:59 
+
+08:59 always so freaking transparent and this
+09:00 
+
+09:00 is one time in my life that I actually
+09:02 
+
+09:02 feel a bit Cy about telling too much
+09:04 
+
+09:04 about the secret sauce um because I
+09:07 
+
+09:07 actually think about this as a fairly uh
+09:09 
+
+09:09 important strategic Advantage but um
+09:12 
+
+09:12 what I can say is that in in our case um
+09:16 
+
+09:16 one of the key elements was that like
+09:19 
+
+09:19 it's about making sure that the
+09:22 
+
+09:22 instructions are clear if you um if you
+09:27 
+
+09:27 on board a human and you ask a random
+09:31 
+
+09:31 human to sit in our customer service and
+09:33 
+
+09:33 try to answer a question and the
+09:36 
+
+09:36 documentation that's available to that
+09:37 
+
+09:37 human is subpar uh because there's an
+09:41 
+
+09:41 assumption that you can rely on what
+09:44 
+
+09:44 people have learned in different
+09:46 
+
+09:46 sessions or assumptions um you're not
+09:49 
+
+09:49 going to be successful but if youve
+09:50 
+
+09:50 written a documentation that is detailed
+09:52 
+
+09:52 enough so you could even if very slowly
+09:55 
+
+09:55 put any random individual and they could
+09:57 
+
+09:57 slowly go through your FAQ and manuals
+09:60 
+
+09:60 actually answer a question correctly
+10:02 
+
+10:02 because it was uh documented at level
+10:04 
+
+10:04 detail then it works and that's how I
+10:07 
+
+10:07 think about the AI today it's basically
+10:09 
+
+10:09 an employee that turns out that the work
+10:11 
+
+10:11 every day and has forgotten everything
+10:13 
+
+10:13 about what CL is how it works and those
+10:15 
+
+10:15 that and every time you need to tell it
+10:17 
+
+10:17 again um and that may change over time
+10:20 
+
+10:20 but currently that's partially the game
+10:21 
+
+10:21 and then so that that helped us a lot to
+10:23 
+
+10:23 think about it that way that we just
+10:25 
+
+10:25 needed to make sure that the
+10:26 
+
+10:26 documentation and the manuals were clear
+10:27 
+
+10:27 enough and of quality enough and then it
+10:30 
+
+10:30 can actually execute because many times
+10:32 
+
+10:32 you know if you it's I mean the the the
+10:34 
+
+10:34 truth that has been the truth for data
+10:36 
+
+10:36 scientists for a long period of time
+10:37 
+
+10:37  in out right like if you if
+10:40 
+
+10:40 you feed data mods with bad things
+10:41 
+
+10:41 you're going to get bad results right so
+10:43 
+
+10:43 you need to make sure what you feed in
+10:44 
+
+10:44 is good and then you can get better
+10:47 
+
+10:47 outcomes Sebastian you I think you
+10:49 
+
+10:49 tweeted that uh your customer support
+10:51 
+
+10:51 agent is now handling two-thirds of your
+10:53 
+
+10:53 customer service inquiries y um you got
+10:55 
+
+10:55 a question from your audience on Twitter
+10:57 
+
+10:57 this week uh are you planning to replace
+10:59 
+
+10:59 your CS Department 100% uh with AI I
+11:03 
+
+11:03 guess from a technological perspective
+11:04 
+
+11:04 do you think that's possible on what
+11:06 
+
+11:06 time span and and what are your plans
+11:08 
+
+11:08 well I mean it's very hard obviously to
+11:09 
+
+11:09 predict how far will ai go and what can
+11:12 
+
+11:12 we do in the future and so forth but I
+11:14 
+
+11:14 think that the it's definitely not going
+11:17 
+
+11:17 to happen anytime soon and I do think
+11:19 
+
+11:19 that there will be customers that prefer
+11:21 
+
+11:21 a human for you know could be for any
+11:24 
+
+11:24 reason could be because they have such a
+11:26 
+
+11:26 belief or you know conviction or
+11:28 
+
+11:28 preference or whatever and obviously you
+11:30 
+
+11:30 want to serve those customers as well so
+11:33 
+
+11:33 there's no chance that you know the
+11:35 
+
+11:35 human agents are going away anytime soon
+11:37 
+
+11:37 um with that said though I think
+11:39 
+
+11:39 actually the biggest
+11:42 
+
+11:42 quality improvement that we see is
+11:46 
+
+11:46 that
+11:48 
+
+11:48 um generally speaking and obviously we
+11:51 
+
+11:51 as every other companies to some degree
+11:52 
+
+11:52 want to avoid this but it's not uncommon
+11:54 
+
+11:54 that our human agents have multiple
+11:57 
+
+11:57 chats going on H so so and we as
+12:00 
+
+12:00 customers all know that because you go
+12:02 
+
+12:02 and chat and you're like you write a
+12:04 
+
+12:04 question and you don't get the answer
+12:05 
+
+12:05 immediately and you're a little bit like
+12:06 
+
+12:06 come on and they forgot about you and
+12:08 
+
+12:08 they was like hello John where are you
+12:10 
+
+12:10 like why you not answering and they're
+12:11 
+
+12:11 like oh I'm you know and so forth and
+12:13 
+
+12:13 and I would understand because I I you
+12:15 
+
+12:15 know when I have tried to work in
+12:16 
+
+12:16 customer service myself I did the same
+12:18 
+
+12:18 thing like you know it's like it doesn't
+12:19 
+
+12:19 make sense because you also sometimes
+12:20 
+
+12:20 the customer is slow and not answering
+12:22 
+
+12:22 and so forth so you start doing
+12:23 
+
+12:23 something else you can't just sit and
+12:24 
+
+12:24 idle and wait for that you want to you
+12:25 
+
+12:25 know resolve more things so you get it
+12:27 
+
+12:27 but the consequence of that is that the
+12:30 
+
+12:30 average time of resolution of a uh
+12:33 
+
+12:33 customer service chat is about 14
+12:36 
+
+12:36 minutes and when we move to AI it's 2
+12:40 
+
+12:40 minutes and the reason of that is
+12:42 
+
+12:42 because you get instant response as a
+12:45 
+
+12:45 customer uh as opposed to that delay
+12:47 
+
+12:47 that happens due to that um parallel
+12:50 
+
+12:50 handling of errand and um this is
+12:53 
+
+12:53 actually the biggest advantage and so as
+12:55 
+
+12:55 a customer a lot of customers that try
+12:57 
+
+12:57 that say wow I want this experience but
+13:00 
+
+13:00 at the same prot time we have something
+13:02 
+
+13:02 else which is funny which is that AI
+13:04 
+
+13:04 chatbots have been around for 10 years
+13:06 
+
+13:06 or something and they all been of
+13:08 
+
+13:08 horrible quality so each one of us have
+13:11 
+
+13:11 gone to some Airline and tried to
+13:13 
+
+13:13 converse about some tickets and been
+13:15 
+
+13:15 like my God this is the dumbest thing
+13:17 
+
+13:17 I've ever talked to and so the funny
+13:19 
+
+13:19 thing is that of those 30% currently
+13:22 
+
+13:22 that do not use our AI chatbot the most
+13:25 
+
+13:25 common reason is they when we start the
+13:28 
+
+13:28 conversation with them the first thing
+13:30 
+
+13:30 they write is Agent right agent which
+13:33 
+
+13:33 basically means they want to speak to a
+13:34 
+
+13:34 human and that's not necessarily because
+13:37 
+
+13:37 they so deeply want to speak to a human
+13:39 
+
+13:39 as some of them are so but a lot of
+13:41 
+
+13:41 others is just because they had these
+13:43 
+
+13:43 horrible experiences and they want to
+13:44 
+
+13:44 avoid it they just don't trust it to be
+13:45 
+
+13:45 good and so actually what I'm seeing is
+13:48 
+
+13:48 that what's happening right now is a
+13:49 
+
+13:49 time well it will take some time to
+13:52 
+
+13:52 educate customers on the fact that like
+13:54 
+
+13:54 you know what but this experience is
+13:55 
+
+13:55 actually many times better and a lot of
+13:57 
+
+13:57 the people that tried it they want to
+13:58 
+
+13:58 use it more because they find it more
+14:01 
+
+14:01 you know faster um and I think that's
+14:04 
+
+14:04 the that takes a little bit longer time
+14:05 
+
+14:05 right there's the actual experience but
+14:07 
+
+14:07 then there's the perception expectation
+14:09 
+
+14:09 of what the experience going to look
+14:10 
+
+14:10 like and changing that takes a bit
+14:12 
+
+14:12 longer than changing the experience
+14:13 
+
+14:13 itself so I suspect we're going to see
+14:16 
+
+14:16 higher even higher proportion of things
+14:18 
+
+14:18 dealt with AI but there's obviously a
+14:20 
+
+14:20 lot of complex queries that it doesn't
+14:22 
+
+14:22 resolve well today and that still needs
+14:24 
+
+14:24 to be improved on and there's still tons
+14:26 
+
+14:26 of work to be done right what are the
+14:29 
+
+14:29 tradeoffs are there ways in which it is
+14:31 
+
+14:31 consistently worse than what you had
+14:36 
+
+14:36 before
+14:39 
+
+14:39 um I actually no but it's not entirely
+14:43 
+
+14:43 as I said that is not entirely due to
+14:46 
+
+14:46 the fact that um of AI that is partly
+14:49 
+
+14:49 due to the fact that some of the
+14:53 
+
+14:53 instructions that or manuals that were
+14:55 
+
+14:55 written to help our human agents were
+14:58 
+
+14:58 subpar
+14:60 
+
+14:60 and the experience already before
+15:02 
+
+15:02 suffered from that but not enough
+15:05 
+
+15:05 managerial attention and focus was put
+15:07 
+
+15:07 to improving that and helping our agents
+15:09 
+
+15:09 become better at work so actually our
+15:11 
+
+15:11 agents have better tools today to be
+15:14 
+
+15:14 successful in helping the customers as
+15:16 
+
+15:16 does the AI so the consequences both
+15:18 
+
+15:18 experiences are improving as a
+15:20 
+
+15:20 consequence of that but you know so I
+15:22 
+
+15:22 think that like partially it's true that
+15:24 
+
+15:24 like things will be worse like yeah no I
+15:27 
+
+15:27 think both sides get better by doing
+15:30 
+
+15:30 this actually because just you realize
+15:32 
+
+15:32 the importance of these things and I
+15:33 
+
+15:33 think sometimes to some degree
+15:34 
+
+15:34 previously you just you know there
+15:36 
+
+15:36 wasn't enough focus on the topic yeah
+15:39 
+
+15:39 that's great and you mentioned the 14
+15:41 
+
+15:41 minutes down to two minutes so there
+15:42 
+
+15:42 other statistics you can share that help
+15:44 
+
+15:44 to kind of illustrate the impact of this
+15:47 
+
+15:47 well I think the one that we were most
+15:49 
+
+15:49 famously you know quoted on was
+15:51 
+
+15:51 obviously that 700 full-time in place
+15:54 
+
+15:54 but I think that one and we were very
+15:57 
+
+15:57 you know I it's a difficult number to
+15:59 
+
+15:59 share and I understand like you know we
+16:01 
+
+16:01 understood that people would react to it
+16:04 
+
+16:04 but at the same part time I also feel to
+16:06 
+
+16:06 some degree that like politicians are
+16:08 
+
+16:08 too slow on considering and thinking
+16:12 
+
+16:12 proactively what this is going to how
+16:14 
+
+16:14 this is going to impact society and we
+16:15 
+
+16:15 felt that there's some level of
+16:18 
+
+16:18 importance of sharing such statistics to
+16:20 
+
+16:20 kind of a little bit say look this isn't
+16:22 
+
+16:22 just fun demos on Twitter this is
+16:24 
+
+16:24 actually having real life business and
+16:27 
+
+16:27 real life implications now with that
+16:29 
+
+16:29 said in our case we have been using um
+16:33 
+
+16:33 customer service on Contracting firms
+16:35 
+
+16:35 those firms employ hundreds of thousands
+16:37 
+
+16:37 of people and if we historically have
+16:40 
+
+16:40 improved our products somehow that may
+16:42 
+
+16:42 also have led to Less customer service
+16:44 
+
+16:44 errand because you know we fix some
+16:46 
+
+16:46 issue or flow in the product but
+16:48 
+
+16:48 obviously I've never seen an improvement
+16:50 
+
+16:50 to our product that at a push of a
+16:52 
+
+16:52 button had this tramatic impact on
+16:55 
+
+16:55 number of customer service agents that
+16:57 
+
+16:57 we need and now fortunately for those
+17:00 
+
+17:00 agents there are tons of other customers
+17:02 
+
+17:02 out there so nobody has lost their job
+17:04 
+
+17:04 as of today as far as I know at least as
+17:07 
+
+17:07 consequence of this but obviously in the
+17:08 
+
+17:08 longer term it will have implications on
+17:10 
+
+17:10 these kind of jobs but that was the
+17:12 
+
+17:12 statistic that a lot of people obviously
+17:14 
+
+17:14 reacted to um and the fact that it's
+17:16 
+
+17:16 about $40
+17:18 
+
+17:18 million of improved profitability for
+17:20 
+
+17:20 the company on an annual basis right so
+17:22 
+
+17:22 is fairly significant I mean we do about
+17:24 
+
+17:24 $2 billion of Revenue so gives you kind
+17:27 
+
+17:27 of a sense for the size awesome
+17:30 
+
+17:30 and and since you've been thoughtful
+17:32 
+
+17:32 about kind of the broader societal or
+17:35 
+
+17:35 economic impacts of this technology I'm
+17:38 
+
+17:38 curious if you you know if you had a
+17:40 
+
+17:40 magic wand and you could craft a policy
+17:44 
+
+17:44 or or procedure that would help get us
+17:47 
+
+17:47 through what's likely to be an era of
+17:49 
+
+17:49 disruption do you have any thoughts on
+17:52 
+
+17:52 what you would do with that magic wand
+17:54 
+
+17:54 policies programs you'd put in place the
+17:57 
+
+17:57 first thing that I think is super
+17:58 
+
+17:58 critical
+17:59 
+
+17:59 is actually may sound a bit surprising
+18:01 
+
+18:01 but it's an electronic identification
+18:04 
+
+18:04 methodology for humans currently there's
+18:06 
+
+18:06 no globally applied such methodology
+18:09 
+
+18:09 just like a passport but an electronic
+18:11 
+
+18:11 one and why that is so critical is
+18:13 
+
+18:13 because the amount of Fraud and scams
+18:14 
+
+18:14 you're going to see increase is due to
+18:17 
+
+18:17 the fact that I have no there's no
+18:19 
+
+18:19 ability for you Pat and Sonia right now
+18:21 
+
+18:21 to ask me for my electronic
+18:22 
+
+18:22 identification to verify that I am not a
+18:26 
+
+18:26 uh a bot or I'm not some you know what's
+18:29 
+
+18:29 called um uh fake uh um you know video
+18:34 
+
+18:34 created or pretending to be an AI you
+18:36 
+
+18:36 know not an AI talking to you is
+18:37 
+
+18:37 actually the human right and I think
+18:39 
+
+18:39 being able to verify that you are
+18:41 
+
+18:41 talking to the real human is critical if
+18:44 
+
+18:44 we can supply uh that on a global level
+18:48 
+
+18:48 but preferably even on a country level
+18:50 
+
+18:50 that will at least reduce the risk of
+18:52 
+
+18:52 Fraud and so forth because you'll be
+18:54 
+
+18:54 able to authenticate like am I talking
+18:55 
+
+18:55 to pad the real Pat or am I talking to
+18:57 
+
+18:57 your Bot right like I want to be able to
+18:59 
+
+18:59 know about so that is very critical I
+19:01 
+
+19:01 think that needs to be resolved fairly
+19:02 
+
+19:02 quickly because otherwise we're just
+19:03 
+
+19:03 going to see an explosion as these I
+19:05 
+
+19:05 mean I have seen videos of myself
+19:07 
+
+19:07 talking to customers that we have
+19:09 
+
+19:09 produced that look identically to me
+19:11 
+
+19:11 sound like me uh well you know which
+19:14 
+
+19:14 have been or we are about to send out to
+19:15 
+
+19:15 over 1,000 of our top Merchants um and
+19:18 
+
+19:18 so like it is crazy to see those avatars
+19:21 
+
+19:21 you know and being able to impersonate
+19:23 
+
+19:23 myself so I think that's that's one
+19:25 
+
+19:25 thing the second thing though is if
+19:27 
+
+19:27 you're left leaning I hear people on the
+19:29 
+
+19:29 left side of the political Spectra they
+19:32 
+
+19:32 are saying like stop this stop the
+19:33 
+
+19:33 progress I I have a hard time especially
+19:36 
+
+19:36 considering that there are less
+19:38 
+
+19:38 democratical countries in the world that
+19:40 
+
+19:40 may you know push this agenda as well
+19:42 
+
+19:42 and so I think that's not necessarily
+19:43 
+
+19:43 the best outcome but if you're on the
+19:45 
+
+19:45 rightwing of the political Spectre a lot
+19:47 
+
+19:47 of people say oh don't worry there's
+19:49 
+
+19:49 going to be new jobs there's always new
+19:50 
+
+19:50 jobs this happens all the time there's
+19:52 
+
+19:52 always new jobs and I think that's a
+19:54 
+
+19:54 little bit of a simplification as well
+19:55 
+
+19:55 when I was in Brussels there are I think
+19:58 
+
+19:58 if I remember correctly 10,000
+20:00 
+
+20:00 translators that are employed in
+20:02 
+
+20:02 Brussels to translate all the European
+20:04 
+
+20:04 legislation into the local languages of
+20:06 
+
+20:06 Europe those 10,000 translators are
+20:09 
+
+20:09 basically almost redundant today with
+20:12 
+
+20:12 the technology of deepal and CHP and so
+20:14 
+
+20:14 forth to some degree right I mean you
+20:16 
+
+20:16 could at least reduce it
+20:18 
+
+20:18 dramatically um and I don't think it's
+20:20 
+
+20:20 easy to say to a 55-year-old translator
+20:22 
+
+20:22 don't worry you're going to become a
+20:23 
+
+20:23 YouTube influencer so I think that what
+20:26 
+
+20:26 you can do from a society political
+20:28 
+
+20:28 perspective is you could think about
+20:29 
+
+20:29 okay maybe I don't want to stop progress
+20:32 
+
+20:32 but maybe I can offer something to
+20:35 
+
+20:35 people being effective right like maybe
+20:37 
+
+20:37 I can offer something to them maybe
+20:38 
+
+20:38 Society can have the luxury of at least
+20:41 
+
+20:41 support individuals that are affected by
+20:43 
+
+20:43 these changes because not everyone will
+20:44 
+
+20:44 be able to just retrain into something
+20:46 
+
+20:46 different and I think it's in that
+20:48 
+
+20:48 vicinity and I hope if if there would be
+20:50 
+
+20:50 such measures or at least plans or ideas
+20:52 
+
+20:52 among politicians then maybe you can
+20:54 
+
+20:54 take Society through this change with a
+20:57 
+
+20:57 little bit more of empathy and care
+20:59 
+
+20:59 about the people are you know um who are
+21:02 
+
+21:02 affected while at the same time not
+21:04 
+
+21:04 saying that we have to stop progress
+21:05 
+
+21:05 right yeah yeah thank you for being so
+21:08 
+
+21:08 thoughtful about it it's it's
+21:09 
+
+21:09 encouraging to see people in leadership
+21:11 
+
+21:11 positions like yours being so thoughtful
+21:14 
+
+21:14 thank you Sebastian what types of jobs
+21:17 
+
+21:17 do you think are going to be most
+21:18 
+
+21:18 affected and and what type of jobs do
+21:21 
+
+21:21 you think will be you know what what
+21:23 
+
+21:23 what skills are you teaching your kids
+21:24 
+
+21:24 to learn uh so that their future
+21:26 
+
+21:26 livelihoods are are AI aligned so to
+21:28 
+
+21:28 speak
+21:29 
+
+21:29 um yeah so I think that like it's funny
+21:32 
+
+21:32 you say that cuz when I met Sam back
+21:34 
+
+21:34 then and I got that meeting I said to
+21:35 
+
+21:35 him look Sam one thing that's going to
+21:37 
+
+21:37 happen is people will this is going to
+21:38 
+
+21:38 have impact on jobs so I think if you
+21:41 
+
+21:41 want to make this a very popular
+21:42 
+
+21:42 technology you should identify like what
+21:45 
+
+21:45 are the job categories that people hate
+21:46 
+
+21:46 the most and you know I happen to have
+21:48 
+
+21:48 two of the three three ones because I'm
+21:51 
+
+21:51 both a CEO and I'm both a banker and
+21:54 
+
+21:54 those are two of the ones and then you
+21:55 
+
+21:55 have the only the lawyers right so those
+21:57 
+
+21:57 are the three ones so I said to like
+21:59 
+
+21:59 what you should focus on try to build AI
+22:01 
+
+22:01 that replaces CEOs bankers and lawyers
+22:03 
+
+22:03 and nobody will make a big fuss about it
+22:06 
+
+22:06 um unfortunately you know and I saw that
+22:09 
+
+22:09 very clearly because when you know when
+22:11 
+
+22:11 we did a tweet later on about the
+22:13 
+
+22:13 marketing things we're doing about AI
+22:15 
+
+22:15 where we have less need for uh
+22:18 
+
+22:18 photographers and and such copyist and
+22:21 
+
+22:21 things less needs we still need them but
+22:23 
+
+22:23 we need them predominantly for the very
+22:25 
+
+22:25 creative stuff and less for the kind of
+22:27 
+
+22:27 day-to-day stuff um that had a violent
+22:30 
+
+22:30 reaction online and I can understand why
+22:33 
+
+22:33 um because people you know really feel
+22:35 
+
+22:35 emotionally resonate a lot to that while
+22:38 
+
+22:38 when you see online tweets about AI
+22:41 
+
+22:41 lawyers nobody seems to react much so I
+22:43 
+
+22:43 feel feel sad for the lawyers in the
+22:45 
+
+22:45 world I hope you you know people
+22:47 
+
+22:47 remember you as well lley but anyways
+22:49 
+
+22:49 you know it's scary right it's scary
+22:51 
+
+22:51 because I don't know I I I I find it
+22:56 
+
+22:56 it's a very difficult question to answer
+22:59 
+
+22:59 um I
+23:01 
+
+23:01 just I mean to some degree uh definitely
+23:06 
+
+23:06 physical jobs right like I mean I it
+23:08 
+
+23:08 just looks currently as on the very
+23:11 
+
+23:11 long-term perspective it's going to be
+23:13 
+
+23:13 easier to replace knowledge jobs than
+23:15 
+
+23:15 it's going to be to replace you know um
+23:18 
+
+23:18 driving a truck or even though we were
+23:20 
+
+23:20 so convinced about self-driving cars and
+23:22 
+
+23:22 all that um or you know proper robots
+23:26 
+
+23:26 seems a little bit further out than you
+23:29 
+
+23:29 know
+23:30 
+
+23:30 AI so it's difficult um but that also
+23:34 
+
+23:34 assumes that everyone wants to work I'm
+23:36 
+
+23:36 not sure like some people would like
+23:37 
+
+23:37 work some people would enjoy a society
+23:39 
+
+23:39 in which robots serve us and we just you
+23:41 
+
+23:41 know hang out and play football so like
+23:43 
+
+23:43 it's a little bit you know it depends
+23:45 
+
+23:45 like it's hard to predict where all all
+23:46 
+
+23:46 of this is going to go right I
+23:48 
+
+23:48 preferably love work so I will be one of
+23:51 
+
+23:51 the depressed people when AI takes my
+23:53 
+
+23:53 job and I'm going to sit and like and be
+23:55 
+
+23:55 like okay that was the end of the fun
+23:57 
+
+23:57 because I really enjoy it a lot but like
+23:58 
+
+23:58 you know people are different everyone's
+23:60 
+
+23:60 different right yeah let's talk about
+24:02 
+
+24:02 some more of the stuff that you guys
+24:03 
+
+24:03 have built internally so so you've
+24:05 
+
+24:05 mentioned a little bit what you guys
+24:06 
+
+24:06 have done in marketing can you say more
+24:08 
+
+24:08 about
+24:09 
+
+24:09 that yeah I mean it's it's been very
+24:12 
+
+24:12 interesting as well I mean because again
+24:14 
+
+24:14 there's so many demos right and it's
+24:15 
+
+24:15 like it's you I mean I think everyone
+24:17 
+
+24:17 has tried and you gone you know tried to
+24:19 
+
+24:19 create an image or create a video and
+24:22 
+
+24:22 you are blown away first with what you
+24:23 
+
+24:23 can do but then you're like yeah but I
+24:25 
+
+24:25 wanted to look like exactly like this
+24:27 
+
+24:27 and I wanted to be consistent with my
+24:28 
+
+24:28 brand feeling and I wanted to you know
+24:30 
+
+24:30 Etc and then you start being more
+24:32 
+
+24:32 challenged with it right like and I
+24:34 
+
+24:34 think that's why also sometimes I feel a
+24:35 
+
+24:35 little bit like for example you know
+24:37 
+
+24:37 people say like oh it's unfair to the
+24:42 
+
+24:42 creators um that these tools are being
+24:44 
+
+24:44 created in in marketing so forth and I I
+24:46 
+
+24:46 partially understand why people say that
+24:48 
+
+24:48 but at the same point of time we have
+24:50 
+
+24:50 this guy
+24:52 
+
+24:52 who has totally immersed himself in this
+24:56 
+
+24:56 video You Know video creation sound
+24:58 
+
+24:58 creation
+24:59 
+
+24:59 um marketing creating things and and
+25:02 
+
+25:02 created this amazing basically just
+25:05 
+
+25:05 scripted together a lot of these
+25:07 
+
+25:07 different Technologies to create like
+25:08 
+
+25:08 these automatic marketing videos with me
+25:12 
+
+25:12 making presentation to Merchants as an
+25:13 
+
+25:13 example me as an avatar and like and
+25:16 
+
+25:16 it's really nice it looks really great
+25:19 
+
+25:19 it's on brand and so forth he is a
+25:21 
+
+25:21 Creator he is extremely creative and
+25:24 
+
+25:24 it's a little bit like I can I can
+25:26 
+
+25:26 assume that when you know when the music
+25:29 
+
+25:29 industry evolved and synthesizers came
+25:31 
+
+25:31 along and computers to make music you
+25:34 
+
+25:34 know some people were like complaining
+25:35 
+
+25:35 that's not playing a guitar that's not
+25:37 
+
+25:37 creative you're sitting by a freaking
+25:39 
+
+25:39 computer nobody would say that anymore
+25:40 
+
+25:40 but I'm sure there was a lot of that
+25:41 
+
+25:41 criticism to some degree I feel the
+25:43 
+
+25:43 people that are adopting these
+25:44 
+
+25:44 Technologies today they are just they're
+25:47 
+
+25:47 very creative uh but they're using new
+25:49 
+
+25:49 tools to be able to create what they see
+25:52 
+
+25:52 in their minds and so you know I think
+25:55 
+
+25:55 that's what I'm seeing so we are
+25:57 
+
+25:57 basically having people people who may
+25:59 
+
+25:59 not themselves be photographers or who
+26:01 
+
+26:01 may not themselves be great at Photoshop
+26:03 
+
+26:03 or who may not themselves be great at
+26:05 
+
+26:05 all these things but now with text and
+26:08 
+
+26:08 communication with the computers they
+26:10 
+
+26:10 can create what's in their minds and
+26:12 
+
+26:12 they can explore ideas and concepts of
+26:15 
+
+26:15 marketing campaigns of marketing
+26:16 
+
+26:16 material of doing things in a way that
+26:19 
+
+26:19 was unprecedented before right like and
+26:22 
+
+26:22 that's really exciting and they
+26:23 
+
+26:23 obviously there's yeah it's true there's
+26:26 
+
+26:26 less people involved right like um there
+26:28 
+
+26:28 less people involved because previously
+26:30 
+
+26:30 if you wanted to produce a commercial
+26:32 
+
+26:32 you know there are tons of people
+26:33 
+
+26:33 involved and some of that is beneficial
+26:36 
+
+26:36 because you have you know different
+26:38 
+
+26:38 people coming with ideas and thoughts
+26:40 
+
+26:40 but some of it is also less beneficial
+26:42 
+
+26:42 because you have a a few people who have
+26:44 
+
+26:44 this amazing idea but they're not
+26:46 
+
+26:46 capable of turning that idea into the
+26:48 
+
+26:48 reality because they themselves aren't
+26:49 
+
+26:49 the photographer and they're themselves
+26:51 
+
+26:51 not all of this and now they can
+26:52 
+
+26:52 actually bring their ideas to life at a
+26:55 
+
+26:55 different level than they could before
+26:56 
+
+26:56 so uh but that those are the things that
+26:59 
+
+26:59 we cannot doing a lot of that is just
+27:00 
+
+27:00 like how do we go from you know um
+27:05 
+
+27:05 basically we want to Market our credit
+27:07 
+
+27:07 card in Germany and like how do we go
+27:10 
+
+27:10 from that to actually having a campaign
+27:12 
+
+27:12 live that looks really great uses the
+27:14 
+
+27:14 right copy Etc and we have seen that we
+27:19 
+
+27:19 have already seen internal examples
+27:21 
+
+27:21 where something like that historically
+27:23 
+
+27:23 may have taken a month or two months to
+27:25 
+
+27:25 prepare and go through different teams
+27:27 
+
+27:27 and improvements you also have to
+27:28 
+
+27:28 remember as a Bank we need to make sure
+27:30 
+
+27:30 that we are communicating in a
+27:31 
+
+27:31 regulatory compliant way because credit
+27:33 
+
+27:33 cards are regulated products so there's
+27:35 
+
+27:35 like tons of complexity associated with
+27:37 
+
+27:37 these things and nowadays we can see a
+27:39 
+
+27:39 few individuals go from idea to actually
+27:42 
+
+27:42 having a marketing campaign live in a
+27:44 
+
+27:44 week or in you know in at a time frame
+27:47 
+
+27:47 that was impossible historically um and
+27:50 
+
+27:50 the quality of the campaign is higher
+27:52 
+
+27:52 and the you know and and the lawfulness
+27:54 
+
+27:54 of it is better and you know all all
+27:56 
+
+27:56 things are
+27:57 
+
+27:57 better Sebastian you're a creative soul
+27:59 
+
+27:59 and an artist and I think the Clara
+28:01 
+
+28:01 brand has always been just so special
+28:03 
+
+28:03 like quirky Vivid creative all of that
+28:06 
+
+28:06 um what do you think of the quality of
+28:07 
+
+28:07 the the AI generated creative copy and
+28:09 
+
+28:09 like what what do you think can be
+28:11 
+
+28:11 outsourced today and then Ai and and
+28:13 
+
+28:13 what can't and do you still prefer uh
+28:15 
+
+28:15 you know the you know the gorgeous photo
+28:17 
+
+28:17 shoots that you all do in the house uh
+28:19 
+
+28:19 it's a good
+28:22 
+
+28:22 question I feel it's different with copy
+28:24 
+
+28:24 and image I in my opinion when I look at
+28:28 
+
+28:28 the imagery I feel it's more fun because
+28:31 
+
+28:31 it can be to some degree more crazy and
+28:36 
+
+28:36 imaginary um so there I see less but in
+28:40 
+
+28:40 copy though they're in the llms are much
+28:43 
+
+28:43 less impressed and I think the reason
+28:46 
+
+28:46 for that is that at least how the llms
+28:49 
+
+28:49 work is they work towards the average so
+28:53 
+
+28:53 they are trained towards the average and
+28:55 
+
+28:55 creativity is not the average creativity
+28:58 
+
+28:58 the extreme of recognizing that this is
+29:00 
+
+29:00 a total new way or a new way to combine
+29:03 
+
+29:03 things and stuff like that and that's
+29:05 
+
+29:05 why I still think that for some period
+29:06 
+
+29:06 of time creativity will out compete you
+29:09 
+
+29:09 know these things that and that's what I
+29:11 
+
+29:11 mean like it's one thing if I want to
+29:13 
+
+29:13 write you know if I need to write a text
+29:16 
+
+29:16 about a product like we have obviously
+29:18 
+
+29:18 we we have a price uh sorry a product
+29:20 
+
+29:20 comparison website where you know we
+29:22 
+
+29:22 have millions of products listed right
+29:24 
+
+29:24 like clothing iPhones whatever and we
+29:28 
+
+29:28 need descriptions right for those cases
+29:30 
+
+29:30 llms are great um and they're very
+29:33 
+
+29:33 efficient and stuff like that but when
+29:35 
+
+29:35 you want that perfect quiry copy that's
+29:37 
+
+29:37 going to catch the attention of you know
+29:39 
+
+29:39 of a human audience and you know they're
+29:41 
+
+29:41 going to talk about it and thought that
+29:43 
+
+29:43 was funny or something much worse like
+29:45 
+
+29:45 well you can obviously
+29:47 
+
+29:47 generate fast a lot of versions but I
+29:49 
+
+29:49 still feel that like it's pushing
+29:51 
+
+29:51 towards the average and the average is
+29:53 
+
+29:53 not creative sorry like the average is
+29:55 
+
+29:55 the average which is the average it just
+29:58 
+
+29:58 doesn't stand stand out much right so
+29:60 
+
+29:60 there I still feel that like humans are
+30:01 
+
+30:01 much better at that of of thinking
+30:03 
+
+30:03 outside of the box so to speak because
+30:05 
+
+30:05 the llms are almost like thinking in the
+30:06 
+
+30:06 box like that that's that's basically
+30:09 
+
+30:09 what they do they're supposed to think
+30:10 
+
+30:10 in the box right like according to the
+30:13 
+
+30:13 box that's such a fascinating dichotomy
+30:15 
+
+30:15 thanks for sharing um can you tell us
+30:18 
+
+30:18 about uh Kiki I think is what it's
+30:21 
+
+30:21 called yeah so I think for for clana at
+30:26 
+
+30:26 least it happened to be so that
+30:29 
+
+30:29 coinciding with the with the um um with
+30:35 
+
+30:35 the
+30:36 
+
+30:36 AI
+30:38 
+
+30:38 Revolution uh we also started obsessing
+30:41 
+
+30:41 about the concept of collaboration on
+30:45 
+
+30:45 information and it's actually also one
+30:47 
+
+30:47 of the Technologies we've started using
+30:49 
+
+30:49 extensively inhouse is Neo forj and GRS
+30:54 
+
+30:54 which we didn't really explore much
+30:56 
+
+30:56 beforehand and we've also looked a lot
+30:58 
+
+30:58 to like Wikipedia and other knowledge
+31:01 
+
+31:01 graphs and and how people have built you
+31:04 
+
+31:04 know how people collaborate on building
+31:06 
+
+31:06 great information and um so a big
+31:11 
+
+31:11 initiative internally has been to start
+31:13 
+
+31:13 bringing together information that are
+31:16 
+
+31:16 sitting in silos across multiple systems
+31:19 
+
+31:19 and improving the quality of that and
+31:21 
+
+31:21 really creating collaboration which
+31:23 
+
+31:23 actually has the side effect of us also
+31:27 
+
+31:27 deprecating Salesforce uh deprecating a
+31:31 
+
+31:31 lot of enterprise software systems
+31:34 
+
+31:34 because we move that data into one I'm
+31:35 
+
+31:35 not saying I mean for example slack
+31:37 
+
+31:37 we're great users of so we're still big
+31:38 
+
+31:38 customers of Salesforce because of slack
+31:40 
+
+31:40 instead but like but some of that t like
+31:42 
+
+31:42 we've had too many of these enterprise
+31:44 
+
+31:44 software systems and as a consequence
+31:46 
+
+31:46 information about what we do and how we
+31:48 
+
+31:48 work is dispersed and it's
+31:51 
+
+31:51 inconsistent and um so a big piece has
+31:54 
+
+31:54 been bringing that together
+31:56 
+
+31:56 standardizing and harmonizing that and
+31:58 
+
+31:58 then on top of that we have Kiki who
+32:00 
+
+32:00 then explores that information and
+32:03 
+
+32:03 brings it to life so we can go and ask
+32:06 
+
+32:06 Kiki about anything about you know how
+32:08 
+
+32:08 many employees are we in that part or
+32:09 
+
+32:09 what does this part what does this team
+32:11 
+
+32:11 work on or you know what's important to
+32:14 
+
+32:14 consider or when you launch a system
+32:16 
+
+32:16 internally what are the steps that
+32:17 
+
+32:17 you're going to go through and all of
+32:18 
+
+32:18 that is getting centralized into one
+32:20 
+
+32:20 place and connected through the
+32:22 
+
+32:22 knowledge graph we're seeing that that
+32:23 
+
+32:23 is having a tremendous impact on
+32:26 
+
+32:26 productivity uh internally so Kiki is
+32:29 
+
+32:29 basically our own internal chatbot based
+32:32 
+
+32:32 on that growing internal Knowledge Graph
+32:36 
+
+32:36 how how and where does Ki show up for
+32:38 
+
+32:38 employees is it is it a is it a slack
+32:40 
+
+32:40 pot like where do people interact with
+32:42 
+
+32:42 it both in slack but also like we have
+32:44 
+
+32:44 something that looks like a Wikipedia
+32:46 
+
+32:46 kind of the knowledge graph when you
+32:47 
+
+32:47 look at it looks like a Wikipedia
+32:49 
+
+32:49 basically for RM pleas and you can both
+32:51 
+
+32:51 kind of read the articles themselves but
+32:53 
+
+32:53 you can also interact with Kiki to find
+32:55 
+
+32:55 information in that right uh so it's a
+32:57 
+
+32:57 combination of semantic search and and
+32:59 
+
+32:59 AI uh to interpret the the information
+33:02 
+
+33:02 in that and that has proven to work
+33:04 
+
+33:04 really well like um it hasn't a
+33:06 
+
+33:06 tremendous adoption internally and I
+33:08 
+
+33:08 think it's created tons of value for us
+33:10 
+
+33:10 so we're very key very excited about
+33:12 
+
+33:12 that and the account on deprecating
+33:14 
+
+33:14 Salesforce is really interesting I can
+33:17 
+
+33:17 see how the system of record
+33:20 
+
+33:20 functionality can get replaced for the
+33:23 
+
+33:23 system of Engagement functionality the
+33:25 
+
+33:25 workflows that people might have been
+33:26 
+
+33:26 doing on top of Salesforce
+33:28 
+
+33:28 where have those gone how how do people
+33:31 
+
+33:31 whatever jobs to be done there were on
+33:33 
+
+33:33 top of Salesforce previously how are
+33:34 
+
+33:34 people doing those jobs now um a mix of
+33:37 
+
+33:37 things actually but it's less about
+33:41 
+
+33:41 like I think it's less about the fact so
+33:44 
+
+33:44 some of this is actually as simple as
+33:45 
+
+33:45 slack flow slack workflow actually the
+33:48 
+
+33:48 the workflows in Slack are pretty good
+33:49 
+
+33:49 so we you could just joke at us and
+33:51 
+
+33:51 laugh at us that you just just moved
+33:52 
+
+33:52 from one propriety system to another but
+33:54 
+
+33:54 I think that the but it's not about that
+33:56 
+
+33:56 it's the number of such Sy
+33:58 
+
+33:58 right because I want people at CLA to
+34:02 
+
+34:02 collaborate genuinely and one of the
+34:04 
+
+34:04 things that been so revealing throughout
+34:06 
+
+34:06 this process is that whenever people
+34:08 
+
+34:08 have a new system a new place to go and
+34:10 
+
+34:10 look for information it all creates
+34:12 
+
+34:12 these silos and it it reduces the
+34:15 
+
+34:15 ability for us to collaborate across the
+34:17 
+
+34:17 organization on information and
+34:19 
+
+34:19 providing value so just REM removing the
+34:22 
+
+34:22 number of systems is important right to
+34:25 
+
+34:25 have fewer and more quality and stand
+34:28 
+
+34:28 standard across the organization so so
+34:31 
+
+34:31 some of those workflows are implemented
+34:33 
+
+34:33 directly in our own Tex Tack and some of
+34:35 
+
+34:35 those workflows we're still using
+34:37 
+
+34:37 proprietary system for like I mean we're
+34:38 
+
+34:38 for example moving our HRS out of
+34:42 
+
+34:42 workday uh into deal uh which with great
+34:45 
+
+34:45 success it's not like we're entitled but
+34:46 
+
+34:46 we are reshaping it we're we're using
+34:48 
+
+34:48 only the payroll stuff and we are also
+34:51 
+
+34:51 within a few weeks deprecating workday
+34:53 
+
+34:53 as also because there was also too much
+34:55 
+
+34:55 information there that was important
+34:56 
+
+34:56 like think about for us understanding
+34:59 
+
+34:59 the organization and how it's tied
+35:01 
+
+35:01 together if we're ever going to get Kiki
+35:04 
+
+35:04 and our internal Knowledge Graph to
+35:05 
+
+35:05 function properly the understanding of
+35:08 
+
+35:08 our organization the teams the reporting
+35:10 
+
+35:10 lines is important so that could not sit
+35:13 
+
+35:13 in a proprietary system that needs to
+35:14 
+
+35:14 come inhouse um but obviously generating
+35:18 
+
+35:18 payroll and making sure we pay pay on
+35:19 
+
+35:19 salary on time and so forth that where
+35:22 
+
+35:22 are a happy customer of deal nowadays so
+35:23 
+
+35:23 like so it's just been a change in our
+35:25 
+
+35:25 TCH stack Sebastian how do you think
+35:28 
+
+35:28 about buy versus build decisions for you
+35:31 
+
+35:31 know you have ai for customer support
+35:33 
+
+35:33 you have ai for your knowledge graph you
+35:34 
+
+35:34 have ai for marketing each of these
+35:36 
+
+35:36 categories now has you know companies
+35:38 
+
+35:38 and vendors serving them like Sierra and
+35:40 
+
+35:40 and gleen and and companies like that I
+35:43 
+
+35:43 realized that you know you kind of built
+35:44 
+
+35:44 what you had you know before these
+35:46 
+
+35:46 Solutions existed but I guess if you
+35:48 
+
+35:48 were to start over um from scratch today
+35:51 
+
+35:51 um or or what advice would you give
+35:52 
+
+35:52 other other Founders who are just kind
+35:53 
+
+35:53 of embarking on this journey should they
+35:55 
+
+35:55 buy or should they build it's a great
+35:57 
+
+35:57 question and it's one obviously we ask
+35:59 
+
+35:59 ourselves all the time but I have to say
+36:01 
+
+36:01 I give you an example right when when we
+36:05 
+
+36:05 started um encouraging people in clana
+36:08 
+
+36:08 to use AI we didn't mandate them to do
+36:12 
+
+36:12 things that was core for the business we
+36:15 
+
+36:15 said take the idea that you're
+36:17 
+
+36:17 passionate about and explore it and one
+36:19 
+
+36:19 of the examples that we built early days
+36:21 
+
+36:21 was we said look one of the things that
+36:24 
+
+36:24 we hate in a big company is these
+36:25 
+
+36:25 Employee Engagement forms cuz they go
+36:28 
+
+36:28 like hey how are you feeling at CLA
+36:30 
+
+36:30 great on a scale one to five you know
+36:33 
+
+36:33 and then we're sitting and trying to
+36:34 
+
+36:34 interpret the answers to these forms and
+36:36 
+
+36:36 we felt it was a very in precise and
+36:40 
+
+36:40 open for a lot of you know
+36:41 
+
+36:41 interpretation and subjectivity so we
+36:44 
+
+36:44 said it's not a great way so we said
+36:46 
+
+36:46 like hey wouldn't it be fun if like we
+36:49 
+
+36:49 could do a deep interview with every
+36:51 
+
+36:51 employee right but maybe we can't do it
+36:53 
+
+36:53 maybe the AI can do it and so we built
+36:55 
+
+36:55 that we built a deep interview
+36:58 
+
+36:58 robot based on chip that we then
+37:01 
+
+37:01 deployed to all of our employees and
+37:02 
+
+37:02 said hey would you be fine with
+37:04 
+
+37:04 interacting with 30 minutes with this
+37:07 
+
+37:07 interviewer uh in order to tell about
+37:10 
+
+37:10 how it is to work a CL and benefits and
+37:11 
+
+37:11 strengths and so forth and then it took
+37:13 
+
+37:13 that information summarized it and
+37:15 
+
+37:15 basically came back with like you know
+37:16 
+
+37:16 what are the strengths and weaknesses of
+37:18 
+
+37:18 working clana could be improved Etc
+37:19 
+
+37:19 right now the point is we built that and
+37:24 
+
+37:24 today there are already AI tools and
+37:26 
+
+37:26 startups out there offering similar Sol
+37:28 
+
+37:28 solutions that you can use for customer
+37:30 
+
+37:30 surveys or for employe surveys or
+37:32 
+
+37:32 engagement surveys Etc so it's not like
+37:34 
+
+37:34 we were the only ones doing that neither
+37:36 
+
+37:36 are we in the business of doing that um
+37:39 
+
+37:39 so obviously you could say today we
+37:40 
+
+37:40 should have bought it but with that said
+37:42 
+
+37:42 I am so happy we built that because we
+37:45 
+
+37:45 learned so much and the employes in t CL
+37:49 
+
+37:49 learned so much from building that that
+37:50 
+
+37:50 we're now applying those learnings to
+37:52 
+
+37:52 other things and we're not using that so
+37:55 
+
+37:55 then maybe today we'd go and buy that
+37:56 
+
+37:56 from somebody but still happy that we
+37:58 
+
+37:58 did it so I feel liit like this is such
+38:00 
+
+38:00 an emerging industry obviously if you
+38:02 
+
+38:02 see something that you feel intuitively
+38:06 
+
+38:06 is just better than anything you can
+38:07 
+
+38:07 build yourselves right now I would do it
+38:09 
+
+38:09 but there's also like so much power in
+38:11 
+
+38:11 Just letting people learn how to use
+38:13 
+
+38:13 these things and deploy them and develop
+38:15 
+
+38:15 them because it's such a new technology
+38:17 
+
+38:17 and there's such a massive value created
+38:19 
+
+38:19 from people learning to do these things
+38:21 
+
+38:21 themselves so that's why we're a little
+38:22 
+
+38:22 bit cautious still about like buying too
+38:24 
+
+38:24 much from these even though we really
+38:26 
+
+38:26 want to be supportive of the start
+38:28 
+
+38:28 community and so forth we're a little
+38:28 
+
+38:28 bit cautious cuz we just want to try
+38:30 
+
+38:30 ourselves first to learn um and so
+38:33 
+
+38:33 that's that's how we're thinking about
+38:35 
+
+38:35 it um and I think then I would also ask
+38:38 
+
+38:38 one add one more thing on it like when
+38:40 
+
+38:40 we for example initiated that discussion
+38:42 
+
+38:42 about should we keep work there or not I
+38:45 
+
+38:45 contacted uh the CEO at that point of
+38:47 
+
+38:47 time and also I said like hey convince
+38:49 
+
+38:49 us about it and but then I realized one
+38:51 
+
+38:51 thing that was funny which is and this
+38:54 
+
+38:54 is an advice to all companies that if if
+38:58 
+
+38:58 I go to CHP and I say what does the API
+39:02 
+
+39:02 document what what is the API call that
+39:03 
+
+39:03 I can do with workday workday at I'm
+39:06 
+
+39:06 sure they fixed it now but at that point
+39:07 
+
+39:07 I gave them that feedback at that point
+39:08 
+
+39:08 of time their API documentation was
+39:10 
+
+39:10 behind the login so as a consequence of
+39:13 
+
+39:13 that CHP had not been trained on the
+39:16 
+
+39:16 apis of workday it is familiar with the
+39:19 
+
+39:19 apis of slack because those are public
+39:21 
+
+39:21 documentation and it's even more
+39:23 
+
+39:23 familiar with things that are open
+39:25 
+
+39:25 source because it's been trained on the
+39:27 
+
+39:27 open source Library
+39:28 
+
+39:28 so there's suddenly this massive benefit
+39:31 
+
+39:31 from being open source software and even
+39:34 
+
+39:34 more so to make sure that you have
+39:35 
+
+39:35 public apis and public documentation of
+39:38 
+
+39:38 your software because then suddenly you
+39:40 
+
+39:40 know CHP understands that he can
+39:42 
+
+39:42 interact it and support you in your
+39:43 
+
+39:43 interaction with that this just like a
+39:45 
+
+39:45 funny reflection so I really encourage
+39:47 
+
+39:47 like these you know more traditional
+39:49 
+
+39:49 companies to like make sure that
+39:51 
+
+39:51 everything you have is actually you know
+39:53 
+
+39:53 publicly available easy and you know
+39:54 
+
+39:54 don't lock this behind doors right
+39:56 
+
+39:56 because then it's not going to be used
+39:60 
+
+39:60 to the same degree yeah yeah yeah um
+40:03 
+
+40:03 speaking of locked line doors a lot of
+40:05 
+
+40:05 the stuff we've talked about so far is
+40:06 
+
+40:06 kind of the internal to Clara operations
+40:09 
+
+40:09 benefits of AI let's talk about the um
+40:13 
+
+40:13 product what what have you seen or what
+40:16 
+
+40:16 what do you see coming for AI in your
+40:19 
+
+40:19 product ah now I'm going to be even more
+40:21 
+
+40:21 kidy
+40:24 
+
+40:24 um I I look I I am extremely excited we
+40:29 
+
+40:29 have some we have some stuff that's
+40:31 
+
+40:31 going to go live in a few weeks that is
+40:32 
+
+40:32 like it's like a beta but it would
+40:35 
+
+40:35 basically be the customer service
+40:37 
+
+40:37 assistant on steroids in a sense that it
+40:40 
+
+40:40 will be even better but it would also
+40:43 
+
+40:43 start advising you and giving you some
+40:46 
+
+40:46 ideas and thoughts around you know the
+40:48 
+
+40:48 type of services that clana offers that
+40:50 
+
+40:50 I think people will find quite cool um
+40:54 
+
+40:54 but it's still beta right it's not it's
+40:57 
+
+40:57 not going to be something yet of that
+40:59 
+
+40:59 kind I when I then look at our internal
+41:03 
+
+41:03 projects I think within 6 to 12 months
+41:08 
+
+41:08 we will be able to start launching
+41:10 
+
+41:10 things that are truly uh disruptive in
+41:15 
+
+41:15 the way of services but the funny thing
+41:17 
+
+41:17 with this and is
+41:19 
+
+41:19 that back in
+41:21 
+
+41:21 2015 long before all of this happened uh
+41:25 
+
+41:25 at that point time CL was trying to
+41:26 
+
+41:26 compete with would stripe an Adan on
+41:28 
+
+41:28 being a payment service provider and
+41:32 
+
+41:32 when addan signed Spotify which is a
+41:34 
+
+41:34 neighbor of ours we were just had to
+41:36 
+
+41:36 look ourselves in in the in the mirror
+41:38 
+
+41:38 and say you know they're beating
+41:40 
+
+41:40 the crap out of us both stri and addan
+41:42 
+
+41:42 so we had to change direction and at
+41:45 
+
+41:45 that point of time we kind of pivoted
+41:47 
+
+41:47 and when we sat down in 15 and asked
+41:50 
+
+41:50 ourselves where is financial services
+41:51 
+
+41:51 going already then we said well
+41:53 
+
+41:53 eventually in the future you wake up in
+41:56 
+
+41:56 the morning and your digit told
+41:57 
+
+41:57 Financial assistant says hey Pat I've
+41:59 
+
+41:59 analyzed your Mortage and I realize I'll
+42:02 
+
+42:02 save you 10 bucks by switching from Bank
+42:04 
+
+42:04 a to bank B and by the way the only
+42:06 
+
+42:06 thing you need to do is say yes right
+42:08 
+
+42:08 and so like we realized that that's
+42:11 
+
+42:11 going to happen that was a revelation to
+42:13 
+
+42:13 us in 15 now we just like self-driving
+42:15 
+
+42:15 cars we couldn't predict how fast or
+42:17 
+
+42:17 when that's going to happen but it was
+42:19 
+
+42:19 very clear to us that like eventually
+42:20 
+
+42:20 that's going to happen and for an
+42:22 
+
+42:22 industry like Banks banking what does
+42:24 
+
+42:24 that mean first and foremost what's cool
+42:26 
+
+42:26 about it it means the evaporation of all
+42:30 
+
+42:30 the excess profits in banking industry
+42:33 
+
+42:33 because a lot of the bank profits are
+42:35 
+
+42:35 built on the lack of customer Mobility
+42:37 
+
+42:37 the in in willingness of us as customers
+42:40 
+
+42:40 to move between Banks and the friction
+42:42 
+
+42:42 associated with it and when AI
+42:43 
+
+42:43 assistance will allow you to do that
+42:45 
+
+42:45 just because you say yes then that will
+42:49 
+
+42:49 Dynamic that would that will make a big
+42:52 
+
+42:52 difference in the market dynamics and
+42:54 
+
+42:54 the competitiveness of fintech and Banks
+42:56 
+
+42:56 and I see that happening in the coming 2
+42:59 
+
+42:59 three years for sure and so ever since
+43:03 
+
+43:03 then that's been the direction of the
+43:04 
+
+43:04 company and that's still the direction
+43:06 
+
+43:06 we want to because we realize to
+43:07 
+
+43:07 ourselves like we don't want to be one
+43:10 
+
+43:10 of those Banks we want to be that
+43:12 
+
+43:12 digital financial advisor of yours
+43:14 
+
+43:14 that's what we want to be we want to be
+43:15 
+
+43:15 that AI digital finan assistant that
+43:17 
+
+43:17 helps you save time save money make you
+43:20 
+
+43:20 feel more in control of your finances
+43:22 
+
+43:22 and I think that's the Natural Evolution
+43:24 
+
+43:24 of every fintech um and that's where we
+43:26 
+
+43:26 want to go so so that is the direction
+43:29 
+
+43:29 and that's the type of
+43:30 
+
+43:30 services uh that we're building and
+43:32 
+
+43:32 trying to accomplish and you know I've
+43:35 
+
+43:35 this Vision we've had with the current
+43:37 
+
+43:37 management team that I work with has all
+43:38 
+
+43:38 been with me almost about 10 years this
+43:40 
+
+43:40 has been the vision for 10 years but
+43:42 
+
+43:42 obviously when we saw CHP we felt like
+43:44 
+
+43:44 uhoh it's going to happen sooner than
+43:46 
+
+43:46 later it's going to go a little bit
+43:48 
+
+43:48 faster than we thought um and the
+43:50 
+
+43:50 services we're building are all in that
+43:52 
+
+43:52 direction it's just about helping people
+43:54 
+
+43:54 save time save money being more in
+43:55 
+
+43:55 control of their finances
+43:57 
+
+43:57 but about on the shopping side like I'm
+43:59 
+
+43:59 I'm I'm addicted to your app as a you
+44:01 
+
+44:01 know Avid Shopper too Avid Shopper uh
+44:05 
+
+44:05 and I I guess my dream is to have like
+44:07 
+
+44:07 an AI stylist that would be that' be
+44:09 
+
+44:09 incredible um do you guys think you'll
+44:11 
+
+44:11 you'll make plays there as well I think
+44:13 
+
+44:13 I think there will be I mean it's
+44:14 
+
+44:14 interesting
+44:16 
+
+44:16 um it's interesting I think in general
+44:19 
+
+44:19 if you look at e or Commerce you could
+44:21 
+
+44:21 basically you can basically think about
+44:23 
+
+44:23 it as three things there's a curation
+44:25 
+
+44:25 job to be done which is what you're
+44:27 
+
+44:27 talking on there is the brand the
+44:29 
+
+44:29 product in the brand and then there's
+44:31 
+
+44:31 the infrastructure that helps you B you
+44:33 
+
+44:33 know payments shipping all the stuff
+44:35 
+
+44:35 that's needed between I think that's why
+44:37 
+
+44:37 if if I think about the AI evolution in
+44:40 
+
+44:40 Commerce I'm less worried about the
+44:44 
+
+44:44 brands like Nike will be Nike and people
+44:46 
+
+44:46 will want to buy Nike right um retailers
+44:49 
+
+44:49 is a bit more different because the
+44:51 
+
+44:51 curation has already been split up we
+44:54 
+
+44:54 have Tik Tok we have Instagram we have
+44:56 
+
+44:56 influencers uh and we have the retailer
+44:59 
+
+44:59 the Best Buy agent who's trying to help
+45:01 
+
+45:01 you recommend which TV you're supposed
+45:03 
+
+45:03 to buy right and so I think that within
+45:06 
+
+45:06 curation recommendation of products and
+45:09 
+
+45:09 selection I am 100% convinced that
+45:11 
+
+45:11 you're right Sonia you're going to see a
+45:13 
+
+45:13 rise in such right um but it's also very
+45:17 
+
+45:17 difficult case to do like I've seen a
+45:19 
+
+45:19 lot of the attempts for example to do
+45:20 
+
+45:20 travel AI suggestions I tried it myself
+45:23 
+
+45:23 since I'm planning a road trip in the US
+45:24 
+
+45:24 with the family this summer and like and
+45:27 
+
+45:27 it was pretty bad you know so it's just
+45:29 
+
+45:29 hard because like you need to understand
+45:31 
+
+45:31 who I am and what my preferences are and
+45:34 
+
+45:34 what do I think and it's just it's more
+45:35 
+
+45:35 complex than we think right so I I I
+45:38 
+
+45:38 think it will happen um but I think it
+45:41 
+
+45:41 will take a little bit longer time maybe
+45:43 
+
+45:43 like there's a lot of things still that
+45:44 
+
+45:44 needs to come into place but it I think
+45:46 
+
+45:46 it's a little bit different if you're
+45:48 
+
+45:48 thinking like you know there's obviously
+45:51 
+
+45:51 easier things it's easier things are
+45:53 
+
+45:53 like I mean Amazon is already doing some
+45:54 
+
+45:54 of the stuff already but like easier
+45:56 
+
+45:56 things would be like hey aad I know
+45:58 
+
+45:58 you're using contact lenses and I saw
+45:59 
+
+45:59 you bought them a month ago you're
+46:00 
+
+46:00 probably running out of them do you want
+46:02 
+
+46:02 the few do you want the new one that's
+46:04 
+
+46:04 easier right then like hey Sonia you
+46:07 
+
+46:07 know I think this dress would fit you
+46:09 
+
+46:09 because like your your style is
+46:11 
+
+46:11 according to this so I'm because but I
+46:13 
+
+46:13 show you I can tell you one cool thing
+46:15 
+
+46:15 on this topic which I think at least
+46:17 
+
+46:17 blew my mind away and that was
+46:20 
+
+46:20 internally we had done a test this is
+46:22 
+
+46:22 just a test right the idea was that
+46:25 
+
+46:25 within the clown app when you open it
+46:26 
+
+46:26 there's category pictures okay so
+46:28 
+
+46:28 there's like a category picture like
+46:29 
+
+46:29 shoes you know this home Garden Products
+46:33 
+
+46:33 whatever so what they had done is they
+46:36 
+
+46:36 had taken and taken me my customer
+46:39 
+
+46:39 profile all of my transactions that I've
+46:41 
+
+46:41 done with clana everything they taken my
+46:43 
+
+46:43 profile as a user
+46:44 
+
+46:44 Sebastian and then based on that they
+46:47 
+
+46:47 had generated a category image which was
+46:49 
+
+46:49 a shoe what looks like a bit like a Nike
+46:52 
+
+46:52 shoe and they just wanted to create a
+46:54 
+
+46:54 more personalized category image that
+46:57 
+
+46:57 would catch my attention so it was a
+46:60 
+
+46:60 imaginary AI created image of a shoe but
+47:03 
+
+47:03 the crazy thing is I looked at it and I
+47:06 
+
+47:06 was like I want to buy that one like
+47:09 
+
+47:09 it's like and I am not a big shopper I'm
+47:11 
+
+47:11 not a big shopper right but I was just
+47:13 
+
+47:13 like that is insane there's something in
+47:16 
+
+47:16 the fact that you fed my profile into
+47:19 
+
+47:19 that my preferences of Brands and
+47:20 
+
+47:20 purchases and all that and the image you
+47:23 
+
+47:23 generated was actually attractive and
+47:26 
+
+47:26 you know we already know that she and
+47:27 
+
+47:27 and the others are doing amazing stuff
+47:29 
+
+47:29 where they are predicting purchase
+47:31 
+
+47:31 behaviors and testing products on small
+47:33 
+
+47:33 quantities and they you know and people
+47:35 
+
+47:35 start buying them and then they produce
+47:37 
+
+47:37 more quantities and they're super fast
+47:38 
+
+47:38 it's super impressive to see what these
+47:39 
+
+47:39 guys are doing and sometimes I feel also
+47:41 
+
+47:41 people forget that like actually that
+47:42 
+
+47:42 leads to less waste because the bigger
+47:45 
+
+47:45 retailers buy a lot of products that
+47:46 
+
+47:46 never get sold and it's bad for the
+47:47 
+
+47:47 environment so this is actually better
+47:49 
+
+47:49 for the environment to some degree even
+47:51 
+
+47:51 though people are very critical about it
+47:53 
+
+47:53 but what I thought here is just like wow
+47:55 
+
+47:55 I just felt like I got a glimpse into
+47:57 
+
+47:57 the future I was like the next thing is
+47:59 
+
+47:59 I'm going to be out shopping and the
+48:01 
+
+48:01 images that I will see are things that
+48:03 
+
+48:03 doesn't even exist they're just you know
+48:05 
+
+48:05 created on the Fly based on my profile
+48:08 
+
+48:08 and then if I do click them and want to
+48:09 
+
+48:09 buy them they're going to be produced
+48:12 
+
+48:12 post me saying I want this right and
+48:14 
+
+48:14 that was just like that's and again
+48:16 
+
+48:16 these are like the self-driving cars
+48:18 
+
+48:18 things I don't know when but it felt I
+48:20 
+
+48:20 felt very convinced that it will happen
+48:21 
+
+48:21 eventually right I think that was pretty
+48:23 
+
+48:23 cool I was just like wow that's the next
+48:25 
+
+48:25 level um you know products generated
+48:28 
+
+48:28 there because there was it was funny cuz
+48:29 
+
+48:29 it was a shoe and the other thing it had
+48:31 
+
+48:31 created was an image of a apparently I
+48:33 
+
+48:33 bought a lot of Home gardening stuff
+48:34 
+
+48:34 which sounds odd cuz I'm not the big
+48:36 
+
+48:36 home Goden person but and it had created
+48:38 
+
+48:38 a lawn mower you know like one of those
+48:40 
+
+48:40 that you cut a lawn with but it was
+48:42 
+
+48:42 super nicely designed and I was like
+48:43 
+
+48:43 yeah that's how I would like a lawn mow
+48:45 
+
+48:45 to look like I going be a really nice
+48:46 
+
+48:46 design can I get that one you know so so
+48:49 
+
+48:49 I think that that's a glimpse into the
+48:50 
+
+48:50 future the future will be generated
+48:53 
+
+48:53 let's uh let's move into a sort of Rapid
+48:56 
+
+48:56 Fire round and we'll start with a
+48:58 
+
+48:58 question we'd like to ask people who do
+48:59 
+
+48:59 you admire most in the world of
+49:02 
+
+49:02 AI n but it has to be Sam I'm sorry it's
+49:05 
+
+49:05 like a it's easy
+49:08 
+
+49:08 question great next question
+49:11 
+
+49:11 Sonia uh Sebastian you and your wife are
+49:13 
+
+49:13 both patrons of the Arts and and Avid
+49:15 
+
+49:15 art collectors uh do you have any AI art
+49:18 
+
+49:18 in your collection and do you think you
+49:20 
+
+49:20 will ever have any AI art in your
+49:23 
+
+49:23 collection uh I don't have I think I
+49:26 
+
+49:26 could have I think to me an image is
+49:29 
+
+49:29 something that's supposed to create an
+49:31 
+
+49:31 emotional reaction of some sorts right
+49:34 
+
+49:34 and I think it's fascina I don't mind if
+49:36 
+
+49:36 the emotional reaction is created by an
+49:38 
+
+49:38 AI if it touches me and it means
+49:40 
+
+49:40 something to me that's what's important
+49:43 
+
+49:43 but that doesn't mean that I don't think
+49:44 
+
+49:44 we will continue to buy a lot of art
+49:46 
+
+49:46 from Human Maids as well
+49:49 
+
+49:49 right what is your best piece of advice
+49:52 
+
+49:52 for Founders who are building with AI
+49:55 
+
+49:55 today
+49:57 
+
+49:57 I don't know I think it depends I think
+49:59 
+
+49:59 the founders are doing well I think the
+50:01 
+
+50:01 smaller companies are doing well I think
+50:03 
+
+50:03 it's the big companies that should stop
+50:06 
+
+50:06 discarding this as Bitcoin or some kind
+50:10 
+
+50:10 of you know temporary Trend now we're
+50:11 
+
+50:11 not going to get into the Bitcoin
+50:13 
+
+50:13 because I know some other people on this
+50:14 
+
+50:14 call have different opinions tonight but
+50:17 
+
+50:17 but um uh but uh yeah I think that's the
+50:21 
+
+50:21 important like don't like be cautious
+50:25 
+
+50:25 lean into it try it test it yourself
+50:28 
+
+50:28 like you know explore it learn it like
+50:30 
+
+50:30 don't fear it just try to learn um I
+50:33 
+
+50:33 think that's the best thing you know and
+50:36 
+
+50:36 you can always start talking about yeah
+50:37 
+
+50:37 what about Ai and the world will end and
+50:40 
+
+50:40 this and that yeah I'm like I get it I
+50:42 
+
+50:42 can also sit down at dinner sometimes
+50:43 
+
+50:43 and talk about these things because
+50:44 
+
+50:44 they're fascinating but in the end like
+50:46 
+
+50:46 a meteor might hit us in hit me in the
+50:48 
+
+50:48 head tomorrow as well like I mean things
+50:50 
+
+50:50 can happen you can't predict these
+50:51 
+
+50:51 things so the only thing you can do is
+50:53 
+
+50:53 try to lean in and learn and explore
+50:55 
+
+50:55 that's my opinion like at please try to
+50:57 
+
+50:57 understand it better awesome Sebastian
+51:01 
+
+51:01 thank you for doing this thank you for
+51:03 
+
+51:03 having me
+51:06 
+
+51:06 [Music]
+51:12 
+
+51:12 [Music]
+51:22 
+
+51:22 [Music]

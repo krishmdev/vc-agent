@@ -1,0 +1,3007 @@
+00:00 foreign
+00:01 
+
+00:01 [Music]
+00:05 
+
+00:05 the organization for many years was
+00:08 
+
+00:08 trying to reject the organ like it's
+00:11 
+
+00:11 losing us all this money why are we
+00:12 
+
+00:12 doing this it was in those moments in
+00:14 
+
+00:14 our company's history where as a lead
+00:16 
+
+00:16 you kind of have to sacrifice some of
+00:18 
+
+00:18 your credibility and I was willing to
+00:20 
+
+00:20 take that credibility hit and willing to
+00:22 
+
+00:22 protect this thing because I I believed
+00:24 
+
+00:24 in it
+00:26 
+
+00:26 thank you
+00:28 
+
+00:28 welcome to Crucible moments a podcast
+00:31 
+
+00:31 about the critical Crossroads and
+00:33 
+
+00:33 inflection points that shaped some of
+00:35 
+
+00:35 the world's most remarkable companies
+00:37 
+
+00:37 I'm your host relof Puerta
+00:40 
+
+00:40 today's episode is about block Inc
+00:42 
+
+00:42 formerly known as Square which was
+00:44 
+
+00:44 founded in 2009 by Jack Dorsey and Jim
+00:47 
+
+00:47 McKelvey
+00:49 
+
+00:49 Block's first product was a little white
+00:51 
+
+00:51 square that plugged into a phone's audio
+00:53 
+
+00:53 jack and turned it into a credit card
+00:55 
+
+00:55 terminal it gave millions of small
+00:57 
+
+00:57 business owners who previously couldn't
+00:59 
+
+00:59 participate in the digital economy the
+01:01 
+
+01:01 ability to accept credit cards
+01:04 
+
+01:04 while Block's Journey began with a
+01:06 
+
+01:06 single product today the company offers
+01:08 
+
+01:08 a suite of financial tools for millions
+01:10 
+
+01:10 of businesses of all sizes and for
+01:13 
+
+01:13 individuals as well
+01:15 
+
+01:15 moments in today's episode hinge on the
+01:17 
+
+01:17 company's strategic approach to growth
+01:19 
+
+01:19 and expansion we'll look at how block
+01:22 
+
+01:22 sacrificed Revenue early on in order to
+01:24 
+
+01:24 build its Network how a distribution
+01:26 
+
+01:26 deal with Starbucks tested the company's
+01:28 
+
+01:28 identity and its resolve when the hidden
+01:31 
+
+01:31 costs of the deal became clear
+01:33 
+
+01:33 and how the company turned a hack quick
+01:35 
+
+01:35 project called Cash app into one of the
+01:37 
+
+01:37 most popular Consumer Finance products
+01:39 
+
+01:39 in the world you'll learn how Block's
+01:42 
+
+01:42 culture of risk taking its willingness
+01:44 
+
+01:44 to accept mistakes and its refusal to
+01:46 
+
+01:46 let failure hold them back LED to some
+01:49 
+
+01:49 remarkable outcomes
+01:51 
+
+01:51 [Music]
+01:54 
+
+01:54 my name is Jack Dorsey and I am Black's
+01:57 
+
+01:57 head a blackhead my second boss ever
+01:60 
+
+02:00 this guy named Jim McKelvey when I was
+02:02 
+
+02:02 about 15 years old in 1993 Jim hired
+02:06 
+
+02:06 Jack to work as a summer intern at a
+02:08 
+
+02:08 software company Mira
+02:10 
+
+02:10 Jim coined him jack the genius and the
+02:13 
+
+02:13 two worked together for the next two
+02:15 
+
+02:15 summers I went to college moved away we
+02:18 
+
+02:18 kind of lost touch and after I left the
+02:22 
+
+02:22 CEO role of Twitter Jim reached out and
+02:25 
+
+02:25 he was interested in working together
+02:27 
+
+02:27 again
+02:28 
+
+02:28 I was too so I went back to St Louis
+02:30 
+
+02:30 during the holidays and we had a
+02:31 
+
+02:32 conversation and
+02:33 
+
+02:33 we decided that we wanted to build
+02:34 
+
+02:34 something we didn't know what that
+02:36 
+
+02:36 something was but generally we just
+02:38 
+
+02:38 wanted to work together because we
+02:39 
+
+02:39 enjoyed it I think it was in January of
+02:41 
+
+02:41 2009. he said I know what we're working
+02:43 
+
+02:43 on
+02:45 
+
+02:45 and I said what he's like well I just
+02:47 
+
+02:47 lost a sale because I couldn't accept
+02:49 
+
+02:49 Dynamics
+02:50 
+
+02:50 Jim's side hustle was blowing gloss he
+02:53 
+
+02:53 ran a studio in St Louis selling
+02:55 
+
+02:55 sculptural gloss faucets which are
+02:58 
+
+02:58 beautiful by the way if you look them up
+02:60 
+
+03:00 but like millions of other small
+03:02 
+
+03:02 business owners Jim was unable to accept
+03:04 
+
+03:04 credit cards
+03:06 
+
+03:06 before square if you were a merchant who
+03:08 
+
+03:08 wanted to take credit cards you had to
+03:10 
+
+03:10 purchase expensive Hardware which locked
+03:12 
+
+03:12 you into a multi-year contract and came
+03:14 
+
+03:14 with exorbitant often hidden monthly
+03:16 
+
+03:16 fees on top of that as the merchant you
+03:19 
+
+03:19 were on the hook to pay a range of
+03:21 
+
+03:21 transaction fees to credit card Networks
+03:24 
+
+03:24 for a small business these costs were
+03:26 
+
+03:26 prohibitive
+03:27 
+
+03:27 this meant if someone wanted to pay with
+03:29 
+
+03:29 a credit card as was the case with Jim
+03:31 
+
+03:31 business owners had no choice but to
+03:34 
+
+03:34 turn down the sale
+03:36 
+
+03:36 there was an important why now the App
+03:39 
+
+03:39 Store had launched the previous year and
+03:41 
+
+03:41 smartphones were quickly becoming
+03:42 
+
+03:42 ubiquitous
+03:44 
+
+03:44 Jim thought what if someone could accept
+03:46 
+
+03:46 credit card payments using their phone
+03:48 
+
+03:48 and he said why don't we build that we
+03:50 
+
+03:50 wanted to build something that stood for
+03:53 
+
+03:53 small businesses giving them tools
+03:55 
+
+03:55 to level the playing field so
+03:58 
+
+03:58 we started with it being entirely
+04:00 
+
+04:00 software based and then we realized we
+04:03 
+
+04:03 needed hardware and we figured out how
+04:04 
+
+04:04 to build the hardware and intersect with
+04:07 
+
+04:07 the networks and just constant iteration
+04:10 
+
+04:10 to get to a point within a month of a
+04:13 
+
+04:13 working prototype that we could actually
+04:15 
+
+04:15 take someone's card and take money off
+04:17 
+
+04:17 the card in 2009 when I first met Jack
+04:21 
+
+04:21 and Jim the idea that there was this
+04:23 
+
+04:23 little reader that you would plug into
+04:24 
+
+04:24 the audio jack of your phone that would
+04:28 
+
+04:28 transform your phone into a credit card
+04:29 
+
+04:29 terminal was
+04:31 
+
+04:31 pretty remarkable
+04:32 
+
+04:32 remember Jack giving me one of the
+04:35 
+
+04:35 readers and I ran around like a child in
+04:37 
+
+04:37 a candy store showing it to all my
+04:40 
+
+04:40 partners at Sequoia and say please give
+04:42 
+
+04:42 me your credit card and and I would
+04:43 
+
+04:43 charge five dollars and I'd give them
+04:44 
+
+04:44 the money back obviously it wasn't I was
+04:46 
+
+04:46 trying to to scam all my partners in
+04:48 
+
+04:48 this case but it was just it was so
+04:51 
+
+04:51 inspiring when you think about the
+04:53 
+
+04:53 ability for a merchant to just run its
+04:55 
+
+04:55 business accepting payments it's just
+04:57 
+
+04:57 such a fundamental part of that
+04:59 
+
+04:59 block enabled these Merchants that were
+05:01 
+
+05:01 unserved to become part of the
+05:04 
+
+05:04 electronic payment system
+05:06 
+
+05:06 we have a core purpose which is economic
+05:08 
+
+05:08 impairment
+05:11 
+
+05:11 in 2011 Sequoia invested in square and I
+05:14 
+
+05:14 joined its board
+05:15 
+
+05:15 back in those early days I was worried
+05:17 
+
+05:17 about Square's ability to gain
+05:18 
+
+05:18 distribution at the time Intuit had a
+05:21 
+
+05:21 payments product and they had a
+05:22 
+
+05:22 bluetooth reader so competitors in the
+05:25 
+
+05:25 critical terminal space existed and
+05:27 
+
+05:27 square this brand new company would be
+05:29 
+
+05:29 up against them
+05:31 
+
+05:31 and there was a real question whether
+05:32 
+
+05:32 the Simplicity of design that square
+05:36 
+
+05:36 offered and the seamless nature of the
+05:38 
+
+05:38 whole product experience would really
+05:40 
+
+05:40 resonate in a way that made distribution
+05:42 
+
+05:42 and growth efficient
+05:44 
+
+05:44 so it was a little bit of competitive
+05:46 
+
+05:46 noise and then a question about is this
+05:48 
+
+05:48 a product that you needed to sell or is
+05:51 
+
+05:51 it a product that customers would find
+05:52 
+
+05:52 the risk was that if Square didn't
+05:55 
+
+05:55 figure out an efficient way to get
+05:56 
+
+05:56 sellers to embrace its product and then
+05:59 
+
+05:59 also develop a business model the
+06:01 
+
+06:01 company would die before it even got
+06:03 
+
+06:03 started so there was an inflection point
+06:06 
+
+06:06 within six or seven months of starting
+06:09 
+
+06:09 work on the project where on One path
+06:13 
+
+06:13 we could have built hardware and
+06:14 
+
+06:14 software and sold it much like some of
+06:17 
+
+06:17 our competitors were doing like a
+06:19 
+
+06:19 verifone and NCR and all these all these
+06:21 
+
+06:21 terminals you've seen on countertops the
+06:24 
+
+06:24 initial idea was
+06:26 
+
+06:26 we sell this reader and we sell the
+06:28 
+
+06:28 software or we could build a somewhat
+06:30 
+
+06:30 healthy margin business based off that
+06:33 
+
+06:33 but then we started watching how people
+06:35 
+
+06:35 were using Square early on so we had one
+06:37 
+
+06:37 Merchant under my apartment in San
+06:40 
+
+06:40 Francisco named Lily Bell and she sold
+06:43 
+
+06:43 flowers and we kept going to her every
+06:47 
+
+06:47 week asking her if she wanted to try
+06:48 
+
+06:48 what we were building try to accept
+06:50 
+
+06:50 credit cards because she was cash only
+06:52 
+
+06:52 and she consistently said no to us she
+06:54 
+
+06:54 said I don't want to deal with credit
+06:56 
+
+06:56 cards I want to keep it simple use cash
+06:58 
+
+06:58 eventually after about a month we asked
+07:01 
+
+07:02 her and she said no again and we were
+07:04 
+
+07:04 standing around someone came up to buy
+07:06 
+
+07:06 flowers handed over a credit card and
+07:08 
+
+07:08 she said we don't accept that but
+07:09 
+
+07:09 there's an ATM around the corner he kind
+07:11 
+
+07:11 of shrugged his shoulders and walks away
+07:13 
+
+07:13 the guy never comes back and she turned
+07:15 
+
+07:15 to us and said I'm gonna try this when
+07:18 
+
+07:18 we reflected upon it
+07:20 
+
+07:20 for Lily Bell she doesn't care about
+07:22 
+
+07:22 accepting credit cards at all what she
+07:24 
+
+07:24 cares about is making the sale so if
+07:26 
+
+07:26 that's the case and we want to help as
+07:28 
+
+07:28 many people make as many sales as
+07:30 
+
+07:30 possible we need to give this away for
+07:32 
+
+07:32 free we need to give the hardware away
+07:33 
+
+07:33 for free we need to give the software
+07:35 
+
+07:35 away for free we need to grow the
+07:37 
+
+07:37 network as quickly as possible and it
+07:40 
+
+07:40 was super scary it was super risky
+07:45 
+
+07:45 all the companies in the critical
+07:46 
+
+07:46 terminal space were making money by
+07:48 
+
+07:48 selling their hardware and software
+07:51 
+
+07:51 Square disrupted this business model by
+07:53 
+
+07:53 doing the opposite give the hardware
+07:55 
+
+07:55 away for free and charge a percentage
+07:57 
+
+07:57 fee on each transaction
+07:60 
+
+07:60 they envisioned they could succeed by
+08:02 
+
+08:02 growing a large network with lots of
+08:04 
+
+08:04 transactions but this direction would
+08:06 
+
+08:06 mean incurring enormous initial losses
+08:08 
+
+08:08 just as the company was getting its
+08:10 
+
+08:10 start when everything was at risk and so
+08:13 
+
+08:13 The Crucible decision became should
+08:15 
+
+08:15 Square stick with its initial plan to
+08:17 
+
+08:17 sell its hardware and software or should
+08:20 
+
+08:20 it take the less obvious riskier path
+08:22 
+
+08:22 and give it away for free
+08:24 
+
+08:24 after a lot of back and forth we decided
+08:26 
+
+08:26 to give it away for free and grow the
+08:29 
+
+08:29 network and that moment led to the whole
+08:32 
+
+08:32 company if we stuck with the hardware
+08:34 
+
+08:34 aspect which we're intending to do we
+08:36 
+
+08:36 would have been verified and I wouldn't
+08:38 
+
+08:38 be talking on this podcast
+08:40 
+
+08:40 Square introduced the credit card reader
+08:42 
+
+08:42 in 2010 and it immediately took off
+08:45 
+
+08:45 customers flocked to the service
+08:48 
+
+08:48 in addition to giving hardware and
+08:50 
+
+08:50 software away for free Square simplified
+08:52 
+
+08:52 the Byzantine fee structure of
+08:54 
+
+08:54 traditional credit card providers
+08:56 
+
+08:56 at the time these fees were anywhere
+08:58 
+
+08:58 from one to eight percent of a purchase
+08:60 
+
+08:60 depending on whether it was charged to a
+09:02 
+
+09:02 Visa Mastercard Amex
+09:04 
+
+09:04 Etc
+09:05 
+
+09:05 we want to make it simple for sellers to
+09:08 
+
+09:08 say yes and having a always-changing
+09:11 
+
+09:11 rate table was not simple at all so we
+09:14 
+
+09:14 decided we're gonna have one price it's
+09:16 
+
+09:16 gonna be 2.75 percent we're going to pay
+09:19 
+
+09:19 the difference we know we're going to
+09:20 
+
+09:20 lose money for a while but we did the
+09:23 
+
+09:23 math and we felt comfortable that we
+09:25 
+
+09:25 could do it that we are willing to take
+09:26 
+
+09:26 the risk and and see it through and It
+09:28 
+
+09:28 ultimately worked out
+09:30 
+
+09:30 while Square did lose money initially
+09:32 
+
+09:32 the company was able to grow its Network
+09:34 
+
+09:34 so much that eventually it became
+09:36 
+
+09:36 profitable and this opened the door for
+09:38 
+
+09:38 square to develop other Financial tools
+09:40 
+
+09:40 for merchants
+09:41 
+
+09:41 squares evolved a ton over the years I'm
+09:44 
+
+09:44 Melissa Henry and I'm the CEO of the
+09:47 
+
+09:47 square business at block when I started
+09:50 
+
+09:50 we were primarily payments it was a
+09:53 
+
+09:53 hardware dongle and most of our payments
+09:55 
+
+09:55 Revenue was really entered 10.50 hit
+09:59 
+
+09:59 charge and go and majority of the
+10:02 
+
+10:02 revenue wasn't associated with customers
+10:04 
+
+10:04 using software and our Commerce products
+10:06 
+
+10:06 to really run and optimize their
+10:08 
+
+10:08 business over time that's really kind of
+10:11 
+
+10:11 inverted
+10:12 
+
+10:12 because we latched onto this problem of
+10:15 
+
+10:15 no we're helping sellers make the sale
+10:17 
+
+10:17 there's other things that help them make
+10:19 
+
+10:20 the sale in addition to accepting credit
+10:21 
+
+10:21 cards the next thing that we found was
+10:24 
+
+10:24 we were giving the credit card reader to
+10:26 
+
+10:26 site glass coffee for instance they were
+10:29 
+
+10:29 using it but they had no way to track
+10:30 
+
+10:30 how many cappuccinos they sold that day
+10:32 
+
+10:32 or croissants or espressos or black
+10:35 
+
+10:35 coffee or whatnot we made a very simple
+10:38 
+
+10:38 register and the biggest thing we did
+10:40 
+
+10:40 was just made a button for cappuccino
+10:42 
+
+10:42 and it was programmable of course but
+10:45 
+
+10:45 what that meant is every time they hit
+10:46 
+
+10:46 that button for Cappuccino the price
+10:49 
+
+10:49 would automatically come up and in the
+10:50 
+
+10:50 background that was now tracked so now
+10:53 
+
+10:53 at the end of the day they could see how
+10:54 
+
+10:54 many cappuccinos they sold they could
+10:56 
+
+10:56 remember that on Tuesday it was rainy
+10:58 
+
+10:58 and how that impacted their sales for
+10:60 
+
+10:60 the day they could see the correlation
+11:01 
+
+11:01 between the Scotty sales and espresso
+11:04 
+
+11:04 when they moved the biscotti jar across
+11:06 
+
+11:06 the counter away from the register so
+11:09 
+
+11:09 suddenly they had all this data and the
+11:11 
+
+11:11 data helped inform how they built their
+11:13 
+
+11:13 business and what did that lead to led
+11:16 
+
+11:16 to them making more sales we did it
+11:19 
+
+11:19 again recognizing that we had a salon
+11:21 
+
+11:21 for instance and if they could buy a new
+11:24 
+
+11:24 chair which costs about two thousand
+11:25 
+
+11:26 dollars to install they would literally
+11:28 
+
+11:28 double their sales so we started looking
+11:31 
+
+11:31 at like what if we lend money
+11:33 
+
+11:33 and we talked to a bunch of merchants
+11:35 
+
+11:35 and it turns out if they go to a bank if
+11:37 
+
+11:37 they ask for a loan the floor is usually
+11:39 
+
+11:39 about twenty twenty five thousand
+11:41 
+
+11:41 dollars like Banks just don't work at
+11:44 
+
+11:44 those small amounts
+11:45 
+
+11:45 so we said okay why don't we set up a
+11:47 
+
+11:47 very simple system where we can lend
+11:49 
+
+11:49 money to these sellers send them an
+11:52 
+
+11:52 email says you know here's an offer for
+11:54 
+
+11:54 a 500 loan or a five thousand dollar
+11:57 
+
+11:57 loan all based on the data that we had
+11:60 
+
+11:60 from them using our register and the
+12:02 
+
+12:02 payment device
+12:03 
+
+12:03 you can accept it if you want here's a
+12:05 
+
+12:05 rate and you pay it back every time you
+12:08 
+
+12:08 swipe one of your customers cards and it
+12:11 
+
+12:11 was a hit because it was easy
+12:12 
+
+12:12 [Music]
+12:13 
+
+12:14 our model became very very simple which
+12:17 
+
+12:17 was if we help a seller make a sale and
+12:19 
+
+12:20 we help them make more sales it benefits
+12:22 
+
+12:22 our business positively and then we can
+12:24 
+
+12:24 support more sellers so we actually
+12:26 
+
+12:26 found this very virtuous Loop which had
+12:29 
+
+12:29 very little tax on our customers and our
+12:32 
+
+12:32 interests were entirely aligned all we
+12:34 
+
+12:35 had to do was help the seller make more
+12:36 
+
+12:36 sales and our businesses would grow
+12:39 
+
+12:39 your total a lot to listen to your
+12:40 
+
+12:40 customers and I think people take that
+12:42 
+
+12:42 somewhat literally like if a customer
+12:44 
+
+12:44 tells you to do this then you do that
+12:45 
+
+12:45 whereas we had a different approach
+12:48 
+
+12:48 which was we're going to observe what
+12:49 
+
+12:49 our customers are trying to do and then
+12:52 
+
+12:52 we're going to learn why they're trying
+12:54 
+
+12:54 to do that over a base of customers and
+12:56 
+
+12:56 then we're going to iterate based on
+12:58 
+
+12:58 that so this cycle of observe learn
+12:60 
+
+12:60 improve that really set the tone for the
+13:02 
+
+13:02 business for the next two years or so
+13:06 
+
+13:06 so in 2012 we had Starbucks reach out to
+13:10 
+
+13:11 us and it was Howard Howard Schultz then
+13:14 
+
+13:14 CEO of Starbucks
+13:16 
+
+13:16 Square got onto their radar and Howard
+13:19 
+
+13:19 reached out and they were interested in
+13:21 
+
+13:21 using Square at all their stores moving
+13:25 
+
+13:25 all their processing over to us which
+13:27 
+
+13:27 was pretty crazy given that we were only
+13:30 
+
+13:30 three years old and we built a really
+13:32 
+
+13:32 great scalable system but we never
+13:34 
+
+13:34 imagined like going to the level of a
+13:36 
+
+13:36 Starbucks which had 10 000 stores all
+13:38 
+
+13:38 around the US and even more
+13:40 
+
+13:40 internationally
+13:41 
+
+13:41 as I mentioned I was worried about
+13:43 
+
+13:43 Square's ability to gain enough
+13:45 
+
+13:45 distribution to get off the ground here
+13:47 
+
+13:47 was a chance to get a lot of
+13:49 
+
+13:49 distribution quickly but it also came
+13:51 
+
+13:51 with a lot of risk
+13:53 
+
+13:53 one of my earliest memories of the
+13:55 
+
+13:55 Starbucks deal was discussing it at a
+13:56 
+
+13:56 board meeting where the management team
+13:58 
+
+13:58 presented this as a as a potential
+14:00 
+
+14:00 Avenue for growth
+14:02 
+
+14:02 how do you gain wider distribution for
+14:04 
+
+14:04 your product
+14:05 
+
+14:05 and one of the paths is to do a big
+14:08 
+
+14:08 partnership deal and that is always
+14:11 
+
+14:11 brought with risk as as was the
+14:13 
+
+14:13 Starbucks Deal Four Square as it was
+14:15 
+
+14:15 known at the time and I was I'd say
+14:18 
+
+14:18 initially I was a little resistant to
+14:20 
+
+14:20 the idea the gap between where our
+14:22 
+
+14:22 product capabilities were and what
+14:24 
+
+14:24 Starbucks needed was very big and by
+14:27 
+
+14:27 investing the resources to meet
+14:29 
+
+14:29 Starbucks needs I worried that we would
+14:31 
+
+14:31 divert resources from other things that
+14:34 
+
+14:34 served the media potatoes of the
+14:36 
+
+14:36 business that we were in I realized that
+14:38 
+
+14:38 doing that would also stretch our
+14:40 
+
+14:40 capabilities and maybe that then would
+14:42 
+
+14:42 trickle down and benefit everybody else
+14:44 
+
+14:44 it's a difficult rate of decision I've
+14:46 
+
+14:46 seen companies where they were smothered
+14:49 
+
+14:49 by one big customer really overwhelming
+14:51 
+
+14:51 them and you almost become the r d
+14:53 
+
+14:53 extension or product development
+14:55 
+
+14:55 extension for some big company and I've
+14:57 
+
+14:57 seen instances where I've been catapult
+14:58 
+
+14:58 you so there's no single formula to say
+15:01 
+
+15:01 you should or should not pursue these
+15:03 
+
+15:03 sort of distribution deals
+15:04 
+
+15:04 [Music]
+15:06 
+
+15:06 and so this became a crucible moment
+15:08 
+
+15:08 should Square take the deal with
+15:10 
+
+15:10 Starbucks
+15:11 
+
+15:11 [Music]
+15:13 
+
+15:13 it's hard because Starbucks is a big
+15:15 
+
+15:15 name and of course you want to be
+15:18 
+
+15:18 associated with this giant name and of
+15:19 
+
+15:19 course you want those headlines and you
+15:21 
+
+15:21 know it would feel good but it was
+15:24 
+
+15:24 challenging emotionally because we were
+15:27 
+
+15:27 building this company that stood for
+15:29 
+
+15:29 small businesses giving them tools to
+15:31 
+
+15:32 level the playing field on competing
+15:34 
+
+15:34 with the larger businesses like a
+15:36 
+
+15:36 Starbucks we had so many coffee stores
+15:38 
+
+15:38 at this point and they were all
+15:40 
+
+15:40 competing against Starbucks my mom had a
+15:42 
+
+15:42 coffee store when I was young in St
+15:44 
+
+15:44 Louis Missouri and she was actually put
+15:45 
+
+15:45 out of business by Starbucks explaining
+15:48 
+
+15:48 it to our customer base I said you know
+15:50 
+
+15:50 there's an opportunity for us
+15:51 
+
+15:51 potentially to work with Starbucks your
+15:54 
+
+15:54 coffee store would you be opposed to
+15:56 
+
+15:56 that and I was assuming that they would
+15:59 
+
+15:59 not be comfortable with it but what they
+16:01 
+
+16:01 said consistently was no I you know I
+16:04 
+
+16:04 feel you should do that because if you
+16:05 
+
+16:05 can handle Starbucks you can handle me
+16:07 
+
+16:07 and by the way my coffee is better than
+16:09 
+
+16:09 Starbucks I'm not really competing with
+16:11 
+
+16:11 them I went to my mom I said you know
+16:14 
+
+16:14 Starbucks wants to work with us would
+16:16 
+
+16:16 you be upset she's like no like if we
+16:18 
+
+16:18 could have used square at the time we
+16:20 
+
+16:20 would use it and maybe I wouldn't have
+16:22 
+
+16:22 been out of business I don't know and
+16:23 
+
+16:23 then there's Square employees and that's
+16:25 
+
+16:25 where the mini Revolt kind of happened
+16:29 
+
+16:29 there's this mindset of we are for the
+16:31 
+
+16:31 underdog we're solely focused on helping
+16:34 
+
+16:34 them against the Giants and we had a big
+16:37 
+
+16:37 conversation I think we're about 200
+16:38 
+
+16:38 people at the time those moments come
+16:40 
+
+16:40 with a lot of pain a lot of conversation
+16:43 
+
+16:43 a lot of stubbornness but eventually you
+16:46 
+
+16:46 arrive at the right solution if you're
+16:48 
+
+16:48 if you're asking the right questions
+16:50 
+
+16:50 one of the things that that came to me
+16:53 
+
+16:53 through the conversations is that if we
+16:55 
+
+16:55 cast ourselves as for the underdog for
+16:59 
+
+16:59 the smaller sellers leveling this
+17:00 
+
+17:00 playing field
+17:02 
+
+17:02 and
+17:03 
+
+17:03 were successful
+17:05 
+
+17:05 and they actually grow are we going to
+17:08 
+
+17:08 tell them to go elsewhere because
+17:10 
+
+17:10 philosophically we don't want to handle
+17:12 
+
+17:12 them at this arbitrary line of growth
+17:15 
+
+17:15 that they just passed no so what if
+17:18 
+
+17:18 instead
+17:19 
+
+17:20 we change our mindset a bit and grow
+17:22 
+
+17:22 with our sellers if we can grow with
+17:24 
+
+17:24 them
+17:25 
+
+17:25 for whatever ambition they have we're
+17:28 
+
+17:28 fulfilling the promise that we made to
+17:30 
+
+17:30 them when they came to us
+17:31 
+
+17:31 so that eventually resonated and we
+17:36 
+
+17:36 decided to sign the Starbucks Deal
+17:38 
+
+17:38 certainly it ended up being somewhat of
+17:42 
+
+17:42 a one-sided deal that did not benefit us
+17:45 
+
+17:45 and it is what it is
+17:48 
+
+17:48 in August 2012 Square became a
+17:51 
+
+17:51 Starbucks's exclusive processor of
+17:53 
+
+17:53 in-store payments for 7 000 U.S stores
+17:57 
+
+17:57 but in 2015 squares S1 filing revealed
+18:01 
+
+18:01 that this partnership had caused losses
+18:04 
+
+18:04 of 70 million dollars
+18:07 
+
+18:07 Square had been promised the percentage
+18:08 
+
+18:08 of the transaction fees but the terms of
+18:10 
+
+18:10 the deal were such that with each
+18:12 
+
+18:12 transaction Square was required to pay
+18:14 
+
+18:14 an even higher transaction rate to the
+18:16 
+
+18:16 credit card companies and so ultimately
+18:18 
+
+18:18 on every Starbucks swipe Square lost
+18:21 
+
+18:21 money there was this good BDM article
+18:24 
+
+18:24 that talks about the clock and the News
+18:26 
+
+18:26 cycle that companies go through where
+18:28 
+
+18:28 you know noon is your high Riding High
+18:30 
+
+18:30 everyone loves you six o'clock
+18:32 
+
+18:32 everything starts to turn sour and then
+18:35 
+
+18:35 you've got the two sides in between at
+18:37 
+
+18:37 this point we were in the second half we
+18:39 
+
+18:39 were probably seven or eight o'clock you
+18:41 
+
+18:41 know there had been some bad press
+18:43 
+
+18:43 somewhat dark hours and then you know
+18:45 
+
+18:45 the IPO was rough as well
+18:48 
+
+18:48 the Revelation about the Starbucks Deal
+18:50 
+
+18:50 and this very specific focus on the
+18:53 
+
+18:53 losses incurred in the payment
+18:54 
+
+18:54 processing part of it was something that
+18:56 
+
+18:56 cast a shadow over square and raised
+18:59 
+
+18:59 more questions about the company's
+19:00 
+
+19:00 ability to be profitable long term right
+19:03 
+
+19:03 when we're going public right when
+19:04 
+
+19:04 you're unable to respond to these
+19:06 
+
+19:06 criticisms because you're in the middle
+19:08 
+
+19:08 of a quiet period And So It was one of
+19:10 
+
+19:10 several headwinds we faced as we moved
+19:13 
+
+19:13 into the IPO
+19:14 
+
+19:14 Square had been valued at 6 billion
+19:17 
+
+19:17 dollars
+19:18 
+
+19:18 but on the day of the IPO we were priced
+19:20 
+
+19:20 at just nine dollars a share meaning
+19:23 
+
+19:23 evaluation of just 2.9 billion
+19:25 
+
+19:25 I felt sick to my stomach
+19:28 
+
+19:28 you know the key is obviously power
+19:30 
+
+19:30 company performs in the long run people
+19:32 
+
+19:32 often talk about the only share prices
+19:33 
+
+19:33 that matter are the share prices that
+19:35 
+
+19:35 the day you buy and the day you sell and
+19:37 
+
+19:37 everything else in between kind of is
+19:38 
+
+19:38 irrelevant as filing showed we
+19:41 
+
+19:41 essentially lost 70 million dollars on
+19:43 
+
+19:43 that deal
+19:44 
+
+19:44 you know but that's one way of framing
+19:46 
+
+19:46 it yeah did we lose 70 million dollars
+19:49 
+
+19:49 or did we pay 70 million dollars to get
+19:51 
+
+19:51 the exposure and to grow the network I
+19:53 
+
+19:53 don't know I mean certainly there were a
+19:55 
+
+19:55 lot more things that we wanted to do
+19:56 
+
+19:56 with Starbucks that they did not fulfill
+19:59 
+
+19:59 but I don't regret the move because it
+20:01 
+
+20:01 hyper accelerated
+20:03 
+
+20:03 number one our technology stack number
+20:06 
+
+20:06 two are awareness with both customers
+20:10 
+
+20:10 and potential candidates that want to
+20:12 
+
+20:12 work with us and number three it broke
+20:15 
+
+20:15 us out of a box which was
+20:17 
+
+20:17 we are building
+20:18 
+
+20:18 hardware and software for small sellers
+20:21 
+
+20:21 so it definitely changed the company for
+20:23 
+
+20:23 the better
+20:24 
+
+20:24 in company or business building there
+20:27 
+
+20:27 will always be dark hours no company no
+20:29 
+
+20:29 business is immune from these periods of
+20:31 
+
+20:31 time Square was going through those
+20:33 
+
+20:33 moments in 2014 and 2015 but I think we
+20:36 
+
+20:36 were planting the seeds then that have
+20:39 
+
+20:39 led to the success of block overall
+20:41 
+
+20:41 today it's helped us expand to support a
+20:44 
+
+20:44 larger range of Sellers and grow up
+20:46 
+
+20:46 Market as well and then of course
+20:48 
+
+20:48 transition from kind of Hardware only or
+20:51 
+
+20:51 Hardware focused in-person focused and
+20:54 
+
+20:54 payments focused to omnichannel software
+20:57 
+
+20:57 such that sellers can meet their buyers
+21:00 
+
+21:00 wherever their buyers may be whether
+21:02 
+
+21:02 it's in person online or over the phone
+21:06 
+
+21:06 or over social media one of the
+21:08 
+
+21:08 questions I always wrestled with when
+21:10 
+
+21:10 one reflects on decisions made is you
+21:12 
+
+21:12 don't have a parallel universe where you
+21:14 
+
+21:14 knew what all the other choices could
+21:16 
+
+21:16 have been so in assessing the Starbucks
+21:18 
+
+21:18 Deal on its own I think it was worth
+21:22 
+
+21:22 doing it the way we did it taking a step
+21:24 
+
+21:24 back did it enable the company to
+21:26 
+
+21:26 succeed long term did we learn from that
+21:28 
+
+21:28 experience did it provided enormous
+21:29 
+
+21:29 value to us it absolutely did the thing
+21:32 
+
+21:32 which I'm not sure about is was there
+21:34 
+
+21:34 some other decision that we could have
+21:36 
+
+21:36 made that might even have been better
+21:38 
+
+21:38 for the company in the long run and
+21:40 
+
+21:40 obviously yeah I don't know that but I
+21:42 
+
+21:42 would certainly encourage anybody
+21:44 
+
+21:44 listening as you evaluate your own
+21:46 
+
+21:46 decisions key Crucible decisions
+21:48 
+
+21:48 strategic options you're weighing is
+21:50 
+
+21:50 have as wide a set of choices as
+21:53 
+
+21:53 possible that you're evaluating and if
+21:55 
+
+21:55 you find yourself deciding between only
+21:57 
+
+21:57 two choices maybe you need to widen the
+21:59 
+
+21:59 aperture is there a third or a fourth
+22:01 
+
+22:01 option that you haven't even considered
+22:03 
+
+22:03 that you need to throw into the mix to
+22:05 
+
+22:05 really test whether that is the right
+22:07 
+
+22:07 path
+22:10 
+
+22:10 something that maybe is not obvious to
+22:11 
+
+22:11 people that have studied Square's
+22:13 
+
+22:13 history or looked at Square over the
+22:14 
+
+22:14 years was very very early on the company
+22:17 
+
+22:17 we were just culturally obsessed with
+22:19 
+
+22:19 trying to figure out how we could build
+22:21 
+
+22:21 a consumer product
+22:25 
+
+22:25 my name is Brian grazedonia I'm a CEO of
+22:27 
+
+22:27 cash app
+22:28 
+
+22:28 we launched the Square credit card
+22:30 
+
+22:30 reader in October of 2010 and by January
+22:34 
+
+22:34 of 2011 we thought that the product that
+22:36 
+
+22:36 we were building was really interesting
+22:37 
+
+22:37 but we didn't think that the business
+22:39 
+
+22:39 that we were building was very
+22:40 
+
+22:40 compelling unless we could Bridge both
+22:42 
+
+22:42 sides of the counter so figuring out a
+22:44 
+
+22:44 way for sellers to connect with their
+22:46 
+
+22:46 customers and helping them engage their
+22:48 
+
+22:48 customers helping them understand who
+22:49 
+
+22:49 their customers were so in 2011
+22:51 
+
+22:51 we started hacking on this idea of a
+22:53 
+
+22:53 product called Square Wallet and it was
+22:55 
+
+22:55 a product that worked at Square
+22:57 
+
+22:57 Merchants and you could walk up to the
+22:58 
+
+22:58 counter at a square Merchant and you
+22:59 
+
+22:59 could pay and that product never really
+23:01 
+
+23:01 got off the ground
+23:02 
+
+23:02 we just could not find the right
+23:05 
+
+23:05 approach to grow it and we just did some
+23:07 
+
+23:08 stupid things early on like we assumed
+23:10 
+
+23:10 that a bunch of people who would be
+23:11 
+
+23:11 sellers would also have this Square
+23:13 
+
+23:13 wallet so that it was a one binary it
+23:16 
+
+23:16 was both the seller app and also the
+23:18 
+
+23:18 wallet unfortunately we ripped it out
+23:21 
+
+23:21 but it continued to be this thing of
+23:24 
+
+23:24 like we want to build daily utility for
+23:26 
+
+23:26 individuals as well not just sellers
+23:29 
+
+23:29 so it was another two years of many
+23:32 
+
+23:32 different attempts of us trying to
+23:34 
+
+23:34 figure out products on the consumer side
+23:36 
+
+23:36 that we could build that would Bridge
+23:38 
+
+23:38 both sides of the counter
+23:39 
+
+23:39 cash app was born out of kind of trying
+23:42 
+
+23:42 something entirely new it was maybe
+23:44 
+
+23:44 December of 2012.
+23:46 
+
+23:46 we wrote down 10 initiatives on the
+23:48 
+
+23:48 board and then we just put people's
+23:50 
+
+23:50 names next to these initiatives My name
+23:52 
+
+23:52 got put next to the build a low-cost
+23:53 
+
+23:53 payment Network on Adam
+23:54 
+
+23:54 [Music]
+23:58 
+
+23:58 after the Starbucks Deal happened we
+23:60 
+
+23:60 were looking at ways to minimize our
+24:01 
+
+24:01 cost on the networks one exploration was
+24:04 
+
+24:04 using the debit card rails effectively
+24:07 
+
+24:07 forcing a refund onto a debit card
+24:10 
+
+24:10 actually bypassed The Interchange fee
+24:13 
+
+24:13 completely
+24:14 
+
+24:14 and then right around that time this
+24:16 
+
+24:16 idea started to swirl around the company
+24:18 
+
+24:18 and it was this idea of emailing money
+24:21 
+
+24:21 what if you could send money as easy as
+24:24 
+
+24:24 sending an email
+24:26 
+
+24:26 and the idea was like you put any amount
+24:28 
+
+24:28 in the subject line it would look at an
+24:31 
+
+24:31 account that was linked to a debit card
+24:33 
+
+24:33 it could take from the debit card it
+24:35 
+
+24:35 could push the debit card extremely
+24:37 
+
+24:37 cheap to do both operations
+24:40 
+
+24:40 somehow these two ideas got combined
+24:42 
+
+24:42 together and that was the kind of
+24:44 
+
+24:44 setting that cash up was born out of
+24:47 
+
+24:47 so at the time that the cash up idea was
+24:50 
+
+24:50 floating around firstly I was a little
+24:52 
+
+24:52 bit worried that it wasn't obvious why
+24:55 
+
+24:55 would it hit a nerve given that
+24:58 
+
+24:58 person-to-person payments companies had
+24:60 
+
+25:00 predated cash apps launch and then
+25:02 
+
+25:02 there's this question about whether does
+25:04 
+
+25:04 a merchant facing company also have a
+25:06 
+
+25:06 consumer product payments company
+25:09 
+
+25:09 if the company were to pursue cash app
+25:11 
+
+25:11 in Earnest it would mean building out a
+25:13 
+
+25:14 new division within square a business
+25:16 
+
+25:16 unit focused on consumers
+25:18 
+
+25:18 developing a product for consumers would
+25:20 
+
+25:20 take time and resources and delay
+25:23 
+
+25:23 overall profitability
+25:25 
+
+25:25 with a divert Focus from Square's
+25:27 
+
+25:27 primary business its hardware and
+25:29 
+
+25:29 software for merchants
+25:31 
+
+25:31 companies typically pivot because they
+25:33 
+
+25:33 have no choice but in this case Square's
+25:36 
+
+25:36 initial product worked and it was
+25:39 
+
+25:39 thriving
+25:40 
+
+25:40 often people place a limit on their own
+25:42 
+
+25:42 potential by becoming risk-averse when
+25:45 
+
+25:45 they initially succeed
+25:47 
+
+25:47 they don't push further
+25:49 
+
+25:49 and so Square faced a crucible decision
+25:52 
+
+25:52 do you risk taking the company in this
+25:55 
+
+25:55 brand new Direction potentially putting
+25:57 
+
+25:57 your core business in danger and pursue
+25:60 
+
+25:60 cash app
+26:03 
+
+26:03 nobody wanted us to work on cash up
+26:05 
+
+26:05 because again we are for sellers we're
+26:07 
+
+26:07 helping them grow why are we doing this
+26:09 
+
+26:09 thing that is competing with PayPal or
+26:12 
+
+26:12 venmo like it's a solved problem we're
+26:14 
+
+26:14 not going to add anything new and
+26:15 
+
+26:15 we just didn't believe that like it felt
+26:18 
+
+26:18 really good it felt interesting it felt
+26:20 
+
+26:20 electric and it was in those moments in
+26:23 
+
+26:23 our company's history
+26:25 
+
+26:25 where you have to as a lead you kind of
+26:28 
+
+26:28 have to sacrifice some of your
+26:29 
+
+26:29 credibility
+26:30 
+
+26:30 and I was willing to take that
+26:32 
+
+26:32 credibility hit and willing to protect
+26:35 
+
+26:35 this thing because I I believed in it I
+26:38 
+
+26:38 believed in Brian and the team he was
+26:40 
+
+26:40 assembling and it was enough to give me
+26:43 
+
+26:43 confidence that we should continue to
+26:44 
+
+26:44 see this thing through despite the fact
+26:47 
+
+26:47 that everyone wanted to kill it
+26:50 
+
+26:50 cash app was given the green light Brian
+26:53 
+
+26:53 and his team got to work
+26:56 
+
+26:56 we started to just build I think we gave
+26:59 
+
+26:59 ourselves a week to build an experience
+27:01 
+
+27:01 where anybody within the organization
+27:03 
+
+27:03 could send a payment to somebody else I
+27:06 
+
+27:06 was empowered to kind of approach the
+27:07 
+
+27:07 work completely untethered from anything
+27:10 
+
+27:10 that we were doing at Square it was a
+27:11 
+
+27:11 startup within our startup but that's a
+27:13 
+
+27:14 tired term there's a lot of products or
+27:16 
+
+27:16 a lot of businesses that are being built
+27:17 
+
+27:17 within companies or you like to think
+27:19 
+
+27:19 about them like startups but this truly
+27:21 
+
+27:21 was it was truly firewalled cash app
+27:24 
+
+27:24 launched in October 2013. it began to
+27:27 
+
+27:27 see adoption and the square team
+27:29 
+
+27:29 observed something interesting about how
+27:31 
+
+27:31 the product was being used
+27:33 
+
+27:33 we found that it wasn't just about
+27:35 
+
+27:35 people sending money to one another
+27:36 
+
+27:36 people were literally looking at this
+27:38 
+
+27:38 app as their bank account it opened the
+27:40 
+
+27:40 door to us seeing a lot of folks who
+27:43 
+
+27:43 were challenged in just participating in
+27:45 
+
+27:45 the economy could not get a card could
+27:47 
+
+27:47 not get a savings account you know
+27:49 
+
+27:49 couldn't get a checking account they had
+27:52 
+
+27:52 a job at no way to direct deposit it
+27:54 
+
+27:54 into an account that they could actually
+27:56 
+
+27:56 use the money in the United States
+27:58 
+
+27:58 approximately 6 million people are
+28:00 
+
+28:00 unbanked like the Square Reader cash app
+28:03 
+
+28:03 became a tool for economic empowerment
+28:05 
+
+28:05 and this differentiated it from other
+28:08 
+
+28:08 peer-to-peer payments services at the
+28:11 
+
+28:11 time it wasn't on college campuses like
+28:13 
+
+28:13 venmo it's not in this Millennial crowd
+28:16 
+
+28:16 like venmo is it's with people who don't
+28:19 
+
+28:19 have any other option for a bank account
+28:21 
+
+28:21 and they're actually you know asking
+28:23 
+
+28:23 their family or their friends for money
+28:25 
+
+28:25 and then using that money to send to to
+28:27 
+
+28:27 other people so they completely bypass
+28:30 
+
+28:30 the bank account needed and just using
+28:32 
+
+28:32 cash app all the time
+28:34 
+
+28:34 despite cash app's popularity with users
+28:36 
+
+28:36 and its alignment with Square's purpose
+28:38 
+
+28:38 of economic empowerment its existence
+28:40 
+
+28:40 was constantly threatened
+28:43 
+
+28:43 the organization for many years was
+28:45 
+
+28:45 trying to reject the organ so in the
+28:48 
+
+28:48 early days of cash apps formation
+28:50 
+
+28:50 initially we just had to figure out if
+28:51 
+
+28:51 we could actually make customers happy
+28:53 
+
+28:53 could this service grow could it be
+28:55 
+
+28:55 adopted and can it show strong
+28:56 
+
+28:56 engagement and it did but the more it
+28:59 
+
+28:59 did the more it added to the company's
+29:01 
+
+29:01 losses and understandably the company's
+29:04 
+
+29:04 CFO and other executives are starting to
+29:06 
+
+29:06 worry you know we can't just continue to
+29:09 
+
+29:09 fund something indefinitely
+29:11 
+
+29:11 it's losing us all this money like why
+29:13 
+
+29:13 are we doing this
+29:15 
+
+29:15 it started to create a culture War
+29:17 
+
+29:17 within the organization something that
+29:18 
+
+29:18 we really had to manage there were
+29:20 
+
+29:20 millions of customers joining the
+29:22 
+
+29:22 network but we hadn't figured out a
+29:23 
+
+29:23 business model so this was you know
+29:24 
+
+29:24 maybe 2016. I think we gave it nine
+29:27 
+
+29:27 months and if we didn't figure out a
+29:29 
+
+29:29 business model for cash app within those
+29:31 
+
+29:31 nine months we were gonna either divest
+29:33 
+
+29:33 it or shut it down that was another
+29:36 
+
+29:36 almost like a crucible moment within a
+29:38 
+
+29:38 crucible moment for cash app you know I
+29:40 
+
+29:40 think that constraints can oftentimes
+29:42 
+
+29:42 really really Force Clarity and force
+29:45 
+
+29:45 creative problem solving and we were
+29:47 
+
+29:47 able to invent a business model around
+29:49 
+
+29:49 cash app
+29:52 
+
+29:52 foreign
+29:54 
+
+29:54 the team built out features such as
+29:56 
+
+29:56 instant deposit which gave users the
+29:58 
+
+29:58 option of paying small fees to expedite
+30:00 
+
+30:00 deposits into their bank accounts they
+30:03 
+
+30:03 launched the cash card a debit card that
+30:05 
+
+30:05 charges withdrawal and interchange fees
+30:08 
+
+30:08 they also introduced cash boost which
+30:11 
+
+30:11 allows companies to advertise on cash
+30:13 
+
+30:13 app and rewards customers when they
+30:15 
+
+30:15 spend money at those companies today
+30:18 
+
+30:18 these are just a few among many Revenue
+30:20 
+
+30:20 generating features
+30:22 
+
+30:22 we went from losing money on every
+30:24 
+
+30:24 single payment that was being sent to
+30:26 
+
+30:26 making money in every single payment
+30:27 
+
+30:27 that was being sent which created this
+30:29 
+
+30:29 amazing positive reinforcement for the
+30:31 
+
+30:31 business where we were able to finally
+30:32 
+
+30:32 reinvest money it was a breakthrough
+30:34 
+
+30:34 moment for us they invented new ways of
+30:36 
+
+30:36 earning revenue for a service such as
+30:38 
+
+30:38 this that I'd never seen before true
+30:40 
+
+30:40 true Innovation but it was the
+30:42 
+
+30:42 constraint of needing to focus on
+30:43 
+
+30:43 eventually generating revenue and
+30:45 
+
+30:45 becoming a profitable unit within the
+30:47 
+
+30:47 business that enabled that Innovation to
+30:49 
+
+30:49 take place if you go back to the
+30:51 
+
+30:51 creation of cash app maybe it was 50 50
+30:53 
+
+30:53 that that idea would have succeeded but
+30:56 
+
+30:56 today half of blocks revenue is Cash Up
+30:59 
+
+30:59 and finding companies people are often
+31:03 
+
+31:03 scared to guard an Alum to recommend
+31:06 
+
+31:06 things that are maybe controversial
+31:07 
+
+31:08 there's this idea of the world being
+31:10 
+
+31:10 probabilistic in nature and if you
+31:11 
+
+31:11 always make only safe decisions you know
+31:13 
+
+31:14 very high probability payoff decisions
+31:15 
+
+31:15 you probably are not making the best
+31:17 
+
+31:17 long-term decisions because what about
+31:19 
+
+31:19 that decision that's maybe a 50 50
+31:21 
+
+31:21 decision but the upside of that decision
+31:23 
+
+31:23 is enormous
+31:24 
+
+31:24 our culture was to do a lot of things
+31:27 
+
+31:27 and to have small teams of people
+31:30 
+
+31:30 focused on really big ideas and
+31:33 
+
+31:33 Starbucks was one of them and Square
+31:34 
+
+31:34 Wallet was one of them and cash app was
+31:37 
+
+31:37 one of them
+31:38 
+
+31:38 part of bets and risk taking is that you
+31:41 
+
+31:41 will have some that fail but if you
+31:43 
+
+31:43 don't take a swing if you don't make
+31:44 
+
+31:44 bets you can guarantee that you're never
+31:46 
+
+31:46 going to have that that massively pays
+31:49 
+
+31:49 off
+31:50 
+
+31:50 so when we started Square we were
+31:53 
+
+31:53 starting with one product
+31:54 
+
+31:54 and that product was this credit card
+31:57 
+
+31:57 reader that helped the seller make more
+31:59 
+
+31:59 sales
+31:60 
+
+31:60 and then we added the point of sale the
+32:02 
+
+32:02 cashier and then we added Square loans
+32:05 
+
+32:05 we kept adding tools for sellers we
+32:07 
+
+32:07 added CRM and analytics and issuing
+32:11 
+
+32:11 cards and all these all these things and
+32:14 
+
+32:14 what we realized we were building is not
+32:16 
+
+32:16 just a single product but an ecosystem
+32:18 
+
+32:18 of tools and then cash did the same
+32:21 
+
+32:21 thing we saw that same sort of build out
+32:23 
+
+32:23 of ecosystem for individuals as well so
+32:27 
+
+32:27 they were using us for peer-to-peer
+32:29 
+
+32:29 using us as their primary payment card
+32:32 
+
+32:32 using us now to buy Bitcoin and to
+32:35 
+
+32:35 deposit money all these things and then
+32:37 
+
+32:37 we asked the question well we have these
+32:39 
+
+32:39 two ecosystems they're both serving
+32:41 
+
+32:41 different audiences
+32:43 
+
+32:43 could we connect them because if we
+32:46 
+
+32:46 could connect them it's really powerful
+32:47 
+
+32:47 none of our competitors are really doing
+32:49 
+
+32:49 that and we did some smaller things and
+32:51 
+
+32:51 then we did one really big thing which
+32:53 
+
+32:53 was after pay after pay is a buy now pay
+32:55 
+
+32:55 later product
+32:57 
+
+32:57 what it does for sellers is it gives
+32:59 
+
+32:59 them a new tool to make more sales and
+33:02 
+
+33:02 what it does for individuals is it gives
+33:04 
+
+33:04 them discovery of merchants around them
+33:06 
+
+33:06 or on the Internet that they could pay
+33:09 
+
+33:09 in installments so they could get their
+33:12 
+
+33:12 merchandise much faster than they
+33:14 
+
+33:14 otherwise could
+33:15 
+
+33:15 we as buyers all know the landscape is
+33:18 
+
+33:18 changing and we're hearing from many
+33:20 
+
+33:20 sellers that they were interested in
+33:22 
+
+33:22 offering by now pay later to their
+33:24 
+
+33:24 customers we were looking at it on the
+33:26 
+
+33:26 Square side concurrently there's a small
+33:29 
+
+33:29 group within cash app that was also
+33:31 
+
+33:31 starting to explore and consider by now
+33:35 
+
+33:35 pay later from a consumer perspective or
+33:38 
+
+33:38 consumer lending perspective
+33:40 
+
+33:41 after pay based out of Australia was one
+33:43 
+
+33:44 of the fastest growing buy now pay later
+33:46 
+
+33:46 companies
+33:47 
+
+33:47 in August of 2021 block made another
+33:50 
+
+33:50 bold forward-looking decision and agreed
+33:53 
+
+33:53 to acquire after pay for 29 billion
+33:55 
+
+33:55 dollars
+33:57 
+
+33:57 this represents this connection between
+33:59 
+
+33:59 these two outscale massive ecosystems
+34:02 
+
+34:02 you're creating this bridge between what
+34:05 
+
+34:05 had been previously with square and cash
+34:07 
+
+34:07 it's a pretty like actually very siled
+34:10 
+
+34:10 different businesses with no connections
+34:12 
+
+34:12 or communication between the two we were
+34:14 
+
+34:14 just operating independently by putting
+34:16 
+
+34:16 after pay in the middle it starts to
+34:18 
+
+34:18 build this bridge in this two-way
+34:19 
+
+34:20 communication and in order to make it
+34:22 
+
+34:22 successful we have to bring these two
+34:24 
+
+34:24 businesses and our operating rhythms and
+34:26 
+
+34:26 portions of our culture closer together
+34:28 
+
+34:28 and so it's been phenomenal Brian I have
+34:31 
+
+34:31 never worked so much together it's it's
+34:33 
+
+34:33 great
+34:34 
+
+34:34 after pay team it's been a much more of
+34:37 
+
+34:37 an Enterprise sales motion where there
+34:39 
+
+34:39 are really really strong sales-led
+34:41 
+
+34:41 culture that has really really helped us
+34:43 
+
+34:43 as we think about bringing these two
+34:45 
+
+34:45 ecosystems together and finally kind of
+34:47 
+
+34:47 helping cash app and square build one
+34:49 
+
+34:49 network
+34:50 
+
+34:50 lots more to go do it's going to be a
+34:52 
+
+34:52 multi-year integration but excited about
+34:54 
+
+34:54 us seeing and ticking off the pieces of
+34:57 
+
+34:57 the deal thesis that we believed in
+35:00 
+
+35:00 looking back at all these moments I
+35:03 
+
+35:03 think the
+35:05 
+
+35:05 the most important part is we built a
+35:07 
+
+35:07 company that is willing to face entirely
+35:11 
+
+35:11 new challenges we're willing to ask
+35:13 
+
+35:13 really tough questions of ourselves and
+35:15 
+
+35:15 do so with humility of not knowing
+35:17 
+
+35:17 what's on the other side of them there's
+35:19 
+
+35:19 never one point or a set of points that
+35:23 
+
+35:23 you can point to and say that's why
+35:25 
+
+35:25 we're successful
+35:26 
+
+35:26 and we certainly talked about some of
+35:29 
+
+35:29 those things that look like that during
+35:31 
+
+35:31 this conversation
+35:32 
+
+35:32 but all of this is very small things
+35:35 
+
+35:35 adding up together very quickly and
+35:38 
+
+35:38 compounding into where we are today and
+35:40 
+
+35:40 that's all the successes and all the
+35:42 
+
+35:42 mistakes and all the learnings we made
+35:44 
+
+35:44 there's a ton of mistakes that we made
+35:46 
+
+35:46 that because we made them has given us
+35:51 
+
+35:51 more success and while these moments
+35:54 
+
+35:54 were important it's everything in
+35:56 
+
+35:56 between them that really made us who we
+35:58 
+
+35:58 are and gave us the success that we did
+36:01 
+
+36:01 and I don't think enough people talk
+36:03 
+
+36:03 about that
+36:06 
+
+36:06 but when you really consider and you go
+36:08 
+
+36:08 back and you reflect that's what matters
+36:10 
+
+36:11 the most it's just these little tiny
+36:12 
+
+36:12 things that that add up quite quickly
+36:15 
+
+36:15 and it's it's moving so fast you don't
+36:17 
+
+36:17 even notice them and then you bucket
+36:19 
+
+36:19 them into this this larger thing so it's
+36:21 
+
+36:21 easier to talk about I'm just proud that
+36:24 
+
+36:24 we built a company that continues to
+36:26 
+
+36:26 learn and is good at observing and and
+36:30 
+
+36:30 asking those questions and being
+36:31 
+
+36:31 uncomfortable
+36:32 
+
+36:32 [Music]
+36:39 
+
+36:39 this has been Crucible moments a podcast
+36:41 
+
+36:41 from Sequoia capital
+36:44 
+
+36:44 join us next time as we explore how
+36:46 
+
+36:46 Eventbrite became the go-to destination
+36:48 
+
+36:48 for event ticketing all while navigating
+36:51 
+
+36:51 pricing changes company Acquisitions and
+36:54 
+
+36:54 a global pandemic that shut down Live
+36:57 
+
+36:57 Events
+36:58 
+
+36:58 [Music]
+37:01 
+
+37:01 Crucible moments is produced by the Epic
+37:04 
+
+37:04 stories and Vox creative podcast teams
+37:06 
+
+37:06 along with Sequoia capital
+37:09 
+
+37:09 thanks to Jack Dorsey Alyssa Henry and
+37:13 
+
+37:13 Brian gracidonia for sharing their
+37:15 
+
+37:15 stories
+37:17 
+
+37:17 foreign

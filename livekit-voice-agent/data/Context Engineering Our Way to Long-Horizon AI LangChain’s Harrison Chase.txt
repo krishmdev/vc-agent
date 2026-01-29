@@ -1,0 +1,3802 @@
+00:00 People use traces from the start to just
+00:03 
+
+00:03 tell what's going on under the hood. And
+00:04 
+
+00:04 it's way more impactful in agents than
+00:06 
+
+00:06 in single LLM applications because in
+00:08 
+
+00:08 single LM applications, you get some bad
+00:10 
+
+00:10 response from the LLM. You know exactly
+00:12 
+
+00:12 what your prompt is. You know exactly
+00:13 
+
+00:13 what the context that goes in is because
+00:15 
+
+00:15 that's determined by code and then you
+00:16 
+
+00:16 get something out. In agents, they're
+00:18 
+
+00:18 running and and and repeating and so you
+00:20 
+
+00:20 don't actually know what the context at
+00:22 
+
+00:22 step 14 will be because there's 13 steps
+00:24 
+
+00:24 before that that could pull arbitrary
+00:26 
+
+00:26 things in. So like what exactly is
+00:28 
+
+00:28 everything's context engineering?
+00:29 
+
+00:29 Context engineering is such a good term.
+00:30 
+
+00:30 I wish I came up with that term. Like it
+00:32 
+
+00:32 actually really describes like
+00:33 
+
+00:33 everything we've done at Langchain um
+00:35 
+
+00:35 without knowing that that term existed.
+00:37 
+
+00:37 But like traces just like tell you
+00:39 
+
+00:39 what's in your context and that's so
+00:40 
+
+00:40 important.
+00:58 
+
+00:58 Welcome to training data. Harrison, you
+00:60 
+
+00:60 are our very first guest on training
+01:01 
+
+01:01 data and the AI space has moved so
+01:04 
+
+01:04 quickly uh in the 18 months or so since
+01:06 
+
+01:06 we originally interviewed you and so I'm
+01:07 
+
+01:07 delighted to get you on the show today.
+01:09 
+
+01:09 Um topics of the moment. I think there's
+01:11 
+
+01:11 nobody better than you to talk about
+01:13 
+
+01:13 some of these topics. We're going to
+01:14 
+
+01:14 talk first about long horizon agents and
+01:16 
+
+01:16 agent harnesses. Pat and I had this blog
+01:18 
+
+01:18 post on this yesterday. I know this is
+01:19 
+
+01:19 something that you are deeply um fluent
+01:22 
+
+01:22 in. And then we're going to talk about
+01:23 
+
+01:23 what's the difference between building
+01:25 
+
+01:25 long horizon agents versus building
+01:26 
+
+01:26 software um and the role that you see
+01:28 
+
+01:28 Lang Chain playing in that ecosystem.
+01:30 
+
+01:30 And then finally, I just want to chat
+01:31 
+
+01:31 with you about the future. I think you
+01:33 
+
+01:33 single-handedly, you know, kind of saw
+01:36 
+
+01:36 the agent opportunity I think before
+01:38 
+
+01:38 anybody. You know, we were back in the
+01:39 
+
+01:39 GP3 days and um I think you see the
+01:42 
+
+01:42 future for what's happening with agents
+01:43 
+
+01:43 and so I'm just excited to chat with you
+01:45 
+
+01:45 open-endedly about the future as well.
+01:47 
+
+01:47 >> I am really excited as well. Thank you
+01:48 
+
+01:48 guys for having me back. It's quite an
+01:50 
+
+01:50 honor. I'll tell my mom again and that
+01:51 
+
+01:51 I'm back on the line.
+01:54 
+
+01:54 >> Wonderful. Okay, let's start with long
+01:56 
+
+01:56 horizon agents.
+01:57 
+
+01:57 >> Yes, that was a great term. You guys
+01:59 
+
+01:59 wrote a great article.
+01:60 
+
+01:60 >> Sony's good at naming things.
+02:01 
+
+02:01 >> We're not going to get into the the
+02:02 
+
+02:02 backstory there. Um, what do you think?
+02:05 
+
+02:05 What do you agree with? What do you
+02:06 
+
+02:06 disagree with?
+02:06 
+
+02:06 >> I mean, uh, I agree that they're
+02:09 
+
+02:09 starting to finally work. I think like
+02:10 
+
+02:10 the idea of running an LLM in a loop and
+02:13 
+
+02:13 just having it go was, uh, was always
+02:16 
+
+02:16 the idea of agents from the start. uh
+02:18 
+
+02:18 autog was basically this then this is
+02:20 
+
+02:20 why it took off and and captured so many
+02:22 
+
+02:22 people's imagination because it was just
+02:23 
+
+02:23 an LLM running a loop completely
+02:25 
+
+02:25 deciding what to do. The issue is the
+02:27 
+
+02:27 models weren't really good enough and
+02:28 
+
+02:28 the scaffolding and harnesses around
+02:29 
+
+02:29 them weren't really good enough and I
+02:32 
+
+02:32 think the models got better. We learned
+02:33 
+
+02:33 more about what makes a good harness
+02:35 
+
+02:35 over the past few years and now they
+02:38 
+
+02:38 start to like really really work and you
+02:39 
+
+02:39 see this in coding first and I think
+02:41 
+
+02:41 that's the domain where they're taking
+02:42 
+
+02:42 off the most and that's spreading to
+02:43 
+
+02:43 other domains but you can give a task to
+02:46 
+
+02:46 an agent and you still need to
+02:47 
+
+02:47 communicate to it what you want it to do
+02:49 
+
+02:49 and it needs to have the right tools and
+02:50 
+
+02:50 all of that but it can actually operate
+02:51 
+
+02:51 for longer and longer periods of time
+02:54 
+
+02:54 and so that yeah the long horizons kind
+02:56 
+
+02:56 of like uh uh framing of it I think is
+02:58 
+
+02:58 really really apt and really really
+02:59 
+
+02:59 good.
+02:59 
+
+02:59 >> Awesome. Um, what are your favorite
+03:01 
+
+03:01 examples of long horizon agents and I
+03:04 
+
+03:04 guess what shapes you see them taking?
+03:06 
+
+03:06 >> So, coding is the place where there's
+03:07 
+
+03:07 the most. I think that's the one that I
+03:09 
+
+03:09 probably use. Yeah, that's the one that
+03:11 
+
+03:11 I use the most. Um, adjacent to that, I
+03:14 
+
+03:14 think like really good ones are AI
+03:16 
+
+03:16 SRRES. So, Traversal I think is a
+03:18 
+
+03:18 Sequoia company and and they have an AI
+03:20 
+
+03:20 SR that that that operates over longer
+03:22 
+
+03:22 time horizons. research in general and
+03:25 
+
+03:25 I'd call like AISR kind of research like
+03:27 
+
+03:27 they're taking a incident and they're
+03:28 
+
+03:28 going and digging through logs like
+03:30 
+
+03:30 research in general is a really really
+03:31 
+
+03:31 good task because it ends up producing
+03:33 
+
+03:33 like a first draft of something and the
+03:36 
+
+03:36 issue with agents is they aren't like
+03:37 
+
+03:37 reliable to 99 of reliability but they
+03:39 
+
+03:39 can do a ton of work and and more and
+03:41 
+
+03:41 more work over longer time horizons. So
+03:43 
+
+03:43 if you can find these framings where
+03:45 
+
+03:45 they run for a long period of time but
+03:47 
+
+03:47 produce like a first draft of something
+03:49 
+
+03:49 those to me are like the killer
+03:50 
+
+03:50 applications of long horizon agents
+03:52 
+
+03:52 right now. So like I coding coding is an
+03:54 
+
+03:54 example of that like coding you usually
+03:56 
+
+03:56 put up a PR you don't directly push to
+03:58 
+
+03:58 prod unless you're vibe coding which is
+03:59 
+
+03:59 also starting to get better and better.
+04:01 
+
+04:01 Uh AISR usually surface it to a human
+04:03 
+
+04:03 who comes in and then reviews it. Report
+04:06 
+
+04:06 generation you don't send it out to all
+04:08 
+
+04:08 of your followers right away. You look
+04:09 
+
+04:09 at it you edit it. It creates like a
+04:10 
+
+04:10 first draft of something. So we see this
+04:12 
+
+04:12 in uh we see this in finance a bunch.
+04:14 
+
+04:14 This is this is a huge research
+04:16 
+
+04:16 opportunity. Customer support. We see a
+04:18 
+
+04:18 lot of things pivoting from kind of like
+04:20 
+
+04:20 the initial the initial customer support
+04:22 
+
+04:22 was like first-line response like
+04:24 
+
+04:24 someone messages you just respond really
+04:25 
+
+04:25 quickly and there's still that and and
+04:27 
+
+04:27 that's going great but now there's
+04:28 
+
+04:28 examples K is a great example of this
+04:31 
+
+04:31 where it's like humans and AI working
+04:32 
+
+04:32 together when the first line fails you
+04:35 
+
+04:35 escalate to a human you don't just have
+04:37 
+
+04:37 the human handle it you have this long
+04:39 
+
+04:39 horizon agent run in the background
+04:40 
+
+04:40 produce a report of everything that
+04:42 
+
+04:42 happened and then hand it off to the to
+04:44 
+
+04:44 the to the agent there um to the human
+04:46 
+
+04:46 agent there agent starts to get
+04:48 
+
+04:48 confusing in customer support.
+04:50 
+
+04:50 >> Um, so so I think the killer use case of
+04:52 
+
+04:52 all of these is places where you have
+04:53 
+
+04:53 like this first draft type of concept.
+04:57 
+
+04:57 >> And then how much of the uh the why now
+04:59 
+
+04:59 do you think is the models themselves
+05:00 
+
+05:00 are just so good versus people are doing
+05:03 
+
+05:03 really smart things on the harness side?
+05:06 
+
+05:06 >> And maybe even before we get to that,
+05:08 
+
+05:08 can you say a word for for our listeners
+05:09 
+
+05:09 on like you know how you frame the the
+05:11 
+
+05:11 harness versus the model in terms of the
+05:13 
+
+05:13 actual composition of an agent?
+05:15 
+
+05:15 >> Yeah. So and and I'll maybe I'll maybe
+05:17 
+
+05:17 bring in like framework as well because
+05:19 
+
+05:19 I think early on I mean that's how we
+05:21 
+
+05:21 describe lang chain as that's what lang
+05:22 
+
+05:22 chain is it's an agent framework and now
+05:24 
+
+05:24 and now we have deep agents which I'd
+05:26 
+
+05:26 call an agent harness and we get asked
+05:27 
+
+05:27 about what's the difference so a model
+05:29 
+
+05:29 is obviously the LLM tokens messages in
+05:33 
+
+05:33 messages out um the framework would be
+05:36 
+
+05:36 abstractions around that so making it
+05:37 
+
+05:37 easy to switch between models uh adding
+05:40 
+
+05:40 abstractions for other things like tools
+05:41 
+
+05:41 and vector stores and memory and things
+05:43 
+
+05:43 like that but pretty like unopinion
+05:45 
+
+05:45 about what goes in there more values
+05:52 
+
+05:52 are more like batteries included. So
+05:54 
+
+05:54 when we talk about deep agents we're
+05:55 
+
+05:55 talking about we we actually give it a
+05:58 
+
+05:58 planning tool by default. So it has a
+05:59 
+
+05:59 tool that that that comes built into the
+06:02 
+
+06:02 harness. That's pretty opinionated that
+06:03 
+
+06:03 like this is the right way to do things.
+06:05 
+
+06:05 Um we do compaction. So you have these
+06:07 
+
+06:07 long horizon agents. They're running for
+06:08 
+
+06:08 long periods of time. Context windows
+06:10 
+
+06:10 are larger but they're still not
+06:11 
+
+06:11 infinite. And so at some point you need
+06:13 
+
+06:13 to compact that. How do you do that?
+06:15 
+
+06:15 There's a lot of research going on there
+06:16 
+
+06:16 right now. Uh, one of the other sets of
+06:19 
+
+06:19 tools that we and a lot of people are
+06:21 
+
+06:21 giving to these agents are tools for
+06:23 
+
+06:23 interacting with the file system whether
+06:25 
+
+06:25 directly or via bash and and
+06:28 
+
+06:28 this is it's kind of tough to separate
+06:30 
+
+06:30 from the models because the models are
+06:32 
+
+06:32 being trained on a lot of this data as
+06:33 
+
+06:33 well. And so there's this kind of
+06:35 
+
+06:35 evolution between like I don't know if
+06:37 
+
+06:37 we could have known that like these file
+06:39 
+
+06:39 system based harnesses are the best
+06:42 
+
+06:42 thing at like if if we fast if we go
+06:44 
+
+06:44 back two years ago I don't think we
+06:45 
+
+06:45 could have known that because models
+06:46 
+
+06:46 weren't really being trained on that as
+06:47 
+
+06:47 much as they are now and so they're kind
+06:49 
+
+06:49 of evolving together. So so I think it's
+06:51 
+
+06:51 like a combination of things. It's the
+06:53 
+
+06:53 models absolutely are getting better.
+06:55 
+
+06:55 Reasoning models are helping helping a
+06:57 
+
+06:57 lot. Um, but it's also the fact that
+06:59 
+
+06:59 we're figuring out all these primitives
+07:00 
+
+07:00 around compaction and uh and planning
+07:04 
+
+07:04 and and these file system tools being
+07:06 
+
+07:06 really useful. And so it's I I do think
+07:08 
+
+07:08 it's a combination of both.
+07:10 
+
+07:10 >> Um I remember in in that very first
+07:11 
+
+07:11 episode we did together, you know, you
+07:13 
+
+07:13 described
+07:15 
+
+07:15 laying graph I think as the almost the
+07:18 
+
+07:18 cognitive framework.
+07:19 
+
+07:19 >> Yeah.
+07:20 
+
+07:20 >> Uh of of the of the agent. Is that the
+07:23 
+
+07:23 right way to think about what the the
+07:24 
+
+07:24 harness is? Uh yeah, I think I think
+07:27 
+
+07:27 that's right. Yeah, so we we build we
+07:28 
+
+07:28 build deep agents on top of Langraph.
+07:30 
+
+07:30 It's one particular kind of like
+07:31 
+
+07:31 langraph instance. It's very
+07:33 
+
+07:33 opinionated. It's more general purpose.
+07:35 
+
+07:35 Um and so I think early on we talked
+07:36 
+
+07:36 about general purpose architectures and
+07:38 
+
+07:38 more specific architectures. And what
+07:40 
+
+07:40 we've seen is that a lot of the
+07:44 
+
+07:44 specificity for tasks previously that
+07:47 
+
+07:47 might have been in langraph because you
+07:49 
+
+07:49 needed to put more structure on the
+07:50 
+
+07:50 models. Now that specificity is moving
+07:53 
+
+07:53 into the tools and the instructions. So
+07:55 
+
+07:55 there's still the same level of
+07:56 
+
+07:56 complexity. It's just in natural
+07:58 
+
+07:58 language. And so prompting and editing
+08:00 
+
+08:00 those prompts and and and automatic
+08:03 
+
+08:03 maybe automatically updating those is
+08:04 
+
+08:04 becoming a part, but the harness is
+08:06 
+
+08:06 remaining a little bit more fixed.
+08:08 
+
+08:08 >> Um
+08:09 
+
+08:09 >> what's the hardest thing to get right on
+08:11 
+
+08:11 the harness side? And do you think, you
+08:13 
+
+08:13 know, do you think individual companies
+08:15 
+
+08:15 can actually excel at the harness
+08:17 
+
+08:17 engineering side of things? Who do you
+08:18 
+
+08:18 admire there? Uh I think a lot of the
+08:21 
+
+08:21 companies that are doing the best
+08:23 
+
+08:23 harness engineering are coding
+08:25 
+
+08:25 companies. Honestly, I think that's the
+08:27 
+
+08:27 place where it's taken off a bunch. I
+08:29 
+
+08:29 mean you look at cloud code. I would
+08:31 
+
+08:31 argue a big reason for the popularity of
+08:33 
+
+08:33 cloud code is the harness itself. Um
+08:35 
+
+08:35 >> does that by the way imply that
+08:37 
+
+08:37 harnesses are better built by foundation
+08:40 
+
+08:40 model companies than by third party
+08:42 
+
+08:42 startups?
+08:43 
+
+08:43 >> I I I don't know. Um I so the next
+08:47 
+
+08:47 company I was going to mention is
+08:48 
+
+08:48 Factory which is another coding company
+08:49 
+
+08:49 and and I think you look at at the
+08:51 
+
+08:51 harness they've done there. AMP um is
+08:53 
+
+08:53 another coding company has a has a has a
+08:55 
+
+08:55 really good harness. Um I think there's
+08:58 
+
+08:58 pros and cons. They there definitely is
+09:02 
+
+09:02 some aspect of the harness being tied to
+09:05 
+
+09:05 a model. Um and and maybe not just not a
+09:08 
+
+09:08 specific model but a family of models.
+09:09 
+
+09:09 So like all cloud models like anthropic
+09:12 
+
+09:12 fine-tunes on some specific tools.
+09:14 
+
+09:14 OpenAI fine-tunes on different ones. So
+09:16 
+
+09:16 like I think probably probably probably
+09:18 
+
+09:18 probably probably when we were doing
+09:19 
+
+09:19 this last time we maybe talked about how
+09:20 
+
+09:20 prompts need to be different for one
+09:21 
+
+09:21 model versus another. Hardnesses also
+09:23 
+
+09:23 need to be slightly different for one
+09:24 
+
+09:24 family of of things versus the other
+09:26 
+
+09:26 >> but there are similarities. Uh all of
+09:28 
+
+09:28 them use the file system in in in some
+09:30 
+
+09:30 sense.
+09:31 
+
+09:31 >> Um so I think this is I I I I actually
+09:33 
+
+09:33 don't know the answer to that. It's a
+09:34 
+
+09:34 really interesting uh thing. Um we see
+09:37 
+
+09:37 that a lot of the coding com a lot
+09:40 
+
+09:40 everyone who's building a coding company
+09:41 
+
+09:41 is basically building their own harness
+09:43 
+
+09:43 right now. Yeah.
+09:44 
+
+09:44 >> Um,
+09:45 
+
+09:45 >> and there's all these leaderboards and
+09:46 
+
+09:46 you can see it's actually kind of
+09:48 
+
+09:48 interesting if you go to terminal bench
+09:49 
+
+09:49 2, which I think is probably the one of
+09:51 
+
+09:51 the more kind of like popular coding
+09:53 
+
+09:53 benchmarks right now. You can actually
+09:54 
+
+09:54 see they they have like the the agent
+09:57 
+
+09:57 harness and then the model and so you
+09:59 
+
+09:59 can see the variation in performance and
+10:01 
+
+10:01 claude code is not at the top of that.
+10:02 
+
+10:02 >> Um, so there's there's differences but I
+10:05 
+
+10:05 think it
+10:06 
+
+10:06 >> it doesn't necessarily mean that the
+10:08 
+
+10:08 model labs are better at it. It just
+10:11 
+
+10:11 means that you have to understand how
+10:13 
+
+10:13 the models work and people who look at
+10:15 
+
+10:15 the at what makes a harness tick around
+10:17 
+
+10:17 the model can can get some performance
+10:19 
+
+10:19 gains there.
+10:20 
+
+10:20 >> Yeah.
+10:20 
+
+10:20 >> What do you think goes into, you know,
+10:22 
+
+10:22 making the harness tick? Like what do
+10:23 
+
+10:23 you think that the guys at the top of
+10:24 
+
+10:24 the leaderboard are doing exceptionally
+10:26 
+
+10:26 well?
+10:26 
+
+10:26 >> I think part of it is definitely
+10:28 
+
+10:28 understanding like what tools the models
+10:30 
+
+10:30 uh trained on. So uh I think OpenAI
+10:33 
+
+10:33 trains really heavily on Bash. I think
+10:35 
+
+10:35 Anthropic has an explicit kind of like
+10:36 
+
+10:36 file editing tools and so I think
+10:38 
+
+10:38 leaning into that is part of it. Um
+10:41 
+
+10:41 compaction is becoming more and more of
+10:42 
+
+10:42 a thing. Uh so especially as you start
+10:45 
+
+10:45 doing longer horizon tasks like you
+10:47 
+
+10:47 start to fill up the context window and
+10:49 
+
+10:49 so what do you do there is a really big
+10:51 
+
+10:51 question and there's a bunch of
+10:52 
+
+10:52 strategies for for kind of like
+10:53 
+
+10:53 approaching that. I'd argue that's part
+10:55 
+
+10:55 of a harness. I mean, so all of these
+10:58 
+
+10:58 harnesses also this is where like skills
+10:60 
+
+10:60 and MCPs and sub aents start to come
+11:02 
+
+11:02 into play as well and you can use those
+11:05 
+
+11:05 in like different ways and and I don't
+11:08 
+
+11:08 know how I I don't think a ton of like
+11:09 
+
+11:09 skills or sub agents are trained into
+11:11 
+
+11:11 the models yet like those are still
+11:12 
+
+11:12 pretty new.
+11:13 
+
+11:13 >> Yeah.
+11:14 
+
+11:14 >> Um and and so like one one of the things
+11:16 
+
+11:16 that we see in our harness is like when
+11:18 
+
+11:18 you have a sub agent the the the the
+11:20 
+
+11:20 main model needs to communicate with it
+11:22 
+
+11:22 like well it needs to it needs to give
+11:23 
+
+11:23 it all the appropriate information. it
+11:25 
+
+11:25 needs to let the sub aent know that it
+11:26 
+
+11:26 needs to like give it its final response
+11:28 
+
+11:28 out. So like we would see some failure
+11:29 
+
+11:29 modes where the sub aent because
+11:31 
+
+11:31 basically what happens is you kick off
+11:32 
+
+11:32 the sub agent and then only the final
+11:34 
+
+11:34 response is passed back to the main
+11:35 
+
+11:35 agent. And so we'd see some failure
+11:36 
+
+11:36 modes where the sub agent would do a
+11:38 
+
+11:38 bunch of work and then it would be
+11:39 
+
+11:39 basically like look at my work above and
+11:41 
+
+11:41 then you know pass that back to the main
+11:42 
+
+11:42 agent and it can't see it and it's like
+11:44 
+
+11:44 what are you talking about? And so like
+11:46 
+
+11:46 that type of like prompting to get these
+11:47 
+
+11:47 pieces to work together is a big part of
+11:49 
+
+11:49 it. So like skills, sub agents, MCP,
+11:51 
+
+11:51 there there are like prompts in all of
+11:54 
+
+11:54 these harnesses that make them work well
+11:57 
+
+11:57 or don't make work them work well. And
+11:58 
+
+11:58 they're they're hundreds of of lines
+12:00 
+
+12:00 long if you look at some of the the the
+12:02 
+
+12:02 ones that are out there.
+12:04 
+
+12:04 >> Can I ask you a question on how this has
+12:05 
+
+12:05 evolved and um
+12:08 
+
+12:08 since you've always been
+12:11 
+
+12:11 really kind of on the bleeding edge of
+12:12 
+
+12:12 what are people doing around the models
+12:14 
+
+12:14 to make them work in the real world,
+12:16 
+
+12:16 right? If we think about in our
+12:19 
+
+12:19 simplistic view on like what the big
+12:21 
+
+12:21 inflection points over the last five
+12:22 
+
+12:22 years have been feels like there was a
+12:24 
+
+12:24 big inflection point around pre-training
+12:25 
+
+12:25 when chatbd came out. Feels like there
+12:27 
+
+12:27 was a big inflection point around
+12:28 
+
+12:28 reasoning when 01 came out. Feels like
+12:31 
+
+12:31 just recently there's been a third big
+12:32 
+
+12:32 inflection point around these long
+12:33 
+
+12:33 horizon agents with cloud code and opus
+12:35 
+
+12:35 45. Um in your world the world of all
+12:38 
+
+12:38 the stuff around the models that that
+12:40 
+
+12:40 makes them work in the real world. Would
+12:42 
+
+12:42 you have a different set of inflection
+12:44 
+
+12:44 points? Like what have the major changes
+12:46 
+
+12:46 been? I remember we talked about
+12:47 
+
+12:47 cognitive architectures a couple years
+12:49 
+
+12:49 ago and now we're talking about
+12:50 
+
+12:50 frameworks and agent harnesses. Like
+12:52 
+
+12:52 what have the major leaps in
+12:55 
+
+12:55 um sort of the design around the model?
+12:59 
+
+12:59 Yeah. What have they been?
+12:60 
+
+13:00 >> So I think there's maybe like three eras
+13:03 
+
+13:03 I would say. I'd say like early on and
+13:05 
+
+13:05 this is when Langchain was just started
+13:06 
+
+13:06 like these were still the raw like text
+13:08 
+
+13:08 in text out like not even chatbased
+13:10 
+
+13:10 models. And so they didn't have any of
+13:12 
+
+13:12 the tool calling. They didn't have
+13:14 
+
+13:14 >> any content blocks, any reasoning at
+13:16 
+
+13:16 all. They were really just like
+13:18 
+
+13:18 >> really really
+13:19 
+
+13:19 >> basic. Uh and so the the things that
+13:22 
+
+13:22 people were doing were mostly like
+13:23 
+
+13:23 single prompts or like chains. Um and
+13:26 
+
+13:26 and it wasn't even possible to do
+13:28 
+
+13:28 anything like that complicated. Then a
+13:30 
+
+13:30 lot of the model labs started training
+13:32 
+
+13:32 in a lot of like the tool calling into
+13:34 
+
+13:34 the models and they got really good at
+13:35 
+
+13:35 kind or they tried to make them good at
+13:36 
+
+13:36 like thinking and planning and they
+13:38 
+
+13:38 still weren't they still weren't good
+13:40 
+
+13:40 yet. they sort of weren't good as they
+13:41 
+
+13:41 as they are today. Um, but they were
+13:43 
+
+13:43 good enough to like
+13:44 
+
+13:44 >> decide what to do. And this is where
+13:46 
+
+13:46 like the custom cognitive architectures
+13:47 
+
+13:47 would come in more into play because
+13:48 
+
+13:48 you'd ask it explicitly like what do I
+13:50 
+
+13:50 do here? But it was like a very like
+13:52 
+
+13:52 point in time and then you go down this
+13:53 
+
+13:53 branch and then like what do I do here?
+13:54 
+
+13:54 And maybe there's a loop and and there
+13:56 
+
+13:56 started to be some loops but it's still
+13:57 
+
+13:57 a little bit more kind of like
+13:58 
+
+13:58 scaffolding around it.
+13:60 
+
+14:00 >> And then there was an inflection point
+14:02 
+
+14:02 and I don't know where exactly that was.
+14:03 
+
+14:03 I would say I think we noticed it
+14:05 
+
+14:05 probably in like June July of this year
+14:07 
+
+14:07 where we saw Cloud Code taking off, deep
+14:09 
+
+14:09 research taking off, Manis taking off
+14:11 
+
+14:11 and these all use the same architecture
+14:13 
+
+14:13 under the hood of just the the LLM
+14:15 
+
+14:15 running in the loop but like cleverly
+14:17 
+
+14:17 like a lot of a lot of hardness is
+14:18 
+
+14:18 context engineering like everything
+14:20 
+
+14:20 around contraction context engineering
+14:21 
+
+14:21 sub agents context skills context
+14:24 
+
+14:24 engineering. So we basically saw them
+14:25 
+
+14:25 using the same core algorithm but making
+14:27 
+
+14:27 just like improvements on context
+14:29 
+
+14:29 engineering and we're like oh that's
+14:31 
+
+14:31 interesting that's pretty different than
+14:32 
+
+14:32 before. And so that's when we started
+14:34 
+
+14:34 working on deep agents.
+14:35 
+
+14:35 >> I think for a lot of people in the
+14:36 
+
+14:36 coding community, I think probably like
+14:39 
+
+14:39 Opus 4 5 was when they started to like
+14:41 
+
+14:41 really feel this. It might have also
+14:43 
+
+14:43 just coincided with winter break when
+14:45 
+
+14:45 everyone went home and started using
+14:46 
+
+14:46 claude code and realiz how good it was.
+14:48 
+
+14:48 Um but I think like around like
+14:49 
+
+14:49 November, December like I think there's
+14:51 
+
+14:51 has been this like
+14:53 
+
+14:53 >> at least I I sense a pretty big like
+14:55 
+
+14:55 vibe shift in like people just like yeah
+14:57 
+
+14:57 you throw hard problems at these things
+14:59 
+
+14:59 and you get long horizon agents. And so
+15:01 
+
+15:01 I don't know whether it was early 2025
+15:03 
+
+15:03 or late 2025, but at some point the
+15:05 
+
+15:05 models got good enough and and that's
+15:06 
+
+15:06 when we moved from like scaffolds to to
+15:08 
+
+15:08 harnesses.
+15:09 
+
+15:09 >> And what's next on this arc?
+15:11 
+
+15:11 >> I I wish I could tell you. Um, I mean I
+15:15 
+
+15:15 do think that like this algorithm of
+15:16 
+
+15:16 just running the LM in a loop and
+15:18 
+
+15:18 letting it orchestrate its own uh let
+15:20 
+
+15:20 letting it really choose what to pull
+15:21 
+
+15:21 into context and and and doing stuff
+15:23 
+
+15:23 there that is like it's so simple and so
+15:26 
+
+15:26 general purpose like I mean that was the
+15:28 
+
+15:28 core idea of agents and all along and
+15:29 
+
+15:29 and and we're finally there.
+15:31 
+
+15:31 >> Um if you look at some of the manual
+15:33 
+
+15:33 scaffolding like maybe some of that goes
+15:35 
+
+15:35 away. So like compaction is still very
+15:36 
+
+15:36 manual like the the harness author
+15:39 
+
+15:39 decides what to do with it. Anthropic
+15:41 
+
+15:41 has some interesting things where they
+15:42 
+
+15:42 let the model decide like when to
+15:43 
+
+15:43 compact things. We don't really see a
+15:45 
+
+15:45 ton of people using that. Maybe that'll
+15:47 
+
+15:47 be a part that's next. Uh part of what
+15:51 
+
+15:51 we're really interested in is memory as
+15:54 
+
+15:54 well. If you think about memory in the
+15:55 
+
+15:55 context of this, that's also context
+15:57 
+
+15:57 engineering, right? It's context
+15:58 
+
+15:58 engineering over longer time horizons
+15:60 
+
+15:60 and it's a slightly different set of
+16:02 
+
+16:02 contexts, but it's still giving that to
+16:04 
+
+16:04 the to the LLM. And I think uh I think
+16:07 
+
+16:07 like the the core algorithm is is is
+16:11 
+
+16:11 pretty like it's pretty simple. It's run
+16:13 
+
+16:13 the LLM in a loop and we're finally
+16:14 
+
+16:14 there and it kind of works. And so I
+16:16 
+
+16:16 think there'll be a bunch of like
+16:17 
+
+16:17 context engineering tricks around it.
+16:19 
+
+16:19 And maybe some of that is giving the
+16:21 
+
+16:21 context engineering actually to the LLM
+16:23 
+
+16:23 like letting like the anthropic thing.
+16:24 
+
+16:24 Maybe some of that is just pulling in
+16:26 
+
+16:26 new types of context. The models will
+16:28 
+
+16:28 will probably get better. They'll
+16:29 
+
+16:29 probably I mean they'll probably get
+16:31 
+
+16:31 better and better at these types of
+16:32 
+
+16:32 longer horizon tasks. that'll be great
+16:34 
+
+16:34 as well. Um, one of the big questions on
+16:36 
+
+16:36 my mind it so a lot of these harnesses
+16:39 
+
+16:39 that we see are very coding specific.
+16:41 
+
+16:41 Yeah. Um, and that's where we first
+16:42 
+
+16:42 started to really see these long horizon
+16:45 
+
+16:45 uh, agents take off and even for
+16:47 
+
+16:47 non-coding tasks I think you can make an
+16:50 
+
+16:50 argument that like writing code is
+16:52 
+
+16:52 really useful and uh, can be general
+16:55 
+
+16:55 purpose.
+16:55 
+
+16:55 >> I was going to ask you are coding agents
+16:57 
+
+16:57 is that a subcategory or are coding
+16:60 
+
+16:60 agents just agents? Meaning the job of
+17:01 
+
+17:01 an agent is to figure out how to get a
+17:03 
+
+17:03 computer to do useful stuff and code is
+17:06 
+
+17:06 a pretty good way to get a computer to
+17:07 
+
+17:07 do useful stuff.
+17:09 
+
+17:09 >> I don't know. Um this is one of the big
+17:11 
+
+17:11 so I I I very very strongly believe that
+17:14 
+
+17:14 like right now if you're building a long
+17:16 
+
+17:16 horizon agent, you need to give it
+17:17 
+
+17:17 access to a file system. Like there's so
+17:20 
+
+17:20 many things you can do with a file
+17:21 
+
+17:21 system in terms of context management.
+17:22 
+
+17:22 Like when we talk about compaction, one
+17:24 
+
+17:24 strategy is to summarize but put all the
+17:26 
+
+17:26 messages in the file system so that if
+17:27 
+
+17:27 it needs to look it up, it can. Uh,
+17:29 
+
+17:29 another strategy is when you have like
+17:31 
+
+17:31 big tool call results, don't pass it all
+17:33 
+
+17:33 to the model. Put it in the file system
+17:34 
+
+17:34 and let it looking let it look it up.
+17:37 
+
+17:37 Now you can do all of that without like
+17:38 
+
+17:38 a real file system actually without
+17:40 
+
+17:40 letting it write code. So we have a
+17:41 
+
+17:41 concept of like a virtual file system
+17:43 
+
+17:43 where it's just backed by Postgress or
+17:44 
+
+17:44 something like that and it's more
+17:45 
+
+17:45 scalable, but there are obviously things
+17:47 
+
+17:47 you can do with code that you can't do
+17:48 
+
+17:48 with a virtual file system. You can't
+17:49 
+
+17:49 run code in a virtual file system. Um,
+17:52 
+
+17:52 so like writing scripts is like really
+17:53 
+
+17:53 useful for that.
+17:54 
+
+17:54 >> Yeah. Um, and I think a coding agent can
+17:58 
+
+17:58 be general purpose, but I don't know if
+18:01 
+
+18:01 that means that today's coding agents
+18:03 
+
+18:03 are, if that makes sense. Because I
+18:04 
+
+18:04 think a lot of the coding agents today
+18:05 
+
+18:05 are pretty optimized for coding tasks.
+18:08 
+
+18:08 And so I think it's possible that a
+18:09 
+
+18:09 general purpose agent is a coding agent,
+18:11 
+
+18:11 but I don't know if like the reverse is
+18:13 
+
+18:13 true if if if that kind of like makes
+18:15 
+
+18:15 sense.
+18:15 
+
+18:15 >> Yeah. Yeah. Yeah.
+18:16 
+
+18:16 >> We're thinking about that a lot as well.
+18:17 
+
+18:17 Are all agents coding agents?
+18:19 
+
+18:19 >> Yeah. That's that's one of the biggest
+18:20 
+
+18:20 things that we're thinking about right
+18:22 
+
+18:22 now.
+18:22 
+
+18:22 >> Yeah. Maybe can we transition into
+18:24 
+
+18:24 talking about what goes into building a
+18:27 
+
+18:27 long horizon agent versus building
+18:29 
+
+18:29 software? Um can you maybe describe the
+18:31 
+
+18:31 software development stack for for 1.0
+18:33 
+
+18:33 code development and um and what's
+18:35 
+
+18:35 different now? And I thought you had a
+18:36 
+
+18:36 really good X article on this. Maybe
+18:38 
+
+18:38 maybe just summarize the the punch line.
+18:41 
+
+18:41 >> I've been I to think about this a bunch
+18:43 
+
+18:43 because we like to say that build and I
+18:45 
+
+18:45 think a lot of people would agree that
+18:46 
+
+18:46 like building agents is different than
+18:47 
+
+18:47 building software. But like what exactly
+18:50 
+
+18:50 is different? Cuz I think it's it's easy
+18:52 
+
+18:52 and lazy to say that it's different, but
+18:53 
+
+18:53 what actually is different? These might
+18:55 
+
+18:55 sound obvious, but hopefully that's good
+18:57 
+
+18:57 and they're not controversial. But like
+18:59 
+
+18:59 um when you're building software, all of
+19:01 
+
+19:01 the logic is in the code in the software
+19:03 
+
+19:03 and you can see it there. When you're
+19:04 
+
+19:04 building an agent, the logic for how
+19:07 
+
+19:07 your applications works is not all in
+19:09 
+
+19:09 the code. A large part of it comes from
+19:11 
+
+19:11 the model. And so what this means is
+19:12 
+
+19:12 that you can't just look at the code and
+19:14 
+
+19:14 tell exactly what the agent would do in
+19:16 
+
+19:16 a specific scenario. you actually have
+19:18 
+
+19:18 to run it. And so and so and so what
+19:20 
+
+19:20 does that mean? And and I think that's
+19:22 
+
+19:22 the biggest difference by the way like
+19:23 
+
+19:23 we're introducing like these
+19:24 
+
+19:24 nondeterministic systems into it and
+19:26 
+
+19:26 it's a black box and it lives outside
+19:28 
+
+19:28 and I think all that that's that's the
+19:29 
+
+19:29 biggest difference. So what exactly does
+19:31 
+
+19:31 that mean? I think like one thing that
+19:33 
+
+19:33 that means is that in order to tell what
+19:36 
+
+19:36 the application is actually doing, you
+19:38 
+
+19:38 can't look at the code. You have to look
+19:40 
+
+19:40 at actually what it does in in real
+19:41 
+
+19:41 life. Um, and so I think one of the the
+19:45 
+
+19:45 one of the things that one of the things
+19:47 
+
+19:47 that we do that is most popular is
+19:48 
+
+19:48 Langmith. One of the core parts of that
+19:50 
+
+19:50 is tracing. Why are traces so popular?
+19:52 
+
+19:52 Because they tell you exactly what goes
+19:53 
+
+19:53 on inside your agent at every step. Um,
+19:56 
+
+19:56 and it's different than software traces
+19:58 
+
+19:58 where in software you kind of have your
+19:60 
+
+19:60 system over here and it emits a bunch of
+20:02 
+
+20:02 like uh stuff and you you know you look
+20:05 
+
+20:05 at it when maybe there's some errors but
+20:08 
+
+20:08 you don't need like everything and and
+20:10 
+
+20:10 you usually only turn that on when you
+20:11 
+
+20:11 put it in production because if it's
+20:13 
+
+20:13 local you just put a breakpoint or
+20:14 
+
+20:14 something like that. in agents like
+20:17 
+
+20:17 people use traces from the start to just
+20:19 
+
+20:19 tell what's going on under the hood. And
+20:21 
+
+20:21 and it's way more impactful in agents
+20:23 
+
+20:23 than in single LLM applications because
+20:25 
+
+20:25 in single LM applications you get some
+20:27 
+
+20:27 bad response from the LLM. You know
+20:28 
+
+20:28 exactly what your prompt is. You know
+20:30 
+
+20:30 exactly what the context that goes in is
+20:31 
+
+20:31 because that's determined by code and
+20:33 
+
+20:33 then you get something out. In agents
+20:35 
+
+20:35 they're running and and and repeating
+20:37 
+
+20:37 and so you don't actually know what the
+20:38 
+
+20:38 context at step 14 will be because
+20:40 
+
+20:40 there's 13 steps before that that could
+20:42 
+
+20:42 pull arbitrary things in. So, like what
+20:44 
+
+20:44 exactly is everything's context
+20:45 
+
+20:45 engineering. Context engineering is such
+20:47 
+
+20:47 a good term. I wish I came up with that
+20:48 
+
+20:48 term. Like it actually really describes
+20:50 
+
+20:50 like everything we've done at Langchain
+20:52 
+
+20:52 um without knowing that that term
+20:54 
+
+20:54 existed. But like traces just like tell
+20:55 
+
+20:55 you what's in your context. And that's
+20:57 
+
+20:57 so important. And so then and so like
+20:59 
+
+20:59 what does that mean? That means that the
+21:01 
+
+21:01 the source of truth for software is in
+21:03 
+
+21:03 code. In for agents it's a combination
+21:06 
+
+21:06 now of code and and and traces are where
+21:09 
+
+21:09 you can see the source of truth.
+21:10 
+
+21:10 technically in you know all those
+21:12 
+
+21:12 millions of parameters but like you
+21:14 
+
+21:14 can't really do anything with that. So
+21:15 
+
+21:15 now so now that means that traces become
+21:18 
+
+21:18 a place where you start to think about
+21:20 
+
+21:20 testing because now you can't you can
+21:22 
+
+21:22 test you can test some parts still of of
+21:24 
+
+21:24 the harness and and and you can do some
+21:26 
+
+21:26 unit testing offline but like in order
+21:27 
+
+21:27 to get the the what the test cases are
+21:30 
+
+21:30 you probably want to use the traces to
+21:31 
+
+21:31 construct that. You probably want to be
+21:33 
+
+21:33 testing online. That's probably more
+21:35 
+
+21:35 important in agents than it is in
+21:37 
+
+21:37 software is online testing because
+21:38 
+
+21:38 behavior doesn't emerge until until it's
+21:40 
+
+21:40 actually being used with with real world
+21:42 
+
+21:42 inputs. Um, we see traces becoming a
+21:45 
+
+21:45 point of collaboration for teams because
+21:47 
+
+21:47 if something goes wrong, it's not, oh,
+21:48 
+
+21:48 let's go look at the code in GitHub.
+21:50 
+
+21:50 It's let's go look at the trace. We see
+21:51 
+
+21:51 this in our open source as well when
+21:52 
+
+21:52 people are being like, hey, deep agents
+21:55 
+
+21:55 like went off the rails here. What
+21:56 
+
+21:56 happened? Our response is like send us a
+21:58 
+
+21:58 lang trace. Like we can't really help
+21:60 
+
+21:60 you debug if it's if it's not that.
+22:01 
+
+22:01 Previously would be like, show me the
+22:02 
+
+22:02 code, right? So there's think there's a
+22:04 
+
+22:04 transition there. And then I think the
+22:06 
+
+22:06 other thing that's and and so that was
+22:08 
+
+22:08 the blog post that I wrote on next which
+22:09 
+
+22:09 got a lot of good feedback on. I'm still
+22:11 
+
+22:11 kind of figuring out how to like phrase
+22:12 
+
+22:12 it but I think that's that's a big part
+22:14 
+
+22:14 of it. Um the other thing which I'm
+22:16 
+
+22:16 still trying to think through as well is
+22:18 
+
+22:18 I think building agents is more
+22:20 
+
+22:20 iterative. And we used to say that and I
+22:23 
+
+22:23 would kind of roll my eyes because
+22:24 
+
+22:24 building software is iterative as well,
+22:25 
+
+22:25 right? You you ship it, you get feedback
+22:27 
+
+22:27 and it's it's constant iteration. That's
+22:29 
+
+22:29 like what it is. I think the difference
+22:31 
+
+22:31 is that in software you're you're you're
+22:34 
+
+22:34 kind of like iterating based on what you
+22:37 
+
+22:37 want the software to do. Like you have
+22:39 
+
+22:39 some idea, you ship it, you get
+22:40 
+
+22:40 feedback. Oh, maybe this, you know,
+22:42 
+
+22:42 button is confusing. Maybe this uh maybe
+22:44 
+
+22:44 users actually want to do X instead of
+22:46 
+
+22:46 Y, but you know what the software does
+22:48 
+
+22:48 before you ship it. With agents, you
+22:50 
+
+22:50 don't know what the agent does before
+22:51 
+
+22:51 you ship it. You have an idea, but you
+22:53 
+
+22:53 don't really know what it does before
+22:54 
+
+22:54 you ship it. And so I think there's way
+22:56 
+
+22:56 more iteration involved in order to get
+22:59 
+
+22:59 it like accurate, get it like right and
+23:01 
+
+23:01 passing like conceptual unit tests
+23:04 
+
+23:04 basically.
+23:05 
+
+23:05 >> Um, and
+23:07 
+
+23:07 building upon that like this is actually
+23:09 
+
+23:09 why I think memory is really important
+23:11 
+
+23:11 as well. Um, because memor is like
+23:13 
+
+23:13 learning from those interactions. And so
+23:14 
+
+23:14 if now you have a process that's like
+23:16 
+
+23:16 way more iterative. And so now you have
+23:18 
+
+23:18 to like it's it's way harder to build as
+23:20 
+
+23:20 a developer because I have to like
+23:21 
+
+23:21 change the system prompt like way more
+23:23 
+
+23:23 than I would have to change code in
+23:25 
+
+23:25 order to get it just perform like
+23:27 
+
+23:27 correctly.
+23:28 
+
+23:28 >> Yeah.
+23:28 
+
+23:28 >> So that's where memory comes in because
+23:29 
+
+23:29 if there's a way where the system can
+23:31 
+
+23:31 kind of like learn by itself that cuts
+23:32 
+
+23:32 down the iteration that you have to do
+23:34 
+
+23:34 as a developer and makes it easier to
+23:35 
+
+23:35 build these types of agents. So that's
+23:38 
+
+23:38 another kind of like angle that I I like
+23:41 
+
+23:41 I absolutely think agents are different
+23:43 
+
+23:43 than building software. I think it's
+23:45 
+
+23:45 also a little cliche to say that and so
+23:46 
+
+23:46 I've tried to think about what exactly
+23:47 
+
+23:47 is different and those are like the two
+23:48 
+
+23:48 things that I've kind of come up with.
+23:50 
+
+23:50 >> Well, and I'm curious on that too. Um,
+23:53 
+
+23:53 one of the questions there's a big
+23:55 
+
+23:55 public market debate right now is are
+23:57 
+
+23:57 the existing software companies going to
+23:59 
+
+23:59 make it. And if you analogize to when
+24:02 
+
+24:02 on-prem software went to cloud, very few
+24:05 
+
+24:05 actually did make it because it turned
+24:06 
+
+24:06 out that building cloud software was
+24:08 
+
+24:08 actually quite different than building
+24:09 
+
+24:09 on-prim. And since you're in the middle
+24:12 
+
+24:12 of kind of how people are building with
+24:14 
+
+24:14 AI, um what's your take on not
+24:17 
+
+24:17 necessarily the public market question,
+24:18 
+
+24:18 but how different is it? Like do you see
+24:22 
+
+24:22 have you seen a lot of people who kind
+24:24 
+
+24:24 of like were good at building software
+24:26 
+
+24:26 the old way and now they're good at
+24:27 
+
+24:27 building software the new way? Or is it
+24:29 
+
+24:29 more just you either grow up building it
+24:31 
+
+24:31 the new way or you never get it? Like do
+24:33 
+
+24:33 you think people can make the leap? a
+24:35 
+
+24:35 lot of young founders out there right
+24:36 
+
+24:36 now which which makes me think that
+24:38 
+
+24:38 certainly it seems like the younger
+24:41 
+
+24:41 people without a lot of preconceived
+24:42 
+
+24:42 notions on how to build software you
+24:44 
+
+24:44 know have the blank slate that has
+24:46 
+
+24:46 allowed them to like pick up on a lot of
+24:47 
+
+24:47 this stuff. I do think we we have
+24:50 
+
+24:50 consistently heard that a lot of the
+24:52 
+
+24:52 people who are on these agent
+24:54 
+
+24:54 engineering teams are more junior
+24:56 
+
+24:56 developers uh more junior builders even
+25:00 
+
+25:00 um
+25:01 
+
+25:01 >> who yeah don't have those preconceived
+25:03 
+
+25:03 notions. Our applied AI team internally
+25:05 
+
+25:05 definitely skews on the on the younger
+25:08 
+
+25:08 side.
+25:09 
+
+25:09 >> Um I do think I mean in terms of kind of
+25:12 
+
+25:12 like I think there's like a there's like
+25:14 
+
+25:14 a person aspect to this. There's also
+25:15 
+
+25:15 like a company aspect to this. Like I do
+25:17 
+
+25:17 think that like data is still really
+25:19 
+
+25:19 really really valuable. Um
+25:22 
+
+25:22 >> I think when you think about this
+25:23 
+
+25:23 harness basically there's like if if
+25:25 
+
+25:25 harnesses become I by the way I I don't
+25:28 
+
+25:28 think that most people will build their
+25:29 
+
+25:29 own harness in the long run because it's
+25:30 
+
+25:30 actually way harder than than building a
+25:33 
+
+25:33 framework. And so I think they'll uh use
+25:35 
+
+25:35 uh a harness from us or from someone
+25:37 
+
+25:37 else. And so if you think about what
+25:38 
+
+25:38 goes into that it's like the prompt and
+25:41 
+
+25:41 the instructions and then the tools that
+25:42 
+
+25:42 it's connected to. And I think one thing
+25:44 
+
+25:44 that this is more at the company level
+25:45 
+
+25:45 now, but like one thing that existing
+25:46 
+
+25:46 companies have is all the data and all
+25:49 
+
+25:49 the APIs if if you've done a good job at
+25:51 
+
+25:51 that then I think it will actually be
+25:52 
+
+25:52 pretty easy to plug those in and get
+25:54 
+
+25:54 real value out of things. Um we were
+25:56 
+
+25:56 talking to someone in the finance space
+25:58 
+
+25:58 and and they are saying yeah like the
+25:60 
+
+25:60 value of data is just going up and up
+26:01 
+
+26:01 and up and up. So if you're a previous
+26:03 
+
+26:03 uh software vendor and you have this
+26:05 
+
+26:05 data that is valuable like you should be
+26:06 
+
+26:06 able to expose it to agents and get a
+26:08 
+
+26:08 lot of value out of that.
+26:09 
+
+26:09 >> Yeah. The other part of it though is the
+26:11 
+
+26:11 instructions on what to do with that
+26:13 
+
+26:13 data and that's probably like more net
+26:15 
+
+26:15 new um in terms of like how to use that
+26:17 
+
+26:17 data. That's probably you probably had
+26:19 
+
+26:19 some ideas about that as a software
+26:21 
+
+26:21 vendor but you didn't kind of like
+26:23 
+
+26:23 consolidate it. You didn't have it
+26:26 
+
+26:26 because that was something that humans
+26:27 
+
+26:27 would still do. Like a lot of what
+26:28 
+
+26:28 agents are doing what humans would still
+26:29 
+
+26:29 do. So you'd give them the tools to do
+26:31 
+
+26:31 it but you wouldn't have tried to like
+26:32 
+
+26:32 automate that or you wouldn't have
+26:34 
+
+26:34 successfully automated it before kind of
+26:35 
+
+26:35 like agents. And so that part I think is
+26:37 
+
+26:37 is is newer and we're also seeing a lot
+26:40 
+
+26:40 of demand like I think a lot of the a
+26:42 
+
+26:42 lot of the vertical startups um rogo is
+26:45 
+
+26:45 a great example of someone who has
+26:46 
+
+26:46 experience in finance and is bringing
+26:48 
+
+26:48 that knowledge to agents and the reason
+26:50 
+
+26:50 that's kind of like effective is because
+26:52 
+
+26:52 a lot of the agents are driven by by
+26:54 
+
+26:54 knowledge and and and and and not like
+26:57 
+
+26:57 world knowledge but like knowledge on
+26:58 
+
+26:58 how to do specific patterns. Um so kind
+27:01 
+
+27:01 of yeah I think there's like are the
+27:03 
+
+27:03 people who are building software the
+27:04 
+
+27:04 right people to build agents. Um I think
+27:07 
+
+27:07 we saw a lot of really senior developers
+27:09 
+
+27:09 adopt agentic coding and so I think it
+27:11 
+
+27:11 it it's a mindset thing but like yeah
+27:13 
+
+27:13 there there is maybe a younger skew
+27:15 
+
+27:15 there. Um and then and then for
+27:17 
+
+27:17 companies depends on the data.
+27:18 
+
+27:18 >> Yeah.
+27:19 
+
+27:19 >> Even Pat's on on cloud code. So
+27:21 
+
+27:21 >> even old guys can get it.
+27:23 
+
+27:23 >> Sonia got me on there.
+27:26 
+
+27:26 >> Um okay. Okay. So, it seems like the
+27:27 
+
+27:27 trace is a core artifact you think in
+27:29 
+
+27:29 kind of this new world of of agent
+27:31 
+
+27:31 development and it's something that
+27:32 
+
+27:32 linksmith helps a lot with. What other
+27:34 
+
+27:34 core artifacts do you think are there?
+27:36 
+
+27:36 And specifically, I'm wondering about
+27:38 
+
+27:38 eval.
+27:39 
+
+27:39 >> Yeah, I think um
+27:40 
+
+27:40 >> maybe artifact is the wrong word.
+27:43 
+
+27:43 >> Components.
+27:43 
+
+27:43 >> Component. Yeah, I mean I I I think one
+27:45 
+
+27:45 other thing that is different between
+27:47 
+
+27:47 building software and and building
+27:49 
+
+27:49 agents is that to evaluate software you
+27:51 
+
+27:51 could pretty reliably you you could rely
+27:53 
+
+27:53 on tests and assertions of of things
+27:55 
+
+27:55 programmatically.
+27:56 
+
+27:56 >> Um with agents a lot of what they're
+27:58 
+
+27:58 doing is things that humans would do. So
+28:00 
+
+28:00 in order to judge them you need to bring
+28:02 
+
+28:02 human judgment into that. And that's
+28:03 
+
+28:03 another thing that we try to do in
+28:04 
+
+28:04 Lingsmith is how can you bring you've
+28:06 
+
+28:06 got these traces how can you bring human
+28:08 
+
+28:08 judgment to them? And so that like one
+28:11 
+
+28:11 obvious way to do that is to bring
+28:12 
+
+28:12 humans into the equation. Um and so we
+28:14 
+
+28:14 see data labeling startups doing really
+28:16 
+
+28:16 well. Uh we have a concept of annotation
+28:18 
+
+28:18 cues in Langmith to bring people in
+28:20 
+
+28:20 there. And so that actual like actual
+28:22 
+
+28:22 human judgment is is a big part of it.
+28:24 
+
+28:24 >> And this is humans annotating the actual
+28:26 
+
+28:26 trace. So like ah the agent did this and
+28:28 
+
+28:28 this and this and that was good or bad.
+28:30 
+
+28:30 >> Yeah. Yeah. Um saying and and sometimes
+28:32 
+
+28:32 giving like natural language feedback on
+28:34 
+
+28:34 it like this is good, this is bad,
+28:35 
+
+28:35 should have done this. sometimes just
+28:36 
+
+28:36 like correcting it like actually like
+28:38 
+
+28:38 laying out what the what the uh correct
+28:40 
+
+28:40 steps were kind of depends on the use
+28:42 
+
+28:42 case and it's probably different for
+28:44 
+
+28:44 model companies doing RL than it is for
+28:46 
+
+28:46 for agent companies building building
+28:47 
+
+28:47 agents. Yeah.
+28:48 
+
+28:48 >> Um but it's bringing that human judgment
+28:50 
+
+28:50 to it. Um but then another thing we see
+28:52 
+
+28:52 is trying to build proxies for this
+28:54 
+
+28:54 human judgment. And this is where LLM as
+28:55 
+
+28:55 a judge type things come in where you
+28:57 
+
+28:57 can run an LLM or something else that
+28:59 
+
+28:59 you know has some semblance of human
+29:01 
+
+29:01 judgment in it to grade the the thing
+29:04 
+
+29:04 that requires human judgment. Um, and so
+29:06 
+
+29:06 one of the things that we think a lot
+29:07 
+
+29:07 about is how to make building these
+29:09 
+
+29:09 elements as judges easy because a big
+29:12 
+
+29:12 part of them is making sure that they're
+29:13 
+
+29:13 aligned with your human judgment and
+29:15 
+
+29:15 human preferences. And so and because if
+29:17 
+
+29:17 they're not, you know, then your then
+29:19 
+
+29:19 your greater is just bad. And so we have
+29:20 
+
+29:20 a we have a concept in Langmith called
+29:22 
+
+29:22 align evals. Um, where a human goes in
+29:25 
+
+29:25 labels some traces and then that that
+29:27 
+
+29:27 builds an LLM as a judge that that kind
+29:30 
+
+29:30 of like is calibrated against those
+29:32 
+
+29:32 traces. Um because a bit yeah a big part
+29:34 
+
+29:34 of it is bringing this human judgment
+29:35 
+
+29:35 and you just want to make sure that if
+29:36 
+
+29:36 you're bringing a proxy of it it's it's
+29:38 
+
+29:38 well calibrated.
+29:39 
+
+29:39 >> Interesting. I remember when we first
+29:40 
+
+29:40 got into business with you we were
+29:42 
+
+29:42 emailing about LLM as judge. Is it a
+29:43 
+
+29:43 viable idea or not? So it seems like
+29:45 
+
+29:45 it's come a long way.
+29:46 
+
+29:46 >> Okay. So there's there's a few different
+29:47 
+
+29:47 aspects of LM as a judge, right? There's
+29:49 
+
+29:49 like the immediate like so what most
+29:50 
+
+29:50 people use them for in eval is like
+29:52 
+
+29:52 taking this trace and give it a score of
+29:53 
+
+29:53 like one to to zero or or 0 to 10 or
+29:56 
+
+29:56 something like that. And yeah, I think
+29:58 
+
+29:58 that's valu uh viable and people are
+29:60 
+
+30:00 doing that. They're doing it offline.
+30:01 
+
+30:01 They're also doing it online because
+30:02 
+
+30:02 some of these judgments you don't need
+30:04 
+
+30:04 ground truth for. But I think the other
+30:06 
+
+30:06 area where this comes into is uh I mean
+30:10 
+
+30:10 you you kind of see this in the coding
+30:12 
+
+30:12 agents themselves like the coding agents
+30:14 
+
+30:14 will they'll work up until something
+30:17 
+
+30:17 then they hit an error and they get an
+30:18 
+
+30:18 error and then they have to correct
+30:19 
+
+30:19 there and so they're kind of judging
+30:20 
+
+30:20 their previous work. And so and and we
+30:22 
+
+30:22 also see this in memory like a big part
+30:24 
+
+30:24 of memory is like reflecting on traces
+30:26 
+
+30:26 and then updating something. And so like
+30:28 
+
+30:28 can LLM reflect on traces that are
+30:31 
+
+30:31 either like their own or their own from
+30:33 
+
+30:33 a previous session or someone? Yeah,
+30:36 
+
+30:36 absolutely. I think they can. We see
+30:37 
+
+30:37 this all across evals and just like
+30:39 
+
+30:39 error correcting and and memory. It's
+30:40 
+
+30:40 all kind of the same thing.
+30:42 
+
+30:42 >> I see. And then maybe Okay, so you have
+30:45 
+
+30:45 all this you you have all the traces.
+30:47 
+
+30:47 >> Yep.
+30:47 
+
+30:47 >> You have the evals.
+30:48 
+
+30:48 >> Yep. Um I think the natural question
+30:51 
+
+30:51 that comes to mind for me is is the EVEL
+30:53 
+
+30:53 like a reward signal for reinforcement
+30:55 
+
+30:55 learning or is it a feedback mechanism
+30:57 
+
+30:57 for you know a human engineer to improve
+30:60 
+
+30:60 the harness
+31:01 
+
+31:01 >> or for agent engineers to improve the
+31:04 
+
+31:04 harness because everyone's no one's no
+31:05 
+
+31:05 one's coding manual anymore. They're all
+31:07 
+
+31:07 using these. So yeah, one big thing that
+31:08 
+
+31:08 we've seen is like um we we have a
+31:11 
+
+31:11 Langmith MCP and we have Langmith fetch
+31:13 
+
+31:13 which is a CLI because coding agents are
+31:15 
+
+31:15 actually great at using CLIs. um you
+31:18 
+
+31:18 give that to an agent and it can pull
+31:19 
+
+31:19 down traces and diagnose what went wrong
+31:21 
+
+31:21 and then and then it brings those traces
+31:23 
+
+31:23 into the codebase where it can then fix
+31:25 
+
+31:25 it. That's absolutely a pattern that we
+31:26 
+
+31:26 are seeing and and we really really
+31:28 
+
+31:28 really want to support that pattern.
+31:30 
+
+31:30 Crazy. Yeah, I know.
+31:31 
+
+31:31 >> And it's good.
+31:32 
+
+31:32 >> Yeah. Yeah. Yeah. Yeah. It's good. Like
+31:34 
+
+31:34 it it Yeah, it um and and so we see I'm
+31:37 
+
+31:37 probably more bullish on that than on
+31:39 
+
+31:39 kind of like reinforcement learning at
+31:40 
+
+31:40 least for like the agent app kind of
+31:43 
+
+31:43 like companies right now. That seems
+31:45 
+
+31:45 like real recursive self-improvement
+31:47 
+
+31:47 though.
+31:47 
+
+31:47 >> Yeah, I think I think uh again there's
+31:50 
+
+31:50 still a human in the loop. So like uh
+31:51 
+
+31:51 back to the point around around like
+31:53 
+
+31:53 things are good when you can do
+31:54 
+
+31:54 something as a first draft like it it
+31:56 
+
+31:56 changes the prompt and then the human
+31:57 
+
+31:57 reviews it and like it it keeps it on
+31:59 
+
+31:59 the rails. But like um I absolutely so
+32:03 
+
+32:03 so one of the things we launched was
+32:05 
+
+32:05 Langmith agent builder which is a no
+32:06 
+
+32:06 code way to build agents. One of the
+32:08 
+
+32:08 cool things that we have in there is
+32:09 
+
+32:09 memory. Um, and so right now the way
+32:13 
+
+32:13 that memory works is when you interact
+32:15 
+
+32:15 with an agent, so it's not in the
+32:16 
+
+32:16 background yet. It's not like pulling
+32:17 
+
+32:17 down its traces, but when you interact
+32:19 
+
+32:19 with the agent, if you say, "Oh, you
+32:20 
+
+32:20 should instead of X, you should have
+32:21 
+
+32:21 done Y," it will go to its own
+32:23 
+
+32:23 instructions, which are just files, and
+32:24 
+
+32:24 it will edit those files. So then in the
+32:26 
+
+32:26 future, and so that's also kind of like
+32:27 
+
+32:27 a a version of this. One thing we do
+32:29 
+
+32:29 want to add is like the thing that runs
+32:31 
+
+32:31 every night, looks at all the traces for
+32:33 
+
+32:33 the day, updates its own instructions,
+32:35 
+
+32:35 and so
+32:36 
+
+32:36 >> the dreaming thing.
+32:37 
+
+32:37 >> Yeah. Yeah. Sleep time compute. Um,
+32:39 
+
+32:39 yeah,
+32:39 
+
+32:39 >> sleep time compute. Is that what it's
+32:40 
+
+32:40 called?
+32:41 
+
+32:41 >> That's a term. Yeah, I think Leta came
+32:42 
+
+32:42 up with that. It's It's a great term.
+32:44 
+
+32:44 Yeah,
+32:45 
+
+32:45 >> that is good.
+32:46 
+
+32:46 >> Love it.
+32:47 
+
+32:47 >> Awesome. Okay, let's talk more about the
+32:49 
+
+32:49 future. Um, what are you what are you
+32:51 
+
+32:51 most excited about? Sounds like you was
+32:52 
+
+32:52 talking a lot about memory here.
+32:53 
+
+32:53 >> I like memory a bunch. Yeah, I mean I
+32:55 
+
+32:55 think asking the agents to improve
+32:56 
+
+32:56 themselves is I mean I think very very
+32:60 
+
+33:00 cool and can be useful in a lot of
+33:01 
+
+33:01 situations. Not useful in all situations
+33:03 
+
+33:03 by the way. like if I'm chatting so so
+33:05 
+
+33:05 chat GPT added memory I don't actually
+33:08 
+
+33:08 really use that feature that much and I
+33:10 
+
+33:10 don't think it's created any more
+33:12 
+
+33:12 stickiness for me to use the product or
+33:13 
+
+33:13 anything like that and I think part of
+33:14 
+
+33:14 the reason is when I go to chat GPT I do
+33:17 
+
+33:17 like
+33:19 
+
+33:19 everything's a one-off thing like I
+33:20 
+
+33:20 don't really repeat myself that much I
+33:22 
+
+33:22 have like I'm asking about software I'm
+33:23 
+
+33:23 asking about food trips like everything
+33:26 
+
+33:26 um in agent builder that you you build
+33:29 
+
+33:29 kind of like specific workflows for
+33:30 
+
+33:30 specific things so I have an email agent
+33:33 
+
+33:33 Um, and I actually
+33:34 
+
+33:34 >> I know it's been emailing me for two
+33:36 
+
+33:36 years.
+33:37 
+
+33:37 >> Well, so, okay, so I had an email agent
+33:39 
+
+33:39 outside of agent builder and it had this
+33:41 
+
+33:41 like memory as part of it. We then built
+33:44 
+
+33:44 agent builder and I wanted to move it
+33:46 
+
+33:46 into it and it didn't have all of my
+33:49 
+
+33:49 memories and that was a big even though
+33:50 
+
+33:50 it had the same starter prompt and the
+33:52 
+
+33:52 same tools and that was actually a I
+33:53 
+
+33:53 still haven't fully switched over
+33:55 
+
+33:55 because it kind of sucks now compared to
+33:57 
+
+33:57 what it was before like the compared to
+33:59 
+
+33:59 the other one and I if I just interact
+34:01 
+
+34:01 with it then it will get better and it
+34:02 
+
+34:02 will stop sucking but like that's where
+34:04 
+
+34:04 memory I think can be like a real moat
+34:06 
+
+34:06 and I absolutely think that we're at a
+34:08 
+
+34:08 point right now where LLM can look at
+34:10 
+
+34:10 traces and change things about their
+34:14 
+
+34:14 code. Um, and I think the question then
+34:16 
+
+34:16 becomes how do you do that in a way
+34:18 
+
+34:18 that's uh safe and acceptable to to
+34:21 
+
+34:21 users. Um, but I I I think that's
+34:23 
+
+34:23 absolutely uh something that we'll see
+34:25 
+
+34:25 more of for specific scenarios, not all
+34:27 
+
+34:27 of them. Like I still don't know if this
+34:29 
+
+34:29 would be useful in chat GPT in this form
+34:31 
+
+34:31 at least.
+34:32 
+
+34:32 >> Yeah.
+34:32 
+
+34:32 >> How do you think the UI around working
+34:35 
+
+34:35 with long horizon agents will evolve?
+34:38 
+
+34:38 >> I think there probably needs to be like
+34:40 
+
+34:40 a sync mode and an async mode. So long
+34:42 
+
+34:42 horizon agents running for a long time,
+34:44 
+
+34:44 probably default would be some sort of
+34:46 
+
+34:46 like async way to manage them. Like
+34:47 
+
+34:47 you're if if it runs for like a day,
+34:50 
+
+34:50 you're not just going to sit there and
+34:51 
+
+34:51 wait for it to finish. You're probably
+34:52 
+
+34:52 going to kick off another one and
+34:53 
+
+34:53 another one and do a bunch of work. And
+34:54 
+
+34:54 so I think this is where like async
+34:55 
+
+34:55 management of things comes into play. I
+34:57 
+
+34:57 think things like linear and Jira and
+34:60 
+
+34:60 canban boards and maybe even email are
+35:02 
+
+35:02 uh interesting to look at for
+35:04 
+
+35:04 inspiration about like what it looks to
+35:05 
+
+35:05 like to basically manage a lot of these
+35:07 
+
+35:07 agents. But I think for a lot of these
+35:10 
+
+35:10 at some point you're going to want to uh
+35:11 
+
+35:11 switch into synchronous communication
+35:13 
+
+35:13 with uh these agents because they come
+35:16 
+
+35:16 back with a research report and you want
+35:17 
+
+35:17 to give it feedback that it wrote
+35:18 
+
+35:18 something wrong. And I actually think
+35:20 
+
+35:20 chat's like reasonably good at that. The
+35:22 
+
+35:22 only thing that I'll maybe say there is
+35:25 
+
+35:25 that so many of these agents are now
+35:27 
+
+35:27 modifying other things like files in a
+35:29 
+
+35:29 file system that having some way to view
+35:32 
+
+35:32 that like state is really important. And
+35:34 
+
+35:34 so you see this in coding um where IDE's
+35:39 
+
+35:39 >> ids are still used when you want to go
+35:40 
+
+35:40 in and manually kind of like change code
+35:42 
+
+35:42 and and uh even when I kick off uh cloud
+35:45 
+
+35:45 code when it finishes I sometimes I pull
+35:48 
+
+35:48 it up and look at the code that it
+35:49 
+
+35:49 actually wrote. Um and so I think I
+35:51 
+
+35:51 think having a a way to view that state
+35:53 
+
+35:53 is interesting. One of the one of the
+35:54 
+
+35:54 really cool things that Anthropic did
+35:56 
+
+35:56 with their Claude co-work um when you
+35:59 
+
+35:59 set it up, you choose the directory that
+36:02 
+
+36:02 it's kind of like working in and you're
+36:03 
+
+36:03 basically saying like this is your
+36:04 
+
+36:04 environment. Um and obviously like
+36:07 
+
+36:07 that's what you do in coding as well.
+36:08 
+
+36:08 You open your ID to a particular
+36:09 
+
+36:09 directory. But I think that's a nice
+36:11 
+
+36:11 mental kind of like framing is like this
+36:13 
+
+36:13 is your workspace. That could workspace
+36:15 
+
+36:15 could be a Google drive. It could be a
+36:16 
+
+36:16 notion page. Um, it could be anything
+36:19 
+
+36:19 that like stores state and then you and
+36:21 
+
+36:21 the agent are collaborating on that
+36:23 
+
+36:23 state. You kick it off, you manage maybe
+36:25 
+
+36:25 a bunch of these running asynchronously.
+36:26 
+
+36:26 Then you go into sync mode where you
+36:27 
+
+36:27 chat with it, but you also view this
+36:29 
+
+36:29 state. And so that's kind of what I see
+36:32 
+
+36:32 right now.
+36:33 
+
+36:33 >> And this is like your agent inbox idea
+36:34 
+
+36:34 then of, you know, to to enable the sync
+36:37 
+
+36:37 mode, your agent's going to have to need
+36:38 
+
+36:38 a way of reaching you.
+36:39 
+
+36:39 >> Yeah, exactly. And so yeah, so the agent
+36:42 
+
+36:42 inbox or something we launched that
+36:43 
+
+36:43 about a year ago and and had this idea
+36:45 
+
+36:45 of like ambient agents that ran in the
+36:47 
+
+36:47 background and pinged you and the first
+36:48 
+
+36:48 version of that didn't have a sync mode
+36:50 
+
+36:50 and so it would ping you and then you'd
+36:52 
+
+36:52 give a response but then you'd kind of
+36:54 
+
+36:54 just wait for it to ping you again but
+36:56 
+
+36:56 oftentimes like when I was switching in
+36:58 
+
+36:58 to email you and respond to you, I would
+36:59 
+
+36:59 I would I would I would say very small
+37:01 
+
+37:01 things and I didn't want to switch out
+37:03 
+
+37:03 and wait like I I you're really
+37:04 
+
+37:04 important. So I wanted to like be in the
+37:06 
+
+37:06 sync mode in this conversation with the
+37:07 
+
+37:07 agent. And so one of the things we added
+37:09 
+
+37:09 was this was was now when you open the
+37:11 
+
+37:11 inbox you're brought into chat and chat
+37:13 
+
+37:13 is very synchronous and that was
+37:14 
+
+37:14 actually a big unlock. So I actually
+37:16 
+
+37:16 think having just an async mode. I don't
+37:19 
+
+37:19 think that really works right now. Maybe
+37:20 
+
+37:20 in the future if they get so good that
+37:22 
+
+37:22 you don't really need to like correct
+37:24 
+
+37:24 them as much it gets more viable. But at
+37:25 
+
+37:25 least right now I think we see people
+37:27 
+
+37:27 switching from async to sync and back
+37:29 
+
+37:29 and forth.
+37:30 
+
+37:30 >> What do you think of code sandboxes?
+37:32 
+
+37:32 Like is is every agent going to have
+37:34 
+
+37:34 access to a sandbox? Is every agent
+37:36 
+
+37:36 going to have access to or a computer?
+37:38 
+
+37:38 Is every agent going to have access to a
+37:40 
+
+37:40 browser?
+37:41 
+
+37:41 >> Really good question. Something we're
+37:42 
+
+37:42 thinking a bunch about. I think uh I
+37:45 
+
+37:45 think coding has clearly worked more
+37:48 
+
+37:48 than browser use so far. So at least in
+37:51 
+
+37:51 the short term, it seems like if any of
+37:52 
+
+37:52 those are going to be a key part there,
+37:54 
+
+37:54 it's going to be this code execution
+37:55 
+
+37:55 part. Um file systems, I'm completely
+37:58 
+
+37:58 file system pled. I think in some form
+37:60 
+
+38:00 agent should have access to some file
+38:01 
+
+38:01 system coding. I'm maybe not as pilled,
+38:05 
+
+38:05 but I'm probably like I'm like maybe
+38:06 
+
+38:06 like 90% there. Like yeah, I think like
+38:08 
+
+38:08 it is definitely possible. There are
+38:11 
+
+38:11 it's maybe for like the longer
+38:14 
+
+38:14 um tale of use cases. So maybe there's
+38:16 
+
+38:16 something where if you're doing
+38:17 
+
+38:17 something repeated, you need code less,
+38:19 
+
+38:19 but I think file systems are still
+38:21 
+
+38:21 useful because that repeated thing could
+38:22 
+
+38:22 be generating a lot of context and and
+38:23 
+
+38:23 you need to do context engineering. Um
+38:26 
+
+38:26 but for the long tale of things,
+38:27 
+
+38:27 coding's great and there's really no
+38:28 
+
+38:28 replacement for that. browser use. Um, I
+38:31 
+
+38:31 think the models just aren't good enough
+38:32 
+
+38:32 at it right now from what we've seen.
+38:35 
+
+38:35 Um, you could probably give like a
+38:37 
+
+38:37 coding agent a CLI to do browser use and
+38:39 
+
+38:39 there's probably some approximation
+38:40 
+
+38:40 there. There's probably some people
+38:41 
+
+38:41 doing some I think I have seen some cool
+38:43 
+
+38:43 stuff there.
+38:44 
+
+38:44 >> Um, and then computer use is like a
+38:45 
+
+38:45 weird hybrid of the two. Um, so if Yeah,
+38:48 
+
+38:48 code sandboxes, I really like code
+38:49 
+
+38:49 sandboxes.
+38:50 
+
+38:50 >> Yeah. Yeah.
+38:50 
+
+38:50 >> Cool. Um, Harrison, thank you so much
+38:53 
+
+38:53 for joining us today. you have
+38:54 
+
+38:54 consistently seen the future on agents
+38:56 
+
+38:56 and it was really cool to have this
+38:58 
+
+38:58 conversation and talk about how context
+38:60 
+
+38:60 engineering has evolved to the current
+39:02 
+
+39:02 point in time with with harnesses and
+39:04 
+
+39:04 and long horizon agents and so thank you
+39:06 
+
+39:06 for for driving that future and thank
+39:07 
+
+39:07 you for always chatting with us about
+39:08 
+
+39:08 it.
+39:08 
+
+39:08 >> Thank you for having me on. I look
+39:10 
+
+39:10 forward to being back on sometime in the
+39:11 
+
+39:11 future and being completely wrong about
+39:13 
+
+39:13 everything I said today. So it's very
+39:15 
+
+39:15 hard to predict the future.

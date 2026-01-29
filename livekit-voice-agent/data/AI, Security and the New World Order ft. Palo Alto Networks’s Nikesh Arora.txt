@@ -1,0 +1,1731 @@
+00:00 like I I have a principle that I was
+00:02 joke even on our All Hands say I've
+00:04 never met a person who comes to work to
+00:06 screw up I W up morning let's go
+00:09 sunshine it's time to go to work let's
+00:11 me see how badly I can do
+00:13 today everybody walks in with the right
+00:16 attitude it's something that happens at
+00:19 work that we create that causes the
+00:21 unintended
+00:23 outcomes it's not the person who walks
+00:25 in if you found the right person with
+00:26 the right domain knowledge the right
+00:27 intelligence and the right attitude then
+00:29 the rest is upon us
+00:48 today on training data we have a very
+00:49 special episode with nikesh Aurora the
+00:52 CEO of palala networks since joining
+00:55 paloalto in 2018 Nash has built it into
+00:57 the largest and most valuable cyber
+00:60 security company in the world with
+01:02 70,000 customers and more than $120
+01:05 billion of market value prior to
+01:08 paloalto Nikes spent a decade at Google
+01:10 as the chief business officer as the
+01:12 company Grew From three billion to about
+01:14 $65 billion in revenue nikesh is an
+01:18 extraordinary CEO with a inquisitive
+01:21 mind and a wonderful sense of what is
+01:24 happening in the world of AI thanks to
+01:26 being in the center of it with palato
+01:28 and all of their customers please join
+01:31 us for a wide ranging conversation about
+01:33 AI its impact on security and what
+01:36 excellent leadership looks like we hope
+01:38 you
+01:39 enjoy the cash thank you for joining us
+01:42 on training data so we emailed you and
+01:44 asked you if you join us on the show and
+01:46 your response was and I quote as long as
+01:48 we can talk about deep seek and the New
+01:50 World
+01:52 Order let's start there tell us more I
+01:55 Pat you know we all have our
+01:56 interpretation of AI and there's a bunch
+01:58 of us trying to figure out and
+01:59 rationalize this some sort of mental
+02:01 framework so like everybody else I've
+02:03 had my own and I think from my
+02:06 perspective what we've seen in the last
+02:08 12 months has been phenomenal and we
+02:10 have people trying to build
+02:12 effectively a brain right of some sort a
+02:16 brain with immense capacity to remember
+02:18 everything to process everything and do
+02:20 patent recognition which is kind of like
+02:22 you know my my interpretation of an nlm
+02:26 now that brain because being trained in
+02:27 data that's out there is acceptible to
+02:31 reaching the wrong conclusions depending
+02:33 on data is using to train itself so this
+02:35 is not a secret and we hear of that in
+02:37 various contexts of hallucination or not
+02:39 having the right answer because I've
+02:40 never seen it before and that's fine you
+02:42 can call it the early brain but at some
+02:44 point in time these things are going to
+02:46 become very smart f as smart as upad
+02:49 then it would take several more years to
+02:50 hit Sonia stage exactly right so at that
+02:54 point in time I think we all have to
+02:56 start getting a little worried so the
+02:58 question is how much money does it take
+02:59 to build this this brain one and two how
+03:02 can all of us use it effectively I think
+03:05 we can all use it effectively today in
+03:06 certain use cases we've seen out there
+03:08 whether it's you know creative use cases
+03:09 or search use cases or you know data
+03:12 aggregation use cases or data
+03:14 regurgitation use cases at some point in
+03:16 time you're got to take this brain and
+03:18 give your arms and legs and let it do
+03:20 stuff that's where things start getting
+03:23 dangerous and we've seen examples where
+03:25 people gave these brains the right to do
+03:27 stuff too soon too early where they
+03:29 started giving free cars or you know
+03:31 refunding airline tickets which is not a
+03:33 good idea because that is their version
+03:35 of hallucinating and giving stuff away
+03:37 but you know on the other hand uh people
+03:40 are sitting in cars where these brains
+03:42 have arms and legs are driving us around
+03:44 with drivers so there are examples where
+03:46 there are Precision use cases which are
+03:48 narrow and Tas specific where we are
+03:50 letting these things get access to it so
+03:52 I'm sorry for a long Preamble but the
+03:54 whole notion of the new world order was
+03:57 you know and I won't I don't have an
+03:59 opinion on whether cost $6 million or
+04:01 more my opinion is that if somebody
+04:03 built a brain cheaply and made it
+04:04 available cheaply it just expands the
+04:08 opportunity for a lot of these startups
+04:09 a lot of people to try and deploy that
+04:11 brain to do various tasks and that to me
+04:13 is is a major shift in what has been
+04:16 sort of the main state of this industry
+04:17 where we all T we need to spend a lot of
+04:19 money to build amazing models and looks
+04:21 like there could be task specific models
+04:23 which could be built a lot cheaper and
+04:25 you mentioned some of the hallucinations
+04:27 and the attempts to jailbreak these
+04:28 models or prompt inject these models
+04:31 there's a report that came out a few
+04:32 days ago about deep seek R1 that said 50
+04:35 out of 50 prompt injections worked so
+04:37 basically 100% success rate on attacking
+04:40 the model is that a deep seek thing is
+04:43 that an open source thing do you have a
+04:45 perspective on what the implications of
+04:47 that might be maybe it's not as simple
+04:49 as six million bucks get you the same
+04:50 thing you get out of open AI well the
+04:52 question is which one do you want right
+04:55 and like at this at the end of the day
+04:58 every model is putting a bunch of guard
+05:00 rails around it these models are all raw
+05:02 if they're in the Raw they have they're
+05:05 in the Raw they've you remember the
+05:06 early versions of CH gbd and Gemini I
+05:09 think it was even called vertex what it
+05:11 called that it was called something else
+05:13 before Gemini and those things had the
+05:15 opportunity for us to prompt inject as
+05:16 well so they were versions of these
+05:18 models which had to have guard rails bu
+05:21 built around them and those things
+05:22 that's what it cost money to do is build
+05:24 guardrails and the guard rails initially
+05:26 were skin deep as you know we've heard
+05:28 of these phenomenal stories in the early
+05:29 days where were able to jailbreak them
+05:31 and get around them and get models to
+05:33 start doing crazy stuff so I think we
+05:35 will see more and more guard rails more
+05:37 and more simpler attempts being blocked
+05:40 I think there are still sophisticated
+05:42 things that can be done to these models
+05:43 even the more in your mind more
+05:46 expensive models have loopholes or have
+05:49 side doors which can be used to attack
+05:51 them to some degree have we've seen that
+05:52 happen in the past so yes perhaps deep
+05:55 seek is not as guard rail as it is and
+05:57 perhaps it was built cheaply but in the
+05:60 the end of the day whichever model it is
+06:02 when you deploy it for a Precision use
+06:04 case and give it arms and legs it
+06:05 doesn't matter what guard rails the
+06:07 model comes it you will have to
+06:08 superimpose better guard rails and
+06:10 controls around it this is where People
+06:12 Like Us come in where we say it doesn't
+06:13 matter what you got I'm still going to
+06:15 put a all to firewall and put a straight
+06:17 jacket around this and make it only to
+06:19 spond to task specific stuff I.E if the
+06:21 model is designed to improve your
+06:23 manufacturing process you can talk to it
+06:25 about you know rewriting Shakespeare
+06:27 let's talk about that for a minute
+06:28 what's in scope and what's out of scope
+06:30 for palala networks as it relates to
+06:33 securing AI well from our perspective
+06:36 look we're seeing two interesting use
+06:40 cases one we're seeing a lot of people
+06:42 who are employees who are kids who are
+06:44 users using AI in some way shape or form
+06:47 to augment their day job and you can
+06:49 call it augment for now and maybe it'll
+06:51 it'll creep up and do more more of your
+06:53 day job but it's being used as human
+06:55 augmentation for now right because we're
+06:56 not getting it control I'm not telling
+06:58 an AI agent go write me a paper for my
+07:01 class or I'm not telling any other agent
+07:02 to write me a Blog and possibly one of
+07:04 these days they will for now it's being
+07:06 us for human augmentation and the
+07:08 general fear in the Enterprises my
+07:10 employees are taking to a PRI data and
+07:11 putting it sub model and it'll be used
+07:13 for training and over time you know
+07:15 it'll get either out of copyright or get
+07:18 stolen or it'll be become part of
+07:20 general knowledge based netor PRI data
+07:22 so we have a use case where we can
+07:24 intercept data which has been used by
+07:26 employees or models or AI that's been
+07:28 used by employees and provide visibility
+07:31 to Enterprises and provide control so
+07:32 they can stop employees from going in
+07:34 using AI models or AI apps uh with
+07:37 without any controls that's kind of one
+07:39 use case which is kind of interesting we
+07:40 see a lot of companies who want their
+07:42 employees to use AI but they want them
+07:46 to be able to do in the control fashion
+07:48 other more interesting new cases I
+07:50 haven't found a company which is not
+07:51 experimenting with some sort of AI
+07:54 project whether it's a simple as a
+07:56 customer service chat part it seems to
+07:57 be the most popular example or some sort
+07:60 of workflow automation capability which
+08:02 is another example to the extreme where
+08:04 people are using it to perhaps slowly Ed
+08:08 giving it control over certain you know
+08:10 Control Systems which may not be Mission
+08:12 critical but they're experimenting there
+08:14 in all these scenarios the biggest fear
+08:17 is the model runs them up the model
+08:20 gives the wrong answer or the model
+08:22 takes control or somebody hijacks the
+08:25 model all those are scenarios which
+08:27 customers are vary about which is kind
+08:29 of like
+08:30 understandable in that scenario we have
+08:33 a product which is effectively we you
+08:34 know formally call it the a firewall the
+08:36 a firewall which inspects anything going
+08:38 in anything going out of the model it'll
+08:40 make sure the model doesn't have back
+08:41 doors nobody can access it the data is
+08:44 not being sent out of the model
+08:45 somewhere else you can run it on Prem
+08:47 you can run it in your you know
+08:49 protected Cloud instead so those are
+08:50 kind of the two use cases we're seeing
+08:53 the behavior of the model is the
+08:55 responsibility of the people generating
+08:57 the model M our job is to make sure the
+08:60 model doesn't get hijacked doesn't get
+09:02 intercepted doesn't get taken over or
+09:05 manipulated so that you know people lose
+09:08 control off their quote unquote AI brain
+09:12 can you say a little bit more about you
+09:13 know what are the real threats from AI
+09:15 versus the perceived or the hypothetical
+09:17 risks like I remember back when when
+09:19 self-driving cars were still you know a
+09:20 little bit of a pipe dream and everyone
+09:22 was saying we're going to have these
+09:23 adver serial you know images QR codes in
+09:26 the rows that are going to make the cars
+09:27 you know become weapons and you know
+09:30 things are going to go crazy and that
+09:31 ends up being like very academic
+09:32 theoretical risk it feels like there's
+09:34 some of that happening in LM lands like
+09:36 what what are what do you think are the
+09:38 madeup academic risks and what are the
+09:40 very real risks you think um are G to
+09:43 you know where AI is actually going to
+09:44 really help the bad guys and we have to
+09:45 protect ourselves well look there is the
+09:48 these two scenarios right a scenario
+09:50 where the bad guys are just going to use
+09:52 the llm to attack us
+09:53 faster right because are you seeing that
+09:56 happen already it is already happening
+09:58 there's a critical security incident or
+10:00 vulnerability in a product you can go to
+10:02 certain jailbreak models or open source
+10:05 models out there which will give you a
+10:06 recommendation on how to exploit the
+10:08 CV because 3,000 models of huging face
+10:11 so you can pick a model which hasn't
+10:12 been given guardrails or given any
+10:14 morals effectively in the context of a
+10:16 brain and saying hey here's a cve what
+10:18 are the five steps you take to protect
+10:20 it and you know what are the five steps
+10:22 that bad guys could use to attack it so
+10:24 he says oh by the way watch out for
+10:25 these five things bad guys could do so
+10:27 there are models out there that can
+10:29 actually give you a recipe to figure out
+10:31 how to exploit a CV or you can actually
+10:33 tell it I try to attack a customer with
+10:36 option A I tried option b none of them
+10:38 work because it give this return
+10:40 response and it says hey how about you
+10:41 try option C so there's a whole bunch of
+10:43 ways that these models can be used very
+10:45 they're very helpful right now right so
+10:48 they're going to try and solve your
+10:49 problem and there's a risk that actually
+10:51 not just a risk it's actually true right
+10:52 now and what that does it reduces your
+10:56 your meantime to attack an Exel trade
+10:59 data or meantime to breach which means
+11:01 the only way to solve that problem is to
+11:03 be as Nimble as effective and as quick
+11:06 as the bad guys are which sort of like
+11:08 you know it's a it's a as I always say
+11:10 it's kind of a disbalanced problem they
+11:12 have to be right once we have to be
+11:13 right 100% of the time which means they
+11:15 might need this sliver of data to attack
+11:17 you we need the entire Corpus of
+11:19 Enterprise logs and Enterprise data from
+11:21 every it system to be able to understand
+11:23 where there be there may be an almost
+11:24 almost activity which is being driven by
+11:26 AI so that mean right now ai is at the
+11:28 margin more helpful for the bad guys
+11:30 than it is for the good guys well it
+11:32 depends can we can always sell our book
+11:34 and tell you if you're deployed or xim
+11:36 product we can be as equally effective
+11:37 and equally helpful and Tau the bad guys
+11:39 but yes you know they're not fully
+11:41 deployed not everybody has it so yes
+11:43 there's a possibility that it just has
+11:45 made the ability to attack much faster
+11:47 for the bad guys right and that's kind
+11:51 of a real threat it's not a perceived
+11:52 threat and I think if you if you play
+11:54 the movie forward and say let's abstract
+11:56 ourselves from this today and this is
+11:57 version one or version two of AI you
+11:59 know in five years from now everything
+12:01 will be happening in a real-time basis
+12:03 everything every bad actor or bad llm
+12:05 agent would be able to attack an
+12:07 Enterprise infrastructure which not
+12:08 fully secured and there'll be agents
+12:10 running around your infrastructure
+12:11 trying to make sure that every loophole
+12:13 every door every window is locked and
+12:15 constantly monitored so you can imagine
+12:17 the battle of the agents on either side
+12:19 uh I don't think it's infeasible it's
+12:22 possible but to get there there's going
+12:24 to be serious upheaval required of the
+12:26 Enterprise data that exists in the
+12:28 company which by the way is not unlike
+12:31 the fact that to get effective AI for
+12:33 organizations we're going to have to
+12:35 have a lot of good data to automate or
+12:37 manage or you know run businesses so I
+12:40 think that's kind of where we're going
+12:41 to end up in terms of the other part
+12:44 Sonia you asked about the proceed versus
+12:46 real threat look the think about it this
+12:49 way you know let's assume and we all I
+12:52 think I don't know I haven't heard you
+12:53 guys talk about this but I'm guessing
+12:54 you agree that at some point in time
+12:56 these models get smarter and smarter and
+12:57 they'll be more and more capable so
+12:59 let's assume that's going to happen they
+13:01 get very capable this person is
+13:02 equivalent of a PhD researcher from PI
+13:05 your favorite University and can do drug
+13:07 disc Discovery now you've trained it you
+13:09 given all the data that exist in
+13:10 Enterprise it's all proprietary it's all
+13:12 the drug data for Alzheimer's
+13:14 Parkinson's you pick your favorite you
+13:15 know research project that you want to
+13:17 do and you ask the model or this brain
+13:21 to give you an antidote to V medication
+13:23 could be amazing for society and the
+13:25 question is in the wrong hands this
+13:27 trained brain could also be be asked to
+13:30 make a
+13:31 virus to create that situation right
+13:34 create a bioweapon it's possible this
+13:36 this brain has no guardrails you've
+13:38 trained all the data it has all the
+13:39 knowledge that you need to have then the
+13:41 question is can I make sure that this
+13:43 brain cannot be taken over by the wrong
+13:46 people that it falls in bad hands so
+13:49 just for fun if you were supreme ruler
+13:51 of the universe and you had a magic want
+13:55 yes and you could determine exactly what
+13:58 regulation was going to apply of this
+13:60 hypothetical what sort of Regulation
+14:02 would you craft you know pad this is an
+14:04 interesting debate and you I had a
+14:06 debate about this with a very very smart
+14:10 uh person who's involved in some of
+14:13 regulatory aspects of this look at the
+14:15 end of this there will be two versions I
+14:18 think one version is critical systems
+14:21 where be before giving AI Control of
+14:24 critical systems you'll have to go
+14:26 through a serious certification
+14:27 Discovery process with some of the US
+14:30 government right you cannot give the
+14:33 control systems to AI for shipping
+14:35 routes and running cargo containers
+14:37 which can crack and burn or controls the
+14:40 entire electrical grid of the United
+14:41 States he can't give it to any other
+14:43 model because you need to have controls
+14:45 in place and need to be able to have a
+14:47 you know conversation around what the
+14:48 fallbacks are and what the control so I
+14:50 think there will be a set of classified
+14:52 activities which will need some degree
+14:54 of consultation some degree of
+14:55 certification validation it's kind of
+14:57 like you know FDA does drug approval so
+14:59 there'll be some version of you know AI
+15:02 approval which can have critical
+15:03 irreversible impact if you give control
+15:05 to Ai and that'll have to be some sort
+15:06 of certification mechanism and I think
+15:09 where it is not as fatal where it's not
+15:13 as critical perhaps you'll have some
+15:15 degree of self- responsibility you know
+15:18 you make a bad car people have a problem
+15:20 with it you're
+15:22 responsible not every car goes through
+15:24 inspection process but there is a
+15:26 tremendous amount of accountability to
+15:28 the car companies that is don't have
+15:29 seat belts that don't comply with
+15:30 regulations that they're responsible for
+15:32 the bad outcomes which this way if you
+15:34 deploy AI in a bad way in your company
+15:36 and give it arms the legs in Patrol then
+15:38 you're responsible there'll be some
+15:40 degree of because it is impossible for
+15:41 any reg authority to create an
+15:43 inspection system of this amount of
+15:46 computer data which can get it right
+15:48 every time so there will have to be
+15:49 self- policing and self accountability
+15:51 in there just to way it exist in today
+15:54 in many Industries NES do you think AI
+15:56 Labs get nationalized uh in this you
+15:59 know your version of supreme ruler of
+16:01 the universe yeah Labs get
+16:04 nationalized I don't think so I think
+16:06 the problem is if you know given that
+16:10 we're living hypothetical if there is it
+16:12 is true that a new model can be produced
+16:14 at a lot lower cost right which is in
+16:17 the single digit millions or tens of
+16:20 millions and the AI lab could be
+16:23 anywhere it would be impossible to find
+16:26 discover and you know control so what's
+16:30 stopping somebody from and and part of
+16:32 like these challing these regular
+16:34 concepts are very dangerous on a global
+16:36 basis today which we live in effectively
+16:38 a world with no borders even though I
+16:39 know that we have whole different
+16:40 conversation around borders but
+16:42 conceptually what's stopping somebody
+16:44 from deploying 50 million dollar in a
+16:46 server cluster in a country which has
+16:49 lack regulation Vis this stuff and me
+16:52 building it there or somebody building
+16:53 it there so I don't think that the idea
+16:55 that yes of course if it's a $500
+16:57 billion a cluster that needs is needed
+17:00 to build the world's superb brain and
+17:02 AGI yeah you can find a way of you know
+17:05 maintaining some degree of uh oversight
+17:08 perhaps on it but if the answer is this
+17:11 20 million bucks and I can build a
+17:12 world-class model which is really smart
+17:15 then I think all bets are all let's say
+17:17 I am not necessarily A ciso maybe a CEO
+17:20 let's say I'm a corporate executive of
+17:22 some sort and I see the potential for AI
+17:25 so I'm excited about trying to use AI
+17:27 but I'm very scared I'm very scared
+17:29 because I think that when my people use
+17:30 AI they're just increasing the attack
+17:32 surface and making us more vulnerable
+17:34 and I'm also scared because I think
+17:36 there are bad guys out there who are
+17:37 going to weaponize AI against us and
+17:39 sneak in in ways that they might not
+17:40 have been able to sneak in before what
+17:43 what would your advice be you know top
+17:44 three things that you would advise this
+17:46 person to do what what can people do to
+17:49 get the benefits of AI without exposing
+17:51 themselves to unnecessary risk I I know
+17:54 I think that that would be uh ill
+17:56 informed fear in my mind okay I think uh
+18:01 they're perfectly fine use cases which
+18:03 I'm sure you can inate and Sonia can and
+18:05 and a lot of people can where you can
+18:08 run a model in a constraint on Prem or
+18:12 dedicated Cloud cluster which cannot be
+18:14 intercepted cannot be manipulated in the
+18:17 end that model is only useful if you put
+18:19 your own data into it and if all you do
+18:21 is have the model generate responses
+18:24 which you're not letting it give it any
+18:25 control you can run experiments you can
+18:27 look at what the model produces and
+18:28 compare that to other things you can do
+18:30 AB testing and say wow the model says
+18:32 this and my best researcher says this
+18:34 and you can run experiments understand
+18:36 the power of AI without giving her any
+18:37 control so I think that's why the fear
+18:39 is a bit mislay because it's not doing
+18:41 anything it's just trying to give you
+18:43 the outcome and you can see if it's
+18:45 faster
+18:46 better and both are possible or one is
+18:48 possible Right some things happen faster
+18:49 some things happen even better so I
+18:51 think running AB testing being able to
+18:53 tested is easily possible in today's
+18:54 world without having any fear I think
+18:57 it's even possible for letting employees
+18:58 experiment with it in a way that it is
+19:01 not manageable I think where it starts
+19:03 to get more interesting not dangerous
+19:07 perhaps is when you start letting AI act
+19:09 on your behalf right in whichever
+19:11 capacity and that's where I think any
+19:14 any person not just CEOs anybody would
+19:16 have to go through a rigorous amount of
+19:17 testing to see how it reacts in various
+19:19 circumstances because depending what
+19:21 you're giving control to it could have a
+19:23 significant impact to whatever product
+19:24 service business that you're running
+19:26 that's where I think it becomes more
+19:27 interesting but I think for now running
+19:29 experiments running models which are
+19:30 cannot be hijacked or manipulated models
+19:32 that won run a mock it's all possible
+19:34 today I think you know it would be
+19:39 irresponsible for companies to not
+19:43 experiment well put because I don't
+19:46 think that this thing's going away yeah
+19:49 you may not know exactly how to get to
+19:50 the future but you know if you do
+19:52 nothing you're going to get left behind
+19:54 I learned about Chad GPT on a flight to
+19:56 India I was going there to go speak at
+19:58 my alum matter and I read about this
+20:00 thing I was sitting at Dubai airport not
+20:02 doing anything with two hours I kept
+20:03 playing with it and I rote my entire
+20:05 speech I went and said you're about to
+20:08 witness the biggest technological
+20:09 Revolution now I just say it before
+20:11 Jensen H this is the iPhone moment but
+20:13 more important he's got a bigger mouth
+20:14 and he's a supreme commander of AI so
+20:17 we'll let him we'll attribute that quote
+20:19 to him but that's okay and I felt it was
+20:22 a seminal moment and I came back and I
+20:24 said you know what first things first I
+20:26 have no idea about this thing so I
+20:27 called a bunch of my team like what do
+20:28 you guys know what we mean a nothing all
+20:30 like you know bunch of the important
+20:32 uninformed but we were important so we
+20:34 were but we had an opinion so the first
+20:36 thing I did is I put them all into a
+20:38 like a training room I invited everyone
+20:41 from Thomas gan's team to you know Nat
+20:44 Garmin now his team or bunch of start
+20:46 like just brain dump on us and we did
+20:49 that for two days a month we get people
+20:52 to brain dump we had a bunch of our
+20:53 people go come with ideas we had 70
+20:55 ideas people w't execute cut them down
+20:57 to seven we started playing with with it
+20:59 h I ran everything every possible
+21:02 problem that you could run with vertx AI
+21:04 or with the first model of Chad gbt or
+21:06 the first model of claw we tried
+21:08 everything we ran everything through we
+21:11 had models running with AI we had models
+21:12 running with semantic search we were
+21:14 training with all kinds of data we
+21:17 learned we learned what is useful we
+21:19 learned what is not useful now it's
+21:20 doing some things by itself which we had
+21:22 to go Jerry rig but you know we are
+21:25 partially informed which is better than
+21:26 being totally ignorant what was the
+21:28 biggest surprise from those learnings
+21:30 the biggest surprise
+21:32 well you know the early version of this
+21:35 thing was pattern recognition was Data
+21:38 summarization was I'll call it infinite
+21:40 memory right once you train it with some
+21:42 data it's never going to forget it now
+21:44 there are use cases where I have 50
+21:46 people solving the same problem and
+21:47 depending on who answers your phone
+21:48 they're going to solve it differently in
+21:50 this case I improved the general level
+21:53 of awareness and knowledge for my entire
+21:54 team playing get it to tell you the
+21:56 answer and then work from there so it
+21:58 did set lift the average intelligence of
+22:00 the average average capability of the
+22:02 teams and I think as it gets better and
+22:04 better it's going to shorten the time to
+22:06 answers and I mean at the end I want to
+22:08 expose allot of this stuff to our
+22:09 customers right so they can go solve
+22:11 this problem so my problem is if you
+22:13 don't start learning when every startup
+22:15 is
+22:16 learning eventually the startups do your
+22:19 business right you've seen that n
+22:21 technological Revolution that we've run
+22:22 into whether it's a cloud Mobility the
+22:24 internet we saw it every time and every
+22:27 time there was these large
+22:29 now we can call them Legacy but large
+22:31 businesses with dominant market share
+22:33 with every asset at their behest which
+22:35 they could have deployed and nobody
+22:37 should have seen the lighter day who was
+22:39 competing with them with the new
+22:39 technology but for some bizarre reason
+22:42 every time you turned around there was a
+22:43 Travis there was a you know Chad Hurley
+22:47 at YouTube and there was a Larry Page
+22:49 and there was Mark Zuckerberg and there
+22:51 was an y on us so the challenge is that
+22:53 if we don't go Embrace this as early as
+22:55 we can and learn while everybody else is
+22:57 learning we run the risk that we're late
+22:59 and then we
+23:00 goe law of unintended consequences maybe
+23:03 on that note one thing I'd love to
+23:05 understand is it seems like the biggest
+23:07 platform companies in security are kind
+23:09 of formed around these platform shifts
+23:11 like you know the firewall identity as a
+23:13 perimeter you know maybe the cloud uh
+23:16 and and cspm like do you think AI is a
+23:19 new platform shift opportunity from a
+23:21 security point of view and and do you
+23:23 think a new security platform company
+23:25 which could be you guys emerges or is
+23:27 this very much you know uh is similar
+23:30 kind of set of of uh tools is going to
+23:33 is going to serve the AI first world I
+23:36 think AI has the opportunity to turn
+23:41 Security on its
+23:43 head and the reason I say that is that
+23:46 the security is a needle and haast stack
+23:48 problem right because you don't worry
+23:51 about it until you have to worry about
+23:53 it so you to suddenly wake up and get
+23:55 really really smart very very quickly
+23:56 because Something's Happened in your
+23:57 infrastructure
+23:59 and it's just impossible to go from 0
+24:01 to, like overnight because somebody
+24:03 calls holy there's somebody in our
+24:04 infrastructure they've exfiltrated sunm
+24:07 or they in the midst of exfiltrating
+24:09 data and traditional security has been
+24:12 I'd say
+24:15 95% at the border or on prevention and
+24:20 5% on detection and
+24:22 immediation right you buy a firewall it
+24:25 inspects everything that's coming in you
+24:26 block a bunch of stuff you buy some sort
+24:28 of you know remote access endpoint agent
+24:30 you buy an endpoint xdr capability and
+24:32 that all works because there's a lot of
+24:33 prevention that happens in that process
+24:36 but the problem in in breaches is it's
+24:38 not what you prevent it's what you let
+24:41 in and there's things like zero day
+24:43 attacks which have never been seen
+24:44 before so you haven't seen it very often
+24:45 you can't prevent it and the only way
+24:46 you figure out all that stuff is you
+24:48 ingest a lot of data you look at it and
+24:50 look for anomalous Behavior right you
+24:52 can't rely on security signature so if
+24:54 you're going to look at anomalous
+24:55 Behavior you need to be able to inest
+24:57 all day you got to look at pattern
+24:58 recognition say does this happen like
+24:59 this every time and say well I don't
+25:01 know but looks like something's
+25:02 different happening so I think this
+25:05 whole notion of doing pattern
+25:08 recognition ingesting a lot of data
+25:09 analyzing it on the Fly and looking for
+25:12 things is easily possible with col it
+25:15 machine learning call it Ai call it
+25:16 whatever you want to call it but I think
+25:18 that's the only way we can do this at
+25:20 realtime speed what about what it means
+25:23 to be a security team a ceso a security
+25:26 practitioner in this new world um and
+25:28 you know we we get 20 pitches a week
+25:30 right now for like the AI powered sock
+25:31 analyst or the AI sock uh what what is
+25:35 your vision for you know what you have
+25:36 one so you send them our way say you
+25:38 know
+25:39 try let's you on how that evolves and
+25:42 what the end state is uh for for kind of
+25:44 humans and security like in
+25:47 security uh at a very first principal
+25:50 level we sell two things we sell a
+25:52 sensor with Senses at the edge of your
+25:55 perimeter whatever the perimeter is
+25:56 whether it's your laptop whether it's
+25:58 your application is a customer accessing
+26:00 your bank account that's the parameter
+26:02 right the parameter is the edge of your
+26:03 techn technological footprint that's the
+26:06 parameter so we all sell sensors that
+26:07 sit at the parameter and inspect it's
+26:09 like having like a digital security card
+26:12 at the parameter we all sell parameters
+26:14 and we protected parameters we inspected
+26:16 parameters we blocked parameters right
+26:18 and then we and then what happens that
+26:20 somebody WR in the bad app somebody in
+26:22 the back door somebody's in the side
+26:23 door by mistake then people enter
+26:25 through there so we that's we sell
+26:27 sensors we we protect parameters and
+26:29 then we analyze data in the back end to
+26:31 look for any vulnerability that you
+26:32 might have been created by the
+26:34 infrastructure that you have that
+26:35 vulnerability could be exploitable in
+26:37 the future so we look for potential
+26:39 exploits and that's that's going I do
+26:41 which means and the reason I tell you
+26:42 story is that which
+26:43 means if I want to sell and AI powered
+26:47 anything I need to be at points of data
+26:49 collection in your
+26:51 Enterprise because AI requires data so
+26:55 again this is the old adage right I am
+26:57 in the best place to collect all this
+26:59 data and analyze it and of course that
+27:00 doesn't mean anything because in history
+27:03 people who are in the best place got
+27:04 knocked off their knees and somebody
+27:05 else came and built something better
+27:07 because they were lazy sitting on their
+27:08 hunches now the only thing is we don't
+27:10 want to be lazy we don't want to sit on
+27:11 our hunches we're out there hustling as
+27:13 fast as we can not as Nimble as possibly
+27:16 in you know a startup but we're Nimble
+27:18 enough as a company we've done 27
+27:20 products which are in the magic coordin
+27:22 to the right so we're not shy but I
+27:25 think every security company every
+27:27 security startup is going to walk to
+27:28 every customer say I can build this for
+27:29 you the customer great how do we start
+27:30 says well let me go deploy a bunch of
+27:32 sensors around the parameter so I can
+27:33 collect the data holy I already got
+27:35 a bunch of you guys in the industry you
+27:37 got sensors out there then what do you
+27:38 want me to do then give me all your data
+27:40 I'm like wait a minute you want all my
+27:42 data who are you
+27:43 again so I think that's kind of that's
+27:46 kind of the risk you run into is this is
+27:48 a large data problem and large data
+27:51 problems are harder to solve as a
+27:53 startup not to say it's not being done
+27:55 there are people out there raising $500
+27:56 milon but not everybody can do that in
+27:58 security fair enough do you think
+28:01 security teams are comfortable giving uh
+28:04 arms and legs I think so to speak uh
+28:06 like agentic oh no I think they're
+28:08 petrified do you think that flips at
+28:10 some point and and when well I think
+28:13 most of security TS aren asked right I
+28:15 mean way mode wouldn't exist if they out
+28:17 the security
+28:18 guy or Tesla F ASD possible would not
+28:22 exist some security guys are you crazy
+28:24 you're giving the car control to your
+28:26 car all kinds of bad things can happen
+28:27 right yeah so from a security
+28:29 perspective these all bad things happen
+28:31 look and in Security leaders are for the
+28:35 most part Risk Managers right they're
+28:37 they're Risk Managers they're trying to
+28:39 understand what the business need is and
+28:40 how do I deliver the business need with
+28:42 the least amount of risk possible Right
+28:45 the safest room in the world is one with
+28:46 no windows and no doors but it's not
+28:47 very useful so you got to let doors and
+28:50 windows be created which means you're
+28:51 managing risk so security people are
+28:54 Risk Managers they sit down with the
+28:55 business understand what potential risk
+28:57 does it cause they'll give you some
+28:58 ideas as to how to make sure that you
+29:00 protect against that risk and they'll
+29:01 set up a whole bunch of safeguards let
+29:03 say you know you know gate one gate two
+29:06 gate three if it doesn't stop gets
+29:07 stopped here get stopped here get
+29:08 stopped here and then off the races so I
+29:11 think security people will allow the
+29:13 arms and legs have to because that's
+29:14 kind of the crying need of the hour I
+29:16 think the question will be what kind of
+29:18 security tools do we have in place to
+29:20 create those protections that customers
+29:22 can comfortably go ahead and use these
+29:24 capabilities but that's been true with
+29:26 every technology our uh our part Jim
+29:29 gets and for any listener who's not
+29:30 familiar with Jim Jim has been involved
+29:32 with Palo since formation uh and and Jim
+29:36 Jim has a creative mind one of the uh
+29:38 one of the things that Jim mentioned was
+29:40 after you came in about seven years ago
+29:41 as CEO The Innovation engine and
+29:44 paloalto really started to pick up and I
+29:45 think we see that today also with how
+29:47 quickly you guys have pounced on AI I
+29:50 guess the question maybe two questions
+29:52 question
+29:53 one if you had to R yourself if you had
+29:56 to reap paloo on a ility nimbleness
+29:59 ability to respond to market conditions
+30:02 I know you're a tough grader so you
+30:03 can't give yourself an A+ how would you
+30:05 grade yourself and then question number
+30:07 two you do have all the advantages of
+30:09 scale and data and distribution and
+30:11 being at those points where you need to
+30:13 collect the information to do whatever
+30:15 detection remediation you need to do um
+30:18 but it's hard to get a big organization
+30:19 to move fast enough to respond to the
+30:21 market so question one how would you gr
+30:22 yourself question to how do you drive
+30:26 agility at this scale like just
+30:27 practically speaking what do you do to
+30:29 make that happen you know uh let's go
+30:33 first step first I'd give us a seven or
+30:36 seven and a half on scale of 10 in terms
+30:39 of agility because uh we have about
+30:42 15,000
+30:43 people um 5 6,000 people in our product
+30:47 s so there's a lot of stuff a lot of
+30:49 complexity a lot of Legacy stuff that
+30:51 has to be brought along a lot of stuff
+30:53 that has to be and died to make
+30:54 sure that these things works and you
+30:55 know I think part of the challenge you
+30:57 know is that you have a s base of 70,000
+30:60 customers right any tweak you make which
+31:02 impacts 70,000 customers brings their
+31:03 infrastructure down you lose your
+31:04 license to
+31:06 operate right so it's not like we can
+31:09 innovate throw at the wall and see
+31:10 what sticks and go with that and ignore
+31:12 the other stuff so we have a serious
+31:14 responsibility and making sure stuff
+31:16 that we build that we put in line has to
+31:18 keep performing and not bring down
+31:19 anyone infrastructure because they the
+31:22 best secur is inline we have to be able
+31:23 to watch what's going on inline security
+31:25 has the property that if it doesn't
+31:26 behave it can impact your infrastructure
+31:28 so we have a very high responsibility
+31:30 from an availability perspective and not
+31:32 disrupting our customers that we have to
+31:34 apply a higher Precision standard as it
+31:37 relates to inline Securities from that
+31:38 perspective I think 7 a half is not a
+31:40 bad place to be see probably were three
+31:42 or four seven years ago as an industry I
+31:45 don't say p Alo as an industry with
+31:46 three or four and I say the industry's
+31:48 moved its agility if I look at some of
+31:49 the newer players they're moving faster
+31:51 they're not sitting back anymore because
+31:53 they see the playbook for the future is
+31:55 not where you let other people sort of
+31:58 come by in the new swim Lane say oh nice
+31:60 to see you you know congratulations
+32:02 great job now it's like holy how
+32:04 they get there we're going to go Chas
+32:05 them down so I think the industry
+32:06 Dynamics have changed uh in terms of how
+32:09 do you drive
+32:11 agility you as you know possibly you
+32:14 know from talking to Jim and from
+32:15 talking to us that we have
+32:19 no sort of qualms about going and
+32:22 finding people who are doing it
+32:23 amazingly well and embracing them and
+32:25 saying you got this figured out let's go
+32:27 do it together we'll run for fast right
+32:29 sometimes companies get trapped in this
+32:31 idea that I have so many resources I can
+32:32 take them down they don't understand
+32:34 there's a team of 00 motivated people
+32:36 funded by people like you are out there
+32:38 running at sort of you know light speed
+32:40 who build an amazing product which are
+32:43 going to then if they get traction then
+32:44 they your competition on every day in
+32:45 the market and they get better and
+32:47 better and stronger so the question is
+32:49 when's the right time to say oh
+32:50 let's embrace them they've got less
+32:52 resources but still manag to kick our
+32:54 ass let's go make them part of our team
+32:56 we've done that 19 times as you've seen
+32:57 so we're not not we're not shy about
+32:59 embracing Innovation if it doesn't come
+33:01 for and having said that I was looking
+33:03 at it the other day I think more than
+33:05 half of our products are made in Palo
+33:06 Alto right not acquired so it's not like
+33:09 you know we only have one strategy we do
+33:11 both because in some cases building on
+33:13 our platform is a lot easier from a go
+33:15 to market and deployment perspective
+33:16 than buying something and spending time
+33:18 integrating it so we've gone to the
+33:19 point of scale that it's more important
+33:21 for us to innovate on our platform then
+33:23 just go out there and willly nearly try
+33:24 and look at the fastest innovator and
+33:26 try and stick them onto our Tech
+33:27 platforms so I think from that
+33:29 perspective it's that constant balance
+33:31 what do you buy what do you build how do
+33:33 you Embrace somebody else doing it
+33:34 better and then you got to be nimble and
+33:35 say you know what I am going to get some
+33:37 stuff wrong the question is when you get
+33:38 punched in the face how quickly you
+33:40 recover right don't let them count to 10
+33:43 so that's kind of like how you maintain
+33:45 agility and then and the only other
+33:48 thing is I call it Relentless inspection
+33:51 Relentless inspection of your go to
+33:53 market capabilities of your deals Rel
+33:56 what form does that take like what's the
+33:57 sort of thing you might do in one of
+33:58 those Relentless inspection
+33:60 conversations that somebody else might
+34:01 not do well I give an example you know
+34:04 um for the longest times I kept seeing
+34:07 us doing really well in certain things
+34:09 and our teams would create all these
+34:10 incentive programs to drive more
+34:11 Behavior to get people to sell and I
+34:14 have my sales leaders tell me that
+34:16 everybody has an account plan I said
+34:18 these things look like very interesting
+34:19 things I should take a look at so one
+34:22 fine day this is possibly an year and a
+34:24 half ago we having a tough quarter I
+34:26 said great here's what we're going to do
+34:28 we're going start from customer number
+34:30 one and keep
+34:31 going they show me your account plan so
+34:34 what does that mean send them five
+34:36 slight say fill those five slides and
+34:37 show up on a zoom call have to show up
+34:39 and explain those account PLS to
+34:40 me and I'll fast forward I probably been
+34:44 to 750 of them so far in the company I
+34:48 did about 15 yesterday and it's it's
+34:51 like Tater now there are 500 people
+34:52 dialed in from across the company wow
+34:55 they all get to
+34:56 watch you salesperson can dial and watch
+34:60 an account review and process because
+35:01 for me it's it's it's basically them
+35:03 learning how to do it and we go through
+35:05 it and say who's the person who's the
+35:06 buyer does they understand the product
+35:08 what did you pitch how do you sell it
+35:10 did you sell it did you talk about this
+35:11 did you not talk about this why you talk
+35:13 about this and by the way the best thing
+35:14 for our teams is if you feel that this
+35:18 is doesn't look as robust as we'd like
+35:20 it to me you know B Jenkins our
+35:23 president many of our product leaders
+35:24 people get involved we're not there to
+35:26 we're not just rly inspecting we're
+35:28 actually
+35:29 assisting and like you'll be surprised
+35:31 if people spit up their laptops are open
+35:33 like people are pinging people LinkedIn
+35:34 texting people saying hey do you know
+35:36 this person this company I don't think
+35:37 our plan is robust enough we don't know
+35:39 the right people let's go so that's kind
+35:42 of like
+35:44 Grassroots I I I have a I have a little
+35:48 um whiteboard in my office where I write
+35:51 down things which I want my team to
+35:52 remember and the second thing written on
+35:53 it it says sales is a math
+35:56 problem true so which people people find
+36:00 hard to understand like look if you have
+36:02 the best product in the market and you
+36:03 now are able to win and generate
+36:06 billions of dollars of tcv a
+36:08 year then the question is why are you
+36:11 losing it's not the product because
+36:13 there are people buying the product is
+36:15 working it's not that nobody's will to
+36:17 buy it it's not that lots of people are
+36:19 will to buy it what happened in that
+36:21 process where you were selling that you
+36:24 didn't win somebody else did let's go
+36:26 inspect it yeah
+36:28 and sometimes you'll find some product
+36:30 things that you need to fix many times
+36:31 you'll just find execution errors let's
+36:34 keep going on this thread of driving
+36:35 performance set of people because one of
+36:37 the other things that Jim said was that
+36:38 you have sort of an exceptional ability
+36:41 to recruit and retain really exceptional
+36:43 people and that you you sort of Drive
+36:46 followership in a way that's unique like
+36:48 you're pretty hard on people and you
+36:49 demand a lot from them yeah I went to I
+36:51 went to speak yesterday uh for for a
+36:54 person who I worked with at Google her
+36:56 name is Lexi Reese and she actually ran
+36:58 for Sen and she has a startup now and
+36:60 she introduced me by saying I didn't
+37:02 quite enjoy my time when I was to work
+37:03 for you but I'm a better birth I learned
+37:05 a lot so I'm like well I'll take it
+37:07 whichever you give it to me but anyway
+37:08 sorry well and Jim said you balance that
+37:10 with a very nice human approach where
+37:12 people know that you care about them and
+37:14 you'll go to Bath for them you know in
+37:15 the right situation so I'm just curious
+37:17 what you've now been an executive in a
+37:19 variety of contexts and you've been
+37:21 successful every time um you know Google
+37:23 is a consumer business Palo Alto is an
+37:25 Enterprise business you know you kind of
+37:27 grow up around around marketing and
+37:28 sales you become more of a product
+37:30 person and so you've got this
+37:32 Diversified set of
+37:34 experiences um from that I'm an
+37:36 Enterprise person you're a full-fledged
+37:38 Enterprise person now sure I guess what
+37:41 leadership principles or what leadership
+37:43 techniques are sort of context
+37:46 independent that worked at each step in
+37:48 your journey and are there other things
+37:51 that are kind of pal offo specific but
+37:52 I'm mostly curious like what are the
+37:54 sort of core principles of your approach
+37:57 to Leading people
+37:58 not a lot of pal specific right because
+38:00 at the end of the day my senior
+38:03 executives are not writing product
+38:05 documents right they're analyzing
+38:07 strategy analyzing go to market they're
+38:09 understanding now of course do I have
+38:10 experts s security of course we could
+38:12 survive without that you know so here
+38:14 zook our founder Le CL told you product
+38:16 officer some the other product leaders
+38:18 that they have they're very smart guys
+38:19 they understand what our products exist
+38:22 in this industry they act as sounding
+38:24 board sometimes I'll challenge
+38:26 them at so there's there's
+38:30 no getting this done right without the
+38:32 right domain knowledge so you have to
+38:35 have do but I think outside of that fact
+38:37 that there's domain knowledge you still
+38:38 have to have the right people like as is
+38:41 possibly understood that I don't suffer
+38:43 for it because I can fix a lot of things
+38:45 I can't fix in
+38:48 others uh and if somebody doesn't get
+38:50 it like for sure and um you have to make
+38:54 sure you surround yourself with smart
+38:56 people but you find them keep them
+38:59 because the next question becomes you
+39:00 know what is the attitude these people
+39:02 bring to the table as long as they are
+39:04 willing to learn and humble and they
+39:06 understand they're part of a team all
+39:07 systems go like I I have a principle
+39:09 that I was joke even on all hands that
+39:11 says I've never met a person who comes
+39:14 to work to screw
+39:15 up I wake up in the morning let's go
+39:17 sunshine it's time to go to work let me
+39:19 see how badly I can do
+39:21 today everybody walks in with the right
+39:23 attitude yeah right it's something that
+39:26 happens at word
+39:28 that we create that causes the
+39:29 unintended
+39:31 outcomes it's not the person who walks
+39:33 in if you found the right person with
+39:34 the right domain knowledge right
+39:35 intelligence and the right attitude then
+39:37 the rest is upon
+39:39 us and then the question is how does
+39:41 management create the environment that
+39:44 people can
+39:45 Thrive and it's not just about you know
+39:47 happy gol lucky environment like I
+39:49 always say there are three jobs that I
+39:51 we have as Leaders one is we have to
+39:52 identify the North Star people have to
+39:54 know which monum we're going to climb
+39:56 you get the best climbers to find out
+39:57 you told the which one they're all on
+39:59 eight different mountains around you
+39:60 holy what happened they're all in
+40:01 different places so my job is to make
+40:03 sure I identify the mountain I fight I
+40:05 argue I debate you know I I kol whatever
+40:07 needs to happen to make sure we have a
+40:09 plan of record where we're going but
+40:11 ample degree of input but the end
+40:13 somebody's got to make a decision then
+40:15 the next thing is is it achievable can
+40:17 we write a plan to make it happen
+40:18 because the last thing you want is
+40:19 people come say I get it you wanted to
+40:21 build this but he gave me you know one
+40:24 pickaxe and one shovel and two
+40:26 people right and he you want me me to go
+40:28 dig the Platinum mine takes a lot more
+40:30 than that so the next question is is it
+40:32 a feasible plan to get it done and are
+40:34 you resourcing it right right and very
+40:36 often companies you look at our industry
+40:38 right A lot of people had the right
+40:40 ideas when I came to B Alto it's fny I
+40:42 joke sometimes I didn't do anything
+40:43 different we had a cloud security
+40:45 acquisition we had done we had an xdr
+40:47 acquisition we had done we had the idea
+40:49 of building a Sim we just hadn't
+40:51 resourced it we hadn't written the plan
+40:53 for it he kind of knew what we wanted to
+40:55 do but he haven't sat down debated
+40:57 argued so what does the future look like
+40:58 and we hadn't we hadn't written the plan
+41:00 we hadn't resource we have mon the
+41:03 resources we need it so you you don't
+41:06 have a plan you have an idea ideas are
+41:08 not good enough you got to have a plan
+41:10 and an North Star you have to resourcing
+41:13 that you can sort of execute it a plan
+41:16 the third job as management is to keep
+41:17 communicating it and weeding out things
+41:19 that block the execution of plan
+41:22 whatever it is whether it's a the person
+41:24 is's not doing it whether it's a
+41:26 resource that's not available whether
+41:28 it's a contract that's start working you
+41:30 it's blogging and tackling and sort of
+41:31 making way for your team so they can go
+41:32 and execute behind you so if you follow
+41:35 those principles to find the right
+41:36 people around you and you know don't
+41:38 suffer fools
+41:39 and have a good time while doing it uh
+41:42 Sometimes some people do get more
+41:43 scrutiny than the others but it's good
+41:46 for their for their career and good for
+41:48 their character it's amazing let me ask
+41:50 one more question on sort of management
+41:51 leadership and then maybe we can go back
+41:53 to some AI topics so um you mentioned
+41:56 the 19 companies that you guys have
+41:58 acquired in the last six seven years
+42:00 maybe two questions on that
+42:02 one at the moment when you're pulling
+42:04 the
+42:05 trigger what goes through your mind like
+42:08 how do you when it's time to make the go
+42:09 noo decision how do you decide that an
+42:12 acquisition is is actually an
+42:13 acquisition you want to make and maybe
+42:15 second question one of the things our
+42:17 partner Jim mentioned was that pretty
+42:19 much all the founders who've joined
+42:20 forces with palet and networks have
+42:22 stuck around the majority of them so
+42:24 yeah so what do you do postacquisition
+42:26 to actually keep them around and maybe
+42:29 it's the same thing you were just
+42:30 talking about with leadership generally
+42:31 a little more that like
+42:34 um I think before we get to decide it's
+42:37 an acquisition we want to make we spend
+42:38 enough time trying to understand you
+42:39 know is it even worth engaging with the
+42:41 company for a few hours or a few days
+42:43 right um and we have some principles I
+42:47 don't like buying number two or three
+42:49 it's a lot of Founders a lot of
+42:50 companies say you know what well you
+42:51 know what the first one's a billion the
+42:53 third one's 300 million let's just take
+42:54 the third one we got enough resources
+42:56 we'll spit and shine it it's going to
+42:57 make it br knew it be worth a billion
+42:59 dollars well there's a reason to trades
+43:01 a 300 million not a billion first of all
+43:03 which means they possibly have some gaps
+43:05 which the customers have identified and
+43:06 you haven't two you didn't actually take
+43:09 out the biggest player in the market it
+43:10 still going to be four steps ahead of
+43:11 you so now all you've done is taken a
+43:13 Nimble startup is is number three and
+43:15 possibly made it slower despite all your
+43:17 love and attention to it you like say
+43:19 okay well let me like bring me along but
+43:21 so now You' suddenly slowed down number
+43:23 three you've enhanced the the
+43:25 opportunity for number one or two so you
+43:26 said then say okay and a lot of times
+43:28 you joke about it saying I wish this
+43:29 this competitor would be bought by
+43:31 somebody in competition because they
+43:32 slow down so so we make sure we're only
+43:35 look one and two at best and sometimes
+43:37 they're neck to neck sometimes they're
+43:39 chosen two different parts and we did
+43:40 that in the browser space you know we're
+43:42 very happy with the acquisition of
+43:43 talent I think string really well that
+43:45 in DPM with dig actually in our industry
+43:48 what has happened since bat and Sonia is
+43:50 that at first people looked at me say
+43:52 what the hell this guy's buying these
+43:53 companies I don't know what his plans
+43:54 are and now we actually have a slide we
+43:56 keep track of once we buy something in a
+43:57 category that category becomes
+43:60 hot so people think we know something
+44:02 we've done a good job of about that but
+44:05 like I think the principle is you got to
+44:06 make sure you're buying the right sort
+44:08 of right player in the market then you
+44:11 got to make sure that you can convince
+44:12 the founders that they believe a Better
+44:14 Together story than the go alone story
+44:16 right there's no sell and dump because
+44:18 not going to happen we're not going to
+44:19 take the asset because when you're
+44:21 buying you're basically buying a
+44:23 Northstar an execution plan and a team
+44:25 that executes but usually they're a
+44:28 third or 40% down their Journey it takes
+44:30 more than 7even years to build a great
+44:32 product usually these things are three
+44:34 years out three or four years out they
+44:35 haven't fully matured into a full
+44:37 product that's going to win in the
+44:38 market so you need them around and you
+44:40 need the team around and still once we
+44:43 figured out this is the right company
+44:45 the right attitude you know we can
+44:46 actually make it work and there are now
+44:48 given our scale there are some technical
+44:50 considerations to be have to rewrite the
+44:51 stack which takes longer is this a
+44:54 complimentary area that can just run on
+44:55 our stack easily is this something
+44:57 you've never done before in which case
+44:59 it doesn't matter with tax on so a lot
+45:00 of those considerations from an
+45:02 integration and time to Market
+45:03 perspective but let's assume all those
+45:06 hurdles have been surmounted and we're
+45:09 actually engaged to the company I have a
+45:10 rule I walk in and tell my team and I I
+45:12 I live it I say treat them on day one as
+45:16 they're part of your
+45:18 team right because if they're going to
+45:20 work with you they're going to remember
+45:21 every
+45:22 interaction and very often I find many
+45:25 companies the most well-intentioned
+45:27 companies you start treating it as
+45:28 acquirer and
+45:31 acquired you know I live I come from a
+45:34 country which used which was acquired or
+45:35 ruled and I don't like this idea there's
+45:38 no like one rules the other it's like
+45:40 you we're part of the team and the day
+45:42 this deal gets signed we all be brought
+45:44 on the same page we all be trying to
+45:45 drive the same stock price and the same
+45:46 business forward so for that six weeks
+45:49 that you're in that discussion phase how
+45:51 does it why is it important that you're
+45:54 the acquirer and you're the acquired so
+45:56 so let's assume we do that we like a
+45:58 company then I send off the Finance and
+46:00 Accounting guys and legal guys to doe
+46:02 diligence and I tell this founder and
+46:04 their team saying your job now the next
+46:05 six weeks is to build a joint product
+46:07 plan and a joint or chart at the end of
+46:10 six weeks if you don't like the product
+46:11 plan or I don't like it if you don't
+46:14 like the orc chart I don't like it
+46:16 there's no
+46:17 deal this is leared behavior the first
+46:19 two three times we didn't do that and we
+46:21 discovered we spend the next six months
+46:22 arguing about what the product should be
+46:24 and who should be the boss this doesn't
+46:26 work this is a bad idea ideas of like
+46:28 hey buddy you want the money you can
+46:29 have the money it's my house I'm going
+46:31 to paint it yellow you don't like the
+46:32 color tell me now you can get somebody
+46:35 else to painted pink no problem so that
+46:40 has an amazing cleansing
+46:42 property because you're making a
+46:44 decision with all the facts in front of
+46:45 you saying if I get part of be part of
+46:47 PA Alto this is going to be the product
+46:48 strategy it could be yours it don't
+46:50 doesn't have to be mine I'm not smart
+46:51 enough so but we have a joint product
+46:53 strategy the not store and we have a
+46:54 joint plan of execution and then
+46:58 very often Pat just goes back to Jim's
+47:00 comment most often the founders we have
+47:04 bought companies from become the senior
+47:06 vice presidents of our company running
+47:08 their business our people work for them
+47:10 which I think is unique in the market
+47:13 very often you'll find there was an
+47:15 acquirer SVP who ran crypto or
+47:18 blockchain or pick your favorite I'm
+47:19 using non-security terms to keep it you
+47:21 know protect the innocent but you say oh
+47:23 since I'm responsible for this these
+47:26 people are going to work for me I'm like
+47:27 wait a minute you had all the resources
+47:28 you lost to them we're not going to have
+47:30 them go work for you maybe you can learn
+47:32 a few things so we did that a bunch of
+47:33 times and in some cases our teams worked
+47:35 for them really well in some cases our
+47:36 teams left to just F so I think those
+47:39 are some of the things that allow us to
+47:41 make these amazing Founders can work
+47:43 here and actually drive more value for
+47:44 us collectively Nikes I want to ask you
+47:46 about some of the chess that's now
+47:48 happening on the AI stage because I
+47:50 think you've played the you've played
+47:51 the chess game so flawlessly in the
+47:53 security market and you know you have so
+47:55 clearly emerged the winner the security
+47:57 the the AI Space by contrast feels just
+47:59 white hot competitive Hunger Games right
+48:02 now I'm curious your view I think it's a
+48:04 lot clearer than that I think it's just
+48:06 it's just it's just it's just not clear
+48:08 to the naked eye but I think it's a lot
+48:10 clearer but going on say more tell more
+48:12 yeah yeah tell us more like if you think
+48:15 about the state of maturity of AI you
+48:19 know there are two extremes we'll call
+48:22 them the very precise the alpha go type
+48:26 situations which you know Demis and
+48:27 Google built together which are I'd say
+48:30 fine-tune models which are designed for
+48:32 drug Discovery or the you know the bio
+48:35 Pharma field and there you see that they
+48:37 did a really good job they focused on
+48:39 the trained right data they hopefully
+48:41 treat them Ms in such a way that that
+48:42 can actually become a useful thing for
+48:44 society so you have that which is highly
+48:46 tuned AI models very TOS specific or
+48:49 category specific and then you have the
+48:51 generic ones and the generic ones are
+48:54 you know the rage today between the
+48:56 clouds and and the M draws and the
+48:60 Geminis and the open eyes of the world
+49:01 and those are large they are all
+49:04 encompassing all knowledgeable but we
+49:06 saw this movie before right we saw this
+49:08 movie in Search and as a Google you know
+49:11 then he had Vertical Search because the
+49:13 large Google search could not do as good
+49:15 a job of local search so he had local
+49:16 search the couldn't do a good job of
+49:18 product search so he had product search
+49:19 in Amazon so how can you be amazing at
+49:24 everything in this space when you
+49:26 couldn't do it in the last few
+49:27 technological Evolution so I think over
+49:29 time we're going to have to figure out
+49:30 what the distinction between you know
+49:32 general purpose large scale I know
+49:34 everything I'm I can do everything model
+49:37 versus models that are fine-tuned for
+49:39 tasks and I don't believe that all the
+49:41 perfect information in the world exists
+49:42 in open domain that you can go out and
+49:44 build it without you know specialization
+49:47 which means you are going to need
+49:48 specialized proprietary data to build
+49:50 these models and I don't know how you
+49:51 share data between glal mline and nardis
+49:53 and fiser and say I can build the best
+49:55 drug Discovery Model in the world
+49:56 because I have perfect information right
+49:59 so that's a question that remains to be
+50:01 seen so I think over time you'll see a
+50:02 bifurcation from an Enterprise use case
+50:04 and in our business in the Enterprise
+50:05 side you need Precision I can't afford
+50:07 to be wrong you know a wrong turn by a
+50:10 Tesla is going to kill somebody a wrong
+50:13 you know block bipo Alto is going to
+50:14 bring somebody's infrastructure down or
+50:16 or a wrong permission is going to let a
+50:19 bad actor in so I don't have that
+50:21 tolerance that consumer models can have
+50:24 because they have low consequence so I
+50:26 think High consequence High consequence
+50:28 applications require a lot better Model
+50:29 A lot more training and more precise
+50:31 domain data I think that's going to
+50:33 become a sort of thing of its own I
+50:36 everything we're seeing today is general
+50:37 purpose models and eventually they'll be
+50:39 like and I don't know the answer was
+50:41 that general purpose models become task
+50:42 specific evolved models or there's a new
+50:45 category of task speciic evolved models
+50:46 which are built more in the sort of
+50:49 genre of the alphao version now on the
+50:52 on the general models I think the people
+50:55 who can deploy them against exist
+50:57 existing consumer properties are sitting
+50:59 pretty right because it creates more
+51:02 retention more continued monetization of
+51:04 space so whether Google can deploy a
+51:06 whole bunch of AI against it three plus
+51:08 billion users across multiple Properties
+51:10 or Mark Zuckerberg can do it Vis
+51:12 Facebook and C billion users across
+51:14 Instagram you know WhatsApp and and
+51:17 Facebook that's that's cool I think
+51:20 Sam's done a great job in building a
+51:22 consumer Direct business on the
+51:24 subscription side which he continues to
+51:25 drive very well and that's becomes sort
+51:27 of sort of his his Moe now because no
+51:30 other model has built a subscription
+51:32 based consumer model so I think you're
+51:33 seeing the general purpose models being
+51:36 built by existing large consumer
+51:39 properties you're seeing a new consumer
+51:41 property emerge Visa you know open AI I
+51:44 think the Enterprise use case is still
+51:47 early because we haven't seen the
+51:49 mission critical applications be
+51:51 developed because of the lack of you
+51:53 know great training data so anyway
+51:55 that's what I think but let me ask you
+51:57 one of the one of the things that's not
+51:59 on your LinkedIn profile is prior to
+52:03 prior to sof thing prior to Google prior
+52:05 to T-Mobile if I had my fact straight
+52:07 you were an award-winning equity
+52:09 research analyst covering Telecom and I
+52:12 I believe that one of your claims to
+52:13 fame was calling the internet bubble and
+52:15 the bursting of the internet bubble I
+52:17 still have that note a cell note which I
+52:19 wrote in November 99 not bad so are we
+52:22 in an AI bubble lightning doesn't strike
+52:25 twice how would I know
+52:28 uh look
+52:31 again the for the number of times I've
+52:33 heard it's different this time you know
+52:36 we could all be very rich so but there
+52:38 are some things which are different
+52:40 right if you look at where the AI
+52:41 inflation has happened the equity
+52:43 markets it's still in the plumbing and
+52:47 the plumbing is real right it's not like
+52:49 people are driving the plumbing up
+52:51 without substance because you're selling
+52:53 four times or 10 times more chips than
+52:55 you sold two years ago so they real
+52:57 revenues that underpin that now clearly
+52:60 people are projecting that into a
+53:01 trajectory which I don't understand and
+53:03 you know every day you see a new
+53:04 development you tell me is Target the
+53:07 future or is deep seek the future and I
+53:09 don't mean with all its negative
+53:11 connotations I mean as a concept are we
+53:13 going to have cheaper models being built
+53:15 for large scale application with limited
+53:18 specialization or are we going to have a
+53:21 super model in the context of AI uh
+53:24 which is going to be expensive but be a
+53:27 to do everything amazingly you tell me
+53:28 the answer and I'll tell you mine son
+53:30 should we head into lightning round or
+53:31 do you have more questions great
+53:33 lightning round okay you just bought a
+53:35 cricket team why yes you know there's a
+53:37 bunch of us who are together not just me
+53:40 there's 10 of us including your partner
+53:42 Jim get
+53:44 um we're all failed cricketers we're all
+53:48 sports aspirants so they were part of
+53:50 that that's uh there's part of the
+53:52 passion which says wow I can be
+53:53 associated with the sport at the highest
+53:54 level without having the talent it's
+53:56 just kind of interesting that's one
+53:58 reason for it now you couldn't have a
+54:00 bunch of us buy it who are business
+54:03 savvy and say where is there is there a
+54:05 business model here or not and if you
+54:06 look at it the only thing that's left in
+54:08 streaming that is linear is Sport M no
+54:12 longer News television movies nothing is
+54:15 linear the only thing is linear is Sport
+54:16 you want to watch it when it's happening
+54:18 pretty much when it's done you know the
+54:19 score and you lose the interest to watch
+54:21 that that event right the post post
+54:24 event viewership is a lot lower in than
+54:27 live viewership every other is the other
+54:29 way
+54:31 around every other streaming content is
+54:33 the other way around the post launch
+54:36 viewership is higher than launch
+54:38 viewership whether it's movies or
+54:40 television or any podcast or any video
+54:42 streaming to do hopefully this one right
+54:44 so it's the only linear sport out there
+54:47 uh is being bit up C is the second most
+54:49 watch sport in the world uh IPL is is
+54:53 the biggest franchise hundreds is the
+54:55 next best thing it's in the country
+54:57 which is the home of cricket and then
+54:59 have you follow the same philosophy did
+55:00 I told you about my startups you could
+55:01 to buy something buy the best so we
+55:04 bought LS which is the home of cricket
+55:05 it's going to be fun love it what did
+55:07 Cricket teach you about life or
+55:09 leadership it's a team
+55:11 sport it doesn't matter how good you
+55:13 are if the other 10 people
+55:17 suck it doesn't
+55:19 matter it teaches you that right you can
+55:22 have a bad day and you can still win
+55:23 because you participated with the rest
+55:24 of 10 people so it teaches teach you
+55:27 about life it teaches you about business
+55:29 you're wearing a Pebble Beach pullover I
+55:31 hear you want a proam recently what's
+55:33 your handicap my
+55:35 handicap's nine n CGA and it's a
+55:38 combination of the best Pros that I
+55:41 could find luck and a few misplaced good
+55:45 shots
+55:47 Nvidia 118 bucks a share 2.9 trillion
+55:51 doll market cap 39 times earnings
+55:54 earnings are growing about 150% year
+55:56 over year long or short I don't
+55:59 understand
+55:59 it if you were Jensen would you be
+56:02 making the same moves look Jensen has
+56:05 played a very long game I think he's
+56:07 built a phenomenal franchise I think
+56:09 what he's done is like no less than what
+56:11 Elon has done for electric cars I think
+56:13 you know he took something that she
+56:14 built for gaming thought about it
+56:16 understood the large need for compute
+56:19 and put all his energy in t behind he's
+56:21 been the longest serving CEO in the
+56:22 world right so you can't take it away
+56:24 from him just can't even trivialize we
+56:27 have to talk about him with tons of
+56:28 respect what he's done is amazing he has
+56:30 a vision and he's taking it Beyond just
+56:33 the chips because he's slowly building
+56:34 an ecosystem saying my chips work with a
+56:36 lot of other things together so I don't
+56:38 think from a long-term perspective you
+56:40 can argue that AI is not going to be
+56:42 relevant I don't think you can argue
+56:43 from a long-term perspective that we
+56:45 will be constantly doing some form of
+56:46 development which requires more and more
+56:48 compute like in the history of mankind
+56:51 compute and bandwidth and memory have
+56:54 never shrunk yeah so it's not about to
+56:57 start now I think he's sitting a
+56:60 phenomenal asset you know is it a 3
+57:02 trillion asset trillion asset today I
+57:04 don't know it'll be a three trillion
+57:06 dollar asset in 10 years possibly
+57:08 more what CEO do you admire most you
+57:12 know I have a collection of CEOs I
+57:14 admire traits that CEOs exhibit it's
+57:16 very hard to have one Idol like because
+57:17 one Idol and has the prop property that
+57:20 they could disappoint but if you admire
+57:22 certain things certain people do you
+57:24 know you learn a lot from that aspect of
+57:26 it and if you have the same circumstance
+57:28 you might do the same thing you
+57:29 different circumstance you might do a
+57:31 different thing I mean I admire elon's
+57:33 creativity and what he's done for the
+57:34 world I would want to work for him but I
+57:37 admire what he's done it's amazing like
+57:39 can I always joke with my team I'm
+57:41 saying would you go on a rocket to Mars
+57:43 built by the guys around you people I
+57:45 don't think so right but imagine you's
+57:48 got a bunch of people who build a rocket
+57:49 and people go up in that thing that's
+57:50 amazing but you sit in the car which has
+57:52 got no driver in it and so people have
+57:54 done it so at what's I did to micros of
+57:57 like he took somebody nobody believed he
+57:58 could turn this around a$3 trillion
+57:59 company and he did it's amazing right so
+58:02 like at Tim Cook you know Steve Jobs is
+58:03 a hard act to follow and Tim's g a
+58:05 phenomenal job in taking that amazing
+58:07 company and maintaining it down the
+58:09 middle and constantly innovating what
+58:11 can Mark Zuckerberg recently right he's
+58:13 taking that thing around and turn around
+58:15 now you the fact there are certain
+58:18 things that they done which I respect is
+58:19 amazing that doesn't mean anything about
+58:21 the rest of their lives and I don't need
+58:23 to worry about it which CEO is executing
+58:25 the best in AI right now for all the
+58:29 conversation
+58:31 around
+58:32 Sam I think what he's done is amazing
+58:36 right I mean before Chad gbd came about
+58:39 we weren't talking about AI right and
+58:42 before Chad gbd came out you know you
+58:44 think Google didn't know about AI I knew
+58:46 about a when I was at Google do you
+58:48 think Google didn't have a self-driving
+58:49 car then they did know D think sat
+58:51 didn't know what a means he did but look
+58:53 at what's happening right now you can't
+58:54 you can't you can't run into a want SP
+58:57 the words AI so Sam has created the next
+59:02 sort the impetus for the next
+59:03 technological Revolution that's the way
+59:05 Steve Jobs did it with the
+59:06 iPhone and the fact that was a straight
+59:09 face you can go out there and get people
+59:11 to commit to spending half a trillion
+59:13 dollars in building infrastructure and
+59:15 every I think the mag 7 every one of the
+59:17 CEOs is spending way more money in
+59:19 building computer and data centers
+59:20 because nobody wants to be left behind I
+59:22 just sounds on a your job executing AI
+59:24 now you know history is
+59:27 is hard and business is hard and we
+59:29 don't know that means that you'll be the
+59:31 winner in the future but damn has he
+59:32 done a great job in getting us to where
+59:34 we are yes I think that's it thanks ni
+59:37 cash

@@ -1,0 +1,225 @@
+00:02 I'm so excited to bring up Lynn Chow. If
+00:04 you want reliability, scale,
+00:09 performance, you couldn't find a better
+00:11 better person than Lynn to deliver that.
+00:13 As Lynn sets up, I'll tell you a little
+00:16 bit about Fireworks, which is one of the
+00:18 leading, most reliable, most performant
+00:20 inference providers in the world. And I
+00:23 can't wait to turn it over to Lynn to
+00:25 share a little bit about how they do it.
+00:28 Cool. We can get going. Yeah. So today
+00:30 I'm going to talk about the what the
+00:33 what's this future state of inference?
+00:35 What does it look
+00:39 like? I guess u many of you are uh very
+00:42 interesting in that topic. So I want to
+00:44 start talking about inference through
+00:46 the eyes of app developers and
+00:49 innovative product um developers. you
+00:53 you start you you first start from build
+00:55 and ideation into scale after your
+00:58 product market fit and I want to
+01:01 actually look at look at that those
+01:03 phase through a very simple lens of view
+01:07 is eventually you're all doing alignment
+01:10 towards your audience it's massive
+01:12 alignment process uh you're doing from
+01:14 the beginning to the end so this
+01:17 alignment actually has multiple phases
+01:19 here you actually want to optimize
+01:22 for the user behavior you want to drive
+01:26 and then from there your product design
+01:29 need to uh in tune towards that and this
+01:32 has been a area that has been heavily
+01:35 studied in in the past many many years
+01:38 and a lot of tools has been enabled for
+01:40 you to do product analytics and login so
+01:43 on and now in jihase as model becomes a
+01:47 intrinsic part of your product stack and
+01:51 this part of alignment is completely new
+01:54 and I would say it's very weak in in in
+01:57 this phase because app developers just
+02:01 use offtheshelf model most of time and
+02:04 how to
+02:05 infuse your product knowledge into your
+02:10 model is a new area that most people
+02:12 doesn't know how to do and the best way
+02:15 they steer those models through prompt
+02:17 engineering. So but if you look at a lot
+02:19 of successful applications and products
+02:23 as we talked about earlier a lot of data
+02:25 flying wheel is the mode you're going to
+02:28 incorporate into our product and stand
+02:30 out from that point. So this is a very
+02:33 interesting um area that there's not
+02:36 much work that has happened but we have
+02:38 seen we have worked with many high fast
+02:41 scaling startups and we have seen a lot
+02:44 of success uh in the areas who can mask
+02:46 that
+02:47 deeply. Again coming to this phase is
+02:50 the product design to user behavior
+02:52 alignment is in application and the
+02:56 future inference to product design
+02:59 alignment is off application space and
+03:01 how to make it easy accessible and uh
+03:04 high quality is the next generation
+03:07 question. More specifically, more
+03:10 specifically, this alignment is very
+03:12 simple. The the the idea is very simple
+03:15 is to align data distribution in your
+03:18 application workload into the data
+03:22 distribution in your training data of
+03:24 the model essentially. But that align
+03:27 alignment is very hard to do because the
+03:29 researchers has to make assumptions who
+03:31 is going to use uh these model to solve
+03:33 what kind of problem and often time
+03:36 those assumption may not fully connect
+03:39 with uh real life applications use cases
+03:43 that is almost always guaranteed there
+03:45 was always gap um as well as the
+03:48 inference system design it is not one
+03:50 sizefits-all it also need to use your
+03:53 production data to drive maximum more
+03:55 amount of
+03:58 optimization. So I will say we talk a
+04:01 lot about uh scaling law in training,
+04:04 scaling law in inference. I think the
+04:06 future of scaling law is actually across
+04:09 three dimensions in inference across
+04:12 quality, speed and uh user concurrency
+04:16 which is cost. Um and when we uh think
+04:20 about that we would talk with many many
+04:23 startups or enterprise coming to us and
+04:26 I'm like the question is what do you
+04:28 want right what ideally what is the
+04:31 ideals that you want the basically said
+04:33 they want open ice quality light speed
+04:38 and uh uh high concurrency as if they
+04:41 are running like fraud detection right
+04:43 so this is they want all of that so
+04:46 basically it becomes a multi-dimensional
+04:49 optimization problem for inference but
+04:52 specific for a particular application.
+04:56 That's the future is the heavy
+04:58 customization of of scaling inference
+05:01 and optimizing inference towards a
+05:03 specific application. That's the future
+05:06 scaling
+05:07 law. And the approach to do that is
+05:10 actually not look at inference in
+05:13 isolation. The approach to do that is to
+05:16 combine post- training and inference to
+05:18 do co-op optimization. That's the area
+05:20 to drive massive amount of innovation
+05:23 and acceleration. And ultimately the
+05:25 goal here is to drive down extremely
+05:29 high inference cost which is today's
+05:31 state uh to 10 times or 100 times lower.
+05:35 Imagine this is a we are seeing a
+05:38 iceberg situation where the water line
+05:40 of inference cost is very high right now
+05:43 and when the cost is driven down to 10
+05:45 times 100 times lower and all the
+05:48 application which fit into part of
+05:50 market fit can scale into a sustainable
+05:52 business will be much much bigger. So
+05:55 that's that is goal of the future
+05:57 scaling
+05:59 law. The bad news is it is very hard to
+06:03 solve this problem. It is very
+06:05 hard because to do this
+06:07 three-dimensional optimization across
+06:09 quality, speed and cost, there are a lot
+06:11 of elements to put together. Those
+06:14 elements cover through hey I I don't
+06:17 want to predict one token at a time. I
+06:19 want to predict 10 tokens at a time and
+06:21 how to do that. How do I align numerics
+06:25 the positions towards your data
+06:28 distribution in your application? How do
+06:30 I align uh the uh the selection of
+06:34 hardware with each hardware skill has
+06:36 its own unique advantage and benefits
+06:39 all different towards our patient data
+06:41 distriution. How do we shard the model
+06:44 towards your application distribution?
+06:47 How we do we do cross host distributed
+06:49 inference towards your application
+06:51 distribution? How do we select the most
+06:53 optimized kernel towards your
+06:56 application distribution? and how do we
+06:58 have variety of tuning mechanism for
+07:01 quality towards application. So in
+07:03 combination it can lead into more than a
+07:06 100,000 combinations to pick and choose
+07:10 from. So it's a hard problem.
+07:13 The good news is we are set to solve
+07:15 that problem and we have been uh focused
+07:19 on investing R&amp;D to deliver and solve
+07:23 complex um this comtorial explosion
+07:26 problem
+07:29 um and this is a little bit uh too
+07:32 detailed um but I I don't have a good
+07:34 way to capture like what we have built
+07:37 uh at fireworks at the bottom layer we
+07:39 have a virtual cloud infrastructure
+07:41 where we take over the uh consideration
+07:44 of managing all the complexity across
+07:46 you know where do I find GPU uh which is
+07:50 a guaranteed to have high quality high
+07:52 reliability for me to scale my
+07:54 application um and we also build on top
+07:57 of multiple different hardware from
+07:59 different hardware vendor from different
+07:60 SKUs uh where some hardware has much
+08:03 higher flops some hardware has much more
+08:05 memory uh bandwidth that is good for
+08:07 different formmanship of your
+08:09 application specifically
+08:11 to a variety of models. uh you can pick
+08:15 and choose from open model um libraries
+08:19 where you can easily steal towards your
+08:21 application need u very different way to
+08:24 tune we tune for speed we tune for
+08:26 quality and and so on various different
+08:28 mechanism I'm very excited we're going
+08:30 to talk about um how to incorporate your
+08:34 production data to reinforcement uh
+08:37 tuning towards your application needs
+08:39 and on top of that we have a lot bunch
+08:40 of u developer tools make it super easy
+08:42 to and accessible
+08:45 So um we have launched our developer
+08:48 facing platform self-s serve for a long
+08:50 time um in the this is in um past and uh
+08:54 year and a half. So a lot of lot we have
+08:57 seen like the most exciting thing for us
+08:59 is to see um through this lens of
+09:02 alignment product lot applications um
+09:06 has able to on board and and do
+09:09 experimentation on our platform and the
+09:11 scale. So very interestingly we have
+09:13 seen that a um food chain company um
+09:18 which is one of my favorite um they use
+09:21 our service and scale from um running
+09:24 one shop of a AI feature very
+09:27 interesting AI feature into um you know
+09:30 a thousand shops in three months. uh we
+09:33 also seen a software development company
+09:35 roll out their uh AI feature from uh
+09:39 100,000 developers to 25 million
+09:42 developers within three month. So the
+09:45 fast scaling is is fascinating here and
+09:47 and we want to make sure like this uh as
+09:50 they scale they get to the most optimal
+09:53 sweet spot across quality, cost and
+09:56 speed. Um with that said it's very easy
+09:59 to get started and love to hear from you
+10:02 all all the people here with the
+10:04 application what are the next generation
+10:06 uh problems you are facing for for
+10:08 inference and love to chat more.
+10:13 Thank you, Lynn.

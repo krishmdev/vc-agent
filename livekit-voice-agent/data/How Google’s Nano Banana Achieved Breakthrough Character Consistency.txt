@@ -1,0 +1,422 @@
+00:00 There's something about like visual media that really excites people that it's like the fun thing, but it's not
+00:05 just fun. It's exciting. It's intuitive. The visual space is so much of how we as
+00:11 humans experience uh experience life that I think I've loved how much it's moved people.
+00:17 I think we're really now making it possible to like tell stories that you never could. And in a way where like the
+00:23 camera allowed anyone to capture reality when it became very accessible, you're kind of capturing people's imagination.
+00:29 like you're giving them the tools to be able to like get the stuff that's in their brain out on paper visually in a
+00:36 way that they just couldn't before because they didn't have the tools or they didn't have the knowledge of the tools. Like that's been really awesome.
+00:45 [Music]
+00:59 Today we're talking with Nicole Brtova and Hanza Swini Vasan, the team behind Google's nano banana image model, which
+01:06 started as a 2 a.m. code name and has become a cultural phenomenon since. They
+01:11 walk us through the technical leaps that made single image character consistency possible. How high quality data, long
+01:18 multimodal context windows, and disciplined human evals enabled reliable character consistency from a single
+01:24 photo. and why craft and infrastructure matter as much as scale. We discussed
+01:30 the trade-offs between pushing the frontier versus broad accessibility and where this technology is headed.
+01:36 Multimodal creation, personalized learning, and specialized UIs that marry fine grain control with hands-off
+01:42 automation. Finally, we'll touch on what's still missing for true AGI and whites space where startups should be
+01:49 building now. Enjoy the show. Nicole and Hanza, thank you so much for
+01:55 joining us today. We're so excited to be here to chat a little bit more about Nano Banana, which has taken the world by storm. We thought we'd start off with
+02:02 a fun question. What have been some of your own personal creations using Nano
+02:07 Banana or some of the most creative things you've seen from the community? Yeah. So I think um for me one of the
+02:13 most exciting things I've been seeing is like the I it didn't occur to me but
+02:18 this is very obvious in hindsight is um the use with video models to get actually consistent cross scene you know
+02:26 character and scene preservation. Um how fluid is that workflow today? How hard is it to do that?
+02:32 So what I've been seeing is people are really mixing the tools and using different video models from different
+02:38 sources. And so I think it's probably not very fluid. I know some there's some products out there that are trying to
+02:43 like integrate with multiple models to make this more fluid, but I think the the difference in the the videos I've
+02:51 been seeing from before and after the Nano Banana launch has been pretty pretty remarkable. And it's like much
+02:57 much smoother and much more like what you'd want in the video creating process with scene cuts that feel natural. So
+03:04 that's been cool. Um, and I don't know why it didn't totally occur to me that people would immediately do that. But
+03:10 yeah, one of my favorite ways that I didn't expect is how people have hacked around
+03:15 the model to use it for learning new things or digesting information. I met
+03:20 somebody last week who has been using it to create sketch notes of these like varied topics. And it's surprising
+03:27 because text rendering is not something that it's not where we want it to be.
+03:32 But this person has hacked around like these massive promps that like get the model to output something that's
+03:38 coherent and um he's used it to try to understand the work that his father's
+03:43 doing who's like a chemist at a university and it's like a super technical topic and so he's been feeding
+03:49 his lecturers to Gemini with nano banana and then getting these sketch notes that
+03:54 are like very coherent and like visually digestible and for the first time I think in like decades they've been able
+03:59 to have a conversation with each other about his dad's work and that was really fun. Um, and something that I didn't see
+04:05 coming. I think people are really working around, you know, like this model is amazing,
+04:10 but obviously it's it's not perfect. We have a lot of things we want to improve. And I think I've been astounded by the
+04:16 ways people have found to to work with the model in ways we didn't anticipate and give inputs to the models in ways we
+04:22 didn't anticipate to bring out the best performance um, and unlock these things that are kind of mind-blowing. Did you
+04:29 guys in in the building of it, was there a moment like an aha moment where you
+04:34 kind of felt, "Wow, this thing's going to be pretty good." We just talked about this. Yeah, I think Nicole had the aha moment.
+04:41 I had one where so we always have an internal demo where we play with the models as we're developing them. And I
+04:48 had one where I just took an image of myself and then I said like, "Hey, put me on the red carpet and like full GL
+04:54 just total vanity prompt, right?" And then it came out and it looked like me. And then I compared it to like all the
+05:00 models that we had before. Um, and no other model actually looked like me and I was like so excited.
+05:07 Wow. Um, and then people looked and they were like, "Okay, yeah, we get it. Like you're on the red carpet somewhere."
+05:12 And and then I think it it took a couple of weeks of other people being able to take their own photos and play with it
+05:18 and just kind of realize how magical that is when you get it to work. And that's kind of the main thing that people have been actually doing with the
+05:24 model, right? turning yourself into a 3D figurine. Um where it's like you want a computer, you want a toy box, and then
+05:31 you as the figurine. So like you three times. Um like that way to be able to kind of like express yourself and see
+05:37 yourself in new ways and almost kind of like enhance your own identity has just been really fun. And that for me was the
+05:42 like, oh man, this is awesome. What was it about what Nano Banana did with you on the red carpet that was
+05:48 miles better than what everyone else has? It looked like me. Um, and it's very, um, it's very difficult for you to be
+05:55 able to judge character consistency on people's faces you don't know. Yeah. Um, and so if I saw, you know, a version
+06:02 of you that's like an AI version of you, I might be okay with it, but you would say like, oh no, the, you know, like
+06:07 parts of my face are not quite right. And you can really only do it on yourself, which is why we now have evals
+06:13 on many team members where it's like their own faces and they're looking at the models output with their own faces
+06:20 on it because it's really the only way that you can judge whether or not someone looks like you yourself and like faces you're familiar
+06:25 with. I think like when we started doing it on ourselves and it's like I see Nicole a lot so like Nicole versus like
+06:31 random person we might eval on, right? It's it's just a very big difference in terms of judging the model capabilities.
+06:38 And yeah, I think it's one of those things that it's like so fun that preservation of the identity is so
+06:43 fundamental to these models actually being useful and exciting, but is,
+06:49 you know, surprisingly tricky. Uh, and that's why we see a lot of other models not quite hitting it.
+06:55 Well, I was going to ask you, I would imagine that character consistency is not just an emergent property of scale.
+07:02 And so may maybe two questions. One, I'm sure there's stuff you can't tell us, but what can you tell us about how you
+07:08 achieved it? And then two, was that an explicit goal heading into the development of this model?
+07:14 Yeah, so I would say I mean, yeah, I think there's definitely things that are tricky to say here, but I I would say um
+07:20 there's like sort of different genres of ways to do image generation. Um, and so
+07:25 that so that plays that definitely plays a part uh in how good it is. Um, and I
+07:31 think it was definitely a goal from the beginning. It was it was definitely a goal because we knew it was a gap with the models
+07:37 that we released in the past. Um, and generally consistency for us was a goal
+07:42 because every time you're editing images, right? Like you want to preserve some parts of it and then you want to
+07:47 change something and prior models just weren't very good at that. And that makes it not very useful in professional
+07:52 workflows, but it also doesn't make it useful for things like character consistency. And we've heard this for years from even advertisers who are, you
+07:59 know, trying to advertise their products and like putting them in lifestyle shots. It has to look like your product like 100% otherwise you can't put it in
+08:06 an ad. Um, so we knew there was demand for it. We knew the models had a gap. Um, and we felt like we had the right
+08:12 recipe both in terms of like the model architecture and the data to finally make it happen. I think what surprised
+08:18 us was with just how good it was when we actually finally built the model. Yeah. Right. Cuz like I think we felt
+08:24 like we had the recipe. Exactly as Nicole said, but there's still always until you're seeing the model, you
+08:29 finished training, you you're actually using it, you don't know how close you're going to get right to that goal.
+08:34 And I think we were all surprised by that. Um Yeah. And I think the other thing is if we think about like what people
+08:40 expect out of editing when that you edit on your phone apps or like Photoshop, you expect a high degree of preservation
+08:46 of things you're not touching. Yeah. And depending on how the models are made and how how the design
+08:53 decisions behind them, that's very tricky to do. But it's something people
+08:58 really like it's it's one of those things where like it's shockingly technically difficult.
+09:04 Even though it's something I think a lay person who's using the models would be expect to be like the basic thing about
+09:10 editing is like you don't mess with the things you don't want to be messed with. Yeah. back to that moment where you saw
+09:16 yourself on the red carpet and wow that's actually me and it took some of
+09:22 your colleagues a couple weeks to have the same experience because they tried it with their own photos. The question is beyond hey that's actually me that
+09:29 you know the qualitative test is there some sort of an eval that you can put against that to make it quantitative
+09:36 that you know we have achieved the thing that we set out to achieve here. Yeah. So I actually think I think face
+09:42 consistency exactly for the reason Nicole said is is quite hard. It's quite hard for other people to do. Yeah. Um, I will say in general, I think
+09:50 what we found with image generation in particular that's unlocked a lot for us is like human evals are important. Um,
+09:57 and so I think they're a foundational. We have we have a a team that works on helping us build sort of good tooling
+10:04 and good practices for evals and having humans actually eval these things um that are very subtle. Like if you think
+10:10 about image generation like faces, aesthetic quality, these are things that are very hard to quantify. Um and so I
+10:17 think human evals have been a main a big game changer for us. I think it's definitely I think it's a combination of
+10:23 there's human evals there's very technical term eyeballing um of the model results by different
+10:30 people um and there's also just community testing and when we do community testing we start internally
+10:37 and we have artists um at Google and at Google deep mind who play with these models our execs will play with these
+10:43 models um and that really helps I think kind of build that qualitative narrative
+10:48 around like why is this model actually awesome Um because if you just look at the quantitative benchmarks, you could
+10:54 say like, oh, it's 10% better than this model that we had before. And that doesn't quite gro that emotional aspect
+11:00 of like, oh, I can now see myself in new ways or I can now finally edit this family photo that I cut up when I was 5
+11:07 years old. Yeah. Um and I probably shouldn't have. People have done that. Um when like I'm able to
+11:12 restore it. Like I think you really need that qualitative um user feedback in order to be able to like tell that
+11:18 emotional story. I think this is probably true of many of the the Gen AI and AI capabilities, but I think it's
+11:24 especially true of visual media where it's very subjective
+11:30 versus if you think about something like math reasoning, logic reasoning where like you you can really ground it in an
+11:36 answer, right? Um, and so it's more easy to have these very objective automated, you know, quantitative evals.
+11:43 To get to that level of character consistency from just one 2D image of of
+11:48 someone is really, really hard. Can you walk us through maybe a little bit what are the technical breakthroughs that
+11:54 helped you drive to that level of character consistency that we actually haven't seen anywhere else? I mean, I
+11:60 think a key thing is like having good data that teaches the models to
+12:05 generalize, right? And the fact that this this is a based it's a Gemini model. Yeah. It's it's a multimodal foundational
+12:13 model that's had seen a lot of data and has good generalization capabilities. And I think
+12:19 that like that's kind of the secret sauce, right? Is like you really need uh models that generalize well
+12:25 to be able to take advantage of that for this, right? Yeah. And I think the other nice part about doing this in a model like Gemini
+12:32 is that you also get this like really long context window. So like yes, you can provide one image of yourself, but you can also provide multiple. And then
+12:39 on the output side, you can also iterate across multiple turns and actually have a conversation with the model, which
+12:45 wasn't possible before, right? One, two years ago, we were fine-tuning on 10 images of you and it took 20
+12:52 minutes to actually get something that looked like you. And that's why it never took um it never took off in the
+12:58 mainstream, right? Because it's it's just too hard. Um and you don't have that many images of yourself. It's like too much work. Um and so I think it's
+13:05 both kind of the like general like Gemini gets better. You benefit from that multimodal context window and you
+13:10 benefit from the like long output and ability to like maintain context over a long conversation. And then you also
+13:16 benefit from the like actually paying attention to the data, focusing on the problem. A lot of the things we get
+13:22 better at come down to there's a person on the team who's like obsessed with making them work. Like we have people on
+13:27 the team who are obsessed with text rendering and so our text rendering just keeps getting better because that person
+13:32 just like is obsessed with the problem. Yeah. It's like it's not just about throwing high quantities of data in. Right. Uh I think
+13:40 that's one thing that's really important is it's there's this like attention to detail um
+13:47 and quality of you know all the things you're doing with the model. There's a lot of there's a lot of small design
+13:52 decisions and decision points at every point and uh I think that like detail
+13:58 orientedness of high quality is data and selections are really important. Yeah. It's the craft part of I think the AI
+14:06 which we don't talk about a lot but I think it's super important. Yeah. How big was the team that worked on it to ship it? It took a village.
+14:12 Yeah. Cuz especially because we split ship across many products. So I think like there's like sort of the core sort
+14:18 of modeling team and then there's you know our close collaborators across like all the surfaces.
+14:23 Yeah. When you put them all together you easily get into like dozens and hundreds but um the team who works on the model
+14:29 is much smaller and then the people who actually make all the magic happen. We had a lot of infrastructure teams like
+14:34 optimizing every part of the stack to be able to surf the demand that we were seeing which was really awesome.
+14:40 Um but really like to ship it we were joking that it takes like a small country. When you build something like
+14:45 this, do you build it with particular personas or particular use cases in mind
+14:51 or do you build it more with a capability first mindset and then once
+14:56 the capabilities emerge you can map it to personas? It's a little bit of both,
+15:01 I would say. Like before we start training any new model, we kind of have an idea of what we want the capabilities
+15:08 to be. Um, and some design decisions like um how fast is it at inference
+15:14 time, right? They also impact which persona you're going after. Yeah. So this model, because it's kind of a
+15:20 conversational editor, we wanted it to be really snappy because you can't really have a conversation with a model
+15:26 if it takes like a minute or two to generate. That's really nice about image models versus video models. Like you
+15:31 just don't have to wait that long. And so to us from the beginning it felt like a very consumer centric model. Um
+15:38 but obviously we also have developer products and enterprise products and all
+15:43 of these capabilities end up being useful to them. But really, we've seen a ton of excitement on the consumer side
+15:50 in a way that I think we haven't before um with our image models um because it
+15:55 was very snappy and it kind of made these like prolevel capabilities just really easily accessible through a text
+16:01 prompt. Um and so that's kind of how we started it out, but then obviously it ends up being useful in other um in
+16:07 other domains as well. Yeah. And I think one of the like differences in philosophy, so like previously we'd worked on the imagine
+16:13 line of models which were straight image generation. And I think one of the like big philosophical goal changes in these
+16:21 Gemini image generation models is generalization is like a more
+16:27 foundational capability. So, I think there is also a lot of like there's there's things where like we want this
+16:33 model to be able to be good at this, like representing people and letting them edit their images and have it look
+16:39 like themselves. But I think there's also a lot of things like that are our emergent from the goal of just having a
+16:46 baseline capable model that like reasons about visual information. Like I think
+16:51 one thing that's surprised me I guess as a call back to your earlier conversation is people can put in math problems like
+16:57 a drawing of a math problem and like ask it to like render the solution right so
+17:02 like you can put in a geometry problem and say like what is this angle and
+17:08 that's that's like an emergent thing of like a foundationally capable model that has both like reasoning mathematical
+17:15 understanding and visual understanding. Yeah. So it's I I think it's there's it's both. Yeah. Can you maybe share I just out of
+17:21 curiosity what's a good way to understand maybe the family mapping and the relationship between Gemini powering
+17:28 nano banana vo you know all these other adjacent products and models that are
+17:35 all driven and benefit from the generalization and the scale of Gemini itself um how you co-develop and then
+17:41 where you want to take it from here um our goal has always been to build the
+17:46 single most powerful model that can do all these things right? You can take in any modality and you can transform it
+17:52 into any modality. Um, and that's the northstar. We're obviously not quite there yet. And so on the way there, we
+17:59 had a lot of sort of specialized models that just got you great results in a specific domain. So, imagine was an
+18:05 example of that for image generation. VO is an example of that for video generation um, and editing. Um, and so I
+18:12 think we're we're both kind of developing these models to push the frontier of that modality. and you get
+18:18 really useful outputs out of that, right? A lot of filmmakers are using VO in their creative process. Um, but
+18:23 you're also learning a lot that you can then bring back into Gemini and then make it good at that modality. Image is
+18:30 always a little bit, I think, ahead of the curve because you just have one frame, right? It's it's cheaper um both
+18:36 train and at inference time. Um, so I think kind of a lot of the developments you see into in image I expect you to
+18:42 see in video like six 12 months down the line. Um, and so that that's always kind
+18:48 of been the goal. And so we have separate teams kind of developing these. And then I think with image we're now
+18:53 moving closer um to Gemini. Um, and to that vision of that single most powerful
+18:59 model. Um, and you will see that I think with some of the other modalities and along the way we'll release these experiences that are just like really
+19:05 powerful and like really exciting in that modality. So like V3 was really awesome because it brought audio into
+19:11 video generation, right, in a way that we haven't seen before. G3 was really awesome because it let you in real time
+19:18 kind of navigate a world. Um, and so in order to push that frontier, it's very hard to like do all of that at the same
+19:24 time right now in one model. Um, and so to some extent these specialized models
+19:30 are kind of a testing ground, but I would expect that like over time, you know, Gemini should be able to do all these things.
+19:35 Oh, that's so interesting. Okay, we got to ask you about the name. Ah, I suspect that the name was a bit of an
+19:42 it's an amazing product. I suspect that the name gave it a little bit of a boost
+19:48 because it's so easy to remember and so distinct. So, was it a happy accident or
+19:53 is there some creative genius who knew that this is going to be just the right name? It it was a happy accident. Um, so I I
+20:01 think as many people know, uh, the model went out on analina where many models do and you
+20:08 part of that is you give a code name. If anyone hasn't used Ella Marina, you get to put in your prompt. You'll get back
+20:13 two responses from two models. They have code names until they're publicly released. Um, and I think it was like we
+20:21 had to someone we were going out at like 2 a.m. and uh, Nicole Nicole's our
+20:27 wonderful PM. another PM we have Nina and someone messaged her being like what
+20:32 do we name it and she was really tired and exhausted and she was like
+20:37 this was the name of Stroke of Genius that came to her at 2 a.m. This is you. It was not me. It was somebody on my
+20:44 team who named who named the model I can't take works with another one of our PMs.
+20:50 Um but what was really awesome is like a it was really fun. I think that really helps. It's easy to pronounce. It has an
+20:57 emoji which is critical for branding. She didn't overthink it in this era, but she didn't overthink
+21:02 it. And what was awesome is everybody just went with it once it went live and and I think it just like felt very
+21:08 googly and very organic and end up looking like the stroke of marketing genius. Um, but no, it was it was a
+21:13 happy accident and it just sort of worked out and people loved it and so we leaned into it and now there's, you know, bananas everywhere when you go
+21:19 into the Gemini app. Um which we did because people were complaining that they were having a really hard time
+21:25 finding the model when they came into the app. Yeah. Um and so we just made it easier. Yeah. And Yeah. Exactly. I think there's
+21:32 like publicly people were like nano banana nano banana. How do I use nano banana? I had someone at Google I work
+21:38 with be be like how do I use nano banana? And I was like it's Gemini. It's
+21:44 right there. Just just ask for an image. Um, yeah. But I think that's the thing
+21:51 is like I think Google's always had this really fun brand, right? Like it's like it's not like it's been a
+21:57 consumeroriented company at its inception and like I think it was really nice to to play on
+22:03 that rep that image people have of like Google as a fun
+22:08 fun place, fun company um and have this fun name. It's also just like a really nice path
+22:14 to fun being kind of a gateway to utility, right? I I I I think Nano Banana and just the model in general and
+22:21 what you can do with it like put yourself on the red carpet, do all the childhood dream professions you had, it's like a really fun entry point. But
+22:27 what's been awesome to see is that like once people are in the app and they are using Gemini, they start to use it for other things.
+22:33 Yeah. That then become useful in their day-to-day life. Like you use it to study and solve math problems or you use
+22:39 it to learn about something else. And so I think it's maybe a little bit undervalued sometimes to like have a
+22:45 little fun. um not just with the naming but also just like with the products that we build because it kind of gets people in and gets them excited and that
+22:51 it helps them discover other things that you know the models are awesome at. Yeah, I think other users like my my um
+22:57 like my parents and their friends are using. I think it's cuz it like had this reputation. It was really easy. It was
+23:03 really fun. It felt unintimidating to try. Then you try it and you're like actually this this is very easy to work.
+23:10 This works very easily. It's very easy to interact with. There's no like techn there's no like you know technology I
+23:16 think can sometimes be intimidating to people especially AI right now. Yeah. Um and I think the chatbot naturalenness
+23:23 has broken a lot of that barriers but maybe more so with younger people. Yeah. Um and I think this like fun like
+23:30 Yeah. My mom like made was like making these images and having a great time and and and
+23:36 then realized she can use it to like remove people from the background of her images like these very practical things, right? started very silly
+23:42 turn very practical then people can use it to realize like actually they can give you them diagrams or help them
+23:48 understand stuff so I think there's also like a big accessibility component where do you want to take from here
+23:54 maybe both from a model side and from a product side on the product side I think there's kind
+24:01 of a couple areas like on the consumer side I still think we have a long way to go to just like make these things easier to use right um you will notice that a
+24:08 lot of the nano banana prompts are like hundred words and people actually go in and copy paste
+24:13 them into the Gemini app and like go through the work to make it work because the payoff is worth it.
+24:18 Um, but I think we have to get past this prompt engineering phase for consumers and just like make things really easy
+24:24 for them to use. I think on the professional side, we need to get into like much more precise
+24:30 control kind of robustness like reproducibility um to make it useful in actual
+24:36 professional workflows, right? So like yes, we you know we're very good at editing consistency and not changing
+24:42 pixels, but we're not 100% there. And when you're a professional, you need to be 100% there, right? Like you really
+24:47 need kind of these precise maybe even like gesture based controls like over every single pixel in the frame.
+24:53 So we definitely need to go in that direction. And then I think there's like a general direction that I'm really excited about which is just about
+24:59 visualizing information. Um, so the example I had about sketch notes at the beginning and somebody kind of hacking
+25:05 their way around using Nano Banana for that use case, you could just imagine being able to do that for anything,
+25:11 right? And a lot of people are visual learners. I think we haven't really exhausted the potential of LLMs to be
+25:18 able to like help you digest and visualize information in whatever way is most natural for you to consume, right?
+25:24 So sometimes it's a diagram, sometimes it's an image, and sometimes maybe it's a short video, right? that you want to
+25:31 um to learn about some concept that you're learning in a biology class or something like that. So I think that's like a completely new domain that I'm
+25:38 really excited about just these models getting better and getting past the point where you know 95% of the outputs
+25:44 that you get out of these models are just text which is useful but it's it's not how we consume information in the
+25:50 real world right now. It's really interesting. So on the product side then are you alluding to the fact that you might want to vertically integrate and
+25:56 build a little bit more product around it and and also are you alluding to the fact that maybe the way you interact
+26:02 with some of these models isn't just through pure language and prompting over time but more UI.
+26:08 Yeah. Yeah. I defin I definitely think the chatbots I think are an easy entry point for people because you don't have
+26:14 to learn a UI new UI. You just talk to it and then you say whatever you want to do, right? I think it starts to become a
+26:21 little bit limiting for the visual modalities and I think there's a ton of headroom to think about like what is the
+26:28 new visual creation canvas for the future. Um, and how do you build that in a way that doesn't become overwhelming,
+26:35 right? Because as these models can do more and more things, it's very hard to explain to the user in something that's
+26:41 very open-ended like what the constraints are and like how do you work around that and like how do you actually use it in a productive way. So I'm
+26:48 really excited about people kind of building products in those directions. Um and for us, you know, we have a team
+26:53 called Labs um at Google that's led by Josh Woodward and they do a lot of this kind of like frontier thinking
+26:59 experimentation. They work with us really closely where they take our frontier models and they think about like what's the future of entertainment,
+27:07 what's the future of creation, what's the future of productivity. Um and so they've built products like Notebook LM
+27:12 and Flow on the video side. And I'm excited that maybe flow could kind of become this place where you could do,
+27:18 you know, some of this creation and think about what that looks like in the future. I think in the short term it's it's very
+27:23 clear that, you know, this model has things that it's not perfect at. Um, and so in the short term, it's obviously it should work the way you
+27:30 expect it to every time, not just a lot of the time. Um, and really make it so
+27:36 seamless. uh and and fix all these like small small things where it's just like
+27:41 a little bit inconsistent in its performance. Um I think long term it's I
+27:46 think Nicole covered that which is to me it's in order to have
+27:52 that reality of really rich multimodal generation. So like right now if you ask
+27:58 Gemini to explain something it'll usually just explain in test text unless you ask it for images. But if you think
+28:04 about like the platforms that have really taken off in the last like 10 20 years for learning, right? Like we think
+28:10 of like Khan Academy started on YouTube. We think about like Wikipedia has a lot
+28:15 of images. Like it's very image focused. If you look up any math thing you got like diagrams and so like that should become more like
+28:23 a natural part of the flow and a part of the way you use these models. And to enable that from a modeling point of
+28:29 view, it's it goes back to like like we were talking about this this multimodal understanding and seamless gen
+28:35 generalization between mod modalities. Um maybe the other interesting area as
+28:41 we think about kind of you know these models being more proactive at pulling in you know whether it's code or images
+28:47 or video when it's appropriate for the user intent. I think this other exciting year I I started out as a consultant um
+28:53 in my career and so obviously I made a lot of slide decks in my time. I still do. Um and I think there are some of
+28:59 these use cases where you don't actually really want to be in the weeds of creation. Like what you really want is
+29:04 let's say you're updating your stakeholders on how a project is going, right? You want to pull in some context. Maybe it's meeting notes. Maybe it's a
+29:11 couple of bullet points. Um maybe it's, you know, some other deck that you've created in the past. And then you maybe
+29:17 just want Gemini to go off and like do all the work for you, right? Like pull that deck together, format it, create
+29:24 appropriate visuals to make it really easy to digest. And that's something that you probably don't want to be involved in. And it gets more into these
+29:30 agentic behaviors versus I think for some of these creative workflows, like you actually want to be creating. You
+29:37 want to be in the weeds. You want to think about what the UI looks like that makes it easy for a user to accomplish
+29:42 the goal. And so like if I'm designing my house and I'm actually into designing my house, um then I probably actually
+29:49 want to play with it and like play with textures and different colors and like maybe what would happen if I remove this wall. And so I think there's kind of
+29:55 this spectrum of like very hands-off like just let the model go off and like pull in relevant visuals, materials for
+30:02 a task that makes sense all the way to like how do you actually make a creative process like more fun and remove the
+30:08 tedious parts and remove the technical barriers that exist today with tools that we have. It's like this mix of giving the user fine grain control like
+30:15 the precision control they want but also at the other extreme having the model be able to
+30:22 understand the user request and anticipate right like the need and the
+30:27 outcome that it should be and do all the intervening work in between. Yeah. It's almost like when you actually hire
+30:33 a professional for something today, right? Like when you hire a designer, you give them a spec and then they go off and then they do all that awesome
+30:39 work that they do because they have all this expertise. And so the these models should be able to do that and they can't
+30:44 really do that in many domains today. What do you think the next competitive
+30:50 battleground is in this world? I think there's still work to be done on
+30:55 making these models more capable. And so this idea of having a single model that can take anything and transform it into
+31:00 anything else, I think nobody has really figured that out. Um, but I do think in order to actually
+31:07 drive adoption, there's probably two things. One is user interfaces. Like we still rely very heavily on the chat bots
+31:14 and we talked about this like it's useful for some things and it's a great entry point but it maybe isn't useful
+31:20 for all the things. And so I think starting to think about much more deeply about who are the users, what are they
+31:26 trying to do, how can the technology be helpful and then what product do you build around it to make that happen? Um
+31:34 is probably one. Do you think five or 10 years from now the frontier will be advancing as quickly as it has advanced
+31:41 over these last few years? Five to 10 years from now feels like 20 years from now. It just the space and
+31:48 you guys probably see this too like the space is moving really quickly. Yeah. And you know if you ask me two years ago
+31:54 I would have told you the space is moving really quickly. If you ask me today I will tell you it's moving faster
+31:60 than it was two years ago. Okay. I'm gonna ask you a very different question.
+32:05 Um, so, um, I know Google's very, uh, very sort of careful and very concerned
+32:11 about deep fakes and and that sort of thing. Um, and I have to imagine when you saw how capable this model was,
+32:17 there's a big conversation about, okay, well, how are we going to make sure people don't use it in the wrong sorts of ways? How did that how does that sort
+32:24 of a conversation go inside of Google and are you guys sort of like happy with where it ended up? I think it's an ever
+32:31 evolving frontier also um because it's this mix of you want to give people the
+32:37 creative freedom to be able to use these tools, right? And you want to give users control to be able to use these tools in
+32:43 a way that don't feel overly restrictive and you want to prevent the worst harm, right? I think that's always the the
+32:49 balance that we spend a lot of time talking about. Um, and so obviously when
+32:54 you look at the outputs of the model, there's a visible watermark that says it's been generated with Gemini. So that
+32:60 immediately indicates that it's AI content. Um, and then we also in every output that we um produce with our
+33:06 models, image, video, um, you know, audio, there's synth ID embedded, which is invisible watermarking. Um, and so
+33:14 those are kind of the the visible ways or and invisible ways in which we verify that a content is AI generated. um we're
+33:20 very invested in it and you know we believe that it is really important um to give users those tools to be able to
+33:25 understand that when they're seeing something it's not it's not a real video or it's not a real image. Um and then
+33:31 obviously when we develop these models, we do a ton of testing um internally and
+33:37 um also with external partners to kind of find as the models get more capable, you find new attack vectors, right? And
+33:44 like new new ways that you have to mitigate for um and so that is like a very important part of model development
+33:50 for us. And um we continue to invest in and as as the models get better and as there's new new things that you can do
+33:56 with them, we also have to develop kind of new mitigations for you know making sure that we don't create harm but also
+34:03 still give users the creativity and the control um in order to make these models usable in a product.
+34:08 I mean I think it's a very very hard balance to to strike, right? Um because
+34:14 you will always have people using a tool in good faith. You'll also always have people using it in bad faith. Um,
+34:22 and I think I think it's hard. It's like is it a is it a tool? Is it something that has responsibility? So I think we
+34:28 we take this very seriously. Um, users obviously are also responsible for
+34:34 what they do with the model. But synth ID really is an important technology that lets us like release these
+34:41 capabilities to people and have have some faith in that we can still verify, right? and and have a tool to to combat
+34:48 this misin the the risk of misinformation. Um, but it it's a it's it's a super tricky conversation and I
+34:55 think it's one that I've seen everyone take very seriously. Um, there's a lot of a lot of conversations about how to
+35:01 balance both. Is that the standard now across the industry? Synth ID. Yeah, it's a Google standard.
+35:07 It's the Google standard. I believe there's like every Google like imagine the imagine line veo they all have synth
+35:14 ID when you use them in any product surface. All right. You told us we can't go 5 to 10 years down the road because things
+35:20 are moving too fast. We'll go one to three years down the road. Thank you. Um two questions. One
+35:29 uh what will be possible that we can only dream about today?
+35:35 And two, what will the resulting change be to the way that we all live our lives?
+35:41 I really hope that a year or two from now you could really get like
+35:47 personalized tutors, personalized textbooks in a way, right? Love it. Yeah. Like I there's no reason why you and I
+35:54 should be learning from the same textbook if we have different learning styles and different starting points. But that's what we do now, right? That's
+36:00 how our learning environment is set up. And I think across all these breakthroughs, like that should be very
+36:06 possible where you have an LLM tutor that just figures out your learning style. What are the things you like?
+36:12 Maybe you're into basketball and so I need to explain physics to you with basketball analogies, right? Um and so
+36:18 I'm really excited about learning just becoming way more personalized and that feels that feels very achievable. And we
+36:25 obviously have to make sure that we don't hallucinate and there's like a high bar for factuality. Um, and so we
+36:31 need to ground in sort of real world content, but that I'm really excited about. Um, and that really I think just
+36:37 it removes a lot of barriers for people, right? To to your question on like what the impact is going to be. Um, I think
+36:43 it just becomes much more it becomes much easier to learn basically anything
+36:48 in a way that's very tailored to you that you just can't do right now. Could that be a Google product surface?
+36:55 Somebody should look into it. Yeah. And I think for the way it'll
+37:01 change how we live and work, I think I think we I think working on these
+37:08 technologies, I've already seen how it changes the way we work, right? Because we we obviously use them um a lot. Uh I'm getting
+37:15 married. We made our save the dates with our with our model. Um and so I what I
+37:21 really think we'll see is and and just work the amount part of I think the reason that the innovation has
+37:28 accelerated is we have these models you have like code assistants you have uh
+37:34 just like you can use models to like filter things to analyze huge amounts of data like it's drastically increased our
+37:41 own workflows like what I can do this year versus two years ago is just like
+37:46 an order of magnitude more work. And I think that's that's true of the tech industry. It's not true of a lot of
+37:53 other industries just because that integration into their workflows or into their tooling hasn't happened.
+37:60 Um I so I I think you know some people are like oh it's going to it's going to replace me.
+38:06 But at least what I've seen is it it it really just actually changes the amount of work an individual can get done. What
+38:12 that means like for businesses or economically I'm not sure. But I think it means we will just see people be more
+38:17 empowered to hopefully do more in the same amount of time. Like maybe you don't have to, you know, I have friends
+38:23 who are in consulting and spend a lot of time. They're like, I just spent a lot of time, like two hours making slides, tweaking,
+38:29 moving individual, moving logos around and like hopefully they won't have to do that. They can actually spend time
+38:35 thinking about what the content of the slides like should be, thinking working with clients. Um, and I think that
+38:42 that's hopefully what we will see in like one to two years. Given the trajectory that you see in these capabilities, are there
+38:49 interesting areas that you think startups should go do that Google itself might not get into?
+38:55 I think there's a ton of spaces even just in the creative tools like I I think there's a ton of room for people
+39:01 to figure out like what what do these UIs of the future look like? Like what is the creative control? How do you
+39:06 bring everything together? We see a lot of people in the creative field work across LLM's, image, video, and music in
+39:15 a way where they have to go to four separate tools to be able to do that. So like a lot of people ideulate in with
+39:20 LLMs, right? Like give me some concepts like here's an idea that I have. Once you're happy with that, you take it to
+39:26 an image model. You start to think about what are the key frames that I want to have in my video. You spend a lot of
+39:31 time iterating there. Then you take it to a video model, which is yet another surface. And then at some point you want
+39:37 to have sound and music and mix it all together. And then you actually want to do maybe some heavy-handed editing and
+39:42 you go to some of the traditional um software tools. That feels like these kind of workflow-based tools are
+39:49 probably going to spin up for a lot of different verticals. So creative activity is just one example of it. But
+39:54 you know maybe there might be one for consultants so that you can more efficiently make slide decks and presentation and pitch decks to clients.
+40:01 Um and so I think there's a there's a lot of opportunity there. um that you know some some of the big companies may
+40:06 not go into. Yeah, there's a lot of like how do we make this technology useful for X
+40:13 workflow right like sales fin like I'm saying a lot of things I don't know
+40:19 about in companies like financial workflows but I I imagine there's like a lot of tasks that could be automated
+40:25 could be made much more efficient. Yeah. Um and I think startups are in a
+40:30 good position to really like go understand the specific client use case need that niche need and and do that
+40:37 application layer right versus what we really focus on is the fundamental technology.
+40:42 Um I think I'm just really excited by the number of people who've been
+40:49 excited by this model. Yeah. If that makes sense.
+40:54 A lot of people in my life like a lot of aunts, uncles, my parents, like friends, like they've used chat bots. They ask it
+41:01 things, they get information. My mom loves to ask chatbots health about health information. But there's
+41:08 something about like visual media that really excites people that it's like the fun thing, but it's not just fun. It's
+41:14 exciting. It's intuitive. the visual space is so much of how we as
+41:20 humans experience uh experience life that I think I've loved how much it's moved people like emotionally in
+41:27 excitement wise like I think that's been the most exciting part of this for me.
+41:32 My kids love it. Yeah. He uh my my three-year-old son tied our
+41:38 dog leash which is this like fraying you know brown rope like over himself so he
+41:43 looked like a warrior. I took a picture of him and turned him into this like warrior superhero. Yeah. Exactly.
+41:48 And it makes him feel super human. Yeah. And my husband will read. So he uses Google storybook to to read him these
+41:56 stories about lessons that he learned in school. You know, if he if there was like an incident on the playground with
+42:03 another kid or adjusting to a new school. And it's made I mean it's made these characters that look like him and
+42:09 my husband and me and our dog and our and our daughter in in these fun stories
+42:15 and lessons that we're trying to teach him to the personalization that you talked about. So I really really love this future. It's it's going to be
+42:21 totally different for him growing up and and and it's awesome, right? Because this is a story for, you know, one or
+42:27 five people that you would have never had made, right? Like and and other people probably don't want to read it. I
+42:33 would love to if you want to. Um, but I I think we're really now making it possible to like tell stories
+42:40 that you never could. And in a way where like the camera allowed anyone to capture reality when it became very
+42:46 accessible, you're kind of capturing people's imagination. Like you're giving them the tools to be able to like get
+42:52 the stuff that's in their brain out on paper visually in a way that they just couldn't before because they didn't have
+42:59 the tools or they didn't have the knowledge of the tools. Like that's been really awesome. That's a nice way to put it. Thank you
+43:05 so much for having us. It was awesome to have you. [Music]
+43:21 [Music]

@@ -1,0 +1,2785 @@
+00:00 Right now we can't have much of
+00:02 
+
+00:02 codeesign between chips and uh models
+00:05 
+
+00:05 because of this asymmetric design cycle
+00:08 
+
+00:08 for chips because it takes so long uh so
+00:11 
+
+00:11 much it takes so much time to design
+00:13 
+
+00:13 chips. The the cycle is there's a
+00:16 
+
+00:16 mismatch between how fast we can create
+00:18 
+
+00:18 the next generation AI methods and how
+00:20 
+
+00:20 fast we can build the next generation
+00:23 
+
+00:23 chips. But if we can make our chips much
+00:25 
+
+00:25 faster then we can enable this co-design
+00:27 
+
+00:27 and co-evolution of workloads
+00:30 
+
+00:30 applications and chips all together.
+00:50 
+
+00:50 This week on training data, we explore
+00:51 
+
+00:51 the biggest bottleneck holding back AI
+00:54 
+
+00:54 compute and the design of chips
+00:56 
+
+00:56 themselves. Our guests are the founders
+00:58 
+
+00:58 of recursive intelligence, Anna Goldie
+01:00 
+
+01:00 and Aalia Mirhoseni, the team behind
+01:03 
+
+01:03 Google's pioneering alpha chip project
+01:05 
+
+01:05 that helped design four generations of
+01:07 
+
+01:07 TPUs. They're now applying AI to the
+01:10 
+
+01:10 entire chip design process, transforming
+01:12 
+
+01:12 the industry from fab to designless.
+01:15 
+
+01:15 Anna and Aalia paint a picture of what a
+01:17 
+
+01:17 Cambrian explosion of custom silicon
+01:19 
+
+01:19 means. We'll explore the holy grail
+01:21 
+
+01:21 topic of recursive self-improvement, how
+01:24 
+
+01:24 AI design chips unlock radically
+01:26 
+
+01:26 creative new chip designs, and why
+01:28 
+
+01:28 democratizing chip design could
+01:30 
+
+01:30 accelerate the path to super
+01:31 
+
+01:31 intelligence. Enjoy the show.
+01:35 
+
+01:35 Thank you so much for joining us. We're
+01:37 
+
+01:37 so excited to celebrate the announcement
+01:39 
+
+01:39 of recursive intelligence and
+01:41 
+
+01:41 congratulations on embarking on this new
+01:43 
+
+01:43 adventure. Thank you. Thank you so much.
+01:45 
+
+01:45 Um
+01:46 
+
+01:46 >> to kick off, um you've said that chip
+01:47 
+
+01:47 design is the compute bottleneck to
+01:50 
+
+01:50 advancing AI. Can you share and paint a
+01:53 
+
+01:53 picture of what's happening now? Um what
+01:56 
+
+01:56 are all the bottlenecks to chip design
+01:57 
+
+01:57 today? I mean I think when we were
+01:59 
+
+01:59 saying that we were kind of alluding to
+02:01 
+
+02:01 this motivation that we had originally
+02:02 
+
+02:02 with our moonshot which was this
+02:04 
+
+02:04 observation that you know neural
+02:06 
+
+02:06 networks these concepts that have been
+02:07 
+
+02:07 around for decades but the AI that came
+02:10 
+
+02:10 out of it wasn't that effective until we
+02:12 
+
+02:12 had like more powerful computer systems
+02:14 
+
+02:14 and chips and we thought that now we
+02:16 
+
+02:16 that we had very powerful AI systems we
+02:18 
+
+02:18 could use those to kind of tackle the
+02:20 
+
+02:20 bottlenecks in chip design and you know
+02:23 
+
+02:23 create basically more effective compute.
+02:26 
+
+02:26 So if you see these like scaling laws
+02:28 
+
+02:28 basically the more compute you apply to
+02:31 
+
+02:31 training a model or inferring with a
+02:33 
+
+02:33 model like the more intelligence you get
+02:35 
+
+02:35 out and we're seeing that there's this
+02:38 
+
+02:38 mismatch like we're using say GPUs are
+02:40 
+
+02:40 like originally designed for graphics
+02:41 
+
+02:41 processing but we're somehow repurposing
+02:44 
+
+02:44 them for crypto and then for training
+02:46 
+
+02:46 neural networks models. I guess they're
+02:48 
+
+02:48 good at like large matrix multiplies,
+02:50 
+
+02:50 but like if we could more better
+02:53 
+
+02:53 co-optimize the models and the hardware,
+02:55 
+
+02:55 we could get more effective compute and
+02:56 
+
+02:56 then we could push ourselves out on that
+02:58 
+
+02:58 those effective scaling laws.
+03:00 
+
+03:00 >> You were the co-creators of Alpha Chip
+03:03 
+
+03:03 at Google, um, which I think is using
+03:05 
+
+03:05 four successive generations now of TPUs.
+03:08 
+
+03:08 Maybe take us back to that project. How
+03:10 
+
+03:10 did it get started? Uh, what were the
+03:11 
+
+03:11 key results you drove?
+03:12 
+
+03:12 >> Yeah, so we started a project uh in
+03:15 
+
+03:15 2018. Um and we had some earlier version
+03:21 
+
+03:21 of placement that placement work that we
+03:24 
+
+03:24 were interested in solving and that was
+03:27 
+
+03:27 not about chip placement. It was about
+03:28 
+
+03:28 compiler and ma basically mapping neural
+03:32 
+
+03:32 networks to chips. Um so we did that
+03:35 
+
+03:35 project we got great results we
+03:37 
+
+03:37 published and we were like what are the
+03:39 
+
+03:39 like highest impact projects that now we
+03:42 
+
+03:42 can kind of push this further and have
+03:44 
+
+03:44 real world impact and that's where the
+03:47 
+
+03:47 chip placement uh came in in in the
+03:50 
+
+03:50 picture and we started the project
+03:52 
+
+03:52 working very closely with the TPU team
+03:55 
+
+03:55 at Google because back then we didn't
+03:57 
+
+03:57 know much at all or at all about how
+03:60 
+
+03:60 chip design is uh how the process is. So
+04:03 
+
+04:03 we worked very closely with them uh from
+04:06 
+
+04:06 very early on and uh at the time it's
+04:09 
+
+04:09 interesting because at the time AI was
+04:11 
+
+04:11 like was still like very talked about
+04:13 
+
+04:13 but nothing like the scale was nowhere
+04:16 
+
+04:16 near what it is today. So we had to
+04:19 
+
+04:19 really work through things and showing
+04:21 
+
+04:21 with showing them data and like
+04:24 
+
+04:24 constantly like iterating over our
+04:26 
+
+04:26 approach and hearing them what they
+04:28 
+
+04:28 needed from us, listening to them. um
+04:32 
+
+04:32 iterate through the process and
+04:34 
+
+04:34 eventually uh we bent from a research
+04:37 
+
+04:37 concept on chip placement all the way to
+04:40 
+
+04:40 something that was actually used in
+04:42 
+
+04:42 product and we could tape out and all
+04:45 
+
+04:45 that. I remember one of our very first
+04:47 
+
+04:47 meals together um when I it hit me that
+04:51 
+
+04:51 you were so customer obsessed and had so
+04:54 
+
+04:54 much empathy for the customer and I
+04:56 
+
+04:56 asked you how and why and you said well
+04:58 
+
+04:58 I've been working with the TPU team as
+05:00 
+
+05:00 our customer internally for so many
+05:02 
+
+05:02 years. So I think that really kind of
+05:04 
+
+05:04 gave you that other perspective. Um what
+05:06 
+
+05:06 were the TPU team's early reactions um
+05:09 
+
+05:09 to what you had created? I mean they
+05:11 
+
+05:11 were like super skeptical.
+05:14 
+
+05:14 For example, like Aaliy and I we were
+05:15 
+
+05:15 you were researchers. Like we had read a
+05:17 
+
+05:17 bunch of research papers and we're like
+05:19 
+
+05:19 okay there's this half perimeter wire
+05:20 
+
+05:20 length that's what academics report
+05:22 
+
+05:22 results on. So like we made this RL
+05:25 
+
+05:25 agent that could optimize half perimeter
+05:26 
+
+05:26 wire lengths for a placement. And then
+05:28 
+
+05:28 we were kind of excited about sharing
+05:30 
+
+05:30 that with them. And we showed these
+05:32 
+
+05:32 results and they were like actually kind
+05:34 
+
+05:34 of like angry at us like why are you
+05:36 
+
+05:36 showing us these results? Like we don't
+05:37 
+
+05:37 care about half perimeter wire length.
+05:40 
+
+05:40 like we want like routed wire lengths,
+05:42 
+
+05:42 congestion like horizontal and vertical
+05:44 
+
+05:44 congestion, timing violations, power
+05:47 
+
+05:47 consumption, area like
+05:49 
+
+05:49 >> and so you know we we just kept
+05:51 
+
+05:51 listening to them and we were like okay
+05:53 
+
+05:53 so what is the thing that matters I
+05:55 
+
+05:55 think another part is just to make your
+05:57 
+
+05:57 customer feel like they're part of it
+05:59 
+
+05:59 too.
+05:59 
+
+05:59 >> Yes.
+05:60 
+
+05:60 >> So for example we worked with them to
+06:02 
+
+06:02 create the cost functions that they
+06:03 
+
+06:03 cared about approximations of those. So
+06:06 
+
+06:06 like Mustafa who was on the the TPU team
+06:09 
+
+06:09 developed these very fast like
+06:11 
+
+06:11 congestion cost function. Um and then we
+06:14 
+
+06:14 could optimize against the end density
+06:16 
+
+06:16 and then wire lengths as well and then
+06:18 
+
+06:18 we show results on those and then we run
+06:20 
+
+06:20 the commercial tool and we show that
+06:21 
+
+06:21 this actually correlates to good results
+06:23 
+
+06:23 on the metrics that they do care about.
+06:25 
+
+06:25 >> Yeah.
+06:26 
+
+06:26 >> Um so I want to talk about floor
+06:27 
+
+06:27 planning and and I come from an EDA
+06:29 
+
+06:29 family. Uh you know and floor planning
+06:31 
+
+06:31 is it is the crown jewel of EDA. Can you
+06:34 
+
+06:34 say just for our listeners that don't
+06:35 
+
+06:35 come from the chip design industry what
+06:37 
+
+06:37 what exactly that is and how your
+06:39 
+
+06:39 technical methods help solve it? Uh so
+06:42 
+
+06:42 floor planning is a process where we
+06:45 
+
+06:45 place the components of a chip onto the
+06:48 
+
+06:48 silicon and uh the complexity of this
+06:52 
+
+06:52 process comes from the large size of the
+06:55 
+
+06:55 input problems like for a block of a
+06:59 
+
+06:59 chip not the entire chip like a single
+07:01 
+
+07:01 block in a chip the graph that we're
+07:04 
+
+07:04 optimizing has mill could have millions
+07:07 
+
+07:07 of nodes and all of these nodes need to
+07:09 
+
+07:09 be placed and routed and we need to make
+07:13 
+
+07:13 sure that all these constraints that
+07:15 
+
+07:15 earlier uh we were talking about like
+07:17 
+
+07:17 PPA power area performance are optimized
+07:20 
+
+07:20 and all the physical constraints are
+07:22 
+
+07:22 met. So the placement problem has to do
+07:25 
+
+07:25 with how we can do this such that all
+07:28 
+
+07:28 those constraints given by these like
+07:31 
+
+07:31 very small technology node sizes given
+07:33 
+
+07:33 by TSMC and others are met. Uh so we're
+07:36 
+
+07:36 dealing with a combinatorial
+07:38 
+
+07:38 optimization problem. That's large scale
+07:41 
+
+07:41 but also all the metrics are hard to
+07:44 
+
+07:44 evaluate and measure.
+07:46 
+
+07:46 >> Got it. And this traditionally was done
+07:48 
+
+07:48 together with EDA software like a
+07:49 
+
+07:49 cadence of a synopsis, right? How does
+07:51 
+
+07:51 your method differ from the classical
+07:53 
+
+07:53 methods? So what we de developed here
+07:57 
+
+07:57 was a
+07:59 
+
+07:59 learning based approach to the problem
+08:02 
+
+08:02 where we would train a reinforcement
+08:04 
+
+08:04 learning agent that would try out
+08:07 
+
+08:07 different ways to approach the placement
+08:09 
+
+08:09 problem and it would learn through
+08:11 
+
+08:11 interactions with this environment that
+08:13 
+
+08:13 we built to learn from the positive
+08:16 
+
+08:16 placement and also the negative examples
+08:19 
+
+08:19 and iteratively improve itself. Uh so
+08:23 
+
+08:23 one of the main differences between our
+08:25 
+
+08:25 approach and all prior approaches were
+08:28 
+
+08:28 uh this ability to learn from experience
+08:32 
+
+08:32 which would enable the model to
+08:34 
+
+08:34 self-improve just like a human expert
+08:37 
+
+08:37 that becomes better as as they solve as
+08:40 
+
+08:40 they solve more instances of the problem
+08:42 
+
+08:42 and harder problems. um our agent uh was
+08:46 
+
+08:46 able to kind of exhibit similar behavior
+08:49 
+
+08:49 and that was a very um major kind of uh
+08:53 
+
+08:53 delta and change between what we had and
+08:56 
+
+08:56 prior approaches.
+08:58 
+
+08:58 >> Yeah. And I remember with I mean if you
+08:59 
+
+08:59 take Alph Go as an analogy move 37 was
+09:02 
+
+09:02 kind of shocking because it was just so
+09:03 
+
+09:03 different from how a human player would
+09:05 
+
+09:05 move. Are you seeing something similar
+09:07 
+
+09:07 happen with with floor planning and chip
+09:08 
+
+09:08 design?
+09:09 
+
+09:09 >> Yeah, we saw these very strange like
+09:11 
+
+09:11 curved placements. So they're donut
+09:14 
+
+09:14 shapes as well. I think humans would
+09:16 
+
+09:16 tend to make the macros very So macros
+09:18 
+
+09:18 are memory components that are larger
+09:20 
+
+09:20 and they make them very aligned and then
+09:22 
+
+09:22 they would put logic maybe in the middle
+09:24 
+
+09:24 and then wires would connect all of
+09:25 
+
+09:25 these components. But if you make the
+09:27 
+
+09:27 shapes curved, you can reduce the wire
+09:29 
+
+09:29 lanes which can reduce a power
+09:31 
+
+09:31 consumption and timing violations. But
+09:33 
+
+09:33 it's just the complexity of making this
+09:35 
+
+09:35 curved placement was like beyond what
+09:38 
+
+09:38 humans would have wanted to take on or
+09:40 
+
+09:40 it felt risky to them. So yeah, these
+09:42 
+
+09:42 aliens.
+09:44 
+
+09:44 >> What was the moment you realized that
+09:46 
+
+09:46 this had the potential to transform the
+09:49 
+
+09:49 entire end to end process, not just the
+09:51 
+
+09:51 floor planning stage and when you
+09:53 
+
+09:53 decided that it had the potential to
+09:55 
+
+09:55 really be a company? There there were a
+09:57 
+
+09:57 few like milestones that uh first was
+10:00 
+
+10:00 like showing that it works that it gets
+10:03 
+
+10:03 the superhuman results on some blocks
+10:08 
+
+10:08 and then later on the chip was actually
+10:11 
+
+10:11 taped out and it came back and it was
+10:13 
+
+10:13 actually working which is a big a big uh
+10:17 
+
+10:17 kind of milestone uh because it can be
+10:19 
+
+10:19 really really costly if for some reason
+10:22 
+
+10:22 our AI missed something. Um so those
+10:25 
+
+10:25 were big moments. Uh the real impact and
+10:29 
+
+10:29 also on the algorithmic side when we saw
+10:31 
+
+10:31 this kind of self-improve improvement
+10:34 
+
+10:34 properties and the fact that models were
+10:37 
+
+10:37 our models were becoming better as they
+10:39 
+
+10:39 solve more problems like that that is
+10:41 
+
+10:41 like very cuz when we get to that point
+10:44 
+
+10:44 then there is no stopping for the AI.
+10:46 
+
+10:46 they can see more data points and solve
+10:48 
+
+10:48 more instances of the chip optimization
+10:51 
+
+10:51 problem than any single human can ever
+10:53 
+
+10:53 do. Mhm.
+10:54 
+
+10:54 >> So that's that's the moment that you're
+10:56 
+
+10:56 like yes so there's a lot more potential
+10:59 
+
+10:59 here but um alpha chip was targeting a
+11:04 
+
+11:04 module a a part a part of physical
+11:07 
+
+11:07 design uh but chip design as we know
+11:09 
+
+11:09 there there are many more to like stages
+11:13 
+
+11:13 to it and many more components and right
+11:16 
+
+11:16 now uh we think that
+11:20 
+
+11:20 everything from the state of AI and the
+11:22 
+
+11:22 capability of AI um both on LLM side and
+11:26 
+
+11:26 other like graph optimizations and other
+11:29 
+
+11:29 approaches and the way that we can
+11:31 
+
+11:31 really scale up these algorithms and
+11:33 
+
+11:33 enable synthetic data very large scale
+11:36 
+
+11:36 distributed computing everything is
+11:38 
+
+11:38 ready to tackle the end to end chip
+11:41 
+
+11:41 design optimization problem so that's
+11:43 
+
+11:43 why we're excited about doing the
+11:45 
+
+11:45 company right now super cool how do you
+11:47 
+
+11:47 think about getting the right training
+11:49 
+
+11:49 data for this market I think it's you
+11:51 
+
+11:51 know it is kind of the binding
+11:52 
+
+11:52 constraint to AI in many ways and is
+11:53 
+
+11:53 this a market where you can have you
+11:55 
+
+11:55 know enough synthetic data or selfplay
+11:57 
+
+11:57 to be able to to bootstrap?
+11:59 
+
+11:59 >> We're excited about synthetic data. So
+12:01 
+
+12:01 obviously there's some open source data
+12:03 
+
+12:03 but it's not that interesting or
+12:05 
+
+12:05 meaningful and you know customers are
+12:08 
+
+12:08 willing to share data with us but we
+12:10 
+
+12:10 don't want to train our models on that
+12:11 
+
+12:11 because we want to keep their data
+12:13 
+
+12:13 private and siloed from each other. But
+12:16 
+
+12:16 synthetic data is where we think there's
+12:17 
+
+12:17 the most promise. Like as Ali and I,
+12:20 
+
+12:20 we've been working on synthetic data
+12:21 
+
+12:21 approaches and for LLMs in various code
+12:23 
+
+12:23 domain tasks across like Claude and
+12:26 
+
+12:26 Gemini. And we see a big opportunity to
+12:29 
+
+12:29 like get a scale of data that would go
+12:31 
+
+12:31 far beyond what any customer could ever
+12:33 
+
+12:33 share with us, like orders and orders of
+12:35 
+
+12:35 magnitude more.
+12:36 
+
+12:36 >> With the TPO program, um I guess at what
+12:40 
+
+12:40 moment did the chip experts stop
+12:42 
+
+12:42 doubting you? And as each successive
+12:45 
+
+12:45 generation came out, what was the
+12:47 
+
+12:47 progressive impact of what RL was able
+12:48 
+
+12:48 to drive in those designs?
+12:50 
+
+12:50 >> I mean, I think that our approach with
+12:51 
+
+12:51 the TPU team is like every week we would
+12:53 
+
+12:53 show them data over and over again
+12:56 
+
+12:56 >> and every week.
+12:57 
+
+12:57 >> Yeah. For every week for like a couple
+12:59 
+
+12:59 years. Yeah. Because I mean, this the
+13:01 
+
+13:01 stakes are very high here. Like if
+13:03 
+
+13:03 there's something wrong with this layout
+13:05 
+
+13:05 like the the setup on the TPU team is
+13:07 
+
+13:07 like this. There are human exp the the
+13:09 
+
+13:09 TPU is quite large and complex. So they
+13:11 
+
+13:11 divide it up into dozens of blocks and
+13:14 
+
+13:14 then each block is owned by a human or a
+13:16 
+
+13:16 team of humans and that's their
+13:18 
+
+13:18 responsibility to get this block right
+13:20 
+
+13:20 if anything goes wrong like it's their
+13:22 
+
+13:22 fault right and so they would generate
+13:24 
+
+13:24 their own layouts in collaboration with
+13:26 
+
+13:26 commercial tools and then we would show
+13:28 
+
+13:28 them our layout some AI generated layout
+13:30 
+
+13:30 it would look weird it would be curved
+13:33 
+
+13:33 and they would you know they would have
+13:34 
+
+13:34 to say okay like I'm picking this AI
+13:36 
+
+13:36 generated layout over my own layout u
+13:39 
+
+13:39 and I'm taking responsibility for that I
+13:41 
+
+13:41 think yeah requires a lot of trust. We
+13:42 
+
+13:42 have to be better in every single metric
+13:44 
+
+13:44 for them to choose that and we saw
+13:46 
+
+13:46 across each successive generation of TPU
+13:49 
+
+13:49 that we were being adopted in more and
+13:51 
+
+13:51 more of the chip block and more of the
+13:53 
+
+13:53 area and also that we were getting
+13:56 
+
+13:56 increasingly superhuman performance. I
+13:58 
+
+13:58 we published a alpha chip blog post I
+14:01 
+
+14:01 think September last year we showed this
+14:03 
+
+14:03 >> curves both say a word on that yeah on
+14:06 
+
+14:06 on the blog post in the superhuman
+14:08 
+
+14:08 performance. Yeah, I think like just
+14:10 
+
+14:10 that in across every single generation
+14:12 
+
+14:12 that we were used which I think there
+14:14 
+
+14:14 were three generations shown in the blog
+14:16 
+
+14:16 post but actually we're used in another
+14:17 
+
+14:17 generation after that was published
+14:20 
+
+14:20 every single one we're seeing more of
+14:22 
+
+14:22 the area and more like increasingly
+14:26 
+
+14:26 superhuman performance.
+14:27 
+
+14:27 >> Yeah. So basically the delta between
+14:30 
+
+14:30 alpha chip layouts and the baseline
+14:32 
+
+14:32 layouts are also growing growing
+14:34 
+
+14:34 >> which is like it's a property of AI and
+14:37 
+
+14:37 how it scales with data.
+14:39 
+
+14:39 >> It makes sense right? We're alpha chip
+14:41 
+
+14:41 was trained on more and more
+14:42 
+
+14:42 >> TPU block so it gets better.
+14:45 
+
+14:45 >> Why is the company called recursive?
+14:47 
+
+14:47 >> Uh because we're recursive we're AI for
+14:50 
+
+14:50 chip design and chip design for AI. Uh
+14:52 
+
+14:52 so recursive self-improvement in terms
+14:55 
+
+14:55 of like the name the spelling of the
+14:57 
+
+14:57 name. Um so the name itself is
+14:59 
+
+14:59 recursive. So the initials R I recursive
+15:02 
+
+15:02 intelligence are the first two letters
+15:03 
+
+15:03 of the company's name.
+15:06 
+
+15:06 >> What does recursive self-improvement
+15:07 
+
+15:07 like? Like like why why does that matter
+15:09 
+
+15:09 for you know the brother AI race like
+15:11 
+
+15:11 just say a word on I think this is this
+15:14 
+
+15:14 is a no problem. Just say a word on it.
+15:16 
+
+15:16 >> Yeah. So af chips are the fuel for AI
+15:20 
+
+15:20 and scaling laws are driving much of the
+15:22 
+
+15:22 progress in AI whether it's on
+15:24 
+
+15:24 pre-training post training test time and
+15:26 
+
+15:26 all that and so the faster we can make
+15:30 
+
+15:30 chips that are more custom or better
+15:33 
+
+15:33 designed for the AIs that we run uh the
+15:36 
+
+15:36 faster we enable uh this efficient more
+15:40 
+
+15:40 efficient kind of compute and that kind
+15:43 
+
+15:43 bends the curve for our scaling laws. So
+15:45 
+
+15:45 that means we get to the next generation
+15:47 
+
+15:47 of AI uh faster and we can gen create
+15:51 
+
+15:51 design better AIs faster. And so this is
+15:54 
+
+15:54 a type of recursive self-improvement
+15:57 
+
+15:57 that we want to see because our AIs then
+15:60 
+
+15:60 can help our chips become better and we
+16:03 
+
+16:03 can design them faster and so on. So
+16:05 
+
+16:05 that is the recursive self
+16:07 
+
+16:07 self-improvement loop that we are going
+16:10 
+
+16:10 after. One of the visions that you have
+16:12 
+
+16:12 is to transform the industry from just
+16:14 
+
+16:14 fabless to designless. What does that
+16:17 
+
+16:17 mean?
+16:18 
+
+16:18 >> So fabless was basically this concept of
+16:20 
+
+16:20 it used to be that people thought that
+16:22 
+
+16:22 no serious chipmaker could exist without
+16:24 
+
+16:24 their own fab. This was like obviously
+16:26 
+
+16:26 before like this multi- trillion dollar
+16:28 
+
+16:28 companies like Nvidia, you know, TSMC
+16:31 
+
+16:31 basically created this whole new world
+16:34 
+
+16:34 where we could have these incredibly
+16:35 
+
+16:35 valuable fabulous companies. So we think
+16:38 
+
+16:38 that there's an opportunity to create
+16:40 
+
+16:40 incredibly valuable companies that don't
+16:42 
+
+16:42 need to have their own in-house design
+16:44 
+
+16:44 teams. So many companies they serve
+16:46 
+
+16:46 these models at massive scale. They're
+16:48 
+
+16:48 spending like you know this I think a
+16:50 
+
+16:50 hundred billion dollar plus on AI
+16:52 
+
+16:52 inference alone like this year and it's
+16:55 
+
+16:55 growing rapidly. So companies would
+16:57 
+
+16:57 benefit from like maybe custom chips to
+16:60 
+
+16:60 serve their models or train them, but
+17:02 
+
+17:02 that requires enormous teams of like
+17:05 
+
+17:05 hundreds or thousands of human experts
+17:07 
+
+17:07 inhouse. Um, and we don't think that's
+17:10 
+
+17:10 necessary. So we want to move towards
+17:12 
+
+17:12 yeah designless paradigm. It's
+17:14 
+
+17:14 fascinating. We're seeing it come true
+17:17 
+
+17:17 with obviously Google and TPUs, Amazon
+17:20 
+
+17:20 with Tranium, also OpenAI and Broadcom
+17:22 
+
+17:22 and and maybe even Tesla. Do you think
+17:26 
+
+17:26 the future is then you know even today
+17:28 
+
+17:28 there's almost like model model
+17:30 
+
+17:30 application codees. Do you think there's
+17:32 
+
+17:32 going to be chip application codees and
+17:35 
+
+17:35 even individual companies will have
+17:36 
+
+17:36 multiple chip architectures as a result?
+17:39 
+
+17:39 >> Yes, we think that there's there we are
+17:42 
+
+17:42 going to see more and more code design
+17:44 
+
+17:44 across the deep learning or AI stack
+17:47 
+
+17:47 from model and data to uh software and
+17:51 
+
+17:51 all the way to the chips. Um and we're
+17:54 
+
+17:54 going to enable that and code design is
+17:56 
+
+17:56 really the seek the secret or the path
+17:60 
+
+17:60 to more efficiency and more performance
+18:02 
+
+18:02 going forward. And uh but right now we
+18:06 
+
+18:06 can't have much of codeesign between
+18:08 
+
+18:08 chips and uh models because of this
+18:12 
+
+18:12 asymmetric uh kind of design cycle for
+18:15 
+
+18:15 chips because it takes so long uh so
+18:18 
+
+18:18 much it takes so much time to design
+18:20 
+
+18:20 chips. the the cycle is there's a
+18:23 
+
+18:23 mismatch between how fast we can create
+18:25 
+
+18:25 the next generation AI methods and how
+18:28 
+
+18:28 fast we can build the next generation
+18:30 
+
+18:30 chips.
+18:31 
+
+18:31 >> Um but if we can make our chips much
+18:33 
+
+18:33 faster then we can enable this co-design
+18:36 
+
+18:36 and co-evolution of workloads
+18:39 
+
+18:39 applications and chips all together. One
+18:42 
+
+18:42 of the things that I loved that we
+18:44 
+
+18:44 talked about early on was that um the
+18:46 
+
+18:46 value you bring isn't just on reducing
+18:48 
+
+18:48 the cost um it takes to actually design
+18:50 
+
+18:50 a chip or the speed at which you can
+18:53 
+
+18:53 accelerate the chip design process
+18:55 
+
+18:55 though that is transformative in itself.
+18:57 
+
+18:57 It's actually to unlock completely new
+18:60 
+
+19:00 potential applications and maybe custom
+19:03 
+
+19:03 silicon as well alongside it. Um can you
+19:06 
+
+19:06 share a little bit about that? What is
+19:08 
+
+19:08 the Cambrian explosion that you might
+19:10 
+
+19:10 expect? I mean, we think computing is
+19:12 
+
+19:12 going to be increasingly ubiquitous in
+19:14 
+
+19:14 every aspect of our lives. So, like
+19:16 
+
+19:16 obviously there are things like ARVR,
+19:18 
+
+19:18 there's like maybe chips in space, even
+19:20 
+
+19:20 like hearing aids. Like there are
+19:22 
+
+19:22 experiences that aren't possible unless
+19:25 
+
+19:25 you can serve them at like sufficiently
+19:26 
+
+19:26 low inference like latency or at like
+19:30 
+
+19:30 low enough power. And we think that like
+19:33 
+
+19:33 custom silicon can enable these
+19:35 
+
+19:35 applications.
+19:36 
+
+19:36 >> Yeah. They think that AI is going to be
+19:38 
+
+19:38 everywhere in every kind of experience,
+19:41 
+
+19:41 every every aspect of industry and life
+19:44 
+
+19:44 going forward. And there are chips that
+19:47 
+
+19:47 would enable these AIs to run. And given
+19:51 
+
+19:51 the scale, we we would want them to run
+19:54 
+
+19:54 as efficient uh very efficiently and uh
+19:58 
+
+19:58 low power, highest speed, all of that.
+20:00 
+
+20:00 And custom silicon is really going to
+20:03 
+
+20:03 enable that. Um and we want to enable
+20:06 
+
+20:06 custom silicon for for basically any
+20:09 
+
+20:09 workload that is being run at sufficient
+20:11 
+
+20:11 scale.
+20:13 
+
+20:13 >> Since we have the ear of whoever is
+20:14 
+
+20:14 listening on the podcast, who might some
+20:16 
+
+20:16 of your ideal customers be? Um there are
+20:20 
+
+20:20 a range of customers that we are uh
+20:22 
+
+20:22 envisioning. uh the the in the first
+20:26 
+
+20:26 phase of the company when we are f when
+20:28 
+
+20:28 we are building ways to accelerate
+20:31 
+
+20:31 dramatically accelerate the chip design
+20:33 
+
+20:33 process our customers would be chip
+20:36 
+
+20:36 designers um like Nvidia AMD ARM
+20:41 
+
+20:41 MediaTek and all all of these companies
+20:43 
+
+20:43 that are already designing their chips
+20:46 
+
+20:46 and all of them would want to faster
+20:48 
+
+20:48 design cycle and we can help them with
+20:50 
+
+20:50 with this uh technology Uh but we we
+20:54 
+
+20:54 don't want to stop there. Uh we uh we
+20:58 
+
+20:58 want to enable any customer that has a
+21:01 
+
+21:01 workload or a family of workloads that
+21:04 
+
+21:04 they want to run that that they're
+21:06 
+
+21:06 running it at sufficient scale and they
+21:09 
+
+21:09 would benefit from a from custom
+21:11 
+
+21:11 silicon. We want to enable them to have
+21:14 
+
+21:14 that without having having teams of
+21:17 
+
+21:17 hundreds to thousands of chip designers
+21:21 
+
+21:21 in their companies like so we I think
+21:24 
+
+21:24 that kind of goes back to this Cambrian
+21:27 
+
+21:27 explosion of chips that we can enable.
+21:30 
+
+21:30 I'd love to talk about the kind of
+21:32 
+
+21:32 existing incumbents in chip design. Um
+21:35 
+
+21:35 so like I grew up in a family of of
+21:37 
+
+21:37 Cadence. Uh, mom and dad both worked at
+21:39 
+
+21:39 Cadence and I think chip design is a
+21:41 
+
+21:41 duopoly between Synopsis and Cadence.
+21:44 
+
+21:44 Um, and I think they're adding AI to
+21:47 
+
+21:47 their product suites. Um, how do you see
+21:51 
+
+21:51 your company playing out versus the
+21:53 
+
+21:53 incumbents adding AI?
+21:54 
+
+21:54 >> I think that we see ourselves as like
+21:57 
+
+21:57 sort of coming from the opposite
+21:58 
+
+21:58 direction like we're a frontier AI lab.
+22:00 
+
+22:00 we come from like you know Google brain
+22:02 
+
+22:02 or like anthropic those kind of like
+22:05 
+
+22:05 backgrounds and we want to kind of
+22:07 
+
+22:07 rethink or reimagine how chip design can
+22:10 
+
+22:10 be done
+22:10 
+
+22:10 >> and we we think that fundamentally in
+22:12 
+
+22:12 order to be able to this isn't like a
+22:15 
+
+22:15 point solution thing where we want to
+22:16 
+
+22:16 replace some module one at a time with
+22:18 
+
+22:18 AI we want to like reimagine and
+22:20 
+
+22:20 co-optimize different stages and we
+22:22 
+
+22:22 think that an AI approach is necessary
+22:24 
+
+22:24 here
+22:26 
+
+22:26 >> what people from the chip design
+22:27 
+
+22:27 industry think of you guys is I would
+22:29 
+
+22:29 imagine there's a range of like from
+22:31 
+
+22:31 excitement to extreme skepticism.
+22:33 
+
+22:33 Extreme excitement to extreme skepticism
+22:34 
+
+22:34 >> or extreme fear fear. Um like yeah what
+22:38 
+
+22:38 do the shift design folks think of you
+22:40 
+
+22:40 all?
+22:40 
+
+22:40 >> I think a lot of them are excited to
+22:42 
+
+22:42 work with us as like potential customers
+22:44 
+
+22:44 and we're excited about them too and a
+22:46 
+
+22:46 lot of people are excited to come join
+22:48 
+
+22:48 us and work together
+22:50 
+
+22:50 >> but yeah of course like what we're doing
+22:51 
+
+22:51 is very ambitious so I'm sure many
+22:53 
+
+22:53 people are skeptical too.
+22:55 
+
+22:55 >> Let's talk about that for a little bit.
+22:57 
+
+22:57 Like there was, you know, there's some
+22:58 
+
+22:58 internet uproar, you know, micro niche
+23:01 
+
+23:01 internet communities love getting spicy
+23:03 
+
+23:03 and there was like some spiciness around
+23:05 
+
+23:05 um alpha chip and like people from media
+23:07 
+
+23:07 saying like ah that's not it's not
+23:09 
+
+23:09 really real for xyz reasons. Like what
+23:11 
+
+23:11 what do you think was behind that and
+23:12 
+
+23:12 what do you think was valid in that
+23:13 
+
+23:13 criticism and what what do you think um
+23:15 
+
+23:15 is the important thing that they weren't
+23:16 
+
+23:16 realizing? Um so whenever AI goes to a
+23:20 
+
+23:20 new field and does something disruptive
+23:25 
+
+23:25 um
+23:27 
+
+23:27 we would see reactions like that and
+23:29 
+
+23:29 this is not necessarily just just for in
+23:32 
+
+23:32 our case it appears almost in every
+23:35 
+
+23:35 other
+23:35 
+
+23:35 >> the bitter lesson
+23:36 
+
+23:36 >> field it's the
+23:38 
+
+23:38 >> and we think the bitter lesson is part
+23:40 
+
+23:40 of it like we are true believers in the
+23:43 
+
+23:43 bitter lesson and it's usually a a
+23:46 
+
+23:46 little challenging ing to kind of like
+23:49 
+
+23:49 um accept that a whole new technology or
+23:54 
+
+23:54 new way of looking into problems that
+23:57 
+
+23:57 people have been have worked on for
+23:59 
+
+23:59 decades is just coming and is solving
+24:02 
+
+24:02 things more end to end and um and these
+24:06 
+
+24:06 people like in this case Anna and I and
+24:08 
+
+24:08 the alpha chip team where we were coming
+24:09 
+
+24:09 from not from not an EDA background uh
+24:13 
+
+24:13 at least we had not worked on that's
+24:15 
+
+24:15 that's that problems space and now we
+24:17 
+
+24:17 could come come up with problems that
+24:19 
+
+24:19 were with uh solutions that were being
+24:22 
+
+24:22 productionized and all that. So, so
+24:25 
+
+24:25 there's always this kind of a reaction
+24:28 
+
+24:28 in the beginning but um somehow the true
+24:31 
+
+24:31 kind of impact of our work was was much
+24:34 
+
+24:34 bigger than just the problem that we
+24:37 
+
+24:37 solved. Um and I can mention some of
+24:40 
+
+24:40 those. For example, uh this bringing
+24:43 
+
+24:43 like doing reinforcement learning
+24:45 
+
+24:45 looking into these graph graph neural
+24:47 
+
+24:47 net optimizations
+24:49 
+
+24:49 uh were applied to many other problems
+24:52 
+
+24:52 across chip design including a best
+24:54 
+
+24:54 paper award in at DAC in 2023. Uh the
+24:58 
+
+24:58 first author of that paper is now is now
+25:01 
+
+25:01 our teammate at recursive and that was
+25:03 
+
+25:03 for physical design. We saw there its
+25:06 
+
+25:06 adoption in other stages of chip design
+25:08 
+
+25:08 like synthesis and so on. The work
+25:11 
+
+25:11 brought a lot of like attention to AI
+25:14 
+
+25:14 back in 2020 in in the chip design field
+25:18 
+
+25:18 and that was uh we think it's like one
+25:21 
+
+25:21 of the most impactful thing as a result
+25:24 
+
+25:24 of our project. Right now there are uh
+25:26 
+
+25:26 conferences like we we actually we are
+25:29 
+
+25:29 involved in one of the LLM AED design
+25:31 
+
+25:31 that are just just focused on AI
+25:34 
+
+25:34 approaches to chip design which back in
+25:36 
+
+25:36 the days was not not a thing. So, so we
+25:40 
+
+25:40 we are there's so many positive things
+25:42 
+
+25:42 happen as a result that we are grateful
+25:44 
+
+25:44 for that and
+25:46 
+
+25:46 >> I had a funny interaction at like ML for
+25:48 
+
+25:48 systems workshop which is this another
+25:50 
+
+25:50 conference that we had started in like
+25:52 
+
+25:52 2018 and this person was like oh alpha
+25:54 
+
+25:54 chip inspired my entire PhD thesis and I
+25:57 
+
+25:57 was like oh that's wonderful and I was
+25:59 
+
+25:59 like so I'm just curious like how did
+26:00 
+
+26:00 you first come across the paper and he
+26:02 
+
+26:02 was like oh because of the controversy
+26:04 
+
+26:04 >> yeah
+26:06 
+
+26:06 very amusing I think the thing that
+26:07 
+
+26:07 surprised me a bit was I thought that
+26:10 
+
+26:10 the people who would be upset by the
+26:11 
+
+26:11 work would be like physical designers
+26:14 
+
+26:14 whose jobs were at risk, right? And
+26:16 
+
+26:16 those and you know those physical
+26:18 
+
+26:18 designers were skeptical. It required a
+26:20 
+
+26:20 lot of data for them to be able to
+26:21 
+
+26:21 change their mind and accept that their
+26:23 
+
+26:23 method worked. But they actually weren't
+26:25 
+
+26:25 the people that were upset. It was
+26:26 
+
+26:26 people who had developed prior methods
+26:28 
+
+26:28 in the field.
+26:29 
+
+26:29 >> And I think in retrospect that makes
+26:31 
+
+26:31 sense. There's something painful about
+26:32 
+
+26:32 like you pour like your like time, your
+26:35 
+
+26:35 like your human ingenuity, your like
+26:38 
+
+26:38 soul a bit into these methods and then
+26:40 
+
+26:40 people come from outside your field and
+26:43 
+
+26:43 then they're using sort of in some sense
+26:45 
+
+26:45 simpler approaches like they're using
+26:46 
+
+26:46 things at scale with data and compute
+26:49 
+
+26:49 and you're outperforming. It's like a
+26:51 
+
+26:51 little it's painful.
+26:52 
+
+26:52 >> Totally.
+26:53 
+
+26:53 >> But you know, everyone we can all you
+26:55 
+
+26:55 know build on top of this work.
+26:57 
+
+26:57 >> Yeah. We can all adapt. Yeah.
+26:58 
+
+26:58 >> Can I ask you the opposite question? Um,
+27:01 
+
+27:01 so I love the bitter lessness answer. I
+27:04 
+
+27:04 I then have the opposite question, which
+27:05 
+
+27:05 is well the large language models became
+27:08 
+
+27:08 so good at coding for example, um, why
+27:12 
+
+27:12 won't they just naturally become good at
+27:14 
+
+27:14 chip design? Why does there need to be a
+27:16 
+
+27:16 specific chip design frontier lab?
+27:19 
+
+27:19 >> Yes. So chip design has a a lot of
+27:23 
+
+27:23 components and some of them are um
+27:27 
+
+27:27 language and related to language and
+27:29 
+
+27:29 code but actually a big chunk of it is
+27:33 
+
+27:33 not related to language and code and it
+27:35 
+
+27:35 has to do with these uh different
+27:39 
+
+27:39 properties and graph structure of of the
+27:42 
+
+27:42 of the chip and all these constraints
+27:44 
+
+27:44 that appear like these are like really
+27:47 
+
+27:47 really hardcale combinatorial
+27:49 
+
+27:49 optimization ation problems that
+27:51 
+
+27:51 required a specific like the custom way
+27:54 
+
+27:54 of uh like specific kind of approaches
+27:58 
+
+27:58 from an AI perspective. Um and our
+28:02 
+
+28:02 approach here is to apply the right
+28:04 
+
+28:04 method to the to the uh to every problem
+28:07 
+
+28:07 and LLMs uh we love them so much and
+28:10 
+
+28:10 we're going to use them extensively. We
+28:12 
+
+28:12 are going to build uh LLMs that are
+28:15 
+
+28:15 really useful for some stages of the
+28:17 
+
+28:17 process but they're uh not going to be
+28:20 
+
+28:20 sufficient for all of this. Um so we are
+28:24 
+
+28:24 going to have our own AIS and specific
+28:27 
+
+28:27 optimizations for different stages and
+28:30 
+
+28:30 those are really important because uh
+28:32 
+
+28:32 unless we design them those those uh
+28:35 
+
+28:35 kind of modules that are really fast
+28:37 
+
+28:37 really optimized we can't iterate around
+28:41 
+
+28:41 them with LLMs or with other methods.
+28:43 
+
+28:43 So, so our approach is going to be a
+28:46 
+
+28:46 very hybrid uh kind of multifaceted uh
+28:51 
+
+28:51 AI that is going to after this uh but we
+28:54 
+
+28:54 are true believers in AGI and
+28:57 
+
+28:57 >> bitter lesson
+28:58 
+
+28:58 >> bitter lesson and we we just want to be
+29:01 
+
+29:01 on the frontier of that with better
+29:03 
+
+29:03 chips.
+29:04 
+
+29:04 >> What do you think a world with AGI looks
+29:06 
+
+29:06 like? It's so hard to imagine the world
+29:09 
+
+29:09 in 10 years or even five. But what what
+29:12 
+
+29:12 do you imagine for whenever that future
+29:14 
+
+29:14 is?
+29:15 
+
+29:15 >> I guess AGI like what does that mean
+29:17 
+
+29:17 human level for everything? Like maybe
+29:19 
+
+29:19 you just have many employees that are
+29:21 
+
+29:21 just effectively you know a bunch of
+29:23 
+
+29:23 compute powering them. I think
+29:26 
+
+29:26 eventually like you know maybe we can
+29:27 
+
+29:27 all take a vacation but
+29:30 
+
+29:30 >> it's just uh so it's going to be extreme
+29:34 
+
+29:34 like uh cases of productivity for every
+29:38 
+
+29:38 single human being. Um and as a result
+29:42 
+
+29:42 we can create a lot of uh economical
+29:45 
+
+29:45 value uh at a scale that is not possible
+29:49 
+
+29:49 today and hopefully distribute it at a
+29:52 
+
+29:52 scale that is not possible today. So uh
+29:56 
+
+29:56 I I have a very optimistic view or view
+29:59 
+
+29:59 about future about the future where we
+30:02 
+
+30:02 when we have AGI just lots of good
+30:04 
+
+30:04 things are going to happen and if you're
+30:06 
+
+30:06 careful about it we can distribute the
+30:08 
+
+30:08 value to to all humans and and that's
+30:11 
+
+30:11 great.
+30:12 
+
+30:12 >> We're going to have data centers in
+30:13 
+
+30:13 space.
+30:15 
+
+30:15 >> Yes, why not?
+30:16 
+
+30:16 >> And is that going to require actually is
+30:17 
+
+30:17 that going to require custom silicon
+30:19 
+
+30:19 because it's like a different thermal
+30:20 
+
+30:20 footprint, right?
+30:21 
+
+30:21 >> Probably. Yeah, there are other there
+30:23 
+
+30:23 are different requirements in space from
+30:25 
+
+30:25 temperature from like kind of resistance
+30:27 
+
+30:27 of the chip and so on. So
+30:29 
+
+30:29 >> yeah, even like working on the Pixel
+30:30 
+
+30:30 phone, they have different corners. So
+30:32 
+
+30:32 like the phone has to be robust to
+30:34 
+
+30:34 different temperatures like different
+30:36 
+
+30:36 voltage settings and so like yeah, you
+30:38 
+
+30:38 just have to increase in many more
+30:40 
+
+30:40 corners I guess for these chips.
+30:42 
+
+30:42 >> Yeah, that's a good example actually of
+30:44 
+
+30:44 like where the different properties of
+30:45 
+
+30:45 you know different heterogeneous compute
+30:47 
+
+30:47 you have different chips, different use
+30:48 
+
+30:48 cases. cutting chips in space right now
+30:52 
+
+30:52 like the whole data center is in space
+30:53 
+
+30:53 you know field is structured around how
+30:55 
+
+30:55 do you make existing uh GPUs perform
+30:59 
+
+30:59 actually in space but I think if
+31:01 
+
+31:01 everything for the pre-rade for your
+31:02 
+
+31:02 company works there's going to be
+31:04 
+
+31:04 specific compute for space
+31:06 
+
+31:06 >> customization for space in this case
+31:10 
+
+31:10 >> so you've already become incredible
+31:12 
+
+31:12 talent magnets in just the couple weeks
+31:14 
+
+31:14 since incorporating the company um we
+31:17 
+
+31:17 have Jiwoo Echen
+31:19 
+
+31:19 Dan, Iraham. Um, what what else are you
+31:24 
+
+31:24 looking for in terms of talent?
+31:26 
+
+31:26 >> I mean, we're definitely building out on
+31:27 
+
+31:27 the technical side. So, every stage of
+31:30 
+
+31:30 tip design, we're looking for top
+31:31 
+
+31:31 talent, but also on the LLM side. So,
+31:34 
+
+31:34 this is like we're we're a frontier AI
+31:36 
+
+31:36 lab. So we want people all the way from
+31:38 
+
+31:38 like pre-training, mid-training,
+31:39 
+
+31:39 post-training, RL training, you know,
+31:42 
+
+31:42 experts in evaluations, data, and also
+31:45 
+
+31:45 on the non-technical side, we want, you
+31:47 
+
+31:47 know, operations specialists who can
+31:49 
+
+31:49 help unlock us like recruiting like um
+31:53 
+
+31:53 chief of staff, like that kind of thing.
+31:56 
+
+31:56 >> What do you hope to have accomplished in
+31:58 
+
+31:58 a year?
+31:59 
+
+31:59 >> Oh, we're going to release our first
+32:01 
+
+32:01 product by a year, but yeah.
+32:04 
+
+32:04 >> Yes. uh
+32:05 
+
+32:05 >> strong commercial partnerships.
+32:07 
+
+32:07 >> Yeah, strong partnership and we want to
+32:09 
+
+32:09 have our first product in that timeline
+32:12 
+
+32:12 that uh we can offer broadly not just to
+32:16 
+
+32:16 our partners but more broadly to other
+32:19 
+
+32:19 chip designers.
+32:20 
+
+32:20 >> Anything you're willing to share in
+32:22 
+
+32:22 terms of what that first product might
+32:23 
+
+32:23 look like?
+32:24 
+
+32:24 >> Yes. Uh it's going to accelerate the
+32:27 
+
+32:27 process. It's going to tackle the long
+32:29 
+
+32:29 poles in chip design and it's going to
+32:31 
+
+32:31 be more end to end than the products
+32:33 
+
+32:33 that we have access to today.
+32:35 
+
+32:35 >> Yes. How do you see the role of a human
+32:37 
+
+32:37 engineer uh evolving in a world where
+32:40 
+
+32:40 the design process is automated? What do
+32:43 
+
+32:43 they end up doing instead with their
+32:46 
+
+32:46 time and talent?
+32:47 
+
+32:47 >> I mean I think there's like our company
+32:49 
+
+32:49 goes through various phases. So like the
+32:51 
+
+32:51 answer to that question maybe changes
+32:52 
+
+32:52 over time. But you know one way to think
+32:55 
+
+32:55 about it is like you know these
+32:57 
+
+32:57 engineers can come work with us and help
+32:59 
+
+32:59 us reimagine the process. So that's one
+33:01 
+
+33:01 way. Um the other thing is like it's
+33:04 
+
+33:04 sort of like as humans start working
+33:05 
+
+33:05 with like claude code or cursor you know
+33:08 
+
+33:08 maybe they're not doing as much hands-on
+33:10 
+
+33:10 coding but they're becoming amplified
+33:11 
+
+33:11 and becoming much more productive
+33:13 
+
+33:13 through these AI tools. So something
+33:15 
+
+33:15 like that like for example even just
+33:17 
+
+33:17 alpha chip we could generate these like
+33:19 
+
+33:19 prito optimal curves of like different
+33:21 
+
+33:21 tradeoffs like every one of these points
+33:23 
+
+33:23 would have taken humans like weeks to
+33:25 
+
+33:25 generate but we could generate many many
+33:27 
+
+33:27 of them because it's it just takes so
+33:29 
+
+33:29 little time and compute for this model.
+33:31 
+
+33:31 So like human can like explore like what
+33:33 
+
+33:33 is it we really want what trade-offs we
+33:35 
+
+33:35 care about.
+33:36 
+
+33:36 >> So we're going to vibe code chips.
+33:37 
+
+33:37 That's what I heard.
+33:38 
+
+33:38 >> Maybe that's not quite but yeah maybe
+33:43 
+
+33:43 kidding. So you've worked with some of
+33:44 
+
+33:44 the greatest of all time um Jeff Dean
+33:48 
+
+33:48 Noom Shazir many many more um very
+33:51 
+
+33:51 closely um Coach Lee and and others what
+33:55 
+
+33:55 are some of the lessons that you've
+33:57 
+
+33:57 learned from them or experiences that
+33:58 
+
+33:58 have really shaped you and and how have
+34:00 
+
+34:00 they shaped your perspective today? So I
+34:03 
+
+34:03 I think with uh all of these uh people
+34:06 
+
+34:06 that you met, they're extraordinary. So
+34:09 
+
+34:09 just setting the bar really high and um
+34:14 
+
+34:14 all of them are also extremely
+34:16 
+
+34:16 passionate about what they're doing and
+34:18 
+
+34:18 that's how Anna and I feel about this
+34:20 
+
+34:20 company like we are so excited to solve
+34:23 
+
+34:23 this problem no matter what. So that's
+34:25 
+
+34:25 something that
+34:27 
+
+34:27 we think is very important to actually
+34:30 
+
+34:30 uh be successful. And um the other thing
+34:34 
+
+34:34 about them is just they're just really
+34:36 
+
+34:36 nice people.
+34:37 
+
+34:37 >> Yeah.
+34:37 
+
+34:37 >> And that setting that nice culture,
+34:41 
+
+34:41 collaborative c culture when where
+34:44 
+
+34:44 everyone is heard and uh everyone can do
+34:47 
+
+34:47 their best work. That's like a very
+34:49 
+
+34:49 important important thing that we want
+34:52 
+
+34:52 to uh follow their roots as well.
+34:55 
+
+34:55 >> That's right. I think like Jeff for
+34:57 
+
+34:57 example like incredible breath,
+34:59 
+
+34:59 incredible depth, incredible speed, but
+35:01 
+
+35:01 also like very high integrity. Like he
+35:04 
+
+35:04 treats every single person with like
+35:06 
+
+35:06 respect. It doesn't matter if they're
+35:07 
+
+35:07 like president of the universe versus
+35:10 
+
+35:10 like they're an intern or something.
+35:11 
+
+35:11 Like it's equal like treatment. And I
+35:14 
+
+35:14 think that's like we want to embody that
+35:15 
+
+35:15 too.
+35:17 
+
+35:17 And I just remember like Jeff, he
+35:19 
+
+35:19 actually gave me like a performance
+35:20 
+
+35:20 review, a corrective feedback or
+35:22 
+
+35:22 something. He was like, "Ask for more
+35:24 
+
+35:24 from other people." And so I wanted to
+35:28 
+
+35:28 Yeah, expect more from others, too.
+35:32 
+
+35:32 >> I like that. I like what you shared. I I
+35:34 
+
+35:34 saw all these um photos of Jeff at
+35:38 
+
+35:38 Nurups running with like many people,
+35:42 
+
+35:42 which I think perfectly encapsulates
+35:44 
+
+35:44 what you just said. He he welcomes
+35:46 
+
+35:46 others in and he you know motivates them
+35:49 
+
+35:49 and and spends time with anyone no
+35:51 
+
+35:51 matter what.
+35:52 
+
+35:52 >> I remember clock also he was our manager
+35:54 
+
+35:54 almost for 10 years. He was telling us
+35:57 
+
+35:57 like deep learning makes all of us
+35:58 
+
+35:58 renaissance people like we can make
+35:60 
+
+35:60 contributions in many different types of
+36:02 
+
+36:02 fields and I think that's true here as
+36:04 
+
+36:04 well. And he also said like have fun in
+36:07 
+
+36:07 this company like actually enjoy. And I
+36:09 
+
+36:09 think we think that's important too. We
+36:11 
+
+36:11 think if everyone's having fun, then
+36:13 
+
+36:13 we're going to do even better work
+36:14 
+
+36:14 together.
+36:15 
+
+36:15 >> I love that.
+36:16 
+
+36:16 >> All right. Thank you so much, Anna.
+36:19 
+
+36:19 We're so excited for your first year at
+36:21 
+
+36:21 Recursive, and we're really, really
+36:23 
+
+36:23 excited about it being the frontier lab
+36:25 
+
+36:25 for AI chip design.
+36:28 
+
+36:28 >> Thank you so much.

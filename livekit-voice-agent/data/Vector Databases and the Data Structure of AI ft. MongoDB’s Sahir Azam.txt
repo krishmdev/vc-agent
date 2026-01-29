@@ -1,0 +1,3817 @@
+00:00 in a world of probabilistic software you
+00:02 
+
+00:02 know the measure of quality is about
+00:04 
+
+00:04 that kind of Last Mile how do you get to
+00:06 
+
+00:06 99.99 X you know sort of quality and so
+00:10 
+
+00:10 will the domain of sort of quality
+00:11 
+
+00:11 engineering that we typically associate
+00:13 
+
+00:13 with manufacturing kind of apply to
+00:15 
+
+00:15 software and and that really got me
+00:16 
+
+00:16 thinking in terms of you're not going to
+00:18 
+
+00:18 be able to necessarily get a
+00:19 
+
+00:19 deterministic result like you would with
+00:21 
+
+00:21 a traditional application talking to a
+00:23 
+
+00:23 traditional database so therefore the
+00:25 
+
+00:25 quality of your embedding models how you
+00:28 
+
+00:28 construct your rag architectures mer it
+00:30 
+
+00:30 with the real time view of what's
+00:32 
+
+00:32 happening in the transactions in your
+00:34 
+
+00:34 business that's what's going to get you
+00:35 
+
+00:35 that high quality retrieval and result
+00:38 
+
+00:38 and unless it's high quality in a world
+00:40 
+
+00:40 where it's probabilistic I don't see it
+00:42 
+
+00:42 going after mission critical use cases
+00:44 
+
+00:44 in a conservative Enterprise and that
+00:47 
+
+00:47 that is a problem space we're very
+00:48 
+
+00:48 focused on right now
+00:51 
+
+00:51 [Music]
+01:06 
+
+01:06 today we're excited to welcome sahiram
+01:08 
+
+01:08 who leads product and growth at mongod
+01:10 
+
+01:10 DB sahir was one of the Architects
+01:12 
+
+01:12 behind Mongo's successful transformation
+01:13 
+
+01:13 from on Prem to the cloud and he's now
+01:15 
+
+01:15 helping to steer Mongo's evolution in AI
+01:18 
+
+01:18 first world Mongo's journey into Vector
+01:20 
+
+01:20 databases began with semantic search for
+01:22 
+
+01:22 e-commerce but it's evolved into
+01:23 
+
+01:23 something a lot more fundamental
+01:25 
+
+01:25 becoming the memory and the state layer
+01:26 
+
+01:26 for AI applications we're excited to get
+01:29 
+
+01:29 sahar's take on the past and the future
+01:31 
+
+01:31 of vector databases and what shape
+01:34 
+
+01:34 infrastructure itself will take in A
+01:35 
+
+01:35 Brave New World of AI agents and
+01:37 
+
+01:37 applications and unlimited software
+01:40 
+
+01:40 creation so here welcome to the show
+01:43 
+
+01:43 we're so excited to have you here thanks
+01:44 
+
+01:44 Sonia I'm super excited to be here uh
+01:47 
+
+01:47 we're going to dig into everything from
+01:48 
+
+01:48 Vector databases to embeddings to
+01:50 
+
+01:50 knowledge grafts and much much more on
+01:52 
+
+01:52 this episode I'd love to just start with
+01:55 
+
+01:55 the big picture question uh and maybe
+01:57 
+
+01:57 your hot take is AI going to change
+01:60 
+
+01:60 database Market uh that's an interesting
+02:03 
+
+02:03 question I think the the related and
+02:06 
+
+02:06 probably more interesting question is
+02:08 
+
+02:08 whether it's going to change software
+02:09 
+
+02:09 development in applications and I think
+02:11 
+
+02:11 that it really is you know I think we're
+02:13 
+
+02:13 seeing AI power generative AI powered
+02:16 
+
+02:16 applications address a set of use cases
+02:18 
+
+02:18 that traditional kind of deterministic
+02:20 
+
+02:20 software hasn't been able to go after
+02:22 
+
+02:22 and I know I've read some stuff from
+02:23 
+
+02:23 seoa around the idea of like you know
+02:26 
+
+02:26 Services as software Etc in that whole
+02:28 
+
+02:28 space and we firmly see that in terms of
+02:30 
+
+02:30 our early adoption of what we're seeing
+02:32 
+
+02:32 in the market and so that in turn
+02:35 
+
+02:35 changes a fundamental way we will
+02:36 
+
+02:36 interact with software it changes the
+02:38 
+
+02:38 way business logic of applications will
+02:40 
+
+02:40 evolve over time with things like agents
+02:43 
+
+02:43 and that all has underlying implications
+02:45 
+
+02:45 on how the database layer will need to
+02:46 
+
+02:46 transform as well can we can we poke on
+02:49 
+
+02:49 that for just a minute so I'm
+02:50 
+
+02:50 curious since you guys are operating at
+02:54 
+
+02:54 a layer will you see a lot of what's
+02:56 
+
+02:56 being
+02:56 
+
+02:56 developed um what what are people
+02:59 
+
+02:59 developing today that they could could
+02:60 
+
+02:60 not have developed a few years ago
+03:02 
+
+03:02 before these capabilities emerged yeah I
+03:06 
+
+03:06 think on one hand one Trend we're seeing
+03:08 
+
+03:08 is certainly that it's much more easy
+03:10 
+
+03:10 and efficient to create software than
+03:12 
+
+03:12 there ever was before so you know the
+03:14 
+
+03:14 fact that there will be more software in
+03:15 
+
+03:15 the world means that there will that
+03:17 
+
+03:17 will have implications in terms of data
+03:19 
+
+03:19 persistent storage and processing so
+03:21 
+
+03:21 that's kind of one you know sort of
+03:22 
+
+03:22 related piece but in terms of use cases
+03:25 
+
+03:25 I think the fact that we can now
+03:27 
+
+03:27 interact with computers in completely
+03:29 
+
+03:29 different ways beond on just the Classic
+03:31 
+
+03:31 web and mobile applications that we're
+03:33 
+
+03:33 all used to you know the more
+03:34 
+
+03:34 interactive experiences I think the
+03:36 
+
+03:36 blending of the physical and virtual
+03:38 
+
+03:38 worlds in ways that I don't think we can
+03:40 
+
+03:40 you know we've really seen yet obviously
+03:41 
+
+03:41 there's a big Trend around how AI
+03:43 
+
+03:43 impacts robotics you know there's a
+03:45 
+
+03:45 great blog I read from I think it was
+03:47 
+
+03:47 from Lang chain the other day around
+03:48 
+
+03:48 sort of ambient agents and sort of you
+03:50 
+
+03:50 know reacting to signals without
+03:52 
+
+03:52 necessarily intentional Human Action I
+03:54 
+
+03:54 think we're at the verly early stages of
+03:57 
+
+03:57 that top layer of sort of human computer
+03:59 
+
+03:59 interaction fundamentally changing and I
+04:01 
+
+04:01 think that can now tackle a whole bunch
+04:03 
+
+04:03 of use cases in terms of improving the
+04:05 
+
+04:05 productivity of our personal lives our
+04:08 
+
+04:08 professional lives and go after you know
+04:11 
+
+04:11 fundamental productivity that I don't
+04:12 
+
+04:12 think traditional software has gone
+04:14 
+
+04:14 after I think that's the biggest kind of
+04:16 
+
+04:16 meta change that I think this all has
+04:18 
+
+04:18 the potential to go do you have a
+04:19 
+
+04:19 favorite example either one that either
+04:21 
+
+04:21 a customer obviously you love all
+04:23 
+
+04:23 of your customers but do you have a
+04:25 
+
+04:25 favorite use case either that you've
+04:26 
+
+04:26 seen a uh one of your customers build or
+04:28 
+
+04:28 a favorite use case that you yourself
+04:30 
+
+04:30 use yeah I would say generally we're
+04:32 
+
+04:32 seeing more and like most things we see
+04:35 
+
+04:35 more sophisticated Advanced use cases
+04:38 
+
+04:38 tend to come up first in you know more
+04:40 
+
+04:40 risk tolerant sort of faster moving
+04:42 
+
+04:42 startups but for that reason I'll pick a
+04:44 
+
+04:44 couple Enterprise use cases that have
+04:46 
+
+04:46 kind of captured our imagination one is
+04:49 
+
+04:49 we worked with a large automaker in
+04:51 
+
+04:51 Europe and you know they have huge
+04:54 
+
+04:54 fleets of cars globally they have a
+04:56 
+
+04:56 bunch of first and third party you know
+04:58 
+
+04:58 mechanics and maintenance sites people
+05:00 
+
+05:00 whether they're dealers or other sites
+05:01 
+
+05:01 where people go to get TR you know help
+05:03 
+
+05:03 when their cars are having issues and
+05:05 
+
+05:05 you know the common problem if I hear
+05:07 
+
+05:07 something funny with my car like how do
+05:08 
+
+05:08 I go diagnosis means that you typically
+05:11 
+
+05:11 go in mechanic who has expertise has to
+05:13 
+
+05:13 go kind of Tinker around figure out what
+05:15 
+
+05:15 it is and then go through a manual to
+05:17 
+
+05:17 figure out what the remediation steps is
+05:19 
+
+05:19 or what parts they have to order to fix
+05:20 
+
+05:20 it y we work with them to actually
+05:23 
+
+05:23 identify an audio embedding model that
+05:26 
+
+05:26 can allow them to record with a phone
+05:29 
+
+05:29 the corpus of and semantically match up
+05:31 
+
+05:31 with a corpus of sounds that are typical
+05:33 
+
+05:33 problems that are known problems with
+05:35 
+
+05:35 you know their their their cars or any
+05:37 
+
+05:37 cars which shrinks down the actual
+05:39 
+
+05:39 diagnosis time you know by typically
+05:43 
+
+05:43 could take hours if it was a tricky
+05:44 
+
+05:44 diagnosis to something that could take
+05:45 
+
+05:45 now seconds it's almost like Shazam for
+05:47 
+
+05:47 car diagnostic and then on the other
+05:50 
+
+05:50 side of it instead of looking through
+05:51 
+
+05:51 PDFs or you know physical manuals on
+05:54 
+
+05:54 what the approved remediation steps are
+05:56 
+
+05:56 to fix it now it's sort of a natural
+05:58 
+
+05:58 language interface to say okay this is
+05:60 
+
+05:60 is the the issue that we match to what
+06:01 
+
+06:01 should I do next in terms of fixing the
+06:04 
+
+06:04 problem and you know that's all about
+06:06 
+
+06:06 unstructured data semantic meaning of
+06:08 
+
+06:08 the information both and the problem
+06:10 
+
+06:10 with that car and if you extrapolate the
+06:12 
+
+06:12 business case of that though across
+06:14 
+
+06:14 thousands of dealerships or hundreds of
+06:17 
+
+06:17 you know different models and iterations
+06:18 
+
+06:18 of cars like that's millions of dollars
+06:21 
+
+06:21 of potential savings for them and a
+06:22 
+
+06:22 better better customer experience and
+06:24 
+
+06:24 you know consumer sentiment around their
+06:26 
+
+06:26 brand and so that was kind of definitely
+06:28 
+
+06:28 one cool one another one uh you know in
+06:31 
+
+06:31 a more very heavily regulated industry
+06:33 
+
+06:33 worked with Novo Nordisk uh you know one
+06:35 
+
+06:35 of the largest pH Pharmaceuticals you
+06:37 
+
+06:37 know obviously getting a drug approved
+06:39 
+
+06:39 is a highly um scrutinized process and
+06:43 
+
+06:43 so there's this idea of a clinical study
+06:45 
+
+06:45 report that pharmaceutical companies
+06:47 
+
+06:47 have to fill out which typically takes a
+06:50 
+
+06:50 lot of manual effort to write and
+06:52 
+
+06:52 structure and review and you know kind
+06:54 
+
+06:54 of get approved they were basically able
+06:56 
+
+06:56 to use a large language model again
+06:58 
+
+06:58 train that against all their approved
+07:00 
+
+07:00 drugs all the process they do manually
+07:02 
+
+07:02 and now they can get that initial draft
+07:05 
+
+07:05 of a CSR as they call it within a few
+07:07 
+
+07:07 minutes and so it shrinks a lot of just
+07:09 
+
+07:09 the initial drafting Cycles the quality
+07:12 
+
+07:12 of that initial draft is higher than
+07:14 
+
+07:14 what they typically see if it was you
+07:15 
+
+07:15 know manually done and so again like you
+07:17 
+
+07:17 can draw a pretty quick line towards
+07:20 
+
+07:20 true dollar Roi savings on use cases
+07:23 
+
+07:23 that are you know not necessarily even
+07:25 
+
+07:25 bleeding edge in some aspects of what
+07:26 
+
+07:26 we're seeing in the in the sort of early
+07:28 
+
+07:28 stage ecosystem but are being applied in
+07:30 
+
+07:30 a context and scale in industries that
+07:32 
+
+07:32 obviously have big implications for you
+07:35 
+
+07:35 know for them and for their customers y
+07:37 
+
+07:37 so now that the shape of these
+07:38 
+
+07:38 applications is changing um and you know
+07:41 
+
+07:41 they're multimodal as as you said
+07:43 
+
+07:43 they're they're agentic they're ambient
+07:45 
+
+07:45 agentic what does that mean for the
+07:47 
+
+07:47 database layer and if you wouldn't mind
+07:48 
+
+07:48 just giving us the the 101 today of like
+07:50 
+
+07:50 the the role that databases play for
+07:53 
+
+07:53 software as we know it today
+07:54 
+
+07:54 deterministic software and what role do
+07:56 
+
+07:56 you see database is playing in this kind
+07:58 
+
+07:58 of new evolving market for AI
+07:60 
+
+07:60 applications is it good news or bad news
+08:02 
+
+08:02 uh we're excited so two reasons one you
+08:04 
+
+08:04 know the point I lightly brought up
+08:06 
+
+08:06 earlier which is if there's more
+08:07 
+
+08:07 software in the world which I think
+08:09 
+
+08:09 generative AI will just make it easier
+08:10 
+
+08:10 to create more types of software
+08:12 
+
+08:12 experiences I think that in general is a
+08:14 
+
+08:14 Tailwind for any data persistence
+08:17 
+
+08:17 infrastructure you know technology it
+08:19 
+
+08:19 doesn't necessarily mean that mongodb or
+08:21 
+
+08:21 any other particular vendor is
+08:22 
+
+08:22 automatically going to be the
+08:24 
+
+08:24 beneficiary there's a lot of execution
+08:25 
+
+08:25 that goes into making sure we're
+08:27 
+
+08:27 technologically and you know for our
+08:29 
+
+08:29 partnership and ecosystems well set up
+08:31 
+
+08:31 for that which is where I spend a lot of
+08:32 
+
+08:32 my time but in general like more
+08:34 
+
+08:34 software means more data and needs for
+08:36 
+
+08:36 persistence and of that information so
+08:38 
+
+08:38 that's a very macro sort of I think
+08:40 
+
+08:40 Tailwind that we're definitely
+08:42 
+
+08:42 definitely excited about I think the
+08:44 
+
+08:44 shift from relatively simplistic gen use
+08:48 
+
+08:48 cases often times where you're just
+08:49 
+
+08:49 interacting via chat with an llm doesn't
+08:53 
+
+08:53 necessarily need very Advanced kind of
+08:55 
+
+08:55 data persistence but as Enterprises need
+08:58 
+
+08:58 to ground the results of their AI
+09:01 
+
+09:01 applications to proprietary information
+09:03 
+
+09:03 or to control the result set so the
+09:05 
+
+09:05 retrieval is of high quality now there
+09:07 
+
+09:07 needs to be a lot of interaction with
+09:09 
+
+09:09 these foundational models and their
+09:11 
+
+09:11 underlying information about how they
+09:12 
+
+09:12 run their business and a lot of that is
+09:14 
+
+09:14 not necessarily publicly trainable
+09:16 
+
+09:16 information on the internet and so
+09:18 
+
+09:18 whether that's you know Advanced or
+09:20 
+
+09:20 simplistic rag workflows whether that's
+09:21 
+
+09:21 fine-tuning different approaches around
+09:24 
+
+09:24 post training there this I think there
+09:25 
+
+09:25 will be more need to interact with an
+09:28 
+
+09:28 Enterprise's data and foundational
+09:30 
+
+09:30 models over time especially as these
+09:32 
+
+09:32 models become lower latency and so they
+09:35 
+
+09:35 interact more with the real-time
+09:36 
+
+09:36 business data that's being generated in
+09:39 
+
+09:39 an organization and that's really what
+09:41 
+
+09:41 we're seeing in the most advanced
+09:42 
+
+09:42 companies right now is they're they're
+09:43 
+
+09:43 building really sophisticated ways to
+09:46 
+
+09:46 control the output of these llms based
+09:48 
+
+09:48 on the use case that they're trying to
+09:50 
+
+09:50 drive towards and merging it with the
+09:52 
+
+09:52 operational data that drives their
+09:53 
+
+09:53 application or their business and so I
+09:56 
+
+09:56 think we're still early days in that in
+09:57 
+
+09:57 terms of where I think that can go but I
+09:60 
+
+09:60 really do fundamentally believe the
+10:01 
+
+10:01 databases will get to get much better at
+10:05 
+
+10:05 high quality retrieval in particular of
+10:07 
+
+10:07 on structured data because you know when
+10:09 
+
+10:09 I look at all these embedding models and
+10:11 
+
+10:11 just what we can do with probabilistic
+10:13 
+
+10:13 software it takes the value out of 70%
+10:16 
+
+10:16 of the world's data unstructured data
+10:18 
+
+10:18 and makes it applicable to applications
+10:20 
+
+10:20 in a way that just really wasn't
+10:22 
+
+10:22 possible before and I think that's the
+10:23 
+
+10:23 real opportunity what's the Devil's
+10:25 
+
+10:25 Advocate answer to that so for example
+10:27 
+
+10:27 I'm thinking of Jensen at our first AI S
+10:30 
+
+10:30 I think you were at that a he said
+10:31 
+
+10:31 something like every pixel is going to
+10:33 
+
+10:33 be generated not rendered and I think of
+10:35 
+
+10:35 rendered as you know retrieved from
+10:36 
+
+10:36 database somewhere uh like what what is
+10:39 
+
+10:39 the devil's advocate point of view to
+10:40 
+
+10:40 the you know is it good or bad for
+10:42 
+
+10:42 databases as generative AI takes off
+10:45 
+
+10:45 yeah I think the Devil's Advocate view
+10:46 
+
+10:46 to me is less about whether there is a
+10:48 
+
+10:48 database somewhere behind the scenes
+10:50 
+
+10:50 more about where is that abstraction and
+10:53 
+
+10:53 is that something that's a choice of the
+10:55 
+
+10:55 application developer building that
+10:56 
+
+10:56 application is or is it abstracted
+10:59 
+
+10:59 behind some level API or is that a
+11:01 
+
+11:01 choice that an llm makes in terms of as
+11:03 
+
+11:03 it autog generates software or Auto
+11:04 
+
+11:04 renders that environment where does it
+11:06 
+
+11:06 choose to persist that data yeah but at
+11:08 
+
+11:08 the end of the day you know we like to
+11:10 
+
+11:10 joke internally an AI application is
+11:12 
+
+11:12 still an application you still need to
+11:14 
+
+11:14 persist transaction safely to make sure
+11:16 
+
+11:16 People's Bank balances are accurate you
+11:17 
+
+11:17 still need you know the ability to
+11:20 
+
+11:20 search information based on text
+11:22 
+
+11:22 keywords not only on the semantic
+11:24 
+
+11:24 meaning and so I view all these
+11:26 
+
+11:26 generative AI needs from the data layer
+11:29 
+
+11:29 as ADD
+11:30 
+
+11:30 not necessarily substitutive to the
+11:32 
+
+11:32 needs of a traditional application and
+11:35 
+
+11:35 you know one of the reasons people love
+11:37 
+
+11:37  today is the developer experience
+11:39 
+
+11:39 right if you fast forward the clock and
+11:41 
+
+11:41 you know maybe there's x00 million human
+11:45 
+
+11:45 human software developers but there's
+11:46 
+
+11:46 trillions of call it agentic developers
+11:50 
+
+11:50 what makes a good Agent developer
+11:52 
+
+11:52 experience like why would an agent
+11:54 
+
+11:54 choose to use as its database if
+11:56 
+
+11:56 that even makes does that make sense as
+11:57 
+
+11:57 the question yeah I think it does and
+11:58 
+
+11:58 it's something you know we think a lot
+11:60 
+
+11:60 about sort of how the nature of software
+12:02 
+
+12:02 development will change and I think one
+12:04 
+
+12:04 of the things as we move from more
+12:05 
+
+12:05 simplistic generative AI kind of powered
+12:07 
+
+12:07 applications to more advanced ones with
+12:09 
+
+12:09 more you know agent-- driven business
+12:11 
+
+12:11 logic state will be more necessary
+12:13 
+
+12:13 because now you're coordinating you know
+12:16 
+
+12:16 a more complicated workflow where you
+12:17 
+
+12:17 need to be able to track the results of
+12:19 
+
+12:19 a particular piece of a transaction and
+12:21 
+
+12:21 coordinate that and all of that requires
+12:23 
+
+12:23 storing that somewhere and you know
+12:25 
+
+12:25 manipulating and updating it over time
+12:26 
+
+12:26 so I think in general things are
+12:28 
+
+12:28 becoming more state full in generative
+12:30 
+
+12:30 AI applications over time which is a
+12:32 
+
+12:32 drag of of data and database you know
+12:35 
+
+12:35 consumption uh overall you know in terms
+12:38 
+
+12:38 of where things are going now I think in
+12:40 
+
+12:40 terms of the abstraction you know I
+12:43 
+
+12:43 think the question is if you know
+12:44 
+
+12:44 developer experience is the thing that
+12:46 
+
+12:46 you know makes any technology really
+12:48 
+
+12:48 accessible today for human developers
+12:49 
+
+12:49 does that same value proposition hold
+12:52 
+
+12:52 for AI and I think what we're seeing
+12:55 
+
+12:55 even if you look Beyond just the
+12:56 
+
+12:56 database space think of you know the
+12:58 
+
+12:58 adoption we're seeing of some of these
+12:60 
+
+12:60 uh call it AI platform as a service type
+13:02 
+
+13:02 companies you know look at the the
+13:04 
+
+13:04 adoption of things like versel vzero or
+13:06 
+
+13:06 you see things like repet or whatnot I
+13:08 
+
+13:08 think we're seeing that at least with
+13:10 
+
+13:10 early AI generated software there's a
+13:12 
+
+13:12 preference for great developer
+13:14 
+
+13:14 experience Allah higher levels of
+13:16 
+
+13:16 abstraction so um I think it's too early
+13:18 
+
+13:18 to be definitive on that but you know I
+13:19 
+
+13:19 think we're seeing some promising signs
+13:22 
+
+13:22 speaking of higher levels of abstraction
+13:24 
+
+13:24 um I forget who had this oneliner
+13:27 
+
+13:27 somebody had a good oneliner which was
+13:29 
+
+13:29 you know English is the ultimate layer
+13:31 
+
+13:31 of abstraction right and at the
+13:34 
+
+13:34 limit you will just be able to describe
+13:37 
+
+13:37 and plain English you know what product
+13:39 
+
+13:39 requirements you have and a foundation
+13:41 
+
+13:41 model will spit out the code required to
+13:44 
+
+13:44 you know build whatever application you
+13:46 
+
+13:46 want to
+13:47 
+
+13:47 build first off do you believe in that
+13:50 
+
+13:50 as a future State and then secondly is
+13:53 
+
+13:53 that great news for because
+13:55 
+
+13:55 there's just going to be so much more
+13:56 
+
+13:56 software and most of it's going to need
+13:58 
+
+13:58 a database sitting beneath it or is that
+14:01 
+
+14:01 bad news for because it neuters
+14:03 
+
+14:03 some of that development experience that
+14:05 
+
+14:05 is a good Advantage for you do you see
+14:07 
+
+14:07 that playing out and what does that mean
+14:08 
+
+14:08 for yeah I think I think for
+14:11 
+
+14:11 databases in general I feel pretty
+14:13 
+
+14:13 confident it's a absolutely a Tailwind I
+14:16 
+
+14:16 think mongodb specifically one of the
+14:18 
+
+14:18 advantages we have is that our data
+14:20 
+
+14:20 model is really well tuned to managing
+14:22 
+
+14:22 structured data semi-structured data and
+14:24 
+
+14:24 now with embeddings unstructured data so
+14:26 
+
+14:26 I think we have some fundamental
+14:27 
+
+14:27 architectural advantages We Believe even
+14:30 
+
+14:30 more of an uh you know prevalent and
+14:32 
+
+14:32 important in AI as you're representing
+14:34 
+
+14:34 all these forms of data regardless of
+14:36 
+
+14:36 whether the software above it that's
+14:37 
+
+14:37 interacting with it is human generated
+14:39 
+
+14:39 or machine generated so to speak now
+14:42 
+
+14:42 that being said we're certainly not
+14:43 
+
+14:43 resting on our Laurels that that's going
+14:45 
+
+14:45 to happen without us being really
+14:47 
+
+14:47 intentional about it so we are working
+14:49 
+
+14:49 with you know the whole ecosystem of AI
+14:51 
+
+14:51 Frameworks and model providers to make
+14:53 
+
+14:53 sure that we are well integrated whether
+14:55 
+
+14:55 it's inference players or you know Dev
+14:58 
+
+14:58 Frameworks Etc to make sure that just
+14:60 
+
+14:60 like JavaScript and Web 2.0 and Cloud
+15:03 
+
+15:03 were big Tailwinds and are big drivers
+15:05 
+
+15:05 of our business that the modern Stacks
+15:07 
+
+15:07 that are being used to generate these
+15:09 
+
+15:09 applications to be is well
+15:11 
+
+15:11 integrated as a default in so I think
+15:12 
+
+15:12 there's a lot of work happening there
+15:14 
+
+15:14 we're also focused on this idea of you
+15:16 
+
+15:16 know what is the equivalent of you know
+15:19 
+
+15:19 quality training or even SEO for llms
+15:23 
+
+15:23 meaning you know if you go scrape the
+15:26 
+
+15:26 internet to train a code assistant on
+15:28 
+
+15:28 any technology is is that necessarily
+15:30 
+
+15:30 what the best practices are probably not
+15:32 
+
+15:32 but there's no standard way for you know
+15:35 
+
+15:35 an a vendor or a technology expert
+15:38 
+
+15:38 behind a particular area to submit the
+15:40 
+
+15:40 canonical training data for Quality
+15:43 
+
+15:43 mongodb code for example and so we're
+15:45 
+
+15:45 working with some of the labs on
+15:46 
+
+15:46 methodologies around that we're doing
+15:48 
+
+15:48 things just even without involvement to
+15:49 
+
+15:49 test sort of you know what we can be
+15:51 
+
+15:51 doing to create you know data sets that
+15:53 
+
+15:53 allow for the quality of the outputs of
+15:55 
+
+15:55 these systems to be reliable you know
+15:58 
+
+15:58 last thing we want is some going and
+15:59 
+
+15:59 saying I want to use mongodb help me
+16:01 
+
+16:01 generate some code for some
+16:02 
+
+16:02 functionality and it's you know not high
+16:05 
+
+16:05 quality performs poorly and so there's
+16:07 
+
+16:07 various facets of this that I think are
+16:09 
+
+16:09 very intentional efforts to make sure
+16:11 
+
+16:11 that our technology fits well as things
+16:13 
+
+16:13 evolve over the next few years yeah so
+16:15 
+
+16:15 actually to that point I think there's
+16:16 
+
+16:16 been a lot of chatter and increasing
+16:18 
+
+16:18 chatter that you know we're we're
+16:19 
+
+16:19 hitting a wall uh in terms of just
+16:22 
+
+16:22 public data globally available mhm
+16:24 
+
+16:24 there's a lot of data still left in
+16:26 
+
+16:26 private Enterprise data you guys sit in
+16:28 
+
+16:28 the middle of of a lot of it um I'm
+16:31 
+
+16:31 curious how you think about uh your role
+16:34 
+
+16:34 in kind of that you know as as the
+16:36 
+
+16:36 market of all sources next leg of
+16:37 
+
+16:37 finding that next uh trillion tokens
+16:40 
+
+16:40 worth of training data um do you see
+16:42 
+
+16:42 yourselves you know being a training
+16:44 
+
+16:44 data provider for your customers do you
+16:46 
+
+16:46 see yourselves partnering with the labs
+16:48 
+
+16:48 um are your customers mostly you know
+16:50 
+
+16:50 looking to use their data in for
+16:53 
+
+16:53 uh for for rag or are they looking at
+16:55 
+
+16:55 also training models on on the data they
+16:56 
+
+16:56 have in your systems yeah definitely you
+16:58 
+
+16:58 know I think
+16:59 
+
+16:59 just to be clear any of the data that we
+17:02 
+
+17:02 manage on behalf of our customers is
+17:03 
+
+17:03 owned by our customers so you know we're
+17:05 
+
+17:05 certainly not taking that data and you
+17:08 
+
+17:08 know training any models that are
+17:09 
+
+17:09 outside of what that customer wants us
+17:11 
+
+17:11 to train or use for rag so I think that
+17:14 
+
+17:14 definitely is where more of our focus is
+17:16 
+
+17:16 and you know we see a variety of
+17:18 
+
+17:18 different things very simplistic kind of
+17:20 
+
+17:20 use cases where people are just using
+17:23 
+
+17:23 you know core operational data stored in
+17:25 
+
+17:25 mongodb or metadata as part of their
+17:27 
+
+17:27 kind of rag workflows we're seeing
+17:29 
+
+17:29 obviously a lot of vector adoptions are
+17:31 
+
+17:31 fastest screwing new product areas they
+17:33 
+
+17:33 try to merge you know metadata
+17:34 
+
+17:34 transactional data and semantic search
+17:37 
+
+17:37 sort of together into a single sort of
+17:39 
+
+17:39 system for more quality uh retrieval
+17:41 
+
+17:41 kind of use cases which is sort of I
+17:43 
+
+17:43 think where the Market's going and then
+17:44 
+
+17:44 we see instances where people want to
+17:46 
+
+17:46 use the data they have in mongodb and
+17:49 
+
+17:49 other systems to either fine-tune or
+17:51 
+
+17:51 straight up train smaller models that
+17:53 
+
+17:53 are specific to a particular use case
+17:55 
+
+17:55 and I don't believe that there'll be
+17:57 
+
+17:57 kind of one particular modality that
+17:60 
+
+17:60 suits every single you know use case I
+18:02 
+
+18:02 think there's going to be a plethora of
+18:04 
+
+18:04 different things that customers will
+18:05 
+
+18:05 begin to optimize for their latency
+18:07 
+
+18:07 requirements or performance requirements
+18:09 
+
+18:09 so I think you have the most fascinating
+18:11 
+
+18:11 seat to what's happening in the vector
+18:12 
+
+18:12 database Market we constantly pull our
+18:14 
+
+18:14 portfolio on what their AI stack is and
+18:16 
+
+18:16 consistently has been the number
+18:19 
+
+18:19 one vendor that everyone uses for Vector
+18:20 
+
+18:20 databases so I think you have the
+18:22 
+
+18:22 deepest and most interesting perspective
+18:24 
+
+18:24 on this um maybe like from from the
+18:27 
+
+18:27 20,000 foot view it seems like people
+18:29 
+
+18:29 View
+18:29 
+
+18:29 are using llms as you know they have
+18:32 
+
+18:32 World Knowledge up to some pre-training
+18:34 
+
+18:34 cut off date but beyond that you need
+18:36 
+
+18:36 Rag and you need Vector databases in
+18:37 
+
+18:37 order to supplement knowledge uh to
+18:39 
+
+18:39 provide you know specific domain
+18:42 
+
+18:42 knowledge uh you know almost as in like
+18:44 
+
+18:44 information retrieval like knowledge
+18:46 
+
+18:46 Source but if I look at Vector databases
+18:49 
+
+18:49 they kind of came from the semantic
+18:50 
+
+18:50 search world and you know e-commerce and
+18:52 
+
+18:52 things like that and so that's that's
+18:54 
+
+18:54 that's a very different world so how how
+18:56 
+
+18:56 do you think about you know what are
+18:58 
+
+18:58 people using Vector databases for today
+19:01 
+
+19:01 is it a technology of the past that's
+19:02 
+
+19:02 being improperly shoehorned into this
+19:04 
+
+19:04 information retrieval use case or is it
+19:06 
+
+19:06 the ideal data structure um to kind of
+19:09 
+
+19:09 be the the knowledge uh infrastructure
+19:12 
+
+19:12 for llms like how do you think this all
+19:14 
+
+19:14 plays out yeah kind a quick question on
+19:15 
+
+19:15 that of course did I'm aware of
+19:18 
+
+19:18 Mongo's Vector database because of
+19:20 
+
+19:20 generative Ai and seeing people use it
+19:23 
+
+19:23 for generative AI sure did you guys have
+19:25 
+
+19:25 a vector database pre generative AI we
+19:27 
+
+19:27 started because of of a more classic
+19:30 
+
+19:30 classic now semantic seuse case so a few
+19:34 
+
+19:34 years ago one of the things we noticed
+19:36 
+
+19:36 were that you know many of our customers
+19:38 
+
+19:38 would use Monga Tob as an operational
+19:40 
+
+19:40 data or any operational data and side by
+19:42 
+
+19:42 side with it have an adverted index kind
+19:44 
+
+19:44 of search engine for full Tex kind of
+19:46 
+
+19:46 lexical search and our customers were
+19:48 
+
+19:48 basically like why do I have to copy
+19:50 
+
+19:50 data between these systems to run two
+19:52 
+
+19:52 different databases just to get the
+19:54 
+
+19:54 search results I want to empower my
+19:55 
+
+19:55 application with and so being focused on
+19:58 
+
+19:58 developer experience and simplicity
+19:60 
+
+19:60 where like this seems like an obvious
+20:01 
+
+20:01 problem for us to go after and so we
+20:03 
+
+20:03 started there with our um search product
+20:05 
+
+20:05 to really just simplify it so a
+20:07 
+
+20:07 developer interfaces with one database
+20:10 
+
+20:10 but really it has different modalities
+20:12 
+
+20:12 of indexing and storage that can serve
+20:14 
+
+20:14 you know allp type queries as well as
+20:16 
+
+20:16 full Tech search queries um some of our
+20:19 
+
+20:19 e-commerce Advanced e-commerce customers
+20:21 
+
+20:21 were the ones then saying okay that's
+20:23 
+
+20:23 great but I want to start to do semantic
+20:24 
+
+20:24 similarity search and blend full teex
+20:27 
+
+20:27 lexical search alongside it search
+20:30 
+
+20:30 because that's what's going to give me
+20:31 
+
+20:31 higher quality search results and that's
+20:33 
+
+20:33 where we started getting pulled into
+20:35 
+
+20:35 building the vector capabilities into
+20:37 
+
+20:37 our engine and for us it's you know one
+20:39 
+
+20:39 of the things we we're always trying to
+20:41 
+
+20:41 do is remove the need for customers to
+20:43 
+
+20:43 have multiple systems so when we say we
+20:45 
+
+20:45 add this capability it's a lot of it
+20:47 
+
+20:47 goes to how do we integrate it in an
+20:49 
+
+20:49 elegant way to our data model how do we
+20:51 
+
+20:51 extend our query language so it's very
+20:53 
+
+20:53 easy for a developer to just feel like
+20:55 
+
+20:55 it's not a separate system they're just
+20:56 
+
+20:56 interacting with it as part of their
+20:58 
+
+20:58 application development and so we were
+20:60 
+
+20:60 down that line and then obviously you
+21:02 
+
+21:02 know the world explodes post chat GPT
+21:05 
+
+21:05 and you know we were like all right you
+21:06 
+
+21:06 know this is going to be even more
+21:07 
+
+21:07 relevant than we thought and so we
+21:09 
+
+21:09 poured the gas on things accelerated
+21:11 
+
+21:11 things expanded the strategy to be well
+21:14 
+
+21:14 integrated into a whole bunch of new
+21:15 
+
+21:15 Frameworks you know working a lot more
+21:17 
+
+21:17 closely with the AI Labs because it is
+21:19 
+
+21:19 to Sonia your point it's it's certainly
+21:22 
+
+21:22 a different use case to leverage you
+21:24 
+
+21:24 know vector embeddings or even just
+21:26 
+
+21:26 metadata or transactional data integrate
+21:28 
+
+21:28 to rag than just a pure semantic search
+21:30 
+
+21:30 use case but as we look at our most
+21:33 
+
+21:33 advanced customers now in
+21:35 
+
+21:35 2025 they're actually seeing that the
+21:38 
+
+21:38 integration of all those modalities is
+21:40 
+
+21:40 really important because you need to
+21:42 
+
+21:42 filter based on metadata you know about
+21:45 
+
+21:45 your your unstructured data your what
+21:47 
+
+21:47 whatever it is you're you're building an
+21:48 
+
+21:48 application around there are times when
+21:50 
+
+21:50 you need to sort by keywords and
+21:52 
+
+21:52 relevance ranking like a more
+21:53 
+
+21:53 traditional search engine and then you
+21:55 
+
+21:55 need to understand and extract semantic
+21:57 
+
+21:57 meaning from vector ined and there's a
+21:59 
+
+21:59 whole bunch of things around how to
+22:01 
+
+22:01 improve the quality of that and only
+22:03 
+
+22:03 then can their overall application get
+22:06 
+
+22:06 the percentage quality predictability
+22:09 
+
+22:09 for especially for large Enterprise to
+22:10 
+
+22:10 trust putting something in front of
+22:12 
+
+22:12 their customers especially in a
+22:13 
+
+22:13 regulated industry and so that's turned
+22:15 
+
+22:15 out to be a real advantage to have all
+22:17 
+
+22:17 of those in a single system because
+22:20 
+
+22:20 otherwise it requires a whole bunch of
+22:22 
+
+22:22 what you know I call kind of rag
+22:23 
+
+22:23 gymnastics to try to tie all these
+22:25 
+
+22:25 things together which is possible but it
+22:28 
+
+22:28 puts a whole huge burden around the
+22:30 
+
+22:30 development cycle what happens in app
+22:31 
+
+22:31 code and frankly you need to be a pretty
+22:33 
+
+22:33 sophisticated team to figure that out on
+22:35 
+
+22:35 your own and so we're trying to
+22:36 
+
+22:36 democratize that all by making it just
+22:38 
+
+22:38 much simpler for the average application
+22:40 
+
+22:40 developer H how do you think about
+22:42 
+
+22:42 Vector versus graph are they substitutes
+22:46 
+
+22:46 are they complement what are the
+22:47 
+
+22:47 trade-offs because we see Vector uh
+22:50 
+
+22:50 vector- based rag we also see graph rag
+22:52 
+
+22:52 yeah yeah I I every week goes by and
+22:55 
+
+22:55 there's some new sort of approach to
+22:57 
+
+22:57 higher quality retrieval is kind of what
+22:59 
+
+22:59 I think everyone's sort of trying to
+23:00 
+
+23:00 chase I think they're complimentary you
+23:02 
+
+23:02 know like there are reasons why you want
+23:05 
+
+23:05 uh graph relationships because that's an
+23:07 
+
+23:07 augmentation of understanding that you
+23:10 
+
+23:10 may not be able to just infer by the
+23:11 
+
+23:11 vector embeddings themselves so we view
+23:13 
+
+23:13 that as additive just like pre-filtering
+23:16 
+
+23:16 based on some sort of metadata you know
+23:17 
+
+23:17 about your your unstructured data and
+23:19 
+
+23:19 embeddings is additive and improves the
+23:21 
+
+23:21 quality of results and so I do view
+23:24 
+
+23:24 these modalities as very complimentary
+23:27 
+
+23:27 you know our goal is to just make it
+23:29 
+
+23:29 simple to combine all of those for a
+23:30 
+
+23:30 developer so they don't need to have
+23:33 
+
+23:33 their graph representations of their
+23:35 
+
+23:35 objects in a one style of database their
+23:37 
+
+23:37 metadata and another database their
+23:39 
+
+23:39 transactional data and a relational
+23:41 
+
+23:41 database and then have to have a
+23:42 
+
+23:42 separate Vector search database and try
+23:43 
+
+23:43 to you know rationalize all that which
+23:45 
+
+23:45 is kind of what happens we're trying to
+23:47 
+
+23:47 just make that dead
+23:49 
+
+23:49 simple is it fair to simplistically
+23:51 
+
+23:51 think about you know in an agentic
+23:53 
+
+23:53 system the llm as the brain and the
+23:56 
+
+23:56 database whether it's a vector database
+23:58 
+
+23:58 or uh or suet of those as the uh the
+24:02 
+
+24:02 memory is that is it brain and memory is
+24:03 
+
+24:03 that the right abstraction the right
+24:05 
+
+24:05 mental model I think that's definitely
+24:06 
+
+24:06 one way to think about it because
+24:08 
+
+24:08 absolutely you need to persist memory
+24:10 
+
+24:10 and state especially when you have
+24:11 
+
+24:11 agents that are having more complex
+24:13 
+
+24:13 workflows and need to drive interaction
+24:15 
+
+24:15 across multiple endpoints not
+24:17 
+
+24:17 necessarily a single foundational llm
+24:19 
+
+24:19 with a One-Shot call so you need to
+24:21 
+
+24:21 persist more of that state I view them
+24:23 
+
+24:23 as sort of two pieces of an emerging
+24:25 
+
+24:25 architecture you know you've got
+24:26 
+
+24:26 obviously compute storage networking is
+24:28 
+
+24:28 sort of the under Primitives but now
+24:30 
+
+24:30 there's this whole set of use cases that
+24:32 
+
+24:32 foundational llms can go after that are
+24:34 
+
+24:34 more probabilistic in nature that can
+24:36 
+
+24:36 automate tasks that knowledge workers
+24:38 
+
+24:38 would typically have to do manually and
+24:40 
+
+24:40 which is super powerful but then that
+24:42 
+
+24:42 needs to store its state and be grounded
+24:44 
+
+24:44 and interact with the transaction that
+24:47 
+
+24:47 the application is driving and the other
+24:49 
+
+24:49 information that's either
+24:50 
+
+24:50 semi-structured or structured and those
+24:52 
+
+24:52 things together come to create a great
+24:55 
+
+24:55 application experience and end user
+24:56 
+
+24:56 experience it's not in either or I think
+24:59 
+
+24:59 it's it's complimentary in a really
+25:01 
+
+25:01 powerful way which will only become more
+25:03 
+
+25:03 important as llms become lower latency
+25:06 
+
+25:06 and faster where now you can really use
+25:08 
+
+25:08 what's happening in a real world setting
+25:10 
+
+25:10 to augment the results of an llm in much
+25:13 
+
+25:13 closer to real time than today where
+25:14 
+
+25:14 it's you know it's just a very different
+25:16 
+
+25:16 interaction speed so you're saying the
+25:18 
+
+25:18 database is not only the memory for the
+25:19 
+
+25:19 llm but it's a reflection of world State
+25:22 
+
+25:22 yeah like you llm needs to interact with
+25:23 
+
+25:23 World State exactly well I think that
+25:25 
+
+25:25 rough framing is consistent with what
+25:27 
+
+25:27 we've talked about internally which you
+25:29 
+
+25:29 know if you think about the bottom as
+25:31 
+
+25:31 raw infrastructure compute Network and
+25:33 
+
+25:33 storage you think about the top as the
+25:35 
+
+25:35 application you've got all this stuff in
+25:37 
+
+25:37 the middle and for anything that is
+25:39 
+
+25:39 deterministic you're going to be better
+25:40 
+
+25:40 off with Vector database graph database
+25:42 
+
+25:42 relational database nosql database kind
+25:44 
+
+25:44 of the traditional database world for
+25:46 
+
+25:46 anything that's more probabilistic you
+25:49 
+
+25:49 want something that looks like an
+25:51 
+
+25:51 llm the functionality that gives you is
+25:53 
+
+25:53 a little bit of human computer
+25:55 
+
+25:55 interaction and a little bit of
+25:57 
+
+25:57 reasoning right which is complimentary
+25:59 
+
+25:59 to what you get from this part of the
+26:00 
+
+26:00 world but I want to take it one step
+26:02 
+
+26:02 further because it sounds like we pretty
+26:04 
+
+26:04 similar view on this default
+26:06 
+
+26:06 architecture of the future or kind of
+26:08 
+
+26:08 this emerging pattern if you take it one
+26:10 
+
+26:10 step
+26:11 
+
+26:11 further does that
+26:13 
+
+26:13 imply that the mental model investors
+26:16 
+
+26:16 should have for the API portion of
+26:21 
+
+26:21 anthropic or open AI or the other
+26:22 
+
+26:22 Foundation model
+26:24 
+
+26:24 companies is
+26:26 
+
+26:26  meaning they're occupying a
+26:28 
+
+26:28 similar lay in the stack they both
+26:30 
+
+26:30 reside on top of the public clouds they
+26:33 
+
+26:33 both reside beneath the application
+26:35 
+
+26:35 layer is is a good frame of
+26:37 
+
+26:37 reference for what the API businesses of
+26:39 
+
+26:39 open Ai and anthropic would or should or
+26:42 
+
+26:42 could become over time yeah I think it's
+26:45 
+
+26:45 an interesting proxy because it you know
+26:47 
+
+26:47 you sometimes read like okay the llm is
+26:49 
+
+26:49 the new operating system I that never
+26:51 
+
+26:51 felt logical to me in terms of how
+26:54 
+
+26:54 application capability and functionality
+26:56 
+
+26:56 should look maybe I'm wrong things you
+26:57 
+
+26:57 know are changing so fast these days but
+26:59 
+
+26:59 um but what we see is really these are
+27:02 
+
+27:02 side by-side complimentary components
+27:04 
+
+27:04 that drive and serve the business logic
+27:06 
+
+27:06 and interaction layer of the application
+27:08 
+
+27:08 above yeah and there's a whole bunch of
+27:10 
+
+27:10 use cases obviously that large language
+27:12 
+
+27:12 models can now reason about and provide
+27:14 
+
+27:14 human Interac around that weren't
+27:15 
+
+27:15 possible before that's the amazing
+27:16 
+
+27:16 powerful aspect of them but it doesn't
+27:19 
+
+27:19 in you know in any architecture we've
+27:21 
+
+27:21 seen supplant the need to have
+27:22 
+
+27:22 deterministic outputs from structure
+27:24 
+
+27:24 data to manage transactions and search
+27:26 
+
+27:26 and all the other data components it's
+27:29 
+
+27:29 it's really complimentary and I think
+27:31 
+
+27:31 it's still early days I think you know
+27:33 
+
+27:33 SEO has done a great job sort of writing
+27:35 
+
+27:35 about as well like we don't know what
+27:36 
+
+27:36 the real Next Generation business models
+27:39 
+
+27:39 and applications are yet today I think
+27:40 
+
+27:40 we're still seeing the the early years
+27:42 
+
+27:42 of it and that's what's fun to be able
+27:45 
+
+27:45 to see all these different early stage
+27:47 
+
+27:47 companies or these Enterprise use cases
+27:48 
+
+27:48 that I highlighted earlier even then you
+27:50 
+
+27:50 know I think there's a lot more to come
+27:52 
+
+27:52 yeah all hypotheses at the moment yes I
+27:55 
+
+27:55 mean speaking of hypotheses there's all
+27:57 
+
+27:57 these hypotheses about you know what
+27:58 
+
+27:58 model architectures are going to Leap
+27:60 
+
+27:60 Frog and you know what the next model
+28:02 
+
+28:02 architectures are going to be I'm
+28:03 
+
+28:03 curious your hypotheses on the database
+28:05 
+
+28:05 side so we went you know we went from
+28:07 
+
+28:07 nothing to Vector databases pretty
+28:09 
+
+28:09 quickly it seems like do you think we're
+28:10 
+
+28:10 going to Leap Frog to a new type of data
+28:14 
+
+28:14 structure for for AI for these AI
+28:16 
+
+28:16 systems or do you think this is kind of
+28:17 
+
+28:17 the the the ideal architecture yeah I
+28:20 
+
+28:20 think
+28:21 
+
+28:21 the the fundamental data architecture at
+28:25 
+
+28:25 least as far as you know vectors are
+28:27 
+
+28:27 concerned seem to be strong Primitives
+28:29 
+
+28:29 that seem to hold and where I think
+28:31 
+
+28:31 we're still trying to figure out how we
+28:32 
+
+28:32 extract all the possibility there now if
+28:34 
+
+28:34 something else comes along you know
+28:36 
+
+28:36 certainly open-minded to it but I think
+28:38 
+
+28:38 it is a primitive in my mind you know I
+28:40 
+
+28:40 think there was a question in the Market
+28:41 
+
+28:41 at some point of like all right is it
+28:43 
+
+28:43 only is a vector database a whole new
+28:45 
+
+28:45 segment in the market or new is that
+28:46 
+
+28:46 going to replace core databases we view
+28:48 
+
+28:48 it as a primitive like you know if you
+28:50 
+
+28:50 want to manage unstructured data the
+28:52 
+
+28:52 combination of the ability to index and
+28:55 
+
+28:55 you know Vector embeddings combined with
+28:57 
+
+28:57 high quality embedding models that can
+28:59 
+
+28:59 represent the meaning of that
+29:00 
+
+29:00 unstructured data is sort of a new
+29:02 
+
+29:02 primitive just like you know text
+29:04 
+
+29:04 indexes or B indexes and databases Etc
+29:07 
+
+29:07 so we view it as a foundational element
+29:10 
+
+29:10 I I don't see that going away I think
+29:13 
+
+29:13 the how you create high quality results
+29:16 
+
+29:16 from that data and how you have high
+29:18 
+
+29:18 quality vector embeddings or how you
+29:19 
+
+29:19 augment that with other information
+29:21 
+
+29:21 there's a whole lot of of evolution
+29:23 
+
+29:23 happening there right now and I don't
+29:25 
+
+29:25 think that's by any means settled I see
+29:26 
+
+29:26 so the data structure the data storage
+29:28 
+
+29:28 that's you know vectors and and the way
+29:31 
+
+29:31 you store them seems pretty sound and
+29:34 
+
+29:34 the thing that's you know yet to be
+29:36 
+
+29:36 optimized is how do you go from all
+29:38 
+
+29:38 these vectors to like ultimately meaning
+29:40 
+
+29:40 and um yeah and I'm not saying there
+29:43 
+
+29:43 aren aren't going to be optimizations or
+29:45 
+
+29:45 room for Innovation and how that can be
+29:47 
+
+29:47 more efficient more performant more
+29:48 
+
+29:48 cost- effective there's plenty uh you
+29:50 
+
+29:50 know always in the database space
+29:52 
+
+29:52 happening there so I'm not trying to
+29:54 
+
+29:54 make a statement that that there's
+29:55 
+
+29:55 certainly Innovation going on there but
+29:57 
+
+29:57 I think the more interesting thing is
+29:58 
+
+29:58 when you're in a world of probabilistic
+30:00 
+
+30:00 software and um I Heard a really
+30:02 
+
+30:02 interesting take on this from uh Ben
+30:05 
+
+30:05 Thompson uh for who writes try where he
+30:08 
+
+30:08 kind of said in a world of probabilistic
+30:10 
+
+30:10 software you know the measure of quality
+30:12 
+
+30:12 is about that kind of Last Mile how do
+30:14 
+
+30:14 you get to
+30:15 
+
+30:15 99.99 X you know sort of quality and so
+30:18 
+
+30:18 will the domain of sort of quality
+30:20 
+
+30:20 engineering that we typically associate
+30:21 
+
+30:21 with manufacturing kind of apply to
+30:23 
+
+30:23 software and and that really got me
+30:25 
+
+30:25 thinking in terms of you're not going to
+30:27 
+
+30:27 be able to necessarily get a DET
+30:28 
+
+30:28 terministic result like you would with a
+30:30 
+
+30:30 traditional application talking to a
+30:31 
+
+30:31 traditional database so therefore the
+30:34 
+
+30:34 quality of your embedding models how you
+30:37 
+
+30:37 construct your rag architectures merge
+30:38 
+
+30:38 it with the realtime view of what's
+30:41 
+
+30:41 happening in the transactions in your
+30:42 
+
+30:42 business that's what's going to get you
+30:44 
+
+30:44 that high quality retrieval and result
+30:46 
+
+30:46 and unless it's high quality in a world
+30:48 
+
+30:48 where it's probabilistic I don't see it
+30:51 
+
+30:51 going after mission critical use cases
+30:53 
+
+30:53 in a conservative Enterprise and that
+30:55 
+
+30:55 that is a problem space we're very
+30:57 
+
+30:57 focused on right now how do you think
+30:59 
+
+30:59 all the innovation in the reasoning
+31:00 
+
+31:00 model side interplays with what's
+31:03 
+
+31:03 happening uh in your in your corner of
+31:05 
+
+31:05 the world yeah I think um in terms of
+31:09 
+
+31:09 you know whenever there's reasoning
+31:11 
+
+31:11 memory comes into place long running
+31:13 
+
+31:13 logic you know I think then when how
+31:15 
+
+31:15 reasoning plays into more advanced
+31:16 
+
+31:16 agentic workflows all of that needs
+31:18 
+
+31:18 State as I kind of mentioned earlier so
+31:20 
+
+31:20 at a very loose level I think database
+31:23 
+
+31:23 are going to be more important to that
+31:24 
+
+31:24 than just a one shot simple C you know
+31:27 
+
+31:27 answer engine from an answer from an llm
+31:29 
+
+31:29 so I think that's the kind of meta Trend
+31:31 
+
+31:31 as an end user I'm fascinated by these
+31:34 
+
+31:34 types of reasoning models I mean I am
+31:36 
+
+31:36 definitely a uh I know this is very not
+31:39 
+
+31:39 exactly novel in the last couple weeks
+31:41 
+
+31:41 but Google's uh Gemini deep research and
+31:44 
+
+31:44 the product experience around that I
+31:45 
+
+31:45 think is amazing so like I think like
+31:48 
+
+31:48 there's a lot that can be done there in
+31:50 
+
+31:50 terms of the user experiences and the
+31:53 
+
+31:53 types of use cases that applications can
+31:55 
+
+31:55 build off of that at least the first
+31:57 
+
+31:57 wave of of LMS that we saw haven't been
+32:00 
+
+32:00 able to really Drive in terms of
+32:04 
+
+32:04 adoption very different direction
+32:06 
+
+32:06 so one of the things about your
+32:08 
+
+32:08 background that people uh who are
+32:10 
+
+32:10 listening might not be aware of is is
+32:13 
+
+32:13 that you sort of like architected and
+32:15 
+
+32:15 led the transformation of mongod DB from
+32:18 
+
+32:18 being a traditional on- Prim enterprise
+32:20 
+
+32:20 software business to being a cloud
+32:23 
+
+32:23 native consumption based business um
+32:28 
+
+32:28 with which is now most of mongodb and um
+32:31 
+
+32:31 I think any
+32:32 
+
+32:32 transformation of that magnitude is
+32:35 
+
+32:35 really hard to pull off and you guys did
+32:37 
+
+32:37 it at reasonable scale and of course now
+32:40 
+
+32:40 the company has you know billions of
+32:42 
+
+32:42 Revenue scale the reason I'm the reason
+32:45 
+
+32:45 I'm harping on this a little bit is I
+32:46 
+
+32:46 think there are probably a lot of
+32:48 
+
+32:48 Enterprises or even a lot of start
+32:50 
+
+32:50 startups who are currently faced with a
+32:52 
+
+32:52 similar challenge where they need to
+32:53 
+
+32:53 undergo a transformation of their
+32:55 
+
+32:55 business and yours was an on-prem to CL
+32:58 
+
+32:58 transformation which not a lot of
+32:59 
+
+32:59 companies got right the one we're
+33:01 
+
+33:01 looking at now is sort of a non AI to AI
+33:04 
+
+33:04 transformation and so so the question
+33:06 
+
+33:06 is what made that work for maybe
+33:09 
+
+33:09 just say a little bit about sure the
+33:11 
+
+33:11 nature of the transformation what made
+33:12 
+
+33:12 that work for you guys and do you have
+33:14 
+
+33:14 any advice for people who are looking at
+33:16 
+
+33:16 an AI transformation of some sort now
+33:19 
+
+33:19 yeah I I appreciate you bringing that up
+33:20 
+
+33:20 and and certainly you know we're very
+33:23 
+
+33:23 lucky and fortunate that you know we
+33:24 
+
+33:24 were able to make this pretty Monumental
+33:26 
+
+33:26 shift in terms of the the business model
+33:28 
+
+33:28 the product strategy of the company and
+33:30 
+
+33:30 and certainly by all means it required a
+33:32 
+
+33:32 lot of different people doing a lot of
+33:33 
+
+33:33 different things uh to make that happen
+33:35 
+
+33:35 but I think one important piece I want
+33:38 
+
+33:38 to key off is you you're using the word
+33:39 
+
+33:39 kind of business transformation yeah
+33:42 
+
+33:42 that is really important because I think
+33:44 
+
+33:44 for a lot of companies that have tried
+33:45 
+
+33:45 to drive this type of a transition they
+33:47 
+
+33:47 just view it as okay this is a new skew
+33:50 
+
+33:50 a new product that's all I have to worry
+33:52 
+
+33:52 about but I think you know certainly I
+33:55 
+
+33:55 took it as a sort of business
+33:57 
+
+33:57 transformation is the goal here and
+33:60 
+
+33:60 therefore we made sure that every
+34:02 
+
+34:02 functional leader in the organization
+34:04 
+
+34:04 one understood that they had a really
+34:05 
+
+34:05 important part of that transformation
+34:07 
+
+34:07 and we also accountable for working you
+34:10 
+
+34:10 know to think about in a consumption
+34:12 
+
+34:12 based Cloud first model how customer
+34:15 
+
+34:15 success changes how our financial model
+34:17 
+
+34:17 changes how you can name any single
+34:19 
+
+34:19 function how did you guys get Buy in in
+34:21 
+
+34:21 the early days when the thing that
+34:22 
+
+34:22 generates all the revenue was not this
+34:25 
+
+34:25 right like how did you get people to
+34:26 
+
+34:26 care yeah absolutely so one definitely
+34:29 
+
+34:29 having strong top down support you know
+34:30 
+
+34:30 like it was very clear to the company
+34:32 
+
+34:32 that launching Atlas making this
+34:33 
+
+34:33 transition was a super critical you know
+34:36 
+
+34:36 business priority you know there's
+34:38 
+
+34:38 nothing that that gets around the fact
+34:40 
+
+34:40 that you need that level of top- down
+34:41 
+
+34:41 consistency you know that included
+34:43 
+
+34:43 empowering me as sort of the person to
+34:45 
+
+34:45 help drive that and so when I went
+34:47 
+
+34:47 knocking on one of my peers you know
+34:48 
+
+34:48 doors in a particular function I said
+34:50 
+
+34:50 hey I really think we need to you know
+34:52 
+
+34:52 fund some headcount here to think about
+34:54 
+
+34:54 the cloud side of the business that you
+34:56 
+
+34:56 know I had the sort of ability to kind
+34:58 
+
+34:58 of drive that level of influence but I
+35:00 
+
+35:00 think what's important about that is we
+35:02 
+
+35:02 didn't treat it as this sort of separate
+35:04 
+
+35:04 mini Buu that's isolated from The Core
+35:06 
+
+35:06 Business we wanted every functional
+35:08 
+
+35:08 leader to feel like they were part of
+35:10 
+
+35:10 that transition and it wasn't some
+35:11 
+
+35:11 competing thing for uh you know and they
+35:13 
+
+35:13 were going to lose some sort of you know
+35:15 
+
+35:15 part of the the function they rant so I
+35:17 
+
+35:17 think that was a really important thing
+35:19 
+
+35:19 certainly it meant a lot more you know
+35:21 
+
+35:21 shuttle diplomacy for me versus direct
+35:23 
+
+35:23 Authority but that was critical to bring
+35:25 
+
+35:25 the whole company along for that
+35:27 
+
+35:27 transition as opposed to it just being a
+35:29 
+
+35:29 starved new business initiative in a
+35:30 
+
+35:30 corner which you see sometimes yep uh
+35:33 
+
+35:33 start to happen certainly you know in
+35:35 
+
+35:35 terms of the sales organization the
+35:38 
+
+35:38 revenue functions in particular it took
+35:41 
+
+35:41 a lot of one just really rolling up
+35:43 
+
+35:43 sleeves and being a seller meaning being
+35:45 
+
+35:45 in the early deals learning what's
+35:48 
+
+35:48 objections are coming up whether that's
+35:49 
+
+35:49 a product objection we had to go build
+35:51 
+
+35:51 on the road map or whether it was just
+35:53 
+
+35:53 an enablement issue or a positioning or
+35:55 
+
+35:55 messaging exercise or pricing thing so
+35:57 
+
+35:57 really really taking a mindset of like
+35:59 
+
+35:59 all right I'm you know our team the
+36:01 
+
+36:01 product team launching this is going to
+36:02 
+
+36:02 be side by side with the sellers and the
+36:04 
+
+36:04 SAS in every single one of the first
+36:06 
+
+36:06 deals and I'm going to remember in our
+36:09 
+
+36:09 smaller New York office at the time I
+36:11 
+
+36:11 used to make the rounds every you know
+36:13 
+
+36:13 every evening and be like all right
+36:15 
+
+36:15 what's happening with this deal what
+36:16 
+
+36:16 help do you need like where are we on
+36:18 
+
+36:18 this what are you hearing and that got a
+36:20 
+
+36:20 lot of sort of one all right the sales
+36:22 
+
+36:22 team isn't just being asked by some
+36:24 
+
+36:24 stranger to do something CU it's
+36:25 
+
+36:25 important like I was trying to show that
+36:27 
+
+36:27 I'm with in them in it with them and
+36:29 
+
+36:29 then certainly you have to drive
+36:31 
+
+36:31 incentives around it when something's
+36:33 
+
+36:33 working and people know how to drive
+36:35 
+
+36:35 Revenue a certain way in any function
+36:37 
+
+36:37 there's going to be so much inertia
+36:39 
+
+36:39 around that already because you know the
+36:40 
+
+36:40 software business is still a growth
+36:42 
+
+36:42 business for us so we had to be very
+36:44 
+
+36:44 intentional about putting spiffs heavy
+36:46 
+
+36:46 emphasis on enablement inspection and
+36:48 
+
+36:48 accountability to make sure enough
+36:50 
+
+36:50 momentum got built in the new business
+36:53 
+
+36:53 until we could kind of neutralize it
+36:54 
+
+36:54 because ultimately we're we're about
+36:56 
+
+36:56 customer choice we don't want to
+36:57 
+
+36:57 artificially
+36:58 
+
+36:58 push a customer that's on Prem to the
+36:60 
+
+36:60 cloud if they're not ready that's
+37:01 
+
+37:01 largely out of our control but in the
+37:03 
+
+37:03 beginning we needed the sales team to
+37:04 
+
+37:04 get a lot of attention on something that
+37:06 
+
+37:06 they felt was not necessarily the needle
+37:09 
+
+37:09 mover until we got a certain level of
+37:10 
+
+37:10 momentum yeah yeah interesting the
+37:13 
+
+37:13 lessons I heard for anybody going
+37:16 
+
+37:16 through an AI transformation is a lot of
+37:18 
+
+37:18 top- down support which I imagine
+37:21 
+
+37:21 requires a lot of conviction that this
+37:23 
+
+37:23 is where the future is going um fully
+37:27 
+
+37:27 integrated not some project sitting off
+37:29 
+
+37:29 in a corner getting stared for resources
+37:31 
+
+37:31 but actually part of the Core Business
+37:33 
+
+37:33 and holistic transformation it's not a
+37:36 
+
+37:36 skew it's a wholesale reinvention of the
+37:39 
+
+37:39 business in a lot of ways right and some
+37:40 
+
+37:40 of the most important things were not
+37:43 
+
+37:43 technology decisions it was you know
+37:46 
+
+37:46 business model transition it's sales
+37:48 
+
+37:48 enablement to sell to a different
+37:50 
+
+37:50 segment of the buyer in the organization
+37:52 
+
+37:52 different buyer within the organization
+37:53 
+
+37:53 that we were traditionally so almost
+37:56 
+
+37:56 every function had to change in pretty
+37:58 
+
+37:58 fundamental ways and I think sometimes
+38:01 
+
+38:01 outsized amount of our time went to
+38:03 
+
+38:03 those things that you wouldn't think
+38:04 
+
+38:04 were were needed to change that much or
+38:06 
+
+38:06 that would be easier versus you know
+38:09 
+
+38:09 what you assume to be the hard part
+38:10 
+
+38:10 which is how do you deliver a highly
+38:11 
+
+38:11 reliable Cloud database that's by no
+38:13 
+
+38:13 means easy yeah but you know that's the
+38:16 
+
+38:16 part I think everyone gravitates to but
+38:18 
+
+38:18 it's all these other things around the
+38:19 
+
+38:19 different functions that drive the
+38:20 
+
+38:20 business and making sure all those line
+38:22 
+
+38:22 up in a in a coherent way that a lot of
+38:24 
+
+38:24 attention went to I also think one of
+38:26 
+
+38:26 the analogies to draw on tell me this is
+38:28 
+
+38:28 just you know I'm off in L La Land but
+38:31 
+
+38:31 you were you and in our conversations
+38:33 
+
+38:33 you were really focused on driving the
+38:34 
+
+38:34 developer experience uh through that
+38:36 
+
+38:36 period of transition and you know the
+38:37 
+
+38:37 developer was going to choose uh the
+38:40 
+
+38:40 database um for this kind of new new
+38:42 
+
+38:42 mode of operating um it feels like to me
+38:44 
+
+38:44 for companies going through the AI
+38:46 
+
+38:46 transition right now right now it still
+38:47 
+
+38:47 is developer developer developer to your
+38:49 
+
+38:49 point developers are choosing AI tools
+38:52 
+
+38:52 eventually if we have trillions of
+38:53 
+
+38:53 Agents running around it might be the
+38:55 
+
+38:55 agent experience that's the thing to to
+38:57 
+
+38:57 Really prioritize
+38:58 
+
+38:58 yeah know especially if agents are the
+39:01 
+
+39:01 ones who are going to be driving a lot
+39:02 
+
+39:02 of the business logic without
+39:04 
+
+39:04 necessarily custom development Happening
+39:06 
+
+39:06 by the organization I could see that I
+39:08 
+
+39:08 think you know often times from the
+39:10 
+
+39:10 outside I get the question of like how
+39:11 
+
+39:11 did go from Enterprise to plg and
+39:14 
+
+39:14 I always sort of like winse at that you
+39:16 
+
+39:16 know I think to me those things are
+39:19 
+
+39:19 absolutely complimentary and more have
+39:21 
+
+39:21 to do with where a customer is in their
+39:22 
+
+39:22 adoption Journey or what style of
+39:24 
+
+39:24 organization they are whether they're a
+39:27 
+
+39:27 you know technical founder-led
+39:28 
+
+39:28 fast-moving startup that doesn't want to
+39:30 
+
+39:30 necessarily engage with sales in the
+39:32 
+
+39:32 beginning of their Journey or whether
+39:33 
+
+39:33 it's a large Enterprise that's never
+39:35 
+
+39:35 going to show up via a self-service type
+39:37 
+
+39:37 Channel and so you know we spent a lot
+39:39 
+
+39:39 of time thinking about the whole system
+39:41 
+
+39:41 holistically and trying to map that to
+39:44 
+
+39:44 how the users and the buyers actually
+39:46 
+
+39:46 want to engage with us as a company and
+39:48 
+
+39:48 so I think a lot of that is what has
+39:50 
+
+39:50 been behind the cloud transition sort of
+39:53 
+
+39:53 success is not trying to be too
+39:54 
+
+39:54 philosophical of saying you know credit
+39:56 
+
+39:56 card C business C you know customers are
+39:59 
+
+39:59 the right ones and Enterprise sales no
+40:02 
+
+40:02 way I mean there it's neither or you
+40:05 
+
+40:05 know both of them have to be cohesively
+40:06 
+
+40:06 integrated to reach the global scale of
+40:10 
+
+40:10 customers that we have at at this stage
+40:12 
+
+40:12 should we wrap with some uh AI rapid
+40:14 
+
+40:14 fire questions all right sounds good
+40:18 
+
+40:18 good okay first one favorite new AI app
+40:21 
+
+40:21 ah all right I I mentioned that I'm
+40:23 
+
+40:23 definitely a Gemini deep research fan so
+40:25 
+
+40:25 that I got that I mentioned I think um
+40:28 
+
+40:28 that and also perplexity for me they're
+40:31 
+
+40:31 not new by any definition you know in my
+40:34 
+
+40:34 mind run counter to the you know okay
+40:36 
+
+40:36 thin thin AI rappers aren't really
+40:38 
+
+40:38 sustainable because I see a lot of
+40:40 
+
+40:40 product craft and I know Gemini
+40:42 
+
+40:42 obviously has a deep model you know uh
+40:44 
+
+40:44 training behind it but just the product
+40:46 
+
+40:46 craft is what I think is really
+40:48 
+
+40:48 interesting like the way you know
+40:50 
+
+40:50 perplexity makes the user experience the
+40:53 
+
+40:53 design sense for example is really great
+40:54 
+
+40:54 as an end user so I don't think it's so
+40:56 
+
+40:56 simple that you know AI models are
+40:58 
+
+40:58 suddenly going to make software go away
+40:60 
+
+41:00 I think there's a lot around adoption
+41:02 
+
+41:02 and understanding your user having great
+41:03 
+
+41:03 design sense and there'll be a version
+41:06 
+
+41:06 of that as we go to other interactive
+41:08 
+
+41:08 modalities as well even if it isn't
+41:09 
+
+41:09 visual so I think that's kind of one
+41:11 
+
+41:11 thing in terms of what's new to me I
+41:13 
+
+41:13 don't know how new this product is but
+41:15 
+
+41:15 somebody last week turned me on to uh
+41:17 
+
+41:17 snipp I'm a uh s snpd I'm a big uh
+41:22 
+
+41:22 podcast listener okay and it's a great
+41:25 
+
+41:25 example of an application that I think
+41:26 
+
+41:26 is woven AI really well through the user
+41:29 
+
+41:29 experience so um it like subcribed all
+41:32 
+
+41:32 your podcasts it like Auto summarizes it
+41:35 
+
+41:35 allows it surfaces up some of the key
+41:37 
+
+41:37 insights in readable form or in a
+41:39 
+
+41:39 shortened version allows you to take
+41:41 
+
+41:41 kind of notes we need this we've been
+41:43 
+
+41:43 looking for this okay I just found out
+41:44 
+
+41:44 about it last week and um I am loving
+41:48 
+
+41:48 learning how to use it well love it who
+41:50 
+
+41:50 do you admire most in the world of
+41:52 
+
+41:52 AI that's a tough one I mean
+41:55 
+
+41:55 certainly I think some of the just
+41:58 
+
+41:58 researchers that see the future and are
+42:00 
+
+42:00 probably have a sense of where things
+42:02 
+
+42:02 are really going every time I listen to
+42:03 
+
+42:03 them on this podcast or read you know
+42:06 
+
+42:06 some of their writing you know I feel
+42:07 
+
+42:07 like really excited about the future and
+42:10 
+
+42:10 you know the typical names there so I
+42:12 
+
+42:12 think that cohort of of people is always
+42:14 
+
+42:14 inspirational to me um you know I think
+42:18 
+
+42:18 it's fun to listen to the large company
+42:20 
+
+42:20 CEOs kind of uh mudsling a little bit
+42:24 
+
+42:24 about whether their applications are
+42:26 
+
+42:26 just systems of record or who's going to
+42:27 
+
+42:27 win the agent race and all of that so I
+42:30 
+
+42:30 think you know there's it's interesting
+42:32 
+
+42:32 to see the Battle of Titans happening in
+42:34 
+
+42:34 terms of who are going to really be the
+42:35 
+
+42:35 incumbents that can survive and thrive
+42:37 
+
+42:37 versus the ones you know that uh that
+42:39 
+
+42:39 may not make the transition so without
+42:42 
+
+42:42 naming names I'd say those are the two
+42:43 
+
+42:43 most interesting cohorts of of leaders
+42:46 
+
+42:46 that I tend to to listen to fair enough
+42:49 
+
+42:49 okay agree or disagree every developer
+42:51 
+
+42:51 will become an
+42:53 
+
+42:53 AI uh agree you know I think that
+42:56 
+
+42:56 traditional machine learning is you know
+42:59 
+
+42:59 was typically specialized in a
+43:01 
+
+43:01 centralized ml or data science team and
+43:04 
+
+43:04 applied to probably a subset of the use
+43:06 
+
+43:06 cases that could it could potentially
+43:08 
+
+43:08 add value to what we're seeing though
+43:10 
+
+43:10 with generative AI being integrated into
+43:12 
+
+43:12 applications whether it's Greenfield or
+43:13 
+
+43:13 to an existing application is it's the
+43:16 
+
+43:16 average full stack or application
+43:18 
+
+43:18 developers that are the ones that are
+43:19 
+
+43:19 responsible for that so you know really
+43:22 
+
+43:22 democratizing that capability across the
+43:24 
+
+43:24 organization is something we're trying
+43:25 
+
+43:25 to do and so if I had to give a simple
+43:28 
+
+43:28 answer I would agree with it wonderful
+43:30 
+
+43:30 soah here thank you so much for joining
+43:32 
+
+43:32 us today I think you have super fun you
+43:34 
+
+43:34 have really profound uh thesis on how AI
+43:37 
+
+43:37 is going to change not just databases
+43:39 
+
+43:39 but software and technology and the way
+43:41 
+
+43:41 we interact with technology as a whole
+43:42 
+
+43:42 and how that ripples uh over to the
+43:45 
+
+43:45 Daily based market so thank you for
+43:46 
+
+43:46 taking the time to share your thoughts
+43:47 
+
+43:47 absolutely thank you and Havey happy to
+43:49 
+
+43:49 be here and you know we'll see if any of
+43:51 
+
+43:51 these thoughts actually hold water
+43:52 
+
+43:52 things are moving so fast awesome thank
+43:55 
+
+43:55 you
+43:56 
+
+43:56 [Music]
+44:09 
+
+44:09 [Music]

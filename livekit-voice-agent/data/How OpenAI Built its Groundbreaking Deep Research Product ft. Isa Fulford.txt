@@ -1,0 +1,237 @@
+00:02 I'm so excited to welcome Issa Fulford
+00:06 who created a product that all of us
+00:09 know about use love openai deep research
+00:14 she is going to talk a little bit about
+00:16 the product how they did it where it's
+00:18 going a demo live for all of us she just
+00:22 redeyed in from Korea specifically for
+00:24 this event landed 5:45 this morning so
+00:28 please join me in a very warm sequoia
+00:30 welcome Welcome to Issa.
+00:36 Hi everyone. Um I'm Issa. I lead the
+00:38 deep research research team at OpenAI.
+00:41 Um as some of you may know, Deep
+00:42 Research is an agentic capability in
+00:44 chat GBC that conducts multi-step
+00:46 research um online to solve really
+00:49 complex tasks. So you give it a prompt
+00:51 and then Deep Research will spend 5 to
+00:53 30 minutes looking through loads of
+00:55 online web sources um reasoning about
+00:57 the content it finds and then it will
+00:58 come back with a fully cited
+00:60 comprehensive report at around the level
+01:02 of a research analyst. So it's able to
+01:04 do in a few minutes what would take a
+01:06 human many hours and so deep research is
+01:09 powered by a version of 03 that we
+01:11 fine-tuned specifically to be good at
+01:12 web browsing and data analysis. And I'll
+01:14 talk more about how we did this in a
+01:16 minute. And so a little bit of
+01:18 background about you know why we started
+01:20 building deep research. So a little over
+01:22 a year ago we were seeing a lot of
+01:23 progress internally with um
+01:25 reinforcement learning and reasoning
+01:26 models and we were training mostly on
+01:28 math and science and coding tasks. And
+01:31 we saw some generalization from training
+01:33 on those kinds of tasks to other
+01:35 domains. But we wondered what would
+01:37 happen if we trained directly on tasks
+01:39 that users do in their daily lives. Um
+01:41 and if we could make a really useful
+01:43 model by training directly on those
+01:44 kinds of things. And we felt that online
+01:46 browsing was a really good first place
+01:48 to try this because a lot of people do
+01:50 online browsing across a really broad
+01:53 range of domains and jobs and also in
+01:54 their daily lives. And also it's a nice
+01:57 kind of uh first sandbox where readonly
+01:60 um agents is kind of a good place to
+02:02 start because the kind of safety
+02:03 considerations are maybe a little bit
+02:04 more constrained. So
+02:07 um to do this we first needed to get
+02:10 people excited. So we hacked together a
+02:12 demo by just prompting models. I was
+02:14 actually working on this with Yash Patil
+02:15 and Thomas Simpson who's also here
+02:17 today. Um and we just made this demo of
+02:19 what the deep research product might
+02:21 look like. Um we didn't train any
+02:23 models, got people excited about it and
+02:24 then started the process of training a
+02:26 model to be good at deep research. And
+02:28 so this involved creating tasks um
+02:31 reinforcement learning tasks to actually
+02:32 teach the model the browsing
+02:34 capabilities and data analysis
+02:35 capabilities that we wanted the model to
+02:37 learn and also creating tools and giving
+02:40 the model access to those tools um to
+02:42 use during training. And so we needed to
+02:43 give it access to a browser so it could
+02:45 search and click on things and scroll
+02:47 through things and then also um a way to
+02:50 execute code to do like data analysis
+02:52 and plot graphs and things like
+02:54 that. So um I now I'll show you a few
+02:57 examples of deep research today.
+03:00 Um most of our users um use chatbt for
+03:04 professional use cases. So you know
+03:07 academics, VCs, so I've been told um
+03:10 consultants a lot of other things. But
+03:12 then also a lot of people have personal
+03:13 use cases. I would say that's probably
+03:14 my biggest use case would be like
+03:16 shopping and travel recommendations. So
+03:18 I'll show you a few example queries and
+03:20 then I'll I'll actually show you some
+03:22 some of my own queries that I've been
+03:24 I've been doing recently. So if we could
+03:26 switch to the screen that'd be
+03:28 great. So this is ChBT. I'm sure you're
+03:31 all familiar. Um
+03:35 um okay. So this is just the prompt. I
+03:38 actually had SHBT write this prompt for
+03:39 me. So I'm giving a presentation at
+03:41 Sequoia AISN today and I want to
+03:43 understand and visually communicate
+03:45 recent trends in venture capital
+03:47 investments in AI companies and then
+03:49 please analyze funding across um you
+03:51 know a number of different things that I
+03:53 want to investigate and then I want a
+03:55 graph um that meaningfully conveys a key
+03:58 trend mostly because I wanted you guys
+03:60 to know that it can plot graphs um so
+04:02 it's slightly contrived um and so you
+04:07 press start and the first thing that DP
+04:09 research will do is it will come back
+04:10 with some clarifying questions. The
+04:12 reason we designed it this way is
+04:13 because we felt that if you um the model
+04:16 is going to do something for you for
+04:17 quite a few minutes, you want to make
+04:19 sure that the output you get is exactly
+04:21 what you wanted and you we want the user
+04:23 to give as much detail as possible up
+04:25 front. And so we want to encourage the
+04:27 user to be very
+04:29 specific. So it came back with a few
+04:31 questions. So I'll say like just us
+04:37 um maybe both is
+04:40 fine and
+04:42 either and so now deep research will um
+04:46 kick off a research
+04:48 task and so in a minute we will be able
+04:51 to follow along with a summary of the
+04:53 its chain of thought and the actions
+04:55 that it's
+04:57 taking. So you'll be able to see
+04:60 interled chain of thought which is the
+05:01 model reasoning through the sources it's
+05:03 encountering and then also the tool
+05:04 calls that I make. So either searching
+05:06 or you know analyzing with Python tool.
+05:09 So it takes a minute to minute to
+05:16 start. I also have some pre-loaded
+05:19 examples that I can show in the meantime
+05:21 if this
+05:23 is okay. I'll show you one that I asked
+05:26 this week and then we can go back to
+05:27 this. So earlier this week um I was in I
+05:30 was in Korea and I actually did this
+05:32 query on my phone. I was looking for a
+05:34 night market that was maximum 15 minutes
+05:36 away from where I was and I wanted it to
+05:38 look at Reddit and also Korean sources
+05:40 that I'm not able to read myself and
+05:42 then within each of those markets find
+05:44 the best rated stores. So you can
+05:46 imagine that with normal search it's
+05:48 pretty hard to do a search that has all
+05:50 of these constraints in one go. But deep
+05:52 research is actually able to search the
+05:54 web and for each item like go pretty
+05:57 deep and identify like whether it fits
+05:59 the constraints and then synthesize it
+06:00 all back for me. So the final response
+06:03 it gave me was like this pretty long
+06:04 report with um a few suggestions of
+06:08 markets to try and then for each thing
+06:10 there are citations. As you can see, the
+06:11 citations actually um also um site the
+06:15 specific um lines from the um from the
+06:18 sources that are relevant to the the
+06:21 sentence that it's citing. And I
+06:23 actually ended up going to to this first
+06:25 one. So, okay, if I go back to the um
+06:30 original query that I just asked. So,
+06:32 you can see the model um is like
+06:35 thinking through and then we we just
+06:37 summarize the train of thought.
+06:40 says what it's planning to do, then it
+06:41 made a search and it's thinking. If
+06:43 you've also used 03, you you'll know
+06:44 that 03 is also able to do search really
+06:46 well. So, if you're looking for a more
+06:48 like medium search, I'd recommend using
+06:50 03. Deep research will really is kind of
+06:52 like the far end of how long it will
+06:54 take to to do a search query. And the
+06:56 reason 03 is good at searching is
+06:58 actually because it's trained with the
+06:59 same tools and browsing data sets that
+07:01 we developed for deep research.
+07:04 And so I'm going to um skip
+07:07 to this to an example that I ran this
+07:11 morning.
+07:12 Um
+07:14 so this is this is the the final report
+07:17 on the um on the AI landscape. It
+07:21 plotted a graph which I'll show you. At
+07:23 first when I saw this I thought there
+07:24 must be a mistake but I think that this
+07:26 is counting the OpenAI investment which
+07:29 is why this graph looks really weird in
+07:31 March. Um but yeah, I I won't make you
+07:35 read through the entire report right
+07:36 now, but um I hope hopefully there's
+07:39 some good insights in in here. So I
+07:41 encourage you to try it as well
+07:42 yourself. And then um I just wanted to
+07:45 show that there like quite a broad range
+07:47 of different things that deep research
+07:48 is useful for. So this is an example
+07:50 from u like a biology use case asking
+07:53 about um specific gene therapies that
+07:56 have gained regulatory approval in the
+07:58 US for treating hemophilia with
+07:60 information and then the model is able
+08:02 to do research and then come back with
+08:04 um the correct list with like citations
+08:06 and explanations. So we're very excited
+08:08 to continue developing deep research.
+08:10 It's obviously not perfect. Sometimes it
+08:12 can hallucinate. So we're working on
+08:13 like improving um reliability. We're
+08:15 also excited to like integrate deep
+08:17 research into the main reasoning models.
+08:20 So, you know, as you know, 03 is already
+08:21 good at search. We'll continue to like
+08:23 upstream things that we work on into the
+08:24 the other the bigger reasoning models.
+08:27 Um, we're also really excited to bring
+08:29 um private context into deep research.
+08:31 So, your internal company knowledge um
+08:34 pay sources and then I think the next
+08:36 like big thing for us will be um not
+08:39 just synthesizing existing information
+08:41 but actually taking actions as well. So,
+08:44 um, thank you very much for having me
+08:46 and, um, I'll pass over to Zach. Thank
+08:49 you.

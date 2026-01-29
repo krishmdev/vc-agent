@@ -1,0 +1,5089 @@
+00:00 we've asked the entire world to move
+00:02 
+
+00:02 from calculator technology punch the
+00:04 
+
+00:04 same Keys you'll get the same result to
+00:06 
+
+00:06 stochastic technology ask the same
+00:08 
+
+00:08 question you'll get a slightly different
+00:09 
+
+00:09 result this has not happened this is the
+00:11 
+
+00:11 biggest shift in you know the use of the
+00:13 
+
+00:13 tools that we have since the Advent of
+00:15 
+
+00:15 the computer we're asking an entire
+00:17 
+
+00:17 cohort of the workforce to move to a
+00:19 
+
+00:19 stochastic mindset and the only way you
+00:21 
+
+00:21 get that is by having a risk reward
+00:24 
+
+00:24 ratio that you're comfortable enough
+00:26 
+
+00:26 it's like you know what I don't I'm not
+00:27 
+
+00:27 asking it to be right 100% of the time
+00:29 
+
+00:29 I'm asking it give me a draft that saves
+00:31 
+
+00:31 me time many many many times over and
+00:34 
+
+00:34 that distribution of Roi is something
+00:36 
+
+00:36 that I'm comfortable exploring with and
+00:37 
+
+00:37 it's rating on and I think that that is
+00:39 
+
+00:39 really one of the predictors that we see
+00:41 
+
+00:41 in people who've tried chat GPT or in
+00:43 
+
+00:43 people who are just curious with new
+00:44 
+
+00:44 technology is they expect that some of
+00:46 
+
+00:46 it's going to be a bit broken but the
+00:48 
+
+00:48 upside scenario to them is so clear and
+00:50 
+
+00:50 so 10x that they're willing to make that
+00:52 
+
+00:52 trade-off or that local risk to uh to
+00:54 
+
+00:54 get things started
+00:57 
+
+00:57 [Music]
+01:12 
+
+01:12 welcome to training data this week we
+01:14 
+
+01:14 welcome Gabriel Hubert and Stanis L po
+01:16 
+
+01:16 the co-founders of dust a unified
+01:19 
+
+01:19 product to build share and deploy
+01:21 
+
+01:21 personalized AI assistance at work
+01:24 
+
+01:24 founded in early 2023 after spending
+01:27 
+
+01:27 years at stripe and open AI second time
+01:30 
+
+01:30 Founders Gabe and Stan started dust with
+01:33 
+
+01:33 the view that one model will not rule
+01:35 
+
+01:35 them all and that multimodel integration
+01:37 
+
+01:37 will be key to getting the most value
+01:39 
+
+01:39 out of AI assistance they were early to
+01:42 
+
+01:42 be convinced that access to the
+01:43 
+
+01:43 proprietary data you have in data silos
+01:46 
+
+01:46 will be key to unlocking the full power
+01:48 
+
+01:48 of AI and they know that you want to
+01:51 
+
+01:51 keep that data private we've worked
+01:53 
+
+01:53 together for 18 months and their
+01:55 
+
+01:55 predictions have been consistently preed
+01:58 
+
+01:58 so today we decided to ask them about
+01:59 
+
+01:59 those predictions
+02:00 
+
+02:00 we'll get into their perspective on how
+02:02 
+
+02:02 they see the model landscape evolving on
+02:04 
+
+02:04 the importance of product Focus over
+02:06 
+
+02:06 building proprietary models and on how
+02:09 
+
+02:09 AI can augment rather than replace human
+02:14 
+
+02:14 capabilities Stan Gabriel welcome to
+02:17 
+
+02:17 trading data thank you glad to be here
+02:19 
+
+02:19 yeah thanks Constantine super happy to
+02:21 
+
+02:21 be here guys first thing that I want to
+02:23 
+
+02:23 ask is you started this company in early
+02:26 
+
+02:26 2023 at the time it seemed like one
+02:29 
+
+02:29 model might rule them all uh and that
+02:32 
+
+02:32 model at the time was I think it was
+02:34 
+
+02:34 probably G gbg 3.5 I don't know if four
+02:36 
+
+02:36 had yet come out but that was way ahead
+02:39 
+
+02:39 of the curve and people were super Blown
+02:41 
+
+02:41 Away you guys came out with a pretty
+02:42 
+
+02:42 contrarian view that there actually
+02:45 
+
+02:45 would be many models and that the
+02:47 
+
+02:47 ability to stitch those together and do
+02:48 
+
+02:48 Advanced workflows on top of that would
+02:50 
+
+02:50 be important so far you've been
+02:52 
+
+02:52 completely right how did you get the
+02:54 
+
+02:54 confidence to make that decision a year
+02:56 
+
+02:56 and a half ago yeah I think on the on
+02:58 
+
+02:58 the M part it's uh it was clear that um
+03:01 
+
+03:01 many Labs were already emerging it was
+03:04 
+
+03:04 not clear from the kind of General
+03:06 
+
+03:06 audience but for the people that knew
+03:09 
+
+03:09 the Dynamics of the market was cl many
+03:11 
+
+03:11 laps were emerging and I think um it was
+03:16 
+
+03:16 uh kind of natural to us that there
+03:17 
+
+03:17 would be competition in that space and
+03:20 
+
+03:20 as a result uh there would be value in
+03:22 
+
+03:22 enabling people to quickly switch from
+03:25 
+
+03:25 one model to another to get the best
+03:26 
+
+03:26 value depending on their use cases yeah
+03:29 
+
+03:29 and I think from the from the use a
+03:30 
+
+03:30 standpoint the the point on being able
+03:32 
+
+03:32 to quickly evaluate and compare is
+03:34 
+
+03:34 obviously important looking ahead or
+03:37 
+
+03:37 already at some the conversations we're
+03:39 
+
+03:39 having um it seems that the levels of
+03:42 
+
+03:42 scrutiny security sensitivity of the
+03:44 
+
+03:44 data that's being processed may also
+03:46 
+
+03:46 influence some different use cases and
+03:48 
+
+03:48 so we're excitingly seeing people
+03:50 
+
+03:50 thinking about running smaller models on
+03:52 
+
+03:52 device for some use cases and you could
+03:54 
+
+03:54 imagine a world where you want to be
+03:56 
+
+03:56 able to switch between an API call to a
+03:58 
+
+03:58 Frontier Model for something that's less
+04:00 
+
+04:00 sensitive absolutely crucial to get like
+04:03 
+
+04:03 um Cutting Edge reasoning capabilities
+04:05 
+
+04:05 for and some smaller classification or
+04:08 
+
+04:08 summarization efforts that could be done
+04:09 
+
+04:09 locally uh while the interface that you
+04:12 
+
+04:12 use uh for your agent or your assistant
+04:14 
+
+04:14 Remains the Same that and that switching
+04:16 
+
+04:16 sort of requires the ability to to have
+04:18 
+
+04:18 a layer on top of the models so you you
+04:20 
+
+04:20 guys have been read about this every
+04:22 
+
+04:22 time uh as you've called this out and so
+04:24 
+
+04:24 many of your predictions over the past
+04:26 
+
+04:26 couple years of partnership have been uh
+04:29 
+
+04:29 non obvious and then correct uh I think
+04:32 
+
+04:32 this is still not obvious as in there
+04:35 
+
+04:35 will be many models you'll have some
+04:37 
+
+04:37 local models you'll have some API call
+04:40 
+
+04:40 and then you actually as a customer want
+04:42 
+
+04:42 to choose between them or want to have
+04:44 
+
+04:44 some control first of all why do you
+04:46 
+
+04:46 think that will be as in why will there
+04:48 
+
+04:48 be multiple models secondly why doesn't
+04:50 
+
+04:50 that get abstracted away by some sort of
+04:52 
+
+04:52 router mechanism some hypervisor layer
+04:56 
+
+04:56 uh and does that happen and would you be
+04:58 
+
+04:58 that hypervisor layer uh yeah help me
+05:02 
+
+05:02 understand that I think there's really
+05:04 
+
+05:04 uh two two modes of operation in free
+05:08 
+
+05:08 think about the future so it's a it's a
+05:10 
+
+05:10 Bodel distribution basically of the
+05:12 
+
+05:12 future there's one where the technology
+05:14 
+
+05:14 as it stands today keeps uh progressing
+05:16 
+
+05:16 rapidly in which case there's still
+05:18 
+
+05:18 going to be competition from rather big
+05:21 
+
+05:21 Lads because there's be incredible need
+05:23 
+
+05:23 for gpus to build those larger and
+05:25 
+
+05:25 larger models because the only way we
+05:26 
+
+05:26 know to get those model better today is
+05:28 
+
+05:28 mostly by scale in that world the this
+05:32 
+
+05:32 kind of dynamic of being able to switch
+05:33 
+
+05:33 to the best model at time T will remain
+05:36 
+
+05:36 true for a long time I guess until we
+05:38 
+
+05:38 reach wherever it is that is at the end
+05:41 
+
+05:41 of that
+05:42 
+
+05:42 Dynamic and then there's the hypothesis
+05:44 
+
+05:44 and we can talk about that uh later in
+05:46 
+
+05:46 more details the theis of maybe the the
+05:48 
+
+05:48 technology plate uh in which case it's
+05:52 
+
+05:52 not going to be one model it's going to
+05:54 
+
+05:54 be a gazan model and eventually
+05:56 
+
+05:56 everybody will get this their model and
+05:57 
+
+05:57 eventually on your MacBook M6 you'll be
+05:59 
+
+05:59 able to to to train a GPT 6 uh in a few
+06:03 
+
+06:03 hours in a couple years and then the
+06:05 
+
+06:05 kind of router uh the rout need those
+06:08 
+
+06:08 kind of disappears because the
+06:09 
+
+06:09 technology is really commoditized uh in
+06:11 
+
+06:11 terms of just producing the tokens and
+06:13 
+
+06:13 every company will have their own model
+06:15 
+
+06:15 we will we would have our own model in
+06:16 
+
+06:16 that world well we got to push you on
+06:18 
+
+06:18 that so there's you're building a
+06:20 
+
+06:20 business where you you sort of win
+06:22 
+
+06:22 regardless of which one of those worlds
+06:23 
+
+06:23 we go into which one of those worlds do
+06:25 
+
+06:25 you think we're going into this one is
+06:27 
+
+06:27 definitely tricky I it's it it it's it's
+06:31 
+
+06:31 interesting because um so in terms of
+06:35 
+
+06:35 capabilities of the models we we've seen
+06:37 
+
+06:37 or had the perception that the ecosystem
+06:39 
+
+06:39 was moving very quickly over the past
+06:40 
+
+06:40 two years we've seen larger context
+06:43 
+
+06:43 support for audio support for image and
+06:46 
+
+06:46 stuff but at the same time the One Core
+06:48 
+
+06:48 thing that matters for changing the
+06:50 
+
+06:50 world is the resoning capabilities of
+06:52 
+
+06:52 those models right and the current
+06:54 
+
+06:54 reasoning capabilities of those models
+06:56 
+
+06:56 has been actually pretty flat over the
+06:58 
+
+06:58 past two years uh they are at the level
+06:60 
+
+06:60 GT4 as the end of its training which is
+07:03 
+
+07:03 roughly slightly over two years ago if I
+07:05 
+
+07:05 remember correctly for the end of the
+07:07 
+
+07:07 internal training at and so that means
+07:10 
+
+07:10 that over the past two years in terms of
+07:11 
+
+07:11 reasoning capabilities it's been
+07:13 
+
+07:13 somewhat flat well so hang on so there's
+07:15 
+
+07:15 the Kevin Scot point of view which is
+07:17 
+
+07:17 there's actually exponential progress
+07:19 
+
+07:19 but you only get to sample that progress
+07:21 
+
+07:21 every so often and so in the absence of
+07:23 
+
+07:23 a recent sample people interpret it as
+07:25 
+
+07:25 having been flat when in fact there's
+07:27 
+
+07:27 just sample bias you can't see it so do
+07:29 
+
+07:29 you
+07:30 
+
+07:30 do you Subs do you think he's right do
+07:32 
+
+07:32 you think there's actually exponential
+07:33 
+
+07:33 progress we just haven't gotten to see
+07:34 
+
+07:34 it yet or do you think it's actually
+07:36 
+
+07:36 like ASM toting and reasoning
+07:38 
+
+07:38 breakthroughs have not progressed at the
+07:39 
+
+07:39 rate one might hope uh as far as I'm
+07:42 
+
+07:42 concerned I have a strong feeling that
+07:44 
+
+07:44 it's uh it hasn't been moving as fast as
+07:47 
+
+07:47 I would have expected in my most uh
+07:50 
+
+07:50 optimistic views of the technology and
+07:53 
+
+07:53 so that's why I'm I'm I'm allowing
+07:55 
+
+07:55 myself to to ask the question any or
+07:57 
+
+07:57 simply consider the different scenarios
+07:59 
+
+07:59 what I think one of your predictions for
+08:01 
+
+08:01 2024 also is that we would have a major
+08:03 
+
+08:03 reasoning breakthrough do you think it's
+08:04 
+
+08:04 coming yeah it's going to be a tough one
+08:06 
+
+08:06 because uh this one hasn't come for sure
+08:08 
+
+08:08 and even gp5 or GPT n plus1 or or clro n
+08:12 
+
+08:12 plus1 doesn't matter who who cracks that
+08:14 
+
+08:14 first hasn't come yet uh and there's
+08:18 
+
+08:18 there's many reasons to to believe it
+08:20 
+
+08:20 might not be a a core technological
+08:23 
+
+08:23 limitation you can make many hypothesis
+08:26 
+
+08:26 as to why it might be the case that it
+08:27 
+
+08:27 takes time um the the scale of the
+08:30 
+
+08:30 Clusters required to train the next
+08:32 
+
+08:32 generation of model is humongous and it
+08:34 
+
+08:34 involve a lot of complexity from an
+08:37 
+
+08:37 infrastructure and really programming
+08:38 
+
+08:38 standpoints because GPU fails when you
+08:41 
+
+08:41 scale to that many gpus per cluster they
+08:43 
+
+08:43 fail pretty much all the time all the
+08:45 
+
+08:45 training is very synchronous across a
+08:47 
+
+08:47 cluster and so it might just be the case
+08:49 
+
+08:49 that scaling up to the next order of
+08:51 
+
+08:51 magnitude of GVS needed is just very
+08:53 
+
+08:53 very very hard and that that that
+08:56 
+
+08:56 wouldn't be kind of a inherent
+08:58 
+
+08:58 limitation it's just a phase where we
+09:00 
+
+09:00 learn how to go from red one to Red five
+09:03 
+
+09:03 but for gpus basically Stan you were uh
+09:07 
+
+09:07 you were at open AI at a pretty critical
+09:10 
+
+09:10 point in time so people know you from
+09:13 
+
+09:13 the dust experience but one thing that
+09:15 
+
+09:15 it has to be remember about Stan is you
+09:16 
+
+09:16 were a critical researcher at open aai
+09:18 
+
+09:18 from 2019 through late 2022 you got a
+09:21 
+
+09:21 one a bunch of wonderful Publications
+09:23 
+
+09:23 some of them relates to mathematics and
+09:26 
+
+09:26 AI you worked on these with Ilia sitk
+09:29 
+
+09:29 and the crew at open AI do you think
+09:32 
+
+09:32 that mathematics will be essential to
+09:35 
+
+09:35 this type of reasoning breakthrough or
+09:37 
+
+09:37 is it orthogonal that's something that
+09:39 
+
+09:39 we're actually going to learn on textual
+09:41 
+
+09:41 language data I I remain quite convinced
+09:44 
+
+09:44 that it's a great environments to to
+09:46 
+
+09:46 study and it's it was a tesis that we
+09:48 
+
+09:48 had at time with G Lum we uh then
+09:52 
+
+09:52 founded mistra he was working at Fair on
+09:54 
+
+09:54 exactly the same subjects and our
+09:56 
+
+09:56 motivation was exactly was really shared
+09:58 
+
+09:58 at the time we really were friend is
+09:60 
+
+10:00 competing in the in in the workspace but
+10:02 
+
+10:02 really FR by the ideas um I think the
+10:06 
+
+10:06 the uh the the the idea there was that
+10:10 
+
+10:10 mathematics and in particular in its
+10:12 
+
+10:12 form of formal mathematics that gives
+10:14 
+
+10:14 you perfect verification is a very
+10:17 
+
+10:17 unique environment to study reasoning
+10:19 
+
+10:19 capabilities and to push reasoning
+10:20 
+
+10:20 capabilities because you have a verifier
+10:23 
+
+10:23 so you're not not it's con constrained
+10:25 
+
+10:25 by being able to verify the prediction
+10:27 
+
+10:27 of the model that in an informal setup
+10:30 
+
+10:30 would require humans checking them uh to
+10:32 
+
+10:32 some extent and so that very bit is
+10:36 
+
+10:36 probably something that has to unlock
+10:38 
+
+10:38 something at some point it hasn't yet
+10:40 
+
+10:40 for many reason but at some point it
+10:41 
+
+10:41 should unlock something so I remain
+10:43 
+
+10:43 extremely bullish on the kind of mass
+10:45 
+
+10:45 and formal mass and LM studies yeah I
+10:49 
+
+10:49 remember one of the ways you were
+10:49 
+
+10:49 presenting it to me when I was still
+10:51 
+
+10:51 very much ramping up was uh in math as
+10:54 
+
+10:54 the door to software software the door
+10:55 
+
+10:55 to the rest and and started with some of
+10:57 
+
+10:57 the critical systems that were the very
+10:59 
+
+10:59 only ones to have been hand proven and
+11:02 
+
+11:02 hand verified as an example of how much
+11:04 
+
+11:04 more costly it was to do it by hand than
+11:05 
+
+11:05 do it by Machine uh and an an indication
+11:08 
+
+11:08 of the future gains we could expect from
+11:10 
+
+11:10 being able to extend that and and
+11:12 
+
+11:12 democratize that uh you guys see a lot
+11:15 
+
+11:15 of action through the dust API calls
+11:18 
+
+11:18 when you build a dust assistant you're
+11:19 
+
+11:19 able to choose what type of underlying
+11:21 
+
+11:21 model to use uh you're able to call many
+11:24 
+
+11:24 different models like me as a user I
+11:26 
+
+11:26 often call not just Cloud 3 but I call
+11:30 
+
+11:30 GPT 4 and I call the dust assistant and
+11:33 
+
+11:33 I call uh in my custom assistance I
+11:36 
+
+11:36 select one of many options what have you
+11:38 
+
+11:38 guys seen in terms of Trends what's
+11:40 
+
+11:40 performing really well I've personally
+11:42 
+
+11:42 been super impressed by the anthropic
+11:44 
+
+11:44 models as of late um but you guys have a
+11:47 
+
+11:47 much closer view of that I I think the
+11:51 
+
+11:51 um I mean so word of caveat on on on
+11:55 
+
+11:55 Trends you know you're going to have the
+11:57 
+
+11:57 usual cognitive biases The Grass Is
+11:58 
+
+11:58 Always Greener people we're going to
+11:59 
+
+11:59 want to switch just to see what it looks
+12:01 
+
+12:01 like on the other side and so when
+12:02 
+
+12:02 you're observing those switches you're
+12:04 
+
+12:04 not necessarily observing a conviction
+12:05 
+
+12:05 that the bottle on the other side is
+12:06 
+
+12:06 better you're just you're observing the
+12:08 
+
+12:08 conviction people want to try um but it
+12:10 
+
+12:10 is true we've gotten great feedback on
+12:13 
+
+12:13 on claude's latest sonnet release um and
+12:18 
+
+12:18 empirically we're seeing some stickiness
+12:21 
+
+12:21 on on on that model um in in our user
+12:24 
+
+12:24 base I think that uh you know word on
+12:27 
+
+12:27 the street is uh for some coding
+12:29 
+
+12:29 application Cod St is actually
+12:30 
+
+12:30 performing very very well we haven't uh
+12:32 
+
+12:32 yet made it available uh through dust uh
+12:35 
+
+12:35 but we're it's yesterday ah there we go
+12:38 
+
+12:38 sorry see this is the thing you get for
+12:40 
+
+12:40 read San Francisco and waking up so
+12:42 
+
+12:42 you're a recording at 7 o'clock in the
+12:44 
+
+12:44 morning so yeah code St apparently is is
+12:48 
+
+12:48 really interesting on some on some
+12:49 
+
+12:49 coding capabilities and then you have to
+12:51 
+
+12:51 mix it in with the actual experience
+12:52 
+
+12:52 that people are getting so you
+12:55 
+
+12:55 reasoning uh cannot be fully uh made
+12:58 
+
+12:58 independent from latency latency at some
+13:02 
+
+13:02 points last year could be you know
+13:03 
+
+13:03 basically a way to tell the time in San
+13:06 
+
+13:06 Francisco you you could see latency
+13:08 
+
+13:08 literally in the API as people were
+13:09 
+
+13:09 waking up on the west coast so uh people
+13:12 
+
+13:12 have use cases that may be more or less
+13:13 
+
+13:13 tolerent of those um so we we cover the
+13:17 
+
+13:17 Gemini uh models anthropics models open
+13:20 
+
+13:20 airs and mrr right now and uh and we
+13:22 
+
+13:22 have seen some interest in moving away
+13:24 
+
+13:24 from the default which when when we
+13:26 
+
+13:26 first launched were open AI models not
+13:29 
+
+13:29 to say that 4 isn't isn't performing
+13:31 
+
+13:31 very very well over the past year
+13:33 
+
+13:33 there's been a lot of enthusiasm about
+13:35 
+
+13:35 open source models and it's actually one
+13:37 
+
+13:37 of your predictions St you have these
+13:39 
+
+13:39 great predictions every year about AI I
+13:41 
+
+13:41 always really enjoy reading them one of
+13:43 
+
+13:43 them was that at some point this year an
+13:45 
+
+13:45 open source model take the brief lead uh
+13:48 
+
+13:48 for llm Quality that doesn't seem to
+13:51 
+
+13:51 have happened yet and it also seems like
+13:54 
+
+13:54 the enthusiasm uh around not the
+13:56 
+
+13:56 enthusiasm around but rather the lead SL
+13:59 
+
+13:59 acceleration of uh the open source
+14:02 
+
+14:02 models in comparison to the closed
+14:04 
+
+14:04 Source models has maybe slowed down a
+14:05 
+
+14:05 little bit maybe back to that Kevin
+14:07 
+
+14:07 Scott point about we sampling at
+14:08 
+
+14:08 discrete times as opposed to continuous
+14:10 
+
+14:10 times we just haven't seen it yet but
+14:12 
+
+14:12 where do you think the open source
+14:13 
+
+14:13 ecosystem is going to go will it
+14:16 
+
+14:16 actually at some point uh surpass the
+14:18 
+
+14:18 closed Source ecosystem I mean that Rems
+14:21 
+
+14:21 that that that that echos with what we
+14:23 
+
+14:23 said earlier it's really in that b model
+14:25 
+
+14:25 distribution there's one distribution
+14:27 
+
+14:27 where open SCE goes nowhere and there's
+14:28 
+
+14:28 one distribution where open source wins
+14:29 
+
+14:29 the whole thing right because uh if the
+14:33 
+
+14:33 technology platters open source
+14:34 
+
+14:34 obviously catches up and eventually
+14:37 
+
+14:37 everybody can train their their high
+14:38 
+
+14:38 quality model themselves and at that
+14:41 
+
+14:41 point uh there is uh no value in going
+14:43 
+
+14:43 for for proprietary model um so I think
+14:47 
+
+14:47 there's a there's a scenario where open
+14:48 
+
+14:48 source really is the winner at the end
+14:51 
+
+14:51 uh which would be a fun turn of event
+14:54 
+
+14:54 obviously uh and then uh in the current
+14:57 
+
+14:57 Dynamic it's true that open source has
+14:59 
+
+14:59 been lagging in behind so far obviously
+15:01 
+
+15:01 there's um I think the the one that has
+15:04 
+
+15:04 to be called out is really Facebook or
+15:07 
+
+15:07 meta eff thought because they have what
+15:09 
+
+15:09 it takes to train an excellent model and
+15:11 
+
+15:11 so far has been releasing every model
+15:13 
+
+15:13 very openly and so that's exciting to
+15:16 
+
+15:16 see what will come out of them uh in
+15:19 
+
+15:19 those next four months uh to maybe make
+15:22 
+
+15:22 the prediction true the cave adds to
+15:25 
+
+15:25 that is that assuming the best model are
+15:28 
+
+15:28 the largest which is a somewhat safe
+15:32 
+
+15:32 assumption yet it can be discussed uh it
+15:36 
+
+15:36 means that that model will be humongous
+15:38 
+
+15:38 to some extent and so that means that
+15:40 
+
+15:40 even if it's open source nobody will be
+15:41 
+
+15:41 able to make it run right uh it'll just
+15:45 
+
+15:45 cost too much money uh you'll need hpus
+15:47 
+
+15:47 just to do in France um and so that will
+15:51 
+
+15:51 really Trump the kind of usage of those
+15:53 
+
+15:53 models even if they're better in the
+15:55 
+
+15:55 current state of refers in terms of cost
+15:57 
+
+15:57 of running them it's a point for
+15:59 
+
+15:59 consumption that's interesting because
+16:01 
+
+16:01 that means that you might still have a
+16:02 
+
+16:02 world where um there's a lot of API
+16:04 
+
+16:04 based inference demand for API based
+16:07 
+
+16:07 inference regardless of whether the
+16:09 
+
+16:09 model on the other end is controlled
+16:11 
+
+16:11 hosted open weights whatever um just
+16:14 
+
+16:14 because of the the technical abilities
+16:16 
+
+16:16 to perform that one one of your founding
+16:18 
+
+16:18 assumptions kind of related to model
+16:20 
+
+16:20 quality and model performance and this
+16:22 
+
+16:22 goes back almost two years now was that
+16:26 
+
+16:26 even as of two years ago the models were
+16:28 
+
+16:28 powerful enough and potentially
+16:30 
+
+16:30 economically viable enough that you
+16:32 
+
+16:32 could unlock a huge range of unique and
+16:36 
+
+16:36 compelling applications on top and that
+16:38 
+
+16:38 the bottleneck even at that point was
+16:40 
+
+16:40 not necessarily model quality so much as
+16:43 
+
+16:43 product and Engineering that can happen
+16:45 
+
+16:45 on top of the model I don't know if
+16:47 
+
+16:47 that's a consensus point of view today
+16:50 
+
+16:50 you know we still hear a lot of people
+16:51 
+
+16:51 who are sort of waiting for the models
+16:53 
+
+16:53 to get better for what it's worth we
+16:55 
+
+16:55 happen to agree with you but the
+16:56 
+
+16:56 question is what did you see in
+16:59 
+
+16:59 22 that gave you that point of view and
+17:02 
+
+17:02 if we fast forward to today what has
+17:04 
+
+17:04 your lived experience been deploying
+17:07 
+
+17:07 this stuff into the Enterprise in terms
+17:08 
+
+17:08 of where are the product and Engineering
+17:11 
+
+17:11 unlocks that need to happen to bring
+17:14 
+
+17:14 this stuff to fruition my triggering
+17:16 
+
+17:16 point for for living up AI was seeing
+17:19 
+
+17:19 and playing with gp4 and it it is it was
+17:22 
+
+17:22 coming from two very contradictory
+17:24 
+
+17:24 motivations the first
+17:26 
+
+17:26 was I said it before it is is crazy
+17:30 
+
+17:30 useful nobody knows about it nobody can
+17:32 
+
+17:32 use it yet and still it exists and
+17:36 
+
+17:36 literally it's almost already in the API
+17:38 
+
+17:38 I mean at the time it was GP 3.5 in the
+17:40 
+
+17:40 API which was kind of a slightly smaller
+17:43 
+
+17:43 version of gp4 but on the same train
+17:45 
+
+17:45 data it was a crazy good model um which
+17:48 
+
+17:48 was and it was basically codex the the
+17:51 
+
+17:51 Bas model and um it was much better than
+17:53 
+
+17:53 chpd and it was available in the API and
+17:56 
+
+17:56 yet the AR of open a
+18:00 
+
+18:00 was ridiculously small at the time like
+18:03 
+
+18:03 in
+18:05 
+
+18:05 existence by all standards of what we
+18:07 
+
+18:07 see today and so that was kind of the
+18:10 
+
+18:10 motivation and and that was mixed with
+18:12 
+
+18:12 the fact that I I I I was starting to
+18:15 
+
+18:15 feel the uh the I mean I had the
+18:17 
+
+18:17 intuition that it would be hard to
+18:21 
+
+18:21 invent an artificial mathematician with
+18:24 
+
+18:24 the current technology and so I was kind
+18:27 
+
+18:27 of seeing it not a dead on a very long
+18:30 
+
+18:30 pass slow pass forward on what I was
+18:33 
+
+18:33 working on and at the same time I was
+18:34 
+
+18:34 seeing the the utility of those models
+18:37 
+
+18:37 already when you use them for your
+18:39 
+
+18:39 day-to-day tasks and so that was first
+18:41 
+
+18:41 motivation and the Very contradictory
+18:43 
+
+18:43 motivation that I shared with Gabriel at
+18:45 
+
+18:45 the time was if that technology goes all
+18:48 
+
+18:48 the way to AGI it's the last train to
+18:50 
+
+18:50 build a company so we better we better
+18:53 
+
+18:53 do it right now because otherwise next
+18:54 
+
+18:54 time it's going to be
+18:57 
+
+18:57 sh and I absolutely didn't answer your
+18:60 
+
+18:60 question but I let Gabriel answer a
+19:03 
+
+19:03 question I I think I think what got me
+19:05 
+
+19:05 excited and when we did start
+19:07 
+
+19:07 brainstorming on on the ways to to
+19:09 
+
+19:09 deploy this just raw capability in the
+19:11 
+
+19:11 world what where it made sense to dig
+19:15 
+
+19:15 was um one Insight on some of the
+19:18 
+
+19:18 limitations of the hyper and fine tuning
+19:21 
+
+19:21 at the time that people were talking a
+19:23 
+
+19:23 lot about fine-tuning a lot of
+19:24 
+
+19:24 consultancy firms were selling a lot of
+19:26 
+
+19:26 slides that were essentially telling big
+19:28 
+
+19:28 companies to spend a a lot of money
+19:30 
+
+19:30 fine-tuning and and the two things that
+19:32 
+
+19:32 cut it for me was Dan saying you know
+19:35 
+
+19:35 one it's expensive and you do it
+19:38 
+
+19:38 regularly and nobody knows that they'll
+19:39 
+
+19:39 have to do it regularly uh and two it's
+19:42 
+
+19:42 really not the right idea for most of
+19:43 
+
+19:43 the things people are excited to F tune
+19:45 
+
+19:45 on and in particular like fine-tuning on
+19:47 
+
+19:47 your company's data is a bad idea as
+19:49 
+
+19:49 opposed to maybe sometimes fine-tuning
+19:51 
+
+19:51 on some specific tasks where you can see
+19:53 
+
+19:53 gains but um the idea that bringing the
+19:56 
+
+19:56 context of a company which is obviously
+19:57 
+
+19:57 every real company Obsession like how
+19:60 
+
+19:60 does this work for me how do I get it to
+20:02 
+
+20:02 work the way I like it to work uh was
+20:04 
+
+20:04 going to happen with technologies that
+20:06 
+
+20:06 weren't just changing the model itself
+20:08 
+
+20:08 but rather controlling the data it has
+20:11 
+
+20:11 access to controlling the data any of
+20:12 
+
+20:12 its users have access to and those are
+20:15 
+
+20:15 somewhat Hybrid models between New World
+20:18 
+
+20:18 and old world uh the very old world
+20:20 
+
+20:20 version of it is you know the keyh
+20:21 
+
+20:21 holders are still the same the ceso is
+20:22 
+
+20:22 the one deciding how new technolog is
+20:25 
+
+20:25 exposed to members of a company the
+20:27 
+
+20:27 guard rails that are in place the
+20:28 
+
+20:28 observability that's available to the
+20:29 
+
+20:29 teams to measure its impact and and any
+20:32 
+
+20:32 data leaks those are old software
+20:34 
+
+20:34 problems but they still need to be
+20:35 
+
+20:35 rolled out on very new interfaces
+20:38 
+
+20:38 because the interfaces now are these you
+20:39 
+
+20:39 assistants these agents um and then some
+20:42 
+
+20:42 of the new problems are around access
+20:45 
+
+20:45 controls does access controls look and
+20:47 
+
+20:47 feel the same in a world where you have
+20:50 
+
+20:50 half of uh the actions done by
+20:52 
+
+20:52 non-humans I might want to have access
+20:56 
+
+20:56 to a file that's like 2020 like do do I
+20:59 
+
+20:59 have access to the file yes or no in
+21:01 
+
+21:01 2024 it's like well maybe an assistant
+21:03 
+
+21:03 might have access to the file and can
+21:04 
+
+21:04 give me a summary of it that leaves out
+21:06 
+
+21:06 some of the critical information I
+21:08 
+
+21:08 should not have access to but still
+21:09 
+
+21:09 gives me access to some of the decision
+21:11 
+
+21:11 points that are important for me to move
+21:12 
+
+21:12 on with my job and that set of
+21:14 
+
+21:14 Primitives that set of nuances just
+21:16 
+
+21:16 doesn't really exist in how documents
+21:18 
+
+21:18 are stored today so if you think about
+21:21 
+
+21:21 deploying the capability in a real world
+21:24 
+
+21:24 environment where people are still going
+21:26 
+
+21:26 to have to face those controls and and
+21:28 
+
+21:28 those guard rails
+21:30 
+
+21:30 the product layer is actually very thick
+21:31 
+
+21:31 the application layer to build the logic
+21:34 
+
+21:34 and the usability uh to ensure
+21:36 
+
+21:36 performance but also adoption is is is
+21:39 
+
+21:39 quite thick and that was the I think
+21:41 
+
+21:41 that was the go to say all right there
+21:42 
+
+21:42 there's a lot to do here we might get
+21:43 
+
+21:43 started maybe you can dig into that
+21:45 
+
+21:45 because when we intersected in Q2
+21:49 
+
+21:49 2023 q1 Q2 2023 a lot of people were
+21:53 
+
+21:53 still starting these Foundation model
+21:54 
+
+21:54 companies and you guys had a very
+21:56 
+
+21:56 specific opinion which is the future is
+21:58 
+
+21:58 application layer
+22:00 
+
+22:00 and there's going to be a lot going on
+22:01 
+
+22:01 under the hood and we're just going to
+22:03 
+
+22:03 be an abstraction layer on top of that
+22:04 
+
+22:04 and let things happen as it see as it
+22:06 
+
+22:06 happens uh we're going to succeed in any
+22:08 
+
+22:08 case by building something that people
+22:10 
+
+22:10 actually used and love first how do you
+22:13 
+
+22:13 have the conviction for that
+22:14 
+
+22:14 secondly how has that been playing out
+22:16 
+
+22:16 what has been the hard part about it you
+22:18 
+
+22:18 mentioned the cesos and the Enterprise
+22:20 
+
+22:20 and Enterprise
+22:21 
+
+22:21 deployments uh you guys have been way
+22:24 
+
+22:24 ahead of the curve on rag I mean
+22:25 
+
+22:25 everyone was talking about fine tuning
+22:27 
+
+22:27 but you guys have done so much in ter
+22:29 
+
+22:29 terms of uh retrieving this was before
+22:31 
+
+22:31 it was even called that really
+22:33 
+
+22:33 retrieving and actually making smart
+22:34 
+
+22:34 decisions around information walk us
+22:37 
+
+22:37 through the step by step of from the
+22:39 
+
+22:39 idea of application layer to where you
+22:40 
+
+22:40 are today you can imagine the
+22:42 
+
+22:42 application layer conviction existing in
+22:44 
+
+22:44 a world where you still decide to build
+22:46 
+
+22:46 a Frontier Model the reason we split
+22:48 
+
+22:48 those two is one it seemed like a lot of
+22:52 
+
+22:52 money for a lot of risk and I mean a lot
+22:54 
+
+22:54 of money for a lot of risk to try and
+22:56 
+
+22:56 develop a Frontier Model or an
+22:58 
+
+22:58 equivalent to a fr model and also make a
+23:01 
+
+23:01 bet on the way it was going to be
+23:03 
+
+23:03 distributed and um it's so our our
+23:07 
+
+23:07 internal slogan was like no gpus before
+23:09 
+
+23:09 pmf like we we don't see the value in
+23:11 
+
+23:11 training our own model until we actually
+23:14 
+
+23:14 know which use cases it's going to get
+23:15 
+
+23:15 deployed on uh and there are much
+23:17 
+
+23:17 cheaper ways to explore and confirm
+23:20 
+
+23:20 which use cases are actually going to uh
+23:22 
+
+23:22 make most of value and generate most of
+23:24 
+
+23:24 the engagement um the second uh reason
+23:28 
+
+23:28 was was about this this this this data
+23:31 
+
+23:31 contradiction like the fact that the cut
+23:32 
+
+23:32 off dates for training on internet data
+23:36 
+
+23:36 uh are hard to set continuously the fact
+23:38 
+
+23:38 that you can't actually get an internal
+23:41 
+
+23:41 understanding of what happened last week
+23:43 
+
+23:43 in a Frontier Model means that fine
+23:45 
+
+23:45 tuning is a hard problem that it is not
+23:47 
+
+23:47 a solved problem at scale and so if you
+23:49 
+
+23:49 walk from that conviction backwards that
+23:51 
+
+23:51 means like it's there are many cases
+23:53 
+
+23:53 where it's not solved so another
+23:54 
+
+23:54 technology has to be the one to deliver
+23:57 
+
+23:57 um most of the most of the gains and
+24:01 
+
+24:01 extracting a small piece of context uh
+24:04 
+
+24:04 from documents where it lives feeding it
+24:07 
+
+24:07 into the scenario the workflow that you
+24:09 
+
+24:09 need help for the the one Trend that
+24:12 
+
+24:12 seemed interesting was that actually
+24:14 
+
+24:14 many decisions require limited amounts
+24:16 
+
+24:16 of of context and information to be
+24:18 
+
+24:18 greatly improved so the context windows
+24:21 
+
+24:21 at the time that were small we're
+24:23 
+
+24:23 already compatible with some scenarios
+24:25 
+
+24:25 of saying let's just bring the the
+24:27 
+
+24:27 information in and what we've seen over
+24:29 
+
+24:29 the last year of course is the the
+24:31 
+
+24:31 increase in size of those context
+24:32 
+
+24:32 Windows which just makes it easier to
+24:34 
+
+24:34 expose all the right data no more than
+24:37 
+
+24:37 the right data hopefully to the
+24:39 
+
+24:39 reasoning capabilities of the of the
+24:41 
+
+24:41 Frontier Model um and what we've what we
+24:44 
+
+24:44 experienced is first of all it takes
+24:46 
+
+24:46 time for people to understand those
+24:47 
+
+24:47 distinctions it's hard and you have to
+24:50 
+
+24:50 get yourself out of your own bubble
+24:52 
+
+24:52 regularly to realize that it's true the
+24:53 
+
+24:53 world um the the future isn't quite
+24:56 
+
+24:56 evenly distributed yet and people have
+24:58 
+
+24:58 varying assumptions on what it means to
+25:00 
+
+25:00 roll out AI internally or roll out the
+25:03 
+
+25:03 capabilities of of these Frontier models
+25:05 
+
+25:05 on their on their workflows and you have
+25:07 
+
+25:07 to walk them back on your what they
+25:08 
+
+25:08 really care about which is always very
+25:10 
+
+25:10 simple things you know I want to work
+25:12 
+
+25:12 faster I want to know the stuff that I'm
+25:14 
+
+25:14 missing out on I want to be more
+25:17 
+
+25:17 productive or more efficient in some
+25:18 
+
+25:18 tasks that I find repetitive and then
+25:21 
+
+25:21 only bring the explanation of what
+25:23 
+
+25:23 technology is going to solve that when
+25:24 
+
+25:24 it's absolutely necessary because people
+25:26 
+
+25:26 will worry about their experience and
+25:28 
+
+25:28 how they feel about it more than how
+25:30 
+
+25:30 it's working under the hood 99% of the
+25:33 
+
+25:33 time uh the big Insight that's happened
+25:36 
+
+25:36 and that I think we're leaning into we
+25:38 
+
+25:38 have been for a while and it's great to
+25:39 
+
+25:39 see some of the market also doing that
+25:41 
+
+25:41 is people are actually really good at
+25:43 
+
+25:43 recognizing which tool they need in the
+25:45 
+
+25:45 toolbox like I think we've we've we've
+25:47 
+
+25:47 not respected users enough in saying you
+25:50 
+
+25:50 need a single user that does absolutely
+25:52 
+
+25:52 everything and you know the routing
+25:53 
+
+25:53 problem should be completely abstracted
+25:54 
+
+25:54 from you you should ask this question to
+25:56 
+
+25:56 the one Oracle and the Oracle will reply
+25:58 
+
+25:58 people are pretty comfortable telling a
+25:60 
+
+25:60 screwdriver from a hammer and you know
+26:01 
+
+26:01 when they want to get to work and they
+26:03 
+
+26:03 need a screwdriver they're very very
+26:04 
+
+26:04 disappointed where one they get is a
+26:05 
+
+26:05 hammer and it sounds like a hammer
+26:07 
+
+26:07 response and and so specializing agents
+26:09 
+
+26:09 specializing assistance and making that
+26:11 
+
+26:11 easy to do design deploy monitor iterate
+26:14 
+
+26:14 on improve all those verbs that require
+26:17 
+
+26:17 prod surface H it it was it was quickly
+26:21 
+
+26:21 apparent to us that people were very
+26:22 
+
+26:22 comfortable with that and uh and so the
+26:25 
+
+26:25 the number one question that made us
+26:26 
+
+26:26 feel like we had an insight to hang on
+26:28 
+
+26:28 to an and lean in on was everybody
+26:31 
+
+26:31 asking us about D was obsessed with the
+26:33 
+
+26:33 top use case it's like what are people
+26:35 
+
+26:35 using it most for what is the top use
+26:36 
+
+26:36 case across companies what a and and I
+26:39 
+
+26:39 could almost see the the Amazon eyes
+26:41 
+
+26:41 trying to decide which diapers.com
+26:43 
+
+26:43 they're going to verticalized and
+26:44 
+
+26:44 integrate like which verticalized use
+26:45 
+
+26:45 case should we now just build as a
+26:47 
+
+26:47 specialized version of this but I think
+26:49 
+
+26:49 the full story is fragmentation I think
+26:51 
+
+26:51 the story is like giving the tools to a
+26:53 
+
+26:53 to a team or to a company to see
+26:56 
+
+26:56 opportunities for workflows to be uh
+26:58 
+
+26:58 improved proved on uh augmented and
+27:02 
+
+27:02 understanding the Lego breaks that are
+27:03 
+
+27:03 going to help them do that so rather
+27:04 
+
+27:04 than um encapsulate the technological
+27:08 
+
+27:08 breaks that are Ed for and Abstract them
+27:10 
+
+27:10 away from users exposing them at the
+27:12 
+
+27:12 right level gives people a ton more
+27:14 
+
+27:14 autonomy H and really just the ability
+27:16 
+
+27:16 to design things that we had never
+27:18 
+
+27:18 thought of some of the scenarios that
+27:20 
+
+27:20 have come up we we literally could not
+27:22 
+
+27:22 have imagined ourselves that idea Mak
+27:24 
+
+27:24 sense like the fragmentation and
+27:25 
+
+27:25 providing people with the Lego blocks to
+27:27 
+
+27:27 see what sort of use cases emerge just
+27:29 
+
+27:29 to make it a little bit real though can
+27:30 
+
+27:30 you share a couple of use cases that
+27:32 
+
+27:32 you've seen in your customer base that
+27:34 
+
+27:34 have been unique or surprising or
+27:36 
+
+27:36 particularly valuable just something to
+27:38 
+
+27:38 make it a little more tangible there's
+27:40 
+
+27:40 obviously a ton that people are thinking
+27:41 
+
+27:41 about like the category of obvious use
+27:44 
+
+27:44 cases that have been interestingly and
+27:46 
+
+27:46 quickly deployed are enablement of sales
+27:49 
+
+27:49 teams support teams marketing teams and
+27:52 
+
+27:52 that is essentially context retrieval
+27:55 
+
+27:55 and content generation uh I need to
+27:58 
+
+27:58 answer a ticket you know I need to
+27:60 
+
+27:60 understand what the answer to the ticket
+28:01 
+
+28:01 is and generate a draft to the ticket uh
+28:04 
+
+28:04 I need to talk to a customer I need to
+28:06 
+
+28:06 understand which vertical they're in and
+28:07 
+
+28:07 how our product solves their problems
+28:09 
+
+28:09 and draft an email to follow up on their
+28:10 
+
+28:10 objections um I need to uh prepare a
+28:14 
+
+28:14 blog post to show how we're
+28:15 
+
+28:15 differentiated from the market again
+28:16 
+
+28:16 like I'm going to go and plow into what
+28:18 
+
+28:18 makes us special and generate with our
+28:20 
+
+28:20 tone of voice those were were were
+28:22 
+
+28:22 pretty obvious and and and quite
+28:24 
+
+28:24 expected what I've been excited by is to
+28:26 
+
+28:26 see two types of things one very individ
+28:28 
+
+28:28 SCH assistants personal personal coaches
+28:31 
+
+28:31 um people generally actually quite young
+28:33 
+
+28:33 people in their first years of career
+28:35 
+
+28:35 asking for advice on a weekly on a daily
+28:38 
+
+28:38 basis how did I do today versus my goals
+28:40 
+
+28:40 where do you think I should focus my
+28:42 
+
+28:42 attention in the coming days can you
+28:43 
+
+28:43 actually break down my interactions on
+28:45 
+
+28:45 slack and and in in notion over the past
+28:48 
+
+28:48 couple of days and say where I could
+28:49 
+
+28:49 have been more concise uh I'm getting
+28:51 
+
+28:51 the feedback that I'm sort of sometimes
+28:53 
+
+28:53 talking to theoretically can you point
+28:55 
+
+28:55 out the ways in which I can improve on
+28:56 
+
+28:56 that in the in these two notes that I'm
+28:58 
+
+28:58 about to send and and so that's exciting
+28:60 
+
+28:60 because our bet was you know we want to
+29:03 
+
+29:03 make everybody a builder we want to make
+29:04 
+
+29:04 everybody able to see that it's not that
+29:06 
+
+29:06 hard to get started and by reducing the
+29:08 
+
+29:08 activation energy there to see small
+29:11 
+
+29:11 gains immediately rather than wait for
+29:13 
+
+29:13 the next model or the next version
+29:15 
+
+29:15 that's going to really solve everything
+29:16 
+
+29:16 for them um personal use case have been
+29:18 
+
+29:18 great that the second family of use
+29:20 
+
+29:20 cases that that I'm excited by are um
+29:23 
+
+29:23 essentially cross functional so where
+29:25 
+
+29:25 the data silos exist because the
+29:28 
+
+29:28 function don't speak the same they speak
+29:30 
+
+29:30 the same language but they don't speak
+29:32 
+
+29:32 the same language and so um
+29:35 
+
+29:35 understanding what's happened in the
+29:36 
+
+29:36 codebase when you don't know how to code
+29:38 
+
+29:38 is powerful having an assistant
+29:40 
+
+29:40 translate into plain English what the
+29:41 
+
+29:41 last poll request that's been merged
+29:43 
+
+29:43 does is powerful it's powerful to people
+29:46 
+
+29:46 that were blocked in their work uh
+29:48 
+
+29:48 didn't know who they should bug to
+29:50 
+
+29:50 actually get an update so you know
+29:51 
+
+29:51 marketing to engineering sales to
+29:53 
+
+29:53 engineering the other scenarios are you
+29:55 
+
+29:55 you're extracting technical information
+29:57 
+
+29:57 from a long sales call is powerful
+29:60 
+
+29:60 because it means that the engineer
+30:01 
+
+30:01 doesn't need the abstraction of a pmm or
+30:04 
+
+30:04 a PM to get n nuggets from the last call
+30:08 
+
+30:08 with a key account they can just
+30:10 
+
+30:10 actually Focus the attention of an
+30:12 
+
+30:12 assistant on that type of content on
+30:14 
+
+30:14 their own project and get those updates
+30:16 
+
+30:16 so I'd say that's the family of of
+30:18 
+
+30:18 assistants that that we're excited by
+30:20 
+
+30:20 because they really represent I think
+30:22 
+
+30:22 the future of how we'd love uh fast
+30:25 
+
+30:25 moving well performing companies to work
+30:27 
+
+30:27 where the data that is useful to you and
+30:29 
+
+30:29 the decisions you should make is always
+30:31 
+
+30:31 accessible you don't need to worry about
+30:33 
+
+30:33 which function decided on it or created
+30:36 
+
+30:36 it you can access it and that fluidity
+30:39 
+
+30:39 of information flowing through the
+30:40 
+
+30:40 company helps you make better and faster
+30:42 
+
+30:42 decisions day in day out um yeah any
+30:45 
+
+30:45 other examples that I'm missing Stan
+30:47 
+
+30:47 that you think you're excited by no I I
+30:49 
+
+30:49 think I think what I wanted to add is is
+30:51 
+
+30:51 the fact that as you said the usage is
+30:54 
+
+30:54 extremely fragmented we we see over and
+30:56 
+
+30:56 over the same scenario and so we have
+30:58 
+
+30:58 data to back that kind of a proposition
+31:01 
+
+31:01 is is as we we built dust as a Sandbox
+31:05 
+
+31:05 which is makes it extremely powerful uh
+31:07 
+
+31:07 and extremely flexible but also has the
+31:10 
+
+31:10 complexity of making activation of our
+31:12 
+
+31:12 users uh not trivial because when you
+31:15 
+
+31:15 have an horizontal sunbox like product
+31:17 
+
+31:17 you're like yes but for what and so
+31:19 
+
+31:19 generally the pilot phase that goes with
+31:22 
+
+31:22 our users starts by clearly identified
+31:24 
+
+31:24 use cases so they really kind of try to
+31:27 
+
+31:27 the question what are the use case I
+31:29 
+
+31:29 should care about for my company and try
+31:31 
+
+31:31 to identify a couple of them and we
+31:34 
+
+31:34 always see the same pattern we see first
+31:36 
+
+31:36 use case gets deployed use stage starts
+31:39 
+
+31:39 we try to move laterally to another use
+31:41 
+
+31:41 case Second Use case gets deployed
+31:42 
+
+31:42 useage picks up a little bit a little
+31:44 
+
+31:44 bit more and then we generally go
+31:46 
+
+31:46 through a phase where the usage is kind
+31:48 
+
+31:48 of flat increasing slowly and eventually
+31:50 
+
+31:50 it reaches can critical mass of usage
+31:53 
+
+31:53 and all of the sudden it skyrockets to
+31:55 
+
+31:55 something like 70% of the company and
+31:57 
+
+31:57 that's kind of the pattern of of kind of
+31:60 
+
+31:60 activation of our users and the skyro
+32:02 
+
+32:02 getting to 70% the usage picks up the
+32:04 
+
+32:04 time the original use case that were
+32:06 
+
+32:06 identified by the stakeholders become
+32:09 
+
+32:09 just anecdotical compared to the rest of
+32:10 
+
+32:10 the usage and that's where we we feel
+32:13 
+
+32:13 like does provides all value and it's
+32:15 
+
+32:15 very hard to know for us what are all
+32:17 
+
+32:17 those us case because for we have
+32:19 
+
+32:19 examples of company with a few hundred
+32:21 
+
+32:21 people and a few hundred assistants and
+32:24 
+
+32:24 so it's just it's just hard to answer
+32:26 
+
+32:26 the question what are the best us cases
+32:27 
+
+32:27 like that's those are great examples and
+32:30 
+
+32:30 that that calls to mind an analogy that
+32:32 
+
+32:32 I would like to try out on you guys and
+32:34 
+
+32:34 you may puke on this analogy but this is
+32:36 
+
+32:36 this is what just showed up in my brain
+32:38 
+
+32:38 which was um a lot of those use cases
+32:41 
+
+32:41 you described you could imagine some
+32:43 
+
+32:43 sort of vertical application being built
+32:45 
+
+32:45 around those use cases and the analogy
+32:48 
+
+32:48 that comes to mind is there are
+32:50 
+
+32:50 gazillion vertical applications and yet
+32:53 
+
+32:53 where does a lot of work happen
+32:55 
+
+32:55 spreadsheets why does it happen in
+32:57 
+
+32:57 spreadsheets everybody knows how to use
+32:58 
+
+32:58 a spreadsheet they're there they're
+33:01 
+
+33:01 flexible you can you can customize them
+33:03 
+
+33:03 to your heart's content and so the
+33:04 
+
+33:04 analogy that I'm wondering about is this
+33:06 
+
+33:06 almost like the spreadsheet of the
+33:08 
+
+33:08 future you know some of these
+33:10 
+
+33:10 applications may get peeled off at a
+33:12 
+
+33:12 vertical specific applications but even
+33:14 
+
+33:14 then people are still going to come back
+33:16 
+
+33:16 to the to the personal agent because
+33:18 
+
+33:18 it's just it's there it's available it
+33:20 
+
+33:20 has access to your data it's familiar
+33:22 
+
+33:22 you know how to use it you can build
+33:24 
+
+33:24 what you want quickly and simply and
+33:25 
+
+33:25 effectively like is that a reasonable
+33:28 
+
+33:28 analogy for what this kind of is I think
+33:31 
+
+33:31 it's an amazing analogy for another
+33:33 
+
+33:33 thing that I'm thinking about which is I
+33:34 
+
+33:34 it took me the hot it took me the
+33:36 
+
+33:36 longest time to get Stant to
+33:37 
+
+33:37 spreadsheets when we started work
+33:38 
+
+33:38 together and this is way this is way
+33:40 
+
+33:40 back when this is this is like I don't
+33:42 
+
+33:42 know if it was 20 years ago 15 years go
+33:44 
+
+33:44 and then at one point Stan uses it for
+33:46 
+
+33:46 something is like oh wow this is kind of
+33:48 
+
+33:48 like a cool reppel interface where you
+33:50 
+
+33:50 can just get the results of your
+33:51 
+
+33:51 functions in real time I was like yeah
+33:53 
+
+33:53 that's this how the he's like it's a
+33:56 
+
+33:56 cool R in face for non-engineers I get
+33:57 
+
+33:57 it now and yeah I I think it's also
+33:59 
+
+33:59 interesting for that the experimentation
+34:01 
+
+34:01 cost is very very low if you think about
+34:04 
+
+34:04 um the way in which like some of our
+34:07 
+
+34:07 customers try and un try try and
+34:09 
+
+34:09 describe the gains that they're
+34:10 
+
+34:10 experiencing or that they're seeing and
+34:12 
+
+34:12 and their excitement for the future is
+34:15 
+
+34:15 some functions we've had
+34:17 
+
+34:17 80% uh productivity gains some functions
+34:20 
+
+34:20 we're seeing 5% productivity gains and
+34:22 
+
+34:22 we're not even sure that we're measuring
+34:23 
+
+34:23 them right but we're seeing gains when
+34:25 
+
+34:25 the specialization of the assistant is
+34:27 
+
+34:27 close enough to the actual workflow that
+34:29 
+
+34:29 is able to augment the distribution
+34:32 
+
+34:32 problem of that with a verticalized a
+34:34 
+
+34:34 verticalized set of assistance is almost
+34:36 
+
+34:36 impossible to solve how are you going to
+34:38 
+
+34:38 get that deep into that function at a
+34:41 
+
+34:41 time where you know budgets are tight
+34:43 
+
+34:43 decision- making on which technology is
+34:45 
+
+34:45 going to be a fit is sometimes
+34:47 
+
+34:47 complicated when sometimes that's where
+34:49 
+
+34:49 the performance Gams are are the are the
+34:51 
+
+34:51 most obvious one of our users has seen
+34:54 
+
+34:54 like 8,000 hours a year shaved off two
+34:57 
+
+34:57 workflows for an expansion into a
+34:59 
+
+34:59 country where they decided not to have a
+35:00 
+
+35:00 full-time team and so basically sparing
+35:03 
+
+35:03 you some of the boring details but like
+35:05 
+
+35:05 the ability to review websites compare
+35:08 
+
+35:08 them to incorporation documents in a
+35:10 
+
+35:10 foreign language have a policy Checker
+35:13 
+
+35:13 that was making a certain number of
+35:15 
+
+35:15 checkpoints very clear to the agents
+35:17 
+
+35:17 that were reviewing the accounts all in
+35:19 
+
+35:19 a language and in a geography that none
+35:20 
+
+35:20 of these people were yet familiar with
+35:22 
+
+35:22 because they were really exploring the
+35:23 
+
+35:23 country um and immediate gains like very
+35:27 
+
+35:27 very easy iteration on the first version
+35:29 
+
+35:29 of the Assistant two weeks to launch it
+35:30 
+
+35:30 into production roll it out to three a
+35:33 
+
+35:33 to three human agents that were then
+35:35 
+
+35:35 assisted by by by these assistants and
+35:37 
+
+35:37 their CTO U sharing like you know we're
+35:39 
+
+35:39 seeing we're seeing a north of 600 hours
+35:42 
+
+35:42 a month I'm thinking our pricing is
+35:44 
+
+35:44 terrible but what I'm excited by is that
+35:47 
+
+35:47 um is that that case could not have been
+35:50 
+
+35:50 explored or discovered with a
+35:52 
+
+35:52 verticalized uh sales motion because I
+35:55 
+
+35:55 just don't know how you get to that
+35:57 
+
+35:57 fairly Junior person in a specific team
+36:00 
+
+36:00 and and actually are able to pitch them
+36:03 
+
+36:03 and deploy that quickly uh whereas if
+36:05 
+
+36:05 you have that common infrastructure that
+36:06 
+
+36:06 people understand the breaks of not
+36:09 
+
+36:09 everybody knows how to do some products
+36:11 
+
+36:11 not everybody knows how to do a pivot
+36:12 
+
+36:12 table but everybody understands that
+36:14 
+
+36:14 they can just play around with the basic
+36:15 
+
+36:15 things and probably get help from
+36:17 
+
+36:17 somebody close to them that's the other
+36:18 
+
+36:18 thing we've seen you know um the the the
+36:21 
+
+36:21 map of Builders within companies this
+36:24 
+
+36:24 heat map of people what's amazing about
+36:26 
+
+36:26 it is that it's people who just excited
+36:29 
+
+36:29 about iterating exploring and and
+36:31 
+
+36:31 testing new stuff which I think
+36:32 
+
+36:32 correlates well to you know high
+36:33 
+
+36:33 performance or high potential in the
+36:35 
+
+36:35 future it's like dust is heat seeking
+36:38 
+
+36:38 for potential and talent across your
+36:40 
+
+36:40 teams because the the people using it
+36:42 
+
+36:42 the most are people who are the most
+36:43 
+
+36:43 comfortable saying I don't feel
+36:45 
+
+36:45 threatened by something that's going to
+36:46 
+
+36:46 take the boring and repetitive side of
+36:47 
+
+36:47 my job away from me I'm excited to have
+36:49 
+
+36:49 that go away and focus on the high value
+36:51 
+
+36:51 tasks I think for the first six months I
+36:54 
+
+36:54 was one of the loudest voices saying
+36:55 
+
+36:55 what is that main use case I think you
+36:57 
+
+36:57 guys heard many many times and then
+36:59 
+
+36:59 eventually I realized like this is a
+37:01 
+
+37:01 primitive we're talking about
+37:02 
+
+37:02 spreadsheets you could talk about
+37:04 
+
+37:04 frankly a Word document you could talk
+37:06 
+
+37:06 about office suite when I interface with
+37:08 
+
+37:08 dust I think about it like slack except
+37:11 
+
+37:11 I'm not slacking my colleagues I'm
+37:14 
+
+37:14 slacking assistants and they actually do
+37:16 
+
+37:16 this kind of work for me and I can show
+37:18 
+
+37:18 them the kind of work so it feels Pat to
+37:20 
+
+37:20 your point something like a spreadsheet
+37:22 
+
+37:22 meets the ergonomics of a slack as it
+37:25 
+
+37:25 it's brought to me as opposed to I have
+37:28 
+
+37:28 to go to it uh and that that that is it
+37:32 
+
+37:32 took me a while to get there and now I
+37:34 
+
+37:34 see how the fragmentation is the power
+37:37 
+
+37:37 of what you're going after and Gabriel I
+37:39 
+
+37:39 have a quick question on sort of the
+37:41 
+
+37:41 psychographic of your user because
+37:43 
+
+37:43 you're your comment that it's like heat
+37:45 
+
+37:45 seeking for the people who are sort of
+37:47 
+
+37:47 ambitious and Innovative and stuff like
+37:49 
+
+37:49 that
+37:50 
+
+37:50 um I don't know if you have a name for
+37:52 
+
+37:52 them but let's call them the makers you
+37:54 
+
+37:54 know the people who are not afraid to
+37:55 
+
+37:55 try to try new things and try to build
+37:57 
+
+37:57 stuff
+37:58 
+
+37:58 have you come up with a systematic way
+38:01 
+
+38:01 to find those people or do they tend to
+38:04 
+
+38:04 find you through word of mouth or some
+38:06 
+
+38:06 other thing because that's not you know
+38:08 
+
+38:08 LinkedIn profiles don't say you know
+38:10 
+
+38:10 Gabriel migger right like I think it's a
+38:12 
+
+38:12 super interesting question at a couple
+38:14 
+
+38:14 of levels but um our motion is is dual
+38:17 
+
+38:17 right so the things that predict a great
+38:19 
+
+38:19 outcome with dust I'm I'm coming out of
+38:22 
+
+38:22 a core and trying trying to think about
+38:23 
+
+38:23 what was most powerful about this call I
+38:25 
+
+38:25 had yesterday with uh Chief people and
+38:27 
+
+38:27 systems officer or the company that
+38:28 
+
+38:28 could not stop interrupting me 5 minutes
+38:30 
+
+38:30 into my PCT yes I did a talk on this yes
+38:32 
+
+38:32 I've already WR about this I've got a
+38:34 
+
+38:34 blog post on this okay when can I demo
+38:36 
+
+38:36 where do I put my credit card that's
+38:37 
+
+38:37 call you next week and it's the top down
+38:40 
+
+38:40 motion is enthusiasm and optimism about
+38:43 
+
+38:43 this technology changing most things for
+38:45 
+
+38:45 most people who spend most of their days
+38:47 
+
+38:47 in front of a computer you need that
+38:49 
+
+38:49 that's a necessary condition because I
+38:50 
+
+38:50 think it unlocks three things one it
+38:52 
+
+38:52 unlocks the belief in a horizontal
+38:54 
+
+38:54 platform for exploration the ability for
+38:57 
+
+38:57 security to be in the supportive
+38:58 
+
+38:58 business rather than a than a blocker
+39:01 
+
+39:01 and um and in genuinely sometimes uh
+39:04 
+
+39:04 example setting like we have Founders
+39:06 
+
+39:06 and Leadership teams that are just like
+39:07 
+
+39:07 how have you augmented your own
+39:09 
+
+39:09 workflows last week and and Leadership
+39:11 
+
+39:11 meetings are being being asked they
+39:13 
+
+39:13 doing offsite about like how are you
+39:15 
+
+39:15 going to get better at answering uh like
+39:18 
+
+39:18 some of your team's queries faster with
+39:20 
+
+39:20 with us and so once you have that then
+39:22 
+
+39:22 you have the the right sandbox I'd say
+39:24 
+
+39:24 that the right petri dish I don't think
+39:26 
+
+39:26 we fully cracked the bill
+39:28 
+
+39:28 identification uh so right now it's more
+39:30 
+
+39:30 like bait it's like the product is
+39:32 
+
+39:32 incredibly easy to use anybody can
+39:34 
+
+39:34 create an assistant even if they have
+39:36 
+
+39:36 not been labeled a builder by their
+39:37 
+
+39:37 organization and it's just the sharing
+39:40 
+
+39:40 capabilities of their assistant that are
+39:41 
+
+39:41 somewhat throttled but we can see from
+39:44 
+
+39:44 the way in which people explore the
+39:45 
+
+39:45 product create assistance for themselves
+39:47 
+
+39:47 share them with their teammates in a
+39:49 
+
+39:49 limited way a great predictor of that
+39:51 
+
+39:51 type of uh of personality and if you ask
+39:53 
+
+39:53 me to look at LinkedIn and predict who
+39:55 
+
+39:55 are going to be um who who are going to
+39:58 
+
+39:58 in that in in that family I'd say the
+39:60 
+
+39:60 number one discriminator is uh somewhat
+40:03 
+
+40:03 to a degree it's a bit ages but like
+40:05 
+
+40:05 people who are maybe earlier on in their
+40:07 
+
+40:07 careers who have a mix of tasks that
+40:09 
+
+40:09 they obviously know they can get an
+40:11 
+
+40:11 assistant to help with so they have use
+40:13 
+
+40:13 case one just laid out for them people
+40:16 
+
+40:16 who have repetitive tasks and people who
+40:18 
+
+40:18 whove scripted their way out of a lot of
+40:20 
+
+40:20 of of repetitive things before just to
+40:22 
+
+40:22 be explicit like we we had the
+40:23 
+
+40:23 conversation I think it's okay to say
+40:25 
+
+40:25 like it is people under 25 like we were
+40:28 
+
+40:28 saying yesterday the power users the
+40:29 
+
+40:29 people that are using this all the time
+40:32 
+
+40:32 um at the companies are the people under
+40:34 
+
+40:34 25 because they aren't set in their ways
+40:36 
+
+40:36 just to be explicit and that doesn't
+40:38 
+
+40:38 mean everyone you can be 70 and
+40:40 
+
+40:40 constantly innovating in a new way but
+40:42 
+
+40:42 in general they don't have the pattern
+40:44 
+
+40:44 that they've been set to and by the way
+40:46 
+
+40:46 that's true of a lot of the next
+40:48 
+
+40:48 generation of productivity notion which
+40:50 
+
+40:50 Pat works really closely with that is a
+40:52 
+
+40:52 under 25 power law type business and you
+40:55 
+
+40:55 know the the teammates here under 25
+40:57 
+
+40:57 keep pushing me to transfer over to
+40:59 
+
+40:59 notion and it's just a different type of
+41:02 
+
+41:02 thinking it feels like a very similar
+41:04 
+
+41:04 motion at dust yeah I I I think that um
+41:09 
+
+41:09 the one thing we had that we have which
+41:11 
+
+41:11 is useful is that the immense B Toc
+41:13 
+
+41:13 success of chat GPT as a now obviously
+41:17 
+
+41:17 world famous product uh has made it
+41:20 
+
+41:20 really easy to set up Pilots by just
+41:22 
+
+41:22 telling teams do you know what send a
+41:24 
+
+41:24 survey out ask people how often they
+41:26 
+
+41:26 they've used chat GPT for personal use
+41:28 
+
+41:28 in the last seven days like Rank by
+41:30 
+
+41:30 descending order and that's your pilot
+41:32 
+
+41:32 team that's the people you want to have
+41:34 
+
+41:34 poke holes at kick tires uh and because
+41:37 
+
+41:37 they have you know we've we've asked the
+41:40 
+
+41:40 entire world to move from calculator
+41:42 
+
+41:42 technology punch the same Keys you'll
+41:44 
+
+41:44 get the same result to stochastic
+41:46 
+
+41:46 technology ask the same question you'll
+41:48 
+
+41:48 get a slightly different result this is
+41:49 
+
+41:49 not happened this is the biggest shift
+41:51 
+
+41:51 in you know the use of the tools that we
+41:53 
+
+41:53 have since the Advent of the computer
+41:55 
+
+41:55 we're asking an entire cohort of the
+41:57 
+
+41:57 workfor to move to a stochastic mindset
+41:59 
+
+41:59 and the only way you get that is by
+42:01 
+
+42:01 having a risk reward ratio that's that
+42:04 
+
+42:04 you're comfortable enough it's like you
+42:05 
+
+42:05 know what I don't I'm not asking it to
+42:07 
+
+42:07 be right 100% of the time I'm asking it
+42:09 
+
+42:09 to give me a draft that saves me time
+42:11 
+
+42:11 many many many times over and that
+42:13 
+
+42:13 distribution of Roi is something that
+42:15 
+
+42:15 I'm comfortable exploring with and it's
+42:16 
+
+42:16 rating on and I think that that is
+42:18 
+
+42:18 really one of the predictors that we see
+42:20 
+
+42:20 in people who've tried chat GPT or in
+42:22 
+
+42:22 people who are just curious with new
+42:23 
+
+42:23 technology is they expect that some of
+42:25 
+
+42:25 it's going to be a bit broken but the up
+42:27 
+
+42:27 side scenario to them is so clear and so
+42:29 
+
+42:29 10x that they're willing to make that
+42:31 
+
+42:31 tradeoff or that local risk to uh to get
+42:34 
+
+42:34 things started so you guys have a lot of
+42:37 
+
+42:37 very strongly held beliefs um internally
+42:41 
+
+42:41 and externally and the good news is
+42:42 
+
+42:42 you've consistently been right about the
+42:44 
+
+42:44 strongly held beliefs you've named a few
+42:46 
+
+42:46 of them I mean you've talked about this
+42:48 
+
+42:48 shift from deterministic to stochastic
+42:50 
+
+42:50 way before it was mainstreamed um you
+42:53 
+
+42:53 talked about rasterization and
+42:54 
+
+42:54 vectorization I I think about that that
+42:57 
+
+42:57 can be unpacked if you'd like certainly
+42:58 
+
+42:58 would need being unpacked on the show if
+43:02 
+
+43:02 we go down that rabbit hole you talked
+43:03 
+
+43:03 about no gpus versus pmf right can you
+43:06 
+
+43:06 just walk through some of the beliefs
+43:11 
+
+43:11 that dust lives by it can either be
+43:16 
+
+43:16 philosophical um as a couple of these
+43:18 
+
+43:18 are or tactical like the no dpus before
+43:20 
+
+43:20 pmf yeah first one is really uh the
+43:25 
+
+43:25 continued belief that uh focusing on
+43:27 
+
+43:27 product is the right thing to do because
+43:29 
+
+43:29 really feels to me like we are only
+43:31 
+
+43:31 scratching the surface of what we can do
+43:33 
+
+43:33 with those models right now we are
+43:35 
+
+43:35 starting from the conversational
+43:36 
+
+43:36 interface so that's why you use the
+43:38 
+
+43:38 slack analogy and I really duly I mean
+43:41 
+
+43:41 truly believe that that analogy the
+43:43 
+
+43:43 slack energy will not sustain in time
+43:45 
+
+43:45 because the way we interact with that
+43:47 
+
+43:47 technology will change it started with
+43:49 
+
+43:49 the conversation interface but it will
+43:50 
+
+43:50 hand in a very different place M you
+43:53 
+
+43:53 basically those models are kind of the
+43:55 
+
+43:55 the CPUs of the computer uh the apis and
+43:59 
+
+43:59 and the tokens are really the The Bash
+44:02 
+
+44:02 interface what we're doing right now is
+44:04 
+
+44:04 is merily uh inventing bash scripts and
+44:09 
+
+44:09 we have yet to invent the guui we have
+44:11 
+
+44:11 yet to invent multiprocessing and we
+44:13 
+
+44:13 have yet to invent so many things we are
+44:15 
+
+44:15 really at the the the the very beginning
+44:17 
+
+44:17 of what we can do from a product
+44:20 
+
+44:20 standpoint with that technology whether
+44:22 
+
+44:22 it evolves or whether it stays like this
+44:25 
+
+44:25 yeah one one word um that I think is is
+44:28 
+
+44:28 going to be important and and I feel
+44:29 
+
+44:29 recent news has has actually uh uh
+44:32 
+
+44:32 helped confirm or is an interesting new
+44:34 
+
+44:34 drop in the bucket for is um the the
+44:37 
+
+44:37 notion so we one of our product models
+44:39 
+
+44:39 is augmenting humans not replacing them
+44:41 
+
+44:41 and it's not just the naive version of
+44:43 
+
+44:43 saying like we're not here to get people
+44:45 
+
+44:45 fired it's really that we think there is
+44:48 
+
+44:48 a tremendous upside in giving people who
+44:50 
+
+44:50 will still have a job in 5 to 10 years
+44:52 
+
+44:52 time the best possible exoskeleton and
+44:55 
+
+44:55 that it's a very different kind of
+44:57 
+
+44:57 company and kind of product conversation
+44:59 
+
+44:59 to be like all right how many dollars
+45:01 
+
+45:01 are we going to take away from your Opex
+45:03 
+
+45:03 line next year uh versus this is the
+45:07 
+
+45:07 number of latent opportunities that you
+45:09 
+
+45:09 are not able to explore as a business
+45:10 
+
+45:10 because your people are dragged down and
+45:12 
+
+45:12 pushing like stale slideware around or
+45:15 
+
+45:15 not even knowing what dependencies they
+45:17 
+
+45:17 have on the rest of the company like
+45:18 
+
+45:18 this is how much friction you've imposed
+45:20 
+
+45:20 on the smart people you've spent so much
+45:22 
+
+45:22 money hiring because half of their day
+45:25 
+
+45:25 or part of their week is spent doing
+45:26 
+
+45:26 things that we should literally not be
+45:28 
+
+45:28 talking about in 2024 so that's one and
+45:31 
+
+45:31 the thing that comes back to to to the
+45:34 
+
+45:34 droper you've been saying that from the
+45:35 
+
+45:35 beginning Gabriel and in the beginning
+45:37 
+
+45:37 you didn't use the word productivity
+45:39 
+
+45:39 like you didn't want to use the word
+45:40 
+
+45:40 productivity I I wonder if that shifted
+45:43 
+
+45:43 and if so the Nuance around why you
+45:46 
+
+45:46 chose not to I think productivity
+45:48 
+
+45:48 there's two terms that I was hesitant on
+45:50 
+
+45:50 productivity to me sometimes feels like
+45:51 
+
+45:51 an an optimization when that when really
+45:54 
+
+45:54 um there's two ways to be productive
+45:56 
+
+45:56 there's doing the same things
+45:58 
+
+45:58 and is doing just better things and I
+45:59 
+
+45:59 think you know the mix effect of
+46:01 
+
+46:01 productivity is is is enshrined in
+46:04 
+
+46:04 effort versus impact at the end of the
+46:06 
+
+46:06 day your bus is never going to be mad if
+46:07 
+
+46:07 you spent no time doing the things you
+46:09 
+
+46:09 were assigned to do but brought in the
+46:10 
+
+46:10 biggest deal for the company nobody's
+46:12 
+
+46:12 actually going to make make any comments
+46:14 
+
+46:14 on on on that being the bad decision
+46:16 
+
+46:16 because I think the more you grow in
+46:18 
+
+46:18 your career and the more you're close to
+46:20 
+
+46:20 the leadership of a company the more you
+46:21 
+
+46:21 realize it's not about the effort it's
+46:22 
+
+46:22 really about the impact and the impact
+46:24 
+
+46:24 comes in sometimes unplanned hyper plary
+46:28 
+
+46:28 completely like left field ways where
+46:30 
+
+46:30 it's like of course we needed to focus
+46:32 
+
+46:32 on this and it's clear and hindsight but
+46:34 
+
+46:34 you need to free up time space energy
+46:36 
+
+46:36 and and mental cognitive space for that
+46:39 
+
+46:39 um the other one was Enterprise search I
+46:41 
+
+46:41 just feel like Enterprise search is one
+46:43 
+
+46:43 that we didn't want to put on the
+46:44 
+
+46:44 website because retrieval of information
+46:45 
+
+46:45 is obviously a use case that people are
+46:47 
+
+46:47 very excited about very quickly but um
+46:50 
+
+46:50 we're just very convinced that looking
+46:51 
+
+46:51 for the document is a step that people
+46:53 
+
+46:53 are not particularly passionate about
+46:55 
+
+46:55 nobody wakes up in the morning and it's
+46:57 
+
+46:57 like so happy that I'm going to get just
+46:58 
+
+46:58 get the right document the first time
+46:60 
+
+46:60 around when I do the search people just
+47:02 
+
+47:02 want to get their job done and it just
+47:04 
+
+47:04 so happens that using context from three
+47:06 
+
+47:06 different documents across seven data
+47:07 
+
+47:07 silos help them get it done faster or
+47:09 
+
+47:09 better and so I think the search bit is
+47:12 
+
+47:12 just it's never the job to be done
+47:13 
+
+47:13 nobody really wants to search they want
+47:15 
+
+47:15 to they want to complete they want to
+47:16 
+
+47:16 they want to prove they want to test but
+47:18 
+
+47:18 the search bit is a is a step that we
+47:20 
+
+47:20 think will get abstracted and going back
+47:21 
+
+47:21 to stands point I think that the
+47:23 
+
+47:23 interfaces and the experiences we have
+47:25 
+
+47:25 with this technology will sort of
+47:28 
+
+47:28 really try to forget about what the
+47:29 
+
+47:29 original data source was quite fast
+47:32 
+
+47:32 potentially once we've gone over the the
+47:34 
+
+47:34 trust hurdles that that exist
+47:36 
+
+47:36 today um no the the thing that that this
+47:39 
+
+47:39 all comes back to is collaboration
+47:40 
+
+47:40 collaboration between human and
+47:41 
+
+47:41 non-human agents and um and I think
+47:44 
+
+47:44 projects uh by by anthropic are an
+47:47 
+
+47:47 amazing um an amazing example here um we
+47:51 
+
+47:51 thought about co-edition La last summer
+47:53 
+
+47:53 we have an amazing intern uh from from
+47:55 
+
+47:55 om with us last summer and and uh who
+47:57 
+
+47:57 spend their time working on um a a
+47:60 
+
+47:60 co-edition interface how do you chat to
+48:02 
+
+48:02 an assistant to make something that
+48:04 
+
+48:04 you're thinking about better whether
+48:05 
+
+48:05 it's an app or a project or a document
+48:08 
+
+48:08 or a script um and this is something
+48:10 
+
+48:10 that obviously the the recent release by
+48:11 
+
+48:11 anthropic has has made very palpable to
+48:13 
+
+48:13 many more people that is to me the the
+48:16 
+
+48:16 the the interface and the interaction
+48:19 
+
+48:19 that we need to get right and and that
+48:21 
+
+48:21 will be in the F so we we we say
+48:23 
+
+48:23 augmentation and we'll stick to it
+48:25 
+
+48:25 because I think it really helps us Focus
+48:27 
+
+48:27 on the interfaces that help humans and
+48:29 
+
+48:29 non-humans make progress faster um it's
+48:33 
+
+48:33 going to be about proposals how do I how
+48:35 
+
+48:35 do I get to have a human in the loop
+48:36 
+
+48:36 with a proposal that's written just in
+48:38 
+
+48:38 the right way to decide if we swipe left
+48:40 
+
+48:40 or swipe right on it it's going to be
+48:42 
+
+48:42 coedition how do I have the language of
+48:45 
+
+48:45 the human in front of the assistant be
+48:47 
+
+48:47 as easy to interpret and as you know
+48:49 
+
+48:49 foolproof as possible for the the final
+48:53 
+
+48:53 uh project to move into its final form
+48:55 
+
+48:55 as quickly as possible and so you need
+48:57 
+
+48:57 that inter that interface that
+48:58 
+
+48:58 interaction between uh the agent and and
+49:01 
+
+49:01 and the human and you forget that when
+49:05 
+
+49:05 you replace too quickly when when you
+49:07 
+
+49:07 focus on just replacing and removing
+49:09 
+
+49:09 you've you've built something that is
+49:10 
+
+49:10 fire and forget essentially and you'll
+49:12 
+
+49:12 see you'll see the gains you'll see the
+49:14 
+
+49:14 dollar gains um but I you know if you've
+49:17 
+
+49:17 automated 100% of your customer support
+49:19 
+
+49:19 tickets you still need the insides from
+49:21 
+
+49:21 what people are pissed off about you
+49:23 
+
+49:23 still need to understand and have your
+49:24 
+
+49:24 finger on the pulse of why people are
+49:26 
+
+49:26 stuck otherwi wayse you're slowing down
+49:28 
+
+49:28 your product development efforts and
+49:29 
+
+49:29 product development efforts today live
+49:32 
+
+49:32 and and die by some of the comments that
+49:34 
+
+49:34 are coming in from support tickets and
+49:35 
+
+49:35 so how you how you've made that problem
+49:37 
+
+49:37 go away and become like actually maybe
+49:40 
+
+49:40 cheaper sure but also maybe virtual and
+49:42 
+
+49:42 harder to Conn to is is not I think a a
+49:46 
+
+49:46 super long-term view of how your product
+49:48 
+
+49:48 and business is going to serve your
+49:50 
+
+49:50 customers best um because you you still
+49:53 
+
+49:53 need to think about the ultimate
+49:55 
+
+49:55 interfaces that are going to enable the
+49:57 
+
+49:57 decision making to make it better and
+49:59 
+
+49:59 strategic and and and and and the best
+50:01 
+
+50:01 option for your customers in the future
+50:03 
+
+50:03 so keeping the human in the loop always
+50:05 
+
+50:05 I mean it is human Liv one way to say it
+50:07 
+
+50:07 but it is Dri is human driven like the
+50:09 
+
+50:09 whole point of all of this technology
+50:11 
+
+50:11 that we are building is to serve humans
+50:13 
+
+50:13 better and as soon as you remove that
+50:15 
+
+50:15 you've made it you've made a terrible
+50:16 
+
+50:16 mistake because someone else is not
+50:18 
+
+50:18 going to do that and they're going to
+50:20 
+
+50:20 actually have a better experience with
+50:21 
+
+50:21 customers and employees and stakeholders
+50:24 
+
+50:24 and then they're they're going to win I
+50:27 
+
+50:27 you know obviously there's scenarios in
+50:28 
+
+50:28 which you're going to catch me and you
+50:30 
+
+50:30 be like you know this one this you we we
+50:31 
+
+50:31 know that humans get it wrong way more
+50:33 
+
+50:33 and so we should obviously replace it
+50:35 
+
+50:35 and this is a complex Nuance problem so
+50:38 
+
+50:38 I'm sure there's certain areas of it
+50:39 
+
+50:39 where pure replacement has uh fully
+50:43 
+
+50:43 understood non external like with no
+50:46 
+
+50:46 negative externality value but I i'
+50:50 
+
+50:50 Venture that we're pretty poor at
+50:51 
+
+50:51 modeling where value is created and how
+50:53 
+
+50:53 it's funned through the parts of our
+50:54 
+
+50:54 company today and you know economists
+50:56 
+
+50:56 have been great at showing that when you
+50:58 
+
+50:58 don't price negative externalities well
+50:59 
+
+50:59 we end up in pretty messy situation uh
+51:02 
+
+51:02 and so this is this is the question that
+51:04 
+
+51:04 I that I post to leaders who are asking
+51:06 
+
+51:06 you know what should I automate first
+51:07 
+
+51:07 I'm like well I don't know which parts
+51:09 
+
+51:09 of the company do you worry about the
+51:10 
+
+51:10 most and often I just find that CEOs are
+51:13 
+
+51:13 panicked about what their customers say
+51:14 
+
+51:14 on support tickets and so making that
+51:16 
+
+51:16 problem go away making that problem less
+51:18 
+
+51:18 visible might be great for some obcs
+51:20 
+
+51:20 conversations and and your your stock
+51:22 
+
+51:22 price could have unforeseen consequences
+51:25 
+
+51:25 if you haven't funneled it through in in
+51:27 
+
+51:27 the right places but but a good but but
+51:29 
+
+51:29 also I think there's so much more to do
+51:31 
+
+51:31 than to shave 3% off your balance sheet
+51:34 
+
+51:34 the the the the the spectrum of
+51:37 
+
+51:37 opportunity that you're giving your team
+51:39 
+
+51:39 if this technology is in their hands and
+51:41 
+
+51:41 if they're able to come up with ideas is
+51:43 
+
+51:43 broader than just firing people out of
+51:47 
+
+51:47 their and I'm not saying you shouldn't
+51:49 
+
+51:49 do that like I think I I don't want dust
+51:51 
+
+51:51 to be perceived as like naive in in in
+51:54 
+
+51:54 in this ecosystem where the disruptive
+51:56 
+
+51:56 nature of this technology is going to
+51:57 
+
+51:57 take some people's jobs away because
+51:58 
+
+51:58 those jobs were currently being done by
+52:01 
+
+52:01 humans for lack of a better alternative
+52:03 
+
+52:03 I think in certain situations you could
+52:05 
+
+52:05 see those jobs as having been created
+52:07 
+
+52:07 because we were waiting for the robots
+52:09 
+
+52:09 having been framed in a way that was
+52:11 
+
+52:11 because we were waiting for the robots
+52:13 
+
+52:13 um but I don't know that that's what
+52:16 
+
+52:16 leaders of companies are excited by I
+52:18 
+
+52:18 think that the the upside the future the
+52:20 
+
+52:20 way in which we need to be resilient
+52:22 
+
+52:22 antifragile for for for what's to come
+52:25 
+
+52:25 and what our competition is going to
+52:26 
+
+52:26 come up in those are the ways in which
+52:28 
+
+52:28 energy and support I feel should be
+52:30 
+
+52:30 fueled to to support teams you guys um
+52:33 
+
+52:33 second time
+52:35 
+
+52:35 Founders uh you started your first
+52:37 
+
+52:37 company over 10 years ago uh you were an
+52:40 
+
+52:40 early acquisition of stripe you guys
+52:42 
+
+52:42 were there super early on what have you
+52:44 
+
+52:44 learned and done differently this time
+52:47 
+
+52:47 as second time Founders um I think uh
+52:50 
+
+52:50 really understanding that a few
+52:54 
+
+52:54 explosive bets are more likely to get
+52:56 
+
+52:56 you any meaningful than over optimizing
+52:59 
+
+52:59 too early on on something that is still
+53:01 
+
+53:01 meaningless in the market that's one
+53:03 
+
+53:03 thing that I I think we think about
+53:04 
+
+53:04 differently so like exploring versus
+53:06 
+
+53:06 exploiting uh um and and all those
+53:10 
+
+53:10 Frameworks that's one uh I think the
+53:12 
+
+53:12 transparency that you could the the
+53:14 
+
+53:14 trust and empowerment that you give to
+53:15 
+
+53:15 your team is we I don't think we were
+53:18 
+
+53:18 against it it's more that we were
+53:20 
+
+53:20 clueless about how much more empowering
+53:22 
+
+53:22 you could be so uh the idea one of the
+53:27 
+
+53:27 best words from my stripe years was
+53:29 
+
+53:29 paper trail and it was you know you had
+53:31 
+
+53:31 two people in a corridor have a
+53:33 
+
+53:33 conversation and then one of them would
+53:35 
+
+53:35 take the time to just write a paper
+53:36 
+
+53:36 trail in slack or in a document say you
+53:38 
+
+53:38 know what we just had this exchange and
+53:40 
+
+53:40 we've moved the needle in this in this
+53:42 
+
+53:42 direction and it saved and other humans
+53:45 
+
+53:45 the time and effort to go in a meeting
+53:48 
+
+53:48 room or figure out that this decision
+53:50 
+
+53:50 has been made and and and it feeds a
+53:53 
+
+53:53 graph network of trust and respect for
+53:56 
+
+53:56 your co-workers that is I think second
+53:59 
+
+53:59 to none in how you can then just achieve
+54:01 
+
+54:01 more as a team um so culturally you need
+54:04 
+
+54:04 to sort of push that to begin with
+54:06 
+
+54:06 because especially people who are
+54:07 
+
+54:07 earlier in their career will not always
+54:10 
+
+54:10 feel comfortable with how information
+54:12 
+
+54:12 should be shared so I think that's one
+54:14 
+
+54:14 where where example is important um big
+54:17 
+
+54:17 markets that you really believe in for a
+54:19 
+
+54:19 long time H we we we loved technology
+54:21 
+
+54:21 when we started our first company like
+54:23 
+
+54:23 12 13 years ago I was like this is great
+54:25 
+
+54:25 this is amazing these are QR codes
+54:26 
+
+54:26 everybody's going to use them uh and
+54:29 
+
+54:29 it's like no we have to wait for
+54:31 
+
+54:31 pandemic to sell QR codes okay I'll do
+54:32 
+
+54:32 that next time um and and and so likeing
+54:35 
+
+54:35 falling in love with the technology and
+54:36 
+
+54:36 not really fundamentally understanding
+54:38 
+
+54:38 how big the business could be if it's
+54:39 
+
+54:39 successful and asking that question
+54:41 
+
+54:41 early and unabashedly is one thing that
+54:43 
+
+54:43 I feel is is is different so what what
+54:45 
+
+54:45 we kept is our experience together I
+54:47 
+
+54:47 think it's an natur advantage to uh
+54:49 
+
+54:49 having built a company with a person
+54:51 
+
+54:51 because you've explored everything
+54:52 
+
+54:52 you've explored the the the the beauty
+54:55 
+
+54:55 the the terrible the The Joy the the
+54:58 
+
+54:58 pain and you know pretty much the entire
+55:00 
+
+55:00 API in and out and so that makes that
+55:03 
+
+55:03 enables a much more efficient um
+55:06 
+
+55:06 co-funding I mean co-funder uh
+55:10 
+
+55:10 interaction and collaboration I think
+55:11 
+
+55:11 it's a really big and fair and fair
+55:14 
+
+55:14 Advantage um I think the biggest one
+55:18 
+
+55:18 that I that I that I that I think is
+55:20 
+
+55:20 completely different from me and that
+55:22 
+
+55:22 Gabriel mentioned is about empowering
+55:24 
+
+55:24 people it's as a really as a fun it's
+55:27 
+
+55:27 not you this I mean it's not to you
+55:29 
+
+55:29 early and it's to you to build and to to
+55:31 
+
+55:31 to build that initial spark but then uh
+55:34 
+
+55:34 for the sake of the company uh you are
+55:37 
+
+55:37 not the one that has to build you're the
+55:38 
+
+55:38 one that has to make create an
+55:41 
+
+55:41 environment for people to be empowered
+55:42 
+
+55:42 to build those things and explore and
+55:44 
+
+55:44 create new stuff and uh the best value
+55:47 
+
+55:47 you can give is I don't like to lose
+55:50 
+
+55:50 that to use that world uh that
+55:52 
+
+55:52 leadership was coming to mind it's not
+55:53 
+
+55:53 not necessar leadership is really
+55:55 
+
+55:55 guidance and trying to to to create an
+55:58 
+
+55:58 environment where every is has the
+55:60 
+
+55:60 chance to do what they they want but yes
+56:02 
+
+56:02 in a guided environment so everything
+56:04 
+
+56:04 works as a whole but that that would be
+56:06 
+
+56:06 the the biggest difference and something
+56:08 
+
+56:08 that we learned about at St at this F so
+56:11 
+
+56:11 guys let's move to a lightning round
+56:13 
+
+56:13 we've got a couple questions for you all
+56:14 
+
+56:14 right lightning round question number
+56:16 
+
+56:16 one um Sten you share these predictions
+56:19 
+
+56:19 for where the world of AI is going on
+56:21 
+
+56:21 Twitter from time to time at this moment
+56:25 
+
+56:25 what is your top contrarian prediction
+56:29 
+
+56:29 for where the world of AI is going and
+56:31 
+
+56:31 don't don't give me this bodal little
+56:33 
+
+56:33 bit of this little bit of that let's
+56:35 
+
+56:35 let's hear a point of view what's what's
+56:36 
+
+56:36 your top contrarian ped prediction for
+56:39 
+
+56:39 where the world of AI is going uh I see
+56:41 
+
+56:41 it
+56:42 
+
+56:42 [Music]
+56:44 
+
+56:44 uh it's a lightning so I have to
+56:46 
+
+56:46 something uh it's gonna it's gonna be
+56:48 
+
+56:48 tough it's gonna be a we we know we we I
+56:51 
+
+56:51 think we on the VRA on during a pretty
+56:52 
+
+56:52 tough period how so uh the excitement
+56:56 
+
+56:56 will go down maybe it'll take times to
+56:58 
+
+56:58 get to the next stage of the technology
+57:00 
+
+57:00 uh there's tremendous value to create
+57:02 
+
+57:02 but people will not see it yet and it'll
+57:05 
+
+57:05 take a long time for it to diffuse
+57:06 
+
+57:06 through Society so there is massive
+57:08 
+
+57:08 amount of value to create but it's going
+57:10 
+
+57:10 to be a we may have tough times in front
+57:13 
+
+57:13 of us all right short-term pessimist
+57:14 
+
+57:14 long-term Optimist I'll tell all right
+57:16 
+
+57:16 Lightning Run question number two uh and
+57:18 
+
+57:18 this is for both of you who do you
+57:21 
+
+57:21 admire most in the world of AI uh Ilia
+57:25 
+
+57:25 uh is just is just incredible I've had
+57:27 
+
+57:27 the chance to work with him uh he's my
+57:29 
+
+57:29 favorite people in AI he's he's he's
+57:32 
+
+57:32 extremely smart but he's not a genius
+57:34 
+
+57:34 Builder he's a genius leader he's he's
+57:36 
+
+57:36 just a Visionary and I think that would
+57:39 
+
+57:39 been anchorable Kar I know know him I
+57:42 
+
+57:42 don't I actually don't know him but I
+57:43 
+
+57:43 admire him a lot and in terms of pure
+57:46 
+
+57:46 genius nii I think it's Shimon and yaku
+57:49 
+
+57:49 at hope nii they have crazy last names
+57:51 
+
+57:51 so all let people look it up but shiman
+57:54 
+
+57:54 and yaku are I I
+57:57 
+
+57:57 impressed by those who've been around
+57:59 
+
+57:59 for a while and a good they're acting as
+58:02 
+
+58:02 good resistance and condensator elements
+58:05 
+
+58:05 in the system they're just you know like
+58:07 
+
+58:07 providing the friction to uh
+58:10 
+
+58:10 remain optimistic but cautiously so uh
+58:15 
+
+58:15 and and to me one of one in one of the
+58:16 
+
+58:16 first I think it was I can't remember it
+58:18 
+
+58:18 was a tweet or a podcast or an article
+58:20 
+
+58:20 but the hearing yand to be like you know
+58:24 
+
+58:24 we can make pretty good decisions with a
+58:26 
+
+58:26 glass of water and a sandwich and these
+58:29 
+
+58:29 things require Power Station sized data
+58:32 
+
+58:32 sources and are not making great
+58:34 
+
+58:34 decisions on some things so we we feel
+58:38 
+
+58:38 something is missing and is like
+58:40 
+
+58:40 elegantly putting that back into into
+58:42 
+
+58:42 into perspective has been interesting to
+58:45 
+
+58:45 me because it's hard to not cave to the
+58:48 
+
+58:48 hype I think and so uh in some ways um
+58:52 
+
+58:52 pushing for a simple ideal like being
+58:55 
+
+58:55 open which which which I think Yan is
+58:57 
+
+58:57 doing uh quite aggressively despite that
+58:60 
+
+59:00 not always probably being the easiest
+59:02 
+
+59:02 decision uh and also saying you know we
+59:04 
+
+59:04 probably haven't solved everything all
+59:06 
+
+59:06 the
+59:07 
+
+59:07 time uh is uh is nice and from my from
+59:11 
+
+59:11 my personal experience the researchers
+59:13 
+
+59:13 that have worked for or with him uh have
+59:17 
+
+59:17 learned and taken from from that quite a
+59:19 
+
+59:19 bit and so that that and it's not French
+59:22 
+
+59:22 but uh you know some touch of modesty
+59:25 
+
+59:25 Touch of Temperance uh I've I've
+59:28 
+
+59:28 appreciated in in in in my discovery of
+59:31 
+
+59:31 the generative side side of artificial
+59:33 
+
+59:33 intelligence like after 10 years of just
+59:34 
+
+59:34 doing your prediction and classification
+59:36 
+
+59:36 from fraud and risk and and onboarding
+59:38 
+
+59:38 at stripe and and and healthc Care
+59:40 
+
+59:40 claims management and and and things
+59:42 
+
+59:42 like that um it's nice to to feel like
+59:45 
+
+59:45 there's uh some people who've seen seen
+59:48 
+
+59:48 a lot done a lot and just questioning
+59:51 
+
+59:51 rather than uh affirming all right so
+59:55 
+
+59:55 that brings me to the the third and
+59:57 
+
+59:57 final lightning round question you chose
+59:59 
+
+59:59 a Frenchman for your most admired uh
+60:02 
+
+60:02 Gabriel and dust is proudly made in
+60:05 
+
+60:05 France Paris has been in an epicenter
+60:09 
+
+60:09 certainly an epicenter for all things AI
+60:12 
+
+60:12 um your take on the perisian ecosystem
+60:15 
+
+60:15 and what do you want to say for the
+60:16 
+
+60:16 French Founders listening to this
+60:18 
+
+60:18 podcast other than I'm star with an
+60:20 
+
+60:20 English uh it's be it's their fault not
+60:24 
+
+60:24 ours yeah I think the the French system
+60:27 
+
+60:27 is awesome because uh we we compared to
+60:29 
+
+60:29 where where it was 12 years or 15 years
+60:32 
+
+60:32 ago it's our first company know we have
+60:34 
+
+60:34 talent because there's been a generation
+60:35 
+
+60:35 of scale-ups that went through the
+60:37 
+
+60:37 market and and train uh all all that
+60:40 
+
+60:40 talents and and most recently that kind
+60:43 
+
+60:43 of explosion of AI Talent as well which
+60:45 
+
+60:45 is super exciting um so I say it creates
+60:48 
+
+60:48 a pool of of of talent and uh with the
+60:52 
+
+60:52 rights to create to create incredible
+60:54 
+
+60:54 companies uh obviously it's not it's I
+60:57 
+
+60:57 mean tackling the the US market from
+60:59 
+
+60:59 France is a challenge and so that's that
+61:01 
+
+61:01 those to to be Tak into account of
+61:03 
+
+61:03 course yeah I think there's if if you
+61:05 
+
+61:05 have ambition there's there's there's a
+61:07 
+
+61:07 lot more to do and then as long as
+61:10 
+
+61:10 you're not naive where you know there
+61:11 
+
+61:11 are still some realities like you you
+61:14 
+
+61:14 can you can fight some aspects of
+61:17 
+
+61:17 narratives you can't fight gravity or at
+61:19 
+
+61:19 least you shouldn't you should probably
+61:20 
+
+61:20 work with gravity way more than you
+61:21 
+
+61:21 should fight it uh but there's a ton
+61:24 
+
+61:24 more we can do and I think we we have to
+61:26 
+
+61:26 behave a little more like um Tech
+61:30 
+
+61:30 countries like Israel I think uh in uh
+61:33 
+
+61:33 mixing ruthless ambition a a recognition
+61:36 
+
+61:36 for where Talent is and how it's already
+61:38 
+
+61:38 connected and and has high trusts
+61:41 
+
+61:41 connective tissue which I think is a
+61:43 
+
+61:43 great catalist and accelerant in in
+61:45 
+
+61:45 making great companies happen um but a
+61:48 
+
+61:48 recognition for where the markets are
+61:49 
+
+61:49 where people are buying where people are
+61:50 
+
+61:50 paying and how quickly people are making
+61:52 
+
+61:52 decisions on on shifting to new
+61:53 
+
+61:53 technologies especially in that space I
+61:55 
+
+61:55 think the the biggest advice is uh as as
+61:59 
+
+61:59 a French funer if you always been in
+62:01 
+
+62:01 France you have kind of that feeling
+62:03 
+
+62:03 that something magical must be happening
+62:05 
+
+62:05 in the US something special there must
+62:07 
+
+62:07 be something special about those people
+62:09 
+
+62:09 well I'll tell you I've been at tribe
+62:11 
+
+62:11 I've been an openi I'm working with seya
+62:14 
+
+62:14 these all are normal humans they don't
+62:18 
+
+62:18 have any magical capabilities they're
+62:20 
+
+62:20 just like us and so it's really
+62:22 
+
+62:22 important to to really be ambitious and
+62:24 
+
+62:24 and believe strong
+62:26 
+
+62:26 that you can you can make it you can do
+62:29 
+
+62:29 it whatever it is uh from France versus
+62:32 
+
+62:32 US wonderful that's a good place to end
+62:34 
+
+62:34 it thank you gentlemen thank you guys
+62:37 
+
+62:37 [Music]
+62:50 
+
+62:50 [Music]

@@ -1,0 +1,3739 @@
+00:00 Just the general form factor of the
+00:02 
+
+00:02 terminal is perfect for agentic work
+00:04 
+
+00:04 because everything is like timebased.
+00:06 
+
+00:06 It's all about input of text and output
+00:09 
+
+00:09 of text. You get to log what you're
+00:10 
+
+00:10 doing. You can multitask agents in the
+00:12 
+
+00:12 terminal really easily. And so I think
+00:14 
+
+00:14 it's been like actually a great stroke
+00:16 
+
+00:16 of luck for us in a lot of ways that the
+00:18 
+
+00:18 terminal has become the center of
+00:22 
+
+00:22 agentic development. It's a huge
+00:23 
+
+00:23 opportunity for us.
+00:41 
+
+00:41 In this episode, Zach Lloyd, founder of
+00:43 
+
+00:43 Warp, reveals why the terminal is
+00:45 
+
+00:45 becoming the center of AI powered
+00:47 
+
+00:47 development. Zach shares how coding
+00:49 
+
+00:49 interfaces are converging into a new
+00:50 
+
+00:50 workbench built for prompting and agent
+00:52 
+
+00:52 orchestration and why the next frontier
+00:54 
+
+00:54 isn't developers typing prompts but
+00:56 
+
+00:56 ambient agents running in the background
+00:58 
+
+00:58 that autonomously respond to system
+01:00 
+
+01:00 events like server crashes or security
+01:02 
+
+01:02 incidents. We discuss the brutal
+01:04 
+
+01:04 competitive dynamics of the coding
+01:06 
+
+01:06 market and why model providers are
+01:07 
+
+01:07 racing into the application layer. And
+01:10 
+
+01:10 finally, Zach shares his thesis that
+01:11 
+
+01:11 coding is nearly solved and that the
+01:13 
+
+01:13 ultimate bottleneck for AI will be
+01:15 
+
+01:15 humans ability to clearly express
+01:17 
+
+01:17 intent. Enjoy the show.
+01:21 
+
+01:21 >> Zach, thanks so much for taking the time
+01:22 
+
+01:22 to join today.
+01:24 
+
+01:24 >> Thanks for having me on. It's good to be
+01:25 
+
+01:25 here.
+01:26 
+
+01:26 >> Before we get started, can you tell our
+01:27 
+
+01:27 audience a little bit about yourself and
+01:29 
+
+01:29 what is Warp and what company did you
+01:31 
+
+01:31 set out to build and why?
+01:33 
+
+01:33 >> Yep. So, I am Zach. I'm the CEO and
+01:36 
+
+01:36 founder of Warp. Warp is a developer
+01:38 
+
+01:38 focused startup. Our goal has always
+01:41 
+
+01:41 been just like help prodevelopers ship
+01:44 
+
+01:44 better software more quickly. The uh the
+01:47 
+
+01:47 product that we've built it it has an
+01:49 
+
+01:49 interesting history. We're like 5 years
+01:50 
+
+01:50 old. We started off building a modern uh
+01:54 
+
+01:54 reimagination of the terminal and today
+01:57 
+
+01:57 the product has evolved into it's sort
+02:00 
+
+02:00 of a terminal with agents built in uh is
+02:03 
+
+02:03 is one way of thinking about it. It's
+02:05 
+
+02:05 probably simplest. It's a it's a
+02:07 
+
+02:07 workbench for building software with
+02:09 
+
+02:09 agents is kind of the more general way
+02:11 
+
+02:11 of of framing it.
+02:13 
+
+02:13 >> Awesome. Let's dive right in. Um, what
+02:15 
+
+02:15 made you decide that the terminal was
+02:17 
+
+02:17 the right place to build?
+02:19 
+
+02:19 >> So, I've been a developer for a really
+02:21 
+
+02:21 long time. I've always used the
+02:23 
+
+02:23 terminal. Uh, in prior life, I was a
+02:26 
+
+02:26 principal engineer at Google. I used to
+02:27 
+
+02:27 run engineering on Google Docs. Uh, I'm
+02:29 
+
+02:29 not a good terminal user. like I always
+02:32 
+
+02:32 worked with people who were good at
+02:34 
+
+02:34 using it and I saw that you know you get
+02:36 
+
+02:36 just a ton of stuff done as a developer
+02:39 
+
+02:39 because of where it sits in the stack.
+02:41 
+
+02:41 So it's like a super duper powerful
+02:44 
+
+02:44 thing if you know how to use it right.
+02:46 
+
+02:46 But the sort of stock version or classic
+02:50 
+
+02:50 version of the terminal I think is like
+02:51 
+
+02:51 a horrible product. It's hard to learn.
+02:53 
+
+02:53 It's easy to make mistakes in. The mouse
+02:56 
+
+02:56 doesn't work. And so, you know, I was I
+02:59 
+
+02:59 was interested in how do you build
+02:60 
+
+03:00 something that's impactful for
+03:02 
+
+03:02 developers? How do you build something
+03:03 
+
+03:03 that helps more good software exist in
+03:06 
+
+03:06 the world? And trying to reimagine the
+03:08 
+
+03:08 terminal felt like a a cool thing to
+03:10 
+
+03:10 take on.
+03:11 
+
+03:11 >> H and how much of the thesis around
+03:13 
+
+03:13 making the terminal great for single
+03:14 
+
+03:14 player versus multiplayer?
+03:16 
+
+03:16 >> It's a good question. So, the the
+03:18 
+
+03:18 multiplayer part was going to be with
+03:20 
+
+03:20 the business model was going to be. So,
+03:22 
+
+03:22 it's like, you know, I came from the
+03:23 
+
+03:23 Google Docs world. I built collaborative
+03:25 
+
+03:25 software. I think the closest analogy
+03:27 
+
+03:27 would be something like Postman where
+03:30 
+
+03:30 you know they have like a collaborative
+03:31 
+
+03:31 API platform. We were going to do that
+03:33 
+
+03:33 uh around the terminal where you could
+03:35 
+
+03:35 share commands, you could share sort of
+03:37 
+
+03:37 like runbooks, um share incident
+03:40 
+
+03:40 response manuals and warp actually has
+03:42 
+
+03:42 all that stuff and it's super it's super
+03:45 
+
+03:45 useful not just for people but for
+03:48 
+
+03:48 agents at this point to have all that
+03:49 
+
+03:49 knowledge baked into the product. Um, so
+03:53 
+
+03:53 that was like going to be the the
+03:54 
+
+03:54 business model, but where we actually
+03:56 
+
+03:56 started was just like the hands-on keys
+03:60 
+
+03:60 interaction with the terminal itself.
+04:03 
+
+04:03 Could we reimagine the developer
+04:06 
+
+04:06 experience of that? So we spent, you
+04:09 
+
+04:09 know, the first like year, year and a
+04:10 
+
+04:10 half of just like how would we like this
+04:13 
+
+04:13 thing to work? How do we want the input
+04:14 
+
+04:14 into the terminal to work? How do we
+04:15 
+
+04:15 want the output to work? and like how
+04:17 
+
+04:17 can we make it just like easier without
+04:20 
+
+04:20 uh diminishing the power of the tool.
+04:22 
+
+04:22 >> Yeah. Awesome. And you made the decision
+04:25 
+
+04:25 to focus on rebuilding reimagining the
+04:27 
+
+04:27 terminal pre generative AI pre-coding
+04:29 
+
+04:29 models taking off.
+04:31 
+
+04:31 >> Um
+04:32 
+
+04:32 >> do coding models and agents do they
+04:34 
+
+04:34 change your answer to the question of
+04:35 
+
+04:35 like how important is the terminal as
+04:37 
+
+04:37 the workbench?
+04:38 
+
+04:38 >> Terminal is like ironically more
+04:41 
+
+04:41 important now. uh the terminal has
+04:43 
+
+04:43 become I think the preferred form factor
+04:46 
+
+04:46 for working with agents. I mean
+04:49 
+
+04:49 basically you can work with them in in
+04:51 
+
+04:51 the IDE or you can work with them in the
+04:54 
+
+04:54 terminal. Um or you like you can create
+04:57 
+
+04:57 some other workbench which you know warp
+04:59 
+
+04:59 you can see warp that way. Actually warp
+05:01 
+
+05:01 started as a terminal is a broader
+05:02 
+
+05:02 workbench now for agents but just the
+05:05 
+
+05:05 general form factor of the terminal is
+05:07 
+
+05:07 perfect for agentic work because
+05:09 
+
+05:09 everything is like timebased. It's all
+05:11 
+
+05:11 about input of text and output of text.
+05:13 
+
+05:13 You get to log what you're doing. You
+05:15 
+
+05:15 can multitask agents in the terminal
+05:17 
+
+05:17 really easily. And so I think it's been
+05:19 
+
+05:19 like actually a great stroke of luck for
+05:22 
+
+05:22 us in a lot of ways that the terminal
+05:24 
+
+05:24 has become the center of agentic
+05:27 
+
+05:27 development. It's a huge opportunity for
+05:28 
+
+05:28 us.
+05:29 
+
+05:29 >> H I'm curious if you thought there we
+05:31 
+
+05:31 were headed towards a world where people
+05:33 
+
+05:33 just weren't going to spend time in the
+05:34 
+
+05:34 IDE and do you think that's been
+05:35 
+
+05:35 accelerated now? I think that the kind
+05:38 
+
+05:38 of tools are morphing. Um
+05:41 
+
+05:41 and so you know pre- agent world you had
+05:45 
+
+05:45 pretty clear distinction between
+05:46 
+
+05:46 terminals and idees. Um, today you have
+05:51 
+
+05:51 tools like warp which are, you know,
+05:54 
+
+05:54 we've like grown from the terminal and
+05:56 
+
+05:56 added a bunch of IDE features like code
+05:59 
+
+05:59 editor and code review features and and
+06:03 
+
+06:03 the file tree and like we get yelled at
+06:04 
+
+06:04 on the Twitter for having a file tree in
+06:07 
+
+06:07 warp because it's not like a pure
+06:08 
+
+06:08 terminal thing. But then if you look at
+06:10 
+
+06:10 like the latest iteration of cursor
+06:13 
+
+06:13 uh which you know started as an IDE it
+06:15 
+
+06:15 looks a lot more like warp like the
+06:17 
+
+06:17 primary interface is now more of a chat
+06:19 
+
+06:19 interface and talking to your computer
+06:22 
+
+06:22 but they you still have all the file
+06:23 
+
+06:23 editing things. So I don't know if I
+06:25 
+
+06:25 would be like terminal is going to die
+06:26 
+
+06:26 or the ID is going to die. What I do
+06:28 
+
+06:28 feel strongly about is that the um
+06:31 
+
+06:31 there's going to be innovation and there
+06:32 
+
+06:32 is innovation happening where the form
+06:35 
+
+06:35 factor is changing to match what the
+06:39 
+
+06:39 agentic workflow should be. So the form
+06:41 
+
+06:41 factor is like
+06:43 
+
+06:43 >> it should be geared towards prompting.
+06:45 
+
+06:45 It should be geared towards um adding
+06:47 
+
+06:47 context. It should be geared towards
+06:49 
+
+06:49 reviewing agent agent generated code
+06:51 
+
+06:51 diffs. Uh I think actually now like team
+06:56 
+
+06:56 is even more important. um like
+06:57 
+
+06:57 especially as you have more and more
+06:59 
+
+06:59 agents that are not just like launched
+07:01 
+
+07:01 locally by people but are coming to be
+07:04 
+
+07:04 launched by system events and so I think
+07:06 
+
+07:06 the workbench is changing and I I
+07:08 
+
+07:08 actually think it will end up looking
+07:09 
+
+07:09 more like a terminal than an IDE but
+07:11 
+
+07:11 probably won't strictly speaking be a
+07:13 
+
+07:13 traditional version of either
+07:15 
+
+07:15 >> and is the rough framing of you know the
+07:17 
+
+07:17 the reason to use each that you know
+07:20 
+
+07:20 terminal is roughly equivalent to the
+07:21 
+
+07:21 the chatbot like you can you can chat
+07:23 
+
+07:23 with a coding agent and um hand off
+07:26 
+
+07:26 tasks and and an IDE is roughly
+07:28 
+
+07:28 equivalent to like a guey for actually
+07:31 
+
+07:31 editing and writing code. Is that is
+07:32 
+
+07:32 that the right mental model?
+07:34 
+
+07:34 >> Yeah, that's definitely where things
+07:35 
+
+07:35 have like started. Uh like Yeah. Right.
+07:38 
+
+07:38 The ID is like Microsoft Word for your
+07:40 
+
+07:40 code and the um the terminal is like is
+07:43 
+
+07:43 like chatting with your computer. Um,
+07:47 
+
+07:47 and the if you're doing professional
+07:51 
+
+07:51 agentic development, which I would
+07:53 
+
+07:53 distinguish from vibe coding, you kind
+07:56 
+
+07:56 of want both of those. Like I don't
+07:58 
+
+07:58 think for uh the pro use case, we're at
+08:01 
+
+08:01 a spot yet where you can be so
+08:02 
+
+08:02 disconnected from the code that you
+08:05 
+
+08:05 don't need some way of like falling into
+08:08 
+
+08:08 hand editing it. I would think of it as
+08:10 
+
+08:10 like the hand editing is like almost
+08:13 
+
+08:13 become like a fallback interface or a
+08:15 
+
+08:15 secondary interface and the primary
+08:18 
+
+08:18 interface now is the prompting interface
+08:20 
+
+08:20 >> and so um yeah I basically I think that
+08:24 
+
+08:24 that is the right like distinction but I
+08:26 
+
+08:26 think it's all kind of merging product
+08:28 
+
+08:28 wise
+08:28 
+
+08:28 >> merging yeah interesting um you
+08:30 
+
+08:30 mentioned procoders a few times what was
+08:33 
+
+08:33 the decision to focus on procoders about
+08:35 
+
+08:35 and um how do you think that plays out
+08:37 
+
+08:37 over the next decade
+08:38 
+
+08:38 Will there be prodevelopers left? Will
+08:40 
+
+08:40 everybody be a prodeveloper?
+08:42 
+
+08:42 >> So, okay, it's a great question. So,
+08:44 
+
+08:44 what I think what I really care about is
+08:47 
+
+08:47 um helping build software that I use
+08:51 
+
+08:51 every day. like there's probably
+08:55 
+
+08:55 10 apps or whatever in my Mac doc and
+08:58 
+
+08:58 pinned as Chrome tabs which are apps
+09:00 
+
+09:00 like Google Docs or Spotify or notion or
+09:03 
+
+09:03 Figma or Warp which are hard to build
+09:07 
+
+09:07 apps that I think um it's those hard to
+09:12 
+
+09:12 build apps that the world spends most of
+09:14 
+
+09:14 their time using and those are built I
+09:17 
+
+09:17 think more by pros and they're
+09:19 
+
+09:19 definitely built more by enterprises and
+09:22 
+
+09:22 I just want be a part of like creating
+09:24 
+
+09:24 that kind of software. Whereas I I do
+09:26 
+
+09:26 feel like the the the nonpro segment is
+09:30 
+
+09:30 cool and I do think it's it's actually
+09:32 
+
+09:32 really it's empowering that kind of
+09:35 
+
+09:35 anyone can make an app at this point.
+09:37 
+
+09:37 Um, but I just think like the the sort
+09:39 
+
+09:39 of economic value of the apps that you
+09:41 
+
+09:41 build with a vibe coding tool, you know,
+09:43 
+
+09:43 like lovable or replet or whatever is
+09:46 
+
+09:46 lower uh than the economic value of the
+09:49 
+
+09:49 apps built with a tool that's geared
+09:51 
+
+09:51 towards pros. And it's also it's just
+09:53 
+
+09:53 like I can't I don't think I've ever
+09:55 
+
+09:55 spent my day using an app that's been
+09:57 
+
+09:57 built in like a no code, low code, vibe
+09:59 
+
+09:59 code tool, whereas I spend all of my
+10:02 
+
+10:02 days uh like literally living in
+10:05 
+
+10:05 software that is built by pros. It's
+10:07 
+
+10:07 really like built for like these
+10:09 
+
+10:09 immersive, hard, important, economically
+10:11 
+
+10:11 valuable use cases.
+10:13 
+
+10:13 >> Totally. The world is a museum of
+10:15 
+
+10:15 passion project and I think that
+10:16 
+
+10:16 includes the the software we choose to
+10:18 
+
+10:18 to use every day.
+10:19 
+
+10:19 >> Yeah.
+10:20 
+
+10:20 >> Let's talk about competition in the
+10:22 
+
+10:22 coding market. This is like this is the
+10:24 
+
+10:24 most brutally competitive
+10:26 
+
+10:26 >> subs of software I have ever ever seen.
+10:29 
+
+10:29 >> Um and you're playing in interesting
+10:32 
+
+10:32 waters, right? You're you're competing
+10:34 
+
+10:34 with a lot of folks. you're
+10:34 
+
+10:34 collaborating with a lot of folks. Um
+10:36 
+
+10:36 maybe just help orient our audience. Uh
+10:40 
+
+10:40 where do you see yourselves in the
+10:41 
+
+10:41 broader competitive landscape in the
+10:43 
+
+10:43 coding market?
+10:44 
+
+10:44 >> Yeah, it's like it is competitive out
+10:47 
+
+10:47 there because it's such a big important
+10:50 
+
+10:50 market that a lot of people want to play
+10:52 
+
+10:52 in it. Um and you know where where do
+10:57 
+
+10:57 where do we sit? So
+10:60 
+
+10:60 so we are a sort of general purpose
+11:02 
+
+11:02 agentic development
+11:05 
+
+11:05 workbench. Um, which means you can use
+11:08 
+
+11:08 us like cursor, you can use us like
+11:11 
+
+11:11 cloud code. I think we have a unique
+11:15 
+
+11:15 product approach to doing agentic
+11:18 
+
+11:18 development where we are truly the only
+11:22 
+
+11:22 um platform out there that has grown out
+11:24 
+
+11:24 of the terminal. So there's a lot that
+11:26 
+
+11:26 have grown out of like IDE specifically
+11:28 
+
+11:28 forking VS Code and they're all very
+11:31 
+
+11:31 similar products. And then there's a lot
+11:33 
+
+11:33 that are just um apps that run within
+11:36 
+
+11:36 the terminal. And so though th those are
+11:38 
+
+11:38 like text based apps and those are also
+11:41 
+
+11:41 basically all the same. Uh and so warp
+11:43 
+
+11:43 is is has a very differentiated product
+11:46 
+
+11:46 approach. Um I think one area where our
+11:50 
+
+11:50 product approach really shines is for
+11:52 
+
+11:52 people who are doing like traditionally
+11:54 
+
+11:54 terminalheavy workflows. And so that
+11:56 
+
+11:56 would be things like um stuff beyond
+11:59 
+
+11:59 coding. So stuff like the software
+12:02 
+
+12:02 development life cycle, it could be
+12:04 
+
+12:04 setting up projects, it could be
+12:06 
+
+12:06 deployment, it could be working with
+12:09 
+
+12:09 like Docker and Kubernetes, uh it could
+12:11 
+
+12:11 be incident response. So like backend
+12:14 
+
+12:14 DevOps, um S people who do production
+12:18 
+
+12:18 work, I think Warp is an amazing tool
+12:20 
+
+12:20 for them because it integrates so well
+12:21 
+
+12:21 with all of these non-coding uh terminal
+12:23 
+
+12:23 workflows. But the truth is, I don't
+12:25 
+
+12:25 know, Warp is like we're at any given
+12:27 
+
+12:27 moment, we're one of the top five agents
+12:29 
+
+12:29 on Sweetbench. We're typically number
+12:31 
+
+12:31 one or two on Terminal Bench. And so
+12:33 
+
+12:33 it's a great generalpurpose coding
+12:36 
+
+12:36 agent. Um, and so we're we're in the
+12:40 
+
+12:40 market, but it is really competitive.
+12:43 
+
+12:43 >> Yeah.
+12:43 
+
+12:43 >> And uh we're trying to compete on the
+12:44 
+
+12:44 quality of the product. It's like we are
+12:48 
+
+12:48 in competitive there's competitive
+12:51 
+
+12:51 pressure around cost which is like a
+12:52 
+
+12:52 really challenging thing for us.
+12:54 
+
+12:54 >> Let's talk about that directly and just
+12:56 
+
+12:56 to hit it head on like how how do you
+12:58 
+
+12:58 compete when anthropic you know can
+13:01 
+
+13:01 subsidize their tool with with model
+13:03 
+
+13:03 profits?
+13:03 
+
+13:03 >> It's anthropic it's open AI and it's
+13:06 
+
+13:06 Google. Um
+13:08 
+
+13:08 so
+13:09 
+
+13:09 we have to compete uh based on the
+13:12 
+
+13:12 quality of the product for one thing and
+13:14 
+
+13:14 so I think like we can be a little bit
+13:17 
+
+13:17 in the more premium part of the market
+13:19 
+
+13:19 here like uh coding agents and like
+13:23 
+
+13:23 developer experience it's not it's not
+13:26 
+
+13:26 bananas. It's not like a commodity.
+13:28 
+
+13:28 these aren't like totally fungeible
+13:30 
+
+13:30 things like the product experience does
+13:33 
+
+13:33 actually matter and so we can get people
+13:36 
+
+13:36 who who who care about that. I think
+13:40 
+
+13:40 that matters and that um basically I I
+13:43 
+
+13:43 also think you want to stay away from
+13:44 
+
+13:44 certain user segments who are most
+13:47 
+
+13:47 costconscious and cost shopping and so
+13:50 
+
+13:50 that would be like vibe coders people
+13:52 
+
+13:52 who are running like agents like 24
+13:54 
+
+13:54 hours a day making you know making
+13:57 
+
+13:57 prototypes uh and that's just not
+13:60 
+
+13:60 actually the usage pattern of a
+14:01 
+
+14:01 prodeveloper and so for you know a
+14:04 
+
+14:04 prodeveloper
+14:05 
+
+14:05 um I think you can make a pretty strong
+14:07 
+
+14:07 argument that like the the actual
+14:10 
+
+14:10 holistic experience of using the tool
+14:12 
+
+14:12 might be worth like 20 bucks more, 40
+14:14 
+
+14:14 bucks more, 80 bucks like these are tiny
+14:16 
+
+14:16 sums compared to the amount of like
+14:20 
+
+14:20 productivity that people are gaining in
+14:22 
+
+14:22 the amount of software that's being
+14:23 
+
+14:23 produced. Um I think there's also a a
+14:27 
+
+14:27 way that we are trying to sit above the
+14:28 
+
+14:28 model providers and you know I think
+14:31 
+
+14:31 there's been a positive development here
+14:32 
+
+14:32 which is that for about I don't know
+14:35 
+
+14:35 three months maybe three six months I
+14:37 
+
+14:37 think anthropic was kind of like the
+14:38 
+
+14:38 main show in town when it came to
+14:40 
+
+14:40 frontier coding and now I think Gemini 3
+14:44 
+
+14:44 and and even like the latest codecs are
+14:47 
+
+14:47 basically on par with the like the
+14:49 
+
+14:49 latest cloud model and so there is
+14:52 
+
+14:52 advantage to being able to let people
+14:55 
+
+14:55 choose between those or model route
+14:57 
+
+14:57 amongst them to model route with like
+14:60 
+
+14:60 cheaper open source models. So it's not
+15:02 
+
+15:02 easy and if you view it as just like
+15:05 
+
+15:05 we're in like a cost race and all these
+15:07 
+
+15:07 coding tools are the same then I think
+15:08 
+
+15:08 that's like we have to differentiate way
+15:10 
+
+15:10 more on the product and also just like
+15:13 
+
+15:13 the orchestration of these agents but I
+15:15 
+
+15:15 don't think it's quite that's quite the
+15:17 
+
+15:17 situation.
+15:18 
+
+15:18 >> Got it. Okay. So you're winning people
+15:20 
+
+15:20 because they they love the overall warp
+15:22 
+
+15:22 product and that includes
+15:24 
+
+15:24 >> I think so
+15:25 
+
+15:25 >> but also product like like the actual
+15:28 
+
+15:28 you know terminal the better terminal
+15:29 
+
+15:29 you set out to build.
+15:30 
+
+15:30 >> Yeah and it is kind of a funnel. It's
+15:32 
+
+15:32 like we have a lot of you know we have
+15:34 
+
+15:34 like 700,000 developers in warp uh
+15:37 
+
+15:37 actively and like there's like a bit of
+15:39 
+
+15:39 a funnel from the terminal into the
+15:41 
+
+15:41 coding use cases and the at least into
+15:43 
+
+15:43 the terminal use cases.
+15:45 
+
+15:45 >> Yeah. You mentioned being one or two on
+15:48 
+
+15:48 terminal bench. What goes into that?
+15:50 
+
+15:50 Like are you training your own terminal
+15:53 
+
+15:53 models or is this harnesses on top of
+15:56 
+
+15:56 the existing foundation models?
+15:58 
+
+15:58 >> So for us it's a harness on a mix of
+15:60 
+
+15:60 models. So
+16:02 
+
+16:02 >> um and then like the actual capabilities
+16:05 
+
+16:05 of the app kind of matter which is
+16:07 
+
+16:07 interesting. So,
+16:08 
+
+16:08 >> and what I mean by that is like terminal
+16:10 
+
+16:10 bench, it's not just coding tasks. It's
+16:12 
+
+16:12 like all sorts of things that you might
+16:14 
+
+16:14 do in the in the terminal. And so, we
+16:17 
+
+16:17 have some intrinsic advantage there by
+16:19 
+
+16:19 actually being the terminal and not a
+16:22 
+
+16:22 like an app running within the terminal.
+16:25 
+
+16:25 And so, like for example, I one of the
+16:27 
+
+16:27 terminal bench tasks was like playing
+16:29 
+
+16:29 Zork or something which is like an
+16:30 
+
+16:30 interactive terminal game. And so we can
+16:34 
+
+16:34 we can like use the terminal. We can do
+16:37 
+
+16:37 computer use in the terminal is probably
+16:38 
+
+16:38 the easiest way to think of it. So uh
+16:40 
+
+16:40 just like there's there's companies out
+16:42 
+
+16:42 there that doing browser use, we can do
+16:45 
+
+16:45 terminal use at the layer of the
+16:47 
+
+16:47 terminal as opposed to at the layer of
+16:48 
+
+16:48 like a web page which is at the what the
+16:50 
+
+16:50 equivalent would be for the browser
+16:52 
+
+16:52 analogy. And so that helps us like do
+16:55 
+
+16:55 certain tasks on that particular eval
+16:58 
+
+16:58 that uh is hard for other uh harnesses
+17:01 
+
+17:01 to do. Hm. Got it. Um, you recently
+17:05 
+
+17:05 redid your pricing. What'd you learn
+17:07 
+
+17:07 about developers and how they want to
+17:09 
+
+17:09 pay for AI?
+17:09 
+
+17:09 >> Oh my god. So, we're we're still like
+17:12 
+
+17:12 not fully out of this. Uh, yeah. I mean,
+17:15 
+
+17:15 I could just explain like the whole
+17:17 
+
+17:17 whole thing here. So, we our initial
+17:19 
+
+17:19 pricing was um basically you you do a
+17:24 
+
+17:24 subscription and you get a fixed amount
+17:26 
+
+17:26 of AI credits every month. Uh and we
+17:32 
+
+17:32 priced it so that uh this is when we
+17:35 
+
+17:35 were at smaller scale. Uh if you like
+17:38 
+
+17:38 fully utilized your plan, it would cost
+17:40 
+
+17:40 us money. But the hope was that the on
+17:42 
+
+17:42 the sort of on the average utilization
+17:45 
+
+17:45 the that we would make money, right? So
+17:47 
+
+17:47 it's like you have a plan that gives
+17:49 
+
+17:49 people 50,000 credits and most people
+17:51 
+
+17:51 only use 20,000. You can kind of price
+17:53 
+
+17:53 it around that. What happened was like
+17:55 
+
+17:55 the um people just used more and more
+17:58 
+
+17:58 and so we got to a point where we were
+17:60 
+
+17:60 losing more and more money. Uh and so
+18:03 
+
+18:03 from a company strategy standpoint, we
+18:05 
+
+18:05 had a choice. We talked to Andrew a
+18:08 
+
+18:08 bunch about this. Like we could either
+18:10 
+
+18:10 kind of play the like uh and like we're
+18:13 
+
+18:13 growing really fast. Like the revenue is
+18:14 
+
+18:14 growing, you know, we're adding like a
+18:16 
+
+18:16 million in revenue every uh it's since
+18:19 
+
+18:19 slowed down a little. It was like every
+18:20 
+
+18:20 five days or something. It's like we
+18:22 
+
+18:22 could play the game, go raise more
+18:24 
+
+18:24 money, but the margins were really bad.
+18:28 
+
+18:28 And so we
+18:30 
+
+18:30 decided that wasn't just like wasn't the
+18:32 
+
+18:32 smart long-term strategic thing to do.
+18:35 
+
+18:35 And like also not like a race we can win
+18:37 
+
+18:37 to the earlier conversation here. Like
+18:39 
+
+18:39 we we we just can't beat people if the
+18:43 
+
+18:43 thing is cost. And so we wanted to know
+18:45 
+
+18:45 like are people paying for value? Will
+18:47 
+
+18:47 they pay if if we are margin positive?
+18:49 
+
+18:49 And so the way that we have like changed
+18:52 
+
+18:52 the pricing is so that it's much more
+18:55 
+
+18:55 consumption based. So you pay you now
+18:57 
+
+18:57 pay for like a base plan of 20 bucks a
+18:60 
+
+19:00 month and then you buy credits on top of
+19:03 
+
+19:03 that. And we we ensure that that like
+19:07 
+
+19:07 you know it's like in the old world we
+19:08 
+
+19:08 didn't want people fully utilizing their
+19:11 
+
+19:11 AI because it would cost us money. Now
+19:12 
+
+19:12 it's like much better if people use more
+19:14 
+
+19:14 AI. Um, it is more expensive for sure
+19:19 
+
+19:19 and we've had a lot of user complaints
+19:20 
+
+19:20 around that which sucks if any customers
+19:25 
+
+19:25 are listening. Like it's a bummer. Um,
+19:28 
+
+19:28 it really does suck, but it's like we
+19:29 
+
+19:29 just could not afford to keep
+19:31 
+
+19:31 subsidizing the way that we were. Um,
+19:34 
+
+19:34 and like all in all, I would say it's
+19:35 
+
+19:35 gone pretty well. like we're still we're
+19:38 
+
+19:38 still growing pretty well and now it's
+19:41 
+
+19:41 like uh a growth that is sustainable not
+19:44 
+
+19:44 like a
+19:45 
+
+19:45 >> you know unsustainable subsidized
+19:47 
+
+19:47 revenue growth. So tricky thing to do.
+19:49 
+
+19:49 >> Would you ever train your own models?
+19:53 
+
+19:53 >> I think it we would definitely do like
+19:55 
+
+19:55 what um
+19:57 
+
+19:57 some of our competitors are doing where
+19:59 
+
+19:59 we would fine-tune models and do RL and
+20:01 
+
+20:01 that type of stuff. I um it's hard for
+20:05 
+
+20:05 me to imagine us competing with training
+20:07 
+
+20:07 like a full frontier level model just
+20:11 
+
+20:11 the amount of capital that costs.
+20:13 
+
+20:13 >> We do have a ton of interesting data
+20:16 
+
+20:16 like
+20:17 
+
+20:17 >> I think it's like actually a really
+20:18 
+
+20:18 interesting strategic asset for us in
+20:20 
+
+20:20 terms of like the workflows people are
+20:22 
+
+20:22 doing in the terminal, how to improve
+20:23 
+
+20:23 them, how people are interacting with
+20:24 
+
+20:24 our agent. Um, so I think it's likely
+20:27 
+
+20:27 that we will we will do some sort of RL.
+20:31 
+
+20:31 Uh, and I think it's also very likely
+20:33 
+
+20:33 that we're going to lean more into a
+20:35 
+
+20:35 mixture of models and more model routing
+20:38 
+
+20:38 to try to like give users the best
+20:41 
+
+20:41 experience when it comes to sort of
+20:43 
+
+20:43 latency, cost, and quality, which are
+20:45 
+
+20:45 the three
+20:46 
+
+20:46 >> Yeah.
+20:47 
+
+20:47 >> the three sort of like vectors here.
+20:49 
+
+20:49 >> And do you see your role as kind of like
+20:52 
+
+20:52 optimizing that on behalf of users? Do
+20:54 
+
+20:54 you want to see yourselves as giving all
+20:56 
+
+20:56 options to users for them to pick?
+20:59 
+
+20:59 >> Yeah. So, our our philosophy has been
+21:01 
+
+21:01 like make a great default, but then
+21:02 
+
+21:02 because these are developers, they want
+21:05 
+
+21:05 control. So, we have like um an we
+21:09 
+
+21:09 actually have a couple variants of
+21:10 
+
+21:10 default. So, we have like an a default
+21:13 
+
+21:13 that's geared towards like efficiency
+21:14 
+
+21:14 and one that's geared towards
+21:15 
+
+21:15 performance. And then after that, we
+21:17 
+
+21:17 give people the raw choice. Um the raw
+21:20 
+
+21:20 choice is like a little weird because
+21:22 
+
+21:22 like increasingly we really want to like
+21:24 
+
+21:24 use different models for different
+21:26 
+
+21:26 things internally and it doesn't map
+21:28 
+
+21:28 that cleanly on using say like you know
+21:33 
+
+21:33 GPT52 for everything. So it's it's a
+21:36 
+
+21:36 little complicated but I think it's
+21:37 
+
+21:37 actually something that developers like
+21:39 
+
+21:39 is the control and so I don't see us
+21:41 
+
+21:41 moving away from that right now.
+21:43 
+
+21:43 >> Yeah. Um, one of the most interesting
+21:46 
+
+21:46 parts about where you sit is that you
+21:48 
+
+21:48 can actually see which models different
+21:49 
+
+21:49 developers are using. And so I'm curious
+21:51 
+
+21:51 in your user base, which models are most
+21:54 
+
+21:54 popular. Has it evened out a lot? And
+21:56 
+
+21:56 are like, are there different flavors or
+21:58 
+
+21:58 personalities of what the different
+21:60 
+
+21:60 models are good at?
+22:01 
+
+22:01 >> Like 70 to 80% of our user base will use
+22:04 
+
+22:04 whatever we set our auto to and not
+22:06 
+
+22:06 touch it.
+22:08 
+
+22:08 Um, and what we set the auto to
+22:11 
+
+22:11 currently is like, um, it's a different
+22:14 
+
+22:14 one for efficient and a different one
+22:16 
+
+22:16 for performance. It's a mix of the, um,
+22:19 
+
+22:19 codeex, sorry, GPT5 too, but it could be
+22:23 
+
+22:23 it's related to codecs and then uh,
+22:26 
+
+22:26 Sonnet 45. Um when people are opting
+22:30 
+
+22:30 into choosing a model uh lately Gemini 3
+22:35 
+
+22:35 Pro has been very popular. It's a really
+22:38 
+
+22:38 good model. You know what what we will
+22:40 
+
+22:40 do is like we will test different
+22:42 
+
+22:42 variants in our auto model and see how
+22:44 
+
+22:44 people respond, how they engage with
+22:46 
+
+22:46 them. And I think we'll probably test
+22:48 
+
+22:48 Gemini 3. I've been impressed with it.
+22:50 
+
+22:50 Um,
+22:52 
+
+22:52 so yeah, I would say I would if I had to
+22:54 
+
+22:54 like stack rank, I would probably say
+22:55 
+
+22:55 like the anthropic models are probably
+22:57 
+
+22:57 still most popular. And then um between
+23:00 
+
+23:00 Gemini and OpenAI, there's there's a
+23:03 
+
+23:03 decent amount of people opting into each
+23:04 
+
+23:04 of those.
+23:05 
+
+23:05 >> What about Grock?
+23:07 
+
+23:07 >> Grock is not in Warp. Um, it could be in
+23:10 
+
+23:10 Warp. They've reached out a bunch of
+23:12 
+
+23:12 times to put it in Warp. We we I'm not I
+23:16 
+
+23:16 have I'm not at all opposed to putting
+23:17 
+
+23:17 in Warp. It's just like every time we
+23:19 
+
+23:19 put a model in warp, we have to I like
+23:21 
+
+23:21 would like some concrete benefit to
+23:23 
+
+23:23 users and because it's a bunch of work
+23:26 
+
+23:26 to to tune our harness to work well with
+23:28 
+
+23:28 the model.
+23:30 
+
+23:30 >> I see.
+23:31 
+
+23:31 >> Interesting.
+23:32 
+
+23:32 >> Can you say a word more about that
+23:33 
+
+23:33 harness? Like what do you do uh to make
+23:36 
+
+23:36 your harness good?
+23:37 
+
+23:37 >> So harness is like how you how you
+23:39 
+
+23:39 prompt, what tools you make available,
+23:41 
+
+23:41 how it um how you manage context.
+23:45 
+
+23:45 Um, and so like the big things that like
+23:49 
+
+23:49 are determining quality of harness are
+23:51 
+
+23:51 like it's literally like the language of
+23:53 
+
+23:53 the prompting. It's the tool set
+23:56 
+
+23:56 definition.
+23:57 
+
+23:57 Um, it's things like handling the
+23:60 
+
+23:60 context window. So specifically
+24:02 
+
+24:02 when do you uh use something like a sub
+24:05 
+
+24:05 agent where you where you uh go out and
+24:08 
+
+24:08 you have something as a separate context
+24:10 
+
+24:10 window. When do you summarize? When do
+24:12 
+
+24:12 you truncate? Like we have things that
+24:14 
+
+24:14 have like you know you might run a
+24:15 
+
+24:15 terminal command that has like gigantic
+24:17 
+
+24:17 output and you don't want that all in
+24:19 
+
+24:19 your context window but you might want
+24:20 
+
+24:20 some part of it in your context window.
+24:22 
+
+24:22 So how do you sort of pick out the right
+24:24 
+
+24:24 stuff? How do you do rag? How do you
+24:26 
+
+24:26 integrate with MCP? And so it's um
+24:30 
+
+24:30 there's just like some engineering and
+24:32 
+
+24:32 like alpha that goes into that. The way
+24:34 
+
+24:34 that you make that good is by measuring.
+24:38 
+
+24:38 uh like you can start just by like in a
+24:41 
+
+24:41 pretty like naive way and just give it a
+24:43 
+
+24:43 bunch of prompts, but the way that you
+24:44 
+
+24:44 make it really good is by measuring and
+24:46 
+
+24:46 by measuring you can do it with um sort
+24:49 
+
+24:49 of like a fixed set of evals where we
+24:50 
+
+24:50 know uh what the results should be and
+24:53 
+
+24:53 like not all of them should work. Uh and
+24:56 
+
+24:56 so we have internal evals. You can do it
+24:57 
+
+24:57 on public benchmarks and that's actually
+24:59 
+
+24:59 been really good for getting our harness
+25:01 
+
+25:01 to be awesome is just like going through
+25:03 
+
+25:03 the exercise of making our agent perform
+25:05 
+
+25:05 well on the public benchmarks and then
+25:07 
+
+25:07 you can do it by looking at like uh you
+25:10 
+
+25:10 know user data and so we use um brain
+25:13 
+
+25:13 trust. So so there's various platforms
+25:15 
+
+25:15 you can use to like sort of look for
+25:18 
+
+25:18 patterns and failure modes in the agent
+25:21 
+
+25:21 interaction and then try to tune the
+25:24 
+
+25:24 harness and sort of replay them as eval.
+25:26 
+
+25:26 So,
+25:27 
+
+25:27 >> you know, that was a big mindset shift
+25:28 
+
+25:28 for us, like to to get to doing that,
+25:30 
+
+25:30 but that was 100% necessary to do it all
+25:32 
+
+25:32 data driven to get to something that was
+25:34 
+
+25:34 good.
+25:34 
+
+25:34 >> Yeah. Got it. And do you have your own
+25:37 
+
+25:37 tab autocomplete models? Is that just
+25:39 
+
+25:39 not even relevant for your your product?
+25:42 
+
+25:42 >> We don't have that. Um, it's not super
+25:45 
+
+25:45 duper relevant at the moment. Um, like I
+25:48 
+
+25:48 think there would be incremental benefit
+25:50 
+
+25:50 if we were doing tab completion in the
+25:53 
+
+25:53 terminal for people. And I we do have
+25:55 
+
+25:55 and I think for like the hand editing
+25:57 
+
+25:57 parts of warp by far like the more
+25:60 
+
+26:00 typical use case is for code review of
+26:02 
+
+26:02 an agent's code than it is like typing
+26:04 
+
+26:04 code but it it is it would be nice to
+26:07 
+
+26:07 have. It's just not a not an area high
+26:09 
+
+26:09 priority for us.
+26:10 
+
+26:10 >> Yeah. Got it. Awesome. I'd love to talk
+26:13 
+
+26:13 a little bit about how you see the
+26:15 
+
+26:15 future of um coding interfa interfaces
+26:18 
+
+26:18 and see the future workbench evolving.
+26:21 
+
+26:21 So it seems like very much like you
+26:22 
+
+26:22 believe there's a convergence happening
+26:24 
+
+26:24 between kind of the traditional call it
+26:27 
+
+26:27 Microsoft Word IDE guey approach to
+26:30 
+
+26:30 writing code and then the chat with your
+26:32 
+
+26:32 computer um agentic um kind of uh style
+26:37 
+
+26:37 of you know terminal first approach and
+26:39 
+
+26:39 those those two are starting to merge.
+26:42 
+
+26:42 What other kind of UI innovations do you
+26:45 
+
+26:45 think are happening in terms of how
+26:46 
+
+26:46 people work with coding agents?
+26:48 
+
+26:48 I think the biggest change that we're
+26:50 
+
+26:50 going to see in the next year is more
+26:52 
+
+26:52 and more um like kind of like cloud
+26:55 
+
+26:55 agents or we call them agents
+26:58 
+
+26:58 >> where and this is already happening like
+27:01 
+
+27:01 we're investing in this at warp where
+27:04 
+
+27:04 rather than a developer sitting at a
+27:06 
+
+27:06 keyboard giving a prompt there's some
+27:08 
+
+27:08 system event that triggers an agent to
+27:11 
+
+27:11 do something and that system event could
+27:13 
+
+27:13 be like you have a server that's
+27:15 
+
+27:15 crashing you have a cluster of user
+27:17 
+
+27:17 reports reports um someone has reported
+27:20 
+
+27:20 like a filed like a security incident
+27:23 
+
+27:23 against you and all those things are
+27:25 
+
+27:25 basically going to serve as context into
+27:27 
+
+27:27 an agent that gets launched and runs not
+27:29 
+
+27:29 on some individual's machine but like
+27:32 
+
+27:32 somewhere in the cloud and so what I
+27:34 
+
+27:34 think that implies is that you're going
+27:36 
+
+27:36 to want um the the sort of like
+27:40 
+
+27:40 workbench to become more of an
+27:41 
+
+27:41 orchestration platform more of a uh like
+27:44 
+
+27:44 kind of cockpit for managing not just
+27:46 
+
+27:46 your own agents but your team's agents.
+27:49 
+
+27:49 I really think it implies you're going
+27:51 
+
+27:51 to need like a strong team concept. Um
+27:54 
+
+27:54 because you know the these things aren't
+27:57 
+
+27:57 it's not going to be the normal workflow
+27:59 
+
+27:59 of like I'm sitting at my desk like I
+28:01 
+
+28:01 I'm writing a coding change and I push a
+28:03 
+
+28:03 PR. It's like agents are going to push
+28:05 
+
+28:05 PRs and then agents are probably going
+28:07 
+
+28:07 to leave an initial round of reviews on
+28:09 
+
+28:09 PRs and they're going to file tasks or
+28:12 
+
+28:12 task tracking system. And so all this
+28:15 
+
+28:15 stuff needs like it needs tracking um
+28:19 
+
+28:19 and it needs coordination and you need
+28:21 
+
+28:21 different ways of integrating it into
+28:25 
+
+28:25 existing systems. And so whoever like
+28:28 
+
+28:28 this is like what warps probably like
+28:30 
+
+28:30 our our biggest product focus for next
+28:33 
+
+28:33 year is on this type of of uh evolution
+28:36 
+
+28:36 off of just like interactive agents into
+28:39 
+
+28:39 the cloud agents because I think it's
+28:40 
+
+28:40 going to it's going to be pretty
+28:42 
+
+28:42 transformative.
+28:44 
+
+28:44 >> And I imagine that's like a massive
+28:46 
+
+28:46 infrastructure push to be able to kind
+28:48 
+
+28:48 of you know run up and spin up.
+28:50 
+
+28:50 >> It is. It's it's it's turning um Yeah.
+28:53 
+
+28:53 So like for us it's turning us much more
+28:55 
+
+28:55 from a like a product to a platform. And
+28:57 
+
+28:57 so the way that we think about building
+28:60 
+
+28:60 this out is building it on different
+29:01 
+
+29:01 layers of the stack where you have like
+29:04 
+
+29:04 an agent SDK, you have um uh agent
+29:08 
+
+29:08 hosting if you want it. So like, you
+29:11 
+
+29:11 know, if if you're a smaller company and
+29:14 
+
+29:14 you don't want to like set up spots in
+29:15 
+
+29:15 the cloud for your agents to do their
+29:17 
+
+29:17 their their work, Warp will host that
+29:19 
+
+29:19 for you. There's a whole category of
+29:22 
+
+29:22 startups that are going into this
+29:24 
+
+29:24 business of agent hosting. Uh which I
+29:26 
+
+29:26 think is really interesting. It speaks
+29:27 
+
+29:27 to like this is like a real thing that's
+29:29 
+
+29:29 happening.
+29:30 
+
+29:30 >> Uh there's an API layer for once you
+29:32 
+
+29:32 have the agent running, how do you get
+29:34 
+
+29:34 its status and how do you um how do you
+29:38 
+
+29:38 maybe take it over or see its progress?
+29:40 
+
+29:40 Where does it write its logs? Uh and
+29:42 
+
+29:42 then there's like a management layer of
+29:44 
+
+29:44 like what are all these things doing?
+29:46 
+
+29:46 What states are they in? and what's a
+29:47 
+
+29:47 the log like you know who started them
+29:50 
+
+29:50 when did they produce PRs and so I think
+29:52 
+
+29:52 it's cool because it's going to be the
+29:54 
+
+29:54 most impactful way to use these agents a
+29:57 
+
+29:57 lot is just not to have a person like
+29:59 
+
+29:59 driving them I don't think that this
+30:01 
+
+30:01 means that the person driving the agent
+30:03 
+
+30:03 is going to go away either I think that
+30:04 
+
+30:04 there's like it's a the the sort of
+30:07 
+
+30:07 types of tasks that are going to start
+30:08 
+
+30:08 with these ambient cloud agents are more
+30:11 
+
+30:11 like toil tasks or things that are
+30:13 
+
+30:13 oneshotable and I think harder more
+30:16 
+
+30:16 interesting software engineering ing is
+30:17 
+
+30:17 still going to be done by a developer
+30:18 
+
+30:18 like at their workbench. But um yeah,
+30:21 
+
+30:21 this is how I I see things evolving in
+30:23 
+
+30:23 the next year.
+30:24 
+
+30:24 >> That's awesome. And I think one of the
+30:26 
+
+30:26 mo more important scaling law charts is
+30:28 
+
+30:28 like the the meter like how long can the
+30:30 
+
+30:30 the agent run for?
+30:31 
+
+30:31 >> Yeah.
+30:32 
+
+30:32 >> Um what are you seeing in terms of how
+30:35 
+
+30:35 kind of long horizon these agents can
+30:37 
+
+30:37 be? I don't know at its max I would say
+30:40 
+
+30:40 like doing real coding tasks for us now
+30:42 
+
+30:42 is like
+30:44 
+
+30:44 20 30 minutes something like that maybe
+30:48 
+
+30:48 like you can have it run longer just to
+30:50 
+
+30:50 be clear but the
+30:52 
+
+30:52 >> run in circles
+30:54 
+
+30:54 >> the problem is it will start going in
+30:57 
+
+30:57 circles still there's still context
+30:59 
+
+30:59 limitations and like it's a it's a
+31:03 
+
+31:03 costly proposition to have agents
+31:07 
+
+31:07 running without people checking in and
+31:10 
+
+31:10 guiding them. And just by far you get
+31:13 
+
+31:13 the best results when the agent is
+31:16 
+
+31:16 really steered. So when you do like an
+31:18 
+
+31:18 upfront plan with the agent,
+31:20 
+
+31:20 >> when you check in on the agent's work
+31:22 
+
+31:22 and so I think yeah, I think this will
+31:25 
+
+31:25 just keep on going up. But the
+31:29 
+
+31:29 I I don't I don't know. It's like hours
+31:31 
+
+31:31 and hours of work. It needs a really
+31:32 
+
+31:32 clearly defined task in order for that
+31:34 
+
+31:34 to even make sense to me. needs to be
+31:36 
+
+31:36 doing like some like big code migration
+31:38 
+
+31:38 or some some big big task.
+31:40 
+
+31:40 >> Got it. What do you think the product
+31:42 
+
+31:42 might look like when it's good at kind
+31:44 
+
+31:44 of being this cockpit to manage, you
+31:47 
+
+31:47 know, swarms of these agents?
+31:49 
+
+31:49 >> Yeah, we're so we're we're building this
+31:51 
+
+31:51 out right now and like we're having all
+31:53 
+
+31:53 sorts of internal debates on whether
+31:55 
+
+31:55 it's it's it should be one product or
+31:58 
+
+31:58 two products. um
+32:01 
+
+32:01 uh the way that we're doing it right now
+32:03 
+
+32:03 and how I think other people will
+32:05 
+
+32:05 probably approach this is like a sort of
+32:07 
+
+32:07 like area of our app which is about
+32:10 
+
+32:10 agent orchestration.
+32:12 
+
+32:12 Um the reason I wonder if it should be a
+32:15 
+
+32:15 whole separate product for us is because
+32:17 
+
+32:17 like um you know it's it very much it
+32:21 
+
+32:21 feels more web centric to me which we
+32:23 
+
+32:23 you we can make warp work on the web but
+32:26 
+
+32:26 it's not the primary interface. Um it
+32:29 
+
+32:29 feels like potentially it has like a
+32:30 
+
+32:30 different user some of the time.
+32:33 
+
+32:33 >> Um but the advantage of having it
+32:35 
+
+32:35 bundled into warp is that it makes the
+32:39 
+
+32:39 handoff from one of these cloud tasks to
+32:42 
+
+32:42 a developer extremely seamless. And so
+32:46 
+
+32:46 very very common workflow like we have
+32:47 
+
+32:47 this thing like we have it running in
+32:49 
+
+32:49 our slack in our linear um and so what
+32:53 
+
+32:53 will often happen is like you'll tag
+32:54 
+
+32:54 something in slack and you'll be like
+32:56 
+
+32:56 you know can you make this fix for me
+32:59 
+
+32:59 change this button position or whatever
+33:01 
+
+33:01 and right now you need a developer to
+33:03 
+
+33:03 like tie the loop on that. So it'll do
+33:05 
+
+33:05 the work in the cloud and then you'll
+33:06 
+
+33:06 bring it onto your local machine and
+33:08 
+
+33:08 it's very nice to have that be in one
+33:10 
+
+33:10 environment where you can just keep
+33:12 
+
+33:12 working on it seamlessly. So short
+33:14 
+
+33:14 answer is I don't know, but it'll be a
+33:16 
+
+33:16 little bit more like a task management
+33:17 
+
+33:17 UI.
+33:18 
+
+33:18 >> I don't think it's going to quite like
+33:21 
+
+33:21 >> I know there's there's like thoughts of
+33:24 
+
+33:24 like is task management the primary
+33:26 
+
+33:26 primitive for developers to be working
+33:27 
+
+33:27 with. I don't buy that either. Like I
+33:28 
+
+33:28 don't think like every developer is
+33:29 
+
+33:29 going to be doing all their work out of
+33:31 
+
+33:31 linear Jira, but I do think there's some
+33:34 
+
+33:34 aspect of seeing what the agents are
+33:36 
+
+33:36 doing across various systems that
+33:37 
+
+33:37 developers are going to want.
+33:39 
+
+33:39 >> Yeah. Awesome. I'd love to close by
+33:42 
+
+33:42 maybe talking a bit about the state of
+33:44 
+
+33:44 Agentic development and and how the
+33:46 
+
+33:46 software engineering market will play
+33:47 
+
+33:47 out. Sound good?
+33:49 
+
+33:49 >> Sure.
+33:50 
+
+33:50 >> I guess maybe for starters, where do you
+33:51 
+
+33:51 think we are in terms of like the
+33:53 
+
+33:53 frontier model, you know, capability uh
+33:57 
+
+33:57 frontier like where are the models good
+33:59 
+
+33:59 today? Where are they not?
+34:01 
+
+34:01 >> Um, you know, still producing all their
+34:04 
+
+34:04 errors like where are we?
+34:07 
+
+34:07 So, I I'm constantly using this stuff.
+34:10 
+
+34:10 Uh I'm I'm somewhat biased because I use
+34:11 
+
+34:11 it on Warp's codebase, which is like a
+34:14 
+
+34:14 very custom big Rust codebase. But I
+34:16 
+
+34:16 think that's still an interesting
+34:18 
+
+34:18 perspective.
+34:19 
+
+34:19 >> Um the agents can do what I would think
+34:21 
+
+34:21 of as like medium complexity tasks
+34:24 
+
+34:24 pretty well if you give them a bunch of
+34:27 
+
+34:27 guidance. Uh they can't do
+34:32 
+
+34:32 like whole big projects. um at least we
+34:36 
+
+34:36 haven't had success doing that. They
+34:40 
+
+34:40 can't uh I don't trust them to make like
+34:42 
+
+34:42 very fundamental architecture uh
+34:44 
+
+34:44 decisions for us. Um so it's like you
+34:49 
+
+34:49 want like pretty constrained tasks, but
+34:51 
+
+34:51 they're well beyond
+34:53 
+
+34:53 doing trivial tasks like change the
+34:55 
+
+34:55 button color, change the text, like
+34:57 
+
+34:57 that's that like they can make apps.
+34:59 
+
+34:59 They're very good at zero to one. They
+35:01 
+
+35:01 can solve like kind of hard bugs.
+35:04 
+
+35:04 uh we have a medium-sized feature like I
+35:06 
+
+35:06 don't know what a good example would be
+35:08 
+
+35:08 like I was adding a new slash command to
+35:10 
+
+35:10 warp the other day and it's like I just
+35:12 
+
+35:12 tagged the agent to do that you know in
+35:14 
+
+35:14 Slack and it made a 300 line PR and it
+35:16 
+
+35:16 was basically right and so I I think
+35:19 
+
+35:19 there's a bunch of headroom at the upper
+35:22 
+
+35:22 end um
+35:25 
+
+35:25 I if if I had to put it on like a scale
+35:27 
+
+35:27 of 0 to 10 I think we're at like a six
+35:30 
+
+35:30 maybe
+35:31 
+
+35:31 >> um so I think it's like It's real. It's
+35:34 
+
+35:34 gamechanging for how people work, but
+35:36 
+
+35:36 it's not at like the level of doing what
+35:38 
+
+35:38 a full-time engineer on a hard product
+35:40 
+
+35:40 needs to do.
+35:42 
+
+35:42 >> And where do you think the bottlenecks
+35:44 
+
+35:44 are? Like is it just pe you know that
+35:46 
+
+35:46 models don't have enough context? We
+35:47 
+
+35:47 need to get better at giving them
+35:48 
+
+35:48 instructions. Is it just we need to keep
+35:50 
+
+35:50 scaling these things up? Like what are
+35:52 
+
+35:52 the biggest bottlenecks?
+35:54 
+
+35:54 >> So I definitely think context window is
+35:55 
+
+35:55 still a big issue. Um, and even with the
+35:59 
+
+35:59 bigger context windows, it having like
+36:00 
+
+36:00 attention over the whole context window
+36:02 
+
+36:02 in like a reasonable way is is hard.
+36:05 
+
+36:05 >> Um,
+36:07 
+
+36:07 I think like
+36:10 
+
+36:10 there's like an issue of it always
+36:11 
+
+36:11 having to like relearn everything. Like
+36:13 
+
+36:13 memory is not just seems like a slow
+36:18 
+
+36:18 inefficient repopulate the whole thing
+36:20 
+
+36:20 with a bunch of files
+36:22 
+
+36:22 take like there's no like continuous
+36:24 
+
+36:24 learning with it. So, it's
+36:27 
+
+36:27 >> it's like this big stateless thing where
+36:29 
+
+36:29 you're kind of always starting from
+36:30 
+
+36:30 scratch and have to fill it up before
+36:32 
+
+36:32 you can set it loose. That's that sort
+36:35 
+
+36:35 of stinks. I would I would like to see
+36:37 
+
+36:37 that solved.
+36:39 
+
+36:39 Um
+36:41 
+
+36:41 there's still like how do you use it
+36:44 
+
+36:44 effectively as a developer? We're very
+36:46 
+
+36:46 early. Like this stuff didn't exist a
+36:48 
+
+36:48 year ago. And so how should you be doing
+36:52 
+
+36:52 context engineering? How should you be
+36:55 
+
+36:55 setting up your projects so that agents
+36:57 
+
+36:57 can work well with them? Um, that's like
+36:60 
+
+36:60 a a problem. We if you were to look
+37:02 
+
+37:02 across how people on our team use warp
+37:04 
+
+37:04 to build, it's like high variance and
+37:09 
+
+37:09 you know that's not great because it's
+37:11 
+
+37:11 like we have very very great we have
+37:13 
+
+37:13 very very like rigorous standards around
+37:14 
+
+37:14 writing code and like almost no
+37:17 
+
+37:17 standards. I mean we've tried around
+37:18 
+
+37:18 like how to use the agents. No one has
+37:21 
+
+37:21 been taught how to use the agents. there
+37:22 
+
+37:22 aren't even agreed best practices on how
+37:25 
+
+37:25 to use the agents and so I think that's
+37:27 
+
+37:27 pretty nent.
+37:28 
+
+37:28 >> Yeah, got it. Um my experience whenever
+37:32 
+
+37:32 I try to vibe code a little bit is that
+37:33 
+
+37:33 the coding models still produce a lot of
+37:35 
+
+37:35 errors.
+37:36 
+
+37:36 >> Yes.
+37:36 
+
+37:36 >> Um is that getting better over time and
+37:39 
+
+37:39 that seems like to me in the category of
+37:41 
+
+37:41 stuff is like if you can verify it like
+37:43 
+
+37:43 did it work or did it not you should be
+37:45 
+
+37:45 able to RL it. Um, and like where are we
+37:48 
+
+37:48 today in in terms of the state of, you
+37:51 
+
+37:51 know, how frequently are errors coming
+37:53 
+
+37:53 out and like can we actually RL that or
+37:56 
+
+37:56 am I misunderstanding something?
+37:58 
+
+37:58 >> No, I think that they're still
+37:60 
+
+37:60 definitely producing errors. Um,
+38:03 
+
+38:03 it's it's interesting. So, it's pretty
+38:07 
+
+38:07 infrequent that the agent at this point
+38:10 
+
+38:10 will produce something that doesn't
+38:11 
+
+38:11 compile for me, which I think is an
+38:13 
+
+38:13 interesting milestone. So, like
+38:15 
+
+38:15 uh I don't know, not that long ago, four
+38:17 
+
+38:17 or five months ago, that was a problem.
+38:19 
+
+38:19 Like getting to a compiling version of
+38:21 
+
+38:21 the thing. It it compiles for me about
+38:23 
+
+38:23 100% of the time right now, which is
+38:25 
+
+38:25 amazing.
+38:26 
+
+38:26 >> Um it produces stuff with bugs and
+38:30 
+
+38:30 errors relatively frequently. I don't
+38:34 
+
+38:34 think it has a good way of closing the
+38:38 
+
+38:38 loop
+38:40 
+
+38:40 >> uh in terms of does the thing work and
+38:43 
+
+38:43 so I think some version of browser use
+38:45 
+
+38:45 or computer use where the agent can not
+38:49 
+
+38:49 only make the change but verify the
+38:52 
+
+38:52 change from the user's perspective not
+38:53 
+
+38:53 the code perspective is pretty
+38:55 
+
+38:55 important.
+38:56 
+
+38:56 >> Are people doing that yet? Yeah, I like
+38:58 
+
+38:58 we're working on stuff like that like
+39:00 
+
+39:00 the the the computer use all of the
+39:03 
+
+39:03 model providers are have like beta
+39:05 
+
+39:05 versions of like computer use APIs and
+39:08 
+
+39:08 um you know browser use for sure
+39:11 
+
+39:11 computer use we're looking at like I I
+39:13 
+
+39:13 would be surprised if this wasn't a
+39:15 
+
+39:15 thing and I I think it becomes even more
+39:17 
+
+39:17 important of a thing pretty soon as more
+39:20 
+
+39:20 work is done remotely because the real
+39:23 
+
+39:23 pain in the ass with the remote work is
+39:24 
+
+39:24 verifying that it works from a user
+39:26 
+
+39:26 perspective.
+39:27 
+
+39:27 So I think that's like a big part of it.
+39:29 
+
+39:29 And then I think if you have that loop,
+39:30 
+
+39:30 it's probably easier to do RL and get to
+39:33 
+
+39:33 things that are behaviorally correct,
+39:35 
+
+39:35 not just like static compile correct.
+39:38 
+
+39:38 >> Yeah. Yeah. Absolutely. Okay. Well,
+39:40 
+
+39:40 looking forward to that. Um and then I
+39:43 
+
+39:43 guess do you think that we're going to
+39:44 
+
+39:44 reach a super intelligence moment here
+39:46 
+
+39:46 like where where the models are better
+39:48 
+
+39:48 at coding than the best human coders?
+39:50 
+
+39:50 >> I have no idea. Um
+39:52 
+
+39:52 >> no idea.
+39:53 
+
+39:53 What I do think is going to happen is I
+39:55 
+
+39:55 I think um I don't know if this is super
+39:57 
+
+39:57 intelligent. I do think like coding will
+39:59 
+
+39:59 be solved by models. Uh and what I what
+40:03 
+
+40:03 I mean by that is like I think that the
+40:05 
+
+40:05 limiting factor that we're going to come
+40:06 
+
+40:06 up against is just like expression of
+40:09 
+
+40:09 intent
+40:10 
+
+40:10 >> from from humans in terms of like
+40:13 
+
+40:13 >> what do you want built? How do you how
+40:15 
+
+40:15 do you build it? Like how do you express
+40:17 
+
+40:17 that clearly? Like English is ambiguous.
+40:19 
+
+40:19 Um,
+40:20 
+
+40:20 >> isn't coding the the truest expression
+40:23 
+
+40:23 of intent though?
+40:24 
+
+40:24 >> Yeah, but that that the problem is we're
+40:26 
+
+40:26 moving from a world where people speak
+40:27 
+
+40:27 in code to one where they just speak in
+40:29 
+
+40:29 English to try to build apps. And so
+40:31 
+
+40:31 >> you we're like reintroducing ambiguity
+40:34 
+
+40:34 because developers, people building apps
+40:37 
+
+40:37 are no longer actually um directly
+40:41 
+
+40:41 expressing what they want. They're going
+40:42 
+
+40:42 through this translation layer of
+40:44 
+
+40:44 telling it to a saying to a model what
+40:46 
+
+40:46 they want and then the model produces
+40:47 
+
+40:47 the code. So, it's an interesting it's
+40:50 
+
+40:50 like an interesting step backwards there
+40:52 
+
+40:52 in a sense, but it's also way way way
+40:54 
+
+40:54 more efficient to do it this way. Um,
+40:57 
+
+40:57 yeah, I think like we'll get to a point
+40:59 
+
+40:59 where you actually don't need to be on
+40:60 
+
+40:60 the frontier to have something that
+41:03 
+
+41:03 produces code that is as well matched to
+41:08 
+
+41:08 a person's intent as possible. Uh, so I
+41:11 
+
+41:11 I and I think that actually is an
+41:12 
+
+41:12 interesting thing from a competitive
+41:14 
+
+41:14 perspective. I wouldn't want to be in
+41:17 
+
+41:17 the API business for coding tokens
+41:21 
+
+41:21 because I do think like at some point
+41:23 
+
+41:23 there's going to you won't you just
+41:25 
+
+41:25 won't need to be on the frontier. You're
+41:26 
+
+41:26 not be able to charge a huge margin on
+41:28 
+
+41:28 top of it which is why I think actually
+41:30 
+
+41:30 you see anthropic and uh open AAI and
+41:34 
+
+41:34 Google going so hard at the application
+41:37 
+
+41:37 layer because there's huge risk at the
+41:39 
+
+41:39 API layer. just for this vertical in
+41:41 
+
+41:41 particular that I think things are
+41:43 
+
+41:43 basically solved within a few years.
+41:46 
+
+41:46 >> Yeah,
+41:46 
+
+41:46 >> I don't know that that's just I'm
+41:47 
+
+41:47 prognosticating.
+41:49 
+
+41:49 >> Well, that's awesome. Do you think that
+41:52 
+
+41:52 people will ever are are people already
+41:54 
+
+41:54 thinking about the amount they spend on
+41:57 
+
+41:57 coding tools being, you know, the
+42:00 
+
+42:00 replacement of what they would be
+42:01 
+
+42:01 spending on, you know, hiring few
+42:04 
+
+42:04 software engineers or are they thinking
+42:06 
+
+42:06 about in their heads as buying a tool
+42:07 
+
+42:07 still?
+42:08 
+
+42:08 So when we talk to enterprises, it is it
+42:12 
+
+42:12 is still viewed as like uh by and large
+42:15 
+
+42:15 is like a productivity boost. Yeah. And
+42:18 
+
+42:18 that's like the way that it's being
+42:19 
+
+42:19 evaluated.
+42:21 
+
+42:21 In fact, it's really hard to measure
+42:23 
+
+42:23 even what like the effectiveness of this
+42:25 
+
+42:25 stuff. And so it tends to fall back to
+42:27 
+
+42:27 subjective measurements from engineers
+42:29 
+
+42:29 like do you feel like you're getting a
+42:30 
+
+42:30 bunch of value out of this or not? Or
+42:32 
+
+42:32 maybe you look at like Dora metrics or
+42:34 
+
+42:34 like it's really hard to like to know.
+42:37 
+
+42:37 So, I don't think that they're viewing
+42:38 
+
+42:38 it yet uh by and large, at least as as
+42:42 
+
+42:42 um labor spend. And I think today if you
+42:45 
+
+42:45 pitch like here's a $200,000 agent to
+42:48 
+
+42:48 replace your $200,000 engineer or
+42:50 
+
+42:50 whatever, they would be like what? Like
+42:51 
+
+42:51 no, like not even not even close. Like
+42:55 
+
+42:55 um so but I I would expect that this
+42:57 
+
+42:57 starts to change.
+42:58 
+
+42:58 >> What do you think will change that?
+42:60 
+
+43:00 >> It's a great question.
+43:02 
+
+43:02 I think it's like in increasing the uh
+43:06 
+
+43:06 automation use cases or may may maybe
+43:08 
+
+43:08 another way of thinking is like if if
+43:10 
+
+43:10 companies start to launch products
+43:12 
+
+43:12 without engineers
+43:14 
+
+43:14 I think that that will be like a major
+43:16 
+
+43:16 proof point and to be clear I don't want
+43:18 
+
+43:18 this to happen. I'm like an engineer at
+43:20 
+
+43:20 heart and and I don't want people losing
+43:22 
+
+43:22 their jobs. But there will be pro
+43:23 
+
+43:23 projects products that are launched
+43:26 
+
+43:26 where there's like very very minimal
+43:27 
+
+43:27 engineering involved and you're going to
+43:30 
+
+43:30 look at the spend for that and be like
+43:31 
+
+43:31 okay this was the cost of delivering the
+43:34 
+
+43:34 product and you're going to be like okay
+43:37 
+
+43:37 uh with and without engineers um what's
+43:40 
+
+43:40 that like? So I think I think you need
+43:42 
+
+43:42 more of that to happen. I don't think
+43:44 
+
+43:44 that's happening very much yet.
+43:46 
+
+43:46 >> H got it. And maybe last question, I'd
+43:50 
+
+43:50 love to chat about how you see coding as
+43:53 
+
+43:53 an art form and therefore, you know,
+43:54 
+
+43:54 your role in the world evolving. You
+43:56 
+
+43:56 wrote this blog post that I loved back
+43:58 
+
+43:58 in 2023, I think. Um, everyone should go
+44:02 
+
+44:02 go give it a read. It's called uh I
+44:04 
+
+44:04 think it's about the future of
+44:05 
+
+44:05 productivity interfaces being ask and
+44:08 
+
+44:08 adjust. Maybe say a word on that
+44:10 
+
+44:10 >> and and how you think, you know, three
+44:13 
+
+44:13 years in how you think that's evolved.
+44:16 
+
+44:16 >> Yeah. So I wrote this like pretty
+44:18 
+
+44:18 shortly after chat GPT came out and we
+44:20 
+
+44:20 started um like trying to deeply
+44:22 
+
+44:22 integrate it into warp. And the the idea
+44:25 
+
+44:25 was this sound really obvious right now
+44:28 
+
+44:28 but the way that like productivity
+44:30 
+
+44:30 interfaces have always worked in the
+44:32 
+
+44:32 past was that that they were geared
+44:34 
+
+44:34 towards hand editing, right? And by hand
+44:36 
+
+44:36 editing, um, it could be like you go
+44:39 
+
+44:39 into Figma and you're like drawing
+44:41 
+
+44:41 vectors or you go into Google Sheets and
+44:44 
+
+44:44 you're entering cells or you go into VS
+44:47 
+
+44:47 Code and you're typing code. And my
+44:50 
+
+44:50 thesis in that article was like that's
+44:53 
+
+44:53 going to change to a point where the
+44:54 
+
+44:54 primary interface is one is a I didn't
+44:57 
+
+44:57 have the word agentic at the time but I
+44:59 
+
+44:59 it was like AI based where you would ask
+45:03 
+
+45:03 uh ask the app to do to make the do the
+45:06 
+
+45:06 thing for you and then you as a um human
+45:10 
+
+45:10 author would be responsible for
+45:13 
+
+45:13 adjusting and adjusting might mean like
+45:17 
+
+45:17 reprompting
+45:18 
+
+45:18 Or it might mean uh free prompting
+45:21 
+
+45:21 failed. It might mean like uh going in
+45:24 
+
+45:24 like treating the prior hand editing
+45:26 
+
+45:26 interface as like like using that to
+45:29 
+
+45:29 like complete your change. And I kind of
+45:31 
+
+45:31 think that's where we're at right now
+45:33 
+
+45:33 for a lot of like especially for coding.
+45:35 
+
+45:35 It's really transitioning to you start
+45:38 
+
+45:38 by asking for something and then you
+45:40 
+
+45:40 adjust it. Um,
+45:43 
+
+45:43 and another thing I said in that
+45:46 
+
+45:46 article, which I don't know if it's
+45:48 
+
+45:48 right or not, was that I was thinking
+45:50 
+
+45:50 about are you going to be able to get
+45:51 
+
+45:51 rid of the adjustment piece? And my
+45:54 
+
+45:54 thesis was that the the area where
+45:57 
+
+45:57 you're going to need the adjustment
+45:58 
+
+45:58 piece the least is in areas where
+46:02 
+
+46:02 there's like a lot of like acceptable
+46:03 
+
+46:03 solutions. So that would be like
+46:05 
+
+46:05 creative domains. You know, if you ask
+46:08 
+
+46:08 for an image of something, there's
+46:09 
+
+46:09 probably a thousand outcome, a thousand
+46:13 
+
+46:13 images that might work for you. And so,
+46:15 
+
+46:15 you can just reprompt, repromp, reprompt
+46:16 
+
+46:16 until you get what you want. Whereas for
+46:18 
+
+46:18 something like code
+46:21 
+
+46:21 um or a spreadsheet where there's one
+46:24 
+
+46:24 thing that needs to be right that you
+46:26 
+
+46:26 would have to keep that ability to like
+46:29 
+
+46:29 get it perfect with a hand editing
+46:31 
+
+46:31 interface. So, that was the thesis. I
+46:32 
+
+46:32 think it's it wasn't bad. I think it's
+46:34 
+
+46:34 held up okay.
+46:35 
+
+46:35 >> Not bad.
+46:36 
+
+46:36 >> Yeah. Um, yeah. I guess you didn't coin
+46:38 
+
+46:38 agentic editing back then. No.
+46:41 
+
+46:41 >> Yeah, the thesis was spot on. Um,
+46:43 
+
+46:43 >> we did. You want to know something we
+46:44 
+
+46:44 coined at Warp?
+46:45 
+
+46:45 >> What'd you coin
+46:46 
+
+46:46 >> which we should have like trademarked is
+46:49 
+
+46:49 agent mode. So, we were the first
+46:51 
+
+46:51 product to launch a branded thing called
+46:54 
+
+46:54 agent mode. And if you like look this up
+46:56 
+
+46:56 on chat GPT and just like ask like where
+46:58 
+
+46:58 did this come from? It came from warp.
+46:60 
+
+46:60 And now that's like a a very common like
+47:04 
+
+47:04 way of describing the feature which I
+47:07 
+
+47:07 wish we were getting um you know some
+47:09 
+
+47:09 kickbacks for that or something.
+47:12 
+
+47:12 >> Totally. I love it. Well, thanks so much
+47:14 
+
+47:14 for coming on to share what you're doing
+47:16 
+
+47:16 um and you know your observations on the
+47:18 
+
+47:18 coding market as a whole. It's such a
+47:20 
+
+47:20 white hot competitive market and and the
+47:22 
+
+47:22 way that you think you know the terminal
+47:24 
+
+47:24 will be the workbench for the future and
+47:25 
+
+47:25 how it's going to evolve. Um it was it
+47:27 
+
+47:27 was awesome uh to to have this chat
+47:29 
+
+47:29 today. Thanks, Zach.
+47:30 
+
+47:30 >> Thanks, Sonia. It's awesome to be here.

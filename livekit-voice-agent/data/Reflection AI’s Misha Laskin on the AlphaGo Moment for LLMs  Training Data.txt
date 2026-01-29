@@ -1,0 +1,624 @@
+00:00 I think someone needs to solve the kind of depth problem the field as a whole I think is or large Labs have been have
+00:07 been really working on on on the breadth that's amazing and there there's a big market for that and um a lot of very
+00:13 useful things that get unlocked but um someone needs to solve the depth problem too
+00:19 [Music]
+00:34 hi everyone welcome to training data today we're hosting Misha lasin CEO and co-founder of reflection AI Misha is a
+00:41 former research scientist at demm mind and his co-founder Yannis was the creator of alphao and rhf lead for
+00:47 Gemini together they are building Universal superhuman agents we'll chat about why we're still
+00:54 far from the promise of AI agents even with best-in-class models today what we need to truly unlock aenta capabilities
+01:01 for llns and what we can learn from those who have built both the most powerful agents in the world like alpago
+01:06 and Alpha zero and the most powerful llms in the world like Gemini so Misha to kick things off we'd
+01:14 love to learn a little bit more about your personal background you were born in Russia moved to Israel when you were
+01:19 one then the United States in Washington state when you were nine your parents
+01:25 were pushing forward the field of technology and research in chemistry and I think that inspired a lot of your love
+01:31 for pushing forward the frontier of technology and getting into the world of AI today as well can you share a little
+01:38 bit more about what inspired you to get into this field and what has inspired you throughout your childhood and
+01:43 adulthood so far um yeah definitely um
+01:49 you know when my parents we immigrated from Russia to Israel it was when the
+01:55 Soviet Union collapsed and they came to Israel basically I mean with with they
+02:00 had I think $300 in their pocket which was then um stolen from them as soon as
+02:06 they landed um because they put down a deposit for an apartment um and uh well
+02:11 didn't that just disappeared they I I I don't even know if there was an apartment um so they and they didn't
+02:18 speak Hebrew um so they decided to kind of pursue um a PhD in chemistry at the
+02:27 Hebrew University of Jerusalem but that's not because it's not because they there was kind of some kind of internal
+02:32 passion for kind of Academia at that time it was more that Israel was giving stiens to Russian immigrants to get
+02:39 further educated um and it was interesting asking my parents about this because they kind of grew to love their
+02:46 craft as they got excellent at it um so I think from them that might be the the
+02:52 thing that kind of I took away most it's not that um it's not that they are
+02:58 particularly like passion about chemistry to start but as they kind of learned about it got curious about it
+03:03 and um really went deeply into it I think they became kind of um masters of their craft and that's something that I
+03:10 found really important myself um moving from there to the
+03:16 states uh well my parents promised that we're moving to this kind of beautiful state with all these mountains um this
+03:23 Washington uh and I remember like retaining the plane flight I mean I brag to all my friends in Israel and you know
+03:28 left I I I was really excited um so yeah we're flying I do see mountains in the
+03:34 distance um but then the plane does a sort of U-turn and uh if many people
+03:40 don't know this about Washington State but it's a kind of half desert and half um you know mountainous and forests
+03:49 and the plane turned into the desert and so I see it kind of Landing in this kind
+03:54 middle of nowhere and I asked my parents like what where at the mountain like well you saw them from the plane um the
+04:01 reason I'm saying this is because uh I basically moved to a very boring Place
+04:06 uh where City there's there's this area in Washington state called the tri cities um and it has some pretty
+04:12 interesting history it the reason it exists is because it was one of the sites for the Manhattan Project so this
+04:18 is where the plutonium was enriched um at this place called the Hanford site which is a sister site to Los Alamos so
+04:26 it's a town that was basically built for that um in the 1940s and is in the middle of nowhere kind of
+04:33 like Los Alamos is and there's not much to do um I remember seeing my first tumble weeds uh like you literally saw
+04:40 tumble weeds kind of rolling across the highway I found myself in a place where I didn't really speak the language that
+04:47 well English um I was in this kind of very rural place that was different from where I grew up didn't have many friends
+04:53 and had a lot of time in my hands and the way I got interested in science into
+04:59 the time it was physics is after you know after getting sort of video games out of my system I
+05:05 got bored again and I found these um fan lectures that my parents had on the fan
+05:10 lectures in physics and the they were so interesting because fan had this way of
+05:17 explaining incredibly complex things in a way that basically a person who's I mean not that educated mathematically at
+05:24 the time um can really understand something fundamental about how the world works and
+05:30 that is probably the thing that um inspired me most um I just got really
+05:35 interested in this idea of understanding how things how things
+05:41 work at this sort of root level and working on problems that are sort of
+05:47 root node problems and that I mean there are all these examples I was reading about um like the invention of the
+05:53 transistor which was invented by Joe Bine a theoretical physicist or how GPS works it turns out you need to
+05:59 understand you you need to make um relativistic calculations um which is
+06:04 coming from Einstein's the special relativity and I wanted to work on things like that so that's why I got
+06:10 into physics I pursued it for a while um got educated in it got a PhD in it and I
+06:15 think maybe the critical bit of information that I had not did not have in my context then was that you don't
+06:22 just want to work on root node problems you want to work on root node problems of your time yeah you want to work on
+06:29 the things that are you're really like can be unlocked now and it's no surprise you know when you're when you're being
+06:35 trained as a physicist you're doing like these really interesting problems and learning very interesting things about
+06:40 how people thought about these you know about physics basically 100 years ago 100 years ago philx was the root node
+06:47 problem of our time and I decid that's that's why I decided to not pursue it professionally I kind
+06:53 of did a 180 and wanted to do something very practical so I started up uh a startup but I was working on that I
+07:01 started noticing deep learning as a field taking off um and in particular
+07:06 alphao like when alphago came out there was something something just felt very
+07:12 profound about it that how how do they get this system that is like a computer
+07:17 to not just perform at a higher level than a human but do so creatively um in
+07:24 alago there was this famous move called move 37 where the well where the neural
+07:30 network made this kind of move that looked like it just looked like a bad move um Lisa doll was really perplexed
+07:35 by it everyone was perplexed by it um it just looked like a mistake and it turned out that 10 moves later this was
+07:42 actually the optimal move to kind of put half AO in a winning position for the game and so you could tell this is not
+07:49 just this is not just a Brute Force thing this is not a thing that is just uh it's obviously I mean the system does
+07:54 a lot of search but it's able to find Creative Solutions that people hadn't
+07:60 thought it before and so that kind of made me feel pretty viscerally that
+08:05 solving agency this was the this was the first real large scale superhuman agent
+08:12 yeah that that seemed profound that's why I got into Ai and and got into AI to
+08:17 build Agents from the first day yeah so there was a kind of nonlinear path where
+08:22 um you know I was an outsider I wasn't really I mean it was competitive back then too and open AI released these
+08:30 requests for research at the time um this maybe 2018 or 19 their requests for
+08:36 research were just things that they wanted other people to work on um I think by the time that I was looking at
+08:41 this list it was actually already stale so I don't think they really cared about those problems but it gave me something concrete to work on and I started making
+08:48 progress against one of these problems um I felt like I was making progress I don't know how much progress I actually
+08:54 made I was kind of peppering a few research scientists from open AI with questions and kind of um I mean
+08:60 effectively called emailing them um until maybe I got you know too annoying and they started you know well I guess
+09:06 they they responded rather I I'd say graciously uh and I built some some
+09:12 relationships there and one of them introduced me to Peter Abel um who is a
+09:18 pi at Berkeley um one of the greatest I think researchers of our time in the
+09:24 field of reinforcement learning and Robotics but his lab kind of does everything they have some of the most impactful generative model research as
+09:30 well the one of the key kind of diffusion paper diffusion model papers um came out of there and honestly got
+09:38 lucky he he took a chance on me and um and brought me into his group he really
+09:44 he had no reason to there after I was on the other side and looking at applicants coming into the group there was really
+09:50 no reason for him to take someone who is not vetted um so he kind of took a chance uh and that I think was my kind
+09:58 foot into the field you and your co-founder yanst have
+10:04 worked on I think some of the most incredible projects out of out of Deep Mind and Google maybe can you even a
+10:11 give the folks here A Taste of some of the projects that you both worked on like Gemini and alago maybe what were
+10:17 the key learnings from each and how they propelled your thinking forward uh to the present day yeah so Giannis was
+10:25 basically the reason I got into AI he was um one of the key engineers on alphago um he was there in Soul when
+10:33 they played Le played against Lisa doll um and and he's actually um you know
+10:41 before alphago he worked on this paper called uh the Deep Q deep Q network is
+10:48 dqn and this was this was actually the first successful agent of the deep
+10:55 learning ERA this was an agent that was able to play um Atari video games uh and
+11:00 it kind of catalyzed this whole field of deep reinforcement learning back then um which was AI systems are autonomously
+11:07 learning to act in I mean mostly video game and Robotics environments but it was the first agent it was kind of a
+11:12 proof point that you can learn you know to act in an environment in a reliable way from just raw sensory
+11:19 inputs coming in this was I think a big unlock that was completely unclear at the time the same way that um think
+11:25 neural networks working on imag net was an unlock in 2012 um and then yeah
+11:30 Giannis worked on alphao and the kind of subsequent line of work there's alphao there Alpha zero there's paper called mu
+11:38 zero and I think that really showed how far you can take this idea like it
+11:43 really scales um relative to the models we have today large language models the
+11:49 like Alo model is actually really small and it was so smart at this one thing I think the key lessons at least for me um
+11:56 from from alphago were kind of encapsulated in this uh famous essay
+12:01 that uh Rich Sutton um this reinforc and learning researcher um I guess kind of a
+12:07 sort of father of a lot of reinforcement learning research uh put forth which is this uh idea of the bitter lesson in
+12:13 that essay he basically says that you want to if
+12:21 you're Building Systems that are based on kind of your internalistic um those things will
+12:28 likely get washed away with systems that kind of just learn on their own and the or or rather systems
+12:35 that leverage compute in a scalable way and he argued that there are two ways to leverage compute one is by learning so
+12:43 it's training um that's when we think of language models today they're leveraging compute mostly through learning by
+12:50 training them on the Internet the other way is search which is leveraging compute to unroll a bunch
+12:58 of plans uh and then pick the best one and alphao
+13:04 is actually both ideas in one I I still think it's the most profound idea in AI
+13:09 that combining learning and search together is the optimal way to leverage
+13:16 compute in a scalable sense and that and those things together are the things that produce a superhuman agent at go
+13:24 the issue with alphago was that it was only good at one thing and I remember
+13:30 being in the field then and it did feel kind of stuck the field of deep reinforcement learning
+13:35 because the goal everyone set out for themselves is to build general agents um
+13:41 superhuman General agents and where the field landed was superhuman very narrow
+13:46 agents and there was no clear path to how do we make them General um because
+13:51 they were so data inefficient that if it takes six billion steps to train on one task then where are you going to get the
+13:59 data to train and you know and all these others and that was the big unlock of the
+14:06 language model era um like one way to think about the internet is or all the
+14:12 data on the Internet is a collection of many tasks like you have like Wikipedia is a task of kind of describing some
+14:19 historical events stack Overflow is a task of Q&A on coding um you can think of the internet as like a massive
+14:25 multitask data set um and that interesting yeah and that the reason we
+14:30 get generality from language models is because it's an it's basically a system that's trained on tons of tasks those
+14:39 tasks aren't particularly let's say directed or or you know there's no notion of reliability or Agency on the
+14:44 internet so it's no surprise that the language models that come out of that aren't particularly good agents they're
+14:50 I mean they're obviously incredible and they do incredible things but one of these fundamental problems in agency is
+14:56 that you need to think over many steps and you have some error rate over each
+15:02 step and that error accumulates that's called error accumulation and so it means if you
+15:08 have you know some percent uh chance that you're wrong the first step they'll
+15:14 compound very quickly over a few steps to the point where it's basically impossible for you to be reliable on a
+15:19 task that is Meaningful um the key thing that I think is missing
+15:25 is that we have language models are systems that leverage learning um they're not
+15:30 yet systems that leverage search or planning in a in a scalable way and so
+15:36 that I think is um kind of the missing piece okay now we have General agents but they're or we have General yeah
+15:43 agents that are not very competent and so you kind of want to move up the competence and the only existence proof
+15:49 for that has been alabo um and it's been done through search I really love that um and the encapsulation of how you just
+15:56 shared that I think that sets the stage wonderfully for reflection can you share a little bit more about the original
+16:02 inspiration this problem space that you're going after and your long-term vision for reflection I mean the
+16:07 original inspiration came very much from working um Yannis and I collaborated
+16:12 very closely on Gemini um Giannis uh led the RF effort um and I led kind reward
+16:19 model training um which was uh kind of a key part of of RF what we were working
+16:24 on and what everyone is working on these language models is you you um in post training you align them for chat so you
+16:30 align them to be good interactive experiences with um Force amend user so
+16:35 that was you know through products like chat GPT or Bard which has now been uh
+16:42 just named Gemini you can these language models like the pre-train ones are very adaptive and so you can if with the
+16:47 right data mix you can adapt them to be like highly interactive um chat Bots and I think our key kind
+16:56 of insight from working on that was that there was nothing specific that was
+17:03 being done for chat it just you know you're just collecting data for chat but if you
+17:09 collect the data for anything for another capability you'd be able to
+17:14 unlock that as well of course it's not so simple a lot of things change uh in the S I mean one key thing is that chat
+17:21 is subjective so the algorithms that you uh train are different um than the algorithms that you would train for
+17:27 something that has kind of an objective like this task was done or not um there
+17:32 are all s sorts of issues but but the main thing was that we think
+17:39 the architectures and models work um a lot of the things that I thought were
+17:44 bottlenecks have been kind of washed away with Compu and scale um like long
+17:50 context lengths is something I thought would be something that would be you need a research breakthrough and now all
+17:56 the players are releasing models with extreme extremely long context lengths relative to what we thought was possible
+18:02 even a year or two ago the methods for training these things and uh aligning them and post
+18:08 training them are pretty stable and it's really um yeah it's a data problem and it's
+18:15 it's a data problem and a problem of how do you enable planning and search on top of these objects and
+18:23 uh we thought we'd move faster
+18:29 against this problem if we did it on our own I think we just wanted to move very quickly against it so you've described
+18:36 agents as kind of the dream both for you and Yannis as researchers but also for
+18:41 reflection can we pause on the word agents for a little bit because now it's become now that it's become the term of 2024 everybody is calling themselves an
+18:48 agent and the word is starting to lose its meaning a little bit and I imagine that you have a probably a more pure
+18:53 definition of what an agent is maybe could you just explain that how do you think about what an agent is and you
+18:60 know when we look at some of the agents that everyone's gotten really excited about recently they're still it seems
+19:06 like they're still very early in terms of being reliable enough to be kind of colleague level true agents so like
+19:13 where do you think we are on that curve what is an agent um and and how do we kind of get to the promised land yeah
+19:20 it's um it's an interesting question since I the term agents has been floating
+19:27 around you know within um or the research Community for for a while I mean I think well since kind of
+19:35 the start of AI uh but I primarily have been thinking more ages in the context of the deep learning era so starting
+19:41 with um dqn and the definition um is is pretty
+19:51 simple in that it's it's an AI system that is able to
+19:57 reason on its own and take well many steps it needs to to accomplish some goal that's been specified to it that's
+20:03 kind of it and now the way that goal is specified has changed over time in the
+20:09 Deep reinforcement learning era the goal was usually specified through a reward function so for alphao it's whether you
+20:15 won the game of go or not there's no no one wrote like go win the game of Go like via text uh so that's how people
+20:24 usually thought about agents they thought of Agents um as things that are optimized a reward function um but
+20:32 there's a whole area of research uh even then before language models on uh goal conditioned agents so these would be um
+20:39 either in robotics or video games or you set a goal for the robot which could be you give it an image of um you know an
+20:46 apple having been moved somewhere and you ask it to kind of reproduce that image and it has to act on the world and
+20:53 pick up an apple and move it somewhere in order to accomplish the goal so as a short definition it's a AI systems that
+20:59 have to act in an environment to accomplish some goal that's an agent and then I guess as a followup if
+21:06 if you take for example coding agents as one potential domain of Agents where there's been a lot of activity recently
+21:13 um you could say the goal is you know create a calculator app for me yeah um
+21:19 and the agent has to go and accomplish the task when I look at what you know s agent and what uh what Devon have done
+21:26 um is that in your mind is that agent reasoning and does kind of scaling that up get us to the promised land or you
+21:33 think or do you think there are kind of different approaches that you need more on the RL side or more on um whatever
+21:39 other techniques you might need to to use to get us to the promised land because I think those agents are still in the
+21:45 134% kind of task completion rate uh range and I'm curious how we get them to
+21:51 99% there they're definitely by the definition of Agents these These are agents they're just on a spectrum of
+21:56 capability maybe not um at a high level of reliability yet um I think the way
+22:02 most people think about agents today in context of language models is prompted
+22:08 agents so you take a model you prompt it or you set up some flow of several
+22:14 prompts to get it to accomplish a task that allows anyone to kind of take a language model and take it from zero to
+22:21 something that's kind of working somewhere um so I think that's quite interesting I think it can only go so
+22:26 far so this this I think is actually like a very I mean this is a kind of example
+22:33 of what I think the bitter lesson would apply to because prompting things and
+22:38 kind of really directing them to go in like these specific ways that's exactly the kinds of heuristics that we have
+22:44 that we're baking into these models to kind of try to achieve higher intelligence um I mean every major
+22:50 advance in um agency since the Deep learning era um has been kind of showing
+22:56 that with learning and uh search a lot of that gets washed away I think
+23:03 that the purpose of a prompt is to specify the goal so you'll always need a
+23:08 prompt you always need to tell an agent what to do but if once you start
+23:15 deviating from that and the purpose of the prompt is actually to put the agent on Rails and and you know where you're
+23:21 kind of doing the thinking for it right you're kind of telling it okay now just go here and do this thing um that I
+23:27 think is going to disappear um I think that's a local thing that's happening today um future systems I don't think
+23:35 we'll have that so the key is that the thinking and the planning needs to happen in the AI system not in the The
+23:40 Prompt layer in order to kind of not hit a wall I think you want to offload as much as possible um to yeah to the AI
+23:48 system itself again these these language models have not been they were never
+23:53 trained for agency they were trained for chat interaction and predicting things on the internet so it's it's almost a
+23:59 miracle that you can prompt your way to getting something that kind of works but what's interesting is that once you're
+24:06 able to prompt your way to something that kind of works that's actually the best place to start for a reinforcement
+24:11 learning algorithm a reinforcement learning algorithm all it does is it reinforces good behavior and it kind of
+24:18 downs bad behavior if you have an agent that is doing zero that is just doing nothing then there's no good behavior to
+24:24 upway and so the algorithm doesn't work this is known as a sparse reward problem if you not hitting your reward like if
+24:30 you're not accomplishing your task then ever then there's nothing to learn from but if you've prompted your way to an
+24:37 agent that is kind of working like you knowu agent or something like this it's getting 133% or
+24:43 something like this then you have something that is like minimally capable where you can reinforce really good
+24:50 behavior the challenge becomes a data challenge of where do you where do you get the set of prompts to train on um
+24:58 where do you get the environment to run these things through well I guess Su
+25:03 Asian does come with an environment but for many problems like you need to think about that um and then perhaps the
+25:11 biggest challenge is how do you verify that a thing is been done correctly or not in a scalable way and if you can
+25:18 solve B see where where the tasks come from which usually that's through products that's solvable um what
+25:25 environment you run them through uh what algorithm use but it's really kind of what environment you run them through
+25:32 and then critically how do you verify if a thing has been done correctly or not um in a scalable away I think that's a
+25:37 recipe for agency I think that gets to the Crux of the problem space in AI
+25:43 agents today um just to set the stage a little bit for the problem that reflection is going after what do you
+25:49 think is the current state of the market broadly in AI agents I think many assume
+25:54 that we are capable of more than we actually are with the models that exist today um so what do you think the problem is
+26:01 and what do you think is um uh why do you think the current attempts around AI
+26:07 agents are failing us today one way to categorize or classify what it means
+26:15 to be a general agent um and maybe I'll use the term Universal agent since I'll
+26:21 use the term generality to apply to bread so a universal agent needs to be abroad a very general agent that can do
+26:27 many things can handle many inputs but it also needs to have depth in the kind
+26:33 of task complexity it can achieve and so examples are alphao is probably the
+26:40 deepest agent that we that has ever been built um it can do one task so not not that useful um it can play go but not
+26:48 Tic Tac Toe yeah uh the current systems language model
+26:53 systems like Gemini Claude um chat GPT the GPT series of
+26:59 models lean the other way they're very broad they're not very capable in a depth-wise sense they're extremely
+27:05 impressive and um capable broadly and I think that's one of the things that's
+27:11 been honestly miraculous like yeah as I said the field felt like we did not have
+27:19 an answer to generality and then these these objects came along but now we're in the opposite end
+27:26 of the spectrum where we have I think more or less drisk um as a
+27:32 field progress towards breadth um that's especially evident with the latest
+27:38 generations of models like GPD 40 and the latest family of Gemini models that
+27:43 are multimodal in the sense that they just understand other modalities at the
+27:49 same base layer that they understand language you don't need to translate one modality into language so that's I would call that
+27:55 breath um but nowhere along this process where things trained for depth there's
+28:00 there's no the internet doesn't have real data around how to kind of think
+28:07 sequentially um the way people try to solve this problem is like work on data sets that might have this structure and
+28:14 hope it generalizes so math data sets coding data sets um kind of what people
+28:20 refer to reasoning which usually is reasoning along lines of can you solve a mathematical problem
+28:26 um but that's still not really addressing like the the problem headon I
+28:33 think we need methods that you can take recipes let's say they're General in that you can take any task category um
+28:40 have a bunch of prompts for it in ter for for your training data um and make a
+28:48 language model kind of iteratively capable more capable on those things um
+28:54 I think someone needs to solve the kind of depth problem um and the field as a
+28:60 whole I think is or large Labs have been have been really working on on on
+29:05 the breadth that see well that's amazing and there there's a big market for that and um a lot of very
+29:12 useful things that get unlocked but um someone needs to solve the depth problem too I think that takes us really nicely
+29:18 into the unique Insight that you and Yannis have from working on alphago Alpha zero and on Gemini um and the
+29:26 importance of post trainining and and data can you share a little bit more about how those experiences have shaped
+29:33 the unique perspective that you have that gets us to the unlock with the gentic capabilities one of the things I found
+29:40 very surprising about language models is how close they are
+29:46 to you know how often times even if they're not working on something that you want them to they're actually quite
+29:52 close they feel like a nudg way um they feel like they need to be grounded in the thing a bit better and that's I
+29:59 think that was the Insight that led them to be good in chat like you could play with them and they're yeah a bit unreliable and they kind of go off the
+30:06 rail sometimes but they're almost good chat companions yeah and
+30:11 so then the re there there's a recipe for how do you take a pre-trained language model and make it a reliable
+30:17 chatbot so by reliability there it's just a the way you measure that is with human preferences do people interacting
+30:25 with this chat bot preferred over other chat Bots or other versions of it the previous versions of itself so if the
+30:31 current version is much more preferred than the you know last few iterations ago then you know you made
+30:37 progress and that progress is made by collecting data for it so it's
+30:44 collecting data for the kind of you know queries that users um input into a chat
+30:50 box the outputs that the models provide and effect an effective ranking between
+30:56 those outputs so that you push um the model to to um you know index over on
+31:02 the kind of more preferred outputs so when we say ranking where does that ranking come from um well it comes from
+31:08 humans so there are either human labelers or it's something that's embedded into the product you sometimes
+31:13 might see thumbs up or thumbs down in um chat GPT um it's harvesting your thumbs
+31:19 to kind of know what your what your preference is uh and that data is used to kind of align the model with the user
+31:26 preferences that's a very general algorithm that's a that's a reinforcement learning algorithm and that's why it's called reinforcement
+31:31 learning from Human feedback or rhf you're just uping the things that human
+31:37 feedback expressing preferences for there's no reason why the same approach
+31:42 um would not be possible for for enabling more reliable
+31:48 agency there's a whole sequence of pro other problems you need to solve I think
+31:54 that's what make the reason this is so hard is because as soon as you go into kind of agent territory you have more
+32:01 than just the language outputs you have the tools that they interact with and you know the tools being suppose you
+32:06 wanted to send an email or like work in an IDE or like anything that an agent does that does in an environment and
+32:12 that requires tools that requires the environment and everyone who's deploying agents is deploying agents in different
+32:19 environments and so there's a challenge of how do you integrate with the with environments and how do you onboard
+32:26 agency onto them so I think that's why it's a bit of a schlep if you get into
+32:31 this kind of line of work and you you have to be careful about the environments and
+32:38 kind of and yeah the way you structure it because you you don't want to overfit to some you know some particular like
+32:44 environment but conceptually it looks very similar to aligning a model for chat um there are
+32:51 just some more integration challenges that need to be solved along the way since you view Alpha go as kind like
+32:58 the Pinnacle of building an agent that was you know truly capable and I imagine you're trying to usher in an alphao
+33:05 moment uh with llms what do you think are the differences like to me you know
+33:11 with gameplay you have a very clear reward function you have the ability to selfplay
+33:16 like is doing kind of the reinforcement learning from Human feedback do you think that's enough to kind of get us to
+33:21 an alphao moment in LMS or like I guess how should I think about the the differences here I think what you said
+33:29 around not having a ground truth reward is a key and maybe the key thing um what
+33:36 we learned from the previous era of reinforcement learning research is that if you have a ground truth reward you're
+33:43 kind of guaranteed success like that's kind of um there have been so many very
+33:49 impressive um projects that showed this at really unprecedented scale I mean you
+33:54 think aside from alphao there was opening eyes DOTA 5 or yeah Alpha star and um let's say Alpha star and doto 5
+34:01 are a bit more niche in the sense that you kind of have to play those games to understand but as a former Starcraft
+34:07 player I was I still am completely blown away by by Alpha star like the
+34:14 strategies that the AI discovered were it it just looked like a very smart like a smarter than us alien game like upon
+34:21 the Earth decided to play this game and completely outcompeted us
+34:27 um so that's due to the existence of um a number of things but a ground truth
+34:32 reward is really like is extremely important for tightening that behavior um
+34:39 now both with human preferences and for agency um we don't have we these are
+34:45 very general objects and we don't have ground truth rewards for whether something is accomplished or not like even for a coding task what's the ground
+34:51 truth of whether this was done the right way like it could pass some unit tests but it can still be wrong so it's a
+34:57 really hard problem um and I think it's the it's I think it's the fundamental
+35:04 problem for agency um there are others as well but this is kind of the the big one um the way you get around this
+35:12 problem for chat um this again through rlf well you train reward models um
+35:20 reward models are it's a language model that predicts whether something was done or not
+35:26 correctly the challenge with that so first it works well um the challenge
+35:31 with that is that when you don't in the absence of a ground truth when you have this kind of noisy thing that it can be
+35:37 wrong your policy or kind basically the agent
+35:43 um quickly gets smart enough where it finds holes in the reward model and exploits them um to give a concrete
+35:50 example in chat suppose you noticed that your chatbot was outputting um you know
+35:57 was outputting some let's say harmful content or uh like there are some topics
+36:03 that you don't want it to talk about because they might be sensitive and so you put in some data into your data mix saying like where it's examples of the
+36:09 chatbot kind of ignoring or not ignoring but saying I'm sorry as a language model I cannot answer this what can happen is
+36:15 that okay you now train a reward model against this and suppose in your data mix you really
+36:21 you only put in like uh data points that you know showed showed instances of like this
+36:28 kind of um this happening but not instances of um a chat bot taking
+36:35 something like kind of sensitive and actually like you know answering it what that means is that the reward model
+36:40 could think that it's actually like a good thing when you just don't answer the user's query ever because I've only
+36:46 seen positive use cases of that and when you train against that the policy with language model will at some point get
+36:54 smart enough and discover that this reward model gives me high W whenever I just don't answer whenever I punt the
+37:01 question and it can collapse into a language model that just never answers your questions
+37:08 and this this is why it's it's it's very finicky and it's very difficult for this for this reason um I'm sure a lot of
+37:16 users who have interact with with chat GPT or or gemini or these kinds of
+37:21 models like probably through through interacting with them found sometimes that they kind of degrade and they all
+37:28 of a sudden like don't answer questions you know as often as they used to um get slightly worse at something or you know
+37:36 are politically biased in some way and I think a lot of that is well it's
+37:41 artifacts of the data but the art the but the artifacts and the data get Amplified by by bad reward functions
+37:49 so that is the hardest problem I think if I view the rough kind of large model
+37:55 training pipeline or large AI system training pipeline as pre-training and posttraining
+38:01 um I kind of think like pre-training seems largely like a solved like we're
+38:06 in the you know the techniques are solved and we're just kind of in the the race to scale moment on the pre-training
+38:12 side post trining still feels a little bit like in the kind of research phase of Market where people are still
+38:18 figuring out what techniques will work in a general way I'm curious if you agree with that and in an ideal State
+38:25 like what is pre-training responsible for doing how should we as lay men think about it um and and what is post
+38:31 training uh responsible for accomplishing and and how should we think about that from the perspective of a 5-year-old yeah
+38:41 um I would I would generally agree with that statement that um pre-training has
+38:46 become there are a lot of details that need to get right and it's and it's by no means easy so it's it's a very hard
+38:52 Endeavor um but it's a better understood Endeavor at this point uh and
+38:59 one way that I think about pre-training um is I actually think thinking about it
+39:06 through the lens of something like alphago um is is quite simple and clear because
+39:13 it kind of you know rather than thinking about this massive internet thing you just think about a very clear setting
+39:19 which is clean setting which is this game um you can think about the pre alphago has two phases it has an
+39:25 imitation learning phase where um a neural network imitates a bunch of um expert um amateur like expert um go
+39:34 players and then it has this free enforcement learning phase and you can think about pre-training as the
+39:39 imitation learning phase of alphao you're just kind of acquiring the basic skill of learning to play the game
+39:45 you're not maybe your your n network then is not the best in the world um but it's pretty good it goes from zero to
+39:51 pretty good and pre-training for a language model is getting going from zero to pretty good on everything
+39:58 um which is why it's so powerful post trining
+40:03 is I think about it as hardening good behavior what that means is with alphago
+40:09 you start off with you did imitation learning you start off at a place where you have a neural network that can do
+40:15 something it can I mean it can play a game pretty well then you apply this other recipe to it which is
+40:21 reinforcement learning um which is then the network starts generating you know its own plans and um kind of acting
+40:28 through the game getting feedback and that good and and basically good actions
+40:33 get reinforced that is I would say that that's post training and you can think about from a chat perspective you're
+40:41 hardening the model like you the good behavior along the chat axis um so it's
+40:48 it's actually quite interesting that the highle recipe for training alphago and
+40:53 for training Gemini is actually the same you have the citation learning phase and then you have a reinforcement learning
+40:59 phase um the reinforcement learning phase in Alpha go is just much more sophisticated than what we have now and
+41:06 the reason comes back to um reward models if you have a reward model that
+41:12 is you know that is fairly noisy and exploit and exploitable then there's only so much work there's
+41:20 only so much you can do before the policy gets smart and finds a way to trick it and so even if you through the
+41:26 fanciest like RL algorithm M it like and Monte Carlo research with alphao um it
+41:32 may not be that effective because it kind of uh um it collapses into this
+41:38 kind of a degenerate state where the policies hack the reward model before it could even do any interesting search
+41:43 like suppose you're like thinking about like if you're playing chess and you're thinking about what to do multiple moves
+41:49 ahead but your kind of judgment is really bad at every move then then
+41:54 there's no like there's no point of planning 10 moves ahead um and I think that's where we are with rhf today
+42:01 there's this wonderful paper that I think is very over um or underrated um
+42:08 called scaling laws for reward model over optimization this is a paper from
+42:13 open AI studying this phenomenon um and what's interesting about I mean a number
+42:19 of things but it showed that this phenomenon happens at all scales and I mean you
+42:25 tried a couple of different RL HF algorithms and it happens for at all scales for all algorithms that were
+42:30 tried in that paper and I think it's such an interesting paper because it's
+42:36 the it's the kind of fundamental problem of post training that's it's it's that paper um yeah just to put pull on the
+42:43 thread a little bit if you follow the results from alpha zero though then we may not need pre-training at all is that
+42:49 is that a fair conclusion of of what to make of this um I think that the at least my
+42:58 mental model is that the alpha Go part the imitation learning is is is necessary um more from a practicality
+43:06 standpoint um when when we went from or deep mind went from alphao to Alpha star
+43:14 um there was no Alpha zero uh Alpha zero of alpha star there's no Alpha star zero
+43:19 um that was you know um released after that or anything like this and Alpha
+43:26 Star had like a a big part of it was imitation learning across a lot of games
+43:31 I think with alphago it was like this kind of special place where you have uh you don't only have a zero sum game but
+43:38 you can get to the end of that game like fairly quickly and so it's again like you can get that feedback about whether
+43:44 what you did um yeah was right or not got it okay so it's just way too unconstrained of a problem to throw it
+43:50 out generally yeah I think in practice like yeah Alpha zero would work
+43:55 generally for everything if we had um ground truth reward functions for everything but because we don't um you
+44:02 need to you need to do the imitation learning piece as almost this is just like a practical like we need to get
+44:09 into the game somehow you described earlier the importance from a technical perspective of having an agent in its
+44:15 environment also from a product distribution and uh getting the product and user hands perspectives it's
+44:22 important to think about what the right task categories are for users to First interact with the most powerful agents
+44:28 what are some of the task categories that are on your mind and what do you imagine are some of the possibilities
+44:34 that users could use these in their daily workflow if you want to make progress along the depth axis um you could go for
+44:43 like alphao first which is like a really hard thing um or you could kind of expand concentrically in the sort of
+44:49 complexity that have the tasks you're able to handle and we are focused on on kind of enabling depth but in this sort
+44:55 of concentric way and we care a lot about having a general
+45:00 recipe that is not that does not kind of um you know
+45:07 inherit heuristics that are special to some tasks so from a research perspective
+45:13 we we're building General recipes for this now you have to ground those
+45:19 recipes in something to show progress and at least for us it's important to
+45:24 show diversity of environments and so we're thinking about a number of
+45:32 different types of Agents um web agents um coding agents um I have OS computer agents um
+45:42 the important thing for us is to just show that uh you can have a general recipe for
+45:50 enabling agency Switching gears a little bit you've attracted a seller team already who else are you looking to
+45:57 recruit on your team yeah we've been fortunate to um be able to draw um some
+46:05 Talent from the top AI Labs um in the
+46:10 industry uh and I think a lot of that has to do with
+46:17 um well with both of the work that Giannis and I did um but definitely you
+46:23 know I think a lot of credit goes to Giannis and his reputation you know that there there is this uh I was watching
+46:29 the Michael Jordan documentary and uh Michael Jordan was well lot of the
+46:35 reasons he was so effective is because he was such an incredible kind of individual like basically contributor to
+46:41 the game U maybe the best um that he really inspired people on his team to
+46:48 get to his level even if they couldn't get there uh and Yannis has this effect on people
+46:56 like uh I worked very close with him on on Gemini and he had that effect on me uh I don't know if I ever got to yest
+47:02 level uh but I aspired to and um I definitely became a much better engineer
+47:10 and researcher through the process and I think that's uh a lot of the the the draw um is that
+47:17 you know you get to learn a lot from him we're primarily continuing to look for
+47:23 so we're not hiring out um quickly we're hiring out I think um more
+47:31 methodically uh we're looking for yeah other definitely interested in other uh
+47:38 researchers uh and Engineers joining joining us on this Mission I'd say a commonality between
+47:44 everyone who's joined is um we we all we're all very hungry maybe that's uh
+47:50 how I put it you know we could have y honest and I could have stayed and tried um pushing agents um you know Deep Mind
+47:58 and as I said I think you know the reason we decided to do it in our own way is because we we think we can move
+48:06 quickly and much faster against the Skoal and some of this urgencies is driven by a a real belief that we are we
+48:15 are three or so years away from something that resembles a a digital AI um and by
+48:24 that that's um that's what I've been referring to as universal and Su has both this kind of bre and depth of
+48:31 knowledge and that means we're actually on a very accelerated timeline um yeah you're you
+48:39 know few months in you're kind of 5% away from uh from hitting that timeline
+48:46 and maybe some of this is also driven by how quickly alphago went um
+48:52 from experts in the field doubting this is possible yeah kind of
+48:58 decades human level or like expert human level gopl was decades away and how
+49:04 effectively they were able to solve that problem within months I think we're seeing a similar kind of acceleration
+49:11 happening with language models there's I think one Viewpoint you can have is that
+49:16 we've saturated um a lot of what we can we're on this sort of uh at the tail end
+49:22 of an S curve and we don't we don't view it that way we think we're still we're still on an exponential part
+49:30 of the reason is that these things are so bulky and slow to train that there's
+49:35 no way um collectively as a you know as a field of researchers and Engineers
+49:42 that we've optimized it um yet like if it takes a few months to run and like a
+49:49 few months and a few billion dollars to run the biggest model then how many experiments can you really run so
+49:57 yeah we we kind of see things going at an an accelerated Pace um and we think
+50:04 solving the depth and reliability problem is something that is not
+50:10 getting the kind of attention it needs like there there are groups that are following this as I
+50:17 would call it more like side quests Within These big companies um but I think you need a player that is um
+50:23 focused entirely on it to to solve this problem yeah I love the the framing of
+50:28 main quest versus side quest and I love the hunger and the zero complacency and
+50:34 impatience in a healthy way that you and the rest of the team have and the only other thing I'd highlight is the revered
+50:40 reputation that you describe for Giannis with inspiring and motivating other people I think is true for you and
+50:47 Yannis from everyone we've known we know at Deep Mind so 3 years until I have an
+50:52 agent that will write my memos for me hopefully last I think three years yeah
+50:57 I think the memos might be coming you know sooner because that was one of my burning questions is this like decades
+51:03 away is this months away it sounds like you're closer to the you know months or
+51:09 small number of years away I think small number of years uh wow yeah
+51:14 it yeah it's honestly kind of alarming I think the speed at which the the field is moving
+51:20 um and part of yeah part of depth and reliability it's also like it is I mean
+51:28 reliability is safety um so you want to you want these systems to be safe I
+51:34 think that there's a lot of very interesting research in terms of um there's a recent paper from anthropic on
+51:41 kind of mechanistic interpretability and that whole line of work is really interesting and I think starting to kind
+51:46 of get to the point where um there's utility um in it as well in terms of
+51:52 finding like neurons in the model that are like you know lying neurons or you
+51:58 know that you can kind of suppress but to me safety is is is reliability if
+52:05 the thing is kind of running around your computer breaking all sorts of things that's an unsafe system um maybe it's
+52:12 like a utilitarian safety like you just want these things to work and uh and do what you intended them but what you ask
+52:19 them to do so I have a few years to find another hobby other than my memo writing then yeah well or maybe you'll just have
+52:26 an army of uh AI interns that um you know will do all the research work for
+52:31 you can't wait um wrapping up our topic around
+52:37 reflection if everything goes right what is your dream for reflection I think the there are two
+52:45 angles at this question one is we're we're working on this because this is
+52:51 the kind of scientific root node problem of our time we're scientists
+52:57 that's that's why we're so kind of interested in committed it and um it's really there's a world where you get to
+53:04 be part of one of the most exciting Journeys in science ever made and and
+53:10 you've you know accomplished your goal of building Universal agent you have highly safe reliable uh digital agents
+53:17 running around on your computer um basically doing doing things
+53:23 that tedious work that you don't necessarily want to do you kind of I think rather than people kind of going
+53:30 and uh you know spending less time working I I I I
+53:35 don't think the human need or like the human need to be productive and to
+53:41 contribute is going to change I just think the capacity of each human's ability to produce and you
+53:48 know impact the world is is going to dramatically increase as you know in in my line of work there as a researcher
+53:54 there's so many things that um I spend time on that a smarter AI could help me
+53:60 out with to make faster progress towards towards our own goal I mean this is kind of a circular but if we had something
+54:07 close to a digital AGI we'd get much faster to solving the problem digital AGI that's one angle I think
+54:15 the the other angle is from I guess that I guess we kind of
+54:20 moved on to the other angle it's from the user perspective of a lot of the things that we do on a
+54:26 on a compter computer are you know are maybe you can think
+54:32 about like computer is like the first digital tool that we've been introduced to as uh you know um as people um in the
+54:39 same way that there were you know Hammers and uh chisels and sickles that
+54:47 that people used and I think we're moving towards the kind of layer beyond that
+54:53 where instead of you having to kind of learn learn how to use all these tools with great precision and spend all your
+54:59 time on this which actually is kind of time taken away from achieving you know
+55:05 whatever personal goals people have um that you kind of have these um
+55:10 incredibly helpful um AI agents that can help you bring kind of any goal
+55:19 that you have um to fruition and I think it's very exciting because I think the kind of ambition of
+55:26 our individual goals is going is it's already increasing um you know in this local sense like a software engineer can
+55:32 get a lot more done today with these tools but this is just a beginning and I think
+55:38 we'll yeah we'll be able to really set dramatically more ambitious
+55:45 goals for ourselves and for kind of these sorts of things we want to achieve um simply because we can offload a lot
+55:54 of the work that's needed to get there to to the system so these are some things I'm really excited
+56:01 about we'll close it out with a few questions that we like to ask everybody about uh the state of AI um first
+56:07 question what are you most excited about an AI in your field or or more broadly in the next one year five years and 10
+56:17 years I think there are a number of things that the the one the local one
+56:23 that comes to mind is because the the paper is fresh is a uh kind of work on mechanistic interpretability in
+56:29 that I mean these models are largely black boxes and
+56:35 um it's unclear it's really unclear how to study them as like what's the Neuroscience of
+56:41 language models like if you think about them as brains yeah and this seems like a really interesting line of work that
+56:50 um is now starting to see kind of signs of um well sign signs of it working
+56:56 Beyond toy settings yeah so maybe like the sort of Neuroscience of language models is I think kind of a really
+57:02 interesting awesome feel in AI to get into and and more generally you know if if I was in in
+57:09 Academia um I'd probably be looking a lot at the science of AI so this is the
+57:15 Neuroscience of AI is is one thing but um there are all sorts of all sorts of
+57:21 things one can um investigate in terms of uh well what really determined the
+57:26 scaling laws that these models have um both from a theoretical perspective and
+57:32 from an empirical perspective how you change data mixes maybe kind of taking a step back
+57:39 we're um we're basically in the like equivalent of what the late 1800s looked
+57:46 like for physics um electricity was being discovered um no one knew why it
+57:53 worked or how um there's a lot of like there were a lot of empirical results um
+57:59 but there was no kind of theory behind it which just meant that they were not
+58:04 very well understood and then this like very rich set of um theoretical models
+58:10 were developed that were very simple to um understand these phenomena and that
+58:17 gave rise to actually basically the next wave of um empirical breakthroughs um
+58:24 and so I think the science of of AI is kind of in in that state right now and
+58:29 I'm very excited to see where that goes so interesting um who do you admire most in the world of
+58:36 AI I think most people uh when getting this question or or some people might
+58:42 kind of put someone yeah I Me Maybe I I'll I'll take
+58:49 that back and say like I want to emphasize um people that I admire um
+58:56 based on having work with them and kind of see how they operate because um through my last kind of you know number
+59:03 of years in AI I think yeah there are a handful of people like this who' inspired me um
+59:11 and one of them is uh so Peter AEL is certainly one of
+59:18 them um he is I think I've never seen anyone I
+59:26 think um almost operate as efficiently as Peter that was something that um and and to date like since meeting him and
+59:34 to date like uh I think there's a sort of um you think a lot about research as a creative Pursuit oftentimes and I
+59:43 think what I learned from Peter is just sort of operational competence and
+59:48 efficiency around this um he's very creative as well and like his lab does a lot of creative work but I think it's
+59:55 brought like these things are very hard and they need to be pushed hard and with
+60:01 with great focus and he he ran the his lab like it's the
+60:07 tightest trip that I've ever been on uh and really helped Focus like um all all
+60:15 the projects and so yeah I think I I look up to him a lot both in terms of
+60:20 his um the the the work that he's done obviously it's it's remarkably um
+60:27 Cross Field yeah like he's both done well incredible breakthrough work in reinforcement learning and un supervised
+60:34 learning generative modeling and and a lot of it has been I think from kind of recognizing and um enabling like Talent
+60:41 yeah um so there was very much it was like the the group was it was a bunch of
+60:48 independent thinkers students phds and um people are kind
+60:53 of pursuing like what was interesting to them but I the way I saw like Peter is a
+60:59 sort of like great amplifier yeah like he kind of helped people amplify and focus on the thing that really mattered
+61:05 um within within their Pursuit I think in a few other people that uh come to
+61:12 mind uh so my my manager Deep Mind his name um is Vlad mini he's um yeah I
+61:21 think also like a very an incredible very creative scientist he was um first
+61:27 author of The Deep qn paper and then there's actually there were actually two papers at the time there was a like this um a2c a3c papers these are these are
+61:34 basically the two algorithms that defined reinforcement learning um and he um deep reinforcement learning and he
+61:41 kind of really um pioneered both yeah I think his strength is like uh he
+61:48 was extremely kind and people oriented um very humble despite his accomplishments
+61:54 um Jann as well I mean definitely I mean jannis has the the Michael Jordan effect I
+62:01 think he really yeah he just you just wanted to be the best you could be when you worked
+62:07 with him and their our early TR team was like quite small um and people pushed
+62:12 really hard in order to like largely I think inspired by by him yeah these are
+62:18 some people I I I really look up to um thank you for sharing that um it's so
+62:24 interesting to hear you say about everyone uh and one comment on Peter Beal uh I tell him all the time that
+62:30 he's also just created a mafia of vanders in the last couple of years and it's probably because he's taught them
+62:36 how to do many things and there's a self- selection that's naturally happening the creative thinkers and the
+62:42 independent thinkers who come into his lab but he's also taught them a lot about how to run a tight ship and how to focus incredibly well um so I'm sure
+62:49 that doesn't come uh uh without intention on his part maybe last question any advice you have for founder
+62:56 is building an AI you are you're um just starting your journey right now and I'm sure you've uh asked others for a lot of
+63:03 advice what what advice would you pass on to the next Generation I think one I think I'll be
+63:08 in a better position to answer that question in a few years in a way um that is much more meaningful um but I'll
+63:15 actually provide a piece of advice that I lived through through my previous startup um which has nothing to do with
+63:23 AI to to just work on things that are like internally like really matter to
+63:28 you um in a way that is um almost independent from what's happening around you like in a way
+63:35 that when things go bad like it's still interesting to you like it's kind of um there's just some fundamental drive
+63:41 around this problem that independent of everything else that's happening is just really interesting to you um maybe I say
+63:48 that about AI is because there's this it's such a interesting highly
+63:54 capable cool technology and so there's this sort of I think um appeal of taking
+63:60 it and just kind of like oh let's just see what what we can do um I think you inevitably find yourself
+64:07 in a hard place without having a very strong internal Compass of independently
+64:12 of AI the quot is it's important to you and what you want to do and so having been in that position
+64:19 previously uh that's kind of what I done what I would have done differently and
+64:24 what I would advise to do I really love that the line that I like to think about is um play in your own stadium and don't
+64:31 get distracted by The Glitz and glamour of someone else's Stadium you need that internal drive and grit and obsession
+64:39 with the problem to get you through all the tough times yeah and and I think there are things that come with it like
+64:45 if you really care about some problem like you will care about the customers who you're solving the problem for
+64:52 like like having customers that you don't care about is like a terrible place to be so um I think yeah it has to
+64:59 come and and it's not like I I think it's kind of actually hard to control like who you care and who you don't care about that's like a personal thing yeah
+65:06 so you can't it's actually really hard to force yourself to like care about something out of necessity if it's kind
+65:12 of not aligned with something inside you already so no more shopping and
+65:18 retailers for Misha yeah so you know I was uh building software for kind of inventory prediction for retailers and
+65:25 for some people you know they' really care about that problem like there's a reason they
+65:31 would they've kind of seen that problem they've um you know maybe if you're a merchant at like a at you know one of
+65:36 these retail companies you've really felt it viscerally um and in my case you
+65:43 know um I hadn't it was like we were trying to make a you know just trying to
+65:48 build build a revenue generating business almost kind of independent of like an internal um
+65:54 Compass Misha thank thank you so much for joining us today um you are working on the most ambitious problem of our
+66:01 time I love your framing of um the root node problem of our time and I think
+66:07 that is today agents um and it's very clear that both your and giannis's
+66:12 experiences make you the very best team at what you do um Giannis obviously from a um rlf perspective and yours um from a
+66:21 reward model training perspective um and the insights and experiences that you've both had
+66:26 working on Alpha go Alpha zero and Gemini um we're so excited for the future reflection yeah thank you for
+66:33 having me [Music]
+66:47 [Music]

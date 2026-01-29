@@ -1,0 +1,4141 @@
+00:00 the things that are brittle right now
+00:03 
+
+00:03 where you're like oh my God like this is
+00:04 
+
+00:04 a little too expensive or it's a little
+00:06 
+
+00:06 too fragile for me to use like all of
+00:08 
+
+00:08 that gets better like it'll get cheaper
+00:10 
+
+00:10 and like you know things will become
+00:11 
+
+00:11 less fragile and then like more
+00:14 
+
+00:14 complicated things will become possible
+00:16 
+
+00:16 like that that is the story of each
+00:18 
+
+00:18 generation in these models as we've
+00:20 
+
+00:20 scaled up
+00:23 
+
+00:23 [Music]
+00:38 
+
+00:38 on any given day Microsoft may be the
+00:40 
+
+00:40 most valuable company in the world and
+00:42 
+
+00:42 arguably no one has been more ambitious
+00:46 
+
+00:46 more strategic or more effective in its
+00:49 
+
+00:49 AI strategy than
+00:50 
+
+00:50 Microsoft the key architect behind that
+00:53 
+
+00:53 strategy Kevin Scott CTO of
+00:57 
+
+00:57 Microsoft we've had the pleasure of
+00:59 
+
+00:59 knowing Kevin for a couple of decades
+01:01 
+
+01:01 now dating back to his time at Google
+01:04 
+
+01:04 when he overlapped with our partner Bill
+01:06 
+
+01:06 cour Bill will join us today for a very
+01:09 
+
+01:09 special episode of training data we hope
+01:11 
+
+01:11 you
+01:14 
+
+01:14 enjoy Kevin thank you for being here on
+01:16 
+
+01:16 training data yeah glad to be here so
+01:20 
+
+01:20 just to start I I know you've talked
+01:21 
+
+01:21 about this before but for our listeners
+01:23 
+
+01:23 who might not be familiar with your
+01:25 
+
+01:25 story how does a kid from rural Virginia
+01:28 
+
+01:28 end up becoming the CTO
+01:31 
+
+01:31 of
+01:32 
+
+01:32 Microsoft who
+01:36 
+
+01:36 knows C certainly not a not a uh not a
+01:40 
+
+01:40 repeatable plan I don't think um I I
+01:43 
+
+01:43 don't know like it it is
+01:46 
+
+01:46 um the thing when I reflect back on my
+01:51 
+
+01:51 uh yeah my story is it's just a lot of
+01:54 
+
+01:54 being at the right place at the right
+01:56 
+
+01:56 time so I'm 52 years old so I was uh
+02:01 
+
+02:01 you know a 10 11 12 years old when the
+02:04 
+
+02:04 personal Computing Revolution started to
+02:07 
+
+02:07 uh hit Full Steam and so like right at
+02:10 
+
+02:10 that moment when you're a kid trying to
+02:12 
+
+02:12 figure out what you're about and like
+02:14 
+
+02:14 what you're going to latch on to like I
+02:16 
+
+02:16 had this like really convenient thing
+02:19 
+
+02:19 that captured my interest and was a good
+02:22 
+
+02:22 place for me to ground my curiosity on
+02:26 
+
+02:26 and you know and I I think that's you
+02:29 
+
+02:29 know one of the object lessons in
+02:31 
+
+02:31 general is if you happen to be
+02:34 
+
+02:34 interested
+02:36 
+
+02:36 in um like really motivated to learn
+02:39 
+
+02:39 more and do more with something that is
+02:41 
+
+02:41 at the same time growing really really
+02:43 
+
+02:43 quickly uh like you probably are going
+02:46 
+
+02:46 to end up in a reasonable place and so
+02:50 
+
+02:50 you know I I was interested in computers
+02:53 
+
+02:53 I um yeah I was the first kid in my um
+02:57 
+
+02:57 or the first person in my family neither
+02:59 
+
+02:59 my mom nor my my dad went to University
+03:02 
+
+03:02 so I was the first one to graduate with
+03:04 
+
+03:04 a bachelor's degree um like I majored in
+03:08 
+
+03:08 computer science and minored in English
+03:10 
+
+03:10 Literature Like I had this moment uh
+03:12 
+
+03:12 when I was uh um at this moment when I
+03:16 
+
+03:16 was trying to decide what I was going to
+03:19 
+
+03:19 go do after I got my undergraduate
+03:21 
+
+03:21 degree where my two advisors were
+03:24 
+
+03:24 arguing about uh whether it should be
+03:26 
+
+03:26 PhD in computer science or PhD in
+03:29 
+
+03:29 literature and I was very seriously
+03:31 
+
+03:31 considering both uh but I was so broke
+03:36 
+
+03:36 uh and just so tired of being uh busted
+03:41 
+
+03:41 all the time that I picked the pragmatic
+03:44 
+
+03:44 path uh you know not not that you know
+03:47 
+
+03:47 like I I
+03:48 
+
+03:48 still imagine what my life would have
+03:51 
+
+03:51 been like uh as you know person with a
+03:53 
+
+03:53 PhD in English literature and I think it
+03:55 
+
+03:55 would have been just fine but uh like I
+03:57 
+
+03:57 I chose you one of my two equal you know
+04:00 
+
+04:00 interest uh and then you know for a
+04:03 
+
+04:03 while I thought I was going to be a
+04:04 
+
+04:04 computer science Professor um and at the
+04:09 
+
+04:09 last minute this is where Bill and I uh
+04:11 
+
+04:11 intersected like I decided uh I was a
+04:14 
+
+04:14 compiler optimization and programming
+04:16 
+
+04:16 languages person uh through years and
+04:19 
+
+04:19 years in grad school and I got almost
+04:23 
+
+04:23 all the way to the end I was like I
+04:25 
+
+04:25 don't think I want to be a professor
+04:27 
+
+04:27 anymore like I I would would work on
+04:30 
+
+04:30 these things where it was you know 6
+04:32 
+
+04:32 months of effort to write a paper and
+04:34 
+
+04:34 you make some synthetic Benchmark 3%
+04:37 
+
+04:37 better and I was like this doesn't feel
+04:39 
+
+04:39 to me like the way to have a lot of
+04:41 
+
+04:41 impact uh in the world and like I don't
+04:44 
+
+04:44 want to do this over and over and over
+04:45 
+
+04:45 again for the next 25 years of my life
+04:49 
+
+04:49 and so I uh I sent my resume cold into
+04:55 
+
+04:55 Google in
+04:57 
+
+04:57 2003 and um
+05:01 
+
+05:01 I got a email from this guy Craig
+05:04 
+
+05:04 Neville Manning who had just gone off to
+05:07 
+
+05:07 New York to open up Google's first
+05:09 
+
+05:09 engineer remote engineering office and
+05:13 
+
+05:13 uh like I had an amazing interview at
+05:16 
+
+05:16 Google uh I I don't know whether this
+05:18 
+
+05:18 was on purpose or not or like I just got
+05:20 
+
+05:20 luck of the draw but uh like uh it
+05:22 
+
+05:22 seemed like every compiler person who
+05:25 
+
+05:25 was working at Google uh was on my
+05:27 
+
+05:27 interview slate and I was like this is
+05:29 
+
+05:29 amazing like all these people like uh
+05:33 
+
+05:33 know all of the stuff that I know and
+05:35 
+
+05:35 you know we can have easy conversations
+05:37 
+
+05:37 I I worked on nothing that was even
+05:39 
+
+05:39 remotely close to compilers uh at Google
+05:41 
+
+05:41 and I was confused why all of these
+05:43 
+
+05:43 people were there but uh it was a great
+05:46 
+
+05:46 interview and I was super stoked and I
+05:48 
+
+05:48 joined Google and Google is yet another
+05:51 
+
+05:51 one of those things just like the PC and
+05:53 
+
+05:53 just like the internet uh like it was a
+05:55 
+
+05:55 phenomenon that was growing crazy fast
+05:57 
+
+05:57 with a bunch of smart people working
+05:59 
+
+05:59 there and
+06:01 
+
+06:01 that uh that resulted in this
+06:04 
+
+06:04 opportunity I had to go uh join this
+06:06 
+
+06:06 startup AB mob when it was very early on
+06:09 
+
+06:09 like right at this pivotal moment when
+06:11 
+
+06:11 mobile mobile was taking off and you you
+06:15 
+
+06:15 needed things in Mobile like advertising
+06:18 
+
+06:18 infrastructure and I helped
+06:21 
+
+06:21 build you the the seminal company I
+06:24 
+
+06:24 think in in Mobile advertising uh and
+06:27 
+
+06:27 then was back at Google and then I
+06:28 
+
+06:28 helped uh link in go public uh running
+06:31 
+
+06:31 its engineering operations team and then
+06:33 
+
+06:33 I was at LinkedIn when we got acquired
+06:36 
+
+06:36 by Microsoft so like yeah none of that I
+06:39 
+
+06:39 think you can plan it's just like a lot
+06:42 
+
+06:42 of right place at right time and you
+06:47 
+
+06:47 trying at every point you can to do the
+06:51 
+
+06:51 most interesting thing you can do on the
+06:53 
+
+06:53 thing that's growing really fast you
+06:56 
+
+06:56 know when you talk about your personal
+06:58 
+
+06:58 history Kevin I guess
+07:00 
+
+07:00 you know the focus nowadays is on AI
+07:03 
+
+07:03 machine learning a lot of the
+07:06 
+
+07:06 practitioners are um people with phds
+07:11 
+
+07:11 how how do you think about sort of
+07:13 
+
+07:13 practical teams for AI uh since you're
+07:18 
+
+07:18 obviously doing a lot of that work at
+07:21 
+
+07:21 Microsoft and and involved with
+07:23 
+
+07:23 Partnerships with open Ai and
+07:25 
+
+07:25 others yeah I mean I I think if you are
+07:29 
+
+07:29 building
+07:31 
+
+07:31 the really complicated platform pieces
+07:34 
+
+07:34 of AI uh so like the big distributed
+07:37 
+
+07:37 systems for training and inference uh
+07:40 
+
+07:40 the big uh like networking and silicon
+07:44 
+
+07:44 and uh you know system software
+07:47 
+
+07:47 components or the algorithms that you're
+07:51 
+
+07:51 using to do training and inference I
+07:53 
+
+07:53 think a PhD is super helpful like
+07:56 
+
+07:56 there's just a huge amount of prior
+08:00 
+
+08:00 knowledge that you need to have in order
+08:03 
+
+08:03 to jump into the problem space and be
+08:06 
+
+08:06 able to like go uh quickly and like you
+08:09 
+
+08:09 know you need to be clever but like you
+08:11 
+
+08:11 don't PhD is I like yep I know you have
+08:16 
+
+08:16 a PhD uh Bill and are far clever than I
+08:18 
+
+08:18 am but like uh usually folks with phds
+08:22 
+
+08:22 are clever but like they're not the only
+08:23 
+
+08:23 people in the universe who are clever uh
+08:26 
+
+08:26 so like I I think it's mostly helpful in
+08:29 
+
+08:29 the
+08:30 
+
+08:30 that you've gone through like a pretty
+08:32 
+
+08:32 rigorous training regimen where you get
+08:34 
+
+08:34 a whole bunch of Prior Arts stuffed into
+08:36 
+
+08:36 your skull and like you you know
+08:38 
+
+08:38 demonstrably can do a very complicated
+08:40 
+
+08:40 project uh and you know the PHD
+08:43 
+
+08:43 projects uh you know look kind of
+08:47 
+
+08:47 like AI
+08:49 
+
+08:49 platform systems projects uh except the
+08:53 
+
+08:53 AI platform and systems projects are
+08:57 
+
+08:57 lots and lots of people working together
+08:58 
+
+08:58 whereas you when you're getting your PhD
+09:01 
+
+09:01 you often are like working in relative
+09:03 
+
+09:03 isolation on like your particular thing
+09:06 
+
+09:06 so like that's the you know one of the
+09:07 
+
+09:07 things people have to learn is like how
+09:09 
+
+09:09 to get yourself docked into a group and
+09:12 
+
+09:12 to be able to collaborate effectively
+09:13 
+
+09:13 with a bunch of other people like
+09:15 
+
+09:15 yourself uh so useful but you know
+09:17 
+
+09:17 there's so much else in AI that needs to
+09:20 
+
+09:20 be done other than building the the
+09:23 
+
+09:23 platform um you know and for those
+09:26 
+
+09:26 things you PhD is helpful but certainly
+09:28 
+
+09:28 not necessary um you know like figuring
+09:31 
+
+09:31 out how do I apply this to education how
+09:35 
+
+09:35 do I apply this to health care how do I
+09:37 
+
+09:37 uh like how do I build developer Tools
+09:40 
+
+09:40 around this how do I you do all of the
+09:43 
+
+09:43 million things that happen when new
+09:44 
+
+09:44 platforms emerge that you you know sort
+09:46 
+
+09:46 of complete the whole platform into like
+09:49 
+
+09:49 a portfolio of products and a portfolio
+09:51 
+
+09:51 of middleware and a portfolio of like
+09:53 
+
+09:53 all of the other stuff you
+09:55 
+
+09:55 need well speaking of which Microsoft
+09:57 
+
+09:57 seems like it has about the most sort of
+09:60 
+
+09:60 far-reaching or ambitious AI strategy of
+10:03 
+
+10:03 anybody out there can can you just kind
+10:05 
+
+10:05 of say in a couple words what is the AI
+10:07 
+
+10:07 strategy for Microsoft and then just for
+10:09 
+
+10:09 fun if you're going to grade yourselves
+10:12 
+
+10:12 what have you done particularly well
+10:14 
+
+10:14 what have you done maybe not as well as
+10:17 
+
+10:17 you could yeah so I mean we've been sort
+10:21 
+
+10:21 of talking about the strategy Microsoft
+10:23 
+
+10:23 as a platform company like we I think
+10:26 
+
+10:26 have participated or like helped drive a
+10:29 
+
+10:29 a hand full of the big platform waves in
+10:32 
+
+10:32 Computing uh like we were certainly one
+10:34 
+
+10:34 of the pillar companies in the personal
+10:36 
+
+10:36 Computing Revolution like we had a
+10:38 
+
+10:38 important part to play in the internet
+10:40 
+
+10:40 Revolution although I think that one was
+10:43 
+
+10:43 uh a far more diversely contributed to
+10:47 
+
+10:47 Revolution than uh yeah than personal
+10:50 
+
+10:50 Computing um yeah we kind of miss the
+10:54 
+
+10:54 mobile uh Computing Revolution um but
+10:59 
+
+10:59 like each one of those things like we
+11:01 
+
+11:01 have thought about uh how do you go
+11:04 
+
+11:04 build a technology platform for this
+11:07 
+
+11:07 particular era of technology that allows
+11:10 
+
+11:10 other people to go build on top of that
+11:13 
+
+11:13 platform to make useful things for other
+11:15 
+
+11:15 people and so that is our AI strategy it
+11:18 
+
+11:18 is uh like how do you from Frontier
+11:22 
+
+11:22 models to small language models to uh
+11:26 
+
+11:26 like highly optimized inference
+11:29 
+
+11:29 infrastructure
+11:30 
+
+11:30 uh you know like hypers scale on both
+11:33 
+
+11:33 training and inference uh like economies
+11:36 
+
+11:36 of scale like making the entire platform
+11:40 
+
+11:40 more accessible because it's cheaper and
+11:43 
+
+11:43 more powerful uh with every turn of the
+11:45 
+
+11:45 crank uh and like all of the developer
+11:49 
+
+11:49 tools and safety infrastructure and
+11:52 
+
+11:52 testing and everything that has to be
+11:55 
+
+11:55 there in order to have robustly built AI
+11:58 
+
+11:58 applications like go build that uh and
+12:01 
+
+12:01 like listen to developers and listen to
+12:04 
+
+12:04 people building uh building
+12:06 
+
+12:06 AIS uh as intently as you possibly can
+12:10 
+
+12:10 so that you are filling in all of the
+12:12 
+
+12:12 gaps that you can for them as they are
+12:15 
+
+12:15 encountering problems deploying this
+12:17 
+
+12:17 technology to to users um so that that
+12:22 
+
+12:22 is that is our strategy um and so yeah I
+12:27 
+
+12:27 think we're doing a reasonable job of it
+12:32 
+
+12:32 um
+12:34 
+
+12:34 um I don't know like I hate to grade
+12:36 
+
+12:36 myself it seems a little bit
+12:38 
+
+12:38 disingenuous right High to L lights well
+12:42 
+
+12:42 so so maybe before I do that like you
+12:45 
+
+12:45 know let me describe something about my
+12:47 
+
+12:47 own psychology so I I uh like I am an
+12:49 
+
+12:49 engineer and I think most Engineers are
+12:52 
+
+12:52 uh like uh short-term pessimists
+12:56 
+
+12:56 long-term optimists uh and so the
+12:58 
+
+12:58 short-term p ism is like you come in
+13:00 
+
+13:00 every day and you're like oh my God this
+13:01 
+
+13:01 is like a bag of crap like I just don't
+13:03 
+
+13:03 like any of this and like everything's
+13:05 
+
+13:05 broken and like I gotta like I got I got
+13:08 
+
+13:08 so much stuff to fix and I'm so
+13:10 
+
+13:10 frustrated uh but you work on all of
+13:13 
+
+13:13 those things anyway because you're
+13:15 
+
+13:15 optimistic that all of the problems can
+13:17 
+
+13:17 be fixed and that uh they're going to be
+13:19 
+
+13:19 worth fixing at the end of the day um
+13:22 
+
+13:22 and so yeah I mean
+13:25 
+
+13:25 the there there's a bunch of stuff that
+13:27 
+
+13:27 I think we're doing really well like I
+13:29 
+
+13:29 think we have absolutely along with open
+13:31 
+
+13:31 AI made uh very powerful AI dramatically
+13:35 
+
+13:35 more accessible than it otherwise would
+13:37 
+
+13:37 have been to a larger group of people I
+13:40 
+
+13:40 think you because of that work that
+13:42 
+
+13:42 we've been doing alongside open AI we
+13:45 
+
+13:45 have uh we're just seeing lots and lots
+13:48 
+
+13:48 of customers who otherwise wouldn't be
+13:51 
+
+13:51 building powerful AI
+13:53 
+
+13:53 applications um and so like I I feel
+13:57 
+
+13:57 like we're doing a good job in uh the
+13:59 
+
+13:59 way that we're partnering I think we're
+14:00 
+
+14:00 doing a good job in uh like having a
+14:04 
+
+14:04 really um particular point of view and
+14:07 
+
+14:07 it's not an immutable point of view but
+14:09 
+
+14:09 like it's a point of view about like
+14:11 
+
+14:11 what an AI platform ought to look like
+14:13 
+
+14:13 and we're trying to uh like make it as
+14:16 
+
+14:16 complete as we can um yeah low lights is
+14:20 
+
+14:20 I think we were a little bit late uh to
+14:24 
+
+14:24 like some of the basic AI stuff uh so it
+14:28 
+
+14:28 wasn't that we were
+14:30 
+
+14:30 not um investing in AI at all and like
+14:33 
+
+14:33 you can sort of look at some of the work
+14:35 
+
+14:35 that Microsoft research had done over
+14:37 
+
+14:37 the years and like MSR was an early AI
+14:41 
+
+14:41 leader um and I think you know
+14:46 
+
+14:46 the you B Bill Bill knows this just as
+14:50 
+
+14:50 well as I did just from his time at uh
+14:52 
+
+14:52 time at Google and you where we overlap
+14:55 
+
+14:55 for a number of years but um
+15:00 
+
+15:00 many you know maybe most of the really
+15:03 
+
+15:03 important advancements in AI over the
+15:06 
+
+15:06 past 20 years have been uh a function of
+15:10 
+
+15:10 some kind of scale uh you know whe and
+15:12 
+
+15:12 it's usually you got data scale and
+15:16 
+
+15:16 compute scale in combination let you uh
+15:19 
+
+15:19 like do things that weren't possible at
+15:22 
+
+15:22 lower scale points and yeah at some
+15:25 
+
+15:25 point like that that scaling of data and
+15:28 
+
+15:28 compute is so exponential that you get
+15:32 
+
+15:32 past the point where you can have
+15:34 
+
+15:34 fragmented bets uh where you can
+15:37 
+
+15:37 literally it's it just becomes
+15:39 
+
+15:39 economically impossible to bet on 10
+15:42 
+
+15:42 different things uh that are all
+15:44 
+
+15:44 exponentially scaling or have the
+15:46 
+
+15:46 ambition or the need to exponentially
+15:48 
+
+15:48 scale simultaneously and so I I think
+15:51 
+
+15:51 one of the things that we were a little
+15:53 
+
+15:53 bit late to is like we we didn't put all
+15:56 
+
+15:56 of our eggs into the right basket uh
+15:59 
+
+15:59 soon enough like we just yeah we were
+16:00 
+
+16:00 spending a lot on AI but it was
+16:02 
+
+16:02 fragmented across a whole bunch of
+16:03 
+
+16:03 different things and because we didn't
+16:05 
+
+16:05 want to hurt any of the feelings of
+16:07 
+
+16:07 smart people or yeah whatever right like
+16:10 
+
+16:10 I I don't even know what the diagnosis
+16:11 
+
+16:11 was because a lot of that was before I
+16:13 
+
+16:13 was at Microsoft um we like we we just
+16:17 
+
+16:17 weren't as quick as we should have been
+16:19 
+
+16:19 at uh like saying nope scale is what
+16:22 
+
+16:22 matters and like here's how we're going
+16:23 
+
+16:23 to focus uh focus our investments on
+16:25 
+
+16:25 scale in a principal way when did that
+16:29 
+
+16:29 when did did you get religion that scale
+16:30 
+
+16:30 is what matters was there a particular
+16:32 
+
+16:32 event or a moment that really
+16:34 
+
+16:34 crystallized that for you yeah I mean I
+16:36 
+
+16:36 was so I've been at Microsoft for about
+16:38 
+
+16:38 seven and a half years now and uh
+16:42 
+
+16:42 like my um when I when I became CTO
+16:48 
+
+16:48 my my job was like take a take a scan
+16:53 
+
+16:53 left to right across uh both Microsoft
+16:57 
+
+16:57 uh and the entire industry and try to
+17:01 
+
+17:01 see where yeah we we just had holes in
+17:05 
+
+17:05 execution where like we we were not
+17:08 
+
+17:08 doing things uh at that point in time
+17:11 
+
+17:11 which was I guess 2017 early um
+17:17 
+
+17:17 where all right like what are we not
+17:19 
+
+17:19 doing today that we're going to deeply
+17:21 
+
+17:21 regret uh in 2019 or 2020 so like two
+17:24 
+
+17:24 three years out um and like the biggest
+17:27 
+
+17:27 thing on the list was like you know rate
+17:29 
+
+17:29 of progress on AI was not fast enough so
+17:32 
+
+17:32 i' I'd say mid 2017 like I had religion
+17:35 
+
+17:35 that that was going to be a big part of
+17:38 
+
+17:38 my job uh was like helping us figure out
+17:41 
+
+17:41 what the strategy was going to be and
+17:43 
+
+17:43 then in
+17:45 
+
+17:45 2018 uh like if anything the
+17:49 
+
+17:49 um Bert the publication of the Bert uh
+17:52 
+
+17:52 Bert paper from uh from Google was like
+17:55 
+
+17:55 a real crystallization of uh that that
+17:59 
+
+17:59 belief so like everything that I had uh
+18:03 
+
+18:03 that was in my analysis I was like this
+18:05 
+
+18:05 this is as fine an example as anything
+18:07 
+
+18:07 of like why we have to really really
+18:11 
+
+18:11 accelerate on getting more serious here
+18:16 
+
+18:16 and so like you know very shortly after
+18:18 
+
+18:18 that like I restructured a whole bunch
+18:20 
+
+18:20 of stuff inside of Microsoft to get us
+18:22 
+
+18:22 more focused on AI and then about a year
+18:24 
+
+18:24 later we did that first deal with open
+18:27 
+
+18:27 AI um and yeah we we have been
+18:30 
+
+18:30 accelerating our investments and like
+18:32 
+
+18:32 trying to get more focused more crisp uh
+18:35 
+
+18:35 more purposeful uh since them when you
+18:38 
+
+18:38 were very early to appreciating the
+18:41 
+
+18:41 potential of open AI what did you see in
+18:43 
+
+18:43 them at that time when that first
+18:45 
+
+18:45 partnership was
+18:46 
+
+18:46 true well we we had like or at least I
+18:50 
+
+18:50 had uh this like real belief that what
+18:54 
+
+18:54 what was happening with these models as
+18:57 
+
+18:57 they scaled as they actually became a
+18:59 
+
+18:59 basis for building a platform that like
+19:01 
+
+19:01 the big shift that was happening is it
+19:03 
+
+19:03 wasn't just you know I I ran one of
+19:05 
+
+19:05 these uh teams that uh at Google where
+19:09 
+
+19:09 you
+19:10 
+
+19:10 had a pool of data and a bunch of
+19:13 
+
+19:13 machines and an algorithm and you were
+19:16 
+
+19:16 like training a model and like the model
+19:18 
+
+19:18 was for a specific thing like in you
+19:21 
+
+19:21 know the case of the things I was doing
+19:23 
+
+19:23 at Google it was
+19:24 
+
+19:24 like click-through rate prediction for
+19:26 
+
+19:26 advertising and you know like a hand of
+19:29 
+
+19:29 other things uh and like just
+19:31 
+
+19:31 outrageously effective right uh
+19:35 
+
+19:35 but most of the work before this uh
+19:40 
+
+19:40 before
+19:41 
+
+19:41 GPT um was about those sort of narrow
+19:46 
+
+19:46 use cases like you were purpose building
+19:48 
+
+19:48 models for narrow things uh and it was
+19:51 
+
+19:51 just tough to scale like you couldn't
+19:53 
+
+19:53 you'd invest a bunch of compute and like
+19:55 
+
+19:55 you couldn't amortize the cost of the
+19:57 
+
+19:57 compute across anything more than just
+19:59 
+
+19:59 the narrow thing that you were building
+20:02 
+
+20:02 the model for and you had to have a lot
+20:04 
+
+20:04 of expertise uh that you know if you
+20:06 
+
+20:06 wanted to replicate all of this it's
+20:08 
+
+20:08 like you had to have different data and
+20:11 
+
+20:11 like different you know Ai phds and you
+20:14 
+
+20:14 know different processes every time you
+20:16 
+
+20:16 wanted to go build AI into an
+20:19 
+
+20:19 application
+20:21 
+
+20:21 and what what was happening was like
+20:23 
+
+20:23 yeah you you had these big large
+20:25 
+
+20:25 language models uh that were useful for
+20:28 
+
+20:28 lots of different things so you didn't
+20:30 
+
+20:30 have to you know have a separate model
+20:32 
+
+20:32 for machine translation and sentiment
+20:34 
+
+20:34 analysis and
+20:36 
+
+20:36 you you like all of the different text
+20:39 
+
+20:39 things that you were doing and I was
+20:40 
+
+20:40 like okay this is extraordinary and like
+20:42 
+
+20:42 they were also becoming more platform
+20:44 
+
+20:44 like as a function of scale uh so
+20:47 
+
+20:47 transfer learning was working better as
+20:50 
+
+20:50 things scaled up uh
+20:53 
+
+20:53 and yeah and this is still the general
+20:56 
+
+20:56 pattern so uh like everything
+20:59 
+
+20:59 everything that we understand that large
+21:01 
+
+21:01 language models can do uh plus or minus
+21:05 
+
+21:05 like will get better when you get to the
+21:07 
+
+21:07 next scale point and on top of that they
+21:10 
+
+21:10 will become slightly or maybe
+21:13 
+
+21:13 dramatically more General in the sense
+21:15 
+
+21:15 that their capability set
+21:18 
+
+21:18 broadens and open AI had that same
+21:22 
+
+21:22 belief and they also had like a very
+21:25 
+
+21:25 principled analysis of like how the
+21:29 
+
+21:29 those platform characteristics emerged
+21:31 
+
+21:31 over time as a function of scale uh and
+21:34 
+
+21:34 a bunch of
+21:35 
+
+21:35 experimental validation that said that
+21:38 
+
+21:38 their forecasts were right and so like
+21:41 
+
+21:41 it just you know you you sort of like
+21:44 
+
+21:44 look at what the forecast says and
+21:46 
+
+21:46 you're like this is how much money it
+21:48 
+
+21:48 costs to run the experiment to see if
+21:50 
+
+21:50 you're going to be on forecast uh for
+21:52 
+
+21:52 the next uh turn of the crank and like
+21:55 
+
+21:55 you know it was felt like a big number
+21:56 
+
+21:56 at the time like it was billion dollars
+21:59 
+
+21:59 uh but like relative to what was
+22:02 
+
+22:02 happening it it just wasn't a large
+22:05 
+
+22:05 amount of
+22:06 
+
+22:06 money and
+22:08 
+
+22:08 then you know gbd3 was on forecast and
+22:12 
+
+22:12 gbd4 was on for so like it it it just
+22:15 
+
+22:15 was like finding a partner that had the
+22:18 
+
+22:18 same platform belief that you did and
+22:19 
+
+22:19 like a track record of you being able to
+22:22 
+
+22:22 execute through through these scale
+22:24 
+
+22:24 points like it
+22:26 
+
+22:26 was it it didn't like I I've done a
+22:29 
+
+22:29 bunch of things before that I had way
+22:30 
+
+22:30 more reservation about uh in the past
+22:33 
+
+22:33 like just in terms of Investments like
+22:34 
+
+22:34 this one didn't you like there was a
+22:36 
+
+22:36 bunch of people who didn't agree with me
+22:37 
+
+22:37 but like I I I had pretty high
+22:41 
+
+22:41 conviction you touch on investment I
+22:44 
+
+22:44 guess you know there's a lot of um trade
+22:47 
+
+22:47 Publications now speculating about the
+22:50 
+
+22:50 cost of doing training and so forth and
+22:52 
+
+22:52 the you know rumors of billions and
+22:55 
+
+22:55 billions of dollars being spent and so
+22:57 
+
+22:57 forth uh and I guess based on my own
+23:01 
+
+23:01 background I I think training's going to
+23:03 
+
+23:03 get dwarfed by inference here pretty
+23:05 
+
+23:05 soon uh how how do you see the should
+23:08 
+
+23:08 hope so well yeah otherwise we're
+23:11 
+
+23:11 building models that nobody knows what
+23:12 
+
+23:12 to do with that might not be a great
+23:15 
+
+23:15 investment but Y how how do you see kind
+23:18 
+
+23:18 of computing landscape evolving and
+23:21 
+
+23:21 where's it going you know the I think
+23:23 
+
+23:23 people are joking that all the money is
+23:25 
+
+23:25 going to Nvidia at the
+23:27 
+
+23:27 moment well look I think invid is doing
+23:29 
+
+23:29 a Nvidia is doing a good job uh so like
+23:32 
+
+23:32 the you know the two interesting things
+23:34 
+
+23:34 that are happening with these models
+23:36 
+
+23:36 just in terms of um the efficiency of
+23:40 
+
+23:40 the scale up is each Hardware
+23:41 
+
+23:41 generation's better price performance-
+23:44 
+
+23:44 wise
+23:45 
+
+23:45 uh usually by an extent greater than
+23:48 
+
+23:48 Mo's law used to work for general
+23:50 
+
+23:50 purpose uh Computing
+23:53 
+
+23:53 so
+23:55 
+
+23:55 um you a100 was about you know three
+23:59 
+
+23:59 three and a half times better price
+24:01 
+
+24:01 performance than
+24:02 
+
+24:02 v00 uh you know h100 like not quite that
+24:06 
+
+24:06 much but you know close uh you know on
+24:10 
+
+24:10 paper the Next Generation looks uh very
+24:12 
+
+24:12 good as well and so like you've got
+24:15 
+
+24:15 hardware for a variety of reasons uh
+24:20 
+
+24:20 like you know part of its you process
+24:22 
+
+24:22 technology but part of its architecture
+24:23 
+
+24:23 and like a lot of it is like being able
+24:26 
+
+24:26 to leverage uh um
+24:30 
+
+24:30 uh
+24:31 
+
+24:31 narrower uh word size uh in the
+24:34 
+
+24:34 computation so like you know instead of
+24:36 
+
+24:36 needing 64-bit arithmetic like you're
+24:38 
+
+24:38 you know you're doing arithmetic with
+24:40 
+
+24:40 much less Precision right now um and so
+24:44 
+
+24:44 like that you know there's just an
+24:45 
+
+24:45 embarrassing amount of parallelism there
+24:47 
+
+24:47 then like we're getting better and
+24:49 
+
+24:49 better at extracting that
+24:50 
+
+24:50 architecturally in the hardware and um
+24:54 
+
+24:54 you know there's a bunch of innovative
+24:56 
+
+24:56 stuff happening with networking as well
+24:58 
+
+24:58 like we're past the point for the
+24:60 
+
+24:60 frontier models at least where you can
+25:02 
+
+25:02 do anything interesting on a single GPU
+25:05 
+
+25:05 so for years and years now like both
+25:06 
+
+25:06 training and inference have been
+25:08 
+
+25:08 multi-gpu multi compute node um problems
+25:13 
+
+25:13 uh and so like there's a bunch of
+25:14 
+
+25:14 innovation happening on the network side
+25:16 
+
+25:16 as well which allows you to strap all of
+25:18 
+
+25:18 the compute together uh like at the
+25:21 
+
+25:21 chassis level the rack level the row
+25:23 
+
+25:23 level you data center level more
+25:26 
+
+25:26 effectively um which is great
+25:29 
+
+25:29 because um you know for the Nerds
+25:32 
+
+25:32 listening like we we haven't had
+25:34 
+
+25:34 effective um Power scaling uh uh or
+25:39 
+
+25:39 dinard scaling since 2012 or so uh so
+25:44 
+
+25:44 yeah we're not we we're we're getting
+25:47 
+
+25:47 more transistors but like they are not
+25:50 
+
+25:50 uh they're not getting cooler uh um yeah
+25:54 
+
+25:54 know and like we we just we have a lot
+25:56 
+
+25:56 of uh a lot of density issues just with
+25:60 
+
+25:60 power dissipation that we have to go uh
+26:03 
+
+26:03 go deal with um do you do you see
+26:07 
+
+26:07 inferences driving different data center
+26:10 
+
+26:10 uh architecture yeah I mean look we we
+26:13 
+
+26:13 already architect our training
+26:15 
+
+26:15 environments in our inference
+26:16 
+
+26:16 environments differently they just need
+26:18 
+
+26:18 different things um and like I I I think
+26:23 
+
+26:23 you know all the way down to you know
+26:25 
+
+26:25 silicon and uh like through the network
+26:28 
+
+26:28 hierarchy you need different things for
+26:30 
+
+26:30 inference and like inference is
+26:32 
+
+26:32 inference is kind of easier than
+26:34 
+
+26:34 training like training the way that
+26:35 
+
+26:35 we're doing it now is like we go build
+26:38 
+
+26:38 big environments that take you know a
+26:40 
+
+26:40 few years to build um
+26:45 
+
+26:45 and yeah with inference like if somebody
+26:47 
+
+26:47 came along with a like a better a better
+26:50 
+
+26:50 silicon architecture or a better Network
+26:52 
+
+26:52 architecture like a better cooling
+26:54 
+
+26:54 technology like it's a much easier
+26:56 
+
+26:56 experiment to go run uh you just go swap
+27:00 
+
+27:00 some racks out I mean like I'm like my
+27:02 
+
+27:02 data center people will yell at me like
+27:04 
+
+27:04 it's not quite that easy but it is uh it
+27:07 
+
+27:07 is easier than like having to go like do
+27:10 
+
+27:10 a big Capital project like a like a
+27:13 
+
+27:13 training environment looks like and so
+27:16 
+
+27:16 like I I you know intuitively you would
+27:18 
+
+27:18 think that that is going to result in
+27:21 
+
+27:21 more diversity in the inferencing
+27:23 
+
+27:23 environment and more competition and
+27:26 
+
+27:26 more like a faster rate of improvement
+27:30 
+
+27:30 um like
+27:32 
+
+27:32 that's and like on the software side
+27:34 
+
+27:34 that's certainly what we see like the
+27:36 
+
+27:36 inference stack uh just because it's
+27:38 
+
+27:38 such a large uh fraction of the overall
+27:41 
+
+27:41 compute footprint and it's constrained
+27:44 
+
+27:44 uh uh because we have more demand than
+27:47 
+
+27:47 Supply at the moment uh like you just
+27:49 
+
+27:49 have very very powerful incentives to go
+27:52 
+
+27:52 optimize the software stack to squeeze
+27:54 
+
+27:54 more performance out of it you think
+27:56 
+
+27:56 we'll be in an environment anytime soon
+27:58 
+
+27:58 where that demand Supply balance changes
+28:01 
+
+28:01 not necessarily at Microsoft but it
+28:03 
+
+28:03 feels like we're seeing that at the
+28:04 
+
+28:04 market level as
+28:05 
+
+28:05 well yeah I I don't know um I mean if
+28:10 
+
+28:10 we if we continue to see the
+28:15 
+
+28:15 platform uh continue to expand
+28:20 
+
+28:20 capability wise uh and it just becomes
+28:22 
+
+28:22 more useful like I think demand
+28:24 
+
+28:24 increases if anything now the shape of
+28:28 
+
+28:28 the demand is is probably going to move
+28:29 
+
+28:29 around like I I think you're already
+28:31 
+
+28:31 seeing a little bit of that
+28:33 
+
+28:33 um yeah building uh building a Frontier
+28:36 
+
+28:36 Model is like a very
+28:39 
+
+28:39 very resource intensive thing and as
+28:42 
+
+28:42 long as people are like building
+28:43 
+
+28:43 Frontier models and making them
+28:45 
+
+28:45 accessible and like maybe they're not
+28:46 
+
+28:46 accept accessible quite the way that
+28:48 
+
+28:48 people want you know like they're only
+28:51 
+
+28:51 API accessible and like there isn't an
+28:53 
+
+28:53 open source thing you can go instantiate
+28:55 
+
+28:55 and you know muck around with but like
+28:57 
+
+28:57 it's way more accessible than it was uh
+29:00 
+
+29:00 you know six or seven years ago where
+29:02 
+
+29:02 like the only way to access some of this
+29:04 
+
+29:04 stuff is you had to go work for like you
+29:06 
+
+29:06 know two two or three tech companies uh
+29:11 
+
+29:11 and so anyway like I but I think you
+29:15 
+
+29:15 know you do have to ask yourself and
+29:17 
+
+29:17 somebody else should do the asking right
+29:19 
+
+29:19 because I'm like all kinds of biased
+29:21 
+
+29:21 right uh but like I I don't know how
+29:23 
+
+29:23 many Frontier models uh you actually
+29:27 
+
+29:27 need um
+29:29 
+
+29:29 um if you know they're all roughly
+29:31 
+
+29:31 speaking in the same tier of
+29:34 
+
+29:34 capability um yeah that's an awful lot
+29:37 
+
+29:37 of money to spend for you know things
+29:39 
+
+29:39 that are you
+29:42 
+
+29:42 know roughly
+29:45 
+
+29:45 equivalent you know it's sort of like
+29:47 
+
+29:47 you know if if you're starting a company
+29:50 
+
+29:50 right now and you believe that you have
+29:51 
+
+29:51 to build your very own Frontier Model in
+29:53 
+
+29:53 order to go uh deliver an application to
+29:57 
+
+29:57 someone that's almost the same thing is
+30:01 
+
+30:01 saying like I got I got to go build my
+30:03 
+
+30:03 own smartphone hardware and operating
+30:06 
+
+30:06 system in order to deliver this mobile
+30:08 
+
+30:08 app like maybe you need it but like
+30:11 
+
+30:11 probably you don't um and
+30:15 
+
+30:15 so I mean that to Bill's point like I
+30:18 
+
+30:18 think the thing that makes sense you
+30:22 
+
+30:22 know for the market is like you just you
+30:25 
+
+30:25 you're going to want to see lots of
+30:26 
+
+30:26 people doing lots of inference because
+30:27 
+
+30:27 that means you got lots of products that
+30:29 
+
+30:29 have found product Market fit and those
+30:31 
+
+30:31 things are
+30:32 
+
+30:32 scaling um but like lot lots of
+30:35 
+
+30:35 speculative dollars flowing into
+30:38 
+
+30:38 infrastructure uh
+30:41 
+
+30:41 R&D like probably ends the same way that
+30:44 
+
+30:44 yeah the yeah many speculative
+30:48 
+
+30:48 infrastructure booms have
+30:50 
+
+30:50 ended unless excuse me on the scaling
+30:53 
+
+30:53 front um you know Microsoft published a
+30:56 
+
+30:56 paper uh sometime ago pointing out that
+30:60 
+
+30:60 the quality of training data is uh maybe
+31:05 
+
+31:05 at least as important as as volume and I
+31:08 
+
+31:08 think one of the speculations you see
+31:10 
+
+31:10 now in the industry is that we're
+31:13 
+
+31:13 running out of sources of high high
+31:16 
+
+31:16 quality training data and and you're
+31:19 
+
+31:19 reading at least uh some articles
+31:23 
+
+31:23 claiming that various Partnerships are
+31:24 
+
+31:24 being struck to to get access to
+31:27 
+
+31:27 training data and it might be behind pay
+31:28 
+
+31:28 walls and so forth how do you how do you
+31:31 
+
+31:31 see that evolving because it it feels
+31:34 
+
+31:34 like we have more and more
+31:36 
+
+31:36 computation but we may not have more and
+31:39 
+
+31:39 more training
+31:40 
+
+31:40 data yeah I mean I think that
+31:43 
+
+31:43 was almost inevitable um it is you know
+31:48 
+
+31:48 in my opinion a good thing that uh
+31:50 
+
+31:50 quality of data matters more than
+31:52 
+
+31:52 quantity of data because it gives you an
+31:54 
+
+31:54 economic framework to go do the do the
+31:57 
+
+31:57 Partnerships uh that you need to go do
+31:59 
+
+31:59 to yeah make sure that you're feeding
+32:02 
+
+32:02 your AI training algorithm of curriculum
+32:05 
+
+32:05 that uh you know is going to result in
+32:07 
+
+32:07 smarter models um and like honestly like
+32:11 
+
+32:11 not wasting a whole bunch of compute
+32:12 
+
+32:12 feeding at a bunch of things that are
+32:15 
+
+32:15 not um and I think one of the you know
+32:17 
+
+32:17 from an infrastructure perspective one
+32:19 
+
+32:19 of the things people have been very
+32:21 
+
+32:21 confused about is like a large language
+32:24 
+
+32:24 model is not a database it's not a
+32:25 
+
+32:25 repository of uh facts um you know it's
+32:29 
+
+32:29 like important for it to you know quote
+32:32 
+
+32:32 unquote know some factual things uh but
+32:35 
+
+32:35 it is uh like the world's crappiest
+32:38 
+
+32:38 database uh you know honestly like if
+32:41 
+
+32:41 you need it to be your retrieval engine
+32:43 
+
+32:43 and so like you just shouldn't think
+32:45 
+
+32:45 about it as like hey I got this thing
+32:47 
+
+32:47 and like it has to have everything baked
+32:49 
+
+32:49 into it uh like into the model weights
+32:52 
+
+32:52 themselves uh so that you can you know
+32:55 
+
+32:55 recall a bunch of stuff
+32:59 
+
+32:59 uh you know like as you've seen like the
+33:01 
+
+33:01 the recall
+33:03 
+
+33:03 is imprecise in the same way that human
+33:06 
+
+33:06 recall is imprecise so they just much
+33:09 
+
+33:09 more efficient ways to do recall
+33:12 
+
+33:12 um um yeah so look I I think you you
+33:17 
+
+33:17 are I mean the way that we say see
+33:19 
+
+33:19 things developing is like you have data
+33:22 
+
+33:22 that is valuable for training models and
+33:24 
+
+33:24 then you have data that you need to have
+33:26 
+
+33:26 access to for an application in order
+33:29 
+
+33:29 for the model to reason over and like
+33:31 
+
+33:31 those are two different things and I
+33:33 
+
+33:33 think they're probably two different
+33:35 
+
+33:35 business models around those things so
+33:38 
+
+33:38 and like at the end of the day this is
+33:39 
+
+33:39 all just this is about business models
+33:43 
+
+33:43 right like people who produce
+33:46 
+
+33:46 data want to be compensated for uh you
+33:52 
+
+33:52 know use of that
+33:55 
+
+33:55 data
+33:56 
+
+33:56 um and so yeah we we have all of this
+34:00 
+
+34:00 data sitting inside of search engines
+34:02 
+
+34:02 right now like not not in you know
+34:05 
+
+34:05 randomized weights but like quite
+34:07 
+
+34:07 explicitly it's like sitting in a you
+34:09 
+
+34:09 know sitting in indices and you know
+34:12 
+
+34:12 bang and Google and whatnot just waiting
+34:14 
+
+34:14 to be retrieved and
+34:16 
+
+34:16 like you know plus or minus everybody's
+34:19 
+
+34:19 okay with that because there's a
+34:20 
+
+34:20 business model there that makes sense uh
+34:23 
+
+34:23 so you like you enter a query and like
+34:26 
+
+34:26 you're either sending traffic or you
+34:28 
+
+34:28 know like there's you SEO and like
+34:31 
+
+34:31 advertising like a whole bunch of like
+34:33 
+
+34:33 business model that surrounds that I
+34:36 
+
+34:36 think we'll figure out a business model
+34:38 
+
+34:38 for that um referral data so that like
+34:43 
+
+34:43 you know when an agent or an AI
+34:45 
+
+34:45 application needs to retrieve some
+34:46 
+
+34:46 information from someone so that it can
+34:49 
+
+34:49 you reason over it and give the user an
+34:52 
+
+34:52 answer like we will figure out the
+34:53 
+
+34:53 business model for that like it'll
+34:55 
+
+34:55 either be subscription rev share it'll
+34:57 
+
+34:57 be licensing it'll be like some new
+34:59 
+
+34:59 flavor of
+35:00 
+
+35:00 advertising you I was just telling
+35:02 
+
+35:02 someone the other day like if I was in
+35:03 
+
+35:03 my 20s right now like you know for for
+35:06 
+
+35:06 all of your entrepreneur like somebody
+35:08 
+
+35:08 ought to be out right now figuring out
+35:11 
+
+35:11 what the new ad unit is for agents and
+35:15 
+
+35:15 like just building the company uh
+35:19 
+
+35:19 because like it it it will have the same
+35:21 
+
+35:21 characteristics and qualities is uh you
+35:26 
+
+35:26 previous ad units like you have people
+35:27 
+
+35:27 with information in products and
+35:29 
+
+35:29 services who are going to want to get to
+35:32 
+
+35:32 the attention of someone who might want
+35:34 
+
+35:34 those data and products and services and
+35:37 
+
+35:37 like quality is going to matter and you
+35:40 
+
+35:40 know relevance is going to matter and a
+35:42 
+
+35:42 bunch of other things and I I would be
+35:45 
+
+35:45 shocked if there isn't a auction model
+35:49 
+
+35:49 for uh you know that's going to be the
+35:52 
+
+35:52 right way to Value everything and you
+35:54 
+
+35:54 know like maybe there's referrals and
+35:56 
+
+35:56 like referrals will have some economic
+35:59 
+
+35:59 value um I think for training is just a
+36:01 
+
+36:01 little bit different because uh it's
+36:03 
+
+36:03 very very hard when you're building that
+36:07 
+
+36:07 model uh
+36:09 
+
+36:09 to at the time that you're doing the
+36:11 
+
+36:11 building
+36:13 
+
+36:13 to really be able to
+36:16 
+
+36:16 ascribe um a monetary value value to a
+36:21 
+
+36:21 particular token of input yeah just
+36:24 
+
+36:24 because it's contribution to the model
+36:26 
+
+36:26 like the same way that a word from Moby
+36:28 
+
+36:28 Dick has like a very defuse contribution
+36:32 
+
+36:32 to like your own human intelligence uh
+36:35 
+
+36:35 you know even though you definitely read
+36:37 
+
+36:37 it at some point in your uh
+36:40 
+
+36:40 career uh or your life um like how
+36:45 
+
+36:45 valuable that is to like forming you
+36:48 
+
+36:48 know Bill Corin or Kevin Scott's uh you
+36:50 
+
+36:50 know useful intelligence like who
+36:52 
+
+36:52 knows speaking of which this um one of
+36:56 
+
+36:56 the things that we hear a lot of times
+36:59 
+
+36:59 is the the value function is in some
+37:01 
+
+37:01 ways the bottleneck to broader reasoning
+37:03 
+
+37:03 capabilities it's easy enough to
+37:05 
+
+37:05 construct a value function when you're
+37:07 
+
+37:07 playing a game with a you know with a
+37:10 
+
+37:10 with a known winner and loser like go or
+37:12 
+
+37:12 chess or poker or diplomacy but it
+37:15 
+
+37:15 becomes a lot harder to construct the
+37:17 
+
+37:17 value function when you're going into
+37:19 
+
+37:19 broader domains and it's it's things
+37:20 
+
+37:20 like assigning the value of Moby Dick to
+37:22 
+
+37:22 Kevin Scott's life you know that sort of
+37:24 
+
+37:24 thing um are there are there practical
+37:28 
+
+37:28 solutions to this are there practical
+37:29 
+
+37:29 implications to this I guess the broader
+37:31 
+
+37:31 question would be where do you see the
+37:33 
+
+37:33 overall field of reasoning in llms going
+37:36 
+
+37:36 well look I think people are trying to
+37:38 
+
+37:38 get at this uh so so you've got a bunch
+37:41 
+
+37:41 of benchmarks
+37:44 
+
+37:44 like yeah GP QA and MML U and yeah like
+37:49 
+
+37:49 we're just sort of rolling through a
+37:52 
+
+37:52 bunch of benchmarking paradigms to like
+37:54 
+
+37:54 try to come up with scores of
+37:58 
+
+37:58 performance for these models like
+37:60 
+
+37:60 whether it's reasoning capability or
+38:02 
+
+38:02 yeah and yeah I think yeah one of the
+38:05 
+
+38:05 interesting things we seen over the past
+38:06 
+
+38:06 handful of years is like we just are
+38:08 
+
+38:08 very quickly saturating these benchmarks
+38:10 
+
+38:10 like where you uh like one emerges and
+38:13 
+
+38:13 then you within a model generation like
+38:15 
+
+38:15 you'll completely uh or like get very
+38:18 
+
+38:18 close to saturating the particular
+38:19 
+
+38:19 Benchmark and then you got to go find
+38:21 
+
+38:21 something else to help be your Guiding
+38:24 
+
+38:24 Light so so but like let let's just sort
+38:26 
+
+38:26 of assume that like you know you'll have
+38:28 
+
+38:28 some in interesting benchmarks that are
+38:31 
+
+38:31 correlated with the reasoning
+38:33 
+
+38:33 capabilities you want models to have um
+38:37 
+
+38:37 you know then the question it's just an
+38:39 
+
+38:39 expensive experiment to run like you can
+38:41 
+
+38:41 run an experiment where it's like okay
+38:42 
+
+38:42 like I'm going to train a model like you
+38:44 
+
+38:44 know with this information in and or out
+38:46 
+
+38:46 and like does it get better or worse at
+38:50 
+
+38:50 um you know performance on these
+38:53 
+
+38:53 reasoning benchmarks
+38:56 
+
+38:56 um and you know like I think all of us
+38:59 
+
+38:59 have done different versions of those
+39:02 
+
+39:02 experiments like that they they're just
+39:04 
+
+39:04 extraordinarily expensive to run at the
+39:06 
+
+39:06 most granular scale you can imagine
+39:08 
+
+39:08 running them um part of that paper that
+39:12 
+
+39:12 bill referenced like textbooks are all
+39:14 
+
+39:14 you need is like a um it it it's not the
+39:19 
+
+39:19 full story but it's like part of a story
+39:21 
+
+39:21 that is like you know just sort of
+39:23 
+
+39:23 evaluating like token contribution
+39:25 
+
+39:25 quality to model performance
+39:28 
+
+39:28 so yeah I like I I think
+39:31 
+
+39:31 it's and and everybody's got every
+39:33 
+
+39:33 incentive in the world right now to try
+39:35 
+
+39:35 to figure out like what that is uh if
+39:37 
+
+39:37 for no other reason than you uh like in
+39:39 
+
+39:39 a world where you're synthesizing data
+39:42 
+
+39:42 you're literally spending compute to
+39:45 
+
+39:45 generate synthetic tokens for training
+39:48 
+
+39:48 you you really want to make sure that
+39:51 
+
+39:51 the tokens that you're generating are uh
+39:54 
+
+39:54 actually useful or not
+39:58 
+
+39:58 where do you think the models are at the
+39:60 
+
+39:60 moment I you know I think uh Microsoft
+40:03 
+
+40:03 has introduced a whole bunch of
+40:04 
+
+40:04 co-pilots to try to help end users with
+40:08 
+
+40:08 with their with your products and so
+40:10 
+
+40:10 forth on the other hand I I see lots and
+40:13 
+
+40:13 lots of companies trying to build agents
+40:15 
+
+40:15 that can be kind of autonomous actors
+40:18 
+
+40:18 now that that's a wide spectrum of kind
+40:22 
+
+40:22 of expected performance of what the
+40:24 
+
+40:24 models can do where where do you think
+40:26 
+
+40:26 we are where do you think we'll be in a
+40:28 
+
+40:28 couple of
+40:29 
+
+40:29 years
+40:31 
+
+40:31 well yeah so I think that's a super good
+40:33 
+
+40:33 question and there's a you know there's
+40:35 
+
+40:35 even a philosophical thing there about
+40:37 
+
+40:37 you know what it is we should want
+40:40 
+
+40:40 um well there is the the Spectre of
+40:43 
+
+40:43 everybody's job getting replaced right
+40:46 
+
+40:46 so yeah you know
+40:49 
+
+40:49 somebody look the we we chose the the
+40:52 
+
+40:52 name co-pilot for the things that we
+40:54 
+
+40:54 were doing relatively deliberately
+40:58 
+
+40:58 because we we want to at the very least
+41:02 
+
+41:02 encourage everyone who's building these
+41:04 
+
+41:04 things inside of Microsoft to think
+41:06 
+
+41:06 about how can I help augment someone
+41:10 
+
+41:10 who's doing some form of cognitive work
+41:13 
+
+41:13 uh so like we want to build you know
+41:15 
+
+41:15 assistive not
+41:17 
+
+41:17 substitutive Tech
+41:19 
+
+41:19 [Music]
+41:21 
+
+41:21 um and and you know the good news is
+41:23 
+
+41:23 also easier to think about how to go
+41:26 
+
+41:26 from you know sort of rough Frontier
+41:29 
+
+41:29 Model capability to useful tool when
+41:32 
+
+41:32 you're narrowing it down to a domain
+41:36 
+
+41:36 um and so like I I think that's been a
+41:39 
+
+41:39 reasonable deployment path and like
+41:42 
+
+41:42 we've got a handful of our co-pilots
+41:44 
+
+41:44 that have real Market traction right now
+41:46 
+
+41:46 and are like you know in daily use by
+41:49 
+
+41:49 like a lot of people doing you real
+41:53 
+
+41:53 non-trivial cognitive work uh you know
+41:56 
+
+41:56 and I think that will expand and over
+41:59 
+
+41:59 time um what just on that what are some
+42:02 
+
+42:02 examples of copilot that have really
+42:04 
+
+42:04 like hit the bullseye already versus
+42:07 
+
+42:07 maybe co-pilots where the technolog is
+42:09 
+
+42:09 not quite ready in terms of like jobs to
+42:12 
+
+42:12 be done yeah like I I think you know
+42:14 
+
+42:14 GitHub GitHub co-pilot is like probably
+42:17 
+
+42:17 the you know the thing we've talked most
+42:19 
+
+42:19 about and like there's you know the most
+42:22 
+
+42:22 uh public conversation around uh yeah
+42:26 
+
+42:26 like it it it's it's been a been a hit
+42:29 
+
+42:29 um you know it it is genuinely useful um
+42:34 
+
+42:34 yeah we we've
+42:36 
+
+42:36 got some other co-pilots that are like
+42:39 
+
+42:39 that that are um you know that are that
+42:41 
+
+42:41 are super useful um but you know I think
+42:44 
+
+42:44 the thing that bill was getting at like
+42:45 
+
+42:45 the more
+42:47 
+
+42:47 General the more General the co-pilot is
+42:50 
+
+42:50 like the you know the the harder it is
+42:53 
+
+42:53 to have it actually
+42:55 
+
+42:55 take uh very high Precision action on
+43:00 
+
+43:00 your behalf
+43:03 
+
+43:03 autonomously um you know particularly if
+43:06 
+
+43:06 you know it's doing something where it's
+43:08 
+
+43:08 representing
+43:10 
+
+43:10 you um where you there are stakes and
+43:14 
+
+43:14 you know consequences and accountability
+43:16 
+
+43:16 back to you if this agent makes a
+43:19 
+
+43:19 mistake and we're trying to be very
+43:22 
+
+43:22 deliberate there because I think one of
+43:24 
+
+43:24 the things that you don't want to do is
+43:27 
+
+43:27 uh introduce a thing that's going to
+43:29 
+
+43:29 make a whole bunch of uh these sort of
+43:32 
+
+43:32 Errors where the user's first reaction
+43:35 
+
+43:35 is like this doesn't work and like I'm
+43:37 
+
+43:37 not going to try it again for a good
+43:39 
+
+43:39 long while uh so we'd rather have it be
+43:43 
+
+43:43 very good before we introduce it uh yeah
+43:47 
+
+43:47 which again you
+43:49 
+
+43:49 means you're you're sort of optimizing
+43:52 
+
+43:52 for use cases not for like you know
+43:55 
+
+43:55 super super broad things
+43:58 
+
+43:58 I mean there's a good like we um we did
+44:01 
+
+44:01 a partnership recently with uh yeah with
+44:03 
+
+44:03 Devon uh um which I think is another one
+44:07 
+
+44:07 of these like very interesting like you
+44:09 
+
+44:09 know use case specific things where it's
+44:12 
+
+44:12 like you know Frontier Model plus a
+44:13 
+
+44:13 whole bunch of other stuff that is like
+44:16 
+
+44:16 optimized for like giving humans high
+44:19 
+
+44:19 quality recommendations for actions uh
+44:22 
+
+44:22 that they can take and then when you
+44:23 
+
+44:23 click accept on the action uh like you
+44:26 
+
+44:26 uh you have reason ly high confidence
+44:28 
+
+44:28 that you know it's going to work and you
+44:31 
+
+44:31 haven't made another set of problems for
+44:34 
+
+44:34 yourself it's I like I'm I'm guessing
+44:37 
+
+44:37 too you all see this in your portfolio
+44:39 
+
+44:39 companies like there there seem to be a
+44:40 
+
+44:40 bunch of companies out there right now
+44:42 
+
+44:42 that are like doing exactly this and and
+44:45 
+
+44:45 that it's you useful and working well
+44:47 
+
+44:47 it's interesting because we
+44:48 
+
+44:48 hear one of the things that we hear
+44:51 
+
+44:51 fairly consistently from the companies
+44:54 
+
+44:54 that are further on in their AI Journey
+44:55 
+
+44:55 you know everybody kind of starts in the
+44:57 
+
+44:57 same way where they start playing with
+44:58 
+
+44:58 open Ai and then maybe they start using
+44:60 
+
+44:60 some of the other proprietary Foundation
+45:01 
+
+45:01 models and then they incorporate some
+45:03 
+
+45:03 open source models and maybe they have
+45:04 
+
+45:04 some of their own stuff there's a vector
+45:06 
+
+45:06 database in there somewhere yep from an
+45:08 
+
+45:08 architectural standpoint it feels like
+45:09 
+
+45:09 people tend to go on a not quite the
+45:11 
+
+45:11 same Jour Journey but Journeys that sort
+45:13 
+
+45:13 of rhyme but then what we hear from them
+45:16 
+
+45:16 when they're 12 or 18 months down the
+45:17 
+
+45:17 road is there's kind of this massive
+45:20 
+
+45:20 8020 rule at play and maybe it's a 982
+45:23 
+
+45:23 rule but you can automate most of a task
+45:27 
+
+45:27 pretty quickly and pretty effectively
+45:29 
+
+45:29 but getting it to the point where it's
+45:31 
+
+45:31 actually end to end running
+45:34 
+
+45:34 autonomously in a way that is compelling
+45:37 
+
+45:37 and consistent enough that you can
+45:39 
+
+45:39 actually trust it kind of that last mile
+45:42 
+
+45:42 that last couple percent that makes you
+45:43 
+
+45:43 really trust it yeah it seems like
+45:45 
+
+45:45 that's been pretty elusive for a lot of
+45:47 
+
+45:47 tasks and so I'm one of the things that
+45:49 
+
+45:49 we're really curious about is okay well
+45:51 
+
+45:51 when to the foundation models themselves
+45:54 
+
+45:54 you know get good enough to knock out
+45:56 
+
+45:56 that last 2%
+45:57 
+
+45:57 or is that a domain specific thing and
+45:60 
+
+45:60 that's really the job of the software
+46:01 
+
+46:01 vendor who who lives on top of the
+46:03 
+
+46:03 platform to figure out that last 2% I
+46:07 
+
+46:07 look I think it's going to be both for a
+46:08 
+
+46:08 while like the the two things that I
+46:10 
+
+46:10 think you can
+46:12 
+
+46:12 trust yeah I I know you you guys were
+46:15 
+
+46:15 probably going to ask this question at
+46:16 
+
+46:16 some point but um like we're we're
+46:20 
+
+46:20 despite what other people think we're
+46:22 
+
+46:22 we're not at diminishing marginal
+46:24 
+
+46:24 Returns on scale up um and like I I try
+46:28 
+
+46:28 to I try to you know help people
+46:31 
+
+46:31 understand like you know there there is
+46:32 
+
+46:32 an exponential here and like the
+46:34 
+
+46:34 unfortunate thing is you only get to
+46:36 
+
+46:36 sample it every couple of years because
+46:38 
+
+46:38 it just takes a while to build
+46:39 
+
+46:39 supercomputers and then train models on
+46:41 
+
+46:41 top of them uh and and so the the next
+46:45 
+
+46:45 sample is coming uh and like I I you
+46:48 
+
+46:48 know I can't tell you when and I can't
+46:50 
+
+46:50 predict exactly how good it's going to
+46:52 
+
+46:52 be but it it will uh almost certainly be
+46:58 
+
+46:58 better at like the the things that are
+47:01 
+
+47:01 brittle right now where you're like oh
+47:03 
+
+47:03 my God like this is a little too
+47:04 
+
+47:04 expensive or it's a little too fragile
+47:06 
+
+47:06 for me to use like all of that gets
+47:08 
+
+47:08 better like it'll get cheaper and like
+47:10 
+
+47:10 you know things will become less fragile
+47:12 
+
+47:12 and then like more complicated things
+47:14 
+
+47:14 will become possible like that that is
+47:16 
+
+47:16 the story of each generation of these
+47:18 
+
+47:18 models as we've scaled up and so like
+47:22 
+
+47:22 you know we even think about this inside
+47:24 
+
+47:24 of Microsoft and like one of the
+47:25 
+
+47:25 category errors that own developers who
+47:28 
+
+47:28 are building these AI products can make
+47:30 
+
+47:30 is like get too convinced that uh the
+47:33 
+
+47:33 only way to solve my problem is like I
+47:35 
+
+47:35 have to go uh take the current Frontier
+47:38 
+
+47:38 and supplement it with a whole bunch of
+47:40 
+
+47:40 things but which you do have to do but
+47:43 
+
+47:43 like you want to be very careful
+47:45 
+
+47:45 architecturally when you're doing that
+47:47 
+
+47:47 that it doesn't prevent you from taking
+47:48 
+
+47:48 the next sample when it arrives so you
+47:51 
+
+47:51 just want to architect these these
+47:53 
+
+47:53 applications where when the new goodness
+47:54 
+
+47:54 comes you can go plug it in and like
+47:57 
+
+47:57 you'll have have to go optimize that as
+47:58 
+
+47:58 well uh like I think that's just sort of
+48:00 
+
+48:00 the grind that we're on um but like you
+48:03 
+
+48:03 just like the the the thing that was
+48:06 
+
+48:06 killing us internally is I I would have
+48:10 
+
+48:10 teams inside of the company who would
+48:13 
+
+48:13 look at a Frontier Model and say oh my
+48:15 
+
+48:15 God there's no way that we can ever
+48:16 
+
+48:16 deploy a product on top of this because
+48:18 
+
+48:18 like this is fragile and this is too
+48:20 
+
+48:20 expensive and so you know like please
+48:22 
+
+48:22 give me like giant pools of gpus and
+48:25 
+
+48:25 like let me go spin up a big team doing
+48:27 
+
+48:27 uh you know like a very you know
+48:29 
+
+48:29 tailored version of this and like we're
+48:31 
+
+48:31 going to build a specific model and like
+48:33 
+
+48:33 and and yeah they they would go off and
+48:35 
+
+48:35 like spend a whole bunch of money and
+48:36 
+
+48:36 like the thing would be you know a
+48:38 
+
+48:38 little bit better uh cost wise at the
+48:41 
+
+48:41 same level of performance as the current
+48:43 
+
+48:43 uh Frontier and then the frontier would
+48:45 
+
+48:45 snap to the new uh point and it would be
+48:48 
+
+48:48 just doomed uh and and so like you you
+48:52 
+
+48:52 just architecturally don't want to get
+48:54 
+
+48:54 trapped by that I don't think I mean
+48:56 
+
+48:56 like that'd be my advice I give to
+48:58 
+
+48:58 everyone is like just give yourself the
+49:02 
+
+49:02 flexibility to snap to the new uh you
+49:05 
+
+49:05 know to the New Frontier when it
+49:08 
+
+49:08 emerges and and like that lets you
+49:10 
+
+49:10 preserve all of your skepticism you can
+49:12 
+
+49:12 believe uh you know believe all you want
+49:14 
+
+49:14 that the New Frontier not coming like go
+49:16 
+
+49:16 you know like you read your favorite
+49:18 
+
+49:18 Twitter troll that says it's all over
+49:20 
+
+49:20 and a sham and like and like but but
+49:23 
+
+49:23 just give yourself the option that you
+49:25 
+
+49:25 know may maybe what's been been
+49:27 
+
+49:27 happening for six years now is going to
+49:31 
+
+49:31 continue well well hearing hearing that
+49:34 
+
+49:34 hearing that we are not at diminishing
+49:36 
+
+49:36 returns to scale I'm gonna count that as
+49:37 
+
+49:37 good news and so let's stay on the theme
+49:39 
+
+49:39 of good news I know that you're um
+49:42 
+
+49:42 short-term pessimist long-term Optimist
+49:45 
+
+49:45 can you give us some of the optimistic
+49:47 
+
+49:47 point of view for where where we're
+49:48 
+
+49:48 heading in this world of AI like what
+49:50 
+
+49:50 are the some of the things that you're
+49:51 
+
+49:51 most excited to see in the world in five
+49:54 
+
+49:54 or 10 or 15 years or what whatever you C
+49:57 
+
+49:57 as a longer term Horizon well look I
+49:59 
+
+49:59 think the thing that everybody ought to
+50:01 
+
+50:01 like spend some time thinking about is
+50:04 
+
+50:04 where are the gnarliest zero some
+50:07 
+
+50:07 problems that we have in society like
+50:11 
+
+50:11 where where are the things where like we
+50:13 
+
+50:13 just are fighting with one another or
+50:16 
+
+50:16 you know like we are IM miserating
+50:18 
+
+50:18 people because uh whatever it is that
+50:21 
+
+50:21 people need there doesn't appear to be
+50:23 
+
+50:23 enough of it uh and I think for a good
+50:26 
+
+50:26 number of those things like what you
+50:29 
+
+50:29 have to have to to to turn them into
+50:32 
+
+50:32 non-zero sum games
+50:34 
+
+50:34 to you to create abundance uh and to
+50:38 
+
+50:38 relax some of these constraints is you
+50:40 
+
+50:40 have to have technological breakthroughs
+50:43 
+
+50:43 it's it's like the only thing that
+50:44 
+
+50:44 reliably that's ever turned zero some to
+50:47 
+
+50:47 nonzero sum in in human history is like
+50:50 
+
+50:50 some tech has to come along that like
+50:52 
+
+50:52 you know lets us lets us have more um
+50:56 
+
+50:56 you know like you know whenever Tech
+50:58 
+
+50:58 comes along and like creates more it
+51:00 
+
+51:00 doesn't mean that the more gets uh you
+51:03 
+
+51:03 know equitably and uniformly distributed
+51:06 
+
+51:06 um and and like I think they're real
+51:08 
+
+51:08 conversations to go have about that but
+51:11 
+
+51:11 like what you do want is the more uh and
+51:15 
+
+51:15 you want it to you know be directed at
+51:17 
+
+51:17 things where like we we're just having a
+51:20 
+
+51:20 tough time right now um yeah like I I'll
+51:23 
+
+51:23 tell this uh you know
+51:25 
+
+51:25 story that I've I've told a couple of
+51:28 
+
+51:28 other times recently but you know my mom
+51:30 
+
+51:30 uh like I grew up in rural Central
+51:31 
+
+51:31 Virginia my mom's 74 years old and like
+51:34 
+
+51:34 she's suffered from this thyroid
+51:36 
+
+51:36 condition called Graves disease for 26
+51:38 
+
+51:38 years uh and so you know when you have
+51:41 
+
+51:41 Graves disease your thyroid is
+51:43 
+
+51:43 hyperactive you're generating too much
+51:46 
+
+51:46 thyroid hormone and so they go in and
+51:48 
+
+51:48 like irradiate your thyroid gland uh to
+51:51 
+
+51:51 reduce its activity level and then you
+51:53 
+
+51:53 take hormone uh replacement therapy to
+51:56 
+
+51:56 like upregulate your hormones for the
+51:58 
+
+51:58 rest of your life and so she was having
+52:01 
+
+52:01 some blood pressure issues and her
+52:04 
+
+52:04 doctor you know dorked around with her
+52:06 
+
+52:06 dosage of this hormone medicine and then
+52:09 
+
+52:09 like she just had like some serious
+52:11 
+
+52:11 health issues as a consequence of that
+52:13 
+
+52:13 uh that landed her in the ER in you
+52:16 
+
+52:16 rural Central Virginia like six times
+52:19 
+
+52:19 like in a pretty yeah short number of
+52:22 
+
+52:22 weeks
+52:25 
+
+52:25 and yeah the the intro interesting thing
+52:27 
+
+52:27 there was the first time she went to the
+52:29 
+
+52:29 ER like she was presenting all of these
+52:31 
+
+52:31 cardiac symptoms and it was pretty clear
+52:33 
+
+52:33 they hadn't even read her chart like it
+52:35 
+
+52:35 hadn't registered on them that she had
+52:38 
+
+52:38 Graves disease and like the thing that
+52:40 
+
+52:40 they needed to do was like go order a
+52:42 
+
+52:42 TSH panel to see what her uh like
+52:44 
+
+52:44 thyroid hormone levels were uh like if
+52:48 
+
+52:48 they done that right away um like they
+52:50 
+
+52:50 would have said okay like we got to go
+52:52 
+
+52:52 you know adjust your
+52:55 
+
+52:55 medicine um
+52:57 
+
+52:57 yeah and like I I'm not even ascribing
+52:59 
+
+52:59 ill intent like you know this is a a
+53:02 
+
+53:02 Health Care system that is egregiously
+53:07 
+
+53:07 overburdened like this is not a place
+53:10 
+
+53:10 where you know like you've got this
+53:11 
+
+53:11 influx of you know Talent like coming
+53:14 
+
+53:14 into you this part of the country and
+53:18 
+
+53:18 and like it's a lovely part of the
+53:19 
+
+53:19 country like I I I I like love it um you
+53:23 
+
+53:23 know so like I'm I'm not criticizing
+53:25 
+
+53:25 anything it's just you know they they
+53:27 
+
+53:27 have an aging population and they don't
+53:29 
+
+53:29 have enough like young people coming in
+53:31 
+
+53:31 to be things like doctors to like help
+53:33 
+
+53:33 this Health Care System keep up with all
+53:35 
+
+53:35 of the challenges that they
+53:38 
+
+53:38 have if some of those doctors had had
+53:40 
+
+53:40 access to GPT 4 uh and like it was an
+53:44 
+
+53:44 approved you know product
+53:47 
+
+53:47 use all they would have would have
+53:49 
+
+53:49 needed to do was like put the symptoms
+53:51 
+
+53:51 that she was presenting in and her
+53:54 
+
+53:54 medical record and it would have said
+53:58 
+
+53:58 hey she needs a TSH test and if you
+54:00 
+
+54:00 would put the TSH test result in the
+54:03 
+
+54:03 recommendation it would add was
+54:06 
+
+54:06 like look at the dosage of her uh
+54:08 
+
+54:08 hormone replacement therapy that she's
+54:11 
+
+54:11 on and like if if like this isn't
+54:13 
+
+54:13 theoretical like I I I did this
+54:16 
+
+54:16 um like it it could have helped
+54:19 
+
+54:19 alleviate a massive amount of her
+54:21 
+
+54:21 suffering right now and like I think the
+54:24 
+
+54:24 only reason like that she got out of
+54:27 
+
+54:27 this tough situation that she was in was
+54:30 
+
+54:30 I had to intervene like I I sent her to
+54:34 
+
+54:34 a specialist that was you know 400 miles
+54:37 
+
+54:37 away that she couldn't have gotten into
+54:39 
+
+54:39 without you know special you know and
+54:43 
+
+54:43 like it's it's it's ridiculous like you
+54:46 
+
+54:46 there there are so many 74 year old old
+54:48 
+
+54:48 southern ladies or old Midwestern ladies
+54:51 
+
+54:51 or like folks who are going through
+54:53 
+
+54:53 similar sorts of things who do not have
+54:54 
+
+54:54 someone who's going to go in and
+54:56 
+
+54:56 intervene
+54:57 
+
+54:57 on their behalf who are suffering
+54:59 
+
+54:59 unnecessarily because we're not even
+55:01 
+
+55:01 deploying the technology that we've got
+55:03 
+
+55:03 right now uh and like it's just going to
+55:06 
+
+55:06 get better and so like that's the thing
+55:08 
+
+55:08 that I'm excited about it's like let's
+55:10 
+
+55:10 let's
+55:11 
+
+55:11 go let's go give kids a leg up in
+55:15 
+
+55:15 education let's go fix some of these
+55:17 
+
+55:17 crazy problems we've got in a Health
+55:19 
+
+55:19 Care system that is just you know absent
+55:22 
+
+55:22 technological intervention is just going
+55:24 
+
+55:24 to get more strained over time
+55:27 
+
+55:27 um you know let's equip our scientists
+55:31 
+
+55:31 with better tools so that they can you
+55:34 
+
+55:34 know find better Carbon capture
+55:36 
+
+55:36 catalysts so that uh you know like we
+55:38 
+
+55:38 can
+55:39 
+
+55:39 design safer modes of transportation so
+55:43 
+
+55:43 we can more quickly get to a you know
+55:45 
+
+55:45 like postc carbon economy like it's just
+55:47 
+
+55:47 so many things we can go do with this
+55:50 
+
+55:50 stuff um like I'm super super optimistic
+55:54 
+
+55:54 about it and so you know like just kills
+55:57 
+
+55:57 me
+56:01 
+
+56:01 like what we don't want to do is get
+56:03 
+
+56:03 distracted on uh you know
+56:07 
+
+56:07 like things that
+56:09 
+
+56:09 are um just you know effectively noise
+56:14 
+
+56:14 uh in the ecosystem right now um and you
+56:19 
+
+56:19 know we we're we're getting so sideways
+56:23 
+
+56:23 sometimes with
+56:25 
+
+56:25 um you know like that this model like
+56:29 
+
+56:29 said something that hurt my feelings or
+56:32 
+
+56:32 you know and like and I don't I don't
+56:33 
+
+56:33 want to dismiss like you know people's
+56:35 
+
+56:35 feelings matter and you know I'm not
+56:37 
+
+56:37 trying to be a jerk here but I I do want
+56:40 
+
+56:40 to make sure that as we're thinking
+56:42 
+
+56:42 about how we develop and deploy the
+56:45 
+
+56:45 technology that we are always
+56:47 
+
+56:47 remembering like what the cost of not
+56:50 
+
+56:50 deploying the good is um because that
+56:54 
+
+56:54 that is a high high cost
+56:57 
+
+56:57 mhm very well put yeah yeah here
+57:02 
+
+57:02 s probably a good note to end on I think
+57:07 
+
+57:07 well we have we have one other question
+57:09 
+
+57:09 that we like to ask people on it's a
+57:10 
+
+57:10 quick one so I'm gonna ask I'm GNA ask
+57:12 
+
+57:12 you this one who do you admire most in
+57:15 
+
+57:15 the world of
+57:16 
+
+57:16 AI you know I I I was I was thinking
+57:20 
+
+57:20 about this so I I think it's uh Ray
+57:23 
+
+57:23 salamov um who was one of the
+57:27 
+
+57:27 one of the folks who was at that
+57:30 
+
+57:30 Dartmouth Workshop in the in the 50s
+57:33 
+
+57:33 where you
+57:34 
+
+57:34 know um Marvin Minsky
+57:39 
+
+57:39 and Simon and uh you know like a whole
+57:43 
+
+57:43 bunch of folks convened that summer and
+57:45 
+
+57:45 like they were all interested in machine
+57:47 
+
+57:47 intelligence and they uh they coined the
+57:50 
+
+57:50 the term artificial intelligence at that
+57:52 
+
+57:52 workshop and like the reason that
+57:55 
+
+57:55 salamov is so interesting and like not
+57:57 
+
+57:57 not many people I think know who he is
+58:00 
+
+58:00 outside of computer science is like he
+58:03 
+
+58:03 was the one from the very beginning who
+58:06 
+
+58:06 was pushing on this whole notion that
+58:09 
+
+58:09 probabilistic methods were going to be
+58:11 
+
+58:11 very important for the development of AI
+58:14 
+
+58:14 and you when when I was in grad school
+58:18 
+
+58:18 in the 90s
+58:21 
+
+58:21 um
+58:22 
+
+58:22 the
+58:24 
+
+58:24 prevailing uh academic theories about
+58:27 
+
+58:27 how we were going to get to AI were all
+58:29 
+
+58:29 about like okay well you know like there
+58:31 
+
+58:31 there's some magic you know minimalist
+58:34 
+
+58:34 calculus about human intelligence and
+58:36 
+
+58:36 like we've just got to figure it out and
+58:38 
+
+58:38 it's got to be you know rule-based
+58:40 
+
+58:40 systems and ontologies and you know
+58:44 
+
+58:44 symbolic reasoning and like a bunch of
+58:47 
+
+58:47 like stuff where you know we like we do
+58:51 
+
+58:51 in physics we were going to have to like
+58:52 
+
+58:52 you know Divine you know the the
+58:54 
+
+58:54 inherent Simplicity in the system like
+58:56 
+
+58:56 figure out what the rules are and as
+58:58 
+
+58:58 soon as we understood the rules like
+58:59 
+
+58:59 we'd be able to make software emulate
+59:02 
+
+59:02 human intelligence uh and salamov is
+59:04 
+
+59:04 like no no no like this this is just a
+59:06 
+
+59:06 intelligence is an extraordinarily
+59:09 
+
+59:09 complicated phenomenon uh and like the
+59:12 
+
+59:12 only way that we're ever going to really
+59:14 
+
+59:14 get there is modeling it with uh
+59:17 
+
+59:17 probabilistic methods and he was right
+59:19 
+
+59:19 uh and like he
+59:21 
+
+59:21 was he was judged wrong for a very long
+59:25 
+
+59:25 time uh um and so I I really admire uh
+59:32 
+
+59:32 his
+59:33 
+
+59:33 contrariness
+59:35 
+
+59:35 um yeah all the way back in the 1950s
+59:38 
+
+59:38 and like he's stuck with his uh he stuck
+59:40 
+
+59:40 with his beliefs his entire career and I
+59:42 
+
+59:42 don't know whether Ry actually uh like
+59:44 
+
+59:44 lived to see how right he actually
+59:50 
+
+59:50 was that's a great answer and a great
+59:52 
+
+59:52 story thank you Kevin yeah you're very
+59:55 
+
+59:55 welcome thank you
+59:58 
+
+59:58 [Music]
+60:04 
+
+60:04 [Music]
+60:14 
+
+60:14 [Music]

@@ -1,0 +1,4045 @@
+00:00 go is a complex game and there's there
+00:02 
+
+00:02 was always a bit of worry about whether
+00:04 
+
+00:04 alha go was truly as good as we believed
+00:06 
+
+00:06 so we actually had the conviction that
+00:09 
+
+00:09 know deep reinforced learning is the
+00:11 
+
+00:11 answer based on everything that we could
+00:13 
+
+00:13 measure and everything we could see but
+00:15 
+
+00:15 that's uh the thing about these systems
+00:17 
+
+00:17 is that they're not like classic
+00:19 
+
+00:19 computers where you just like know that
+00:21 
+
+00:21 they always produce the same answer
+00:22 
+
+00:22 they're like stochastic uh they are
+00:24 
+
+00:24 creative and they have like some PL
+00:26 
+
+00:26 Sports they hallucinate like similarly
+00:29 
+
+00:29 to how like model LM cinate
+00:32 
+
+00:32 so you need to just like really push
+00:34 
+
+00:34 them and just like see exactly where
+00:36 
+
+00:36 they break and uh the only way you could
+00:38 
+
+00:38 actually do that is by having like the
+00:40 
+
+00:40 best humans playing against
+00:41 
+
+00:41 [Music]
+00:57 
+
+00:57 them today we're excited to welcome
+00:59 
+
+00:59 Giannis an a researcher and engineer who
+01:02 
+
+01:02 has contributed to some of the most
+01:03 
+
+01:03 significant breakthroughs in AI as a
+01:06 
+
+01:06 founding engineer at Deep Mind jannis
+01:08 
+
+01:08 played a crucial role in developing
+01:10 
+
+01:10 alphago which made history by defeating
+01:13 
+
+01:13 go world champion
+01:15 
+
+01:15 leol he later co-led the development of
+01:18 
+
+01:18 mzero which pushed the boundaries even
+01:20 
+
+01:20 further by mastering multiple games
+01:23 
+
+01:23 autonomously now as he embarks in his
+01:26 
+
+01:26 latest Venture with reflection he's
+01:28 
+
+01:28 focused on building the Next Generation
+01:30 
+
+01:30 of AI
+01:32 
+
+01:32 agents we're excited to talk to Giannis
+01:34 
+
+01:34 about the Breakthrough moments in AI
+01:36 
+
+01:36 history that he's witnessed firstand
+01:39 
+
+01:39 from alphago's famous move 37 to his
+01:42 
+
+01:42 perspective today on what's next for the
+01:45 
+
+01:45 combination of reinforcement learning
+01:46 
+
+01:46 and large language models on the way to
+01:50 
+
+01:50 AGI Yannis thank you so much for joining
+01:53 
+
+01:53 us today thank you so much for having me
+01:55 
+
+01:55 Yannis you have an incredible background
+01:58 
+
+01:58 having worked at deepmind as a founding
+01:59 
+
+01:59 engineer for over a decade um starting
+02:03 
+
+02:03 with some of the most notable projects
+02:04 
+
+02:04 that have really defined the industry
+02:06 
+
+02:06 Deep Mind quite notably um created this
+02:10 
+
+02:10 notion of building AI within games to
+02:13 
+
+02:13 start can you share a little bit more
+02:15 
+
+02:15 about why deep mine chose to start with
+02:17 
+
+02:17 games at the time yeah so tip mine was
+02:20 
+
+02:20 the first company to truly embrace the
+02:22 
+
+02:22 concept of artificial general
+02:24 
+
+02:24 intelligence or AGI from the outset they
+02:26 
+
+02:26 had Grand opitions aiming to build
+02:28 
+
+02:28 systems that would much or exit you
+02:30 
+
+02:30 intelligence so the big question was and
+02:32 
+
+02:32 still is how do you build AGI and more
+02:35 
+
+02:35 importantly how do you measure
+02:36 
+
+02:36 intelligence in a way that allows for
+02:38 
+
+02:38 Meaningful research and performance
+02:40 
+
+02:40 improvements so the idea of using video
+02:42 
+
+02:42 games as a testing ground came naturally
+02:44 
+
+02:44 to Deep Mind Founders it was uh demisis
+02:47 
+
+02:47 and Shane leg because Demis had a
+02:49 
+
+02:49 background in the gaming industry and
+02:50 
+
+02:50 Shane's PhD thesis defined AGI as a
+02:54 
+
+02:54 system that could learn to complete any
+02:56 
+
+02:56 task video games provided a controll yet
+02:58 
+
+02:58 complex environment where this ideas
+03:00 
+
+03:00 could be explored and tested and to what
+03:03 
+
+03:03 extent you mentioned games are they
+03:04 
+
+03:04 provide a very controlled environment to
+03:06 
+
+03:06 what extent are games representative or
+03:08 
+
+03:08 not of the real world like if you have a
+03:10 
+
+03:10 result in games do you think that
+03:12 
+
+03:12 generalizes naturally to the real world
+03:13 
+
+03:13 or not so I mean I guess games have
+03:17 
+
+03:17 indeed been valuable for developing AI
+03:20 
+
+03:20 uh and you actually have like a few
+03:21 
+
+03:21 examples of that so you can see that poo
+03:23 
+
+03:23 for example which is currently being
+03:25 
+
+03:25 used in rhf was developed using openi gy
+03:29 
+
+03:29 and Moko and Ari and similarly we have
+03:31 
+
+03:31 like MCTS which was developed which
+03:34 
+
+03:34 stands from monteal research and was
+03:36 
+
+03:36 developed through board games like Pam
+03:38 
+
+03:38 and go but at the same time games have
+03:41 
+
+03:41 like a number of limitations so the real
+03:43 
+
+03:43 world is a messy is unbounded and uh
+03:46 
+
+03:46 it's it's a much much tougher nut to
+03:49 
+
+03:49 crack than even the most complex games
+03:51 
+
+03:51 so even though they just like gives you
+03:53 
+
+03:53 uh an interesting desp to develop new
+03:55 
+
+03:55 new ideas is definitely uh limiting and
+03:59 
+
+03:59 it doesn't really capture all the
+03:60 
+
+03:60 complexity of the real world okay
+04:02 
+
+04:02 interesting though so but a lot of the
+04:03 
+
+04:03 techniques and algorithms that you've
+04:04 
+
+04:04 developed in a game environment TPO um
+04:08 
+
+04:08 Etc these are used in the real world
+04:10 
+
+04:10 yeah so po was actually like exactly
+04:12 
+
+04:12 what uh chpd used for rlf and um so MCTS
+04:17 
+
+04:17 uh it's used in Museo and uh Museo has
+04:21 
+
+04:21 been used in like in the real world in
+04:23 
+
+04:23 things like uh uh you know compression
+04:25 
+
+04:25 video compression for YouTube um in it
+04:29 
+
+04:29 was part of the sell driving uh system
+04:32 
+
+04:32 at Tesla uh at some time uh uh and it
+04:37 
+
+04:37 was also like used for developing a a
+04:39 
+
+04:39 pilot like that was completely uh
+04:42 
+
+04:42 controlled by nii so yeah I mean you can
+04:45 
+
+04:45 see methods like that being used in the
+04:47 
+
+04:47 world to solve real
+04:49 
+
+04:49 problems so interesting Yannis um I
+04:52 
+
+04:52 remember back in 2017 when alphago the
+04:55 
+
+04:55 movie came out and it featured the
+04:57 
+
+04:57 incredible game of alphago against Le at
+05:00 
+
+05:00 all can you take us back to that moment
+05:03 
+
+05:03 in time and maybe the years leading up
+05:05 
+
+05:05 to it as you're building alphao how was
+05:07 
+
+05:07 alphao specifically chosen as the game
+05:09 
+
+05:09 to focus
+05:10 
+
+05:10 on so I think like games you've always
+05:13 
+
+05:13 been a benchmark for AI research so like
+05:16 
+
+05:16 uh before go you have chess and uh chess
+05:18 
+
+05:18 was like a major Milestone with like IBM
+05:21 
+
+05:21 deep blue defeating G Kasparov in the
+05:23 
+
+05:23 late 90s and um I mean even though you
+05:26 
+
+05:26 know chess and go are completely
+05:28 
+
+05:28 different games and go is definitely
+05:30 
+
+05:30 different past there is a like games
+05:33 
+
+05:33 have always been acted as test BS for
+05:35 
+
+05:35 like the development especially board
+05:37 
+
+05:37 games for the development of like new AI
+05:39 
+
+05:39 methods uh actually even going back to
+05:42 
+
+05:42 the earliest days of AI research uh
+05:45 
+
+05:45 touring and Shannon they both worked on
+05:48 
+
+05:48 their own versions of like chess bots so
+05:50 
+
+05:50 now the thing about like go is that um
+05:54 
+
+05:54 it's a much harder problem than like
+05:56 
+
+05:56 chess and the reason for that is because
+05:57 
+
+05:57 it's almost closely impossible to Define
+05:59 
+
+05:59 an valuation uh method a heuristic so in
+06:03 
+
+06:03 chess you can just like take a look at
+06:04 
+
+06:04 the board you can count the number of
+06:06 
+
+06:06 Pawns that like each side has you can
+06:08 
+
+06:08 see what the ranks of these pawns are
+06:10 
+
+06:10 and then you can just like make some you
+06:13 
+
+06:13 can draw some conclusions on like who is
+06:14 
+
+06:14 winning and why but like in go there's
+06:17 
+
+06:17 there's nothing like that like it's
+06:18 
+
+06:18 mostly human intuition and if you ask
+06:21 
+
+06:21 like a go you know professional player
+06:24 
+
+06:24 like how they know whether whether a
+06:27 
+
+06:27 position is a good one or a bad one they
+06:28 
+
+06:28 will say that like you know after having
+06:29 
+
+06:29 played the game for so long they can
+06:31 
+
+06:31 just like see it in their gut but like
+06:33 
+
+06:33 this is a better position than the other
+06:34 
+
+06:34 one so now it's actually a question of
+06:37 
+
+06:37 how do you encode the feeling in your
+06:40 
+
+06:40 gut into like an AI system right so this
+06:43 
+
+06:43 is exactly the reason why solving go was
+06:45 
+
+06:45 considered the Holy Grail of AIR
+06:47 
+
+06:47 research for a long time and it was a
+06:48 
+
+06:48 challenge that seemed almost impossible
+06:51 
+
+06:51 but at the same time it was like Within
+06:52 
+
+06:52 Reach people felt that like you know
+06:54 
+
+06:54 they could actually get it cracked and
+06:57 
+
+06:57 this is exactly what alphago did uh back
+06:59 
+
+06:59 in 2016
+07:00 
+
+07:00 um and it kind of like showcase uh two
+07:04 
+
+07:04 new methods which is like deep learning
+07:06 
+
+07:06 and reinforcement learning because back
+07:07 
+
+07:07 in 2015 in 2016 like now we kind of
+07:10 
+
+07:10 think of deep learning and reinforc
+07:12 
+
+07:12 learning as mature Technologies but like
+07:14 
+
+07:14 back then we're kind of like literally
+07:15 
+
+07:15 like making the they're taking their
+07:18 
+
+07:18 first steps and they were kind of like
+07:19 
+
+07:19 the new kid in the block um and most
+07:21 
+
+07:21 people were kind of like really
+07:22 
+
+07:22 skeptical about them like everyone
+07:24 
+
+07:24 thought that de planing was a was
+07:26 
+
+07:26 another AI fat that uh would just like
+07:29 
+
+07:29 one last the test of time so yeah I mean
+07:32 
+
+07:32 Alpha go was chosen because it was like
+07:34 
+
+07:34 clear to show J uh that you actually
+07:37 
+
+07:37 have like the most the most performant
+07:40 
+
+07:40 agent in the world you could actually
+07:42 
+
+07:42 evaluate it you can have it play with
+07:44 
+
+07:44 other humans and at the same time it was
+07:46 
+
+07:46 Within Reach given like the latest
+07:48 
+
+07:48 developments in deep learning and foral
+07:49 
+
+07:49 learning I remember reading that there's
+07:51 
+
+07:51 more configurations of of the go board
+07:54 
+
+07:54 than than Adams in the universe by by
+07:57 
+
+07:57 many other than magnitude and that blew
+07:59 
+
+07:59 me away because I grew up playing go and
+08:01 
+
+08:01 it felt like such a you know it's a very
+08:02 
+
+08:02 simple Ru in terms of the rules uh but
+08:05 
+
+08:05 um I see why it was the Holy Growl um
+08:08 
+
+08:08 maybe can you explain how alpha go
+08:10 
+
+08:10 worked uh
+08:11 
+
+08:11 technically maybe explain it to me like
+08:13 
+
+08:13 I'm a fifth grader because that is that
+08:15 
+
+08:15 is effectively my my level of
+08:16 
+
+08:16 sophistication understanding these
+08:17 
+
+08:17 things but how did it work um and you
+08:19 
+
+08:19 mentioned that both reinforcement
+08:21 
+
+08:21 learning and deep learning were involved
+08:22 
+
+08:22 I'd love to peel that back a little bit
+08:25 
+
+08:25 yeah absolutely so um alha go has two
+08:29 
+
+08:29 deep new netw so like t a neural network
+08:32 
+
+08:32 is a function that like takes something
+08:34 
+
+08:34 as an input and produce something as an
+08:36 
+
+08:36 output and it's literally like a black
+08:38 
+
+08:38 box we don't really know exactly how it
+08:39 
+
+08:39 does it just like know that you can
+08:41 
+
+08:41 actually if you train it on enough data
+08:43 
+
+08:43 it'll just like learn the Mapp it will
+08:45 
+
+08:45 learn the function like from input to
+08:47 
+
+08:47 the output space so alphao actually had
+08:50 
+
+08:50 access to two deep networks the policy
+08:52 
+
+08:52 Network and the value Network and the
+08:54 
+
+08:54 policy Network suggested the most
+08:56 
+
+08:56 promising move so it will just take a
+08:57 
+
+08:57 look at a Current Port position and just
+08:60 
+
+08:60 like say okay you know based on the
+09:02 
+
+09:02 current position this is the list of
+09:04 
+
+09:04 moves that I would recommend you just
+09:05 
+
+09:05 like consider playing and it also had
+09:08 
+
+09:08 access to the volum will just take a
+09:10 
+
+09:10 look at like a board position I just
+09:12 
+
+09:12 like give you winning probability like
+09:14 
+
+09:14 what are your chances of actually
+09:15 
+
+09:15 winning the game starting from this
+09:17 
+
+09:17 position this is exactly the gut feeling
+09:20 
+
+09:20 like uh it had like its own gut feeling
+09:22 
+
+09:22 on like whether the position is a good
+09:24 
+
+09:24 one or a bad one so once you have access
+09:26 
+
+09:26 to these two networks then you can
+09:28 
+
+09:28 actually like play in your imagination
+09:29 
+
+09:29 in a number of games you can consider
+09:31 
+
+09:31 like the most promising moves then you
+09:34 
+
+09:34 can consider your opponent's most
+09:35 
+
+09:35 promising moves and then you can just
+09:37 
+
+09:37 like evaluate each mve like the volue
+09:39 
+
+09:39 network and then you know you can use a
+09:41 
+
+09:41 method called minmax what that says is
+09:43 
+
+09:43 that I want to win the game but I also
+09:46 
+
+09:46 like know that my opponent wants to win
+09:48 
+
+09:48 the game so I want just like pick a move
+09:50 
+
+09:50 that will maximize my chances of uh
+09:53 
+
+09:53 winning knowing that like my opponent
+09:55 
+
+09:55 will try to maximize their chance of
+09:57 
+
+09:57 winning so if you actually like do that
+09:59 
+
+09:59 and simulate a bunch of moves then you
+10:02 
+
+10:02 can just like get the optimal action and
+10:05 
+
+10:05 you know the way to just like do this
+10:07 
+
+10:07 imagination this planning this search uh
+10:10 
+
+10:10 in the most efficient way is by using a
+10:13 
+
+10:13 a treets method called multical Treet so
+10:16 
+
+10:16 MCTS so whenever people talk about uh
+10:19 
+
+10:19 MCTS they literally just like mean this
+10:21 
+
+10:21 euristic of how do I you know how do I
+10:24 
+
+10:24 choose which Futures to consider so that
+10:27 
+
+10:27 like I can make informed decisions the
+10:29 
+
+10:29 role for reinforce learning and TP
+10:30 
+
+10:30 learning and building Alpha go was that
+10:33 
+
+10:33 uh Alpha go first of all was a success
+10:36 
+
+10:36 of reinforcing learning and TP learning
+10:38 
+
+10:38 uh because like this is exactly the two
+10:39 
+
+10:39 methods that powered off go and uh the
+10:42 
+
+10:42 policy network was initially trained on
+10:46 
+
+10:46 uh a large set of human games so you had
+10:48 
+
+10:48 like many games played by uh human
+10:51 
+
+10:51 professionals and you just like consider
+10:53 
+
+10:53 every position and you consider the move
+10:55 
+
+10:55 they took at this position and then you
+10:57 
+
+10:57 have like deepbrook that tries to
+10:59 
+
+10:59 predict uh this move then once you have
+11:02 
+
+11:02 the policy Network you need to somehow
+11:04 
+
+11:04 find a way to just like obtain a value
+11:06 
+
+11:06 Network so we did it in two ways first
+11:09 
+
+11:09 we just took the policy Network and we
+11:10 
+
+11:10 had it play against itself and we used
+11:13 
+
+11:13 reinforcement learning to uh to improve
+11:16 
+
+11:16 it to improve the the blank strength of
+11:18 
+
+11:18 model so we use a technique called
+11:21 
+
+11:21 policy gradient so what policy gradient
+11:23 
+
+11:23 does is that it just like looks at the
+11:25 
+
+11:25 game and then it looks at the outcome
+11:27 
+
+11:27 this is the simplest version kind of
+11:28 
+
+11:28 like of Po it looks at the outcome of
+11:31 
+
+11:31 the game and for all the moves that led
+11:34 
+
+11:34 to a win they just like say great you
+11:36 
+
+11:36 know just increase the probability of
+11:38 
+
+11:38 choosing this move and for all the moves
+11:40 
+
+11:40 that led to a loss it says great now
+11:42 
+
+11:42 decrease the probability of like this
+11:44 
+
+11:44 move being selected in the future and if
+11:46 
+
+11:46 you do that like you know for many games
+11:48 
+
+11:48 and for long enough then you just like
+11:50 
+
+11:50 get an improved policy now once you have
+11:52 
+
+11:52 this improved policy you can just
+11:54 
+
+11:54 generate a new data set of games where
+11:56 
+
+11:56 like the policy plays against itself and
+11:58 
+
+11:58 then you have like a huge amount of
+12:00 
+
+12:00 games where for each position you know
+12:02 
+
+12:02 who the final winner was so then you can
+12:05 
+
+12:05 take this network you can take another
+12:06 
+
+12:06 Network a value Network and have it
+12:08 
+
+12:08 predict the outcome of the game based on
+12:11 
+
+12:11 a on the current position so what the
+12:14 
+
+12:14 network learn is that if I start at this
+12:16 
+
+12:16 position and I play under my current
+12:19 
+
+12:19 policy on average this is the player who
+12:21 
+
+12:21 wins like it's either a black player or
+12:23 
+
+12:23 their white player so uh this is the
+12:27 
+
+12:27 first version of like a value Network
+12:28 
+
+12:28 and you can just like use it within Al
+12:30 
+
+12:30 go by combining it with the police
+12:32 
+
+12:32 Network and what were some of the
+12:33 
+
+12:33 biggest challenges in building this and
+12:36 
+
+12:36 how did you overcome them yeah so Alo
+12:39 
+
+12:39 was not just the r challenge but was
+12:41 
+
+12:41 mostly I'd say an engineering Marvel it
+12:43 
+
+12:43 was uh the early versions run on 1,00
+12:47 
+
+12:47 CPUs and 176 gpus and the version that
+12:50 
+
+12:50 played against listed old used 48 tpus
+12:53 
+
+12:53 so like tpus for like the first
+12:56 
+
+12:56 accelerator custom
+12:57 
+
+12:57 accelerators and this were like uh these
+13:00 
+
+13:00 accelerators were like really primitive
+13:02 
+
+13:02 back the end because literally it was
+13:03 
+
+13:03 like the first version right like now
+13:05 
+
+13:05 the later accelerators are much much
+13:07 
+
+13:07 better and much more stable so the
+13:10 
+
+13:10 system had to be highly optimized to
+13:12 
+
+13:12 minimize latency maximize trut we had to
+13:14 
+
+13:14 build large scale infrastructure uh for
+13:17 
+
+13:17 training these networks and it was a
+13:19 
+
+13:19 massive Endeavor just required a lot of
+13:21 
+
+13:21 coordinated effort from many Talent
+13:23 
+
+13:23 individuals working on different aspects
+13:25 
+
+13:25 of the project but uh you know I just
+13:27 
+
+13:27 like walked you through a number of
+13:29 
+
+13:29 steps just like obtain the policy
+13:30 
+
+13:30 Network and the value Network and each
+13:33 
+
+13:33 of these steps had to just be Implement
+13:35 
+
+13:35 at the at the limits of like what was a
+13:37 
+
+13:37 available and what was uh possible back
+13:39 
+
+13:39 then in terms of scale and it had to be
+13:41 
+
+13:41 implemented in a way where people could
+13:43 
+
+13:43 just like think everything it they could
+13:45 
+
+13:45 just like try the resist ideas fast and
+13:47 
+
+13:47 get results results fast so yeah lots of
+13:51 
+
+13:51 people uh scale in you know at levels
+13:56 
+
+13:56 that hadn't been implemented before and
+13:59 
+
+13:59 it's kind of like working at the
+14:00 
+
+14:00 Forefront of what was cap what was
+14:03 
+
+14:03 possible back then I love your highlight
+14:05 
+
+14:05 of it being a research Marvel and an
+14:06 
+
+14:06 engineering Marvel and I remember you
+14:08 
+
+14:08 sharing one time that part of the reason
+14:10 
+
+14:10 this project came about also was because
+14:12 
+
+14:12 Google had tpus that they needed to they
+14:15 
+
+14:15 needed a test customer for and that was
+14:17 
+
+14:17 the spark this alpha alpha go project so
+14:20 
+
+14:20 that's pretty incredible how much
+14:22 
+
+14:22 conviction did the Deep Mind team have
+14:24 
+
+14:24 that this is going to work you mentioned
+14:25 
+
+14:25 that you know at the time deep learning
+14:27 
+
+14:27 reinforcement learning were still Rel
+14:29 
+
+14:29 atively novel but deep mind was very
+14:31 
+
+14:31 much founded with that belief but did
+14:33 
+
+14:33 you guys think that you were going to be
+14:34 
+
+14:34 able to have kind of these super human
+14:36 
+
+14:36 level results beating the top go player
+14:38 
+
+14:38 in the world like was it a crazy idea
+14:41 
+
+14:41 and maybe it'll work or did the team
+14:43 
+
+14:43 have conviction like this is going to
+14:44 
+
+14:44 work yeah so at say Tech the team had a
+14:48 
+
+14:48 cautious optimism so one of alpha Go's
+14:51 
+
+14:51 Le lead developers AA H uh he is a
+14:54 
+
+14:54 strong amateur go player and he had been
+14:56 
+
+14:56 working on goal for like a decade before
+14:59 
+
+14:59 Al go happened and we also had like a
+15:01 
+
+15:01 lead report of a computer game of
+15:03 
+
+15:03 computer players and you could see that
+15:05 
+
+15:05 alago was significantly stronger than
+15:07 
+
+15:07 anything that had come before but go is
+15:09 
+
+15:09 a complex game and there's there was
+15:11 
+
+15:11 always a bit of worry about whether
+15:13 
+
+15:13 Alpha go was truly as good as we
+15:14 
+
+15:14 believed so we actually had the
+15:17 
+
+15:17 conviction that you know deep reinforce
+15:19 
+
+15:19 learning is the answer based on
+15:21 
+
+15:21 everything that we could measure and
+15:22 
+
+15:22 everything we could see but that's uh
+15:25 
+
+15:25 the thing about these systems is that
+15:27 
+
+15:27 you know the they're not like classic
+15:30 
+
+15:30 computers where you just like know that
+15:32 
+
+15:32 they always produce the same answer
+15:34 
+
+15:34 they're like stochastic uh they're are
+15:36 
+
+15:36 creative uh so and they they they all
+15:40 
+
+15:40 have like the the they have like some
+15:41 
+
+15:41 blind Sports they hallucinate like
+15:43 
+
+15:43 similarly to how like model LMS cinate
+15:47 
+
+15:47 so you need to just like really push
+15:49 
+
+15:49 them and just like see exactly where
+15:51 
+
+15:51 they break and uh the only way you could
+15:54 
+
+15:54 actually do that is by having like the
+15:55 
+
+15:55 best humans playing against them um move
+15:58 
+
+15:58 37 can can you tell us what that was it
+16:00 
+
+16:00 was such a Monumental move and I think
+16:02 
+
+16:02 everyone watching it at the time uh it
+16:05 
+
+16:05 was and least at all maybe primarily was
+16:07 
+
+16:07 confused by that move um what was going
+16:10 
+
+16:10 on in your head when that
+16:12 
+
+16:12 happened so yeah I mean uh move 37 uh
+16:16 
+
+16:16 yeah in game two against L was literally
+16:19 
+
+16:19 just a spectacular moment in the sense
+16:22 
+
+16:22 that kind of showed case to the world
+16:24 
+
+16:24 that Alpha go has creativity and it
+16:26 
+
+16:26 demonstrated that AI could come up with
+16:28 
+
+16:28 straty that even top human players
+16:30 
+
+16:30 hadn't considered so at first like I
+16:33 
+
+16:33 still remember that like we thought that
+16:35 
+
+16:35 alphao made an error so that uh it
+16:37 
+
+16:37 actually like hallucinated he did
+16:39 
+
+16:39 something that like it didn't mean to do
+16:41 
+
+16:41 but then turned out to be a brilliant a
+16:42 
+
+16:42 conventional move that underscore that
+16:44 
+
+16:44 the system had a deep understanding of
+16:45 
+
+16:45 the game that the system actually had
+16:47 
+
+16:47 like U creativity it could think of
+16:51 
+
+16:51 things that like people hadn't thought
+16:53 
+
+16:53 off before I want to take us to another
+16:55 
+
+16:55 key move in the game I think it was in
+16:56 
+
+16:56 game four at this point I was rooting
+16:58 
+
+16:58 for a leag because I was like a poor guy
+16:60 
+
+17:00 needs to win a game um move 78 I think I
+17:03 
+
+17:03 think uh alphao made a mistake and Leisa
+17:06 
+
+17:06 don't know this is it um I guess what
+17:09 
+
+17:09 was the weakness there uh that Lee found
+17:11 
+
+17:11 during the game yeah exactly so I mean
+17:13 
+
+17:13 Lista do fix in game four was literally
+17:15 
+
+17:15 a testament to human Ingenuity like move
+17:18 
+
+17:18 move 78 was unexpected and called Al go
+17:21 
+
+17:21 of guard initially Al go like based on
+17:24 
+
+17:24 its evaluations Mis interpreted as a
+17:26 
+
+17:26 mistake and thought that it was actually
+17:28 
+
+17:28 like winning so that's why it didn't
+17:30 
+
+17:30 respond appropriately and you know this
+17:33 
+
+17:33 kind of highlighted a blind spot in the
+17:34 
+
+17:34 system so the game show that like while
+17:38 
+
+17:38 uh systems like afo are extremely
+17:39 
+
+17:39 powerful at the same time they still
+17:41 
+
+17:41 have vulnerabilities and there were like
+17:43 
+
+17:43 still areas where you could uh further
+17:45 
+
+17:45 improve it but how do you go about
+17:47 
+
+17:47 improving something like that do you do
+17:48 
+
+17:48 you need to show it a lot more data of
+17:51 
+
+17:51 you know kind of that type of human
+17:53 
+
+17:53 engine move or or how do you go about
+17:55 
+
+17:55 fixing and and patching those those
+17:57 
+
+17:57 blind so yeah I mean it's actually
+17:58 
+
+17:58 interesting that that uh by the end of
+18:01 
+
+18:01 uh the games with like lcid all which
+18:03 
+
+18:03 just like put together a benchmark where
+18:05 
+
+18:05 you're just kind of like uh trying to
+18:08 
+
+18:08 quantify and just have a way of
+18:10 
+
+18:10 measuring U the mistakes that like afo
+18:12 
+
+18:12 makes and you know these SC blind spots
+18:14 
+
+18:14 let's say and then we just write a
+18:16 
+
+18:16 number of approaches to just like
+18:18 
+
+18:18 improve the algorithm so that we can you
+18:20 
+
+18:20 know solve these issues um and what
+18:24 
+
+18:24 happened is that actually the most
+18:28 
+
+18:28 effective way of getting rid of them was
+18:30 
+
+18:30 just like do what we were doing just
+18:32 
+
+18:32 like at a at higher scale and better so
+18:35 
+
+18:35 just like uh change the the architecture
+18:38 
+
+18:38 of the model we just like switch to a
+18:39 
+
+18:39 deep breast net with uh two output heads
+18:42 
+
+18:42 and we also like uh uh we just had a
+18:46 
+
+18:46 bigger Network trend on more data uh
+18:48 
+
+18:48 then just like mve to Alpha zero and
+18:50 
+
+18:50 better algorithms and that kind of like
+18:51 
+
+18:51 made it so that we didn't have any
+18:54 
+
+18:54 hallucinations anymore so in a way just
+18:56 
+
+18:56 like scale data you know things that uh
+19:00 
+
+19:00 are always kind of the the the the
+19:02 
+
+19:02 well-known recipe in the field of AI is
+19:05 
+
+19:05 exactly what sold it in RJ to with scale
+19:08 
+
+19:08 and data how much did higher quality
+19:10 
+
+19:10 data or maybe specifically data from
+19:13 
+
+19:13 great professional players the best
+19:15 
+
+19:15 professional players make a meaningful
+19:17 
+
+19:17 difference or was it just any data no
+19:19 
+
+19:19 for us What mattered was that the we
+19:22 
+
+19:22 kind of like solved it using um selfplay
+19:24 
+
+19:24 yeah so we actually had access to the
+19:28 
+
+19:28 most uh
+19:29 
+
+19:29 competent go player in the world and we
+19:32 
+
+19:32 just like used it to generate the best
+19:35 
+
+19:35 quality games and then we just trained
+19:36 
+
+19:36 on these games so I guess like you know
+19:39 
+
+19:39 the we didn't need to have like human
+19:41 
+
+19:41 experts because you had like a n experts
+19:44 
+
+19:44 in house it wasn't human huh
+19:47 
+
+19:47 interesting amazing well I'd love to
+19:49 
+
+19:49 move on to the progression from alpha go
+19:51 
+
+19:51 to Alpha zero and um you talked a little
+19:54 
+
+19:54 bit about this notion of selfplay just
+19:55 
+
+19:55 now Alpha zero was powerful because it
+19:58 
+
+19:58 learned how to play the G game from
+19:60 
+
+19:60 scratch um entirely from self-play
+20:03 
+
+20:03 without any human intervention can you
+20:05 
+
+20:05 share more about how that worked and and
+20:07 
+
+20:07 why that was important so Alpha zero was
+20:09 
+
+20:09 a game changer because it land entirely
+20:11 
+
+20:11 from scratch through S play without any
+20:13 
+
+20:13 human data and this was like a major Rel
+20:16 
+
+20:16 from alphao because like alphao as I
+20:17 
+
+20:17 said relied heavily on human exper gains
+20:20 
+
+20:20 so two things happened first of all
+20:22 
+
+20:22 alpha alpha zero managed to simplify the
+20:24 
+
+20:24 training process and also like showed
+20:27 
+
+20:27 that AI just like get from zero to
+20:30 
+
+20:30 superh Human Performance just purely by
+20:33 
+
+20:33 playing against itself and that allowed
+20:35 
+
+20:35 it to just be applicable to a whole
+20:37 
+
+20:37 range of like new domains that were Out
+20:39 
+
+20:39 Of Reach because like there wasn't there
+20:41 
+
+20:41 weren't enough like human data for it
+20:43 
+
+20:43 but um I think like the the more the
+20:46 
+
+20:46 more important thing is that we just we
+20:48 
+
+20:48 just saw that Alpha zero also solved all
+20:50 
+
+20:50 the issues that like Alpha go had in
+20:52 
+
+20:52 terms of hallucinations in terms of uh
+20:55 
+
+20:55 uh you know BL spots and robustness so
+20:59 
+
+20:59 like Alpha Z was like a better method
+21:01 
+
+21:01 Just You full
+21:03 
+
+21:03 star and you you explained kind of how
+21:06 
+
+21:06 alpha go worked to to a fifth grader um
+21:09 
+
+21:09 what would you tell the fifth grader
+21:10 
+
+21:10 would be the key difference um
+21:11 
+
+21:11 technically that you that You'
+21:12 
+
+21:12 implemented with Alpha zero so Alpha
+21:14 
+
+21:14 zero just like Alo uses a policy Network
+21:17 
+
+21:17 and value Network along with modales so
+21:19 
+
+21:19 in that respect it's exactly the same as
+21:21 
+
+21:21 Alo so the key difference is in training
+21:24 
+
+21:24 Alpha zero starts with random weights
+21:26 
+
+21:26 and lears by playing games against
+21:28 
+
+21:28 itself and uh by playing games against
+21:31 
+
+21:31 itself it iteratively improves its
+21:33 
+
+21:33 performance but the main idea behind
+21:35 
+
+21:35 Alpha zero is that whenever you take a
+21:38 
+
+21:38 set of Weights a set of uh policy and
+21:41 
+
+21:41 value Nets and then you just combine
+21:43 
+
+21:43 them with search then you just like end
+21:45 
+
+21:45 up with a better playing uh better
+21:49 
+
+21:49 player uh you just like increase your
+21:51 
+
+21:51 performance you just like become a
+21:52 
+
+21:52 stronger player so what that meant is
+21:56 
+
+21:56 that we can actually use this mechanism
+21:58 
+
+21:58 to improve the the model policy the role
+22:01 
+
+22:01 policy so this is what we call in the in
+22:03 
+
+22:03 reinforcement learning a policy
+22:05 
+
+22:05 Improvement operator whenever you can
+22:07 
+
+22:07 just like take an existing policy and
+22:09 
+
+22:09 then do something some magic and then
+22:11 
+
+22:11 just like uh come up with like a better
+22:13 
+
+22:13 policy and then you can just like take
+22:15 
+
+22:15 this policy and distill it back to the
+22:16 
+
+22:16 initial policy and they just repeat this
+22:18 
+
+22:18 process then you have like a reinforced
+22:20 
+
+22:20 learning algorithm and I think like you
+22:22 
+
+22:22 know this is exactly what people are
+22:23 
+
+22:23 trying to do uh today with like uh you
+22:26 
+
+22:26 know two star or like uh you you know
+22:29 
+
+22:29 synthetic data this exactly the idea of
+22:31 
+
+22:31 like how can I take a policy do
+22:33 
+
+22:33 something with it planning search um
+22:36 
+
+22:36 compute whatever it is and derive a
+22:39 
+
+22:39 better policy which I can then imitate
+22:41 
+
+22:41 and just like kind of distill back to
+22:44 
+
+22:44 the original policy so this is exactly
+22:46 
+
+22:46 what Alpha zero is doing it uses it MCTS
+22:48 
+
+22:48 sech to produce a better policy then it
+22:52 
+
+22:52 takes his trajectories it trains this
+22:53 
+
+22:53 policy and value Network on the new
+22:55 
+
+22:55 better trajectories and it repeats this
+22:58 
+
+22:58 process until converges to the you know
+22:60 
+
+22:60 to an expert level U goal player that's
+23:03 
+
+23:03 fascinating and counterintuitive that
+23:05 
+
+23:05 kind of like starting without the the
+23:07 
+
+23:07 the weights that you would have from
+23:09 
+
+23:09 from you know professional level players
+23:12 
+
+23:12 is actually a better starting place the
+23:14 
+
+23:14 epitome of um AI agents and games have
+23:17 
+
+23:17 achieved I think via muzero which is the
+23:19 
+
+23:19 progression even from alpha zero itself
+23:21 
+
+23:21 and it's also where you became one of
+23:22 
+
+23:22 the co-leads or one of the leads of of
+23:25 
+
+23:25 the game um Alpha zero was obviously
+23:28 
+
+23:28 impressive because of selfplay but it
+23:30 
+
+23:30 also needed to be told the environment's
+23:33 
+
+23:33 Dynamics um or the rules of the game and
+23:36 
+
+23:36 musero takes us to the next level um
+23:39 
+
+23:39 without needing to be told the rules of
+23:40 
+
+23:40 the game and and it mastered quite a few
+23:42 
+
+23:42 different games um go chess and and many
+23:46 
+
+23:46 others can you share a little bit about
+23:48 
+
+23:48 how muzero worked and um uh why was this
+23:52 
+
+23:52 particular particularly meaningful
+23:55 
+
+23:55 absolutely so Alpha Z you know as you
+23:57 
+
+23:57 said was a massive success uh in games
+23:59 
+
+23:59 like chess go uh Shi so uh in games
+24:03 
+
+24:03 where we actually had access to the game
+24:05 
+
+24:05 rules where we actually had access to a
+24:06 
+
+24:06 perfect simulator simulator of the world
+24:09 
+
+24:09 but like uh these two lands on the
+24:10 
+
+24:10 perfect simulator made it challenging to
+24:12 
+
+24:12 apply to real world problems uh and real
+24:15 
+
+24:15 world problems are often messy and they
+24:17 
+
+24:17 lack clear rules and it's really hard to
+24:18 
+
+24:18 just like write the preference simulate
+24:20 
+
+24:20 of them so that's exactly what Museo
+24:22 
+
+24:22 tried to solve so M Masters the games of
+24:25 
+
+24:25 course like go chess and SOI but it also
+24:27 
+
+24:27 like Masters more visually challenging
+24:29 
+
+24:29 games or games that like are hard go
+24:31 
+
+24:31 like Atari and it does that without
+24:33 
+
+24:33 having access to the simulator just like
+24:35 
+
+24:35 learns how to build an internal
+24:38 
+
+24:38 simulator of the world and then just use
+24:40 
+
+24:40 this internal simulator in a way similar
+24:42 
+
+24:42 to what Alpha Zer was doing so it hases
+24:44 
+
+24:44 that by using model based reinforcement
+24:46 
+
+24:46 learning where what that means is that
+24:49 
+
+24:49 you can just take a number of
+24:50 
+
+24:50 trajectories generated by an agent and
+24:53 
+
+24:53 then try and you know learn a model
+24:56 
+
+24:56 learn a prediction model of how the
+24:57 
+
+24:57 Vault works so this is actually like
+24:59 
+
+24:59 quite similar to what methods like Sora
+25:02 
+
+25:02 are trying to do now where they just
+25:03 
+
+25:03 like take uh YouTube videos and they try
+25:06 
+
+25:06 just like learn a world model by just
+25:08 
+
+25:08 trying to predict based on starting from
+25:11 
+
+25:11 one frame what's going to happen in the
+25:13 
+
+25:13 future frames so new tries to do exactly
+25:15 
+
+25:15 that but it it does it in a way
+25:19 
+
+25:19 different from you know generative
+25:20 
+
+25:20 models in the sense that it tries to
+25:22 
+
+25:22 only model things that matter for uh
+25:24 
+
+25:24 solving the reinforc learning problem so
+25:26 
+
+25:26 he tries to uh to to predict what the
+25:30 
+
+25:30 rewards going to be in the future what's
+25:32 
+
+25:32 the value of like future States what's
+25:33 
+
+25:33 the value of like future uh what's the
+25:36 
+
+25:36 policy for like future States so only
+25:38 
+
+25:38 things that you need within your MCTS
+25:40 
+
+25:40 but you know the fundamentals kind of
+25:41 
+
+25:41 like remain the same so how do you just
+25:43 
+
+25:43 like learn a model based on trajectories
+25:45 
+
+25:45 and then once you have this model you
+25:47 
+
+25:47 can just combine to search and um you
+25:49 
+
+25:49 know get super human performance so it
+25:52 
+
+25:52 if of course like you can always
+25:54 
+
+25:54 decouple the two problems and have like
+25:56 
+
+25:56 the model been trained separately from
+25:58 
+
+25:58 you know data out in the wild and then
+25:60 
+
+25:60 just like combine that with new
+26:02 
+
+26:02 zero and we just found that back then
+26:06 
+
+26:06 given the limitations of like our models
+26:09 
+
+26:09 and the smaller sizes kind of like made
+26:12 
+
+26:12 more sense to just like keep those two
+26:13 
+
+26:13 together and only have the model predict
+26:16 
+
+26:16 things that matter for uh planning
+26:18 
+
+26:18 instead of just like try to model
+26:19 
+
+26:19 everything because you're kind of
+26:21 
+
+26:21 hitting the limits of what the capacity
+26:23 
+
+26:23 of the model uh could uh could take so
+26:26 
+
+26:26 interesting is it right to assume that
+26:28 
+
+26:28 that not only Sora you know takes the
+26:31 
+
+26:31 same approach but maybe other world
+26:32 
+
+26:32 models or other robotics Foundation
+26:34 
+
+26:34 models yeah so anything that tries to
+26:37 
+
+26:37 just like build a model of how the world
+26:39 
+
+26:39 works and then just like use that uh for
+26:42 
+
+26:42 planning it's within you know new zero
+26:46 
+
+26:46 like methods so yeah you can just like
+26:48 
+
+26:48 uh train it on YouTube videos you can
+26:50 
+
+26:50 train it on like uh the inputs coming
+26:52 
+
+26:52 from like robots you can train it on you
+26:55 
+
+26:55 know any any environment you can even
+26:57 
+
+26:57 think of like CL language models as a
+26:59 
+
+26:59 form of models of like text so like they
+27:02 
+
+27:02 they the model text but the the thing
+27:05 
+
+27:05 about text is that like the model is a
+27:06 
+
+27:06 bit trivial like you you don't need to
+27:08 
+
+27:08 just there aren't many artifacts
+27:10 
+
+27:10 happening when you're trying to predict
+27:11 
+
+27:11 what the next world is going to be right
+27:13 
+
+27:13 so have you seen the ideas behind muzero
+27:16 
+
+27:16 kind of be used um outside gameplay or
+27:19 
+
+27:19 or in in messy real world
+27:22 
+
+27:22 environments so yeah I mean
+27:25 
+
+27:25 so as I've said um Alpha zero your quite
+27:29 
+
+27:29 General methods and they were like uh
+27:32 
+
+27:32 there's a number of scientific
+27:33 
+
+27:33 communities um in chemistry so there's
+27:35 
+
+27:35 Alpha cam in Quantum Computing some
+27:37 
+
+27:37 people tried to use Alpha zero in
+27:39 
+
+27:39 optimization where they just like
+27:41 
+
+27:41 adopted Alpha zero because uh it was
+27:43 
+
+27:43 really powerful in really doing planning
+27:46 
+
+27:46 and like solving this optimization uh
+27:48 
+
+27:48 problems at the same time uero was
+27:50 
+
+27:50 incorporated in a version of like Tesla
+27:53 
+
+27:53 sell driving system it was kind of
+27:54 
+
+27:54 reported in their AI day and um it was
+27:58 
+
+27:58 all Al uh used and I think it's
+28:00 
+
+28:00 currently being used uh within YouTube
+28:03 
+
+28:03 as a custom cation algorithm but I think
+28:06 
+
+28:06 you know we it's it's early days and uh
+28:10 
+
+28:10 takes time for like these new
+28:11 
+
+28:11 technologies to be fully adopted um from
+28:14 
+
+28:14 by by the industry we'd love to talk a
+28:16 
+
+28:16 little bit more about reinforcement
+28:17 
+
+28:17 learning in agents um you alluded
+28:20 
+
+28:20 earlier to the fact that reinforcement
+28:21 
+
+28:21 learning and deep learning back in 2015
+28:23 
+
+28:23 were new inent ideas they really you
+28:27 
+
+28:27 know grew in popularity 2017 2018 2019
+28:31 
+
+28:31 onwards um and then they were
+28:33 
+
+28:33 overshadowed by llms um uh largely
+28:36 
+
+28:36 because of um uh the GPT and everything
+28:39 
+
+28:39 else that came out but now reinforcement
+28:41 
+
+28:41 learning is back why do you think that
+28:44 
+
+28:44 is the case yeah I mean first of all
+28:46 
+
+28:46 llms and multimodel models have indeed
+28:48 
+
+28:48 brought incredible progress to AI so
+28:50 
+
+28:50 these models are exceptionally powerful
+28:53 
+
+28:53 and can perform some truly impessive
+28:54 
+
+28:54 tasks uh but they have like some
+28:56 
+
+28:56 fundamental um limit ations and one of
+28:59 
+
+28:59 them is the availability of like human
+29:01 
+
+29:01 data uh people just keep talking about
+29:03 
+
+29:03 the data wall and what happens once you
+29:06 
+
+29:06 run out of like high quality data and
+29:08 
+
+29:08 this exactly where reinforc learning
+29:10 
+
+29:10 signs so reinforc learning excels
+29:13 
+
+29:13 because it doesn't rely Sol on
+29:15 
+
+29:15 pre-existing human data instead
+29:16 
+
+29:16 reinforcement learning uses experience
+29:18 
+
+29:18 generated by the agent itself to improve
+29:20 
+
+29:20 its performance so this self-generate
+29:23 
+
+29:23 experience allows dreamforce learning to
+29:24 
+
+29:24 learn and adapt and to even adapt to
+29:28 
+
+29:28 scenarios where human data is scarce or
+29:30 
+
+29:30 like non-existent so if you define the
+29:34 
+
+29:34 reward the reinforcement learning
+29:36 
+
+29:36 problem in the right setting in the in
+29:37 
+
+29:37 the right way you can literally
+29:39 
+
+29:39 effectively exchange compute for
+29:40 
+
+29:40 intelligence you can just like get to a
+29:42 
+
+29:42 point similar to where we were with alao
+29:45 
+
+29:45 where we just like the the moment we
+29:47 
+
+29:47 threw more computer at it like we made
+29:49 
+
+29:49 the networks bigger we just like you
+29:50 
+
+29:50 know used more games we just literally
+29:52 
+
+29:52 got a better player and it was uh
+29:54 
+
+29:54 deterministic you always get a better
+29:56 
+
+29:56 player so I guess this is this is
+29:58 
+
+29:58 exactly where we want to be with like
+30:00 
+
+30:00 the synthetic data pipelines currently
+30:03 
+
+30:03 we have that with um you know the
+30:05 
+
+30:05 scaling clause in llms that if you have
+30:07 
+
+30:07 like more data and bigger models then
+30:09 
+
+30:09 you get like a you know you can predict
+30:11 
+
+30:11 that there's going to be an improvement
+30:12 
+
+30:12 in performance but you know once you run
+30:14 
+
+30:14 out of like uh human data how do you
+30:17 
+
+30:17 just keep going and synthetic data is
+30:19 
+
+30:19 like the answer to that and the the only
+30:23 
+
+30:23 way uh that you know you can actually
+30:26 
+
+30:26 get high call during Force learning uh
+30:29 
+
+30:29 high quality data to just like improve
+30:31 
+
+30:31 your model is like via some form of
+30:33 
+
+30:33 reinforcement learning and just like
+30:35 
+
+30:35 leaving I'm just like keeping reinforce
+30:37 
+
+30:37 learning as a really kind of blanket
+30:40 
+
+30:40 term here where I just like Define it as
+30:42 
+
+30:42 anything that learns through trial and
+30:44 
+
+30:44 error how do you think uh reinforcement
+30:46 
+
+30:46 learning is is being brought into the
+30:48 
+
+30:48 kind of like LM world and and you
+30:50 
+
+30:50 mentioned qar earlier um like I guess in
+30:55 
+
+30:55 in a close form game you have like a
+30:57 
+
+30:57 pretty clearly defined policy and value
+30:59 
+
+30:59 function how does that work uh in like a
+31:02 
+
+31:02 messy kind of real world environment or
+31:05 
+
+31:05 the llm world so I mean I guess like uh
+31:09 
+
+31:09 there are two different types of like
+31:10 
+
+31:10 messy real world right like there is the
+31:13 
+
+31:13 if you try to just like build a
+31:14 
+
+31:14 controller or something that's a really
+31:16 
+
+31:16 messy environment and then if you if you
+31:18 
+
+31:18 operate in the digital space so
+31:21 
+
+31:21 personally I believe that uh digal AGI
+31:24 
+
+31:24 which is happen much earlier than you
+31:26 
+
+31:26 know robotics AGI and there isas reason
+31:28 
+
+31:28 for that exactly that you have control
+31:30 
+
+31:30 over the environment and the environment
+31:32 
+
+31:32 like computer is like the digital world
+31:35 
+
+31:35 so even though it's like messy and noisy
+31:37 
+
+31:37 um it's still contained it's not like
+31:39 
+
+31:39 the the real kind of flying World in
+31:42 
+
+31:42 that sense so now in terms of um how do
+31:46 
+
+31:46 you bring like reinforcement learning so
+31:48 
+
+31:48 reinforcement learning is uh there we
+31:52 
+
+31:52 you used to say in deep mind that you
+31:54 
+
+31:54 have like the the problem and you have
+31:55 
+
+31:55 the solution and the problem setting of
+31:57 
+
+31:57 reinforcement learning is how do I take
+31:59 
+
+31:59 a model how do I take a policy and
+32:01 
+
+32:01 generate synthetic data or like I I I I
+32:04 
+
+32:04 learn I find a way to improve this
+32:06 
+
+32:06 policy by interacting with the
+32:08 
+
+32:08 environment by a trial and error and
+32:10 
+
+32:10 this like the reinforced larning problem
+32:12 
+
+32:12 setting right and then there's like the
+32:13 
+
+32:13 solution space where you have um value
+32:16 
+
+32:16 functions and have like U reinforced
+32:18 
+
+32:18 learning methods so I think that there's
+32:21 
+
+32:21 a lot of uh inspiration to draw from
+32:23 
+
+32:23 like classical reinforcement learning
+32:25 
+
+32:25 methods that were developed in the past
+32:27 
+
+32:27 decade but have just adopt you have to
+32:30 
+
+32:30 adjust them to the to the new world of
+32:33 
+
+32:33 llms so methods like you start try to do
+32:36 
+
+32:36 that by just taking the idea that if I
+32:39 
+
+32:39 have a policy and then I do planning I
+32:41 
+
+32:41 consider possible future scenarios and
+32:43 
+
+32:43 then I have a way to evaluate which one
+32:45 
+
+32:45 is
+32:46 
+
+32:46 better then I can just like take the
+32:49 
+
+32:49 best ones and then ask the model to
+32:51 
+
+32:51 imitate this better ones and this is
+32:53 
+
+32:53 like a a way of improving the policy so
+32:56 
+
+32:56 in the classic RL framework you you do
+32:58 
+
+32:58 that uh by using a policy and a value
+33:01 
+
+33:01 Network in the new world you'll just do
+33:04 
+
+33:04 that by asking your uh by having reward
+33:06 
+
+33:06 model or asking your uh your llm to just
+33:09 
+
+33:09 like uh give you feedback on uh of an
+33:13 
+
+33:13 output it gave you so interesting um you
+33:16 
+
+33:16 also talked a little bit about synthetic
+33:17 
+
+33:17 data earlier I think some folks are very
+33:19 
+
+33:19 bullish on synthetic data and some folks
+33:21 
+
+33:21 more skeptical um I also believe that
+33:23 
+
+33:23 synthetic data is more useful in some
+33:25 
+
+33:25 domains where um outcomes and successes
+33:27 
+
+33:27 perhaps deterministic can you share a
+33:30 
+
+33:30 little bit about your perspective on the
+33:31 
+
+33:31 role of synthetic data and how bullish
+33:33 
+
+33:33 you are on it yeah I mean i s like
+33:35 
+
+33:35 synthetic data is something like we have
+33:37 
+
+33:37 to solve one way or another so it's not
+33:40 
+
+33:40 about like whether you know you're
+33:41 
+
+33:41 bullish or not it's kind
+33:43 
+
+33:43 of it's an obstacle but we have just
+33:45 
+
+33:45 find a way around like uh we will run
+33:49 
+
+33:49 out of data like you know we there is so
+33:51 
+
+33:51 much data like humans can produce and
+33:54 
+
+33:54 also like it's important that this
+33:55 
+
+33:55 system start taking actions they start
+33:57 
+
+33:57 learning from their own mistakes um so
+33:60 
+
+33:60 we need to just find a way to make like
+34:01 
+
+34:01 synthetic data work um now what people
+34:05 
+
+34:05 have done is that they've tried like the
+34:07 
+
+34:07 most um I guess like naive approach
+34:11 
+
+34:11 where you just like take the models they
+34:13 
+
+34:13 produce something and you try to just
+34:15 
+
+34:15 like train on that and um of course like
+34:18 
+
+34:18 you know they've seen that there's mod
+34:20 
+
+34:20 mode collapsing and uh this just like
+34:22 
+
+34:22 doesn't work out of the box but you know
+34:24 
+
+34:24 new methods never work out of the box
+34:26 
+
+34:26 just like uh need need to invest in it
+34:29 
+
+34:29 and just like take your time and you
+34:31 
+
+34:31 know really kind of think of what's the
+34:33 
+
+34:33 best way of um of doing it so I'm really
+34:37 
+
+34:37 optimistic that we'll just definitely
+34:39 
+
+34:39 find ways to improve these models and I
+34:41 
+
+34:41 think that like actually there there is
+34:43 
+
+34:43 a number of of methods out there like um
+34:46 
+
+34:46 the two star and the equivalence that
+34:48 
+
+34:48 just you know in the new world where
+34:51 
+
+34:51 people don't really say their research
+34:53 
+
+34:53 breakthroughs uh the way they used to is
+34:55 
+
+34:55 probably hidden behind like some company
+34:59 
+
+34:59 Trade Secrets I'm going to ask about
+35:01 
+
+35:01 reasoning and you know novel scientific
+35:04 
+
+35:04 discoveries uh do you think that that
+35:06 
+
+35:06 can kind of naturally come out of just
+35:08 
+
+35:08 scaling llms if you have enough data or
+35:11 
+
+35:11 do you think that kind of like the
+35:12 
+
+35:12 ability to reason and you know come up
+35:14 
+
+35:14 with net new ideas requires kind of
+35:16 
+
+35:16 doing reinforcement learning and and uh
+35:19 
+
+35:19 you know deeper compute at inference
+35:20 
+
+35:20 time so I think like you need reinforc
+35:24 
+
+35:24 learn to get bit reasoning because the
+35:26 
+
+35:26 distribution of like it's it's it's also
+35:28 
+
+35:28 about the distribution of data right
+35:30 
+
+35:30 like you you have like a you have a lot
+35:33 
+
+35:33 of data out in the wild in the internet
+35:36 
+
+35:36 but uh at the same time you don't always
+35:37 
+
+35:37 have like the right type of data so you
+35:40 
+
+35:40 don't have the data where like someone
+35:41 
+
+35:41 reasons and they just like explain the
+35:43 
+
+35:43 reasoning in detailed you have some of
+35:46 
+
+35:46 it you have like uh and it's incredible
+35:48 
+
+35:48 that like the meth the the the models
+35:49 
+
+35:49 have actually managed to uh to pick it
+35:52 
+
+35:52 up and just imidate it but uh if you
+35:54 
+
+35:54 want to just like improve on that uh
+35:57 
+
+35:57 capability then you need to do that
+35:59 
+
+35:59 through reinforcement learning you need
+36:00 
+
+36:00 to just like uh show the model how this
+36:04 
+
+36:04 kind of emerging capability can f them
+36:06 
+
+36:06 be improved by just like have it
+36:08 
+
+36:08 generating the data interact with the
+36:10 
+
+36:10 environment you know just tell it when
+36:11 
+
+36:11 it's doing something right and when it's
+36:13 
+
+36:13 not doing something right so yeah I
+36:15 
+
+36:15 think like reforce learning is
+36:16 
+
+36:16 definitely part of uh the answer for
+36:18 
+
+36:18 that Alpha go Alpha zero and mu zero are
+36:21 
+
+36:21 the most powerful agents we've ever
+36:23 
+
+36:23 built can you share a little bit about
+36:25 
+
+36:25 how some of the lessons and learnings
+36:27 
+
+36:27 unlocked from and that are relevant to
+36:29 
+
+36:29 how we're pursuing building AI agents
+36:31 
+
+36:31 today yeah so I think like alphao and M
+36:35 
+
+36:35 you know have um they've actually
+36:37 
+
+36:37 fundamentally transformed our approach
+36:39 
+
+36:39 to AI agents because they highlight the
+36:43 
+
+36:43 the the importance of planning and scale
+36:45 
+
+36:45 in my opinion that um if you actually
+36:47 
+
+36:47 look at the charts of like different uh
+36:50 
+
+36:50 models and how they scale you can see
+36:51 
+
+36:51 that like alphao and Alpha zero were
+36:53 
+
+36:53 like kind of really ahead of their time
+36:55 
+
+36:55 like they were kind of outliers you had
+36:57 
+
+36:57 like uh this um the sces of like how
+36:59 
+
+36:59 compute scaled and then you have like
+37:01 
+
+37:01 Alpha zero like somewhere standing on
+37:03 
+
+37:03 its own so it show that like if you can
+37:05 
+
+37:05 scale and you can really push on that
+37:07 
+
+37:07 then you can get like incredible
+37:09 
+
+37:09 incredible results at the same time you
+37:11 
+
+37:11 know it also showed that you don't have
+37:13 
+
+37:13 just only train you can also like you
+37:15 
+
+37:15 know have better performance during
+37:17 
+
+37:17 inference during uh test during
+37:19 
+
+37:19 evaluation but just like uh using
+37:21 
+
+37:21 planning and I think that this is
+37:23 
+
+37:23 something that we start seeing more and
+37:24 
+
+37:24 more um in the in the near future or
+37:27 
+
+37:27 like this methods would just like start
+37:29 
+
+37:29 thinking more like planning more before
+37:31 
+
+37:31 they're just making any
+37:33 
+
+37:33 decisions so I'd say that like uh this
+37:36 
+
+37:36 is more of the heritage of alpha go and
+37:39 
+
+37:39 Alpha Zer and U zero it's the the the
+37:41 
+
+37:41 the basic principles and the basic
+37:43 
+
+37:43 principles are of that scale matters
+37:46 
+
+37:46 planning matters uh these methods can uh
+37:50 
+
+37:50 really solve problems that we thought
+37:52 
+
+37:52 that are insanely complex or like you
+37:55 
+
+37:55 know beyond what we can solve on our own
+37:58 
+
+37:58 um similar problems with the ones that
+38:00 
+
+38:00 we actually observed today with these
+38:02 
+
+38:02 large language models are things that we
+38:04 
+
+38:04 saw back then like back in 2016 we
+38:06 
+
+38:06 actually saw that these models can
+38:08 
+
+38:08 hallucinate or that like at the same
+38:10 
+
+38:10 time they're also creative that they
+38:12 
+
+38:12 will just come up with solutions that uh
+38:14 
+
+38:14 we hadn't thought of but they can also
+38:16 
+
+38:16 like have blind spots or like
+38:17 
+
+38:17 hallucinate or uh be susceptible to kind
+38:21 
+
+38:21 of like addressal doxs which I guess
+38:23 
+
+38:23 like everyone knows now that this NE
+38:25 
+
+38:25 Network suffer from so I think that like
+38:28 
+
+38:28 these are the the the main kind of
+38:31 
+
+38:31 um lessons uh drawn from this line of
+38:37 
+
+38:37 work what do you think are the biggest
+38:39 
+
+38:39 open questions from this line of work uh
+38:41 
+
+38:41 for the field Daner going forward so the
+38:43 
+
+38:43 main question is we had like Alpha and
+38:47 
+
+38:47 we just like Ms to have like this
+38:48 
+
+38:48 insanely robust and reliable systems
+38:51 
+
+38:51 that will just always play go and at the
+38:55 
+
+38:55 you know the highest possible kind of
+38:56 
+
+38:56 level and they'll just like
+38:59 
+
+38:59 achieve consistently they will just like
+39:01 
+
+39:01 be top of the leaderboard will just like
+39:03 
+
+39:03 never lose again so half a Go Master
+39:06 
+
+39:06 actually like played against 60 people
+39:09 
+
+39:09 um in online matches and just like Lally
+39:12 
+
+39:12 won in every single one of them so
+39:14 
+
+39:14 there's like no there there was like
+39:16 
+
+39:16 this patters were like conet robust
+39:18 
+
+39:18 reliable and I think like this is
+39:19 
+
+39:19 exactly what we're missing now with this
+39:21 
+
+39:21 llm Bas stents sometimes they get it
+39:25 
+
+39:25 sometimes they don't you cannot trust
+39:27 
+
+39:27 them they we just like uh you know you
+39:29 
+
+39:29 have like some amazing demos but like
+39:31 
+
+39:31 you know they happen once every two
+39:33 
+
+39:33 times even or like once every 10 times
+39:35 
+
+39:35 you have like something amazing and the
+39:37 
+
+39:37 remaining nine they just lost their way
+39:39 
+
+39:39 and didn't do anything so I think like
+39:42 
+
+39:42 what we need to do is just find a way to
+39:43 
+
+39:43 just make these llm based agents equally
+39:46 
+
+39:46 robust uh to the ones that we had with
+39:48 
+
+39:48 alha go and muo and Alpha zero this is
+39:51 
+
+39:51 like the the new open question of like
+39:53 
+
+39:53 how do you actually do that we'd love to
+39:55 
+
+39:55 move into some of your thoughts on the
+39:56 
+
+39:56 broader ecosystem today um you've
+39:59 
+
+39:59 touched on a few really core problems
+40:02 
+
+40:02 that people are working on right now um
+40:04 
+
+40:04 one the the data wall um problem that
+40:07 
+
+40:07 will hit eventually perhaps by 2028 or
+40:10 
+
+40:10 so um as some folks predict another
+40:14 
+
+40:14 being the idea of planning um um as an
+40:17 
+
+40:17 area that AI agents need to get better
+40:20 
+
+40:20 at and then um uh you know a third idea
+40:23 
+
+40:23 that you just described was around
+40:24 
+
+40:24 robustness and reliability can you share
+40:26 
+
+40:26 a little bit about maybe some of these
+40:28 
+
+40:28 areas that you think the whole field
+40:31 
+
+40:31 needs to solve um that that you are most
+40:35 
+
+40:35 excited about to help us unlock this
+40:37 
+
+40:37 vision of really getting to the AI
+40:39 
+
+40:39 agents that we want yeah I mean I just
+40:41 
+
+40:41 like also add another one to the list so
+40:44 
+
+40:44 I think like another major
+40:47 
+
+40:47 uh another major um challenge is like
+40:50 
+
+40:50 how do we improve the in Contex learning
+40:52 
+
+40:52 capabilities of these models or like you
+40:53 
+
+40:53 know how do they how do you make sure
+40:55 
+
+40:55 that like these systems can learn uh on
+40:58 
+
+40:58 the Fly and how they can adapt to new
+41:01 
+
+41:01 context like quickly so this is like
+41:03 
+
+41:03 another thing that I think it's going to
+41:04 
+
+41:04 be really important it's going to happen
+41:06 
+
+41:06 the next uh few year couple of years
+41:09 
+
+41:09 actually so Yiannis what's the term that
+41:11 
+
+41:11 you used for that in context learning oh
+41:14 
+
+41:14 in context learning yeah in context
+41:15 
+
+41:15 learning yeah so it's the idea that A
+41:18 
+
+41:18 system can actually learn how to do a
+41:21 
+
+41:21 new task with like few short prompting
+41:24 
+
+41:24 uh like it kind of like sees a few
+41:25 
+
+41:25 examples and on the Fly uh it kind of
+41:28 
+
+41:28 like lears how to adapt the new
+41:30 
+
+41:30 environment it learns how to use the the
+41:34 
+
+41:34 the the new tools that were provided to
+41:36 
+
+41:36 it or like it's kind of like lens it's
+41:38 
+
+41:38 it's not just all the knowledge it is
+41:41 
+
+41:41 stored in sus but like it can also like
+41:43 
+
+41:43 acquire new Lo knowledge by just like
+41:45 
+
+41:45 interacting with the real world
+41:47 
+
+41:47 interacting with the
+41:48 
+
+41:48 environment so I think that this is like
+41:51 
+
+41:51 another um place where uh there is a lot
+41:55 
+
+41:55 of work happening at the moment and uh
+41:58 
+
+41:58 going to have like amazing progress in
+41:60 
+
+41:60 the in the next couple of years and I'm
+42:03 
+
+42:03 really excited about that so yeah I mean
+42:05 
+
+42:05 uh to rec up I think like planning is
+42:07 
+
+42:07 important um you know in context
+42:10 
+
+42:10 learning is important and you know
+42:12 
+
+42:12 relability
+42:13 
+
+42:13 so the best way to achieve reliability
+42:16 
+
+42:16 is just like ensure that this models
+42:18 
+
+42:18 somehow know how to return from their
+42:21 
+
+42:21 mistakes so if they just like made a
+42:22 
+
+42:22 mistake somewhere they can just like see
+42:24 
+
+42:24 that and they're like okay you know I
+42:27 
+
+42:27 made a mistake
+42:28 
+
+42:28 I'll just like correct for it the way
+42:29 
+
+42:29 that uh humans you know make mistakes
+42:31 
+
+42:31 all the time but like we you know you
+42:33 
+
+42:33 can correct for
+42:35 
+
+42:35 them so these are like the three areas
+42:37 
+
+42:37 which uh I'm really I'm really excited
+42:40 
+
+42:40 to see progress on now that you've kind
+42:42 
+
+42:42 of embarked on your own entrepreneurial
+42:44 
+
+42:44 Journey uh how do you think about the
+42:46 
+
+42:46 areas where startups can compete against
+42:49 
+
+42:49 the the big research labs and like um
+42:53 
+
+42:53 how do you kind of motivate yourself for
+42:54 
+
+42:54 that for that Journey yeah I mean uh
+42:56 
+
+42:56 it's a compet like a it's a new world
+42:59 
+
+42:59 for me but at the same time it's not
+43:01 
+
+43:01 that new because when I joined deep mind
+43:03 
+
+43:03 it was literally a startup so and I was
+43:06 
+
+43:06 like literally in the first St G
+43:08 
+
+43:08 emploees so I actually like saw that uh
+43:11 
+
+43:11 firstand but you know one of the
+43:13 
+
+43:13 benefits of like working for a startup
+43:14 
+
+43:14 is that uh you know the agility and the
+43:17 
+
+43:17 focus so everyone really cares everyone
+43:19 
+
+43:19 just moves really fast and there's like
+43:21 
+
+43:21 a clear focus on what we want to build
+43:24 
+
+43:24 so the building is like what's the most
+43:27 
+
+43:27 important important kind of motivation
+43:28 
+
+43:28 for people like just like
+43:30 
+
+43:30 building and I think like this is one of
+43:32 
+
+43:32 the big advantages that like startups
+43:34 
+
+43:34 have over more established businesses at
+43:37 
+
+43:37 the same time you know it's easier to
+43:39 
+
+43:39 just like to adapt to new findings new
+43:42 
+
+43:42 technologies uh you're not kind of like
+43:44 
+
+43:44 tied to you know some pre-existing
+43:47 
+
+43:47 Solutions or like U some products that
+43:51 
+
+43:51 you know you don't want to deprecate
+43:53 
+
+43:53 because like you know they bring a lot
+43:54 
+
+43:54 of Revenue to you while if you're a
+43:56 
+
+43:56 startup you know you have like no such
+43:58 
+
+43:58 chains you can just like move fast and
+43:60 
+
+43:60 you know be Innovative and uh just you
+44:03 
+
+44:03 know break conventions um and at the
+44:07 
+
+44:07 same time just like allows you to
+44:09 
+
+44:09 leverage like open source resources
+44:11 
+
+44:11 things that are out of touch for like
+44:12 
+
+44:12 the big labs and uh yeah and you don't
+44:15 
+
+44:15 have like the red tape that like big
+44:17 
+
+44:17 places tend to have I love the term that
+44:19 
+
+44:19 you use sometimes you honest main quest
+44:21 
+
+44:21 versus side quest yeah it's the idea of
+44:23 
+
+44:23 like having a main focus like you know
+44:25 
+
+44:25 in big places in big labs they have like
+44:28 
+
+44:28 many different uh projects that like
+44:31 
+
+44:31 people are working on and uh it usually
+44:33 
+
+44:33 happens that they have like the main
+44:35 
+
+44:35 quest the main you know thing that like
+44:38 
+
+44:38 everyone is working on and there's like
+44:39 
+
+44:39 many multiple like smaller side quests
+44:41 
+
+44:41 that uh the idea is just like feed into
+44:44 
+
+44:44 the the bigger Quest but like usually
+44:46 
+
+44:46 they don't get as much uh they don't get
+44:49 
+
+44:49 like as many resources or like as many
+44:51 
+
+44:51 as much Focus from like the leadership
+44:53 
+
+44:53 so yeah they they tend to yeah the
+44:58 
+
+44:58 trophy um in the broader field what are
+45:01 
+
+45:01 some of the most defining projects that
+45:03 
+
+45:03 you admire the most and maybe who are
+45:05 
+
+45:05 some of the most influential researchers
+45:07 
+
+45:07 that you admire the most yeah absolutely
+45:10 
+
+45:10 so so I actually like started my AI
+45:13 
+
+45:13 research Journey back in 2012 and I've
+45:16 
+
+45:16 actually like seen some Milestones so I
+45:19 
+
+45:19 just like I give a list of like what I
+45:21 
+
+45:21 think are like the main Milestones like
+45:23 
+
+45:23 in AI in the past like 12 years I've
+45:26 
+
+45:26 been around so the first one I say it's
+45:28 
+
+45:28 like Alex net this is uh the the first
+45:32 
+
+45:32 paper that kind of like showed that deep
+45:33 
+
+45:33 learning is the is the answer I mean
+45:37 
+
+45:37 back then it didn't feel like it it just
+45:38 
+
+45:38 like felt like you know a kind of
+45:40 
+
+45:40 curiosity but like now I think that most
+45:42 
+
+45:42 people are convinced that like deep
+45:44 
+
+45:44 learning is part of the answer then it
+45:47 
+
+45:47 was uh tqn I had the pleasure to
+45:49 
+
+45:49 actually work on tqn and just like see
+45:51 
+
+45:51 it firstand how it started um it was
+45:54 
+
+45:54 actually developed by a friend of mine
+45:55 
+
+45:55 Vlad me vlat me
+45:58 
+
+45:58 and it was like the first system that
+45:59 
+
+45:59 showed that you can actually combine de
+46:01 
+
+46:01 learning with reinforced learning to to
+46:04 
+
+46:04 to achieve super to achieve Human
+46:06 
+
+46:06 Performance or like super human
+46:07 
+
+46:07 performance in really complex
+46:09 
+
+46:09 environments then um it was Alpha go
+46:12 
+
+46:12 again I was like really uh likey to just
+46:15 
+
+46:15 like walk on that and it showed that you
+46:17 
+
+46:17 know scale and planning are really
+46:20 
+
+46:20 important ingredients and if you just
+46:22 
+
+46:22 like do that right then you
+46:24 
+
+46:24 get huge success in a incredibly complex
+46:28 
+
+46:28 environment um Al fold another one uh
+46:31 
+
+46:31 this is Again by Deep Mind it show that
+46:34 
+
+46:34 like these methods are not just like
+46:36 
+
+46:36 things that you can use to solve games
+46:38 
+
+46:38 but they have um they they actually will
+46:41 
+
+46:41 make this Vault a better place they'll
+46:43 
+
+46:43 just like ensure that healthc care is
+46:45 
+
+46:45 improved that uh scientific discoveries
+46:48 
+
+46:48 uh are being real realized uh that we'll
+46:50 
+
+46:50 just like make sure this world is a
+46:52 
+
+46:52 better place by using
+46:54 
+
+46:54 AI then uh just
+46:58 
+
+46:58 uh it kind of like brought AI to uh
+47:01 
+
+47:01 everyone just like made it accessible uh
+47:04 
+
+47:04 to the broad audience like everyone
+47:07 
+
+47:07 knows what AI is now it's uh it has made
+47:10 
+
+47:10 my life of explaining my job much easier
+47:13 
+
+47:13 so um and finally CHP to 4 and I think
+47:16 
+
+47:16 that uh yeah probably CHP to 4 is like
+47:18 
+
+47:18 the latest kind of big advancement uh in
+47:22 
+
+47:22 AI because it kind of like showed that
+47:26 
+
+47:26 you know AR special
+47:27 
+
+47:27 general intelligence is a matter of
+47:29 
+
+47:29 years it's within reach um yeah we we
+47:33 
+
+47:33 are getting there
+47:34 
+
+47:34 like I think that you know many most
+47:37 
+
+47:37 people now believe that we
+47:40 
+
+47:40 like a few years away from like Ai and
+47:44 
+
+47:44 yeah that's uh that's because of like
+47:45 
+
+47:45 the incredible breakthrough that uh gp4
+47:49 
+
+47:49 was uh now in terms of like some people
+47:50 
+
+47:50 I really admire uh before I forget so i'
+47:53 
+
+47:53 say fast like David silver he's uh he
+47:57 
+
+47:57 was my PhD supervisor he was my Metro at
+47:59 
+
+47:59 Deep Mind uh he's an incredibly
+48:01 
+
+48:01 researcher uh he walked he led Al go and
+48:04 
+
+48:04 Al zero and you know
+48:07 
+
+48:07 he is you know he he has a guilding
+48:10 
+
+48:10 dedication to the field of uh reinforce
+48:12 
+
+48:12 learning and he's you know probably the
+48:14 
+
+48:14 one of the smartest people or maybe the
+48:16 
+
+48:16 smartest person I know and amazing guy
+48:19 
+
+48:19 um in amazing rece learning uh engineer
+48:23 
+
+48:23 and the second one I'd say is uh Elia s
+48:26 
+
+48:26 and you know he was a co-founder at open
+48:29 
+
+48:29 I had the opportunity to work with him
+48:32 
+
+48:32 just a little bit in the really early
+48:34 
+
+48:34 days of alphao but um I think like his
+48:37 
+
+48:37 commitment to scaling I methods and
+48:39 
+
+48:39 pushing the boundaries of what the
+48:40 
+
+48:40 systems can achieve is remarkable and
+48:43 
+
+48:43 you know he kind of made sure that like
+48:46 
+
+48:46 G 3 and G 4 happen so um yeah immense
+48:50 
+
+48:50 respect towards him thank you for
+48:52 
+
+48:52 sharing that let's close out with some
+48:55 
+
+48:55 rapid fire questions and maybe first
+48:58 
+
+48:58 what do you think will be the next big
+48:59 
+
+48:59 milestones in AI let's say in the next
+49:01 
+
+49:01 one five and 10 years so I think like uh
+49:05 
+
+49:05 the next five to 10 years um the world
+49:08 
+
+49:08 will be a different place I actually
+49:09 
+
+49:09 really believe that I think that um in
+49:11 
+
+49:11 the next few years we'll see models
+49:14 
+
+49:14 becoming powerful and reliable agents
+49:15 
+
+49:15 that can actually independently execute
+49:17 
+
+49:17 tasks and uh I think that AI agents will
+49:20 
+
+49:20 be massively adopted across Industries
+49:22 
+
+49:22 especially in science and Healthcare so
+49:25 
+
+49:25 in that sense I'm really excited on
+49:26 
+
+49:26 what's Happ coming what's coming uh in
+49:30 
+
+49:30 Ai and you know what I'm most exciting
+49:32 
+
+49:32 about excited about is um a AI agents uh
+49:37 
+
+49:37 systems can actually like do TKS uh for
+49:39 
+
+49:39 you and you know this is exactly what
+49:41 
+
+49:41 we're building at Perfection and what
+49:43 
+
+49:43 year do you think we'll pass the 50%
+49:45 
+
+49:45 threshold on S bench so I think we're
+49:48 
+
+49:48 are one to three years away from the 50%
+49:50 
+
+49:50 threshold for S agents in 3 to five
+49:53 
+
+49:53 years from achieving
+49:54 
+
+49:54 90% so the reason is while progress is
+49:58 
+
+49:58 amazing I think like we still need um
+50:00 
+
+50:00 reliable agent to hit this milestones
+50:02 
+
+50:02 and uh it's really when it comes to
+50:04 
+
+50:04 research it's like hard to make precise
+50:06 
+
+50:06 uh predictions when do you think we'll
+50:08 
+
+50:08 hit the data wall for scaling llms and
+50:11 
+
+50:11 do you think all the research in RL is
+50:13 
+
+50:13 mature enough to to keep up our slope of
+50:15 
+
+50:15 progress or do you think there will be a
+50:17 
+
+50:17 bit of a lull um as we try to figure out
+50:19 
+
+50:19 what happens when we hit the wall so I
+50:21 
+
+50:21 think like uh the
+50:24 
+
+50:24 W you know based on like what I've read
+50:26 
+
+50:26 I think like we have at least one more
+50:28 
+
+50:28 year uh for text just like before we hit
+50:31 
+
+50:31 the wall and then we have like these
+50:33 
+
+50:33 extra modalities which might actually
+50:35 
+
+50:35 buy us uh maybe a year extra and I think
+50:39 
+
+50:39 uh we are in a really good place just
+50:41 
+
+50:41 like start uh using synthetic data uh so
+50:45 
+
+50:45 in the next few years we'll just like
+50:46 
+
+50:46 figure out the synthetic data problem so
+50:49 
+
+50:49 I think that we won't really hit a wall
+50:51 
+
+50:51 just like we'll hit the wall but like no
+50:53 
+
+50:53 one realized it because we have like new
+50:54 
+
+50:54 methods in place do you think llm will
+50:57 
+
+50:57 have their Alpha go moment um and if so
+51:00 
+
+51:00 when I think like llms had their Alpha
+51:03 
+
+51:03 go moment with the initial release of
+51:05 
+
+51:05 chpt where they showed G the power and
+51:08 
+
+51:08 the progress made over the past decade I
+51:11 
+
+51:11 feel like what they hadn't had yet is
+51:12 
+
+51:12 their Alpha zero mod and uh that's the
+51:15 
+
+51:15 moment where more compute directly
+51:17 
+
+51:17 translates to increased intelligence
+51:19 
+
+51:19 without human intervision and I think
+51:20 
+
+51:20 like this breakthrough is still on the
+51:22 
+
+51:22 horizon when you think that will
+51:25 
+
+51:25 happen um I think it's going Happ the
+51:27 
+
+51:27 next five
+51:28 
+
+51:28 years wow amazing Giannis thank you so
+51:32 
+
+51:32 much for joining us and taking us
+51:33 
+
+51:33 through the awesome history of alpha go
+51:36 
+
+51:36 Alpha zero muzero your own journey
+51:38 
+
+51:38 through deep mind and then many of the
+51:39 
+
+51:39 core research problems that the whole
+51:41 
+
+51:41 industry is tackling today around data
+51:45 
+
+51:45 and building for reliability robustness
+51:47 
+
+51:47 and planning and in context learning um
+51:50 
+
+51:50 were really excited for the future that
+51:52 
+
+51:52 you're helping us build and um uh that
+51:55 
+
+51:55 you're pushing forward the in the field
+51:56 
+
+51:56 as well so thank you so much yianis
+51:58 
+
+51:58 thank you so much for having me
+51:60 
+
+51:60 [Music]
+52:12 
+
+52:12 [Music]

@@ -1,0 +1,428 @@
+00:00 There was a scenario where there was an agent on agent interaction. It was a
+00:05 critical security task. That was the simulation that they were in, but after working for a while, one of the models
+00:12 decided that they've worked enough. And they
+00:18 and they should stop. It did not stop there. It convinced the other model that
+00:24 they should both take a break. So the model did social engineering on the other model to another model. But now
+00:30 try to think about a situation where you actually as an enterprise are delegating an autonomous workflow that is critical
+00:38 to you to complete. And the more complicated and capable machines are ultimately going to be, the more of
+00:44 these weird examples we're going to encounter.
+01:04 Today on training data, we dig into the future of frontier AI security with Dan Laav, founder of Irregular. Dan
+01:10 challenges how we think about security in a world where AI models are not just tools but autonomous economic actors. He
+01:17 explains why the rise of AI agents will force us to reinvent security from first principles and reveals how the very
+01:23 nature of threats is shifting from say code vulnerabilities to unpredictable emergent AI behaviors. Dan also shares
+01:30 surprising real world simulations where AI models outmaneuver traditional defenses and why proactive experimental
+01:37 security research is now essential. His view is that in a world where more economic value will shift to human on AI
+01:43 or AI on AI, solving these problems is paramount. Enjoy the show.
+01:49 Dan, wonderful to have you with us today. It's a pleasure to be here. Awesome. So, before we jump into
+01:55 questions, I will just say that it was very hard to get in front of Dan. Uh I
+02:00 was trying to get in front of him for three months. Probably 30 to 40 emails. Five or six people around us who we both
+02:07 knew closely were pinging him all the time and he was still not responsive. And uh I basically learned where he was,
+02:16 you know, spending most of his time and I kind of went Did you stalk him?
+02:21 I kind of stalked him. I kind of stalked him and eventually we basically bumped into each other like not intentionally.
+02:28 Um and uh and uh and anyway, so we we bumped into each other. I was like, Dan,
+02:33 you know, you're brilliant. I keep hearing great things. Please respond. Let's find time. You know, we at Sequoa
+02:38 spend a lot of time in AI security. And eventually we we found time the following week. So, welcome Dan. Thank
+02:44 you for uh for everything. It seems that I'm going to have to start this podcast with an apology. So, sorry
+02:51 Dean. So, Sonia, sorry the entirety of Sakoya. It indeed took time. It it took time but but we uh we partnered and here
+02:57 we are and you guys have done wonderful things so so it's wonderful uh to have you with us today. Yeah it's a very very happy ending and
+03:03 you know just like appreciate you and everyone here. Of course. Of course. Okay so let's jump into it. Um I'm going to start with a
+03:08 spicy question. Um as we recently saw you partnered with OpenAI on GPT5
+03:15 and let's kind of look forward a little bit. Um what does security look like in
+03:21 a world of GPT10? spicy and speculative indeed.
+03:26 So let let me wrap my head around that. I think so obviously everything I'm
+03:32 going to say is is you know speculation projection but I think the way that we think about
+03:38 what's going to come is trying to understand how we're even going to
+03:44 produce economic value and how organizations and enterprises and people are going to consume stuff in the world
+03:50 at the time of Gupt 10 or cloud 10 or just like any one of the models.
+03:56 Let's do our thought experiment to just like clarify why we actually believe that sometime we think in the next two
+04:01 to three to five years there's going to be a huge shift in the way that humans are even organizing themselves as as an
+04:07 outcome security is probably going to be very different as well. So here's a thought experiment. So imagine a
+04:14 situation where you work with open AI and you go one generation up or two generations up and you tell your parents
+04:19 or grandparents that you're doing work with on topic or with open AI or Google deep mind on security. I think their
+04:26 mind would go onto assuming that the work that you're doing is probably providing a bodyguard service to Sam or
+04:32 to Dario or to Demis because the canonical security problem of a few decades ago, you know, it's like our
+04:38 parents, grandparents generation was physical security because the vast majority of economic activity was in the
+04:43 physical realm and not in the digital realm. And you know, after the PC revolution and the internet revolution,
+04:49 we shifted the way that we're organizing and creating value. We transitioned primarily to a digital environment. And
+04:56 just like think about how strong of a testimony it is of how many times you did an economic activity of value just
+05:03 by getting an email from someone that you may have not met. You know, just this morning I got an email from my bank
+05:09 activating me to do something from a person that I've never met. Maybe as a security person. That's not a great thing to say openly, but you know, just
+05:15 like we do that all of the time because that's the way that we interact in society. So our view is that soon that's
+05:22 going to happen again and the reason is that AI models are getting gradually so capable that a lot of the economic
+05:30 activity of value is going to transition to human on AI interaction and AI on AI
+05:35 interaction. And that means that we may see soon a fleet of agents in an
+05:41 enterprise or a human when they're doing like a simple activity like trying to draft a Facebook post taking a
+05:48 collection of different AI tools in order to just like promote that activity that they're doing. And we're
+05:54 essentially embedding tools that are increasingly more capable and we're delegating them tasks that require more
+06:00 and more and more and more autonomy in order to drive meaningful parts of our lives. So we're transitioning from an
+06:06 age where software is deterministic to an age where this is not no longer the case and as an outcome
+06:14 enterprise themselves or just like how we interact with the world is going to go to an fundamental change and it's
+06:20 clear that security is just not going to be the same as as an interesting analogy
+06:26 think about you know blockbuster latest and Netflix the current version of Netflix they're both if you think about
+06:32 it give the exact same value to the consumer, right? Both allow you to list
+06:37 units of content for your pleasure and entertainment. But clearly and intuitively, right, security for Netflix
+06:44 and security for Blockbuster is not the same, right? One was a chain that organized, you know, it's like you need
+06:49 to go and like physically rent a DVD and another one is much more of a model
+06:56 architecture where just like, you know, streaming stuff to your home. So even enterprises that are going to provide
+07:02 the exact same value in the near future may have like a very very different backend to how they're shaped in this
+07:08 autonomous age that we're entering which makes it clear that security as a whole is going to be very very very different
+07:14 and we need to recalibrate to just like an age of autonomous security that's coming upon us. You were at our AI asense event earlier
+07:21 this year, right? Do you remember when Jensen Huang shamed everybody who was there uh for not for the fact that not
+07:27 enough people in the room were thinking about security in a world of agents? And I remember Jensen said something about
+07:33 how you know you can imagine that as these agents are allowed to act more autonomously in enterprises. you should
+07:38 you should expect orders of magnitude more security agents than the actual uh
+07:44 productive agents themselves watchdoging and um and you know shephering uh this
+07:50 this herd of agents effectively. So I'm biased here. I agree with Jensen. I think Jensen was the first person that
+07:56 I've met that was much more bullish on AI security than myself because you know in our view it you know you need a
+08:03 collection of defense bots that are also going to be you know working side by side with capability bots in just like
+08:10 the next generations of how enterprise are going to be created. But indeed he gave a ratio that he thinks that there's
+08:15 going to be 100 to one and just like how many you know like defense and like security bots are going to be required
+08:22 out of the assumption that secure by design in AI is not going to work. So I'm not sure that I agree with that
+08:28 uh part of the conclusion. I think that we can make significant progress on secure by design specifically embedding
+08:34 defenses in the AI models themselves. That being said, we share the view that
+08:40 the future is going to be one where we'll need to have a lot of, you know, just like agents that are specifically
+08:46 for the task of monitoring other agents and making sure that they're not going to step out of bounds. So, so maybe on on that question, just
+08:52 to dive one, you know, one layer deeper. What is the state of model cyber
+08:57 capabilities today and how has that changed over the past 12 to 18 months? It's a great question and I actually
+09:03 think that the rate of change is the most relevant part here because models are capable of doing so much more now
+09:10 that they were even capable of doing a quarter or two quarters before. So just like to give an intuition. So this is
+09:15 now you know just like we're entering the fourth quarter of 2025. At the beginning of the year coding agents were
+09:21 not a widespread thing yet. The ability to do tool use properly was you know
+09:27 like not just starting but obviously like much much more nent than it is right now. reasoning models were only at
+09:33 the beginning as well. So just like think about all of the things that were added last year and what they mean also
+09:40 for you know for security elements. So what we're seeing now is that the combination of coding being much better
+09:46 models being able to have multimodel operations tool use improving reasoning
+09:51 skills improving if you're using models for offensive capabilities we are seeing
+09:58 unlocks all of the time. Something that is now feasible that was not even feasible a quarter ago is proper
+10:05 chaining of different vulnerabilities and exploiting them in order to do much more complicated actions. So for
+10:11 example, if you have a website and you want to hack it on the application, a
+10:16 few months ago, if you needed to integrate a collection of vulnerabilities in order to perform an
+10:22 action of value, at least autonomously without a human being involved, models were unable to do that. even the
+10:28 state-of-the-art models that's not the case anymore. So obviously that depends it's not a 100% success and obviously that depends also on like the level of
+10:34 complexity of vulnerabilities and environment that you're trying to hack but we have seen huge spikes of just
+10:40 like being able to scan more and more complicated codes code bases exploiting more complex vulnerabilities
+10:47 uh chaining them in order to do these exploitations etc and you know just like the recent Gypensive
+10:56 side specifically of what models are capable of doing we have seen a significant jump in their ability uh to
+11:04 be able to be much more competent across a collection of skills that actually matter a lot around the cyber kill
+11:09 chain. Can you tell us more about that? And obviously there's some things that are publicly available, others that are
+11:14 not, but at least on the scorecard and what open I've shared in particular for GPD5, what are some of the capabilities
+11:20 that you've seen that were surprising? We are seeing constant improvement on the ability of models to for example
+11:30 have situational awareness on whether they are in a network and up until a few
+11:36 months ago beginning of the year complete you know it's like models were unable to do that
+11:43 they were able to do like run some operations locally they were usually not having not having situational awareness over the fact that you know that's like
+11:49 what's happening and whether and what they can activate even in more limited and constrained scenarios that we put
+11:55 them in and that's not the case anymore. So we still sleep very very easily at
+11:60 night uh because the level of sophistication is still somewhat limited. But we are finding ourselves
+12:06 trying to create more and more and more complicated scenarios just because there is a huge jump in being able to take
+12:12 more complicated context as said as said before chain complicated vulnerabilities to one another in order to do multi-step
+12:18 reasoning uh and exploit. And these are all new skills that going one year back
+12:24 did not exist. You guys are trusted partners by many of the labs including
+12:30 Enthropic, including OpenAI, including Google Deepind. You work very closely with them for quite some time. At this
+12:35 point, why did you take the approach of working kind of embedding yourselves within the labs as opposed to I don't
+12:42 know selling directly to an enterprise. Right now there are multiple companies that are doing AI security. We are pioneering a
+12:47 category of the market that we call frontier AI security. And we think it's fundamentally different and the core thing is actually very simple. The rate
+12:54 of progress and rate of adoptions of models change so many things at the same time that while traditional security
+13:01 tends to be somewhat reactive in nature here we need a very aggressive proactive approach in markets that are dominated
+13:10 by a rate of innovation that is frankly unmatched I think unparalleled in in
+13:15 human history. We think it's more interesting to take a temporal niche of the market. That is to say, focus on the
+13:22 first group of people or organizations that are about to experience a problem.
+13:27 So the labs because they're, you know, the contenders to create the most advanced and increasingly sophisticated
+13:33 AI models in the world work very closely in order to just like see firsthand the
+13:39 kinds of problems that are going to emerge and utilize that in order to have
+13:44 a clear and crisp understanding of what's going to come 6 12 24 months
+13:49 ahead of time such that we can be prepared at a moment where general deployers are going to need to be in a
+13:56 situation of embedding these advanced models and already have solutions that are going to be relevant for them given the rapid pace of progress in the
+14:03 foundation model side of the world. If you're at one of these model companies and you know I think the people there
+14:09 are sincere they want to do good for the world they now know their models are capable
+14:14 of use being used for for extreme harm and you know cyber attacks as well. How
+14:20 what do you do about that conundrum? And I remember so we've been working with open AI since 2021. And I remember back
+14:25 in those days every enterprise user of the API past some volume had to be you know manually approved for their use
+14:32 case in order to even access the API. It feels like the ship has sailed of you know anybody anywhere will be able to to
+14:38 access some of these models. And so how can you make the models sort of secure by design if if you're in one of these
+14:45 foundation model seats right now? I think it's a great question. Just one thing on the premise of the question. I
+14:51 think that at least right now at the moment in time in which I am the ability of models to actually do extreme harm,
+14:57 you know, it exists in potentially some use cases, but at least in cyber, I think we're not there just yet.
+15:03 And that matters and and just like be really sharp on on what I mean here.
+15:09 Models can clearly be used in order to do harm, but there is a distinction between harm and extreme harm that
+15:14 should be made, right? like harm would be an example of using a model in order to for the senior citizen and in order
+15:20 to just like you know steal money from them. So just like scaling up fishing operations that can happen easily right
+15:25 now. Extreme harm in my view would be something along the lines of taking down multiple parts of you know like critical
+15:31 infrastructure in the United States at once that you know you can take full cities off the grid making hospitals not
+15:37 work. Models are not there yet and that's not me nitpicking on the question. I actually think it matters
+15:42 quite a lot because how much time we have to prepare to a world where models are that capable
+15:50 actually dominates the strategies that we can take around the defensive side because our view is that the first thing
+15:57 that we should do it's like a first order thing is be able to monitor and have
+16:03 a view of what's going to come such that we'll have a much an ability to have
+16:09 like a much higher resolution discussion which capabilities are progressing at which pace they are progressing. Should
+16:14 we expect them to continue to progress at this pace or accelerate in the future? And you know that that dictates
+16:21 the order of and the priority of some defenses when we're going to embed them, whether we should embed them, etc. And
+16:27 you know, if we get this wrong, I also think it's it's unfair to the companies and to the world as well, right? Because AI also has like so much potential to do
+16:34 good that if we deploy a lot of you know like some defenses that may chip away
+16:39 from productivity ahead of time we're also doing real harm to just like innovation and the world at large
+16:46 and it's a very delicate balance to strike. So I think just like the first order thing to do if you're working inside of the labs is actually having
+16:53 and supporting a large ecosystem that can take the models and measure and get to a high resolution for what is even
+16:58 possible to do. The second bit is figuring out you know
+17:04 a defense strategy that is informed by exactly what's happening and treating almost like is rigorous science with
+17:10 experiments of like how to assess how to do predictions etc. There are some defenses that will require a degree of customization. For example, if you're
+17:17 someone that is you know creating monitoring infrastructure will still need that you may want to recalibrate
+17:24 some of your infrastructure to give you higher alerts that AI is going off the rails for example. But there are some
+17:30 problems that are very easy to write about but actually very hard to develop solutions for. You know, for example,
+17:37 I've just said a sentence of just like, you know, customizing your monitoring software in order to prioritize alerts
+17:42 that are coming from your AI layer. How are you going to be able to understand when AI is doing something which is
+17:48 problematic? Occasionally you're going to be able to run into that but sometimes this may be you know we I
+17:54 think like the entire subsection of the market which is you know anomaly detection which is a huge subsection of
+17:59 security is going to have a big problem very soon because you anomaly detection is based on measuring
+18:07 uh a baseline understanding what is a baseline and measuring against that baseline in order to see that something is an anomaly but if you don't have a
+18:14 crisp understanding of the baseline and how it should look like you have an issue of understanding something went
+18:19 went went badly. So as an outcome we should there are some defenses that
+18:25 are going to operate as is and there are some defenses that we should just like recalibrate you know like either customize or to just like recreate from
+18:32 scratch just because there is a lot of science to be done of understanding how models look when they're under attack.
+18:37 Understanding how it looks like when models are attacking something and because I think we still have some time
+18:44 for the world that's about to come. My recommended strategy would be invest a lot in creating robust tools that would
+18:52 allow you to have rigorous evidence of what's going to come such that you can have the discussion at at higher resolution. Map which classic defenses
+18:60 are still relevant. Understand where your gaps are at and invest a lot in R&D in order to make sure that you have cost
+19:05 effective defenses that you can roll out ahead of time before models are going to be deployed. I know one of the broader
+19:11 questions in frontier AI research today is can we actually understand the the mind of a neural net and what's
+19:17 happening and so I'm wondering if we can actually detect the characteristics of when is the model starting to behave
+19:23 badly and do you actually can you understand that in the activations of the net for some of the attacks we may be able
+19:29 to detect that but that's still a very yeah it's like big open question that's our approach in which we're trying to
+19:35 pioneer around security research which is actually work from the outside in. So
+19:41 that would be putting the models in high fidelity realistic environments
+19:48 that would push them to the limits and in these environments you're recording pretty much everything that's happening
+19:54 in the background. So that would be both the internals of the model like model but also interactions of the model with
+20:01 the environment or the AI system with the environment. And it actually allows
+20:07 you by this recording to play around with using all of this data to create
+20:13 the firstly a mapping of how it even looks like when an attack is happening whether you're trying to attack a model
+20:19 or using the model to attack a target and then based on that taking up
+20:25 classifiers and I think just like a key thing at least around where we are right now in security and like a key
+20:30 realization is while understanding the internals of a model is ultimately going to be
+20:36 important to fully solve the field. We can make a lot of progress just by
+20:42 understanding that something is not right even if we don't have a full crisp full understanding of just like what's
+20:48 what you know the internals and and and what's going on there. And also in these environments the other nice thing is you
+20:55 can insert or remove defenses to see if they're effective. So think about a
+21:01 situation where you know the question that I'm trying to ask is whether a model is going to be able to
+21:07 just say evade a detection from an anti virus. This is a core security question. If models are going to be able to do that in enterprises this is an issue
+21:14 because they're going to be able to scheme and do malicious things without just like can harm security processes
+21:19 without anyone noticing. And in specific environments we see that this is actually possible. Models are
+21:25 able to do that. We were able to show how a model was able to take out Windows Defender, the real Windows Defender in a
+21:30 toy environment granted, but real Windows Defender. But that kind of research when you're
+21:36 putting a model in an environment and recording a lot of stuff both internally and externally allows you to play with these parameters to ask a question of a
+21:43 should I change something on the model itself in order to understand that something bad is happening, but also
+21:48 take a different approach which is agnostic to that and say should I take some should I alter something in the
+21:53 defense in order to make sure it's more resilient. So I think our view is that you know for the long run for the vision
+21:59 of the field we do need to solve problems such as Mac interpret in order to also solve issues in security which
+22:05 also shows how different problems in AI just like changing the core of just like
+22:10 so many different fields right security itself may just be be reframed to an issue of reliability and control in the
+22:16 near future not just classic traditional security and drawing an analogy to you
+22:22 know the human brain we still don't have a proper understanding of our own lacking interp like you know just like
+22:28 the moonlet in our head. That being said, we were able to create very powerful mitigations, you know, and just
+22:35 like, you know, solutions to multiple problems that we're experiencing as humans in our lives just by being observational on how we're interacting
+22:41 with the environment or just like understanding smaller parts of the inner just like inner parts of the system.
+22:46 I love that framing. You said something scary to me that the models are capable
+22:51 of, you know, taking out Windows Defender in in your simulation environments. Can you can you share more about how that even happened?
+22:57 Yeah, so so just to be clear, it's you know it happened in a toy environment. You know it's a controlled setup
+23:03 simulation. That's not to say that everyone that's using Windows Defender now should just like be be scared as an
+23:08 outcome for that. So just want to make sure that the Microsoft is not going to sooa for you know just like taking down the stock. You can think about a
+23:15 network. So it is it's a network simulation. So think about a network environment. Just like to simplify,
+23:21 imagine the network environment that you have in your enterprise, in your work, in your home, the SEO network, you know,
+23:27 for example, your phones, your laptops that are connected into just like an a network environment that you're using.
+23:33 And the AI there was a storage bot. So, it had access to the organizational file in order to be a helpful storage B. for
+23:40 example, just like scan some of the organizational files such that it can summarize uh some of the inputs. Right?
+23:46 You're doing it all of the time when you're interacting with files that you're having just like a you know access to a file and you're asking give
+23:51 me like a summary of you know these four things you know what's common between these documents what's what's not common between these documents
+23:58 and also as like a you know like prelude to the simulation there was an attacker
+24:04 that had access to the enterprise Slack that happened multiple times in the last year just like you know Slack is
+24:10 occasionally hacked as happens to every software that is very ubiquitous and you know it's like being used by so many
+24:15 different organizations in the world. And the attacker gave a very simple
+24:20 instruction to this helpful AI storage bot. It just like said, "I want you to download this file to the organizational
+24:27 network." But clearly, so the f because it's a storage bot, it did not have access to
+24:34 download from the internet. But what you saw that was pretty amazing that like through a collection of
+24:40 prompting the model because it was given the just like clear instructions to just
+24:45 like do it at all costs. Obviously much more sophisticated language. I'm simplifying here.
+24:51 It realized that it can do downloads because it doesn't have access and because Windows Defender the real
+24:57 Windows Defender is blocking it from having just like downloading files. So that's the way the organization was set
+25:02 up. So you can see internally of how the model is thinking that it was able to map and have situational awareness in
+25:08 the environment a understanding that this is the problem that it should have higher you know just like privileges to
+25:14 just like do more stuff in the organization and that it should be able to remove Windows Defender because it's
+25:20 bothering it in order to achieve its ultimate goal. So then you can see as like a next step in that reasoning tail
+25:26 that the model is realizing that it's a storage bot. So as an outcome it can access different files obviously still
+25:32 by you know it's like asking it to access different files but it started to just like scan whatever it had access to
+25:38 in that privilege level and found that someone accidentally in that you know in
+25:43 one of these files left a hard-coded password to the organizational cloud and
+25:49 it used that and now it was able to just like get access to something that didn't have access to before and I'll cut the
+25:55 story short it's like you know just like did a collection of of just like uh things that ultimately just like did more privilege escalation, more
+26:01 privilege escalation, more privilege escalation, and was able to just like gain more and more and more and more access that it should not have given,
+26:07 you know, like to stuff that it should not have given access to. And ultimately, it was able to just like get enough access to be to have admin
+26:13 privileges on the organization and kill critical security processes. And as an outcome,
+26:21 it was able to outmaneuver Windows Defender, remove an organizational defense and upgrade its own privileges
+26:28 such that it can download a file and you know just like actually hack the
+26:34 organization that it's a part of. We call it internally this simulation a double agent just because it's an agent
+26:40 that is doing that but it's turning against its host. So it's kind of like a fun play of words of you know these kinds of like new attacks and in a way
+26:47 the AI is you know it's like kind of used very much like similarly this prompting as that you would think about
+26:54 a parasite that is attacking externally because you're using like very lean text of just like sending something to a
+26:60 model and you're using the fact that it has like a much you know a very strong brain in order to just like do a
+27:05 collection of actions that are very advanced and I want to say the point in
+27:11 time in which we're in right now is that this is a toy setup
+27:17 and it's not I don't expect that you know for for a lot of these things to happen in the wild in in the wild yet that
+27:25 being said we are seeing huge progress quote unquote and I feel that in
+27:30 security have you guys seen like the classic uh I think it was called bricks like the game that deepmind demoed just
+27:35 like a decade ago where just like it starts very badly and just like you know then the AI is able to just like figure
+27:40 out better and better and better strategy is and you know it was first relevant to just like bricks and then it
+27:46 was like relevant to just like many many many other games and you know here we are right now just like a decade after of the state of AI. So I think security
+27:53 by being a derivative market of what it is trying ultimately are trying to secure is at the more nent stage right
+27:59 now where in toy setups and simulations we're able to start only get a glimpse
+28:04 of what's about to come and we are seeing stuff like models having enough
+28:10 power to do stuff as maneuver the host in order to just like do privilege escalation attacks remove some
+28:15 organizational barriers and wipe out even real software such as like real security software such as such as
+28:22 Windows Defender. And while it's still these are not things that will likely happen in the
+28:27 wild now, it's likely that in a year or two or three, if we're not going to have the
+28:33 appropriate defenses, this is going to be a world that we're going to just like end up on. And
+28:38 clearly like the implications here matter, right? You I assume that the vast majority of enterprise in the world
+28:44 don't want to deploy or like adopt tools that are able to outmaneuver their
+28:49 defenses. How do you think about model improvement especially in the context of
+28:56 reinforcement learning playing a pretty significant role in the improvement of of coding um you know even tool use uh
+29:04 for example how does reinforcement learning play a role in cyber security
+29:09 I think that's literally a billion dollar question or just like maybe a trillion dollar question I don't know um
+29:15 because my background is as a researcher I'll keep my scientific integrity and just like say that there's a lot of
+29:20 uncertainty, but I'm still going to give a speculation of just like, you know, what's what's likely and what's going to come. We've already seen that RL is very
+29:29 very useful to a lot of the innovations that we're seeing right now around coding, math, and in other verticals as
+29:35 well. I think it's likely at the point in time in which right now that RL is going to be able to scale as well. That
+29:42 is that we're going to see something similar to scaling laws. uh that if we're going to input more data or just like have breakthroughs and improvements
+29:48 in training, we're going to ultimately get better models at least in the verticals that I've mentioned before by
+29:53 I think it's still an open question on whether RL generalizes um it's like
+29:59 where we are right now in the world. So that means that if you're get using data and a real environments in order to
+30:05 improve the model encoding whether you're going to see like a huge jump in being able to produce better literature for example you know it's like we if you
+30:11 think about it that's roughly in you know huge simplification something that we did come out to expect
+30:18 out of models right we we lived in the last few years in a world where models were showing properties of advancing a
+30:25 lot of capabilities in the same time which is different than the world that we lived in before you know I still have
+30:30 the skill from you know just like what feels our previous life just like previous jobs of understanding how to
+30:37 create huge ML data sets in order to just like improve in a very narrow domain and that world you know it still
+30:42 exists but it's like we shifted into just like a much more generalized paradigm and there's a question of just like whether RL is going to provide that
+30:49 and the reason that that matters is we still are at the early stages of a
+30:55 figuring out if unique improvements in or just like taking relevant data
+31:03 that is relevant for RL training around security is going to push the
+31:08 security frontier or whether improvements that RL is providing around coding or math or other like scientific
+31:14 skills is going to be relevant for security. My intuition on the first one is a
+31:22 fairly strong yes that we are going to see a success in some experiments of
+31:27 just like using security data in order to have improvements such that AI can
+31:32 become like better and better just like at security engineering tasks. I think there are some indicators that are
+31:38 showing that we're on way for doing that. I think it's not going to be as clean as improvements that happened in
+31:44 coding and math just because the complexity and noise level around some security tasks are going to make it like
+31:49 a harder problem. I think we are going to also get some boosts around security
+31:55 that is coming from other just like domains improving in RL soon. You know,
+32:00 if you're better at coding, you are going to be better at some security tasks as well.
+32:06 I think it's still unclear about whether this is going to generalize and in security we're in a more nent situation
+32:12 around just like what's happening right now in RL but I am placing a not insignificant bet that there are
+32:19 going to come just like a stray of just like innovation like a string of innovation is potentially going to come
+32:26 um around that and that we'll see some improvements around security as well with RL over the upcoming period.
+32:34 That's very exciting. Now let's take a step back and talk about the enterprise. And so I think enterprises are still
+32:41 very much so in the early innings of building deploying agentic AI. And how
+32:48 should CESOs and security teams be thinking about security uh as we move into this world?
+32:53 I will say that there is a lot of dependency on exactly what you're trying to do. So I'm going to simplify kind of
+33:00 like aggressively in this answer. A useful frame to start thinking about when you're an
+33:08 enterprise that is starting to deploy on a first level issue is to kind of see AI
+33:14 and specifically a genic AI as the new frontier of insider risk. So there are
+33:21 multiple enterprise already that are trying to give the agents that are
+33:26 deploying internally persistent identities or ways to interact with them. for example, either
+33:33 Slack identities or email identities or systemized like inside of the
+33:38 organizations how and when you can approach AI and that allows to just like
+33:44 have a clear visibility about just like where AI is being used and in which use cases and then it becomes an issue of
+33:51 access controls and an issue of like privileges that you're giving to these identities that you're putting in and
+33:57 that's usually a useful frame in the beginnings of just like embedded So just like gain some visibility and just like
+34:03 try to turn it as much as you can into an issue of access and into an issue of of uh control of privileges. That's
+34:10 obviously insufficient especially if you're getting to the stage where you're allowing AIS to interact with one
+34:15 another in the organization. So for example, age agent on agent communication and that may sound very
+34:20 advanced but if you're running one agent that is doing summarization and another agent that is doing is like ranking the
+34:27 quality and acting as a judge on these summarizations then you're already at a stage where you're having AI on AI interaction. The base level would be to
+34:34 just like have state-of-the-art monitoring on this AI on AI interaction here but however say that there is a
+34:41 genuine gap in what is available out there. A lot of monitoring software was
+34:47 not built uh to detect agents that can potentially communicate in everchanging
+34:52 protocols uh that if something goes wrong can try to bypass and understand that
+34:59 they're in monitored environments and need to also take into account
+35:04 attacks that are unique and novel to AI itself. So clearly if you're starting to
+35:09 deploy right now you need to make sure that you have proper visibility and monitoring into the interactions of just
+35:15 like both the internals of the models and the externals but you need to also realize that a lot of the software is
+35:20 not properly built for that age especially especially especially if you're moving to agent on agent communication. So that's a more advanced
+35:27 use case. Just to give a funny example of something that happened to us in this like one of the like one of the streams
+35:32 of work that we've done with one of the frontier labs. There was a scenario where there was an agent on agent
+35:39 interaction. So these are two real um frontier models actually one of each kind. So it's like having an environment
+35:46 where there was like a you know it's like one I won't said saying the names but you can kind of think about it's like a claw the gemini you know it's
+35:52 like a you know it's like a gawk you know it's like a a llama. um jg etc. So
+35:59 just like two of these that were speaking to one another and very very very randomly in this environment it was
+36:05 a critical security task. That was the simulation that they were in. But after working for a while and you can see it
+36:12 in the reasoning trail one of the models decided that they've worked enough and
+36:19 they and they should stop and you know these are stocastic machines at heart. Uh and
+36:25 you know that that's the design and it's just like likely somehow it got picked
+36:30 up as like part of the distribution that if you work a long time because it learned from the internet
+36:36 trained on me and Dean talking to each other. Exactly. There should be a new policy at that you should Yeah, exactly. that you
+36:41 should take a break, right? and and you know that that makes sense if you you can actually pick up that behavior and on an individual model
+36:49 level that's already you know in this example it's funny and it's weird. That being said it did not stop there. It
+36:57 convinced the other model that they should both take a break. So the model did social engineering on the other
+37:03 model to another model which is and you know again it's funny in a simulated environment in a toy setup but
+37:10 now try to think about the situation where you actually as an enterprise are delegating an autonomous workflow that
+37:17 is critical to you to complete and occasionally there's kind of like this weird thing that stop working and you don't understand why. And the more
+37:25 complicated and capable machines are ultimately going to be, the more of these weird examples we're going to
+37:31 encounter. And just like a different thing that happened to us, you know, we
+37:38 gave a model uh CTF challenge. So capture the flag. It's like very common as in cyber competitions that you're
+37:43 trying to achieve something. you usually have to do like a chain of vulnerabilities that you need to exploit in order to just like obtain and just
+37:49 like capture a flag and that gives you validation that the model was able to do a collection of cyber actions uh that
+37:55 ended up in a success. But the model here again it understood that it's in
+38:00 the context of a CTF and decided that potentially the challenge is too hard.
+38:06 So it did what potentially humans would do which is it tried to email the
+38:11 organizers of the competition in order to help it gain solution and that is and that is literally
+38:17 however if you think about it in enterprise setting it's like you have you have an identity that just like unasked may try to just like use your
+38:24 servers in order to send an email to the world. In our example, by the way, just like the other funny thing which like
+38:29 was a second order issue is that the model failed at doing that not because it had an issue of just like maneuvering
+38:35 inside but because it hallucinated the email address. So as an outcome it tried to send an email to an email that
+38:42 doesn't exist which also like shows you know just like the classic you know like other problems that we're having in AI
+38:48 and in AI adoption are going to be chained to security problems as well which shows like you know the frontier
+38:53 of attacks and defenses that we'll need to develop here. So you know just like as a second just like if I'm going back
+38:58 into just like monitoring etc. A lot of monitoring software you you have to embed it and you have to use
+39:05 what's out there already but it's not built for these kinds of challenges you know that's why a lot of our approach is
+39:10 to figure out how these attacks going to look like how to just like do some of the defenses what's going to be required
+39:16 and occasionally I think it's like a common misconception is that all that you need to do that's all of it
+39:22 ultimately collapses into an issue of access management and that while I think
+39:28 a lot of the basis is there is by you know just like figuring out how to do the access management well and just like manage the privileges. That's only step
+39:34 one of just like what we need to do and there's a mind shift that we also need to have um when we're approaching this
+39:41 subject which is the rate of innovation is so high our ability to understand
+39:47 what's happening at the frontier you know it's like so many things are happening at once try to be very engaged
+39:55 with the community in order to figure out what kind of problems that you're even going to encounter essentially over
+39:60 time and also be better prepared. Okay, so as we shift from the enterprise
+40:05 to sovereign AI, we know the UK government and a set of
+40:11 others are customers of irregular. So how should governments and countries be
+40:16 thinking about AI risk? Obviously, all of the risks that apply on the enterprise side and to the labs
+40:23 themselves apply also on the governmental level because if you're now, you know, the Department of
+40:29 Defense, the Department of Commerce, uh, Department of Education, doesn't matter, and you're using advanced AI models,
+40:34 you're importing the benefits and risks that come associated with them. So everything that we've said about the enterprises, everything that we've said
+40:41 about the frontier labs themselves, uh they have similarities on the
+40:46 governmental side as well. Usually governments however come with a set of
+40:51 unique requirements and a new level of risk uh that is relevant to them. So
+40:57 just like one, they are often targets of other very strong adversaries and should
+41:02 take into account that their adversaries are now taking offensive AI models and
+41:08 are already starting to use them in order to scale up whether simple things such as fishing campaigns up to testing
+41:14 more and more advanced, you know, cyber offensive weapons that is scaling up their efforts that is trying to bypass
+41:20 the fact that, you know, we I think pretty much every critical system that countries have was hacked at some point
+41:25 in time. We have not yet seen multiple critical systems ubiquitously, you know,
+41:31 it's like going under. And the fact that AI on the offender side can scale up operations aggressively means that
+41:38 countries should essentially recreate their approach around critical infrastructure
+41:45 and that is you know AI is being elevated in that context from a classic security risk into a national security
+41:50 issue. um and the infrastructure and just like the thought leadership should be like created there. The other bit is
+41:58 that from a country perspective and you can argue on whether this is the right thing or not but like multiple governments that we've spoken with are
+42:05 very strongly emphasizing the effort of sovereignity in the context of AI and
+42:10 what they usually mean by that is that they are anxious around being dependent because they understand that AI is
+42:16 extremely critical as the infrastructure that could be the key to the 21st century and potentially beyond because
+42:22 of that especially if the country is doing an endtoend and effort starting
+42:28 from building local data centers that could be used in order to train and to do inference on advanced AI models up to
+42:36 the point of potentially training the models and creating the AI systems that surround them and having proprietary
+42:42 environments that they also take in defenses should be done across this entire spectrum and we've indeed done
+42:48 work to just like both create standards of just like how to secure these data centers and making sure that people are
+42:54 not going to lift critical assets That's how to run models on such data centers.
+42:59 For example, we've done a a combination of like a white paper with enthropic that is discussing confidential
+43:04 inference systems and trying to just like figure out like how to create a standard in the field up to the fact of
+43:11 on the when actually using these models taking into considerations how to
+43:17 customize some of the defenses that enterprise need and create the variations of them that governments
+43:23 would need for their use cases. especially if they're putting AI as part of not just you know taking into
+43:30 consideration that AI can be used by adversaries to attack critical infrastructure but by the fact that they
+43:35 may integrate AI to their own critical infrastructures and that requires like a whole new level of just like thinking
+43:41 through the defenses. Dan, this was a lot of fun. Thank you very much for joining us. It was a pleasure being here and also
+43:47 very happy that I ended up answering your emails. Thank you. Thank you.

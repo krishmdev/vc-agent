@@ -1,0 +1,382 @@
+00:00 So I went to a biology conference and um after I gave my talk um a biologist
+00:05 approached me and he said push I uh have been working on this protein for the
+00:12 last 10 years and I had collected so much lab data to
+00:20 characterize this protein to figure out its structure but somehow this had this
+00:25 has eluded like this has evaded all kind of investigation and we still didn't know the structure.
+00:31 Um, but we had all this data. If we knew the structure, we could sort of validate it very quickly. I ran Alphaold 2. It
+00:39 gave me the structure. It perfectly fit the answer. I've been working on this for 10 years.
+00:45 Wow. What do I do next? [Music]
+01:05 What happens when AI stops just answering questions and starts asking them? In this episode, Push Meet Khali
+01:11 discusses DeepMind's Alpha Evolve, a breakthrough evolutionary AI system that discovers entirely new algorithms.
+01:18 Pushmat reveals how coupling language models with evaluators create something unprecedented. AI that can tackle
+01:24 decades old math problems and generate human interpretable code that outperforms expert design solutions.
+01:30 Push shares stunning examples of AI uncovering hidden mathematical truths and explains why we're witnessing the
+01:36 emergence of a new scientific method. One where AI doesn't just accelerate discovery, but transforms which problems
+01:43 we can even attempt to solve. Enjoy the show. Pushmate, thank you so much for joining
+01:48 us today. We've all been eagerly waiting for the moment that AI is capable of making novel scientific discoveries. Do
+01:55 you think that alpha evolve is that watershed moment? Yeah, so it's certainly a key sort of
+01:60 milestone. uh what we have shown is that uh you have uh AI sort of model uh a
+02:07 large language model when coupled with uh a harness is able to discover new algorithms and uh um and not only that
+02:16 it's basically able to prove uh new mathematical results uh which have been uh studied for many many years.
+02:23 You use the words when coupled with a harness. Can you tell us more about that harness? Yeah. So if you now go back to
+02:33 uh AI models like the history of AI for science is is very long. We have a
+02:38 number of different models that have tried to do uh scientific discovery like
+02:44 one of the key uh models in this category is alphafold right which which
+02:49 is the prototypical example of what can be achieved uh in by AI in science. we
+02:57 released uh alpha fold 2 in at the end of 2021
+03:02 and uh it won the Nobel prize last year. So the impact of uh AI in science is
+03:09 very well understood. Now the question is whether um LLMs and foundational
+03:15 models how can they impact uh science. In around 2 years back, we had a um
+03:22 agent called fund search in which we took an LLM and we coupled it with an
+03:28 evaluator and the evaluator allowed the LLM to figure out when it was making new
+03:35 uh conjectures or uh sort of or coming up with new ideas to solve problems
+03:41 whether they were hallucinations or were whether they were brilliant insights. So
+03:46 essentially in this particular case hallucinations were great because those some of those hallucinations were in
+03:53 fact brilliant new insights that nobody had thought about. So which this is where the harness comes
+03:59 in that you have this evaluate evaluation function and essentially a
+04:06 search protocol associated with the LLM that together is able to come up with
+04:11 completely new discoveries that are really impactful. You mentioned fund search. Could you say a word on the
+04:17 difference between uh the results you all accomplished with fund search versus alpha evolve? Yeah, so fund search was our first
+04:24 instantiation of taking a large diagn model and trying to see if it can
+04:29 discover new algorithms. Uh the models at that time were uh were weaker, right?
+04:36 And and the type of search that we were trying to do we we were we had not sort
+04:42 of explored things much further. So what we asked the LLM to do was essentially
+04:49 try to complete a small function and see if it can do that much better. And
+04:56 surprisingly it was able to discover uh completely new algorithms that uh
+05:03 mathematician had been trying to study for a long time. But the limitation was
+05:08 that the mathematician or the or the researcher had to give a template and in
+05:14 which the algorithm uh should be um should be found. With alpha evolve we
+05:21 have removed that restriction. Alpha evolve is not just sort of uh searching for a few lines. It's basically looking
+05:28 at whole sort of uh whole algorithms themselves, right? very very large
+05:33 pieces of code and sort of optimizing them over a long period of time. And secondly, fun search uh our original
+05:41 sort of model used a lot of function evaluations to discover to make these
+05:46 new discoveries. Alpha evolve can work with many fewer uh um function calls and
+05:53 it can basically by looking at fewer proposals it can discover new algorithms much more quickly. Can you tell us about
+05:60 the role that the evolving Gemini models play in the the capabilities of Alpha
+06:05 Evolve? And I think I saw in your blog post you have both Gemini Flash and Pro involved in the in the harness. Um what
+06:12 is each responsible for? Yeah. So I think see uh we have been evaluating or as Gemini gets uh Gemini
+06:20 improves with the various sort of generations, it is becoming much much better at its understanding of code. Now
+06:28 if you have a proposal uh generator which can understand code much more
+06:35 effectively then it gives it generates proposals which are not only syntactically correct they are also
+06:42 semantically trying to solve the task and then you are sampling what are the
+06:48 different ways in which the task can be solved. So as the baseline model
+06:53 Gemini's uh abilities to perform coding improve
+06:59 our sample effectiveness in searching for uh the right solution on these very
+07:05 hard maths and computational problem uh becomes much better. So um so if you
+07:13 want to search in a large space uh there are two sort of elements. One is the speed of how you can generate these
+07:21 proposals and then the speed at at which you can evaluate those proposals. Right?
+07:27 Like so first how quickly can you say can you give me a new sort of candidate
+07:32 algorithm and then secondly how quickly can you evaluate whether the algorithm is any good or not and both things are
+07:40 really important and the fact that you have these variants of Gemini like Gemini flash which can do that very
+07:47 efficiently and very quickly this is really important I know alpha evolve is more of a broad
+07:52 domain model than some of its predecessors how how broad is it what's in scope, what's out of scope?
+07:59 Yeah. So, Alpha Evolve um essentially allows you to search not only in terms
+08:08 of not only in in terms of the size of what you can search over, right? You can now discover whole new algorithms, but
+08:15 it also is extremely general in its ability of uh thinking about uh
+08:22 algorithms in various different languages. So not only can it sort of search in C++ but it can also do it in
+08:28 Python. It can also sort of do in very log which is what the language is for uh
+08:35 define describing chips right in chip design. So so the generality of uh uh of
+08:42 alpha evolve is in its ability to search for these large algorithmic spaces but
+08:49 also in different syntactic and semantic representations. Right? It is not restricted to a particular language like
+08:56 Python, but it can sort of do that search across many different types of languages and many different types of
+09:03 tasks. The only expectation it has is is that you have a function evaluator that
+09:08 the you can quickly evaluate whatever proposal there is uh and say how good it
+09:15 is. It seems like the rough kind of cognitive architecture so to speak of generating a bunch of algorithm
+09:21 candidates, evaluating them and then I guess evolutionarily deciding which ones to keep and then going going forward
+09:27 from there. And this it it seems like it roughly mirrors the scientific method. Is that is that intentional?
+09:33 Yeah. So I I think like there is there are also like if you think about it
+09:38 there is another sort of agent that we uh released uh earlier this year which was called co-scientist and in
+09:45 co-scientist uh essentially what you had was Gemini playing the role of the whole
+09:52 scientific academic process. So Gemini playing the role of a hypothesis
+09:58 generator, Gemini playing the role of the critique,
+10:03 Gemini playing the role of sort of ranking different uh sort of of of reviewing those ideas and ranking those
+10:10 ideas and then editing those ideas. So it was Gemini playing uh playing all
+10:15 these roles in a multi- aent setup and uh these were all sort of Gemini models
+10:22 prompted differently to play different roles and very uh sort of interestingly
+10:28 this combined multi-agent system came up with behavior that went much beyond a
+10:36 single Gemini uh sort of models uh uh answer. So you it was able to give much
+10:43 much much better proposals uh and new ideas compared to a single
+10:49 sort of model. What's the intuition behind why that works? Yeah. So I think that so it it is it is
+10:54 something that we that is still being studied but there are it is a fascinating sort
+10:59 of thing. the the one thing that I actually sort of noticed is that especially with regards to a sort of
+11:05 co-scientist um you would run sort of co-scientist on a particular problem and
+11:14 the very first answer that you would you might get might not be very different
+11:20 from the baseline Gemini sort of model. Um and uh but what happens is even as
+11:28 you sort of increase the amount of computation over sort of uh u this is
+11:34 you're not talking about just a few minutes or a few hours but even days
+11:39 as the whole multi- aent system sort of looks at uh the solutions and then
+11:45 refineses them and sort of tries to sort of uh rank them. It just becomes much
+11:51 much better. So why why that might be happening? It might be that uh the
+11:57 proposal that there is deep insights or there is some sort of intuitions that
+12:02 are buried in the tail of the distribution right and then somehow
+12:08 uh Gemini's ability to evaluate which sort of proposal which idea is better is
+12:16 much better than its capability to come up with a sort of a new idea. It's the
+12:22 same sort of thing in computer science, right? Sometimes we are able to find if sometimes we know uh whether a a
+12:29 particular solution is correct or not, but it's very difficult to come up with a solution, right? So it's it's the same
+12:36 sort of thing appearing uh again in this multi-agent setup that somehow the
+12:41 agents working together are able to extract many more impactful results.
+12:48 It seems like the architecture of kind of you know generators and verifiers it seems like that paradigm is is being
+12:53 echoed across the broad AI space whether it's you know very general models um or very specific kind of like AI systems
+13:00 for very specific applications. Um is that fair that that's sort of the consensus architecture right now and do
+13:06 you think that'll be the thing that people continue to to push and scale? Yeah. So I I think uh there is going to
+13:15 be more work in agents, right? What we are seeing is basically the very start
+13:21 of research on agents. You're um whether uh in alpha evolve you you had uh a
+13:29 generator coupled with uh an evaluator. The generator was a neural network, a
+13:34 foundational model, an LLM and the evaluator was even handcoded, right? But
+13:41 uh together with u an evolutionary sort of uh search scheme uh you were able to
+13:47 sort of get these much more effective results in co-scientist you didn't have
+13:52 just one agent you had multiple agents working in a shared memory. Now like
+13:60 what is the optimal agent configuration like uh this is still an open research
+14:06 problem. Super interesting. Are the results that you're getting are they different from the ways that humans would derive them?
+14:13 And I'm I'm kind of thinking of the the Alph Go move 37 stuff like is are the
+14:18 methods different? Are the results how do they compare to the ways humans would think about them? So let's go back to the sort of original
+14:26 sort of motivation for why we started even working on uh the first iteration
+14:31 of uh using LLN for algorithmic discovery which was fun search. Um
+14:38 so a few years back um like as you know DeepMind has spent a lot of uh uh has
+14:45 done a lot of work in using um AI systems for searching over large spaces
+14:52 right we we we have done a lot of work in building uh agents which have been trained using reinforcement learning
+14:58 which can deal with many complex challenges from the game of go to
+15:04 playing Starcraft which quite complex challenges. Um we set ourselves a
+15:12 challenge that can we take the same kinds of models like the alpha zero uh
+15:17 family of models which were extensions of uh on or sort of uh extensions of
+15:24 what we had done uh in in Go and the development of AlphaGo. Can we use the
+15:30 same types of models for discovering new algorithms? And we came up with a new
+15:36 sort of agent uh called alpha tensor which was particularly sort of focused
+15:42 on finding um solutions for the matrix multiplication problem. And we found
+15:49 that this uh agent was able to improve over the the past known results which
+15:58 had stood for 50 years. But the key question sort of remained
+16:04 can you do something better and secondly can you sort of come up with a solution
+16:09 that is more interpretable. Um at at the same time like when we were looking at
+16:15 practical problems in Google like uh how do you uh schedule jobs in a data
+16:20 center. Um now there are there has been a lot of work on coming up with new
+16:26 algorithms and these um huristics have been designed by some of the best researchers and engineers uh at Google
+16:34 and because they have a huge amount of impact in terms of compute utilization.
+16:40 If you use a typical reinforcement learning agent on this kind of problem,
+16:45 you might get better results, but it might come at the cost of interpretability because now you have a
+16:51 neural network deciding which workloads go to which computers and if something
+16:58 breaks then you don't know how do you debug this uh thing. So what engineers would really prefer is instead of giving
+17:06 uh them a neural network you gave them uh a piece of code that they can interpret and they can run
+17:12 and this was essentially the motivation can we now use LLM. So instead of searching in the space of um uh of
+17:21 specific algorithms like we had done matrix multiplication algorithms like we had done in alpha tensor or coming up
+17:27 with a neural network policy to directly solve the problem. Can we come up with an agent which can search in the space
+17:35 of programs and come up with a program that solves this hard problem? And the
+17:41 benefit of course will be interpretability that uh you can see the sort of code, you can see what its
+17:47 properties are and so on. And uh and that's what is what happened. We found
+17:52 sort of programs that not only were effective but when the experts actually
+17:58 saw those programs they could sort of recover insights. So for instance they
+18:03 uh we one of the maths problems that we had looked at uh for fun search was
+18:09 called the capset problem. This is a problem that Terrence Tao, one of the
+18:14 famous mathematicians, he uh is very interested in and uh and we collaborated
+18:20 with uh uh this mathematician Jordan Ellen Ellenburg at LYU. And when we
+18:25 looked at the program that Fucharch had produced, he found that there were certain symmetries that were in the
+18:33 problem that had not been recognized before. And somehow the program the like
+18:38 like one search the agent had discovered those and were was utilizing those to get a better solution.
+18:44 Can you say what about you you mentioned working with Terrence Tao and other famous mathematicians. Um is math
+18:50 considered the gold standard for you know test testing and benchmarking if these models are generating novel
+18:56 scientific results? Yeah. So math certainly uh sort of has
+19:02 some properties which uh which are very interesting right the the fact that it's very precise um like you can um you know
+19:11 whether the property that you have look looking for whether you have found it or not right you know uh the matrix
+19:19 multiplication uh for matrix multiplication how many multiplications you require um like for a 4x4 matrix
+19:27 what was known was that you can do it with 49 uh sort of multiplications
+19:33 that's by straas and we showed that you can do it by 48. So that's a very precise result right there is no sort of
+19:40 arguing about that. Um so it it gives you a very crisp way of evaluating how
+19:49 well you are how well you have done. Um and there is no sort of uh uh like RLHF
+19:56 needed in terms of human feedback whether this was a nice result or whether this was a nice output or not
+20:02 and you don't need to rely on sort of an LMS score you just know that you're
+20:07 better. Yeah. Okay. Okay. So then when you go from the you know beautiful pristine uh
+20:14 environment that is math to the real world you know it seems like you all have found a lot of real world applications in data centers uh in the
+20:21 verarilog world. Uh could you say a little bit about you know where which applications you expect alpha evolve to
+20:28 be most impactful for? Yeah. So wherever uh sort of you can find a good function
+20:35 evaluator, wherever you can find an evaluator where you can say I really trust this evaluation scheme. If you
+20:42 give me a program, I can tell you very concretely how good it is. If your
+20:48 problem satisfies that that setup then you can use alpha ball because alpha
+20:55 unlike a human sort of programmer who can try 10 things or 100 things or a
+21:00 thousand things alpha does not like it's it does not it does not sort of uh it
+21:07 can go on and on and on and on right it can come up with very counterintuitive sort of uh uh strategies to find to
+21:15 solve that problem some things that you might not have ever imagined.
+21:20 Can you have humans be the function evaluators or does that not work? Humans humans can be the function
+21:26 evaluator. It's it's a uh it's it's a question of sort of scale, right? Like how much uh how many can you
+21:33 sort of evaluate and whether you whether you can evaluate the property of the program
+21:41 effectively. So at scale and with the right uh level of accuracy.
+21:47 How do you do that? Do you build that into the application itself so that there's a human in the loop evaluating
+21:53 as it goes? Do you do that offline separately before the application is produced? I guess how do you do that or
+22:00 how do you imagine people doing that? Yeah. So I mean like so we haven't used
+22:06 a human in the loop for alpha evolve right most of our uh evaluators were programmatic evaluators right but
+22:13 imagine a hypothetical scenario where um alpha evolve was told that you have to
+22:19 solve this maths problem and come up with a new algorithm to solve this problem and suppose it came up with many
+22:26 different types of problem many different kinds of solutions which are all equivalent in performance okay but
+22:32 Then which one is the best? It's the the best is the one which is not only sort
+22:38 of uh very effective on the on the problem but is the most elegant according to a mathematician or uh the
+22:45 most simple to understand right and that's a very subjective human thing
+22:50 like simplicity or interpretability uh like we don't have a sort of crisp
+22:56 definition of it. It's it's it depends on it is grounded in the human
+23:03 observer. At what point do you need to pair kind of what's happening in the digital world to any kind of physical world stuff? I
+23:10 think in your blog post you mentioned that you could see alpha evolve being useful for for example for material science. Do you need to be able to
+23:16 connect to a real world laboratory to kind of get any of that feedback or do you think all of this can kind of happen
+23:22 in the algorithmic domain? Yeah, it that's a very good question and I think this goes back to how much do
+23:28 you trust the evaluator? If you if uh sort of uh if your
+23:34 evaluation was uh based on a computational uh sort of method and the
+23:40 computational method was perfect and you completely trusted it then you don't have to then you think well I believe
+23:47 the computational model the computational model says that the solution that uh alpha evol came up with
+23:54 is satisfies these properties job is done right but if you don't believe that
+24:00 uh the computational model is the perfect uh characterization of reality, then you
+24:07 want to make sure that uh you uh sort of validate uh that result in the real
+24:13 world, right? And and you see whether uh that uh assessment of the evaluator was
+24:19 in indeed correct. As Alpha Evolve becomes more and more successful, as
+24:24 Gemini becomes more and more powerful, what do you think happens to these domains and how will the you know the
+24:30 human scientists and engineers working in them adapt? So for example, if you take chip design for as an example, you
+24:35 mentioned these models are getting very good at um you know creating new
+24:41 generating verilog creating new chip designs. Does that mean the the role of a chip designer goes away changes? Like
+24:47 how do you think that this changes the the world? Yeah. So I think that that's that's again sort of a very interesting um uh
+24:54 question. I'll give you the example of what happened uh with alpha fold. So we
+25:02 started working on this problem of protein structure prediction. So if for those of you who don't know like
+25:07 proteins are the building blocks of life. They are the Lego blocks of uh of life. And uh for many many decades
+25:16 scientists have been trying to figure out what is the shape of proteins because if we understand the shape of
+25:22 proteins we understand how they function and we can use that to sort of uh develop new uh drugs to treating sort of
+25:30 the most sort of uh challenging diseases on the planet. Uh we can develop metal better sort of enzymes and so on. Now uh
+25:38 in 2021 as I sort of mentioned we release a fold too. Before that you used
+25:45 to take or even a single protein sometimes 1 to 5 years to find the
+25:52 structure of a single protein and it might take a million dollars. And there were some proteins which are so
+25:57 notorious no notoriously hard that people had been trying to study them for almost one or two decades and had not
+26:04 found the solution. And which is why only 37% roughly 37% of the human
+26:11 proteins uh their structure was known. So after we sort of uh released alpha
+26:16 fold 2 I went to a biology conference and because alpha fold 2 with alpha fold
+26:21 2 we could find the structure of all proteins not just human proteins all proteins on the planet and we made the
+26:27 structures available to everyone on the planet. So I went to a biology conference and um after I gave my talk
+26:34 um a biologist approached me and he said
+26:39 uh push I uh have been working on this protein for the last 10 years
+26:47 and I had collected so much lab data to characterize this protein to figure out
+26:54 its structure but somehow this had this has eluded like this has evaded did all kind of investigation and we still
+27:01 didn't know the structure. Um but we had all this data. If we knew the structure, we could sort of validate
+27:07 it very quickly. I ran Alphaold 2. It gave me the
+27:12 structure. It perfectly fit the answer. I've been working on this for 10 years.
+27:18 What do I do next? So what what has happened after Alpha 2?
+27:26 What happened is basically suddenly it did three things.
+27:32 It first advanced structural biology. What was not possible earlier which
+27:38 would take a synretron and 6 months and a million dollars is now done in a
+27:43 second. Right? So it really advanced what was possible. Secondly, it accelerated it
+27:51 and thirdly it democratized it. like that particular scientist working
+27:56 in Latin America or South Asia or Africa on some neglected tropical disease had
+28:02 no chance to sort of figure out the structure of their protein. They did not have the funds or have access to
+28:08 instruments that could find them the structure. Now they have access to those things to like the any sort of parasite
+28:15 that they're working on. So what do they do? They are now working in this new model where structures of proteins are
+28:22 not uh hard to get. They are everywhere. And so they are working on the next set
+28:28 of things like how do you now use that knowledge to treat diseases and uh
+28:34 design better drugs and I think the same thing will happen with the with alpha evolve. And you have these agents which
+28:40 can go beyond human abilities in solving these problems. Then the question
+28:46 becomes which problems do we solve? What are the important characteristics
+28:52 of a chip that we need to improve on right? Like we want to make it uh much
+28:58 more efficient, much more sort of um so that it requires less cooling, it
+29:04 requires sort of less expensive uh construction mechanism. it's more fall tolerant. Many other things you can make
+29:10 the problem more and more sophisticated because now you have more sophisticated systems to sort of uh optimize them.
+29:17 While I have you something I've always wondered the the alpha fold results are are phenomenal and and this the story
+29:23 you shared with us is is really impactful. Um do you think it that it's caused an inflection point in the kind
+29:30 of you know availability of new drugs or have have there been other bottle are
+29:35 there other bottlenecks now that are just you know we're faster at one part but unfortunately everything else is just hard so we're still slow uh overall
+29:42 no it's it's it's so it has it has speeded things up but I think there's a
+29:49 one has to understand that um drug discovery is a long process now what are
+29:55 the what What are the roadblocks for drug discovery? First, you have to understand a target. You have to understand here's a protein in the body
+30:01 that I need to bind because this protein is somehow involved in the disease. So,
+30:07 if I can somehow bind something to this protein and change its function, it will
+30:13 have an effect that can uh sort of treat the disease. Like first you have to come up with that conjecture. Then you have
+30:20 to say okay now I I have a target protein how do I develop a drug how do I
+30:26 develop a small molecule or another protein that binds to it. So for that
+30:31 you needed to understand the structure of the protein which other proteins that it interacted with. How did it interact
+30:37 with this molecule? This would take a significant amount of time sometimes two years. Now that process is dramatically
+30:45 sort of uh accelerated. Now you can do it in sort of uh a few weeks or a month
+30:50 or a few months that took you multiple years sometimes but that's not the end
+30:56 of the story. After that you need to now clinically validate it. So you have to go through phase one trials, phase two
+31:03 trials, phase three trials you have to think about toxicity all these other sort of uh things. So what alphafold did
+31:09 was take one blocker away made the overall timeline faster but there are
+31:15 other sort of blockers which our new generation of AI for biology models are hoping to accelerate and much make much
+31:23 faster. So we have uh taken a big step but we need to take a few more big
+31:29 steps. What domains do you think will be most lucrative for this this family of of models? I think
+31:37 the question is what is I mean the the answer to your question is basically
+31:42 what domains do you think are important for society because AI is going to
+31:47 accelerate everything it's going to accelerate healthcare it's going to accelerate sort of uh the ability for us
+31:55 to develop uh more smart systems uh from healthcare to sort of material
+32:02 science like if you think about uh our the history of our civilization. We even
+32:08 describe our civilization in the sense of there was uh first we were sort of
+32:13 cave dwellers and then we went into the stone age and then we sort of uh uh went
+32:19 to the iron age and then the bronze age and now depending on who you talk to you're either in the silicon age or in
+32:24 the plastic age whether you're optimistic or feeling a bit sort of sad. Um but
+32:32 if you take a step back and you think about what has humanity achieved, what
+32:38 we have achieved compared to any other species is the ability to transform energy to leverage energy. Right? We
+32:45 have been able to leverage energy and do big things with that power.
+32:51 Now if you can come up with say a new room temperature superconductor
+32:57 that completely transforms your ability to handle energy right what changes will it bring about
+33:04 in society they're hard to predict if you can if you can deal with energy in that way
+33:11 right if we can unlock fusion right and energy becomes so cheap every
+33:17 like like if you think about geopolitics if you think about economy a lot of It is about energy right and suddenly if
+33:23 energy sort of uh goes down to zero what will be the impact on on on the
+33:30 economics of the whole thing. Similarly like if you think about like coding and
+33:37 if you have these agents which can code what does that mean? If everyone can
+33:44 sort of code like intelligence sort of is completely
+33:49 ubiquitous. Everyone has access to all these different things. So there will be dramatic changes and everything will be
+33:55 impacted. So uh from from materials to energy to sort of coding to healthcare
+34:02 really cool. Do you think we're going to have a fast takeoff moment moment for scientific discoveries? Do you think
+34:07 we're at the ramp of one? You think we're already there? I think we are in we are living through the middle of it. We we just we don't
+34:14 like when you're in the middle you don't really see it but I think we are already in that era of AI accelerated scientific
+34:21 discovery. What do you see as the biggest bottlenecks going forward? I think sort of two elements.
+34:30 One is um validation bringing
+34:36 bridging the gap between the digital and the real world. Right? How do you validate some of that?
+34:43 So that is one sort of key idea, right? And like really sort of capturing what
+34:48 is important for the problem, right? And and the second is sort of uh the other bottleneck is uh how do you make this
+34:57 technology accessible? You can build the most sophisticated technology. If people don't know how to
+35:04 use it then then you will not have the the impact
+35:09 that you want. Right? Alpha Fold 2 the it was not just impactful and
+35:18 transformative because it had very high accuracy because even if like it it had it was
+35:25 quite accurate but it was not perfect right but uh and suppose it was accurate on 99% of the of the things that it
+35:32 predicted it it's definitely not at 99% probably at the 90 or 95% mark so but
+35:37 suppose even it it was accurate at 99%
+35:42 The one person who got unlucky with their prediction and then spend the next
+35:47 sort of one or two years chasing a wrong prediction would then sort of say that I
+35:54 should not use it. I should not sort of use the predictions. So why is why is
+35:59 everyone using Alpha Fold? They're using alpha fold because not only alpha not only is alphafold good at making these
+36:07 predictions which are accurate but it's also very good in understanding the
+36:13 limits of its predictions. When it makes mistakes it's basically
+36:18 holds its hand and says I have made a mistake. So now if it is making your prediction
+36:24 and saying I'm very confident confident like most of the time it's correct and that's great. This is something that
+36:30 the elements of today don't have. They don't have calibrated uncertainty. Should we close out with some rapid fire
+36:36 questions? Yeah, sure. Uh must read paper of the year. Uh must read paper of the year. Oh, um
+36:45 I would say alpha evolve or co-scientist like co like the like uh yeah
+36:52 favorite algorithm nobody talks about. Oh uh the wake sleep algorithm and very
+36:57 few people know about it but uh it's essentially the idea it's a it's a paper
+37:02 from uh MIT uh from Kevin Ellis and Josh Tendonbomb uh which uh sort of talks
+37:10 about it's a way of sort of uh u doing training where you find some exploration
+37:17 and then you somehow uh build the gist of it right so think about uh sort of
+37:23 Library construction. An analogy is library construction, right? You don't just want to write programs, but you want to also create the libraries that
+37:31 have common modules that will make all your future programs
+37:36 much easier to write. Very cool. Agree or disagree? Inference time
+37:42 compute will be the next major lag of compute scaling. Um,
+37:47 somewhat agree. Okay, say more. I so I think inference time compute will
+37:53 be very very important. I think also test time uh sort of training time
+37:58 compute will be equally important. Right? We also like if you look at distillation how powerful distillation
+38:06 sort of has been right. So if these models have a uh have an ability to sort
+38:12 of understand and conceptualize what these models are able to do and
+38:19 come up with better inherent representations then they just become much more
+38:25 effective in making predictions. Maybe their sort of unc sort of uncertainty
+38:30 improves and so on. They become more efficient even. Robotics bullish or bearish?
+38:37 Um I'm I'm bullish about everything. So so I have to say bullish like like I think
+38:44 everything will be sort of uh uh will have an impact. So but it's the question
+38:49 is basically near-term or longer term right in the near term it will take some
+38:54 sort of getting robotics to work is challenging but like in the medium to long term I think I'm bullish.
+38:60 Humanoid robots bullish or bearish? We have constructed our world
+39:06 for humans, right? We like the human form. A lot of the the um the
+39:13 non-natural world around us is made for humans has been designed for for humans
+39:18 like from an architecture perspective. Right now um humanoids have the same
+39:24 form as humans. So they will fit in in all
+39:31 these different architectures that we have built. Now whether they are the most optimal thing that is not clear but
+39:40 uh they certainly sort of um have um an
+39:45 advantage that we designed everything for the human form and now human
+39:51 humanoids have the same form. future Nobel prizes in the sciences.
+39:58 Will all of them be won by teams working with AI? No, I I think we we are getting
+40:04 there, but I think like humans are still winning Nobel prizes in the sciences. So, um I think uh um
+40:13 I think there will come a point where um AI will be indispensable. So it will be
+40:20 sort of humans and AI teams working together to uh achieving these amazing
+40:25 breakthroughs. Push me. Thank you so much for joining us today. These are really fundamental
+40:31 really general results uh that that you're pushing forward at Deep Mind and we appreciate you joining us to to share
+40:37 more about uh how you how you managed to do do all this so far and what's ahead. Thank you. Thank you.
+40:44 [Music]
+40:50 [Music]
+40:60 [Music]

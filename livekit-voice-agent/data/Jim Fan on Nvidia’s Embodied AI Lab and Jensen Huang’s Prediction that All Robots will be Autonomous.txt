@@ -1,0 +1,462 @@
+00:00 so from uh the the chip level which is the J and Thor family to the foundation
+00:05 model uh project Gro and also to the to the simulation and the utilities that we
+00:11 build along the way it will become a platform a Computing platform for humanoid robots and then also for
+00:18 intelligent robots in general so I want to quote Jensen here um one of my favorite quotes from him is that uh
+00:25 everything that moves will eventually be autonomous and I believe in that as well
+00:30 it's not right now but let's say um 10 years or or more from from now if we believe that there will be as many
+00:37 intelligent robots as iPhones then we better start building that [Music]
+00:57 today hi and welcome to training data we have with us today Jim fan senior research scientist at Nvidia Jim leads
+01:05 nvidia's embodied AI agent research with a dual mandate spanning robotics in the physical world and gameplay agents in
+01:11 the virtual world Jim's group is responsible for project Groot nvidia's humanoid robots that you may have seen
+01:17 on stage with Jensen at this here's GTC we're excited to ask Jim about all things robotics why now why humanoids
+01:25 and what's required to unlock a gpt3 moment for robotics
+01:31 welcome to training data thank you for having me we're so excited to dig in today and learn about everything you
+01:36 have to share with with us around Robotics and embodied AI before we get there you have a fascinating personal
+01:42 story I think you were the first open the first intern at open AI maybe walk
+01:47 us through some of your personal story and how you got to where you are absolutely I would love to share share the stories with the audience so um back
+01:54 in the summer of 2016 um some of my friends said there is a new startup in town and you should
+02:01 check it out and I'm like huh I don't have anything else to do because I uh got accepted to um PhD and that summer I
+02:08 was Idol so I decided to join this startup and that turned out to be openai um and during my time at open aai uh we
+02:16 were already talking about AGI back in 2016 um and back then my inter Mentor
+02:22 was Andre Kari and Elia Sev and we talk about and we discuss a project together
+02:28 it's called world of bits so the idea is is very simple we want to build an AI agent that can read computer screens
+02:36 read the pixels from the screens and then control the keyboard and mouse um if you think about it this interface is
+02:43 as general as it can get right like all the things that we do on a computer like you know replying to emails or playing
+02:49 games or browsing the web it can all be done in this interface mapping pixels to keyboard mouse control so that was
+02:56 actually uh my first kind of uh attempt at AGI at open AI uh and also my first
+03:03 journey the first chapter of my journey in AI agents I remember world of BS actually I didn't know that you were a
+03:09 part of that uh that's really interesting yeah yeah it was it was a very fun U project and was part of a
+03:14 bigger initiative called OB Universe yeah uh which was a like a bigger um platform on like uh integrating all the
+03:21 applications and games into into this framework what do you think were some of the unlocks then and then also what do
+03:26 you think were some of the challenges that you had with agents back then yeah yes so back then the main method that we
+03:32 used was reinforcement learning uh there was no l no Transformer back in 2016 uh
+03:38 and the thing is reinforcement learning it works on specific tasks but it doesn't generalize like we can't give
+03:43 the Asian arbitrary language and instruct it to do uh things to do arbitrary things that we can do with a
+03:49 keyboard and mouse so back then uh it kind of worked on the task that we designed but it doesn't really
+03:54 generalize um so um you know that started uh like my next chapter uh which
+04:00 is um I went to Stanford and I started my PhD with Professor fa Lee and we
+04:06 started working on computer vision and also embodied Ai and during my time at Stanford which was from 2016 to 2021 uh
+04:14 I kind of witnessed the transition of the Stanford Vision lab led by faay uh
+04:19 from you know static computer vision like recognizing images and videos to more embodied computer vision where an
+04:26 agent learns perception and takes actions in an inter interactive environment and this environment can be
+04:32 virtual as in simulation or it can be the physical world um so that was um my
+04:38 PhD like transitioning to embodied AI um and then after I graduated from PhD I joined Nvidia and have stayed there ever
+04:45 since so I carried over my work from from my PhD thesis to Nvidia and still
+04:51 working on embodied AI till this day so you oversee the embodied AI initiative
+04:56 at Nvidia maybe say a word on what that means and what you all are hoping to accomplish yes so uh the team that I am co-leading
+05:03 right now is called gear uh which g a r and that stands for journalist embodied
+05:10 agent research and to summarize what our team works on in three words is that we
+05:15 generate actions um because we build in body air agents and those agents take
+05:20 actions in different worlds and if the actions are taken in the virtual world
+05:26 that would be gaming Ai and simulation and if the actions are taken in the physical world that will be robotics
+05:32 actually uh earlier this year in March uh GTC at Jensen's keynote he unveiled
+05:38 something called project Groot uh which is nvidia's moonshot effort at building Foundation models for humano Robotics
+05:45 and that's basically what the gear team is focusing on right now we want to build the AI brain for humanoid robots
+05:52 and even beyond what do you think is Invidia is competitive advantage in building that yeah that's a great
+05:57 question so um well one is for for sure like compute uh resources all of these
+06:02 Foundation models require a lot of compute to scale up and we do believe in scaling law um there were scaling laws
+06:09 for like L um but the scaling law for embodied Ai and Robotics are yet to be
+06:14 studied so we're working on that and the second strength of Nvidia is actually
+06:19 simulation um so Nvidia before it was an AI company it was a Graphics Company so Nvidia has a has many years of expertise
+06:27 on building simulation like physics simulation and rendering and also real time
+06:32 acceleration um on on gpus so we are using simulation heavily in our approach
+06:38 to build robotics the simulation strategy is super interesting why do you think most of the industry is still very
+06:44 focused on real world data the opposite strategy yeah I think um we need all
+06:50 kinds of data and simulation and real world data by themselves are not enough
+06:55 so uh at gear we divide this data strategy into roughly three buckets one
+07:01 is the internet scale data like all the text and videos um online and the second
+07:06 is simulation data where we use uh Nvidia simulation tools to generate lots of synthetic data and the third is the
+07:13 real robot data where we collect the data by uh teleoperating the robot and
+07:18 then just collecting and recording those data on the robot platforms and I believe a successful robotic strategy
+07:25 will involve uh the effective use of all three kinds of data and mixing them and also uh delivering a unified solution
+07:32 can you say more about um we were talking earlier about you know how data is fundamentally the key bottleneck in
+07:38 making a robotics Foundation model actually work can you say more about your kind of conviction uh in that idea
+07:45 and then like what exactly does it take to make you know great data to to kind of break through this problem yes so um
+07:53 I think like the three different kinds of data that I just mentioned have different strengths and weaknesses so
+07:58 for internet data they are the most diverse they encode a lot of common sense prior right like for example um
+08:05 all the most of the videos online are human- centered uh because humans uh we we love to take selfies we love to
+08:12 record each other doing all kinds of activities and there are also a lot of instructional videos online so we can
+08:18 use that to kind of learn how humans interact with objects and how objects behave under different uh situations so
+08:26 that kind of provides a common sense prior for the robot Foundation model um but the internet scale data they
+08:32 don't come with actions we cannot download the motor control signals of the robots from the internet and that
+08:39 goes to the second part of the data strategy which is using simulation so in simulation uh you can have all the
+08:46 actions and you can also observe the consequences of the actions in that particular environment um and the
+08:52 strength of simulation is that it's basically infinite data and um you know
+08:57 the data scales with uh compute the more gpus you put into the simulation pipeline the more data that you will get
+09:04 and also the data is super real time so if you collect data only on the real robot then you are limited by 24 hours
+09:11 per day but uh in simulation like the GPU accelerated uh simulators we can
+09:17 actually accelerate Real Time by 10,000x so we can collect the data at much higher throughput given the same walk
+09:24 clock time so that's the strength but the weakness is that uh for simulation
+09:29 uh no matter how good the graphics pipeline is there will always be uh this similation to reality Gap like the
+09:36 physics will be different from The Real World then the the the visuals will still be different they will not look uh
+09:42 exactly as realistic as real world and also there is a diversity issue like the
+09:47 contents in the simulation will not be as diverse as all the scenarios that we encounter in the real world so these are
+09:54 the are the weaknesses and then uh going to the real robot data um and those data
+10:00 they don't have the Sim to real Gap because they're collected on the real robot but it's much more expensive to
+10:07 collect because you need to hire people to operate the robots and again they're limited by the speed of the world of
+10:13 atoms you only have 24 hours per day and you need humans um to to collect those
+10:19 data which is also very expensive um so we see these three types of data as having compliment strengths and I think
+10:26 a successful strategy is to combine their strength uh and then you know to
+10:32 remove their weaknesses so the cute Groot robots that were on stage with Jensen um that was such a cool moment um
+10:40 if you had tas's dream in one five 10 years like what what do you think uh your group will have accomplished yeah
+10:46 so uh this is pure speculation but I hope that we can see uh research
+10:52 breakthrough in robot Foundation model maybe in the next two to three years um so that's what we call like a gpt3
+10:58 moment for robotics um and then uh after that it's a bit uncertain because to have the robots uh
+11:05 enter like daily lives of people there are a lot more things than just the technical side um the robots need to be
+11:11 affordable and mass produced and we also need like uh safety uh for the hardware
+11:17 and also privacy and regulations and those those will take longer for the robots to be able to hit a mass market
+11:24 so that's a bit harder to predict but I do hope that the research breakthrough will come in the next two to three years
+11:29 what do you think we'll Define what a gp3 moment in AI robotics looks like yeah that's a great question so um I
+11:36 would like to think about robotics as consisting of two systems system one and
+11:41 system two so uh that comes from the book Thinking Fast and Slow uh where system one means um this um low-level
+11:50 motor control that's unconscious and fast uh like for example when I'm
+11:55 grasping this cup of water I don't really think about how I move the fingertip tip at every millisecond um so
+12:02 that would be system one and then system two is slow and deliberate and it's more like reasoning and planning that
+12:07 actually uses the the the conscious brain power that we have so um I think
+12:13 the gbd3 moment uh will be on the system one side and my favorite example is the
+12:19 verb open so just think about the complexity of the word open right like opening the door is different from
+12:26 opening window it's also different from opening a bottle or opening your phone but for humans we have no trouble
+12:33 understanding that open means different things when you're interacting uh it means different motions when you're
+12:38 interacting with different objects but so far we have not seen a robotics model that can generalize on a lowlevel uh
+12:45 motor control on these verbs so I hope to see a model that can understand these verbs in their abstract sense and can
+12:52 generalize to all kinds of scenarios that make sense to humans um and we haven't seen that yet but I'm hopeful
+12:59 that this moment could come in the next two to three years what about system two thinking like how do you think we get
+13:04 there uh do you think that some of you know the reasoning efforts in the llm world uh will be relevant uh as well in
+13:12 the robotics world yeah absolutely uh I think as for system 2 we have already seen very strong models that can do uh
+13:19 reasoning and planning and also coding as well so these are the L and Frontier models uh that that we have already seen
+13:26 these days um but to integrate the syst system two models with system one is another research challenge in itself so
+13:34 uh the question is for robot Foundation model do we have a single monolithic model or do we have some kind of
+13:39 cascaded approach where the system two and the system One models are separate and and can communicate with each other
+13:46 in some ways I think that's an open question um and again they have pros and cons right like for the first idea the
+13:53 monolithic model uh is cleaner there's just one model one API to maintain um
+13:59 but also it's a bit harder to kind of control because you have different control frequencies like the system two
+14:06 models will operate on a slower control frequency uh let's say one Hertz like one decision per second while the system
+14:13 one like the uh motor control of me grasping this cup of water that will likely be a th000 Hertz where I need to
+14:20 make these minor like these tiny muscle decisions at thousand times per second
+14:26 it's really hard to encode them both in a single model so maybe a cascaded approach will be better but again how do
+14:32 we communicate between system one and two do they communicate through text or through some latent variables it's
+14:38 unclear and I think um it's a very exciting new research direction is your instinct that we'll get there in that
+14:44 breakthrough on system one thinking like through scale and Transformers like what is going to work um or is it you know
+14:52 cross your fingers and hope and see I I I certainly hope that uh the data strategy I described will kind of get us
+14:58 there because because I feel that we have not pushed the limit of Transformers yet um on the essential
+15:05 level like Transformers take tokens in and outputs tokens and ultimately the
+15:10 quality of the tokens determines the quality of the model the quality of those large Transformers and for
+15:17 robotics as I as I mentioned like the data strategy is very complex we have all the internet data and also we need
+15:24 simulation data and the real robot data and once we're able to scale up on the data Pipeline with all those high
+15:30 quality actions then we can tokenize them and we can send them to a Transformer to compress um so I feel we
+15:37 have not pushed Transformer to limit yet uh and once we figure out the data strategy we may be able to see some
+15:43 emerging property as we scale up the data and scale up the model size and for that I'm calling it the scaling law for
+15:50 embodied Ai and it's just getting started I'm very optimistic that we will get there I'm curious to hear what are
+15:55 you most excited about personally when we do get there what's the industry or application or use case that you're
+16:02 really excited to see this completely transform the world of Robotics today yes so uh there are actually a few
+16:08 reasons that we chose humanoid robots as kind of the main research CES to tackle
+16:14 uh one reason is and the world is built around the human embodiment the human form factor right all our restaurants
+16:20 factories hospitals and all equipments and tools they're designed for uh the
+16:26 human form and also the the human hands so uh in principle uh a sufficiently good
+16:32 humanoid Hardware should be able to support any task that a reasonable human can do in principle and the humanoid
+16:39 Hardware is not there yet today but I feel in the next two to three years the humanoid Hardware ecosystem will mature
+16:47 and we will have affordable humanoid Hardware to work on and then it will be a problem about AI brain about how we
+16:53 can drive those humanoid hardware and once we have that once we're able to
+16:58 have uh the grou Foundation model that can take any instruction in language and then perform any task that a reasonable
+17:05 human can do then we unlock a lot of economic value like we can have um robots uh in our in our households uh
+17:13 helping us with daily chores like laundry and dishwashing and cooking or like elderly care and we also have them
+17:19 in restaurants in hospitals in factories helping with all the uh all the tasks that that humans do um and um I I hope
+17:28 that will come in the next decade but again as I mentioned in the beginning this is not just a technical problem but
+17:34 also there are many uh things beyond the technology so um I'm looking forward to
+17:39 that any other reasons you've chosen to go after humanoid robots specifically yeah so uh there also a bit more
+17:45 practical reasons uh in terms of the the the training pipeline um so there are lots of data online um about humans
+17:54 right it's all like human- centered all the all the videos all like humans doing daily tasks all having fun uh and the
+18:01 humanoid uh robot form factor is closest to the human form factor which means that the model that we train using all
+18:08 of those data uh will be able to have uh an easier time to transfer to the humanoid form factor other than rather
+18:15 than the other form factors so let's say for robot arms right like how many videos do we see online about robot arms
+18:21 and grippers very few but there are many videos of people using their five finger hands right to work with objects so it
+18:29 might be easier to train for humano robots and then once we have that uh
+18:35 we'll be able to specialize them to like the robot arms and more kind of specific
+18:40 robot forms so that's why we're aiming for the full generality first I didn't realize it so are you exclusively
+18:47 training on humanoids today versus robot arms and and um robot dogs as well yeah
+18:52 so um for project gr simulation yeah yes so for project Groot we are aiming more
+18:58 towards humanoid right now um but the pipeline that we're building including the simulation tools right the
+19:04 the the real robot tools like those are General purposing enough that we can also adapt to other Platforms in the
+19:09 future so yeah we're building these uh tools to be generally applicable yeah you've used term General quite a few
+19:16 times now um I think there are some folks from especially from the robotics world who think that you know a general
+19:22 approach won't work and you have to be domain environment specific um why have you chosen to go after a general
+19:29 approach and um you know the Richard Sutton bit bitter lesson stuff has been a recurring theme on our podcast I'm
+19:35 curious if you think it holds in robotics as well absolutely so um I would like to first talk about the
+19:42 success story um in NLP that we have all seen right so before uh the chat GPT and
+19:49 the gpt3 uh in the world of NLP there are a lot of kind of different models
+19:54 and pipelines for different applications like translation and coding and you know doing math and um doing
+20:02 like creative writing like they all use very different models and uh completely different training pipelines but then
+20:09 chat gbt came and unified everything into a single model so before chat gbt
+20:15 we call those specialist and then the the GB3 and chat gbts we call them the
+20:20 journalist and once we have the journalist we can prompt them distill them and fine-tune them back to the
+20:26 specialized tasks and we call those the specialized journalist and according to
+20:32 the historical Trend it's almost always the case that the specialized journalists are just far stronger than
+20:38 the original Specialists and they're also much easier to maintain because you have a single API that takes tax in and
+20:45 then spits text out so I think we can follow the same success story from uh
+20:51 the world of NLP and it will be the same for robotics so right now in 2024 most
+20:57 of the Robotics and applications we have seen are still in the specialist stage right they have uh specific robot
+21:04 Hardware uh for specific tasks collecting specific data using specific pipelines but project Groot aims to
+21:12 build this general purpose Foundation model that works on humanoid first but later will generalize to all kinds of
+21:18 different robot forms or embodiments and that will be the jist moment that we are
+21:24 pursuing and then once we have that journalist we'll be able to prompt it
+21:30 fine-tune it distill it down to specific robotics tasks and those are the specialized journalist but that will
+21:37 only happen after we have the journalist so um it will be easier in the short run
+21:42 to pursue the specialist it's just easier to show results because you can just focus on uh a very narrow set of
+21:48 tasks but we at Nvidia believe that the future belongs to journalist even though it will take longer to develop it will
+21:55 have more uh difficult research problems to solve but that's what we're aiming for first the interesting thing about
+22:01 Nvidia building grou to me is also what you mentioned earlier which is that Nvidia owns both the chip and the model
+22:07 itself what do you think are some of the interesting things that Nvidia could do to optimize um Groot uh on its own chip
+22:16 yes so um at the March GTC uh Jensen also unveiled the next generation of the
+22:22 edge Computing chips it's called The jesson Sword chip and it was actually co- announced with project Groot so the
+22:29 idea is we will have kind of the full stack as a unified solution to the customers so from uh the the chip level
+22:36 which is the J and Thor family to the foundation model uh project Gro and also
+22:42 to the to the simulation and the utilities that we build along the way it will become a platform a Computing
+22:48 platform for human robots and then also for intelligent robots in general so I
+22:54 want to quote Jensen here um one of my favorite quotes from him is that uh everything that moves will eventually be
+23:01 autonomous and I believe in that as well it's not right now but let's say um 10
+23:07 years or or more from from now if we believe that there will be as many intelligent robots as iPhones then we'd
+23:14 better start building that today that's awesome are there any particular results from your research so far that you want
+23:20 to highlight anything that gives you kind of optimism or conviction in in the approach that you're taking yes we can
+23:27 um talk about some prior works that we have done so uh one work uh that um I
+23:32 was uh really uh happy about was called urea and uh for this work uh we did a
+23:38 demo where we trained a FiveFinger robot hand to do pen spinning so um very
+23:44 useful and it's super human with respect to myself because um I have given up pen
+23:50 pen spinning long since childhood I'm not able to do it live demo I will feel miserably at this live
+23:57 demo um so yeah not able to do this but but the robot hen uh is able to and the
+24:03 idea that we use to train this is that uh we prompt an L uh to write code in
+24:10 the simulator API that uh Nvidia has built so it's called The is6 Sim API and
+24:16 um the L outputs uh the code for reward function so a reward function is
+24:22 basically a specification of the desirable behavior that we want the robot to do so the robot will be
+24:29 rewarded uh if it's on the right track or penalized if it's doing something wrong so that's a reward function uh and
+24:35 typically the reward function is engineered U by a human expert uh typically a roboticist who really knows
+24:42 about the API it takes a lot of specialized knowledge and the reward function engineering is by itself a very
+24:48 tedious and manual task so what ureka did was we designed this uh algorithm
+24:54 that uses L to automate this reward function design so that the reward
+24:59 function can instruct the robot to do very complex things like pen spinning so
+25:04 it is a general purpose technique that we developed and we do plan to scale this up uh to Beyond just pen spinning
+25:11 um it's uh it should be able to design reward functions for all kinds of tasks or it can even generate new tasks right
+25:19 using the Nvidia simulation API so that gives us a lot of kind of space to grow
+25:24 why do you think uh I mean I remember 5 years ago there were people that were you know research was working on solving
+25:30 Rubik's cubes with a robot hand and things like that and it felt like robotics kind of went through uh maybe a
+25:36 trough of disillusionment and in the last year or so it feels like the space has really
+25:41 heated up again do you think there is a why now around robotics this time around
+25:46 and like what's different and we're you know we're reading that Open the Eyes is getting back into robotics everybody
+25:52 everybody is now spinning up their efforts like what do you think is different now yeah uh I think there are
+25:57 quite a few key factors that are different now uh one is on the robot Hardware actually since the end of last
+26:03 year we have seen a surge of new robot Hardware in the ecosystem uh there are companies like uh Tesla working on
+26:10 Optimus Boston Dynamics and so on and a lot of startups as well so we are seeing better and better Hardware so that's
+26:16 number one uh and those Hardwares are becoming more and more capable with like you know better Dex Source hands better
+26:23 uh whole body reliability um and the second factor is uh the pricing so we
+26:29 also see um a significant drop in the in the price uh and the cost the
+26:34 manufacturing cost for the human robots so back in 2001 uh NASA had a humanoid
+26:40 developed and it's called a robot knot uh I remember if I recall correctly it cost north of $1.5 million per robot and
+26:49 then most recently there are companies that are able to um put a price tag of about $30,000 on a full-fledged humanoid
+26:58 and that's rough roughly comparable to the price of a car yeah and also there's always this trend in manufacturing where
+27:04 a mature product uh the price of it will tend towards the price of the raw material cost and for the humanoids um
+27:12 it typically takes only 4% of the raw material of a car so it's possible that
+27:18 we can see the cost trending downwards even more and there could be an exponential decrease in the price in the
+27:24 next couple of years and that makes you know these stateof Ard Hardware more and more affordable that's the second factor
+27:30 of why I think humanoid is gathering momentum and the third one is on the foundation model side right we are able
+27:36 to see the system to Problem the the the reasoning the planning part being addressed very well by the frontier
+27:43 models uh like the the gpts and the clouds and the llamas of the world um and these LS they're able to generalize
+27:50 to new scenarios they're able to write code and actually the urea project I just mentioned uh leverages these coding
+27:56 abilities of the L to help develop new robot Solutions um and there are also a
+28:02 surge in multimodal models improving the computer vision the perception of it so
+28:07 uh I think these successes uh also encourage us to pursue robot Foundation models um because uh we think we can
+28:14 write on the generalizability of these Frontier models and then uh add like actions on top of them um so we can
+28:21 generate action tokens that will ultimately Drive these uh humanoid robots I completely agree with all that
+28:26 I also think so much of what we've been trying to tackle to date in the field has been how to unlock the
+28:31 scale of data that you need to build this model and all the research advancements that we've made many of which you've contributed to yourself
+28:38 around Sim toore and and other things and the tools that Nvidia is built with Isaac Sim and others have really
+28:44 accelerated the field alongside teleoperation and cheaper teleoperation devices and things like that and so I
+28:50 think it's a really really exciting time to be building here I agree yeah I'd love to transition to talking about Virtual Worlds if that's okay with you
+28:57 yeah absolutely yeah um so I think you started your research uh more in the Virtual World Arena um maybe say a word
+29:04 on what got you interested in Minecraft and versus robotics like is it all kind
+29:09 of related in uh in your in your world um what got you interested in Virtual
+29:15 Worlds yeah that's a great question so for me my personal mission is to solve embodied Ai and for AI Asians embodied
+29:23 in the virtual world that will be things like gaming and simulation and that's why I also have a very soft spot uh for
+29:29 for gaming I also enjoy gaming myself um what did you play yeah so um I I play
+29:35 Minecraft I I try to I'm not a very good gamer um and that's why I also want my AI uh to avenge my poor skills yeah so
+29:43 um I work on a few uh gaming projects before uh the first one was called Mind Dojo uh where we uh develop a platform
+29:51 to develop general purpose agents in the game of Minecraft um and for those audience who are not familiar Minecraft
+29:57 is this 3 voxo world where you can do whatever you want uh you can craft like
+30:02 all kinds of recipes you know different tools and you can uh also go on adventures it's an open-ended game with
+30:09 no particular score to maximize and no um uh fixed story lines to follow so uh
+30:16 we collected a lot of uh data from the internet um there are videos of people playing Minecraft there are also Wiki
+30:23 pages that explain every concept and every mechanism in the game those are like multimodal documents uh and also
+30:30 like forums like Reddit the Minecraft subreddit uh has a lot of people talking about the game uh in natural language so
+30:36 we collected these multimodal data sets and we're able to train models to play Minecraft so that was the first work
+30:43 mind Dojo um and later the second work uh was called Voyager so um we had the
+30:49 idea of Voyager after gp4 came along because that at that time it was the
+30:55 best coding model out there um so we thought about hey what if we use coding
+31:00 as action and building on that inside we're able to develop the Voyager agent
+31:07 where it writes code to interact with the Minecraft world so we we use an API to First convert the 3D Minecraft world
+31:14 into a text representation and then have the Asian right code um using the action
+31:20 apis but just like human developers the agent is not always able to write a code
+31:25 correctly on the first try so we kind of give it a self flection Loop where it tries out something and if it runs into
+31:31 an error or if it makes some mistakes in the Minecraft world it gets the feedback and it can correct its program and once
+31:39 it's written the correct program that's what we call skill we'll have it save to a skill Library so that in the future if
+31:46 the agent faces a similar situation it doesn't have to go through that trial and error loop again it can retrieve the
+31:52 skill from the skill Library so you can think of that skill Library as a code
+31:57 base that L interactively authored all by itself right there's no human
+32:02 intervention the whole code base is developed by by Voyager so that's a second mechanism the skill library and
+32:09 the third one is what we call an automated curriculum so basically the agent knows what it knows and it knows
+32:15 what it doesn't know so it's able to propose the next task that's neither too difficult nor too easy for it to solve
+32:23 and then it's able to just follow uh that path and discover all all kinds of
+32:28 different skills uh different tools and also travel along in a vast world of
+32:34 Minecraft and because they travel so much and that's why we call it the Voyager um so yeah that was uh kind of
+32:41 our team's um one of our earliest attempts um building AI agents in the
+32:46 embodied World using Foundation models talk about the curriculum thing more I think that's really interesting because it feels like it's one of the more
+32:52 unsolved problems in kind of the reasoning and llm World generally like how do you make these models self-aware
+32:58 so that they know kind of how to take that next step to improve maybe maybe take say a little bit more about what
+33:03 you built on on on the curriculum and the reasoning side absolutely um I think there's a very interesting emerging
+33:09 property from those Frontier models is that they can reflect on their own actions and they kind of know what what
+33:17 they know and what they don't know and they're able to propose tasks accordingly so for the automated
+33:23 curriculum in Voyager we gave the agent a high level directive that is to find as many novel items as possible uh and
+33:31 that's just the one kind of sentence of goal that we gave and we didn't give any instruction on uh which objects to
+33:38 discover first which tools to unlock first we didn't spec uh we didn't specify and the agent was able to
+33:44 discover that all by itself uh using this kind of coding and prompting and skill Library um so it's kind of amazing
+33:51 that the whole system just works it's uh I would say it's an emerging property once you have a very strong reasoning
+33:57 engine that can generalize why do you think there are so many so much of the kind of virtual world research has been
+34:04 done in the virtual world and I'm sure it's not entirely because a lot of deep learning researchers like playing video
+34:10 games although I'm sure it doesn't hurt either um but what I guess what are the connections between solving stuff in the
+34:16 virtual world and in the physical world and how how do the two interplay yeah so um as different as gaming and Robotics
+34:22 seem to be uh I just see a lot of U similar principles shared across these two domains
+34:29 um for the embodied agents um they take as input the perception which can be a
+34:34 video stream along with some sensory input and then they output actions and in the case of gaming it will be uh like
+34:40 keyboard and mouse actions and for robotics it will be lowlevel motor controls so ultimately the API looks
+34:47 like this um and uh these agents they need to explore in the world they um
+34:53 have to collect their own data in some ways so uh that's uh what we call en forcement learning and also
+34:59 self-exploration and that part that principle is again shared among uh the physical agents and the virtual agents
+35:06 um but the difference is robotics is harder because you also have a simulation to reality Gap to bridge
+35:13 because in simulation uh the physics and the rendering will never be perfect um
+35:18 so it's really hard to kind of transfer what your learning simulation to the real world um and that is by itself an
+35:24 open-ended research problem so for robotics uh it's got the Sim to real issue but for gaming it doesn't you are
+35:31 training and testing in the same environment so I would say that would be the difference between them and um last
+35:38 year I proposed a concept called Foundation agent where I believe
+35:43 ultimately we will have one model that can work on both you know virtual agents
+35:48 and also physical agents so for the foundation agent uh there are three axis
+35:54 over which it will generalize uh number one is the skills that it can do number
+35:59 two is the embodiments or like the body form the form factor it can control and
+36:04 number three is the world the realities it can master so in the future I think a
+36:11 single model will be able to do a lot of different skills on a lot of different
+36:17 robot forms or agent forms and then generalize across many different worlds
+36:22 virtual or real and that's the ultimate Vision that the gear team wants to pursue the foundation AG pulling down
+36:28 the threat of of virtual worlds and gaming in particular and and what you've
+36:34 unlocked already with some reasoning some emerging Behavior especially working in an open-ended environment
+36:40 what are your what are some of your own personal dreams for what is now possible in the world of games where would you like to see AI agents innovate in the
+36:47 world of games today yes so um I'm very excited by two aspects one is uh
+36:53 intelligent agents inside the games so um the NPC that we have these days they have fixed
+37:00 scripts to follow and they're all manually authored what if we have NPCs
+37:05 uh the non-player characters that are actually alive yeah uh and you can interact with them and they can remember
+37:12 what you told them before and they can also take actions in the gaming world that will change the narrative and
+37:18 change the story for you so this is something um that we haven't seen yet but I feel there's a huge potential
+37:25 there so that when everyone um play the game everybody will have a different experience and even for one person you
+37:33 play the game twice you don't have the same story so each game will have infinite replay value yeah so that's one
+37:39 aspect and the second aspect is that the game itself can be generated yeah and we
+37:45 already see many different tools kind of doing uh subsets of this Grand Vision I
+37:50 just mentioned right like there are text to 3D generating assets there are also like text to video models um and of
+37:57 course uh there are like language agents that can you know generate story lines uh what if we put all of them together
+38:03 so that the game world is generated on the fly as you playing and interacting with it yeah that would be just truly
+38:10 amazing and a truly open-ended experience super interesting um for the agent Vision in particular do you think
+38:16 you need gpg 4 level capabilities or do you think you can get there with llama 8B for example alone yeah I I think the
+38:23 agent uh needs the following capabilities uh one is of course it needs to hold an interesting
+38:28 conversation it needs to have uh a consistent personality and it needs to have long-term memory and also take
+38:36 actions in the world so uh for these uh aspects I think currently like the lava
+38:42 models are pretty good for that um but also not good enough to produce very
+38:47 diverse behaviors and really engaging behaviors so I do think there's still a gap uh to to reach um and the other
+38:55 thing is about inference cost so if we want to deoy Dey these agents uh to to The Gamers uh then either it's like very
+39:02 low cost hosted on the cloud or it runs locally on the device otherwise it's
+39:07 kind of uh unscalable in terms of cost so that's another um factor to be
+39:13 optimized do you think all this work in the virtual world space is it in service
+39:18 of like you know you know you're learning things from it that way you can accomplish things in the physical world is is it does the virtual world stuff
+39:25 exist in service of the physical world Ambitions or I guess said differently
+39:31 like is is it enough of a prize in its own rights and how do you think about prioritizing your work between the
+39:36 physical and Virtual Worlds yes so um I just think the virtual world and the physical world ultimately will just be
+39:42 different realities on a single axis so let me give one example so there is a
+39:49 technique called domain randomization and how it works is that you train a
+39:54 robot in simulation but you train it in 10,000 different simulations in parallel
+40:01 and for each simulation they have slightly different physical parameters like the gravity is different the
+40:07 friction the weight everything is a bit different right so it's actually 10,000 different
+40:12 worlds and um let's assume if we have an agent that can master all the 10,000
+40:18 different configurations of reality all at once then our real physical world is
+40:24 just the 10,000 1st virtual simulation and in this way we're able to
+40:31 generalize from SIM to real directly so uh that's actually exactly what we did
+40:36 in a follow-up work to urea where we where we're able to um train agents uh
+40:42 using like all kinds of different randomizations in the simulation and then transfer zero shot to the real
+40:48 world without further fine tuning so I do believe Eureka that's Dr Eureka work
+40:54 uh and I do believe that if we have all kinds of different virtual world including from games and if we have a
+41:00 single agent that can master all kinds of skills in all the worlds then the real real world just becomes part of
+41:07 this bigger distribution do you want to share a little bit about Dr R to ground the audience in that example oh yeah absolutely so um for the Dr urea work we
+41:15 built upon urea and uh still use l as kind of a uh robot developer so the L is
+41:22 writing code and the code uh is to specify uh the simulation parameters
+41:27 like the randomization parameters and after a while after a few iterations um
+41:33 the policy that we train in a simulation will be able to generalize to the real world so one specific demo that we
+41:39 showed is that we can have uh a robot dog walk on a yoga ball um and it's able
+41:45 to stay balanced and also even walk forward uh so one very funny comment that I saw was uh someone actually asked
+41:52 um his real dog to do this task and his dog isn't able to do it so in some sense
+41:59 our new network is super dog performance I'm pretty sure my dog would not be called it ADI yeah artificial dog
+42:07 intelligence yeah that's the next Benchmark um in the virtual world's uh sphere I think there's been a lot of
+42:14 kind of just incredible models that have come out on both the 3D and the video side recently all of them kind of
+42:20 Transformer based do you think we're kind of there in terms of like okay this is the architecture that's going to take
+42:26 us to the promised land and let's let's get it up um or do you think there's kind of fundamental breakthroughs that are still required on on the um on the
+42:33 model side there yes um I think for um robot Foundation models like we haven't
+42:38 pushed the limit of the architecture uh yet so um the data is hard problem right
+42:45 now and it's the bottleneck because uh as I mentioned earlier we can't download those action data from the internet they
+42:51 don't come with those modor Control Data we have to collect it either in simulation or in the real um on the real
+42:57 robots um and once we have that um we have a very mature data pipeline then we'll
+43:03 just push the tokens to the Transformers and have it compress those tokens just like um you know Transformers predicting
+43:09 the next word uh on on Wikipedia um and we're still testing these hypothesis but
+43:15 I don't think we have pushed the Transformers to their limit yet um there also a lot of research going on right
+43:21 now on alternative architectures to Transformers uh I'm super interested in those uh personally like there are mamba
+43:28 and recently there was like test time training there are a few Alternatives um and some of them have very promising
+43:34 ideas um they haven't scaled really to to the uh a the Frontier Model performance um but I'm I'm I'm looking
+43:41 forward to to to seeing alternative to to Transformers have any caught your eye in particular and why yeah uh I think um
+43:48 I mentioned the the membera work and also test time training uh like these models are are more um efficient at
+43:54 inference time um so instead of like forers attending to uh all the past
+43:59 tokens uh these models have inherently more efficient mechanisms uh so I I see
+44:05 them holding a lot of Promise um but we need to um scale them up to to the size
+44:11 of the frontier models and really see like how they compare headon with the Transformer awesome should we close out
+44:17 with some rapid fire questions yeah oh yeah um okay let's see number one uh What uh what outside the embodied AI
+44:24 world are you most interested in with an AI yeah so um I'm super excited about uh video Generation Um because um I see
+44:32 video generation as a kind of world simulator so we learn the physics and the rendering from data Alone um so uh
+44:40 we have seen like open a SORA and later there are like a lot of new models uh catching up to Sora so uh this is uh
+44:47 like a ongoing research topic and yeah what does the world simulator get you I think it's a it's going to get us a data
+44:53 driven simulation in which we can train embodied AI that would be amazing nice what are you most excited about in AI on
+44:59 a longer term Horizon 10 years or more yeah so um on a few fronts like one is
+45:06 uh for the for the reasoning side uh I'm super excited about models that code I
+45:12 think coding is uh such a fundamental reasoning task that also has huge
+45:17 economic value um I think maybe 10 years from now we'll have uh coding agents uh
+45:23 that are as good as human level software engineers and then we'll be able to accelerate a lot of development um using
+45:31 the L themselves and the second aspect is of course robotics I think 10 years from now we'll have humanoid robots uh
+45:38 that are at the reliability and Agility of humans or even Beyond and I hope at
+45:43 that time project root will be a success and then we're able to have humanoids helping us um in our daily lives um I
+45:51 just want robots to do my laundry yeah that's always been my dream what year a robots going to do our laundry soon as
+45:57 possible I can't wait um who do you admire most in the
+46:03 field of AI and you've had the opportunity to work with some greats uh dating back to to your internship days
+46:09 but who who do you admire most these days I have too many heroes in AI uh to count um so I admire uh my pH advisor F
+46:18 uh I think she taught me um how to develop good research taste so sometimes
+46:23 it's not about how to solve a problem but identify what problems are worth solving and actually the what problem uh
+46:31 is much harder than the how problem and uh during my PhD years with F I
+46:37 transitioned to embodied AI um and in retrospect this is the right direction
+46:42 to work on I believe the future of AI agents will be embodied uh for robotics or for the virtual world uh I also
+46:48 admire Andre Kari um he's the great educator uh I think he writes code like poetry so I look up to him and then uh I
+46:57 am Jensen a lot uh I think Jensen uh he cares a lot about uh AI research and he
+47:04 also knows a lot about even the technical details of the models and I'm super impressed so I look up to him a
+47:10 lot pulling on the thread of having great research taste what advice do you have for Founders building an AI in
+47:15 terms of finding the right problems to solve yeah um I think um Recent research
+47:22 papers I feel that the research papers these days are becoming more and more accessible uh and they have some really
+47:28 good ideas and they're more and more practical instead of just like theoretical machine learning so I would
+47:34 recommend kind of keeping up with the latest literature uh and also just try out like all the open source tools uh
+47:40 that people have built so for example at Nvidia we built uh simulator uh tools
+47:47 that everyone can have access to and just download it and try that out and you can train your own robots uh in the
+47:52 in the simulations just get your hands dirty and maybe pulling on the thread of Jensen as an icon on what do you think
+47:58 is some practical tactical advice you'd give to Founders building an AI what they could learn from him yeah I think
+48:04 identifying the right problem to work on right so um Nvidia bets on humanoid
+48:10 robotics because we believe like this is uh the future and also like embodied AI
+48:16 um because if we believe that let's say 10 years from now there will be as many intelligent robots in the world as
+48:22 iPhones then we better start working on that today yeah so yeah just like um
+48:28 long-term future Visions I think that's a great note to end on Jim thank you so much for joining us we love learning
+48:33 about everything your group is doing and we can't wait for the future of laundry folding robots awesome yeah thank you so
+48:40 much for having me yeah thank you thank you thanks [Music]
+48:56 [Music]

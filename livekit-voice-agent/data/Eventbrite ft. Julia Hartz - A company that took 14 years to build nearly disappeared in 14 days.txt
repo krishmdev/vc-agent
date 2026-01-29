@@ -1,0 +1,3226 @@
+00:01 [Music]
+00:02 
+
+00:02 one morning in March I woke up to an
+00:06 
+
+00:06 early morning text from rcfo Lanny and
+00:10 
+
+00:10 the text said something like it's here
+00:12 
+
+00:12 there was just this little line headed
+00:16 
+
+00:16 in the wrong direction this is the
+00:18 
+
+00:18 revenue line and from that day from that
+00:21 
+
+00:21 first text it was a complete and utter
+00:25 
+
+00:25 free fall
+00:26 
+
+00:26 [Music]
+00:30 
+
+00:30 welcome to Crucible moments a podcast
+00:32 
+
+00:32 about the critical tests and inflection
+00:34 
+
+00:34 points that shaped some of the world's
+00:36 
+
+00:36 most remarkable companies I'm your host
+00:38 
+
+00:38 Roloff buta your life or your company
+00:42 
+
+00:42 will be disproportionately shaped by a
+00:45 
+
+00:45 few Crucible moments
+00:47 
+
+00:47 at sequoyo we use this as a framework
+00:49 
+
+00:49 with our Founders for navigating
+00:51 
+
+00:51 decisions how to identify when you're
+00:53 
+
+00:53 facing a crucible moment and what
+00:56 
+
+00:56 principles should guide you along the
+00:58 
+
+00:58 way
+00:59 
+
+00:59 today's episode is about Eventbrite and
+01:02 
+
+01:02 event management and ticketing
+01:03 
+
+01:03 Marketplace founded by Julia Hearts
+01:05 
+
+01:05 Kevin Hartz and Renault Visage
+01:08 
+
+01:08 when Eventbrite first pitched Sequoia in
+01:10 
+
+01:10 2008 we said no to the opportunity to
+01:13 
+
+01:13 invest a year later we said yes and I
+01:17 
+
+01:17 joined the board
+01:18 
+
+01:18 today we will look at how Eventbrite
+01:20 
+
+01:20 took a gamble on expanding its
+01:22 
+
+01:22 user-based via an acquisition overhauled
+01:24 
+
+01:24 its pricing model to become profitable
+01:26 
+
+01:26 and survived a global pandemic that shut
+01:29 
+
+01:29 down Live Events you'll hear about a
+01:31 
+
+01:31 takeover by hackers a Phoenix Rising
+01:35 
+
+01:35 From the Ashes rebirth and the power of
+01:38 
+
+01:38 human connection that served as the
+01:40 
+
+01:40 company's North Star through it all
+01:49 
+
+01:49 [Music]
+01:59 
+
+01:59 my name is Julia hearts and I am the
+02:02 
+
+02:02 co-founder and CEO of Eventbrite my name
+02:05 
+
+02:05 is Kevin Hartz and I'm the co-founder
+02:08 
+
+02:08 and chairman of Eventbrite before
+02:11 
+
+02:11 Eventbrite took off in 2006 the
+02:16 
+
+02:16 options for someone who wanted to ticket
+02:19 
+
+02:19 any kind of event were very minimal they
+02:22 
+
+02:22 were mostly offline methods like
+02:25 
+
+02:25 collecting cash at the door you know
+02:27 
+
+02:27 using a PayPal button and tracking
+02:31 
+
+02:31 attendees on a spreadsheet and
+02:33 
+
+02:33 Eventbrite was the perfect solution our
+02:37 
+
+02:37 mission
+02:38 
+
+02:38 was really underpinned by the innate
+02:41 
+
+02:41 need to connect in real life as part of
+02:44 
+
+02:44 The Human Experience
+02:47 
+
+02:47 so we went out at the end of 2008 we had
+02:50 
+
+02:50 you know gone from zero to one we had
+02:52 
+
+02:52 found product Market fit and uh we were
+02:55 
+
+02:55 bushy-tailed and bright-eyed and heading
+02:57 
+
+02:57 down to Sand Hill Road and we pitched 27
+02:60 
+
+03:00 VCS and we received 27 no's
+03:03 
+
+03:03 when we first met Eventbrite we felt
+03:05 
+
+03:05 there was a strong story but not yet a
+03:07 
+
+03:07 great product
+03:08 
+
+03:08 one of the challenges of building a
+03:10 
+
+03:10 startup is finding product Market fit
+03:12 
+
+03:12 and easy scalable distribution
+03:14 
+
+03:14 and when Eventbrite first pitched to
+03:16 
+
+03:16 Sequoia it wasn't clear to us that they
+03:18 
+
+03:18 had in fact found them
+03:20 
+
+03:20 Eventbrite was ticketing small events
+03:23 
+
+03:23 and many many of them but how quickly
+03:25 
+
+03:25 could we scale that
+03:27 
+
+03:27 and so that's the answer that we proved
+03:29 
+
+03:29 out in 2009 in the recession during an
+03:33 
+
+03:33 incredibly Bleak year and prior to us
+03:35 
+
+03:35 raising any Capital we saw one of the
+03:37 
+
+03:37 most explosive growth years of the
+03:40 
+
+03:40 company's history because as people were
+03:42 
+
+03:42 laid off
+03:43 
+
+03:43 they started to look at ways in which
+03:45 
+
+03:45 they could make money and the
+03:48 
+
+03:48 opportunity to use Eventbrite as a
+03:50 
+
+03:50 platform to teach classes to other
+03:52 
+
+03:52 people about what you know or to hold
+03:54 
+
+03:54 workshops or do you learn a new skill
+03:57 
+
+03:57 started to become a massive Trend and
+04:01 
+
+04:01 propelled the company forward and at the
+04:03 
+
+04:03 end of that year 2009 that's when we
+04:05 
+
+04:05 turned the no from Sequoia into a yes
+04:09 
+
+04:09 initially Kevin served this Eventbrite
+04:11 
+
+04:11 CEO and Julia was president
+04:14 
+
+04:14 in 2016
+04:16 
+
+04:16 10 years after founding the company
+04:19 
+
+04:19 Kevin and I and the board started
+04:21 
+
+04:21 talking about you know what was next for
+04:24 
+
+04:24 the leadership of the company
+04:26 
+
+04:26 we wanted to give Julie an opportunity
+04:28 
+
+04:28 to rise to the challenge she was clearly
+04:31 
+
+04:32 a huge influence in the culture of the
+04:34 
+
+04:34 company and in holding things together
+04:36 
+
+04:36 and we thought it'd be a wonderful
+04:38 
+
+04:38 opportunity for her to step into that
+04:39 
+
+04:39 leadership role I became CEO April 21st
+04:43 
+
+04:43 2016.
+04:45 
+
+04:45 by the end of day one I had realized
+04:48 
+
+04:48 that Kevin and I are incredibly
+04:50 
+
+04:50 different people
+04:51 
+
+04:51 but he had made it look so easy and I
+04:54 
+
+04:54 felt like I had been living in Candyland
+04:56 
+
+04:56 and woke up and Tron
+04:60 
+
+05:00 that's because she became Co at a moment
+05:02 
+
+05:02 when Eventbrite was facing challenges
+05:04 
+
+05:04 the company was post-product Market fit
+05:06 
+
+05:06 but not profitable
+05:08 
+
+05:08 they were creating value for customers
+05:10 
+
+05:10 but honestly not capturing enough of
+05:12 
+
+05:12 that as value for the business
+05:15 
+
+05:15 companies often encounter this tricky
+05:17 
+
+05:17 dilemma how much do you continue to
+05:19 
+
+05:19 invest in building more products
+05:21 
+
+05:21 expanding your footprint in the quest to
+05:22 
+
+05:22 build a bigger business long term
+05:25 
+
+05:25 or how much should you focus on the
+05:27 
+
+05:27 intern profitability
+05:28 
+
+05:28 up to this point the Eventbrite had
+05:30 
+
+05:30 focused primarily on growth
+05:32 
+
+05:32 Julia stepped into the role of Co and
+05:34 
+
+05:34 immediately was tested by a crucible
+05:36 
+
+05:36 moment how do you transition Eventbrite
+05:38 
+
+05:38 to a path of sustainable profitability
+05:41 
+
+05:41 [Music]
+05:45 
+
+05:45 16
+05:46 
+
+05:46 eventbrite's Revenue model was a per
+05:49 
+
+05:49 ticket transaction fee that was charged
+05:52 
+
+05:52 just for pay tickets free events or free
+05:55 
+
+05:56 tickets were free because we'd been so
+05:59 
+
+05:59 focused on democratization and
+06:00 
+
+06:00 enablement we were almost a victim of
+06:03 
+
+06:03 our own success which was we had the
+06:06 
+
+06:06 widest range of customer segments you
+06:10 
+
+06:10 could imagine and the issue was that our
+06:12 
+
+06:12 one size fits-all product and pricing
+06:15 
+
+06:15 was really sort of getting lost in the
+06:17 
+
+06:17 noise
+06:18 
+
+06:18 [Music]
+06:26 
+
+06:26 so the beauty of the self-serve model is
+06:28 
+
+06:29 you have a broad audience you can serve
+06:30 
+
+06:30 the downside of that is there are many
+06:32 
+
+06:32 different segments that end up using
+06:34 
+
+06:34 Eventbrite and they all have different
+06:35 
+
+06:35 needs and they all have different
+06:36 
+
+06:36 willingness to pay based on their
+06:38 
+
+06:38 alternatives
+06:39 
+
+06:39 [Music]
+06:42 
+
+06:42 Peril of become
+06:44 
+
+06:44 a commodity or some sort of utility it
+06:48 
+
+06:48 was time for us to become profitable
+06:51 
+
+06:51 the decision at the heart of this
+06:52 
+
+06:52 Crucible moment was how should
+06:54 
+
+06:54 Eventbrite change its pricing model to
+06:56 
+
+06:56 capture more value one of the risks that
+07:01 
+
+07:01 I think we had in changing the pricing
+07:04 
+
+07:04 model was tanking the business you know
+07:07 
+
+07:08 at the time there were enough bad
+07:09 
+
+07:09 examples of companies that had changed
+07:11 
+
+07:11 pricing and then had to roll it back
+07:12 
+
+07:12 whenever company faces this challenge of
+07:15 
+
+07:15 changing its pricing there's a
+07:17 
+
+07:17 tremendous fear of what the price
+07:19 
+
+07:19 elasticity is and what are the
+07:21 
+
+07:21 substitutes that your customers have
+07:23 
+
+07:23 it's a real challenge it truly is a
+07:26 
+
+07:26 crucible moment where you wonder whether
+07:28 
+
+07:28 what you have is good enough and will
+07:30 
+
+07:30 customers value it will they pay a
+07:32 
+
+07:32 little bit more and so it's generally a
+07:34 
+
+07:34 stressful moment for a company to go
+07:36 
+
+07:36 through these pricing changes and the
+07:38 
+
+07:38 company was very thoughtful as they went
+07:39 
+
+07:39 about this we ran a lot of experiments
+07:42 
+
+07:42 we did very careful analysis we tried to
+07:44 
+
+07:44 understand the different segments how we
+07:46 
+
+07:46 might price them differently what the
+07:48 
+
+07:48 true price sensitivity was and how
+07:50 
+
+07:50 people might react and almost by
+07:51 
+
+07:51 definition you're going to lose a little
+07:53 
+
+07:53 bit of business whenever you're
+07:54 
+
+07:54 increasing your pricing and then the
+07:56 
+
+07:56 question is is it worth it do you lose
+07:58 
+
+07:59 10 of your business but increase pricing
+08:00 
+
+08:00 by 30 and you're better off as a company
+08:02 
+
+08:02 and so these are the sort of things that
+08:04 
+
+08:04 people really wrestle with as they try
+08:06 
+
+08:06 to finalize the pricing change
+08:09 
+
+08:09 we looked at a few different models we
+08:12 
+
+08:12 looked at just a price hike on the
+08:16 
+
+08:16 ticketing fee we looked at a collection
+08:18 
+
+08:18 of add-ons that you could sign up for if
+08:21 
+
+08:21 you wanted premium features
+08:23 
+
+08:23 we looked at subscription models
+08:26 
+
+08:26 I spent a lot of time in one conference
+08:31 
+
+08:31 room that we had painted mustard yellow
+08:35 
+
+08:35 and spent a ton of time staring at the
+08:39 
+
+08:39 screen with the three packages
+08:42 
+
+08:42 and so many different incarnations of
+08:45 
+
+08:45 those packages so when I visualize that
+08:48 
+
+08:48 moment it's really it's about that room
+08:50 
+
+08:50 so much happened in that room by the way
+08:52 
+
+08:52 but it was about that you know really
+08:54 
+
+08:54 looking at where are our customers going
+08:57 
+
+08:57 to find the easiest
+08:60 
+
+09:00 clearest path to engage with Eventbrite
+09:03 
+
+09:03 and find what they need and would this
+09:06 
+
+09:06 actually function the way that we wanted
+09:08 
+
+09:08 it to which would be a higher conversion
+09:11 
+
+09:11 of customers because it was very clear
+09:13 
+
+09:13 what you were getting and opening up
+09:15 
+
+09:15 this conversation around what Eventbrite
+09:17 
+
+09:17 actually was beyond just a ticketing
+09:19 
+
+09:19 tool so it was so much more than a
+09:21 
+
+09:21 pricing change it was really an
+09:24 
+
+09:24 unveiling of the Eventbrite platform and
+09:28 
+
+09:28 I learned that for pricing in particular
+09:32 
+
+09:32 something that is highly sensitive
+09:34 
+
+09:34 and has risk attached
+09:37 
+
+09:37 there needs to be one person in the room
+09:39 
+
+09:39 who's yelling go and that had to be me I
+09:44 
+
+09:44 truly think that pricing in particular
+09:46 
+
+09:46 given the risks that are associated must
+09:49 
+
+09:49 be led by the CEO and the CEO alone
+09:52 
+
+09:52 Because by the way when something goes
+09:54 
+
+09:54 bad it's the CEO who's apologizing and
+09:56 
+
+09:56 taking responsibility for it
+09:59 
+
+09:59 changing something that's fundamental
+10:01 
+
+10:01 like the way in which you interact with
+10:03 
+
+10:03 the cost of doing business
+10:06 
+
+10:06 is something that I think is is you know
+10:09 
+
+10:09 again only as CEO can really lead that
+10:11 
+
+10:11 change and so you just need someone to
+10:13 
+
+10:13 say let's do it let's go for it
+10:17 
+
+10:17 in October of 2017 Julia and the team
+10:19 
+
+10:20 landed on a three-tiered pricing model
+10:21 
+
+10:21 an essential package that offered access
+10:23 
+
+10:23 to the base features of Eventbrite a
+10:25 
+
+10:25 professional package that included more
+10:27 
+
+10:27 sophisticated promotional tools and a
+10:30 
+
+10:30 premium package that was reserved for
+10:32 
+
+10:32 customers who had signed a contract
+10:35 
+
+10:35 it took all hands on deck as a
+10:37 
+
+10:37 transactional platform there's not one
+10:39 
+
+10:39 part of Eventbrite that doesn't touch
+10:41 
+
+10:41 the pricing service
+10:43 
+
+10:43 [Music]
+10:48 
+
+10:48 so first we had to rebuild that service
+10:51 
+
+10:51 and really modernize it and then we
+10:53 
+
+10:53 needed to have every single development
+10:56 
+
+10:56 Squad
+10:57 
+
+10:57 work within the construct of this
+10:59 
+
+10:59 project it required a small tiger team
+11:03 
+
+11:03 internally whose sole job it was to make
+11:06 
+
+11:06 sure that this project didn't get
+11:08 
+
+11:08 cannibalized by the Thousand other
+11:11 
+
+11:11 things that we felt were urgent but we
+11:14 
+
+11:14 really understood that this would be the
+11:16 
+
+11:16 beginning of a new era for Eventbrite
+11:18 
+
+11:18 where we could differentiate to
+11:20 
+
+11:20 different customer segments the value of
+11:23 
+
+11:23 what we'd built we've been building
+11:24 
+
+11:24 features for 10 years this was something
+11:26 
+
+11:26 that was way overdue
+11:30 
+
+11:30 the growth that we saw in the company
+11:32 
+
+11:32 after shifting to the three-tier
+11:34 
+
+11:34 packaging model was very positive
+11:37 
+
+11:37 Revenue per customer went up and total
+11:43 
+
+11:43 Creator count increased in its momentum
+11:48 
+
+11:48 we saw the majority of our customers
+11:52 
+
+11:52 decide to you know adopt the
+11:54 
+
+11:54 professional package but we also saw
+11:57 
+
+11:57 some great growth in the essentials
+11:58 
+
+11:58 package which had actually lowered the
+12:00 
+
+12:00 core ticketing fee and was a great way
+12:03 
+
+12:03 for people to kick the tires and try
+12:06 
+
+12:06 Eventbrite for you know their first
+12:09 
+
+12:09 event and then unlock greater value over
+12:11 
+
+12:11 time
+12:13 
+
+12:13 the biggest lesson I learned from
+12:15 
+
+12:15 changing the pricing model is to
+12:18 
+
+12:18 be willing to make these types of
+12:21 
+
+12:21 tectonic shifts early and often
+12:24 
+
+12:24 we had waited too long to do this and in
+12:27 
+
+12:27 the end it was the right thing for the
+12:29 
+
+12:29 business it opened up all sorts of
+12:31 
+
+12:31 opportunities that we now have as a
+12:34 
+
+12:34 platform and I think being afraid to
+12:39 
+
+12:39 break the model in some way held us back
+12:41 
+
+12:41 and probably delayed us by a couple of
+12:43 
+
+12:44 years
+12:45 
+
+12:45 so there was just a lot of growing up
+12:46 
+
+12:46 that happened in that moment and I wish
+12:49 
+
+12:49 we would have done it a couple years
+12:51 
+
+12:51 earlier
+12:53 
+
+12:53 prior to 2018 Eventbrite was used by all
+12:56 
+
+12:56 varieties of creators to host a myriad
+12:58 
+
+12:58 of different types of events literary
+13:00 
+
+13:00 political religious professional
+13:03 
+
+13:03 Wellness you name it
+13:05 
+
+13:05 Eventbrite encountered another Crucible
+13:07 
+
+13:07 moment as it looked to expanded services
+13:09 
+
+13:09 to cater in a more meaningful way to a
+13:12 
+
+13:12 specific genre of event a genre that was
+13:15 
+
+13:15 gaining popularity on its platform
+13:18 
+
+13:18 we had noticed we were starting to be
+13:21 
+
+13:21 used by more Indie promoters artists
+13:25 
+
+13:25 music venues
+13:27 
+
+13:27 because Eventbrite is Switzerland we are
+13:30 
+
+13:30 the front door and the operating system
+13:32 
+
+13:32 for a live experience we are not trying
+13:35 
+
+13:35 to take a huge cut of your profit we're
+13:38 
+
+13:38 not producing the show we don't co-own
+13:41 
+
+13:41 the venue
+13:43 
+
+13:43 and that really gave the independent
+13:45 
+
+13:45 music industry
+13:48 
+
+13:48 something to be able to rely on in
+13:51 
+
+13:51 building their independence and so we
+13:53 
+
+13:53 realized that there was a purpose behind
+13:55 
+
+13:55 the growth of music that went beyond
+13:57 
+
+13:57 just a vertical
+13:59 
+
+13:59 and we leaned in
+14:02 
+
+14:02 one of the beauties of music as a
+14:04 
+
+14:04 category is has very high frequency use
+14:06 
+
+14:06 so when you think about Eventbrite as
+14:08 
+
+14:08 being a platform that serves both the
+14:10 
+
+14:10 creators and the attendees there's only
+14:12 
+
+14:12 so many conferences you might attend in
+14:14 
+
+14:14 a given year or workshops that you go to
+14:17 
+
+14:17 but especially for young people the
+14:19 
+
+14:20 willingness to go to mini music events
+14:21 
+
+14:21 gave us an unfair advantage of building
+14:23 
+
+14:23 a very large consumer audience and so
+14:25 
+
+14:26 all else being equal that actually made
+14:27 
+
+14:27 music a very interesting category we
+14:29 
+
+14:29 were seeing Bottoms Up adoption with
+14:32 
+
+14:32 smaller venues using Eventbrite and is
+14:34 
+
+14:34 inevitably the case disruptive software
+14:36 
+
+14:36 companies often Come From Below they
+14:38 
+
+14:38 initially offer a simpler product than
+14:41 
+
+14:41 incumbents and they serve smaller and
+14:43 
+
+14:43 mid-sized customers and so slowly our
+14:46 
+
+14:46 business was inching up into larger and
+14:48 
+
+14:48 larger events including larger music
+14:50 
+
+14:50 events
+14:51 
+
+14:51 and we wondered whether we could be a
+14:54 
+
+14:54 much bigger player in the music space
+14:56 
+
+14:56 and that led to this idea that maybe we
+14:58 
+
+14:58 should acquire ticket fly
+14:60 
+
+14:60 we had always been sort of friendly
+15:02 
+
+15:02 competitors uh you know Kevin and I and
+15:05 
+
+15:05 the founders of ticketfly Dan tree and
+15:09 
+
+15:09 Andrew dreskin had known each other for
+15:11 
+
+15:11 years and it was great uh friendly
+15:15 
+
+15:15 competition
+15:17 
+
+15:17 and Pandora which had acquired ticketfly
+15:20 
+
+15:20 about 18 months prior was starting to
+15:22 
+
+15:23 think about divesting in ticketing
+15:26 
+
+15:26 should have been brought a car ticketfly
+15:28 
+
+15:28 to compete in the live music space
+15:30 
+
+15:30 this was The Crucible decision and it
+15:32 
+
+15:32 was hotly debated
+15:34 
+
+15:34 there were a lot of concerns and
+15:36 
+
+15:36 considering acquiring a company like
+15:38 
+
+15:38 ticketfly first and foremost they are
+15:41 
+
+15:41 sales driven so that would be a huge
+15:43 
+
+15:44 change for us to bring on that kind of
+15:46 
+
+15:46 capability at such scale the many
+15:48 
+
+15:48 software businesses today they talk
+15:50 
+
+15:50 about product LED growth and Eventbrite
+15:52 
+
+15:52 was really a classic example of that the
+15:53 
+
+15:53 company had this organic growth if you
+15:56 
+
+15:56 look at the company's history it spent
+15:57 
+
+15:57 very little money on sales and marketing
+15:58 
+
+15:59 because the product sold itself there
+16:00 
+
+16:00 was this ability for users to promote
+16:03 
+
+16:03 Eventbrite to other users and that's how
+16:05 
+
+16:05 they kept on growing it was this
+16:06 
+
+16:06 fabulous Word of Mouth effect
+16:08 
+
+16:08 and take a fly was a sales LED
+16:10 
+
+16:10 organization sales driven organization
+16:13 
+
+16:13 with very different customers you know
+16:16 
+
+16:16 at a different scale from the ones we'd
+16:17 
+
+16:17 served historically and so you're mixing
+16:20 
+
+16:20 this Bottoms Up product-led growth
+16:22 
+
+16:22 motion business with a sales lead motion
+16:24 
+
+16:24 business and with those two mesh would
+16:27 
+
+16:27 you get Synergy from those or those oil
+16:29 
+
+16:29 and water and they're just gonna not mix
+16:31 
+
+16:31 at all
+16:33 
+
+16:33 it was a company that while subscale to
+16:36 
+
+16:36 Eventbrite and revenue was really
+16:39 
+
+16:39 successful and had a very loyal
+16:43 
+
+16:43 customer base and so we would have to
+16:46 
+
+16:46 capture
+16:47 
+
+16:47 The credibility and hearts and minds of
+16:49 
+
+16:49 those customers
+16:51 
+
+16:51 was there anyone who said don't acquire
+16:53 
+
+16:53 tick a fly I think I was probably the
+16:56 
+
+16:56 biggest objector to acquiring the
+16:60 
+
+16:60 company because of the risk that it
+17:02 
+
+17:02 would uh really impose and and introduce
+17:06 
+
+17:06 and at the time we were
+17:09 
+
+17:09 pre-pre-ipo so we knew that once we had
+17:14 
+
+17:14 generated a certain scale we would seek
+17:17 
+
+17:17 out an IPO and so that was on my mind
+17:19 
+
+17:19 and thinking about taking on a big
+17:22 
+
+17:22 acquisition seemed like it was uh a lot
+17:24 
+
+17:24 for one company to handle what changed
+17:27 
+
+17:27 my mind and made me decide to go for it
+17:30 
+
+17:30 was seeing the traction we were having
+17:32 
+
+17:32 in the market and knowing that we could
+17:35 
+
+17:35 Leap Forward about five squares in in
+17:38 
+
+17:38 the game of of market dominance uh and
+17:41 
+
+17:41 really see that we could bring a better
+17:43 
+
+17:43 technology platform to bear for these
+17:45 
+
+17:45 customers and help them grow faster and
+17:49 
+
+17:49 with music we had the sayings that the
+17:51 
+
+17:51 needs was so specific the ability to
+17:54 
+
+17:54 handle on-premise sales and you know
+17:56 
+
+17:56 somebody walks up to the venue and wants
+17:58 
+
+17:58 to buy a ticket on premise they want to
+17:60 
+
+17:60 be able to sell food and Bev they want
+18:02 
+
+18:02 to be able to sell merchandise at the
+18:04 
+
+18:04 concert these were all capabilities that
+18:06 
+
+18:06 we would need if we were going to serve
+18:07 
+
+18:07 the music industry and by making an
+18:09 
+
+18:09 acquisition we could LeapFrog and just
+18:11 
+
+18:11 get all that capability immediately and
+18:13 
+
+18:13 accelerate the business we also felt a
+18:16 
+
+18:16 company like ticketfly had very
+18:18 
+
+18:18 important relationships and existing
+18:19 
+
+18:19 contracts with sizable music venues and
+18:24 
+
+18:24 that we just enhance the scale of the
+18:25 
+
+18:25 business so again we had a certain fixed
+18:27 
+
+18:27 cost of operating the business and so if
+18:29 
+
+18:29 we can add Revenue it would make our
+18:31 
+
+18:31 path to profitability that much faster
+18:33 
+
+18:33 we all voted in favor of the acquisition
+18:36 
+
+18:36 I reluctantly said yes I had many
+18:38 
+
+18:38 questions along the way because it I was
+18:40 
+
+18:40 worried about the distraction and that
+18:42 
+
+18:42 it took us in a different strategic
+18:43 
+
+18:44 Direction than we'd been in with our
+18:45 
+
+18:45 Bottoms Up motion but at the end of the
+18:48 
+
+18:48 day I listened to the arguments and I
+18:49 
+
+18:49 was swayed by those arguments and so you
+18:51 
+
+18:51 know it was my decision as much as it
+18:53 
+
+18:53 was anybody else's decision I think it
+18:56 
+
+18:56 was a mistake in retrospect for us to
+18:58 
+
+18:58 have made that acquisition
+19:00 
+
+19:00 the challenges you integrate the two
+19:03 
+
+19:03 companies were
+19:07 
+
+19:07 that and you're looking at what it takes
+19:09 
+
+19:09 from a technical perspective
+19:12 
+
+19:12 there's the good better best scenario
+19:15 
+
+19:15 and I think that if I had to do it all
+19:18 
+
+19:18 over again I would have asked for the
+19:20 
+
+19:20 worst scenario
+19:22 
+
+19:22 we had decided that Eventbrite and tick
+19:26 
+
+19:26 apply would become one platform as
+19:29 
+
+19:29 quickly as possible
+19:31 
+
+19:31 and our Dev team had
+19:34 
+
+19:34 collectively together with ticketfly's
+19:36 
+
+19:36 Dev team created a roadmap that was I
+19:39 
+
+19:39 believe about nine months long to get
+19:41 
+
+19:41 the two databases integrated the two
+19:43 
+
+19:43 platforms integrated and then to be able
+19:45 
+
+19:45 to start moving customers over to
+19:48 
+
+19:48 Eventbrite
+19:49 
+
+19:49 it took much longer
+19:52 
+
+19:53 it was probably six to 12 months longer
+19:55 
+
+19:55 to integrate the platform than we had
+19:57 
+
+19:57 anticipated and when that happens you
+19:59 
+
+19:59 don't benefit from the synergies that
+20:01 
+
+20:01 you modeled as part of the transaction
+20:03 
+
+20:03 and so we didn't fully benefit from that
+20:05 
+
+20:05 we ended up with higher churn of
+20:08 
+
+20:08 ticketfly customers than we had
+20:10 
+
+20:10 anticipated
+20:12 
+
+20:12 when you know there's customer
+20:14 
+
+20:14 consternation and a highly competitive
+20:16 
+
+20:16 market naturally you open up an
+20:18 
+
+20:18 opportunity for competitors to come in
+20:21 
+
+20:21 and poach those customers when they're
+20:23 
+
+20:23 feeling uncertain about the future and
+20:26 
+
+20:26 so on top of the challenge of you know
+20:29 
+
+20:29 customer migration and really
+20:32 
+
+20:32 forging this this trust and credibility
+20:35 
+
+20:35 with customers we also had to be mindful
+20:39 
+
+20:39 and very Savvy about defending the
+20:41 
+
+20:41 business from competitors
+20:44 
+
+20:44 we had more management churn than we
+20:46 
+
+20:46 anticipated as well so we didn't retain
+20:47 
+
+20:47 as many of the key employees and
+20:49 
+
+20:49 therefore didn't retain the know-how and
+20:52 
+
+20:52 Industry knowledge and connections that
+20:54 
+
+20:54 we were assuming we would get as part of
+20:56 
+
+20:56 the transaction
+20:57 
+
+20:57 and then we ended up with this
+20:59 
+
+20:59 unfortunate breach
+21:00 
+
+21:00 in June of 2018
+21:04 
+
+21:04 the ticketfly platform
+21:07 
+
+21:07 was held hostage by a hacker meaning
+21:13 
+
+21:13 when you went to ticketfly any customer
+21:17 
+
+21:17 on the venue or the the fan side saw a
+21:22 
+
+21:22 picture that looked like the anonymous
+21:24 
+
+21:24 picture the site had been taken over and
+21:27 
+
+21:27 and it was just a complete moment of
+21:29 
+
+21:29 disruption
+21:32 
+
+21:32 there was an exposed vulnerability on
+21:35 
+
+21:35 ticketfly that in the changeover was
+21:39 
+
+21:39 even more glaring and the business was
+21:42 
+
+21:42 hacked which sent the company into kind
+21:46 
+
+21:46 of a crisis mode for weeks as we fought
+21:50 
+
+21:50 to help customers and and get things
+21:54 
+
+21:54 back it was like you know
+21:57 
+
+21:57 everything that could go wrong went
+21:58 
+
+21:58 wrong
+21:60 
+
+22:00 I mean really understanding quickly the
+22:03 
+
+22:03 situation getting outside help from
+22:06 
+
+22:06 those who deal in the dark web and being
+22:10 
+
+22:10 able to ensure that customers data were
+22:14 
+
+22:14 not impacted or breached and then
+22:16 
+
+22:16 gaining back control of the site it was
+22:19 
+
+22:19 a no sleep moment for any of us
+22:23 
+
+22:23 as an executive when you walk into an
+22:25 
+
+22:25 acquisition scenario I think you should
+22:27 
+
+22:27 assume it's more likely to not work than
+22:29 
+
+22:29 to work and you need to increase the
+22:32 
+
+22:32 burden of proof on why an acquisition is
+22:35 
+
+22:35 worth doing especially as it starts to
+22:37 
+
+22:37 become a meaningful percentage of your
+22:39 
+
+22:39 own business
+22:40 
+
+22:40 a lot of lessons from the acquisition of
+22:43 
+
+22:43 ticketfly
+22:45 
+
+22:45 I could do it all over again I would
+22:47 
+
+22:47 probably have elongated that timeline
+22:50 
+
+22:50 and not forced it to have happened so
+22:53 
+
+22:53 quickly
+22:55 
+
+22:55 and the second thing is
+22:57 
+
+22:57 actually that two different cultures can
+23:02 
+
+23:02 find common ground and come together
+23:04 
+
+23:04 it's not easy and certainly there were a
+23:07 
+
+23:07 lot of moments of of stress but today
+23:11 
+
+23:11 some of the most incredible contributors
+23:15 
+
+23:15 at Eventbrite came from that acquisition
+23:18 
+
+23:18 and I think that there's something
+23:21 
+
+23:21 really lovely about that the history and
+23:24 
+
+23:24 the depth of experience the resilience
+23:26 
+
+23:26 it wasn't an easy time it was really
+23:29 
+
+23:29 really challenging and I'm I'm
+23:31 
+
+23:31 appreciative of those who've stuck with
+23:33 
+
+23:33 Eventbrite
+23:33 
+
+23:33 [Music]
+23:36 
+
+23:36 a year after acquiring ticket flying
+23:38 
+
+23:38 working through the challenges of
+23:39 
+
+23:39 integrating the businesses and fending
+23:41 
+
+23:41 of hackers Eventbrite went public on
+23:43 
+
+23:43 September 20th 2018.
+23:46 
+
+23:46 when we went public I was a mix of
+23:49 
+
+23:49 emotions it was like by the time we got
+23:52 
+
+23:52 to the day I was so excited to be there
+23:56 
+
+23:56 and be intact and then when I rang the
+23:59 
+
+23:59 bell at the New York Stock Exchange I
+24:01 
+
+24:01 felt elated I felt sentimental we had
+24:05 
+
+24:05 our first 10 employees join us our some
+24:09 
+
+24:09 of our earliest customers joined us our
+24:12 
+
+24:12 family our friends
+24:14 
+
+24:14 and I'll never forget the president of
+24:16 
+
+24:16 the New York Stock Exchange Stacy at the
+24:19 
+
+24:19 time said we looked through the archives
+24:21 
+
+24:21 and we haven't seen this many women on
+24:24 
+
+24:24 the podium of an opening bell in any of
+24:27 
+
+24:27 the pictures that we can find and that
+24:29 
+
+24:29 was a Bittersweet moment for me because
+24:31 
+
+24:31 that was just our team and that's
+24:33 
+
+24:33 exciting but it's also sad and so it was
+24:36 
+
+24:36 wonderful to be with everybody and to to
+24:38 
+
+24:38 have that that moment you know and and
+24:41 
+
+24:41 really feel the love rule off was there
+24:43 
+
+24:43 of course and
+24:45 
+
+24:45 um it was great it was really wonderful
+24:46 
+
+24:47 and it was very gratifying
+24:48 
+
+24:48 [Music]
+24:56 
+
+24:56 the first year of being a public company
+24:58 
+
+24:58 was a challenge for Eventbrite
+25:01 
+
+25:01 the digestion of the ticketfly
+25:03 
+
+25:03 acquisition was difficult
+25:04 
+
+25:05 and then we disappointed Wall Street in
+25:06 
+
+25:06 our first quarter
+25:08 
+
+25:08 it's one thing if you've had 10 quarters
+25:09 
+
+25:09 of performance track record with public
+25:11 
+
+25:11 investors and then you have a slip up
+25:13 
+
+25:13 people might forgive you
+25:15 
+
+25:15 but if you make a footfall early on in
+25:17 
+
+25:17 your life as a public company public
+25:19 
+
+25:19 investors are going to take a long time
+25:20 
+
+25:20 before they let you out of purgatory for
+25:22 
+
+25:22 an early slip up
+25:24 
+
+25:24 so 2019 was a difficult year for the
+25:26 
+
+25:26 company but we started 2020 brimming
+25:29 
+
+25:29 with hope in the latter part of 2019 we
+25:33 
+
+25:33 did a number of things operationally to
+25:36 
+
+25:36 make it very clear where we were
+25:39 
+
+25:39 investing in the company and to start to
+25:42 
+
+25:42 gain Simplicity on where we were going
+25:45 
+
+25:45 to be investing in the company in 2020
+25:48 
+
+25:48 we had completed a research project
+25:51 
+
+25:51 looking at the biggest customer value
+25:54 
+
+25:54 segments on the platform we'd been so
+25:58 
+
+25:58 focused on this certain music customer
+26:01 
+
+26:01 that we had really lost perspective as
+26:05 
+
+26:05 to who was driving the greatest value on
+26:08 
+
+26:08 the platform This research project
+26:10 
+
+26:10 revealed this horizontal segment of the
+26:14 
+
+26:14 frequent Creator a power user if you
+26:16 
+
+26:16 will
+26:17 
+
+26:17 and what we realized is that this user
+26:19 
+
+26:20 was using Eventbrite even though the
+26:21 
+
+26:21 Eventbrite platform was a pretty crummy
+26:24 
+
+26:24 experience for somebody who was hosting
+26:26 
+
+26:26 frequent events
+26:28 
+
+26:28 so we saw a high value segment with a
+26:31 
+
+26:31 great opportunity to improve the product
+26:32 
+
+26:32 experience and the platform to meet
+26:35 
+
+26:35 their needs we simplified our objectives
+26:38 
+
+26:38 for the year we reduced some of the cost
+26:41 
+
+26:41 in the business
+26:42 
+
+26:42 and we entered 2020
+26:45 
+
+26:45 with a glint of optimism
+26:47 
+
+26:47 January was a banner month
+26:50 
+
+26:50 February another strong Revenue month
+26:52 
+
+26:53 and we were like oh my God we're gonna
+26:54 
+
+26:54 you know we're gonna beat our estimates
+26:56 
+
+26:56 on Wall Street this is so exciting
+26:59 
+
+26:59 we knew it'd be a long climb out of the
+27:01 
+
+27:01 panel two box but we were excited to be
+27:03 
+
+27:03 on the right track
+27:05 
+
+27:05 and then one morning in March I woke up
+27:09 
+
+27:09 to an early morning text from rcfo Lanny
+27:13 
+
+27:13 and the text said something like it's
+27:16 
+
+27:16 here
+27:17 
+
+27:17 I I opened my laptop and there was just
+27:22 
+
+27:22 this little
+27:24 
+
+27:24 line headed in the wrong direction
+27:27 
+
+27:27 from the previous day
+27:29 
+
+27:29 and that line
+27:32 
+
+27:32 went straight down over the next 14 days
+27:35 
+
+27:35 to negative territory this is the
+27:38 
+
+27:38 revenue line
+27:41 
+
+27:41 and from that day from that first text
+27:43 
+
+27:43 it was a complete and utter free fall
+27:53 
+
+27:53 so Square Capital published the memo in
+27:55 
+
+27:55 March called coronavirus is the Black
+27:57 
+
+27:57 Swan of 2020. we had a view of what was
+28:00 
+
+28:00 around the corner with covert and that
+28:02 
+
+28:02 it was likely much more dramatic much
+28:04 
+
+28:04 more impactful than people realized
+28:07 
+
+28:07 it turned out to be a crucible moment
+28:09 
+
+28:09 for many including Eventbrite
+28:12 
+
+28:12 within two weeks the company had lost 90
+28:14 
+
+28:14 percent of its Revenue
+28:17 
+
+28:17 we honestly didn't know if the the
+28:19 
+
+28:19 company would survive this it was so
+28:22 
+
+28:22 surreal and of such massive Global
+28:25 
+
+28:25 impact to have
+28:27 
+
+28:27 a global pandemic just shutting down
+28:30 
+
+28:30 what his core to a business that you've
+28:32 
+
+28:32 worked for years and years and years you
+28:34 
+
+28:34 know in Blood Sweat and Tears together
+28:36 
+
+28:36 on building
+28:38 
+
+28:38 I'll be honest I thought that a decade's
+28:40 
+
+28:40 worth of work was going up in smoke this
+28:42 
+
+28:42 Black Swan had arrived and we didn't
+28:43 
+
+28:43 know what was going to happen next but
+28:45 
+
+28:45 we were going to fight to the death Sean
+28:48 
+
+28:48 Moriarty who's been a longtime board
+28:50 
+
+28:50 member close to 15 years and is our lead
+28:53 
+
+28:53 director today said to me
+28:56 
+
+28:56 you ready to be a wartime leader
+28:58 
+
+28:58 and I went home that day
+29:00 
+
+29:00 and I walked into our house and the home
+29:04 
+
+29:04 office had been converted by Kevin into
+29:07 
+
+29:08 a war room
+29:09 
+
+29:09 and he had gotten all these gaming
+29:12 
+
+29:12 monitors and set them up on arms to
+29:15 
+
+29:15 create almost a full 360.
+29:19 
+
+29:19 screen
+29:20 
+
+29:20 and in the middle of that were two
+29:22 
+
+29:22 chairs it was the most romantic and
+29:25 
+
+29:25 thoughtful thing
+29:27 
+
+29:27 imagine
+29:29 
+
+29:29 I tear up just thinking about it it was
+29:31 
+
+29:31 so symbolic to me of you know him saying
+29:34 
+
+29:34 nothing else matters
+29:37 
+
+29:37 we're co-founders
+29:39 
+
+29:39 we're gonna work together to get through
+29:41 
+
+29:41 this
+29:42 
+
+29:42 the first thing that I did was
+29:46 
+
+29:46 um I'm very operational and I I thrive
+29:49 
+
+29:49 in chaos but only if I'm organized if
+29:51 
+
+29:51 that makes sense so I I made five Lanes
+29:55 
+
+29:55 on the Whiteboard
+29:57 
+
+29:57 the first were breitlings we needed to
+29:60 
+
+29:60 figure out how we were going to help our
+30:03 
+
+30:03 breitlings adjust to what was to come
+30:07 
+
+30:07 the second were our creators how we were
+30:10 
+
+30:10 going to help and be a part of the hard
+30:12 
+
+30:12 message that their businesses were about
+30:14 
+
+30:14 to get decimated
+30:16 
+
+30:16 and what we were going to do to show up
+30:18 
+
+30:18 the third was consumers on the other
+30:20 
+
+30:20 side of the marketplace how were we
+30:22 
+
+30:22 going to help them get refunds quickly
+30:24 
+
+30:24 and
+30:25 
+
+30:25 what was our role in that as a platform
+30:29 
+
+30:29 the fourth was investors how were we
+30:32 
+
+30:32 going to message investors
+30:34 
+
+30:35 and really help
+30:36 
+
+30:36 ensure that not only were they
+30:39 
+
+30:39 in the know about what was happening
+30:41 
+
+30:41 with Eventbrite but we also needed to
+30:43 
+
+30:43 raise money quickly in order to stay you
+30:46 
+
+30:46 know in our minds solvent through what
+30:48 
+
+30:48 was going to be a devastating chapter
+30:50 
+
+30:50 for the company
+30:52 
+
+30:52 and the fifth was really around this
+30:54 
+
+30:54 this extra special thing that we had
+30:56 
+
+30:56 going on which was called Advanced
+30:58 
+
+30:59 payouts
+30:60 
+
+30:60 half of the revenue that we had
+31:01 
+
+31:01 generated in that period of time had
+31:04 
+
+31:04 already been Advanced to creators who
+31:06 
+
+31:06 were hosting events that weren't going
+31:08 
+
+31:08 to happen and so the Quantum of that was
+31:11 
+
+31:11 double our balance sheet
+31:13 
+
+31:13 so it was like an asteroid that was
+31:16 
+
+31:16 coming toward our planet and we weren't
+31:19 
+
+31:20 sure if we were going to be able to
+31:22 
+
+31:22 withstand the impact
+31:24 
+
+31:24 even if you have spent 14 years building
+31:29 
+
+31:29 something it could truly be gone in 14
+31:31 
+
+31:31 days
+31:33 
+
+31:33 March 23rd when I gathered our executive
+31:37 
+
+31:37 team on zoom and I asked them one
+31:40 
+
+31:40 question
+31:41 
+
+31:41 which was given what we know about the
+31:43 
+
+31:43 business
+31:44 
+
+31:44 what would we do if we could do it all
+31:46 
+
+31:47 over again
+31:48 
+
+31:48 and I'm pretty sure everybody thought I
+31:50 
+
+31:50 had lost my marbles but there hadn't
+31:52 
+
+31:52 been a lot of sleep we'd been working 18
+31:54 
+
+31:54 hour days seven days a week it was
+31:57 
+
+31:57 really intense I mean the work was
+31:60 
+
+31:60 intense a lot of hard conversations
+32:04 
+
+32:04 [Music]
+32:05 
+
+32:05 but what ended up happening from asking
+32:07 
+
+32:07 that question is
+32:08 
+
+32:08 the team started to think about well
+32:10 
+
+32:10 what are all the things that we've known
+32:12 
+
+32:12 about this business over the last 18
+32:14 
+
+32:14 months that we would do we would focus
+32:16 
+
+32:16 on the frequent Creator we'd build a
+32:18 
+
+32:18 better product experience for them we'd
+32:20 
+
+32:20 stabilize a platform for somebody who
+32:22 
+
+32:22 was using Eventbrite for frequent events
+32:24 
+
+32:24 we would focus more on the core
+32:27 
+
+32:27 principle of self-service than human
+32:30 
+
+32:30 software
+32:31 
+
+32:31 we'd strengthen the Eventbrite product
+32:34 
+
+32:34 experience for those who wanted to use
+32:36 
+
+32:36 Eventbrite without having to call us
+32:38 
+
+32:38 you know and and so we started writing
+32:41 
+
+32:41 it down and what that did was it took a
+32:44 
+
+32:44 conversation
+32:45 
+
+32:45 that would have been about scarcity
+32:47 
+
+32:47 about where are we going to cut to
+32:49 
+
+32:49 survive
+32:50 
+
+32:50 and it flipped it to abundance
+32:53 
+
+32:53 what are the possibilities
+32:55 
+
+32:55 what do we see what would we do
+32:57 
+
+32:57 and at the end of the conversation
+32:60 
+
+32:60 I said to the team we're going to do it
+33:03 
+
+33:03 all over again
+33:04 
+
+33:04 [Music]
+33:08 
+
+33:08 so by late March of 2020 just a few
+33:11 
+
+33:11 weeks after the first day of covid you
+33:14 
+
+33:14 know coming to try to kill our company
+33:16 
+
+33:16 we had a plan we had a strategy we had
+33:20 
+
+33:20 figured out who we needed
+33:23 
+
+33:23 for that company
+33:25 
+
+33:25 we had committed to taking 100 million
+33:29 
+
+33:29 dollars out of the operating budget and
+33:31 
+
+33:31 we were ready to make the really tough
+33:34 
+
+33:34 change that we needed to make
+33:38 
+
+33:38 on April 8th of 2020 we announced our
+33:41 
+
+33:41 layoff
+33:43 
+
+33:43 as difficult as the layoff was it
+33:45 
+
+33:45 allowed us to realign our cost structure
+33:47 
+
+33:47 and stretch whatever cash we had as far
+33:49 
+
+33:49 as possible so the next thing we needed
+33:51 
+
+33:51 to do especially because of the risk of
+33:54 
+
+33:54 chargebacks and liability around
+33:55 
+
+33:55 payments was to ensure that our balance
+33:58 
+
+33:58 sheet was Stronger
+34:00 
+
+34:00 now the challenge at this point is our
+34:02 
+
+34:02 share price has dropped dramatically
+34:05 
+
+34:05 stock market was going through massive
+34:07 
+
+34:07 generations and public investors
+34:08 
+
+34:08 understandably had many questions about
+34:11 
+
+34:11 the future of our business
+34:13 
+
+34:13 it would have been incredibly expensive
+34:14 
+
+34:14 and dilutive for us to raise Equity
+34:16 
+
+34:16 capital in the midst of this crisis and
+34:19 
+
+34:19 so we look for alternatives to get debt
+34:21 
+
+34:21 financing
+34:22 
+
+34:22 there's a firm with whom we at Sequoia
+34:24 
+
+34:24 have had a long-term relationship called
+34:26 
+
+34:26 Francisco Partners it's about firm in
+34:29 
+
+34:29 San Francisco
+34:30 
+
+34:30 the Francisco team trusted us and they
+34:32 
+
+34:32 helped Bridge us at a time when we were
+34:34 
+
+34:34 an acute need
+34:36 
+
+34:36 Julie and I in in the rest of the team
+34:39 
+
+34:39 really read this a sigh of relief when
+34:42 
+
+34:42 that money had been secured for the
+34:44 
+
+34:44 financing but it was really then back to
+34:46 
+
+34:46 building the business
+34:48 
+
+34:48 refocusing on product yeah getting back
+34:52 
+
+34:52 down to things
+34:53 
+
+34:53 so one of the tools that we knew we
+34:55 
+
+34:55 needed to build quickly was actually the
+34:58 
+
+34:58 ability to reverse our entire Revenue
+35:00 
+
+35:00 generation machine
+35:02 
+
+35:02 and we needed to help creators be able
+35:05 
+
+35:05 to issue refunds quickly and at scale
+35:09 
+
+35:09 and so we built the mechanism to be able
+35:12 
+
+35:12 to bulk refund events and customers
+35:17 
+
+35:17 and in addition to that as we understood
+35:20 
+
+35:20 what was happening between the Creator
+35:22 
+
+35:22 and the consumer and the relationship
+35:24 
+
+35:24 that they had in service of the
+35:26 
+
+35:26 community that they had built together
+35:28 
+
+35:28 we realized that not all consumers
+35:30 
+
+35:30 wanted a refund
+35:32 
+
+35:32 consumers didn't really feel right about
+35:35 
+
+35:35 asking for money back from creators when
+35:37 
+
+35:37 their doors were closed and their local
+35:39 
+
+35:39 small business that they care about
+35:41 
+
+35:41 so we built the ability to offer a
+35:45 
+
+35:45 credit to future events in addition to
+35:48 
+
+35:48 refunds it was not in lieu of you had a
+35:51 
+
+35:51 choice as a consumer and that went a
+35:53 
+
+35:53 long way I think that really helped
+35:55 
+
+35:55 stabilize trust and credibility
+35:57 
+
+35:57 especially between the Creator and the
+35:59 
+
+35:59 consumer which was our number one goal
+36:01 
+
+36:01 in the very early days I would say by
+36:03 
+
+36:03 like May to June we started to see
+36:07 
+
+36:08 the Creator Community really
+36:10 
+
+36:10 wake up to the fact that humans need to
+36:14 
+
+36:14 connect we all know this innately
+36:16 
+
+36:16 because we're having The Human
+36:18 
+
+36:18 Experience together
+36:20 
+
+36:20 but I think the energy around connecting
+36:23 
+
+36:23 in any way possible was an opportunity
+36:25 
+
+36:25 for event creators who had previously
+36:27 
+
+36:27 only hosted people in real life and so
+36:30 
+
+36:30 what started to happen
+36:32 
+
+36:32 creators started to take the same
+36:34 
+
+36:34 content that they had used for a live
+36:37 
+
+36:37 in-person event and started playing
+36:39 
+
+36:39 around with what that would mean
+36:40 
+
+36:40 virtually
+36:42 
+
+36:42 and our product teams had thrown away
+36:45 
+
+36:45 the road map and were working primarily
+36:48 
+
+36:48 on how we can make
+36:51 
+
+36:51 creators lives easier through this
+36:54 
+
+36:54 moment in time and building tools for
+36:56 
+
+36:56 them to survive this crisis and so
+36:60 
+
+36:60 seeing them start to host events online
+37:02 
+
+37:02 like a daybreaker who hosts early
+37:05 
+
+37:05 morning dance parties in non-traditional
+37:09 
+
+37:09 places they started doing a Saturday
+37:11 
+
+37:11 version for everybody plus their kids
+37:13 
+
+37:14 which Grew From what typically would
+37:16 
+
+37:16 have been a thousand people in person to
+37:18 
+
+37:18 a hundred and ten thousand people
+37:20 
+
+37:20 globally in tens uh countries it was
+37:24 
+
+37:24 just it was incredible to see
+37:26 
+
+37:26 [Music]
+37:30 
+
+37:30 I remember in May and June one of the
+37:35 
+
+37:35 things that I was really focused on was
+37:37 
+
+37:37 making sure that event creators were
+37:40 
+
+37:40 considered in the small business act and
+37:43 
+
+37:43 I did multiple laps around my living
+37:46 
+
+37:46 room
+37:47 
+
+37:47 um kind of wearing a path talking to
+37:50 
+
+37:50 whoever I could talk to to Really
+37:52 
+
+37:52 Elevate the profile of the Creator as a
+37:55 
+
+37:55 small business
+37:56 
+
+37:56 we wanted to make sure that there was a
+37:59 
+
+37:59 handsome carve out for live event
+38:03 
+
+38:03 producers because they are the fabric of
+38:06 
+
+38:06 small business globally and in our
+38:08 
+
+38:08 country particularly so I was really
+38:12 
+
+38:12 focused on making sure that there was a
+38:15 
+
+38:15 consideration specifically for the Live
+38:17 
+
+38:17 Events industry because they were the
+38:19 
+
+38:19 first
+38:20 
+
+38:20 to close and would be the last to open
+38:24 
+
+38:24 and it was a very successful lobbying
+38:28 
+
+38:28 effort and we were very proud to have a
+38:30 
+
+38:30 very small part but a very persistent
+38:33 
+
+38:33 role in ensuring that there was a
+38:36 
+
+38:36 specific carve out for Live Events and
+38:38 
+
+38:38 that initial small business act and then
+38:40 
+
+38:40 in some of the follow-up moves that the
+38:42 
+
+38:42 government did to support small
+38:44 
+
+38:44 businesses
+38:47 
+
+38:47 one of the things that people
+38:48 
+
+38:48 underestimate is the resiliency and the
+38:51 
+
+38:51 human spirit
+38:52 
+
+38:53 humans are wonderfully adaptable
+38:55 
+
+38:55 and when you couple that with a moral
+38:59 
+
+38:59 compass like the one that Eventbrite has
+39:02 
+
+39:02 and an obsession with serving customers
+39:04 
+
+39:04 it's a great recipe for you to be able
+39:06 
+
+39:06 to overcome these types of challenges
+39:08 
+
+39:08 the company was always customer obsessed
+39:11 
+
+39:11 and so
+39:12 
+
+39:12 part of that means that they've built up
+39:14 
+
+39:14 an enormous amount of Goodwill with
+39:15 
+
+39:15 their customers as well and they truly
+39:17 
+
+39:17 had built a community it wasn't just a
+39:20 
+
+39:20 financial transaction between them and
+39:21 
+
+39:21 their customers and their customers in
+39:24 
+
+39:24 some sense depended on Eventbrite as
+39:26 
+
+39:26 well many of them their livelihood
+39:28 
+
+39:28 depends on Eventbrite and so that just
+39:30 
+
+39:30 creates a wonderful camaraderie and
+39:33 
+
+39:33 spirit of cooperation that enabled them
+39:35 
+
+39:35 to continue to serve their customers
+39:37 
+
+39:37 listen to their needs have the customers
+39:38 
+
+39:38 give us wonderful feedback to be able to
+39:40 
+
+39:40 adapt and both just had such a wonderful
+39:42 
+
+39:42 spirit of endurance and that helped us
+39:45 
+
+39:45 see through a true Crucible moment and
+39:49 
+
+39:49 crisis for the company
+39:50 
+
+39:50 [Music]
+39:52 
+
+39:52 one of those pretty unique moments where
+39:56 
+
+39:56 I'm not replaying it and thinking I
+39:59 
+
+39:59 would have done things differently
+40:00 
+
+40:00 because of where we are today I think
+40:04 
+
+40:04 that for me personally it meant a huge
+40:08 
+
+40:08 shift in my confidence I never thought
+40:11 
+
+40:11 of myself as a wartime leader
+40:14 
+
+40:14 a lot of my maternal and feminine
+40:18 
+
+40:18 Instinct
+40:19 
+
+40:19 kicked in and I wouldn't have thought
+40:22 
+
+40:22 that would have been the case as in
+40:24 
+
+40:24 Wartime I mean I had a lot of
+40:26 
+
+40:26 testosterone flowing too but it was
+40:29 
+
+40:29 really
+40:30 
+
+40:30 the Instinct that I would apply if
+40:32 
+
+40:32 anything were happening with my children
+40:35 
+
+40:35 and that really helped me and it made me
+40:37 
+
+40:37 gain more confidence in being a woman
+40:39 
+
+40:39 leader and and you know being a one of
+40:41 
+
+40:41 the few
+40:42 
+
+40:42 female founder public company CEOs
+40:45 
+
+40:45 [Music]
+40:50 
+
+40:50 it would have been very easy to give up
+40:54 
+
+40:54 and Julia and Kevin and their team
+40:56 
+
+40:56 refused to give up and they kept
+40:59 
+
+40:59 fighting
+40:60 
+
+40:60 and they kept thinking and they kept
+41:02 
+
+41:02 coming up with new ideas to navigate
+41:04 
+
+41:04 through this crisis to figure out how to
+41:06 
+
+41:06 get Eventbrite through it and also to
+41:08 
+
+41:08 help the customers survive through this
+41:11 
+
+41:11 experience so that's one of the key
+41:14 
+
+41:14 takeaways
+41:15 
+
+41:15 the other one for me is how a crucible
+41:18 
+
+41:18 Moment Like This can often help you in a
+41:21 
+
+41:21 phoenix moment experience a rebirth you
+41:24 
+
+41:24 accumulate Barnacles as a business you
+41:27 
+
+41:27 accumulate little decisions you decide
+41:29 
+
+41:29 to do this you add this product feature
+41:31 
+
+41:31 you you start serving this customer you
+41:33 
+
+41:33 open up this office you hire this team
+41:35 
+
+41:35 and you accumulate these things and
+41:37 
+
+41:37 there's not always a forcing function
+41:39 
+
+41:39 for you to revisit those assumptions
+41:42 
+
+41:42 you don't necessarily need to and then
+41:44 
+
+41:44 you face a crisis moment like this and
+41:46 
+
+41:47 it strips you down
+41:48 
+
+41:48 all the way and you bare and then you
+41:51 
+
+41:51 have to figure out how to rebuild
+41:54 
+
+41:54 and like the Phoenix Rises From the
+41:55 
+
+41:55 Ashes if Empire was able to really focus
+41:58 
+
+41:58 on its Essence on the core strategy and
+42:01 
+
+42:01 the core customer it wants to serve
+42:03 
+
+42:03 and so
+42:04 
+
+42:04 one of the things I've been wondering
+42:06 
+
+42:06 about is to what extent can one mimic
+42:08 
+
+42:08 that experience you don't have to
+42:09 
+
+42:09 actually experience such a Calamity for
+42:12 
+
+42:12 you to benefit from the clarity that it
+42:14 
+
+42:14 can bring in focusing on what's most
+42:16 
+
+42:16 important for your business
+42:18 
+
+42:18 trust your fear instinct
+42:21 
+
+42:21 stare at
+42:22 
+
+42:22 the face
+42:24 
+
+42:24 and know that you have to get through it
+42:26 
+
+42:26 you can't go around it you can't go over
+42:28 
+
+42:28 it you can't go under it
+42:29 
+
+42:29 like any really challenging time in life
+42:32 
+
+42:32 you know whether you're ending a
+42:33 
+
+42:33 relationship or a job or you know
+42:35 
+
+42:35 there's no easy way so the fear that you
+42:40 
+
+42:40 feel in your gut is actually a really
+42:42 
+
+42:42 helpful signal that you're gonna have to
+42:45 
+
+42:45 get pretty tough and go straight through
+42:46 
+
+42:47 it
+42:47 
+
+42:47 try to seek out the signal of what
+42:49 
+
+42:49 matters most
+42:50 
+
+42:50 we knew that we wanted to be around for
+42:53 
+
+42:53 event creators to be able to rebuild the
+42:56 
+
+42:56 entire Live Events economy and so that's
+42:59 
+
+42:59 what we focused on
+43:01 
+
+43:01 had I tried to sidestep some of the more
+43:04 
+
+43:04 painful moments of this journey
+43:06 
+
+43:06 we probably wouldn't be here today
+43:12 
+
+43:12 now what the future of events will be is
+43:15 
+
+43:15 really rooted in the innate human desire
+43:17 
+
+43:17 to connect I think we've lived
+43:20 
+
+43:20 something that is quite phenomenal that
+43:22 
+
+43:22 underpins the importance of our mission
+43:25 
+
+43:25 of bringing the world together through
+43:26 
+
+43:26 live experiences
+43:28 
+
+43:28 but also opens up the world of
+43:30 
+
+43:30 possibilities
+43:32 
+
+43:32 while people connecting in real life is
+43:35 
+
+43:35 I think Irreplaceable
+43:38 
+
+43:38 I think the option to find people
+43:40 
+
+43:40 virtually whether it be the metaverse or
+43:43 
+
+43:43 through online events is going to be an
+43:45 
+
+43:45 exceptional growth path particularly for
+43:47 
+
+43:47 people who are experienced creators
+43:51 
+
+43:51 and I think that understanding of the
+43:55 
+
+43:55 ephemeral nature of what we build it
+43:58 
+
+43:58 changes you in a way that you appreciate
+44:01 
+
+44:01 the value of a business you appreciate
+44:03 
+
+44:03 the value of a company so much more
+44:05 
+
+44:05 [Music]
+44:11 
+
+44:11 this has been Crucible moments a podcast
+44:14 
+
+44:14 from Sequoia capital
+44:17 
+
+44:17 Crucible moments is produced by the Epic
+44:19 
+
+44:19 stories and Vox creative podcast teams
+44:21 
+
+44:21 along with Sequoia Capital special
+44:24 
+
+44:24 thanks go out to Kevin and Julia hearts
+44:26 
+
+44:26 for telling their stories
+44:27 
+
+44:27 [Music]

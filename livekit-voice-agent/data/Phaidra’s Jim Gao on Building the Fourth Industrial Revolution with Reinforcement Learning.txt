@@ -1,0 +1,4027 @@
+00:00 a lot of times like when we talk about
+00:02 
+
+00:02 AI right in both in the valley and
+00:04 
+
+00:04 elsewhere I think there's a conflation
+00:06 
+
+00:06 between Ai and automation right like um
+00:09 
+
+00:09 AI can absolutely automate things
+00:11 
+
+00:11 there's there's no doubt about that
+00:12 
+
+00:12 right especially like routine things
+00:14 
+
+00:14 right but I think that honestly
+00:17 
+
+00:17 undersells the real promise of AI right
+00:19 
+
+00:19 I think the real promise of AI is what
+00:21 
+
+00:21 um Demis AAL of of um of Deep Mind calls
+00:25 
+
+00:25 uh you know like AI creativity right
+00:27 
+
+00:27 it's the ability to acquire knowledge
+00:31 
+
+00:31 that did not exist before right and I of
+00:33 
+
+00:33 course experienced this firsthand the
+00:35 
+
+00:35 reason why I'm such a True Believer in
+00:37 
+
+00:37 the technology is because again I was
+00:39 
+
+00:39 the expert who helped design the system
+00:41 
+
+00:41 but this very AI agent that we created
+00:44 
+
+00:44 is telling me new things about the
+00:46 
+
+00:46 system that I didn't know about before
+00:47 
+
+00:47 right and that's a very very powerful
+00:49 
+
+00:49 feeling
+00:51 
+
+00:51 [Music]
+01:07 
+
+01:07 hi and welcome to training data please
+01:09 
+
+01:09 welcome Jim GAO founder and CEO of fedra
+01:12 
+
+01:12 Jim was previously the leader of Deep
+01:14 
+
+01:14 Mind energy one of the first and only
+01:16 
+
+01:16 alphao style reinforcement learning
+01:17 
+
+01:17 applications in the wild Deep Mind
+01:20 
+
+01:20 energy used reinforcement learning to
+01:21 
+
+01:21 manage Google's data centers and drove
+01:23 
+
+01:23 some staggering metrics including 40%
+01:25 
+
+01:25 Energy savings we're excited to ask Jim
+01:28 
+
+01:28 about reinforcement learning in the
+01:29 
+
+01:29 industrial world and to learn more from
+01:32 
+
+01:32 him about what other real world
+01:33 
+
+01:33 applications are poised to be
+01:34 
+
+01:34 transformed next by Deep reinforcement
+01:38 
+
+01:38 learning thank you so much for joining
+01:39 
+
+01:39 us maybe before we get started uh we're
+01:42 
+
+01:42 going to spend a lot of time today
+01:43 
+
+01:43 talking about your Deep Mind energy
+01:45 
+
+01:45 Journey um but maybe can you give
+01:47 
+
+01:47 everyone one or two sentences on your
+01:49 
+
+01:49 background and what you're building yeah
+01:50 
+
+01:50 of course um so uh feder is an AI
+01:53 
+
+01:53 company of course fundamentally we are
+01:54 
+
+01:54 an AI automation company so what we do
+01:57 
+
+01:57 is we use a type of AI known as
+01:59 
+
+01:59 reinforcement learning to directly
+02:00 
+
+02:00 control and operate our customers very
+02:03 
+
+02:03 large Mission critical industrial
+02:04 
+
+02:04 facility so in practice these AI agents
+02:07 
+
+02:07 these AI agents uh they act as virtual
+02:10 
+
+02:10 plan operators virtual members of the
+02:12 
+
+02:12 plan operations team let's go back in
+02:15 
+
+02:15 time and talk about the journey that led
+02:17 
+
+02:17 to this journey and I believe that you
+02:20 
+
+02:20 once s an email with the subject line
+02:23 
+
+02:23 reinforcement learning Plus data centers
+02:26 
+
+02:26 equals awesome can you tell question
+02:29 
+
+02:29 mark yes awesome sorry sorry
+02:31 
+
+02:31 reinforcement learning Plus data centers
+02:33 
+
+02:33 equals
+02:35 
+
+02:35 aome um can can you can you tell us who
+02:39 
+
+02:39 did you send that email to uh why did
+02:41 
+
+02:41 you send that email what was on your
+02:43 
+
+02:43 mind at the time and then of course what
+02:44 
+
+02:44 did that lead to yeah of course um so
+02:47 
+
+02:47 the reason why there was a question mark
+02:48 
+
+02:48 is because it was generally an unknown
+02:51 
+
+02:51 if the combination of reinforcement
+02:53 
+
+02:53 learning with industrial facilities
+02:54 
+
+02:54 would actually be awesome uh so that was
+02:57 
+
+02:57 um an email that I had sent to a person
+02:59 
+
+02:59 named Mustafa of sulaman who would later
+03:01 
+
+03:01 become my boss at Deep Mind and um
+03:04 
+
+03:04 really the impetus was something called
+03:06 
+
+03:06 alphao so to set the stage properly um I
+03:09 
+
+03:09 had been experimenting as part of my uh
+03:12 
+
+03:12 famed the 20% time at Google right with
+03:15 
+
+03:15 machine learning Technologies and it was
+03:17 
+
+03:17 actually a very specific course uh
+03:20 
+
+03:20 introduction to machine learning by
+03:21 
+
+03:21 Andrew inan corera that had just come
+03:24 
+
+03:24 out this is back in 2013 myu I think I
+03:27 
+
+03:27 was like the second cboard or something
+03:29 
+
+03:29 and that class had completely changed my
+03:31 
+
+03:31 life I taught myself how to program and
+03:33 
+
+03:33 just started tinkering around with
+03:35 
+
+03:35 machine learning on the side right it
+03:36 
+
+03:36 just it was very interesting technology
+03:38 
+
+03:38 and your background was mechanical
+03:39 
+
+03:39 engineering and environmental systems
+03:41 
+
+03:41 type things yes that's absolutely right
+03:43 
+
+03:43 so my responsibility at the time was to
+03:45 
+
+03:45 one help Google design and operate their
+03:48 
+
+03:48 very large data centers and once these
+03:50 
+
+03:50 very large data centers which consuming
+03:51 
+
+03:51 enormous amounts of energy were built we
+03:53 
+
+03:53 of course shifted our Focus to operating
+03:56 
+
+03:56 these complex Industrial Systems in the
+03:58 
+
+03:58 most energy efficient way possible
+03:60 
+
+03:60 because they use billions of dollars in
+04:01 
+
+04:01 electricity right so that was kind of
+04:04 
+
+04:04 the background I was already tinkering
+04:05 
+
+04:05 around with machine learning
+04:06 
+
+04:06 Technologies on the side to analyze the
+04:09 
+
+04:09 enormous amounts of data that Google's
+04:11 
+
+04:11 data centers were generating in 2016
+04:14 
+
+04:14 alphao came out and I was one of
+04:17 
+
+04:17 hundreds of millions of people around
+04:18 
+
+04:18 the world you know watching it was like
+04:20 
+
+04:20 3:00 a.m. in the barry or something and
+04:23 
+
+04:23 uh I found it absolutely captivating and
+04:26 
+
+04:26 uh to the point where um I sent an email
+04:29 
+
+04:29 to Moose right right describing this
+04:31 
+
+04:31 idea that if Deep Mind could beat the
+04:33 
+
+04:33 smartest most intelligent people in the
+04:35 
+
+04:35 world at complex games like go then
+04:38 
+
+04:38 surely we can train these same AI agents
+04:40 
+
+04:40 to play a very different game that I'm
+04:43 
+
+04:43 familiar with called let's optimize the
+04:45 
+
+04:45 pee the power usage effectiveness of
+04:47 
+
+04:47 Google's data centers right so that was
+04:49 
+
+04:49 the context for that email and I
+04:52 
+
+04:52 remember internally the way I pitched it
+04:53 
+
+04:53 to Google's leadership uh so
+04:55 
+
+04:55 specifically Joe Caba um who leads
+04:58 
+
+04:58 Google's data centers and ORS was uh I
+04:60 
+
+04:60 showed a picture of a goboard on one
+05:02 
+
+05:02 side and a video game controller like an
+05:04 
+
+05:04 Xbox controller on the other and I'm
+05:06 
+
+05:06 like look there are objective functions
+05:08 
+
+05:08 that we're trying to minimize or
+05:10 
+
+05:10 maximize there are concrete like uh
+05:12 
+
+05:12 knobs and lever so actions that we can
+05:14 
+
+05:14 control there are constraints that we
+05:16 
+
+05:16 have to stay within and all of this
+05:18 
+
+05:18 happens within a very measurable
+05:19 
+
+05:19 environment I think you know
+05:21 
+
+05:21 reinforcement learning and operating
+05:24 
+
+05:24 large complex Industrial Systems are
+05:25 
+
+05:25 actually one and the same thing right so
+05:27 
+
+05:27 that was the the original kernel
+05:30 
+
+05:30 of insight I guess that that inspired it
+05:32 
+
+05:32 all and I know Sonia has accused me of
+05:34 
+
+05:34 going rogue with some of the questions
+05:35 
+
+05:35 we ask here I'm going to go ahead and go
+05:37 
+
+05:37 Rogue for a minute already it's been
+05:39 
+
+05:39 like one minute we're going to come back
+05:41 
+
+05:41 I I want to skip the story this seem a
+05:43 
+
+05:43 brief diversion bear with me um the
+05:45 
+
+05:45 three things you mentioned that that
+05:47 
+
+05:47 allowed you to see the parallel between
+05:48 
+
+05:48 reinforcement learning and control
+05:50 
+
+05:50 systems or control theory uh objective
+05:52 
+
+05:52 function actions
+05:55 
+
+05:55 constraints are those the three key
+05:57 
+
+05:57 ingredients for where reinforcement
+05:59 
+
+05:59 learning can be applied to Real World
+06:01 
+
+06:01 Systems yes absolutely that that is 100%
+06:04 
+
+06:04 how we think of it right um you know the
+06:07 
+
+06:07 uh reinforcement learning systems they
+06:09 
+
+06:09 need like kpis to optimize for they need
+06:12 
+
+06:12 to know how good or bad an action is
+06:15 
+
+06:15 right uh they obviously need things to
+06:16 
+
+06:16 control and they need to know what are
+06:18 
+
+06:18 the constraints they have to stay within
+06:20 
+
+06:20 so really what we're saying is as long
+06:22 
+
+06:22 as we can map um you know the the
+06:25 
+
+06:25 problem we're trying to solve into um a
+06:28 
+
+06:28 reinforcement learning framework which
+06:30 
+
+06:30 really from a mathematical perspective
+06:31 
+
+06:31 what we're saying is we're solving a
+06:33 
+
+06:33 constraint optimization problem right if
+06:35 
+
+06:35 you can map the constraint optimization
+06:37 
+
+06:37 problem if you can Define it and map it
+06:39 
+
+06:39 to the underlying data then it should be
+06:42 
+
+06:42 able to be solved using reinforcement
+06:43 
+
+06:43 learning right so that's very much the
+06:45 
+
+06:45 lens through which we look at things at
+06:47 
+
+06:47 faser as well and you know to take it
+06:49 
+
+06:49 one step further you know we often talk
+06:51 
+
+06:51 about how um you know reinforcement
+06:53 
+
+06:53 learning and uh you know controls and
+06:56 
+
+06:56 optimization are like two wildly
+06:59 
+
+06:59 different FS historically that have
+07:02 
+
+07:02 somehow independently converged to the
+07:04 
+
+07:04 same area right like they're two very
+07:05 
+
+07:05 similar Concepts well we've been calling
+07:07 
+
+07:07 them by different names this whole time
+07:09 
+
+07:09 so you've had like almost these
+07:11 
+
+07:11 independent Evolutions right a different
+07:13 
+
+07:13 ways of tackling the same problem and
+07:16 
+
+07:16 vaser is really kind of the intersection
+07:17 
+
+07:17 of both of these okay let's get you back
+07:19 
+
+07:19 onto the story so you sent the email
+07:20 
+
+07:20 sorry for the diversion so you sent the
+07:22 
+
+07:22 email to Mustafa and then what happened
+07:24 
+
+07:24 yeah so we sent the email to Mustafa um
+07:27 
+
+07:27 uh two weeks later uh moose uh had
+07:30 
+
+07:30 actually flown out to Mount View right
+07:32 
+
+07:32 where I was working at the time on
+07:33 
+
+07:33 Google campus um with a team of Dem mind
+07:35 
+
+07:35 folks and we actually started mapping
+07:37 
+
+07:37 out exactly like how reinforcement
+07:39 
+
+07:39 learning could be used to control and
+07:41 
+
+07:41 optimize Google's data center so that
+07:43 
+
+07:43 actually kicked off the original
+07:45 
+
+07:45 partnership between uh Google and deep
+07:47 
+
+07:47 mine around the application
+07:48 
+
+07:48 reinforcement learning for for the data
+07:50 
+
+07:50 center work um it was um you know it was
+07:54 
+
+07:54 very very fascinating but you know most
+07:57 
+
+07:57 importantly it's actually also how I met
+07:59 
+
+07:59 one of my uh two other co-founders right
+08:02 
+
+08:02 so vaa was one of the original Engineers
+08:04 
+
+08:04 on the alphao project so he had gone to
+08:07 
+
+08:07 go to you know he went to so South Korea
+08:10 
+
+08:10 right and you know he actually got to
+08:11 
+
+08:11 meet Lisa do and Larry p and all you
+08:13 
+
+08:13 know all this fun stuff and after Alpha
+08:16 
+
+08:16 go he came back to the season you know
+08:19 
+
+08:19 or rather to the UK and he was wondering
+08:20 
+
+08:20 well what is my next big thing going to
+08:23 
+
+08:23 be right and I managed to convince V
+08:25 
+
+08:25 like hey what if we applied self-
+08:28 
+
+08:28 learning Frameworks like ago to control
+08:31 
+
+08:31 and optimize Google's data center so
+08:33 
+
+08:33 that's actually how I started working
+08:34 
+
+08:34 with my co-founder beta did people think
+08:37 
+
+08:37 he was going to work or was it like this
+08:38 
+
+08:38 is a crazy moonshot let's just try but
+08:40 
+
+08:40 who knows I didn't even know if it was
+08:42 
+
+08:42 going to work like conceptually it made
+08:44 
+
+08:44 sense in my mind right I'm like hey like
+08:46 
+
+08:46 you know this is uh it's a operating a
+08:50 
+
+08:50 data center is just a different game to
+08:53 
+
+08:53 play right and there's all kinds of
+08:54 
+
+08:54 different games in the industrial world
+08:55 
+
+08:55 right maybe the game is maximize Energy
+08:57 
+
+08:57 Efficiency maybe the game is uh minim
+08:59 
+
+08:59 minimize water consumption maybe the
+09:01 
+
+09:01 game is maximize the yield of a factory
+09:04 
+
+09:04 right but there's all these games that
+09:05 
+
+09:05 we're constantly playing right so in my
+09:08 
+
+09:08 mind it made sense but to ask your
+09:10 
+
+09:10 question directly no I had no idea if it
+09:12 
+
+09:12 was going to work I still vividly
+09:14 
+
+09:14 remember to this day um when we you know
+09:17 
+
+09:17 turn on the AI system and we watch the
+09:20 
+
+09:20 energy just drop and it was so
+09:23 
+
+09:23 surprising for two reasons number one um
+09:26 
+
+09:26 well we had designed the system I I
+09:28 
+
+09:28 played a role in designing that very
+09:30 
+
+09:30 mechanical system right that that the AI
+09:32 
+
+09:32 was now controlling and optimizing So in
+09:34 
+
+09:34 theory I'm literally supposed to be the
+09:37 
+
+09:37 subject matter expert who knows
+09:38 
+
+09:38 everything about these systems but the
+09:40 
+
+09:40 AI is teaching me things that I didn't
+09:42 
+
+09:42 know about the system I helped design in
+09:44 
+
+09:44 the first place right um and two the
+09:47 
+
+09:47 moves that the AI was making were just
+09:50 
+
+09:50 very counterintuitive right like when we
+09:52 
+
+09:52 looked at the decisions that were coming
+09:54 
+
+09:54 out you know we looked the plan
+09:55 
+
+09:55 operators and I you know we we were
+09:57 
+
+09:57 sitting in you know a giant cornfield
+09:59 
+
+09:59 and Iowa right where like Google likes
+10:01 
+
+10:01 to put his data centers and we were
+10:03 
+
+10:03 looking at the the the decisions and we
+10:05 
+
+10:05 thought to ourselves there's no way this
+10:07 
+
+10:07 is right like this AI sucks I learned
+10:09 
+
+10:09 the wrong thing but we're here anyway so
+10:11 
+
+10:11 let's try what the AI is saying and and
+10:15 
+
+10:15 we tried it and it worked and we just we
+10:17 
+
+10:17 saw the energy plummet so I think that
+10:19 
+
+10:19 was kind of when I became you know a
+10:21 
+
+10:21 believer in this technology right that
+10:23 
+
+10:23 fundamentally this technology um is
+10:27 
+
+10:27 creative it helps us discover new
+10:29 
+
+10:29 knowledge know that didn't exist before
+10:31 
+
+10:31 from raw data was there a performance
+10:33 
+
+10:33 trade-off or is this just straight up
+10:35 
+
+10:35 Paro gain like performance held and
+10:38 
+
+10:38 question no it was it it it respected
+10:41 
+
+10:41 exactly the same constraints as the plan
+10:43 
+
+10:43 operators you know and Engineers had
+10:45 
+
+10:45 already put in place so this is pure
+10:46 
+
+10:46 game right um respecting exactly the
+10:50 
+
+10:50 same temperature profiles exactly you
+10:52 
+
+10:52 know the same constraints around how
+10:53 
+
+10:53 quickly you can turn on and off a
+10:55 
+
+10:55 chiller minimum pump vfd speeds all that
+10:58 
+
+10:58 sort of stuff so this is pure
+10:59 
+
+10:59 optimization pure gain which I think is
+11:02 
+
+11:02 one of those crazy things like we don't
+11:04 
+
+11:04 really expect like usually when you
+11:05 
+
+11:05 think about Energy Efficiency for
+11:07 
+
+11:07 example right like in the world that I
+11:09 
+
+11:09 come from people usually think about
+11:10 
+
+11:10 expensive capex like oh we got to rip
+11:13 
+
+11:13 out the chillers we got to buy a bunch
+11:14 
+
+11:14 of new chillers from Johnson Controls
+11:15 
+
+11:15 and trains or whatever and then we have
+11:17 
+
+11:17 to install them so they're like Hardware
+11:19 
+
+11:19 efficiency gains right but you don't
+11:21 
+
+11:21 really think about like pure software
+11:23 
+
+11:23 like data driven efficiency gains right
+11:26 
+
+11:26 and I think that's part of what was
+11:27 
+
+11:27 surprising for us can you ask that's
+11:29 
+
+11:29 through the before and after maybe
+11:31 
+
+11:31 before what what you all implemented was
+11:33 
+
+11:33 this industrial Control Systems was this
+11:36 
+
+11:36 manual plant operators turning knobs
+11:38 
+
+11:38 like how did this work before and then
+11:40 
+
+11:40 after yeah it's a great question so let
+11:42 
+
+11:42 me set the stage for you know for for
+11:45 
+
+11:45 folks who are not as familiar with like
+11:47 
+
+11:47 uh large industrial facilities right so
+11:50 
+
+11:50 um they're very modern industrial
+11:51 
+
+11:51 facilities are very very complex right
+11:53 
+
+11:53 there's all kinds of machines that
+11:56 
+
+11:56 people are operating and controlling
+11:58 
+
+11:58 right um so you know I often you know
+12:01 
+
+12:01 tell folks to do like a simple thought
+12:02 
+
+12:02 experiment so imagine you have uh just
+12:04 
+
+12:04 10 machines you're controlling so say
+12:06 
+
+12:06 they're like pumps right and each one of
+12:08 
+
+12:08 those machines has 10 possible set point
+12:11 
+
+12:11 values so so 10 modes associated with it
+12:13 
+
+12:13 so think something like 10% pump speed
+12:16 
+
+12:16 20% pump speed 30% pump speed Etc right
+12:19 
+
+12:19 then in this very simple toy example you
+12:21 
+
+12:21 have 10 raised to the 10 or 10 billion
+12:24 
+
+12:24 different permutations for how you can
+12:26 
+
+12:26 operate your toy system right so then
+12:29 
+
+12:29 the question becomes well at any given
+12:31 
+
+12:31 point what is the most optimal way of
+12:33 
+
+12:33 operating your toy system and by the way
+12:35 
+
+12:35 these are Dynamic systems right so the
+12:37 
+
+12:37 it load is changing the weather is
+12:39 
+
+12:39 fluctuating right you know the people
+12:41 
+
+12:41 operating these systems are changing the
+12:43 
+
+12:43 pipes are croing the heat changes are
+12:45 
+
+12:45 fouling right so the point is these are
+12:47 
+
+12:47 very complex Dynamic systems Real World
+12:49 
+
+12:49 Systems have a lot more than 10 machines
+12:51 
+
+12:51 and each machine has a lot more than 10
+12:53 
+
+12:53 set points right so you can start seeing
+12:56 
+
+12:56 why Technologies like Alpha go which
+12:59 
+
+12:59 manage to navigate MX complexity are
+13:02 
+
+13:02 helpful over here it also helps explain
+13:04 
+
+13:04 why there's often so much room for
+13:06 
+
+13:06 optimization in the first place because
+13:08 
+
+13:08 of so much complexity right like if you
+13:10 
+
+13:10 think about the total action space right
+13:12 
+
+13:12 like all the possible actions within uh
+13:15 
+
+13:15 a modern data center for example right
+13:17 
+
+13:17 because of risk averseness but also
+13:20 
+
+13:20 because of hardcoded rules and
+13:21 
+
+13:21 heuristics right we've only ever
+13:23 
+
+13:23 explored like
+13:26 
+
+13:26 0.00001% of all the possible ways that
+13:29 
+
+13:29 you could operate that system so then
+13:31 
+
+13:31 the the question becomes what is in this
+13:34 
+
+13:34 99.99999% of the acttion space we've
+13:36 
+
+13:36 never explored surely there are more
+13:39 
+
+13:39 optimal ways of operating the system
+13:40 
+
+13:40 than what we've done historically so
+13:42 
+
+13:42 it's kind of an intuitive explanation
+13:45 
+
+13:45 hopefully of why there can be such large
+13:47 
+
+13:47 effici uh efficiency improvements in the
+13:49 
+
+13:49 first place that are undiscovered and
+13:51 
+
+13:51 the way that we operate these facilities
+13:53 
+
+13:53 is constrained by a mixture of hardcoded
+13:56 
+
+13:56 controls logic right so don't get me
+13:58 
+
+13:58 wrong these are automated systems today
+14:00 
+
+14:00 already right they're just not OP you
+14:03 
+
+14:03 know automated uh intelligently I would
+14:05 
+
+14:05 argue right um and you know there there
+14:08 
+
+14:08 is a healthy mixture of human intuition
+14:11 
+
+14:11 as well right where we have people like
+14:14 
+
+14:14 myself or plan operators who are
+14:16 
+
+14:16 constantly monitoring the system who are
+14:18 
+
+14:18 like nudging the system adjusting things
+14:20 
+
+14:20 or setting adjusting the rules right for
+14:23 
+
+14:23 that system the the the the constraints
+14:25 
+
+14:25 that the system has to operate within
+14:26 
+
+14:26 but fundamentally human intuition Plus
+14:29 
+
+14:29 hardcoded controls logic is still
+14:32 
+
+14:32 limited when you talk about this degree
+14:34 
+
+14:34 of complexity right yeah can you talk to
+14:37 
+
+14:37 us about the key results so you saw the
+14:38 
+
+14:38 energy levels drop immediately um yeah
+14:41 
+
+14:41 but you know what what results were you
+14:43 
+
+14:43 able to drive to for Google initially so
+14:46 
+
+14:46 there's there's two types of results
+14:47 
+
+14:47 right you know for Google in particular
+14:49 
+
+14:49 um there was the results from the uh
+14:52 
+
+14:52 pilot so in 2016 we we released we
+14:55 
+
+14:55 announced like there was also the pilot
+14:57 
+
+14:57 right now the pilot was done on a couple
+14:58 
+
+14:58 of data Cent centers but fundamentally
+15:00 
+
+15:00 it was not an autonomous control system
+15:03 
+
+15:03 right so what I mean by this is it was
+15:05 
+
+15:05 the AI generating recommendations right
+15:08 
+
+15:08 which uh for uh for human experts like
+15:11 
+
+15:11 myself to manually review and Implement
+15:14 
+
+15:14 and of course you know we didn't want to
+15:16 
+
+15:16 jump straight to taking our hands off
+15:17 
+
+15:17 the steering wheel right because it's a
+15:19 
+
+15:19 new novel technology right but also like
+15:22 
+
+15:22 no one knew at the time like is it even
+15:24 
+
+15:24 possible to use AI from the cloud to
+15:27 
+
+15:27 control big ass infrastructure right so
+15:30 
+
+15:30 um so step number one was do the pilot
+15:32 
+
+15:32 right they had generated uh
+15:34 
+
+15:34 recommendations that's where we saw like
+15:36 
+
+15:36 really steep like 40% Energy savings
+15:38 
+
+15:38 right now that experience taught us like
+15:41 
+
+15:41 hey we think there's something real over
+15:43 
+
+15:43 here we should actually just let the AI
+15:46 
+
+15:46 Control things directly right to get the
+15:48 
+
+15:48 value automatically and also quite
+15:50 
+
+15:50 frankly uh the plan operators were
+15:52 
+
+15:52 getting tired of checking their email
+15:55 
+
+15:55 like every 15 minutes waiting for the AI
+15:57 
+
+15:57 to tell them what to do right and the
+15:58 
+
+15:58 manual from things they had better
+15:60 
+
+15:60 things to do right so um so we actually
+16:02 
+
+16:02 decided and rather uh ores and Joe
+16:05 
+
+16:05 decided like hey it's time to go to a
+16:07 
+
+16:07 fully automated system right this was
+16:10 
+
+16:10 total Uncharted Territory at that point
+16:12 
+
+16:12 like forget about can AI Control things
+16:14 
+
+16:14 we didn't even know like is it possible
+16:16 
+
+16:16 to control machines from the cloud like
+16:18 
+
+16:18 huge indust infrastructure in the cloud
+16:20 
+
+16:20 because to our knowledge no one had done
+16:21 
+
+16:21 it before right is is it fair to assume
+16:24 
+
+16:24 that a lot of the hardware a lot of
+16:25 
+
+16:25 those machines are things that Google
+16:27 
+
+16:27 built from scratch or does Google use a
+16:29 
+
+16:29 decent amount of like commercially
+16:30 
+
+16:30 available data stuff it's a mixture of
+16:32 
+
+16:32 both right so you know obviously like
+16:34 
+
+16:34 Google you know um does a lot of things
+16:36 
+
+16:36 in house right but it doesn't
+16:37 
+
+16:37 manufacture like chillers and that sort
+16:39 
+
+16:39 of Hardware so Google does buy like off
+16:41 
+
+16:41 the shelf Hardware but you know there's
+16:43 
+
+16:43 a lot of like modifications and Google
+16:45 
+
+16:45 specific things you know that that we
+16:47 
+
+16:47 did right for example like uh you know
+16:49 
+
+16:49 programming some aone plc's or you know
+16:51 
+
+16:51 making modifications to the building
+16:53 
+
+16:53 management system so like the the
+16:54 
+
+16:54 software control layer looked quite
+16:56 
+
+16:56 different right that was done in house
+16:59 
+
+16:59 but um you know I still remember like
+17:01 
+
+17:01 very vividly actually to this day you
+17:03 
+
+17:03 know V and I we were standing um you
+17:05 
+
+17:05 know in a large like 90 megawatt data
+17:07 
+
+17:07 center right so it's it was a fairly
+17:08 
+
+17:08 large Data Center and um you know V is
+17:11 
+
+17:11 like typing away in his MacBook right he
+17:14 
+
+17:14 uh he submits the pr right gets merged
+17:16 
+
+17:16 and all of a sudden this huge honking
+17:20 
+
+17:20 huge Chiller that is the size of a bus
+17:22 
+
+17:22 that were that were standing right next
+17:23 
+
+17:23 to Roars to life and as it's coming to
+17:25 
+
+17:25 life right like the ground is shaking
+17:28 
+
+17:28 vigorously I like oh my God like with a
+17:31 
+
+17:31 few keystrokes on his MacBook like we
+17:34 
+
+17:34 just turned on this enormous Chiller and
+17:37 
+
+17:37 that was like the very first data point
+17:38 
+
+17:38 to us like yes it is possible to control
+17:42 
+
+17:42 things from the cloud so now the next
+17:44 
+
+17:44 question is how do we control things
+17:46 
+
+17:46 intelligently from the cloud right you
+17:48 
+
+17:48 know where all the compute resources
+17:50 
+
+17:50 what were your biggest takeaways from
+17:52 
+
+17:52 that experience you mentioned the
+17:53 
+
+17:53 creativity of the machine any other big
+17:55 
+
+17:55 takeaways or learnings yeah so the
+17:58 
+
+17:58 creativity is absolutely big one I think
+17:60 
+
+17:60 um you know just elaborate on that
+18:01 
+
+18:01 briefly you know a lot of times like
+18:03 
+
+18:03 when we talk about AI right in both in
+18:05 
+
+18:05 the valley and elsewhere I think there's
+18:07 
+
+18:07 a conflation between Ai and automation
+18:10 
+
+18:10 right and like um AI can absolutely
+18:12 
+
+18:12 automate things there there's no doubt
+18:14 
+
+18:14 about that right especially like routine
+18:16 
+
+18:16 things right but I think that honestly
+18:19 
+
+18:19 undersells the real promise of AI right
+18:21 
+
+18:21 I think the real promise of AI is what
+18:23 
+
+18:23 um Demis AO of of um of Deep Mind calls
+18:27 
+
+18:27 uh you know like AI creativity right
+18:30 
+
+18:30 it's the ability to acquire knowledge
+18:33 
+
+18:33 that did not exist before right and I of
+18:35 
+
+18:35 course experienced this Firth hand the
+18:37 
+
+18:37 reason why I'm such a True Believer in
+18:39 
+
+18:39 the technology is because again I was
+18:41 
+
+18:41 the expert who helped design the system
+18:43 
+
+18:43 but this very AI agent that we created
+18:47 
+
+18:47 is telling me new things about the
+18:49 
+
+18:49 system that I didn't know about before
+18:50 
+
+18:50 right and that's a very very powerful
+18:52 
+
+18:52 feeling it's kind of like when um you
+18:55 
+
+18:55 know if you think back to Alpha go right
+18:57 
+
+18:57 like Lisa do was the best in his field
+19:00 
+
+19:00 at go he was the world champion for a
+19:02 
+
+19:02 decade right he was at the top and his
+19:05 
+
+19:05 ELO rating was just something outrageous
+19:07 
+
+19:07 was like 2800 or something it was
+19:08 
+
+19:08 outrageously high and but it had flat
+19:11 
+
+19:11 you know flat line right so for a full
+19:13 
+
+19:13 decade his ELO rating was the same and
+19:16 
+
+19:16 there was no one to challenge him
+19:17 
+
+19:17 because he was already at the top so
+19:18 
+
+19:18 once he hit the top he just kind of
+19:20 
+
+19:20 plateaued and then after Alpha go
+19:22 
+
+19:22 happened and he actually got to play
+19:25 
+
+19:25 against Alpha go you know privately a
+19:26 
+
+19:26 few more times cuz de mind you know had
+19:28 
+
+19:28 you know had uh uh let him continue
+19:30 
+
+19:30 interacting with the system what
+19:32 
+
+19:32 happened for the first time in a decade
+19:34 
+
+19:34 his ELO rating started
+19:36 
+
+19:36 climbing and so this is what I mean when
+19:38 
+
+19:38 I say that I think the real power of AI
+19:40 
+
+19:40 is helping us discover knowledge that we
+19:42 
+
+19:42 didn't didn't necessarily know about
+19:44 
+
+19:44 before and where you're going to see the
+19:46 
+
+19:46 most um gain from that it's not going to
+19:49 
+
+19:49 be in routine automation things right
+19:51 
+
+19:51 like call centers or whatever right uh
+19:54 
+
+19:54 it's going to be I think in very very
+19:57 
+
+19:57 complex areas right like areas
+20:00 
+
+20:00 where human intuition is insufficient
+20:03 
+
+20:03 because of immense complexity but that
+20:05 
+
+20:05 is yet underpinned by data so that's why
+20:08 
+
+20:08 you're seeing such things like protein
+20:11 
+
+20:11 folding for example I me yeah that
+20:13 
+
+20:13 that's extraordinary right and
+20:16 
+
+20:16 um you know it's those areas of just
+20:17 
+
+20:17 like massive permutational complexity
+20:20 
+
+20:20 underpinned by data that's where I think
+20:22 
+
+20:22 we're going to see some of the most
+20:23 
+
+20:23 interesting companies and products um so
+20:26 
+
+20:26 that was that was a rather long tangent
+20:28 
+
+20:28 but so one creativity is something that
+20:30 
+
+20:30 I learned um the other one um lesson
+20:33 
+
+20:33 that that my co-founders and I learned
+20:35 
+
+20:35 is really around um you know if you want
+20:38 
+
+20:38 real impact you got to turn the
+20:40 
+
+20:40 technology into a product and this is
+20:42 
+
+20:42 actually the core reason why we we
+20:44 
+
+20:44 decided to leave deine and train
+20:46 
+
+20:46 Technologies to start fedra right like
+20:48 
+
+20:48 over and over again we were seeing the
+20:50 
+
+20:50 technologies that we were helping to
+20:52 
+
+20:52 develop at De mind were just
+20:53 
+
+20:53 extraordinary right I mean they were
+20:55 
+
+20:55 they were achieving crazy things like
+20:57 
+
+20:57 with protein folding but the problem is
+20:59 
+
+20:59 is you know in order for the technology
+21:01 
+
+21:01 to make the most impact you have to get
+21:02 
+
+21:02 into the real world people have to
+21:04 
+
+21:04 actually use it right and that
+21:06 
+
+21:06 fundamentally means we're talking about
+21:07 
+
+21:07 a product turning a technology into a
+21:10 
+
+21:10 product is like I mean you guys would
+21:12 
+
+21:12 know much better than myself it's like a
+21:13 
+
+21:13 hundredfold a thousandfold more work
+21:16 
+
+21:16 right and um you know and that for us
+21:19 
+
+21:19 you know led us to the conclusion that
+21:21 
+
+21:21 like hey it's you know it's time to
+21:22 
+
+21:22 leave right it's time to actually um
+21:25 
+
+21:25 start a company that that creates these
+21:29 
+
+21:29 intelligent uh uh virtual plan operators
+21:31 
+
+21:31 at these intelligent AI agents as a real
+21:33 
+
+21:33 product let's talk more about that um
+21:37 
+
+21:37 for what you're building now how much of
+21:39 
+
+21:39 what you learned at Google de mind sort
+21:42 
+
+21:42 of translates directly into what you're
+21:44 
+
+21:44 doing now how how much is new because
+21:47 
+
+21:47 the environments are different the
+21:48 
+
+21:48 customers are different there's
+21:49 
+
+21:49 something different about it I think the
+21:51 
+
+21:51 most important thing that we learned
+21:53 
+
+21:53 from our Google de mine experience is
+21:54 
+
+21:54 that is possible like this is not a
+21:58 
+
+21:58 crazy like and that isn't to like you
+22:00 
+
+22:00 know like downplay like what we learned
+22:02 
+
+22:02 like it is it's actually a huge thing
+22:04 
+
+22:04 right we learned that it is in fact
+22:07 
+
+22:07 possible to use um you know Clos Loop
+22:11 
+
+22:11 learning systems like reinforcement
+22:13 
+
+22:13 learning right to drive very large
+22:15 
+
+22:15 improvements and complex industrial
+22:16 
+
+22:16 facilities it hadn't been done before to
+22:18 
+
+22:18 our knowledge right and that was a
+22:20 
+
+22:20 massive proof Point um I think that the
+22:23 
+
+22:23 problem though is that like the real
+22:25 
+
+22:25 world is quite diverse every single
+22:27 
+
+22:27 customer is diverse and especially when
+22:29 
+
+22:29 you talk about industrial facilities
+22:31 
+
+22:31 like every industrial facility is a
+22:33 
+
+22:33 snowflake right so for for us I mean I
+22:36 
+
+22:36 mean the learnings have just been like
+22:39 
+
+22:39 massive since you know since we left
+22:41 
+
+22:41 Google and deep mind right because every
+22:43 
+
+22:43 time we onboard a new customer we're
+22:45 
+
+22:45 learning something new about like how
+22:47 
+
+22:47 equipment are connected or some product
+22:49 
+
+22:49 Gap that we didn't know about before
+22:50 
+
+22:50 that needs to be fixed right or you know
+22:53 
+
+22:53 new ways that data can break at this
+22:55 
+
+22:55 point I can tell you like a hundred
+22:56 
+
+22:56 different ways that you know data so
+22:59 
+
+22:59 with Mission critical cooling systems
+23:00 
+
+23:00 can break probably not the most
+23:02 
+
+23:02 interesting party topic for most folks
+23:04 
+
+23:04 but you know I personally find it quite
+23:05 
+
+23:05 interesting but um yeah there there's
+23:08 
+
+23:08 certainly been quite a lot of learnings
+23:09 
+
+23:09 in that regard are the folks you're
+23:11 
+
+23:11 talking to are they are they ready to
+23:13 
+
+23:13 let the technology take over the system
+23:15 
+
+23:15 and you know let the coing system just
+23:18 
+
+23:18 start just start going yeah I mean um
+23:22 
+
+23:22 yes and no right and and that actually
+23:24 
+
+23:24 gets back you know to your early
+23:25 
+
+23:25 question PAD as well right about like
+23:27 
+
+23:27 the the specific learnings from Google I
+23:29 
+
+23:29 mean when I look back you know I think I
+23:32 
+
+23:32 think what we helped Pioneer at Google
+23:34 
+
+23:34 and deep mind could only have been done
+23:37 
+
+23:37 right um at a company like Google the
+23:40 
+
+23:40 the reason why I say that is because you
+23:41 
+
+23:41 know Google is a very forward leaning
+23:43 
+
+23:43 company yeah but also like one of the
+23:46 
+
+23:46 things I've learned right is that like
+23:49 
+
+23:49 Google is absolutely an anomaly when it
+23:51 
+
+23:51 comes to like how much data it has and
+23:54 
+
+23:54 the pristine quality of the data and the
+23:56 
+
+23:56 ease of access of the data right like
+23:58 
+
+23:58 Google is fun fundamentally a data
+23:60 
+
+23:60 analytics company right and um you know
+24:03 
+
+24:03 as such should invested all this like
+24:05 
+
+24:05 infrastructure in highquality high
+24:07 
+
+24:07 availability data on which you can do
+24:09 
+
+24:09 things like real-time intelligence
+24:11 
+
+24:11 applications like what we were doing and
+24:13 
+
+24:13 there are many other examples of this
+24:14 
+
+24:14 within Google and deep mind um having
+24:18 
+
+24:18 left the nest one of our rude Awakenings
+24:21 
+
+24:21 was you know Google is definitely
+24:24 
+
+24:24 anomaly um and uh I mean gosh like
+24:27 
+
+24:27 everyone is in various States IES of
+24:29 
+
+24:29 their AI Journey right like Google
+24:31 
+
+24:31 certainly on one extreme we have
+24:33 
+
+24:33 customers who've encountered where like
+24:36 
+
+24:36 you know forget about real-time
+24:37 
+
+24:37 intelligence like they're not capturing
+24:39 
+
+24:39 the data in the first place right or you
+24:41 
+
+24:41 know they may be censorize in in the
+24:44 
+
+24:44 industries we work with like
+24:45 
+
+24:45 Pharmaceuticals and dist Cooling and
+24:47 
+
+24:47 especially data centers almost always
+24:49 
+
+24:49 the customer is sensorized right because
+24:51 
+
+24:51 these are billion dollar facilities of
+24:53 
+
+24:53 course it makes sense to throw a million
+24:54 
+
+24:54 dollars worth of sensors on it but that
+24:56 
+
+24:56 doesn't just because you sensor it
+24:58 
+
+24:58 doesn't mean that you're storing the
+24:60 
+
+24:60 data right a lot of customers of ours um
+25:04 
+
+25:04 are necessarily storing the data Beyond
+25:06 
+
+25:06 like 90 days or six months or a year or
+25:08 
+
+25:08 whatever right and you know and they
+25:10 
+
+25:10 might cite some reasons like well it's
+25:12 
+
+25:12 costly to store the data right or like
+25:15 
+
+25:15 well we're not we're the more commonly
+25:17 
+
+25:17 we're not using the data for anything
+25:19 
+
+25:19 which is a true statement right a lot of
+25:20 
+
+25:20 our industrial customers they they
+25:22 
+
+25:22 aren't using the data right it's more
+25:25 
+
+25:25 like a forensics thing where if
+25:26 
+
+25:26 something goes wrong then we go back and
+25:28 
+
+25:28 we look at the the logs to see what
+25:29 
+
+25:29 happened right yeah um and then you know
+25:33 
+
+25:33 so if we think about like Mass L's
+25:35 
+
+25:35 hierarchy of data needs or something
+25:37 
+
+25:37 right you got your sensorization you got
+25:39 
+
+25:39 your storage then you have to invest in
+25:41 
+
+25:41 making sure that the data is cleaned
+25:44 
+
+25:44 right there's a lot of effort as we all
+25:45 
+
+25:45 know here you know around making sure
+25:48 
+
+25:48 the data is actually cleaned and usable
+25:50 
+
+25:50 right and you know that requires you to
+25:52 
+
+25:52 know what bad data looks like what good
+25:55 
+
+25:55 data looks like and how to convert bad
+25:57 
+
+25:57 data into good data so it's actually
+25:58 
+
+25:58 useful and then once you have claim data
+26:00 
+
+26:00 you also need to make it accessible in a
+26:03 
+
+26:03 streaming and like batch historical
+26:05 
+
+26:05 manner right so there's different
+26:08 
+
+26:08 gradients I guess is what I'm trying to
+26:09 
+
+26:09 say of AI Readiness the customers whom
+26:11 
+
+26:11 we work with are all over this are all
+26:13 
+
+26:13 over the
+26:15 
+
+26:15 Spectrum but you know like fager today
+26:18 
+
+26:18 is at the point where we are
+26:19 
+
+26:19 autonomously controlling data centers
+26:22 
+
+26:22 for our customs right so I was going to
+26:23 
+
+26:23 ask you if the um basic workflow or the
+26:26 
+
+26:26 basic Loop is data goes in which is a
+26:29 
+
+26:29 lot of what you just talked about
+26:30 
+
+26:30 getting the data into the system step
+26:32 
+
+26:32 one step two decision is made yep step
+26:35 
+
+26:35 three action is taken as a result of a
+26:38 
+
+26:38 decision that was made step four action
+26:40 
+
+26:40 is evaluated against the objective
+26:42 
+
+26:42 function of the system yeah and then the
+26:43 
+
+26:43 loop continues so the the front end of
+26:45 
+
+26:45 that process which is data goes in
+26:47 
+
+26:47 sounds like there's a lot of work to get
+26:49 
+
+26:49 the real world data ready to go we call
+26:50 
+
+26:50 it the AI Readiness Journey right so
+26:52 
+
+26:52 like if you think about our work with
+26:54 
+
+26:54 customers like there is a chunk of
+26:56 
+
+26:56 upfront work where it's just like Hey
+26:58 
+
+26:58 we're going to get your facility we
+27:00 
+
+27:00 we're going to get you and your facility
+27:02 
+
+27:02 AI ready how about how about on the
+27:04 
+
+27:04 action is taken piece of that are the
+27:07 
+
+27:07 systems ready to be controlled by some
+27:09 
+
+27:09 sort of autonomous system or is there
+27:11 
+
+27:11 work that needs to happen there too yeah
+27:13 
+
+27:13 it's a really good question um yes and
+27:16 
+
+27:16 no right and I'll elaborate on what I
+27:18 
+
+27:18 mean by that right Control Systems today
+27:21 
+
+27:21 were like designed in like the 1980s
+27:24 
+
+27:24 right um so was
+27:26 
+
+27:26 I well me too for that there we
+27:31 
+
+27:31 go but you know this uh like what I mean
+27:34 
+
+27:34 by that is you know that was the the 70s
+27:37 
+
+27:37 and 80s was the third Industrial
+27:38 
+
+27:38 Revolution right so with that you know
+27:40 
+
+27:40 was the shift from analog to digital and
+27:43 
+
+27:43 the Advent of the first automation
+27:45 
+
+27:45 systems right in order to automate you
+27:47 
+
+27:47 fundamentally first have to censorize
+27:48 
+
+27:48 but these are simple automation systems
+27:50 
+
+27:50 right the fourth Industrial Revolution
+27:53 
+
+27:53 right um you know is you know we're
+27:55 
+
+27:55 biased but fager you know we we think
+27:57 
+
+27:57 the fourth Industrial Evolution means um
+28:00 
+
+28:00 intelligent infrastructure right
+28:02 
+
+28:02 infrastructure that can operate itself
+28:03 
+
+28:03 and fundamentally get better over time
+28:05 
+
+28:05 at doing so self-improving
+28:07 
+
+28:07 infrastructure right um but right now
+28:10 
+
+28:10 we're shoehorning intelligence into
+28:13 
+
+28:13 systems from the third Industrial
+28:15 
+
+28:15 Revolution right so they certainly
+28:17 
+
+28:17 weren't designed for this but um what we
+28:20 
+
+28:20 do instead is um most importantly we
+28:22 
+
+28:22 right on top of the existing control
+28:24 
+
+28:24 system so there is a hardcoded layer of
+28:26 
+
+28:26 rules and juristic so millions of of
+28:28 
+
+28:28 lines of if then statements um
+28:30 
+
+28:30 programmed into what we would typically
+28:32 
+
+28:32 call the BMS the building management
+28:34 
+
+28:34 system um or a ska system right that
+28:37 
+
+28:37 defines how the facility should operate
+28:39 
+
+28:39 the problem with hardcoded systems is
+28:40 
+
+28:40 that because they're hardcoded they
+28:42 
+
+28:42 operate the same way today as they did
+28:44 
+
+28:44 yesterday or a year ago or 5 years ago
+28:46 
+
+28:46 more like 10 years ago because people
+28:48 
+
+28:48 don't very frequently go into the
+28:49 
+
+28:49 backend programming right to update that
+28:51 
+
+28:51 controls logic um now what fedra does is
+28:55 
+
+28:55 we insert a new Cloud intelligence layer
+28:57 
+
+28:57 at the very top with the control stack
+28:59 
+
+28:59 so we're not we don't introduce any
+29:02 
+
+29:02 hardware we don't introduce any new
+29:04 
+
+29:04 sensorization right we actually ride on
+29:06 
+
+29:06 top of the existing control stack that's
+29:09 
+
+29:09 really really critical right you can
+29:11 
+
+29:11 think of it as um a a general in the
+29:14 
+
+29:14 battlefield the general right has a
+29:16 
+
+29:16 global view of everything that's
+29:18 
+
+29:18 happening across the system right and
+29:19 
+
+29:19 it's issuing command signals right to
+29:22 
+
+29:22 the Troops on the ground for actual
+29:24 
+
+29:24 execution so the AI is looking in our
+29:27 
+
+29:27 case at 10,000 Trends a minute in real
+29:30 
+
+29:30 time right and it's issuing uh uh
+29:33 
+
+29:33 decisions like which pumps to turn on or
+29:36 
+
+29:36 what their pump speed should be right to
+29:38 
+
+29:38 the local BMS system Andor the plc's for
+29:41 
+
+29:41 automatic implementation and execution
+29:43 
+
+29:43 so that's why I said is a mixture of yes
+29:45 
+
+29:45 and no were they designed for this in
+29:47 
+
+29:47 the first place no right there is a lot
+29:49 
+
+29:49 of work that we have to do with our
+29:50 
+
+29:50 customers to be able to accept this type
+29:54 
+
+29:54 of external intelligence there's a lot
+29:56 
+
+29:56 of work that we do in defining the the
+29:58 
+
+29:58 safety uh Nets and guard rails right to
+30:01 
+
+30:01 ensure that the AI can't do bad things
+30:03 
+
+30:03 to the customer system right but
+30:06 
+
+30:06 fundamentally we are still riding on top
+30:08 
+
+30:08 of the existing controls architecture
+30:10 
+
+30:10 and to be clear we always want to do
+30:12 
+
+30:12 that right like you don't want AI
+30:15 
+
+30:15 controlling things like how fast a valve
+30:17 
+
+30:17 opens and shuts right like that's a
+30:19 
+
+30:19 terrible application of AI like hardcode
+30:21 
+
+30:21 Rosen Cur 6 will do great there so if
+30:23 
+
+30:23 you were to look at the you know like
+30:24 
+
+30:24 the overall system like 90% of it is
+30:28 
+
+30:28 fine with just you know hardcode ER Ros
+30:31 
+
+30:31 and heuristics because it's like
+30:32 
+
+30:32 granular controls logic that doesn't
+30:34 
+
+30:34 need
+30:35 
+
+30:35 non-deterministic crazy powered
+30:37 
+
+30:37 intelligence behind it right but it's
+30:40 
+
+30:40 the higher level thinking and reasoning
+30:42 
+
+30:42 that's where you want the AI it's the
+30:44 
+
+30:44 global optimization have you seen any of
+30:46 
+
+30:46 your customers at fedra kind of get the
+30:48 
+
+30:48 Deep Mind order magnitude
+30:52 
+
+30:52 results so uh I'm glad you asked so the
+30:56 
+
+30:56 really one of the things are really
+30:57 
+
+30:57 excited about is is actually um just
+31:01 
+
+31:01 actually literally this week earlier
+31:03 
+
+31:03 this week um Merk Pharmaceuticals became
+31:05 
+
+31:05 our first public customer so we're
+31:07 
+
+31:07 pretty proud about that we've been
+31:09 
+
+31:09 actually been working with them for two
+31:10 
+
+31:10 years now they've been using fedra uh
+31:13 
+
+31:13 for over two years um the full like
+31:15 
+
+31:15 autonomous AI system to control a
+31:18 
+
+31:18 massive uh 500 acre uh vaccine
+31:22 
+
+31:22 manufacturing facility in Pennsylvania
+31:24 
+
+31:24 right like this is this is the
+31:25 
+
+31:25 definition of mission critical complex
+31:27 
+
+31:27 right they've got 62,000 tons of cooling
+31:30 
+
+31:30 so they've got uh four very large Shad
+31:33 
+
+31:33 plants interconnected with with each
+31:34 
+
+31:34 other across 500 miles of manufacturing
+31:37 
+
+31:37 space right uh hundreds of machines
+31:40 
+
+31:40 interacting with each other like this is
+31:42 
+
+31:42 where the AI really shines um and um
+31:45 
+
+31:45 yeah the results that we saw with them
+31:46 
+
+31:46 were quite strong right like you know um
+31:48 
+
+31:48 I think Merc actually just shared some
+31:50 
+
+31:50 data at a conference we were at you know
+31:52 
+
+31:52 which showed 16% Energy savings when we
+31:54 
+
+31:54 first you know Tri the system at one of
+31:55 
+
+31:55 their Chiller plants so but I you know
+31:58 
+
+31:58 what what I always tell our customers
+31:60 
+
+31:60 right is um don't over index on the
+32:04 
+
+32:04 magnitude of the Energy savings
+32:06 
+
+32:06 initially like we honestly have no idea
+32:09 
+
+32:09 what the Energy savings are going to be
+32:12 
+
+32:12 right and or the liability improvements
+32:14 
+
+32:14 are going to be um ahead of time right
+32:17 
+
+32:17 because these are non-deterministic
+32:18 
+
+32:18 sixes and by definition if I could tell
+32:20 
+
+32:20 you what things you're not doing in
+32:22 
+
+32:22 order to get energy saving is that why
+32:24 
+
+32:24 do you need the AI in the first place
+32:25 
+
+32:25 right so you know but what we do know is
+32:30 
+
+32:30 that the unique thing about this
+32:31 
+
+32:31 technology about fed about reinforcement
+32:34 
+
+32:34 learning in particular is that it is a
+32:36 
+
+32:36 closed loop system it is a self-learning
+32:39 
+
+32:39 system it can learn because it's able to
+32:41 
+
+32:41 take actions and it can measure the
+32:42 
+
+32:42 impact of its actions against this
+32:44 
+
+32:44 predictions right and that means it gets
+32:47 
+
+32:47 better over time so maybe we start off
+32:50 
+
+32:50 at 1% Energy savings maybe we start off
+32:52 
+
+32:52 at 5% maybe we start off at 10% right
+32:55 
+
+32:55 but fundamentally it will learn and it
+32:58 
+
+32:58 will get better over time right no not
+33:01 
+
+33:01 infinitely because there are so are laws
+33:02 
+
+33:02 of physics right but it will get better
+33:04 
+
+33:04 over time and once it reaches optimal it
+33:08 
+
+33:08 will stay at optimal right that's super
+33:11 
+
+33:11 important because with hardcoded rules
+33:13 
+
+33:13 and heris sixs right um when you tuned a
+33:16 
+
+33:16 system as you were commissioning it so
+33:18 
+
+33:18 when you're turning it on for the first
+33:19 
+
+33:19 time right that system today no longer
+33:22 
+
+33:22 performs the same way that it did 10
+33:24 
+
+33:24 years ago when you first you know
+33:25 
+
+33:25 commissioned that system right because
+33:27 
+
+33:27 the pipes have corroded and the the heat
+33:29 
+
+33:29 exchanges have fouled and the cooling
+33:31 
+
+33:31 towers have skilled whatever right or
+33:32 
+
+33:32 you ripped out equipment so but the
+33:35 
+
+33:35 promise of a adaptive self-learning
+33:37 
+
+33:37 system is that it will change with you
+33:39 
+
+33:39 right as your customers are for example
+33:41 
+
+33:41 now putting in a bunch of h100 and soon
+33:44 
+
+33:44 h200 gpus right well the system will
+33:46 
+
+33:46 learn and adapt on the fly with you
+33:49 
+
+33:49 right so it can stay
+33:50 
+
+33:50 optimal I'd love to transition per
+33:52 
+
+33:52 minute Beyond industrial control systems
+33:56 
+
+33:56 and get get your opinion on I mean you
+33:58 
+
+33:58 were one of the first and and maybe one
+33:60 
+
+33:60 of the only real world applications of
+34:03 
+
+34:03 reinforcement learning yeah we're
+34:04 
+
+34:04 definitely not the only not the only I'd
+34:06 
+
+34:06 love to get your thoughts on on the not
+34:08 
+
+34:08 the only so I mean what else is what
+34:10 
+
+34:10 else are people doing with reinforcement
+34:12 
+
+34:12 learning in the wild today yeah
+34:13 
+
+34:13 absolutely um so you know unfortunately
+34:16 
+
+34:16 unfortunately my knowledge is very um
+34:19 
+
+34:19 heavily indexed on the Google and Deep
+34:21 
+
+34:21 Mind space because that's what we spent
+34:22 
+
+34:22 so much time right but even within
+34:24 
+
+34:24 Google and Deep Mind there were other
+34:26 
+
+34:26 you know very cool reinforcement
+34:27 
+
+34:27 learning applications right like for
+34:29 
+
+34:29 example the team that sat right next to
+34:31 
+
+34:31 us right they used RL systems to um you
+34:35 
+
+34:35 know to help prolong battery life for
+34:37 
+
+34:37 example right so you may notice that
+34:38 
+
+34:38 your Android phone right um like the the
+34:41 
+
+34:41 battery life has been increasing and and
+34:43 
+
+34:43 yes there are uh Hardware changes
+34:45 
+
+34:45 associated with that but there are also
+34:46 
+
+34:46 intelligent software changes behind the
+34:48 
+
+34:48 scenes that proactively manage your
+34:50 
+
+34:50 battery life right there um you know
+34:52 
+
+34:52 there were uh reinforce learning systems
+34:54 
+
+34:54 for uh uh you know for like YouTube You
+34:57 
+
+34:57 Know video recommend ations for example
+34:59 
+
+34:59 right and a whole HS of other things
+35:01 
+
+35:01 right so absolutely there are um you
+35:04 
+
+35:04 know uh reinforcement learning
+35:06 
+
+35:06 applications in the
+35:08 
+
+35:08 wild to your point though I wouldn't say
+35:10 
+
+35:10 that there are a whole lot of them right
+35:13 
+
+35:13 and I think that it's not a coincidence
+35:15 
+
+35:15 that you tend to see them at more of
+35:17 
+
+35:17 like the big tech companies where
+35:19 
+
+35:19 they've already invested in the data
+35:21 
+
+35:21 infrastructure right so that the
+35:23 
+
+35:23 underlying infrastructure so that you
+35:25 
+
+35:25 they can benefit from this technology
+35:27 
+
+35:27 right like outside of the big tech
+35:29 
+
+35:29 companies there are very few
+35:31 
+
+35:31 applications of like real world
+35:33 
+
+35:33 reinforcement learning like in
+35:35 
+
+35:35 production at least yeah and do you
+35:37 
+
+35:37 think that's because of kind of low
+35:38 
+
+35:38 applicability you know you started this
+35:40 
+
+35:40 podcast by talking about the necessary
+35:42 
+
+35:42 ingredients for RL to to be a good
+35:45 
+
+35:45 solution do you think it's just there's
+35:47 
+
+35:47 not that many applications where RL is a
+35:49 
+
+35:49 good solution or do you think it's just
+35:50 
+
+35:50 Tech absolutely not I no uh I think the
+35:52 
+
+35:52 applications for reinforcement learning
+35:55 
+
+35:55 are freaking massive and we're
+35:58 
+
+35:58 be fedra is one of many examples that
+36:02 
+
+36:02 we're just scratching the surface as an
+36:04 
+
+36:04 industry of what we can do with this
+36:05 
+
+36:05 technology right like fundamentally the
+36:07 
+
+36:07 power of the technology is that it is a
+36:09 
+
+36:09 self-learning system Alpha go and its
+36:12 
+
+36:12 successor Alpha zero taught itself to
+36:14 
+
+36:14 become the best in the world at go chess
+36:16 
+
+36:16 and shogi three vastly different games
+36:18 
+
+36:18 same learning framework right and it
+36:21 
+
+36:21 taught itself so I think there's a lot
+36:23 
+
+36:23 of very interesting application areas
+36:25 
+
+36:25 right I think the data infrastructure is
+36:27 
+
+36:27 missing um in a lot of them but just to
+36:29 
+
+36:29 like you know like list off a few right
+36:31 
+
+36:31 I mean obviously you know we've already
+36:32 
+
+36:32 talked about like the protein folding
+36:34 
+
+36:34 right um but you know there's there's an
+36:37 
+
+36:37 entire untapped field around Logistics
+36:39 
+
+36:39 right like that is such a gnarly
+36:42 
+
+36:42 computational challenge right um you
+36:44 
+
+36:44 know the when you start looking at
+36:46 
+
+36:46 operations research operations research
+36:48 
+
+36:48 underlies trillions of dollars worth
+36:50 
+
+36:50 worth of you know um uh industrial like
+36:52 
+
+36:52 activities right not just industrial but
+36:54 
+
+36:54 other sorts of activities right like
+36:56 
+
+36:56 shipping airplanes uh uh FedEx like
+36:59 
+
+36:59 driving Roots like these are all
+37:00 
+
+37:00 applications of operations research grid
+37:03 
+
+37:03 balancing right I mean I think grid
+37:05 
+
+37:05 balancing is probably the
+37:07 
+
+37:07 single most important way that AI can
+37:10 
+
+37:10 fight climate change I generally believe
+37:13 
+
+37:13 that is where AI will have the most
+37:14 
+
+37:14 impact on climate if you had if you
+37:16 
+
+37:16 hadn't guess yeah you know you deploy
+37:18 
+
+37:18 first time you deployed this into a data
+37:19 
+
+37:19 center at Google you saw 40% Energy
+37:22 
+
+37:22 savings if we had just killer AI doing
+37:25 
+
+37:25 load balancing on the on the grid What
+37:28 
+
+37:28 what sort of Energy savings do you think
+37:29 
+
+37:29 we could see oh my gosh I mean that
+37:32 
+
+37:32 would be wild um I think it's not so
+37:35 
+
+37:35 much about the the magnitude of the
+37:36 
+
+37:36 Energy savings per se but rather about
+37:39 
+
+37:39 the um the potential cost savings
+37:42 
+
+37:42 because then you could start shifting
+37:43 
+
+37:43 your loads around right to when it's
+37:45 
+
+37:45 most cost effective to do compute or if
+37:48 
+
+37:48 you had CO2 signals you could start
+37:50 
+
+37:50 scheduling loads around um when it's the
+37:53 
+
+37:53 most the least carbon intensive to do
+37:56 
+
+37:56 your uh non- leny sensitive workloads
+37:59 
+
+37:59 right which I think Google has already
+38:00 
+
+38:00 been experimenting a bit with right um
+38:03 
+
+38:03 but honestly I think it's really more
+38:05 
+
+38:05 around the global system level
+38:08 
+
+38:08 optimization right we have to keep in
+38:09 
+
+38:09 mind that data centers already are but
+38:13 
+
+38:13 increasingly you know um are just
+38:16 
+
+38:16 massive massive load Banks right like
+38:17 
+
+38:17 data centers like they they were one and
+38:20 
+
+38:20 a half 2% of us energy consumption
+38:22 
+
+38:22 that's about to increase to 4% right
+38:25 
+
+38:25 like this year I think and then by the
+38:27 
+
+38:27 end of the decade is projected to get up
+38:28 
+
+38:28 to like 9% of the US in in Ireland right
+38:32 
+
+38:32 right now Ireland is 22% of Ireland's
+38:35 
+
+38:35 national energy electricity consumption
+38:39 
+
+38:39 goes to Data Centers alone the
+38:41 
+
+38:41 International Energy agency predicts
+38:43 
+
+38:43 that that's going to increase to 37% by
+38:45 
+
+38:45 the end of the decade right like just
+38:47 
+
+38:47 mindboggling numbers but the point the
+38:49 
+
+38:49 reason why I mentioned this is because
+38:51 
+
+38:51 these are massive load banks on the grid
+38:54 
+
+38:54 right the there is an actual opportunity
+38:56 
+
+38:56 if you could somehow coordinate the data
+38:58 
+
+38:58 centers together right um to uh to help
+39:02 
+
+39:02 balance the grid right and that is such
+39:04 
+
+39:04 a gnarly gnarly Challenge and it is what
+39:07 
+
+39:07 is holding the energy transition back
+39:09 
+
+39:09 because you know as more and more
+39:11 
+
+39:11 Renewable Energy starts coming onto the
+39:13 
+
+39:13 grid right the supply side becomes
+39:15 
+
+39:15 increasingly stochastic right we used to
+39:17 
+
+39:17 have this perfectly deterministic system
+39:20 
+
+39:20 at least on the supply side where you
+39:22 
+
+39:22 know a good operator can call someone
+39:23 
+
+39:23 who operates a cold fire power plant and
+39:25 
+
+39:25 say hey ramp up or down your power
+39:27 
+
+39:27 production right deterministic but now
+39:29 
+
+39:29 ramp up or down the sun yeah totally
+39:31 
+
+39:31 right so now is get more and more
+39:33 
+
+39:33 renewable penetration you know coming on
+39:35 
+
+39:35 to the grid right you have a somewhat
+39:38 
+
+39:38 non-deterministic demand side right it's
+39:40 
+
+39:40 somewhat predictable but there are
+39:42 
+
+39:42 definitely spikes and a massively
+39:44 
+
+39:44 non-deterministic supply side right and
+39:47 
+
+39:47 what is the problem with that the
+39:48 
+
+39:48 problem is that um you know we because
+39:51 
+
+39:51 we do not know how much energy we're
+39:54 
+
+39:54 going to generate you now have all this
+39:56 
+
+39:56 wasted excess capacity in reserve right
+39:59 
+
+39:59 so there's a concept of spinning
+40:00 
+
+40:00 reserves on the grid where um you know
+40:03 
+
+40:03 like there are peer plants um you know
+40:06 
+
+40:06 like giant natural gas turbines right
+40:08 
+
+40:08 that as we speak are just sitting there
+40:10 
+
+40:10 idling just like your car Idols uh at a
+40:13 
+
+40:13 stoplight right in case we need that
+40:16 
+
+40:16 power right as a buffer against the
+40:18 
+
+40:18 uncertainty and as renewable penetration
+40:20 
+
+40:20 increases ironically the amount of
+40:22 
+
+40:22 buffer you need also increases if you
+40:24 
+
+40:24 look at Germany's failed energy
+40:25 
+
+40:25 transition right they decommissioned
+40:27 
+
+40:27 their nuclear Basel load while wrapping
+40:29 
+
+40:29 up their their renewable energy
+40:31 
+
+40:31 penetration right good motivation on the
+40:34 
+
+40:34 surface although I person say think we
+40:36 
+
+40:36 need a lot of more nuclear on the grid
+40:37 
+
+40:37 but that's another topic but
+40:40 
+
+40:40 um it ended up backfiring right because
+40:43 
+
+40:43 Germany actually ended up needing to
+40:45 
+
+40:45 build more fossil fuel power power
+40:48 
+
+40:48 plants to buffer against all the
+40:50 
+
+40:50 renewable energy that was coming onto
+40:52 
+
+40:52 the grid now right so that's why I
+40:55 
+
+40:55 think AI for grid balancing
+40:58 
+
+40:58 we need it and is probably the single
+41:00 
+
+41:00 most impactful thing that AI can do to
+41:02 
+
+41:02 solve climate change let's talk a bit
+41:04 
+
+41:04 about some of the limit limitations of
+41:06 
+
+41:06 reinforcement learning and also where
+41:08 
+
+41:08 you see it intersecting with
+41:09 
+
+41:09 Transformers yeah yeah um so I should
+41:13 
+
+41:13 state that first of all my co-founder
+41:16 
+
+41:16 vaa is by far the expert on this topic
+41:19 
+
+41:19 he knows way way more than me you know
+41:21 
+
+41:21 I'm I'm just a I'm just a simple
+41:23 
+
+41:23 mechanical engineer right who who
+41:24 
+
+41:24 happened to learn a bit about AI um I
+41:28 
+
+41:28 think I think the intersection is really
+41:30 
+
+41:30 interesting like very very
+41:33 
+
+41:33 um very potentially complimentary
+41:36 
+
+41:36 strengths and weaknesses is how I would
+41:38 
+
+41:38 describe it right um it's it's certainly
+41:40 
+
+41:40 not mutually exclusive right like what
+41:43 
+
+41:43 what I mean by that is and I was just
+41:44 
+
+41:44 talking with v about this earlier right
+41:46 
+
+41:46 so V will tell you that like you know
+41:50 
+
+41:50 all intelligence systems have certain
+41:51 
+
+41:51 Hallmarks right of of intelligence so
+41:54 
+
+41:54 that we can say they are intelligence
+41:55 
+
+41:55 they need to deeply understand and the
+41:57 
+
+41:57 world the environment that you know that
+41:59 
+
+41:59 that um you know that they're modeling
+42:01 
+
+42:01 right um there needs to be some element
+42:04 
+
+42:04 of memory right so like remembering
+42:06 
+
+42:06 things and very importantly there needs
+42:08 
+
+42:08 to be the ability to plan and reason
+42:11 
+
+42:11 right very interlined Transformers are
+42:14 
+
+42:14 clearly quite good at the first one
+42:16 
+
+42:16 right in the sense that like they can
+42:18 
+
+42:18 take in um huge amounts of structured
+42:21 
+
+42:21 and unstructured data right um to learn
+42:25 
+
+42:25 quite good uh models right of the world
+42:29 
+
+42:29 but it is limited in the sense that
+42:31 
+
+42:31 these models are primarily through
+42:33 
+
+42:33 correlation and not causation right that
+42:35 
+
+42:35 makes it challenging for at least for
+42:38 
+
+42:38 what fedra does right because because we
+42:40 
+
+42:40 work with Real World Systems we have to
+42:42 
+
+42:42 have causality like we have to
+42:44 
+
+42:44 understand why is the AI doing certain
+42:47 
+
+42:47 things right like why is it not doing
+42:49 
+
+42:49 other things how do we force a certain
+42:50 
+
+42:50 Behavior right that we know has to exist
+42:53 
+
+42:53 in our system right so these are mission
+42:56 
+
+42:56 critical systems what I'm trying to say
+42:57 
+
+42:57 there has to be causality so that's
+42:59 
+
+42:59 where the limitation is right um with
+43:02 
+
+43:02 reinforcement learning systems I mean
+43:04 
+
+43:04 the the power of R based systems is very
+43:07 
+
+43:07 you know much in the planning and
+43:09 
+
+43:09 reasoning uh uh part right where um you
+43:13 
+
+43:13 know you're able to plan long
+43:15 
+
+43:15 trajectories of actions and learn really
+43:18 
+
+43:18 you know like uh intricate policies
+43:20 
+
+43:20 right um I think where it gets really
+43:23 
+
+43:23 interesting is the intersection right
+43:25 
+
+43:25 where potentially Transformer
+43:27 
+
+43:27 architectures can learn models right you
+43:30 
+
+43:30 know like value functions right that the
+43:33 
+
+43:33 um that the or or or models of the of
+43:35 
+
+43:35 the world that the AI can learn policies
+43:38 
+
+43:38 against but without that
+43:42 
+
+43:42 causality piece right it's going to be
+43:44 
+
+43:44 quite tricky to cut it over into at
+43:46 
+
+43:46 least industrial control applications
+43:47 
+
+43:47 like what fager do should we move into a
+43:51 
+
+43:51 rapid fire round what are you most
+43:53 
+
+43:53 excited about in the world of AI in the
+43:55 
+
+43:55 next five or 10 years so in the very
+43:58 
+
+43:58 near future right I'm excited about just
+44:01 
+
+44:01 the absolute explosion right of of AI
+44:05 
+
+44:05 applications right it it feels kind of
+44:07 
+
+44:07 like a Precambrian explosion of sorts
+44:09 
+
+44:09 where like there's like a primordial
+44:11 
+
+44:11 soup and like all these AI startups and
+44:14 
+
+44:14 services are all of a sudden springing
+44:15 
+
+44:15 up right so it's quite
+44:17 
+
+44:17 exciting um but when I look at where
+44:21 
+
+44:21 that uh where that activity is happening
+44:24 
+
+44:24 where that research and that
+44:25 
+
+44:25 entrepreneurial activity is happening um
+44:28 
+
+44:28 is very clearly focused on like around
+44:31 
+
+44:31 llms and even more specifically around
+44:34 
+
+44:34 like uh uh natural language interactions
+44:37 
+
+44:37 right tax based interactions right and
+44:39 
+
+44:39 that certainly is a large part of the
+44:41 
+
+44:41 economy it is very exciting but in the
+44:43 
+
+44:43 five to 10 year frame to answer your
+44:45 
+
+44:45 question I'm most excited about when we
+44:47 
+
+44:47 can start uh getting some of this
+44:50 
+
+44:50 technology into real world physical yeah
+44:53 
+
+44:53 applications right it's the intersection
+44:55 
+
+44:55 of this technology with uh the the the
+44:58 
+
+44:58 real world infrastructure that we that
+44:59 
+
+44:59 we live in right like big Industrial
+45:02 
+
+45:02 Systems cars homes like you know
+45:05 
+
+45:05 physical things I think that's where uh
+45:07 
+
+45:07 we're going to see some really
+45:08 
+
+45:08 interesting things in the
+45:10 
+
+45:10 future who do you admire most in the
+45:13 
+
+45:13 field of AI gosh a tricky question I
+45:16 
+
+45:16 admire a lot of people you worked with
+45:19 
+
+45:19 some of the greats and so it's going to
+45:20 
+
+45:20 be
+45:22 
+
+45:22 hard yeah I mean of course my mind jumps
+45:25 
+
+45:25 immediately to a lot of the people whom
+45:26 
+
+45:26 I've worked with right
+45:27 
+
+45:27 um you know um uh I admire um very much
+45:32 
+
+45:32 the the dine researchers whom we you
+45:34 
+
+45:34 know worked very closely with um I often
+45:36 
+
+45:36 tell people working at dine it's kind of
+45:38 
+
+45:38 like work being a kid in a candy shop if
+45:40 
+
+45:40 you're a technologist like myself um
+45:42 
+
+45:42 it's like you get to see years in the
+45:44 
+
+45:44 future right all this cool technology on
+45:47 
+
+45:47 the Forefront and it just makes your
+45:48 
+
+45:48 head spin as to like all the possible
+45:50 
+
+45:50 applications of that technology um I I
+45:54 
+
+45:54 admire moose a lot right my my old boss
+45:56 
+
+45:56 who you know has a of course since moved
+45:58 
+
+45:58 over to to Microsoft um you know I was
+46:01 
+
+46:01 saying earlier like one of the biggest
+46:03 
+
+46:03 lessons I learned you know and my
+46:05 
+
+46:05 co-found has learned that deep mind is
+46:06 
+
+46:06 that like making a technology like what
+46:10 
+
+46:10 we did for Google data centers versus
+46:12 
+
+46:12 making a product like what we're doing
+46:13 
+
+46:13 at fature totally different things
+46:15 
+
+46:15 wildly wildly different things and there
+46:17 
+
+46:17 are few people as good in the world as
+46:19 
+
+46:19 moose at like ticking Technologies and
+46:23 
+
+46:23 turning them into real products right I
+46:25 
+
+46:25 remember uh my co-founder kti and I um
+46:28 
+
+46:28 you know we were sitting down we were
+46:30 
+
+46:30 grabbing drinks with moose at like um at
+46:32 
+
+46:32 some random Dive Bar in Seattle right he
+46:34 
+
+46:34 happened to be up there and this is
+46:36 
+
+46:36 before you know um open AI like released
+46:39 
+
+46:39 chat gpt2 and just like ushered in like
+46:41 
+
+46:41 a world of craziness right and um and
+46:45 
+
+46:45 you know he was raving to to myself and
+46:48 
+
+46:48 Katie about the applications of llms and
+46:51 
+
+46:51 like you know the um you know and how
+46:53 
+
+46:53 powerful these systems are and we were
+46:55 
+
+46:55 like okay moose but you know let us tell
+46:57 
+
+46:57 us let's tell you about fed like we had
+46:58 
+
+46:58 no idea what he was talking about
+47:02 
+
+47:02 right but I mean he was preent like he
+47:06 
+
+47:06 saw this ages in advance right you know
+47:08 
+
+47:08 what the technology the technology that
+47:10 
+
+47:10 was being developed and the capabilities
+47:12 
+
+47:12 right that it would usher in and then of
+47:14 
+
+47:14 course he went off and he started
+47:16 
+
+47:16 inflection so I admire him a lot for the
+47:18 
+
+47:18 ability to turn technology to actual
+47:21 
+
+47:21 products all right last question you are
+47:24 
+
+47:24 building a very ambitious business very
+47:26 
+
+47:26 hard business bus to build and you've
+47:28 
+
+47:28 been at it for a while in the context of
+47:29 
+
+47:29 the new wave of AI startups what advice
+47:32 
+
+47:32 do you have for other Founders or would
+47:34 
+
+47:34 be Founders who are trying to build
+47:35 
+
+47:35 companies here I mean I'm not sure I'm
+47:38 
+
+47:38 even qualified because um one I hope I
+47:41 
+
+47:41 hope Yes again in um you know in one or
+47:44 
+
+47:44 two years when hopefully you know fedra
+47:46 
+
+47:46 is is wildly successful um we certainly
+47:49 
+
+47:49 didn't choose the easy path by focusing
+47:51 
+
+47:51 on Ro infrastructure
+47:54 
+
+47:54 um um honestly my mind gravitates
+47:58 
+
+47:58 towards more like um would be Founders
+48:01 
+
+48:01 right like people like my co-founders
+48:04 
+
+48:04 and I who were thinking about leaving to
+48:08 
+
+48:08 start something new right and my advice
+48:11 
+
+48:11 there is twofold uh one make sure you
+48:14 
+
+48:14 have co-founders like my guide is so
+48:18 
+
+48:18 stressful there's so many things that
+48:20 
+
+48:20 can go wrong and you're constantly on
+48:22 
+
+48:22 this emotional roller coaster of up and
+48:24 
+
+48:24 downs having co-founders to lean
+48:28 
+
+48:28 uh both for the workload but also just
+48:30 
+
+48:30 for the emotional support and mental
+48:31 
+
+48:31 sanity so important right um advice
+48:36 
+
+48:36 number two would be um the risk is less
+48:40 
+
+48:40 than you think it is H right um I I I'm
+48:43 
+
+48:43 biased but I think people should take
+48:44 
+
+48:44 the jump right A lot of times when I
+48:46 
+
+48:46 when I talk with you know my former
+48:48 
+
+48:48 colleagues you know and other people
+48:50 
+
+48:50 right who are thinking about making the
+48:52 
+
+48:52 jump right you know they'll say things
+48:53 
+
+48:53 like well but I've got a nice job over
+48:55 
+
+48:55 here you know you know they pay me well
+48:57 
+
+48:57 there you know I'm on a rising
+48:59 
+
+48:59 trajectory but my point to these folks
+49:01 
+
+49:01 is always like no matter you know like
+49:05 
+
+49:05 how valuable and successful you know you
+49:07 
+
+49:07 are today in the organization like you
+49:09 
+
+49:09 will only be more valuable and
+49:12 
+
+49:12 successful for that organization or
+49:14 
+
+49:14 other organizations or to society in
+49:17 
+
+49:17 general if you learn new skill sets
+49:20 
+
+49:20 right like take the plunge go out start
+49:23 
+
+49:23 a company learn what it's like to turn
+49:25 
+
+49:25 Technologies into products right and and
+49:27 
+
+49:27 if that fails for whatever reason
+49:28 
+
+49:28 hopefully it doesn't right but if you
+49:31 
+
+49:31 fail then the Googles the microsofts
+49:33 
+
+49:33 whatever the world they will only want
+49:35 
+
+49:35 to hire you back at an even higher
+49:37 
+
+49:37 premium so why not take the pledge right
+49:39 
+
+49:39 it's the the you know the the the
+49:41 
+
+49:41 biggest best investment and obviously
+49:43 
+
+49:43 much smarter people than me have said
+49:45 
+
+49:45 this for a really long time but the best
+49:47 
+
+49:47 assestment you can make in yourself
+49:48 
+
+49:48 right is you right upleveling yourself
+49:51 
+
+49:51 uh learning new skill sets that's always
+49:53 
+
+49:53 you know the best thing you could
+49:55 
+
+49:55 do thank you Jim a fascinating
+49:57 
+
+49:57 conversation yeah thank you very much
+49:59 
+
+49:59 for having me guys um really enjoyed it
+50:01 
+
+50:01 thank you
+50:12 
+
+50:12 [Music]
+50:17 
+
+50:17 [Music]

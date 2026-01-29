@@ -1,0 +1,2110 @@
+00:00 I would have
+00:00 thought this would be different
+00:02 13 months later,
+00:03 but this is still very much
+00:04 the case
+00:04 where agent is synonymous
+00:07 with unreliable,
+00:09 stochastic, demoware, vaporware,
+00:13 and I think something
+00:14 very important for us is
+00:16 we want to build these systems
+00:17 that aren’t
+00:18 just like cool examples of
+00:19 what is to come,
+00:20 but rather valuable today
+00:22 and not just valuable
+00:23 for like a hacker on a side project
+00:25 but valuable to enterprise
+00:26 engineers today.
+00:44 Hi, and welcome to training data.
+00:46 We have with us today
+00:47 Matan Grinberg and Eno Reyes,
+00:48 founders of Factory.
+00:50 Factory is building
+00:51 autonomous software engineering agents,
+00:53 or “droids,”
+00:54 that can automate everything
+00:55 from the drudgery
+00:56 of maintaining your documentation
+00:58 to actually writing code for you.
+00:60 In doing
+01:00 so they are building
+01:01 the ultimate compound lever.
+01:03 Last week, Factory
+01:04 also announced
+01:05 some impressive results on the key
+01:06 AI coding benchmarks SWE-bench, beating
+01:09 state of the art by a wide margin.
+01:10 Stay tuned at the end of the episode
+01:12 for more context on how they built it.
+01:16 We’re here with Matan
+01:17 Grinberg and Eno Reyes,
+01:19 founders of Factory.
+01:21 Gentlemen, thank you for joining us.
+01:23 Thank you so much for having us.
+01:25 Yeah, thanks for having us.
+01:27 Let’s start.
+01:27 Let’s start
+01:27 with a little bit of personal background.
+01:29 And Matan, maybe we’ll
+01:30 start with you and then go to Eno.
+01:32 So Matan.
+01:33 One thing that I believe
+01:35 you and I share in common
+01:36 is an affinity
+01:37 for a well-executed cold call.
+01:40 I know
+01:40 at least two cold calls
+01:41 that have had some bearing on your life.
+01:43 Why don’t we start with
+01:44 the one that you did,
+01:45 as an undergrad at Princeton,
+01:47 to somebody who
+01:48 my partner, Shaun Maguire tells me
+01:50 is quite a famous physicist.
+01:52 Can we start with that cold call?
+01:54 Yeah, absolutely.
+01:55 So while I was at Princeton,
+01:57 I was studying string theory.
+01:60 And the most famous string
+02:02 theorist happened to be working
+02:04 at the Institute for Advanced Study,
+02:06 which is
+02:07 an academic institution,
+02:08 right next to Princeton University,
+02:10 but not technically affiliated with it.
+02:12 Part of the allure of going to the
+02:14 IAS is that you don’t
+02:16 have to take on
+02:17 graduate students, much less undergrads.
+02:20 That said,
+02:21 you know, there’s
+02:23 a professor there, Juan Maldacena,
+02:24 who is, you know, by far
+02:26 the kind of leader of
+02:27 the string theory movement.
+02:29 And,
+02:31 you know, being a young,
+02:32 ambitious undergrad, I,
+02:35 I decided, you know, might as well
+02:37 see if I could snag him as an advisor.
+02:40 And so with some advice
+02:42 from some graduate students,
+02:43 I sent him an email,
+02:45 asked if we could meet.
+02:47 And the thing about Juan
+02:48 is the way he works with people,
+02:50 you know, he’ll take a meeting
+02:51 with anyone, basically,
+02:52 and will spend about two hours
+02:54 at the chalkboard with you.
+02:56 And in this two hour chalkboard session,
+02:59 he’ll subtly drop a problem
+03:02 that you basically
+03:02 have 24 hours to solve,
+03:04 and get back to him with the solution.
+03:06 And then you’ll officially,
+03:07 you know, be a student of his.
+03:09 Luckily,
+03:10 I was warned about this,
+03:11 about this rite of passage.
+03:13 So yeah, I was paying close attention
+03:16 to any hints he was dropping.
+03:18 Indeed, yes, yes.
+03:20 So I found the problem,
+03:23 ended up spending, you know,
+03:25 basically the entire night
+03:27 working on it, and,
+03:28 you know, luckily ended up
+03:29 having him as an advisor.
+03:31 We were able to
+03:32 then publish a paper together, which was
+03:34 very exciting. So,
+03:37 yeah.
+03:38 Typical undergrad experience.
+03:40 Yes. Yes, exactly.
+03:42 So there’s, there’s a second cold call
+03:44 that I want to ask you about.
+03:45 Before we get to that,
+03:46 why don’t we go to Eno, so Eno,
+03:47 you similarly went to Princeton,
+03:50 you have a CS degree from there,
+03:51 you spent some time as a machine
+03:52 learning engineer at Hugging Face,
+03:54 which is where we first intersected
+03:55 spent some time at Microsoft.
+03:57 But like a lot of great
+03:58 founders, your story before
+04:00 then started with some humble beginnings.
+04:02 Could you say a word about the stuff
+04:03 that doesn’t appear on LinkedIn
+04:05 that has helped to shape
+04:06 who you are today? Yeah, absolutely.
+04:08 And I think that,
+04:10 you know, my family on my dad’s side
+04:12 came from Mexico
+04:14 in the late 60s to San Francisco.
+04:16 And my grandparents
+04:18 were both working for a bit.
+04:20 But when my dad was born,
+04:21 they started a Mexican
+04:23 restaurant in Los Altos.
+04:25 And that was in the 70s.
+04:28 They moved it to Haight
+04:29 and Cole in the 80s,
+04:30 and were a very kind of San Francisco
+04:33 immigrant story.
+04:35 They actually ended up leaving,
+04:36 to Georgia, where I grew up.
+04:38 But really, I think it's the drive
+04:42 that they had to give my dad
+04:43 a successful life in America.
+04:46 And it was my dad
+04:48 and my mom
+04:48 that drove that same kind of mentality
+04:50 and to me growing up,
+04:51 and I think it’s really cool
+04:53 because this story is one
+04:55 that I think a lot of Americans share
+04:56 and something
+04:57 that makes it really exciting
+04:58 to be back in San Francisco,
+05:00 kind of building, building something
+05:02 to potentially make the world
+05:04 a better place for everyone.
+05:06 Very cool.
+05:07 That is the dream.
+05:09 Matan,
+05:10 I want to get back
+05:11 to that other cold call,
+05:12 because I think it leads
+05:13 directly into the founding
+05:15 or the forming of Factory.
+05:17 So our partner, Shaun Maguire,
+05:19 who I mentioned earlier,
+05:20 who I believe shares
+05:21 a similar academic
+05:23 background to your own,
+05:24 Ireceived an email from you
+05:27 a year or so ago, that led to a walk.
+05:30 And very shortly thereafter,
+05:32 Factory was formed.
+05:33 So I’m curious.
+05:35 What caused you to cold call
+05:37 Shaun Maguire
+05:37 and this is less of a
+05:38 Shaun Maguire question
+05:39 because we
+05:40 know plenty about Shaun Maguire.
+05:41 This is more of like,
+05:43 you’re on a very good path,
+05:45 you do
+05:45 really good research,
+05:46 you’re on track to get a PhD in physics.
+05:49 And something inspired you
+05:51 to go in a different direction.
+05:52 And I’m curious,
+05:53 what was it that inspired you
+05:55 that led to that cold call?
+05:56 And maybe tell us a quick story
+05:57 about what happened shortly thereafter?
+05:59 Yeah, absolutely.
+06:00 So, you know, I was like you said,
+06:02 I was doing my PhD at Berkeley.
+06:04 About a year in though I realized that
+06:09 I was only doing
+06:10 theoretical physics, and string theory,
+06:11 because it was hard.
+06:12 And not because I actually loved it,
+06:14 which is obviously a
+06:16 bad reason, bad reason to do anything.
+06:17 And,
+06:19 you know,
+06:19 I had such tunnel vision
+06:20 on this path that,
+06:22 you know,
+06:23 when I came to this realization,
+06:24 it was kind of earth shattering,
+06:26 and I looked at the paths ahead of me.
+06:28 And there were basically three options
+06:30 that seemed realistic.
+06:31 And so
+06:32 it was either going
+06:33 into quantitative finance,
+06:34 going into big tech,
+06:36 or going into startups.
+06:37 And by this time, I’d already
+06:39 kind of switched my research at Berkeley
+06:41 from being purely physics to
+06:44 ML in physics, and then slowly more ML,
+06:46 and then mostly AI.
+06:48 So it was kind of
+06:49 quickly cascading there.
+06:51 At the time,
+06:51 I think I saw a video of Shaun speaking,
+06:54 I think over Zoom to some founders
+06:57 at Stanford or something.
+06:59 And I recognize his name
+07:00 from string theory research,
+07:01 because I had read his papers
+07:03 way back in the day.
+07:04 And it was particularly shocking to me,
+07:06 because I’m not sure
+07:07 how much time you spent
+07:08 with string theorists.
+07:09 But normally, they’re quite introverted.
+07:12 Not, Not, Not... not
+07:14 the most socialized.
+07:15 Yeah, and so Shaun is,
+07:17 you know, this very different example.
+07:19 And so, to me, I kind of like, like,
+07:21 I looked at his background,
+07:23 and it was just
+07:23 it was just shocking
+07:24 to see someone
+07:25 who was like, so deep
+07:26 and like a bonafide string theorist,
+07:29 then go in and like,
+07:30 start his own companies, invest
+07:31 in some of the best
+07:32 companies, join Sequoia
+07:34 and be, you know, a partner there.
+07:36 And
+07:38 to me, it was just like, Oh, my God,
+07:39 this seems like someone who is of my
+07:42 kind of background, of my nurturing,
+07:46 I guess. And so I sent him an email.
+07:48 And I was just like, hey,
+07:49 you know, we both were string theorists,
+07:51 I don’t want to do string theory anymore.
+07:53 I’m thinking about AI,
+07:54 we’d love to get your advice,
+07:55 like you mentioned that
+07:56 then turn into a walk,
+07:58 it actually was supposed to be
+07:59 a 30 minute walk.
+07:60 We ended up going
+08:01 from the Sequoia offices in Menlo Park,
+08:04 all the way to Stanford, and then back.
+08:06 And so it ended up in three hours.
+08:07 He missed a lot of his meetings that day.
+08:09 So it was pretty amusing.
+08:13 And basically
+08:13 at the conclusion of the walk,
+08:15 he said,
+08:16 the one thing was for sure,
+08:17 he was saying
+08:18 you must drop out of your PhD,
+08:20 there’s way
+08:20 too many exciting things to do.
+08:22 And he kind of left me
+08:23 with the advice of,
+08:25 you should either join Twitter right now,
+08:27 because this is just after Elon
+08:29 took over.
+08:30 And he was saying,
+08:30 you know,
+08:31 only the most badass people
+08:33 are going to join Twitter right now, too.
+08:35 You could join a company of mine
+08:37 as just like a general
+08:39 glue is what he said,
+08:40 his is Foundry by the way.
+08:42 Yep.
+08:42 Or three,
+08:43 if there’s some ideas
+08:44 that you’ve been thinking about,
+08:45 you should start a company.
+08:47 And I was like, you know, very grateful
+08:49 for all the time that he spent and,
+08:51 you know, we kind of left off there.
+08:53 Beautifully, in parallel,
+08:55 Eno and I had just
+08:57 reconnected at a LangChain hackathon.
+08:60 And he was in Atlanta the weekend prior,
+09:03 and he basically got back the next day.
+09:05 So that next day,
+09:07 Eno and I got coffee,
+09:08 and I think we got coffee at noon.
+09:11 And then basically every hour
+09:13 since then, until now,
+09:15 Eno and I’ve been working
+09:16 together, talking
+09:17 constantly about code generation
+09:21 and what became Factory.
+09:23 Did you and Eno
+09:24 know each other in undergrad?
+09:27 We had like the maximal
+09:28 overlap of mutual friends
+09:30 without ever having
+09:31 had a one-to-one conversation.
+09:34 Yeah, it’s pretty funny.
+09:35 We were in eating clubs
+09:38 at the time opposite from each other.
+09:39 And we had just
+09:41 so many mutual friends
+09:42 and it really wasn’t
+09:44 until
+09:45 I moved to the Bay Area
+09:46 that we had a face to face convo and
+09:49 it was a very fruitful conversation
+09:51 for sure.
+09:52 It was intellectual
+09:53 love at first sight, you could say.
+09:57 I love that and it’s so serendipitous
+09:58 about the LangChain connection.
+09:60 How did you guys decide on, I’m curious,
+10:03 I mean, you’re both brilliant.
+10:04 And I think for a lot of founders
+10:05 starting out in AI right now,
+10:08 a lot of them
+10:08 find it hard to resist the siren call of
+10:11 training a foundation model.
+10:12 So like, how did you decide to,
+10:14 you know, build in the application layer?
+10:16 I’m curious.
+10:17 And then why software engineering?
+10:20 Yeah.
+10:21 So I think from my perspective,
+10:22 like going deep from academia,
+10:24 I think,
+10:25 throughout all the years
+10:26 of spending time on math and physics,
+10:28 the theory of beauty that I
+10:31 learned to
+10:32 be drawn to was things being fundamental.
+10:35 And, you know, spending,
+10:37 you know, time doing AI research,
+10:39 it was so clear
+10:40 that code is fundamental
+10:42 to machine intelligence.
+10:44 And so I was just naturally attracted to
+10:47 the role that it plays there.
+10:49 And I think that kind of joined
+10:51 quite well
+10:51 with Eno’s attraction to the space.
+10:55 You’ve referred to it
+10:56 a couple of times as a compound lever.
+10:58 Can you unpack that for us?
+11:00 And let us know what that means?
+11:02 Yeah, I mean,
+11:03 so there's the famous Archimedes
+11:05 quote about,
+11:07 you know,
+11:07 software, or well, his quote is rather,
+11:09 you know,
+11:09 if you have a large enough lever,
+11:11 you can move the world.
+11:12 And then I think that’s been co-opted
+11:14 for software engineering, right,
+11:15 that software is a lever upon the world.
+11:18 And for us, we see AI and in particular
+11:20 AI code generation,
+11:22 as a lever on software,
+11:25 the impacts of that
+11:26 being,
+11:27 you know, compounding, exponential.
+11:29 And sorry, Eno,
+11:29 I think I cut you off, I think you were
+11:32 maybe mentioning how you got to
+11:35 the founding inspiration for Factory?
+11:38 Oh, yeah,
+11:38 absolutely, I mean,
+11:39 I think Matan story is really indicative
+11:42 of kind of the energy at the time
+11:44 I was
+11:45 at Hugging Face working on,
+11:47 you know,
+11:47 training, optimizing,
+11:48 deploying LLMs, for enterprise
+11:51 kind of use cases,
+11:52 was actually working
+11:52 with Harrison
+11:53 on early like LangChain
+11:55 kind of integrations.
+11:57 And it was so clear
+11:58 that the work
+11:59 that was happening in open
+12:00 source was directionally moving towards
+12:03 modeling human cognition with LLMs,
+12:07 where the
+12:07 LLM was just one piece of the system.
+12:10 The idea of chains, and
+12:13 I think Harrison calls them
+12:14 cognitive architectures
+12:15 and the LangChain folks call it that.
+12:16 And seeing that happening,
+12:19 and seeing that,
+12:20 within the code gen space,
+12:22 the most advanced players
+12:24 were basically looking at autocomplete,
+12:26 it felt like
+12:26 there was a huge opportunity
+12:28 to take that to the next step.
+12:30 And take some of those lessons
+12:33 that were happening both
+12:34 in the kind of the fringe research
+12:36 and open source communities
+12:37 and applying them towards
+12:38 a kind of massive organization.
+12:42 I realize we haven’t set explicitly yet,
+12:44 what is Factory?
+12:45 So Matan, what is Factory?
+12:48 And then maybe
+12:50 what are a couple of the key
+12:51 decisions that you’ve made
+12:53 about the way Factory is built.
+12:54 And you know, for example,
+12:55 one of them is to start by benefiting
+12:58 from all the ongoing
+12:59 improvements in the foundation
+12:60 model layer.
+13:01 You know,
+13:01 one of them might be the product itself,
+13:03 but can you just say what is Factory?
+13:05 And what are some of the key decisions
+13:07 you’ve made that have shaped
+13:08 Factory today?
+13:09 Yeah, absolutely.
+13:10 So Factory is a cutting edge AI startup.
+13:15 Our mission is to bring autonomy
+13:18 to software engineering.
+13:19 What that means more concretely,
+13:22 we are automating
+13:23 tasks in the software
+13:24 development lifecycle.
+13:26 And in particular
+13:27 tasks like code review, documentation,
+13:30 testing, debugging, refactoring.
+13:33 And, you know, as I list these off,
+13:35 you’ll kind of hear quickly
+13:36 that these are
+13:37 the tasks that engineers don’t
+13:38 particularly enjoy doing.
+13:41 And that’s very much intentional, right?
+13:43 Like, obviously,
+13:44 we are doing code generation.
+13:46 And that’s really important.
+13:47 But I think,
+13:48 an equally important thing, too,
+13:50 you know,
+13:51 generating some inspirational
+13:53 and like forward
+13:54 looking demos,
+13:56 it’s also important to understand
+13:57 what engineers
+13:58 are actually spending their time on.
+13:60 And in most organizations, it’s
+14:02 not actually fun development work.
+14:04 In most organizations, they’re
+14:05 spending a lot of their time
+14:07 on things like review
+14:08 and testing and documentation.
+14:10 Normally, they’ll do
+14:11 these things way too late.
+14:12 And they’re suffering
+14:13 because they’re missing deadlines, right.
+14:15 And so our approach is, we want
+14:18 these tools
+14:19 to be useful in the enterprise.
+14:22 And so to do that,
+14:23 we need to kind of meet engineers
+14:24 where they are
+14:25 with the tasks that they are very eager
+14:27 to automate away.
+14:28 We call these autonomous systems
+14:31 "droids,"
+14:32 and like Eno was alluding to earlier,
+14:34 these are kind of,
+14:36 there’s a droid for each
+14:38 category of task.
+14:39 And in this kind of a paradigm where
+14:43 we want to frame these problems
+14:44 as games.
+14:46 It’s very convenient
+14:47 that software
+14:48 development
+14:49 has a clearly defined software
+14:51 development lifecycle.
+14:52 And so for each
+14:53 kind of category of tasks, where each
+14:55 step in the software
+14:56 development lifecycle,
+14:57 we have a corresponding droid.
+15:00 So that's kind of a first pass there.
+15:02 I guess there were,
+15:03 I think there was a second part
+15:04 of your question that I missed.
+15:07 Oh, we’ll get into the rest of it.
+15:09 Where did the name droid come from?
+15:11 It's a pretty catchy name.
+15:12 It's very memorable
+15:14 and distinct to Factory.
+15:15 Where’d that come from? Yeah, yeah.
+15:17 So I mean, keep in mind,
+15:18 you know, when Factory started, this was,
+15:21 like you mentioned about a year
+15:23 and a month ago.
+15:24 And you know, actually,
+15:25 I would have thought
+15:26 this would be different
+15:27 13 months later,
+15:29 but this is still very much the case
+15:30 where agent is synonymous
+15:33 with unreliable,
+15:35 stochastic, demoware vaporware.
+15:38 And I think something
+15:39 very important for us is
+15:41 we want to build these systems
+15:42 that aren’t
+15:43 just like cool examples of
+15:44 what is to come,
+15:46 but rather valuable today.
+15:48 And not just valuable
+15:48 for like a hacker on a side project
+15:50 but valuable to enterprise
+15:52 engineers today.
+15:53 We felt very strongly
+15:55 that agents just don't really capture
+15:58 what we’re trying to deliver.
+15:59 And so fun fact,
+16:01 we were
+16:01 originally incorporated
+16:02 as the San Francisco Droid Company.
+16:05 But upon legal advice
+16:08 and given
+16:08 I guess
+16:10 the eagerness
+16:11 with which Lucasfilm pursues
+16:13 its trademarks,
+16:13 we changed our name to Factory.
+16:17 Fair enough.
+16:17 So is it?
+16:18 Is it fair
+16:19 to say that a droid is sort of
+16:20 like a job specific autonomous agent
+16:24 that actually works?
+16:25 Is that a reasonable way to
+16:26 think about it?
+16:27 Yeah. Okay, exactly.
+16:29 You just said the words
+16:30 cognitive architecture.
+16:32 And I know my partner, Sonya Huang
+16:34 well enough to know
+16:35 that this is her love language.
+16:36 So I’m sure that Sonia’s mind
+16:38 just lit up
+16:38 with a whole bunch of questions for you.
+16:39 So I don’t want to get in the way.
+16:41 Sonya, have at it.
+16:43 We just had Harrison on the podcast,
+16:44 who talked about custom
+16:45 cognitive architectures as well,
+16:47 I guess,
+16:47 what are you doing on that front?
+16:49 And how do your implementations
+16:50 dovetail with the multi-droid strategy
+16:52 that you’re talking about?
+16:54 Yeah, absolutely.
+16:55 I mean, it’s a great question.
+16:56 And I think the way that we think about
+17:01 reasoning, and, and cognition
+17:04 within the standpoint of these systems,
+17:07 there are clearly huge
+17:10 innovations happening on
+17:12 both layers, the foundation model layer,
+17:14 as well
+17:15 as on the kind of orchestration
+17:17 or kind of application layer.
+17:19 The way that you can kind of think
+17:22 of our technical approach on this
+17:25 is that,
+17:26 you know, traditionally labs
+17:28 like DeepMind,
+17:29 and kind of some of these,
+17:30 these orgs that are really focused
+17:32 on solving problems,
+17:33 that you can model like a game,
+17:36 where you have rules and an environment
+17:39 and feedback loops,
+17:41 you can build out systems
+17:42 which model the reasoning of humans
+17:45 and even outperform them,
+17:46 they did this
+17:46 with the Alpha series of models,
+17:48 protein folding, Go, code.
+17:51 And for us, most of the reasoning work
+17:53 we do
+17:54 is similarly focused
+17:55 on kind of inference time
+17:58 reasoning, search
+17:59 through kind of decisions, and,
+18:01 and in what we kind of
+18:02 think of as you know,
+18:03 maybe it’s something of intuition.
+18:05 Maybe it’s something of planning, but
+18:09 we aren’t training foundation models yet.
+18:11 And I think that a lot of the innovation
+18:15 that’s going to happen
+18:15 at the foundation model,
+18:16 there will be things like latency
+18:19 and context window
+18:21 and kind of performance
+18:23 on some subset of tasks.
+18:24 But anytime that you need action
+18:28 and environmental feedback,
+18:29 and kind of long-term planning, it’s
+18:34 going to be really difficult
+18:35 to build a single foundation model
+18:37 that does that.
+18:38 And I think it’s really
+18:40 the application layer
+18:41 where those types of innovations
+18:43 are going to happen.
+18:44 Yeah,
+18:44 I thought the Princeton
+18:45 SWE-agent paper that came out
+18:48 last week or so.
+18:49 It was really interesting
+18:50 as an example,
+18:51 that if like,
+18:51 you can get incredible agentic reasoning
+18:54 performance on code tasks
+18:57 from small open source models.
+18:58 I thought that was really nice,
+18:60 a proof point of what you’re saying.
+19:02 We love the whole team
+19:03 that put that together.
+19:04 And the SWE-bench work,
+19:06 I think,
+19:06 is a popular benchmark in the space.
+19:09 I think it’s, you know, it’s clear that
+19:13 a lot of the efforts towards
+19:15 building these systems relies on
+19:17 not just like any one, benchmark, or eval
+19:20 or set of tasks,
+19:21 but rather
+19:22 collaboration across
+19:24 a bunch of different areas,
+19:25 whether it’s the model layer,
+19:27 whether it’s
+19:27 the tasks themselves, it’s how,
+19:29 what data are you using to evaluate?
+19:31 And ultimately,
+19:32 like the overall architecture,
+19:33 and yeah, they’re, they’re
+19:35 a really great team.
+19:36 We’re super pumped to see their work.
+19:38 Okay, last question on this?
+19:39 And then and then we’ll, I will,
+19:42 I will pause myself.
+19:43 Any favorite cognitive architectures?
+19:46 Like is it
+19:47 the tree of thought
+19:48 stuff, chain of thought stuff
+19:50 like any favorite cognitive architectures
+19:52 that you think are especially promising
+19:54 or fruitful in your field?
+19:56 Yeah, I think that’s, that’s
+19:57 a great question.
+19:58 I mean,
+19:58 I think kind of what I alluded
+19:60 to Previously,
+20:01 when you have
+20:02 almost like the game-like problem space
+20:05 where there are kind of simulatable,
+20:09 analyzable and optimizable boundaries,
+20:13 then that means that you can search
+20:15 through those decisions.
+20:17 And there’s a bunch of techniques
+20:19 like Monte Carlo tree search, language
+20:21 agent tree
+20:21 search,
+20:23 that people have talked about
+20:24 in research papers
+20:25 that I think
+20:26 are interesting approaches here.
+20:28 I think that, in my mind, there isn’t
+20:32 a singular cognitive architecture
+20:34 that makes sense for all tasks.
+20:37 And a lot of the benefit
+20:38 of breaking down the
+20:41 software development lifecycle into
+20:43 kind of
+20:44 semantically meaningful segments
+20:46 is that developers,
+20:47 when they have these workflows
+20:49 that move from one
+20:50 step to the next,
+20:51 they’ve
+20:51 kind of defined
+20:52 the boundaries of the game, so to speak.
+20:54 And so a lot of the work
+20:56 we do is figuring out
+20:57 which cognitive architecture
+20:58 or what design
+20:59 makes sense for a given task.
+21:02 You’re reminding me of the Rich Sutton,
+21:05 Bitter Lesson, search and learning
+21:07 are the two techniques that scale.
+21:09 Yeah, absolutely.
+21:10 And I think you definitely need both.
+21:13 And then, Eno, you’re
+21:15 talking about this a bit,
+21:16 how the sort of the reasoning layer
+21:18 on top of the foundation model
+21:20 is really the focus
+21:22 for a lot of the fundamental research
+21:23 and a lot of the fundamental work
+21:24 that you guys are doing.
+21:26 Matan you had a line
+21:27 a couple of months ago,
+21:29 when we were talking.
+21:30 That was and and hopefully this doesn’t
+21:33 come across as snarky,
+21:34 because it’s not meant to,
+21:35 but if something to the effect of
+21:37 their interest
+21:37 in engineers
+21:38 at OpenAI working on my margins for me,
+21:42 can you say a word about that?
+21:43 Because I thought that was, first it was
+21:45 incredibly well put.
+21:46 And then second, a pretty good insight
+21:48 in terms
+21:48 of how you’re building the business
+21:50 and really benefiting
+21:51 from the work of the foundation models?
+21:52 Can you just say a couple words
+21:53 about that? Yeah, absolutely.
+21:55 So you know,
+21:56 there are a lot of companies,
+21:58 a lot of startups
+22:00 that are, you know, pursuing
+22:01 training foundational models
+22:03 or fine tuning models.
+22:04 And then there are a lot of huge
+22:05 research labs like OpenAI,
+22:07 and Anthropic,
+22:09 they're also putting a ton of resources
+22:10 behind making these foundational models
+22:13 better, cheaper, faster.
+22:16 And from our perspective, right, like,
+22:19 we don’t want to run a race
+22:21 that’s, you know,
+22:22 not suited to our abilities, right, or
+22:24 we don’t want to,
+22:25 we don’t want to fight a battle
+22:26 that we know we won’t win.
+22:27 Training foundational models, we’re
+22:29 not going to win that battle.
+22:30 And similarly,
+22:31 I also don’t
+22:32 think it’s a particularly unique battle,
+22:34 at this point.
+22:35 I think these companies
+22:36 were incredibly unique and innovative,
+22:37 clearly based on what they’re delivering.
+22:39 But now, I think the stage is set
+22:41 in terms of training foundation models.
+22:43 And I think similarly,
+22:44 with a lot of the infrastructure
+22:46 for fine tuning and that sort of thing.
+22:48 What has not really come to fruition
+22:51 yet is actually making products with
+22:55 AI that people are using,
+22:56 there’s so much talk
+22:57 about all these foundational models,
+22:59 all this infrastructure,
+22:60 and there’s still very few real products
+23:03 that use this AI.
+23:04 You know, in the analogy that, you know,
+23:07 VCs like to talk about a lot,
+23:08 we have a ton of picks and shovels,
+23:10 and no one’s actually going for gold.
+23:12 And so the thesis behind
+23:14 how we’re building this company
+23:15 is, let’s first
+23:17 you know, use these beautiful black boxes
+23:19 that OpenAI, Anthropic and Google
+23:21 are spending billions of dollars
+23:23 and you know,
+23:24 hundreds of engineers to make, let’s
+23:26 use these black boxes,
+23:27 and build a product
+23:28 that people are actually using.
+23:30 And once we do that,
+23:31 then we can earn the right to do
+23:33 the fancier things like fine
+23:34 tuning and training.
+23:35 If you’re unable to build a product
+23:38 that people are actually using,
+23:39 with these incredible models,
+23:41 then chances are fine
+23:43 tuning and training will not save you.
+23:44 And it’s
+23:45 probably just not a good product.
+23:46 And so that’s
+23:47 kind of the approach
+23:48 that we’re taking there.
+23:49 And so,
+23:50 you know,
+23:50 we do
+23:51 you know, we do get a lot of improvements
+23:52 when new models come out.
+23:54 But yet,
+23:55 we are very much grateful
+23:56 for the work that’s being done
+23:57 at at these cutting edge research labs.
+24:01 I want to,
+24:02 you’ve said a lot
+24:03 about how what you’re doing
+24:04 is kind of like making
+24:06 AI immediately practical for engineers
+24:08 and like an enterprise setting.
+24:09 And so I want to throw another
+24:11 I think it’s a Matan quote, and I’m
+24:12 not sure if you were quoting
+24:13 somebody else,
+24:14 but you said you,
+24:15 you’re telling us last time
+24:16 and you said If
+24:17 Jeff Dean shows up in your office,
+24:18 and he doesn’t understand your code base,
+24:20 he won’t be productive.
+24:22 And unpack that for us.
+24:25 Like what does it take
+24:26 to kind of make a coding agent
+24:28 not just good for anybody
+24:29 that boots up a computer
+24:30 but somebody
+24:31 that's a full time engineer, they’re
+24:33 a real software company?
+24:34 Yeah, totally. Yeah.
+24:36 So the analogy here is that, you know,
+24:38 Jeff Dean is the analog of a really,
+24:40 really good
+24:41 foundational model,
+24:42 let’s say like GPT-6,
+24:44 with incredible reasoning, right?
+24:46 But if it comes into
+24:47 your engineering organization,
+24:48 with all your nuances,
+24:50 and all your engineering
+24:50 best practices,
+24:52 just having that good inference,
+24:54 and good reasoning is not enough
+24:56 to actually contribute
+24:57 and automate these tasks reliably.
+24:59 Some given isolated task,
+25:01 and sure you can solve, like,
+25:02 give it some,
+25:04 like LeetCode problem
+25:05 and this,
+25:05 give Jeff Dean a LeetCode problem,
+25:07 I’m sure he will solve it.
+25:08 But if you have some,
+25:10 you know,
+25:10 20 year old legacy code base,
+25:12 some part of it is dead code.
+25:14 The other part of it,
+25:15 the last person who was contributing
+25:17 to it just retired.
+25:18 And so no one else knows
+25:19 what’s going on there.
+25:20 You need a deep understanding
+25:21 of the engineering system,
+25:23 not just the code base,
+25:24 but like why you made certain decisions,
+25:27 how things are being communicated,
+25:28 what top of mind priorities
+25:30 are for the engineering organization.
+25:32 And it’s
+25:33 kind of these, less sexy,
+25:35 but incredibly important details
+25:37 that were really focused on in order
+25:39 to deliver this to the enterprise.
+25:40 What about, a lot of
+25:44 these AI
+25:45 coding companies are
+25:46 kind of focused
+25:46 on the individual
+25:47 developers productivity?
+25:49 How do you think about
+25:50 the individual level optimization versus
+25:53 maybe the system,
+25:54 the system wide optimization?
+25:57 I think the the important thing
+25:60 to think about with respect
+26:01 to the the whole org
+26:02 is, when a VP of engineering
+26:05 comes into the room,
+26:06 that it’s they’re not really focused on
+26:09 whether or not an individual completed,
+26:12 like one task an hour faster,
+26:15 they’re concerned about
+26:16 how many tasks are being completed,
+26:18 and aggregate metrics of speed.
+26:20 But if that person completed
+26:22 that task an hour faster,
+26:23 but it’s 40%, worse code, right?
+26:27 It’s churning
+26:27 code, where people are gonna rewrite
+26:29 on top of it,
+26:30 or that person took that task, and,
+26:34 you know,
+26:34 they did it an hour,
+26:35 but it took them four hours to plan that,
+26:37 and they were blocking
+26:38 five other engineers.
+26:39 And so when you start to actually add
+26:41 the nuance of what does it mean
+26:42 to be successful?
+26:44 Measuring an engineering org,
+26:46 you start to bump into
+26:47 a lot of challenges with understanding
+26:50 what needs to be improved,
+26:52 and what is a bottleneck?
+26:53 And what is just kind of a
+26:55 secondary metric.
+26:56 I think a lot of the
+26:58 initial attempts
+26:60 at making
+27:00 AI coding tools are really focused
+27:02 on first order effects,
+27:04 how quickly is somebody
+27:06 tabbing to autocomplete a statement?
+27:08 Or, you know, how quickly
+27:09 is somebody completing
+27:10 an individual task?
+27:12 But I think that at Factory,
+27:14 a lot of what we’re trying to do
+27:15 is understand
+27:16 from an engineering leader’s perspective,
+27:19 how are you measuring performance?
+27:21 And what are the metrics
+27:22 that you look at to understand, hey,
+27:24 we’re doing really
+27:25 well as an org, or,
+27:26 hey, we need to make improvements
+27:27 and targeting those
+27:29 and I think metrics like code churn,
+27:31 end to end open to merge time,
+27:33 you know, time to first answer
+27:36 within the eng org,
+27:36 all these things
+27:37 are much more impactful
+27:39 to to an organization’s
+27:42 speed of shipping code.
+27:43 And so that’s
+27:44 kind of how we think about it.
+27:46 I think this really ties
+27:47 into what Eno was just saying
+27:48 quite well, which is,
+27:50 you know,
+27:51 the clearly
+27:52 we were talking about products
+27:53 earlier as well, like,
+27:53 clearly the AI product
+27:55 that has penetrated the enterprise
+27:56 the most is Copilot, right?
+27:59 Unfortunately,
+28:00 with a tool
+28:01 like Copilot
+28:01 the things that are kind of the metrics
+28:04 that are really held up
+28:05 as success
+28:06 are things like autocomplete
+28:08 acceptance rate.
+28:09 And the problem is exactly to your point,
+28:11 if you’re a CTO or VP of engineering,
+28:13 how do you then go to the executive team
+28:15 and say, hey, look, our autocomplete
+28:17 acceptance rate is this high.
+28:18 They don’t know what that means.
+28:19 They don’t understand
+28:20 how that translates into,
+28:21 like business objectives, right.
+28:23 And also,
+28:24 you know,
+28:24 Eno was alluding to this, there’s
+28:26 kind of
+28:27 a hidden danger
+28:29 to some of these autocomplete tools,
+28:30 which is,
+28:31 orgs that use tools like this
+28:33 end up
+28:33 increasing their code
+28:35 churn by anywhere from 20 to 40%.
+28:38 There’s some studies that look into this.
+28:39 There’s some problems with these studies.
+28:41 But you know, directionally
+28:42 what’s clear
+28:43 is that,
+28:44 as the percentage of
+28:45 AI generated code increases, code churn,
+28:48 if you’re not, you know,
+28:50 doing anything different
+28:51 in your review process,
+28:52 code churn is going to go up.
+29:02 If we
+29:02 look at things like
+29:03 how fast are you completing your cycles,
+29:05 what is your,
+29:06 you know, code
+29:07 churn across the org, or across
+29:09 these different repos that divides out
+29:12 these
+29:13 kind of like,
+29:13 a smaller like intermediate metrics,
+29:16 and gives you a sense of,
+29:17 hey, we are shipping
+29:18 faster, and we’re churning less code.
+29:22 So that’s really how we talk about this
+29:25 with these engineering leaders.
+29:26 At the end of the day,
+29:27 the three main axes we look at
+29:30 are saving engineering
+29:32 time, increasing
+29:33 speed, and improving code quality.
+29:37 So these are three and again,
+29:39 there’s kind of different complexity
+29:42 of metrics
+29:42 for different parts of the org.
+29:44 These are the three that we discussed
+29:45 with engineering leaders,
+29:47 but we want to arm them with information
+29:48 when they’re talking to let’s
+29:49 say, their CFO.
+29:50 And so really, we kind of
+29:52 break that down into one main metric,
+29:56 which is engineering velocity.
+29:57 And that’s really what
+29:58 all of these droids are targeted
+29:60 towards is increasing
+30:01 engineering velocity,
+30:04 Let me
+30:05 try to recap a couple
+30:07 parts of the story thus far.
+30:09 So in some ways,
+30:11 this is a compound lever,
+30:13 meaning AI is a lever on software
+30:15 software is a lever on the world.
+30:17 And so building
+30:18 an autonomous software
+30:19 development system
+30:20 is one of the most impactful things
+30:22 you can possibly do with your lives,
+30:23 which is pretty cool.
+30:25 There are a few unique angles
+30:26 to the approach that you guys have taken
+30:28 and maybe not unique,
+30:29 but distinctive,
+30:30 you know, one of which is the decision
+30:31 to write on top of the foundation models,
+30:33 which means that you get to benefit
+30:34 from all their ongoing innovation.
+30:36 It also frees
+30:37 you up to really focus on the reasoning
+30:39 and the agentic behavior
+30:40 on top of those foundation models,
+30:43 which is part of the reason
+30:44 why you can deploy
+30:46 your product
+30:47 as a series of droids
+30:48 which are basically job
+30:49 specific, autonomous agents
+30:51 that do something like test
+30:53 or review end to end in a way
+30:55 that is practically useful
+30:56 to an engineering organization.
+30:59 And instead of focusing
+31:00 on just producing
+31:01 more code, you’re
+31:02 actually focused on
+31:02 kind of the system wide output,
+31:04 which requires you
+31:05 to have really detailed context around,
+31:09 not just the codebase,
+31:10 but all of the systems and processes
+31:12 and kind of nuanced
+31:14 around the entire environment.
+31:16 And having done
+31:17 so you can increase,
+31:17 you know, velocity for an organization.
+31:20 I think that’s a bunch of the story
+31:22 that we’ve talked about so far.
+31:24 Let's talk a bit about the results.
+31:26 Are there any good sort of
+31:28 customer examples you can share of,
+31:30 you know, Factory in action
+31:31 and the results that you’ve been able
+31:33 to have for people?
+31:36 Yeah, so I think some of the
+31:37 some of the main things
+31:38 that we’re seeing,
+31:38 like across the board, and we’re
+31:40 not super public
+31:42 on case studies just yet, but
+31:45 something that we see
+31:46 across the board is,
+31:48 you know,
+31:48 I think our average
+31:49 cycle time increase is around 22%.
+31:53 On average, we are lowering code churn
+31:56 by 13%.
+31:59 Tools, like, I guess, we
+32:00 haven’t even gotten into the specific
+32:02 droids,
+32:03 but tools like the test droid,
+32:05 end up saving engineers,
+32:07 like around 40 minutes a day,
+32:10 which is pretty exciting.
+32:11 And yeah,
+32:12 I think,
+32:13 kind of
+32:13 going back to what we were talking about
+32:15 in terms of benchmarks,
+32:17 one of the most exciting things
+32:18 about having 1000s of developers
+32:20 who are actually using these tools,
+32:22 is that
+32:23 we get this live set of benchmarks,
+32:27 and we get evals and feedback
+32:28 from these developers
+32:30 about how these droids are performing.
+32:32 And so, you know,
+32:33 like I mentioned, we’re
+32:34 huge fans of SWE-bench
+32:36 and what that’s done,
+32:37 kind of for the general community
+32:39 and giving people
+32:41 like an open source benchmark
+32:42 to really compare these models.
+32:44 But you know, strategically for us,
+32:46 having this deployed in the real world
+32:48 has allowed us to dramatically
+32:50 increase our iteration speed
+32:52 in terms of quality for these droids.
+32:54 What, what have you guys learned a lot,
+32:56 since you have a bunch of people
+32:57 using this in the real world,
+32:58 what have you learned along the way?
+32:59 And have there been any, any
+33:01 big surprises?
+33:03 Engineers love ownership.
+33:06 Yeah, alright, say more.
+33:08 Absolutely.
+33:09 I mean, I think it really is
+33:11 that, you know, when you’re
+33:13 building an autonomous product,
+33:15 and the goal is to take,
+33:17 you know, take over a task,
+33:20 you have to deal with developers
+33:22 who are fickle,
+33:23 for good reason, that they’re
+33:24 constantly bombarded
+33:25 with developer
+33:26 tools, and, and automations.
+33:27 And anything that’s
+33:29 kind of being enforced from a top down
+33:32 perspective needs to be very flexible.
+33:35 And so making sure
+33:36 that, you know,
+33:37 when we’re building these products,
+33:38 we think about
+33:39 what are the different preferences
+33:41 or ideas
+33:43 that people have
+33:44 about how this task should be done,
+33:46 and then building
+33:46 as much flexibility into that.
+33:48 I think a great example of this is
+33:51 the review process.
+33:53 Everybody has a different idea
+33:55 of what they want
+33:56 code review to look like.
+33:57 Some people want superhuman linters.
+34:00 Some people want,
+34:02 you know, really deep
+34:03 kind of analysis of the code change.
+34:06 Some people don’t even like code review.
+34:09 They get annoyed by it entirely.
+34:11 Matan has a great quote about
+34:14 what code reviews like, I don’t know,
+34:16 if you want to share that. Yeah, yeah.
+34:18 So I mean, in general,
+34:19 we've kind of internally realized
+34:20 that code, the code review process
+34:24 is very much like going to the DMV,
+34:27 in that no matter how clean the DMV is,
+34:29 no matter how fast the line is.
+34:31 No one loves code review, right?
+34:33 Because at the end of the day,
+34:34 someone is criticizing you.
+34:35 Someone’s going in and looking out,
+34:36 you know what you did,
+34:37 and saying better ways
+34:38 you could have done it.
+34:39 So in general,
+34:40 the review process, it's
+34:41 the type of thing
+34:42 that as an engineering leader, it’s
+34:44 great to see like moving the needle
+34:46 on these organization wide metrics.
+34:48 As a developer, it’s
+34:50 maybe not the most fun thing.
+34:51 Whereas something like
+34:52 the test droid, right,
+34:53 which is generating tests for you
+34:55 so you don’t spend hours
+34:56 writing your unit tests.
+34:58 That’s incredible as a developer,
+34:59 but you know,
+34:60 for the engineering leader, it’s
+35:02 slightly less obvious
+35:04 how that connects
+35:05 directly to business metrics.
+35:06 So I think this is part of why
+35:09 it’s important for us
+35:09 to have this fleet of droids.
+35:11 Because we’re not just building this
+35:13 for the engineering leader,
+35:15 nor are we just building this
+35:16 for the developer,
+35:17 but rather
+35:17 for the engineering organization
+35:18 as a whole.
+35:20 Part of what I heard there was that
+35:21 I don’t have to go to the DMV anymore.
+35:23 You can just send me
+35:23 my driver’s license in the mail.
+35:25 Yeah, basically.
+35:26 Yeah.
+35:27 Well, that's a good way to sum it up.
+35:29 Have you guys seen Pat drive?
+35:30 I don’t think they should be sending him
+35:31 a driver’s license.
+35:32 There’s Waymo for that.
+35:37 Speaking of Waymo,
+35:38 how far
+35:40 out do you think we are
+35:41 from having fully autonomous
+35:43 software engineers?
+35:44 Like if you thought about Waymo,
+35:45 like it felt like
+35:46 it was gonna come really fast.
+35:47 And then it felt like
+35:48 we went through a valley of despair.
+35:50 And now the future is coming out
+35:51 super fast again, like,
+35:53 which inning
+35:54 are we in
+35:55 for the kind of fully autonomous software
+35:57 engineer cycle?
+35:59 And when do you think we’ll
+36:01 have fully autonomous Jeff Deans?
+36:04 This is a great question.
+36:05 And I think one that we get,
+36:06 we get a lot,
+36:07 I think one thing that’s worth
+36:08 is kind of like reframing what
+36:11 a fully autonomous software
+36:13 engineer will do.
+36:15 There have been many moments where
+36:17 technical technical progress
+36:18 has led to kind of, you know,
+36:22 labor dynamic changes, and increases
+36:25 in the level of abstraction
+36:26 in which people work.
+36:28 And I think that historically,
+36:30 enabling people
+36:31 to operate
+36:31 or impact
+36:33 the construction of software with,
+36:35 you know,
+36:36 at a higher level of abstraction
+36:37 with less domain knowledge
+36:39 has generally led to huge increases
+36:41 in demand for software.
+36:43 And I think that what we’re seeing with
+36:47 the the customers we’re
+36:48 working with today,
+36:49 is that when you free people up
+36:51 from these types of kind
+36:53 of secondary tasks
+36:54 like generating unit tests
+36:56 that map to a pull request, or,
+36:58 or writing and maintaining
+36:60 documentation on a code base
+37:02 that 95% of people know,
+37:04 but that documentation comes into play
+37:06 for that 5%, that doesn’t,
+37:07 they start to shift their attention
+37:10 to higher level thinking,
+37:12 they think about orchestration,
+37:14 they think about architecture,
+37:16 they think about, you know,
+37:17 what is this PR actually trying to do,
+37:19 and less about,
+37:20 did they follow the style guide.
+37:22 did they follow the style guide.
+37:23 I think that what we’re seeing is that
+37:25 this is happening
+37:25 today, already because of AI tools.
+37:28 And over time,
+37:29 as they get better and better,
+37:31 we’ll see that shift towards
+37:34 software engineers becoming a
+37:36 little bit
+37:37 more like architects
+37:38 or designers of software.
+37:40 And so in the future,
+37:42 I think there’s gonna be 10 times
+37:43 more people involved
+37:44 in software creation,
+37:45 where every individual has the impact
+37:48 of maybe 100
+37:48 or 1000 people,
+37:50 it just may not look exactly like
+37:52 the individual steps
+37:54 of the development
+37:55 lifecycle that we see today.
+37:57 You know, that reminded me of a quote
+37:58 that you guys have on your website,
+37:60 which that, and I’m gonna,
+38:02 I’m gonna read this,
+38:03 it says, “we
+38:05 hope to be a beacon of the coming age
+38:06 of creativity
+38:07 and freedom
+38:08 that on-demand intelligence will unlock.”
+38:11 And that really resonated with me
+38:13 when I read it,
+38:14 because it sort of implies
+38:15 a very positive
+38:16 and optimistic
+38:18 view of the world
+38:19 that we’re heading into.
+38:20 I wonder if you guys want to say
+38:22 a couple more words on that or,
+38:24 or sort of what you think
+38:25 the sort of relationship
+38:27 between man and machine
+38:28 will be in the fullness of time.
+38:30 This kind of goes back to our
+38:31 original approach,
+38:32 which is,
+38:33 you know,
+38:34 it’s very tempting to go
+38:35 after the sexiest parts
+38:37 of software
+38:38 development in particular,
+38:39 you know, like,
+38:40 building an app from scratch, right.
+38:42 But that’s also the sort of thing
+38:44 that will make a developer defensive,
+38:45 because that’s the part
+38:47 that they enjoy, right?
+38:48 And so in a world
+38:49 where you automate the development,
+38:51 then an engineer is just left reviewing,
+38:53 testing and documenting,
+38:54 which is like a depressing hellscape,
+38:56 if you were to ask any,
+38:58 any software engineer, right?
+38:59 So for us, it’s very important
+39:01 that we position ourselves
+39:03 aligned with the developer
+39:05 instead of you know,
+39:06 going into these organizations
+39:07 and being antagonistic with them, right?
+39:09 Like,
+39:09 by going in and automating the things
+39:11 that we don’t want to do, or rather,
+39:14 by going in there,
+39:15 and automating the things that developers
+39:16 don’t want to do,
+39:17 we are positioning ourselves with them.
+39:20 Right?
+39:20 Five years from now,
+39:21 I don’t think anyone really knows
+39:23 what software engineering will be,
+39:26 or even if it’ll be called that anymore,
+39:28 you know, to this point, you might be,
+39:29 you know, you’re
+39:30 like a software
+39:31 curator, or cultivator or orchestrator.
+39:34 But by positioning ourselves
+39:35 this way, with the developer,
+39:37 wherever that role goes, we will be there
+39:40 side by side,
+39:42 to allow them
+39:43 to have this higher leverage.
+39:44 And so yeah,
+39:45 completely agree, to your point,
+39:47 this is one of the most incredible things
+39:50 that is going to happen to
+39:51 you know, our ability
+39:52 as humans to create.
+39:54 And I think for us, it’s
+39:55 just incredibly important
+39:56 that we are aligned
+39:58 with the users of this product.
+40:00 and not,
+40:01 you know, antagonistic,
+40:02 trying to rule it to replace them.
+40:04 How far do you think we are
+40:05 from having these reliable,
+40:08 kind of
+40:09 maybe call it intern level engineers?
+40:11 Is it a year out?
+40:12 Is it already here today?
+40:12 Is it a decade out?
+40:15 I think I mean, it depends
+40:17 on on on the the task first, for things
+40:21 like code
+40:22 review and testing,
+40:23 I think we’re here, we’re
+40:24 already there,
+40:25 where we’re able
+40:27 to operate
+40:27 at a level that,
+40:29 you know, for many,
+40:30 or like, there’s feedback
+40:31 from one organization
+40:32 that we got, in particular,
+40:33 that where we brought them
+40:35 the review droid.
+40:36 And, this was pretty early on.
+40:38 And they said,
+40:39 you know,
+40:39 the review droid
+40:40 is the best reviewer on our team.
+40:43 And I think that every once in a while,
+40:45 you kind of hear something like that,
+40:47 and it gives you a lot of confidence
+40:49 that directionally we’re
+40:50 definitely moving towards
+40:51 something that is valuable.
+40:52 And for tasks like, you know, hey, we’ve
+40:57 got to
+40:58 decompose our mono repo
+40:60 into a ton of micro services.
+41:01 And you know, that type of thing
+41:03 that you might arm
+41:04 like a staff level engineer, and hat
+41:07 with an armed
+41:08 with a team of engineers under them,
+41:10 I think that we won’t see like
+41:13 a binary moment of oh, well,
+41:14 now this is done by an AI,
+41:16 I think that their responsibilities
+41:18 will slowly start
+41:19 to get decomposed
+41:20 into the tasks
+41:21 of planning and implementing
+41:25 the refactor going,
+41:26 you know, one file at a time.
+41:28 And when they start handing off
+41:30 those sub tasks to AI,
+41:32 I think
+41:32 that role will will kind of start
+41:35 to be called something different,
+41:36 because when you’re
+41:37 no longer as focused on
+41:38 what is the individual line of code
+41:40 that I’m writing tomorrow,
+41:41 and more focused on
+41:43 what is our mission,
+41:44 or what is our goal,
+41:44 as an engineering team, you know,
+41:47 you really are more of an architect
+41:49 and less of an implementer.
+41:51 And concrete example of, you know, us
+41:54 eating, eating the,
+41:54 the food that we’re creating, right,
+41:57 we were dreading for months
+41:58 creating a GitLab integration,
+42:00 some of our customers use GitLab,
+42:02 we want to build cool AI stuff,
+42:03 we didn’t want to spend time
+42:04 building a GitLab integration,
+42:06 we had our code droid, fully spec out
+42:10 what the steps of building
+42:11 a GitLab integration would look like.
+42:13 And then it actually implemented
+42:15 every one of these sub tickets,
+42:16 we were of course, monitoring it
+42:18 just to make sure it wasn’t
+42:19 breaking anything.
+42:20 And we now have a GitLab integration.
+42:22 And so
+42:23 this is something
+42:24 that we genuinely were considering
+42:26 getting an intern to do.
+42:27 Because we just,
+42:28 we were just,
+42:29 we really didn’t
+42:29 want to do a GitLab integration.
+42:31 Shout out to GitLab?
+42:34 Yeah.
+42:36 But like,
+42:37 materially, the droid saved us,
+42:39 like hours of time,
+42:41 none of us had built a Git
+42:42 lab integration before.
+42:43 And also, it’s just like,
+42:44 relatively complicated
+42:45 to like, abstract away
+42:47 the like source code manager.
+42:49 And so
+42:50 that was materially intern work
+42:53 that we did today.
+42:54 So to answer your question, it is now.
+42:57 It’s just kind of slowly
+42:59 climbing up more and more
+42:60 the level of complexity of these tasks.
+43:03 The future’s really here.
+43:05 I have a question about competition,
+43:07 and not specifically
+43:08 the competition in your space.
+43:09 But I think how you more generally
+43:11 think about navigating competition,
+43:13 I think you guys are the type of founders
+43:15 that a lot of companies
+43:17 in the application
+43:18 layer really look up to,
+43:19 because you’re
+43:20 insanely ambitious,
+43:22 building a real company of meaning.
+43:25 You’re making a lot of
+43:26 smart decisions, like,
+43:27 you know,
+43:27 riding on other people’s models.
+43:31 I think the obvious kind of, like,
+43:33 scary thing, scary,
+43:35 kind of other side of that is,
+43:37 you know,
+43:37 every other competitor in
+43:39 the space has access
+43:39 to the same models as you.
+43:41 And so I’m curious
+43:42 how maybe just mentally
+43:44 and then I guess, overall,
+43:45 you think about approaching
+43:47 competition in this space?
+43:49 Do you think it’s more elevated in
+43:51 the application layer
+43:52 AI market, than other startup
+43:55 markets historically?
+43:56 And how do you think
+43:56 about navigating that?
+43:57 Totally.
+43:58 Yeah, I think that’s a great question.
+43:59 I think that’s really,
+44:01 you know, our approach to
+44:02 that has defined
+44:03 how we’ve built out this team.
+44:05 And really,
+44:06 I think there are a lot of ways
+44:07 you can respond to competition
+44:10 and like mentally,
+44:11 kind of
+44:12 justify your existence
+44:13 versus competitors.
+44:15 I think for us, on the team side, we’re
+44:19 just a team of people
+44:20 who are more obsessed
+44:23 than anyone else out there.
+44:25 And I think that is like
+44:26 something that just has
+44:27 the compounding benefit of
+44:29 I am willing to bet everything
+44:31 that the people that we have assembled
+44:33 are just more obsessed than everyone else
+44:35 working in this space.
+44:36 I think a kind of a corollary to that is,
+44:40 the only way you can win is by
+44:42 executing faster.
+44:45 Everything else is all
+44:46 just like sprinkles on top.
+44:47 The only way you can really
+44:49 win is by executing faster
+44:51 and being more obsessed.
+44:52 And that is what our team is and I think
+44:56 I guess one last thing is
+44:59 having a group of people who respond
+45:02 to kind of external pressures,
+45:04 as more motivating.
+45:06 And,
+45:08 you know, responding in that way,
+45:10 also being very mission driven, right?
+45:13 Like,
+45:13 if you know, a competitor
+45:14 that does something big
+45:15 and then suddenly you’re deflated?
+45:17 Well,
+45:17 if you’re truly obsessed
+45:18 with a mission, it’s irrelevant, right?
+45:20 If you’re truly obsessed
+45:21 with our goal of bringing autonomy
+45:23 to software engineering,
+45:24 all of that is noise.
+45:25 What we need to do is execute
+45:27 as fast as possible
+45:28 in this direction that we’ve set and
+45:31 the rest will sort itself out.
+45:33 Love it. Really well said.
+45:35 Maybe a few final questions
+45:37 to close this out.
+45:38 If you weren’t
+45:39 solving the kind of autonomous software
+45:41 engineering problem,
+45:43 what problem would you be solving?
+45:45 I guess I’d have to be banned
+45:46 from coding agents for this.
+45:49 Perhaps robotics?
+45:50 I find robotics very interesting.
+45:52 I think a lot of the time the team here,
+45:54 a lot of the team comes from backgrounds
+45:56 working on autonomy and robotics.
+45:58 And we talked about how
+45:60 what we’re building
+46:01 really kind of resembles
+46:02 that in many ways.
+46:03 I think
+46:03 multimodal function-calling
+46:05 LLMs are here, and the robotics company
+46:09 with decreased hardware costs
+46:10 that are coming out,
+46:11 are clearly making progress.
+46:12 So it feels like a fun area.
+46:14 So you'd be making physical droids?
+46:17 Exactly.
+46:18 It's on the roadmap.
+46:20 How about you, Matan?
+46:22 Yeah,
+46:23 I think this is one of my blind spots
+46:26 where I just suffer
+46:27 from severe tunnel vision.
+46:29 I genuinely cannot fathom
+46:31 working on anything else.
+46:32 I’m just genuinely obsessed
+46:35 with our mission
+46:36 to bring autonomy
+46:37 to software engineering.
+46:38 If I wasn’t working on this, I’d
+46:39 figure out a way to work on this.
+46:40 I know that’s a cop out answer.
+46:42 But I genuinely can't,
+46:43 It does not compute.
+46:45 So that is, in fact, a cop out answer,
+46:47 but it is a fantastic cop out answer.
+46:49 So we will take it.
+46:51 One of the questions
+46:52 that I always like to ask is
+46:53 who do you admire
+46:54 most in the world of AI,
+46:56 and tell you what Matan
+46:57 because of your background
+46:58 will let you look at the superset of AI
+47:01 and physics, if you like.
+47:04 I would say
+47:05 there’s some sort
+47:05 of name that comes to mind
+47:06 when you say that is Jeff Dean.
+47:08 I think
+47:10 we mentioned him
+47:10 earlier already, actually.
+47:12 But you know, his impact and research
+47:14 is one huge side of that.
+47:16 I think TensorFlow and
+47:18 the kind of the work
+47:20 that that whole team has done at Deep
+47:22 Mind and related.
+47:23 But I’ve also heard he's a nice guy.
+47:25 And I think that the thing is, having
+47:28 responsible leadership in the
+47:33 AI community,
+47:33 I think is really important,
+47:35 and there’s
+47:35 a lot of folks who are on Twitter
+47:37 all the time, you know, clashing.
+47:39 And I think that seeing folks
+47:41 who are outside of that side of it,
+47:44 I think is pretty great.
+47:46 Yeah.
+47:46 And I think
+47:47 not to
+47:48 not to give you guys a double cop out.
+47:50 But at Factory,
+47:51 we very highly emphasized collaboration.
+47:55 And I think like in AI in particular
+47:58 everything has been done
+47:59 by groups of people.
+48:01 And so it’s
+48:01 hard to really think
+48:02 about one individual.
+48:04 I think in physics there are a lot
+48:05 more like solo geniuses
+48:06 doing something crazy.
+48:08 But I think a team like
+48:09 recently that I think
+48:10 we really admire at Factory is Mistral,
+48:13 and how kind of quickly they basically
+48:16 came into open source
+48:18 and brought both those models
+48:20 to basically the cutting edge
+48:21 in a super short amount of time.
+48:23 And I think,
+48:25 yeah, I speak not just for myself,
+48:26 but I think all of our team
+48:27 really admires
+48:28 both the mission that they have
+48:30 and the speed
+48:30 with which they executed on that.
+48:33 So yeah, I would say Mistral.
+48:35 Awesome.
+48:36 Alright, last question,
+48:37 if you had to offer one piece of advice
+48:40 to founders or would-be
+48:42 founders, hoping to build in AI.
+48:44 What piece of advice
+48:45 would you offer them?
+48:47 We are in a land of picks and shovels.
+48:50 And no one has struck gold yet clearly.
+48:53 So I’d say go for gold.
+48:56 I would say
+48:57 try to build something
+48:58 that you think is going to get
+49:00 10x Better if OpenAI releases GPT-6 or 7.
+49:04 I think internally
+49:06 we think of our product
+49:07 as something that will multiply in value
+49:09 and uniqueness
+49:10 when new models are released.
+49:12 And it’s
+49:14 I think, for us, it’s
+49:15 always like we’re
+49:16 listening
+49:16 to the OpenAI announcement yesterday.
+49:19 And you know, everyone is excited,
+49:21 everyone’s pumped
+49:22 when a new model comes out
+49:23 when open source does something great.
+49:25 If you’re
+49:25 stressing about new product
+49:28 releases or demos,
+49:29 it might mean it’s worth
+49:31 adjusting your product strategy.
+49:35 Congratulations on launching
+49:36 Factory and beating
+49:38 state of the art on SWE-bench
+49:39 by such a wide margin last week.
+49:40 It’s incredible.
+49:42 Just for our audience,
+49:43 can you maybe quickly
+49:43 recap what SWE-bench is?
+49:45 Yeah, absolutely.
+49:46 And thank you all credit
+49:48 goes to the Factory team
+49:50 for making it happen.
+49:51 SWE-bench is a benchmark designed
+49:54 to test an AI systems ability to solve
+49:58 real world and software
+49:59 engineering tasks.
+50:01 So it’s around 2300 issues
+50:03 which were taken from contributions
+50:06 made to 12, popular
+50:08 open source Python projects.
+50:10 And typically,
+50:11 these issues are bug
+50:13 reports or unexpected behavior
+50:15 that people reported
+50:16 on these open source projects.
+50:18 And the idea is, you know, all of these
+50:22 real world issues
+50:24 were addressed by other humans.
+50:26 And so you have the ground truth of what
+50:28 a human software engineer would do
+50:30 when faced with an issue.
+50:32 And the benchmark is trying to test,
+50:35 can your AI system
+50:37 go through each of these issues,
+50:39 and generate
+50:40 a code change that properly addresses it,
+50:43 and comparing it to the human solution
+50:46 with tests that a human wrote.
+50:49 And so there’s a lot of asterisks,
+50:51 but it is a somewhat useful approximation
+50:54 of your system’s ability
+50:55 to take natural language,
+50:57 and then turn that into code.
+50:59 And I think the previous
+51:00 high watermark on
+51:01 SWE-bench was 14%
+51:03 or so from cognition, Devin
+51:04 until last week,
+51:06 and you put up a really impressive
+51:08 new result at 19%,
+51:09 which is such a wide margin.
+51:11 This is such a competitive field
+51:13 right now.
+51:14 And unlike such a competitive benchmark
+51:15 that everyone is trying to beat,
+51:17 which makes you know,
+51:18 your result even more impressive.
+51:20 Could you maybe share a little bit
+51:21 about your approach?
+51:22 And how’d you get there? Definitely.
+51:25 And one of the main reasons
+51:26 we were instead in SWE-bench
+51:28 is that there’s
+51:29 a lot of companies and research labs
+51:30 that made submissions.
+51:31 So you can see Microsoft
+51:32 Research, Amazon, IBM, ByteDance.
+51:35 And I think that’s a testament
+51:38 to the suite bench team’s effort
+51:40 and making this benchmark
+51:41 a household name, which is great.
+51:43 I think one of the reasons
+51:45 we were able to out-compete
+51:46 well funded tech giants and other AI code
+51:50 gen startups
+51:51 is that we’re
+51:51 honestly not building the code
+51:53 droid for a benchmark,
+51:55 but rather to support
+51:56 real world customers.
+51:58 And we’ve always said
+51:59 customers are the best benchmark.
+52:01 And I think there’s
+52:02 some great evidence
+52:03 for the success of that approach.
+52:05 There’s a few areas
+52:06 our technical report goes into around
+52:08 planning and task
+52:09 decomposition, environmental
+52:11 grounding, codebase understanding.
+52:13 But overall,
+52:14 I think that the thing that matters
+52:16 most when your team’s working on
+52:19 these types of general software
+52:21 problems, is kind of
+52:22 like what is the northstar?
+52:23 What are you iterating against?
+52:25 And so having kind of a real world data
+52:28 set can make a huge difference.
+52:31 And we just had Harrison on the podcast
+52:32 last week
+52:33 actually talking
+52:34 about cognitive architectures.
+52:35 To what extent did
+52:36 prompt engineering
+52:37 and cognitive architectures
+52:38 play a role here and your results?
+52:40 I would characterize our research
+52:42 as continuously pushing the question of
+52:44 how can we model
+52:45 each droid’s architecture
+52:47 to more closely resemble
+52:49 the human cognitive process
+52:51 that takes place during the task?
+52:53 It’s funny,
+52:54 we actually have internally
+52:55 been referring
+52:56 to the flow of data
+52:57 and LLM calls as the droid
+52:59 to architecture, basically,
+53:00 since the first droid.
+53:02 And when Harrison first wrote
+53:03 about cognitive architectures,
+53:05 it really became apparent that
+53:07 that concept, cognitive
+53:08 architecture, is a great mental model
+53:11 for how to characterize the systems
+53:14 that have complex LLM
+53:15 interactions and data flow.
+53:18 And so,
+53:19 you know, for us,
+53:19 I think the meta problem
+53:21 of designing
+53:22 a good cognitive
+53:23 architecture is balancing flexibility
+53:27 with rigidity in the actual workflow.
+53:31 You want very rigid
+53:32 entry points, and certain
+53:34 common trajectories, like error recovery
+53:38 need to be really consistent.
+53:39 But then
+53:40 you want the flexibility in the dynamics
+53:43 during the majority of the
+53:44 problem solving process.
+53:49 But I think it’s one of the
+53:50 most interesting problems
+53:52 when building
+53:53 the droids is
+53:53 how do you know, kind of
+53:55 when to add structure
+53:57 and when to let the droid
+53:59 so to speak handle it? Really cool.
+54:02 So every droid has its own
+54:03 cognitive architecture
+54:04 that mirrors as closely as possible
+54:06 with a kind of human
+54:07 equivalent of that task would be doing?
+54:10 Yeah, exactly.
+54:12 19% is amazing
+54:14 compared to prior state of the art.
+54:16 It also still feels quite far away from,
+54:18 you know,
+54:19 reliable code droids
+54:21 that people will just trust
+54:22 to run wild in their codebase.
+54:24 What do you think
+54:26 is the threshold at which engineers
+54:27 will actually start
+54:28 to use these code droids
+54:29 reliably and just,
+54:30 you know, let them run?
+54:32 Are we there yet?
+54:33 Or what is the threshold?
+54:35 Yeah, for sure.
+54:36 I think that one thing to keep in mind
+54:39 is that the percentage on a benchmark
+54:43 like SWE-bench
+54:44 is kind of like one of many
+54:46 possible measures,
+54:47 because
+54:48 the answer really is
+54:49 that they are already
+54:50 using it in production.
+54:51 But the use cases
+54:53 that might kind of highlight
+54:55 what the code droid is designed for,
+54:57 may not necessarily have a ton of overlap
+55:00 with what is tested in a given benchmark.
+55:04 So if you take human eval
+55:06 or some of the other coding benchmarks,
+55:08 that maybe tests your ability
+55:09 to pass a coding interview,
+55:11 but it doesn’t really test
+55:12 like your real world
+55:13 software engineering.
+55:14 SWE-bench I think actually does test
+55:16 a lot of real world software engineering.
+55:18 But in the particular context
+55:20 of debugging or kind of,
+55:22 you know, unexpected
+55:24 behavior identification,
+55:25 there are some feature requests,
+55:27 and there are
+55:28 a lot
+55:29 of kinds
+55:30 of not explicitly debugging
+55:31 style problems.
+55:32 But tasks like a migration, or refactor,
+55:36 a modernization that takes place over
+55:38 multiple changes
+55:39 that oftentimes have humans
+55:41 very heavily collaborating,
+55:44 are really a pretty different problem.
+55:46 And our internal evaluations
+55:48 are much more focused
+55:49 on those customer tasks.
+55:51 And so we have way
+55:52 higher reliability rates,
+55:53 for like those styles of tasks.
+55:57 And I also think that
+55:58 a huge part of the role of human
+56:02 AI interaction
+56:03 design is acknowledging where the systems
+56:07 are currently falling short,
+56:08 and building into your interaction
+56:10 pattern accommodation
+56:12 for the weak points of the AI system.
+56:14 This isn’t going to 100% of the time,
+56:17 perfectly capture
+56:19 the intent of what you were doing.
+56:20 So how do you kind of
+56:21 have failure trajectory handling?
+56:24 How do you introduce the ability
+56:26 to kind of edit midway, as the code droid
+56:29 is working to observe
+56:31 and have kind of some interpretability
+56:33 into why a code droid
+56:34 is making a decision.
+56:35 So that when it does something,
+56:37 the human being actually can step in,
+56:40 or at least understand what went wrong.
+56:42 And so I think that
+56:43 those allow you to say,
+56:45 well,
+56:45 we may not be at,
+56:46 you know, 100% on someone like SWE-bench,
+56:48 but we can still use this
+56:51 and get kind of real productive gains,
+56:53 in the meantime. Totally makes sense.
+56:55 And I hear you that SWE-bench
+56:57 is not the be-all, end-all.
+56:58 But since you have a good
+57:00 crystal ball into this space,
+57:03 do you have a prediction,
+57:04 at what point we’ll
+57:05 get to 80 or 90% on SWE-bench?
+57:07 I think that the
+57:09 pace right now is really, really fast.
+57:12 There’s a kind of
+57:14 interesting question of,
+57:16 will we get to 80 to 90%, on SWE-bench
+57:20 or will there
+57:20 be a better benchmark
+57:22 that kind of comes out before
+57:25 we can really meaningfully start
+57:27 hill climbing past like the 50-60%.
+57:29 There’s
+57:30 honestly a lot of tasks and SWE-bench,
+57:33 which are, I wouldn’t say impossible,
+57:37 but it almost
+57:38 feels like getting them right
+57:40 would almost only indicate
+57:41 that you’re cheating.
+57:42 It’s like they test for really,
+57:44 really specific claims,
+57:46 or a string match.
+57:48 And so I think that before
+57:50 we see 80 to 90%, on SWE-bench,
+57:52 what we’ll
+57:53 actually see is
+57:54 kind of like SWE-bench
+57:55 two and three, bench
+57:56 three that focuses on
+57:58 trying to think deeply about
+57:60 how can we evaluate when,
+58:03 you know, a piece of code is correct,
+58:06 but also kind of ideal or useful
+58:10 for a given codebase.
+58:12 The SWE-bench folks
+58:13 actually have a lot
+58:14 of really great thoughts
+58:15 about how to make
+58:16 these benchmarks better,
+58:17 but I think probably in the next two,
+58:19 three years, we’ll see that.
+58:21 Yeah, and they’re Princeton guys as well.
+58:22 Right?
+58:23 Yeah, yeah, they are.
+58:24 We actually shared a thesis advisor.
+58:29 No way.
+58:29 That’s very cool.
+58:31 Well, Eno, Matan,
+58:32 thank you so much for the conversation.
+58:34 Congratulations again
+58:35 on these results and on
+58:36 launching Factory. We are so excited.
+58:38 Thank you.
+58:39 Thank you very much.
+58:44 For.

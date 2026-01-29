@@ -1,0 +1,484 @@
+00:00 We were born 40 some odd years ago, right, in the era of DOSs. And right,
+00:06 which makes it even more impressive how well you guys have done. And I would just say our success is when we were always in love with the customer
+00:12 problem and always willing to disrupt ourselves. And that's so much easier said than done, by the way. So much
+00:18 easier said than done. But that's why we're still around.
+00:23 [Music]
+00:38 Hey, welcome to the pod. Today we have Cissan, the CEO of Into It. I've known
+00:43 and like Cissan for a very long time, and I've known and liked into it for a very long time. They're an interesting
+00:50 company that been around for many, many decades in a bit of a contrarian space selling into very small businesses and
+00:58 they've scaled to 180 billion market cap. So, there's a lot to learn from these guys and I'm excited to dig in.
+01:05 I've actually met three different in it CEOs and I work with tons of CEOs in my
+01:10 daily life. These are grown-ups and I think there's something to be learned from grown-ups
+01:16 and we're going to dig into some grown-up topics. We dig into what does a grown-up CEO operating system look like.
+01:23 What is Cissan's hiring criteria which I did not expect and I think is pretty interesting. How do you build an
+01:29 indirect channel? Most of the QuickBooks revenue comes through an accounting channel that they built. That's
+01:35 fascinating. We talked about second acts and third acts and platforms. one of my favorite
+01:40 topics and something they're very very good at. And then we talk about SMB. There very few companies that have built
+01:46 with any scale in the SMB segment of the market. I hope you come back uh and we
+01:52 chat again after the interview because I have a lot of takes on it. See you on the other side. So, great to see you.
+01:58 Very good to see you, man. It's been a long time. I know. I miss you. I you know, you look great.
+02:03 You too. You too. You too. Uh, so I I came on the campus today and it reminded
+02:09 me the first time I visited the intuit campus which was in 2010. HubSpot was four years old and my co-founder and I
+02:15 were coming to visit Scott Cook and your CEO and we were just sitting in the lobby and I just remember I wanted to
+02:21 throw up on myself. I was so nervous cuz we were a little tiny company really. I looked up to you and we met with you guys and we had a really good meeting
+02:29 and you guys gave us a lot of insight. And at the end of the meeting, I was kind of taken with Brad Smith, your CEO. And I said, "Is there any chance you'd
+02:36 let me shadow you for a day?" Ah, yeah. And he said, "Sure, come on back anytime." Which I was delighted. And so
+02:43 about a month later, I came back, sat in the lobby, wanted to throw up by myself cuz I was so nervous. And I shadowed
+02:49 Brad Smith, the legend. And it was a fascinating day. I learned a lot. He brought me to the executive leadership
+02:55 committee meeting. All the executives in there. I saw how he ran it. It was really good. Founder was in there. just went through the
+03:01 whole day with him, lunch, everything. The most interesting meeting was he had a performance review with someone
+03:06 and you were in the room and it was kind of a tough performance review. Oh wow. And he's like, "Nope, you're going to stay in the room." So I was in the room
+03:12 and this guy, you know, he's all the pluses and minuses. So that's when I think back to into it. I learned so much
+03:19 from Brad and so much from you guys and there's so much into it inside of HubSpot. Uh but we're not here to talk
+03:25 about me. We're here to talk about you. You're becoming a legend, running into it, doing so well. Tell me about when
+03:30 you first took the job. You took the job over from Brad. The building is named after Brad. What was that like? It's
+03:37 2018. Brad Smith has done a great job. He's stepping down. They're looking for a new CEO. There's this Was it at all
+03:43 like the show Succession? That's a good one. So, you know, I did something um very much like I'm just I'm
+03:49 curious. Uh and I'm always out learning from from customers, from our product teams, and and um external leaders. So,
+03:56 one of the things I did, but I would just say more like an event, um, when I was announced is I went out and talked
+04:02 to 15 20 folks that if I were to name them, you would know all of them. And, and it
+04:08 was really to get advice, but but the one person that comes to mind is um, given your question was Steve Young.
+04:15 Uh, so quarterback of the 49ers, Hall of Famer. Um, I went and met him and and it's a
+04:22 he's a legend. And the reason I went to meet him is he had to step in, you know, behind big shoes, Joe Montana.
+04:28 It was the most unforgettable meeting cuz he actually took me through the journey of when he became quarterback. I
+04:35 think it was when Joe Montana got hurt. And long story short, he said, "Listen, I was getting booed. Um, people were
+04:42 like, "Bring Joe back." And we were having a tough time. and and he said, "I was on a plane ride back um with someone
+04:51 famous that I won't name here cuz he asked me not to ever name them." In essence, the person said, "Oh, you're
+04:56 Steve Young." And he was said, "I was pouting and telling him how pissed off I was cuz I had taken a couple of day
+05:02 break." And the person said, "You have been chosen as the quarterback of the
+05:09 San Francisco 49ers. You are not here to fill Joe Montana shoes. you are here to win. They picked
+05:18 you as the quarterback. So he said, "Go be the best that you can be and don't
+05:24 try to follow Joe Montana." And he said that conversation changed him. He said
+05:30 after that conversation, if you look at when he had the conversation and then his trajectory and then the 49ers
+05:36 trajectory, it completely changed. Did someone have that conversation with you? That's the advice he gave me. It does
+05:42 seem like there's the C ye old CEO playbook seems to be changing like
+05:47 Jensen Hang is doing all kinds of interesting things. Yeah. The whole founder mode thing.
+05:53 What are the nonobvious things that really work for you in the job that
+05:58 maybe not be part of the normal playbook? Oh, first of all, you're right. I think I think there is no playbook and it
+06:05 changes on a monthly basis. So, if you try to stick to a playbook, you could be in trouble. The couple of things that um
+06:13 have always kept me uh grounded um is the main theme is just curiosity. So I
+06:19 spend a lot of time with customers. Uh they always keep me grounded in terms of
+06:25 like what's important uh what are they trying to do with their life? What tools are they using? Why are they using them?
+06:30 So that's one. Um two I spend a lot of time also doing a lot of CEOs. I'm just going to push back a little bit. Every CEO does that
+06:36 these days. Yes, you should do it. But but I use that as one element of always being
+06:41 grounded. The second is I spend a lot of time with our frontline engineers to try to understand like what's getting in
+06:47 their way. Are there dependencies that slows them down because velocity is is everything.
+06:52 So I'm close to customers close to our front lines cuz I think we're sitting in our shoes a lot of stuff gets filtered
+06:58 and so you have to be in touch with customers, you have to be in touch with frontline employees and you have to be in touch with just your KPIs like what's
+07:05 working, what's not. The one is just helicopter skills. And no matter what is going on, that's one common thing that
+07:12 always uh grounds me. I called it spelunking. Kind of you're up here and then way down. Grow people
+07:18 crazy by the way. But that's kind of how I do. But by the way, I think every successful leader, you don't have to be a CEO.
+07:24 Every successful leader has to be has to have a method in which they operate. You
+07:29 have to be grounded in the details. You have to be close to the details. Because if you just operate in the cloud and you
+07:35 don't know what's going on with employees, customers, products, and your KPIs, then I don't think you're effective. So that's you asked about
+07:42 playbook. Y that's the common thing that always helps me be in love with the problem and
+07:47 how fast the world is moving and not in love with what we've declared. I would say the second thing is I'm just big on
+07:53 principles and mechanisms like what are the do you mean by that? um principles are like for instance we we have a mechanism in which we run the company
+07:59 but it's really how I spend my time and just if I even if I think about today you know in one meeting we were talking
+08:06 about things that are coming around the corner and haven't even been invented yet and we're contemplating what we
+08:12 should do to doing a product review to reviewing our dashboard uh to meeting with a customer. So it mechanisms are
+08:20 just about how do we manage short and long? How do we ensure that we're really monitoring the things that we've said
+08:25 we're going to do around product around around go to market but also mechanisms uh to invest time with thought partners
+08:33 that um are very comfortable telling me hey I don't think your strategy is right. I don't think what you're doing is right. Here's what I think you should
+08:39 be doing. So we have mechanisms in terms of how we run the company. How long have those been around? Are those new or that's like into it in in
+08:46 the in the you know in the we changed it completely six years ago but we've we've evolved them almost
+08:53 every year. There isn't just one but the the I would say the three or four that I
+08:58 would call out is we have a mechanism where the intent of the mechanism is question everything we've declared.
+09:04 Okay. And if today was day one what would you do? I love that. Uh and that just keeps us grounded. It's
+09:10 the objective of the mechanism. So you don't go into that discussion with the senior team protecting what you're
+09:15 doing. You're actually in there to blow up what you're doing. The intent is outside in today's day
+09:21 one. You took over a CEO as a leadership team. What would you do? That's a very important mechanism. And how often does
+09:26 that meeting or that context that happens? At least once a year. And I use the word at least because
+09:32 situationally if something is going on, we'll we'll impromptu have a conversation
+09:37 which we've done twice in the last two years because of a lot going on. A lot going on. So that's that's a very important one.
+09:44 The other one is when we actually review our deliverable. One of the you talked about shadowing. Um I'm big on
+09:49 shadowing. Oh, you are? Okay. And so I I had the opportunity to shadow um Andy
+09:54 Jasse at at Amazon when I was the CIO and he was running AWS.
+09:59 And there's a number of things that I learned from Amazon. One of them that we copied uh is what what's called their
+10:06 input goal system. And their input goals are really around like what are the big
+10:12 product go to market technology deliverable. So you're it's the biggest decisions investments that you're
+10:18 making. Yeah. and with success metrics. That's another mechanism I would call out
+10:23 that's really changed uh clarity of the inputs that we're focused on and how are we doing against them and they expose
+10:30 where we have prioritization issues, resource allocation issues, talent issues.
+10:35 I just found with HubSpot just on the input thing like gravity pulls you towards lagging indicators and trying to
+10:42 keep the company on leading indicators is just hard hard. which is why I love this
+10:48 mechanism. It's not just a mechanism. It's not just a meeting. It's actually our entire process around um input
+10:54 goals. I love that one. And the third one is we just we not only do I spend a lot of time with customers, but we have
+10:59 sort of a a customer experience review mechanism where we're we're really talking about the experience, what's
+11:05 working, what's not. If I were to call out three, and there's there's more than three mechanisms, those are the ones
+11:10 that I just think are they're gamechanging for us. The third one I like, like I I called it the coal phase.
+11:16 that wanted to get on the cold face and hear from the customers. So, we had a customer at every company meeting. Once
+11:21 a month, we had a staff meeting. We would have customer panels at the staff meeting and the most lively ones were
+11:27 the customers that had canceled. That was always the best ones. And then we just had our board meeting yesterday and we have a customer panel
+11:33 at our board meeting. Those are terrific. So, similar to HubSpot, trying to create mechanisms to keep the
+11:39 customer loud in our ears. That's right. And I love what you just said, which is I think the most powerful situations in our lives, right? Is when
+11:47 somebody is um in a very authentic way challenging you. Yep. And you're giving them permission to
+11:53 challenge you. So, as a customer, it's interesting. We had a couple of customers that had left us at our
+11:59 leadership conference uh in front of hundreds of our of our leaders and they were like, "Here's why I left. Here's
+12:04 what you need to do differently." And I just think there's a lot of power when you learn from what you could have done
+12:10 differently. And I love what you all do at HubSpot. I just think it really brings to life a culture of learning and
+12:17 curiosity. Yep. I think we got a lot of that from you. By the way, um I coach CEOs. I get
+12:23 very consistent questions about certain things and anyone who's starting a company and is a CEO targeting
+12:29 smallmedium businesses finds me. Yeah. You guys are the world champions of SMB. What's working so well there?
+12:38 Why does so many startups get it wrong and end up going up into the enterprise? What is the magic to creating a company
+12:43 that really thrives in SMB? Because very few, you know, Brian, it's um first of all, I
+12:49 would say it's a it's a magic that Scott Cook created, you know, years ago um that we've just been over the years uh
+12:56 building on. And and I think the the first element of the magic, this is going to sound real obvious, but they're
+13:01 actually consumers. They behave like consumers. They act like consumers. The minute you put the
+13:07 word they're they're a business in front of it, then you start thinking large business, large enterprise, and they
+13:14 behave and act like consumers. And so the obsessive focus that you have to
+13:19 have on like what problem can you solve for that business that doesn't have the infrastructure that a HubSpot and an
+13:25 Intuit has but they're two three people shop and like how do you help them with the basics like get a customer know which
+13:32 ones are profitable help them get paid cash flow like really narrow narrow
+13:37 problems to solve has really been the success of what Scott created and what we built over the
+13:44 years is follow me home thing that Scott invented. Is that still a thing and into it?
+13:49 Yeah, it is. And what we are coupling it with is a couple of things. One, there's
+13:55 follow me homes and then there's follow me homes. Okay. You can do a follow me home where you're telling the customer here's what I'm
+14:01 doing and just you want confirmation bias. Then there's follow me homes which is a real technique and you're truly
+14:06 there to observe, learn and and try to capture the ahas, the surprises. Because the big
+14:12 thing we've learned is customer don't do what they say. Yeah. Right. And so really we have continued
+14:19 to invest in like the technique of a follow me home. It's a thing but it's not the biggest thing because before
+14:26 before data before we were in the cloud it was the thing when we were shipping CDs. Yeah. But now that's coupled with data
+14:34 right and in the world of cloud you have so much data so you can real time understand and see what's the customer behavior what are they doing why did
+14:40 they get stuck there why did they fall off and so now we try to couple the two but it is it is uh still a thing the our
+14:47 focus is how do you do the thing the right way now I spent a lot of time it's koi capital I spent a lot of time
+14:53 fundraising at HubSpot sandill road is allergic to SMBs any business SMB they're allergic to it why do you think
+14:59 that is And why do you think more companies haven't pulled it off? I think more companies are successful
+15:05 today serving businesses than they were before. You all are a great example of not a lot of examples of them though.
+15:10 There's not too many. There's not too many. I think it's it's folks that really understand these are consumers
+15:16 and really focus on like what's that narrow problem that is big enough for the customer that you can go after and
+15:23 get started and one that you actually can build advantage and one that they're willing
+15:29 to pay for. That sounds like well of course everybody needs to do that for any customer problem that they solve.
+15:36 But I think most people treat small businesses like they're large enterprises because they're they're a
+15:42 business and the reality is they they are absolutely consumers. They behave like so I get follow me home and data on that
+15:49 side. Talk about just the go to market and how do you keep the cack down?
+15:54 Yeah. And how do you keep churn from not running away on these small businesses? Because that the unit economics is I
+15:60 think something that where so many companies fall down on small businesses. It's hard. I mean, how do you scale CAC and get so many
+16:06 customers and then how do you control retention and like your gross retention, revenue retention?
+16:12 It's hard. Of course. Let me just start there. It's it's really really hard on the CAC side. I would say two two big things. One is
+16:19 um referral and our partners in accountants. the better of a job that you do serving one business, the the
+16:26 word of mouth is huge. So word of mouth is huge and then accountants recommending it and accountants only
+16:32 recommend things that they use, love and recommend. That's how we've learned to keep the CAC down. Now what I would tell
+16:38 you is every time we've tried to go into a new country, CAC is very high, right? For exactly that reason. You're trying
+16:43 to get the first customer, get them to, you know, word of mouth to spread, then get an accountant to use it, and then
+16:48 get the accountant, and then you create that network effect. And we have found where we can create network effects like
+16:54 we've done it in the US in Canada in in UK we can keep the CAC um under control
+16:60 but we don't look at CAC holistically we'll look at it based on new product new markets held toleration should be
+17:06 very different than like in the US where we have a a big scale but that's success is word of mouth and accountants.
+17:13 Okay I want there's a lot to unpack there. You do super bowl ads for QuickBooks and things like that. Does
+17:19 that stuff work? Yeah. Yeah. How do you know? Yes. Well, the uh
+17:24 we've talked about at HubSpot. It's like we I don't know. Yeah. We first of all, we we started doing them and we primarily, you know,
+17:31 where we've been consistent is Turboax. Okay. And uh and but you did do quick you've done
+17:36 QuickBooks, too. And I'm obsessed with QuickBooks, not Turbo. Yeah, of course. But just in terms of like Super Bowl ads, our consistency uh
+17:43 has been Turboax. Uh and it absolutely pays off. So we do a lot of work afterwards uh in terms of
+17:49 just what was the RORI, what were the number of eyeballs, what happened to our
+17:55 consideration, but ultimately conversion. Yeah. Did we get customers to uh to convert and can we associate it back causally to
+18:03 the Super Bowl? And I would tell you generally it's a really been a great
+18:09 ROI. There's been a couple of years here and there where it's not met our expectations, but uh where do you get those kind of
+18:15 eyeballs? Um, okay. And it can go very wrong if you don't do it right. Just
+18:20 ju just back on that for a half a second. When it doesn't go right, is it because the the actual ad itself just isn't that good? Is it just very
+18:26 dependent on the quality of the ad you put out there? It all comes down to the quality and the impact of the ad. Absolutely. Was it
+18:33 compelling to get Do you make that decision? So like lots of people are working on different ad like ideas for it. Are you the final
+18:39 decision? Like you look at seven and you pick it. First of all, I have to tell you a story and then I'll answer your question because the story is about the
+18:45 Super Bowl ad. I I remember vividly was a learning that I had when I worked for Brad. So, the first Super Bowl ad that
+18:51 we ran was when I was running Turboax. Is that your idea? It was the team's idea. No good idea is
+18:56 ever mine. It's the team's idea. And so Brad finds out that we're running a Super Bowl ad. I never even thought to
+19:02 talk to Brad about, hey, we're going to run a Super Bowl ad. And so, you know how kind Brad is. He called me and goes, "San,
+19:07 uh, I don't need to approve the Super Bowl ad, but if you're going to run a Super Bowl ad, like I need to be aware of it because if it goes sideways,
+19:14 I don't blame him, by the way, the CEO of the board." So, I I share that story with you, and he was so right, by the way.
+19:20 And so, yes, I look at it, the team owns the the creativity. I mean, the biggest thing I've learned about ads is
+19:26 everybody has an opinion. Uh, and and most people, it's an end of one, are wrong with their opinions,
+19:32 either whether they love it or not. You have to have a systematic way in which you So you don't pick it.
+19:37 I don't pick it. However, what I I absolutely review it before it goes on air. I review everything that before it
+19:42 goes on air. The big thing that I'm looking for beyond just how does it sit with me, which is the least important,
+19:48 but how it sits with me matters is actually I'm looking for reputational risk. Yeah. Does this pass the bar of who we are as
+19:55 a company? The reputation we need to uphold. And so that's really what I'm looking for in a Super Bowl ad. Of
+20:01 course, I'll give my opinion of h it's not that great or wow, this is amazing, but I'm really looking for the
+20:06 reputational element. Okay, sticking on CAC for just another second. Well, you love CAC, don't you? I do. And it's it's SMB. It's How do you
+20:13 scale? How do you scale? Well, I'm not going to give you my secrets. Yes, you are. Is it ye old NPS? Is that
+20:18 how you measure word of mouth? Like, how do you know if you're getting the word of mouth or not? It's hard to go in the
+20:24 shop and see if Mary's telling Joe that they should use Quick 100%. I old MPS or is there something
+20:30 fancier? There's a there's a few things that we look at. One, we'll look at product recommendation uh scores. That's a big
+20:36 input, but it's just one input. The other we look at is services because customers may give you one MPS, but if
+20:44 they're using more and more of your services, then that's a huge uh indication. So, we'll look at are they
+20:50 using payments, are they using payroll, are they using all Yeah. Are they using more and more of our services? So that's
+20:58 one thing that we look for. So it's MPS, it's the it's the number of uh services
+21:03 and then we also have and is it gross retention just like how many the number of logos journey?
+21:08 Yeah, gross retention also just retention dollars that we that we look at. So we look at three four things
+21:13 because what we've learned um this is probably the most important thing that I would pass on to those that that listen. If
+21:19 you just look at one metric like our customers recommending is your is your MPS high? you can have a very high
+21:26 MPS and no new customer growth. So, you have to really look at multiple metrics. Again, we look at what I just
+21:31 articulated to really get a feel for are the things that we're doing working or not. Okay. Lots of founders asked me about
+21:38 HubSpot's channel program, which we lifted a lot of it from you guys. And you guys kind of took
+21:45 accountants and turned them into resellers and software companies. We took website designers and turned them
+21:50 into marketing agencies. Talk to me about you're advising a founder. We got
+21:56 he's growing, doing great, wants to do a channel program. Like how do you do it? What works? What doesn't work? I mean,
+22:02 the first piece of advice I would give is what problem are you trying to solve with a channel partner before you jump
+22:09 into how do you become great at channel partners? You know, in in in in our case
+22:15 really our biggest partner is our accountants. Yeah. And we we don't have a bunch of channel partners. We have developers that will
+22:21 build apps on our platforms. We have partners, but we don't have That's what I'm talking about, the accountant channel. Yeah, the accountant channel. And
+22:26 really, so why the accountant channel, you know, for us? Well, accountants also serve consumers and businesses, right?
+22:33 They're they're helping them with their taxes, their books, their accounting advice, and uh the larger you are as a
+22:39 business, you may have them take care of your audit, you may outsource your payroll to them, right? It depends on
+22:44 who you are and the size of your business. and they're very influential
+22:50 in what a business uses um in in every dimension possible.
+22:56 And so that's a great example of like well that's a very important partner. In fact, one of the big things um that
+23:02 we've really evolved in the last years accounts are very important partners. They're not it's not a just a channel.
+23:07 It's not a reseller. They're like they're a partner and we have to really up our game in terms of how we
+23:13 co-develop with them, how we think about going to market with them together. um how we take their input. It's an area we
+23:18 we had to significantly improve in the last year and really to answer your question for us it was about well they
+23:25 play a very critical role in ultimately what businesses use. So not only do we
+23:31 have to be great at the products we build for the end business but we also have to have uh a relationship with them
+23:36 and and they have to use our stuff love it and then recommend it. And that's the biggest advice I would give when you're
+23:41 thinking about a channel partner like why are you doing it? Are you doing it because you're trying to manage your CAC? And if you're doing that, what what
+23:48 does that mean to your overall economics? Everybody want the reason people want to do is they want to grow faster. Yeah. But and then the question though
+23:55 is you grow faster, but what's the economics look like? Um and you have to think about those things. But I would
+24:01 just the advice I'd give is be very clear about the problem you're trying to solve. And it's okay to throw some stuff at the wall and see what works. But if
+24:07 you just start with I need channel partners, I think you may make the wrong choice. Okay, let me run some things
+24:12 we've learned about channel partners through HubSpot Bayou. And I'm just curious if it's kind of the same. Okay. Yeah.
+24:18 Stuff that worked early was we took website designers a dying business and turned them into an agency. And we
+24:24 taught them about this new technology and idea called inbound marketing, which is ancient now. And we taught them how
+24:31 to run a proper agency. Like we ran a little university. How do you bill? How
+24:36 do you charge? How do you run your agency? That worked. Another thing that really worked is once
+24:42 these agencies starting signing up lots of customers, they needed software themselves. So we funded a development
+24:48 team to help them manage all their customers their own firm, right? And that was a pretty good size investment.
+24:54 Third thing that really worked for us was and this is a Napoleon thing. Napoleon said something like, "It's
+24:60 amazing what a soldier will do for another colored ribbon on his on his shoulder." And my goodness, we have
+25:06 found that like we have like 10 tiers of partners and they will fight tooth and nail to get up all levels. So measuring
+25:12 all that getting that benefit program that has really worked. One of the thing
+25:17 that's at least for us has worked is there's two ways to buy HubSpot. You you do it yourself, you buy directly from
+25:23 us, you figure it out, we teach you or is do it for me and that's where the agencies come in and
+25:29 that has worked for us. Does any of that resonate for you? Is that kind of some of the playbook?
+25:35 Almost all of it resonates cuz I I could take that same what you just said and replace it with
+25:40 accountants. Uh, and that's what I figured. The same exact thing applies. But I
+25:46 would just ask you, what problem were you trying to solve when you first started engaging these agencies?
+25:51 We wanted to grow faster. Just be very honest with you, wanted to grow faster. And I'll tell you a funny story about it. It's like two, three
+25:58 years into HubSpot and our product was awful. just awful. And we had a few
+26:05 sales reps and we had a lot of leads from agencies who were curious about inbound marketing. What's this HubSpot
+26:10 thing? We had a lot of buzz. And I told the sales reps, just leave those leads. There's a pile of them over there. Don't
+26:16 touch them. You know, they sat in HubSpot. Don't touch them. You know, we're not going to do the channel. The product's not ready. And they kept
+26:21 asking me, no. And we had the thing, it's a little bit like Google's 80, you know, 20% time where we say, "You can do
+26:27 whatever you want. Nice and weekend." So this guy Pete Caputoa, a great but really irritating sales rep. Uh he
+26:33 started calling him nights and weekends and then you know there's a distribution of sales reps and let's say we had five of them and like usually bell curb. Ours
+26:39 was like picaputo was like 50 times more revenue than the rest of them like maybe
+26:44 we ought to call in these agency partners. That's how we started it. Fascinating. Yes. We followed the money.
+26:50 Yeah. The other thing that's interesting about our agency partners, if we look at our retention numbers, gross and net,
+26:55 the agency customers have better economics than our direct customers. They take actually take better c care of
+27:02 their of our customers than we do. By the way, so many similarities like for instance, when an accountant recommends a customer to use,
+27:09 particularly like larger customers that we're now pursuing that what we call mid-market, the cycle time of closes 10
+27:15 times faster. Yeah. and we end up offering more services, payments, payroll to that customer than otherwise.
+27:21 So there's so many so many similarities. Okay. You guys I founders always ask me
+27:27 to you had an app that was your first act and then you created a suite second act and then you created a platform
+27:33 third act. How'd you do it? Give some advice to that founder. She's got 100 employees. She wants to go from
+27:39 first act to second act. Yeah. You guys you guys have mastered that. First of all, a big part of it as you
+27:45 know it comes out of necessity, right? Um you've solved you know one problem well accounting and
+27:53 ultimately what you realize is the customer can be far more you can deliver
+27:58 far more benefit and be far more sticky if then you actually help them with creating estimate and an invoice and
+28:04 getting paid. And then the next thing is well well they they have employees we need to payroll payroll etc etc. And so how far into
+28:12 like the QuickBooks journey did you start building other stuff?
+28:17 Uh well early on but remember you've been around since the dinosaur
+28:22 ages. Yes. Thank you. You said it more directly than I was going to say. Remember we used to ship CDs and so one
+28:29 so when we were shipping CDs and we had desktop platform we had payroll we had payments on
+28:34 desktop years ago. I see. But then in order to shift from desktop to the cloud, that was a massive
+28:40 transformation for us as a company because we weren't born in the cloud. It was a hard one as I recall.
+28:46 Very hard. And by the way, we're we're we've shifted to the cloud, but we still have customers on desktop that we're
+28:51 trying to motivate to come to online. Uh in some cases are not very happy with us because they want to remain on
+28:56 desktop. But the reason I share that with you is that journey from going to desktop to online took a lot out of the
+29:02 company. And so when we then shifted to the cloud, we were once again only an accounting platform because we had to
+29:08 build everything in the cloud and then we started building out same journey,
+29:13 money solutions, payroll, uh, etc. So the biggest advice I would give a
+29:19 founder is first of all, everybody has an anchor. Ours was tax and accounting. Then the question is what's the next
+29:26 problem you can solve for that customer that's right next to that anchor? And and for us after accounting it was well
+29:33 people need to we serve service based businesses. They need to create an estimate and invoice and get paid. So let's build that out
+29:38 and then let's build out payroll which is very hard right because state local taxes country um rules regulations.
+29:45 And so it it's really be very intentional about what's next to your anchor and is that a big enough problem
+29:52 to solve? Can you build advantage by by solving it? and then really nail that
+29:57 and then go to the next thing and then at some point decide do you partner on certain things until you build it uh do
+30:04 you acquire like that's why we acquired like a credit karma we wanted to do more than taxes we could have replicated
+30:10 credit karma it just would have taken us five plus years because of the data and AI capabilities so that's the advice I
+30:16 would give is okay and this is self- serving so we built marketing and then we said we're going to go into sales we were kind of
+30:22 forced into it because salesforce.com was coming into marketing And then we went to service and we've added we I think we have eight of these application
+30:29 areas. We always debated, we always knew there was going to be eight. Should we peanut butter all seven new ones or
+30:35 should we really almost finish the second one before we go to the third? How do you think about second versus the
+30:41 third versus like when did you So your first one was paying people, right? Payroll. Uh no it was actually it was actually
+30:48 creating estimates and invoicing and then your third one's payroll. So when did you go two? When did you go three? What was it like? Do you look at
+30:54 market share before you go or like what? So this is it's a great question because I now want to go back to your first
+31:01 question you asked me which is playbook of CEOs. Yes. Or playbook of any leader. I think that
+31:06 playbook is very different today. Okay. Than it was when you were looking at
+31:11 things serially to decide what what's next. I mean today you know this as well as I with data and AI. What we're trying
+31:18 to do is build a system of intelligence where it's no longer about what workflow do I build, what app do I build. It's
+31:25 actually about learning from the customer and with our data and AI capabilities solving that problem for
+31:31 the customer. That's really important because I don't think things are as serial today than they were years ago.
+31:36 You can also build much faster now. You can build much faster. You don't need to be a serial as long as by the way you have some element of data and AI
+31:42 capability. So I just think that playbook is very very different today than it was four or five years ago. But
+31:49 the thing that doesn't change y in my view is being clear what customer problem are you trying to
+31:55 solve. Is it a big enough problem for the customer and can you solve it in a way where you're advantaged versus
+32:02 others and you know it can be a big let me press on this a little bit. I'm gonna write put the clock back you I
+32:08 don't know what year called 2020 your back office which is the canonical small
+32:13 business back office and then we're going to buy Mailchimp in the front office. I remember that very well. Yeah.
+32:19 And that decision at that point in time was that because man we've got 90
+32:24 freaking% of the SMB back office. We better go in the front office. We've we're we're almost done with these
+32:30 applications. Like talk to me about that. When we observed customers and their data, they had created c our
+32:37 customers had created 20 billion records within our QuickBooks platform
+32:43 trying to manage their customers within QuickBooks. I see. So they were creating They were using QuickBooks as their
+32:50 and and so what we realized is we have to solve this problem because customers are manually creating a bunch of records
+32:55 because they don't want to use multiple different platforms and sort of back to can we build it? Well, of
+33:01 course. Is this where we want to put our internal capital? Do we have the knowhow, the domain expertise, or do you
+33:07 go buy it? That's what led to buying Mailchimp. Okay, got it. You've made a lot of
+33:12 acquisition. Not a lot. You made a bunch. Some have been real docs and some have been terrific. We don't have to name names
+33:18 and like HubSpot's we've starting to do buy do buy a bunch of companies. What advice would you give HubSpot and any
+33:25 CEO about, you know, the lemon the ones that didn't work versus work? Is there some best practices or some things
+33:30 you've learned about how to do them? 100%. Uh well, let's just put to the side the foundational stuff, which is
+33:36 you've done your homework. There's real clarity of strategically why you're doing it. You understand the culture
+33:42 that you're buying. You have a plan around it. You've done your delay. Like, let's put all that to the side cuz that's like foundational. The two big
+33:48 things that that we've learned is the pace of product integration and talent where we moved fast on integrating the
+33:57 the platform. I would use Turboax and Credit Karma. I mean, Credit Karma is a absolute home run
+34:03 where we move fast to know what problems we're going to solve and integrate the product so we can get to benefit for
+34:08 customers, which by the way translates into growth and then where we needed to either
+34:14 upgrade talent or make talent changes. When we do those two things, well, what we've seen is, and by the way, little
+34:20 acquisitions that nobody asks about and then there's the big ones, right? Credit Karma and Mailchimp. Did you leave the CEOs in place and
+34:26 leave them independent or you put your people in? It was situational. Like in the case of Credit Karma, it's
+34:31 situational. You know, Ken and I had a great relationship. Um he wanted to continue to be CEO, very
+34:37 effective CEO and he and his team were in place for quite some time. Okay.
+34:42 Uh whereas in the case of Mail Mailchimp, Ben actually told us and told me from day one, hey,
+34:47 it out. Yeah. We got to get we got to we got to upgrade the leadership team. So you put you put your folks in there.
+34:52 That's right. But back to your question, it's product integration and it's talent. Those make an enormous
+34:59 difference in terms of success and the the making the tough decisions up front is far better than waiting.
+35:06 Okay. I want to come back to something you talked about earlier. You guys have been around a while. You were desktop
+35:12 software and then you had to trans and I think it was like client server and then
+35:18 went to SAS and went to AI. We're kind of on a big shift now. You were one of few companies that made that shift
+35:24 pretty well. Adobe and SAP. Not a lot of companies made that shift from client
+35:29 software to SAS. What did you do right there? Did you wait too long? Were you too fast? Like
+35:35 when you look at that shift back then, my sense was you you moved to SAS actually kind of slow.
+35:40 First of all, your premise of your question is a really important one, which is we were born 40 some odd years
+35:47 ago, right, in the era of DOSs. And right, which makes it even more impressive how
+35:53 well you guys have done. And I would just say our success is when we were always in love with the customer problem and always willing to disrupt ourselves.
+36:00 And that's so much easier said than done, by the way. So much easier said than done. But that's why we're still
+36:05 around. And it's also why we were absolutely slow to move to SAS. Okay. Uh we were probably four to five years too
+36:12 slow. Your customers weren't asking for SAS. Customers weren't asking for it. They absolutely didn't want to move to the
+36:18 cloud. And and as much as we're a culture of disruption, that's a very hard move to make.
+36:24 Did you rebuild from scratch? In many cases, we had to rebuild from scratch and their service. But remember,
+36:30 it's even harder than the way you're asking the question, you know, we were a desktop company. We had all of our data
+36:36 was siloed across Turboax, across accounting, across back then when we had payroll payments all every bunch of
+36:43 siloed vertical stacks and data. It was mess to move to the cloud. It wasn't a
+36:49 mess the way we were running it, but to move to become SAS, that's like that is so hard to do, which is why we were slow
+36:54 because was it more a technological problem or a business model problem? The business model totally changed. Culture, talent.
+37:00 Interesting. Business model, it's everything. Got it. That's why you can look back and go,
+37:06 well, we were slow. But when you're in it, what we had to do was if you follow the customer home, they're
+37:11 not going to tell you to make a platform shift, of course. But if you want to keep growing, you have to make the platform shift. So yes, we were slow, but the
+37:18 degree of difficulty was very high. I would say we were on reverse. We were very early in AI.
+37:24 I agree. Talk to me about that. What's going on now for you on that shift? And why were you
+37:30 were you were you were like we're an AI company in like 2019. Long time ago, way before way before it was cool.
+37:37 Were you too early? Uh I would tell you looking back, we absolutely weren't too early. Were not? We're not meaning I'm glad we
+37:45 declared but you did all this AI. So did any of it really work in 2009? Well, it was well let me first tell you
+37:50 why and then I'll answer your question. We did it for very practical reasons when I stepped into this role because I
+37:56 had the privilege of being in all the businesses serving all the different customers. There are sort of two big things that we put in place six and a
+38:03 half years ago. One was we have to solve more problems in tax and accounting and we have to become a platform so we can
+38:09 play a meaningful role in the lives of consumers and businesses. That was one big decision. Uh we didn't know how but
+38:15 that was one big strategic decision. The other big strategic decision was data and AI for very practical reasons
+38:22 because the biggest thing I learned being in all these businesses is consumers and businesses want things done for them.
+38:27 Yep. It's money. It's confidence. Like get my stuff done for me so I can manage and focus on my business or my life as a
+38:34 consumer. So we said the only way we could do that was data and AI. And that was the second
+38:39 big decision. And and to your question of were you too early declaring it a big heavy lift was all the work we did
+38:46 around data and data services like cleaning the data making sure it's usable making sure we can ingest data chat came along you were ready
+38:52 yeah the AI part was actually the easier part the harder part is all the data and now that it's usable and all the
+38:59 services we have to ingest data that's why I'm glad we started six and a half years ago because now we're far
+39:04 better positioned for what we're doing today in the future and when you think of it are you
+39:09 infusing AI eye into your current platform or are you saying hey we're going to start from a blank sheet of
+39:15 paper and build an AI native version of QuickBooks let's I would say both uh everything you know
+39:21 I get asked a lot so what's your AI revenue like the whole company's is sits
+39:26 on our data and AI platform like everything from payments to payroll to tax everything sits on our data layer
+39:32 data models and on our AI platform so that's sort of number one number two
+39:38 you know one of the things we launched in July have this year is a virtual team of AI agents that do a lot of the work
+39:43 uh for you. Yeah. A lot of that is is AI native. I mean, are you going to put the accountants out of business by doing that?
+39:49 No, we're actually our focus is how do we feel their success? And we're also very transparent with accountants, which is if you only have, you know, 50
+39:56 customers and all you do is tax, you should really be part of our platform, our expert platform, because with
+40:03 technology and the the supply issues, it's going to be tough as you look ahead. So we're trying to fuel their
+40:09 success, but we're also partnering with the large firms to really fuel their success because they're trying to digitize. They want efficiency. They
+40:14 want to improve profitability, particularly the PEback firms. Our goal is partnership because we believe in AI
+40:20 plus HI. We think human intelligence is essential for today and the future. Our focus is everything needs to be done for
+40:27 you. How do we deliver experiences that's done for you versus building more workflows and designing more product?
+40:33 Yeah. Okay, we only have a couple minutes left. I have a thousand more questions. By the way, I coach all these CEOs. They're smart. They're hungry.
+40:41 They're between 10 and call it 500 employees. They want to go from like startup founder to scale up CEO. What
+40:48 CEO advice would you give to these people? That's a loaded question. You're a smart guy. I would say really focus on winning.
+40:56 These jobs are hard. Uh you know, do you like your job? Um I No, I love winning.
+41:02 Yeah. Uh is the dayto-day do you enjoy it? Oh, there are a lot of days where I'm like, that was no. Yes. I'm not solving for
+41:09 joy. I I think that's the advice I would give is if you're solving for just following your passion and and defining
+41:15 how the day went by joy and happiness, you're not going to succeed in in this
+41:21 world um as a CEO or not a CEO. So, the advice I would give is focus on the customer and focus on winning. Um these
+41:28 jobs are hard. Be prepared, right? If you want to do this job, you got to have grit. You got to work hard. You got to have resilience. You've got to
+41:34 understand that most days you're not, it's not about passion, it's not about joy, it's about winning. And what we do is very hard.
+41:40 And I just think the mental toughness I think talent is overrated. Okay. I think it's all about grit and it's all
+41:47 about hard work. I will take anyone that has grit and hard work versus how do you know if someone's you're
+41:53 interviewing someone, how do you know if they've got grit and hard work? Just you know what I I I there's one of the things we have is one over one
+41:59 approval. Most of if if my team is going to hire anyone, ultimately I interview
+42:04 them. Yeah. And more than 50% of the time I go back to them and say, "I don't think this is the right person." Grit.
+42:09 Uh because it's just it's the grit, it's the hunger, it's the passion. You know, sometimes when you ask someone to to figure that
+42:14 out, I figure it out in the conversation. You can smell if somebody's hungry, if they have grit, if they have perseverance.
+42:22 And I think that's what it takes to do this job. Back to your back to your question is the biggest advice I'd give CEOs is don't lose sight of the prize.
+42:28 And it's hard. uh get after it, outwork everyone, have grit, and if you fail, figure out how to get up and bounce back
+42:34 and uh and you'll achieve great things in life. It may not be that CEO gig, but you'll achieve great things in life.
+42:39 It's the advice I give my kids. You've done an amazing job here at In It. You've done an amazing job in this
+42:45 podcast. Thank you for sharing all your knowledge. You're a legend. Appreciate you. Thank you, my friend. Thank you.
+42:50 Okay. Hope you like that interview with Cassan. I really enjoyed it. A couple of
+42:56 highlevel things. Bull Cassan and his predecessor Brad Smith are very polished
+43:02 and very smooth and they kind of rhyme with a couple other folks I've had on
+43:08 the pod. David Solomon from Goldman and Nesh Aurora from PaloAlto and it seems
+43:13 like there that's sort of a common thread amongst the CEOs who have been hired in to replace the founder in a
+43:20 company. Kind of interesting that they have that in common. Another thought like I I spent that day with Brad Smith
+43:28 their CEO a few years ago just my suggestion to all of you listening if you're a CEO or you want to be a CEO
+43:35 that really worked and was was really helpful to me and so if you know a CEO and you admire them ask hey can I come
+43:44 in and sit with you for a day and sit through your meetings the very worst thing that can happen is a CEO is very
+43:50 flattered and says no and so you kind of win either He asked a good question of himself every 6 months he asked himself
+43:58 the question if I joined the company today from the outside what changes would I make and that's a question I
+44:04 always said I was ask myself at HubSpot and I very rarely did it so if that stuck with you I recommend you do it I
+44:11 like that he and almost everyone I've talked to is gets on the coal face with
+44:17 the customers like gets on support calls goes and talks to customers follows them
+44:22 home and I think what kills a lot of startups kind of between 100 and a thousand employees is you get some
+44:28 layers in there and you get all the feedback filtered and you lose that sort of coldface touch with the customers.
+44:34 One thing he talked about was this follow me home concept and it's at least
+44:40 it used to be it's a famous concept in my mind where the founder of in it they sell to very small business and people
+44:47 typically run them out of their home. So he would go to someone's home and watch them do all their paperwork and watch
+44:53 them do all their accounting and see how frustrating it was and then kind of build from them. That was his sort of
+44:58 secret sauce. And almost every CEO I speak with is really obsessed with
+45:04 understanding the customer. What I think people get in trouble with now is they
+45:09 look at the analytics for the customer and they can see usage data and everything's very wired up quite nicely
+45:14 for the CEO to see. But I think you miss something when you don't actually do
+45:20 that follow me home. Because when you do the follow me home and you sit with virtually or not that end user, you can
+45:27 see not just what they're using, but where are they cutting and pasting into other things and where's the messiness
+45:32 in the process. I see a lot of CEO sort of getting away from that. I would encourage you all to stay there. I think
+45:38 a very common cause of death for companies going from 100 to a thousand employees is they kind of lose that cold
+45:46 face with the customer. They get their information filtered heavily by their by their staff. They get reportings from
+45:53 analytics apps but they don't actually talk to those customers and they don't make their senior team talk to those
+45:59 customers. So I think that's key. Then we talked about the SMB segment and we have this in common with into it
+46:05 although we sell more to M than S than they do. What he says about S I think is
+46:10 right is you can't treat them like mini enterprises. You have to treat them like consumers like the individual is like a
+46:17 consumer product. You have to build it that way and it's a different mindset and it's very easy to get talked into
+46:22 building all kinds of other stuff for many enterprises. So I like that they did that. The key in SMB is to keep your
+46:29 CAC low. If your CAC is relying on Facebook ads or whatever advertising model, it's very hard to scale that. And
+46:36 I like that they they focused on that. They worked through channels. They were obsessive about word of mouth, the net
+46:41 promoter score. So, I like that a lot. And the other thing you have to do if you want to build an SMB business is you
+46:47 need a really solid LTB. You're going to have churn. Some of these folks are going to go out of business. So, like HubSpot will lose, call it 11%. So, we
+46:55 start the year with $100 and then we end the year actually with $89, but then we upsell them up to $1,34. You have to be
+47:03 able to fill that divot with your best customers buying more stuff. So, I I think they've kind of got it down how
+47:09 you build an SMB business. I think more companies should go after this target. There's there's just like gravity on
+47:15 Santor that everyone wants to go to the enterprise. But if you can think it through, man, you can build a huge
+47:21 business in SMB. HubSpot into it, Shopify, they're all cranking. Okay, we talked about second acts and platforms
+47:29 and lots of founders asked me about this. A lot of companies die because they can never figure that second act
+47:35 out. I kind of always thought of it in HubSpot either you build a platform or you get eaten by a platform. And so we
+47:42 ended up building a platform. What they did and HubSpot did is they had their first app was accounting and the second
+47:48 app was just right next to it was invoicing. So they didn't go way into HR
+47:54 or stuff like this like we're going to do invoicing. So that was the first act, second act and then after a while they
+47:60 went into payroll which is a little further away but pretty close to that. So when you're building a second act
+48:05 keep it tight, keep it close. Very helpful if it's the same buyer who's buying both of those products. It's not
+48:11 always the case and hard to find that but really important. And then the other thing I would say is you as you're going
+48:16 to your third act, I think you want to be a little bit more serial than parallel in the way you think about this
+48:22 stuff. So you build your first act and then instead of doing second, third, fourth act and peanut buttering it, really go after that second act and get
+48:29 to table stakes on there before you go to your third act, your fourth act, etc. I really like Cissan's hiring criteria,
+48:37 grit. It's the first time I've interviewed nine or 10 of these really terrific CEOs and no one's no one said
+48:42 that before. It reminds me of Sequoa's hiring criteria for entrepreneurs. They
+48:47 look for that chip on the shoulder. I don't think they always get it, but pretty much. And so he looks for that.
+48:53 And most founders are telling me these days, we're looking for slope or we're looking for experience, but I like his
+48:59 grit. What's your hiring criteria? What's your through line for all your inseextor hiring? That's a good question
+49:04 to ask yourself. Okay, those are my my takes on Cissan. I think there's a lot
+49:09 there and I hope you enjoyed it and I'll see you on the next one. [Music]

@@ -1,0 +1,314 @@
+00:01 everyone's reaction ATB was consistent don't do it no one liked the idea of doing a
+00:08 small business play recognize that this will likely be one of the hardest decisions you make and the fact that it
+00:14 feels difficult it's because it's difficult because it is so impactful welcome to Crucible moments a
+00:21 podcast about the crossroads and critical inflection points that shape some of the world's most remarkable
+00:26 companies I'm your host rof buam imagine sitting down to dinner after a long day
+00:32 of work it's the moment you can finally relax and then your phone rings you
+00:38 don't recognize the number but you pick up and of course it's a telemarketer you probably hang up before they can even
+00:45 finish their first sentence 20 years ago this was marketing interruptions to your
+00:51 day in the form of cold calls ads spam emails one annoyance after another and
+00:56 no luck for the person selling the product
+01:02 in 2006 two ambitious MIT graduate students Brian heligan and ares Shaw
+01:08 could see the traditional marketing tools were broken and that the internet was creating a new way of reaching
+01:14 customers they coined the term inbound marketing an Innovative way of thinking
+01:20 about marketing that would transform businesses around the world their company HubSpot is now not only
+01:27 synonymous with this idea but is the go to software for marketing and customer
+01:33 relations for HubSpot disrupting the world of marketing meant bucking traditional wisdom in the face of
+01:39 Crucible moments today we'll hear how against the advice of almost everyone
+01:45 they committed to serving a loyal following of small businesses instead of big Enterprises how they reimagined
+01:52 their pricing model to avoid death by churn and how they went up against a Goliath to break into a new product
+01:59 category HubSpot story is one of sticking to your convictions even through Crucible
+02:05 moments that challenge your instincts and test your
+02:12 resolve my name is Brian hallan I'm the co-founder and chairperson of
+02:18 HubSpot my name is dares sha I'm co-founder and CTO of HubSpot I was in
+02:25 business school it was the night before classes started and I was on my second
+02:30 Sam Adams the Marriott in Kendall Square and a woman walked up to me uh very nice
+02:36 woman and she started peppering me with questions all about me and my background
+02:42 and my interests in like an interview style and at the end of that she just quickly disappeared on me and what it
+02:49 turns out was going on there was when daresh goes to a cocktail party he finds
+02:55 the largest plant or bush he can find tucks in behind it then he sends his
+03:02 wife out to interview everyone and see if he can find some friends for him and then brings him over in the SC report on
+03:08 me wasn't good do you want to repeat The Scouting Report yeah it's like you know Brian likes baseball in the Red Sox he
+03:15 loves a Grateful Dead you've never been to a baseball game I don't think you know who the Grateful Dead are I don't
+03:20 think the two of you are going to hit it off so she's like move on like let's we'll find someone else uh for you to talk to and by the way my wife has been
+03:26 doing that she and I have been together for 30 years now forever that's the only time she's actually been wrong at a
+03:33 Scouting Report um only time I bring it up to her every time it's here in 2006
+03:39 Brian was working at a venture capital firm as an entrepreneur in Residence meeting with Founders and learning about
+03:45 what drove a successful business and I asked them you know what's your go to market plan they all did the same thing
+03:51 they all bought a list and they sent emails they bought a list and they cold called they did a lot of advertising
+03:56 they heard the big expensive PR firm did the big conference and they all had the same results
+04:04 terrible it just didn't work and my thesis was that marketing was broken
+04:10 that people were sick and tired of being marketed too and getting awfully clever at blocking out with Spam protection ad
+04:16 blocker you name it really hard to interrupt humans that was my aha at the same time this is going on dares is in
+04:23 school and he had a very early blog called onst startups.com and he didn't
+04:29 have any stat for money associated with it and he would just write a couple blog articles a week based on interesting
+04:35 lectures and sure enough he had you know a thousand times more interest in his little tiny blog than any of my Venture
+04:42 back startups and so we just started describing the world back then as inbound marketing what dares was doing
+04:49 Brian coined the term inbound marketing we didn't deliberately say oh we're going to go out and create this category
+04:54 we said we need something to describe this kind of product that we have pulling people in through Google through
+04:60 search through social through blogging versus outbound marketing which was what my companies were doing interrupting
+05:05 people in their daily lives and that the world would be a better place if inbound was more prevalent than outbound we did
+05:11 not trademark it or copyright it or say oh that's our term no one else can use it we wanted everyone else to use
+05:16 inbound marketing as a term we wanted it to be a thing because we are going to be the company that's most known for that
+05:21 thing and what works when you're creating a category is when you have an enemy and it was inbound versus outbound
+05:28 and then people said oh I want to do this thing they call inbound marketing how do I do it Brian and dares
+05:34 officially founded HubSpot in June of 2006 in Cambridge Massachusetts as they
+05:40 were working to bring awareness to the new category of marketing they were also making a decision that would come to
+05:46 Define hubspot's identity should they focus on small and medium-sized businesses known as smbs or large
+05:54 Enterprise companies one of the things that brought Brian ey together was our shared kind of
+05:60 passion for going after smbs we actually chose that market before we even chose what we were going to do for that market
+06:06 we kind of recognized that the internet disproportionately helped small and medium-sized businesses more than larger
+06:11 ones because it kind of leveled the playing field you used to needed a ton of money to get found online but all of
+06:17 a sudden there was Google and social and if you create a great piece of content it would spread and pull people in like
+06:23 a magnet now all of a sudden any small business could create content and your
+06:28 success in marketing did and your success became much more about the width of your brain than the width of your
+06:35 wallet but trying to put all the pieces together to kind of Leverage the internet in the way that it needed to be leveraged and to do inbound marketing it
+06:42 just was a science project for a lot of these companies I did not have the time or the talent to actually do all those things if HubSpot focused on creating
+06:49 inbound marketing tools for small businesses it would give companies that never previously had marketing resources
+06:55 the ability to gain significant traction online when I joined HubSpot the company
+07:01 was a culture magnet like it was a bunch of cool Geeks Who were all situated in
+07:08 this tiny co-working space near MIT called the Cambridge Innovation Center and it was a really tight-knit group my
+07:15 name is Danny Herzberg I'm a partner at seoa Capital I joined HubSpot as a sales
+07:20 rep became a sales leader and ultimately joined the product team where I launched the company's platform we all drank the
+07:28 Kool-Aid of what HubSpot was pre in so every person there was genuinely passionate about the virtues of inbound
+07:35 marketing and helping small businesses Thrive but there was a problem
+07:41 everyone's reaction ATB was consistent don't do it no one liked the idea of doing a
+07:48 small business play in particular the people who liked it the least and we
+07:54 most adamant we change our mind Venture capitalists we had a heck of a time
+07:60 raising funding all of the competitors did the math and said you put a dollar into the go to market machine and an SMB
+08:06 gives you back $2 you put a dollar into the same go to market machine and a midsize company or an Enterprise gives
+08:12 you back $3 or $4 and so near term the payback is always to go up
+08:18 Market my name is Pat Grady I'm a partner at Sequoia if you just looked at the numbers the numbers will always tell
+08:24 you to go up Market customers are bigger they'll stick around longer up Market always looks like a better place to
+08:31 go and if you look at smbs they're much more prone to churn you can see why it's
+08:36 much more tempting to move up Market quickly I think the VCS didn't like SMB
+08:43 because there just weren't any examples of companies that had succeeded in SMB
+08:49 other than really into it and honestly that was the only one and every VC asks
+08:54 us that question we always said into it and then they would say who else and then we give A Blank Stare the kind of
+09:02 most common argument was it's really expensive to get to smbs you just you can't do that and you can't afford kind
+09:09 of the LTV to um customer acquisition ratio yes that was true uh for years and
+09:14 years that it was too expensive to go after smbs but have you heard this thing called inbound marketing which lets you
+09:19 much more efficiently pull customers in HubSpot had arrived at its first
+09:24 Crucible moment almost all investors are telling you not to pursue SMB
+09:30 do you listen to them or do you hold true to your belief in your product and to your understanding of the Market's
+09:35 needs dares and Brian stuck to their gut we were like trust us it's going to be a
+09:41 huge Market Brian and dares had this very astute Insight which was that
+09:47 everyone is flocking to the Enterprise the competitors at the time eloqua maretto and others that have ceased to
+09:54 exist all of them were moving up Market into this really crowded space with essentially the same solution
+10:00 and it was a total red ocean and SMB was a blue ocean no one was really vying for
+10:07 mind share across smbs the strategy was okay we'll let everybody else go up Market there are
+10:13 millions of smbs out there who could also use this product at some point if
+10:19 we just hunker down and work really hard to solve their problems at some point we'll become the default it's a lot
+10:26 easier to go from S&B to Enterprise like I can't think of any software companies that did really
+10:32 well in the Enterprise and then shrunk it down and really scaled it in S&B but I can think a lot of software companies
+10:38 that started an SMB and moved to the Enterprise and succeeded it's hard to make something complicated easy it's
+10:45 easy to make something easy complicated just overall one of the
+10:50 benefits of building an SMB product is it just kind of builds good product hygiene when you have to build a product
+10:57 for you know thousands tens of thousands hundred of thousands of people you have no choice but to make it
+11:02 simple working with smbs the sale was extremely personal to
+11:09 the extent that we'd actually ask the CEO of the company about their personal and professional goals and we jointly
+11:15 map out a plan to get there we'd figure out how many kids do you have when do you have to send them to college what
+11:20 are your savings what's the recurring Revenue in your business and what's going to get you from point A to point B
+11:26 do you actually have a plan and they're so proud to show you how it's impacted the business it's a very personal
+11:32 conversation it's closer to therapy than it is sales to a CIO there are some Crucible moments
+11:39 where after a path forward is determined the company heads down that road and doesn't look back in hubspot's case even
+11:46 after the company was able to convince investors of their SMB strategy they continued to be those who badgered them
+11:53 to revisit the decision obviously we didn't say something smart enough because we still kept getting the
+11:58 question quarter after quarter for 16 years you had to defend the SMB decision
+12:05 for a very long time there was one venture capitalist who had a board seat
+12:10 and a loud voice at the table who was really just convinced that we were wrong
+12:15 about it and we needed to go to the Enterprise and it was an eventuality and every board meeting would come up and I
+12:22 would just say it was a it was a source of contention in a lot of board meetings
+12:27 and it was almost like I could say a stopwatch from the beginning of the board meeting until this particular
+12:33 board member would bring up Enterprise and so just had to stick with it pretty
+12:39 much every quarter every board meeting every investor meeting the IPO Road show everyone and sometimes they would humor
+12:45 Us it's like oh it's great that you're successful then you figured out SMB but tell us the plan for the Enterprise and our response was always the same we
+12:52 don't have a plan to go to the Enterprise we've done the hard work of making this model work every time after
+12:57 a board meeting when Brian and dares got pressure from anyone around the table to
+13:03 move up Market they'd come back and say we get it we can close bigger deals up
+13:09 Market but we're not going to do that they kind of had the courage of their convictions to say I think if we just
+13:15 hunker down and stay here it's going to be more defensible because nobody else is going to be able to serve these customers the way that we will and
+13:21 nobody else wants to serve these customers the way that we do to me strategy is about what you say no to
+13:29 even more so than it is what you say yes to so the more cowardly or differential
+13:35 move would have been to say sure okay we'll keep our SMB division but we'll build an Enterprise division we'll build
+13:41 some features that are great for Enterprises but suddenly you say yes to everything and you're not really diving
+13:48 deep and becoming an expert in anything honestly I felt like I was doing high impact work work that I borderline would
+13:56 have done for free because of how it felt to to see small business owners
+14:01 emerge from buying the software and following along with the methodology that HubSpot was teaching them and
+14:08 really really changed their businesses their trajectories their lives as a result of
+14:15 it and so it was a counterintuitive controversial decision
+14:22 that required some near-term pain in exchange for long-term reward and they
+14:28 absolutely nailed it their persistence paid off HubSpot Grew
+14:33 From A quar of a million dollars in Revenue in 2007 to 15.6 million in 2010
+14:40 the seed planted with tesa's blog had grown into a full-blown software and consulting company with its own book
+14:46 inbound marketing get found using Google social media and blogs in 2011 sequ
+14:52 began meeting with the HubSpot team we thought the company had massive
+14:58 potential I get introduced to Jim getts one of the partners at sequa he walked
+15:05 into the conference room at seoa and I remember like it was yesterday he shook my hand and as my hand was being shook
+15:11 he said what's it going to take for Sequoia to own a piece of HubSpot and I thought to myself not much
+15:19 actually we can sign a term sheet right now if you were that interested and we had a good chat and then he handed it to
+15:27 at the time a junior employee Pat Grady and it was a very different reception
+15:33 Pat was tasked with really going through all of our numbers to see if this thing was really
+15:39 scaling so when we make investments we try to make a very small number of very
+15:46 high conviction Investments we do lots of homework deeply understand a market try to deeply understand the team that's
+15:52 building in that market and then get into business with them for the long term and so when we were getting into
+15:57 business with HubSpot we did a fairly exhaustive study of the market we talked to a bunch of customers we really
+16:02 understood the numbers that were being produced by the business and a problem
+16:08 that was evident was churn when Pat started digging into the numbers I got
+16:14 very nervous I was pretty sure Pat was going to say no to the deal and go back to gym and say nice guys but math
+16:21 doesn't work and he would have had every right to do it he did not do that he dug
+16:27 into the numbers and he said this could be right if we fix the pricing
+16:33 model here's a story of how we came up with our initial price for HubSpot and
+16:39 realized that we had both just been to business school the first 10 employees had all been to business school all mbas
+16:44 all from Sloan um and this was the conversation it's like okay well we know we need to get a price on the product because we're both Believers in getting
+16:51 a product out there in charge early charge often awesome so we get into the meeting it's like okay so we need to pick a price yep we need to pick a price
+16:57 what do you think the price should be I don't know what do you think the price should be what do you think about $250
+17:03 done and that was it that was the rigor and Analysis that we put into the kind of first price point that we picked for
+17:09 HubSpot 250 is exactly the wrong price point I think a $100 a month or less you
+17:17 can get away with selling something totally touchless at least back then or $1,000 or more you can afford to have an
+17:24 inside Salesforce to do it 250 was we were stuck kind of right in the middle those too so we did kind of pull that
+17:31 number out of the Hat I think we pulled the exact wrong number out of the
+17:36 Hat hubspot's one size fo S pricing was blunt and indiscriminate meaning they
+17:41 captured a fraction of the value they were delivering there were users who left HubSpot because they felt $250 a
+17:47 month was too expensive and there were others who felt $250 was a steal and would have paid far more for the product
+17:54 HubSpot faced its second Crucible moment how should the company change its price pricing model to avoid death by churn
+18:02 the pricing model is the most overlooked critical decision that a company makes
+18:09 the question is not what's at stake when you change your pricing model the question is what's at stake when you don't change your pricing model the fact
+18:14 that it was flawed not even just suboptimal like just broken is that I don't think HubSpot would have survived
+18:21 as a company had we not made that particular change the solution that was not so
+18:26 evident was to introduce a second access to the pricing model so that the price
+18:31 that they were getting from customers was better aligned to the value that they were providing those customers
+18:37 inact said I don't care if you use seats or users or visitors or leads but
+18:45 everybody else out there who's created a successful model in Silicon Valley has what he called a two AIS pricing model
+18:51 that's a term I never heard before a two access pricing model is a powerful tool to scale Revenue it allows
+18:59 you to adjust your pricing along two axes instead of one so a customer can pay based on exactly what they need
+19:05 whether that's access to a greater number of features or more licenses to use those features and as a customer
+19:11 needs change so does the amount charged along those two Dimensions look at Salesforce Salesforce
+19:19 has two axes for its pricing one on the dimension of what features you're buying into and the other that allows them to
+19:26 grow with a customer as they successful so in salesforce's case you know if a
+19:32 company is successful using Salesforce is it's CRM it's going to grow sales and then it can charge more per seat hubs
+19:39 SWAT didn't have the equivalent of that for month after month after month the topic was pricing and there were big
+19:46 debates over what that second axis should be should it be visitors could we
+19:51 do users or seats or should it be contacts or New Leads we ended up after
+19:58 many many months of debating at picking contacts a customer who had 10 contacts
+20:04 in the database might be paying the same as a customer who had a thousand contacts in the database well if you
+20:09 have a thousand contacts in the database chances are you're generating a lot more business than somebody who has 10
+20:14 contacts in the database HubSpot decided to charge customers based on their number of
+20:19 contacts as HubSpot helped a business grow from 10 contacts to a th000 HubSpot
+20:25 would benefit from that growth too by charging the company more for its
+20:30 services essentially HubSpot would grow with a company as its contact database
+20:36 grw so many positive things happened once we kind of figured out the need for second access which is oh now we can
+20:43 kind of grow along two Dimensions as a result of getting that upgrade rate up that actually has theoretically No Limit
+20:49 right and that was life-changing once we kind of unlocked that opportunity to upsells and upgrades then it helped us
+20:55 kind of dig ourselves out of that churn hole I think one one big lesson from the HubSpot
+21:04 pricing model change is if you lead by providing a lot more value than you
+21:11 capture you're kind of creating this Bank of Goodwill that you can tap into later if
+21:17 need be for the sake of building your business I think if HubSpot was not beloved and then they showed up and
+21:25 tried to extract more value from customers it would have been a much tougher convers but I think because they were so beloved
+21:31 when they showed up with the new pricing model they got some breathing room there was a Triumph for the pricing model the
+21:37 day our Revenue retention hit 100% I never thought we would see that day but
+21:43 the day that hit 100% was a joyful day inside of HubSpot looking at it in
+21:50 hindsight that was like a truly like a literally critical decision uh in
+21:55 HubSpot history had we not done that I don't think the the company would have made it or at least not have become the
+22:01 mod of success that it has now while hubs initially focused on
+22:06 helping companies generate leads via inbound marketing around 2013 they became interested in taking the company
+22:12 in a New Direction when companies try to come up with their second product there's a
+22:18 couple of reasons they often do it one is oh we've saturated our current market right now uh we need to find New
+22:25 Horizons and and new new markets to kind of tackle another one is around like a defensive posturing ours was a mix of
+22:31 the two one was a defensive okay we're in the marketing software business the reality is uh the marketing software
+22:38 always works with a CRM and whoever owns the CRM over time is likely going to
+22:43 win CRM stands for customer relationship management so get them there close them
+22:49 keep them happy when people talk about CRM they're talking about three broad
+22:54 categories of software marketing which get gets people to your door sales which
+23:01 helps to turn those people into customers and then support or service
+23:06 which helps to keep those customers happy and so those are kind of the three legs to the stool for
+23:12 CRM the early um survey we had done where 20% were using particular CRM 20%
+23:17 were using some other one of the 60% was like okay well those 60% of companies that are not using a CRM need to be and
+23:24 the question we ask ourselves is look like what's keeping them from using a CRM to things one is it was overwhelming
+23:30 it was just too complicated the existing products that were out there or it was too expensive and they just didn't want to spend the money and we're like okay
+23:35 if we can remove both those barriers to entry we may have something here when we
+23:41 decided to go into CRM similar to our decision to do SMB we got a lot of push back should we
+23:47 move from a marketing app to a CRM platform huge pivot and it was a huge
+23:54 pivot we made 6 months before the IPO so explaining it to public public investors was very difficult and that was
+24:01 definitely a counterintuitive move for us and many of our board members a lot
+24:08 of enture capitalists thought stay out of that space stick to your marketing second products never
+24:14 work there was another reason investors were skeptical the market was dominated
+24:19 by one giant CRM player Salesforce there was a vendor doing
+24:26 quite well in the space in Salesforce uh they had Network effects they were
+24:31 they were cranking it was terrifying a HubSpot is very
+24:37 clearly David and there's very clearly a Goliath
+24:42 that is basically Anonymous with CRM and so who is this little company in
+24:49 Boston that's historically focused on marketing Automation and inbound marketing software who do they think
+24:56 they are to challenge the Goliath and launch a CRM here another Crucible moment should
+25:04 HubSpot stay in the marketing software lane or divert resources to a whole new platform and risk getting crushed by
+25:12 Goliath the whole management team sort of had their heads around how this thing would work and when we finally put it in
+25:19 there was a lot of consensus around it we created a startup inside of HubSpot to create the
+25:24 CRM before HubSpot launched CRM which is a broader piece of technology it offered
+25:32 little tools like track who opens your email and see when someone downloads an RFP that you sent the first thing they
+25:40 built was more a tool for sales reps to be more productive it was called signals
+25:47 and that was a premium little app that sales reps could use one of the reasons
+25:52 certain parts of the team were kind of gravitating towards tools is that tools are bought so you can put a website up
+25:57 there that says oh this thing cost $10 a month or whatever and people will come to the website and buy it platforms are
+26:02 sold right like causing someone to make a platform shift or invest in a platform takes carbon based life forms to
+26:09 convince them why that's important why yours is okay because they're making a career defining long-term decision for
+26:14 their company we're going to make it free so we're going to remove all possible reasons for people to say no to a CRM we generate all these leads for
+26:21 you and then you're using our sales tool to try to work with those leads why don't we just give you a free database
+26:28 so you can stick that stuff in and it turns out that the thing that sits at the heart of a CRM system is that
+26:34 database and so instead of saying aha now we have a CRM they just said well
+26:40 here's a free database you know you guys should use Salesforce if you need a CRM but if you don't need a CRM if you just need a database you can stick all your
+26:46 leads in you know here's our database that's a much more compelling
+26:52 pitch because you're not going after where the money is you're just going after where the need is in the underserved Market
+26:58 so here was another Crucible moment for HubSpot where the company made a really
+27:05 risky move which was to launch its first product CRM for an adjacent function the
+27:12 sales function and to give it away for free forever in order to gain distribution
+27:20 and ubiquity all the atlassian and dropboxes of the world and then we said
+27:26 oh should we build a series of apps for sales reps or should we just do the hard work of building a CRM system down below
+27:34 it and worry about the apps later and we flipped it about a year into it and and
+27:39 decided no we're not a sales tool player we're a CRM platform player so we have
+27:45 an annual conference at HubSpot that's called inbound at the time CRM was announced it was probably 10,000 or so
+27:52 attendees I remember when HubSpot announced CRM to the world and it was
+27:58 kind of terrifying and kind of exhilarating hubspot's stealthy entrance
+28:05 into the CR Market with a fremium database was a prime example of lowlevel
+28:11 disruption David had Reed his slingshot aimed squarely at kif there were six or
+28:18 seven quarters in a row where every single quarter the growth rate
+28:24 accelerated every single quarter the gross margins went up and so there was a
+28:29 six or seven quarter period where all of a sudden the numbers just got better and better and better and there were
+28:34 probably multiple reasons for that but one reason I believe is that they had finally gone from being one of many to
+28:41 just being the default and if you fast forward to today they're really the only viable threat to Salesforce and there's
+28:48 a huge chunk of the market where HubSpot is far more effective than
+28:54 Salesforce the only way to compete in a market as large as CRM with a competitor
+28:60 as tough as Salesforce you can't beat them with goto Market tactics or brud Force you can only beat them if you have
+29:06 a better product and fortunately HubSpot had that and yet again HubSpot got to
+29:12 embrace its Playbook of earning loyalty by offering value before capturing value
+29:19 and over time it built sophistication and Enterprise Readiness into the product such that they can move up
+29:25 market and really challenge the Goliath in a more formidable [Music]
+29:31 way I think the decision to move into CRM is a little bit like a decision on the pricing model had we not done it the
+29:40 existing CRM players would have added marketing and would have made our lives
+29:47 very difficult had we stayed Standalone and I think what would have happened is we probably would have had to sell the
+29:53 company for HubSpot growth meant survival today they're not only surviving but
+30:01 they're one of the most successful SAS companies of the last decade they have an amazing CRM product
+30:08 that they can keep going up Market with and that is a sure path to billions more
+30:14 of Revenue back to The Crucible moments they've had in the past should they delay some of that gratification and go
+30:20 even deeper into the workflows of the S&B customers and worry more about
+30:26 Enterprise further down the road so that's one interesting question for him today you've got one-way doors and
+30:32 two-way doors and two-way doors are decisions you can make and reverse it and that not a lot of damage happens we
+30:39 purposely made the move into CRM a one-way door we're not coming back in business school they say start an
+30:45 innovation group try lots and lots of things and see what sticks we took the exact opposite approach and we said
+30:51 we're going to do this if it kills us as Technologies like AI transform how
+30:57 business operate HubSpot is evolving while staying grounded in its convictions we've gone through some
+31:04 Crucible moments we made pivotal decisions what we want to make sure we instill is number one is always ask
+31:10 ourselves you know how do we solve for the customer stay kind of grounded in that and number two and it's going to sound a little bit cliched because it's
+31:16 a little cliched is to have the the humility and not to be know at all I got this from Brian is to be a learn it all
+31:22 right like we want an organization that's constantly curious It's like oh we haven't figured everything out I
+31:28 would say The Crucible moments are all around counterintuitive decisions or
+31:33 places where we zigged instead of zagged and then our engineers and designers build beautiful applications on top
+31:39 using that and that's our competitive advantage in the marketplace is how easy and elegant these things are and as we
+31:45 add more hubs we'll be able to continue to do that I'm a big skeptic when it comes to Conventional wisdom and I think
+31:52 that's in our bones and we'll continue join us next time as we hear
+31:58 from Hussein Raman and Alexa of jurn and learn how a revolutionary sound company
+32:04 became a cautionary tale this has been Crucible moments a podcast from sequa
+32:10 [Music] Capital Crucible moments is produced by
+32:16 the Epic stories and Vox creative podcast teams along with seoa
+32:22 [Music] capital special thanks to Brian Halligan dares Shaw Pat Grady and Danny Herzberg
+32:29 for sharing their [Music]
+32:37 stories

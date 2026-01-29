@@ -1,0 +1,730 @@
+00:00 Often times what tends to happen at
+00:02 
+
+00:02 especially at the successful games
+00:04 
+
+00:04 company is that sometimes these game
+00:06 
+
+00:06 developers who actually build the games
+00:08 
+
+00:08 they sort of lose control and the
+00:10 
+
+00:10 control like moves to the upper
+00:12 
+
+00:12 management and and and so forth and then
+00:14 
+
+00:14 this idea kind of start to grow on me
+00:16 
+
+00:16 and and and sort of my fellow
+00:18 
+
+00:18 co-founders. What if you would uh found
+00:20 
+
+00:20 a completely new type of games company
+00:23 
+
+00:23 and we you would almost like flip the
+00:24 
+
+00:24 organizational chart upside down.
+00:27 
+
+00:27 Meaning that instead of like the upper
+00:29 
+
+00:29 management and the leadership like
+00:31 
+
+00:31 owning the vision, that vision would be
+00:33 
+
+00:33 owned by the individual game teams. And
+00:36 
+
+00:36 we start to think these individual game
+00:38 
+
+00:38 teams as very kind of that even led to
+00:40 
+
+00:40 the name of Supercell because we start
+00:42 
+
+00:42 to call these startups or these teams
+00:45 
+
+00:45 cells and then that led us to the name
+00:47 
+
+00:47 named Supercell. So the whole idea was
+00:49 
+
+00:49 that let's give the power to the uh game
+00:52 
+
+00:52 developers and and let's make them the
+00:54 
+
+00:54 superstars of the company.
+01:04 
+
+01:04 So so basically when we founded
+01:06 
+
+01:06 Supercell the vision was um that we
+01:10 
+
+01:10 wanted to create these games that would
+01:12 
+
+01:12 be played by as many people as possible
+01:14 
+
+01:14 but then also had this longevity. We
+01:17 
+
+01:17 were asking ourselves what is the games
+01:19 
+
+01:19 platform that has the widest possible
+01:21 
+
+01:21 reach. It's 2010 and at that time it
+01:24 
+
+01:24 actually was Facebook. So we thought
+01:25 
+
+01:25 that okay let's that's going to be the
+01:28 
+
+01:28 the the platform of of entry. And then
+01:31 
+
+01:31 we start to build our first game. It was
+01:32 
+
+01:32 this realtime MMO um called Gunshine. We
+01:36 
+
+01:36 put that game to a soft launch and we
+01:37 
+
+01:37 actually got some pretty promising
+01:39 
+
+01:39 metrics. And then on back of those
+01:41 
+
+01:41 metrics, we also went on and raised our
+01:43 
+
+01:43 series A round of financing and and the
+01:46 
+
+01:46 purpose of that uh round of financing
+01:48 
+
+01:48 was actually to start to scale the game
+01:50 
+
+01:50 significantly through, you know,
+01:52 
+
+01:52 marketing and and and those type of
+01:54 
+
+01:54 things. A few actually just a few months
+01:57 
+
+01:57 after we had literally raised the series
+01:59 
+
+01:59 A uh at this partly on this promise of
+02:02 
+
+02:02 this successful game, we decided to kill
+02:04 
+
+02:04 the game, kill Gunshine and and and and
+02:07 
+
+02:07 not only that, but they also decided
+02:09 
+
+02:09 that Facebook actually is not the right
+02:11 
+
+02:11 platform for the type of games we want
+02:13 
+
+02:13 to build. It wasn't the most pleasant
+02:15 
+
+02:15 call to make. I I remember back in the
+02:17 
+
+02:17 day, like, you know, telling somebody
+02:19 
+
+02:19 who has just invested, you know, €8
+02:21 
+
+02:21 million, this game isn't working out.
+02:24 
+
+02:24 And by way, the platform strategy that
+02:26 
+
+02:26 they all believed in isn't working out
+02:27 
+
+02:27 either. And we're going to throw
+02:29 
+
+02:29 everything that we've built so far, you
+02:30 
+
+02:30 know, down the toilet and we're going to
+02:32 
+
+02:32 focus on on on on tablets and mobile. I
+02:36 
+
+02:36 I think this is where like the best
+02:37 
+
+02:37 investors like really show up. It's easy
+02:39 
+
+02:39 to be supportive when things are going
+02:41 
+
+02:41 well, but the question is that what will
+02:43 
+
+02:43 they do when things aren't going well
+02:46 
+
+02:46 and and here that was an incredible sort
+02:48 
+
+02:48 of a moment and and you know just a
+02:50 
+
+02:50 testament how how great these people
+02:52 
+
+02:52 there. Yeah. killing uh Gunshan and and
+02:55 
+
+02:55 uh you know uh pivoting to a a mobile I
+02:59 
+
+02:59 I I do think it it sort of shaped us a
+03:02 
+
+03:02 lot like what we were to become as a
+03:04 
+
+03:04 company. It [music] really shaped our
+03:06 
+
+03:06 culture in in in many different ways. So
+03:08 
+
+03:08 of course you know um we learned like
+03:11 
+
+03:11 how valuable uh lessons you can learn
+03:13 
+
+03:13 from from [music] these failures. And I
+03:15 
+
+03:15 still remember fondly the lead of that
+03:18 
+
+03:18 that game team who was telling me that
+03:20 
+
+03:20 hey in the afternoon I'm going to just
+03:22 
+
+03:22 get the whole company together and I'm
+03:24 
+
+03:24 just going to like share like what we
+03:26 
+
+03:26 learned through through this failure.
+03:27 
+
+03:27 And then I was thinking to myself that
+03:29 
+
+03:29 wow sounds like a very valuable meeting
+03:32 
+
+03:32 but you know it's it's it's probably
+03:33 
+
+03:33 going to be a bit sad. So what could I
+03:35 
+
+03:35 do to kind of cheer it up a little bit?
+03:36 
+
+03:36 And then I just had this idea that I'll
+03:38 
+
+03:38 just get a few bottles of champagne and
+03:40 
+
+03:40 I'll just give them to the team and we
+03:42 
+
+03:42 can all you know have them together and
+03:44 
+
+03:44 maybe that'll make it a bit more more
+03:45 
+
+03:45 fun. And then I did exactly that and
+03:47 
+
+03:47 then next time when they kill the game
+03:49 
+
+03:49 did the same thing. And that tradition
+03:50 
+
+03:50 is still very much alive. the whole you
+03:54 
+
+03:54 know history of Supercell like many of
+03:56 
+
+03:56 the best things and many of the best
+03:58 
+
+03:58 things we've learned have actually come
+03:59 
+
+03:59 through those failures which has led to
+04:02 
+
+04:02 me think that are these failures even
+04:06 
+
+04:06 failures in the first place I mean
+04:07 
+
+04:07 should we even call them failures maybe
+04:10 
+
+04:10 we should just call them like
+04:11 
+
+04:11 experiments and sometimes experiments
+04:14 
+
+04:14 are you know or you have a hypothesis
+04:16 
+
+04:16 and sometimes the hypothesis [music]
+04:18 
+
+04:18 proves to be true sometimes it proves to
+04:21 
+
+04:21 be false But in either case, you learn
+04:24 
+
+04:24 something new. And maybe that's how we
+04:26 
+
+04:26 should think about new games as as well.
+04:31 
+
+04:31 So, so the decision to to kill Gunshine
+04:34 
+
+04:34 and and you know, pivot from Facebook to
+04:37 
+
+04:37 mobile, you know, why that was a pivotal
+04:40 
+
+04:40 moment for for Supercell, you know?
+04:43 
+
+04:43 Well, quite simply, without that
+04:44 
+
+04:44 decision, like Supercell wouldn't be uh
+04:47 
+
+04:47 you know, the Supercell that we know
+04:49 
+
+04:49 know today. And of course we got
+04:50 
+
+04:50 extremely lucky with the timing. It was
+04:53 
+
+04:53 a perfect time to do e exactly that
+04:56 
+
+04:56 because you know there still was like a
+04:58 
+
+04:58 you know a lot of opportunity a lot of
+04:60 
+
+05:00 space for like really high quality games
+05:02 
+
+05:02 really high quality social games and
+05:04 
+
+05:04 nobody was really like that focused on
+05:06 
+
+05:06 it at at that time. early um 2012, I had
+05:10 
+
+05:10 a prototype of both Hayden and Clash of
+05:12 
+
+05:12 Clans in my tablet when I went to GDC um
+05:15 
+
+05:15 that year, a game developers conference
+05:17 
+
+05:17 and I met with uh some pretty uh senior
+05:20 
+
+05:20 people from our industry and I was
+05:22 
+
+05:22 actually showing them Clash of Clans.
+05:24 
+
+05:24 Basically, the question that I got was
+05:26 
+
+05:26 that why would anybody play this game?
+05:28 
+
+05:28 They just didn't like understand the
+05:31 
+
+05:31 game and they didn't think it's it was
+05:33 
+
+05:33 fun and they couldn't see anybody
+05:34 
+
+05:34 playing the game. And then later on like
+05:36 
+
+05:36 been reflecting on that and maybe it was
+05:38 
+
+05:38 because it was such a different game and
+05:40 
+
+05:40 and from their perspective it wasn't
+05:42 
+
+05:42 even a game. I was literally asked that
+05:44 
+
+05:44 why don't you guys build like real games
+05:46 
+
+05:46 and and who would play games on these
+05:48 
+
+05:48 devices anyway? I I still remember when
+05:50 
+
+05:50 we launched Heyday to to kind of beat
+05:53 
+
+05:53 our soft launch in in Canada and and
+05:55 
+
+05:55 then the first metrics start to come in
+05:57 
+
+05:57 and and they were actually so good that
+05:59 
+
+05:59 that for for the first maybe few days we
+06:02 
+
+06:02 thought that there's something wrong
+06:03 
+
+06:03 with our analytic system. So, these
+06:05 
+
+06:05 figures possibly can't be, you know,
+06:08 
+
+06:08 real. And then the exact same thing
+06:10 
+
+06:10 happened uh on Clash of Clans just a few
+06:12 
+
+06:12 months later. And it was a pretty uh
+06:14 
+
+06:14 sort of incredible uh few few months
+06:17 
+
+06:17 because I I remember we were
+06:19 
+
+06:19 celebrating. we got to the 10,000 uh
+06:21 
+
+06:21 daily active users and you know we I I
+06:24 
+
+06:24 went we we bought some kind of cake and
+06:25 
+
+06:25 and everybody at the office had it and
+06:27 
+
+06:27 just a few days even later a week later
+06:30 
+
+06:30 we got to like 50,000 daily active users
+06:32 
+
+06:32 and and then you again get a cake and
+06:34 
+
+06:34 then you go to 100,000 and then then you
+06:36 
+
+06:36 go to half a million daily active users.
+06:38 
+
+06:38 another cake. Uh million daily active
+06:41 
+
+06:41 users and then this okay 10 million 30
+06:44 
+
+06:44 million 50 million 70 million 100
+06:47 
+
+06:47 million that's a lot of cake and and and
+06:50 
+
+06:50 all of this actually happened like uh uh
+06:53 
+
+06:53 in a in a relatively like short period
+06:55 
+
+06:55 of time with only basic I guess on the
+06:58 
+
+06:58 back of like heyday uh Clash of Clans uh
+07:01 
+
+07:01 uh Boom Beach. So sometimes I still need
+07:03 
+
+07:03 to have to pinch myself to like say that
+07:05 
+
+07:05 it wasn't a dream or it actually did
+07:08 
+
+07:08 happen.
+07:11 
+
+07:11 I would say it's never been this hard to
+07:14 
+
+07:14 to launch successful new games. And it
+07:18 
+
+07:18 it it is like, you know, obviously the
+07:20 
+
+07:20 competition is is tough. You know,
+07:22 
+
+07:22 there's like so many great games out
+07:24 
+
+07:24 there and there a lot of choice for the
+07:26 
+
+07:26 consumers, which is of course great. If
+07:29 
+
+07:29 you look at all of the play time in in
+07:31 
+
+07:31 the world, 60% of the play time went to
+07:34 
+
+07:34 titles that are six years old or older
+07:36 
+
+07:36 than that. And it's sort of like a
+07:38 
+
+07:38 double-edged sword from Supercell
+07:40 
+
+07:40 perspective because on one hand, you
+07:42 
+
+07:42 know, we are lucky because many of those
+07:44 
+
+07:44 old quote unquote old titles that people
+07:47 
+
+07:47 play happen to be from us. You know,
+07:49 
+
+07:49 they play heyday, they play Clash of
+07:51 
+
+07:51 Clans, they play Clash Royale. But the
+07:53 
+
+07:53 bad news also from Supercell point of
+07:55 
+
+07:55 view is that it's just also it's also
+07:57 
+
+07:57 harder for us to launch these new games,
+07:59 
+
+07:59 you know, for those reasons. So the so
+08:02 
+
+08:02 the the bar is is is very very high and
+08:04 
+
+08:04 I think the only way to kind of overcome
+08:06 
+
+08:06 that bar. It's just to be like even more
+08:09 
+
+08:09 bold, you know, take more risk, build
+08:11 
+
+08:11 something that, you know, hasn't been
+08:12 
+
+08:12 built before [music] and and and all
+08:14 
+
+08:14 that. And and you know, that's
+08:16 
+
+08:16 definitely what we're trying to do.
+08:17 
+
+08:17 Well, like if I think about the future
+08:19 
+
+08:19 of of Supercell, I almost need to go to
+08:21 
+
+08:21 the beginning and why they even founded
+08:23 
+
+08:23 the the company. So our like very
+08:25 
+
+08:25 ambitious bold dream was to build
+08:27 
+
+08:27 something that would basically like uh
+08:30 
+
+08:30 you know be remembered forever like our
+08:32 
+
+08:32 games should be remembered forever and I
+08:34 
+
+08:34 should uh the company and you know we
+08:36 
+
+08:36 have always looked up to companies like
+08:38 
+
+08:38 Nintendo or or say Lego for example and
+08:43 
+
+08:43 uh and obviously you know take Nintendo
+08:45 
+
+08:45 like we're more than 100 years old we
+08:47 
+
+08:47 are 15 [music] years old so it's still
+08:49 
+
+08:49 very early on our journey and uh you
+08:52 
+
+08:52 know we have a long way to get there.
+08:54 
+
+08:54 But I don't know. Uh but that's that's
+08:56 
+
+08:56 what we want to do and that you know
+08:57 
+
+08:57 that you know gives us a sort of energy
+09:00 
+
+09:00 and passion every single day and and
+09:03 
+
+09:03 it's just very exciting to be on this
+09:04 
+
+09:04 path. But as I said it's still very
+09:06 
+
+09:06 early days for Supercell and feels that
+09:08 
+
+09:08 there's so much opportunity left and so
+09:10 
+
+09:10 many things that you can still still do
+09:12 
+
+09:12 better.

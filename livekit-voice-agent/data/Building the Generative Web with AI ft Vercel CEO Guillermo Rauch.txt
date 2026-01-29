@@ -1,0 +1,582 @@
+00:00 It's really nice that now we have this really powerful tool to input that
+00:05 guidance in a very very very scalable way. Right? Like if we're talking about the world of development, you're talking
+00:11 about like you know maybe singledigit millions, twodigit millions of developers. Now we can actually give
+00:17 this guidance and direction to a much broader set of people. Um I it's exciting for someone I think that's
+00:23 getting into building software today because in some ways you're kind of leapfrogging the past generation. The
+00:28 best generation has their gray hairs and hard-earned lessons on how to build these interfaces, but people that are
+00:34 getting into software today have, you know, this incredible access to what we've all learned collectively. So, it's
+00:41 super exciting. [Music]
+00:58 Today we're speaking with GMO Rouch, CEO of Verscell, for a conversation about how AI is reshaping software
+01:04 development. GMO shares insights from building Vzero, Verscell's text to app generator that's attracting not just
+01:10 developers, but designers and marketers, essentially anybody who can describe what they want to build. GMO predicts
+01:16 that we're heading towards a generative web where applications are created on demand for individual users, potentially
+01:22 making traditional downloadable software obsolete. He also reveals how Chat GBT has unexpectedly become one of Versel's
+01:29 fastest growing customer acquisition channels, offering a glimpse into how AI is already transforming business fundamentals. Enjoy the show.
+01:37 GMO, thank you so much for joining us today. Excited to be here. I want to get right into it. It seems like the coding market is being turned
+01:44 upside down, you know, blown up in different ways, and it seems like the kind of front-end web developer segment
+01:50 of the market is the one that's changing the most rapidly. uh what are you seeing and what do you think happens to that
+01:56 core community? Yeah, it seems like whatever LMS are good at, you know, like people get really excited about. And in a couple
+02:02 years ago when Chad GBD came out, one of the first things we noticed at Verscell was Chad GBD is extremely good at
+02:09 writing React code and Tailwind code, which is the styling code that most most web developers use
+02:15 these days. And we got really excited because we saw, okay, you know, Verscell has been in the business of giving
+02:21 people tools and frameworks to make it really easy to develop websites and publish them online. But it seems like
+02:27 this is a almost like a generational shift towards something that is even better than a framework. It's not exactly a framework. Like
+02:34 Nex.js is like a React framework. You know, you sit down and you write code and it makes it a lot easier to write an
+02:39 application. But LLMs seem to me like a generational leap, like more general
+02:45 than a framework and potentially something that opens up the top of final to every person on the planet because
+02:51 all you need to know is to you know use your natural language and generate code.
+02:56 And so that actually inspired us instead of like um perhaps the typical reaction
+03:02 would be like you either ignore it or you're in fear of it. Uh we really deeply embraced it. I personally really
+03:08 embraced it because at the time I was using copilot which was the autocompleter inside your IDE mostly
+03:14 focused on that at the time and then I realized okay like this feels like the next big thing in AI so we
+03:20 created Vzero which is a text to app or text to front end and ever since you
+03:25 know it's been now a couple of years uh its growth has been astronomical and we've learned a lot about what AI can do
+03:31 to I think power the next generation of software builders which might not be just developers I think That's the
+03:37 biggest discontinuity or the biggest thing we've seen on the market. There is AI coding tools that are now attracting
+03:44 what I would call dev adjacent profiles like designers, marketers, um basically
+03:50 anybody with a keyboard that I sometimes make the joke instead of like yapping into your team chat application just
+03:56 yapp into vzero and you're creating more value. That's awesome. when we first did our
+04:01 internal landscape on, you know, GPT3 and what it might mean, I remember one of the example apps we laid out was kind
+04:08 of text uh to to front-end uh uh web app. And awesome.
+04:13 It's crazy to see that VZ, you know, out in its full full power. And you know, I
+04:18 got a series B pitch the other day from a company whose front end was built from from Vzero. Nice. Well, that's the thing about like
+04:24 seat rounds. You used to raise money to create your first prototype, right? And like the cost of like coming up with the
+04:30 idea and then transforming it into software is pretty high. So you would raise a seat around to get the prototype. What I hear these days is
+04:36 that these VZero prototypes are actually replacing pitch decks. Right? By the time you get to your pitch, it'd be rare
+04:42 these days to not have a working front end because the cost has gone so low. And and I think the iteration velocity
+04:49 that is giving the wouldbe builders is amazing, right? like you can go through like hundreds of prototypes before you
+04:55 settle on your first idea. With Vzero as it exists today, what are you most proud of and what do you feel
+05:01 is not quite there yet? Most proud of is the reach. So over 3
+05:06 million builders, the level of engagement and retention is really high. So people are actually getting a lot of
+05:12 value. Teams are getting a lot of value. We have Fortune 10 using the product on
+05:17 the enterprise tier. So, I think the number one thing is people are excited about agents, but this is an agent
+05:24 that's working out in the real world and providing value. One of the things that I'm proud of is how much we've extracted
+05:31 lessons from building Vzero that we're giving back to the world. We've written extensively about how we're building it.
+05:38 We've opened the underlying framework, the AI SDK. We recently released the
+05:44 Vzero model. So we're inviting entrepreneurs to innovate in the space and create their own agents that can
+05:51 build websites, application market marketing uh products etc.
+05:56 I think another thing is quality from the beginning to now. To your point, anybody that used Chachet
+06:03 realized very quickly, oh, it can do haikus, it can do poems, and he can write code. It's pretty cool, right? And
+06:09 so getting it to the point where it can be reliable. That took a lot of work,
+06:15 fine-tuning. We trained our own custom code application model that sits in front of the frontier model. All in the
+06:22 service of reliability. You want to come in, you create a generation, it has to work.
+06:27 Well, yeah. One of the things that I think you've been known for for many years now, even before Vzero, was
+06:32 quality and in particular the developer experience. And I know there's an aspect of taste that goes into that. I'm also
+06:40 wondering how do you systematize that? Like is there a standard definition for quality or are there metrics that you
+06:45 track, you know, to just ensure that the bar remains high and that the developer experience remains pristine? Yeah, one
+06:52 of the things that excited me a lot about building AI products is that the feedback loop and the metrics come built
+06:59 in. You've probably seen a lot of pitches from would be entrepreneurs that maybe they get they put the cart before
+07:05 the horse and they're not tracking their growth and and measuring things correctly and you realize wouldn't it be
+07:11 cool if like every product you created came with a standard set of metrics so that you're off to the races but you
+07:17 have a compass on where to go. Yeah. AI products have that kind of built in which is amazing right like if
+07:24 you look at the first coding AI product which is copilot what it did is you
+07:29 write some code and it produces ghost text right after your code it proposes a
+07:34 completion the creator of that now has a really cool metric to evaluate the progress of
+07:40 their product with which is the acceptance rate of the completion so it's like you're building your product
+07:45 and then now like you have a dashboard that has one gigantic metric that says, "All right, we're at 51%." You come back
+07:52 to the office the next week, "Oh, cool. We we're at 52%. You've replaced the model. All right, cool. What are we seeing?"
+07:58 So, I I love that aspect. We have that in VZ in spades because we have, you
+08:03 know, the the fact that people want to deploy these applications into the real world. That's a very high signal of
+08:09 engagement for us. We have the what happens to the application later on, right? Like are people coming to the
+08:14 application uh integrations they install? But we also have the fundamental one which is that does the code work? Is it you know rendering
+08:21 correctly? So there's an aspect of the product that is the reliability of creating a functioning application. But
+08:27 the other one that is more subjective is taste, right? How can we embed all of the best practices that we've learned
+08:34 over over the years on creating products on the web. little things like you know for example on iOS when you open a
+08:42 website you want to make sure that the theme bar which is the uh what sits outside your website the color of the
+08:49 Safari theme bar has to match the background color of the page if it doesn't maybe most people would
+08:55 not notice it's off but when it's on it's just so delightful right it's like a continuity of the canvas it takes over
+09:02 the entire screen so little things like that in the past we would have to you know build frame frameworks or education
+09:09 and hoping people upgrade and nowadays we can embed all of those learnings into
+09:14 the model and we can say okay when you're going to generate a landing page make sure that that happens and this
+09:21 cuts across so many things that's why I call it almost like the next thing after frameworks
+09:26 uh because frameworks worked really hard both the designers and the users to put you into a pit of success
+09:33 if you fit into the framework you know a lot of things about the world will true around performance, security, etc. But
+09:40 the world is very dynamic. People are fluid. They want to try different things. So it's really nice that now we
+09:46 have this really powerful tool to input that guidance in a very very very
+09:52 scalable way, right? Like if we're talking about the world of development, you're talking about like you know maybe
+09:57 singledigit millions, twodigit millions of developers. Now we can actually give this guidance and direction to a much
+10:04 broader set of people. Um, I it's exciting for someone I think that's getting into building software today
+10:09 because in some ways you kind of leaprogging the past generation. The past generation has their gray hairs and
+10:15 hard-earned lessons on how to build these interfaces, but people that are getting into software today have, you
+10:21 know, this incredible access to what we've all learned collectively. So, it's super exciting.
+10:26 I love it. Before we go deeper into the AI stuff, maybe can we take a step back? Can you situate us and orient us towards
+10:32 what is Verscell? How do you see your company's role in the world? Yes. And how does the slate of AI products we've been talking about, Vzero, etc. How do
+10:39 those fit into kind of Verscell in the preAI era? Yeah. When Versell was born, it sort of
+10:45 started out of the pain that I felt on bringing a cutting edge website online.
+10:53 On one hand, I had to configure all of the cloud provider stuff from scratch.
+10:59 And there was a lot of progress in making the cloud better open source with things like Kubernetes etc. It was
+11:05 intensely painful to like just put my idea online. And then I felt the same on the tools
+11:11 side. It's before Verscell I feel like it was very hard to bring tools and
+11:17 cloud infrastructure together which is what led to the invention of NexJS.
+11:22 But it was always that fitness function of I want to bring my idea online immediately. So chapter one of Versel
+11:29 you can think of it as uh infrastructure on autopilot an autonomous cloud and we did this with
+11:36 developer experience that's the number one tool think of it as a Trojan horse you want to automate the cloud how do
+11:42 you do it do you you know teach courses do you sell certifications or do you give people the best possible developer
+11:49 experience on the planet that's what we set out to do chapter two of oursel feels like again the postframework era
+11:55 we automated infrastructure can automate writing the software to begin with. You know, you can hit diminishing returns
+12:02 with frameworks. Like we would obsess over how many characters you need in order to create a really cool page or
+12:08 component. When I would give presentations about introducing XJ, I would say, okay, what is the minimum
+12:13 number of steps I have to take? Create a folder, create a file, inside that file, export my first React
+12:20 component. So, I had it almost down to a mathematical science, right? like what is the number of characters between you
+12:27 and aha in a successful outcome online. So with AI being able to generate code,
+12:33 I think we're opening up this new frontier of automating it all potentially, right? And putting the
+12:38 putting the human in in the driver's seat from a creative perspective and from what is it that I'm trying to ship,
+12:45 right? Uh what what do you want to ship is actually the the question we ask when you go to vzero as the as the headline
+12:52 for the prompt. Hm. What are your strongly held beliefs and have any of those changed uh with with
+12:58 the rise of AI generated code? Strongly held beliefs, I'll tell you
+13:05 the meta of that is that I encourage people to not have too many strongly held beliefs, right?
+13:11 If anytime people say, well, AI can't do this, I try to I try to be on the side of AI.
+13:19 like well you know I've caught myself thinking that and then 6 months later 3 months later nine months later the
+13:25 situation changes. So that's one. Um another big one for me is that we're all
+13:32 in the business of producing an artifact or outcome that we want to share with the world.
+13:38 So I try to think always from the first principles of like look everything is up for grabs in this generation of
+13:44 software. any any habit any assumption about who the persona is that is going
+13:50 to be able to build something I think is currently up for disruption. So I I pick on chat apps a lot because you know the
+13:57 assumption is imagine that you all are going to start a startup tomorrow. What are the set of tools that you actually
+14:03 like procure? What is the first things that you install? Where do you track
+14:08 your price? All of these things I think are going to be disrupted by AI. M uh and uh I like to always think from
+14:14 clean slate I guess that's my strongly uh held belief something I do as a habit is any weekend I try to start something
+14:21 from scratch like whether you know use for sale so on one hand I get to dock through the platform and try it out but
+14:28 also I'm always doing this exercise of like what else can we remove how can we
+14:33 remove that friction from idea to to application bringing bringing new things online
+14:39 you talked about you know developer experience first that was the most important thing before uh before
+14:44 thinking about the infrastructure. Um what are some of the things that you did to nail the developer experience and do
+14:49 you think a great developer experience changes in this act two of AIdriven code? Yeah, so number one is we realized early
+14:57 on that in some ways the world had its priorities reversed. People got really
+15:02 excited about the technology cloud infrastructure and so a developer would sit down and they would start with that.
+15:09 You would start your project by creating a cluster, resources, cloud formations,
+15:15 terraforms, and things like that. But really, if again, if you think from first principles, you're not trying to
+15:21 create like you're not going to give your customers infrastructure. Yep. You have to always think backwards from the end user. One piece of advice that I
+15:28 give to people that want to get into the world of dev tools is remember that you have two customers. You have your direct
+15:35 customer who's the developer, but then you have to be thinking about what is that developer trying to create? What is
+15:42 their customer? So, it's a powerful and actually intellectually challenging position to be in because you're
+15:48 thinking, okay, I'm selling something to you who's going to sell something to somebody else. So, there's by definition another hop or layer of interaction. So
+15:54 I think something that we did well was we set out to create a great developer
+16:00 experience that was in the service of user experience. I'm always keeping the end user in mind.
+16:07 I I try to an exercise that I do all the time is okay I'm going to go to a new website that launches a new AI product.
+16:14 Is it great or not? As an end user like how does it feel? And then work backwards
+16:20 to what's powering it. And this sometimes creates a creative tension between because it might be easier for
+16:27 me if you're the developer, I might be able to sell you something that gives you, if you think about it as a video
+16:33 game, like imagine like plus 10 happiness points and then you sell it to the end user.
+16:39 Let's let's see what happens a quarter, two quarters in because your users are not happy. Y so your short-term gratification did not
+16:46 pan out into a successful business outcome. So you have to be extremely thoughtful about navigating that tension. And sometimes in the early days
+16:53 I I got it wrong or like you know I would get the developer extremely excited about a new thing or a new
+16:59 feature or even something as subtle as like an extra configuration flag or sometimes it's an operational limit that
+17:06 you relax. This this always catches the wouldbe infrastructure uh entrepreneur.
+17:11 Developers love weird stuff because you think you think okay um I'm going to make it unlimited. People are
+17:17 going to love this. And then you realize well unlimited is not really good recipe for operational excellence.
+17:24 You have to think about all of the services and infrastructure that are going to have to deal with this entity that has an unbounded property. And so
+17:31 that's a good example of like navigating that tension because if you're buying my product, you may think, okay, like why
+17:37 is the quota not infinity? And I'm like, oh, you know, like it's hard to explain sometimes. And like so navigating that
+17:44 tension, I think is one of the one of the the key secrets of success. and it's it's hard to get right. Can you talk a bit about the AI
+17:50 inflection at Verscell? I think last year you publicly announced some stats. Can you share just the latest in terms of how AI has changed the uh changed the
+17:58 whole speed of your business? Yeah, I think the two most dramatic things when I look at our journey is
+18:04 number one the zero cost our entire user base numbers to double year-over-year.
+18:11 So that kind of gives you a glimpse of the developer of the future. It took us
+18:16 years of being a pretty, you know, hypy successful company to get a certain user
+18:22 base and now AI opens the top of final so much that you just double it year-over-year.
+18:28 f fascinating to me and encouraging for everybody that wants to build an AI
+18:33 application on Verscell because I think they're going to see that there can participate in this incredible one I
+18:39 think once in a generation upside in okay with all these tools and infrastructure because the interesting
+18:46 thing about Vzero is it's an app that is full stack created on Verscell mh
+18:51 zero tricks access special features nothing it's just we became a customer
+18:56 of our own platform So, that was a really cool thing to see. How are those new users different from some of your older users?
+19:02 They're they're different in some on some ways, but not different in the in the in the sense that they they're
+19:07 thinking about that end user. Yeah. So, they're they're different in the sense of some of that those developer
+19:13 sensitivities are not there like do they care that much if the code is long, short, the shape of the APIs of the
+19:21 things that the LLM is generating. So what's fascinating is that LLM's
+19:26 strengths and weaknesses will inform the development of runtimes, languages, type
+19:33 checkers, and frameworks of the future. Think of it as your customer is no longer the developer.
+19:39 Yep. Your customer is the agent that the developer or non-developer is wielding.
+19:45 That is actually a pretty significant change. The first thing that I hypothesized is
+19:51 look developers by nature have always preferred things that look shorter. So
+19:57 if you know if the API call it looks a little bit more succinct and for example
+20:03 for stripe there's a beauty to their API the dot notation on the SDKs etc. And by
+20:09 the way, this is going to continue to be super relevant in the future. But now you have to think about, well, is there
+20:15 something that I could change about that API that actually favors the LLM being the the quote unquote entity or or user
+20:23 of this API? So that's one big change on like how we think about the product. Uh I think these people
+20:30 share something that's very fundamental to all of us. They just want things to work and perhaps they have a little less
+20:37 patience. I think developers go through this, you know, journey of learning to
+20:43 deal with errors. You know, you're just used, I sometimes say, you know,
+20:48 developers are typically known to be well compensated, but they're dealing with like terrible negative feedback all
+20:54 day long. The the type checker, god forbid, the borrow checker just like
+20:59 screaming at you, giving you errors that sometimes are hard to understand. And and this is why developer experience
+21:06 obviously matters so much. And so now we're going into this world where I I I feel like this user has an
+21:13 even shorter fuse if something goes wrong. Going back to that quality metric, to that reliability metric,
+21:18 they're just like, you know, flip the table like what is this? And honestly, it's amazing pressure for for us as uh
+21:26 as product builders. Like you want something that works 99.99% of the time. Yeah. And I will say when people ask me
+21:32 there is someone asked me look if we were if this was um uh 1990
+21:40 and the internet is starting to like really gain serious traction and you know the 2000s are coming like where do
+21:47 you think uh we are relative to like old eras of the internet like are we in uh
+21:53 are we in the dotcom uh boom are we you know five years before five years after
+21:59 it's a very interesting era that we're in, right? Like on some level you notice that the reliability of the underlying
+22:06 models is very low. Yeah. Uh the uh outages that you see very frequently on API uh AI providers is
+22:13 very low. But on the other hand, the massification on the consumer side is super high.
+22:18 It took quite a long time for us to get everyone on on team internet. But on
+22:24 team AI, the adoption is just uh amazing. So there's almost like a tale of two cities. You have the
+22:30 infrastructure is being built as we go and like we're improving the reliability of it all the time. Um and the consumer
+22:38 demand is unprecedented. Yeah. How do you think uh AI is kind of changing the underlying infrastructure
+22:44 demands? So for example, my my layman's understanding of what you all do at Verscell is that there's quite a bit of caching that happens that makes you know
+22:51 website loading very fast. Is that as relevant in a world where a lot of content is generated? I will say
+22:58 the main thing that we optimized for that kind of found us in a lucky time, lucky place is we're noticing that the
+23:05 web was going from being a static to dynamic. And I feel like now we're going from
+23:12 dynamic to generative. And so Versel was investing for years and years and years on this transition
+23:19 from a static to dynamic. We were working on technology for streaming websites. So, one of the magic things
+23:25 that makes websites like Amazon.com so fast is they stream the response to you.
+23:31 It actually is almost like an LLM is you can think of as like a a a LLM before AI
+23:38 of sorts because when you're coming to a product page, they're computing dynamically just in time. What are the
+23:45 product recommendations for you guys? What are you likely to buy next? I think we've all been through the uh scenario
+23:52 where like you add to cart and they're like hm scroll a bit and then you add the bundle you're like customers also
+23:58 buy. So versel was working really hard on democratizing that kind of technology.
+24:04 We're noticing that most like e-commerce websites were like they even struggled to just serve a cached page period let
+24:10 alone a page that for each user makes amazing recommendations. So we were able to repurpose a lot of
+24:18 that infrastructure especially in the compute side. Uh we call it fluid
+24:23 compute. It was the perfect fit for this new generation of applications that are
+24:30 streaming content. Yeah. Not from databases but from LLMs. M
+24:35 the one shift that is significant is you have to think about a web for end users
+24:41 and humans like you know you open up sequoia capital.com but you also have to
+24:47 think about a web for agents you have to think about the fact that
+24:52 there's emergent protocols right you have llm.txt txt is a good example, very
+24:57 simple, but now a website can communicate better with the wouldbe agent and give them an alternative
+25:03 representation. You can think about MCP servers as being the next evolution of that.
+25:09 In some ways, the static to dynamic uh metaphor is happening on an expedited timeline for AI protocols because
+25:16 alms.txe txt is very much like the static representation of an agentic website and the MCP now enables you to
+25:25 put an agent out into the internet that can communicate with another agent. So, Verscell is now enabling these new kinds
+25:32 of AI workloads but sharing a lot of the same foundational infrastructure. Where do you see your AI product roadmap
+25:38 going? I posted a tweet recently that said, you know, I think the journey that a lot of companies are going to go through is
+25:45 they have no AI uh then they say we're going to start an
+25:51 AI prototyping team. Then they're going to evolve that prototype into a production grade product. So they're
+25:56 going to say now that's the AI product team. And then the end state is that every company will be an AI company.
+26:03 Mh. Meaning that whatever lessons you gar you gathered from that produ productionizing of that AI prototype or
+26:10 idea or you know thing that you launched maybe it's a new product
+26:16 you will use those lessons to transform the rest of your business. You kind of
+26:21 see this with support AI. Why is support AI so successful? Well, it's the lowest
+26:27 friction way for any established business, enterprise or company to say, "All right, I'm going to incorporate AI
+26:33 into my business." What Versell did was, I think, more ambitious than that because we said, "Look, in order for us to actually give
+26:39 high quality support, we need an expert model in our technologies. It'd be devastating if a
+26:46 customer comes to us who we are the experts in Nex.js, JS React the web and
+26:52 our support agent doesn't know the latest and greatest on our own technologies right so we started with
+26:58 down this path of you know how can we have an expert AI in our own
+27:03 technologies and so we launched Vzero which interestingly enough served two purposes it's the expert model that
+27:10 feeds into our support u streams so if you go to versell.com/help
+27:16 and you ask for help that's going to reuse this global intelligence that we're creating for the for the company.
+27:22 We also wanted to make sure that everybody in that works at Verscell, you
+27:27 know, we've hired some of the best, hardest working people that have mastered the ins and outs of web and
+27:35 cloud infrastructure and a lot of companies come to us saying, can I hire you for professional services or
+27:41 support? And typically the answer has been, look, we have over 100,000 customers. our ability to give like
+27:49 comprehensive professional service support is extremely limiting. But I would love to help you out. Now we have
+27:54 a mechanism because we can sell them our AI agent and they can get as much of a
+28:01 direct access to my brain and my CTO's brain to answer their problems. And then we
+28:06 have Vzero which actually tries to like go even more ambitious, right? Like let's write the code for them. So in
+28:13 many ways actually you can look at all of this disruption from the lens of like the most excellent customer service you
+28:19 could give on the planet right like customers have been asking us like hey rout can you come you know give a
+28:25 workshop I I I gave a workshop many many years ago on XJS I wish I had the bandwidth to do more of those. So AI I
+28:32 feel like is that human amplifier of our business, that token factory that Jensen talks
+28:37 about for our business. And the other the other big change is that as you look at all of the other areas of our business like firewall and security,
+28:45 like observability, all of the foundations of our cloud, we are also disrupting those with AI. So imagine a
+28:53 an agent that instead of reporting that your workload is experiencing 500 errors
+28:58 can actually give you a pull request with the solution and it'll be rooted in the same systems
+29:04 that are making us good at generating applications. We'll use them to repair production applications and to optimize
+29:10 them. How far are we from just fully self-driving infrastructure? I know
+29:16 you've automated a lot. How far are we from sort of the picture you just painted? I think we're practically
+29:21 almost there. So it depends on each domain. The best case scenario, we have Verscell being able to automatically
+29:28 scale for any kind of workload. And in the worst case scenario, we can give you a really good investigation of whatever
+29:35 problem you're experiencing that is completely autonomous. Mhm. So, uh, going back to, you know, the
+29:42 evolution of the company, I think the the biggest sticking point was you have
+29:47 to land the developer experience in order to get all of this upside in the
+29:53 autonomous infrastructure. What I'm excited about is that if you now know,
+29:58 you don't even have to convince developers. If it's the agents that are falling into those pits of success with
+30:05 the frameworks, then you can have much broader impact toward with this autonomous infrastructure.
+30:11 Maybe on a related point, why has chat GPT been such an effective source of of new customers and leads for you?
+30:18 Yeah, we shared recently that the sourcing of signups to versel from ChatGpt has been growing exponentially.
+30:25 So, I think there's a couple factors. When we created the AI SDK, which you
+30:31 can think of as the NexJS of AI, it's it's a framework to allow developers to connect to LLMs, we put out this
+30:38 playground that essentially allows you to talk to multiple LLMs at the same time. So, it creates this column layout
+30:46 and you can say, what's better, Coca-Cola or Pepsi? And you can see all
+30:51 the different LLMs respond with their opinions. We've used this system over time to understand what are the innate
+30:58 vibes of the LLMs around different technologies
+31:04 and I can't tell you exactly how and why these neural networks think in fact LM
+31:10 interpretability is a is its own field of study but over time if you ask it you
+31:15 know what is the best way to deploy a react application due to all of its training data due to
+31:21 all of the sourcing of all of the opinions and writing and solutions and GitHub issues and everything it's trained on is chosen for sale a lot of
+31:28 the time. We had an anecdote the other day which was fascinating at the AI engineering I think this is a sign of of the changing
+31:34 times at the AI engineering conference in San Francisco. We had a booth and one
+31:40 of our colleagues told me that people would come to our booth and tell them that they learned of Versel because Chad
+31:47 Gupt told them to use Verscell. This kind of changes how marketing is done, right? Because like it used to be that
+31:54 people would find out about Versel because they watch a podcast like this and you know to some extent that'll still happen. Thanks for having me.
+32:01 But now there's this you know you're going directly to your AI buddy to to learn about the world.
+32:07 Totally. The other aspect is that AIS are still grounding themselves in search to get access to like the cutting edge
+32:14 breaking news data etc. So they are performing Google searches. So, I always
+32:19 advise our customers to still be mindful of like look, you still have to rank high and create good content. The kinds
+32:25 of content I think that you're going to be writing in the future uh are different. I think you're going to have to be thinking about look, people are no
+32:33 longer doing keyword- based searches for certain kinds of problems. Yeah, they're asking questions. The questions
+32:39 might be more precise in some senses. The questions might be in some in some other aspects may be broader. And so
+32:46 we've been trying to think LLM first in how we also publish to the internet. And I think we've had some good results.
+32:53 People are hypothesizing that just creating FAQ type content helps a lot
+32:59 because you're kind of matching onetoone what people could be asking. I I think overall it's a great outcome for the
+33:04 internet. like we're all asking questions and we have these machines that can digest the answers and and you
+33:10 know uh uh help us navigate the the immense sea of content that is the web.
+33:16 So you don't have to promise your firstborn kid to to OpenAI and the robots.txt file.
+33:21 That's right. That's right. So like you still have to navigate like does OpenAI like me? Does Grog like me, etc. So
+33:28 hopefully you're on good terms with with all of them. I love it. Uh could you say a word about how you see the competitive chessboard
+33:35 playing out? And the way I see it, you know, everyone is trying to get to this ultimate goal of you have an idea of the
+33:40 thing you want to build and then you actually have a full kind of finished application hosted deployed.
+33:46 Um but there's different approaches people are taking. Everything from your approach to you know let me let me win
+33:53 the IDE to let me let me go from the design back uh the way Figma's Figma is
+33:58 going. How do you think all this plays out and does it all converge? Yeah, I have a couple frameworks. I think nobody will have the exact answer
+34:05 at this point, but I'll give you a couple frameworks of thought that I have. One is this idea of virtual
+34:11 co-workers. So at Versel we have you know designers,
+34:16 developers, marketers etc. We will now have virtual designers, virtual marketers, virtual developers. Probably
+34:24 you can think of this as agents but there is a wrinkle. These are expert agents.
+34:29 I think over time people will always start with the double final of like the broad safety net of I'll go to chatgbd
+34:36 or I'll go to claude for my broad knowledge questions but then I think
+34:41 over time you're going to realize well like I'm coming back to this thing with this very specific set of problems. Is
+34:48 there something better? I think it'll come naturally, right? Like we've spoken extensively about uh very successful
+34:54 versell customers like open evidence I if you've heard of it um
+34:60 and gc.ai. I love these two examples because one is my expert you know healthcare physician they have a chachi
+35:08 style interface but they source it in the frontier data and they continue to improve their models to provide better
+35:14 accuracy domain expertise etc. not unlike VZero, right? But for web
+35:19 development and the other one is GZ.AI which I love because same thing uh law
+35:24 legal uh you have Harvey in the same space you have FinTool and Hebia and Perplexity sort of answering some of the
+35:31 financial agent questions etc. So I see a world of millions if not hundreds of
+35:37 millions of agents and I think companies have to think about you know if I was a
+35:43 digital native and I came to market with a SAS style dashboard UI if I came to a market with a marketing website and a
+35:50 content website etc. You must be asking yourself the hard question of like, all right, if I was reinvented today, my
+35:58 interface would probably be agentic. And I have two broad categorizations of agents. You have the synchronous agents.
+36:05 This is open evidence or chatb. You go there and you ask a question and you get an answer right away. I think that's
+36:11 kind of the first generation. And then you have the more potentially interesting long-term which is the asynchronous agents. These are the
+36:17 agents that can work and solve broader problems and can collaborate with other
+36:23 agents potentially with other humans not just you and can you know work for prolonged amounts of time. So we're
+36:31 starting to blur those lines with products like Vzero because sometimes we might go deeper in into a task that you
+36:37 give us and we might orchestrate you know several steps in a row. Think of it as
+36:43 like well if you come to us and you say build me an interface that's optimal for
+36:48 e-commerce maybe the agent will do some research first on what it is exactly that you need. So that's almost like an
+36:55 extra step, right? The other class that is super emergent is you look, you see
+36:60 this with the IDE market. Your IDE with AI is your synchronous agent interface.
+37:06 But then you're vibing from bed and you have a new idea and you're like, "Hey, I
+37:11 just came up with the idea to fix that problem." And you tell the agent to cook on it and come back to you with a pull
+37:18 request. And so what I encourage people to think about the front ends are still immensely important. You have to think
+37:24 about the output front end because at the end of all that work there is something that comes out
+37:31 your artifact. It might be a website. It might be a port request. It might be a chat message that asks you for your
+37:38 confirmation or whatever. And you also have to think about capturing people's attention. the input side like you have
+37:45 to if if I'm a a a doctor I have to memorize okay what is the interface that
+37:51 I go to and you have to make that really ergonomic one thing that I've noticed by
+37:57 studying UI a lot is there's a sense that agents actually are their own modality
+38:03 and that it's very hard to like merge them together with existing things is why Verscell we chose to create a new
+38:09 entry point and a new app vzero.dev If you're Google, you have a tough
+38:15 challenge ahead of you. This is why they're calling their agentic interface AI mode. It's almost like a separate
+38:22 product. Kind of like Google Maps is is a separate product. So there is a top of funnel. You go to Google, but then you
+38:28 have to like choose your warrior. Do I go AI mode? Do I go maps? Do I go
+38:34 images? Or do I go traditional keyword search? So I I still encourage people to sort of sweat the details on how are you
+38:41 finding the customer and and are you creating a very ergonomic entry point into that intelligence uh agent?
+38:48 Can you say more about why in your case it makes sense for it to be a separate
+38:53 product? Yeah. So think of it as there's two classes of users. You have the developer
+38:60 that might be thinking about creating more of a platform, right? You might be thinking about the developer that is
+39:06 more experienced and maybe already has an existing infrastructure project,
+39:13 maybe they have already GitHub repository, etc. They're not going to come into an interface that is purely
+39:19 conversational, right? And so they're they're seeking a different style of engagement with Verscell. So that's why
+39:26 I always encourage people to think about look if you're creating the vzero of the future go to Verscell because you you
+39:33 you're going to need a different set of tools to create a platform. The world I think is splitting almost
+39:39 into two classes of developers. The ones that are creating apps and the ones that are creating platforms and so if you're
+39:45 creating an app we want you to have the easiest possible onboarding journey that is again more conversational. If you're
+39:52 creating a platform, we're still making it really easy for you. So like we give you templates, we give you starting
+39:57 points that are really meaningful, but there's still a sense of like you're going to have to roll up your sleeves and like have to do a little bit more of
+40:03 a traditional like developer work and engagement. This is why the metaphor
+40:08 that I use for the the Vero style products is think of it as Whimo where in the ideal
+40:17 experience there's never a human operator but there's still a very small chance that there is a disengagement and
+40:25 Whimo calls home and a human has to intervene. So I think of Verscell as a platform that has like
+40:31 the human is more centered on the human intervention where you're creating a platform but you're more of an expert
+40:37 and you're still going to have a lot of AI tools in your journey. But Vzero is the dream of that self-driving car that
+40:44 end to end you never disengage. If you happen to have to disengage we have integrations we're building integrations
+40:49 to code editors where you can say okay this is as far as I got. Let me eject
+40:54 into something like cursor or VS code. But I think as LMS continue to improve,
+41:00 you're going to see this VZero side of the world take more and more and more
+41:05 and more of that top of funnel. Yeah, I myself as a coder have not used the more traditional
+41:11 coding tools in a while. I just use Vzero because again it's with my limited time
+41:17 and bandwidth as a CEO, I'm obsessed about like time to from idea to online
+41:22 and VZero fits that bill perfectly. Yeah. So Vzero and kind of the overall
+41:28 trend of making it easier and more seamless for people to produce software is almost certainly going to lead to
+41:34 more apps, more software in the world. Will it also lead to better apps, better
+41:39 software in the world or will it just produce more noise? I think it'll lead to better apps for
+41:45 sure. um to check myself what I do very frequently is I analyze the categories
+41:51 of errors that our customers are falling into or ourselves are falling into and I always
+41:56 ask myself could a model have solved this problem
+42:02 and this takes the form rigorously of evaluations into our product. So
+42:07 whenever we see I kind of mentioned the it seems silly but like the you know the
+42:12 background color between the Safari bar and your content has to match that is
+42:18 easily and trivially trainable so that we can embed it and then we can put it into the hands of millions of people.
+42:25 The other thing we do is our security research team is constantly on the lookout for what are the broad classes
+42:32 of vulnerabilities that are impacting websites and web applications. And I shared a story not too long ago
+42:39 that our CTO found a vulnerability in an open source framework.
+42:45 Luckily, we helped them catch it and repair it before this version of the product broadly went out. What we did
+42:52 right after is we created an eval against all of the frontier coding models.
+42:58 We gave the task to the models of like look this is the pull request. Do you notice something wrong?
+43:04 And I can't remember how many of them got it right, but several of them got it right.
+43:11 It was it was a pretty non-trivial vulnerability. And I remember at the time I thought to myself,
+43:18 the next version of this is that we can give LLMs
+43:24 existing code bases and have them spend tokens and tokens and tokens until they find problems like this. Lo and behold,
+43:33 recently the news came out that in the Linux kernel, someone found that use after free
+43:40 vulnerability, which is considered very high severity because it can lead to a
+43:46 segmentation fault, a crash, a denial of service type of attack at best, or at
+43:52 worst it can lead to data leaks, uh, cryptographic secret leaks, etc., etc.,
+43:57 remote code execution vulnerabilities, the worst kind of vulnerabilities on the planet. And this was done by 03 almost
+44:04 exclusively. There was some prompting, but it it wasn't like nothing extraordinary.
+44:12 And you know, I've spoken with people that are very uh seasoned Linux kernel engineers and they told me, look, the
+44:19 reality is that there is a lot of those. And he, you know, one of them kind of
+44:24 trivialized the finding because he said like, look, if I spend all of my time doing this, I could find other use after
+44:30 free vulnerabilities. Yeah. But the problem is that exactly that there isn't that many Linux kernel
+44:35 experts and that they don't have the bandwidth to to find these kind of vulnerabilities. So the reality is that
+44:41 I think, you know, you're going to see LLMs that create code that is secure by construction.
+44:47 Mhm. This is as LLMs get better at more formal languages, as they get better at Rust, as they get
+44:54 better at safe languages, of which, by the way, TypeScript is one of them. You're going to see that LM are
+44:60 producing more secure code for the world. You're going to see that, you know, the next hardleed won't happen in
+45:05 a world of AI written code. Now, for people that are listening to me, they're probably like, "Wow, this guy is so optimistic." We're also hearing that
+45:12 LLMs are leaking secrets into web browsers, like literally shipping
+45:18 database secrets into clientside code. What I'm very happy to report is that
+45:23 Vzero has prevented tens of thousands of such vulnerabilities. Last I checked with one
+45:31 of our AI research engineers, it was a thousand vulnerabilities prevented per day relative to what the
+45:38 LM had the inclination to ship. Hm. And this is where you were asking me what are you know some of the u intrinsic
+45:44 advantages that Verscell has. Well, Verscell has really a really powerful
+45:49 set of infrastructure primitives where we can ship code that the LM generates to the server side and deploy it
+45:55 instantly. If it's interactive, we can ship it to the client side. So, our ability to guide the LM towards a secure
+46:01 outcome is really, really high. We can basically do what I would recommend and what we in the
+46:07 documentation would recommend a human do. we can do on autopilot. But it's not just security, it's also performance.
+46:15 We're very excited about bringing agents that automatically do the performance optimizations that I still recommend to
+46:22 entrepreneurs by hand. Like I kid you not, I will DM you an X or I will text
+46:28 you saying, "Oh, I noticed this glitch here that is non-trivial to find by
+46:35 frameworks." Why is it non-trivial to find? Because they happen at runtime. One of the things that makes web
+46:40 engineering actually extremely complex is that it's not a discrete process. It's not a function that takes an input
+46:47 and immediately produces a result. It's uh in in programming language lingo, you can think of it as a generator. It
+46:54 produces multiple values over time. It's like a set. So when you go to a website,
+47:00 it's giving you information over time. So for a website to be performant, everything that is coming through your
+47:07 retinas has to fall in the right place. Companies like Apple are amazing at this
+47:12 because so much of this is like literally the human testing. Does it feel right? They do a lot of demos. They
+47:19 have a culture of like putting it into people's hands before it goes out into the world. So what I want to do is give
+47:25 all of these tasks to an AI that performs that quality judgment that
+47:31 performs the performance optimization and is rooted in all of the data that gets captured in production so that by
+47:37 the next generation your your software gets better. Yeah. And now that computer use agents are
+47:42 getting good, you can actually go and click through and see how the experience is. Yeah, absolutely. Like an agent that just uses
+47:49 the product and finds problems, right? Uh so many of the uh startup pitfalls
+47:54 that I see is I literally cannot log in or sign up to your product. Like literally like you give me a
+48:01 something happened in that critical path. So fun fun anecdote this week. This past weekend my my uh fun hobby
+48:09 task was I'm going to try every product in the speechtoext operating system
+48:15 category which is super hot right now. There's three products that people are using very broadly. Two of them I had
+48:22 problems in that critical phase of getting to the aha moment.
+48:28 So that meant you know uh coming to the website, downloading the app, signing up, giving operating system permissions.
+48:35 It's a very delicate process. It's actually like hardcore distributed systems problem. everything can fail and
+48:42 it's a very delicate time to aha that you're optimizing for and the system is
+48:48 so dynamic that I I'm sure that the entrepreneurs thought at some point this is rock solid
+48:53 trust me bro like I tested it worked perfect but so many things can go wrong that what you actually want is a QA
+48:60 agent that is just constantly checking this stuff especially for the critical paths totally buying something sign signing up
+49:08 contacting sales downloading the thing uh and in the real world things are the
+49:14 CTO of Amazon has this uh uh meme or fa phrase is everything is failing all of
+49:21 the time. Mh. And so you need robots that are constantly watching everything and repairing it.
+49:27 Do you think that we end up in a world of a lot of disposable apps or like what happens in the world where everyone is
+49:32 creating lots of apps all the time? Yeah, I think I've always fought the
+49:38 idea that an app is a permanent thing. The idea that you download and install,
+49:44 the idea that you have you seen on the Mac, you download a DMG. Yep.
+49:50 Which is a kind of temporary volume. It's a relegant of the past that we get to experience very frequently. You mount
+49:56 a temporary volume that later you have to eject from finder and then you have
+50:02 to drag and drop from the volume to applications folder and now at that point it's installed and it's like a
+50:09 responsibility. It's like this is your puppy now like take care of him, feed him over time and then you have to launch it and so that's insane to me
+50:17 because I'm team web where everything is instantaneous. Go to chatgbt.com go to
+50:23 vzero.dev dev, right? And so I've always been on this philosophical fight against
+50:28 on one side the gatekeeping of the app stores and so on. Not only on sort of
+50:33 like this like idealistic and philosophical sense, but also on the latency and friction they introduce for
+50:38 end users. It's insane. You go to the app store on iOS and yes, you don't have a DMG that you mount, but you have to
+50:46 download the app which has takes hundreds of megabytes and it takes forever to download. So the web has
+50:52 always felt to me as the end means of distribution and the best platform to
+50:59 actually host AGI and I think of the web as being the
+51:04 place where everything will be generative just in time for everybody. So I think it's even more ambitious at
+51:10 personal software or ephemeral apps. I think you won't even notice it's an ephemeral app.
+51:16 Everything will be ephemeral for that matter. Yeah. Uh and the battle here or the the realization for me here was and it
+51:23 happens very fre frequently still I have this aversion now to searching for
+51:30 software because the idea that I can generate it seems in my mind to beat the total
+51:38 latency of finding the software installing it. M so we're in this race between if the
+51:44 generations continue to get better quality performance security reliability
+51:51 then it's it's going to be an unwinable battle for the downloadable installable procurable god forbid like you have to
+51:58 procure the software it's just an impossible battle to win so I'm team
+52:03 fully generative uh software uh forever that's interesting I'm thinking about
+52:09 that in the context of your comment earlier about how you have to think about your customer who is the developer and also your customer's customer who is
+52:16 the end user. Does that mean that eventually your developer customer is not producing
+52:23 a single app that's going to serve a bunch of users? Those users are each somehow interfacing with something the
+52:28 developer has done on vzero or on Verscell. It's generating applications on the fly for each individual user.
+52:34 That's right. That's wild. Yeah. It's almost like a direct human to agent interface, right?
+52:40 Yeah. Yeah. And yes, like I think developers will be creating agents. That's agentic platforms is kind of my my distinction,
+52:46 right? That's why I was mentioning if that's your goal, you probably are going to oversell. But if you're if your goal
+52:52 is to actually generate apps, you're going to Vzero and Vzero itself might
+52:57 become sort of the engine of generation of this future internet. you know, we're we're starting to uh see some
+53:04 integrations into web browsers, especially now with the model where people can just call Vzero just in time
+53:11 from existing applications and existing distribution channels. The the battle will continue for where are users going,
+53:18 you know, where are the front ends that they're spending time in? And I think those are the things that we need to continue to pay attention to.
+53:24 Yeah. Reminds me of that Jensen quote at AI sense of like all pixels will be generated, not rendered. It's like that
+53:29 for your web experience as well. Really cool. Should we wrap with some rapid fire questions? Let's go.
+53:35 Okay. Favorite AI app right now. Well, Vzero. Okay. Favorite AI app.
+53:42 Outside your own baby. Um, okay. I'm really into this new, as I
+53:48 mentioned, uh, talk about self-disruption. I grew up known as the kid that typed really fast. I'm really
+53:54 into this new category of super whisper, whisper flow, the speech to text that
+54:01 boggles people's minds. Uh, it's it's fascinating to play with. Pat types really slow, so he must be
+54:06 excited that it's funny. I I've actually started taking typing lessons, so I get better at that. We did we did a typing competition one
+54:12 day when we're bored. Oh, that's so cool. Who won? I won. But me and then Andrew, I wasn't like embarrassing behind. I But
+54:20 I I'll tell you what, it it is impressive that I can do 90 words per minute with like two to four fingers.
+54:26 By the way, so um it's it's indicative of future success at Versel that we hire
+54:31 people that are fast typists. Yes. So you you should apply. Okay. By the way,
+54:36 by the way, the the really cool thing is there's something about intelligence
+54:43 having evolved through motor dexterity. Like the the things that you do for a
+54:49 kid when they're growing up, like the test that you give them when like they're very little is like how is their
+54:56 speech evolving? Like them like clear sign of like development, but also how is their dexterity? Can they throw? Can
+55:03 they grab? Can they grasp? So you should we all collectively should continue to learn how to type fast.
+55:10 But it's really cool that now these speech text things are are so like mindbogglingly fast.
+55:15 Yeah. Love that. Um, who who do you admire in the world of AI?
+55:20 Carpathy. So, funny enough, when he introduced the term vibe coding, he
+55:26 talked about using super whisper as I'm just going to speak and applications
+55:31 will be generated. I think he laid out a great vision of the future that is coming into fruition.
+55:39 And obviously, he did it also before at Tesla with self-driving. So I think it
+55:44 yeah hugely inspiring. Uh recommended reading recommended reading
+55:50 your Twitter. I do love X. Um okay so I there's a
+55:56 bunch of like engineering articles that I love but okay so one that comes to mind is there was an article that was
+56:02 called the five wise and I think it was called like the five
+56:07 wise and why the world is about to get weirder. H actually talks about uh
+56:13 airplane crashes. Sadly, there was one today. And and and he talks about how rare they are. And and because they've
+56:20 gotten so rare, the world has been studying and adding patches and
+56:25 protocols and fixes so that nothing bad happens again. And it's a very interesting sort of mental model on on
+56:35 what the world of AI. This article doesn't deal with AI, but it talks about a future in which we've perfected and
+56:42 refined so many things that the things that bubble up. The things that are going to come into your ex feed of the
+56:48 future are going to be the wildest because yeah, everything is getting so
+56:54 good so fast that is whatever breaks the norm goes from zero to taking over the world.
+57:00 You're starting to see a little bit of this with startups. Yeah, I don't know if you've noticed that like the pace at which they're growing,
+57:06 how weird sometimes the things that they do to get big or get attention are,
+57:11 which I'm not exactly a fan of, but this article was fully predictive of. In the world of AI, what's overhyped?
+57:18 What's underhyped? I think underhyped, oh, underhyped is so easy. LLMs are so capable and there's so
+57:27 many great applications, so many great applications to be created and shipped
+57:33 and so I'm a team. All right, even if we froze everything as it exists, the
+57:39 amount of value that the world will get, the amount of successful entrepreneurs
+57:45 will see in the future building on this new platforms. It is a new platform, it's a platform shift. It requires that
+57:50 you rewire your brain, which is very hard to do. Uh, and luckily for some people, they're just going to be born
+57:56 into this and they're just going to see a lot of upside, right? Uh, it's very good underhyped,
+58:01 like being an engineer that never learned anything about the old world and
+58:08 now can, you know, one of my bangard tweets recently was almost like a
+58:13 confession. I feel like the most the more honest and and like the more I confess, you know, AIS are like this
+58:18 confidant that you trust with everything and especially around like not asking
+58:24 silly questions like there's nothing that's a silly question. There's no embarrassment. And so the rate of
+58:31 improvement o over uh world models, mental models, uh the things that you're
+58:37 going to be competent at, you were before constrained by either what your personality was. If you were kind of
+58:44 aspie, like maybe had a lower bay filter for like asking important and interesting questions. Now you can just
+58:51 ask any question in the world and get good at anything. You can truly know it all. I'm really jealous of like
+58:56 someone's growing up today with this like psychic magic powers. Yeah. Overhyped. Um,
+59:04 you know, I take such a longterm view that it's hard for me to find
+59:09 something that's truly overhyped. I'll be hyped about Bitcoin at its peak. I'll be hyped about crypto. I've been
+59:15 hyped about crypto for years uh through laws, winter, summers, whatever because, you know, all money will be digital of
+59:21 course and all software will be AI. So, it's very hard for me to like say, well,
+59:27 that's overhyped if you take a a very long long long-term view.
+59:32 Yeah, great answer. Okay, last question. Timelines. When do you think we'll get to that uh utopia of the kind of uh
+59:40 generative web? I think in the next five years we'll see the biggest transformation to the web in its
+59:46 interfaces in the habits of people in the number of creators that are coming
+59:52 into participating in the web. Even five sounds like a lot. I will even say in the next three years we're gonna
+59:59 see kingdoms collapse in a sense of like you know companies that were born on the
+60:06 internet that have not been able to make those adjustments fast enough and the new AI native companies rise to to as we
+60:14 were speaking earlier to like un unprecedented heights very very quickly. Wonderful GMO. Thank you so much for
+60:20 taking the time to share with us your vision for the future of the web uh and the generative web and Verscell's role
+60:26 in in creating that. Thank you for having me. That was fun. Thank you. [Music]
+60:37 [Music]
+60:46 [Music]

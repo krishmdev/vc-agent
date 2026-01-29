@@ -1,0 +1,3472 @@
+00:00 in the 40s the physicists went to the
+00:02 
+
+00:02 Manhattan Project even if they were
+00:03 
+
+00:03 doing other things that was that was the
+00:05 
+
+00:05 place to be and so now ai is the same
+00:09 
+
+00:09 thing and you know basically said open
+00:10 
+
+00:10 AI as that place so maybe maybe we don't
+00:13 
+
+00:13 need a public sector organized Um
+00:17 
+
+00:17 Manhattan Project but it you know it can
+00:19 
+
+00:19 be open AI
+00:21 
+
+00:21 [Music]
+00:38 
+
+00:38 joining us for this episode is Dan
+00:39 
+
+00:39 Roberts a former seoa AI fellow who
+00:42 
+
+00:42 recently joined open AI as a researcher
+00:45 
+
+00:45 this episode was recorded on Dan second
+00:46 
+
+00:46 to last day at sequa before he knew that
+00:48 
+
+00:48 he would go on to become a core
+00:50 
+
+00:50 contributor to 01 also known as
+00:52 
+
+00:52 strawberry Dan is a Quantum physicist
+00:55 
+
+00:55 who did undergraduate research on
+00:56 
+
+00:56 invisibility cloaks before getting a PhD
+00:58 
+
+00:58 at MIT and doing his post do at the
+01:01 
+
+01:01 legendary Princeton IAS Dan has
+01:04 
+
+01:04 researched and written extensively about
+01:05 
+
+01:05 the intersection of physics and AI there
+01:08 
+
+01:08 are two main things we hope to learn
+01:09 
+
+01:09 from Dan in this episode first what can
+01:12 
+
+01:12 physics teach us about AI what are the
+01:14 
+
+01:14 physical limits on an intelligence
+01:16 
+
+01:16 explosion and the limits of scaling laws
+01:18 
+
+01:18 and how can we ever hope to understand
+01:19 
+
+01:19 neural Nets and second what can AI teach
+01:22 
+
+01:22 us about physics and Math and how the
+01:24 
+
+01:24 world
+01:26 
+
+01:26 works thank you so much for joining us
+01:28 
+
+01:28 today Dan thanks delighted to be here on
+01:31 
+
+01:31 my probably second to last day at seoa
+01:34 
+
+01:34 depending on when this air is and how
+01:36 
+
+01:36 you're going to talk about it you will
+01:38 
+
+01:38 you will always be part of the seoa
+01:39 
+
+01:39 family Dan thanks I appreciate it uh
+01:43 
+
+01:43 maybe just to get started uh tell us a
+01:45 
+
+01:45 little bit about who is Dan you have a
+01:47 
+
+01:47 fascinating backstory I think you worked
+01:49 
+
+01:49 on invisib invisibility cloaks uh back
+01:52 
+
+01:52 in college like what led you to become a
+01:54 
+
+01:54 theoretical physicist in the first place
+01:57 
+
+01:57 yeah I think and this is you know my
+01:59 
+
+01:59 stock answer this point but I think it's
+02:01 
+
+02:01 it's true I was just an annoying
+02:03 
+
+02:03 three-year-old who never grew up I I
+02:05 
+
+02:05 asked why all the time curious how does
+02:07 
+
+02:07 everything work I have a I have a
+02:10 
+
+02:10 19-month at home right now and I can see
+02:12 
+
+02:12 the way he followed the washing machine
+02:14 
+
+02:14 repair man around and had to look inside
+02:16 
+
+02:16 the washing machine so like I think I
+02:17 
+
+02:17 just kept that going and when when
+02:21 
+
+02:21 you're more quantitatively oriented than
+02:24 
+
+02:24 than not rather than going to philosophy
+02:26 
+
+02:26 I think you sort of Veer into physics
+02:27 
+
+02:27 and and that was sort of what what
+02:29 
+
+02:29 interested me does the world work what
+02:31 
+
+02:31 is what is all this other stuff that's
+02:33 
+
+02:33 out there um the question that you
+02:35 
+
+02:35 didn't ask but maybe I'll just answer
+02:38 
+
+02:38 answer it ahead of time the the sort of
+02:41 
+
+02:41 inward facing Stuff felt less
+02:42 
+
+02:42 quantitative and more in the realm of
+02:44 
+
+02:44 the humanities like so what is all this
+02:46 
+
+02:46 stuff that's pretty
+02:60 
+
+02:60 what is all this other stuff in sort of
+03:02 
+
+03:02 some of the same Frameworks and and so
+03:03 
+
+03:03 that's been very exciting for me so we
+03:06 
+
+03:06 should be trying to recruit your
+03:06 
+
+03:06 19-month-old right now is what you're
+03:08 
+
+03:08 saying oh yeah absolutely he's got his
+03:11 
+
+03:11 um he grew out of one of his his Sequoia
+03:13 
+
+03:13 onesie but he fits into his Sequoia
+03:14 
+
+03:14 toddler t-shirt now and so he he
+03:16 
+
+03:16 definitely is is um ready to be a future
+03:19 
+
+03:19 founder I guess at what point did you
+03:21 
+
+03:21 know that you wanted to think about AI
+03:23 
+
+03:23 um at what point did did that switch
+03:25 
+
+03:25 start to flip yeah so I think like like
+03:29 
+
+03:29 many people I when I discovered
+03:31 
+
+03:31 computers I wanted to understand how
+03:33 
+
+03:33 they worked and how to program them in
+03:34 
+
+03:34 undergrad I I took an AI class and it
+03:37 
+
+03:37 was very much good oldfashioned AI a lot
+03:40 
+
+03:40 of the ideas in that class actually are
+03:42 
+
+03:42 coming back to be relevant but at the
+03:44 
+
+03:44 time it was it seemed not very practical
+03:47 
+
+03:47 it was a lot of you know if this happens
+03:49 
+
+03:49 do that you know and um there was also
+03:52 
+
+03:52 some some game playing there that was
+03:54 
+
+03:54 sort of interesting it was it was very
+03:55 
+
+03:55 algorithmic but it didn't seem related
+03:57 
+
+03:57 to what it means to be intelligent can
+03:59 
+
+03:59 we just pick up on that real quick like
+04:00 
+
+04:00 what what do you think it means to be
+04:02 
+
+04:02 intelligent that's a great
+04:04 
+
+04:04 question um I can see I can see wheels
+04:08 
+
+04:08 turning yeah well this is this is one of
+04:10 
+
+04:10 those questions where I I don't have a
+04:13 
+
+04:13 stock answer but I I think it's
+04:15 
+
+04:15 important to to not say
+04:17 
+
+04:17 nonsense one of the things that's
+04:19 
+
+04:19 exciting to me about AI is the ability
+04:24 
+
+04:24 to have systems that do what humans do
+04:28 
+
+04:28 and to be able to understand them from
+04:30 
+
+04:30 how you know what are the lines of
+04:32 
+
+04:32 python that cause that system to to do
+04:35 
+
+04:35 something to you know to trace that
+04:38 
+
+04:38 through and understand what are the
+04:39 
+
+04:39 outputs and you know how the system can
+04:41 
+
+04:41 like see and and classify what it mean
+04:43 
+
+04:43 you know what is a cat what is not a cat
+04:45 
+
+04:45 or or can write poetry and and you know
+04:47 
+
+04:47 it's just a few lines of code whereas if
+04:50 
+
+04:50 you're trying to study humans and ask
+04:52 
+
+04:52 what does it mean for humans to be
+04:53 
+
+04:53 intelligent you have intelligent you
+04:55 
+
+04:55 have to go from biology through
+04:57 
+
+04:57 Neuroscience through psychology up to
+05:00 
+
+05:00 other higher level versions of of of uh
+05:04 
+
+05:04 ways of approaching this this question
+05:06 
+
+05:06 and so I I think maybe as as a nice
+05:08 
+
+05:08 answer for intelligence um at least the
+05:11 
+
+05:11 things that that are interesting to me
+05:13 
+
+05:13 is is the things that humans do and and
+05:16 
+
+05:16 then now if you up pull back the answer
+05:19 
+
+05:19 that I just said a second ago that
+05:21 
+
+05:21 that's how I connected to to ai ai is is
+05:24 
+
+05:24 taking pieces of what humans do and and
+05:26 
+
+05:26 we're understanding at least an an
+05:28 
+
+05:28 example that's kind of simple and easy
+05:29 
+
+05:29 to study that um that that we might use
+05:33 
+
+05:33 to understand better what what it is
+05:34 
+
+05:34 that humans do so Dan you mentioned when
+05:37 
+
+05:37 you were you know studying AI in college
+05:39 
+
+05:39 a lot of what sounds like kind of
+05:40 
+
+05:40 hard-coded logic uh and Brute Force type
+05:43 
+
+05:43 approaches yeah was there a moment that
+05:45 
+
+05:45 kind of clicked uh for you of like oh
+05:47 
+
+05:47 okay this is different was there was
+05:48 
+
+05:48 there a key result or a moment where it
+05:50 
+
+05:50 was like okay um we're we're going
+05:53 
+
+05:53 bigger places then then kind of the if
+05:55 
+
+05:55 this then that logic of the past yeah
+05:57 
+
+05:57 actually it didn't click I sort of wrote
+05:59 
+
+05:59 it off and and it would be great be
+06:01 
+
+06:01 great if there was a separation between
+06:03 
+
+06:03 like 10 years between then and the next
+06:04 
+
+06:04 thing that I'm going to say but actually
+06:06 
+
+06:06 the the writing off maybe lasted a year
+06:08 
+
+06:08 or two because then then I went to I
+06:10 
+
+06:10 went to the UK for the first part of
+06:12 
+
+06:12 grad school I
+06:14 
+
+06:14 spent very long time in grad school and
+06:17 
+
+06:17 I I discovered I discovered uh machine
+06:20 
+
+06:20 learning and and and and and a more
+06:23 
+
+06:23 statistical approach to to artificial
+06:25 
+
+06:25 intelligence where you have a bunch of
+06:29 
+
+06:29 examples of large amounts of data or at
+06:31 
+
+06:31 the time maybe we wouldn't have said
+06:34 
+
+06:34 large amounts of data but we would have
+06:35 
+
+06:35 said you know you have you have data
+06:36 
+
+06:36 examples of a task that you want to
+06:38 
+
+06:38 perform and I there's different ways
+06:39 
+
+06:39 that machine learning works but you um
+06:43 
+
+06:43 write down a very flexible algorithm
+06:45 
+
+06:45 that can adapt to to to these examples
+06:48 
+
+06:48 and start to perform in a in a in a way
+06:50 
+
+06:50 similar to to to the examples that you
+06:52 
+
+06:52 have and and that approach borrows a lot
+06:55 
+
+06:55 from from physics it also at the time I
+06:58 
+
+06:58 started so grad uated College in 2009
+07:01 
+
+07:01 discovered machine learning in 2010 2011
+07:04 
+
+07:04 2012 is The Big Year for deep learning
+07:06 
+
+07:06 and so you know there's not a big
+07:08 
+
+07:08 separation here between write off and
+07:10 
+
+07:10 and rediscovery but I I think and and
+07:12 
+
+07:12 machine learning clearly existed in 2009
+07:14 
+
+07:14 it just wasn't related to the class
+07:16 
+
+07:16 class that I took but this approach made
+07:17 
+
+07:17 a lot of sense to me and it started to
+07:19 
+
+07:19 have you know I got lucky and that it
+07:21 
+
+07:21 started to have real progress and and
+07:23 
+
+07:23 seemed to fit in a framework that that I
+07:25 
+
+07:25 understood scientifically and I got very
+07:26 
+
+07:26 excited about it why do you think there
+07:28 
+
+07:28 are so many people who come from a
+07:31 
+
+07:31 similar background or similar path to
+07:32 
+
+07:32 you like a lot of EX physicists and
+07:34 
+
+07:34 working on AI like is that a coincidence
+07:38 
+
+07:38 is that is that her behavior or do you
+07:40 
+
+07:40 think there's something that's
+07:41 
+
+07:41 particularly that makes physicists
+07:43 
+
+07:43 particularly well suited to
+07:44 
+
+07:44 understanding AI I think the answer is
+07:46 
+
+07:46 yes to all all the ways you the you know
+07:49 
+
+07:49 physicists infiltrate lots of different
+07:52 
+
+07:52 subjects and we get pared about the way
+07:54 
+
+07:54 that we go about trying to use use our
+07:56 
+
+07:56 hammers to to attack all these things
+07:58 
+
+07:58 that may or may not be Nails throughout
+07:60 
+
+07:60 history there are a lot of times that
+08:01 
+
+08:01 physicists have contributed to things
+08:02 
+
+08:02 that look like machine learning I think
+08:04 
+
+08:04 in the near term the path that
+08:07 
+
+08:07 physicists used to take when they don't
+08:09 
+
+08:09 go didn't remain in Academia often was
+08:12 
+
+08:12 going into quantitative Finance then
+08:15 
+
+08:15 data science and I think um machine
+08:17 
+
+08:17 learning was the and and its uh
+08:20 
+
+08:20 realization the industry was was
+08:22 
+
+08:22 exciting because it again it it's
+08:24 
+
+08:24 something that feels a lot like actual
+08:26 
+
+08:26 physics and is working towards a problem
+08:30 
+
+08:30 that's very interesting and exciting for
+08:31 
+
+08:31 for a lot of people you know you're
+08:33 
+
+08:33 you're doing this podcast because you're
+08:35 
+
+08:35 excited about AI everyone's excited
+08:36 
+
+08:36 about Ai and it it in many ways it's
+08:39 
+
+08:39 it's a research problem that feels a lot
+08:41 
+
+08:41 like the physics that people were doing
+08:43 
+
+08:43 but I I think the the methods of physics
+08:45 
+
+08:45 actually are different from the methods
+08:48 
+
+08:48 of traditional computer science and and
+08:50 
+
+08:50 very well suited for studying um large
+08:53 
+
+08:53 scale machine learning that that we use
+08:55 
+
+08:55 to to to work on AI there there's um you
+08:59 
+
+08:59 know traditionally physics involves a
+09:00 
+
+09:00 lot of interplay between Theory and
+09:02 
+
+09:02 experiment you come up with some sort of
+09:05 
+
+09:05 model that you have some sort of
+09:06 
+
+09:06 theoretical intuition about then you go
+09:07 
+
+09:07 do a bunch of experiments and you
+09:09 
+
+09:09 validate that model or not then you know
+09:11 
+
+09:11 there's this tight feedback loop between
+09:13 
+
+09:13 collecting data coming up with theories
+09:15 
+
+09:15 coming up with toy models understanding
+09:17 
+
+09:17 moves forward by that and you know we
+09:19 
+
+09:19 get these really nice explanatory
+09:21 
+
+09:21 theories and and I think the the way
+09:24 
+
+09:24 that big deep learning systems work you
+09:26 
+
+09:26 have this tight feedback loop where you
+09:28 
+
+09:28 can do a number of experiment the sort
+09:30 
+
+09:30 of math that we use is very well suited
+09:32 
+
+09:32 to the math that a lot of physicists are
+09:34 
+
+09:34 familiar with and so I think I think
+09:36 
+
+09:36 it's very natural for a lot of physicist
+09:38 
+
+09:38 to to to work on this and and those
+09:40 
+
+09:40 tools a number of them differ from sort
+09:42 
+
+09:42 of the
+09:43 
+
+09:43 traditional at least theoretical
+09:45 
+
+09:45 computer science and theoretical machine
+09:47 
+
+09:47 learning tools for studying the
+09:48 
+
+09:48 theoretical side of machine learning and
+09:50 
+
+09:50 maybe also differentiation between just
+09:52 
+
+09:52 being an awesome engineer and also being
+09:54 
+
+09:54 a scientist and there's tools from from
+09:57 
+
+09:57 doing science that are helpful in
+09:58 
+
+09:58 studying these systems
+09:60 
+
+09:60 Dan you you wrote this um uh what I
+10:02 
+
+10:02 thought was a beautiful article black
+10:04 
+
+10:04 holes in the intelligence explosion and
+10:05 
+
+10:05 in there you talk about this concept of
+10:08 
+
+10:08 sort of the microscopic point of view
+10:10 
+
+10:10 and then the system level point of view
+10:12 
+
+10:12 and how physics really equips people to
+10:15 
+
+10:15 think about the system level point of
+10:16 
+
+10:16 view and that has a sort of
+10:18 
+
+10:18 complimentary benefit to understanding
+10:20 
+
+10:20 these systems can you can you just take
+10:22 
+
+10:22 a minute and kind of explain sort of
+10:23 
+
+10:23 microscopic versus system level and how
+10:26 
+
+10:26 the physics influence helps to
+10:27 
+
+10:27 understand the system level sure so can
+10:31 
+
+10:31 let me um start with an analogy that I
+10:33 
+
+10:33 think is is like very you know goes even
+10:36 
+
+10:36 further than an analogy but going back
+10:39 
+
+10:39 what year is it maybe like 200 years or
+10:41 
+
+10:41 so there's around the time in the
+10:43 
+
+10:43 industrial revolution there was steam
+10:46 
+
+10:46 engines and steam power and a lot of
+10:48 
+
+10:48 technology that resulted from this and
+10:50 
+
+10:50 ultimately powered
+10:52 
+
+10:52 industrialization
+10:53 
+
+10:53 and in the beginning there was a lot of
+10:56 
+
+10:56 engineering of of these steam engines
+10:58 
+
+10:58 you know and and there was highle theory
+11:01 
+
+11:01 of of how this work called
+11:02 
+
+11:02 thermodynamics where you know and I I
+11:05 
+
+11:05 imagine everyone's seen this in in in
+11:07 
+
+11:07 high school perhaps where you know
+11:09 
+
+11:09 there's the ideal gas law that tells you
+11:11 
+
+11:11 that there's some relationship between
+11:13 
+
+11:13 pressure and volume and temperature and
+11:15 
+
+11:15 you know these are very macro level
+11:17 
+
+11:17 things like you can buy a thermometer
+11:19 
+
+11:19 you can also like measure the volume of
+11:21 
+
+11:21 your room and um you can buy a barometer
+11:24 
+
+11:24 as well maybe people don't uh or look
+11:26 
+
+11:26 look up on the weather report but you
+11:27 
+
+11:27 know these are these are things that
+11:28 
+
+11:28 these are like measurements that weuse
+11:29 
+
+11:29 and we talk about but then underlying
+11:32 
+
+11:32 this and it took us a a bit later to to
+11:36 
+
+11:36 like validate this and understand it
+11:37 
+
+11:37 there's the notion of of atoms and
+11:39 
+
+11:39 molecules the air molecules bouncing
+11:42 
+
+11:42 around and somehow uh we Now understand
+11:45 
+
+11:45 that those air molecules give rise to
+11:47 
+
+11:47 things like temperature and pressure and
+11:49 
+
+11:49 um volume I guess is is easier to
+11:52 
+
+11:52 understand that the gases the molecules
+11:53 
+
+11:53 are confined to room and and but there's
+11:55 
+
+11:55 a precise way in which you can start
+11:57 
+
+11:57 with a statistical understanding of
+11:59 
+
+11:59 those molecules ules and derive
+12:00 
+
+12:00 thermodynamics like derive the ideal gas
+12:02 
+
+12:02 law from it and you can go further than
+12:04 
+
+12:04 that derive you know that it's ideal
+12:06 
+
+12:06 because it's wrong it's it's just a toy
+12:08 
+
+12:08 model but you can there are corrections
+12:09 
+
+12:09 to it and you can sort of understand you
+12:11 
+
+12:11 know from the microscopic perspective
+12:13 
+
+12:13 which is the the molecules which we
+12:15 
+
+12:15 don't we don't really interact with you
+12:17 
+
+12:17 know we don't see them we don't interact
+12:18 
+
+12:18 with them on a day-to-day basis but
+12:20 
+
+12:20 their statistical aggregate properties
+12:22 
+
+12:22 give rise to sort of this this be this
+12:24 
+
+12:24 behavior that we do see at the at the
+12:26 
+
+12:26 macro scale and part of to to get to
+12:30 
+
+12:30 your to get to your question you know I
+12:32 
+
+12:32 I think there's a similar thing going on
+12:34 
+
+12:34 with with deep learning systems and I
+12:36 
+
+12:36 wrote a book um with with Shada uh and
+12:39 
+
+12:39 and Boris Hannon on on how to apply
+12:42 
+
+12:42 these sorts of ideas to to to deep
+12:44 
+
+12:44 learning and in at least an initial a
+12:46 
+
+12:46 framework that that allows you to start
+12:47 
+
+12:47 doing this in in an initial way and and
+12:50 
+
+12:50 um to to answer your question we the the
+12:54 
+
+12:54 sort of micro pers perspective is you
+12:56 
+
+12:56 have neurons and weights and biases and
+12:59 
+
+12:59 we can talk about in detail how that
+13:01 
+
+13:01 works but you know when people think of
+13:02 
+
+13:02 the architecture there's there's some
+13:03 
+
+13:03 very specific some people say circuits
+13:06 
+
+13:06 there's specific um ways in which these
+13:09 
+
+13:09 these things um you know there's an
+13:11 
+
+13:11 input signal which might be an image or
+13:13 
+
+13:13 text and then there's many parameters
+13:15 
+
+13:15 and and you know there's a very it's
+13:16 
+
+13:16 very simple to write down it's not that
+13:18 
+
+13:18 many lines of of of code even taking
+13:21 
+
+13:21 into account the machine learning
+13:22 
+
+13:22 libraries but it's you know it's like a
+13:24 
+
+13:24 very simple set of equations but there's
+13:25 
+
+13:25 a lot of Weights there's a lot of
+13:27 
+
+13:27 numbers that you have to know in order
+13:28 
+
+13:28 to get it to do something um and that's
+13:30 
+
+13:30 sort of the micro that's like the
+13:31 
+
+13:31 molecules perspective and then there's
+13:34 
+
+13:34 there's like the the macro perspective
+13:36 
+
+13:36 which is well what did it do did it did
+13:38 
+
+13:38 it produce a did it produce a poem did
+13:40 
+
+13:40 it produce did it solve a math problem
+13:42 
+
+13:42 how does you know how do we go from that
+13:44 
+
+13:44 those weights and biases to to that
+13:46 
+
+13:46 macro perspective and so for for for
+13:49 
+
+13:49 statistical physics the thermodynamics
+13:51 
+
+13:51 we we understand that completely and you
+13:53 
+
+13:53 know you could imagine trying to do the
+13:55 
+
+13:55 same sort of thing literally applying
+13:57 
+
+13:57 the same sorts of methods in to to to
+14:00 
+
+14:00 understand the how do this how does the
+14:03 
+
+14:03 underlying micro statistical behavior of
+14:06 
+
+14:06 the of these models lead to to the sort
+14:08 
+
+14:08 of macro or as you said system level
+14:10 
+
+14:10 pers
+14:11 
+
+14:11 perspective Dan maybe maybe speaking of
+14:14 
+
+14:14 of scaling laws and uh I think you were
+14:16 
+
+14:16 at our event AI Ascent Andre kpoy
+14:19 
+
+14:19 mentioned that current AI systems are
+14:23 
+
+14:23 like five or six orders of magnitude off
+14:24 
+
+14:24 in efficiency compared to biological
+14:26 
+
+14:26 neural Nets how do you think about that
+14:29 
+
+14:29 do you think scaling laws get us there
+14:31 
+
+14:31 just combination of scaling laws plus
+14:33 
+
+14:33 Hardware getting more efficient or like
+14:35 
+
+14:35 do you think that there's kind of big
+14:37 
+
+14:37 step function leaps that need need to
+14:39 
+
+14:39 come and research there's maybe two
+14:41 
+
+14:41 things that that that could be meant
+14:42 
+
+14:42 here one is that the way humans seem to
+14:47 
+
+14:47 work at a similar scale to AI systems um
+14:50 
+
+14:50 is much more efficient you know the
+14:51 
+
+14:51 amount of we don't need to see trillions
+14:53 
+
+14:53 of tokens before we we we speak we see a
+14:56 
+
+14:56 much you know my my todler has is
+14:59 
+
+14:59 already started in to to speak in
+14:60 
+
+14:60 sentences and he's been exposed to far
+15:02 
+
+15:02 less um tokens than than a typical large
+15:05 
+
+15:05 language model um and so there's some
+15:06 
+
+15:06 sort of Disconnect between human
+15:08 
+
+15:08 efficiency at learning and and what
+15:10 
+
+15:10 large language models do uh of course
+15:12 
+
+15:12 they're very different systems are
+15:13 
+
+15:13 designed you know the the way in which
+15:15 
+
+15:15 they learn is is right now very
+15:16 
+
+15:16 different and so in some sense that's to
+15:18 
+
+15:18 be expected so there's there's this Gap
+15:20 
+
+15:20 here that you could imagine bridging
+15:22 
+
+15:22 there's another thing that that I think
+15:24 
+
+15:24 is is not what you meant but but I think
+15:25 
+
+15:25 is is sort of the thing to answer about
+15:28 
+
+15:28 with respect to scaling laws which is
+15:30 
+
+15:30 um and I talked about this a bit in the
+15:31 
+
+15:31 article but a lots of people seem to
+15:34 
+
+15:34 talk about this which is what is the
+15:36 
+
+15:36 final GPT you know there's GPT 4 right
+15:39 
+
+15:39 now and it could be other companies as
+15:41 
+
+15:41 well but since I'm going to join open AI
+15:42 
+
+15:42 let me represent my my my new company
+15:45 
+
+15:45 right so is it going to be six is it
+15:46 
+
+15:46 going to be seven at some point right if
+15:49 
+
+15:49 assuming we have to scale things up
+15:51 
+
+15:51 there are things that are going to break
+15:52 
+
+15:52 whether they're economic we're going to
+15:53 
+
+15:53 run out of you know we're going to try
+15:55 
+
+15:55 to train a model that's larger than the
+15:57 
+
+15:57 world's GDP or or gwp whatever the
+16:01 
+
+16:01 however the D works for for for the
+16:03 
+
+16:03 world and um or we're going to run out
+16:06 
+
+16:06 of you know we we're not going to be
+16:08 
+
+16:08 able to produce enough gpus or we're not
+16:10 
+
+16:10 going to be able to put you know it's
+16:12 
+
+16:12 going to cover the surface of the you
+16:13 
+
+16:13 know a lot of these things are going to
+16:14 
+
+16:14 break down at some point and so probably
+16:17 
+
+16:17 the economic one happens first so how
+16:19 
+
+16:19 many you know how many more iterations
+16:22 
+
+16:22 do we get before we run out of actually
+16:23 
+
+16:23 being able to scale practically and
+16:25 
+
+16:25 where does that get us and then I think
+16:28 
+
+16:28 I think to tie those two two
+16:29 
+
+16:29 perspectives together there's um so
+16:31 
+
+16:31 scaling on its own and it and of course
+16:33 
+
+16:33 it's impossible to entangle this because
+16:35 
+
+16:35 people are making things more efficient
+16:36 
+
+16:36 but you know there's like you can
+16:38 
+
+16:38 imagine there's the take literally what
+16:39 
+
+16:39 gbt2 was which was the initial big model
+16:42 
+
+16:42 and keep scaling it up is that going to
+16:45 
+
+16:45 get us to some you know super different
+16:47 
+
+16:47 exciting economically power or however
+16:50 
+
+16:50 you want to Define what the end state of
+16:52 
+
+16:52 AI research and and AI startups and you
+16:54 
+
+16:54 know AI in industry is so um or do we
+16:58 
+
+16:58 need lots of of new exciting ideas and
+17:00 
+
+17:00 and again of course you can't really dis
+17:02 
+
+17:02 disentangle these but I think the the
+17:03 
+
+17:03 general scaling hypothesis is that it's
+17:05 
+
+17:05 just the scaling and it's not the ideas
+17:07 
+
+17:07 that that matter um whereas the how do
+17:10 
+
+17:10 we get to efficient like humans I think
+17:12 
+
+17:12 requires like non-trivial ideas and and
+17:16 
+
+17:16 to to answer your your question the
+17:18 
+
+17:18 reason I'm excited about joining open AI
+17:20 
+
+17:20 is that I think there is high leverage
+17:23 
+
+17:23 to be had in in in the ideas you know in
+17:26 
+
+17:26 going Beyond scaling and that that we
+17:27 
+
+17:27 will need that in order to get to the to
+17:29 
+
+17:29 the next next steps and and I'm I have
+17:32 
+
+17:32 no idea what I'll be working on um but
+17:34 
+
+17:34 when this airs I guess I will know what
+17:36 
+
+17:36 I'm working on but that you know that
+17:38 
+
+17:38 that that's what's really exciting to me
+17:40 
+
+17:40 yeah Dan is there is there almost like a
+17:42 
+
+17:42 pendulum that swings back and forth
+17:43 
+
+17:43 between scale and ideas in terms of how
+17:45 
+
+17:45 people apply their efforts in the world
+17:47 
+
+17:47 of AI like Transformers came out great
+17:50 
+
+17:50 idea since then we've largely been in
+17:52 
+
+17:52 this race to scale it feels like things
+17:55 
+
+17:55 are starting to ASM toote for a bunch of
+17:57 
+
+17:57 practical reasons that you mentioned is
+17:59 
+
+17:59 the pendulum swinging back toward ideas
+18:01 
+
+18:01 as the currency you know it's less now
+18:03 
+
+18:03 about who can you know have the biggest
+18:05 
+
+18:05 GPU cluster and more about finding new
+18:07 
+
+18:07 architectural breakthroughs whether
+18:09 
+
+18:09 that's you know reasoning or something
+18:11 
+
+18:11 else yeah that's a that's a that's a
+18:13 
+
+18:13 really great question um I
+18:15 
+
+18:15 think there there's this article by
+18:19 
+
+18:19 Richard Sutton um called The Bitter
+18:22 
+
+18:22 lesson not better pill and and it
+18:26 
+
+18:26 basically gives the argument that um
+18:30 
+
+18:30 that ideas aren't important that scale
+18:31 
+
+18:31 is is is what you need and that you know
+18:33 
+
+18:33 that that all the all the ideas are
+18:35 
+
+18:35 always trumped by by scaling by scaling
+18:37 
+
+18:37 things up um and I mean says a bunch of
+18:40 
+
+18:40 things but maybe that's that's a high
+18:42 
+
+18:42 level takeaway and you know there is
+18:44 
+
+18:44 there's a sense of this where there were
+18:46 
+
+18:46 there are a lot of you know interesting
+18:47 
+
+18:47 ideas that came out in the 80s and 90s
+18:50 
+
+18:50 that people didn't really have scale to
+18:52 
+
+18:52 explore and then I remember when after
+18:56 
+
+18:56 alphao and Deep Mind was was writing a
+18:58 
+
+18:58 lot of papers people were discovering
+18:59 
+
+18:59 those papers and reimplementing them in
+19:00 
+
+19:00 deep learning systems but this was sort
+19:02 
+
+19:02 of still before people realized no the
+19:04 
+
+19:04 thing that you need to do is scale up
+19:05 
+
+19:05 and and even now with Transformers
+19:08 
+
+19:08 people are exploring other architectures
+19:09 
+
+19:09 or even simpler architectures that we
+19:12 
+
+19:12 that we knew before that seem to be able
+19:14 
+
+19:14 to you know there's a notion you know
+19:15 
+
+19:15 maybe scaling laws don't come from as
+19:18 
+
+19:18 long as the architecture isn't sick in
+19:19 
+
+19:19 some way they they come from sort of the
+19:21 
+
+19:21 underlying data process and and having
+19:23 
+
+19:23 large amounts of data rather than from
+19:26 
+
+19:26 from having a special idea I think I
+19:30 
+
+19:30 think the real answer is that there's a
+19:31 
+
+19:31 balance be between the two that scale is
+19:33 
+
+19:33 is hugely important and and maybe it was
+19:35 
+
+19:35 just not understood how important and we
+19:38 
+
+19:38 also didn't have the resources to to
+19:40 
+
+19:40 scale things up at various times you
+19:41 
+
+19:41 know the things that have to go into
+19:43 
+
+19:43 producing these GPU clusters that are
+19:45 
+
+19:45 producing these models are you know you
+19:47 
+
+19:47 you guys know this as well that like
+19:49 
+
+19:49 there's a lot of parts along the supply
+19:51 
+
+19:51 chain or along the the product chain
+19:53 
+
+19:53 whatever you actually call it in order
+19:55 
+
+19:55 to make those things happen and deploy
+19:56 
+
+19:56 them and even you know the way gpus were
+19:59 
+
+19:59 originally they've now co-evolved to be
+20:01 
+
+20:01 well suited for these models and trans
+20:03 
+
+20:03 the reason in some sense you can think
+20:05 
+
+20:05 of Transformers was a good idea was
+20:07 
+
+20:07 because it was designed to be well
+20:09 
+
+20:09 suited to train on the systems that we
+20:10 
+
+20:10 had at the time and and so sure these
+20:12 
+
+20:12 other architectures could do it um
+20:15 
+
+20:15 scient you know at a ideal scientific
+20:17 
+
+20:17 level but at a practical level there's
+20:19 
+
+20:19 there's it was important to to get
+20:21 
+
+20:21 something that was that that was able to
+20:23 
+
+20:23 to reach that scale so I think I think
+20:26 
+
+20:26 you know if you brought in ideas to to
+20:28 
+
+20:28 be that sort of thing that's that's
+20:30 
+
+20:30 married with scale in some way then um I
+20:33 
+
+20:33 mean I I still think ultimate like you
+20:35 
+
+20:35 know someone came up with the idea of
+20:36 
+
+20:36 deep learning that was an important idea
+20:38 
+
+20:38 you know there's Pitts and Mulla came up
+20:40 
+
+20:40 with the original idea for the for the
+20:43 
+
+20:43 for the um for the neuron and then
+20:45 
+
+20:45 there's lots of Rosen blat came up with
+20:47 
+
+20:47 the original perceptron and there's like
+20:49 
+
+20:49 a lot of people from going back like 80
+20:51 
+
+20:51 or so years of people making making
+20:54 
+
+20:54 important discoveries that were ideas
+20:55 
+
+20:55 that that contribute so so I think I
+20:57 
+
+20:57 think it's both it's but but it's easy
+20:59 
+
+20:59 to see how you know if you get to apply
+21:03 
+
+21:03 if you're bottleneck and then all of a
+21:04 
+
+21:04 sudden you get to apply if you're
+21:06 
+
+21:06 bottleneck people think about ideas and
+21:08 
+
+21:08 then if you unlock a new capacity of
+21:10 
+
+21:10 scale somehow then you just see a huge
+21:12 
+
+21:12 set of results and it seems like scale
+21:13 
+
+21:13 is super important and I really think
+21:14 
+
+21:14 it's more of a Synergy between the two
+21:17 
+
+21:17 maybe on the topic of the race to scale
+21:18 
+
+21:18 Dan you mentioned kind of the just the
+21:20 
+
+21:20 economic constraints and realities uh
+21:23 
+
+21:23 which I I I i' guess are more like
+21:26 
+
+21:26 practically a ceiling in the private
+21:27 
+
+21:27 sector you also mentioned the Manhattan
+21:29 
+
+21:29 Project earlier in in terms of things
+21:31 
+
+21:31 that physicists have been involved with
+21:33 
+
+21:33 like do you think we need a Manhattan
+21:35 
+
+21:35 Project Style thing for AI like at the
+21:37 
+
+21:37 nation state or at the international
+21:39 
+
+21:39 level um well one thing I can say is
+21:43 
+
+21:43 that part of the process that led me to
+21:46 
+
+21:46 open AI is I was talking with your
+21:48 
+
+21:48 partner Sean Maguire who brought me to
+21:50 
+
+21:50 sequa in the first place um and trying
+21:53 
+
+21:53 to figure out is there a startup that
+21:55 
+
+21:55 makes sense for me to for me to work on
+21:57 
+
+21:57 that has the right mix of
+21:59 
+
+21:59 sort of scientific questions research
+22:01 
+
+22:01 questions and also as a business and and
+22:03 
+
+22:03 I think it was Sean that that said and I
+22:05 
+
+22:05 don't mean the analogy in terms of the
+22:07 
+
+22:07 impact of you know in terms of the like
+22:10 
+
+22:10 negative impact of what the man you
+22:12 
+
+22:12 might think of the Manhattan Project but
+22:13 
+
+22:13 just in terms of the scale in the
+22:14 
+
+22:14 organization he said you know in the 40s
+22:18 
+
+22:18 the physicists went to the Manhattan
+22:19 
+
+22:19 Project even if they were doing other
+22:20 
+
+22:20 things that was that was the place to be
+22:23 
+
+22:23 and so now ai is the same thing and you
+22:26 
+
+22:26 know basically said open AI as that
+22:28 
+
+22:28 place so maybe maybe we don't need a
+22:30 
+
+22:30 public sector organized Um Manhattan
+22:34 
+
+22:34 Project but it you know it can be open
+22:36 
+
+22:36 AI Open the Eyes Manhattan projects I
+22:39 
+
+22:39 love that well maybe maybe that's not a
+22:40 
+
+22:40 direct quote that we want to be taken
+22:42 
+
+22:42 out of context but I think in terms of
+22:45 
+
+22:45 metaphoric is the metaphorical manhatt
+22:47 
+
+22:47 project yeah in terms of scale and
+22:48 
+
+22:48 ambition in terms of I think I mean I
+22:50 
+
+22:50 think a lot of physicists would love to
+22:51 
+
+22:51 work at open AI for for a lot of the
+22:54 
+
+22:54 same reasons that they probably were
+22:55 
+
+22:55 excited to well okay there's a number of
+22:57 
+
+22:57 different reasons Maybe
+22:59 
+
+22:59 maybe we just have to leave it as a
+23:01 
+
+23:01 Nuance thing rather than making broad
+23:03 
+
+23:03 Claims can we talk a little bit about
+23:05 
+
+23:05 this
+23:07 
+
+23:07 like can we ever understand AI
+23:10 
+
+23:10 especially as we go to these deep neural
+23:11 
+
+23:11 Nets or do you think
+23:13 
+
+23:13 it's a hopeless black box so to speak
+23:16 
+
+23:16 yeah I think within the this is this is
+23:18 
+
+23:18 my answer to the what are you a
+23:20 
+
+23:20 contrarian about although maybe you know
+23:22 
+
+23:22 on the internet everyone takes every
+23:23 
+
+23:23 side of every position so it's hard to
+23:26 
+
+23:26 to to to say you're you're Havoc aan
+23:29 
+
+23:29 position but I think within AI
+23:30 
+
+23:30 communities you know I think my
+23:32 
+
+23:32 contrarian position is that we can
+23:33 
+
+23:33 really understand these systems and in
+23:35 
+
+23:35 the you know physics systems are
+23:37 
+
+23:37 extremely complicated and and we have
+23:39 
+
+23:39 made a huge amount of progress in
+23:41 
+
+23:41 understanding them I think these systems
+23:42 
+
+23:42 sit in the in the same framework and you
+23:44 
+
+23:44 know another principle uh that that show
+23:47 
+
+23:47 and I talk about in our book and that
+23:50 
+
+23:50 that's a principle of physics is that
+23:51 
+
+23:51 there's often extreme simplicity at very
+23:54 
+
+23:54 large scales um basically due to due to
+23:56 
+
+23:56 the statistical averaging or more
+23:58 
+
+23:58 technically the central limit theorem uh
+24:00 
+
+24:00 things things can simplify and I'm not
+24:02 
+
+24:02 saying this is what happens exactly in
+24:05 
+
+24:05 large language models of of course not
+24:07 
+
+24:07 but I but I do think that we can apply
+24:09 
+
+24:09 sort of the methods that that we have
+24:10 
+
+24:10 and also you know maybe hopefully have
+24:13 
+
+24:13 ai that that can help us do this in in
+24:15 
+
+24:15 the future and by AI I mean tools not
+24:17 
+
+24:17 like individual intelligences just going
+24:19 
+
+24:19 running on their own and solving these
+24:21 
+
+24:21 problems but but I I I guess I I feel at
+24:23 
+
+24:23 the extreme end that that um that this
+24:26 
+
+24:26 is not going to be an art that it that
+24:29 
+
+24:29 that the science will will catch up and
+24:30 
+
+24:30 it we we'll be able to make extreme um
+24:32 
+
+24:32 leaps in really understanding how these
+24:34 
+
+24:34 systems work and behave so Dan we've
+24:36 
+
+24:36 talked a bunch about what physics can
+24:38 
+
+24:38 teach us about AI um can we talk a bit
+24:41 
+
+24:41 about what AI can teach us about physics
+24:43 
+
+24:43 are you are you optimistic about domains
+24:46 
+
+24:46 like physics and Math and how these
+24:49 
+
+24:49 emerging models can you know probe
+24:51 
+
+24:51 further into those
+24:53 
+
+24:53 domains yes I'm definitely optimistic I
+24:55 
+
+24:55 guess my um
+24:59 
+
+24:59 my perspective is that math will be
+25:00 
+
+25:00 easier than physics which maybe betrays
+25:02 
+
+25:02 the fact that that that I'm I'm a
+25:05 
+
+25:05 physicist not not a not a mathematician
+25:09 
+
+25:09 uh and um I'll I'll say I I can say I
+25:13 
+
+25:13 can give uh explain what why why I think
+25:15 
+
+25:15 that um in a in a second um but you know
+25:20 
+
+25:20 I still have a lot of friends that that
+25:22 
+
+25:22 that work in physics and they they you
+25:23 
+
+25:23 know there there's a there's like a
+25:26 
+
+25:26 growing sense and maybe maybe in even
+25:28 
+
+25:28 approaching a dread that and maybe this
+25:30 
+
+25:30 is actually the answer to why do
+25:32 
+
+25:32 physicists work on AI because you know
+25:34 
+
+25:34 if if what you care about is the answer
+25:35 
+
+25:35 to your physics question and you want to
+25:37 
+
+25:37 make it happen as soon as possible what
+25:40 
+
+25:40 is the highest leverage thing you can do
+25:41 
+
+25:41 maybe it's not work on the physics
+25:43 
+
+25:43 question you care about but it's work on
+25:44 
+
+25:44 AI to make the you know to to because
+25:48 
+
+25:48 you think that the AI might end up
+25:49 
+
+25:49 solving those those questions very
+25:51 
+
+25:51 rapidly anyway and I don't know the
+25:53 
+
+25:53 extent that anyone really takes it
+25:55 
+
+25:55 seriously but I think within the the
+25:57 
+
+25:57 theoretical physics community that I
+25:59 
+
+25:59 come from that this is sort of a a thing
+26:01 
+
+26:01 that that someone gets thrown around and
+26:03 
+
+26:03 and discussed I I think um maybe to give
+26:07 
+
+26:07 a more object level answer I think
+26:08 
+
+26:08 what's exciting about math
+26:11 
+
+26:11 and um maybe when you have Noom Brown on
+26:14 
+
+26:14 if you have him on he'll talk about this
+26:16 
+
+26:16 but this is um something that that he's
+26:18 
+
+26:18 talked about for a while before he
+26:20 
+
+26:20 joined open
+26:21 
+
+26:21 AI um I I think that that that we we
+26:25 
+
+26:25 have um you know we we made a lot of
+26:27 
+
+26:27 progress in terms of um solving games by
+26:31 
+
+26:31 doing more than just looking up what is
+26:33 
+
+26:33 the strategy that we should use to play
+26:35 
+
+26:35 the games but also being able to
+26:36 
+
+26:36 simulate forward and you know you know
+26:38 
+
+26:38 the way the way that if I'm in a very
+26:40 
+
+26:40 hard position in a in a particular game
+26:42 
+
+26:42 rather than just playing with intuition
+26:43 
+
+26:43 I might sit and think about what what I
+26:45 
+
+26:45 should do sometimes this goes under the
+26:47 
+
+26:47 name inference time compute rather than
+26:49 
+
+26:49 training training time compute or
+26:52 
+
+26:52 pre-training and you know I there's
+26:55 
+
+26:55 there's a sense in which what it means
+26:56 
+
+26:56 to do reasoning is very related to the
+26:59 
+
+26:59 this ability to sit and think so we know
+27:01 
+
+27:01 how to do it for games because there's a
+27:02 
+
+27:02 very clear witting and loss signal so
+27:04 
+
+27:04 you can simulate ahead and sort of
+27:06 
+
+27:06 figure out what it means to do good or
+27:07 
+
+27:07 or not and I think math in some some
+27:11 
+
+27:11 parts of math again I'm not a
+27:13 
+
+27:13 mathematician and well you know always
+27:15 
+
+27:15 scared about talking about math publicly
+27:17 
+
+27:17 and saying something wrong that will
+27:18 
+
+27:18 upset mathematicians but seems like
+27:20 
+
+27:20 certain types of math problems are not
+27:23 
+
+27:23 as constrained as games but are still
+27:25 
+
+27:25 constrained enough where there's a
+27:26 
+
+27:26 notion of you know like finding a proof
+27:28 
+
+27:28 right you know there's there's defin
+27:30 
+
+27:30 problems in terms of search in terms of
+27:32 
+
+27:32 how how do you figure out what is the
+27:33 
+
+27:33 next you know move in the proof but the
+27:35 
+
+27:35 fact that we might call it a move
+27:37 
+
+27:37 suggests that the there's things in math
+27:39 
+
+27:39 that feel a lot like games and so we
+27:41 
+
+27:41 might think the fact that we can do well
+27:43 
+
+27:43 at games maybe means that we can do well
+27:45 
+
+27:45 at certain types of of mathematical
+27:47 
+
+27:47 Discovery Well I was gon to say since
+27:48 
+
+27:48 you mentioned Noom he he likes to use
+27:50 
+
+27:50 the example um with test time compute of
+27:53 
+
+27:53 whether it could help to prove the the
+27:55 
+
+27:55 ran hypothesis right is there a similar
+27:59 
+
+27:59 is there a similar problem or hypothesis
+28:00 
+
+28:00 in the world of physics that you are
+28:03 
+
+28:03 optimistic AI can help to solve sometime
+28:05 
+
+28:05 in our lifetimes yeah so I mean there's
+28:08 
+
+28:08 a millennium problem relating to physics
+28:09 
+
+28:09 and if I try to um remember exactly what
+28:13 
+
+28:13 it is I'm sure I will um butcher it and
+28:15 
+
+28:15 then no one will believe that I'm
+28:16 
+
+28:16 actually a physicist but it's related to
+28:19 
+
+28:19 the you know it's a mathematical physics
+28:20 
+
+28:20 question related to the Yang Mills mask
+28:22 
+
+28:22 app and um but but I I think what I
+28:25 
+
+28:25 wanted to say is that I think some of
+28:27 
+
+28:27 the flavor of what physic is care about
+28:29 
+
+28:29 and doing physics feels a little
+28:31 
+
+28:31 different this is where I might get in
+28:32 
+
+28:32 trouble feels a little different than
+28:34 
+
+28:34 some of like the mathematical proof type
+28:37 
+
+28:37 things physicists are known to be more
+28:39 
+
+28:39 informal um and you know uh handwavy but
+28:43 
+
+28:43 also on the other hand connected to in
+28:46 
+
+28:46 some sense connected to the interplay
+28:48 
+
+28:48 between experiment and and and and the
+28:51 
+
+28:51 sort of models that phist study is maybe
+28:53 
+
+28:53 what saves them is that you know they
+28:55 
+
+28:55 they have things are informal and
+28:56 
+
+28:56 handwavy but very explanatory and the
+28:58 
+
+28:58 mathematicians it's like we were saying
+29:00 
+
+29:00 earlier the the engineers discovered all
+29:03 
+
+29:03 the exciting industrial machines and
+29:04 
+
+29:04 then the physicists maybe cleaned up a
+29:06 
+
+29:06 bunch of the the theory about how that
+29:08 
+
+29:08 works and then the mathematicians come
+29:09 
+
+29:09 later and clean up like formalize
+29:10 
+
+29:10 everything and clean it up even even
+29:12 
+
+29:12 more and so there's a mathematician or
+29:14 
+
+29:14 mathematical physicists that clean up a
+29:16 
+
+29:16 lot of you know make make proper and and
+29:18 
+
+29:18 try and you know understand in in formal
+29:21 
+
+29:21 ways some of the stuff the physicists do
+29:24 
+
+29:24 but um rather than talking about I mean
+29:27 
+
+29:27 I I think the the
+29:29 
+
+29:29 the the key point there is that the sort
+29:30 
+
+29:30 of questions that are interesting to
+29:32 
+
+29:32 physicists maybe don't look like proofs
+29:34 
+
+29:34 but maybe they look like and maybe it's
+29:35 
+
+29:35 not about how do we given a a particular
+29:38 
+
+29:38 model how do we actually solve it like
+29:40 
+
+29:40 once once things are set up correctly
+29:42 
+
+29:42 like it's often you know senior or you
+29:45 
+
+29:45 know people that are trained in the
+29:46 
+
+29:46 field are able to to sort of figure out
+29:48 
+
+29:48 how to analyze those systems it's more
+29:50 
+
+29:50 the the other stuff like what is the
+29:52 
+
+29:52 right model to study does It capture the
+29:53 
+
+29:53 right sort of problems does this relate
+29:55 
+
+29:55 to the thing that you care about what
+29:57 
+
+29:57 are the insights you should draw from it
+29:59 
+
+29:59 and and so for AI to help there I think
+30:02 
+
+30:02 it would look different than the way
+30:04 
+
+30:04 we're sort of trying to build AI systems
+30:06 
+
+30:06 for math so rather than here's you know
+30:08 
+
+30:08 here's the word problem go and you know
+30:10 
+
+30:10 solve solve solve this High School level
+30:13 
+
+30:13 problem or you know prove the remon
+30:15 
+
+30:15 hypothesis it's like you know the
+30:17 
+
+30:17 questions in physics are like what is
+30:18 
+
+30:18 quantum gravity what happens when
+30:20 
+
+30:20 something goes into a black hole and
+30:21 
+
+30:21 that's not like you know start
+30:23 
+
+30:23 generating tokens on that like what does
+30:24 
+
+30:24 what does that even look like and and
+30:28 
+
+30:28 you know if you go to a physics
+30:29 
+
+30:29 department you know people hang out at
+30:30 
+
+30:30 the Blackport they chat about things
+30:32 
+
+30:32 like maybe they sketch mathematical
+30:35 
+
+30:35 things but but the you know there
+30:38 
+
+30:38 there's a lot of other things that go go
+30:39 
+
+30:39 into this and so maybe the sort of data
+30:41 
+
+30:41 that you need to collect looks more like
+30:43 
+
+30:43 that or maybe it looks like the random
+30:44 
+
+30:44 emails and conversations on slack and
+30:46 
+
+30:46 the and the scratch work and and so um I
+30:50 
+
+30:50 mean there are definitely tools that we
+30:51 
+
+30:51 can use like help me understand this new
+30:54 
+
+30:54 paper so I don't have to spend two weeks
+30:55 
+
+30:55 trying to study it and understand it you
+30:57 
+
+30:57 know maybe let me ask questions about it
+30:59 
+
+30:59 I think there are problems with the way
+31:01 
+
+31:01 that's currently implemented but you
+31:03 
+
+31:03 know I think there are a lot of tools
+31:04 
+
+31:04 that will help accelerate physicist just
+31:07 
+
+31:07 like Mathematica which is a software
+31:09 
+
+31:09 packages that does integrals and and it
+31:11 
+
+31:11 does a lot more than that sorry Stephen
+31:13 
+
+31:13 W from
+31:14 
+
+31:14 but uh you know I I use it to do
+31:18 
+
+31:18 integrals and um and and you know
+31:21 
+
+31:21 sometimes it doesn't know integrals and
+31:22 
+
+31:22 you can look them up in like these
+31:24 
+
+31:24 integral tables and and and anyway um
+31:28 
+
+31:28 you know I I I think you know there
+31:30 
+
+31:30 there's and and this applies to other
+31:32 
+
+31:32 branches of science too like I think
+31:33 
+
+31:33 there the ways in which the questions
+31:35 
+
+31:35 are asked and what it means to do
+31:36 
+
+31:36 science in different fields maybe looks
+31:39 
+
+31:39 can look further and further from games
+31:41 
+
+31:41 let's just say and so to the extent that
+31:43 
+
+31:43 that's true I think we'll need to and
+31:45 
+
+31:45 not even clear that we'll need lots of
+31:47 
+
+31:47 ideas or I mean we sorry we will need
+31:49 
+
+31:49 lots of ideas but it's more just like
+31:50 
+
+31:50 we'll have to I think we'll just have to
+31:52 
+
+31:52 approach them all differently and maybe
+31:54 
+
+31:54 not like maybe eventually we'll have a
+31:56 
+
+31:56 universal thing that knows how to do all
+31:57 
+
+31:57 of it but but initially like at least to
+31:60 
+
+31:60 me the a lot of these things feel a
+32:01 
+
+32:01 little different from each other you'll
+32:03 
+
+32:03 have a front row seat to it in part
+32:05 
+
+32:05 because you're also on the prize
+32:06 
+
+32:06 committee for the AI math Olympian which
+32:08 
+
+32:08 is something I'm personally super
+32:10 
+
+32:10 interested in um maybe to your last
+32:12 
+
+32:12 point on kind of like maybe eventually
+32:13 
+
+32:13 the stuff generalizes like why do you
+32:15 
+
+32:15 think people are so focused on solving
+32:17 
+
+32:17 the hardest problems today like physics
+32:19 
+
+32:19 math those were the subjects that
+32:20 
+
+32:20 everyone was terrified of in school
+32:22 
+
+32:22 right um where it feels like there's a
+32:24 
+
+32:24 lot more other domains that are also
+32:27 
+
+32:27 unsolved for now like do think do you
+32:29 
+
+32:29 think going for the hardest domains
+32:30 
+
+32:30 first kind of lets you get towards a
+32:33 
+
+32:33 generalized intelligence like how does
+32:35 
+
+32:35 how does solving these different domains
+32:37 
+
+32:37 kind of fit together in the in the
+32:39 
+
+32:39 grander puzzle yeah the first thing that
+32:42 
+
+32:42 comes to mind when you said that is to
+32:44 
+
+32:44 just push back and say well it's not
+32:45 
+
+32:45 hard these are the easy domains I mean
+32:47 
+
+32:47 I'm I'm bad at biology but I I can't
+32:50 
+
+32:50 can't doesn't make any sense to me at
+32:52 
+
+32:52 all my my um my my girlfriend actually
+32:55 
+
+32:55 is bioengineering and in biotech Tech
+32:58 
+
+32:58 and so I like what she does just makes
+33:00 
+
+33:00 no sense to me can't understand any of
+33:02 
+
+33:02 it um where physics makes complete sense
+33:04 
+
+33:04 to me I I think I think maybe a better
+33:08 
+
+33:08 answer or a less Global answer is that
+33:11 
+
+33:11 um like I was trying to say about math
+33:13 
+
+33:13 there there are constraints and you know
+33:15 
+
+33:15 and in particular with math a lot of it
+33:17 
+
+33:17 is unembodied you don't have to go and
+33:18 
+
+33:18 do experiments in the real world you
+33:20 
+
+33:20 know they're they're sort of
+33:21 
+
+33:21 self-sufficient and that's that's close
+33:23 
+
+33:23 to like what generating text like the
+33:26 
+
+33:26 the way language models work or even the
+33:27 
+
+33:27 way some reinforcement learning
+33:29 
+
+33:29 systems work for for games and so I
+33:32 
+
+33:32 think the further that you go from that
+33:33 
+
+33:33 the Messier Things become the the the
+33:35 
+
+33:35 harder it probably probably is and also
+33:37 
+
+33:37 the harder it is to get the right kind
+33:39 
+
+33:39 of data to to train these systems if you
+33:41 
+
+33:41 want to build a Ai and people are trying
+33:43 
+
+33:43 to do this but it seems difficult if you
+33:45 
+
+33:45 want to build a AI system that solves
+33:47 
+
+33:47 biology I guess you need to also make
+33:50 
+
+33:50 sure robotics works you know so that it
+33:52 
+
+33:52 can do those sorts of experiments and
+33:54 
+
+33:54 like it has to understand that sort of
+33:55 
+
+33:55 data or maybe it has humans do it but
+33:57 
+
+33:57 you know there's a lot you know for for
+33:59 
+
+33:59 a self-sustaining AI biologist it seems
+34:01 
+
+34:01 like there's a lot of things that are
+34:03 
+
+34:03 going to go into it I mean on the way
+34:05 
+
+34:05 we'll have things like alphafold 3 which
+34:08 
+
+34:08 you know just came out and which I
+34:09 
+
+34:09 didn't get a chance to read the details
+34:11 
+
+34:11 of but you know I saw that they're
+34:12 
+
+34:12 trying to use it for drug Discovery and
+34:14 
+
+34:14 and so you know I think each of these
+34:16 
+
+34:16 fields will have things developed along
+34:19 
+
+34:19 the way but it but I think the the less
+34:22 
+
+34:22 constraints there are and the the sort
+34:23 
+
+34:23 of Messier and more embodied it is the
+34:25 
+
+34:25 harder it will be to to accomplish so
+34:27 
+
+34:27 that makes sense so like hard for a
+34:29 
+
+34:29 human is not the same thing doesn't
+34:30 
+
+34:30 correlate to hard for a machine um yeah
+34:32 
+
+34:32 plus also maybe humans disagree about
+34:34 
+
+34:34 what what what's hard some us think more
+34:36 
+
+34:36 like machines I guess um and I guess the
+34:38 
+
+34:38 second question was like do you think it
+34:39 
+
+34:39 all coalesces into like one big model
+34:42 
+
+34:42 that understands everything because
+34:43 
+
+34:43 right now it seems like there's a lot of
+34:44 
+
+34:44 domain specific problem solving that's
+34:46 
+
+34:46 happening yeah I mean the way things are
+34:48 
+
+34:48 going it seems like the answer should be
+34:50 
+
+34:50 yes it's it's really dangerous to
+34:52 
+
+34:52 speculate in this field cuz everything
+34:54 
+
+34:54 you say is wrong um usually much sooner
+34:57 
+
+34:57 than will'll hold you to it yeah
+35:00 
+
+35:00 exactly but also like what does it mean
+35:02 
+
+35:02 to be different you know like there's a
+35:05 
+
+35:05 trivial way to make both things make the
+35:07 
+
+35:07 question meaningless by like you know
+35:08 
+
+35:08 you say the model is the union of all
+35:10 
+
+35:10 those other models but there's also
+35:11 
+
+35:11 sense in which mixture of experts is not
+35:14 
+
+35:14 was originally meant to be that it's not
+35:16 
+
+35:16 that in practice at all but you know
+35:18 
+
+35:18 there's there's a sliding scale here but
+35:20 
+
+35:20 you know it does seem like people um at
+35:24 
+
+35:24 least the big labs are going for the one
+35:25 
+
+35:25 big model and and have a belief that
+35:27 
+
+35:27 that's
+35:28 
+
+35:28 I you know well I I don't know but maybe
+35:30 
+
+35:30 I will in the future um understand what
+35:33 
+
+35:33 the philosophy is there yeah Dan we have
+35:36 
+
+35:36 a handful of more general questions to
+35:38 
+
+35:38 to kind of close things out here so I'll
+35:40 
+
+35:40 start start with a high level one um if
+35:42 
+
+35:42 we think kind of short-term medium-term
+35:44 
+
+35:44 longterm and call it you know five
+35:46 
+
+35:46 months five years five
+35:48 
+
+35:48 decades what are you most excited or
+35:51 
+
+35:51 optimistic about in the world of AI five
+35:55 
+
+35:55 years five years ago was about it was
+35:59 
+
+35:59 after the Transformer model came out but
+36:01 
+
+36:01 it was around maybe when gpt2 came out
+36:03 
+
+36:03 so it seems like you know for the last 5
+36:05 
+
+36:05 years we've been doing scaling I imagine
+36:07 
+
+36:07 within the next 5 years we'll see that
+36:10 
+
+36:10 scaling will will terminate and maybe it
+36:12 
+
+36:12 will terminate in you know a Utopia of
+36:14 
+
+36:14 some kind you know that that people are
+36:16 
+
+36:16 excited about we we're all post economic
+36:18 
+
+36:18 and and so forth and we'll have to
+36:19 
+
+36:19 you'll have to shut down all your funds
+36:21 
+
+36:21 and you know return Monopoly money cuz
+36:24 
+
+36:24 money won't matter or you know or we'll
+36:26 
+
+36:26 see that we need lots of ideas maybe
+36:28 
+
+36:28 there will be another AI winter I I I
+36:30 
+
+36:30 imagine that um and again scary to to
+36:33 
+
+36:33 Really speculate but I imagine like
+36:35 
+
+36:35 something interestingly will be
+36:37 
+
+36:37 something will be interestingly
+36:39 
+
+36:39 different within five years about Ai and
+36:41 
+
+36:41 it might just be that AI is over and
+36:42 
+
+36:42 we're on to the you know we're on to the
+36:44 
+
+36:44 next exciting investment opportunity and
+36:46 
+
+36:46 you know the everyone else will will
+36:48 
+
+36:48 shift elsewhere and um you know I'm not
+36:51 
+
+36:51 saying that that's not what's motivating
+36:53 
+
+36:53 me about about AI but you know so maybe
+36:55 
+
+36:55 five years is enough time to to see that
+36:57 
+
+36:57 and
+36:58 
+
+36:58 um I think in in one year I mean or
+37:03 
+
+37:03 there's a five I messed this up whatever
+37:05 
+
+37:05 maybe was five months I don't remember
+37:07 
+
+37:07 sorry this is five months it's okay it's
+37:11 
+
+37:11 okay these are approximations I know you
+37:13 
+
+37:13 said physicists are very handwavy
+37:14 
+
+37:14 Venture capitalists are very hand wavy
+37:16 
+
+37:16 these are approximations yeah in physics
+37:18 
+
+37:18 there's I like to joke that there's like
+37:20 
+
+37:20 three numbers there's zero one and
+37:21 
+
+37:21 infinity and you know those are the only
+37:23 
+
+37:23 numbers that matter um you know things
+37:26 
+
+37:26 are either arbitrarily small arbitrarily
+37:27 
+
+37:27 large about order one so okay um good
+37:31 
+
+37:31 thanks for reminding me but but yeah for
+37:34 
+
+37:34 for 5 months I mean I'm excited um to to
+37:38 
+
+37:38 well to to learn what's exciting at the
+37:40 
+
+37:40 Forefront at of a of a huge research lab
+37:44 
+
+37:44 like like open Ai and I I think one
+37:46 
+
+37:46 thing that'll be interesting will be the
+37:47 
+
+37:47 Delta between um the next generation of
+37:52 
+
+37:52 models right because there's there's
+37:54 
+
+37:54 ways in which things are scaling up in
+37:55 
+
+37:55 terms of I it's not really public I
+37:57 
+
+37:57 guess aside from meta but in terms of
+37:59 
+
+37:59 size of data size of size of models and
+38:01 
+
+38:01 we see scaling laws and scaling laws
+38:03 
+
+38:03 though relate to you know something like
+38:05 
+
+38:05 the loss and and and you know it's hard
+38:09 
+
+38:09 to translate that into actual
+38:10 
+
+38:10 capabilities and so what will it feel
+38:12 
+
+38:12 like to talk to the Next Generation
+38:14 
+
+38:14 model what will it look like will it
+38:15 
+
+38:15 have a huge economic impact or or not
+38:19 
+
+38:19 and um I think I you know in in terms of
+38:22 
+
+38:22 like estimating velocity right you need
+38:24 
+
+38:24 a few points you can't just have one
+38:26 
+
+38:26 point and we sort of have you know we're
+38:28 
+
+38:28 starting to have that with gpt3 to GPD 4
+38:31 
+
+38:31 but you know I feel like with the next
+38:32 
+
+38:32 Delta we'll get to really see what the
+38:34 
+
+38:34 velocity looks like and what it feels
+38:36 
+
+38:36 like going from from model to model to
+38:38 
+
+38:38 model and maybe I'll be able to make a
+38:40 
+
+38:40 better prediction in five months from
+38:42 
+
+38:42 now but then I guess I probably won't be
+38:43 
+
+38:43 able to tell it to you guys thanks Dan
+38:47 
+
+38:47 uh one thing that stood out to me is
+38:50 
+
+38:50 just like what your your writing is so
+38:52 
+
+38:52 accessible and and light and funny and
+38:54 
+
+38:54 that's not what I'm used to when I read
+38:56 
+
+38:56 super technical stuff like
+38:58 
+
+38:58 do you think all technical writing
+38:60 
+
+38:60 should be informal and funny like what
+39:02 
+
+39:02 is is that deliberate uh it's definitely
+39:04 
+
+39:04 deliberate um it goes into I think in
+39:07 
+
+39:07 some sense it's inherited I mean I
+39:09 
+
+39:09 definitely am a not serious person but I
+39:12 
+
+39:12 also think it's inherited sort of from
+39:13 
+
+39:13 the style of the field that I that I
+39:15 
+
+39:15 came from but I I'll tell you a story I
+39:17 
+
+39:17 was I was at lunch uh I was a postto at
+39:20 
+
+39:20 The Institute for advanced study in
+39:21 
+
+39:21 prinston and uh I was having lunch and
+39:25 
+
+39:25 um joking around with this professor
+39:27 
+
+39:27 naughty cyber who's who's a professor at
+39:29 
+
+39:29 The Institute and um then we got into I
+39:33 
+
+39:33 I think we're talking about someone
+39:35 
+
+39:35 someone asked the question about like
+39:36 
+
+39:36 what is a good title and I was like oh
+39:38 
+
+39:38 the title has to be a joke and he was on
+39:40 
+
+39:40 board with that and and then I was
+39:41 
+
+39:41 explaining that for me the reason to
+39:44 
+
+39:44 write a paper is for the jokes like you
+39:46 
+
+39:46 have a bunch of jokes in mind and and
+39:48 
+
+39:48 then you want people to read those jokes
+39:51 
+
+39:51 and so you have to package it into the
+39:52 
+
+39:52 science product and people want to read
+39:55 
+
+39:55 the science product and they're forced
+39:56 
+
+39:56 to suffer through the jokes and na he's
+39:58 
+
+39:58 this Israeli professor and he was like I
+40:00 
+
+40:00 don't get it why why can't you just do
+40:02 
+
+40:02 the science why do you need the like the
+40:04 
+
+40:04 jokes are great too but like you should
+40:06 
+
+40:06 write for the science not for the jokes
+40:07 
+
+40:07 and I was adamant that I write for the
+40:09 
+
+40:09 jokes and but I but I think it's I think
+40:10 
+
+40:10 it's what you said that uh at some point
+40:13 
+
+40:13 you know you learn about the scientific
+40:14 
+
+40:14 method and you know the right the formal
+40:17 
+
+40:17 ways of doing things and you learn all
+40:18 
+
+40:18 these rules and then you grow up a bit
+40:20 
+
+40:20 or maybe I had a roommate who is a
+40:21 
+
+40:21 linguist he's now a professor of
+40:22 
+
+40:22 linguistics at UT Austin um and and like
+40:27 
+
+40:27 he emphasize that you can you would tell
+40:29 
+
+40:29 me which rules that I could break or
+40:31 
+
+40:31 like where the rules come from and why
+40:32 
+
+40:32 they're important or not and you sort of
+40:34 
+
+40:34 realize that that you can you can break
+40:36 
+
+40:36 these rules and like the ultimate goal
+40:38 
+
+40:38 should be is the reader going to read it
+40:40 
+
+40:40 and understand it and enjoy it so you
+40:41 
+
+40:41 don't want to do things that compromise
+40:43 
+
+40:43 their ability to to read and understand
+40:45 
+
+40:45 but you don't want to obscure things you
+40:46 
+
+40:46 want to make it you know if it's more
+40:48 
+
+40:48 enjoyable people are more likely to read
+40:49 
+
+40:49 it and take the point it's also more fun
+40:51 
+
+40:51 if you're if you're writing it so so I
+40:53 
+
+40:53 think I think that's where that comes
+40:54 
+
+40:54 from Dan thank you so much for joining
+40:56 
+
+40:56 us today we we learned a lot we enjoyed
+40:59 
+
+40:59 your jokes uh and I hope you have I hope
+41:01 
+
+41:01 you have a wonderful uh second to last
+41:04 
+
+41:04 day at seoa thank you for spending part
+41:05 
+
+41:05 of it with us we really appreciate it
+41:07 
+
+41:07 thanks I was absolutely delighted to be
+41:09 
+
+41:09 here chatting chatting with you guys it
+41:10 
+
+41:10 was wonderful
+41:21 
+
+41:21 [Music]
+41:26 
+
+41:26 [Music]

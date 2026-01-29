@@ -1,0 +1,126 @@
+00:02 Next up, we've got Florian Younger. And
+00:04 what Florian is building at Listen Labs
+00:06 is a tool that can go out there, find
+00:09 the ground truth in market research, and
+00:11 bring it back to each and every one of
+00:12 you. Demo from
+00:16 Florian. Yeah, exactly. Thanks,
+00:19 Constantine. Um, we're building Listen,
+00:21 which is an AI customer researcher. So,
+00:23 it's now that can go out, talk to your
+00:26 users, thousands of them at the same
+00:28 time, and then get back to you exactly
+00:29 what they want and why. It really helps
+00:31 you go all the way from your business
+00:33 question you have to the insights and to
+00:36 the deliverables within a couple hours.
+00:39 And, you know, it's a live demo, so I'd
+00:40 love to show you how it works. So, yeah,
+00:44 here we are. And, you know, we mainly
+00:46 sell to marketing. So, there's all these
+00:49 new tools coming out. Let's say I want
+00:50 to find out how, you know, Jed GBT,
+00:53 image gen, deep research, how it affects
+00:55 the workflow of marketers. Um, and now
+00:59 this is typically the step where you'd
+01:01 have at a larger organization, a
+01:03 research expert come in and sometimes
+01:05 even an external consultant that helps
+01:07 you, you know, that knows the best
+01:09 practices about research, helps you set
+01:12 up a survey or formulate the right
+01:14 questions. And this is actually one of
+01:16 the key learnings we had is our AI not
+01:19 just sets up the project for you, you
+01:21 know, defines the questions and so on,
+01:23 but it really holds your hand while
+01:25 doing so. It's here. It it tells you
+01:28 what it does. It knows the best
+01:30 practices in research. It has done
+01:32 thousands of projects. It really knows
+01:34 what will work well in our platform and
+01:35 what doesn't work. And that's really the
+01:37 trust that you need to to not have the
+01:41 external researcher the expert there but
+01:43 just use it yourself in our
+01:46 platform. So you can see you know it
+01:48 created a discussion guide for a real
+01:50 interview with some open-ended questions
+01:52 some some multiple choice and so on.
+01:54 Let's see how it looks like from the
+01:58 participant. Um let's see let's go jump
+02:01 into one of the questions.
+02:03 Um, so this is the way it works right
+02:06 now. You get a question, the the I ask
+02:08 you a question and you can respond with
+02:11 video. Let's see. So this is me and I
+02:15 can say
+02:16 um yeah, deep research is great. You
+02:18 know, every as a marketer every meet
+02:21 every week um I run it on all of my
+02:23 competitors, see what they're releasing
+02:25 and I get a good summary for the meeting
+02:26 with my boss. And now after I say that
+02:30 the AI will facilitate a conversation, a
+02:32 deeper discussion about this, really get
+02:34 the full context of what I'm thinking
+02:36 about and you know understand this. And
+02:39 it can even do more. It can even show
+02:40 you things like um show you images, show
+02:44 your website or show your websites and
+02:46 get feedback on your on your landing
+02:47 page or something like that. Okay. Now,
+02:50 let's say we're happy with this and the
+02:52 next step is really getting it out
+02:53 there, getting it to the people. So we
+02:56 can go here
+02:58 and I let's say I want to talk to
+03:02 um marketers in the US and so we have
+03:07 this database of millions of people with
+03:09 profile information about them and can
+03:11 use that to find exactly the people that
+03:13 you're looking for. So let's see it
+03:16 takes a second here to set it up
+03:20 and here we go. So now, oh there's live
+03:24 demo. There's some uh some text
+03:25 overlapping, but you can see it selected
+03:27 people that work in marketing in the US
+03:29 and even use AI a couple times a week
+03:31 based on what we set up. And I can just
+03:34 press apply and it goes out and within
+03:36 minutes you get the first people to give
+03:38 you um yeah respond to it. So I actually
+03:41 run this last night and we have some of
+03:43 the results here. Um so what you get out
+03:47 is everything from an executive summary,
+03:49 right? It has some numbers. It has some
+03:51 quotes and you can click on it. You can
+03:53 go deep and you can really see how
+03:54 people love talking about talking to it.
+03:56 This is like a transcript and you can
+03:58 even watch the videos of um people. Um
+04:02 we also give
+04:03 you we also turn those open-ended
+04:07 conversations into quantitative insights
+04:09 and create those charts, show you the
+04:11 most interesting quotes. Again, you can
+04:13 always look at the quotes in context.
+04:16 Um, we show you video highlight wheels
+04:19 where we cut together the most
+04:20 interesting clips from the
+04:22 conversations. And the last thing I want
+04:24 to show you, we even go all the way what
+04:27 typically a consultant would do is
+04:28 create a slide deck.
+04:30 So this is like a real PowerPoint that
+04:34 we create automatically using all the
+04:36 cool tools that are available. And yeah,
+04:39 this is really just the beginning of
+04:41 what you can do. As listen does more and
+04:44 more of those deep, long open-ended
+04:47 interviews, we learn more about your
+04:48 customers and really build the most
+04:50 complete understanding of them. And our
+04:52 mission is to bring the customer to
+04:54 every decision of your company. Thank
+04:56 you.

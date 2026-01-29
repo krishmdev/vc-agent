@@ -1,0 +1,382 @@
+00:00 One of the interesting things about Nvidia, it's uh it's the culture of win-win. We are not after uh taking a
+00:09 bigger piece of existing pie. We are after baking our
+00:15 a bigger pie for everybody and uh our success is our customer success. It's
+00:21 not our success is not the failure of our competition. And I think fusing
+00:26 together uh conventional computing when human machines and uh accelerated
+00:33 computing that provided with Nvidia it's actually gives uh Nvidia and Intel
+00:40 channels to the market or expanding the market and serving the markets that uh
+00:46 otherwise was more challenging. [Music]
+01:05 We are delighted to hear today from one of the legends of the semiconductor industry, Michael Kagan, the CTO of
+01:11 NVIDIA. Michael was formerly chief architect at Intel and then co-founder and CTO of
+01:17 Melanox, which Nvidia acquired for $7 billion in March 2019. In the time since, Michael has been a
+01:23 major driver of NVIDIA's dominance as the AI compute platform, in large part due to the role of Melanox and
+01:29 Interconnect in driving chips beyond Moors law. The AI race is ultimately a silicon race to squeeze the most
+01:35 intelligence possible out of each unit of silicon. And Michael takes us down a journey about how the compute frontier
+01:41 has evolved from squeezing more transistors onto a single chip to bring together thousands and hundreds of
+01:46 thousands of chips into a single fabric connected by networking or an AI data center. Michael has been driving the
+01:53 compute frontier forward for more than four decades and we're honored to have him on today's show.
+02:00 Okay, we're here with Michael Kagan, the CTO of Nvidia, currently the world's most valuable company. Michael, thank
+02:06 you for joining us. Thank you. My pleasure. So, I thought where we could start. Our partner Sean likes to make the case
+02:13 about every six months that Nvidia would not be Nvidia without Melanox. Melanox
+02:19 is the company that you co-founded some 25 years ago and have been a part of through this day. So, can you kind of
+02:25 paint that picture for us? Why is it that the Melanox acquisition was so critical to Nvidia?
+02:33 um you know there's a huge transition in the world in terms of uh computing and
+02:38 uh need for computing. Mhm. And uh it grows grows exponentially and
+02:44 u one of the things that we usually estimate linearly but the world was
+02:50 exponential and exponential growth now is actually accelerated. It used to be like Merlo which is a basic silicon
+02:59 and uh it was you know twice every other year and u regardless you know the
+03:06 discussion that Murlo in terms of physics is not quite uh running anymore.
+03:12 uh the once the AI kicked in which was in the 2010 2011 and kicked in when GPU
+03:21 from graphic processing unit became general processing unit actually where
+03:26 it's running uh workloads where the first time the AI workload was run on the GPU uh
+03:33 taking advantage of the programmability and u parallel nature of uh of this
+03:39 machine the requirements for performance started to grow up at uh much higher
+03:45 coefficient. So the models started to go up in terms of uh size and capacity uh
+03:52 2x every 3 months which requires now 10x or 16x a year performance growth versus
+04:01 uh versus uh old school of uh 2x uh twice every other year. And uh in order
+04:08 to grow at this scale you need to innovate and uh you need to u develop
+04:14 solutions at much higher scale than just basic component and that's where network
+04:19 kicks in. That's where network is and uh and uh there's a multiple layers of uh of
+04:26 scaling performance that requires uh high speeded networks and high performance networks. The one is uh what
+04:33 we call scale up. Mhm. Basically if you going back to the CPU days scaling up was uh more low more
+04:42 transistors and also some advances in the micro architecture like auto execution and at some point uh
+04:48 multi-core and so on and so forth but uh so this is the basic building block of
+04:54 computing in the GPU world the basic building block is the GPU and in order to scale it up uh more than
+05:02 you can do on a single piece of silicon with the lot of uh advances that we are
+05:07 doing with the uh micro architecture and advanced technologies we actually need to do something uh on the scale of on
+05:16 the on the sort of multi-core CPU but on much larger scale and that's what we are doing with envelop
+05:22 solution so uh our GPU what we call GPU today is a rock size machine
+05:29 you need a forklift to lift it so you know if you uh order just GPU on
+05:36 Amazon just don't wonder that you will show up this huge rack of yeah people think chip but it's really a
+05:42 system right so and that's just one GPU okay so basic building block a very
+05:48 basic computer that uh application software is running on is this GPU and
+05:55 it is not just silicon it's not just hardware it's not just wires but there's
+06:00 also uh software layer that exposes CUDA as the API and uh that's what actually
+06:07 enables to pretty much seamlessly scale I'm simplifying a little bit the story
+06:12 but seamlessly scale from one component that used to be single GPU all the way
+06:18 up to 72 maintaining the same uh software interface. And uh once you get this building block
+06:27 as big as it conceivably can be built uh in terms of uh you know
+06:34 power cost efficiency then you start scaling out.
+06:39 Yeah. And scale out is me means you take many of these building blocks connect
+06:45 them together and now on the algorithm level on the application level you actually split your application to
+06:51 multiple pieces running in parallel on these big machines. Mhm. And that's again where network
+06:57 comes in. And uh there's a so if you talk about scale up we basically made uh
+07:04 memory like domain to to go beyond single compute node on a
+07:11 single single GPU and that's actually the first thing that where Melanox technology comes in because before
+07:19 Melanox acquisition the scaling up uh of uh Nvidia with the NBIN was limited to a single node
+07:26 machine uh going outside of single compute node. If these 72 uh GPUs are
+07:32 it's actually 36 computers each one has two GPUs and they're wired together. So
+07:38 present all this as a single GPU uh getting connectivity outside of the
+07:43 single node. It's not just plugging in the wire to the to the connector. It's
+07:48 lot of software. It's lot of uh technology within the network how to make multiple nodes to work as uh the
+07:55 single uh the single machine and that's where Melanox first just immediate in terms of you
+08:03 know the the way we go upstream that's uh that's the first one the second one is uh how do you uh split the operation
+08:11 across multiple multiple machines and the way to do it if I have a task that
+08:16 it takes one GPU to do one second. If I want to accelerate it, I split it to 10
+08:23 to you know thousand pieces and send each piece to different GPU. And now in
+08:28 1 millisecond I get done whatever I was doing in the second. But you know you
+08:33 need to communicate this partial uh
+08:39 job split split split the task then you need to consolidate the results and uh
+08:44 every time you are and you you you run this you know multiple times you have a
+08:49 uh multiple iterations or multiple uh applications running to us. So so that there's a part of doing communication
+08:55 part of doing computation. Now the thing is that you want to split it to as many
+09:01 pieces as you possibly can because that's that's your speed up factor. But
+09:06 then if your communication is actually blocking you, you you you waste time, you waste energy, you waste everything.
+09:14 So what you need to do, you need to have a very fast communication. So you split it into the many many pieces and so each
+09:21 each piece takes very little time. But then there's a another piece that is communicated and you need to feed it to
+09:27 this time. So that's that's just pure bandwidth. And another thing is that when you tune your application, you tune
+09:35 your application so that communication can be hidden behind uh computation and
+09:41 it means that if communication for some reason gets longer then everybody waits.
+09:47 M so it means that what you need to do in the network you need to have not only
+09:52 just raw performance like what called hero numbers you know I can get to that many gigabits per second I also need to
+09:58 make sure that no matter who's communicate to whom the latency the the time it takes is distribution is very
+10:06 narrow so if you look at uh at other network technologies or other network products
+10:12 you know you go to the hero numbers you know sending bit from one place to another it's basically physics Yeah,
+10:18 it's so it's it's pretty much close to the to everyone. You know, we are a
+10:23 little bit better, but that's not not not not the big advantage. But when you
+10:28 do it thousands of times and it takes the same time to do it versus very wide
+10:33 distribution of uh other technologies, then machine becomes less efficient. So
+10:38 instead of being able to split your job to thousand GPUs, you can split it only
+10:45 to 10 GPUs because you need to accommodate for the jitter on the network within the communic with the
+10:51 within the computation phase. So inherently network determines the performance of
+10:58 this cluster and we look at this data center as basically single unit of computing.
+11:03 Yeah. Okay. Single movement computing means that you look at this you you start architecting your components your
+11:11 software and your hardware at the point where you know this is a data center
+11:17 this is 100,000 GPUs that we want to make them work together we need to make
+11:24 multiple chips compute chips two network chips five
+11:30 okay so this is the scale just you know in terms of you know what what's the what's the impact just and what's the
+11:36 investment you need to make to create this single unit of computing. So that's
+11:43 that's where Melanox uh Melanox technology came in. And another aspect
+11:48 of of this is there is a uh we talked about uh network that uh connects the
+11:55 GPUs to to run the task but there is a other side of this machine which is
+12:01 customerf facing. So you need to this machine needs to save uh uh to to serve
+12:07 multiple tenants and uh this machine needs to run operating system. You know every computer runs operating system.
+12:14 Another part of the Melanox uh technologies is uh what we call bluefield DPU data processing unit which
+12:21 is actually the computing platform to run the operating system of the data
+12:26 center. In conventional computer have a CPU that runs operating system and runs application software and u there's a
+12:35 many things we can uh talk about you know the advantage versus disadvantage
+12:40 but the there are two key things one is how much time do you spend on your
+12:46 general purpose computing to run the application you need to you want to maximize it and another thing is how do
+12:52 you isolate your infrastructure computing from the application
+12:57 computing because you know viruses and and cyber attacks and so on and so forth and being
+13:04 able to run uh infrastructure computing on a different computing platform
+13:12 actually reduces significantly the attack front uh versus especially in the side channel
+13:20 attacks versus what what happens if you run it on the same computer. If you remember there was a five or well actually more
+13:26 than almost 10 years ago there was this a meltdown and all this uh cyber attacks of the side channel uh on CPUs and uh
+13:35 this cannot happen or the the the attack surface is reduced significantly when
+13:41 you run the different so on the other side of the network we have also
+13:47 technology so that's what makes data center to be more efficient and uh I
+13:53 well I maybe not objective but I do agree that this merger of Melanox and and Nvidia and it's actually goes both
+14:00 ways. I don't think that networking business of now it's Nvidia previously
+14:06 Melanox could have be growing that that significantly. Yeah as uh as it grew now I think we are
+14:13 the fastest growing internet business you know
+14:19 let along NV link and and infiniband. Yeah, but just internet business is the fastest growing business ever.
+14:27 What are the things that break as you get to 100,000 maybe eventually million GPU clusters and how do you use software
+14:34 to help design around that? It's a it's a it's a multi-stage uh
+14:39 challenge. Okay. One of the things that you need to uh need to keep in mind,
+14:46 it's not very obvious for all the engineers that when you design the machine or the thing how how to operate
+14:51 it. Well, you know, you have these components and they are working and now just let's figure out. Okay, so the the
+14:58 thing is that the hardware component works at 99.999 whatever percent of the time and it's
+15:05 usually okay if you are dealing with single box with couple of them. But if
+15:10 you are building 100,000 uh component machine 100,000 GPUs machine which means
+15:17 in terms of components there's a millions of them uh the chance that everything works is zero. So something
+15:23 is definitely broken and you need to divi design it both from hardware and
+15:29 from software perspective to keep going to keep going as efficient as you can to
+15:35 keep uh you know your performance performance you keep your power efficiency and of course keep the
+15:40 service service running. So this is challenge number one even before we go to millions it's uh this challenge
+15:47 actually starts at you know few few tens of thousands that's number one uh number
+15:52 two is when you are uh running this uh workloads it is really important to it
+16:01 sometimes you run single job on the entire entire data center and then it's
+16:06 uh you know you need to write the software and you need to uh provide all the interfaces to the software to place
+16:14 the different parts of the jobs jobs more efficiently. Building uh networks
+16:19 at this scale is a very different story than building network
+16:25 compute network on this scale is very different story than build just general purpose data center network. General
+16:30 purpose data center network is internet. It's not a big deal. Uh well it is a big deal but it is it is different deal.
+16:36 It's uh you are you are serving uh you know loosely coupled collaborative uh
+16:42 microservices that create the you know service that you uh that you see as a as
+16:48 a customer from outside here you are running one single application on
+16:53 100,000 machines. Yeah. Is that specific to training workloads or is that also true with inference workloads? It's it's true it's
+17:00 true for everything you know it depends you know to what scale and the inference is yet another yet another topic that we
+17:08 we touch it you know till recently training was uh the key thing you know a lot of GPUs and there was a very
+17:14 specific way of training is being done you basically copy this way another model on multiple
+17:21 uh multiple machines or multiple sets of machines and run them then consolidate results and so on and so forth uh on uh
+17:28 inference it's uh the story is a little bit different but the thing is that you need to provide the hooks on the
+17:36 hardware and on your low-level uh software system software for application and for scheduler to place the job and
+17:44 place the different parts of the job in the most efficient way on the you know and as long as as uh
+17:51 your machine uh fits a building uh which is about 100,000 uh GPUs is now talking
+17:58 about you know gigawatt it's all all all power driven okay the challenge is that for many reason reasons uh you
+18:08 want to split your workloads across multiple data centers and uh sometimes
+18:13 data centers are uh at a distance of many kilometers many miles it's it may
+18:19 be across the across the continent and this you know it's comes with yet
+18:24 another challenge which is speed of light Yeah. Okay. Now the the latency
+18:30 variance between different parts of your machine is dramatically different and uh
+18:36 what is even more challenging is that when you talk about networks the
+18:43 congestion on the network is one of the key problems that deteriorate network
+18:49 performance. Yeah. and managing congestion across such a latency diff latency difference.
+18:55 It's not like you know in old old telco days you put some box in the edge of
+19:01 your data center with a huge buffers and it's a shock absorber for for congestion. Huge buffer is is not is not
+19:09 good. You know some bigger is not better. There's a there's famous statement from
+19:16 very famous Wuan and uh uh so so we need to and these buffers are basically or
+19:22 these devices are basically to isolate uh the external world from the internals
+19:30 and but when you want to run a single workload across data centers that are
+19:35 distant by kilometers, you need to be every machine on one side to be aware
+19:42 what whom does it communicate to whether it's short short communication long
+19:47 communication and adjust all the communication patterns accordingly. So you don't need this big buffers because
+19:53 big buffers is a jeter. Yeah. Mhm. And so we have a we have a technology we actually developed it recently
+19:59 technology uh you know all our uh Ethernet network is spectrum X and uh
+20:05 this is the device that uh we designed and developed based on the spectrum uh
+20:12 spectrum switch that we put on the edge of the data center and uh it provides uh
+20:18 all the information and telemetry needed for uh uh for the endpoints to adjust
+20:24 for the congestion. Yeah. Can we talk a little bit more about training versus inference? Like how does the shape of workload differ when you're
+20:31 doing I guess I guess back prop is a lot more computationally intensive forward pass less so but like h how does how
+20:38 does the workload defer and then are you seeing customer demand start to shift
+20:43 from pre-training towards inference or do you think it's still very training heavy right now? And and if I could just ask a quick follow-up question with
+20:49 that, will people be running inference workloads on the same data centers that they use for training or will these end up being two separate because they're
+20:57 different optimizations, people end up using two different sets of data centers? Uh okay. Yeah, that's that's that's
+21:03 great question and um let me start with the uh with the first one. So so training has two phases. One is
+21:11 inference which is just for forward propagation and then back propagation to adjust the weights and uh for uh data
+21:20 parallel training is yet another phase to consolidate the uh results of the
+21:25 weights update across multiple uh model uh copies. So till recently it was uh
+21:33 main driver of the compute because uh till not very long ago it's maybe two
+21:42 years which is ages in the in the AI AI era the inference or AI was mainly
+21:50 perceptional. So you show the picture that's a dog. You show u you know the uh
+21:56 photo of the person and here's that's that's Michael and that's Sonia and that's so that's single path uh and and
+22:04 that's it. Then came became generative AI where actually you get the
+22:11 recursive generation. So when you pause the prompt then it's not just one
+22:18 inference it's many inferences because for every token when you generate text or generate picture for
+22:24 every new token you need to go through the entire uh machine uh all over again. So instead of one inter one shot
+22:31 interface and then there is more and then uh now there's a reasoning which
+22:37 means machine starts you know sort of thinking if you ask me what time is it now I can
+22:43 tell you it's easy right what time is now but if you ask me more more complicated question then I need to
+22:49 think I uh probably need to wait or compare multiple solutions or multiple
+22:56 paths and every such a thing is inference. Yeah, every such a thing is inference. And
+23:02 inference itself uh has uh actually two uh two phases. One is much more computer
+23:09 intensive and the other one is uh memory intensive. It's uh it's uh what we call
+23:15 prefill because when you do the inference you have some some sort of background right which is prompt which
+23:22 is uh some relevant data that you need to process and create the context for the to generate the answer and this is
+23:30 very computer intensive. it's not much memory intensive and the other part is
+23:35 uh actually generating the answer which is the decode uh part of the uh of the
+23:42 inference where you generate token by token. Okay. Well, there are some technologies that you can generate more than one
+23:49 token but it's still you know single path is much less than the final answer.
+23:56 So if you combine all these things together uh inference inference demand
+24:01 for computing is not actually not less than training. It's it's it's actually
+24:07 even more and and there are two reasons for this. One is that what I explained that there's a much more computing than
+24:14 it used to be for the inference. The other thing is you know you train model once but you infer many times. Yeah. you
+24:20 know Chad GPT you know billion of people or yeah it's almost billion of people
+24:25 right there customers they are pounding them all the time in the same model they trained it once now they're making videos so that's all
+24:32 right right right now they're making videos and you can gener and and you know everybody is uh is uh is do doing
+24:39 the inference my wife I think she talks to Chip more than to me these days once
+24:44 she discovered that's her best friend uh so so so the in terms of now to your
+24:51 question about uh about machines uh you can infer on the phone.
+24:57 Okay. So there's a definitely going to be uh much smaller scale uh
+25:03 installations uh for for inference. Yeah, it's like mobile devices. If you if you
+25:10 look at the data center scale the the and the data center scale and uh on the
+25:16 uh it's it's uh efficiency of the programming programmability is much more
+25:23 viable than uh optimizations uh
+25:28 optimizations for hardware. And you know every every hardware uh instance it has
+25:35 its own uh its own its own cost and its own uh its own drawback. So as long as
+25:41 as long as you don't identify and I don't think uh besides you know this we
+25:47 actually did uh it's it's it's very similar GPU it's same it's same programming model as the GPU for prefill
+25:54 versus uh versus decode. uh I think I don't remember it when when when when it
+26:00 happened but actually we announced that we are building the GPU uh skew that is
+26:07 optimized for prefill so you will have uh it can it can do
+26:12 decode and decode GPU can do prefill so but you can equip your equip your data
+26:19 center with the SKS or that prefill versus SKS that uh that are uh for
+26:25 decode to to to optimize for like typ typical use. Yeah. But if your uh
+26:31 workload shifts for more decoder from more prefill, you can use uh either one
+26:36 of them uh to to to compensate. And uh this is the this is the importance of
+26:43 programmability. The same interfaces for GPUs. It's based on CUDA and uh and up
+26:51 which is that's what made Nvidia Nvidia before Melanox. Yeah. Can I ask you a
+26:56 question about data center scaling? So um for many decades we had Moore's law
+27:01 and chips got more and more dense and produced better and better performance and then we ran into the laws of physics
+27:08 and chips just couldn't get more dense because their quantum mechanical properties caused them to break down and so then we had to scale up to the
+27:14 rack level and now we got to scale out to the data center level. Is there some analogous law of data data center
+27:22 scaling that says when data centers get too big the communication overhead
+27:28 causes the performance to break down or or or just said differently or maybe said more simply is there a natural
+27:33 limit to how big data centers can get. I think there's there's a practical limit of how much energy you can consume
+27:41 within uh within given size of the of the data center. But if if you were surrounded by nuclear power plants and
+27:48 you and the energy was available, would the data center itself perform? I I I I I I don't know. I'm not I'm not
+27:56 an expert in the in the in the construction even. But if you surround, you know, there's a there energy coming
+28:01 in now the heat heat is going out. So there's a there's a whole we are now
+28:06 basically moved pretty much entirely to the liquid cooling. Yeah. And uh one of the reasons we did
+28:12 it is to enable much denser denser compute power. We couldn't build uh as
+28:18 dense computing as we as we're building now with the with the air cooling. Yeah. So there's a whole bunch of technologies
+28:24 coming uh to to help this uh more and more denser. Now the uh last big data
+28:32 center which is uh like Xi XAI scale is 100 or 150 megawatt. Now we're talking
+28:39 about gigawatt data centers. People talking about 10 gigawatt data centers. So you know there's a looking forward to
+28:46 build much much bigger data centers. And uh are you sending the data centers to other space? Pretty cool.
+28:52 I I I I think I well one of one of the one of the things that uh that um
+28:58 determines the speed of data center deployment is you know how fast concrete get gets stable.
+29:06 So very so so before starting Melanox you were at Intel
+29:12 that's right 16 16 years 16 years became chief architect um Nvidia and Intel recently announced a partnership
+29:18 can you share a little bit about what the vision for that might be the starting point is that uh computing
+29:24 changed uh in last decade or little bit more than decade uh Nvidia started as the
+29:31 accelerated computing company uh video games was the first uh and then
+29:39 it evolved to to AI which is the new way of data processing. So you cannot just
+29:46 general one human machine just is not capable of uh of u
+29:53 being used as a platform to solve the problem like you know programming when
+29:59 human machine is just explaining somebody what to do. Okay, I can explain many things and I can explain uh many
+30:06 people what what to do but I can't I can't explain how to distinguish between cat and dog. Right? So there is a new
+30:13 challenges that AI solves and you need acceleration there and um our uh
+30:20 partnership with Intel is actually fusing accelerated computing with the general purpose computing because
+30:25 general purpose computing is not going away. uh everything will be accelerated but we accelerate the allp purpose
+30:32 computing we accelerate the applications we but so so and uh you know x86 is the
+30:39 architecture that uh is dominant there and uh you know it would serve greatly
+30:46 both companies that's actually one of the interesting things about Nvidia it's uh it's the culture of win-win okay we
+30:54 are not after uh taking a bigger piece of existing pie. We are after baking our
+31:04 a bigger pie for everybody and uh uh the success our success is our customer
+31:11 success. It's not our success is not the failure of our competition. Our success
+31:16 is uh success of our customers and success of ecosystem. And I think fusing
+31:22 together uh conventional computing when human machines and uh accelerated
+31:28 computing that provided with Invidia it's actually it's probably open yet
+31:33 another dimension that I'm not sure what it is but it basically gives you know on
+31:39 the practical you know short-term view is it's uh this gives uh Nvidia and
+31:47 Intel channels to the market or expanding the market and serving the
+31:52 markets that uh otherwise was more challenging. You mentioned the culture of Nvidia. So
+31:59 when Melanox became part of Nvidia in 2019, the market cap of the combined
+32:04 company was about 100 billion which is no joke, but the market cap today is about four and a half trillion. That's
+32:09 right. So and so 45x growth in value in six years is pretty phenomenal. How has
+32:16 that changed the culture of Nvidia? How is Nvidia different today now that it's
+32:21 one of the most admired companies in the world if not the most admired versus six years ago?
+32:27 Yeah, about this you know when when we just joined uh Jensen was in Israel and
+32:32 uh I presented him you know that's I believe that 1 + 1 will be 10 and I
+32:38 actually was off by factor of four. So, but Melanox and Nvidia in in a sense
+32:46 it's uh it's a it's sort of similar. It's a the culture very similar to begin
+32:52 with, but there are some there's nothing absolutely similar. And
+32:57 uh I was the the only founder that left uh in Melanox after after realigned
+33:05 a few months after after the acquisition. And uh my main focus uh at
+33:10 the beginning you know things what what do you think about in the shower was how to make sure that this acquisition will
+33:17 succeed. Yeah. You know Nvidia paid $7 billion for company that uh that I I founded and uh
+33:26 you know with all the mixed feelings that were there but once it's done it's done. Now I have to make it uh
+33:33 successful. Yeah. So uh eventually it worked.
+33:38 Most of the most of the Israeli employees are state. I think it's 85 or
+33:45 90% of uh original employees state. Actually Nvidia uh grew more than 2x in
+33:53 Israel in terms of uh manpower. Yeah. Uh so we we we growing uh and we
+33:59 are announced that we actually going to build a compass in uh in Israel new
+34:05 compass for Nvidia and uh so that's where I think the the uh overall the
+34:13 merger was very was very successful. uh I I did I did my best to make sure it
+34:20 uh it's it succeeds and uh besides the technology that I was uh looking at this
+34:27 part this part of which is sort of technology but it's technology and theology and there's many other things
+34:34 to make sure that people are comfortable that uh you know from uh being in the
+34:41 center of Melanox which is the headquarters on Israel don't feel left
+34:47 you know somewhere in the far away and Jensen basically emphasizes the
+34:52 networking as the critical part of uh Melon success uh Nvidia success.
+34:58 Yeah. Uh and he's right. Yeah. Yeah. Yeah. So I think it was the it's it's it's
+35:05 considered to be the most successful measure in the in the history of the technology. I you guys probably track
+35:11 this drug the things better than than I am. But uh overall I think it was a
+35:17 great move. Yeah. What are the science fiction things that you spend your time thinking about? Just
+35:22 even wondering like for example optical interconnects. Do you think do you think that will exist? Do you think AI will
+35:28 ever be better at physics than than us and better at data center design than us? Like well what what I what I thinking you
+35:34 know in the if you look about science fiction is how to make history to be experimental science. You know
+35:42 you can physics do try something and then you know see if it works and then try something else in history time goes
+35:49 one direction but you have a good simulation of the world you can make history experience and we have a earth 2
+35:55 uh climate simulator and uh with this type of technology we can uh actually simulate how uh what we
+36:03 do today will impact the global warming 50 years from now. Okay. So experimental science, you know,
+36:09 you you try something, you see what happens 50 years later. Uh
+36:15 so that's that's that's the science fiction part. Yeah. And uh you know the physics now we are
+36:22 moving from reasoning and so on and so forth. Now we once we get AI models to
+36:28 understand physics, we actually can learn physics. Yeah. AI can teach us physics because uh
+36:36 the way we we we uh we get to the laws of physics that we observe theoretical
+36:42 physics, right? You observe some phenomena and you generalize it and uh
+36:48 you compose the rule that basically the law the physics law that stays
+36:55 underneath of this phenomena and AI is really great of generalizing and data
+37:02 processing and observing. So I can help us to get to know some laws of physics that we don't even imagine now.
+37:10 Yeah. uh Moore's law was 2x every two years. Hang plus Kagan's law is what
+37:15 what is the slope and how long do you think you can sustain it? Well, the slope is somewhere in the
+37:21 range of 10x or few orders of magnitude a year. Okay. And that's what we are doing by the way.
+37:28 Now we are we are we are since uh about two or three years ago we accelerated our product introduction from every
+37:34 other year to every year. Now we introduce a new uh new new wave of uh
+37:41 products every every year and uh it's um order of magnitude higher performance
+37:48 and uh it's not it's not on the cheap level performance it's on the machine that you can build with this uh
+37:54 performance that's what we are looking at it's single unit of computing and uh how long it will stay I I don't know I
+38:01 don't know but uh we'll do uh our best to to maintain it as long as needed and
+38:06 probably even accelerate. It's uh it's all about it's all about exponent. It's
+38:11 all about exponent. It's hard to imagine you know if you look at this mulo curves
+38:17 or any any roll curves they they usually uh plot it on the logarithmic scale. So
+38:23 it looks like linear but that's wrong thing to look you can't predict what's what's going to happen. Who could
+38:29 predict that uh when iPhone uh was first introduced or smartphone was first
+38:35 introduced you know it's 15 years ago 2007 was the iPhone yeah 2007 oh 17 years ago okay who could
+38:43 uh who could imagine that this smartphone the least used function at
+38:49 least for me is a phone yeah all it's e-commerce it's it's texting it's news it's mail it's
+38:56 basically running running your life from this machine. So your authentication,
+39:01 your ID is there. It's so you know now who can imagine what's going to happen uh you know 10
+39:08 years from now with all these developments that we are we are doing today but we are building the platform
+39:13 for innovation. What is the your commentary on who can imagine notwithstanding?
+39:20 What is the most optimistic view of our future with AI that you like to think
+39:25 about? Like what what could AI do for the world 5, 10, 15 years from now?
+39:30 Steve Jobs called uh computer to be the the bicycle of of mind.
+39:36 Yeah. Okay. So AI is uh it's maybe I don't
+39:41 know if it's it's it's probably spaceship because there's a lot of things that I
+39:48 would like to do but I I I just don't have enough time don't enough resources
+39:54 to do it with AI I will have it and it doesn't mean that you know I will do
+40:00 twice as much maybe I do I will do 10 times as much but the thing is that I will want to do 100 times as much is I
+40:07 want to do today and that's where and that's where and you know you go to to to any project leader and nobody says
+40:14 you know I have enough I have enough manpower I have enough resources I don't need anymore okay if you give him
+40:20 resource which is twice as efficient he will do four times more yeah and he will want to do 10 times more so
+40:27 it's like electricity change the world right instead of using you know in the
+40:32 in the London you still still see this g lamps and this infrastructure to to to
+40:39 use the gas as the as the source of energy. Who who could think that you know once
+40:45 this electricity was invented it will change the world that you know we can't live without electricity. The same the
+40:52 same with AI. Beautifully said. Thank you so much for joining us today. I love this conversation.
+40:58 Thank you. Thank you. Thank you for having me. [Music]
+41:14 [Music]

@@ -1,0 +1,943 @@
+00:00 So the fir first two years of the
+00:02 
+
+00:02 business we focused on working with
+00:03 
+
+00:03 individual taxi drivers and taxi
+00:05 
+
+00:05 companies and um we had very good
+00:07 
+
+00:07 [music] progress with that. But um after
+00:09 
+
+00:09 two years I remember there was this um
+00:12 
+
+00:12 important meeting where we met the
+00:14 
+
+00:14 biggest taxi company in Serbia and I
+00:15 
+
+00:15 clearly realized walking in that these
+00:17 
+
+00:17 people are the mafia. There's a pistol
+00:19 
+
+00:19 on the table. They don't care about
+00:20 
+
+00:20 [music] customers at all. Uh and I
+00:23 
+
+00:23 realized after that meeting flying back
+00:26 
+
+00:26 that we are never going to work with
+00:28 
+
+00:28 these kind [music] of companies again.
+00:29 
+
+00:29 We need to pivot. We need to work with
+00:31 
+
+00:31 people who actually want to serve
+00:32 
+
+00:32 customers well. And we [music] really
+00:35 
+
+00:35 changed the strategy of the business
+00:36 
+
+00:36 after that. And we never looked back. My
+00:39 
+
+00:39 name is Marcus Milik. [music] I'm the
+00:40 
+
+00:40 founder and CEO of Bolt, the leading
+00:42 
+
+00:42 mobility platform across Europe, the
+00:44 
+
+00:44 Middle East, and Africa. On the personal
+00:47 
+
+00:47 side, [music] I was just completely
+00:49 
+
+00:49 frustrated by the experience I saw in
+00:51 
+
+00:51 Thailand. Every time I needed to use a
+00:53 
+
+00:53 taxi to get anywhere as a teenager, it
+00:55 
+
+00:55 was a horrible experience. Um, and um,
+00:59 
+
+00:59 if you designed the bad experience, I
+01:00 
+
+01:00 mean, that's effectively where you would
+01:01 
+
+01:01 design. I mean, there was 20 small
+01:03 
+
+01:03 companies you had to call, they didn't
+01:05 
+
+01:05 even pick up. Even if they did pick up,
+01:08 
+
+01:08 the car almost never made it to you or
+01:10 
+
+01:10 came with a huge delay. And then the
+01:12 
+
+01:12 cars were really in bad shape. The
+01:15 
+
+01:15 drivers were very rude. And um, it was
+01:18 
+
+01:18 just really a horrible experience, not
+01:19 
+
+01:19 to mention the payment and uh, you had
+01:22 
+
+01:22 to always carry cash on you and so on.
+01:23 
+
+01:23 So, it was just all around a very bad
+01:25 
+
+01:25 experience. Um and then I started to
+01:27 
+
+01:27 think whether that could actually be a
+01:29 
+
+01:29 good business opportunity. I was 19. Um
+01:31 
+
+01:31 [music] so really a teenager in high
+01:33 
+
+01:33 school. I did not have any experience um
+01:35 
+
+01:35 any connections any um resources to
+01:39 
+
+01:39 speak of. And um I figured that I needed
+01:41 
+
+01:41 the first 5,000 to get the product off
+01:43 
+
+01:43 the ground uh to hire a developer to
+01:46 
+
+01:46 help me build a prototype and also have
+01:48 
+
+01:48 some money for initial marketing. And um
+01:51 
+
+01:51 since I didn't know any investors, I
+01:53 
+
+01:53 went to my parents and asked if they
+01:54 
+
+01:54 were willing to lend me or or invest in
+01:56 
+
+01:56 the business about 5,000. H and that was
+01:59 
+
+01:59 a funny episode where they thought about
+02:01 
+
+02:01 it for quite a while because that was a
+02:03 
+
+02:03 big sum of money for for us back then.
+02:04 
+
+02:04 And um initially they said that they're
+02:06 
+
+02:06 willing to to make this loan for me. Uh
+02:09 
+
+02:09 but that comes at my own personal risk.
+02:12 
+
+02:12 And then if I screw it up and all this
+02:14 
+
+02:14 money is gone, then I can't cover my own
+02:16 
+
+02:16 rent during university. Um the initial
+02:18 
+
+02:18 start was very um humble. I I went on
+02:20 
+
+02:20 the streets of Talin talking to taxi
+02:22 
+
+02:22 drivers one by one. [music] So, as it
+02:24 
+
+02:24 goes in most cities around the world,
+02:25 
+
+02:25 they're usually waiting in these
+02:27 
+
+02:27 hotspots around airports or other sort
+02:30 
+
+02:30 of train stations and so on. Uh so, I
+02:32 
+
+02:32 just went to them, got in the car and
+02:34 
+
+02:34 started pitching [music] that I have
+02:35 
+
+02:35 this idea. Would you like to make
+02:37 
+
+02:37 additional income by joining this
+02:38 
+
+02:38 platform? You're going to get additional
+02:40 
+
+02:40 trips each day and you only got to pay a
+02:42 
+
+02:42 commission. So, it's a very very
+02:44 
+
+02:44 risk-free proposition for you. You don't
+02:46 
+
+02:46 have to join with any fixed fees or or
+02:48 
+
+02:48 anything like that.
+02:49 
+
+02:49 And um the sales went really poorly I
+02:51 
+
+02:51 must say. [music] So so after the first
+02:53 
+
+02:53 couple of months probably 90% of them
+02:55 
+
+02:55 told me that uh they're not interested
+02:57 
+
+02:57 uh because they saw it so risky. I was
+02:59 
+
+02:59 just a kid. I didn't even have a product
+03:01 
+
+03:01 back then. So I was just pitching
+03:02 
+
+03:02 [music] a concept. Uh but eventually I I
+03:05 
+
+03:05 had a couple of dozen drivers lined up
+03:07 
+
+03:07 who had given me their contacts and they
+03:08 
+
+03:08 said they're they're good to go. So that
+03:10 
+
+03:10 gave me the initial um uh quantity of
+03:12 
+
+03:12 supply to get the the first product off
+03:14 
+
+03:14 the ground in Talon.
+03:16 
+
+03:16 When we started in 2014, there was
+03:19 
+
+03:19 actually very little competition. So
+03:21 
+
+03:21 there was almost no app-based ride
+03:23 
+
+03:23 healing companies back then. Um there
+03:25 
+
+03:25 was a couple of small ones starting up
+03:26 
+
+03:26 in the US and Asia, but nobody had
+03:29 
+
+03:29 really made a dent in Europe. Um not to
+03:32 
+
+03:32 mention raise any significant funding or
+03:34 
+
+03:34 really dominate the industry. So we we
+03:37 
+
+03:37 got into this thinking that it might not
+03:39 
+
+03:39 be that competitive an industry at all.
+03:41 
+
+03:41 Um and of course a couple years later it
+03:43 
+
+03:43 became the most competitive industry in
+03:45 
+
+03:45 [music] tech with our competitors
+03:47 
+
+03:47 raising tens of billions of dollars. So
+03:50 
+
+03:50 um we didn't really understand what we
+03:51 
+
+03:51 were getting into [music] in the
+03:52 
+
+03:52 beginning. Over a couple of years the
+03:54 
+
+03:54 market of course transitioned to apps.
+03:56 
+
+03:56 So everybody started hailing right
+03:57 
+
+03:57 digitally and we had counterpositioned
+04:00 
+
+04:00 ourselves in that market by working
+04:02 
+
+04:02 together with the taxi companies and
+04:03 
+
+04:03 taxi drivers um because they were very
+04:05 
+
+04:05 afraid that new entrance were coming in
+04:07 
+
+04:07 and they were cutting them out
+04:08 
+
+04:08 completely. Um and that strategy worked
+04:11 
+
+04:11 well for us for a couple of years in
+04:12 
+
+04:12 many countries. But then after that
+04:14 
+
+04:14 pivotal moment where we finally started
+04:17 
+
+04:17 to realize that most taxi companies are
+04:19 
+
+04:19 not going to make this transition. They
+04:20 
+
+04:20 are not never going to adopt these tools
+04:22 
+
+04:22 and become digital. Uh we thought that
+04:25 
+
+04:25 we actually have to go and start to
+04:27 
+
+04:27 compete against them as well. Uh and
+04:28 
+
+04:28 that was a big risk because you're
+04:30 
+
+04:30 effectively starting to go in in in some
+04:32 
+
+04:32 ways start to compete against your own
+04:33 
+
+04:33 customers. And uh that was a very risky
+04:36 
+
+04:36 move in some countries but um looking
+04:37 
+
+04:37 back it was the right decision to do
+04:39 
+
+04:39 both for the customers and for us. Our
+04:41 
+
+04:41 ambition from day one was that we wanted
+04:43 
+
+04:43 to build a a company that serves
+04:45 
+
+04:45 millions of people and Estonia is a tiny
+04:47 
+
+04:47 place. It just has a population of 1.3
+04:49 
+
+04:49 million. So clearly we thought that
+04:52 
+
+04:52 we're just going to start here. We're
+04:54 
+
+04:54 going to polish the product, make it
+04:55 
+
+04:55 great and then we're going to take it
+04:57 
+
+04:57 international. And uh that's exactly
+04:59 
+
+04:59 what we did. So the first 6 months we
+05:01 
+
+05:01 focused on really nailing it in the
+05:04 
+
+05:04 first few cities here. Um we got to
+05:07 
+
+05:07 meaningful revenue, great customer
+05:09 
+
+05:09 traction and then we thought that we're
+05:10 
+
+05:10 ready to start with expansion. And then
+05:13 
+
+05:13 uh we raised the first round of about a
+05:16 
+
+05:16 million euros for uh for the first wave
+05:18 
+
+05:18 [music] of launching the next cities
+05:19 
+
+05:19 which looking back seems like a tiny
+05:21 
+
+05:21 amount but back then we thought that
+05:22 
+
+05:22 it's all the money we're ever going to
+05:24 
+
+05:24 need. Uh and then uh we made a huge
+05:26 
+
+05:26 mistake though. So we uh we tried to
+05:29 
+
+05:29 launch in about 10 cities at once all
+05:32 
+
+05:32 the way from the Netherlands to Finland
+05:35 
+
+05:35 to Serbia and we almost bankrupted the
+05:38 
+
+05:38 business. So then at some point we
+05:40 
+
+05:40 realized we have to restart. We have to
+05:41 
+
+05:41 think about expansion in a different
+05:42 
+
+05:42 way. And what we did was that we threw
+05:45 
+
+05:45 away all of our biases. So instead of
+05:48 
+
+05:48 thinking about just going to the
+05:49 
+
+05:49 neighboring country which is the closest
+05:51 
+
+05:51 geographically, we looked at the map of
+05:54 
+
+05:54 the world. We made a list of the top few
+05:57 
+
+05:57 hundred cities in the world and we
+05:58 
+
+05:58 ranked them by characteristics that we
+05:60 
+
+05:60 thought from first principles actually
+06:01 
+
+06:01 should correlate with what our public
+06:03 
+
+06:03 market fit is. [music] So we ranked them
+06:05 
+
+06:05 by population, by availability of
+06:08 
+
+06:08 private cars and public transport. Uh
+06:10 
+
+06:10 [music] so we could have a good proxy
+06:12 
+
+06:12 for what the demand side is going to be.
+06:14 
+
+06:14 And then we looked at what is the
+06:15 
+
+06:15 unemployment rate. So are there a lot of
+06:17 
+
+06:17 people out there who are looking for
+06:19 
+
+06:19 additional ways to make income? Uh what
+06:21 
+
+06:21 is the taxi regulation? Is it easy for
+06:24 
+
+06:24 these drivers if they want to to
+06:26 
+
+06:26 actually get on the road and start
+06:27 
+
+06:27 earning um or not? And after actually
+06:31 
+
+06:31 just a [music] couple of weeks of this
+06:32 
+
+06:32 analysis, all the African cities
+06:34 
+
+06:34 actually turned out to be the top of the
+06:35 
+
+06:35 list. Large population, massive need for
+06:38 
+
+06:38 alternatives in terms of transportation
+06:40 
+
+06:40 [music]
+06:41 
+
+06:41 and very high unemployment. So clearly
+06:43 
+
+06:43 millions of people who would like to
+06:45 
+
+06:45 join these kind of platforms to make
+06:46 
+
+06:46 additional income. And even though we
+06:49 
+
+06:49 had no experience [music] in Africa and
+06:52 
+
+06:52 from the sort of superficial level might
+06:54 
+
+06:54 might presume that it's very hard to to
+06:56 
+
+06:56 make actually a sort of a big business
+06:58 
+
+06:58 in in some of these countries with
+06:59 
+
+06:59 fairly low income levels. Um what we
+07:01 
+
+07:01 realized was that the volume is so vast
+07:03 
+
+07:03 and these economies are growing so
+07:05 
+
+07:05 quickly that it makes sense for us in
+07:07 
+
+07:07 the long term to bet on these countries.
+07:08 
+
+07:08 And that's what we did. Once we figured
+07:10 
+
+07:10 out that there's [music] this huge new
+07:13 
+
+07:13 world out there uh in terms of these
+07:15 
+
+07:15 emerging markets all the way from South
+07:17 
+
+07:17 Africa to Nigeria to Kenya to places
+07:21 
+
+07:21 like Azerbajan um we suddenly realized
+07:23 
+
+07:23 [music] that the product market fit
+07:25 
+
+07:25 there is so great that we actually need
+07:26 
+
+07:26 to invest significantly less and we were
+07:29 
+
+07:29 able to really accelerate the [music]
+07:31 
+
+07:31 growth of the business. So we went from
+07:33 
+
+07:33 having no presence in these emerging
+07:35 
+
+07:35 markets to suddenly those being more
+07:37 
+
+07:37 than 50% of the business in about 6
+07:39 
+
+07:39 months and um [music] we really pivoted
+07:42 
+
+07:42 the whole management team attention just
+07:44 
+
+07:44 to double down on that and figure out
+07:45 
+
+07:45 how do we find even more markets uh like
+07:48 
+
+07:48 this to accelerate.
+07:50 
+
+07:50 Back in 2019, there was very little
+07:54 
+
+07:54 adoption of food delivery in most of our
+07:55 
+
+07:55 countries and we thought that there was
+07:57 
+
+07:57 an opportunity for us to enter and build
+07:59 
+
+07:59 a category leader in at least a dozen
+08:01 
+
+08:01 countries and that could be a
+08:03 
+
+08:03 multi-billion business over the next few
+08:05 
+
+08:05 years. We were actually very lucky that
+08:07 
+
+08:07 we launched it just a couple months
+08:09 
+
+08:09 before COVID. So the initial fraction we
+08:12 
+
+08:12 had in the first two cities was good but
+08:15 
+
+08:15 then suddenly the whole world went into
+08:17 
+
+08:17 lockdown and then the right sharing
+08:19 
+
+08:19 business declined by 85%.
+08:22 
+
+08:22 So you can imagine it was vast majority
+08:25 
+
+08:25 of our revenue. We had a thousand
+08:26 
+
+08:26 employees and then you lose 85% of your
+08:29 
+
+08:29 business. What most of our competitors
+08:30 
+
+08:30 did was that they immediately raised the
+08:33 
+
+08:33 round and they also really went after
+08:35 
+
+08:35 the cost. And for most of these
+08:37 
+
+08:37 companies the main cost they had was
+08:38 
+
+08:38 employees. So they let go 30% [music] in
+08:42 
+
+08:42 some cases even 50% of their entire
+08:44 
+
+08:44 workforce and that of course was a big
+08:46 
+
+08:46 drain on morale and these companies were
+08:48 
+
+08:48 effectively paralyzed for the next 6 to
+08:50 
+
+08:50 12 months. They couldn't do much. So
+08:52 
+
+08:52 what we did was um we thought we're
+08:55 
+
+08:55 going to take the gamble. We're not
+08:56 
+
+08:56 going to let go of a single person. So
+08:58 
+
+08:58 what we did was we we told the company
+08:60 
+
+09:00 that we're just going to be reducing
+09:02 
+
+09:02 salaries by a flat 20% and then people
+09:05 
+
+09:05 could opt in to take a bigger uh cut
+09:07 
+
+09:07 than that if they could afford to. Uh
+09:10 
+
+09:10 with um founders going to zero and most
+09:12 
+
+09:12 of executives going to zero as well just
+09:14 
+
+09:14 on an opt-in basis. It actually even
+09:16 
+
+09:16 made the team much stronger because
+09:18 
+
+09:18 everybody in the company realized that
+09:20 
+
+09:20 this is an unprecedented health crisis
+09:22 
+
+09:22 and so many people are getting laid off
+09:25 
+
+09:25 and it's economically putting a lot of
+09:27 
+
+09:27 stress on them. So actually we had
+09:29 
+
+09:29 hundreds of people opting in to take
+09:32 
+
+09:32 quite large meaningful pay cuts 20 30
+09:35 
+
+09:35 40%. uh on top of what we had offered
+09:37 
+
+09:37 and um actually it brought the team's
+09:40 
+
+09:40 morale to a completely new level and
+09:42 
+
+09:42 then once the company was doing great
+09:44 
+
+09:44 again and we had recovered 9 months
+09:46 
+
+09:46 later uh we gave especially those people
+09:48 
+
+09:48 very generous equity bonuses as well. So
+09:51 
+
+09:51 like that was a very risky bet of
+09:53 
+
+09:53 course. I mean [music] if if it had
+09:54 
+
+09:54 taken longer or delivery wouldn't have
+09:56 
+
+09:56 worked out the company would have been
+09:58 
+
+09:58 in real trouble. But um we were very
+10:02 
+
+10:02 ambitious. We had a lot of confidence
+10:03 
+
+10:03 that this is the bet we want to do as a
+10:05 
+
+10:05 company. We thought this is really a
+10:06 
+
+10:06 crucible moment where you can actually
+10:08 
+
+10:08 meaningfully change your position in the
+10:10 
+
+10:10 entire market. And it worked out
+10:12 
+
+10:12 beautifully. [music] the food delivery
+10:14 
+
+10:14 business really took off really rapidly
+10:17 
+
+10:17 and [music] actually exactly as we
+10:19 
+
+10:19 imagined just six months later the first
+10:21 
+
+10:21 cities in Europe started opening up and
+10:23 
+
+10:23 right [music] sharing was recovering
+10:25 
+
+10:25 quite nicely and because all of our
+10:27 
+
+10:27 competitors were [music] so paralyzed
+10:29 
+
+10:29 from the layoffs uh and they weren't
+10:31 
+
+10:31 really focused we were able to take a
+10:33 
+
+10:33 lot of market share so coming out
+10:35 
+
+10:35 [music] of COVID we tripled our market
+10:37 
+
+10:37 share relative to what we had going in
+10:40 
+
+10:40 and I think there's this perfect analogy
+10:42 
+
+10:42 that it's very hard to overtake drivers
+10:45 
+
+10:45 during a normal race, but you can take
+10:47 
+
+10:47 overtake a lot of drivers when it's
+10:48 
+
+10:48 raining. And I think it was exactly what
+10:50 
+
+10:50 happened during co with us.

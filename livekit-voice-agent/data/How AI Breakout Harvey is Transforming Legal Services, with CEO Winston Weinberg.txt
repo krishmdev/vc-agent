@@ -1,0 +1,1436 @@
+00:00 Something that's really important in
+00:01 professional services is prestige and
+00:03 trust, right? The reason prestige is so
+00:06 important is because trust is the most
+00:07 important thing in professional
+00:08 services, right? And so the reason we
+00:11 went after the larger firms is if you
+00:14 earn the trust of a few of those firms,
+00:17 the rest of them will trust you and the
+00:19 rest of the firms downstream will
+00:21 definitely trust you, right? And their
+00:23 clients will trust you, right? So I
+00:25 think that something you know something
+00:27 that we thought about doing in the
+00:29 beginning was well just go straight to
+00:30 enterprise right and there are a bunch
+00:32 of problems with that but one of the
+00:33 main reasons is there's just no reason
+00:35 for them to trust you right that you can
+00:37 actually build these systems
+00:55 Greetings. Today on training data, we
+00:57 have Winston Weinberg, co-founder and
+00:60 CEO of Harvey. Harvey has occupied a
+01:03 special place in the AI ecosystem over
+01:06 the last two or three years, becoming
+01:08 the canonical example of what it means
+01:10 to build an application layer company on
+01:13 top of the foundation models. A couple
+01:15 years ago, when these companies were
+01:16 derided as rappers on top of GPT models,
+01:20 Winston and his co-founder Gabe realized
+01:23 that this is where a lot of the value
+01:25 would actually be created, dealing with
+01:27 the messiness of real world problems,
+01:30 not replacing human beings, but giving
+01:32 them superpowers. And so over the last
+01:34 couple of years, as much of the industry
+01:36 has taken a tech out approach to build
+01:39 their business, Winston and the team at
+01:41 Harvey have taken a customerback
+01:43 approach and now stand position to
+01:46 revolutionize the legal industry, which
+01:49 is $400 billion in the US alone, the
+01:52 same size as the global cloud markets.
+01:55 We hope you enjoy.
+01:58 Winston, welcome to Training Data.
+01:60 Thanks for joining us on the show.
+02:01 Thanks for having me. All right. So, you
+02:03 have built you and your co-founder Gabe
+02:06 and your team have built a company that
+02:09 has become to many people sort of the
+02:12 canonical application layer AI business
+02:15 or sort of the defining application
+02:17 layer AI business. But when you started
+02:20 back in July of 2022,
+02:23 yeah, end of July 2022. So when you
+02:26 start in July of 2022, pre-Chat GPT
+02:28 nonetheless, um this wasn't really a
+02:31 thing. And as soon as it became a thing,
+02:34 people looked at this whole category and
+02:36 they said, "Eh, these are just rappers
+02:38 on top of foundation models. There's no
+02:40 value to be built here." So they're
+02:42 immediately sort of derided. So I guess
+02:44 the question is as a starting point,
+02:47 what gave you the conviction that this
+02:50 was the right business to go build and
+02:52 that there would be value between
+02:54 foundation models and customers? Yeah, I
+02:57 think the simplest answer to this is
+03:00 quite literally that these industries
+03:02 are incredibly messy, right? Um, and so
+03:04 I think that the largest misconception
+03:06 with kind of the the GPT rapper
+03:08 companies was a lot of what you were
+03:11 starting to do didn't have like a
+03:13 massive delta between what the
+03:15 foundation models provided and what your
+03:17 small company could do, right? So one of
+03:19 the largest advantages that we had in
+03:21 the beginning was how much emphasis our
+03:23 product had on citations. like literally
+03:26 just it was very important in the legal
+03:27 industry to be able to site like line by
+03:31 line and the accuracy of those
+03:32 citations, right? There were a bunch of
+03:34 other things as well, but like from day
+03:35 one that was something we put resources
+03:37 into. If that's all our company was, if
+03:40 we just said, "Okay, we're going to be a
+03:42 citation company, right?" Then yeah, I
+03:44 think you're just a GPT rapper and it's
+03:46 going to go away. But if the ambition of
+03:48 the company is to actually partner with
+03:50 an industry to completely transform it,
+03:53 this is a trillion dollar industry. It's
+03:55 incredibly messy. There are tons of
+03:57 different data sets. There's tons of
+03:58 ways that people work. There's tons of
+04:01 different specialized workflows, etc.
+04:03 Um, and so I think over time it became
+04:05 clearer and clear that these models
+04:07 weren't going to just automate entire
+04:09 industries away, right? They were going
+04:12 to change and like fundamentally serve
+04:14 as kind of like the groundwork for
+04:16 changing an entire industry. But I mean,
+04:18 one way to even look at this is when a
+04:20 new feature comes out, we usually think
+04:23 of that feature as this is a great piece
+04:26 that we can put into part of a workflow.
+04:29 So an example of this is like OpenAI
+04:31 will release deep research, right? And
+04:34 my first reaction to that is, oh my god,
+04:36 there's all of these capital markets use
+04:38 cases, right? For like studying markets,
+04:40 looking at all of this data that's on
+04:42 the internet, etc. It's not everything a
+04:45 capital markets attorney does, but you
+04:47 could put that into a piece of a
+04:50 hundredstep process in your product and
+04:53 it makes that process better. And so the
+04:55 best way to think of this is literally
+04:57 whenever I see either the foundation
+04:58 models can do something better than they
+04:60 could before or completely new feature.
+05:02 It just like unlocks part of the TAM or
+05:05 part of the actual process that you can
+05:07 build on top. Let's pull this thread a
+05:09 little bit. So, at time zero, you got
+05:11 the model down here, you got the
+05:12 customers up here, and you got Harvey
+05:14 doing citations in the middle for for a
+05:16 month or so. Yeah. Let's um what came
+05:20 next? Kind of walk us through some of
+05:21 the major leaps in the product or some
+05:24 of the major value creation
+05:27 opportunities you've seized upon along
+05:28 the way. Yeah. So the best way to kind
+05:30 of describe how we've been building the
+05:33 product and this is I think one of the
+05:35 things that we've gotten the most right
+05:36 and it has also been the hardest to
+05:38 manage which is and and from an org
+05:40 perspective and from a kind of like how
+05:43 which pieces do you focus on etc. And
+05:45 and the piece here is at all times you
+05:48 have to basically expand the product and
+05:50 then collapse it back, right? And so
+05:52 what I mean by this is actually if all
+05:55 of these models work perfectly and
+05:57 humans were perfect at communicating
+05:58 with each other, the best interface is
+05:60 literally email. Like that's it. Like
+06:02 there is no interface. It's literally
+06:03 just email and it's perfect. It has all
+06:04 of your contacts. It can read your mind,
+06:06 etc. I mean it could just be a neural
+06:07 link. Yeah, sure. That's perfect. Yeah,
+06:09 that's even better, right? Um but that's
+06:12 not how it works, right? And I don't
+06:14 think that we're just going to randomly
+06:15 oneshot be able to do that, right? And
+06:18 even if we could do that on the model
+06:19 side, we can't do it on the human
+06:21 workflow side. In other words, like the
+06:23 example I give a lot is even if the
+06:25 models could do, you know, somehow chain
+06:27 all the steps together to do a large
+06:29 merger like the Activision and Microsoft
+06:31 merger, the user can't send that to the
+06:34 model and say merge please and then it
+06:37 just like does all those steps, right?
+06:38 There's all of these communication sides
+06:40 on the UI side as well. But okay, so
+06:42 holding that still, going back to the,
+06:44 you know, you have to constantly expand
+06:46 and collapse the product when you're
+06:48 expanding. What I mean by this is the
+06:51 chat UI doesn't work for every use case,
+06:53 right? And it doesn't work for every use
+06:54 case right now. I don't think it will
+06:56 for the future, right? And so an example
+06:58 of this is if you were trying to build
+07:01 something that does really good case law
+07:03 research, right? There's multiple steps
+07:05 to that. You want to build a system that
+07:07 is very good at doing retrieval over all
+07:10 the cases. You want to build a system
+07:11 that is really good at comparing
+07:12 contrasting all the cases. You want to
+07:14 build a system that is really good at
+07:16 synthesizing the facts in your case to
+07:20 all of the case law, etc. Right? And if
+07:23 you're doing that, the best way to do it
+07:24 is you expand your product by building
+07:27 specific vertical, you could call it
+07:29 agentic systems, whatever you want that
+07:31 do that thing from start to finish,
+07:34 right? And then you collapse them all
+07:36 together. So what does this end up
+07:38 looking like? We will take a bunch of
+07:40 use cases that are very high value.
+07:42 We'll build out a specific workflow to
+07:44 do that use case and then we will chain
+07:46 them together so that you can complete a
+07:48 task from start to finish. Right? And so
+07:51 the difficult piece of that is if you're
+07:55 trying to sell something that is seats,
+07:57 you have to sell something that is
+07:59 applicable to as many users as possible.
+08:01 And so you have to balance are you
+08:03 building something that is really good
+08:04 for a securities attorney or are you
+08:07 building something that's really good
+08:08 for all of the attorneys, right? And so
+08:11 that's kind of the collapse part where
+08:13 you want to build these specific
+08:15 workflows, agentic workflows, whatever
+08:16 you want to call it, whatever
+08:17 terminology it works, and then you want
+08:20 to combine them into the same service
+08:22 level on the product, right? And so what
+08:24 this looks like eventually is you upload
+08:26 a share purchase agreement onto Harvey,
+08:29 right? And we
+08:30 have the user may might not see this but
+08:33 there's tons of different workflows that
+08:34 are like extract the reps and warranties
+08:36 from that or summarize it or whatever it
+08:38 is right and we've built them all
+08:41 separately and you can use those UIs and
+08:43 actually do that workflow separately or
+08:45 when you just upload an SPA Harvey says
+08:47 would you like to run any of those
+08:48 workflows and that's the collapse
+08:50 version right so you're building these
+08:52 specific solutions and then you collapse
+08:54 them back in
+08:56 how much of the magic do you think is in
+08:57 the models themselves versus what I what
+09:00 I think you just described as you know
+09:01 an agentic system or a cognitive
+09:03 architecture. Yeah. Um and you know how
+09:05 much of is it is it the workflow that's
+09:07 hard? Is it training things together
+09:08 that's hard? Is it the combination of
+09:10 all of it that's hard? So I think like I
+09:13 would categorize this in three areas. So
+09:16 the all you need to do for kind of like
+09:18 every single workflow is basically what
+09:21 does the user want? What is the intent
+09:22 right? Um after that it's so what is
+09:25 what do they want? What's the intent?
+09:26 How do you extract that intent out of
+09:28 them? The second piece is what context
+09:30 do we need? And the third piece is is
+09:32 this right. Right? And so my point is
+09:35 there are different systems that work
+09:36 really well for different versions of
+09:38 those patterns. Right? So routing like
+09:41 using the models to actually like do
+09:43 predictions and routing is really
+09:45 helpful for the first one. Right? And so
+09:46 that's the example of you know either
+09:48 follow-up questions is really important
+09:50 there. routing uh someone's query to the
+09:53 like particular task you think they want
+09:55 to do is very good. Um and so there's
+09:58 kind of like an orchestration element
+09:60 there, right? Context is okay, do you
+10:03 have predefined systems that will search
+10:05 for your internal documents that are
+10:07 relevant to the question and then your
+10:08 external documents that are relevant to
+10:10 the question? A lot of that work is
+10:11 retrieval, right? like most of what
+10:13 you're building there is retrieval and
+10:15 then routing to make sure that you're
+10:17 accessing the external documents when
+10:19 you need to and the internal documents
+10:20 when you need to as well. And then the
+10:22 third one is is this right? Right. So
+10:24 going back to my citations example which
+10:26 is is silly but it's it's actually
+10:28 really important. Um I think there also
+10:32 a lot of the work can be done by the
+10:34 models but you have to make sure that
+10:36 the models
+10:38 are very good at checking for certain
+10:40 things. So let me give you an example of
+10:41 this.
+10:42 uh there's a thing in legal that is what
+10:45 is market right and the models don't
+10:48 know what market is and there's various
+10:50 versions of what market is there's
+10:52 market for a particular private equity
+10:55 firm like what terms they are used to
+10:58 you know doing on an LBO or a dealer in
+10:59 a sideter etc there are terms that are
+11:02 across all of private equity and then
+11:04 there are just kind of like general M&amp;A
+11:06 terms right and the models don't have
+11:08 access to this data right and so on That
+11:12 third piece, a lot of it is can you
+11:14 build a system that is very good at
+11:16 retrieving all of those different data
+11:18 sets when needed and comparing them
+11:20 against each other. And I'm sure it
+11:22 helps if you have all of those different
+11:25 folks as customers. Yes. Yeah. So I mean
+11:28 that I think is goes to another piece
+11:30 which
+11:31 is the biggest problems that we have and
+11:35 I think I mean is a very interesting
+11:37 problem and I don't think the models are
+11:38 just going to solve this is the process
+11:41 data for a lot of these tasks doesn't
+11:43 exist on the internet right so the
+11:46 process data for how do you do
+11:47 disclosure schedules or what is market
+11:50 right those are not things that are just
+11:52 kind of like on Reddit somewhere right
+11:55 um and so what we do is we actually hire
+11:57 domain experts who sit down and say
+12:00 these are the steps that I would take
+12:02 right and then you just chain the models
+12:04 on top of that right and or if there's a
+12:06 gap between what the model can do then
+12:08 you do fine-tuning right but the best
+12:10 way to do fine-tuning and post- training
+12:12 is task specific it's not here there was
+12:15 a a large kind of ethos maybe in the
+12:18 legal industry and and a bunch of other
+12:20 industries that somehow if you got all
+12:22 of the legal documents and then you just
+12:25 trained a model on than that it would do
+12:27 law, right? Um and and that's kind of
+12:30 like saying read all the, you know, your
+12:33 case load and all of the textbooks in
+12:35 law school and then just put you into
+12:37 like a profession and you somehow know
+12:39 how to do it. And that's not how it
+12:40 works. So much of it is like you
+12:42 actually have to learn how to do the
+12:44 different steps, right? And then the
+12:46 other side of that is not only is the
+12:48 process difficult, but the evaluation is
+12:49 really difficult, right? So you have to
+12:52 hire kind of like mid-level folks to do
+12:54 evaluation for a lot of these things
+12:56 because if the junior folks could do
+12:59 evaluation, they would be mid-level or
+13:00 they'd be senior, right? Like that's the
+13:02 reality. And a lot of what you do in a
+13:04 law firm or professional services is
+13:06 you're actually evaluating the work of
+13:07 junior folks, right? It's incredibly
+13:09 expensive. I'd argue that maybe 20 to
+13:11 30% of the revenue of these places is
+13:14 doing that. I want to go back to this
+13:16 concept of expanding and collapsing the
+13:19 surface, which I love. Um, what is your
+13:22 view of the ideal end state for how, you
+13:24 know, a lawyer should be interacting
+13:26 with Harvey? Is it kind of that email
+13:28 chat interface and it's just merge merge
+13:30 company A and B and we're good or I
+13:32 don't I don't think that we will get
+13:34 there anytime soon. And that is not for
+13:38 me to say that I'm not bullish on the
+13:39 foundation models getting better. I mean
+13:40 I you know this I am incredibly bullish
+13:44 on the foundation model is getting
+13:45 better and we have designed the company
+13:47 kind of without a constant push as a
+13:49 driving force. Um I think the biggest
+13:52 problem with that is that doesn't allow
+13:56 the user to have enough kind of e
+13:59 exercise enough judgment on the workflow
+14:02 itself. Right? So, I think one thing
+14:04 that when people are talking about
+14:05 agents, they're talking about these
+14:07 tasks that are like quite simple and
+14:10 don't have massively high like economic
+14:12 value, when we're talking about building
+14:14 workflows and putting kind of agents in
+14:17 those, we're talking tasks that cost
+14:19 hundreds of thousands of dollars, right?
+14:21 I mean, one reason the the legal
+14:23 industry is is so good for LLMs is if
+14:27 you can kind of think of this is is the
+14:28 industry textbased and then how valuable
+14:31 is a token, right? And a token is
+14:35 incredibly valuable in legal and
+14:37 professional services. If you look at
+14:39 like a merger agreement, like a 50-page
+14:40 merger agreement, the token in there,
+14:42 like how each piece of a word is worth
+14:44 so much money if you think about how
+14:46 much it costs to produce. So this is all
+14:48 to say I think the end state is you keep
+14:51 building these agents and workflows and
+14:54 then you chain them together as much as
+14:56 you can right and that makes it so that
+14:59 your UI actually looks the same but your
+15:02 suggestion and your routing model gets
+15:04 better and better your orchestration
+15:06 level model gets better so you can kind
+15:08 of think of this maybe like let's go to
+15:09 the law firm I think that we're building
+15:12 out the specialized associates that can
+15:14 do different tasks
+15:17 But it's also incredibly important that
+15:18 you have the partner or the managing
+15:20 partner operating model as well. And I
+15:24 think that as the models allow us to
+15:26 build more and more of these specialized
+15:28 kind of specific associates, you also
+15:31 have to put all of this effort into
+15:32 actually having the orchestration layer
+15:35 that pulls all that together, right? And
+15:37 so I think our UI actually looks similar
+15:40 in the sense that it it does look like a
+15:42 kind of like a text window, right? But
+15:45 the ability for a user to upload a bunch
+15:48 of documents and for just to suggest
+15:50 what you do or the ability to say this
+15:52 is what you did last time. Would you
+15:53 like to do it again? Things like that
+15:55 improve kind of like a colleague that's
+15:57 just like really good at knowing what
+15:58 you want to do. On that note, are you
+16:02 selling software or are you selling
+16:04 work? Is this legal software or is this
+16:06 AI lawyers? Yeah. So, so far I mean
+16:09 software um I think that the best way
+16:12 like most of our clients in the
+16:13 beginning were law firms and
+16:15 professional service providers like PWC.
+16:17 Um we now have a lot of enterprise
+16:19 customers as well and the way that the
+16:22 product is evolving is you can kind of
+16:24 think of it as actually two products.
+16:27 One is a productivity suite, right? And
+16:30 that is lawyers in the loop at all times
+16:33 etc. Um and you know the ROI on that is
+16:36 is incredibly helpful. It saves you tons
+16:38 of hours a week, etc. Right? The other
+16:40 side of that is you're building these
+16:42 workflows that do part of the work from
+16:44 start to finish, right? And that is
+16:46 closer to selling the work. The way that
+16:48 we're actually approaching this is we
+16:50 are building those with law firms and
+16:54 helping them get more business, right?
+16:56 So we will get these revenue split
+16:58 agreements with law firms or for
+16:60 professional services and we will
+17:02 combine their domain expertise with our
+17:05 tech and then they go out and sell it to
+17:07 their clients, right? Um and so we are
+17:10 transitioning from just a seatbased
+17:13 company to actually selling the work as
+17:15 well. Uh and I think we'll see a lot of
+17:17 that this year. What and what are the
+17:18 ripple effects of that kind of like
+17:19 inside the building and outside the
+17:21 building? How do you how do you manage
+17:23 that as a company and what change does
+17:26 that require of your customers? Yeah, so
+17:29 managing it internally is all about
+17:31 taking bets. Um because it's it's you
+17:35 know if you're building software that is
+17:37 and every single feature that you're
+17:38 adding is good for your entire user
+17:40 base, you've kind of like reducing your
+17:43 chance of failure, right? because every
+17:46 time you add something to the software,
+17:48 it is hopefully uh increasing the value
+17:50 that you get from every single one of
+17:52 the users. If you focus on building one
+17:54 of these specific workflows and it
+17:56 doesn't work, you've b like it's zero
+17:58 and one like they it either works or it
+18:01 doesn't, right? And it's for a specific
+18:04 use case. The value of it is really
+18:06 high, but if you can't sell it to
+18:08 people, then you're in trouble, right?
+18:09 Um, and so the best way that we've
+18:12 handled this internally is we've
+18:14 actually let the law firms do a lot of
+18:15 the discovery for us, right? So we will
+18:18 do joint projects with a large company
+18:22 and their law firm, right? And so we
+18:25 will use them as design partners to make
+18:27 sure that this is something that is
+18:28 repeatable. You can actually do it,
+18:31 right? Like the technology is there to
+18:32 do it. And number three is appetite. So
+18:36 there is a large problem in legal where
+18:39 a lot of kind of what you need is like
+18:40 compliance checks or you're doing the
+18:42 work for insurance etc. And so the the
+18:45 third piece is also really important
+18:46 where you have to make sure that the
+18:48 in-house team is actually okay with AI
+18:51 handling that use case. Right? So that's
+18:53 kind of how we handle it internally
+18:54 where we spend tons of time on
+18:56 discovery, right? Tons of time talking
+18:57 to customers and we have a lot of design
+18:59 partners for the early stages of that.
+19:01 One more piece about how we handle it
+19:02 internally as well. In order to
+19:04 generalize, what we're doing is we're
+19:06 building like AI patterns. So here are
+19:10 the 15 types of actions in the legal
+19:14 industry that we need, right? So
+19:17 research like case law research is a
+19:19 huge one. Uh regulatory research is
+19:21 another one. Uh clause extraction is
+19:23 another one, right? And so we'll put
+19:24 tons of effort into those like kind of
+19:26 generic or widespread horizontal things
+19:29 and then we'll chain them together kind
+19:30 of like a Ford factory line. So those
+19:32 are the two ways. Uh so on the GTM side
+19:34 it's discovery. On the product side, it
+19:36 it really is kind of building that Ford
+19:38 factory line of of AI uh
+19:42 patterns. Externally, I think this will
+19:45 have a very large impact. So, we're
+19:47 working with a firm that is almost a
+19:49 hundred years old and they became famous
+19:52 from literally advising I think it was
+19:54 King Edward the something on the
+19:56 abdication of the throne. So in other
+19:58 words, these firms are really old. Like
+19:60 some of these firms are like hundreds of
+20:01 years old and they have had the same
+20:03 business model for a hundred years,
+20:06 right? And they're actually willing to
+20:09 work with us and change some of their
+20:11 business model, right? And like take a
+20:12 bet on this and explore it, right? And
+20:15 so as I I think most people know, a lot
+20:17 of professional services and especially
+20:19 legal has been the billable hour
+20:20 forever, right? And so the problem with
+20:22 that is if you're selling them
+20:23 efficiency software, there's only so
+20:25 many hours in the day, right? unless you
+20:27 come up with a software that invents the
+20:28 25th hour of the day, which by the way
+20:30 would be the best thing you could do to
+20:31 sell to professional services. But if
+20:33 you can't do that, um, efficiency is is
+20:37 a hard cell unless you can convince them
+20:40 that there are ways for them to actually
+20:43 transform their business, right? So,
+20:44 what we're starting with is let's help
+20:47 you take a bunch of these workflows that
+20:50 you normally do at not a very good cost
+20:52 or a loss, right?
+20:54 um and let's turn those into software
+20:58 and help you kind of spread it out and
+21:00 get more market share in areas that you
+21:02 don't normally have. So, I'll give you a
+21:04 pretty good example of this. In private
+21:06 equity, one of the ways that law firms
+21:09 go and kind of get new private equity
+21:11 business is they'll do things like side
+21:13 compliance or kind of like lower-end
+21:14 work and they'll do that at a loss so
+21:17 that eventually, you know, the private
+21:18 equity firm will pay them for the LBO or
+21:20 or whatever the big M&amp;A deal is or
+21:22 something like that. And so we'll build
+21:24 them software to help them get that work
+21:27 and not operate at a loss to get it,
+21:29 charge for a flat fee, etc. Uh, and then
+21:32 take some of the cost. Is the tech
+21:34 ready? Like how much I guess legal work
+21:37 can already be automated with today's
+21:39 models and if you were to freeze model
+21:41 development. Yeah. You know, how how
+21:44 much can be automated? Yeah. Yeah, I
+21:45 mean I think that's a good question in
+21:46 terms of and especially the second one
+21:48 of I guess like how there's the
+21:52 reasoning ability of the models and then
+21:54 the capability re of the models, right?
+21:56 And if you froze the models reasoning
+21:59 ability, I think we'd be fine actually.
+22:02 Um, so if we somehow kind of like froze
+22:05 the ability for the models to process
+22:08 data, um, that doesn't mean that they
+22:10 know which process to actually like
+22:13 analyze that data, but just their
+22:15 ability to ration over it, um, to make
+22:18 rational decisions over it. We'd be in a
+22:20 really good spot. So in other words, I
+22:22 think we're at like small percentage
+22:25 points right now of like legal and
+22:27 professional services, but if you
+22:29 paused, we would increase pretty high
+22:32 even if the models didn't get better,
+22:33 right? Because I think the reasoning
+22:35 ability of these models is is is there
+22:38 actually I think the bigger problem is
+22:40 like evaluation, improving process um
+22:43 and collecting more data too. The the
+22:45 data isn't there.
+22:48 Is model development going to freeze
+22:49 here? Um, I I don't think so. No. Um, I
+22:53 mean, I I think we're we're seeing a
+22:56 pretty large evidence of if you throw
+22:60 more compute at the model and you let it
+23:03 make more and more reasoning steps, it
+23:06 just gets better and better and it
+23:07 improves time. Yeah. Exactly. Right. Um,
+23:10 and it's interesting if we if we go all
+23:12 the way back to 2022 in the early 2022,
+23:16 the thing that Gabe and I had done was
+23:19 we were doing a bunch we got access to
+23:21 GBD3. This is public by the at the time.
+23:23 This is like early
+23:25 2022. And we the thing that we found was
+23:29 we were just doing chain of thought
+23:30 prompts before anyone was thinking about
+23:33 chain of thought prompts. And the way
+23:35 that we actually started was we were
+23:37 doing that over a bunch of kind of like
+23:39 legal questions and we cold emailed the
+23:42 general counsel of OpenAI and sent him
+23:44 that. And he basically, his name's Jason
+23:46 Quan. Um, and he basically responded,
+23:49 "Oh my god, I had no idea these models
+23:51 were this good at legal." And I think
+23:52 the main reason people weren't looking
+23:54 at it is because they were just doing
+23:56 one model call over a set with like one
+23:58 static prompt and just calling it a day.
+24:01 and they weren't doing what are the
+24:03 actual process steps like they weren't
+24:04 telling the model these are the steps
+24:06 that you need to take in order to answer
+24:08 this question right and so my point is
+24:12 that's what we saw in like early 2022
+24:15 and that's like the direction that these
+24:16 models are going right um and I think
+24:20 that it's really good for legal and for
+24:22 kind of these these industries where you
+24:24 have to have these complex decision-m
+24:27 processes for two reasons one the model
+24:29 get better at that that's just increases
+24:31 the ability of them. But two is that
+24:33 process data doesn't exist. Like I said
+24:35 before, like it it's not online. Like
+24:37 how to book a flight is online, right?
+24:39 Uh there are easy ways to train that.
+24:41 It's harder to do how do you do an LBL?
+24:43 Well, and you and you guys you now
+24:46 deservedly so have an unfair advantage
+24:48 around the process data because you have
+24:51 some of the very best law firms in the
+24:53 world as customers of Harvey, which I
+24:55 think was a contrarian strategic
+24:57 decision that you and Gabe made a couple
+25:00 years ago and you made it with high
+25:02 conviction. And and I I remember a time
+25:04 when there were lots of law firms who
+25:06 wanted to come work with Harvey and you
+25:08 basically said no so you could focus on
+25:12 some of these big prestigious firms. Um
+25:16 can you say a couple words on what gave
+25:19 you the conviction that that was the
+25:20 right strategy? And then maybe more
+25:23 importantly once you determined that
+25:24 that was the strategy, how in the world
+25:26 did you get them to trust you? Yeah.
+25:28 like this is a very very scary new world
+25:30 and and and you managed to earn their
+25:32 trust. So how did you do that? Yeah. So
+25:34 I think okay so the reason for doing it
+25:37 um there was a a GTM reason for it and a
+25:39 product reason. From the product side
+25:42 the bet was that the models were going
+25:43 to get better and that you want to build
+25:47 systems that the the next generation
+25:49 model cannot do right and so you want to
+25:51 go after the incredibly complex
+25:54 international merger type work. Right?
+25:56 you want to do the very complex work and
+25:59 build systems for that because it is the
+26:01 most defensible by far. Right? So that
+26:03 was kind of the the product side of it.
+26:05 Um from the GTM side of it, I think that
+26:08 something that's really important in
+26:09 professional services is prestige and
+26:11 trust, right? The reason prestige is so
+26:13 important is because trust is the most
+26:15 important thing in professional
+26:16 services, right? And so the reason we
+26:19 went after the larger firms is if you
+26:22 earn the trust of a few of those firms,
+26:24 the rest of them will trust you and the
+26:27 rest of the firms downstream will
+26:28 definitely trust you, right? And their
+26:30 clients will trust you, right? So I
+26:33 think that's something, you know,
+26:34 something that we thought about doing in
+26:36 the beginning was well just go straight
+26:37 to enterprise, right? And there are a
+26:39 bunch of problems with that, but one of
+26:41 the main reasons is there's just no
+26:42 reason for them to trust you, right?
+26:44 That you can actually build these
+26:45 systems, right? Uh, how did we do it?
+26:48 Um, I we did a bunch of things that do
+26:50 not scale at all. Like in in all
+26:53 honesty, um, I think that one of the
+26:55 things that we did really well
+26:57 is I don't think there is any excuse for
+27:01 someone who is building an AI product
+27:03 and trying to sell to not do
+27:05 hyperpersonalized demos. Like there is
+27:08 no excuse. I think it used to be really
+27:10 important to do that. Now it's paramount
+27:13 and it is so easy to do this, right? Um,
+27:16 and so one of the things that we did in
+27:18 the beginning was whenever I would demo
+27:20 to a partner, I would try to use
+27:22 something that they recently worked on.
+27:24 Um, and then the other thing too is
+27:27 lawyers are argumentative, like very
+27:29 argumentative. Uh, and I mean that in
+27:31 the best way. So just let them fight
+27:32 with the model. Yeah, I'm serious. And I
+27:34 mean that in the best way. So I would
+27:36 sometimes say, you know, was this a good
+27:39 argument? Um, and how would you improve
+27:41 it? And if they were really bored on the
+27:43 demo and then you say that they are
+27:46 reading every single word that comes out
+27:48 of Harvey, like every single word. And
+27:51 you know, it wasn't always the perfect
+27:53 response, but I think it engaged them in
+27:55 a way that they've just never been
+27:57 engaged with software before at all.
+27:59 Right. Um, and and we found I mean, one
+28:02 thing that's that's interesting is, you
+28:04 know, a lot of the older partners at at
+28:06 firms sometimes we might be their first
+28:09 AI product that they've used, right? And
+28:11 so it's really important to actually
+28:14 like show them, you know, kind of the
+28:17 basics as well, not just exactly what,
+28:20 you know, is is special about your
+28:21 product, too. How have you elicited the
+28:23 behavior change out of your customers
+28:25 and kind of taught them to use AI? Yeah,
+28:28 this has been really hard. Um, I think
+28:30 that it starts with product by far. So
+28:32 when I was talking earlier about the
+28:34 expand and collapse, the most important
+28:37 piece of the collapse is to make it so
+28:39 you don't have the blank page problem,
+28:41 right? Like that is by far the most
+28:42 important thing. So that when you go
+28:44 onto the landing page of Harvey, there
+28:47 are all of these buttons that you can
+28:48 click that will help you get started,
+28:49 right? And that is super important. And
+28:51 now we actually have it to a point where
+28:53 you put in how many years you've been
+28:55 practicing, what kind of lawyer you are,
+28:57 things like that, and it will change
+28:58 what that screen looks like when you
+29:00 start. Right? So that's been super
+29:02 helpful because if you make it so that
+29:04 those very specific systems are exactly
+29:07 what they do day-to-day, it is really
+29:09 easy to get them to start and if they
+29:11 start using it, they'll be creative.
+29:13 They won't be creative right off the
+29:15 start. It's hard to get people to do
+29:16 that, right? Um so on the product side,
+29:18 I think that's the most important piece
+29:19 is just making it very personalized and
+29:22 making it so the time to value is really
+29:24 short, like as fast as possible and then
+29:26 they'll go out and explore. on the CS
+29:29 side, we've hired a lot of lawyers. Um,
+29:32 and I think that's what been super
+29:33 helpful is you need to hire domain
+29:36 experts who can say and and we're doing
+29:38 the same too in tax and these other
+29:40 areas. You need domain experts who can
+29:42 come in and say this is how I would use
+29:43 it and this is, you know, I've been
+29:45 doing this for six years. I was in the
+29:46 same shoes you were in. Um, I know
+29:49 exactly what work you do.
+29:52 Talk about the trust thing.
+29:53 Hallucinations. I think if you look at
+29:54 where AI has worked really well, it's
+29:56 where, you know, where hallucinations
+29:58 are a feature like in the creative
+29:59 industries, right? Hallucinations are a
+30:01 feature. In your industry, I'm assuming
+30:02 hallucinations are an absolute bug. And
+30:04 so, what do you do to make, you know,
+30:06 those argument that lawyers really
+30:07 trust? Yeah. Really trust what the model
+30:09 was saying. So, I'd actually push back
+30:11 on the second piece a little bit in a
+30:14 lot of what lawyers do is creative
+30:16 actually, like a lot of it. Um, so like
+30:19 I'll give you an example for this.
+30:20 Litigation would not exist if there were
+30:23 just 10 really simple rules and everyone
+30:26 knew which fact pattern fell into the
+30:28 boundaries of those rules. Like there
+30:30 would be no litigation, right? And so I
+30:33 I was a litigator. I mean transactional
+30:34 is also incredibly creative, but
+30:36 litigation I think is just a better
+30:37 example because what you're trying to do
+30:39 is I have these facts. Here are somewhat
+30:42 of the rules of the game. Let's figure
+30:44 it out, right? And that's actually
+30:45 incredibly creative. Like very creative.
+30:48 Um so but still who like accuracy is
+30:51 more important than than creativity to
+30:53 be clear here. Um and so on the accuracy
+30:57 piece so even given that creativity is
+30:59 actually super useful in some instances
+31:01 and we try to make it so that our
+31:02 product doesn't like get rid of that
+31:04 aspect. Um on the accuracy side there
+31:08 are a lot of things you can do to
+31:09 improve it for one. Um but for two the
+31:13 main thing is law firms are
+31:16 hierarchical. So you like a junior
+31:19 associate if they get a task they do the
+31:22 first draft of it and then a second year
+31:24 reviews that and then a fifth year might
+31:25 review that and then the partner reviews
+31:27 that and it goes out right um and so
+31:30 actually the you know minimal viable
+31:32 quality of your output can be lower for
+31:35 a law firm than it can be for an
+31:37 in-house team actually. So selling to
+31:40 the law firms was also helpful in the
+31:42 beginning because so much of the work
+31:44 gets reviewed, right? And so you aren't
+31:46 selling them something where they kind
+31:47 of click it and forget it, right?
+31:49 They're actually in the loop at all
+31:50 times. When you're selling to an
+31:52 in-house team, it is better to sell them
+31:54 the specialized versions of tasks that
+31:57 they can kind of see an insanely high
+31:59 accuracy level on. Um, and the more
+32:02 specialized you are building, the higher
+32:04 accuracy you can get because it's easier
+32:05 to fine-tune. It's easier to do
+32:06 evaluation because there are less steps
+32:08 and the surface area is just smaller.
+32:11 Let's talk about the lawyer of the
+32:12 future and the law firm of the future.
+32:15 Foundation models are going to keep
+32:16 getting better. You guys are going to
+32:18 keep doing valuable stuff on top of
+32:19 those models. What does the job of a
+32:21 lawyer end up being? What does a law
+32:23 firm end up looking like? Let's go like
+32:24 five, 10 years out. Yeah. So, I'll start
+32:26 with the job of a lawyer because I I
+32:28 just care a lot about this.
+32:30 Um I think that it goes back to actually
+32:33 what it used to be. Um so 50 years ago
+32:37 the role of the lawyer was an adviser
+32:39 and a lot of what they did is look
+32:41 around corners give a different angle of
+32:44 advice etc. And and we've actually seen
+32:45 this evolve to a degree where the CLO
+32:48 chief legal officer title is like pretty
+32:50 new and really it's like most of the
+32:53 CLOs's that I have met they are part of
+32:56 the business like they are business
+32:58 drivers. it is not just the no person,
+33:00 right? Um, and I think that that is
+33:04 going to happen. So, I think what's
+33:06 going to happen over time is kind of
+33:07 this like lower-end work is going to get
+33:10 somewhat commoditized and automated. Um,
+33:13 but then the highle strategic work is
+33:16 actually going to be more valuable,
+33:17 right? And so this is really good for a
+33:20 young lawyer. It's fantastic because you
+33:22 know most people they go to law school
+33:23 and their goal is not to sit in a data
+33:25 room or do discovery or doc labeling for
+33:28 10 years and then maybe go to trial
+33:29 once. That's not what they want to do,
+33:31 right? They want to give advice to
+33:32 clients. That is why you want to be a
+33:33 lawyer. They want to help people, right?
+33:35 Uh they want to help people or they want
+33:36 to win. One or the other, right? But
+33:37 sometimes both. Um that's what you want
+33:40 to do. Uh, and it very much is it's like
+33:42 close to like professional athletes
+33:44 where they want to be the best at their
+33:46 craft and you get better by having more
+33:49 hands-on strategic experience than you
+33:52 do just sitting in a data room forever,
+33:54 right? And so I think that experience
+33:55 will be really good. Um, the law firm I
+33:58 think will be I think there will be a
+34:00 lot of transitions in how law firms
+34:02 operate. So I mean I now am a client
+34:05 like I use a lot of law firms, right?
+34:08 And one thing that I've always got
+34:09 annoyed with is the really high billable
+34:12 hours for very low-end work, like
+34:15 looking at, you know, whether this
+34:16 change of control clause was triggered
+34:18 or not, things like that, right? Um, and
+34:21 as a customer, that can be annoying,
+34:24 right? But actually for the high-end
+34:27 strategy of like, how should I go about
+34:29 buying this business? How should I think
+34:30 about restructuring this part of my org?
+34:32 Things like that, I would pay more than
+34:35 you pay the best lawyers on Earth right
+34:36 now. like the delta between a junior
+34:38 associate and the best partner on earth
+34:40 is like three or 4x, right? Which
+34:42 actually doesn't make sense to me. Um,
+34:44 and so I think what will end up
+34:46 happening is there will be a lot of
+34:50 fixed fees for kind of the part of a
+34:52 transaction, the part of a litigation
+34:54 that is somewhat more commoditized, but
+34:56 the insight, the value, like strategic
+34:59 advice, looking around corners, things
+35:01 like that, I would argue you can charge
+35:03 more for that. I know part of your
+35:05 mission is related to providing better
+35:07 access to justice. What does that mean
+35:09 to you and and kind of draw the line for
+35:12 how Harvey helps us get there? So, a
+35:14 little bit of background info on this.
+35:16 The average price of a lawyer in the
+35:18 United States is $352 an hour. So,
+35:22 almost no one can afford a lawyer,
+35:23 right? Um, and I think there's a bunch
+35:25 of arguments about, you know, how much
+35:27 latent demand is there for lawyers, etc.
+35:29 The reality is there is a massive
+35:31 population of folks that do not have
+35:33 access to our justice system, right?
+35:35 Like either way you slice it, that is
+35:37 the case. Um, and even if you had every
+35:40 single lawyer work 20 hours a week on
+35:44 access to justice still wouldn't close
+35:46 that gap still literally in in without
+35:49 any anything else being fixed, right? Um
+35:51 and so I do think that we are going to
+35:54 have a large transition to lawyers using
+35:58 AI um to actually help and increase
+36:01 access to justice. Um there are a bunch
+36:04 of things on kind of like the regulatory
+36:06 uh side that prevent a lot of this but I
+36:09 think a lot of those will change. So the
+36:11 the best example of this is um there are
+36:14 kind of two conflicting rules here. It
+36:16 is unauthorized practice of law, right?
+36:18 Um so businesses cannot give legal
+36:20 advice. someone who has not passed the
+36:21 bar actually cannot give legal advice
+36:23 etc. Um and the second one is you cannot
+36:26 make an equity investment into a law
+36:28 firm unless you are a lawyer, right? Uh
+36:30 and so that has basically cut out any
+36:32 sort of traditional financing in the
+36:34 legal sphere, right? Um Utah, Arizona,
+36:38 and some now some other states are also
+36:40 thinking about getting rid of these
+36:42 rules or creating sandboxes to kind of
+36:44 experiment with that and it's been going
+36:45 really well. Um, I do think that there
+36:49 is going to be a lot of change in this
+36:51 in the next couple of years and I think
+36:53 it will be amazing. Like there there
+36:54 really is I think that if you can figure
+36:57 out the way to make sure that people are
+36:60 getting the same quality of legal advice
+37:02 with AI and maybe a lawyer in the loop
+37:05 depending on kind of how that that pans
+37:07 out. This will be incredible for folks.
+37:10 And the my last piece on this is one of
+37:13 the things that I think people don't
+37:14 think about a lot is most people don't
+37:16 know when their rights have been
+37:18 violated. They do not know, right? And
+37:21 so like I I think like we take for
+37:23 granted that we have all been like, you
+37:25 know, in in this kind of like bubble
+37:27 have been super well educated. We know
+37:28 exactly what when something happens, we
+37:30 know whether we have legal recourse or
+37:32 not to some degree. A lot of folks
+37:35 don't, right? And so they don't know if
+37:38 a position a person in authority is
+37:40 doing something that is illegal or not.
+37:42 Right? This is a huge problem in
+37:43 housing, huge problem um in kind of like
+37:46 collecting unpaid fees for things that
+37:48 shouldn't even be a fee, etc. Right? So
+37:51 I think that's an area where you can do
+37:53 a lot of not just providing the services
+37:56 but a lot of education um at scale that
+37:58 you couldn't do before.
+38:01 Can we zoom out to the AI market more
+38:02 broadly? Yeah. OpenAI was lucky enough
+38:04 to partner with you in the early days.
+38:07 Um what what do you make of the recent
+38:09 developments that are happening in the
+38:10 AI ecosystem and what do you think are
+38:11 the developments that are most
+38:12 interesting for you? Yeah. Um I mean
+38:15 costs going down are always good. Um I I
+38:17 think like one one thing to think about
+38:20 here is there are so many use cases that
+38:23 we have gotten to work 70% of the time,
+38:26 right? Um, and the Oer models have been
+38:30 incredibly helpful for us because not
+38:33 even just the O series models
+38:34 themselves, but it unlocked kind of like
+38:39 our product strategy for the next 6
+38:40 months to a year, right? Where there
+38:43 were so many systems that I don't think
+38:45 we thought that we would be able to
+38:47 build in the next year if it was just
+38:50 the GPT series models, right? And I
+38:53 think that the Oer has massively kind of
+38:56 changed that for us. And so our product
+38:59 roadmap has drastically changed because
+39:01 of that. What's an example of something
+39:02 that you couldn't do before that now you
+39:04 can do? So examples of this are like
+39:07 things that you need to do multi-step
+39:11 reasoning for and pulling from many
+39:13 sources at once. Right? So the thing
+39:15 that the O series models is really good
+39:17 at is orchestrating a plan and also
+39:21 executing on that plan. Right. So if you
+39:23 build a bunch of systems that are really
+39:25 good at basically extracting information
+39:26 from Edgar, then extracting information
+39:28 from case law, then extracting
+39:29 information from all your internal
+39:31 documents, the missing piece for us was
+39:33 what do you do once you extract all that
+39:34 information, right? Like once you have
+39:37 all of those different pieces, how do
+39:39 you combine them into the correct work
+39:41 product? That's what the O series models
+39:43 allow us to do. If Sonia had a magic
+39:47 wand and she were to wave her magic wand
+39:50 and you and Sam Albin all of a sudden
+39:53 switch places and you're now CEO of
+39:54 OpenAI and he's now CEO of Harvey. What
+39:57 would you do different at OpenAI and
+39:59 what might he do different at Harvey?
+40:02 Yeah. Well, at Harvey he'd raise more
+40:04 money.
+40:06 He is pretty good at that. He's really
+40:08 good at that. Um maybe I'll start with
+40:10 what I think OpenAI has done an
+40:12 incredible job of and I would maybe even
+40:15 double down on it more. I think that
+40:18 they have done an incredible job of
+40:20 capturing the consumer zeitgeist. So I
+40:23 am not from Silicon Valley and I don't
+40:25 have I mean now I have tons of
+40:27 colleagues here and tons of friends but
+40:28 I didn't beforehand right and almost
+40:31 none of my friends know what any AI tool
+40:33 is other than chatbt that's it right.
+40:36 Um, and I the thing that I think I would
+40:39 do differently and to be honest I think
+40:41 they are going this route anyway is just
+40:43 like put way more effort into
+40:45 productionizing that for consumers as
+40:47 much as possible. Right? So and and
+40:48 that's not just model performance at
+40:50 all. Right? So I think that still one of
+40:53 the biggest problems with chatbt and
+40:55 just kind of like all of these tools in
+40:57 general is they're looking so much on
+40:59 the performance from the model side and
+41:01 not at how do you make the experience
+41:03 easier for the user, right? How do you
+41:05 make it so that it extracts more
+41:07 information from the user? How do you
+41:08 help the user figure out what it can do
+41:10 and what it can't do? How do you help
+41:12 the user figure out how it combines with
+41:14 different pieces of information, etc.
+41:16 So, I think on on this side, it would
+41:18 just be putting more and more effort
+41:20 into understanding the consumer
+41:22 behaviors and how they use AI right now
+41:24 and making that easier for them. What
+41:27 you guys have been partner with OpenAI
+41:28 from the very beginning. what has it
+41:31 been like and how has it evolved over
+41:33 time as it's gone from kind of
+41:35 undiscovered to being you know the
+41:38 center of the universe in many ways?
+41:40 Yeah, I mean so I think the thing that
+41:43 we have kept up that has been really
+41:45 awesome for the engineers um at at
+41:48 Harvey but but also at OpenAI I think is
+41:51 we have always been working on things
+41:53 that I think a lot of companies aren't.
+41:55 And so what I mean by this is OpenAI
+41:58 would give us models all the time and
+41:60 say it performs way better on all of
+42:01 their benchmarks and we would respond
+42:03 and say sorry but it doesn't on ours
+42:05 like it's actually not better for us. Um
+42:08 and I do think that the reason our
+42:11 relationship has been so strong is we
+42:14 keep saying okay here's a model that can
+42:16 do XYZ. Uh I would like it to do XYZ and
+42:19 the rest of the alphabet too. Right? And
+42:21 that's what we're trying to do. Um, and
+42:23 so I think we've actually helped them a
+42:25 lot too with at least like applied use
+42:27 cases and how they think about post
+42:28 training and how they think about what
+42:31 are some of the things that companies
+42:33 like are really pushing to try to do,
+42:35 right? Um, and so I think that has been
+42:38 really really good for the relationship
+42:40 overall. Do you have any hot takes on
+42:42 Microsoft Open AI?
+42:44 Um,
+42:46 yeah. Um, one of the hardest things
+42:50 about being an application layer company
+42:52 is you have to bet on model providers.
+42:55 Um, and it is not like we build our
+42:58 systems so that you could kind of just
+43:00 pull out one model and replace it for
+43:02 another, but you could do pieces of
+43:04 that, right? So like we don't just use
+43:06 one model for the entire system. You'll
+43:08 build a piece that's really good at this
+43:09 and then a piece that's really good at
+43:10 this and then you'll chain them all
+43:11 together, right? Um, but the reality is,
+43:14 you know, who's in the lead changes so
+43:16 often. Um, and different models are good
+43:19 at different things, right? And you have
+43:21 another problem too where all of your
+43:23 customers or most of them I said the
+43:25 partners probably aren't using a bunch
+43:26 of AI tools, but the associates for sure
+43:29 are and the associates are using all
+43:31 these different AI tools, right? And
+43:33 so what I'm trying to say is we I think
+43:37 have done a good job where we work with
+43:38 all the model providers and we are
+43:40 constantly testing out models with all
+43:41 of them. And I think that Microsoft,
+43:44 which has, you know, such a massive
+43:46 customer base, they have to figure that
+43:48 out too, right? They have to figure out,
+43:50 oh wow, we have customers that think
+43:53 that Claude is better at certain things.
+43:54 What do we do about that, right? I mean,
+43:56 they can't really do anything about
+43:57 that, but they're like, you know,
+43:59 Mistral or whatever it is, right? And so
+44:02 I think that I think that that
+44:04 relationship is evolving as it naturally
+44:06 would. If the opportunity for Harvey is
+44:10 to revolutionize a trillion dollar
+44:12 industry and provide better access to
+44:15 justice, what is the threat? What are
+44:17 the biggest threats to Harvey?
+44:21 Um, I think not moving fast enough. I
+44:23 mean, I I I tell this to my team a lot.
+44:27 Um, and I think it's becoming very
+44:29 obvious in the past couple of months,
+44:31 too, that we're really living in a time
+44:35 when all of your timelines are
+44:37 compressed. I would argue this is in all
+44:39 of human history the most compressed
+44:41 timeline in terms of what you can change
+44:44 in the world, right? Um, and I think
+44:48 that you have to move so incredibly fast
+44:52 in order to keep up with that. And the
+44:54 speed is compounding in a couple
+44:56 different ways.
+44:57 If you are constantly moving fast, you
+45:00 are required to constantly test
+45:03 everything around you. Pay attention to
+45:05 every single every single part of your
+45:08 industry. How your c every single
+45:09 customer is using your product, how your
+45:12 subprocessors are changing their models,
+45:14 everything, right? And if you do not do
+45:18 that fast enough, you'll make a bunch of
+45:19 mistakes, I think. And you I mean you
+45:21 constantly will make mistakes, right, by
+45:23 moving very quickly. But the scariest
+45:25 mistake is you move too slowly and you
+45:29 miss a massive thing. Right? So there is
+45:32 part of a feature that someone releases
+45:35 something and you have steps 12 through
+45:37 13 complete on that feature. But that
+45:39 13th step you just cannot get the models
+45:41 to do it and somebody releases something
+45:43 that unlocks that you need to put that
+45:45 in the product immediately right because
+45:46 you need to start testing it. You need
+45:48 to see actually did it solve it etc. And
+45:51 if you aren't moving quickly and you
+45:52 just say, "Ah, that's something new.
+45:54 We'll try it out eventually." I think
+45:55 it's a huge problem. Speaking of moving
+45:57 fast, good segue into our lightning
+45:60 round. Since starting this company two
+46:02 and a half, maybe three years ago, how
+46:05 many days have you taken off? It's a
+46:07 loaded question. Uh, I have not taken a
+46:10 day off. I probably should though to be
+46:12 to be in in all
+46:14 honesty. I think like I I've definitely
+46:17 a little bit worn the you know in like
+46:20 full transparency I've worn the badge of
+46:22 honor of like you know don't take any
+46:23 time off obsession etc. And I think on
+46:26 on one side I actually very strongly
+46:28 believe in that. So going back to my
+46:30 point about the timelines being
+46:32 incredibly compressed you need to be
+46:34 obsessed right like you massively need
+46:36 to be obsessed. Um but I do also think
+46:39 the other side of that is like you need
+46:40 to transition how you are a leader like
+46:43 that needs to change. Um and you know
+46:45 our company last year we started the
+46:48 year with around 40 people. We have 260
+46:51 right now and you just need to change
+46:54 how you are spending your time right um
+46:57 and I think that I've definitely learned
+46:60 how to spend my time differently. And
+47:02 there's also stuff I've held on to and I
+47:04 actually like deeply believe in. So, one
+47:05 of the things I I deeply believe in is I
+47:08 actually think you should do part for a
+47:11 little bit of every single job at your
+47:13 startup for a little bit. Like I
+47:15 actually I did I do it too much and I
+47:17 did it for too long. But it is all most
+47:20 of my hiring mistakes have been I didn't
+47:22 understand what the role did like at
+47:24 all. And I a bunch of people told me
+47:26 what it was, but you just it doesn't
+47:29 help you hire if you don't understand
+47:31 what the actual role is. Um, and so that
+47:34 one I I feel really strongly about, but
+47:36 at the same time, I also took way too
+47:37 long to hire. Um, and I probably I was
+47:43 probably doing too many low-level things
+47:44 for too long, right? Um, and so it's a a
+47:47 combination of both of those. For those
+47:48 260 people who work at Harvey today,
+47:51 what is the best thing about working at
+47:53 Harvey and what is the worst thing about
+47:55 working at Harvey? Yeah. Um I think the
+47:58 best thing is every day something new is
+48:02 happening right um from the product side
+48:05 from the GTM side uh you'll see you know
+48:08 a bunch of changes with the model
+48:09 providers that you want to integrate
+48:10 very quickly it is ex like it is
+48:13 stimulating above all else like for sure
+48:16 um and I think we're seeing like a lot
+48:19 of impact too and it it changes too and
+48:21 I think that's if you ask folks that
+48:23 have been here for a year or a year and
+48:25 a half and there aren't tons that have
+48:26 been for a year and a half. Um the thing
+48:29 that I think is most fun for them is how
+48:31 much our market has changed, right?
+48:34 Where I mean we used to it it was brutal
+48:37 in the beginning for kind of how you do
+48:40 your sales process, the requirements
+48:42 people had and things like that. And now
+48:44 most of our customers like they
+48:46 partnering with us, right? And they're
+48:48 letting us do their onboarding. They're
+48:50 doing all of these things where it
+48:52 really has seemed like we're kind of
+48:54 this wave of all of us together. Doing
+48:56 it together. Yeah. Doing it together.
+48:58 And that that changed a lot. It there
+48:60 was a lot of push back in the beginning.
+49:02 Like a massive amount of push and
+49:03 there's still some, but I think that has
+49:05 changed pretty drastically. Um the worst
+49:07 thing is the expectations are really
+49:10 high. Um, and you know, we had a really
+49:14 good year last year and I think we we
+49:17 had our offsite recently and I went up
+49:20 to the offsite and I basically said,
+49:22 "Hey, we did a really, you know, we had
+49:24 a great year last year. This year needs
+49:26 to be like significantly better and we
+49:27 need to raise the bar." Um, and you
+49:30 know, I think that's not always what
+49:31 people want to hear. Sometimes people
+49:33 are like, "Wow, we did such a great job
+49:35 last year. Now I take it easy." Yeah,
+49:37 let's take it easy. Let's just do the or
+49:38 do the same as we did last year. and
+49:40 then it'll be fine, right? And the
+49:42 reality is, again, going back to those
+49:44 timelines being so compressed, you can't
+49:47 do that. And I think that the the main
+49:50 thing I I ask people is basically, look,
+49:53 like I don't know what your goal is. I
+49:55 don't know if your goal is to make the,
+49:57 you know, a large industry change to
+49:59 learn as much as you can, make money,
+50:02 whatever it is, your options to do that
+50:06 in the next decade is the best it will
+50:08 ever be. like it it just is right. What
+50:11 you will make more impact than you ever
+50:13 will have the chance to in your life.
+50:16 How have you changed as a CEO and what
+50:18 prior have you updated the most?
+50:21 Yeah. Um
+50:24 uh hopefully I've changed somewhat. Um I
+50:28 I think the so the the prior that I've
+50:31 updated the most is teach not do. Like
+50:35 I'm I'm bad at that. um because I I kind
+50:39 of want things done so quickly. I have a
+50:42 massive problem of whenever I start
+50:44 seeing friction, I just go, "Okay, I'm
+50:45 going to go do it." Right? And and
+50:47 that's actually really really bad. Um I
+50:50 think it it makes it so other folks
+50:51 can't learn, it makes it so that it is
+50:54 kind of like too top down, right? And
+50:57 it's something I'm working on a lot and
+50:59 I think I've gotten better at it
+51:00 hopefully. Uh you can ask my direct
+51:02 reports. I'm not sure if I have, but I I
+51:04 think I have. And I think that that's
+51:06 the area that I want to keep getting
+51:08 much better at is taking kind of, you
+51:11 know, slowing down in some instances and
+51:13 actually like setting oursel up to
+51:15 scale. Um, instead of everything being
+51:18 like go fix that, fix that, fix that,
+51:20 fix that. Um, yeah. Who's a better
+51:24 athlete, you or your co-founder Gabe?
+51:26 Oh, Gabe is a much better athlete than I
+51:28 am. I mean, it's it's really unfair. So,
+51:31 he he played professional soccer. Um,
+51:33 and he is just a much much better
+51:35 athlete. But he had a knee injury
+51:37 recently and I will say I do a little
+51:40 bit like we live together and every
+51:43 morning like I'll get up to go to go to
+51:45 the gym and I definitely slam the door
+51:47 like a little bit loudly just so he
+51:49 knows that I'm going to the gym and he
+51:51 can't quite yet. I got it like we we met
+51:55 each other uh before this and we and we
+51:57 were we like became best friends and had
+51:59 no plans of doing a startup. Um, and he
+52:01 was just like always a better athlete
+52:03 than me. And so this is my like revenge
+52:05 a little bit. It's not gonna last long.
+52:07 He's healing right now. And so he's
+52:08 probably right now working out and
+52:09 getting better. All right, last
+52:11 question. I'm going to steal the last
+52:12 question from Guy Ros. I don't know if
+52:13 you ever listen to his uh his show How I
+52:15 Built This, but he has the same last
+52:17 question every time, which is how much
+52:19 of your success has been luck and how
+52:22 much of your success has been skill?
+52:26 Um, it depends how you define luck. Um
+52:29 we have been in a place where we have
+52:32 the options to apply skill and we have
+52:36 the leverage to apply skill and if you
+52:39 apply it correctly enough times to
+52:42 actually have a large impact from that.
+52:44 And so the luck is the timing. The luck
+52:46 is do you actually have the option to
+52:48 make a difference to make an an impact.
+52:50 And actually I think you were we were
+52:53 kind of asking earlier about what have I
+52:55 learned as a as a CEO. One of the things
+52:57 that I I think I've actually tripled
+52:59 down on, quadrupled down on is young
+53:01 talent, like by far. Um, and that goes
+53:05 back to giving them the luck or the
+53:08 opportunity to actually try something
+53:10 they've never done before. It works out
+53:12 really well and like they don't get it
+53:14 right every time and but I don't either,
+53:16 right? But you adjust really fast and
+53:19 their ability to adjust I think is
+53:22 better than a lot of folks that have
+53:23 been doing this for a long time. And so
+53:26 maybe the the best way to phrase that is
+53:28 their skill is their ability to adjust
+53:31 to luck and seize luck opportunities
+53:34 more than anything else. I like it
+53:37 Winston. Thank you so much. Yeah, thank
+53:38 you.

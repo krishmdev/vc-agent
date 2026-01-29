@@ -1,0 +1,533 @@
+00:02 So now we're welcoming Sonia Hang for
+00:04 our next panel on open source with Dimma
+00:09 from Fireworks. We got Alex At It Atala
+00:11 from Openrooder and of course Captain
+00:14 Jeffrey Morgan from Olama to talk about
+00:17 the other side of the equation, the open
+00:19 source future that you all can use and
+00:21 plug into your products and adopt today.
+00:23 Please welcome them to the stage.
+00:30 Thank you. Uh, Alex, Dimma, Jeff, thank
+00:33 you so much for joining us. We heard
+00:35 Jensen speak this morning with an
+00:36 impassioned plea for the importance of a
+00:39 thriving open-source model ecosystem.
+00:42 And I think everyone in this room is
+00:43 fully aligned behind that vision. So,
+00:45 I'm delighted that we have this panel
+00:46 today. Uh, let's do a first quick first
+00:50 round of intros. Um, maybe say your name
+00:52 and then what your company does in a
+00:53 sentence or two. Hi, I'm Jeff. Thanks
+00:56 for having me. Um uh I'm a founder of
+00:58 Olama. It's the easiest way to get up
+01:00 and running with uh open-source
+01:04 LLMs and uh that's me. Yeah. Hi, I am
+01:09 Dimma. I'm co-founder of Fireworks and
+01:11 you heard from uh my co-ounder Lynn this
+01:13 morning also in the presentation. And
+01:15 yeah, Fireworks is as you heard in the
+01:17 morning is a best place to build and
+01:20 scale this generative AI. So we help you
+01:23 to fine-tune and serve models at really
+01:25 fast and large scale and obviously we
+01:27 are very big proponents of open source
+01:29 models because that's that's what we're
+01:31 doing this and yeah I'm passing to Alex
+01:34 we are happy to be one of the providers
+01:36 on open router
+01:38 too. I'm Alexa CEO and co-founder of
+01:41 open router. We're a language model
+01:43 router and marketplace. Uh a way to just
+01:46 have one service that gives you the best
+01:49 pricing, performance, and uptime for
+01:51 models. And we work closely with uh a
+01:54 lot of different providers, but in a
+01:56 very big way with fireworks that to make
+01:58 that happen. Great. Okay. Let's start
+02:01 with the problem statement that Jensen
+02:02 framed for us this morning. Some of the
+02:04 fear-mongerers in the ecosystem are
+02:06 pushing to have open source models
+02:08 heavily regulated or banned. Um
+02:10 obviously the people in this panel
+02:12 probably don't agree with that. Um you
+02:14 guys are the champions of the open
+02:15 source ecosystem. Like what would you
+02:17 say? How would you make the case for uh
+02:19 the importance of open source?
+02:26 I um you know I think like a fundamental
+02:29 principle behind open source is that
+02:33 human genius can still come from
+02:35 anywhere around the world and that uh
+02:38 centralizing it behind model labs is
+02:41 very risky and it's not it's not a it's
+02:44 not as good of a bet it's not as high
+02:46 leverage of a bet as allowing genius to
+02:48 come from anywhere and what I think like
+02:51 language models and and uh generative of
+02:54 AI unlocks is for the ability for
+02:58 somebody with uh access to unique
+03:01 intelligence that can't be found
+03:02 anywhere else to create a a a service
+03:07 that generates it uh on demand when
+03:10 anyone wants and we're just going to I
+03:13 think we're in a period right now where
+03:14 open source is not winning there it's uh
+03:17 compared to closed source it's about 20
+03:19 to 30% of our inference in terms of
+03:22 tokens used uh but um and and it's also
+03:26 like a lastmile optim optimization for a
+03:30 lot of companies or like you have one
+03:32 customer that just like refuses to work
+03:34 with some closed source model provider
+03:36 and you want to serve them anyway. Um,
+03:39 but I think like the fact that it's
+03:41 transparent and the fact that uh it's
+03:43 very very high leverage compared to
+03:44 closed source models means that when
+03:46 like the young kids of today grow up
+03:49 like really thinking about uh
+03:52 state-of-the-art machine learning on the
+03:54 edge, they're just going to make
+03:55 something open source before they make
+03:57 something closed source because they
+03:58 won't be able to work at a model lab.
+04:00 Um, and then we'll start seeing really
+04:02 wild things develop. If I can add, I
+04:05 mean it's a question of practicality. So
+04:07 on two fronts, one is um a lot of the
+04:10 open source models are deployed on
+04:12 non-data center hardware and so it ends
+04:15 up the customer has access to it
+04:17 anyways. For a consumer there's a
+04:19 question, well if you're going to
+04:20 distribute the model on their device,
+04:21 how hard is it for them to realistically
+04:23 access it. Um kind of like you know
+04:26 maybe Photoshop in the old days or how
+04:28 operating systems are increasingly um
+04:30 free for consumers. Um, and often these
+04:32 models aren't fully open in the sense of
+04:34 the data and the training and the paper,
+04:36 but the weights are there. And so if
+04:38 you're downloading the model anyways,
+04:39 you're kind of getting the weights on
+04:40 the enterprise front. Um, when a lot of
+04:43 these enterprises are really excited
+04:44 about customizing the model and if you
+04:48 know these things are banned, um, but
+04:50 enterprises still want this. There's
+04:51 probably a way that that could still
+04:53 work. Um, but then you'd be asking,
+04:55 well, the the customer wouldn't, you
+04:57 know, really own the entire result. And
+04:59 from what we've learned, that's really
+05:00 important for customers that when they
+05:02 fine-tune or train or distill a model
+05:04 with their own data that they own the
+05:05 entire model, not some, you know, I
+05:07 don't know, piece of it. Uh, and so
+05:09 those are two kind of practical
+05:10 questions that I think we'd have to work
+05:11 through if that is the case.
+05:14 And to add to that, uh, I mean,
+05:16 basically, if you view AI as like
+05:18 general purpose technology, right, even
+05:20 from global kind of benefiting the
+05:22 society, like you can try to regulate
+05:24 electricity or something, right? like
+05:26 you can try to regulate applications and
+05:28 like distribution how the market work
+05:29 but like you shouldn't ban the basic
+05:31 technology and I feel from that
+05:33 perspective it's just from like
+05:34 developing of scientific progress it's
+05:36 useful and uh yeah to the point of
+05:38 customization we also see like a lot of
+05:40 people like wanting to customize and
+05:42 tune and like actually build AI first
+05:43 products and that's where like the same
+05:46 argument for like open source software
+05:47 like you want if it's a core part of
+05:49 your product you want to customize it
+05:50 you want to control it you want to be
+05:51 basically in actually on that note show
+05:54 of hands who here uses open models in
+05:56 their in their production stacks today.
+05:58 Okay, good amount of the crowd. Um,
+06:00 Alex, I want to pull on the thread that
+06:02 you mentioned earlier, which is that the
+06:03 open source models are or the open
+06:05 models are behind right now. Say more
+06:07 about that dynamic and how do you think
+06:08 that'll play out?
+06:12 So right now I I mean I see most of the
+06:15 large model labs trying to build more
+06:18 more general powerful foundation models
+06:22 that you need to fine-tune less and that
+06:25 work for more use cases. Um, I kind of
+06:28 if I were to make a prediction now, I'd
+06:29 think that fine-tunes are maybe going to
+06:32 have a weak moment in the next year or
+06:35 so as these powerful RL models scale up
+06:40 and f like the the marginal benefit you
+06:42 get from fine-tuning gets outweighed by
+06:44 the obsolescence risk from doing so. But
+06:50 um we're just still at the very
+06:52 beginning, as everybody today has said,
+06:55 of a massive wave of adoption where just
+06:57 most businesses still haven't even tried
+06:59 anything. And when that wave is further
+07:03 along, um I I expect a very similar
+07:06 thing to happen that happened with
+07:08 software where people just want
+07:10 transparency and they want
+07:11 customizability. And then we might see
+07:14 like I don't know if it'll be called
+07:15 fine-tuning in that future, but we may
+07:18 see some like it has to be open source
+07:20 type customization arrive that uh that
+07:23 only the that the open source community
+07:25 will land on probably first. And who do
+07:28 you think will be the stalwart of that
+07:29 kind of frontier foundation model uh
+07:32 providing? In the past it was it was
+07:34 meta for a long time with llama. Before
+07:36 that I remember mistrol was big. So,
+07:38 one, I'm curious what h what you think
+07:39 happened to Mistrol. Uh, right now it
+07:42 seems like DeepSeek is is all the rage.
+07:45 Um, but who do you think will be kind of
+07:47 the research labeconomic engine tied to
+07:50 it that will be driving a lot of the
+07:51 kind of frontier development on the open
+07:53 side?
+07:55 Question for any of you. I think it's
+07:57 kind of hard to predict because there
+07:58 are a lot of factors involved. Like the
+07:60 magic of open source is that you
+08:02 basically need like at least one player
+08:03 at any given time to release a good
+08:05 model, right? Uh, to build upon. So I
+08:07 think you know the leader might change
+08:08 in this the space but like the over
+08:11 overall kind of marketing industry will
+08:13 continue. I think what's common with
+08:15 deepseek and you know the Quinn models
+08:18 from Alibaba and L and the Llama models
+08:21 from Meta is each of those companies is
+08:23 seeking to solve a problem that's not
+08:25 just distributing the model and selling
+08:27 it. Um you may have seen Meta's app they
+08:30 launched this week which is a social
+08:31 network effectively. Um and um from
+08:34 spending some time with the model
+08:35 builders in China, they are also looking
+08:38 to solve the next great consumer app or
+08:40 consumer use case. And so on the way to
+08:43 that, they're kind of just open sourcing
+08:45 these models. And so you know, I think
+08:47 with DeepSeek, what we happen to see was
+08:49 they happen to along that path to that
+08:51 because they have no reason to keep
+08:52 these things closed source. They get
+08:54 more feedback if they open source it um
+08:56 that they can open source along the way
+08:58 and they end up open sourcing something
+08:60 great. I think it was pretty difficult
+09:01 to predict the deepseek moment that
+09:03 happened in January. Let's talk more
+09:05 about the deepseek moment. How how did
+09:07 this happen? And you know we have Zuck
+09:10 throwing lots of compute at Llama. Um
+09:13 how did we get to the point where you
+09:15 know a Chinese model uh was was top of
+09:17 the top of the leaderboards but also
+09:19 more importantly top of developers minds
+09:21 in the open source world?
+09:25 Well, I mean I think like from model
+09:28 itself like they did like really good
+09:31 engineering. I think like one thing
+09:32 which you know we heard also a lot from
+09:34 like some previous presentations like
+09:36 small teams can move really fast and
+09:37 like you kind of need to integrate
+09:39 research and like engineering systems
+09:41 engineering aspects to like train a
+09:43 great LM and I think that's that's
+09:44 something which they did really well and
+09:47 yeah sometime sometimes it's harder to
+09:49 do in bigger settings.
+09:53 I think there was a combination of a
+09:55 couple of things. One is that um it was
+09:58 it was very good open source reasoning
+10:01 model. We hadn't had one yet. Two, there
+10:04 was a UX innovation where you could see
+10:07 the thoughts come out of the model which
+10:10 you could not do with with 01. And uh
+10:14 and there were all sorts of just light
+10:16 bulb moments that the community had by
+10:18 doing that. And it also just felt more
+10:20 transparent. So, it jived very well with
+10:22 with the open-source brand that DeepS's
+10:24 trying to build. Um, and and
+10:29 three, they couldn't handle the
+10:32 inference. So, their their servers were
+10:34 just completely toast. You couldn't even
+10:36 pay them. They like blocked the payments
+10:38 on their on their website. And so,
+10:41 American companies were forced to figure
+10:42 out how to scale this up. And like
+10:45 Fireworks did an incredible job. um
+10:47 captured most of the inference I think
+10:49 in the early times as far as our metrics
+10:51 told us and uh and and we saw not just
+10:56 like American companies get really
+10:58 interested but also decentralized
+11:00 inference providers finally uh have a
+11:04 model that they could run that people
+11:06 actually wanted and we saw wild
+11:09 explosion there that I think most people
+11:12 in the AI space still aren't aware of.
+11:15 Dimma, can you give us and not to turn
+11:17 this into a fireworks advertisement,
+11:18 which we do not want to do, but give us
+11:20 a sense of, you know, what you guys did
+11:21 to optimize the model to to make it work
+11:23 so well. And I'm curious some of the
+11:25 nuances of, you know, I heard I I read
+11:27 that, for example, Perplexity fine-tuned
+11:29 or post-tuned um R1 to remove some of
+11:32 the uh
+11:34 uh distinct elements to that model. Um
+11:37 say say more about anything you can say
+11:39 about that.
+11:40 Um I mean so first of all like on
+11:42 scaling yeah tense for call out but yeah
+11:45 uh basically on scaling I mean the model
+11:47 itself is like it was first like really
+11:49 big like successful open source mixture
+11:51 of experts models I mean now llama is
+11:53 also a mixture of experts when like bigw
+11:56 etc. Uh with mixture of experts there's
+11:57 like a lot of interesting infrastructure
+11:59 problems how how to scale that well
+12:01 because you kind of go into like
+12:03 multiGPU multi multi- server kind of
+12:05 distributed inference and that's
+12:06 something which we do really well. So
+12:08 there's a lot of interesting engineering
+12:09 kind of which went to that just so your
+12:11 servers don't melt down and you don't
+12:12 you don't have to turn down customers
+12:14 and as as you said like we kind of saw
+12:17 crazy growth from like from Christmas
+12:18 day when it was released like maybe like
+12:20 few weeks for people to kind of realize
+12:22 and catch up and like we saw a lot of
+12:23 growth from existing customers and new
+12:25 customers in kind of usage. Um yeah I
+12:27 mean to your question about kind of
+12:29 distinctive elements yeah like I think
+12:31 perplexity and some other folks did
+12:32 great job kind of fine tuning it for
+12:35 particular behaviors. We also saw a lot
+12:37 of other customers actually doing fine
+12:40 tuning of deepseek in particular for
+12:41 different uh for different tasks. Uh so
+12:44 it's like it's really good kind of
+12:45 pre-training based model and you can
+12:47 morph like what you want to want to what
+12:49 to get to uh to get into and yeah kind
+12:52 of your previous point about you know
+12:54 kind of fearongering about that stuff
+12:57 like in in many I mean in many use cases
+12:59 it kind of doesn't apply directly right
+13:00 like you actually want to focus on like
+13:02 some particular business use case like
+13:03 this kind of like sensitive elements
+13:05 which like people post online like they
+13:07 just don't come up in products in
+13:09 product questions like if somebody asks
+13:10 you like that use model that use case
+13:12 about politics don't actually want to
+13:14 get any answer, right? Like you want to
+13:16 stick it to like narrow business use
+13:17 case and yeah like fine tuning kind of
+13:19 customization of particular for
+13:21 particular business use cases like works
+13:22 really well for those for those things.
+13:26 Great. What are your thoughts on llama 4
+13:29 and where do you think it goes from
+13:30 here? Like would you would you
+13:32 hypothesize that we end up with with
+13:34 llama leaprogging back over deepseek?
+13:39 There is good chance for that and we
+13:40 definitely hope
+13:42 so. But uh yeah I think I I mean I think
+13:45 fundamentally like all the ingredients
+13:46 are there right there is like high level
+13:48 commitment there is like amazing people
+13:51 working in meta and there's like a lot
+13:52 of compute so yeah I think there are
+13:54 some things which got maybe didn't go
+13:57 ideal in the in the current release and
+13:59 some of that might actually go with like
+14:01 benchmarking I mean I think the public
+14:03 general like benchmarking of LLMs right
+14:05 now is kind of reaching the peak point
+14:07 it's really hard to evalate what is good
+14:08 and what is uh what is bad but I think
+14:10 like fundamental ingredients are there
+14:13 Yeah, hopeful for Llama next. Yeah, I
+14:16 think there's, you know, I mean, there
+14:18 was three when they announced it on
+14:19 Saturday morning. Um, there was the
+14:21 Behemoth and the two models they
+14:23 released, Scout and Maverick. And then
+14:24 this week, Mark talked about, you know,
+14:27 Little Llama or the a smaller one, which
+14:29 this was the first release of Llama that
+14:31 didn't have that. And, you know, a lot
+14:33 of the feedback at the event was that
+14:34 customers wanted that. I mean, that was
+14:36 one of the value propositions of Llama.
+14:38 And so I wouldn't count them out because
+14:40 they have the biggest model and then
+14:42 they have the most usable I guess model
+14:45 that aren't out yet. And one of the
+14:47 things that really that I think Deep
+14:49 Seek did really well is they obviously
+14:52 had this massive model open sourced um
+14:54 and then they hosted it for a really
+14:55 cheap price free for most consumers. Um,
+14:57 but they also released these
+14:58 distillations and I think that, you
+15:01 know, from a practical standpoint of
+15:02 adoption was really powerful and I
+15:04 think, you know, what happened with
+15:06 Llama 4 was kind of the opposite of
+15:08 that. Um, but I think in future releases
+15:11 could could could resemble that and it
+15:13 could be even much more powerful. Uh,
+15:15 Mark's got the ingredients right of of a
+15:17 ton of resources, but also, you know,
+15:19 he's solving kind of this problem of how
+15:20 does he how does he grow Meta's business
+15:22 with this? um which may not be selling
+15:24 the model directly and may be actually
+15:26 using it in their consumer applications.
+15:28 And so that feels a lot like the kind of
+15:30 ingredients we had for DeepSeek. Um but
+15:32 it's hard to know these
+15:34 things. I would just add that it's kind
+15:36 of all about learning rate for a lot of
+15:39 open source and like you know a lot of
+15:42 learnings happen I think for Llama 4. Um
+15:45 it sounds like they're taking them into
+15:47 account. Um reward hacking and like the
+15:50 you know like leaderboard type
+15:53 benchmarks. I think we'll have to adjust
+15:55 and we'll have to get better at
+15:56 evaluating models to avoid reward
+15:59 hacking. Okay, we're going to end with
+16:01 one last question and this is a
+16:03 quantitative question. I am not as slido
+16:06 proficient as my colleague Constantine
+16:08 but uh if you had to predict in five
+16:10 years time what percentage of inference
+16:12 tokens will be running through closed
+16:13 versus open source models.
+16:18 It's a really hard question uh for two
+16:20 reasons. I'd say 50/50 because there's a
+16:23 ton of great research on this I think um
+16:26 uh you know two great examples of that.
+16:28 One of them is route LLM that talks
+16:29 about using an open source model with a
+16:31 big model and switching between the two.
+16:33 There's the Minions project out of
+16:34 Stanford where it actually uses them in
+16:36 combination. Um and so and that
+16:40 primarily the workload runs on the small
+16:42 model. Um and so I think we're going to
+16:44 see a lot of uh work being done in the
+16:46 routing routing layer. So I it's hard to
+16:48 know but probably 50 that's my bet. I
+16:52 mean I think it's hard to give exact
+16:53 numbers. So I would probably go like
+16:55 also with 50/50. But I think what if you
+16:57 were to plot the most used models uh
+16:59 overall I think like on closers it might
+17:02 be still like a few leading players with
+17:03 like you know maybe like a quarter
+17:04 overall going through company X or
+17:06 whatever. I think on open source it
+17:08 would be like it would be not a single
+17:10 model it would be like much more
+17:11 families and like ventions and
+17:13 customizations and yeah like earlier
+17:15 question about like open source versus
+17:16 closed source. I think like one scenario
+17:18 where if the gains were coming only from
+17:20 pre-training I think actually closed
+17:22 source had like kind of advantage
+17:23 because yeah you need to just keep
+17:25 building those trillion dollar data
+17:26 centers or whatever. Uh we heard a lot
+17:28 today about switching from like
+17:30 pre-training to uh to kind of
+17:32 postraining and RL and like the
+17:34 interesting part there is that like you
+17:37 the like the recipe is kind of working
+17:40 right and you can apply to many problems
+17:42 and still like if you want to try to
+17:43 build the model which is good for
+17:44 everything you need to spend a lot of
+17:46 compute to like train it all the
+17:48 possible problems but if you're take a
+17:50 kind of customization hat you can spend
+17:52 maybe less compute and but use your
+17:55 unique data and unique unique way of
+17:57 like how So which problem you're
+17:58 actually trying to uh address like what
+18:00 what are the rights what is the right
+18:02 kind of problem formulation and aerial
+18:03 environment formulation uh to get like
+18:05 this maybe less capital investment to a
+18:07 really good results and I think given
+18:10 this shift I actually think that like
+18:11 yeah open source will grow kind of
+18:13 overall overall as a fraction even if
+18:15 not there won't be like single
+18:17 necessarily a single model which like
+18:18 will dominate everything more than 50%.
+18:21 Alex, what about you?
+18:24 Five years is ages. I think I think like
+18:28 if
+18:29 uh des uh decentralized providers don't
+18:33 happen or can't happen sustainably then
+18:37 um I tend to be on the side of maybe
+18:41 closed source being more than majority
+18:44 um and you know until something like
+18:46 that happens is just like my view right
+18:50 now. If providers figure out how to
+18:53 decentralize, then I think that changes.
+18:55 And I know like decentralization is not,
+18:58 you know, a hot part of the AI space
+19:01 right now, but I do think it completely
+19:04 changes the dynamics and it allows it
+19:07 basically ties AI a little bit with like
+19:10 a financial system that kicks off a cold
+19:12 start flywheel and helps new people
+19:15 serve traffic. Um, and there like all
+19:18 the existing players right now are are
+19:21 very new. Some of them have wild
+19:22 incentives like one that we route to is
+19:25 earning like 360k per day in incentives
+19:29 and uh it's a big question just whether
+19:31 they're going to be sustainable. Okay,
+19:33 crypto guy uh bringing the economic
+19:35 engine to decentralization. Love it. Um,
+19:38 Alex, Dimma, Jeff, thank you so much for
+19:40 doing this today. Thank you.

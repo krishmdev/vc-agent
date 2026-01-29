@@ -1,0 +1,3931 @@
+00:00 it's so early on that like it's so early
+00:03 
+
+00:03 on there's so much to be built yeah like
+00:06 
+
+00:06 you know GPT 5 is going to come out and
+00:08 
+
+00:08 it'll probably make some of the things
+00:10 
+
+00:10 you did not relevant but you're going to
+00:12 
+
+00:12 learn so much along the way and this is
+00:16 
+
+00:16 I strongly strongly believe like a
+00:18 
+
+00:18 transformative technology and so the
+00:20 
+
+00:20 more that you learn about it the better
+00:29 
+
+00:29 [Music]
+00:34 
+
+00:34 [Music]
+00:39 
+
+00:39 hi and welcome to training data we have
+00:41 
+
+00:41 with us today Harrison Chase founder and
+00:43 
+
+00:43 CEO of Lang chain Harrison is a legend
+00:45 
+
+00:45 in the agent ecos system as the product
+00:47 
+
+00:47 Visionary who first connected llms with
+00:49 
+
+00:49 tools in action and Lang chain is the
+00:51 
+
+00:51 most popular agent building framework in
+00:53 
+
+00:53 the AI space today we're excited to ask
+00:55 
+
+00:55 Harrison about the current state of
+00:57 
+
+00:57 Agents the future potential and the path
+00:59 
+
+00:59 ahead
+01:01 
+
+01:01 Harrison thank you so much for joining
+01:03 
+
+01:03 us and welcome to the show of course
+01:05 
+
+01:05 thank you for having me uh so maybe just
+01:08 
+
+01:08 to set the stage agents are the topic
+01:10 
+
+01:10 that everybody wants to learn more about
+01:12 
+
+01:12 and you've been at the the epicenter of
+01:15 
+
+01:15 agent building pretty much since the llm
+01:17 
+
+01:17 wave first got going and so maybe first
+01:20 
+
+01:20 just to set the table what exactly are
+01:23 
+
+01:23 agents I think defining agents is
+01:26 
+
+01:26 actually a little bit tricky and people
+01:28 
+
+01:28 probably have different definitions of
+01:30 
+
+01:30 them um which I think is pretty fair
+01:32 
+
+01:32 because it's still pretty early on in
+01:34 
+
+01:34 the life cycle of everything llms and
+01:37 
+
+01:37 agent related the way that I think about
+01:39 
+
+01:39 agents is that it's when an llm is kind
+01:42 
+
+01:42 of like deciding the control flow of an
+01:45 
+
+01:45 application um so what I mean by that is
+01:48 
+
+01:48 if you have a more traditional kind of
+01:50 
+
+01:50 like rag chain or retrieval augmented
+01:52 
+
+01:52 Generation chain the steps are generally
+01:54 
+
+01:54 known ahead of time first you're going
+01:55 
+
+01:55 to maybe generate a search query then
+01:57 
+
+01:57 you're going to retrieve some documents
+01:59 
+
+01:59 then you're going to generate an answer
+02:00 
+
+02:00 and you're going to return that to a
+02:01 
+
+02:01 user and it's a very fixed sequence of
+02:03 
+
+02:03 events um and I think when when I think
+02:06 
+
+02:06 about things that start to get agentic
+02:08 
+
+02:08 it's when you put an llm at the center
+02:10 
+
+02:10 of it and let it decide what exactly
+02:12 
+
+02:12 it's going to do so maybe sometimes it
+02:14 
+
+02:14 will look up a search query other times
+02:16 
+
+02:16 it might not it might just respond
+02:17 
+
+02:17 directly to the user um maybe it will
+02:19 
+
+02:19 look up a search query get the results
+02:21 
+
+02:21 look up another search query look up two
+02:23 
+
+02:23 more search queries and then respond and
+02:25 
+
+02:25 so you kind of have the llm deciding the
+02:26 
+
+02:26 control flow um I I I think there are
+02:29 
+
+02:29 some other maybe more buzzwordy things
+02:32 
+
+02:32 that fit into this so like tool usage is
+02:35 
+
+02:35 often uh associated with agents and I
+02:38 
+
+02:38 think that makes sense because when you
+02:39 
+
+02:39 have an LM deciding what to do the main
+02:41 
+
+02:41 way that it decides what to do is
+02:43 
+
+02:43 through tool usage um so it's so so I
+02:46 
+
+02:46 think those kind of go hand in hand um
+02:49 
+
+02:49 there's some aspect of memory that's
+02:50 
+
+02:50 commonly associated with agents and I
+02:52 
+
+02:52 think that also makes sense because when
+02:54 
+
+02:54 you have an llm deciding what to do it
+02:56 
+
+02:56 needs to remember what it's done before
+02:59 
+
+02:59 um
+03:00 
+
+03:00 and so like tool usage and memory are
+03:02 
+
+03:02 kind of like loosely associated but to
+03:04 
+
+03:04 me when I think of an agent it's really
+03:06 
+
+03:06 having an llm decide the control flow of
+03:09 
+
+03:09 of your
+03:10 
+
+03:10 application and Harrison a lot of what I
+03:13 
+
+03:13 just heard from you is around decision
+03:14 
+
+03:14 making and I've always thought about
+03:16 
+
+03:16 agents as as sort of action taking uh do
+03:19 
+
+03:19 those two things go hand inand is
+03:21 
+
+03:21 agentic behavior more about one versus
+03:23 
+
+03:23 the other how do you think about
+03:25 
+
+03:25 that I think they go hand in hand I
+03:27 
+
+03:27 think like a lot of what we see agents
+03:29 
+
+03:29 doing is deciding what actions to take
+03:32 
+
+03:32 um for for all intents and purposes um
+03:35 
+
+03:35 and I think the big uh difficulty with
+03:39 
+
+03:39 action taking is deciding what the right
+03:43 
+
+03:43 actions to take are um so I do think
+03:45 
+
+03:45 that solving one kind of leads naturally
+03:48 
+
+03:48 to the other and after you decide the
+03:50 
+
+03:50 action as well there's generally the
+03:51 
+
+03:51 system around the llm that then goes and
+03:54 
+
+03:54 executes that action and and kind of
+03:56 
+
+03:56 like feeds it back into the agent um so
+03:59 
+
+03:59 so I think that in yes so I do think
+04:01 
+
+04:01 they go kind of hand in hand so Harrison
+04:03 
+
+04:03 it seems like the main distinction then
+04:05 
+
+04:05 uh between an agent and something like a
+04:07 
+
+04:07 chain is that the llm itself is deciding
+04:10 
+
+04:10 what step to take next what action to
+04:12 
+
+04:12 take next as opposed to these things
+04:14 
+
+04:14 being hardcoded is that like a fair way
+04:15 
+
+04:15 to distinguish
+04:17 
+
+04:17 agentes yeah I think that's right and
+04:19 
+
+04:19 there's different gradients as well so
+04:21 
+
+04:21 as like an extreme example you could
+04:23 
+
+04:23 have basically a router that decides
+04:26 
+
+04:26 between which path to go down and so
+04:28 
+
+04:28 there's maybe just like a classification
+04:29 
+
+04:29 step in in your chain and so the lm's
+04:32 
+
+04:32 still deciding like what to do but it's
+04:34 
+
+04:34 a very simplistic way of deciding what
+04:36 
+
+04:36 to do um and you know at the Other
+04:38 
+
+04:38 Extreme you've got these autonomous
+04:39 
+
+04:39 agent type things and then there's this
+04:41 
+
+04:41 whole Spectrum in between so I'd say
+04:43 
+
+04:43 that's largely correct although I'll
+04:44 
+
+04:44 just note that there's a bunch of nuance
+04:46 
+
+04:46 in gray area as there is with most
+04:48 
+
+04:48 things in the llm space these days got
+04:51 
+
+04:51 it it's like a spectrum from control to
+04:54 
+
+04:54 like fully autonomous decision making
+04:55 
+
+04:55 and logic um all those are kind of the
+04:57 
+
+04:57 spectrum of Agents interesting
+05:00 
+
+05:00 uh what role do you see Lang chain
+05:02 
+
+05:02 playing in the agent
+05:04 
+
+05:04 ecosystem I think um right now we're
+05:07 
+
+05:07 really focused on making it easy for
+05:10 
+
+05:10 people to create something in the middle
+05:12 
+
+05:12 of that Spectrum um and for a bunch of
+05:15 
+
+05:15 reasons we've seen that that's kind of
+05:17 
+
+05:17 the best spot to be building agents in
+05:19 
+
+05:19 at the moment um so we've seen uh some
+05:22 
+
+05:22 of these more fully autonomous things
+05:24 
+
+05:24 get a lot of interest and and prototypes
+05:28 
+
+05:28 out the door and and and there's a lot
+05:29 
+
+05:29 of benefits to the fully autonomous
+05:31 
+
+05:31 things they actually quite simple to
+05:33 
+
+05:33 build um but we see them going off the
+05:35 
+
+05:35 rails a lot and we see people wanting
+05:37 
+
+05:37 more constrained things um but a little
+05:40 
+
+05:40 bit more flexible and powerful than
+05:41 
+
+05:41 chains um and so a lot of what we're
+05:43 
+
+05:43 focused on recently is the being this
+05:46 
+
+05:46 orchestration layer that enables the
+05:48 
+
+05:48 creation of these agents particularly
+05:50 
+
+05:50 these things in the middle between
+05:52 
+
+05:52 chains and autonomous agents um and I
+05:55 
+
+05:55 can dive into a lot more about what uh
+05:57 
+
+05:57 exactly we're doing there but at a high
+05:58 
+
+05:58 level that's that being that piece of
+06:01 
+
+06:01 orchestration uh uh framework is is kind
+06:03 
+
+06:03 of where we imagine Lang chain sitting
+06:06 
+
+06:06 got it so there chains there's
+06:08 
+
+06:08 autonomous agents there's a spectrum in
+06:10 
+
+06:10 between and your sweet spot is somewhere
+06:11 
+
+06:11 in the middle enabling people to build
+06:13 
+
+06:13 agents yeah and obviously that's changed
+06:15 
+
+06:15 over time so it's fun to like reflect on
+06:17 
+
+06:17 the evolution of Lang chain um so you
+06:20 
+
+06:20 know I think when Lang chain first
+06:22 
+
+06:22 started it was actually a combination of
+06:25 
+
+06:25 chains and then we had this one class
+06:27 
+
+06:27 this agent executor class which was
+06:29 
+
+06:29 basically this agent thing and we
+06:31 
+
+06:31 started adding in like a few more
+06:32 
+
+06:32 controls to that class um and but
+06:36 
+
+06:36 eventually we realized that people
+06:38 
+
+06:38 wanted way more flexibility and control
+06:40 
+
+06:40 than we were giving them with that one
+06:41 
+
+06:41 class so like recently we've been really
+06:42 
+
+06:42 heavily invested in Lang graph which is
+06:45 
+
+06:45 an extension of Lang chain that's really
+06:46 
+
+06:46 aimed at like customizable agents that
+06:48 
+
+06:48 sit somewhere in the middle and so kind
+06:50 
+
+06:50 of like our Focus you know has has
+06:52 
+
+06:52 evolved over time as as the space has as
+06:55 
+
+06:55 well fascinating maybe maybe one more
+06:58 
+
+06:58 final kind of setting the stage question
+07:00 
+
+07:00 um one of our our core beliefs is that
+07:03 
+
+07:03 agents are the next big wave in AI um
+07:06 
+
+07:06 and that we're moving as an industry
+07:08 
+
+07:08 from from co-pilots to agents I'm
+07:11 
+
+07:11 curious if you agree with that take um
+07:13 
+
+07:13 and and why why
+07:14 
+
+07:14 not yeah I I generally G with that take
+07:17 
+
+07:17 I think um The Reason Why That's so
+07:20 
+
+07:20 exciting to me is that a co-pilot still
+07:22 
+
+07:22 relies on having this human in the loop
+07:25 
+
+07:25 and so there's a little bit of almost
+07:27 
+
+07:27 like an upper bound on the amount of
+07:29 
+
+07:29 work that you can have done by an
+07:31 
+
+07:31 external kind of like uh by another
+07:34 
+
+07:34 system um and and so it's a little bit
+07:37 
+
+07:37 limiting in in that sense I do think
+07:39 
+
+07:39 there's some really interesting thinking
+07:41 
+
+07:41 to be done around what is the right ux
+07:44 
+
+07:44 and human agent interaction patterns um
+07:48 
+
+07:48 but I do think they'll be more along the
+07:51 
+
+07:51 lines of an agent doing something and
+07:52 
+
+07:52 maybe checking in with you as opposed to
+07:54 
+
+07:54 a co-pilot that's constantly kind of
+07:57 
+
+07:57 like in the loop I just think it's I
+07:59 
+
+07:59 just think it's more powerful and and
+08:00 
+
+08:00 gives you more leverage if the more that
+08:03 
+
+08:03 they're doing which which is very
+08:04 
+
+08:04 paradoxical as well because it comes the
+08:07 
+
+08:07 the more you let it do things by itself
+08:10 
+
+08:10 there's more risk that it's messing up
+08:11 
+
+08:11 or going off the rails and so I think
+08:13 
+
+08:13 striking this right balance is is going
+08:15 
+
+08:15 to be really really interesting I
+08:16 
+
+08:16 remember back in I think it was marchish
+08:19 
+
+08:19 of
+08:20 
+
+08:20 2023 uh there were a few of these
+08:22 
+
+08:22 autonomous agents that really captured
+08:25 
+
+08:25 everyone's imaginations like baby AI
+08:28 
+
+08:28 autog GPT a few of these
+08:30 
+
+08:30 um and I I just remember Twitter was
+08:34 
+
+08:34 very very excited about it and it seems
+08:36 
+
+08:36 like that first itation of an Asian
+08:38 
+
+08:38 architecture hasn't quite met people's
+08:41 
+
+08:41 expectations um I think why why do you
+08:44 
+
+08:44 think that is and and where do you think
+08:45 
+
+08:45 we are in the agent hype cycle
+08:48 
+
+08:48 now yeah I think
+08:51 
+
+08:51 um maybe thinking about the agent hype
+08:53 
+
+08:53 cycle first I think Auto GPT was
+08:58 
+
+08:58 definitely the start and and and then so
+09:02 
+
+09:02 I mean it's it's one of the most popular
+09:04 
+
+09:04 GitHub projects ever so one of one of
+09:06 
+
+09:06 the peaks of of the hype cycle um I
+09:09 
+
+09:09 think and and I'd say that started in
+09:13 
+
+09:13 the spring 2023 to Summer of 2023 is
+09:17 
+
+09:17 then I personally feel like there is a
+09:18 
+
+09:18 bit of kind of like uh law slashdown
+09:21 
+
+09:21 trend from the the late summer to
+09:24 
+
+09:24 basically the start of the new year um
+09:27 
+
+09:27 in in 2024 and I think starting in 2024
+09:31 
+
+09:31 we've started to see a few more
+09:33 
+
+09:33 realistic things come online um i' I'd
+09:36 
+
+09:36 point out some of the work that we've
+09:37 
+
+09:37 done at linkchain with elastic for
+09:40 
+
+09:40 example they have kind of like an
+09:41 
+
+09:41 elastic assistant an elastic agent in
+09:43 
+
+09:43 production um and so we're seeing that
+09:46 
+
+09:46 we saw kind of like the Clara customer
+09:48 
+
+09:48 support bot um kind of like come online
+09:50 
+
+09:50 and get a lot of hype we've seen Devon
+09:52 
+
+09:52 we've seen Sierra these other these
+09:54 
+
+09:54 other companies start to emerge um in in
+09:57 
+
+09:57 the agent space and so I think uh with
+10:00 
+
+10:00 that hype cycle in mind talking about
+10:03 
+
+10:03 why the auto GPT style architecture
+10:05 
+
+10:05 didn't really
+10:07 
+
+10:07 work it it was very general and and and
+10:10 
+
+10:10 very unconstrained um and I think that
+10:12 
+
+10:12 made it really exciting and captivated
+10:14 
+
+10:14 people's kind of like imaginations but I
+10:16 
+
+10:16 think practically for things that people
+10:20 
+
+10:20 wanted to automate to provide immediate
+10:21 
+
+10:21 business value there's actually a lot it
+10:23 
+
+10:23 it's a much more specific thing that
+10:25 
+
+10:25 they want these agents to do and there's
+10:27 
+
+10:27 really like a lot more rules that they
+10:30 
+
+10:30 want the agents to follow or specific
+10:31 
+
+10:31 ways they want them to do things and so
+10:34 
+
+10:34 I think in practice what we're seeing
+10:35 
+
+10:35 with these agents is they're much more
+10:37 
+
+10:37 kind of like custom cognitive
+10:39 
+
+10:39 architectures is kind of like what we we
+10:41 
+
+10:41 call them where there's a certain way of
+10:43 
+
+10:43 doing things that you generally want an
+10:44 
+
+10:44 agent to do and there's some flexibility
+10:46 
+
+10:46 in there for sure otherwise you know you
+10:48 
+
+10:48 would you would just code it um but it's
+10:50 
+
+10:50 a very like directed way of thinking
+10:52 
+
+10:52 about things and that's most of the
+10:54 
+
+10:54 agents and assistants that we see today
+10:57 
+
+10:57 and that's just more engineering work
+10:58 
+
+10:58 and that's just more kind of like trying
+11:00 
+
+11:00 things out and and and seeing kind of
+11:02 
+
+11:02 like what works and what doesn't work
+11:03 
+
+11:03 and it's harder to do so it just takes
+11:05 
+
+11:05 longer to build and I think that's kind
+11:07 
+
+11:07 of why you know that that's why that
+11:09 
+
+11:09 didn't exist a year ago or something
+11:10 
+
+11:10 like
+11:12 
+
+11:12 that since you mentioned cognitive
+11:14 
+
+11:14 architectures I love the way that you
+11:16 
+
+11:16 think about them maybe can you just
+11:17 
+
+11:17 explain like what is what is a cognitive
+11:20 
+
+11:20 architecture and like is there a good
+11:21 
+
+11:21 mental framework for how we should be
+11:23 
+
+11:23 thinking about
+11:24 
+
+11:24 them yeah so the the way that I think
+11:27 
+
+11:27 about a cognitive architecture is
+11:28 
+
+11:28 basically what's the
+11:30 
+
+11:30 system architecture of your llm
+11:33 
+
+11:33 application um and so what I mean by
+11:35 
+
+11:35 that is if you're building an LM
+11:36 
+
+11:36 application there's some steps in there
+11:38 
+
+11:38 that use
+11:39 
+
+11:39 llms what are you using these llms to do
+11:42 
+
+11:42 are you using them to just generate the
+11:45 
+
+11:45 final answer are you using them to route
+11:47 
+
+11:47 between two different things are you uh
+11:50 
+
+11:50 have do you have like a pretty complex
+11:52 
+
+11:52 one with a lot of different branches and
+11:54 
+
+11:54 maybe some Cycles repeating um or do you
+11:57 
+
+11:57 have uh kind of like you know a pretty
+11:60 
+
+11:60 a loop you basically run this LM in a
+12:02 
+
+12:02 loop these are all kind of differents of
+12:06 
+
+12:06 cognitive architectures um and cognitive
+12:09 
+
+12:09 AR is just a fancy way of saying like
+12:11 
+
+12:11 from the user input to the user output
+12:14 
+
+12:14 what's the flow of data of information
+12:16 
+
+12:16 of llm calls that happens along the way
+12:19 
+
+12:19 um and what we've seen more and more
+12:23 
+
+12:23 especially as people are trying to get
+12:25 
+
+12:25 agents actually into production is that
+12:28 
+
+12:28 the flow is specific to their
+12:31 
+
+12:31 application and their domain um so
+12:33 
+
+12:33 there's maybe some specific checks they
+12:35 
+
+12:35 want to do right off the bat there's
+12:37 
+
+12:37 maybe three specific steps that it could
+12:39 
+
+12:39 take after that and then each one maybe
+12:41 
+
+12:41 has an option to loop back or has two
+12:43 
+
+12:43 separate substeps um and so we see these
+12:46 
+
+12:46 more like if you think about it as a
+12:48 
+
+12:48 graph that you're drawing out we see
+12:49 
+
+12:49 more and more basically custom and B
+12:51 
+
+12:51 spoke graphs as people kind of try to
+12:54 
+
+12:54 constrain and guide the agent along uh
+12:57 
+
+12:57 their application um the reason I call
+12:60 
+
+12:60 it a cognitive architectures is just you
+13:02 
+
+13:02 know I think a lot of the power of LMS
+13:03 
+
+13:03 is around reasoning and thinking about
+13:05 
+
+13:05 what to do um and so you know I would
+13:08 
+
+13:08 maybe have like a cognitive mental model
+13:10 
+
+13:10 for how to do a task and I'm basically
+13:12 
+
+13:12 just encoding that that mental model
+13:14 
+
+13:14 into some kind of like Software System
+13:17 
+
+13:17 some some architecture that way and do
+13:20 
+
+13:20 do you think that's the direction the
+13:21 
+
+13:21 world is going because I kind of heard
+13:23 
+
+13:23 two things for me there one was it's
+13:25 
+
+13:25 very bespoke and second was it's fair
+13:29 
+
+13:29 barly Brute Force like it's fa hardcoded
+13:31 
+
+13:31 in a lot of ways do do you think that's
+13:34 
+
+13:34 where we're headed or do you think
+13:36 
+
+13:36 that's a stop Gap and at some point more
+13:38 
+
+13:38 elegant architectures or or a series of
+13:40 
+
+13:40 default sort of reference architectures
+13:42 
+
+13:42 will
+13:43 
+
+13:43 emerge that is a really really good
+13:46 
+
+13:46 question and one I spend a lot of time
+13:47 
+
+13:47 thinking about I think so like at at an
+13:50 
+
+13:50 extreme you could make an argument that
+13:53 
+
+13:53 if the models get really really good and
+13:57 
+
+13:57 reliable at planning then the best thing
+14:01 
+
+14:01 you could possibly have is just this
+14:02 
+
+14:02 four Loop that runs in a loop calls the
+14:04 
+
+14:04 llm decides what to do takes the action
+14:07 
+
+14:07 and Loops again and like all of these
+14:09 
+
+14:09 constraints on how I want the model to
+14:12 
+
+14:12 behave I just put that in my prompt and
+14:13 
+
+14:13 the model follows that kind of like
+14:15 
+
+14:15 explicitly
+14:18 
+
+14:18 um I I do think the models will get
+14:21 
+
+14:21 better at planning um and and reasoning
+14:24 
+
+14:24 for sure I don't quite think they'll get
+14:27 
+
+14:27 to the level where that will be
+14:30 
+
+14:30 the best way to do things for a varet of
+14:32 
+
+14:32 reasons one I think uh efficiency if you
+14:36 
+
+14:36 know that you always want to do step a
+14:38 
+
+14:38 after step B you can just put that in
+14:41 
+
+14:41 order um and two reliability as well
+14:44 
+
+14:44 like these are still not a terministic
+14:46 
+
+14:46 things we're talking about especially in
+14:47 
+
+14:47 Enterprise settings you probably want a
+14:49 
+
+14:49 little bit more comfort that if it's
+14:50 
+
+14:50 always supposed to do step a after step
+14:52 
+
+14:52 B it's actually always going to do step
+14:54 
+
+14:54 a over step B um or after step B I think
+14:57 
+
+14:57 it will get easier to create these
+14:59 
+
+14:59 things things like I think they'll
+15:01 
+
+15:01 they'll maybe start to become a little
+15:03 
+
+15:03 bit less and and less complex um but
+15:08 
+
+15:08 actually this is maybe a hot take or
+15:09 
+
+15:09 interesting take that it had you could
+15:11 
+
+15:11 say like so the the architecture of just
+15:13 
+
+15:13 running it in a loop um you could think
+15:15 
+
+15:15 of as like a really simple but General
+15:19 
+
+15:19 um cognitive architecture and then what
+15:22 
+
+15:22 we see in production is like custom and
+15:26 
+
+15:26 complicated kind of like cognitive
+15:28 
+
+15:28 architectures I think there's a separate
+15:31 
+
+15:31 access which is like complicated but
+15:33 
+
+15:33 generic custom or complicated but
+15:36 
+
+15:36 generic cognitive architectures and so
+15:38 
+
+15:38 this would be something like a really
+15:40 
+
+15:40 complicated like planning step and
+15:41 
+
+15:41 reflection Loop or or like tree of
+15:43 
+
+15:43 thoughts or something like that and I
+15:45 
+
+15:45 actually think that quadrant will
+15:47 
+
+15:47 probably go away over time because I
+15:48 
+
+15:48 think a lot of that generic planning and
+15:51 
+
+15:51 generic reflection will get trained into
+15:54 
+
+15:54 the models themselves but there will
+15:55 
+
+15:55 still be a bunch of not generic training
+15:58 
+
+15:58 or not generic planning not generic
+15:60 
+
+15:60 reflection not generic control loops
+16:02 
+
+16:02 that are never going to be in the models
+16:03 
+
+16:03 basically yeah no matter what um and so
+16:06 
+
+16:06 I think like those two ends of the
+16:08 
+
+16:08 spectrum I'm pretty I'm pretty bullish
+16:10 
+
+16:10 on I guess you can almost think about it
+16:12 
+
+16:12 as like the llm does the kind of like
+16:15 
+
+16:15 General the very general um agentic
+16:18 
+
+16:18 reasoning um but then you need domain
+16:20 
+
+16:20 specific reasoning uh and and that's the
+16:23 
+
+16:23 sort of stuff that that you can't really
+16:25 
+
+16:25 build into one General model 100% like I
+16:28 
+
+16:28 think I think a way of thinking about
+16:30 
+
+16:30 like the custom C of architectures is
+16:32 
+
+16:32 you're basically taking you're taking
+16:34 
+
+16:34 the planning responsibility away from
+16:37 
+
+16:37 the llm and putting it onto the human
+16:39 
+
+16:39 and some of that planning you'll you'll
+16:40 
+
+16:40 move more and more towards the model and
+16:42 
+
+16:42 and and more and more towards the prompt
+16:44 
+
+16:44 but I think they'll always be like I
+16:47 
+
+16:47 think a lot of a lot of tasks are
+16:49 
+
+16:49 actually quite complicated in some of
+16:51 
+
+16:51 their planning um and so I think it will
+16:53 
+
+16:53 be a while before we get things that are
+16:56 
+
+16:56 just able to do that super super
+16:58 
+
+16:58 reliably off the shelf it seems like
+17:01 
+
+17:01 we've simultaneously made a ton of
+17:03 
+
+17:03 progress on agents in the last six
+17:04 
+
+17:04 months or so like um I was reading a
+17:07 
+
+17:07 paper the the Princeton swe paper um
+17:10 
+
+17:10 where their coding agents can now solve
+17:12 
+
+17:12 12.5% of GitHub issues versus I think
+17:16 
+
+17:16 3.8% um when it was just rag um so it
+17:19 
+
+17:19 feels like we've we've you know we've
+17:21 
+
+17:21 made a ton of progress in the last six
+17:22 
+
+17:22 months but 12 and a half% is like not
+17:24 
+
+17:24 good enough to you know replace even an
+17:27 
+
+17:27 intern right and so um it feels like we
+17:30 
+
+17:30 still have a ton of room to go um I'm
+17:32 
+
+17:32 curious where you think we are both for
+17:34 
+
+17:34 General agents and also for your
+17:36 
+
+17:36 customers that are building agents like
+17:38 
+
+17:38 are they kind of getting to I I assume
+17:40 
+
+17:40 not 5 9's reliability but are they
+17:42 
+
+17:42 getting to kind of like the thresholds
+17:44 
+
+17:44 they need to kind of deploy these agents
+17:46 
+
+17:46 out to actual customer facing
+17:49 
+
+17:49 deployments yeah so so theu agent is I
+17:53 
+
+17:53 would say a relatively Gish agent in
+17:55 
+
+17:55 that it is expected to work across a
+17:57 
+
+17:57 bunch of different GitHub repos I I
+17:59 
+
+17:59 think if you look at something at like
+18:01 
+
+18:01 v0 by versel um that's probably much
+18:04 
+
+18:04 more reliable than 12.5 um% right and so
+18:07 
+
+18:07 I think that speaks to like yeah there
+18:09 
+
+18:09 there are there are definitely custom
+18:11 
+
+18:11 agents that not 59 of reliability but
+18:14 
+
+18:14 that like are being used in in
+18:17 
+
+18:17 production so like elastic I think we've
+18:19 
+
+18:19 talked publicly about how how they've
+18:21 
+
+18:21 done I think multiple agents at this
+18:23 
+
+18:23 point and I think this week is RSA and I
+18:25 
+
+18:25 think they're announcing something new
+18:27 
+
+18:27 at RSA um that that that's in agent um
+18:30 
+
+18:30 and yeah those are um I I don't have the
+18:33 
+
+18:33 exact numbers on reliability but they're
+18:34 
+
+18:34 reliable enough to be shipped into
+18:36 
+
+18:36 production um General agents are still
+18:39 
+
+18:39 tough yeah this is where this is where
+18:40 
+
+18:40 kind of like longer longer context
+18:43 
+
+18:43 Windows better planning better reasoning
+18:46 
+
+18:46 will help those General
+18:47 
+
+18:47 agents you shared with me this great
+18:49 
+
+18:49 Jeff bezos's quote of just like focus on
+18:51 
+
+18:51 what make makes your beer better and I
+18:53 
+
+18:53 think it's referring to the fact that um
+18:55 
+
+18:55 at the turn 20th century breweries were
+18:57 
+
+18:57 you know trying to make their own on
+18:59 
+
+18:59 electricity generat on electricity um I
+19:03 
+
+19:03 think similar question um a lot of
+19:05 
+
+19:05 companies are thinking through today
+19:06 
+
+19:06 like do you think that having control
+19:08 
+
+19:08 over your cognitive architecture really
+19:11 
+
+19:11 makes your your beer taste better uh so
+19:13 
+
+19:13 to speak metaphorically or like or or do
+19:16 
+
+19:16 you seed control that the model and and
+19:19 
+
+19:19 just build kind of UI and product I I
+19:21 
+
+19:21 think it maybe depends on the type of
+19:23 
+
+19:23 cognitive architecture that you're
+19:24 
+
+19:24 building going back to some of the
+19:26 
+
+19:26 discussions earlier if you're building
+19:28 
+
+19:28 like a generic cognitive architecture I
+19:31 
+
+19:31 don't think that makes your beer taste
+19:33 
+
+19:33 better I think the model providers will
+19:35 
+
+19:35 work on this General planning I think
+19:37 
+
+19:37 like well work on these General
+19:38 
+
+19:38 cognitive architectures that you can try
+19:40 
+
+19:40 off the bat on the other hand if your
+19:42 
+
+19:42 cognitive architectures are basically
+19:45 
+
+19:45 you codifying a lot of the way that your
+19:49 
+
+19:49 support team thinks about something or
+19:51 
+
+19:51 internal business processes or the best
+19:52 
+
+19:52 way that you know to kind of like
+19:55 
+
+19:55 develop code or develop this particular
+19:57 
+
+19:57 type of code or this particular type of
+19:59 
+
+19:59 application yeah I think that absolutely
+20:02 
+
+20:02 makes your your beer taste better
+20:03 
+
+20:03 especially if we're going towards a
+20:04 
+
+20:04 place where these applications are are
+20:06 
+
+20:06 are doing work than like the logic the
+20:09 
+
+20:09 bespoke kind of like uh business logic
+20:12 
+
+20:12 or or mental models for for and
+20:15 
+
+20:15 anthropomorphizing these LMS a lot right
+20:17 
+
+20:17 now but like the the models for these
+20:19 
+
+20:19 things to to do the best work possible
+20:22 
+
+20:22 100% like I think that's the key thing
+20:24 
+
+20:24 that you're you're selling in in some
+20:26 
+
+20:26 capacity I think ux um and UI and
+20:28 
+
+20:28 distribution and everything absolutely
+20:30 
+
+20:30 still plays a part but like yeah I draw
+20:32 
+
+20:32 this distinction between General versus
+20:35 
+
+20:35 custom Harrison before we get into some
+20:38 
+
+20:38 of the details on how people are
+20:39 
+
+20:39 building these things can we um pop up a
+20:42 
+
+20:42 level real quick so our our founder Don
+20:44 
+
+20:44 Valentine was famous for asking the
+20:46 
+
+20:46 question so what and so my question to
+20:48 
+
+20:48 you is so what let let's imagine that
+20:50 
+
+20:50 autonomous agents are working flawlessly
+20:53 
+
+20:53 what does that mean for the world like
+20:55 
+
+20:55 how is life different if and when that
+20:57 
+
+20:57 occurs
+20:59 
+
+20:59 I think at a high level it means that as
+21:02 
+
+21:02 humans we're focusing on just a
+21:04 
+
+21:04 different set of things so I think
+21:06 
+
+21:06 there's a lot of like Ro repeated kind
+21:09 
+
+21:09 of like work that goes on in a lot of
+21:12 
+
+21:12 Industries at the moment um and so I
+21:14 
+
+21:14 think the idea of Agents is a lot of
+21:17 
+
+21:17 that will be kind of like automated away
+21:19 
+
+21:19 leaving us to think maybe higher level
+21:21 
+
+21:21 about like what these agents should be
+21:23 
+
+21:23 doing and maybe leveraging their outputs
+21:26 
+
+21:26 to do more creative or or building upon
+21:28 
+
+21:28 those outputs to do more uh kind of like
+21:31 
+
+21:31 uh higher leverage things um basically
+21:34 
+
+21:34 and so I I think uh you know you could
+21:37 
+
+21:37 imagine bootstrapping a uh an entire
+21:40 
+
+21:40 company where you're Outsourcing a lot
+21:42 
+
+21:42 of the functions that you would normally
+21:44 
+
+21:44 have to hire for and so you could play
+21:47 
+
+21:47 the role of a CEO with the an an an an
+21:50 
+
+21:50 agent for marketing an agent for sales
+21:53 
+
+21:53 something like that um and allow you to
+21:56 
+
+21:56 basically Outsource a lot of this
+21:59 
+
+21:59 work to to agents leaving you to do a
+22:04 
+
+22:04 lot of the interesting strategic
+22:05 
+
+22:05 thinking product thinking and maybe this
+22:08 
+
+22:08 depends a little bit on on what your
+22:10 
+
+22:10 interests are but I think at a high
+22:11 
+
+22:11 level it will free us up to do what we
+22:13 
+
+22:13 want to do and what we're good at and
+22:15 
+
+22:15 automate a lot of the things that we
+22:16 
+
+22:16 might not necessarily want to do and are
+22:19 
+
+22:19 you are you seeing any interesting
+22:21 
+
+22:21 examples of this today sort of Live And
+22:23 
+
+22:23 in
+22:24 
+
+22:24 production I mean I think the biggest
+22:27 
+
+22:27 there there's there's two kind of like
+22:28 
+
+22:28 categor ories or areas of agents that
+22:31 
+
+22:31 are starting to get more traction one's
+22:32 
+
+22:32 customer support one's coding um so I
+22:35 
+
+22:35 think customer support is a pretty good
+22:37 
+
+22:37 example of this like I think um you know
+22:40 
+
+22:40 often times uh people need customer
+22:44 
+
+22:44 support we need customer support at
+22:45 
+
+22:45 linkchain um and so if we could hire
+22:47 
+
+22:47 agents to do that um that would be
+22:50 
+
+22:50 really powerful um coding is interesting
+22:53 
+
+22:53 because I think there's some aspects of
+22:55 
+
+22:55 coding that I mean yeah this is maybe a
+22:57 
+
+22:57 more philosophical but I think there's
+22:59 
+
+22:59 some aspects of coding that are really
+23:02 
+
+23:02 creative and do require like really I
+23:04 
+
+23:04 mean lots of product thinking lots of uh
+23:07 
+
+23:07 uh positioning and things like that
+23:09 
+
+23:09 there's also aspects of coding
+23:11 
+
+23:11 that limit some of the or or not limit
+23:14 
+
+23:14 but get in the way of a lot of the
+23:15 
+
+23:15 creativity that people might have so if
+23:17 
+
+23:17 my mom has an idea for a website she she
+23:20 
+
+23:20 um she doesn't know how to code that up
+23:22 
+
+23:22 right but if there was an agent that
+23:23 
+
+23:23 could do that she could focus on the
+23:24 
+
+23:24 idea for the website and basically the
+23:26 
+
+23:26 scoping of the website but automate that
+23:29 
+
+23:29 a and so I'd say customer support
+23:31 
+
+23:31 absolutely that's having an impact today
+23:33 
+
+23:33 coding there is a lot of interest there
+23:36 
+
+23:36 um I don't think we're at I don't think
+23:38 
+
+23:38 it's as mature as customer support but
+23:40 
+
+23:40 in terms of areas where there is a lot
+23:42 
+
+23:42 of people doing interesting things that
+23:43 
+
+23:43 would be a second one to call out your
+23:45 
+
+23:45 your comment on coding is interesting
+23:47 
+
+23:47 because I think this is one of the
+23:48 
+
+23:48 things that has us very optimistic about
+23:50 
+
+23:50 AI it's this idea of sort of closing the
+23:53 
+
+23:53 Gap from idea to execution or closing
+23:54 
+
+23:54 the Gap from you know dream to reality
+23:57 
+
+23:57 where you can come up with a very
+23:59 
+
+23:59 creative compelling idea but you may not
+24:01 
+
+24:01 have the tools at your disposal be able
+24:03 
+
+24:03 to to be able to put it into into
+24:05 
+
+24:05 reality and AI seems like it's well
+24:06 
+
+24:06 suited for that I think Dylan and figma
+24:08 
+
+24:08 talks about this a lot
+24:09 
+
+24:09 too yeah I think I think it goes back to
+24:12 
+
+24:12 this idea of like automating away the
+24:14 
+
+24:14 things that yeah get in the way of of
+24:16 
+
+24:16 make I I like the phrasing of idea to
+24:18 
+
+24:18 reality it automates away kind of like
+24:21 
+
+24:21 the the the things that you don't
+24:23 
+
+24:23 necessarily know how to do or want to
+24:25 
+
+24:25 think about but are needed to to create
+24:28 
+
+24:28 what whatever you want to create I think
+24:30 
+
+24:30 it also one of the things that I spend a
+24:32 
+
+24:32 lot of time thinking about is like what
+24:33 
+
+24:33 does it mean to be a builder in the age
+24:36 
+
+24:36 of kind of like gend of AI and in the
+24:38 
+
+24:38 age of Agents um so what it means to be
+24:41 
+
+24:41 you know a a builder of software today
+24:44 
+
+24:44 means you know you you either have to be
+24:46 
+
+24:46 an engineer or hire Engineers or
+24:48 
+
+24:48 something like that right um but I think
+24:52 
+
+24:52 what it means to be a builder in the age
+24:53 
+
+24:53 of agents and generative AI just allows
+24:57 
+
+24:57 people to build
+24:59 
+
+24:59 a way larger set of things than they
+25:03 
+
+25:03 could build today um because they have
+25:06 
+
+25:06 at their fingertips all this other
+25:08 
+
+25:08 knowledge and all this other kind of
+25:10 
+
+25:10 like all these other builders they can
+25:12 
+
+25:12 hire and and use
+25:14 
+
+25:14 for very very cheap I mean I think like
+25:18 
+
+25:18 you know some of the um language around
+25:20 
+
+25:20 like commoditization of kind of like uh
+25:23 
+
+25:23 intelligence or something like that is
+25:25 
+
+25:25 these llms are providing intelligence
+25:27 
+
+25:27 for free um I think does does speak to
+25:29 
+
+25:29 enabling a lot of these new Builders to
+25:33 
+
+25:33 emerge you mentioned reflection and and
+25:36 
+
+25:36 chain of thoughts and other techniques
+25:37 
+
+25:37 like maybe can you just say a word on
+25:40 
+
+25:40 like what we've learned so far about
+25:41 
+
+25:41 what some of these I guess cognitive
+25:44 
+
+25:44 architectures um are capable of of doing
+25:48 
+
+25:48 uh for a gentic performance and maybe
+25:49 
+
+25:49 just um I'm curious what you think are
+25:51 
+
+25:51 the most promising cognitive
+25:55 
+
+25:55 architectures yeah I think there's um
+26:00 
+
+26:00 maybe it's worth talking a little bit
+26:01 
+
+26:01 about why kind of like the auto GPT
+26:03 
+
+26:03 things didn't didn't work um because I
+26:07 
+
+26:07 think a lot of the cph architectures are
+26:08 
+
+26:08 kind of like emerged to counteract some
+26:12 
+
+26:12 of that um I guess way back when there
+26:15 
+
+26:15 was basically the problem that llms
+26:18 
+
+26:18 couldn't even reason well enough about a
+26:21 
+
+26:21 first step to do in and like what they
+26:23 
+
+26:23 should do as the first step and so I
+26:25 
+
+26:25 think prompting techniques uh like Chain
+26:27 
+
+26:27 of Thought turned out to really helpful
+26:29 
+
+26:29 there they basically gave the LM more uh
+26:32 
+
+26:32 space to think about and think step by
+26:35 
+
+26:35 step about like what they should do for
+26:36 
+
+26:36 for a specific kind of like single step
+26:39 
+
+26:39 um then that actually started to get
+26:41 
+
+26:41 trained into the models more and more
+26:42 
+
+26:42 and they kind of did that by default um
+26:45 
+
+26:45 as that kind of like is basically
+26:46 
+
+26:46 everyone wanted the models to do that
+26:48 
+
+26:48 anyways and so yeah you should train
+26:49 
+
+26:49 that into the models um I think then
+26:53 
+
+26:53 there there was a great paper by shenu
+26:56 
+
+26:56 uh called react which basically uh was
+26:58 
+
+26:58 the
+26:60 
+
+26:60 first cognitive architecture for agents
+27:03 
+
+27:03 or something like that and and the the
+27:06 
+
+27:06 thing that it did there was one it asked
+27:09 
+
+27:09 the LM to predict what to do that's the
+27:11 
+
+27:11 action but then it added in this
+27:13 
+
+27:13 reasoning component and so it's kind of
+27:14 
+
+27:14 similar to Chain of Thought and that it
+27:16 
+
+27:16 basically added in this reasoning
+27:18 
+
+27:18 component he put it in a loop he asked
+27:20 
+
+27:20 us to do this reasoning thing before
+27:21 
+
+27:21 each step and you kind of run it there
+27:23 
+
+27:23 um and so that was kind of like and
+27:26 
+
+27:26 actually that's that like explicit
+27:28 
+
+27:28 reasoning step has actually become less
+27:31 
+
+27:31 and less necessary as the models have
+27:33 
+
+27:33 that trained into them like just like
+27:35 
+
+27:35 they have kind of like the Chain of
+27:36 
+
+27:36 Thought trained into them that explicit
+27:38 
+
+27:38 reasoning step has becomeing less less
+27:40 
+
+27:40 necessary so if you see people doing
+27:41 
+
+27:41 kind of like react style agents today
+27:44 
+
+27:44 they're often times just using function
+27:45 
+
+27:45 calling without kind of like the
+27:47 
+
+27:47 explicit like uh thought process that
+27:49 
+
+27:49 was actually in the original react paper
+27:52 
+
+27:52 um but it's still this like Loop that
+27:54 
+
+27:54 has kind of become synonymous with the
+27:55 
+
+27:55 react paper um so that's a L of the
+27:59 
+
+27:59 that's a lot of the uh difficulties
+28:02 
+
+28:02 initially with agents and I wouldn't
+28:04 
+
+28:04 entirely describe those as cognitive
+28:05 
+
+28:05 architectures I describe those as
+28:06 
+
+28:06 prompting techniques but okay so now
+28:08 
+
+28:08 we've got this working now what are some
+28:10 
+
+28:10 of the issues the two main issues are
+28:12 
+
+28:12 basically planning and then kind of like
+28:14 
+
+28:14 realizing that you're done and so by
+28:16 
+
+28:16 planning I mean like uh when I think
+28:19 
+
+28:19 about what to do things subconsciously
+28:21 
+
+28:21 or consciously I like put together a
+28:23 
+
+28:23 plan of the order that I'm going to do
+28:24 
+
+28:24 the steps in and then I kind of like go
+28:27 
+
+28:27 and and do each steps and basically
+28:29 
+
+28:29 models uh struggle with that they
+28:32 
+
+28:32 struggle with long-term planning um they
+28:34 
+
+28:34 struggle with uh coming up with a good
+28:36 
+
+28:36 long-term plan and then if you're
+28:37 
+
+28:37 running it in this loop at each step
+28:40 
+
+28:40 you're kind of doing a part of the plan
+28:43 
+
+28:43 and maybe it finishes or maybe it
+28:44 
+
+28:44 doesn't finish and so uh there's this uh
+28:47 
+
+28:47 you know if you just run it in this Loop
+28:49 
+
+28:49 you're implicitly asking the model to
+28:51 
+
+28:51 first come up with a plan then kind of
+28:53 
+
+28:53 like track its progress on the plan and
+28:55 
+
+28:55 continue along that so I think some of
+28:57 
+
+28:57 the planning cognitive architectures
+28:59 
+
+28:59 that we've seen have been okay first
+29:01 
+
+29:01 let's add an explicit step where we ask
+29:03 
+
+29:03 the llm to generate a plan um then you
+29:07 
+
+29:07 know let's go step by step in that plan
+29:09 
+
+29:09 and we'll make sure that we do each step
+29:10 
+
+29:10 and that's just a way of like enforcing
+29:12 
+
+29:12 that the model generates a long-term
+29:14 
+
+29:14 plan and like actually does each step
+29:16 
+
+29:16 before going on and it doesn't just like
+29:18 
+
+29:18 you know generate a five-step plan do
+29:19 
+
+29:19 the first step and then say okay I'm
+29:20 
+
+29:20 done I finished or something like that
+29:23 
+
+29:23 um and then I think a a separate but
+29:27 
+
+29:27 kind of related thing is this idea of
+29:29 
+
+29:29 reflection which is basically like has a
+29:31 
+
+29:31 model actually done its job well um
+29:34 
+
+29:34 right so like I could generate a plan
+29:36 
+
+29:36 where I'm going to go get this answer I
+29:37 
+
+29:37 could go get an answer from the internet
+29:40 
+
+29:40 maybe it's just like completely the
+29:41 
+
+29:41 wrong answer or I got like bad search
+29:42 
+
+29:42 results or something like that um I
+29:45 
+
+29:45 shouldn't just return that answer right
+29:46 
+
+29:46 I should kind of like think about
+29:47 
+
+29:47 whether I I I got the right answer um
+29:51 
+
+29:51 and and and or whether I need to do
+29:53 
+
+29:53 something again and again like if you're
+29:55 
+
+29:55 just running it in a loop you're kind of
+29:56 
+
+29:56 asking the model to do this implicitly
+29:58 
+
+29:58 so so there have been some cognitive
+29:59 
+
+29:59 architectures that have emerged to
+30:01 
+
+30:01 overcome that that basically add that in
+30:03 
+
+30:03 as an explicit step where they they they
+30:06 
+
+30:06 do an action or a series of actions and
+30:08 
+
+30:08 then ask the model to explicitly think
+30:09 
+
+30:09 about whether it's done it correctly or
+30:11 
+
+30:11 not um and so planning and reasoning are
+30:15 
+
+30:15 probably like two of the more popular
+30:17 
+
+30:17 generic kind of like cognitive
+30:19 
+
+30:19 architectures there's a lot of like
+30:21 
+
+30:21 custom cognitive architectures but
+30:22 
+
+30:22 that's all super tied to like business
+30:24 
+
+30:24 logic and things like that um so so but
+30:27 
+
+30:27 planning reasoning are generic I'd
+30:28 
+
+30:28 expect these to become more and more
+30:31 
+
+30:31 trained into the models by default
+30:34 
+
+30:34 although I do think there's a very
+30:35 
+
+30:35 interesting question of how good will
+30:36 
+
+30:36 they ever get in the models um but that
+30:39 
+
+30:39 that's probably a separate longer term
+30:41 
+
+30:41 conversation Harrison one of the things
+30:42 
+
+30:42 that you talked about that um AI Ascent
+30:45 
+
+30:45 was ux um which we normally think about
+30:48 
+
+30:48 as kind of being on the opposite end of
+30:50 
+
+30:50 the spectrum from architecture you know
+30:51 
+
+30:51 the architecture is behind the scenes
+30:53 
+
+30:53 the ux is the thing out in front um but
+30:56 
+
+30:56 it seems like we're in this interesting
+30:57 
+
+30:57 world where the ux can actually
+30:58 
+
+30:58 influence the effectiveness of the
+30:60 
+
+31:00 architecture by allowing you like for
+31:02 
+
+31:02 example with Devon to rewind to the
+31:04 
+
+31:04 point in the planning process where
+31:06 
+
+31:06 things started to go off track can you
+31:08 
+
+31:08 can you just say a couple words about ux
+31:09 
+
+31:09 and the importance of it in in agents or
+31:12 
+
+31:12 llms more generally and maybe some
+31:14 
+
+31:14 interesting things that you've seen
+31:15 
+
+31:15 there yeah I I'm I'm super fascinated by
+31:20 
+
+31:20 uh ux and and I think there's a lot of
+31:22 
+
+31:22 really interesting work to be done here
+31:25 
+
+31:25 I think the reason it's so important
+31:28 
+
+31:28 is because these LM still aren't perfect
+31:31 
+
+31:31 and still aren't kind of like reliable
+31:32 
+
+31:32 and and have a tendency to mess up and I
+31:34 
+
+31:34 think that's why chat is such a powerful
+31:36 
+
+31:36 uex for some of the initial uh kind of
+31:38 
+
+31:38 like interactions and applications you
+31:40 
+
+31:40 can easily see what it's doing it
+31:41 
+
+31:41 streams its backs its response you can
+31:43 
+
+31:43 easily correct it by responding to it
+31:45 
+
+31:45 you can easily ask follow-up questions
+31:47 
+
+31:47 um and so I think chat has clearly
+31:49 
+
+31:49 emerged as the dominant ux at the moment
+31:53 
+
+31:53 um I do think there are downsides to
+31:56 
+
+31:56 chat um you know it's generally like one
+31:59 
+
+31:59 AI message one human message the human
+32:01 
+
+32:01 is very much in the loop it's very much
+32:03 
+
+32:03 a co-pilot esque type of thing and I
+32:06 
+
+32:06 think the more and more that you can
+32:07 
+
+32:07 remove the human out of the loop um the
+32:10 
+
+32:10 more it can do for you and and it can
+32:13 
+
+32:13 kind of like work for you and I just
+32:14 
+
+32:14 think that's incredibly powerful and
+32:16 
+
+32:16 enabling
+32:18 
+
+32:18 um however again going llms are not
+32:22 
+
+32:22 perfect and they mess up so how do you
+32:24 
+
+32:24 kind of like balance these two things um
+32:26 
+
+32:26 I think some of the interesting IDE
+32:28 
+
+32:28 that we've seen talking about Devon are
+32:31 
+
+32:31 this idea of basically having a uh like
+32:34 
+
+32:34 really transparent list of everything
+32:35 
+
+32:35 the agent has done right like you should
+32:37 
+
+32:37 be able to know what the agent has done
+32:39 
+
+32:39 that seems like step one step two is
+32:41 
+
+32:41 probably like being able to modify what
+32:44 
+
+32:44 it's doing or what it has done so if you
+32:47 
+
+32:47 see that it you know messed up step
+32:48 
+
+32:48 three you can maybe rewind there give it
+32:51 
+
+32:51 some new instructions or even just like
+32:53 
+
+32:53 edit it kind of like uh uh decision
+32:56 
+
+32:56 manually um and and and and go from
+32:59 
+
+32:59 there um I think other like interesting
+33:03 
+
+33:03 ux patterns besides this rewind and edit
+33:06 
+
+33:06 um one is like the idea of kind of like
+33:10 
+
+33:10 a inbox where the agent can reach out to
+33:13 
+
+33:13 the human as needed so you've maybe got
+33:15 
+
+33:15 like you know 10 10 agents running in in
+33:18 
+
+33:18 in in parallel in the background and
+33:20 
+
+33:20 every now and again it maybe needs to
+33:21 
+
+33:21 ask the human for clarification um and
+33:23 
+
+33:23 so you've got like an email inbox where
+33:25 
+
+33:25 the agent is sending you like help help
+33:27 
+
+33:27 me I'm at this point I need help or
+33:29 
+
+33:29 something like that and and you kind of
+33:30 
+
+33:30 go and help it at that point um a
+33:32 
+
+33:32 similar one is like reviewing its work
+33:34 
+
+33:34 right and so I think this is really
+33:36 
+
+33:36 powerful for we've seen a lot of like um
+33:40 
+
+33:40 agents for writing different types of
+33:42 
+
+33:42 things doing research like research
+33:44 
+
+33:44 style agents there's there's a great
+33:46 
+
+33:46 project GPT researcher um which which
+33:48 
+
+33:48 has some really interesting kind of like
+33:49 
+
+33:49 architectures around agents um and I
+33:52 
+
+33:52 think that's a great place for this type
+33:53 
+
+33:53 of like review right like you can have
+33:55 
+
+33:55 an agent write a first draft and then I
+33:57 
+
+33:57 can review it and I can leave comments
+33:59 
+
+33:59 basically um and and and and there's a
+34:02 
+
+34:02 few different ways that it can actually
+34:03 
+
+34:03 happen so uh you know what the the most
+34:07 
+
+34:07 um maybe like the least involved way is
+34:10 
+
+34:10 I just leave like a bunch of comments in
+34:12 
+
+34:12 one go send those all to the agent and
+34:14 
+
+34:14 then it goes and fixes all of them
+34:16 
+
+34:16 another ux that's really really
+34:17 
+
+34:17 interested is this like collaborative um
+34:20 
+
+34:20 at the same time so like Google Docs um
+34:23 
+
+34:23 but a human and an agent working at the
+34:25 
+
+34:25 same time like I leave a comment the
+34:27 
+
+34:27 agent fixes it while on making another
+34:28 
+
+34:28 comment or something like that I think I
+34:30 
+
+34:30 think that's a separate ux that
+34:33 
+
+34:33 is pretty complicated to think about
+34:35 
+
+34:35 setting up and getting working um and I
+34:39 
+
+34:39 yeah I I I think that's interesting um
+34:42 
+
+34:42 there's uh there's one other kind of
+34:44 
+
+34:44 like ux thing that I think is
+34:47 
+
+34:47 interesting to think about which is
+34:48 
+
+34:48 basically just like how how how do these
+34:51 
+
+34:51 agents learn from these interactions
+34:54 
+
+34:54 right like we're talking about a human
+34:55 
+
+34:55 kind of like correcting the agent a
+34:57 
+
+34:57 bunch or giving feedback it would be so
+34:59 
+
+34:59 frustrating if I had to give the same
+35:01 
+
+35:01 piece of feedback 100 different times
+35:02 
+
+35:02 right that would suck and so like what
+35:05 
+
+35:05 are what's the architecture of the of
+35:08 
+
+35:08 the system that enables it so that it
+35:09 
+
+35:09 can start to learn from that I think is
+35:11 
+
+35:11 really interesting and and you know I
+35:13 
+
+35:13 think all of these are
+35:16 
+
+35:16 um all all all of these are still to be
+35:20 
+
+35:20 figured out like we're super early on in
+35:22 
+
+35:22 in in the game for figuring out a lot of
+35:24 
+
+35:24 these things but this is this is a lot
+35:25 
+
+35:25 of what we spend a lot of time thinking
+35:26 
+
+35:26 about h
+35:29 
+
+35:29 it well actually that reminds me you you
+35:31 
+
+35:31 are um I don't know if you know this or
+35:33 
+
+35:33 not but you're sort of legendary for the
+35:35 
+
+35:35 degree to which you are present in the
+35:37 
+
+35:37 developer community and paying very
+35:39 
+
+35:39 close attention to what's happening in
+35:40 
+
+35:40 the developer community and um and the
+35:42 
+
+35:42 problems that people are having in in
+35:43 
+
+35:43 the developer community so there are the
+35:46 
+
+35:46 problems that Ling Chene sort of
+35:48 
+
+35:48 directly addresses and you're building a
+35:50 
+
+35:50 business to solve and then I imagine you
+35:52 
+
+35:52 encounter a bunch of other problems that
+35:53 
+
+35:53 are just sort of out of scope and so I'm
+35:55 
+
+35:55 curious within the world of problem
+35:58 
+
+35:58 developers who are trying to build with
+35:59 
+
+35:59 llms or trying to build an AI are
+36:01 
+
+36:01 encountering today what are some of the
+36:03 
+
+36:03 interesting problems that you guys are
+36:04 
+
+36:04 not directly solving that maybe you
+36:06 
+
+36:06 would solve if you had another
+36:09 
+
+36:09 business yeah I mean I think two of the
+36:11 
+
+36:11 obvious areas are like at the model
+36:14 
+
+36:14 layer and at kind of like the database
+36:17 
+
+36:17 layer so like we're not building a
+36:18 
+
+36:18 vector database I think it's really
+36:20 
+
+36:20 interesting to think about what the
+36:21 
+
+36:21 Right Storage um is but you know we're
+36:24 
+
+36:24 we're not doing that um we're not
+36:26 
+
+36:26 building a foundation model and we're
+36:27 
+
+36:27 also not doing fine tuning of models
+36:30 
+
+36:30 like we want to help with the data
+36:31 
+
+36:31 curation bit absolutely um but we're not
+36:33 
+
+36:33 kind of like building the infrastructure
+36:35 
+
+36:35 for for fine tuning for that there
+36:36 
+
+36:36 there's fireworks and and other
+36:38 
+
+36:38 companies like that I think I think
+36:39 
+
+36:39 those are really interesting um I think
+36:43 
+
+36:43 uh those are probably at like the
+36:46 
+
+36:46 immediate infray in terms of what people
+36:49 
+
+36:49 are uh uh running running into at at
+36:53 
+
+36:53 this moment um I do think there's a
+36:56 
+
+36:56 second question there or second thought
+36:59 
+
+36:59 process there which is like if agents do
+37:01 
+
+37:01 become kind of like the uh future like
+37:05 
+
+37:05 what are what are other infer problems
+37:09 
+
+37:09 that are going to emerge because because
+37:10 
+
+37:10 of that um and so like you know to and I
+37:14 
+
+37:14 think it's way too early for us to say
+37:15 
+
+37:15 like what of these we will or won't do
+37:19 
+
+37:19 um because to be quite Frank we're not
+37:21 
+
+37:21 at the place where agents are reliable
+37:22 
+
+37:22 enough to have this whole like economy
+37:24 
+
+37:24 of Agents emerge but I think like um you
+37:27 
+
+37:27 know identity verification for agents um
+37:30 
+
+37:30 permissioning for agents payments for
+37:32 
+
+37:32 agents there's a really cool startup for
+37:33 
+
+37:33 payment for agents actually this was the
+37:35 
+
+37:35 opposite is Agents could pay humans to
+37:38 
+
+37:38 do things right and so I think there's
+37:39 
+
+37:39 like I I think that's really interesting
+37:41 
+
+37:41 to think about like if agents do become
+37:43 
+
+37:43 prevalent like what is the tooling infra
+37:45 
+
+37:45 that is going to be needed for that um
+37:47 
+
+37:47 which I think is a little bit separate
+37:48 
+
+37:48 than like what's the things that are are
+37:50 
+
+37:50 are needed in the developer Community
+37:51 
+
+37:51 for building llm applications because I
+37:53 
+
+37:53 think LM applications are here agents
+37:56 
+
+37:56 are starting to get here but not fully
+37:58 
+
+37:58 here and so I think it's just different
+37:59 
+
+37:59 levels of maturity for these types of
+38:03 
+
+38:03 companies Harrison you mentioned fine
+38:05 
+
+38:05 tuning and the fact that you guys aren't
+38:07 
+
+38:07 going to go there um it seems like that
+38:09 
+
+38:09 two kind of prompting and and like going
+38:11 
+
+38:11 of architectures and fine tuning are
+38:13 
+
+38:13 almost substitutes for each other uh how
+38:16 
+
+38:16 do you think about kind of the I mean
+38:19 
+
+38:19 the current states of like how people
+38:21 
+
+38:21 should be using prompting versus fine
+38:22 
+
+38:22 tuning and and how do you think that
+38:23 
+
+38:23 plays out yeah I I don't think that fine
+38:27 
+
+38:27 tuning meaning and cognitive
+38:29 
+
+38:29 architectures are substitutes for each
+38:31 
+
+38:31 other um and the reason I don't think
+38:34 
+
+38:34 they are and actually think they're kind
+38:36 
+
+38:36 of complimentary in a bunch of Senses is
+38:39 
+
+38:39 that when you have a more custom
+38:41 
+
+38:41 cognitive architecture the scope of what
+38:43 
+
+38:43 you're asking each agent or each node or
+38:46 
+
+38:46 or each piece of the system to do
+38:47 
+
+38:47 becomes much more limited and that
+38:50 
+
+38:50 actually becomes really really
+38:51 
+
+38:51 interesting for fine tuning maybe
+38:53 
+
+38:53 actually um on that point can you talk a
+38:55 
+
+38:55 little bit about Lang Smith and Lang
+38:57 
+
+38:57 graph Like Pat had just asked you what
+38:58 
+
+38:58 problems are you not solving I'm curious
+39:00 
+
+39:00 what what problems are you solving and
+39:02 
+
+39:02 and as as it relates to kind of all the
+39:04 
+
+39:04 problems with agents that we were
+39:05 
+
+39:05 talking about earlier like the things
+39:07 
+
+39:07 that you were doing to I guess making to
+39:09 
+
+39:09 make managing State more um uh uh more
+39:14 
+
+39:14 manageable um to make you know the
+39:16 
+
+39:16 agents more kind of controllable so to
+39:18 
+
+39:18 speak like how how do how do your
+39:20 
+
+39:20 products help people with that yeah so
+39:23 
+
+39:23 maybe even backing up a little bit and
+39:25 
+
+39:25 talking about Lang chain when it first
+39:26 
+
+39:26 came out I think the the the L chain
+39:29 
+
+39:29 open source project um really solved and
+39:33 
+
+39:33 tackled a few problems there I think one
+39:35 
+
+39:35 of the ones is basically standardizing
+39:38 
+
+39:38 the interfaces for all these different
+39:39 
+
+39:39 components so we have tons of
+39:40 
+
+39:40 Integrations with different models
+39:42 
+
+39:42 different Vector stores different tools
+39:44 
+
+39:44 um uh different databases things like
+39:46 
+
+39:46 that and and so that's a big that's
+39:48 
+
+39:48 always been a big value prop of of Lang
+39:50 
+
+39:50 chain and why people use Lang chain um
+39:53 
+
+39:53 in Lang chain there uh also is a bunch
+39:58 
+
+39:58 of higher level interfaces for easily
+40:00 
+
+40:00 getting started off the shelf with like
+40:02 
+
+40:02 rag or or SQL Q&A or things like that
+40:04 
+
+40:04 and there's also a lower level runtime
+40:06 
+
+40:06 for dynamically constructing chains um
+40:09 
+
+40:09 and and by chains I kind of mean uh we
+40:13 
+
+40:13 can call them dags as well like directed
+40:15 
+
+40:15 directed flows um and I think that
+40:17 
+
+40:17 distinction is important because when we
+40:19 
+
+40:19 talk about L graph and why L graph
+40:21 
+
+40:21 exists is to solve a slightly different
+40:24 
+
+40:24 orchestration problem which is you want
+40:25 
+
+40:25 these customizable and controllable
+40:27 
+
+40:27 things that have loops both are still in
+40:30 
+
+40:30 the orchestration space um but I draw
+40:32 
+
+40:32 like this distinction between kind of
+40:34 
+
+40:34 like a chain and and and these cyclical
+40:36 
+
+40:36 Loops I think with L graph and when you
+40:39 
+
+40:39 start having Cycles um there's a lot of
+40:41 
+
+40:41 other uh problems that come into play
+40:44 
+
+40:44 one of the main ones being this
+40:45 
+
+40:45 persistent layer uh persistence layer so
+40:47 
+
+40:47 that you can resume so that you can you
+40:49 
+
+40:49 can kind of like uh uh has uh uh them
+40:53 
+
+40:53 running in the background um in kind of
+40:55 
+
+40:55 like an async Manner and so we're
+40:56 
+
+40:56 starting to think more and more around
+40:58 
+
+40:58 deployment of these long running
+41:01 
+
+41:01 cyclical human in the loop type
+41:03 
+
+41:03 applications and so we we'll start to
+41:05 
+
+41:05 tackle that more and more and then the
+41:07 
+
+41:07 piece that kind of like spans across all
+41:08 
+
+41:08 of this is Lang Smith um which we've
+41:11 
+
+41:11 been working on basically since the
+41:12 
+
+41:12 start of the company and and and that's
+41:14 
+
+41:14 kind of like observability and testing
+41:17 
+
+41:17 for llm applications um and so basically
+41:20 
+
+41:20 from the start we noticed that you're
+41:23 
+
+41:23 putting an llm at the center of your
+41:24 
+
+41:24 system llms are not deterministic
+41:27 
+
+41:27 got to have good observability and
+41:29 
+
+41:29 testing for these types of things in
+41:31 
+
+41:31 order to have confidence to to put it in
+41:33 
+
+41:33 production um so we started building L
+41:35 
+
+41:35 Smith works with and without Lan chain
+41:38 
+
+41:38 um there's uh some other things in there
+41:41 
+
+41:41 like a prompt Hub so that you can manage
+41:43 
+
+41:43 promps um a human annotation cue to
+41:46 
+
+41:46 allow for this human review which I
+41:47 
+
+41:47 actually think is crucially one like I
+41:50 
+
+41:50 think in all of this it's important to
+41:51 
+
+41:51 ask like so what's actually new here um
+41:55 
+
+41:55 and I think like the main thing that's
+41:56 
+
+41:56 new here is these llm and I think the
+41:58 
+
+41:58 main new thing about llms is they're
+41:60 
+
+41:60 non-deterministic so observability
+42:01 
+
+42:01 matters a lot more and then also testing
+42:03 
+
+42:03 is a lot harder and specifically you
+42:05 
+
+42:05 probably want a human to review things
+42:07 
+
+42:07 more often than you want them to review
+42:09 
+
+42:09 like a software test um or something
+42:11 
+
+42:11 like that um and so a lot of the tooling
+42:13 
+
+42:13 we're adding in Lang Smith kind of helps
+42:15 
+
+42:15 at
+42:16 
+
+42:16 that actually that Harrison do you have
+42:18 
+
+42:18 a turistic for where existing
+42:21 
+
+42:21 observability existing testing you know
+42:24 
+
+42:24 existing fill-in the blank will also
+42:26 
+
+42:26 work for llms versus where llms are
+42:29 
+
+42:29 sufficiently different that you need a
+42:31 
+
+42:31 new product or you need new architecture
+42:32 
+
+42:32 you need a new
+42:34 
+
+42:34 approach yeah I think I've I've thought
+42:37 
+
+42:37 about this a bunch on the testing side
+42:41 
+
+42:41 from the observability side I feel like
+42:43 
+
+42:43 it's almost like I I feel like it's
+42:46 
+
+42:46 almost more obvious that there's
+42:47 
+
+42:47 something new that's needed here and I
+42:48 
+
+42:48 think that's maybe that's just um
+42:52 
+
+42:52 because of these multi-step applications
+42:54 
+
+42:54 like it's you just need need a level of
+42:58 
+
+42:58 observability to to get these insights
+43:01 
+
+43:01 and I think a lot of the like data dog I
+43:03 
+
+43:03 think is really aimed Dat Dog is great
+43:05 
+
+43:05 kind of like monitoring but for like
+43:07 
+
+43:07 specific traces um I don't think you get
+43:10 
+
+43:10 the same level of insights that you can
+43:12 
+
+43:12 easily get with something like Lang
+43:14 
+
+43:14 Smith for example and I think a lot of
+43:16 
+
+43:16 people spend time looking at specific
+43:18 
+
+43:18 traces because they're trying to debug
+43:19 
+
+43:19 things that went wrong on specific
+43:21 
+
+43:21 traces because there's all this non-
+43:22 
+
+43:22 determinism that happens when you use an
+43:24 
+
+43:24 llm um and so observability has always
+43:28 
+
+43:28 kind of felt like um there's there's
+43:32 
+
+43:32 something new to kind of like be built
+43:34 
+
+43:34 there testing's really interesting um
+43:37 
+
+43:37 and and I've thought about this a bunch
+43:39 
+
+43:39 I think there's two maybe like new
+43:40 
+
+43:40 unique things about testing um one is
+43:45 
+
+43:45 basically this idea of like pairwise
+43:47 
+
+43:47 comparisons so when I run software tests
+43:50 
+
+43:50 I don't generally like compare the
+43:52 
+
+43:52 results of like it's either pass or fail
+43:55 
+
+43:55 for the most part um and if if I am
+43:58 
+
+43:58 comparing them maybe I'm like comparing
+44:01 
+
+44:01 like the latency spikes or something but
+44:03 
+
+44:03 it's not like necessarily pairwise of
+44:05 
+
+44:05 two individual unit tests um but if we
+44:08 
+
+44:08 look at like some of the evals for llms
+44:12 
+
+44:12 the main uh the main eval that's trusted
+44:15 
+
+44:15 by people is this llm CIS uh kind of
+44:17 
+
+44:17 like Arena chatbot Arena style thing
+44:19 
+
+44:19 where you literally judge two things
+44:21 
+
+44:21 side by side and so I think this
+44:22 
+
+44:22 pairwise thing is pretty important um
+44:25 
+
+44:25 and pretty distinctive from kind of like
+44:27 
+
+44:27 tradition
+44:28 
+
+44:28 software tting um I think another
+44:30 
+
+44:30 component is basically depending on how
+44:33 
+
+44:33 you set up evals you might not have kind
+44:36 
+
+44:36 of like a 100% pass rate um at any given
+44:39 
+
+44:39 point in time and so it actually becomes
+44:41 
+
+44:41 important to track that over time and
+44:43 
+
+44:43 see that you're improving or at least
+44:44 
+
+44:44 not not regressing um and I think that's
+44:47 
+
+44:47 different than software testing because
+44:49 
+
+44:49 you generally have everything kind of
+44:51 
+
+44:51 like
+44:52 
+
+44:52 passing um and then the the third bit is
+44:56 
+
+44:56 just a human in the loop component um so
+44:59 
+
+44:59 I think you still want humans to be
+45:01 
+
+45:01 looking at the results
+45:04 
+
+45:04 of like it I don't wants maybe the wrong
+45:08 
+
+45:08 word because there's a lot of uh
+45:10 
+
+45:10 downsides to it like it takes a lot of
+45:12 
+
+45:12 human time to look at these things but
+45:13 
+
+45:13 like those are generally more reliable
+45:16 
+
+45:16 um than having some automated system if
+45:18 
+
+45:18 you compare that to software testing
+45:20 
+
+45:20 like software can test whether 2 equals
+45:22 
+
+45:22 2 just as well as I can tell that 2
+45:24 
+
+45:24 equals 2 by looking at it and so
+45:25 
+
+45:25 figuring out like how put the humans in
+45:28 
+
+45:28 the loop for this testing process is
+45:30 
+
+45:30 also really interesting and and unique
+45:32 
+
+45:32 and new I think I have a couple of very
+45:35 
+
+45:35 general questions for
+45:37 
+
+45:37 you cool I love general
+45:41 
+
+45:41 questions um who do you admire most in
+45:45 
+
+45:45 the world of
+45:47 
+
+45:47 AI um that's a good question I mean I I
+45:51 
+
+45:51 I think what open AI has done over the
+45:53 
+
+45:53 past year and a half is incredibly
+45:55 
+
+45:55 impressive um so so I think um Sam but
+45:60 
+
+45:60 also everyone there um I think across
+46:04 
+
+46:04 the board has has has I have a lot of
+46:07 
+
+46:07 admiration for the way they do things I
+46:09 
+
+46:09 think Logan when he was there did a
+46:11 
+
+46:11 fantastic job at kind of like some of of
+46:13 
+
+46:13 bringing these Concepts to folks Sam
+46:15 
+
+46:15 obviously deserves a ton of credit for a
+46:18 
+
+46:18 lot of the things um that has happened
+46:20 
+
+46:20 there uh what lesser known but like
+46:23 
+
+46:23 David Dohan is a researcher that I think
+46:25 
+
+46:25 is absolutely incredible he did some uh
+46:28 
+
+46:28 early model Cascades papers and I
+46:30 
+
+46:30 chatted with him super early on in in
+46:33 
+
+46:33 Lang chain and he's been like he he's
+46:36 
+
+46:36 he's like he's been incredibly uh just
+46:40 
+
+46:40 influential in the way that I thinks
+46:41 
+
+46:41 about things and so I have a lot of
+46:42 
+
+46:42 admiration for the way that he does
+46:44 
+
+46:44 things I separately you know like I'm
+46:47 
+
+46:47 I'm touching all all different uh
+46:49 
+
+46:49 possible answers for this but I think
+46:51 
+
+46:51 like uh uh Zuckerberg and and Facebook
+46:54 
+
+46:54 like I think they're crushing it with
+46:56 
+
+46:56 with llama and a lot of the open source
+46:58 
+
+46:58 um and I also think like as a CEO and as
+47:01 
+
+47:01 a leader the way that he and the company
+47:03 
+
+47:03 have embraced that has been incredibly
+47:05 
+
+47:05 impressive to watch so I have a lot of
+47:07 
+
+47:07 admiration for that um speaking of which
+47:10 
+
+47:10 is there a CEO or a leader um who you
+47:12 
+
+47:12 try to model yourself after or who
+47:14 
+
+47:14 you've learned a lot about your own
+47:16 
+
+47:16 leadership style
+47:18 
+
+47:18 from it's a good question I think um I I
+47:22 
+
+47:22 I definitely think of myself as more of
+47:24 
+
+47:24 kind of like a a product Centric kind of
+47:27 
+
+47:27 like
+47:27 
+
+47:27 CEO um and so I think like Zuckerberg
+47:32 
+
+47:32 has been interesting to watch there
+47:33 
+
+47:33 Brian chesy I I saw him uh talk or I
+47:36 
+
+47:36 listened to him talk at the seoa base
+47:38 
+
+47:38 camp uh last year um and really admired
+47:40 
+
+47:40 the way that that he kind of like
+47:42 
+
+47:42 thought about product and thought about
+47:44 
+
+47:44 kind of like company building um and
+47:48 
+
+47:48 so Brian's usually my go-to answer for
+47:51 
+
+47:51 that um but I can't say I've gone
+47:54 
+
+47:54 incredibly into the depths of everything
+47:56 
+
+47:56 that he's done
+47:58 
+
+47:58 if if you have one piece of advice for
+48:01 
+
+48:01 current or aspiring Founders trying to
+48:03 
+
+48:03 build an AI what would your one piece of
+48:05 
+
+48:05 advice for them
+48:07 
+
+48:07 be um just just build and just try
+48:11 
+
+48:11 building stuff it's so it's it's so
+48:13 
+
+48:13 early on that like it's so early on
+48:16 
+
+48:16 there's so much to be built yeah like
+48:19 
+
+48:19 you know GPT 5 is going to come out and
+48:21 
+
+48:21 it will probably make some of the things
+48:22 
+
+48:22 you did not relevant but you're going to
+48:24 
+
+48:24 learn so much along the way and this is
+48:29 
+
+48:29 I strongly strongly believe like a
+48:31 
+
+48:31 transformative technology and so the
+48:32 
+
+48:32 more that you learn about it better one
+48:35 
+
+48:35 quick anecdote on that um just because I
+48:38 
+
+48:38 gotta kick out of that answer I remember
+48:40 
+
+48:40 at our first AI asent in early 2023 when
+48:43 
+
+48:43 we were just starting to get to know you
+48:45 
+
+48:45 better um I remember you were sitting
+48:48 
+
+48:48 you were sitting there pushing code the
+48:49 
+
+48:49 entire day like like people were up on
+48:52 
+
+48:52 stage speaking and you were listening
+48:53 
+
+48:53 but you were sitting there pushing code
+48:55 
+
+48:55 the entire day and so so when the advice
+48:57 
+
+48:57 is just build you're clearly somebody
+48:59 
+
+48:59 who takes your own
+48:60 
+
+48:60 advice I think well that that that was
+49:03 
+
+49:03 the day open AI released like uh plugins
+49:05 
+
+49:05 or something and so there was a lot of
+49:06 
+
+49:06 scrambling to be done and I don't think
+49:08 
+
+49:08 I did that at this year's Sequoia asent
+49:10 
+
+49:10 so I'm sorry to disappoint and regress
+49:12 
+
+49:12 some that
+49:16 
+
+49:16 capacity uh thank you for joining us we
+49:18 
+
+49:18 really appreciate it
+49:28 
+
+49:28 [Music]
+49:33 
+
+49:33 [Music]

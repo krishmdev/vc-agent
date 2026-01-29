@@ -1,0 +1,368 @@
+00:00 look I think the most important thing um Beyond is empathy if you're trying to make great products you need to have
+00:06 great taste um you need people who are making to so deeply understand um really
+00:12 the experience of a building the pain that people are going through um you know what they're actually you know the
+00:19 customer at the end is actually doing order to run your business that you understand it not just decently but in some cases better uh than the customer
+00:26 has and I think only then can you actually build products that are so welld designed that they can actually
+00:33 automate the task they can do it more efficiently and I think part of why you know as we're releasing products
+00:38 Engineers are on the call with customers when we ship um they're accountable for metrics and How It ultimately performs
+00:44 um and and is you really won't find people at ramp who um haven't talked to customers um with any level of recency
+00:51 and I I think that's just a core part of um what makes great product cultures
+00:57 [Music]
+01:12 joining us today is my friend Eric Gman co-founder and CEO of ramp which offers companies AI powered Financial tools to
+01:18 manage their spending and expense processes many companies rush to add chat Bots after the chat GPT moment but
+01:24 Eric has a different take he doesn't think that chat Bots are the right form factor for everything I mean who wants to chat with their expens events report
+01:31 he thinks zero touch automation that works invisibly in the background can be much more valuable in many cases in fact
+01:37 he thinks a better analogy is to self-driving cars or in this case self-driving money we'll talk about
+01:42 ramp's approach to building an AI and how Eric sees the space evolving welcome to the
+01:48 show Eric we are so happy that you're here uh we you know the original
+01:54 invitation for this podcast as you know happened over dinner and we were so happy that you decided to do it with us so um we have tons of questions for you
+02:02 about the future of AI uh and how it's going to impact finance and businesses
+02:08 but for the very few people that don't know can you mind do you mind just saying a few sentences on what ramp is
+02:13 and what you all do for sure I mean look we're we're dedicated to making companies more more profitable and operate more smoothly the way you can
+02:20 think about ramp is you know we built a command and control system for company finances so from one place you can issue
+02:26 cards manage approvals make payments of all kinds and even automate closing your
+02:31 books and so for your Finance teams it means your you know your operations are simpler you can automate a lot of
+02:37 business processes and it surpasses up data and Intelligence on how your company can spend less and so the upshot
+02:43 is the average company using ramp is able to save about 5% per year uh on
+02:49 their expenses which is pretty material um you know over the past five years we've been in business this is added
+02:54 into billions of dollars of savings and the equivalent of thousands of years of Labor that's been saved and so um
+02:59 whether it's um large publicly traded companies like Shopify virgin voyages Boys and Girls Club in America to 25,000
+03:06 other businesses in springing benefit today and a lot of what we're trying to do um is really answer the question of
+03:13 how do you make people more productive with their time uh and with uh with their money I love it I love it well one
+03:20 thing that you know I was surprised by before we get into you know how ramp is using AI you and Kareem you know I saw
+03:28 you guys posted this the other day you built an AI agent in 2015 at parabus I
+03:34 mean this is way before it was cool what did you build back then and maybe tell
+03:39 us about that and then we want to hear about what you've built now and how it's changed over the last nine years sure
+03:45 yeah yeah for so um parabus was a much um it was a very simple tool and I think
+03:50 it is fair to call it an agent basically um uh go back to a decade ago if you
+03:57 were buying something online whether it's at Amazon best bu whatever all these stores would guarantee that if you
+04:02 bought some TV for 1,000 bucks the next day it went on sale for $900 you could get the difference back if you ask them
+04:09 these were price adjustment policies and so we built it was an app that integrated with your email software your
+04:14 Gmail yaku whatever you used scann your inbox for receipts track the prices of
+04:19 what you bought it uh and if there was a price drop you were eligible for something different it generated an email to sound like you sent it to the
+04:27 store the store customer service respond and you know you'd wake up to $100 back
+04:33 the next day um and so that was it it was this it was this agent that lived in your inbox and and help you help you
+04:39 save money and um well I I guess I would say like a couple of things I mean first
+04:45 I think it you know many people are thinking about agentic Ai and how is it
+04:51 going to change tools and this new use case I I would argue it's actually been around for a long time this was a decade
+04:56 ago um you know millions of people use this in order to get price drop refund from from stores and retailers but it
+05:02 was a very narrow use case um when I think about AI today uh in
+05:08 2024 um I think that the sets of these cases where computers can be doing work
+05:13 on your behalf um is far easier um it's not just G to be these narrow surfaces like price adjustment guarantees it's
+05:20 really intensive and hard to do that but more generalized reasoning um helping your Finance team run more efficiently
+05:26 maybe not just asking for Price refunds but maybe even helping you negotiate um and running more complex analyses but I
+05:33 I think this this primitive of software that does things on your behalf um has been here for for a while and I think
+05:38 he's going to be growing pretty quickly that's a really good segue into what you're building now at ramp I'd love to
+05:44 learn more about your vision for ramp by AI yeah for sure I mean first like you
+05:49 know forget even just just as ramp AI like we're we we're we're dedicated to this mission of helping people um spend
+05:56 less money and spend less time I think we're very excited about AI because it's it's a new set of tools that enables us
+06:02 to do this um you know but ultimately comes down to like where where is the paino um are there processes in your
+06:09 business that result in your company spending more time uh than you need to um or are there um areas in your
+06:15 business where you're spending too much money um and so uh you know when we think about um where things are going to
+06:21 go o over time you know so much of running a finance team and and R you know this from your time as being um CFO
+06:28 at instacart um there's a lot of TD in monotony um you know you you're trying to grow your business and yet when you
+06:34 look deep in your Finance team you'll find people who are um auditing expense reports by hand they're downloading
+06:40 spreadsheets in order to be able to tag and classify vendors they're rerunning analysis uh time and time again uh and
+06:46 what we're trying to do at ramp our vision is how do you take these tedious and monotonous tasks and either through
+06:52 better design integrated tools automate this and so um the simple way to understand this is instead of eating two
+06:58 apps to buy one thing your American Express and your concur um you know where people are going in and out and
+07:04 adding their receipts what if it's one tool um you tap uh your your ramp card and through zero Touch where we will
+07:11 pull the receipt from the merchant from your email your expense report uh is not just easier to do but it's done for you
+07:16 so there's a lot of cases of zero touch expenses um better categorization um we
+07:21 sort of apply large language models to the transaction data itself as well as your general ledger so we can
+07:27 autocomplete expenses um for you certainly faster and for the vast majority of customers more accurately so
+07:33 your books are are effectively doing themselves uh and over time um Ram
+07:38 should be able to to point to ways um for your business to operate um vastly
+07:43 more efficiently um uh same sets of vendors better prices same business processes done automatically for you and
+07:50 so there's a lot in in just the the manifestations of how ramp uh helps your finest team run uh more efficiently
+07:57 there's also ways we're trying to experiment with even how should people interact with ramp should it be something where you're prompting ramp to
+08:02 do these things or should it be taking care of these things for you and doing work on your behalf and so we can go either way but that's that's a loose
+08:09 framework of how we think about it and how do you decide what's in scope like anything that makes a finance team more
+08:15 efficient is that what's in scope for you or what what's in scope and what's out of scope yeah definitely I mean I I
+08:21 think I think Sun that's probably the right way to put it um you know it really is Will can we create a product
+08:28 that should save time money for for R customers if so I think it's in scope um
+08:35 you know today ramp is is largely used for payments out of a business um so I think card expenses bill payment
+08:41 expenses um business processes on top of that um but I when you think about um
+08:47 you know over time building towards self-driving money um you know finance department that's that's improving
+08:54 itself I think thinking about higher yields um more efficient collections um
+08:59 to even more efficient recordkeeping um I think are all things that we're we're thinking about uh over time so I would
+09:06 argue there's there's very little uh out out of scope and I I I would say in the same way um you know I we think about
+09:13 ourselves more as a productivity company than we do is is is just a money company and so anything that makes the
+09:18 productivity of capital in your business go higher are things that that we should be thinking about Eric what is the intuition then on your side you
+09:25 mentioned you you're thinking about how folks are actually going to use AI within ramp right and you said the them
+09:30 prompting ramp versus things happening in the background on their behalf how do you think it's going to play out I I get
+09:35 that you guys are going to test it and you're going to listen to customers but where do you think it's going to go so I
+09:41 I mean maybe just like a couple of notes step stepping back you think about the first phase um you know what happened
+09:47 sort of after chat GPT came out suddenly there was a chat bot slapped on everything um you know and and people
+09:54 say finally it's your app and you can talk to it and you know we i' I've personally never met anyone who says you
+09:59 know I just wish I could chat to my bank account um I wish I could chat with my expense report you know and so I would
+10:04 say like I I totally get the skepticism of like the first set of people who who find um uh this really silly and I I
+10:13 think that we've tried to classify internally and when we think about the sets of user experiences probably into
+10:19 two buckets I mean the first we think a lot about this Paradigm of of really zero touch uh AI um and I would argue
+10:27 even parabus was was was an early example of this um um the interaction
+10:32 was actually no ux you would sign up you'd link your email and that was it uh and you'd wake up the next day and it
+10:38 was done for you and there's a whole category of experiences like this you tap your card your expense report is
+10:45 done for you um uh your accounting is done um on your behalf um we're
+10:51 suggesting memos for you to click one two three and so we're trying to predict and understand what are the user
+10:57 interaction inputs we we may need can we get to a level of confidence where we can do this all the way and can
+11:04 we expand the surface area of these and so there's a whole set of things that happened from the administration to the
+11:10 analyses to the operational closure of of tasks that you can do and so I think there's a large category there we can
+11:16 unpack and talk about the expansion surface area and there's this next surface area uh we think you know
+11:24 internally we think about it as agentic AI where you're going to want to um effectively Pro
+11:30 um some kind of outcome maybe monitor uh what's being done um along the way or
+11:36 once you you know get a level of trust um have that done for you um so explain
+11:42 the use case a few weeks ago uh we launched right after launch of GPT 40 um
+11:47 the new multimodal model from openi which um had Vision Audio uh and text um
+11:54 understanding capabilities um we created a way for um uh customers to just ask
+11:60 ramp what it wanted done and ramp would show you how to do it and do that on
+12:05 your behalf so you could say ramp um you know I'd like to issue a card um with a
+12:10 budget of $50 that only can be used uh at Starbucks go and then effectively um
+12:18 the larg language R could read everything that's on your screen everything you're seeing and would guide you through steps in order to how to do
+12:24 this we call this the tour guide so which you click here enter in this text and you could monitor this
+12:30 um and you can see with extreme accuracy um again we didn't build into the interface click here this wasn't a
+12:35 managed demo um uh the reasoning of large models are now capable to go and
+12:41 do that for you and I think there's a whole class of of services and I would argue the majority of businesses actually done this way uh the interface
+12:48 that most people think about this today is um I think as you've you've joked once before rubby um you know you hire
+12:55 an analyst and you say hey I want this thing done go figure this out for me and um you know that's your interface
+13:02 there have been forms of AI that have been around a long time as I as I mentioned to you yeah exactly you know
+13:07 you you've had a large language model before it's an anal SP no but I think that's actually a good way of of of
+13:14 thinking about the these things right um um I'd actually say it's it's kind of strange that the status quo today is you
+13:21 know people are trained to learn how to use your app uh instead like I I think
+13:27 it it makes more sense to me that people should you thinking about how to run their business how to sell the customers how to you know find Roi versus how to
+13:35 manage the intricacies of how your app is designed uh and I think um done right
+13:40 you should be able to say this is what I'm trying to accomplish go get it done in the early era um you may monitor that
+13:46 but over time as you build trust in that process and the reasoning capabilities increased you'll see it go and I might
+13:51 draw an analogy even to you to um the progression in self-driving cars you
+13:57 know when you think a decade ago around the hype of you know self-driving You' have people sitting in the driver's
+14:02 seats ready to take over you know with a steering wheel and now they're Whos all around uh the Bay Area and it's strange
+14:09 when there's someone in the seat um because the capabilities are actually more accurate and I think there's going to be sets of tasks over time that will
+14:15 get handed off um and um I you know you can have an agent its own driver driving
+14:21 parts of your organization where there's um High Fidelity so I'll pause there by the way there's so many jokes I could
+14:27 make about uh rby Hing off Works other but I'll hold myself back um you know
+14:32 some of us have been focused on Roi for longer than others so yeah I I I'm not going to apologize for that um Eric if
+14:40 you had to guess like a lot of what you just described was almost more conversational the way you kind of get
+14:46 an agent to do something like is the way you go the way that Ry would go talk to talk to a teammate um what does do you
+14:54 think that means that kind of software interfaces as we know them in terms of you know buttons and knobs Etc kind of
+14:59 go away and Fade Into the background or how do you think that all plays out and like what does a like AI first user
+15:04 experience look like first yes I do I do think so very very much so and I think
+15:10 that great design um actually is um about understanding you know the job to
+15:16 be done so well um that you can reduce steps you can make things easier more
+15:22 intuitive and effortless to to get things done um and um you know I I I I
+15:29 think balancing um uh you know not only um really the range of powerful tools
+15:35 that you can do against um and outcomes that you want to drive to the Simplicity of interfaces is always going to be
+15:41 attenion um um but we I I would say we think about that quite quite a bit um uh
+15:47 you know internally at ramp and so what I would say is I think you will want to be able to audit to understand uh
+15:54 functionally what are these powerful tools doing for you but Don right um yes
+15:59 I I I think that it's going to be more um in many cases just prompting here's the outcome I want to drive um uh and
+16:06 the tool will go and drive it which I just as like a a brief aside
+16:11 like for us um you know I'll put it way there's over 25,000 businesses using
+16:19 ramp um some are run by sophisticated Finance teams um you know others are um
+16:26 they're running small businesses um there's lots of complexity and baggage that prevent them from focusing on the
+16:33 areas that really generate a lot of value from them meeting new clients um writing better um pitches investing in
+16:40 the in the parts of of their business that that generate return building the next grade product um in so much time I
+16:46 think is is stolen by people having to learn an amalgamation of tools stitching together processes and done right the
+16:53 world should feel more frictionless it should feel more smooth um uh and and so I would say like I I think if we can't
+16:59 accomplish that I think it's been a failure as an industry to deliver that for for people well one thing Eric that
+17:05 I'm curious about is you think about um ramp has a lot of pride in its culture
+17:10 right and you know it's talked about externally it's something that you guys are known for Speed and quality and real
+17:16 customer Obsession um how did you build the culture and Engineering in particular you and Kareem
+17:23 that sort of Embraces wanting to implement Ai and wanting to do it well what did you guys do there because I
+17:30 think that there are places that are a bit more resistant to change and you know less embracing of a change like
+17:36 this well so a couple of things I mean I I would go back to again like what what is ramp like we're not some Aid driven
+17:43 Finance tool that we're going marketing do you want do you want to adopt AI in your Finance Team No it's it's um we
+17:49 exist to save you time and money we lead with the benefit we talk about the outcome that we're trying to drive and we put these in simple terms but I would
+17:56 I would say it's it's actually not possible uh to use ramp today uh without using AI um when people say that it's so
+18:04 easy um to submit expense reports or that um suddenly my books are getting closed faster it's often because AI is
+18:11 inserted at lots of different parts throughout the the the the process and so what I would say is um I think f one
+18:17 of the first things that we did to to try to get at that was focus on what is the problem we are trying to help
+18:23 businesses operate you know using less time um fewer hours uh and less Capital
+18:30 um and AI was a means to an end but was not the end so we didn't want to have technology in search of a problem but
+18:36 really focus on what is the problem then once you start to decompose the question of like what are all the areas we you
+18:42 know that are wasting lots of time it turns out a lot of time it's it's process automation um and and so um I I
+18:49 think it just became like the right tool for the job in in so many different cases um and I think rather than trying
+18:55 to say would you like to use this tool instead you say would you like to you know um your expense reports this
+19:02 problem um and I think that the other thing too is is in so many businesses I
+19:09 I know there there are a lot of Founders listening to this um I think abstract
+19:14 makers away from the problem directly um uh which is to say you know you can go
+19:21 to a small startup with 10 people and everyone's talking to users um and then somehow you go to a company with 500 to
+19:29 a thousand people um and you you know try to figure out who's talked to a customer over the last week um hopefully
+19:36 all the sales people um but um you know you start talking in in marketing and
+19:41 engineering and people haven't done it um and and and what I would argue um
+19:47 look I think the most important thing um Beyond is empathy if you're trying to make great products you need to have
+19:53 great taste um you need people who are making to so deeply understand um really
+19:59 the experience of a building the pain that people are going through um you know what they're actually you know the
+20:06 customer the is actually doing in or to run your business that you understand it not just decently but in some cases
+20:11 better uh than the customer has and I think only then can you actually build products that are so welld designed that
+20:19 they can actually automate the task they can do it more efficiently and I think part of why you know as we're releasing
+20:25 products Engineers are on the call with customers when we ship um they're accountable for metrics and How It ultimately performs um and and ARG is
+20:33 you really won't find people at ramp who um haven't talked to customers with any level of recency and I I think that's
+20:39 just a core part of um what makes great product cultures Eric since you've been building with AI for so long do you
+20:45 think that you know the last year or two with these Foundation models has been a kind of discontinuous Step change in
+20:51 terms of your Ambitions and what you're building with AI and and in what way or do you think it's kind of just you know
+20:57 gradually compounding more and more more and more AI magic in the product I
+21:02 I I think it's been a step function change um for sure um at least as uh um
+21:08 you know practitioner in in the market you know not not a researcher and and I think it's become increasingly obvious
+21:14 to to us that you know this is the biggest shift to productivity certainly in in in my lifetime um and I I think it
+21:22 has all sorts of ramifications for for for Builders right and and people building software um
+21:29 um you know when I think about like what are the the the sources of durability and Moes in a lot of software businesses
+21:34 sometimes it's you know there's more features there's more Integrations um uh there's lock in you've been using my
+21:41 tool for 10 years and it's really hard to take all your data out um and I think is now um today functional you can have
+21:49 human level reasoning and in some cases super human level reasoning uh available through an API I think it has
+21:56 profound uh ramifications for people building businesses um and and and I
+22:02 think it's it's expressed not just in the ability to uh understand um large
+22:07 sets of data and and act on it um but it's it's it's a wider variety I I think that there's you know I can say you know
+22:15 beyond even just the the services we're providing to ramp um part of how we've grown so quickly is we have ai
+22:20 Automation in Outreach um or we have sdrs that are multiple times more productive than than at competitors um
+22:27 it's changed how we do customer service um you know it changed how we do copyrighting um we can listen to 100,000
+22:33 sales calls at once um and ask what did 100,000 people think um it's just things
+22:38 that weren't possible um you know even just a few years ago and and so I I I think um it's changed really rapidly and
+22:45 I I I I I don't think most people are are are really I think people are experimenting in some cases with with
+22:52 chat GPT which is great um but I think far too few people have actually started to incorporate um into the crevices of
+22:60 how they're actually working uh day-to-day and and have felt it but I I I think it should accelerate when you
+23:05 think about that Eric you know just you're talking about the rate of change and you know how people are kind of scratching the surface on this what do
+23:12 you think the job of a forward-thinking excellent Finance leader looks like five
+23:17 years from now pick the time frame you know versus today you know how do they spend their time today how do you think
+23:23 they will in the case that they incorporate ramp they lean into Ai and
+23:28 they um they sort of you know maximize what this can do well I mean first I I
+23:35 think it's incumbent on on anyone whether it's a finance leader someone building tools um an engineer a designer
+23:44 like I think people should be thinking about you know really automating all the parts of the job um maybe you don't like
+23:51 or maybe that are low value um uh because I I think there's a whole class
+23:56 of problems in in in Acts and doing work um that actually can be automated now um
+24:02 and I I would I think this is something like I I've always internalized and appreciated from our conversations Revy
+24:08 of of like I think that great leaders are able to not just like create focus
+24:13 and urgency but identify like where there's outsized returns to to our times um and I think what's really true in a
+24:20 lot of Finance organizations is this yes maybe that the CFO has has the time and focus on on where is their value but you
+24:26 look at actually the calendars and What's happen in a lot of the rest of the team it's a lot of repetition okay
+24:32 it's it's it's um the month has closed we're going to spend the first six days you know it's eight in bad cases 15
+24:39 right um tagging transactions downloading spreadsheets ma matching things into it and that closes it's done
+24:46 and finally just in the last five days of the of the month you're able to do the real work the reason you got into
+24:51 that um I think people should be thinking now about how do I really take those tasks which are roote intensive
+24:57 and turn that process it's a more automated process we be thinking about I think if you're if you're doing this
+25:02 right I really do believe um you know in five years from now um you know this
+25:08 these work streams will tend to be more strategic more insightful um more around
+25:14 where's their creation you know value created in a business um and having people really obsess over that uh even
+25:21 more entirely um and I think to get there um it's about how do you automate um the processes how do you design a
+25:28 more efficient system in the interim Eric what do you think happens when we have a more efficient system like is
+25:34 everyone just out on the golf course or are we going to find new ways to work hard it's um look I for me I I happen to
+25:41 think a lot of purpose in life is is creation I think people build tools I think you know want to Mo move things
+25:46 forward and and so uh look don't get me wrong I'm sure people will find more more time for for leisure but you know I
+25:53 I think of it um I think of it that there there was a really interesting um there was something that was making the
+25:59 rounds a few months ago I need to find it I think it was a a set of Statistics that the number of bookkeep there was a
+26:04 crisis uh in the US how the number of bookkeepers had dropped by I think over the the last 10 to 20 years like a
+26:11 million less bookkeepers that were employed um and um people saying what
+26:16 what was happening to all the bookkeepers and it turned out if you looked at job descriptions for financial analysts um uh strategist CFOs that had
+26:24 grown by almost a million um and functionally there really wasn't much of a change people were doing different
+26:29 things rather than tagging tabulating doing low value tasks people I think had
+26:35 moved to a higher level abstraction and doing uh more valuable work for for for a business and I I think um I actually
+26:42 think a lot of that will will happen um I think there are certain levels of work that are uniquely human that are
+26:48 uniquely high value um and frankly to I I think in many cases much more
+26:53 fulfilling um and I think that for for those who are for or Le leaning I I I think I think there's going to be much
+27:00 more of that um you know over over time and so you know that's how how I think about things um for for sure I mean I I
+27:07 think there's also going to be strange things too where there's certain creative work that um computers in some
+27:13 cases will will do better but um you know I I I I do think that um part of
+27:19 what gives people purpose or at least for for me excitement like has to do with um you know creation and I think
+27:25 that's always going to be a very human thing I mean that's as good of a segue as you can imagine for my next question
+27:32 which is Eric you are a Founder through and through and you are someone that a lot of other Founders probably look up
+27:38 to what advice do you have for folks for creators for makers for Builders given
+27:44 the moment we're in you know how do you meet it what should you go and build how
+27:49 do you approach this if you're someone who wants to be a founder or a builder well first I mean like part of being a
+27:55 founder and a builder I I think is just about like running this very longstanding and and continuous race I
+28:03 think that great companies are are built over many years and and and decades and
+28:08 I I hope ramp is the last company that I ever I ever work on I I I want to be working on it for a long time and you
+28:14 know I think there's there's always these questions of what's changing in the world and how is that going to reset certain industry I think there's a lot
+28:20 of opportunities and um we can talk about like the the the places to be spending time but I actually think when
+28:27 you look at ramp and part of what's made it work is really been starting of what are the Timeless truths that are not
+28:33 going to change whether it's now or 10 years from now or 100 100 years from now
+28:38 I can't imagine you know that a 100 years from now people would say you know like I I I wish to to paraphrase Jeff
+28:45 bra this like I just wish you would raise prices on on on us Amazon yeah or I I wish you would deliver these Goods a
+28:50 little bit more slowly um I think this is very much the case for for ramp I think people want to you know no no
+28:56 matter what they're creating if you can create great work with less effort um less time fewer dollars I think that
+29:03 always going to be is always going to be in style and so I would say I would start first with being curious about
+29:10 people's problems in the Timeless um who are real customers that could serve what are real businesses and what are actual
+29:17 problems that they have now um and what are these problems that are not going to go away and then I think you start to
+29:24 discover and uncover new technological shifts that can help help you solve this
+29:29 in a new and unique or in some cases uh you know very disruptive way um and so I
+29:36 I would say like you know focus on the Timeless would be um you know my my top advice of this yeah a friend of mine uh
+29:43 has this great quote which is he's like we try to be timeless rather than timely because the Ely it just you know it
+29:50 evaporates and it's ephemeral where and I think that the way you all are building ramp you know certainly fits
+29:55 with that yeah thank you okay we're going to close out with some rapid fire questions um maybe for starters what is
+30:02 your favorite AI app o ramp oh my gosh well to be honest
+30:09 with you like I I I I've been really interested just from like a ux perspective and just like how it's bent
+30:16 our thinking uh cognition Labs with Devon I mean really what they're trying to do is build an AI engineer and uh I I
+30:24 know they're working hard at that um but they took this agentic use case and had a few core Innovations they
+30:30 realized if you were going to hire a an an AI engineer to do work on your behalf well you would wanted to have access the
+30:36 tools that an engineer would have and you would want to be able to understand what it's doing um and so rather than
+30:43 just as a prompt and you see what it does it you know Devon has a notebook a planner just like any engineer and
+30:48 thinking through what is it going to do it has a browser um it's a search for things or to check stack overflow when
+30:54 it gets confused um has shell access um you know um and it's connected to your
+30:60 tools and so I think what's Most Fascinating about it is as it does things you can watch what Devon is doing
+31:06 what it gets right in the mistakes that it makes um and so I my app favorite app
+31:11 right now is is is that because it's it's taught me a new way to to look uh and think about design uh and how these
+31:18 tools may feel um over the coming years all right so over the next next part of the lightning round over the next five
+31:25 10 years other than Finance what other Industries do you think are going to change the most and by the way I really
+31:32 like the uh self-driving money or self-driving Finance term that you had earlier that was uh I hadn't heard that
+31:38 before it's uh what else is gonna go self driving yeah I I hope people make
+31:44 this come to life um look I for me like I I really hope healthc care um uh and I
+31:49 really believe it it will be I mean I think it's already changing uh radically how diagnosis is is done um you know I
+31:56 think a lot of uh whether or Wellness is taking large sets of data it's not just your annual checkup but if you can have
+32:02 continuous me uh you know measure measurement over many years and and decades uh that goes a long way I hope
+32:09 it does too I think you know for many doctors you know um it's a glorified not
+32:14 taking job there's very little in the way of diagnosis listening to patients and having time to spend and so I
+32:20 actually think you know that's one that can um actually returns some of the humanity to the to the care of it so um
+32:26 I'm very hopeful uh there for sure um yeah I think very obviously design and creation um uh I think it's no longer
+32:34 about uh what can you make um um and do you understand the tools in order to create but um you know can you make
+32:41 something that's fundamentally interesting that's intuitive and so I actually think it you know that becomes very interesting too so those would be
+32:47 um uh kind of the healthcare and and broader design ecosystems would be um
+32:53 probably for me um ones I think about now on the healthcare side I totally agree with you Eric for what it's worth
+32:59 because I think you think about how crazy it is that companies have you know dashboards that we look at every hour
+33:05 you know for leading indicators on what's going to happen and for our health we go to an annual checkup that
+33:11 maybe we don't even go to annually can you imagine if like all you looked at was your company's metrics once a year maybe just to see well I don't know
+33:18 how'd it go okay I guess everything's okay I mean the idea that we don't have a continuous look that is with the idea
+33:25 of it being you know know before you know right the leading indicator side is crazy and so I I agree and share your uh
+33:34 optimism and hopefully there's more than just glucose monitors that we can have I I hope so I mean w like if you just like
+33:41 totally like if you could only get a look at how your business is doing you know every year or every six months or
+33:48 it's going really badly and we're trying to figure it out like it's it's it's a mess like you want to find this stuff
+33:53 early and it's it's possible um what about within Financial Services uh
+33:58 you've you know you've built companies on both the consumer and Ne on the B2B side uh who else in financial services
+34:05 is doing interesting things with generative AI or like what are the Big Ideas in in like kind of the
+34:11 intersection of finance and AI that you wish you had time to explore and build so I think there's a couple maybe meta
+34:17 points that I that I would get at I mean first um one I I think just Financial Services
+34:24 a long long way to go right like um Mo like I think about our our
+34:29 competitors folks like American Express and Chase and City and all led by by wonderful people but their Founders wore
+34:35 top hats right like they've been around for a long time and as the world went from like no phones to flip phones to
+34:40 iPhones a lot of these things never really changed um and there was a class of businesses that if you were a bank
+34:46 you were allowed to move money and store money and if you weren't well you're part of the rest of the world um and I
+34:51 think it's been a big part of why it's moved so slowly and I what I would say is I think it's really wonderful that
+34:57 now it's not just Bank that that that that can can can do this because I think you can finally introduce great
+35:02 technology in in in in companies like ramp or yes we're a fintech but I think
+35:08 we're a productivity company I think we're a company that's interested in um how does time intersect with the
+35:14 movement of money um um and so whether it's directly uh in financial services
+35:20 or if it's disruptors from adjacent who are going to encroach I think it's about about time for for the whole sector to
+35:27 to get been optimized and so um I I I I know they wouldn't call themselves this
+35:33 and they probably would blush um and and say no we're not as a fintech company but I think apple right now is you know
+35:39 is truly a fintech innovator um because they're connecting the movement of money to um identification you know of who
+35:46 people are um you know they said in order to create um less fraud in the system um reducing friction dramatically
+35:54 um whether it's offline or or or in person um and I think are are are
+35:59 increasingly going to be able to connect to outcomes of times and so um there's a variety of folks but I actually think a lot of disruptors won't be from
+36:06 traditional finance companies would be my longwinded answer to you Sonia sorry for you're giving me too much time
+36:12 you're just letting me run on no that's awesome that's awesome um all right last
+36:17 question Eric who do you admire most in Ai and you're not allowed to say
+36:23 Sonia it's uh rbby it's got to be it has to be you r
+36:28 it's uh of course appreciate that that's it's been a great podcast we uh thanks for your time it's know present company
+36:36 excluded excluded yeah it's um look I I I just think um what sa Adella has done
+36:45 um for the creation uh of the category and how he's
+36:51 you know he's partnered with I think Incredible the Incredible team at open AI um you know to go from what was
+36:58 primarily research to uh in production and in um you know I I think in almost
+37:04 every aspect of computing today I think has been incredible um you know he's been an incredible Mentor um you know to
+37:12 to me and the ramp team and thinking about how can a gentic AI be designed uh over time I think is thinking um you
+37:19 know in much long larger Cycles um you know not just you know weeks and years but um truly decades and um you know I
+37:27 last I I think he's um person who's been through a lot and I think has a lot of sincerity and kindness in how he
+37:33 operates um um you know I haven't read it I think his book hit refresh is is
+37:39 excellent I think the way that he'd been able to partner deeply with all kinds of companies is is pretty inspiring and so
+37:44 um uh present company excluded um I think sa Adella would be um be my my
+37:50 Peck that is a fantastic answer and I I uh he is a very admirable person Eric
+37:56 thank you this was awesome we had a great time we learned a lot uh we learned a new expression uh in
+38:02 self-driving money uh self-driving finance and I think in all seriousness the the combination of uh Innovation as
+38:09 well as applicability uh is very unique so we are very very very happy uh that we get
+38:16 to be partnered with you guys [Music]
+38:31 [Music]

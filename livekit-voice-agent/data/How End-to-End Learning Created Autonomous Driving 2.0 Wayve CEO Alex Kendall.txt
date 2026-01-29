@@ -1,0 +1,401 @@
+00:00 You know, if you're building a vertically integrated robotic solution, maybe you can go deep. But our ambition is to be the embodied AI foundation
+00:07 model for all of the best fleets and manufacturers around the world. And uh and you know, to do that, you know,
+00:13 unless we want to overload the company by building a separate neural network for each application, we need to be able to generalize. We need to be able to
+00:19 immortise our cost over one large intelligence um and to be able to very quickly adapt to each different
+00:25 application that our customers care about. That's what what we're trying to push.
+00:46 Today we're talking with Alex Kendall, CEO of Wave about the shift from software 1.0 to 2.0 or from classical
+00:52 machine learning to end neural networks in autonomous driving. Wave sells an autonomous driving stack to auto OEMs
+00:58 similar to Tesla FSD, but for non-Tesla automobiles. Major car manufacturers globally like Nissan are choosing Wave
+01:05 to power their AV stacks. Alex started Wave back in 2017 when most self-driving software stacks were massive handcoded
+01:11 C++ code bases covering every possible edge case like navigating around double parked cars. Alex bet the farm from the
+01:18 beginning on an endto-end neural net approach to self-driving and on the use of synthetic data and world models as
+01:23 the ultimate path to generalization and scaling today that architecture is reshaping AV and all of physical AI
+01:29 including robotics. Enjoy the show. Alex, thanks for joining us on the show.
+01:35 Hey Pat. Hey Sonia. One of the things that is very special about your company is that it sort of typifies AV2.0 0 meaning a new
+01:43 architectural approach that I think is kind of demonstrated to be superior to
+01:49 the AV1.0 approach that people toiled with for so many years. Can we just
+01:54 start by defining what was AV 1.0? What is EV2.0? For sure. When we started the company in
+02:01 2017, the opening uh pitch in our seed deck was all about the classical
+02:06 robotics approach at the time was to take a perception, planning, mapping, control, essentially break down the
+02:12 autonomy problem into a bunch of different components and largely handgineer them. And our pitch was that
+02:18 okay uh we think that the future of robotics is not going to be a system that's handgineered to drive with a lot
+02:24 of infrastructure like high definitionition maps but instead uh we thought that the future of robots would
+02:29 be intelligent machines that have the onboard intelligence to make their own decisions. And of course the best way we
+02:35 know how to build an AI system is with end toend deep learning. So for the last 10 years we've been um promoting an
+02:40 approach a next generation approach AV 2.0 know that replaces that stack with one end to end neural network. Now, of
+02:47 course, uh uh that may seem more um obvious today, but it was it has been
+02:53 contrarian for for many many years, but I think today it's maybe unfair to make that uh they make that basic distinction
+02:58 because of course, you know, anyone who's worth a grain of salt will use deep learning in various parts of the stack. But what you see in more um
+03:06 incumbent solutions to autonomous driving is of course deep learning for perception and maybe for each different
+03:11 component but still a lot of hand interfaces, still a lot of infrastructure on high efficient maps and um perhaps you know reliance on a
+03:18 lot of hardware. Um so our solution is is is um you know still somewhat moved
+03:24 on but today rather than just being an end to network today of course we start to talk about foundation models. you talk to start to talk about more of a
+03:31 general purpose intelligence, one that can um understand not just how to drive that car but many cars with different
+03:37 sensor architectures with different use cases. And so really it it all boils down to how do we build the most
+03:43 intelligent um robot that can scale uh without needing um ownorous
+03:48 infrastructure. So Wave is sensor inputs, motion output,
+03:55 gigantic neural net in the middle. That's right. at a very a very a very um uh uh simple level. But some of the
+04:01 interesting things you see that are maybe different from the story we've all heard with large language models is with
+04:06 autonomous driving of course there are some some interesting new factors. One is uh of course safety. The system we
+04:13 need to make sure is safe by design. And what that means is that you know we can't just pump more data in and and
+04:19 hope that hallucinations go away. But we need to design a a a architecture that is still end to-end data driven but is
+04:27 um is both functionally safe and we can build a a robust uh behavioral safety
+04:32 case. Um so that introduces some interesting um architectural challenges
+04:37 and then of course we also need to run real time on board a robot on board a vehicle. Uh and so dealing with the
+04:43 onboard compute and onboard sensor uh limitations uh make make it an interesting challenge. But yes, it's the
+04:49 the same narrative we're seeing playing out in robotics that we've seen play out in all these other AI fields like like
+04:54 language or gameplay agents. It's that an end to-end data learn solution is out competing anything we can handcode. And
+05:01 uh what we're excited to be pioneering is that that exact same narrative here in robotics and autonomous vehicles.
+05:06 And when you guys started this in 2017 and it was a very contrarian approach
+05:11 when people from the industry said, "Well, that'll never work because how did they finish that sentence?
+05:18 Uh I I could count hundreds of those footings. Uh yeah, typical arguments
+05:24 were look uh it's not safe. Um it's uh it's not interpretable. Can't understand
+05:30 what it's what's it's doing or uh even simply um uh it doesn't make sense. We we haven't heard of this this AI thing.
+05:37 Um and look, I think 5 10 years ago, it was probably reasonable to say end to end deep learning wasn't interpretable.
+05:45 But I I don't think that's true today. I think today we have a lot of really great tools for understanding and responding to to insights about um the
+05:52 way these um uh deep learning systems reason. Uh but moreover I think if you
+05:57 have the ambition to build any intelligent machine um I think it's naive to think you can build a complex
+06:03 intelligent machine and actually make it um you know let's say strictly interpretable to the point where you can
+06:09 point to a single line of code or a single thing that that causally made the outcome occur. the the beauty of
+06:16 intelligent machines is that they are so um wonderfully complex and there I think
+06:21 the way that um we're going to not just design them but understand them is through a datadriven structure.
+06:27 Can you say more about the before and after of the AV 1.0 stack and the you know millions billions of lines of of
+06:34 code that that goes into those systems uh versus the 2.0 systems today? Um, and
+06:40 how how quickly is that changing? Because my sense is that deep learning,
+06:46 large neural nets hitting hitting the physical economy is a much more recent phenomenon than people might appreciate.
+06:52 Well, especially when you think about uh the path to distribution and deploying these systems. I mean, the automotive
+06:57 industry has just gone through a a seismic shift in bringing out softwaredefined vehicles and the right hardware on these cars to be able to
+07:03 make them drive. Um maybe one uh common uh point of debate is is is it camera
+07:08 only or camera radar LAR as a as a sensor approach to autonomy and um uh
+07:14 just to be clear on on on our position Wave we we want to build an AI that can understand all kinds of different sensor
+07:20 architectures. There's going to be sometimes where a camera only solution makes sense sometimes where camera radar LAR and we train our um our embodied AI
+07:27 model on all of those permutations from very diverse data sources. And uh the car we just drove in is a a camera only
+07:34 stack. We've got other cars that we work on with partners that have radar and LAR. Uh and of course there's there's
+07:39 different trade-offs that you you you you take there. But more generally, we're seeing mass-produced cars from the
+07:45 best manufacturers around the world have a GPU on board, have surround camera, surround radar, and sometimes a front
+07:50 lighter. And what's beautiful about that is there's now the opportunity to see this AI come out and benefit people
+07:55 around the world. I think that kind of um softwaredefined infrastructure is happening in automotive has perhaps not
+08:03 yet happened to the same degree in other robotics verticals but I'm sure uh the market's going to move that way as well.
+08:09 And in general um having the right level of comput infrastructure in a scalable way and opening up these platforms to AI
+08:16 I think is is what's you know really making this possible and that's gone through a tipping point in the last couple of years.
+08:22 And you know your your perspective of AV2.0 though has flipped from contrarian
+08:27 to I'd say consensus maybe in the last two or three years. Was do you think it was FSD12 that did
+08:33 it or what when did that mindset start to shift? I miss uh I miss the contrarian day but
+08:39 uh even today I I still I was in a conversation this morning where I still see a lot of uh a lot of folks still say
+08:47 yes we need end to end AI. they've brought the, you know, the big tech narrative around the future of AI, but
+08:52 they say things like we need end to end AI with with hard constraints or with safety guarantees and and still there's
+08:59 there's there still can be some um you know belief that some hybrid approach is
+09:04 the way to go where uh where you want to try and try and take a rulesbased stack and an end toend learn stack but often
+09:10 these approaches can get the worst of both worlds or just add cost and complexity. M so um you know I still think there is a
+09:17 distribution in the market of those that are leaning in and moving fast and those that are you know are perhaps you know
+09:23 have some some catching up to do. Um but of course crediting the the breakthrough
+09:28 that all of us that have been working in deep learning that that really made this world changing and mainstream of course
+09:33 have got to credit the large language model breakthroughs. Um I think they've they've inspired the world and opened up
+09:38 the market's mind to be curious about this technology. Um but also what we've
+09:44 been doing at Wave, you know, a year ago we were just driving in central London. Central London, I think, is a great um
+09:50 proving ground because it's this unstructured, incredibly complex and dynamic city uh uh that our AIS learned
+09:57 to navigate around very um smoothly, safely, and and and reliably. But in the
+10:02 last year, we've taken it to highways, to Europe, Japan, North America. Our cars were in New York City last week um
+10:08 driving around there. And so bringing it global, being able to take it to different manufacturers vehicles uh and
+10:14 show a product-like experience um this this growth is I I think also really um
+10:20 you really opened up a lot of inspiration around around the world. Why is it that you're able to launch in
+10:25 hundreds of cities worldwide and you know some of the AV1.0 companies need to
+10:31 actually go out and build build an HD map. just say a word on on on the difference and how technical differences
+10:37 are actually leading to uh differences how the machine's able to learn and how you're able to roll out.
+10:43 Autonomous driving is is all about generalization. Generalization means being able to uh reason about or
+10:49 understand something you've never seen before. Every time you go for a drive, you're going to see something new for
+10:54 the first time. Um uh what did we see today? We saw a a road worker rolling out some carpet thing in front of the
+11:01 road but you know on a pedestrian crossing but not wanting to step out and we had to reason about could we pass them uh without without yielding for
+11:08 example. You know there's just a example from earlier today but you could uh think about all the new things you see
+11:14 on the roads every time you drive. You're never going to see every experience in your training data. Yeah. So that means that you have to be able
+11:20 to reason and generalize to things you haven't seen before to be safe to be useful around the world. And that's what
+11:27 has motivated our our entire approach. So whether it's us uh a manufacturer giving us one of their vehicles and
+11:33 within a couple of months us being able to to drive it on the road. A couple of weeks ago um uh in uh September this
+11:41 year, we unveiled a a vehicle to media uh with Nissan in in Tokyo. Just four
+11:47 months earlier uh was the first time we'd even driven in Tokyo and got hands on this vehicle. 4 months later, we were
+11:52 having media drive in the car, experience it, and that was a new country and a new vehicle for us. So,
+11:59 what that showed is that our AI was able to generalize. It's trained on very diverse data from around the world. It's trained on diverse sensor sets,
+12:05 vehicles, and so it's un able to understand that that vehicle's new sensor distribution, and of course, the
+12:11 complexity of driving around in central Tokyo. Um, so I think that's a really great demonstration of of generalization. And if if we think
+12:18 about, you know, if you're building a vertically integrated robotic solution, maybe you can go deep. But our ambition
+12:23 is to be the embodied AI foundation model for all of the best fleets and manufacturers around the world. And uh
+12:30 and you know, to do that, you know, unless we want to overload the company by building a separate neural network for each application, we need to be able
+12:36 to generalize. We need to be able to immortize our cost over one large intelligence um and to be able to very
+12:42 quickly adapt to each different application that our customers care about. Um that's what what we're trying to push. You mentioned reasoning in
+12:48 there in terms of how the model is reasoning through you know as construction worker what do I do now uh
+12:54 in the LLM world obviously reasoning is its own separate track of lots of
+12:60 scaling inference time computes techniques are you deliberately training your models to reason is an emergent
+13:05 property emergent behavior of the models like say more about what you mean about reasoning we are and I think reasoning in the
+13:13 physical world can be really well expressed as a world model Um in 2018 we
+13:19 put our very first world model approach uh on the road. It was a very small uh 100,000 parameter neural network that
+13:26 could um simulate a 30x3 pixel image of a road in front of us. Uh but we were
+13:32 able to use it as this internal simulator to train a modelbased reinforcement learning algorithm. Uh there's a a fun blog post if you want to
+13:39 see the history on that. But fast forward to today uh and we've developed GIA. It's a um full generative world
+13:47 model that's able to simulate multiple camera and sensors and very rich and diverse environments. You can control it
+13:53 and prompt the different agents or scene in it. And um and that's an example of reasoning where uh we can train in the
+13:60 ability to simulate how um the world works and what's going to happen next. What happens when you bring this kind of
+14:06 uh representation on the road is you get some really nice emergent behavior. Like today when we saw we were driving around
+14:12 unprotected turns that were included, you saw the car nudge forward until it could see for itself and then completed
+14:17 the turn. Y or when it's foggy in London, um you see the car slow down and and uh you know
+14:23 drive to what it can reason about. Um and by training it with that level of understanding, it it gives that that
+14:28 level of emergent behavior uh that helps it really understand particularly complex multi- aent scenarios. I think
+14:35 that's key for uh for getting safe and smooth autonomous driving. So the world models are really key to
+14:42 teaching the model how to reason through through new scenarios. 100%. You mentioned earlier the diversity of
+14:47 your data. Say a word about where all the data comes from. It's it's becoming like an enormous amount of data because
+14:54 of course uh unlike the language domain or image domain when we're dealing with
+14:59 um you know typical self-driving car that has a dozen multiple megapixel
+15:05 cameras um radar maybe a LAR you know you're dealing with when you aggregate that up it's very quickly tens or
+15:12 hundreds of pabytes of data. Um so it's it's an enormous amount of data you have to train on but it's the diversity
+15:18 that's really key and we've solved for diversity in two ways. The first one is by um becoming a trusted partner across
+15:24 the industry and aggregating data across many different sources from dash cams to fleets to manufacturers to to robot
+15:32 operators. And the second one is being able to filter and and really understand the data. Um uh here we've really worked
+15:39 hard to develop different uh unsupervised learning techniques to be able to cluster and find unusual or
+15:46 anomaly uh experiences. Um and of course find the scenarios that our system is is
+15:51 performing poorly at and then drive the learning curriculum on those. Um but yeah, today we we learn from a diverse
+15:58 set of of vehicles uh a diverse set of sensor architectures of countries. Um,
+16:03 and that's that's really one of the key things that drives the level of generalization. Does the increased growth of world
+16:09 models and, you know, simulated data, does that mean that you just don't need as many actual onroad miles? I
+16:17 I think there's two sides to to to that question, right? On the one side, yes, efficiency efficiency really matters,
+16:24 but the second, you can't only rely on learning efficiency. Um, at the limit, if we take our current approach and just
+16:29 scale it up, I'm I'm sure it'll produce generic level five driving, um, uh, you
+16:34 know, at the limit, if you have unlimited training data, this is really just a lookup data table with, uh, some some prior experience. But that's not
+16:42 economically or technically feasible. And so the question is, how can you train this to be the most efficient uh,
+16:47 data efficient system? Because I think efficiency will lead to not just improved cost, but faster time to market
+16:54 and more intelligence. So um uh efficiency comes from a number of
+16:59 different factors. There's uh most importantly how the data curriculum you put in place but then the the learning
+17:05 algorithms. How do you magnify the learning you have? And I think world models are a really great opportunity for that. They generate synthetic data
+17:11 and synthetic understanding that doesn't replace real world data but it recombines it and magnifies it in new
+17:17 ways. It lets you pull in interesting insights and um and I think these kind of approaches can can really really
+17:23 improve data efficiency. But across the board um I think working under resource
+17:28 constraints um has forced our team uh to to develop so many innovations. But I'd also call out just the the workflow
+17:35 because in traditional robotics when you're tuning parameters or algorithms
+17:40 or designing um geometric maps and things like this, you know, there's very wellestablished cultures and workflows.
+17:47 you know, our team when we have 50 model developers working on one main production model or when we have um you
+17:54 know an end to end net that we need to understand and introspect or even the way that we deploy these systems to simulation or to the road and and and
+18:00 feedback we've developed the entire culture from the ground up at Wave has been developed for embodied AI for end
+18:06 to-end deep learning for driving the um data infrastructure the simulation the the safety licensing before we put
+18:12 systems on the road um this is you know this has not been a hedge or a side bit for us but this is the entire essence of
+18:18 our culture. Uh and I think doing this under resource constraints and doing this with um full missiondriven
+18:25 conviction has has led to a bunch of interesting innovations that uh look getting to where we are today everything
+18:30 is about iteration speed. Yeah. Speaking of your culture um I'm picturing you know a bunch of AI
+18:38 research types, machine learning engineers, that sort of thing. How does the culture of your organization differ
+18:44 from similar applied lab type environments
+18:49 given the customer base that you serve given that you're going after the automotive industry specifically with
+18:55 all of its quirks around you know supply chain and all of its requirements around safety and so how does that influence
+19:02 the culture of your business hugely uh in fact you know for the first few years of wave uh you know we were
+19:09 really a group of um passionate embodied AI researchers but in the last couple of
+19:14 years um I'm really really proud of how our team has built out deep expertise in
+19:20 um understanding the automotive industry but also the ability to reliably uh deliver to our partners there. And uh
+19:26 that's a that's a different culture. It's a culture I've really grown to respect because when you're building millions of cars uh uh you know the
+19:33 level of reliability and um MTTF you need there is is extraordinary. Um
+19:38 what have you all learned from them? I mean I'm sure part part of your job is to teach them about what's going on in
+19:44 the world of AI. What have you learned from them? I think some of the main things I'll
+19:49 call out have been efficiency and and reliability. The the difference between technology in a product would be some of
+19:56 the the main themes. Uh I mean the the level of reliability required um but
+20:01 also uh the level of of quality that is seen to really robustly prove these
+20:07 systems out before deployment and the pride that these these companies take in that uh has has been exceptional.
+20:12 Another thing has been perhaps the the sense of brand differentiation and the desire for
+20:18 um you know look uh do you do you want your car to to to drive how can your
+20:23 driving person personality really match the brand's preferences? How can you provide that that experience
+20:28 that really gives um gives brand differentiation and the great news is that I think we've been able to riff and
+20:34 brainstorm off these and come up with some some really neat technical ideas down down um uh you know down that uh
+20:40 vein. But um yeah, ultimately safe, high quality and um personalizable AI uh has
+20:47 been some great feedback we've got from the industry. Can you talk about your path to market actually in partnering with the auto
+20:54 OEMs? How did you decide to do that? And then how do you think the market landscape will play out for how autonomy
+20:60 rolls out? Yeah, of course. Great great question Sonia because since the beginning of wave we've been focused on the pitch I
+21:07 gave around end to end deep learning being the approach to autonomy but we've tried a number of different gotom market
+21:12 approaches over the years but in the last couple of years uh I've been hugely
+21:17 energized about working and partnering with the the biggest and best automotive um consumer automotive uh uh
+21:24 manufacturers around the world. Why is that? Well, I mentioned how they've uh begun to introduce software defined
+21:30 vehicles. So they have the infrastructure to work with autonomy. There's the market belief that this is a technology that can can really thrive.
+21:37 Um and also it's the chance to get to scale far beyond what we're seeing with the the city bycity robo taxis we're
+21:43 seeing right now. Um but moreover uh these are OEMs that are investing in the
+21:49 right infrastructure to go from not just driver assistance but to um eyes off autonomy where you can actually um you
+21:56 know take liability for the drive and give give the user a safe and give them time back from their driving experience.
+22:02 Um so that's awesome. I think uh when you think about the market you know there are 90 million cars built each
+22:07 year. Um and and so you know some manufacturers that are are building the autonomy systems themselves like Tesla
+22:14 build a couple of million but the vast majority of the market um I think uh there's an opportunity to partner to work with some of these innovative
+22:20 platforms um and to bring our AI to market to make these autonomous products possible and it'll only grow from there.
+22:26 These manufacturers don't want to stop at driver assistance. Uh we're working together to build uh eyes off and
+22:31 driverless robo taxi products. But the key thing is that by avoiding retrofitting our own hardware on these
+22:37 vehicles by putting them in natively as a software integration um we can move fast at scale. We can build lowcost
+22:43 vehicles that can be homologated all around the world. I think this is going to be the path to see um tens and
+22:49 hundreds of thousands of robo taxis rolled out around the world um at a at an affordable price. And of course this
+22:54 is all possible because of the level of generalization um that that this AI enables. Tesla FSD is just such a
+23:01 game-changing product and you know my friends that have it, it's just they can't imagine driving any other way. And
+23:07 so it's really cool that you're going to empower, you know, the 88 million other vehicles sold every year to to be able
+23:13 to sell that experience as well. 100%. Uh it's one of those things that a lot of people jump in our car and come
+23:19 for a drive with some being skeptical about autonomy, but without exception, they they step out with a smile on their
+23:24 face. It's it's a magical experience. Uh, and yeah, I I I can't wait for people to be able to try it around the
+23:31 world and make autonomy not just a robot taxi tourism experience, but but bring this experience to people uh in in uh
+23:37 yeah, eventually every city. What do you make of the sensor fusion confusion debate? You know, the one that
+23:44 plays out on Twitter every year or so of Tesla gets confused if there's both camera uh and and LAR coming in. Sorry,
+23:52 radar. I think it's the wrong debate to be having. It's not the frontier question.
+23:57 The industry is has really, I guess, outside of Tesla, has really coalesed around a common architecture of a
+24:03 surround camera, surround radar, and a front-facing LAR stack. Now, this costs under $2,000. So, it's it's automotive
+24:10 grade components, not the retrofit rubber taxi components you see today. Um, but having a Frontier GPU compute,
+24:17 automotive grade GPU on the car and that kind of sensor architecture is a a really great platform to to build L3 L4
+24:24 autonomy eyes off or driverless. It gives you the necessary redundancy. It lets you deal with edge cases that you
+24:30 know cameras alone I agree they can get you to human level but we want to go beyond human level. Um and so I think
+24:35 this kind of architecture is is affordable, scalable, it's got the supply chain for mass manufacturer um
+24:42 and uh and it can uh eliminate I think um you know eliminate all accidents and
+24:47 and really drive superhuman levels of performance. Um so that's that's what we're seeing many manufacturers uh bring out on their
+24:54 vehicles and where we're integrating our AI. Of course for a driver assistance system um camera only can work for a
+25:00 human level driverless system or of course I should I should clarify 90
+25:06 something you can look at different stats but 95% or or above accidents unfortunately are caused by human error.
+25:12 So uh not only can you be human level but you can eliminate a lot of human attention and and accidents caused by
+25:18 that but there are still accidents that um to be able to solve would require perception capabilities that go beyond
+25:25 uh beyond vision. And if we want to tackle that longtail um there are many ways to solve it. One of the ways would
+25:30 be to bring in um some other sensing modalities by like radar and LAR. So um you know we're excited to be working
+25:35 with those kind of platforms um but crucially natively integrated into uh into the the OEM's vehicles themselves.
+25:42 Is it the same neural net that can drive on one OEM's car and another's car? And how does how does that even work?
+25:47 Because I imagine each vehicle has you know slightly different positioned cameras, things like that. Uh it comes from the same family. So we
+25:54 we train a a very large scale we we regularly train very large scale models.
+25:59 Um of course we iterate them on them month. Uh but uh you know that's one
+26:04 model that's common to all of the fleets that we work with. But as you optimize
+26:09 to a specific sensor set or a specific embedded target of course you can start to specialize the model. Um but the
+26:15 beauty is that 99% plus of the cost and the time and the effort is training that base model and then we can build very
+26:21 efficient um personalization to the specific uh customer. And so this lets this the scale but gives us the ability
+26:28 to you know squeeze it to very efficient real-time platforms and make it adapted
+26:33 to a specific um a specific use case. Are you gonna let Pat personalize a super aggressive driver model? I'm gonna
+26:40 need to. What driving style would you like Pat? Yeah, pretty aggressive,
+26:46 safe, very safe. But, you know, we can do that. We uh yeah, we we we find it's really funny when you when you
+26:52 build distributions around driving behavior. Um yeah, you can you can really tell uh from the human training
+26:58 data we have, you can really tell when it goes from being um helpfully assertive, let's say, to uh unhelpfully
+27:04 aggressive. And we can we can draw a clean line there. There you go. What about you, Sonia? How was the drive we just had? Fantastic. It was it was it was
+27:10 comfortable. It was it was safe. It was and it felt very human actually like the way it was kind of nudging up when it
+27:16 couldn't see on the turn. It was very human. Yeah. Well, it's uh as as you know complex as we can get in in Silicon
+27:22 Valley, but come to Tokyo or London or I was in the weekend in in downtown San Francisco and um yeah, you really need
+27:31 uh the ability to predict and reason about other folks around you to be able to drive in a humanlike way. Um and what
+27:36 we find is that uh if you're not able to smoothly go around double parked vehicles or deal with um other dynamic
+27:44 obstacles or even the prevailing row of traffic might not be aligned to the specific lane but maybe there's a humanlike way of of driving then um you
+27:52 know what's what's awesome about the intelligence that we built is it's able to reason about these things and keep the traffic flowing, keep interacting
+27:58 with road users in a very humanike way. I think this is going to be key for societies to accept and love robo taxis.
+28:04 Um, I can't wait to make that a reality. Are there any specific corner cases that your cars have a hard time with today?
+28:10 There are loads and it's it's uh uh really hard to generically talk about
+28:16 one because they're they're so rare. Yeah. Um, you know, if I was it's very hard to say, oh, it's always these types because
+28:22 it's always, you know, a corner case is a couple of edge cases coming together in a corner and it's it's always confounding factors
+28:28 when you get something really obscure. But we're driving in 500 cities. And so
+28:35 when you're driving at that level of scale, of course, you see things that you've never seen before. Road signs are written in a new language. Um actually
+28:41 maybe one way to to break it down is often we talk about driving broken down into safety, utility, and flow.
+28:47 Yeah. Safety being of course um safety critical behavior, flow being the style of driving. Is it smooth? Is it um
+28:53 enjoyable? Uh and then utility being the navigation and road semantics. And yeah, safety and flow we found generalize
+28:59 exceptionally well throughout the world. We get almost uniform metrics in every country we operate in in terms of safety
+29:04 and uh um flow comfort of the drive. But utility has
+29:09 been the really interesting one as we've gone global. How do you navigate? How do you deal with road signs? How do you read different languages? Um how do you
+29:15 deal with different driving um cultures? Uh and so that's the one that's been interesting. But from uh we we we
+29:23 published some some results about this. When we went from the UK to the US, we needed uh hundreds of hours of data to
+29:30 be able to drive um you know within in 10% of our frontier performance. Um but then when we went to uh Europe and to
+29:38 Germany, of course, we'd already learned to drive on the right side of the road. Coming to the US, we'd learn to do right
+29:43 turns at red lights. Then coming to Germany, we had to learn to still drive on the right side of the road, but of
+29:48 course, you can't turn right at a red light there. But then on the autoban, you'd like this. Uh you need to drive, we drive today up to 140. Uh so uh so
+29:56 pretty fast there. But um yeah, it gets more efficient each time with exponentially less data in each new
+30:02 market because you've seen some of those things before. Yeah. You you mentioned at the beginning that large language models were part of what
+30:08 flipped your approach from uh from contrarian to to consensus. Are you
+30:13 integrating large language models at all into into your models? And I know some of the robotics companies that are getting started now are starting from
+30:19 this VLA VLM base. Is that part of your architecture? 100%. In uh 2021, we started working on
+30:26 language for driving. Um I remember my team came to me at the time and and said hey we should start a project on
+30:32 language. I said no no no guys startup's all about focus. Keep keep focused. But they actually um gave some pretty
+30:37 compelling arguments. So we we started to play around with these things. And um a year or so later we we released uh
+30:42 Lingo which is the first uh vision language action model. um uh in in autonomous driving. And what was special
+30:50 about this model was it could not only drive a car uh see the world drive a car, but also uh conversant language.
+30:55 And it'll let you talk to it, ask it questions. You know, what are you finding that's risky? What's going to happen next?
+31:00 Uh or even it could commentate your drive. And what's interesting about this is that so there's a few benefits. One
+31:06 is bringing language into pre-training of course just improves the representation's power gives you know
+31:12 more interesting information to learn from than than just imagery alone. Um but then second aligning the
+31:18 representation with language opens up a ton of interesting product features. Uh it enables a um you know you to create a
+31:25 chauffeur experience where you could actually talk to your driver. You know no longer do you need a PhD in robotics to understand the system but actually
+31:31 you can just talk to it and and like ask it to drive. Uh Pat, if you want to if you want to race around the the the
+31:37 commute um super fast, then uh you can you can demand that. But then third, it gives you a really nice introspection
+31:43 tool where you can start to actually, you know, you could imagine regulators or um our engineering team converse with the system in language to really
+31:49 diagnose why it's doing what it's doing or get it to explain its reasoning. Um so I think these these these are really
+31:54 clear benefits uh which which we're really excited to be pushing. That's super cool. And you're running it on the embedded compute.
+32:00 We are. So, we've put out demos that run offboard. Um, onboard's challenging with what's in the automotive market today,
+32:06 but some of the next generation compute, for example, the Nvidia Thor that our nextG development vehicle is going to be
+32:12 built with will be large enough to run it on board. That's going to be cool. Very cool. You you've talked about how autonomous
+32:18 driving sort of provides a path to more generalized embodied AI. Can you paint
+32:23 that picture for us? how you go from autonomous driving to humanoid robots or whatever other things you might want to
+32:31 uh embody AI. I think we're going to be in the future looking at a ton of interesting use
+32:37 cases for robotics. Um what we're seeing is that mobility is um becoming possible
+32:44 I think much before manipulation. manipulation is challenging uh in terms of access to data, global supply chains
+32:51 for hardware and actually even the hardware designs themselves like I think tactile sensing is still a a really hard
+32:59 challenge but inevitably it'll be a a massive transformative thing but maybe you know
+33:04 maybe is at the maturity of where self-driving was in 2015 but today you know our system is rapidly becoming a
+33:10 general purpose navigation agent giving it an arbitrary uh sense of view and a goal condition it's able to produce a
+33:17 safe trajectory. Um so I think we're going to see a um rapid advancement from not just consumer automotive robo taxis
+33:24 think about trucking and other applications but um you know this AI will enable manufacturers and fleets who
+33:30 want to build robots in in any kind of mobility application. Um and of course we we we're really excited to be working
+33:36 with uh um you know frontier developers and and applications over time as you as you go out across that robotic stack. Um
+33:42 and I expect we'll see more maturity in the coming years from manufacturing and manipulation use cases as as well. Um
+33:50 but in the end I think the benefits of having a large foundation model that certainly in automotive we can I think
+33:58 we have access to the largest robot and data um supply chain and so we're we're really lucky in that regard to be able
+34:03 to push forward the intelligence there. Um, but generalizing that intelligence to new applications, I think there'll be
+34:08 benefits from the model being able to experience multiple different verticals and it will only make it more more general purpose. Um, any applications
+34:16 you're excited about? I mean, I'm I'm psyched to have humanoid robots walking around. Yeah, me too. I think um I I think
+34:23 they're going to be neat. Uh, you know, whichever form factor, I think humanoids will play a big part. I think other
+34:28 forms of locomotion as well and then manipulation. there's some some really interesting um uh challenges in those
+34:33 space but I think the same story is going to play out uh you know a working on a narrow application you know like
+34:42 when self-driving went to Phoenix Arizona and put in a ton of infrastructure and expensive hardware to
+34:47 make it it work is is going to I think have limited runway but working on general purpose lean lowcost hardware
+34:53 stacks um that really focus on making the system mo most intelligent and robust you know I think this is the
+34:59 recipe for scale Um so yeah let's uh let's watch that space. Yeah. Do you think there are major research
+35:05 breakthroughs needed to reach kind of physical AGI so to speak and if so what
+35:12 do you think is the most promising direction? Absolutely I do. I think there's so much more ground to scale up the current
+35:19 approaches and we'll do that but uh uh I think we will get compounding returns
+35:24 from I always usually talk about four factors that that that drive performance. There's of course data and
+35:30 compute um but then also the the algorithmic capabilities and the embodiment the what is the the hardware
+35:36 and capability on the on the robots and I think we need to push all four and on the algorithmic side um there is so many
+35:42 opportunities for for growth. I think um a key one is is measurement. Uh how do
+35:47 you actually uh measure and quantify these systems? How do you respond quickly, find regressions, be able to um
+35:54 really have a simulator that that closes the the the real world gap at scale? Um
+35:60 and can run efficiently. Uh I mean, it's no secret that these generative world models are very comput intensive.
+36:05 Um but having a good measurement system will just drive efficiency and iteration speed. So that's a that's a key one. Uh
+36:12 people often talk about being a chicken and egg. If you have a perfect simulator, you've solved self-driving and vice versa. And I I I really believe
+36:18 that. Um I think you know AlphaGo showed that when you have a perfect simulator you can just solve problems through
+36:24 Monte Carlo research. Um and so I you know I I think that's going to be the case in robotics as well. Um so yeah one
+36:31 is one is measurement. Uh another pillar is building more generality into the
+36:37 model. How can you build out more modalities uh and align those different modalities in their reasoning? Um I
+36:42 think this is going to open up um uh new use cases uh particularly when it comes to human robot interaction and
+36:48 navigation. Um I was going back to the utility problem uh before. Um some of these things I'm uh I'm yeah I'm super
+36:54 excited about. And then the last one is just uh engineering uh efficiency. I mean training these systems and the data
+37:01 requirements is extraordinary. And so, uh, I wouldn't understate, I think the the most sexy part of this problem is
+37:07 the, um, efficient infrastructure to to to train and serve these models. Yeah. Um, and getting that right. It's, uh, I,
+37:15 yeah, I I think it's a real competitive advantage or disadvantage. We started by talking about AV2.0.
+37:23 Someday, I imagine we might be talking about AV3.0. What could AV3.0 look like?
+37:28 If you go 5 10 15 years in the future, are there any other big leaps in this industry that you think we'll see?
+37:35 You you said that with such dead pan uh
+37:40 AV. So the the whole premise of AV 2.0 was all about putting the intelligence on the car and not needing
+37:46 infrastructure and a ton of uh you know ton of overcooked hardware, but really making the system intelligent.
+37:52 Uh, and so I think we're seeing that emerge now with the system that can generalize to the world with all of the
+37:58 onboard scalable um intelligence and compute. If I were to speculate where AV3 go I I
+38:05 we haven't thought we haven't um sort of thought about in depth uh lately but one idea could be taking the intelligence
+38:11 outside the car. So, I mean, when you start to have, you know, majority prevailing autonomous vehicles, you
+38:17 could imagine a ton of new things you could do when they start to communicate, when they start to interact with each
+38:22 other, you know, why do we need traffic lights in the future if they can coordinate? Why do we need uh, you know, all these sensors if you can actually
+38:29 just communicate with the AV in front of you to be able to see around corners? I mean, of course, I'm speculating here.
+38:34 It opens up tons of interesting cyber security questions, um, communication latency questions, things like that. But
+38:41 uh I don't know. I'm uh I'm all up for embodied AI and um uh if we can build a
+38:46 a safer and more accessible system by taking the intelligence uh not only in the car but but beyond maybe um maybe
+38:53 that's a path. Let's see. I think that's really interesting. If AD AV3.0 know is the point at which it's
+38:58 sort of a mesh network and you know at that point maybe humans aren't allowed to drive because they can't communicate
+39:04 with the mesh network the same way that the robots can and or maybe there are special places that humans go to drive
+39:09 just for recreational purposes but for transportation you know it's all autonomous
+39:14 yeah interesting how do you hire and how do you attract people with how hot the AI market is these days
+39:20 I love that question because uh you know at the end of the day our team is our our product our team are are the most
+39:26 important thing to making this possible and um we talk a lot about at wave about being a place where you can do the the
+39:32 best work of your career and what that means for me in embodied AI is having a set of colleagues around you that um
+39:38 inspire and excite uh world class in what they do having the right resources um the right culture unblock you um but
+39:46 I think uniquely at wave we are able to bring together really a frontier AI
+39:51 environment with a near-term product opportunity in automotive so if If you want to work on intelligent machines and
+39:58 see your system brought out with the scale of impact of chat GPT in robotics,
+40:03 um I think that's the this is a place where we can do it. Um the other thing is is that we've gone global. I mean we
+40:09 have teams in uh um London, Stokart, Tel Aviv, Vancouver, Tokyo, Silicon Valley.
+40:16 Um, and you know, wherever there's an amaz almost, you know, some of the major
+40:21 AI and automotive hubs. Um, and you know, we're really looking to to build a global culture that can bring this
+40:27 product to the world, work with customers around the world. Um, uh, and you know, and most importantly
+40:32 collaborate with the the very very best people. Um, yeah. So, anyone who's interested in, uh, pioneering embodied
+40:39 AI, pushing the frontiers, and actually turning it into a gamechanging product, um, come chat. I would love to speak.
+40:45 Wonderful. Alex, you've believed in the future for end to end neural nets in in
+40:51 self-driving and in the phys physical economy for for longer than just about
+40:56 anybody. And it must be incredibly fulfilling to see that vision start to come to life. Congratulations and thank
+41:01 you for joining us. Thank you, Sonia. Thank you, Pat. It's such a privilege.

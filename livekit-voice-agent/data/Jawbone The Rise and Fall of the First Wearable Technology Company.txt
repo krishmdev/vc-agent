@@ -1,0 +1,2818 @@
+00:01 [Music]
+00:04 
+
+00:04 so you guys want like the raw answer
+00:05 
+
+00:05 like it doesn't leave you guys like me
+00:07 
+
+00:07 don't like to fail man we invented three
+00:10 
+
+00:10 categories that now like billions of
+00:11 
+
+00:11 people used that doesn't happen without
+00:13 
+
+00:13 what we did that was all us right
+00:15 
+
+00:15 wireless speakers like this didn't exist
+00:17 
+
+00:17 so you feel all those things
+00:20 
+
+00:20 viscerally welcome to Crucible moments a
+00:23 
+
+00:23 podcast about the critical Crossroads
+00:25 
+
+00:25 and inflection points that shaped some
+00:27 
+
+00:27 of the world's most remarkable companies
+00:29 
+
+00:29 I'm your host
+00:31 
+
+00:31 R so far in this series we've taken a
+00:34 
+
+00:34 look at startups that successfully
+00:35 
+
+00:35 navigated Crucible moments to become
+00:37 
+
+00:37 some of the most important companies of
+00:39 
+
+00:39 our time today's episode is different
+00:43 
+
+00:43 it's about how failing to make the truly
+00:45 
+
+00:45 hard decisions at critical junctures can
+00:48 
+
+00:48 lead to your undoing today we'll be
+00:51 
+
+00:51 looking at Jawbone you might remember
+00:53 
+
+00:53 jawbone's portable Bluetooth speaker the
+00:56 
+
+00:56 jam boox back in 2010 they were
+00:58 
+
+00:58 everywhere you'd see them on the train
+01:00 
+
+01:00 at the beach on dinner tables at parties
+01:03 
+
+01:03 finally wireless speakers you could just
+01:05 
+
+01:05 throw in your bag and take anywhere I
+01:08 
+
+01:08 absolutely loved the product and they
+01:10 
+
+01:10 were wildly
+01:12 
+
+01:12 popular jurn got it start pioneering
+01:15 
+
+01:15 some of the first smart Bluetooth
+01:17 
+
+01:17 headsets for phones and with the jam
+01:19 
+
+01:19 boox the company's valuation continued
+01:21 
+
+01:21 to Skyrocket while products flew off the
+01:24 
+
+01:24 shelves but the thrill a flight masked
+01:27 
+
+01:27 the danger ahead weak gross margins
+01:29 
+
+01:29 product functions manufacturing
+01:32 
+
+01:32 shortages inflated valuations and
+01:35 
+
+01:35 fundraising challenges would ultimately
+01:37 
+
+01:37 melt jawbones WIS from a nearly $4
+01:40 
+
+01:40 billion valuation to liquidation Jawbone
+01:43 
+
+01:43 was at the time among the largest
+01:46 
+
+01:46 implosions in Silicon Valley its
+01:48 
+
+01:48 spectacular growth and equally
+01:50 
+
+01:50 spectacular Retreat provided indelible
+01:53 
+
+01:53 lessons for everyone involved myself
+01:57 
+
+01:57 included this story is more relevant
+01:59 
+
+01:59 today than ever an era of lowcost
+02:02 
+
+02:02 capital and easy fundraising is now
+02:05 
+
+02:05 behind us in the next decade sound
+02:08 
+
+02:08 fundamentals and operating rigor will
+02:10 
+
+02:10 determine a business's success jurn
+02:12 
+
+02:12 story is a rich cautionary Tale As We
+02:16 
+
+02:16 reflect with the founders on Lessons
+02:18 
+
+02:18 Learned we hope a new generation of
+02:20 
+
+02:20 startups can take away valuable insights
+02:22 
+
+02:22 as they build the next great companies
+02:24 
+
+02:24 of
+02:25 
+
+02:25 Tomorrow hi I'm Hussein Ramen uh
+02:28 
+
+02:28 formerly CEO and co-founder under of
+02:30 
+
+02:30 jawone I was at Stanford it was the
+02:33 
+
+02:33 mid90s and it was almost like the
+02:36 
+
+02:36 Florentine Renaissance the internet
+02:38 
+
+02:38 browser being created Jerry Yang and
+02:40 
+
+02:40 David Pho were grad students when I
+02:42 
+
+02:42 showed up just leaving to build Yahoo
+02:45 
+
+02:45 the Google guys were at Stanford they
+02:47 
+
+02:47 were my Tas in computer science so it
+02:49 
+
+02:49 was just this like incredible time there
+02:51 
+
+02:51 was just such you know an optimism about
+02:54 
+
+02:54 what was possible with everything that
+02:55 
+
+02:55 was being built and it was this Brave
+02:57 
+
+02:57 New
+02:58 
+
+02:58 World it was at Stanford that Hussein
+03:00 
+
+03:00 M's future business partner Alex Asel hi
+03:04 
+
+03:04 my name is Alex as I was one of the
+03:07 
+
+03:07 founders of Jawbone my encounter with
+03:10 
+
+03:10 Hussein is pretty amusing we met playing
+03:13 
+
+03:13 rugby at Stanford in our freshman year
+03:16 
+
+03:16 and because both of us were quite tall
+03:19 
+
+03:19 we were both put in the second row uh of
+03:22 
+
+03:22 the scrum which is sort of the least
+03:24 
+
+03:24 glamorous position and added to that we
+03:27 
+
+03:27 had to hold each other by the waist so
+03:30 
+
+03:30 it set us up for being quite irritable
+03:33 
+
+03:33 and disliking each other I think he
+03:35 
+
+03:35 thought I was just some English guy and
+03:37 
+
+03:37 I thought he was a shallow guy from LA
+03:40 
+
+03:40 and then in within the space of one
+03:43 
+
+03:43 conversation he realized I was half
+03:45 
+
+03:45 Lebanese I had some sensibilities to his
+03:47 
+
+03:47 Muslim upbringing he had a much more
+03:49 
+
+03:49 expansive and sophisticated view of the
+03:51 
+
+03:51 world which was something that I
+03:52 
+
+03:52 welcomed and so we ended up hitting it
+03:55 
+
+03:55 off and by the end of the evening I
+03:56 
+
+03:56 think we were great friends together
+03:58 
+
+03:58 they would form the company that would
+03:60 
+
+03:60 later become Jawbone originally called
+04:02 
+
+04:02 alif or alif com in '99 my co-founder
+04:06 
+
+04:06 Alex I were trying to solve this big
+04:08 
+
+04:08 problem around how do you talk to your
+04:10 
+
+04:10 phone in a way that would make it easier
+04:12 
+
+04:12 to use up until that point if you wanted
+04:15 
+
+04:15 to speak to someone on the move they
+04:17 
+
+04:17 would have to have a long boob otherwise
+04:19 
+
+04:19 you just hear a bunch of background
+04:21 
+
+04:21 noise and the person's voice would in
+04:23 
+
+04:23 most cases get lost and so what we
+04:26 
+
+04:26 realized is that if we could actually
+04:28 
+
+04:28 clean up the inbound signal going the
+04:30 
+
+04:30 speech recognition engines that you
+04:31 
+
+04:31 would get a really amazing set of
+04:33 
+
+04:33 performance if we can control the
+04:35 
+
+04:35 experience and we can make something
+04:37 
+
+04:37 beautiful and something that would be
+04:38 
+
+04:38 appealing to people it would be this
+04:40 
+
+04:40 wonderful vessel to get out and harness
+04:43 
+
+04:43 the power of this technological
+04:44 
+
+04:44 innovation that we had and that's was
+04:46 
+
+04:46 the dawn of the first job on headset and
+04:48 
+
+04:48 that's when we teamed up with Eve Bahar
+04:50 
+
+04:50 I'm Eve Bahar I'm the founder and CEO of
+04:52 
+
+04:52 fuse project a design agency and then at
+04:54 
+
+04:54 Job own I was the chief creative officer
+04:57 
+
+04:57 from 2003 to 2017
+05:00 
+
+05:00 they had this incredible technology that
+05:02 
+
+05:02 was using bone conduction around the ear
+05:05 
+
+05:05 and really taking out the surrounding
+05:07 
+
+05:07 noises we we saw ourselves as
+05:10 
+
+05:10 technologists and designers on the one
+05:12 
+
+05:12 hand but we also saw ourselves a little
+05:15 
+
+05:15 bit as um Robin hoods of of the tech
+05:18 
+
+05:18 space in the sense that we really felt
+05:20 
+
+05:20 strongly that a lot of people were
+05:23 
+
+05:23 excluded from technology from the
+05:25 
+
+05:25 everyday Tech That was supposed to make
+05:27 
+
+05:27 life easier at the time when we were
+05:29 
+
+05:29 doing this the only products that had
+05:31 
+
+05:31 ever been you know kind of quote unquote
+05:33 
+
+05:33 designed were really the Palm 3 and then
+05:36 
+
+05:36 the Apple iPod right and those two
+05:38 
+
+05:38 products in particular had shown that
+05:40 
+
+05:40 when you approach you know building
+05:43 
+
+05:43 these consumer technology Hardware
+05:45 
+
+05:45 products with a sense of craftsmanship
+05:47 
+
+05:47 and a love and a focus on an attention
+05:49 
+
+05:49 to detail to Delight these users that
+05:51 
+
+05:51 there was a big reward that came with
+05:53 
+
+05:53 that and you could capture people's
+05:55 
+
+05:55 imaginations after difficult early years
+05:57 
+
+05:57 toiling through a market meltdown
+05:59 
+
+05:59 fundraising challenges and a first
+06:01 
+
+06:01 version panned by Steve Jobs himself the
+06:04 
+
+06:04 co-founders kept iterating and in 2006
+06:07 
+
+06:07 released the first Wireless Jawbone
+06:09 
+
+06:09 headset it was a breakthrough the
+06:11 
+
+06:11 world's first smart Bluetooth headset
+06:14 
+
+06:14 with instantly lorded performance and
+06:16 
+
+06:16 design right out of the gate there's
+06:19 
+
+06:19 magic like you just freaking know it we
+06:21 
+
+06:21 thought it would make a big splash cuz
+06:23 
+
+06:23 we knew there was something there within
+06:25 
+
+06:25 minutes of it launching at AT&T we sold
+06:28 
+
+06:28 out we had sort of almost solved the
+06:31 
+
+06:31 problem that they didn't know that they
+06:32 
+
+06:32 had and now they couldn't live without
+06:34 
+
+06:34 that solution and we built a consumer
+06:36 
+
+06:36 technology product with five people and
+06:39 
+
+06:39 no money and that sold out immediately
+06:41 
+
+06:41 and all of a sudden we knew that we had
+06:42 
+
+06:42 a massive hit on our hands the
+06:45 
+
+06:45 proliferation of cell phones and new
+06:47 
+
+06:47 laws that ban the use of handheld
+06:49 
+
+06:49 devices while driving created an
+06:51 
+
+06:51 important why now for jbone demand
+06:54 
+
+06:54 exploded soqu made its first investment
+06:57 
+
+06:57 in jbone in 2007 the same year the
+06:60 
+
+06:60 iPhone came out at the time Jawbone had
+07:02 
+
+07:02 the fastest Revenue growth of any
+07:04 
+
+07:04 company that I had ever
+07:06 
+
+07:06 seen Alex and usin were a wonderful pair
+07:10 
+
+07:10 as Founders go with Alex being very
+07:13 
+
+07:13 methodical disciplined and detail
+07:15 
+
+07:15 oriented from an engineering point of
+07:17 
+
+07:17 view and Hussein being an incredible
+07:18 
+
+07:18 Visionary and an incredible
+07:21 
+
+07:21 Storyteller but in 2008 jawbone's
+07:24 
+
+07:24 meteoric rise would come to an abrupt
+07:26 
+
+07:26 halt with a global financial crisis and
+07:28 
+
+07:28 ensuing recession
+07:30 
+
+07:30 the crash was wild because we had 2
+07:35 
+
+07:35 million units I want to say open POS
+07:38 
+
+07:38 like these are purchase orders that your
+07:40 
+
+07:40 Best Buys and AT&T's and Verizon have
+07:43 
+
+07:43 given us these are like hard orders that
+07:45 
+
+07:45 were non-cancellable right and it's it's
+07:47 
+
+07:47 money we probably had about 50 million
+07:49 
+
+07:49 $60 Million worth of raw goods inventory
+07:52 
+
+07:52 in China and all of a sudden these
+07:54 
+
+07:54 non-cancellable orders like went to zero
+07:57 
+
+07:57 what do we do we ended up like going
+07:60 
+
+07:60 into Costco we ended up you know hand
+08:02 
+
+08:02 toand combat to figure out how to burn
+08:03 
+
+08:03 all that inventory off this is the time
+08:06 
+
+08:06 that we said okay we've got to move to a
+08:08 
+
+08:08 new neighborhood and I remember it
+08:10 
+
+08:10 distinctly we were in a board meeting
+08:12 
+
+08:12 and at the time we had you know two seoa
+08:14 
+
+08:14 partners who were were helping us
+08:16 
+
+08:16 rolloff was on the board and we had an
+08:17 
+
+08:17 observer in gor of gar he said we got to
+08:19 
+
+08:19 figure out a new
+08:21 
+
+08:21 neighborhood right to move into because
+08:23 
+
+08:23 the neighborhood that we were living in
+08:24 
+
+08:24 that we thought was amazing and it was
+08:26 
+
+08:26 at the time is not as amazing anymore
+08:28 
+
+08:28 and so we just need to like figure out
+08:30 
+
+08:30 what that next thing looks
+08:32 
+
+08:32 like the company faced a crucible moment
+08:35 
+
+08:35 the financial crisis had devastated
+08:37 
+
+08:37 companies across the globe and Jawbone
+08:39 
+
+08:39 had hustled to stay intact what could
+08:41 
+
+08:41 they do to reignite growth the team
+08:44 
+
+08:44 looked for a new why now to drive their
+08:46 
+
+08:46 next
+08:47 
+
+08:47 product all of our media became mobile
+08:50 
+
+08:50 all of our music all of our video all of
+08:52 
+
+08:52 our podcasts all of a sudden it was all
+08:54 
+
+08:54 in your pocket on the go all the time
+08:57 
+
+08:57 and the consumption model and what you
+08:59 
+
+08:59 used to to interact with all that media
+09:02 
+
+09:02 was totally different like you remember
+09:04 
+
+09:04 we used to dock iPods right you used to
+09:06 
+
+09:06 like take your iPod stick it in a dock
+09:08 
+
+09:08 and that's how you like play speakers we
+09:10 
+
+09:10 really felt that we had mastered
+09:12 
+
+09:12 Bluetooth as a technology we had sort of
+09:15 
+
+09:15 liberated the cord of the headset and we
+09:17 
+
+09:17 wanted to liberate the docked phone
+09:20 
+
+09:20 seeking to liberate the docked phone and
+09:22 
+
+09:22 seize upon a new market opportunity they
+09:25 
+
+09:25 hit upon an idea for an Innovative
+09:27 
+
+09:27 product category the wireless smart spe
+09:30 
+
+09:30 the sound effects we had created for the
+09:33 
+
+09:33 headset were the same more or less that
+09:34 
+
+09:34 we were going to add to the speaker it
+09:36 
+
+09:36 was a Kind of Perfect Confluence of
+09:39 
+
+09:39 signals at a perfect time the risk in
+09:42 
+
+09:42 innovating a new product category is
+09:44 
+
+09:44 like there's no precedent for what
+09:45 
+
+09:45 you're doing the cost of getting it
+09:47 
+
+09:47 wrong for a hardware product is far
+09:49 
+
+09:49 greater than it is for a software
+09:51 
+
+09:51 product because you have to invest in
+09:53 
+
+09:53 tooling you have to find contract
+09:54 
+
+09:54 manufacturing Partners you have to
+09:57 
+
+09:57 invest in purchasing inventory you often
+09:59 
+
+09:59 have to enter long-term contract
+10:00 
+
+10:00 arrangements to be able uh to ensure
+10:02 
+
+10:02 that you have access to critical
+10:04 
+
+10:04 components should Supply grow this was
+10:06 
+
+10:06 like a crazy controversial decision
+10:08 
+
+10:08 internally because we had folks in our
+10:10 
+
+10:10 team who had worked at Sony and said
+10:13 
+
+10:13 we're going to make a speaker are you
+10:14 
+
+10:14 out of your mind like this Market is so
+10:16 
+
+10:16 saturated and so crazy we had concerns
+10:20 
+
+10:20 that it may be a treadmill business and
+10:21 
+
+10:21 it was hard for us to differentiate with
+10:23 
+
+10:23 our software longer term because we
+10:25 
+
+10:25 didn't own the music service the risk
+10:27 
+
+10:27 was that it was a bit of a standalone
+10:29 
+
+10:29 product I think internally we just knew
+10:31 
+
+10:31 it would be success never getet
+10:33 
+
+10:33 switching on the first prototype and
+10:35 
+
+10:35 being like that sounds good we just knew
+10:37 
+
+10:37 that people would love it we also came
+10:40 
+
+10:40 up with a name Jambox as designers this
+10:43 
+
+10:43 was sort of a dream come true the focus
+10:45 
+
+10:45 was on Great Sound which meant that the
+10:48 
+
+10:48 grills were very very open which let as
+10:51 
+
+10:51 much sound out as possible we could
+10:53 
+
+10:53 create these Beautiful faceted Textures
+10:57 
+
+10:57 on the front of the jam boox we could
+10:59 
+
+10:59 really present the innovation in all of
+11:01 
+
+11:01 its facets through industrial design
+11:03 
+
+11:03 through naming through packaging through
+11:05 
+
+11:05 go to market through images through
+11:07 
+
+11:07 photo shoots and lifestyle and we did
+11:10 
+
+11:10 everything differently from the way the
+11:11 
+
+11:11 industry presented speakers and docs at
+11:13 
+
+11:13 the time which were static and dodgy and
+11:16 
+
+11:16 we were sort of fun and expressive and
+11:18 
+
+11:18 we drew on a lot of Street
+11:20 
+
+11:20 culture we said the revolution in media
+11:23 
+
+11:23 consumption and audio consumption is
+11:25 
+
+11:25 going to be in the mobile phone so let's
+11:27 
+
+11:27 go do this with our existing customer
+11:29 
+
+11:29 for Bluetooth headsets which is the the
+11:30 
+
+11:30 mobile operators when the company
+11:32 
+
+11:32 started to sell its product it was an
+11:34 
+
+11:34 instant hit with the jam box Jawbone had
+11:37 
+
+11:37 released a second category defining
+11:42 
+
+11:42 product in a sense it became much more
+11:45 
+
+11:45 iconic and much more synonymous with a
+11:47 
+
+11:47 Jawbone brand than the headset because
+11:50 
+
+11:50 frankly it's cooler like a a speaker
+11:53 
+
+11:53 clay music is cooler than a mobile
+11:56 
+
+11:56 businessman doing a call in an airport
+11:58 
+
+11:58 and I didn't realize realiz just
+12:00 
+
+12:00 intuitively how much people love music
+12:03 
+
+12:03 right we went from productivity and
+12:05 
+
+12:05 headsets to love right and the energy
+12:08 
+
+12:08 around the first jamboxes was crazy um
+12:11 
+
+12:11 we had every single artist in all kinds
+12:14 
+
+12:14 of genre of music from hipop to Country
+12:18 
+
+12:18 to pop say I love this thing Jambox
+12:22 
+
+12:22 saved the
+12:23 
+
+12:23 company the MP3 speaker doc business was
+12:26 
+
+12:26 a crowded Market with high Manufacturing
+12:29 
+
+12:29 expens
+12:30 
+
+12:30 but by transforming the technology into
+12:32 
+
+12:32 a smart wireless device jurn had
+12:34 
+
+12:34 overcome the odds and created a whole
+12:37 
+
+12:37 new category that revived their sales
+12:40 
+
+12:40 for the longest time in Jambox we had
+12:41 
+
+12:41 80% market share right until everybody
+12:44 
+
+12:44 started to kind of crowded in the space
+12:46 
+
+12:46 and started eroding the price points and
+12:47 
+
+12:47 the
+12:48 
+
+12:48 margins in 2011 Bose released the sound
+12:51 
+
+12:51 link Mobile and other competitors piled
+12:53 
+
+12:53 on my concerns about the Jambox becoming
+12:55 
+
+12:55 a treadmill business were also coming
+12:57 
+
+12:57 true had we owned the music service we
+12:60 
+
+12:60 could have created a stickiness that
+13:02 
+
+13:02 kept customers coming back for repeat
+13:03 
+
+13:03 business instead we depended on
+13:06 
+
+13:06 constantly inventing new hardware hits
+13:09 
+
+13:09 Jambo had indeed saved the company but
+13:12 
+
+13:12 the team soon found themselves pursuing
+13:14 
+
+13:14 yet another breakthrough product their
+13:15 
+
+13:15 new inventions stem from an idea that
+13:17 
+
+13:17 went back to their very beginning
+13:19 
+
+13:19 wearable technology that could help
+13:21 
+
+13:21 track your health and wellness but this
+13:23 
+
+13:23 time innovating another new product
+13:25 
+
+13:25 category would prove much more
+13:28 
+
+13:28 challenging
+13:30 
+
+13:30 one of the things that was really
+13:32 
+
+13:32 special about the Jawbone headsets is
+13:35 
+
+13:35 that we were using Innovation on the
+13:37 
+
+13:37 sensor side um in terms of understanding
+13:41 
+
+13:41 when people were talking versus what was
+13:43 
+
+13:43 noise well it turns out those body worn
+13:45 
+
+13:45 sensors if you move them to other parts
+13:47 
+
+13:47 of your body you could see all kinds of
+13:49 
+
+13:49 other information about yourselves and
+13:52 
+
+13:52 using those same sensors these
+13:53 
+
+13:53 accelerometers putting them on the wrist
+13:55 
+
+13:55 for example all of a sudden could tell
+13:57 
+
+13:57 you all sorts of things about your
+13:59 
+
+13:59 movement your efficiency of movement how
+14:01 
+
+14:01 many calories you were burning are you
+14:02 
+
+14:02 running is your gate working and it
+14:04 
+
+14:04 could also tell you a lot about your
+14:05 
+
+14:05 sleep which was this whole magical new
+14:08 
+
+14:08 undiscovered area the product they
+14:10 
+
+14:10 designed the Up Bracelet was the first
+14:13 
+
+14:13 wrist-worn health and fitness tracker
+14:15 
+
+14:15 monitoring a user steps sleep and more a
+14:18 
+
+14:18 lot of product development and a lot of
+14:21 
+
+14:21 resources internally went into
+14:23 
+
+14:23 developing the up bracelet it engaged
+14:27 
+
+14:27 technologists Hardware fol
+14:29 
+
+14:29 it engaged software and it engaged the
+14:32 
+
+14:32 medical field as well it was really at
+14:35 
+
+14:35 the convergence of technology and health
+14:38 
+
+14:38 and lifestyle people thought I was
+14:41 
+
+14:41 really crazy like they were really like
+14:42 
+
+14:42 what are you talking about like you're
+14:44 
+
+14:44 going to put sensors on the wrist and
+14:45 
+
+14:45 like people are going to see what and
+14:47 
+
+14:47 how's that going to work how do you
+14:49 
+
+14:49 place something in a bracelet that's
+14:51 
+
+14:51 comfortable something that you know is
+14:53 
+
+14:53 not going to compete with a watch that
+14:55 
+
+14:55 you'll be able to use at night so it has
+14:58 
+
+14:58 to be soft it has has to be flexible it
+14:60 
+
+14:60 has to move with you all really tough
+15:02 
+
+15:02 challenges to reconcile with technology
+15:05 
+
+15:05 I would say wearable technology is
+15:08 
+
+15:08 probably one of the hardest thing to
+15:10 
+
+15:10 design we were on the risk before Fitbit
+15:12 
+
+15:12 before Garmin before Apple before Nike
+15:15 
+
+15:15 so there was a whole how do you get
+15:18 
+
+15:18 people to change their behavior and do
+15:19 
+
+15:19 something completely new I always used
+15:21 
+
+15:21 to use this metric of like are we
+15:23 
+
+15:23 building something that if you left it
+15:24 
+
+15:24 at your house like your wallet your keys
+15:26 
+
+15:26 or your phone you would go back for and
+15:27 
+
+15:27 that's the bar right
+15:29 
+
+15:29 of like would we be able to play a role
+15:31 
+
+15:31 in someone's life that was so important
+15:33 
+
+15:33 around solving a thing that they cared
+15:36 
+
+15:36 so deeply about that they would go back
+15:37 
+
+15:37 and get it the issue with up is that we
+15:40 
+
+15:40 were Flying Blind we just didn't know
+15:43 
+
+15:43 what the Dynamics of the market were you
+15:45 
+
+15:45 could kind of predict what was going to
+15:46 
+
+15:46 happen with speakers for example or with
+15:49 
+
+15:49 headsets it was in theory a much bigger
+15:51 
+
+15:51 Market because guess what who doesn't
+15:54 
+
+15:54 want to be healthier the expectations
+15:56 
+
+15:56 were very high all eyes were on this
+16:01 
+
+16:01 small innovator pressure to have a great
+16:05 
+
+16:05 product at scale was certainly there the
+16:09 
+
+16:09 company had two successive massive hits
+16:12 
+
+16:12 I mean there not many companies that
+16:14 
+
+16:14 build consum electronics that tens of
+16:16 
+
+16:16 millions of people buy and love that is
+16:18 
+
+16:18 a rare accomplishment and so it's
+16:21 
+
+16:21 natural if you're you know this is your
+16:23 
+
+16:23 third time at bat the stakes are higher
+16:25 
+
+16:25 the expectations are greater the market
+16:27 
+
+16:27 tasting showed promising results and we
+16:29 
+
+16:29 were excited for it we pre-announced it
+16:31 
+
+16:31 and I did it on stage at Ted Global and
+16:34 
+
+16:34 they don't typically do product
+16:35 
+
+16:35 announcements at Ted the reception to
+16:37 
+
+16:37 what we did was crazy and again it was
+16:39 
+
+16:39 one of those things we knew really
+16:40 
+
+16:40 quickly that everybody wanted it up was
+16:42 
+
+16:42 released in November 2011 and it sold
+16:45 
+
+16:45 out instantly it had an incredible
+16:48 
+
+16:48 amount of traction sails were through
+16:50 
+
+16:50 the roof it looked like we had another
+16:53 
+
+16:53 category breaking success on our hands
+16:56 
+
+16:56 and within a couple days we started to
+16:57 
+
+16:57 hear reports of like it's breaking or
+17:00 
+
+17:00 things aren't working I experienced that
+17:03 
+
+17:03 myself with one of the early up units
+17:05 
+
+17:05 that after a couple of weeks it wouldn't
+17:07 
+
+17:07 recharge anymore which is baffling this
+17:09 
+
+17:09 is a crazy part of this story I just
+17:12 
+
+17:12 joined Twitter and didn't really know
+17:14 
+
+17:14 much about the platform was on it and I
+17:17 
+
+17:17 started to get like people attacking me
+17:19 
+
+17:19 death threats like mad like my product's
+17:22 
+
+17:22 not working I'm going to kill you I'm
+17:23 
+
+17:23 going to do this I was like wow this is
+17:24 
+
+17:24 a crazy crazy place what we realized is
+17:27 
+
+17:27 that water was getting into the product
+17:30 
+
+17:30 and it was shorting out a few capacitors
+17:32 
+
+17:32 and the thing would basically brick well
+17:34 
+
+17:34 it turns out that when we did our
+17:37 
+
+17:37 waterproofing testing and water
+17:39 
+
+17:39 resistance testing we were testing with
+17:41 
+
+17:41 pure H2O well it turns out that like
+17:43 
+
+17:43 pure H2O doesn't really exist in the
+17:44 
+
+17:44 world in real life ever anywhere right
+17:47 
+
+17:47 it's mixed with oils from your skin
+17:50 
+
+17:50 lotion soap right like all the stuff
+17:54 
+
+17:54 changes the viscosity of
+17:57 
+
+17:57 water and it was penetrating at a
+17:60 
+
+17:60 molecular level our seals like our glue
+18:03 
+
+18:03 seals seeping into the product uh
+18:06 
+
+18:06 damaging the processor or the
+18:09 
+
+18:09 battery whenever you release a consumer
+18:11 
+
+18:11 product like this you do a lot of
+18:13 
+
+18:13 testing so we did all this mechanical uh
+18:16 
+
+18:16 testing on on the up bracelets to make
+18:18 
+
+18:18 sure that they wouldn't break if you
+18:19 
+
+18:19 twisted them a thousand times and then
+18:21 
+
+18:21 you Expos them to heat and they all
+18:23 
+
+18:23 these testing centers in America where
+18:26 
+
+18:26 you get these certifications to show
+18:27 
+
+18:27 that products meet so criteria and so we
+18:30 
+
+18:30 did all these tests and and we were able
+18:32 
+
+18:32 to iron out all the what you might call
+18:35 
+
+18:35 infant mortality bugs and consume
+18:38 
+
+18:38 Electronics but what we didn't test for
+18:40 
+
+18:40 is how the bracelet would survive over
+18:42 
+
+18:42 time how it would hold up after weeks of
+18:45 
+
+18:45 use it's midlife mortality so to speak
+18:48 
+
+18:48 people like fiddle with the the thing
+18:50 
+
+18:50 they put it on they think it's malleable
+18:51 
+
+18:51 they think it's plastic but actually
+18:53 
+
+18:53 it's elastic so they keep messing with
+18:55 
+
+18:55 it like it's like um a piece of jewelry
+18:57 
+
+18:57 or something but it's not it's got
+18:58 
+
+18:58 Electronics in it there all these
+19:00 
+
+19:00 behaviors that we just didn't understand
+19:03 
+
+19:03 we had the capacity to do more rigorous
+19:05 
+
+19:05 testing I think it's a reasonable
+19:08 
+
+19:08 expectation of our customers that we
+19:11 
+
+19:11 should have done that testing obviously
+19:13 
+
+19:13 with the benefit of hindsight we wish we
+19:15 
+
+19:15 had done multi-week testing of products
+19:18 
+
+19:18 but it wasn't the standard at the time
+19:20 
+
+19:20 we had followed you know all the typical
+19:22 
+
+19:22 approaches to testing consume
+19:24 
+
+19:24 electronics and maybe we should have
+19:26 
+
+19:26 thought out of the box remember this was
+19:30 
+
+19:30 before director consumer e-commerce and
+19:31 
+
+19:31 Shopify when now you can ease into
+19:34 
+
+19:34 selling a new product all at once jbo
+19:37 
+
+19:37 needed to deliver large quantities of up
+19:39 
+
+19:39 to Big Box retailers for Christmas
+19:42 
+
+19:42 inventory sometimes first industry
+19:44 
+
+19:44 companies learn things the brutally hard
+19:47 
+
+19:47 way I don't even know what the financial
+19:49 
+
+19:49 implications really could be how big of
+19:51 
+
+19:51 a hit is this is it tens of millions
+19:53 
+
+19:53 hundreds of millions of dollars and I
+19:55 
+
+19:55 was really nervous I was terrified we
+19:58 
+
+19:58 realized that we had a real crisis and
+19:60 
+
+19:60 needless to say this was a
+20:02 
+
+20:02 disaster Jawbone had stumbled now they
+20:06 
+
+20:06 faced a crucible moment within a
+20:08 
+
+20:08 crucible moment how would they survive
+20:11 
+
+20:11 when a company faces a crucible Moment
+20:13 
+
+20:13 Like This a true crisis it's an all
+20:16 
+
+20:16 Hands-On de and in a situation like this
+20:19 
+
+20:19 you know some people may be tempted to
+20:21 
+
+20:21 do a cover up the cover up is always
+20:24 
+
+20:24 worse than the crime we would have to do
+20:26 
+
+20:26 a recall which meant that we would take
+20:28 
+
+20:28 back all these devices would obviously
+20:29 
+
+20:29 have to refund customers would' have to
+20:32 
+
+20:32 eat the cost of having made all these
+20:34 
+
+20:34 devices suffer enormous brand damage as
+20:36 
+
+20:36 a result of doing the recall but part of
+20:38 
+
+20:38 the Judgment call was that not doing the
+20:40 
+
+20:40 recall would probably be worse brand
+20:42 
+
+20:42 damage anyway because then you
+20:43 
+
+20:43 completely destroy trust with your
+20:45 
+
+20:45 customers we wrote a letter and and I
+20:49 
+
+20:49 apologized to everybody I said look we
+20:50 
+
+20:50 were trying to push the envelope trying
+20:52 
+
+20:52 to do something new we think there's a
+20:53 
+
+20:53 lot of value here but but this is what's
+20:55 
+
+20:55 happening there's no risk to anybody
+20:56 
+
+20:56 physically if people want to keep this
+20:58 
+
+20:58 thing they can they can keep using it
+20:60 
+
+20:60 but if you want your money back we'll
+21:01 
+
+21:01 give it to you too and you can keep
+21:02 
+
+21:02 using it anyways and we're going to go
+21:03 
+
+21:03 back to the drawing board fix this and
+21:05 
+
+21:05 we'll be back I thought that the letter
+21:07 
+
+21:07 he wrote to customers and to our
+21:09 
+
+21:09 stakeholders was great what was written
+21:12 
+
+21:12 there it found the right combination of
+21:15 
+
+21:15 mere Cula Vision action plan and so on
+21:19 
+
+21:19 and I think people gave us another bite
+21:21 
+
+21:21 of the Apple let's take responsibility
+21:24 
+
+21:24 let's not try to tell the public that
+21:27 
+
+21:27 they're wrong we need to to we need to
+21:29 
+
+21:29 do right by them even the naysayers that
+21:32 
+
+21:32 we had in our investor base or our board
+21:34 
+
+21:34 and everybody was just like this is the
+21:36 
+
+21:36 right thing clearly this category
+21:38 
+
+21:38 matters we know there's a there there
+21:40 
+
+21:40 people love this let's go fix
+21:43 
+
+21:43 it despite the enormous recall jban
+21:45 
+
+21:45 pushed ahead with the next version of up
+21:47 
+
+21:47 they went back fixed the issues and
+21:49 
+
+21:49 released a more durable product in late
+21:52 
+
+21:52 2012 it was just very difficult for us
+21:55 
+
+21:55 to have overcome the challenge of the
+21:57 
+
+21:57 recall you know I sometimes think about
+21:59 
+
+21:59 um an equivalent for people where if
+22:02 
+
+22:02 you've had a really serious disease
+22:04 
+
+22:04 maybe you had a very bad bout of
+22:06 
+
+22:06 pneumonia you sort of deal with the
+22:08 
+
+22:08 lingering after effects for many years
+22:10 
+
+22:10 it's not as though you get healthy in a
+22:12 
+
+22:12 couple of weeks and it's all back to
+22:13 
+
+22:13 normal there's sort of these long-term
+22:15 
+
+22:15 consequences that result from such an
+22:17 
+
+22:17 intense and serious illness and I feel
+22:20 
+
+22:20 the same is true for a company in this
+22:21 
+
+22:21 situation where an episode like this
+22:23 
+
+22:23 lingers and the Damage lasts for a very
+22:26 
+
+22:26 long time at the end of the day if
+22:28 
+
+22:28 someone believes in you and they open up
+22:30 
+
+22:30 your product two or three times and
+22:32 
+
+22:32 there's a problem with it it doesn't
+22:33 
+
+22:33 work or they have to send it back it
+22:35 
+
+22:35 catches up with you you know catches
+22:38 
+
+22:38 up in late 2012 and early 2013 jurn
+22:42 
+
+22:42 realized it had yet another massive
+22:44 
+
+22:44 problem on its hands the recall had cost
+22:47 
+
+22:47 the company approximately $100
+22:50 
+
+22:50 million while orders for the re-released
+22:53 
+
+22:53 up continued to roll in the company
+22:55 
+
+22:55 faced a massive cash crunch they didn't
+22:58 
+
+22:58 have enough working capital to fulfill
+23:00 
+
+23:00 the orders piling up we had had this
+23:03 
+
+23:03 hole in our p&l we hadn't sort of really
+23:06 
+
+23:06 slow down our R&D investment we are back
+23:09 
+
+23:09 to 2 million units or so behind on open
+23:12 
+
+23:12 purchase orders and how do we scale up
+23:14 
+
+23:14 and now we need real big inventory
+23:16 
+
+23:16 dollars to do that the supply chain in
+23:19 
+
+23:19 Asia doesn't necessarily want to front
+23:21 
+
+23:21 us the money to go make that inventory
+23:23 
+
+23:23 investment we got to manage the risk so
+23:25 
+
+23:25 we think hey interesting debt could be
+23:28 
+
+23:28 an alternative debt is dangerous like
+23:31 
+
+23:31 many other things it's a double-edge
+23:33 
+
+23:33 sword and one of the things in general
+23:35 
+
+23:35 when you're a startup company or a
+23:36 
+
+23:36 private company is hope for the best
+23:38 
+
+23:38 plan for the worst and raising debt is
+23:40 
+
+23:40 kind of hoping for the best and planning
+23:42 
+
+23:42 for the best Jan raised short-term debt
+23:46 
+
+23:46 financing intending to fund its
+23:48 
+
+23:48 inventory needs and get out of its cash
+23:50 
+
+23:50 crunch after which it planned to raise
+23:52 
+
+23:52 an equity round at a higher valuation
+23:55 
+
+23:55 the company then started pursuing a
+23:56 
+
+23:56 series of increasing ly risky
+23:59 
+
+23:59 fundraising deals some in the form of
+24:01 
+
+24:01 equity some in the form of debt each
+24:03 
+
+24:03 with their own challenges and
+24:07 
+
+24:07 dangers we were at the mercy of new
+24:10 
+
+24:10 investors we were struggling with wave
+24:13 
+
+24:13 after wave of struggling to raise money
+24:16 
+
+24:16 or raising money in small increments
+24:18 
+
+24:18 drips and drabs where we couldn't we
+24:20 
+
+24:20 couldn't secure a single substantial
+24:22 
+
+24:22 lead with favorable terms that would
+24:24 
+
+24:24 enable us to continue to scale the
+24:26 
+
+24:26 business the higher the burn Ates get
+24:29 
+
+24:29 the more difficult it is to get a new
+24:31 
+
+24:31 investor to believe that the company can
+24:33 
+
+24:33 turn a corner and turn
+24:35 
+
+24:35 profitable in 2014 they finally received
+24:39 
+
+24:39 two Equity offers one offered more money
+24:42 
+
+24:42 and a higher valuation but it came with
+24:44 
+
+24:44 a series of conditions and the risk of
+24:46 
+
+24:46 losing the company if things went South
+24:49 
+
+24:49 the other offered less money at a lower
+24:51 
+
+24:51 valuation but came with cleaner terms
+24:53 
+
+24:53 the Schism erupted between early
+24:55 
+
+24:55 investors on the board who advocated for
+24:57 
+
+24:57 a more Focus focused streamline strategy
+24:60 
+
+24:60 and newer investors pressuring jbone to
+25:02 
+
+25:02 take the deal with the higher valuation
+25:05 
+
+25:05 and essentially hold a sprawling company
+25:06 
+
+25:06 together with duct
+25:08 
+
+25:08 tape we thought the larger offer would
+25:12 
+
+25:12 be a good way to give us a war chest of
+25:14 
+
+25:14 efficient dollars to get the revenue
+25:17 
+
+25:17 engine and that p&l hole that we had to
+25:19 
+
+25:19 get fixed against open orders I often
+25:23 
+
+25:23 chuckle when people talk about
+25:24 
+
+25:24 entrepreneurs as being Risk Takers
+25:26 
+
+25:26 because I actually think the opposite is
+25:27 
+
+25:27 true entrepreneurs are risk mitigators
+25:30 
+
+25:30 they identify the risks in the business
+25:32 
+
+25:32 and they work ass seriously to figure
+25:34 
+
+25:34 out how they can minimize the impact of
+25:36 
+
+25:36 that on their success and this felt to
+25:39 
+
+25:39 me as though we were amplifying the risk
+25:41 
+
+25:41 to the business by taking a very
+25:42 
+
+25:42 aggressive set of terms that really
+25:45 
+
+25:45 exposed us and if anything goes bump in
+25:47 
+
+25:47 the night we would be in trouble so
+25:50 
+
+25:50 after a lot of back and forth and a lot
+25:52 
+
+25:52 of tension and a lot of differing views
+25:54 
+
+25:54 we end up taking the larger offer this
+25:57 
+
+25:57 might be really efficient way to kind of
+25:60 
+
+25:60 get the business back on its feet on a
+26:01 
+
+26:01 growth trajectory again so we go into
+26:04 
+
+26:04 the process we go through all the
+26:06 
+
+26:06 diligence we end up getting ready to
+26:08 
+
+26:08 close and for variety of reasons the
+26:11 
+
+26:11 full amount of money that we were
+26:13 
+
+26:13 intending to raise was not available
+26:15 
+
+26:15 there I do remember hearing that the the
+26:17 
+
+26:17 financing had fallen through and I don't
+26:19 
+
+26:19 think I was surprised throughout this
+26:21 
+
+26:21 turbulent period the day-to-day
+26:23 
+
+26:23 functioning of the rest of the company
+26:25 
+
+26:25 suffered we had three different
+26:27 
+
+26:27 companies with different needs sometimes
+26:30 
+
+26:30 different retail channels different
+26:32 
+
+26:32 logistical needs different engineering
+26:34 
+
+26:34 and team needs and because we were
+26:37 
+
+26:37 constrained in our growth and hiring we
+26:40 
+
+26:40 basically had teams rotating through
+26:43 
+
+26:43 these categories and sort of trying to
+26:46 
+
+26:46 fight fires in these completely
+26:49 
+
+26:49 different product lines the challenge
+26:51 
+
+26:51 really was on delivering durable and
+26:56 
+
+26:56 longlasting products quality products
+26:59 
+
+26:59 across these different categories that
+27:01 
+
+27:01 were quite different from one another we
+27:03 
+
+27:03 ended up being on products we ended up
+27:05 
+
+27:05 having you know bugs things weren't
+27:06 
+
+27:06 working in the same way meanwhile you
+27:10 
+
+27:10 know market shares eroding things aren't
+27:12 
+
+27:12 producing enough margin so we got into
+27:15 
+
+27:15 the spiral where it almost
+27:17 
+
+27:17 became
+27:19 
+
+27:19 financially difficult to keep producing
+27:21 
+
+27:21 the products if they weren't profitable
+27:24 
+
+27:24 one difficult financing leads to another
+27:26 
+
+27:26 one and you think you're going to then
+27:28 
+
+27:28 use that to get out of the hole and get
+27:30 
+
+27:30 to the next level I felt conflicting
+27:33 
+
+27:33 emotions Alex had stepped away from
+27:35 
+
+27:35 daily operations in 2010 and was now
+27:38 
+
+27:38 living in
+27:39 
+
+27:39 London I could have said like listen hey
+27:41 
+
+27:41 I don't care what happens I just want us
+27:43 
+
+27:43 to remain friends that could have been a
+27:44 
+
+27:44 root did I really feel that way it's
+27:47 
+
+27:47 like all things being equal certainly
+27:49 
+
+27:49 yeah but what I was really feeling is
+27:52 
+
+27:52 like you're not being collaborative with
+27:55 
+
+27:55 people trying to give you constructive
+27:57 
+
+27:57 criticism about how to fix this company
+27:59 
+
+27:59 and your reaction is unreasonable it's
+28:03 
+
+28:03 understandable under the circumstances
+28:05 
+
+28:05 but it is not reasonable given that
+28:07 
+
+28:07 you're responsible for a two to three
+28:09 
+
+28:09 billion doll company we were spending VC
+28:12 
+
+28:12 cash developing High-Tech high design
+28:15 
+
+28:15 products and High-Tech high design
+28:17 
+
+28:17 products need good margins that's how
+28:19 
+
+28:19 Apple does what it does for some I met
+28:21 
+
+28:21 Steve Jobs yeah it's like it's meeting
+28:24 
+
+28:24 like the icon of of a builder right it's
+28:26 
+
+28:26 like Leonardo da Vinci of our time and I
+28:29 
+
+28:29 I remember one of the things that really
+28:30 
+
+28:30 struck me was he was really focused on
+28:34 
+
+28:34 product costs delivery costs like unit
+28:38 
+
+28:38 economics and gross margins and I was
+28:40 
+
+28:40 surprised at the level at which she was
+28:43 
+
+28:43 you know really rais her focused on it
+28:45 
+
+28:45 CU I thought you know not having met him
+28:47 
+
+28:47 and but seeing the products I was like
+28:49 
+
+28:49 he must be like an artist like insane
+28:51 
+
+28:51 like thinker like why is he so bogged
+28:53 
+
+28:53 down in this like unit economics I Now
+28:56 
+
+28:56 understand it
+28:58 
+
+28:58 right like Bally whether we raised debt
+29:02 
+
+29:02 or whether we raised Equity it doesn't
+29:05 
+
+29:05 really matter what matters the fact that
+29:07 
+
+29:07 you can never catch up because you're
+29:09 
+
+29:09 constantly raising money to fill the
+29:11 
+
+29:11 cash Gap I think it became a runaway
+29:13 
+
+29:13 train there was a failure at the board
+29:16 
+
+29:16 level of just saying this is going to
+29:19 
+
+29:19 end in tears early enough there was one
+29:22 
+
+29:22 more contentious massive debt round of
+29:24 
+
+29:24 $350 million where things came to her
+29:27 
+
+29:27 head
+29:29 
+
+29:29 there was such disagreement that some of
+29:32 
+
+29:32 the board members decided to step off
+29:35 
+
+29:35 the board it was better for us to resign
+29:37 
+
+29:37 from the board and let the founder CEO
+29:41 
+
+29:41 decide how to proceed given my personal
+29:44 
+
+29:44 history and friendship with the founders
+29:45 
+
+29:45 it was a very difficult
+29:47 
+
+29:47 decision soon fitba took over as the
+29:50 
+
+29:50 leading player in the weables market and
+29:52 
+
+29:52 Jawbone became embroiled with him in a
+29:54 
+
+29:54 bitter trade secret dispute then
+29:58 
+
+29:58 Apple debuted the Apple watch not able
+30:01 
+
+30:01 to keep up with competitors no
+30:03 
+
+30:03 production costs in early 2016 Jawbone
+30:07 
+
+30:07 stopped production by 2017 they had
+30:11 
+
+30:11 liquidated I respect him for this
+30:14 
+
+30:14 enormously he called me up in 2017 and
+30:18 
+
+30:18 he just gave me heads up and he said I'm
+30:20 
+
+30:20 I'm sorry it ended this
+30:22 
+
+30:22 way ostensibly we died and people took
+30:25 
+
+30:25 write downs and the media landscape was
+30:27 
+
+30:27 a failed and so that was a really weird
+30:29 
+
+30:29 experience it sucked because I felt like
+30:32 
+
+30:32 I had let down a bunch of partners that
+30:35 
+
+30:35 had believed in me and stuck through
+30:36 
+
+30:36 really hard
+30:38 
+
+30:38 times it was a tough time a sad time and
+30:41 
+
+30:41 a lot of lessons learned from that when
+30:44 
+
+30:44 I heard that draw was liquidated uh it's
+30:47 
+
+30:47 obviously comes with a Pang of regret a
+30:50 
+
+30:50 very deep Pang I spent six years of my
+30:53 
+
+30:53 life working with the founders they
+30:55 
+
+30:55 spent Decades of their lives working on
+30:57 
+
+30:57 their company and to have spent that
+30:59 
+
+30:59 much energy to have built leading
+31:02 
+
+31:02 products that made millions of consumers
+31:05 
+
+31:05 happy and to end up not being able to
+31:07 
+
+31:07 build a business that is self-
+31:09 
+
+31:09 sustaining is an incredible
+31:11 
+
+31:11 disappointment there's a profound sense
+31:13 
+
+31:13 of loss you feel like all the life force
+31:16 
+
+31:16 and all the life force of the people
+31:17 
+
+31:17 that work for you and the energy that
+31:19 
+
+31:19 these people put to build this stuff and
+31:21 
+
+31:21 it it didn't work and for reasons that
+31:24 
+
+31:24 you know maybe you could have done
+31:25 
+
+31:25 better and you're the one that lives
+31:27 
+
+31:27 with the mistake it's like when you're
+31:28 
+
+31:28 the leader of a company you get outsized
+31:30 
+
+31:30 credit and outsized blame both ways
+31:33 
+
+31:33 right so you guys want like the raw
+31:34 
+
+31:34 answer like it doesn't leave you guys
+31:36 
+
+31:36 like me don't like to fail man I'd say
+31:39 
+
+31:39 that as the financing is unraveled I
+31:42 
+
+31:42 really worried that the company was
+31:43 
+
+31:43 doomed not just because fundraising was
+31:45 
+
+31:45 difficult but more importantly that we
+31:46 
+
+31:46 we weren't willing to make the very hard
+31:48 
+
+31:48 decisions to just rebuild the company
+31:50 
+
+31:50 from scratch be willing to tear down a
+31:53 
+
+31:53 large organization that have been built
+31:54 
+
+31:54 for a different scale of business and
+31:56 
+
+31:56 and be willing to go back back to your
+31:57 
+
+31:57 roots and we weren't willing to do that
+31:59 
+
+31:59 I still think the biggest competition we
+32:01 
+
+32:01 had was the one that faced Us in the
+32:03 
+
+32:03 mirror and we were Our Own Worst Enemy
+32:05 
+
+32:05 and I think that was really the death
+32:07 
+
+32:07 now it's easy for me to look back with
+32:09 
+
+32:09 2020 hindsight and oh what we should
+32:11 
+
+32:11 have done is this I think I was
+32:14 
+
+32:14 frustrated and I think it came down to
+32:17 
+
+32:17 being too enamored by our ability to
+32:19 
+
+32:19 design fancy things and not being able
+32:22 
+
+32:22 to actually follow through with reliable
+32:24 
+
+32:24 products with good margin reliable
+32:26 
+
+32:26 products with good margins if you do not
+32:29 
+
+32:29 have good margins you cannot build a
+32:31 
+
+32:31 business so simple as that now we're in
+32:34 
+
+32:34 a business where we often get it wrong
+32:36 
+
+32:36 very high percentage of the companies we
+32:37 
+
+32:37 invest in don't end up succeeding and
+32:41 
+
+32:41 it's really humbling to be in this
+32:43 
+
+32:43 business you know we manage money for
+32:45 
+
+32:45 what we call Great causes LPS
+32:47 
+
+32:47 foundations endowments nonprofits and
+32:49 
+
+32:49 they entrust us with their money and I I
+32:51 
+
+32:51 feel an intense fiduciary responsibility
+32:54 
+
+32:54 to look after that and to help them
+32:55 
+
+32:55 generate returns I think it's inevitable
+32:58 
+
+32:58 in our business as a venture investor on
+33:00 
+
+33:00 the heels of failure to to fret and to
+33:04 
+
+33:04 become more risk averse and I've
+33:06 
+
+33:06 reflected on that often it plays out in
+33:09 
+
+33:09 in many many different dimensions how we
+33:11 
+
+33:11 cope with failure why really the essence
+33:13 
+
+33:13 of it and one of the things I've I've
+33:15 
+
+33:15 learned as you look at sports psychology
+33:17 
+
+33:17 some of the best athletes that we know
+33:20 
+
+33:20 have an incredible ability to reflect on
+33:24 
+
+33:24 a failed attempt shot that didn't work a
+33:26 
+
+33:26 serve that didn't work a kick that
+33:27 
+
+33:27 didn't go through but they didn't let it
+33:30 
+
+33:30 encumber them so there's this incredible
+33:32 
+
+33:32 ability to to actually learn from what
+33:34 
+
+33:34 happened cuz if you just brush it off
+33:36 
+
+33:36 then you're not going to get better so
+33:37 
+
+33:37 you've got to understand what went wrong
+33:39 
+
+33:39 before but not have it debilitate you
+33:42 
+
+33:42 you just let go just forget about what
+33:44 
+
+33:44 happened lesson learned okay fresh fresh
+33:47 
+
+33:47 eyes new opportunity and I think that
+33:49 
+
+33:49 same mindset helps investors Founders
+33:52 
+
+33:52 product leaders
+33:54 
+
+33:54 succeed Jan story is not entirely over
+33:57 
+
+33:57 the Breakthrough research and
+33:58 
+
+33:58 development that came out of Jawbone
+34:00 
+
+34:00 while building up led to Hussein
+34:02 
+
+34:02 founding a new company called all.
+34:05 
+
+34:05 Health when you have these like crazy
+34:07 
+
+34:07 levels of success and I was getting
+34:10 
+
+34:10 accolades young global leaders like
+34:13 
+
+34:13 every list being invited these things
+34:15 
+
+34:15 everyone wants to hear what you say
+34:16 
+
+34:16 You're Building Products that people
+34:18 
+
+34:18 love they stop you on the street like it
+34:20 
+
+34:20 was amazing it was fun it was rewarding
+34:24 
+
+34:24 but you also think that you can do no
+34:26 
+
+34:26 wrong
+34:28 
+
+34:28 right you think you start to maybe
+34:29 
+
+34:29 sometimes believe that you could be
+34:31 
+
+34:31 infallible that you're always going to
+34:32 
+
+34:32 get it right and the reality is like no
+34:34 
+
+34:34 matter how successful people are you
+34:36 
+
+34:36 don't ever always get it right I am
+34:39 
+
+34:39 ruthless with with the entrepreneurs
+34:42 
+
+34:42 that I and friends with that I advise or
+34:45 
+
+34:45 or help or Angel invest in that like
+34:48 
+
+34:48 don't make those mistakes cuz I lived
+34:50 
+
+34:50 them right I lived the overvaluing of
+34:53 
+
+34:53 your company the Schism it creates if
+34:56 
+
+34:56 you can't catch up to to it if you have
+34:58 
+
+34:58 a low gross margin business that's
+34:59 
+
+34:59 capital intensive it's the worst thing
+35:01 
+
+35:01 to
+35:02 
+
+35:02 do right to overextend your valuation
+35:05 
+
+35:05 and go higher than than where you ought
+35:07 
+
+35:07 to be I think the you know the wisdom
+35:10 
+
+35:10 that you get when you fall down um is
+35:13 
+
+35:13 hard as as we ended up doing is that you
+35:16 
+
+35:16 get better actually at having tough
+35:18 
+
+35:18 conversations I certainly could have
+35:19 
+
+35:19 been better at like really trying to
+35:21 
+
+35:21 step away and just bring this passion
+35:23 
+
+35:23 and thinking all right let's just look
+35:25 
+
+35:25 at it with a fresh set of eyes space and
+35:28 
+
+35:28 and how do you do that it's difficult
+35:30 
+
+35:30 that's the advice I'd give
+35:33 
+
+35:33 myself this has been Crucible moments a
+35:36 
+
+35:36 podcast from SEO Capital join us next
+35:39 
+
+35:39 time as we learn from an wesi of 23 and
+35:43 
+
+35:43 me about how the company overcame an
+35:45 
+
+35:45 existential regulatory challenge built a
+35:48 
+
+35:48 brand new high-risk division from
+35:50 
+
+35:50 scratch and transformed its consumer
+35:53 
+
+35:53 business after booming sales suddenly
+35:56 
+
+35:56 flatlined
+35:59 
+
+35:59 [Music]
+36:03 
+
+36:03 Crucible moments is produced by the Epic
+36:05 
+
+36:05 stories and box creative podcast teams
+36:08 
+
+36:08 along with seoa
+36:11 
+
+36:11 capital special thanks to josein Ramen
+36:15 
+
+36:15 Alexy and Eve Bahar for sharing their
+36:18 
+
+36:18 [Music]
+36:23 
+
+36:23 stories

@@ -1,0 +1,562 @@
+00:02 very happy to welcome Chase Lockach
+00:04 Miller and my partner David Khan. And
+00:06 Chase is somebody um who I've gotten to
+00:08 meet a couple times over the years. And
+00:10 the two things that have stuck out to me
+00:13 and and why I'm excited to have him
+00:14 here. One, guy's brilliant. Good
+00:16 starting point. two, he has a really
+00:18 interesting and different point of view
+00:20 on this market than most of the people
+00:22 in this room because it's anchored more
+00:24 around servers, steel, power, the raw
+00:27 infrastructure even beneath the GPU
+00:29 level that is powering this whole
+00:30 revolution. And our partner David is the
+00:32 perfect person to interview him because
+00:34 for better or for worse, David's simple
+00:37 observation that there's a heck of a lot
+00:40 of money going into the ground and not a
+00:41 lot of application revenue coming back
+00:43 to pay it off yet made him famous andor
+00:46 notorious for AI's $600 billion
+00:48 question. So I will hand it off to David
+00:50 and Chase. Thank you. Thanks Pat. So I'm
+00:54 excited to introduce this session. We're
+00:56 going to talk about the AI industrial
+00:57 revolution underlining the word
+00:60 industrial. Uh we're going to talk about
+01:02 steel servers and power. Jensen already
+01:04 talked to us about servers. So we're
+01:06 going to focus on steel and power. I
+01:09 think everybody here knows that there's
+01:10 a race going on between the most
+01:12 powerful companies in the world to build
+01:13 the biggest GPU clusters. We heard about
+01:16 100,000 GPU clusters. We're now hearing
+01:18 about 300,000 GPU clusters and big tech
+01:20 companies are talking about million GPU
+01:22 clusters. And the person at the center
+01:24 of all of that is Chase. And so I'm
+01:27 excited to interview him and we're going
+01:29 to talk about what's going on behind
+01:31 that. Uh Chase, right now you have I
+01:33 think 5,000 people in Abalene, Texas
+01:36 building a data center. We do. Yeah.
+01:38 5,000 people every day uh on site uh
+01:41 kind of working around the clock to you
+01:43 know accelerate uh accelerate AI
+01:46 infrastructure. Maybe talk to us a
+01:47 little bit about we think about we we
+01:50 understand Jensen servers. We know that
+01:52 they go in a data center. Maybe some
+01:53 people here can visualize a data center
+01:55 or have been to a data center. But what
+01:57 does it take to start from land
+01:59 basically and build one of these AI
+02:01 factories?
+02:03 Yeah, I I think I think it's important
+02:06 to like one take a step back and just
+02:09 evaluate like what is the AI factory?
+02:11 What is the AI data center of the future
+02:13 and how does it differ from existing
+02:15 data centers? because um you know like a
+02:18 data center as a you know it's a bit of
+02:20 an overloaded term to be honest like
+02:22 calling you know a data center from 20
+02:24 years ago that's serving you know a web
+02:26 page uh the same thing as you know a
+02:29 high performance AI data center of today
+02:31 that's you know managing a you know
+02:33 100,000 plus GPU cluster it's like you
+02:35 know calling a go-kart and like a you
+02:38 know uh Range Rover like both vehicles
+02:41 right they're both yeah they are both
+02:42 vehicles but like you probably wouldn't
+02:44 use them for the same things Right. Um
+02:47 so uh you know I I think uh I I think
+02:50 when you look at today's data center
+02:52 infrastructure and what what's really
+02:53 required to scale AI um it is a very
+02:56 industrial process right the amount of
+02:58 energy that goes into it um you know I
+02:60 know it's been talked about quite a bit
+03:01 but I think helping put it in context
+03:04 like you know I think Northern Virginia
+03:06 many people would consider to be like
+03:08 the center of the world for data centers
+03:09 right that's like where most of the
+03:11 internet happens. Um, you know, we've
+03:14 been building it for decades, right? So,
+03:16 what's like the capacity of Northern
+03:17 Virginia? It's about, you know, JL
+03:19 published a report end of 24. It was
+03:21 like roughly 4 and a.5 gawatts of total
+03:24 capacity in Northern Virginia. Like,
+03:25 Cruso is a 7-year-old startup. Uh, you
+03:28 know, we're building big AI
+03:29 infrastructure. We're currently working
+03:31 on about 2 gigawatts of, you know,
+03:32 capacity currently under construction.
+03:34 We about 20 gigawatts in the pipeline.
+03:36 So you're talking about like you know it
+03:39 it's just completely transforming the
+03:41 both the energy landscape and the data
+03:43 center landscape uh to make AI a reality
+03:46 uh because of the amount of
+03:48 infrastructure required to build it. Now
+03:50 like the bottlenecks of it you know
+03:52 they're constantly moving around right I
+03:53 mean I think there was a period of time
+03:54 where it was impossible to get chips uh
+03:57 you know and and that was the major
+03:59 bottleneck. I think a lot of that is you
+04:01 know uh eased up um as you know
+04:03 production both at TSMC and Nvidia have
+04:05 sort of uh increased to you know make
+04:07 make chips more available um but you
+04:10 know power steel data center space that
+04:12 that has become a major bottleneck and
+04:14 these are complex supply chains that you
+04:16 know are not easy to accelerate so you
+04:18 know Cruso's always kind of taken this
+04:20 very first principled vertically
+04:21 integrated approach to things and so you
+04:23 know just to give you an example we've
+04:24 stood up a lot of manufacturing
+04:26 ourselves domestically here in the US to
+04:28 help accelerate operate time timelines
+04:30 like speed is a critical advantage for
+04:32 us. Um so you know we've got quotes for
+04:35 you know low voltage switch gear right
+04:37 so it's basically like uh you know where
+04:39 all you know it's sort of the electrical
+04:41 control room for the data center um and
+04:44 the quotes we were getting were 100
+04:45 weeks I was like that's insane you know
+04:47 100 weeks I don't have I don't have 100
+04:48 weeks so we stood up a factory and we
+04:51 started making switch gear ourselves now
+04:52 we make it in 22 weeks um and just like
+04:55 finding elements in the supply chain
+04:57 where you know we could really help
+04:58 accelerate um a lot of this
+04:60 infrastructure has been critical to our
+05:02 success
+05:03 uh in in sort of building these very
+05:04 large scale projects, you know, faster
+05:06 than anybody's ever done it before. How
+05:08 have you convinced big tech companies to
+05:10 work with you? When I think about
+05:11 Amazon, Google, Microsoft, I mean, these
+05:14 companies are data center companies. And
+05:16 for the last wave, the cloud wave, this
+05:18 was an internal core competency for
+05:20 these companies, right? They all built
+05:21 their own data centers. They have
+05:22 massive teams doing that. And yet you
+05:24 guys, this startup that seven years ago
+05:25 was building little containers on top of
+05:27 flare gassing is now a partner to a lot
+05:30 of these companies to build their data
+05:31 centers. How do you make that argument?
+05:34 Well, I think I think it's worth
+05:35 appreciating that um while big tech is
+05:38 good at a lot of things, they're not
+05:39 inherently designed to move quickly. In
+05:41 fact, like structurally, they're
+05:43 designed to not move quickly, especially
+05:45 when there's like very big purchasing
+05:47 decisions. So, um, just like the
+05:49 approval process of like, you know, when
+05:52 when I need to make a decision to buy
+05:54 something, it's like it's like I just
+05:56 make the decision and then it like
+05:57 happens that day. Um, and and you know,
+06:00 if you look at like Microsoft, there's
+06:02 like 19 layers of approval that sort of
+06:05 go into all these processes. So, like
+06:07 you know, just from the starting line,
+06:08 there's like a massive disadvantage for
+06:11 them to move quickly. Now they've all
+06:13 developed great programs and they're
+06:14 looking at this like you know a big data
+06:17 center you know 100 megawatt plus uh
+06:19 would you know 3 to 5year type programs
+06:22 um you know our first phase of what
+06:24 we're doing in Abene we're hitting 300
+06:26 days um our second phase we're actually
+06:28 just over 200 days so we're like
+06:30 massively accelerating the time to
+06:31 market of this infrastructure which is
+06:33 the major value prop to big tech
+06:36 companies and big AI labs that are
+06:39 interested in this type type of scale
+06:40 and uh you know purpose build
+06:42 infrastructure. There are rumors that
+06:44 you guys are involved in Stargate. I
+06:46 don't know if you're allowed to comment
+06:46 on that, but what do you think about
+06:49 these mega scale data centers, not just
+06:51 at the level of big tech, but also
+06:53 nation states, right? Something Jensen
+06:55 talked about and talks about on his
+06:56 earnings calls is sovereign data centers
+06:59 and sovereign AI strategy. As we go from
+07:02 data centers in Northern Virginia that
+07:04 you and I can go visit to these massive
+07:06 projects, what does it look like? What
+07:07 is the real estate footprint? How should
+07:09 governments think about it? How do you
+07:11 see that evolving? Yeah, I think uh
+07:13 there's there's two big verticals that
+07:14 are driving this. One is that um you
+07:17 know because of the scale of energy
+07:18 needed um for this infrastructure at
+07:20 scale like you know you really do need
+07:22 to take an energy first approach and
+07:23 that's really what Crusoe's done like
+07:25 bringing the demand for computing
+07:27 infrastructure to areas where we can
+07:28 access lowcost clean and abundant
+07:30 energy. That's really what brought us to
+07:32 West Texas. That's what brought us to
+07:33 Abalene, Texas, was that uh there was a
+07:36 massive overbuild of of renewables, uh
+07:38 particularly wind, um where people were
+07:41 getting negatively priced power on the
+07:43 wind power they were generating and
+07:44 selling, something like 30% of the time.
+07:46 And there was actually uh an abundance
+07:48 of curtailment. Uh which means they
+07:50 could be producing power, but they
+07:52 actually just don't because they don't
+07:53 want to sell it at a negative price. And
+07:54 so, you know, that's sort of the
+07:56 opposite problem that AI has. AI like
+07:58 needs a lot of energy. So it was kind of
+07:59 a natural fit to say, well, nobody's
+08:01 ever built a data center in Abalene,
+08:03 Texas, but if we did that, we would have
+08:05 this abundant clean energy to power it.
+08:07 Um, so that's really what drove us to be
+08:09 there. I think, you know, the sovereign
+08:10 AI common, I think, is is a pretty
+08:12 interesting one. Uh, because that's the
+08:14 other dimension that we're seeing a lot
+08:15 of uh geographic uh dispersion um in the
+08:19 demand for this type of infrastructure.
+08:21 And that really has to do with like data
+08:23 locality. when people think about uh you
+08:25 know there's there's data that you know
+08:27 maybe owned by a nation state or you
+08:29 know can't leave the uh you know four
+08:32 walls of the kingdom like you know it
+08:34 has to live there um and they want to do
+08:36 something very special with that so um
+08:38 that that's really catalyzed a lot of
+08:39 demand for investment um in in domestic
+08:42 AI strategies and I think people are
+08:43 looking at that this from like you know
+08:45 geopolitical uh you know power shifts as
+08:49 well. maybe talk to us a bit more about
+08:51 energy. Um, you know, I think probably
+08:53 everyone in the audience has some
+08:54 abstract notion that energy is going to
+08:56 be the constraint in AI and Sonia sent
+08:59 me this chart last week of US energy is
+09:01 like this and China energy is like this.
+09:03 And so as you talk about the
+09:04 geopolitical components, it really
+09:06 matters. Maybe break down for us the
+09:08 energy problem. Where is there really a
+09:10 constraint? Where is there not a
+09:11 constraint? How are we going to
+09:12 accelerate generation? What does the
+09:14 energy picture look like? And and and
+09:16 how bad is the situation right now?
+09:19 Yeah, I I think it's uh it's an
+09:21 interesting problem because when you
+09:22 look at the US, like the utilities have
+09:24 been such a sleepy industry for such a
+09:26 long period of time. Like our total
+09:28 generation capacity hasn't really grown
+09:30 that much. It's kind of like flatlined
+09:32 uh as things have gotten more efficient
+09:34 as you know uh uh uh as you know e even
+09:38 with electrification trends like just
+09:40 efficiencies have sort of outpaced
+09:42 demand growth. Um and then AI is like
+09:44 this step function change in demand,
+09:46 right? So, um, you're sort of seeing
+09:49 these like sleeping giants being woken
+09:51 up being like, "Hey, I need a gigawatt
+09:53 of power. Like, where's that going to
+09:54 come from?" Um, you know, we've sort of
+09:57 again sort of had to take this very
+09:58 first principled approach of like, okay,
+10:00 well, if we can't get the power from the
+10:02 utility, could we build a power plant?
+10:04 Um, so, you know, we we've done things
+10:06 like that. Um, you know, we we view AI
+10:08 as this massive opportunity to actually
+10:10 accelerate um next generation energy
+10:12 technologies as well. Um I have three
+10:14 different deals with uh small modular
+10:16 reactor companies that you know
+10:18 hopefully will accelerate uh uh nuclear
+10:20 as a as a critical uh piece of the
+10:23 energy to power uh the data centers of
+10:25 the future. Um so you know I I I kind of
+10:28 view this as a massive opportunity for
+10:30 the industry to accelerate a lot of
+10:32 interesting energy technologies. Um and
+10:35 uh you know bring us forward into uh a
+10:38 future where both intelligence and
+10:40 energy are both widely abundant. Um and
+10:44 I think that's really what's special
+10:45 about this moment in time is that you
+10:47 know for the first time in human history
+10:48 we're really able to manufacture
+10:50 intelligence. Right? previous to this
+10:53 like you know that you had to do it the
+10:54 organic way which is you know just
+10:55 having kids uh so uh you know and it
+10:59 takes long to you know grow them right
+11:01 and until they're actually productive
+11:02 intelligent beings you know today you
+11:05 know we can we can manufacture
+11:06 intelligence with silicon and uh you
+11:09 know that I and I think that's really
+11:11 what's special about um kind of this
+11:13 boom that's taking place and you know
+11:15 these AI factories are complex right I
+11:18 mean Jensen's you know all of the things
+11:20 that he spoke about earlier
+11:21 uh in terms of the networking you know
+11:23 fabric and you know MVLink and
+11:25 Infiniband and you know uh building
+11:27 these large scale coherent clusters um
+11:30 is a is a is a massive technological
+11:32 breakthrough in terms of making that uh
+11:34 manufactured intelligence reality but
+11:36 there's all the different components
+11:37 around it that you know Cruso is really
+11:39 focused on building between the data
+11:40 center um and then high performance
+11:42 services virtualization uh you know
+11:44 around uh around the compute
+11:46 infrastructure. Can you take us behind
+11:48 the scenes a bit on the energy
+11:49 negotiation? And it's something that I
+11:50 sort of imagine. There's not that many
+11:52 people. You understand the utility
+11:53 world. I think most of us probably
+11:54 don't. Um I've when I talk about you at
+11:57 Sequo, I've often talked about you as
+11:58 like you're the Rockefeller of this
+11:60 industry, right? Like you're going out
+12:01 there and you're negotiating with the
+12:03 power the power guy and you're
+12:04 negotiating these deals and somebody has
+12:06 to do that and that enables everything
+12:08 else on top of it. How does that
+12:10 actually happen?
+12:12 Um well, you know, number one, I have a
+12:15 great team. Uh I have great people that
+12:16 are really focused on this and and we've
+12:18 pulled we've had to pull people from
+12:19 very uh diverse you know backgrounds. So
+12:22 you know uh I actually have a guy on my
+12:24 team that uh I don't know if anybody's a
+12:26 a fan of the show Land Man, but you know
+12:28 a guy on my team actually used to be a
+12:29 landman. Um and so you know he was
+12:32 previously negotiating with farmers and
+12:34 uh ranchers just around uh uh mineral
+12:37 rights you know basically around the
+12:38 subsurface of what they were doing. uh
+12:40 you know now he's negotiating you know
+12:42 largecale energy deals you know and and
+12:44 and land and power deals uh to sort of
+12:47 make uh these large scale AI factories a
+12:49 reality you know uh there's a lot of
+12:52 like noise that's sort of been created
+12:54 like a lot of inbound requests like you
+12:56 know people are sending our team stuff I
+12:57 can't even imagine what you know Sam is
+12:59 getting bombarded with in terms of
+13:01 opportunities um but it's it's a lot
+13:03 more than just like having power to make
+13:05 a big AI factory happen and we've seen
+13:08 kind of like the two guys in a pickup
+13:09 truck uh saying like, "Oh yeah, my
+13:12 cousin's got this big power line that
+13:14 runs through his property and I got a
+13:15 bunch of, you know, I got this ranch in
+13:17 Texas. Like, you know, can we build a
+13:19 big AI data center there?" And, you
+13:21 know, typically the answer is no. Um uh
+13:24 but, you know, it's it's uh there
+13:25 there's a confluence of a lot of
+13:27 different components that have to come
+13:28 together between uh power, networking,
+13:31 permitting uh to to to and and then, you
+13:34 know, the whole supply chain to to
+13:36 really make this happen. Um, you know,
+13:38 to put it in perspective, in Abalene,
+13:39 Texas, you know, we have 5,000 people,
+13:42 you know, working there. Uh, the town of
+13:44 Abene's 120,000 people, right? So, um,
+13:47 you're talking about employing a very
+13:49 substantial part of the town and and and
+13:52 frankly having to import a lot of labor,
+13:54 um, because, you know, these are very
+13:55 skilled trades between electrical,
+13:57 mechanical, um, and and various
+13:59 construction trades that, uh, you know,
+14:01 sort of make make this, uh, build a
+14:03 reality. Will you talk to us a little
+14:05 bit about data center design? You can
+14:07 read I mean Meta publishes online. All
+14:09 the big tech companies publish online.
+14:10 You can really go through in detail what
+14:12 is the plan, how does the data center
+14:14 look. One thing that always resonated
+14:15 with me is your old school data center
+14:17 in Virginia. You have these servers
+14:19 spread out uh over the entire data
+14:21 center and now you have these big data
+14:23 centers that are repurposed and all the
+14:24 GPUs are in like one little cluster,
+14:26 right? Because of the way that you need
+14:27 to design the data center. The
+14:29 networking is changing and Jensen has
+14:30 been pushing this forward. What does the
+14:32 data center of the future look like? How
+14:34 does liquid cooling fit in? How should
+14:36 we think about what a future data center
+14:38 even is? Yeah, I I mean honestly this is
+14:40 really what got me into this in the
+14:42 first place was that you know Crusoe was
+14:44 building an AI cloud platform and I was
+14:46 looking at sort of the road maps and the
+14:48 changing compute architectures and I
+14:50 said to myself like you know as you know
+14:53 as I look forward at these changing
+14:54 comput architectures the data center in
+14:57 order to support these things is
+14:58 fundamentally going to have to shift. So
+14:60 in order to build the best AI cloud
+15:01 platform in the world, I really need to
+15:03 be the best at building AI data centers.
+15:05 Um and uh you know the the overall I I
+15:09 think the the biggest aspect is really
+15:11 you know the overall power density that
+15:12 you're seeing. So if you look 20 years
+15:14 ago a traditional data center rack might
+15:16 have been 2 kilowatts maybe 4 kilowatts.
+15:18 Um you know the NVL72 the GB200 racks
+15:21 are about 120 to 130 kilowatts. um you
+15:25 know what Jensen just announced at GTC
+15:27 was the uh the the Vera Rubin Ultra
+15:30 which will be a 600 kilowatt rack
+15:32 installation. So you're talking about
+15:33 you know multiple orders of magnitude
+15:35 increase in overall power density that
+15:37 fundamentally changes like you know the
+15:39 thermodynamics like involved in in the
+15:41 actual data center. So you have to you
+15:43 have to change sort of the cooling
+15:44 architectures quite a bit. So when you
+15:46 go into one of our data centers it kind
+15:47 of it's it's pretty interesting. It
+15:49 looks like the water works right.
+15:50 There's massive pipes uh that are moving
+15:53 water throughout the throughout the data
+15:54 center. Um you know each building has
+15:57 about a million gallons of water. Um
+15:59 that sort of you know feeds cold water
+16:01 into you know the racks to to cool the
+16:03 chip with a direct to direct to chip
+16:05 look at cooled architecture. Um then it
+16:07 feeds out to a uh a chiller that that
+16:10 basically exhausts the heat um you know
+16:12 in the outside. So um there's 84
+16:14 chillers per building. Um and then you
+16:17 know we're very focused on uh what would
+16:20 the network look like around that data
+16:22 center because again we're not thinking
+16:24 about this at the chip layer or the
+16:25 server layer. We're really thinking
+16:26 about this at the cluster layer, right?
+16:28 The data center is the new unit of
+16:30 compute and you know that's really what
+16:32 the AI factory is is the data center
+16:33 scale computer. Um and when we think
+16:36 about that we also think about like what
+16:38 about connecting multiple buildings
+16:40 together. So you know in Abene we have
+16:41 we have eight separate buildings that
+16:43 are under construction on that site. um
+16:44 all planned to be interconnected.
+16:46 There's 44inch conduits that connect
+16:48 each network core to one another um so
+16:50 that you can have one coherent cluster
+16:53 um of GB200s, you know, and uh that'll
+16:55 be the biggest in the world at that, you
+16:57 know, once it's once it's live. So, I
+16:59 love that point. The data center is the
+17:01 new computer. I think that's a really
+17:02 succinct way to put it. Maybe final
+17:04 question for you personally about you as
+17:05 a founder. I think you've climbed five
+17:07 of the seven summits. One of your
+17:08 company values is think like a
+17:09 mountaineer. How have you and you've had
+17:11 this company that has gone through many
+17:13 different formulations of you and what
+17:15 you're doing and constantly iterating.
+17:17 How how has your company culture
+17:19 influenced getting you here?
+17:22 Uh yeah, I mean you know that value to
+17:24 think like a mountaineer was was kind of
+17:25 a special one and very unique to Crusoe.
+17:27 Um and you know it sort of came out of
+17:29 the fact that you know I had actually
+17:31 just come back from climbing Mount
+17:32 Everest when when I when I founded Cruso
+17:34 and it was kind of like you know I had
+17:35 mountaineering on my mind quite a bit.
+17:37 Um and uh you know I was thinking about
+17:39 a lot of these practices of being a
+17:41 successful mountaineer and how they
+17:43 would actually inform being a good
+17:44 employee at a company and uh uh you know
+17:47 in our case it was like look I don't
+17:48 want everybody to be an extreme athlete
+17:50 that like goes and has to go climb
+17:51 mountains to be a good employee. Uh but
+17:53 I want them to channel some of those
+17:55 same thoughts and and practices that
+17:57 really make those those things
+17:58 successful. So, you know, when you're
+17:59 climbing in the mountains, uh, you have
+18:01 to you have to you have to have a plan
+18:03 A, like you know, you have a plan to get
+18:04 to the top and, you know, hopefully the
+18:06 the weather holds up and, you know,
+18:08 everything goes to plan, but you also
+18:10 have to plan for things to go wrong. And
+18:11 I think that resilience and robustness
+18:13 really embedded into every aspect of uh
+18:16 our process designs and and um uh our
+18:20 organization designs has really led to
+18:22 being able to thrive amidst multiple
+18:25 different chaotic periods, you know, um
+18:26 throughout throughout the company's
+18:28 history. So, uh, you know, resilience
+18:29 and chaos, I think, is like a a great,
+18:32 um, you know, principle that we've, uh,
+18:34 uh, been able to, uh, do well with.
+18:37 Thank you. Thanks so much, David.

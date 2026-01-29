@@ -1,0 +1,3541 @@
+00:00 we're a creative tool for growth and so
+00:03 
+
+00:03 creative here means that we give a lot
+00:04 
+
+00:04 of uh flexibility and lots of degrees of
+00:07 
+
+00:07 freedom to people um which means that we
+00:09 
+
+00:09 give them lots of different building
+00:11 
+
+00:11 blocks that they could put together and
+00:14 
+
+00:14 one key thing that AI is going to help
+00:15 
+
+00:15 us do is to preconfig some of these
+00:18 
+
+00:18 building blocks so you don't have to
+00:20 
+
+00:20 tweak everything beforehand so it just
+00:22 
+
+00:22 lets you get started more easily and it
+00:24 
+
+00:24 lets you um get to kind of your solution
+00:27 
+
+00:27 faster
+00:30 
+
+00:30 [Music]
+00:45 
+
+00:45 hello everyone today we're excited to
+00:47 
+
+00:47 welcome Kareem Amin co-founder and CEO
+00:49 
+
+00:49 of clay which is leveraging AI to help
+00:52 
+
+00:52 go to market teams unleash creativity
+00:55 
+
+00:55 and be more effective in their work Clay
+00:58 
+
+00:58 is one of the fastest growing AI
+01:00 
+
+01:00 applications for business so we wanted
+01:03 
+
+01:03 to ask Kareem what makes it so magical
+01:06 
+
+01:06 Kareem doesn't see human sales reps
+01:08 
+
+01:08 going away anytime soon but Clay's
+01:11 
+
+01:11 unique approach is about balancing the
+01:14 
+
+01:14 opposing forces of imagination and
+01:17 
+
+01:17 automation we'll hear about how Kareem
+01:19 
+
+01:19 applies ideas from physics and
+01:21 
+
+01:21 philosophy to sales and where he sees AI
+01:24 
+
+01:24 tools
+01:26 
+
+01:26 heading welcome to training data I'm
+01:29 
+
+01:29 Alfred Lynn I'm a partner at Square
+01:31 
+
+01:31 capital and your guest host for today
+01:33 
+
+01:33 we're here with Kareem um from clay and
+01:36 
+
+01:36 Kareem was a physicist he would he then
+01:38 
+
+01:38 started his career at in product at
+01:40 
+
+01:40 Microsoft and W at the Wall Street
+01:42 
+
+01:42 Journal and then he started clay in 2017
+01:45 
+
+01:45 and uh Clay is a creative tool to help
+01:48 
+
+01:48 you grow your business and it's
+01:50 
+
+01:50 redefining the way we go to market so
+01:53 
+
+01:53 welcome yeah thanks for having me Alfred
+01:55 
+
+01:55 all right let's start with an like a
+01:58 
+
+01:58 controversial question is AI to
+02:00 
+
+02:00 completely automate away the jobs of the
+02:02 
+
+02:02 SDR I don't think so um I think that the
+02:07 
+
+02:07 way we're approaching it um there's
+02:11 
+
+02:11 maybe three ways to kind of like look at
+02:13 
+
+02:13 this well let's actually step back a
+02:15 
+
+02:15 little bit to kind of help people
+02:18 
+
+02:18 understand what the role of the SDR is
+02:22 
+
+02:22 in the business and why everybody's
+02:24 
+
+02:24 focusing on it so if you're in a
+02:26 
+
+02:26 traditional B2B company um and you're
+02:30 
+
+02:30 selling to other businesses you have to
+02:33 
+
+02:33 have an organization of lots of sdrs
+02:36 
+
+02:36 that do account research and they figure
+02:37 
+
+02:37 out who you're selling to and do they
+02:40 
+
+02:40 have the right properties um and you
+02:42 
+
+02:42 augment that with data that you usually
+02:44 
+
+02:44 buy from other data providers and so a
+02:46 
+
+02:46 lot of the cost is having sdrs a lot of
+02:49 
+
+02:49 the things that make you less efficient
+02:51 
+
+02:51 is just having lots of people uh doing
+02:53 
+
+02:53 this research and that's why a lot of
+02:55 
+
+02:55 companies are focusing on uh improving
+02:58 
+
+02:58 SDR efficiency so one thing you could
+02:60 
+
+02:60 could do is improve efficiency by giving
+03:02 
+
+03:02 them tools or co-pilots another thing is
+03:04 
+
+03:04 to try to fully automate them uh
+03:07 
+
+03:07 automate the work that uh sdrs do and
+03:10 
+
+03:10 that's kind of the magic wand solution
+03:12 
+
+03:12 connect all your data connect um
+03:15 
+
+03:15 thirdparty data first party data we'll
+03:17 
+
+03:17 figure it out we'll send the messages
+03:18 
+
+03:18 we'll do the follow-up and then we at
+03:21 
+
+03:21 clay believe there's a Third Way um or
+03:23 
+
+03:23 kind of like the it's not quite the
+03:25 
+
+03:25 middle way but it is a third approach
+03:28 
+
+03:28 which is take the job to be done and
+03:30 
+
+03:30 give it to someone who's more technical
+03:33 
+
+03:33 um such as a revops person or a growth
+03:35 
+
+03:35 marketer who can then use all of the
+03:37 
+
+03:37 tools that AI gives you um to re to find
+03:41 
+
+03:41 creative ways to reach out to people
+03:43 
+
+03:43 rather than automate all the work and
+03:45 
+
+03:45 magically have that happen for you um
+03:48 
+
+03:48 and the reason I don't think it's
+03:49 
+
+03:49 possible to fully automate it with
+03:51 
+
+03:51 today's technology is that um stand you
+03:55 
+
+03:55 need to stand out from the crowd and AI
+03:58 
+
+03:58 can automate a lot of the work and maybe
+04:00 
+
+04:00 even be creative in instances but it
+04:02 
+
+04:02 can't continuously do that at the end of
+04:04 
+
+04:04 the day you're selling to people and you
+04:06 
+
+04:06 need to figure out how to reach them and
+04:08 
+
+04:08 how to stand out from others in the
+04:09 
+
+04:09 market so what is your vision for what
+04:12 
+
+04:12 the future holds for sales what does it
+04:14 
+
+04:14 mean for sales what what's the complete
+04:17 
+
+04:17 stock that Clay's going to build versus
+04:19 
+
+04:19 what other people are going to build and
+04:21 
+
+04:21 what does the sales organization look
+04:22 
+
+04:22 like in the future so I think you know
+04:26 
+
+04:26 we're we're trying to run this in our
+04:29 
+
+04:29 own company it's very meta right so um
+04:33 
+
+04:33 we think there will be a go to market
+04:35 
+
+04:35 organization that combines sales
+04:38 
+
+04:38 marketing and customer success and
+04:39 
+
+04:39 you're already seeing this happen in the
+04:41 
+
+04:41 market um at the end of the day you need
+04:44 
+
+04:44 an go to market Ops organization that
+04:46 
+
+04:46 provides data and supports the go to
+04:49 
+
+04:49 market teams um we want to be the system
+04:52 
+
+04:52 of action in that so the the system of
+04:55 
+
+04:55 record could be your CRM it could be
+04:57 
+
+04:57 data in your warehouse and that's all
+04:59 
+
+04:59 the information you have around
+05:00 
+
+05:00 customers how they've interacted with
+05:02 
+
+05:02 you um that's where the data lives but
+05:05 
+
+05:05 then how you act on the data is going to
+05:08 
+
+05:08 be in clay got it so we've described it
+05:12 
+
+05:12 in a very sort of theoretical way in
+05:14 
+
+05:14 some sense like put it in context who
+05:16 
+
+05:16 are some of your customers what are they
+05:18 
+
+05:18 using clay for and what are some of the
+05:21 
+
+05:21 results that they're getting yeah most
+05:23 
+
+05:23 of our customers are um smbs that can
+05:27 
+
+05:27 just sign up and use the product and
+05:29 
+
+05:29 they find compan compes and people um
+05:32 
+
+05:32 and find very unique data points about
+05:34 
+
+05:34 them um and then use that to craft
+05:37 
+
+05:37 personalized Outreach the key thing with
+05:39 
+
+05:39 Clay is that you can craft personalized
+05:41 
+
+05:41 Outreach for new customers or for your
+05:44 
+
+05:44 existing customers um and so for a lot
+05:48 
+
+05:48 of the smaller businesses they're using
+05:49 
+
+05:49 it to find new customers a lot of our
+05:52 
+
+05:52 bigger customers um like let's say
+05:55 
+
+05:55 verata um is using us to uh create
+06:00 
+
+06:00 personalized landing pages for people
+06:03 
+
+06:03 when they come to their website that are
+06:05 
+
+06:05 customized to them um and so you can see
+06:08 
+
+06:08 that it's a creative approach to go to
+06:11 
+
+06:11 market so they have a lot of inbound and
+06:14 
+
+06:14 they want to make sure that people see
+06:15 
+
+06:15 the right value prop when they get there
+06:17 
+
+06:17 you can do that with Clay um other
+06:20 
+
+06:20 people are using uh clay in more
+06:24 
+
+06:24 creative ways so actually we have a
+06:26 
+
+06:26 customer that is um sells Dev tools and
+06:29 
+
+06:29 they used this technique with us
+06:31 
+
+06:31 actually uh where they monitor our
+06:33 
+
+06:33 status page to see when the website is
+06:36 
+
+06:36 down and and the reason why it's down
+06:39 
+
+06:39 and then they messaged us saying hey you
+06:41 
+
+06:41 could have avoided this if you used our
+06:43 
+
+06:43 product um which caught our attention of
+06:46 
+
+06:46 course yeah the ecosystem figures out
+06:49 
+
+06:49 the developer ecosystem figures out way
+06:51 
+
+06:51 more interesting things to do with your
+06:55 
+
+06:55 product then you might do yeah of course
+06:57 
+
+06:57 um and and you know just to add like a
+06:59 
+
+06:59 couple CLE more examples but you know uh
+07:02 
+
+07:02 companies like anthropic use us to
+07:04 
+
+07:04 improve their data enrichment so uh
+07:07 
+
+07:07 We've tripled kind of the data um
+07:09 
+
+07:09 coverage that they have at a fraction of
+07:12 
+
+07:12 the cost um the reality is there's a lot
+07:15 
+
+07:15 of data providers out there that have
+07:17 
+
+07:17 information around other companies um
+07:20 
+
+07:20 that are better and cheaper than the
+07:22 
+
+07:22 dominant kind of Market players but uh
+07:25 
+
+07:25 people just don't know about them and
+07:27 
+
+07:27 they don't know how to use them because
+07:28 
+
+07:28 they don't have great uis anthropic
+07:30 
+
+07:30 using I would think that they would know
+07:32 
+
+07:32 how to use AI to cleanse their data and
+07:36 
+
+07:36 normalize and and do all the things that
+07:38 
+
+07:38 they need to do they do um so they they
+07:41 
+
+07:41 do know how to do all these things
+07:42 
+
+07:42 they're using their own models within
+07:44 
+
+07:44 clay wow right and so what what clay
+07:46 
+
+07:46 does is it allows you to um um and I
+07:51 
+
+07:51 think this is generally going to happen
+07:53 
+
+07:53 in um kind of like various uh Fields
+07:57 
+
+07:57 with AI so I think of the foundation
+07:60 
+
+07:60 model companies as providing kind of
+08:02 
+
+08:02 that layer of intelligence but then if
+08:05 
+
+08:05 you want to use it in a particular
+08:07 
+
+08:07 vertical you want all the there's
+08:09 
+
+08:09 there's a lot of things that you need um
+08:12 
+
+08:12 in addition to the models in order to
+08:14 
+
+08:14 actually act on the data right so what
+08:16 
+
+08:16 we can do is like pull the data from
+08:18 
+
+08:18 their various uh data stores be able to
+08:20 
+
+08:20 run the model iteratively and um also
+08:24 
+
+08:24 enrich it with lots of other data
+08:25 
+
+08:25 providers not just using the foundation
+08:28 
+
+08:28 models and then you know you have to
+08:29 
+
+08:29 pass it and generate messages from it so
+08:32 
+
+08:32 that we're about making that workflow
+08:34 
+
+08:34 easy to do um and so using their
+08:37 
+
+08:37 technology but then making it uh
+08:40 
+
+08:40 possible to do the workflow more easily
+08:42 
+
+08:42 so how do you envision uh the go to
+08:45 
+
+08:45 market stack or and and specifically the
+08:47 
+
+08:47 clay stock changing with AI over time
+08:49 
+
+08:49 let me go back to kind of like the the
+08:52 
+
+08:52 the um mission that you said at the
+08:55 
+
+08:55 beginning right we're a creative tool
+08:56 
+
+08:56 for growth and so creative here means
+08:58 
+
+08:58 that we give a lot of uh flexibility and
+09:01 
+
+09:01 lots of degrees of freedom to people um
+09:04 
+
+09:04 which means that we give them lots of
+09:05 
+
+09:05 different building blocks that they
+09:06 
+
+09:06 could put together and one key thing
+09:09 
+
+09:09 that AI is going to help us do is to
+09:12 
+
+09:12 preconfig some of these building blocks
+09:14 
+
+09:14 so you don't have to tweak everything
+09:16 
+
+09:16 beforehand so it just lets you get
+09:17 
+
+09:17 started more easily and it lets you um
+09:20 
+
+09:20 get to kind of your solution faster so a
+09:23 
+
+09:23 couple of things that we're working on
+09:25 
+
+09:25 is um let's say you sign up to clay We
+09:28 
+
+09:28 you look at your website we can see who
+09:32 
+
+09:32 your customers are from any logos or
+09:34 
+
+09:34 case studies that you have we can see
+09:35 
+
+09:35 what you're writing about uh what you do
+09:39 
+
+09:39 and then figure out who are you
+09:41 
+
+09:41 targeting how do we find lookalike
+09:44 
+
+09:44 customers to that let's preet up all of
+09:46 
+
+09:46 the searches and the data that you would
+09:48 
+
+09:48 need for those types of customers if you
+09:50 
+
+09:50 connect some of your first- party data
+09:52 
+
+09:52 Maybe you connect your you know Wiki or
+09:54 
+
+09:54 notion um or you connect your emails
+09:57 
+
+09:57 that you've sent we can then Analyze
+09:58 
+
+09:58 That and use that same language uh when
+10:01 
+
+10:01 we're sending out messages and so that
+10:04 
+
+10:04 does sound a lot like a fully automated
+10:06 
+
+10:06 solution but what we do is actually set
+10:08 
+
+10:08 up all of our building blocks with you
+10:11 
+
+10:11 using Ai and then let you tweak it from
+10:12 
+
+10:12 there um other things along those lines
+10:15 
+
+10:15 are imagine you connect to your CRM and
+10:18 
+
+10:18 we take a look at who uh is a good
+10:21 
+
+10:21 customer who maybe you've lost in the
+10:23 
+
+10:23 past and um and look at what features
+10:27 
+
+10:27 you're releasing in the future and then
+10:29 
+
+10:29 message them maybe you lost someone
+10:31 
+
+10:31 because you didn't have sock 2
+10:32 
+
+10:32 compliance and now you do so that's a
+10:34 
+
+10:34 good person to reactivate so we should
+10:36 
+
+10:36 help you come up with these campaigns as
+10:39 
+
+10:39 well as do them faster using
+10:41 
+
+10:41 AI in in some sense the old world of
+10:44 
+
+10:44 doing good growing go to market is going
+10:46 
+
+10:46 to be very different from the new world
+10:48 
+
+10:48 and so you know talk a little bit about
+10:51 
+
+10:51 how clay fits into the new world and
+10:53 
+
+10:53 maybe you know what are the jobs that
+10:54 
+
+10:54 are most at risk and what are what are
+10:56 
+
+10:56 we going to do in go to market in the
+10:58 
+
+10:58 future with
+10:60 
+
+10:60 yeah I think what's really exciting is
+11:02 
+
+11:02 the community that's coming up around
+11:05 
+
+11:05 clay um you know we have over 177,000
+11:08 
+
+11:08 people in our slack Channel um there's a
+11:11 
+
+11:11 number of boot camps as you know that
+11:12 
+
+11:12 have come up to teach people how to do
+11:14 
+
+11:14 clay and um I think the the thing that
+11:20 
+
+11:20 Clay is doing is allowing people to try
+11:23 
+
+11:23 out more ideas for how to uh grow their
+11:27 
+
+11:27 companies and our our mission is really
+11:29 
+
+11:29 anytime you think of an idea of how to
+11:31 
+
+11:31 grow your company you should be able to
+11:32 
+
+11:32 translate it to Clay quickly so people
+11:34 
+
+11:34 who um are having a lot of these
+11:37 
+
+11:37 creative ideas or are capable of that I
+11:39 
+
+11:39 think belong in the new world I think
+11:42 
+
+11:42 the old world where you are um just
+11:45 
+
+11:45 really good at putting together a bunch
+11:47 
+
+11:47 of tools to do go to market or you're
+11:50 
+
+11:50 going through the drudgery of kind of
+11:51 
+
+11:51 like building a spreadsheet um and
+11:54 
+
+11:54 enriching it with a bunch of tools that
+11:56 
+
+11:56 work is going to go away and um it
+11:59 
+
+11:59 belongs kind of in automation uh the new
+12:02 
+
+12:02 world is around how do you figure out
+12:05 
+
+12:05 how to pinpoint that someone is going to
+12:07 
+
+12:07 be a good customer for you and then
+12:09 
+
+12:09 using clay to do that you want to talk a
+12:11 
+
+12:11 little bit about these clay gencies that
+12:13 
+
+12:13 have set up shop and work on clay and
+12:16 
+
+12:16 help other companies with growth I mean
+12:18 
+
+12:18 it's such a fascinating ecosystem that
+12:21 
+
+12:21 has been created yeah totally I I think
+12:25 
+
+12:25 um this comes back again to this
+12:28 
+
+12:28 something that I say to the company all
+12:30 
+
+12:30 the time when we're building the product
+12:32 
+
+12:32 you can think of you know building a
+12:35 
+
+12:35 microwave um and you go and you put how
+12:37 
+
+12:37 much time you want on the microwave
+12:39 
+
+12:39 Press Start and it works super simple
+12:41 
+
+12:41 does what it needs to do and then you
+12:44 
+
+12:44 can think of something like a guitar
+12:46 
+
+12:46 where um it has six strings so it looks
+12:49 
+
+12:49 very simple but you can spend a whole
+12:51 
+
+12:51 lifetime figuring out all the things you
+12:53 
+
+12:53 could do you could play different types
+12:54 
+
+12:54 of music and while you're playing the
+12:56 
+
+12:56 guitar you're also learning music and I
+12:58 
+
+12:58 think it's a similar thing in clay um
+13:01 
+
+13:01 really what we're doing is figuring out
+13:04 
+
+13:04 how to help businesses grow and it
+13:06 
+
+13:06 happens to be that using clay should be
+13:08 
+
+13:08 the best way to help your business grow
+13:11 
+
+13:11 every single idea for how to grow your
+13:13 
+
+13:13 business should be doable in clay that's
+13:16 
+
+13:16 kind of our mission and I think the um
+13:20 
+
+13:20 agencies or CL agencies that have come
+13:23 
+
+13:23 um that come up uh around like our
+13:26 
+
+13:26 product is because they are finding new
+13:31 
+
+13:31 ways to reach um
+13:34 
+
+13:34 customers and really it's it's really
+13:37 
+
+13:37 about connecting customers um you know
+13:40 
+
+13:40 you don't want to receive something that
+13:41 
+
+13:41 you don't care about um and the more
+13:44 
+
+13:44 research you do beforehand the more
+13:46 
+
+13:46 likely you are to reach someone who
+13:47 
+
+13:47 actually wants what you have because no
+13:49 
+
+13:49 one wants to send um messages that uh
+13:53 
+
+13:53 you don't respond to or don't look at or
+13:55 
+
+13:55 that are unwanted and the only way to do
+13:57 
+
+13:57 that is to do this research and to come
+13:59 
+
+13:59 up with new clever ways to stand out
+14:01 
+
+14:01 from the crowd and Clay agencies are
+14:05 
+
+14:05 really small teams usually two to four
+14:07 
+
+14:07 people um sometimes they're bigger that
+14:11 
+
+14:11 are using clay to help other companies
+14:13 
+
+14:13 grow um the reason they've come up is
+14:16 
+
+14:16 that they found this to be an incredible
+14:18 
+
+14:18 opportunity to make money there's a
+14:21 
+
+14:21 number of Cl agencies that are making
+14:23 
+
+14:23 you know over a million in run rate and
+14:26 
+
+14:26 that have started 6 months ago um that's
+14:28 
+
+14:28 fascinating yeah and so they're yeah
+14:31 
+
+14:31 they they're just finding that this um
+14:33 
+
+14:33 and and a lot of other people sdrs are
+14:36 
+
+14:36 upskilling um learning kind of the
+14:39 
+
+14:39 techniques of growth and using clay to
+14:41 
+
+14:41 do it because they know that they uh can
+14:44 
+
+14:44 make a lot of money because there's a
+14:45 
+
+14:45 big gap in the market I I want to move
+14:48 
+
+14:48 on to product a little bit and you have
+14:50 
+
+14:50 a clay research agent or a clay agent
+14:53 
+
+14:53 what is that and how does that
+14:54 
+
+14:54 incorporate um AI to help uh with the
+14:58 
+
+14:58 sales process yeah so so Cent is an
+14:60 
+
+14:60 implementation of the react paper so
+15:03 
+
+15:03 it's um essentially you know a a an AI
+15:06 
+
+15:06 agent that can make a plan and then
+15:10 
+
+15:10 execute it using all the tools that we
+15:11 
+
+15:11 have um it is incredibly useful to find
+15:16 
+
+15:16 realtime information that uh normally
+15:19 
+
+15:19 humans were needed to do it because it's
+15:21 
+
+15:21 very nuanced so you might want to say go
+15:23 
+
+15:23 to a um company's website and see how
+15:27 
+
+15:27 many pricing plans they have or see if
+15:29 
+
+15:29 they have an Enterprise plan um and a
+15:33 
+
+15:33 Pro Plan or see if the difference
+15:35 
+
+15:35 between the Pro Plan and the basic plan
+15:37 
+
+15:37 is $500 and these can all be indicators
+15:40 
+
+15:40 to you that this is a good company um
+15:42 
+
+15:42 and what our agent does is it has access
+15:44 
+
+15:44 to number of different tools so being
+15:47 
+
+15:47 able to scrape a website being able to
+15:50 
+
+15:50 summarize the information or um using
+15:52 
+
+15:52 llms kind of understand the context um
+15:55 
+
+15:55 and it also has access to a number of uh
+15:57 
+
+15:57 clay specific tools so data around
+16:01 
+
+16:01 companies and people that we get from
+16:02 
+
+16:02 other sources and it uses that to um
+16:06 
+
+16:06 give you the answer to your question
+16:08 
+
+16:08 many of the people I've talked to that
+16:09 
+
+16:09 use clay call it magic um because it's a
+16:13 
+
+16:13 magical experience and in some sense the
+16:16 
+
+16:16 question we always have is like where is
+16:19 
+
+16:19 the magic is in the models is it on
+16:21 
+
+16:21 something that you do on top is it the
+16:24 
+
+16:24 the workflow the user experience
+16:26 
+
+16:26 describe where the magic happens
+16:29 
+
+16:29 yeah that's a that's a great question I
+16:32 
+
+16:32 um maybe this is an unorthodox response
+16:35 
+
+16:35 but we love those yeah I think the magic
+16:40 
+
+16:40 and our competitive Advantage um is not
+16:45 
+
+16:45 in one single thing that we do um but it
+16:49 
+
+16:49 is in the approach that we're taking so
+16:51 
+
+16:51 we have a belief that um sales and go to
+16:55 
+
+16:55 market is a creative act um I think
+16:58 
+
+16:58 everybody has treated it much more in a
+17:03 
+
+17:03 um how do we process this funnel as
+17:07 
+
+17:07 quickly as possible how do we automate
+17:08 
+
+17:08 as many of these tasks as possible and
+17:11 
+
+17:11 how do we grow the top of funnel and you
+17:14 
+
+17:14 know every step in the funnel um and I I
+17:19 
+
+17:19 think that that's obviously necessary
+17:22 
+
+17:22 but I don't think it's
+17:23 
+
+17:23 sufficient and we we we'll be talking
+17:27 
+
+17:27 more about this uh in the future but
+17:29 
+
+17:29 actually it it's much better to think
+17:32 
+
+17:32 about this in terms of moments um so
+17:35 
+
+17:35 you're creating these different moments
+17:37 
+
+17:37 for people that after a certain
+17:40 
+
+17:40 threshold become uh a way of going from
+17:43 
+
+17:43 you know through the funnel right but
+17:45 
+
+17:45 actually and and you mentioned that I
+17:47 
+
+17:47 studied physics and electrical
+17:49 
+
+17:49 engineering but
+17:51 
+
+17:51 um a lot of these metaphors at least in
+17:54 
+
+17:54 the company are pretty nerdy but you
+17:56 
+
+17:56 know the in in um in physics there's
+17:58 
+
+17:58 activ energy right so if you're boiling
+18:01 
+
+18:01 water you're boiling it and it starts
+18:04 
+
+18:04 bubbling but only when it reaches 100°
+18:07 
+
+18:07 does it start to phase shift right to
+18:09 
+
+18:09 gas um and I think it's kind of similar
+18:11 
+
+18:11 like these analogies make sense in other
+18:14 
+
+18:14 places so if you're you know interacting
+18:15 
+
+18:15 with a brand you might have like a few
+18:18 
+
+18:18 moments of delight but only after you
+18:20 
+
+18:20 cross like a certain threshold do you
+18:22 
+
+18:22 then become a customer um so you know
+18:26 
+
+18:26 the that way of thinking about it ows us
+18:29 
+
+18:29 to build a tool that's made for turning
+18:33 
+
+18:33 any of your ideas into reality quickly
+18:35 
+
+18:35 so that you can test these different
+18:37 
+
+18:37 ideas to create these different moments
+18:40 
+
+18:40 and we treat um we have fun building the
+18:43 
+
+18:43 product um we we we literally use kind
+18:47 
+
+18:47 of the word creative I've probably used
+18:49 
+
+18:49 it so many times already in this podcast
+18:51 
+
+18:51 um to enshrine kind of that idea that
+18:55 
+
+18:55 you're playing with it the company is
+18:57 
+
+18:57 called clay CU you're also so putting
+18:60 
+
+18:60 together things you're building you're
+19:02 
+
+19:02 manufacturing you want to have that
+19:04 
+
+19:04 feeling of creation and I think that
+19:06 
+
+19:06 we've been able to communicate that
+19:08 
+
+19:08 feeling through the product and and
+19:11 
+
+19:11 that's why people love it and want to
+19:13 
+
+19:13 use it because they feel like they're
+19:14 
+
+19:14 building something new I don't know if
+19:17 
+
+19:17 this is a contradiction or uh you're
+19:19 
+
+19:19 holding things in tension but you're
+19:22 
+
+19:22 physicists or you're scientist but
+19:23 
+
+19:23 you're also a creative you're you're
+19:25 
+
+19:25 making you're producing and making music
+19:28 
+
+19:28 um you talk about clay as a creative
+19:30 
+
+19:30 tool but you also talk about the people
+19:32 
+
+19:32 who use it are go to market Engineers or
+19:35 
+
+19:35 developers so um how do you think about
+19:39 
+
+19:39 Clay is it two oppos opposing forces
+19:42 
+
+19:42 held in tension or unifying to opposing
+19:46 
+
+19:46 forces how do you think about that I
+19:48 
+
+19:48 think it is to opposing forces held in
+19:51 
+
+19:51 tension and I think that's where
+19:54 
+
+19:54 um that's where the most interesting
+19:56 
+
+19:56 things happen we agree yeah
+19:60 
+
+19:60 um and and I and I think um you know
+20:05 
+
+20:05 like you you want to be uh a creative
+20:09 
+
+20:09 tool but also you need to allow people
+20:13 
+
+20:13 to um do the workflow or the process um
+20:17 
+
+20:17 and in volume right so you need kind of
+20:20 
+
+20:20 the automation but before the automation
+20:22 
+
+20:22 you have to figure out what is it that
+20:23 
+
+20:23 you're actually doing and then you need
+20:24 
+
+20:24 to be able to do it quickly um but we
+20:27 
+
+20:27 have a lot of values at clay that kind
+20:30 
+
+20:30 of hold that
+20:31 
+
+20:31 tension um and maybe a small digression
+20:35 
+
+20:35 here but uh there's a you know famous
+20:38 
+
+20:38 philosopher Hegel who thought that like
+20:41 
+
+20:41 the movement of History was about things
+20:44 
+
+20:44 being intention so you know you have the
+20:47 
+
+20:47 thesis and then the antithesis and then
+20:48 
+
+20:48 they create the synthesis and that's how
+20:51 
+
+20:51 things move forward um for him it was
+20:54 
+
+20:54 kind of like a very mystical thing so
+20:56 
+
+20:56 it's moving towards God uh but I think
+20:59 
+
+20:59 that that General kind of like theme is
+21:02 
+
+21:02 one that we kind of like uh believe in
+21:05 
+
+21:05 at clay so describe the company culture
+21:08 
+
+21:08 then how do you hold things in tension I
+21:10 
+
+21:10 you know I walk through your offices it
+21:12 
+
+21:12 definitely has a very cool Vibe and yet
+21:15 
+
+21:15 people are very serious and working very
+21:17 
+
+21:17 hard at the same time but that's my
+21:20 
+
+21:20 Surface view what how would you describe
+21:21 
+
+21:21 the culture um we tend to describe it as
+21:24 
+
+21:24 chill High Achievers and so um what that
+21:28 
+
+21:28 means is you know we minimize um like we
+21:32 
+
+21:32 can acknowledge things like anxiety or
+21:35 
+
+21:35 fear or frustration uh but we don't
+21:37 
+
+21:37 necessarily react to it in the moment um
+21:41 
+
+21:41 and we focus kind of on having a clear
+21:43 
+
+21:43 mind so that we can do great work um and
+21:47 
+
+21:47 and I think you can do great work when
+21:49 
+
+21:49 you're not constantly feeling um in a
+21:54 
+
+21:54 rush or
+21:57 
+
+21:57 um I think the ity of mind is really the
+22:00 
+
+22:00 key thing so you can see all the
+22:03 
+
+22:03 different pieces of what's happening and
+22:05 
+
+22:05 then use that information to commit so
+22:08 
+
+22:08 we do it in our interviews right one of
+22:10 
+
+22:10 the key things that we do in our
+22:12 
+
+22:12 interviews is you collect information
+22:14 
+
+22:14 and you share information we're not
+22:16 
+
+22:16 necessarily trying to judge you in the
+22:17 
+
+22:17 moment we're trying to understand who
+22:19 
+
+22:19 you are we're trying to communicate what
+22:21 
+
+22:21 is available and who we are and then we
+22:23 
+
+22:23 can use all of that information at the
+22:25 
+
+22:25 end to make a decision um and so that
+22:28 
+
+22:28 that's kind of like a common theme is
+22:30 
+
+22:30 collect information first and then have
+22:32 
+
+22:32 the clarity of mind to be able to make a
+22:34 
+
+22:34 good decision after that um another
+22:37 
+
+22:37 thing that might be interesting is we
+22:39 
+
+22:39 have a culture actually the value that
+22:41 
+
+22:41 we use for this is called negative
+22:43 
+
+22:43 maintenance um because some people are
+22:46 
+
+22:46 high maintenance you want it to be the
+22:48 
+
+22:48 opposite some people are high
+22:49 
+
+22:49 maintenance some people are no
+22:51 
+
+22:51 maintenance and what we want is negative
+22:53 
+
+22:53 maintenance so you remove work from
+22:55 
+
+22:55 people around you um whether it is
+22:58 
+
+22:58 because you are
+22:59 
+
+22:59 um kind
+23:00 
+
+23:00 of in a place of like bringing down the
+23:06 
+
+23:06 tension so that we can actually have
+23:08 
+
+23:08 that Clarity of thought um the other
+23:10 
+
+23:10 thing that we do is is we um I call it
+23:14 
+
+23:14 there's always a way other people call
+23:16 
+
+23:16 it like make it make it work then make
+23:18 
+
+23:18 it great um and in some ways that is a
+23:21 
+
+23:21 tension because you want to make you
+23:23 
+
+23:23 want to ship something quickly you want
+23:24 
+
+23:24 to make it possible for people to do new
+23:27 
+
+23:27 things and you also want do amazing
+23:30 
+
+23:30 great work that um you know you spend
+23:33 
+
+23:33 time which requires time and so the
+23:35 
+
+23:35 balance there we leave that up to
+23:38 
+
+23:38 people's judgment um we are you need I
+23:41 
+
+23:41 think one of the important things
+23:42 
+
+23:42 actually in a company is making sure
+23:43 
+
+23:43 that you're aligned the people the
+23:46 
+
+23:46 market what you're building um needs to
+23:49 
+
+23:49 be aligned right if you're building a
+23:51 
+
+23:51 rocket ship you can't make it work then
+23:53 
+
+23:53 make it great it needs to be great from
+23:55 
+
+23:55 the beginning otherwise something really
+23:57 
+
+23:57 bad happens um if if you're building a
+23:60 
+
+23:60 go to market tool where people need to
+24:03 
+
+24:03 be able to do their tactic now and
+24:05 
+
+24:05 actually doing it first before other
+24:07 
+
+24:07 people is super key um we ship things as
+24:11 
+
+24:11 soon as we are able to and then we
+24:13 
+
+24:13 continue to craft them until they're
+24:16 
+
+24:16 meeting our standard of grade that is
+24:19 
+
+24:19 really great to hear um and it's I think
+24:21 
+
+24:21 it's great advice for many Founders to
+24:23 
+
+24:23 just know where you are on the attention
+24:25 
+
+24:25 scale yeah totally um your vision is
+24:29 
+
+24:29 very broad um and very expansive so
+24:33 
+
+24:33 where you know one way to ask it in
+24:35 
+
+24:35 open-ended is where does it end and
+24:39 
+
+24:39 maybe you're you know I'm I'm ambitious
+24:42 
+
+24:42 founder it doesn't end but well
+24:44 
+
+24:44 tactically would you ever build an aist
+24:47 
+
+24:47 strr
+24:48 
+
+24:48 yourself so yes uh the the way we would
+24:52 
+
+24:52 do something like that though would need
+24:54 
+
+24:54 to um need to be similar or be aligned
+25:00 
+
+25:00 with the clay approach and so uh an AIS
+25:05 
+
+25:05 SDR built by our company would have all
+25:09 
+
+25:09 the different components of an aisr and
+25:12 
+
+25:12 give you complete control over each
+25:15 
+
+25:15 piece um so that it doesn't become
+25:17 
+
+25:17 commoditized right it does everything
+25:19 
+
+25:19 that every other AI strr does um so what
+25:23 
+
+25:23 does that mean in practice it means that
+25:25 
+
+25:25 you need to have a piece that can take
+25:28 
+
+25:28 in a your company data and figure out
+25:33 
+
+25:33 which industry you're in and who you're
+25:35 
+
+25:35 targeting so let's call that an AI ICP
+25:38 
+
+25:38 identifier and we've already built that
+25:40 
+
+25:40 part then you need a second part that
+25:43 
+
+25:43 finds
+25:44 
+
+25:44 lookalikes um and it might connect to
+25:46 
+
+25:46 your CRM to see who are your best
+25:48 
+
+25:48 customers use what company you're like
+25:51 
+
+25:51 and who you tend to reach out to and
+25:53 
+
+25:53 then find look likes and it needs to do
+25:55 
+
+25:55 that on a regular Cadence and then we
+25:58 
+
+25:58 need to connect to your own internal
+26:01 
+
+26:01 systems to see what your style is and
+26:03 
+
+26:03 how you communicate with customers and
+26:06 
+
+26:06 each one of those can work together and
+26:09 
+
+26:09 can be configured and tweaked so that
+26:11 
+
+26:11 you can have um all the components of
+26:14 
+
+26:14 what an SDR does but with full control
+26:19 
+
+26:19 and with full ability to mix and match
+26:21 
+
+26:21 different parts of it otherwise it
+26:23 
+
+26:23 wouldn't be a clay AI SDR what about an
+26:26 
+
+26:26 AI CRM
+26:29 
+
+26:29 I like where you're going with this yes
+26:30 
+
+26:30 so um an AI
+26:34 
+
+26:34 CRM I I think the way to think about it
+26:37 
+
+26:37 is what is the role of a
+26:39 
+
+26:39 CRM um in a place where
+26:44 
+
+26:44 uh there is the ability to use all of
+26:48 
+
+26:48 this data to you know take actions
+26:51 
+
+26:51 and crms have been set up for sdrs to
+26:56 
+
+26:56 and AES to enter data into them and for
+26:59 
+
+26:59 people to pull information and have that
+27:01 
+
+27:01 be centralized there um but if people
+27:05 
+
+27:05 don't need to be doing that manually I
+27:08 
+
+27:08 think the role of the CRM changes um and
+27:12 
+
+27:12 it potentially becomes a less important
+27:15 
+
+27:15 piece of the stack um in fact lots of
+27:19 
+
+27:19 crms try to stop you from pulling data
+27:21 
+
+27:21 out because they recognize that they're
+27:24 
+
+27:24 the system of record and they want to
+27:27 
+
+27:27 keep the data in there so they like low
+27:29 
+
+27:29 rate limits various kind of things that
+27:31 
+
+27:31 just get in the way um and I think a lot
+27:34 
+
+27:34 of companies have started to move their
+27:36 
+
+27:36 data into Data warehouses so that they
+27:38 
+
+27:38 have full control um so I guess the the
+27:41 
+
+27:41 short answer is I think an aicm will
+27:44 
+
+27:44 look very different than crm's look
+27:48 
+
+27:48 today um and we are um clay starting
+27:54 
+
+27:54 kind of um
+27:57 
+
+27:57 uh in a way the the CRM isn't very
+28:00 
+
+28:00 useful if it doesn't have data in it um
+28:03 
+
+28:03 and we're focused on finding the data
+28:05 
+
+28:05 finding the customers and then
+28:07 
+
+28:07 connecting to wherever you store your
+28:10 
+
+28:10 data about customers today to make that
+28:12 
+
+28:12 more actionable and also taking action
+28:14 
+
+28:14 you're like in some sense you're a
+28:15 
+
+28:15 system of action yes and uh so when we
+28:19 
+
+28:19 when we talk to some customers of yours
+28:21 
+
+28:21 that they brag about that aspect and the
+28:24 
+
+28:24 results that they're able to to generate
+28:27 
+
+28:27 so um but I'm going to let you brag
+28:29 
+
+28:29 about some of the results and do AI um
+28:33 
+
+28:33 sales Outreach perform as well as humans
+28:35 
+
+28:35 even though you kind of know that it's a
+28:37 
+
+28:37 kind of a bot doing it or an email doing
+28:39 
+
+28:39 it or a campaign doing it versus a human
+28:42 
+
+28:42 Outreach um a it so what you actually
+28:46 
+
+28:46 let me reframe that for you so I think
+28:49 
+
+28:49 Outreach does better when you have
+28:51 
+
+28:51 better data around who you're targeting
+28:55 
+
+28:55 and when you have a clever idea of how
+28:57 
+
+28:57 to get people attention so the the
+28:59 
+
+28:59 example I gave you before of looking at
+29:01 
+
+29:01 the status paid that got my attention
+29:04 
+
+29:04 because I knew that the product was down
+29:07 
+
+29:07 so it's about the timing I knew that
+29:10 
+
+29:10 there was an issue and they were
+29:11 
+
+29:11 offering me a solution and that got my
+29:13 
+
+29:13 attention um and they were using clay to
+29:16 
+
+29:16 do that so that was e extra interesting
+29:19 
+
+29:19 but I think what we found from our
+29:21 
+
+29:21 customers is that um people who are so
+29:25 
+
+29:25 sdrs who have data and um automation
+29:29 
+
+29:29 that is powered by Clay are getting
+29:32 
+
+29:32 twice as much kind of like results opens
+29:35 
+
+29:35 and
+29:36 
+
+29:36 responses um as people who aren't using
+29:39 
+
+29:39 it and twice as much twice as much yeah
+29:42 
+
+29:42 that's huge it's a huge huge difference
+29:44 
+
+29:44 multiplied across you know the number of
+29:47 
+
+29:47 sdrs that you have um and and so
+29:50 
+
+29:50 everybody who ends up using it then
+29:53 
+
+29:53 sometimes they kind of have some sdrs
+29:55 
+
+29:55 get some of the data and you know the
+29:57 
+
+29:57 auto centralized automation through clay
+29:59 
+
+29:59 and others don't and so they're
+30:01 
+
+30:01 overperforming by quite a big margin um
+30:05 
+
+30:05 and I think this is just the beginning
+30:08 
+
+30:08 as as the market kind of understands the
+30:10 
+
+30:10 full range of things that we do at the
+30:14 
+
+30:14 moment I think a lot of people think of
+30:15 
+
+30:15 us as really amazing data enrichment and
+30:18 
+
+30:18 really good for outbound um but really
+30:20 
+
+30:20 our ambition and a lot of our customers
+30:23 
+
+30:23 are our more sophisticated customers are
+30:25 
+
+30:25 using us for inbound and for expansion
+30:27 
+
+30:27 as well uh and those are the that's kind
+30:30 
+
+30:30 of the range of things that you need to
+30:31 
+
+30:31 do to grow your company um and it's a
+30:34 
+
+30:34 full loop so let me give you an example
+30:37 
+
+30:37 if um let's say that you are a company
+30:42 
+
+30:42 um like figma and you have uh you you
+30:45 
+
+30:45 have a design tool and you're going to
+30:47 
+
+30:47 release kind of uh Dev you know Dev mode
+30:50 
+
+30:50 for developers well you can take a look
+30:53 
+
+30:53 at how many um companies how many of the
+30:56 
+
+30:56 companies that you have are
+30:59 
+
+30:59 um have like five designers or more
+31:01 
+
+31:01 let's target them and then let's then go
+31:04 
+
+31:04 and do outbound to the head of
+31:06 
+
+31:06 engineering and let them know hey your
+31:08 
+
+31:08 design team is using figma and you
+31:10 
+
+31:10 should also be using the dev mode for
+31:12 
+
+31:12 your engineering team so that you um
+31:15 
+
+31:15 decrease the back and forth so here
+31:17 
+
+31:17 you're combining inbound and outbound in
+31:20 
+
+31:20 order to expand a customer um and I
+31:23 
+
+31:23 think that's what's really interesting
+31:25 
+
+31:25 about Clay is being able to have an idea
+31:27 
+
+31:27 like this and and action it uh really
+31:30 
+
+31:30 quickly you know you've given a lot of
+31:31 
+
+31:31 examples what's been something that's
+31:34 
+
+31:34 surprising about clay that people don't
+31:36 
+
+31:36 quite understand about clay yet I think
+31:39 
+
+31:39 the the the the end the output from clay
+31:43 
+
+31:43 isn't necessarily an email or just
+31:45 
+
+31:45 updating your CRM but uh some of our
+31:48 
+
+31:48 customers have sent physical mail right
+31:51 
+
+31:51 so you can connect to any API and we
+31:54 
+
+31:54 have a bunch of mail apis so you can
+31:55 
+
+31:55 create personalized messages and send
+31:57 
+
+31:57 physical mails
+31:59 
+
+31:59 um which has had really great results
+32:02 
+
+32:02 but that our ambition is really you
+32:04 
+
+32:04 should be able to create any kind of
+32:06 
+
+32:06 message whether it's a personalized
+32:09 
+
+32:09 website or even an ad um and create it
+32:13 
+
+32:13 through clay and uh that's just a
+32:16 
+
+32:16 channel so the message needs to be
+32:18 
+
+32:18 created through clay and it's
+32:20 
+
+32:20 personalized uh because of all the
+32:22 
+
+32:22 research that you've done and all the
+32:23 
+
+32:23 data that we've provided you but then
+32:25 
+
+32:25 you can send it across any channel
+32:28 
+
+32:28 that's right really cool and in terms of
+32:30 
+
+32:30 like where do you see what do you what
+32:31 
+
+32:31 are the areas of improvement that you're
+32:33 
+
+32:33 working on on the product and
+32:35 
+
+32:35 specifically that you're that's in your
+32:37 
+
+32:37 control and what would you like to see
+32:40 
+
+32:40 from some of the foundation models and
+32:41 
+
+32:41 how they can help you do even better
+32:44 
+
+32:44 with some of the work that you're doing
+32:46 
+
+32:46 yeah what's next for us is so you could
+32:49 
+
+32:49 think of us as starting from thirdparty
+32:51 
+
+32:51 data so that's data that you can find on
+32:53 
+
+32:53 the web around companies um and what
+32:56 
+
+32:56 we're moving towards next and that that
+32:59 
+
+32:59 obviously poers outbound because you
+33:00 
+
+33:00 don't know much about these people
+33:02 
+
+33:02 they're not yet your customers um but
+33:04 
+
+33:04 what we're moving towards next and what
+33:05 
+
+33:05 we're doing for next year is first party
+33:09 
+
+33:09 data so we want to connect um
+33:13 
+
+33:13 to you know we're about to release
+33:15 
+
+33:15 something where you can connect a
+33:16 
+
+33:16 segment so we can take kind of all of
+33:18 
+
+33:18 your product analytics uh we'll connect
+33:20 
+
+33:20 to your billing data we'll connect to
+33:22 
+
+33:22 your marketing website visits we'll
+33:24 
+
+33:24 connect to your gong calls your emails
+33:27 
+
+33:27 so there all the information that you
+33:28 
+
+33:28 have as a company and then help you use
+33:31 
+
+33:31 that information to reach out to the
+33:33 
+
+33:33 right people and say the right things
+33:34 
+
+33:34 the value prop that you're offering um
+33:37 
+
+33:37 that's going to be a very big task and
+33:40 
+
+33:40 there's so many ways in which uh this
+33:42 
+
+33:42 can manifest so you were talking earlier
+33:44 
+
+33:44 about our ambition um our ambition is to
+33:47 
+
+33:47 be the singular place that you come to
+33:51 
+
+33:51 for any growth idea um and what that
+33:54 
+
+33:54 could look like is imagine that you're
+33:57 
+
+33:57 building a new product onboarding
+33:59 
+
+33:59 experience well why shouldn't that be
+34:01 
+
+34:01 personalized using clay um why shouldn't
+34:05 
+
+34:05 there be a bot on your website that's
+34:07 
+
+34:07 helping your customers book um even some
+34:11 
+
+34:11 of the meetings using clay and having a
+34:13 
+
+34:13 personalized experience around that so
+34:16 
+
+34:16 we are very much thinking about the full
+34:19 
+
+34:19 spectrum of things that can be done to
+34:22 
+
+34:22 help you grow your company um and we
+34:24 
+
+34:24 will be building products in each of
+34:26 
+
+34:26 those categories
+34:28 
+
+34:28 are you comfortable talking about how
+34:30 
+
+34:30 big the company is how many employees
+34:32 
+
+34:32 how how much how many customers you have
+34:34 
+
+34:34 how much revenue you have and how you
+34:36 
+
+34:36 charge um we've posted a couple of
+34:39 
+
+34:39 things publicly around us so I'll I'll
+34:42 
+
+34:42 talk about some of the public things um
+34:45 
+
+34:45 but we um the the company's about 75
+34:50 
+
+34:50 full-time people now um we have over
+34:56 
+
+34:56 4,500 customers
+34:58 
+
+34:58 um we have uh you know probably around
+35:03 
+
+35:03 100,000 users from those
+35:05 
+
+35:05 customers um
+35:08 
+
+35:08 and our uh we've never really talked
+35:12 
+
+35:12 about our
+35:13 
+
+35:13 ARR uh directly but
+35:17 
+
+35:17 um I think the information had a uh like
+35:22 
+
+35:22 list of top 50 startups where we were
+35:24 
+
+35:24 there and they kind of estimated our AR
+35:27 
+
+35:27 and uh
+35:29 
+
+35:29 I think they said it was above 20
+35:30 
+
+35:30 million um and that that's kind of uh in
+35:35 
+
+35:35 the range of Truth i' like to take it
+35:37 
+
+35:37 all the way back to the beginning when
+35:39 
+
+35:39 you started the company in 2017 you did
+35:42 
+
+35:42 you expect to be where you are
+35:45 
+
+35:45 today well it took us a lot longer than
+35:47 
+
+35:47 I expected um take take us through the
+35:50 
+
+35:50 circuitous route to get here because the
+35:53 
+
+35:53 vision did change and right um it was
+35:57 
+
+35:57 quite c c us but uh so we started off
+36:00 
+
+36:00 with the ambition um it was a very um
+36:04 
+
+36:04 broad ambition and Abstract of giving
+36:07 
+
+36:07 the power of programming to an order of
+36:09 
+
+36:09 magnitude more people and we thought
+36:12 
+
+36:12 about the different metaphors that
+36:14 
+
+36:14 people would understand to do
+36:15 
+
+36:15 programming one obvious one is kind of
+36:18 
+
+36:18 like a
+36:18 
+
+36:18 workflow um editor another one is the a
+36:22 
+
+36:22 spreadsheet um we realized quickly that
+36:25 
+
+36:25 a spreadsheet is the world's most
+36:26 
+
+36:26 popular programming environment
+36:28 
+
+36:28 and as soon as we kind of built the
+36:31 
+
+36:31 spreadsheet we realized that one of the
+36:33 
+
+36:33 things that people do in spreadsheets
+36:35 
+
+36:35 quite often in businesses is build lists
+36:37 
+
+36:37 of people and companies that they are um
+36:41 
+
+36:41 trying to reach out to so we actually
+36:44 
+
+36:44 had the idea for what clay would become
+36:48 
+
+36:48 pretty early on um and so it wasn't
+36:51 
+
+36:51 something that we stumbled upon or that
+36:52 
+
+36:52 we discovered we kind of reached it
+36:55 
+
+36:55 through analysis and then uh my
+36:59 
+
+36:59 co-founder started doing some
+37:01 
+
+37:01 prospecting to find his customers and
+37:03 
+
+37:03 you know he he was like this is very
+37:05 
+
+37:05 complicated there's so many steps we can
+37:07 
+
+37:07 definitely help with what we've built
+37:09 
+
+37:09 here um and so all of that was actually
+37:13 
+
+37:13 something that we came to quite early
+37:16 
+
+37:16 the process of committing to building
+37:19 
+
+37:19 that was more circuitous um and is
+37:21 
+
+37:21 actually where we stayed for a long time
+37:24 
+
+37:24 um I almost think of it as you know if
+37:27 
+
+37:27 you've ever played a video game and
+37:29 
+
+37:29 there's the fog of war and and you know
+37:31 
+
+37:31 the the map wasn't kind of fully
+37:33 
+
+37:33 visualized and we kind of walked around
+37:34 
+
+37:34 the whole map saw all the different kind
+37:37 
+
+37:37 of things that we could do and then
+37:38 
+
+37:38 returned to like the right
+37:41 
+
+37:41 location um so for us the the decision
+37:45 
+
+37:45 to commit to building for go to market
+37:49 
+
+37:49 people was really around figuring out
+37:52 
+
+37:52 why are we the people to do this right I
+37:55 
+
+37:55 I did not uh start in sales or marketing
+37:57 
+
+37:57 and I think a lot of go to market Tech
+37:58 
+
+37:58 is started by people who saw the pro
+38:01 
+
+38:01 problem firsthand we came about it as a
+38:05 
+
+38:05 um way of removing kind of repetitive
+38:09 
+
+38:09 work and um you mentioned before that I
+38:12 
+
+38:12 I like producing music but I really like
+38:15 
+
+38:15 tools like Ableton Live um that are
+38:18 
+
+38:18 components that you connect together to
+38:21 
+
+38:21 produce music um and I really like the
+38:24 
+
+38:24 idea of allowing giving that power to
+38:27 
+
+38:27 more people
+38:28 
+
+38:28 um and so that that's kind of how we
+38:29 
+
+38:29 came about with the how how we came to
+38:32 
+
+38:32 kind of the idea of being creative and
+38:35 
+
+38:35 giving the power of programming so that
+38:36 
+
+38:36 you can be creative within the field of
+38:39 
+
+38:39 go to
+38:40 
+
+38:40 markets teams yeah um would you have
+38:44 
+
+38:44 done anything different Looking Back Now
+38:47 
+
+38:47 that now that you understand it was a
+38:49 
+
+38:49 bit cus could you have changed any of
+38:51 
+
+38:51 the things along the way or you just it
+38:54 
+
+38:54 was a process that you needed to go
+38:55 
+
+38:55 through I think it was a process that I
+38:57 
+
+38:57 needed to go through specifically so I
+38:59 
+
+38:59 don't I don't think that um it couldn't
+39:02 
+
+39:02 be done faster by someone else um I
+39:05 
+
+39:05 think it took me and the team time to
+39:10 
+
+39:10 see the power of what we've built to
+39:13 
+
+39:13 hear from a lot of the agencies that you
+39:15 
+
+39:15 talked about were actually power users
+39:17 
+
+39:17 initially and we didn't focus on them we
+39:19 
+
+39:19 kept the tool very Broad and I also
+39:23 
+
+39:23 needed to develop the muscle of how to
+39:25 
+
+39:25 focus um and I think a lot people talk
+39:28 
+
+39:28 about focusing but then the embodied
+39:31 
+
+39:31 kind of understanding of what focusing
+39:33 
+
+39:33 means and how often you have to say no
+39:36 
+
+39:36 and how many times you um see
+39:40 
+
+39:40 distractions and think that they're the
+39:42 
+
+39:42 right path but they are distractions and
+39:44 
+
+39:44 so going through a couple of cycles of
+39:47 
+
+39:47 those helped me understand how to focus
+39:49 
+
+39:49 and so when we committed we really
+39:51 
+
+39:51 committed um and as soon as we launched
+39:54 
+
+39:54 the product um it it immediately
+39:58 
+
+39:58 resonated with customers because we
+39:59 
+
+39:59 removed all the language around it being
+40:02 
+
+40:02 Broad and focused it just on go to
+40:05 
+
+40:05 market which is still a huge kind of
+40:08 
+
+40:08 area we're talking about sales marketing
+40:09 
+
+40:09 and customer success that's half of a
+40:11 
+
+40:11 company yeah um and so that was enough
+40:14 
+
+40:14 and I think um that was enough half the
+40:16 
+
+40:16 company half the company is enough half
+40:18 
+
+40:18 the company is enough for now um but but
+40:21 
+
+40:21 once we once I learned the how to focus
+40:26 
+
+40:26 and once I committed to to the mission
+40:29 
+
+40:29 of helping companies grow we then kind
+40:32 
+
+40:32 of use the underlying um intention of
+40:36 
+
+40:36 giving the power of programming to be
+40:38 
+
+40:38 very very different than every other
+40:39 
+
+40:39 tool in the market so we've made a lot
+40:41 
+
+40:41 of choices that are unorthodox right a
+40:44 
+
+40:44 lot of go to market tools are built to
+40:46 
+
+40:46 be um you know press one button and get
+40:50 
+
+40:50 leads and then maybe AIS sdrs press you
+40:53 
+
+40:53 know connect a few things don't worry
+40:55 
+
+40:55 about it it's working in the background
+40:56 
+
+40:56 whereas we ask people to invest time and
+40:60 
+
+40:60 we ask them to learn how to use our
+41:03 
+
+41:03 product and to learn how to do growth um
+41:06 
+
+41:06 now of course some of that could be
+41:07 
+
+41:07 simplified but really we're asking for
+41:10 
+
+41:10 you to kind of be a partner with us um
+41:14 
+
+41:14 and we've designed the tool to have a
+41:17 
+
+41:17 very very high ceiling so you know like
+41:20 
+
+41:20 Photoshop or figma or um you know
+41:24 
+
+41:24 Ableton Live you can continue to improve
+41:27 
+
+41:27 your Craft um in clay and learn things
+41:34 
+
+41:34 that and do things that no one has done
+41:35 
+
+41:35 before um and so that's what I think
+41:38 
+
+41:38 makes us different in the market and
+41:40 
+
+41:40 that was part of the path it's it's
+41:44 
+
+41:44 basically the remnants of the path that
+41:45 
+
+41:45 brought us to this point you mentioned
+41:48 
+
+41:48 something that I find um interesting
+41:51 
+
+41:51 because it you had this process that you
+41:54 
+
+41:54 had to go through and I think when you
+41:57 
+
+41:57 started the company you you were a
+41:58 
+
+41:58 perfect founder problem fit founder
+42:01 
+
+42:01 market fit for bringing the power of
+42:03 
+
+42:03 programming to the masses how did you
+42:07 
+
+42:07 fig you know so go through that process
+42:09 
+
+42:09 how what was the turning point where you
+42:10 
+
+42:10 said hey I'm the right founder for
+42:14 
+
+42:14 building a creative tool for goto Market
+42:17 
+
+42:17 I held on to the initial
+42:22 
+
+42:22 um the initial intention and you can see
+42:25 
+
+42:25 it throughout so there's no that looks
+42:28 
+
+42:28 like clay because of that initial
+42:31 
+
+42:31 intention and what I realized is I um
+42:36 
+
+42:36 and you can kind of argue whether this
+42:38 
+
+42:38 is mental Jiu-Jitsu or um the truth but
+42:42 
+
+42:42 I held on to that initial intention and
+42:46 
+
+42:46 through that um I believe that actually
+42:50 
+
+42:50 go to market teams are doing a lot of
+42:54 
+
+42:54 work that could be done programmatically
+42:58 
+
+42:58 if you only knew how to program and that
+43:00 
+
+43:00 there was a large number of people who
+43:03 
+
+43:03 wanted to do things that and and their
+43:07 
+
+43:07 that their could their mind could be
+43:09 
+
+43:09 open to the things that they could do if
+43:10 
+
+43:10 only they knew what was possible and
+43:13 
+
+43:13 that giving them and like this group of
+43:16 
+
+43:16 people the power of programming um is
+43:19 
+
+43:19 actually kind of uh a realization of
+43:24 
+
+43:24 that initial vision and keeping that
+43:27 
+
+43:27 word creative really you could think of
+43:29 
+
+43:29 it as creativity or you could think of
+43:31 
+
+43:31 it as maximum
+43:32 
+
+43:32 flexibility um which is what I wanted to
+43:36 
+
+43:36 empower people with so that they can
+43:37 
+
+43:37 turn any idea they have into reality um
+43:40 
+
+43:40 and so this is a good starting point for
+43:43 
+
+43:43 that uh very very large
+43:46 
+
+43:46 Vision thank you for taking us uh
+43:49 
+
+43:49 through your journey and uh
+43:50 
+
+43:50 congratulations on all the recent
+43:52 
+
+43:52 success and um I think you know when we
+43:56 
+
+43:56 sort of look that all the sort of
+43:58 
+
+43:58 landscape and AI there's a lot of talk
+43:60 
+
+43:60 around technology and Foundation models
+44:03 
+
+44:03 and what what's next and in that space
+44:06 
+
+44:06 But I think you've built one of the most
+44:07 
+
+44:07 interesting AI applications that uh the
+44:10 
+
+44:10 world has seen and you're
+44:11 
+
+44:11 revolutionizing the way that sales is
+44:14 
+
+44:14 done so thank you for sharing your
+44:15 
+
+44:15 journey with us and also for allowing
+44:17 
+
+44:17 sea to be an early shareholder of the
+44:19 
+
+44:19 company yeah I'm very happy that we
+44:22 
+
+44:22 partnered early and um I really
+44:24 
+
+44:24 appreciate this Alfred let's um let's
+44:27 
+
+44:27 wrap up with a few of our standard
+44:29 
+
+44:29 questions what's your favorite startup
+44:31 
+
+44:31 other than your own that's a really
+44:33 
+
+44:33 great question
+44:35 
+
+44:35 uh I think it's our sourcing list yeah
+44:39 
+
+44:39 um I really like sunno actually that
+44:41 
+
+44:41 makes sense because I I like uh I I've
+44:44 
+
+44:44 met the founder and I really like being
+44:46 
+
+44:46 able to generate music it it's very much
+44:49 
+
+44:49 aligned you know with the creativity so
+44:51 
+
+44:51 yeah any any others or just just that
+44:54 
+
+44:54 one another company that maybe I uh
+44:56 
+
+44:56 admire because I really like the
+44:59 
+
+44:59 approach that they're taking is uh
+45:01 
+
+45:01 linear um they're just very thoughtful
+45:05 
+
+45:05 about how they approach Building Product
+45:08 
+
+45:08 um so yeah creative tools creative tools
+45:12 
+
+45:12 all right what's your favorite AI app
+45:14 
+
+45:14 that's on your phone oh AI app on my
+45:16 
+
+45:16 phone yeah um could be an standard AI
+45:19 
+
+45:19 app but if it must be on your phone if
+45:22 
+
+45:22 you love it that much that's a good one
+45:24 
+
+45:24 I was going to say cursor actually cuz
+45:26 
+
+45:26 I've been trying to
+45:28 
+
+45:28 write uh a little bit of codes on some
+45:31 
+
+45:31 hackathon products that works that's an
+45:33 
+
+45:33 AI op yeah anything on your phone that
+45:35 
+
+45:35 you want to share on my phone I've just
+45:37 
+
+45:37 been having lots and lots of
+45:39 
+
+45:39 conversations with chat GPT as everybody
+45:41 
+
+45:41 else is doing I think on um on other
+45:45 
+
+45:45 markets you think of that AI can disrupt
+45:47 
+
+45:47 whether in the short-term medium- term
+45:49 
+
+45:49 or long term you know I've been talking
+45:51 
+
+45:51 to a bunch of friends around um like
+45:55 
+
+45:55 expert Network kind of interview use um
+45:59 
+
+45:59 and I'm kind of curious about that
+46:00 
+
+46:00 because it's uh yeah I I think that you
+46:03 
+
+46:03 know people there there's a lot of um
+46:07 
+
+46:07 work that's being done where people are
+46:09 
+
+46:09 trying to collect information and it's
+46:11 
+
+46:11 pretty repetitive um but but it's almost
+46:15 
+
+46:15 like gong but not for sales calls for um
+46:20 
+
+46:20 like expert networks and collecting
+46:21 
+
+46:21 information from people like what are
+46:22 
+
+46:22 the top problems in your company what
+46:24 
+
+46:24 are top issues and then being able to
+46:26 
+
+46:26 analyze that I think that's an
+46:27 
+
+46:27 interesting underserved Market uh with
+46:30 
+
+46:30 like old incumbents what's your advice
+46:32 
+
+46:32 for other startup Founders I think the
+46:35 
+
+46:35 the alignment piece sounds um like
+46:40 
+
+46:40 wishy-washy or not very concrete but I
+46:43 
+
+46:43 think it's a key element so you need to
+46:46 
+
+46:46 you know we talked about knowing where
+46:48 
+
+46:48 you are on the spectrum of a couple of
+46:51 
+
+46:51 things right is this a product that is
+46:54 
+
+46:54 sales Le or product Le is this a product
+46:56 
+
+46:56 that every feature needs to work
+46:58 
+
+46:58 perfectly or you need to ship things as
+47:00 
+
+47:00 quickly as possible and then perfect
+47:02 
+
+47:02 them and tithe all of that back to what
+47:06 
+
+47:06 is your ambition um why do you care
+47:10 
+
+47:10 about this product or Mission um when
+47:14 
+
+47:14 you're spending so much time working on
+47:16 
+
+47:16 it you really need to have that
+47:20 
+
+47:20 connection um otherwise you I guess
+47:24 
+
+47:24 maybe the to say something kind of like
+47:26 
+
+47:26 new that isn't often said I think you
+47:30 
+
+47:30 need to have your own internal Compass
+47:32 
+
+47:32 otherwise you will get lost um and if
+47:36 
+
+47:36 you are lying to yourself um I think the
+47:41 
+
+47:41 this is this is something that I think
+47:42 
+
+47:42 about a lot I think the cost of lying
+47:44 
+
+47:44 isn't you know anything that'll happen
+47:47 
+
+47:47 bad maybe no one will catch you on a lie
+47:49 
+
+47:49 maybe you won't go to hell but the cost
+47:51 
+
+47:51 of lying is actually
+47:52 
+
+47:52 disassociation from yourself and when
+47:55 
+
+47:55 you lie about anything um in particular
+47:58 
+
+47:58 to yourself you lose your ability to
+48:01 
+
+48:01 navigate through your feelings and so
+48:04 
+
+48:04 you don't have an internal Compass you
+48:05 
+
+48:05 don't know what's good you don't know
+48:06 
+
+48:06 what's real you're just doing things
+48:08 
+
+48:08 maybe even things that you think are
+48:10 
+
+48:10 good but um you won't actually know if
+48:14 
+
+48:14 they work or not unless you take real
+48:16 
+
+48:16 risks and you're honest about your
+48:18 
+
+48:18 ambition and why you're doing things I
+48:20 
+
+48:20 love that um having a real internal
+48:22 
+
+48:22 compass on in the fog of War sometimes
+48:26 
+
+48:26 your compass is not clear to you how how
+48:28 
+
+48:28 do you you you seem like a very
+48:31 
+
+48:31 thoughtful person every time I've talked
+48:33 
+
+48:33 to you like how do you sort of get the
+48:35 
+
+48:35 clarity yeah that that's I think the
+48:37 
+
+48:37 clarity is through being honest and then
+48:40 
+
+48:40 taking real risks and so what I found is
+48:43 
+
+48:43 that in the past I've taken risks that
+48:46 
+
+48:46 have been hedged um or you know you you
+48:50 
+
+48:50 might think it's a risk let's say I'm
+48:52 
+
+48:52 building a feature and um or even like
+48:56 
+
+48:56 taking a Direction of the company where
+48:59 
+
+48:59 I'm like let's do go to market tools
+49:01 
+
+49:01 right but if I don't actually uh if I
+49:04 
+
+49:04 think well I'm kind of doing it because
+49:07 
+
+49:07 a couple of people have told me that
+49:08 
+
+49:08 this makes sense and here's how it works
+49:11 
+
+49:11 and I should do this as soon as you hear
+49:13 
+
+49:13 the word I should right you know that
+49:15 
+
+49:15 it's not really what you're thinking um
+49:19 
+
+49:19 and then if it fails you don't really
+49:21 
+
+49:21 know you don't have a felt sense of like
+49:24 
+
+49:24 whether this it might be not your honest
+49:26 
+
+49:26 opinion so you're like well it failed it
+49:28 
+
+49:28 wasn't my honest opinion I didn't take a
+49:29 
+
+49:29 real risk let's do something else and if
+49:31 
+
+49:31 it succeeds you don't really know why it
+49:33 
+
+49:33 succeeded but for me what I've done is
+49:37 
+
+49:37 um take real risks where I don't know
+49:40 
+
+49:40 what the results are going to be that's
+49:41 
+
+49:41 how I know it's a real risk is that I
+49:43 
+
+49:43 actually don't know and I'm okay with
+49:45 
+
+49:45 failing um and you have to be okay with
+49:48 
+
+49:48 failing publicly and acknowledging that
+49:52 
+
+49:52 that's when you know it's a real risk
+49:53 
+
+49:53 and that's how you kind of build up that
+49:55 
+
+49:55 internal compass and navigate like a fog
+49:57 
+
+49:57 of War that's that's great that's really
+49:60 
+
+49:60 great advice um on Final question and
+50:05 
+
+50:05 very open-ended long-term focused
+50:08 
+
+50:08 enduring focused what do you think the
+50:11 
+
+50:11 best possible thing that can happen with
+50:12 
+
+50:12 AI in the coming decade I think the best
+50:15 
+
+50:15 possible thing would
+50:18 
+
+50:18 be the there's obviously like an amazing
+50:22 
+
+50:22 set of
+50:23 
+
+50:23 applications that could be done with AI
+50:26 
+
+50:26 but I I I'd have to say that it uh would
+50:30 
+
+50:30 be recursive AI right so like AI that
+50:33 
+
+50:33 can improve itself uh that would be the
+50:36 
+
+50:36 dream right an AI that actually can help
+50:40 
+
+50:40 improve itself and accelerate itself and
+50:43 
+
+50:43 that should lead to lots of other
+50:46 
+
+50:46 developments across the board um
+50:49 
+
+50:49 otherwise we'll get stuck in you know
+50:51 
+
+50:51 whatever local Maxima we get to with the
+50:55 
+
+50:55 current kind of um set of techniques
+50:57 
+
+50:57 thanks thank you so much congratulations
+51:00 
+
+51:00 on all your success and thank you for
+51:02 
+
+51:02 being so generous with your time and
+51:03 
+
+51:03 coming on to training data appreciate it
+51:05 
+
+51:05 thanks alci thank you
+51:08 
+
+51:08 [Music]
+51:15 
+
+51:15 [Music]
+51:24 
+
+51:24 [Music]

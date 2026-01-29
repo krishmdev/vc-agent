@@ -1,0 +1,417 @@
+00:01 we could see the writing on the wall in other words the hyperscalers were going to offer their own atlas-like things
+00:09 based on the mongodb source code it's almost 100% chance that would happen if
+00:15 they did it would be kind of like game over welcome to season 2 of Crucible
+00:22 moments a podcast about the critical Crossroads and inflection points that shaped some of the world's most
+00:28 remarkable companies I'm your host and the managing partner of SEO capital rof
+00:33 bua in 2007 Dwight marman and his co-founders identified a problem the
+00:39 databases of the pre- internet era were not built for the scale of modern applications new internet companies that
+00:46 were exploding in growth would regularly crash and go dark because their databases failed the world would need a
+00:54 Next Generation database today mongodb a document-based database solution
+01:00 generates nearly $2 billion in annual revenue and Powers thousands of
+01:05 companies worldwide including many of the apps at your fingertips however back
+01:11 in the early days of the company there was a question mark about whether mongodb could translate early traction
+01:16 with developers into a sustainable business in today's episode we'll look
+01:22 at mongodb's early decision to drastically reduce its scope and pivot from a platform to a single product
+01:29 we'll learn how the company migrated its business model from open-source on-prem software to fully managed cloud services
+01:36 and we'll hear how it gambled on a change to its licensing model that risked community and user
+01:44 [Music] fault my name is Dwight marman I am a
+01:53 director at mongodb and one of the original founders of the company how did
+01:58 we get started with mongod DB why did we want to do it what was on our mind at the time I'd worked on a lot of startups
+02:04 I was a co-founder of double click in 1995 and then after 10 years at double
+02:10 click uh decided it was a good time to maybe do something new and myself and uh
+02:16 Kevin Ryan who was CEO of double click and Elliot Horwitz who was one of our
+02:23 most senior Engineers there we were all interested in doing a startup as our next thing we started brainstorming some
+02:29 ideas for startup ups and we would see the same issues coming up time and time again on the tech side in terms of the
+02:37 design development of these systems issues around maybe scaling issues around just other way systems or maybe
+02:44 fragile cloud computing was very new around this time period and and there's a lot of properties to cloud computing
+02:52 that are important you know you scale horizontally not vertically and and a lot of our traditional tools including
+02:59 program languages but also databases they weren't really designed for this we felt like can we come up with something
+03:05 that's a better way to build systems and apps than the way we we're doing it right now the original idea of the
+03:13 company which is now called mongodb Inc originally was called tenen was to
+03:19 basically create a platform as a service system an open- Source platform as a service system with with this whole new
+03:25 stack of of modern things that we thought were appropriate for that point in time and it's kind of the evolution
+03:31 of software development so that's what we were doing so we had new stuff we had new ideas Concepts and tools at the
+03:38 application layer and then we had written our own data layer which was called mongodb it wasn't a product it
+03:44 was the name of that subsystem for decades dating back to the
+03:49 1970s applications were powered by relational databases companies like Oracle and sbase commercialized these
+03:56 databases that harnessed a query language called SQL and if you want to think about it a
+04:02 relational database is really structured rows and columns and there are many different stores of those you can almost
+04:08 think of them as a spreadsheet and there are many different tabs to the spreadsheet and there a very simplistic analogy of that but the relational
+04:14 database have that kind of a structure and they were incredibly powerful these transactional database systems powered
+04:21 so many of the applications that we built in the 1980s the 1990s the challenge was that with the Advent of
+04:27 the internet the scale of applications just grew beyond what those Technologies
+04:32 were originally built for and I experienced this firsthand first at PayPal and then at YouTube with the
+04:38 thing that caused the site to go down in both cases was the database and in the
+04:43 case of PayPal we were built on Oracle originally and I remember we had these
+04:49 dbas database administrators who were these magicians these Wizards that would do tuning of databases which I still had
+04:56 a hard time wrapping my head around you know tune a musical instrument it seemed like technology shouldn't be that fickle
+05:02 uh but they would tune the databases and do things like sharding which is this approach of trying to break your
+05:07 database into many smaller databases so that you can string together many of them to serve the scale needs of
+05:14 internet companies that had millions or tens of millions of customers but fundamentally the database wasn't built
+05:19 for that scale and so often PayPal would have outages because the database just fell over it just couldn't cope with the
+05:26 scale that we needed Dwight Founders designed their
+05:31 data layer mongodb to address these shortcomings it was a database built for the modern internet era and notably it
+05:37 didn't use SQL mongodb would be at the Forefront of the so-called nosql
+05:43 movement so if you recall earlier I talked about how the relational database Solutions are rows and columns think
+05:49 about mongodb as really having the document as the central unit and so one
+05:55 analogy that I always like to think about is uh an invoice for a transaction if you had an an invoice for a
+06:00 transaction it would have the date the item being purchased the taxes that were charged the customer the customer's
+06:07 address all the details were encapsulated in that single document and You Could reconstruct the financials of
+06:12 a company if you assembled all those invoices because you'd have all the underlying transaction data and so you can think of mongodb as building that
+06:20 document as an invoice and when you do that it's really flexible because if the tax rate changes you can just easily add
+06:26 that to all your future invoices whereas with the Legacy relational system it was actually technologically very
+06:32 difficult to go and add new Fields over time a solution like would make it flexible and very easy for developers to
+06:38 build applications so we made the decision okay we're going to do Platform as a service we have all these various
+06:44 details to our plan we start writing it and the name of the company's tension and that's the name of the platform of
+06:50 service product we start building it and within say 12 months we release it as a
+06:55 beta things were going pretty well people were signing up to use the beta version and the feedback was good what
+07:03 happened was about the same time released as a beta Google released app engine as a beta we had no idea it was
+07:09 coming it was released all of a sudden it's like oh this is interesting like like tenen Google app engine is
+07:17 conceptually very similar we had a little family vacation so had my laptop with me so I could I could work every
+07:23 day even though we're not at home and they're out playing so I've got some time to think and kind of get out of the
+07:30 day-to-day frenzy of minutia and then think about the big picture right and as I started thinking more and more about
+07:36 it I started to realize that the scope of the problem was huge we knew the scope was big right but even bigger than
+07:44 we thought for you to really build to do everything on this platform it takes a
+07:49 long time to build and you're going to need a tremendous amount of Runway and I think it's more Runway than a startup's
+07:56 going to get it's like if you're the VC and I come and I say here's our concept for
+08:02 platform of service it's going to take us 10 years to build this and you're going to need a billion dollars it just
+08:08 seemed like that's not going to fly maybe platform as a service makes sense but you know the companies that need to
+08:14 do it are ones who can afford that Runway and have very long-term thinking like a Microsoft or maybe like
+08:21 Google so after going through this line of thought on platform as a service it's like okay what should we do we need to
+08:27 reduce scope what should we do mongodb then engine faced a crucible
+08:33 moment a year into building despite positive user feedback they began to feel their initial Vision was doomed and
+08:41 so the question was do you scrap your original business plan the majority of
+08:46 your code and pivot to a smaller scope and if so what exactly is that new
+08:52 scope one thing that was interesting once we we got into beta with the product is that people actually said oh
+08:60 I really like this database thing as they're using the whole platform as a service so we we were getting some very
+09:06 nice feedback on the data layer so this got me thinking maybe this database this
+09:11 is a thing and and we can uh we could focus on it and just scrap being
+09:17 platform as a service I think the term Crucible moment is a really good one
+09:22 because it it's a big decision right it it's it's kind of a curious story
+09:28 because usually when you do a pivot as a startup something bad is happening right
+09:34 but that wasn't our situation so that made it's much more difficult to do that if we started doing database only and it
+09:43 didn't work there was no going back to platform as a service like we would have figured out 18 months later it wasn't
+09:49 working and then it's too late the first person I talked to about
+09:54 this was Elliot so co-founder CTO super smart and uh we go talk and or little
+09:60 tiny conference room and I lay this out to him it's like okay I propose that we throw away our entire current business
+10:06 which is in beta and people like it and do this other thing instead he kind of looked at me like I was slightly crazy
+10:13 for a second and paused and didn't say anything he say something like let me think about it we met back up an hour
+10:19 later and he said okay he's like I think this is right we should do it so that's
+10:25 kind of amazing when you say like I want I'm going to take a business plan I'm going to I'm going to rip in the house 99% people would not have reacted like
+10:33 that and then the third founder of the company Kevin Ryan he was very pragmatic
+10:39 I think about this so he was kind of like well I'm kind of shocked you're
+10:44 saying this but if you guys both agree that this is a good idea then let's do
+10:49 it was this stressful emotional was it scary I would say the answer is yes I
+10:56 think it it's even more scary because we're doing this very proactively we may be killing something that would have
+11:03 worked so now if the new one doesn't work at all boy that was maybe one of the dumbest things ever done and you
+11:09 know and it's emotional you know like when we did this you know we threw the app stack the app layer code in the
+11:15 trash and we started riding drivers but you know then we also had a few people
+11:20 who like they weren't working on the database layer at all and I laid them off and you know that feels terrible so
+11:28 so it it was a big deal in Psychology there's this term called commitment and consistency and we all
+11:35 experience this in various forms where once you've made a certain decision the instinct is to remain consistent with
+11:42 that decision so that's why they call these commitment and consistency processes and letting go of that is is
+11:48 traumatic it's difficult and I think if you're a Founder in particular when you had a vision of something you wanted to
+11:53 build and the thing you're building now is you know even if it's similar it is significantly different from what you
+11:59 originally set out to do I think it's emotionally taxing you know the thing for which you raised your seed round or
+12:06 your series a financing you're not telling a different story to those investors you think about
+12:11 the first few people who joined your company who joined with an expectation that you're building a particular product and now you're telling them it's
+12:17 something slightly different but I also think the the founders that end up building truly successful companies are
+12:23 able to get through these difficult Crucible decisions of letting go sometimes of a wrong idea sometimes
+12:30 letting go of the wrong hire and as we've reflected on success across our
+12:36 experience at seoa the speed with which Founders are willing to make these difficult decisions is one of the best
+12:42 predictors of ultimate success so when we made this pivot
+12:47 decision okay what's the first thing we need to do the first thing we need to do was basically just write a bunch of drivers for every programming language
+12:54 so you could talk to the existing database we had already written so we had this database but it only worked
+13:00 within the platform as a service stack within the tangent stack that was the only way to use it so we we just kind of
+13:07 pulled it out and then we made database drivers for every all the popular languages and then you could use it
+13:14 right in 2009 mongodb launched for public use the product was open source
+13:21 so we were really trying to execute an open source go to market plan by being open source we're going to get a lot of
+13:27 Cheaper free marketing so we're going to every meetup group we can and giving demos of the database in City X we go to
+13:34 the python meetup group and we do a demo among MB from Python and then we we go
+13:40 do that in 10 cities for the same equivalent group in that City we try to
+13:45 do that for as many languages as we could and then in addition uh we started doing a lot of conferences City by city
+13:52 we did SF and we did SV and we did NYC and then we started to
+13:58 do Europe and Asia and and that was really how we were approaching to go to market and at the same time this notion
+14:04 of no sequel kind of came out of the woodwork it's like the big companies you know Amazon Microsoft LinkedIn Netflix
+14:13 Google they had all internally built some sort of nosql database but there wasn't much out there that anyone could
+14:21 use in 2010 we intersected with mongodb it was immediately obvious that they
+14:27 were the likely winner in this new category with these nosql solutions they had developer love the references were
+14:35 very positive the number of downloads the company was getting for its database solution was growing very quickly month
+14:40 over month it was still a tiny company at the time that we invested in mongodb in late 2010 they had 12 people there
+14:48 were 12 employees at the company but there was something magical happening and we immediately wanted to rush to
+14:54 close the financing and become the new lead investor in 2013 the company
+14:59 officially changed its name from tenen to mongodb a reflection of its
+15:05 successful pivot from day one you know my background I I was a CS major in college
+15:12 I loved programming and when I was CEO at DB I was spending some fraction
+15:17 of my time like oneir to one half coding or designing things you can go in GitHub
+15:22 if you go all the way back in the in the commit list you'll see a bunch of commits for me and then over time it
+15:28 goes down is as the company's growing you know other work that CEO has to do takes a lot of time so I very much
+15:35 wanted to get someone else to be CEO quite early on in the middle of 2014 the company's
+15:42 Revenue run rate was approximately $40 million the company was doing well and
+15:47 the CEO was performing well and yet we as a board felt that there was an opportunity for us to hire somebody who
+15:53 was both a former founder who was deeply technical himself who had led a public company before and at scen scale and
+16:01 would be able to help us move mongodb from a 40 million per year business to a multi hundred million year business one
+16:08 of the jokes I have with my friends is when you get called for CEO role the first question you're trained to ask is
+16:14 what's wrong because no one makes a COO change when things are going well my name is David aeria and I'm the
+16:21 president and CEO of mongodb prior to joining mangad DB I was actually inventure investing I was a
+16:28 partner at grock partners and I had recently joined a small Venture firm out of Boston called open view Ventures and
+16:35 I had done a lot of work on looking at Next Generation databases and I looked at a number of competing Investments to
+16:42 mongodb and I ended up passing on those Investments when I did my diligence it
+16:47 became clear that the level of developer traction that Mong be had relative to the opportunities that I was pursuing
+16:54 was significantly better I ended up passing because I didn't want to invest in the second the third player in the
+16:60 space that's how I got to know mongodb I was happy as investor I was I felt I was
+17:05 doing quite well and then out of the blue I got a call from a search firm that was leading the search for manga DB
+17:12 for the CEO role Dave he'd been a Founder more than once he successfully founded a company
+17:19 and led it a CEO through the IPO and through a successful acquisition he had been a general manager in a significant
+17:25 role in a large public company which gave him experience at scale having
+17:30 somebody like Dave who is demanding and supportive of his team and would hold himself and his team accountable those
+17:37 are just wonderful attributes around which to build I had a lot of people who when I talked them about joining Mong
+17:42 Deb were quite skeptical that Mong Deb was going to be a good decision as I met with the board I met with the management
+17:47 team I learned a couple things it was clear that the company was generating some momentum it was clear that mang had
+17:54 had meaningfully more developer traction than some of the other Next Generation databases that I looked at but the
+18:01 company was also struggling yeah it was badly missing plan the leadership team
+18:06 was somewhat dysfunctional the goto Market efforts were not very effective
+18:11 and so you might ask yourself so why did you consider joining the company I asked myself the question if this company's
+18:17 doing well with essentially not a very good team a lot of dysfunction how
+18:22 decisions are being made imagine what this company could do with an A team in place so it was somewhat
+18:28 counterintuitive but um I decided that it was worth taking a
+18:34 risk when Dave joined mongodb a CEO the company offered open source on-prem
+18:39 software meaning it was downloaded and operated by developers however mongodb
+18:45 began to see more and more users accessing software as a service directly through the cloud offering on-prem
+18:51 software in an increasingly Cloud World began to pose a
+18:57 conundrum one of the Strategic challenges we faced at mongodb was that many of our customers were taking our
+19:03 database and building applications and deploying it on cloud infrastructure on their own but at the point that they
+19:09 started to run and operate their database they didn't have an ongoing relationship with mongodb and often
+19:15 they'd run into challenges maybe a database was misconfigured or maybe they didn't make use of all the potential
+19:20 capabilities that we had but because we didn't understand how they were using the product we couldn't help them and
+19:25 then from a business point of view because we weren't operating the databases on their behalf off we were missing out an opportunity to build a
+19:31 business around the cloud delivery of our solution we realized that if we could
+19:37 offer a cloud service by definition we would be able to let customers Outsource
+19:42 all that undifferentiated labor and really focus on the things that really and truly mattered so that was the
+19:49 Catalyst for thinking hard about Atlas the company began considering a wholesale move from downloadable
+19:55 software to a fully managed cloud-based solution called Atlas I will tell you that there was a lot of
+20:01 skepticism because we were the first independent company to try and offer an
+20:07 infrastructure service on the cloud you know this is pre- snowflake pre- elastic pre-confluent so it was not exactly
+20:15 viewed as a a slam dunk to consider doing this could we really execute on
+20:21 this just knowing that you needed to build a cloud offering you know it's easier said than done we had to go from
+20:27 being a company that tripped a product that people downloaded and used on their own to building the operational skill
+20:33 set ourselves to be able to operate databases on behalf of our customers and I think Downstream changes are often
+20:40 underestimated by people as they undergo crucial moment or key strategic decisions like this mongodb had a
+20:47 decision to make how should it adapt to an increasingly cloud-based world if the company were to shift from downloadable
+20:54 open-source software to a managed cloud service could they actually manage that transformation
+21:02 I thought if the company didn't pursue Atlas that would be a giant mistake kind of Borderline Disaster there were issues
+21:09 with the business it is a change we need to do it there was a real risk that if
+21:14 we didn't successfully develop a cloud strategy that would lead to our ultimate demise and so it's with that spirit that
+21:21 we recruited Tom Kila to the board of the company to be honest I I I said to
+21:27 roll off I'd love to serve on another Bard with you but this may not be the one my name is Tom K and I'm the chair
+21:33 of mongodb Tom had been a key executive at AWS he was originally the ciso the Chief
+21:40 Information Security Officer of Amazon and then had been part of the team that built AWS in the early days and so
+21:47 here's somebody who had firsthand experience and knowledge of the biggest cloud service provider on the planet and
+21:52 I thought that his experience at AWS coupled with the opportunity at
+21:58 was a perfect Mar he wasn't too Keen initially my big concern related to product positioning I
+22:05 felt that there was a danger with any persistance offering in presenting Atlas as a jack of all trades I had a a deep
+22:12 sense that one size does not fit all very highly optimized around a single use case approach that AWS in particular
+22:20 was taking May went out Tom lives in Seattle and mongodb is based in New York
+22:26 but I convinced him to take a meeting with the team I did fly as to spend time
+22:31 with the engineering team and it turned out that I was flat out wrong I became convinced that in fact there were huge
+22:41 advantages to the product positioning and the approach that mongodb was taking
+22:48 with respect to building a data platform that would serve many different use cases and would obviate the need for you
+22:54 to extract and shift data from one platform to another in order to get your
+23:00 job done and so I said yes in December of 2015 my first board
+23:08 meeting the essence of the debate was not do or don't do but do now or do
+23:14 later that was the biggest danger this s wait and see versus let's let's charge
+23:19 into this and make it happen I was very much on the side of we need to act now you have to seize the opportunity of a
+23:26 lifetime during the lifetime of the opportunity you can be too early you can be too late but when you see that the
+23:34 timing is right you really have to move with very significant
+23:39 urgency the team decided to give itself a deadline of June 2016 to launch the
+23:45 platform at the mongodb user conference  World an aggressive timeline of
+23:51 under six months so one of the key strategies to
+23:57 really ensure that Alice was successful is we have the saying of a startup with a startup we ourselves viewed our whole
+24:03 business as a startup but we said that we actually starting a startup with the startup so all the Care and attention
+24:09 that we put in our Core Business we wanted to make sure that Atlas had the the same amount of focus some of the
+24:15 harder and more frustrating topics were around the product road map between now and launch in June figuring out what was
+24:23 actually feasible and attainable and rationalizing the things that would have
+24:28 to be left out people and the muscles that had to be built up in the company that weren't
+24:33 there so for example s reliability engineers and the company getting to truly understand what it would take to
+24:40 operate people's databases for them and have it be completely transparent and
+24:45 have them not have to worry about the care that we were taking with respect to that operation we assigned a directly
+24:53 responsible individual what we call a drri who really would be the the person
+24:58 who is really focused on building and growing the atlas business that meant
+25:04 not only working with our engineering and product teams to ensure that we were building all the features in the right
+25:09 way to ensure Atlas was successful but also working with our go to market teams
+25:16 we had to build a skill set of marketers where you'd have to manage a funnel of
+25:22 people going through your own signup flow and understanding how people converted and what is your free tier and
+25:27 how do you upgrade people to pay plans and how do you change your compensation scheme because your sales people are now
+25:33 selling a completely different product from what they' sold before after a whirlwind 6 months Atlas
+25:40 launched on June 28th 2016 my abiding feeling was you know it's great that
+25:46 this has happened but this is the start there was so much that had been left out of the product the work was very much
+25:54 underway and the engineering and product teams were remarkably focused on the
+25:60 next release a launch is just a day and a key aspect of it is getting the word
+26:06 out to the world but you end that first day with a number of customers that runs
+26:12 to zero one of the challenges of starting a new product offering is that the numbers are so small no one really
+26:19 cares if you if you hit or miss your numbers because it doesn't really move the needle for the rest of the business so our business at that time was roughly
+26:26 a $100 million run rate business and at was essentially starting at zero so the risk is that will people in the
+26:32 organization really care about making sure Atlas was successful Dave did something very
+26:38 important which is to isolate the metrics and numbers of Atlas and Spotlight them completely separately
+26:45 with his team and with the board so that we had a proper appreciation for the scale of it and how it was growing and
+26:51 avoiding it being drowned out by the scale of the business we had already built by then we launched Atlas in 2016
+26:58 and we went public in 2017 the memories I have of people raising concerns about Atlas really
+27:05 happened when we went public it's a pretty daunting challenge to take a company public in the midst of this kind
+27:10 of a business model transition on the road show many public investors wondered what why are we making the investment in
+27:17 Atlas and who cares about this thing that's only 2 or 3% of the company today they said wait a minute how are you
+27:22 going to partner and compete with the hyperscalers they're going to you know eat you for lunch that was one question
+27:28 two there was no analoges of other companies who had been successful doing that three some are our own salespeople
+27:35 who had not been successful selling Atlas really wondered if this was more of a low-end solution maybe focused on
+27:41 the early stage of the market but large Enterprises who were late to the cloud would they really buy something like
+27:46 Atlas because of all the security concerns that people would have about running workloads in the cloud we
+27:52 basically went through the work of knocking down all these potential objections and focused on building Atlas
+27:59 but there was clearly a lot of concerns across different stakeholders about whether or not we were going to be
+28:04 successful there would could have been an argument for okay given how Central
+28:10 the atlas Cloud offering is to your strategy doesn't make sense to you know
+28:15 wait a couple of years before you got public we decided that the time was now
+28:20 and it was appropriate especially with what we were hearing from investors and from Bankers in terms of the centraly of
+28:27 the cloud portion of our Revenue to embrace the moment now to go to the
+28:33 public markets now and at the same point as I discussed with the launch of mangad Atlas the IPO day is just a day and the
+28:41 next day you're back to work and you're trying to sell product you're trying to build the next feature you're working at
+28:49 operational issues and you carry on and you've you've been through a funding
+28:54 event but the world moves on a seminal moment happened in 2019 when
+29:02 Amazon launched a competitor to Atlas called document DB investors panicked
+29:08 and said oh my goodness they have a clone of your product our stock took a beating we went down 152% on the day of
+29:15 that announcement so there was a lot of concern and my statement to the investors that time is that in some ways
+29:22 AWS is validating Atlas it's validating Mong B because the fact that AWS is
+29:28 launching a document based database as a service is telling the market that
+29:33 document databases are here to stay and that you can run Mission critical workloads on document databases and if
+29:40 it's a comparison on which product is the best document database we felt
+29:45 really good about our value propos in relative to the Clone that AWS has built because we knew architecturally it had a
+29:53 number of issues and it didn't have the features and the performance that Atlas could deliver and that's essentially
+29:59 what happened just to put things in perspective it took us about 10 years to get to 100 million revenue and it took
+30:06 us 5 years later to get to a billion dollars in revenue and a big part of getting to a billion dollars in Revenue
+30:12 was the fast growth of Atlas today Atlas represents 70% of mongodb's Revenue it's
+30:19 north of a billion doll run rate business on its own Atlas change mongodb in that the
+30:29 motion for how you interact with your customers changed it became far more
+30:35 better relationship Dave went through a process of both helping the company to
+30:42 understand what great operations means also what does customer success mean and
+30:47 what is it that you do today that will cause a customer to say okay for my next
+30:54 workload for that important thing that is going to get shipped who I would have put mongodb at the center of
+31:00 that if anyone's contemplating tackling a project of something of a similar
+31:06 scale or size to Atlas I think my advice would be the following focused on your
+31:11 customers needs and what they you know really want uh what their buying
+31:16 Behavior may be and for us we noticed that the customer's buying Behavior was changing from buying infrastructure
+31:23 software to consuming it as a service understand what are the points of friction that prevent your customers
+31:28 from buying and using more of your product our traditional open-source model had limits in terms of how fast we
+31:35 could grow and the only way we thought we could remove that friction was by offering Atlas be very clear on what you
+31:41 need to do and what are the associated risks uh are all your stakeholders aligned are they all incentivized to
+31:48 make sure that this project is successful do you have the right single threaded leader what we call our
+31:53 directly responsible individual do you need to get people to disagree and commit because some people may be skeptical but you need everyone's
+31:60 commitment to make it happen other stakeholders like your board involved because there are potentially financing
+32:06 implications U pro margin implications by launching a new business or a business with a different business model
+32:12 so all those things are factors that you have to consider when you contemplate a decision like
+32:18 this as Atlas took off and the market became increasingly aware of the company's unique Cloud database its
+32:25 success exposed another vulnerability after mongodb had already gone public by
+32:31 2018 we were starting to worry that the big cloud service providers would test
+32:36 the limits of the agpl license so in open source there are a
+32:43 variety of different open-source licensing models and for people who are not familiar with this they might be surprised at the number of variations of
+32:50 Licensing models that do exist Mong was initially built on the agpl licensing
+32:56 model which is a bit more restrictive than the GPL or Apache License model and
+33:02 stepping back most open- Source licensing models are designed to induce
+33:07 the public to help contribute to the building of the product so you want people to look at the product make
+33:14 enhancements improvements to the product and contribute that back to the community that's driving the products
+33:21 Innovation we had a very very different strategy we wanted to use open source as
+33:27 a premium strategy we wanted to use open source so that it would be easy for developers to use the product and it
+33:33 also leveraged open source to drive Varity of adoption of mongodb all around the world but we still want to retain
+33:40 all the benefits and margin structure of a traditional software company which is why agpl was selected the founders here
+33:48 made a brilliant absolutely brilliant decision that we called out in our investment memo on page one in that they
+33:55 picked the agpl license so-called Ferro GPL license which was a more restrictive
+34:02 license that enabled customers to download the software and use it but it limited the ability for other people to
+34:08 make changes and then offer that software commercially now one of the things with
+34:13 open source is that the open source licenses were built in a precl era and one of the things that happened with in
+34:20 the cloud was that we saw the hyperscalers take the free version of a lot of open- source technology plug it
+34:27 into their platform form and offer it as a service and make money on it what we were worried about is that since we
+34:33 wanted to build an independent stand loone business we were worried that the hyperscalers would do what people call
+34:39 strip mine mongodb which is take our free product and essentially do the same thing they've done with other open
+34:45 source projects and while agpl had more restrictions there were some terminology
+34:50 that was not exactly black and white so it was there was a little bit of gray and what we didn't want to do was end up
+34:56 litigating this issue in court if some hyperscaler did decide to try and take our free version and go compete with
+35:03 us we could see the writing on the wall in other words the hyperscalers were
+35:08 going to offer their own atlas-like things based on the mongodb source code
+35:14 if we did nothing they had not done that yet but if they did it would be kind of like a game over we had a board meeting
+35:21 in 2018 we were actually in Las Vegas at the time at AWS reinvent the
+35:28 conference and at the board meeting we wrestled with this decision about whether or not we should embrace an
+35:33 alternative licensing scheme the licensing model the
+35:38 management team and the board debated was called sspl or service side public
+35:44 license sspl would maintain the same basic structure as agpl with one major
+35:50 condition any organization offering a service using mongodb's Code would have to either obtain a commercial license or
+35:58 make their own source code publicly available the reason changing a license
+36:04 was a crucible moment was that there was definitely a lot of concern about how
+36:09 users would take to this license change while sspl conforms to all the principles of Open Source it was not an
+36:16 official sanction license from the OSI our fear was that our customers would
+36:22 not trust us that they may think that the change in licensing scheme is a way to circumvent them or take advantage of
+36:29 them and that we weren't true to our open source Roots so it was a very very difficult decision for us not knowing
+36:35 the reaction you know this is one of those things that you announce and there is no small Beta Trial that you could do
+36:44 there's been many examples of companies open source companies changing their license and there's backlash and
+36:50 sometimes they even reverted they backed off and they said sorry um so it it was
+36:55 scary but it was I couldn't think of any other solution to the problem I would say it took months and months and months
+37:02 and months to make this decision part of it is like I said if it doesn't go well this is a giant problem you got to get
+37:09 it right you need to be 100% sure you really need to do this as I thought about this problem and I thought about
+37:15 developers not just here in New York but say developers in Mumbai or Shanghai or
+37:22 Paulo Alto or anywhere else in the world I said if our software is open source in
+37:28 the sense that they can see and access our source code they can modify the source code they can redistribute that
+37:35 code they can essentially do anything they want with it like it to do with any other open source license would they
+37:40 really care whether or not this was an officially sanctioned OSI license and I felt if you could solve their problem
+37:46 better than any other alternative out there they wouldn't care and that was the bet we made some people thought this
+37:52 will have some long-term negative impact on the business and uh ultimately I made
+37:58 the call that we are going to go ahead with this license because it's too important to not do this for our
+38:04 future in October 2018 mongodb debuted sspl the company pioneered this
+38:11 licensing model and in the days that followed we held our breath for the community's response when we announced
+38:18 the shift there was clearly some reaction U most of it was positive but there was some negative reaction the
+38:24 zealots of the open source Community came out and made it clear that this was not a sanctioned open source license
+38:30 they didn't support this and they didn't view mongodb as an open source company anymore there were definitely some
+38:36 customers who weren't clear exactly what this meant so we spent a lot of time and invested a lot of time and effort to
+38:42 educate our customers on what the implications of this license change was we posted blogs about why we did this
+38:51 and tried to address questions that anyone would have and then obviously we armed our salespeople to explain to our
+38:58 customers who weren't reaching out to us why we did this and what the implications it had on them our Atlas business only grew faster
+39:05 after this change but there were some people who definitely predicted our potential doom and and luckily those
+39:12 naysayers were completely wrong given the experience that I've had with mongodb both in the original choice
+39:19 of hpl and then the choice of sspl is that when I meet young companies that are open source one of the first
+39:25 questions I ask them is what is the open source licensing approach that they've adopted because you can make changes
+39:31 early on much more easily than you can later and I I wish more Founders who build open source companies would study
+39:38 the mongodb case study to appreciate how important it is for them to choose the right licensing scheme early on in their
+39:45 company journey to ensure that they can build a thriving business ruof always pushed us on
+39:53 thinking about the scale of our ambition Mong had taken a long time to get 100 Mill million in Revenue now there many
+39:60 many companies the high percentage of companies don't even get to $100 million Revenue so that's a pretty big milestone
+40:05 but it took us 10 years as a company to get to 100 million but ruoff always pushed on me and pushed on the exec team
+40:12 and was confident that we could be a far bigger company now we're approaching to
+40:18 be almost a $2 billion company and we've done that essentially in a pretty short
+40:23 period of time while mongodb began journey by
+40:28 narrowing its scope today by creating such a successful database it's earned
+40:34 the right to evolve back into a platform we realized that our customers
+40:40 were coming to us and asking us to do more things customers tell us hey I'm
+40:45 using mongodb for a bunch of my workloads but then I have to use a search database along with mongodb and
+40:51 why can't you do both other people say I'm using the single point single
+40:56 function database and I much rather do everything on your platform because then all the data is in one place that really
+41:04 drove the focus of building out a broader set of features so that customers could essentially do more
+41:10 things on mongodb uh but still do it in a very unified and elegant way uh essentially
+41:16 across any deployment model they could do it on premise they could do it in the cloud they could do it cross cloud and
+41:23 for some uses they could also do it at the edge I think it's kind of interesting how we started with this
+41:29 platform as a service idea where this definitely the idea is to create a platform and then we did the pivot so
+41:35 now we're making a product right but as the product gets bigger it's kind of ironic that it is kind of a
+41:42 platform the founding mission of being a platform business is now what is shaping
+41:48 our future as we've gone from being a compelling database solution to now
+41:53 thinking of ourselves as a developer data platform and offering many more of
+41:59 the tools and capabilities as a as a single point to make life easier for developers and to really help solve
+42:05 their problems my main takeaways from the cruo
+42:11 moments I've been through is to think about a few things one think about what
+42:16 kind of outcomes you want whether it's for yourself or the company or organization you're working for and
+42:21 working backwards from there then thinking about what are the biggest points of Leverage that really have an
+42:27 outsize impact on getting to those outcome and really really focusing on executing on those points of Leverage
+42:34 very well and the third thing is learning how to deal with adversity there will be times when your commitment
+42:40 is tested there will be times when you question yourself about whether not you're doing the right thing there may
+42:47 be other stakeholders who challenge your assumptions uh and while you want to listen to the feedback and maybe there's
+42:53 things you haven't thought through it's really really important to deal with those adverse moments and continue to
+43:00 plow ahead because as a definition goes a decision you make today can have an
+43:06 outsize impact on the future of your business or the future of your
+43:13 [Music] career this has been Crucible moments a
+43:19 podcast from Square capital [Music]
+43:31 Crucible moments is produced by the Epic stories and fox creative podcast teams along with seoa
+43:39 [Music] capital special thanks to Dave aeria Tom
+43:44 kly and Dwight maramman for sharing their stories

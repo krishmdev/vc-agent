@@ -1,0 +1,1406 @@
+00:00 We have set up the company from day one
+00:02 to really go after this big ambition.
+00:05 This isn't about
+00:07 uh developing therapeutics for a
+00:10 particular indication or a particular
+00:12 target. Um it's really thinking about
+00:14 how do we create a very general drug
+00:17 design engine uh with AI something that
+00:20 we can apply to not just a single target
+00:23 or even a single modality but we can
+00:25 apply this again and again across any
+00:28 different disease area. Um, and that's
+00:30 what we're stepping towards at the
+00:31 moment.
+00:48 Today we're excited to welcome Max
+00:50 Yotterberg to the show, chief AI officer
+00:52 of Isomeorphic Labs, which launched out
+00:55 of DeepMind with a goal of
+00:56 revolutionizing drug discovery using
+00:59 AI. Last summer, they released Alphold
+01:02 3, a stunning breakthrough that allows
+01:04 us to model not just the structure of
+01:06 proteins, but of all molecules and their
+01:09 interactions with each other. That led
+01:12 to Demisabus winning the Nobel Prize in
+01:14 chemistry last
+01:15 year. Max describes their vision for
+01:17 what a holy grail model for drug design
+01:19 and what agents for science look like.
+01:22 He draws parallels to his experiences
+01:24 building Alpha Star and Capture the Flag
+01:26 and the research directions of building
+01:28 agents and games more
+01:29 broadly. Specifically, with 10 the^ of
+01:32 60 possible drug molecule structures, we
+01:35 need to build both generative models and
+01:37 agents that can learn how to explore and
+01:40 search through the whole potential
+01:41 design space.
+01:43 Max also describes his vision for what a
+01:45 GPT3 moment for the field might look
+01:47 like, describing it more akin to Alph
+01:50 Go's famous move 37 when we start to see
+01:53 things that exhibit superhuman levels of
+01:54 creativity in AI drug design and that
+01:58 stun even humans
+01:59 ourselves. This is one of my favorite
+02:02 episodes yet. Enjoy the show.
+02:06 Max, thank you so much for joining us
+02:07 today here in London. No, it's a
+02:09 pleasure to be um with you here. Yeah,
+02:11 it's fantastic. Um, awesome timing too
+02:13 with the launch of AlphaFold 3 and with
+02:15 Demis winning the Nobel Prize in
+02:17 chemistry, which is a true testament to
+02:19 everything that you and your team have
+02:20 done over the last couple years. Yeah,
+02:22 2024 was definitely a busy year for us.
+02:25 Um, lots of big breakthroughs. Nobel
+02:27 Prize was just incredible to see, you
+02:29 know, I think amazing recognition for
+02:31 this for this seminal piece of work.
+02:33 Yes. Um, well, I'd love to start with
+02:35 talking a little bit about your own
+02:36 personal story. You've had an incredible
+02:39 career in the world of deep learning
+02:40 from the very start.
+02:42 um authoring many seminal papers while
+02:44 at DeepMind including for Capture the
+02:46 Flag and Alpha Star um breakthroughs in
+02:50 the world of deep learning. Can you walk
+02:52 us through some of the key questions
+02:54 that you had in your field of research
+02:57 around deep reinforcement learning at
+02:59 the time? Yes. So at at at Deep Mind,
+03:02 yeah, I I worked on a whole host of
+03:04 stuff, you know, early days of uh
+03:06 computer vision and and deep generative
+03:09 models. Um but it was really
+03:10 reinforcement learning that ended up
+03:13 hooking me there. Um DeepMind was the
+03:15 place in the world to be working on
+03:16 reinforcement learning at that time. And
+03:19 you know really the question in our
+03:21 minds
+03:22 was how can we actually get to a point
+03:24 where we could get an AI um that could
+03:28 go and go off and do any task you wanted
+03:31 it to do. And um you know the the
+03:35 dominant paradigm at that point in time
+03:37 was supervised learning. Yeah. And
+03:40 supervised learning is very different
+03:41 from reinforcement learning. They're
+03:42 both learning techniques. But supervised
+03:44 learning, you need to know what the
+03:46 answer to your question is and that's
+03:49 how you train the model. So in
+03:50 supervised learning, you give an example
+03:52 and then you supply the model with the
+03:54 answer to to that question. Um, now that
+03:59 can be great if you already know
+04:01 everything about the problem that you're
+04:02 training this AI to do, um, this neural
+04:04 network to do, but most times you don't.
+04:07 Yeah. I mean there there's just so many
+04:09 problems in the world where we don't
+04:11 know what the answer is. Yeah. Uh we
+04:13 don't know what the solution is. And if
+04:15 you think about, you know, I think about
+04:16 how I want AI to be applied to the
+04:18 world. Um yes, it's going to be great to
+04:21 be able to apply things where we're
+04:22 already good as humans here, but really,
+04:25 you know, the the big frontier is can we
+04:28 start applying AI to places where, you
+04:30 know, humans don't know how to do this
+04:32 stuff or, you know, there's a limit to
+04:34 human um performance there. And um you
+04:37 know that's where reinforcement learning
+04:40 is one of the key tools and has real
+04:43 promise here because in reinforcement
+04:44 learning you don't need to know what the
+04:46 answer to the question is. You just need
+04:48 to be able to say whether the answer
+04:51 that the model gave you was good or not
+04:54 good. Yeah. Maybe even how good or not
+04:56 good. And um so this opens up a
+04:59 completely new you know um field of
+05:03 problems to train these models against.
+05:06 And so reinforcement learning and and
+05:08 really you know starting
+05:10 from what was one of the big
+05:12 breakthroughs of DeepMind in in the
+05:13 early days was was you know working on
+05:15 games like Atari. Yes. The question was
+05:18 okay so how can we scale this up from
+05:20 you know the world of Pong um and Space
+05:23 Invaders to things that really start to
+05:25 look like real problems in the world.
+05:27 Yeah. Um and so there was an amazing
+05:30 track of research um as we scaled up
+05:33 these methods. Yeah. Did you know that
+05:35 Sequoia was uh the first investor in
+05:37 Atari back in the day? Oh, really? I
+05:39 didn't I didn't know that. That That's
+05:41 incredible. Yeah. Yeah. No, those those
+05:43 Atari games were, you know, great fun
+05:45 actually to um to sort of go back and
+05:48 play in the context of, hey, we've got
+05:49 an agent and, you know, draw I'm just
+05:51 going to have a game of Pong on the side
+05:52 as well. So, um there's a wonderful wall
+05:55 at Sequoia in our office where um we
+05:57 have all these names of um legendary
+05:59 IPOs and and M&amp;As that have happened.
+06:02 There's one um uh I think it's called
+06:05 the pizza company uh and I love asking
+06:08 folks if they know what that is and it's
+06:10 actually from Chuck-e-Cheese's uh which
+06:12 was an original Sequoia investment at
+06:14 the time. Oh, amazing. Amazing. Um so
+06:16 Capture the Flag and Alpha Star uh were
+06:19 incredible breakthroughs at the time.
+06:21 Can you share a little bit about what
+06:23 exactly those breakthroughs were and
+06:25 maybe why you chose those specific
+06:27 games?
+06:28 Yeah. So, you know, if you think about
+06:30 the history of of AI um using video
+06:34 games, you know, why do we use video
+06:36 games at all? Video games are these sort
+06:39 of malleable, perfectly encapsulated
+06:41 worlds that as researchers and
+06:43 scientists, you know, we we can
+06:46 manipulate them. We can test out
+06:48 different algorithms in them. We can set
+06:50 up different situations. So, the the
+06:52 perfect test ground for us to develop
+06:53 new algorithms.
+06:55 Um, and then you can imagine as a, you
+06:58 know, RL researcher, as someone who's
+07:01 like thinking about how can we get AI to
+07:02 be as general as possible, you're always
+07:05 thinking, okay, we've cracked Atari, how
+07:07 do we get a more complex game? Yeah. Um,
+07:10 and the thing that I was personally
+07:12 obsessed with is I want these agents um
+07:16 to be able to
+07:19 zero be able to do any task. And this is
+07:22 a slightly different paradigm from the
+07:25 uh from what people were doing at the
+07:26 time with training on Atari where you
+07:29 normally reinforcement learning you
+07:30 think about here's a game now you get to
+07:32 train on it and get good at it and then
+07:34 you apply that same algorithm from
+07:36 scratch training on different games.
+07:38 Yes.
+07:40 I'd love a different scenario where
+07:41 instead we train an agent and then we
+07:44 can lift it and put it on any new task.
+07:46 Yeah. And that agent will be able to
+07:48 perform well in that task without any
+07:50 more training. Yeah. And so to do that,
+07:53 what you're really asking for is
+07:55 generalization over task space. Yes. And
+07:59 that means you need lots and lots of
+08:01 training tasks. So the training data in
+08:04 this RL for agents becomes tasks. Yeah.
+08:08 Not images, not pieces of text, but
+08:10 tasks. And so you can imagine you could
+08:12 go and sit and um you know take a whole
+08:15 game studio and try and hand author you
+08:18 know hundreds of different tasks lots of
+08:20 little mini games uh in these virtual
+08:22 worlds. Um and we did that you know we
+08:25 we were doing lots of that. And then you
+08:27 can think yeah we can actually uh go
+08:29 further than hand authoring. we can
+08:31 procedurally generate
+08:33 um these tasks and games uh generating
+08:36 worlds and and and um maps and and and
+08:39 different objectives and we did that. Um
+08:43 but you keep running into this
+08:44 complexity ceiling that there's only so
+08:47 much complexity that you can hand off or
+08:49 you can design. Yeah. Humanly. But
+08:52 that's where multiplayer games come in.
+08:55 Yeah. because as soon as you go from
+08:57 single player to multiplayer, it's not
+08:59 just the agent playing. You've got
+09:00 another player in this game. Um,
+09:04 and that other player or other players
+09:07 can take on many different
+09:08 characteristics and many different
+09:10 behaviors. So, every different player,
+09:12 every different strategy that you're up
+09:13 against changes fundamentally the game
+09:16 and what the agent is trying to do. You
+09:18 know, I I I go back and think what, you
+09:20 know, why are people still obsessed with
+09:23 playing chess? Yeah, you know, why does
+09:24 a professional chess player still keep
+09:26 playing chess? It's the same game, but
+09:28 it's actually not because you're playing
+09:30 completely different opponents day after
+09:32 day and new people into the world. Um,
+09:35 so the game is continually changing. So,
+09:37 multiplayer games and multi- aent games
+09:40 really encapsulates that huge diversity
+09:43 of tasks that you might encounter just
+09:45 from other players um being there. And
+09:49 so capture the flag was actually one of
+09:51 our first foray into um how can we use
+09:55 multiplayer games to really stretch what
+09:58 our reinforcement learning algorithms
+09:59 can do to really force us to think
+10:02 strongly about how we can generalize to
+10:04 new tasks, how we deal with these
+10:05 multi-agent dynamics. Um so capture the
+10:08 flag was a fantastic breakthrough. Um
+10:11 really showed that we could get to human
+10:12 level performance for these multiplayer
+10:15 firsterson games. Yeah. And then of
+10:17 course Starcraft added on a huge amount
+10:20 of complexity um and was sort of the
+10:22 next frontier that we had to um go after
+10:25 for this. You were so early in this so
+10:27 many of these concepts are very very
+10:29 relevant today in the world of language.
+10:31 How does it feel to to see some of this
+10:33 work continue to be played out? Yeah,
+10:36 it's brilliant. Um it's it's it's just
+10:38 fantastic actually. You know there were
+10:39 so many things that we were talking
+10:41 about seven years ago. Yeah. Yeah. Yeah.
+10:43 you know, 2015, 16, 17, 18.
+10:47 Um, and to see all of these core
+10:51 fundamental concepts being really useful
+10:53 and really applicable today in the world
+10:55 of large language models. Um, you know,
+10:58 the and and resulting in performance
+10:60 that we could only really dream about at
+11:01 the time. That's that's incredibly
+11:02 satisfying actually. Yeah. So then, you
+11:05 know, in your own words, you said that
+11:07 um you moved from building toys to then
+11:10 finding real applications. when did you
+11:12 know that you found the right recipe?
+11:16 So, you know, I I I just love deep
+11:19 learning. I I've been obsessed with deep
+11:20 learning for, you know, 10 15 years now.
+11:24 Um,
+11:26 and the thing that I love about it is
+11:28 that you have these underlying core
+11:31 concepts, these fundamental building
+11:33 blocks that are somehow incredibly
+11:36 transferable between different
+11:38 application spaces. Yes.
+11:40 Um so you know it's the same building
+11:43 blocks that we were using in computer
+11:45 vision in 2012 as we were using in uh
+11:48 you know generative model early
+11:49 generative models in language you know
+11:51 then reinforcement learning etc etc. Um,
+11:55 so what I was seeing just again and
+11:57 again was this ability to take these
+12:02 core concepts, these same core
+12:04 concepts, take incredible people
+12:08 um, who understand how to, you know,
+12:10 they're almost like master chefs of
+12:12 putting these these concepts together
+12:13 and these different building blocks
+12:14 together. take team of incredible people
+12:18 um and go after you know really really
+12:21 challenging problems you know problems
+12:22 that you go to conferences at the time
+12:25 and you and you talk to leading
+12:26 researchers in the field they say no no
+12:28 no this is 10 years away you know and in
+12:30 the back of your mind you know okay we
+12:32 actually we basically cracked it wow and
+12:35 I saw I saw that happen again and again
+12:37 and again um you know you take amazing
+12:40 people amazing algorithms amazing
+12:42 compute on really challenging problems
+12:44 and we can find recipes now to crack so
+12:47 many problems. Um, and so it just got to
+12:51 the point where um, and I've always been
+12:54 quite obsessed with the application of
+12:56 these methods. I I want to see this
+12:58 technology have, you know, real
+13:00 transformative positive impacts in the
+13:03 world. Yeah. Uh, and so, you know, we
+13:05 need to start actually going after that
+13:07 and and, you know, the time has been
+13:09 right for, I think, a few years now.
+13:11 Yeah.
+13:12 Well, so you've now had a decadel long
+13:15 relationship working together with one
+13:17 of the greatest scientists,
+13:18 technologists, and founders of our
+13:20 lifetime, Demis. Um, he called you while
+13:23 you were still at Oxford. Uh, and then
+13:26 your company, Vision Factory, and
+13:28 DeepMind were both acquired by Google
+13:31 back in 2014, around the same time, and
+13:33 that's when the two of you started to
+13:35 work together. Um, now for over 10
+13:38 years. What was it like or what has it
+13:40 been like to work with Demis?
+13:43 Yeah, I mean Demis is a incredible
+13:46 person. Um, you know, a real character
+13:50 and a real visionary. Yeah. Um, and you
+13:54 know, also amazingly human and relatable
+13:56 and I think that that really inspires
+13:58 people. So, you know, it it only takes a
+14:02 five minute conversation to for him to
+14:05 sort of really bleed out the the depth
+14:08 of ambition that he thinks about um and
+14:13 just the the immediiacy of of of the
+14:16 potential to get, you know, to step
+14:18 towards these ambitions. So I think
+14:21 um he he has this great ability to
+14:25 inject a lot of energy into you know a
+14:28 group of very smart people. Um get
+14:32 people to see beyond what's right in
+14:34 front of them. Uh you know I remember
+14:36 moments sitting uh well standing in the
+14:39 lobby of one of the early Deep Mind
+14:40 offices. I think this was the it was a a
+14:44 toast. We were a celebration we were
+14:46 having for the first Nature paper from
+14:47 DeepMind. Wow. And
+14:50 um Deis was saying, you know, this is
+14:53 actually just going to be the first of
+14:56 dozens of nature papers. And at the
+14:58 time, this was the first basically the
+14:60 first machine learning paper in nature.
+15:02 This was the Atari DQN paper. And the
+15:05 prospect of dozens of nature papers, you
+15:08 know, it seems a bit farfetched. And
+15:10 actually, he went further and said, "And
+15:12 and and we're going to be winning Nobel
+15:14 prizes as a result of this." And that
+15:17 was 10 years ago. Yeah, that's
+15:18 incredible. The forethought that he has,
+15:20 um, he's got what I call like one of
+15:22 these rollouts minds. Maybe it comes
+15:24 from all of his experience playing
+15:26 chess, but it's he's always, you know,
+15:28 rolling out into the future. What what
+15:30 are the steps now that are going to
+15:31 lead, you know, to this big ambition.
+15:33 Um, so yeah, it's been it's been
+15:36 fantastic. I've been working with him
+15:37 for about 10 years now. Um, you know,
+15:40 still work really closely together on
+15:42 isomeorphic labs. Um, and the ambition
+15:44 is as big as ever. It's so interesting
+15:47 to hear that um you had this ambition
+15:49 and that he had this ambition from the
+15:51 very start. Um and it's incredible that
+15:54 it's played out that way. Um well, I'd
+15:56 love to talk a little bit about
+15:57 isomorphic. You're now embarking on one
+15:60 of the most ambitious missions of our
+16:01 generation to reimagine drug discovery
+16:04 and drug development with AI. If
+16:07 everything goes right and you realize
+16:09 your vision for isomorphic, what does
+16:11 the world look like?
+16:13 Yeah, you know, we we think really big
+16:15 isomeorphic. Um, we want to be solving
+16:18 all diseases here and and and and
+16:21 genuinely that that that scale. And the
+16:24 point is that this technology that we're
+16:27 building, you know, and AI as a whole
+16:30 field is going to be completely
+16:32 transformative in how we understand
+16:34 biology, in our ability to manipulate
+16:38 and craft chemistry to modulate that
+16:41 biology. Um so we really think about a
+16:45 future where we are solving all diseases
+16:47 where you know AI is not just helping us
+16:51 you know discover and create and design
+16:53 new therapeutics but also just
+16:55 understand so much more about our
+16:57 biological world about how our you know
+16:60 cells are working um what are the root
+17:02 causes of of disease um and therefore
+17:05 opening up new pathways that we can um
+17:08 think about modulating. Yeah. Um so uh
+17:11 we we have set up the company from day
+17:14 one to really go after this big
+17:16 ambition. This isn't about
+17:20 uh developing therapeutics for a
+17:22 particular indication or a particular
+17:24 target. um is really thinking about how
+17:27 do we create a very general drug design
+17:30 engine uh with AI something that we can
+17:33 apply to not just a single target or
+17:35 even a single modality but we can apply
+17:38 this again and again across any
+17:40 different disease area um and that's
+17:42 what we're stepping towards at the
+17:44 moment. How does um setting out with
+17:47 this ambition of being general change
+17:51 how you built in practice from day one?
+17:54 Yeah, it's a good question.
+17:57 Um, when I think about some of the
+17:60 status quo of AI in drug design, there's
+18:02 a lot
+18:03 of the there's been a lot of use of uh
+18:06 machine learning models in chemistry and
+18:08 biology, but I would call them a lot of
+18:11 the first generation of of these sort
+18:13 this sort of application to be more
+18:14 local models. Yes. where you might have
+18:17 some data about a particular target or
+18:20 about how a particular class of
+18:21 molecules is is is behaving and you'll
+18:24 fit a small you know multi-layer MLP
+18:28 against this data. Yeah. Um to help you
+18:31 generate some predictions that lead to
+18:32 your next round of design. Yeah.
+18:35 Um this is the complete opposite
+18:38 approach of what we were trying to do.
+18:39 So from day one we were setting out to
+18:42 create models that generalize across
+18:45 chemistry and across target space. So uh
+18:50 you know and a key example of this is is
+18:52 something like alphaold and alphaold 3.
+18:54 Yeah. Where this is a model that you can
+18:56 apply to um a whole different host of
+18:59 targets. You can apply it to any protein
+19:02 in the in the proteome in in the
+19:03 universe of proteins. uh you can apply
+19:06 it to any small molecule that you can
+19:09 think of designing without needing to
+19:12 fine-tune it, without needing to fit any
+19:13 local data. Yeah. And so you can you can
+19:15 imagine that completely changes the way
+19:17 that chemists can use these models if
+19:19 you don't need to be adapting this model
+19:21 to every single application. Yeah. So,
+19:24 every single one of our internal
+19:26 research projects, and by the way, when
+19:28 I think about, you know, what we're
+19:30 going to need to get this breakthrough
+19:32 drug design engine that we've been
+19:33 building, uh, we need like half a dozen
+19:37 alpha folds. Wow. Alpha fold is just
+19:39 part of the story. Wow. So, from day
+19:42 one, we've been setting up these
+19:44 internal research programs going after
+19:46 these halfozen um problems. Uh we've had
+19:50 significant breakthroughs obviously in
+19:51 alpha fold and structure prediction but
+19:53 also in other key areas.
+19:56 Um and in all of these these models are
+20:00 general they can be applied to any
+20:02 target. They can be apply and and then
+20:04 what we're finding actually they can be
+20:05 applied to any modality or lots of
+20:07 different modalities at least. Yeah. So
+20:09 that's the first time I've I've heard
+20:10 you say half a dozen alpha folds. Can
+20:13 you share a little bit more about what
+20:14 that means? Yeah. So you know Alpha 4
+20:17 was obviously a massive breakthrough in
+20:19 in understanding uh biomolelecular
+20:22 structure. So how what what is the
+20:24 structure of proteins and now with alpha
+20:26 3 structure proteins with small
+20:27 molecules and things like DNA and RNA.
+20:30 Um that's a fundamental step change. It
+20:32 allows us to get experimental level
+20:35 accuracy of a really core concept of
+20:37 biochemistry. Yeah. That unlocks a whole
+20:40 bunch of thinking and design work for
+20:41 chemists. Yeah. But you know, my comment
+20:45 here is actually we're probably going to
+20:46 need something like half a dozen more of
+20:49 these sort of breakthroughs. This sort
+20:50 of getting to experimental level
+20:52 accuracy of different core concepts of
+20:54 biology and chemistry. Yeah. To be able
+20:57 to put this together into um something
+21:00 that's really transformative for drug
+21:02 design. Drug design is really really
+21:04 hard. Yeah. It's not just a single
+21:06 problem. It's not just about
+21:08 understanding the structure of a
+21:09 protein. Yes. Um it's not even just
+21:12 about designing a molecule that will
+21:14 modulate that protein in the way that
+21:16 you want. Yeah. You want this molecule
+21:18 to be able to, you know, ideally be
+21:21 taken as a pill and go through the body
+21:22 and be absorbed in the right way and
+21:24 reach the right, you know, cell type and
+21:26 actually, you know, go into the cell and
+21:28 and and and not be broken down by the
+21:30 liver in a certain way. So there's just
+21:32 so much complexity. Yeah. To hold on to
+21:34 as a drug designer. Yeah. Um, and each
+21:36 one of those is like, you know, an
+21:38 AlphaFold level style breakthrough that
+21:40 that we've been creating. So
+21:42 interesting. Um, well, I've also heard
+21:44 you use the words a holy grail model for
+21:46 drug design and agents for science. Can
+21:49 you explain a little bit more about what
+21:50 you mean? Yes. So, um, some of these
+21:54 research areas that we've been going
+21:55 after,
+21:57 um, you know, predicting structure and
+22:00 properties of these molecules and how
+22:02 all of these like biomolelecules
+22:04 interact and play out over time. Um,
+22:06 these really are sort of holy grail
+22:09 predictive problems for drug design. Um,
+22:12 and we've made some incredible
+22:14 breakthroughs there which have, you
+22:16 know, really stunned our chemists and
+22:17 and and stepch changed how we do drug
+22:19 design internally at ISO. Um but what's
+22:22 I think a really interesting thing to
+22:24 think about is
+22:26 that you could be you could create the
+22:28 best possible predictive model of the
+22:30 world like an experimental level even
+22:33 better than experimental level model to
+22:36 predict a particular property about a
+22:37 molecule for example to be able to
+22:39 predict the outcome of a real
+22:41 experiment. So we could have a whole
+22:42 suite of those but that still wouldn't
+22:45 solve drug design.
+22:47 Um and and the way to think about this
+22:50 is
+22:51 is you know there's this number 10 the^
+22:54 of 60 which is perhaps all of the
+22:56 possible drug-like molecules that you
+22:59 could that could exist. Um you know that
+23:03 that's maybe that's maybe that's maybe
+23:05 you know a bit you know takes into
+23:07 account a lot of things. So we could
+23:09 even reduce that by 20 orders of
+23:11 magnitude. Yeah. Get to 10 to the 40.
+23:13 Yeah. That's still a lot of things.
+23:15 Yeah. And um even if you had the best
+23:18 predictive models in the world, so let's
+23:20 say you could screen a billion different
+23:22 molecules, you could go and test a
+23:24 billion different molecules, that's 10
+23:25 to the nine. So you know, now we're
+23:27 still like 10^ the 31 molecules left on
+23:30 the table. Yeah. So even with the best
+23:32 predictive models, you're still not even
+23:34 scratching the surface of molecular
+23:36 space that you should be exploring. And
+23:39 this is why we need to go beyond just
+23:41 predictive models of experiment but also
+23:44 models like generative models like
+23:46 agents that can actually navigate that
+23:50 whole 10 to the 40 10 to the 60 space.
+23:52 That's so interesting. Using our
+23:54 predictive models obviously to
+23:56 understand how to navigate that but so
+23:58 we don't have to exhaustively search
+23:59 because we can never exhaustively search
+24:01 the whole universe of molecules
+24:04 if that makes sense. Just in the same
+24:06 way that Alph Go couldn't exhaustively
+24:08 search all of the possible Go moves,
+24:10 right? Unlike chess where you could
+24:12 exhaustively search all possible chess
+24:14 moves. Yeah. Yeah. But yeah, molecule
+24:16 design is much more like go than it is
+24:18 like chess. Um, so that's where
+24:21 generative models come into play, agents
+24:24 that utilize generative models that
+24:26 utilize search techniques as well as
+24:28 these amazing predictive capabilities to
+24:30 really open up the entirety of of of
+24:33 molecular space. Now to me it's actually
+24:36 still amazing that even without AI we
+24:40 managed to find drugs in this 10 to 60
+24:42 space 10 to the 40 space. Yeah. Um it
+24:45 just says actually there's there's
+24:46 probably a lot of redundancy. There's a
+24:48 lot a lot of potential designs. Yeah.
+24:50 You know if you think about a particular
+24:51 disease indication a particular target
+24:54 um there should there should be many
+24:56 designs that exist that would be good
+24:58 for that and and would be the right sort
+24:60 of product profile for this therapeutic.
+25:03 Um, and I think the real potential here
+25:06 is is for these generative models, these
+25:09 agents as well to be able to search
+25:11 through this space and really uncover
+25:13 that whole potential design space.
+25:15 That's so interesting. I I think in very
+25:17 simplistic layman terms, you're both
+25:21 modeling, learning and modeling the game
+25:24 and trying to build the best player to
+25:27 solve different types of games. Yeah.
+25:29 So, I mean, you know, I'm I'm incredibly
+25:31 biased by by by by games. I've been
+25:34 playing video games since I was a kid.
+25:36 Grew grew up in that world. Um, but, you
+25:39 know, that's exactly how I think about
+25:40 it. We've got to be creating our world
+25:43 models, our models of the biochemical
+25:46 world, our biological world.
+25:49 And then it we don't stop there. We
+25:52 actually then need to be creating agents
+25:53 and generative models that can work out
+25:55 how to explore. Yeah. Yeah. How how to
+25:57 traverse that and to basically uncover
+25:59 these, you know, amazing needles in the
+26:01 hay stack of in chemical space which
+26:03 could be, you know, life-changing
+26:04 therapeutics for so many millions of
+26:06 people. I love that. That is our
+26:09 punchline today. So, Alphold 3 is truly
+26:13 groundbreaking. Um, you've taken us from
+26:15 being able to model just the structure
+26:17 of a protein to now being able to model
+26:19 the structure of all molecules and their
+26:22 interactions with each other. Um can you
+26:24 share a little bit about how we should
+26:26 think about that in terms of the impact
+26:28 in accuracy in speed and efficiency and
+26:32 also potentially in being able to
+26:33 explore problem spaces that we couldn't
+26:36 solve before this? Yeah. So yeah, Alpha
+26:40 Fold 2 was a you know the biggest
+26:44 breakthrough right to be able to
+26:46 understand the structure of proteins.
+26:48 And then there was something called
+26:49 alfold to multimmer which then allows
+26:52 you to understand not just the structure
+26:54 of proteins by themselves each
+26:55 individual protein but the structure of
+26:57 proteins as they come together and what
+26:59 we call complexes. So how these proteins
+27:01 fit together
+27:03 that opens up you know and helps us
+27:05 answer a lot of questions in biology.
+27:08 But there's still a big hop to designing
+27:10 therapeutics. And one of one of the big
+27:13 classes of therapeutics is what's called
+27:15 small molecules. So these are molecules
+27:17 that are not proteins. These would be
+27:19 things like caffeine um or paracetamol
+27:21 things that of more often you can take
+27:24 as a pill.
+27:26 Um and the way that these therapeutics
+27:28 work these these small molecules is that
+27:30 they go through the body, they go into
+27:31 the cell and they actually come and
+27:34 attach themselves to these proteins. Uh
+27:37 you know these proteins they're the
+27:39 fundamental building blocks of life.
+27:41 They form these molecular machines by
+27:43 interacting with other proteins. Yeah.
+27:45 And so you can you can imagine that if
+27:47 you have another molecule, your your
+27:49 drug that comes in and attaches itself
+27:50 to a protein over here, then it might
+27:53 disrupt the ability for that protein to
+27:55 interact with another protein, part of
+27:57 its normal machine in day-to-day life.
+27:60 And so you're modulating the function of
+28:02 that protein. Yeah. With this small
+28:03 molecule. Yeah. And that's the essence
+28:05 of of of of drug design and how
+28:08 therapeutics work. And so you can
+28:10 imagine as a chemist your your job or a
+28:13 drug designer, you're trying to design a
+28:16 small molecule that's going to fit to
+28:18 this protein over here and disrupt how
+28:20 it normally functions or in some cases
+28:23 enhance how it normally functions. And
+28:25 so it'd be really helpful to understand
+28:27 how this small molecule interacts with
+28:30 the protein. Yeah. What's the structure
+28:32 that it might make? What are the
+28:33 interactions? These literally physical
+28:35 interactions that are being made. Mhm.
+28:38 Um and so that really inspired, you
+28:42 know, the creation of AlphaFold 3 where
+28:46 now we have a model that not only
+28:48 predicts the structure of proteins, but
+28:50 how these proteins interact with small
+28:51 molecules, also other fundamental
+28:54 molecular machine building blocks,
+28:55 things like DNA and RNA. um and this
+28:59 basically opens up the ability to
+29:01 structurally understand which is a core
+29:03 part of drug
+29:04 design. Um small molecules, it opens up
+29:07 new classes of targets uh you know there
+29:11 are things like transcription factors
+29:12 which are proteins that sit on DNA um
+29:16 and and read DNA. And you can imagine
+29:18 now trying to design a small molecule to
+29:20 change or disrupt the function of of
+29:23 something like that. And to so to do
+29:24 that, you'd really want to be able to
+29:26 see literally in 3D how this all looks.
+29:29 Yeah. And if I make changes to my little
+29:30 molecule. Yeah. Um how will that change
+29:33 the way it interacts with this protein
+29:35 in this biomolelecular system? So
+29:36 Alphold 3 is now very very accurate. Um
+29:40 allows us to answer a lot of these
+29:41 questions purely in silicone. Yeah.
+29:44 Purely on a computer where before you
+29:46 would have to go to the lab, literally
+29:48 crystallize this stuff. This can take
+29:50 six months. It can take years. Sometimes
+29:52 it's even impossible. Uh now at ISO, our
+29:55 drug designers are, you know, literally
+29:58 sitting, you know, with their laptop
+29:60 browser based interface being able to
+30:02 understand, make changes to their
+30:03 designs um and see the impact of that.
+30:06 Incredible. So there are a couple
+30:08 interactions that um Alphold 3 is
+30:11 focused on um proteins and nucleic
+30:14 acids, proteins and ligans, and
+30:17 antibbody to antigen. Can you give us
+30:20 some good examples of of um the impact
+30:24 that alth 3 now has on the interaction
+30:26 of these different types of proteins and
+30:28 molecules. Yeah. So um protein and lians
+30:32 that's the same as protein and small
+30:33 molecules. Those two terms lians and
+30:35 small molecules are synonymous. That
+30:37 allows us to understand how small
+30:39 molecule drugs interact. Then we can
+30:42 think about um you know protein protein
+30:46 interactions. Um there's a whole class
+30:49 of therapeutics called biologics. These
+30:51 these are things like antibodies. Um
+30:53 that allows us to understand how they
+30:55 might interact with our targets. Opens
+30:58 up new modalities. Um and and that also
+31:02 encapsulates the the the sort of pro the
+31:04 the antibbody antigen interface. So if
+31:07 you're designing an antibbody uh you
+31:09 want to understand how your antibbody
+31:11 design is going to interact with the
+31:12 protein surface. Yeah. There. So it's
+31:16 the same model that we can use across
+31:17 all of these different uh applications.
+31:20 What are the nuances of training a model
+31:22 like Alphold 3 and what are the benefits
+31:24 of using a diffusionbased architecture?
+31:27 Yeah, it's a great question. Um there
+31:29 are a lot of challenges we had to
+31:30 overcome to get Alphaold 3 to work. uh
+31:33 one one of the most interesting things
+31:34 was actually just how do we uh take uh
+31:39 something like AlphaFold which was only
+31:41 working with proteins and then input
+31:42 these new modalities these new data
+31:44 types of RNA DNA small molecules so we
+31:48 had to work out how to tokenize not just
+31:51 proteins which we kind of knew how to do
+31:52 but how to tokenize then DNA how to
+31:54 tokenize small molecules for things like
+31:57 DNA and RNA that's a little bit more
+31:59 obvious um we could tokenize in the
+32:01 bases but But then for small molecules,
+32:04 we would really go to um we tried a
+32:06 whole bunch of different stuff really
+32:08 ended up that this atomic resolution
+32:10 tokenization worked super
+32:12 well. And then you have the question of
+32:15 okay, how do you actually um predict the
+32:18 structure of this mixture of different
+32:21 molecule types? Yeah. Uh you couldn't
+32:23 use the same framework as Alpha 2. And
+32:28 uh this is where diffusion modeling just
+32:30 really shun.
+32:33 Um here we could actually model every
+32:36 single individual atom and the
+32:38 coordinates of every atom individually
+32:41 um and have a diffusion model be
+32:42 producing those 3D coordinates. Uh and
+32:46 the tokenization that we talked about is
+32:49 conditioning the uh inference of that
+32:52 diffusion process. So interesting and um
+32:55 this this was a a huge breakthrough. So,
+32:58 you know, we're talking about on our
+32:59 leaderboard just a massive step change,
+33:02 particularly in small molecule protein
+33:05 um uh interaction accuracy. It was a
+33:08 massive step change and something that
+33:10 really unblocked the rest of the
+33:11 project. Wow. Um so, data, compute, and
+33:15 algorithms, we know those three are
+33:17 important in all other adjacent fields.
+33:20 Um but I was surprised to read an
+33:22 interview with Demis where he shared
+33:23 that we're not data constrained in
+33:25 biology. Um can you share your point of
+33:28 view on that? You know I think it
+33:30 doesn't matter what field of machine
+33:31 learning you're in you're going to feel
+33:33 some data
+33:34 constraints and I think the point here
+33:36 from Demis is that it's it's not a real
+33:41 bottleneck as in we can make progress
+33:43 with the data that is out there that the
+33:45 data we can generate and real progress
+33:48 can be made. Um it's not, you know, oh,
+33:52 we've got to sit and wait 50 years for
+33:54 like the world to generate data before
+33:56 we can actually make impact here. No,
+33:58 we're not seeing that at all. There are
+33:60 modeling spaces that um where the data
+34:03 has been sitting around for years. Yeah.
+34:06 That we that we can see that we can
+34:08 make, you know, really substantial
+34:10 progress beyond anything that people
+34:11 have experienced before. Yeah. Now, does
+34:14 that mean there's no opportunity for
+34:16 data in biology? Absolutely not. like
+34:18 this it's going to be a fundamental part
+34:20 of of how we um you know how we continue
+34:23 to develop these these models and these
+34:25 systems will be what data we go out and
+34:28 generate um and there I think there's
+34:31 there's just a massive opportunity in my
+34:34 mind
+34:35 um the data you know the data for
+34:39 machine learning in biology hasn't
+34:41 actually been created yet yes there's a
+34:43 lot of historical data but there's a
+34:45 huge but that historical data hasn't
+34:46 been created for the purposes of machine
+34:48 learning. And so when you're going out
+34:50 and thinking how do I create data to
+34:52 actually train my model, you're thinking
+34:54 in a very different way to how people
+34:56 have gone out and generated data in the
+34:57 past. And that there's a big opportunity
+34:59 there to explore. What kind of data do
+35:02 you think we're missing here right now?
+35:04 And do we think do you think that we
+35:06 need anything in synthetic data? Yes. So
+35:11 um I'm a massive fan of synthetic data.
+35:14 Actually, I have been for since the very
+35:16 beginning of my career where, you know,
+35:18 we were I I was generating synthetic
+35:21 text data just to overcome the fact
+35:23 that, you know, I was a PhD student with
+35:26 access to a couple of thousand images
+35:27 and Google had millions and millions of
+35:29 images and so instead I just generated
+35:32 tons and tons of synthetic data and and
+35:34 that unblocked things. And you know,
+35:36 we're seeing the same thing in the
+35:38 especially the chemistry space. Yeah.
+35:40 Where we have good theory. We we
+35:43 actually you know know a lot about
+35:44 physics. We know um you know we we have
+35:48 the theory of of quantum chemistry and
+35:50 quantum mechanics and we can create
+35:52 simulators out of that. Uh we can
+35:54 approximate that and create more
+35:55 scalable molecular dynamic simulations.
+35:58 The this gives the basis for you know a
+36:00 whole host of synthetic data. Then we
+36:02 have the models themselves that you know
+36:05 especially we have generative models.
+36:07 this can actually generate data that you
+36:09 know we can use scoring systems to help
+36:12 um uh you know really enhance the
+36:14 information content of this data. Yeah.
+36:17 But I think one of the the big open
+36:19 spaces will be on um what's called
+36:21 invivo data. So data that you would
+36:25 normally measure on a on a real animal
+36:27 something like a mouse or a rat. We you
+36:29 know that you there's some historical
+36:31 data on that but you can't generate tons
+36:34 of you can't really generate any at all.
+36:36 Yeah. Right. So then there's a big
+36:38 opportunity to look to new data
+36:40 generating technologies. There are some
+36:42 incredible people doing things like
+36:44 organoids on a chip. Um so ways of
+36:48 starting to measure things that you
+36:51 would normally measure on a on a real
+36:53 animal but you know completely um on a
+36:56 on a chip. So you know I think so
+36:58 interesting. Yeah. There's going to be a
+36:60 whole host of like new breakthroughs in
+37:02 data generating technology in biology
+37:04 and chemistry. that's that's going to,
+37:06 you know, have big impact on how we
+37:08 think about modeling that world as well.
+37:10 Are you working on any of that
+37:11 internally or are you hoping that other
+37:13 players uh fill in some of that gap? So,
+37:18 in internally, we we actually don't have
+37:19 any of our own labs um in isomeorphics.
+37:22 Yeah. Yeah. In isomeorphic labs, but we
+37:24 um we work with a whole bunch of other
+37:27 companies. Yeah. Um you know, we we we
+37:30 generate a lot of data ourselves, a lot
+37:32 of proprietary data. Um we've seen
+37:34 amazing impact of that. It makes a lot
+37:35 of sense. Um so there's a point of view
+37:38 that modeling structure of molecules and
+37:41 modeling their function and the
+37:42 modulation of function is very important
+37:45 but not necessarily always the limiting
+37:47 factor in drug development. What's your
+37:50 point of view on that? Yeah, as I
+37:52 touched upon before, drug design is
+37:55 really, really complex. And as before,
+37:56 you even get to drug development, which
+37:59 is where you take those designs and you
+38:01 start putting them into real people,
+38:03 clinical trials.
+38:05 There are so many bottlenecks throughout
+38:06 this whole design and development space.
+38:10 Um, drug development is, you know, how
+38:14 do how do we start to approach clinical
+38:17 trials? How should we test these drugs
+38:19 out in people? How can we do this in a
+38:21 really timely manner but still a really
+38:23 safe manner? Um there's a lot of
+38:26 bottlenecks there that I think the
+38:28 industry as a whole. We will need to
+38:30 work out how to innovate in that space
+38:33 especially as our predictive models of
+38:37 how these molecules will interact with
+38:39 people, how toxic they will be. As these
+38:42 predictive models get better and better,
+38:44 we will have to change the way that we
+38:47 approach clinical trials to really make
+38:48 use of that. Yeah. ultimately to get you
+38:50 know therapeutics into the hands of
+38:52 patients who really desperately need
+38:54 them. Yeah. You know even in even in the
+38:56 design um of of molecules themselves as
+38:60 we talked about before it's not just
+39:02 understanding the structure of these
+39:04 molecules. It's not even just
+39:06 understanding
+39:07 how these molecules change the function
+39:10 of these proteins. But we need to
+39:11 understand how these molecules change
+39:13 the function of pretty much every single
+39:15 protein in our body. Right? Because if
+39:17 we take this as a pill, it's going to go
+39:20 everywhere. And that's the major to
+39:22 major cause of toxicity is when yes, you
+39:27 you've designed this amazing molecule
+39:28 that like perfectly modulates your
+39:30 specific target that you know is key to
+39:32 your disease, but also affects other
+39:34 things, but it also affects other
+39:35 things. Um, now of course you do a lot
+39:38 of screening to protect against that,
+39:39 but um the more we can predict that the
+39:43 better. What's really exciting from my
+39:45 perspective is if we're creating these
+39:47 general models that understand how this
+39:49 molecule interacts with this target but
+39:52 also any other target then why can't we
+39:54 just use that same model to understand
+39:56 how these molecules interact with the
+39:58 rest of our body right so interesting so
+40:01 what is now possible with Alphold 3 for
+40:04 drug designers how are you using it
+40:06 internally so Alphafold 3 gives our drug
+40:10 designers the ability to understand how
+40:14 their molecule designs really interact
+40:16 with this protein target and this is the
+40:19 target of disease. And so our drug
+40:21 designers can make changes to the design
+40:24 and then see
+40:26 instantly how that changes the way that
+40:28 this molecule physically interacts with
+40:30 the protein target. And that's really
+40:32 really powerful. Before Alphold 3, you
+40:37 would be completely blind to this. You
+40:39 wouldn't actually probably know how your
+40:40 molecule is interacting with your
+40:41 protein. you'd be using your best
+40:44 intuition. Maybe somewhere down the line
+40:46 in the in the drug design project, you
+40:48 would get uh your structure crystallized
+40:51 with a particular design. That means
+40:53 going out to a real lab six months
+40:55 later, if you're lucky, getting a
+40:58 resolved 3D structure, but even then,
+41:00 that's just the 3D structure of a single
+41:02 design, not every single change that you
+41:05 make. Yeah. So, Alpha 3 completely
+41:07 changes the way chemists can do this
+41:10 design work. But I would stress that's
+41:12 that that's that's nowhere near as far
+41:14 as we want to go because it's not just
+41:16 about what these molecules look like in
+41:19 terms of interacting. We actually want
+41:20 to know how strongly these molecules
+41:22 interact with this protein. Yeah, we
+41:25 want to know other properties of these
+41:28 molecules. We want to understand how the
+41:31 way that these molecules interact with
+41:32 this protein and how that changes the
+41:34 fold or the confirmation of the protein,
+41:36 how that changes the function of the
+41:38 protein, how it might actually change
+41:39 the dynamics of the cell. There are so
+41:42 many questions and these are these other
+41:44 alpha fold like breakthroughs that we're
+41:46 working on um that also go you know we
+41:50 have created incredible models for that
+41:52 our chemists are using in this design
+41:54 process. Interesting. So you're
+41:56 designing some drugs internally. what
+41:58 targets and programs are you focused on?
+42:01 So, we have a really exciting uh
+42:03 internal program of of drug design
+42:06 projects. These are focused on
+42:08 immunology and oncology. Uh we've been
+42:10 making some incredible progress there
+42:12 and it's been really exciting to see
+42:13 especially how these models have
+42:15 transformed the way that we're actually
+42:16 approaching drug design on these these
+42:18 programs. You're also working with um
+42:21 Eli Liy and Novartis and recently you
+42:24 announced an expansion with Novartis'
+42:27 partnership. Can you share a little bit
+42:28 about what these partnerships look like?
+42:31 Yes, so we we signed these initial
+42:34 partnerships um two partnerships, one
+42:36 with Eli Liy, one with Novartis that
+42:38 that was fantastic. They brought some
+42:40 really really challenging problems to
+42:42 us. I think it's no secret that um you
+42:45 know the sort of targets
+42:48 um that for example Novatist brought to
+42:50 us these are these are sort of targets
+42:52 that you know the field and Novatist for
+42:55 example have been working on for you
+42:57 know 10 years plus. Wow. Um so these
+43:00 aren't sort of oh we we'll try things
+43:03 out problems. These are for real you
+43:05 know hard things.
+43:08 Um, last year was an amazing year both
+43:11 both for our internal projects but also
+43:13 for these partner projects to really see
+43:16 how well these models are working. It's
+43:18 allowed us to really you know uncover
+43:21 new chemical matter. Um, working out new
+43:24 ways to modulate these these targets
+43:26 that people have worked on for a long
+43:27 time. Um, you know, it's been amazing to
+43:30 see uh this new deal which has expanded
+43:34 on the artist collaboration which I
+43:35 think is a real testament to um some of
+43:37 the success of the early days of these
+43:39 partnerships. Congratulations. I think
+43:41 it's an incredible milestone especially
+43:43 just one year in. Yeah. So I'd love to
+43:45 talk a little bit about the team. Um,
+43:46 you've built a truly excellent team
+43:48 composed of the highest caliber talent
+43:50 across many different fields, AI,
+43:53 chemistry, biology, and you've also
+43:55 brought in outsiders into the field to
+43:58 help question traditional thinking. Can
+44:00 you share a little bit about how you
+44:01 thought about this? Yeah,
+44:04 so the space of AI for drug
+44:07 design hasn't really existed for very
+44:10 long. Um, so the chances of finding a
+44:15 world expert at drug design who's also a
+44:18 world expert and machine learning or
+44:20 deep learning is basically zero. Zero.
+44:23 Yeah. Just because these fields these
+44:25 fields haven't coexisted
+44:27 um for long enough. I I genuinely think
+44:30 about a new
+44:31 um sort of field of science that ISO is
+44:35 breeding because we are you know we have
+44:36 these people who really live and breathe
+44:38 the intersection of this. Yeah. Um so
+44:41 you know because but because we can't
+44:43 hire these people you know I really
+44:46 think about how do we bring the world
+44:48 experts at drug design and medicinal
+44:50 chemistry and the world experts at
+44:53 machine learning and deep learning and
+44:56 get these incredible people sitting side
+44:58 by side
+44:60 um because it's not just enough to have
+45:02 these amazing people sitting in their
+45:04 isolated teams. Yeah. We need people
+45:07 sitting side by side speaking each
+45:09 other's languages. Yeah. With a lot of
+45:11 empathy, a lot of curiosity,
+45:15 uh curiosity to understand this new
+45:17 science to really build intuitions in
+45:20 your own language. And we've seen just
+45:23 such amazing things come out of this
+45:25 dynamic where you you really have, you
+45:28 know, a generalist machine learner who
+45:31 doesn't know anything about chemistry or
+45:33 biology. Yeah. start to come in and
+45:35 understand the problems of a medicinal
+45:38 chemist and a drug
+45:40 designer. And um when I think about even
+45:43 hiring machine learners and machine
+45:45 learning scientists and engineers for
+45:47 the research that we're
+45:49 doing, I'd say you know 60 70 80% of the
+45:53 people on our team have no prior
+45:56 knowledge of chemistry or biology. Maybe
+45:58 you know high school or uh university
+46:01 level. And um that can actually be a
+46:03 real asset. Yeah. Because you come in
+46:07 sort of a little bit naive. Yeah. And as
+46:09 long as you're curious, I think one of
+46:11 the key things is asking, you know, the
+46:14 curious questions, asking this like
+46:16 stupid questions and then and then that
+46:18 allows us to come at the problems from
+46:20 first principles. Yeah. It almost allows
+46:22 us to break through the the the the
+46:24 dogma of um you know previous experience
+46:29 and how people traditionally approach
+46:31 these problems. We can think ground up
+46:33 from scratch. Um and that's a lot of the
+46:36 mentality of how we think about creating
+46:38 these research breakthroughs. A little
+46:40 naive and highly curious and high agency
+46:42 is a very good thing. Yes. Exactly.
+46:44 Exactly. So in November last year, you
+46:46 also made a very big move in launching
+46:48 the Alphafold server um which releases
+46:51 code and model weights for academic use.
+46:54 Can you share a little bit about why?
+46:56 Yes. So I mean AlphaFold has a long long
+46:58 lineage of um being open for this you
+47:01 know academic and scientific use and uh
+47:05 it was it was really important with this
+47:08 latest breakthrough of Alphaold 3 that
+47:10 we make sure that this scientific
+47:13 community has access to this
+47:15 functionality because you know yes
+47:17 Alphaold 3 is going to be incredibly
+47:19 useful for drug design. already is but
+47:22 it's also useful for you know many other
+47:25 areas of fundamental biology and just
+47:27 understanding biology and people are
+47:29 using these you people are using our 43
+47:32 server and model it in very very
+47:34 creative ways um so you know it's very
+47:37 important for us to make sure that there
+47:38 is that sort of free use for
+47:41 non-commercial academic work um and it's
+47:44 been incredible to see the the the the
+47:46 take up of that and the use of the
+47:48 server I'd love to talk a little bit
+47:50 about future. Can you give us a tease of
+47:52 what else is to come with AlphaFold? You
+47:55 know, in in terms of, you know,
+47:57 structure prediction as a problem. Uh I,
+48:00 you know, in in my mind, I I want to
+48:03 completely solve this. Uh I think Alfold
+48:05 3 is a fantastic step on the way of that
+48:08 this significant breakthrough. Um but
+48:11 you know that it's not 100% accuracy.
+48:14 Yeah. Um what does even 100% accuracy
+48:16 mean in this space?
+48:19 Like with a lot of areas of science as
+48:21 as you start to push the boundaries you
+48:24 you you see that the problem opens up
+48:26 into even more problems. That's that you
+48:28 know that that's the addictive part of
+48:30 doing science right um and I think that
+48:32 you know Alpha 3 is a good example of
+48:35 that where as you start to get these
+48:37 capabilities you see that actually there
+48:40 even more deeper problems that we want
+48:42 to be working on. um and and stepping
+48:44 towards. So yes, understanding structure
+48:47 better and better and more accurately is
+48:48 is is always going to be interesting for
+48:50 us, but then it's also, you know, not
+48:52 just necessarily about static structure.
+48:54 So Alpha 3, it models these crystal
+48:56 structures um which almost static
+48:59 crystallized versions of these these
+49:01 these molecules, how these molecules
+49:03 interact. But in reality, we don't have
+49:06 crystals inside of us. We you know,
+49:08 these molecules are in solution. They're
+49:09 moving about. They're dynamic. So you
+49:11 can think, okay, well maybe
+49:13 understanding the
+49:14 dynamics of of these systems is actually
+49:16 also going to be really interesting.
+49:18 Yeah. So yeah, what does a GPD3 moment
+49:20 look like in AI biology and when do we
+49:23 get there? So if I think about
+49:27 GPT3, this is really a generative model.
+49:30 So something that's generating text and
+49:34 the GPT3 moment for me was was you know
+49:37 crossing over that boundary between yeah
+49:41 we've got generative models of text and
+49:43 they generate some stuff and it looks
+49:45 like text but I'm not convinced that
+49:47 it's generated by by a human. Yeah. And
+49:50 GPT3 started to be that first point
+49:52 where you're like oh this is like
+49:55 this kind of looks like a human. And so
+49:57 your this generative model is actually
+50:00 recreating the distribution of data that
+50:03 it's trained on. And what is a
+50:05 generative model? Generative model is
+50:06 something that fits the manifold of data
+50:09 that is trained on it. So when I think
+50:12 about this applied to biology,
+50:15 um you can think about these generative
+50:17 models actually starting to recreate at
+50:21 that GPT3 moment, recreate what things
+50:24 would actually look like in reality.
+50:27 And that's quite exciting
+50:29 because that means that these models are
+50:31 spitting out things that either they
+50:33 actually exist in the world. Yeah. And
+50:36 we can kind of validate that or maybe
+50:38 even discover new things that exist in
+50:39 the world or they could exist in the
+50:43 world. Yeah. Which means that they could
+50:44 be things that we could design or
+50:46 manufacture or create that would
+50:48 actually be stable and work and exist in
+50:50 our physical reality. Yeah. And I think
+50:53 the the cool thing about um this in
+50:55 biology is that unlike with language
+50:58 where with language when it generates
+51:02 something at human level quality we can
+51:03 understand that because it is human
+51:06 derived. But a lot of problems in
+51:08 chemistry and biology we even struggle
+51:10 to understand ourselves. And so when we
+51:12 get to that GPT3 moment I think it will
+51:15 look a lot less like GPT3 but much more
+51:17 feel a lot more like move 37 in AlphaGo.
+51:20 M interesting where we're starting to
+51:22 see things that are beyond human
+51:24 understanding but that do exist in the
+51:27 real world that exist in our physical
+51:29 reality
+51:30 um but are beyond sort of human
+51:33 comprehension right and that's just
+51:34 going to be mind-blowing. In fact, you
+51:37 know, we're starting to see that
+51:38 internally with our generative models
+51:41 that we're creating designs that a human
+51:44 drug designer would
+51:46 say, I'm not so sure about that. I much
+51:49 prefer this. And then you test it out in
+51:52 physical reality and the generative
+51:54 model is correct and the human is wrong.
+51:56 That's fascinating. I love the move 37
+51:58 analogy when the model starts to see
+52:00 elements of creativity and and past the
+52:03 human. Exly. Move 37 was this um amazing
+52:05 move during the Alph Go games against
+52:08 Lisa Doll. Uh it was, you know, the 37th
+52:11 move of the game and it stunned the
+52:13 world. Stunned the Go world because it
+52:15 was uninterpretable by a human. Yeah. It
+52:17 looked like a mistake. No one had ever
+52:19 played this move in the entirety of, you
+52:21 know, thousands of years of human
+52:22 history playing Go. And it turned out as
+52:25 you unrolled the game that this was the
+52:27 critical move that allowed AlphaGo to
+52:29 beat Lisa Dol in that match. Yeah. And
+52:31 we're going to see so much of that sort
+52:32 of behavior coming out of these models,
+52:35 especially when we're applying them to
+52:37 things outside of of native human
+52:39 understanding like chemistry and
+52:41 biology. Yeah, I love that. Also our
+52:43 punch line today.
+52:46 So when will we see our first AI
+52:47 generated drug in clinic and also in
+52:50 phase one, two and three trials? So
+52:52 we're making amazing progress um on on
+52:56 our drug design programs. And you know
+52:58 the thing I think about actually
+53:01 is as we start to get a whole bunch of
+53:05 these um uh AI designed assets, these
+53:09 molecules get into clinical phase, how
+53:13 can we actually start to think about
+53:14 engaging in that clinical development um
+53:17 to you know get these molecules to
+53:19 people you know as as as as fast as and
+53:22 as safely as possible because there's so
+53:25 much unmet medical
+53:26 need. Um, so yeah, here I think about,
+53:31 you know, what are going to be new ways
+53:34 to engage with regulatory bodies? What
+53:36 are going to be new ways to incorporate
+53:38 our predictive models for not only how
+53:40 this molecule works for the disease, but
+53:42 how, as we talked about, how it
+53:44 interacts with the rest of the body, you
+53:46 know, the types of toxicity it may
+53:48 induce. I think there'll be a lot of
+53:50 opportunities to think about just uh
+53:53 streamlining and speeding up this
+53:55 process. Yeah. Maybe even completely
+53:57 changing the way we think about human
+53:59 clinical trials as we you know our AI
+54:02 models become so we can design these
+54:04 molecules so much quicker in a much more
+54:07 targeted manner with so much more
+54:09 knowledge about how they work. Yeah. So
+54:11 that that will change the game. But I
+54:13 think we've got a long way to go as an
+54:14 industry to really work out how that
+54:16 changes. Yeah. Last question. As
+54:18 isomorphic succeeds and potentially as a
+54:21 whole field succeeds, what happens to
+54:23 the traditional world of pharma? I think
+54:25 they become, you know, in some sense
+54:28 pharma will be using AI. I think I think
+54:31 there's there's no world where in five
+54:33 years time uh you will be designing a
+54:35 drug without AI. Yeah. Like that is an
+54:38 inevitability.
+54:39 It'll be like um you know trying to do
+54:43 science without using maths. AI will be
+54:45 this fundamental tool for biology and
+54:47 chemistry. It already is. Yeah. At least
+54:50 in in isomorphics world um that everyone
+54:54 will be using. So it's not going to be
+54:57 oh is it farmer or is it AI that it's
+54:60 going to be one and the same in the
+55:01 sense that the whole industry will will
+55:02 adapt to that. Yeah. Amazing. Max, thank
+55:05 you so much for joining us today. This
+55:06 was a fascinating conversation. Yeah,
+55:08 it's been a pleasure. Thank you.

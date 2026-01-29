@@ -1,0 +1,1237 @@
+00:00 majority of the work that we do today is
+00:02 not going to be done by us anymore in 5
+00:05 years from now and that applies to me
+00:07 that applies to you like you know we
+00:08 both do very different things but still
+00:10 like I think you know we are knowledge
+00:12 workers um and I think a lot of our work
+00:15 is actually going to be done by these
+00:17 amazing AI assistants that are actually
+00:19 in many ways you know more powerful than
+00:21 us like you know the they they have
+00:23 access to all of our company data our
+00:26 knowledge they have all the context from
+00:28 all the past conversations and meetings
+00:30 they don't forget anything um and they
+00:32 can really sort of um and they have the
+00:35 you know on top of that you know they
+00:36 have the reasoning capabilities you know
+00:37 that allow them to be super helpful to
+00:39 you in like any task that you do so
+00:41 that's sort of you know our core belief
+00:43 like you know that majority of our work
+00:44 is actually going to be done by these AI
+00:46 companions or assistants and we want
+00:48 gleen to be you know that you know that
+00:50 that assistant you know in the workplace
+01:09 joining us today is Arvin Jane
+01:10 co-founder and CEO of gleen earlier in
+01:13 his career Arvin was instrumental in
+01:15 building Google search and co-founder
+01:17 and CTO of rubric gleen began life as an
+01:20 Enterprise search company and today has
+01:22 evolved into a general purpose work
+01:24 assistant bringing AI into an Enterprise
+01:27 context is notoriously difficult because
+01:29 with the Integrations the missions the
+01:31 ranking the parsing all the other magic
+01:33 that needs to happen to make AI work on
+01:35 your company data Arvin joins us today
+01:38 to share how gleen is solving this
+01:40 problem where other companies have
+01:41 failed and what he's learned as one of
+01:43 the first successful AI native
+01:45 application
+01:47 companies Arvin thank you so much for
+01:49 joining us uh we have a lot of questions
+01:51 about Rag and agents and knowledge
+01:53 graphs and all of that but before we do
+01:55 that uh can you give us one or two
+01:57 minutes on what what is glean and what
+01:59 are you building yeah us first of all
+02:01 thank you for having me glean think of
+02:03 it as the Google or chat GPD but inside
+02:07 your Enterprise it's a place where your
+02:09 employees go and ask questions and glean
+02:12 answers all of those questions using
+02:15 your company knowledge regardless of
+02:17 where that knowledge is brings it all
+02:19 back to you uh so that's what gleen does
+02:21 gleen is also an AI platform so if you
+02:24 want to actually build you know AI
+02:26 applications inside your company you can
+02:28 use the gleen rack platform to build
+02:31 those applications quickly wonderful and
+02:33 since you make make the analogy of a
+02:35 Google for work Google for work I think
+02:38 is something that every CIO has
+02:40 described as their Holy Grail and we
+02:41 have two decades of failed attempts at
+02:44 building it uh you are actually a star
+02:46 search engineer at Google uh before and
+02:50 even Google never managed to crack this
+02:52 category before maybe can you just say a
+02:54 word on why is this such a hard problem
+02:57 and how did you do it well I mean search
+02:59 is hard because it's actually magic in
+03:02 some sense like you can come and ask any
+03:04 question that you have and you expect
+03:06 the system to actually give you back the
+03:08 right answer so expectations are always
+03:10 high and and it's a it's a difficult
+03:13 problem like especially in the
+03:14 Enterprises because you know there's so
+03:16 much information inside the Enterprises
+03:19 spread across so many different systems
+03:21 it's both hard to actually even get hold
+03:23 of that information but then even harder
+03:25 to actually make sense of what
+03:27 information is actually good what has
+03:29 become out of date
+03:30 so so you know there there is like you
+03:33 know lots and lots of challenges around
+03:35 like you know building that you know
+03:36 system and and in the past like you know
+03:39 I would say I would say that like you
+03:41 know there were no good attempts made um
+03:44 because you know the problem was so like
+03:46 was so hard it requires so much R&amp;D so
+03:48 much investment like you know it was not
+03:50 really startup friendly in in many ways
+03:53 um and and you also like couldn't even
+03:55 you know in the pre- SAS world you
+03:56 couldn't even build a product because
+03:58 you know just getting connect connecting
+04:00 with all of your Enterprise data meant
+04:02 that you to spend like an year sitting
+04:04 with an Enterprise trying to actually
+04:05 bring the data into your search system
+04:08 and then actually you know solve the
+04:10 real problem which is like you know make
+04:11 make that information searchable Arvin
+04:13 one of the things that I think is so
+04:15 interesting about glean is you are
+04:17 probably one of the first and best
+04:19 examples of what an Enterprise AI
+04:22 application company can or should look
+04:24 like and and we're going to focus most
+04:26 of this conversation on the AI aspects
+04:29 of glean however ever I know there are a
+04:31 lot of layers to your stack you've got
+04:32 the infrastructure you've got the
+04:33 connectors you've got the governance
+04:35 engine you've got the knowledge graph
+04:37 can you say a couple words about all the
+04:38 stuff you had to build before you even
+04:40 got to the AI part to make the AI work
+04:42 absolutely so as you said like you know
+04:45 search starts first with the data and
+04:48 the knowledge that you need to actually
+04:49 make searchable so the first part of the
+04:52 clean text stack is these deep
+04:54 Integrations that we've built with most
+04:57 common Enterprise systems so think of
+04:59 systems like Salesforce or Confluence
+05:02 jira Google Drive SharePoint service now
+05:06 like your Enterprise data typically
+05:08 lives in all of these different systems
+05:09 and you to bring it all together in one
+05:11 place um so that's that's the first part
+05:13 of our technology stack is these
+05:16 Integrations but then if you think about
+05:18 like Enterprise data and this is one of
+05:20 the most unique things about Enterprise
+05:22 search versus um versus if you think
+05:25 about Google search on the web is most
+05:27 of your Enterprise information is
+05:28 actually private in nature when you
+05:30 author a document in Google Drive you
+05:33 know like it this document may actually
+05:34 be private to you or you may share it
+05:36 with a few other people and so you can't
+05:38 build a search engine which you know
+05:40 where you just dump all the all the
+05:41 company knowledge and make it accessible
+05:43 to everyone you have to actually
+05:44 understand permissions um of each
+05:46 content so when you go and search the
+05:49 system should understand who you are and
+05:51 only retrieve information that you
+05:53 actually have access to so that's our
+05:54 governance layer understanding
+05:56 governance across all of these hundreds
+05:58 of different systems which is quite comp
+06:00 complicated um and then the third part
+06:02 and this is where really most products
+06:04 have failed in the past is search is not
+06:07 about um just putting like a whole bunch
+06:10 of documents in an index and and then
+06:14 like you know when somebody comes and
+06:15 ask a question take those words or take
+06:17 that question and just match it up
+06:19 semantically or with keywords you know
+06:21 with the right content you got to
+06:23 actually also understand who's the
+06:24 person who's asking a question um you
+06:26 know I can come in and ask for um an
+06:30 onboarding guide because I'm new as I'm
+06:32 a new employee but then which onboarding
+06:35 guide should be actually you know given
+06:37 to me like it depends on like you know
+06:38 whether I'm in the marketing team or I'm
+06:40 in the engineering team so so of
+06:42 understanding people and understanding
+06:44 knowledge and relationships between them
+06:46 you know that's a big part of actually
+06:48 making you know search or a question
+06:50 answering service work inside an
+06:51 Enterprise so we we do that so we
+06:53 actually build a deep knowledge craft
+06:55 you know where we uh look at all the
+06:57 employees understand what roles do they
+06:58 play in the company look at all the
+07:00 documents and then we sort of try to
+07:02 understand what documents are meant for
+07:03 what departments what documents actually
+07:05 are popular um you know is there like
+07:08 you know relation like what are the
+07:09 relationships between you know you know
+07:11 a particular individual and a particular
+07:13 document and and that is what we used as
+07:15 a core Foundation that sort of then
+07:18 governs like when somebody comes and
+07:19 asks a question what are the most
+07:21 relevant pieces of knowledge for them so
+07:22 we had to do all of that work um and
+07:24 actually like interestingly you
+07:26 mentioned like what came you know before
+07:28 AI even became relevant you know for us
+07:31 the AI was actually part of the core
+07:33 search technology from day one um we
+07:36 were actually working with llms in 2019
+07:39 um or I mean at least language models
+07:41 like you know these were you know
+07:42 bird-based language models that you
+07:45 could use and so when glean mlms that's
+07:48 right is that is that the name for them
+07:50 now but yeah you know in in in the in
+07:52 the search like you know engineering
+07:54 sort of uh like Community like you know
+07:57 we just called them language models at
+07:59 the time and so the language models were
+08:01 actually part of uh the core search
+08:03 experience you know from day one because
+08:05 like it really allowed us to understand
+08:08 content content at a semantic you know
+08:10 level so that we sort of already baked
+08:12 in like in our course search experience
+08:14 on day one when we were actually trying
+08:15 to look at a you know question from a
+08:16 user um we were never sort of limited by
+08:20 the actual exact keywords that you know
+08:22 users used we we were able to actually
+08:24 understand the meaning behind the
+08:25 question and actually match it up with
+08:26 the right documents but but still like
+08:28 you know that's sort of like you know
+08:29 all the work that you have to do before
+08:31 like you know you can actually even you
+08:33 know do anything with llms can you say a
+08:35 word about rankings like I think part of
+08:37 the what makes Google works so well is
+08:39 like you know I always get the answer I
+08:40 want at the top top of the page uh you
+08:43 know in the case of the public internet
+08:44 you have so much web data and uh links
+08:48 and and all that to to make the rankings
+08:50 really work um how much to what extent
+08:53 is that part of the magic for glean and
+08:54 and how do you guys do it yeah so that's
+08:56 of course the core of the product is all
+08:59 the effort that we put in to actually
+09:01 build a really good ranking system for
+09:04 our search um the I'll give you some
+09:07 examples of like you know the kind of
+09:08 things that go into determining what
+09:11 what documents are the best ones to rank
+09:13 for a given question so of course if you
+09:16 imagine that there's a document that you
+09:18 know people in the company are
+09:19 constantly looking at so that you know
+09:22 that gives you obviously a signal that
+09:23 there must be something about it like
+09:24 you know it's actually important people
+09:26 like to spend time on it um if there's
+09:30 if there's a document that was actually
+09:31 written in the last you know one or two
+09:34 weeks and there's some engagement around
+09:36 it um you know that you know this again
+09:38 like you know is information that people
+09:40 care about it's not actually become
+09:41 obsolete yet um then if you think about
+09:45 um the um a particular you know document
+09:50 that we see is not popular like you know
+09:53 when you think you know look at a
+09:54 company level but you look at a part you
+09:56 know one individual team inside the
+09:57 company we see there's heavy usage for
+09:59 that doent inside you know inside that
+10:01 particular team so that sort of tells us
+10:03 more about that hey this document may
+10:05 actually be relevant for this particular
+10:07 you know uh you know set of people or
+10:09 the last thing the last example uh
+10:12 imagine that you know somebody had a
+10:14 question and they're not like bothering
+10:16 to a search they go and slack and ask a
+10:18 question and then somebody else posts
+10:21 posts a link to a document as a response
+10:24 to that and the the person who asked the
+10:26 question gave you know gave a thumbs up
+10:28 to it just you know you know imagine
+10:30 this interaction like what it means it
+10:32 actually means that that particular
+10:34 particular document was actually a
+10:36 really good answer for that question
+10:38 that the user had asked and so if you
+10:40 keep that Association in mind like it's
+10:42 going to help you later when somebody
+10:44 else came and asked a similar question
+10:45 so those are some of the signals you
+10:47 have to sort of constantly look for um
+10:49 all these signals you know they have to
+10:51 collect them differently in the you know
+10:53 in the Enterprise setting then you know
+10:55 on on the web like you know Google only
+10:57 has to look at all the activity that's
+10:58 happening right on Google itself because
+11:01 that's the gateway to like you know any
+11:03 sort of knowledge Quest but if you look
+11:05 at in the Enterprise you know not all
+11:07 the things are happening you know
+11:08 through the search Paradigm so you have
+11:10 to sort of go and look at all the
+11:11 activity around all the knowledge in
+11:14 different systems like you know your
+11:15 communication systems your document
+11:17 systems and just try to learn from that
+11:19 human behavior because ultimately that's
+11:21 how you learn you you learn from what
+11:23 people are doing inside the company the
+11:25 more you the more you can actually
+11:26 collect you know that information the
+11:28 better your ranking systems are going to
+11:30 be can we spend a minute on rag as as
+11:33 Pat mentioned you were kind of in the
+11:35 right place at the right time you had
+11:36 put together all the hard stuff uh so
+11:39 that when you know when the llms got
+11:41 really good uh you kind of had all the
+11:44 infrastructure in place um and I think
+11:46 you've been one of the experts in you
+11:48 know using rag to make these llms
+11:51 actually useful on your corporate
+11:53 content um can you can you explain rag
+11:56 to me like I'm 5 years old and like what
+11:58 what are the secrets to making at work
+11:60 what are the things that people don't
+12:01 talk about you know what are examples of
+12:03 things that you can do thanks to rag
+12:05 that you can't in a generic chat
+12:06 interface yeah well so first of all I
+12:09 think uh since you were talking about a
+12:11 5-year-old let's let let's first talk
+12:13 about what R 10y old 10y old so yeah no
+12:16 let's keep it five I need five let's
+12:17 start with five let's start with five
+12:19 yeah so so I mean like if you think
+12:21 about all these amazing models you know
+12:24 GPT and Gemini and Claude they're all
+12:27 these models are all trained on the
+12:29 world public knowledge and data and so
+12:32 if you were to actually go in chat gbd
+12:34 and ask a question like hey how many
+12:36 days do I get off you know you know with
+12:38 my PTO policy it has no idea like it
+12:41 can't answer that question because you
+12:43 know that's my company's private
+12:45 knowledge you know the answer is
+12:46 somewhere there and the model is not
+12:48 trained on it so how do you bring your
+12:51 private Enterprise
+12:53 data um you know to you know to these
+12:56 models so that you can actually have ai
+12:58 create that magic for you you um that's
+13:01 that's that's that's that's you know
+13:03 that's what you a rag based you know AI
+13:05 application architecture allows you to
+13:07 do so the way it works is that you know
+13:09 you come and ask a question and you have
+13:11 a search engine or a retrieval engine
+13:13 whatever you want to call it um and
+13:16 given the question this retrieval engine
+13:19 you know finds you know potentially
+13:21 relevant you know documents you know
+13:23 that could actually answer your question
+13:25 and then you're going to take those
+13:27 documents or those sort of content
+13:28 fragments
+13:30 and and make the model work on it you'll
+13:32 tell the model like GPD that hey I have
+13:34 this question and I have this company
+13:36 knowledge that I think is relevant you
+13:38 know in terms of answering that question
+13:39 now you answer that question using this
+13:41 knowledge so this is this is how like
+13:44 most AI applications today are being
+13:46 built in the Enterprise the only way to
+13:49 actually connect um you know your
+13:52 private Enterprise data to to the power
+13:55 of these language models is basically a
+13:57 search engine that's sort of sitting in
+13:59 sitting sitting you know you know in the
+14:02 middle um so so we like you our given
+14:06 you know that you know at gleen also
+14:07 like you know we of course built a
+14:09 search engine over all of your
+14:10 Enterprise content um you know in the
+14:12 last you know 5 years it actually
+14:14 allowed us to actually be you know so
+14:17 become like you know one of the best you
+14:18 know rag uh systems you know that allows
+14:21 you to now not only like of course you
+14:23 know we deliver our own end user
+14:25 application which is a glean assistant
+14:26 using this rag based application
+14:28 architecture but we're also allowing you
+14:31 know um companies to actually build you
+14:34 know more and more applications using
+14:36 rag um now I think like in terms
+14:40 of while like you know this is the
+14:42 architecture that is sort of you know
+14:44 emerging as the canonical architecture
+14:46 for building AI applications I think it
+14:48 is still like you know full of
+14:49 challenges it's actually really hard to
+14:51 build great application AI applications
+14:54 using rag because one of the things you
+14:56 know like you know that how models
+14:58 themselves are sort of while very
+14:59 powerful um they're also still an
+15:01 emerging technology right models
+15:03 hallucinate you know they make things up
+15:05 and what you're doing now is you're
+15:07 actually you know adding one more
+15:09 complex layer of Technology you know you
+15:13 know you know in this application
+15:14 architecture s of think of it like
+15:15 you're chaining two things you know
+15:17 which are both not perfect so often
+15:19 times you know you will see a rag based
+15:22 AI application not perform well because
+15:25 you asked a question and the failure
+15:27 actually happens at the racks you know
+15:29 at the return R stage where you didn't
+15:30 even actually you know were able to find
+15:33 the right pieces of knowledge or maybe
+15:36 you found like you know stale
+15:37 information that then you're actually
+15:39 giving to the llm to work on and and
+15:42 then of course is going to give you bad
+15:43 results so so it actually you know you
+15:46 know you know while the while it's the
+15:47 only way to sort of bring knowledge
+15:49 together it you know creates these you
+15:50 know interesting challenges for you as
+15:52 well let me see a question um and just
+15:55 to paraphrase a bit what you were saying
+15:57 at the start of this conversation act
+15:59 one Enterprise search act two
+16:02 application platform for that act one
+16:04 which is Enterprise search how do the
+16:06 concepts of Enterprise search and rag
+16:10 relate is one a superet or a subset of
+16:13 the other are they similar but distinct
+16:15 are they the same thing how does
+16:16 Enterprise search and rag what how do
+16:19 those Concepts relate so I think like
+16:21 you know I think of search and rag as
+16:24 being in some sense you know they're one
+16:26 and the same thing the real core
+16:28 technology is taking all of your all of
+16:32 your knowledge Enterprise knowledge and
+16:35 putting them you know into this you know
+16:38 a search system where now you can
+16:40 actually you know ask questions and the
+16:43 system is able to actually you know give
+16:46 you relevant pieces of information back
+16:48 so that's that's sort of the core
+16:49 technology now you can actually use this
+16:52 technology either as a standalone
+16:54 product so that's what the gleen search
+16:57 product is for example where you know
+16:59 people people come in they ask questions
+17:00 and we can give them the relevant
+17:02 documents you know that potentially are
+17:04 useful to you know to them based on that
+17:06 question or you could actually you know
+17:09 use this as an API layer in your overall
+17:13 AI application so where you know the the
+17:16 search system the search module now is
+17:18 only one component of your overall um
+17:22 you know AI application architecture um
+17:25 and um the so so so I think in that
+17:29 sense you know it's sort of similar but
+17:31 but the industry on the other hand like
+17:32 I think like what we've seen you know
+17:34 like most of these rag based
+17:36 applications in the Enterprise today
+17:39 they actually use a much more simpler
+17:40 version of retrieval system you know in
+17:43 their rag application uh typically like
+17:46 a vector search based system which
+17:48 doesn't really have full Enterprise
+17:50 context um and uh and and so that's that
+17:53 I would say like you know that's the key
+17:54 difference like so for us like you know
+17:56 our approach always has been that like
+17:58 really you you know you know think about
+18:01 like how to build a a a standalone
+18:04 search system you know something that is
+18:05 as good that you can actually put them
+18:07 in front of the users as a standalone
+18:09 product that's really the real test for
+18:12 um like how good the search is and and
+18:15 that then actually when you you know put
+18:17 it behind the scenes in a rag based
+18:18 application uh it's it's actually going
+18:20 to actually create you know better ai ai
+18:22 experiences so is it fair to say that
+18:24 kind of the magic that you've done in
+18:26 terms of getting a good ranking of
+18:27 search results that is L like you've
+18:30 made those that ranking good for people
+18:32 it turns out making that ranking good
+18:34 for people is also what you need to make
+18:35 the ranking good for machines in order
+18:36 to get in order to get the best possible
+18:38 results and that's why like you know
+18:40 what you've built is very different from
+18:41 somebody that's just diying at data
+18:44 Pipeline and and their own little
+18:45 retrieval system yeah yeah that's that's
+18:47 correct I mean I think I think it's
+18:49 really hard to to build these systems
+18:51 you know like yourself and build them in
+18:54 matter of weeks I think um like I I I
+18:57 think like you can build a great AI demo
+18:60 um in you know in in one day maybe like
+19:02 in 2 hours now but but I think like what
+19:05 you know to actually build you know like
+19:06 you know where sort of like you know
+19:07 it's robust it's stable it actually adds
+19:09 value to your you know within your
+19:11 Enterprise you know like you know it's a
+19:12 hard problem so we've talked a little
+19:14 bit about how you've built what you've
+19:16 built and we know that it's working we
+19:18 know that the company is quadrupling
+19:20 year-over-year and we use it here
+19:21 internally and and there are a lot of
+19:23 happy people out there who are customers
+19:24 of yours um the real measure of success
+19:28 in some ways is is how your product is
+19:30 changing the lives of its customers and
+19:33 so I'm I'm curious to hear from from you
+19:35 when you look at your customers and sort
+19:38 of how they operate day-to-day preggle
+19:41 versus post glean what are some of the
+19:44 changes you notice how how does this
+19:45 help people do their jobs so glean is
+19:48 actually um a product that is used quite
+19:51 heavily by people um
+19:55 the like there's there's like you know
+19:57 many many different types of things you
+19:60 know like we're often surprised by what
+20:01 you know what people are using glean for
+20:03 but um I I would give you a few examples
+20:06 so for engineering uh teams you know
+20:09 they find glean super useful like in
+20:11 terms of like troubleshooting whenever
+20:13 you run into any kind of a roadblock um
+20:15 or an issue like sometimes an error like
+20:17 you know your you know programs are not
+20:19 working properly and so glean serves has
+20:22 a really good troubleshooting tool for
+20:23 them like you know it's a place where
+20:25 you go and debug because you know you
+20:27 you post the issue more more often than
+20:29 not you're you're not the first one like
+20:31 who's going to experience an issue like
+20:32 somebody else has experienced those
+20:33 issues before so just getting the
+20:35 context from all of those you know uh
+20:38 like all all the other people and like
+20:39 how they solve that problem before like
+20:41 you know sort of helps you move you know
+20:42 like solve that issue for yourself so
+20:44 that's you know that's that's a that's a
+20:46 big um like you know big um um use case
+20:50 for for
+20:51 engineering um the for um for some roles
+20:55 like for support um you know their their
+20:58 life you know day in day out is about
+21:00 resolving you know answer answering
+21:02 people's questions and and I think the
+21:06 tool like clean actually fundamentally
+21:08 just change you know change you know
+21:09 like how they work now because you know
+21:11 by default now they don't think about
+21:13 like giving a question like trying to go
+21:16 and look for like answers in different
+21:18 knowledge bases and whatnot like you
+21:20 know instead like the first you know
+21:21 reaction you know that they have now is
+21:24 that you know there's a question that's
+21:25 coming in uh from a customer and then
+21:27 glean on the side is actually already
+21:29 answering those questions for them so so
+21:31 there sort of like model of working
+21:34 change you know changes from um trying
+21:36 to find things to actually trying to
+21:38 validate like you know what AI is
+21:40 telling them as is the right answer and
+21:42 then just share that back with users um
+21:46 the some some teams have actually like
+21:48 you know really changed their behavior
+21:49 like salespeople for example um they use
+21:52 glean as a way to prep for meetings so
+21:54 before like customer call is coming up
+21:57 um they will just ask clean like you
+21:58 know they can lazy they can ask gleen
+21:60 like you know help me prep for this
+22:01 meeting and gleen is going to bring
+22:03 bring that you know 360 view of all of
+22:06 the data from that customer like what
+22:07 happened in the last meeting um who's
+22:10 you know like what opportunities you are
+22:11 open you know with them and things like
+22:13 that so sort of really helps them you
+22:15 know prep for a meeting then actually
+22:17 run a meeting well you know cuz you know
+22:19 customers always have lots of questions
+22:21 and so the sales people feel more
+22:23 confident um you know like running that
+22:26 meeting cuz like you know if if somebody
+22:28 throws a curveball them you know they
+22:30 can just like you know like just ask
+22:32 clean like right right in the meeting
+22:33 you know get the answer and quickly sort
+22:34 of you know give those responses back so
+22:37 in fact like you know you know in our
+22:39 company of like you know we don't allow
+22:42 um sales people to actually bring in
+22:43 sales engineers in the call like they
+22:45 have to answer those questions
+22:46 themselves so that's like you know one
+22:47 change in behavior that we drive um like
+22:50 you know in the in the in the first few
+22:52 calls um yeah those are some of the
+22:54 things but overall the use cases are
+22:56 unbounded like the one that that I think
+22:57 is the the one that Universal across
+22:60 everybody you know inside the company is
+23:02 you know Finding other people who can
+23:03 help you that is that is one of the
+23:05 things you know that glean makes it
+23:06 really easy for people like you know we
+23:08 we help you connect you know uh you know
+23:11 with the right subject matter experts
+23:12 you know based on what questions you
+23:14 have so that's that's one thing that
+23:15 that we see every you know everybody in
+23:17 the company you know make use of a lot
+23:19 is there a Northstar metric you track
+23:21 Like These are these are wonderful kind
+23:22 of stories of of customer impact is I
+23:26 guess how do you Benchmark yourselves
+23:27 objectively yes so our our key metric is
+23:30 how many questions people ask uh on a
+23:33 daily basis and actually get successful
+23:36 like you know we were successful in
+23:37 answering those questions correctly for
+23:39 them H so similar to like Google's like
+23:42 search SAT metric then like okay yeah
+23:46 can you can you share anything about
+23:47 those numbers or you prefer to keep it
+23:48 private well we have so yeah so we have
+23:50 this technical metric I don't know how
+23:52 how much sense it's going to make but we
+23:53 we tend to actually keep that number at
+23:55 80% so I think it's a proxy for that the
+23:59 80% of the sessions you know that users
+24:01 had with us they were actually
+24:02 successful in you know getting what they
+24:04 needed um and is that do you measure
+24:06 that success is that explicitly they
+24:09 thumbs up this was good or is that
+24:11 implicitly they take action on the basis
+24:14 of the results that you served and you
+24:15 can see that action taking how do you
+24:17 how do you actually measure the success
+24:19 it's it's actually implicit so the we
+24:22 will track like you know their actions
+24:24 for example in search when when you you
+24:27 know come and ask a question and then
+24:29 you click on one of the top two or three
+24:31 results and you know go to the
+24:33 destination and then stay there for a
+24:36 long time so that sort of gives us an
+24:38 indication that you know you are happy
+24:39 right you didn't come back and like ask
+24:41 another question quickly or refine your
+24:43 search so that's sort of how we track
+24:45 like you know whether somebody's
+24:46 successful or not got it what are what
+24:48 are some of the top things that are not
+24:49 in the product yet that you think will
+24:51 make people more successful I think the
+24:54 like I was I referred to this you know
+24:56 when we started that building a product
+24:58 like at GPD or glean it's sort of like
+25:01 magic like you know the expectations are
+25:03 infinite and cuz you know like supposed
+25:06 to basically not just answer any
+25:07 questions that people have but also like
+25:09 you know perform like any task that they
+25:11 actually ask you to you know to do and
+25:14 so so so for us it's not so much about
+25:16 what features are missing like you know
+25:18 like the the big thing that we have to
+25:20 actually keep working on is actually be
+25:23 successful at this at this core feature
+25:24 which is like you know answer people's
+25:26 questions correctly um and answer
+25:29 questions of like the higher and higher
+25:31 complexity uh correctly for them over
+25:34 time so so we we feel like you know like
+25:36 us or anybody else like you know out
+25:38 there today um we're all very very far
+25:41 away from that true vision for our
+25:43 product which is that we want gleen to
+25:45 be that AI assistant um that can
+25:48 actually you know answer any questions
+25:50 that you have using your company
+25:51 knowledge uh that can actually do half
+25:53 of your work for you in the future um
+25:56 and so I think I think like I would say
+25:58 like you know maybe 2% of the way there
+25:60 like you know ai ai for all said and
+26:02 done like you know we're still in very
+26:03 very early stages um um of like making
+26:07 you know that impact so we're only 2% of
+26:09 the way there um I'd love to ask you
+26:11 actually about um agentic reasoning it's
+26:14 something that's been on our mind a lot
+26:15 as a partnership at seoa and I know it's
+26:17 been on your mind as well as a Founder
+26:19 um and one of the results that I was
+26:21 really impressed by um in the coding
+26:23 space was that you know with rag you I
+26:26 think these coding agents can get to
+26:28 three
+26:29 4% uh completion rates but if you give
+26:32 them more agentic reasoning capabilities
+26:34 um they can get to 14
+26:37 15% um so like a multifold Improvement
+26:40 and you know it's as simple as you know
+26:42 go reflect in what you just said or best
+26:44 event or you know whatever the
+26:46 techniques are I'd love to I'd love to
+26:48 understand how you guys are thinking
+26:49 about incorporating more agentic
+26:51 reasoning um into your products um and
+26:55 and anything else to kind of get us from
+26:57 that 2% where you said we are today to
+26:59 to what you hope to build one day yeah
+27:03 and I want to clarify that 2% is
+27:05 something that I was making up like as
+27:07 you know it's not a measured number you
+27:09 I just wanted to sort of sort of you
+27:11 know you know Express like you know like
+27:13 how how early you know things are today
+27:15 and and and how much how much amazing
+27:18 things we're going to see in the future
+27:19 like I was just basically you know
+27:21 trying to you know talk more about that
+27:23 but in terms of like you know um um
+27:26 agentic um um
+27:29 uh sort of like a you know
+27:31 behavior um one of the things you know
+27:34 that we are um doing on that front is
+27:38 first um try to actually get a lot of um
+27:43 input from our users so we have we have
+27:46 a concept of building a workflow um
+27:49 inside clean to solve to actually answer
+27:51 a complicated question and and today we
+27:55 actually seek a lot of help from our
+27:57 users in sort of you know completing you
+27:60 know that you know that workflow we
+28:02 actually like say for example if you
+28:04 come and ask a question um like you know
+28:07 help me write a weekly status report of
+28:10 all the work that my team did so this is
+28:12 your question now if you think about
+28:14 this question like you know it's it's
+28:16 it's complicated like you know there are
+28:18 there are few things you need to do to
+28:19 actually go and really figure out the
+28:21 answer to it uh the first thing is you
+28:23 have to actually understand you know
+28:25 what do you mean by your team like who's
+28:26 your team you to maybe go in your you
+28:28 know HR System try to figure out like
+28:30 you know who are the people who report
+28:31 to you um then we are talking about work
+28:34 like you know like what like so where
+28:35 does work happen for each one of these
+28:37 team members you to sort of build an
+28:39 understanding of that like you know and
+28:40 then go sort of pull pull a bunch of
+28:42 Knowledge from all these different
+28:43 systems so so I think right now what
+28:46 we're doing is we're actually uh trying
+28:49 to actually get help from our users and
+28:52 and we will sort of create a plan for a
+28:55 complicated question try to actually get
+28:57 the user to actually input and tell us
+28:58 like you I'll be getting it right
+28:60 sometimes you know users can actually
+29:01 explicitly like they can completely
+29:03 ignore what we do and just build a
+29:05 workflow on their own and and and I
+29:08 think that's going to be essential for
+29:10 us to like build that you know fully
+29:13 agentic behavior for the future I think
+29:16 some you know you can build agentic
+29:17 behavior for like specific narrow set of
+29:20 problems but in glean like you know
+29:21 since our like you know our sort of
+29:23 footprint is so wide like you know you
+29:25 know there's the range of questions that
+29:27 people can have the range of tasks that
+29:29 they want to perform is so broad that we
+29:32 feel like you know first we have to
+29:33 learn we have to learn from like you
+29:35 know workflows that people are going to
+29:36 actually create manually um and and then
+29:40 like you know build these models which
+29:42 can then sort of take complicated
+29:43 questions in the future and
+29:44 automatically build those convert them
+29:46 into these uh sort of like agentic Loop
+29:49 or or or a complicated you know workflow
+29:52 so that's that's the approach that we
+29:53 are taking you know on it so you're
+29:56 saying since you have such a broad
+29:57 surface area you can't build
+29:59 agentic reasoning for every single
+30:00 possible task and so instead you're
+30:02 exposing a workflow engine for your
+30:04 users to individually be able to build
+30:06 uh different automations um and
+30:08 different agents um yeah and and then
+30:11 you learn from it and then you learn
+30:13 from it so once you know you see people
+30:16 building these workflows that sort of
+30:18 you know then fits as you know goes into
+30:20 like you know a training data set to
+30:23 sort of allow you to actually
+30:24 automatically build um like new
+30:26 workflows like based on complicated
+30:28 questions that people have so so those a
+30:31 agenting capabilities are coming you
+30:33 know but but I would again like you I
+30:35 would say um
+30:37 the like you know when it when it is you
+30:40 know hard for you to answer simple
+30:41 questions then if you want to do
+30:43 complicated tasks like you know it's
+30:44 equally hard because you know you're
+30:45 going to make a mistake in Imagine an
+30:48 agent that actually you know breaks down
+30:49 a complex task into 10 into a series of
+30:52 10 individual tasks then your error rate
+30:55 is going to compound like you know if
+30:56 you have you know each each step in is
+30:58 90% accurate so so you so there there is
+31:02 like you know it is it is incredible but
+31:04 I think it is still um you know
+31:06 something that you know we are um like I
+31:10 I feel like you know the human assist is
+31:12 actually critical like you know in
+31:13 building these um like complicated uh
+31:17 workflows it's also um Arvin it might be
+31:20 worth saying a word maybe this is
+31:22 obvious to people are listening but just
+31:23 to State it explicitly how act one which
+31:26 is the Enterprise search business
+31:29 gives you the moral Authority or the
+31:30 unfair advantage to get into act two
+31:33 which is the application platform or the
+31:35 or the platform for agentic behavior um
+31:39 it may not be totally obvious to people
+31:41 how Act One leads to act two can you
+31:43 just say a couple words about that by
+31:45 building the search product which
+31:47 immediately adds value to our um to our
+31:50 customers to our users um you know we
+31:53 are able to actually solve you know a
+31:55 bunch of complicated problems that you
+31:57 will typically run into an Enterprise um
+32:01 the the first part is first part of that
+32:04 is you know security so if you think
+32:05 about like the gleen product you know we
+32:07 are actually telling our customers that
+32:09 hey give us all of your data and you
+32:12 know and we don't you know we're going
+32:13 to hopefully do something useful for you
+32:15 after you give that data to us like and
+32:18 and that's a that's a that's a big
+32:19 demand like you know that's you know
+32:21 it's not easy um you know for companies
+32:24 to actually trust like new you know um a
+32:28 new product company a startup uh and
+32:31 with all of their data when they're
+32:33 actually not you know getting any mitted
+32:34 value from it um and so so so that's
+32:37 that is one of the things you know that
+32:39 you know we've seen to be you know super
+32:40 helpful to us because we actually have
+32:41 this uh search product that people
+32:44 understand that people want and they
+32:46 want to deploy so it's already deployed
+32:48 now and so gleen is running and it's
+32:50 already connected with all of your
+32:51 Enterprise data inside the company and
+32:54 and so then like you know helping you
+32:56 know like you know us going to our
+32:58 customers and then saying them that like
+32:59 look you know use that as your core core
+33:01 AI data platform is a much easier sell
+33:03 CU we don't we not actually have to
+33:04 convince them again to to actually like
+33:07 you know to you know give all of the
+33:09 data to us it's already there I see this
+33:11 this might not be a Perfect Analogy but
+33:13 hopefully it's not a terrible analogy
+33:15 that you know Tesla had an advantage in
+33:16 self-driving because they're already
+33:18 selling cars you guys have an advantage
+33:19 in delivering AI agents because you're
+33:21 already selling a data platform that
+33:23 organizes all the Enterprise information
+33:25 makes it accessible makes it secure kind
+33:28 of puts people in a position where
+33:29 they're already asking questions of it
+33:31 it's kind of a logical next step to ask
+33:32 it to start taking actions absolutely I
+33:35 think you also announced a set of apis
+33:37 that let developers build on glean maybe
+33:39 say a word on that like I think that was
+33:41 in response to customer demand but what
+33:43 what makes developers want to build on
+33:44 glean versus directly access access
+33:46 their own data I think it's probably a
+33:48 similar effect to what you just talked
+33:49 about yeah so like a lot of like AI
+33:52 applications that um our customers are
+33:54 wanting to build um they they need to
+33:57 actually t into Data that lives in like
+33:60 you know multiple different like SAS you
+34:02 know cloud-based SAS systems and um and
+34:06 like I think it's quite tedious for them
+34:09 to like first go and actually bring that
+34:11 data like you know in one place you know
+34:14 build a build a search or retrieval
+34:16 layer using that um the you know the
+34:19 Integrations are hard understanding
+34:21 permissions and governance is really
+34:22 really hard on that and and I think like
+34:26 when people like when like as as as sort
+34:28 of um these models actually became
+34:31 accessible and you know and developers
+34:33 started to actually develop AI
+34:34 applications they realized that the well
+34:38 like they were really excited about
+34:39 building these new cool AI apps but but
+34:42 basically they realized that you know
+34:43 building an app you know the 90% of the
+34:45 work was actually you know you know this
+34:47 sort of boring infrastructure work that
+34:48 they didn't want to do um like you know
+34:50 bringing data from all these different
+34:52 systems running these ETL and data
+34:54 pipelines you know uh and and and then
+34:57 sort of building a good search over it
+34:58 and like you know so you'll spend like
+35:00 so much time before you actually even
+35:02 get to play with AI and and so that's
+35:04 that's that's the thing that you know um
+35:07 um that they find you know very useful
+35:09 with clean because you know we're
+35:10 actually solving all you know all the
+35:11 problems around ETL building a great
+35:13 search properly obeying governance
+35:15 within your company all of that stuff is
+35:17 done for you like you know you just have
+35:19 a a search API and uh and you can sort
+35:23 of focus all of your attention on on the
+35:25 business problem that you're working on
+35:26 and how I can help you sort of like you
+35:28 know achieve that automation that you're
+35:30 looking for in some ways all the hard
+35:32 work you've done to ETL and put all the
+35:35 data together with data government
+35:37 governance reminds me a lot of snowflake
+35:40 um and you know you're really doing it
+35:41 with like Text data and unstructured
+35:42 data um but uh kind of just that Central
+35:46 data platform that companies can build
+35:48 around build apps on top of um reminds
+35:50 me a lot of the snowflake story yeah
+35:53 Arvin can can we ask you a question
+35:55 about future State um if if you uh if
+35:58 you allow us to dream for a few minutes
+36:00 uh five or 10 years from now how do you
+36:03 think glean is showing up inside of a
+36:05 business and and maybe more importantly
+36:06 if you're if you're the typical
+36:08 knowledge worker five or 10 years from
+36:10 now and you are equipped with glean what
+36:13 is your life like then that's that's a
+36:15 great question I think let's let's keep
+36:17 it five years um instead of 10 and and I
+36:21 think the well I mean like you know one
+36:24 one belief that I have is that majority
+36:27 of the work that do today is not going
+36:29 to be done by us anymore in 5 years from
+36:32 now and that applies to me that applies
+36:34 to you like you know we both do very
+36:35 different things but still like I think
+36:37 you know we are knowledge workers um and
+36:40 I think a lot of our work is actually
+36:42 going to be done by these amazing AI
+36:44 assistants that are actually in many
+36:46 ways you know more powerful than us like
+36:48 you know the they they have access to
+36:50 all of our companies data our knowledge
+36:53 they have all the context from all the
+36:54 past conversations and meetings they
+36:56 don't forget anything um and they can
+36:59 really sort of um and they have the you
+37:01 know on top of that you know they have
+37:02 the reasoning capabilities you know that
+37:04 allow them to be super helpful to you
+37:06 and like any task that you do so that's
+37:08 sort of you know our core belief like
+37:09 you know that like you know majority of
+37:12 our work is actually going to be done by
+37:13 these AI companions or assistants and we
+37:16 want glean to be you know that you know
+37:18 that that assistant you know in the
+37:20 workplace um we you know we want glean
+37:23 to be you know the uh um the place you
+37:26 know where you know where most of your
+37:28 work happens um one of the things you
+37:30 know that we also think you know is
+37:31 going to change is today a lot of AI is
+37:34 about um is about like you know you go
+37:38 and seek help from these AI agents um
+37:42 the you you you know like for example
+37:45 you go and ask questions you get answers
+37:47 back um but but the future is sort of uh
+37:51 future is where you know this assistance
+37:53 is going to be proactive it's sort of
+37:55 like you know if you think about like
+37:57 you know if you have an you know an
+37:58 executive assistant you know they
+37:60 actually help you a lot um a lot of
+38:02 their help is you know when you go and
+38:04 ask them for help but a lot of their
+38:05 help is actually proactive in nature
+38:07 they tell you what to do next you know
+38:09 they manage your day they know
+38:10 everything about your work life and um
+38:13 and and they guide you like you know to
+38:15 be effective you know throughout the day
+38:17 and and I think like AI is going to
+38:18 actually allow that luxury um you know
+38:22 you know like regardless of you know who
+38:23 you are like and today like you know
+38:24 some Executives in the company you know
+38:27 have that luxury but in the future like
+38:29 you know everybody's going to have these
+38:30 really powerful you know AI based
+38:33 assistants you know that going to
+38:34 actually help them do their work so so
+38:36 that's how you know so so we're really
+38:37 excited about bringing that change to
+38:39 the workplace and and and hope that you
+38:41 know gleen can be that you know the the
+38:44 the world's most successful AI assistant
+38:46 love it Arvin can we change gears a
+38:48 little bit and I'd love to step back and
+38:51 hear your advice for other Founders you
+38:53 are one of the most successful
+38:54 application Level AI companies I think
+38:57 probably number two behind co-pilot and
+38:58 scale uh and you did it as a startup as
+39:01 an independent startup um I think you've
+39:03 also had to navigate some unique
+39:05 challenges right like open aai for
+39:07 example is one of your providers and
+39:09 also one of your competitors one of your
+39:10 top competitors um maybe just tell us
+39:13 what it's what that Dynamic is like well
+39:15 I mean first of all the from a point of
+39:19 view of like building a startup um in
+39:22 fact like you know I've been actually
+39:23 quoting you guys you know in many places
+39:26 like you know Pat I remember like you
+39:28 know the slide where you talk about like
+39:30 the overall software Market being $600
+39:32 billion but then AI sort of is you know
+39:35 expanding that market to like you know
+39:37 15 trillion or 12 trillion something
+39:40 massive and and that's actually like you
+39:43 know the the reality of you know where
+39:44 we are today you know which is that you
+39:47 know everything that we do is going to
+39:49 actually change fundamentally change um
+39:51 AI is going to be a key component you
+39:54 know uh that's going to drive that
+39:55 change so so first that I like you know
+39:58 as a Founder like you know I don't
+39:59 actually worry about what other people
+40:01 are actually working on cuz if even if
+40:04 all of us are working on a lot of great
+40:05 things you know it'll still not be
+40:07 enough it'll still not be enough to
+40:08 actually solve all the problems that you
+40:10 know need to get solved and so that's
+40:12 the first mindset so like you know like
+40:14 I think from a advice to other Founders
+40:16 that's that's the that's the thing I'm
+40:17 going to tell them like if you found a
+40:18 problem you know just go you know work
+40:21 on it and don't worry about like if
+40:22 somebody else is solving it uh cuz that
+40:24 like the chances are that other people
+40:25 are not and they won't solve it the same
+40:27 way as you will um but for for us like
+40:31 you know and you know coming back to
+40:32 like glean specifically like you know
+40:34 you know the Dynamics for us you know we
+40:35 felt the same way like you know for for
+40:38 the first four years of our existence we
+40:40 were working on a problem you know where
+40:42 we had no competition you know nobody
+40:45 nobody was actually interested in
+40:46 solving the problem that we were solving
+40:49 um it was it was a dead market and and
+40:52 we to create a category we to actually
+40:54 generate interest you know be
+40:55 Evangelical uh and but but we knew that
+40:58 we were working on a uh an important
+41:00 problem um but then you know suddenly
+41:03 you know chat GPD happened and and
+41:06 search has become hot and now in fact
+41:09 every company that you go and talk to
+41:10 wants to build a product like clean and
+41:12 so is that good news for us is that bad
+41:14 news for us like how do you think about
+41:15 it you know from from from our
+41:17 perspective like it doesn't matter like
+41:19 you know the way we feel is that it's
+41:21 actually great news for us like now
+41:23 everybody is interested everybody wants
+41:25 to buy our product and yes we have to
+41:27 compete with many many other vendors but
+41:30 but that's that's the place where we
+41:32 think you know we'll win because you
+41:33 know we will you know like we have the
+41:35 desire to actually solve this problem
+41:38 and you know stay focused on this
+41:40 problem keep working on it and there's
+41:42 no reason for us to not do a better job
+41:43 than others part of what I heard in
+41:46 there was that building an AI company is
+41:48 just building a company find an
+41:50 important problem and solve it in a
+41:52 compelling way um I'm curious
+41:54 particularly because this is not your
+41:55 first rodeo you know rubric was
+41:57 obviously wildly successful and of
+41:58 course you were pretty core to some of
+41:60 the early days of Google um how much of
+42:03 building an AI company is just building
+42:06 a company versus things that are AI
+42:08 specific in some way it's a great
+42:10 question um I I think like like I think
+42:15 of AI mostly as a tool you know in Your
+42:19 Arsenal and one of the
+42:22 tools um I don't think you know you
+42:24 suddenly become a different company
+42:26 because you are
+42:28 um because you know you're doing
+42:29 something with AI in in reality I think
+42:32 there's going to be no new company that
+42:34 is not going to use you know AI
+42:36 Technologies in some shape or form so my
+42:38 point of view is that like look you have
+42:40 to actually find a business problem that
+42:43 that you're planning to solve and
+42:45 hopefully like you know
+42:48 the you know that you know like you can
+42:50 actually solve that problem in a much
+42:51 better way because of like you know the
+42:54 technology that AI is actually providing
+42:56 to you now so I don't I don't think it
+42:58 actually changes I don't think it
+42:59 actually feels different um like you
+43:02 know whether you are U like we don't
+43:04 think of ourselves as an AI company for
+43:06 that matter either would you ever train
+43:08 your own models like and I guess maybe
+43:10 more broadly how do you think about
+43:12 where gan's core competencies start and
+43:14 stop and you know if you get 100 R&amp;D
+43:16 chips where do you want to place them we
+43:18 we don't have plans to train super large
+43:21 models um the uh but at the same time
+43:24 you know we've actually you know we we
+43:26 do train models which are smaller in
+43:28 size um you know for every you know
+43:31 individual customer of ours um the you
+43:35 know the these language models that we
+43:36 train for an individual customer it sort
+43:39 of goes through all of their their own
+43:41 their own Enterprise Corpus and sort of
+43:43 starts to understand like you know the
+43:45 sort of the the lingo the speak you know
+43:47 the acronyms the code names all of that
+43:49 stuff you know you know within their
+43:51 Corpus so so model training is actually
+43:53 you know like a core part of the clean
+43:55 Core technology but but not in the sense
+43:58 of like you know you know training a
+43:60 model like GPD 4 uh you know we don't do
+44:03 that we don't have plans for it we plan
+44:04 to partner with a lot of other great
+44:06 companies you know that do that build
+44:08 models of that scale wonderful uh arent
+44:12 thank you so much for joining us today
+44:13 this was a wonderful conversation we
+44:14 really appreciate it thank you for
+44:17 having me

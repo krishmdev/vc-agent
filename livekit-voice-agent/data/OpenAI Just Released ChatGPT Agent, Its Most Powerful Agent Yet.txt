@@ -1,0 +1,363 @@
+00:00 think this model is actually very good at multi-turn conversations and it's very nice to continue working on a task
+00:06 with I think that's one of the deficiencies of deep research. Um a lot of people will do multiple deep research
+00:13 requests in a single conversation but it doesn't always work so well. So I think we're really happy with this model's
+00:18 multi-turnability and we just want to you know improve even further. And then I also think like personalization and
+00:24 memory for agents will also be very important. And right now every agent
+00:30 task is initiated by the user, but in future it should also be doing things for you without you having to even ask
+00:36 in the first place. [Music]
+00:54 Today we're exploring the evolution of AI agents with Issa Fulford, Casey Chu, and Edward Sun, the OpenAI team behind
+01:01 the new chat GPT agent. You'll learn how they got to a huge leap forward in capability by unifying the architecture
+01:07 across deep research and operator, allowing for multiple tools to share state, giving users fluid transitions
+01:13 between visual browsing, text analysis, and code execution, all within a single environment.
+01:19 We'll discuss their training approach. Rather than programming specific tool usage patterns, they let the models
+01:25 discover the optimal strategies through reinforcement learning across thousands of virtual machines. They've created an
+01:31 agent that can work alongside you for hours, asking clarifying questions and accepting mid-task corrections,
+01:36 expanding the ways that we can interact with AI agents. The team shares fascinating challenges
+01:42 around safety, guardance around agent activities, and why things like date picking still remain mysteriously
+01:48 difficult for AI systems. They've revealed how a small focused teams are achieving breakthrough capabilities
+01:54 through careful data curation suggesting that we're now entering a new phase of AI development where product insights
+01:59 matter just as much as compute power. Enjoy the show.
+02:05 Issa Casey Edward, thank you for joining us today. Thank you so much for having us. Um, so you're the team behind the chat
+02:11 agent or agent mode. What is it? Yeah. So, this has been a collaboration between the deep research, the former
+02:17 deep research and operator teams and we've created a new agent in chat GBT um
+02:22 that's able to carry out um tasks that would take humans a long time and we
+02:27 gave the agent access to a virtual computer and um through that it has a
+02:32 few different two different ways to access the internet or actually more ways but we'll get to that. Um it has a
+02:38 text browser um which is similar to deep research tool. So it's able to efficiently um access information online
+02:46 and search through things with this very um fast text browsing tool. And then it
+02:51 also has um a virtual browser which is similar to the operator tool. So it actually has full access to the
+02:57 graphical um user interface. and it's able to click and type things into forms
+03:02 and scroll and drag and all this kind of um you know all these kinds of things.
+03:08 Um so together it's much more powerful than either of those two tools because one's more efficient and one's like much
+03:13 more flexible. And then we also um gave it access to a terminal. Um so it's able
+03:18 to run code and analyze files and you know create artifacts for you like spreadsheets or slides. Um we also um
+03:27 through the terminal it's able to call API. So either public APIs or private APIs. Um if you allow if you if you sign
+03:34 in it could access your GitHub or Google Drive, SharePoint, many other things. Um and the cool thing about this tool is um
+03:40 all of the tools have shared state. So it's similar to if you're using a computer like all of your different
+03:46 applications have access to the same um file system and things like that. It's the same for the tool. So the model can
+03:51 do quite flexible things. Um and um yeah, we'll talk more about this later, but I think it's just a very flexible
+03:57 way for the model to to do very complex tasks um on behalf of of of users. Tell
+04:03 us a little about the origin story. How did this get started? Well, our team worked on operator. Um
+04:08 and our team worked on deep research and um so back in January um we we released our first agent operator. Um
+04:16 this is a uh product that can um do internet tasks for you like buy things on the internet, shop for you, this kind
+04:22 of thing. And then two weeks later, we released deep research um which is a different model that's uh or a different
+04:28 product that's able to extensively um browse the internet and synthesize information and it creates a long um
+04:34 research report with citations for you. And we were kind of thinking through our road map and we were kind of like hey
+04:40 this is kind of a a match made in heaven here like um so you know operator is
+04:45 really good at visual um you know interacting with a web page um but it's less good at kind of the text browser
+04:51 like reading long articles whereas deep research is really good at reading long articles but it's um has a tougher time
+04:57 with like interactive elements or like highly visual things um because the tools are different. So deep research has a text browser. So it's
+05:04 able to really efficiently read information and search and um synthesize information but um it's not able to like
+05:11 uh scroll and click in the same way or fill out forms in the same way that operator is because it has actually full
+05:17 access to the guey browser. Um and as Casey was mentioning like uh deep
+05:23 research has some things that operator doesn't have. And then similarly, one of the biggest requests for deep research is for the model to be able to access
+05:29 like pay sources or things that you have to um pay a subscription for. And operator is able to do that.
+05:35 And also um one of our members of our team, Eric, he was running an analysis on the types of prompts that people were
+05:41 trying on operator and we realized that it was a lot of deep research type tasks like um research this trip for me then
+05:48 book it. Um so it really is a natural combination. In what way is 1 plus 1
+05:53 equals 3? So in deep research we uh we always wanted to figure out how to you know uh
+05:59 let deep research has access to a real browser that can you know loading all the real content that previous deep
+06:05 research cannot has access to. It's funny that you bring up the oneplus 1 equals 3 because not only did we
+06:11 combine um deep research and operator but we also threw in like a bunch of other tools that basically everything we
+06:17 could think of. Um so like the terminal tool is there so it can use like um it can run commands to like do
+06:23 calculations. Um the image gen tool is a fun one like if it wants to you know spruce up its
+06:30 slides by making an image um it can do that. Um can cool APIs can produce powerpoints.
+06:36 Yes. Yeah. It can do a lot of different things. Yeah. Tell us a little bit how people are using it knowing it's still early days. So, I think the cool thing about
+06:44 it is we have some ideas um of how we think people are going to use it, but I think we intentionally kept it quite
+06:49 open-ended. I mean, it's called agent that's so vague partially because we are excited to see how people end up using
+06:55 it. Um, so I think some of the things that we specifically trained it for were of course deep research type tasks, so
+07:01 things where you want a long report on a topic. um operator type tasks where you want it to do something for you like
+07:07 book something or um you know book a flight uh buy something for you um and
+07:12 then also um tasks to make slide decks um we also um you know spent a lot of
+07:19 effort on making spreadsheets and doing data analysis but I think there are also just so many other things the model can
+07:24 do so we're just excited to see how people use it kind of similarly to how when we launched deep research um we saw
+07:30 a lot of people using it for code search which was really surprising to us We're hoping to see a lot of new use cases
+07:35 that we didn't even think of ourselves. Would you guess it'd be more consumer or kind of B2B type use cases
+07:41 or is that a false? Hopefully both. Okay. Yeah, I think we're kind of aiming for like the proumer, like someone who's
+07:47 willing to wait like 30 minutes for like a detailed report, but that can be in the like Yeah. in the consumer case or
+07:53 the you know at your job. Yeah, I think it could be both. Good for both. Do any of you have favorite things you've used it for? Uh for me it's it's
+07:60 more like you know pulling data from you know our uh like a spreadsheet on Google Docs like a document in our like a
+08:06 expander log and then make some slides to present the data or like organize the
+08:11 data. It's pretty useful. I've been doing a deep dive into ancient DNA which is one of my you know one of
+08:18 my interests. Um and there's actually a lot of exciting work going on like these past like five years. um they're like
+08:24 sequencing all this DNA and like discovering all these facts about like oh where did like this group of people
+08:29 come from and like you know historical stuff. Um the problem is that everything is so new that um uh you know there
+08:38 isn't like a reference like source material for like to summarize like a survey of these materials. Um but uh you
+08:45 know agent can go out and pull together all these sources and synthesize it into a report that I can read or slides that
+08:52 I can read. And I think um it's kind of made for this topic. Yeah, I like it for consumer use cases
+08:58 like I've used it for online shopping. I think especially because a lot of um websites require using visual browser
+09:04 because it will have a search filter or something that it needs to go through or the model like actually needs to be able
+09:09 to see what the item looks like. Um and then also for planning events, it's been
+09:15 pretty useful. What's your favorite shopping query? I think I was using I was using it for for
+09:21 clothes shopping. Love it. And you guys also showed us a
+09:27 really cool use case right before we filmed this episode. Do you want to share that one? Yeah, sure. So, that was actually something that one of our co-workers,
+09:34 Tedel, shared with us. She asked the um the agent to estimate OpenAI's valuation
+09:40 and create based on things that it found online, create um a financial model with
+09:46 projections. So create a spreadsheet um also create a summary analysis and then also create a slide deck presenting the
+09:52 results. And so hopefully the model is correct because it was it had quite a um ambitious projection for us.
+09:59 It was an impressive slide deck. Yeah, it was a good slide deck. One thing I want to point out about this um
+10:04 trajectory was that it reasoned for I think 28 minutes and um
+10:09 yeah I think this is kind of opening up a new like paradigm where you know you ask the agent for a task and then you
+10:15 step away and it comes back with a report um and uh yeah I think I think as
+10:22 agents become more agentic you know it'll be like longer and longer tasks and this is a good example of one. Are these the longest running tasks you
+10:28 guys have have launched so far? I would say so. Like I just did one that was an hour long and I don't think I've
+10:33 ever seen that. I didn't know how long codecs can run for. That's true. Yeah. Um is there anything special that makes
+10:39 that goes into making an agent run for so long without kind of flying off the rails? We have some like uh some tools
+10:45 to enable the model to be able to further extend its uh context length uh beyond what uh like uh what's what's the
+10:53 original uh like the harder limit so that the model is able to uh perform
+10:59 task by like you know documenting what's what is doing and step by step like kind
+11:04 of like increase the the time like uh uh it can do the task horizon of the task
+11:10 it can do uh without the humans interruption. Yeah, it's also the the flow to go back and
+11:16 forth between the model and a human also is very nice. So I can correct it as it's going, right? Yeah. So this model is very flexible and
+11:23 collaborative and that was very important to us. So it's modeled after how you would interact with someone if
+11:29 you asked them to do a task for you. So imagine you're asking someone on Slack to do something for you. You'd probably
+11:35 give them instructions and then they'd ask you some questions and then maybe start doing the task and then maybe in
+11:41 the middle of the task they'll say oh actually can you clarify this for me or
+11:47 um can you sign into this thing for me or what am I allowed to do this for you and similarly you might remember
+11:53 something that you forgot to say when you first gave them the task and you might want to interrupt them and just say oh hey please also do this um or you
+12:01 might want a a status update if they're taking a long time to do it or you I might want to redirect them if they're getting, you know, going on the wrong
+12:07 path. So that's kind of what we modeled it after. And I think it's very important that the user and agent are
+12:13 both able to initiate communication with each other. So I think what we have now is probably the most basic version of
+12:19 what of what this could be. But it's um better than anything um we've released
+12:25 before in this area because um at first the model can or the agent can ask um
+12:31 you clarifying questions similar to deep research but it's more flexible. So it doesn't always ask you clarifying questions. Um and then um you can um
+12:39 interrupt the model. So you can say oh can you summarize what you've done so far? or oh, I forgot to say I actually
+12:45 only want like blue sneakers. Um, and then if the model is going to take some
+12:50 kind of destructive action or if it needs you to log into something, it will um also ask the user um if it's allowed
+12:57 to do that before doing anything. Um, on this topic um we we kind of built
+13:03 this um like kind of computer interface. You guys saw it um where you can kind of watch along with what the agent is doing
+13:09 and um that actually persists for beyond the conversation. So, like um once it's
+13:14 done with the task, you can actually go back and ask it follow-up questions um and ask it to like fix something or um
+13:20 do another task. Um and um you can also
+13:26 uh take over that computer. So, you can click in and then now you have access to its environment and you can like click
+13:32 for it or like log in for it or insert your credit card information or things like that. Um, and so yeah, I like to
+13:39 think of it as like looking over your coworker shoulders and like and like being able to take to take over if
+13:44 necessary. Thank you for enabling the micromanager in me.
+13:50 Just kidding. Um, so we'd love to talk a little about how this works to the extent that you can share. Um, yeah. So this agent is trained with
+13:58 uh the same technique as one the reinforcement learning. So we give this uh agent model the all the tools we we
+14:04 have like implemented in the same uh virtual machine like a text browser uh
+14:09 uh like a GUI browser terminal and um the imaging tool and then the model will
+14:15 try to solve the task like we created like which are pretty hard task that the
+14:20 model has to complete with using these tools and uh then kind of like we give
+14:25 we reward reward the model if the model uh completes the task efficiently and correctly.
+14:31 And for example like after this training the model is able to it should learn to
+14:36 you know switch between these tools uh like uh fluently like for example if for a task of you know the like you ask the
+14:44 model to research some uh restaurants and maybe booking a spot for you it will first do like a deep research style uh
+14:51 text based browsing and then we'll probably also use the like GUI browser to view the uh like image of the food
+14:58 and also view the availability like uh which is usually like you know written JavaScript that you have to use a a real
+15:05 uh GUI browser and uh then uh or for example if you are asking it to create an an artifacts it's uh usually you know
+15:13 can pull sources from website and then use them in the terminal. Yeah, I think the cool thing about this tool compared
+15:19 to tool use implementation in the past is that all of the tools have shared state. So it's all it's like you're
+15:26 using when you're using your computer and you have many different applications, you know, like if you download something, it's going to be
+15:31 accessible to other applications. It's very similar. So the model can open a page in the text browser, which is more
+15:37 efficient, but then maybe it realizes it needs the visual browser. So it can just seamlessly switch or it could download
+15:43 something using the using the browser and then in terminal it manipulates it or something like that. Um it can run
+15:48 something in terminal and then open it in the browser. Um it's very flexible. Um and so it's just giving the model a
+15:54 more powerful um way of interacting with the internet and um files in its file
+15:60 system and code and things like that. Yeah. And one interesting thing to emphasize is that like we essentially
+16:05 give the model all these tools and then like lock it in the room and then like it experiments. Um, you know, we don't
+16:11 really tell it when to use what tool. It kind of figures that out by itself. It's kind of almost magic. Is the technique it sounds very similar
+16:18 to, you know, deep research. We had you on the podcast before. Should we think about this as the standard technique of
+16:24 how OpenAI thinks that that agents will be trained going forward? I think um we
+16:29 we can take this really far. Um you know this was we haven't our teams haven't
+16:36 been collaborating for that long. We even framed this model run as um kind of
+16:42 minimum shippable D- risk. That was most mostly for PR reasons internally, but um
+16:48 this is really like the most basic version we could make together and I think we have so um so much further we
+16:55 could push this with these methods. Um for example, the slides capability um is
+17:00 a new capability. It's a very um you know already impressive. Um it's a great
+17:06 work from Aiden Paloma, Martin, a bunch of other people. Um but you know there's so much further we can we can push that
+17:13 and improve um using the same techniques but I think we can take it further but we probably need other things too.
+17:19 Yeah, I feel so far it's pretty magical like the the same IO algorithm just works
+17:24 um like 01 reasoning like deep research with to call and then now like a more advanced you know computer use uh
+17:31 browser use agents. Mhm. Where does it run into the limits with this strategy and with this model
+17:36 specifically as well? I think the interesting thing with this model is that because it's taking it
+17:43 able to take actions with external side effects um there's a lot more risk. So
+17:49 for deep research it was read only. So there's kind of a limit to what the model could do um in terms of like data
+17:58 exfiltration and other things. But with this um in theory, the model could
+18:03 successfully complete a task but take a lot of harmful actions along the way. Like you could ask it to um buy you
+18:11 something and it decides to buy just like 100 different options to make sure that you're satisfied. Exactly. Or you
+18:18 know you can think of many examples like that. So I think that safety and safety training and migations was kind of one
+18:23 of the really core parts of our process with this model. And um yeah, maybe you
+18:29 can talk more about it. I was going to mention that kind of along the same lines, it's like this contact with the real world that makes
+18:35 things difficult. Um you know, we have to train this on um like a bunch of VMs like it's like
+18:41 thousands of VMs maybe. Um and uh you know things break and you know as soon
+18:47 as you're hitting a real website like the website's down or like you're hitting like um all these capacity
+18:53 limits and like load testing and this kind of thing. Um yeah, it's really the very beginning and you know we're going
+18:59 to iron out all these details and continue but that's a major limitation. How do you think about from the safety
+19:04 perspective building in the right guard rails and like how do I make sure the model is not you know logging into my
+19:10 bank account and sending it all off to a Nigerian prince like yeah that's a that's a very good
+19:16 question. Um yeah this is definitely an definitely an emerging risk where um you
+19:23 know the internet's a scary place. you know, there are a lot of like attackers and like scammers and this kind of thing, fishing attacks, like list goes
+19:30 on and on. Um, and yeah, our model is a bit like it can it can reason about
+19:35 these things like if you tell it to be careful, you know, we've done some safety training to make this like more robust. Um, but sometimes it can get
+19:41 fooled and sometimes it um, you know, is a bit too overeager to complete your task.
+19:47 um we um have a long list of mitigations and the team has worked really hard to
+19:53 like stack together a bunch of um techniques to really try to make the
+19:59 model as safe as possible. Um so um you know one example that I'll call out is
+20:04 that we have um a monitor that looks kind of looks over its shoulder and just
+20:10 sees if anything looks funny like whether it's going on a weird website or anything like this. um kind of like anti
+20:16 virus for your computer. It's like just kind of persistently watching and then if it looks like there's anything
+20:22 suspicious then it'll stop the trajectory and um stop there. Um you
+20:27 know of course we can't catch everything and this is a major area that we'll continue on continue to iterate on. Um
+20:33 we do have um like a protocol for if
+20:39 there are new attacks in the wild that we discover um or we we encounter then we can rapidly respond and um um update
+20:46 these monitors kind of like you would update your antivirus software like it would like kind of pick up on these new attacks and hopefully keep you safe.
+20:52 Yeah, I think the the cool thing about the safety training is that it's been a really
+20:58 cross or effort from um the safety team, governance team, legal team, research
+21:05 team, engineering team, like so many others. Um we have so many mitigations at every single level. Um we did a lot
+21:12 of external red teaming, internal red teaming, but yeah, as Casey mentioned, there's more.
+21:18 Surely when we release the model, there will be new things we uncover. So we just need to make sure we also have robust ways of detecting those and then
+21:24 mitigating those. For some of these models, there's a risk of what you can do with the models,
+21:31 whether it's creating biohazards or otherwise. How do you guys manage some of that? Yeah, it's actually um bio has been uh
+21:38 heavily on our mind. Um yeah, the team has been really thoughtful about, you know, yeah, this agent, you know, we
+21:44 think it's very powerful. It can do research. it can like um really um speed up your work, but that also means that
+21:51 it could speed up um harm um and uh kind
+21:56 of one of the top things that our team has been looking into is the risk of bio um biorisk. So like creating bioweapons,
+22:02 this kind of thing. Um and yeah, the team has been really thoughtful about um how to mitigate against this and um
+22:10 generally being very cautious. We did like many weeks of red teaming um to make sure that this model could not be
+22:16 used for those harms and um a bunch of other mitigations in place. Shout out Karen uh who spearheaded this effort. Um
+22:24 and uh yeah, in general I think we're we're very like aware of this and um
+22:29 just trying to be very cautious. Yeah, makes sense. Tell us a little about the team that came together to build this. So as Casey mentioned
+22:37 earlier, we had um deep research research team and then deep research applied team and operator research team
+22:44 or computer using agent research team and operator um applied team and we've
+22:50 effectively merged everybody. We all work really closely together, both the research teams and the applied team
+22:56 and the vibes has been great. It's been so fun. Ethan and I have been friends for a long time, so like it was a natural like
+23:03 Yeah, it was really fun. Um how many of you are there on deep research for the majority of the
+23:09 time? Three or four. Now we have some some new people which is very exciting. And then on KUA
+23:14 on KUA I think around six to eight uh somewhere around there on the research side. And then um we
+23:21 have an amazing um applied team. So like engineering product design um led by
+23:26 Yashkumar and then he has just a really cracked engineering team. So it's it's been very fun to to to work really
+23:32 closely. I think that's one thing that has made this um collaboration really special is that um the research and
+23:39 applied teams work so closely and even from the beginning when we're um defining what the the product should be
+23:44 able to do, it's very much a collaboration between research and product and design. So um we go
+23:50 backwards from the use cases we want to be able to solve um to training the model and building the product. And
+23:56 obviously it's able to do it's not able to do all of those things prop um fully yet or and it can do some things that we
+24:01 didn't plan but I think it's a good um framework for us when we're starting starting a starting a project. It's like
+24:08 very grounded in how we want people to use it in the real world. It's a way smaller team than I was expecting. Small teams can do amazing
+24:15 things. Yes. You built a lot. Yeah. And we haven't been working together for very long. It's been a few months.
+24:20 Yeah. And actually the boundary between the research team and the applied team are not you know uh like a very uh like
+24:27 decisive because like you know during the model training like lots of uh applied engineers they are helping us
+24:32 training the model and also after we uh you know train the model we like some research team members are also working
+24:38 on the you know like a you know setup model in the deploy the model to the real users. What was the hardest part about training
+24:45 this agent? Yeah, I think one one of the biggest challenge we have is how to how
+24:50 to make training stable especially given you know like when we train deep search it's only using browsing and uh Python
+24:58 it's like it's it's already like it's pretty you know mature tools there like we've been using it for a while but when
+25:04 training the agent model uh uh it it you know it have some uh new tools like uh
+25:10 uh computer and also the terminal like bundled in the same container in the same v virtual machine as as a computer.
+25:17 So it's actually quite hard to train because uh we are literally you know set up you know thousand hundreds of
+25:23 thousands of virtual machines at the same time and then they all like you know visit the uh internet and uh we so
+25:31 it's yeah it's one of the biggest challenge like we we see actually the chiny sometimes will fail but like
+25:37 finally we are very happy that we we get this model trained the VMs
+25:42 VMs all back to the engineering the same Um tell us about what's next. More
+25:49 sources, more tools, better model. How do you think about it? Well, I think um one thing I like about
+25:55 our agent framing is that um you can ask it to do whatever you
+26:01 want. And you know, you can ask it to do like every possible task you can
+26:06 imagine. It just might not do it well. And I could you tell it like go make me money on the internet? You can tell it that.
+26:12 It'll try. It'll try. Should we try that right after this? Let's do it. Um but yeah, I think it's
+26:18 really a matter of like improving the accuracy like the performance of task of
+26:23 like the whole distribution of tasks that anyone does on a computer right
+26:29 which is a lot of tasks and then yeah and through this like iterative deployment we are very excited
+26:34 to see like what's the new capabilities uh our user will you know find in our agent like you know like the coding
+26:41 ability in deep research or you know deep research ability in operator you were using the agent
+26:46 mode. Yeah. For coding. Yeah, I use it for coding a lot because I I feel it's you know it's it's
+26:52 actually not you know you know like a very uh like always try to rewrite my whole codebase. It just actually uh have
+26:59 some small editing and also it's actually read the you know original uh docs of different functions pretty well
+27:05 like uh so it you know I think I feel it hallucinate less on the function coding.
+27:11 Oh interesting. How do you choose when to go to codeex versus when to go to agent for that? Um for the agent it's I
+27:17 I use it more similarly to how I use for O3. So it's more like an interactive uh
+27:23 experience. For the codex it's more like you know you have some uh you know well
+27:28 designed uh problem that you want and you know a coworker to solve and then uh it will make a PR for you but for the
+27:33 engine it's more like just give you a a function or give you a suggestion. Cool. And it can do code search because it can
+27:39 access GitHub through the API connector. So code search kind of things. Yeah,
+27:45 it almost feels like you know the agent road map up until now you've you've built the different almost like
+27:51 appendages of what it would take to have an agent and by combining them all this really is like the f first like fully
+27:57 embodied agent on a computer. I think it's very exciting. Yeah, I think another area that we're excited to to
+28:02 push on is um the experience of collaborating with the agent. I think this model is actually very good at
+28:09 multi-turn conversations and it's very nice to um to continue working on a task
+28:15 with I think that's one of the deficiencies of deep research. Um a lot of people will do multiple deep research
+28:21 requests in a single conversation but it doesn't always work so well. So I think we're really happy with this model's
+28:27 multi-turnability and we just want to you know improve even further. And then I also think like personalization and
+28:33 memory um for agents will also be very important. And also um right now every
+28:40 agent task is initiated by the user but in future it should also be doing things for you without you having to even ask
+28:46 in the first place. Yeah, I'm also pretty excited about um the UI and UX surrounding the agent because right now
+28:53 um I think you know obviously we're working in a chatbt world like it's like you start a conversation and it goes but
+28:59 you can imagine a lot of different modes of interactction interacting with an agent um and I'm really excited to
+29:05 explore different ways of yeah different ways of interacting with the with the agent. Do you see this as always being a
+29:11 kind of single omnisient super agent or will there be the you
+29:16 know financial analyst sub agent and the you know personal party planner sub
+29:22 agent like what what's your vision for how that kind of plays out? I think people have different opinions
+29:28 on this. I think in the limit, if you could just ask one thing and it can figure out
+29:35 what it needs to do to finish the thing that you want it to do for you, that seems like it would be easiest. Like if
+29:40 you just had a really amazing chief of staff who knows how to route things correctly and basically can do anything
+29:47 you need, that seems like it would be um pretty easy.
+29:53 I think I agree with that take. Um and like even in some of our trajectories where like I don't know you're asking
+29:59 about um I don't know maybe like a shopping task like sometimes it'll go into terminal and like do some like
+30:04 calculations you know budget and like I think the model should be free to use all the tools at once. Um it doesn't
+30:10 need to be a financial analyst to like have the financial analyst like tool set. Yeah, I I feel like like when you
+30:17 launch the product, it's sometimes makes uh sense to you know have some GBTS like uh you know like a customized model or
+30:25 customized instruction to you know put the model into uh you know a specific row but in general like when training
+30:31 the model there are lots of you know pos positive transfer between you know deep search uh core operations uh also you
+30:38 know slice generation like all of these skills are transferable so it uh makes much more sense to you know just have a
+30:44 single agent like, you know, as an underlying base model. Totally. I guess even though you know
+30:50 people do different types of work, we're all fundamentally we're sending emails, we're making slide decks, we're doing a lot of the same work in front of a
+30:56 computer. I'd love to understand some of the learnings from the reinforcement learning perspective like um it seems
+31:02 like that's the method that seems to really be working for you guys with agents. uh was it like very data intensive to
+31:08 kind of get to this point of having an agent that's so good at you know such a wide variety of tasks or like what what
+31:14 were some of the learnings um from an RL perspective? Yeah. So um you know uh we
+31:19 actually we create a bunch of very diverse set of task like uh some task to
+31:24 find some you know like a very niche uh like uh topic or very niche answer in the internet or some task you know like
+31:31 like just very similar to deep research like you need to write a whole uh fully lensed article and uh also lots of you
+31:39 know uh tasks like just all the tasks that we want the model to be good at and
+31:45 uh yeah and uh So far we we we think that as long as you know like you can
+31:50 you know grade this task where like after the model give you a result you you can judge whether uh the you know
+31:56 the the robots or the the model's performance good or not. You can kind of like reliably train the model to be like
+32:02 a even better on this task. And was there anything special you need to do to make sure it had good turnbyturn interaction with users when
+32:09 doing that training or was it just about the type of trajectories you collected?
+32:14 Yes. So like uh I think most uh most of time we focus on uh end to end uh
+32:20 performance like you know like a from uh from the from a way specified a prompt how to complete the task
+32:26 and somehow it's very good at working with users. To to your question the reinforcement
+32:32 learning is very data efficient. So that means that we're able to curate a much smaller set of very high quality data.
+32:39 um the scale of the data just so minuscule compared to the scale of pre-training data. Um so we're able to
+32:46 teach the model new capabilities um by just curating these much smaller highquality data sets.
+32:52 I will say to get the operator piece to work well um you know before we have before we do RL um the model has to be
+32:60 good enough to like have like a basic like basic completion of tasks. Um and our team has
+33:07 spent a lot of time in the past like over the past two maybe maybe three years um getting the model to that point
+33:14 where it's able to actually reason about a page and like kind of um like understand visual elements really well.
+33:20 So this model is built on all that as well. Actually, could you say a little bit more about that? Because I remember
+33:25 early days of OpenAI. This was always part of the like the world of bit stuff and you're trying to RL the um the mouse
+33:33 the mouse paths and it was just like way too unbounded of a problem. What's changed now for that to be kind of solvable?
+33:39 Yeah, that's great that you point out the world of bits. That's um uh this project does have a very long lineage um
+33:46 dating back to like 2017 or or so. Um actually like our like code name is like
+33:52 world of bits two like for for the computer use part. That's awesome. Um and uh yeah what's changed I think um
+34:01 essentially the scale of the training has changed like we have I don't know
+34:06 the multiplier but it's it must be like 100,000x or something like in terms of compute um uh the amount of training
+34:13 data we've done both in pre-training and RL. Um, so yeah, I really think it's
+34:19 just scale and um the the scale catching up to um our
+34:25 ambition, I guess. Wow, scale is all you need. I believe it. And some good data.
+34:31 Are there particular capabilities or functionality that you're especially excited about in agent mode? Uh yeah so
+34:37 this model is uh actually pretty good at at doing some real research like data science and also you know summarize the
+34:44 uh reports or like the findings in a spreadsheet. So we have some ev evaluation like you know data science
+34:50 bench we evaluate the model and it's actually outperform the human baseline. So in some samps it's actually super
+34:56 human in some you know research task and we can rely on them on the model to you know like perform some basic analysis
+35:03 for us and this is an area that John Blackman on our team was really pushing on like spreadsheets and data science. So shout
+35:10 out John. Spreadsheets and data science. You are automating us out of a job over here.
+35:15 Elevating us out enhancing. Another thing I'm excited about is um
+35:22 uh you know we released operator in January and um I you know it was decent
+35:28 at clicking around but I think we've substantially improved that capability where it's like much more accurate and just kind of getting the basic things
+35:34 right um is what I'm actually excited about where it can like reliably fill out a form and um you know do those kind of
+35:41 things. Date picking. Date picking. Date picking still needs a bit of work. But for some reason, date picking is just
+35:48 the hottest task. It's hard for human too. Like picking a date in the calendar drop.
+35:55 Okay, last question. Um it seems like you guys have the overall framework and structure in place for something really
+36:01 interesting here. Uh what's ahead? Where do you go from here? I I think the thing that um we're really excited about is
+36:08 that this tool that we've given the model access to is very general. It's basically um most of what you could do
+36:15 on a computer. And if you think about all of the tasks that a human can do on a computer, it's very extensive. Um and
+36:23 so now we kind of feel like it's a matter of us um making the model good at
+36:28 all of those tasks too and figuring out a way of training on as diverse of tasks as possible um with this very general
+36:36 tool. So I think there's a a lot of um hard work ahead of us but we're very excited about it and I think we're also
+36:42 excited about pushing different um forms ways of interacting with the agent. Um,
+36:48 I think there'll be a lot of new interaction paradigms between like users and um, these virtual assistants or
+36:55 agents. Um, so a lot of exciting times ahead. I can't wait to see it. Thank you.
+37:01 Thanks for joining us. Congratulations on the launch. Thank you so much. Thank you for having us.
+37:07 [Music]
+37:14 [Music]
+37:23 [Music]

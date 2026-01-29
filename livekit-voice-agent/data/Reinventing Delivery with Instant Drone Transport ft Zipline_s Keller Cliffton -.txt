@@ -1,0 +1,489 @@
+00:00 You know, for a lot of our investors,
+00:02 I think they had largely written the
+00:04 company off and we're like, "Yeah, the
+00:05 company's just dead. It's not going to
+00:06 go anywhere." I mean, it just felt like
+00:08 chewing glass. It's incredibly
+00:09 difficult. You're totally emotionally
+00:11 raw. You have no idea if you know you're
+00:13 going to make it to the next week, let
+00:14 alone the next month. I think there were
+00:16 also a lot of questions like, "What do
+00:17 you know about healthcare?" Like, "What
+00:19 do you know about aviation or
+00:21 aerospace?" Like, you know, you have no
+00:23 expertise. Like, why would why would you
+00:26 be able to succeed at this? That was
+00:30 probably the worst and most difficult
+00:32 time I've ever had to go through like in
+00:34 my life. I mean, it's just so scary. You
+00:36 know, there's like all these team
+00:38 members who are relying on you. You
+00:40 know, we we had to get lucky. And it
+00:42 also helped that
+00:44 we were just totally stubborn and
+00:46 hard-headed. We're like, we're doing
+00:47 this. No one's going to get in our way.
+00:49 I'm Keller Clifton. I'm the CEO and
+00:52 co-founder of Zipline.
+00:56 I I I I didn't even really know that
+00:58 entrepreneurship was a thing you could
+00:59 do graduating from college but I read
+01:03 delivering happiness which was this book
+01:04 by Tony Sheay and uh I was kind of blown
+01:09 away because Tony and his partner Alfred
+01:11 Len had built these amazing businesses
+01:15 coming out of college and they'd
+01:16 actually both uh lived in the same dorm
+01:18 that I lived in in college. I sent an
+01:20 email to Tony. He actually gave us an
+01:23 apartment in this apartment building
+01:24 where he had rented all these apartments
+01:25 in Las Vegas. We started building these
+01:28 cell phone robots that we were selling
+01:30 on Kickstarter at the time out of that
+01:31 apartment. We just started mailing
+01:33 robots to people that you could plug
+01:35 your iPhone into that would you become
+01:37 this little robot that run around inside
+01:38 your house. The company was called
+01:39 Remotive. Uh and Tony introduced ended
+01:42 up introducing me to Alfred about 6
+01:44 months later. Alfred came out and hung
+01:45 out in the apartment with us for uh a
+01:48 couple days and Sequoia became our first
+01:50 institutional investor. I think
+01:52 ultimately when we started shipping that
+01:54 first product for emotive it started it
+01:55 started to become pretty clear to us
+01:56 that you know consumer robotics was not
+01:59 the right place to start. We it was you
+02:01 know the more we thought about it the
+02:02 more we learned we started to understand
+02:04 that you you really want repetitive use
+02:07 cases and you want controlled
+02:08 environments. This was the reason that
+02:10 robots had already at that time scaled
+02:12 um pretty dramatically in warehouses
+02:16 in some hospitals. And I remember going
+02:19 and seeing there's actually this company
+02:21 KA Robotics which actually Alfred was
+02:23 one of the first people to work with
+02:24 when they were at Zapos. And I got to go
+02:26 to one of the KA warehouses and see
+02:28 these orange robots running around
+02:30 inside on the floor inside this
+02:32 warehouse moving things back and forth.
+02:34 They would go and pick up a shelf and
+02:35 bring it to a human packer. And I
+02:37 remember seeing that thinking, man,
+02:39 somebody's going to do that for outside
+02:40 the warehouse and that's going to be one
+02:42 of the biggest companies in the world.
+02:44 My wife as an epidemiologist and kept
+02:47 telling about these projects in public
+02:49 health, they get stuck on logistics,
+02:51 things like vaccine campaigns where they
+02:53 have the vaccines, they have the
+02:54 doctors, and they just the logistics of
+02:56 actually getting the vaccines where they
+02:58 need to be when they're needed just gets
+03:01 uh kills the whole project. Uh and
+03:03 that's uh one of the things that
+03:05 inspired us to go dig into that and
+03:07 really see what that was. Solving uh
+03:10 medical supply spy logistics with
+03:12 drones.
+03:13 The more we learned about global
+03:14 logistics, the more we understood that,
+03:16 you know, this is a market that really
+03:18 only serves the golden billion humans on
+03:21 Earth. Well, if you're the 7 billion
+03:23 people who aren't in the golden billion,
+03:24 your access either sucks or is
+03:26 non-existent. As a result of that,
+03:28 millions of people, mainly children, die
+03:31 every year due to lack of access to
+03:33 basic medical products. The more we
+03:35 understood about that, we thought, man,
+03:37 somebody's going to build an automated
+03:38 logistic system for Earth. And that
+03:41 would be something we would be very
+03:43 proud to spend a decade of our lives
+03:46 working on. Personally, as a as a very
+03:49 huge tech skeptic, I was like, "All
+03:51 right, we're going to go spend time in
+03:53 the field and understand a million
+03:54 reasons why we could never make a dent
+03:56 in this problem." And uh the deeper we
+03:60 got, the more convinced we were that we
+04:02 actually could solve this problem and
+04:04 that we should go for it.
+04:05 I think it's worth pointing out that all
+04:07 of our investors thought focusing on
+04:09 logistics was an extremely stupid thing
+04:10 to do. And I think there were also a lot
+04:12 of questions like, "What do you know
+04:13 about healthcare?" like what do you know
+04:15 about aviation or aerospace? Like you
+04:18 know you have no expertise like why
+04:21 would why would you be able to succeed
+04:23 at this?
+04:24 Quite literally everything was at stake
+04:26 during this transition. I mean we you
+04:29 know fully shut down the toy company set
+04:31 up an auto reply saying click this link
+04:33 and we'll give you a full refund. So we
+04:34 kind of like you know fully closed that
+04:36 door before knowing which door we were
+04:38 going to open next. We started going to
+04:40 places where we felt uh a new
+04:43 transformational kind of logistics
+04:44 system would just be like undeniably
+04:48 valuable. We wanted to go and and you
+04:51 know healthcare was an obvious place to
+04:52 start cuz we thought it's life- saving,
+04:55 high willingness to pay. It doesn't have
+04:57 to be perfect on day one if you're
+04:58 adding a lot of value to customers
+04:60 lives. And and then we also needed a
+05:01 public health care system. We wanted we
+05:03 didn't want to have to go, you know,
+05:04 hospital by hospital with private
+05:06 hospitals trying to convince them to use
+05:07 the system. We wanted to find, hey,
+05:08 what's a country where we could go
+05:10 partner with the public health care
+05:11 system uh and and deliver things
+05:14 autonomously. And so we were looking in
+05:18 uh Central America. We were looking in
+05:19 Africa, starting to talk to governments.
+05:21 It ended up being Rwanda, this first
+05:23 country that really took a bet on us
+05:25 saying, "Yeah, you should build that
+05:26 here and we would use it and we would
+05:28 pay for it."
+05:29 The nature of Rwanda's like topography
+05:31 is that it's super hilly. So if you like
+05:33 look on in a sky map, it's like 40 miles
+05:37 away. It could be anywhere from 3 to 6
+05:40 hour drive depending on the weather
+05:41 condition. The conventional logistics
+05:46 system
+05:47 um is insufficient in solving um the
+05:50 problem. The other thing was there's no
+05:52 standard operating procedures for how
+05:54 you like pack and fly and receipt blood
+05:57 that was just delivered from the sky. I
+05:60 think I think probably the biggest thing
+06:01 that we realized maybe the biggest
+06:02 crucible moment for us was like
+06:04 understanding that the vehicle is only
+06:06 15% of the complexity of the problem.
+06:10 You know, we we had we had thought, oh,
+06:11 we're going to design this really cool
+06:12 robot. We're going to design this really
+06:14 cool autonomous aircraft. It's going to
+06:15 deliver things autonomously. But it
+06:17 turns out that in a in a in a national
+06:19 scale logistics system, there are a lot
+06:22 of different kinds of software and
+06:23 systems that all have to be interacting
+06:26 in concert to actually have an instant
+06:30 delivery service that people can rely on
+06:31 with their lives.
+06:32 We didn't really know anything about
+06:35 before we had a package. We thought that
+06:37 we could order, you know, the hospitals
+06:39 can place order via a nice iPad
+06:41 interface. I visited some of the health
+06:43 facilities. They barely had cell
+06:46 coverage in most parts of the hospital.
+06:47 And by the way, they're always like on
+06:48 the move. So it's not like, you know,
+06:50 it's it's it's a luxury to be like, I'm
+06:51 gonna run back to this place where, you
+06:54 know, there's a computer or whatever for
+06:56 me to place an order. And so we designed
+06:59 a ordering system that was just phone
+07:01 based and WhatsApp based.
+07:03 We didn't know this until we launched,
+07:04 but Rwanda has some of the most volatile
+07:06 weather of any country on Earth. And so
+07:08 we were operating in lightning storms,
+07:11 rainstorms, insane dust storms. we knew
+07:14 we we'd be flying very low over
+07:15 mountains. So before we went to Rwanda,
+07:17 we engaged with our friends at NASA, the
+07:20 world experts in this lowaltitude uh
+07:22 modeling of the airspace. And they sort
+07:24 of, you know, were scratching their
+07:26 heads for a minute and they like, you
+07:27 know, now that we think about it, uh
+07:29 we've never actually had the data from
+07:31 flying low over mountains and storms
+07:33 because no one does that. The moment the
+07:35 vision for zipline really clicked for me
+07:38 was when we got past the idea of a
+07:39 quadcopter
+07:41 and really started to think deeply about
+07:44 an airplane. At first it seemed totally
+07:46 preposterous like wait how how are you
+07:48 going to make an airplane work for this?
+07:50 And I think it was only a few days of
+07:53 thought experiment and whiteboarding out
+07:55 that we started to realize, oh, hey, the
+07:58 number one thing we were hearing from
+07:59 our customers is each additional
+08:01 kilometer that you can get outside of a
+08:04 region's biggest city is that much more
+08:06 value. We started talking to some
+08:08 experts and realized a pretty small
+08:10 little airplane could fly pretty fast
+08:13 extremely efficiently and range
+08:16 estimates for that, you know, 10x, 20x,
+08:19 30x,
+08:20 what a quadcopter could do. I think back
+08:23 to when we were getting very close to
+08:25 shipping and at that point, we knew it
+08:27 was Rwanda. We knew exactly what the use
+08:29 case was. It was blood delivery. We knew
+08:31 that most of those blood deliveries were
+08:33 going to go to bleeding out in
+08:35 childbirth and the Ministry of Health
+08:37 started sending us photos uh of mothers
+08:40 who had passed away. That was one of
+08:42 those moments that was incredibly
+08:44 intense um but also incredibly
+08:47 clarifying when you have that in front
+08:49 of you. you know, all you know, kind of
+08:52 academic debates about technology
+08:54 decisions go out the window because you
+08:56 had, you know, exactly what your
+08:57 customer needs and why they needed it
+08:59 and when they needed it. And not only
+09:01 was that super motivating, but focusing.
+09:04 So, we we knew we knew we were only
+09:05 doing what we absolutely had to do to
+09:07 get that first version out the door.
+09:08 I remember the first time the Rwanda
+09:11 Civil Aviation Authority came to visit
+09:13 our distribution center because we have
+09:15 to get approval to fly beyond visual
+09:17 line of sight. Otherwise, how do you
+09:18 deliver to the hospitals? because we
+09:20 never had regulatory to fly beyond
+09:22 visual line of sight. It meant that
+09:24 we've done the length of the flight by
+09:26 kind of like circling around the dis our
+09:28 test sites and whatnot, but we've never
+09:30 actually had a zip,
+09:33 you know, disappear
+09:36 into the horizon. You know, we had to
+09:38 like walk them through all of our
+09:39 procedures, do all the pre-flight checks
+09:41 and and and everything. And then the
+09:43 moment the zip launched and then it, you
+09:46 know, 10 seconds later it disappeared
+09:48 into the horizon
+09:52 um I think the whole company stopped
+09:55 breathing.
+09:58 You just never seen it before. It was
+10:00 the very first time we were seeing it.
+10:02 And you know, we were also kind of
+10:04 looking at the iPad. you know, you're
+10:06 like looking down to on the iPad to make
+10:07 sure everything's okay because it's
+10:08 still monitoring the zip saying, you
+10:10 know, sending data packets back to be
+10:11 like, you know, it's about to deliver.
+10:13 It's coming back. And we just kept
+10:15 looking down and up, down and up, like,
+10:17 is it coming back yet? Is it back yet?
+10:19 And then finally when it like came back
+10:21 like I think it was like the it felt
+10:22 like the longest like 5 minutes of our
+10:24 lives. We ran back inside the tent make
+10:26 sure they couldn't see us and then we
+10:28 started just screaming and jumping up
+10:30 and down cuz that was the very first
+10:33 time any of us had ever seen an actual
+10:36 beyond visual line of sight flight.
+10:38 You know we got the service launched. We
+10:41 turned on one hospital and then
+10:42 everything broke again for the next you
+10:44 know eight eight months as we had to
+10:46 like fix things and iterate. So you know
+10:48 the first year of operating commercially
+10:50 was extraordinarily painful basically
+10:53 like non-stop
+10:55 over you know uh allnighters
+10:58 nothing working constant rocks in the
+11:00 gears and then once it was working well
+11:02 for that hospital it was clearly saving
+11:04 lives then it was like can we expand to
+11:06 21 different hospitals interestingly
+11:07 that only took us about 3 months it was
+11:10 9 months to get the first hospital
+11:11 working and then 3 months to get to all
+11:13 the 20 other hospitals that we had
+11:14 signed up to serve you know today
+11:16 zipline serves
+11:18 about 5,000 hospitals and health
+11:19 facilities globally. We've just crossed
+11:21 100 million commercial autonomous miles
+11:23 and it's it's become the largest
+11:25 commercial autonomous system on Earth.
+11:28 But I think the other thing that really
+11:29 helped us is that we had one customer
+11:30 who believed in us and was willing to
+11:32 bet on us. And you know the ministry of
+11:34 health and the minister um she had made
+11:38 this bet on us and we were pretty
+11:39 hellbent on showing that the technology
+11:41 could at least do that one basic thing
+11:43 which was to deliver blood instantly to
+11:44 those 21 hospitals. And 7 years after
+11:47 that conversation I was meeting with
+11:49 this minister and she told me, "Oh yeah,
+11:51 Keller, you never knew." But the reason
+11:53 we said yes was that just that morning I
+11:57 had gotten there this email had gone
+11:58 around the Ministry of Health about this
+12:00 mom who had lost her life because they
+12:02 it took us like 9 hours to get a blood
+12:04 transfusion to her and she had passed
+12:06 away by the time we got it to her. And I
+12:08 remember thinking like this is so
+12:09 screwed up. There has to be a better
+12:10 way. And that afternoon you happen to
+12:12 walk in.
+12:15 Most hardware companies die before
+12:17 shipping anything. But then there's like
+12:19 another crucible moment which is like
+12:21 the second product. The initial platform
+12:23 that Zipline built which we creatively
+12:25 called platform one that system was
+12:27 really designed specifically with
+12:28 healthcare delivery in mind and it was
+12:30 designed to operate at national scale.
+12:32 Customers had been asking us for years.
+12:34 Let's not just serve outside these metro
+12:35 areas. Let's serve inside the metro
+12:37 area. We're like no we don't do that. We
+12:38 don't do that. We don't do that. And
+12:40 once we had told every customer that
+12:42 over and over and over for a couple
+12:43 years it's a pretty good sign that you
+12:45 maybe should think about trying to solve
+12:46 that problem. overall like logistics
+12:48 directly to homes. Building instant
+12:50 delivery and what we thought of as
+12:51 teleportation directly to homes was
+12:57 basically almost an infinitely large
+12:59 market. We then started using that
+13:01 product in 2020 to deliver to homes and
+13:03 it it was clear to us that there was
+13:04 demand for many tens of billions of
+13:07 deliveries every year for this kind of a
+13:08 service. And it was also clear that
+13:11 platform one wasn't going to be able,
+13:12 you know, the overall architecture of
+13:13 the system was not designed to serve uh
+13:17 millions of homes in a suburban or even
+13:19 an urban uh uh location.
+13:21 So Kenan led its small team to really
+13:24 derisk it from a technology standpoint
+13:27 like could we actually tackle some of
+13:29 these use cases and what would the
+13:31 design look like? How crazy is it going
+13:33 to be? You know, when we set out to
+13:35 first build Platform 2, Kenan was
+13:38 leading this new products team, and they
+13:42 came up with this crazy contraption
+13:45 where the aircraft undocks, flies up
+13:49 high, flies along, and from altitude on
+13:52 a string, it lowers down a second robot,
+13:55 and that second robot is going to be
+13:56 silent and safe and small, and that is
+13:59 going to leave the package behind.
+14:00 Frankly, I thought Kenan would have been
+14:02 insane. like this sounds really cool,
+14:04 but there's no way this thing's gonna
+14:05 work. Kenan convinced us to pull a small
+14:08 little tiger team onto this project and
+14:11 work on a mediumfidelity prototype and
+14:15 we invited everyone from the company to
+14:17 come out and see this delivery
+14:18 experience. Kenan basically posed this
+14:20 challenge to pretty much the company
+14:22 which is come see what this delivery
+14:24 experience is like and if you have as
+14:26 much conviction as we do in this, let's
+14:28 bet the company on it. And the night
+14:30 before the bit that we met as a
+14:32 leadership team, as a board to have that
+14:34 discussion, Ryan texts me and says, you
+14:37 know, I'm going to trying to kill
+14:38 concept tomorrow. And I remember
+14:40 thinking to myself, I was like, all
+14:41 right, Ryan hasn't seen this demo yet,
+14:43 so like, let's see what happens.
+14:48 [Music]
+15:06 That might be the last time I I ever
+15:10 doubted Kenan.
+15:11 By noon that day, Ryan was like, "All
+15:12 right, how fast can we ship this thing?"
+15:14 So seeing that early concept of platform
+15:17 2 totally changed everything for me.
+15:20 Platform 2
+15:22 really marks the next stage of growth
+15:24 for the company. While I think back to
+15:27 2016 and we were gearing up to launch
+15:31 the 21 hospitals in Rwanda and in some
+15:35 ways it almost feels familiar cuz we're
+15:37 trying to launch like this you know
+15:39 similar number of stores for Walmart at
+15:41 this very moment. For a decade, it's
+15:44 been clear that, you know, getting
+15:45 permission to fly beyond visual line of
+15:47 sight in the US is really the holy grail
+15:49 from a regulatory perspective. And
+15:51 Zipline in 2023 became the first company
+15:54 in US history to be awarded like full
+15:56 approval to fly beyond visual sight in
+15:58 all 50 states in the United States. And
+16:00 it was a it was a milestone 10 years in
+16:02 the making because you know we had we
+16:04 had started building Zipline in 2013
+16:07 thinking you know that
+16:11 ultimately like will this ever be
+16:12 possible? It was not clear you know will
+16:13 this ever be allowed? It was not clear.
+16:15 And so yeah 10 years later we were
+16:17 approved for full scale commercial
+16:19 operations in the US. You know, the
+16:20 thing that ultimately does kill most
+16:22 early stage startups is is like you just
+16:24 like the team just gives up. And at some
+16:28 point it becomes screwed up enough, the
+16:30 situation becomes screwed up enough,
+16:31 enough people leave, enough investors
+16:33 just kind of like consider the company
+16:35 to be dead that the people will
+16:36 eventually just give up and the company
+16:38 dies. I think probably Zipline is a good
+16:40 example of like but what if you actually
+16:42 just didn't you know like what if even
+16:45 though it was like super bad and it was
+16:47 not possible to raise money for the
+16:48 company and everybody thought it was a
+16:49 stupid idea most the investors thought
+16:51 the company was dead you know many many
+16:55 people had left the company cuz it
+16:56 didn't seem very promising but what if
+16:59 you just didn't just kept going and like
+17:02 kept working all nighters and you know I
+17:06 think that there were a few of us who
+17:07 were pretty darn are
+17:11 uh unwilling to give up.

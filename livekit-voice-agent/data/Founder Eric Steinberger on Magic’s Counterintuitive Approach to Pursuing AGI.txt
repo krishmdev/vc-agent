@@ -1,0 +1,4258 @@
+00:00 thing that remains to be solved is uh
+00:03 
+
+00:03 General domain uh long Horizon
+00:05 
+
+00:05 reliability and I think you need in
+00:07 
+
+00:07 France time comput test I'm confused for
+00:08 
+
+00:08 that when you try to
+00:11 
+
+00:11 prove a new theorem in math or when
+00:14 
+
+00:14 you're writing a large um software
+00:17 
+
+00:17 program or when you're writing an essay
+00:19 
+
+00:19 of reasonable complexity you usually
+00:21 
+
+00:21 wouldn't write a token by
+00:23 
+
+00:23 token uh you you'd want to think quite
+00:25 
+
+00:25 hard about some of those tokens and um
+00:28 
+
+00:28 finding ways to spend not
+00:31 
+
+00:31 1X or 2X or 10x but a million x the
+00:35 
+
+00:35 resources on that token uh in a
+00:38 
+
+00:38 productive way I think is really
+00:40 
+
+00:40 important that is probably the last big
+00:43 
+
+00:43 problem
+00:46 
+
+00:46 [Music]
+01:01 
+
+01:01 hi and welcome to training data I'm
+01:03 
+
+01:03 delighted to share today's episode with
+01:04 
+
+01:04 Eric Steinberger founder and CEO of
+01:07 
+
+01:07 magic Eric has an epic backstory as a
+01:10 
+
+01:10 researcher having caught the attention
+01:11 
+
+01:11 of noan brown and becoming one of his
+01:13 
+
+01:13 research collaborators while still a
+01:15 
+
+01:15 student in high school Eric is known for
+01:17 
+
+01:17 his Exquisite research taste as well as
+01:19 
+
+01:19 his big ambition to build an AI software
+01:22 
+
+01:22 engineer we're excited to ask Eric about
+01:24 
+
+01:24 what it takes to build a fullstack
+01:25 
+
+01:25 company in AI his Ambitions for magic
+01:29 
+
+01:29 and what separates a good AI researcher
+01:31 
+
+01:31 from a legendary
+01:32 
+
+01:32 [Music]
+01:33 
+
+01:33 one H Eric welcome to the show thank you
+01:36 
+
+01:36 so much for joining us thank you for
+01:38 
+
+01:38 having me Sonia okay so let's start with
+01:40 
+
+01:40 who's Eric you're a Vienna born vrand uh
+01:43 
+
+01:43 whose early passion for math turned into
+01:45 
+
+01:45 a I think what you described as a
+01:47 
+
+01:47 full-fledged obsession with AI by age 14
+01:50 
+
+01:50 take us back to age 14 Eric like what
+01:52 
+
+01:52 were you up to how did you become so
+01:53 
+
+01:53 obsessed with
+01:55 
+
+01:55 AI uh thank you Sonia I I I think I just
+01:58 
+
+01:58 had my midlife crisis when I was 14 and
+02:01 
+
+02:01 um I I just was just looking for
+02:03 
+
+02:03 something meaningful to do spent about a
+02:05 
+
+02:05 year looking at physics math bio
+02:08 
+
+02:08 medicine just anything really that
+02:10 
+
+02:10 seemed valuable to the world and um at
+02:13 
+
+02:13 some point bumped into just simply the
+02:15 
+
+02:15 idea of AI it hadn't sort of occur to me
+02:17 
+
+02:17 until then uh and if you could just
+02:20 
+
+02:20 build a system a computer system that
+02:23 
+
+02:23 could do all this other stuff for me
+02:24 
+
+02:24 like great like I don't have to decide
+02:26 
+
+02:26 so uh it felt like my decision paralysis
+02:28 
+
+02:28 was uh sort of resolved and I it was
+02:31 
+
+02:31 this weird moment where I could just see
+02:32 
+
+02:32 the next 30 years of my life unfold in
+02:34 
+
+02:34 front of me and I was like okay this is
+02:35 
+
+02:35 clearly what's going to happen like I
+02:36 
+
+02:36 have to I have to do this and uh it was
+02:39 
+
+02:39 it was quite it was quite nice um I like
+02:41 
+
+02:41 predictability so uh it was great to
+02:44 
+
+02:44 like know what the world will look like
+02:46 
+
+02:46 and you started loving math like why why
+02:48 
+
+02:48 AI then I think I'm naturally attracted
+02:51 
+
+02:51 to math it's just what my brain sort of
+02:53 
+
+02:53 gravitates to uh AI just seems useful I
+02:57 
+
+02:57 the thing that's most important to me is
+02:58 
+
+02:58 just what is useful for Humanity in the
+03:00 
+
+03:00 world and uh math is nice but not useful
+03:04 
+
+03:04 at some point like kind of you know 17
+03:06 
+
+03:06 dimensional spheres are are probably not
+03:08 
+
+03:08 going to be the best career choice uh if
+03:10 
+
+03:10 you want to be useful so I it seemed
+03:13 
+
+03:13 like something that I could get good at
+03:15 
+
+03:15 uh but also just the most important
+03:18 
+
+03:18 thing ever uh so it was a very clear
+03:20 
+
+03:20 choice AI just is like as it was clear
+03:24 
+
+03:24 10 years ago it's just it wasn't close
+03:26 
+
+03:26 and now it's close and
+03:28 
+
+03:28 clear can you tell the story of how you
+03:30 
+
+03:30 got aair I think it is such an epic
+03:32 
+
+03:32 story sure I I I mean so when I started
+03:35 
+
+03:35 with at 14 I had I didn't really know
+03:37 
+
+03:37 how to program I I didn't get into
+03:40 
+
+03:40 programming out of curiosity about
+03:42 
+
+03:42 computers I just wanted to uh solve AI
+03:45 
+
+03:45 basically um so after a couple years of
+03:48 
+
+03:48 just warming up on my own uh I reached
+03:50 
+
+03:50 out to uh one of David Silver's uh PhD
+03:53 
+
+03:53 students uh who who the alpago um Deep
+03:57 
+
+03:57 Mind co-founder uh and um the the this
+03:60 
+
+03:60 this PhD student I guess at that point
+04:01 
+
+04:01 he was a graduate and worked that deep
+04:03 
+
+04:03 mind um I asked him if he could like
+04:05 
+
+04:05 spend a year with me uh just every two
+04:07 
+
+04:07 weeks bashing my work uh sort of trying
+04:09 
+
+04:09 to do so sort of like super speed up uh
+04:12 
+
+04:12 uh mini kind of PhD like experience
+04:15 
+
+04:15 where I could just learn how to do
+04:17 
+
+04:17 research and uh I sent him this like
+04:19 
+
+04:19 giant email you could print it out I
+04:21 
+
+04:21 don't know how many pages it would be
+04:22 
+
+04:22 would it be a lot of pages I was
+04:23 
+
+04:23 basically just saying like I want to
+04:24 
+
+04:24 build this algorithm you made in your
+04:26 
+
+04:26 PhD sorry I want to beat this algorithm
+04:28 
+
+04:28 you made in your PhD here like here's a
+04:29 
+
+04:29 list of of 10 ideas I don't know if
+04:31 
+
+04:31 they're going to work and I think I need
+04:33 
+
+04:33 your help to figure that out um and then
+04:35 
+
+04:35 over a year we eventually got there um
+04:38 
+
+04:38 and he was like his name is Johannes
+04:40 
+
+04:40 Johannes was kind enough to just bash me
+04:42 
+
+04:42 every two weeks uh roughly and um yeah I
+04:46 
+
+04:46 it was it was brutal dude um like was
+04:48 
+
+04:48 just like cuz he I was like he hold me
+04:50 
+
+04:50 to the standard you know and I was like
+04:52 
+
+04:52 like don't don't be nice just cuz I'm
+04:54 
+
+04:54 you were in high school yeah I was in
+04:55 
+
+04:55 high school uh and and then when we were
+04:57 
+
+04:57 done uh I just graduated high school
+04:59 
+
+04:59 when when I finished so this this when I
+05:02 
+
+05:02 when I finished um the project uh that I
+05:04 
+
+05:04 was trying to get to with with with this
+05:07 
+
+05:07 uh and then noan Brown who is obviously
+05:08 
+
+05:08 one of the best RL researchers in the
+05:10 
+
+05:10 world um reached out because he had
+05:12 
+
+05:12 worked on something similar turns out
+05:13 
+
+05:13 and and we sort of uh uh had like some
+05:16 
+
+05:16 ideas that were very similar and some
+05:18 
+
+05:18 ideas that were a little different and
+05:19 
+
+05:19 so so we just both published this and um
+05:22 
+
+05:22 uh he reached out and then I got to work
+05:23 
+
+05:23 with no Brown for two years which was
+05:24 
+
+05:24 great and then that continued and so I
+05:26 
+
+05:26 got pass for another attention you were
+05:27 
+
+05:27 a high schooler he was no one brown um
+05:30 
+
+05:30 well I mean he published a paper called
+05:31 
+
+05:31 Deep counterfactual regret minimization
+05:33 
+
+05:33 and I published a paper called single
+05:34 
+
+05:34 deep counterfactual regret minimization
+05:36 
+
+05:36 and mine beat his by a little bit and uh
+05:38 
+
+05:38 so you want to know and brown as a high
+05:40 
+
+05:40 schooler uh I think I just graduated and
+05:43 
+
+05:43 I also it took him like three months to
+05:45 
+
+05:45 write this paper and it took me a couple
+05:46 
+
+05:46 years but uh it it uh yeah I mean
+05:50 
+
+05:50 slightly I'm sure he like would have
+05:52 
+
+05:52 come up with this the next day but the
+05:55 
+
+05:55 like the the the sort of the the gap
+05:56 
+
+05:56 between the two things but um it was it
+05:58 
+
+05:58 was just uh yeah yeah it was like
+05:60 
+
+06:00 obsession is the right word I just uh I
+06:02 
+
+06:02 do things like 100% And
+06:05 
+
+06:05 and yeah so so that that that was that
+06:07 
+
+06:07 was a lot of fun um kept working in our
+06:10 
+
+06:10 all with noan brown for a while and uh
+06:12 
+
+06:12 yeah so that's that's how I got to Fair
+06:13 
+
+06:13 noan Brown worked at fair at the time
+06:15 
+
+06:15 and uh he he reached out I was actually
+06:17 
+
+06:17 I was at University then and
+06:21 
+
+06:21 um basically just worked part-time as a
+06:24 
+
+06:24 researcher at Fair while studying and
+06:27 
+
+06:27 anyway so that was that was it that's
+06:29 
+
+06:29 awesome um it was it was a lot of fun no
+06:31 
+
+06:31 was great like the the brainstorm ping
+06:33 
+
+06:33 pong sessions with no Brown dude um
+06:36 
+
+06:36 there's like nothing like this where you
+06:37 
+
+06:37 just like there's like this problem and
+06:40 
+
+06:40 it's sort of like you know maybe you
+06:41 
+
+06:41 would like start a six month research no
+06:42 
+
+06:42 Noom and I would get on a call and it
+06:44 
+
+06:44 would just like we just discuss it and
+06:46 
+
+06:46 it's done that was so great I love that
+06:47 
+
+06:47 I love that what makes him so great as a
+06:49 
+
+06:49 researcher uh I think it's a number of
+06:52 
+
+06:52 things um as a researcher generally from
+06:54 
+
+06:54 more from a meta level he is fantastic
+06:57 
+
+06:57 at picking the right problems and uh
+07:00 
+
+07:00 spending a long time just grinding to
+07:03 
+
+07:03 make it better and better and better and
+07:04 
+
+07:04 better so he's very good at the whole
+07:05 
+
+07:05 like compounding thing um in research uh
+07:09 
+
+07:09 also making bets that aren't obviously
+07:12 
+
+07:12 uh the right bets when he makes them he
+07:14 
+
+07:14 makes them earlier I suppose and and
+07:16 
+
+07:16 making them def so he's generally very
+07:17 
+
+07:17 good at picking problems and then
+07:19 
+
+07:19 attacking them consistently um he's also
+07:21 
+
+07:21 just very smart I guess that
+07:23 
+
+07:23 helps he works really hard he used to do
+07:26 
+
+07:26 100 hour weeks during his PhD I don't
+07:27 
+
+07:27 know if he still does them uh uh but uh
+07:30 
+
+07:30 he used to he used to work really really
+07:31 
+
+07:31 hard during his PhD I imagine he still
+07:33 
+
+07:33 is um okay so Nome arranged for you to
+07:35 
+
+07:35 become a researcher at fairwell you were
+07:39 
+
+07:39 still University student um if correct
+07:41 
+
+07:41 and you were jug my first semester I
+07:42 
+
+07:42 think or something so you were juggling
+07:45 
+
+07:45 that you were juggling being a
+07:47 
+
+07:47 collaborator to Noah at fair and then
+07:49 
+
+07:49 you became obsessed with yet another
+07:51 
+
+07:51 problem climate change and and actually
+07:53 
+
+07:53 started an NGO that is incredibly
+07:55 
+
+07:55 popular uh climate science um so you
+07:57 
+
+07:57 just didn't have enough on your plate uh
+07:60 
+
+07:60 was actually too crazy I that's when I
+08:01 
+
+08:01 dropped out I was like this is crazy
+08:03 
+
+08:03 this is too much I can do two things I
+08:05 
+
+08:05 cannot do three was like my conclusion
+08:06 
+
+08:06 after after doing like uh I did three
+08:09 
+
+08:09 months of that uh that was
+08:11 
+
+08:11 terrible that was that was [ __ ] awful
+08:14 
+
+08:14 doing like all three things cuz it just
+08:16 
+
+08:16 like you just can't do well at three
+08:18 
+
+08:18 things I mean Elon can but maybe I'll
+08:20 
+
+08:20 learn it in 10 years but the the I I I
+08:22 
+
+08:22 couldn't at the time uh so I dropped out
+08:24 
+
+08:24 at the time but yeah so I started an NGO
+08:26 
+
+08:26 I generally I just think like Cherry
+08:27 
+
+08:27 stuff is awesome and hugely
+08:32 
+
+08:32 appreciated like it's it's sort of like
+08:34 
+
+08:34 super high status to start a startup uh
+08:37 
+
+08:37 but I think it should be like equally
+08:38 
+
+08:38 cool to start a charity you're like
+08:40 
+
+08:40 helping the world in other ways um and
+08:42 
+
+08:42 so uh yeah I mean we we started it as a
+08:45 
+
+08:45 it's a nonprofit but we started at like
+08:46 
+
+08:46 a startup people were working insanely
+08:48 
+
+08:48 hard uh we had clear objectives it was
+08:51 
+
+08:51 you know a software product effectively
+08:53 
+
+08:53 uh it's it it was much more similar to a
+08:55 
+
+08:55 startup with the exception that there
+08:56 
+
+08:56 was no money in no money out um
+08:59 
+
+08:59 effectively
+09:00 
+
+09:00 which just very weird but um the yeah
+09:04 
+
+09:04 was mostly volunteered D or I guess is I
+09:05 
+
+09:05 just no longer run it uh but uh yeah
+09:08 
+
+09:08 that that that was an interesting
+09:10 
+
+09:10 experience you'd think I would like
+09:11 
+
+09:11 learn transfer a lot from running a
+09:14 
+
+09:14 quote unquote company to running a quote
+09:16 
+
+09:16 unquote company now but they is so
+09:17 
+
+09:17 different that I could like there was
+09:19 
+
+09:19 like no transfer at all between climate
+09:21 
+
+09:21 science and Magic like a th volunteers
+09:23 
+
+09:23 20 hardcore Engineers no money at all I
+09:26 
+
+09:26 can't tell you how much we rais cuz it's
+09:27 
+
+09:27 not a yet but the you know Giant
+09:30 
+
+09:30 uh it's it's like completely different
+09:32 
+
+09:32 in every imaginable way totally so but
+09:35 
+
+09:35 yeah it's a lot fun so Eric climate
+09:37 
+
+09:37 science became an incredibly successful
+09:39 
+
+09:39 uh nonprofit and it wasn't just any
+09:42 
+
+09:42 nonprofit uh what made you decide to
+09:45 
+
+09:45 kind of hand over the rins and hand over
+09:46 
+
+09:46 the torch on that and and go start ACC
+09:48 
+
+09:48 companying AI I just thought AGI was
+09:50 
+
+09:50 further away when we started it at all
+09:52 
+
+09:52 uh I wouldn't ever have started anything
+09:54 
+
+09:54 else uh if I thought AI was so close uh
+09:58 
+
+09:58 and once I realized it is uh there was
+10:01 
+
+10:01 just like no other I I was I mean like I
+10:04 
+
+10:04 my initial thing was always AI That's
+10:06 
+
+10:06 what I did as a kid yeah uh I care about
+10:09 
+
+10:09 various issues in the world but uh it's
+10:12 
+
+10:12 n none of them are my like unique
+10:14 
+
+10:14 calling in any way I just you know I
+10:16 
+
+10:16 hopefully be in a position to donate a
+10:17 
+
+10:17 bunch of money and whatever but uh uh
+10:21 
+
+10:21 the thing I care about fundamentally is
+10:22 
+
+10:22 Agi and uh it was like oh damn it this
+10:25 
+
+10:25 is not 20 years away so I have been
+10:27 
+
+10:27 running around with the this AGI to-do
+10:29 
+
+10:29 list which is somewhat of a meme uh
+10:32 
+
+10:32 internally because we just like going
+10:34 
+
+10:34 through it then we're trying like to fix
+10:36 
+
+10:36 all these problems you have seen it yes
+10:37 
+
+10:37 we showed it to you um and I've been
+10:39 
+
+10:39 running around with a version of this
+10:41 
+
+10:41 there's actually like a 2017 or so like
+10:43 
+
+10:43 I was still in high school I got I don't
+10:46 
+
+10:46 know why but some conference invited me
+10:48 
+
+10:48 to present my AGI to the list it was
+10:50 
+
+10:50 wrong at the time I was also I was also
+10:51 
+
+10:51 sure it was wrong but um at some point
+10:54 
+
+10:54 so that was one thing I just couldn't at
+10:56 
+
+10:56 all figure out and I don't like blue sky
+10:58 
+
+10:58 research in the sense of like just
+10:59 
+
+10:59 staring at a wall and trying to like
+11:01 
+
+11:01 figure out what the right question is um
+11:04 
+
+11:04 I I I really like to have the question
+11:05 
+
+11:05 and then look for the right answer uh
+11:08 
+
+11:08 when starting an intense project uh
+11:10 
+
+11:10 because you need to know which direction
+11:11 
+
+11:11 you run in to really plan for it uh and
+11:14 
+
+11:14 the many things seemed clear but it
+11:16 
+
+11:16 seemed completely unclear how to make
+11:18 
+
+11:18 these models reason in the general
+11:19 
+
+11:19 domain uh and uh that became more clear
+11:24 
+
+11:24 with language models uh especially code
+11:26 
+
+11:26 models uh and and so uh yeah when when I
+11:30 
+
+11:30 saw just some of these early some of the
+11:31 
+
+11:31 early results in in the space like I was
+11:33 
+
+11:33 like okay I know all this stuff from the
+11:34 
+
+11:34 RL World um I have a bunch of other
+11:37 
+
+11:37 thoughts this seems great like we should
+11:40 
+
+11:40 just take LMS and make them do the RL
+11:43 
+
+11:43 stuff um so very simple kind of uh uh
+11:48 
+
+11:48 proposal but I think that's sort of
+11:50 
+
+11:50 where uh I mean it makes a lot of sense
+11:53 
+
+11:53 RL has been doing this for 10 years it
+11:54 
+
+11:54 works in in restricted domains if you
+11:57 
+
+11:57 can make something work in 20 restricted
+11:58 
+
+11:58 domains uh and you have something else
+12:01 
+
+12:01 that works in a general domain if you
+12:02 
+
+12:02 can combine them maybe you get both the
+12:04 
+
+12:04 X and the Y AIS and then you know you
+12:06 
+
+12:06 have your beautiful top right corner uh
+12:08 
+
+12:08 of the Matrix and uh yeah so it seemed
+12:11 
+
+12:11 like it seemed pursuable and if
+12:13 
+
+12:13 something when something becomes when
+12:15 
+
+12:15 something as important as AGI becomes a
+12:17 
+
+12:17 an actually executable to doist
+12:19 
+
+12:19 obviously there are still like things to
+12:20 
+
+12:20 figure out like you know details of the
+12:21 
+
+12:21 algorithms how do you make it efficient
+12:23 
+
+12:23 etc etc like it's not like we knew
+12:24 
+
+12:24 everything at all um many many things to
+12:27 
+
+12:27 figure out but the direction was clear
+12:29 
+
+12:29 and
+12:30 
+
+12:30 yeah so seemed like the right moment
+12:33 
+
+12:33 okay we're gonna Circle back to your AGI
+12:34 
+
+12:34 to-do list later because I'm I'm I'm
+12:36 
+
+12:36 curious about it sure um I want to brag
+12:39 
+
+12:39 about you for minutes because it might
+12:40 
+
+12:40 be wrong still I don't know until we
+12:42 
+
+12:42 have AGI it isn't is a hypothetical AGI
+12:44 
+
+12:44 to-do list but we're trying it's it's a
+12:47 
+
+12:47 I think the research field is tracking
+12:48 
+
+12:48 pretty closely to your to-do list um I
+12:51 
+
+12:51 want to brag about you for a minute I
+12:52 
+
+12:52 think you've been incredibly humble
+12:53 
+
+12:53 humble about your background um but you
+12:56 
+
+12:56 know as a high school student you did
+12:58 
+
+12:58 catch gnome Brown's Eye and and um as
+13:01 
+
+13:01 you know as one of his colleagues at
+13:02 
+
+13:02 fair you became one of his top
+13:04 
+
+13:04 collaborators not even just one of one
+13:06 
+
+13:06 of many because they're such talented
+13:07 
+
+13:07 people that work there but you're one of
+13:09 
+
+13:09 his top collaborators um and you know
+13:11 
+
+13:11 when I speak to folks that know you they
+13:12 
+
+13:12 just say extraordinary things about your
+13:14 
+
+13:14 capabilities as a researcher your
+13:16 
+
+13:16 creativity uh your work ethic as far as
+13:18 
+
+13:18 I can tell you work non-stop think you
+13:20 
+
+13:20 texted me at 2 am in preparation for
+13:22 
+
+13:22 this podcast um so I think it's safe to
+13:25 
+
+13:25 say no no uh thank you silent mod um
+13:29 
+
+13:29 anyways I think it's safe to say that
+13:30 
+
+13:30 you are one of the brightest minds of
+13:32 
+
+13:32 the current research generation already
+13:33 
+
+13:33 and will certainly be one of the legends
+13:35 
+
+13:35 that people talk about um for the next
+13:37 
+
+13:37 decade and so with that in mind I'd love
+13:39 
+
+13:39 to um ask you some questions of advice
+13:42 
+
+13:42 for for aspiring researchers and so
+13:44 
+
+13:44 maybe first off you did it all from a
+13:46 
+
+13:46 very untraditional background um how did
+13:49 
+
+13:49 you do it and like uh do you think that
+13:51 
+
+13:51 like what what advice would you give to
+13:52 
+
+13:52 others in your shoes I can only really
+13:54 
+
+13:54 speak for the sort of profile of goals
+13:56 
+
+13:56 and person I am I think I was lucky in
+13:60 
+
+13:60 the sense that I knew very very early
+14:02 
+
+14:02 with 14 as as we said exactly what I
+14:04 
+
+14:04 wanted to do with my life I had no doubt
+14:06 
+
+14:06 at all um and and and uncertainty can be
+14:10 
+
+14:10 paralyzing to a lot of people uh I also
+14:12 
+
+14:12 had a very clear sense that I did not at
+14:15 
+
+14:15 all have a plan B like there was no
+14:18 
+
+14:18 other path in life that I would have
+14:19 
+
+14:19 been even like remotely above the
+14:21 
+
+14:21 neutral line on like it it had to be
+14:24 
+
+14:24 build AI everything else is completely
+14:25 
+
+14:25 irrelevant so you know I understand so
+14:28 
+
+14:28 for many people like you know paying job
+14:30 
+
+14:30 at Google is is a great uh great
+14:33 
+
+14:33 achievement I mean I would if if it's on
+14:35 
+
+14:35 AI it's fine but it you get what I mean
+14:38 
+
+14:38 like I I just knew that there was
+14:40 
+
+14:40 nothing else I could do and like be
+14:42 
+
+14:42 fulfilled in life and look back when I'm
+14:44 
+
+14:44 90 and be happy so in a way like burning
+14:46 
+
+14:46 the boats very very early gives you the
+14:48 
+
+14:48 opportunity to just be be get like do
+14:53 
+
+14:53 things that You' otherwise do 10 years
+14:54 
+
+14:54 later which again even like I I sucked
+14:57 
+
+14:57 at the beginning it took me two months
+14:58 
+
+14:58 to understand the first p paper I triy
+14:60 
+
+14:60 to understand um like I was terrible at
+15:03 
+
+15:03 programming for a long time but when
+15:05 
+
+15:05 you're a
+15:06 
+
+15:06 teenager you're like a decent researcher
+15:09 
+
+15:09 you don't have to be great like you know
+15:11 
+
+15:11 you that gets you that gets you uh
+15:14 
+
+15:14 things like a great mentor who then
+15:15 
+
+15:15 bashes you for a year uh which you know
+15:17 
+
+15:17 was was um very very helpful uh and and
+15:20 
+
+15:20 you know then you get better and you're
+15:21 
+
+15:21 still young so you s of your brain
+15:23 
+
+15:23 shapes more easily maybe I don't know so
+15:24 
+
+15:24 I feel like I benefited a lot from being
+15:26 
+
+15:26 early but within that um I'd say just
+15:29 
+
+15:29 like go for the end goal immediately
+15:31 
+
+15:31 doing anything sort of like oh I'm going
+15:33 
+
+15:33 to do a PhD because I need a PhD to get
+15:35 
+
+15:35 a that's all [ __ ] uh like you don't
+15:37 
+
+15:37 uh it's just completely [ __ ] uh the
+15:40 
+
+15:40 other thing is like writing five-page uh
+15:43 
+
+15:43 emails to people actually works um
+15:45 
+
+15:45 writing like I get a lot of these like
+15:47 
+
+15:47 two paragraph me things now and grateful
+15:51 
+
+15:51 I get emails but though I understand now
+15:53 
+
+15:53 why people think this stuff doesn't work
+15:55 
+
+15:55 it certainly does when you're like here
+15:57 
+
+15:57 is how I'm going to beat your algorithm
+15:59 
+
+15:59 please help me uh five pages at least in
+16:02 
+
+16:02 my experience every single time anyone I
+16:04 
+
+16:04 I I want help from in this way uh was
+16:07 
+
+16:07 very helpful so I suppose be proactive
+16:09 
+
+16:09 in seeking like the best people in the
+16:11 
+
+16:11 world to in a time efficient manner just
+16:14 
+
+16:14 distill their brain into yours and be
+16:16 
+
+16:16 show them that you can make use of that
+16:18 
+
+16:18 if you if you if you tell someone who's
+16:21 
+
+16:21 very good effectively hey I'm going to
+16:22 
+
+16:22 make good use of this if you want to
+16:24 
+
+16:24 coach someone I would love to be that
+16:25 
+
+16:25 person uh they'll they'll usually do it
+16:28 
+
+16:28 they won't do it for 10 people but if
+16:29 
+
+16:29 they do it for one or two that's enough
+16:30 
+
+16:30 you just have to to to win that seat I
+16:32 
+
+16:32 guess um so that that's been really
+16:34 
+
+16:34 helpful in my experience also just not
+16:35 
+
+16:35 shying away from learning new things um
+16:38 
+
+16:38 like I again I didn't get into
+16:39 
+
+16:39 programming because I'm curious about
+16:40 
+
+16:40 computers I'm not very curious about
+16:42 
+
+16:42 computers uh I I just like Ai and the
+16:45 
+
+16:45 computers are the thing that are
+16:47 
+
+16:47 necessary to so it's fun I enjoy
+16:49 
+
+16:49 programming now it's it's great but I
+16:50 
+
+16:50 wouldn't have gotten into it I think if
+16:52 
+
+16:52 if it wasn't for AI but still like you
+16:54 
+
+16:54 get into it so so like don't be shy like
+16:57 
+
+16:57 we interview a lot of people who who
+16:58 
+
+16:58 don't know
+16:59 
+
+16:59 um you know how how you'd Implement an
+17:01 
+
+17:01 llm and it's it's kind of crazy to me uh
+17:03 
+
+17:03 if you're a researcher and and you
+17:05 
+
+17:05 couldn't like Implement Charing or
+17:06 
+
+17:06 whatever like it's it's just insane um
+17:08 
+
+17:08 so so really understanding the whole
+17:10 
+
+17:10 stack going down to uh but sort of not
+17:12 
+
+17:12 bottom up really top down like here's
+17:14 
+
+17:14 the thing I care about this is the
+17:15 
+
+17:15 problem I want to solve okay like what
+17:17 
+
+17:17 do I need what do I need what do I need
+17:19 
+
+17:19 uh and and then like all the way down um
+17:21 
+
+17:21 and um and they're like much more
+17:23 
+
+17:23 confident people at colel programming at
+17:24 
+
+17:24 Hardware design or whatever than I could
+17:26 
+
+17:26 ever ever dream up to be but I
+17:28 
+
+17:28 understand enough of it to to do better
+17:30 
+
+17:30 work at the top of the stack than I
+17:32 
+
+17:32 could if I didn't um so
+17:36 
+
+17:36 um I think fundamentally you need to
+17:38 
+
+17:38 understand the domain you work in um
+17:39 
+
+17:39 it's also really good to just read
+17:41 
+
+17:41 everything um like I used to read I
+17:44 
+
+17:44 don't know I don't have a precise number
+17:46 
+
+17:46 but just every paper I could every paper
+17:48 
+
+17:48 I would see basically and eventually you
+17:50 
+
+17:50 get so fast at it that you can like
+17:52 
+
+17:52 that's feasible and you like build a
+17:55 
+
+17:55 database in your head of like oh this is
+17:56 
+
+17:56 similar to this thing this sort of like
+17:57 
+
+17:57 like but this was sort of my eye opening
+17:59 
+
+17:59 moment where Bill Gates has this
+17:60 
+
+18:00 intervie like oh yeah if you learned
+18:01 
+
+18:01 enough things they're all like similar
+18:02 
+
+18:02 to each other so it's not linear it gets
+18:03 
+
+18:03 easier and at that point I was like I
+18:05 
+
+18:05 should read every paper and uh so thanks
+18:08 
+
+18:08 for the advice Bill uh obviously was
+18:10 
+
+18:10 like through a video I never met him but
+18:11 
+
+18:11 um the uh so I just started reading
+18:13 
+
+18:13 every paper and that's really really
+18:15 
+
+18:15 helpful because a lot of the best ideas
+18:16 
+
+18:16 that we had that work really well now at
+18:18 
+
+18:18 at Magic um were enabled by random
+18:21 
+
+18:21 things that are like like oh this it
+18:23 
+
+18:23 would never work without this random
+18:24 
+
+18:24 thing that I would have to have come up
+18:26 
+
+18:26 with in tandem uh but because I have
+18:28 
+
+18:28 this database in my head I can go like
+18:29 
+
+18:29 oh yeah like this uh and and then so
+18:32 
+
+18:32 often like one good idea is enabled by
+18:33 
+
+18:33 three other ideas that others have come
+18:35 
+
+18:35 up with and and so so it's it's always
+18:37 
+
+18:37 just like this composition of stuff so
+18:39 
+
+18:39 so having a large database is really
+18:40 
+
+18:40 helpful um yeah and then just never stop
+18:43 
+
+18:43 uh like never never stop uh it it can it
+18:46 
+
+18:46 takes like ages to do good stuff to do
+18:47 
+
+18:47 good work and at any point there was
+18:49 
+
+18:49 actually one moment um with johanes the
+18:52 
+
+18:52 the the the Deep Mind research scientist
+18:53 
+
+18:53 who who mentored me for a year in high
+18:55 
+
+18:55 school um where uh we had a version of
+18:57 
+
+18:57 the algorithm that wasn't very good uh
+18:60 
+
+18:60 it just it was all right and and uh we
+19:02 
+
+19:02 were thinking like ah should we publish
+19:03 
+
+19:03 this like we were both not really happy
+19:05 
+
+19:05 about it and he was like close to giving
+19:07 
+
+19:07 up on me um it was like well you know
+19:10 
+
+19:10 like maybe this is just not going to
+19:11 
+
+19:11 work like I wouldn't want to publish
+19:13 
+
+19:13 this and so I was like dude [ __ ] you I'm
+19:15 
+
+19:15 just going to get this done and then we
+19:16 
+
+19:16 got it done like a month or two later uh
+19:19 
+
+19:19 and and so I think like I remember going
+19:21 
+
+19:21 on a walk after this um and uh just
+19:23 
+
+19:23 being
+19:24 
+
+19:24 like can I do this I don't know if I can
+19:28 
+
+19:28 do this but there is no no other option
+19:30 
+
+19:30 so I just better get it done and then I
+19:33 
+
+19:33 went back home and I started programming
+19:34 
+
+19:34 again it was still like sad that day but
+19:37 
+
+19:37 the next day was fine again it just keep
+19:38 
+
+19:38 going so I think you have to I think
+19:41 
+
+19:41 that was a pretty formative experience
+19:42 
+
+19:42 cuz I actually wasn't sure if I could do
+19:44 
+
+19:44 it and then we just did it like super
+19:45 
+
+19:45 soon after and so I really like haven't
+19:49 
+
+19:49 felt that insane level of like doubt and
+19:51 
+
+19:51 pressure since then which has sort of
+19:53 
+
+19:53 enabl I think it's actually beneficial
+19:55 
+
+19:55 you have to be realistic but you don't
+19:57 
+
+19:57 want to you you if you stop you yeah I
+19:59 
+
+19:59 mean so anyway so I think those would be
+20:01 
+
+20:01 the main things uh also be like really
+20:05 
+
+20:05 [ __ ] honest about what you suck at um
+20:07 
+
+20:07 uh to yourself because otherwise you're
+20:08 
+
+20:08 never going to get good at it um like
+20:10 
+
+20:10 you need to search for the bad things um
+20:14 
+
+20:14 and uh uh uh instead of like trying
+20:17 
+
+20:17 actually yeah I think like as a
+20:18 
+
+20:18 researcher betting on your strengths is
+20:19 
+
+20:19 good only to the extent that you don't
+20:22 
+
+20:22 have uh necessary conditions that are
+20:25 
+
+20:25 completely missing like you you can't
+20:27 
+
+20:27 bet on your strengths if they're not
+20:28 
+
+20:28 enabled again back to the engineering
+20:30 
+
+20:30 thing for
+20:31 
+
+20:31 example so yeah I don't know I'm
+20:33 
+
+20:33 rambling but like that that's great that
+20:35 
+
+20:35 is such a fascinating glimps into like
+20:37 
+
+20:37 the inner mind of what it takes to be a
+20:39 
+
+20:39 great researcher and you know behind all
+20:40 
+
+20:40 the glamour of of training large large
+20:43 
+
+20:43 models and so like thank you for
+20:44 
+
+20:44 providing that that uh Peak and I'm
+20:46 
+
+20:46 really glad that you mentioned kind of
+20:48 
+
+20:48 reading every paper voraciously and
+20:50 
+
+20:50 having this database in your head
+20:51 
+
+20:51 because one thing I've heard from your
+20:53 
+
+20:53 collaborators is that your superpower is
+20:56 
+
+20:56 understanding and absorbing uh new
+20:57 
+
+20:57 research and so I'm curious do you agree
+20:59 
+
+20:59 like do you think that is your
+21:00 
+
+21:00 superpower as a researcher or what what
+21:03 
+
+21:03 kind of traits do you think have made
+21:05 
+
+21:05 you such an exceptional researcher so I
+21:07 
+
+21:07 think initially in the RL work I did it
+21:09 
+
+21:09 was synthesis where I would read every
+21:11 
+
+21:11 paper and I would go like this thing
+21:12 
+
+21:12 plus this thing plus that thing with
+21:13 
+
+21:13 this modification um I think that's what
+21:16 
+
+21:16 they would mean um that yes uh was
+21:19 
+
+21:19 definitely very helpful uh I think is a
+21:21 
+
+21:21 good way to do research generally
+21:22 
+
+21:22 there's enough work to for synthesis to
+21:23 
+
+21:23 be a successful strategy I guess to an
+21:25 
+
+21:25 extent still that I tried very hard
+21:28 
+
+21:28 after this is actually
+21:29 
+
+21:29 bring this up I realized this and I
+21:31 
+
+21:31 tried very hard to get better at leaps
+21:33 
+
+21:33 um like coming up with totally alien
+21:35 
+
+21:35 crap that just there's no reference for
+21:36 
+
+21:36 it at all uh and um because cuz
+21:40 
+
+21:40 ultimately like so if you take like the
+21:42 
+
+21:42 transformer for example right like
+21:44 
+
+21:44 attention existed um the idea of
+21:47 
+
+21:47 stacking a bunch of lstm blocks existed
+21:49 
+
+21:49 and you just had to remove the idea of
+21:52 
+
+21:52 recurrence really like then like a bunch
+21:54 
+
+21:54 a couple other things that that were't
+21:55 
+
+21:55 necessary right residual streams like
+21:57 
+
+21:57 the the residual update and Transformers
+21:58 
+
+21:58 exist from existed from reset so it's
+22:00 
+
+22:00 like it's synthesis um but there is an
+22:03 
+
+22:03 amount of leap in there uh to to to make
+22:06 
+
+22:06 it all work like it's it's a it's a
+22:08 
+
+22:08 little more complex than just taking
+22:10 
+
+22:10 components and putting them together you
+22:11 
+
+22:11 need to come up with new things too um
+22:13 
+
+22:13 like you know the normalization and the
+22:15 
+
+22:15 the the the the head square square the
+22:17 
+
+22:17 head which is actually incorrect but
+22:18 
+
+22:18 anyway everyone now knows this the the
+22:21 
+
+22:21 but roughly like you should do so there
+22:23 
+
+22:23 are some new ideas in there that like
+22:25 
+
+22:25 really help make it work um but but it's
+22:28 
+
+22:28 still a large amount of synthesis so so
+22:30 
+
+22:30 I suppose like most good ideas are
+22:32 
+
+22:32 synthesis but there are always some like
+22:33 
+
+22:33 in the best ideas there's some leaps uh
+22:36 
+
+22:36 and and um I'm trying to get better at
+22:38 
+
+22:38 those uh but still it's mostly I guess
+22:41 
+
+22:41 like take five things and throw it away
+22:43 
+
+22:43 the stuff that doesn't work uh in the
+22:46 
+
+22:46 make things work and configure but yeah
+22:49 
+
+22:49 I think I think some some stuff needs
+22:51 
+
+22:51 sleep but but yeah I guess like no
+22:52 
+
+22:52 that's a recipe like take LMS make them
+22:54 
+
+22:54 super efficient long contact giant throw
+22:57 
+
+22:57 our L on it make it all work together
+22:59 
+
+22:59 it's still mostly synthesis I guess
+22:60 
+
+22:60 you're right uh who do you admire most
+23:01 
+
+23:01 in the research world and like what do
+23:03 
+
+23:03 you think those folks superpowers are uh
+23:05 
+
+23:05 she here uh no there
+23:08 
+
+23:08 uh yes um he uh what is his
+23:12 
+
+23:12 superpower
+23:14 
+
+23:14 uh uh I guess to an extent synthesis um
+23:18 
+
+23:18 he is
+23:19 
+
+23:19 um I mean he's he's just the best at
+23:22 
+
+23:22 synthesis uh he's also great at
+23:24 
+
+23:24 everything in the stack uh he
+23:27 
+
+23:27 can uh like he he has no weakness really
+23:30 
+
+23:30 like he could implement the whole thing
+23:32 
+
+23:32 uh on his own if he had to uh run it uh
+23:35 
+
+23:35 he sees the future I think in in a way
+23:38 
+
+23:38 like it's very unconstrained and and
+23:40 
+
+23:40 that you know I think everyone sort of
+23:42 
+
+23:42 crediting uh you know a number of the
+23:44 
+
+23:44 labs for scaling laws this guy made a
+23:46 
+
+23:46 presentation where he was zipping
+23:48 
+
+23:48 through uh uh essays or completion or
+23:50 
+
+23:50 whatever written by like models of
+23:52 
+
+23:52 various scale I was like this is a 100
+23:54 
+
+23:54 million parameter model this is a 300
+23:55 
+
+23:55 million paramet model this is a billion
+23:57 
+
+23:57 parameter model this is a 5 billion
+23:58 
+
+23:58 parameter mod this is on YouTube Summer
+23:59 
+
+23:59 it's hilarious and you like what what if
+24:01 
+
+24:01 we make this bigger he's sort of
+24:03 
+
+24:03 presenting it this hilarious way um and
+24:06 
+
+24:06 then I everyone else like super
+24:07 
+
+24:07 scientific about it uh I think gnome is
+24:09 
+
+24:09 generally just uh if I had to put it
+24:11 
+
+24:11 he's very very intuitive um I I think
+24:14 
+
+24:14 there like a lot of labs and and and
+24:17 
+
+24:17 researchers are sort of and and I think
+24:19 
+
+24:19 this Al this is not a bad thing it's
+24:21 
+
+24:21 very good uh are very evil driven very
+24:23 
+
+24:23 mechanical right like s very empirical
+24:25 
+
+24:25 in a way like no no sort of just knows
+24:28 
+
+24:28 he's like God this this would work and
+24:29 
+
+24:29 then it works um so um I think that's a
+24:34 
+
+24:34 superpower that uh just extremely great
+24:36 
+
+24:36 synthesis he has the larger he has a
+24:37 
+
+24:37 larger database um because he's been
+24:40 
+
+24:40 around for so long he just he literally
+24:41 
+
+24:41 knows everything I mean he invented half
+24:43 
+
+24:43 of the stuff that everyone's doing now
+24:45 
+
+24:45 uh the the uh there's there's no one who
+24:48 
+
+24:48 who compar um I I'd say um there there
+24:52 
+
+24:52 are a number of other people I guess
+24:55 
+
+24:55 just you you you shouldn't fail out of
+24:57 
+
+24:57 all the people who are sort of the ogs
+24:60 
+
+24:60 um of deep learning I think you could of
+25:01 
+
+25:01 Hinton there deserves by far the most
+25:03 
+
+25:03 credit just cuz he like went through all
+25:05 
+
+25:05 the bashing when uh when when it was
+25:07 
+
+25:07 like God this will never work and
+25:08 
+
+25:08 they're like training like tiny tiny
+25:10 
+
+25:10 tiny tiny tiny things they're like this
+25:12 
+
+25:12 will never work and he's almost stuck
+25:13 
+
+25:13 with it I think that's that level of
+25:15 
+
+25:15 grit and and belief in something that is
+25:17 
+
+25:17 now obviously working um deserves a huge
+25:20 
+
+25:20 amount of credit uh whether capsul n
+25:24 
+
+25:24 work or not whatever yeah he he he like
+25:27 
+
+25:27 you know it's it's incredible to come to
+25:30 
+
+25:30 something like the the the conclusions
+25:31 
+
+25:31 that that the world is at now and if you
+25:33 
+
+25:33 look at some of the older papers a lot
+25:34 
+
+25:34 of the ideas that are important now were
+25:37 
+
+25:37 in there already so so that's important
+25:40 
+
+25:40 um and I think he just deserves a ton of
+25:42 
+
+25:42 credit uman noan Brown had um uh the
+25:46 
+
+25:46 army of nooms Noom Brown uh I should
+25:49 
+
+25:49 name myid I should name my kid Noom is
+25:51 
+
+25:51 what I'm it's a very good strategy yeah
+25:53 
+
+25:53 the um it's a great strategy actually I
+25:56 
+
+25:56 think 100% of nooms that are like somewh
+25:59 
+
+25:59 popular and well known in the research
+26:01 
+
+26:01 Community are great yeah no he's he's
+26:03 
+
+26:03 he's also amazing I mean a number of
+26:04 
+
+26:04 labs were working on what he was working
+26:06 
+
+26:06 on during his PhD and he basically
+26:07 
+
+26:07 soloed the thing uh and and was like way
+26:10 
+
+26:10 better and way faster than Labs that put
+26:13 
+
+26:13 10 people including some really famous
+26:15 
+
+26:15 names uh on it and if you just look at
+26:17 
+
+26:17 the paper track track record
+26:20 
+
+26:20 like was like look here so the rest of
+26:23 
+
+26:23 the field and then no 100 X's efficiency
+26:25 
+
+26:25 and then here is the rest of the field
+26:26 
+
+26:26 then Noom life does it again and
+26:29 
+
+26:29 it's just consistent uh I think the
+26:31 
+
+26:31 consistency with which he has just
+26:32 
+
+26:32 bashed um out uh these 100x multipliers
+26:36 
+
+26:36 in in RL uh data efficiency and and
+26:39 
+
+26:39 computer efficiency is is crazy yeah so
+26:42 
+
+26:42 so yeah no Noom uh the Noom Army is
+26:44 
+
+26:44 pretty good I want to go back to this
+26:46 
+
+26:46 concept of you know leaps are still
+26:47 
+
+26:47 needed in research and that you still
+26:49 
+
+26:49 have this AGI to-do list like yes what
+26:52 
+
+26:52 what do you think are the most
+26:53 
+
+26:53 interesting unsolved problems in AI
+26:55 
+
+26:55 right now well so a lot of it is solved
+26:57 
+
+26:57 now I think and uh the thing that
+26:60 
+
+26:60 remains to be solved is uh
+27:02 
+
+27:02 General uh domain uh long Horizon
+27:05 
+
+27:05 reliability and I think you need
+27:07 
+
+27:07 inference time compute test time compute
+27:08 
+
+27:08 for that so You' want um when you try to
+27:13 
+
+27:13 prove a new theorem in math or when
+27:16 
+
+27:16 you're writing a large um software
+27:19 
+
+27:19 program or when you're writing an essay
+27:22 
+
+27:22 of reasonable complexity you usually
+27:24 
+
+27:24 wouldn't write a token by
+27:25 
+
+27:25 token uh you you'd want to think quite
+27:28 
+
+27:28 hard about some of those tokens and um
+27:31 
+
+27:31 finding ways to spend not 1X or 2X or
+27:35 
+
+27:35 10x but a million x the resources on
+27:39 
+
+27:39 that token uh in a productive way I
+27:42 
+
+27:42 think is really important that is
+27:44 
+
+27:44 probably the last big problem fasinating
+27:47 
+
+27:47 the last one okay I hope so I think it's
+27:49 
+
+27:49 reasonable to think that is the last big
+27:51 
+
+27:51 unsold I mean look over the last few
+27:53 
+
+27:53 years all of this other stuff got sold
+27:54 
+
+27:54 like oh can we do multimodal things can
+27:56 
+
+27:56 we do long contexts can we do all this
+27:58 
+
+27:58 gone
+27:59 
+
+27:59 reasonably smart models you know they're
+28:01 
+
+28:01 they're quite efficient now in terms of
+28:03 
+
+28:03 cost that I mean it have to be a reality
+28:06 
+
+28:06 denier to like not see what's coming I
+28:09 
+
+28:09 mean this is just a this is like a
+28:11 
+
+28:11 realization to a lot of people in the LM
+28:13 
+
+28:13 space but but like RL has been doing
+28:15 
+
+28:15 this for like ages so so it's just like
+28:19 
+
+28:19 so clear that you need to do that um or
+28:22 
+
+28:22 I mean maybe you don't need to maybe you
+28:24 
+
+28:24 can get away without doing it which be
+28:25 
+
+28:25 insane but if you don't need to it will
+28:27 
+
+28:27 still help you a lot like it's just it's
+28:30 
+
+28:30 just like do I want to spend a billion
+28:31 
+
+28:31 doll on my pre-training run and then
+28:33 
+
+28:33 like a little bit more money on
+28:34 
+
+28:34 inference or do I need to spend billion
+28:36 
+
+28:36 on my preing on IID for you know like 10
+28:38 
+
+28:38 billion would be great but I'm going to
+28:39 
+
+28:39 be I'm going to be I'm going to prefer
+28:41 
+
+28:41 spending one um and and is bringing is
+28:43 
+
+28:43 bringing like the llm and RL worlds
+28:45 
+
+28:45 together is that like a research problem
+28:48 
+
+28:48 like there's still like fundamental like
+28:49 
+
+28:49 unsolved science problems or is that
+28:51 
+
+28:51 like a you know we have the recipe we
+28:53 
+
+28:53 just need to do it and and have the
+28:55 
+
+28:55 comput and the data I think uh there is
+28:57 
+
+28:57 no public uccessful recipe right now um
+28:60 
+
+28:60 there are good ideas like okay even if
+29:02 
+
+29:02 you take best of n make n large enough
+29:05 
+
+29:05 it's sort of you know it's not terrible
+29:07 
+
+29:07 yeah um the so there are ideas um I
+29:10 
+
+29:10 don't know that the final idea exists I
+29:13 
+
+29:13 think there's just a lot of room up from
+29:15 
+
+29:15 what is currently known but but there
+29:16 
+
+29:16 are ideas see I I I think it's very
+29:19 
+
+29:19 unlikely that even if you stop progress
+29:21 
+
+29:21 in research we would not at some point
+29:23 
+
+29:23 hit something that everyone would agree
+29:25 
+
+29:25 as AGI is just it's just that I think we
+29:28 
+
+29:28 can do better and maybe it couldn't REM
+29:30 
+
+29:30 right maybe it couldn't do all these
+29:31 
+
+29:31 like super hard things but it'd be
+29:33 
+
+29:33 pretty good and now like I'm just
+29:36 
+
+29:36 curious like okay like what's the actual
+29:37 
+
+29:37 like if we did all the things uh how
+29:40 
+
+29:40 good will it get uh so so um I think
+29:43 
+
+29:43 there is research uh left to be done and
+29:46 
+
+29:46 uh there are a lot of ideas floating in
+29:48 
+
+29:48 the world now everyone's sort of working
+29:50 
+
+29:50 on this but um I don't even I don't know
+29:54 
+
+29:54 that the current set of ideas is even
+29:55 
+
+29:55 final like it it'll be it'll keep moving
+29:58 
+
+29:58 I think
+29:59 
+
+29:59 let's transition to talking about magic
+30:00 
+
+30:00 um maybe just what what is Magic you
+30:03 
+
+30:03 you've been very mysterious to date so
+30:04 
+
+30:04 maybe just share a little bit about what
+30:07 
+
+30:07 you're building yeah uh I mean we're
+30:09 
+
+30:09 trying to automate software engineering
+30:10 
+
+30:10 uh the it took us a while to figure out
+30:13 
+
+30:13 how to train super giant models um it's
+30:17 
+
+30:17 a pretty interesting engineering
+30:18 
+
+30:18 challenge I mean fundamentally we're
+30:20 
+
+30:20 trying to automate software engineering
+30:21 
+
+30:21 from uh the product side uh and and and
+30:24 
+
+30:24 like a subset of that is a model that
+30:25 
+
+30:25 can build AGI because if it's if it's
+30:27 
+
+30:27 like if it's a great software engineer
+30:29 
+
+30:29 then you should be able to do everyone's
+30:31 
+
+30:31 job at Magic like if you can do everyone
+30:32 
+
+30:32 else's job like that that would be a
+30:34 
+
+30:34 upset so um the idea is that you could
+30:36 
+
+30:36 use this to um recursively uh improve
+30:40 
+
+30:40 alignment as well as uh models
+30:43 
+
+30:43 themselves in in a way that isn't
+30:44 
+
+30:44 bottleneck by by human uh resources and
+30:48 
+
+30:48 you know there aren't that many Noom
+30:49 
+
+30:49 shers in the world uh if if I had a no
+30:52 
+
+30:52 shazir in my computer I could spin up a
+30:54 
+
+30:54 million of them and maybe alignment
+30:55 
+
+30:55 would just be solved uh I'm was like
+30:58 
+
+30:58 simplifying Aton and very idealistic in
+31:01 
+
+31:01 in the statement I'm happy to turn this
+31:03 
+
+31:03 whole thing into a skillable oversight
+31:05 
+
+31:05 uh podcast if you'd like but um the um
+31:09 
+
+31:09 the core idea is is like okay like if I
+31:10 
+
+31:10 could just clone what we are doing into
+31:14 
+
+31:14 a computer and then press uh yes on the
+31:16 
+
+31:16 money button uh to run a cluster uh to
+31:19 
+
+31:19 to do the work we would be doing next
+31:21 
+
+31:21 week uh that that that would be
+31:22 
+
+31:22 phenomenal uh so so I think we sort of
+31:25 
+
+31:25 we're pursuing these two things in
+31:27 
+
+31:27 tandem where we want to ship something
+31:29 
+
+31:29 that's a good AI software engineer for
+31:31 
+
+31:31 people to use it's it's like I think one
+31:33 
+
+31:33 of going to be one of the first domains
+31:34 
+
+31:34 to to see higher levels of Automation
+31:36 
+
+31:36 and I I I don't like talking around I
+31:38 
+
+31:38 don't think the whole assistant pitch is
+31:39 
+
+31:39 going to last very long once these
+31:40 
+
+31:40 models are good enough to automate like
+31:42 
+
+31:42 there's just no way the economy is not
+31:43 
+
+31:43 going to do that uh and I think everyone
+31:45 
+
+31:45 knows this and they're just like they
+31:46 
+
+31:46 just don't like talking about it it's
+31:47 
+
+31:47 it's totally fine the world we used to
+31:49 
+
+31:49 all be Farmers we're not Farmers we're
+31:51 
+
+31:51 fine everything prefer everyone prefers
+31:52 
+
+31:52 this I think we'll figure our figure our
+31:54 
+
+31:54 way out in the economy if it produces
+31:57 
+
+31:57 the same or more stuff with less inputs
+31:58 
+
+31:58 like we should be able to figure that
+31:59 
+
+31:59 out that's not a hard problem in like
+32:01 
+
+32:01 from like economic principles you just
+32:03 
+
+32:03 have to figure out distribution anyway
+32:05 
+
+32:05 um but that's what we're trying to do
+32:06 
+
+32:06 we're trying to automate software
+32:08 
+
+32:08 engineering and as a part of that
+32:09 
+
+32:09 automate ourselves uh in doing the work
+32:12 
+
+32:12 we want to do and so the reason they go
+32:13 
+
+32:13 after software engineering then is that
+32:15 
+
+32:15 is the kind of lever that allows you to
+32:17 
+
+32:17 to admit everything else it's like the
+32:19 
+
+32:19 MVP of AGI right like the the the
+32:21 
+
+32:21 minimum viable AGI yeah cuz then it
+32:24 
+
+32:24 creates everything else like yeah we we
+32:26 
+
+32:26 we wouldn't train something like Sora
+32:27 
+
+32:27 Sora is great you know fantastic
+32:30 
+
+32:30 generate videos awesome uh it's just not
+32:32 
+
+32:32 interesting uh from an AGI uh
+32:36 
+
+32:36 perspective if you believe that models
+32:38 
+
+32:38 can cope themselves soon totally and so
+32:40 
+
+32:40 out of all the companies that are trying
+32:41 
+
+32:41 to build an AI software engineer you are
+32:43 
+
+32:43 probably the only one uh that is really
+32:46 
+
+32:46 taking a uh vertically inrad approach
+32:48 
+
+32:48 and training your own models and that is
+32:50 
+
+32:50 either insanely Brave or insanely crazy
+32:54 
+
+32:54 and pro probably a combination of both
+32:56 
+
+32:56 um I'm I'm curious like why I know you
+32:60 
+
+32:60 love training models and so I know
+33:01 
+
+33:01 that's part of it but like why do you
+33:02 
+
+33:02 think you need to own the model to get
+33:04 
+
+33:04 this right and like how do you motivate
+33:06 
+
+33:06 yourself um in kind of the David versus
+33:08 
+
+33:08 Goliath of like knowing that open AI
+33:10 
+
+33:10 exists and has great people and cares
+33:12 
+
+33:12 about coding and um is great at building
+33:15 
+
+33:15 models obviously like how do you think
+33:16 
+
+33:16 about that entire Dynamic I think you
+33:19 
+
+33:19 need well to build the best model you
+33:21 
+
+33:21 need to build the model uh and we want
+33:23 
+
+33:23 to solve these fundamental problems you
+33:26 
+
+33:26 can't rely on an like if the API guys
+33:28 
+
+33:28 solded it then what the hell are you you
+33:29 
+
+33:29 know we might as well start the company
+33:31 
+
+33:31 3 years later it goes to the point when
+33:33 
+
+33:33 we started right we we started working
+33:34 
+
+33:34 on this stuff um two years ago so we we
+33:38 
+
+33:38 have you know it took us some time to
+33:40 
+
+33:40 learn how to train these large models
+33:41 
+
+33:41 like it was really I think it took open
+33:43 
+
+33:43 AI two years to get from gbd3 to gbd4 uh
+33:47 
+
+33:47 as as well and I thought we could be
+33:49 
+
+33:49 like much faster and this is going to be
+33:51 
+
+33:51 great is it's a pain so it's definitely
+33:53 
+
+33:53 an engineering challenge uh but it's
+33:56 
+
+33:56 necessary like it's not like it's not
+33:58 
+
+33:58 think we're doing it just because it's
+33:59 
+
+33:59 fun or because I like training models
+34:01 
+
+34:01 it's it's a massive Financial investment
+34:03 
+
+34:03 that uh people trust us with uh that and
+34:09 
+
+34:09 it's it's not like it's one of those
+34:10 
+
+34:10 like one to one Roi investment it's like
+34:12 
+
+34:12 if it's work if it works it's fantastic
+34:14 
+
+34:14 and if it doesn't work the GPU is ran
+34:16 
+
+34:16 and the money is gone uh so like you're
+34:19 
+
+34:19 you're getting a lot of people's trust
+34:21 
+
+34:21 uh doing that it's certainly not
+34:22 
+
+34:22 something you should do just because
+34:24 
+
+34:24 it's fun and you enjoy it um
+34:26 
+
+34:26 fundamentally I think the value will ACR
+34:28 
+
+34:28 at both at the at the AGI and at the
+34:30 
+
+34:30 hardware level and never at the
+34:31 
+
+34:31 application Level there's no incentive
+34:34 
+
+34:34 at all to offer an API if the API
+34:37 
+
+34:37 creates a hundred billion doll company
+34:39 
+
+34:39 you will just build that company
+34:40 
+
+34:40 internally uh it is and and if if open
+34:43 
+
+34:43 AI doesn't someone else will like it's
+34:45 
+
+34:45 it's it's it's just incredibly
+34:47 
+
+34:47 unimaginable to me that that would be
+34:49 
+
+34:49 how you would build these companies in
+34:50 
+
+34:50 the first place so from a business
+34:52 
+
+34:52 perspective I don't think that's
+34:54 
+
+34:54 necessarily the right way maybe there's
+34:55 
+
+34:55 some partnership potentials you could
+34:57 
+
+34:57 like oh we'll get the expens access or
+34:58 
+
+34:58 whatever and then different from like
+35:01 
+
+35:01 cloud computing right like there's
+35:02 
+
+35:02 there's been many1 billion 100 it's much
+35:05 
+
+35:05 much much harder to build Netflix and
+35:08 
+
+35:08 Airbnb and Uber than it is to build a
+35:11 
+
+35:11 chat interface like fundamentally magic
+35:15 
+
+35:15 is an application you press download on
+35:17 
+
+35:17 that we have couple guys working on and
+35:19 
+
+35:19 it's just there like it's not you know
+35:22 
+
+35:22 you can build this with like YC preed
+35:24 
+
+35:24 money the modes in I guess I to make the
+35:27 
+
+35:27 API twice as expensive for the next
+35:28 
+
+35:28 model and then launch my own product and
+35:29 
+
+35:29 then undercut every it's it's really
+35:31 
+
+35:31 [ __ ] to not own the model um in in in
+35:35 
+
+35:35 in this domain and in any domain that's
+35:37 
+
+35:37 going to generate a ton of revenue for a
+35:38 
+
+35:38 single company um in the case where it's
+35:40 
+
+35:40 distributed maybe it's fine but I don't
+35:42 
+
+35:42 think this will be um so so it's
+35:44 
+
+35:44 necessary both for the market which is
+35:45 
+
+35:45 good for us because the market is
+35:46 
+
+35:46 incentivized to fund folks like us um uh
+35:50 
+
+35:50 which which it isn't in other domains
+35:52 
+
+35:52 like have have fun writing like an email
+35:54 
+
+35:54 assistant you're not going to get that
+35:56 
+
+35:56 funded anymore uh so so so that's that's
+35:58 
+
+35:58 helpful but um fundamentally the reason
+36:01 
+
+36:01 we train our own models is because it's
+36:02 
+
+36:02 necessary for our mission and um I just
+36:05 
+
+36:05 wouldn't be interested in building like
+36:07 
+
+36:07 a nice little sass rapper it's just not
+36:09 
+
+36:09 like that's not every that's going to
+36:11 
+
+36:11 happen anyway and and I think though
+36:13 
+
+36:13 about competing against the 800 pound
+36:15 
+
+36:15 gorilla is like you've raised a lot of
+36:17 
+
+36:17 money but some people have raised
+36:19 
+
+36:19 boatloads of money they raised a lot
+36:20 
+
+36:20 more money too oh and well some people
+36:22 
+
+36:22 have a have 100 million plus in Revenue
+36:25 
+
+36:25 a year that they can spend so so it goes
+36:27 
+
+36:27 beyond even who could raise yeah
+36:29 
+
+36:29 absolutely and so how do you like how do
+36:31 
+
+36:31 you motivate yourself to compete in that
+36:32 
+
+36:32 in that uh you know reality the question
+36:36 
+
+36:36 is how much does it cost to build AGI
+36:37 
+
+36:37 and not how much money can you raise uh
+36:40 
+
+36:40 cuz if you can build AGI for however
+36:42 
+
+36:42 much you can raise uh and
+36:44 
+
+36:44 you're having more might help you but it
+36:46 
+
+36:46 won't get you there substantially sooner
+36:48 
+
+36:48 right like if you have all the right
+36:49 
+
+36:49 ideas and you get you can build it with
+36:51 
+
+36:51 a certain amount of Hardware like by
+36:52 
+
+36:52 definition like okay if someone had like
+36:54 
+
+36:54 100 times more Hardware would it be like
+36:55 
+
+36:55 Computing that much faster or whatever
+36:57 
+
+36:57 but uh it it doesn't seem like a
+36:59 
+
+36:59 material advantage if your estimate for
+37:02 
+
+37:02 how much compute you need to build AGI
+37:04 
+
+37:04 is not as high as the revenue these
+37:06 
+
+37:06 companies can generate or the funding
+37:07 
+
+37:07 they raise is in fact much lower so Y
+37:10 
+
+37:10 and and I think that is the case uh so
+37:13 
+
+37:13 it's not by any means accessible it's
+37:15 
+
+37:15 very damn hard to get that much money
+37:17 
+
+37:17 but it's not 100 billion it's it's it
+37:20 
+
+37:20 and if I'm wrong I'm wrong and it'll be
+37:21 
+
+37:21 100 billion and we will not have 100
+37:23 
+
+37:23 billion and that's it but if we can get
+37:25 
+
+37:25 to that point where we have AGI and a
+37:27 
+
+37:27 couple others of AGI and then like the
+37:29 
+
+37:29 the the the sort of the benefit of
+37:31 
+
+37:31 additional computers there and you show
+37:33 
+
+37:33 an Roi it's it's like a reasonably even
+37:35 
+
+37:35 playing field in in terms of um
+37:38 
+
+37:38 additional Revenue you're just you're
+37:39 
+
+37:39 going to bring AI to the market you're
+37:41 
+
+37:41 going to raise more on it it's it's so
+37:43 
+
+37:43 the the starting conditions of of like
+37:45 
+
+37:45 have this Hardware is like you need
+37:47 
+
+37:47 sufficient Hardware but you don't need
+37:49 
+
+37:49 more than sufficient uh and and if so
+37:50 
+
+37:50 that's a bet that's not a you don't know
+37:53 
+
+37:53 but I think it's a bet with the high
+37:56 
+
+37:56 enough um probability of being right
+37:58 
+
+37:58 that it is reasonable to compete in the
+38:01 
+
+38:01 space and I think it is actually it is
+38:02 
+
+38:02 reasonable to think that
+38:06 
+
+38:06 um like the ROI of a of having quote
+38:09 
+
+38:09 unquote sufficient funding might be
+38:10 
+
+38:10 better than the ROI of having like
+38:12 
+
+38:12 infinite funding um early on um is there
+38:15 
+
+38:15 like an ideal for investors that is not
+38:17 
+
+38:17 not for me for
+38:19 
+
+38:19 investors is is there an ideal like team
+38:22 
+
+38:22 size for researchers is there a certain
+38:23 
+
+38:23 point at which you reach kind of like
+38:24 
+
+38:24 diminishing marginal returns of of
+38:26 
+
+38:26 adding on the extra researcher so one of
+38:28 
+
+38:28 my biggest weaknesses especially early
+38:30 
+
+38:30 on at Magic was just scaling the team
+38:32 
+
+38:32 effectively like we were very
+38:35 
+
+38:35 single-threaded on a very small number
+38:37 
+
+38:37 of people doing basically all the work
+38:39 
+
+38:39 uh in I and um I think we're getting
+38:44 
+
+38:44 better at that now uh it's also you just
+38:45 
+
+38:45 need a certain level of maturity of your
+38:47 
+
+38:47 code base and of your research ideas and
+38:49 
+
+38:49 everything to to properly segment them
+38:51 
+
+38:51 um so early on I would have said five uh
+38:54 
+
+38:54 for that time now I would say closer to
+38:57 
+
+38:57 20 and I'm not including like folks
+38:59 
+
+38:59 working on other stuff I'm including
+39:00 
+
+39:00 folks working on like the models and
+39:01 
+
+39:01 everything i' Say closer to 20 uh I
+39:04 
+
+39:04 could imagine that in a few months I'll
+39:05 
+
+39:05 say at a slightly larger number
+39:07 
+
+39:07 especially when you get into large scale
+39:09 
+
+39:09 deployment you really want to have uh
+39:11 
+
+39:11 very very good uh uh processes uh around
+39:15 
+
+39:15 just uh having um High reliability
+39:18 
+
+39:18 availability of services that are
+39:19 
+
+39:19 detached from each other etc etc so then
+39:21 
+
+39:21 you can segment even more uh which which
+39:23 
+
+39:23 obviously stuff we're working on now um
+39:26 
+
+39:26 but um
+39:29 
+
+39:29 it sort of grows over time I I don't see
+39:31 
+
+39:31 it ever exceeding like the tens of
+39:33 
+
+39:33 people and right now it's in the Low T
+39:37 
+
+39:37 very low T but I don't know maybe it's
+39:39 
+
+39:39 it's a skill to be able to utilize if
+39:41 
+
+39:41 you're able to utilize 200 people you're
+39:42 
+
+39:42 just a better CEO than I am uh the the
+39:46 
+
+39:46 no seriously if if if you
+39:47 
+
+39:47 can it's it's a good skill uh and I
+39:51 
+
+39:51 think part of why I say a smaller number
+39:53 
+
+39:53 for us is that there is a ton of stuff
+39:55 
+
+39:55 we just don't do like we if we if we
+39:56 
+
+39:56 built a video model that would just be a
+39:58 
+
+39:58 separate team they built a video model
+39:60 
+
+39:60 and like you know that's that's more
+40:01 
+
+40:01 scaling so so to an extent we're more
+40:03 
+
+40:03 focused and that's why we're smaller but
+40:05 
+
+40:05 uh also if if we could double the team
+40:07 
+
+40:07 and be twice as fast that's that mean I
+40:08 
+
+40:08 would do it any day um back in ear was
+40:11 
+
+40:11 it late 2022 when I first met you um at
+40:14 
+
+40:14 the time like it was marketing
+40:16 
+
+40:16 assistance and email assistant were all
+40:17 
+
+40:17 the rage and you were the first pitch
+40:20 
+
+40:20 that I heard that was AI that feels like
+40:22 
+
+40:22 a colleague and I just remember that
+40:23 
+
+40:23 really sticking in my brain so in some
+40:26 
+
+40:26 sense you've been thinking about kind of
+40:27 
+
+40:27 like
+40:28 
+
+40:28 agents uh to use a buzz word longer than
+40:31 
+
+40:31 anyone else
+40:33 
+
+40:33 um maybe share your vision for that and
+40:36 
+
+40:36 like what what you think it takes to
+40:37 
+
+40:37 build a great agent fundamentally there
+40:39 
+
+40:39 are two tiers here I guess three one is
+40:41 
+
+40:41 useless the next is assistant that you
+40:43 
+
+40:43 have to micromanage and then the the
+40:45 
+
+40:45 next is the thing that manages you
+40:47 
+
+40:47 basically where you're it's sort of more
+40:50 
+
+40:50 like a colleague you could I think the
+40:51 
+
+40:51 layer where it's exactly even doesn't
+40:53 
+
+40:53 really exist cuz it's sort of this like
+40:54 
+
+40:54 little thin Point once the model is more
+40:57 
+
+40:57 competent than you are um you are there
+40:59 
+
+40:59 to give it guidance on what you want to
+41:02 
+
+41:02 be accomplished and um answer
+41:05 
+
+41:05 clarification questions but you'll never
+41:08 
+
+41:08 have to tell it like here's a bug uh I'm
+41:12 
+
+41:12 not saying that this is V1 of everything
+41:14 
+
+41:14 I'm not saying this is to be one of our
+41:15 
+
+41:15 product but F fundamentally that has to
+41:19 
+
+41:19 be the goal like the way I feel when I
+41:22 
+
+41:22 talk to my best
+41:24 
+
+41:24 engineer that's how I want to feel when
+41:26 
+
+41:26 I talk to
+41:28 
+
+41:28 um where we have a discussion he's
+41:31 
+
+41:31 almost always right and then he just
+41:33 
+
+41:33 writes the code and then he someone else
+41:35 
+
+41:35 reviews it and then it works like that
+41:37 
+
+41:37 experience where my job is exclusively
+41:40 
+
+41:40 saying like here's kind of what I want
+41:42 
+
+41:42 uh and then they help clarify even right
+41:45 
+
+41:45 like I just want here specifically that
+41:47 
+
+41:47 like that you you it should feel like
+41:49 
+
+41:49 that um and everything else doesn't
+41:52 
+
+41:52 matter to the user uh like what tools
+41:55 
+
+41:55 the Asian uses how it works does it run
+41:57 
+
+41:57 locally in the cloud does it need a VM
+41:59 
+
+41:59 does it have a browser I don't care
+42:00 
+
+42:00 doesn't [ __ ] matter our problem not
+42:02 
+
+42:02 your problem you care about your
+42:03 
+
+42:03 problems getting solved so fundamentally
+42:07 
+
+42:07 that's what I think matters to customers
+42:10 
+
+42:10 and everything else is dependent on
+42:11 
+
+42:11 exact product shape exact domain except
+42:14 
+
+42:14 exact everything and like I'm stubborn
+42:16 
+
+42:16 as [ __ ] I just don't want to launch
+42:18 
+
+42:18 anything that isn't that uh we will
+42:19 
+
+42:19 probably have to uh but the I I just
+42:23 
+
+42:23 really want to get that thing like I
+42:25 
+
+42:25 want to talk to my computer
+42:28 
+
+42:28 go and have lunch and come back and it
+42:29 
+
+42:29 built AGI like that's the that's that's
+42:32 
+
+42:32 the end goal right and
+42:35 
+
+42:35 uh there'll be there'll be checkpoints
+42:37 
+
+42:37 but but that yeah I don't think anything
+42:40 
+
+42:40 else matters uh the how how you
+42:41 
+
+42:41 accomplish that is uh is is up to
+42:43 
+
+42:43 individual company yeah how far away do
+42:45 
+
+42:45 you think we are from from that or I
+42:47 
+
+42:47 guess maybe maybe break it down into a
+42:49 
+
+42:49 little bit more we met in 2022 you
+42:51 
+
+42:51 learned how to extrapolate Eric's
+42:53 
+
+42:53 timelines um so uh maybe yeah one and a
+42:56 
+
+42:56 half or double everything I say but uh I
+42:59 
+
+42:59 think very soon like very small number
+43:02 
+
+43:02 of
+43:02 
+
+43:02 years I don't want to give a number now
+43:05 
+
+43:05 but very small number less than 10 oh
+43:08 
+
+43:08 definitely less than 10 I mean way less
+43:11 
+
+43:11 wow okay because I'm seeing some of the
+43:13 
+
+43:13 like the S agent uh stuff that just came
+43:16 
+
+43:16 out they're like 14% on sweet bench
+43:18 
+
+43:18 which feels like I mean 14% I just don't
+43:20 
+
+43:20 care about 14% like I I'm I'm I mean we
+43:24 
+
+43:24 we like I don't know if 80 or 90 is good
+43:25 
+
+43:25 enough like I like I I I think you need
+43:28 
+
+43:28 99 like even 96 I don't trust my
+43:31 
+
+43:31 computer like I don't want to review the
+43:33 
+
+43:33 code if I have to like the tier of
+43:35 
+
+43:35 product where I have to review the code
+43:36 
+
+43:36 is fundamentally different from the tier
+43:38 
+
+43:38 of product where I don't have to review
+43:39 
+
+43:39 and understand the code and like you're
+43:40 
+
+43:40 not talking about 95 when you when you
+43:42 
+
+43:42 don't want to review you're talking
+43:43 
+
+43:43 about 99 something you're talking about
+43:45 
+
+43:45 whatever my developers accomplish plus
+43:48 
+
+43:48 some same as with self-driving cards
+43:50 
+
+43:50 like so the the difference with
+43:51 
+
+43:51 self-driving cars is like you die if the
+43:54 
+
+43:54 thing crashes and here you just have to
+43:55 
+
+43:55 review codes so it's launchable before
+43:57 
+
+43:57 but but fundamentally you need way way
+43:59 
+
+43:59 way more and like usually the last few
+44:01 
+
+44:01 right like the nines are hard to get um
+44:04 
+
+44:04 so yeah but but no I think you can I I
+44:07 
+
+44:07 don't know I I don't people have um I
+44:10 
+
+44:10 mean models have surpassed all these
+44:11 
+
+44:11 benchmarks I mean just recently the math
+44:12 
+
+44:12 benchmark right like way faster than
+44:14 
+
+44:14 even like for prediction markets assumed
+44:16 
+
+44:16 then like I I don't see that stopping um
+44:19 
+
+44:19 there's just too much like if if
+44:20 
+
+44:20 everyone was stuck and I I realized
+44:22 
+
+44:22 there some perception in the public that
+44:23 
+
+44:23 oh gp4 is like only like not getting
+44:26 
+
+44:26 much better get no um okay we're gonna
+44:29 
+
+44:29 close out with a lightning round um one
+44:32 
+
+44:32 more answers uh one what's your favorite
+44:35 
+
+44:35 AI app not magic probably all the
+44:37 
+
+44:37 invisible ones still like my spam filter
+44:40 
+
+44:40 and all this stuff uh just the things
+44:42 
+
+44:42 that keep life working I think are still
+44:45 
+
+44:45 at the moment more useful than the sort
+44:46 
+
+44:46 of AGI like apps cuz if you took them
+44:48 
+
+44:48 away like life would just be awful um
+44:51 
+
+44:51 like recommendation algorithms uh for
+44:54 
+
+44:54 whatever uh I think that's really useful
+44:57 
+
+44:57 uh um um other than that U yeah I think
+45:02 
+
+45:02 whichever uh you saying other than uh
+45:06 
+
+45:06 the let's say the other than the
+45:07 
+
+45:07 programming World um other than magic I
+45:10 
+
+45:10 I actually don't yeah but I'd say
+45:12 
+
+45:12 whichever model is currently like best
+45:13 
+
+45:13 would it's a very boring answer but I
+45:16 
+
+45:16 actually picked the SP filters Etc the
+45:17 
+
+45:17 recommendation Services first uh what
+45:21 
+
+45:21 paper has been most influential to you I
+45:23 
+
+45:23 don't think this paper is relevant at
+45:24 
+
+45:24 all in the world anymore but it was the
+45:26 
+
+45:26 first paper I ever tried to deeply
+45:28 
+
+45:28 understand like or spent months on it
+45:30 
+
+45:30 and reimplemented it and everything um
+45:33 
+
+45:33 and so it was most influential to me as
+45:35 
+
+45:35 a person not so much to my current work
+45:38 
+
+45:38 um and uh the the paper is called Deep
+45:41 
+
+45:41 stack it's one of those uh neural
+45:43 
+
+45:43 networks plus u imperfect information
+45:45 
+
+45:45 game solving papers it's reasonably
+45:47 
+
+45:47 complex for time it um uh yeah so it's
+45:51 
+
+45:51 per folks are interested it's it's like
+45:52 
+
+45:52 nowhere near s now but the uh it's s of
+45:55 
+
+45:55 just an irrelevant type of Al but the
+45:58 
+
+45:58 the at the current time at sorry right
+46:00 
+
+46:00 now back then it was useful um so that
+46:02 
+
+46:02 was very inal for me because it was just
+46:04 
+
+46:04 my first touch point with research uh
+46:06 
+
+46:06 really I I had no idea how to do
+46:07 
+
+46:07 research at all and then I sort of just
+46:10 
+
+46:10 was like I'm going to dig into this the
+46:11 
+
+46:11 way people like people like hyper
+46:12 
+
+46:12 rolling spam on Wikipedia where you like
+46:14 
+
+46:14 Revit hole I did that with this paper so
+46:16 
+
+46:16 I love it okay that's going to be my
+46:17 
+
+46:17 weekend reading uh last question um what
+46:19 
+
+46:19 are you most excited about in AI in the
+46:22 
+
+46:22 next one five and 10 years um just what
+46:26 
+
+46:26 it's gonna what's how Society is going
+46:29 
+
+46:29 to integrate with it um I think that's
+46:32 
+
+46:32 we're getting to the point now where
+46:34 
+
+46:34 it's really going to impact uh over the
+46:36 
+
+46:36 next one to five years it's really going
+46:38 
+
+46:38 to impact um how Society does stuff and
+46:41 
+
+46:41 Beyond just you know another tab in your
+46:43 
+
+46:43 browser that speeds you up by some
+46:44 
+
+46:44 percentage on some fast I think it'll
+46:47 
+
+46:47 get much more significant in that time
+46:48 
+
+46:48 frame and um ultimately you should like
+46:51 
+
+46:51 the only I I am not one of the intrinsic
+46:53 
+
+46:53 curiosity type of people I I know most
+46:55 
+
+46:55 researchers are I really am not I I just
+46:57 
+
+46:57 care about the outcome and uh that is
+46:59 
+
+46:59 the outcome so I'm most excited for the
+47:03 
+
+47:03 outcome Eric thank you for joining us
+47:06 
+
+47:06 again uh last time we recorded podcast
+47:08 
+
+47:08 we weren't actually able to talk about
+47:10 
+
+47:10 the thing that got us so excited about
+47:11 
+
+47:11 magic uh which was you had shared with
+47:13 
+
+47:13 us um your long context eval um and our
+47:17 
+
+47:17 own kind of AI uh researchers had gotten
+47:20 
+
+47:20 really excited by what You' accomplished
+47:21 
+
+47:21 on that and that was actually what Led
+47:23 
+
+47:23 Led to us investing in magic in the
+47:25 
+
+47:25 first place uh so you just made some
+47:26 
+
+47:26 exciting new announcements around the
+47:28 
+
+47:28 eval I was hoping you could share it
+47:29 
+
+47:29 with our audience yeah for sure thank
+47:31 
+
+47:31 you so much um yeah I mean we've been
+47:33 
+
+47:33 running around with this uh like hashes
+47:35 
+
+47:35 eval for a while um basically just being
+47:37 
+
+47:37 frustrated by uh need his eval and uh
+47:42 
+
+47:42 you know everyone keeps complaining
+47:43 
+
+47:43 about it and now that we we've decided
+47:44 
+
+47:44 to announce our uh where we're currently
+47:46 
+
+47:46 at and in terms of uh our context work
+47:49 
+
+47:49 um instead of just like you know blah
+47:51 
+
+47:51 blah talking about like oh we have so so
+47:53 
+
+47:53 many tokens um of context um it felt
+47:57 
+
+47:57 reasonable to to share the eval as well
+47:59 
+
+47:59 I mean we we've used it in our
+48:00 
+
+48:00 fundraising obviously and thanks thanks
+48:02 
+
+48:02 for for for backing us um and and
+48:05 
+
+48:05 generally just used it to guide our um
+48:07 
+
+48:07 our architecture development and our
+48:09 
+
+48:09 research so uh yeah Fel felt right to
+48:12 
+
+48:12 open source it and let others compare
+48:14 
+
+48:14 their architectures and their results
+48:16 
+
+48:16 with ours uh and then you know we yeah
+48:20 
+
+48:20 so it's exciting to share and thank you
+48:21 
+
+48:21 for for having back on to talk about it
+48:24 
+
+48:24 uh y thank you can you say a word on
+48:26 
+
+48:26 what's broken about needle and Haack and
+48:28 
+
+48:28 and what your eal does differently yeah
+48:30 
+
+48:30 for sure uh you know with with needle
+48:32 
+
+48:32 and Haack basically what you're testing
+48:34 
+
+48:34 is like find this weird thing the needle
+48:36 
+
+48:36 in in this giant pool of not weird stuff
+48:39 
+
+48:39 uh the he stack and so really all you
+48:41 
+
+48:41 need to be able to do to do this um is
+48:44 
+
+48:44 to sort of take like a little backpack
+48:46 
+
+48:46 and walk from the start of the context
+48:47 
+
+48:47 to the end of the context and like find
+48:49 
+
+48:49 the weird thing put it in your backpack
+48:50 
+
+48:50 and return it um you if you have to like
+48:54 
+
+48:54 sort of you have to sort of implicit
+48:56 
+
+48:56 prior that there is this thing is weird
+48:58 
+
+48:58 so you're more likely to remember it
+48:60 
+
+48:60 which sort of means that you you
+49:01 
+
+49:01 actually don't need to remember the
+49:02 
+
+49:02 whole uh the whole context window you
+49:04 
+
+49:04 don't you don't need to know all of it
+49:05 
+
+49:05 um and so so that allows you know some
+49:07 
+
+49:07 models I would say uh to to sort of look
+49:10 
+
+49:10 like they're doing this uh doing long
+49:12 
+
+49:12 context really well when really it's not
+49:13 
+
+49:13 working um as well so we decided to just
+49:16 
+
+49:16 go the complete opposite um super
+49:19 
+
+49:19 hardcore mode and just replace
+49:20 
+
+49:20 everything with random noise uh there's
+49:23 
+
+49:23 no semantic information at all because
+49:24 
+
+49:24 it's just randomly generated uh uh
+49:27 
+
+49:27 letters right basically just hashes um
+49:30 
+
+49:30 and uh if if you did something like
+49:32 
+
+49:32 needle and heack in a pool of hashes uh
+49:35 
+
+49:35 you really have to know the whole thing
+49:37 
+
+49:37 uh but then what we what we do is we
+49:38 
+
+49:38 also do a hop um so it's not just you
+49:41 
+
+49:41 find this one thing but you find this
+49:42 
+
+49:42 one thing and then you find another
+49:44 
+
+49:44 thing as obviously you know you can keep
+49:45 
+
+49:45 that going but that um that those two
+49:49 
+
+49:49 Dimensions I think really are the
+49:51 
+
+49:51 important quantitative components of
+49:53 
+
+49:53 context there are other things you can
+49:54 
+
+49:54 measure uh much better in in more domain
+49:57 
+
+49:57 specific evals of course we care a lot
+49:58 
+
+49:58 about code and so so we look a lot at
+50:00 
+
+50:00 that too uh internally but I think you
+50:03 
+
+50:03 know from a general purpose context
+50:06 
+
+50:06 evaluation uh perspective and the reason
+50:09 
+
+50:09 we chose to open source this eval and
+50:10 
+
+50:10 only this eval is just that you know I
+50:12 
+
+50:12 think this quantifies exactly what you
+50:14 
+
+50:14 want to measure when you think about
+50:15 
+
+50:15 long context that everything else is
+50:16 
+
+50:16 sort of domain specific um but yeah you
+50:19 
+
+50:19 you want to be you don't you want to be
+50:21 
+
+50:21 forced to remember the whole context
+50:23 
+
+50:23 window when you're talking about the
+50:24 
+
+50:24 context window otherwise is it really
+50:25 
+
+50:25 that big like yeah totally I remember
+50:28 
+
+50:28 our own researchers were just blown away
+50:30 
+
+50:30 by the the purity of the of the eval and
+50:33 
+
+50:33 um how well done it was and so thank you
+50:35 
+
+50:35 for what you're doing um and thank you
+50:37 
+
+50:37 for open sourcing it especially in an
+50:39 
+
+50:39 age where long context is becoming more
+50:41 
+
+50:41 and more important congratulations you
+50:43 
+
+50:43 back y cheers of course thanks Eric
+50:46 
+
+50:46 [Music]
+50:58 
+
+50:58 w
+51:02 
+
+51:02 [Music]

@@ -1,0 +1,1709 @@
+00:00 If you ask a hundred CRM users, you
+00:03 know, classic user interview questions
+00:05 to get to the core pain, it's all always
+00:08 a hundred of them will give you some
+00:10 flavor of I'm scared about things
+00:13 falling through the cracks. H all of
+00:16 them. Now, why would we care about
+00:19 something falling through the cracks?
+00:21 Makes us look bad. You know, we're we're
+00:24 coming into work, we want to add value,
+00:26 but we want a sense of respect. You know
+00:28 what I mean? That's what's common across
+00:30 all of these departments from
+00:32 engineering to sales CS. Everybody just
+00:35 wants to kind of feel like they belong,
+00:37 feel like they're they're worthy,
+00:39 they've earned their paycheck, uh
+00:41 they're respected by their peers,
+00:42 they're not going to get fired. And this
+00:46 whole new world allows us to operate
+00:48 kind of at that level. Yeah. of
+00:50 belonging and respect and weighing in
+00:53 creatively on kind of how we want these
+00:56 conversations to
+00:57 evolve without having to worry. Just
+01:00 like taking notes, like I don't have to
+01:02 take notes in a meeting. I can make eye
+01:04 contact. Oh my god, that's incredible.
+01:22 Today we're joined by Christopher
+01:24 O'Donnell, architect of HubSpot's CRM,
+01:26 the one competitor to successfully
+01:28 challenge Salesforce's dominance. Now
+01:31 Christopher is building Day AI, an AI
+01:34 native CRM that reimagines how customer
+01:36 relationships are managed. What makes
+01:39 Days special is how it eliminates the
+01:41 data entry burden that plagues
+01:42 traditional CRM by automatically
+01:45 capturing conversations across email
+01:48 meetings and messaging platforms. It
+01:50 constructs a comprehensive customer
+01:52 database without manual input. It's
+01:55 essentially self-driving CRM that gives
+01:58 salespeople the superpower of perfect
+02:00 memory and
+02:02 preparation. Christopher's vision goes
+02:04 beyond automation. It's about
+02:06 transforming how people connect and make
+02:09 business relationships more human by
+02:11 allowing people to be fully
+02:14 present. All right, we got a special
+02:16 edition of training data. We're on the
+02:18 road in Boston to see Christopher
+02:20 O'Donnell. Christopher, welcome to the
+02:22 show. Great to see you. Thanks for
+02:23 coming out to Boston. Okay, before we
+02:25 get going, okay, I'm going to set some
+02:27 context. Now, some of our listeners are
+02:30 aware of this, some may not be. There
+02:31 are three categories of enterprise
+02:34 software that sit above all the rest.
+02:36 There are three kind of super
+02:37 categories. There's CRM, there's ERP,
+02:40 and there is productivity. And in the
+02:42 world of CRM, you've got this monster
+02:44 called Salesforce, which is the single
+02:47 most valuable company to have emerged
+02:49 from the cloud transition. Salesforce
+02:51 has been a dominant force in CRM for a
+02:54 couple of decades with one exception.
+02:57 There is one company that has actually
+03:00 mounted a successful assault on
+03:03 Salesforce and that one company is
+03:07 HubSpot. HubSpot has the most beloved
+03:10 CRM product in the market with a billion
+03:12 plus of revenue growing at a nice clip
+03:14 with nice margins. It's fundamentally
+03:16 changed the shape of the HubSpot
+03:18 business. And the reason I mention all
+03:20 of this as context is because the man
+03:23 who built that business at HubSpot is
+03:26 Christopher O'Donnell. So Christopher,
+03:28 can you start by giving us a little bit
+03:31 of the story of how the CRM product at
+03:33 HubSpot came to be? Yeah, sure. Sure. So
+03:36 I joined HubSpot through an acquisition
+03:39 in
+03:41 2011. Um, and I had sort of three
+03:44 chapters at HubSpot. The first chapter
+03:46 was really on the heels of the famous
+03:49 ICP decision. And this is what they
+03:51 teach at Harvard Business School uh and
+03:53 other business schools. The kind of
+03:54 HubSpot case around the uh owner Ali
+03:58 versus Marketing Mary. Yep. Um decision.
+04:01 Yeah. You you you know this decision
+04:04 very well. Um and and I think it worked
+04:06 out very very nicely. So I came in right
+04:09 after the marketing Mary decision, the
+04:11 second contact uh second access for for
+04:14 contact pricing and so forth. And they
+04:17 really needed an email system. And so
+04:19 that was kind of the first chapter was
+04:21 Whitney Sorenson who's CTO there uh to
+04:24 this day and I kind of mounting this
+04:27 assault into marketing automation,
+04:29 marketing email. Um and it was from zero
+04:34 uh rewrite replatform. We had about four
+04:38 months to get off of a well-known
+04:40 enterprise email app and and we managed
+04:43 to do it. I was hands-on. I built the
+04:45 frontends because there was no one
+04:47 really else to do it and uh and Whitney
+04:50 did all the backends and everything. And
+04:51 we always kind of had an eye toward this
+04:53 universal contact database. That felt
+04:57 like the vision and this sort of um one
+05:00 stack unified way of doing it that felt
+05:03 like it was going to grow outside of of
+05:05 marketing email. Uh so about four months
+05:08 to using it internally about seven
+05:10 months to bring it to market we were
+05:12 able to take the company public and
+05:14 arguably win that category. Uh Marquetto
+05:17 was the big competitor and they went
+05:20 public and then went private and have
+05:21 kind of faded away. The second part of
+05:25 uh my time there was what you're
+05:28 describing and it was interesting. I I
+05:30 started to build a product management
+05:32 practice. This is end of 2013.
+05:35 Um, and as that kind of came online and
+05:38 I was able to give the marketing stuff
+05:41 that we had been working on to a team
+05:43 and and let that start to scale out, uh,
+05:46 kind of like the the fisherman throwing
+05:48 the fish back in the water started over.
+05:50 We did a startup within a startup.
+05:52 Stanford's actually doing a case on it
+05:54 now, which is I think going to be really
+05:55 really interesting. They have some uh,
+05:57 folks there that study this kind of
+05:59 innovation. It was very innovators
+06:01 dilemma literally from the book, you
+06:04 know, ripped from the pages of the Klay
+06:06 Christensen. How do you get that what
+06:08 Brian Helen would call the second
+06:10 Scurve? You know, how do you do that in
+06:13 an environment where incremental
+06:15 investment in the core product is going
+06:17 to yield margin? It's going to yield
+06:20 results. And HubSpot is one of the very
+06:22 few companies that pulled that off. And
+06:23 so what what did you do to make that
+06:27 work? Because I think the default is
+06:28 that it doesn't work. And in HubSpot's
+06:30 case, it worked to wild success. Yeah.
+06:33 In hindsight and talking to the Stanford
+06:36 people, in hindsight, it looks like it
+06:39 was very smooth and and brilliant and it
+06:41 was rocky and hard. Uh, you know, it was
+06:44 really messy. I give credit to the
+06:47 founders for their decision to do a
+06:50 startup within a startup. So, we did
+06:52 what the business school professors
+06:54 would call the the skunk works. We
+06:57 literally hung up a pirate flag behind
+06:59 us. We had a small team. It was at the
+07:02 beginning just me and Mike Peachy, my
+07:04 co-founder at at Dayai. Um, and then
+07:08 kind of grew the team from there. We
+07:09 were on our own stack. It's a cool
+07:12 story. I mean, it's it's it's really
+07:14 neat how the strategy played out. There
+07:17 was uh a big question about core CRM
+07:20 versus sales acceleration. Yep. And we
+07:22 were seeing a lot of tools, you know
+07:24 extremely well. we were seeing a lot of
+07:28 uh wallet share going toward these kind
+07:31 of plugins to CRM that would maybe give
+07:34 you more enrichment data or help you do
+07:36 better presentations or write better
+07:38 emails. And so we started there and did
+07:42 email open notifications, the simplest
+07:44 possible thing. We did it on our own
+07:46 stack. We did our own Stripe billing um
+07:49 and had a lot of fun with it. built that
+07:52 kind of into a sales acceleration suite
+07:55 and a year or two into it also made the
+07:58 decision as a company to do core CRM
+08:00 system of record. This made a lot of
+08:02 sense to product and engineering. We
+08:04 were very on board with this and had
+08:07 built things in a way to to set
+08:09 ourselves up to be able to do this. Um
+08:12 and so it kind of merged. It was a sales
+08:14 acceleration suite on top of CRM. We
+08:17 grew the the team to about a hundred
+08:20 people, went from zero to about 40
+08:23 million in revenue, and then were
+08:25 acquired back into the mothership. And
+08:28 that happened department by department,
+08:30 which I think is really interesting,
+08:31 which in a traditional normal
+08:33 acquisition of another company wouldn't
+08:35 be how it's done necessarily, though
+08:38 it's actually not a bad idea. Um, an
+08:40 interesting way to think about getting
+08:42 um an acquisition to be successful. So,
+08:44 sort of engineering went first, then
+08:46 product. you know, up the stack through
+08:48 sales and finally to customer support.
+08:50 That was the last thing to kind of
+08:51 integrate. And part of our mandate had
+08:54 been to reinvent go to market and
+08:59 explore these bottoms up adoption
+09:02 methods, bottoms up
+09:04 monetization. And there wasn't PLG back
+09:07 then, right? Nobody had a PLG blog.
+09:09 There was no such thing. And so we were
+09:12 kind of discovering that for ourselves
+09:13 while some other companies were as well.
+09:15 you know, Expensify and Atlassian and
+09:18 there are a bunch of examples in
+09:19 hindsight, but um but again, there was
+09:21 no real textbook. So, we were sitting
+09:23 there like, "Oh, we could generate
+09:26 demand from this feature and rotate it
+09:29 to sales." And then Peachy and Mark
+09:31 Rober, who was a huge part of this
+09:33 chapter,
+09:35 uh came in one day and had this
+09:36 spreadsheet where they had figured out
+09:38 the lifetime value by product area limit
+09:41 that people had hit. I still remember
+09:43 where I was sitting when they showed me
+09:45 this on a laptop. They're like, "Look at
+09:47 this model we made." And that was just a
+09:49 massive breakthrough. Um, and that led
+09:52 into the third chapter where I was
+09:55 fortunate enough to be steward of the
+09:56 overall team. Um, and uh, did that for
+09:60 four or five years. So, yeah, it was it
+10:02 was really interesting. It was a great
+10:03 opportunity. And on the CRM piece of
+10:05 that, because I think that's I think
+10:08 that's exceptional in part
+10:10 because CRM is such a big obvious
+10:13 category for people to go after. Nobody
+10:15 else has been successful. You guys were
+10:17 successful. I think that makes it really
+10:18 exceptional. The second thing that I
+10:20 think makes it really exceptional is the
+10:21 default is for act two or a startup
+10:25 within a startup to fail. And based on
+10:27 what you just said, there were kind of
+10:28 three things I heard as maybe big
+10:30 strategic decisions or big principles
+10:34 that certainly didn't cause it to work,
+10:36 but maybe helped set it up for success
+10:38 to some degree. One was the startup
+10:40 within a startup and that being a real
+10:41 thing. You guys were legitimately by
+10:43 yourselves as opposed to feeding off of
+10:45 the resources of the mothership.
+10:47 Second was a little bit of the endound,
+10:50 you know, starting with the sales
+10:51 acceleration tools and getting the
+10:53 system of engagement so to speak before
+10:56 going into the system of record which is
+10:58 of course CRM as opposed to a full
+10:60 frontal assault and starting with the
+11:01 system of record. And then the third
+11:03 thing is the the PLG and to your point
+11:06 at the time that wasn't necessarily a
+11:08 thing. So you kind of had to invent the
+11:09 playbook as you went. Um let's
+11:12 transition a bit into day. And so with
+11:14 day I see I see similarities and I see
+11:18 differences. One similarity I see is
+11:20 PLG. One difference I see is the full
+11:24 frontal assault because my understanding
+11:26 with day is that you're not sneaking
+11:28 around the edges and then popping out of
+11:30 a cake and saying hey we're a CRM.
+11:33 You're actually starting with the CRM.
+11:35 So maybe we start with that before we
+11:37 get into that. Why does the world need
+11:39 an AI native CRM? Let's start with that.
+11:42 Yeah. Well, it's an incredible time uh
+11:46 to be doing this from scratch. And there
+11:49 are 14 16 17 fundamental things about
+11:55 all of the existing CRM that are never
+11:58 going to change and are huge drawbacks.
+12:01 Um you know, fundamentally these systems
+12:03 are supposed to be working for you.
+12:05 Yeah. And they end up being things that
+12:07 we work for. Uh there are a few
+12:11 fundamental problems. There's the data
+12:12 problem where there just isn't canonical
+12:15 data. Uh and we can talk more about this
+12:18 because it it's a big topic and and a
+12:20 really interesting one. But you know
+12:22 even the best CRM implementation on the
+12:25 planet is probably 40 50% of the data
+12:29 that it even thinks that it should have
+12:32 um let alone what is now possible. Uh so
+12:35 that's the first problem is how do you
+12:37 actually populate this thing so that it
+12:39 has all of the information so that you
+12:41 can do your job. The second problem is
+12:44 user workflow. You know where do you
+12:46 start? How do you get something done?
+12:49 How do you answer a question? Um
+12:51 typically if you see a heavy CRM user at
+12:55 work, you're going to see 40 tabs open
+12:58 with that CRM, you know, all the way
+13:01 across. And so, uh, it's very easy to
+13:05 lose your place. It's very easy to lose
+13:07 the plot and you're not working back and
+13:09 forth with it to really understand a
+13:11 relationship. And that leads into the
+13:13 third part, which is walking away from
+13:15 it with some sort of work product. Y you
+13:18 know um CRM users are not sitting down
+13:21 and doing things asking questions
+13:23 getting answers and then walking away
+13:25 with an incredible internal memo or a
+13:29 knowledgebased you know article or an
+13:32 email draft or prep notes for a meeting.
+13:35 You know that's that's happening
+13:36 somewhere else. Maybe it's happening in
+13:38 notion or you know Google Docs or
+13:41 something. Um, and it seems like a
+13:44 really obvious thing that you should be
+13:46 able to sit down. The CRM has the full
+13:50 history of everything that's happened
+13:51 between the company and the customers.
+13:54 It's extremely obvious where to start.
+13:56 We can talk a lot more about that. And
+13:59 at the end of that thread, whatever it
+14:01 is, prepping for a meeting or following
+14:03 up on an email or reviewing all of the
+14:07 deals, uh, if you're a sales manager,
+14:08 understanding what are you going to do
+14:10 this week, where are you going to dive
+14:11 in, where are you going to help out? Um,
+14:14 you know, I have a fundamental belief
+14:16 that people really do want to buy
+14:17 things. Yeah. You know, I I've always
+14:20 built sales and marketing tools from the
+14:22 perspective of a buyer. Um, I'm in those
+14:25 databases as like a decision maker. you
+14:27 know, I'm I'm getting those calls more
+14:29 than I'm making those calls. And I'll
+14:32 tell you, buyers, we love buying stuff.
+14:34 I love buying things, you know. Um I I
+14:37 like buying Data Dog and configuring it
+14:39 and learning how to, you know, have
+14:41 richer traces and doing all this kind of
+14:43 stuff. I mean, these are this is like
+14:44 Christmas. Um and it doesn't feel that
+14:48 way to reps, you know. I also like sales
+14:50 reps. I like working with a rep. I like
+14:53 building the rapport. Um, and so it's
+14:56 this kind of combative relationship that
+14:59 I think is gunking up the economic
+15:02 engine of a bunch of earnest good faith
+15:05 people trying to, you know, deliver
+15:07 value and and push their companies
+15:08 forward. It doesn't need to be this
+15:10 hard. Uh, and a lot of it comes down to
+15:13 trust, improving relationships. That
+15:15 comes from keeping promises, remembering
+15:18 details, and there's a lot of fear
+15:20 there, too. You know what I mean? Sales
+15:22 is a hard job. There's a lot of
+15:24 rejection, there's a lot of
+15:26 disappointment. Um, and that bleeds into
+15:29 everything else that bleeds into the
+15:31 life of that person in in their family.
+15:34 So, I I think all this could be a lot
+15:36 more fun, frankly. Um, you know, we're
+15:39 incredibly blessed to live in this age
+15:41 of software and be able to use cool
+15:43 things at work and have interesting
+15:45 conversations with interesting people
+15:47 and we ought to be able to do it a lot
+15:49 better uh with no extra effort. Yeah, I
+15:52 would bet there are a bunch of people
+15:55 sitting in Salesforce Tower in San
+15:57 Francisco thinking to themselves, "Wait
+15:59 a minute, we're going to be the AI
+16:01 native CRM." What would your response to
+16:04 them be? Why can't Salesforce built
+16:05 this? You know, look, I I I do think
+16:08 that anybody can do anything and there's
+16:10 nothing stopping anybody. I mean, we're
+16:12 just a handful of people with laptops.
+16:15 Um,
+16:17 and you know the flip side of that is
+16:20 the data model is going to really need
+16:21 to change. So if we think about CRM
+16:25 traditionally, a really good way to
+16:28 think about it, Eric Mson, our founding
+16:29 engineer, uh, talks about it this way
+16:31 and I really like it, which is we have
+16:34 compressed the data, right? If you have
+16:37 a lot of data, one way to store it
+16:39 somewhere is to compress it down. So you
+16:41 can think of legacy CRM data as, you
+16:44 know, a photograph that has been
+16:46 downsampled into pixel art and it's just
+16:49 a few little blocks. It's like, you
+16:51 know, one of those uh crypto apes. Yeah.
+16:54 Yeah. You know, kind of thing. Um maybe
+16:56 not as valuable. Uh and so it's really
+16:60 radically downsampled. Why? Because
+17:02 people have to put this data in. And so
+17:05 you're really limited in terms of what
+17:07 you can ask for. you're only going to
+17:09 add fields into the CRM to collect data
+17:12 if you think somebody is going to have
+17:14 the wherewithal to actually fill it out.
+17:16 Yeah. Um otherwise, it's going to remain
+17:19 empty. And so that's kind of the
+17:21 fundamental principle. And I think the
+17:24 legacy CRM companies are going to do a
+17:27 pretty good job of going from kind of
+17:28 8bit to
+17:30 16bit. But there's this opportunity to
+17:32 to say, well, hold on a second. We now
+17:35 have what we need to build PlayStation 5
+17:37 with ray tracing. You know, uh it's it's
+17:40 like going from Super Mario Brothers to
+17:42 Elder Ring is really what's possible.
+17:44 You know, if I show my parents modern
+17:47 video games, they believe it is reality.
+17:49 They don't
+17:50 really immediately grasp that it is a
+17:53 video game. So that data decompression
+17:56 in the CRM, why is that happening? How
+17:59 is that happening? Um, but in terms of
+18:02 expanding this, why do we need this? To
+18:04 understand relationships and to allow
+18:07 people to do these things, give them
+18:09 these workflows, allow them to ask
+18:11 questions, allow them to walk away with
+18:12 work product, you need as close to the
+18:16 actual reality of those conversations
+18:19 and relationships as possible. You need
+18:21 the full picture. You need to invent not
+18:23 just a camera to take a photograph. You
+18:26 need a a 3D reality scanner. um and you
+18:30 need a way to store that, right? And so
+18:32 that that kind of pulls into a couple of
+18:35 elements. One is everything is about
+18:37 context. So if you want to build a chat
+18:40 interface where you can ask a CRM a
+18:42 bunch of questions, which we have, we
+18:45 are not the only people who will, you
+18:46 know, try to do this and build this, you
+18:49 need the data that you're working with
+18:52 to be of a certain type. It needs to be
+18:54 very detailed. It needs to be in natural
+18:57 language. it needs to not assume what's
+18:60 going to be valuable in a particular
+19:01 context in the future. And so the
+19:05 primary aspect of this compression of
+19:07 the data over time has been reducing it
+19:10 down to a checkbox. You know, reducing
+19:13 it down to a drop down. And with AI, you
+19:17 don't need to do any of that. You can
+19:18 just have all of the raw conversations
+19:21 and maybe you can transform them in some
+19:24 ways so that they're more convenient,
+19:26 more portable. Um but all of that needs
+19:28 to be interlin. All of that needs to
+19:31 point back and forth with citations and
+19:33 sources. There needs to be providence.
+19:36 Um you need to understand why an answer
+19:39 to a question is you know if you say
+19:41 what you know what's my team going to do
+19:43 this quarter and it shows you a chart
+19:45 that chart can be absolutely perfect and
+19:48 it will not be a usable product if you
+19:51 can't inspect that data and go into the
+19:54 details and understand all of the
+19:56 assumptions that the AI is making and
+19:58 point back to all of these different
+19:60 things. Right? If a CRM is generating a
+20:03 to-do list for you, which we have, we
+20:06 won't be the only ones doing it. Why was
+20:08 this generated, you know, um why is this
+20:12 bug in the in the support inbox? Um oh,
+20:16 it's this moment in this call that
+20:20 generated this thing and then we
+20:22 dduplicated against this thing that came
+20:25 from a Slack message where somebody said
+20:27 a similar thing. Here's how they said
+20:29 it, right? And so it's not just, you
+20:32 know, six tables in a relational
+20:34 database that have foreign keys that
+20:36 point to each other. It's this
+20:37 constellation
+20:39 uh endless kind of universe of data
+20:42 points that are all interlin. Uh so to
+20:45 the question of why can't somebody do
+20:47 it? They they could. I think data
+20:49 migrations are extremely painful and
+20:52 large incumbent you know hundred billion
+20:55 dollar trillion dollar companies have
+20:57 done them. Netflix has done one. uh you
+20:59 know, Square, you name it. You know,
+21:02 people have gone through these data
+21:04 migrations. Um they're generally moving
+21:07 from one technology to a relatively
+21:10 similar technology. Uh the idea that the
+21:15 use cases around the core data of a
+21:18 company, a system of record company is
+21:21 so wildly different. Yeah.
+21:24 So
+21:25 suddenly I don't think there's an
+21:28 example of that. And if I am a sales
+21:31 rep, an account executive, what's the
+21:35 biggest way in which my life will be
+21:37 different with AI native CRM versus
+21:42 whatever I was using before. I think the
+21:45 way to think about that would be, you
+21:46 know, how is life different with a
+21:49 meeting recorder and without a meeting
+21:50 recorder. Uh if you there are a bunch of
+21:53 these meeting recording bots out there
+21:54 and many of them are really really good
+21:57 and if you read the verbatims uh you
+22:00 know they're largely fivestar reviewed a
+22:02 lot of stuff is five star reviewed these
+22:04 days I'm a little skeptical but um but
+22:06 these are great products and if you read
+22:08 the verbatims it's not about this
+22:10 feature it's not about that feature it's
+22:13 I can be present in a meeting now y so
+22:17 that's the benefit and that's a glimpse
+22:19 into the type of benefit that you're
+22:21 going to get across the entire business.
+22:25 Um and and I think people are still tied
+22:27 to this idea of data entry is
+22:29 cumbersome. We should make data entry
+22:31 better. That's a little bit like the
+22:33 16-bit Pac-Man. Yeah. Um you know, data
+22:37 entry as a concept will entirely go
+22:40 away. Mh. Um, now being able to shape
+22:42 things and and sort of say, well, this
+22:45 part of this is not quite right or I
+22:48 kind of agree with this take over here
+22:50 in the system learning and adapting. I
+22:51 mean, we need to have control over these
+22:54 systems and with these systems and be
+22:56 able to work and coexist with them. Um,
+22:59 but we don't need to be entering this
+23:01 data. All of that administrative work
+23:03 goes away. We don't need to be writing
+23:06 an email from scratch. We can be looking
+23:09 at the email and weighing in on what we
+23:13 think. We can be maybe developing as a
+23:16 team the way that we want to email and
+23:19 it kind of moves up a level and so
+23:21 everything becomes much more strategic
+23:23 and much more
+23:25 intentional and we aren't going to
+23:27 forget things. Yeah. You know the
+23:29 classic thing if you ask a hundred CRM
+23:32 users you know classic user interview
+23:35 questions to get to the core pain it's
+23:37 all always a hundred of them will give
+23:40 you some flavor of I'm scared about
+23:42 things falling through the cracks
+23:45 all of them. Now why would we care about
+23:49 something falling through the cracks?
+23:51 Makes us look bad. You know, we're we're
+23:54 coming into work. We want to add value,
+23:56 but we want a sense of respect. You know
+23:58 what I mean? That's what's common across
+24:00 all of these departments from
+24:02 engineering to sales CS. Everybody just
+24:05 wants to kind of feel like they belong,
+24:07 feel like they're they're worthy,
+24:09 they've earned their paycheck, uh
+24:11 they're respected by their peers,
+24:12 they're not going to get fired. And this
+24:16 whole new world allows us to operate
+24:18 kind of at that level. Yeah. of
+24:20 belonging and respect and weighing in
+24:23 creatively on kind of how we want these
+24:26 conversations to
+24:27 evolve without having to worry just like
+24:30 taking notes. Like I don't have to take
+24:32 notes in a meeting. I can make eye
+24:33 contact. Oh my god, that's incredible.
+24:36 Now take that to prepping for the next
+24:38 meeting. I'm prepared for the next
+24:40 meeting because I remember all of these
+24:42 details. And by the way, these other
+24:44 things have happened and that's really
+24:46 valuable context and I can incorporate
+24:49 that really easily um you know just by
+24:53 asking the right question or clicking a
+24:55 button to meeting prep, right? Yeah. Uh
+24:57 so the level of effort basically goes to
+24:59 zero and the level of presence and human
+25:03 respectability and and self-esteem, you
+25:05 know, shoots up. I think that's going to
+25:07 be the biggest change. Yeah, it's
+25:08 interesting that a lot of the examples
+25:10 you gave have AI actually making people
+25:15 feel and behave more human and it's a
+25:17 nice example of like AI enabling people,
+25:19 AI providing superpowers to people. Um I
+25:23 want to ask you a question about day
+25:25 itself and specifically you started the
+25:28 company you and Peachy started the
+25:29 company maybe five six months after the
+25:32 chat GPT moment. You started I think
+25:34 April 2023 or thereabouts.
+25:37 Um, what was it that inspired you to
+25:40 start a company? What did what did you
+25:42 what did you see? What made you want to
+25:44 build from scratch again? Kind of what
+25:46 inspired that? I think it was as far
+25:49 back as 2017 that I said out loud, I'm
+25:53 never building a product from scratch
+25:55 without PG. Uh, so he kind of came on
+26:00 the job market. Uh, and I could kind of
+26:03 make that work. the chat GPT thing was
+26:07 capturing our imagination and it just
+26:09 felt really good like the stars aligned.
+26:12 In retrospect, I don't think we could
+26:14 have picked a better time. Yeah. Um it
+26:17 was a little early. So it was that right
+26:20 at the end of the spring of 23 and the
+26:24 chat chat GPT had its moment but the the
+26:26 fundamental stuff of what we're doing in
+26:28 this trade of taking natural language
+26:30 and building and editing and updating
+26:33 structured output that then gets used
+26:36 you know to sort of rinse and repeat. Um
+26:38 that was not possible yet. Yeah, that
+26:41 became possible in June of
+26:44 24 35
+26:46 sonnet. You started to see glimmers of
+26:49 it with uh GPT4 and function calling and
+26:52 you could kind of coax it into uh
+26:54 returning JSON and that kind of thing,
+26:56 but we really had a year of
+26:59 understanding the problem space and
+27:01 starting to understand what was going to
+27:03 happen with the AI that that had not
+27:06 yet. So that was that perfect window.
+27:08 It's kind of like if if you're surfing,
+27:11 you catch the wave a little early and
+27:13 then you swim like hell to try to drop
+27:16 in on it. And I I I think we kind of
+27:19 maybe got lucky there. Um I It's funny.
+27:22 I was looking at some old code that I
+27:24 was killing the other day and I was
+27:26 looking at the chatbt 35 Turbo era and
+27:30 the prompts that we had in there and
+27:31 it's like all caps just just begging for
+27:34 it to return, you know, a type- safe
+27:36 object. Uh and then yeah, in June of
+27:40 last year that became possible. Yeah.
+27:43 You know, and you could say, "Hey, look,
+27:44 you know, Claude, here's what we're
+27:47 trying to do. Here's the context we
+27:48 have. This is the type of output that we
+27:50 need to be able to work with
+27:52 heristically, right?" And it's that
+27:54 hopping back and forth between heristic
+27:56 and and non-deterministic worlds that
+27:58 yeah, makes our days colorful and long.
+28:02 um you know that was when it was uh
+28:06 really possible and and it was July
+28:08 basically July 1st I remember because I
+28:11 took a few days before the 4th to just
+28:14 go deep and you know I went up to New
+28:17 Hampshire and just opened up my laptop
+28:18 for 72 hours and started working on uh
+28:22 you know some of the pipeline stuff and
+28:23 actions to do stuff. Um so that's kind
+28:26 of when we let it rip. Um before that it
+28:29 was mostly the the meeting recording um
+28:33 uh aspect of the system which we knew we
+28:36 needed for a bunch of reasons as an
+28:39 entry point into user workflow. It's a
+28:42 really good one because it's that moment
+28:43 of contact. And so if we can, you know,
+28:47 have some seat at the table, we knew
+28:49 that would be strategically interesting.
+28:52 We knew that these were really easy to
+28:53 adopt. Um it turns out they're very
+28:56 sticky. We have basically 100% uh user
+29:01 retention. I don't think I've told you
+29:02 this, but um uh maybe no, I showed you
+29:05 some data on this. That's why that's why
+29:06 you still hang out with me. Um but it
+29:10 they are actually pretty sticky and and
+29:12 people will try different ones but have
+29:14 stuck with ours uh because of a few
+29:17 particular qualities of it and how it's
+29:18 integrated now into that deeper CRM
+29:21 stack. Principally though we needed to
+29:24 capture that data and we needed to be
+29:26 able to capture the raw data and massage
+29:29 it, transform it, you know, kind of cook
+29:32 it, chop the wood as we say and uh use
+29:35 that to start to feed the CRM. So that
+29:38 and then Gmail and we had been doing
+29:40 Gmail in that first year too which is um
+29:44 you know I wouldn't wish on anybody. Uh
+29:47 it's hard right? Uh Google calendar and
+29:50 Gmail ingestion is is really tricky. And
+29:52 then we added Slack and continued to add
+29:55 data sources from there. But it was
+29:57 really July of 24 that we started on on
+29:60 core CRM. And in the basic idea and what
+30:03 you said with with the meeting recorder
+30:05 and Gmail and Slack is be present where
+30:09 your users are and ingest as much
+30:13 context and information as possible so
+30:15 that you can sort of autopop populate or
+30:17 even auto construct this CRM that they
+30:20 need. Is that the basic idea? 100%. You
+30:23 know, Peachy and I have had this idea
+30:25 for a long time of the Spotify of sales.
+30:28 Yeah.
+30:30 You know, the idea of somebody who grew
+30:34 up with Spotify that you would choose a
+30:37 CD to buy. Yeah. And then that would be
+30:40 your CD. Yeah. And you know the ones
+30:43 that you prefer you would keep uh in
+30:46 your car. So that of those eight discs,
+30:49 you could easily access them and you
+30:52 know, and we all had the the visors. Did
+30:53 you have one of those visors, you know?
+30:55 Oh, I had the thing that sat in the back
+30:56 seat, you know, the little binder full
+30:57 of discs that kind of sat on the floor
+30:59 in the back seat. Yes. Yeah, that's what
+31:00 I had. Yeah, exactly. I think this stuff
+31:03 is going to feel that ridiculous, you
+31:05 know. Um, uh, Dan Chen, one of our early
+31:09 users who who you talked to, and I think
+31:11 he made this comment to you as well. the
+31:13 next generation of people coming into
+31:15 the workforce. It's not going to be this
+31:18 idea of data entry is too cumbersome.
+31:22 They're going to look at these things
+31:24 and people are going to explain
+31:25 something like Salesforce to them. Yeah.
+31:28 And they are going to think that they
+31:30 are on
+31:31 punct you know it's like hold on a
+31:34 second. So I do these zooms and I do
+31:36 these emails. Yeah. Yeah. Okay. And then
+31:37 I like DM with my prospects and we do
+31:40 all this. Okay cool. And then I like I
+31:42 tell the computer all of
+31:45 that by like I put that into the system.
+31:48 They're like, "Yep, right here. It's
+31:50 that button right there." And then
+31:51 there's a form and you got to fill it
+31:53 out. You really have to fill it out. Um
+31:57 it's going to be completely insane to
+31:60 people. So, back to the ingestion. If
+32:03 you're going to do that, you know,
+32:04 Spotify had to go out and do contracts
+32:07 to get access to all of the all of the
+32:09 data. Um, for us that is binding to
+32:12 these inputs and they're natural
+32:14 language inputs. You know, it's uh plain
+32:17 text. And
+32:19 then bringing in some of what we know
+32:21 about the CRM data model, even though as
+32:24 I've sort of hinted at it under the
+32:26 covers looks totally different, you are
+32:29 going to want to be able to see a list
+32:31 of people and a list of companies. You
+32:33 know, you're going to want to be able to
+32:35 add a column. um if for no other reason
+32:40 than inspecting it so that you can trust
+32:43 it, you know, uh you need to be able to
+32:46 do all of that. So that's all 100%
+32:49 automatic. You know, folks come in, they
+32:51 sign up, they invite a couple of
+32:53 co-workers, they off their Gmail, maybe
+32:56 they add the bot to Slack, and within
+32:60 half a day, you know, four hours, eight
+33:02 hours, the entire CRM is built. Yeah.
+33:05 you know, contacts, companies, deals,
+33:07 tasks, everything. Deals is the
+33:10 interesting one. Um, uh, because you
+33:13 have to have this idea of of like
+33:15 business process context. And that's
+33:18 kind of advanced mode, I think. You
+33:20 know, building company records, contact
+33:23 records. Not that it's easy, but it's,
+33:25 you know, it's a lot of looking at the
+33:27 web. It's a lot of, you know, that type
+33:29 of thing. And you have domain and email
+33:31 address to work with. when you start to
+33:33 get into to-dos and opportunity
+33:37 management and all the rest of it, it's
+33:38 like, whoa, okay, hold on a second. You
+33:41 know, what does this mean? What is what
+33:43 does due date mean? What does this stage
+33:45 in this pipeline mean? Yeah. Um, and so
+33:48 getting it right requires a lot of input
+33:50 from the user and they may not show up
+33:52 having all of these answers. It's not
+33:54 like everybody shows up and says the
+33:56 entrance criteria for our fourth stage
+33:58 of the business development partnership
+33:60 pipeline is the following. you know,
+34:02 they don't know. They don't know. And
+34:04 so, you have to kind of get that
+34:06 metadata out of them and then use that
+34:09 as you're looking at all of this data.
+34:11 Yeah. And continually return to the data
+34:14 set as things change and re-evaluate
+34:16 things. Move a deal from one stage to
+34:18 another because a particular meeting
+34:20 happened where particular things were
+34:22 said. Like I said before, you need to
+34:24 show proof of why you did that.
+34:27 Um, and then on top of all of that, the
+34:30 user has to be able to say, "No, no, no,
+34:33 it should be over here." Um, you know,
+34:36 let me weigh in on this, or let me make
+34:38 a hard edit to this. And so, it it
+34:41 really is very, very different under the
+34:43 covers. Yeah. It's almost like
+34:44 self-driving CRM. It is self-driving
+34:47 CRM. And you know what we learned? you
+34:49 do know this. I know you know this. Um
+34:52 is that so that was kind of that arc
+34:54 from July through then we got into
+34:57 automated opportunity stuff in November
+34:60 and up through you know that I can't
+35:04 believe it was a month. Oh my god. So by
+35:07 December what we what we were learning
+35:09 was full self-driving is too scary.
+35:13 Yeah. It's too scary. And so from New
+35:18 Year's to now, the big push for us, it's
+35:22 it's been getting that last 10% of data
+35:26 quality, for sure. Um, you know,
+35:29 avoiding false negatives on saying
+35:31 something's an opportunity. Uh, getting
+35:33 to-dos right. We call them actions.
+35:35 Getting actions right. But it's really
+35:38 more about this control and
+35:40 configurability layer. Yeah. and and
+35:42 getting the balance of the be best of
+35:45 both worlds where okay the data is
+35:48 right and I can also correct it. I can
+35:53 also understand why it is what it is um
+35:57 and make sense of it. I can debug it
+36:00 sources and reasoning right um a very
+36:03 simple example of this is uh perplexity
+36:06 you know if you do a search on
+36:07 perplexity it'll show you the web pages
+36:09 that it's using to build the answer.
+36:11 Yep. Um, and this now becomes kind of
+36:15 the core product challenge I think for
+36:17 all of these AI native apps across
+36:19 disciplines is managing transparency and
+36:22 managing control as you are prompting
+36:25 and working with the LLM being able to
+36:28 approve the output being able to uh have
+36:31 rules and instructions about the output
+36:33 so that it sort of fits your standards.
+36:35 I think on some level we're all in a
+36:37 similar game. Yeah. Yeah. Which all
+36:39 comes back to trust. you know, can you
+36:41 trust what the AI is doing on your
+36:43 behalf? Um, let's talk about building
+36:45 with AI a little bit. Can you share
+36:48 maybe some of the surprises or some of
+36:50 the magical moments along the way? Yeah,
+36:53 so I I am a heavy uh personal user of
+36:56 the AI coding apps. Um, I've tried I
+36:60 can't say I've tried all of them because
+37:01 there are so many, but I'm
+37:04 regularly checking back in uh with with
+37:07 most of them. I most heavily use cursor
+37:10 um and have been pretty deep in that for
+37:14 over a year. Um these things are
+37:17 evolving incredibly quickly. Yeah. Uh
+37:20 week by week they will have not just
+37:24 pros and cons and sort of one's ahead of
+37:26 the other in the horse race, but they're
+37:28 dramatic
+37:30 uh movements. You know, one week wind
+37:33 surf will do something kind of cool. um
+37:37 but oh people don't really like the
+37:39 pricing model and then the next week
+37:41 cursor says okay well here's you know a
+37:43 new way of doing rules management and
+37:46 system instructions that's like way
+37:48 ahead of what anybody else is doing but
+37:51 then a new model comes out and it
+37:53 responds to this stuff differently and
+37:56 so it's like oh you actually shouldn't
+37:59 use any of that in these types of
+38:01 circumstances. So it's um it's really a
+38:04 moving target. It's fascinating and
+38:06 thrilling to kind of watch. One of the
+38:08 things that's happening right now as we
+38:09 speak is that
+38:12 um less context and less instruction
+38:16 layer in a lot of cases is better. And
+38:20 so apps that have less of that off the
+38:23 shelf, right? Like fewer features, fewer
+38:26 stuff going into particularly 37 sonnet,
+38:30 um you get a better result for a lot of
+38:33 questions. And so, you know, you have
+38:35 companies that have been adding all of
+38:37 these features to let you do all of
+38:38 these system instructions and then it's
+38:40 like, whoa, how do we respond to this?
+38:42 Um, so man, you know, long days and
+38:45 nights for everybody working in that
+38:46 field. Uh, you know, one interesting
+38:49 thing about that playing field I will
+38:50 say is that they are all
+38:53 working off of the same raw input. They
+38:56 are all able to look at a code base.
+38:59 Yeah. And what's interesting for us is
+39:02 there's no code
+39:04 base you know we have to create the
+39:07 codebase and then we have to do the kind
+39:10 of coding stuff on top of it which is uh
+39:13 which is really interesting. Can you
+39:15 talk about how going from a world of
+39:18 software that executes things
+39:20 deterministically to a world of software
+39:22 that is in some ways deterministic and
+39:25 in some some ways probabilistic?
+39:28 How does that change the art of building
+39:31 software products? I will say that
+39:33 generally speaking, software engineers
+39:36 are not liking this. Uh it's it's not
+39:40 the kind of curveball that they were
+39:42 hoping for, I think. Um you know, I
+39:45 mean, and and there are ways to kind of
+39:48 coax it into being more deterministic.
+39:50 Uh so in terms of surviving the
+39:52 day-to-day and really making progress, a
+39:55 lot of stuff, you know, you turn down
+39:56 the temperature and you kind of say,
+39:58 "Okay, you know, um especially when
+40:00 you're doing natural language structured
+40:02 output, but it's still
+40:03 non-deterministic." Yeah. Uh I think
+40:06 hallucinations are not
+40:09 nearly the problem that we would have
+40:12 thought a year ago. Okay. You know, a
+40:14 year ago having this conversation
+40:16 saying, "Well, this chat GPT thing is
+40:18 just saying some nonsense." you know,
+40:20 what are we going to do about this? A
+40:22 lot of that's gone away in this type of
+40:24 use case. I can't obviously speak for
+40:26 every use case, but if you're saying,
+40:28 here's a whole Gmail conversation, you
+40:30 know, is this uh a promotional email? Is
+40:34 this a cold email? What's going on? Are
+40:36 there pending action items and so forth,
+40:39 there isn't an enormous amount of
+40:40 hallucination. Um, you might get a
+40:42 slightly different result. And it is
+40:46 tough because there isn't a lot of
+40:47 tooling out there for you know
+40:49 non-deterministic stuff. I think you
+40:51 know from a from a a venture perspective
+40:54 and so forth the the new generation of
+40:56 tooling is super interesting for sure
+40:58 because this idea of
+41:01 eval kind of in this race but you know
+41:03 these are really interesting products
+41:05 that are really valuable to product
+41:07 builders like us um that are going to do
+41:10 really well. So as that tooling matures,
+41:13 that's another kind of tailwind to it.
+41:16 Uh but you know, if nothing had changed
+41:18 from where things were a year ago, uh it
+41:21 would be very very scary. How have UX
+41:25 patterns evolved in a world of AI? The
+41:27 UX patterns I I'll say a couple of
+41:30 things about. One is consumer grade. So
+41:35 we have talked in B2B SAS for a long
+41:38 time about you know consumer grade and
+41:42 the truth
+41:43 is what we meant
+41:46 was kind of a coat of paint a design
+41:49 system a big investment in information
+41:52 architecture and trying to arrange
+41:54 things in an intuitive way and so forth.
+41:57 We did not mean, you know, Facebook
+42:00 native mobile app level transitions and
+42:04 autoscrolling and, you know, all this
+42:06 kind of stuff. And so the work that
+42:10 folks at Anthropic and Chat GPT and
+42:12 Perplexity and these types of companies,
+42:14 they're building consumer products.
+42:17 Yeah. And the quality is extremely high.
+42:20 They are very wellunded. They have the
+42:22 best engineers. Um, a lot of those
+42:24 engineers are coming
+42:26 from social media and consumer apps. Um,
+42:30 and so the level of polish is insanely
+42:32 high, which only in the last, I would
+42:35 say, month am I coming to fully
+42:37 appreciate because I'm matching up our
+42:39 stuff against, you know, what's out
+42:41 there. And in the past, when you've done
+42:43 that and and kind of looked at what's
+42:45 out there and where the bar is, you
+42:47 know, you can get over the bar. Yeah.
+42:50 And in B2B SAS, you can do it. maybe you
+42:53 need to invest more in design, you know,
+42:56 value it more, give them more of a seat
+42:57 at the table. Um, now it's a little
+42:60 different and things are going to need
+43:01 to be unbelievably fast, unbelievably
+43:04 smooth. Um, so that's one in terms of
+43:09 UX. The second thing I would say
+43:12 is control and
+43:14 transparency balanced with automaticity
+43:18 is the core tension. So if you ask a
+43:22 user, do you want all of this to be done
+43:25 automatically for you? Of course they're
+43:27 going to say yes, when you do it
+43:30 automatically for them, they then have a
+43:33 lot of questions
+43:35 um of why things are a certain way, what
+43:37 they can do about it. And there are a
+43:39 lot of levels in there, you know, do you
+43:42 want uh to let the user just flag
+43:44 something as a miss?
+43:48 um maybe not that valuable. I mean,
+43:50 everybody's doing that, you know, but
+43:52 how often am I in Claude Web saying
+43:54 thumbs down? It's it's it's never like a
+43:57 thumbs down in Claude web. It's, you
+43:59 know, let me push you in this direction
+44:01 or let me ah you're missing this piece
+44:03 of context. Okay. Yeah. Let me paste
+44:04 this document in or whatever. Yeah. And
+44:07 so you have to be able to do that. You
+44:09 have to be able to manage the context
+44:12 that the system is using. um you need to
+44:15 be able to undo you know and correct the
+44:18 data. So, we have a document internally
+44:22 uh that Daphne made, Daffany Funston,
+44:25 and it's called the rules of the game,
+44:27 and it outlines like, hey, anything we
+44:31 do, you have to see why the AI did what
+44:34 it did. You have to be able to override
+44:37 it as a person and know that you're
+44:39 overriding it, not have it flip back.
+44:42 Um, because you'll run into that, too,
+44:44 right? Oh, I moved this thing, you know,
+44:46 into this stage because, you know, I
+44:48 thought it was correct, but then the AI
+44:51 moved it back. Yeah. Okay. Well, what do
+44:54 you want? Do you want the AI to be able
+44:56 to continue the decision-m after the
+44:59 user has weighed in? Sometimes, not all
+45:01 the time. Again the data model is uh
+45:04 sort of ridiculously uh involved to be
+45:07 able to give the user very basic things
+45:10 like hey if I say that you know the
+45:13 status on this thing is such and such it
+45:16 needs to what update the status and
+45:19 never change it or take that piece of
+45:21 information into account for every
+45:24 status that it prints moving forward you
+45:26 know in that case probably the latter.
+45:28 Um, so yeah, the the UX patterns around
+45:32 control, uh, progressive disclosure, you
+45:34 know, it's show me the clean shiny thing
+45:37 that's automatic, but then let me turn
+45:39 it around, you know, let me flip the
+45:41 hood and see what really happened
+45:43 leading up to this. Um, and so I think
+45:46 that kind of modality is going to be
+45:48 really interesting. You mentioned the
+45:49 document that Gwen put together, which
+45:50 is a little bit of a glimpse into how
+45:52 the day the company works. Let's talk a
+45:55 little bit about day the company. Yeah.
+45:58 And maybe starting with two things that
+46:01 are on my mind. One is I think you guys
+46:03 are a very good example of this idea
+46:06 that a lot of people have talked about
+46:08 which is you can just do a lot more with
+46:11 a smaller team and particularly now that
+46:13 we're in a world of AI you can do a lot
+46:15 more with a smaller team. Team is very
+46:17 small but it's very high caliber people
+46:19 and you work extremely well together.
+46:21 The second thing, which is one I want to
+46:22 ask you about, is I tend to be a big
+46:25 believer in inoff culture. You know, we
+46:28 we Sequoia have been back in the office
+46:30 since May of 2021. You know, we're five
+46:32 days a week. We think it we think it
+46:34 works. You guys are not all in the
+46:36 office together and yet you seem to have
+46:38 extremely good flow. And so, I guess the
+46:40 thing I'm curious about is how do you
+46:42 achieve that? H how do you get this
+46:44 small group of people in different
+46:46 corners of the country to come together
+46:48 and actually have extremely good flow?
+46:50 Yeah. No, it's a great
+46:51 question. And the spoiler is I bet we'll
+46:54 end up in the office. Yeah, I bet we
+46:57 will.
+46:58 Um, you know, fewer sites, I think,
+47:03 fewer time zones is generally good. And
+47:07 we've been kind of letting the universe
+47:09 sort that out for us. And it may be that
+47:11 the universe just sorts it out and that
+47:12 we end up in an office together in
+47:14 Boston. And going into that office, I
+47:17 think having had the experience that
+47:19 we're having now, the flow will be very
+47:21 different. Um, Pichy wrote a really cool
+47:23 post on LinkedIn about the offsite that
+47:25 we had recently. Uh, and a couple of
+47:28 things about it, characteristics that I
+47:30 think are emblematic of the way that we
+47:32 work, you know, our company culture.
+47:34 Yeah. But it's it's really just, you
+47:35 know, the way that we work. Um, and to
+47:38 your point, I would say they are very
+47:41 high caliber people. There's a little
+47:43 bit of
+47:44 a a thing to these particular people in
+47:48 terms of their level of emotional
+47:52 intelligence, how much they like the
+47:55 work for the work's sake. Uh the
+47:57 willingness for everybody to be so
+47:59 directly exposed to customers like this
+48:02 is not all for everybody. I, you know, I
+48:05 wouldn't, you know, stand on a soap box
+48:07 and say everybody should do this. Um,
+48:09 but it works really well for us and it's
+48:11 the kind of people that we want around.
+48:13 You know, if if an engineer never wants
+48:15 to reach out to a customer to verify
+48:18 that a bug is fixed, like they're just
+48:21 not going to have a ton of fun. You know
+48:22 what I mean? Uh, so that's a really
+48:25 important layer is that the primary
+48:27 source
+48:28 material, it's kind of what we're trying
+48:30 to do with the product, right? And we
+48:32 use our product for this, too. I if you
+48:35 say, you know, oh, that's a great idea
+48:38 that that would kind of get us the thing
+48:40 for Dan. Yeah. Everybody knows what
+48:43 you're talking about and everybody's
+48:45 following along on the plot and in and
+48:47 seeing what you're synthesizing. So that
+48:50 that's kind of a an unwritten contract
+48:52 that we've all entered into, which is,
+48:55 you know, I am willing to hold an
+48:58 enormous amount of customer
+48:59 conversations in my head so that we can
+49:01 have these conversations.
+49:04 Um, I find it makes it really fun. You
+49:07 know, it it makes it possible to come in
+49:10 and do a day of work where you feel like
+49:11 you've actually made a difference for
+49:14 somebody. Now, it's software, so making
+49:15 a difference for one person if you've
+49:17 chosen the right person, you know, it's
+49:19 going to make a difference for a lot of
+49:20 people. Uh, and and the team's nice, you
+49:24 know, Daphne joined. I asked her a few
+49:26 days in how it was going and she said,
+49:28 "Everybody's really nice."
+49:30 Um, and that's part of it, too. It's I
+49:33 think part of that comes with seniority.
+49:35 It's the emotional intelligence part of
+49:37 it. It's the, you know, people are kind
+49:40 of here doing it for similar reasons.
+49:42 Um, what would I don't know if you've
+49:44 codified the company's values. If you
+49:46 have, what are they? If you haven't,
+49:48 what would you say they are for the
+49:49 people who are on the team? What's their
+49:51 lived experience of what the company
+49:53 cares about? Yeah, the Lyft experience
+49:55 is um very truly customerdriven in a
+50:01 literal sense. Yeah, you know that our
+50:04 customers talk about the same same hour
+50:06 bug fixes and same same day feature
+50:08 releases. Yeah, it seems like the
+50:10 feedback cycle is incredibly fast.
+50:13 That's the fun right there. Yeah. you
+50:15 know, um, if you're going to do
+50:17 something anyway and it's the right
+50:19 thing to do, you can do it right then
+50:23 and get word of mouth and get momentum
+50:25 and and thank somebody. I mean, this is
+50:27 early software. This is early stage
+50:29 software. People are are investing their
+50:31 time and energy into this and we need to
+50:33 reciprocate, you know, we need to show
+50:35 them that it's worth it. If we do that,
+50:38 it'll be really fun for them, too. and
+50:39 they'll feel like they're a part of
+50:41 something because they are a part of
+50:42 something and their feedback is creating
+50:44 this this larger thing. It's one reason
+50:47 we've kept it a little bit on the
+50:48 smaller side because you can't do that
+50:52 forever with, you know, not even a
+50:55 certain volume of people because I think
+50:57 you can I think you can do this with a
+50:59 very large volume of people but once the
+51:03 product is at a certain maturity and
+51:05 once you've really
+51:07 nailed who those people are um you know
+51:11 this last year and a half has involved a
+51:14 lot of kind of understanding, okay,
+51:15 what's this like for solopreneurs, you
+51:17 know, you know, there's a case to be
+51:19 made that this that we should try
+51:20 personal CRM or, you know, very small
+51:24 business founder CRM or that we should
+51:27 start with VCs, you know, because
+51:29 they're early adopters and boy, they're
+51:31 certainly willing to give it a try, you
+51:33 know. Um, and so we've kind of been
+51:35 updating ICP and doing that, staying
+51:39 focused on the people who we take the
+51:42 most seriously in terms of having
+51:44 strategic
+51:45 uh, weight. Yeah. It's easy to take
+51:48 those people very seriously and build a
+51:51 thing for them that hour. Yeah. Because
+51:54 you are giving them credit for being
+51:56 right. Yeah. In a very macro sense, like
+51:59 you have it. There isn't, you know, a
+52:01 product management off-site and, you
+52:03 know, sticky note sorting exercise to be
+52:07 doing around it. It's like you are the
+52:09 user, you know, you are correct, we will
+52:11 do the thing and it happens to be really
+52:14 fun for them, which makes it fun for
+52:15 you. Um, the other thing Peachy noticed
+52:18 about our off-site is we pull the work
+52:22 up like and and I think the piffy answer
+52:26 to your question of how have we been
+52:27 getting by remotely. It's a lot of slack
+52:30 huddle. Yeah, it's a lot of slack
+52:32 huddle. Very low stakes. We don't have
+52:35 any recurring meetings. Um, and when we
+52:38 get on huddle, I'll get on huddle with
+52:40 Gwen. We've had a bunch recently and
+52:42 we'll work for six hours, you know. Um,
+52:45 and and it's kind of magical to be able
+52:48 to do that. So, and there's a whole
+52:51 practice of pair programming. Yeah, I
+52:54 actually don't know anything about it
+52:55 and in the body of knowledge. I should
+52:57 stop and probably read a book on it. But
+52:60 that is actually really great. You know,
+53:02 you don't want to go out for a huge hike
+53:05 or mountain climbing thing by yourself
+53:07 for a number of reasons. And, you know,
+53:09 diving in to do some of this data model
+53:11 stuff, it's buddy system. um that's
+53:14 worked really well and I don't think
+53:16 that the gulf between the customer and
+53:19 the code needs to be as wide as it is.
+53:22 You know, we're used to these sort of
+53:25 senatorial trappings where you
+53:27 ultimately have go to market and and uh
+53:30 uh R&amp;D sort of as the Republicans and
+53:33 the Democrats. Yeah. you know, and
+53:35 everything is some flavor of managing
+53:37 expectations for their frontline people
+53:39 who are the the voting base that have
+53:41 all the power in a SAS business, right?
+53:43 And and so there's a lot of distraction
+53:45 that comes with that. There's a lot of
+53:47 subtext. There's a lot of peeling it all
+53:50 back. Again, everybody having good
+53:52 intentions like everybody solving for
+53:55 the customer like best possible case,
+53:58 you have this huge gulf. And so we're
+54:01 we're trying to build and and I would
+54:03 say at this point really have a culture
+54:06 where you know here's this question from
+54:08 a customer. Uh here's a doc on it. We do
+54:11 a lot with docs. Yeah. We do a lot with
+54:14 the written word. You can't compete with
+54:16 the clarity of the written word. I think
+54:19 um but pull the code up,
+54:21 you know, pull the code up. It it's not
+54:25 like this secret backroom thing for just
+54:27 the software engineers. like look at how
+54:29 things are labeled. Look at the
+54:32 conditionals of when we show that button
+54:33 and when we don't. Y let's look at it
+54:36 together. It's not, you know, rocket
+54:37 science. Some of it's going to be pretty
+54:39 opaque if you show it at a company
+54:41 level. A lot of it isn't, you know, a
+54:44 lot of it isn't. Uh and so that lets us
+54:47 get to technical decision- making and
+54:50 polish a lot faster, too. And again is
+54:53 kind of fun and rewarding. One more
+54:54 question and then we'll jump into the
+54:56 lightning round. So,
+54:58 um, one of the mantras that applies to
+55:02 some businesses, and I think it applies
+55:04 to today in some ways, which I believe
+55:07 is stolen maybe from the Navy Seals or
+55:10 some other branch of the military, is
+55:13 the idea that slow is smooth and smooth
+55:15 is fast. And you are anything but slow
+55:19 when it comes to working on the product.
+55:21 But you've resisted the temptation to
+55:23 juice the vanity metrics that a lot of
+55:26 startups feel pressured to juice. Said
+55:28 differently, your customers today are as
+55:31 much design partners as they are
+55:33 customers and you've been very
+55:35 deliberate about crafting a product that
+55:38 meets a certain bar of excellence or
+55:40 certain bar of quality before releasing
+55:43 it out into the world. And I guess the
+55:45 question is where did that strategy come
+55:48 from? Is it AI specific? Is it just the
+55:52 way you like to build products? What's
+55:54 sort of the philosophy behind the slow
+55:56 is smooth, smooth is fast strategy? It's
+55:59 not typically what I would do. It's not
+56:03 um I like
+56:05 the Y combinator wedge kind of thing. Um
+56:09 I like incremental improvement. I like
+56:13 broad customer exposure.
+56:16 uh with the exception of when you are
+56:20 doing software that is of a certain
+56:24 scope and stake
+56:26 that the investment that you need from
+56:29 somebody to get any feedback is very
+56:32 high. Yeah. Um and the scope is also
+56:35 very wide. Uh I mean part of it is I
+56:39 don't necessarily want the entire world
+56:41 to know how wide it is. Um but I guess
+56:45 they'll find out from from this. You
+56:48 talked about the three main spaces.
+56:50 Yeah. I mean we're doing the entire CRM.
+56:54 Yeah. Um it's every function lot of
+56:56 surface area AI native everything you
+56:58 know. Um it's probably going to happen
+57:02 faster than people expect. Yeah. So
+57:05 doing things in that way where we are
+57:08 trying to meet this bar with a
+57:10 particular customer. This is system of
+57:12 record
+57:13 software, you know. Um, I don't know how
+57:17 Parker did rippling. I'm guessing he
+57:19 didn't say, "Let's launch payroll in one
+57:21 state." Um, maybe he did. I'd actually
+57:23 be really, really curious to hear the
+57:25 story from him. If you're doing HR
+57:27 payroll, you know, benefits, there is a
+57:30 level of completeness uh that you need
+57:33 to get to, you know, even be in the
+57:35 game. CRM has some of that. CRM, you can
+57:38 get a little bit cute with some use
+57:39 cases and say, "Okay, here's a meeting
+57:41 recorder, but there's a contact sidebar
+57:44 and it has, you know, personal history
+57:46 and everything like that and it's a CRM
+57:47 record and you're sort of Trojan horsing
+57:49 in."
+57:51 Um, so it's not what I would typically
+57:53 do. I think it's very appropriate for us
+57:57 now. Um, and I also think that, you
+58:01 know, we're setting ourselves up for the
+58:03 very, very long term. the thought
+58:06 experiment of you know if you are in a
+58:10 race to a millionaire or
+58:12 r how do you think about things think
+58:15 about the y combinator which okay and
+58:18 you say all right let me break your
+58:19 brain you're in a race to a 100red
+58:21 millionaire r from zero how do you think
+58:24 about
+58:24 things you immediately start to think
+58:27 about things differently and you think
+58:28 okay well we're going to need something
+58:30 that people just don't cancel that has a
+58:33 certain ASP a certain adoption pattern,
+58:36 you know, and so
+58:38 forth. It doesn't force you out of the
+58:41 way of thinking go to market or SAS
+58:44 economics or anything like that. So when
+58:46 you say you're now in a race to 10
+58:48 billionaire R from zero and you have
+58:51 seven years, you know, to beat the
+58:54 record, whatever. Uh record I looked it
+58:57 up, by the way. It's I get from what I
+58:59 can gather, Bite Dance did it in eight.
+59:01 I think Meta did it in that sounds about
+59:03 right in in nine or something. I mean,
+59:05 which is insane. But if you say you're
+59:07 in a race from zero to 10 billionaire R
+59:10 now you think about things in an
+59:12 extremely different way, you know, this
+59:14 needs to be that entire top level space.
+59:17 Every line of code needs to make every
+59:20 other line of code somehow more
+59:22 valuable.
+59:23 And so little patches and little feature
+59:28 things where you're doing it in a
+59:29 non-strategic way, you can't afford to
+59:32 do that. All goes away. And so, you
+59:36 know, if your number one feature request
+59:38 on MeetingBot is output templates
+59:41 because these other apps have output
+59:44 templates, you maybe you resist doing it
+59:47 that way because output templates are a
+59:50 core part of interacting with LLMs. And
+59:52 when you do output templates, you're
+59:54 going to do output templates. Yeah. And
+59:55 it's going to be legit and it's going to
+59:58 be proper and make sense and be a
+59:60 permanent thing. Um, so soon we're going
+60:04 to have this feature that people have
+60:05 been waiting for having done it in that
+60:08 way. Yeah. Right. You can't say uh let's
+60:11 draft an email with this email editor
+60:14 and not be thinking about marketing
+60:16 email and knowledge base website, you
+60:19 know, internal wiki. you have to set
+60:22 yourself up to do things in in that way
+60:24 as well. Um, and that is kind of my
+60:26 style. Like I do like thinking that way,
+60:29 but um that's the other big slowest
+60:31 smooth is fast factor. All right,
+60:34 lightning round. All right. Who do you
+60:37 admire most in the world of AI?
+60:40 Sarah Guo. All right. I love it.
+60:45 Um, yeah. Who do who do I admire most? I
+60:48 don't know. I think you already nailed
+60:49 it. Yeah. I know. I know that. Sarah's
+60:51 incredible. She's extremely extremely
+60:54 helpful. I will
+60:57 give I will give a lot of credit
+61:01 to Daario
+61:05 for what felt for a long time like
+61:08 bubble
+61:10 wrapping his models so much for safety,
+61:15 you know, and and we're I think we're
+61:17 starting to forget that narrative.
+61:19 Uh, you know, Claude was for a long time
+61:22 unusably bubble wrapped.
+61:25 You know, you'd say, "Okay, now in the
+61:28 middle of this play, we're going to have
+61:29 this, you know, choreographed martial
+61:31 arts thing." And Claude would say like,
+61:32 "I'm done. I'm out." You know, and
+61:35 people on Reddit and everywhere were
+61:36 were, you know, rolling their eyes and
+61:38 laughing. And this was before 35 Sonnet.
+61:40 Yeah. When they really like set
+61:43 everybody straight.
+61:44 Um and so you look at it today and and
+61:49 using those
+61:50 models having grown up with them in the
+61:53 expectation of safety and ethics is
+61:56 incredibly important. Like we're doing
+61:59 so much for our customers automatically
+62:02 and they can say anything they want into
+62:05 this system and they could theoretically
+62:06 use it for any purpose. the fact that we
+62:10 can sleep at night knowing that a
+62:13 massive amount of that kind of ethical
+62:16 compliance is handled because we're
+62:18 using those particular models. Uh I I
+62:20 think it was I think it was courageous,
+62:22 you know, and and I'm thankful thankful
+62:24 to it. So I' I'd probably say him.
+62:26 That's a good one. Um one of the topics
+62:29 that's been uh debated I think recently
+62:32 in the Twitter sphere and elsewhere,
+62:35 should designers know how to code? And I
+62:37 think you're well positioned to answer
+62:39 this because I I almost think of you as
+62:40 an artist first and foremost, you know,
+62:43 crafting exactly the right experience
+62:44 for the person on the receiving end of
+62:46 the product. And so I think about you as
+62:48 coming toward engineering from very much
+62:50 a design and and product lens. Should
+62:52 designers know how to code? I think the
+62:55 biggest change happening in product
+62:56 design, which as a field is radically
+62:60 changing, is writing.
+63:03 I think that's the biggest thing. I
+63:05 think that UX
+63:06 content there's a big debate about
+63:08 whether that's a thing and we started to
+63:11 build these teams out Slack, HubSpot,
+63:12 other places started building out these
+63:14 writer teams to get all of the brand and
+63:16 tone and voice and button text and
+63:18 everything right. That's correct in that
+63:22 that that is a real discipline. However,
+63:24 I think that is a major part of the
+63:26 product designer's job going forward
+63:28 because, you know, 10 years ago, it was
+63:31 asking the designer in Sketch probably
+63:33 back in the day or Photoshop or whatever
+63:36 to design a date picker. No one's going
+63:38 to design a date picker right now,
+63:40 right? You're going to use a component
+63:41 library, have a design system. That's a
+63:43 solved problem or like you shouldn't be
+63:46 doing doing software if uh if you're not
+63:49 doing that. And so it frees up a lot of
+63:51 career bandwidth for designers and I
+63:54 think they're going to need to adapt. So
+63:55 I think they're going to need to get
+63:56 really good at content um you know
+63:59 microcopy flows you know moving over
+64:02 time. That's a weak spot for design I
+64:06 think traditionally is kind of
+64:07 throughout time and this is the consumer
+64:09 folks are really good at this. So I
+64:10 think they're going to have to get
+64:11 really good at interaction design as
+64:13 well. Uh in terms of coding I don't
+64:16 know. I mean, I don't know if anybody's
+64:18 going to have to code.
+64:21 Outside of the world of AI, what is the
+64:24 most extraordinary product you have ever
+64:26 encountered?
+64:29 Okay. The most extraordinary product,
+64:31 honestly, is the Augusta stove.
+64:35 Really? Absolutely. Tell us more.
+64:39 I mean, look, it it's it may be a good
+64:41 example because it's like completely
+64:44 functionless. It it is just a hunk of
+64:47 cast iron with a pilot light that keeps
+64:50 it hot. That's it. There there are like
+64:53 no moving parts at all in it. Um but
+64:57 what it does, the benefit to the user is
+65:01 create a sense of hearth in the home.
+65:04 Um, and it has little features to it
+65:07 where if you have wet snow boots from,
+65:09 you know, your kids playing in puddles
+65:11 or whatever, it's meant for you to put
+65:14 those on the top of the stove. There's a
+65:16 place for that. Uh, it heats the home.
+65:19 You know, this idea that everybody kind
+65:21 of gra however you lay your house out,
+65:23 everybody gravitates toward the kitchen.
+65:26 Well, the AA is always on. It's hot, you
+65:29 know, and it's immediately accessible.
+65:31 It has four ovens that are always on.
+65:34 And so you think about things
+65:35 differently and you cook oatmeal over 24
+65:38 hours and you cook a chicken over 16
+65:40 hours and you make a sandwich and then
+65:43 you melt the cheese on it for a guest.
+65:44 You know, it it's really kind of fun and
+65:47 cool. It's extremely safe for kids. So
+65:49 my kids are are actually killer cooks
+65:52 and can make themselves, you know, uh
+65:55 whole meals. They cook meals for their
+65:57 grandparents and stuff at 10, 11 years
+65:59 old. So I And I like the example because
+66:02 there's nothing to it. Yeah. Yeah. Very
+66:04 cool. All right. Last question. It's a
+66:06 Mount Rushmore question, and you can
+66:08 take it in one of two ways. Number one,
+66:12 who is on your Mount Rushmore of product
+66:14 people? Or number two, who is on your
+66:17 Mount Rushmore of
+66:19 founders? It's a it's a tough one
+66:21 because you have to walk the line of
+66:22 sicky, you know. Um, and I think for me
+66:26 the answer is going to
+66:28 be the same. you know, the the founders
+66:30 that are on any kind of Mount Rushmore.
+66:33 I'm not really in any place to make a a
+66:35 Mount Rushmore at this point at all, but
+66:39 uh certainly Steve Jobs. Yep. Um he's
+66:42 complicated. I have an opportunity
+66:44 through a mutual friend of ours to be
+66:46 learning more about him um and kind of
+66:49 how he interacted and what the
+66:50 experience was like for those around
+66:52 him. It's not a leadership style I
+66:54 really want to emulate, but um you know
+66:56 the results pretty impressive and the
+66:58 engagement I think is really
+67:00 impressive. The trust of knowing what's
+67:04 best for the user. It's a little over my
+67:09 line. I still need to talk to people to
+67:10 figure out whether they like something
+67:12 or not. Um but Steve Jobs is up there.
+67:16 I' I'd put Paul English up there for
+67:18 similar reasons. I would I would because
+67:21 I think Paul
+67:23 uh Boston guy is cool.
+67:26 You know, Paul left a long shadow. I'm
+67:28 not friends with Paul or anything. I've
+67:30 I've met him. I've hung out with him. He
+67:31 probably has no idea who I am. Um but uh
+67:34 he will after he listens to Yeah. Well,
+67:36 I hope so. Hey, Paul. Uh I hear you're a
+67:38 great great dude. Um the one time we
+67:40 hung out, you said some really brilliant
+67:41 stuff.
+67:43 The the recruiting and the customer
+67:46 focus. Yeah. I think that left a really
+67:48 long shadow. Um I hope he knows that,
+67:50 you know, the the story of the really
+67:52 loud annoying phone in the middle of of
+67:54 the room. I mean, our culture is some
+67:56 version of that. It's really just the
+67:59 extension, you know, down from from that
+68:02 and the diaspora of that kind of value
+68:04 system. Um so there's that and then also
+68:07 what the way he recruited and the way he
+68:10 talks about recruiting I think is really
+68:12 um underststudied. uh you know the idea
+68:15 that if you have the candidate you have
+68:18 the right person that's your only job
+68:21 and you need to be in person with them
+68:23 with an offer letter within hours you
+68:25 know not weeks and uh and I think that's
+68:28 another advantage that we can have
+68:30 culturally over over larger companies is
+68:32 you know moving very quickly with
+68:34 amazing people y so he's up there and
+68:37 then I'll throw in Rick Rubin I mean I
+68:38 don't he's probably founder of he
+68:40 probably has some production company or
+68:42 something I don't know but he's a really
+68:44 interesting guy because he's a he's a
+68:46 Steve Jobs with a completely different
+68:49 vibe and a completely different level of
+68:51 humility which I think is interesting.
+68:53 So Rick Rubin has produced you know
+68:54 probably half the records we grew up
+68:57 liking and listening to um and you know
+69:01 and he's in the studio to the question
+69:03 about designers knowing how to code. I
+69:05 mean this is the greatest music producer
+69:07 maybe of all time and has no idea what
+69:11 any of the knobs or dials do. doesn't
+69:13 know a single chord on the piano and
+69:16 trusts himself in his taste completely
+69:20 and totally. Uh there are no focus
+69:22 groups or anything like that. Um so I'd
+69:25 put him up there. I'd put those three
+69:26 guys up there. We got room for one more.
+69:29 Sarah Blakeley. Really? Okay. 100%. I I
+69:33 was just telling my daughter about this
+69:34 cuz um my 10-year-old daughter, she was
+69:37 dropping some science on me, man. She
+69:40 was saying, "You know what? if we took
+69:41 maps and that claude thing you were
+69:44 showing me and you know and she starts
+69:47 riffing on it. I almost texted you so I
+69:49 was like you should you should get in on
+69:51 this one early. Um but uh I was telling
+69:55 her about Sarah Blakeley and and the
+69:58 idea I mean very humble, very
+70:01 approachable, really inbound kind of
+70:04 leader with a really positive message.
+70:07 Um but she just did it, man. She just
+70:10 did it and she had a belief, you know,
+70:13 women's undergarments should not be
+70:15 designed by men who knew nothing about
+70:16 it. Like that is okay, great. You are a
+70:20 billionaire, you know. Um and and she's
+70:22 done a lot of good with it. So I' I'd
+70:24 put her up there as well. That's right.
+70:27 There are four on on the mountain,
+70:28 right? He's up there, too. Awesome.
+70:31 Christopher, thank you for coming on the
+70:32 show. All right. Thanks for having me.
+70:34 Good to see
+70:36 you.
+71:00 Heat. Heat.

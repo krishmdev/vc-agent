@@ -1,0 +1,548 @@
+00:00 One of the things that we you know that the field of computational biology is often asking is you know if you have a
+00:07 genetic mutation in your genome if I sequenced you whether that's via you know 23 and me or you know or or some
+00:14 other genetic test right you'll find mutations in your genome how do we actually interpret those and understand
+00:20 you know what the what the functional consequences are right sometimes you'll get a rare genetic disease those are
+00:25 causal genetic mutations that are known to cause a a devastating disorder that might be musculardrophe or cystic
+00:33 fibrosis or uh breast cancer, right? But you know most of the mutations that you have um there's sort of this uh you know
+00:40 we call them variance of unknown significance which is fancy kind of scientist what the hell is going on,
+00:47 right? And uh you know it turns out the model has an opinion about those mutations and what the hell is going on
+00:53 with them. And it turns out it's sort of state-of-the-art in doing that. [Music]
+01:12 Today we're joined by Patrick Shu, a pioneer in genome editing, crisper technologies, and the emerging field of
+01:18 generative biology. He's the co-founder of the Ark Institute, where cutting edge AI and biology converge to reimagine
+01:25 scientific discovery. Patrick and his collaborators created EVO2, a revolutionary biological
+01:31 foundation model that can interpret and generate genomic sequences across all domains of
+01:37 life. By training on the fundamental information layer of life, DNA itself,
+01:42 EVO can identify patterns in genetic code at scale, and predict effects of both coding and non-coding mutations
+01:49 that can mean the difference between health and disease. In this episode, we'll hear how
+01:54 Patrick's vision goes beyond creating better drugs to building a comprehensive understanding of biology at all scales.
+02:03 Patrick, welcome to the show. Thank you for coming. Thanks for having me on. Excited to spend some time with you
+02:08 today. I think maybe the most obvious thing to start with is, you know, people have heard about CS and bio for the
+02:14 longest time. Now it's all about AI and bio. What are the results? like what
+02:20 what should we actually be expecting to see and where are the drugs? Why are we not seeing the drugs yet? It it takes
+02:27 time, right? Well, here's the thing. Even if we had perfect drug design
+02:32 molecules, um, you know, coming out of these pipelines and fancy models, it was
+02:38 still, you know, you can design a trillion molecules, right? 10 trillion, right? But you still have to actually test them, right? Initially in animals
+02:45 and then in people, right? And so that's the real the real bottleneck and even if you pack top of funnel with all the
+02:51 things it just takes years to actually go through the regulatory apparatus right and so I think there are a few
+02:57 intermediate checkpoints along the way in order to kind of realize this potential but it might be worth taking a
+03:02 step back and just saying you know this is a bit of a soap box of mine that ML for bio is not just drug design right
+03:08 this is actually ultimately I think a very important but narrow part of the
+03:14 potential of biology and not just as a field of STEM and in the way that it
+03:20 affects human lives, right? And do you mean basic just like understand the human body or where where else do you
+03:25 think the applications are beyond drugs that treat all of us? Yeah. One of the things that motivates me academically is
+03:32 the idea that we actually have a a unifying theory for biology, right? So unlike the physicists who have been kind
+03:39 of scrimping and you know kind of poking for one for a century, right? We have
+03:44 this in biology and it's so obvious that we find it, you know, sort of an just an
+03:50 obvious force, right? This is of course evolution, right? And then so it acts on biology across all of its different
+03:56 length scales from entire planets, right? Biology can, for example, terraform planets, right? All the way
+04:02 down to, you know, ecosystems and populations to individuals to our tissues to individual cells to
+04:09 individual molecules, right? So that's this unifying force that is actually very deep and rich and actually you know
+04:16 you can learn a lot from right how do we activate that unifying theory how do we put it to work so we've been thinking
+04:22 about this in the lab and uh recently have been training a series of models that we call EVO inspired by these
+04:29 forces of evolution that tries to connect biological sequences using this
+04:34 sort of you know modern sequence modeling paradigm directly to biological function with the idea that evolution
+04:41 passes down its effects of natural selection throughout generations of life
+04:46 via DNA mutations. And so, you know, last year, of course, you know, uh multiple Nobel prizes were awarded for
+04:53 AI and for AI in biology, in particular for protein design and for predicting
+05:00 the structure proteins to David Baker and to Demis Sabis and John Jumper, right? But and if you read those
+05:07 citations, they both explicitly state for proteins, right? And you know, we
+05:12 love proteins, right? These are of course some of the most important fundamental molecular machines, but our
+05:19 realization as for me as a as a genome biologist, um if you will, right? Um the
+05:25 idea is that proteins are encoded in DNA along with RNA and with regulatory DNA
+05:30 and all of the things that you need to make life, right? And so we asked could we train a model on genomes with a long
+05:38 context model so that it could reason over all the different bases and uh
+05:43 molecules that are embedded inside of genomes to learn about the molecular interactions and how they lead to biological function. Now that was very
+05:51 scientific or academic right but we can talk through specific examples of what we were able to actually do with this in
+05:57 a way that uh grandma can understand. uh you know like predicting the effects of
+06:02 breast cancer causing mutations right it actually is uh bestin-class at doing this right or being able to design new
+06:10 crisper gene editing systems or uh you know I think uh you know in addition to
+06:16 its zeroot capabilities I think people are building really an app store for for
+06:21 biology on top of all of these kind of foundational layers one of the kind of funny things in modeling today is how
+06:28 everyone's model has to be more foundational than someone else's model. There's a bit of a pissing contest
+06:34 that's that's happening, right? But maybe our model is more foundational than the other models. But, you know, because your DNA versus protein I I I
+06:42 mean or you know, and then below that there are these all atom diffusion models. So maybe those are even more fundamental. I don't really know. I
+06:49 think what matters are the capabilities and doing something that actually feels useful. And I think, you know, those are
+06:56 just some examples of what we thought was cool and useful from the model. Can you actually walk through a couple more of those use cases like which are some
+07:02 of the most exciting ones and why is it possible today with EVO but wasn't possible before and the model's open
+07:08 source and so where has it been picked up like where are people running with it with some of those use cases that
+07:13 Josephine mentioned? Yeah. Yeah. So the model so I can just maybe talk about what the model is right. So you know
+07:20 it's um it's an auto reggressive uh sort of uh multiconvolutional hybrid model
+07:25 right but you can think of it like uh you know just a really efficient long context model that's trained at least in
+07:31 this version auto reggressively right and uh basically it does this next token or next base prediction and it turns out
+07:38 just like in natural language or in vision or in robotics and embodied intelligence this general machine
+07:44 learning paradigm is able to find higher order patterns right and so just like
+07:49 you know uh if you're doing next word prediction you can learn about grammar or color um and world navigation right
+07:58 you seem to learn some rich set of representations about biology by
+08:03 predicting the next base or the next amino acid residue or the next gene
+08:08 right and the model learns something about the molecular logic that gives rise to a cell right and so one of the
+08:16 things that we you know that the field of computational biology is often asking
+08:21 is you know if you have a genetic mutation in your genome if I sequenced you whether that's via you know 23 and
+08:27 me or you know or or some other genetic test right you'll find mutations in your genome how do we actually interpret
+08:34 those and understand you know what the what the functional consequences are right sometimes you'll get a rare
+08:40 genetic disease those are causal genetic mutations that are known to cause a a devastating disorder that might be
+08:46 musculardrophe or cystic fibro osis or uh breast cancer, right? But you know,
+08:52 most of the mutations that you have um there's sort of this uh you know, there we call them variance of unknown
+08:57 significance, which is fancy kind of scientist. We know what the hell is going on, right? And uh you know, it
+09:04 turns out the model has an opinion about those mutations and what the hell is going on with them. And it turns out
+09:09 it's sort of state-of-the-art in doing that. Interesting. Wait, what's an example of one of these mutations? what what did the model discover and how did
+09:16 you verify that what it discovered was accurate? Yeah. Yeah. So, so you know one one example that we showcase in the
+09:22 paper is a gene called broco one right it's sort of a famous gene that's known to cause breast and ovarian cancer and
+09:29 uh you know if you have the sort of specific causal mutations in broco one many uh women elect to get double
+09:36 mystctomies right and this is obviously you know a serious and major life decision and medical decision for you
+09:41 and for your family right and you know the question is you know if you don't have one of the known to be benign
+09:48 mutations So you're fine and you just go ahead and get an annual mammogram and just check and monitor, right? There's
+09:55 this entire middle distribution of these VUS or variants of known significance,
+10:00 right? And uh you know there is this uh kind of gold standard database from uh
+10:06 you know the scientific literature. It's known as ClinVar and it basically has a list of all of the different genes that
+10:12 are known to cause disease and you know which of those mutations in those genes can cause uh disease state or not,
+10:18 right? And we can basically use this as a ground truth database to assess the predictions of the model for you know
+10:25 new mutations that you introduce into the gene and whether or not those would be pathogenic. Right. And
+10:30 so when you develop a new type of model, you have to um create a lot of the evals
+10:37 as well. And so that was actually something that we put tremendous effort into. And obviously you guys see this
+10:43 horizontally across AI in many different domains is you know folks will build
+10:48 things to the benchmarks. No one really I think likes building benchmarks. It's
+10:53 really gory. It requires a lot of taste. It takes a lot of time. You have to continually update them as the models
+10:58 get better. And you know we dealt with a very similar uh sort of challenge here which was making evals that would be
+11:06 similar to the the AGI or intelligence evals where it actually feels meaningful
+11:11 when you're actually able to do it like Amy or Putin problems or you know things
+11:16 like that. What what would be the equivalent of demonstrating true biological understanding that a cell
+11:22 biologist would fuel emotion if you were actually able to solve that right? um
+11:27 you know what what would it look like to make all molecular biologists feel what the NLP people felt a few years ago.
+11:34 Right. Right. Though that's sort of the the core of you know what we're kind of noodling through. Yeah. And I think you
+11:40 mentioned this briefly but you know there's you guys are working on the DNA layer and you guys didn't actually do
+11:45 anything in the lab. You didn't have a lab in the loop like there was no RL. Talk us through the decision to do that
+11:51 and then kind of the decision for people who are doing protein models or affinity models. a lot of them have a lot more
+11:57 lab in the loop. Talk us through kind of the differences between some of those models too. Yeah. So, so we started with
+12:02 DNA because we think it's the fundamental information layer of life, right? Um the second is it's also just
+12:09 pragmatically where we have the most data data. Yeah. Right. Where does the data come from? It comes from the entire
+12:15 scientific community, right? And so there are these uh kind of open- source governmentf funded and maintained
+12:21 databases um you know known as the sequence read archive right where basically you know when you publish a
+12:27 paper you have to submit your data and all of the sequencing data that's been created over the last 25 plus years
+12:34 right goes into these databases right and that has all of the genomes that the
+12:39 community has ever sequenced for bacteria for bacterial phagee for
+12:44 viruses for humans, monkeys, fish, flies, you know, the entire Noah's arc
+12:51 or managerie, whatever, right? We've got all those genomes and you know, so so
+12:56 the experiment that's already been done, if you will, is the experiment of evolution, right? That you know, there
+13:02 are different mutations um that are what make us different from each other. That's human genomic variation, but also
+13:09 the mutations that make us different from chimpanzees or from worms or from bacteria. And the model can just look
+13:17 across this you know you know trillions of tokens large data set and learn those
+13:23 patterns. And that was sort of the, you know, insight of this sort of EVO series of models that that we've been training
+13:30 um at ARC um is to kind of ask if you could predict that next base, right?
+13:36 Then that might be the difference between being healthy or having a cickle cell anemia mutation, right? or it could
+13:43 predict the next amino acid residue. And that could be the difference between having a catalytically active binding
+13:51 pocket for a key enzyme right in your, you know, body physiology or that being
+13:58 a null mutation where that thing doesn't work anymore. Or it could also be the sort of the next gene, right? So these
+14:05 are different levels of abstraction, right? that uh completes some biosynthetic pathway or it's a you know
+14:12 a different gene that's you know you know that's been removed by some transposon or jumping gene mobile
+14:18 genetic element that's excised it so some sort of viral interference if you will right so there's just you know
+14:24 across large databases you find new patterns and it turns out those seem to be biologically meaningful yeah so if
+14:32 you're going from DNA and you know the function in many ways you you mentioned even the DNA model can actually predict
+14:38 binding affinities. Do you even need the structure the protein structure models at all as an intermediate step or can
+14:45 you just go straight from sequence to function? So, so structure is um another
+14:51 way to ab have an abstraction of function, right? And so you have concepts of convergent evolution for
+14:56 example, right? where something has similar function but they have different sequences and slightly different
+15:02 structures that act out the activity or you know function of that protein. Right. And so this sort of you know
+15:09 sequence to structure to function token or mapping of protein language modeling
+15:15 I think is very beautiful. Yeah. Right. It takes advantage of you know the central dogma of molecular biology
+15:22 alphold series. Right. Right. Well, it it takes advantage of just our supervised textbook understanding of how
+15:28 biology works, right? And know the interesting oxymoron with these models for me is the way that we use them is,
+15:36 you know, just like use chatbt, it's text in, text out. You know, EVO is DNA
+15:41 in DNA out. Yeah. And it turns out we don't speak DNA very well. Sort of
+15:47 imagine if you were using a model like chatbt in Russian, right? But 1% of the
+15:53 words were in English, right? That's kind of what it feels like. That's the vibe of using EVO is actually you don't
+16:00 really know what's going on. And so you're you have to build lots of
+16:05 annotators and interpretability, like techniques to try to interpret and read what's happening.
+16:12 And so the way that we even use and prompt the models is really primitive, right? And so the way that we do fancy
+16:18 prompt engineering workflows to, you know, get more utility out of these
+16:24 models is something that we're just in the very early innings of exploring how that works with these biological
+16:29 language models because we speak DNA with an extremely heavy accent. Yeah.
+16:36 Who do you think will do some of that work? Because the model is currently open source. Do you envision a company
+16:41 formed around this? Will it be individuals who are at these pharma companies who learn how to prompt this? like how does that ecosystem evolve?
+16:48 Yeah, I hope everybody right uh first of all, right? And I think the you know tools become useful when they
+16:55 meaningfully lower the energy barrier of adoption right it's like a it's a
+17:01 catalysis type of activity where you know everyone uses blast for sequence
+17:06 alignment right everyone uses alphafold to look at protein structure right uh
+17:11 you know everyone uses crisper to do gene editing everyone does ngs to read DNA or RNA right so I think there will
+17:18 be a zoo of different models for not just modeling molecules or mapping
+17:25 sequence to function but I think every step of the scientific method right and
+17:30 so I think you know you know if 2025 is the year of AI agents right I think you
+17:35 know there's lots of interest in agents for science and not just agents for interpreting molecules but also for
+17:42 doing the meta aspect of how scientists work and and operate and we're also very
+17:48 excited about that at arc and recently released some of our first AI agent work. Yeah. What is the most important role for ARC to play in all of this? Um,
+17:56 we started the institute to be able to have this mothership that is able to
+18:03 attack long-term research capability breakthroughs and to be able to have the long-term thinking and the
+18:10 multidisciplinary expertise in order to actually execute on those goals. Right? I think if you look in biology, one of
+18:17 the interesting things is that a lot of the biggest mechanistic or basic science
+18:23 breakthroughs do happen in a university context, right? And I would say that's
+18:29 interestingly kind of in contrast to what happens in AI or CS in general. Yeah. Yeah. Why do you think that's the
+18:35 case? Um that that might be a 10-hour epic
+18:40 podcast, right? I I that's the one minute vaccination. I have a lot to say about this but um I think the in in
+18:48 short it does happen in universities. I think you know 30 years ago the
+18:54 questions that basic science uh was interested in and uh industry was
+18:60 interested in were quite different actually and I would say today they seem to heavily overlap right and there are
+19:06 some things that you know folks don't typically do in university lab like you know people don't tend to study PK or
+19:13 TOX or CMC right or you know hardcore drug manufacturing type things but folks
+19:19 are interested in molecular glues, induced proximity and degraders and new drug concepts, right? folks are also
+19:26 interested in new machine learning models um you know and in new delivery mechanisms and you know inflammation and
+19:34 stress and you know all kinds of things like this and so there's much more heavy overlap but I think the way that the
+19:41 type of product that selects what you do upstream is very different they're structurally different you know end of
+19:48 the day you have to optimize for grandfunding and first or co- first author papers and you know you know that
+19:55 type of stuff in the academic setting whereas you know you do have to make a drug and have you know dozens to
+20:03 hundreds of people lying behind a molecule or a program to reach the holy land right and I think that does lead to
+20:10 differences in strategy and I don't know personally by the way I think people
+20:15 really kind of overemphasize like what's academia and what's industry and the reality is these are like heavily
+20:21 overlapping distributions today and how people operate And so I think the differences are a little overblown, but
+20:29 you know, they do have fundamentally different incentives that drive different behaviors. And a lot of what
+20:35 we try to do and blending our academic side of the house with our technical
+20:41 staff uh side of the house, which is built much more like you'd see in industry, um has been, you know, kind of
+20:47 part of what we hope will make ARC a model that others want to copy or
+20:52 replicate or propagate. Yeah, makes sense. And you've had some fun people come through on the technical side of
+20:59 the house, including people like Greg Bachmann. Yeah. No, it's been it was a joy. Yeah. So, Greg joined us during his
+21:05 sbatical uh from uh OpenAI really the kind of you know, the first vacation
+21:10 that he had ever taken since starting OpenAI. Of course, it's to work more. Yeah. So, so I actually have a funny
+21:17 story about this. Um you know, hopefully he hopefully Greg will allow me to tell it. Um but you know when he when he
+21:22 first came by ARC and we were talking to him about you know um you know biological language modeling and how you
+21:28 know the sort of machine learning breakthroughs of you know all these other domains might just port over directly to understanding you know
+21:36 molecules. Um he was you know really kind of you know jazzed by this and also by the idea that his very specific uh
+21:44 capability and expertise would be kind of really meaningful in actually making this happen. And um but you know in in
+21:51 in the you know initially he was you know um he was you know saying you know this is really the first vacation I've
+21:57 ever taken. I can't promise too much. You know I might not be able to spend so much time on this. Um you know you know
+22:03 I owe I I I need to take Anna on vacation. Um and then and then Anna um
+22:09 gets up and goes to the bathroom um you know in the middle of this very long meeting. And then he's like all right
+22:15 here's my email. Get me on the repo. Of course, of course. Yeah, that's
+22:22 funny. So, so yeah, just built different. Yeah, it was such a joy to to learn from him. What have you found
+22:27 works well in getting the different disciplines to work together as one unified team? Yeah, know it's an
+22:33 interesting question and we've thought about this deeply at ARC um as a convening center, you know, not just
+22:39 between the three flagship research universities here in the Bay Area in Stanford and Berkeley and UCSF, but also
+22:46 between basic science and the biotech industry, but also biology and the
+22:52 technology sector. For example, um you know, our CTO, uh Dave Burke, just
+22:57 started um a few months ago and has really kind of been leading the computational modeling of virtual cells
+23:04 where we're trying to simulate human biology with these AI foundation models. And you know Dave used to um he actually
+23:10 has a PhD in biomedical engineering um from you know many moons ago um but uh
+23:16 you know most recently ran engineering at Android and Pixel and so you know I think we have also built an entire
+23:22 operational side of the house with from finance to legal to lab ops to
+23:28 facilities to university relations and academic affairs and you know we run our own space around administration our own
+23:34 ops and you we we try to do you know much of that like a tech company, right?
+23:40 And you know, we've also, I think, recruited in on the off side of the house many people who maybe ordinarily
+23:47 wouldn't work in a basic science or discovery setting, um, but are kind of
+23:53 motivated by the mission to be able to take fundamental breakthroughs and have
+23:59 a product sensibility where we can get these out into the real world. And we're not optimizing at ARC for nature and
+24:05 science papers, right? If you give Berkeley or Stanford professors millions of dollars to do more science, that's
+24:11 almost the default expectation and output, right? And what we really care about are things that could be tangible,
+24:18 right? What does success look like? Just more people using the products you create or yeah, what is success for art
+24:24 institute? I think there are lots of ways that you can parse scientific productivity, right? You know, journal
+24:30 publications is of course a important and fundamental part of sharing work with the community and peer reviewing it
+24:37 and all of that good stuff, but technical blogs, you know, code repos,
+24:42 protocols are are just platforms that people can use, right? And I think we
+24:47 want to make technologies and platform capabilities that are broadly useful to be able to create new mechanistic
+24:53 insights, but also actually try to cure some diseases, right? And you know I
+24:59 think over time if we can be an Edison shop that's inventing or finding lots of
+25:04 cool things right there you know hopefully we'll be you know real world value in those things and there are lots
+25:11 of you know partners who specialize in this. Speaking of curing diseases earlier you were talking about even if
+25:16 you had perfect drug design or infinitely accessible infinitely intelligent drug design there's still a
+25:22 long process that has to happen after that before you can make an impact on humans. Um can you talk a bit about
+25:29 where you see opportunities in that value chain and if you had a magic wand and you could just accelerate progress
+25:35 by 10 years which of those bottlenecks might be alleviated by things you see coming down the pipeline. Yeah. So happy
+25:41 to talk about this in the pharma context which are you know large decentralized sprawling bureaucracies much like
+25:50 universities or you know the you know congress or the SF city governments
+25:55 right and you know I think you know um some parts are you know you know incredibly you know functional and then
+26:02 I think everyone would agree in these different uh organizations some parts are you know less efficient right and so
+26:09 I think the first thing that hopefully we can see is that we can have models that can improve efficiency in discrete
+26:15 individual steps, right? So, can we have a more efficient process for target ID,
+26:21 right? In particular, right? Can we have a more efficient process for data analysis, right? Can we have a more
+26:28 efficient process for um you know like information and literature review and summarization, right? For molecule
+26:35 design, absolutely making a better binder, right? And then figuring out the drug properties of you know those
+26:42 different molecules that could be selectivity that could be you know pharmaccoinetics right
+26:49 halflife expression manufacturability what have you right and you know there will be models or modelg guided
+26:56 approaches for each of those steps right and then there's you know I mean I think if you look at how AI is actually kind
+27:04 of being used today in pharma companies a lot of them are actually just taking
+27:09 massive regulatory documents, summarizing them, and then using AI to
+27:14 help them write more of them. So, there's this compression and decompression of information in a
+27:20 structured fashion that has actually been leading to enterprise adoption in
+27:27 this setting, right? And I don't know, I think that I don't know that says
+27:32 something about the process of where people find things useful. So you know one example is if you talk to some
+27:37 pharma execs right um not the drug discovery organizational leaders but the
+27:42 you know the the the budget people right um you know who kind of hold the enterprise purse strings right they'll
+27:49 say well you know I don't spend actually that much money on drug discovery I actually spend most of my money on drug
+27:55 development so tell me something about drug development which is really where most of my dollars go how can AI help me
+28:01 with that right and I think that is actually like a very deep uh comment, right?
+28:09 Because it says something about where um money is spent and where value can be
+28:14 found. Um you know, the first thing to realize is, you know, our industry probability of success is like 10%.
+28:21 Right? And so, you know, I think a lot of the things that people talk about or complain about or comment on in drug
+28:28 discovery and development falls out of that fundamental
+28:33 uh statistic. Yeah. Right. Like why does the FDA heavily regulate? Why is it so
+28:39 focused on safety? Well, if 90% of the time it doesn't work, they're going to care a lot about safety, right? And I
+28:44 think the promise of AI is if we can go from 10% POS to 20 or 30 or 50, right?
+28:52 As you move through those steps, can we do you think we can um over time? I
+28:58 think here's the thing that I find kind of interesting is we have done a lot of biology with
+29:08 what is not that far from guess in check right if you look at what happens in the
+29:14 wet lab like the actual experiments that are happening right you you you're just kind of in the arena
+29:21 trying right and yeah trying out random hypotheses and seeing what happens yeah
+29:27 and this is The missing reasoning trace in the scientific literature is you don't know what didn't work. Everything
+29:33 is narrativized and written in a story of, you know, inexurable logic and
+29:39 vision leading to scientific breakthrough, right? But everyone who makes the sausage knows that's not what
+29:45 actually happens most of the time, right? And you know, if you actually work with the, you know, research um,
+29:53 you know, kind of folks at the bench, right? You know, and this is actually the case across all technical industries
+29:59 is that highfidelity reasoning trace of the true process is kind of not written
+30:05 down anywhere. And that would actually be very useful for these reasoning models and for closing the loop and doing, you know, you know, multi- aent
+30:11 frameworks blah blah blah blah blah. But that's kind of what we'll need. But if you actually look at what happens, it's
+30:17 guess and check, right? And so a model with even a modeicum of predictive value
+30:22 would be transformative. when with even moderate predictive value which by the way we don't have right like I think
+30:28 biology is a very pragmatic salt of the earth experimental discipline right you
+30:35 see this in the culture of peer review show me the data you can't you know
+30:40 pontificate in your discussion section because you know you haven't shown any of this stuff right is if you read old
+30:47 papers right they were so clear and visionary and um you high fluting in a
+30:54 way that I think you know papers today are you know we we have this culture that is very pragmatic and I think
+31:02 having models that have predictive power will you know I think a obviously be useful for accelerating the efficiency
+31:08 of science it also change the culture which I think hopefully will hopefully will change the culture which I think
+31:14 will be really interesting why do you think it'll change the culture of the models because you'll believe people's
+31:19 predictions or pontifications depending on how you it's just another kind of evidence point basically just like how
+31:26 model hallucinations could be you know predictions or they could be nonsense
+31:32 and garbage right and that depends on how much you trust the model right got it why do you think it's the case and
+31:39 we've collected a lot of data too to your point there's obviously we basically see what works and we
+31:44 oftentimes don't see what doesn't although hopefully lab notebooks are recording that in some way shape or form
+31:49 maybe maybe hopefully Okay. Um, but somehow still very very regularly even
+31:56 when things work in cells, things work in mice, they fail in humans often times. Like why is that still the case?
+32:01 Is it we just don't understand biology deeply enough? Like why is there still that drop off and that drop off hasn't
+32:07 really changed over time? Well, these are imperfect models, right? And
+32:12 um you know we we set up this set of filters um in the drug discovery process
+32:18 where you know first show it works in cell lines then it show it works in primary cells or in an organoid then it
+32:25 show it works in a mouse then show it works in a monkey then test it in people right and you know you know by the time
+32:31 you've gotten there like five years and hundred million dollars has gone by right and I think that's that's very
+32:36 challenging right and that's where I think predictive models will really help, right? Because the reason why we
+32:44 do all of these steps in linear series is because we don't have predictive
+32:49 power and so we have to do things in the arena and it just, you know, you have to
+32:56 do it in real life, right? And growing cells and growing animals takes months
+33:01 to years to actually do those experiments. And so the promise of having predictive model isn't just
+33:06 predictive power. It's that you could actually simulate things in a multi parallelized fashion, right? That's the
+33:13 whole idea behind parts of machines of loving grace, right? That I thought, you
+33:18 know, Daario really did get right and is the idea that if you had something that
+33:24 could be a trusted oracle, right, that you could just run, you know, 10,000
+33:32 agents, right, at the same time, right? Do we have enough data for that full
+33:37 closed loop to create a trusted oracle? Um I think we will see more examples of
+33:43 this coming out over time. Right? Today folks building AI agents for things are doing you basically trying to close the
+33:50 gap between small you know yes step X and step X plus one right or X plus4 or
+33:56 whatever right and the businesses are trying to find the most commercially
+34:01 valuable set of you know steps that is a set size that's as small as possible in
+34:07 step number in order to you know make a company and I think we will have agents
+34:12 or co-pilots at each step in the scientific ific method from hypothesis generation to experimentation to data
+34:19 analysis and the ability to close the loop is and write the paper or make the
+34:26 discovery and then decide what to do next I think is quite far away but I think something that's very efficient at
+34:33 traversing the steps I think will really take off and so as a concrete example
+34:40 right one of the things that we recently released at ARC is our virtual cell atlas right, which is the world's
+34:46 largest data set of single cells, right? That we're using for training these cellular foundation models, right? And
+34:53 uh the way that it happened was we created an agent that was essentially
+34:58 it's like a a crawler kind of like you know kind of a search crawler but it's able to crawl the kind of you know
+35:05 sequence read archive and then process all of the highly unstructured and messy metadata and uh you know kind of
+35:13 reanalyze and systematically reprocess all single cell data. And this is something that is just running on a
+35:19 cloud bucket instance just cranking away right you know in a tireless fashion
+35:24 right and it's the kind of stuff that a talented computational biologist wouldn't want to do because it's so
+35:30 grind set but actually the scale at which we're able to reach is
+35:36 communitywide and that was that the leverage and efficiency that our team of
+35:41 you know just you know you know really two lead researchers could achieve with one agent I think was was a huge mental
+35:50 unlock for me. And so we want to be at the frontier of actually deploying these and making breakthroughs and I think the
+35:56 the meta aspect um that folks are going after right now will shake out over time
+36:03 but I care about using these to actually make breakthroughs as opposed to chart the endtoend closed loop path. Yeah. You
+36:10 were mentioning earlier the um sort of the pragmatism that a lot of research papers have now versus grandiosity or
+36:18 something a bit more visionary back in the day. I wonder if some of that is related to the specificity
+36:24 of the work that people are doing now. Meaning it feels like we've gotten more and more specialized over time. Yeah.
+36:30 And I wonder if some of that is taking us away from breakthroughs because in a lot of cases you need the knowledge from
+36:36 different domains or different disciplines to achieve those breakthroughs. And I guess maybe the
+36:41 question is one of the nice things about LLMs is that they can incorporate an enormous
+36:48 amount of information and they're sort of inherently generalized even when you apply them to a specific domain. How
+36:55 much of the efficacy that we might get out of some of these models is simply
+36:60 related to their ability to go across all these different specialties? Yeah. If you look at, at least to me, the the
+37:08 best scientists that I've had the pleasure to collaborate with or learn from. Yeah. Um
+37:15 they really do two things. They they they they're able to come up with really
+37:21 creative ideas and they're able to execute on them. Yeah. The reason why they're able to come up with really creative ideas is because they're able
+37:28 to make connections between things that other people wouldn't make. And in fact, if you got a room of 10 really smart
+37:35 people together to chat science, like that's, you know, a weekly lab meeting in any group, right? If you actually
+37:43 analyze the anthropology of what happens, there's usually a small subset of people who are hearing all the things
+37:50 that are being discussed and then actually saying this is the connection or the conceptual bridge between these
+37:56 things, right? Yes. And so there's, you know, that's sort of like an out of
+38:01 distribution generalization, right? It's like this thing that I heard was really novel and let's recognize that and then
+38:09 try to see what can generalize out of that observation. Right?
+38:14 And that comes from people who tend to either read a lot or reason a lot,
+38:22 right? And so there's some aspect of pre-training, right? You need to just read a lot of papers, right? read a lot
+38:28 of chemical biology papers, read a lot of molecular biology papers, read a lot of AI papers, read chem like physics
+38:33 papers, right? And do so across domains so that you can traverse those boundaries, right? I think you know
+38:40 there's this design problem of how do you build a multi-disiplinary team, right? And the reality is there well for
+38:48 example you want to work at the interface of bio and ML there are way more ML people and way more bio people than truly bilingual ML and bio people
+38:56 right I have the extreme fortune of working with some of those at arc right
+39:02 um and you know they're they're just rare right but those those translators
+39:08 right can actually help you power you know the the you know the the the rest
+39:14 of the population Yeah. Yeah. What do you look for in people at ARC? It depends on the role, right? I think, you
+39:20 know, depending on how you're trying to to to match specific project needs, but
+39:27 in a way I I could tell you all the ways that we try to intellectualize our recruiting process, but it actually
+39:34 comes down to very simple things, right? Um, and it's the same thing that I look for in a research technician or an
+39:42 executive on at least on the science side, right? It's really like are you
+39:47 thinking about science outside of the lab, right? And have you done something end
+39:54 to end before? Right. And then the third is, you know, do you have the the the
+39:60 grit to actually kind of walk the path and get it done? Yeah. Right. What do you mean by the end to end part? Um I
+40:07 think it's very easy to go from step one to two or three to five or you know 12
+40:13 to 15 but you know going from 1 through 15 winnows down the population
+40:21 significantly. And so you know you know I often say you know the the last 20% of
+40:26 a project is actually 80% of the work. Yeah. Right. And it's because finishing
+40:32 something and then honing your killer instinct from finishing things multiple times really matters. What should we
+40:38 expect to be coming out of Arc Institute in the next six months and then over the next few years? Well, I'm I'm I'm
+40:45 tremendously excited about lots of things. And I think the thing that maybe many people don't know is the degree to
+40:52 which we have, you know, really been trying to build biology out at ARC. I
+40:58 think people have maybe heard about our our gene editing work or our machine learning work, right? But a lot of what
+41:04 we're actually trying to build is this general concept of applying high throughput scalable technologies in the
+41:13 context of multi-systems interactions, right? Um really working at the neuro
+41:18 andimmune interface, right? And so you know we hired uh you know two incredible
+41:24 scientists um out of Penn last year um who study the process of interosception
+41:30 right. So proprioception is you know when you kind of close your eyes where your limbs right and interosception is
+41:37 the idea of you know um you know I feel the weather in my knee or my tummy feels funny right you know kind of midwives
+41:45 tales type stuff that actually has really deep science and of course it's totally unknown and it's how does your
+41:50 body talk to your brain and vice versa right and it turns out there's a deep
+41:55 mechanistic basis for this and as you know I think when people think about programing biology, they think about it
+42:02 in the drug paradigm of how do I get a binder that binds to this protein or how do I get an crisper to edit this gene,
+42:09 but if you think about what happens with hormones or with ampic, right? Right.
+42:14 You're able to program the way that you think and feel and behave in really
+42:19 powerful ways that controls not just satiety but energy, mood, you know, you
+42:25 know, um, you know, muscle synthesis, you know, um, all focus, all kinds of
+42:31 things. And I think how do we actually program physiology is something that
+42:36 I've been spending a lot of time thinking about in in our lab. Yeah. What's one unexpected connection that
+42:44 you think people don't don't think about um one example is um the you know so so
+42:51 exercise right um and so Kristoff one of our PIs you know had a beautiful paper
+42:56 where he showed that there is a specific species of gut bacteria that produce a certain type of molecule that connects
+43:04 via your entic nervous system which is the nervous system that lines your gut that goes to your brain in order to
+43:10 release dopamine and it is this functional circuit that creates runner's
+43:16 high or exercise reward. And when you delete these bacteria, you cut off this
+43:22 ENS to brain circuit or you you cut off the ability of the brain to release the
+43:28 dopamine at each of these steps individually, you can block the runner's high, right? And so it really traces in
+43:35 an intact animal. Well, this is a mouse study, right? this you know full body
+43:40 circuit but that also goes in reverse. So when you have deep psychological stress right um that can lead to
+43:48 signaling from the brain to aststerytes that intervate your gut that releases
+43:53 pro-inflammatory cytoines that leads to gut inflammation
+43:59 and then yeah can give you ulcers right so stress causes ulcers we've actually
+44:04 kind of known this but this is the mechanism how can you treat it right
+44:10 because there are folks who get recurring ulcers right and there's a brain two body axis by which this
+44:16 signals right and I think this happens all the time you know some of
+44:22 which is conscious most of which is unconscious right and
+44:28 you can actually start to figure out the dials and knobs and that's actually if in a way like a new paradigm for drugs
+44:34 yeah or how to think about using drugs right it's not just this highly reductive pharmaceutical you know kind
+44:41 of binder to biomark marker type of thing, but you know the that's giving
+44:47 you more of the holistic kind of almost eastern medicine flavor of just how do I
+44:54 feel healthier? Yeah. Right. That I think is in vogue in the longevity community today, right? Like what is
+44:60 health span? How do I improve it? How do I improve my diet, my nutrition? Uh so I
+45:05 just feel better, right? You know those things are also can have deep scientific grounding and needs to have that.
+45:12 Interesting. So how do you think it'll how do you think people will be treated in the future? It's you will have a full
+45:19 panel. You'll know exactly what's going on in your body and then you'll decide different inputs to influence the whole thing like how do you how do you tie in
+45:26 functional medicine things going on longevity with the drug industry as it is today? Like where does that interplay
+45:32 come out? I mean, I think we'll want AI doctors, right, that are able to integrate information multimodally,
+45:38 right? And so just like you have your CGM that monitors your glucose with high temporal resolution, you have your order
+45:45 ring or your Whoop that talks about your you know various biomarkers or you can go to Quest or you know function health
+45:53 or whatever and get blood tests right that you know measure what's going on with your liver function or your
+45:59 cholesterol or you know um your testosterone or estrogen or you know other types of hormones. Right? Right
+46:06 now, all you really know is that these things are going up or down and whether or not they're in standard or reference
+46:12 range, right? That doesn't tell you very much about what you're supposed to do,
+46:18 right? And I think, you know, one thing that has been really missing in
+46:23 personalized genetics or, you know, consumer genetics is the ability to take
+46:29 information content from your genome sequence. Yeah. and meaningfully integrate it with your health biomarkers
+46:35 in a way that gives you the genotype and the environment that can be more predictive of phenotype, right? That GXE
+46:42 equals P equation you learn in high school biology, right? But none of that is actually kind of accessible to mom
+46:50 and dad or to even us, right, in the in the in the setting of how do I actually
+46:55 live my life? And I think we need to go from measuring people with, you know,
+47:01 higher content approaches to connecting that to, you know, genetic signatures and make more accurate predictions.
+47:08 Right? So that's sort of like been the theme of our conversation today. And what do you think that'll look like? Do you think that'll look like any of the
+47:14 existing longevity efforts or do you think there's some new beast entirely that's going to be created to serve that
+47:20 purpose? Yeah, I mean so I think if you look at you know 23 and me was you know recently you know file chapter 11 right
+47:27 and it's I think one of you know I think it's an amazing uh pioneer and visionary
+47:33 kind of pioneering effort in you know how to take genetics and you know put it
+47:38 in the hands of millions of people right I think the thing that I think I would really
+47:45 love to see in the world is something that can take all of that information with all of your different, you know,
+47:51 kind of body measurements and then actually, you know, connect that to diet and sleep and give you personalized
+47:59 recommendations about your health in a longitudinal way, right? We have very fragmented data sets for being able to
+48:06 do this today. And I think being able to collect this data at scale across
+48:11 populations and over time with temporal resolution will I I don't I don't want
+48:17 to be one of these unhinged big data will solve everything people. Yeah. But but it will but it will.
+48:26 Yeah. I do wonder if there's more stuff on the cross functional side to your point like if you know you have a gambling addiction I don't think
+48:32 anybody's thinking about maybe Mjurro Zmpic could help with that but it does help with some some of these things
+48:38 right like I do think there's something about the cross functional nature that is interception
+48:44 that's fair there needs to be some some organization that actually makes accessible yeah yeah I don't think that
+48:52 obviously exists today I think folks are building a different hands on the elephant for this. But, you know, you
+48:59 guys should start this company. We should. Honestly, it's a pretty good idea. It is a good idea. Um, all right.
+49:04 Let's ask Let's get a couple of predictions on a couple different time scales. So, we'll start with 2025. Mhm.
+49:11 And then maybe 2030 and then maybe 2050. What is the most interesting thing we're
+49:17 going to see in the world of AI meets bio in 2025, by 2030, and by 2050? My
+49:24 hope is by the end of the year I mean and this is already happening right we can you know just we can design full IGG
+49:31 antibodies right not single chain binders like nanobodies but just the real antibbody medicines that you know
+49:39 we kind of know and love today that we can just design their CDR regions they're going to bind really well um you
+49:45 can oneshot it and you can kind of do point and click on that you know that surface of your enzyme I can just bind
+49:51 it right you know one chat. I think the thing that will mature over the next couple years is that we can actually
+49:56 design enzymes denovo. I think that will be that will be really interesting and
+50:02 you know also lots of efforts but and again this is all in the world of proteins and I think one of the things that mo most people who think about this
+50:09 stuff are very protein coded and so a lot of our our our work is to sort of
+50:14 zoom out from proteins and think about cells right and so I think building the
+50:21 the sort of the the PDB of virtual cells right is something that we've been focusing a lot on at ARC that will take
+50:29 some years from today to mature. Uh so PDB is a protein datab bank right and
+50:34 it's the sort of gold standard database of atomic resolution solved experimentally solved protein structures
+50:41 that was used by uh you know deep mind to train alpha fold right and so it's the pre-training data that allows the
+50:47 model to reach some soda capability like protein structure prediction um at uh
+50:53 angstrom resolution right so you know what is that for you know virtual cells which we think would help us design
+50:59 better drug targets increase therapeutic probability of success, right? Um I
+51:04 think you know that will that's sort of my 2030 uh sort of prediction is that we have you know accurate and useful
+51:12 virtual cell models that make uh cell biologists feel emotion right um the the
+51:19 2050 idea and hopefully this happens much much sooner than that you know I think you know there's lots of chat
+51:25 about scientific super intelligence or you know the the endtoend kind of uh
+51:31 recursion of the scientific method Um, I'd like to see that right with, you
+51:37 know, lab in the loop with a fully automated wet lab that's vertically integrated. Do you think, do you think
+51:43 it's possible by 2050 we can simulate with 99.9%
+51:49 accuracy, you know, the impact that a particular drug is going to have on a particular target, you know, validate
+51:56 that in a wet lab in a fully automated way in a matter of hours, not months.
+52:02 like what do you think the dream scenario is for going from zero to impact you know in the future of drug
+52:09 discovery if you imagine 25 plus years of technological progress yeah I mean I
+52:14 think we've laid out different aspects of the vision over the course of our conversation today um where things are
+52:22 really slow right like toxicity long-term follow-ups right these are the
+52:28 you know it depends a lot on the disease right if you're doing some acute ute oncology thing that's very different
+52:34 from some really chronic autoimmune thing, right? And so I think the only way that I can imagine you speeding this
+52:41 up is if you have a model with strong predictive power, right? And you know,
+52:46 so a lot of this hinges on our ability to make models that can actually do
+52:51 that. Yeah. And I think you will unlock different step sizes of capability based
+52:56 on how good they are. Is there any reason we wouldn't have that by 2050? Um yeah, basically if we make the wrong
+53:03 data I would say is like one obvious one. You know you can model the mouse in
+53:10 all of its glory to great perfection. It still will not be the human. That's, you
+53:17 know, one one sort of, I think, you know, trivial example
+53:22 that is something that we still do though because that's just what's
+53:30 practical. And so I have this other soap box about how we actually just need to be doing way more experiments in humans.
+53:36 And what do you think it will take for us to be able to do that? Is that just a regulatory thing? is that I think there
+53:42 will be some aspect of creativity involved in addition to better
+53:48 regulatory innovation. So, so one example would be you know there there there are these uh kind of you you can
+53:54 take samples from brain dead patients for example and then now you can just get lungs that you can peruse and keep
+54:00 alive for a week and then just do experiments in that lung right and you know there there was a paper recently
+54:06 published about this should we do lightning round yeah let's do it first one favorite new AI app in
+54:14 that you've tried in the last three months so this is maybe cheating but I'm a DIU of uh Open AI deep research,
+54:21 right? I just I I find it just by far the main AI app that I find useful
+54:28 enough to use in my day-to-day work, right? And so there are lots of other fun AI apps or things that I pay
+54:36 attention to because I'm interested in AI, but the thing that actually changed
+54:41 how I work is uh these deep research models. And they have, by the way, so much more room to improve and to run.
+54:48 Yeah. And uh yeah, I think it was the first time I felt real emotion thinking,
+54:55 "Oh, wow. Okay, someday maybe I will be automated." Yeah. Yeah. I feel that every day. Um
+55:03 who would be on your Mount Rushmore of scientists? Um this is maybe a bit smarmy. Um but
+55:12 it's the the folks I get to work with uh at Ark. I I I I realize this is
+55:17 incredibly smart me, but it's it's really genuine. I feel I feel so lucky to to go to lab
+55:25 every day and just be around, you know, just passionate, bright, kind, and
+55:31 incredibly ambitious people. Yeah. And it it levels up my game. What do you think is going to be the killer
+55:38 application that scientists will use by the end of this year? Deep research.
+55:44 Sold out. All right. nothing that you guys are going to create for work. Um well, I think these virtual cell models
+55:50 will be incredibly useful. Um we I don't think we or anyone will have working
+55:57 models in the sense that they I I think I think it'll take some time for them to
+56:03 mature to the point where they're actually fundamentally useful. Right? There are currently research problems
+56:09 that will ripen um over over some time. Yeah. but we'd like to deliver those.
+56:14 What's the most important thing you've learned at Ark Institute? So, there's a Scottish proverb that I'm gonna butcher
+56:20 um when I paraphrase uh but it's basically, you know, you know, be happy when you're alive for you're a long time
+56:26 dead, right? And that's real. You know, I think that that really hit for me when I when I read it. Um and you know, it
+56:34 was one of those, you know, you're lying on the couch, the phone is six inches from your face, just beaming lux into
+56:39 your eyeballs right before you're supposed to fall asleep. And I don't know that just it it reminded me that
+56:46 despite all the complexity of, you know, trying to work really hard to do useful
+56:51 things, you're supposed to have fun. And I think that should I think we need more
+56:58 of that in life, not just in research labs where I think it can be so easy to
+57:05 be super critical because that's the training and how you make progress is to hate on everything and everything has a
+57:12 problem and figure out why this can go wrong. But being optimistic and happy is
+57:18 not a path to mediocrity and mistakes, but it's actually how you have the
+57:25 emotional capacity for persistence over time to reach those those long-term goals. Love it. That feels like a good
+57:31 place to end it. I know. Well, hopefully this podcast made you happy, too. Made us happy. I'm always happy to see you,
+57:37 bud. Thank you again for doing this. Thanks, guys. [Music]
+57:54 [Music]

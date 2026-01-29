@@ -1,0 +1,1437 @@
+00:00 what I found too Building Products over
+00:02 the years is it's very common everyone
+00:04 talks about product Market fit you'll
+00:05 know it when you see it and all that
+00:06 which is true but at least for me I've
+00:09 always felt in the first part of
+00:10 Building Products you iterate a lot on
+00:12 the product and sometimes you forget to
+00:14 iterate on the market and finding the
+00:16 right Market side is also just as
+00:18 important as the right product and you
+00:20 have to connect those two and so I think
+00:22 that in these early stage things with
+00:24 Mariner that's where we are it's like
+00:26 does is it possible for a computer to
+00:29 like an AI model to drive your computer
+00:31 yes that's a huge new capability is it
+00:33 accurate sometimes is it fast not at all
+00:37 yet like that's kind of where we are um
+00:39 in terms of the actual kind of use case
+00:42 or the capabilities and then it's about
+00:44 finding the right Market
+01:02 today we're excited to welcome Josh
+01:04 Woodward from Google Labs the team
+01:06 behind exciting Google AI launches like
+01:08 notebook LM and the computer use agent
+01:11 Mariner Google Labs is Google's
+01:13 experimental arm that's in charge of
+01:14 pioneering what's next and how we
+01:16 interact with technology by thinking
+01:18 about how the world might look like
+01:19 decades from now Josh is helping to
+01:22 reimagine human AI interaction from the
+01:24 provocative claim that writing prompts
+01:26 is already becoming archaic to the
+01:28 emergence of multimodal AI as a default
+01:30 user
+01:31 experience he shares insights on the
+01:34 rapid Innovation culture in Google Labs
+01:36 offers a glimpse of what's next in
+01:38 generative video and much
+01:40 more Josh thank you so much for joining
+01:43 me and Ry today we are excited to hear
+01:45 everything that you're doing over at
+01:46 Google Labs maybe first to start you
+01:49 mentioned a provocative topic to me uh
+01:51 on your way in here writing prompts is
+01:53 old fashed what do you mean by that okay
+01:56 so um thanks for having me uh I do think
+01:59 it's old fion we'll look back at this
+02:01 time from an enduser experience and say
+02:05 I can't believe we tried to write
+02:06 paragraph level prompts into these
+02:08 little boxes um so I kind of see it
+02:11 splitting a little bit right now on the
+02:13 one hand as a developer an AI engineer
+02:16 you should see some of the prompts that
+02:18 we're writing in Labs right now are
+02:20 these beautiful like multi-page prompts
+02:23 but I think for IND users they don't
+02:25 have time for that and you have to be
+02:27 almost like some sort of Whisperer to be
+02:29 able to unlock the models ability so
+02:31 we're seeing way more pull and traction
+02:34 and I kind of seeing this in other
+02:35 products in the industry too right now
+02:37 how can you bring your own assets maybe
+02:39 as a prompt drag in a PDF or an image
+02:42 sort of recombine things like that to
+02:44 sort of shortcut this giant paragraph
+02:47 writing so I think it's going to kind of
+02:49 divide I think as Engineers AI Engineers
+02:51 you'll keep writing long stuff but I
+02:54 think most people in the world we're
+02:56 probably in a phase that'll sort of fade
+02:58 out here pretty soon so the form of of
+03:00 the context will change right you know
+03:02 so you still have to get give the model
+03:04 something right but it might be that you
+03:06 can communicate it via picture or
+03:08 communicate it via like just look at
+03:10 this set of documents yeah your voice a
+03:13 video any of that these models love
+03:15 context so the context is not going to
+03:17 go away but we're making a lot of bets
+03:20 right now that the type of context and
+03:22 the way you deliver the context that's
+03:24 changing really fast right now I love it
+03:27 okay uh we're going to go deeper into
+03:30 the future of prompts and multi mulle
+03:32 models in this episode maybe before we
+03:34 do all that say a word on what is Google
+03:37 Labs you know what what's the mission
+03:39 and uh tell us a little bit more about
+03:41 how you sit where you sit with inside
+03:43 Google yeah so Google Labs if anyone's
+03:45 heard about it we had one a long time
+03:47 ago that went dormant for a while and
+03:49 this is kind of back about three years
+03:50 ago it got started it's really a
+03:52 collection of Builders we're trying to
+03:54 build new AI products that people love
+03:57 so they can be consumer products B2B
+03:59 products developer products it's all
+04:02 zero to one um it tends to attract an
+04:04 interesting mix of people maybe people
+04:06 who have been at Google a while but also
+04:09 a bunch of startup Founders and exf
+04:11 Founders and so we kind of mix these
+04:13 people together and we basically say
+04:15 what's the future of a certain area
+04:17 going to look like say the future of
+04:18 creativity or software development or
+04:20 entertainment and they go off in small
+04:23 little teams and they just start
+04:24 building and shipping and so that's how
+04:26 it operates and it sort of sits outside
+04:29 the big traditional Google gole product
+04:30 areas but we work a lot together but
+04:33 there's kind of an interesting interplay
+04:34 there and I think that's been part of
+04:35 what's been fun about it is you can kind
+04:37 of dip in maybe work with search or
+04:40 Chrome or other parts of Google but you
+04:42 also kind of have the space to explore
+04:44 and experiment and try to disrupt too
+04:46 and that's that's kind of what we're up
+04:48 to how do you create the culture inside
+04:50 of labs that you want right if you think
+04:52 about there's got to be a lot more
+04:54 failure presumably than there are in
+04:55 other parts there's got to be a
+04:57 different metric for Success than there
+04:59 is just the sheer scale of Google so
+05:01 what is the culture you're trying to
+05:02 create and how do you create it so we
+05:04 really pride ourselves in trying to be
+05:06 really fast moving as a culture so we'll
+05:08 go from an idea to end users hands 50 to
+05:12 100 days um and that's something that we
+05:14 do all kinds of things to try to make
+05:16 that happen so speed matters a lot
+05:18 especially in kind of an AI platform
+05:19 shift moment the other thing is we think
+05:21 a lot about sort of big things start
+05:24 small and one of the things if you're in
+05:26 a place like Google you're surrounded by
+05:28 some products that have billions of
+05:30 people using them and people forget that
+05:33 all these things started with solving
+05:34 usually for one user and one paino and
+05:37 so for us we get really excited if we
+05:39 get like 10,000 weekly active users it's
+05:43 like you know we'll celebrate that
+05:44 that's a big moment when we're starting
+05:46 a new project and for a lot of our other
+05:48 kind of groups inside Google their
+05:50 dashboards don't count that low right I
+05:52 mean it's like so there's kind of this
+05:54 moment where you know the size of what
+05:56 we're trying to do is very small um it
+05:58 probably looks a lot like companies you
+05:60 all work with honestly from that uh
+06:02 perspective and I think the other thing
+06:04 we're trying to do is because we sit
+06:06 outside the big groups at Google we kind
+06:09 of have one foot in the outside world we
+06:12 do a lot of building and kind of
+06:13 co-creating with startups and others but
+06:16 also one foot inside Google Deep Mind
+06:18 and so we've got kind of a view of where
+06:21 the research Frontier is and more
+06:23 importantly where it's going and so
+06:24 we're often trying to take some of those
+06:26 capabilities in so we take a lot of
+06:29 Pride and sort of finding people who are
+06:31 very creative people who are almost like
+06:34 see themselves as underdogs um they have
+06:37 kind of a hustle to them and so we have
+06:39 this whole dock called labs in a
+06:41 nutshell and my favorite section in the
+06:43 dock is called who thrives in labs and
+06:45 there's like 16 or 17 bullets that just
+06:47 list them out um and that's kind of how
+06:50 we try to build the culture but you do
+06:51 have to normalize things like failure
+06:53 you have to think about things
+06:54 differently around promotion
+06:57 compensation all these things that you
+06:58 kind of would do in a company too
+07:01 you mentioned the Deep Mind links I
+07:02 think that is super cool what have you
+07:05 found is the kind of Ideal kind of
+07:07 product Builder Persona inside Labs is
+07:10 it somebody with a research background
+07:12 is it somebody with a who comes from a
+07:13 successful consumer product background
+07:16 is it you know is there the magical
+07:17 unicorn that's great at both research
+07:19 and products what type of person we take
+07:21 as many unicorns as we can find and we
+07:24 actually I found some uh which is great
+07:26 you do look for that kind of deep model
+07:28 expertise as well as kind of like a
+07:31 consumer sensibility in terms of those
+07:33 people exist they exist they're great
+07:35 too um if you can find them uh and we
+07:38 also kind of have found ways to kind of
+07:40 train or develop people so that's
+07:42 another thing we think a lot about is
+07:43 like how do you bring in often people
+07:46 that might not be the normal talent that
+07:49 you look for so like we're always in the
+07:51 interesting kind of zone of like who's
+07:53 undervalued who's kind of like really
+07:56 interesting but maybe not on paper but
+07:58 when you interact with them look at
+07:60 their GitHub history I mean there's all
+08:01 these different signals you can look at
+08:03 um but yeah that's kind of how we would
+08:05 think about it really cool how do you
+08:07 decide what projects to take on next is
+08:08 it is it bottom up top down how does
+08:11 that work yeah great question we kind of
+08:13 do um a little bit of a blend actually
+08:15 so at the top down side we're looking at
+08:18 what are the areas that are kind of on
+08:20 mission for Google that are strategic to
+08:22 Google because we sit inside it so we're
+08:23 thinking about ourselves in that broader
+08:25 context so that may be for example like
+08:28 what would the future of software
+08:29 development look like there's tens of
+08:31 thousands of software developers at
+08:33 Google and obviously this is an area
+08:34 that AI is clearly going to make a big
+08:36 change in so we'll be thinking about
+08:38 could we build things for other googlers
+08:40 but also externally how do we build
+08:42 things like that so we take that kind of
+08:43 top down view think of it as almost I'm
+08:46 from Oklahoma we like to fish a lot in
+08:48 the summer but like you're trying to
+08:49 figure out what's the right Pond to fish
+08:51 in so we put a lot of thought into those
+08:53 like ponds to fish in but then we let a
+08:56 lot of these teams often their four or
+08:58 five person teams come up with the right
+09:00 user problems to go try to solve and
+09:03 that's where we kind of meet in the
+09:04 middle and I think for a lot of other
+09:05 teams they might look at what we do it's
+09:07 a little chaotic you know we don't have
+09:10 like multi- quarter road maps like we're
+09:12 trying to survive to the next whatever
+09:14 10,000 user Milestone and then try to
+09:16 grow it uh but I would say it's kind of
+09:18 that sort of blend what's one of the
+09:20 products that you guys have built that
+09:22 you're excited about now oh yeah so I
+09:24 guess if you've ever used um the Gemini
+09:28 API or AI Studio notebook LM or any of
+09:31 VO any of these things these are
+09:32 products that we've kind of worked on
+09:33 from Labs I mean maybe I'll talk about
+09:35 one that's maybe well better known and
+09:37 one that's coming up so the very excited
+09:40 about where notebook lm's going I think
+09:42 we've hit on something where you can
+09:44 bring your own sources into it and
+09:47 really AI just like grips into that
+09:50 stuff um and then you're able to kind of
+09:52 create things so a lot of people maybe
+09:54 have heard the podcasts that came out
+09:56 last year there's so much coming that
+09:58 follows this pattern
+10:00 um so watch this space uh they um
+10:04 there's just a lot you can do with that
+10:05 pattern and I think what's really
+10:07 interesting is it gives people a lot of
+10:09 control they feel like they're steering
+10:11 the AI we have this term on the team at
+10:13 actually one of the marketing people
+10:14 came up was like an AI joystick that
+10:16 you're kind of controlling it so that's
+10:18 interesting um I would say there's a lot
+10:20 of stuff coming right now we're very
+10:21 excited about vo um Google's imagery
+10:25 model and sort of video model and where
+10:27 those kind of come together so we've got
+10:30 really interesting products coming along
+10:31 in this space I think maybe we can talk
+10:33 about that some at some point but I
+10:35 think generative video is kind of moved
+10:37 from this moment of almost possible to
+10:40 possible and I think let talk about it
+10:41 now tell us yeah yeah well I think it's
+10:43 it's interesting these models are still
+10:46 huge to run like V2 takes hundreds of
+10:49 computers right so the the cost is very
+10:51 high but just like we've seen with the
+10:53 text based models like Gemini and even
+10:55 ones from open Ai and anthropic you know
+10:58 the cost is reduced like 97 times in the
+11:00 last year so if you kind of assume cost
+11:03 curves like that what you're going to
+11:05 see with these vo models what's kind of
+11:07 brand new say with V2 is it's really
+11:10 cracked really high quality and physics
+11:14 um so the motion the scenes the if you
+11:16 talk to a lot of these AI filmmakers
+11:18 they talk about what's your cherry pick
+11:20 rate which is a term for like how many
+11:22 times do you have to run it to pick out
+11:24 the things that's really good and what
+11:25 we're seeing with something like VI is
+11:27 the cherry pick rate is going down to
+11:29 like one time got what I want and so the
+11:32 instruction following the ability for
+11:34 the model to kind of adhere to what you
+11:36 want is is really cool so I think when
+11:38 you put that in tools um you're now able
+11:41 to convey ideas in a whole different way
+11:43 what do you think are the solved
+11:45 problems and the unsolved problems in AI
+11:48 video generation cuz I remember you know
+11:50 uh last year it was like you know even
+11:52 last year there were all these you know
+11:54 there was so much talk about you know
+11:56 generative video is you know a physics
+11:58 Simulator for example right right can
+11:59 kind of emulate physics and it's like
+12:01 that's amazing is the physics stuff
+12:03 solved do you think like what else is
+12:05 you know what's done and then what's to
+12:07 be solved yeah I would say physics is a
+12:09 hard thing to solve forever but it's
+12:12 close I would say it's close enough yeah
+12:14 but you're six months ago year ago few
+12:16 years ago you had Will Smith eating you
+12:18 know pasta was a disaster and then even
+12:21 last year you had kind of these videos
+12:23 of like knives cutting off fingers and
+12:24 there were six fingers you know it was
+12:26 like that's where we were um so I think
+12:28 physics tons of problem ress the ability
+12:31 to do photo realistic quality uh very
+12:34 huge progress the ability to kind of do
+12:37 jump scenes and jump cuts and different
+12:39 sort of camera controls that's really
+12:42 coming into almost solved there's paths
+12:44 to solve all this stuff um still going
+12:46 to solve the efficiency and serving cost
+12:49 I would say and probably still have to
+12:51 figure out a little bit more of like the
+12:53 application layer of this cuz I think
+12:55 this is another big opportunity as we've
+12:57 seen like a lot of other modalities with
+12:59 AI you get kind of the model layer you
+13:02 get kind of the tool layer and then the
+13:04 real value we think is in this
+13:06 application layer and so I think that's
+13:08 really interesting to rethink workflows
+13:10 around video and I think that's pretty
+13:12 wide open right now do you think the
+13:14 models are capable of you know even
+13:16 having video that is malleable at the
+13:18 application layer so for example if I
+13:21 want to have character consistency
+13:23 between scenes are the models even
+13:24 capable of that or I imagine you want
+13:26 model steerability in order to be able
+13:28 to kind of work with it at the
+13:29 application Level like what what is
+13:31 model Readiness um and what's required
+13:33 in order to be able to do magic at at
+13:35 the application yeah so I was talking to
+13:37 a couple AI filmmakers this week and
+13:38 what they're really interested in is
+13:40 exactly what you're saying character
+13:41 consistency scene consistency camera
+13:44 control it's almost like we need to
+13:47 build an AI camera you think of some of
+13:50 the cameras that are kind of filming us
+13:52 right now this is sort of like Decades
+13:54 of Technology that's kind of been
+13:56 perfected for a certain sort of input
+13:58 output and I think were on the verge of
+13:60 kind of needing to create a new AI
+14:02 camera and when you do that you can
+14:04 generate infinite number of scenes you
+14:06 can generate like oh you're wearing a
+14:08 red sweater now make it blue and not
+14:11 just in that scene but in like a whole
+14:12 2hour film so there's all kinds of ways
+14:16 that we're starting to see these
+14:17 prototypes that we're working on too
+14:19 internally where this is this is here
+14:21 like it's coming um we're kind of entire
+14:24 I think things that used to either be
+14:26 too expensive or too Timely or it
+14:29 required a certain skill level um we
+14:32 kind of talk internally on the team
+14:34 about how do you kind of lower the bar
+14:35 and raise the ceiling and what we think
+14:38 about that when we're building products
+14:39 is how do you make something more
+14:40 accessible or how do you make like the
+14:42 pros take it and just blow you know the
+14:44 quality out of the water and making
+14:46 incredible stuff um so that's what we're
+14:48 seeing with video it's kind of right at
+14:49 that point where both are happening
+14:51 there was an interesting tweet from or
+14:53 post from Paul Graham recently on this
+14:55 idea I think of based on this pace of
+14:58 progress he's like you sort sort of want
+14:59 to be building things that kind of don't
+15:02 quite work yes and are way too expensive
+15:05 yes right because they're going to work
+15:07 yeah and their cost is going to come way
+15:08 down y right and so I would imagine that
+15:10 has applicability for you guys too
+15:12 particularly in video that's exactly how
+15:13 we do it yeah I mean right now I don't
+15:15 know off the top of my head but each
+15:17 video 8sec clip generated is obscenely
+15:20 expensive but we're basically building
+15:22 for a world where this is going to be
+15:23 like you're going to generate five at a
+15:25 time not even think about it one of the
+15:27 actual principles I've kind of learned
+15:29 just over the last few years working all
+15:31 this AI stuff is make sure your product
+15:34 is aligned to the models getting smarter
+15:37 cheaper faster and if your core product
+15:40 value prop can benefit from those
+15:42 Tailwinds you're in a good spot if any
+15:44 of those are not right question Your
+15:46 Existence like that would be my uh my
+15:48 summary takeway on that yeah I like that
+15:51 how far do you think we are from having
+15:54 uh economics of video generation that
+15:56 are you know right side up where where
+15:58 you know it costs less to to generate
+15:60 the thing than the economic value of of
+16:02 generating it yeah oh wow this is tough
+16:04 this is a prediction you're never really
+16:05 sure about I don't know but I would say
+16:08 one thing we're seeing just as we're
+16:10 modeling out a lot of costs because
+16:11 we're starting to put vo into some of
+16:13 our own tools that are coming out is
+16:16 we're probably going to need Innovation
+16:17 on the business model side in addition
+16:19 to just the product and the application
+16:21 layer and what I mean by that is you
+16:22 could our first thought was oh let's
+16:25 just make a subscription and then just
+16:26 charge per usage on top that might be a
+16:29 way to to do it another way to do it is
+16:31 when you talk to some of these creatives
+16:32 whether they're in Hollywood um or even
+16:35 these AI filmmakers that are popping up
+16:37 they're kind of like okay I want this
+16:40 output and I'm willing to pay this much
+16:43 and it's kind of a pay per output kind
+16:46 of which you've seen in other cases AI
+16:48 companies are starting to do some of
+16:50 this too but for sort of film and video
+16:53 that's it's a little bit how you'd think
+16:54 of doing a project if you were a
+16:56 producer but now you're kind of
+16:57 imagining it like the individual cre
+16:59 creative level which is kind of
+17:00 interesting so that's more like almost
+17:01 like an auction type model potentially
+17:04 so I think there's a lot to explore I
+17:06 think we're probably though you know the
+17:08 pace things are moving it's it's on the
+17:10 it's on the scale of like quarters I
+17:12 think where it starts to get interesting
+17:14 as opposed to like many many years um so
+17:17 that's yeah I think there's a path you
+17:19 talked about the pace of progress a
+17:20 couple times yeah do you think it's
+17:22 accelerating you have the a unique view
+17:24 in the Deep Mind and let's use that as a
+17:26 I don't know Harbinger for some of the
+17:28 others yeah yeah as a propy
+17:29 yeah what what where are we at are we
+17:33 accelerating are we you know on a crazy
+17:35 uh trajectory and maintaining the same
+17:37 one like yeah I'm interested yeah yeah
+17:40 um I keep thinking it will slow down and
+17:43 it's never slowed down in the last three
+17:45 years um so you know you think oh
+17:48 pre-training might be plateauing
+17:50 inference time compute a whole another
+17:52 Horizon opens up and I think there is so
+17:55 much um there's an author on the team we
+17:57 actually hired his named Steven Johnson
+17:59 he Co found in Notebook LM when we first
+18:01 brought him on and he talks about this
+18:03 notion of like there's adjacent posses
+18:06 he has this really interesting book on
+18:07 the history of innovation and I feel
+18:09 like right now it's like you walk into
+18:11 this room and there's all these doors
+18:13 that are opening up into these adjacent
+18:15 posses and there's not just like one
+18:16 room and one door it's like one room
+18:19 with like I don't it feels like 30 doors
+18:22 that that you can go explore so I think
+18:24 that's what it feels like on the inside
+18:26 I love that visual of the the rooms and
+18:29 then the adjacent posses I'm going to
+18:31 steal that and maybe take it and call it
+18:33 my
+18:33 own plasic VC over
+18:38 here um what do you think the future of
+18:40 video consumption looks like for us as
+18:43 consumers like am I still looking at
+18:46 Hollywood style feature films that are
+18:48 created by Hollywood Studios just done a
+18:50 lot more coste efficiently am I looking
+18:52 at a piece of content that's dynamically
+18:53 generated to what you know about me and
+18:55 it's only for me to watch am I like what
+18:57 what what do you think the future of is
+18:59 as so this is one of those that could go
+19:02 in spider in many different ways I would
+19:04 say I'd say some of the things we're
+19:05 excited about and what we see so I think
+19:07 the future of entertainment is way more
+19:10 steerable so right now you think about
+19:12 you sit on your couch like this and you
+19:13 maybe scroll through something or
+19:15 whatever you cast it on you bring it up
+19:16 on the TV so it's going to be way more
+19:18 steerable where you can kind of
+19:19 interject if you want and maybe take it
+19:22 certain ways we think that's one area we
+19:24 think another is personalization like
+19:25 you said if you think today about
+19:27 YouTube Tik Tok any of these algorithms
+19:29 that can kind of figure out this is what
+19:31 you're interested in imagine that I
+19:33 think way more extreme uh that could be
+19:36 kind of fine-tuned to sort of what you
+19:38 want to share with the model um I think
+19:40 the other bit is a lot of this I think
+19:41 is going to be generated on the fly so
+19:44 another theory we have is that just like
+19:46 there was a rise of kind of a Creator
+19:47 class couple whatever 10 15 years ago
+19:50 that powered YouTube and the rest
+19:53 there's going to be a shift or maybe
+19:54 it's a different set of people that we
+19:56 think of as like curators where you
+19:58 curate stuff and you work with the model
+20:01 to maybe create things and I think
+20:03 another loop in that is how you can
+20:04 remix all this and so that's another big
+20:06 part of what we see in the future of
+20:08 entertainment is that there'll be like
+20:10 oh I kind of like that but they'll make
+20:11 it more like this and if you think you
+20:14 know at some level the cost the time the
+20:16 skills required of this is literally
+20:18 maybe just like tapping a button or just
+20:20 describing it and you get kind of
+20:22 different versions that's kind of where
+20:24 we see some of this going it will be
+20:27 really interesting to see if like some
+20:28 of these same
+20:29 percentages hold like we know today that
+20:32 a lot of times certain percentage like
+20:34 90 95% just consume from platforms and
+20:37 you have very small Creator class so
+20:39 like will that balance change um but I
+20:42 see a totally different ways you could
+20:44 think about content platforms that have
+20:46 some of these native controls um like
+20:49 for example will we expect uis that have
+20:53 a join button where you know today our
+20:55 uis maybe have a play pause whatever
+20:58 save bookmark something star heart it
+21:02 like will there be like new things where
+21:03 you join and they're like oh hey Sonia
+21:06 Ry what do you want to talk about you
+21:07 know what I mean and I think like that's
+21:09 totally possible we're building that in
+21:10 the notebook LM today uh so that you can
+21:13 imagine Play it Forward you've got
+21:15 avatars or humanik characters or not
+21:19 with lip animation voice cloning all
+21:21 that can come together in sort of new
+21:23 ways I think do you think movies and
+21:26 games start to blur yeah I think that's
+21:29 a real possibility yeah there's a whole
+21:31 interesting intersection that's
+21:32 happening right now between movies or
+21:35 video content games and sort of World
+21:38 building and 3D and it's really unclear
+21:41 to us right now where that's going to go
+21:43 but there's so many areas right now
+21:45 where we're seeing learnings from each
+21:47 and even down to some of the training
+21:48 techniques we're finding things like
+21:51 that yeah so actually that was going to
+21:52 be one of my questions like if you look
+21:53 at all the companies building generative
+21:55 video models right now some people are
+21:57 kind of going straight from the you know
+21:58 the pixel stream so to speak and some
+22:00 people are going from the 3D angle with
+22:03 with the idea that you know to really do
+22:04 video right you need to get 3D do you do
+22:06 you have an opinion on that yeah we've
+22:08 actually got bets on both sides right
+22:11 now I don't know I don't
+22:14 know yeah we're hedged we're hedged on
+22:16 this one so on the 3D side we have this
+22:18 project we got started where we
+22:20 basically said like take six pictures of
+22:22 a sneaker and create a 3D spin of it and
+22:25 we put that on search it's been really
+22:27 great and it's amazing how it fills in
+22:29 the details but I think what's
+22:31 interesting as we've been going down
+22:32 that path something like V2 shows up now
+22:35 you don't need six photos anymore you
+22:37 need like two or three and you can
+22:39 basically do like an entire product
+22:40 catalog like every product that's ever
+22:42 been indexed at Google just overnight
+22:45 sort of can create it so now you've got
+22:47 a 3D object basically of any object
+22:50 bookshelf chair whatever from any angle
+22:53 that you can pan tilt Zoom relight and
+22:55 now that's like an object that you can
+22:57 drop in anywhere so that's kind of the
+22:59 3D angle from the video angle it's
+23:01 interesting or kind of the World
+23:03 building we had this little prototype we
+23:04 built we're like wouldn't it be cool if
+23:06 you could recreate landing on the moon
+23:09 for like every classroom and like give
+23:12 teachers a tool where they could put the
+23:14 kids in the like you know lunar module
+23:16 as it's coming down so we built this
+23:18 thing it's kind of terrifying actually
+23:20 because we also built a little side
+23:22 panel where you can inject problems
+23:23 where it's like oh no something's on
+23:25 fire in the back like simulate things we
+23:27 had a little fun with it but that was
+23:29 interesting cuz the models you could say
+23:31 like look right and it would actually
+23:34 fill in the details um and so you start
+23:37 to get this that's why it feels like
+23:38 it's kind of blurring and I guess why
+23:40 we're hedging on both sides right now
+23:41 yeah we're not sure 2025 everyone's
+23:43 talking about agents yes yeah computer
+23:45 agents yeah you just said it three
+23:48 times exactly proba being a VC again
+23:51 exactly I've been called a VC twice
+23:53 today um this is a very big insult uh
+23:57 can you talk to us about Google Mariner
+23:59 yeah yeah so Mariners one we put out in
+24:01 December last year this is a fun one
+24:03 actually because we started seeing this
+24:05 capability developing in the model we're
+24:06 trying to understand if you could let
+24:08 these models control your computer or
+24:09 your
+24:10 browser what would happen um good and
+24:13 bad um and so that was a good example of
+24:15 a project where we went from hey this
+24:18 capability is kind of showing up let's
+24:20 put it into right now it's a Chrome
+24:22 extension just because it was quick to
+24:23 build idea in people's hands 84 days uh
+24:27 very fast very a lot of memories made on
+24:30 that but I think what's interesting is
+24:32 you're seeing both across anthropic open
+24:35 AI obviously Google and a bunch of other
+24:37 startups in the space are all hitting on
+24:40 kind of the same idea that models are
+24:41 not just about maybe knowledge and
+24:43 information and synthesis and writing
+24:46 but they can do things and they can
+24:48 scroll they can type they can click they
+24:51 can not only do this in one browser in
+24:53 one session but like an infinite number
+24:56 in the background um so I think with
+24:59 Mariner what we're really trying to
+25:00 pursue is like of course there's the
+25:02 near-term thing of like can it complete
+25:04 tasks in your browser but the bigger
+25:06 thing is what's the future of human
+25:08 computer interaction look like when you
+25:10 have something like this kind of not
+25:12 just one of these things but basically
+25:14 like an infinite number uh kind of at
+25:16 your disposal and so that's what we're
+25:18 chasing with that project what do you
+25:20 think the ideal use cases are maybe even
+25:22 in the near term for Mariner because I I
+25:25 think all the demo videos I see not
+25:26 necessarily from Mariner specifically
+25:28 but with computer use more broadly or
+25:30 you know here have this agent go book a
+25:32 flight for me or go order a pizza on
+25:33 door dash for me right like that's nice
+25:35 but like I like doing those things yeah
+25:37 yeah yeah you're pretty good on those on
+25:39 your phone is one of my one of my uh
+25:42 Delights in life and so um what do you
+25:45 think are the the killer kind of
+25:46 consumer consumer use cases yeah well
+25:49 that's what's interesting it may not be
+25:50 consumer it may be Enterprise and one of
+25:53 the things we're seeing when we do all
+25:55 the user research right now on Mariner
+25:56 because we have an usted tester and
+25:58 people are playing with it and giving a
+25:59 lot of feedback is it's really these
+26:02 high toil activities toil is kind of an
+26:04 oldfashioned word that doesn't get used
+26:07 a lot but this is when people talk about
+26:09 it it's like this is what makes me
+26:10 grumpy and this thing is helping me
+26:12 solve it but what's interesting is a a
+26:15 lot more of those are showing up on the
+26:16 Enterprise side just to give you a
+26:18 couple examples from yesterday we were
+26:20 hearing from one of the teams and
+26:21 they're basically they have this co-
+26:24 browser use case so imagine you're in
+26:26 like call center somewhere some customer
+26:29 calls in they right now have this very
+26:32 complicated way the agent in the call
+26:33 center can like remotely take over your
+26:36 machine that's not working browse
+26:38 through things and do something for you
+26:40 they were like we would love to have
+26:41 Mariner do this um and that's like a way
+26:44 another one we heard which was kind of
+26:45 interesting was people they are like
+26:48 part of a sales team or something they
+26:50 have take a customer call then they've
+26:53 got all these next steps they need to do
+26:55 and they just want to fan that out and
+26:56 it's often updating different systems
+26:58 sys that are all probably I don't know
+27:01 some SAS subscriptions they're paying
+27:02 everywhere and they're just like the UI
+27:05 is clunky it takes a long time I just
+27:06 want to send Mariner do all this so
+27:08 these are the kinds of things that are
+27:09 kind of interesting that are just
+27:11 naturally coming up on the consumer side
+27:13 I don't know have you found one yet in
+27:15 your mind that you like because I we're
+27:17 we've got a few but I it's I'm curious
+27:20 I'm think I'm trying to think what the
+27:21 toil I have in my everyday life yeah
+27:23 talking to Ry uh I'm kidding I'm kidding
+27:27 talking to Ry the best part of my day
+27:29 want to appreciate
+27:32 that I think but I like the framework
+27:35 even if we don't have the exact use the
+27:37 framework of like what are the things
+27:38 that are the heavy lifting that you
+27:40 don't enjoy right throughout the day
+27:43 that take up time away and I do think
+27:45 that that was actually the same logic
+27:47 that yielded things like door Dash or
+27:49 instacart right um you see how I had to
+27:52 get insta card in there I'm just making
+27:54 sure that that was there um on the
+27:57 Enterprise side when you think about it
+27:59 yeah um how are you testing that are you
+28:02 testing that with existing you know uh
+28:04 customers are you testing that with
+28:06 Google Cloud customers like who are the
+28:07 Enterprises that you guys will actually
+28:09 like test things with yeah so in that
+28:10 case we kind of go across big and small
+28:13 so there will be some Cloud customers we
+28:15 have a lot of cloud customers who always
+28:16 want the latest and greatest give us
+28:18 that they have like Labs equivalents
+28:20 inside their companies right so those
+28:22 are awesome test beds we also work with
+28:24 a lot of startups um and I mean if
+28:26 there's others listening to this that
+28:27 are interested let like DM me let me
+28:29 know like cuz we're always trying to
+28:31 learn kind of from different sides of
+28:33 the market what I found too Building
+28:35 Products over the years is it's very
+28:37 common everyone talks about product
+28:38 Market fit you'll know it when you see
+28:39 it and all that which is true but at
+28:42 least for me I've always felt in the
+28:43 first part of Building Products you
+28:45 iterate a lot on the product and
+28:47 sometimes you forget to iterate on the
+28:48 market and finding the right Market side
+28:51 is also just as important as the right
+28:53 product and you have to connect those
+28:55 two and so I think that in these early
+28:57 stage things with Mariner
+28:59 that's where we are it's like does is it
+29:01 possible for a computer to like an AI
+29:03 model to drive your computer yes that's
+29:05 a huge new capability is it accurate
+29:08 sometimes is it fast not at all yet like
+29:12 that's kind of where we are um in terms
+29:14 of the actual kind of use case or the
+29:16 capabilities and then it's about finding
+29:18 the right Market but yeah to answer
+29:20 short it's kind of in these early days
+29:22 we do lots of stuff really quickly and
+29:24 what I kind of Coach our product
+29:26 managers on and other people on the team
+29:27 because we have engineers and uxers they
+29:29 all go to these sessions is like don't
+29:32 look at the dashboards it's too small
+29:34 numbers right now look at their eyes
+29:37 like look at the customer's eye and when
+29:39 you show them stuff do they light up or
+29:41 not you know what I mean and like that's
+29:43 kind of the signal you're following it's
+29:44 way more art than science at this stage
+29:47 can we go back for a second just to the
+29:49 context point because I was thinking
+29:50 about this V like you working at Google
+29:53 right and you talked about bringing your
+29:54 own you know um is there a world where
+29:58 where someone can just opt in of like
+29:59 Google knows a lot about me right
+30:01 already you know my searches my Gmail my
+30:04 calendar is there a world where you can
+30:06 just sort of opt in be like I don't want
+30:07 to bring it all now I just kind of want
+30:10 you to use what you got and make magic
+30:12 right is that something that could
+30:14 happen because Google's uniquely suited
+30:15 to be able to do something like that
+30:17 probably more so than anybody U is that
+30:20 something that you guys can play with in
+30:22 Labs or have a possibility for or is
+30:24 that not possible we do some more kind
+30:27 of internally with some of our own like
+30:29 data on the team right where like I've
+30:31 opted into a lot of things it's just
+30:33 like take it all like let's make good
+30:34 stuff um but I think you'll see some of
+30:37 that come through in the Gemini app too
+30:39 where you can link different things but
+30:41 I think it's actually an area that's
+30:42 like actively kind of being explored too
+30:45 of like what types of data is like the
+30:48 most interesting and the most useful and
+30:50 of course also the right controls where
+30:52 people feel like okay I'm not just
+30:53 giving it away yeah so I think that is
+30:56 an area though that we do experiment on
+30:59 um some but I'd say right now a lot of
+31:01 the experiments are more on our own
+31:02 stuff as we're trying to figure out
+31:04 you're going to have to tell us
+31:05 separately some of the things that you
+31:06 could have done now now that they know
+31:08 everything about you you know like what
+31:09 is the magic that can be created for you
+31:11 yeah I think certain things that
+31:13 immediately come to mind that are pretty
+31:14 powerful is you can you can see things
+31:17 like in my own data I feel like I have a
+31:19 second brain that is a true like there's
+31:21 always been this vision of a second
+31:23 brain and tools for thought and all this
+31:24 stuff and I feel like you can get pretty
+31:27 close to that and I think the Gemini
+31:29 model specifically is really good at
+31:31 long context the ability to have this
+31:32 like impressive short-term memory and so
+31:36 Gemini too that's an area we're really
+31:38 trying to exploit right now like how to
+31:40 use that on Mariner yeah similar
+31:42 question to what I asked on on vo uh
+31:45 when do you think we'll have computer
+31:47 use that is accurate enough and is fast
+31:50 enough to do some of these use cases you
+31:52 talks about yeah that's another one it's
+31:53 kind of hard to tell at the pace though
+31:55 right now I mean not just inside Google
+31:57 but what you're seeing from some of the
+31:58 other labs too they're on like about an
+32:01 every month or two rev so you can
+32:05 imagine just this year we're going to
+32:07 see four five six revs of each of these
+32:09 things right um again that's just what
+32:12 we know is happening um I think the
+32:15 areas that are a little bit trickier or
+32:17 harder right now is how the computer
+32:19 like finely or precisely navigates like
+32:22 the XY coordinates almost you almost
+32:24 want like a lat long of your screen and
+32:27 that's still kind of really interesting
+32:29 Jagged edges on that I would say the
+32:32 other big area I would say is like this
+32:35 it's more of a human thing like when do
+32:37 you want the human involved or not when
+32:39 do they want to be involved or not and
+32:41 kind of creating the right construct
+32:43 almost was like Hey I'm about to buy
+32:45 something oh no I want to know about
+32:47 that or I'm okay for $5 but nothing more
+32:50 than that do you know what I mean and so
+32:51 there's a whole bunch of almost like
+32:53 hardcore like
+32:55 HCI like research and like really going
+32:58 deep on the empathy of like how you set
+33:00 those controls that I don't think any of
+33:03 them including the Google Mariner one
+33:04 right now we don't have I mean we do
+33:06 certain very blunt things like don't buy
+33:08 anything don't consent to any toss you
+33:11 know like so there there's so like crude
+33:14 uh things right now that you can do but
+33:16 I think people are going to want a more
+33:17 fine grain way so these are some of the
+33:19 things that are I consider more unsolved
+33:21 again that principle just banking on the
+33:24 model is going to get smarter faster
+33:26 cheaper um and you're going to get four
+33:28 or five six seven revs this year um yeah
+33:32 okay I have a meta question yeah how
+33:33 come all of the research Labs converged
+33:36 on computer use at like as far as I can
+33:38 tell the same exact point in time was
+33:40 that an accident was that just all the
+33:42 technology happened to converge at the
+33:44 same time like what happened there it's
+33:45 a good question I mean this is I don't
+33:47 know the specifics there of each of the
+33:48 other labs but I would say you know when
+33:51 you read about the history of innovation
+33:53 and there's like all kinds of things on
+33:54 this there it's not uncommon that
+33:57 discoveries kind of
+33:59 around the same time and I think there's
+34:01 kind of a new paradigm now with these
+34:03 models and I think lots of people are
+34:05 seeing the potential in certain ways and
+34:08 I'm sure there's also I don't know
+34:10 people changing labs and other things
+34:12 that are cross-pollinating all these
+34:14 ideas too but it does feel like it's one
+34:16 of those is kind of how I'm interpreting
+34:18 it is like I think similar with coding
+34:20 right you saw there's already even the
+34:22 agent stuff right now there's lots of
+34:24 this stuff kind of bubbling um which
+34:26 makes it really fun but also keeps you
+34:28 on your toes right cuz this is kind of
+34:30 the underdog mindset here are you going
+34:32 to hire any other authors the reason I
+34:34 asked is I was thinking about I think
+34:36 Matt Ridley is the one who's written
+34:37 about some of these things about like
+34:39 adjacent Innovations you know you have
+34:41 Stephen Johnson maybe why did you hire
+34:43 stevenh Johnson how did that happen and
+34:46 are you going to think about other
+34:47 people that don't have obvious
+34:49 backgrounds that you would bring into
+34:50 Labs yeah yeah so um the quick story on
+34:53 Stephen was um the guy who kind of
+34:55 restarted Google Labs was a guy named
+34:56 clay bore who
+34:58 mut friend exactly and um he and I big
+35:01 fans we've basically read everything
+35:03 Sten had written and Sten was a very
+35:04 interesting guy because for like decades
+35:07 he's been in search of the perfect tool
+35:09 for thought and so clay clay cold
+35:13 emailed him and we were both subscribers
+35:16 to his substack we kind of messaged them
+35:18 and we're like we love you will you come
+35:20 work with us we can build the tool
+35:22 you've been wanting to build that's
+35:24 where it started actually and this was
+35:26 like I mean it was like summer 22 so
+35:29 like before any of the you know CH Chi
+35:31 moment or anything and stepen picked up
+35:34 the phone he was like yeah let's do it
+35:36 so he came in he was a visiting scholar
+35:38 the job ladder didn't exist uh I had to
+35:41 go figure out with our HR person how to
+35:43 create a role that he could take on so
+35:45 was very kind of unconventional in that
+35:47 way um and then the rest is kind of
+35:49 History obviously um I've read a bunch
+35:52 of Matt's books I don't know Matt he'd
+35:54 be awesome so if he's listening like
+35:57 he's listening come
+35:58 that's right that's right uh I would say
+36:00 we've done this quite a bit so we've
+36:02 actually brought in musicians I'm
+36:04 actually really we're trying to figure
+36:06 out right now like a like a visiting
+36:08 filmmaker that's cool um so it's kind of
+36:10 a model Stephen kind of pioneered it he
+36:12 was the first one that it's like how to
+36:14 bring in it's a big value in Labs of how
+36:16 do we co-create we don't want to just
+36:18 make stuff and throw it out there we
+36:20 actually want to co-create it with the
+36:22 people that are in the industry and what
+36:24 we find when we do that is you actually
+36:26 get Way Beyond the like oh that's cool
+36:28 toy AI feature you get into the workflow
+36:31 and if you're working with someone like
+36:32 stepen Johnson who's written you know
+36:34 dozen plus books there's a certain way
+36:36 he thinks about and almost like a
+36:38 respect for like the sources and the
+36:41 citations all that stuff comes through a
+36:42 notebook LM and we're doing similar
+36:44 stuff with music and video and IND and
+36:46 other stuff yeah is the goal to create
+36:49 ne new products that you can take from
+36:51 one to 100 to to a billion Standalone or
+36:54 is the goal to you know find product
+36:56 Market fit with things like notebook LM
+36:58 and then really fold them into the
+36:60 Google Mothership so to speak yeah it's
+37:02 interesting so when we first started I
+37:03 would say it was all about build
+37:05 something graduated so kind of a
+37:08 traditional incubator sort of model it's
+37:10 been interesting as it's gone along
+37:12 we've done that some cases like AI
+37:14 studio and the Gemini API we graduated
+37:16 and that's now in Deep Mind and they're
+37:17 kind of running with it um something
+37:19 like notebook LM we're just going to
+37:21 keep in Labs right now for the
+37:23 foreseeable future cuz it's kind of a
+37:25 different creature like it's only
+37:27 possible with Ai and a lot of the stuff
+37:29 we're working on now I mean we'll have
+37:31 to see how many of these we can put
+37:33 together that actually can kind of get
+37:34 escape velocity but we're really
+37:36 interested in turning them into
+37:37 businesses and making them sustainable
+37:40 and kind of you know that's been a lot
+37:41 of the the focus actually is like take
+37:43 big swings and that gets back to your
+37:45 point a lot of these won't work um
+37:47 because if you're just if they're all
+37:48 working you're not swinging big enough
+37:51 yeah so it's like trying to find that
+37:52 balance but that's definitely we start
+37:54 with kind of could we make this a
+37:55 business work backwards from that and if
+37:58 we end up graduating it that's still a
+37:60 good good outcome for us another good
+38:02 outcome is we stop it and was like cut
+38:04 the losses we did our 100 day Sprint or
+38:06 whatever move on to the next thing yeah
+38:09 you mentioned at the top of the episode
+38:10 that you try to do some top down
+38:12 thinking of you know what are the most
+38:14 interesting pools for us to be building
+38:15 in yeah what are your predictions on the
+38:17 most interesting pools to be building in
+38:19 for 2025 like where are you hiring um
+38:22 talents like where you where you
+38:23 sniffing around where are you
+38:24 co-creating with the the Deep Mind folks
+38:26 yeah yeah there's a lot happening with
+38:28 agents there's a lot happening with
+38:30 video some of the things we've talked
+38:31 about with computer use but I think
+38:34 about those ponds a little bit different
+38:36 I think about them we have this doc
+38:38 called Labs is a collection of Futures
+38:41 and it's 82 predictions about the future
+38:43 um which is always dangerous to make one
+38:45 prediction about the future let alone 82
+38:47 but the thought experiment on the team
+38:49 where we got to this was imagine you're
+38:50 in a room like this the ceiling just
+38:53 opens up and this little capsule comes
+38:55 down we all jump in it and it slings us
+38:57 into the future it's 2028 you can get
+38:60 out you get five minutes look around
+39:01 write down everything and you're brought
+39:03 back to the present and then write what
+39:05 you saw and that's what this dock is is
+39:07 so what's the future of knowledge look
+39:09 like what's the future even though
+39:10 prompts are oldfashioned that's a pretty
+39:12 good prompt that you gave to the team
+39:14 tell you right now yeah yeah so that's
+39:16 you know we think about we think about
+39:18 it at that level at kind of a high level
+39:20 so say something like what's the future
+39:21 of knowledge going to look like we think
+39:23 it's going to be one piece of that
+39:25 prediction one of the 82 is that it's
+39:28 infinitely
+39:29 remixable and anything that comes in can
+39:32 be transformed and become anything on
+39:33 the way out if you believe that then you
+39:36 take certain bets and you build products
+39:38 kind of with that future in mind so that
+39:40 might be one of them but I think like
+39:42 going back to maybe some of the ones
+39:43 that a lot of people might be listening
+39:45 or building I do think we're kind of at
+39:47 the moment for video we're at the moment
+39:49 for very interesting agent stuff with
+39:51 the thinking and reasoning models and I
+39:53 think there's also maybe something kind
+39:55 of under the radar right now a little
+39:57 bit still think coding has major leaps
+39:60 we're going to see this year um and so
+40:03 those would be some of the ones that are
+40:04 top of mind for us are you guys doing
+40:06 work on coding out of labs too yeah we
+40:07 are we are so right now at Google 25% of
+40:11 all the codes written by AI yeah I saw
+40:13 that Jeff te yeah that's right that's
+40:15 right and that's up a lot in the sense
+40:17 of just how fast the progress is um this
+40:20 is an area that that I think there's
+40:22 kind of two approaches you could think
+40:24 about like how again think of lower the
+40:26 bar raise the ceiling right how do you
+40:28 make coding available for people who
+40:30 could never write code before massive
+40:32 opportunity you know like I've been
+40:34 coding my whole life I mean some of that
+40:38 well it's kind of interesting is some of
+40:39 the most interesting stuff happening
+40:41 here I don't know if any of you have
+40:42 played with like repits agent stuff
+40:44 really interesting right couple of
+40:46 weekends ago I'm with my fourth grade
+40:49 son we are struggling right now in our
+40:51 household to implement chores we created
+40:54 a chore tracking app 28 minutes 45 cents
+40:58 done we're daily active
+40:60 users and so it's a way to kind of get
+41:04 into software and a world of kind of
+41:05 software abundance that's really
+41:07 interesting um so we've got some stuff
+41:09 in that area uh we're also interested in
+41:11 how do you take a professional trained s
+41:15 programmer and make them like 10x to
+41:18 100x and there's kind of I think
+41:20 interesting bets on both sides of that
+41:22 yeah what do you think is overhyped in
+41:24 AI right now oh that's an interesting
+41:26 question I wish we move beyond the
+41:29 chatbot interface a bit like that's one
+41:32 area that feels like we're kind of
+41:33 reusing that in a lot of places Google
+41:36 included um I'm also not
+41:39 sure there's still a lot I think of like
+41:42 people jamming AI into stuff like AI
+41:46 itself is a bit overhyped I wish we were
+41:48 a little more precise about how
+41:50 disruptive or like where to apply it and
+41:52 so I think again we're trying to think a
+41:54 lot about like workflows not just taking
+41:57 existing product in bolt on AI um so I
+41:60 think that's maybe a little there's a a
+42:01 race like you're seeing the first
+42:03 generation of AI put it in and it
+42:06 reminds me a lot actually when I first
+42:07 started at Google it was like right as
+42:09 the iPhone moment was kind of Just
+42:11 Happening and taking taking hold you
+42:13 when Steve walked on stage in 2007 said
+42:15 this is the iPhone if you look at the
+42:17 App Store three years later which is
+42:19 roughly where we are in this AI
+42:21 Revolution the App Store in 2009 is I
+42:24 went back and
+42:25 checked websites that have been shrunken
+42:27 down to fit on your phone flashlight
+42:30 apps and fart apps these were like the
+42:33 highest top downloaded things that were
+42:35 happening so I think we're kind of in
+42:36 this stage where the real stuff is going
+42:39 to start to come out kind of this year
+42:41 next year the next year that's when you
+42:43 start to see the Ubers the airbnbs the
+42:46 instacart the things that really change
+42:48 kind of how you do stuff and so that's
+42:51 that's kind of my thought on it all
+42:52 right then Sonia ask you the overhype
+42:54 question I'll ask you the uh under the
+42:56 radar underhyped question what some
+42:57 areas that deserve more attention within
+43:01 AI we talked about coding a little bit
+43:03 maybe just one other thought on that is
+43:05 I think if you can get code models uh
+43:09 that can kind of write code and
+43:10 self-correct and self-heal and migrate
+43:12 and do all this stuff it just makes you
+43:14 think the pace is fast now that totally
+43:16 changes the curve so I think that's a
+43:18 huge I still think it's underhyped like
+43:21 it's hyped a lot by the way um but I
+43:23 think as hyped as it is it could be
+43:25 hyped more that's one um um I don't
+43:29 think we fully internalized the notion
+43:31 of like what does long context or like
+43:33 infinite context mean it gets to some of
+43:36 your personalization questions
+43:38 potentially but it also gets to some of
+43:39 the stuff we were talking about around
+43:41 how can you make things like a mariner
+43:45 literally just keep going like um and so
+43:49 uh that whole notion of long context I
+43:52 mean you'll you see a lot from Google
+43:54 but we're investing a lot in that
+43:55 because we think that's a strategic
+43:56 lever um that's important uh especially
+43:59 as you get more agentic chain together
+44:01 kind of workflows um maybe another one I
+44:05 think there's there's not enough talk
+44:07 about
+44:08 taste and like I think if you believe
+44:11 the value is going to be in the
+44:12 application layer if you believe there's
+44:14 going to be some percentage of AI slop
+44:16 if you can just see a few of these
+44:17 Trends and I think there's going to be a
+44:20 value in Good Taste and good design and
+44:23 it doesn't mean it has to be human
+44:25 created necessarily although I think
+44:27 there's going to be high value on that
+44:28 too as like human crafted content
+44:31 becomes more Artisan um but I think
+44:33 that's another one I would say I think
+44:35 maybe related to that it's like veracity
+44:37 and Truth um and sort of what is real
+44:40 like these are things that I think are
+44:41 going to become way more important than
+44:43 they already are today I think the
+44:45 context Point within there I like really
+44:47 firmly agree with on like what can
+44:50 happen with you um your infinite context
+44:53 point because if you think about the
+44:54 relationship in your life where you have
+44:55 like the most context shared context
+44:57 it's probably with your spouse right and
+44:59 if you think about that what ends up
+45:01 happening is you can communicate with
+45:02 your spouse literally with just like
+45:03 like the flick of an eye right and all
+45:06 of a sudden they know exactly what you
+45:07 mean they know it's time to leave the
+45:08 party whatever it might be that's right
+45:10 right and you think about that's the
+45:12 aspiration for what can happen with
+45:14 infinite shared context we know that's
+45:16 the ceiling exactly right and so you
+45:18 think about you're like think about how
+45:19 far away that is from now where you're
+45:21 like typing things in about what it is
+45:23 in your point of like well hold on
+45:25 there's all these different ways you can
+45:26 communicate it and can get to know you
+45:27 better if it has memory and so I I think
+45:30 there's so much gold in there of it just
+45:33 being able to keep going right but
+45:35 giving it the right context and whatever
+45:37 it needs you think of any company that
+45:38 you all back or even Google like what's
+45:40 one of the most painful things is when a
+45:42 long-term employee leaves CU all that
+45:45 context walks out the door so I think
+45:46 it's exactly right whether it's a
+45:48 personal relationship or a work
+45:49 relationship yeah okay we're going to
+45:51 wrap with a a rapid fire round you ready
+45:54 yeah sounds good okay favorite new AI
+45:56 app I mentioned it earlier I'm having a
+45:58 lot of fun with repet love it the new
+46:01 agent thing and on the phone I think
+46:03 they're doing some really interesting
+46:04 stuff there you know one of our partners
+46:06 Andrew Reed is known for slinging like
+46:08 creating these amazing memes and sending
+46:10 around it's now so easy to create an app
+46:12 he just creates these all the time and
+46:14 sends them to me um they're they're
+46:16 really good yeah we have this concept of
+46:18 like disposable software you you use it
+46:21 once and you kind of throw it out after
+46:22 you're done with it so yeah okay what
+46:25 application or application categor do
+46:27 you think is going to really break out
+46:28 this year
+46:30 video okay uh recommended piece of
+46:32 content or reading for for AI people oo
+46:35 that's an interesting one um you know
+46:38 this one's not a traditional AI pick
+46:41 because I think probably a lot of the
+46:43 listeners here I was going to say over
+46:45 the break I I read a lot and one of the
+46:47 books I picked up was actually it's the
+46:49 Lego story and it's the history of Lego
+46:53 and it's on its third generation of
+46:55 family ownership um I'd recommend that
+46:58 one it's a really interesting uh yeah
+47:01 here's why though there's a pivotal
+47:03 moment in the company's history where
+47:05 they had 260 products and maybe for a
+47:08 lot of Founders that are listening you
+47:09 can imagine your company could go in
+47:11 like all these different ways you're
+47:12 trying to figure it out and the
+47:15 grandfather the CEO at the time
+47:17 basically identified like the little
+47:19 building blocks this is it and he bet
+47:21 the company on it and he bought these
+47:23 incredibly expensive machines and so I
+47:25 think it's like an incred I like to read
+47:26 biographies a lot and this was one that
+47:28 really stood out Josh has an Inc
+47:31 incredible taste in books and he has
+47:33 this wonderful reading list that he's
+47:35 been kind enough to share with me oh no
+47:37 way that's really wonderfully curated it
+47:39 has this very good formatting as to when
+47:41 it's something you really got to read
+47:42 versus not and so uh you should to all
+47:45 the listeners you should take Josh's
+47:47 suggestions seriously I actually really
+47:48 want a great AI reading app that's like
+47:51 my wish list app what would in part
+47:53 because I have terrible memory but out
+47:55 of out of everything I've ever read or
+47:57 listen to which I think is a different
+47:58 set of things than all the books on the
+47:60 planet like there's all these things
+48:02 that are kind of on the tip of my tongue
+48:03 and ideas that connect but you know
+48:06 they're all kind of in an abyss and
+48:08 they're all pretty inaccessible to me
+48:09 and and so something that surfaces some
+48:12 of those thoughts and ideas that I've
+48:14 had things that I've read you know that
+48:16 next layer of thought I have from
+48:17 reflecting on two different things that
+48:19 I've read and the connections probably
+48:21 across them yeah it's a good idea I
+48:24 think even within that like just the
+48:27 hard copy version the Kindle version and
+48:30 the audiobook version being like you
+48:32 know seamlessly intertwined like you
+48:34 just the most basic level you know so
+48:37 that you can continuously pay attention
+48:38 to something that you like and then we
+48:40 can get to the version that you said
+48:42 yeah request for startup okay uh
+48:44 pre-training hitting a wall agree or
+48:46 disagree
+48:48 o maybe lean agree I think there's still
+48:52 stuff to squeeze out there but I think a
+48:54 lot of the the focus has shifted yeah
+48:58 Nvidia long or short I don't give stock
+49:02 advice Index Fund would do you ever uh
+49:06 sit with Demis and be like look as
+49:08 someone between us we won a Nobel Prize
+49:11 do you ever start with that you know
+49:13 because you know that feels like
+49:15 something that's true you know between
+49:16 the two of you there's one Nobel
+49:18 Prize it's all one directional it's Den
+49:21 John jumper those are the people that
+49:22 won the Nobel Prize not Josh Woodward
+49:25 yeah
+49:27 uh okay any other contrarian takes an AI
+49:30 any other contrarian takes I I guess
+49:33 maybe I'll leave it with this I think we
+49:36 are kind of one thing is like what a
+49:38 time to be alive and building because I
+49:41 feel like there's this window where
+49:42 there's like so many adjacent possibles
+49:44 opening up I think the second would just
+49:46 be like I'd encourage people listening
+49:48 to like really think about of course
+49:50 there's the models and who's winning and
+49:51 the back and forth but like what are the
+49:53 values You're Building into your company
+49:56 cuz I think this is one of those moments
+49:57 where there's going to be like tools
+49:59 created that shape like follow on
+50:01 Generations I think it's really
+50:03 important people think about that and
+50:04 like are you trying to replace and
+50:07 eliminate people or are you trying to
+50:09 amplify human creativity I mean there's
+50:11 like one that's like you know going
+50:12 immediately comes to mind when I'm
+50:14 thinking a video for example I'm on the
+50:16 side of wanting to amplify human
+50:17 creativity but I think there's like
+50:19 there are these moments that happen in
+50:21 our Valley here where like things change
+50:24 and they change often for generations
+50:26 and they can change for good or bad and
+50:28 so I would just encourage people that
+50:30 are in spots where you're building and
+50:32 you have this incredible technology
+50:34 that's only getting smarter and faster
+50:36 and cheaper to put it to good use and
+50:38 think about the consequences Downstream
+50:41 thank you so much Josh for joining us we
+50:43 love this conversation yeah thanks again

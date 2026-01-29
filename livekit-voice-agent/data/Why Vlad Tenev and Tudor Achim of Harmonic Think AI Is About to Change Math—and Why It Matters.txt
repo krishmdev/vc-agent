@@ -1,0 +1,954 @@
+00:00 last I checked there's a 43% chance that
+00:03 the next millennium prize will be solved
+00:05 by AI or like human with significant AI
+00:08 assist I I think I think that's an
+00:11 underestimate I mean we could be lucky
+00:13 and Larry Guth might be on the on the
+00:15 path to the remont hypothesis um which
+00:17 would be amazing but I I think that you
+00:21 know if if the next one is solved by a
+00:24 human it would probably have to be in
+00:27 the very near future and for sure the
+00:30 the next next one will will probably be
+00:33 significantly solved by
+00:51 AI we're excited to welcome Vlad and
+00:54 tutor to the show we've had the pleasure
+00:56 of knowing Vlad for many years at
+00:57 Sequoia but what many of you may not
+00:59 know about Vlad is that in addition to
+01:01 being founder and CEO of Robin Hood he's
+01:03 also an enormously talented
+01:05 mathematician Vlad and tutor have teamed
+01:07 up to create harmonic an AI research lab
+01:10 with the goal of pushing the frontiers
+01:12 of human knowledge specifically they
+01:14 hope to create mathematical super
+01:16 intelligence with the thesis that
+01:18 understanding math allows you to better
+01:20 understand and reason about much of the
+01:21 broader World we're excited to talk to
+01:24 tuther and Vlad about harmonic about the
+01:26 ingredients that go into creating
+01:28 mathematical super intelligence
+01:29 including synthetic data reinforcement
+01:32 learning and self-play and when AI will
+01:34 win the IMO or a millennium Prize or
+01:37 even solve the remon
+01:40 hypothesis all right Vlad tutor welcome
+01:42 to the show oh thanks for having us all
+01:44 right so you guys you have this core
+01:45 belief that math is reasoning and you
+01:50 have what might be a contrarian belief
+01:52 that the best way to train a model to
+01:55 perform well in math is to directly
+01:58 teach it Math versus allowing math to
+02:01 emerge as a property of scale which is
+02:03 what a lot of the other Foundation model
+02:04 companies are doing can you talk a bit
+02:06 about that core belief why do you need
+02:09 to teach the model directly math and and
+02:12 also maybe what does it mean that math
+02:13 is reasoning uh when we started the
+02:16 company we you know had a really big
+02:18 focus on math and maybe we can get to
+02:19 that later but you know if you look
+02:21 around at all fields of Science and
+02:22 Engineering uh well almost all Fields uh
+02:26 math is really at their foundation and
+02:28 math has essentially become the way that
+02:30 people understand the Universe um it's
+02:32 the way you model phenomena from black
+02:33 holes to atoms it's the way you design
+02:36 uh things in engineering and you know
+02:39 there's a couple reasons for that first
+02:40 of all it just happens to be the case
+02:42 that the universe is explainable by math
+02:44 so you can write down you know a fairly
+02:45 compact set of symbols that explain
+02:47 things but the other really important
+02:48 thing is that it's a way to build these
+02:51 you know shared cognitive theories that
+02:53 are very objective and clear and
+02:54 transparent and if you and I are
+02:56 discussing something that's you know
+02:58 rigorous we can write down a set of DED
+02:60 deductive rules we can under agree on
+03:02 what you know the ground rules are of
+03:03 whatever we're modeling and then from
+03:05 there we can derive uh you know
+03:07 conclusions um and so with humans what
+03:10 you see is that when people become very
+03:12 good at math they tend to be good at
+03:13 other quantitative areas in science and
+03:15 engineering and so our bet is that you
+03:18 know if you make a system that's really
+03:19 good at math you're probably going to
+03:20 see the same phenomenon where it's true
+03:22 it might not immediately write the
+03:23 world's best history essays but when you
+03:25 ask it to do something scientific or
+03:27 something in engineering it's just going
+03:29 to be really really good at that
+03:31 that's why we started with math and
+03:33 where where is that boundary between you
+03:35 know help me with my math homework and
+03:37 write a history essay there is some
+03:40 boundary that it's hard for math to
+03:41 cross what do you think the outer edges
+03:43 of what's possible with a model with
+03:47 sort of math at its core where are those
+03:48 outer edges I I'll give you sort of a
+03:51 the the non- AI perspective so I studied
+03:54 math and you know I was really good at
+03:56 math from when I was a little kid and I
+03:59 remember remember there were there were
+04:01 always like the seventh graders in math
+04:03 class that would raise raise their hands
+04:05 whenever the teacher would come up with
+04:07 something and it was always like a
+04:09 abstract thing like you know the uh side
+04:12 angle side of triangles there' be The
+04:14 Annoying kid that was like when are we
+04:17 ever going to use this and you know the
+04:19 teacher would kind of Mumble a little
+04:20 bit and they'd be like well you know
+04:22 like math just like you're probably not
+04:25 going to use it soon but it'll make you
+04:28 really good at at other things and and
+04:30 you know the other kids were always
+04:32 skeptical of that and I bought into it
+04:35 um and so I just kept taking more and
+04:38 more advanced math you know I went to
+04:39 Stanford and I majored in it then I went
+04:42 to grad school to do a math PhD and my
+04:46 belief was that okay if I just focus on
+04:49 math then I'm going to get really good
+04:50 at problem solving and you know business
+04:53 problems and other problems will be easy
+04:57 compared to you know solving these like
+04:60 really tough like abstract algebra
+05:03 problem sets that I was banging my head
+05:05 against the wall for 10 hours every week
+05:08 uh trying to do and I think it basically
+05:10 ended up being correct right it's like I
+05:13 I didn't really pay attention to
+05:14 anything else um I took maybe like one
+05:18 computer science class intro to to
+05:21 computer programming at Stanford and um
+05:25 you know 5 years later uh when I became
+05:28 an entrepreneur uh
+05:30 I found it really easy to to pick up
+05:32 code I found it really easy to like pick
+05:35 up contracts and you know of course I'm
+05:38 no lawyer but you could understand that
+05:40 stuff I mean The Logical underpinnings
+05:42 are relatively simple compared to
+05:46 abstract algebra and Analysis so I I
+05:49 think for for humans at least I I
+05:53 consider myself an example of like math
+05:56 transferring to other very monetizable
+05:59 things and I think for AI uh my
+06:02 intuition seems to suggest that it
+06:04 should be the same yeah and you already
+06:06 see a little bit of evidence of this you
+06:08 know at this point it's an Open Secret
+06:09 in the industry that you know code
+06:11 training on a lot of code data leads to
+06:13 much better performance on reasoning
+06:14 benchmarks so you can imagine what
+06:16 that'll look like when you have
+06:17 incredible math data sets that Encompass
+06:19 a lot more General types of reasoning
+06:21 yeah yeah that resonates the the idea
+06:23 that you know math kind of math teaches
+06:25 a human how to think critically how to
+06:28 think logically and that skill can be
+06:29 ported to a bunch of other domains it
+06:31 stands the reason that that would work
+06:33 in AI also um Vlad you casually
+06:35 mentioned that you studied a little bit
+06:37 of math and just for anybody who's not
+06:39 quite familiar with your background in
+06:41 math uh I believe you studied briefly
+06:44 under Terry to who is perhaps the
+06:48 world's greatest living mathematician
+06:50 yeah um and then one of the things you
+06:52 mentioned to us was that you you you
+06:54 still catch up with them every now and
+06:56 then you have lunch when you're in La
+06:58 that sort of thing so I'm curious when
+06:60 you have lunch with Terry to what do you
+07:02 guys talk about um do you give any do
+07:05 you give any stock
+07:06 tips no no I'm not allowed to do
+07:09 that yeah one one of the uh yeah one of
+07:12 the unfortunate things of being a public
+07:14 company CEO in the financial spaces I
+07:18 have lots of stock tips but I can't
+07:19 share any of them I have to like keep
+07:21 them in turn and I can't even use them
+07:24 basically can't trade anymore um which
+07:27 which is unfortunate because I love
+07:29 Trading
+07:30 but um yeah I I um so um to backtrack
+07:37 how I got to UCLA um I uh so Terry to is
+07:41 a professor at UCLA uh and I think
+07:45 what's really amazing about him is the
+07:48 breadth of the work so most
+07:50 mathematicians get like very deep into a
+07:53 pretty narrow domain and Terry can get
+07:56 very deep uh across like dozens of
+07:60 domains you know he's made contributions
+08:01 to number Theory combinatorics harmonic
+08:05 analysis uh applied math um he's a one
+08:09 of the leading lean contributors at this
+08:12 point I'm sure he's like formalizing his
+08:14 papers in lean and actually hopping on
+08:16 the uh the community zulip and uh like
+08:21 engaging with students um and then he
+08:24 has a very popular blog and I think the
+08:26 way that he's been able to do this is he
+08:29 he's just smarter than
+08:31 99.999% of people probably even more
+08:34 than that so from a very early age it
+08:36 was very clear that that he was like on
+08:38 on another plane and I studied uh I did
+08:42 my math honors thesis in undergrad uh
+08:46 under this professor Larry Guth who's
+08:49 also really amazing I mean the um he
+08:52 actually had a a recent result that came
+08:55 out that was a groundbreaking result um
+08:59 uh
+09:00 in uh I want to say number Theory or
+09:03 some something about the reman
+09:05 hypothesis um but yeah this this result
+09:08 in non-aa AI math uh really was was
+09:12 quite something and uh you know he um he
+09:18 kind of suggested I I look at UCLA um I
+09:21 was like really interested in in in his
+09:23 field and I ended up uh I ended up going
+09:26 there and being fortunate to study under
+09:30 uh Professor to but uh I should be clear
+09:33 I am a Dropout and it's amazing that I
+09:35 can claim that after grad school but I I
+09:38 will claim Dropout status so I only did
+09:40 one year of uh of of UCLA so it was a
+09:44 intro to graduate level analysis uh uh
+09:48 Terry ta taught my my first year which
+09:51 was pretty amazing um and and one thing
+09:54 I remember was I was doing some reading
+09:57 with uh with Professor Tao and um he
+10:01 gave me this book and he signed it and I
+10:05 think he signed it because he wanted to
+10:07 make sure I would give it back to him
+10:08 when I was done reading it and uh little
+10:12 did he know that by signing it he
+10:14 guaranteed he would never get that book
+10:16 back and I I bring it up every time I
+10:17 see him I'm like hey you're not getting
+10:19 that book back it's on my shelf next to
+10:22 all my other autograph first editions
+10:25 what does the math Community think of AI
+10:27 math are people split are or do people
+10:30 think it's you know the path to the
+10:31 promised land and the way that we're
+10:32 going to solve remon and everything else
+10:35 I think it's split I I think it seems to
+10:37 be split and okay uh there's sort of
+10:41 like the younger
+10:43 mathematicians um I think are very like
+10:46 Pro Ai and and pro verification and and
+10:49 tools like lean and I think the the
+10:53 older folks are a little bit more
+10:54 skeptical so not surprising I think you
+10:56 see that in pretty much every field um
+10:60 I think that my my guess would be that
+11:05 this will evolve uh my mental model is
+11:08 uh something like chess where you know
+11:11 at first there will be perhaps a lengthy
+11:14 period of you know humans plus AI assist
+11:19 um and and that will lead to a lot of
+11:21 really good results but um over time I
+11:25 think the AI will get better and better
+11:29 and you know you look at chess right now
+11:31 and it's sort of
+11:33 like you know if there's a human
+11:35 assisting the AI the AI would be like
+11:38 annoyed of it they would just want to
+11:39 just delete all of the input because it
+11:42 would only make the results worse um so
+11:45 I'm not sure if we're going to get to
+11:47 that point I think humans will at some
+11:49 point um I mean they they'll need to
+11:53 guide uh the algorithms but I think the
+11:58 the kind of definition of what a
+11:59 mathematician will do will will
+12:01 fundamentally change I was talking to
+12:03 one of my friends who's a mathematician
+12:05 at MIT and I asked him you know when we
+12:09 when we were kind of first starting this
+12:11 um what do you think and this is a a a
+12:15 young Professor um like very excited
+12:18 about about the field I was like are you
+12:21 worried that you're kind of in a in a
+12:23 field that is going to fundamentally
+12:25 change he's like the the field of math
+12:27 has always changed back in the 18 unds
+12:30 mathematicians used to be kind of like
+12:32 in the Royal Court and they would be
+12:34 glorified calculators they would solve
+12:37 quadratic equations by hand and of
+12:39 course the they were worried that you
+12:41 know when computers and calculators came
+12:43 out the the job would no longer exist
+12:47 but uh mathematicians get to Define what
+12:49 math is so I'm sure uh at some point
+12:52 it'll be prompting and kind of guiding
+12:55 these AIS to solve problems and I think
+12:59 um
+13:00 yeah I think that's going to be very
+13:03 huge so even if an AI solves the remon
+13:06 hypothesis a human will always be in the
+13:08 loop because the humans kind of pose the
+13:11 remon hypothesis to begin with um yeah
+13:14 just h on that I think there's like like
+13:16 in the future you're going to have a lot
+13:18 of compute resources dedicated to math
+13:21 and the question will be like a very
+13:22 human one which is like by which
+13:24 procedure do humans decide where to like
+13:26 direct all that like reasoning Firepower
+13:29 and I think that's going to be like the
+13:30 job of mathematicians they have to
+13:31 choose what do we work on how do we
+13:33 interpret the results how do we
+13:34 interpret failures to find answers that
+13:36 kind of thing do you think an AI an AI
+13:39 math system can solve reman or where is
+13:42 the ceiling do you think I think that uh
+13:47 it should be able to solve it or or you
+13:49 know prove that it's
+13:51 undecidable that would also be an
+13:53 interesting result
+13:55 um yeah I I think the um if if think
+13:59 about like what a great
+14:02 mathematician uh like a Terry tow for
+14:04 instance is capable of doing um you know
+14:07 they're they're able to like synthesize
+14:09 lots of papers lots of Frontier results
+14:12 and learn from them in a way that the
+14:14 other top human mathematicians can and
+14:17 kind of find connections between these
+14:19 things and um sort of use them to create
+14:22 new and more complex theories uh I mean
+14:26 that that's exactly kind of how the
+14:28 system we're engineering work works and
+14:30 that's that's what computers are great
+14:32 at and uh AI models are great at
+14:34 synthesizing large amounts of
+14:36 information finding patterns uh
+14:38 recursively
+14:40 self-improving I think now on metaculus
+14:42 last I checked there's a 43% chance that
+14:46 the next millennium prize will be solved
+14:48 by AI or like human with significant AI
+14:51 assist and
+14:54 um I I think I think that's an
+14:57 underestimate I mean we could be lucky
+14:59 and Larry goth might be on the on the
+15:01 path to the reman hypothesis um which
+15:03 would be amazing but I I think that you
+15:07 know if if the next one is solved by a
+15:10 human it would probably have to be in
+15:13 the very near future and for sure the
+15:16 the next next one will will probably be
+15:19 significantly solved by AI one of the
+15:22 things that you said I want to hit on
+15:23 which is this idea of recursive
+15:25 self-improvement because it seems like
+15:28 in the world of AI there are
+15:30 are if if you were to draw a spectrum of
+15:34 human only to AI only and then human in
+15:38 the loop is sort of the Spectrum in the
+15:39 middle from lots of human little bit of
+15:41 AI to lots of AI a little bit of human
+15:43 one of the things that is interesting
+15:45 about harmonic at least the way I
+15:47 understand it is because of
+15:49 lean you can encapsulate math and
+15:53 code because of formal
+15:56 verification you can objectively
+15:58 determine whether things are right or
+16:00 wrong which means that you have an
+16:02 objective reward function that you can
+16:05 use with self-play to have very fast
+16:08 cycle times with reinforcement learning
+16:11 which means that the the progress of
+16:13 your model has a chance to be extremely
+16:16 fast because there are no humans in the
+16:18 loop with that with that recursive
+16:20 self-improvement like objective function
+16:22 is clearly defined you can do self-play
+16:25 to just make the model better and better
+16:26 and better and better and better which
+16:28 is not something that we see in a lot of
+16:30 domains of AI most domains of AI it's a
+16:32 lot Messier to kind of get the cycle
+16:33 time on Improvement um can you just talk
+16:37 through the system a bit a little bit of
+16:41 what I described like what feeds into
+16:43 your model what governs the rate at
+16:45 which it can get better because it seems
+16:47 like something that will'll be able to
+16:48 get better at a pretty quick rate yeah
+16:51 happy to cover that uh one point before
+16:53 going to that is just that I think the
+16:54 most interesting part about this is that
+16:57 you know there are other areas where
+16:58 recursive self-improvement can work for
+17:00 example again in those board games like
+17:02 Alpha go yep but I think what people
+17:04 don't realize well what a lot of people
+17:06 don't realize is that in these let's say
+17:09 you know perfectly observed zero some
+17:11 games you improve recursively just by
+17:14 playing against yourself but you hit an
+17:17 optimal strategy yes so at that point
+17:19 you no it doesn't matter what system you
+17:20 have it won't do better the most
+17:22 exciting part about math is that there
+17:24 is no upper bound so you're just going
+17:26 to keep putting compute in and it's
+17:27 going to keep getting better and there's
+17:29 no end to it and so when we talk about
+17:31 do we think AI can solve a remon
+17:33 hypothesis or get a millennium prize
+17:35 like those are very human milestones and
+17:37 I think the real question is like will
+17:39 it ever stop I mean because it clearly
+17:41 will get there and I think we're going
+17:42 to end up solving problems that are much
+17:44 much harder than three1 hypothesis which
+17:45 we haven't even conceived of yet because
+17:47 it's almost like Beyond us to write down
+17:49 such a hard problem but coming you guys
+17:52 ever seen that mcraft video of like the
+17:55 AI beating Minecraft in 20 seconds no no
+17:59 that sounds I think it's a good analogy
+18:01 it's like you know what Minecraft is how
+18:03 a human would play it and then the AI
+18:05 beating it in 20 seconds is just like
+18:09 incomprehensible yeah like you can't
+18:10 even kind of grock what's going on in
+18:13 the video
+18:14 feed yeah but I think if we just talk
+18:16 about you know how harmonic works you
+18:18 can just think of it
+18:19 as there's a collection of agents that
+18:22 are essentially trying to solve problems
+18:24 and it's true because we use lean we're
+18:27 able to check whether our answers are
+18:28 correct
+18:29 and thereby derive a variety of training
+18:32 signals that we use to improve the
+18:33 system but just to be clear you know the
+18:36 use of lean just lets you verify things
+18:38 lean doesn't itself tell you whether
+18:40 you're getting closer to the answer or
+18:42 whether you're getting smarter or not
+18:43 it's just telling you whether it's
+18:44 correct or not so there's a lot of open
+18:47 scientific challenges to making it get
+18:48 better quickly and can you just say a
+18:49 word about what lean is just in case
+18:51 people aren't familiar yeah totally uh
+18:53 lean is a just another programming
+18:55 language um a really great one created
+18:57 by Leo Deora um the best programming
+18:60 language we might all be writing lean or
+19:02 the AI might just be writing lean in the
+19:03 future um but the idea is that the
+19:07 mathematical statements are encoded in
+19:09 the type system of the language so just
+19:11 very simply you know you have functions
+19:13 in lean and the input types correspond
+19:16 to the assumptions of the mathematical
+19:17 theorem and the output type is the
+19:19 conclusion and the point of lean is that
+19:21 if you write a program that implements
+19:23 that function and it compiles that means
+19:25 you can derive the output type from the
+19:26 input type which in turn implies that
+19:28 you can conclude the conclusion from the
+19:31 assumptions so that's really the the
+19:33 fundament that's that's how you use lean
+19:34 for Math and I I think one thing that's
+19:37 super interesting about lean is if you
+19:38 look at Leo Deora the Creator who's at
+19:41 um Amazon AWS now he's not a
+19:44 mathematician and he wrote this as a
+19:47 software verification tool so he he has
+19:50 you know the belief that you know in the
+19:53 future software will be verified and the
+19:56 existing tools things like and
+19:59 Isabel which are kind of multi-decade
+20:02 old software verification tools are just
+20:06 not good you know and and they're
+20:08 frankly unusable uh the experience for a
+20:11 developer is is poor and so he wanted to
+20:14 create a better software verification
+20:16 tool and in the hopes of if you build
+20:18 something better more people will use it
+20:20 and we'll have better software which is
+20:22 a super Noble uh goal in in its own
+20:26 right um but then what he didn't realize
+20:28 was software
+20:30 verification uh all it is is just
+20:33 proving that software has certain
+20:35 properties and uh this thing became very
+20:38 popular in the math community and you
+20:41 had uh like thousands of mathematicians
+20:44 and math students building up an organic
+20:48 Library called mathlib which you can
+20:50 think of as kind of like the largest um
+20:53 math textbook open source it's on GitHub
+20:57 um and it's just like growing at a at a
+20:60 pretty fast clip and and like the usage
+21:03 of lean for math I think to some degree
+21:07 has surpassed anyone's expectations
+21:09 might be more than the usage for
+21:11 verified software at this point um and
+21:14 that might change as time uh goes
+21:18 forward and and with AI one of the
+21:20 questions we always ask is why now
+21:22 because reinforcement learning has
+21:23 existed for a long time math has existed
+21:25 for even longer and it seems like math
+21:27 has really hidden an inflection point
+21:29 you guys have chosen to start harmonic
+21:30 at this point in time why
+21:34 now oh I mean there there's two really
+21:36 good reasons why now um that we're
+21:38 excited about so uh first you know one
+21:42 one is just that the AI systems have
+21:44 gotten better in an interesting way so I
+21:47 I was actually talking with with a
+21:48 friend close friend about you know RL
+21:52 for theor improving back in 2015 in 2016
+21:56 and one issue back then was that there
+21:58 was n even A Great Notion of an AI
+22:01 system that could predict something in
+22:03 an infinite action space so in go you
+22:06 know you can place a piece somewhere
+22:08 right it's like either a black or white
+22:09 piece but in math you can really do
+22:11 anything like you can just generate any
+22:12 like next step and so we didn't have
+22:14 great systems to do that so
+22:15 autoaggressive language models have
+22:16 gotten pretty good so that's one thing
+22:18 that makes it possible I talking on the
+22:20 time scale of like a decade here but
+22:21 that's really important and the other
+22:23 thing that's kind of crazy is that lean
+22:24 has gotten really good so if you had
+22:26 told a mathematician 20 years ago that
+22:29 that a large fraction of the field would
+22:31 be excited about formal methods in math
+22:34 they might have thought you were crazy
+22:35 because back then formal methods were
+22:37 really isolated to formal logic or
+22:39 certain types of you maybe graph Theory
+22:41 like if you guys have heard the Four
+22:41 Color theorem that was one big success
+22:43 for formal math but what's changed is
+22:46 that lean is so flexible and so exciting
+22:48 for people that they've contributed this
+22:50 thing called math lib so now there's a
+22:51 lot of body of knowledge that you can
+22:53 build on to prove things and so the
+22:56 combination of AI starting to like even
+22:59 be a possible fit for this problem plus
+23:02 lean working really well and lean 4 was
+23:04 only released officially in September
+23:05 2023 so those two things happening
+23:07 together really made it the right time
+23:08 to attack this can you guys say a word
+23:11 about um data and specifically synthetic
+23:14 data and what it is that fuels the model
+23:18 that you guys are
+23:19 building yeah so synthetic data is the
+23:22 fuel for the model um there's a there's
+23:26 an amazing resource called math liit
+23:27 that open source Repository
+23:29 um so that's a lot of human written lean
+23:32 uh and it's written in a way that's very
+23:34 general and compact so they're really
+23:36 proving Advanced theorems right um it's
+23:38 not necessarily the best fit for problem
+23:41 solving uh and so as a result almost the
+23:45 only data you can use for this is
+23:46 synthetic dat you generate yourself
+23:47 because that original data is not very
+23:49 applicable so it's kind of a data poor
+23:51 regime compared to most areas of AI and
+23:55 so that process that I described where
+23:56 the agents themselves are trying to
+23:58 solve solve problems and thereby
+24:00 generate training signals that's the
+24:01 primary way in which you can get data
+24:04 and the other issue is that you know you
+24:07 have to progress through levels of
+24:09 intelligence so you're not necessarily
+24:11 proving the remon hypothesis up front
+24:12 you're proving really simple things but
+24:14 then you kind of amplify yourself
+24:15 recursively throughout the process turns
+24:17 out there's not as much math data on the
+24:19 internet as cat
+24:20 videos unfortunately not unfortunately
+24:23 not well yeah it's interesting though
+24:25 because you know there's the data wall
+24:26 that the foundation model you know
+24:29 general purpose Foundation model
+24:30 companies are running into and it's at
+24:34 this point they've exhausted you know
+24:36 what's available on the internet and if
+24:38 you can generate most of the data that's
+24:40 required to train that's kind of another
+24:42 advantage of having math at the core
+24:45 versus hoping for math as an emerging
+24:47 property of
+24:49 scale yeah and I think the data wall
+24:51 kind of manifests itself in two ways one
+24:54 is just like you said we're out of
+24:56 internet data yeah the other is
+24:59 uh the
+25:01 actual internet data quality that's out
+25:05 there uh you can think of that as
+25:07 providing kind of a ceiling to how smart
+25:09 these models can get because if you
+25:10 train on the cat videos and all the nice
+25:14 Wikipedia content and you know the the
+25:17 internet content um it's an open problem
+25:20 how to get something that's
+25:21 significantly smarter than that and so
+25:23 you do need to get into some kind of
+25:26 self-reinforcing self-play regime in our
+25:29 opinion to uh get to a point where you
+25:32 can surpass the the ability of human
+25:36 mathematicians and researchers at
+25:39 multiple tasks yeah um and so I think uh
+25:44 in many ways like the the path it's it's
+25:47 inevitable that it takes kind of the
+25:49 alpha go to Alpha zero approach and we
+25:53 learn how to make these models create
+25:56 the the vast majority of their data
+25:59 and have the the data actually increase
+26:02 in complexity as these models continue
+26:04 to to iterate I think the the great
+26:06 thing about math is there's a simple
+26:09 path to doing this you can you can
+26:11 basically measure the complexity of a
+26:14 math problem and and how difficult it is
+26:17 by uh how many lines of lean it takes to
+26:21 solve um so you can actually look at the
+26:24 complexity of a system and a lot of um a
+26:28 lot of like problems are solved by
+26:31 breaking it down into smaller chunks and
+26:34 actually solving those chunks and if if
+26:36 you kind of think about how that works
+26:39 uh the smaller chunks are then more
+26:41 manageable because there are sort of
+26:43 like fewer lines to to solve than than
+26:45 the big one so if you get really good at
+26:48 that um and then you get good at solving
+26:50 the chunks then you can kind of like
+26:53 train your model to do better and as as
+26:55 you kind of like keep uh turning the the
+26:59 gears on that the model gets better at
+27:01 solving incrementally harder and harder
+27:03 and more complex uh problems I think
+27:06 that works very well in math because it
+27:08 mirrors how we solve math uh like on on
+27:11 pen and paper yeah and we've been able
+27:14 to start with like simple axioms and
+27:16 build up like just giant complex
+27:20 structures maybe the remon hypothesis
+27:23 would be hundreds of pages if not more
+27:27 to solve uh for Last Theorem was I think
+27:31 200 Pages very very complex um so uh
+27:36 yeah I I do think eventually you'll get
+27:38 to a level where you you'll be able to
+27:40 solve these things and uh the math is to
+27:44 some extent like the original synthetic
+27:46 data yeah what what determines the rate
+27:50 at which your model can get
+27:55 better uh the rate at which it can get
+27:58 better
+27:59 um well I think
+28:01 the the highest level one is energy so
+28:05 the more energy you can put into it the
+28:07 more attempts can happen in parallel
+28:09 which means you generate data faster
+28:12 um so I mean there there's no rate
+28:15 limiting step I mean sorry there's a
+28:17 bunch of rate limiting steps but there's
+28:18 no like fundamental constraint on how
+28:20 far how fast it gets better um so it's
+28:22 really just about how much computer you
+28:23 put in I think it's also I mean there
+28:26 there's still a lot of Unsolved problems
+28:29 in this field right like uh you we
+28:34 benefit a lot from core theorems that
+28:37 have been proved in the past and you
+28:40 know there's if you think about like
+28:42 competition math context there's
+28:44 theorems that every student would just
+28:46 learn and and use like you know amgm
+28:50 inequality uh things of that nature and
+28:54 and so to some degree um like math lib
+28:57 is incomplete there's very little uh
+29:00 content about geometry for instance and
+29:03 it it's like very theoretical and
+29:05 Abstract um and so a limiting step is
+29:09 like what's in math lib and of course at
+29:11 some point the models have to solve the
+29:14 problem of like creating new theories
+29:16 and new structures and kind of like
+29:18 expanding to other domains and getting
+29:21 really really good at formalizing things
+29:23 that haven't been formalized by humans I
+29:26 think that'll be a big unlock and
+29:28 that'll certainly happen within the next
+29:31 several several years you'll be able to
+29:34 say hey here's just like this situation
+29:37 it could be as simple as like a baseball
+29:40 team and they're like throwing balls
+29:42 back and forth to each other and you
+29:44 know you systems would be able to kind
+29:46 of like autof formalize that and turn
+29:50 that into lean code on the Fly um and I
+29:54 I don't think we're we're quite there
+29:56 yet to the point where that's reliable
+29:57 but when it does does get reliable um I
+30:01 think I think that'll be a really big
+30:04 unlock if everything goes right what do
+30:07 you what do you think harmonic
+30:09 becomes well our mission statement is to
+30:12 explore the frontiers of human knowledge
+30:14 so uh it's very important to us that you
+30:16 know the the things we produce are
+30:18 correct and useful to humans so I think
+30:20 in the best case you know we're able to
+30:22 build a tool that a lot of
+30:24 mathematicians use to close all the
+30:26 Millennium priz Problems and to go far
+30:27 beyond that um I think that'll be a
+30:29 great you know service to humanity um
+30:31 there's also other areas of commercial
+30:34 application for the software so you know
+30:36 the dream for software engineering is to
+30:38 be able to just check that code is
+30:39 correct um to do that you need to have a
+30:41 very good model of how code works you
+30:43 need to be able to understand how the
+30:44 libraries work what they promise that
+30:46 kind of thing and so you can imagine a
+30:48 future where safety critical software is
+30:50 proven correct General software is
+30:52 proven correct and the way software
+30:54 engineering done is done can change as
+30:56 well um so there is like a lot of
+30:57 applications if you can make a system
+30:59 that's very good at math reasoning and
+31:01 very good at checking its
+31:03 reasoning yeah really we think there's a
+31:05 lot of applications yeah and I think the
+31:08 uh I
+31:09 mean math and software are two fairly
+31:13 obvious ones I think software
+31:16 engineering uh as a discipline is
+31:18 changing really quickly I'm sure you
+31:20 guys are seeing all the reports of
+31:22 people doing crazy things with cursor
+31:24 and you know Claude
+31:27 3.5 um I think in the future software
+31:30 engineering will be less about like
+31:35 reviewing and collaborating on code as
+31:38 an artifact and we'll be more about
+31:40 collaborating on specs what do we want
+31:43 the code to do can we be more rigorous
+31:45 about that and I think that's where
+31:47 verification will will become a bigger
+31:50 thing because as the cost of software
+31:54 goes to zero the cost of verified
+31:56 software will also go to zero and
+31:59 suddenly this thing that was like very
+32:01 impractical and expensive because you
+32:03 need specialist humans to do it um Will
+32:07 Will just accelerate dramatically with
+32:10 AI so I think you look out 5 10 years
+32:12 from now the vast majority I mean if if
+32:16 we progress along the capability curve
+32:18 as we have been the vast majority of
+32:20 software written will be verified and
+32:22 provably correct um and I think that's a
+32:25 really exciting future I also think like
+32:27 on the more theoretical side it's not
+32:30 just math but like physics is um
+32:35 essentially math theoretical physics is
+32:38 uh you know one one of the main ways the
+32:41 frontier of math gets implemented and um
+32:46 I I think uh it would be amazing to me
+32:50 personally to accelerate some of the
+32:53 fundamental physics research at the
+32:54 frontier and really just develop an
+32:57 understanding for
+32:59 why the universe is the way it is why
+33:01 the laws of physics exist and um also
+33:05 help figure out experiments to test
+33:07 those um so I I I would be very proud if
+33:10 we contributed to that effort and do you
+33:13 think you'll mostly be contributing to
+33:15 math and math adjacent areas like
+33:17 physics and software engineering or do
+33:19 you think you know anything that
+33:20 involves reasoning uh is in spec for for
+33:26 harmonic yeah I mean I I think we we try
+33:28 to be focused on the things that uh
+33:31 we're still a small company over the
+33:34 over the long term I
+33:36 think if if you believe math is
+33:38 reasoning that and and we do uh then
+33:42 yeah if we get really really good at
+33:43 math and uh computer science is a very
+33:47 natural analog then um yeah I mean
+33:51 anything is in scope for for those
+33:53 models even the history essay I think
+33:57 we'll see
+33:59 to doesn't want to touch history
+34:01 essays yeah I I really enjoyed writing
+34:05 uh history essays even though my parents
+34:07 were like you know Humanities language
+34:09 arts just ignore all that stuff but you
+34:12 know I think my my math skills led me to
+34:15 write great history essays too so
+34:18 hopefully Aristotle will be no different
+34:20 one day Aristotle wrote some great
+34:22 historical uh
+34:25 commentary you are truly a polymath yeah
+34:28 I mean Poetics is if you've read Poetics
+34:31 it's
+34:33 uh should we wrap it up with some rapid
+34:35 fire let's do it lightning round okay
+34:39 what in what year will you win the
+34:43 IMO what do you think tutor soon all
+34:47 right
+34:48 2025 soon maybe 2024 all right we'll
+34:51 sign you up for
+34:52 2024 all right how about the Millennium
+34:56 prize ooh
+34:59 uh that's a tough one I would guess uh
+35:03 2029 2029 yeah okay I heard
+35:07 2028 is that is that what they're uh
+35:10 yeah I guess it's uh fully AI unassisted
+35:13 Millennium Prize or AI human hybrid well
+35:17 what do you how about what do you think
+35:18 for hybrid hybrid I could see 2028 are
+35:21 we talking on easy Millennium Prize or
+35:23 hard yeah is it like na easy millenum PR
+35:27 Stokes 2026 remon hypothesis I'll give
+35:31 you 2029 all right all right there we go
+35:34 good given we can't even do a rithmetic
+35:36 today with LMS uh that's pretty amazing
+35:40 uh when do you think we'll have human or
+35:42 superum level reasoning more broadly
+35:46 defined I think to some degree uh if if
+35:50 you define it as something that can
+35:52 reason and solve math problems in excess
+35:55 of any human like something that Terry
+35:58 to would you know would would give Terry
+36:00 tow a run for um for his money uh I
+36:05 think we're a couple of years away but I
+36:07 think the models within the next year
+36:08 will get to probably like 99.99th
+36:12 percentile would Terry agree with
+36:15 that I think so yeah I don't know you'd
+36:19 have to ask him but I I think he would
+36:21 agree with
+36:22 that one of our favorite questions is
+36:25 who in the world of AI do you admire
+36:27 most and we'll modify it slightly for
+36:29 you guys who in the world of AI or math
+36:32 do you admire
+36:35 most I like Von noyman we were just
+36:39 talking before about uh Von nyman's
+36:43 biography
+36:44 um I think I think what I find really
+36:47 interesting about him was he started as
+36:49 a mathematician and he was discouraged
+36:52 um I think his father who was like a
+36:54 Hungarian businessman was trying to
+36:57 discourage him from
+36:58 um doing math because it wasn't very
+37:01 like
+37:02 monetizable and so he got his friend who
+37:04 was a a great mathematician to try to
+37:07 talk him out of it but um the friend
+37:10 came back and he's like I can't do it
+37:12 this guy's too good it would be just a
+37:15 disservice to society if he didn't use
+37:17 his talents for for Math and then you
+37:20 know he pioneered computer science and
+37:23 the Von noyman machine was like the
+37:25 blueprint for all modern computers uh um
+37:28 he contributed to the Manhattan Project
+37:31 which you know is a little controversial
+37:33 but very very practical and impactful um
+37:37 and you know created probably the
+37:40 canonical text in Game Theory as well so
+37:45 um yeah I I think uh I think is pretty
+37:49 amazing also a fellow Eastern European
+37:51 well some people debate whether Hungary
+37:53 is in Eastern
+37:55 Europe yeah it's it's interesting
+37:57 question I think like I Def and Meer are
+37:58 like almost all scientists and
+37:60 mathematicians um but I think that like
+38:03 you know if you've heard of the
+38:04 mathematician livits um what was kind of
+38:06 shocking to learn during the course of
+38:08 working on this company is that you know
+38:09 so livess was competing with Newton to
+38:11 create calculus and you know Newton's
+38:13 formulation went out but liit was
+38:15 basically there one thing people don't
+38:17 know is that liet also had a lot of
+38:19 other work and one piece of work that is
+38:21 just incredibly preing keep in mind this
+38:23 is the late 1600s um he created this
+38:26 thing called an idea called the
+38:28 universal characteristic which is
+38:30 essentially the notion of having a
+38:33 deductive language uh automated
+38:35 procedure to deduce things using that
+38:37 language and a body an encyclopedia of
+38:39 work in that language that you can build
+38:41 on to derive things and so the amazing
+38:44 thing to me is that this thinker
+38:46 hundreds of years ago essentially
+38:48 predicted what would be happening in
+38:50 2024 and it seems that the only thing
+38:52 that was required was having like AI get
+38:54 a little better and having like
+38:56 computers that can do something like
+38:57 lean right and and I think it's just
+38:60 incredible to have a human being predict
+39:02 that with no concept whatsoever of
+39:05 what's going to come later but to
+39:06 understand that that's like such a
+39:07 fundamental thing that we're going to
+39:09 end up working on that how use later
+39:11 awesome thank you guys thank you thanks
+39:13 for having us thanks for having us

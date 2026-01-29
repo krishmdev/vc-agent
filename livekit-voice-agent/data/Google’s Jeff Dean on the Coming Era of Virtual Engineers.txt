@@ -1,0 +1,738 @@
+00:02 We have Jeff Dean and if you read Jeff's
+00:05 bio, he's run everything at some point
+00:08 in Google uh including overseeing the
+00:11 genesis of this industry and the BERT
+00:14 paper that kind of sparked things so
+00:15 many years ago. And um and we're very
+00:18 fortunate at Sequoia to have our partner
+00:19 Bill Korn who spent about a decade
+00:21 before Sequoia running most of
+00:23 engineering at Google with Jeff. And so
+00:26 please welcome Jeff and Bill.
+00:31 Thank thank you. Um and Jeff, it's great
+00:35 to see you. We got to work together for
+00:37 a few years, and Jeff still is
+00:39 occasionally willing to talk to me,
+00:41 which I'm very proud of. We we have an
+00:43 occasional dinner, which is great fun.
+00:45 Yeah. No, he he's now the chief
+00:47 scientist, I think, at at Alphabet. So,
+00:50 um I I thought we'd start. Obviously, a
+00:53 lot of the people in the room are
+00:55 excited about AI and what's happened.
+00:58 Google clearly introduced a lot of the
+01:00 tech that that the industry is based on
+01:04 uh transformers and other things. Where
+01:07 do you where do you see things going
+01:08 these days as you look out in both
+01:11 within Google but also in the industry
+01:13 as a whole? Yeah, I mean I think uh this
+01:17 this sort of period has been a fairly
+01:19 long time in developing even though it's
+01:21 sort of come into sort of popular
+01:23 visibility only in the last three or
+01:25 four years but really starting maybe in
+01:28 2012 and 13 people were starting to be
+01:31 able to use these really you know at
+01:34 that time what seemed like large neural
+01:36 networks to solve interesting problems
+01:39 and the same sort of algorithmic
+01:41 approach would work for vision and for
+01:43 speech. speech and for language. And
+01:44 that was, you know, pretty remarkable
+01:47 and kind of brought uh attention to, you
+01:52 know, machine learning as a way to solve
+01:53 those problems rather than sort of more
+01:55 traditional handcrafted approaches. And
+01:58 one of the things we were interested in
+01:59 in 2012 even was how can you scale and
+02:03 train very very large neural networks.
+02:04 So, we trained a neural network that at
+02:06 the time was 60x larger than anything
+02:09 else and we used 16,000 CPU cores
+02:12 because that's what we had in our data
+02:13 centers. Um, and got really good
+02:15 results. Um, and that really, you know,
+02:19 cemented in our mind that scaling these
+02:21 approaches would really work well. Um,
+02:23 and there's been, you know, a whole
+02:25 bunch of evidence of that and, you know,
+02:28 hardware improvements to help, uh,
+02:31 increase the our ability to scale to
+02:33 larger and larger models, larger data
+02:35 sets. You know, we had an expression
+02:37 bigger model, more data, better results.
+02:40 Um, which has been sort of relatively
+02:42 true for the last 12 or 15 years. um and
+02:46 where things are going. I think you know
+02:48 now the models that we have are capable
+02:51 of doing really interesting things. Uh
+02:53 you know they can't solve every problem.
+02:56 Uh they can solve an a growing set of
+02:60 problems year-over-year because the
+03:02 models get better. um you know we have
+03:04 better algorithmic improvements that
+03:07 show us how to you know train larger
+03:09 models with you know uh the same compute
+03:12 cost uh more capable models. Um and then
+03:15 we have scaling of hardware. We have uh
+03:18 you know increasing uh compute per per
+03:22 unit of hardware and uh also we have you
+03:26 know reinforcement learning and post-
+03:28 training kinds of approaches that are
+03:29 making the models better and sort of
+03:31 guiding them into the ways that we want
+03:33 them to behave and that's really
+03:36 exciting I think you know multimodality
+03:37 is another big thing like having you
+03:40 know uh the ability to put in audio or
+03:42 video or images or text or code and have
+03:47 it sort of output all those kinds of
+03:49 things as well is is pretty pretty
+03:50 useful. The the industry is I think
+03:53 mesmerized by agents right now. How how
+03:56 real do you think agents are? I know
+03:58 Google introduced an agent framework.
+04:01 Some of this
+04:02 stuff, not Google's necessarily, but
+04:04 some of the agent stuff seems to be a
+04:06 little bit vaporware to me. So yeah, I
+04:09 mean sorry folks, I'm a little direct as
+04:12 some some folks will tell you. It's all
+04:13 good. I mean, I think there's a lot of
+04:15 promise there because, you know, we I I
+04:19 do see a path for agents with, you know,
+04:23 the right training process to eventually
+04:25 be able to do many many things in the
+04:28 virtual sort of computer environment
+04:30 that humans can do today. You know,
+04:32 right now they can sort of do some
+04:34 things but not most things. But the path
+04:38 for increasing the capability there is,
+04:41 you know, reasonably clear. you get more
+04:43 reinforcement learning uh going, you
+04:45 have more agent experience that it can
+04:47 learn from. You have, you know, early
+04:49 nent products that can do some things
+04:51 but not most things uh but are still
+04:54 incredibly useful for people. Uh and I
+04:57 think similar things will happen in sort
+04:59 of physical robotic agents as well. Like
+05:02 right now that we're probably close to
+05:05 making that transition from, you know,
+05:08 robots in messy environments like this
+05:10 room kind of don't quite work today, but
+05:13 you can see a path where in the next few
+05:15 year or two they'll start to be able to
+05:17 do 20 useful things in this room. And
+05:20 that will introduce, you know, pretty
+05:23 expensive robotic products that can do
+05:25 those 20 things. And then learning from
+05:27 experience, they will then get cost
+05:29 engineered to now have something that's
+05:31 10 times cheaper and can do, you know, a
+05:34 thousand things and that's going to
+05:35 engender even more cost engineering and
+05:38 more improvement in capability. So it's
+05:42 exciting. It is and and it does seem
+05:45 like it's coming even though it's
+05:46 figured today. But the uh um I guess one
+05:49 of the other things that comes up I
+05:51 think with a lot of young companies is
+05:53 what's happening with the large models.
+05:55 I mean clearly you know Google has the
+05:58 Gemini 2.5 Pro and deep research and so
+06:02 forth and then there's open AAI and a
+06:04 number of other players. it I think
+06:06 there's a open debate about how many
+06:09 large language models open source closed
+06:12 source where where are things going how
+06:15 do you think about that obviously Google
+06:18 has a strong position and wants to I'm
+06:20 sure dominate in that area but how do
+06:23 you see the the landscape yeah I mean I
+06:25 think uh clearly there it takes quite a
+06:29 lot of investment to build the absolute
+06:32 cutting edge models um And I think there
+06:36 won't be 50 of those. Uh there may be
+06:39 like a handful. Um and uh there are an
+06:43 awful lot of you know once you have
+06:45 those capable models it's possible to
+06:47 make much lighter weight models that can
+06:50 be used for many more things because you
+06:52 can use techniques like distillation
+06:54 that uh I was a co-author on and got
+06:56 rejected from Nurup's 2014 is unlikely
+06:59 to have impact. I' I've heard that I've
+07:01 heard that technique may have helped
+07:03 DeepSeek. So um so that that's a really
+07:06 nice uh technique if you have a better
+07:09 model and then you can put it into a
+07:11 smaller scale thing that actually is
+07:13 pretty lightweight and fast and all the
+07:15 kinds of properties you might want. Um
+07:18 so uh I mean I think there will be quite
+07:21 a number of different players in this
+07:23 this space because you know different
+07:26 shape models or models that focus on
+07:28 different kinds of things but I also
+07:29 think you know a handful of really
+07:32 capable general purpose ones will will
+07:34 do pretty well. Fair enough. I guess
+07:37 hardware is the other thing that's
+07:38 interesting. I it looks to me like every
+07:41 large player is building their own
+07:44 hardware. Obviously, Google has been
+07:46 very public about the TPU program, but
+07:49 Amazon has their own. Rumors are Meta
+07:52 has one. Rumors are OpenAI is building
+07:55 one. You know, there's lots of uh
+07:58 hardware and and yet the industry seems
+08:01 to only hear about
+08:03 Nvidia fairly. I'm sure that's not true
+08:06 in your office, but I how how do you how
+08:10 do you think about that? uh how how
+08:12 important is specialized hardware for
+08:14 this stuff? Yeah. Well, I mean it it's
+08:16 very clear that having hardware that is
+08:19 focused on sort of machine learning
+08:21 style computations and you know I like
+08:23 to say accelerators for reduced
+08:26 precision linear algebra are what you
+08:27 want and you want them to be better and
+08:29 better generation over generation and
+08:31 you want them to be connected together
+08:33 at large scale with super high speeded
+08:35 networking so that you can you know uh
+08:37 spread your model computation out over
+08:39 as many you know compute devices as
+08:41 possible. Um, I think it's super
+08:44 important. You know, I helped bootstrap
+08:46 the TPU program in 2013 because it
+08:48 seemed obvious we would want a lot of
+08:50 compute for inference at that time. That
+08:52 was the first generation. And then the
+08:55 next generation of TPUs, TPUv2 was
+08:58 focused on both inference and training
+08:59 because we saw uh a big need there. And
+09:03 our I think we're on now uh we stopped
+09:05 numbering them for some annoying reason.
+09:07 So now it's uh we're on Ironwood which
+09:10 is coming out uh any day now. and
+09:13 trillium before that. So be be care be
+09:15 careful that sounds like an Intel uh
+09:18 chip naming strategy which hasn't worked
+09:21 small at a distance from myium which is
+09:23 a little Yeah.
+09:24 No, I guess going a little bit off topic
+09:28 and then maybe we'll open up to
+09:30 questions from folks in the in the room.
+09:33 Uh I I I have a lot of friends who are
+09:36 physicists. uh they they were a little
+09:39 surprised when Jeff Hitten uh and his
+09:42 colleagues uh won the Nobel uh in in
+09:46 physics. I guess how how do you see AI
+09:50 uh you know I some of the physicists I
+09:53 know are sort of offended that a
+09:55 non-physicist is starting to win Nobel
+09:58 prizes. How how far do you think AI is
+10:00 going to go in in various fields at this
+10:03 point? Uh pretty far I think. I mean
+10:06 also this year my colleague uh Demis and
+10:09 and John Jumper won it for I almost
+10:11 forgot that. Yes. Yes. So double Nobel
+10:14 Prize celebration Monday and Tuesday or
+10:16 whatever it was.
+10:18 Um so I mean I think that's a sign that
+10:22 really AI is influencing lots of
+10:24 different kinds of science because um
+10:28 you know at its core you know can you
+10:31 learn from interesting data and a lot of
+10:34 parts of science are about making
+10:35 connections between things and
+10:37 understanding them and if you can have
+10:39 AI assisted help in doing that you know
+10:42 one one of the things I've seen in many
+10:44 different fields of science is many
+10:46 disciplines often have incredibly
+10:48 expensive computational simulators of
+10:51 some process like uh weather forecasting
+10:53 is a good example or um you know fluid
+10:56 dynamics or quantum chemistry
+10:58 simulations. Um and often what you can
+11:01 do is use those simulators as training
+11:04 data for a neural net and then uh build
+11:07 something that approximates the
+11:08 simulator but now is 300,000 times
+11:11 faster. And that just changes how you do
+11:14 science because all of a sudden, well,
+11:15 I'm going to go to lunch and screen 10
+11:17 million molecules. That's now possible
+11:19 instead of, you know, I would have to
+11:22 run that for a year on compute I don't
+11:24 have. Uh, and I think that that that
+11:25 just kind of fundamentally changes your
+11:27 your
+11:28 your process of what you how you do
+11:31 things and will make faster discoveries.
+11:35 I I think it it's probably be most
+11:38 interesting if there are questions from
+11:39 the audience at this point. I have other
+11:41 questions for Jeff, but um
+11:46 uh well actually just to quickly follow
+11:47 up on the you know Jeff Hinton uh
+11:50 famously left Google after um like
+11:53 studying I guess the effects of uh or
+11:55 the differences between digital and
+11:57 analog computing um as a future platform
+11:59 for uh inference and and learning. And
+12:02 I'm wondering uh is the future of
+12:04 inference hardware analog?
+12:07 Uh it's definitely a possibility. I mean
+12:09 I think like analog has some nice
+12:12 properties in terms of it being very
+12:14 very power efficient. Um you know I
+12:17 think there's a lot of room for digital
+12:20 things to be much more specialized for
+12:22 inference as well. So and it's a little
+12:24 bit easier to work with typically uh but
+12:27 you know I think there is a general
+12:30 direction of how can we make inference
+12:32 hardware that is you know 10 20 50
+12:35 thousand times more efficient than what
+12:37 we have today. And that seems eminently
+12:40 possible uh if we put our minds to it.
+12:42 Uh it's actually something I'm spending
+12:44 a bit of time on. So
+12:50 hi, I was just going to ask about
+12:53 developer experience versus hardware. I
+12:55 think the TPU hardware is extremely
+12:57 impressive, but there's a lot of, you
+12:58 know, in the zeitgeist about how CUDA or
+13:01 different like, you know, technologies
+13:02 are easier to use than the TPU layer.
+13:05 And so I'd be curious for your
+13:07 perspective on that. And is that
+13:08 something you've been thinking about or
+13:10 getting a lot of angry emails about or
+13:12 uh yeah I mean I I don't connect with
+13:15 cloud c TPU customers all that much but
+13:18 definitely the experience can be
+13:19 improved. Um, one of the things we
+13:22 started working on in 2018 is a system
+13:24 called Pathways, which is really enable
+13:27 uh designed to enable us to take lots of
+13:29 different computing devices and then
+13:31 give uh sort of a really nice
+13:35 abstraction with those where you have a
+13:37 virtual to physical device mapping that
+13:38 is managed by the underlying runtime
+13:40 system and uh you know we have uh
+13:44 support for that for both PyTorch and
+13:46 Jax. Uh we primarily use Jacks inhouse,
+13:49 but what we have is a single Jax Python
+13:52 process just looks like it has 10,000
+13:55 devices on it and you just write your
+13:57 code as you would as an ML researcher
+14:00 and off you go. You know, you can
+14:02 prototype it with four or eight or 16 or
+14:05 64 devices and then you change a
+14:08 constant and you run against a different
+14:10 Pathways back end with a thousand 10,000
+14:12 chips and off you go. like our largest
+14:14 Gemini models are trained with a single
+14:16 Python process driving the entire thing
+14:18 uh with you know tens of thousands of
+14:20 chips and it works quite well. So pretty
+14:24 good developer experience. I think one
+14:26 thing I would say is to date we had not
+14:29 offered that to cloud customers but we
+14:31 just announced at cloud next that we're
+14:33 now going to have pathways available for
+14:34 cloud customers. So then everyone else
+14:36 can have the delightful experience of a
+14:39 single Python process with thousands of
+14:41 devices
+14:45 attached. And I agree that's a much
+14:47 better experience than managing like 64
+14:50 processors for your 256 chips. Like why
+14:53 why would you want to do that?
+14:59 Um I love using the Gemini API. Um it
+15:03 would be even easier if it we got one
+15:04 API key rather than like the Google
+15:07 Cloud uh credential setup. Do you guys
+15:09 have a plan to unify the Google Cloud
+15:12 Gemini stack with the Gemini project
+15:16 like set up right now that's more for uh
+15:19 testing stuff? Yeah, I think there's a
+15:22 bunch of streamlining that is being
+15:23 looked at. Uh it's a known problem, not
+15:26 something I spend a lot of time on
+15:27 personally, but I know like Logan and
+15:29 others on the the developer side are
+15:32 aware of this
+15:34 friction. We like to make it
+15:36 frictionless to use our use our bottles.
+15:42 Is that working? Okay. So, um it's an
+15:45 interesting time in computing. You've
+15:47 got the confluence of Moors law and
+15:49 dinard scaling being completely dead uh
+15:51 with AI just scaling like crazy. Um you
+15:56 have a pretty unique position in the
+15:57 world of driving these supercomputers
+15:59 and infrastructure that is being
+16:01 built. Uh and and you know like how to
+16:04 map the workloads onto these things
+16:05 which is a unique sort of uh skill. What
+16:07 do you think the future of computing is
+16:09 going to look like? What is what is the
+16:11 computing infrastructure heading towards
+16:13 like from an
+16:14 asmtoic thought experiment level? Yeah,
+16:17 I mean it's it's really clear that we
+16:20 have dramatically changed the kinds of
+16:22 computations we want to run on computers
+16:25 in the last say five years, 10 years.
+16:28 Um, and that was like initially a small
+16:32 small ripple, but it's pretty clear now
+16:35 that you want to run incredibly large
+16:37 neural networks at incredibly high
+16:39 performance and incredibly low power.
+16:42 Uh, and you also want to train them. Uh,
+16:44 training and inference are pretty
+16:46 different kinds of workloads. So I think
+16:49 it's useful to think of those two as you
+16:52 know you probably want different
+16:53 solutions for the for the two uh or
+16:57 somewhat specialized solutions.
+16:59 Um and I think you're going to see all
+17:02 kinds of adaptation of compute platforms
+17:05 for this new reality that you really
+17:07 just want to run uh incredibly capable
+17:10 models. Um, and so some of that will be
+17:14 in low power environments like your
+17:16 phone. Like you'd like your phone to run
+17:18 incredibly good models uh with lots of
+17:21 parameters uh super fast uh so that when
+17:24 you talk to your phone, it just talks
+17:25 back to you and it can help you do all
+17:27 kinds of things. Uh you're going to want
+17:29 to run these on robots uh and autonomous
+17:32 vehicles. uh you know we already do
+17:34 somewhat but even better hardware for
+17:36 that will make uh those systems much
+17:38 easier to build much more capable uh you
+17:41 know physical agents in the world and
+17:44 then you want to run them at incredibly
+17:45 large scale in data centers and then you
+17:48 also then want to use lots of inference
+17:50 time compute for some kinds of problems
+17:53 but not others so you have problem you
+17:55 know it's it's pretty clear you want to
+17:57 use 10,000 times as much compute for
+17:59 some problems as for others and that's a
+18:02 nice new scaling knob we have uh that
+18:05 can make your model much more capable or
+18:07 give you you know uh much better answers
+18:10 or make the model capable of doing
+18:11 things with that much compute that it
+18:13 can't do with with you know one as much
+18:15 compute um but you shouldn't spend
+18:17 10,000 times as much compute on
+18:18 everything so um how do you make your
+18:21 systems work well for that and I think
+18:23 that's a combination of hardware system
+18:25 software you know model and algorithmic
+18:28 tricks distillation all these things can
+18:30 help you make uh amazing models come to
+18:33 life in small comput footprints.
+18:36 One thing I've noticed is the um
+18:39 computer science at least traditionally
+18:42 you know uh when people are studying
+18:44 algorithms and computational complexity
+18:46 it was all opcount based and I I think
+18:50 as people are rediscovering hardware and
+18:52 details of hardware and system design I
+18:56 think one of the things that's come back
+18:58 into focus is you need to think about
+19:00 network bandwidth and memory bandwidth
+19:02 and so forth and so I think a lot of
+19:05 kind of
+19:07 traditional algorithmic analysis needs
+19:09 to be completely rethought uh just
+19:12 because of realities of what real
+19:14 computation looks like. Yeah, one of my
+19:16 office mates in grad school did his
+19:18 thesis on like cache uh aware algorithms
+19:21 because the the order of magnitude bigo
+19:25 kind of notation didn't account for the
+19:26 fact that some operations are 100x worse
+19:28 than others. Yeah. No, that's right. And
+19:30 I think in in modern ML computing, you
+19:33 care about data movement at the
+19:35 incredibly small level like moving
+19:37 things from SRAM into accumulators cost
+19:40 you some tiny number some tiny number of
+19:43 picoles but it's way more than the
+19:45 actual operation costs you. So it's
+19:49 important to have pico jewels at the tip
+19:51 of your tongue these days.
+19:53 The uh I one one other quick question.
+19:57 Do you vibe code?
+20:02 Uh I I've been trying it a little bit.
+20:05 It actually works surprisingly well.
+20:08 Um yeah, I mean we've had some nice uh
+20:11 we have like a little demo chat room.
+20:13 Actually have a lot of chat rooms. Uh we
+20:15 sort of run Gemini via chat room. So I'm
+20:17 in like 200 chat rooms and when I wake
+20:19 up and brush my teeth I get like nine
+20:21 notifications because my London
+20:23 colleagues are busily doing things. Um
+20:25 like we had one where people can send
+20:27 out cool demos of things. things I've
+20:28 seen and uh one that was particularly
+20:32 cool
+20:33 was you feed in a YouTube educational
+20:37 oriented video. Okay. And the prompt is
+20:41 just something like please make me an
+20:43 educational game that uh uses graphics
+20:46 and interactivity to help illustrate the
+20:48 concepts of this video. And you know it
+20:51 doesn't work every time but 30% of the
+20:53 time you get something that's actually
+20:55 kind of cool and related to differential
+20:57 equations or traveling to Mars or you
+20:60 know uh doing some kind of cell aspect
+21:03 thing. And you know that's just an
+21:05 incredible sign for education like the
+21:08 the tools we now have and will have in
+21:10 the next few years really have this
+21:13 amazing opportunity to change the world
+21:14 in in so many positive ways. So I think
+21:17 we should all remember that is as is
+21:19 kind of what we should be striving for.
+21:22 Um would you mind passing there and then
+21:25 maybe there yeah we love to hear your
+21:28 thoughts about uh the future of search
+21:31 and uh especially given um Chrome has
+21:35 such big uh distribution right and and
+21:39 then especially Chrome already know the
+21:40 credentials like payments and then web
+21:43 signing credentials. Uh, have you
+21:45 thought about like getting Gemini just
+21:47 directly into Chrome and, you know,
+21:49 making the Chrome app Gemini app instead
+21:52 of have a separate app? You know, I I
+21:54 say this because I'm long-term Googler,
+21:56 so just you know, think about it. Yeah.
+21:59 I mean, I think there there are
+22:00 definitely lots of interesting
+22:03 downstream uses one could make of the
+22:04 core sort of Gemini models or other
+22:06 models. you know, one is can it help you
+22:10 do stuff in your browser or on your full
+22:13 computer desktop uh by observing what
+22:16 you're doing and you know doing OCR on
+22:19 on tabs or maybe it has access to the
+22:21 the raw tab contents you know that that
+22:24 seems like it will be incredibly helpful
+22:26 and uh you know I think you know we have
+22:30 some early work in this area we that
+22:33 we've published public demos of in video
+22:35 form that that seem pretty useful things
+22:38 like mariner and things like that. So
+22:40 TBD
+22:42 you pass the Jeff
+22:44 uh question for you. Uh so thank you for
+22:47 your comments very insightful. Um you
+22:49 know earlier you mentioned like you know
+22:51 the number of sort of foundational model
+22:54 players you know will likely only be a
+22:56 handful and you know this is largely
+22:58 because of you know kind of the
+22:59 infrastructure costs and sort of the
+23:00 scale of investment uh to sort of remain
+23:03 at that cutting edge. Um, and so sort of
+23:06 as this like battle for the frontier
+23:08 unfolds, like how do you see the how do
+23:10 you like where do you see this endgame
+23:12 going? Like what you know where's like
+23:14 the where does this lead us? Like is it
+23:16 is it just whoever writes the biggest
+23:18 check to build the biggest cluster wins
+23:21 or is it you know better you know you
+23:23 just talked about like better
+23:24 utilization of like unified memory
+23:26 optimization and sort of you know
+23:28 different you know efficient uses of
+23:30 what you already have or uh you know is
+23:32 it the consumer experience or like how
+23:35 where does this all where does this arms
+23:37 race uh lead us? Is isn't it just
+23:40 whoever gets to Skynet first the game's
+23:42 over?
+23:44 Um yeah, I mean I think uh
+23:48 it it it's going to require really good
+23:52 insightful algorithmic work uh as well
+23:54 as really good systems hardware and
+23:57 infrastructure work. I don't think
+23:60 either one of those is more important
+24:01 than the other because what we've seen
+24:02 in say our Gemini progression to from
+24:05 generation to generation is the
+24:07 algorithmic improvements are as
+24:10 important or maybe even more so than the
+24:12 hardware improvements or this the more
+24:15 you know larger amount of hardware we're
+24:16 putting to the problem. Uh but both are
+24:19 incredibly important. Um, and then I
+24:21 think from a product standpoint, you
+24:23 know, what it it's there's sort of early
+24:28 stage products in this space, but I
+24:29 don't think we've collectively hit on
+24:32 what is the thing that or it's probably
+24:34 going to be many things that become the
+24:39 the daily used products for billions of
+24:42 people, right? I think there's probably
+24:44 some in the educational space or in you
+24:46 know general information retrieval that
+24:48 is search like but but sort of taking
+24:51 advantage of the strengths of of uh um
+24:55 you know uh large large multimodal
+24:58 models. Uh I think probably helping
+25:01 people get stuff done in you know uh
+25:05 whatever work environment they find
+25:07 themselves in is going to be an
+25:08 incredibly useful thing. And how will
+25:10 that get manifested in product settings?
+25:13 You know, how do I manage my team of 50
+25:16 virtual agents that are off doing
+25:18 things? And they'll probably be mostly
+25:20 doing the right thing, but occasionally
+25:21 they'll need to consult, you know, with
+25:24 with me about some choice they need to
+25:26 make. Uh, I need to give them a bit of
+25:28 steering. Uh, how do I manage, you know,
+25:31 50 virtual interns? It's going to be
+25:33 complicated.
+25:36 Hi, Jeff. Thanks for being here. right
+25:38 here. Oh, sorry. Uh, I literally cannot
+25:41 think of anyone better in the world to
+25:44 ask this question. Um, how far do you
+25:47 believe we are from having an AI
+25:50 operating 247 at the level of a junior
+25:54 engineer?
+25:59 Not that far.
+26:03 Yeah. Yeah. Is that six weeks or six
+26:06 years or
+26:09 every year an AI seems like a dog dog
+26:11 seven or something? I I will claim
+26:14 that's probably possible in the next
+26:16 yearish.
+26:18 Yeah.
+26:20 Hi, you talked about uh scaling
+26:22 pre-training and now scaling RL. Um how
+26:25 do you think about like in the the
+26:27 future trajectory of these models? Will
+26:29 it be you know one large model with all
+26:31 the compute or a constellation of
+26:33 smaller models that have been distilled
+26:35 from these larger models both working in
+26:37 parallel? How do you see um you know the
+26:40 the future landscape? Yeah, I mean I
+26:42 I've always been a big fan of models
+26:44 that are kind of sparse and have
+26:46 different parts of expertise in
+26:48 different parts of the model because,
+26:51 you know, from our uh our weak
+26:53 biological analogies, that's partly how
+26:56 our real brains get so power efficient
+26:59 is, you know, we're 20 watts or whatever
+27:01 and we can do a lot of things, but our
+27:03 Shakespeare poetry part is not active
+27:05 when we're like worried about the
+27:06 garbage truck backing up at us in the
+27:08 car. Um and I feel like there's uh we we
+27:12 do some of that with mixture of expert
+27:14 style models. Uh you know we did some of
+27:17 the early work in that space where we
+27:18 had like 2,48 experts and showed that it
+27:22 gave you dramatic improvements in
+27:24 efficiency uh like 10 to 100x uh more
+27:27 efficient um sort of model quality per
+27:31 training flop. Uh and that that's super
+27:34 important. Uh but it feels like we're
+27:36 not really fully exploring the space yet
+27:40 because right now the kinds of uh
+27:43 sparsity people tend to do is incredibly
+27:45 regular. Like it feels like you want
+27:47 paths through your model that are like a
+27:49 hundred or a thousand times more
+27:50 expensive than other paths. And you want
+27:52 experts or pieces of your model that are
+27:55 tiny amounts of compute and some that
+27:56 are very large amounts of compute. Maybe
+27:58 they should have different structures.
+27:60 Um, and uh, I think you want to be able
+28:03 to extend your model with like new new
+28:06 parameters or new new bits of of space.
+28:10 And maybe you want to be able to compact
+28:11 parts of your model, running a
+28:13 distillation process on this piece of it
+28:15 to make it one quarter the size. And
+28:17 then you have some background garbage
+28:19 collectiony thing that is now like, oh
+28:20 great, I have more memory to use. So I'm
+28:22 going to put those parameters or put
+28:24 those, you know, bytes of memory
+28:26 somewhere else and make more effective
+28:28 use of them somewhere else. And so that
+28:30 that to me seems like a much more
+28:32 organic continuous learning system than
+28:35 what we have today. Um so I I you know
+28:40 uh the only problem with this is what
+28:42 we're doing today is incredibly
+28:43 effective. So it becomes a bit hard to
+28:47 completely change what you're doing to
+28:49 be more like that. But I I really do
+28:51 think there are huge benefits to doing
+28:53 things in that style rather than the
+28:56 sort of more rigidly defined model uh
+29:00 that we have today.
+29:03 I I think one more question and then
+29:05 we'll probably wrap up.
+29:09 Hey, I wanted to return to the to the
+29:10 junior engineer inside a year. I'm
+29:12 curious what advancements do you think
+29:13 we need to get there? Like obviously
+29:15 just maybe code generation gets better
+29:17 but like outside of code generation uh
+29:19 what do you think gets us there? Tool
+29:20 use, augentic planning. Yeah, I mean I
+29:23 think they uh you know this hypothetical
+29:26 virtual uh engineer probably needs a
+29:29 better sense of many more things than
+29:31 just writing code in a in an IDE. Like
+29:34 it needs to know how to like run tests
+29:36 and like debug performance issues and
+29:38 all those kinds of things. And we know
+29:40 how human engineers do those things.
+29:43 They learn how to use various tools that
+29:45 we have and can make use of them to to
+29:48 accomplish that. And they, you know, get
+29:51 that wisdom from more experienced uh
+29:53 engineers typically um or reading lots
+29:57 of documentation. And I feel like, you
+29:59 know, junior virtual engineer is going
+30:02 to be pretty good at reading
+30:03 documentation and sort of trying things
+30:05 out in virtual environments. And so that
+30:07 seems like a way to get better and
+30:10 better at some of these things. Uh, and
+30:13 you know, I don't know how far we'll
+30:15 will take us, but it seems like it'll
+30:17 take us pretty
+30:19 far. Jeff, thank you for coming and
+30:22 sharing your wisdom. Thank you. Great to
+30:25 see you.

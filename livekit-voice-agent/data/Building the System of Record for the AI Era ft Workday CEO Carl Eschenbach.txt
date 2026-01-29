@@ -1,0 +1,1230 @@
+00:00 As soon as you go in and you talk to the
+00:03 enterprise, a CEO, CFO, CIO, whatever it
+00:07 may be, it immediately goes to an ROI
+00:10 conversation
+00:12 like this is going to save me a boatload
+00:15 of money. And in some cases, it is. That
+00:20 being said, if you only focus on the
+00:22 benefit of the
+00:23 ROI, what happens is immediately if
+00:26 you're an employee, you start to think,
+00:28 man, my job's being replaced. We need to
+00:30 flip that narrative as well. We need to
+00:32 start to think about how do we use this
+00:34 technology to drive ROI to get dollars
+00:38 to reinvest in the business to drive
+00:40 growth. We need to talk about AI from a
+00:43 growth value proposition, not just an
+00:46 ROI value proposition. And that's how
+00:48 you get the employees and agents and AI
+00:52 to peacefully coexisting enterprise and
+00:54 really drive growth for
+01:11 companies. Greetings. Today we're joined
+01:15 by current Workday CEO, former Sequoia
+01:19 partner, and perhaps the most beloved
+01:20 executive in technology, Carl
+01:24 Echinbach. Workday, as you may know, is
+01:27 a system of record for people and the
+01:30 numbers produced by those people.
+01:33 As we move into a world where people are
+01:35 complemented by AI agents, workday is on
+01:39 a path to become the system of record,
+01:41 not just for people, but also AI agents
+01:44 and of course all the work done and
+01:46 numbers produced by those people and
+01:48 those agents. Carl talks about Workday's
+01:51 three-pronged approach to monetize AI
+01:54 through seatbased pricing, role-based
+01:55 agents, and consumption-based API
+01:58 access. He also talks about how to
+02:01 implement AI and how to transform a
+02:04 company while preserving your culture
+02:06 and values. We hope you enjoy.
+02:10 Carl, welcome to the show. Thank you for
+02:12 having me. It's great to be here with
+02:13 both of you. I couldn't think of two
+02:15 better podcasters to be with, Sonia and
+02:18 Pat. Come on. We We couldn't think of a
+02:21 better venture capitalist who is
+02:22 moonlighting currently as a CEO to be
+02:25 doing this show with. Okay,
+02:26 moonlighting. I like that. Actually, I
+02:28 am moonlighting because I have
+02:30 responsibilities here with you and my
+02:31 other job. Right. Some days I wonder
+02:33 which I'm doing more. No, I didn't say
+02:35 that. I'm doing the other one more if
+02:37 I'm honest. But I appreciate still being
+02:39 part of the partnership. It's an
+02:40 incredible uh opportunity to still
+02:42 engage with what I think is the most
+02:44 iconic venture capital firm of all time,
+02:46 Sequoia. And just to be around it in
+02:48 some capacity and see people like you
+02:51 and all my partners is truly a blessing
+02:53 for me to still be involved. So, thank
+02:54 you. Thank you. We really appreciate
+02:56 that. All right. All right, we're going
+02:57 to start with a question on workday.
+02:58 Okay, so you guys are the ultimate
+03:02 system of record for
+03:04 people in a world where AI is replacing
+03:08 people. What happens to the system of
+03:10 record for people? Interesting. So if I
+03:15 may, we are the system of record for the
+03:18 two most critical assets of any company,
+03:22 their people and their money. Okay?
+03:25 Because we have the financials platform.
+03:26 Good distinction. Interestingly enough,
+03:28 they're one and the same. And we get
+03:31 asked and I get asked all the time,
+03:34 you're a system of record in the
+03:35 enterprise. AI is coming. It's a
+03:37 transformative technology. It's going to
+03:40 disrupt everything, especially in the
+03:42 enterprise. And companies like you might
+03:46 be in trouble.
+03:47 And I would say with a bias towards
+03:51 being
+03:52 biased, I think we're in a very unique
+03:55 position. And let me explain
+03:58 why. Today, 20 years old as workday,
+04:01 we've been managing and supporting our
+04:03 clients most critical assets. As I said,
+04:05 Pat, they're people in their money. Yep.
+04:08 And we now have a database, a highly
+04:12 curated database of more than 70 million
+04:15 users that is processing
+04:18 30% of the job wrecks in the United
+04:22 States last year. And when you think
+04:24 about
+04:26 AI, at the end of the day, it's all
+04:28 about data. I think you guys would agree
+04:30 with
+04:31 that. Now, it's not just about data.
+04:34 It's the context of the data. Mhm. And
+04:37 when you have that much data and you
+04:39 have the context of it and you're in the
+04:41 actual workflow, the business process
+04:45 workflow, you can then use agents to
+04:48 drive actual results that people see
+04:50 value in doing in using. This is where
+04:53 we start to talk about things like
+04:55 role-based agents and the impact it can
+04:57 have on the enterprise. The other thing
+04:60 I'd say when you have 11,000
+05:02 customers, you've been around 20 years,
+05:05 you've been that core system of record,
+05:08 it led to us becoming the system of
+05:11 truth.
+05:12 People trust us. And anytime you go
+05:14 through one of these major tectonic
+05:16 shifts from one technology to the next
+05:19 generation of
+05:20 technology, I believe especially in the
+05:22 enterprise, the enterprise customers
+05:25 look to us and say, "How are you going
+05:27 to help us with that transition?" Just
+05:29 like 20 years ago, you helped us with
+05:31 the transition from on premises to the
+05:34 cloud for HR and finance. Yep. So the
+05:36 combination of the data, the context of
+05:38 the data, we're in the workflow, the
+05:41 trust we have, and I think at the end of
+05:44 the day, as we talk about agents, and
+05:46 I'm sure we'll talk about it here, I
+05:48 think domainspecific agents with highly
+05:52 curated data are much
+05:54 more beneficial in the enterprise than
+05:57 just general purpose LLM models that are
+05:59 out there. Agreed. That's why we think
+06:01 we're uniquely positioned. I get asked
+06:04 all the time, are the incumbents in
+06:06 trouble because of the startups? And
+06:08 quite frankly, it's not an or, it's an
+06:11 and. There's going to be success across
+06:14 the board. You guys have a bunch of
+06:15 great companies that we work with that
+06:17 actually bring more value to the system
+06:20 of record. So, it's both. I think
+06:22 there's opportunity for everyone. Pat,
+06:24 and your point on trust is a good one,
+06:26 and that's definitely been a recurring
+06:27 theme amongst the application AI
+06:29 companies that seem to be working. Let
+06:31 me ask you a question on product though.
+06:33 So, let's say that I am an AI developer
+06:37 of some sort, or more practically, Sonia
+06:39 is an AI developer of some sort, and she
+06:42 shows up at workday because she heard
+06:44 that there's this treasure trove of
+06:46 information that you've amassed over the
+06:48 last 20 years, all of these records and
+06:50 all the context around the records. How
+06:52 much of that is actually available for
+06:55 you to go build cool AI stuff with? And
+06:59 how much of that due
+07:00 to permissions or information
+07:03 architecture or 20-year-old company
+07:06 stuff? How much of that is not
+07:08 available? Or or said differently, in
+07:10 actually building with AI, all the data
+07:13 that you've amassed is obviously an
+07:14 advantage. How accessible is it? And
+07:16 what roadblocks are there to making the
+07:18 most of all that data when you try to
+07:19 turn it into product? Yeah, it's a great
+07:22 question.
+07:23 Um, if you look at the amount of
+07:28 companies and technologies that access
+07:30 the workday system of record, it's a
+07:32 lot. For example, identity companies,
+07:35 for example, active directory. When you
+07:38 onboard a new employee, guess where they
+07:41 all come and do that? on top of the
+07:43 Workday platform. Today they do it
+07:45 through an open set of APIs, general
+07:48 purpose APIs that we put out there for
+07:50 people to develop on and connect with
+07:52 us. Going forward as we start to think
+07:56 about this world of AI and the potential
+07:58 of all of these agents entering the
+08:01 world in the enterprise, someone has to
+08:04 think about how you onboard them in a
+08:06 secure, responsible, ethical, compliant
+08:09 way and make sure their identity and
+08:12 access controls and all the data they
+08:14 get access to has governance around it.
+08:17 Today that's the
+08:19 risk. That is the risk in the
+08:21 enterprise. When we talk to CIOS, the
+08:24 first thing they say to us, we love
+08:25 agents. We love this technology. We love
+08:27 what potentially could happen with with
+08:30 agents. But we are concerned we're
+08:32 seeing agent sprawl across the
+08:33 enterprise. My analogy, Pat, is remember
+08:35 when we always used to talk about shadow
+08:38 IT creeping up and how do you get it
+08:40 back because of the security and
+08:42 compliance controls that you want in a
+08:44 corporate uh headquarters or a corporate
+08:46 function. That's what we're seeing. Now,
+08:49 what we're seeing is people want to
+08:51 bring agents into the
+08:52 enterprise. They want access to our
+08:55 records. They want to onboard them just
+08:57 like we would a human worker. They want
+08:59 to do it with a digital worker. And what
+09:02 we're building is something called an AI
+09:03 gateway where you're not going to be
+09:05 able to do that to a generic set of APIs
+09:07 that we have today. You're going to have
+09:09 to come through this
+09:11 agent, if you will, gateway to onboard
+09:13 into the enterprise through us. Yeah.
+09:15 Say more about this. So people people
+09:17 are using Workday or will be using
+09:19 Workday to onboard AI agents analogously
+09:22 to how they might onboard human
+09:24 employees. Bingo. I'm going to hire you
+09:27 as my next sales rep, Pat. So what we
+09:29 announced, uh, that was a good setup and
+09:31 you didn't even know it. Uh, about a
+09:33 month and a half ago, we announced
+09:35 something called an agent system of
+09:37 record. And think of it as the
+09:39 unification of a system of record
+09:41 between human workers and digital
+09:43 workers. Just like human workers get
+09:45 onboarded in the enterprise today. They
+09:47 come through workday. They get
+09:48 onboarded. They get assigned to whatever
+09:51 organization they're part of. They get
+09:52 their benefits. They get tracked. They
+09:54 get monitored. And they get looked at
+09:56 for performance reason. And then you do
+09:58 benchmarking of all your human employees
+10:00 to drive workforce management and
+10:02 capacity planning. The world of AI comes
+10:05 about. Agents come into the enterprise.
+10:07 Everyone says they're going to come into
+10:08 the enterprise. Okay. How do they get
+10:10 into the enterprise? Who onboards them?
+10:13 What organization are they part of? What
+10:16 access rights do they have? Who controls
+10:18 them? Who measures them? No one. Today,
+10:21 we think in the future and as we talk to
+10:23 our customers with this new agent system
+10:25 of record, that unification of human and
+10:28 digital workers on a common platform is
+10:30 the path forward. And then once that's
+10:32 in place, you can start to do workforce
+10:35 management, workforce planning around
+10:37 all of your workforce because it's no
+10:39 longer a workforce of human. It's a
+10:41 workforce of human and digital workers
+10:44 and that's what we've developed and
+10:45 we're in the process of bringing to
+10:47 market. That's so fascinating. So it's a
+10:49 system of records for your your people
+10:50 and your money but your people includes
+10:52 your your human people and now now your
+10:54 agents as well. Exactly. And there's a
+10:56 lot of fear out there Sonia that these
+10:58 agents as they come into the workforce
+11:00 are going to completely displace all the
+11:02 human workers. Right. And we're going
+11:05 to, you know, I hear some of my peers go
+11:07 out there and talk about we're going to
+11:08 see a 20, 30, 40% reduction in the human
+11:12 worker, right, going forward by all of
+11:14 the agents in this whole AI revolution.
+11:17 I fundamentally don't believe that to be
+11:19 the case. Yeah, it's interesting. I I
+11:21 remember the I remember 15 years ago
+11:23 hearing a Neil articulate the vision for
+11:26 workday and part of it was the reason
+11:30 people and financials go together and
+11:32 the analogy to the last generation
+11:33 before that which is you know the ERP
+11:36 systems of yester year SAP and such
+11:39 physical manufacturing was the economy
+11:41 and so the same system that took stock
+11:44 of all of your machines was the system
+11:46 that was your financial backbone and
+11:48 with the original workday day, we're
+11:50 moving into a knowledgebased economy.
+11:52 And so the same system that takes stock
+11:54 of your people is the system that
+11:56 provides your financial background
+11:58 backbone. And now as we move into an
+11:60 AIdriven economy, the same system that
+12:02 takes stock of your agents is the system
+12:05 that is also financial backbone. And
+12:08 because it's fluid between the people
+12:09 and the agents, it makes sense that it
+12:11 would all live in one place. it all and
+12:13 if you think about you know the workday
+12:15 platform everyone thinks about us having
+12:17 a HR platform and a finance platform but
+12:20 if you look at the architecture they're
+12:21 one and the same exactly as you just
+12:24 described now layer on top this new
+12:26 workforce called digital workforce on
+12:29 top of it that benefit you've got for
+12:32 the last 20 years continues but it
+12:36 brings these agents into the enterprise
+12:38 in a much secure way. Yes. Yes. And then
+12:41 practically speaking, how do you how do
+12:44 you take this to market? How do you how
+12:46 do you roll this out? Do you do you need
+12:48 some sort of a standard unit of pricing
+12:51 and packaging that an AI agent builder
+12:54 can adhere to? You know, how a person is
+12:57 a person. And granted, there are lots of
+12:59 different types of people, but
+12:60 everybody's got a date of birth, you
+13:01 know, everybody's got a title. um what
+13:04 are the common characteristics of AI
+13:06 agents that will allow them to sort of
+13:08 map into this framework that you guys
+13:10 are now and how do you price them as
+13:11 well and also how do you go to market
+13:13 right I remember being at Sequoa I'm
+13:15 going to back up and that'll answer your
+13:17 question do you remember when this whole
+13:19 actually I was talking to RU about this
+13:21 last week and everything was going to go
+13:24 PLG
+13:26 everything's going productled growth you
+13:28 don't need sales reps you don't need you
+13:30 know 37year sales veterans like myself
+13:33 anymore. You don't need the enterprise.
+13:34 You don't need the top down. I'll tell
+13:36 you the times are coming back. With AI,
+13:39 it's a top down sale in most cases. It's
+13:41 not productled growth up through the
+13:43 enterprise. You're selling to the heads
+13:45 of departments or heads of functions or
+13:46 a CIO. So, I think the distribution is
+13:50 coming back to a much more inhuman uh
+13:52 sales motion. You're seeing that. We're
+13:54 absolutely seeing I think that's a
+13:56 common thread if you look at the AI
+13:57 companies that are really working. It's
+13:58 fun because I told RU when I saw him
+13:60 last week, I'm like, see, I told you PLG
+14:02 is good, but it's not the panacea that
+14:04 everyone thinks. You are still going to
+14:05 need people like me someday. Yes. And
+14:07 they do, right? Um, so, so, so I just
+14:10 thought I'd wanted to talk about as far
+14:12 as pricing goes, there are multiple ways
+14:16 people are pricing AI and then I'll
+14:18 speak specifically about
+14:20 agents. Let me back up. Two years ago
+14:23 when co-pilots came to market, a lot of
+14:26 our peers, a lot of my peers and
+14:28 competitors immediately went to market
+14:31 and they basically said to their
+14:32 customers, we now have a co-pilot and
+14:35 because we have a co-pilot, we're going
+14:37 to raise our pricing
+14:39 20%. And we made a decision and I
+14:43 specifically said I do not want to do
+14:45 that. I don't think it's the right
+14:46 thing. Co-pilots are going to become
+14:48 part of the core foundation of all
+14:50 products and it should be built in, not
+14:52 bolted on and it should be the value our
+14:54 customers get and receive by paying us a
+14:57 subscription fee on an annual basis. We
+14:59 have to innovate. Yeah. To be honest, we
+15:02 got beat up quite a bit. Why aren't you
+15:03 doing this? You have co-pilots. You
+15:05 should be monetizing. And I said because
+15:07 it's the right thing to do. When we
+15:09 bring true value, right, with our agents
+15:11 in the future and we can show you a
+15:14 strong ROI or a value equation, then
+15:17 you'll pay us. Fast forward to today, we
+15:20 price our AI solutions in one of three
+15:24 ways. Number one, we pay price it based
+15:27 on seats. So we are a seatbased company
+15:30 for the most part. And if we have an
+15:32 agent or an AI technology that provides
+15:35 value to all of the employee population,
+15:37 then we will do an uplift based on that
+15:40 agent or that technology. Uplift per
+15:42 seat per seat. Okay. The second would be
+15:44 based on an actual agent itself. Like if
+15:48 I can come to you Pat and say we're
+15:50 rolling out a payroll agent and you
+15:52 think about how many payroll
+15:54 administrators you have today, but we
+15:55 bring a role-based agent into the
+15:57 market. I'm making this up and we're
+15:60 gonna say it's $50,000 a year for this
+16:02 agent. Today you have a payroll agent or
+16:05 a payroll employee over here looking at
+16:07 everything. All you they're doing is
+16:08 administration and that cost $200,000.
+16:11 You'll say, "hm, I'll do this." So you
+16:13 can do it based on the role. Do some of
+16:15 those cannibalize the seatbased model of
+16:18 core workday? Meaning if I now have a
+16:21 payroll agent, I need to hire fewer
+16:23 payroll people and I would have been
+16:25 paying for a seat in workday for each of
+16:27 those payroll people. Does the agent
+16:29 business cannibalize the sort of
+16:31 original seatbased business? I don't
+16:33 think so. Okay? Because what AI should
+16:36 allow that payroll administrator to do
+16:39 is go off and do more high value tasks
+16:43 and drive more strategic outcomes for
+16:45 the company as opposed to just being
+16:46 replaced. If you think about what we do
+16:48 today, you, me, everybody, we spend the
+16:51 majority of our day working with
+16:54 technology, sitting at our desk, working
+16:56 on a phone, we're working with
+16:58 technology. The power of AI is going to
+17:00 happen when we transform that equation
+17:03 and the technology works for us. Yes.
+17:06 And we don't even know what's happening.
+17:07 Right now, we're interfacing with all of
+17:09 these, you know, chat bots and all of
+17:11 these different, you know, LLMs out
+17:13 there, the consumer, but in the
+17:15 enterprise, what's going to happen and
+17:17 the value is going to happen when these
+17:18 agents and AI technology start to work
+17:20 on our behalf. We don't do those tasks
+17:23 and we go off and do other things. So,
+17:24 we're going to flip the equation around.
+17:27 So that's where I think the value comes
+17:29 in for existing employees to go get new
+17:33 skills. Just like the AI momentum could
+17:37 be called the revolution. I think we're
+17:39 going to go through a skills revolution
+17:41 with the existing workforce to train
+17:43 them to go do other things. And and if
+17:45 you look at the history of time, people
+17:48 like all of us, all employees, they're
+17:51 very pliable. Yeah. They're adaptable.
+17:54 And what do we always figure out to do?
+17:57 How to leverage technology? Technology
+17:59 is the single biggest source of
+18:02 productivity gains in the history of
+18:04 time. For sure, right? That leads to GDP
+18:06 growth. That leads to company growth.
+18:08 The other thing we need to work on is
+18:10 this narrative that's out there. As soon
+18:12 as you go in and you talk to the
+18:15 enterprise, a CEO, CFO, CIO, whatever it
+18:18 may be, it immediately goes to an ROI
+18:22 conversation. M like this is going to
+18:25 save me a boatload of money and in some
+18:29 cases it is. That being said, if you
+18:32 only focus on the benefit of the
+18:35 ROI, what happens is immediately if
+18:38 you're an employee, you start to think,
+18:40 man, my job's being replaced. We need to
+18:42 flip that narrative as well. We need to
+18:44 start to think about how do we use this
+18:46 technology to drive ROI, to get dollars,
+18:50 to reinvest in the business, to drive
+18:52 growth. We need to talk about AI from a
+18:55 growth value proposition, not just an
+18:58 ROI value proposition. And that's how
+19:00 you get the employees and agents and AI
+19:04 to peacefully coexisting enterprise and
+19:06 really drive growth for companies. Y
+19:08 sorry we sidebar. Let me come back.
+19:09 There's another way to monetize it and
+19:11 how I'm thinking about it. Okay. So we
+19:12 got first off we have uplift on all the
+19:14 seats. Second one we have price per
+19:16 agent. Yeah. Think about that value
+19:18 based pricing, right? Based and then the
+19:20 third is consumption based. Okay.
+19:22 meaning how many times is something like
+19:24 I was talking to Brett Taylor as Sierra
+19:27 right they do it based on consumption
+19:29 and outcomes right and as you know Pat
+19:32 being on their board right we're
+19:35 thinking about the same things how many
+19:36 times back to your initial question are
+19:38 people hitting us to get access to our
+19:40 data so we can base on consumption okay
+19:43 so when all of these agents come out in
+19:45 the world and all of these agents say
+19:47 wow I need to get access to the data to
+19:49 be registered or whatever it is we got
+19:50 to get access to workday say okay great
+19:52 please do so but we're going to charge
+19:55 for that access going forward as opposed
+19:57 to just that open set of public APIs. So
+19:59 in that case it's a it's a platform
+20:01 business and it's sort of metered almost
+20:03 metered consumption model right and then
+20:06 you can price it to you go out a lot of
+20:07 people today are going out and saying
+20:09 here buy so many you know cons so so
+20:12 much consumption and then as you do it
+20:14 you burn it down over time right uh
+20:16 that's that's a big model that's out
+20:18 there and we're going to do all the
+20:19 above you mentioned AI for productivity
+20:21 okay you are easily top three most
+20:25 productive human beings I've ever met
+20:26 possibly top one probably top one
+20:28 honestly But you're certainly top three.
+20:30 Um, as an insanely productive human
+20:33 being, how are you using AI to make
+20:35 yourself more productive? Have you have
+20:37 you do you have any favorite products?
+20:38 Do you have any favorite workflows? Like
+20:40 what Studio Gibbly pictures? Yeah. Any
+20:42 great Studio Gibli pictures? Yeah. What
+20:44 are you doing with AI to make yourself
+20:46 more productive? Yeah. So, inside of
+20:47 Workday, and then I'll talk about how I
+20:49 use it, too. Inside of Workday, we've
+20:50 rolled out a whole bunch of, you know,
+20:52 productivity tools around AI. We have
+20:54 Slack AI, we have Zoom AI, we use Gemini
+20:56 all the time. Gemini is something I use
+20:58 all the time. So, an example, I'm
+21:01 preparing for earnings every 90 days,
+21:03 which is so much fun. Please join me if
+21:05 you guys want. Um, all the analyst
+21:08 reports come out, right? And, you know,
+21:10 how do you summarize them? How do you
+21:12 you throw it in Gemini and boom, and
+21:14 they give you save, you know, hours of
+21:17 reading. That's one example. Or you're
+21:19 on a Zoom call that you missed. Like,
+21:21 how does that get summarized back to
+21:23 you? I use those type of things all of
+21:25 the time. Yeah. And it just makes me
+21:28 that much more productive. Uh clearly
+21:31 one of the things we're doing inside of
+21:32 workday and I think it's it first of its
+21:34 kind at scale. Uh we're launching this
+21:38 month something called everyday AI where
+21:42 all 20,000 employees have to go through
+21:45 training on AI and how to learn how to
+21:48 use all of these tools to drive personal
+21:50 productivity and through that personal
+21:52 productivity gain workday gets gain.
+21:54 Yeah. Yeah. Right. So we and they have
+21:56 to test out there's an entire
+21:58 curriculum. It's a really interesting
+22:00 way to get people
+22:02 excited about AI, how to engage with it
+22:05 and leverage the technology as opposed
+22:08 to be afraid of it. And we think it's
+22:10 one way to drive, if you will, that
+22:12 peaceful coexistence between the
+22:14 technology and the humans to drive
+22:16 overall gains for the company. That's
+22:17 another example how the whole company
+22:19 has to do it. And I'm launching it in
+22:21 two weeks. Very cool. Can you tell us
+22:24 more about the agents that you're
+22:25 bringing to market? So, you mentioned
+22:26 the payroll agents. What what other
+22:28 agents should folks expect from you? We
+22:30 bought a company at this time last year
+22:32 about a year ago called hired score and
+22:34 they have what I would describe as a
+22:37 recruiter agent.
+22:39 So, if you think about recruiting Sonia
+22:41 in the HR function, it is talent
+22:43 acquisition or recruiting is probably
+22:45 one of the most expensive functions you
+22:47 have. Yeah. Right. in HR. This recruiter
+22:51 agent we brought to market, we can give
+22:53 it to a recruiting organization or
+22:55 talent acquisition organization and they
+22:58 in a very short matter of time can see a
+23:02 50% increase in recruiter productivity.
+23:05 Just think you get a hundreds of resumes
+23:07 for a job. Today someone searching now
+23:11 it basically can do that in seconds and
+23:13 say here's the top two or three you
+23:14 should go after. But it's more than just
+23:17 recruiter productivity. It also has
+23:20 proved to accelerate time to hire by 20
+23:24 30 up to 40%.
+23:27 So your recruiters are more productive
+23:29 and you can accelerate your time to
+23:31 hire. Then once you get them inside the
+23:34 building, we have two other AI products.
+23:36 One is called talent optimization and
+23:38 the other is a talent mobility agent.
+23:42 And when you implement them, we have
+23:44 seen upwards of 40% reduction in
+23:48 attrition. And the reason for that is
+23:51 for the employee, it takes a look at of
+23:54 all your skills, your background and
+23:56 your experience. And for the manager,
+23:58 you say, I have this project or outcome
+24:00 I'm trying to achieve and it starts to
+24:02 do the matching between the two. So what
+24:05 it drives is an increased level of
+24:07 internal mobility with your workforce
+24:10 which drives down attrition because
+24:11 people feel like they're getting new
+24:13 opportunities. So that's like a full
+24:15 life cycle of agents from recruiting to
+24:17 onboarding to talent optimization to
+24:20 talent mobility and all that we can
+24:22 monetize because people can actually see
+24:24 you see a reduction of 50% of you know
+24:27 you know um need for additional
+24:30 recruiters. That's pretty powerful. Yes.
+24:31 Can I ask you a question on you
+24:33 mentioned this idea of matching talent
+24:34 to other opportunities inside of their
+24:37 company? One of the ideas that we've
+24:38 heard from a few different companies at
+24:40 this point is this idea that thanks to
+24:43 AI the matching problem that is here is
+24:47 a job to be done here is the right
+24:49 person to do the job. Thanks to AI that
+24:52 matching problem is now possible.
+24:53 Historically, it wasn't because you'd
+24:56 have to collapse the dimensionality of
+24:57 that problem to things like what is the
+24:59 title, what is the geo, what is the pay
+25:02 scale, which really doesn't tell you
+25:04 whether or not this person is going to
+25:05 do a good job. And so I'm curious, are
+25:07 you are you a believer in the ability of
+25:10 AI to actually match the right talent to
+25:13 the right opportunity? And if so, is
+25:15 that a big theme for Workday going
+25:17 forward? We heard a glimpse of it with
+25:18 the internal product. Is there more of
+25:20 that to come? Absolutely. And it all
+25:23 becomes completely or highly dependent
+25:26 on skills.
+25:29 It's all about skills. It's not about
+25:31 pedigree or college or anything else
+25:33 like you know there like let me give you
+25:35 one statistic um and then I'll come back
+25:38 to say how we do it. Accenture, one of
+25:40 our biggest partners out there, who's a
+25:43 very reputable, as you know, system
+25:44 integrator, global system
+25:46 integrator. Today, their new
+25:50 hires, 30 to 35% of their new hires do
+25:53 not have a college degree. Hm. It's
+25:56 pretty amazing because what they've
+25:58 done, they're probably one of the most
+25:59 advanced companies I've worked with that
+26:02 looks at skills and job outcomes or job
+26:05 wrecks they're trying to fill and then
+26:06 they use AI to match the two, right? And
+26:10 that's what our product does internally.
+26:12 Let's say you have 10,000 employees.
+26:13 Because we are the system of record, we
+26:15 know all the skills you have and you
+26:17 have this, if you will, database of all
+26:19 the skills of your employees. So now
+26:21 when you want to try to hire someone,
+26:24 you first look inside and say, "This is
+26:26 what I'm trying to fill this job. These
+26:29 are the projects this person's going to
+26:31 work on and these are the type of skills
+26:33 that are required." Then you look at
+26:35 your own 10,000 employee population.
+26:37 Say, "Wow, here's all the skills Billy
+26:39 or Susie have." And you do that internal
+26:41 matching. And so as we move to a
+26:44 skills-based outcome world, right, this
+26:46 becomes more and more valuable inside of
+26:49 companies.
+26:51 um for people not to just hire based on
+26:53 pedigree is how we like to think about
+26:55 it. Carl, I remember when I interviewed
+26:57 for Sequoia, you were very memorable. Uh
+26:59 and I mean so much of so much of that
+27:02 interaction though is just a human can I
+27:03 see myself working with this person
+27:05 being inspired by being around them
+27:07 every day. Do you think that AI can
+27:09 actually and a agents can disrupt the
+27:12 actual interviewing process and and you
+27:15 know the the process of actually
+27:16 selecting the right candidate for the
+27:18 job and in terms of some of the human
+27:19 judgment elements? It's a great question
+27:21 because you know me I like doing this
+27:23 with my partners like you. It is all
+27:25 about the human touch and human
+27:27 connection uh in the relationship you
+27:29 establish with the other person. That's
+27:31 really what's important at the end of
+27:32 the day. But that's also why we always
+27:36 talk about and you talk about probably
+27:38 the same thing. There's going to be a
+27:39 human in the loop in all of this,
+27:41 especially in hiring. I personally would
+27:44 not accept someone into our company if
+27:47 they was 100% done purely based on
+27:51 skills and skills
+27:52 requirement. There has to be a human in
+27:55 the loop all the time. I
+27:57 think Yeah. And and I know we talk about
+27:60 where AI is going in the future and it
+28:03 will have emotions, it will have
+28:04 feelings, it will have
+28:06 empathy. I'm I'm trying to get there
+28:08 with everyone. Um but I still think this
+28:11 is required
+28:13 um ultimately when you're going to hire
+28:16 a human. In fact, one of the things I
+28:18 think that's going to change, and here's
+28:20 an example of where humans will not just
+28:23 necessarily be replaced by AI, but since
+28:26 AI is going to have such a profound
+28:28 impact on human productivity, it's going
+28:31 to free us up to move from a world of
+28:34 technology transformation to a skills
+28:37 transformation by people like us now
+28:39 going and picking up skills that I
+28:42 actually think we've lost in the
+28:44 workforce. Right? those life skills,
+28:46 those people skills you're talking
+28:48 about. How do you learn to network? How
+28:50 do you learn to give feedback if you're
+28:52 a manager? How do you collaborate? How
+28:54 do you lead with empathy and feelings?
+28:57 That's we lost a lot of that during co
+28:60 and now we got to get that back as
+29:02 people come to the office. How do we
+29:03 educate and train and mentor the younger
+29:07 people? You can't do it all the time
+29:08 over Zoom. There has to be a human
+29:10 connection to make that happen. So we're
+29:12 now talking about how do we use the AI
+29:15 transformation of the workforce to
+29:18 transform skills that we think are
+29:20 missing in the enterprise to bring the
+29:22 two together ultimately to drive better
+29:24 outcomes for both employees and
+29:25 companies. This is one of the optimistic
+29:28 views of AI that I think we very much
+29:30 believe in and we hear similar things.
+29:32 You know, Winston at Harvey talks about
+29:34 how the legal profession is going to
+29:36 kind of go back to what it was 50 years
+29:38 ago where it's less about processing
+29:40 transactions and it's more about human
+29:42 connection and the advice and the
+29:44 consuary role that people can play. You
+29:46 know, Christopher O'Donnell a day talks
+29:48 about how because AI generated CRM does
+29:52 a lot of the drudgery for you, you can
+29:53 actually focus on the human connection
+29:55 too. And so I think the the optimistic
+29:58 view and and sort of what I'm hoping for
+29:59 out of the world of AI is technology to
+30:02 your point earlier on how we work for
+30:03 technology and it's going to work for
+30:04 us. Technology kind of fades into the
+30:07 background because AI is doing a lot of
+30:09 the work and it sort of frees you to
+30:11 have the human connection be more well
+30:14 front. I think we move from a world
+30:17 where we're working with technology to
+30:19 the technology working for us and today
+30:22 it's front and center and we talk about
+30:23 how we're using AI but the power of AI
+30:27 is these models learn right and they
+30:29 start to do things autonomously on your
+30:31 behalf so you don't even have to do it
+30:33 so you go do new things and the last
+30:35 thing I'd say is this is this is
+30:40 factual
+30:42 technology enables change. Mhm. That's
+30:46 all it does. It enables change to drive
+30:49 change. It still takes people no matter
+30:52 what. Well put. People are going to be
+30:55 involved with AI. They have to implement
+30:58 it. They have to embrace it. They have
+30:59 to teach people how to use it. And they
+31:01 have to teach people new skills.
+31:03 Technology only enables change. It
+31:05 doesn't drive. It still takes humans. So
+31:07 this is one of the ironic things. I
+31:08 completely agree with the point and and
+31:10 maybe a different way to frame that. One
+31:12 of the ironic things ironic things about
+31:14 this agentic
+31:16 economy agency is the thing that is
+31:18 uniquely human right the ability to
+31:21 determine what is it that I want to
+31:23 achieve here that is still a uniquely
+31:26 human thing you can dispatch an AI agent
+31:28 to go reason through the steps and
+31:30 figure out how to get there but deciding
+31:32 what question should I ask what is the
+31:34 objective you know that's still a
+31:35 uniquely human thing I think another
+31:36 framework would be you know Google sort
+31:38 of commoditized knowledge open AI is
+31:41 sort commoditizing
+31:43 intelligence. Agency is the thing on
+31:45 top. You know, intelligence is making
+31:46 use of that knowledge. Agency is
+31:48 determining to what end. And that's the
+31:50 thing that is still uniquely human. And
+31:52 I think the argument in favor of AI is
+31:54 it gives you superpowers to go do that.
+31:56 Yeah. I I think it's well put. Again,
+31:58 especially in the enterprise, Pat, I
+32:00 think there's so much opportunity. I
+32:02 think AI will drive a step function
+32:04 change in human productivity. No doubt.
+32:06 No question about it. I think how we get
+32:09 there, there's different views. there's
+32:11 different opinions, right? Um, and I
+32:14 think, you know, we at workday and
+32:16 myself for sure think it's going to be a
+32:18 peaceful coexistence of humans and
+32:20 technology working together just like
+32:22 we've done in, you know, the past major
+32:24 tectonic shifts. I remember when cloud
+32:26 evolved and came about, everyone said
+32:28 everyone's going to CIO organization,
+32:29 you're not going to need any more
+32:30 people. I don't know. There's probably
+32:32 more people than ever working in, you
+32:34 know, the CIO's organization. People say
+32:37 developers aren't going to be needed.
+32:38 I'm not sure that that's going to be
+32:40 true. We'll need less junior developers,
+32:42 but really architects and senior
+32:44 developers are still going to do the
+32:46 final work and approve it or not. Back
+32:49 to Sonia's point, we're not going to
+32:50 have Carl vibes coding the dead code
+32:53 base. Yeah. No, I would love to see
+32:54 Carl. That would be a problem. I'm I'm
+32:57 There are some things I can do and
+32:59 there's a lot I can't. That's one I
+33:00 can't. Right. So, we talked about
+33:02 transformation a bit and how people are
+33:04 going to transform and AI is going to
+33:05 transform the workplace. Um, the timing
+33:09 of your transition into the CEO role at
+33:12 Workday was pretty interesting because
+33:14 it was January of 2023, I believe. And
+33:18 so, we're just a couple months post chat
+33:22 GPT moment. Yeah. And so, you you came
+33:25 into a company that was at that point 17
+33:28 years old, 18 year years old, something
+33:30 like big company, already many billions
+33:32 of revenue and tens of thousands of
+33:33 people. And from the outside looking in
+33:36 it it seems like you have driven
+33:38 transformation on at least two vectors.
+33:41 You know one is driving just efficiency
+33:44 and velocity and just kind of basic you
+33:47 know cleaning up the business getting it
+33:49 in better shape sort of transformation.
+33:51 And then the second of course is the AI
+33:52 transformation. And so the question is
+33:55 because I think there are a lot of
+33:56 people you know looking at
+33:57 transformation over the next few years.
+34:00 What did you do to drive transformation?
+34:02 what was effective for you? What were
+34:04 some of the maybe what was a crucible
+34:06 moment or two that you had to sort of
+34:08 bust through to actually drive change in
+34:10 an organization with that much scale?
+34:12 Yeah. No, listen it is a big company um
+34:16 when I joined and it's a one of the most
+34:18 successful obviously software companies
+34:20 of our generation if not ever. Um and it
+34:24 wasn't Carl who drove any
+34:26 transformation, it was a team that drove
+34:28 it with me, right? and to get their
+34:30 support was probably what I had to do
+34:32 and work on most. Um, let me start with
+34:35 what hasn't changed and what will never
+34:37 change because I think it's very special
+34:39 and it will never be transformed. When
+34:42 Anne Neil and Dave, the founders of
+34:44 Workday, uh, who worked together and
+34:47 Dave was the founder of Peopleoft, when
+34:48 they sat down to start this company 20
+34:50 years ago, Pat, the first thing they did
+34:53 is they said, "What kind of company do
+34:55 we want to build and what is the core
+34:58 foundation of the company and how we're
+35:01 going to scale from this day forward?"
+35:03 And the first thing they did is they sat
+35:04 down, they wrote values. They wrote six
+35:06 values of the company. And to this day,
+35:09 we still talk about those six values as
+35:11 the foundation for the company. We focus
+35:13 on our people first, our customers, two
+35:15 eyes, integrity, and innovation. Uh, and
+35:18 the last two is we like to have fun. And
+35:20 the sixth one is profitability. And
+35:23 profitability is the sixth one for a
+35:24 reason because if we do the first five
+35:26 right, we're going to be profitable. And
+35:28 even today, that's all I talk about when
+35:31 I'm in front of the company or in front
+35:33 of customers. We talk about how
+35:34 important a values-based company is.
+35:36 That being said, our culture is strong
+35:39 because of those values. But culture,
+35:42 while the values will never change,
+35:44 culture does change as companies scale
+35:47 and grow. And part of our transformation
+35:49 is to think culturally, how do we
+35:52 actually become a bigger company? Uh how
+35:54 do we run things more effectively and
+35:56 more efficiently and drive a deeper
+35:59 level of operational rigor? Uh how do we
+36:02 transform? A lot of work has been done
+36:04 because probably of my experience and
+36:06 background. I can't change who I am or
+36:08 where I came from on the go to market
+36:09 side. How we've segmented the market,
+36:12 how we've gone deeper into verticals. Uh
+36:14 how we've expanded and you know built a
+36:17 true partner ecosystem. I now say I
+36:20 don't want to build just an ecosystem
+36:22 around workday. I want to build an
+36:23 entire economy. Our partners are now not
+36:26 only deploying us, but they're all now
+36:29 taking us to market, they're selling on
+36:30 our behalf. They're being rewarded and
+36:33 most importantly they're innovating like
+36:35 crazy on top of the workday platform.
+36:37 We're unique that we're both a platform
+36:39 company and an application company at
+36:42 the same time. And the platform is
+36:43 starting to resonate as we open up the
+36:45 aperture. Some of the things we talked
+36:46 about earlier to allow people get access
+36:48 to the platform. They're innovating on
+36:50 top of us and then they build it once a
+36:52 partner can sell it to our marketplace
+36:54 and sell it to our 11,000 customers.
+36:56 Right? Build it once, sell it to many.
+36:58 So we've done a lot on that side. And
+37:00 then on the technology side, yeah, I
+37:03 stepped into this. Everyone knew about
+37:05 AI. We knew AI was going to become, you
+37:07 know, a big part of a company like
+37:09 Workday. It always, you know, has been
+37:11 on on the road map. In fact, you know,
+37:13 if you talk to Anneil, who I think is
+37:15 one of the most, you know, thoughtful,
+37:18 uh, mindful and smartest, you know,
+37:20 enterprise software guy I ever met. Like
+37:22 he's been doing AI and machine learning
+37:24 in the platform for a decade, right?
+37:26 That's what he said. So, this is just
+37:27 the next evolution. I didn't know
+37:29 stepping into this like this was going
+37:31 to happen this quick. And I think one of
+37:34 the things that we've done in some of
+37:36 the transformation and crucible things
+37:38 we're doing is moving with speed and
+37:40 velocity at scale. Yep. Like we're
+37:43 moving much faster. Uh we're we have a
+37:46 sense of urgency because we think we're
+37:48 uniquely positioned because of the data
+37:50 set we have. Um we think we got to move
+37:54 quick before anyone tries to come and
+37:55 disrupt us. So, we're focused on
+37:57 disrupting ourself and I think that's
+38:00 been a lot of fun. Um, unfortunately,
+38:04 you know, to support all of these growth
+38:06 initiatives and these transformations
+38:08 that we're going through. Um, one of the
+38:10 hardest things I've ever had to do in my
+38:12 career is a sizable
+38:15 um, you know, transformation of our
+38:18 people where we did a restructuring
+38:20 earlier this year, about 8% of our
+38:21 workforce, about 1,650 people. And
+38:25 listen, that was the hardest thing I've
+38:26 ever had to do in my career. When it's
+38:28 on your your watch and your time to do
+38:31 that at a values-based company is not
+38:34 easy. So getting all the the leadership
+38:37 and and my partner and Neil and the
+38:40 board to support that uh was a heavy
+38:42 lift. Um but the way we did it was
+38:46 incredible. The empathy we showed, the
+38:49 caring, the loving, uh, the embracing of
+38:52 our workmates that were leaving us, the
+38:54 packages and severance we gave them was
+38:57 done in such a way that I think people
+39:00 felt as good as they could going through
+39:02 this type of a transformation. And now
+39:05 we freed up all of these opex dollars to
+39:08 go invest in these transformations on
+39:10 both go to market and the product side.
+39:12 Um, it's been incredible. It'll be two
+39:15 and a half years here in a couple
+39:16 months. Uh it's been a great experience.
+39:20 Um and I'm grateful for the opportunity.
+39:23 I feel a sense of
+39:25 um you know pride to continue this you
+39:28 know endure this company well beyond you
+39:31 know my time here and feels like days
+39:33 there's a lot of pressure if I'm not
+39:35 lying but you know I have an amazing set
+39:38 of people that I get to serve alongside
+39:40 of that believe in our mission believe
+39:41 in the product believe in the technology
+39:43 and believe we're actually having an
+39:44 impact on the world because we manage
+39:46 more employees than anyone out there
+39:49 today that's pretty fun pretty cool So
+39:53 if the first 20 years of workday were
+39:55 sort of helping usher your customers
+39:57 through this on-prim to cloud transition
+39:60 in the next 20 years, I know this is
+40:02 oversimplified, but the next 20 years
+40:04 are helping to usher your companies into
+40:06 this world of
+40:07 AI. Does the nature of the moes that you
+40:11 build as a business change when you go
+40:14 into the AI world? or said differently,
+40:16 you've had this wonderful moat
+40:17 historically which is being a core
+40:20 system of record that a lot of other
+40:22 applications sort of orbit around. Does
+40:25 the nature of the moat for the next 20
+40:27 years change with AI or is it kind of
+40:29 more the same? It's just the AI version
+40:31 thereof. I think the moat remains the
+40:34 data. When I think about data, data is
+40:36 the
+40:38 new UIUX for AI.
+40:42 Think about that. Data is the new UIUX
+40:45 for AI, right? Garbage in, garbage out.
+40:49 Highly curated data with context in
+40:52 great outcomes with agent. So I think
+40:53 it's a both. I think our moat is what
+40:58 allows us to build the next set of moes
+41:00 and that is role-based agents. Yeah. And
+41:03 if we can bring role-based agents
+41:04 because if you think a lot of today what
+41:06 you see in agents if you a lot of them
+41:08 are just super co-pilots. They're task
+41:11 agents. They call them agents, but
+41:14 they're doing a task. Yes. And it's
+41:16 automating some repetitive task, right?
+41:18 Think of RPA on steroids almost, right?
+41:21 Yes. When you go into a world where we
+41:23 leverage the mo of data and we have the
+41:26 context of the data and we understand
+41:27 the skills
+41:29 humans have, think about now building
+41:32 role-based agents that doesn't do a
+41:35 task, it picks up skills. Mhm. And
+41:39 because we know that, I think that's
+41:41 going to become our next big moat along
+41:44 with the data we have as we transform
+41:47 how people work alongside of agents and
+41:51 not just use them to solve a repetitive
+41:53 task. M so I think as the world goes
+41:56 into the future because of that
+41:59 moat I think people do trust us to help
+42:02 them navigate the unknown of AI to help
+42:06 them you know take advantage of it in
+42:08 the future specifically obviously we're
+42:10 not a consumer company but in the
+42:12 enterprise
+42:13 should we jump in a lightning round uh
+42:15 oh let's do it surprise you go for it
+42:19 where's the lightning come on which of
+42:21 your beloved Sequoia partners do you
+42:23 miss the
+42:24 Oh, wow.
+42:26 I got it. Ready? Yes. Emily, there you
+42:30 go. Nailed it. Nailed it. That That's
+42:34 actually That's the best answer you
+42:36 could have possibly given because I
+42:37 don't think anybody will take offense at
+42:38 that answer. Listen, I love all my
+42:41 partners. Uh, listen, I, as I said
+42:44 earlier, Sonia, I'm so grateful you gave
+42:46 the old operator a chance to come in.
+42:48 And I think some people were nervous
+42:50 about me coming in, but I dove in. I
+42:53 learned thank you to you two especially
+42:56 I'd attempt to write those damn memos
+42:58 and I'd be like all right that's enough
+42:59 let me get some help and you guys would
+43:01 just I remember the red lights coming
+43:03 back I'm like damn it I thought that was
+43:05 really good until I give it to you two.
+43:08 Um but I hope you saw that I came in
+43:10 with no ego and came in as an apprentice
+43:12 and I dove in and learned and cold
+43:14 called prospect. It was like I went back
+43:16 30 years of my career bagging the phones
+43:18 and I didn't think I was any different
+43:20 than anyone else. And hopefully you saw
+43:22 that. It was amazing. It was an
+43:23 inspiration to all of us. This is a
+43:25 thing that I don't think people
+43:26 appreciate is like people I think people
+43:28 assume that oh well Carl is such an
+43:30 amazing operator. You plop him down at a
+43:32 venture capital firm. Of course he's
+43:34 going to be successful. I don't think
+43:35 what people realize is the degree to
+43:37 which you embrace the beginner's mindset
+43:39 and like truly learn the job from
+43:41 scratch. And and that was that was it
+43:44 was hard truly inspirational everybody.
+43:46 But I had people like you like and Doug
+43:49 and Ruof and Jim and you name all the
+43:51 out every partners like everyone like I
+43:54 remember coming out of partner meetings
+43:55 and I'd say get in this conference room
+43:57 what's a DA what's a mau what's this?
+43:59 I'm like what are you guys talking about
+44:01 right and then you learn it more and
+44:03 yeah but great it was amazing that's why
+44:06 I still appreciate being around all of
+44:09 you. Yeah. All right next question. I
+44:12 think that it's safe to say you would be
+44:13 a consensus pick for most people's Mount
+44:15 Rushmore of CEOs. No. God, no. Pat, who
+44:19 is on your Mount Rushmore of CEOs? Who
+44:22 are the four CEOs that you really look
+44:23 up to and admire? Wow. Um, one would
+44:27 definitely be top of mind comes Joe
+44:29 Tucci. Just an incredible human being,
+44:32 incredible leader. People will run
+44:34 through walls for him as I would. Um, he
+44:38 was pretty special.
+44:41 Um, I don't know. I haven't thought
+44:43 about that, Pat. I don't know him well,
+44:45 but I'm super impressed in with what
+44:47 Sachi's done. He's pretty impressive
+44:50 watching come up from the technology
+44:52 side and his success. Uh, I thought um
+44:56 been pretty impressive.
+44:59 Oh jeez, I don't want to call anyone out
+45:01 because then I'll miss someone.
+45:03 Um, you could just leave the four spot
+45:06 open and say, "Hey, you know who you
+45:07 are."
+45:08 Yeah, that's a that's actually a really
+45:10 good question, Pat. I must admit. Um I I
+45:15 don't know if I have anyone top of mind,
+45:16 but I I really uh get impressed with
+45:19 people who find a way to to have
+45:21 longevity as a CEO
+45:24 and that are very pliable or adaptable
+45:27 as things change in the world, right?
+45:30 They find they don't just kind of root
+45:33 themselves into what they were or how
+45:35 they used to lead or what they used to
+45:36 think, but they think about how to
+45:39 transform themsel. Just like we talked
+45:41 about business transformation, how do
+45:43 you personally transform yourself to
+45:45 operate in whatever era you're in. I
+45:47 think people who have a a long career as
+45:49 a CEO is is something I'm always
+45:51 impressed with as well. Um I don't know.
+45:55 Then the fourth one, you know, there's
+45:56 many I'll use your line. There's so many
+45:57 of them out there, I can't even think of
+45:59 answering only one. Fair enough.
+46:02 Favorite AI app that you use in your
+46:04 personal life? What What do you do with
+46:05 your your wife and your kids? Okay. With
+46:07 AI? No, I use I use Gemini because it's
+46:11 accessible. I mean, I use Chat GPT,
+46:14 right? I definitely use them a lot. You
+46:16 know, just asking questions. Yeah, I
+46:18 probably I mean, that's what I use
+46:19 probably more than anything else. Just a
+46:21 generic, you know, I'm gonna start
+46:22 sending you some AI songs. Yeah. Yeah.
+46:25 There you go. I think my kids use some
+46:28 they send me funny stuff and they're
+46:29 like I'm like what the hell are you guys
+46:31 doing? But uh but no, I I just use more
+46:34 of the the the business uh tools around
+46:37 AI uh to try to help me become more
+46:39 productive and get more hours in the
+46:41 day. Yeah. For any founders who are
+46:43 listening who are in the process of
+46:46 growing into being CEOs, if you had to
+46:49 pick one piece of advice to give them,
+46:51 what would the one piece of advice be?
+46:54 Yeah, quite simply,
+46:57 um it would be to
+46:60 focus on the success of others,
+47:04 not focus on your success. That's very
+47:06 well put. All right. Thank you, Carl.
+47:09 Thank you, partners, for having me.
+47:10 Thank you, Carl. An honor and pleasure
+47:12 to be here with you. Um it's great to be
+47:15 inside the Sequoia building again. Thank
+47:17 you. It's great to have you back. Thank
+47:19 you. Heat. Heat.

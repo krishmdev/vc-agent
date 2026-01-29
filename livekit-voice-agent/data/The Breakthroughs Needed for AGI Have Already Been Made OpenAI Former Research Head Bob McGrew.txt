@@ -1,0 +1,465 @@
+00:00 i think what's really changed is that um now that you have LLMs you have this language interface to the robot so that
+00:08 now you can describe the tasks much more cheaply and you have really strong
+00:14 vision encoders you know that are tied into that intelligence so that gives the
+00:19 robots really a head shot at doing generic tasks so we spent years solving
+00:25 one specific problem teaching a robot to manipulate a Rubik's cube and now a
+00:31 company like let's say physical intelligence can spend months solving a huge variety of problems like laundry
+00:37 folding and cardboard and packing egg crates and that's something that they can only have because they're building
+00:43 on top of existing Frontier models and you know the entire tech and research stack that we've built over the last 10
+00:48 years [Music]
+01:06 welcome to training data today we're excited to welcome Bob Mcgru former chief research officer at OpenAI for a
+01:13 fascinating look behind the scenes of frontier AI development bob talks about the trifecta we have in
+01:18 AI pre-training post-training and reasoning and explains why we may have already discovered all the fundamental
+01:25 concepts needed for AGI you'll learn why he thinks agents will be priced at the cost of compute hence
+01:31 eroding traditional economic modes and why even proprietary data will become less valuable when infinitely patient AI
+01:38 can recreate alternatives plus Bob shares his contrarian take on
+01:44 where startup opportunities really lie and why robotics is finally having its moment after years of being too early
+01:50 enjoy the show bob thank you so much for joining us today oh it's great to be here we're at
+01:57 a really interesting time in AI development we have a beautiful new trifecta pre-training post-training
+02:02 reasoning can you help us unpack what else is left what alpha is there in each left so I think we're going to continue
+02:10 to see capabilities increase it's going to continue to feel like it's felt super fast super exciting over the last even
+02:16 five years and I think it's going to continue feeling like that um there's not a wall here but what is going to be
+02:22 different is that 2025 is going to be the year of reasoning so it makes a lot
+02:27 of sense reasoning is a new technique when you have a new technique um you know there's often an overhang of
+02:34 compute of data of algorithmic efficiency improvements that you can make and so um that's something that you
+02:43 know if you if you look at just the incredible progress that we saw from 01 preview back in September and then 6
+02:49 months later we go to 03 in April and then you know at the same time we also see diffusion of reasoning from open AAI
+02:56 who we've been working on that for years out to Google Deepseek Anthropic again just in a few months and so this is
+03:03 really the the the the right place where every lab is going to focus for the year
+03:09 and just just like as sort of a fun example of of how lowhanging the fruit is right now if you look at the most
+03:15 interesting difference between 01 preview and 03 01 preview is not able to use tools 03 can use tools as part of
+03:22 the chain of thought and this this is pretty obvious right when we were training 01 we knew that this was a
+03:29 thing that we wanted to do but it was difficult to implement it took time and so you know that took six months to to
+03:35 get you know done and released the next step on reasoning is going to be a lot less obvious than that it's going to be
+03:42 a lot harder and so you know as reasoning continues to mature we're
+03:47 going to see the overhang get eaten up and it's going to start being slower and slower to make progress you said there's
+03:52 not a wall i think there's this meme in in the Twitter sphere right now that pre-training is hitting wall can you say more about that dynamic yeah and I and I
+03:60 think that's great that that's that's a great question here because pre-training is not going away but what we're seeing
+04:06 out of pre-training is that we are at the place where it's working really well and we're hitting diminishing returns
+04:12 and so you know diminishing returns are baked in because the intelligence of a
+04:17 model is log linear in the amount of compute that you're using to train it which means that you have to have exponential increases in compute to get
+04:24 each increment in intelligence when you pre-train a model that's a giant training it takes all of your data
+04:31 center for you know a period of months and when you go to pre-train the next model you can't really do it on the same
+04:37 data center um you can rely a little bit on algorithmic efficiency to make it better but fundamentally you have to
+04:43 wait till you get a new data center and that's not a matter of like something you can do in six months the way you can
+04:48 do improvements in reasoning right now that's something that takes years so that doesn't mean pre-training is useless though because the the real
+04:56 lever for pre-training in 2025 is improving architectures so even though
+05:01 you're working on reasoning you want to improve pre-training so that you can have uh better inference time efficiency
+05:07 or so that you can have longer context or better use of the context and when you're doing that you have to start back
+05:12 from the beginning do pre-training on this new architecture and then go through the whole reasoning process
+05:17 again so that's that's the role of pre-training now it's still important it's just doing something different in
+05:22 the pipeline can you help us unpack what's left in post-raining yeah so post- training is pretty interesting
+05:28 because both pre-training and reasoning are about increasing intelligence and there's a very clear scaling law that
+05:34 you get where you put in more compute and you get out increasing intelligence and post- trainining isn't like that post training is about model personality
+05:41 and um po you know intelligence it's a sort of a thin problem right if you can get
+05:48 better at it it turns out to be very generalizable and it applies to everything so you can work on math and
+05:53 you find that it makes you better at legal reasoning but model personality it's a thick problem you actually need a
+05:58 lot of human effort to think about what makes a good personality how do I want this agent to act um and it's much more
+06:05 of a a training process like you would go through over many years of interacting with people and now it's a
+06:11 it's a very hard research problem to take that you know specification for
+06:17 what the agent is and turn it into an actual appealing personality but when you think about post training I think
+06:23 about people like uh Joan Jang at OpenAI or Amanda Ascll at Enthropic who really
+06:28 spend a lot of time crafting these model personalities and they're not research practitioners interesting right they're
+06:35 people with they're product managers or they're people with a very deep understanding of human nature and are there more legs to the stool well okay
+06:43 so I'm going to I'm going to say something potentially controversial and I think actually there aren't so I think
+06:49 if you go forward to 2030 or if you go forward to 2035 and you look back and you say what were the fundamental
+06:56 concepts that you needed in order to create you know more and more
+07:01 intelligence maybe maybe that's AGI maybe it's something different at that point um I think you're going to come up with the idea of language models with
+07:08 transformers the idea of scaling the pre-training on those language models so
+07:13 GPD1 and GPD2 basically and then the idea of reasoning and sort of woven throughout that increasing more and more
+07:20 multimodal capabilities and I think even in 2035 we're not going to see any new
+07:26 trends beyond those and and the reason I think this is if you go back to 2020 so
+07:32 GPD3 has just been trained you know imagine yourself sitting we're at open AI we haven't released this thing but we
+07:38 know something apocalle has happened and you know Daru Emodai Ilia Sutsgver Alec Radford you know we're all sitting there
+07:45 in the room looking at this thing and it was fairly obvious internally what the road map was knew that at this point
+07:52 going from GPD3 to GPD4 by increasing pre-training was absolutely critical we could see that we needed to increase
+07:59 multimodality ultimately ending in a model that could use a computer
+08:06 we were beginning to make experiments with testime uh compute and in 2021
+08:14 after the anthropic people left we really started developing the idea of reasoning at open AAI and and it's funny
+08:20 actually if you if sometimes my friends ask me after anthropic released computer use they're like did you see that coming and I was like well we were working on
+08:26 that together back before they left one of the people that did that project went to anthropic and the other one went to
+08:32 open AI and developed operator and it just took many years before you know the
+08:38 multimodality had matured enough to get to that point that was obvious to us way
+08:43 back then and so that's why I think you know we're going to see from here on out
+08:50 there's very important scaling there's very important development and refinement of these ideas that is
+08:56 extremely hard it takes a lot of brain power it's not going to be easy but I think if we look back from 2035 we're
+09:02 not going to see anything new and fundamental i I think I'm right i kind of hope I'm wrong it would be a lot more
+09:08 fun if I'm wrong but I think we'll have to see that's a hot take i'm glad we have it on the record well we'll see in
+09:14 2035 that's amazing i'm curious about reasoning like it seems to me that OpenAI really leaned big behind this
+09:21 paradigm probably before the others and and you know now everybody has reasoning models what did you see in reasoning
+09:27 that caused you to to lean so far in so quickly well I mean effectively it
+09:33 really was sort of this missing piece where with pre-training the model has an intuitive sense of how to answer the
+09:40 question um but if I ask you to multiply two five-digit numbers this is something
+09:45 that's completely within your capability but if I asked you to do it right now you wouldn't be able to do it because it
+09:52 is just natural as a human capability to be able to think about something before you answer to have a scratch pad to be
+09:58 able to work through a problem and that is something that you know the initial models even GPD3 really didn't have and
+10:04 so we began to see you know glimmers of this publicly things like you know thinking step by step and the idea of
+10:12 having a chain of thought that you could train that the model would learn itself
+10:17 how to guide a chain of thought not just be guided by cloning from publicly available data on how humans think that
+10:25 was very powerful and we knew that it would be more powerful than pre-training because in fact your thoughts are inside
+10:31 your head they are not something that the model has access to and so almost all the data that's out there is
+10:38 actually something that's just the final process but you don't get to see that chain of thought and so the model had to
+10:44 figure it out for itself that's why reasoning mattered you alluded to earlier that we probably still have to
+10:49 uncover more things in reasoning do you think we have a good sense of what those things are today are we earlier in that
+10:56 R&D stage i think at this point with reasoning if you are at the coal phase
+11:02 then you're seeing a lot of ideas and refinements of things that you can do i
+11:08 think we've gone past the point where if you're if you're on the outside if you're not at a frontier lab you're
+11:15 probably not seeing them anymore and you know this is the same situation we saw where at one point academic labs could
+11:21 make huge amounts of progress and then later you know I would begin to see academic papers and I think oh they they
+11:27 rediscovered this thing that we found a long time ago and so uh you know now the
+11:34 level of effort that's being put into this I think is actually quite intense so there there are definitely things to
+11:39 be discovered but they're not sort of simple ideas that you and I could talk about cool switching gears a little bit
+11:45 you tweeted recently about agents uh I think a very very interesting take that agents will be incredibly powerful but
+11:52 priced at the cost of compute due to competition if that's the case where do you see the opportunities in new
+11:58 startups and companies that are now building agents yeah so I mean I think the the the the thing about agents is
+12:04 people think well you know I'm going to go develop an agent and they look at how much the job is worth out there by a
+12:11 human so you know you want to develop an AI lawyer and you think lawyers get paid a lot of money so I'll be able to
+12:17 develop an AI lawyer and the lawyers I'm going to be able to charge huge amounts of money tens of thousands exactly exactly right but the reason lawyers are
+12:24 expensive is because their time is scarce because there's only so many people who have undergone that training
+12:30 but by the time you've made an AI model out of it well now there's effectively an infinite number of lawyers and so
+12:36 it's not scarce at all and maybe you with your AI lawyer startup will be able to have a lead over other people but
+12:44 it's the same frontier model underneath and you know some other startup can come
+12:49 in and compete that away and so we should expect to see it priced at some opportunity cost over the cost of
+12:56 compute interesting because you're changing you now have a lot more supply
+13:01 infinite supply of the highest capability intelligence in whatever domain you now have and on the one hand
+13:07 there's a story where this says "Oh this is bad because startups can't make money." But this is actually the future we want right we want services that
+13:15 don't require people to be extremely cheap you want everyone to have access to a lawyer um what you want to be
+13:21 expensive and scarce are things that are actually about personal relationships so you know maybe we won't be asking the
+13:27 human lawyers to write contracts because agents will be doing that for us but we'll be asking them for sort of deep
+13:32 advice on you know how legal challenges affect the you know detailed challenges
+13:40 that I'm facing in my business and I think I think that's the world we want to live in you think application companies will make any money selling
+13:46 agents though like where would you tell us to invest yes and no so just to to back up for a second people often talk
+13:52 about where does the value acrue in the stack right is it at the model layer is it at the application layer and if you
+13:59 look at the model layer it's very competitive every company has a frontier
+14:04 model some of the frontier models can do things other frontier models can't but by and large they're all really very good and if you're an enterprise you can
+14:11 swap them out very easily and beyond the frontier you know all the models that are answering the bulk of the questions
+14:17 are distilled they're very competitive and so this isn't a very good business to be in when you consider the cost of training the models so what's the point
+14:25 of training models in the first place it's to give you an option it's to give the frontier labs an option on the
+14:31 valuable places in the application layer that are coming up so you know chatbt
+14:36 that's a great business right there's a lot of competition over that i think probably it's too late to replace chatbt
+14:42 maybe not you'd have to do something very different um coding another place where all the
+14:48 frontier labs are are eager to see right now i think you can compete with the frontier labs but you want to do
+14:55 something that's different something that involves more than just you know you talking to your computer you doing
+15:02 some sort of personal productivity task on your computer something that involves other people something that involves an
+15:07 enterprise i think that's you know I think that the moes that you have for your business are going to be the same
+15:12 moes they always were it'll be network effects brand uh economies of scale and
+15:19 so you want to find an agent that allows you to have those network effects not just something that you know would be
+15:24 high priced out in the world are there particular domains that you think are maybe outside of the scope of what
+15:30 Frontier Labs want to innovate in and build in that you think are interesting and that you've been mulling about we've
+15:37 got you know scientists uh lawyers research analysts agentic
+15:43 software engineers what other domains have have you been thinking about i am so personally I'm very interested in
+15:49 robotics because I think robotics is something I I wouldn't actually say it's off the the the road map of the Frontier
+15:55 Labs right now but I think it's something that's far enough away that you know to me it feels like where AI
+16:01 was a few years ago and so I think this is a very good time to be a company like skilled or a company like physical
+16:06 intelligence or you know to start a new robotics company maybe not one that's competing with those two those two but
+16:12 something that's doing you know something different something on its own I think it's it's you know at the end stages of being a research challenge and
+16:19 you know a matter of you know months or year small digit years away from being
+16:24 commercialized so I think that's really fun why now what do you think has changed like open AI famously had a
+16:29 robotics effort for a long time what do you think has changed Well you know so uh in between Palunteer
+16:35 and OpenAI uh I actually wanted to start a robotics company myself and I got to
+16:40 the point of teaching a robot to play checkers from vision uh back in 2016 wow
+16:45 yeah it was very it could pick up the checker pieces it could pick up the checkers pieces and it could move them to a different place on the board nice
+16:52 and my conclusion from this was that it was very fun and super cool and really
+16:58 far away from any form of commercialization and when we pursued robotics at OpenAI
+17:03 we didn't pursue it for commercial m motives it was really a demonstration of the power of machine learning and some
+17:09 of the ideas we had there later played into large language models but I think what's really changed is that um now
+17:16 that you have LLMs you have this language interface to the robot so that
+17:22 now you can describe the tasks much more cheaply and you have really strong
+17:27 vision encoders you know that are tied into that intelligence so that gives the
+17:32 robots really a head shot at doing generic forms generic tasks so we spent
+17:38 years solving one specific problem teaching a robot to manipulate a Rubik's
+17:44 cube and now a company like let's say physical intelligence can spend months
+17:50 uh solving a huge variety of problems like laundry folding and cardboard and packing egg crates and that's something
+17:56 that they can only have because they're building on top of existing frontier models and you know the entire tech and
+18:02 research stack that we've built over the last 10 years yeah i'm going to go back to this point point you had on you know
+18:07 where is the value and I I I really liked your framing that the foundation models kind of have an option on which
+18:14 whichever parts of the application stack they want to own how much of the application market do you think the foundation models will win i I think I
+18:20 would look at this like in a slightly different direction which is if you're a startup you know where is it safe to
+18:26 play and where is it that you're going to get steamrololled by the Frontier Labs and so I think I think the areas
+18:32 that that I think are safe to play in um are areas where you have to understand
+18:38 something very deeply outside the model and so I think a lot of enterprise really has this flavor um so for for
+18:46 example uh you know Palunteer AIP actually really fits this where it's you know it's not a model company but it's
+18:53 something that sits outside the model yeah that interacts with the rest of the business um there's another company I'm
+18:59 an investor in and an adviser in called Distill that builds AI systems that
+19:04 allow you a business to sort of extract the context from within the business feed that to the models and then use
+19:12 that to make decisions and so you know these are things that the frontier labs
+19:17 don't want to do the frontier labs see business problems as how do I train a model to do something new y and if you
+19:23 look at all these enterprises each one of those is a very small problem it's not worth open AI or anthropics time to
+19:29 train a model specifically for each one of them if you flip the problem you think about what is the system that goes
+19:34 around the models and how do I use the models to sort of ease the context in
+19:39 and you know get the outputs out then suddenly that's one problem and I think it's a big opportunity what are the
+19:46 specific use cases and problems that distill and and palenteer's effort solve
+19:51 for those enterprise companies so a lot of times right now what you see is um
+19:56 you're trying to automate some existing piece of work and the easy cases are
+20:01 where that piece of work is in a regulated industry and you know you're working on something like healthcare maybe you're interacting with insurance
+20:08 companies and you have a workflow that is extremely scripted where the company
+20:15 cares a lot about fidelity to that workflow and that doesn't mean you can just say hey you know AI go read the
+20:21 clinical guidelines and you know make these decisions but with a process of transformation you can get it to the
+20:28 point where the AI can do that and that that's sort of the lowhanging fruit and then the the next level up though is that if imagine you're working on
+20:35 something that isn't a regulated industry or that isn't extremely scripted and you want to ask someone you
+20:41 want to you want to automate some labor intensive process well the first thing you have to do is make that legible
+20:47 and if you go to someone and you ask them to describe their job a lot of times you know their manager doesn't
+20:52 know what they do they don't even really know what they do they can give you examples but they can't say like this is
+20:58 the workflow that I follow because in practice they don't follow a single workflow right and so I think that is
+21:04 what a lot of these problems look like and you know and and for example that's actually what DIL does is to you know
+21:11 work with companies help them you know take the data they have interview the
+21:16 people with AI systematize all of that and you know have it be something that
+21:22 an AI model can actually execute that's really interesting huh so this is also somewhat related to this other question
+21:29 I wanted to ask you about proprietary data uh I was um surprised to actually
+21:34 see you tweet this but I very intrigued by this question that you posed which was "How valuable will your proprietary
+21:40 data be compared to what your competitor's infinitely smart infinitely patient agents can estimate from public
+21:46 data?" Can you unpack that for us a little bit yeah so you know a starting point for this is a few years ago there
+21:53 was a a lot of interest in training industry vertical specific models you
+21:58 know that finance companies would say we've got all of this data that no one else has and we're going to train a finance model on top of GPTs or on top
+22:05 of llama and it's going to be so much better and actually all of those were worse than the next generation of GPT
+22:11 because the power of intelligence and the ability to synthesize new information was bigger than the power of
+22:18 sort of memorizing the old information that you have so that's that's I think what this theme looked like a couple years ago but you know fast forward a
+22:25 year or two years you know now the story is I have all of this proprietary data I've accumulated it over years and in
+22:33 some sense for a lot of times you know if that data is teaching the model a skill or if it's meant to teach the model a skill that data is sort of
+22:39 embodied labor right someone worked through all these case studies um
+22:44 someone called all of these customers and found out all of this information well that embodied labor is now free AI
+22:53 can do all those things and so now there's an opportunity you can have AI call all those customers do a big survey
+22:60 find out what they know you can have AI work through all the case studies just a lot of chats with 03 right and then now
+23:08 you've replicated that proprietary data but without needing all of that work how
+23:14 do you square that with the value of realworld proprietary data say something like what cursor gets from its developer
+23:23 community constantly or Tesla autopilot over the last handful of years so I
+23:29 think those those are in the middle because they're really huge amounts of
+23:34 data um I think there are challenges sometimes to training on the data that you get from your users a lot of time
+23:40 you know one thing models can't do is if you train data and you memorize data about a specific person maybe that leaks
+23:47 out into the next person so that's a real challenge to using these kinds of proprietary data um I think there is a
+23:53 kind of real world proprietary data that's very useful which is data very specific data about very specific
+23:58 customers that they trust you to use on their behalf so to give an example my financial adviser knows a lot about me
+24:05 she knows my entire portfolio she knows the kinds of objectives that I have my risk tolerance right and she uses all of
+24:13 that information to give me a better outcome which is what is the next asset I should buy and she doesn't do that
+24:19 like the data doesn't make her a better financial adviser it doesn't teach her skills but it allows her an opportunity
+24:24 to use the skills she already has and so that's the place where I think proprietary data is really useful i want
+24:30 to switch gears a bit to coding it feels like you know software engineering has just gone through this fast takeoff
+24:37 moment and you know just judging from the pace of how quickly things are changing you know I think there's at
+24:44 least a certain subset of the market that thinks you know the super intelligence takeoff probability is a
+24:49 lot higher than it used than than folks thought it was just given how quickly coding has taken off what's your view of
+24:54 what's happened in the coding space so I think you know on the one hand coding
+25:00 has taken off very quickly on the other hand way back in January 2020 as soon as
+25:06 we saw GPD3 we launched a project to train GPD3 how to code and so you know
+25:13 when you look at an exponential curve you know the progress is actually the same the whole time but the impact of
+25:19 that progress can become very nonlinear when it passes a threshold and that's what's happened with coding in the last
+25:24 couple years um and so you know my my take on where coding will go is that
+25:30 you're going to continue to see a mix of you know coding with the user in an IDE
+25:36 you know traditional cursor style work and coding in the background as an agent you know something like Devon style work
+25:43 and that you know this is going to continue for a long time it as you know
+25:49 a year or two maybe is a long time in AI adoption that is for that's forever in AI years
+25:55 but that um you know if you think about something like vibe coding right like the the story you hear with vibe coding is you can you know if you have a PM
+26:01 right and you want to create a demonstration project I think that you're going to see PMs vibe coding really cool prototypes really cool demos
+26:09 that they can use to get user feedback but then those things are going to get thrown away and that they're going to get rebuilt with professional software
+26:15 engineers because you know if you are given a codebase that you don't
+26:20 understand this is a classic software engineering question is that a liability or is an asset right and the classic
+26:26 answer is that it's a liability like you have to maintain this thing you don't know how it works no one knows how it works that's terrible usually the answer
+26:33 is it's actually cheaper to rewrite it from scratch and so we don't yet have a
+26:39 way that we're comfortable with agents being the ones that understand the codebase right now i think it I think
+26:45 the liability has gone down but it's still net a liability you need humans to do the design to understand the codebase
+26:52 at a high level so that when something breaks when the project itself becomes too complicated for the AI to understand
+26:58 you can have a human do a problem decomposition and break it down into problems that are small enough for the
+27:04 AI what do you think hap happens after that one or two years though oh I don't know we're going to have to find out i
+27:10 loved your bifurcation though of you know on one side agentic software engineers that handle tasks autonomously
+27:16 in the background and on the other side human programmers who code in an IDE
+27:22 with the help of AI i don't think that most of the mainstream actually believe that realize that can you maybe unpack
+27:29 that for us a little bit what would the agentic software engineers who handle these tasks autonomously handle and then
+27:34 where do you see this other end of the spectrum go do they collide at some point do you think they remain separate
+27:41 things over time in the long term i I think it it is already a spectrum where
+27:47 you know the things that your agent software engineers can do you can say well fix a bug do a refactor something
+27:53 that you know requires relatively little taste um and has a clear outcome um
+27:59 another great use case I've heard is translate software from cobalt into
+28:05 Python right it's very clear when you've done this correctly but it's a lot of work it's very boring and you can't get
+28:11 smart people who want to work on this and do a good job on it on the flip side if you're doing something where it
+28:17 requires a lot of taste um and taste in how it's implemented uh where there will
+28:23 be nonobvious consequences to how the implementation works maybe there's non-obvious performance consequences
+28:30 maybe there's non-obvious consequences in um how the user interface is going to evolve and therefore how that needs to
+28:36 change the abstractions deeper in the system those are places where right now we have no alternative but to have
+28:43 humans do that work and I I I do think this is very interesting is there a way you know is there a sufficiently
+28:49 detailed spec or a sufficiently detailed architecture diagram that the agents can
+28:55 be writing for us that means that when you take work from one agent and you put
+29:01 it into another agent which could just be the same agent the next day with a different context window that it's able
+29:06 to actually make progress on the codebase so these are these are the kinds of questions I want to see the answers to over the next couple years
+29:11 love it it's exactly what we're working on at Reflection perfect why is it called member of the technical staff
+29:17 that's a great Yeah that's a great question so um for a long time this was
+29:22 true even before I joined OpenAI by the way i believe this was Greg Brockman's uh idea but we really wanted there not
+29:30 to be a distinction between engineers and researchers if you look at a classic
+29:36 lab a place like uh Google brain for example where a lot of the people who started OpenAI came from at the time and
+29:43 maybe still today there was a big differentiation between whether you had a PhD and you were a researcher or
+29:49 whether you were a software engineer and you had you did data you did implementation and it was bad because
+29:57 the researchers didn't feel like they could get their hands dirty writing data code or writing implementation code and
+30:05 you can't understand the systems aspects of your research unless you're writing the code if you think about what makes
+30:11 Alec Radford the genius researcher that he is it's each time he does something it's that he looked very closely at the
+30:18 data and he thought what are the possibilities of this data he wrote his own data scraping code from the very
+30:23 beginning and so if you want to have someone who really understands the full
+30:29 stack I think Paul Graham has this great analogy to painting where the resistance of the medium dictates the kind of
+30:36 painting that you're able to make research is very much like that it's very much an artistic endeavor and researchers themselves are artists and
+30:43 should act like artists and so by not having that distinction just by calling everyone member of the technical staff
+30:48 we were able to have a much more level playing field and later that really came in handy when we had people who didn't
+30:54 have PhDs many of the great researchers at OpenAI you know uh Adicha Ramsh Alec Radford um you know many of these people
+31:01 don't have PhDs and in fact learned their trade by working at OpenAI that's
+31:07 a great answer it's a random throwaway question i love that answer so at AI
+31:12 sent recently Sam Alman left us with some interesting fodder uh which was how different generations use chatbt uh he
+31:20 said if you're old uh you tend to use it as a Google replacement if you're in your 20s and 30s you use chat GPT as a
+31:27 life coach or a life adviser and if you're in high school or younger then
+31:32 you're using it as your operating system how do you see people use chat GPT around you how do you have your kids use
+31:38 chat GPT yeah so look let think about that operating system comment for a second at the very highest level the
+31:45 total addressable market for chat GBT is every user intent that requires thought
+31:50 or action that you don't want to do yourself anything that you wish got done
+31:56 but you didn't have to do is something that you might want to use AI for
+32:01 and so there's I mean if you think about that there's a version of that that feels very scary right it's like people
+32:07 don't do anything for themselves anymore there's a desking no one learns how to do hard things we're all just zombies
+32:13 watching our VR headsets you know watching movies but I don't think that's actually what people want out of AI and
+32:20 I don't mean this this isn't the world we want to live in i think that's true but that's not what I want out of my relationship with AI um and that's not
+32:28 what I see people doing now and partly this is because the technology for chat GBT as an operating system isn't
+32:34 actually there yet pretty famously you cannot use chat GBT to control your iPhone but um it's also not what people
+32:41 want and so I see this with my son he's 8 years old he's been using Chad GBT
+32:47 from pretty young age i used to ask him to test the models before they were publicly released uh and he always gave
+32:54 pretty good feedback actually and he spends a lot of time with Chad GBT he knows it is not his friend it is not his
+33:01 companion it is an expert someone he can talk to to explain things to him and if
+33:07 you were eight years old having someone who can explain things to you correctly in great detail and with a lot of
+33:13 patience is a very valuable thing and so he has he has like curiosity he has
+33:19 enthusiasms and one day he decided he wanted to be a coin collector and so he collected all the coins in the house
+33:25 sorted through all the ones that were from before 1970 went to Chad TBT started typing and just asked took
+33:32 pictures and just asked questions about every single one of the coins from before 1970 and he you know what's this
+33:38 worth well what would make this worth more you know how can I test what what is a mint mark you know all these
+33:44 different questions and if you think about this this is something you know when I was a kid I I probably could have
+33:50 learned this i maybe there were books there were magazines maybe I could have looked at an encyclopedia but all of
+33:56 this is just so accessible now and it's accessible to an eight-year-old
+34:01 and so um when we went on vacation we took him to a coin shop and the staff at
+34:09 the coin shop were just shocked at how much this 8-year-old knew and the the very detailed quas was "Show me all your
+34:15 coins." No I don't want that one i want one that has a San Francisco mintmark i want one from this year this is the year
+34:21 that they were all made out of silver and the the coin shop owner was just very surprised he doesn't deal with kids
+34:26 that have that level of detail at least not until now and so this is I think
+34:33 actually what we want out of AI is that AI should make you an expert at the things you want to do and it should
+34:39 remove the burden of doing the things that the boring things that you don't want to have to do yeah on the topic of
+34:46 the next generation how else are you preparing that next generation for all the capabilities to come in AI i think
+34:54 this is a super super tough question the uh if you think about any particular
+34:59 field you know should you teach your son how to code right like I think about my 8-year-old you know um you know my
+35:05 daughter is writing essays my eldest son is really excited about math all of those things are going to be automated
+35:12 and so it's clearly not some specific skill that you have to teach them i think there's really two things that I
+35:19 want my kids to understand the first is the process of learning and figuring things out so that's the value in the
+35:25 math and the essay writing and the coding it's it's sort of this this process of being able to do of learning
+35:30 to learn yes the second thing is the you know having ideas in projects and the
+35:38 belief that you can do it and the ability to use whatever tools are at your disposal to figure it out so this
+35:43 is this is agency right and so that's where I think that's the right way to
+35:50 have kids use AI right now and there's there's always a trade-off i'm I'm often very torn between so I my 8-year-old
+35:57 uses uh Chat GPD for a lot of things but I don't let him use it to code because he's trying to learn to code and if he
+36:03 sees that he doesn't have to use it to code then it's going to be very hard for him to do that work to get all the way
+36:09 there i don't let my other kids use it to do their school assignments of course why would you do that um but
+36:16 I want them to have those basics and then once they have the basics once they understand things one level down to then
+36:23 be able to use it to extend their capabilities and you know here's another fun story uh about my 8-year-old last
+36:31 week he decided he wanted to build a project where uh the grandparents who
+36:36 are coming to visit could press a button and he could go get it would ring a buzzer in a different room and he could go get breakfast in bed and he uh asked
+36:45 Chad GBT for help he I mean he asked Chad GBD for help it said okay you need jumper wires you need you know two
+36:52 Arduino boards and you know just a sort of list of things and he asked a lot of questions you know how is this going to
+36:58 work he asked it to give us a list of Amazon links for us to buy wow i reviewed this made sure he wouldn't get
+37:05 electrocuted bought the items on Amazon for him and now we're putting it
+37:11 together and my approach in this is I'm going to let him put it together everything he can i'm going to install
+37:17 the software because it's you know his computer's locked down he can't install software and this is going to be his
+37:23 project that's amazing who could have none of us could have done that at at 8 years old and he has learned so much in
+37:29 doing this it's not just that he outsourced it all to chatbt now he understands what Arduino is he understands what the circuit boards you
+37:35 know what is going what happens when I hit this pin why is this pin named you know gRP1 you know these are these are
+37:42 all I mean I don't know the answers to these things either so it's really you know it's just this huge help that
+37:49 chatbt is able to do all these things for him that's amazing sparking curiosity and then agency i love it and
+37:54 it's also just the the time to impact i mean that just feeds more and more curiosity and agency over time yeah
+38:01 that's right i mean if if if you think back you know well you want to do this project well here's a book on Arduino
+38:07 and you know you're going to have to write the code yourself and you know
+38:13 what circuit boards am I supposed to do i don't even know how to do that you know probably this project just dies on
+38:19 the vine and you know there's a there's a truism in education theory that when someone asks a question that's the time
+38:26 when they're ready to learn the thing that they're asking the question about and so you want to you know it's it's
+38:32 worth going off script to answer someone's question because you're you're doing a a huge service to them in
+38:38 teaching them that thing right then and that's you know now you have that you have the ability to get your questions
+38:43 answered on demand at the right time for you when you are mentally ready to do it not when maybe you're tired and you're
+38:50 in school and you're thinking about all sorts of other things just right then when you actually want to know the
+38:55 answer and I think that's hugely powerful so how else are you using AI in your daily life chatbt
+39:02 research I'm sure how AI for scheduling maybe autopilot
+39:07 uh what else so yeah so I am uh pretty much exclusively uh use 03 at this point
+39:14 once you use a good model I think it's very hard to go back i think I could probably use Gemini 2.5 i hear it's really good um but of course as we've
+39:20 talked about if it's good enough why switch and um I use deep research about
+39:26 five times a week and you know it's hugely helpful and I I think even one
+39:31 time that it saves you a few hours of doing work sort of repays the cost absolutely makes sense um what do you
+39:38 use deep research for it's a mix um one answer is I'm batting
+39:46 around something with my kids and it's a question that no one has ever asked before probably and I want to know the
+39:52 answer for example um what happens when you compress wood you know it starts off
+39:57 it it you know it's elastic compression and then it starts deforming and then you go a little further and it becomes
+40:02 diamond and then you go a little further from that and it becomes a black hole actually there's like a dozen steps and
+40:08 so that's a really fun topic to dive into and just you know this is the kind of thing that would have been an XKCD
+40:14 comic 15 years ago and would have taken him weeks to figure out and now you can get an answer just in a few seconds um
+40:21 also I use it when I'm thinking about a new domain or a new uh you know startup
+40:26 opportunity you know well if I'm interested if I was interested in robotics tell me everything there is to
+40:32 know about a particular company or about a particular market um and that's our
+40:39 daily life yeah yeah yeah yeah any other new products uh well like you mentioned
+40:44 I use an AI assistant for scheduling which is great i mean I'm I'm solo right
+40:49 now you know I could hire an assistant but it's just actually more fun to do things myself but calendaring it's
+40:56 really boring and it's just very nice and very pleasant to have be able to CC you know an AI agent and have it do the
+41:02 calendaring for me i'd love to hear a little bit about managing you know OpenAI the research or it's such a you
+41:09 know collection of insanely smart individuals creative I'm sure like what and you know the feedback
+41:16 we have on you is exceptional in terms of you know what a fair and what a great man manager and leader you've been for
+41:21 the organization i guess what have been some of your lessons uh leaving an organization like that so this this
+41:30 sounds sort of boring but like the core thing that you have to do as a manager is you have to really care about the
+41:37 people you're managing and this this maybe isn't relevant a lot of the time a lot of the time as a manager your
+41:43 day-to-day job you know you're coordinating you're you know helping people understand things and you know
+41:49 loyalty doesn't really matter that much but there comes a time as a manager when
+41:55 you have to ask someone to do something hard early on in your career this is when you have to ask someone to come in
+42:00 and work on Sunday when they'd rather be playing basketball but later in their career it's you know working with
+42:07 someone and you have to ask them to give up a project they really care about and give it to someone else or share credit
+42:14 for a research breakthrough that they know they could get to by themselves but that they that you know a team of people
+42:21 you know not just this one talented person but two very talented people or three very talented people working together could get done even faster and
+42:30 one thing I learned from working with Alex Karp at Palunteer is that
+42:35 very talented people have superpowers but they also have debilitating weaknesses
+42:41 and for for people who are at the very edge of these capabilities they often don't
+42:47 even understand what their weaknesses are but it's it's it's extremely apparent to everyone around them and you
+42:55 know for me as a manager it's something that I could see very easily and at this
+43:00 level of capability when people fail it's almost always a form of self-destruction wow that there's a
+43:07 choice that they could have made and you know and I don't I don't mean little failures i don't mean like oh I
+43:13 had a bad day i mean you know when someone's makes a career altering choice
+43:18 in a bad way it's almost always a matter of self-destruction because
+43:24 they had to do something that was very difficult for them they had to confront something that was extremely scary for
+43:30 them to do that to everyone else is kind of obviously the right answer it's
+43:35 obviously the right thing for the company but it's emotionally extremely hard for them and if you going back to
+43:42 being a manager if you as a manager if people know that you're in it for yourself when you tell them to do something they won't trust you but if
+43:49 they know that you are doing what's best for them then when you tell them to do that thing that is super hard and
+43:55 extremely scary for them sometimes you can help them across the
+44:01 chasm and you can solve the problem and prevent them from doing something really
+44:06 stupid and end up with something that works out really well and I hold this
+44:12 bar even for firing people for me it is
+44:17 always when I am talking to someone I have to be talking to them giving them
+44:22 advice helping them do the thing that is best for them and for the company even if you're firing someone if they're not
+44:30 going to succeed in this role and you have I have invested enough time to make sure that they won't succeed in this
+44:35 role then it is in their own best interests for me to tell them that
+44:40 they're not succeeding and give them the opportunity to find somewhere else loyalty in the end is the thing that I
+44:47 think unlocks all of the other things that you want in management i really really love that um there was a nuance
+44:54 there that you said in in the middle around you know working with a ton of high performing individuals
+44:60 um who are really excited about a particular research direction that they want to break through they know they can
+45:06 get there potentially by themselves potentially with one or two others um they all have a good dose of confidence
+45:13 maybe sometimes ego how do you actually get them or convince them to embrace that you know uh um effort of working
+45:21 together to get there yeah it's very hard and I think this is actually one of the things that's very different about a
+45:26 research lab from an engineering culture because in an engineering culture it's sort of an assumption that we're all working together we're all building one
+45:32 product um but research often comes out of academia which has this very negative
+45:37 culture of you know it's a PI you know it's his team who's going to be the first author who's going to be the last
+45:44 author none of the other people in the middle matter um and we struggled with this a lot and
+45:50 I don't think there is any one answer um one thing we tried which which worked well for a time uh we published some
+45:56 papers where we actually had Open AI be the first author so that there wouldn't be the fight over who's the first author
+46:04 that was you know one technique it didn't you know we couldn't always do that it didn't always make sense um but
+46:11 you know in the end the the key is really when you work with people you understand there's something they want
+46:17 and you have to find a way to give them the thing they want and let them do the thing they want to
+46:23 do the the art that they're trying to create while also letting all the other people
+46:30 do that and having it all add up to one big hole and just just spend time over and over again making sure you're
+46:36 solving that problem security I know is an interesting topic to you um in an increasingly agentic world what kinds of
+46:42 security issues do you think we should be aware of and and where do you see potential opportunities when when I
+46:49 think about how AI impacts security for me the first order is the much easier
+46:55 ability to do offensive work than you could do previously and so the number of
+47:02 threats have gone up the time to execute on a threat has gone up and so that then
+47:08 pushes the defense to be much more agentic so um there's a company I'm an investor in uh it's called Outtake i met
+47:15 the team they're a group of ex-punter folks and that we also ended up using them very successfully at OpenAI and
+47:22 what they've done is that they have made uh an agentic stack for doing cyber
+47:28 security that uses very little human input and I think this is you know right
+47:34 now we're at a place where the models can actually do all of these things you know if there's something that a human could do that's sort of these one of
+47:41 these bulk operations you know if if you can't make the model do it that's your fault it's not the model's fault but the
+47:47 barrier then is that businesses and organizations aren't set up to do this they have to go change their business
+47:53 processes in order to make this happen and so I think that's an opportunity for startups where similar you know as as
+47:60 big as you know the shift from web to mobile is just disrupting the existing businesses because it may be faster for
+48:06 you to replicate their technology and their distribution than for them to be able to change the way they operate to
+48:13 get rid of or reduce the number of humans they need awesome bob thank you so much for joining us pleasure to have
+48:20 you here [Music]
+48:34 [Music]

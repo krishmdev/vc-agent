@@ -1,0 +1,451 @@
+00:00 Today if you think about the business they feel like m multiple personality to the customer. So in the sales phase they
+00:07 core you very very uh aggressively and once you sign up and become a customer
+00:14 you dealing with entirely different personality right and you're dealing with service departments feel like these
+00:20 are really disconnected right and I do feel like AI agents can make this entire
+00:25 experience a continuous uh ongoing conversation throughout the entire customer journey and LM is a perfect
+00:32 tool to do that and that will really bring the level of personalization the level of customer experience that
+00:38 wasn't possible before. [Music]
+00:55 Hi and welcome to training data. Today we're joined by Cresta CEO Ping Woo and Sequoia's Doug Leone who sits on the
+01:01 CREA board. Today's episode dives into the gnarly world of the contact center, a giant legacy industry filled with
+01:08 slowmoving incumbents that is responsible for driving the vast majority of company customer conversations. Ping understands this
+01:15 world deeply, having first built Google's contact center business before becoming product leader and then CEO of
+01:21 Cresta. Ping joins us to talk about the different waves of technology that have hit the call center, how he sees the
+01:27 future of customer experience evolving with LLMs towards an abundance future, and why his playbook is to meet
+01:33 customers where they are, blending human agent assist with autonomous digital agents. Doug Leone also shares his
+01:40 perspectives from several decades of investing in company building and his hot takes on whether we're in an AI
+01:45 bubble. He also shares where he believes the value will occur in AI. Hint, it's in the application layer in this gnarly
+01:52 last mile. Enjoy the show. Ping, welcome to the show and thank you
+01:58 for bringing me bringing along our special guest ugly as well on your board. My pleasure. Thank you.
+02:03 Thank you both for joining. Uh Ping, I want to start by asking a big part of the AI thesis is that AI is going to
+02:10 replace labor globally and that the TAM is in the tens of trillions of dollars. Obviously the contact center the call
+02:16 center is a big pool of labor that you know is just begging to be automated. If you had to guess how much of call center
+02:23 labor spend will actually be automated fully by AI. Yeah. So we internally we have spent a lot of time uh debating about this. Um
+02:31 the reality is I don't think anyone knows for sure and if you ask uh depends on really what they're selling and um
+02:38 you ask different people and they give you different answers and some people will say that 100% human will be gone in
+02:43 contact center and some garnerers um research actually shows that you none of
+02:49 the fortune 500 over the next five years will have contact center uh gone entirely humanless. So you know it's
+02:56 answer probably fall into somewhere um in in the middle and um in fact we got
+03:02 this asked this question uh two years ago when GPD4 first came out and a lot of people will say that um maybe in two
+03:09 or three years there will no longer be humans in the contact center. Um so at that time uh our belief is that you
+03:16 probably the transformation especially for existing for for Fortune 500 companies will probably take way longer than a lot of people think.
+03:23 Doug, what do you think? What's your bet at the limit? It's 100%.
+03:30 But I'm mindful that there are still IBM mainframes and cobalt being used in
+03:37 America in a banking system. So to me is not really what percent to me is the
+03:43 speed of which this is going to happen. Is it going to happen within 10 20 25 years 30 years? Because whether the
+03:49 answer is 30% or 60%, if it happens in 50 years, that means one thing for
+03:55 companies like Crest. If it happens in 3 years, it means something else. So the N number is not the relevant metric for me
+04:02 to me is the speed of adoption. Great distinction. Ping, you've been working in the contact
+04:09 center AI space for well over a decade. Prior to becoming CEO at Cresta, you ran
+04:15 the equivalent function over at Google. And so maybe for those of us in the audience that don't know the contact
+04:21 center market, can you tell us a little bit about what it is, how big it is, and how technology has served it so far?
+04:27 Yeah. Um, when first talk about contact center, a lot of people will naturally think about call center. A lot of humans
+04:33 sitting there uh listening, answering calls, right? Uh contact center really is a broader uh category that including
+04:40 the omi channel interactions from emails to digital chats and you know on website and in apps and also including calls of
+04:48 course and the overall market is uh quite big and there are uh historically
+04:54 um um there are around 17 to 20 million uh agents human agents actually work in
+04:60 the contact center. for the software market is probably um in the tens of billions and uh for AI market according
+05:08 to some research it will be in the high tens of billions of dollars and is the use case mostly you know
+05:15 customers calling in to complain customer support is that what these these contact centers are mostly used for
+05:20 oh so yeah so customer call in there are all kind of reason they call in right complaints are fixing the issue but also
+05:27 I think a lot of people may not realize that there are probably a quarter of the contact center, 25% is actually revenue
+05:33 generating. They're including um selling stuff or collecting money or uh
+05:39 retaining customers and that kind of conversations. So, it's not 100% customer support.
+05:45 So, I have a question for you that I never asked you. If you look at the contact center, and I'm old enough to
+05:50 date myself. You go back 30 years, you heard names AA
+05:56 and god knows whoever else that's barely living in and out of bankruptcy. You go
+06:01 back 15 years, you see genesis of the world. What caused a bright young
+06:06 engineer or Ping Woo 15 years ago to be attracted with this market and one could
+06:13 have said it's always been a stodgy market. It's always been of low
+06:18 interest. it always created these slow growing companies. What is it that interested you? Now, of course, now we
+06:25 understand it's a vibrant market with lots of opportunity. But turning the clock back 10 years ago, what attracted
+06:30 you to this market? Um, first of all, 15 years ago, I didn't even realize that's a long history of
+06:36 slow growth of the market. Otherwise, maybe I will think differently. And second um at that time I just um do you
+06:43 remember there's a period of time there's a lot of excitement the conversation AI technology and especially around u consumerf facing
+06:51 speakers and um at that time um people think that that would disrupt Google that would become the entry point for
+06:57 all the consumer uh interactions and I happen to really believe that contact
+07:02 center will probably be the most exciting opportunity for conversation AI to transform and it's because it has all
+07:08 the issues issues that traditionally people get excited about VC get excited about it's a massive market a lot of
+07:15 humans working there and it's in the middle between businesses and customers right and it's all interaction going
+07:22 through and also no one's happy in contact center so if you you know by no one I mean there are three different
+07:27 parties there are customers that call in that most of us may not be too happy because the wait time is very long and
+07:34 the agents by the way I think a lot of people may not realize the agent the workforce attrition in contact is
+07:40 massive is on average is 35 to 40% in some cases during covid some company
+07:45 have more than 100% turnover that means I just get yelled at all day long right so it's very high stress and it's
+07:51 it's not a very fun job and and also the business um also feel like there are
+07:56 always the opportunity to do more with less it seems no one is happy and it's a massive market but I think you know
+08:02 that's the great opportunity for AI um and technology to bring abundance and to and then abundance is the answer in in
+08:09 my opinion to solve all these issues. So you you were working on this at Google 10 years ago. I I imagine this
+08:15 was the small language model wave and the the BERT days. Uh was the technology ready at that point and maybe walk us
+08:21 through the different waves of technology that have hit the contact center. Yeah, so that's a great question. Even long before that there's technology
+08:28 called IVR and that you press one, two, three for different routes and through
+08:34 uh for different call reasons. And then since then there are innovation around the input right you can instead of
+08:40 pressing you can directly speak natural language and that's with the advance of
+08:45 natural language uh processing and um TTS and text to speech generation that
+08:51 experience getting better and better for um when we first start in context on AI Google um it's even before BERT actually
+08:58 if it's before transformers uh it's mainly using AI or at that time using AI to do classification intent
+09:04 classification and entity extraction using pre transformer models and and then but the
+09:10 conversation experience is still manually crafted right so um so that's the last generation of technology and
+09:17 then after that of course the transformer came along but initially it's also for classification purposes
+09:22 still the experience is manually crafted but then the LMS entirely changed the whole thing not only the conversation
+09:28 experience on automation side but also just you can understand conversation in a way that never was able before
+09:35 and what does that mean practically in terms of the roll out of this technology inside contact centers? Did it mean that
+09:41 you know customers were just extremely unhappy when it was IVR and then they were slightly less unhappy when you
+09:46 started to have kind of more transformers in the flow and now now customers are very happy to be talking
+09:51 to an LLM based agent or how is the evolution of technology uh change the customer experience?
+09:57 Yeah. Um I think the way we would like to think about it is uh really um from the first principle right and you know
+10:03 the there are a lot of the conversations um shouldn't even happen in in our view
+10:08 and um you know the fact that it happens because customers not happy um I think
+10:13 the solution for that is to use the AI to really understand to bring 100% visibility into all interaction in the
+10:20 contact center today and using AI to analyze it and then to do deep research and then find out the root cause and And
+10:27 then that usually reflects some process broken um or website updates that freak
+10:32 out people or you know firmware update that bring down network and all that kind of stuff. So you need to fix that
+10:37 first right and first you know avoid interaction if it's not necessary right
+10:43 and you know beyond that I do feel like you know their AI can automat automate a
+10:48 lot of interactions that no one want to have like you know neither the business nor the customer want to have those
+10:53 interactions those are what we call low emotion value interactions that should be self self-s served and then on top of
+11:00 that I do think that contact center AI will enable new interactions um that ones that you cannot afford to do that
+11:06 today. Um, so all these are improving customer experience. Do you think end customers will ever
+11:12 prefer talking to an AI agent over a human agent? And have we reached that point yet?
+11:17 So look, I mean that's a really interesting question. So I've been thinking about this, you know, on my way here. So I never met anyone that have
+11:26 this experience of talking to a customer support agent on the phone and go, I'm
+11:31 really frustrated. Send me your AI, please. And we never had that experience. and and in fact that I would
+11:38 encourage people to look up some of the um you know some of the companies and
+11:43 search for their customer service right the first question that people ask on Google and Google will surface what is
+11:49 the most popular question the first question is always how do I talk to a live per person for this type of um you
+11:56 know customer service so so I think that that time probably hasn't arrived fully yet it depends on what kind of
+12:02 interactions again I I'm maybe too techno optimistic or AGI
+12:08 pilled here, but I've I feel like I've seen some recordings now where, you know, a the AI can be emotionally
+12:13 intelligent. It has infinite patience, right? It's not trying to hit some metric on time to resolution. Uh and so,
+12:20 for example, if somebody calls in and they're having a really bad day, for example, your AI can be a lot more
+12:25 patient and empathetic uh than a human agent even could. And so, I'm I'm I'm sort of optimistic on the side of the
+12:32 the bots here. Well, I agree. There's the human component of patience or the
+12:37 subtleties of humanity, but there's also the training of the agent like versus
+12:42 the training of the AI. Three years from now, who's going to be much more much
+12:47 more equipped to answer a question? It's clear that AI is the answer. I kind of think of gold like versus Bitcoin.
+12:54 Somehow the analogy came to my mind as you said that it is clear that Bitcoin
+12:59 is going to win. Uh it is clear that Bitcoin is going to be worth more than gold. It is clear not investment advice.
+13:05 Not investment advice, but it is clear that that the agents by definition and a
+13:10 lot of which don't even reside in America. The there's a language component. Uh you know, I'm not saying
+13:17 anything bad about the agents, but there's a language component, there's a training component, there's the human component, and I think in all those
+13:24 dimensions, I think AI is going to win in the next two to three years. Hm. Bitcoin as digital gold is a really
+13:30 interesting analogy to to the agent the digital agent versus the human agent question.
+13:35 Yeah. Um from our perspective we really want to meet customer where they are today. So uh unlike self-driving cars uh
+13:42 you really have to automate the entire thing 100% of time otherwise you do not have the economic impact. For contact
+13:48 center we we find is very unique is that the work is very divisible. So first the conversation is um you know those are
+13:55 every conversation is independent unit and you can automate x% of conversation that's ready to be automated and for uh
+14:03 for a lot of reason we can get into details and then for the remaining ones um you can still use AI to assist humans
+14:11 and to you know take away the initial maybe 10% of the interactions like authentication or intake or lead
+14:18 qualification and then take away all the after call work and also have AI agents to help humans in the middle of the
+14:23 conversation to do knowledge retrieval to do data entries all that stuff. So that's not um you know mutually
+14:29 exclusive and as long as we feel like customer not ready to say that we just need to turn on our claw center today
+14:36 and then go full AI we feel like there's a long you know depending again come what kind of business and what kind of
+14:43 um you know technical um you know the IT infrastructure um so I think the journey will probably take different time frame
+14:48 but our goal is really meet the customer where they are. Yeah. So cross is in an interesting position because you both have the agent
+14:54 assist product that helps make existing contact center agents more productive. Uh and then you have the actual AI agent
+15:00 product that is directly customerf facing you know autonomous autonomous agent. Um where do you think most
+15:06 customers are today? Are they ready to go full force just you know put the agent on my website let it go crazy. Are
+15:12 they mo are they you know experimenting with that? Where is the customer today? It depends on the customer. If you and I
+15:18 started ebike store today on Shopify and we can automate 100%. I'm sure because
+15:23 it really depends on how complex is our product. Um it can be order or magnitude
+15:29 difference between like a simple product like ebike or versus a real world touching many different countries and
+15:35 then millions of tens of millions of people. So it's very different and then that impact the the complexity of the
+15:41 conversation handled by the contact center. And then the other part is the IT infrastructure. A lot of people may
+15:47 actually realize that um before you actually enter the contact center you will feel like oh this should be easily
+15:54 very easy to automate but the reality is um a lot of those um things that human do in the contact center today are is
+16:01 optimized for humans. So those system record or the system action ticketing system these has been around for
+16:08 decades. A lot of them just simply do not have APIs right. So the only thing that to make changes is through a
+16:14 graphic user interface that optimize for humans and without a real-time API just you know again these are not AI problems
+16:21 and uh we believe that you know these are the opportunity that we work with our customer to develop those real-time
+16:27 APIs and then so that's why we feel like those transformation depends on the nature of the business would take
+16:32 different time frame. Yeah, it's interesting you made the self-driving car analogy earlier because I was thinking about your business earlier
+16:38 this morning and if you think about Tesla, part of the beauty of them getting to full autonomy is that they
+16:44 have so much data coming in from their cars even when they're on L2, right? uh for you guys because you are the call
+16:50 center assist you're the agent assist you actually get full data of the conversation whether it's you know voice
+16:56 whether it's uh whether it's conversational based digitally and you that can become a training base for
+17:02 customers to automate more and more of their uh conversations over to the agent over time yes 100% and in fact when we first my
+17:10 first um the journey when I first started uh seven eight years ago it's really automation only I really believe
+17:16 it should be automation Fast forward we run into all kind of real deployments and then we really
+17:23 actually broaden my own horizon. Then I believe that in order to really do the best possible automation it's
+17:30 counterintuitively you need to know what actually happened in the contact center what are humans actually doing. So not
+17:36 only just the conversations but also what they're seeing on the screen that's super important um to actually build the
+17:44 best automation possible. One of them is the sex appeal. It's the sizzle. It's
+17:49 what everybody wants to talk about which you have to have otherwise you're a tired old company. The other is the
+17:56 realities of our business are run and what they need. And so if you are one of these new age companies, you're quickly
+18:02 going to hit a wall because you don't have the data and you don't have the systems that you really need to run a
+18:08 contact center. But if you're have the former don't have the ladder, then you're labeled as a as an online
+18:13 company. So here in our case, we understood this a while back and we make sure we invested. We not only we double
+18:21 down on the operational system for agent assist, but we also developed the sex
+18:26 appeal product because that that's what a lot of customers want to talk about day one. Yeah. And another aspect of it is really
+18:32 just tied to the uh the point I make earlier um is that a lot of those calls shouldn't really happen. People call in,
+18:39 there's no way to make them happy. It's because they're not happy to begin with, right? And you know if your product
+18:45 works, if your process works, they shouldn't really happen. So if look, if this room we feel really really cold,
+18:51 maybe the answer is not a heater. Maybe maybe there's a broken window or there is a patio door wide open. The solution
+18:58 is turn on the light and see uh the root cause and then fix that first before you turn on the heater. Yeah,
+19:04 love that. uh customer support is one of those you know canonical examples of where people think large language models
+19:10 will be most transformative and you know it's almost a consensus category for venture startups at this point. Uh how
+19:17 do you compete? What is it like to to compete when everyone has access to the same LLMs and and is you know latching
+19:23 on to the same big picture vision? Yes. So um again um in order to really
+19:28 deliver value in the context center transformation it's not just a models it's just not a model. model is bunch of
+19:34 weights and the data and you know itself is not going to provide a value right and now the question is how much you
+19:40 need to build on top of it to deliver that value if that layer is very very thin then I would argue probably um it's
+19:47 you don't have much um opportunity to cue value right and then also if that layer will be gone when the model gets
+19:55 better there's no way you have a durable business but that is not the case for
+19:60 contact centers and um in where major Majority of the agencies are still on
+20:05 premise and where a lot of there are so many look on average agents in the fortune 500 we look at some surveys they
+20:13 interact with eight to 10 different systems remember these companies also acquire other companies over years over
+20:18 decades those backend system may not even talk to each other you know depends on where you book the flights or depends
+20:24 on where you book the hotel they may need to log into different systems right so that's the reality we're talking
+20:30 about um so that's why you We believe is our strategy is meeting customer where
+20:36 they are and and and then drive value on day one. Vertical integration from the stake to
+20:41 the sizzle. That's how you win. Um what do you think is overhyped and what's underhyped in the kind of contact center
+20:48 AI space right now? Yeah. For overhyped I think is the mindset of scarcity. Um is the job
+20:57 displacement I think in the short term is probably a little overhyped. And what's underhyped is the mindset of
+21:04 abundance. Um you think about new experience that um AI can enable. You
+21:10 know for example can you talk to a website? Can you directly talk to the app and can you turn a synchronous
+21:16 interaction into a asynchronous interaction? Can you talk to the um airline app and say that I want you to
+21:22 do this XYZ and then call me back when you get it done. Right? And then can you uh have that super um um you know multi-
+21:31 language AI agent to have those conversations or there are so many interaction that today you just cannot
+21:37 happen uh just simply because you do not have the staff right so and then the other thing actually I feel is really
+21:44 underhyped is people really seems obsessed with one side of the
+21:49 conversation which is the workforce and then people ask you know how many of the workforce were replaced by AI
+21:56 But no one ever asked the question is how many inbound calls will be replaced by AI. So my belief is that there will
+22:04 be uh over the next few years you will probably see a race to getting the AI
+22:09 assistant on the consumer aggregators and um and then a lot of things that
+22:15 consumer probably will dedicate to the AI assistant including making the phone calls. So I think that's maybe an
+22:21 interesting thing to pay attention to. That's really cool. Okay. So you could talk to the United Airlines app and have
+22:26 it, you know, asynchronously go figure something out for you and call you back. Is that something that you're working on?
+22:31 Um, we're no comment on that. Okay, very cool. Okay, I want to transition to talk a little bit about
+22:36 company building. Doug, you've been around the block for a while. Seen seen the movie a few times.
+22:42 Means I'm old. That's what you just said. I I was trying to say it nicely. Yes.
+22:48 Um, how is building a company right now? You're seeing this live with Ping. How's building a company in AI different from
+22:54 from your you know your last few decades of building legendary companies? Uh it's not very different. Uh what I
+23:02 mean by that is you need a terrific founder and we'll talk about the
+23:08 crustless situation a little later hopefully. Um you need to plug in
+23:15 worldclass engineers at the very start. Unless you start with A+es you'll never move up. You'll only be moving down. You
+23:22 have to plug in salespeople that are not administrators that are fresh. Maybe
+23:29 they were regional sales manager early on because one, you can't get the world-class people and two, if you get
+23:35 them, they're too big for the company. You have to figure out what the ramp is
+23:40 that you're willing to fund. You have to figure out what the role of marketing is. You have to solve this thing that I
+23:46 call the merchandising cycle that's been getting some play online, which is from product marketing to BDRs to revenue.
+23:55 Wherever that's broken, it looks like a bad sales guy, a bad BP of sales, but you have to get that right. And so I
+24:01 think the business fundamentals are very are very similar.
+24:06 I do think one of the characteristics of the companies that are doing the best in AI right now is they just move with extreme speed. And maybe that's always
+24:12 been the case, but I think it's it's even more intense right now. How do you think about instilling the need for
+24:17 speed in the companies you work with and even at Sequoia? So, I thought of answering that as part of my answer and the reason I left it
+24:24 out. All the boards I'm on move with extreme speed. And that's because I paint a picture for the founders of a
+24:30 river, a river with rocks. And the founders and the co's job is to remove
+24:37 those rocks. So when you give me next year's plan, I don't care that's a 150%
+24:43 net new AR growth. I want to know why the plan is the plan. And I want to challenge you why it's not 3x that. And
+24:50 maybe the answer is funding. Well, we can get funding in this market. Maybe the answer is uh management experience.
+24:58 Well, that's often a good answer. Some people will say market. Well, no way. That's market. We're a little company
+25:04 that is. And so in my mind it's forcing it's forcing the understanding that
+25:10 these companies are capable of doing things which they don't believe they are
+25:15 capable of doing yet and to remove those rocks and I push and I push and I push
+25:21 and I said why can't we go faster and do it in a linear fashion because god
+25:26 forbid something isn't going to happen. And if you hire 250 salespeople in Q1 and then you realize in Q3 something's
+25:32 wrong in Q3 something's wrong with the product, then you're stuck with a burn. So I'm a believer and I hear no, we got
+25:37 to train them all the same baloney. Give us please a revenue ramp that's linear
+25:44 so we can midcourse corrections up and down and let's not be stuck by these
+25:49 numbers. We have 10 fingers 100% growth. That's all How fast can we
+25:54 possibly grow? That's always been the mantra in all the boards that that I've served on. AI is is not different.
+26:02 And Doug, one of your superpowers is you can see through people, you can read people. What What do you see in Ping to install him as CEO here?
+26:08 Let me zoom back of the company and then I'll answer the question with Ping. So I
+26:14 took over the board of Cresta uh from a partner who left to become the CEO work
+26:20 there, a capable man, but he wanted to run a big business. We love Carl Ashenbach. He loves us. We're still very
+26:25 good friends. He still helps us out. Uh and I was told uh it's all fixed. And I
+26:32 went to Cresta and we had no CEO. Founder had left. Uh we had the office
+26:39 of the CEO. And in 90% if not a larger percentage of the companies where I've
+26:45 had the pleasure to serve on the board, it is the founder that runs the company because once you lose the founder, you
+26:50 lose the soul of the company. And here we were with the office of CEO. What I didn't know that day that I knew three
+26:57 weeks later is that we had a hidden gem. We had a founder, not really a founder, but we had a founder. We had Ping who
+27:04 ran engineering who, as you said earlier, built a contact center system at Google, who thought like a founder,
+27:11 took no prisoner, had recruited god knows how many people from Google. And so it's the only time in my career that
+27:18 I was able to plug in a founder in the middle of a journey who wasn't a founder. So in my mind, Ping is like a
+27:24 founder of the company. So we didn't lose a step. And I might say at the cost of embarrassing a ping. It was a
+27:31 controversial decision back then. Never been a CEO this and that a founder. But
+27:37 I believe that the CEO of these small wonderful companies has to be a product
+27:42 person, not a salesperson, not a marketing person, god forbid, a CFO, VP of of HR. I apologize to all the CFOs,
+27:50 VP of HRs. So we had that in the building. We promoted Ping
+27:56 and he didn't miss a beat. You know, we could not have been more thrilled. Ping,
+28:01 you vindicated me. I told you that before. you made me look good because I I there was some some linear thinking on
+28:09 the board. Oh no, we have to go in the outside. I go, no chance. We have somebody who built a product inside who's a founder. And so we we made the
+28:16 decision. It was a somewhat risky decision. I I won't deny that. But after
+28:22 one or two board meeting, it was clear it was a terrific decision. So thank you
+28:28 for everything you've done and making me look like a genius. That is high praise from Doug. Thank
+28:33 you. Uh what does Crescent need to do next? What does Crest need to do over the next five plus years in order to become a great
+28:40 company, a legendary company? So, well, first of all, it has to continue to develop product. It has to
+28:46 continue to put one front one foot in front of the other. It has to always see whenever some people reach a Peter
+28:53 principle of their role, it has to be relatively aggressive in making sure it
+28:59 hires people that are capable of taking it from that point on and forward. Staying away from these quote very
+29:04 experienced people that start feeling a bit like suits and administrators. Point
+29:10 one, that's the most important thing. Uh but the other thing uh that Cresa has to
+29:16 do it has to up its game in marketing. There's a lot of companies I use the
+29:21 word the sizzle. There's a lot of company with a lot of sizzle and no stake. We have a whole bunch of stake.
+29:30 We're a modern company. We're best-in-class in one category. We're going to be best-in-class in the other category. We have beautiful growing run
+29:37 rate in both the agent assist and in the AI part of the product, in the automated
+29:42 part of the product. I just think we need to attach a marketing overlay so we become a household name out of the
+29:49 market. Wonderful. Well, glad you're on the podcast then. Um, maybe stepping back, Doug, you've
+29:56 seen some market cycles. Are we in an AI bubble? The word bubble implies you invest money
+30:03 in and you lose money. because either due to lack of supply of companies or abundance of capital
+30:11 there's certainly an abundance of capital but I've noticed over the last two cycles the internet cycle with
+30:18 Netscape going public in 95 two great companies being built in the late 90s in
+30:24 Google and Amazon a few others names that came to me then a bit of a pause even the words I heard the internet is a
+30:31 fraud it's not going to do anything and then three years later the world went crazy. That latency was a lot less in
+30:38 mobile. I remember when we first look at these apps and Jim Gats and I, our former partner, I said, "How do you make money from a $19 app? How do you build a
+30:45 multi-billion dollar company?" Never thinking of Airbnb, never thinking of Door Dash. A year or two later, we saw
+30:51 Airbnb and Door Dash. Again, that from initial birth to real market shrunk from
+30:57 the internet. I think this is shrunk even further. I think AI is here. I
+31:03 think you have to invest. I think you're at the front end of a cycle, which doesn't mean you have to invest in
+31:08 everything. But one of the mistakes that we made at Sequoia is whenever we see a
+31:13 bit of revenue momentum, we have some geniuses around the partners meeting that say, "Oh, it can stop. It can be
+31:21 substituted. Keep it very easy." You see a small company with very momentum in a front
+31:27 end of the market. I'm not talking about the SAS market in 2021 where where you're down to niche verticals. at the
+31:32 front end of the market, you start seeing the monoc revenue momentum. You lean in and you hold your nose on price.
+31:40 I love that. As you think about where value acres in the market, there's, you know, there's compute, there's other
+31:45 infrastructure, there's the foundation models, there's the application layer. Where do you think value occurs?
+31:51 Up. Up. It always accrs up. Just look at the gross margins as you move up markets.
+31:57 Look at the gross margin of chip companies. Look at the gross margins of the system companies. Look at the gross
+32:02 margin of the Well, but that's and and Nvidia of which we were the first
+32:08 investor is a great company. Jensen was able to see the future many years ahead
+32:13 and he pulled one of the great probably the greatest coup in Silicon Valley what
+32:18 he did. It's just spectacular. Uh but if we're looking over time, I think value
+32:24 is going to crew to quote the application layer. what that ever looks like, you know, it's going to crew up
+32:30 near the customer, near the money, near the business user. I agree. Um, how do you think the AI
+32:37 wave is different than internet or mobile? Uh, I thought of everything else being
+32:46 tools to make us more productive, meaning we all becameworked and we all
+32:53 became network and mobile. I view the eyewave as the industrial re the
+32:59 revolution 2.0. I think this is much much larger. I remember thinking boy we
+33:07 have just seen the biggest market caps 5 years ago. Why is it? Because it was
+33:12 connectivity that created this revenue growth. Never imagined that there was
+33:17 this thing that was going to be much bigger than connectivity and the mobility. It was a complete redoing of
+33:25 humanity of how humanity exists, works, lives, enjoys. And I think AI is both
+33:33 going to be a wonderful thing for us and maybe even a kiss of death for us over the next 10, 20 years.
+33:40 Yeah, totally agree with what Doug said. And I think one thing AI is very unique is that there are so many surprises.
+33:47 There are surprises of underlying capabilities that you never seen before in internet or mobile age. If you take,
+33:56 you know, you if you take the world view in 2015 and take a time machine to give
+34:03 that to someone in 2007 when Steve Job first introduced iPhone, I think someone
+34:09 can resonate with that. And then same for internet um I think people can kind
+34:14 of foresee what's coming. But for AI, I feel there's so many surprises as the underlying model gets better. There are
+34:21 things that even the authors for transformer paper would not have imagined some of the capability that
+34:28 just came after the large language models and that continue to surprise us. So I do think that you know a lot of the
+34:35 improvements is nonlinear. It's really from zero to one continued happening at the bottom layer. So I think that's
+34:41 something that make it even more exciting. You know, I'm going to remind you of something. In uh March of 2022,
+34:51 which now sounds like an eternity, it was my last annual meeting where we meet with all the investors.
+34:58 And it was a goodbye kind of thing, you know, where I present the performance and everything. And I had a slide that
+35:03 talked about all the waves back from the chip wave to the se to the systems wave
+35:09 to the LAN/WAN wave to internet to mobile and the next box a short three
+35:17 and a half years ago was a question mark. We did not know as a partnership and we
+35:23 are as advanced as anybody. We are we are the bleeding edge investor right in seed. We did not see the wave coming and
+35:31 this wave has been a tsunami and I don't think there's there's any end in sight.
+35:37 Thank you. Thank you for sharing those insights. Do you want to talk about Cresa's technical staff stack or should
+35:42 we should we bug ping on that? I'd like to. Well, in fact, I'm going to have to go in a few minutes because I'm in a process of recoding some of the
+35:50 some Are you vibes coding the the Yes. Yes. Yes. I'm lives coding everything. Uh Ping, tell us about the tech stack.
+35:56 Yeah. So uh we have a pretty broad um surface or product and um I can maybe
+36:02 talk about the voice AI agent. We um we streaming end to end uh audio
+36:09 birectional and uh we orchestrate multiple different models and there are speech to text model um and then noise
+36:16 cancellation model to improve the audio. There are models that uh detect the terms and the speech activities and to
+36:23 handle interruptions. And then of course there's a foundation model um and to handle the conversation and you know the
+36:30 other side is the TTS text generation model right and then in parallel we also run multiple smaller models to do guard
+36:36 rail checking and to make sure that nothing is go crazy and as well as um those models will do company specific uh
+36:45 kind of checks for example never give out tax advice or never give out financial promises things like that
+36:52 right and then that's the runtime of voice AI agent and also there's design time there's um components like running
+36:59 large uh scale simulation to really stress test uh the AI agent to cover all
+37:05 the edge cases there's test case management u components and then similarly um if you think about our
+37:11 voice AI assistant so it's also streaming um audio but again so there's
+37:17 a lot of similarity between the infrastructure but it's not birectional right it's one direction and in
+37:23 listening to the call and then understand what's actually happening in the call with two humans right and then orchestrating 10 plus more models
+37:30 actually and and you know in fact we similar similar to vertex you know
+37:35 autoML we have a platform that can allow customers to build their custom models uh to detect interesting events uh in
+37:42 the conversation so and then marry that with with workflows and people use that
+37:47 to and and to detect fraud for uh even used to detect fraud cost fraud
+37:53 um to train agents to how to handle objections. There are so many use cases that now with that um tool we call opera
+37:60 they can express and trigger workflows and um underneath is a teacher student
+38:05 distillation to distill into really small models that we can run in real time and to understand human
+38:10 conversations. What's the latency when I talk to to one of your agents? Um so it's around below 800
+38:17 milliseconds. Wow. So it feels like talking to a human. Yes. Huh. Yeah. Yeah. So, so you're running all these models in in
+38:23 near real time then? Yes. Are you running open source models or are you running you know 11 labs and
+38:28 equivalent? So across the platform there are 20 different models. Some are open source and fine fine tunes. There are small
+38:34 models that for example we only do chat or email uh for human agents and we
+38:39 autocomplete their sentences and type ahead. Those are very very small models. And for TTS we um we yes we use 11 lab.
+38:47 There's a great uh they're a great partner. We also use um other vendors and we constantly compare um the
+38:53 performance. Really cool. And then the actual meat of the conversation though, the the the dialogue or the conversational flow. How
+39:00 do you how do you control that in a way that's not so rigid that it's like the IVR systems of yesterday, but not so
+39:07 free form that you know customers can go crazy and get their refunds on airline tickets and you know have the bots say
+39:13 crazy things and embarrass the customers. like how do you how do you control the flow and get the both of both best of both worlds?
+39:19 Yeah. So, it's really just how you train humans. You give them the specification about what's the goal and these are the
+39:25 tools and then have the that's the beauty of large language models to handle those messy kind of workflows.
+39:32 So, there's a lot of discussion about what's workflow, what's agentic. Workflow is anything you can write it
+39:37 down in code that's step by step. That's workflow. And car wash, car wash is
+39:42 actually workflow. If you think about a boba tea, milk tea um you know th those are physical workflows but they cannot
+39:48 do other things for for human conversation it's very messy it's nonlinear right so it's like you know so
+39:54 that's how the agentic workflow come in that's where ALM is really good at and and then on top of those so you want
+40:01 determinism right and that's how we're introduce the testing the simulation and
+40:06 then the guardrails to make sure that when whenever you have a change in any part of the system um the behavior is
+40:12 still expected Do you tune your customers models to because because you also have this agent
+40:18 assist product so you're in the flow of all these customer conversations. Do you tune the agent to that training data or
+40:24 is it completely net new forward deployed engineers on site uh mapping out conversations?
+40:30 Yeah. So we have a tool that can map from um you know what's actually in the
+40:37 human conversation to extract the blueprint of the conversation. Right. So you know I think the beauty of that
+40:42 again is to discover a lot of unknown unknowns. So there are a lot of topics and there's a lot of things that reason
+40:48 people call in you may not even know that may actually contain the call volume a very large call volume and then
+40:53 once you have that you can now look deeper and you can use ALM to do all these analysis and extract what are 57
+41:01 different ways that people express the same intent and what are the different ways that the call flow will go right
+41:07 and then we can summarize and extract that right so all these are building the products and then they in fact the tooling gets better the four deployed
+41:13 engineers will just be a lot more efficient and then there are also other ways we use the human side of
+41:18 conversations. For example, uh we extract the model for the visitors. So that's how you build your simulation and
+41:26 the simulation is a huge part of improving the AI agent and we believe that having access to exactly how your
+41:32 real customer humans come in and describe ways and in different ways sometimes very messy you can extract a
+41:38 model and then to better simulation on your AI agent as well. And then what methods do you use to make LLMs really
+41:45 bespoke for customer environments? Like is it rag? Is it prompt engineering? Is
+41:50 it fine-tuning? Is it all of the above? Reinforcement learning? Like what are you most optimistic on in terms of techniques?
+41:56 Yeah. So we use um almost everything um to so definitely prompting and then um
+42:03 and rag and for for those simpler agents, but we're still exploring um you
+42:09 know by looking at the human behavior and then the outcomes. How do you use RL to improve this end to end performance
+42:15 and but you know for AI As a Asian by itself I think the foundation model itself is already pretty pretty good you
+42:22 just need to get the best out of it um at least for a digital channel for chat but for uh other use cases there's a lot
+42:29 of opportunity to fine-tune the models and to make them um you know for task like summarization for task like um
+42:36 autocomp completion sentences and that kind of stuff I feel like um there's a lot of room to extract from uh the
+42:43 fine-tuning open source models. Yeah. What goes into building a successful fleshy demo versus production
+42:48 ready AI systems? Yeah. So that's a really interesting question because I think one thing
+42:54 unique about AI is that there's a huge gap between the demo and production. And
+43:01 on one end of spectrum you have rocket launches. The rocket launch is the demo is the production and the production is
+43:06 the demo. You cannot fake it, right? But for AI it's it's little different. And
+43:11 um you know I can just give you example right. So auto summary auto summary feels like a commodity capability that
+43:18 you know anyone can use chatbt to create auto summary but in order to deploy in some call centers today the 20,000
+43:24 people across multiple continents um call centers and the challenge huge list
+43:30 of challenges you know first how do you get the real-time audio in the demo you can you know demo very easy on on Twio
+43:37 in the cloud but remember 50% of the conversation happened on premise right and and and then sometime you know the
+43:45 how do you access that will cost you a lot of money as well and then how do you go around that and then in the real call
+43:51 20,000 agent calls there are transfers there are a lot of transfers and then there are third party third callers that
+43:57 come in that healthc care specialist all that need to be transcribed and summarized and sometime the conversation
+44:03 goes so long how do you handle like three hour four hour calls that go beyond the contact window right and and
+44:10 then things like you know is there background noise and then thing things like you know for different core reasons
+44:16 there can be different templates you really really want to extract these type of information you cannot miss that how
+44:21 do you make sure you do that almost 100% of the time and by the way how do you handle PIS and then you cannot have the
+44:29 personal fin information um you know on rest and then by the way how do you handle um you know data residency if
+44:36 you're talking to a multicontinental multinational uh bank or uh I'll
+44:42 healthcare um provider. So all these become additional requirements that make
+44:48 um something that would feel very commoditized like um you know out of summary become very very much harder to
+44:54 do um in actually contact center and that's why you need a product minded
+44:59 chief executive officer for one of these companies. Absolutely. And this is also why all the
+45:04 pain and all the value is in the last mile. This is why the value is in the application layer. That's right. Yeah. I tend to agree with that. Yeah,
+45:11 talk to us about the future. What happens if everything goes right? What does that mean for CRUA and what does that mean for the world? Um, I think that AI will just like any
+45:19 technology before it, like electricity, it will disappear. It will disappear into workflows. And I think, you know,
+45:25 20, 30 years later, no one will realize that they may actually talking to AI or is a human assisted by AI. There's one
+45:33 thing I'm really excited about is that today if you think about the business, right? And they feel like m multiple
+45:40 personality to the customer. So in the sales phase or the marketing phase, they
+45:45 really really want to talk to you. They core you very very uh aggressively and
+45:50 once you sign up and become a customer, you dealing with entirely different personality, right? and you're dealing
+45:57 with service departments and they use tend to use the terms like um tier
+46:02 defense deflection and to just handle you know to refer to the exact person
+46:07 that they were courting just a few days ago and then even if you have a long conversation on the customer support
+46:12 line and share a lot of feedback two weeks later another department will come in what's your feedback how about you
+46:18 fill out this survey um you know to to our business feel like these are really disconnected right and I do feel like AI
+46:26 I agents can make this entire experience a continuous uh ongoing conversation
+46:31 throughout the entire customer journey and LM is a perfect tool to do that and that will really bring the level of
+46:37 personalization the level of customer experience that wasn't possible before. Yeah, the point that really stuck with
+46:42 me that you said earlier was about kind of the scarcity versus the abundance mindset and you know how much can
+46:48 business to customer communications really evolve and you know app experiences really evolve uh if you take
+46:54 the abundance mindset to bring into into this field. Thank you Ping. Thank you Doug for joining us today. I love this
+47:00 conversation. Thank you. Thank you for having us. [Music]
+47:12 [Music]

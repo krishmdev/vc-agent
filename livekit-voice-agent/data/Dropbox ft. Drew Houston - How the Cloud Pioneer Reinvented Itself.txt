@@ -1,0 +1,3937 @@
+00:01 [Music]
+00:02 
+
+00:02 right after stepping off stage I like
+00:04 
+
+00:04 throw my jacket on the ground or
+00:06 
+
+00:06 something and my phone's ringing and
+00:07 
+
+00:07 it's my mom I'm like why is my oh wait
+00:10 
+
+00:10 I'm like oh wait yeah this is all like
+00:11 
+
+00:11 live streamed not just to it wasn't just
+00:13 
+
+00:13 the people in the audience that saw this
+00:15 
+
+00:15 it was like literally everybody's
+00:16 
+
+00:16 parents who works at the company just
+00:18 
+
+00:18 saw this like complete meltdown I'm like
+00:20 
+
+00:20 oh my God am I going to be like fired is
+00:22 
+
+00:22 the company dead did we did I just like
+00:23 
+
+00:23 torpedo the
+00:25 
+
+00:25 [Music]
+00:27 
+
+00:27 company welcome to Crucible moments a
+00:30 
+
+00:30 podcast about the critical Crossroads
+00:32 
+
+00:32 and inflection points that shape some of
+00:34 
+
+00:34 the world's most remarkable companies
+00:37 
+
+00:37 I'm your host and the managing partner
+00:38 
+
+00:38 of square capital rof bua in 2008 Drew
+00:42 
+
+00:42 hon and Arash fowzi launched a file
+00:45 
+
+00:45 syncing product called Dropbox Dropbox
+00:49 
+
+00:49 emerged right at the threshold when
+00:51 
+
+00:51 people were transitioning from one
+00:52 
+
+00:52 device connected to the internet to
+00:54 
+
+00:54 multiple the company would go on to
+00:56 
+
+00:56 define the cloud-based storage and file
+00:59 
+
+00:59 sharing Market offering users a simple
+01:02 
+
+01:02 elegant product that stitched together
+01:03 
+
+01:03 the digital lives today Dropbox serves
+01:06 
+
+01:06 over 700 million registered users around
+01:10 
+
+01:10 the world with $2.2 billion in annual
+01:14 
+
+01:14 revenue but to get there the company ran
+01:17 
+
+01:17 the gauntlet with forces threatening to
+01:19 
+
+01:19 crush it at every turn drop BLX had to
+01:22 
+
+01:22 compete with the world's biggest Tech
+01:25 
+
+01:25 Giants refocus its priorities after a
+01:28 
+
+01:28 period of viral growth and Ensure its
+01:30 
+
+01:30 longevity with a bit the company feat of
+01:38 
+
+01:38 engineering my name is Drew hon and I'm
+01:40 
+
+01:40 the co-founder and CEO at Dropbox
+01:42 
+
+01:42 inspiration for Dropbox was I just kept
+01:44 
+
+01:44 forgetting my thumb drive and I had
+01:46 
+
+01:46 started a different company before
+01:48 
+
+01:48 Dropbox called Accolade doing online SAT
+01:51 
+
+01:51 prep of all things and I had kind of a
+01:53 
+
+01:53 niche problem in that I needed to work
+01:55 
+
+01:55 on that company across different
+01:57 
+
+01:57 computers and so I'd have like a desktop
+01:59 
+
+01:59 at home and a laptop and a thumb drive
+02:01 
+
+02:01 was kind of the best way to to move my
+02:03 
+
+02:03 work around or kind of move the whole
+02:04 
+
+02:04 company around and I just graduated from
+02:08 
+
+02:08 undergrad and a lot of my friends had
+02:10 
+
+02:10 moved from Cambridge to New York and
+02:13 
+
+02:13 enticed me to go visit when I sat down
+02:17 
+
+02:17 and opened up my laptop on the bus I
+02:19 
+
+02:19 realized that something was wrong and i'
+02:20 
+
+02:20 had forgotten my Thum drive and that was
+02:23 
+
+02:23 really the start of it I was just so
+02:24 
+
+02:24 frustrated I'm like I never want to have
+02:26 
+
+02:26 this problem again and so on that bus
+02:28 
+
+02:28 ride I started coding and kind of
+02:30 
+
+02:30 planting the seed had no idea what it
+02:32 
+
+02:32 would become but that was the those were
+02:33 
+
+02:33 the first lines of code that eventually
+02:35 
+
+02:35 morphed in the
+02:36 
+
+02:36 Dropbox it was funny because I was
+02:40 
+
+02:40 really interested in getting into y
+02:42 
+
+02:42 combinator but like to get into y
+02:45 
+
+02:45 combinator there was sort of a challenge
+02:46 
+
+02:46 just getting their attention to begin
+02:48 
+
+02:48 with I ended up making the first of a
+02:50 
+
+02:50 series of kind of viral videos
+02:52 
+
+02:52 engineered to attract attention cuz I
+02:54 
+
+02:54 sort of work back from like what does
+02:56 
+
+02:56 Paul Graham do all day probably not that
+02:59 
+
+02:59 different from the rest of us which
+02:60 
+
+02:60 which is just refresh Hacker News dozens
+03:02 
+
+03:02 of times every day so I made a little
+03:05 
+
+03:05 video kind of a video demo of the
+03:07 
+
+03:07 Prototype and it stayed on the top of
+03:09 
+
+03:09 Hacker News for two days and then sure
+03:11 
+
+03:11 enough I got an email from Paul saying
+03:14 
+
+03:14 basically your idea looks pretty cool
+03:16 
+
+03:16 but you need a co-founder if you want to
+03:18 
+
+03:18 get into Y combinator and then the
+03:20 
+
+03:20 deadline to apply for that batch was
+03:22 
+
+03:22 only a few weeks away so you know in
+03:24 
+
+03:24 essence I got an email from Paul saying
+03:25 
+
+03:25 like I know you're not even dating but
+03:27 
+
+03:27 you need to be married in two weeks if
+03:28 
+
+03:28 you want to get into the batch so that
+03:30 
+
+03:30 set off this frenzy search for a
+03:32 
+
+03:32 co-founder and a lot of co-founder
+03:34 
+
+03:34 stories start with oh we were you know
+03:37 
+
+03:37 we played t-ball together and met in you
+03:39 
+
+03:39 know first grade Arash and I didn't even
+03:41 
+
+03:41 know each other I mean we went to MIT
+03:43 
+
+03:43 together it turned out but had never met
+03:46 
+
+03:46 that said we had a mutual friend and he
+03:48 
+
+03:48 introduced the two of us you know I I I
+03:50 
+
+03:50 met Drew at the Student Center at MIT
+03:53 
+
+03:53 and he had this early prototype of
+03:55 
+
+03:55 Dropbox which I was blown away by it was
+03:58 
+
+03:58 really simple and elegant and I was
+04:00 
+
+04:00 impressed that he had sort of put it
+04:02 
+
+04:02 together so quickly my name is Arash
+04:04 
+
+04:04 fosi and I am co-founder of
+04:07 
+
+04:07 Dropbox we just had a couple
+04:09 
+
+04:09 conversations and he's like yeah this
+04:10 
+
+04:10 sounds cool and then um basically he
+04:13 
+
+04:13 dropped out of college a few days later
+04:16 
+
+04:16 the most difficult part of the process
+04:18 
+
+04:18 honestly was was convincing my parents
+04:20 
+
+04:20 to to let me drop out they were uh
+04:23 
+
+04:23 definitely concerned at first you know
+04:25 
+
+04:25 is is something wrong why would I want
+04:26 
+
+04:26 to leave leave MIT it was my dream to go
+04:29 
+
+04:29 to MIT but you know it it it honestly
+04:32 
+
+04:32 didn't take more than you know a couple
+04:34 
+
+04:34 more hours before I knew that this was
+04:37 
+
+04:37 something I had to do the two of us just
+04:39 
+
+04:39 threw in together flew out to the
+04:41 
+
+04:41 interview in Mountain View for white
+04:43 
+
+04:43 combinator and got in and then first
+04:46 
+
+04:46 thing that happened after getting in is
+04:48 
+
+04:48 we went out to our rental car and
+04:50 
+
+04:50 realized our laptops were stolen cuz
+04:52 
+
+04:52 someone broke into our car but our stuff
+04:53 
+
+04:53 was on Dropbox so it was okay actually
+04:56 
+
+04:56 happened
+05:00 
+
+05:00 as Drew and AR Rush pitched Dropbox for
+05:03 
+
+05:03 seed financing most investors didn't
+05:06 
+
+05:06 share their
+05:07 
+
+05:07 enthusiasm if you rewind back to 2007
+05:11 
+
+05:11 around the time Dropbox was founded I'd
+05:13 
+
+05:13 say there were dozens of wouldbe cloud
+05:17 
+
+05:17 storage companies my name is Brian
+05:20 
+
+05:20 shrier and I'm a partner at seoa it was
+05:23 
+
+05:23 a time when storage as a business had
+05:27 
+
+05:27 gone through you know an extreme
+05:30 
+
+05:30 commoditization so any any business with
+05:33 
+
+05:33 the word storage attached to it was
+05:35 
+
+05:35 going to have a really hard time raising
+05:37 
+
+05:37 money from early stage investors there
+05:40 
+
+05:40 were a lot of companies in this space
+05:43 
+
+05:43 companies that had tried to build
+05:45 
+
+05:45 businesses out of backup products sync
+05:48 
+
+05:48 products Version Control so what was
+05:51 
+
+05:51 different about Dropbox and why we would
+05:52 
+
+05:52 succeed when there were so many
+05:54 
+
+05:54 companies in the space in addition to
+05:56 
+
+05:56 direct startup competitors there was
+05:58 
+
+05:58 also the threat of the BM moth companies
+06:01 
+
+06:01 like apple Google and Microsoft what was
+06:04 
+
+06:04 stopping them from building something
+06:06 
+
+06:06 just like Dropbox and leveraging their
+06:08 
+
+06:08 powerful distribution when we met with
+06:12 
+
+06:12 investors pretty common responses of
+06:15 
+
+06:15 this isn't a very good business and it's
+06:18 
+
+06:18 seems competitively doomed because
+06:20 
+
+06:20 aren't Google and Microsoft and Yahoo
+06:23 
+
+06:23 and everybody else going to do this and
+06:25 
+
+06:25 I was like yeah I think so but like my
+06:28 
+
+06:28 first angle into this problem was more
+06:31 
+
+06:31 as a frustrated user than as an
+06:32 
+
+06:32 entrepreneur I was just like because I
+06:34 
+
+06:34 tried all these other tools and they
+06:36 
+
+06:36 didn't work they had real reliability
+06:39 
+
+06:39 problems and design problems so
+06:42 
+
+06:42 investors would raise a lot of these
+06:43 
+
+06:43 concerns but at the same time I asked
+06:45 
+
+06:45 investors I was like I know there's a
+06:47 
+
+06:47 lot of tools out there that claim to do
+06:49 
+
+06:49 this do you use any of them and they
+06:52 
+
+06:52 said no and I said isn't that
+06:54 
+
+06:54 interesting and I mean I think we were
+06:56 
+
+06:56 always living under the sort of shadow
+06:58 
+
+06:58 of the hammer of when Google going to
+07:01 
+
+07:01 launch Google Drive and that was even
+07:02 
+
+07:02 rumored before we had started and when's
+07:04 
+
+07:04 everybody else going to launch a
+07:06 
+
+07:06 competitive product but I recognize from
+07:08 
+
+07:08 a lot of my past experience that it's
+07:10 
+
+07:10 really hard to build a cross-platform
+07:12 
+
+07:12 file syncing system and cloud service
+07:15 
+
+07:15 reliably and so I think coming back to
+07:18 
+
+07:18 the question of do you use any of these
+07:19 
+
+07:19 Services they said no and I thought
+07:22 
+
+07:22 that's interesting because it's
+07:23 
+
+07:23 representative an opportunity maybe the
+07:25 
+
+07:25 time has come for something like this
+07:27 
+
+07:27 Drew and Arash dove into finding Dropbox
+07:31 
+
+07:31 they were well aware of their
+07:32 
+
+07:32 competitors and of how prior file
+07:35 
+
+07:35 syncing products had let their users
+07:36 
+
+07:36 down the founders were determined to
+07:39 
+
+07:39 hold Dropbox to a higher standard things
+07:42 
+
+07:42 like engineering rigor and correctness
+07:44 
+
+07:44 and and getting the details right were
+07:47 
+
+07:47 really important and Dropbox was one of
+07:48 
+
+07:48 those Mission critical type engineering
+07:50 
+
+07:50 challenges where you can't have a bad
+07:52 
+
+07:52 day there definitely was a lot of
+07:53 
+
+07:53 pressure to get it right people were
+07:55 
+
+07:55 entrusting us with their most important
+07:58 
+
+07:58 information um whether it was personal
+08:00 
+
+08:00 memories or critical sort of business
+08:03 
+
+08:03 information and we viewed it as as
+08:06 
+
+08:06 completely unacceptable you know to ever
+08:08 
+
+08:08 lose data to ever lose a change to an
+08:11 
+
+08:11 important file and a lot of competitive
+08:13 
+
+08:13 products were really sloppy in in this
+08:15 
+
+08:15 regard and so people would just not
+08:17 
+
+08:17 trust them another problem with the
+08:20 
+
+08:20 existing nent cloud storage tools was
+08:23 
+
+08:23 that they were really hard to use or had
+08:24 
+
+08:24 a lot of lot of knobs and dials you had
+08:26 
+
+08:26 to configure and so we really thought a
+08:28 
+
+08:28 lot about how do you make these your
+08:30 
+
+08:30 experience as simple as possible because
+08:32 
+
+08:32 this is a concept that's going to be
+08:34 
+
+08:34 pretty hard for people to understand and
+08:35 
+
+08:35 Dropbox wouldn't spread as a concept
+08:37 
+
+08:37 unless it were easy to use and so and
+08:39 
+
+08:39 Arash and I both intuitively understood
+08:42 
+
+08:42 that and really valued it highly and
+08:44 
+
+08:44 then so did the early team that we hired
+08:47 
+
+08:47 in addition to unfailing reliability and
+08:49 
+
+08:49 usability there were other critical
+08:51 
+
+08:51 technical decisions that set Dropbox up
+08:54 
+
+08:54 for Success there were two major
+08:57 
+
+08:57 Innovations in the very early days days
+08:60 
+
+09:00 of Dropbox that enabled them to compete
+09:04 
+
+09:04 with enormous companies despite the fact
+09:06 
+
+09:06 that they were a small startup the first
+09:08 
+
+09:08 was they're one of the very first
+09:10 
+
+09:10 companies to standardize on Amazon's web
+09:13 
+
+09:13 services for their infrastructure this
+09:16 
+
+09:16 was a time when Amazon web services also
+09:18 
+
+09:18 known as AWS was very new and you know
+09:21 
+
+09:21 most technology Executives were very
+09:24 
+
+09:24 wary of the idea of Outsourcing their
+09:27 
+
+09:27 infrastructure to another player but but
+09:30 
+
+09:30 for a startup like Dropbox the
+09:32 
+
+09:32 opportunity to pay as you go uh instead
+09:35 
+
+09:35 of racking and stacking servers was a
+09:38 
+
+09:38 huge opportunity to build the company
+09:42 
+
+09:42 that they envisioned without having to
+09:44 
+
+09:44 raise hundreds of millions of dollars
+09:47 
+
+09:47 out the gates the second major
+09:49 
+
+09:49 innovation in terms of Technology on the
+09:51 
+
+09:51 back end of Dropbox is they did
+09:54 
+
+09:54 something really really smart Drew and
+09:55 
+
+09:55 Arash came up with an algorithm that
+09:58 
+
+09:58 took advantage of the fact that there
+10:01 
+
+10:01 are only so many unique files out there
+10:05 
+
+10:05 and so what I mean by that is if I share
+10:08 
+
+10:08 a PDF with 10 people the previous Cloud
+10:13 
+
+10:13 vendors might have stored that 11 times
+10:16 
+
+10:16 one for me and one for each person that
+10:18 
+
+10:18 I shared it with Dropbox is going to
+10:20 
+
+10:20 store that one time but then write the
+10:23 
+
+10:23 software to know that that file is
+10:25 
+
+10:25 something that 11 people different
+10:27 
+
+10:27 people have thereby there storage costs
+10:31 
+
+10:31 are 1 11th of what a less smart solution
+10:35 
+
+10:35 might have been and so this dramatically
+10:38 
+
+10:38 decreased the cost of getting Dropbox
+10:41 
+
+10:41 started and enabled them to compete with
+10:44 
+
+10:44 players who had much much more scale in
+10:47 
+
+10:47 the fall of 2007 impressed by the
+10:50 
+
+10:50 product and the prowess of its Founders
+10:52 
+
+10:52 sequ LED dropbox's seed round but faced
+10:55 
+
+10:55 with encroaching competition from day
+10:57 
+
+10:57 one the company's promising techn ology
+10:60 
+
+10:60 meant nothing if they couldn't rapidly
+11:02 
+
+11:02 attract a critical mass of users one of
+11:06 
+
+11:06 the most important questions for early
+11:09 
+
+11:09 stage startups especially in the
+11:12 
+
+11:12 consumer world where Dropbox started is
+11:15 
+
+11:15 how are you going to acquire users if a
+11:18 
+
+11:18 company can't gain users it's a failure
+11:21 
+
+11:21 to launch you never got liftoff and so
+11:24 
+
+11:24 this is pretty important how are you
+11:25 
+
+11:25 going to get this product into the hands
+11:28 
+
+11:28 of the right users and it's some
+11:29 
+
+11:29 something that many Founders will feel a
+11:32 
+
+11:32 great deal of stress about you can't
+11:34 
+
+11:34 just plan to pay for users because that
+11:37 
+
+11:37 doesn't
+11:38 
+
+11:38 scale while in private beta Drew and
+11:41 
+
+11:41 Arash began to think critically about
+11:43 
+
+11:43 how to tackle this Crucible moment how
+11:46 
+
+11:46 would they quickly get a meaningful
+11:47 
+
+11:47 number of people to actually use dropbox
+11:50 
+
+11:50 I read a lot of books and a couple of
+11:53 
+
+11:53 the books I read one was Gorilla
+11:55 
+
+11:55 Marketing which is basically how do you
+11:57 
+
+11:57 do marketing or attract users when you
+11:59 
+
+11:59 have no money and second was crossing
+12:02 
+
+12:02 the Chasm by Jeffrey Morris about how
+12:04 
+
+12:04 technology is
+12:06 
+
+12:06 adopted and basically there's an early
+12:09 
+
+12:09 adopter set and there sort of the
+12:10 
+
+12:10 general population and our first step
+12:13 
+
+12:13 was all right let's go get the early
+12:15 
+
+12:15 adopters so that's where that Hacker
+12:16 
+
+12:16 News video came from and then that
+12:18 
+
+12:18 worked so well we did that again and so
+12:20 
+
+12:20 we made another video where it was
+12:23 
+
+12:23 really designed for the kind of Hacker
+12:25 
+
+12:25 News Reddit slash. dig audience it was
+12:28 
+
+12:28 the title was like total linkbait titles
+12:30 
+
+12:30 like Google Drive killer coming from MIT
+12:32 
+
+12:32 startup and putting all these little
+12:34 
+
+12:34 Easter eggs in there about tande and
+12:37 
+
+12:37 chocolate rain and you know there a
+12:39 
+
+12:39 YouTube guy and the hddvd decryption key
+12:42 
+
+12:42 so that when you were watching it it
+12:44 
+
+12:44 sort of looked like a deadpan screencast
+12:46 
+
+12:46 of here's Dropbox and here's how it
+12:48 
+
+12:48 works but when you're paying attention
+12:49 
+
+12:49 you found all these little Easter eggs
+12:51 
+
+12:51 that made you want to share the video or
+12:52 
+
+12:52 like it or engage the day before we
+12:54 
+
+12:54 launched the video and maybe 5,000
+12:56 
+
+12:56 people on the beta waiting list we went
+12:58 
+
+12:58 out to some like chain Italian
+13:00 
+
+13:00 restaurant and North Beach and placing
+13:02 
+
+13:02 bets on this on this video we were going
+13:04 
+
+13:04 to launch the next day and how many
+13:05 
+
+13:05 users we would get and the most crazy
+13:07 
+
+13:07 estimate was we'd get 10,000 new signups
+13:09 
+
+13:09 or get up to 15,000 on the waiting list
+13:12 
+
+13:12 and we put it up there and it got to
+13:14 
+
+13:14 85,000 within the first day that was
+13:17 
+
+13:17 successful way beyond our wildest
+13:19 
+
+13:19 imagination but we also had this feeling
+13:21 
+
+13:21 it was kind of unprofessional there's
+13:23 
+
+13:23 only so many funny videos you can make
+13:24 
+
+13:24 about file syncing right so we need
+13:27 
+
+13:27 something that could really scale and
+13:29 
+
+13:29 after we started raising some money
+13:31 
+
+13:31 after we had like a million dollars in
+13:32 
+
+13:32 the bank we're like all right we have to
+13:33 
+
+13:33 like grow up a little bit and do you
+13:35 
+
+13:35 know capital M marketing and and and so
+13:38 
+
+13:38 all right let's go buy a bunch of
+13:39 
+
+13:39 AdWords let's go hire a PR firm let's go
+13:42 
+
+13:42 do these big deals and the truth was we
+13:46 
+
+13:46 we tried a lot of stuff but very little
+13:48 
+
+13:48 of it
+13:49 
+
+13:49 worked we tried Partnerships with sort
+13:52 
+
+13:52 of PC OEM you know affiliate programs
+13:56 
+
+13:56 things like that and a lot of those
+13:58 
+
+13:58 efforts either required a lot of
+14:01 
+
+14:01 engineering bandwidth or just didn't
+14:04 
+
+14:04 materialize the way we hoped the Press
+14:06 
+
+14:06 wasn't that interested because we were
+14:08 
+
+14:08 just one of a bajillion startups in the
+14:10 
+
+14:10 cloud storage space at the time and none
+14:12 
+
+14:12 of them were particularly successful we
+14:14 
+
+14:14 were buying AdWords but it sort of made
+14:16 
+
+14:16 the other problem obvious when people
+14:17 
+
+14:17 don't know about your product they're
+14:19 
+
+14:19 not searching for it on Google and
+14:21 
+
+14:21 ironically people the early adopter kind
+14:23 
+
+14:23 of the tech early adopters who were
+14:25 
+
+14:25 searching for like Windows File
+14:26 
+
+14:26 synchronization software were actually
+14:28 
+
+14:28 pretty bad customer because the first
+14:30 
+
+14:30 thing they would do is ask for like 25
+14:32 
+
+14:32 different knobs and dials that would
+14:33 
+
+14:33 have made the product unusable for
+14:35 
+
+14:35 normal people the team knew that any
+14:37 
+
+14:37 attention from its two viral videos was
+14:40 
+
+14:40 rapidly fading they desperately needed
+14:43 
+
+14:43 another Avenue to boost user growth
+14:45 
+
+14:45 luckily one was on the horizon Silicon
+14:49 
+
+14:49 Valley is quite an echo chamber and
+14:54 
+
+14:54 Prestige really matters and in 2008 the
+14:58 
+
+14:58 tech crunch disrupt confer confence was
+15:01 
+
+15:01 the most important event for startups
+15:04 
+
+15:04 that were launching Dropbox was invited
+15:07 
+
+15:07 to pitch their startup they're one of
+15:10 
+
+15:10 just 10 or 20 different companies that
+15:12 
+
+15:12 was put on the main stage for this event
+15:14 
+
+15:14 disrup was basically our public launch
+15:17 
+
+15:17 moment so we had really rallied the team
+15:20 
+
+15:20 around working through a bunch of bugs
+15:23 
+
+15:23 and new features and that was really
+15:25 
+
+15:25 going to be the company's big moment you
+15:27 
+
+15:27 know we got a lot of user on our waiting
+15:30 
+
+15:30 list from dig and I think we we thought
+15:32 
+
+15:32 this would be a similar moment where if
+15:34 
+
+15:34 we won disrupt we would get a bunch of
+15:35 
+
+15:35 users out of it it was stressful because
+15:38 
+
+15:38 you know not only are we unveiling drop
+15:39 
+
+15:39 Hawks really publicly for the first time
+15:42 
+
+15:42 we're also making the service live so we
+15:44 
+
+15:44 had to make sure all the servers ready
+15:46 
+
+15:46 we're going to turn on monetization
+15:48 
+
+15:48 we're going to launch a Linux version
+15:50 
+
+15:50 we're going to have these paid accounts
+15:51 
+
+15:51 that add a lot more space so we're just
+15:52 
+
+15:52 going to be putting a lot of stress on
+15:53 
+
+15:53 the system so I think Arash and I maybe
+15:55 
+
+15:55 get like two hours of sleep the night
+15:57 
+
+15:57 before and you know Drew and rash got up
+16:01 
+
+16:01 on stage they had prepared incredibly
+16:04 
+
+16:04 well for the presentation that they were
+16:06 
+
+16:06 about to make the easiest part of that
+16:09 
+
+16:09 presentation was going to be the demo
+16:12 
+
+16:12 because Dropbox never fails well guess
+16:15 
+
+16:15 what happened and I'm walking through
+16:17 
+
+16:17 the story I'm like this is Dropbox it's
+16:19 
+
+16:19 a folder anything you put in here shows
+16:22 
+
+16:22 up on all your computers all you have to
+16:24 
+
+16:24 do is drag a file in I'm going to drag a
+16:25 
+
+16:25 file in here on my computer and then
+16:27 
+
+16:27 point it over at a rash and I'm like as
+16:29 
+
+16:29 you can see it shows up on his computer
+16:31 
+
+16:31 and then I look at the screen and I'm
+16:33 
+
+16:33 like doesn't seem to be showing up on
+16:34 
+
+16:34 his computer does it the longest 15
+16:37 
+
+16:37 seconds of my life it was definitely
+16:39 
+
+16:39 Cricket in the audience Drew was waiting
+16:42 
+
+16:42 for the file to sync and I I don't think
+16:44 
+
+16:44 we had really thought about that
+16:46 
+
+16:46 scenario and so yeah it was it was not
+16:50 
+
+16:50 great I could just hear clicks which
+16:52 
+
+16:52 were the the shutters of cameras kind of
+16:55 
+
+16:55 memorializing every tenth of a second of
+16:58 
+
+16:58 this meltdown
+16:59 
+
+16:59 it wasn't dropbox's fault the Wi-Fi had
+17:02 
+
+17:02 gone out at the conference so it was
+17:04 
+
+17:04 just horrible horrible
+17:07 
+
+17:07 timing it was really just like all right
+17:09 
+
+17:09 you know we have our one shot and it was
+17:12 
+
+17:12 probably one of the worst demos that
+17:14 
+
+17:14 that conference had ever seen right
+17:16 
+
+17:16 after stepping off stage I like throw my
+17:19 
+
+17:19 jacket on the ground or something and my
+17:20 
+
+17:20 phone's ringing and it's my mom and I'm
+17:23 
+
+17:23 like why is my oh wait I'm like oh wait
+17:25 
+
+17:25 yeah this is all like live streamed not
+17:26 
+
+17:26 just to it wasn't just the people in the
+17:28 
+
+17:28 audience that saw this it was like
+17:30 
+
+17:30 literally everybody's parents who works
+17:31 
+
+17:31 at the company just saw this like
+17:33 
+
+17:33 complete meltdown I'm like oh my God am
+17:35 
+
+17:35 I going to be like fired is the company
+17:36 
+
+17:36 dead did we did I just like torpedo the
+17:38 
+
+17:38 company you know my mom's like Oh yeah
+17:41 
+
+17:41 don't worry about it it's going to be
+17:42 
+
+17:42 okay I'm like Mom it's really like not
+17:44 
+
+17:44 going to be okay like I don't know what
+17:45 
+
+17:45 to tell you the tech crunch disrupt demo
+17:49 
+
+17:49 failure ended up being one of the most
+17:52 
+
+17:52 important early moments for the founders
+17:55 
+
+17:55 of Dropbox a friend of mine called me
+17:58 
+
+17:58 and he was like Drew people are going to
+17:60 
+
+17:60 react to this how you react to it if
+18:02 
+
+18:02 you're freaking out and losing it
+18:03 
+
+18:03 everybody's going to freak out and lose
+18:04 
+
+18:04 it if you're like it's fine let's just
+18:06 
+
+18:06 keep going people are going to be like
+18:07 
+
+18:07 it's fine just keep going and I just
+18:09 
+
+18:09 remember the sound of putting my key in
+18:11 
+
+18:11 the door after walking up the stairs
+18:13 
+
+18:13 like the key into the office and the
+18:14 
+
+18:14 sound it made and just opening the door
+18:17 
+
+18:17 and seeing everybody looking at me in a
+18:19 
+
+18:19 rush after this total failure of a demo
+18:22 
+
+18:22 and I'm like all right I just like put
+18:25 
+
+18:25 this kind of mask on I'm like all right
+18:27 
+
+18:27 guys like how's the servers pretended
+18:29 
+
+18:29 like didn't pretend like nothing
+18:30 
+
+18:30 happened but tried to sort of be move on
+18:33 
+
+18:33 I think uh you know it was definitely a
+18:35 
+
+18:35 a setback and we were worried about it
+18:37 
+
+18:37 at at the time but we sort of quickly
+18:40 
+
+18:40 shifted Focus to just making the product
+18:42 
+
+18:42 better and really understanding how to
+18:45 
+
+18:45 engineer virality and I think above all
+18:48 
+
+18:48 what worked better than any other thing
+18:50 
+
+18:50 that we tried was the referral program
+18:53 
+
+18:53 our referral program was if I tell you
+18:56 
+
+18:56 about Dropbox it was this two-sided
+18:58 
+
+18:58 incentive where you would get some free
+18:60 
+
+18:60 space I would get some free space and
+19:02 
+
+19:02 that was inspired by an incentive
+19:04 
+
+19:04 program from PayPal where they'd give
+19:06 
+
+19:06 you five bucks in cash basically if you
+19:08 
+
+19:08 if you signed up and the two-sidedness
+19:10 
+
+19:10 was actually me misremembering I thought
+19:12 
+
+19:12 maybe both the sender and receiver would
+19:14 
+
+19:14 get five bucks if they signed up for
+19:16 
+
+19:16 PayPal I don't think that was actually
+19:17 
+
+19:17 true but I said it as if it were true a
+19:19 
+
+19:19 lot and that's what we did and it worked
+19:21 
+
+19:21 super well I mean we went from like
+19:23 
+
+19:23 100,000 to 200,000 users in the first 10
+19:25 
+
+19:25 days we were we were blown away very
+19:29 
+
+19:29 early on just how successful the
+19:31 
+
+19:31 referral program was I think that we
+19:34 
+
+19:34 basically doubled our growth rate
+19:36 
+
+19:36 overnight and then as we made
+19:39 
+
+19:39 optimizations it just kept compounding
+19:42 
+
+19:42 and so we were just growing faster and
+19:44 
+
+19:44 faster I mean one of the things we
+19:46 
+
+19:46 learned early is viral growth is an
+19:49 
+
+19:49 exponential game and it's also a game of
+19:51 
+
+19:51 inches where reducing friction in every
+19:54 
+
+19:54 step of that flow from I start using
+19:56 
+
+19:56 Dropbox I share aile with you or I send
+19:58 
+
+19:58 you
+19:59 
+
+19:59 send someone else a referral and then
+20:01 
+
+20:01 they have to sign up and then around the
+20:03 
+
+20:03 loop goes it's super important to remove
+20:05 
+
+20:05 as much friction from that and maximize
+20:07 
+
+20:07 the yield at every step of that so we
+20:09 
+
+20:09 were always sanding down all these
+20:11 
+
+20:11 little rough edges of how do we increase
+20:13 
+
+20:13 the email deliverability a little bit or
+20:14 
+
+20:14 let's try a different color buttons or
+20:16 
+
+20:16 let's try to remove a step here we were
+20:20 
+
+20:20 big fans of just getting people off the
+20:23 
+
+20:23 street and off Craigslist to test a lot
+20:27 
+
+20:27 of our key flows we learned a lot
+20:29 
+
+20:29 through just having people come in and
+20:33 
+
+20:33 we got a lot of really helpful feedback
+20:35 
+
+20:35 from from those studies that we used to
+20:37 
+
+20:37 iterate on the product you know we were
+20:38 
+
+20:38 a bunch of Engineers from MIT and so I
+20:41 
+
+20:41 think we just had a pretty skewed
+20:42 
+
+20:42 perspective of what you know what people
+20:45 
+
+20:45 understand about how software works and
+20:47 
+
+20:47 people's mental models around the file
+20:50 
+
+20:50 system and files and installing things
+20:53 
+
+20:53 so you know it it helped us understand
+20:56 
+
+20:56 what we needed to do to make those flows
+20:58 
+
+20:58 as simple and and intuitive as as
+21:01 
+
+21:01 possible once we got the viral Loop
+21:03 
+
+21:03 started it didn't stop we had this
+21:05 
+
+21:05 little office above the Walgreens on CY
+21:07 
+
+21:07 Street and every time we hit a user
+21:10 
+
+21:10 Milestone we'd put a new print out of
+21:12 
+
+21:12 5,000 10,000 50,000 100,000 and then at
+21:17 
+
+21:17 some point got to 200,000 500,000 a
+21:20 
+
+21:20 million 2 million and then then we just
+21:22 
+
+21:22 had like keep going on the ceiling and
+21:25 
+
+21:25 kind of like that feeling of getting
+21:26 
+
+21:26 like pressed into the back of your seat
+21:28 
+
+21:28 when like pressing the gas in a fast car
+21:30 
+
+21:30 or something we're just like oh man this
+21:32 
+
+21:32 belongs to the internet now it was
+21:34 
+
+21:34 really hard to think of another company
+21:37 
+
+21:37 that was growing this fast and what
+21:39 
+
+21:39 really surprised us was how fast it was
+21:42 
+
+21:42 growing given its category this wasn't a
+21:44 
+
+21:44 social network this was a company that
+21:47 
+
+21:47 helped you access your files information
+21:49 
+
+21:49 and share that with your friends one of
+21:51 
+
+21:51 the most unique attributes of Dropbox
+21:54 
+
+21:54 history is they were cash flow positive
+21:59 
+
+21:59 almost immediately after their public
+22:00 
+
+22:00 launch and this was just unheard of at
+22:03 
+
+22:03 the time and it's very rarely repeated
+22:05 
+
+22:05 you know it's hard to think of another
+22:07 
+
+22:07 company that launched like this and
+22:09 
+
+22:09 being cash flow positive is a superpower
+22:13 
+
+22:13 for companies especially for startups it
+22:16 
+
+22:16 enabled them to scale the team it was
+22:18 
+
+22:18 the ultimate validation that this was a
+22:21 
+
+22:21 great success and a real business on top
+22:24 
+
+22:24 of that being cash flow positive early
+22:26 
+
+22:26 on put Dropbox in the driver's seat in
+22:29 
+
+22:29 terms of its fundraising strategy it
+22:31 
+
+22:31 meant that they didn't have to raise if
+22:33 
+
+22:33 they didn't want to and so when they did
+22:35 
+
+22:35 want to raise they set the terms and
+22:38 
+
+22:38 they did it quickly on top of that when
+22:41 
+
+22:41 they raised financing they were able to
+22:43 
+
+22:43 do it in a way that was just much less
+22:47 
+
+22:47 dilutive than your typical startup and
+22:49 
+
+22:49 that was really meaningful for the
+22:52 
+
+22:52 employees at Dropbox who really deserved
+22:54 
+
+22:54 it dropbox's growth had exploded across
+22:59 
+
+22:59 3 million users in 2009 and 50 million
+23:02 
+
+23:02 in 2011 but this success put the company
+23:06 
+
+23:06 squarely on competitors Radars Google
+23:10 
+
+23:10 and Microsoft and Apple in particular
+23:13 
+
+23:13 had a very close eye on the company so
+23:17 
+
+23:17 in many ways it was a race for Dropbox
+23:21 
+
+23:21 to continue to scale while front running
+23:24 
+
+23:24 the efforts of the larger companies to
+23:27 
+
+23:27 cut off its growth
+23:29 
+
+23:29 and then of course it all got capped by
+23:32 
+
+23:32 by the Steve Jobs announcement my name
+23:34 
+
+23:34 is suj josua and I was the vice
+23:36 
+
+23:36 president of business and Chief
+23:38 
+
+23:38 Financial Officer of Dropbox in June of
+23:41 
+
+23:41 2011 in his last big speech Steve Jobs
+23:45 
+
+23:45 announced iCloud and the way he
+23:46 
+
+23:46 announced it was he said what are you
+23:49 
+
+23:49 all using today you know your Dropbox or
+23:51 
+
+23:51 something we're going to change
+23:52 
+
+23:52 everything I'm paraphrasing but not not
+23:54 
+
+23:54 a lot and he then announced that when
+23:57 
+
+23:57 iCloud launched it was going to be
+23:59 
+
+23:59 effectively our 5-year product road map
+24:02 
+
+24:02 and that was going to happen in
+24:03 
+
+24:03 September and so we're this tiny company
+24:05 
+
+24:05 um you know again off to a good start
+24:07 
+
+24:07 but but a lot of things were challenging
+24:10 
+
+24:10 at that moment in time and fairly
+24:11 
+
+24:11 stressful you know the question you you
+24:14 
+
+24:14 know most investors are asking
+24:15 
+
+24:15 themselves to startups when they're
+24:17 
+
+24:17 evaluating them is is some big company
+24:18 
+
+24:18 going to roll over and and kill this
+24:20 
+
+24:20 company by announcing a new product and
+24:23 
+
+24:23 uh certainly it felt like there was a
+24:25 
+
+24:25 pretty good chance of that happening in
+24:26 
+
+24:26 the summer of 2011
+24:29 
+
+24:29 to position itself against competitors
+24:31 
+
+24:31 Dropbox decided to follow the Playbook
+24:33 
+
+24:33 of other ambitious companies and unlock
+24:36 
+
+24:36 the next phase of growth by moving into
+24:38 
+
+24:38 adjacent territories with new product
+24:40 
+
+24:40 offerings to do this they embarked on a
+24:43 
+
+24:43 series of
+24:45 
+
+24:45 Acquisitions we bought a company called
+24:48 
+
+24:48 mailbox which was the first mobile email
+24:50 
+
+24:50 client that really started to scale they
+24:52 
+
+24:52 had a waiting list that had a million
+24:53 
+
+24:53 people on it we hadn't seen that mailbox
+24:56 
+
+24:56 had really pioneered a lot of user
+24:58 
+
+24:58 interface and product features that were
+25:01 
+
+25:01 delightful from a user standpoint it
+25:03 
+
+25:03 made managing your email so much better
+25:05 
+
+25:05 like be being able to swipe on messages
+25:08 
+
+25:08 to Archive them or snooze them and just
+25:10 
+
+25:10 a lot of the basics of how you make a
+25:12 
+
+25:12 great mobile email
+25:14 
+
+25:14 experience you know we had been talking
+25:16 
+
+25:16 for years at that point about being a
+25:18 
+
+25:18 multi-product company think of it as
+25:20 
+
+25:20 like what is the mobile version of
+25:22 
+
+25:22 Microsoft Office and we had never
+25:24 
+
+25:24 actually at that point launched a second
+25:26 
+
+25:26 product successfully and so mailbox was
+25:28 
+
+25:28 was a was a real chance to demonstrate
+25:31 
+
+25:31 the business strategy at work uh in a
+25:33 
+
+25:33 way that we hadn't done before in
+25:35 
+
+25:35 addition to mailbox the company acquired
+25:37 
+
+25:37 the photo sharing service snapjoy the
+25:40 
+
+25:40 team used snapjoy as a foundation to
+25:42 
+
+25:42 create what would become a product
+25:44 
+
+25:44 called
+25:45 
+
+25:45 Carousel we started building this new
+25:48 
+
+25:48 photo app called Carousel because
+25:50 
+
+25:50 especially as people are now taking more
+25:51 
+
+25:51 photos on their phone in a lot of cases
+25:54 
+
+25:54 those photos would kind of go nowhere
+25:56 
+
+25:56 and kind of wait to die because you
+25:58 
+
+25:58 you're the photos were not backed up to
+25:60 
+
+25:60 the cloud you know if you broke your
+26:01 
+
+26:01 phone or lost it you had to like
+26:03 
+
+26:03 manually sync these things so sort of
+26:04 
+
+26:04 back to a lot of the problems that we
+26:06 
+
+26:06 had started with and I was really
+26:08 
+
+26:08 excited about the concept of you know
+26:10 
+
+26:10 you should be able to have your whole
+26:11 
+
+26:11 life in your pocket you shouldn't just
+26:12 
+
+26:12 be limited to the especially back then
+26:14 
+
+26:14 very like primitive amount of storage on
+26:16 
+
+26:16 the physical phone and that was a really
+26:18 
+
+26:18 fun period because you know 2014 maybe
+26:21 
+
+26:21 seven years into the company we're I'm
+26:23 
+
+26:23 on stage talking about how we're going
+26:24 
+
+26:24 to reimagine photo sharing we had a lot
+26:26 
+
+26:26 of things on the productivity side
+26:28 
+
+26:28 mailbox was was an example but there's a
+26:30 
+
+26:30 lot of stuff with Dropbox itself and
+26:31 
+
+26:31 getting up in front of this super
+26:33 
+
+26:33 enthusiastic audience and making all
+26:35 
+
+26:35 these pronouncements about the future
+26:37 
+
+26:37 and Dropbox and all these new directions
+26:38 
+
+26:38 we head we were headed and yet it was
+26:41 
+
+26:41 clear that it just as every month passed
+26:44 
+
+26:44 after that it was clear there's a
+26:45 
+
+26:45 reckoning coming for us I left Dropbox
+26:49 
+
+26:49 in early 2015 but so Drew and I are very
+26:52 
+
+26:52 close personally and professionally but
+26:54 
+
+26:54 at that time he and I you know were busy
+26:57 
+
+26:57 and we didn't really talk much about
+26:59 
+
+26:59 business at all for a few months and
+27:01 
+
+27:01 then uh he and I went on vacation
+27:03 
+
+27:03 together and he was like hey by the way
+27:06 
+
+27:06 I haven't caught you up on the business
+27:07 
+
+27:07 in a while let's uh let me catch you up
+27:09 
+
+27:09 on it and I said great and I remember
+27:12 
+
+27:12 this vividly he pulled out basically the
+27:14 
+
+27:14 p&l and I was like oh boy what
+27:17 
+
+27:17 happened like you know there this is a
+27:21 
+
+27:21 different this is a different company
+27:23 
+
+27:23 than what I just left 9 months ago
+27:25 
+
+27:25 Revenue growth had slowed meaningfully
+27:28 
+
+27:28 and expenses had grown out of control
+27:31 
+
+27:31 and so you b you you had this thing that
+27:33 
+
+27:33 at the core was one of the greatest
+27:34 
+
+27:34 software businesses ever I think you can
+27:36 
+
+27:36 say and all of a sudden on paper it
+27:39 
+
+27:39 didn't look great at all we're slowing
+27:42 
+
+27:42 down a little bit exiting hypergrowth
+27:44 
+
+27:44 mode and then a lot of the tactics we
+27:47 
+
+27:47 were using to grow as fast as possible
+27:49 
+
+27:49 kind of growth at all costs we kind of
+27:50 
+
+27:50 no longer the right gear for the company
+27:52 
+
+27:52 cuz when you looked at our p&l we were
+27:54 
+
+27:54 like hemorrhaging hundreds of millions
+27:56 
+
+27:56 of dollars a year so we had to figure
+27:58 
+
+27:58 out like what do we
+27:60 
+
+27:60 do that there were a lot of
+28:02 
+
+28:02 conversations around Carousel and
+28:04 
+
+28:04 mailbox and whether the strategies made
+28:08 
+
+28:08 sense and whether the product were
+28:10 
+
+28:10 working and whether there were sort of
+28:12 
+
+28:12 viable business models for them the
+28:15 
+
+28:15 issue with mailbox was that it had not
+28:17 
+
+28:17 really taken off the way we had hoped
+28:19 
+
+28:19 and Apple Mail and Gmail had sort of
+28:21 
+
+28:21 copied a lot of its initial breakthrough
+28:24 
+
+28:24 you know kind of like awesome features
+28:26 
+
+28:26 and so it just didn't have a uh life of
+28:29 
+
+28:29 its own at that point on the carousel
+28:31 
+
+28:31 side it had just never cracked the
+28:33 
+
+28:33 distribution piece of the equation we
+28:35 
+
+28:35 had just not been able to get a massive
+28:37 
+
+28:37 audience of people to use it you know
+28:40 
+
+28:40 competition is often not like a shotgun
+28:42 
+
+28:42 it's more like a boa constrictor where
+28:43 
+
+28:43 they're just going to keep coming at you
+28:45 
+
+28:45 and keep going and keep going so the
+28:47 
+
+28:47 first several months after the launch of
+28:49 
+
+28:49 carousel on mailbox I just had an
+28:51 
+
+28:51 increasingly unsettled feeling that
+28:52 
+
+28:52 Dropbox was in trouble Google photos had
+28:54 
+
+28:54 just launched and you know the company
+28:56 
+
+28:56 was looking at me to for some answers as
+28:57 
+
+28:57 to what what the hell are we going to do
+28:59 
+
+28:59 it was becoming pretty clear that um a
+29:01 
+
+29:01 lot of these things that IID said were
+29:02 
+
+29:02 the future of the company were like kind
+29:04 
+
+29:04 of dead out of the
+29:06 
+
+29:06 gate Dropbox had invested time and
+29:09 
+
+29:09 resources in Carousel and mailbox but
+29:13 
+
+29:13 they weren't finding the traction the
+29:15 
+
+29:15 team had expected the business was
+29:17 
+
+29:17 suffering and so the question was how to
+29:20 
+
+29:20 move forward a true Crucible
+29:23 
+
+29:23 moment Carousel in particular was Drew
+29:26 
+
+29:26 baby Carousel was your really his vision
+29:29 
+
+29:29 he was really passionate about it one of
+29:32 
+
+29:32 the roles that I had to play is to just
+29:34 
+
+29:34 be really candid with him about what
+29:36 
+
+29:36 people's concerns were and what I
+29:39 
+
+29:39 thought that that we should do and uh
+29:41 
+
+29:41 you know that was never a fun role to
+29:43 
+
+29:43 play but I think Drew did view me as
+29:45 
+
+29:45 sort of a truth teller and while in in
+29:47 
+
+29:47 certain cases I would tell him things
+29:49 
+
+29:49 that he he wouldn't want to hear I think
+29:51 
+
+29:51 he he always knew it was it was coming
+29:52 
+
+29:52 from coming from a good place AJ who was
+29:56 
+
+29:56 I think at that point the CFO and and
+29:58 
+
+29:58 Dennis Woodside was the COO and Brian we
+30:01 
+
+30:01 were all kind of like all hands on deck
+30:04 
+
+30:04 to to try to support Drew and figuring
+30:06 
+
+30:06 out what to do next and Drew to his
+30:09 
+
+30:09 credit I mean he made the tough
+30:10 
+
+30:10 decisions that were required to to get
+30:13 
+
+30:13 to get the business back on track and be
+30:15 
+
+30:15 a great business a friend of mine
+30:17 
+
+30:17 reminded me of a a page in a book called
+30:20 
+
+30:20 only the paranoid survive which I had
+30:22 
+
+30:22 read and then reread over that 4th of
+30:24 
+
+30:24 July uh 2015 and basically what it says
+30:28 
+
+30:28 is
+30:28 
+
+30:28 CEOs when they're going through some
+30:30 
+
+30:30 kind of infle strategic inflection point
+30:32 
+
+30:32 for their companies often want to like
+30:34 
+
+30:34 hedge and have lots of options but
+30:36 
+
+30:36 really what you want to do is focus and
+30:38 
+
+30:38 put all your eggs in one basket and then
+30:41 
+
+30:41 per the Mark Twain quote like put all
+30:42 
+
+30:42 your eggs in one basket and watch that
+30:44 
+
+30:44 basket and the book it's really about
+30:46 
+
+30:46 the story of Intel going through
+30:47 
+
+30:47 something that actually is pretty
+30:49 
+
+30:49 similar where Intel didn't start out in
+30:51 
+
+30:51 microprocessors they started out as a
+30:53 
+
+30:53 memory company and suddenly competitors
+30:56 
+
+30:56 were catching up in a much faster rate
+30:57 
+
+30:57 and customers were abandoning them
+30:59 
+
+30:59 suddenly and they knew they had a
+31:01 
+
+31:01 problem and there's this scene in the
+31:03 
+
+31:03 book where Intel had memory business and
+31:06 
+
+31:06 they had this nent microprocessor
+31:07 
+
+31:07 business but the microprocessor business
+31:09 
+
+31:09 was basically zero and they're basically
+31:11 
+
+31:11 confronting the question of like if we
+31:13 
+
+31:13 were Consultants to ourselves what would
+31:16 
+
+31:16 we do and they said like obviously we
+31:18 
+
+31:18 get out of the memory business and put
+31:20 
+
+31:20 put all our chips on this sketchy
+31:22 
+
+31:22 microprocessor thing sounds easy clearly
+31:25 
+
+31:25 worked in hindsight but you know it's
+31:27 
+
+31:27 like Google saying we're going to get
+31:28 
+
+31:28 get out of the search business right or
+31:30 
+
+31:30 like Dropbox kind of getting out of the
+31:31 
+
+31:31 storage business like what is that how
+31:33 
+
+31:33 do you even how do you even do that but
+31:35 
+
+31:35 what I took from that was like really
+31:37 
+
+31:37 need to focus and I I really had to
+31:39 
+
+31:39 think about why why does Dropbox need to
+31:40 
+
+31:40 exist we thought about Dropbox as a
+31:43 
+
+31:43 place to sync your files but some
+31:44 
+
+31:44 customers when we talk to them were're
+31:46 
+
+31:46 like yeah I don't really I mean yeah
+31:47 
+
+31:47 Dropbox keep my but I don't think about
+31:49 
+
+31:49 Dropbox as keeping my files in sync I
+31:51 
+
+31:51 think of Dropbox as keeping my team in
+31:52 
+
+31:52 sync Dropbox is like where I go to work
+31:54 
+
+31:54 it's like my studio it's like my
+31:56 
+
+31:56 workspace it's like my office and it's
+31:58 
+
+31:58 awesome I can work from anywhere I can
+31:60 
+
+31:60 collaborate with all these people around
+32:01 
+
+32:01 the world and they just gave us like
+32:03 
+
+32:03 very different metaphors for how to
+32:05 
+
+32:05 describe what we did and I was like I
+32:08 
+
+32:08 think we can build on this I'm like we
+32:10 
+
+32:10 definitely need to focus on
+32:11 
+
+32:11 collaboration but what that really meant
+32:13 
+
+32:13 was we're not going to focus on storage
+32:15 
+
+32:15 we're not going to focus on consumer and
+32:16 
+
+32:16 so the implication of that was I had to
+32:18 
+
+32:18 go back home and be like yeah the next
+32:20 
+
+32:20 day you called in all hands and said
+32:23 
+
+32:23 we're going to shut down Carousel we're
+32:24 
+
+32:24 going to shut down
+32:25 
+
+32:25 mailbox the hardest part of shutting
+32:28 
+
+32:28 down a product is the team that's
+32:30 
+
+32:30 working on the product it's not because
+32:32 
+
+32:32 you're going to let them go or something
+32:34 
+
+32:34 like that it's because it's a public
+32:38 
+
+32:38 acknowledgement within the company that
+32:41 
+
+32:41 the product didn't work and often times
+32:44 
+
+32:44 there is a big difference in perception
+32:47 
+
+32:47 from outside the company than from what
+32:49 
+
+32:49 people inside the company think you know
+32:52 
+
+32:52 often times by the time you get to the
+32:53 
+
+32:53 point where it's it's the moment to shut
+32:55 
+
+32:55 down a product everybody inside the
+32:57 
+
+32:57 building is waiting for you to do it and
+32:59 
+
+32:59 thinking what took you so long but
+33:01 
+
+33:01 outside the building the critics pass
+33:03 
+
+33:03 judgment and just focus on failure the
+33:06 
+
+33:06 Press was an interesting thing for me to
+33:08 
+
+33:08 observe from the outside a lot of the
+33:10 
+
+33:10 press was oriented around 10 billion
+33:13 
+
+33:13 doll company that isn't good the Press
+33:16 
+
+33:16 kind of L latched on and you know we
+33:18 
+
+33:18 were the first Dead decacorn those kinds
+33:20 
+
+33:20 of Articles started coming out and you
+33:22 
+
+33:22 know just couldn't really get the monkey
+33:24 
+
+33:24 off our back for a while and then that
+33:25 
+
+33:25 made recruiting really difficult and and
+33:27 
+
+33:27 sent us into a bit of a tail spin as
+33:29 
+
+33:29 painful as it was you know following the
+33:31 
+
+33:31 recommendations of the book like don't
+33:32 
+
+33:32 hedge just shut everything down we need
+33:34 
+
+33:34 the company to focus it was an extremely
+33:36 
+
+33:36 painful but ultimately necessary
+33:39 
+
+33:39 decision but there was a lot more work
+33:41 
+
+33:41 to do once we killed Carousel and
+33:44 
+
+33:44 mailbox we just had a lot more resources
+33:47 
+
+33:47 and ability to focus on on collaboration
+33:50 
+
+33:50 and work rated use cases and so we we
+33:54 
+
+33:54 focused on those use cases and really
+33:57 
+
+33:57 started to dig into what the most
+33:60 
+
+33:60 important workflows were around Dropbox
+34:02 
+
+34:02 and how we could make those better that
+34:04 
+
+34:04 meant things like improving the document
+34:07 
+
+34:07 previewing experience or or commenting
+34:09 
+
+34:09 workflows you know adding more sort of
+34:12 
+
+34:12 knobs and dials around document sharing
+34:15 
+
+34:15 and so you know a lot of these things
+34:17 
+
+34:17 were things that people had been asking
+34:19 
+
+34:19 for for for sort of years but we just
+34:22 
+
+34:22 weren't able to sort of get around to
+34:24 
+
+34:24 being able to say shed that part of the
+34:27 
+
+34:27 business meant we could really clean up
+34:29 
+
+34:29 a lot of the fundamentals and so pretty
+34:32 
+
+34:32 shortly thereafter we set a course to be
+34:34 
+
+34:34 free cash flow positive in 2016 and we
+34:37 
+
+34:37 actually managed to do it so we were
+34:38 
+
+34:38 able to drive a lot of change pretty
+34:39 
+
+34:39 quickly but it did represent kind of
+34:41 
+
+34:41 getting out of our teenage years
+34:43 
+
+34:43 reaching the end of our teenage years as
+34:45 
+
+34:45 a startup and really having to
+34:46 
+
+34:46 professionalize the company and bring in
+34:48 
+
+34:48 experience management and grow up in a
+34:50 
+
+34:50 lot of ways one of the things that I
+34:52 
+
+34:52 would say is that before Dropbox the bar
+34:55 
+
+34:55 for business software was really low
+34:57 
+
+34:57 those of who around a couple decades ago
+34:60 
+
+34:60 probably remember when there was a
+35:02 
+
+35:02 dramatic difference between the software
+35:04 
+
+35:04 that came with your Mac and the software
+35:07 
+
+35:07 that you had to go use at work and one
+35:10 
+
+35:10 of the reasons Dropbox accessed the
+35:13 
+
+35:13 business Market was because people
+35:15 
+
+35:15 realized that they should have just as
+35:18 
+
+35:18 good of software and just as good of an
+35:19 
+
+35:19 experience at work if not better because
+35:21 
+
+35:21 they're paying a lot more for it and so
+35:24 
+
+35:24 it's one of those moments where Dropbox
+35:27 
+
+35:27 wiggled it way into a new market and
+35:30 
+
+35:30 they really changed expectations for
+35:32 
+
+35:32 business software forever now if you're
+35:35 
+
+35:35 at work you expect the same or better
+35:38 
+
+35:38 experience from Dropbox or figma or
+35:41 
+
+35:41 notion as you would from the apps on
+35:43 
+
+35:43 your iPhone and you won't tolerate any
+35:46 
+
+35:46 less I think that we have Drew and Raj
+35:48 
+
+35:48 to thank for that one of the enabling
+35:50 
+
+35:50 Technologies for dropbox's initial
+35:52 
+
+35:52 success was the emergence of cloud
+35:54 
+
+35:54 infrastructure with Amazon web services
+35:58 
+
+35:58 but a handful of years into dropbox's
+35:59 
+
+35:59 Journey the company reached a scale
+36:01 
+
+36:01 where it began to consider whether this
+36:03 
+
+36:03 dependence was a
+36:05 
+
+36:05 liability Dropbox had been founded on
+36:09 
+
+36:09 the realization that a startup could
+36:11 
+
+36:11 compete in a scale game by building on
+36:16 
+
+36:16 top of Amazon web services building on
+36:19 
+
+36:19 someone else's infrastructure in the
+36:21 
+
+36:21 early days that was really helpful
+36:23 
+
+36:23 because it allowed us to focus our
+36:25 
+
+36:25 engineering on just improving the
+36:28 
+
+36:28 product you know building apps on
+36:30 
+
+36:30 multiple platforms and just generally
+36:32 
+
+36:32 being able to move as quickly as
+36:34 
+
+36:34 possible but eventually storage was just
+36:37 
+
+36:37 such a core part of what Dropbox did
+36:40 
+
+36:40 that we we realized we could both build
+36:43 
+
+36:43 a better user experience but also save a
+36:45 
+
+36:45 lot of money if we built our own
+36:48 
+
+36:48 infrastructure what we realized was that
+36:50 
+
+36:50 controlling the infrastructure would
+36:53 
+
+36:53 allow us to build in a way that would
+36:55 
+
+36:55 make it impossible for anyone else to
+36:57 
+
+36:57 compete on the cost and ultimately would
+36:60 
+
+36:60 lead this thing to being a 70 to 80%
+37:02 
+
+37:02 gross margin business which you know
+37:03 
+
+37:03 which makes it look a lot like a pure
+37:05 
+
+37:05 software company I think the same kind
+37:07 
+
+37:07 of you know 20-some hubris that led us
+37:10 
+
+37:10 to go launch into fighting with these
+37:13 
+
+37:13 guys in the first place on the app side
+37:15 
+
+37:15 with Dropbox plus a lot of the
+37:18 
+
+37:18 engineering horsepower that we brought
+37:19 
+
+37:19 to solving the first problem like why
+37:21 
+
+37:21 can't we do this ourselves and so we
+37:23 
+
+37:23 started this initiative called Magic
+37:25 
+
+37:25 pocket to try to see if this was
+37:28 
+
+37:28 possible for us to be
+37:31 
+
+37:31 self-hosted dropbox's decision to pursue
+37:35 
+
+37:35 magic pocket was perhaps the biggest
+37:38 
+
+37:38 turning point in the company's history
+37:41 
+
+37:41 now it's one thing if you start a
+37:43 
+
+37:43 company and build on your own
+37:44 
+
+37:44 infrastructure from day one but
+37:47 
+
+37:47 dropbox's scale was absolutely gigantic
+37:50 
+
+37:50 it was a huge percentage of aws's
+37:54 
+
+37:54 overall infrastructure as far as we
+37:57 
+
+37:57 could tell we would first have to take
+37:59 
+
+37:59 the technology risk of trying to create
+38:01 
+
+38:01 our own infrastructure stack and data
+38:04 
+
+38:04 centers and then number two we would
+38:08 
+
+38:08 have to run the service mirrored on our
+38:11 
+
+38:11 own infrastructure and Amazon's for a
+38:13 
+
+38:13 period of time which would cost the
+38:15 
+
+38:15 company dearly in terms of cash so it
+38:18 
+
+38:18 was a huge technology bet it was a huge
+38:22 
+
+38:22 financial bet and it was a challenge of
+38:25 
+
+38:25 the scale that the company had not yet
+38:29 
+
+38:29 faced when I joined the server team in
+38:31 
+
+38:31 2012 I think we were about five maybe
+38:34 
+
+38:34 seven people and one of the engineers
+38:36 
+
+38:36 one of the first engineers at Dropbox
+38:38 
+
+38:38 was actually working on this project
+38:39 
+
+38:39 that I heard was magic pocket and my
+38:41 
+
+38:41 first reaction was wait this is not a
+38:43 
+
+38:43 one person project I mean this needs a
+38:45 
+
+38:45 team I mean who who thinks that one
+38:47 
+
+38:47 person can build this you know massive
+38:49 
+
+38:49 system by themselves there are handful
+38:52 
+
+38:52 of systems in the world that exist even
+38:55 
+
+38:55 today that can handle that scale of data
+38:58 
+
+38:58 my name is Akil Gupta and I was the VP
+39:00 
+
+39:00 of engineering at Dropbox we could never
+39:03 
+
+39:03 set up a team of 200 Engineers just
+39:05 
+
+39:05 working on this project so our approach
+39:07 
+
+39:07 was to just get the best of the people
+39:09 
+
+39:09 in the valley create a small team and
+39:11 
+
+39:11 that made it even more daunting my
+39:13 
+
+39:13 initial reaction was skepticism you know
+39:15 
+
+39:15 I initially thought I don't think this
+39:17 
+
+39:17 company is big enough I don't think this
+39:18 
+
+39:18 company has the the scale to pull off a
+39:20 
+
+39:20 project like this but over time it
+39:22 
+
+39:22 started becoming more and more realistic
+39:24 
+
+39:24 more and more believable my name is
+39:26 
+
+39:26 James calling I was a senior principal
+39:27 
+
+39:27 and ER at Dropbox so the first few years
+39:30 
+
+39:30 was focused on just building a great
+39:33 
+
+39:33 team uh that works very closely with uh
+39:36 
+
+39:36 the networking and the data center team
+39:39 
+
+39:39 to start testing out the idea and
+39:41 
+
+39:41 figuring out the architecture and that's
+39:43 
+
+39:43 why people like James callling we had a
+39:45 
+
+39:45 few more folks coming from Google and
+39:47 
+
+39:47 some really great uh new grads to create
+39:49 
+
+39:49 a team of maybe five or six people and
+39:51 
+
+39:51 they spent I would say a year just
+39:54 
+
+39:54 validating whether the system and the
+39:56 
+
+39:56 architecture will scale and help us
+39:58 
+
+39:58 achieve the goals that we are looking
+39:59 
+
+39:59 when we knew we had the software we knew
+40:02 
+
+40:02 that we had the basic shape of what we
+40:03 
+
+40:03 want to do I remember going to um suj
+40:08 
+
+40:08 who was I think at that point CFO or CEO
+40:10 
+
+40:10 and drewan Arash and making a case and
+40:12 
+
+40:12 saying look this is what we want to do
+40:15 
+
+40:15 and this is roughly the amount of money
+40:17 
+
+40:17 that we'll be spending we had probably
+40:20 
+
+40:20 $400 million of Revenue $500 million of
+40:22 
+
+40:22 Revenue something like that at that time
+40:24 
+
+40:24 frame and we anticipated the cost of the
+40:28 
+
+40:28 project including running the parallel
+40:30 
+
+40:30 infrastructure to be something like $300
+40:32 
+
+40:32 to $500 million so from a financial
+40:35 
+
+40:35 standpoint there were elements of it
+40:37 
+
+40:37 that looked like a bet the company play
+40:40 
+
+40:40 there were certainly people that were
+40:41 
+
+40:41 skeptical whether we could accomplish
+40:43 
+
+40:43 this you know in principle like so many
+40:46 
+
+40:46 companies were going from their own
+40:47 
+
+40:47 infrastructure to the cloud we're sort
+40:49 
+
+40:49 of going to be like the one one car on
+40:52 
+
+40:52 the road going the other direction but
+40:53 
+
+40:53 we're like why not and you know maybe we
+40:55 
+
+40:55 don't have a choice so we better you
+40:57 
+
+40:57 know we better start now we started
+41:00 
+
+41:00 aggressively building out the data
+41:03 
+
+41:03 centers the network and essentially
+41:05 
+
+41:05 spending capital capital that if you
+41:08 
+
+41:08 don't use those things quickly is going
+41:10 
+
+41:10 to get wasted so you can imagine we have
+41:12 
+
+41:12 a very small team that has to move very
+41:14 
+
+41:14 fast we built the main storage system
+41:17 
+
+41:17 software-wise in a period of 6 weeks
+41:20 
+
+41:20 which is almost hard to believe but we
+41:21 
+
+41:21 had a prototype written in Python before
+41:23 
+
+41:23 then we re rewrote the whole thing in go
+41:25 
+
+41:25 in six weeks and we had a big countdown
+41:27 
+
+41:27 clock uh in the office above our desks
+41:29 
+
+41:29 and we just coded non-stop for 6 weeks
+41:31 
+
+41:31 but an additional challenge was we're
+41:33 
+
+41:33 working with new hardware Technologies
+41:35 
+
+41:35 at the same time so this is not the kind
+41:36 
+
+41:36 of situation where you kind of walk into
+41:38 
+
+41:38 Best Buy and buy a bunch of of hard
+41:41 
+
+41:41 drives you have to have a big huge multi
+41:44 
+
+41:44 hundred million doll contracts with
+41:46 
+
+41:46 Hardware suppliers and there's also just
+41:48 
+
+41:48 the thing that I loved about it was
+41:49 
+
+41:49 where software meets the real world like
+41:51 
+
+41:51 you can have a a great idea in theory
+41:54 
+
+41:54 but there was a point in time where we
+41:55 
+
+41:55 were bringing up to 40 racks per day of
+41:57 
+
+41:57 of storage into the data center and i'
+41:59 
+
+41:59 get a message from the data center team
+42:01 
+
+42:01 saying we can't bring them in the
+42:02 
+
+42:02 loading dock is full so well we got to
+42:04 
+
+42:04 go back to the drawing board and rethink
+42:06 
+
+42:06 about how we're going to scale up or
+42:07 
+
+42:07 there was a point in time where two
+42:09 
+
+42:09 trucks crashed in one week that were
+42:10 
+
+42:10 carrying hardware and we had to keep
+42:12 
+
+42:12 growing the system or we' missed this
+42:14 
+
+42:14 deadline an added complexity was that
+42:17 
+
+42:17 dropbox's contract with AWS was up for
+42:20 
+
+42:20 Renewal a new contract with higher
+42:23 
+
+42:23 prices would go into effect in 6 months
+42:26 
+
+42:26 the team set out to that timeline to be
+42:29 
+
+42:29 fully migrated off AWS the cost of
+42:33 
+
+42:33 delaying the migration beyond that
+42:35 
+
+42:35 6-month window would have been extremely
+42:38 
+
+42:38 high and as you can imagine that means
+42:40 
+
+42:40 there's a clock ticking uh but we also
+42:43 
+
+42:43 have to make sure the systems are stable
+42:45 
+
+42:45 we had to go through a what we
+42:47 
+
+42:47 constructed ourselves a approving period
+42:49 
+
+42:49 we called the dark launch so we had this
+42:50 
+
+42:50 little contract of all these
+42:51 
+
+42:51 requirements we had to hit and we had to
+42:53 
+
+42:53 run the system for 3 months without any
+42:56 
+
+42:56 operational in without any errors to
+42:59 
+
+42:59 convince ourselves that we were ready
+43:00 
+
+43:00 for this we were mature enough to be
+43:02 
+
+43:02 able to delete this data from from S3
+43:05 
+
+43:05 the team made it halfway through its
+43:08 
+
+43:08 self-imposed 3month Target and then they
+43:11 
+
+43:11 found a
+43:14 
+
+43:14 bug you have to imagine where the
+43:17 
+
+43:17 engineers have been working weekends
+43:20 
+
+43:20 nights uh and they are seeing that in 3
+43:23 
+
+43:23 months we will declare Victory and then
+43:26 
+
+43:26 they hit a bug that was a little bit
+43:28 
+
+43:28 more demotivating for the team but the
+43:30 
+
+43:30 team stepped up I felt proud that they
+43:32 
+
+43:32 were honest to themselves they said look
+43:34 
+
+43:34 we have a bug we did sign a contract
+43:37 
+
+43:37 with the leadership that even if you
+43:38 
+
+43:38 find a bug even if it a small bug and it
+43:40 
+
+43:40 was a very small bug by the way we will
+43:42 
+
+43:42 reset the clock so they didn't deviate
+43:45 
+
+43:45 from that principle of we need to make
+43:47 
+
+43:47 sure that we do not put our customers
+43:49 
+
+43:49 data at risk they were disappointed but
+43:52 
+
+43:52 it speaks about the resiliency and the
+43:54 
+
+43:54 team that we had where they said let's
+43:57 
+
+43:57 learn from from it uh put in some more
+43:58 
+
+43:58 testing and validation and then the next
+44:00 
+
+44:00 3 months went
+44:02 
+
+44:02 flawlessly in March 2016 dropox
+44:05 
+
+44:05 announced its successful migration off
+44:09 
+
+44:09 AWS and we did have like a countdown
+44:12 
+
+44:12 clock a big a big um dashboard in the
+44:14 
+
+44:14 office showing the data moving off S3
+44:16 
+
+44:16 and the point in time where the last
+44:18 
+
+44:18 bite um was deleted from S3 there was
+44:20 
+
+44:20 some group of the company came and
+44:22 
+
+44:22 celebrated and and drank some champagne
+44:24 
+
+44:24 I missed this I was interviewing a new
+44:26 
+
+44:26 member for the team
+44:28 
+
+44:28 and I think maybe that's a little bit
+44:29 
+
+44:29 emblematic of how we felt at the time
+44:31 
+
+44:31 you know that was great and we
+44:32 
+
+44:32 celebrated for half an hour and then we
+44:34 
+
+44:34 looked at each other and said well I
+44:36 
+
+44:36 guess we got to own this system now and
+44:38 
+
+44:38 so there wasn't this sense of you build
+44:40 
+
+44:40 it and you're done right there was a
+44:41 
+
+44:41 sense of we built it it worked now we
+44:44 
+
+44:44 have to take on the responsibility of
+44:46 
+
+44:46 maintaining the system continuing to
+44:48 
+
+44:48 optimize the system um continuing to to
+44:50 
+
+44:50 scale the system um and so maybe that's
+44:53 
+
+44:53 an anticlimactic answer that there there
+44:56 
+
+44:56 wasn't really this big moment of relief
+44:58 
+
+44:58 but there was a feeling of satisfaction
+44:59 
+
+44:59 that we've built something that now we
+45:01 
+
+45:01 have to to keep on owning the decision
+45:03 
+
+45:03 to move to Magic pocket was sort of a
+45:05 
+
+45:05 transformative from a financial
+45:08 
+
+45:08 perspective allowed us to drop our
+45:11 
+
+45:11 margin significantly and make us a much
+45:13 
+
+45:13 more attractive company in in the public
+45:16 
+
+45:16 market so when the company went public I
+45:20 
+
+45:20 think it was obvious to not just the
+45:24 
+
+45:24 magic pocket team but to everyone in the
+45:27 
+
+45:27 company that one of the reasons one of
+45:29 
+
+45:29 the big reasons that the IPO was so
+45:31 
+
+45:31 successful and the company even today is
+45:34 
+
+45:34 profitable is because of this team and I
+45:37 
+
+45:37 would actually say when we went public
+45:40 
+
+45:40 The Joy the pride and the sense of
+45:42 
+
+45:42 achievement this team had was one of the
+45:45 
+
+45:45 best it probably was even more than what
+45:47 
+
+45:47 they had when they finished the
+45:48 
+
+45:48 migration because that was the business
+45:50 
+
+45:50 impact and the validation that we were
+45:52 
+
+45:52 working toward for the last four years
+45:55 
+
+45:55 today drop box has over $2.5 billion in
+45:60 
+
+45:60 annual revenue over 188 million paying
+46:03 
+
+46:03 users and 500,000 business customers a
+46:08 
+
+46:08 scale few imagined possible back in
+46:12 
+
+46:12 2007 the company has continued to
+46:14 
+
+46:14 develop its services for work and
+46:16 
+
+46:16 collaboration including products and
+46:18 
+
+46:18 tools that leverage
+46:20 
+
+46:20 AI what's happening in machine learning
+46:23 
+
+46:23 and AI is just super exciting and I I've
+46:25 
+
+46:25 been following it for a long time and
+46:28 
+
+46:28 Engineering is still my first love I
+46:29 
+
+46:29 mean I've been coding since I was a
+46:31 
+
+46:31 little kid and kind of back to coding
+46:33 
+
+46:33 like a little kid on weekends um and in
+46:36 
+
+46:36 a lot of ways Dropbox is solving the
+46:39 
+
+46:39 2024 version of the problem we started
+46:42 
+
+46:42 with because in the beginning was yeah I
+46:43 
+
+46:43 forgot my thumb drive but the problem I
+46:45 
+
+46:45 really had is like I can't find my stuff
+46:47 
+
+46:47 I can't organize my stuff I can't share
+46:49 
+
+46:49 my stuff I can't secure my stuff kind of
+46:51 
+
+46:51 funny you fast forward to today it's
+46:52 
+
+46:52 like you actually have a lot of the same
+46:54 
+
+46:54 genre of problem like I can't find my
+46:56 
+
+46:56 stuff at work can't organize it can't
+46:59 
+
+46:59 share it security challenges so problems
+47:02 
+
+47:02 are the same the shape is a little bit
+47:03 
+
+47:03 different so you know 100 files on your
+47:05 
+
+47:05 desktop have turned into 100 tabs in
+47:07 
+
+47:07 your browser and for years we've thought
+47:09 
+
+47:09 about like why is it easier to search
+47:11 
+
+47:11 all of human knowledge with Google
+47:12 
+
+47:12 search than like my company stuff or my
+47:14 
+
+47:14 own stuff and Dropbox is really well
+47:18 
+
+47:18 positioned to solve that problem and
+47:20 
+
+47:20 it's a pretty Natural Evolution for us
+47:22 
+
+47:22 to go from syncing your files to
+47:23 
+
+47:23 organizing all your cloud content and Ai
+47:27 
+
+47:27 and generative AI have opened the door
+47:28 
+
+47:28 to create some really awesome
+47:29 
+
+47:29 experiences that we've that I've wanted
+47:31 
+
+47:31 to build for a long time but can
+47:33 
+
+47:33 actually become real so the first
+47:35 
+
+47:35 example of that is we have a new product
+47:36 
+
+47:36 called Dropbox Dash AI powered Universal
+47:38 
+
+47:38 search so it'll search not just your
+47:40 
+
+47:40 files but your Google Docs and your
+47:43 
+
+47:43 email and your slack and your Salesforce
+47:45 
+
+47:45 from one place and I mean it's a
+47:47 
+
+47:47 fascinating transition from kind of
+47:49 
+
+47:49 being this like hyper growth thing to
+47:50 
+
+47:50 this like profitable low Growth Company
+47:53 
+
+47:53 and then investing for growth again and
+47:55 
+
+47:55 you know reaching top of as One S curve
+47:58 
+
+47:58 trying to grab on to another but we're
+48:01 
+
+48:01 just in the first inning there aren't
+48:03 
+
+48:03 very many good things about getting
+48:04 
+
+48:04 older but one thing that is good is
+48:06 
+
+48:06 perspective and having been able to see
+48:08 
+
+48:08 and kind of ride a bunch of different
+48:10 
+
+48:10 waves see a bunch of different cycles
+48:12 
+
+48:12 and we're in the most exciting part of
+48:15 
+
+48:15 these Cycles because every 10 years or
+48:17 
+
+48:17 so the kind of concrete unfreezes and
+48:19 
+
+48:19 then you know old buildings get knocked
+48:21 
+
+48:21 down new franchises get built
+48:23 
+
+48:23 everybody's kind of figuring it out and
+48:25 
+
+48:25 um that's the kind of thing I love
+48:27 
+
+48:27 that's the kind of puzzle I love to
+48:28 
+
+48:28 solve I I always think about all right
+48:30 
+
+48:30 you know a year from now 2 years from
+48:32 
+
+48:32 now 5 years from now what will I wish I
+48:34 
+
+48:34 had been learning today and some things
+48:36 
+
+48:36 are pretty tough like you're not going
+48:37 
+
+48:37 to be a great manager or leader in the
+48:39 
+
+48:39 next two weeks any more than you'll be a
+48:41 
+
+48:41 great guitar player great surgeon but
+48:43 
+
+48:43 you know over 2 years 5 years 10 years
+48:46 
+
+48:46 you can grow a lot and so I think
+48:48 
+
+48:48 thinking about that exponential learning
+48:50 
+
+48:50 rate probably makes a difference between
+48:52 
+
+48:52 the the founders that make it and the
+48:53 
+
+48:53 ones that don't there are different ways
+48:55 
+
+48:55 to to keep that learning rate up I think
+48:58 
+
+48:58 certainly reading and having community
+48:60 
+
+48:60 of people that are going through similar
+49:01 
+
+49:01 things having investors was really
+49:03 
+
+49:03 helpful in helping us navigate a lot of
+49:05 
+
+49:05 these turning points and focusing our
+49:08 
+
+49:08 attention on the right things but
+49:09 
+
+49:09 however you do it just recognize like
+49:11 
+
+49:11 that's a very primary job and like how
+49:13 
+
+49:13 do you cultivate the judgment and wisdom
+49:15 
+
+49:15 to keep scaling um as your job keeps
+49:18 
+
+49:18 changing every every year in pretty
+49:20 
+
+49:20 dramatic ways
+49:25 
+
+49:25 [Music]
+49:31 
+
+49:31 this has been Crucible moments a podcast
+49:34 
+
+49:34 from seoa
+49:35 
+
+49:35 [Music]
+49:42 
+
+49:42 Capal Crucible moments is produced by
+49:45 
+
+49:45 the Epic stories and Vox creative
+49:47 
+
+49:47 podcast teams along with seoa
+49:51 
+
+49:51 [Music]
+49:54 
+
+49:54 capital special thanks to Drew hon AR
+49:57 
+
+49:57 fosi Brian shrier suj josa Akil GTA and
+50:02 
+
+50:02 James calling for sharing their stories
+50:05 
+
+50:05 [Music]

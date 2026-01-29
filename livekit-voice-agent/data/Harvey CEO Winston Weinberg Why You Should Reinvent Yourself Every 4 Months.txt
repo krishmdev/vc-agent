@@ -1,0 +1,4747 @@
+00:00 I think people feel like you can't make
+00:02 
+
+00:02 mistakes and that is actually the
+00:04 
+
+00:04 opposite of how I feel. I would much
+00:06 
+
+00:06 rather people just try and make a
+00:09 
+
+00:09 decision and then it's wrong and a week
+00:12 
+
+00:12 later they adjust and change than they
+00:14 
+
+00:14 spend like 3 months not making a
+00:17 
+
+00:17 decision and by the time that that
+00:19 
+
+00:19 decision was made the entire market has
+00:21 
+
+00:21 changed. Our internal or has changed it
+00:24 
+
+00:24 doesn't make sense. And so right now I
+00:27 
+
+00:27 think my number one hiring criteria is
+00:29 
+
+00:29 literally just bias for action. Like
+00:30 
+
+00:30 that's it.
+00:48 
+
+00:48 Hey everybody, this is an episode with
+00:50 
+
+00:50 Winston Weinberg, the co-founder and CEO
+00:53 
+
+00:53 of Harvey. It's a particularly good time
+00:56 
+
+00:56 to interview Winston. Uh the company's
+00:58 
+
+00:58 at 190 million run rate and that's 4x
+01:03 
+
+01:03 from last year. They're at about 500
+01:06 
+
+01:06 employees which about 2x from last year.
+01:08 
+
+01:08 So the company is absolutely ripping.
+01:10 
+
+01:10 He's at the head of a real rocket ship.
+01:13 
+
+01:13 And what I was interested in
+01:14 
+
+01:14 interviewing him for is I just wanted to
+01:18 
+
+01:18 see what it was like when you're in a
+01:19 
+
+01:19 company growing that fast and scaling
+01:21 
+
+01:21 that fast. Like what's working, what's
+01:23 
+
+01:23 not, how does it scale? We got into some
+01:26 
+
+01:26 good stuff and he's got some real
+01:28 
+
+01:28 counterintuitive takes on scaling, on
+01:32 
+
+01:32 hiring, on building organizations,
+01:35 
+
+01:35 on go to market. Uh he is a very
+01:38 
+
+01:38 thoughtful fellow and I think you're
+01:41 
+
+01:41 going to enjoy the episode. At the end
+01:43 
+
+01:43 I'll come back and I'll give you some of
+01:46 
+
+01:46 my personal takes on it. Hope you like
+01:48 
+
+01:48 it. How does it feel to be the world's
+01:51 
+
+01:51 newest at least on paper billionaire?
+01:55 
+
+01:55 >> Is it is it newest? I actually not even
+01:57 
+
+01:57 sure if that's true.
+01:58 
+
+01:58 >> Who became a billionaire after you?
+02:01 
+
+02:01 >> I'm sure like five to six people from
+02:04 
+
+02:04 application layer companies. Not sure.
+02:07 
+
+02:07 Um, no. I mean, I I I know we we had a a
+02:10 
+
+02:10 thing in the New York Times and there's
+02:12 
+
+02:12 something in the New York Post about
+02:13 
+
+02:13 this recently. I mean, like Gabe and I
+02:15 
+
+02:15 still live in the same apartment. Like
+02:17 
+
+02:17 our lives like haven't changed much at
+02:20 
+
+02:20 all. Um, and I know like I think like
+02:21 
+
+02:21 some of those outlets kind of tried to
+02:23 
+
+02:23 make it be like, "Oh my god, like even
+02:25 
+
+02:25 billionaires can't afford like housing
+02:26 
+
+02:26 in San Francisco, etc." or something
+02:28 
+
+02:28 like that. You know, I mean, I I think
+02:30 
+
+02:30 like there is definitely a housing
+02:32 
+
+02:32 crisis in San Francisco. I don't think
+02:34 
+
+02:34 like my co-founder and I are exactly
+02:36 
+
+02:36 like the people that are massively
+02:38 
+
+02:38 struggling with it. Um, but I will say
+02:40 
+
+02:40 like we have lived in the same apartment
+02:42 
+
+02:42 for like 3 years. I think it's more just
+02:44 
+
+02:44 like why move? Like we like the
+02:45 
+
+02:45 apartment, we like living together. Like
+02:48 
+
+02:48 I don't know.
+02:49 
+
+02:49 >> I think what's interesting to other CEOs
+02:51 
+
+02:51 who are listening is I mean you're the
+02:54 
+
+02:54 head of a rocket ship. Um,
+02:58 
+
+02:58 and
+02:60 
+
+02:60 it's an interesting time in the history
+03:01 
+
+03:01 of the company to interview you.
+03:04 
+
+03:04 What's it like? What is surprised you?
+03:07 
+
+03:07 Like what is being a CEO in a company
+03:09 
+
+03:09 like this that people would be surprised
+03:12 
+
+03:12 about?
+03:13 
+
+03:13 >> Yeah, I mean definitely is how chaotic
+03:16 
+
+03:16 it is internally. That's for sure. Um, I
+03:18 
+
+03:18 think that's like I think there's
+03:20 
+
+03:20 there's two things I probably hear the
+03:21 
+
+03:21 most is one
+03:24 
+
+03:24 >> I think that we hopefully have done a
+03:26 
+
+03:26 lot of the very like hard things right.
+03:28 
+
+03:28 Um, and then a lot of the machine
+03:30 
+
+03:30 building we it's still not there like
+03:32 
+
+03:32 the machinery is still not there right.
+03:34 
+
+03:34 So like the direction I think of travel
+03:36 
+
+03:36 has been really good. We've made some
+03:38 
+
+03:38 good product decisions etc. But like a
+03:40 
+
+03:40 lot of the just like normal business
+03:42 
+
+03:42 machinery is is not in place on the
+03:44 
+
+03:44 product side and also on GTM. And so so
+03:47 
+
+03:47 what I find is maybe two things when
+03:49 
+
+03:49 people join is one they go oh I thought
+03:52 
+
+03:52 this would be here like you guys are at
+03:54 
+
+03:54 such a large scale you know
+03:56 
+
+03:56 >> by the way that never goes away.
+03:58 
+
+03:58 >> Yeah that probably never goes away right
+03:59 
+
+03:59 like oh [ __ ] I thought this would be
+04:00 
+
+04:00 here. Um that happens a lot and then I'd
+04:04 
+
+04:04 say the other thing too is like I hold
+04:06 
+
+04:06 ourselves and and Gabe does too and the
+04:08 
+
+04:08 rest of the leadership team does to
+04:10 
+
+04:10 extremely high expectations. Like the
+04:12 
+
+04:12 reality is I think we're executing well,
+04:14 
+
+04:14 but also this is just like a once-
+04:16 
+
+04:16 ina-lifetime time period for everyone.
+04:19 
+
+04:19 And so I think that definitely something
+04:21 
+
+04:21 that happens internally is you will get
+04:23 
+
+04:23 folks that from the outside they'll say,
+04:25 
+
+04:25 "Oh my god, like Harvey's doing so well,
+04:27 
+
+04:27 all these things." And then internally
+04:29 
+
+04:29 there'll be more, oh no, we're like not
+04:31 
+
+04:31 going fast enough or we're not doing
+04:33 
+
+04:33 right. There isn't tons of everyone sits
+04:36 
+
+04:36 around every Friday and you know claps
+04:38 
+
+04:38 etc. Um, and even at the end of the
+04:40 
+
+04:40 year, right? Like my memo to start the
+04:43 
+
+04:43 year was, "Hey, we did a good job last
+04:45 
+
+04:45 year, but these are all the things that
+04:46 
+
+04:46 we really now need to catch up to." Um,
+04:50 
+
+04:50 and I really believe that like it it
+04:51 
+
+04:51 feels like every six months you have to
+04:54 
+
+04:54 like reearn your position in the market
+04:56 
+
+04:56 and that trickles down through the whole
+04:58 
+
+04:58 company where you have to reearn your
+04:60 
+
+04:60 position at the company, including
+05:02 
+
+05:02 myself like and every six months you
+05:04 
+
+05:04 absolutely have to change and if you
+05:06 
+
+05:06 don't, I think you just break. Okay, I
+05:09 
+
+05:09 got a bunch of questions on that. When I
+05:11 
+
+05:11 was CEO, I was always criticized
+05:15 
+
+05:15 that I was very good at finding the
+05:18 
+
+05:18 problems.
+05:20 
+
+05:20 Uh very good at the worries
+05:25 
+
+05:25 and fi in like obsessing over what was
+05:27 
+
+05:27 going wrong and was not very good at
+05:30 
+
+05:30 celebrating the successes. Um I got
+05:33 
+
+05:33 every one of my reviews every year and I
+05:36 
+
+05:36 tried to get better. I just wasn't good
+05:37 
+
+05:37 at. Are you the same?
+05:40 
+
+05:40 >> Yes. And I I think like part of it is
+05:44 
+
+05:44 good, I think, and part of it is bad.
+05:45 
+
+05:45 And I'll give maybe a couple examples of
+05:47 
+
+05:47 it being good and bad. I think on the
+05:49 
+
+05:49 the good side,
+05:53 
+
+05:53 if if something's going super well, I
+05:54 
+
+05:54 just don't think about it, right? And
+05:56 
+
+05:56 I'm going to go spend time on something
+05:57 
+
+05:57 else, right?
+05:59 
+
+05:59 The bad side is sometimes that thing
+06:01 
+
+06:01 that's going super well would be doing
+06:04 
+
+06:04 10 times better if you spent more time
+06:06 
+
+06:06 on it, right? And so there have been
+06:08 
+
+06:08 instances in the past where I've said,
+06:10 
+
+06:10 you know, I've kind of someone at the
+06:12 
+
+06:12 company is doing incredibly well running
+06:13 
+
+06:13 an org, right? And I spent a lot of time
+06:16 
+
+06:16 with them, but I don't spend tons of
+06:17 
+
+06:17 time like hands-on running that part of
+06:19 
+
+06:19 the org, right? And then I realized
+06:21 
+
+06:21 after like a month or so, wait, this org
+06:24 
+
+06:24 could just be 10 times higher if we were
+06:26 
+
+06:26 spending more resources on it, if we
+06:27 
+
+06:27 promoted this person. and if we gave
+06:28 
+
+06:28 them more under them, etc., right? And
+06:30 
+
+06:30 so I think the the positive of it is it
+06:33 
+
+06:33 really is you should spend the most
+06:35 
+
+06:35 amount of your time unplugging or fixing
+06:38 
+
+06:38 the biggest problem at the company,
+06:40 
+
+06:40 right? And as we scale, a lot of what
+06:42 
+
+06:42 I'm doing is just figuring out how do I
+06:43 
+
+06:43 get bandwidth to actually do more and
+06:45 
+
+06:45 more of those, right? The bad side of
+06:47 
+
+06:47 that is sometimes there is something
+06:49 
+
+06:49 that it could be accelerating way more
+06:52 
+
+06:52 and you're overlooking it because you're
+06:54 
+
+06:54 it's going really well, right? That I
+06:57 
+
+06:57 think is the the thing I've gotten it
+06:58 
+
+06:58 wrong is when I'm only paying attention
+06:60 
+
+06:60 to the negative. So, it's not about
+07:02 
+
+07:02 celebration. It's more like, wait, this
+07:04 
+
+07:04 is working or this person is incredible
+07:05 
+
+07:05 at their job. They should go to try
+07:08 
+
+07:08 something even harder.
+07:09 
+
+07:09 >> I've been on the journey with you for
+07:11 
+
+07:11 the last 18 months or so. A lot has
+07:14 
+
+07:14 changed
+07:16 
+
+07:16 in in in very fast scaling like you're
+07:19 
+
+07:19 doing. What has broken? Like what breaks
+07:22 
+
+07:22 along the way? like at HubSpot just like
+07:24 
+
+07:24 as we feel like everything broke like
+07:27 
+
+07:27 what are the things that founders can
+07:29 
+
+07:29 learn
+07:30 
+
+07:30 >> from your journey over the last couple
+07:32 
+
+07:32 years. So, one of the first ones is
+07:36 
+
+07:36 because you're and it ties back to what
+07:37 
+
+07:37 you were saying because you're only
+07:39 
+
+07:39 paying attention to what is going like
+07:41 
+
+07:41 wrong right at the at the time at the
+07:43 
+
+07:43 company there. Every four months I'd say
+07:47 
+
+07:47 I get this like mental block that is
+07:50 
+
+07:50 there's too many things going wrong on
+07:53 
+
+07:53 at the company and I can't tend to all
+07:55 
+
+07:55 of them. that happens every month.
+07:58 
+
+07:58 >> And what that means, so far we've
+07:60 
+
+07:60 survived them every time,
+08:01 
+
+08:01 >> but what that means is I need to there's
+08:03 
+
+08:03 a different leadership hire I need.
+08:05 
+
+08:05 There's a different structure in the
+08:06 
+
+08:06 company that I need or there's something
+08:08 
+
+08:08 I need to cut from the company, right?
+08:11 
+
+08:11 >> And so it almost is like you have to
+08:13 
+
+08:13 just reinvent yourself as a founder
+08:17 
+
+08:17 every like four months or so, otherwise
+08:19 
+
+08:19 you are not going to be able to fix all
+08:21 
+
+08:21 of the things that are going wrong at
+08:22 
+
+08:22 the company. Um, and I feel that
+08:24 
+
+08:24 pressure like it's weird like it I'm
+08:27 
+
+08:27 like f and then once I do it I feel very
+08:29 
+
+08:29 good for like the first month and the
+08:31 
+
+08:31 second month I start feeling worse and
+08:32 
+
+08:32 then the third and then the fourth and
+08:34 
+
+08:34 all of a sudden it is like this pressure
+08:36 
+
+08:36 system and you have to figure out some
+08:38 
+
+08:38 way to like relieve that pressure system
+08:40 
+
+08:40 and then it unlocks the next thing of
+08:41 
+
+08:41 scale. So
+08:43 
+
+08:43 >> okay for me
+08:46 
+
+08:46 it was it often I don't know if this is
+08:48 
+
+08:48 I'm just kind of testing if it feels the
+08:50 
+
+08:50 same. For me it was kind of cranking
+08:52 
+
+08:52 along. Problems would start, dissension
+08:56 
+
+08:56 would start, things would get stuck. And
+08:59 
+
+08:59 like the thing that would unstuck it for
+09:02 
+
+09:02 me is a lot of the slowness or a lot of
+09:05 
+
+09:05 the things that were stuck was because
+09:08 
+
+09:08 decisions hadn't been made. Trade-offs
+09:10 
+
+09:10 hadn't been made. And a lot of that was
+09:13 
+
+09:13 my being unsure in delaying that
+09:15 
+
+09:15 decision. So every once in a while, I
+09:17 
+
+09:17 don't know if I was four months, be
+09:18 
+
+09:18 like, I just need to make some
+09:19 
+
+09:19 decisions. I might be wrong, but I need
+09:21 
+
+09:21 to make decisions so the damn war can
+09:23 
+
+09:23 move forward. Is that how you kind of
+09:25 
+
+09:25 feel about it?
+09:26 
+
+09:26 >> Yes, I the the only thing I would say is
+09:29 
+
+09:29 for better or for worse, I make
+09:31 
+
+09:31 decisions insanely fast. Um, which is
+09:33 
+
+09:33 definitely can be a a pretty big
+09:35 
+
+09:35 problem. What ends up happening is I
+09:37 
+
+09:37 haven't decided who is the decision
+09:39 
+
+09:39 maker,
+09:40 
+
+09:40 >> right? And then that doesn't scale.
+09:42 
+
+09:42 That's a huge problem. like almost every
+09:46 
+
+09:46 problem that I run into, we have si like
+09:48 
+
+09:48 six DRIs on and it's just it's
+09:50 
+
+09:50 impossible. Like no one was going to
+09:52 
+
+09:52 make a decision about this in the first
+09:53 
+
+09:53 place.
+09:54 
+
+09:54 >> Um and then I also think that one thing
+09:56 
+
+09:56 that I I definitely messed up on it in
+09:59 
+
+09:59 the beginning and I'm trying to get
+09:60 
+
+09:60 better at is when you're a really fast
+10:02 
+
+10:02 growing company and everyone feels like
+10:05 
+
+10:05 there's a lot of pressure on you, I
+10:07 
+
+10:07 think people feel like you can't make
+10:08 
+
+10:08 mistakes. And that is actually the
+10:11 
+
+10:11 opposite of how I feel. Like if I would
+10:14 
+
+10:14 much rather people just try and make a
+10:16 
+
+10:16 decision and then it's wrong and a week
+10:19 
+
+10:19 later they adjust and change then they
+10:22 
+
+10:22 spend like 3 months not making a
+10:24 
+
+10:24 decision. And I think something I did
+10:26 
+
+10:26 wrong and I am improving it is
+10:29 
+
+10:29 >> sometimes people would think that they
+10:31 
+
+10:31 were penalized or that I was upset about
+10:34 
+
+10:34 something or leadership was upset about
+10:35 
+
+10:35 something because they made the wrong
+10:37 
+
+10:37 decision and it failed.
+10:39 
+
+10:39 >> Not true. it's because they took six
+10:41 
+
+10:41 months to make the decision and by the
+10:43 
+
+10:43 time that that decision was made, the
+10:45 
+
+10:45 entire market has changed. Our internal
+10:47 
+
+10:47 orc has changed. It doesn't make sense.
+10:50 
+
+10:50 And so right now, I think my number one
+10:53 
+
+10:53 hiring criteria is literally just bias
+10:55 
+
+10:55 for action. Like that's it. It is just
+10:57 
+
+10:57 are you willing to take action and learn
+10:59 
+
+10:59 from those actions and then make a
+11:01 
+
+11:01 decision based off of that or iterate.
+11:03 
+
+11:03 >> Okay, let's talk about that. You've
+11:04 
+
+11:04 hired a lot of people. the exec team has
+11:07 
+
+11:07 gone through a lot of change for you,
+11:09 
+
+11:09 which I think is typical if you're
+11:11 
+
+11:11 growing that fast. Just kind of walk
+11:13 
+
+11:13 through some of those changes and what
+11:16 
+
+11:16 you've learned about hiring and that
+11:18 
+
+11:18 exec team. Like what are some of the
+11:20 
+
+11:20 ahas that have hit you on the way on the
+11:22 
+
+11:22 team? Like every founder I'm talking to,
+11:24 
+
+11:24 they want to talk about their team and
+11:25 
+
+11:25 it's like should I hire this person?
+11:27 
+
+11:27 Should I hire someone from the outside?
+11:28 
+
+11:28 Should I shoot this person?
+11:30 
+
+11:30 >> Um what should the or structure look
+11:32 
+
+11:32 like? You what what have you learned on
+11:34 
+
+11:34 all that?
+11:36 
+
+11:36 the okay so I can say the number one
+11:38 
+
+11:38 thing that I've learned from like a
+11:40 
+
+11:40 hiring perspective which is the main
+11:42 
+
+11:42 thing that I ask seuite now to do if I'm
+11:44 
+
+11:44 going to hire them or or VP as well is
+11:46 
+
+11:46 can you draw out what your org would
+11:49 
+
+11:49 look like in six in 3 months 6 months
+11:52 
+
+11:52 and a year
+11:53 
+
+11:53 >> it is insane how many people can't do
+11:55 
+
+11:55 that like it is wild to me that that is
+11:58 
+
+11:58 really hard for people to do
+12:00 
+
+12:00 >> um and there's different levels of your
+12:03 
+
+12:03 ability to do that right like there is
+12:05 
+
+12:05 the ability of can you describe like oh
+12:07 
+
+12:07 yeah I need a VP of this region and then
+12:09 
+
+12:09 a VP of that region and things like that
+12:11 
+
+12:11 whatever no it's actually like can you
+12:14 
+
+12:14 map out every single one of those hires
+12:17 
+
+12:17 what they do and can you think of who
+12:19 
+
+12:19 would be a good person or who would be a
+12:21 
+
+12:21 good fit for it right
+12:23 
+
+12:23 >> that is like the number one thing that I
+12:25 
+
+12:25 see when I hire leaders and they don't
+12:27 
+
+12:27 scale is they're they do the same thing
+12:30 
+
+12:30 that I do poorly or did poorly and I
+12:32 
+
+12:32 think I'm getting better at which is
+12:34 
+
+12:34 what is your leverage team around you,
+12:37 
+
+12:37 right? Like when you join like what and
+12:39 
+
+12:39 I think that there's a little bit of
+12:41 
+
+12:41 founders are told like you don't want to
+12:44 
+
+12:44 hire somebody who immediately wants to
+12:45 
+
+12:45 go hire more people, right? Like that's
+12:47 
+
+12:47 like oh they just want to build their
+12:48 
+
+12:48 org. Totally. But at the same time, you
+12:51 
+
+12:51 want them to create leverage as quickly
+12:53 
+
+12:53 as humanly possible. And if they don't
+12:55 
+
+12:55 create leverage for themselves,
+12:57 
+
+12:57 especially in the like glue parts of
+12:59 
+
+12:59 their function, right,
+13:01 
+
+13:01 >> they're not going to be able to do the
+13:02 
+
+13:02 the core competency of their function.
+13:04 
+
+13:04 it's not gonna happen.
+13:05 
+
+13:05 >> And I'd say that a lot of my time right
+13:08 
+
+13:08 now is actually spent with my leadership
+13:10 
+
+13:10 team figuring out who those lieutenants
+13:12 
+
+13:12 are for them and helping us all hire
+13:15 
+
+13:15 those. I had a problem with trust
+13:18 
+
+13:18 uh building HubSpot. Like there's always
+13:20 
+
+13:20 a very small group of people who I was
+13:23 
+
+13:23 comfortable with like just go do it and
+13:25 
+
+13:25 figure it out and I'm not really even
+13:27 
+
+13:27 going to worry about it. And it
+13:29 
+
+13:29 frustrated my team that I didn't have
+13:32 
+
+13:32 deeper trust. Do you have trust issues?
+13:34 
+
+13:34 >> Massive trust issues.
+13:37 
+
+13:37 Working on them. Working on them. Um,
+13:41 
+
+13:41 definitely. I mean, it's it is hard to
+13:43 
+
+13:43 let go. I also will say one thing I the
+13:47 
+
+13:47 hires that I've done a good job on are
+13:49 
+
+13:49 the ones where I had I was forced to do
+13:51 
+
+13:51 the role for like three months. Yeah.
+13:53 
+
+13:53 >> Um, I mean, I've never done this before.
+13:55 
+
+13:55 Like, I've never started a company
+13:56 
+
+13:56 before. And so if you have no idea, like
+13:59 
+
+13:59 if you have spent zero time doing that
+14:01 
+
+14:01 role, you are going to hire the wrong
+14:03 
+
+14:03 person 100% of the time. Like there's
+14:05 
+
+14:05 just no way, right?
+14:07 
+
+14:07 >> Um
+14:08 
+
+14:08 >> it's hard for me to then get out of
+14:09 
+
+14:09 that. Right.
+14:10 
+
+14:10 >> Right. Like it's hard for me to like,
+14:12 
+
+14:12 okay, that was my job and now I have to
+14:15 
+
+14:15 delegate part of that job.
+14:16 
+
+14:16 >> It's hard for me. Um, I'd say I kind of
+14:20 
+
+14:20 go back and forth on this of hire more
+14:22 
+
+14:22 leaders and give them more
+14:23 
+
+14:23 responsibility and then also expand the
+14:27 
+
+14:27 group that I talk to daily, right? So,
+14:30 
+
+14:30 one thing I'm trying to do a lot more of
+14:31 
+
+14:31 is we have like a in this is really
+14:33 
+
+14:33 simple things like in Slack we have a
+14:36 
+
+14:36 leadership like seuite and then we have
+14:38 
+
+14:38 VPs and heads of and some other folks
+14:40 
+
+14:40 that are really good IC's etc. Right?
+14:43 
+
+14:43 The leadership one is like seven people.
+14:45 
+
+14:45 The other one is almost 30. Right? All
+14:48 
+
+14:48 of my thoughts about the market, general
+14:51 
+
+14:51 thoughts about the company, product
+14:53 
+
+14:53 direction, all of those that I'm
+14:54 
+
+14:54 constantly putting in there, I used to
+14:56 
+
+14:56 put them into only the seven people. Now
+14:59 
+
+14:59 I try to put 95% of it into the 30.
+15:03 
+
+15:03 >> Why not the whole company?
+15:05 
+
+15:05 >> So for the whole company, I I thought
+15:07 
+
+15:07 about this too. I thought about just
+15:09 
+
+15:09 constantly posting in general chat. The
+15:12 
+
+15:12 problem with that is it just gets too
+15:13 
+
+15:13 distracting.
+15:14 
+
+15:14 >> Like we did that in the beginning of the
+15:16 
+
+15:16 company and it it just creates too many
+15:19 
+
+15:19 silos and and the reality is like some
+15:21 
+
+15:21 of the stuff I post in there is like
+15:23 
+
+15:23 crazy talk. Like it's like hey in like
+15:25 
+
+15:25 two years we should do XYZ or like this
+15:27 
+
+15:27 is a crazy idea and you don't want too
+15:29 
+
+15:29 many like you want people that
+15:31 
+
+15:31 understand that that doesn't mean okay
+15:32 
+
+15:32 let's go build that from scratch, right?
+15:35 
+
+15:35 Um you want to make sure that it's like
+15:36 
+
+15:36 a little bit tighter of a group than
+15:38 
+
+15:38 that. But I am trying to expand that
+15:40 
+
+15:40 group as much as I possibly can. Um cuz
+15:43 
+
+15:43 I don't want that. I don't believe in
+15:45 
+
+15:45 the whole idea of you can never talk to
+15:47 
+
+15:47 a skip level and you should never do
+15:48 
+
+15:48 that. Like I think that's [ __ ] Like
+15:50 
+
+15:50 I I don't believe in that at all. Okay.
+15:52 
+
+15:52 Let me just ask a couple of very
+15:54 
+
+15:54 tactical questions that CEOs ask me all
+15:56 
+
+15:56 the time.
+15:56 
+
+15:56 >> Yeah.
+15:57 
+
+15:57 >> Uh
+15:59 
+
+15:59 you just brought up heads of as a title.
+16:01 
+
+16:01 What the hell is that? Why do you have
+16:04 
+
+16:04 them? What's wrong with director or VP
+16:06 
+
+16:06 or manager? What the hell is a heads up?
+16:08 
+
+16:08 Like look at a LinkedIn profile.
+16:09 
+
+16:09 Somebody's a head of like what is that?
+16:12 
+
+16:12 >> Um I like head of actually more than
+16:14 
+
+16:14 director. Um I I think as simple as
+16:18 
+
+16:18 possible
+16:20 
+
+16:20 director makes it feel like you aren't
+16:22 
+
+16:22 as responsible for the one thing in the
+16:24 
+
+16:24 box basically and head of I feel like I
+16:28 
+
+16:28 know it's a subtle difference but it
+16:30 
+
+16:30 gives you more this person.
+16:33 
+
+16:33 That's a good explanation. I get that
+16:34 
+
+16:34 >> it's all ownership. Like I think of all
+16:36 
+
+16:36 titles as just ownership because the
+16:39 
+
+16:39 thing that everyone likes to do is just
+16:40 
+
+16:40 kind of squirm them out of ownership,
+16:42 
+
+16:42 right? And so if you can and it seems
+16:46 
+
+16:46 like all of the problems are just it's
+16:47 
+
+16:47 unclear who's in charge of this, right?
+16:50 
+
+16:50 >> Um and even again like going back to the
+16:53 
+
+16:53 I very much don't penalize mistakes, I
+16:55 
+
+16:55 penalize in action. If there isn't a
+16:58 
+
+16:58 head of for a particular thing, then
+17:01 
+
+17:01 you're in trouble. By the way, I have an
+17:03 
+
+17:03 analogy for you. The DRRi thing hit me
+17:05 
+
+17:05 square in the head because one of my
+17:06 
+
+17:06 employees said, you know, it's like it's
+17:09 
+
+17:09 like a plant. If you're going away for a
+17:11 
+
+17:11 month and you ask two friends to water
+17:13 
+
+17:13 your plant,
+17:15 
+
+17:15 >> the plant's definitely going to die.
+17:16 
+
+17:16 It's either going to get no water or
+17:19 
+
+17:19 just constant water and it's dead. Do
+17:21 
+
+17:21 you feel is that the way you feel about
+17:23 
+
+17:23 it?
+17:24 
+
+17:24 >> Yeah, 100%. That's how I feel about it.
+17:27 
+
+17:27 And then it takes it takes a long time.
+17:29 
+
+17:29 And so I'll give you an example of I
+17:31 
+
+17:31 think the job of a CEO is like actually
+17:35 
+
+17:35 figuring out who is that person, right?
+17:37 
+
+17:37 And so we were we were doing this pilot
+17:39 
+
+17:39 process. There were a bunch of people
+17:41 
+
+17:41 and I started with okay, should I like
+17:44 
+
+17:44 should I say, hey, someone needs to be
+17:46 
+
+17:46 in charge of this, right? That was
+17:47 
+
+17:47 option one. That usually doesn't go that
+17:50 
+
+17:50 well. Instead, it is this person should
+17:52 
+
+17:52 be in charge of this, right? And
+17:54 
+
+17:54 >> why why can't you get feedback on who
+17:56 
+
+17:56 should be in charge? And
+17:58 
+
+17:58 >> so you can do that, but sometimes that
+18:00 
+
+18:00 takes a really long time, right? And and
+18:03 
+
+18:03 what I've found is is a lot of times
+18:06 
+
+18:06 it's the same as a product road map to
+18:08 
+
+18:08 be honest. Like people when you say what
+18:12 
+
+18:12 is the P 0? What does almost everyone do
+18:14 
+
+18:14 on a product road map? Okay, so here's a
+18:16 
+
+18:16 P 0, but then also there's a P1 and then
+18:19 
+
+18:19 there's a P2 and actually let's have
+18:21 
+
+18:21 three P 0. And actually recently, last
+18:24 
+
+18:24 quarter, uh, someone I definitely made
+18:26 
+
+18:26 fun of them for doing this. They made a
+18:28 
+
+18:28 P00,
+18:30 
+
+18:30 >> okay?
+18:31 
+
+18:31 >> Because they didn't want the P. They're
+18:32 
+
+18:32 like, it's too hard to choose, right?
+18:34 
+
+18:34 And and the reason people do this, and I
+18:36 
+
+18:36 do this too, is you don't want to be
+18:38 
+
+18:38 wrong. And if you say there's three
+18:40 
+
+18:40 things that are P 0, you can hedge your
+18:42 
+
+18:42 bets. And if you built the wrong thing
+18:44 
+
+18:44 and you said, "Hey, this is a P 0." and
+18:46 
+
+18:46 then a quarter goes by and no one bought
+18:48 
+
+18:48 it or no one used it, you can be like,
+18:51 
+
+18:51 you know, sorry, if you have three P 0,
+18:53 
+
+18:53 you can be like, oh well, we built all
+18:54 
+
+18:54 three and like some people kind of like
+18:56 
+
+18:56 this one and some people kind of like
+18:57 
+
+18:57 this and it's like very diffuse. If you
+18:59 
+
+18:59 said at the beginning of the quarter,
+19:00 
+
+19:00 this is the P 0. You built that and no
+19:02 
+
+19:02 one used it. I mean,
+19:05 
+
+19:05 >> you built the wrong thing. And it's the
+19:06 
+
+19:06 same as the DRRi where I think people
+19:09 
+
+19:09 get uncomfortable with having the DRRi
+19:11 
+
+19:11 because then there's shared there's
+19:13 
+
+19:13 shared ownership if you don't do it. and
+19:15 
+
+19:15 you can say there's three people in
+19:16 
+
+19:16 charge of it and then they can all go
+19:18 
+
+19:18 like this and point at who whose fault
+19:20 
+
+19:20 it is, right?
+19:21 
+
+19:21 >> If you just say that person's in charge,
+19:23 
+
+19:23 they're in charge. And it could, you
+19:26 
+
+19:26 know, it might not be their fault, but
+19:27 
+
+19:27 like at the end of the day, like when we
+19:28 
+
+19:28 put up quarter numbers, when we have
+19:30 
+
+19:30 product numbers or anything like that,
+19:32 
+
+19:32 it's my fault no matter what. Like no
+19:34 
+
+19:34 matter what, our performance as a
+19:35 
+
+19:35 company is my fault no matter what. And
+19:38 
+
+19:38 if you have a DRRi in each spot, there
+19:40 
+
+19:40 is somebody who is like that and feels
+19:42 
+
+19:42 that about each thing.
+19:43 
+
+19:43 >> Yeah.
+19:44 
+
+19:44 One of the things I noticed about being
+19:46 
+
+19:46 a CEO is as the company got bigger, we
+19:50 
+
+19:50 could get less things done. Yeah.
+19:52 
+
+19:52 >> But we get them done very well. Have you
+19:55 
+
+19:55 noticed that as well? And how many big
+19:57 
+
+19:57 things are you working on right now?
+19:59 
+
+19:59 >> Too many big things is the answer.
+20:01 
+
+20:01 >> Okay. How many you got?
+20:01 
+
+20:01 >> Um,
+20:04 
+
+20:04 >> we would have four and I would try to
+20:06 
+
+20:06 get it down to four.
+20:08 
+
+20:08 >> Uh, like productwise, we have way too
+20:10 
+
+20:10 many things. And I keep doing this. I
+20:12 
+
+20:12 mean part of it is we're building a
+20:13 
+
+20:13 platform and I do think you can build a
+20:14 
+
+20:14 lot faster now and you can build these
+20:16 
+
+20:16 things in parallel.
+20:17 
+
+20:17 >> Um but we still I am by far the main
+20:20 
+
+20:20 problem here of every quarter I end up
+20:21 
+
+20:21 being like no no no we can do more we
+20:23 
+
+20:23 can do more we can do more
+20:25 
+
+20:25 >> and then as like company initiatives we
+20:27 
+
+20:27 also do too many things. Um and like
+20:30 
+
+20:30 we're in 60 countries operating across
+20:33 
+
+20:33 we have in-house customers and then we
+20:35 
+
+20:35 have law firms they have different needs
+20:37 
+
+20:37 >> and we are honestly still trying to do
+20:39 
+
+20:39 kind of it all. Um, and so I do think we
+20:43 
+
+20:43 are getting better at saying no, this is
+20:46 
+
+20:46 the P0 and that we do really well.
+20:50 
+
+20:50 >> I don't think it's we're not at the
+20:52 
+
+20:52 stage where we do four if we pushed it
+20:54 
+
+20:54 down to four things. I think we do
+20:56 
+
+20:56 incredibly well at that. We're still at
+20:58 
+
+20:58 the stage where I think the P 0 will
+20:60 
+
+21:00 always be done extremely well as long as
+21:02 
+
+21:02 there's repetition and not changing the
+21:04 
+
+21:04 P 0 every week, which I definitely do
+21:06 
+
+21:06 sometimes. Okay.
+21:08 
+
+21:08 >> Um, for sure. Um, for sure. Um, as long
+21:11 
+
+21:11 as there's consistency about that P 0, I
+21:15 
+
+21:15 think that we can do a P 0 well and then
+21:16 
+
+21:16 we'll do everything else pretty well and
+21:19 
+
+21:19 we'll do them well enough to eventually
+21:20 
+
+21:20 they'll become a P 0, then you jump onto
+21:22 
+
+21:22 that. And I do think you can take more
+21:23 
+
+21:23 bets right now. Like you can you can
+21:26 
+
+21:26 build really fast.
+21:26 
+
+21:26 >> More [ __ ] done now.
+21:28 
+
+21:28 >> You can. Yeah.
+21:29 
+
+21:29 >> Okay. I have a lot more questions.
+21:30 
+
+21:30 There's two on the org.
+21:33 
+
+21:33 There's two of the CEOs I work with that
+21:35 
+
+21:35 are in the process of layering a very
+21:37 
+
+21:37 good employee.
+21:39 
+
+21:39 Um,
+21:41 
+
+21:41 and there's a lot of stress that CEO is
+21:44 
+
+21:44 feeling a lot of stress about that
+21:46 
+
+21:46 layering about the signal and sense of
+21:47 
+
+21:47 the company about that individual
+21:50 
+
+21:50 employee losing that employee. You've
+21:53 
+
+21:53 done a ton of this type of thing.
+21:56 
+
+21:56 >> Mhm.
+21:57 
+
+21:57 >> Advice to those CEOs who are in that
+21:58 
+
+21:58 process. tell them about it. Uh, and
+22:01 
+
+22:01 I've done this wrong too. Like I have
+22:05 
+
+22:05 this is I mean it's it's actually
+22:07 
+
+22:07 weirdly similar to the P 0 problem of I
+22:09 
+
+22:09 think the reason people do this wrong is
+22:11 
+
+22:11 because they're scared, right? Where
+22:12 
+
+22:12 like they're scared of making the wrong
+22:14 
+
+22:14 decision and they're scared of I mean a
+22:17 
+
+22:17 lot of things, right? Like it takes time
+22:18 
+
+22:18 to hire somebody really well like to
+22:20 
+
+22:20 hire someone who's very good at this job
+22:22 
+
+22:22 and do you want to bring them along for
+22:24 
+
+22:24 that hiring process, right? And in some
+22:26 
+
+22:26 instances I have, some instances I
+22:28 
+
+22:28 haven't, right? And you have to
+22:31 
+
+22:31 basically say this is how I do am doing
+22:34 
+
+22:34 it going forward and this is my plan is
+22:36 
+
+22:36 I am going to bring that person along
+22:38 
+
+22:38 for the hiring process. And this maybe
+22:40 
+
+22:40 goes back to what I said before which is
+22:43 
+
+22:43 I think there are almost everyone that
+22:45 
+
+22:45 is doing their part of the company can
+22:47 
+
+22:47 do a better job than me. And if they
+22:48 
+
+22:48 can't I am hiring someone who can. Like
+22:51 
+
+22:51 I should not be the best person at every
+22:53 
+
+22:53 single role at the company. God know
+22:55 
+
+22:55 that's terrible. You're a terrible
+22:56 
+
+22:56 leader if that's what you're doing. But
+22:58 
+
+22:58 I do know how to do all of the roles to
+23:01 
+
+23:01 at least a the company doesn't go to
+23:03 
+
+23:03 zero state, right? And so number one is
+23:08 
+
+23:08 make sure you understand every part of
+23:10 
+
+23:10 your company so that if that person did
+23:12 
+
+23:12 leave that superstar, you could take
+23:14 
+
+23:14 their place while you hire the new
+23:16 
+
+23:16 person. You need to be able to do that.
+23:17 
+
+23:17 That will reduce your fear. Two, bring
+23:20 
+
+23:20 that person along. If you really think
+23:22 
+
+23:22 they're that good, it is worth the
+23:24 
+
+23:24 chance that they will stay. And the only
+23:27 
+
+23:27 way they will stay is if they trust and
+23:29 
+
+23:29 respect you. And they have to trust that
+23:31 
+
+23:31 their career growth can be really high
+23:33 
+
+23:33 even with a new person on. And so you
+23:35 
+
+23:35 just have to take that risk. Um, and
+23:37 
+
+23:37 I've done I've done an okay job of this.
+23:40 
+
+23:40 There's been instances where I've done a
+23:41 
+
+23:41 really bad job.
+23:42 
+
+23:42 >> Um, and the reason I've done the bad job
+23:44 
+
+23:44 is because
+23:46 
+
+23:46 >> I'm scared that that person is just
+23:48 
+
+23:48 going to leave and we're going to have a
+23:49 
+
+23:49 huge gap at the company. But at the same
+23:51 
+
+23:51 time, I don't think that person is the
+23:53 
+
+23:53 right for 3 months from now or 6 months
+23:55 
+
+23:55 from now. we're going too fast. And you
+23:57 
+
+23:57 you just you have to feel a confident in
+23:59 
+
+23:59 your own ability to fill and b you just
+24:02 
+
+24:02 have to trust them and bring them along
+24:03 
+
+24:03 for the ride. And if you do bring them
+24:05 
+
+24:05 along and they do want to stay, they're
+24:07 
+
+24:07 going to even work. They're going to be
+24:08 
+
+24:08 better at their job and they're going to
+24:10 
+
+24:10 learn from that person. They're going to
+24:11 
+
+24:11 act like they're going to treat them
+24:12 
+
+24:12 like a mentor. I got layered twice in my
+24:14 
+
+24:14 care. So I'm old. I got layered twice in
+24:16 
+
+24:16 my career. Uh once
+24:21 
+
+24:21 there was a lot of heads up and a lot of
+24:23 
+
+24:23 feedback that I I I wasn't quite ready
+24:26 
+
+24:26 and that we might bring someone over me
+24:29 
+
+24:29 and then they did it and I was involved
+24:31 
+
+24:31 in the interviewing process and I stayed
+24:32 
+
+24:32 and I was happy and I learned a lot from
+24:34 
+
+24:34 the person they brought over me.
+24:36 
+
+24:36 >> Yeah.
+24:36 
+
+24:36 >> In another instance I kind of got happy
+24:39 
+
+24:39 talk and I thought I was doing pretty
+24:42 
+
+24:42 well. Maybe didn't think I was killing
+24:43 
+
+24:43 it but pretty well. And out of the blue
+24:45 
+
+24:45 they said, "Hey, we're going to bring
+24:46 
+
+24:46 someone over you." I I left in that
+24:48 
+
+24:48 case. And my sense on this stuff is just
+24:53 
+
+24:53 surprises are never good. Feedback's
+24:55 
+
+24:55 underrated.
+24:57 
+
+24:57 Um and overall, if I look at the history
+24:60 
+
+24:60 through HubSpot and PTC on my whole
+25:01 
+
+25:01 career, like when layering happens,
+25:04 
+
+25:04 about 50% of the time that person who
+25:06 
+
+25:06 gets layered a year later is gone.
+25:08 
+
+25:08 >> Yeah. Well, it could be worse. gone is
+25:12 
+
+25:12 actually potentially better than what
+25:14 
+
+25:14 could happen, which is they're there but
+25:17 
+
+25:17 they're not they're dragging everything
+25:18 
+
+25:18 down. Yeah. Right. And and especially if
+25:20 
+
+25:20 they were a star because that like if
+25:24 
+
+25:24 they were a star then that's an
+25:25 
+
+25:25 incredibly important part of your
+25:27 
+
+25:27 business and they will really block the
+25:29 
+
+25:29 person from joining, right? Like they
+25:31 
+
+25:31 massively block that person. Um I don't
+25:33 
+
+25:33 know. I I we've we're going through more
+25:36 
+
+25:36 of those transitions right now. And
+25:39 
+
+25:39 >> to me, if I could redo some of the
+25:41 
+
+25:41 stuff, it would be bring them along even
+25:43 
+
+25:43 more. I see.
+25:44 
+
+25:44 >> Like even more. Bring them along and
+25:45 
+
+25:45 just risk it.
+25:47 
+
+25:47 >> Okay. Uh
+25:50 
+
+25:50 you hired Katie Burke, HubSpot's chief
+25:52 
+
+25:52 people officer.
+25:53 
+
+25:53 >> Yep.
+25:53 
+
+25:53 >> Uh
+25:55 
+
+25:55 tell me about her, why you hired her,
+25:59 
+
+25:59 and then you just promoted her to COO.
+26:02 
+
+26:02 What does a COO do inside a company like
+26:05 
+
+26:05 yours and should companies like yours?
+26:07 
+
+26:07 Ben Horowitz wrote a really good book
+26:08 
+
+26:08 called The Hard Thing About Hard Things
+26:11 
+
+26:11 >> and he was very negative on the idea of
+26:13 
+
+26:13 a COO
+26:15 
+
+26:15 >> and I read his book about a month before
+26:19 
+
+26:19 I pitched him at Andre and Horowitz and
+26:23 
+
+26:23 I had just hired a COO Sherman great guy
+26:26 
+
+26:26 and I needed a COO. I needed someone to
+26:29 
+
+26:29 keep my trains on time and we went into
+26:31 
+
+26:31 the pitch. my co-founder Dharmash,
+26:32 
+
+26:32 myself and JD and we sat in the order JD
+26:35 
+
+26:35 first then me and then Darmash and I had
+26:37 
+
+26:37 forgotten that Ben didn't like the idea
+26:40 
+
+26:40 of COOs
+26:43 
+
+26:43 and we and we got to intros and the
+26:46 
+
+26:46 first person with JD who had just
+26:48 
+
+26:48 started the COO and Ben just was like
+26:51 
+
+26:51 why and what are you doing and like was
+26:54 
+
+26:54 kind of really negative on that idea. it
+26:56 
+
+26:56 turned out to work for us. And Ben may
+26:58 
+
+26:58 have changed his mind about this.
+26:59 
+
+26:59 Actually, he's coming on the pod. I'm
+27:01 
+
+27:01 gonna ask him about this. And he's
+27:02 
+
+27:02 obviously very wise. Uh
+27:06 
+
+27:06 what does your COO actually do?
+27:09 
+
+27:09 >> Yeah. I mean, so a couple things here.
+27:12 
+
+27:12 One, uh there are one nice thing about
+27:15 
+
+27:15 GTM is you have objective measures,
+27:17 
+
+27:17 right? So you can be like, okay, did
+27:18 
+
+27:18 they hit these quotas, etc. Each and you
+27:21 
+
+27:21 can kind of test, right? Harder on
+27:23 
+
+27:23 engineering like sure you can do like
+27:24 
+
+27:24 code shipped, etc., But not an insanely
+27:27 
+
+27:27 good metric, right? One maybe metric for
+27:29 
+
+27:29 Katie. Um, last year we just did like
+27:32 
+
+27:32 our year in review or whatever today and
+27:34 
+
+27:34 I sent I think it was like 85,000 slacks
+27:36 
+
+27:36 or something like sent that that many
+27:38 
+
+27:38 slacks.
+27:39 
+
+27:39 >> She was she was I think second and it
+27:42 
+
+27:42 was like 81,000
+27:44 
+
+27:44 or something. Third place was in like
+27:46 
+
+27:46 the 60s something like that. So there is
+27:50 
+
+27:50 maybe a little bit of an objective
+27:51 
+
+27:51 measure. Not that Slack scent is like
+27:53 
+
+27:53 performance, but it does have some
+27:56 
+
+27:56 indicator of like how involved you are
+27:59 
+
+27:59 in the company, right? And she Katie
+28:03 
+
+28:03 basically was was the COO probably 6
+28:06 
+
+28:06 months ago, I would say, in all but
+28:08 
+
+28:08 title, right? And what that I think it's
+28:10 
+
+28:10 different for every company, right? So I
+28:13 
+
+28:13 am definitely one of the founders who I
+28:15 
+
+28:15 like being knowing about every single
+28:17 
+
+28:17 part of the company. So like I like
+28:19 
+
+28:19 thinking about operating cadences. I
+28:21 
+
+28:21 like working on product. I also like
+28:22 
+
+28:22 working on GTM. I like working in
+28:24 
+
+28:24 partnerships. I work like working on
+28:25 
+
+28:25 hiring. I like working on everything. So
+28:27 
+
+28:27 it there are some COOs where what you do
+28:30 
+
+28:30 is basically, hey, you go run GTM, you
+28:33 
+
+28:33 go run every part of the business and
+28:34 
+
+28:34 I'm only going to work on product and
+28:36 
+
+28:36 that's what I'm doing. And that is
+28:37 
+
+28:37 awesome and it works for a bunch of
+28:38 
+
+28:38 folks.
+28:39 
+
+28:39 >> There's a bunch of companies doing that.
+28:41 
+
+28:41 >> Tons. And and at that point, I think the
+28:43 
+
+28:43 role of the COO is quite literally just
+28:45 
+
+28:45 like GTM. Like a lot a lot of it is GTM.
+28:48 
+
+28:48 Like trains on time, sure. I think a lot
+28:50 
+
+28:50 of it is they just they kind of
+28:51 
+
+28:51 basically run GTM
+28:54 
+
+28:54 >> that that's not what Katie's doing. What
+28:56 
+
+28:56 Katie is doing is basically every other
+28:59 
+
+28:59 part of the business um combined. And so
+29:02 
+
+29:02 she her role is like a lot closer to a
+29:06 
+
+29:06 partner like throughout the entire
+29:08 
+
+29:08 process. So you know I have like an
+29:11 
+
+29:11 operating cadence personally. I have a
+29:13 
+
+29:13 it's called like the list. Um, and it
+29:15 
+
+29:15 basically has all of the things like all
+29:18 
+
+29:18 of my docs, all the things I'm tracking,
+29:19 
+
+29:19 etc. And then it has like a daily and
+29:21 
+
+29:21 then I copy paste and refresh it every
+29:23 
+
+29:23 single day. Um, and you go through.
+29:25 
+
+29:25 >> Wait, talk about a little more detail. I
+29:27 
+
+29:27 want to hear that.
+29:28 
+
+29:28 >> Yeah. Um, so I have a list that is
+29:29 
+
+29:29 basically like I have focus or operating
+29:31 
+
+29:31 cadence of the company, which is like
+29:34 
+
+29:34 all of our quarterly goals, things like
+29:35 
+
+29:35 that. And then I have uh like product
+29:38 
+
+29:38 road maps, PRDS, everything like that.
+29:40 
+
+29:40 And then I have things that I want to
+29:42 
+
+29:42 remember. You're actually on there. I
+29:44 
+
+29:44 have basically a quote from every
+29:45 
+
+29:45 person. Yours is no. Uh it's just Brian
+29:48 
+
+29:48 and then dash no is what it says
+29:50 
+
+29:50 actually.
+29:51 
+
+29:51 There's some other ones on there, but
+29:52 
+
+29:52 I'll I'll tell you you're actually on
+29:54 
+
+29:54 there. Um and and then I have basically
+29:58 
+
+29:58 like metrics that I'm tracking. So like
+29:60 
+
+29:60 renewal rates, like product usage, DAU
+30:02 
+
+30:02 over MAU, and then I have like star
+30:04 
+
+30:04 focus, which is basically like one thing
+30:07 
+
+30:07 I care about a lot right now is
+30:09 
+
+30:09 improving our the UX UI of the company.
+30:11 
+
+30:11 So I'll put like every single doc that
+30:13 
+
+30:13 is relevant to that and to tracking that
+30:15 
+
+30:15 and any of the ideas, right? And then I
+30:17 
+
+30:17 have my daily list, right? And on that
+30:21 
+
+30:21 daily list, every morning like when I
+30:24 
+
+30:24 wake up, I go through that list and
+30:26 
+
+30:26 there's multiple things on there that I
+30:28 
+
+30:28 send to Katie
+30:30 
+
+30:30 >> and Katie is able to go through and
+30:32 
+
+30:32 these aren't like small things, there's
+30:34 
+
+30:34 big things and they're all
+30:35 
+
+30:35 crossunctional
+30:36 
+
+30:36 >> like what
+30:37 
+
+30:37 >> um like we need to revamp our our pilot
+30:39 
+
+30:39 process. Yeah.
+30:40 
+
+30:40 >> Right. So that's a a really good example
+30:41 
+
+30:41 where revamping pilot process revol is
+30:44 
+
+30:44 engineering, product, design, GTM, post
+30:47 
+
+30:47 sales. I mean it's literally every
+30:50 
+
+30:50 marketing. It's every single part of
+30:52 
+
+30:52 >> all of it. Right?
+30:54 
+
+30:54 >> And I will like originally it was I
+30:57 
+
+30:57 would just try to do all of that myself
+30:59 
+
+30:59 and wrangle all of that. Right? Now it's
+31:01 
+
+31:01 hey could you help me with this? Come up
+31:03 
+
+31:03 with a decision and then bubble up three
+31:05 
+
+31:05 decisions to me. And what ended up
+31:07 
+
+31:07 happening from that process is like a
+31:08 
+
+31:08 lot of people were involved. my chief
+31:09 
+
+31:09 business officer was involved, CTO's
+31:11 
+
+31:11 involved, had a product VP of product,
+31:13 
+
+31:13 all of those people, right?
+31:14 
+
+31:14 >> And then I still just made a decision at
+31:16 
+
+31:16 the end of the day, right?
+31:18 
+
+31:18 >> And if you can scale that, like if you
+31:20 
+
+31:20 can get a COO who can start doing that,
+31:23 
+
+31:23 you're basically just duplicating all of
+31:25 
+
+31:25 the crossf functional initiatives that
+31:27 
+
+31:27 you can handle. Like earlier on you
+31:29 
+
+31:29 said, hey, how do you pick your
+31:31 
+
+31:31 priorities? How do you make sure you're
+31:32 
+
+31:32 doing all of these things? This is how
+31:34 
+
+31:34 you increase leverage. Like this is how
+31:36 
+
+31:36 you have someone that can help with
+31:37 
+
+31:37 this. The other thing that she's
+31:39 
+
+31:39 incredible at, because she did come from
+31:41 
+
+31:41 being a chief people officer, is the
+31:43 
+
+31:43 number one thing at our company is
+31:45 
+
+31:45 hiring. And I don't mean hiring new
+31:48 
+
+31:48 people necessarily. I mean hiring,
+31:50 
+
+31:50 retention, making sure that there's one
+31:51 
+
+31:51 person in charge of each role and making
+31:54 
+
+31:54 sure that the people are really good are
+31:56 
+
+31:56 not being pushed down by people above
+31:58 
+
+31:58 them that are not as good. Right? In the
+32:01 
+
+32:01 number one most important thing at the
+32:03 
+
+32:03 company, nothing else is even close,
+32:04 
+
+32:04 right?
+32:05 
+
+32:05 >> She's really good at that. And so she's
+32:07 
+
+32:07 very very helpful at thinking about what
+32:10 
+
+32:10 is the org chart, what should this look
+32:11 
+
+32:11 like, and who is that person, who should
+32:13 
+
+32:13 be in charge of that, who should be
+32:15 
+
+32:15 working across from XYZ. And she's very
+32:17 
+
+32:17 good at also hiring, which is again like
+32:19 
+
+32:19 the number one thing that I'm trying to
+32:21 
+
+32:21 do.
+32:21 
+
+32:21 >> Okay, let me ask you just a superh
+32:23 
+
+32:23 tactical question. Do you also have some
+32:25 
+
+32:25 kind of admin assistant? And what does
+32:28 
+
+32:28 that admin do?
+32:30 
+
+32:30 >> Yeah, so I have a chief of staff and the
+32:32 
+
+32:32 the biggest difference
+32:33 
+
+32:33 >> So not an assistant, a chief of staff.
+32:34 
+
+32:34 >> Yeah, chief of staff. And she's also
+32:36 
+
+32:36 incredible. And the biggest difference
+32:38 
+
+32:38 is she manages everything that I need to
+32:41 
+
+32:41 do. Like my entire life is personal, but
+32:44 
+
+32:44 everything that I need to individually
+32:46 
+
+32:46 do myself and Katie manages everything
+32:49 
+
+32:49 that is crossf functional that I need to
+32:51 
+
+32:51 do, right? So fix the pilots, right?
+32:54 
+
+32:54 That is not something that my chief of
+32:56 
+
+32:56 staff would do. That is something that
+32:58 
+
+32:58 Katie would do, right? But if it is,
+33:01 
+
+33:01 hey, I need to figure out how to change
+33:02 
+
+33:02 my schedule and how to basically monitor
+33:05 
+
+33:05 all of these different things. I want to
+33:07 
+
+33:07 get these data feeds from all of these
+33:09 
+
+33:09 different sources of the company to put
+33:11 
+
+33:11 into my dashboard and I want to track
+33:13 
+
+33:13 all those things. That is something
+33:14 
+
+33:14 chief of staff would do.
+33:16 
+
+33:16 >> Okay. What about like admin stuff like
+33:19 
+
+33:19 somebody who books your travel, somebody
+33:21 
+
+33:21 who you know get does all your [ __ ] like
+33:24 
+
+33:24 all your personal like there's so much.
+33:26 
+
+33:26 >> Yeah, I have that as well. I have that
+33:28 
+
+33:28 as well. Um I I took way too long to do
+33:31 
+
+33:31 that. I was still I was book
+33:33 
+
+33:33 >> So you have someone that does?
+33:35 
+
+33:35 >> Yeah, I have someone now. Yeah, but for
+33:36 
+
+33:36 a while I was booking my flights until
+33:39 
+
+33:39 like two and a half years in or
+33:41 
+
+33:41 something. Something like that. It was
+33:43 
+
+33:43 so stupid. I mean it was the dumbest
+33:45 
+
+33:45 thing ever. Like I remember uh I spent
+33:48 
+
+33:48 there was the the day that I broke
+33:50 
+
+33:50 actually and then I decided I needed to
+33:52 
+
+33:52 hire someone for this was I spent 6
+33:54 
+
+33:54 hours trying to book a British Airways
+33:57 
+
+33:57 flight or something like that and it was
+33:59 
+
+33:59 literally six hours and I it was just
+34:01 
+
+34:01 all day and it was something about like
+34:04 
+
+34:04 my card they thought it was fraud
+34:06 
+
+34:06 because I had never you know it was like
+34:07 
+
+34:07 a $6,000 flight or something crazy like
+34:10 
+
+34:10 that from SF to to UK and I had never
+34:14 
+
+34:14 paid for anything like that on my flight
+34:15 
+
+34:15 or like personally and JP Morgan was
+34:18 
+
+34:18 just like complete fraud and it was like
+34:20 
+
+34:20 six hours and I thought back to that the
+34:22 
+
+34:22 other day and I I went to Gabe and he
+34:24 
+
+34:24 was just like what the [ __ ] have you
+34:25 
+
+34:25 been doing all day?
+34:27 
+
+34:27 >> Yeah.
+34:27 
+
+34:27 >> What is that?
+34:29 
+
+34:29 >> Very interesting. Let's talk a bit about
+34:32 
+
+34:32 let's go back in time
+34:35 
+
+34:35 and your go to market.
+34:39 
+
+34:39 Um you have some interesting ideas about
+34:42 
+
+34:42 go to market uh in some thesis on it.
+34:46 
+
+34:46 Can you talk about like how does a
+34:48 
+
+34:48 random company that almost no one's
+34:50 
+
+34:50 heard of a CEO who's doing it for the
+34:53 
+
+34:53 first time that doesn't have some
+34:55 
+
+34:55 amazing long history in legal? How do
+34:58 
+
+34:58 you go about nailing your first five
+35:01 
+
+35:01 customers?
+35:03 
+
+35:03 >> Yeah. Uh, I mean it is just insane
+35:06 
+
+35:06 repetition and trying things until they
+35:08 
+
+35:08 work. The the thing that AI allows you
+35:10 
+
+35:10 to do is personalize everything to an
+35:12 
+
+35:12 insane degree. Um, and now there's
+35:15 
+
+35:15 incredible tools like Clay and etc for
+35:17 
+
+35:17 like actually doing this at scale, but
+35:18 
+
+35:18 you could do it by yourself, right? So
+35:20 
+
+35:20 the thing that I would used to do for
+35:22 
+
+35:22 all lawyers is you can if you're a
+35:25 
+
+35:25 litigator, everything needs to be filed
+35:27 
+
+35:27 with a federal court if you're if you're
+35:29 
+
+35:29 in federal court, right? And most big
+35:31 
+
+35:31 law attorneys, you have to file
+35:32 
+
+35:32 everything, right? So, it's online. It's
+35:33 
+
+35:33 on this like document repository called
+35:35 
+
+35:35 Pacer. And I would basically download
+35:38 
+
+35:38 the last thing that they submitted to
+35:40 
+
+35:40 court. And then I would try to come up
+35:42 
+
+35:42 with prompts that were like, "This is
+35:44 
+
+35:44 bad."
+35:45 
+
+35:45 >> Yeah.
+35:45 
+
+35:45 >> Um and because they're a litigator and
+35:48 
+
+35:48 I'm basically attacking something that
+35:50 
+
+35:50 they just wrote. Y
+35:51 
+
+35:51 >> they would instantly read the screen. Um
+35:54 
+
+35:54 it was risky because sometimes the like
+35:57 
+
+35:57 basically the system, you know, Harvey
+35:58 
+
+35:58 would hallucinate and then it would just
+36:00 
+
+36:00 be over. But the times that they got it
+36:02 
+
+36:02 right, it was over. Like, and and if you
+36:05 
+
+36:05 think about doing a Zoom with a lawyer,
+36:07 
+
+36:07 it's like, I don't know how you got on
+36:09 
+
+36:09 this Zoom. Like, I don't really pay
+36:10 
+
+36:10 attention to this. Half of them were
+36:11 
+
+36:11 doing this, like literally like this on
+36:13 
+
+36:13 the Zoom, right? And then you bring up,
+36:16 
+
+36:16 hey, I saw that you filed XYZ, you know,
+36:18 
+
+36:18 motion to dismiss and in this case, do
+36:21 
+
+36:21 you want to see Harvey analyze it and
+36:23 
+
+36:23 say why it's a bad argument? And they
+36:25 
+
+36:25 would jump at that and they would go
+36:27 
+
+36:27 through everything. You can do on the
+36:28 
+
+36:28 transactional side, too. you just, you
+36:30 
+
+36:30 know, do like a merger agreement or
+36:31 
+
+36:31 something like that on Edgar. Um, and so
+36:34 
+
+36:34 a lot of it was personalized. I think
+36:36 
+
+36:36 the other thing that we did on GTM is we
+36:38 
+
+36:38 wanted to do the hardest ones first. So
+36:40 
+
+36:40 >> tell me about that.
+36:41 
+
+36:41 >> Yeah. So
+36:42 
+
+36:42 >> kind of counterintuitive.
+36:44 
+
+36:44 >> The thesis was kind of twofold. One is
+36:48 
+
+36:48 I'm insane still crazy bullish on the
+36:51 
+
+36:51 models improving and just basically all
+36:54 
+
+36:54 of the underlying systems improving. I
+36:56 
+
+36:56 know it sounds like duh. Now, uh, in
+36:59 
+
+36:59 2022, it was not at all, right? It
+37:02 
+
+37:02 really wasn't. Um, and so there are two
+37:07 
+
+37:07 thesis here. One is the lower-end work.
+37:10 
+
+37:10 It's just like, why not use CHBT, right?
+37:12 
+
+37:12 For like way way like lower-end legal
+37:14 
+
+37:14 work. It's like I've was concerned that
+37:16 
+
+37:16 the models are just going to get so good
+37:18 
+
+37:18 that it's like, yeah, I can review your
+37:19 
+
+37:19 lease. Like that's just going to happen,
+37:20 
+
+37:20 right? Um, and so building a bunch of a
+37:23 
+
+37:23 solution for that at the end of the day,
+37:25 
+
+37:25 I don't know how much value you would
+37:26 
+
+37:26 add, right? So that's one. Two is if you
+37:30 
+
+37:30 can figure out all of the massive use
+37:33 
+
+37:33 cases that one of these giant firms has,
+37:37 
+
+37:37 you kind of have like a perfect design
+37:39 
+
+37:39 partner for the entire legal industry,
+37:41 
+
+37:41 right? Like the reason these firms exist
+37:44 
+
+37:44 is because when you're doing a, you
+37:45 
+
+37:45 know, a massive M&A that involves like
+37:48 
+
+37:48 60 businesses that operate in 60
+37:50 
+
+37:50 countries, the work is insanely complex.
+37:53 
+
+37:53 You need like an antitrust lawyer in
+37:54 
+
+37:54 every single jurisdiction, right? That's
+37:56 
+
+37:56 why big law firms exist. That's why you
+37:58 
+
+37:58 have these crazy amount of specialists
+38:00 
+
+38:00 in every area is because they can
+38:02 
+
+38:02 basically jump onto these massive
+38:04 
+
+38:04 massive transactions or litigations.
+38:06 
+
+38:06 >> And so really good design partners.
+38:08 
+
+38:08 >> Their requirements are brutal.
+38:11 
+
+38:11 >> It's compliance requirements. Why not go
+38:13 
+
+38:13 after a mid-tier firm that doesn't have
+38:17 
+
+38:17 to go through a long decision cycle? the
+38:19 
+
+38:19 partner can decide herself and there's
+38:21 
+
+38:21 not all this compliance and the deal
+38:23 
+
+38:23 just happens and then move up. That's
+38:24 
+
+38:24 the conventional wisdom. Why you're
+38:27 
+
+38:27 torturing?
+38:28 
+
+38:28 >> Well, I mean, so a couple things here.
+38:30 
+
+38:30 Weirdly, revenue grow like revenue
+38:33 
+
+38:33 growth like how fast can you gain
+38:35 
+
+38:35 revenue was like not something we were
+38:37 
+
+38:37 thinking about. Like another thing to
+38:38 
+
+38:38 think about here is like I didn't know
+38:39 
+
+38:39 what ARR was in the beginning.
+38:41 
+
+38:41 >> Yep.
+38:41 
+
+38:41 >> I didn't even know what that was. Like I
+38:43 
+
+38:43 didn't even know of like oh company
+38:44 
+
+38:44 health like net new AR quarter quarter
+38:46 
+
+38:46 growth like things like that. And to me,
+38:48 
+
+38:48 I was just thinking about how do you
+38:50 
+
+38:50 build the best product and not just the
+38:52 
+
+38:52 best product, but how do you like
+38:53 
+
+38:53 actually show that this is going to
+38:54 
+
+38:54 transform the industry? And the reality
+38:56 
+
+38:56 is if you can get one of these top firms
+38:59 
+
+38:59 that have just never ever talked about
+39:02 
+
+39:02 adopting technology before, doing
+39:03 
+
+39:03 anything cutting edge to do it, that
+39:06 
+
+39:06 would be a wakeup call, like a wow, this
+39:09 
+
+39:09 is actually going to be a change, right?
+39:11 
+
+39:11 And it's the same on corporates. So now
+39:15 
+
+39:15 like last quarter I think it was like
+39:17 
+
+39:17 42% of our revenue actually came from
+39:19 
+
+39:19 large corporates um not law firms right
+39:22 
+
+39:22 and of those large corporates the
+39:24 
+
+39:24 majority of them are fortune 100 not
+39:26 
+
+39:26 even fortune 500 fortune 100 right and
+39:29 
+
+39:29 the the reason why is because
+39:31 
+
+39:31 >> if you can figure out how to sell to a
+39:32 
+
+39:32 large bank and if you can get past
+39:35 
+
+39:35 security review on a large bank and do
+39:36 
+
+39:36 all the implementation on a large bank
+39:38 
+
+39:38 you can sell everybody else right um and
+39:41 
+
+39:41 so some of it is just do the hard thing
+39:42 
+
+39:42 >> back to the first ones like so Many of
+39:44 
+
+39:44 the CEOs I'm working with get their
+39:46 
+
+39:46 first accounts because they work for
+39:48 
+
+39:48 that company before or their VC knew
+39:51 
+
+39:51 somebody at that company. It doesn't
+39:53 
+
+39:53 sound like that was the game you played.
+39:56 
+
+39:56 Like usually it's you'reworked into your
+39:58 
+
+39:58 first 10 pilots. It sounds like you kind
+40:01 
+
+40:01 of cold bold your way into your early
+40:03 
+
+40:03 deals.
+40:03 
+
+40:03 >> Uh 100% that. Um I mean the firm that I
+40:07 
+
+40:07 worked at uh no no shade towards them,
+40:09 
+
+40:09 but they were definitely like customer I
+40:11 
+
+40:11 think like 200 or something like that.
+40:13 
+
+40:13 Um, so it was definitely later later
+40:14 
+
+40:14 down the down the line. Um, and I also
+40:17 
+
+40:17 I've been practicing law for like eight
+40:19 
+
+40:19 months. Um, so I didn't I I didn't have
+40:22 
+
+40:22 any connections, right? Um, it really
+40:24 
+
+40:24 was just could you get people that would
+40:27 
+
+40:27 respond to your LinkedIn message? I mean
+40:28 
+
+40:28 just LinkedIn like you message a
+40:30 
+
+40:30 thousand people like you just keep doing
+40:31 
+
+40:31 that like tens of thousands at this
+40:33 
+
+40:33 point, right? Um, and I still get a lot
+40:35 
+
+40:35 of lawyers that will I mean now it's
+40:37 
+
+40:37 like hard to even go through my
+40:38 
+
+40:38 LinkedIn, but like I still get all the
+40:40 
+
+40:40 time like I I message them in 2022. They
+40:45 
+
+40:45 message me back and be like, "Oh, love
+40:47 
+
+40:47 Harvey, right?" or something like that.
+40:48 
+
+40:48 Okay.
+40:49 
+
+40:49 >> Happens all the time. Yeah. Happens all
+40:50 
+
+40:50 the time. And so a lot of it was just
+40:52 
+
+40:52 reach out to as many people as you
+40:53 
+
+40:53 possibly can. If somebody gets on the
+40:55 
+
+40:55 phone, you know, to get them to stop
+40:57 
+
+40:57 doing this while they're on the call
+40:59 
+
+40:59 with you, show them something personal.
+41:02 
+
+41:02 I think a lot of CEOs miss this. The way
+41:05 
+
+41:05 I described HubSpot's go to market was I
+41:08 
+
+41:08 called it the pain factory.
+41:11 
+
+41:11 And the way it worked was we built a
+41:14 
+
+41:14 little application
+41:16 
+
+41:16 called website grader where you put your
+41:18 
+
+41:18 URL in and it gave you a score of 1 to
+41:20 
+
+41:20 100 on how much mojo you had on the
+41:22 
+
+41:22 internet, how many links you had, your
+41:24 
+
+41:24 SEO power, your blog, your social and
+41:29 
+
+41:29 um if I wanted to get into XYZ company,
+41:32 
+
+41:32 I put XYZ.com in there. I get the
+41:34 
+
+41:34 report. I would email it right to the
+41:36 
+
+41:36 CEO and the CEO would be like, whoa, I
+41:39 
+
+41:39 got a 64 out of 100.
+41:42 
+
+41:42 What the hell do I do to get to 100?
+41:45 
+
+41:45 >> Yeah. Yeah. I don't have any marketing
+41:46 
+
+41:46 sales rep like talk to this guy. So, I
+41:48 
+
+41:48 immediately
+41:51 
+
+41:51 got some credibility through it.
+41:53 
+
+41:53 >> Um, and then the sales rep would show up
+41:55 
+
+41:55 and like explain the report and show a
+41:57 
+
+41:57 demo. It's like I you have your tooth
+41:59 
+
+41:59 really hurts. You got a lot of pain in
+42:01 
+
+42:01 there. Would you like me to fix it?
+42:02 
+
+42:02 would you like me to like put a filling
+42:03 
+
+42:03 in there and put the Mcn numb it? Yeah,
+42:06 
+
+42:06 that's HubSpot.
+42:08 
+
+42:08 And so it's sort of the pain factory.
+42:09 
+
+42:09 And I think what you did is exactly what
+42:11 
+
+42:11 we did.
+42:12 
+
+42:12 >> It's exactly the same thing. And it's
+42:13 
+
+42:13 interesting because one thing I think
+42:15 
+
+42:15 about a lot is like as we're selling to
+42:18 
+
+42:18 in-house teams versus law firms. I think
+42:21 
+
+42:21 about and I think about other AI
+42:23 
+
+42:23 application layer companies and which
+42:25 
+
+42:25 vertical they're in as like are you
+42:27 
+
+42:27 trying to build something that automates
+42:29 
+
+42:29 the core competency, right? And that is
+42:32 
+
+42:32 going to cause friction. And what's
+42:34 
+
+42:34 interesting is we had less friction
+42:36 
+
+42:36 actually in the beginning because we
+42:39 
+
+42:39 were weren't pitching to firms. We were
+42:41 
+
+42:41 pitching to lawyers,
+42:43 
+
+42:43 >> individual lawyers. Yeah.
+42:45 
+
+42:45 >> And so their pain was I don't want to do
+42:47 
+
+42:47 this particular piece of my job. Like I
+42:49 
+
+42:49 don't want to go through tens of
+42:51 
+
+42:51 thousands of documents and you know do
+42:53 
+
+42:53 this massive like sign off thing, right?
+42:56 
+
+42:56 Like closing checklist. I don't want to
+42:57 
+
+42:57 do that, right? That's not a part fun
+42:58 
+
+42:58 part about being a lawyer. Now you have
+43:01 
+
+43:01 to kind of change your pitch because
+43:02 
+
+43:02 you're not just pitching to the lawyers
+43:04 
+
+43:04 like the users, you're pitching to the
+43:07 
+
+43:07 law firms too and they law firms have
+43:10 
+
+43:10 different pain points especially as AI
+43:12 
+
+43:12 develops than just the lawyers
+43:14 
+
+43:14 themselves do, right? So you have to
+43:16 
+
+43:16 kind of like change your pitch. Um, and
+43:18 
+
+43:18 that also impacts kind of what you're
+43:20 
+
+43:20 building. Whereas on the in-house side,
+43:23 
+
+43:23 you're still actually just pitching to
+43:24 
+
+43:24 the lawyers. Like that's it. Like you're
+43:26 
+
+43:26 you're just pitching to them, right? And
+43:28 
+
+43:28 it's because you know you get like a big
+43:30 
+
+43:30 a big customer like Bridgewwater or
+43:32 
+
+43:32 something like that like Bridgewwater's
+43:33 
+
+43:33 core competency like they're not trying
+43:36 
+
+43:36 like they don't provide legal services
+43:39 
+
+43:39 right that's not like what they are
+43:40 
+
+43:40 doing. Yeah. and that helps the
+43:42 
+
+43:42 business, right? And because of that, it
+43:45 
+
+43:45 is seen as less threatening because it
+43:47 
+
+43:47 is not the core competency of what
+43:49 
+
+43:49 Bridgewwater does, right? Um, and I I
+43:51 
+
+43:51 just find that interesting because you
+43:53 
+
+43:53 kind of have to balance the pitch of
+43:55 
+
+43:55 like this is good for your users and the
+43:57 
+
+43:57 pain point for your users versus what is
+43:59 
+
+43:59 actually the broader ecosystem painpoint
+44:02 
+
+44:02 for the law firm or for the corporation
+44:04 
+
+44:04 or whatever it is. And as AI I think
+44:07 
+
+44:07 gets better and better, you got to think
+44:08 
+
+44:08 about not just the individual user, but
+44:10 
+
+44:10 what is the pain point of that industry?
+44:12 
+
+44:12 >> Yep. Uh you didn't know anybody in these
+44:16 
+
+44:16 big law firms. You also had never sold
+44:19 
+
+44:19 anything.
+44:20 
+
+44:20 >> Yeah.
+44:21 
+
+44:21 >> Or built a go to market engine.
+44:24 
+
+44:24 And so many of the CEOs I'm working with
+44:25 
+
+44:25 are the same. Like by the way, you're
+44:28 
+
+44:28 quite different than most of the CEOs I
+44:30 
+
+44:30 work with because most of them are
+44:31 
+
+44:31 software developers.
+44:32 
+
+44:32 >> Yeah.
+44:33 
+
+44:33 >> And deeply technical and product people.
+44:35 
+
+44:35 and then they built something amazing.
+44:36 
+
+44:36 You're like, I have to sell this thing.
+44:41 
+
+44:41 Uh just talk a little bit about that and
+44:44 
+
+44:44 how did you learn your craft and how did
+44:46 
+
+44:46 you because my sense is one of your
+44:48 
+
+44:48 superpowers is you can sell.
+44:51 
+
+44:51 >> I I so I think there's a couple ways to
+44:54 
+
+44:54 do it. One one thing I want to say in
+44:56 
+
+44:56 the beginning too, the times that I'm
+44:58 
+
+44:58 best at product is when I'm selling the
+45:00 
+
+45:00 most.
+45:01 
+
+45:01 >> Yes.
+45:02 
+
+45:02 >> It's not even close. Apologize.
+45:04 
+
+45:04 >> It's like actually not even close. Like
+45:05 
+
+45:05 the times I did this in
+45:08 
+
+45:08 >> I think it was like Q3 or Q2 of last
+45:10 
+
+45:10 year. I spent too much time not talking
+45:13 
+
+45:13 to customers and like sitting down in
+45:16 
+
+45:16 San Francisco and being like this is the
+45:18 
+
+45:18 road map for the next like year.
+45:20 
+
+45:20 >> Yeah.
+45:20 
+
+45:20 >> I missed like I missed so many product
+45:23 
+
+45:23 things by doing that. Like I made wrong
+45:24 
+
+45:24 product decisions. There were so many
+45:26 
+
+45:26 things that were wrong. I do best by far
+45:30 
+
+45:30 when I'm talking to customers 247 and
+45:33 
+
+45:33 talk and working on product
+45:35 
+
+45:35 simultaneously. If you do one or the
+45:37 
+
+45:37 other, it actually like doesn't work at
+45:38 
+
+45:38 all. So, I want to start by that. Um,
+45:40 
+
+45:40 but the the the learning to sell thing I
+45:44 
+
+45:44 think the most important thing is you
+45:47 
+
+45:47 have to adjust to who your buyer is
+45:50 
+
+45:50 personally. Like it is people reading.
+45:53 
+
+45:53 Um, and there's like some instances
+45:55 
+
+45:55 when, you know, you'll get on a call
+45:57 
+
+45:57 with a big group, right? A big a big
+45:59 
+
+45:59 group of folks, and it's very obvious
+46:02 
+
+46:02 that one of the people on those calls is
+46:05 
+
+46:05 like trying on purpose to make you sound
+46:08 
+
+46:08 bad for a particular reason.
+46:10 
+
+46:10 >> Like, you don't know why, but it's just
+46:12 
+
+46:12 like very clear.
+46:13 
+
+46:13 >> The number one thing to do is to meet
+46:16 
+
+46:16 with that person one-on-one.
+46:17 
+
+46:17 >> And no one wants to do that cuz
+46:19 
+
+46:19 everyone's like, "Ah, that was
+46:20 
+
+46:20 uncomfortable. I didn't enjoy that."
+46:22 
+
+46:22 Right? But that's actually the person
+46:24 
+
+46:24 that there's something else going on.
+46:26 
+
+46:26 Whether it's like they tried to build
+46:27 
+
+46:27 something in house and it didn't quite
+46:29 
+
+46:29 work and you're kind of threatening to
+46:30 
+
+46:30 them or whatever it is.
+46:32 
+
+46:32 >> And then if you turn them around and
+46:34 
+
+46:34 they're they become champions, it
+46:36 
+
+46:36 completely changes everything. And so
+46:38 
+
+46:38 it's kind of what you said before where
+46:39 
+
+46:39 honestly it's like a lot of it is just
+46:41 
+
+46:41 like find the thing that hurts and like
+46:43 
+
+46:43 you don't want to end up doing almost
+46:45 
+
+46:45 entirely. That's what you want to do.
+46:46 
+
+46:46 Like if you push on the the two green
+46:48 
+
+46:48 field stuff, it actually doesn't work.
+46:51 
+
+46:51 >> Okay. A lot of my CEO founders, some are
+46:54 
+
+46:54 in really sexy businesses and it's easy
+46:56 
+
+46:56 to hire developers to build sexy stuff.
+46:58 
+
+46:58 >> Yeah,
+47:00 
+
+47:00 >> don't take this in any offense, but
+47:02 
+
+47:02 building legal software doesn't feel
+47:04 
+
+47:04 that sexy. How are you able to attract
+47:07 
+
+47:07 top tier engineering talent on building
+47:09 
+
+47:09 software for lawyers? Yeah, the biggest
+47:12 
+
+47:12 reason is because we have to work. There
+47:15 
+
+47:15 are a lot of actually like frontier
+47:17 
+
+47:17 things that we need to solve that the
+47:19 
+
+47:19 big labs will maybe eventually solve,
+47:21 
+
+47:21 but they aren't working on it right now.
+47:22 
+
+47:22 I'll give you a really good example of
+47:24 
+
+47:24 this. Um, so we launched memory this
+47:27 
+
+47:27 morning, right? And this is going to
+47:28 
+
+47:28 become super important for us.
+47:30 
+
+47:30 >> There's a lot of ways to do memory. Um,
+47:32 
+
+47:32 but the most important version for us is
+47:34 
+
+47:34 almost everything that lawyers do is
+47:36 
+
+47:36 document-based, right? Right now the way
+47:39 
+
+47:39 that chatbt memory anthropic memory etc.
+47:42 
+
+47:42 there is actually no like understanding
+47:44 
+
+47:44 of these are the documents as artifacts
+47:45 
+
+47:45 and things like that right
+47:47 
+
+47:47 >> super irritating
+47:48 
+
+47:48 >> super irritating but that's something
+47:50 
+
+47:50 that they will solve eventually
+47:53 
+
+47:53 >> if we don't solve that our product goes
+47:55 
+
+47:55 to zero
+47:56 
+
+47:56 >> right and so there's actually a tons of
+47:60 
+
+47:60 frontier type things that I think these
+48:03 
+
+48:03 application layer compan do
+48:04 
+
+48:04 >> okay so they're hard problems
+48:06 
+
+48:06 >> really hard problems that Everyone is
+48:09 
+
+48:09 going to have to solve eventually, but
+48:11 
+
+48:11 we have to solve sooner because of just
+48:13 
+
+48:13 the nature of our customer base, right?
+48:16 
+
+48:16 Another example of this is
+48:18 
+
+48:18 >> we are we already have something where
+48:20 
+
+48:20 you can basically collaborate with AI
+48:23 
+
+48:23 systems in our platform and outside
+48:25 
+
+48:25 folks. So not just like multiple people
+48:28 
+
+48:28 from your own corporation working on
+48:30 
+
+48:30 something, but I'm a big bank and I want
+48:32 
+
+48:32 to collaborate with 10 law firms.
+48:34 
+
+48:34 >> Yep. also something the big labs have
+48:36 
+
+48:36 not solved yet right
+48:38 
+
+48:38 >> and we first they haven't
+48:40 
+
+48:40 >> they haven't super irritating and they
+48:42 
+
+48:42 will to be clear I'm just saying there's
+48:45 
+
+48:45 so many of these domains where I think
+48:47 
+
+48:47 it's really exciting to work at the
+48:48 
+
+48:48 company and building software there
+48:50 
+
+48:50 because you're working on frontier
+48:52 
+
+48:52 systems that for sure open AI and
+48:54 
+
+48:54 anthropic are thinking about but going
+48:56 
+
+48:56 back to our P zeros it's like it's way
+48:59 
+
+48:59 down that
+49:00 
+
+49:00 >> and so you get to work on that and you
+49:02 
+
+49:02 might be able to solve that better as a
+49:03 
+
+49:03 company I you should otherwise your
+49:05 
+
+49:05 company's over better than they can
+49:07 
+
+49:07 faster and that I think is really
+49:09 
+
+49:09 exciting for people.
+49:10 
+
+49:10 >> I want to talk about you a little bit.
+49:12 
+
+49:12 >> Okay.
+49:12 
+
+49:12 >> Something I noticed about you and then I
+49:14 
+
+49:14 I I spoke to some people who work for
+49:16 
+
+49:16 you and it's they I would ask when I ask
+49:20 
+
+49:20 people like what tell me about Winston.
+49:23 
+
+49:23 What's his superpower? The word
+49:24 
+
+49:24 intensity is the first word that comes
+49:28 
+
+49:28 to everyone's mouth. And I agree and
+49:31 
+
+49:31 probably people watching this would
+49:33 
+
+49:33 agree.
+49:34 
+
+49:34 Where does that come from?
+49:36 
+
+49:36 >> Um,
+49:37 
+
+49:37 >> you're extremely motivated and extremely
+49:40 
+
+49:40 intense.
+49:41 
+
+49:41 Um, why do you have a chip on your
+49:44 
+
+49:44 shoulder? Something from your childhood.
+49:48 
+
+49:48 >> Um, I think it's a combination of
+49:49 
+
+49:49 things. So, I always let my co-founder
+49:51 
+
+49:51 whenever we do introd like intros, I
+49:53 
+
+49:53 always let my co-founder go first. And
+49:54 
+
+49:54 he has a awesome background. Um,
+49:56 
+
+49:56 >> amazing. Yes.
+49:57 
+
+49:57 >> Incredible background. And then I go I
+49:60 
+
+49:60 did nothing for 27 years is like what my
+50:02 
+
+50:02 well now I'm a little older but that was
+50:03 
+
+50:03 basically my my background. Um I think
+50:07 
+
+50:07 the reality is like I definitely had a
+50:10 
+
+50:10 lot of problems when I was younger kind
+50:12 
+
+50:12 of mental health problems and things
+50:13 
+
+50:13 like that and I I was a terrible
+50:16 
+
+50:16 student. Um didn't got kind of like
+50:18 
+
+50:18 kicked out of a bunch of schools and
+50:19 
+
+50:19 things like that and I didn't find
+50:22 
+
+50:22 something that made me like want to get
+50:24 
+
+50:24 up every morning and like apply myself.
+50:26 
+
+50:26 And when I started this company, I had
+50:28 
+
+50:28 no idea that this would happen. But I've
+50:30 
+
+50:30 never felt this in my life. Like I've
+50:32 
+
+50:32 just never felt I've never felt this
+50:35 
+
+50:35 like overwhelming obsession and
+50:38 
+
+50:38 excitement to get up every morning ever.
+50:41 
+
+50:41 >> And it is absolutely terrifying to me to
+50:44 
+
+50:44 lose that. Like it is terrifying that I
+50:47 
+
+50:47 will lose that.
+50:48 
+
+50:48 >> And I think the problem with it is
+50:50 
+
+50:50 that's not like, oh, the company's going
+50:52 
+
+50:52 to go to zero. It's if we don't keep
+50:56 
+
+50:56 moving and we don't basically capture
+50:58 
+
+50:58 the opportunity that we have, I think
+51:00 
+
+51:00 I'll be stuck in a situation again where
+51:02 
+
+51:02 I don't feel that like I don't feel like
+51:05 
+
+51:05 massively challenged. I don't feel like
+51:06 
+
+51:06 what I'm getting up to do sucks. And
+51:09 
+
+51:09 like one example of this is
+51:11 
+
+51:11 >> I literally try I try every week to have
+51:15 
+
+51:15 at least like two to three things that
+51:17 
+
+51:17 make me super uncomfortable that I'm
+51:18 
+
+51:18 doing. Um, and I don't think I feel good
+51:22 
+
+51:22 unless I do those things. Like if I
+51:25 
+
+51:25 >> were you always like that's pretty
+51:26 
+
+51:26 intense and not that fun. Were you
+51:28 
+
+51:28 always that way or like
+51:30 
+
+51:30 >> No, I I I think maybe I might have been
+51:33 
+
+51:33 but I didn't have the opportunities to
+51:34 
+
+51:34 do those things or I maybe let me take
+51:37 
+
+51:37 more ownership of it. I didn't put
+51:39 
+
+51:39 myself in situations where I would find
+51:41 
+
+51:41 those.
+51:41 
+
+51:41 >> What changed inside of you that all of a
+51:44 
+
+51:44 sudden you were
+51:45 
+
+51:45 >> Yeah. Um, I still figuring that out to
+51:48 
+
+51:48 be 100% honest. Like the the part that I
+51:50 
+
+51:50 have figured out is what motivates me.
+51:52 
+
+51:52 And that took me like
+51:54 
+
+51:54 >> I think I figured out that out like last
+51:55 
+
+51:55 year. Like it's pretty recent. Um, and
+51:58 
+
+51:58 the thing that is insanely motivating to
+51:60 
+
+51:60 me is
+52:02 
+
+52:02 I just want to see how far I can go and
+52:06 
+
+52:06 like keep going until I'm like people
+52:08 
+
+52:08 this is just I can't do this. like I
+52:10 
+
+52:10 break like it's just this is a scale or
+52:13 
+
+52:13 this is a type of project or something
+52:15 
+
+52:15 that I am not good enough to do and that
+52:17 
+
+52:17 doesn't mean personally by the way like
+52:19 
+
+52:19 this is something that has changed
+52:20 
+
+52:20 massively for me is I used to think that
+52:23 
+
+52:23 companies were very much like heroics
+52:25 
+
+52:25 and it was like just you know it's like
+52:27 
+
+52:27 the founder can the founder do it can
+52:28 
+
+52:28 the founder do it can the founder do it
+52:30 
+
+52:30 no like not being able to do it is you
+52:32 
+
+52:32 can't hire people that are good enough
+52:35 
+
+52:35 like you can't or you can't convince
+52:36 
+
+52:36 people or you can't lead people well
+52:38 
+
+52:38 enough right you There's so many
+52:40 
+
+52:40 different ways why you can get stopped,
+52:42 
+
+52:42 but it's not physically you can can't do
+52:45 
+
+52:45 it yourself.
+52:46 
+
+52:46 >> But that's what is massively motivating
+52:48 
+
+52:48 to me is I think we have an insane
+52:50 
+
+52:50 opportunity and I'm like terrified of
+52:53 
+
+52:53 missing out on it and I'm terrified of
+52:55 
+
+52:55 going back to how I felt before this.
+52:57 
+
+52:57 Got it. Do you think there's a downside
+52:60 
+
+52:60 of your intensity? And let let me just
+53:03 
+
+53:03 I'm interviewing HR McMaster
+53:05 
+
+53:05 who's very nonpartisan, but he was a
+53:07 
+
+53:07 nonpartisan
+53:09 
+
+53:09 um
+53:11 
+
+53:11 um national security adviser in the
+53:14 
+
+53:14 first Trump administration. He lasted
+53:15 
+
+53:15 like 14 months and he left slash got
+53:20 
+
+53:20 fired and he said Trump chewed me up. He
+53:25 
+
+53:25 just chewed me up and got everything out
+53:27 
+
+53:27 of me and then kind of disposed of me.
+53:31 
+
+53:31 And this is a nonpartisan podcast and
+53:32 
+
+53:32 I'm not casting any dispersions on
+53:34 
+
+53:34 anyone.
+53:35 
+
+53:35 >> Do you
+53:37 
+
+53:37 are you a little like that?
+53:39 
+
+53:39 >> I think sometimes um I'm trying to get
+53:42 
+
+53:42 better at it.
+53:43 
+
+53:43 >> Yeah.
+53:44 
+
+53:44 >> Um but I think Yeah. I think I mean a I
+53:47 
+
+53:47 think I do that sometimes and I think
+53:49 
+
+53:49 that sometimes people say hey that
+53:53 
+
+53:53 actually like I didn't think I could do
+53:55 
+
+53:55 that and I could and that made me feel
+53:57 
+
+53:57 amazing like that is sometimes how it
+53:59 
+
+53:59 happens sometimes I think I take it too
+54:02 
+
+54:02 far um and I think it becomes a problem
+54:05 
+
+54:05 and I think the other thing I need to do
+54:06 
+
+54:06 is there are some situations and it is
+54:09 
+
+54:09 very humbling to feel this as a founder
+54:11 
+
+54:11 but it happens where the chance of
+54:13 
+
+54:13 success is higher If I say this is the
+54:16 
+
+54:16 goal and what we should do and then I
+54:18 
+
+54:18 stop poking
+54:19 
+
+54:19 >> and I let them do it. I'm serious. And
+54:21 
+
+54:21 it is so hard and it's so humbling, but
+54:24 
+
+54:24 once it happens a couple times, it gets
+54:27 
+
+54:27 easier, right? Um but I I do feel that.
+54:31 
+
+54:31 >> Okay. I've known you for a while now.
+54:33 
+
+54:33 I'm really proud of you.
+54:35 
+
+54:35 >> You come so far and matured so much and
+54:38 
+
+54:38 you're doing such an excellent job. I'm
+54:40 
+
+54:40 really happy to know you and happy
+54:43 
+
+54:43 Sequoia investing in you. I think you're
+54:45 
+
+54:45 doing great.
+54:46 
+
+54:46 >> Thank you, man.
+54:47 
+
+54:47 >> I'm really proud.
+54:47 
+
+54:47 >> Thank you.
+54:48 
+
+54:48 >> Yeah,
+54:48 
+
+54:48 >> that means a lot.
+54:49 
+
+54:49 >> Appreciate you coming on the pod, giving
+54:50 
+
+54:50 the pearls of wisdom to all the CEOs out
+54:52 
+
+54:52 there and go get them. Keep the rocket
+54:54 
+
+54:54 ship going.
+54:55 
+
+54:55 >> Thank you.
+54:55 
+
+54:55 >> Yeah.
+54:56 
+
+54:56 >> Thank you, man. Thanks.
+54:58 
+
+54:58 >> Okay. I hope you like that episode.
+54:59 
+
+54:59 We've done
+55:01 
+
+55:01 six now. I think that's my favorite. For
+55:04 
+
+55:04 some reason, it got a little dusty in
+55:06 
+
+55:06 the room towards the end. You know, that
+55:08 
+
+55:08 can happen. As you could tell, I know
+55:10 
+
+55:10 Winston pretty well. And when I look at
+55:13 
+
+55:13 CEOs these days and evaluate them, I
+55:16 
+
+55:16 have a rubric that is my lock rubric.
+55:19 
+
+55:19 The L is for lovable. The O is for
+55:22 
+
+55:22 obsessed. The C is for chip on the
+55:24 
+
+55:24 shoulder. And the K is for
+55:26 
+
+55:26 knowledgeable. I remember first meeting
+55:28 
+
+55:28 him. And at least to me, he's lovable.
+55:31 
+
+55:31 Like if I were a younger me graduating
+55:33 
+
+55:33 from school would want to go to work for
+55:34 
+
+55:34 him. Um really obsessed. You saw that?
+55:38 
+
+55:38 like he's literally a billionaire and
+55:40 
+
+55:40 he's got roommates. Um I talked to him
+55:44 
+
+55:44 over the holidays. He didn't have
+55:45 
+
+55:45 holidays. He's pretty obsessed with
+55:46 
+
+55:46 completely obsessed with what he's
+55:48 
+
+55:48 doing. Uh you felt the chip on the
+55:51 
+
+55:51 shoulder. Part of it is how he grew up.
+55:53 
+
+55:53 But part of it also is that he's a non
+55:57 
+
+55:57 software developer founder here in
+55:59 
+
+55:59 Silicon Valley. And he brings that up a
+56:01 
+
+56:01 lot. He brought it up a little in this
+56:02 
+
+56:02 pod, but he's got a big chip on the
+56:04 
+
+56:04 shoulder. And the Kay is knowledge, very
+56:06 
+
+56:06 knowledgeable guy. He's also very
+56:08 
+
+56:08 humble. He knows he's made a lot of
+56:11 
+
+56:11 mistakes. He faces those mistakes and he
+56:13 
+
+56:13 tries to improve them. That's something
+56:15 
+
+56:15 I love about great CEOs is um the
+56:19 
+
+56:19 problem with being a CEO is everyone
+56:20 
+
+56:20 tells you how great you are all the
+56:22 
+
+56:22 time. And um as it scales more that
+56:26 
+
+56:26 happens, particularly if you're growing
+56:27 
+
+56:27 very very fast and he's a bit immune to
+56:29 
+
+56:29 that. Um and he's very self-critical and
+56:34 
+
+56:34 adjusts a lot. And I think you saw that
+56:36 
+
+56:36 in the pod. Anyway, I thought this was
+56:39 
+
+56:39 pretty good. If you are enjoying the
+56:41 
+
+56:41 pod, I think this is our sixth episode.
+56:44 
+
+56:44 Give me a comment. We need some feedback
+56:46 
+
+56:46 on how we're doing. Good, bad,
+56:48 
+
+56:48 indifferent. Love to hear from you. See
+56:50 
+
+56:50 you on the next one.

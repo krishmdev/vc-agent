@@ -1,0 +1,486 @@
+00:00 I think lawyers are quite good at learning, but in a law firm structure, as much time goes into apprenticeship.
+00:06 It's a teaching hospital. You don't actually spend that much time getting really good at teaching because you just do it through reps and reps and reps and reps. And so actually explaining things
+00:13 um is something that like I think is going to be a very prized skill for not just lawyers, but for any domain experts, but in particular lawyers. And
+00:19 we're seeing it like when you can make an AI do this thing that you've been doing and not enjoying doing, it is like
+00:25 the most magical experience ever. And we're watching that like on a weekly basis. [Music]
+00:46 In this episode, we explore a fascinating approach to building services as software with the founders of Crosby, an AI first law firm focused
+00:54 on legal contract automation. Ryan and John share why they chose to build a law firm rather than legal
+00:59 software and how doing the work themselves creates unique telemetry and feedback loops that traditional evals
+01:05 don't capture. Ryan and John also discuss their approach to agent orchestration from parallegal level
+01:11 routing to senior associate level contractor view and share their vision for a Robin Hoodlike future where
+01:17 anybody has access to highquality legal services thanks to AI. Enjoy the show.
+01:23 John and Ryan, welcome to the show. Thank you so much you guys. All right, first question maybe kick us
+01:29 off. What is Crosby? Tell us a little bit about the company you've built. Great. So Crosby is an AI first law
+01:35 firm. We focus entirely on contracts. So the theory is that we can automate human
+01:41 negotiations. So getting people to agree on terms and the best way to do that is with a contract. Contracts turns out are
+01:47 everywhere. Um they're your lease, they're your offer letter. Um and they're under most business transactions. And it turns out the best
+01:54 way to do this and to automate it is by building an in-house a law firm, understanding how lawyers work and then trying to replace as much of that
+02:00 agentically to get uh contracts closed faster. And can you talk about the decision to
+02:05 build a law firm versus to build legal software because many entrepreneurs in your path, you know, not in the legal
+02:12 space necessarily, but have chosen the path to build software companies. Uh why build a services company? So maybe I'll
+02:18 talk about like structurally why we sort of chose this and then John you can talk about on a more applied level how we
+02:23 built the team and how that works. For sure. So I think structurally zooming out a little bit you know the market for legal
+02:30 services has always put a huge premium on human capital and it's in some ways like a VC firm. I think like you're
+02:36 really investing in the people who work there and getting them better and better and better and trying to keep those experts or your partners around for as
+02:42 long as possible. And that made a lot of sense where a lot of that work um was very specialized and couldn't really be
+02:49 offloaded to technology. And there's a growing sense in the last 30 years, but in particular the last three that's
+02:54 changed. And you're looking now for a new model that allows you to actually innovate in the
+03:02 kinds of tasks you can offload from humans to uh technology. And it just like has never happened in a law firm
+03:08 before. But all the raw materials are there. The experts that know how to build things are there. But a law firm partnership, for example, doesn't allow
+03:14 you to invest in speculative things like building technology because you can't sell equity and only law firm partners
+03:20 can take loans that are recourse. So it just doesn't work. But we had this theory from a structural standpoint that
+03:25 if we get the structure correct and Atrium improved this 5 years ago, um you would start to see really quick um
+03:32 iteration cycles and the way that you can actually innovate. So that's the theory at least. Yeah. And then putting that into
+03:37 practice, I think having your domain experts sit side by side with your engineers creates such a unique feedback
+03:44 loop where it's more than just eval. It's actually using the product, experiencing it, doing user research and
+03:51 understanding what are the critical workflows, what are the biggest gaps and actually being able to, you know,
+03:56 recognize and say from start to finish like you know it's more than just a benchmark. It's actually like an environment to create that opportunity
+04:02 to whether it's innovate on like these specific like how do you review a contract faster but also the individual
+04:08 bits and pieces of like hey is this red line exactly correct or is that the right word choice for what we need here.
+04:14 I think you know historically people have attempted this so they've combined some software as well as the services
+04:20 side together. tell us a little bit more about why some of these previous attempts might not have worked but also
+04:26 today operationally you have AI engineers sitting next to lawyers how actually does that work like how do you
+04:33 make that successful so maybe on that first part of the question why hasn't this exactly worked
+04:38 before and what might be different now other than the obvious which is you know the state-of-the-art for for AI um I
+04:46 think it actually hasn't been tried that much and it's an extremely daring thing to do and we've seen great innovation in
+04:55 accounting actually in management consulting and when you even look at the corporate entities fewer and fewer of
+05:01 those entities are partnership structures and they move to CC corps and that's a really good proxy for how much they invest in long-term technology and
+05:07 a technology we've had two or in law we've had two or three companies Atrium and before that clear spire actually try
+05:12 this in a meaningful way and a bunch of things didn't quite pan out one was that tight coordination which I think John
+05:19 you should speak more to between lawyers and engineers and we literally in our office have desks staggered lawyer
+05:24 engineer lawyer engineer in order to get those feedback cycles and to incent them to really collaborate. Um and the other
+05:30 piece I think is and this is what is like truly unique is that huge chunks of
+05:36 the qualitative uh thoughtful work that lawyers are doing each day can actually now be delegated to machines. And this
+05:44 is like it's hard to overstate how complex that is and how new it is. Yeah. And then putting that into
+05:49 practice, you know, I think that means two things. It means product velocity and it means actually instrumentation.
+05:56 How do you think about metrics? What we're doing is an operationally heavy business, right? You can actually instrument and think about we get a
+06:02 contract, it comes in, we send it out really quickly. We need to make sure we're meeting things like our SLA, which
+06:08 is measured by our turnaround time, how many human touch points were involved in actually every contract from start to
+06:14 finish. And if you can actually understand and say, hey, here are all the individual touch points. Here's how long each touch point took and here are
+06:21 are the highest value touch points we can automate today and just start, you know, hammering away at those. I think
+06:27 the other thing when you think about product velocity is it's more than just, you know, shipping product for the sake
+06:34 of shipping it. Do these leading inputs actually lead to customer metrics? Because even though
+06:39 this is an operational heavy business, you need to be thinking about what is the end customer goal that we're trying
+06:44 to solve for here. Ultimately, our customers come to us because they trust us and we do high quality contract reviews for them. And you know, it's
+06:51 companies like Cursor because they're growing so quickly. Like these companies are growing faster than ever before. And
+06:56 we really need to just like be able to meet their standards and their bar of like what excellence and what speed
+07:01 looks like and actually taking you know all this product velocity these input metrics and actually converting those
+07:07 into these lagging indicators of like are we meeting their SLAs's are we delivering on time are we reducing the
+07:12 number of human touch points and then that's actually how you can drive the impact. Maybe I'll just add something that we've
+07:19 only started to like really get our hands around now. I think a year ago when John and I started working on this
+07:24 idea, we had a strong intuition that structuring this like a law firm was just accessible for companies who wanted
+07:31 to buy some sort of AI enabled service because there's so much excitement and people want to try it. But there's
+07:37 something subtle which is um legal services I think economists call it a credence good which means that you only
+07:42 know how good it is after you've experienced it and consumed it and you need an expert to actually tell you the
+07:48 quality. a lay person or even not a lay person, a sophisticated CEO often doesn't know um by definition how good
+07:54 their legal work is. And so you want to know that a lawyer is looking at it. Um
+07:60 and so by structuring as this law firm, I think we're taking like the the most promising aspects of what AI can do, but
+08:07 still putting all of the sort of right um safety parameters around it and
+08:12 structures of having an expert tell you this is good quality or this is you know and this is safe. How do you think about innovating on the pricing and packaging
+08:19 layer? Like I think of law as you know one of the most interesting for the AI wave because it's one of the most you
+08:25 know technology disruptive but also in terms of pricing model if you're billing by the hour right
+08:31 making it more efficient doesn't doesn't really help anything right and so say a word on how much pricing innovation
+08:37 you're doing. Yeah. So this was an early decision that we almost made
+08:42 um without thinking too hard about it and it's it's just and then it's just been a constraint which is no billable hour and that's like for us very
+08:49 dramatic but for it was so obvious that it would be an interesting wedge to get people's attention
+08:54 and it would align incentives within the company that we didn't think twice about it and so what that looks like today is
+08:60 billing by the document and um I think there's a few things to say about that
+09:05 the first is the billable hour people have been predict predicting the death of the billable hour for like 70 years.
+09:11 It it only became popular in the 50s. It's kind of novel. Um but it's just really durable and it makes a lot of
+09:17 sense for really sophisticated work where it's hard to x aanti predict how much work it will be. So actually I
+09:22 think part of what we're innovating on which we didn't we really could not have guessed a year ago is being able to
+09:27 predict from time zero how long this piece of work is going to take so that we can price it and still you know make
+09:33 sure that we're doing the work properly that we align with the value that we're giving the clients and you know that's
+09:38 like where things get really interesting because you have to predict you know how many times will this contract go back
+09:44 and forth. we have to look at it five times, three times, two times um in order to price the amount of you know in
+09:50 order to price document properly. Yeah. So interesting. Yeah. And you've been a lawyer before when when you say you guys are automating
+09:57 legal uh contract work. Maybe just take us through what a what a human lawyer does today when negotiating a contract
+10:03 and what types of contracts are we talking? Are we talking NDAs? Are we talking merger agreements, employment
+10:09 agreements, everything in between? Yeah. So so many points I could I could go on. So they'll cut me off.
+10:16 So right now we focus on NDAs, MSAs, DPAs. I think every tech person will be
+10:24 very familiar with this because you're selling a B2B product. This is what you're dealing with. And I'd say NDAs
+10:29 are sort of from a complexity standpoint, you know, uh a good deal less complex than MSAs and DPA is
+10:36 actually quite a step to get to the MSA DPAs. um you know NDA is two pages MSA
+10:41 is 15 but they're probably what would you say like maybe 80 times more complex there's just so many more terms to
+10:47 negotiate and then you can go all the way up to the merge agreements which is you know probably a thousandx more complex lawyers today
+10:54 really try to predict in looking at all the terms in a contract the right things you should and shouldn't agree to based
+11:00 on mental models of what's safe and unsafe and kind of having to calibrate for your business. you know, we want to
+11:05 get you to sign this contract. And so some of the clients we're dealing with are signing dozens of contracts a day, right? These are cursor and clay and
+11:12 unifi that are growing so quickly, but you you want to insulate the business from too much risk. And I think so
+11:18 that's what lawyers do. And there's a lot of guidelines and general benchmarks and consensus on like what is sort of market here, but it's really like
+11:25 ethereal. It exists in the minds of lawyers and two reasonable lawyers will disagree on what those things are. And this is a subtle last point that I'll
+11:32 just touch on which is you know lawyers are essentially these private actors that are building a public good which is
+11:38 the legal infrastructure which is all the contracts that ever get negotiated go into this public domain sort of of
+11:44 like what is a reasonable allocation of risk and so by automating this and this is where you know I think John gets
+11:50 really interested in the generalizing benchmarks um we can start to actually say quantitatively here's what that
+11:57 infrastructure should look like not like here's my best guess of what's a reasonable contract, but like we can
+12:02 actually give you a metric or a statistical guess on like here's a risky or safe bet to take.
+12:08 Yeah. I think concretely taking the vibes and heruristics inside of a lawyer lawyer's head and converting that into
+12:13 an actual probabilistic quantitative number and saying like, hey, how likely should you be to accept Delaware or
+12:20 California or New York governing law when you're in the specific negotiation? I think there's something innately you
+12:26 know human about that in terms of that agreement but at the same time there's a lot of market data and you can actually
+12:32 start dissecting and understanding like what are the levers you have to allocate risk in your business and you know
+12:38 circling back to what founders should be thinking about as they're thinking about these businesses like you know which
+12:44 state you go to court in is like you know that's there's only 50 states thankfully for now um
+12:52 extending that into you know the long tale of what work you could do. I think
+12:57 it's really easy to confound like PMF of like your customer is asking you to do this thing and we'll pay you to do this
+13:03 thing versus like being an actual services business like you need to actually understand what is automatable,
+13:09 what is repeatable. What are the specific signals and levers you have to push that automation forward?
+13:15 Maybe let's dig into that actually. What what parts of even the product today? What parts of it are the LLM or AI
+13:22 model? What parts of it are the lawyer? What parts of it are more workflow software? And how does that change over
+13:28 time, too? Yeah, I think it's been so interesting in the past, you know, 5 10 years, the
+13:34 amount of investment. I'm sure you guys have seen this firsthand, so I'd love your take on this, too. Like the amount of investment in NLP research. It's just
+13:41 like, you know, problems that were state-of-the-art five years ago are now like warm-up problems in a Stanford like
+13:49 freshman year class. And I think it's just been so interesting to say like
+13:54 okay this is what tools we have available to us now in terms of like zooming back out into like the specific
+14:01 models and what we can automate today. You know it comes down to context. When AlexNet and all the first models were
+14:07 starting to do image classification, right? You had a a picture of something and you try to classify it. All you
+14:13 needed was the picture. You know, now you start thinking about like you're looking at an MRI and you're trying to classify it. Well, you're looking at the
+14:19 MRI, but you also might get some additional context from maybe the patient's history and some other metadata about the patient. I think
+14:26 language models are now taking that to the extreme. The language models say basically, give me as much context as is necessary to
+14:33 understand this problem and make some type of decision on it. And to answer your question around the workflows
+14:39 versus the language models today, it starts with how can you context engineer for a human lawyer, right? How do you
+14:45 give all the right tools and these building blocks to expand what's available to the lawyer and actually
+14:51 automate their manual workflows that they were doing? Once you have those building blocks, then it becomes a question, okay, what are the parts that
+14:57 a lawyer is doing that you can now align the language model with and say, hey, how accurately can you replicate what
+15:04 behavior this human is doing? And I think my hot take here is I think
+15:10 everyone focuses on these general like you know reinforcement like RHF and all these general purpose like aligning it
+15:17 to the maximum amount of data available. Really what you want to do in some of these specific scenarios is align it to
+15:23 a specific person, right? Because like Ryan said like even getting two lawyers to agree on one specific contract may
+15:30 require a lot of back and forth and tension even if they work for the same firm. And if you can actually align it more accurately with one individual, you
+15:37 can start to say like this is correct, this is wrong because that person is internally consistent even though two
+15:43 people might disagree on that. So you would have almost individualized models for each of the different
+15:48 lawyers. Is that kind of the scenario? So I I think the two the two thesis here are I think also fundamentally people
+15:55 are not thinking about per customer eval or per customer fine-tuning enough. I think per customer fine-tuning and eval
+16:02 are a really high ROI way, especially if you have a large ACV, to make your product reach multiple nines of
+16:08 accuracy. One of the dangerous traps of language models today is they get to 90% for basically free. The foundation
+16:14 models have done an incredible job and we love our partners at OpenAI, Anthropic, and Google for giving us such
+16:20 wonderful tools. But one of the dangers is they get to 90% and getting them to 99 or 99.99 is
+16:27 actually extremely difficult. And part of the way all the levers you have are thinking about like what are the ways I can adjust these prompts per customer?
+16:34 What are the ways I can fine-tune this model per customer? And then you can actually deliver you know not just a
+16:39 four-star experience but a fivestar product experience because really that's what you're trying to achieve at the end of the day. But I'd be curious for your
+16:45 guys' read in terms of like the amount of you know in ter the investment for the language models and how you've seen
+16:51 it shape in terms of like these per customer like these more enterprise focused verticals. I think it partly
+16:57 depends on what you know data is actually in distribution for them because I think whatever data is in
+17:02 distribution they will I think they are continuing to improve at a rate where they will probably get there very very far versus I think if your point is for
+17:11 a certain enterprise most of their data the really interesting data for their contracts you will never have access to
+17:17 as a foundation model company and we could get access to individuals
+17:22 specifically and I can create you know more like RL fine-tuned model for you
+17:28 that understands your context. Like I think that makes sense because it is data that is not in distribution for the
+17:34 large model companies. I agree with that. Good take. You guys have some very discerning customers. I
+17:39 think I heard Clay and Curser mentioned. Um tell us about what they what they
+17:45 like most about you. Is it that you're smart AI people? Is it that you can turn around a contract extremely quickly? Is
+17:51 it that you can turn around a contract cheaper than somebody who's not using AI? like what is the customerf facing
+17:57 value prop um for these companies and it's we've really crystallized this over several
+18:03 months it's deal velocity and
+18:09 what we think a lot about is just the the the acceleration of startups today
+18:15 and everything is going faster right the sales motions are going faster I mean you look at clay right like they're you know enabling sales teams to move that
+18:21 much faster the way that you hire everything and contract negoti ations which is like the sort of critical
+18:27 piece. It literally is the sort of way you plug in with your customers. The API for business is what we call it is kind
+18:34 of unchanged for 40 years basically since the word processor came out. And so this idea that we can unlock speed in
+18:41 two ways from the time that they send us a contract to the time that they get it back. This is typically the AE or the
+18:47 salesperson. We're just unlocking their speed that they get back to their client. or also doing reviews in a more
+18:54 thoughtful way so that rather than doing five or six back and forths, we can sort of predict, okay, if we just agree to
+18:59 this term and only push back on these three, we're going to save one turn. So, this will be a whole week faster. Um,
+19:05 these are the main things. And what's kind of interesting is, you know, as John was saying, sort of
+19:11 quality and taste are these somewhat intangible things that are threshold
+19:16 questions for these kinds of agreements, right? you have to hit some reasonable amount of quality. But the but but I
+19:22 think and I think most great lawyers, the one the GCs that I really admire and spend a lot of time with understand their job is business drivers, right?
+19:28 And they are unlocking the growth of their companies and they they position themselves that way. Um, and so that's the key. And structuring ourselves with
+19:35 lawyers in the loop in a really clever way allows us to have the oversight of
+19:42 lawyers and kind of all the safety and the quality is what I mentioned before, but see how much we can really push the
+19:47 limits on. You know, right now we do a contribution, median times are at a little under an hour. Can we get that to
+19:53 minutes like while still having making sure that the right terms get in front of the right lawyers at the right times? Um, and these are like the fascinating
+19:59 questions. Yeah. And what does it take to get there if you think like what needs to happen for it for that to be
+20:05 possible? So I think what's really nice and I think the reason why John and I were so excited about doing this interview
+20:10 together and why typically we're speaking together is we had this really unique marriage of you know technical expertise really understanding the
+20:16 cutting edge of AI um as much as I love chatbt and um and like and like what
+20:21 lawyers are really good at. And what's interesting is like when John and I started working together, I don't know if this is a fair call out. You know, John was constantly asking for evals.
+20:27 And I was like, that's fine, we'll work on this, but I I can look at it in 10 seconds tell you, right? Like just put it in my hands. And lawyers have a very
+20:33 visceral sense because it's taste based based on their training, based on their risk profiles, which is a little unique
+20:39 to each client, just immediately what looks good. And so the more we've been able to get, you know, prompting tools
+20:45 and um actual sort of input and outputs in the hands of the lawyers that we have um at Crosby, it's amazing just like it
+20:52 just it's just velocity. Like we had we actually hired more engineers and lawyers at the beginning and we were
+20:58 sort of I felt like a little bit like we were sort of revving the engine a little bit without clicking into gear and then
+21:03 lawyers came and it was like we we stepped into gear. They just had people to give them like all the inputs of no no that's like right that's sort of we
+21:09 should go that direction. Um, so that's that's like a sort of structural thing. In terms of what it takes to get there,
+21:15 I do think that because lawyers provide almost an insurance to make sure that an
+21:20 expert said something looks good, they'll always be in the loop for most for a lot of types of legal work. There are like, and you know, I can get into
+21:26 hot takes on what kinds of legal work is going to be fully automated. But I think the key here is knowing exactly when to
+21:32 escalate something up to a lawyer and to get their thumbs up and to know that that liability is covered. And you know, right now we have malpractice insurance.
+21:39 We take liability for all the work we do. I don't think we exist as a business if we don't do that. That's just that's the key here is we have to be so certain
+21:45 about the quality that we're able to to to stand behind it. So cool. Can you give us a peek at
+21:50 what's happening under the hood on the technology side? You mentioned, you know, you have three beloved foundation
+21:55 model partners. Like what are you using each of the different models for and what scaffolding have you built on top?
+22:00 Yeah, I think what we found is the state-of-the-art um is not specifically
+22:07 tuned for contracts because there's not enough data in the corpus out there. Yeah, diversity of data is like bitter
+22:13 lesson um even if it's just for the legal domain and you want models that
+22:18 are trained generally and these contracts are so hidden away. The best data set is Edgar. when you attach SEC filings and that data has
+22:25 just been um so overutilized and doesn't apply to these smaller so yeah it's been an issue
+22:31 I think the other part is in terms of infrastructure really constantly like Ryan said benchmarking this with all the
+22:38 environments we set up for these agents to understand what they're good at what they're bad at and bringing that back to
+22:43 that quality score that I mentioned earlier this is why I think every team needs someone both the domain expert and
+22:50 the engineer and I I think this is why we'll see more of these vertical AI startups is because having that person
+22:56 inhouse gives you such a competitive edge rather than maybe buying a data set from a large company that outsources a
+23:04 lot of like labeled data to contract lawyers or things like that. And then in terms of like so you know the way it's
+23:10 set up today right we have lawyers um most of whom have big law experience and
+23:15 are pretty proficient in these kinds of agreements um who are driving right and so they're seeing and this is what's
+23:21 quite interesting and to John's point like the subtleties of the ways you change language within a contract um are
+23:27 something that AI seems to struggle with a bit more than we'd imagine. So John and I like to joke
+23:32 the difference between the term commercially reasonable and and reasonable are actually sub substantively different things to a
+23:38 lawyer. They look very similar in embedding space. So those are like but these are the new nuance you really have to pick through. Um but what AI is
+23:44 amazing so you have lawyers sort of driving there and really um measuring kind of um intervening for the quality
+23:49 on on actual edits to a contract. What AI is great at is summarizing right? So being able to predict the right comment
+23:55 to make to explain a change. Interesting thing we learned in about May. If you can give a really thoughtful explanation
+24:00 as to why we can't accept this language or we or we or we really are pushing for that language, the counterparty will get
+24:07 will sort of understand what you're getting at and accept it. It reduces turns, right? So, it's worth investing in AI to explain what you're doing.
+24:14 Another thing we realized is this is actually very specific to a company. These aren't legal questions. This is like, you know, some of our clients are
+24:21 not super sophisticated, but you have to understand the fundamentals of the cursor IDE or the fundamentals of how Clay, you know, uses um sales data. It's
+24:28 just like to if you're a procurement person to know what you're buying. So this all and this happens in the contract, right? And so um you can
+24:35 unlock a lot of speed for lawyers to feed them all this data in the right place at the right time in the right parts of the contract. Um and these are
+24:42 huge unlocks as the client experience it. It just feels like we've made it super natural. You just I mean by that I
+24:49 mean very natural. You know it's right in Slack. You just tag Crosby. We've made a big bet on Slack I think more and
+24:54 more apps. It's just so easy to use and tag Crosby. You send up the document. you get it back, you know, within a couple hours with some thoughts, with
+25:01 some comments, and with an explanation. Um, and so we've built quite a bit on top of that. I think email is the other obvious choice. Um, but we didn't want
+25:08 any interface. We just wanted to feel like you're talking to somebody who's looking at this for you. And yeah,
+25:14 and circling back to the point on infrastructure, you know, getting an agent to be really
+25:20 good at NDAs and MSAs and DPAs and all the, like I said, coming back to the
+25:26 point around the longtail, you really want to one give agents really good tools, and then two, give them really
+25:31 good context and make sure they're trained and set for a specific task. And when you're thinking about the specific
+25:37 task, whether that's an NDA agent for cursor and making sure they're set up
+25:42 for success and actually able to review those contracts really really quickly. Today we've basically built a parallegal
+25:49 agent and which is like in charge of routing all the work from like you know that comes in from our like customers in
+25:55 the same way that a parallegal would at a law firm and then routes it to a human lawyer and make sure the work is
+26:00 assigned effectively. The next step is like how do you think about a junior associate, a senior
+26:06 associate, and a junior partner at a law firm and and think about like actually replacing these roles in that way
+26:12 and the actual specialty jobs that they're focusing on. Makes sense. You have any favorite work workhorse models?
+26:18 I really liked 5. I don't know when this hot day. Yeah, me too.
+26:26 My my teammates make memes for me about it. Wait, why? Yeah, you say more. I think
+26:31 it's actually been pretty good in terms of the thinking and pro models for some legal tasks and Gemini 2.5 Pro has been
+26:38 really good at legal tasks as well. Super interesting. Do you think that the path to the promise for you promised
+26:44 land for you will be kind of our tuning to each individual law firm and lawyer or do you think it's any prompting like
+26:51 any any religion or any gut instinct on what the kind of uh what's going to take
+26:57 you to the to the promised land for automating these contracts fully? Well, I think like Ryan said the thesis
+27:02 is how do you still keep that human touch for like psychological safety? I think the promised land comes from
+27:09 really good context engineering and providing it to the right because what great product council do and what great
+27:15 commercial council do is keep just a ton of information in their working memory about here's how this company works.
+27:21 Here's how the background on this um specific playbook. Here's how this NDA last time went when we negotiated
+27:27 against this company. Loading all that into the working memory is going to be really important. I think
+27:32 I'm really optimistic about a lot of these reinforcement learning techniques. So reinforcement fine-tuning was
+27:37 something we experimented with early on for comment generation like Ryan mentioned and have experimented it with
+27:43 it for a lot of other opportunities as well. And so pretty optimistic there. My take is like let the lawyers cook,
+27:49 you know, get them writing prompts. They're they're Do your lawyers cook? Say more.
+27:55 Yeah. Are they writing prompts? We speak to so many lawyers, you know, who are like,
+28:00 "All I hear about is AI. I want to learn more. I'm curious. I want to be part of it." Yeah. Yeah. And you know, you're like, "Have you
+28:08 used it before?" "No." And we're like, "Okay, how's this going to play?" And they're like, it's like, it's like the
+28:13 look on their fa We have I'm thinking of one lawyer particular on our team. The look on her face the first time she saw some of the tools we were doing and she
+28:19 just it like like the lights turned on like it was so it was so neat. And so like to get them access to like actually
+28:26 like write prompts, give instructions, teach all these things that are like in your head, but you wouldn't even know
+28:32 how to explain them to someone. And it it's actually quite complicated to like try to tease these things out and explain them. I think lawyers are quite
+28:38 good at learning, but in a law firm structure as much time goes into apprenticeship. It's a teaching
+28:43 hospital. You don't actually spend that much time getting really good at teaching because you just do it through reps and reps and reps and reps. And so actually explaining things um is
+28:50 something that like I think is going to be a very prized skill for not just lawyers but for any domain experts but in particular lawyers and we're seeing
+28:56 it like they when you can make an AI do this thing that you've been doing and
+29:01 not enjoying doing it is like the most magical experience ever and we're watching that like on a weekly basis.
+29:08 What's the coolest thing has created? And maybe just like describe how you even create a culture where lawyers are
+29:15 prompting themselves, you know, they're they're actually playing themselves. So I like I'll give a big shout out like
+29:21 I like we have to give kudos to Harvey for building a building like such a center of gravity to show that like
+29:27 lawyer that you know they invented this job title I think called um applied legal research which is
+29:33 brilliant and like that is what lawyers are doing. They're right. And um you create this culture that really praises
+29:39 that. You know, it doesn't just praise, you know, you look at lawyers at law firms, they're measured really on one
+29:45 vector, which is hours built each year. We're trying and so we give a lot of public praise for
+29:51 being sort of meta aware of the work you're doing and trying to measure it out. So we have so we have one lawyer who like
+29:57 you know kind of mentioned he thought we could be doing things better and I said tell me a bit more. And a week later he
+30:03 built this like I I I taught him Miro which was like a huge aha moment for him
+30:09 and he made this huge process map that like it was like we we we have to get it printed professionally. so big and like
+30:16 it was one of the best moments for all the engineers like but like we like we we we were so excited about it and so we
+30:21 created this culture like we really praise you know we're doing a lot of repetitive the same kinds of work but there are ways that we can just like
+30:26 step out of that and think bigger and so we're really and so you really incentivize lawyers again because your
+30:32 incentive is to get the tat the total review time lower and lower to be the ones driving that um and so it's been
+30:39 neat and you know there's so many other things that we're just beginning to scratch the surface of like organizational design, structuring your
+30:44 team so that there's both lawyers and engineers all towards the same outcomes and so they all have to collaborate together. But these are the keys and
+30:50 these are the really hard things. Let's talk about New York. You're building an AI company in New York. That
+30:55 is contrarian. Tell tell us more. It's not contrarian to us.
+31:01 I think the New York tech scene has gone through a lot of different arcs.
+31:08 the first arc of, you know, the early 2000s, a lot of these ad tech companies that were emerging after, you know,
+31:14 the.com boom where, you know, these like app nexus and all these other companies
+31:19 that just exploded and then there was a second wave of all these, you know, deeply technical engineers that came out
+31:25 of these adtech companies spinning off and creating, you know, these more dev tool, you know, like MongoDBs,
+31:31 uh, of the world. In parallel, there were a lot of also trading firms in New York, right? So you can think of the Jane Streets, the HRTs, the Citadels. So
+31:40 the New York tech team had this as like its base framework. What happened in the last 5 to 10 years is a lot of you know
+31:48 more and more senior engineers were coming out of those places to the point where a lot of what building a startup
+31:53 is about is actually knowing what a great growth trajectory looks like and understanding how do you not just go from like 1 to 10 but zero to one. And
+32:01 so these were great breeding grounds and now we've seen a ton of companies start spawning out of like these whe whether
+32:06 it's in dev tools and devx or thinking more you know I think a really great example is ramp where I remember one of
+32:14 the first Kareem told me this story about how they had a YC company it was called parabus and it was based in New
+32:20 York they said that I think they might have been the only YC company in New York and 2013 or something like that.
+32:27 The reason it's so interesting is because they had a candidate who applied, extremely talented developer,
+32:34 incredible resume. They asked him, "Why did you apply to work here?" And he said, "One simple reason. I filtered by
+32:40 New York City on YC and you were the only company there." And so, we've come a long way since
+32:45 then. I think, you know, RAMP has been just an incredible place and there's many other companies in New York now
+32:51 coming out of that as well. Um, I think where you can take a lot of great young talent, teach them right from these
+32:58 people who worked at these places like App Nexus and all these other places of like other startups that have scaled,
+33:05 apply those learnings and and create a truly generational company like RAMP is. There was an interesting survey. I think
+33:10 Pat talked about this as well or you might have mentioned it where there was a survey from Neo or someone else where
+33:16 most news wanted to be in New York in 2021 2022
+33:21 and it's so interesting where if you just follow that as a leading indicator of like where do all the really smart
+33:28 hungry highs slope you know young engineers want to be and I think that was New York.
+33:33 It also allows you to break out of the AI echo chamber a little bit and and do
+33:39 things a little bit differently and just hearing how you guys speak it is, you know, it's refreshingly uh first
+33:45 principles. I do think like we I you know we're probably here every few months for various reasons and I feel
+33:50 like we come here to dream and then we go back to New York to build and and like and the subject matter
+33:57 expertise there is so dense in finance um in the creative fields healthare healthare law
+34:03 obviously in law um and you sort of distill like all the
+34:08 really crazy idea like you come here and you're like it's not AGI it's ASI like you like you learn all this like right and then you go back and then you like
+34:14 you really apply it and you sort of like you know like the water goes through the sand and it comes out with something that kind of just works and that's been
+34:20 really special to be part of. Yeah. And I think for us really you know taking these domain experts with really
+34:27 deep expertise and combining them with these like high slope new grads as well as these people who are like either
+34:34 experienced founders or want to be founders again. Our entire founding engineering team like is all either
+34:39 previous founders or wants to be founders. I think that mentality is really what it takes because in some ways like Ryan said, you're like
+34:45 building these pods and like these you're working with one or two lawyers and your customer is sitting right next to you is like such a unique opportunity
+34:52 in terms of like the amount of dev cycles and like product loops you get and I think that's really special.
+34:57 I mean I think your name itself kind of echoes your your like tie to New York.
+35:03 Maybe tell us a little bit about story of the name. Well, there's a lot of myth
+35:08 and a lot of lore over the name of Crosby. One of the myths is that John and I were going these long searching
+35:16 existential walks back last summer through Soho and we kept finding ourselves Crosby and it's a beautiful
+35:22 old street in a very modern neighborhood and it kind of to us spoke about being an essentially New York company that has
+35:28 all the best artisansship of the old and all the modern steel glass of the new and it combines it nicely. But that's
+35:34 just one. And it could be after the hockey player also. Could be after the hotel. Could be anything.
+35:40 Our office manager's dog was named Crosby. Really? Yeah. Her dog. Maybe tell us a little bit more also in
+35:46 terms of just having built in New York like what what is different about the company culture actually? Like how do
+35:53 you think it is distinct from a typical AI company maybe here in SF? I do think
+35:58 I I don't know why this would be a New York thing, but I'm seeing it more and more in some of our friends companies,
+36:03 other sequoia companies in New York. There's a huge bias to starting things to being founders. And the way that
+36:09 we've been able to convince people to join us is by saying this will be your stepping stone for four or five years.
+36:15 And we have to live up to that by the way. Like it's actually not it's like it's not trivial. We have to make sure that like when we get invited to a
+36:20 founder dinner, we send someone else in ourstead, which I think annoys people, but it's pretty awesome for them. But um but what's interesting is in this
+36:27 type of company which is in a lot of these on the application layer um as John mentioned you need that level of
+36:33 autonomy and agency and creativity of that fundamentality of like this is my thing and I'm going to figure out how to build it um with my pot of lawyers and
+36:39 I'm going to I'm going to solve this and then I'm going to come back. And so I don't know why but we keep seeing more of this. I do think Ramp's a big part of
+36:45 the story. I think RAM has become a founder factory and um sort of culturally that permeates all throughout New York and we feel it. Um, so I'm
+36:54 actually like really excited and I'm curious to watch the next four or five years of like all of these kind of like the next the next wave of folks coming
+36:60 out and starting things. Yeah. I think one other uniquely New York thing is just the emphasis it feels like on design. You know, RAMP is a
+37:07 product that's really prided for his like great design and product taste. I think a lot of that can be traced to
+37:12 just the depth and creativity levels at these design agencies and other great firms. One last thing, people in New
+37:19 York like pizza. I feel like it's really hard to get a proper New York slice or any slice in San Francisco.
+37:26 That's how we celebrated. That's how we celebrate pizza. So, we have real two pizza teams in New York.
+37:32 Not like Domino's. Yeah. No, very real. Okay, we need the hot takes. What type of legal work is
+37:37 going to be completely automated? So, legal work. There's about 11,000 law firms which
+37:43 account for 8% of all law firms in the US that account for about 70 75% of revenue. still a lot of law firms, but
+37:50 there's this huge tale of these other um you know 92% that that make up the rest.
+37:55 And those 92% focus on individuals um helping you with um child support
+38:02 payments and leases and like all the sort of human things and they're like
+38:07 horribly underserved by lawyers. It's almost immoral and we talk about all the time in law law school and everybody has
+38:14 really lofty dreams to kind of do something about this and it's not really being touched and um
+38:21 I think this work will be automated entirely because the alternative is
+38:26 nothing and I think and it just and like we'll have no and like and like I suspect that
+38:32 anybody right now can negotiate a landlord kind of lease with Chach today. I think a lot of people do.
+38:38 I think that the corporate law firms are going to are here to stay for quite a while and those jobs are quite safe. So,
+38:46 it's like sort of a net new type of legal skew that's going to be totally automated. But it's not that we're
+38:52 taking a law a lawyer's job and automating. It's just nobody's doing it today. Yeah, it's net new market creation. Totally.
+38:57 Why isn't it just chatbt that does it though? I already kind of turn into it for legal advice. Maybe maybe bad strategy, but I
+39:02 I think for a lot of this work it is. I think like the the again the alternative is nothing. The alternative is having nobody look at it.
+39:09 And my hope is that if you can add so much leverage to lawyers that like you
+39:14 know rather than looking at two contracts an hour they can look at 500 like shouldn't we be able to have more
+39:19 and more people getting serviced like that. I think when we talk about the our mission of Crosby is very lofty. It's building a better legal infrastructure
+39:26 with technology. This is what we're talking about. This is like just so leveraging the lawyers that we have. Um
+39:33 this is it's an optimistic hot take. I think it's the golden age for what lawyers are going to be able to do in the next 5 10 years being unlocked by
+39:38 this. Love that. Do you have any Northstar metrics that you run the company on? Yeah, we run on total turnaround time,
+39:46 which means time in to time out. How long does the contract take across all of the back and
+39:53 forths? So, like Ryan said, you know, a contract negotiation might have five back and forths or two back and forths.
+39:60 If you add up all the time that Crosby has spent looking at a contract, that's our northstar metric.
+40:06 And that's very counterintuitive, right? Most law firms are not trying to maximize that number, but like that's
+40:12 how they earn their billable hour. Yep. For us, it's about aligning incentives.
+40:17 We want to not only do a faster job on each individual turn. It's also about
+40:23 how do we do a better job? How do we like understand the right negotiation levers for the business? I'm sure you
+40:30 all have negotiated your fair share of term sheets that are really high velocity coming back and forth. For us,
+40:36 it's really thinking about like how do we minimize those back and forths and also get faster every time.
+40:41 How do you make that incentive align for your customer? Like if you if you go back to the term sheet example, the fastest way I have of getting a term sheet signed is to increase the increase
+40:48 the post money valuation. So like um how do you make sure that you know you're not giving on your customers negotiating
+40:54 leverage in order to kind of maximize that north star? Exactly. It comes back to guardrail
+40:59 metrics as well. And so we really pride ourselves we have I think one thing that most you know startups that think about
+41:06 these vertical AI opportunities is they should have some type of team focused on either environments for their AI agents
+41:13 or quality metrics for their agents. And the reason that matters so much is because it's very easy to get misaligned
+41:19 incentives of like taking shortcuts or doing work that's like halfway there. We have people on the team, both lawyers
+41:25 and engineers, only focused on how do we make sure quality is consistently
+41:31 meeting our customers needs. And that means not just doing good legal work in an objective sense, but also, hey, is
+41:38 this aligned with our customer's risk profile? Is this, you know, in the best interest of the customer's negotiation?
+41:44 And distilling all that down into a guardrail metric, combining that with the total turnaround time we call TTA.
+41:51 Um, and then I've learned that also from ramp, you know, if you have pathy
+41:56 metrics that you can really like rally behind that are fun to say, it actually does help just because people start we
+42:03 yeah, we just came up with it, you know, at one meeting and now the entire office we just go around saying tat. We also
+42:09 called this other metric, it's called hurt, which stands for human hu review time, RT.
+42:15 Ah, and so we're also trying to reduce the amount of hurt. Here's the hurt. I like the pininess of
+42:20 this and I think it's funny because I think metrics, you know, you can talk about them from a product perspective, but
+42:26 there's something very innately human and you want it to feel empathetic, right? Like reducing hurt feels more
+42:32 value aligned with how our lawyers should feel and also the same way like quality is so aligned with what our
+42:37 customers are expecting from us. I think one thing maybe I'll add
+42:43 what you're t the other ways that you have to increase leverage in a negotiation you know in in a fund raise
+42:48 is like set deadlines like increase the pressure like there's a lot of ways and
+42:55 I think contracts are so interesting because they're so human fundamentally it's just like an abstraction of a
+43:01 humanto human conversation about like what can we agree on and so last summer when we were kind of researching the
+43:07 idea I'd actually spent time in India. John's heard this story countless times and there's a lot of offshore legal
+43:12 services that do sort of back office very routine contract negotiations for
+43:18 Fortune 500 global companies and they just take five rules and apply those to a contract and just kind of go back and
+43:24 forth and like negotiate against them is like negotiating against the wall. They just, you know, they kind of don't get creative. But I had this one guy and I
+43:29 said, "So like what do you do if you get stuck?" He's like, "I have this really creative thing I do. I just called them and tell them that they're not going to
+43:34 want to say no to, you know, this company and we have a really long life and we're going to want to interface. And I was like, are you allowed to do
+43:40 that? He said, I don't know. I just started doing it. It works. Like, it was so human and it made me so appreciative
+43:46 of like the human element of these back and forths. And so I do think like we're
+43:51 unbelievably optimistic about how much time we can reduce and how much more efficient we can make the transactions
+43:57 between um entities but also there's an essential role for those counterparties to have in interfacing with each other
+44:04 to meet to have what we call meeting of the minds right to really get to agreement totally and at the same time I also wonder if we
+44:10 had an AI agent with some type of reinforcement learning if it just would reward hack and realize that picking up
+44:16 the phone would 100% convert if I give it a tool call for phone calls, but who knows?
+44:22 Well, how do you think this plays out though? Like let's say I imagine your agent has never negotiated against another one of your agents before in the
+44:27 field. But like eventually, I'm guessing people will have their agents negotiating in DAS on both sides, right?
+44:34 So I think this is this is the most beautiful essence of what we hope we can achieve here is being able to capture each party's
+44:42 preferences with their own sets of agents and have them simulate the negotiation. Yeah. and be able to show an auditable
+44:48 record of here was the first back and forth and then the fifth and then the seventh and here are what we netted and what do you think is that reasonable and
+44:54 that's your starting point and these are fundamentally collaborative negotiations. These are not adversarial
+44:59 and so the goal here is actually to be the collaboration platform to get people to agreement faster.
+45:06 So interesting. So each agent will kind of have a sense of everyone's risk preference, their bottom line,
+45:12 their tolerance for waiting out the negotiation, all and I want the agent that's going to like bang its head on the page. That's,
+45:17 you know, and like that's the one that you're only spend more compute on. The high inference agent.
+45:23 Yeah. And yeah, I think fundamentally, you know, partitioning the data, making sure like this agent doesn't have access
+45:29 to the other agents data and making sure like it's just really taking what law firms have already figured out of like
+45:35 you, you know, set up a wall between different teams and say negotiate against each other. You can apply that
+45:41 even in an easier way in a system setting because you just don't need the agents to talk to each other unless
+45:46 through their specific guard rails. Great. I'd love to bring it home by asking a bit about the future of how you guys see Crosby and how you see the
+45:52 legal industry playing out. What what do you think the legal industry looks like in 10 years? You know, I think coming back to the
+45:58 point on taste, increasing the leverage of these senior partners at law firms, I get a little
+46:06 worried about, you know, the junior associates and the parallegals and the opportunity for them. I can imagine it
+46:13 just looks like a senior associate managing an army of agents who can increase their leverage. Maybe for a
+46:19 personal injury firm, it's managing intake and someone managing actually drafting the demand letters and then
+46:24 actually reviewing them. The main job of the person is to show up in court and everything else is handled by an agentic
+46:31 system. But I'm curious for your take. All right, I'm going to try to do this quickly. In the 10-year period from 2007
+46:37 to 2017, in-house legal teams grew 200% and law firms grew 30%. And then again
+46:42 from 2014 till 2024, they went from about 320,000 to 440,000. In-house teams are really, really expanding. And the
+46:49 narrative seems to be that legal work's getting more complex and companies need much bigger in-house teams. And in-house
+46:55 teams have a lot fewer constraints than law firms. They can have not just lawyers, they can have parallegals, they
+46:60 can have legal operations, they can have different types of work specializing and they've become really creative and it's
+47:06 this kind of huge change that's been going on quite quietly. My hope is that, you know, because these are not
+47:12 companies that specialize in legal services. These are just, you know, this is the legal function. you'll see more
+47:18 and more specialized companies that are AI first because it's just so obvious that are truly changing the way um legal
+47:26 services get delivered. We are like a small part in this and I'll go back to what I said. This is the golden age. I
+47:31 think like this is like we've never seen true innovation in the legal market and we're just at the beginning. I think
+47:37 things are going to look very different. And maybe given that future, what should somebody in law school today do? Should
+47:43 they drop out? What what what should they be doing? I think this will go back to the fabric of our company. I think
+47:49 you want to question absolutely everything. I mean like question the way your professors tell you to write footnotes. Like is that really
+47:55 necessary? Question all there's so much dogma and then balance that like it's so
+48:01 fragile with understanding the brilliance of legal academia. This is what makes society run. Professors, my
+48:08 my professors at Stanford truly are some of the best mentors I've ever found and some of the smartest people. And so
+48:15 don't be arrogant but question everything and come take time and do an apprenticeship with Crosby. We'll teach
+48:21 you how to prompt but like pro it's important like these are the skills that I think are really going to matter is how to harness all the power of AI and
+48:29 there's so much room to change things and there's so many things that accepted as just facts that
+48:35 can all be permeable and it's hard to see when you're in it. Yeah, I think I won't say which company, but I went to a
+48:42 conference. It was all general counsels. Imagine Fortune 500. I won't name the
+48:48 conference because I would like to go back. But I sat next to this gentleman. He was the general counsel of a very
+48:54 large telecoms company, maybe one of our phones, uh, runs on this telecoms company. And I said, "Hey, have you like
+49:01 ever tried any of this chatbt or AI stuff?" And he said, "No, of course not. My CEO keeps telling me to. I refuse. I
+49:08 do not want to try it. And he's just, you know, I think to Ryan's point, like there's arrogance on both sides of like,
+49:14 you know, questioning everything, but also like, you know, being stuck in the old ways as well is dangerous. Makes sense. Well, I think question
+49:21 everything and try everything seems to be a good theme for all of us. So, thank you guys again for coming on. Appreciate
+49:27 it. Thanks for having us. It's really fun. [Music]
+49:36 [Music]
+49:46 [Music]

@@ -1,0 +1,429 @@
+00:00 one way to think about reasoning is there are some problems that benefit
+00:05 from from being able to think about it for longer you know there's this classic notion of system one versus system two thinking in humans system one is the
+00:12 more automatic instinctive response and system two is the slower um you know
+00:17 more process driven response um and for some tasks you don't really benefit from
+00:24 more thinking time so if I ask you like what's the capital of Bhutan you know you can think about it for two years it's not going to help you get it get it
+00:30 right with higher higher accuracy what is the capital I actually don't know uh but you know there's there's
+00:37 some problems where there's clearly a benefit from being able to think for longer so one classic example that I point to is a Sudoku puzzle it's you you
+00:44 could in theory just go through a lot of different possibilities for like what the Sudoku puzzle might be uh what the solution might be and it's really easy
+00:50 to to recognize when you have the correct solution So in theory if you just had like tons in times in time to solve a puzzle you would eventually
+00:56 figure it out
+01:02 [Music]
+01:14 we're excited to have Noam Hunter and ILO with us today who are three of the researchers on Project strawberry or 01
+01:20 at openai 01 is open ai's first major Fay into General inference time compute
+01:26 and we're excited to talk to the team about reasoning Chain of Thought and inference time scaling law and
+01:33 more ilga Hunter Noom thank you so much for joining us and congratulations on releasing 01 into the wild I want to
+01:41 start by asking did you always have conviction this is going to work um I think that we had conviction
+01:48 that something in this direction was promising but the the actual like path to get here was never clear and I you
+01:57 know you look at 01 it's not like this is an overnight thing it actually there's a lot of years of research that that goes into this um and a lot of that
+02:05 research didn't actually um pan out but I think that there was conviction from
+02:11 open Ai and like a lot of the um leadership that something in this direction um had to work and they were
+02:19 willing to uh to keep investing in it um despite the initial setbacks and I think
+02:25 that eventually paid off I I'll say that I did not have as much conviction as gome from the very beginning um I've
+02:32 been staring at language models trying to teach them to do math and other kinds of reasoning for a while um and I think
+02:38 there's like uh a lot to research that's ebb and flow um sometimes things work sometimes things don't work um when we
+02:45 saw that the methods we were pursuing here started to work um I think it was a kind of aha moment for a lot of people
+02:52 uh myself included um where I started to read some um outputs from the models
+02:58 that were approaching the problem solving a different different way um and
+03:03 that was this this moment I think for me where my conviction really set in um I think that open eye in general takes a
+03:09 very empirical data- driven approach to a lot of these things and when the data
+03:14 starts to speak to you when the data starts to make sense when the trends start to line up and we see something
+03:20 that that we want to pursue we pursue it and that for me was when I think the conviction really set in about you Ila
+03:26 you've been at open AI for very long time five and a half years five and a half
+03:31 years what what did you think did you have conviction from the beginning that this approach was going to work um no
+03:36 I've been wrong several times since joining about the path to AI um we
+03:41 originally well I originally thought that robotics was the way forward that's why I joined the robotics team first um
+03:48 embodied AI AGI that's where we thought things were going to go um but yeah I
+03:54 mean things hit roadblocks um I I would say like during my time here chat GPT
+03:60 well I guess that's kind of obvious now that was a paradigm shift we were able to share very broadly with the world
+04:07 something that is a universal interface and um I'm glad that now we have a new
+04:14 path potentially forward to push this ra reasoning Paradigm um but yeah it was
+04:19 definitely not obvious to me um for the longest time yeah I realize there's only
+04:26 so much that you're able to say publicly for very good reasons about how it works but what can you share about how it
+04:33 works even in sort of general terms so um the oan model series um are
+04:40 trained with ARL to be able to think and um you could call it reasoning maybe
+04:47 also uh and it is fundamentally different from what we're used to with llms um and we've seen it uh really
+04:54 generalized to a lot of different reasoning domains as we've also uh shared recently so we're very excited
+05:01 about this paradigm shift with this new model family and for for people who may
+05:06 not be as familiar with what's state-of-the-art in the world of language models today what is reasoning
+05:12 how would you define reasoning and maybe a couple words on what makes it important good question I mean I think
+05:19 one way to think about reasoning is there are some problems that benefit
+05:24 from from being able to think about it for longer you know there's this classic notion of system one versus system two thinking in humans system one is the
+05:30 more automatic instinctive response and system two is the slower um you know
+05:36 more process driven response um and for some tasks you don't really benefit from
+05:42 more thinking time so if I ask you like what's the capital of bhan you know you can think about it for two years it's not going to help you get it get it
+05:49 right with higher higher accuracy what is the capital I actually don't know um but you know there's there's
+05:55 some problems where there's clearly a benefit from being able to think for longer so one classic example that I point to is a Sudoku puzzle it's you you
+06:02 could in theory just go through a lot of different possibilities for like what the Sudoku puzzle might be uh what the solution might be and it's really easy
+06:09 to to recognize when you have the correct solution So in theory if you just had like tons and tons of time to solve a puzzle you would eventually
+06:15 figure it out um and so that's that's what I consider to be I think a lot of
+06:20 people in the AI Community have like different definitions of reasoning and I'm not claiming that this is like the
+06:25 canonical one I think everybody has their has their own opinions but I view it as um the kinds of problems where
+06:32 there is a benefit from being able to like consider more options and and think for longer um you might call it like a a
+06:40 generator verifier Gap where there's like it's really hard to generate a correct solution but it's much easier to
+06:46 recognize when you have one and I think all problems exist on the Spectrum from really easy to verify um relative to
+06:54 generation like a Sudoku puzzle versus um you know just as hard to verify as it is to generate a solution like name of
+06:60 the capital of gutan I want to ask about you know alphago and know your background having
+07:07 done you know a lot of great work in poker and other games uh to what extent
+07:13 are the lessons from gameplay analogous to what you guys have done with 01 and how are they different so I think one
+07:19 thing that's that's really cool about 01 um is that it does clearly benefit by
+07:25 being able to think for longer and when you look back at like many of the AI breakthroughs that have happened
+07:31 I think alpago is the classic example one of the things that um was really
+07:36 noticeable about about the bot though I think underappreciated at the time was that it thought for a very long time before acting it would take you know 30
+07:43 seconds to make it to make a move and if you tried to have it act instantly it
+07:49 actually wasn't better than top humans it was noticeably worse than them and so it clearly benefited a lot by that extra
+07:55 thinking time now the problem is that the extra thinking time that it had um
+08:01 it was running multicol research which which is like a a particular form of
+08:06 reasoning that that worked well for go um but for example doesn't work in a
+08:12 game like poker which which my early research was on um and so a lot of the
+08:17 like methods that existed for for being able to reason um for being able to like
+08:23 think for longer was still specific to the domains even though the um the
+08:29 neural that's behind it the the the system one part of the AI was very general and I think one thing that's
+08:36 really cool about 01 is that it is so General the way that it's thinking for
+08:41 longer is actually quite General and can be used for a lot of different domains and we're seeing that by giving it to users and seeing what they what they are
+08:47 able to do with it yeah one of the things that's always been really compelling to me about language models
+08:53 and this is nothing new is just that because their interface is the text interface they can be adapted to work on
+08:59 all different different kinds of problems um and so what's exciting I think about this moment for us is that
+09:05 we think we have a way to do something uh to do reinforcement learning on this
+09:10 General interface um and then we're excited to see what that can lead to one question on that you you mentioned I
+09:16 thought that was well put sort of the the I forget exactly how you phrased it but the gap between generation and
+09:22 verification and there's sort of a spectrum in terms of how easy things are to verify does the does the method for
+09:28 reasoning remain assistant at various points in that Spectrum or are there different methods that apply to various
+09:35 points in that Spectrum one thing I'm excited about for this release has been to get 01 in the
+09:42 hands of so many new people uh to play with it to see how it works what kinds of problems it's good at and what kinds
+09:48 of problems it's bad at um I think this is like something really core to open ai's uh strategy of iterative deployment
+09:55 we put the technology that we build the research that we develop out into the world so that we can see um um like we
+10:00 we do it safely and we do it so that we can see how the world interacts with it and what kinds of things we might not always understand fully ourselves um and
+10:07 so in thinking about like what are the limits of our approaches here I think it's been really enlightening to see uh
+10:15 like Twitter uh show what it can and what it can't do um I hope that that is
+10:20 like enlightening for the world that's useful for for everyone to figure out what these new tools are useful for and then I also hope we're able to take back
+10:26 that information and and and use it effectively to understand our our processes our research our products
+10:31 better speaking of which is there anything in particular that you all have seen in the Twitter verse that's
+10:37 surprised you you know ways that people have figured out how to use 01 that you hadn't anticipated um there's one thing
+10:44 I'm super excited about I've seen um a lot of MDS and researchers um use the
+10:49 model as a brainstorming partner and what they are talking about is that like they've been in cancer research for so
+10:55 many years and they've been just running these ideas by the model about what they can do about these Gene Discovery gene
+11:01 therapy type of applications and they are able to get like these really novel uh ways of research to pursue from the
+11:08 model clearly the model cannot do the research itself but it can just be a
+11:14 very nice uh collaborator with humans uh for in this respect so I'm super excited
+11:19 about seeing the model just Advance this scientific uh path forward that's not
+11:25 what we're doing um in our team but like that is the thing I guess like we want to see in the world the domains that are
+11:33 outside ours that gets really uh benefit by this model no I think you tweeted
+11:39 that deep RL is out of the trough of disillusionment can you say more about what you meant by that I mean I think um
+11:45 there was definitely a period starting with I think Atari you know the Deep Mind Atari results um
+11:53 where deep RL was the hot thing I mean I I I was I was in a PhD program I remember what it was like in like you
+11:59 know 2015 to 2018 2019 and deep RL was was the hot thing and in some ways I I
+12:07 think that was I mean a lot of research was done but um certainly some things were overlooked and I think um one of
+12:13 the things that was kind of overlooked was was the power of just training on tons and tons of data using you know
+12:19 something like um the GPT approach and in many ways it's kind of surprising
+12:25 because if you look at alphago which was in many ways like the the crowning achievement of De RL um yes there was
+12:32 this RL step but there was also I mean first of all there was also this reasoning step but even before that there was this large process of learning
+12:40 from Human data and and that's really what got alphago off the ground um and
+12:46 so then there was this like increasing shift there was I guess like a view that this was an impurity in some sense that
+12:52 um uh so a lot of deep RL is really focused on um learning without human
+12:58 data with just learning from scratch um yeah Alpha zero which was a great which was an amazing result and actually
+13:03 ended up doing a lot better than Alpha go um but I think partly because of this
+13:10 focus on loaring from scratch um this GPT Paradigm uh kind of flew under the
+13:15 radar for a while and um except for open AI which which you know saw some initial
+13:20 results for it and you know again had the conviction to to double down on that investment um yeah so there was
+13:29 definitely this period where um deepl was the hot thing and then I think you
+13:35 know when gpt3 came out and and some of these other like large language models and there was so much success without
+13:42 deepl um it there was like yeah a period of disillusionment where um a lot of
+13:49 people switched away from it or or kind of lost faith in it and what we're seeing now with 01 is that actually
+13:55 there is um a place for it and it it can be quite powerful when it's combined
+14:01 with these other elements as well and I think a lot of the deepl results were in kind of you know well
+14:07 defined settings like gameplay is o1 one of the first times that you've seen deep RL used in much more General kind of uh
+14:15 unbounded setting is that the right way to think about it yeah I think I think it's a good I think it's a good point that a lot of the like highlight deepl
+14:22 results were really cool but also very like narrow in in their applicability um
+14:28 I mean I think there were a lot of like quite useful deep RL results um and and also quite General RL results but there
+14:34 wasn't anything um comparable to something like gp4 in its impact so um I
+14:40 I think I think we will see that kind of level of impact from deepl in this new paradigm going
+14:45 forward one more question in this General train of thought uh I remember the alphao results you know at some
+14:51 point with the in the leas at all tournaments there was move 37 and you know that move surprised everybody have
+14:59 you seen seen something of that you know sort where where 01 tells you something and it's surprising and you think about
+15:06 it it's actually right and it's better than any you know top human could think of have you have you had that moment yet with the model or you think it's 02
+15:14 03 uh one of the ones that comes to mind is we spent a lot of the time preparing for the ioi uh competition that we put
+15:22 the model into uh looking at its responses to programming competition problems and there was one problem where
+15:28 it was uh was really insistent on solving the problem in this kind of weird way uh with some weird method I
+15:34 don't know exactly what the details were uh and uh our colleagues who are much more into competitive programming were
+15:39 trying to figure out why I was doing it like this I don't think it was quite a like this is a stroke of Genius moment I think it was just like the model didn't
+15:45 know the actual way to solve it and so it just like banged it head until it found something else um did it get there
+15:51 yeah yeah it solved the problem it just it just it used some it was like it was some method that would have been really
+15:56 easy if you saw something else I I wish I had the specific one but uh I remember that being kind of interesting there's a
+16:02 lot of the things in the in the in the programming competition um results um I
+16:08 think somewhere we have the II competition programs uh published um
+16:13 where you can start to see that the model doesn't approach thinking quite like a human does or it doesn't approach
+16:19 these problems quite like a human does it has slightly different ways of solving it for the actual II competition
+16:24 um there was one problem that humans did really pour on that the model was able to get half credit on
+16:30 uh and then another problem that humans did really well on that the model was like barely able to get off the ground on um just showing that it kind of has a
+16:36 different way of approaching these things than than maybe a human would I've seen the model um solve some
+16:43 geometry problems and the way of thinking was quite surprising to me such that you're asking the model just like
+16:50 give me this like sphere and then there are some points on the sphere and asking for probability of some event or
+16:56 something and the model would go uh let's visualize this let's put the points and then if I think about it that
+17:02 way or something so I'm like oh you're just using words and visualizing something that really helps you con
+17:09 contextualize um like I would do that as a human and seeing oan do it too just really surprises me interesting that's
+17:16 fascinating so it's stuff that's actually understandable to a human and would actually kind of expand the boundaries of how humans would think about problems versus you know some UND
+17:23 decipherable machine language that's really fascinating yeah I definitely think one of the cool things about our
+17:29 own one result is that these chains of thoughts the model produces are uh human interpretable um and so we can we can
+17:35 look at them and we can kind of poke around at how the model is thinking were there um were there aha
+17:41 moments along the way or were there moments where you know Hunter you mentioned that you were not as convinced
+17:47 at the outset that this is the direction that was going to work was there a moment when that changed where you said oh my gosh this is actually going to
+17:54 work uh yeah so uh I've been an open eye about about two and a half years uh and
+18:01 most of the time I've been working on trying to get the models um better at solving math problems um and we've done
+18:08 a bunch of work in that direction we've uh built various different thepoke systems for that uh and there was a
+18:13 moment on the o1 trajectory where we had just trained this model with this method with a bunch of fixes and and changes
+18:19 and whatnot uh and it was scoring higher on the mathy vals than any of our other
+18:24 attempts um any of our bespoke systems and then we were reading the uh chains
+18:29 of thought and you could see that they felt like they had a different character in particular um you could see that when
+18:36 it got stuck it would say wait this is wrong let me take a step back let me figure out the right path forward uh and
+18:42 and we called this backtracking and I think for uh a long time I'd been waiting to see an instance of the models
+18:48 backtracking and I kind of felt like I wasn't going to get to see an autor regressive language model backtrack because they're just kind of predict
+18:54 next token predict next token predict next token and so when we saw this score on the math test test and we saw the
+18:60 trajectory that had the backtracking that was the moment for me where I was like wow um this is like something is
+19:07 coming together that I didn't think was going to come together and I need to update uh and and I think that was when I grew a lot of my
+19:13 conviction I think the story is the same for me I think it was probably around the same time actually like I you know I
+19:20 definitely I joined with this idea of like you know Chach BT doesn't really think before responding like it's very
+19:26 very fast and there was this like powerful Paradigm of like um in these in these games of AI being able to think
+19:33 for longer and getting much better results but and and there's this question about how do you bring that into uh language models that I was
+19:39 really interested in um and you know that's like it's easy to say that but
+19:44 then there's like there's a difference between just like saying that oh there should be a way for it to think for longer than actually like delivering on that and so we um you know we I I I
+19:52 tried to I tried a few things and like other people were trying a few different things and um in particular yeah one of
+19:58 the things we wanted to was this ability to um to backtrack or to like recognize
+20:03 when it made a mistake or to like try different approaches um and we had a lot
+20:08 of discussions around how do you enable that kind of behavior and at some point we just felt
+20:14 like okay well one of the things we should try at least as a baseline is like just have the AI think for longer
+20:19 um and we saw that like yeah it it once it's able to to think for longer it um
+20:27 develops these abilities um almost like emergently that um were very powerful
+20:34 and contain things like backtracking and self-correction all all these things that that we were wondering how to enable in the models and and to see it
+20:40 come from such a um a clean scalable approach um that was for me the big
+20:47 moment when I was like okay it's very clear that we can push this further and
+20:53 um and it's it's so it's so clear to see where things are going no no my think is
+20:59 understating how strong and effective his conviction in test time compute was I feel like all of our early one-on ones
+21:05 uh when he joined were talking about test time computer and its power and I think multiple points throughout the project no would just say why don't we
+21:10 let the model think for longer and then we would and it would get better and he would just be uh he would just look at
+21:17 us kind of funny like we hadn't done it until that point one thing we noticed in your evals
+21:23 is that you know owan is noticeably good at stem it's better at stem uh than the
+21:28 the pre previous models is there a rough intuition for that why that is I mentioned before that like there's some
+21:34 tasks that are like you know reasoning tasks that are easier to verify than they are to to generate a solution for
+21:40 and there there's some tasks that that don't really fall into that category and I think stem problems tend to fall into
+21:46 the like what we would consider hard reasoning problems and so I think that's that's that's a big factor for why we're
+21:52 seeing a lift on on stem kind of subjects makes sense um I I think relatedly we saw that um in the in the
+21:60 research paper that you guys released that 01 passes your research engineer interview with pretty high Pass rates
+22:08 what do you make of that and does that mean at some point in the future open AI will be hiring A1 instead of instead of
+22:14 human Engineers uh I don't think we're quite at that level yet um I think that there's more it's hard to be the 100%
+22:21 though uh maybe the interviews need to be better I'm not sure um I think that
+22:27 the 01 does feel at least to me I think other people on our team like a better coding partner um than the other models
+22:35 um I think it's already authored a couple of PRS in our on our repo um and
+22:40 so in some ways it is acting uh like a software engineer um because I think software engineering is another one of
+22:46 these stem domains that that benefits from longer reasoning um I don't know I think that um the kinds of uh roll outs
+22:55 that we're seeing from the model are thinking for a few minutes at the time I think the kinds of software engineering uh job that I do when I when I go and
+23:02 write code I think for more than a few minutes at a time um and so maybe as we start to scale these things further as
+23:07 we start to follow this trend line uh and let 01 think for longer and longer it'll be able to do more and more of those tasks and we'll see you'll be able
+23:15 to tell that we've achieved AGI internally when we take down all the job listings and either the company's doing
+23:21 really well or really poorly what do you think it's gonna take for 01 to get great at the humanities do
+23:27 you think being good at reasoning and logic and and stem kind of naturally will extend to being good at the humanities you as you scale up in Prince
+23:34 time or how do you think that plays out you know we're well like we said we released the models and we were kind of curious to see um what they were good at
+23:41 and and what they weren't as good at and um and what people end up using it for
+23:48 and I think there's clearly a gap between the raw intelligence of the model and how it's um like how useful it
+23:57 is for various tasks like in some ways it's very useful but I I think that um it it could be a lot more useful in a
+24:03 lot more ways um and I think there's still some iterating that to do to to be able to unlock that like more General
+24:10 usefulness well can I ask you on that do do you view I'm curious if there's a philosophy at open AI or maybe just a
+24:17 point of view that you guys have on how much of the gap between the capabilities of the model and whatever real world job
+24:24 needs to be done how much of that Gap do you want to make part of the model and how much of that Gap is sort of the job
+24:31 of the ecosystem that exists on top of your apis like their job to figure out
+24:36 do you have a do you have a thought process internally for kind of figuring out like what are the jobs to be done that we want to be part of the model
+24:42 versus kind of where do we want our boundaries to be so that there's an ecosystem that sort of exists around us
+24:50 so I'd always heard that opening ey was very focused on AGI and I was like like honestly kind of skeptical of that
+24:55 before I joined the company and and basically like the first first day that I started and there was an all hands of
+25:02 the company and Sam got up in front of the whole company and basically like laid out the priorities going forward
+25:08 for like the the shortterm and the long term it became very clear that AGI was
+25:13 the actual priority and so I think the clearest answer to that is you know AGI
+25:19 is the goal um there's no single like application that is the priority other
+25:27 than getting us to AI do you have a definition for
+25:32 AGI everybody has their own definition for a exactly that's what I'm
+25:38 curious I I don't know if I have a concrete definition I just think that uh it's something about the
+25:44 proportion of economically valuable jobs that our uh models and our AI systems are able to do I think it's going to
+25:50 ramp up a bunch over the course of the next however many years I don't know it's one of those uh It'll like you'll
+25:58 feel it when you feel it and we'll like move the goalpost back and be like this isn't this isn't that for however long
+26:04 until one day we're just working alongside these AI co-workers and um they're doing large parts of the jobs
+26:09 that we do now and we're doing different jobs and and the whole ecosystem of what it means to do work has changed one of
+26:14 your colleagues had a good articulation of the importance of reasoning on the path to AGI which I think paraphrases as
+26:23 something like any job to be done is going to have obstacles along the way
+26:30 and the thing that gets you around those obstacles is your ability to reason through them and I thought that was like
+26:36 a pretty nice connection between the importance of reasoning and the objective of AGI and sort of being able
+26:42 to accomplish economically useful tasks um is that is that the best way to think
+26:48 about what reasoning is and why it matters or there other Frameworks that you guys tend to
+26:54 use I think this is a TBD thing um just because I think at a lot of the stages
+27:00 of the development of these AI systems of these models we've um seen different
+27:05 shortcomings different failings of them I think I think we're learning a lot of these things as we develop the systems as we evaluate them as we uh try to
+27:12 understand their capabilities and what they're capable of um other things that come to mind that I don't know how they
+27:18 relate to reasoning or not are like strategic planning um ideating or things like this where
+27:26 like to be a um to make an model that's as uh good as an excellent product manager uh you need to do a lot of
+27:32 brainstorming ideation on on on on on what users need what all these things are is that reasoning or is that a
+27:39 different kind of creativity that's not quite reasoning and needs to be addressed differently then afterwards when you think about operationalizing
+27:45 those plans into action you have to strategize about how to move an organization towards getting things done is that reasoning there's parts of it
+27:51 that are probably reasoning and there's maybe parts that are something else and maybe eventually it'll all look like reasoning to us or maybe we'll come up
+27:57 with a new word and there will be new uh new steps we need to take to get there I don't know how long we can we'll be able
+28:04 to push this forward but whenever I think about this General reasoning problem it helps to think about the
+28:09 domain of math uh we've spent a lot of time uh reading what the model is
+28:15 thinking uh when it's when you ask at a math problem um and then it's clearly doing this thing where like it hits an
+28:21 obstacle and then it backtracks just has a problem Oh wait maybe I should try this other thing so when you see that um
+28:29 thinking process um you you can imagine that it might generalize to things that
+28:34 are Beyond math that's what gives me hope I don't know the answer but hopefully the thing that gives me pause
+28:41 is that the 01 is already better than me at math but it's not as good at me at being
+28:46 a software engineer um and so there's some there's some mismatch here there's still a job to be done good there's still there's still some work to do if
+28:52 my whole job were doing uh Amy problems and doing high school competition math I'd be out of work there's still some
+28:58 stuff for me for right now since you mentioned um sort of the The Chain of Thought and being able to watch the
+29:03 reasoning behind the scenes um I have a question that might be one of those questions you guys can't answer but just for fun was it f first off I give you
+29:11 props for in the blog that you guys um published with the release of 01 explaining why Chain of Thought is
+29:17 actually hidden and and literally saying like partly it's for competitive reasons um I'm curious if that was a contentious
+29:24 decision or or like how controversial that decision was because I could see it going either way and it's a logical decision to hide it
+29:31 but I could also Imagine a world in which you decide to expose it so I'm just curious if that was a contentious decision I don't think it was
+29:37 contentious I mean I think for the same reason that you don't want to um share
+29:42 the model weights necessarily for a Frontier Model I think there there's a lot of risks to sharing um the you know
+29:49 the the thinking process behind the model and I think I think it's a similar decision
+29:54 actually can you explain from a Layman's maybe to Layman like what what is the chain of that and what's what's an
+30:00 example of one so for instance if you're asked to solve an integral um most of us
+30:06 would need a piece of paper and a pencil and we would um kind of lay out the steps from getting from a complex
+30:13 equation and then there will be steps of simplifications and then going to a final answer the answer could be one um
+30:21 but how do I get there that is the Chain of Thought in the domain of math let's talk about that path forward uh
+30:27 inference time scaling LW to me that was the most important chart from the research that you guys published and it
+30:33 seems to me like a Monumental result similar to the the scaling laws from from pre-training um and and sorry to be
+30:40 hypy uh like do you agree that like the implications here I think they're pretty profound and you know what does it mean
+30:47 for for the field as a whole I think I think it's pretty profound um and I I think one of the
+30:54 things that I wondered when we were preparing to release 01 is is what people would recognize its significance
+31:01 um we you know we we included it but it's it's kind of a subtle point and I was actually really surprised and
+31:08 impressed that um so many people recognized what what this meant um there
+31:13 have been a lot of concerns that like AI might be hitting a wall or plateauing because pre-training is so expensive and
+31:20 becoming so expensive and there's all these questions around like is there enough data to to train on um and I
+31:27 think one one of the major takeaways about 01 especially 01 preview is not what the model is capable of today but
+31:33 what it means for the future the fact that we're able to have this different
+31:39 dimension for scaling that is so far pretty untapped um I I think is a is a
+31:45 big deal and um and and I think means that the ceiling is a lot higher than a
+31:51 lot of people have appreciated what happens when you let the model things for for hours or months
+31:58 or years what do you what do you think happens we haven't had 01 for years so
+32:04 we haven't been able to let it think that long yet is there a job just running in the background right now that it's just still thinking
+32:11 about solve World Peace okay I'm thinking thinking think yeah there's a there's a Asimov
+32:18 story like that called the last question where yeah you they asked this big computer sized uh AI um something about
+32:26 like how do we reverse entropy and it says I need to think longer for that and like the story goes and then 10 years
+32:33 later they see and it's still thinking and then a 100 years later and then a thousand years later and then 10,000 years later um yeah there is as yet
+32:40 meaningful not enough information for Meaningful answer or something like yeah like it's still yeah do you have a guess
+32:47 empirically on you know what'll happen you know or I guess right now I think the model has I've seen some reports
+32:54 like 120 IQ so like very very smart uh is there a is there a ceiling on that as
+33:01 you scale up iner time compute do you think you get to infinite IQ one of the important things is that
+33:07 like it's 120 IQ on some test someone gave this doesn't mean that it's got like0 IQ level reasoning at all the
+33:14 different domains that we care about I think we even talk about how it is um below 40 on some things like creative
+33:20 writing and whatnot um so I I uh there's definitely it's like it's confusing to
+33:26 think about how we extrapolate this model I think I think it's an important point
+33:32 that um you know we we talk about these benchmarks and we one of the benchmarks that we highlighted in our results was
+33:37 gpq which is this um you know questions that are given to PhD students and like
+33:42 typically PhD students can answer and the AI is outperforming a lot of phds on this Benchmark right now that doesn't
+33:49 mean that it's smarter than a PhD in like every single way imaginable there's there's a lot of things that a PhD can
+33:54 do that you know there's a lot of things that a human can do period that AI can't do and um so you always have to like
+34:02 look at these EV valves with um some understanding that like it's measuring a certain thing that is typically a proxy
+34:10 for human intelligence when you measure you know when humans take that test but means something different when when the
+34:15 AI takes that test maybe a way of framing that an answer to the question is that I hope that we can see that
+34:22 letting the model think longer on the kinds of things that it's already showing it's good at will continue to get it better um so um one of my big
+34:28 Twitter moments uh was um I saw a professor that I had had in school a
+34:33 math professor was tweeting about how uh he was really impressed with 01 um because he had given it a proof that had
+34:40 been solved before by humans but never by an AI model uh and it just took it and ran with it and figured it out and
+34:47 that to me feels like we're at the cusp of something really interesting where it's close to being a useful tool for
+34:53 doing novel math research where if it can do some small lemas and some proofs
+34:59 for um like real math research that would be really uh that would be really really a breakthrough um and so I hope
+35:05 by letting it think longer we can get better at that particular task of being a really good math research assistant um
+35:11 it's harder for me to extrapolate what it's going to look like will it get better at the things that it's not good at now um what would that path forward
+35:18 look like and then what would the infinite IQ or whatever look like then um when it thinks Forever on problems that it's not good at but instead I
+35:24 think you can kind of ground yourself in a here are the problems it's good at if we let it think longer at these oh it's
+35:30 going to be useful for math research oh it's going to be really useful for software engineering oh it's going to be really and you can start to play that
+35:37 game and start to see how I hope the the future will evolve what what are the bottlenecks to
+35:42 scaling Tes time compute I mean for for pre-training it's pretty clear you need enormous amounts of compute you need
+35:49 enormous amounts of data this stuff requires enormous amounts of money like it's pretty easy to imagine the bottom X on scaling pre-training what constrains
+35:56 sort of the scaling of inference time compute when when gbt2 came out and gpt3
+36:03 came out it was like pretty clear that like okay if you just throw more data and more gpus at it it's going to get a
+36:08 lot better and it still took years for to get from gpd2 to gbd3 to gbd4 and um
+36:15 there's just a lot that goes into taking an an idea that sounds very
+36:21 simple and then actually like scaling it up to a very large scale and I think that there's a similar challenge here
+36:26 where okay it's like a simple idea but you know there's a lot that work that has to go into um actually scaling
+36:33 it up so I think that's the challenge yeah I think that um one thing that I
+36:39 think maybe it doesn't anym surprise but one thing I think might might have used to surprise more academic oriented
+36:44 researchers who join open AI is how much of the problems we solve are engineering problems versus research problems um
+36:52 building large scale systems training large scale systems running algorithms that have never been invented before on
+36:58 systems that are are brand new um is is a scale no one's ever thought of is is
+37:03 really hard and so there's always a lot of just like hard engineering work to to make these systems scale up also one
+37:10 needs to know what to test the model on so we do have these standard evals as benchmarks but uh perhaps there are ones
+37:18 that we're not yet testing the model on so we're definitely looking for those where uh we can just spend more compute
+37:24 on test time and get better results one of the things I'm having a hard time wrapping my head around is you know what
+37:30 happens when you give the model you know near infinite computes because as a
+37:36 human I am you know even if I'm teren to like I am Limited at some points by my by my brain uh whereas you can just put
+37:43 more and more compute that inference time and so does that mean that for example all math theorems will eventually be solvable through this
+37:50 approach uh or like where is the limit do you think infinite computes a lot of compute
+37:59 near near infinite it goes back to the Asimov story if you're waiting 10,000 years but maybe uh but but I I I say
+38:07 that just to to ground it in a like we don't know yet quite what the scaling of this is for how it relates to solving
+38:14 really hard math theorems um it might be that you really do need to let it think for a thousand years to solve some of
+38:20 the unsolved like Core math problems um yeah yeah I mean I think it is true that
+38:25 like if if you let it think for long enough then in theory you could just go through like you know you formalize
+38:31 everything in lean or something and you go through every single possible lean proof and eventually you you stumble upon the theorem yeah we have algorithms
+38:37 already that can solve any math problem is maybe what you were about to get out right exactly yeah like given infinite time you can do a lot of things but yeah
+38:43 so you know clearly get some diminishing returns as you think for longer but yeah very fair what do you think is the
+38:48 biggest misunderstanding about 01 I think a big one was like when the name strawberry leaked people assume
+38:55 that like it's because of this uh popular question online of like the models can't answer how many RS are in
+39:01 strawberry and that's actually not the case it's when when we saw that question actually we were really concerned that
+39:06 there was some internal leak um about the model and as far as we know there wasn't it was just like a complete
+39:12 coincidence that our project was named strawberry and there was this also this like popular reasoning about strawberries as far as I can tell the
+39:18 only reason it's called strawberry is because at some point at some time someone needed to come up with a code
+39:24 name and someone in that room was eating a box of strawberries
+39:29 and I think that's really the end of it it's more relatable than cou I think I was pretty impressed with
+39:35 like how well understood it was actually yeah um I we we were actually not sure
+39:41 how it was going to be received when we when we launched um there was a big debate internally about like is people
+39:46 are people just going to be like disappointed that it's like you know not better at everything um or are people
+39:52 going to be like impressed by you know the crazy math performance um and well
+39:57 we were really trying to communicate was that it's not really about the model that we're releasing it's more about
+40:03 where it's headed and I think I was yeah I I wasn't sure if that would be well
+40:09 understood but it seems like it was and so I think I was actually very um very happy to see that is there any criticism
+40:15 of 01 that you think is fair it's absolutely not better at everything um it's a funky model to play
+40:22 with I think people on the internet are finding um new ways to prompt it to do better um um so there's still a lot of
+40:30 weird edges um to work with um I don't know I'm I'm I'm I'm I'm really excited
+40:36 to see um someone had alluded earlier to like the letting the ecosystem work with
+40:42 our platform to to make more intelligent products to make more intelligent things uh I'm really interested to see how that
+40:48 goes with 01 um I think we're in the very early days it's kind of like I
+40:53 don't know at some point a year ago people started to really figure out these MPS these language model programs
+40:59 with um uh gbd4 or whatever and it was enabling smarter software engineer tools
+41:06 and things like that um maybe we'll see some similar kinds of developments with
+41:11 people building a top of one speak which one of the things that um we have not talked about is o1 mini and I've heard a
+41:18 lot of excitement about o1 mini because people are generally excited about small models and if you can preserve the
+41:24 reasoning and extract some of the World Knowledge you know for which deep Neal Nets are not exactly the most efficient
+41:30 mechanism like that's a pretty pretty decent thing to end up with so I'm curious what what's your love little
+41:35 excitement about 01 mini and kind of the general direction that that
+41:41 represents it's it's a super exciting model also for us as researchers um if a
+41:46 model is fast it's universally useful so yeah we also like it um yeah they they
+41:53 they kind of serve different purposes and also yeah we have we we are excited to have like a cheaper faster version
+41:59 and then kind of like a heavier slower one as well yeah they they are useful for different things so um yeah
+42:05 definitely excited that we we ended up with um a good tradeoff there I really
+42:10 like that framing I think it highlights how much progress is like how how much you can move forward times how much you
+42:16 can iterate um and at least for our research like GGA gets at uh 01 mini
+42:22 lets us iterate faster hopefully for the broader ecosystem of people playing with these models 01 mini will also allow
+42:28 them to iterate faster um and so it should be like a really useful and exciting artifact at least for at least
+42:34 for that reason for Founders who are building in the AI space how should they think about you know when they should be
+42:40 using gp4 versus 01 like do they have to be doing doing something STEM related
+42:45 coding related math related for to use1 or how should they think about it I'd
+42:51 love if they could figure that out for us one of the motivations that we had
+42:56 for releasing one preview um is to see what people end up using it for and and
+43:03 how they end up using it um there was actually yeah um some some
+43:09 question about like whether it's even worth releasing a one preview um but yeah I think one of the reasons why we
+43:15 wanted to release it was so that we can get into the into people's hands early and and see um what use cases it's
+43:21 really useful for what it's not useful for what people like to use it for and um how to improve it and for for the
+43:28 things that people find it useful for anything you think people most underappreciate about 01 right now it's
+43:36 like somewhat proof we're getting a little bit better at naming things
+43:41 um we didn't call it like GPT 4.5 thinking mode
+43:48 whatever um well I thought it was strawberry thought it was qar so I don't know
+43:55 thinking mode kind of has a kind of hasn't ring to it uh what do what are you guys most
+44:00 excited about for 02 03 whatever may come next 0 3.5 whatever
+44:08 yeah we're not at a point where we are out of ideas so I'm excited to see how
+44:13 it plays out just keep doing our research but yeah most excited about getting the feedback because as researchers we are clearly biased
+44:20 towards the domains that we can understand but we'll receive a lot of different use cases um from the usage of
+44:26 the product and we we're going to say maybe like oh yeah this is an interesting thing to push for um and
+44:33 yeah like beyond our imagination it might get better at different fields I think it's really cool that we
+44:39 have a trend line um which should we Post in that blog post and I think it'll be really interesting to see how that
+44:45 trend line extend wonderful that's a good note to end on thank you guys so
+44:50 much for joining us today
+45:01 [Music]

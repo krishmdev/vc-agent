@@ -1,0 +1,3394 @@
+00:00 if you have your data laid out as
+00:02 
+
+00:02 relational tables a Kuma just sucks it
+00:06 
+
+00:06 in so we just you just specify and you
+00:09 
+
+00:09 know through connectors uh tell Kuma
+00:12 
+
+00:12 what your schema is and then you can
+00:14 
+
+00:14 just start writing predictive queries so
+00:17 
+
+00:17 the graph is abstracted away but if you
+00:19 
+
+00:19 have someone like a data scientist who
+00:22 
+
+00:22 loves tweaking the neural network
+00:24 
+
+00:24 paros in case Constantine is be
+00:28 
+
+00:28 interested guilty exactly you can look
+00:31 
+
+00:31 under the hood and uh the analogy we
+00:34 
+
+00:34 always use is we'll give you the
+00:36 
+
+00:36 self-driving car but if you want to look
+00:39 
+
+00:39 under the hood or if you want to drive
+00:41 
+
+00:41 stick we'll let you drive stick
+00:45 
+
+00:45 [Music]
+01:00 
+
+01:00 we have a brilliant guest today on
+01:02 
+
+01:02 trading data welcome HMA ragavan
+01:06 
+
+01:06 co-founder and head of engineering at
+01:08 
+
+01:08 Kumo AI heo brings Decades of experience
+01:12 
+
+01:12 leading AI initiatives at LinkedIn she
+01:16 
+
+01:16 came up with the people you may know
+01:17 
+
+01:17 technology and other core features that
+01:20 
+
+01:20 Leverage The Power of graph learning her
+01:23 
+
+01:23 journey in AI predates many of the
+01:25 
+
+01:25 Technologies we all take for granted
+01:27 
+
+01:27 today she was working on NLP before Bert
+01:29 
+
+01:29 was even a thing with Kumo HMA and her
+01:33 
+
+01:33 team are revolutionizing how companies
+01:35 
+
+01:35 harness AI by making Advanced graph
+01:37 
+
+01:37 neural networks these neural networks
+01:40 
+
+01:40 let you do auto onl Automated machine
+01:42 
+
+01:42 learning on any platform from Snowflake
+01:45 
+
+01:45 to data bricks Kumo's Innovative
+01:47 
+
+01:47 approach allows companies to leverage
+01:49 
+
+01:49 their existing data warehouses in order
+01:51 
+
+01:51 to build sophisticated AI models faster
+01:55 
+
+01:55 cheaper easier you don't require the
+01:57 
+
+01:57 Deep expertise in graph learning or
+01:59 
+
+01:59 maintaining complex features you can
+02:02 
+
+02:02 just go straight to business value
+02:04 
+
+02:04 welcome HMA to training
+02:07 
+
+02:07 data today we have the amazing HMA
+02:10 
+
+02:10 ragavan you are building Kumo AI which
+02:13 
+
+02:13 is automl on the data warehouse using
+02:16 
+
+02:16 Advanced neural networks and graph
+02:18 
+
+02:18 neural networks automl was incredibly
+02:21 
+
+02:21 promising a few years ago it was a major
+02:23 
+
+02:23 Trend in the last wave of AI five six
+02:26 
+
+02:26 years ago it went through a little bit
+02:28 
+
+02:28 of a trough of disillusionment a lot of
+02:30 
+
+02:30 the ml players uh receded from uh from
+02:33 
+
+02:33 the Forefront and companies started to
+02:36 
+
+02:36 store their features and in future
+02:38 
+
+02:38 databases and the like why are you
+02:40 
+
+02:40 focusing on automl what's different
+02:42 
+
+02:42 about Kumo okay so there's automl and
+02:46 
+
+02:46 then there's autom ML on gpus and I
+02:49 
+
+02:49 think that's the big difference for Kumo
+02:51 
+
+02:51 doai and let me give you a little bit of
+02:54 
+
+02:54 an example from my own career so I
+02:57 
+
+02:57 started in NLP and when we would build
+02:59 
+
+02:59 systems back in the early 2000s to
+03:02 
+
+03:02 answer a question like when did Marco
+03:05 
+
+03:05 Polo land in Asia we would be encoding
+03:09 
+
+03:09 features like Marco Polo is the subject
+03:12 
+
+03:12 of the sentence and it's going to be the
+03:14 
+
+03:14 subject of the answer and all of that so
+03:17 
+
+03:17 we had to know a lot about language
+03:19 
+
+03:19 about linguistic structure and so on and
+03:22 
+
+03:22 then the GPU Revolution came that
+03:24 
+
+03:24 enabled neural networks to come at the
+03:27 
+
+03:27 Forefront of this technology we don't
+03:29 
+
+03:29 write features like that anymore those
+03:31 
+
+03:31 intermediate layers in a neural network
+03:34 
+
+03:34 really learn the parts of speech the
+03:37 
+
+03:37 named entities all of those properties
+03:40 
+
+03:40 of language it's the same in other
+03:43 
+
+03:43 classes of problems so in uh the class
+03:47 
+
+03:47 the automl that was happening maybe a
+03:49 
+
+03:49 decade ago we were looking at CPU based
+03:52 
+
+03:52 models so think of logistic regression
+03:55 
+
+03:55 think of XG boost svms and so on and
+04:00 
+
+04:00 all automl did then was parallelize what
+04:04 
+
+04:04 a data scientist would have done which
+04:06 
+
+04:06 was a lot of hand computed
+04:08 
+
+04:08 features and that required you to be you
+04:12 
+
+04:12 had to write code to think like a data
+04:15 
+
+04:15 scientist so you were trying to get the
+04:19 
+
+04:19 machines to think like humans whereas
+04:23 
+
+04:23 here what we're doing is we've uh we use
+04:26 
+
+04:26 graph neural network so it's a neural
+04:28 
+
+04:28 network technology and you can think of
+04:30 
+
+04:30 to GNN as a superset of uh CNN which is
+04:34 
+
+04:34 used for images or a sequence model
+04:37 
+
+04:37 which is used for languages gnn's you
+04:39 
+
+04:39 know allow for arbitrary structure and
+04:42 
+
+04:42 the gnn's are learning all of the
+04:44 
+
+04:44 features that you would normally use for
+04:47 
+
+04:47 prediction predictive problems so Kumo
+04:49 
+
+04:49 sits in the space of predictive Ai and
+04:52 
+
+04:52 we're really bringing Transformer
+04:55 
+
+04:55 technology to predictive AI problems can
+04:58 
+
+04:58 you say you mentioned graph neural
+04:59 
+
+04:59 network and you gave a great explanation
+05:02 
+
+05:02 can you explain it to me like I'm 5
+05:03 
+
+05:03 years old because that might be where my
+05:04 
+
+05:04 level of understanding is like our graph
+05:07 
+
+05:07 neural networks's good for any class of
+05:09 
+
+05:09 problem is it good for you know you came
+05:11 
+
+05:11 from LinkedIn where you were working on
+05:12 
+
+05:12 you know the the social graph of
+05:14 
+
+05:14 LinkedIn is it is it good for specific
+05:16 
+
+05:16 types of of domains that's a great
+05:19 
+
+05:19 question Sonia so let's say you're going
+05:21 
+
+05:21 to put this podcast episode out and you
+05:25 
+
+05:25 know it's going to be on some uh video
+05:27 
+
+05:27 streaming site and we want you know uh
+05:31 
+
+05:31 to recommend the relevant podcasts for
+05:34 
+
+05:34 you know users of that video streaming
+05:36 
+
+05:36 site YouTube YouTube to be explicit
+05:39 
+
+05:39 someone's watching this on YouTube you
+05:41 
+
+05:41 want to recommend someone to watch it or
+05:42 
+
+05:42 not exactly so user logs in and uh you
+05:48 
+
+05:48 you not only have the content of the
+05:51 
+
+05:51 this podcast episode but you also have
+05:54 
+
+05:54 what you might have watched in the past
+05:56 
+
+05:56 so you can think of that the records of
+05:59 
+
+05:59 what you watched in the past is sitting
+06:01 
+
+06:01 in a views table uh collaborative
+06:03 
+
+06:03 filtering era exactly exactly but the
+06:08 
+
+06:08 difference with collaborative filtering
+06:10 
+
+06:10 is it's just looking at views Y how can
+06:13 
+
+06:13 we take you know the view data so the
+06:16 
+
+06:16 view data's Network so coming to Sonia's
+06:18 
+
+06:18 question right there's there's a podcast
+06:21 
+
+06:21 episode there's all the users who are
+06:23 
+
+06:23 watching it so you got it in terms of uh
+06:26 
+
+06:26 you know you have a bir directional
+06:28 
+
+06:28 graph the users and the podcasts but
+06:31 
+
+06:31 then you have the organization you have
+06:32 
+
+06:32 seoa Capital you have the channels from
+06:35 
+
+06:35 seoa Capital you have other metadata
+06:39 
+
+06:39 that you may have in so all of that can
+06:41 
+
+06:41 lend itself naturally to a graph and
+06:44 
+
+06:44 start thinking about links across these
+06:47 
+
+06:47 you know nodes of a graph and
+06:49 
+
+06:49 effectively what a graph neural network
+06:52 
+
+06:52 is learning is let's look at what Sonia
+06:56 
+
+06:56 watched in the past it seems like she uh
+06:60 
+
+06:60 really likes Ai Ai and baby shark videos
+07:03 
+
+07:03 at this moment okay so a Ai and baby
+07:05 
+
+07:05 shark okay but uh and then uh the neural
+07:10 
+
+07:10 network also learns that Constantine
+07:13 
+
+07:13 likes Ai and what would it be for you
+07:16 
+
+07:16 probably AI That's that might Ai and um
+07:20 
+
+07:20 like history that's great so that's Ai
+07:22 
+
+07:22 and history right so the neural network
+07:25 
+
+07:25 can learn that there's an overlap
+07:27 
+
+07:27 between both of you on the AI pieces of
+07:29 
+
+07:29 cont content you both engage a lot with
+07:32 
+
+07:32 seoa uh content and it's learning across
+07:36 
+
+07:36 this network right but the next time
+07:38 
+
+07:38 Sonia watches a baby shark video we
+07:41 
+
+07:41 don't want to be recommending that to
+07:43 
+
+07:43 Constantine right so how do you take
+07:45 
+
+07:45 that content that you engage with the
+07:48 
+
+07:48 view data The Click data that you're
+07:50 
+
+07:50 engaging with and learn across all of
+07:54 
+
+07:54 these edges think of clicks views every
+07:57 
+
+07:57 all your behavioral signal that you
+07:59 
+
+07:59 engage with with entities in this world
+08:02 
+
+08:02 as a graph and how do we learn across
+08:05 
+
+08:05 that graph yeah so you don't have to be
+08:08 
+
+08:08 a social network to have a graph
+08:10 
+
+08:10 everyone uh almost every Enterprise I
+08:14 
+
+08:14 know has a graph fch has graphs because
+08:17 
+
+08:17 they have customers they have
+08:18 
+
+08:18 transactions they have related data
+08:21 
+
+08:21 think of uh uh you know one of your
+08:25 
+
+08:25 delivery services they have uh uh the
+08:30 
+
+08:30 inventory the suppliers the the the
+08:33 
+
+08:33 means of transportation you have so
+08:36 
+
+08:36 they're all sitting as tables they're
+08:38 
+
+08:38 all sitting as entities and they're all
+08:39 
+
+08:39 linked across each other learning lets
+08:42 
+
+08:42 you learn across that's a pretty key
+08:44 
+
+08:44 Insight the tables before we go there
+08:46 
+
+08:46 that was a very smart 5-year-old I think
+08:48 
+
+08:48 that you have a 5-year-old I have an
+08:50 
+
+08:50 eight-year-old eighty old and a 12year
+08:52 
+
+08:52 old a 12y old okay well they're very
+08:54 
+
+08:54 very smart if they understood that
+08:55 
+
+08:55 explanation like what would be to
+08:57 
+
+08:57 Sonia's point if you were if you were
+08:59 
+
+08:59 five and you we're going to say graph
+09:01 
+
+09:01 learning versus any other type of
+09:03 
+
+09:03 machine learning what's the difference
+09:06 
+
+09:06 ah graph learning versus machine
+09:08 
+
+09:08 learning uh
+09:12 
+
+09:12 easy
+09:14 
+
+09:14 fast I think those would be the two
+09:16 
+
+09:16 things just you know uh low
+09:19 
+
+09:19 code I think that would be the key about
+09:21 
+
+09:21 Kumo that it learns all the weights it
+09:24 
+
+09:24 learns all the features and discovers
+09:25 
+
+09:25 them over time is that fair to say EXA
+09:26 
+
+09:26 exactly and my 8-year-old doesn't know
+09:29 
+
+09:29 machine learning but if you were going
+09:31 
+
+09:31 to write uh uh the uh you know a
+09:35 
+
+09:35 classifier the old school way yes you'd
+09:37 
+
+09:37 be writing uh features that say Okay
+09:41 
+
+09:41 users in this
+09:42 
+
+09:42 platform uh uh we need to look at
+09:45 
+
+09:45 click-through rate data for the last
+09:48 
+
+09:48 three months and six months and eight
+09:49 
+
+09:49 months for every single video and we
+09:52 
+
+09:52 discover that Sonia has a preference for
+09:54 
+
+09:54 data that's for videos that are
+09:57 
+
+09:57 evergreen so six Monon Windows really m
+09:59 
+
+09:59 matter for Sonia so imagine all of that
+10:02 
+
+10:02 code being written as features graph
+10:04 
+
+10:04 neural networks eliminate all of that
+10:07 
+
+10:07 code do you think that means Feature
+10:10 
+
+10:10 Feature engineering goes away as a
+10:11 
+
+10:11 discipline or what happens to it I think
+10:14 
+
+10:14 feature engineering goes away and that's
+10:16 
+
+10:16 not a bad thing as such because uh prior
+10:20 
+
+10:20 to uh Kumo I was at LinkedIn for uh
+10:24 
+
+10:24 almost seven uh close to eight years and
+10:28 
+
+10:28 data scientists
+10:31 
+
+10:31 love finding opportunities for the
+10:34 
+
+10:34 business to make value right and it
+10:37 
+
+10:37 doesn't mean that feature engineering is
+10:39 
+
+10:39 the place where you spend that you know
+10:41 
+
+10:41 that that's the uh the time well spent
+10:45 
+
+10:45 you would much rather try out end
+10:47 
+
+10:47 different models on end different parts
+10:50 
+
+10:50 of the app or whatever your business is
+10:53 
+
+10:53 and and drive value so trying out models
+10:57 
+
+10:57 in different parts of your application
+10:59 
+
+10:59 is where a data scientist needs to spend
+11:01 
+
+11:01 time we started this episode you you
+11:04 
+
+11:04 said you know automl on gpus is
+11:06 
+
+11:06 different from automl yes and so what
+11:08 
+
+11:08 about gpus specifically makes what you
+11:11 
+
+11:11 are describing possible like was it even
+11:13 
+
+11:13 possible to do this on on a CPU or is it
+11:15 
+
+11:15 just is it faster now or what's
+11:17 
+
+11:17 different than that you're doing on gpus
+11:19 
+
+11:19 yeah that that's a great question so uh
+11:22 
+
+11:22 it's definitely possible it's much
+11:24 
+
+11:24 slower right so it's very similar to
+11:26 
+
+11:26 what neural networks brought to the text
+11:29 
+
+11:29 and image
+11:30 
+
+11:30 image uh spaces in that we can scale
+11:34 
+
+11:34 these models to you know uh large
+11:36 
+
+11:36 amounts of data and uh while these
+11:39 
+
+11:39 models existed before the GPU Revolution
+11:42 
+
+11:42 it's we can actually take an entire
+11:44 
+
+11:44 Enterprises like fintech data and learn
+11:47 
+
+11:47 graph neural networks for them yeah in
+11:50 
+
+11:50 the previous era of automl so much of
+11:54 
+
+11:54 the juice in the performance came out of
+11:56 
+
+11:56 ensembles so you do these logistic
+11:58 
+
+11:58 regressions or you do do these svms or
+11:60 
+
+12:00 what have you and then you'd Ensemble
+12:01 
+
+12:01 them together frankly in the kaggle era
+12:04 
+
+12:04 which was how I first met your
+12:05 
+
+12:05 co-founder Yuri and the data science era
+12:07 
+
+12:07 of of kaggle and the like always the
+12:10 
+
+12:10 ensembles won even in the Netflix prize
+12:12 
+
+12:12 back in the day it was the ensembles
+12:13 
+
+12:13 that won and there was something to the
+12:15 
+
+12:15 fact that these ensembles are just tons
+12:18 
+
+12:18 of little algorithms chained together
+12:20 
+
+12:20 and what is a neural network but tons of
+12:22 
+
+12:22 little algorithms chained together I
+12:23 
+
+12:23 mean you could consider it billions of
+12:25 
+
+12:25 sigmoids or billions of logistic
+12:27 
+
+12:27 regressions and really the way I see
+12:31 
+
+12:31 graph neural networks is you're able to
+12:33 
+
+12:33 discover the the features and The
+12:35 
+
+12:35 Ensemble that you chain together to
+12:37 
+
+12:37 actually optimize towards the solution
+12:39 
+
+12:39 so it's the to me graphs are the most
+12:41 
+
+12:41 General data type yeah and a graph
+12:44 
+
+12:44 neural network is the most General you
+12:46 
+
+12:46 kind of you mentioned it's a
+12:47 
+
+12:47 generalization where even a Transformer
+12:49 
+
+12:49 is a subset of this generalization the
+12:52 
+
+12:52 most General type of algorithm that can
+12:55 
+
+12:55 do some learning yeah absolutely and uh
+12:59 
+
+12:59 as you mentioned ensembles something
+13:01 
+
+13:01 that struck me was try maintaining that
+13:04 
+
+13:04 in
+13:05 
+
+13:05 production you have n different feature
+13:08 
+
+13:08 generation pipelines and an ensemble and
+13:11 
+
+13:11 I've seen a world where you'd have one
+13:15 
+
+13:15 frontend engineer change how we were
+13:17 
+
+13:17 logging the view data yeah and
+13:20 
+
+13:20 everything either needed to change or
+13:23 
+
+13:23 some you know one pipeline breaks and
+13:27 
+
+13:27 it's all done and it's it's mess to
+13:30 
+
+13:30 debug so you uh so graphs give you a
+13:33 
+
+13:33 simple elegant uh framework
+13:37 
+
+13:37 to get get at the same outcome it also
+13:40 
+
+13:40 reminds me a lot more of our brain yes
+13:42 
+
+13:42 right our brain kind we think operates
+13:44 
+
+13:44 like a like a
+13:46 
+
+13:46 graph and is forming and pruning
+13:49 
+
+13:49 connections more like a graph even more
+13:50 
+
+13:50 so than a more structured neural network
+13:54 
+
+13:54 yeah and so have you ever have you guys
+13:56 
+
+13:56 experimented or or thought about that as
+13:58 
+
+13:58 an analogy and and any ideas of of the
+14:01 
+
+14:01 pros and cons of that analogy I think uh
+14:04 
+
+14:04 it's very similar to uh uh the way I
+14:09 
+
+14:09 think about it is let let's go back to
+14:11 
+
+14:11 that video watching example right and
+14:13 
+
+14:13 with if I think of Sonia as a note in uh
+14:16 
+
+14:16 in a graph and uh what these neural
+14:20 
+
+14:20 network algorithms are really good at is
+14:22 
+
+14:22 learning these embedding representations
+14:25 
+
+14:25 right and on this big graph which has so
+14:29 
+
+14:29 with her preference for baby shark and
+14:32 
+
+14:32 uh uh AI or her household's preference
+14:36 
+
+14:36 exactly makes more sense that that
+14:39 
+
+14:39 checks out H your embedding Vector would
+14:42 
+
+14:42 be pretty close to uh both AI so you're
+14:46 
+
+14:46 close to Constantine but you're also
+14:48 
+
+14:48 close in uh ukian space or you know in
+14:52 
+
+14:52 some big end dimensional space to uh the
+14:56 
+
+14:56 all the baby shark loving folks right
+14:59 
+
+14:59 and
+14:60 
+
+14:60 Bas we're basically learning these
+15:01 
+
+15:01 representations so people or these all
+15:05 
+
+15:05 the entities in the graph like even seoa
+15:07 
+
+15:07 capital in that case becomes a you know
+15:11 
+
+15:11 uh a representation so in that sense
+15:14 
+
+15:14 it's the idea is very similar but what
+15:17 
+
+15:17 gnn's do and uh is allow for arbitrary
+15:21 
+
+15:21 structure and that's where I think it's
+15:23 
+
+15:23 a lot closer to to the human brain but I
+15:26 
+
+15:26 because I don't think the human brain is
+15:27 
+
+15:27 wired as a linear SE quence or as a GD
+15:31 
+
+15:31 as an images yeah could you say a word
+15:33 
+
+15:33 about how it works under the hood like
+15:35 
+
+15:35 how are you able to let's say you go and
+15:37 
+
+15:37 work with I don't know a food delivery
+15:40 
+
+15:40 service how how does it actually work
+15:42 
+
+15:42 for you to go and kind of you know
+15:44 
+
+15:44 automatically learn this graph
+15:46 
+
+15:46 representation and how are you training
+15:48 
+
+15:48 models on that or pick YouTube given
+15:51 
+
+15:51 people might be watching it there and
+15:52 
+
+15:52 we're talking about AI baby shark in
+15:54 
+
+15:54 history already exactly so um so there's
+15:58 
+
+15:58 two pieces Mr Kum uh historically uh
+16:02 
+
+16:02 graph learning has been uh uh restricted
+16:07 
+
+16:07 to I want to say phds in graph learning
+16:11 
+
+16:11 yeah because it was it's not easy to
+16:14 
+
+16:14 view the world as a graph people think
+16:16 
+
+16:16 in terms of uh relational data that's
+16:20 
+
+16:20 the most common data layout in companies
+16:23 
+
+16:23 and that's largely because of uh uh the
+16:27 
+
+16:27 analytics Revolution that proceeded did
+16:29 
+
+16:29 the AI Revolution so everyone thinks in
+16:32 
+
+16:32 terms of relational data but really
+16:36 
+
+16:36 relational data and graphs are have a
+16:40 
+
+16:40 onetoone mapping because you have data
+16:43 
+
+16:43 laid out in tables usually an entity a
+16:46 
+
+16:46 primary key in a table and then you have
+16:48 
+
+16:48 all these relationships primary key
+16:50 
+
+16:50 foreign key relationships which encode
+16:53 
+
+16:53 uh uh the edges in a graph yep so that
+16:56 
+
+16:56 that automatic construction from a table
+16:59 
+
+16:59 layout to a graph layout is one of the
+17:02 
+
+17:02 Innovations inside C the other bit is
+17:07 
+
+17:07 we've uh invented a language called
+17:10 
+
+17:10 predictive query language and the
+17:13 
+
+17:13 language is allows you to specify any
+17:17 
+
+17:17 machine learning problem in a few lines
+17:20 
+
+17:20 that looks very much like SQL so think
+17:23 
+
+17:23 of sequel with the predict Clause so
+17:25 
+
+17:25 we've created this very simple
+17:27 
+
+17:27 abstraction layer on top of relational
+17:30 
+
+17:30 data
+17:31 
+
+17:31 warehouses there's already a universe of
+17:34 
+
+17:34 people who's who are writing SQL queries
+17:37 
+
+17:37 and we've created a language that
+17:41 
+
+17:41 appeals or you know is one on that
+17:44 
+
+17:44 resonates with them in some sense so
+17:46 
+
+17:46 that's one of the Innovations of ko the
+17:48 
+
+17:48 other one is running these uh graph
+17:51 
+
+17:51 neural networks so once you go from
+17:52 
+
+17:52 relational to graph just running graph
+17:55 
+
+17:55 Neal networks at scale and that again is
+17:58 
+
+17:58 something that has not been easy to do
+18:01 
+
+18:01 there are few companies in the world
+18:03 
+
+18:03 that uh can do it and it usually takes a
+18:07 
+
+18:07 huge infrastructure team to build that
+18:10 
+
+18:10 out and because graphs inherently like
+18:14 
+
+18:14 unlike databases where you can think of
+18:16 
+
+18:16 some logical partitioning grph it's not
+18:19 
+
+18:19 a matrix all entangled in so how do you
+18:22 
+
+18:22 split it across uh different machines
+18:25 
+
+18:25 with limited memory and so on so that's
+18:28 
+
+18:28 uh so all of these bits coming together
+18:32 
+
+18:32 makes Kumo uh easy to use but that's it
+18:34 
+
+18:34 so when we go to a company uh like you
+18:37 
+
+18:37 know a YouTube like company yeah we'll
+18:40 
+
+18:40 often uh talk to a data science team
+18:43 
+
+18:43 that is looking to get faster uh return
+18:46 
+
+18:46 on investment in AI yep and uh but then
+18:51 
+
+18:51 Kumo becomes really easy to do because
+18:53 
+
+18:53 if you have your data laid out as
+18:56 
+
+18:56 relational tables a Kumo just it in so
+19:00 
+
+19:00 we just you just specify in you know
+19:02 
+
+19:02 through connectors uh tell Kuma what
+19:05 
+
+19:05 your schema is and then you can just
+19:08 
+
+19:08 start writing predictive queries so the
+19:10 
+
+19:10 graph is abstracted away but if you have
+19:13 
+
+19:13 someone like a data scientist who loves
+19:16 
+
+19:16 tweaking the neural network parameters
+19:19 
+
+19:19 in case Constantine
+19:21 
+
+19:21 isct guilty exactly you can look under
+19:25 
+
+19:25 the hood and uh the analogy we always
+19:28 
+
+19:28 use is is we'll give you the
+19:30 
+
+19:30 self-driving car but if you want to look
+19:33 
+
+19:33 under the hood or if you want to drive
+19:35 
+
+19:35 stick we'll let you drive stick so so
+19:38 
+
+19:38 concretely in the YouTube example yeah
+19:40 
+
+19:40 historically if I was an analytics at
+19:41 
+
+19:41 YouTube and I'm watching this video I
+19:43 
+
+19:43 can look and say hey query all AI there
+19:46 
+
+19:46 would be some some tagging or some
+19:48 
+
+19:48 system to understand all AI historically
+19:50 
+
+19:50 let's see what the trends are over time
+19:52 
+
+19:52 that's quering the past yes what you're
+19:54 
+
+19:54 saying is once you have this in this
+19:56 
+
+19:56 database in the structure you're able to
+19:58 
+
+19:58 predict how people are going to watch AI
+19:60 
+
+19:60 videos in the next several weeks how
+20:02 
+
+20:02 many are going to watch baby shark
+20:04 
+
+20:04 videos uh how much are they going to
+20:06 
+
+20:06 spend what is going to be their
+20:08 
+
+20:08 monetization what are their ads what
+20:09 
+
+20:09 else can you do with this so you can say
+20:12 
+
+20:12 uh is this user going to churn for
+20:14 
+
+20:14 example yep right and then you can say
+20:16 
+
+20:16 what's the most
+20:19 
+
+20:19 relevant video that I want to show this
+20:21 
+
+20:21 user in order to retain them on my
+20:24 
+
+20:24 platform right so I want to drive value
+20:26 
+
+20:26 for my business uh given the past videos
+20:29 
+
+20:29 that they've watched what's the next uh
+20:32 
+
+20:32 video to watch and so on and we can also
+20:35 
+
+20:35 do demand forecasting so uh we have
+20:38 
+
+20:38 customers in uh in fact we have uh in in
+20:42 
+
+20:42 the healthcare sector and they use scho
+20:45 
+
+20:45 to forecast uh demand so that they're
+20:49 
+
+20:49 they're well stocked on their emergency
+20:51 
+
+20:51 room right so the applications of using
+20:55 
+
+20:55 Kumo uh go from consumer to Healthcare
+20:59 
+
+20:59 to fintech where fintech we see uh
+21:03 
+
+21:03 applications in fraud for example MH uh
+21:07 
+
+21:07 just uh is this user's Behavior
+21:11 
+
+21:11 suspicious should we flag the user so on
+21:13 
+
+21:13 and so forth so think of any question
+21:16 
+
+21:16 which says how much I love the use of
+21:20 
+
+21:20 query the future how much uh is this
+21:24 
+
+21:24 event going to happen uh is uh uh uh uh
+21:30 
+
+21:30 what's the next best action for this
+21:33 
+
+21:33 user from an action space those are all
+21:36 
+
+21:36 the kinds of questions that Kumo can
+21:37 
+
+21:37 help answer and I love that you you said
+21:41 
+
+21:41 analyst because uh Kumo aims to be as
+21:45 
+
+21:45 automl as you want it to be and you know
+21:49 
+
+21:49 we but we also have a python interface
+21:52 
+
+21:52 so you know you want to be a neural
+21:56 
+
+21:56 network expert you can go all in
+21:59 
+
+21:59 it's the brain the brain it's the
+22:01 
+
+22:01 analytical brain out of the applications
+22:03 
+
+22:03 you discussed just now I would imagine
+22:05 
+
+22:05 you know there's such classical ml
+22:08 
+
+22:08 problems that you discuss each of them
+22:09 
+
+22:09 probably has a five person fraud team
+22:11 
+
+22:11 and a 15 person demand forecasting team
+22:15 
+
+22:15 what do those ml people think when you
+22:17 
+
+22:17 know when Kumo is pitching the company
+22:20 
+
+22:20 like I walk me through that spiritual
+22:23 
+
+22:23 journey and and are you actually able to
+22:25 
+
+22:25 Dem to to get results out of the box
+22:27 
+
+22:27 that are better than a 15% personam
+22:29 
+
+22:29 maintaining it can can do I'm okay with
+22:31 
+
+22:31 it as long as they don't have VC
+22:35 
+
+22:35 prediction so I uh for a lot of the
+22:38 
+
+22:38 companies we work with uh the data
+22:42 
+
+22:42 scientist is excited about Kumo um as I
+22:45 
+
+22:45 mentioned writing those feature
+22:47 
+
+22:47 engineering pipelines comes with
+22:49 
+
+22:49 maintenance jobs to maintain those
+22:51 
+
+22:51 pipelines and that's not where they want
+22:54 
+
+22:54 to spend their time data scientists in
+22:58 
+
+22:58 most companies are incentivized with
+23:00 
+
+23:00 Direct business impact so did I push
+23:04 
+
+23:04 that atct model out uh this quarter did
+23:07 
+
+23:07 it drive uh x% Revenue so a lot of our
+23:11 
+
+23:11 customers will come to us and say you
+23:13 
+
+23:13 know what I signed up for x% Revenue MH
+23:16 
+
+23:16 but I'm only onethird of the way there
+23:20 
+
+23:20 can you guys you know uh help us
+23:24 
+
+23:24 accelerate and we do a 4-week uh po so
+23:29 
+
+23:29 you you know we and within 4 weeks we'll
+23:32 
+
+23:32 uh almost always I'm trying to think of
+23:34 
+
+23:34 a case when we've not shown value but
+23:37 
+
+23:37 and I can't remember one but we've uh
+23:40 
+
+23:40 we've always shown value within those
+23:42 
+
+23:42 four weeks wow yeah so you convert them
+23:45 
+
+23:45 into into Believers into Believers yeah
+23:48 
+
+23:48 and it's about where you want to spend
+23:50 
+
+23:50 your time right so I think once they get
+23:52 
+
+23:52 Hands-On product uh um many times people
+23:56 
+
+23:56 will come in and say oh but feature
+23:58 
+
+23:58 engineer ing is where I spend all my
+24:01 
+
+24:01 time right and how can you say that I
+24:04 
+
+24:04 don't have to do it manually
+24:06 
+
+24:06 anymore but uh we'll remind them we'll
+24:09 
+
+24:09 remind them of the NLP journey and then
+24:12 
+
+24:12 we'll also remind them once they get H
+24:15 
+
+24:15 Hands-On keyboard with the product and
+24:17 
+
+24:17 they realize that the journey in Kumo
+24:20 
+
+24:20 it's not completely automated away right
+24:22 
+
+24:22 because we say a data scientist knows
+24:24 
+
+24:24 their business well so if you're going
+24:26 
+
+24:26 to uh Define CH prediction for your
+24:30 
+
+24:30 business Maybe on
+24:32 
+
+24:32 YouTube uh activity around in the last
+24:35 
+
+24:35 30 days is a good predictor of churn so
+24:39 
+
+24:39 you know you want to bring your events
+24:40 
+
+24:40 table with a 30day window schema the
+24:43 
+
+24:43 actual structure that you the schema or
+24:46 
+
+24:46 the window right so because these are
+24:47 
+
+24:47 all queries and these are all parameters
+24:49 
+
+24:49 in the queries or you could play with
+24:52 
+
+24:52 90day or 365 Day activities so these are
+24:55 
+
+24:55 all queries you can write five of these
+24:56 
+
+24:56 queries and say oh really
+24:59 
+
+24:59 on my system the best predictor of churn
+25:02 
+
+25:02 is behavior in a 365 day window and I
+25:05 
+
+25:05 didn't even know that because I spending
+25:07 
+
+25:07 all my time looking somewhere else so
+25:10 
+
+25:10 the data scientist spends a lot more
+25:13 
+
+25:13 time finding the relevant tables in
+25:16 
+
+25:16 their organization that are going to you
+25:19 
+
+25:19 know bring value and then finding those
+25:23 
+
+25:23 uh the right query formulation or right
+25:26 
+
+25:26 the right business formulation in this
+25:28 
+
+25:28 case you know for example churn what's
+25:30 
+
+25:30 the right definition of churn for my
+25:31 
+
+25:31 business and once they see that actually
+25:34 
+
+25:34 they really they realize that this is a
+25:37 
+
+25:37 lot more fun than what I was doing
+25:38 
+
+25:38 before totally Yeah you mentioned tables
+25:41 
+
+25:41 structured data schema that naturally
+25:44 
+
+25:44 leads me to think about Snowflake and
+25:46 
+
+25:46 data bricks a lot of companies have
+25:48 
+
+25:48 spent the last 5 years heavily investing
+25:50 
+
+25:50 in their their data warehouses uh how
+25:53 
+
+25:53 how do you work with the daa warehouses
+25:55 
+
+25:55 okay that that's a great question so um
+25:58 
+
+25:58 um at the outset we have we started as a
+26:03 
+
+26:03 purely SAS company you know uh emulating
+26:07 
+
+26:07 a lot of you know the the principles
+26:09 
+
+26:09 from the snowflake architecture looking
+26:10 
+
+26:10 at uh their success
+26:12 
+
+26:12 stories uh one thing we realized is that
+26:16 
+
+26:16 data scientists though they need to see
+26:18 
+
+26:18 value on their own problem because
+26:20 
+
+26:20 they're so kpi or business impact
+26:23 
+
+26:23 focused showing them value
+26:26 
+
+26:26 on uh a cattle data set doesn't really
+26:30 
+
+26:30 count mhm so the easiest way to uh show
+26:34 
+
+26:34 value is of course when they can connect
+26:37 
+
+26:37 to their own data but connecting to your
+26:39 
+
+26:39 own data on a SAS product means you go
+26:43 
+
+26:43 through a huge Security review through
+26:45 
+
+26:45 the company which can in some many
+26:47 
+
+26:47 organizations can take you know a couple
+26:50 
+
+26:50 of months so that uh uh we wanted to
+26:55 
+
+26:55 reduce that fraction and we started
+26:57 
+
+26:57 partnering with the warehouse houses to
+26:59 
+
+26:59 think about uh deployment models where
+27:02 
+
+27:02 compute can be closer to the
+27:04 
+
+27:04 data and uh we have a deployment with
+27:07 
+
+27:07 snowflake which is part we use a
+27:10 
+
+27:10 combination of what is called snow park
+27:12 
+
+27:12 container services and really Kumo can
+27:15 
+
+27:15 deploy as a container in snowflakes
+27:17 
+
+27:17 compute pool so from a data scientist
+27:19 
+
+27:19 point of view we're also a native app in
+27:22 
+
+27:22 Snowflake so you a data scientist in uh
+27:25 
+
+27:25 an organization let's say YouTube can go
+27:28 
+
+27:28 in and uh click install snowflake so
+27:31 
+
+27:31 it's like an app on your iPhone it gets
+27:34 
+
+27:34 installed and then they can start
+27:36 
+
+27:36 writing those predictive queries and
+27:38 
+
+27:38 looking for value and often times the
+27:40 
+
+27:40 security team is completely okay with it
+27:42 
+
+27:42 because there's no data leaving the
+27:44 
+
+27:44 ecosystem we have a very similar
+27:46 
+
+27:46 deployment model with uh data brecks uh
+27:50 
+
+27:50 though in that case we manage the GPU
+27:53 
+
+27:53 compute and but data residency stays
+27:57 
+
+27:57 completely inside data brecks
+27:59 
+
+27:59 and that uh also let us so we started
+28:02 
+
+28:02 that from the point of view of uh you
+28:04 
+
+28:04 know get getting letting data scientists
+28:07 
+
+28:07 get hands on keyboard with you know uh
+28:10 
+
+28:10 with K more quickly but we also realize
+28:13 
+
+28:13 that freed us up a lot to not have to
+28:17 
+
+28:17 think about security compliance
+28:19 
+
+28:19 governance and let the data warehouses
+28:23 
+
+28:23 as they're already building all of the
+28:24 
+
+28:24 tools and technology for you know uh for
+28:28 
+
+28:28 management of of data let it stay there
+28:30 
+
+28:30 let it be managed there but KOMO just uh
+28:34 
+
+28:34 you know talks to data directly sitting
+28:36 
+
+28:36 inside the
+28:37 
+
+28:37 warehouse so you talked about uh
+28:39 
+
+28:39 relational versus CFT data and
+28:41 
+
+28:41 relational data is kind of how many of
+28:43 
+
+28:43 our brains have been taught to think yes
+28:46 
+
+28:46 uh we think about things in spreadsheets
+28:48 
+
+28:48 oftentimes we might go down and say uh
+28:51 
+
+28:51 if we have a series of AI videos you
+28:53 
+
+28:53 have them as rows and then you have some
+28:55 
+
+28:55 descriptors of them as columns but
+28:57 
+
+28:57 really what you start to see things as
+28:60 
+
+28:60 graphs which I did frankly back in the
+29:03 
+
+29:03 day around Yuri's time as a as a
+29:06 
+
+29:06 professor um I think everything starts
+29:09 
+
+29:09 you can start to see everything as a
+29:10 
+
+29:10 graph yes it's the most General data
+29:12 
+
+29:12 type and when you start to see things as
+29:13 
+
+29:13 graphs it's actually kind of how our
+29:14 
+
+29:14 brain thinks yes hey here's a video and
+29:16 
+
+29:16 that has a pointed uh characteristic
+29:20 
+
+29:20 that's some other part of the graph
+29:21 
+
+29:21 which is connected to another part how
+29:22 
+
+29:22 do you ingest all of this relational
+29:25 
+
+29:25 data which is the way that the world has
+29:27 
+
+29:27 been run for the way computers have been
+29:29 
+
+29:29 run for 50 years and put them into a
+29:31 
+
+29:31 graph structure sounds like a very heavy
+29:34 
+
+29:34 lift and doing that inside of snowflake
+29:37 
+
+29:37 and data bricks is probably pretty hard
+29:40 
+
+29:40 uh I want to say that's part of the
+29:43 
+
+29:43 magic of KOMO right and that's that was
+29:46 
+
+29:46 the uh friction that prevented graph
+29:49 
+
+29:49 learning from taking off and it staying
+29:52 
+
+29:52 within and uh you know uh the big
+29:55 
+
+29:55 companies yes exactly the the few people
+29:58 
+
+29:58 who could hire these
+29:60 
+
+29:60 individuals but really it is a question
+30:03 
+
+30:03 of we have a UNIF a unified schema that
+30:07 
+
+30:07 the you know uh that's the graph schema
+30:10 
+
+30:10 and looking at uh the relational schema
+30:14 
+
+30:14 we're able to identify what the entities
+30:17 
+
+30:17 are so in that YouTube example it's a
+30:19 
+
+30:19 video ID it's a user ID it may be a
+30:22 
+
+30:22 channel ID and so on and often those are
+30:25 
+
+30:25 primary keys and then it's a lot of I
+30:29 
+
+30:29 want to say sequel like code that runs
+30:32 
+
+30:32 under the hood and uh it could or I want
+30:36 
+
+30:36 to see spark like code that runs under
+30:38 
+
+30:38 the hood that converts this data to uh
+30:42 
+
+30:42 the graph format I see I see it makes
+30:44 
+
+30:44 sense and uh and beyond that uh once we
+30:47 
+
+30:47 get to the graph there's an edge index
+30:49 
+
+30:49 so we store all of the edges in a very
+30:52 
+
+30:52 com you know a proprietary and
+30:55 
+
+30:55 compressed uh format and then we
+30:59 
+
+30:59 distribute out the
+31:01 
+
+31:01 nodes okay because now because we
+31:04 
+
+31:04 realized that edes gpus distribute them
+31:07 
+
+31:07 to gpus or to to CPUs because we wanted
+31:10 
+
+31:10 to keep costs low so we keep uh the we
+31:14 
+
+31:14 only reserve the gpus for training right
+31:17 
+
+31:17 so when we are doing the learning but we
+31:20 
+
+31:20 store the edges in what we call the
+31:23 
+
+31:23 graph engine and then we have a column
+31:27 
+
+31:27 store where we store the features so we
+31:29 
+
+31:29 can bring in arbitrary features that
+31:32 
+
+31:32 represent the users right so uh
+31:35 
+
+31:35 everything about Sonia that we can infer
+31:38 
+
+31:38 we we're not constrained by memory that
+31:40 
+
+31:40 just horizontally scales everything on
+31:43 
+
+31:43 the CPU machine horizontally SC scales
+31:45 
+
+31:45 and we're only using the gpus for
+31:48 
+
+31:48 message passing cool yeah amazing in
+31:52 
+
+31:52 fact yeah so that uh that uh that has
+31:55 
+
+31:55 also reduced costs for our customers and
+31:59 
+
+31:59 they're often surprised that we can run
+32:01 
+
+32:01 graph learning at the scale that we do
+32:04 
+
+32:04 um at the costs that we do you've made
+32:07 
+
+32:07 the comparison to large language models
+32:09 
+
+32:09 a couple times yeah um I'd be remiss not
+32:12 
+
+32:12 to ask like what are the connections
+32:14 
+
+32:14 between your graph world and the llm
+32:16 
+
+32:16 world and and are there you know are
+32:18 
+
+32:18 there synergies between the two
+32:20 
+
+32:20 absolutely what a great question uh and
+32:23 
+
+32:23 so many synergies so let's take the
+32:25 
+
+32:25 example of this podcast which will get
+32:28 
+
+32:28 uh generated it's going to get
+32:30 
+
+32:30 transcribed by an llm it's going to uh
+32:34 
+
+32:34 it's uh uh so you have all of the
+32:37 
+
+32:37 summaries it you you uh you have all of
+32:41 
+
+32:41 the the semantic information that will
+32:44 
+
+32:44 come from the large language models
+32:46 
+
+32:46 right a graph neural network can
+32:49 
+
+32:49 actually take all of those features that
+32:54 
+
+32:54 you know uh the semantic representation
+32:57 
+
+32:57 that uh is inferred for this particular
+33:00 
+
+33:00 video as a node feature and what the GNN
+33:04 
+
+33:04 is learning is it's learning across all
+33:07 
+
+33:07 of the
+33:08 
+
+33:08 interactions that one may now let me uh
+33:12 
+
+33:12 give you another example and uh this uh
+33:17 
+
+33:17 uh we have a demo of this uh up on our
+33:20 
+
+33:20 website or on our LinkedIn Channel but
+33:23 
+
+33:23 uh an example would be a lot of people
+33:25 
+
+33:25 think of the llm Revolution as creating
+33:27 
+
+33:27 chat Bots okay so let's say you come to
+33:30 
+
+33:30 a clothing store and you uh are
+33:32 
+
+33:32 searching for yellow summer dresses so
+33:36 
+
+33:36 you search yellow summer dresses all the
+33:38 
+
+33:38 time yes and you're not a logged logged
+33:41 
+
+33:41 in user and uh uh the llm is going to
+33:45 
+
+33:45 probably get you a really good set of uh
+33:50 
+
+33:50 things that look like yellow summer
+33:52 
+
+33:52 dresses but if you were a logged in user
+33:55 
+
+33:55 and we knew all of that information
+33:57 
+
+33:57 about the the kind of interactions that
+33:60 
+
+33:60 you'd had in the past we can actually
+34:03 
+
+34:03 use Kumo's
+34:04 
+
+34:04 predictions
+34:07 
+
+34:07 to inform the llm so think of rag and
+34:11 
+
+34:11 think of Kumo
+34:13 
+
+34:13 predictions as uh feeding a rag
+34:18 
+
+34:18 algorithm to ground its truth to be
+34:21 
+
+34:21 closer to what is personalized so you
+34:23 
+
+34:23 can do that as well so there is the
+34:25 
+
+34:25 bringing in features but then there is
+34:28 
+
+34:28 also uh they're complimentary because
+34:31 
+
+34:31 Kumo brings you all of that
+34:32 
+
+34:32 personalization based on all that
+34:34 
+
+34:34 behavioral data that the app has which
+34:38 
+
+34:38 the llm doesn't take into
+34:40 
+
+34:40 consideration you mentioned Rag and
+34:42 
+
+34:42 we've talked about graphs graph rag is
+34:44 
+
+34:44 having a moment yes in AI right now in
+34:47 
+
+34:47 general yes thoughts on graph rag which
+34:50 
+
+34:50 is different from our from our approach
+34:51 
+
+34:51 of Kumo but thoughts on graph graph Rag
+34:53 
+
+34:53 and then also how it differs from using
+34:56 
+
+34:56 a graph neural network to do certain
+34:58 
+
+34:58 inferences tied to yeah some sort of rag
+35:01 
+
+35:01 yeah so graph rag is a lot s uh closer
+35:05 
+
+35:05 to uh what we just talked about but many
+35:08 
+
+35:08 organizations may have knowledge graphs
+35:11 
+
+35:11 um and that's another entire field of
+35:13 
+
+35:13 studies in in graphs uh think medical
+35:18 
+
+35:18 domains for example you have uh all of
+35:21 
+
+35:21 your uh Insurance codes and uh how the
+35:26 
+
+35:26 insurance codes connect with each other
+35:28 
+
+35:28 you have symptoms you have all of that
+35:30 
+
+35:30 there there's a lot of knowledge uh
+35:32 
+
+35:32 bases sitting out there with
+35:34 
+
+35:34 interconnected nodes graph frag allows
+35:38 
+
+35:38 you to ground your llm output in uh the
+35:45 
+
+35:45 the uh answers that are answered from
+35:48 
+
+35:48 these kind of knowledge graphs right so
+35:50 
+
+35:50 instead of going to a search and index
+35:53 
+
+35:53 so you can think of rag as going to a
+35:55 
+
+35:55 search index a knowledge graph a
+35:58 
+
+35:58 recommender system like Kumo and uh uh
+36:01 
+
+36:01 bring making the llm output more uh uh
+36:06 
+
+36:06 or hallucinate less I want to ask about
+36:09 
+
+36:09 explainable AI one of the things we've
+36:11 
+
+36:11 been discussing in Prior episodes of the
+36:13 
+
+36:13 show is you know these llms will we ever
+36:16 
+
+36:16 be able to understand how they think um
+36:18 
+
+36:18 and I remember the anthropic results
+36:20 
+
+36:20 were were really interesting um how do
+36:22 
+
+36:22 you think about explainability as it
+36:23 
+
+36:23 comes to Kumo's models that's such a
+36:26 
+
+36:26 great question Sonia because for the
+36:28 
+
+36:28 kinds of problems we work with and the
+36:31 
+
+36:31 customers that we worked with we this
+36:33 
+
+36:33 was another area we had to um actually
+36:36 
+
+36:36 develop a solution because we have
+36:38 
+
+36:38 customers in Insurance in healthc care
+36:41 
+
+36:41 and they often need to understand why a
+36:44 
+
+36:44 recommended output was recommended to
+36:47 
+
+36:47 them yes you want to know that we didn't
+36:50 
+
+36:50 uh the model didn't over rotate on uh
+36:55 
+
+36:55 you know uh race color ethnicity and so
+36:59 
+
+36:59 on and so forth right and uh so it
+37:03 
+
+37:03 became table Stakes for us to actually
+37:06 
+
+37:06 solve this problem and uh at Kumo we've
+37:10 
+
+37:10 uh innovated by actually uh developing
+37:14 
+
+37:14 an algorithm which after the uh the
+37:16 
+
+37:16 training part of the algorithm looks at
+37:20 
+
+37:20 the graph and looks at the gradient
+37:23 
+
+37:23 algorithm and can come down at the table
+37:25 
+
+37:25 level to say these were the tables that
+37:27 
+
+37:27 were were used these are the columns
+37:29 
+
+37:29 that were used and uh we have some early
+37:33 
+
+37:33 results that show that we can even come
+37:35 
+
+37:35 at an instance level and predict you
+37:38 
+
+37:38 know here's an instance the score why
+37:40 
+
+37:40 Sonia was recommended that video is high
+37:44 
+
+37:44 because of these uh specific features
+37:48 
+
+37:48 wow so uh it was stable Stakes just
+37:51 
+
+37:51 given the domain we were going into yeah
+37:54 
+
+37:54 yeah so we talked a lot about Ai and
+37:56 
+
+37:56 graph learning uh you have been in the
+37:58 
+
+37:58 AI space for a long time HMA can you
+38:01 
+
+38:01 tell us a little bit about what you
+38:02 
+
+38:02 developed at LinkedIn and specifically
+38:04 
+
+38:04 what AI growth was at LinkedIn maybe if
+38:07 
+
+38:07 you can how graph neural networks helped
+38:10 
+
+38:10 there yeah and the types of challenges
+38:12 
+
+38:12 that you dealt with really really large
+38:14 
+
+38:14 scale operationalizing AI yeah that's a
+38:17 
+
+38:17 great question um so I joined LinkedIn
+38:20 
+
+38:20 uh just a couple of years after the
+38:23 
+
+38:23 IPO and AI was making its way into
+38:27 
+
+38:27 various products
+38:29 
+
+38:29 um I joined the the growth team and the
+38:33 
+
+38:33 team I Le first led was the people you
+38:36 
+
+38:36 may know team and people you may know is
+38:39 
+
+38:39 all about graphs it's about uh uh large
+38:43 
+
+38:43 scale graphs and about uh uh
+38:48 
+
+38:48 and the amazing thing about LinkedIn was
+38:51 
+
+38:51 how closely tied people you may know
+38:54 
+
+38:54 because it's social network was to our
+38:56 
+
+38:56 core uh consumer metrics M
+39:01 
+
+39:01 so I was I had come to LinkedIn as an AI
+39:04 
+
+39:04 researcher and I suddenly found myself
+39:07 
+
+39:07 uh responsible for uh one of its core
+39:12 
+
+39:12 kpis which was sessions and monthly
+39:15 
+
+39:15 active users and by then I'd also
+39:19 
+
+39:19 started uh owning notifications which
+39:21 
+
+39:21 was a huge part of uh the growth uh
+39:24 
+
+39:24 ecosystem at uh
+39:26 
+
+39:26 LinkedIn and and along the way we had to
+39:30 
+
+39:30 uh start
+39:33 
+
+39:33 operationalizing uh uh Ai and before
+39:36 
+
+39:36 mlops became a word we were actually
+39:39 
+
+39:39 thinking about hey how do
+39:42 
+
+39:42 you from when the from the time when you
+39:45 
+
+39:45 deploy a model how do you measure how do
+39:47 
+
+39:47 you AB test and then how do you maintain
+39:50 
+
+39:50 a model in production we would see
+39:52 
+
+39:52 models degrade in production we would
+39:55 
+
+39:55 see uh uh why is that by the way why did
+39:59 
+
+39:59 you see that so frequently if the if the
+40:02 
+
+40:02 graph wasn't losing nodes or edges why
+40:06 
+
+40:06 would it degrade over time because
+40:08 
+
+40:08 depending on your business problem and
+40:10 
+
+40:10 the kind of behavior yeah Behavior
+40:14 
+
+40:14 change right uh people behave on
+40:16 
+
+40:16 LinkedIn in the New Year very
+40:19 
+
+40:19 differently uh from summer break right
+40:23 
+
+40:23 so creating those pipelines which do
+40:26 
+
+40:26 auto training yeah those all those all
+40:28 
+
+40:28 became very important and then uh when
+40:31 
+
+40:31 you're talking about scal that was an
+40:33 
+
+40:33 interesting problem as well because I
+40:36 
+
+40:36 started at LinkedIn when we were I think
+40:39 
+
+40:39 about 400 million members and then it it
+40:42 
+
+40:42 was rapidly growing so that's when we
+40:45 
+
+40:45 had to start thinking about
+40:46 
+
+40:46 infrastructure and the fact that uh uh
+40:51 
+
+40:51 the CPU based
+40:53 
+
+40:53 algorithms uh we can't just keep
+40:55 
+
+40:55 horizontally scaling them so what would
+40:58 
+
+40:58 be more efficient ways to run AI models
+41:01 
+
+41:01 in
+41:02 
+
+41:02 production
+41:04 
+
+41:04 um graph Neal networks now at LinkedIn
+41:07 
+
+41:07 and I want to say uh there's been an
+41:08 
+
+41:08 amazing team that took it Forward after
+41:11 
+
+41:11 I left as well it took them about four
+41:13 
+
+41:13 to five years to build in many many many
+41:16 
+
+41:16 engineers and but now it Powers
+41:18 
+
+41:18 everything from the ads to the feed to
+41:21 
+
+41:21 uh uh jobs and so on this they published
+41:25 
+
+41:25 a paper yeah recently about it so you
+41:28 
+
+41:28 guys the founders there's three founders
+41:29 
+
+41:29 at Kumo you were senior AI leads at at
+41:33 
+
+41:33 LinkedIn at Airbnb at Pinterest all
+41:36 
+
+41:36 those are massive scale also really
+41:39 
+
+41:39 sophisticated yeah that can be I think
+41:42 
+
+41:42 intimidating for smaller companies that
+41:44 
+
+41:44 have problems and say wait this is a
+41:46 
+
+41:46 champagne problem this is what the
+41:47 
+
+41:47 hyperscalers with hundreds of millions
+41:48 
+
+41:48 of users have and we don't have nearly
+41:51 
+
+41:51 the same problem is that true and what
+41:54 
+
+41:54 kinds of companies are not a good fit
+41:56 
+
+41:56 for graph learning that's a great
+41:58 
+
+41:58 question so um I think there are two
+42:02 
+
+42:02 things uh the first question is a is the
+42:06 
+
+42:06 reason why we ended up inventing
+42:08 
+
+42:08 predictive query language because what
+42:11 
+
+42:11 we needed to do was create a platform
+42:13 
+
+42:13 that was super easy to use right and
+42:16 
+
+42:16 many of the other companies had few data
+42:20 
+
+42:20 scientists and large number of potential
+42:23 
+
+42:23 Avenues where they wanted to bring AI so
+42:27 
+
+42:27 often times what we would get is hey we
+42:29 
+
+42:29 would love to be a LinkedIn an Airbnb or
+42:32 
+
+42:32 a Pinterest but we can't put so many
+42:35 
+
+42:35 people to it so giving them that uh easy
+42:39 
+
+42:39 to use interface and giving them that
+42:42 
+
+42:42 managed infrastructure at scale actually
+42:46 
+
+42:46 lets us get in but that said when is
+42:48 
+
+42:48 Kumo not a fit Kumo is not a fit if
+42:52 
+
+42:52 you're so early on that you haven't
+42:54 
+
+42:54 figured out your data landscape so
+42:57 
+
+42:57 sometimes we'll talk to customers who
+42:59 
+
+42:59 are super excited about Kumo but they
+43:02 
+
+43:02 haven't figured out how to measure the
+43:04 
+
+43:04 value of AI or sometimes we'll talk to
+43:07 
+
+43:07 customers and they're still in
+43:09 
+
+43:09 spreadsheets and they're moving to uh
+43:13 
+
+43:13 one of the warehouses so we'll say you
+43:16 
+
+43:16 know get the data layout uh settled it's
+43:20 
+
+43:20 like building a city right you've got to
+43:23 
+
+43:23 have your roads in the foundation first
+43:25 
+
+43:25 and then the vehicles come on it so so
+43:27 
+
+43:27 we'll wait and some and customers come
+43:29 
+
+43:29 back you know in a year or so but
+43:31 
+
+43:31 there's no category or type of problem
+43:33 
+
+43:33 it's more a data sophistication exactly
+43:36 
+
+43:36 I see yeah but you don't have to be so
+43:38 
+
+43:38 far along the sophistication curve you
+43:40 
+
+43:40 don't have to be an Airbnb LinkedIn yeah
+43:42 
+
+43:42 it's table Stakes you know certain kpis
+43:45 
+
+43:45 that can be optimized by an algorithm
+43:47 
+
+43:47 yeah like you can quantify certain
+43:49 
+
+43:49 things a and then B you have access to
+43:51 
+
+43:51 that data and something that you can
+43:52 
+
+43:52 plug into like a data warehouse yeah and
+43:55 
+
+43:55 the way I'd look at uh the evolu of an
+43:58 
+
+43:58 organization in data is often that U
+44:02 
+
+44:02 they'll you of course have to know what
+44:05 
+
+44:05 uh your product Market fit is after that
+44:08 
+
+44:08 you start figuring out your data
+44:10 
+
+44:10 ecosystem you build your data ecosystem
+44:13 
+
+44:13 for analytics because now you've built a
+44:15 
+
+44:15 product you've got to start measuring
+44:18 
+
+44:18 what that product is doing and what is
+44:20 
+
+44:20 starting what the behavior is and that's
+44:23 
+
+44:23 when leaders usually start thinking
+44:25 
+
+44:25 about AI which is is okay now I know how
+44:28 
+
+44:28 to query the past uh but I now need to
+44:32 
+
+44:32 start bringing in AI to instrument the
+44:35 
+
+44:35 change that I need in the in the
+44:38 
+
+44:38 ecosystem I'd love to close with some
+44:40 
+
+44:40 questions about your V vision for the
+44:42 
+
+44:42 future M maybe you know you've been in
+44:45 
+
+44:45 AI for a long time you mentioned you
+44:47 
+
+44:47 were in NLP before before Bert was a
+44:49 
+
+44:49 thing um what are you most excited about
+44:51 
+
+44:51 in in AI most broadly um I think I'm
+44:55 
+
+44:55 most excited with very broadly about the
+44:59 
+
+44:59 productivity gains it's giving all of us
+45:02 
+
+45:02 uh I mean Kumo is one part of it but
+45:05 
+
+45:05 just how we write documents or how we uh
+45:10 
+
+45:10 uh or think about health right like if
+45:12 
+
+45:12 Health improves productivity improves
+45:15 
+
+45:15 for example if you're just using one of
+45:17 
+
+45:17 those uh uh uh Health apps that do
+45:20 
+
+45:20 monitoring but nud you to for Behavioral
+45:23 
+
+45:23 change that is better health is better
+45:25 
+
+45:25 productivity so what I'm most excited
+45:28 
+
+45:28 about is how we're going to evolve as a
+45:31 
+
+45:31 human race with all of this productivity
+45:35 
+
+45:35 Gams what about technically what what
+45:39 
+
+45:39 features or approaches or algorithms or
+45:42 
+
+45:42 venues you think are going to be most
+45:43 
+
+45:43 interesting I've always found the big
+45:46 
+
+45:46 Innovations come at the intersection of
+45:50 
+
+45:50 hardware and
+45:52 
+
+45:52 software and I think while gpus were
+45:56 
+
+45:56 invented for
+45:58 
+
+45:58 Graphics there there's probably
+46:00 
+
+46:00 something more that H has to happen on
+46:03 
+
+46:03 the you know processor side so that you
+46:06 
+
+46:06 can scale these graph neural networks or
+46:09 
+
+46:09 neural networks further make U models uh
+46:14 
+
+46:14 maybe less
+46:16 
+
+46:16 expensive so um I'm looking forward to
+46:19 
+
+46:19 that technically what about your vision
+46:22 
+
+46:22 for the future of Kumo like what can we
+46:24 
+
+46:24 expect to come out of the product in the
+46:26 
+
+46:26 in the future so in terms of Kumo's
+46:28 
+
+46:28 Vision I'm actually really excited about
+46:30 
+
+46:30 the kinds of apps people are going to
+46:32 
+
+46:32 build with Kumo we're starting to see
+46:34 
+
+46:34 people Plum Kumo with Lang chain and
+46:39 
+
+46:39 pine cone and put together apps like the
+46:44 
+
+46:44 one we talked about like the you know a
+46:46 
+
+46:46 chat agent that uh recommends for you
+46:51 
+
+46:51 the uh the yellow summer dresses right
+46:54 
+
+46:54 so I'm very excited about the the top
+46:57 
+
+46:57 layer of applications that are going to
+47:00 
+
+47:00 get built on top of Kumo and what that's
+47:03 
+
+47:03 going to power so hey Mo one of the star
+47:06 
+
+47:06 features about you you're incredibly
+47:08 
+
+47:08 technically deep but you also are really
+47:10 
+
+47:10 good at culture if you talk to anyone at
+47:11 
+
+47:11 Kumo there's basically no regrettable
+47:14 
+
+47:14 turn ever and you guys hire some of the
+47:16 
+
+47:16 best phds in the world in ml and
+47:18 
+
+47:18 certainly in graph ml how do you do that
+47:21 
+
+47:21 what have you done to make the kuma
+47:22 
+
+47:22 culture exceptional and to have so much
+47:24 
+
+47:24 retention within your team I was at a
+47:27 
+
+47:27 leadership training once and we had to
+47:30 
+
+47:30 think about what our true north was and
+47:34 
+
+47:34 I realized that and the true north uh
+47:37 
+
+47:37 concept defines your true north which is
+47:39 
+
+47:39 a value as who you are but what you know
+47:43 
+
+47:43 the kinds of problems you solve either
+47:45 
+
+47:45 in your work and what you bring to the
+47:46 
+
+47:46 table and for me it's always uh about
+47:49 
+
+47:49 empowering people to do more than what
+47:52 
+
+47:52 they think they can so it's common to
+47:54 
+
+47:54 empower people to do what they to get to
+47:57 
+
+47:57 full potential but it's those aha
+47:60 
+
+47:60 moments like wow I built this so you
+48:03 
+
+48:03 hire a smart team you get
+48:06 
+
+48:06 them I think good managers step away but
+48:10 
+
+48:10 have their eye on how the team is
+48:13 
+
+48:13 operating and you get people
+48:16 
+
+48:16 to innovate get people to own what
+48:20 
+
+48:20 they're building so just see that Vision
+48:22 
+
+48:22 so you want to be able to hire people
+48:24 
+
+48:24 whether it was LinkedIn where the value
+48:26 
+
+48:26 was economic opportunity or at Kumo
+48:29 
+
+48:29 where the value is about uh uh building
+48:34 
+
+48:34 a you AI platform that makes AI so easy
+48:38 
+
+48:38 to use it's about when you bring smart
+48:40 
+
+48:40 people together that rally together on
+48:42 
+
+48:42 the same value that's when magic happens
+48:45 
+
+48:45 and my job is to just let the magic
+48:47 
+
+48:47 happen heyo why is that passion around
+48:50 
+
+48:50 relational data you could have you could
+48:53 
+
+48:53 have done we've talked about this
+48:55 
+
+48:55 sometimes in the past you could have
+48:56 
+
+48:56 used graph graph learning as a different
+48:59 
+
+48:59 type of architecture to do language
+49:01 
+
+49:01 models or you could have done graph
+49:03 
+
+49:03 learning to do any sort of any sort of
+49:06 
+
+49:06 AI right once you've figured out a scale
+49:08 
+
+49:08 how to do the generalization why can't
+49:09 
+
+49:09 you do the specifics by taking this big
+49:11 
+
+49:11 marble block and carving away all the
+49:13 
+
+49:13 nodes and edges until you get to a
+49:15 
+
+49:15 superior architecture you decided to do
+49:17 
+
+49:17 it on relational data why is that
+49:19 
+
+49:19 relational data usually is not the most
+49:21 
+
+49:21 exciting thing in the world for most
+49:22 
+
+49:22 people yeah but it is your life passion
+49:25 
+
+49:25 because nobody else was doing it and
+49:28 
+
+49:28 there's so much data in relational
+49:31 
+
+49:31 format and that was such a pain in our
+49:33 
+
+49:33 past jobs so uh I I feel like there's
+49:38 
+
+49:38 magic happening in the core area of NLP
+49:41 
+
+49:41 where you know I'm happy to see that
+49:44 
+
+49:44 Revolution and all the investment that's
+49:46 
+
+49:46 happening there people money and so on
+49:49 
+
+49:49 but there's this whole workload that's
+49:52 
+
+49:52 out there a whole set of data scientists
+49:56 
+
+49:56 that uh work on those workloads how do
+49:60 
+
+49:60 we bring that magic to them so it's
+50:02 
+
+50:02 really about uh you uh the
+50:05 
+
+50:05 opportunity and the past pain that each
+50:08 
+
+50:08 of us saw in our previous jobs okay I
+50:11 
+
+50:11 have one last question for the young
+50:13 
+
+50:13 constantines out there who are watching
+50:15 
+
+50:15 this episode on YouTube uh what advice
+50:18 
+
+50:18 do you have for you know aspiring AI
+50:21 
+
+50:21 Engineers who want to really make a dent
+50:23 
+
+50:23 in the field in the future oh she has a
+50:25 
+
+50:25 specific yellow dress
+50:28 
+
+50:28 recommendation I would actually say
+50:31 
+
+50:31 tools come and go languages come and go
+50:33 
+
+50:33 I know there's a lot about learning
+50:35 
+
+50:35 Python and uh you know uh taking the
+50:37 
+
+50:37 class on uh the latest deep learning but
+50:40 
+
+50:40 I would say don't skip your probability
+50:42 
+
+50:42 and uh a linear algebra classes because
+50:45 
+
+50:45 when it whatever method has been there
+50:48 
+
+50:48 in the last several decades it's always
+50:51 
+
+50:51 come down to core linear algebra and
+50:55 
+
+50:55 probability so don't skip those classes
+50:58 
+
+50:58 great and mine is there's a lot of graph
+51:01 
+
+51:01 enthusiasts out there yeah when do graph
+51:03 
+
+51:03 neural networks come main stage in the
+51:07 
+
+51:07 AI Revolution best guess for timeline I
+51:10 
+
+51:10 think we're getting there I was at a
+51:12 
+
+51:12 conference called kdd recently it's one
+51:14 
+
+51:14 of the big biggest data mining
+51:16 
+
+51:16 conferences a lot of academics lot of
+51:19 
+
+51:19 Industry folks and more than half the
+51:21 
+
+51:21 papers were ra neutral networks so I
+51:23 
+
+51:23 think we're sitting at
+51:27 
+
+51:27 that explosion it's it's going to happen
+51:30 
+
+51:30 thank you ha this was fantastic thank
+51:32 
+
+51:32 you Sonia and thank you Constantine it
+51:34 
+
+51:34 was lovely being here
+51:36 
+
+51:36 [Music]
+51:49 
+
+51:49 [Music]

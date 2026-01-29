@@ -1,0 +1,3502 @@
+00:01 [Music]
+00:02 
+
+00:02 one of the particularly prolific people
+00:05 
+
+00:05 who was creating these fraudulent
+00:07 
+
+00:07 accounts on PayPal
+00:08 
+
+00:08 somehow figure out my email address it
+00:11 
+
+00:11 would be like a bank executive talking
+00:13 
+
+00:13 to a bank robber as the robbery is
+00:15 
+
+00:15 happening
+00:16 
+
+00:16 we went from the problem let's address
+00:18 
+
+00:18 it to this is a survival moment and if
+00:21 
+
+00:21 we don't figure out how to destroy what
+00:23 
+
+00:23 fraud is doing to us it will destroy us
+00:25 
+
+00:25 instead
+00:26 
+
+00:26 [Music]
+00:28 
+
+00:28 welcome to Crucible moments a podcast
+00:31 
+
+00:31 about the critical Crossroads and
+00:33 
+
+00:33 inflection points that shaped some of
+00:35 
+
+00:35 the world's most remarkable companies
+00:37 
+
+00:37 I'm your host and the managing partner
+00:39 
+
+00:39 of Sequoia Capital Roloff Botha
+00:43 
+
+00:43 your life or your company will be
+00:46 
+
+00:46 disproportionately shaped by a few
+00:48 
+
+00:48 Crucible moments
+00:49 
+
+00:49 the decisions you make at these
+00:51 
+
+00:51 intersections will have an outsized
+00:53 
+
+00:53 bearing on your journey for years or
+00:55 
+
+00:56 decades to come
+00:57 
+
+00:57 at Sequoia we use this as a framework
+00:60 
+
+00:60 with our Founders for navigating
+01:01 
+
+01:01 decisions how to identify when you're
+01:04 
+
+01:04 facing a crucible moment and what
+01:06 
+
+01:06 principles should guide you as you
+01:07 
+
+01:07 decide your path forward
+01:11 
+
+01:11 today's episode is very personal to me
+01:13 
+
+01:13 in the spring of 2000 on a student visa
+01:16 
+
+01:16 from South Africa and desperate to prove
+01:19 
+
+01:19 myself and earn a place in Silicon
+01:21 
+
+01:21 Valley I joined a fledgling startup
+01:23 
+
+01:23 called PayPal
+01:25 
+
+01:26 it turned out to be a life-changing
+01:27 
+
+01:27 Crucible moment but it wasn't an obvious
+01:30 
+
+01:30 choice at the time PayPal as it's known
+01:32 
+
+01:32 today a bmoth with a universal name and
+01:34 
+
+01:34 logo one of the highest valued digital
+01:36 
+
+01:36 payments companies in the world is
+01:39 
+
+01:39 nothing like the company I joined
+01:41 
+
+01:41 on my first day I walked into a rinky
+01:43 
+
+01:44 dink office next to the Pala Alto dump
+01:47 
+
+01:47 when I settled into my desk and switched
+01:49 
+
+01:49 on one of those thick 1990s style
+01:51 
+
+01:51 desktops the smell of garbage wafted
+01:54 
+
+01:54 through the air
+01:57 
+
+01:57 famous for the people who came out of it
+01:59 
+
+01:59 Max leftgen who you'll hear from today
+02:01 
+
+02:01 Elon Musk Reed Hoffman
+02:05 
+
+02:05 Peter Thiel Steve Chen
+02:08 
+
+02:08 Chad Hurley the list goes on and on
+02:13 
+
+02:13 they're often referred to as the PayPal
+02:15 
+
+02:15 Mafia because they went on to found some
+02:17 
+
+02:17 of the most significant companies of our
+02:19 
+
+02:19 time
+02:20 
+
+02:20 but back then we were just a group of
+02:22 
+
+02:22 unknown underdogs working day and night
+02:25 
+
+02:25 to keep our company alive
+02:29 
+
+02:29 I'll start with a roller coaster it was
+02:32 
+
+02:32 scary again and again we thought the
+02:34 
+
+02:34 company was going to die
+02:36 
+
+02:36 three defining Crucible moments in
+02:39 
+
+02:39 PayPal's early history played out nearly
+02:40 
+
+02:41 simultaneously
+02:42 
+
+02:42 just as we had wrestled one under
+02:44 
+
+02:44 control another challenge reared its
+02:46 
+
+02:47 head
+02:48 
+
+02:48 in this episode we'll look at how a 50
+02:51 
+
+02:51 50 merger nearly tore PayPal apart
+02:55 
+
+02:55 how pressured to stabilize the business
+02:57 
+
+02:57 led to Innovative fraud fighting
+02:59 
+
+02:59 measures still in use today and how a
+03:02 
+
+03:02 series of acquisition offers tested our
+03:04 
+
+03:04 team's resilience and our resolved to
+03:06 
+
+03:06 fight and bet on ourselves
+03:10 
+
+03:10 you know the PayPal of today let's get
+03:12 
+
+03:12 into the early days that defined it
+03:16 
+
+03:16 my name is Jimmy Sony I'm the author of
+03:18 
+
+03:18 the founders the story of PayPal and the
+03:21 
+
+03:21 entrepreneurs who shaped Silicon Valley
+03:24 
+
+03:24 when PayPal was in its infancy it was
+03:27 
+
+03:27 two companies one company was called
+03:29 
+
+03:29 x.com and it was founded by a then late
+03:33 
+
+03:33 20-something named Elon Musk
+03:36 
+
+03:36 the other component of what became what
+03:39 
+
+03:39 we know as PayPal was called confinity
+03:42 
+
+03:42 and it was co-founded by Peter Thiel and
+03:44 
+
+03:44 Max lebjin my name is Max Lufkin I
+03:48 
+
+03:48 co-founded PayPal and was this Chief
+03:51 
+
+03:51 technical officer
+03:52 
+
+03:52 the company was really started around
+03:55 
+
+03:55 kind of this broad idea of cryptography
+03:58 
+
+03:58 coming to devices with small screens of
+04:01 
+
+04:01 course it's mid 90s or late 90s and so
+04:03 
+
+04:03 things like iPhone don't exist yet but
+04:06 
+
+04:06 Palm Pilots do and so you have this
+04:08 
+
+04:08 maybe possible interesting area of
+04:12 
+
+04:12 opportunity where things like documents
+04:14 
+
+04:14 and payments will have to be secured my
+04:16 
+
+04:16 background was in
+04:18 
+
+04:18 cryptography and so I I thought the
+04:21 
+
+04:21 starting company in the space met this
+04:22 
+
+04:22 guy Peter Thiel we hit it off and uh
+04:25 
+
+04:25 co-founded a company that became known
+04:27 
+
+04:27 as confinity as we sort of meandered
+04:29 
+
+04:29 through the desert of bad business ideas
+04:30 
+
+04:30 we'd realize that nobody actually cared
+04:32 
+
+04:32 yet about encrypting documents on
+04:34 
+
+04:34 devices that could barely generate a
+04:37 
+
+04:37 random number and so we sort of chiseled
+04:40 
+
+04:40 away at it and eventually turned to this
+04:42 
+
+04:42 idea of payments initially on your
+04:45 
+
+04:45 mobile device but then over time there's
+04:48 
+
+04:48 sort of a chance migration to the web
+04:51 
+
+04:51 basically payments for everyone they
+04:54 
+
+04:54 create an email money framework or a
+04:57 
+
+04:57 process that we all know as PayPal today
+05:02 
+
+05:02 unfortunately for Max and Peter they
+05:05 
+
+05:05 weren't the only ones working on
+05:06 
+
+05:06 digitizing payments over the internet
+05:09 
+
+05:09 Elon musk's thesis was if in a digital
+05:12 
+
+05:12 age money really isn't real why does it
+05:15 
+
+05:15 cost me anything to move money around if
+05:17 
+
+05:17 I have an insurance policy and a
+05:20 
+
+05:20 mortgage and a bank and a brokerage why
+05:22 
+
+05:22 can't that all just live in one place
+05:23 
+
+05:23 and for him that one place was x.com
+05:28 
+
+05:28 we weren't aware of the presence of
+05:31 
+
+05:31 confinity when we made the first
+05:33 
+
+05:33 investment in x.com
+05:36 
+
+05:36 I'm Michael Moritz Michael was the
+05:39 
+
+05:39 square partner who joined the board of
+05:40 
+
+05:40 x.com
+05:41 
+
+05:41 when we met Elon we didn't have any
+05:44 
+
+05:44 background with him we had not been
+05:47 
+
+05:47 investors in the first company that had
+05:50 
+
+05:50 started uh zip2 so he was a fresh and
+05:54 
+
+05:54 new and it was obvious that he was one
+05:57 
+
+05:57 of these characters who was prepared to
+05:60 
+
+05:60 Tilt at windmills which is the sort of
+06:03 
+
+06:03 sensibility I think you needed when you
+06:04 
+
+06:05 were going to take on the banking
+06:06 
+
+06:06 establishment
+06:08 
+
+06:08 here's what leads to the Rivalry between
+06:10 
+
+06:10 these two companies both of them have an
+06:13 
+
+06:13 email money mechanism and both of them
+06:16 
+
+06:16 take off on this corner of the internet
+06:19 
+
+06:19 called eBay
+06:21 
+
+06:21 so eBay it's recently gone public it's
+06:23 
+
+06:23 an auction website you know there's all
+06:25 
+
+06:25 these buyers and sellers they could
+06:27 
+
+06:27 unite somebody that wants to sell a
+06:28 
+
+06:28 beanie baby with somebody that wants to
+06:29 
+
+06:29 buy a beanie baby and so you have this
+06:31 
+
+06:31 flea market but what the flea market
+06:33 
+
+06:33 hadn't figured out was how to do the
+06:35 
+
+06:35 payment part of the transaction and eBay
+06:37 
+
+06:37 didn't have a good integrated payment
+06:39 
+
+06:39 solution at that time
+06:41 
+
+06:41 and so despite the fact that x.com had
+06:43 
+
+06:43 this broader remit and vision of
+06:45 
+
+06:45 financial products it was really their
+06:47 
+
+06:47 person-to-person payments product that
+06:49 
+
+06:49 was exploding in use and similarly with
+06:51 
+
+06:51 PayPal it was the email product again
+06:53 
+
+06:53 used by eBay Merchants that was
+06:54 
+
+06:54 exploding in use and the two companies
+06:56 
+
+06:56 really had neck and neck market share on
+06:59 
+
+06:59 eBay at the time they both notice that
+07:02 
+
+07:02 like eBay buyers and sellers are less
+07:04 
+
+07:04 like totally Gaga they're obsessed
+07:06 
+
+07:06 because it's an instantaneous money
+07:07 
+
+07:07 transfer they don't have to do things
+07:09 
+
+07:09 like mail checks or send cash in an
+07:12 
+
+07:12 envelope or send a you know a money
+07:14 
+
+07:14 order through Western Union they can
+07:16 
+
+07:16 just actually like send email money
+07:18 
+
+07:18 they both take off and all of a sudden
+07:21 
+
+07:21 these two startups that are on the same
+07:23 
+
+07:23 street University Avenue in Palo Alto
+07:25 
+
+07:25 are competing against each other tooth
+07:28 
+
+07:28 and nail
+07:28 
+
+07:28 [Music]
+07:31 
+
+07:31 the actual sort of company to company
+07:33 
+
+07:33 relationship was basically that of a
+07:34 
+
+07:35 mortal enemy blood Feud sort of thing I
+07:37 
+
+07:37 always think of the times when confinity
+07:41 
+
+07:41 on one side of University Avenue and
+07:43 
+
+07:43 x.com on the other side were competing
+07:45 
+
+07:45 as if you've ever been to the little
+07:49 
+
+07:49 Tuscan Hill town of San gimignana which
+07:52 
+
+07:52 is um dotted in the center by very tall
+07:57 
+
+07:57 thin Towers where different families
+08:01 
+
+08:01 lived and these towers all have slits in
+08:05 
+
+08:05 the side for
+08:07 
+
+08:07 um a crossbow and bow and arrows to be
+08:09 
+
+08:09 shot these families waged holy war on
+08:12 
+
+08:12 each other
+08:13 
+
+08:13 and this competition drives both teams
+08:16 
+
+08:16 utterly completely crazy right you know
+08:19 
+
+08:19 the world knows that Elon is no slouch
+08:20 
+
+08:20 and he wants to win and he wants to be
+08:23 
+
+08:23 successful what what maybe fewer people
+08:25 
+
+08:25 understand but certainly people in
+08:26 
+
+08:26 Silicon Valley know is that Max Lefton
+08:28 
+
+08:28 has just as much endurance and intensity
+08:29 
+
+08:29 there's a member of the Infinity team
+08:32 
+
+08:32 that is celebrating a birthday and the
+08:36 
+
+08:36 birthday cake is brought out for the
+08:38 
+
+08:38 confinity team to enjoy and on the
+08:40 
+
+08:40 birthday cake in frosting is diex.com
+08:43 
+
+08:43 die on the other side of the fence on
+08:46 
+
+08:46 the x.com side of the fence Elon in a
+08:49 
+
+08:49 moment of you know heated competition
+08:50 
+
+08:50 sends an email that to this day 20 plus
+08:53 
+
+08:53 years later rings in the minds of his
+08:55 
+
+08:55 teammates the subject is a friendly note
+08:57 
+
+08:57 about our competitors and apparently the
+08:59 
+
+08:59 text was kill our competitors die die
+09:02 
+
+09:02 die right and so you have this sort of
+09:04 
+
+09:05 superheated competition Max leptin at
+09:07 
+
+09:07 one point warns his Engineers they were
+09:09 
+
+09:09 working at Infinity to be careful about
+09:11 
+
+09:11 what they say while walking around Palo
+09:13 
+
+09:13 Alto because there could be spies
+09:15 
+
+09:15 everywhere
+09:17 
+
+09:17 the paranoia took deep hole and um in
+09:21 
+
+09:21 part because we were absolutely certain
+09:22 
+
+09:22 that they must have heard us through the
+09:24 
+
+09:24 walls or maybe dumpster Dives for our
+09:26 
+
+09:26 ideas and Etc et cetera so it was
+09:28 
+
+09:28 definitely very very tense and of course
+09:32 
+
+09:32 you know all of us being
+09:35 
+
+09:35 nerdy Engineers so we'd never actually
+09:36 
+
+09:36 confronted each other in any sort of a
+09:38 
+
+09:38 physical domain we just sort of duked it
+09:40 
+
+09:40 out online
+09:41 
+
+09:41 both extra common and confinity had very
+09:44 
+
+09:44 high burn rates for those folks who are
+09:47 
+
+09:47 unfamiliar with the terminology in
+09:48 
+
+09:48 Silicon Valley the burn rate of a
+09:50 
+
+09:50 company refers to the rate at which it
+09:52 
+
+09:52 is depleting its cash balance
+09:55 
+
+09:55 there were people who thought that if
+09:57 
+
+09:57 the competition continued that it would
+09:59 
+
+09:59 be ruinous for both companies a key
+10:02 
+
+10:02 person in this process and in the
+10:04 
+
+10:04 negotiation that followed and in the
+10:06 
+
+10:06 kind of armistice that these companies
+10:08 
+
+10:08 had was Peter Thiel and he realizes that
+10:12 
+
+10:12 they are in this fevered competitive
+10:14 
+
+10:14 environment but that it is actually
+10:15 
+
+10:15 costing both companies a huge amount of
+10:18 
+
+10:18 money and a huge amount of unnecessary
+10:19 
+
+10:19 stress and grief that at some point he
+10:22 
+
+10:22 realizes that you know elon's x.com has
+10:26 
+
+10:26 far more Capital than confinity does
+10:28 
+
+10:28 that it could basically just win by dint
+10:30 
+
+10:30 of size
+10:31 
+
+10:31 it gradually became clear as the
+10:34 
+
+10:34 financing Market Titan that each of
+10:37 
+
+10:37 these companies
+10:39 
+
+10:39 as a separate entity
+10:41 
+
+10:41 was trading its own Road to Perdition
+10:45 
+
+10:45 and the sensible thing would be to
+10:49 
+
+10:49 combine forces
+10:51 
+
+10:51 the companies faced a crucible decision
+10:55 
+
+10:55 if your business's life is on the line
+10:57 
+
+10:57 do you merge with an enemy
+10:59 
+
+10:59 and if you do merge who's in charge
+11:02 
+
+11:02 [Music]
+11:04 
+
+11:04 but there are always two issues that pop
+11:06 
+
+11:06 up and emerge and one of which is how
+11:09 
+
+11:09 much of the cake will my company have
+11:12 
+
+11:12 and the second one is who's going to be
+11:16 
+
+11:16 in charge of the combined entity
+11:22 
+
+11:22 it was certainly very controversial
+11:24 
+
+11:24 because the original proposal from X was
+11:26 
+
+11:26 significantly in their favor all the
+11:28 
+
+11:28 metrics suggested that we were in some
+11:31 
+
+11:31 form
+11:32 
+
+11:32 or another
+11:33 
+
+11:33 equal to them and so my my pride was
+11:36 
+
+11:36 insulted by the original suggestion of
+11:38 
+
+11:38 let's do a 9010 merger in our favor
+11:40 
+
+11:40 there's nothing complicated about uh
+11:43 
+
+11:43 9010
+11:44 
+
+11:44 combination it means that one side has
+11:48 
+
+11:48 nine slices of the cake and the other
+11:50 
+
+11:50 side has one slice of the cake and from
+11:54 
+
+11:54 Max and Peter's point of view I'm sure
+11:56 
+
+11:56 that they felt that their
+11:60 
+
+11:60 progress at PayPal and the trajectory
+12:05 
+
+12:05 they they were on it should be worth a
+12:07 
+
+12:07 lot more than uh just one slice of the
+12:09 
+
+12:09 cake and I can well imagine that they
+12:14 
+
+12:14 were affronted by that but on the other
+12:17 
+
+12:17 hand you have to start somewhere
+12:19 
+
+12:19 Peter who's not a bad poker player
+12:21 
+
+12:21 himself I think counter it was something
+12:22 
+
+12:23 like absolutely not uh but I I left the
+12:26 
+
+12:26 uh I left the negotiation of the actual
+12:28 
+
+12:28 merger terms to them which ultimately
+12:31 
+
+12:31 led to a 50 50 merger which is really
+12:33 
+
+12:33 something I do not recommend to anyone
+12:36 
+
+12:36 in early 2000 x.com and confinity merged
+12:39 
+
+12:39 the combined company was renamed PayPal
+12:42 
+
+12:42 adopting the name of confinities
+12:44 
+
+12:44 payments product is the new overarching
+12:46 
+
+12:46 name of the company
+12:48 
+
+12:48 I joined PayPal on the heels of the Mojo
+12:50 
+
+12:50 which as Max said was a 50 50 merger or
+12:53 
+
+12:53 a merger of equals
+12:55 
+
+12:55 at the time this was meant to signify
+12:57 
+
+12:57 that neither team was better than the
+12:59 
+
+12:59 other but as Max hinted the outcome of
+13:02 
+
+13:02 this Crucible moment a 50 50 split came
+13:05 
+
+13:05 at a cost
+13:09 
+
+13:09 when these two companies x.com and
+13:12 
+
+13:12 confinity unite into one company
+13:17 
+
+13:17 it is profoundly awkward I described the
+13:21 
+
+13:21 merger of x.com and Divinity as a
+13:23 
+
+13:23 shotgun wedding and that's a pretty app
+13:25 
+
+13:25 description given that you know just
+13:28 
+
+13:28 days just weeks before this merger these
+13:31 
+
+13:31 two companies were like truly trying to
+13:35 
+
+13:35 destroy one another
+13:36 
+
+13:36 because it was a merger equals for
+13:39 
+
+13:39 example my position was well I am the
+13:42 
+
+13:42 CTO of the combined company I should be
+13:44 
+
+13:44 the one making technical decisions of
+13:46 
+
+13:46 course Elon had his own technical
+13:47 
+
+13:47 decisions in mind and there's well
+13:48 
+
+13:48 documented rivalry between us about what
+13:51 
+
+13:51 exactly we should have built and how so
+13:53 
+
+13:53 Elon for example thought that we should
+13:55 
+
+13:55 move the infrastructure the company over
+13:56 
+
+13:56 to Windows NT and most the engineering
+13:59 
+
+13:59 team that had come from the confinity
+14:00 
+
+14:00 side were Unix developers and Maxwell's
+14:04 
+
+14:04 had a very strong point of view that
+14:05 
+
+14:05 Unix is a much more secure platform for
+14:08 
+
+14:08 the company than in t which I think has
+14:11 
+
+14:11 proven accurate with the benefit of
+14:13 
+
+14:13 hindsight
+14:14 
+
+14:14 that sort of narrative played out in a
+14:17 
+
+14:17 bunch of other places where you would
+14:19 
+
+14:19 say well this is obviously the better
+14:21 
+
+14:21 way it was our way and the answer would
+14:23 
+
+14:23 be well sure but we merged 50 50. like
+14:25 
+
+14:25 it's not really clear to anyone here
+14:27 
+
+14:27 that this was your way or our way so it
+14:30 
+
+14:30 just creates a set of tensions
+14:32 
+
+14:32 [Music]
+14:33 
+
+14:33 here's a snapshot of the management
+14:35 
+
+14:35 roller coaster in those days
+14:37 
+
+14:37 Peter was supposed to be the Executive
+14:39 
+
+14:39 Vice President of the newly combined
+14:41 
+
+14:41 company he stepped down in may just six
+14:43 
+
+14:43 weeks after the Mojo but remained on the
+14:46 
+
+14:46 board
+14:47 
+
+14:47 a few weeks later there was a coup to
+14:48 
+
+14:48 remove then CEO Bill Harris
+14:51 
+
+14:51 shortly after that there was another
+14:52 
+
+14:52 coup to remove Elon Musk who'd replaced
+14:54 
+
+14:54 Harris a CEO and that was in August
+14:57 
+
+14:57 while Elon was away on his honeymoon
+14:60 
+
+14:60 the management team drove over to the
+15:02 
+
+15:02 square headquarters to plead our case to
+15:03 
+
+15:03 the board to remove Elon a CEO but
+15:06 
+
+15:06 manila envelopes assigned resignation
+15:08 
+
+15:08 letters from the management team to show
+15:09 
+
+15:09 the board that we were serious I was
+15:12 
+
+15:12 terrified about what was going to happen
+15:13 
+
+15:13 I had no idea how it would unfold
+15:16 
+
+15:16 [Music]
+15:18 
+
+15:18 Insurrection the Rebellion the coup
+15:21 
+
+15:21 whatever name you want to associate with
+15:24 
+
+15:24 it meant that Peter became the CEO of
+15:28 
+
+15:28 the business around Elon
+15:31 
+
+15:31 again understandably was immensely upset
+15:33 
+
+15:33 about this
+15:34 
+
+15:35 I remember him calling me from Australia
+15:39 
+
+15:39 obviously deeply upset we did hurt
+15:42 
+
+15:42 multiple time zones away labeling it all
+15:46 
+
+15:46 a heinous crime
+15:48 
+
+15:48 this turnover was all in the span of six
+15:52 
+
+15:52 months
+15:53 
+
+15:53 what was interesting was listening to
+15:55 
+
+15:55 employees one of them actually jokingly
+15:57 
+
+15:57 said to me sometimes you get to the
+15:58 
+
+15:58 office and you'd be like oh new CEO
+16:00 
+
+16:00 today all right no worries I gotta get
+16:02 
+
+16:02 back to my work right because the change
+16:04 
+
+16:04 was happening that quickly and that is
+16:06 
+
+16:06 actually one of the things that's
+16:06 
+
+16:06 remarkable about this story is just the
+16:08 
+
+16:08 amount I would say the sort of toughness
+16:10 
+
+16:10 of some of the people to get through
+16:12 
+
+16:12 these rapid changes to embrace the fact
+16:15 
+
+16:15 that immediately after this merger they
+16:17 
+
+16:17 have a different title they have a
+16:18 
+
+16:18 different role they don't know where
+16:19 
+
+16:19 they're going to be and I would say in a
+16:21 
+
+16:21 lot of cases the people who impress me
+16:22 
+
+16:22 most were people who just said you know
+16:23 
+
+16:23 I'm just gonna do what is needed
+16:26 
+
+16:26 in retrospect I think
+16:28 
+
+16:29 clear sense for owner versus not would
+16:33 
+
+16:33 have been would have made it easier for
+16:35 
+
+16:35 the teams to know who is the final
+16:37 
+
+16:37 source of authority and so having a
+16:39 
+
+16:39 clear sense for who sets the direction
+16:41 
+
+16:41 and who leads the company in every part
+16:43 
+
+16:43 of its operation in retrospect is a
+16:46 
+
+16:46 really really important thing for uh for
+16:47 
+
+16:47 old m a uh encounters for me
+16:50 
+
+16:50 having clarity about the roles off to
+16:53 
+
+16:53 the merger having a really good sense of
+16:57 
+
+16:57 the comparative strengths of individuals
+17:00 
+
+17:00 in the different companies and
+17:03 
+
+17:03 probably most importantly and this is
+17:07 
+
+17:07 always absent doesn't matter how hard
+17:09 
+
+17:09 you try coming up with a shared identity
+17:12 
+
+17:12 not separate identities and
+17:16 
+
+17:16 if
+17:17 
+
+17:17 there's any lesson to be taken away from
+17:20 
+
+17:20 this merger it's um to work very hard
+17:25 
+
+17:25 before you actually combine forces on
+17:29 
+
+17:29 the identity that together you intend to
+17:32 
+
+17:32 build that together you intend to own
+17:34 
+
+17:35 and that together you intend to share
+17:38 
+
+17:38 [Music]
+17:40 
+
+17:40 as the two teams struggle to get along
+17:42 
+
+17:42 the company's losses were out of control
+17:45 
+
+17:45 we had another big problem Brewing
+17:49 
+
+17:49 right after the merger
+17:51 
+
+17:51 the management team started to realize
+17:53 
+
+17:53 that our fledgling payments businesses
+17:56 
+
+17:56 now combine into one
+17:58 
+
+17:58 we're really getting abused by what the
+18:02 
+
+18:02 term became known as the fraudsters
+18:04 
+
+18:05 this summer of 2000 was a very scary
+18:08 
+
+18:08 time at PayPal we knew we had a massive
+18:10 
+
+18:10 floor problem it wasn't obvious that it
+18:12 
+
+18:12 was solvable
+18:15 
+
+18:15 the primary source of fraud that risked
+18:18 
+
+18:18 our survival at people were so-called
+18:20 
+
+18:20 unauthorized fraud
+18:22 
+
+18:22 what this meant was a user who didn't
+18:25 
+
+18:25 actually have authorization to use a
+18:27 
+
+18:27 given card
+18:28 
+
+18:28 would enter that card into PayPal system
+18:31 
+
+18:31 charge 200 or 300 funnel that money into
+18:35 
+
+18:35 another account and maybe consolidate it
+18:37 
+
+18:37 with a bunch of other accounts that
+18:39 
+
+18:39 they'd use with stolen credit card
+18:41 
+
+18:41 information withdraw that money and then
+18:43 
+
+18:43 they'd run off with it so this is just
+18:45 
+
+18:45 theft
+18:47 
+
+18:47 and so that was the primary source and
+18:49 
+
+18:49 the reason this is a very scary type of
+18:51 
+
+18:51 fraud is it's very scalable
+18:54 
+
+18:54 you can go to the dark web so to speak
+18:56 
+
+18:56 and you can purchase stolen credit cards
+18:58 
+
+18:58 for probably less than a dollar today
+18:60 
+
+18:60 you can get a million of them and
+19:02 
+
+19:02 there's a way for you to write a
+19:03 
+
+19:03 computer program to automatically sign
+19:05 
+
+19:05 up for accounts on PayPal add credit
+19:07 
+
+19:07 cards charge them funnel that money into
+19:09 
+
+19:09 a central account withdraw to a bank
+19:11 
+
+19:11 account and run off you could make off
+19:12 
+
+19:12 with millions of dollars and that's
+19:14 
+
+19:14 exactly what happened to us
+19:16 
+
+19:16 no one's ever encountered this kind of
+19:18 
+
+19:18 thing before which leaves the company
+19:20 
+
+19:20 PayPal in a very precarious position it
+19:23 
+
+19:23 is being defrauded to the tune of
+19:26 
+
+19:26 over 10 million dollars a month at one
+19:28 
+
+19:29 point
+19:29 
+
+19:29 and it's also not going to be able to
+19:32 
+
+19:32 raise more money because Venture Capital
+19:33 
+
+19:33 funding in Silicon Valley has all but
+19:35 
+
+19:35 dried up in the summer of 2000 the tone
+19:38 
+
+19:38 of the market changed dramatically
+19:41 
+
+19:41 cash became hard and then impossible to
+19:45 
+
+19:45 raise and
+19:47 
+
+19:47 there was
+19:49 
+
+19:49 money flying out the door uh because of
+19:53 
+
+19:53 the cost of fraud
+19:55 
+
+19:55 get very clear to all of us that if we
+19:59 
+
+19:59 were to project fraud losses we would be
+20:01 
+
+20:01 out of cash and out of business
+20:03 
+
+20:03 basically in a few months and so we sort
+20:07 
+
+20:07 of went from the problem was addressed
+20:08 
+
+20:08 it to this is a survival moment and if
+20:11 
+
+20:11 we don't figure out how to destroy what
+20:14 
+
+20:14 fraud is doing to us it will destroy us
+20:16 
+
+20:16 instead
+20:18 
+
+20:18 how do you find fraud and stem losses to
+20:21 
+
+20:21 stabilize the business
+20:23 
+
+20:23 this was PayPal's next Crucible moment
+20:25 
+
+20:25 and solving it required all hands on
+20:27 
+
+20:27 deck every engineer was redeployed to
+20:29 
+
+20:29 fend off the fraudsters
+20:32 
+
+20:32 there is a photo that an employee shared
+20:35 
+
+20:35 with me and when you look at the photo
+20:38 
+
+20:38 there's a kind of uh room it's got a
+20:40 
+
+20:40 glass window on one side and stacked
+20:42 
+
+20:42 next to this glass window are a whole
+20:44 
+
+20:44 bunch of cardboard boxes
+20:46 
+
+20:46 and then you see something you wouldn't
+20:48 
+
+20:48 expect which is you see a human being
+20:50 
+
+20:50 sleeping on top of the cardboard boxes
+20:53 
+
+20:53 it's Max levchen and he is there
+20:55 
+
+20:55 catching you know precious hours of
+20:57 
+
+20:57 sleep or minutes of sleep while he is
+21:00 
+
+21:00 mid all of these fights he's made the
+21:02 
+
+21:02 fraud fight he's amid the growth of the
+21:04 
+
+21:04 company and he is sleeping on top of
+21:06 
+
+21:06 cardboard boxes in the office
+21:09 
+
+21:09 look in a startup everybody
+21:14 
+
+21:14 is always burning the midnight hours and
+21:16 
+
+21:16 the work intensity of PayPal was immense
+21:19 
+
+21:19 for the people involved with PayPal that
+21:22 
+
+21:22 was what they lived and breathed 24
+21:24 
+
+21:24 hours a day
+21:25 
+
+21:25 as PayPal Engineers became increasingly
+21:27 
+
+21:27 immersed in fighting fraud something
+21:30 
+
+21:30 strange happened
+21:31 
+
+21:31 the team at PayPal
+21:33 
+
+21:33 is actually communicating with its
+21:36 
+
+21:36 fraudsters
+21:38 
+
+21:38 one of the people who was creating these
+21:41 
+
+21:41 fragile accounts on PayPal
+21:42 
+
+21:42 somehow figure out my email address and
+21:45 
+
+21:45 it would email me summaries of his
+21:47 
+
+21:47 takedowns of my latest idea so before we
+21:50 
+
+21:50 got to uh the final version I would get
+21:52 
+
+21:52 half a dozen of emails per week from
+21:54 
+
+21:54 this person somewhere in Eastern Europe
+21:56 
+
+21:56 saying aha you try to
+21:59 
+
+21:59 rename form names in HTML and confuse me
+22:03 
+
+22:03 my scripts are not confused I create 20
+22:05 
+
+22:05 000 accounts today so this is sort of
+22:07 
+
+22:07 menacing emails it would be like a bank
+22:10 
+
+22:10 executive talking to a bank robber as
+22:12 
+
+22:12 the robbery is happening uh or or
+22:15 
+
+22:15 someone breaks into your house and you
+22:17 
+
+22:17 have a delightful conversation before
+22:18 
+
+22:18 they steal something from you it's
+22:21 
+
+22:21 born in part of the background of a
+22:24 
+
+22:24 group of fraudsters who are based in
+22:27 
+
+22:27 Russia and the background of the company
+22:30 
+
+22:30 CTO Max levchen who was born in Ukraine
+22:33 
+
+22:33 and because Max is able to communicate
+22:36 
+
+22:36 in the fraudster's native tongue he is
+22:40 
+
+22:40 sleuthing he is visiting the forums
+22:43 
+
+22:43 where they spend time and share tips
+22:45 
+
+22:45 about tradecraft he's in these little
+22:47 
+
+22:47 chat rooms and kind of picking up Intel
+22:50 
+
+22:50 about PayPal and what people are saying
+22:52 
+
+22:52 about this company PayPal
+22:54 
+
+22:54 finally late one night we had a
+22:58 
+
+22:58 breakthrough
+22:59 
+
+22:59 my name is Dave gaussberg and I'm one of
+23:02 
+
+23:02 the creators of the gaussback love chin
+23:04 
+
+23:04 test
+23:05 
+
+23:05 when PayPal was being defrauded in
+23:08 
+
+23:08 droves one of the kinds of fraud they
+23:10 
+
+23:10 faced were from computers Bots that were
+23:13 
+
+23:13 basically creating fake accounts by the
+23:16 
+
+23:16 hundreds so that they could fleece the
+23:18 
+
+23:18 company for its bonus payments
+23:20 
+
+23:20 remember this very very vividly I walked
+23:22 
+
+23:22 out onto the uh I was in a cubicle right
+23:25 
+
+23:25 next to dozens of cubicles of our
+23:26 
+
+23:26 engineering team David gauzbek was sort
+23:28 
+
+23:28 of sitting down writing code was late on
+23:30 
+
+23:30 a Friday night and I said we have all
+23:33 
+
+23:33 these horrible human beings writing
+23:35 
+
+23:35 scripts to sign up for PayPal I want to
+23:38 
+
+23:38 make them do a puzzle every time they go
+23:42 
+
+23:42 for a sign up but I make it too
+23:44 
+
+23:44 difficult you will slow down the sign
+23:46 
+
+23:46 ups and it would be bad for user
+23:48 
+
+23:48 conversion or user signups if you make
+23:50 
+
+23:50 it too easy you will automate it or the
+23:52 
+
+23:53 bad guys will automate it and it
+23:54 
+
+23:54 wouldn't work thinking back to computer
+23:56 
+
+23:56 vision classes from college the idea
+23:59 
+
+23:59 that I had one night was well
+24:02 
+
+24:02 really let's just go for any task not
+24:05 
+
+24:05 related to our site that is easy for
+24:08 
+
+24:08 humans and hard for computers and
+24:11 
+
+24:11 reading text is one of the classic
+24:15 
+
+24:15 problems for that and I thought well why
+24:19 
+
+24:19 don't we just stick that into our site
+24:21 
+
+24:21 gaussberg looked up for his computer and
+24:23 
+
+24:23 said optical character recognition OCR
+24:26 
+
+24:26 that's a squiggly name is still very
+24:29 
+
+24:29 easy to read for human but computers
+24:31 
+
+24:31 struggle with OCR and those through a
+24:34 
+
+24:34 holy crap moment my next move actually
+24:35 
+
+24:35 was to sprint out to Fry's Electronics
+24:38 
+
+24:38 now sadly departed where I bought every
+24:41 
+
+24:41 boxed version of OCR software available
+24:44 
+
+24:44 in the markets to test my squiggly line
+24:47 
+
+24:47 introduction code to make sure that
+24:50 
+
+24:50 computers impact could not OCR
+24:52 
+
+24:52 we figured
+24:54 
+
+24:54 this will be a new arms race
+24:56 
+
+24:56 it's not an impossible problem to solve
+24:58 
+
+24:58 but it makes it a lot harder if you've
+25:01 
+
+25:01 ever had to look at a series of squiggly
+25:02 
+
+25:02 letters and retype them to prove that
+25:04 
+
+25:04 you're a human not a robot you can thank
+25:07 
+
+25:07 the PayPal team
+25:08 
+
+25:08 that's the gaspic lifting test now
+25:11 
+
+25:11 considered one of the earliest uses and
+25:13 
+
+25:13 first commercial application of capture
+25:16 
+
+25:16 I stayed up for three days writing code
+25:19 
+
+25:19 with no sleep trying to uh bring it to
+25:21 
+
+25:21 the side as quickly as possible there is
+25:23 
+
+25:23 a 48-hour coding crazy you know
+25:26 
+
+25:26 caffeine-filled marathon in which David
+25:29 
+
+25:29 and Max build this technology to defeat
+25:32 
+
+25:32 these fraudsters and it just sort of
+25:34 
+
+25:34 happens over a weekend and it is intense
+25:36 
+
+25:36 and at the very end of it when the
+25:39 
+
+25:39 technology is deployed a bedraggled Max
+25:42 
+
+25:42 leptin takes a big speaker and hooks it
+25:45 
+
+25:45 up to his computer and he turns on Ride
+25:48 
+
+25:48 of the Valkyries as a celebratory anthem
+25:50 
+
+25:50 for having developed this technology and
+25:52 
+
+25:52 defeated the Bots or at least some share
+25:54 
+
+25:54 of the Bots
+25:55 
+
+25:55 it had the exact desired effects of the
+25:57 
+
+25:57 year
+25:58 
+
+25:58 real-time account creation fell off by
+26:00 
+
+26:00 50 which we knew half of the accounts
+26:03 
+
+26:03 were being created were actually
+26:04 
+
+26:04 fraudulent the
+26:06 
+
+26:06 easy automated high volume attacks just
+26:09 
+
+26:09 instantly shut off and Igor who had been
+26:13 
+
+26:13 taunting Max
+26:16 
+
+26:16 and sending these emails about how he
+26:19 
+
+26:19 would always win and he was smarter than
+26:22 
+
+26:22 our development team and all of this the
+26:24 
+
+26:24 moment of uh extreme Triumph for me at
+26:27 
+
+26:27 the time was when we I got an email from
+26:29 
+
+26:29 him basically saying Fu and I knew it
+26:32 
+
+26:32 worked because he couldn't have broken
+26:34 
+
+26:34 it by that
+26:36 
+
+26:36 the PayPal team went on to build pattern
+26:38 
+
+26:38 recognition tools to identify and stop
+26:40 
+
+26:40 laundering operations
+26:41 
+
+26:41 we developed a system to verify a user's
+26:44 
+
+26:44 bank account to make sure the person who
+26:46 
+
+26:46 is transferring money in or out was
+26:48 
+
+26:48 really the owner another breakthrough
+26:50 
+
+26:50 invention
+26:52 
+
+26:52 Sanjay bhargava who was recruited by
+26:54 
+
+26:54 Elon to work at x.com who was on a walk
+26:57 
+
+26:57 with a colleague Todd Pearson they were
+26:59 
+
+26:59 noodling on this problem of how do you
+27:01 
+
+27:01 verify and authenticate bank accounts
+27:03 
+
+27:03 and Sanjay said well what if we give
+27:05 
+
+27:05 people two deposits and then it's a code
+27:07 
+
+27:07 it's a four digit code
+27:09 
+
+27:09 so you would have two transfers into
+27:11 
+
+27:11 your bank account let's say for 12 and
+27:14 
+
+27:14 35 cents and then you'd be asked to
+27:16 
+
+27:16 enter it back in at the PayPal site you
+27:19 
+
+27:19 would basically have to type in 1235
+27:21 
+
+27:21 kind of similar to the four digit PIN
+27:23 
+
+27:23 codes people get all the time now with
+27:25 
+
+27:25 the with SMS verification the person
+27:27 
+
+27:27 standing next to him while they're on
+27:29 
+
+27:29 this walk for coffee Todd looks at
+27:31 
+
+27:31 Sanjay and says you are a genius and
+27:33 
+
+27:33 they get back to the office and they
+27:35 
+
+27:35 start building that technology right
+27:37 
+
+27:37 away the way that David Sachs who is the
+27:39 
+
+27:39 head of product describes the launch of
+27:41 
+
+27:41 random deposit he says it's an idea
+27:44 
+
+27:44 that's like velcro it's so good you wish
+27:47 
+
+27:47 you would have thought of it yourself
+27:48 
+
+27:48 it's one of or two of many that we have
+27:51 
+
+27:51 to come up with in a hurry and without
+27:54 
+
+27:54 mention go literally hundreds and
+27:56 
+
+27:56 hundreds of ideas that we had come up
+27:57 
+
+27:57 with implemented only to find out that
+28:00 
+
+28:00 they didn't work with the implementation
+28:02 
+
+28:02 of these tools gradually we saw our
+28:04 
+
+28:04 efforts to curb fraud payoff each month
+28:07 
+
+28:07 we lost less and less money to fraud
+28:09 
+
+28:09 towards the end of 2000 I thought you
+28:12 
+
+28:12 know we might just make it
+28:14 
+
+28:14 the bookends of the the miracle
+28:17 
+
+28:17 measure of fraud at PayPal was we were
+28:20 
+
+28:20 probably over one percent of old
+28:22 
+
+28:22 transaction processed were fraudulent
+28:25 
+
+28:25 which by any measure in any stretch of
+28:28 
+
+28:28 imagination is a horrific number at the
+28:31 
+
+28:31 time we went public I think we were
+28:33 
+
+28:33 the gross margin on each transaction was
+28:36 
+
+28:36 probably
+28:37 
+
+28:37 65-75 basis points or 0.6 percent when I
+28:40 
+
+28:40 was leaving PayPal
+28:42 
+
+28:42 fraud numbers
+28:43 
+
+28:43 were down to about 19 basis points 0.19
+28:47 
+
+28:47 and um
+28:49 
+
+28:49 at the time I thought that was the
+28:51 
+
+28:51 theoretical minimum we really could not
+28:53 
+
+28:53 do any better
+28:55 
+
+28:55 I think one of the more remarkable
+28:57 
+
+28:57 things about PayPal's fraud fighting
+29:01 
+
+29:01 techniques and tools is that a lot of
+29:03 
+
+29:03 those tools are still in wide use 20
+29:07 
+
+29:07 years later and almost nobody recognizes
+29:10 
+
+29:10 where they originated and so you have
+29:12 
+
+29:12 things like random deposit you have
+29:14 
+
+29:14 things like capture tests that we use at
+29:17 
+
+29:17 this point unthinkingly we don't even
+29:19 
+
+29:19 consider it and those all came about in
+29:23 
+
+29:23 the effort of this one tiny Silicon
+29:25 
+
+29:25 Valley startup one of Peter's favorite
+29:27 
+
+29:27 Expressions is this is an experiment you
+29:29 
+
+29:29 can only run once but it's very hard to
+29:32 
+
+29:32 tell whether we could have or should
+29:34 
+
+29:34 have done anything particularly
+29:35 
+
+29:35 differently relative to what eventually
+29:38 
+
+29:38 ended up happening maybe if we had
+29:41 
+
+29:41 prevented fraud really successfully from
+29:44 
+
+29:44 Day Zero we wouldn't have been able to
+29:46 
+
+29:46 grow as quickly and as well as we did
+29:48 
+
+29:48 and so maybe we're in fact better off
+29:49 
+
+29:49 having a having gone through this sort
+29:52 
+
+29:52 of a moment of near death by a thousand
+29:55 
+
+29:55 paper cuts by by these bad frosters
+29:59 
+
+29:59 perhaps we could have done better by
+30:02 
+
+30:02 telling everyone you know what you need
+30:03 
+
+30:03 to fax us your driver's license and uh
+30:05 
+
+30:05 you know show up to our office and and
+30:07 
+
+30:07 log in in person to prove that you're
+30:10 
+
+30:10 who you say you are really hard to tell
+30:12 
+
+30:12 I think
+30:13 
+
+30:13 the general pattern of lean in
+30:18 
+
+30:18 get bruised but not killed by adversity
+30:22 
+
+30:22 figure out how to get out of it do it
+30:25 
+
+30:25 again is a pretty good formula
+30:28 
+
+30:28 for startups I think it becomes harder
+30:30 
+
+30:30 and harder to do when you have a lot to
+30:31 
+
+30:31 lose but we were at the time probably
+30:34 
+
+30:34 still very close to failure in just all
+30:37 
+
+30:37 kinds of other ways and the fact that we
+30:39 
+
+30:39 grew very quickly and we had lots and
+30:41 
+
+30:41 lots of very happy legitimate consumers
+30:45 
+
+30:45 pushed us on to invent a way to to
+30:48 
+
+30:48 remove fraud and bite it uh at the time
+30:52 
+
+30:52 we were celebrating first survival and
+30:55 
+
+30:55 then ultimately uh success
+30:58 
+
+30:58 throughout 2001 PayPal continued to gain
+31:00 
+
+31:00 momentum and we gained confidence in the
+31:03 
+
+31:03 quality of our business
+31:04 
+
+31:04 to give you a sense of our growth we
+31:06 
+
+31:06 went from roughly 8 million in Revenue
+31:07 
+
+31:07 in Q4 of 2000 to nearly 50 million one
+31:10 
+
+31:10 year later while shrinking our fraud
+31:13 
+
+31:13 loss rate
+31:14 
+
+31:14 but with this growth came friction with
+31:17 
+
+31:17 eBay our presence on the site became a
+31:20 
+
+31:20 bigger and bigger issue
+31:22 
+
+31:22 a tension at the PayPal EB intersection
+31:27 
+
+31:27 was that
+31:28 
+
+31:28 on the one hand PayPal was the most
+31:32 
+
+31:32 popular fastest growing most convenient
+31:35 
+
+31:35 way to pay for purchases on eBay on the
+31:39 
+
+31:39 other hand it was the only part of eBay
+31:42 
+
+31:42 experience that eBay didn't own they did
+31:44 
+
+31:44 own a competing product called
+31:46 
+
+31:46 buildpoint which they thought should
+31:48 
+
+31:48 have killed PayPal and made it or at
+31:50 
+
+31:50 least made it irrelevant a very long
+31:52 
+
+31:52 time ago and yet somehow they failed to
+31:53 
+
+31:53 do so
+31:55 
+
+31:55 and so as told from their side or their
+31:59 
+
+31:59 point of view PayPal was throwing a
+32:01 
+
+32:01 party in their backyard and charging
+32:03 
+
+32:03 attendance and not paying any rent for
+32:06 
+
+32:06 it and so we were told by their execs
+32:09 
+
+32:09 time and time again that hey this will
+32:12 
+
+32:12 not stand will eventually build
+32:13 
+
+32:14 something that competes with you and
+32:15 
+
+32:15 make you irrelevant
+32:17 
+
+32:17 over the course of three years eBay does
+32:22 
+
+32:22 everything in its power to gum up the
+32:25 
+
+32:25 works for PayPal and PayPal does
+32:27 
+
+32:27 everything in its power to stay alive on
+32:31 
+
+32:31 eBay because it's the place that's
+32:33 
+
+32:33 providing at that point you know
+32:34 
+
+32:34 sometimes upwards of 90 percent of its
+32:36 
+
+32:36 transaction volume
+32:38 
+
+32:38 eBay would go out of their way to do
+32:41 
+
+32:41 changes to code on eBay's website that
+32:44 
+
+32:44 would make elements of PayPal stop
+32:47 
+
+32:47 working and it would send the PayPal
+32:49 
+
+32:49 team into these kind of like peroxisms
+32:51 
+
+32:51 of like action and anger
+32:55 
+
+32:55 we knew that eBay had pulled together a
+32:57 
+
+32:57 war room and that they were trying to
+32:59 
+
+32:59 figure out how to beat PayPal they were
+33:01 
+
+33:01 desperately trying to figure out how to
+33:02 
+
+33:02 make their own payment system work I
+33:03 
+
+33:03 mean it's completely rational for them
+33:04 
+
+33:05 to do that
+33:06 
+
+33:06 and at some point they maybe would get
+33:08 
+
+33:08 it right and if they did get it right
+33:10 
+
+33:10 two-thirds of our business was at risk
+33:14 
+
+33:14 they would send legal notices they would
+33:17 
+
+33:17 send menacing emails they would do code
+33:19 
+
+33:19 insertions they would often just cut
+33:22 
+
+33:22 PayPal out of key product upgrades there
+33:24 
+
+33:24 was this kind of sense that there was
+33:27 
+
+33:27 this big looming existential threat
+33:29 
+
+33:29 which was the decision at any moment by
+33:33 
+
+33:33 eBay to shut PayPal down David sacks had
+33:36 
+
+33:36 this phrase which is you know we went to
+33:37 
+
+33:37 work every day feeling as though the
+33:39 
+
+33:39 sort of Damocles was hanging over our
+33:41 
+
+33:41 head and it was a very very stressful uh
+33:44 
+
+33:44 life for us
+33:46 
+
+33:46 throughout the time of these sort of uh
+33:49 
+
+33:49 eBay Wars their management team would
+33:51 
+
+33:51 approaches and say look ultimately you
+33:53 
+
+33:53 guys understand that we have to come
+33:55 
+
+33:55 together you are an essential piece of
+33:57 
+
+33:57 our puzzle you also just don't really
+34:00 
+
+34:00 exist without us we are your largest
+34:04 
+
+34:04 payment
+34:05 
+
+34:05 platform source to somewhere somehow
+34:08 
+
+34:08 we're going to merge we're going to be
+34:09 
+
+34:09 one company we had multiple
+34:11 
+
+34:11 conversations with eBay which were you
+34:15 
+
+34:15 know conducted with both a carrot and a
+34:18 
+
+34:18 stick and the carrot being some sort of
+34:21 
+
+34:21 acquisition offer the stick being all
+34:23 
+
+34:23 sorts of threats about how difficult
+34:26 
+
+34:26 they were going to make it for PayPal as
+34:28 
+
+34:28 a standalone company how Meg Whitman was
+34:31 
+
+34:31 going to ensure that the company PayPal
+34:33 
+
+34:33 was never ever going to be able to be a
+34:37 
+
+34:37 public company because she'd be sure
+34:38 
+
+34:38 that eBay was writ large in the risk
+34:41 
+
+34:41 section of the prospectus and she would
+34:44 
+
+34:44 ensure that we couldn't become a public
+34:46 
+
+34:47 company and you know this went on and I
+34:50 
+
+34:50 I like Mega and admire her but you know
+34:53 
+
+34:53 it's the typical big company posturing
+34:55 
+
+34:55 trying to bully and intimidate a small
+34:57 
+
+34:57 company
+34:59 
+
+34:59 they would come in and say look we think
+35:01 
+
+35:02 we should buy you
+35:03 
+
+35:03 here's a number and the number would
+35:05 
+
+35:05 inevitably be something that we thought
+35:09 
+
+35:09 we were worth a year ago and so it was
+35:12 
+
+35:12 always always perceived as a uh kind of
+35:15 
+
+35:15 insultingly low offer we passed on
+35:18 
+
+35:18 eBay's offers and meanwhile despite
+35:21 
+
+35:21 mixed threads began to look towards an
+35:23 
+
+35:23 IPO there were a few reasons for this
+35:26 
+
+35:26 going public would provide access to
+35:28 
+
+35:28 Capital it would legitimize the company
+35:30 
+
+35:30 and it would offer us a clear
+35:32 
+
+35:32 independent Market valuation
+35:35 
+
+35:35 in September 2001 we filed to go public
+35:38 
+
+35:38 that Christmas just weeks away from our
+35:41 
+
+35:41 IPO eBay once again complicated things
+35:46 
+
+35:46 so eBay came in and said hey here's one
+35:49 
+
+35:49 final offer we'll never do any better
+35:51 
+
+35:51 than this you guys should not go public
+35:53 
+
+35:53 you should sell to us
+35:55 
+
+35:55 eBay's offer was close to a billion
+35:58 
+
+35:58 dollars
+35:60 
+
+35:60 their previous offers hadn't been
+36:02 
+
+36:02 anywhere close to this nothing high
+36:04 
+
+36:04 enough for us to even consider
+36:06 
+
+36:06 but this one caught our attention
+36:09 
+
+36:09 its attractiveness put us at a
+36:11 
+
+36:11 Crossroads squarely in the middle of a
+36:13 
+
+36:14 crucible moment should we take the offer
+36:16 
+
+36:16 and end the battle with eBay
+36:19 
+
+36:19 or should we bet on the company's
+36:20 
+
+36:20 ability to stand solo and go public
+36:23 
+
+36:23 [Music]
+36:25 
+
+36:26 so every time eBay made an offer one of
+36:29 
+
+36:29 my kind of standard operating procedures
+36:30 
+
+36:30 was to sit down with a senior management
+36:31 
+
+36:31 team and basically say hey these guys
+36:34 
+
+36:34 are here there's a stack of money on the
+36:36 
+
+36:36 table are you prepared to continue
+36:37 
+
+36:37 fighting or would you like to sort of
+36:40 
+
+36:40 punch out and cash in the four years of
+36:42 
+
+36:42 Blood Sweat and Tears
+36:44 
+
+36:44 and every single time the team basically
+36:46 
+
+36:46 said now let's keep fighting like we we
+36:48 
+
+36:48 can we can keep doing this this is
+36:50 
+
+36:50 actually you know some sort of a painful
+36:53 
+
+36:53 fun that we're all going through here
+36:55 
+
+36:55 certainly wore the team down in a fairly
+36:58 
+
+36:58 meaningful way there was a pretty
+37:01 
+
+37:01 vigorous back and forth a debate among
+37:04 
+
+37:04 team leadership about what the right
+37:06 
+
+37:06 thing was to do
+37:07 
+
+37:07 to some extent we as a young team uh
+37:10 
+
+37:10 left the prospect of being able to take
+37:12 
+
+37:12 a company public you know how many times
+37:14 
+
+37:14 in your life do you get to be part of
+37:16 
+
+37:16 building a business from scratch and
+37:18 
+
+37:18 successfully seeing it through to an IPO
+37:20 
+
+37:20 and so there was something alluring
+37:22 
+
+37:22 about that but we also felt a sense of
+37:25 
+
+37:25 responsibility to our team because you
+37:27 
+
+37:27 don't go public for vanity reasons you
+37:28 
+
+37:29 want to do it because you're a steward
+37:30 
+
+37:30 of the business and you look after the
+37:31 
+
+37:31 financial interest of all your
+37:32 
+
+37:32 shareholders and all the employees
+37:35 
+
+37:35 Peter had this fantastic phrase which
+37:37 
+
+37:37 was uh just because somebody shooting at
+37:40 
+
+37:40 you and they don't succeed in hitting
+37:42 
+
+37:42 you doesn't mean that you're Bulletproof
+37:44 
+
+37:44 it may just mean that they're poor shot
+37:46 
+
+37:46 but if they can keep shooting at some
+37:48 
+
+37:48 point even a stray bullet can do serious
+37:50 
+
+37:50 damage
+37:52 
+
+37:52 Peter was very inclined to make the sale
+37:54 
+
+37:54 I did not want to do that and I think
+37:58 
+
+37:58 you know if Sequoia can claim a
+38:00 
+
+38:00 contribution to PayPal it's that we were
+38:05 
+
+38:05 able to put off and postpone the sail
+38:09 
+
+38:09 through as as long as possible
+38:14 
+
+38:14 PayPal bet on itself we turned on eBay's
+38:17 
+
+38:17 acquisition offer and went public in
+38:20 
+
+38:20 February of 2002. there were some who
+38:23 
+
+38:23 took eBay at its word that its
+38:26 
+
+38:26 acquisition offered just before we
+38:27 
+
+38:27 decided to IPO was its last
+38:30 
+
+38:30 and that our battle with them would drag
+38:32 
+
+38:32 on
+38:33 
+
+38:33 certainly PayPal going public didn't
+38:35 
+
+38:35 stop eBay from continuing to make our
+38:37 
+
+38:37 lives miserable
+38:39 
+
+38:39 but then in the summer of 2002 over the
+38:43 
+
+38:43 July 4th weekend eBay approached us yet
+38:46 
+
+38:46 again
+38:47 
+
+38:47 I remember one weekend afternoon where
+38:51 
+
+38:51 Peter and I were invited down to Meg's
+38:53 
+
+38:53 home in Atherton and we sat in her
+38:56 
+
+38:56 kitchen and she was negotiating with us
+38:59 
+
+38:59 this time the offer was 1.5 billion now
+39:03 
+
+39:03 it's easy for these numbers to seem
+39:05 
+
+39:05 small as we're surrounded by today's
+39:07 
+
+39:07 Tech valuations
+39:08 
+
+39:08 but take yourself back 20 years in 2002
+39:12 
+
+39:12 we didn't have Broadband in America the
+39:15 
+
+39:15 majority of people on the internet were
+39:17 
+
+39:17 on dialab smartphones didn't exist the
+39:20 
+
+39:20 total number of people on the planet
+39:22 
+
+39:22 that had access to the internet was
+39:23 
+
+39:23 about 250 million not the 4 billion we
+39:27 
+
+39:27 have today this was a tremendous outcome
+39:30 
+
+39:30 because the company PayPal was public it
+39:33 
+
+39:33 was a lot easier for them to understand
+39:35 
+
+39:35 what the market perceived to be the
+39:37 
+
+39:37 value of the company and so as a result
+39:39 
+
+39:39 there was no longer this tense and 10
+39:43 
+
+39:43 years conversation about price it was
+39:44 
+
+39:44 just a matter of all the public markets
+39:46 
+
+39:46 are valuing you at X here's what we want
+39:48 
+
+39:48 to do and you can decide whether it
+39:50 
+
+39:50 makes sense to you or not again we sat
+39:52 
+
+39:52 down to think things through part of
+39:54 
+
+39:54 this was taking stock of our team and
+39:56 
+
+39:56 our stamina and thinking long and hard
+39:59 
+
+39:59 about what we wanted our future to be
+40:01 
+
+40:02 and so right after we went public I had
+40:04 
+
+40:04 the same conversation with my team and
+40:06 
+
+40:06 they basically said look we're very
+40:07 
+
+40:07 tired but we'll keep fighting and then I
+40:09 
+
+40:09 once again sat down with the management
+40:12 
+
+40:12 team and said hey this is a moment to
+40:14 
+
+40:14 decide
+40:15 
+
+40:15 what enters into the conversation
+40:18 
+
+40:18 is they feel as though they are simply
+40:20 
+
+40:20 fighting for their survival and they are
+40:22 
+
+40:22 not creating new things anymore that it
+40:24 
+
+40:24 gets a little tiresome after a while to
+40:26 
+
+40:26 Simply have to try to stay alive to like
+40:28 
+
+40:28 work all night just so eBay doesn't shut
+40:29 
+
+40:29 you down the team is simply exhausted
+40:32 
+
+40:32 we've checked the checkbox of you know
+40:35 
+
+40:35 initial public offering we're now a real
+40:36 
+
+40:36 grown-up company we can keep doing this
+40:39 
+
+40:39 independently or we can accept the fact
+40:41 
+
+40:41 that we are ultimately an important tool
+40:44 
+
+40:44 within eBay and they are a huge
+40:46 
+
+40:46 percentage of our ecosystem
+40:47 
+
+40:47 I had
+40:49 
+
+40:49 disagreements all the way up to the
+40:51 
+
+40:51 eventual
+40:53 
+
+40:53 um sale of the business I thought it was
+40:56 
+
+40:56 I thought we had a huge opportunity
+40:58 
+
+40:58 ahead of us they were going to lose
+40:60 
+
+41:00 control of their Destiny they were going
+41:02 
+
+41:02 to be very frustrated you can live until
+41:05 
+
+41:05 you're 120 and you will never see a
+41:08 
+
+41:08 business opportunity like PayPal
+41:11 
+
+41:11 and I was right
+41:12 
+
+41:13 [Music]
+41:16 
+
+41:16 we formally announced the acquisition on
+41:19 
+
+41:19 Monday morning right after the weekend
+41:21 
+
+41:21 and the final acquisition offer was at a
+41:24 
+
+41:24 1.5 billion acquisition price and the
+41:27 
+
+41:27 acquisition finally closed in October
+41:29 
+
+41:29 2002.
+41:30 
+
+41:30 it was bittersweet it was a victory but
+41:33 
+
+41:33 it was also
+41:34 
+
+41:35 being bought by the enemy it was
+41:38 
+
+41:38 definitely a step away from being this
+41:41 
+
+41:41 cohesive team in a smaller office and it
+41:45 
+
+41:45 felt like leaving part of PayPal's
+41:49 
+
+41:49 history behind
+41:51 
+
+41:51 [Music]
+41:56 
+
+41:56 it was very hard to suddenly switch
+41:58 
+
+41:58 Legions to this new owner of the
+42:00 
+
+42:00 business Peter left Reed Hoffman left
+42:03 
+
+42:03 David Sachs left and so max and I were
+42:07 
+
+42:07 probably two the last senior management
+42:09 
+
+42:09 team members left at the company and
+42:12 
+
+42:12 and we sort of lost the cohesion that we
+42:14 
+
+42:14 had as a management team and we're
+42:15 
+
+42:15 starting to wonder about what we might
+42:17 
+
+42:17 do next and at that point Michael Moritz
+42:19 
+
+42:19 from Sequoia called and asked whether
+42:20 
+
+42:20 I'd consider a role at Sequoia I stayed
+42:23 
+
+42:23 on through the first earnings release
+42:24 
+
+42:24 for PayPal in early 2003 and at that
+42:27 
+
+42:27 point I joined Sequoia you know I think
+42:30 
+
+42:30 ultimately
+42:32 
+
+42:32 Acquisitions are
+42:34 
+
+42:34 one of three things
+42:36 
+
+42:36 they're either exits or maybe put more
+42:40 
+
+42:40 bluntly
+42:41 
+
+42:41 rescues and a lot of companies don't
+42:44 
+
+42:44 want to admit it to themselves but they
+42:46 
+
+42:47 are in need of a rescue I'm I'm
+42:48 
+
+42:48 internally familiar with the the hard
+42:50 
+
+42:50 choice of saying I thought this was
+42:52 
+
+42:52 going to the moon but it looks like it
+42:53 
+
+42:53 will probably uh tap out just here on
+42:56 
+
+42:56 Earth
+42:57 
+
+42:57 the other Morse or happier side of M A
+43:00 
+
+43:00 is kind of a one plus one equals five
+43:03 
+
+43:03 type situations where you really have
+43:05 
+
+43:05 something and someone else has another
+43:06 
+
+43:06 building block to what you're creating
+43:09 
+
+43:09 one enables the other and there's a
+43:12 
+
+43:12 whole sort of a very large component in
+43:14 
+
+43:14 between where you've lost your way and
+43:17 
+
+43:17 you don't know what happens next and
+43:18 
+
+43:18 it's not you don't need to uh you don't
+43:20 
+
+43:20 need to die but uh you you can't quite
+43:22 
+
+43:22 figure out how to live sort of a Thing
+43:24 
+
+43:24 If a company was a human and I think
+43:26 
+
+43:26 those are the hardest ones
+43:28 
+
+43:28 there's been a great deal written about
+43:30 
+
+43:30 what's known as the PayPal Mafia but
+43:33 
+
+43:33 maybe what's more appropriately referred
+43:34 
+
+43:34 to as the PayPal alumni group and a
+43:36 
+
+43:36 bridge list is almost hard to do but if
+43:37 
+
+43:37 you were looking at the creation of
+43:39 
+
+43:39 YouTube Yelp Tesla SpaceX palantir
+43:41 
+
+43:41 affirm the first money into Facebook
+43:43 
+
+43:44 some of the earliest money into every
+43:45 
+
+43:45 social network you know all of it traces
+43:48 
+
+43:48 back to this tiny startup that was
+43:51 
+
+43:51 created in late 1998 and is sold to eBay
+43:54 
+
+43:54 in 2002. there's always a question of
+43:57 
+
+43:57 nature versus nurture was it just that
+43:60 
+
+43:60 this company attracted really really
+44:01 
+
+44:01 remarkable people who would have went on
+44:03 
+
+44:03 to build YouTube anyway or did they take
+44:05 
+
+44:05 something from their experience at
+44:07 
+
+44:07 PayPal that helped them build build
+44:08 
+
+44:08 YouTube you know or Yelp or any of the
+44:10 
+
+44:10 Yammer or palantir Etc and I think the
+44:13 
+
+44:13 honest answer is a bit of both they also
+44:15 
+
+44:15 went through a series of experiences
+44:16 
+
+44:16 building a startup during one of the
+44:18 
+
+44:18 hardest times I think in Silicon Valley
+44:20 
+
+44:20 history to ever build a startup and you
+44:22 
+
+44:23 couldn't help but be imprinted by those
+44:24 
+
+44:24 lessons if you were working there at
+44:26 
+
+44:26 that time
+44:28 
+
+44:28 when they started their respective
+44:30 
+
+44:30 companies Yelp YouTube some of the
+44:32 
+
+44:32 others LinkedIn they understood they had
+44:36 
+
+44:36 already had experience in a setting
+44:39 
+
+44:39 where they had lived first hand with the
+44:44 
+
+44:44 challenges complexities
+44:47 
+
+44:47 opportunities risks and excitement of uh
+44:53 
+
+44:53 building a very high growth successful
+44:55 
+
+44:55 business
+44:57 
+
+44:57 and one of the lessons from my people
+44:58 
+
+44:58 experiences uh not underestimating what
+45:02 
+
+45:02 can happen in the long run one of the
+45:04 
+
+45:04 things we talk about at Sequoia is what
+45:06 
+
+45:06 is possible
+45:08 
+
+45:08 what is the imagination and honestly
+45:10 
+
+45:10 when I think about my biggest mistakes
+45:11 
+
+45:11 in my professional career it's been a
+45:13 
+
+45:13 failure of imagination
+45:14 
+
+45:14 and to see how PayPal flourished in the
+45:18 
+
+45:18 long run and how successful it's been
+45:20 
+
+45:20 as somebody who is Young and and didn't
+45:23 
+
+45:23 have that much experience I didn't fully
+45:25 
+
+45:25 appreciate the company's potential
+45:27 
+
+45:27 there's a famous adage known as Amara's
+45:30 
+
+45:30 law which states that we tend to
+45:32 
+
+45:32 overestimate the effect of a technology
+45:34 
+
+45:34 in the short run and underestimate the
+45:36 
+
+45:36 effect in the long run living to look at
+45:39 
+
+45:39 new technologies whether it's the
+45:41 
+
+45:41 internet Cloud mobile AI
+45:43 
+
+45:43 through the lens of Amara's law is part
+45:45 
+
+45:45 of being a successful founder or
+45:48 
+
+45:48 investor
+45:50 
+
+45:50 in 2015 PayPal split from eBay embarking
+45:54 
+
+45:54 on a brand new chapter for the company
+45:56 
+
+45:56 once again betting on itself
+45:60 
+
+45:60 so far it's paid off but the story
+46:02 
+
+46:02 continues
+46:03 
+
+46:03 [Music]
+46:07 
+
+46:07 this has been Crucible moments a podcast
+46:09 
+
+46:09 from Sequoia capital
+46:11 
+
+46:11 [Music]
+46:13 
+
+46:13 join us next time as we hear from Brian
+46:15 
+
+46:15 chesky about how Airbnb built and then
+46:18 
+
+46:18 had to rebuild user trust launched a
+46:21 
+
+46:21 ground war against the Clone and led its
+46:24 
+
+46:24 Community through a global shutdown that
+46:26 
+
+46:26 brought travel to our halt
+46:31 
+
+46:31 Crucible moments is produced by the Epic
+46:33 
+
+46:33 stories and Vox podcast teams along with
+46:36 
+
+46:36 Sequoia capital
+46:38 
+
+46:38 special thanks go out to Max leptin
+46:40 
+
+46:40 Jimmy Sony Michael Moritz and Dave
+46:43 
+
+46:43 gaussback for telling their stories
+46:44 
+
+46:44 [Music]

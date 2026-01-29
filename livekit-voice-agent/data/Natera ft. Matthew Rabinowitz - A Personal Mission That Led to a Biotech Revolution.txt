@@ -1,0 +1,3763 @@
+00:02 I think ever since I came to the states
+00:04 
+
+00:04 I was kind of invincible you know I'd
+00:06 
+
+00:06 made money lost money relationships came
+00:08 
+
+00:08 and went and no matter what happened I
+00:10 
+
+00:10 was just riding the wave and nothing
+00:11 
+
+00:11 really broke me and this just broke me
+00:14 
+
+00:14 and I think the engineering me sort of
+00:16 
+
+00:16 took over and I thought this is a
+00:18 
+
+00:18 problem that I have to have to
+00:23 
+
+00:23 solve welcome to Crucible moments a
+00:26 
+
+00:26 podcast about the critical Crossroads
+00:28 
+
+00:28 and inflection points that shaped some
+00:29 
+
+00:29 of the world most remarkable companies
+00:32 
+
+00:32 I'm your host and managing partner of
+00:34 
+
+00:34 sequa capital rof buam today's episode
+00:38 
+
+00:38 is about NATA a global leader in women's
+00:41 
+
+00:41 health oncology and organ transplant
+00:44 
+
+00:44 rejection testing to give you a sense of
+00:46 
+
+00:46 scale 40% of all pregnancies in the
+00:49 
+
+00:49 United States are tested using theist
+00:51 
+
+00:51 technology to ensure the health of the
+00:53 
+
+00:53 child and nearly half of oncologists in
+00:56 
+
+00:56 America have ordered Nas cancer
+00:58 
+
+00:58 screening test
+01:02 
+
+01:02 my connection to NATA began long before
+01:05 
+
+01:05 its Inception I met its co-founder
+01:07 
+
+01:07 Matthew rabinovitz when I was a teenager
+01:09 
+
+01:09 in South Africa re attended the same
+01:12 
+
+01:12 academic vacation school which is a nice
+01:14 
+
+01:14 way of saying it was a nerd Camp later
+01:16 
+
+01:16 we both made the top 100 in the National
+01:18 
+
+01:18 Science Olympiad Matthew was the gold
+01:21 
+
+01:21 medalist I reconnected with Matthew in
+01:24 
+
+01:24 2002 after completing an undergraduate
+01:27 
+
+01:27 in physics where he was the top student
+01:29 
+
+01:29 at Stanford and then completing a PhD in
+01:32 
+
+01:32 electrical engineering Matthew became a
+01:34 
+
+01:34 Founder but now he was immersing himself
+01:37 
+
+01:37 in a brand new challenge mastering
+01:40 
+
+01:40 biology and genetics but there was no
+01:43 
+
+01:43 doubt on my mind that Matthew could
+01:45 
+
+01:45 learn anything he wanted from its
+01:48 
+
+01:48 origins in IVF pre-implantation testing
+01:51 
+
+01:51 to expanding into prenatal testing
+01:53 
+
+01:53 cancer recurrence monitoring and organ
+01:56 
+
+01:56 transplant rejection testing NATA is a
+01:59 
+
+01:59 company that has innovated again and
+02:01 
+
+02:01 again to change the management of
+02:03 
+
+02:03 disease worldwide to get there however
+02:07 
+
+02:07 the company grappled with Crucible
+02:09 
+
+02:09 moments NATA bet its future on
+02:12 
+
+02:12 developing unproven technology and
+02:14 
+
+02:14 defied Skeptics as it expanded into new
+02:17 
+
+02:17 fields of testing and larger markets
+02:21 
+
+02:21 this is the story of a mission-driven
+02:23 
+
+02:23 company that risked consequences at
+02:25 
+
+02:25 every turn determined to help people
+02:29 
+
+02:29 live healthy
+02:32 
+
+02:32 lives hi my name is Matthew reinitz and
+02:35 
+
+02:35 I'm the founder and executive chairman
+02:37 
+
+02:37 of Nera you know Nera was sparked by a
+02:41 
+
+02:41 combination of factors I came from a
+02:43 
+
+02:43 good Jewish Family of two doctors and so
+02:46 
+
+02:46 I was always surrounded by these kinds
+02:47 
+
+02:47 of U you know debates between different
+02:50 
+
+02:50 medical practices and different
+02:52 
+
+02:52 approaches and I didn't go the medical
+02:55 
+
+02:55 path I studied electrical engineering
+02:56 
+
+02:56 and physics but um in 2003
+03:01 
+
+03:01 my sister had a kid with Down Syndrome
+03:03 
+
+03:03 the the baby was born in one of the top
+03:05 
+
+03:05 hospitals in the country and they only
+03:06 
+
+03:06 found out when the kid was born that the
+03:09 
+
+03:09 kid had Down syndrome and uh the child
+03:11 
+
+03:11 died after 6 days and it was horrific I
+03:15 
+
+03:15 I couldn't understand how in the 21st
+03:18 
+
+03:18 century you could have all this
+03:20 
+
+03:20 technology in your you know cell phones
+03:22 
+
+03:22 and spaceships and our laptops and none
+03:24 
+
+03:24 of that technology had found its way
+03:28 
+
+03:28 into Diagnostics and um
+03:30 
+
+03:30 at that point I thought you know that
+03:32 
+
+03:32 this is something that I really need to
+03:34 
+
+03:34 fix and I need to understand what's
+03:37 
+
+03:37 going on here and and try to apply these
+03:39 
+
+03:39 technologies that I was aware of in the
+03:42 
+
+03:42 signal processing world to the world of
+03:44 
+
+03:44 genetics I joined Matt around
+03:48 
+
+03:48 2004 I was at the time finishing up a
+03:52 
+
+03:52 startup in the mobile space and Matt was
+03:55 
+
+03:55 finishing working up on his previous
+03:56 
+
+03:56 startup as well and I was tired of
+03:59 
+
+03:59 making phones beep and I wanted to do
+04:01 
+
+04:01 something with more social value my name
+04:04 
+
+04:04 is Jonathan Sheena I am a co-founder and
+04:08 
+
+04:08 a board member at Nara what was clear at
+04:10 
+
+04:10 the time besides Matt's personal story
+04:13 
+
+04:13 was that genetics was in its infancy the
+04:17 
+
+04:17 Human Genome Project had just completed
+04:20 
+
+04:20 and it was abundantly clear that
+04:22 
+
+04:22 geneticists needed help understanding
+04:24 
+
+04:24 the masses of data that they were they
+04:26 
+
+04:26 were starting to produce were we
+04:28 
+
+04:28 confident in making that shift from
+04:31 
+
+04:31 engineering to biology for me no not at
+04:35 
+
+04:35 all I was not confident at all but
+04:37 
+
+04:37 talking to geneticists at Stanford
+04:40 
+
+04:40 mostly you saw pretty quickly everybody
+04:43 
+
+04:43 had the same book on their desk it was
+04:45 
+
+04:45 bionformatics in Pearl or Pearl for
+04:48 
+
+04:48 bioinformaticians and it was very thin
+04:50 
+
+04:50 it was really high level it was clunky
+04:52 
+
+04:52 it was hard to use all the tools were
+04:54 
+
+04:54 were terrible and as an engineer it was
+04:58 
+
+04:58 really really clear that I could be
+04:60 
+
+05:00 helpful there originally when I joined
+05:02 
+
+05:02 the company it was just some people
+05:04 
+
+05:04 around the table and we're were still in
+05:05 
+
+05:05 this phase of figuring out what was the
+05:08 
+
+05:08 market that we were going to tackle what
+05:10 
+
+05:10 was going to be effective what could we
+05:12 
+
+05:12 build that would really make a
+05:14 
+
+05:14 difference initially we were looking at
+05:16 
+
+05:16 all sorts of problems of how you could
+05:18 
+
+05:18 take genetic data and make it computable
+05:21 
+
+05:21 and combine the computable genetic data
+05:24 
+
+05:24 with phenotype or clinical data and this
+05:27 
+
+05:27 was the sort of long-term idea that you
+05:29 
+
+05:29 could have a kind of marketplace where
+05:31 
+
+05:31 we could build these better models to
+05:32 
+
+05:32 predict what drugs a patient should get
+05:34 
+
+05:34 for cancer what mutated HIV viruses
+05:38 
+
+05:38 should be treated with in terms of
+05:40 
+
+05:40 cocktails or reverse transcriptase
+05:42 
+
+05:42 Inhibitors and proteas Inhibitors so we
+05:44 
+
+05:44 were looking at all sorts of problems
+05:46 
+
+05:46 but at the same time I think I couldn't
+05:49 
+
+05:49 let go of that desire you know when the
+05:52 
+
+05:52 baby was born with Down syndrome and
+05:54 
+
+05:54 then there was so many complications you
+05:56 
+
+05:56 know at that point it was a real
+05:58 
+
+05:58 emotional inflection so I I think I
+06:00 
+
+06:00 couldn't let go of that desire to solve
+06:04 
+
+06:04 that particular problem Matthew and
+06:07 
+
+06:07 Jonathan began by looking at a subset of
+06:09 
+
+06:09 pregnancies with genetic data available
+06:11 
+
+06:11 and an immediate decision-making need
+06:14 
+
+06:14 those having children via IVF back in
+06:18 
+
+06:18 2004 there were methods available to
+06:20 
+
+06:20 evaluate the health of an embryo prior
+06:21 
+
+06:21 to implantation but they had
+06:24 
+
+06:24 limitations the way people were going
+06:26 
+
+06:26 about the problem at that time was just
+06:28 
+
+06:28 so much um
+06:30 
+
+06:30 from my perspective it was a much more
+06:32 
+
+06:32 blunt instrument you know they were
+06:33 
+
+06:33 trying to hybridize probes to
+06:35 
+
+06:35 chromosomes and look at them under a
+06:37 
+
+06:37 microscope and count how many
+06:38 
+
+06:38 fluorescent probes you could see and
+06:40 
+
+06:40 then you could only see five chromosomes
+06:42 
+
+06:42 that way and the companies were trying
+06:43 
+
+06:43 to convince doctors that you only needed
+06:45 
+
+06:45 to see five out of the 22 chromosomes
+06:47 
+
+06:47 and you know that's obviously not true
+06:49 
+
+06:49 there was so much uh snake oil in the
+06:51 
+
+06:51 IVF Market that we actually sent a
+06:54 
+
+06:54 sample to uh one of these companies
+06:58 
+
+06:58 where we knew what the cells were we
+06:60 
+
+06:60 knew the carot types and they produced a
+07:01 
+
+07:01 whole bunch of bad results and it was
+07:03 
+
+07:03 just so amazing to me that doctors and
+07:06 
+
+07:06 Labs were sending these samples to
+07:08 
+
+07:08 companies that just had these very sort
+07:10 
+
+07:10 of basic approaches to the problem so
+07:13 
+
+07:13 you know we came into this world
+07:14 
+
+07:14 thinking that we were going to do it a
+07:16 
+
+07:16 whole lot better and that we had the
+07:18 
+
+07:18 capabilities to do it a whole lot better
+07:21 
+
+07:21 the team at Neta dove into researching a
+07:23 
+
+07:23 test that would eventually be called
+07:25 
+
+07:25 Spectrum to allow for precise genetic
+07:28 
+
+07:28 testing of an embryo no easy feet the
+07:32 
+
+07:32 the challenge with any pre-implantation
+07:34 
+
+07:34 genetic test is that you have to assess
+07:36 
+
+07:36 the the genetic health of the embryo but
+07:39 
+
+07:39 the starting material is extremely small
+07:42 
+
+07:42 you know it's often just a single cell
+07:45 
+
+07:45 my name is chatra kotwali I'm the senior
+07:47 
+
+07:47 vice president of portfolio management
+07:49 
+
+07:49 and operations at NATA so to be able to
+07:54 
+
+07:54 assess the genetic health of the embryo
+07:55 
+
+07:55 starting with a single cell is extremely
+07:58 
+
+07:58 technically challenging you end up
+07:60 
+
+07:60 having the very very noisy data I bought
+08:03 
+
+08:03 the um graduate textbook that you learn
+08:06 
+
+08:06 genetics with and I spent two months
+08:09 
+
+08:09 just studying genetics from that
+08:10 
+
+08:10 textbook and I remember turning to the
+08:13 
+
+08:13 chapter on meiosis and coming to
+08:16 
+
+08:16 understand the different mechanisms of
+08:19 
+
+08:19 that biological process and seeing how
+08:21 
+
+08:21 much we understood about the pieces that
+08:24 
+
+08:24 went into that mechanism of meiosis and
+08:27 
+
+08:27 at that moment I thought wow you know
+08:29 
+
+08:29 there's so much a prior modeling that we
+08:32 
+
+08:32 could bring to this problem of what
+08:35 
+
+08:35 information is coming from the parents
+08:37 
+
+08:37 contributing to the DNA of a child I
+08:39 
+
+08:39 thought that could probably be
+08:40 
+
+08:40 structured as a kind of a beian
+08:42 
+
+08:42 optimization framework you know if we
+08:44 
+
+08:44 use all of that modeling information we
+08:46 
+
+08:46 could have a much more powerful test
+08:48 
+
+08:48 statistic to evaluate what's in a child
+08:53 
+
+08:53 cell the idea is that if you've got this
+08:56 
+
+08:56 noisy data which you're getting from a
+08:59 
+
+08:59 single cell that you're analyzing from
+09:01 
+
+09:01 an embryo biopsy you can limit the space
+09:05 
+
+09:05 that you're searching for for answers
+09:08 
+
+09:08 because you know upfront that this
+09:10 
+
+09:10 genetic makeup came from Mom and Dad so
+09:13 
+
+09:13 if you know Mom and Dad you're not
+09:15 
+
+09:15 starting from the universe of all
+09:17 
+
+09:17 possible combinations of a c's T's and
+09:19 
+
+09:19 G's you're starting from this basic
+09:22 
+
+09:22 premise that everything you're looking
+09:24 
+
+09:24 at had to have come from Mom and Dad so
+09:28 
+
+09:28 that helped dramatic Ally improve the
+09:31 
+
+09:31 signal that you got out of this very
+09:33 
+
+09:33 noisy data something that people hadn't
+09:35 
+
+09:35 done before that was really the
+09:37 
+
+09:37 groundbreaking aspect of spectrum this
+09:39 
+
+09:39 whole idea that you can take uh a
+09:42 
+
+09:42 maternal genome and a paternal genome
+09:44 
+
+09:44 and build this probabilistic model of
+09:47 
+
+09:47 what the embryo genome is and based on
+09:49 
+
+09:49 that be able to tell whether that embryo
+09:51 
+
+09:51 has a chromosomal abnormality or has
+09:55 
+
+09:55 inherited mutations for a single Gene
+09:58 
+
+09:58 disorder that was the ancient idea as I
+10:01 
+
+10:01 turned the pages and that was the idea
+10:03 
+
+10:03 that we ended up pursuing with Spectrum
+10:06 
+
+10:06 well the team was excited about this
+10:08 
+
+10:08 breakthrough idea at this point it was
+10:10 
+
+10:10 just an idea the technology at that
+10:13 
+
+10:13 point was unproven although we had some
+10:17 
+
+10:17 initial data that we used to demonstrate
+10:21 
+
+10:21 a proof of concept and the proof of
+10:23 
+
+10:23 concept did work whether that was going
+10:25 
+
+10:25 to actually work in a real life scenario
+10:29 
+
+10:29 where where you are uh biopsy an embryo
+10:33 
+
+10:33 putting it in a tube shipping it around
+10:36 
+
+10:36 the world on Tri ice and then trying to
+10:38 
+
+10:38 produce a result in less than 48 hours
+10:41 
+
+10:41 whether that was all going to work
+10:43 
+
+10:43 together was very much dbd when we went
+10:46 
+
+10:46 out to raise funding there were plenty
+10:48 
+
+10:48 of Skeptics a who are these non-
+10:51 
+
+10:51 geneticists in front of us talking about
+10:53 
+
+10:53 genetics what did they know there was a
+10:56 
+
+10:56 lot of discussion of IVF as a market it
+10:58 
+
+10:58 wasn't perceived to be that big and we
+11:02 
+
+11:02 were in Silicon Valley which hadn't done
+11:05 
+
+11:05 a lot of genetics investing at the
+11:08 
+
+11:08 time at its outset the company faced a
+11:11 
+
+11:11 defining Crucible decision do you pursue
+11:14 
+
+11:14 an idea where the technology is unproven
+11:17 
+
+11:17 the market has red flags and where your
+11:20 
+
+11:20 expertise raises
+11:22 
+
+11:22 eyebrows I could say it was tough uh but
+11:26 
+
+11:26 the reality is you know I just had a
+11:28 
+
+11:28 mission so you know you don't worry
+11:30 
+
+11:30 about not getting funding at the right
+11:32 
+
+11:32 time when you've got a mission you you
+11:33 
+
+11:33 just pursue the mission anywh you can
+11:36 
+
+11:36 the team dove into bringing Spectrum to
+11:41 
+
+11:41 life we uh actually applied for a bunch
+11:44 
+
+11:44 of NIH grants and uh that's an
+11:46 
+
+11:46 incredibly good process for a company to
+11:48 
+
+11:48 go through to sort of figure out the
+11:51 
+
+11:51 technology with a level of rigor so that
+11:55 
+
+11:55 these very experienced NIH review panels
+11:58 
+
+11:58 can give you the thumbs up but it it a
+12:00 
+
+12:00 lot of the great IP that went into Nera
+12:04 
+
+12:04 uh then Gene security network in those
+12:06 
+
+12:06 early days came from that process of
+12:08 
+
+12:08 applying for NIH grants so that sort of
+12:10 
+
+12:10 got us going and then when it was time
+12:12 
+
+12:12 to raise money for NATA I thought ruoff
+12:15 
+
+12:15 would be the ideal guy to partner with
+12:18 
+
+12:18 I'd known him for a long time we met as
+12:20 
+
+12:20 teenagers in South Africa um at a kind
+12:22 
+
+12:22 of nerd Camp during the vacation when
+12:24 
+
+12:24 other guys were starting to date girls
+12:26 
+
+12:26 we were being lectured to by a bunch of
+12:28 
+
+12:28 college professors and then we met in
+12:30 
+
+12:30 the states and uh he was courageous he'
+12:33 
+
+12:33 left this very well-known family in
+12:35 
+
+12:35 South Africa and this career as an
+12:37 
+
+12:37 actual scientist and had come to forge
+12:39 
+
+12:39 his path in the US as I had and he was
+12:42 
+
+12:42 also very humble and the first rule of
+12:45 
+
+12:45 being a VC is Do no harm and so I
+12:48 
+
+12:48 thought that's the kind of guy I'd
+12:50 
+
+12:50 really like to work with and then I
+12:53 
+
+12:53 particularly targeted sooa they kind of
+12:56 
+
+12:56 invest like Santana plays the guitar I
+12:59 
+
+12:59 mean they are just so naturally and
+13:01 
+
+13:01 comfortably aware of where a company's
+13:03 
+
+13:03 at and I think they could see at a
+13:05 
+
+13:05 certain point that we were focusing on
+13:07 
+
+13:07 this problem in IVF because there had
+13:09 
+
+13:09 been this Confluence and we were sort of
+13:12 
+
+13:12 organically driving in that direction
+13:14 
+
+13:14 and that's the time that they sort of
+13:16 
+
+13:16 pulled the trigger so I think the whole
+13:18 
+
+13:18 process of leading up to that investment
+13:21 
+
+13:21 you know the the NIH grants trying to
+13:23 
+
+13:23 make our story more rigorous on the
+13:25 
+
+13:25 technology and the business side is an
+13:27 
+
+13:27 incredibly healthy process for a company
+13:30 
+
+13:30 to go through and it's it's not
+13:31 
+
+13:31 something that you can go through if
+13:33 
+
+13:33 you're just taking Angel investment I
+13:35 
+
+13:35 often tell companies you know force
+13:37 
+
+13:37 yourself to get grants and to get
+13:38 
+
+13:38 venture capital investment because it it
+13:40 
+
+13:40 brazens the company in a way that you
+13:42 
+
+13:42 can't easily do otherwise I do remember
+13:45 
+
+13:45 a moment when one of our senior
+13:48 
+
+13:48 statisticians came to me and uh we were
+13:51 
+
+13:51 trying to do this modeling based on the
+13:53 
+
+13:53 idiosyncrasies of the noise that we were
+13:55 
+
+13:55 getting from these arrays and building
+13:58 
+
+13:58 in a detailed functional model of the
+14:01 
+
+14:01 mechanism of meiosis to figure out what
+14:03 
+
+14:03 had come from the parents to make the
+14:05 
+
+14:05 DNA of the child and there was all sorts
+14:07 
+
+14:07 of noisy processes that were generated
+14:09 
+
+14:09 from the aray because we had to get this
+14:11 
+
+14:11 protocol running in one day that was
+14:13 
+
+14:13 supposed to run in 3 days and uh I
+14:16 
+
+14:16 remember one of our really great
+14:17 
+
+14:17 statisticians came knocking on my door
+14:20 
+
+14:20 and he'd been looking at the data based
+14:22 
+
+14:22 on this latest test statistic that we
+14:24 
+
+14:24 were trying to get working and he just
+14:26 
+
+14:26 said to me dude you know come look at
+14:28 
+
+14:28 this you're going to your myself
+14:30 
+
+14:30 and uh at that moment I was uh I didn't
+14:33 
+
+14:33 know whether it was good or bad news as
+14:34 
+
+14:34 he said that but I saw a big smile and I
+14:36 
+
+14:36 thought okay you know this is actually
+14:38 
+
+14:38 working at
+14:40 
+
+14:40 last in 2009 NATA launched the Spectrum
+14:44 
+
+14:44 test for public
+14:46 
+
+14:46 use so there were the technical moments
+14:49 
+
+14:49 when we knew that Spectrum worked we had
+14:53 
+
+14:53 successful transfers that turned into
+14:54 
+
+14:54 successful implantations for IVF but the
+14:57 
+
+14:57 real moments were the the postcards and
+14:60 
+
+14:60 the emails that came back from from the
+15:03 
+
+15:03 families Thanking us for helping them
+15:06 
+
+15:06 grow their family or start their new
+15:08 
+
+15:08 family those went up on the wall and
+15:11 
+
+15:11 those were the moments that that I
+15:12 
+
+15:12 remember much more so than the technical
+15:14 
+
+15:14 successes the unlock of
+15:16 
+
+15:16 spectrum was a critical turning point in
+15:20 
+
+15:20 nara's story in that it demonstrated we
+15:23 
+
+15:23 could use statistical methods that
+15:26 
+
+15:26 hadn't been applied to genetics before
+15:28 
+
+15:28 that was useful by both patients and
+15:30 
+
+15:30 Physicians it proved that we could
+15:33 
+
+15:33 fulfill the promise of our mission to
+15:35 
+
+15:35 not only to our to our patients but also
+15:37 
+
+15:37 to our employees was a it was a great
+15:40 
+
+15:40 motivator
+15:42 
+
+15:42 internally while Spectrum was a
+15:44 
+
+15:44 technical success it struggled to become
+15:47 
+
+15:47 a commercial
+15:49 
+
+15:49 one we made this bet that if you could
+15:55 
+
+15:55 do a reliable screening across 24
+15:58 
+
+15:58 chromosomes and
+15:59 
+
+15:59 substantially improve implantation rates
+16:02 
+
+16:02 and let people who are going through IVF
+16:05 
+
+16:05 know what they had whether their embryos
+16:08 
+
+16:08 were good uplo embryos that this would
+16:10 
+
+16:10 be really valuable and that didn't
+16:13 
+
+16:13 really happen fast I remember the third
+16:16 
+
+16:16 month i' had been there we were having a
+16:17 
+
+16:17 board meeting and there were some
+16:19 
+
+16:19 concerns expressed about the volume my
+16:22 
+
+16:22 name is Steve Chapman I'm the CEO of
+16:24 
+
+16:24 Nara so initially when I joined the
+16:27 
+
+16:27 company in 2010 I was was hired as uh
+16:30 
+
+16:30 vice president of commercial and I think
+16:33 
+
+16:33 I was like the 20th employee I think the
+16:36 
+
+16:36 first month I was there we did 100 tests
+16:37 
+
+16:37 per month the second month I was there
+16:39 
+
+16:39 we did like 105 tests and then the third
+16:42 
+
+16:42 month we did 90 tests and uh all the
+16:45 
+
+16:45 board members were concerned they're
+16:46 
+
+16:46 like oh man 90 tests like the volume is
+16:49 
+
+16:49 going down and uh I remember after the
+16:52 
+
+16:52 meeting Jonathan Sheena he pulled me
+16:54 
+
+16:54 aside he's like look man don't worry you
+16:56 
+
+16:56 know I'm sure everything's going to be
+16:58 
+
+16:58 fine and I went home that night I
+16:60 
+
+16:60 remember I told my wife I'm like there's
+17:01 
+
+17:01 there's a good chance I'm getting fired
+17:04 
+
+17:04 the challenge was at the time the number
+17:07 
+
+17:07 of IVF cycles per year in the United
+17:09 
+
+17:09 States was around
+17:10 
+
+17:10 150,000 and so when you think about it
+17:12 
+
+17:12 from a market size point of view um
+17:15 
+
+17:15 given the price point that we had at the
+17:16 
+
+17:16 time it just didn't amount to a very big
+17:18 
+
+17:18 business even if if we fully penetrated
+17:21 
+
+17:21 the market opportunity it wasn't you
+17:23 
+
+17:23 know the market wasn't deep enough for
+17:26 
+
+17:26 us to build a a very big business so
+17:28 
+
+17:28 just to give you a
+17:29 
+
+17:29 I think even today the number of IVF
+17:32 
+
+17:32 cycles per anom in the United States has
+17:33 
+
+17:33 now grown to about 160,000 and the
+17:36 
+
+17:36 average price that you can get for
+17:38 
+
+17:38 Diagnostic testing is maybe
+17:41 
+
+17:41 $4,000 so that's a 600 million-ish total
+17:45 
+
+17:45 Market available of every single person
+17:47 
+
+17:47 uh used a technology like ours and
+17:49 
+
+17:49 obviously the in reality the served
+17:51 
+
+17:51 Market is much smaller so it was very
+17:53 
+
+17:53 hard for us to see how you could build a
+17:55 
+
+17:55 multi hundred million dollar year
+17:56 
+
+17:56 business if you only addressed the IVF
+17:58 
+
+17:58 opportunity
+17:60 
+
+17:60 I guess I had the exuberance of uh you
+18:02 
+
+18:02 know a mission and I thought that uh
+18:05 
+
+18:05 those concerns about the IVF Market were
+18:08 
+
+18:08 secondary they turn out to be right
+18:10 
+
+18:10 actually so the idea that you can create
+18:13 
+
+18:13 a new market is a very challenging idea
+18:17 
+
+18:17 you know Venture capitalists tend to be
+18:18 
+
+18:18 very wary of that and they're right you
+18:20 
+
+18:20 know although a Founder thinks that you
+18:23 
+
+18:23 know you've got this technology and it's
+18:24 
+
+18:24 to totally rational for everyone to use
+18:26 
+
+18:26 it there are so many entrenched Norms uh
+18:31 
+
+18:31 protocols uh insurance issues uh sort of
+18:35 
+
+18:35 uh marketing challenges educational
+18:37 
+
+18:37 challenges it's not easy to totally
+18:39 
+
+18:39 create a new market that can take years
+18:42 
+
+18:42 and years unless you're really lucky so
+18:44 
+
+18:44 I think that the market played out well
+18:47 
+
+18:47 but it didn't play out nearly to the
+18:48 
+
+18:48 extent that I thought it
+18:50 
+
+18:50 would n said it sites on its next ACT to
+18:54 
+
+18:54 address a much larger market natural
+18:57 
+
+18:57 pregnancies if Nara could Leverage its
+18:59 
+
+18:59 technology for more effective prenatal
+19:01 
+
+19:01 testing in all pregnancies the size of
+19:04 
+
+19:04 the market could support a meaningful
+19:06 
+
+19:06 business so shifting to Natural
+19:09 
+
+19:09 pregnancies from IVF was something that
+19:11 
+
+19:11 was always in the back of our minds we
+19:14 
+
+19:14 always knew that we wanted to be able to
+19:17 
+
+19:17 apply the same idea of cleaning up
+19:20 
+
+19:20 genetic signal from genetic noise to
+19:23 
+
+19:23 Natural pregnancies what we saw in
+19:26 
+
+19:26 natural pregnancies was that the
+19:28 
+
+19:28 technology that was being used up to
+19:31 
+
+19:31 roughly that time was very poor prenatal
+19:34 
+
+19:34 testing has been around you know I I
+19:37 
+
+19:37 think really in the 80s is when the
+19:39 
+
+19:39 initial biomarkers started to be used to
+19:42 
+
+19:42 screen women for their risk of
+19:45 
+
+19:45 chromosome Anup ples or neural tube
+19:47 
+
+19:47 defects now those same techniques that
+19:50 
+
+19:50 were developed in the 80s were still
+19:51 
+
+19:51 being used in 2009 2010 maybe they had
+19:57 
+
+19:57 changed a little bit they were a little
+19:59 
+
+19:59 bit better than they were but not by
+20:01 
+
+20:01 much and so about 20% of pregnancies
+20:06 
+
+20:06 that had a severe genetic abnormality
+20:08 
+
+20:08 would be missed using those previous
+20:11 
+
+20:11 techniques but the worst problem was
+20:13 
+
+20:13 that 19 out of 20 women that were told
+20:16 
+
+20:16 that they were positive actually were
+20:18 
+
+20:18 fine and so there were a lot of people
+20:21 
+
+20:21 who would get an amniocentesis
+20:24 
+
+20:24 unnecessarily for such an
+20:27 
+
+20:27 important test for such an important
+20:30 
+
+20:30 screen for prenatal Health it was almost
+20:33 
+
+20:33 unconscionable that the world hadn't app
+20:37 
+
+20:37 applied the same kind of resources that
+20:39 
+
+20:39 we had applied to our iPhones and and
+20:42 
+
+20:42 and targeting better
+20:44 
+
+20:44 advertisements the team began to look at
+20:46 
+
+20:46 how the technology from Spectrum could
+20:48 
+
+20:48 pave the way for families to test unborn
+20:50 
+
+20:50 babies for genetic disorders as early as
+20:53 
+
+20:53 9 weeks into the pregnancy this test
+20:55 
+
+20:55 would eventually be called panorama
+20:59 
+
+20:59 when we started to do experimentation we
+21:01 
+
+21:01 knew that there was a lot of signal that
+21:03 
+
+21:03 you could get from the cell-free DNA
+21:06 
+
+21:06 that had just been released from the
+21:08 
+
+21:08 placental cells or from the fetus that
+21:10 
+
+21:10 was floating around in the mother's
+21:11 
+
+21:11 blood and it became a very similar
+21:13 
+
+21:13 problem of trying to extract a really
+21:17 
+
+21:17 detailed model of the child from these
+21:21 
+
+21:21 fragments of self-free DNA by taking a
+21:23 
+
+21:23 blood roll from The Mother We could find
+21:25 
+
+21:25 these little puzzle pieces fragments of
+21:28 
+
+21:28 the fetuses that is sort of accidentally
+21:30 
+
+21:30 ended up in the mother's bloodstream and
+21:32 
+
+21:32 then our technology helps you reassemble
+21:34 
+
+21:34 that puzzle to get a complete picture of
+21:36 
+
+21:36 The Unborn child's genetic profile which
+21:39 
+
+21:39 is just staggering if you think about it
+21:41 
+
+21:41 and so that was a surprise I mean
+21:43 
+
+21:43 honestly when we first made the
+21:44 
+
+21:44 investment I don't think any isly didn't
+21:47 
+
+21:47 anticipate that this type of Technology
+21:49 
+
+21:49 would even be possible you know of
+21:52 
+
+21:52 course we weren't the first company that
+21:54 
+
+21:54 were offering self-free fetal DNA tests
+21:56 
+
+21:56 or nip tests the major difference with n
+21:59 
+
+21:59 terrorist test is that what you can do
+22:01 
+
+22:01 is you can actually separate
+22:04 
+
+22:04 informatically the maternal DNA the
+22:07 
+
+22:07 paternal DNA and the fetal DNA and that
+22:10 
+
+22:10 allows you to see a clear picture of
+22:12 
+
+22:12 what's happening within the genetics of
+22:15 
+
+22:15 the fetus so that allows us to more
+22:17 
+
+22:17 accurately identify chromosomal
+22:21 
+
+22:21 abnormalities um and also just
+22:23 
+
+22:23 biologically see things that others
+22:26 
+
+22:26 can't
+22:27 
+
+22:27 see n had reached another turning point
+22:32 
+
+22:32 it needed to decide once again whether
+22:34 
+
+22:34 or not to move forward with a first of
+22:37 
+
+22:37 its kind diagnostics test this time
+22:40 
+
+22:40 however there was much more at stake
+22:44 
+
+22:44 what were the business risks I mean
+22:46 
+
+22:46 there were real business risks you know
+22:48 
+
+22:48 we had investors telling us that we had
+22:51 
+
+22:51 not done what we set out to do in IVF we
+22:54 
+
+22:54 were going to be the world leaders in
+22:56 
+
+22:56 IVF and at that point we hadn't
+22:59 
+
+22:59 established our leadership there was
+23:00 
+
+23:00 still a lot of work to be done and we
+23:02 
+
+23:02 had investors around the board table
+23:05 
+
+23:05 tell us you know do what you said you
+23:07 
+
+23:07 were going to do and don't distract
+23:08 
+
+23:08 yourself you've got all sorts of
+23:10 
+
+23:10 established competition and we were
+23:12 
+
+23:12 going up against really big well-funded
+23:15 
+
+23:15 companies with different level of
+23:17 
+
+23:17 clinical trial rigor that was demanded
+23:19 
+
+23:19 yeah there was a lot of good reasons to
+23:21 
+
+23:21 not do
+23:22 
+
+23:22 [Music]
+23:24 
+
+23:24 it this is uh this is something that I
+23:27 
+
+23:27 never talk about publicly but um I'll
+23:30 
+
+23:30 talk about it now the decision to go
+23:33 
+
+23:33 into prenatal testing was
+23:36 
+
+23:36 completely personally driven it was a
+23:39 
+
+23:39 totally emotional decision if I'm honest
+23:42 
+
+23:42 because um I spoke about what happened
+23:44 
+
+23:44 to my sister around 2003 um what I never
+23:49 
+
+23:49 talk about publicly is that I lost a
+23:52 
+
+23:52 child around
+23:54 
+
+23:54 2009 and um it was not related to what
+23:59 
+
+23:59 happened to my sister um we didn't have
+24:02 
+
+24:02 a particular genetic susceptibility it
+24:04 
+
+24:04 was just you know two events that struck
+24:08 
+
+24:08 in the same family by chance and um we
+24:12 
+
+24:12 were going to have a little girl and we
+24:14 
+
+24:14 found out late in the pregnancy that the
+24:18 
+
+24:18 child had a genetic condition and uh we'
+24:21 
+
+24:21 had been fooled by the screening tests
+24:24 
+
+24:24 that didn't detect this issue just
+24:26 
+
+24:26 because I was an information we and you
+24:29 
+
+24:29 know because of what had happened to my
+24:31 
+
+24:31 sister um I thought it was a good idea
+24:33 
+
+24:33 to have an amnio just to be safe and we
+24:36 
+
+24:36 found out from the Amo that there was
+24:37 
+
+24:37 this genetic issue and um I think you
+24:41 
+
+24:41 know ever since I came to the states I
+24:43 
+
+24:43 was kind of invincible you know I'd made
+24:45 
+
+24:45 money lost money relationships came and
+24:47 
+
+24:47 went and no matter what happened you
+24:49 
+
+24:49 know I was just riding the wave and
+24:51 
+
+24:51 nothing really broke me and this just
+24:53 
+
+24:53 broke me and I think the engineering me
+24:55 
+
+24:55 sort of took over and I thought this is
+24:57 
+
+24:57 a problem that I have to have to solve
+25:01 
+
+25:01 and we actually used a sample from that
+25:05 
+
+25:05 pregnancy uh to submit data to the NIH
+25:09 
+
+25:09 based on a bunch of the techniques that
+25:10 
+
+25:10 we were developing at Nera and we asked
+25:14 
+
+25:14 the NIH to fund us to improve prenatal
+25:16 
+
+25:16 testing uh which you know we were pretty
+25:18 
+
+25:18 convinced that we could do and we got
+25:20 
+
+25:20 that money from the NIH and then a bunch
+25:22 
+
+25:22 of subsequent grants and we we raised
+25:25 
+
+25:25 additional Venture Capital so yeah there
+25:27 
+
+25:27 was pros and cons to make this decision
+25:30 
+
+25:30 to get into prenatal testing but at that
+25:33 
+
+25:33 time around 2009 2010 where we focused
+25:37 
+
+25:37 on this product um it was an entirely
+25:41 
+
+25:41 emotional decision for me it was just
+25:43 
+
+25:43 something that I had to do there was no
+25:46 
+
+25:46 question that we were going to move
+25:47 
+
+25:47 forward with Panorama if the
+25:50 
+
+25:50 technology could deliver the results
+25:53 
+
+25:53 that we had hoped it would deliver in
+25:56 
+
+25:56 fact I think the company success was
+25:59 
+
+25:59 hinging on us developing a technology
+26:02 
+
+26:02 that worked and launching it
+26:04 
+
+26:04 successfully I remember we had several
+26:07 
+
+26:07 clinical trials that were underway but
+26:10 
+
+26:10 it was all coming down to the blinded
+26:12 
+
+26:12 performance of the technology in a
+26:16 
+
+26:16 prospective clinical trial and so the
+26:18 
+
+26:18 principal investigator called us and he
+26:20 
+
+26:20 said hey I've got the results final
+26:22 
+
+26:22 results everything's locked down this
+26:25 
+
+26:25 this is going for publication and he
+26:27 
+
+26:27 read off the the the final results and
+26:29 
+
+26:29 we realized that we had hit the
+26:32 
+
+26:32 performance specs that we were hoping
+26:34 
+
+26:34 for and that was a real incredible
+26:36 
+
+26:36 moment because at that time we knew that
+26:40 
+
+26:40 we were going to be able to move the
+26:41 
+
+26:41 product forward while Panorama
+26:44 
+
+26:44 represented a novel approach and a
+26:46 
+
+26:46 technical breakthrough natera's
+26:48 
+
+26:48 long-entrenched competitors were also
+26:51 
+
+26:51 bringing their own versions of updated
+26:53 
+
+26:53 prenatal screening products to the
+26:56 
+
+26:56 market when we developed pan Rama we
+26:59 
+
+26:59 were actually the fourth to Market these
+27:03 
+
+27:03 three other companies were out there
+27:06 
+
+27:06 educating the market and they were also
+27:09 
+
+27:09 setting the story they were setting
+27:11 
+
+27:11 what's important they were telling the
+27:12 
+
+27:12 market what was important and what
+27:14 
+
+27:14 wasn't important in their own
+27:16 
+
+27:16 terms and so we were up against these
+27:19 
+
+27:19 big established players we had alumina
+27:21 
+
+27:21 who was the gorilla of sequencing they
+27:23 
+
+27:23 controlled all the sequencing technology
+27:26 
+
+27:26 pretty much at the time we had Ro that
+27:29 
+
+27:29 uh had bought a company Arosa lab cord
+27:33 
+
+27:33 that had partnered with the company
+27:35 
+
+27:35 seom most of the companies had launched
+27:38 
+
+27:38 in kind of 201 11 uh 2012 and here we
+27:43 
+
+27:43 were in
+27:44 
+
+27:44 2013 trying to get our test out the door
+27:47 
+
+27:47 and many of them had big sales teams
+27:49 
+
+27:49 they were already delivering volume it
+27:51 
+
+27:51 was a challenging time because while
+27:53 
+
+27:53 there was excitement within the company
+27:55 
+
+27:55 at Nera about what we were doing there
+27:58 
+
+27:58 was also sense that we were missing our
+28:00 
+
+28:00 window and that we were slipping behind
+28:04 
+
+28:04 and that we needed to get the test out
+28:07 
+
+28:07 the door and if we didn't you know we we
+28:09 
+
+28:09 weren't ever going to be able to catch
+28:14 
+
+28:14 up I remember there was a moment where I
+28:17 
+
+28:17 was curled up in the corner of my living
+28:21 
+
+28:21 room in fetal position literally shaking
+28:25 
+
+28:25 in the corner of the room because you
+28:27 
+
+28:27 know we had to raise Capital you know we
+28:30 
+
+28:30 needed more money to drive the
+28:32 
+
+28:32 technology and we had just learned that
+28:34 
+
+28:34 Illumina who was our main supplier had
+28:38 
+
+28:38 just bought our main competitor this
+28:40 
+
+28:40 company verinata and I didn't know um
+28:44 
+
+28:44 how we were going to
+28:46 
+
+28:46 survive we had to explain why this
+28:50 
+
+28:50 approach was better we had to
+28:51 
+
+28:51 demonstrate it we had to uh invest in
+28:55 
+
+28:55 studies that would demonstrate that I
+28:59 
+
+28:59 mean it's an incredibly complicated
+29:01 
+
+29:01 statistical problem and we figured out
+29:04 
+
+29:04 how you could use techniques like
+29:07 
+
+29:07 information filters like hidden Mark of
+29:09 
+
+29:09 models to sift through all of the
+29:12 
+
+29:12 possible combinations of what's going on
+29:15 
+
+29:15 in the DNA when you find the right set
+29:19 
+
+29:19 of parameters the right fetal fraction
+29:21 
+
+29:21 the right noise figure the right set of
+29:24 
+
+29:24 crossovers the right assumptions about
+29:26 
+
+29:26 how many chromosomes came from each
+29:28 
+
+29:28 parent everything just makes sense and
+29:30 
+
+29:30 you get this maximum likelihood Peak you
+29:33 
+
+29:33 just get this very high probability
+29:35 
+
+29:35 where the algorithm says aha I know
+29:37 
+
+29:37 what's going on here everything is
+29:39 
+
+29:39 making
+29:40 
+
+29:40 sense that was the moment that I learned
+29:45 
+
+29:45 that having an incredibly strong
+29:47 
+
+29:47 commercial team out there in the field
+29:50 
+
+29:50 that was able to describe the science
+29:52 
+
+29:52 that was able to convey the benefits uh
+29:56 
+
+29:56 was hugely important having all the
+29:59 
+
+29:59 great technology in the world didn't
+30:01 
+
+30:01 matter if you couldn't explain to your
+30:03 
+
+30:03 physician why it was explaining that we
+30:06 
+
+30:06 could see micro delions we could see
+30:08 
+
+30:08 abnormalities of the sex chromosomes a
+30:11 
+
+30:11 whole range of things that in aggregate
+30:14 
+
+30:14 are much more prevalent than Down
+30:17 
+
+30:17 syndrome what was really cool about the
+30:19 
+
+30:19 Panorama test and and micro delions in
+30:21 
+
+30:21 particular is it was the first time that
+30:25 
+
+30:25 I know of that you had brought deep
+30:28 
+
+30:28 learning neural networks to bear on a
+30:32 
+
+30:32 very large biotech or Diagnostics
+30:35 
+
+30:35 problem you can do this very early in
+30:38 
+
+30:38 pregnancy and you can use this to detect
+30:41 
+
+30:41 all sorts of things that don't match how
+30:44 
+
+30:44 the DNA should look all sorts of
+30:46 
+
+30:46 abnormalities which the other techniques
+30:48 
+
+30:48 just can't see we knew we had to do
+30:52 
+
+30:52 things differently than others um and so
+30:56 
+
+30:56 Not only was our technology different
+30:58 
+
+30:58 but we also focused more on user
+31:01 
+
+31:01 experience you know if you order a pair
+31:03 
+
+31:03 of shoes online on Amazon you push a
+31:06 
+
+31:06 button you get all these pings on your
+31:08 
+
+31:08 cell phone when your package arrives you
+31:10 
+
+31:10 get a text message and that's exciting
+31:12 
+
+31:12 you know exactly where things are but
+31:14 
+
+31:14 something like the health of your baby
+31:16 
+
+31:16 you get your blood drawn in this dark
+31:18 
+
+31:18 dingy draw station you send your tube in
+31:21 
+
+31:21 you never hear back from the laboratory
+31:23 
+
+31:23 you don't know when it's being buil you
+31:26 
+
+31:26 don't know how much you're going to owe
+31:27 
+
+31:27 and so we want it to to change all that
+31:29 
+
+31:29 and really make lab testing and genetic
+31:31 
+
+31:31 testing feel like a consumer experience
+31:34 
+
+31:34 that you would expect you know in
+31:36 
+
+31:36 today's world versus something that's
+31:38 
+
+31:38 very
+31:39 
+
+31:39 outdated I think the main thing is that
+31:41 
+
+31:41 science doesn't lie you put your faith
+31:44 
+
+31:44 in the
+31:46 
+
+31:46 science the the faith that you are
+31:49 
+
+31:49 taking on a problem in a very different
+31:51 
+
+31:51 way to everybody else and given that you
+31:56 
+
+31:56 have a better technology there will be a
+31:59 
+
+31:59 path through so we just kind of took a
+32:01 
+
+32:01 series of pragmatic steps and um we
+32:04 
+
+32:04 started to see a sort of transis where
+32:08 
+
+32:08 the doctors understood the value of the
+32:10 
+
+32:10 technology and and you know the the
+32:12 
+
+32:12 momentum started to pick up there was
+32:15 
+
+32:15 actually a distinct moment for me um I
+32:17 
+
+32:17 was at a birthday party for my son
+32:19 
+
+32:19 wearing my Nara jacket proudly and over
+32:23 
+
+32:23 the course of that afternoon three newly
+32:25 
+
+32:25 pregnant mothers approached me just
+32:27 
+
+32:27 gushing about their experience with
+32:29 
+
+32:29 Panorama um the peace of mind it
+32:31 
+
+32:31 provided the ease of use um how early in
+32:35 
+
+32:35 the pregnancy it could be used uh they
+32:37 
+
+32:37 couldn't believe that NATA was right in
+32:39 
+
+32:39 our backyard here in San Carlos um I
+32:41 
+
+32:41 mean I felt like a celebrity my name is
+32:44 
+
+32:44 Sarah Elliot and I'm the senior director
+32:46 
+
+32:46 of the executive Services organization
+32:47 
+
+32:47 at natara Panorama was a critical
+32:50 
+
+32:50 chapter for natara it indisputably put
+32:53 
+
+32:53 us on the map uh we were serving such a
+32:55 
+
+32:55 wide audience of people all of a sudden
+32:58 
+
+32:58 and really becoming a known name in the
+32:60 
+
+32:60 world of genetic testing you know as a
+33:02 
+
+33:02 company opened up to a much larger
+33:03 
+
+33:03 market all of a sudden rapid growth was
+33:06 
+
+33:06 really on our doorstep and we all felt
+33:08 
+
+33:08 sort of the steady shift from the more
+33:11 
+
+33:11 startup atmosphere to a midsize company
+33:15 
+
+33:15 I was supporting Jonathan Sheena and I
+33:18 
+
+33:18 just distinctly remember the onslaught
+33:20 
+
+33:20 of open positions um interviews and you
+33:23 
+
+33:23 know the challenge of finding top
+33:25 
+
+33:25 engineering Talent locally to our home
+33:27 
+
+33:27 office we were always on the hunt for
+33:30 
+
+33:30 more office space more desks I was
+33:32 
+
+33:32 literally stacking Engineers on top of
+33:34 
+
+33:34 each other as new hires came on board
+33:35 
+
+33:35 each week there were a lot of things
+33:38 
+
+33:38 where you know I mean there was a lot of
+33:40 
+
+33:40 work to build the capacity out and uh we
+33:43 
+
+33:43 felt like for a long time we were
+33:44 
+
+33:44 drinking from a fire hose there was a
+33:47 
+
+33:47 period of time where every time you
+33:49 
+
+33:49 walked into the lab it was either in a
+33:51 
+
+33:51 there was a different floor that we had
+33:52 
+
+33:52 expanded to or a different building we
+33:55 
+
+33:55 had expanded to I mean it was just you
+33:57 
+
+33:57 know really rapidly growing one of the
+33:60 
+
+33:60 biggest decisions that we had to make
+34:02 
+
+34:02 when we launched Panorama was whether we
+34:05 
+
+34:05 just focus on the high-risk pregnancy
+34:08 
+
+34:08 segment or whether we made our test
+34:11 
+
+34:11 available to all pregnant women
+34:13 
+
+34:13 regardless of their risk at the time
+34:15 
+
+34:15 many of the other companies were
+34:17 
+
+34:17 limiting their offering into the
+34:19 
+
+34:19 highrisk segment alone and we made a
+34:23 
+
+34:23 decision and made it available for all
+34:25 
+
+34:25 women regardless of their uh prior risk
+34:28 
+
+34:28 yeah that was really a important
+34:30 
+
+34:30 decision that we made we weren't just
+34:31 
+
+34:31 tapping into 15% of pregnancies we were
+34:34 
+
+34:34 actually tapping into all
+34:36 
+
+34:36 pregnancies I mean the biggest Milestone
+34:39 
+
+34:39 I mean one was that we're now processing
+34:41 
+
+34:41 you know over a million samples a year
+34:43 
+
+34:43 like we used to think a few hundred,
+34:45 
+
+34:45 samples was a great achievement but now
+34:47 
+
+34:47 we're you know routinely processing over
+34:49 
+
+34:49 a million samples for Panorama alone and
+34:52 
+
+34:52 we have other genetic testing for
+34:54 
+
+34:54 Women's Health uh markets such as
+34:56 
+
+34:56 carrier screening and so on so that's a
+34:59 
+
+34:59 that's a huge
+34:60 
+
+34:60 milestone I think some of the biggest
+35:02 
+
+35:02 lessons um from my perspective really it
+35:05 
+
+35:05 comes down to sheer grit and
+35:08 
+
+35:08 determination by every individual um on
+35:11 
+
+35:11 all of the teams no matter Your Role
+35:13 
+
+35:13 across the company every single person
+35:15 
+
+35:15 has a role and you have to ride the
+35:18 
+
+35:18 highs and get ready to roll up your
+35:19 
+
+35:19 sleeves through the lows you know
+35:21 
+
+35:21 there's so much that can go wrong it's
+35:22 
+
+35:22 really how prepared you are to react
+35:24 
+
+35:24 that is key during those
+35:26 
+
+35:26 times in July 2015 boyed by the success
+35:30 
+
+35:30 of Panorama NATA went public around this
+35:34 
+
+35:34 time the company began looking at
+35:36 
+
+35:36 adjacent areas where their core
+35:37 
+
+35:37 technology could make an impact one of
+35:40 
+
+35:40 those areas was
+35:44 
+
+35:44 oncology you know we always had this
+35:46 
+
+35:46 mindset that we were going to transform
+35:48 
+
+35:48 Healthcare and we were going to have as
+35:51 
+
+35:51 much impact as we could possibly have uh
+35:54 
+
+35:54 by bringing these sort of signal
+35:55 
+
+35:55 processing techniques and apply that to
+35:57 
+
+35:57 diagn notics so there was no way that we
+36:00 
+
+36:00 weren't going to you know keep taking on
+36:03 
+
+36:03 bigger and bigger aspects of healthcare
+36:06 
+
+36:06 there were some very practical
+36:09 
+
+36:09 considerations in the oncology world we
+36:12 
+
+36:12 had built this massively multiplexed PCR
+36:15 
+
+36:15 protocol and that lets you run samples
+36:19 
+
+36:19 in a single reaction volume without
+36:22 
+
+36:22 losing molecules and when you're dealing
+36:24 
+
+36:24 with oncology every molecule matters and
+36:27 
+
+36:27 so we to solve this problem of not
+36:29 
+
+36:29 splitting up the sample and we had built
+36:32 
+
+36:32 this uh PCR technique where we could get
+36:34 
+
+36:34 all of these primers to work in a single
+36:36 
+
+36:36 reaction and we started to apply that to
+36:38 
+
+36:38 problems in oncology in a way that
+36:41 
+
+36:41 nobody had been able to do before us
+36:43 
+
+36:43 where you could run all of these primers
+36:46 
+
+36:46 in a single reaction and we could also
+36:48 
+
+36:48 customize the assay for every single
+36:51 
+
+36:51 patient So based on your particular
+36:53 
+
+36:53 tumor and the mutations that were unique
+36:56 
+
+36:56 to your cancer we could build this
+36:58 
+
+36:58 personalized assay to Target those
+37:01 
+
+37:01 molecules for you it was just incredibly
+37:06 
+
+37:06 exciting moment when we saw how well
+37:09 
+
+37:09 this worked to detect these cancers
+37:11 
+
+37:11 early we could pretty much see a single
+37:13 
+
+37:13 molecule that was coming from a tumor
+37:16 
+
+37:16 from a blood drawer in the arm and
+37:18 
+
+37:18 that's like um the analogy that I use is
+37:22 
+
+37:22 that's like finding one blade of grass
+37:24 
+
+37:24 in a 100,000 soccer fields to be able to
+37:27 
+
+37:27 see see that single molecule that
+37:29 
+
+37:29 carries the cancer mutations with that
+37:32 
+
+37:32 capability we thought that this would be
+37:37 
+
+37:37 transformative the base technology that
+37:39 
+
+37:39 we developed in the prenatal testing
+37:42 
+
+37:42 space translated into oncology it turns
+37:44 
+
+37:44 out that most cancer types shed into the
+37:47 
+
+37:47 bloodstream and so in the same way that
+37:50 
+
+37:50 there's free floating fetal DNA and the
+37:52 
+
+37:52 mother's blood for most cancer types
+37:54 
+
+37:54 they shed fragments of the cancer DNA
+37:57 
+
+37:57 into your bloodstream this is a
+37:59 
+
+37:59 wonderful analogy of being able to take
+38:01 
+
+38:01 a a noninvasive test a blood draw from a
+38:03 
+
+38:03 cancer patient to see if the disease is
+38:06 
+
+38:06 still present and so there's an enormous
+38:09 
+
+38:09 benefit from an R&D point of view that
+38:11 
+
+38:11 we believ that our core technology would
+38:14 
+
+38:14 [Music]
+38:15 
+
+38:15 translate while naris technology held
+38:18 
+
+38:18 great promise in the field of oncology
+38:21 
+
+38:21 pursuing cancer Diagnostics in Earnest
+38:23 
+
+38:23 would come with enormous risk building
+38:26 
+
+38:26 out an entirely new ision would demand
+38:28 
+
+38:28 significant resources and the Women's
+38:31 
+
+38:31 Health division while growing was not
+38:33 
+
+38:33 yet profitable putting NATA in a
+38:36 
+
+38:36 precarious
+38:38 
+
+38:38 position this one we had a lot of
+38:40 
+
+38:40 criticism that I can remember like it
+38:42 
+
+38:42 was yesterday because it was a very
+38:44 
+
+38:44 stressful time with the company we were
+38:46 
+
+38:46 growing our Woman's Health business and
+38:48 
+
+38:48 we were burning a lot of cash we were
+38:51 
+
+38:51 not profitable we weren't cash flow
+38:52 
+
+38:52 break even um we didn't have full
+38:54 
+
+38:54 reimbursement for Panorama yet almost as
+38:57 
+
+38:57 as complicated as genetically sequencing
+39:00 
+
+39:00 fetal and matern maternal cell-free DNA
+39:03 
+
+39:03 is getting reimbursed for it we had now
+39:06 
+
+39:06 offered our nip test to all pregnancies
+39:09 
+
+39:09 but we weren't getting the reimbursement
+39:12 
+
+39:12 in the lowrisk pregnancies we knew that
+39:14 
+
+39:14 the reimbursement was going to pick up
+39:16 
+
+39:16 but it was going to take time and the
+39:18 
+
+39:18 market had to understand this and we had
+39:20 
+
+39:20 to explain this and at the same time
+39:22 
+
+39:22 that we were explaining all of this I
+39:24 
+
+39:24 was telling the market guys we've got
+39:26 
+
+39:26 this incredible performance and oncology
+39:29 
+
+39:29 which we cannot
+39:35 
+
+39:35 ignore there were many investors who
+39:38 
+
+39:38 were skeptical of nera's approach uh and
+39:42 
+
+39:42 that they would not be able to
+39:43 
+
+39:43 simultanously pull off building a
+39:45 
+
+39:45 profitable maternal Health business and
+39:47 
+
+39:47 do the R&D work to eventually build an
+39:49 
+
+39:49 oncology business the amount of effort
+39:52 
+
+39:52 and focus it would take we would have to
+39:54 
+
+39:54 build out a sales team we would have to
+39:56 
+
+39:56 you know dedicate R&D effort to
+39:59 
+
+39:59 continuously improve the test scale the
+40:01 
+
+40:01 test you know build build out marketing
+40:03 
+
+40:03 teams and so on would that energy and
+40:06 
+
+40:06 that Focus we would have to give to a
+40:08 
+
+40:08 different Market would that hinder the
+40:10 
+
+40:10 growth of Women's Health Market public
+40:13 
+
+40:13 investors would repeatedly call me and
+40:16 
+
+40:16 implore me to convince the team to
+40:18 
+
+40:18 abandon this idea of building an
+40:19 
+
+40:19 oncology business some of them would
+40:21 
+
+40:21 write to the company and try to explain
+40:23 
+
+40:23 and make their case that it was full
+40:25 
+
+40:25 Hardy to do so there were meetings where
+40:28 
+
+40:28 every analyst question was about what's
+40:31 
+
+40:31 our plan when is the guideline coming
+40:33 
+
+40:33 out when are we going to fix
+40:33 
+
+40:33 reimbursement when are we going to
+40:35 
+
+40:35 reduce cogs and um there were several
+40:37 
+
+40:37 one-on-one investor meetings too where
+40:39 
+
+40:39 where the people would get really
+40:41 
+
+40:41 frustrated there were plenty of people
+40:43 
+
+40:43 who said don't do it it's too hard
+40:47 
+
+40:47 oncology the timelines are too long the
+40:51 
+
+40:51 reimbursement is too complicated but you
+40:54 
+
+40:54 come back to if you're producing
+40:55 
+
+40:55 something of enough value to a patient
+40:59 
+
+40:59 and enough value to a payer and to a
+41:02 
+
+41:02 physician the answer in the end was
+41:04 
+
+41:04 clear the team made The Crucible
+41:07 
+
+41:07 decision to move forward with oncology
+41:09 
+
+41:09 business and to pursue a test called
+41:11 
+
+41:11 signatera which tests for cancer
+41:14 
+
+41:14 recurrence by using tumor and blood
+41:16 
+
+41:16 samples to detect small traces of cancer
+41:19 
+
+41:19 in the body the buildout that was
+41:21 
+
+41:21 necessary to accommodate the oncology
+41:23 
+
+41:23 business uh was really reminiscent of
+41:25 
+
+41:25 the buildout that occurred uh when
+41:28 
+
+41:28 Panorama was launching just in terms of
+41:30 
+
+41:30 growing teams growing infrastructure we
+41:33 
+
+41:33 had to convey that the work that we were
+41:36 
+
+41:36 doing in cancer was going to be rigorous
+41:38 
+
+41:38 enough to get through the FDA that we
+41:40 
+
+41:40 were serious enough about this that we
+41:42 
+
+41:42 were going to hire the experts that we
+41:45 
+
+41:45 needed and that we were going to forge
+41:47 
+
+41:47 the relationships with the leading
+41:49 
+
+41:49 centers that we needed we adopted a
+41:51 
+
+41:51 mindset of growth that said there was an
+41:54 
+
+41:54 incredible amount of pressure to be
+41:56 
+
+41:56 profitable we needed to develop that
+41:60 
+
+41:60 plan to become profitable and show that
+42:03 
+
+42:03 we were meeting those Milestones along
+42:05 
+
+42:05 the way so there was a lot of planning
+42:07 
+
+42:07 angst that went into deciding how much
+42:10 
+
+42:10 of our resource we devoted to cost
+42:12 
+
+42:12 cutting projects efficiency projects
+42:14 
+
+42:14 versus the next shiny new thing resource
+42:18 
+
+42:18 allocation was a constant challenge so
+42:21 
+
+42:21 not only within Women's Health did we
+42:23 
+
+42:23 have to make sure that we were
+42:25 
+
+42:25 allocating resources appropriately to
+42:27 
+
+42:27 projects that would drive profitability
+42:29 
+
+42:29 you know reduced our reduced the cost of
+42:32 
+
+42:32 our test and also investing our
+42:35 
+
+42:35 resources in projects that were
+42:37 
+
+42:37 important for our long-term growth
+42:39 
+
+42:39 initiatives while also making sure that
+42:41 
+
+42:41 we were investing appropriate amount of
+42:42 
+
+42:42 resources in signatera that was one of
+42:45 
+
+42:45 the biggest
+42:46 
+
+42:46 challenges there was a time when the
+42:49 
+
+42:49 stock dropped down to $7 a share um
+42:52 
+
+42:52 which was intense there was a long
+42:55 
+
+42:55 period of time where we weren't
+42:56 
+
+42:56 profitable we hadn't seen a lot of the
+42:58 
+
+42:58 major reimbursement Milestones that
+43:01 
+
+43:01 people were looking for we were burning
+43:03 
+
+43:03 money we had nothing to really show for
+43:05 
+
+43:05 oncology um you know we we talked about
+43:08 
+
+43:08 this field and how exciting it was going
+43:10 
+
+43:10 to be but no one cared about the talk
+43:13 
+
+43:13 they wanted to see results and you know
+43:16 
+
+43:16 as a result I think the shares were down
+43:17 
+
+43:17 in the6 to8 range for probably three
+43:20 
+
+43:20 years and or maybe more people within
+43:24 
+
+43:24 the company were demotivated I think
+43:26 
+
+43:26 there was a sense of is is the company
+43:28 
+
+43:28 going to make it it was certainly
+43:30 
+
+43:30 demotivating it was demotivating to us
+43:32 
+
+43:32 but just as much to employees who had
+43:35 
+
+43:35 come in recently off of the high of an
+43:38 
+
+43:38 IPO and so making sure that we were all
+43:43 
+
+43:43 focused on a mission that we all knew
+43:46 
+
+43:46 would yield in the long run was uh was
+43:49 
+
+43:49 was what carried us through that we had
+43:52 
+
+43:52 to just kind of keep repeating that plan
+43:55 
+
+43:55 and flesh out that plan at a level that
+43:58 
+
+43:58 we absolutely believed it however rough
+44:00 
+
+44:00 it was we absolutely believed what we
+44:03 
+
+44:03 were saying and um besides that I mean I
+44:06 
+
+44:06 I think that you just have to believe in
+44:08 
+
+44:08 the mission and when the share price was
+44:10 
+
+44:10 $7 um you know we did lose some people
+44:13 
+
+44:13 unfortunately and there was a lot of
+44:15 
+
+44:15 Nays sales unfortunately but the core
+44:18 
+
+44:18 people who believed in that mission and
+44:21 
+
+44:21 lived for that mission weren't affected
+44:24 
+
+44:24 um you know at least not affected enough
+44:25 
+
+44:25 to to stop believing
+44:28 
+
+44:28 the one thing I will tell you which was
+44:29 
+
+44:29 extremely refreshing for me from the
+44:31 
+
+44:31 perspective of like you know working in
+44:33 
+
+44:33 Corporate America was that there was an
+44:35 
+
+44:35 incredible amount of like unified Vision
+44:38 
+
+44:38 you know it wasn't about making one
+44:40 
+
+44:40 business unit successful over another
+44:43 
+
+44:43 everybody had that shared Vision that
+44:45 
+
+44:45 the company had to become successful and
+44:47 
+
+44:47 so as a result there was a very strong
+44:49 
+
+44:49 sense of collaboration across all of the
+44:51 
+
+44:51 different business units across all of
+44:53 
+
+44:53 the different teams and that allowed us
+44:56 
+
+44:56 to find synergies AC across different
+44:58 
+
+44:58 projects we could leverage our resources
+45:00 
+
+45:00 in a smart way and also make really fast
+45:04 
+
+45:04 and good decisions because we were all
+45:07 
+
+45:07 extremely communicative and there was a
+45:09 
+
+45:09 really strong sense of collaboration
+45:11 
+
+45:11 across the company and then the other
+45:13 
+
+45:13 thing I would say is that it's a it's a
+45:14 
+
+45:14 testament to our teams whenever we're
+45:16 
+
+45:16 resource constrained which is which
+45:18 
+
+45:18 happens I'm sure it happens at every
+45:20 
+
+45:20 organization uh instead of seeing that
+45:22 
+
+45:22 as an insurmountable challenge like we
+45:24 
+
+45:24 just can't move forward the teams at n
+45:26 
+
+45:26 are always finding sort of ways to get
+45:28 
+
+45:28 the work done with minimal resources and
+45:32 
+
+45:32 that's something that I've really come
+45:33 
+
+45:33 to appreciate of NATA you know in my
+45:35 
+
+45:35 last five years here is that anytime
+45:38 
+
+45:38 there's a resource constraint problem
+45:39 
+
+45:39 we're always thinking about okay well
+45:41 
+
+45:41 then how do we do it in a different way
+45:42 
+
+45:42 with few resources rather than saying it
+45:44 
+
+45:44 just can't be done because we don't have
+45:45 
+
+45:45 enough resources so while there was a
+45:47 
+
+45:47 lot of tension I think it was the good
+45:49 
+
+45:49 kind of tension it really like led to
+45:52 
+
+45:52 very strong bonds among the people who
+45:53 
+
+45:53 were at NATA at the time the day we
+45:56 
+
+45:56 launched Signa was hug we weren't just a
+45:58 
+
+45:58 women's health company anymore you know
+46:00 
+
+46:00 personally my mom had been in the
+46:02 
+
+46:02 signara clinical trial since diagnosis
+46:05 
+
+46:05 in
+46:06 
+
+46:06 2016 I I remember sitting down with
+46:08 
+
+46:08 Jonathan Sheena at that time and you
+46:11 
+
+46:11 know I had wasn't a great week in my
+46:13 
+
+46:13 life and um he said well hey we should
+46:15 
+
+46:15 get her on this clinical trial right
+46:17 
+
+46:17 away and you know I didn't even know
+46:19 
+
+46:19 exactly what that meant um and looking
+46:21 
+
+46:21 back it definitely changed the course of
+46:23 
+
+46:23 my mom's care um and you know her
+46:27 
+
+46:27 ability to really get ahead of her
+46:30 
+
+46:30 diagnosis um she's now a 7year Survivor
+46:35 
+
+46:35 I mean the oncology division it's wild I
+46:37 
+
+46:37 was reflecting on oncology and just NATA
+46:41 
+
+46:41 and what's Wild is that in 2019 we were
+46:44 
+
+46:44 processing maybe a few thousand
+46:46 
+
+46:46 signatera samples a year maybe 5,000 or
+46:48 
+
+46:48 something but just in the first quarter
+46:51 
+
+46:51 of 2024 alone we processed over 100,000
+46:54 
+
+46:54 samples uh of signatera so it's not just
+46:57 
+
+46:57 that you know in 5 years we've gone from
+46:59 
+
+46:59 processing a few thousand samples to
+47:01 
+
+47:01 100,000 samples in a quarter but just
+47:04 
+
+47:04 you know year after year we're doubling
+47:05 
+
+47:05 the volume so I think that's an amazing
+47:08 
+
+47:08 milestone for
+47:09 
+
+47:09 signatera uh it's really quite
+47:12 
+
+47:12 incredible I mean minimal residual
+47:14 
+
+47:14 disease testing recurrence
+47:16 
+
+47:16 monitoring uh for solid tumors is
+47:20 
+
+47:20 essentially a market that was developed
+47:22 
+
+47:22 by by NATA and now it's considered to be
+47:25 
+
+47:25 an you know a huge multi-billion dollar
+47:27 
+
+47:27 market kids so I think that's that's a
+47:28 
+
+47:28 significant achievement for the oncology
+47:31 
+
+47:31 business unit we've built this enormous
+47:34 
+
+47:34 database now of early cancer samples
+47:37 
+
+47:37 based on the rapid uptake of signatera
+47:40 
+
+47:40 we now have about 50% of oncologists in
+47:42 
+
+47:42 the United States using signatera and
+47:44 
+
+47:44 we've got reimbursement for bladder
+47:47 
+
+47:47 cancer colon cancer breast cancer for
+47:50 
+
+47:50 all subtypes ovarian cancer IO
+47:53 
+
+47:53 monitoring for all solid tumor types as
+47:56 
+
+47:56 nura expanded its oncology division the
+47:58 
+
+47:58 company turned economics of Panorama
+48:00 
+
+48:00 profitable Panorama is now the most
+48:03 
+
+48:03 widely used prenatal test in America
+48:06 
+
+48:06 this year the company's on track to
+48:07 
+
+48:07 generate about $1.5 billion in revenue
+48:10 
+
+48:10 and that $7 share price has risen to
+48:13 
+
+48:13 well over
+48:15 
+
+48:15 $100 what's next for Nara um yeah I mean
+48:19 
+
+48:19 I think that uh there's another order of
+48:22 
+
+48:22 magnitude growth uh for Nara there's
+48:25 
+
+48:25 there's so much coming down the pike so
+48:27 
+
+48:27 we're about you know 55 to 60% of
+48:30 
+
+48:30 women's health genetic testing in the
+48:31 
+
+48:31 United States we are the leader in mrd
+48:35 
+
+48:35 oncology testing we've transformed the
+48:37 
+
+48:37 way you manage Cancer Care um we can
+48:40 
+
+48:40 catch the recurrence of cancers like um
+48:43 
+
+48:43 breast colon lung bladder cancer a year
+48:46 
+
+48:46 roughly before you see clinical symptoms
+48:49 
+
+48:49 um which is transformative we can
+48:51 
+
+48:51 continue to transform Healthcare where
+48:55 
+
+48:55 we have these huge pools of data and we
+48:58 
+
+48:58 can now curate these pools of data with
+49:00 
+
+49:00 large language models Matera and other
+49:04 
+
+49:04 projects where I'm involved are going to
+49:07 
+
+49:07 be using these curation of clinical data
+49:11 
+
+49:11 to build models for patients and you can
+49:14 
+
+49:14 model with all of this AI technology now
+49:18 
+
+49:18 people's susceptibility to
+49:20 
+
+49:20 disease we've built many different
+49:22 
+
+49:22 markets right so in the Women's Health
+49:25 
+
+49:25 Market you know the non-invasive
+49:26 
+
+49:26 prenatal test we are Market leaders uh
+49:29 
+
+49:29 oncology we built that market and we are
+49:32 
+
+49:32 Market leaders both are huge
+49:34 
+
+49:34 opportunities not only for us but for
+49:36 
+
+49:36 everybody else as well right so there
+49:39 
+
+49:39 are a lot of new players both in women's
+49:41 
+
+49:41 health as well as in in oncology so
+49:45 
+
+49:45 what's next on the Tera is that we can't
+49:47 
+
+49:47 slow down on our Innovation you know the
+49:50 
+
+49:50 Innovative and agile spirit that we had
+49:54 
+
+49:54 you know five or 10 years ago cannot go
+49:57 
+
+49:57 away we have to maintain that in order
+49:59 
+
+49:59 to maintain our Market leadership so
+50:01 
+
+50:01 we're not going to become a company that
+50:03 
+
+50:03 you know were successful and then sort
+50:05 
+
+50:05 of plateaued because you know we stopped
+50:09 
+
+50:09 innovating so what's next for us is you
+50:11 
+
+50:11 know a lot of innovation that's what we
+50:13 
+
+50:13 can that's what we work on every
+50:17 
+
+50:17 day the wonderful thing about NATA is
+50:20 
+
+50:20 the mission orientation of the company
+50:22 
+
+50:22 if you remember the original investment
+50:24 
+
+50:24 memo I wrote was you know to help people
+50:26 
+
+50:26 have healthy babies
+50:27 
+
+50:27 and if you go visit the n office and you
+50:30 
+
+50:30 walk around the office there are these
+50:32 
+
+50:32 walls where um we pin up the photographs
+50:36 
+
+50:36 of families that have sent in pictures
+50:39 
+
+50:39 of their children and it's
+50:41 
+
+50:41 moving it's uh it's really moving uh to
+50:45 
+
+50:45 work with a company that has that kind
+50:46 
+
+50:46 of impact on people to people thinking
+50:49 
+
+50:49 about embarking and taking these kinds
+50:51 
+
+50:51 of risks I would advise them not to be
+50:56 
+
+50:56 afraid of hard hard hard
+50:59 
+
+50:59 is uh is what creates value and creates
+51:03 
+
+51:03 a barrier to others if you prove to
+51:05 
+
+51:05 yourself that the value is there that
+51:07 
+
+51:07 people are willing to pay for it um then
+51:11 
+
+51:11 you know just because it's hard doesn't
+51:13 
+
+51:13 mean you shouldn't go after
+51:15 
+
+51:15 it it's like uh this quote from my mom
+51:18 
+
+51:18 where she would always say bless the
+51:20 
+
+51:20 obstacle will is faith if you've got a
+51:25 
+
+51:25 better technological approach and you
+51:27 
+
+51:27 trust the science uh that sort of gives
+51:30 
+
+51:30 you the faith that you really can bless
+51:32 
+
+51:32 the obstacle and have that resilience
+51:34 
+
+51:34 and patience and that was not so much a
+51:37 
+
+51:37 trick as just a state of mind um you put
+51:40 
+
+51:40 your faith in the science and you just
+51:43 
+
+51:43 plug away persistently and patiently and
+51:46 
+
+51:46 bless the obstacle cuz if you're
+51:47 
+
+51:47 persistent and the science doesn't lie
+51:50 
+
+51:50 it's very likely that you are going to
+51:52 
+
+51:52 find your path through
+51:56 
+
+51:56 [Music]
+52:02 
+
+52:02 this has been Crucible moments a podcast
+52:05 
+
+52:05 from Square
+52:07 
+
+52:07 [Music]
+52:14 
+
+52:14 Capital Crucible moments is produced by
+52:17 
+
+52:17 the Epic stories and Vox creative
+52:19 
+
+52:19 podcast teams along with seoa capital
+52:32 
+
+52:32 special thanks to Matthew Rabinowitz
+52:34 
+
+52:34 Jonathan Sheena Steve Chapman chitri
+52:36 
+
+52:36 Kali and Sarah Elliot for telling their
+52:39 
+
+52:39 stories
+52:50 
+
+52:50 [Music]

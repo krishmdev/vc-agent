@@ -1,0 +1,3997 @@
+00:00 in general this was our approach we are
+00:02 
+
+00:02 going to be aggressive also about
+00:04 
+
+00:04 Partnerships even though the partners
+00:07 
+
+00:07 could compete and overlap because you
+00:11 
+
+00:11 have to trust yourself that at least
+00:13 
+
+00:13 when it comes to spark you can build the
+00:16 
+
+00:16 best products who are you know kind of
+00:20 
+
+00:20 saying internally well you know if
+00:22 
+
+00:22 someone else is building a better
+00:23 
+
+00:23 product for spark then way we deserve to
+00:25 
+
+00:25 lose right so that's kind of always was
+00:28 
+
+00:28 the confidence that we can build the
+00:31 
+
+00:31 best product for spark and eventually um
+00:33 
+
+00:33 if spark wins we are going to
+00:35 
+
+00:35 [Music]
+00:51 
+
+00:51 win hi everyone welcome to training data
+00:54 
+
+00:54 today we're excited to welcome Yan stoa
+00:57 
+
+00:57 professor of computer science at UC
+00:58 
+
+00:58 Berkeley and co-founder of both data
+01:00 
+
+01:00 bricks in any scale he has a uniquely
+01:03 
+
+01:03 exceptional career as a leading
+01:04 
+
+01:04 professor and founder of companies at
+01:06 
+
+01:06 truly legendary scale today we dig into
+01:10 
+
+01:10 questions like data bricks positioning
+01:12 
+
+01:12 in AI how research projects like spark
+01:15 
+
+01:15 and Ray have led to the founding of data
+01:17 
+
+01:17 bricks in any scale how he ties his
+01:19 
+
+01:19 research projects closely to Industry
+01:21 
+
+01:21 from day one new projects out of his lab
+01:24 
+
+01:24 like VM mgpt LM CIS and vuna and what
+01:28 
+
+01:28 research Fields he's thinking about next
+01:32 
+
+01:32 Yan thank you so much for joining us
+01:33 
+
+01:33 today we're really excited to have you
+01:35 
+
+01:35 on the Pod to kick things off um we'd
+01:37 
+
+01:37 love to hear a little bit about where
+01:38 
+
+01:38 data bricks aspires to fit in the
+01:40 
+
+01:40 overall ecosystem especially with some
+01:42 
+
+01:42 of the recent launches what are you
+01:43 
+
+01:43 personally most excited about but thanks
+01:46 
+
+01:46 for having me here so um I think with
+01:50 
+
+01:50 with data breaks always we wanted to um
+01:55 
+
+01:55 provide the platform an inter platform
+01:59 
+
+01:59 um which helps our customers get most of
+02:04 
+
+02:04 the value uh out of their
+02:07 
+
+02:07 data uh and one of the best ways today
+02:12 
+
+02:12 to get value out of the data it's using
+02:15 
+
+02:15 this kind of new development in AI uh
+02:18 
+
+02:18 including lar language model and uh and
+02:21 
+
+02:21 everything else and the one thing is
+02:24 
+
+02:24 that to note that this was all always
+02:26 
+
+02:26 our vision from day one actually Spark
+02:30 
+
+02:30 um was created one of the main reason to
+02:33 
+
+02:33 create it m when build it it was to
+02:37 
+
+02:37 solve um to speed up uh classical
+02:40 
+
+02:40 machine learning algorithms right um and
+02:44 
+
+02:44 to scale them up yeah right and so in
+02:47 
+
+02:47 some sense for us it's full circle we
+02:50 
+
+02:50 started with with machine learning it's
+02:53 
+
+02:53 not classic machine learning and right
+02:56 
+
+02:56 now we are back and doing more and more
+02:59 
+
+02:59 AI uh uh because to take advantage and
+03:03 
+
+03:03 to create value out of the data so you
+03:05 
+
+03:05 mentioned that you know you founded
+03:07 
+
+03:07 around you know enabling classical
+03:09 
+
+03:09 machine learning how do you see the
+03:11 
+
+03:11 current AI moment as same and how do you
+03:14 
+
+03:14 see it as different um and I'm curious
+03:16 
+
+03:16 what are the specific things you're
+03:18 
+
+03:18 doing for this moment in time like the
+03:20 
+
+03:20 Mosaic acquisition things like that yeah
+03:23 
+
+03:23 so so certainly the momentum around AI
+03:27 
+
+03:27 it's it's on a different level today
+03:29 
+
+03:29 right it just look at the Investments
+03:31 
+
+03:31 out there right uh that should tell the
+03:35 
+
+03:35 you know um big part of the story um so
+03:39 
+
+03:39 I think that um obviously is like um
+03:44 
+
+03:44 what what the way we are looking at is
+03:46 
+
+03:46 that uh taking advantage and being
+03:49 
+
+03:49 successful is AI um is not is not easy
+03:53 
+
+03:53 right it's like the AI ecosystem is
+03:56 
+
+03:56 growing in complexity it's not just a
+03:58 
+
+03:58 simple call to a model right you need
+04:01 
+
+04:01 you have so many techniques now like Rag
+04:04 
+
+04:04 and raft and right to improve the
+04:08 
+
+04:08 accuracy of your application using AI
+04:11 
+
+04:11 right uh obviously everyone is excited
+04:14 
+
+04:14 about AI because it solve so many
+04:19 
+
+04:19 problems and there are so many you know
+04:21 
+
+04:21 generate so many headlines uh but but
+04:24 
+
+04:24 still it's it's not what you want you
+04:27 
+
+04:27 want a product of AI a lot of things
+04:30 
+
+04:30 still we are seeing today are fantastic
+04:32 
+
+04:32 demos right and demos are inspirational
+04:35 
+
+04:35 and when people see demos what you know
+04:38 
+
+04:38 whatever Char GPT Sol this kind of
+04:41 
+
+04:41 problems Olympics mat problem it's very
+04:44 
+
+04:44 easy to think that wow it doing that is
+04:47 
+
+04:47 going to do everything right so but
+04:50 
+
+04:50 going from demo to production it's a
+04:53 
+
+04:53 like I said it's a big step a demo means
+04:56 
+
+04:56 that you need to find an instance at
+04:58 
+
+04:58 least an instance to be really
+04:59 
+
+04:59 impressive
+05:00 
+
+05:00 right in production so it's like is
+05:02 
+
+05:02 there there exist such instance right
+05:05 
+
+05:05 but when you go from the demo to the
+05:08 
+
+05:08 product you when you have a product it
+05:10 
+
+05:10 has to work for all cages right so
+05:13 
+
+05:13 that's kind of the big gap so that's why
+05:15 
+
+05:15 where the effort is to improve the
+05:17 
+
+05:17 accuracy improve reliability of course
+05:21 
+
+05:21 eliminate hallucinations as much as you
+05:23 
+
+05:23 can uh and really also to find where it
+05:27 
+
+05:27 provides the best value you know for
+05:30 
+
+05:30 because you know you can apply AI to
+05:33 
+
+05:33 1,000 use cases but which are the use
+05:35 
+
+05:35 cases which are going to provide you the
+05:37 
+
+05:37 biggest value I think that's what we are
+05:40 
+
+05:40 also trying to help our customers so to
+05:42 
+
+05:42 navigate that how to successfully apply
+05:45 
+
+05:45 AI to their product to their to improve
+05:48 
+
+05:48 their services to their business in that
+05:51 
+
+05:51 vein one of the most interesting things
+05:52 
+
+05:52 that I thought came with the datab
+05:54 
+
+05:54 brecks AI launch was the new open
+05:57 
+
+05:57 general purpose llm created by datab
+05:59 
+
+05:59 brex Deep s um what was the reasoning
+06:02 
+
+06:02 behind training your own models open-
+06:04 
+
+06:04 sourcing them and what do you think are
+06:06 
+
+06:06 some of the best use cases for that
+06:07 
+
+06:07 model yeah so I think the main if you
+06:11 
+
+06:11 look at like our main Market it's
+06:14 
+
+06:14 Enterprise and Enterprise customers um
+06:18 
+
+06:18 they do have uh a lot of concerns about
+06:21 
+
+06:21 data privacy confidentiality and
+06:23 
+
+06:23 obviously they kind of one control it's
+06:25 
+
+06:25 not only that they want auditability
+06:27 
+
+06:27 right they want to be able to audit um
+06:30 
+
+06:30 what data is used what results have been
+06:33 
+
+06:33 uh have been used and what decision have
+06:35 
+
+06:35 been made with what data the decision
+06:37 
+
+06:37 have been made and um so um that's why
+06:43 
+
+06:43 in in general the Enterprises everything
+06:46 
+
+06:46 being equal migrate towards the open
+06:48 
+
+06:48 source models we can host you know on
+06:53 
+
+06:53 their machines or in their VPC and so
+06:56 
+
+06:56 forth um so it's it's one of the reason
+06:60 
+
+06:60 for releasing the the braks is to help
+07:03 
+
+07:03 our customers and then the customers say
+07:06 
+
+07:06 you know in many of these cases they
+07:08 
+
+07:08 start from this model and then fine tune
+07:10 
+
+07:10 with their own data and uh um to
+07:14 
+
+07:14 optimize for their particular use case
+07:16 
+
+07:16 right so and it's again so our our
+07:21 
+
+07:21 Enterprise customers um they want in you
+07:24 
+
+07:24 know open source models they want kind
+07:26 
+
+07:26 of control as much visibility as they
+07:28 
+
+07:28 can uh um uh they want privacy and
+07:32 
+
+07:32 confidentiality especially in the you
+07:34 
+
+07:34 know in the recent light of you know of
+07:36 
+
+07:36 the brides which are widely published um
+07:40 
+
+07:40 the other thing is that you know the DNA
+07:42 
+
+07:42 of data bricks was has been open source
+07:47 
+
+07:47 it's it's not only spark but Delta and
+07:50 
+
+07:50 ml flow and and and many others yeah the
+07:53 
+
+07:53 other thing I thought was fascinating
+07:54 
+
+07:54 about deep Rex's its excellent
+07:56 
+
+07:56 programming abilities what do you think
+07:58 
+
+07:58 has made it such a capable code model
+07:60 
+
+07:60 especially even compared to something
+08:01 
+
+08:01 like code Lama 70b look I think it's
+08:04 
+
+08:04 about obviously it's about data and how
+08:07 
+
+08:07 you train it and um it's one thing I
+08:11 
+
+08:11 think you know we you know one of the
+08:14 
+
+08:14 major data breaks uh Advantage is Mosaic
+08:17 
+
+08:17 right we have also the entire
+08:19 
+
+08:19 infrastructure for training which we
+08:22 
+
+08:22 have not not only about the data but the
+08:24 
+
+08:24 entire
+08:25 
+
+08:25 infrastructure um of training and
+08:27 
+
+08:27 fine-tuning and that is make it much e
+08:30 
+
+08:30 easier and most cost effective to
+08:33 
+
+08:33 optimize uh models for different use
+08:37 
+
+08:37 cases and obviously um the co-pilot
+08:41 
+
+08:41 programmability um it's it's one of the
+08:43 
+
+08:43 very important use cases in this uh in
+08:46 
+
+08:46 Enterprises because software Engineers
+08:48 
+
+08:48 are still very expensive yes you know so
+08:51 
+
+08:51 making the people you have um and it's
+08:54 
+
+08:54 not it's not only about that it's like
+08:56 
+
+08:56 hiring top software engineering is very
+08:59 
+
+08:59 difficult yeah right um if you are a
+09:01 
+
+09:01 large company like maybe I don't know
+09:03 
+
+09:03 you know 4G or something like that um
+09:07 
+
+09:07 and so making those people productive
+09:10 
+
+09:10 it's it's it's extremely important and
+09:12 
+
+09:12 critical for their business you
+09:14 
+
+09:14 mentioned Mosaic as a key part of the
+09:16 
+
+09:16 strategy I guess what do you think are
+09:18 
+
+09:18 your most important chess pieces in this
+09:20 
+
+09:20 kind of AI Battleground um I imagine mic
+09:24 
+
+09:24 is one of them um and you know are most
+09:28 
+
+09:28 of your Enterprise customers looking to
+09:29 
+
+09:29 train their own models uh and and and
+09:32 
+
+09:32 how does you know how does Mosaic and
+09:34 
+
+09:34 your other Acquisitions fit in with your
+09:35 
+
+09:35 customer needs yeah so I think there are
+09:39 
+
+09:39 if it's like um there are a few
+09:43 
+
+09:43 Enterprises who would like which so it's
+09:46 
+
+09:46 again it's pre trining and then it's
+09:48 
+
+09:48 fine-tuning and using the using the
+09:50 
+
+09:50 model in your own on your own hard in
+09:54 
+
+09:54 your own VPC on your own machines you
+09:57 
+
+09:57 you know um you rent it you own um so
+10:03 
+
+10:03 and you may expect there are few which
+10:04 
+
+10:04 are doing pre-training but there are
+10:06 
+
+10:06 still a few doing one to pretaining on
+10:08 
+
+10:08 their data you have enough data a lot of
+10:10 
+
+10:10 them they want to do fine tuning right
+10:13 
+
+10:13 because look if you are an Enterprise
+10:16 
+
+10:16 right uh and a
+10:17 
+
+10:17 company right and you want to improve
+10:19 
+
+10:19 your business right what do you have
+10:22 
+
+10:22 what do you have and which other don't
+10:25 
+
+10:25 the think you have which other don't
+10:28 
+
+10:28 it's the data the data about your
+10:30 
+
+10:30 business about your users right right so
+10:35 
+
+10:35 therefore because this is something you
+10:37 
+
+10:37 have and other do not you want to take
+10:39 
+
+10:39 advantage of that right so how do you
+10:42 
+
+10:42 take advantage of that again there are
+10:44 
+
+10:44 many ways and you try different ways to
+10:46 
+
+10:46 do it right one is about fine tuning you
+10:49 
+
+10:49 use a data and you have an open source
+10:51 
+
+10:51 model you fine tune on that right um the
+10:54 
+
+10:54 other one to use uh rack right and and
+10:58 
+
+10:58 and like that um
+11:00 
+
+11:00 and but and and so you you are going to
+11:03 
+
+11:03 do any of those but then you want to do
+11:06 
+
+11:06 like like I said in your own VPC right
+11:09 
+
+11:09 to preserve security to have you know
+11:11 
+
+11:11 104 security perimeter perimeter you
+11:14 
+
+11:14 want to do it in order to um protect
+11:17 
+
+11:17 confidentiality of your users and um
+11:21 
+
+11:21 obviously right now with
+11:23 
+
+11:23 gdpr the California consumer Privacy Act
+11:27 
+
+11:27 and so forth there all of Regulation and
+11:29 
+
+11:29 the the number of Regulation is going to
+11:31 
+
+11:31 increase so the the fact that you can
+11:35 
+
+11:35 having an open source models you can
+11:37 
+
+11:37 find tun you can use drag in your own
+11:40 
+
+11:40 VPC it's very compelling value
+11:43 
+
+11:43 proposition and are you finding that
+11:44 
+
+11:44 most of your customers want to go that
+11:46 
+
+11:46 approach versus you know open Ai and the
+11:50 
+
+11:50 Very powerful uh closed Source models on
+11:52 
+
+11:52 the market I think Enterprises and still
+11:54 
+
+11:54 we are still early on and um there are
+11:58 
+
+11:58 many Enterprises obviously using open AI
+11:60 
+
+11:60 for different use cages different applic
+12:02 
+
+12:02 different
+12:03 
+
+12:03 applications and um I'm sure open Ai
+12:09 
+
+12:09 and Microsoft aure will come with new
+12:12 
+
+12:12 products uh to provide better
+12:14 
+
+12:14 confidentiality better better better
+12:17 
+
+12:17 uh security um but at the end of the day
+12:21 
+
+12:21 what I was saying is that everything
+12:23 
+
+12:23 being
+12:24 
+
+12:24 equal right as a Enterprise I will
+12:29 
+
+12:29 prefer more control mhm security and
+12:33 
+
+12:33 strategic right it's like it's it's it's
+12:36 
+
+12:36 less kind of locking or something like
+12:38 
+
+12:38 that right so um so I think that's what
+12:41 
+
+12:41 what what what we are saying so if as as
+12:45 
+
+12:45 as open source models are going to catch
+12:48 
+
+12:48 up with uh the proprietary models in
+12:51 
+
+12:51 particular in the use cases which matter
+12:54 
+
+12:54 for the Enterprises it doesn't need to
+12:56 
+
+12:56 be you know perfect right for all the
+12:59 
+
+12:59 part use cases you just need to to be
+13:02 
+
+13:02 very competitive or it matters um then
+13:06 
+
+13:06 you know Enterprises will prefer uh
+13:09 
+
+13:09 these Solutions on which they have you
+13:12 
+
+13:12 know more control and more secure and
+13:16 
+
+13:16 how far away do you think we are from
+13:17 
+
+13:17 that moment like do you think we're
+13:19 
+
+13:19 there today we're all else is equal or
+13:22 
+
+13:22 when do you think we cross that dire in
+13:23 
+
+13:23 terms of the open source versus
+13:24 
+
+13:24 proprietary yeah open source being you
+13:26 
+
+13:26 know on par all else being equal for the
+13:28 
+
+13:28 core use cases
+13:30 
+
+13:30 um so you have a lot of use cases you
+13:33 
+
+13:33 know it's again it's the open source
+13:35 
+
+13:35 plus the data and you right now the
+13:38 
+
+13:38 application are more complex it's not
+13:39 
+
+13:39 just a call to a large language model
+13:41 
+
+13:41 you have this kind of you know what it
+13:44 
+
+13:44 called you know you compose you have you
+13:48 
+
+13:48 know application which build from diff
+13:51 
+
+13:51 many components and um that's what it
+13:56 
+
+13:56 called compound AI um and um so actually
+14:01 
+
+14:01 it it turns out that you know if you can
+14:04 
+
+14:04 um you know you you can build uh an
+14:07 
+
+14:07 applications for uh doing you know uh
+14:12 
+
+14:12 recommendation or something like that or
+14:15 
+
+14:15 or you know for programming for a for a
+14:18 
+
+14:18 particular copil or for a particular
+14:21 
+
+14:21 Tool uh you can actually do better than
+14:25 
+
+14:25 um uh even something like open AI on the
+14:28 
+
+14:28 latest at GPT because you have more data
+14:32 
+
+14:32 and the other things about about uh you
+14:36 
+
+14:36 know data breaks which um I think there
+14:39 
+
+14:39 also announcement about that is that um
+14:42 
+
+14:42 with a kind of unity catalog and and
+14:44 
+
+14:44 things like that you have access and you
+14:47 
+
+14:47 know also about the structure of the
+14:50 
+
+14:50 data which helps you tremendously to
+14:54 
+
+14:54 improve the accuracy of your
+14:57 
+
+14:57 applications right so it's not only the
+14:59 
+
+14:59 model right it's everything else you
+15:02 
+
+15:02 have around it and the quality of the
+15:04 
+
+15:04 data you you fed it in so I think that's
+15:09 
+
+15:09 uh it's it's it's a data stupid like you
+15:12 
+
+15:12 would say right like at the end of the
+15:14 
+
+15:14 day it sounds like control and security
+15:18 
+
+15:18 are two primary areas of of um things
+15:21 
+
+15:21 that enterprises really care about that
+15:22 
+
+15:22 you've noticed and and data bricks
+15:24 
+
+15:24 obviously has a tremendous Advantage
+15:26 
+
+15:26 with having access to data as well to
+15:28 
+
+15:28 help these compan use control and
+15:30 
+
+15:30 security for the customers exactly um
+15:34 
+
+15:34 how what about some other uh factors
+15:36 
+
+15:36 have you noticed that they also care
+15:38 
+
+15:38 about is how much does cost matter how
+15:40 
+
+15:40 much does diversity of other models
+15:42 
+
+15:42 matter I think um obviously cost is
+15:46 
+
+15:46 important and um it's like this right
+15:50 
+
+15:50 first of all you know you want to you
+15:53 
+
+15:53 know it's the initially the important
+15:55 
+
+15:55 thing is about the value yeah right can
+15:57 
+
+15:57 you provide the value right is like so
+15:60 
+
+15:60 that's the first thing and at that stage
+16:02 
+
+16:02 cost is not as important right uh and um
+16:06 
+
+16:06 and in in here actually in some of these
+16:08 
+
+16:08 early stages where people also try to
+16:11 
+
+16:11 use the most powerful model like open Ai
+16:13 
+
+16:13 and like that but once you cross that
+16:16 
+
+16:16 and you have a use case which um uh you
+16:21 
+
+16:21 conclude that is good add value to your
+16:23 
+
+16:23 business now you want to scale it up
+16:26 
+
+16:26 right and now you are talking about
+16:28 
+
+16:28 having more control control and more
+16:30 
+
+16:30 security and all of these things protect
+16:32 
+
+16:32 confidentiality of of the data privacy
+16:35 
+
+16:35 of your users and and so forth and now
+16:38 
+
+16:38 basically people consider how they are
+16:41 
+
+16:41 going to deploy it and this is where um
+16:44 
+
+16:44 having multiple choices and having like
+16:46 
+
+16:46 you said more control security it
+16:48 
+
+16:48 matters and where open source models and
+16:52 
+
+16:52 platforms like data breaks are um are
+16:55 
+
+16:55 very valuable right and again it's it's
+16:58 
+
+16:58 it's it's it's also all the other
+16:60 
+
+16:60 components which are together in data
+17:02 
+
+17:02 bre like I mentioned like like Unity
+17:04 
+
+17:04 catalog and everything else to increase
+17:08 
+
+17:08 the value of your applications yeah
+17:10 
+
+17:10 super interesting I'd love to talk about
+17:12 
+
+17:12 compound AI systems I think you guys
+17:14 
+
+17:14 probably coined or popularized the term
+17:17 
+
+17:17 and it seems like that's a lot of what
+17:19 
+
+17:19 the industry is latching on to now maybe
+17:21 
+
+17:21 for our audience can you explain what is
+17:23 
+
+17:23 a compound AI system and you know what
+17:25 
+
+17:25 are Enterprises thinking about when
+17:26 
+
+17:26 they're building these yeah so a
+17:28 
+
+17:28 compound system is it's
+17:32 
+
+17:32 basically consists of multiple
+17:35 
+
+17:35 components multiple calls to light
+17:38 
+
+17:38 language models or
+17:40 
+
+17:40 agents and um it's very much you can
+17:44 
+
+17:44 think about when you write a program you
+17:46 
+
+17:46 have multiple components you have
+17:48 
+
+17:48 different function procedures to do
+17:50 
+
+17:50 different things and then you then put
+17:52 
+
+17:52 them together to to create the program
+17:55 
+
+17:55 um uh the same is very similar here
+17:58 
+
+17:58 right you can can use um maybe one model
+18:03 
+
+18:03 um to pass the data to ex to extract the
+18:06 
+
+18:06 data you can use and then you can use
+18:09 
+
+18:09 for instance depending of the prompt you
+18:12 
+
+18:12 may use a model you know if the prompt
+18:14 
+
+18:14 is about Mass problems right it's like
+18:18 
+
+18:18 you can use one model if the prompt it's
+18:21 
+
+18:21 about maybe about uh programming you may
+18:24 
+
+18:24 use a different model right um and and
+18:28 
+
+18:28 then you may you may use for instance
+18:31 
+
+18:31 about formatting the the the result
+18:35 
+
+18:35 right that's another one you may use
+18:37 
+
+18:37 that for instance now more and more you
+18:39 
+
+18:39 are talking about agents and with agents
+18:41 
+
+18:41 you have to you know you call external
+18:45 
+
+18:45 uh services or functions like search or
+18:49 
+
+18:49 you can use a calculator and things like
+18:51 
+
+18:51 that so now you have different models
+18:53 
+
+18:53 you can do a better job and there are
+18:55 
+
+18:55 small models actually to take the prompt
+18:58 
+
+18:58 and convert it to a function call right
+19:02 
+
+19:02 so that's kind of what it is but the way
+19:05 
+
+19:05 to think about is like this the
+19:07 
+
+19:07 conceptual is like you write a program
+19:09 
+
+19:09 has different components and make it
+19:11 
+
+19:11 easier to develop um and deploy and
+19:15 
+
+19:15 manage the same thing you want to apply
+19:18 
+
+19:18 to AI applications so like a collection
+19:21 
+
+19:21 of smaller components that work together
+19:23 
+
+19:23 uh where the you know the some of the
+19:26 
+
+19:26 parts is is uh greater than than the one
+19:29 
+
+19:29 one monolith that you're placing I'd
+19:31 
+
+19:31 love to dive a little bit into the data
+19:32 
+
+19:32 Brick story quickly which I think is uh
+19:35 
+
+19:35 an incredible legendary journey over the
+19:38 
+
+19:38 last decade um but with a lot of nuances
+19:41 
+
+19:41 that I think maybe many folks don't yet
+19:43 
+
+19:43 understand from today looks like you
+19:45 
+
+19:45 were building the right company the
+19:46 
+
+19:46 right at the right place at the right
+19:48 
+
+19:48 time but the actual Nuance is that data
+19:50 
+
+19:50 bricks was originally started uh
+19:52 
+
+19:52 originally for data scientists it
+19:54 
+
+19:54 happened to uh cater well to machine
+19:57 
+
+19:57 learning workloads because of all the
+19:59 
+
+19:59 work that you were doing in data and
+20:00 
+
+20:00 over time you made the right strategic
+20:02 
+
+20:02 decisions to actually really grow with
+20:04 
+
+20:04 the AI Market can you share a little bit
+20:07 
+
+20:07 of some of the learnings and journey
+20:09 
+
+20:09 that got you to where data bricks was
+20:11 
+
+20:11 today yeah I I I I do think that um very
+20:14 
+
+20:14 happy to I do think that um a lot of a
+20:18 
+
+20:18 lot of it's also about being the right
+20:20 
+
+20:20 time the right place and things like
+20:22 
+
+20:22 that it's being lucky or I think that's
+20:25 
+
+20:25 all all of this is true um and there are
+20:29 
+
+20:29 many things needs to go right to be
+20:32 
+
+20:32 successful some of the things you
+20:34 
+
+20:34 control some of the things you do not
+20:36 
+
+20:36 control um when we started indeed um we
+20:39 
+
+20:39 are focusing to build uh a product a
+20:43 
+
+20:43 cloud product hostage product for data
+20:45 
+
+20:45 scientist right we have this kind of uh
+20:48 
+
+20:48 notebook and um and we have provided
+20:52 
+
+20:52 hostage spark and and and we we targeted
+20:55 
+
+20:55 data
+20:56 
+
+20:56 scientist and um we targeted data
+20:60 
+
+20:60 scientist um it was um one of the reason
+21:04 
+
+21:04 we targeted the data scientist because
+21:07 
+
+21:07 again we all have like I mentioned spark
+21:09 
+
+21:09 early on Al also targeting machine
+21:12 
+
+21:12 learning uh application machine learning
+21:15 
+
+21:15 workloads and at that time there were
+21:17 
+
+21:17 not many data scientists it was like
+21:20 
+
+21:20 2013 however when you look around uh
+21:24 
+
+21:24 most of the universities already have
+21:26 
+
+21:26 data science uh programs
+21:29 
+
+21:29 right degrees you're starting to offer
+21:31 
+
+21:31 data science degrees and you're saying
+21:33 
+
+21:33 okay we are it seems a good you know
+21:35 
+
+21:35 pass forward um a good market and um I
+21:41 
+
+21:41 remember you're looking at LinkedIn to
+21:43 
+
+21:43 see how many data scientist are there
+21:45 
+
+21:45 because our users not not initially they
+21:48 
+
+21:48 not as many
+21:50 
+
+21:50 thousands um esec especially when you
+21:52 
+
+21:52 compare the data uh with uh database
+21:56 
+
+21:56 analy analyst and engineers and so forth
+21:59 
+
+21:59 uh he s to build and I think it was you
+22:01 
+
+22:01 know a reasonable you know good product
+22:03 
+
+22:03 and then uh you know we uh started to
+22:06 
+
+22:06 grow quickly in terms of the number of
+22:08 
+
+22:08 you know customers initially we had
+22:10 
+
+22:10 small
+22:12 
+
+22:12 customers and um uh but then you know
+22:16 
+
+22:16 after and and and still you know the
+22:18 
+
+22:18 interactive analysis the data science
+22:20 
+
+22:20 has been for a long time it's actually
+22:22 
+
+22:22 one of the uh biggest workloads uh in
+22:26 
+
+22:26 particular in terms of Revenue um uh
+22:29 
+
+22:29 because the interactive workloads are
+22:31 
+
+22:31 price higher than batch workloads um uh
+22:35 
+
+22:35 but and and I I remember that you know I
+22:37 
+
+22:37 sold to these companies to use you know
+22:40 
+
+22:40 uh data braks uh and they are
+22:44 
+
+22:44 aspirationally buying it to do data you
+22:46 
+
+22:46 know uh to the data science Ai and when
+22:50 
+
+22:50 um you know after a few months we go to
+22:53 
+
+22:53 them because we didn't go much you know
+22:57 
+
+22:57 earlier uh because saw that they're
+22:59 
+
+22:59 doing well they usage just growing and
+23:02 
+
+23:02 everything seems good so no no reason to
+23:05 
+
+23:05 worry so we went back to them and said
+23:07 
+
+23:07 you know to see what they are doing
+23:10 
+
+23:10 maybe you can write a blog post or
+23:12 
+
+23:12 whatever they doing right is like
+23:14 
+
+23:14 marketing and everything the surprise is
+23:16 
+
+23:16 that very few are doing actually machine
+23:18 
+
+23:18 learning at that time and we as them
+23:20 
+
+23:20 what what happens right or still well it
+23:23 
+
+23:23 turns out that
+23:24 
+
+23:24 obviously that in order to do machine
+23:26 
+
+23:26 learning you need data like we discussed
+23:28 
+
+23:28 early on
+23:29 
+
+23:29 and they realize that for the particular
+23:31 
+
+23:31 application they wanted they don't have
+23:33 
+
+23:33 the the data they need so they need to
+23:36 
+
+23:36 now to put maybe to add new logs you
+23:40 
+
+23:40 know to to collect new logs in their
+23:42 
+
+23:42 products and like that um and also they
+23:45 
+
+23:45 need to clean up the data uh you know
+23:48 
+
+23:48 curate the data and so forth so now the
+23:52 
+
+23:52 we are lucky because Spar is very good
+23:54 
+
+23:54 also for data engineering right for data
+23:58 
+
+23:58 processing right right it's a data
+23:59 
+
+23:59 procing tool at the end of the day and
+24:02 
+
+24:02 so they are using using using spark for
+24:07 
+
+24:07 for uh uh for data engineering um and
+24:10 
+
+24:10 and then obviously we we we start
+24:12 
+
+24:12 focusing also on serving data Engineers
+24:15 
+
+24:15 much more than before um and uh uh and
+24:19 
+
+24:19 you know that's how we started and and
+24:22 
+
+24:22 then obviously when later now you know
+24:27 
+
+24:27 God the you know data engineering right
+24:31 
+
+24:31 and uh still you know have all these
+24:34 
+
+24:34 data scientist exploring and starting to
+24:36 
+
+24:36 build models and then it is a very
+24:39 
+
+24:39 natural extension to start to add more
+24:43 
+
+24:43 products for our user for our customers
+24:46 
+
+24:46 like I mentioned to get more value out
+24:48 
+
+24:48 of their data and that meant
+24:51 
+
+24:51 building machine learning models and
+24:55 
+
+24:55 using the open source models very
+24:58 
+
+24:58 interesting I want to talk about the
+24:59 
+
+24:59 data bricks Microsoft partnership uh I
+25:02 
+
+25:02 think that was the stuff of Legends and
+25:04 
+
+25:04 I think still probably one of the only
+25:06 
+
+25:06 case studies of a successful um like
+25:09 
+
+25:09 truly
+25:10 
+
+25:10 transformative um uh partnership maybe
+25:13 
+
+25:13 walk us through what that partnership
+25:15 
+
+25:15 was um was it a bet the company moment
+25:18 
+
+25:18 at the time do you think datab bricks
+25:19 
+
+25:19 would have become what it became um if
+25:21 
+
+25:21 you hadn't struck that partnership maybe
+25:23 
+
+25:23 just talk about that look obviously the
+25:26 
+
+25:26 partnership with Microsoft was
+25:29 
+
+25:29 was was a great partnership for us we
+25:31 
+
+25:31 are um the one thing I want to say that
+25:34 
+
+25:34 in in and and this is most visible we
+25:37 
+
+25:37 are very uh from the day one we are
+25:40 
+
+25:40 actually very um focused on the
+25:42 
+
+25:42 Partnerships uh our idea was always you
+25:45 
+
+25:45 know like um we know we
+25:48 
+
+25:48 make um spark successful you know
+25:53 
+
+25:53 hopefully the facto standard for data
+25:55 
+
+25:55 processing and then we make uh data
+25:58 
+
+25:58 breaks best place to run spark so early
+26:01 
+
+26:01 on actually you know we we started you
+26:03 
+
+26:03 know a few months in the life of the
+26:05 
+
+26:05 company we had this kind of partnership
+26:07 
+
+26:07 with cloud data uh and and then we had
+26:11 
+
+26:11 with honor and this partnership was
+26:13 
+
+26:13 mainly because we are in you know to
+26:15 
+
+26:15 advance spark right because spark if it
+26:19 
+
+26:19 was created
+26:21 
+
+26:21 in Hado ecosystem right and this had the
+26:25 
+
+26:25 Hado companies right right and um so we
+26:29 
+
+26:29 we had this partnership or data stacks
+26:31 
+
+26:31 and so forth so this was like in the
+26:33 
+
+26:33 first year or so we had all this
+26:35 
+
+26:35 partnership despite the fact that um
+26:38 
+
+26:38 some of these companies we knew that
+26:40 
+
+26:40 they could become our competitors right
+26:42 
+
+26:42 because you know just uh making them is
+26:46 
+
+26:46 making and helping them um to um to
+26:51 
+
+26:51 deploy to manage and to sell spark Based
+26:54 
+
+26:54 Services right it's like um so so in
+26:58 
+
+26:58 some sense you you know uh the Microsoft
+27:01 
+
+27:01 is like it's it's um it fits our um uh
+27:06 
+
+27:06 kind of um approach of trying to you
+27:10 
+
+27:10 know to strike as much you know do
+27:13 
+
+27:13 Partnerships with other being aggressive
+27:17 
+
+27:17 doing partnership with other um you know
+27:21 
+
+27:21 organizations in the Eos system even
+27:24 
+
+27:24 though again in some cases it was not a
+27:28 
+
+27:28 clear cut whether we are you know they
+27:30 
+
+27:30 are going to compete with us or not
+27:32 
+
+27:32 right so very just growing the ecosystem
+27:34 
+
+27:34 and growing spark that was the priority
+27:38 
+
+27:38 um we even had at some point a
+27:40 
+
+27:40 partnership with snowflake so it was um
+27:45 
+
+27:45 very
+27:46 
+
+27:46 um it requires a lot of heavy lifted
+27:50 
+
+27:50 lifting so we always look for
+27:52 
+
+27:52 partnership which has which are
+27:54 
+
+27:54 meaningful right and I think great
+27:58 
+
+27:58 negotiation you know uh uh Ali and so
+28:02 
+
+28:02 forth did a fantastic job there um but
+28:06 
+
+28:06 at the end of the day we also need to
+28:09 
+
+28:09 commit to it it's like it it took to do
+28:13 
+
+28:13 to build the aure data breaks so we were
+28:15 
+
+28:15 an iws before that it took you know tens
+28:19 
+
+28:19 of engineer one year and you are small
+28:21 
+
+28:21 company at that point so it was a huge
+28:24 
+
+28:24 commitment and a huge bet also from our
+28:26 
+
+28:26 perspective to do that
+28:29 
+
+28:29 and um yeah and we uh you know I think
+28:35 
+
+28:35 engineering and everyone executed very
+28:37 
+
+28:37 well and it was a successful product
+28:40 
+
+28:40 right and um you know Microsoft was
+28:43 
+
+28:43 great Partners you know and um yeah this
+28:48 
+
+28:48 what happens we are obviously a bit
+28:51 
+
+28:51 lucky but in general this was our
+28:54 
+
+28:54 approach we are going to be aggressive
+28:56 
+
+28:56 also about Partnerships even though the
+28:58 
+
+28:58 partners could compete and overlap
+29:02 
+
+29:02 because you have to trust yourself that
+29:05 
+
+29:05 at least when it comes to spark you can
+29:07 
+
+29:07 build the
+29:08 
+
+29:08 best products we are you know kind of
+29:12 
+
+29:12 saying internally well you know if
+29:14 
+
+29:14 someone else is building a better
+29:16 
+
+29:16 product for spark than we we deserve to
+29:18 
+
+29:18 lose right so that's kind of always was
+29:20 
+
+29:20 the confidence that we can build the
+29:23 
+
+29:23 best product for spark and eventually um
+29:26 
+
+29:26 if spark wins we are going to win do you
+29:28 
+
+29:28 think that dat bricks would have become
+29:29 
+
+29:29 the company that is today uh without
+29:31 
+
+29:31 that Microsoft partnership I think so it
+29:34 
+
+29:34 maybe to to could have taken a little
+29:36 
+
+29:36 bit longer yeah but yeah I think so
+29:40 
+
+29:40 right we would have still have a good
+29:42 
+
+29:42 very good offering on aour um like we
+29:46 
+
+29:46 have with gcp would have taken a bit
+29:49 
+
+29:49 longer but um I don't
+29:52 
+
+29:52 see any fundamental change in Dynamics
+29:56 
+
+29:56 right because one of the advantage of
+29:58 
+
+29:58 data Fabrics of course is one spark W
+30:02 
+
+30:02 and we could provide the best product
+30:03 
+
+30:03 for spark we are in a very strong po
+30:07 
+
+30:07 position and compared with other clouds
+30:10 
+
+30:10 remember that one of our advantage like
+30:13 
+
+30:13 everyone else Advantage like confluent
+30:16 
+
+30:16 and so forth is that you can provide the
+30:18 
+
+30:18 service on multiple
+30:20 
+
+30:20 clouds right and multiple clouds is you
+30:25 
+
+30:25 know multic cloud has been you know more
+30:27 
+
+30:27 and more
+30:29 
+
+30:29 uh very strategic for especially for
+30:32 
+
+30:32 large Enterprises we do not want
+30:34 
+
+30:34 necessarily to be locked in or to want
+30:36 
+
+30:36 the want choice so yeah I love the
+30:39 
+
+30:39 confidence and conviction that you have
+30:40 
+
+30:40 in spark and your own execution
+30:42 
+
+30:42 abilities internally but that married
+30:45 
+
+30:45 with the practicality and aggressiveness
+30:47 
+
+30:47 of of winning as a business and and
+30:50 
+
+30:50 pursuing the right Partnerships and
+30:51 
+
+30:51 doing whatever it takes to win yeah yeah
+30:54 
+
+30:54 I mean you try to simplify things that's
+30:57 
+
+30:57 what I was saying you know know like
+30:59 
+
+30:59 initially when we said like look you
+31:01 
+
+31:01 know like we have to make spark Queen
+31:03 
+
+31:03 you know there are many I remember we
+31:06 
+
+31:06 look at all these combinations it's like
+31:08 
+
+31:08 it's like spark
+31:12 
+
+31:12 Queens the product fails right or spark
+31:15 
+
+31:15 loses but we have a product which is
+31:17 
+
+31:17 successful or both fail no that's not
+31:19 
+
+31:19 very interesting or both both are
+31:21 
+
+31:21 successful right and we convince
+31:23 
+
+31:23 ourselves
+31:24 
+
+31:24 that um you know we need to bet on spark
+31:28 
+
+31:28 to win because that's a most likely yeah
+31:32 
+
+31:32 way also for the product to win again
+31:34 
+
+31:34 for better or worse right but is
+31:36 
+
+31:36 sometimes you know there there could be
+31:38 
+
+31:38 many ways to success right and you in
+31:40 
+
+31:40 retrospect you cannot go back and you
+31:42 
+
+31:42 know and and and try other Alternatives
+31:44 
+
+31:44 maybe there are better Alternatives at
+31:46 
+
+31:46 that point but it's important to commit
+31:48 
+
+31:48 to un sync which and which hopefully
+31:50 
+
+31:50 it's it's a reasonably good solution a
+31:52 
+
+31:52 good pass forward right again there are
+31:55 
+
+31:55 many many passes to the peck right the
+31:57 
+
+31:57 most important is to commit one which
+31:59 
+
+31:59 leads to the peak right it's like not
+32:01 
+
+32:01 the shortest one not the easiest one it
+32:03 
+
+32:03 may not be but it has to be one to get
+32:05 
+
+32:05 there and to the highest and and that's
+32:06 
+
+32:06 why you said okay spark has to has to
+32:08 
+
+32:08 win right and we have to build you know
+32:12 
+
+32:12 the best need to be the best place or
+32:15 
+
+32:15 for spark and then we are saying you
+32:17 
+
+32:17 know to be the best place for data and
+32:20 
+
+32:20 AI we need to eventually we knew and we
+32:23 
+
+32:23 we assume that if you are to be hugely
+32:25 
+
+32:25 successful you are going to um uh you
+32:28 
+
+32:28 know to to go beyond spark right it's
+32:30 
+
+32:30 like that's why the name of the company
+32:32 
+
+32:32 data break is not spark Labs or
+32:33 
+
+32:33 something like that yeah um so so that's
+32:36 
+
+32:36 kind of you try to simplify you once you
+32:39 
+
+32:39 you you do that and you start to execute
+32:41 
+
+32:41 okay so you want to make Ray successful
+32:43 
+
+32:43 as an open source so you want everyone
+32:45 
+
+32:45 to use it so that's why you do cloud
+32:47 
+
+32:47 data and TR Horton ORS and so forth to
+32:49 
+
+32:49 do to uh you know to um to do to do this
+32:53 
+
+32:53 partnership because at that time there
+32:54 
+
+32:54 are other solution you know people knew
+32:56 
+
+32:56 that had do M red because um you know
+33:01 
+
+33:01 these times have passed so to speak so
+33:03 
+
+33:03 they are talking about new systems there
+33:06 
+
+33:06 are like TZ which actually honor as this
+33:09 
+
+33:09 project and so forth so that was very
+33:11 
+
+33:11 important and then for it was also for
+33:14 
+
+33:14 data science it was kind of when we bet
+33:19 
+
+33:19 is like it's a niche and you know we and
+33:22 
+
+33:22 we can we s that we can build the best
+33:25 
+
+33:25 product for it um so you know so so
+33:29 
+
+33:29 that's that's kind of you need and you
+33:31 
+
+33:31 need to have ultimately confidence in
+33:33 
+
+33:33 what you bet on right you have to bet
+33:36 
+
+33:36 right right because you are a small
+33:38 
+
+33:38 company right if you don't bet how you
+33:40 
+
+33:40 are going to win right everyone right
+33:43 
+
+33:43 and then you need to have some level of
+33:44 
+
+33:44 conviction right to do it and um and uh
+33:49 
+
+33:49 yeah I'd love to kind of pull on that
+33:51 
+
+33:51 thread and and switch gears a little bit
+33:53 
+
+33:53 into tying a lot of the entrepreneurial
+33:56 
+
+33:56 path that you have with a lot of the
+33:57 
+
+33:57 acad mic and research background that
+34:00 
+
+34:00 that were the roots for the beginnings
+34:02 
+
+34:02 of these companies you have a very
+34:05 
+
+34:05 unique career as both a leading
+34:07 
+
+34:07 professor and a founder of multiple
+34:09 
+
+34:09 unicorn and decacorn companies I don't
+34:12 
+
+34:12 think there's anyone who comes close to
+34:14 
+
+34:14 pursuing both disciplines at the scale
+34:17 
+
+34:17 of success that you have um maybe
+34:19 
+
+34:19 specifically you know Reay with any
+34:21 
+
+34:21 scale array to any scale spark to data
+34:25 
+
+34:25 bricks take us into your head what what
+34:28 
+
+34:28 is the process in which these research
+34:30 
+
+34:30 Fields start to ruminate in your mind
+34:33 
+
+34:33 when do you kind of continue to give
+34:35 
+
+34:35 them resources to develop and then when
+34:37 
+
+34:37 do you know that it's the time to then
+34:39 
+
+34:39 start a company to pursue that in in a
+34:41 
+
+34:41 better more uh open and uh fast way
+34:46 
+
+34:46 that's a that's a good but hard question
+34:49 
+
+34:49 um so um I think that um and by the way
+34:54 
+
+34:54 I like to pref to to to profess to you
+34:57 
+
+34:57 know to say that to start with saying
+34:59 
+
+34:59 that
+35:01 
+
+35:01 um it's obviously also a lot of luck
+35:04 
+
+35:04 involved and uh you know being in a
+35:06 
+
+35:06 place at B like berland having fantastic
+35:10 
+
+35:10 students and colleagues around you it's
+35:12 
+
+35:12 you couldn't couldn't do without that
+35:15 
+
+35:15 right it's like it's it's is their marit
+35:17 
+
+35:17 probably more than mine so um but one
+35:20 
+
+35:20 thing I think is that I've been always
+35:23 
+
+35:23 trying to focus um it's on the problem
+35:27 
+
+35:27 yeah right uh actually when um even to
+35:31 
+
+35:31 my students I'm telling them is like uh
+35:34 
+
+35:34 the most one of the most important
+35:35 
+
+35:35 things you need to do is to figure out
+35:37 
+
+35:37 what problems you are going to work on
+35:39 
+
+35:39 yeah right because it's like everyone
+35:43 
+
+35:43 which comes to b or the stop schools
+35:45 
+
+35:45 they are one thing they have in common
+35:48 
+
+35:48 they are good problem solvers right they
+35:51 
+
+35:51 have good grade you know good scores you
+35:54 
+
+35:54 know write papers paper is about solving
+35:57 
+
+35:57 a problem so therefore the if all of
+35:60 
+
+35:60 them are good Problem Problem Solver the
+36:02 
+
+36:02 differentiator is a problem you are
+36:03 
+
+36:03 working on right
+36:05 
+
+36:05 yes so you start with that and um
+36:10 
+
+36:10 also I think it's like um in the uh
+36:14 
+
+36:14 especially at at berlay um it's um you
+36:19 
+
+36:19 get you get exposed of kind of not only
+36:23 
+
+36:23 new ideas but willingness to take risk
+36:25 
+
+36:25 and get into new areas uh in some sense
+36:29 
+
+36:29 and this is what I like about berlay um
+36:31 
+
+36:31 if you look traditionally berlay um
+36:34 
+
+36:34 among top schools they are the first to
+36:39 
+
+36:39 open new areas is like of course the
+36:41 
+
+36:41 risk processor it was it was Standford
+36:44 
+
+36:44 as well um but databases networking yeah
+36:48 
+
+36:48 um sensor networks um even in open
+36:52 
+
+36:52 source with uh uh the Unix
+36:56 
+
+36:56 BSD um you know tcpip right part of the
+37:00 
+
+37:00 so they are always kind of more you know
+37:03 
+
+37:03 a little bit uh trying to experiment so
+37:06 
+
+37:06 I think that's kind of uh you know
+37:08 
+
+37:08 that's kind of culture I really
+37:10 
+
+37:10 resonated with it and then the other
+37:13 
+
+37:13 thing what happened is B we have these
+37:15 
+
+37:15 slabs um which are like fiveyear slabs
+37:18 
+
+37:18 which basically each lab has kind of a
+37:20 
+
+37:20 vision and uh you know it's a group of
+37:23 
+
+37:23 Faculty coming together which believe in
+37:25 
+
+37:25 that vision and with their students and
+37:27 
+
+37:27 try to make it happen over you know five
+37:29 
+
+37:29 you know five years and um this you know
+37:32 
+
+37:32 has a lot of great you know impact you
+37:36 
+
+37:36 know like all the way it started this
+37:38 
+
+37:38 tradition started 40 50 years ago with
+37:41 
+
+37:41 they patters on Randy cuts and others
+37:43 
+
+37:43 and um they built you know risk uh rate
+37:47 
+
+37:47 redundant areay of inexpensive disc now
+37:49 
+
+37:49 network of for station is commodity you
+37:51 
+
+37:51 know this is uh everyone is building now
+37:54 
+
+37:54 this huge cluster from commodity
+37:56 
+
+37:56 machines
+37:58 
+
+37:58 um and and and again and many more um so
+38:02 
+
+38:02 there are these kind of elements and
+38:04 
+
+38:04 these labs are it's a very strong
+38:06 
+
+38:06 relation with
+38:07 
+
+38:07 industry right connection they are
+38:10 
+
+38:10 funded since I came when I came actually
+38:12 
+
+38:12 saw one change happened before these
+38:14 
+
+38:14 labs are also supported by government in
+38:18 
+
+38:18 particular DARPA but it was that point
+38:20 
+
+38:20 in which um that kind
+38:23 
+
+38:23 of at least that particular DARPA
+38:26 
+
+38:26 funding dried yeah yeah so kind of when
+38:30 
+
+38:30 I came to bero this kind of now we need
+38:32 
+
+38:32 to go and remember you know uh you know
+38:36 
+
+38:36 getting um and more money from industry
+38:40 
+
+38:40 I remember from Google first time we got
+38:43 
+
+38:43 and it was unheard by then because you
+38:44 
+
+38:44 were asking for 500,000 per year right
+38:48 
+
+38:48 for four years so but you know we got
+38:51 
+
+38:51 and this is we we got so now you have
+38:53 
+
+38:53 also this kind of very tight connection
+38:55 
+
+38:55 with the industry it's a very good
+38:57 
+
+38:57 environment to see see the problems
+38:58 
+
+38:58 right to understand the
+39:00 
+
+39:00 problems right and then you can you can
+39:03 
+
+39:03 you can you can you can see that and you
+39:05 
+
+39:05 you try to to think about also
+39:08 
+
+39:08 about obviously about Trends right
+39:12 
+
+39:12 because Trends are important right you
+39:14 
+
+39:14 have to be aligned with the secular
+39:15 
+
+39:15 Trends right you need to bet on the
+39:17 
+
+39:17 right Trends because these are things
+39:18 
+
+39:18 you cannot change right or or is very
+39:21 
+
+39:21 hard to change um so you are not aligned
+39:24 
+
+39:24 it's it's it's it's not good yeah um and
+39:28 
+
+39:28 these Trends actually there are multiple
+39:30 
+
+39:30 Trends and uh the multiple Trends kind
+39:34 
+
+39:34 of open gaps between them and these are
+39:37 
+
+39:37 kind of opportunities for problems like
+39:38 
+
+39:38 for instance for you know Big Data it
+39:41 
+
+39:41 was clear you have more and more
+39:44 
+
+39:44 data and the amount of data people
+39:47 
+
+39:47 collecting or just growing right it was
+39:50 
+
+39:50 pretty clear right it's like Google has
+39:52 
+
+39:52 has seen that years before and they
+39:54 
+
+39:54 built all the systems but now everyone
+39:56 
+
+39:56 want to to emulate that right that's why
+39:58 
+
+39:58 hados cre it right and then you see you
+40:03 
+
+40:03 start to see again you look at that and
+40:05 
+
+40:05 you are working in that area and we
+40:10 
+
+40:10 are um you know we have all these hadu
+40:13 
+
+40:13 people coming to our Retreats on these
+40:15 
+
+40:15 kind of labs and we are you know friends
+40:17 
+
+40:17 with them and um we started to see
+40:20 
+
+40:20 problems and it and then you try to use
+40:22 
+
+40:22 them and and then you just like for
+40:24 
+
+40:24 instance um there are two things which
+40:27 
+
+40:27 happened
+40:28 
+
+40:28 one thing is about um a group in in in
+40:31 
+
+40:31 our lab oh by the way and the other
+40:33 
+
+40:33 thing what happens in these labs they
+40:35 
+
+40:35 are interdisiplinary yeah right it was
+40:37 
+
+40:37 people you know we are in this kind of
+40:39 
+
+40:39 Rat Lab was that um it was people from
+40:43 
+
+40:43 machine Learning Systems databases
+40:46 
+
+40:46 networking right so there are these
+40:48 
+
+40:48 groups of Michael Jordan students which
+40:50 
+
+40:50 wanted to compete to um to this Netflix
+40:54 
+
+40:54 challenge that Netflix released some
+40:56 
+
+40:56 data basically and ask for people to
+40:59 
+
+40:59 provide recommendations come up with
+41:02 
+
+41:02 recommendation to build recommendation
+41:04 
+
+41:04 algorithm systems so that you know to
+41:08 
+
+41:08 beat their own recommendation so they
+41:10 
+
+41:10 come to us and okay it's a lot of data
+41:13 
+
+41:13 how can we what can we do about it right
+41:15 
+
+41:15 we want to and you know told them to do
+41:18 
+
+41:18 yes Hadoop and but Hado was very slow
+41:22 
+
+41:22 right because you know for and then you
+41:24 
+
+41:24 know M they put together something
+41:27 
+
+41:27 quickly to for solving this problem in
+41:29 
+
+41:29 which the data was kept in memory uh the
+41:32 
+
+41:32 other thing I've seen is about like I
+41:34 
+
+41:34 have a previous company conviva and it's
+41:36 
+
+41:36 about his analytics company and kind of
+41:40 
+
+41:40 it was very slow and we tried to do it
+41:43 
+
+41:43 you know it's like you to for out
+41:46 
+
+41:46 queries and there is no way to do it and
+41:48 
+
+41:48 again the keeping the data in memory was
+41:50 
+
+41:50 a solution it's one solution that's kind
+41:52 
+
+41:52 of how it started that's that's that's
+41:54 
+
+41:54 that's that's one thing right and you
+41:55 
+
+41:55 look at the trends yeah it's obvious
+41:57 
+
+41:57 right it's like on one hand um you you
+41:60 
+
+41:60 know have more and more data growing
+42:02 
+
+42:02 faster than the more slow so you need to
+42:05 
+
+42:05 have is not going to fit on one machine
+42:08 
+
+42:08 and therefore you need to use multiple
+42:09 
+
+42:09 machines and then the only other
+42:12 
+
+42:12 question is that are you going to have
+42:13 
+
+42:13 data set are going to fit important data
+42:15 
+
+42:15 sets are going to fit in memory right
+42:17 
+
+42:17 it's like that's kind of the first
+42:18 
+
+42:18 question and they are because people
+42:21 
+
+42:21 when they even for when they are doing
+42:23 
+
+42:23 for instance at you notice that when you
+42:26 
+
+42:26 look at the data from different clusters
+42:27 
+
+42:27 had cluster from Yahoo and Microsoft and
+42:32 
+
+42:32 um and and others and and we notice that
+42:35 
+
+42:35 in a lot of cases actually when you do
+42:36 
+
+42:36 queries and you're doing analytics they
+42:39 
+
+42:39 doing not on the very rare on the huge
+42:42 
+
+42:42 on the all the data you do say for the
+42:44 
+
+42:44 most recent data you want to see what
+42:46 
+
+42:46 happens yesterday what happens last week
+42:48 
+
+42:48 something like that so once you get that
+42:50 
+
+42:50 and you know you have a lot of cases in
+42:52 
+
+42:52 which the data is fitting in memory and
+42:53 
+
+42:53 memory is still growing quite quickly um
+42:56 
+
+42:56 at that time you know that's you kind of
+42:59 
+
+42:59 you're pretty you know you you connect
+43:01 
+
+43:01 the dots yeah right and then it's about
+43:05 
+
+43:05 solving the problem and and the other
+43:07 
+
+43:07 thing is happens and why why they are
+43:09 
+
+43:09 related U you know I'm talking about
+43:11 
+
+43:11 Academy and Industry because I'm telling
+43:14 
+
+43:14 you know people you know some people you
+43:16 
+
+43:16 know there are people in Academia I push
+43:17 
+
+43:17 back you say you know it's a lot of
+43:18 
+
+43:18 engineering here what this is not you
+43:20 
+
+43:20 should do in in Academia but one thing
+43:23 
+
+43:23 is what I what I've always found it it
+43:25 
+
+43:25 is very satisfying if you build a system
+43:29 
+
+43:29 right in a new area and that system it's
+43:33 
+
+43:33 used by other
+43:35 
+
+43:35 people
+43:37 
+
+43:37 then you can you are in the in the best
+43:40 
+
+43:40 position to understand the new problems
+43:43 
+
+43:43 in that area because people are going to
+43:45 
+
+43:45 use your system in different ways right
+43:49 
+
+43:49 and then you know you you understand
+43:51 
+
+43:51 that right and going back if you know
+43:54 
+
+43:54 the problem you are also in a good
+43:56 
+
+43:56 position to solve it
+43:58 
+
+43:58 right so actually it it directly helps
+44:01 
+
+44:01 you with your research right to be ahead
+44:04 
+
+44:04 because otherwise what is a choice where
+44:06 
+
+44:06 you are finding the problems right of
+44:08 
+
+44:08 course there are problems very good
+44:10 
+
+44:10 problems in theory which are not solved
+44:11 
+
+44:11 by you know decades and so forth but
+44:14 
+
+44:14 other things what people do they go to
+44:16 
+
+44:16 Google and Microsoft and so forth spend
+44:18 
+
+44:18 time and to understand what the problem
+44:21 
+
+44:21 they have right because to solve but
+44:23 
+
+44:23 that's kind of a little bit unsatisfying
+44:25 
+
+44:25 right because you go to someone to learn
+44:28 
+
+44:28 about their problems but the question is
+44:31 
+
+44:31 why don't people the people solve those
+44:33 
+
+44:33 problems maybe they don't solve the
+44:35 
+
+44:35 problems because maybe you know they're
+44:36 
+
+44:36 not as important as they given time and
+44:39 
+
+44:39 maybe you know maybe for the right
+44:41 
+
+44:41 reason they are you know too much to to
+44:43 
+
+44:43 to in the future to to but this is a
+44:47 
+
+44:47 this is a thing right it's you have to
+44:49 
+
+44:49 focus about the problem on the problem
+44:51 
+
+44:51 and you have to focus on the trends and
+44:54 
+
+44:54 the way they're connected you want to
+44:56 
+
+44:56 solve a problem
+44:58 
+
+44:58 ideally which is going to be more
+44:60 
+
+44:60 important tomorrow than today what what
+45:02 
+
+45:02 are the problems that you're most
+45:03 
+
+45:03 excited about right now like spark Ray
+45:06 
+
+45:06 like what what's going to be the next
+45:07 
+
+45:07 data breaks or any scale so a few things
+45:09 
+
+45:09 so I still think that um um it will
+45:13 
+
+45:13 going to be a lot of work it's it's
+45:16 
+
+45:16 right now what happens is that um need
+45:20 
+
+45:20 to reinc most of the software stack why
+45:23 
+
+45:23 because it's again if going back to the
+45:26 
+
+45:26 trends is that the demands of this
+45:29 
+
+45:29 application in particular air
+45:30 
+
+45:30 application and so forth growing much
+45:33 
+
+45:33 quicker than capabilities of a single
+45:35 
+
+45:35 processor a single node even if you
+45:37 
+
+45:37 considered accelerators right so on one
+45:41 
+
+45:41 hand this happens on the other hand the
+45:44 
+
+45:44 infrastructure becomes much more complex
+45:46 
+
+45:46 you need to run that
+45:48 
+
+45:48 application uh not only on one node but
+45:51 
+
+45:51 on many notes is distributed but it's
+45:54 
+
+45:54 not only that it becoming very
+45:56 
+
+45:56 heterogeneous
+45:57 
+
+45:57 right because in order to Breeze a gap
+45:60 
+
+45:60 between the demand and capabilities of
+46:02 
+
+46:02 Hardware people build accelerators like
+46:05 
+
+46:05 that's why Nvidia it's trillion dollar
+46:07 
+
+46:07 company right and but now the
+46:11 
+
+46:11 infrastructure become even more complex
+46:13 
+
+46:13 right is het is not only distributed
+46:15 
+
+46:15 heterogeneous when we start this spark
+46:18 
+
+46:18 it was homogeneous all the no are the
+46:20 
+
+46:20 same some some storage some CPUs that's
+46:25 
+
+46:25 sort but right now look at look at a
+46:27 
+
+46:27 heterogen 8 you have Nvidia and you know
+46:30 
+
+46:30 and you have many other you have tpus
+46:32 
+
+46:32 from Google every cloud uh it's having
+46:37 
+
+46:37 their own chip right now you have MD and
+46:42 
+
+46:42 Intel say that it's everything it's
+46:44 
+
+46:44 about AI right so that's kind of what
+46:47 
+
+46:47 happen so now you have a a huge gap
+46:49 
+
+46:49 between this application and this very
+46:52 
+
+46:52 complex infrastructure just growing in
+46:54 
+
+46:54 complexity and then it's not only about
+46:55 
+
+46:55 a CP A compute it's about networking you
+46:58 
+
+46:58 have infin band and you have all of this
+47:01 
+
+47:01 uh you know uh RDMA and so forth right
+47:05 
+
+47:05 so huge
+47:06 
+
+47:06 heterogeneity and you the software stack
+47:09 
+
+47:09 has to abstract away that complexity for
+47:11 
+
+47:11 the developers there is no way around
+47:13 
+
+47:13 you want a single machine or you have
+47:15 
+
+47:15 this operating system to have structor
+47:17 
+
+47:17 is a complexity right that's why that
+47:19 
+
+47:19 what makes it easy right yeah to develop
+47:21 
+
+47:21 all this application now it's extremely
+47:22 
+
+47:22 hard so something is going to happen
+47:24 
+
+47:24 there um I think the other one is is
+47:27 
+
+47:27 about um this building application
+47:29 
+
+47:29 you're talking about compound AI we're
+47:31 
+
+47:31 talking about compound a and things like
+47:32 
+
+47:32 that um right now this
+47:36 
+
+47:36 um application a application in
+47:38 
+
+47:38 particular large large language models
+47:40 
+
+47:40 everyone is talking about LGE language
+47:42 
+
+47:42 models um you know the application are
+47:45 
+
+47:45 like assistance for humans right humans
+47:47 
+
+47:47 are in the loop right if you are
+47:48 
+
+47:48 thinking about customer support if you
+47:50 
+
+47:50 are thinking about co-pilot if you are
+47:52 
+
+47:52 think about Q&A question and answering
+47:55 
+
+47:55 uh even summarization you have a human
+47:58 
+
+47:58 helping a human to be much more
+47:60 
+
+47:60 productive which is a fantastic
+48:02 
+
+48:02 application um but uh they cannot they
+48:06 
+
+48:06 cannot be autonomous they are not yet
+48:08 
+
+48:08 autonomous and to to to to go from
+48:12 
+
+48:12 having the human in the L to being
+48:14 
+
+48:14 autonomous it's a huge gap right because
+48:16 
+
+48:16 with autonomy to be to have something
+48:18 
+
+48:18 autonomous you need to have someone
+48:21 
+
+48:21 which um you know it's it's it's running
+48:25 
+
+48:25 kind of you know it's it's more
+48:27 
+
+48:27 deterministic it's more reliable right
+48:30 
+
+48:30 it's like far more accurate right um and
+48:34 
+
+48:34 you know you need to get there because
+48:36 
+
+48:36 if you don't get there you know you are
+48:38 
+
+48:38 still limited to having the system or is
+48:41 
+
+48:41 a human in the loop and the human is a
+48:44 
+
+48:44 bottleneck will become the bottleneck
+48:45 
+
+48:45 it's you know it's it's just certain
+48:47 
+
+48:47 number of people on the planet yeah um
+48:50 
+
+48:50 and I think that there is about a lot of
+48:52 
+
+48:52 four could be about how to make I would
+48:55 
+
+48:55 say uh at least some aspects uh of this
+48:59 
+
+48:59 L language building L language model
+49:01 
+
+49:01 application more like an engineering
+49:03 
+
+49:03 discipline right um where you can you
+49:07 
+
+49:07 know build much easier systems from
+49:10 
+
+49:10 smaller components okay so the two next
+49:12 
+
+49:12 data breaks will be distributed computer
+49:14 
+
+49:14 across heterogeneous hardware and
+49:16 
+
+49:16 autonomous compound AI systems
+49:20 
+
+49:20 noted um I'd love to TU on another
+49:23 
+
+49:23 thread that you mentioned just now of
+49:24 
+
+49:24 kind of how funding constraints Drive uh
+49:27 
+
+49:27 what you're working on I'm curious what
+49:29 
+
+49:29 you think right now of there's been a
+49:31 
+
+49:31 lot spoken about kind of the almost the
+49:33 
+
+49:33 brain drain in AI right now because the
+49:36 
+
+49:36 uh universities don't just don't have
+49:37 
+
+49:37 the funding that you could get if you
+49:39 
+
+49:39 went to work at one of the big research
+49:41 
+
+49:41 Labs um how do you think about that what
+49:44 
+
+49:44 do you think is ideal does it does
+49:46 
+
+49:46 operating under constraints Force
+49:48 
+
+49:48 creativity for you like what do you make
+49:51 
+
+49:51 of all that yeah that's that's a great
+49:53 
+
+49:53 question um and um
+49:57 
+
+49:57 it's true I mean it's it's challenging
+49:60 
+
+49:60 it's very challenging um and um when I
+50:02 
+
+50:02 came to United States I came to do my
+50:05 
+
+50:05 PhD and I I graduated from K G on
+50:08 
+
+50:08 University I I am originally from
+50:10 
+
+50:10 Romania so one thing was admired people
+50:15 
+
+50:15 admired about United States um is like
+50:18 
+
+50:18 is that how well this kind of this um um
+50:24 
+
+50:24 you know the collaboration and the
+50:27 
+
+50:27 partnership the three-way partnership
+50:29 
+
+50:29 between Academia and government and
+50:33 
+
+50:33 Industry are working right and Prime
+50:36 
+
+50:36 examples at that time was obviously the
+50:38 
+
+50:38 internet right which was DARPA project
+50:41 
+
+50:41 and um and of course Academia had a huge
+50:46 
+
+50:46 impact and also industry was you know
+50:50 
+
+50:50 was whatever S Industrial Revolution
+50:54 
+
+50:54 people were saying um and that when it
+50:57 
+
+50:57 comes to AI today that kind of
+50:59 
+
+50:59 partnership is
+51:00 
+
+51:00 broken um it's like um um Industries
+51:06 
+
+51:06 every company is doing this research in
+51:08 
+
+51:08 silos right even you know they don't
+51:10 
+
+51:10 talk each other as much um Academia like
+51:15 
+
+51:15 you said doesn't have resources and the
+51:18 
+
+51:18 government doesn't invest as much right
+51:21 
+
+51:21 so I think that's that's something
+51:22 
+
+51:22 things to be very concerned about right
+51:26 
+
+51:26 um
+51:27 
+
+51:27 and um that's why I'm also a big
+51:30 
+
+51:30 proponent of Open Source models and us
+51:33 
+
+51:33 and California kind of will lose in long
+51:36 
+
+51:36 term if this doesn't is not
+51:38 
+
+51:38 fixed uh so what happens now in
+51:41 
+
+51:41 unfortunately in academy one thing it
+51:43 
+
+51:43 happens is that of course there are some
+51:46 
+
+51:46 you know bigger universities and Labs
+51:48 
+
+51:48 which can still afford to maybe train
+51:51 
+
+51:51 spend one two millions maybe to train
+51:53 
+
+51:53 some models uh is still they are not in
+51:56 
+
+51:56 the same league like yeah open AI right
+51:58 
+
+51:58 it's like open Ai and Microsoft what
+51:60 
+
+51:60 they are talking about building the data
+52:02 
+
+52:02 centers about $100 billion right um and
+52:07 
+
+52:07 I think there is uh the danger is that
+52:11 
+
+52:11 um you are going
+52:13 
+
+52:13 to um some of the academics are going to
+52:17 
+
+52:17 give up and try to innovate around the
+52:19 
+
+52:19 edges now you can still innovate in this
+52:21 
+
+52:21 application and things like that and you
+52:23 
+
+52:23 know I think there's a lot of innovation
+52:25 
+
+52:25 there um
+52:27 
+
+52:27 but um clearly you know you know it's it
+52:31 
+
+52:31 will be harder to come up with new model
+52:35 
+
+52:35 architectures and you know um
+52:40 
+
+52:40 innovate you know have it will be harder
+52:43 
+
+52:43 it's not impossible nothing is
+52:45 
+
+52:45 impossible um so yes it's it's it's a
+52:48 
+
+52:48 it's it's a challenge right right now I
+52:50 
+
+52:50 mean there are people like you know and
+52:54 
+
+52:54 which are better unfortunate more
+52:56 
+
+52:56 fortunate position maybe I'm one of them
+52:59 
+
+52:59 and which have access to resources
+53:01 
+
+53:01 outside Academia right um but you know
+53:06 
+
+53:06 it's you do want
+53:09 
+
+53:09 to level the playing field in order to
+53:14 
+
+53:14 um maximize The Innovation The
+53:16 
+
+53:16 Innovation comes from everywhere uh now
+53:18 
+
+53:18 this being said is true that you know
+53:20 
+
+53:20 scar City and always in the past scar
+53:22 
+
+53:22 City you know Spurs Innovation right as
+53:25 
+
+53:25 well um
+53:28 
+
+53:28 but um the concerns
+53:30 
+
+53:30 about
+53:32 
+
+53:32 uh not having access to uh resources
+53:39 
+
+53:39 to to play the same game like in
+53:43 
+
+53:43 industry it's it's it's a concern I'd
+53:45 
+
+53:45 love to switch gears into some rapid
+53:46 
+
+53:46 fire questions um if you're ready for it
+53:50 
+
+53:50 sure go ahead will anyone take
+53:51 
+
+53:51 meaningful market share from Nvidia over
+53:53 
+
+53:53 the next five years I think they it will
+53:57 
+
+53:57 be they will be at the minimum because
+53:60 
+
+53:60 they are going to it's probably that
+54:05 
+
+54:05 it's because Nvidia will not like to be
+54:08 
+
+54:08 accused about monopol monoptic Behavior
+54:11 
+
+54:11 so their market share has to decrease uh
+54:14 
+
+54:14 under some percentage whatever 70 80% um
+54:18 
+
+54:18 so that one will be a one one of the
+54:21 
+
+54:21 reasons um but I think that if I have to
+54:25 
+
+54:25 name one company to uh to of course
+54:29 
+
+54:29 there are clouds and for strategic
+54:31 
+
+54:31 reasons they are going to push their
+54:33 
+
+54:33 agenda to build their chips like still
+54:36 
+
+54:36 probably the biggest competitor right
+54:38 
+
+54:38 now in terms of the market share it's
+54:40 
+
+54:40 Google with DPS yeah yeah probably that
+54:44 
+
+54:44 will continue for a while what's one
+54:46 
+
+54:46 project or student in your in your lab
+54:48 
+
+54:48 right now that you'd want to
+54:50 
+
+54:50 highlight you know I'm going to cheat
+54:52 
+
+54:52 here because I think that both VM and
+54:55 
+
+54:55 charbot Arena been uh tremendous it's
+54:59 
+
+54:59 like um I'm not talking about Sky pilot
+55:01 
+
+55:01 because Sky pilot is like they started a
+55:03 
+
+55:03 company um so I'm not talking about but
+55:06 
+
+55:06 I think VM has been amazing it's like
+55:08 
+
+55:08 it's onee old project and I haven't I've
+55:11 
+
+55:11 never seen such a rapid growth and of
+55:15 
+
+55:15 course it's also part of thei AI is kind
+55:18 
+
+55:18 of compressing the time so it's there is
+55:20 
+
+55:20 something about that uh and I think the
+55:23 
+
+55:23 other one is chatbot Arina because it
+55:26 
+
+55:26 just is fascinating to see the
+55:28 
+
+55:28 development in uh in the space and to
+55:32 
+
+55:32 see how these different models where
+55:34 
+
+55:34 they are strong or they are weaker and I
+55:37 
+
+55:37 think that having a front seat at that
+55:41 
+
+55:41 to see that kind of development in the
+55:44 
+
+55:44 of the ecosystem and in the space it's
+55:47 
+
+55:47 fascinating do you think the foundation
+55:49 
+
+55:49 models will commoditize the foundation
+55:51 
+
+55:51 model was like a GPT 4 or a cloud do you
+55:55 
+
+55:55 think do you think there's a Market to
+55:57 
+
+55:57 be made and you know uh providing these
+56:00 
+
+56:00 models over time or do you think it
+56:01 
+
+56:01 commoditized I think people will will
+56:04 
+
+56:04 continue to build larger and larger
+56:05 
+
+56:05 models I think where though when it
+56:07 
+
+56:07 comes to serving is it looks
+56:11 
+
+56:11 like model distillations Works quite
+56:13 
+
+56:13 well uh by the way the model is where
+56:16 
+
+56:16 where you train a smaller model on the
+56:18 
+
+56:18 outputs from the bigger
+56:20 
+
+56:20 model has been a lot of success of that
+56:23 
+
+56:23 by the way this in some way um it's it
+56:26 
+
+56:26 it says that it it shows how important
+56:29 
+
+56:29 is the data right for training a model
+56:32 
+
+56:32 right going back early on in our
+56:34 
+
+56:34 conversation right because you have
+56:35 
+
+56:35 higher quality data from the from the
+56:37 
+
+56:37 big model and you use that to train the
+56:39 
+
+56:39 the small model and it's working very
+56:40 
+
+56:40 well uh so I think using multiple
+56:43 
+
+56:43 distillation models to reduce the cost
+56:44 
+
+56:44 of inference is going to be uh a Way
+56:48 
+
+56:48 Forward uh but yes I think for
+56:51 
+
+56:51 advancing um and pushing the frontier so
+56:54 
+
+56:54 to speak right um pun intended uh you
+56:58 
+
+56:58 are still going to see a lot of you know
+56:60 
+
+56:60 a lot of effort on bigger on bigger
+57:01 
+
+57:01 models what are you most excited to see
+57:03 
+
+57:03 in the world of AI in one five and 10
+57:06 
+
+57:06 years what I'm o about AI yeah um look
+57:10 
+
+57:10 there is no question is transformational
+57:13 
+
+57:13 right I think that
+57:15 
+
+57:15 uh and um it's it will change a lot of a
+57:20 
+
+57:20 lot of things uh every s maybe um I
+57:23 
+
+57:23 think the most excited I am about it
+57:28 
+
+57:28 it's about how do you make this AI more
+57:32 
+
+57:32 C systems more uh predictable accurate
+57:37 
+
+57:37 verifiable uh how you can debu the
+57:40 
+
+57:40 systems I this all of this kind of in
+57:44 
+
+57:44 realm of software engineering like
+57:47 
+
+57:47 techniques this is what I think it's
+57:50 
+
+57:50 exciting what advice do you have for
+57:52 
+
+57:52 Founders building an AI um it's it's the
+57:55 
+
+57:55 same thing you know focus on the problem
+57:57 
+
+57:57 don't focus on the hype hype is
+57:59 
+
+57:59 emotional yeah uh it's not reliable just
+58:03 
+
+58:03 look at the fact right it's like and
+58:06 
+
+58:06 look at the problem try to understand
+58:08 
+
+58:08 the problem and try to be truthful to
+58:11 
+
+58:11 yourself it's it's and it's about if you
+58:13 
+
+58:13 build an application it's about
+58:15 
+
+58:15 production it's not about the demo yeah
+58:18 
+
+58:18 right it's beyond the demo of course the
+58:19 
+
+58:19 demo are important don't get me wrong
+58:21 
+
+58:21 are very important but the production
+58:23 
+
+58:23 this the way the mindset you have to to
+58:25 
+
+58:25 have uh and um yeah and it's a dangerous
+58:29 
+
+58:29 thing is there's so much hype and you
+58:31 
+
+58:31 think you can solve everything and you
+58:33 
+
+58:33 can do everything probably in certain
+58:36 
+
+58:36 number of years but now just focus on
+58:39 
+
+58:39 exactly what problems you are going to
+58:42 
+
+58:42 solve convince yourself it's a good
+58:44 
+
+58:44 problem uh convince yourself that you
+58:48 
+
+58:48 can solve it or at least you have you
+58:50 
+
+58:50 you can you can have an MVP right you
+58:52 
+
+58:52 can solve a smaller a smaller version of
+58:54 
+
+58:54 that problem which is still very
+58:56 
+
+58:56 valuable for your customers um that's
+58:60 
+
+58:60 what I would say
+59:01 
+
+59:01 nothing no Silver Bullet amazing thank
+59:05 
+
+59:05 you so much Yan for joining us today
+59:06 
+
+59:06 I've loved hearing a lot about your own
+59:09 
+
+59:09 thinking and reasoning behind your own
+59:11 
+
+59:11 Journey um a lot of the the thought
+59:13 
+
+59:13 process find finding the right problem
+59:15 
+
+59:15 to solve building the right systems to
+59:17 
+
+59:17 actually be in a position to understand
+59:19 
+
+59:19 the best problems and then uh applying
+59:22 
+
+59:22 that even to many of the Bold decisions
+59:24 
+
+59:24 that you've had to make in founding
+59:26 
+
+59:26 multiple companies from Research into
+59:28 
+
+59:28 commercialization and the incredible
+59:30 
+
+59:30 success of data brecks today thank you
+59:33 
+
+59:33 thank you for having me
+59:35 
+
+59:35 [Music]
+59:48 
+
+59:48 [Music]

@@ -1,0 +1,739 @@
+00:03 Everything we're about to talk about is
+00:04 
+
+00:04 what's next. And the first person up
+00:06 
+
+00:06 here is Harrison Chase, our very own
+00:08 
+
+00:08 Harrison Chase, who's been at Every AIN.
+00:10 
+
+00:10 He's been talking about agents longer
+00:13 
+
+00:13 than anyone I know. We'd love to have
+00:14 
+
+00:14 you come up here and talk about agents,
+00:16 
+
+00:16 in particular, ambient agents, this new
+00:19 
+
+00:19 concept that you guys at Langchain are
+00:21 
+
+00:21 bringing to the
+00:26 
+
+00:26 world. Thanks for that intro and excited
+00:29 
+
+00:29 to be chatting. My name is Harrison,
+00:30 
+
+00:30 co-founder CEO of Langchain. We build
+00:32 
+
+00:32 developer tools to make it as easy as
+00:34 
+
+00:34 possible to build agents. Um, a lot of
+00:37 
+
+00:37 the agents that we've seen being built
+00:39 
+
+00:39 so far are what I would call chat
+00:40 
+
+00:40 agents. So, you interact with them
+00:42 
+
+00:42 through a chat interface, send them
+00:44 
+
+00:44 messages, they they run and respond and
+00:46 
+
+00:46 and that's great. They're great for a
+00:47 
+
+00:47 lot of purposes. But one of the concepts
+00:49 
+
+00:49 that I'm really excited about is the
+00:50 
+
+00:50 concept of ambient agents. So, what is
+00:53 
+
+00:53 an ambient agent? The way that I like to
+00:55 
+
+00:55 define an ambient agent is ambient
+00:56 
+
+00:56 agents listen to an event stream and act
+00:59 
+
+00:59 on it accordingly, potentially acting on
+01:01 
+
+01:01 multiple events at a time. And so what
+01:03 
+
+01:03 are the differences between this and
+01:05 
+
+01:05 normal agents? So there's a few. One,
+01:08 
+
+01:08 what are the trigger? So it's no longer
+01:09 
+
+01:09 a human coming in and sending a message.
+01:12 
+
+01:12 It's an event that happens in in in the
+01:14 
+
+01:14 background. How many of these can be
+01:16 
+
+01:16 running? With chat, you can usually only
+01:18 
+
+01:18 interact with one agent at a time. Maybe
+01:20 
+
+01:20 you open a few windows and you have a
+01:21 
+
+01:21 few running at the same time, but it's
+01:23 
+
+01:23 generally one. with ambient style agents
+01:25 
+
+01:25 because it's listening to these events.
+01:26 
+
+01:26 It's it's however many events are
+01:28 
+
+01:28 happening in the background. So, it can
+01:29 
+
+01:29 be a far bigger type of
+01:31 
+
+01:31 number. Another interesting point is the
+01:33 
+
+01:33 latency requirements around it. So, with
+01:36 
+
+01:36 chat, you message, you expect some
+01:38 
+
+01:38 response back pretty quickly or you get
+01:40 
+
+01:40 bored and you go to another website or
+01:42 
+
+01:42 something like that. Because these
+01:44 
+
+01:44 ambient agents run in the background,
+01:45 
+
+01:45 they're triggered by events. They can
+01:47 
+
+01:47 run for a lot longer period of time
+01:49 
+
+01:49 before you need a response in any shape
+01:52 
+
+01:52 or form. So there's generally much less
+01:54 
+
+01:54 strict latency requirements. And then
+01:56 
+
+01:56 lastly, I think it's interesting to
+01:57 
+
+01:57 think about the UX of these agents. So
+01:60 
+
+01:60 for these chat agents, it's mostly chat
+02:01 
+
+02:01 bots. That's a pretty familiar interface
+02:04 
+
+02:04 by now. I think there's a little bit of
+02:06 
+
+02:06 a question of how do you interact with
+02:07 
+
+02:07 these agents that are in the background
+02:09 
+
+02:09 because they they they are running
+02:11 
+
+02:11 without you knowing that they're
+02:12 
+
+02:12 running. But as I'll talk about in a
+02:14 
+
+02:14 little bit, it's still really important
+02:15 
+
+02:15 for you to interact with them in some
+02:17 
+
+02:17 form.
+02:18 
+
+02:18 So, just to make this concrete, an
+02:20 
+
+02:20 example of an ambient agent could be an
+02:22 
+
+02:22 email agent that listens to emails
+02:24 
+
+02:24 coming in and acts on them accordingly
+02:25 
+
+02:25 and maybe tries to respond or maybe
+02:26 
+
+02:26 tries to schedule meetings or maybe
+02:28 
+
+02:28 pings you or pings other people on the
+02:30 
+
+02:30 team. So, that's kind of like a concrete
+02:31 
+
+02:31 example of of one type of ambient agent
+02:33 
+
+02:33 that we're seeing. So, why ambient
+02:36 
+
+02:36 agents? I think they're interesting for
+02:37 
+
+02:37 a few reasons. First, they let us scale
+02:40 
+
+02:40 ourselves. So, if you interact with a
+02:42 
+
+02:42 chat agent, it's generally onetoone.
+02:44 
+
+02:44 You're doing one thing at a time. when
+02:45 
+
+02:45 you have these ambient agents, there can
+02:47 
+
+02:47 be thousands of them running in the
+02:49 
+
+02:49 background. And so that just lets us
+02:51 
+
+02:51 scale our impact a lot
+02:53 
+
+02:53 more. Two, they can they can get at kind
+02:56 
+
+02:56 of like more complex operations. So when
+02:57 
+
+02:57 you're interacting with a chat agent,
+02:60 
+
+02:60 it's generally because of the latency
+03:01 
+
+03:01 requirements, it's generally a simpler
+03:02 
+
+03:02 operation that it's doing. So you might
+03:04 
+
+03:04 have the human send a message, it goes
+03:05 
+
+03:05 to the the chatbot, the agent, it
+03:07 
+
+03:07 responds right away. Maybe it calls a
+03:09 
+
+03:09 tool, maybe two tools. The long more
+03:11 
+
+03:11 tools it calls, the longer it takes to
+03:13 
+
+03:13 run. can't do that with ambient agents
+03:15 
+
+03:15 because you don't have this as strict
+03:17 
+
+03:17 latency requirement. You can call a ton
+03:19 
+
+03:19 of tools and do more and more complex
+03:21 
+
+03:21 operations. You can add in other steps
+03:23 
+
+03:23 as well. So you can add in explicit
+03:25 
+
+03:25 planning or reflection steps and
+03:26 
+
+03:26 generally build up the complexity of the
+03:28 
+
+03:28 agents that you're
+03:30 
+
+03:30 building. One thing that I really want
+03:32 
+
+03:32 to highlight is ambient does not mean
+03:34 
+
+03:34 fully autonomous. So I still think it's
+03:35 
+
+03:35 really important that we are able to
+03:38 
+
+03:38 interact with these ambient agents. And
+03:40 
+
+03:40 there's a few different interaction
+03:41 
+
+03:41 patterns that we see people building
+03:43 
+
+03:43 towards. So one is approving or
+03:46 
+
+03:46 rejecting certain actions that these
+03:48 
+
+03:48 agents want to do. If you want to have
+03:50 
+
+03:50 an ambient agent that's potentially
+03:51 
+
+03:51 giving refunds to customers who are
+03:53 
+
+03:53 emailing in, definitely when it starts,
+03:56 
+
+03:56 you're going to want to have a human in
+03:57 
+
+03:57 there approving some of those things.
+03:59 
+
+03:59 Second is a more uh advanced option of
+04:01 
+
+04:01 this editing the actions that they do.
+04:03 
+
+04:03 So maybe they suggest something you
+04:04 
+
+04:04 don't want to approve or reject it, but
+04:06 
+
+04:06 you want to explicitly edit it and have
+04:07 
+
+04:07 it do that. Um, third, these agents can
+04:10 
+
+04:10 get stuck kind of like halfway down and
+04:12 
+
+04:12 so there should be an inability for you
+04:13 
+
+04:13 to answer questions that they might
+04:15 
+
+04:15 have, uh, just like you would answer
+04:17 
+
+04:17 questions of a co-orker if they're
+04:18 
+
+04:18 working on a deep problem or something
+04:20 
+
+04:20 like that. And then fourth, because
+04:21 
+
+04:21 these agents take a lot of steps, it
+04:24 
+
+04:24 might be very useful for you to go back
+04:26 
+
+04:26 to the 10th out of a hundred steps or
+04:28 
+
+04:28 something like that, interact with it
+04:30 
+
+04:30 there, modify what it's doing, give it
+04:32 
+
+04:32 some feedback. And so this is what we
+04:33 
+
+04:33 call time travel. and facilitating this
+04:35 
+
+04:35 is a a cool new interaction pattern we
+04:39 
+
+04:39 see. Um, so there's a few reasons that
+04:42 
+
+04:42 having this human in the loop is
+04:44 
+
+04:44 important. First, it just gives better
+04:46 
+
+04:46 results. So, if you think about deep
+04:48 
+
+04:48 research, which isn't exactly an ambient
+04:50 
+
+04:50 agent, but it is a longunning agent,
+04:52 
+
+04:52 there's a period of time up front where
+04:54 
+
+04:54 it asks you some clarifying questions to
+04:56 
+
+04:56 go back and forth, and that generally
+04:57 
+
+04:57 helps produce way better results than if
+04:59 
+
+04:59 it just went off whatever your initial
+05:01 
+
+05:01 kind of like question or statement was.
+05:03 
+
+05:03 And so having this human in the loop in
+05:04 
+
+05:04 the form of deep research, asking these
+05:06 
+
+05:06 clarifying questions, in the form of
+05:08 
+
+05:08 ambient agents, there's there's
+05:10 
+
+05:10 different types of patterns. This just
+05:11 
+
+05:11 gets better results. It also helps build
+05:14 
+
+05:14 more trust. Um, so if you're doing
+05:16 
+
+05:16 explicit actions like giving giving or
+05:18 
+
+05:18 sending payments or approving things,
+05:20 
+
+05:20 having the human loop just builds more
+05:22 
+
+05:22 trust. And then and then third, and this
+05:24 
+
+05:24 is maybe the most subtle one, is I think
+05:25 
+
+05:25 it it helps a lot with the memory of the
+05:27 
+
+05:27 agent. So when I'm talking about memory,
+05:29 
+
+05:29 I'm talking about learning from user
+05:30 
+
+05:30 interactions. If you don't have the user
+05:32 
+
+05:32 interacting with the agent, then there
+05:34 
+
+05:34 are no user interactions to learn from.
+05:37 
+
+05:37 Um, and so having this uh having this
+05:39 
+
+05:39 human in the loop helps inform a lot of
+05:42 
+
+05:42 the memory things that you want to be
+05:44 
+
+05:44 building into the agent so that it can
+05:45 
+
+05:45 do better in the future. And so with
+05:47 
+
+05:47 this importance of uh the human in the
+05:50 
+
+05:50 loop, I think it's interesting to think
+05:51 
+
+05:51 about what a good UX for this might look
+05:53 
+
+05:53 like. This is one thing that we've kind
+05:56 
+
+05:56 of built as a prototype at Langchain,
+05:58 
+
+05:58 which is the concept, we call it an
+05:59 
+
+05:59 agent inbox. It's an inbox for your
+06:01 
+
+06:01 agent to send things to. You can see
+06:03 
+
+06:03 when it requires actions. You can see
+06:05 
+
+06:05 some descriptions. If you click into a
+06:07 
+
+06:07 row, you can then see a more detailed
+06:08 
+
+06:08 description of of of what's going on,
+06:11 
+
+06:11 what explicitly it wants approval for or
+06:13 
+
+06:13 or whether you want to respond to it.
+06:15 
+
+06:15 And there's a few different interaction
+06:16 
+
+06:16 patterns here. Talking a little bit uh
+06:19 
+
+06:19 very briefly about some of the things
+06:20 
+
+06:20 that we're building that we think help
+06:21 
+
+06:21 with this. We've paid a lot of attention
+06:24 
+
+06:24 uh in Langraph, which is our agent
+06:26 
+
+06:26 orchestration framework to make it good
+06:27 
+
+06:27 at ambient agents. In particular, we've
+06:30 
+
+06:30 paid a ton of attention to the
+06:31 
+
+06:31 persistence layer that backs it. This
+06:33 
+
+06:33 enables a lot of these human interaction
+06:35 
+
+06:35 patterns because basically you can run
+06:36 
+
+06:36 your langraph agent. You can stop at any
+06:38 
+
+06:38 point in time. The entire state as well
+06:40 
+
+06:40 as previous states are persisted. And so
+06:42 
+
+06:42 then you can have the all the human and
+06:44 
+
+06:44 loop interaction patterns. You can wait
+06:46 
+
+06:46 for a second, a day, an hour, however
+06:48 
+
+06:48 long, have the user come in, see the
+06:50 
+
+06:50 state, modify it, go back to previous
+06:52 
+
+06:52 states, things like that. Um, we're
+06:55 
+
+06:55 spending a lot of time right now on
+06:57 
+
+06:57 Lingraph platform as infrastructure for
+06:59 
+
+06:59 running these agents. These agents are
+07:01 
+
+07:01 often way more longunning. They're often
+07:03 
+
+07:03 bursty because they're triggered by
+07:04 
+
+07:04 events. So, you could get thousands of
+07:06 
+
+07:06 events at a time. So, you need to be
+07:07 
+
+07:07 able to scale up and they're flaky in
+07:09 
+
+07:09 nature, not just because of typical
+07:11 
+
+07:11 software things, but also because of
+07:12 
+
+07:12 this human in the blue pattern. You want
+07:14 
+
+07:14 to be able to correct mistakes. And then
+07:16 
+
+07:16 finally, we're we're building Langmith
+07:18 
+
+07:18 as well for these agents. They're really
+07:20 
+
+07:20 long running. They can often mess up.
+07:22 
+
+07:22 They're doing more complex things.
+07:23 
+
+07:23 having visibility and observability into
+07:25 
+
+07:25 what they're doing is really really
+07:27 
+
+07:27 important. As a concrete example of
+07:29 
+
+07:29 this, uh, one of the things that I built
+07:31 
+
+07:31 on the side is an email agent. So, if
+07:33 
+
+07:33 you've emailed me in the past, uh, year
+07:35 
+
+07:35 or so, uh, it's it's drafted a response
+07:38 
+
+07:38 or sent a calendar invite. It's still
+07:40 
+
+07:40 human in the loop. I use the agent inbox
+07:41 
+
+07:41 all the time. It's open source and on
+07:44 
+
+07:44 GitHub. So, if you want to see how all
+07:45 
+
+07:45 these components come together in what I
+07:47 
+
+07:47 think is a pretty cool and unique and
+07:50 
+
+07:50 hopefully uh glimpse of what's next, uh
+07:53 
+
+07:53 I would encourage you to check it out.
+07:55 
+
+07:55 And with that, I will hand it off.
+07:58 
+
+07:58 [Applause]

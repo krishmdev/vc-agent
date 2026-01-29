@@ -1,0 +1,289 @@
+00:03 Dan Roberts uh is a former Sequoia team
+00:06 member and has been spreading the word
+00:09 about reasoning for many years to us the
+00:12 past two two and a half three years. We
+00:15 sat across from each other for about a
+00:16 year year and a half and I've learned so
+00:18 much from from Dan. I'm I'm really
+00:20 excited for you to share more broadly.
+00:22 I'll share one memory which is last year
+00:23 at AI Ascent. He was leaving Sequoia to
+00:25 go to OpenAI. He hadn't told anyone. He
+00:27 was keeping it on the DL. It was pretty
+00:29 material information. We had Alfred and
+00:32 and Sam up here talking and and Alfred
+00:34 said, "Oh yeah, and by the way, Dan's
+00:35 going to OpenAI." Saw his face. He was
+00:37 uh pretty mortified. So glad glad you're
+00:40 on the other side of that and sharing a
+00:42 little bit about uh reasoning for us.
+00:44 Yeah. Well, I believe you uh borrowed
+00:46 the opening that I was going to use. So,
+00:48 I'll just jump right into it. Uh so, uh
+00:52 as many of you know, in last September,
+00:54 OpenAI released a model called 01. I
+00:57 took this from our blog post and um let
+01:00 me get to the point. The y-axis here I'm
+01:03 sorry showing you plots um of of ML
+01:06 output but uh the y-axis is performance
+01:09 on some sort of mathematical reasoning
+01:10 benchmark and the x-axis is what's
+01:13 interesting. So the plot on the left
+01:15 said that the model improved when we
+01:16 trained it train time compute. This is
+01:18 something that everybody sort of who
+01:20 trains AI models is familiar with. The
+01:22 really exciting thing was this this plot
+01:24 on the right which said that the model
+01:26 improved also with test time compute. We
+01:27 we taught it to to uh reason and it
+01:31 would spend some time thinking and then
+01:32 the more time it spent thinking the more
+01:34 it would improve. And you know it's hot
+01:35 in here also like this this is uh so
+01:38 important that we we put it on a t-shirt
+01:40 like this is this is like a totally new
+01:42 dimension for for scaling um that's not
+01:45 just training it's also you know at test
+01:47 time. And so um okay so what does this
+01:50 what does this mean? So we have a
+01:51 thinking model. Let's let's do a
+01:52 thinking
+01:53 experiment. This is from so last month
+01:56 we released 03 which is a even better
+01:58 reasoning model. And my background was
+02:01 in in physics. And so so you can ask the
+02:03 model a physics problem. This is quantum
+02:05 electronamics. It can also see. So
+02:07 somebody poses a problem on that sheet
+02:09 of paper. And you've probably seen these
+02:11 models. It it this is the sort of thing
+02:12 that it does at test time. It can it can
+02:15 think about things. It can iterate. It
+02:16 can zoom in. And there's a fineman
+02:18 diagram on that paper which is you know
+02:21 a way of representing these calculations
+02:22 and then it thinks about it some more
+02:23 and then it you know it starts and it
+02:25 answers the question and at the end it
+02:28 gets the answer correct and it took
+02:29 about a minute to do that. Uh, as a as
+02:32 an aside, a colleague asked me to before
+02:35 they put up this blog post to check this
+02:37 calculation and it took me about 3
+02:39 hours, even though this calculation is
+02:41 in four textbooks that I have to track
+02:44 down everything that it did, make sure
+02:45 that all the minus signs were correct
+02:47 and verify that I got the right answer.
+02:49 Okay, so what can we do? We can do think
+02:52 for say a minute and and do some some
+02:54 pretty cool calculations. But um, where
+02:57 do we want to go? Well, let's to imagine
+02:60 that. Let's do a thought experiment. Who
+03:02 does thought experiments? Albert
+03:03 Einstein. So, let's do a thought
+03:05 experiment about Einstein. Um, and let's
+03:08 imagine we go back to 1907 before he
+03:10 started working on general relativity.
+03:12 And we asked him the final exam question
+03:14 for general relativity. Uh, GPT 4.5
+03:18 actually made this up, but I can verify
+03:20 that this is a a valid sort of question
+03:21 that you might ask. And, you know, we're
+03:23 open AI, so we wouldn't ask Einstein.
+03:24 We'd ask Einstein v1907- super-H high.
+03:28 how you know to make sure we get maximum
+03:30 reasoning effort and and maximum effort
+03:32 we would get. So Einstein, I guess he's
+03:34 he's a visual thinker. Something about
+03:36 elevators and freef fall. This is when
+03:38 you study GR, you learn about this and
+03:40 you do some calculations and um there's
+03:43 the rubber sheet in the ball and he got
+03:45 looks like he got distracted about
+03:46 quantum mechanics for a bit. Our models
+03:48 get distracted too. There we go. That
+03:50 looks like a you know starting to get to
+03:51 a black hole. I also don't know why he
+03:53 thinks about himself in all these
+03:55 scenarios. And there we go. That's
+03:56 that's like the sort of black hole thing
+03:57 that I was going for with the wormhole.
+03:59 That's the right answer. Uh, turns out
+04:01 GPD4.5 couldn't get this right answer.
+04:03 We needed 03. Uh, 03 was able to get it.
+04:06 I think my role at OpenAI is mostly just
+04:09 checking physics calculations rather
+04:10 than AI research. But okay, the point is
+04:13 though it gets the right answer or
+04:14 Einstein would get the right answer and
+04:16 uh it would take him about eight years
+04:18 and to solve the problem or what I'm
+04:19 saying is that you know he would
+04:21 discover and this is what happened eight
+04:23 years later he discovered general
+04:25 relativity. He'd be able to answer this
+04:26 question. So our models think for a
+04:28 minute now and they can reproduce
+04:30 textbook calculations and and
+04:31 perturbations thereof but like we want
+04:33 them to like make major contributions to
+04:36 the state of human knowledge and
+04:38 science. So
+04:41 um coming back to this plot uh how do we
+04:44 get there? Well now let's focus on the
+04:46 left plot. Um the performance of the
+04:48 model improves the more we train it. And
+04:49 the sort of training we do is is RL or
+04:51 reinforcement learning. And so the main
+04:55 thing that I want to communicate in this
+04:56 talk is that we want to scale that up.
+04:58 Uh uh a year ago we put out
+05:02 GPT40. There was uh compute used and it
+05:06 was all pre-training compute and as you
+05:08 can imagine then we started doing this
+05:10 thing that led to test time compute. So
+05:12 we we added some reinforcement learning
+05:14 comput RL compute for 01. I should say
+05:15 this is all a cartoon but uh you know
+05:18 directionally it's correct. 03 maybe had
+05:20 a little bit more RL compute.
+05:22 at some point in the future maybe we'll
+05:24 have a lot of RL compute and then at
+05:27 some far point in the future maybe we'll
+05:28 have just like be totally dominated and
+05:30 crushed by by RL compute and this so
+05:32 like this is this is I think is kind of
+05:34 a contrarian point of view like this is
+05:36 this is where we're going uh and we we
+05:38 mean it uh to to point to emphasize sort
+05:41 of the contrarian nature of this uh this
+05:43 is some of you who followed um AI
+05:46 research this is a slide that Yan Lun
+05:48 made some some number of years ago I
+05:50 guess 2019 based on the copyright um
+05:53 that that I borrow um you know I
+05:54 borrowed this from obviously um this is
+05:57 a complicated slide that's hard to maybe
+05:59 hard to follow luckily we have models
+06:00 that can summarize things for us uh the
+06:04 point is that pre-training is like this
+06:06 big cake and reinforcement learning is
+06:09 supposed to be like this little cherry
+06:10 on top and and uh you know that's that's
+06:13 basically what what this this plot was
+06:15 um the color scheme actually was
+06:17 accidental but I think it actually look
+06:18 works quite quite well and Uh, you know,
+06:21 this is where we're going. We want to we
+06:23 want to totally invert the meme here.
+06:25 Uh, uh, you know, we have like maybe the
+06:27 same size cake and we just want to crush
+06:28 it with a giant reinforcement learning
+06:30 cherry. Uh, okay. So, what's our
+06:34 plan? Well, um, can't tell you our plan.
+06:38 I sent my slides in and uh, the comm's
+06:40 team just redacted the whole thing. Uh
+06:42 actually I should say I I was kind of
+06:44 anxious that they would redact the
+06:46 redaction slide but luckily uh Brianna
+06:48 was very nice um the person I sent them
+06:49 to and so everything is is you know was
+06:52 was good and in fact you know what our
+06:54 plan is like like our plan I think we
+06:56 actually talk about it very clearly
+06:57 we're scaling compute so what what does
+06:59 that mean we're going to raise $500
+07:01 billion we're going to buy some land in
+07:03 Abalene Texas build some buildings um
+07:06 put some computers inside some people
+07:07 here we spoke to earlier maybe going to
+07:09 help us with that and and you know we're
+07:11 going to train models hopefully have a
+07:13 lot of revenue from that and then build
+07:15 some more buildings, put some more
+07:16 computers inside and so forth. So we're
+07:18 scaling up our compute uh in in concert
+07:21 with that we also want to be we also
+07:23 want to um develop scaling science and
+07:25 and this is this is what I do at at
+07:27 OpenAI. This or one of the things that I
+07:28 think about this this plot was from our
+07:31 GPD4 blog post. It predates my time, but
+07:34 I think it's it's really inspiring and
+07:36 and impressive that this this dot down
+07:38 over here is the final loss performance
+07:41 of GPD4. These dots were experiments
+07:44 that they did along the way and this is
+07:45 a log scale, so they're much smaller
+07:47 scale and and this dotted line was the
+07:48 prediction. So, so they nailed the
+07:50 prediction, right? So, they they set out
+07:51 to train this model that's bigger than
+07:53 anything that anyone had ever seen and
+07:55 they knew exactly what it was going to
+07:56 do. And now that we have these new
+07:58 directions with test-time compute and
+08:00 and and um reinforcement learning
+08:02 training, we have to throw everything
+08:04 out the window and and reinvent what
+08:06 does it mean to apply um you know to
+08:08 scale up compute. Um so we're scaling
+08:10 we're we're scaling we need scaling
+08:12 science because we want to be scaling
+08:13 science. Uh this is a point that uh
+08:16 podcaster dwares Patel made that our
+08:18 models right now they sort of feel like
+08:20 idiot zones. They they don't you know
+08:22 they're not they're not discovering
+08:23 general relativity. Um, and uh, you
+08:25 know, I don't know why why why is this?
+08:27 Well, it's it could be that we're maybe
+08:30 just asking the wrong sorts of
+08:31 questions. A lot of things that we do in
+08:33 research is is about like, you know, the
+08:34 way the way in which you ask the
+08:36 question is more more important than the
+08:37 process and the answer. So, you know, we
+08:39 need to really get the question correct.
+08:41 Another another issue might be you could
+08:43 say is that we're training on too many
+08:44 competition math problems and and maybe
+08:46 our models are sort of like like
+08:48 jaggedly good at at different things. I
+08:50 guess in either of these cases, you're
+08:51 going to get integers and maybe a little
+08:53 unsatisfying. Um, but I I think really
+08:56 the thing that's going to happen here is
+08:57 that we're we're we're scaling up. Um,
+08:60 we need to scale this up further and and
+09:01 it's going to be really fantastic when
+09:03 we do. Um, just to to close, this is
+09:06 about what's next. And so next time on
+09:08 AI ascent, I was here last year. Hope
+09:10 love to be here again. Actually, this is
+09:12 easy because I think Constantine had
+09:14 this plot. He had the non semi-log y
+09:16 version of this this plot. But you know,
+09:18 so this is an exponential growth in the
+09:20 length of tasks that agents can do AI or
+09:22 that AI can do. It's doubling every
+09:24 seven months. So looks like they
+09:27 according to this plot, they can do
+09:28 tasks that are about an hour. Maybe next
+09:30 year where will we be? They'll be about
+09:32 um two two and a half hours between two
+09:34 and three hours. Uh you know, it's it's
+09:36 dangerous to to make predictions in AI.
+09:39 Everyone's always wrong, but maybe maybe
+09:42 I can extrapolate a line here. So you
+09:44 know uh where do we want we we're
+09:46 talking about this 8 years of Einstein
+09:48 and thinking and so eight years and and
+09:52 to to get there from now we need about
+09:54 16 doubling times. So that means that
+09:55 like I guess the point is that in 9
+09:58 years we're going to have a model that
+09:59 that will discover general relativity.
+10:01 Um so yeah thank you

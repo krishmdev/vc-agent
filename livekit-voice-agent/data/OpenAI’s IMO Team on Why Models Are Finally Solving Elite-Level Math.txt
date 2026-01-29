@@ -1,0 +1,296 @@
+00:00 the pace of progress is is really I think you see it so clearly in math and I think Alex tweeted about this where
+00:07 you know even a few years ago these models were struggling with like grade school math and you know and then we we
+00:12 you know I remember even in 2024 that like GSMAK was used as like the standard
+00:17 eval when everybody would release a model and then it was like math for a short period of time and then it became
+00:22 Amy and then it became USA Mo and the pace that it's just gone blown through
+00:28 all of these math benchmarks This is really astonishing. [Music]
+00:37 [Music]
+00:48 Today we're joined by Alex Weey, Cheryl Sue, and Noam Brown, the trio behind the Open AI model that just achieves gold
+00:54 medal performance at the International Math Olympiad. The IMO gold is one of the most important milestones in the
+00:60 race to artificial super intelligence. And what makes this breakthrough particularly fascinating isn't just the mathematical chops, but the underlying
+01:06 architecture. General purpose techniques for scaling test time compute and handling hard toverify tasks that extend
+01:12 far beyond competition math. We've now gone from models that can reason about math for a tenth of a minute just a year
+01:17 ago to systems that can reason and concentrate on the order of a 100 minutes. The hope for super intelligence
+01:23 is that as we scale reasoning to thousands or hundreds of thousands of hours, we can begin to solve humanity's
+01:28 greatest unsolved problems in math, the sciences, and more. Alex, Cheryl, and
+01:33 Noom joined us on training data to talk about their approach and share some of the behind-the-scenes fun and learnings
+01:38 behind this historic result. Enjoy the show. Alex, Cheryl, Noom, thank you so much
+01:45 for joining us today. We have with us the team behind OpenAI's first gold
+01:50 medal at the IMO. Uh, congratulations to you all. It's a momentous achievement. Thanks. Yeah, thank you.
+01:56 Um, I'd love to get into a little bit of the origin story behind this. I know that, you know, the IMO gold has just
+02:02 been this, you know, elusive thing that everyone in AI has been chasing for a long time. I remember back when Sam
+02:08 pitched us in 2021, it was on the slides and I remember thinking, "Ah, that seems really far away." Um, I'd love to
+02:15 understand, you know, the more immediate origin story for this specific effort. When did you guys start thinking about
+02:20 this and how did it come about? Yeah, I think it's like one sort of like something that we've been thinking about
+02:26 for a long time. I I remember in my, you know, first week at OpenAI, Noam asked
+02:32 me like, you know, when when do you think the model will get IMO gold? I thought, you know, like it was really
+02:37 unlikely in 2025. Um, but I feel like it's something that's always been on our
+02:42 minds as you said, like, you know, Sam like many years ago as well. But this specific effort, um,
+02:49 I think, you know, we thought I think it was really only like, you know, maybe like a couple months since like
+02:56 just just a couple months uh like the sort of last sprint to like get everything ready for uh this year's
+03:02 IMO. Um, and of course we've been working on like improving our RL algorithms. The ideas for this started
+03:09 coming together maybe like six months ago, but like really like the last push like you know we're going to try to do
+03:15 something for this year's IMO was was only a couple months long. It's amazing. And how big is the team involved? I mean so it's we're like you
+03:23 know definitely building on like a lot of folks work at open AI like this not possible without like you know a lot of
+03:29 help from people from you know like the people working on like inference and the
+03:35 scaling org the people who train the do the pre-training and the RL training um
+03:40 but in terms of like the core team I would say it's just uh three of us um so it's a it was a super small like scrappy
+03:46 effort here that's crazy just the three of you also was mostly mostly Alex, Alex have been working Alex have been working on
+03:52 this technique uh you know for for a while and uh Cheryl and I were happy to help out uh as we were getting closer to
+03:58 the IMO to like make it a reality. That's so cool. And how does this even come about? Like do you self-direct and
+04:04 self- choose you know I want to work on IMO gold and I'm going to get us there and like how how does you know how do you even raise your hand to work on
+04:10 something like this? I think it was something where it just felt like you know maybe maybe it's possible like
+04:15 maybe if we like you know push a bit for a couple months we can just like you know get there. One of the nice things
+04:20 about OpenAI is that I think the researchers are really empowered to you know uh do the kinds of research that
+04:27 they think is impactful and you know so Alex you know had this like pitch that like hey you know there's this new technique that I you know I think could
+04:33 could help out a lot and you know honestly like there's a decent amount of skepticism you know I think some people were supportive uh but you know
+04:40 everybody felt like we should give them the you know the freedom to be able to explore this and pursue it and uh and
+04:46 then it started showing some strong evidence and you know I think people still were a little skeptical but but more people were getting excited about
+04:52 it and uh you know eventually it turns into something more substantial and I think now people are obviously very excited about it.
+04:57 Can you say a little bit more about the strong evidence like what were some of the early signs that you all were seeing that made you really lean in? I think
+05:04 it's just like you know like progress on hard to verify tasks uh where I think
+05:11 previously we you know um a lot of our was more focused around just like you
+05:17 know if you have like these verifiable rewards like you know what can you do we
+05:22 just seeing more improvement on these like harder to verify tasks is I think what made us excited
+05:28 maybe on that front how did you even verify that the results you had were
+05:33 right. Um, and I I saw that you published the proofs on on GitHub, but
+05:38 can you just say a little bit more about how you how you even know um that that what that you know you've discovered the
+05:44 answers because my understanding is that you know they're done a bit differently from how a human might answer them.
+05:50 Yeah. Yeah. I do think like you know like the style of the model outputs is a little atrocious. Um
+05:56 atrocious isn't the word I was going to use. Say creative like an alien language. Yeah. Yeah. So yeah, I think it's it was
+06:02 we I think you know we could have I think you know it was a very like small scrappy effort and so um we we didn't
+06:08 optimize as hard for like you know human readability but that's something that you know we know how to do like you know
+06:15 we can like we can do the same stuff to like in the same way that like you know chat GVT like is very readable we can we
+06:21 can do the same things here. Do you even need to optimize for human readability? Like is that even important? I think if you're you're
+06:27 showing this to humans, they they prefer prefer readability. We were actually discussing like, you know, we got the
+06:33 proofs like, okay, because you could actually just like run them through chatbt and like ask chatbt to like re rewrite them in a more readable way. And
+06:40 it's like the proofs are still correct. They're just like a little bit more readable. And we were like, oh, should we when we post these online, should we
+06:45 like post the more readable version that's like run through chatbt or should we just post the raw version? And we
+06:51 decided, you know, I think for full transparency, we'll like post the originals and people will figure it out.
+06:57 You guys have a bunch of IMO medalists and participants in the staff at OpenAI, right? Are do you guys like moonlight in
+07:03 your spare time grading the answers that the model produces? Like during Yeah, I mean during like you know the testing like you know Yeah. We
+07:11 like we read a lot of samples. Um but like for grading these specifically like we hired external former IMO medalists.
+07:18 So each proof was graded by three medalists and for each one they you know
+07:24 reached unanimous consensus on uh the correctness. I should also say that like for me I
+07:29 don't know about Cheryl but for me like the proofs are beyond my ability to comprehend. Like I I was a math major
+07:34 and like I never really did competition math and um I already like the stuff that this model is like writing about is
+07:41 beyond beyond my ability to to grade. Yeah. Same. I think that's what makes it like even more amazing just like how how
+07:48 smart the model is. Totally. What about problem six? How come none of the models at this year's
+07:54 IMO had a solution? And and your model didn't even attempt problem six. Can you say more about what makes that problem
+07:59 and traditionally problem six is always the hardest at the IMO? Is that right? Yeah, I think problem three or problem six usually.
+08:05 Okay. uh why just say a bit more about what made problem six different and what you learned from you know the I think
+08:10 you tweeted that the fact that your model knew that it couldn't solve problem six was one of the things that gave you hope so just say a bit more
+08:16 about that as well for problem six I mean it's just it's just a really tough problem I think like
+08:22 you know if you gave me like months to think about it if you even gave me like a big hint about like you know the main
+08:27 idea to solve problem six I don't think I'd be able to get there uh it's it's just like crazy like tough problem where
+08:34 there's so many things you can do and there's like you know a very narrow path to you know finding the proof and I
+08:41 think you know it's one of those things I think like math is just hard. Yeah. And we like threw a lot of compute at
+08:48 problem six. Um but I think it was good to see like the model doesn't like try
+08:54 to hallucinate or like try to just like make up some solution but instead will say like no answer. I mean it is kind of
+08:59 disappointing when you feel like it's done so much work um just to like say no answer but I think you know it's good
+09:05 that it actually like acknowledges that. Yeah, that's an amazing level of self-awareness of your own kind of
+09:12 ceiling because I mean I remember at least a couple years ago with these models they'd always try to be helpful
+09:18 and make up an answer, right? And so to see this is just like I think an amazing level of self-awareness from these
+09:23 models. when we released the reasoning models um you know I talked to some professors at at mathematicians computer
+09:30 scientists and and I was asking them like you know are you finding value in these models and the answer was you know
+09:35 frequently yes but the one thing that they would complain about is like if they would ever ask the model a question that it didn't know the answer to it
+09:41 would just like output a very convincing but wrong answer um and they would have to like go through it very carefully to
+09:47 figure out was it exactly correct or was there like you know some flip of a inequality or something that the model
+09:54 snuck in there and it's nice to see that this model like if it if it doesn't know
+09:60 it will just like acknowledge that it doesn't know at least more frequently I guess internally did you guys have like a betting like a poly market or
+10:06 something going on whether you guys were going to win uh IMO gold this year and like what was the internal vibe
+10:12 I think we we felt like we had a strong shot um but I think we also felt that it
+10:17 wasn't like a lock where there's definitely a distribution of questions where the models would
+10:25 probably struggle more than the humans but then you know there's another distribution of questions where the models would be really really strong
+10:32 and you know I think this year was somewhere in the middle um where you know like problem six like I think is
+10:39 just out of reach of state-of-the-art models today and I think maybe in general like you know like these hard
+10:47 like combinatorics problems which problem six was are I think more challenging
+10:52 and that's still something that the models struggle with. What is it about combinotaurics that makes it challenging
+10:57 versus you know the like geometry for example which seems like you guys do well at?
+11:02 I think for cominatorics it's probably because it's a little more like abstract a little more highdimensional.
+11:09 Um and I think often times like cominatorics problems sort of require
+11:15 like leaps of faith or leaps of insight that you know the models aren't as good at. I
+11:22 think the models are more good at like, you know, problems that require like a bunch of smaller steps, for example.
+11:29 What about from your guys' perspective? Was the internal vibe optimistic or not that you all were going to get gold? I feel like it wasn't super optimistic.
+11:36 Like I think they definitely knew that like it could happen, but I think like even like a month or like two months
+11:41 back, it definitely felt like it'd have to like improve quite a bit, which I guess we did. I remember I was talking
+11:48 to another researcher at OpenAI like maybe two months before the competition and we were like, you know, saying like,
+11:55 "Okay, if we were to bet, you know, I'm I'm a betting man. I'm happy to bet." Yes, you are. Uh and I was saying like, "What odds
+12:01 would you take?" Because I was willing to bet. I'm like, "We were going to get gold here." And he was like, "There's there's really no chance." And and you know,
+12:07 um and you know, he said that he would um gladly take like two to one odds
+12:13 against like the model winning. So like you know um less than one/3 chance but
+12:19 he didn't want to bet against us. So you know he thought it would be bad bad vibes to to bet against the team winning
+12:24 so he didn't go for the bet. Did you make some some pocket change to him? I wish I I wish I
+12:30 mean you knew that so um because I mean you guys were at I
+12:35 think you tweeted 12% on Amy like 15 months ago right? So it's even even though you want never want to bet
+12:41 against scale and open AAI, it's just it's just a astounding slope of what you all have accomplished here. the pace of
+12:48 progress is is really I think you see it so clearly in math and I think Alex tweeted about this where you know even a
+12:54 few years ago these models were struggling with like grade school math and you know and then we we you know I
+12:60 remember even in 2024 that like GSMK was used as like the standard eval when
+13:05 everybody would release a model and then it was like math for a short period of time and then it became Amy and then it
+13:10 became USA Mo and the pace that it's just gone blown through all of these
+13:16 math benchmarks is is really astonishing. Hey, I remember training a model on GSMA 8K two years ago.
+13:22 Yeah, we're past those days, huh? Saturated the Evals. What's next? Do you think I mean at this point next year, do
+13:28 you think we'll be solving Millennium prizes? I think it's I think those are still very far away. I think on one hand, you
+13:34 know, you think about like how much math progress has been made uh since like GSN
+13:39 M8K, which is like, you know, like just like two years ago was sort of the standard that people were trying to push
+13:46 on, you know, that that's like an astounding level of progress, but also you think about like how much time it
+13:51 takes for people like, you know, GSM 8K problems, they're like grade school math, you know, takes someone good at
+13:57 math like a couple seconds. Um and now we've gone from like a couple seconds to something that takes like you know these
+14:03 brilliant students an hour and a half per problem on average or like you know the IMO is three problems four and a
+14:09 half hours um and then you know research math is going to be like you know these
+14:17 same you know brilliant students they've grown up they're uh researchers it's
+14:22 going to take them like 1500 hours so there's like you know a thousandx of like more thinking time and And the mill
+14:29 millennium prize problems have taken entire fields like you know people's lifetimes of thinking and you know we
+14:36 still don't have much progress on most of those and so it's on one hand like
+14:41 you know super exciting that we've made so much progress on the other hand it's sort of also like humbling to see like
+14:47 how much further you know progress has to go from like an hour and a half to like you know tens of thousands hundreds
+14:54 of thousands of hours of human thinking. Totally. Noom, I think you deserve a lot of credit for seeing the future on this.
+14:59 I remember you visit us before you even joined OpenAI talking about um the
+15:04 results from gameplay and you know what happens if you let a model think for hours and tens of hours um and credit
+15:12 you you've really seen the future on this. Thank you. Yeah, I mean uh it's exciting to see it actually happen. Yeah. Um what
+15:19 are the hard things that happen as you scale compute time inference time from
+15:24 the order of 0.1 minutes to the order of 100 minutes? Um I guess at a high level
+15:31 because not everyone most of our listeners are not AI researchers but what are the hard things that happen to to keep the model kind of on the rails
+15:38 so to speak? One one thing I I think we can point to is like pretty clearly a challenge is that if you have the model
+15:45 thinking for like 1500 hours then in order to eval you have to have it think for 1500 hours and so eventually the
+15:54 evaluation of the models becomes a significant uh you know speed bump on
+15:60 progress. So we're not really at that point, you know, like if we have the model think for an hour and a half, it's
+16:05 no big deal. You know, we can we can run those tests, but to run a test where the model is thinking for a month, it takes
+16:10 a month to finish that test. And so progress can only advance so fast if you want to wait for those kinds of results.
+16:16 Uh I think both of you are on the multi- aent team. Help me understand like what the role that multi-agent systems uh
+16:23 play in this is. Uh yeah, so in addition to having the model like think for a
+16:28 very long time and uh you know uh make a lot of progress on you know hard to
+16:33 verify tasks uh this also involved scaling up parallel compute and so that's uh there's there's a multi- aent
+16:40 component to that. We're probably not going to be able to go into too much detail about the exact techniques. Um
+16:46 but that was certainly like one way that we were able to scale up test time compute for the IMO. By the way, one
+16:51 thing I'll add for the um the multi- aents, you know, scaling parallel compute thing is that the way that we
+16:57 did it, you know, we we really tried to prioritize generality in in our in our techniques. I for example, like you
+17:04 know, I I worked on AI for poker. Um Alex and I actually both worked on AI for diplomacy. So, Alex was was on the the team that uh worked on Cicero.
+17:10 Cisero. Yeah. Nice. And you know, those were projects that I'm I'm really proud of, but they were
+17:16 also projects that we spent years working on to like achieve that result. And with the pace of AI progress being
+17:23 so fast, it felt like that wasn't the best use of time to like develop a very bespoke system that could only do that
+17:29 one task. And so we all like really prioritized general purpose techniques and all this. And you know the
+17:36 techniques that we used for um everything for scaling up the thinking time for uh working on hard to verify
+17:43 tasks and for the parallel compute are all general purpose techniques that we're uh either planning or or have used
+17:51 for um you know other systems as well. And is that the reason you all chose not to do this in lean? Like my
+17:56 understanding is the official kind of IMO AI track was was a was a lean um
+18:02 interpretation this year. Is that why you guys chose not to go with lean? Yeah, that's right. I mean, there are
+18:07 certainly I think there is a lot of value in lean as a tool. Um, you know, mathematicians find it useful for
+18:13 example. Uh, but the priority for us is really general purpose reasoning capabilities and lean has its
+18:20 limitations. Um, and so that's why we wanted to prioritize natural language.
+18:25 My layman's understanding is lean is a formal verification tool. Um, does your result here basically say that like
+18:31 informal verification with scale can you know can perform at the same level or even surpass formal verification? Is
+18:36 that the right takeaway? I I wouldn't say you I I would not say that's the right takeaway. I don't know.
+18:41 Alex, you have thoughts? So I say that these are just like you know sort of two like orthogonal sort of components here where like I think you
+18:49 know I think we found the informal math uh sort of an interesting problem because it represents sort of like a
+18:56 kernel of difficulty around like you know like scaling up test time compute
+19:01 um hard to verify tasks uh that represented you know something like
+19:08 difficulties from like you know a very broad set of tasks that we were like, you know, interested in from like a
+19:14 general purpose standpoint. I think like lean is a little bit more narrow where like I think a lot more of the world can
+19:20 be approached with like informal reasoning than is like formalizable. I don't think there's anything wrong with narrow AI like narrow AI can be
+19:28 very effective and obviously like far surpass general purpose AI in certain domains. And I think the right right way
+19:34 to think about it is in the same way that humans human mathematicians find a lot of value in lean. Um general AI can
+19:42 be compatible with with uh you know a more narrow system that's that's focused on like formal uh formal mathematics and
+19:51 you know the combination I think can be better uh because of it. I think I saw on Twitter uh from
+19:57 multiple folks at OpenAI and I think you guys have mentioned this as well that you know this system was built with a
+20:04 very similar approach and infrastructure to many of the recent launches from
+20:09 OpenAI like we had Issa uh from the chat agent launch on on the podcast last week. Um can you say a little bit more
+20:16 about what the similar kind of foundation and approach is? I think like infrastructure wise like I
+20:22 mean like we all kind of just use the same infrastructure. Um but I think as far as like the core of this question
+20:27 like you know like like know Alex said there's nothing like that's very bespoke to IMO here and the hope is really that
+20:34 we can use the techniques that Alex worked on um as far as like non-verifiable tasks and as far as just
+20:40 scaling up test time compute um and be able to like apply this to other areas of reasoning or other areas of like
+20:47 model capabilities in general um and just build like stronger models you know like keep keep improving agent keep
+20:53 improving chat GPT and everything else. Uh tell me tell me about the actual experience of IMO day. What what was it
+20:59 like? Yeah, I mean I we were waiting for the problems to come through because like you know once the once the like
+21:06 participants finish the exam then then they get uh posted and so we like you know plug the problems into our model
+21:13 and uh that was around like I guess pretty late at night maybe like 1:00 a.m. or something and honestly I went to sleep because it's like you know it's 1
+21:20 a.m. I'm not going to stay up for four and a half hours to like see the I'll just wake up in the morning and see. Uh, but I think these two like actually
+21:26 stayed up and like um got to watch the model and um see it come in in real
+21:31 time. Yeah, it was it was a lot of fun. Did anybody want to call No, I'm like,
+21:36 "Wake up. Wake up. We got we got this." There were there were a couple moments where like Alex was like so exhausted
+21:42 that he decided to like take a nap, but we like told him like, "Okay, just make sure your your phone is on silence so that if we need to wake you up, we can
+21:48 like call you." And uh at one point we did actually have to call him, but I don't think he woke up.
+21:54 That's awesome. It must have been such a thrill and such a high especially for that to come through at like So you got
+21:60 you started at 1:00 a.m. So you must have known at like 9:00 a.m. then? Oh, it's four and a half hours.
+22:05 Four and a half hours for the first Yeah. I don't know. I mean, we can kind of see the problems come in. Uh so I'd
+22:11 just be like making sure the systems are like staying stable and then Alex is like over there reading and seeing
+22:16 whether or not how how the model's doing. Uh so you were doing the you were doing the live human proof checking to see if
+22:22 it was actually I was I was you know you're naturally very like anxious about
+22:28 the results and totally so I was just like looking at the you know like the partial progress the model was making
+22:33 you can sort of like we can sort of observe that um and
+22:39 then like you know I I also like you know hand check things like you know we
+22:44 were we were going to send these out to the graders but like I was also just like hand check them because I was so
+22:49 curious like okay well call me next time I want I want to come hang out there for that I'm go to sleep. That sounds awesome.
+22:54 One one of the cool things about these models is like, you know, I can't understand the proofs. Um, but when you
+23:00 see the model like thinking about it, it it will express its uncertainty or its confidence in natural language
+23:06 throughout throughout the process and it will just kind of say words that will like hint at its like, you know, if if
+23:12 it's like really confident that it figured it out, it'll say good a lot, you know. Um, and if it's like unsure, it'll like throw in a lot of question
+23:17 marks. Um, and so it's like cool that I can kind of follow along and see how the
+23:23 model is like, you know, feeling about about its progress, even though I can't really tell if it's like got it correct
+23:29 or not. Yeah, you get the dreaded seems hard.
+23:35 You got that on problem six. Got that a lot. No progress hard.
+23:40 Seems hard. Keep going. Too bad. Wonderful. Um, I guess looking ahead,
+23:47 what you you've got you've gotten like the pinnacle results in competition math. I guess you can go do Putinham
+23:52 next year, but you're basically at the top, right? And so what's next? Yeah. So, actually for um for Putinham
+23:59 the problems, I think since the exam is like, you know, less time per problem than the IMO
+24:06 and it's a little more uh knowledge heavy. uh we actually found in our eval that the model you know was like really
+24:14 really good at putting them problems like better than it was at IMO problems and so I think you know the frontiers
+24:20 here are really not about like you know these like very like time boxed competition problems anymore but it's
+24:26 about like problems that really take like longer periods of time and more deep thinking to solve.
+24:32 It's really cool. Okay, so you're going to start proving novel theorems now. Again, I think there's like there's this
+24:39 uh I think very intimidating gap between like you know these like very like time
+24:44 box competition problems and like a you know real research breakthrough which
+24:49 you know takes like a year's worth of work like in a year's that that's like on the order of like 1500 hours instead
+24:56 of 1.5. Yeah, totally. I guess relatedly I I I was listening to the Demis podcast last
+25:01 night and he mentions that you know uh the hardest thing is actually coming up with the interesting problems to solve.
+25:06 Uh, and I'm I'm curious if you all agree with that. I think there's some truth to that that
+25:13 um you know these models um are really good now at solving these problems. Uh
+25:19 coming up with them is you know still um a challenge but I think it's also worth
+25:26 noting the incredible pace of progress that we're seeing. Um, and you know,
+25:32 there's always there's always a next hurdle, you know, and originally when LM came out, it was
+25:38 like, well, how do we get them to reason? And then we got them to reason, but then how do we get them to reason on hard to verify tasks? And now they can
+25:44 reason on hard to verify tasks. And I think the next um hurdle is going to be like, okay, well, how do we get them to
+25:49 to come up with these novel questions? You know, like even creating an IMO question is is is a challenge. And, you
+25:56 know, it takes a lot of extra mathematicians, a lot of work to do that. But I don't see any fundamental
+26:02 barriers that block us from getting there. I love that. Um, do your results in
+26:09 math, do they just fully generalize to, you know, you're just going to be better at scientific reasoning, you're going to
+26:14 be better at um, general reasoning, you know, does does being great at competition math make you, you know, be
+26:20 great at everything else? I think uh how we approached this was not like you know we we should be like
+26:27 you know great at competition math. We're really I think it's like we were focused on like developing like general
+26:32 purpose techniques um to make our like reinforcement
+26:38 learning better and I think those we are you know very excited to like improve
+26:44 our models in other do like domains beyond math and so and you know hopefully like make models more useful
+26:52 for like you know us in like everyday usage. This is like a you know it's a pretty late breaking result. Um it's
+26:58 honestly it was a surprise even to people internally at OpenAI and so um
+27:04 the next step is to uh incorporate this more broadly into our models and you know improve the reasoning capabilities
+27:10 across the board. Um but you know it's going to take some time to um go through that process and and deploy it to the
+27:17 world. So um I think it's going to come but yeah it'll just take a little bit more time. Is it harder for these ma
+27:24 these models to do the IMO or the the physics olympiad? I think definitely the physics olympiad
+27:30 because the physics olympiad has I think like an experimental section. Oh.
+27:35 Or you have to we need to solve robotics first. I didn't realize that. Okay. I thought
+27:41 it was just done on a piece of paper. Yeah. Yeah. So I think it's the the model will probably be good at the on
+27:46 the paper part but yeah I think the will be a little bit a bit of time before it can you know do the experiments
+27:53 not with like a world model. Okay cool. Uh are you going to release
+27:59 this model for customers to play with? Um Ruof's son is a math math olympiad kid and he's like I want access to the
+28:05 math olympiad model. Like will people be able to play with this? So we we want to make this accessible to
+28:10 mathematicians to use. Um, we're still trying to figure out the exact details of how we make that happen. Um, but you
+28:16 know, I think it's really cool that we've developed this system that is incredibly good at math and it makes sense that we want to see what
+28:22 mathematicians can do with it. Um, I've actually already been emailing with like the Stanford professor, uh, mathematics
+28:27 professor. Um, he actually emailed me like about a year ago before we announced a one and he was like, "Hey,
+28:33 do you want to do a collaboration on like solving hard math problems?" And basically what I told him is like I
+28:38 think we just got to advance general reasoning capabilities and eventually they're going to be able to help you with your like hard math problems. And I think that's actually the most promising
+28:44 route to getting there. He was a little skeptical but um every model release like every reasoning model release he's
+28:50 like emailed me with a follow-up and he's like can it solve this problem now and I've been plugging them in and I
+28:56 don't know what the output is but I like email it back to him and he says like yeah that's wrong. and um and he emailed me like a
+29:03 follow-up this time with like you know the same problem like asking like hey can it solve it now um it still can't solve it but at least this time it like
+29:09 recognizes that it can't solve it so I think that's like a big step um but we're curious to see if there's like a
+29:14 lot of other um problems out there that mathematicians um want to challenge this model with and see if it can take them
+29:20 on amazing uh congratulations to you all I think this is a momentous result that
+29:26 the entire field has been waiting for for a very long time and um the fact that was accomplished by a team of three
+29:32 people in a span of two months. It's it's it's extraordinary. Congratulations and thanks for joining us on training data.
+29:38 Thank you. Thank you. Thanks for having us.
+29:48 [Music]
+29:57 [Music]
+30:02 [Music]

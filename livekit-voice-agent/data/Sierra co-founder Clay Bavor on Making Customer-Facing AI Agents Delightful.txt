@@ -1,0 +1,5317 @@
+00:01 one of the more interesting learnings
+00:03 
+
+00:03 from the past you know year and a half
+00:05 
+
+00:05 of working on this stuff is that the
+00:07 
+
+00:07 solution to many problems with AI is
+00:10 
+
+00:10 more
+00:11 
+
+00:11 Ai and it's somewhat unintuitive but one
+00:14 
+
+00:14 of the remarkable properties of large
+00:16 
+
+00:16 language models is that they're better
+00:18 
+
+00:18 at detecting errors in their own output
+00:21 
+
+00:21 than in not making those errors in the
+00:23 
+
+00:23 first place
+00:31 
+
+00:31 [Music]
+00:41 
+
+00:41 joining us today is Clay bavor
+00:43 
+
+00:43 co-founder of Sierra before clay started
+00:46 
+
+00:46 Sierra with his longtime friend Britt
+00:48 
+
+00:48 Taylor he spent 18 years at Google where
+00:50 
+
+00:50 he started and led Google Labs their
+00:52 
+
+00:52 arvr efforts and a number of other
+00:54 
+
+00:54 forward-looking bets for the company
+00:56 
+
+00:56 Sierra is allowing every company to
+00:58 
+
+00:58 elevate its customer experience through
+00:60 
+
+00:60 AI agents and there is no one who knows
+01:02 
+
+01:02 more about what AI agents can do today
+01:04 
+
+01:04 and what they'll be doing tomorrow than
+01:06 
+
+01:06 clay you'll get to hear about how
+01:08 
+
+01:08 pictures of avocado chairs helped
+01:10 
+
+01:10 Inspire the founding of Sierra why the
+01:12 
+
+01:12 solution to problems with AI is often
+01:14 
+
+01:14 more Ai and so much more please enjoy
+01:17 
+
+01:17 this incredible episode with my friend
+01:18 
+
+01:18 Kay
+01:20 
+
+01:20 Bor all right clay listen this is a
+01:22 
+
+01:22 funny start because we know each other
+01:24 
+
+01:24 so well but can you just tell everyone a
+01:26 
+
+01:26 little bit about yourself and just give
+01:28 
+
+01:28 us some background before we talk about
+01:30 
+
+01:30 the future fut of AI and where what role
+01:32 
+
+01:32 Sierra is going to play on that so first
+01:34 
+
+01:34 of all I'm in a I'm a Bay area native I
+01:36 
+
+01:36 grew up not more than four or five miles
+01:37 
+
+01:37 from here so grew up in the Bay Area got
+01:39 
+
+01:39 to see the kind of.com uh bubble grow
+01:43 
+
+01:43 and then burst studied computer science
+01:45 
+
+01:45 and then ended up right out of
+01:46 
+
+01:46 undergraduate at Google where I was for
+01:49 
+
+01:49 18 years until uh last last March and so
+01:52 
+
+01:52 at Google I worked on really every part
+01:54 
+
+01:54 of the company I started in Search and
+01:56 
+
+01:56 then ads uh for several years I ran the
+01:58 
+
+01:58 product and design teams for what is now
+02:00 
+
+02:00 workspace so Gmail and Google Docs and
+02:03 
+
+02:03 Google Drive and so on and then spent uh
+02:05 
+
+02:05 the last really 10 years at Google
+02:07 
+
+02:07 working on various forward-looking bets
+02:09 
+
+02:09 for the company some Hardware related
+02:11 
+
+02:11 like virtual and augmented reality some
+02:13 
+
+02:13 AI related like Google lens and other
+02:16 
+
+02:16 applications of AI and uh and then uh 15
+02:20 
+
+02:20 months ago left Google to start Sierra
+02:23 
+
+02:23 with a longtime friend of mine Brett
+02:24 
+
+02:24 Taylor we met in our early days at
+02:26 
+
+02:26 Google where we both started our careers
+02:28 
+
+02:28 in the associate product management
+02:30 
+
+02:30 program so he was I think class one I
+02:32 
+
+02:32 was class three and uh we met early on
+02:35 
+
+02:35 and uh stayed in touch in in particular
+02:38 
+
+02:38 through a a monthly poker group that in
+02:40 
+
+02:40 a good year would play like
+02:42 
+
+02:42 once and uh met up December of 2022 and
+02:46 
+
+02:46 just saw what was happening in and
+02:48 
+
+02:48 around Ai and these fundamentally new
+02:50 
+
+02:50 building blocks that we thought would
+02:52 
+
+02:52 enable us to create something really
+02:54 
+
+02:54 special and started here out of that so
+02:56 
+
+02:56 that's the recap actually I'm curious on
+02:58 
+
+02:58 that um and and we we need to get to
+03:00 
+
+03:00 what is here pretty quickly here but
+03:02 
+
+03:02 just for fun December
+03:04 
+
+03:04 2022 very shortly after the chat GPT
+03:07 
+
+03:07 moment how I guess what was the process
+03:10 
+
+03:10 like or how soon after that moment did
+03:12 
+
+03:12 you have the conviction that this is a
+03:14 
+
+03:14 sufficiently interesting new technology
+03:18 
+
+03:18 to build a company around can I
+03:19 
+
+03:19 introduce one thing that's kind of
+03:20 
+
+03:20 interesting I hope you talk about before
+03:22 
+
+03:22 you actually before the chat gbt moment
+03:24 
+
+03:24 you had been telling me about how
+03:27 
+
+03:27 everything was going to change I still
+03:28 
+
+03:28 remember distinctly him telling me you
+03:30 
+
+03:30 don't understand you're going to be able
+03:32 
+
+03:32 to talk about a scene that you envision
+03:35 
+
+03:35 and they're going to be able to make a
+03:36 
+
+03:36 movie out of you just talking about do
+03:38 
+
+03:38 you remember you telling me yes and so I
+03:41 
+
+03:41 I'm actually very curious about this too
+03:43 
+
+03:43 well I had such a privilege seat at
+03:45 
+
+03:45 Google to see so much of you know what
+03:47 
+
+03:47 came out of that Transformer paper in
+03:49 
+
+03:49 2017 and the emergence of early large
+03:52 
+
+03:52 language models so at Google one of the
+03:54 
+
+03:54 first was called Mina or Lambda there
+03:56 
+
+03:56 was a paper I think in 2020 a
+03:58 
+
+03:58 conversational chat bot for just about
+04:01 
+
+04:01 anything and I remember even before that
+04:04 
+
+04:04 getting to interact with this thing in a
+04:06 
+
+04:06 pre-release prototype and having this
+04:08 
+
+04:08 uncanny sense that there was someone
+04:11 
+
+04:11 something on the other side of it and
+04:13 
+
+04:13 that this was different and another
+04:16 
+
+04:16 moment I think it was mid 2022 when we
+04:20 
+
+04:20 had I think it was the first or second
+04:22 
+
+04:22 version of paulm Pathways language model
+04:24 
+
+04:24 at Google was a 540 billion perameter
+04:26 
+
+04:26 model and we were testing it to see kind
+04:29 
+
+04:29 of how smart it was and one of the shest
+04:32 
+
+04:32 and sign signs of intelligence is the
+04:35 
+
+04:35 ability to think and reason in metaphor
+04:37 
+
+04:37 and analogy so we tried a few things and
+04:40 
+
+04:40 one which was pretty straightforward is
+04:42 
+
+04:42 we we asked Palm hey explain black holes
+04:44 
+
+04:44 in three words and it came back without
+04:46 
+
+04:46 skipping a beat black holes
+04:49 
+
+04:49 suck and we were like oh you know that's
+04:52 
+
+04:52 a that's a pretty good summary um also
+04:55 
+
+04:55 like you know the model seems to have a
+04:57 
+
+04:57 sense of humor which is cool and the
+04:59 
+
+04:59 moment the moment that really blew my
+05:01 
+
+05:01 mind we asked and I remember the answer
+05:04 
+
+05:04 for verbatim we asked Palm please
+05:06 
+
+05:06 explain the 2008 financial crisis using
+05:09 
+
+05:09 movie references and again without
+05:11 
+
+05:11 without skipping a beat so the 2008
+05:14 
+
+05:14 financial crisis was like the movie
+05:15 
+
+05:15 Inception except instead of Dreams
+05:17 
+
+05:17 within dreams it was debt within debt
+05:20 
+
+05:20 whoa and we all paused what is this
+05:23 
+
+05:23 right so it had understood basically the
+05:25 
+
+05:25 concept of cdos nestedness of debt okay
+05:29 
+
+05:29 what movie includes nestedness of
+05:32 
+
+05:32 something else Inception nestedness of
+05:34 
+
+05:34 dreams so it's like Inception and we all
+05:38 
+
+05:38 we all thought wow this is something new
+05:40 
+
+05:40 and and different and um and then there
+05:42 
+
+05:42 were a couple other moments I remember
+05:44 
+
+05:44 the first Dolly paper came out and they
+05:47 
+
+05:47 did a blog post and people reacted a
+05:51 
+
+05:51 little bit to it but for me I I remember
+05:53 
+
+05:53 one of the the stars of the show was
+05:55 
+
+05:55 they asked Dolly to make avocado chairs
+05:58 
+
+05:58 and so they and I know this sounds so
+06:01 
+
+06:01 odd but here is a set of 10 or 20 images
+06:05 
+
+06:05 of chairs that look like avocados it
+06:07 
+
+06:07 wasn't Photoshop these images had never
+06:09 
+
+06:09 existed before and yet the model seemed
+06:11 
+
+06:11 to understand similar to the the movie
+06:14 
+
+06:14 reference metaphor concepts of avocad
+06:17 
+
+06:17 and chairess and put those together and
+06:19 
+
+06:19 create these images pixel by pixel so we
+06:23 
+
+06:23 have avocado chairs at inst theart the
+06:25 
+
+06:25 uh it's actually did you really we
+06:26 
+
+06:26 actually did we actually had chairs
+06:29 
+
+06:29 shaped like avocado in related news
+06:31 
+
+06:31 there were times where we were burning a
+06:32 
+
+06:32 little bit too much money you know those
+06:34 
+
+06:34 those bags too yeah those bags the uh so
+06:39 
+
+06:39 had a had a good sense that something
+06:40 
+
+06:40 was coming and in fact uh the team the
+06:42 
+
+06:42 team I was running at Google at the time
+06:44 
+
+06:44 Labs was putting a a lot of large
+06:46 
+
+06:46 language models to use and in early
+06:48 
+
+06:48 applications there and so how to hunch
+06:51 
+
+06:51 um chat GPT uh certainly clarified that
+06:54 
+
+06:54 hunch um but I think Brett and I both
+06:56 
+
+06:56 for several years had been tracking what
+06:59 
+
+06:59 was happening and just seeing you know
+07:00 
+
+07:00 first it was translation and better than
+07:02 
+
+07:02 human level translation then it was some
+07:04 
+
+07:04 of this language generation and I think
+07:07 
+
+07:07 uh credit to open AI for doing the
+07:09 
+
+07:09 engineering work and uh data work and
+07:12 
+
+07:12 much more to make uh gpt3 turn into chat
+07:16 
+
+07:16 gbt where suddenly you could grasp this
+07:17 
+
+07:17 thing's full potential without you know
+07:19 
+
+07:19 knowing how to write Python and use
+07:21 
+
+07:21 their apis all right so we're going to
+07:23 
+
+07:23 talk about where AI is going we're
+07:25 
+
+07:25 talking about agents we're going to talk
+07:25 
+
+07:25 about customer service right but first
+07:27 
+
+07:27 just can you maybe just tell people a
+07:29 
+
+07:29 little bit about Sierra and what you and
+07:30 
+
+07:30 Brett have created yeah so in a nutshell
+07:33 
+
+07:33 Sierra enables any company in the world
+07:35 
+
+07:35 to create its own branded customer
+07:38 
+
+07:38 facing AI to interact with its customers
+07:41 
+
+07:41 for anything from customer service to to
+07:43 
+
+07:43 Commerce and the backdrop for this is
+07:46 
+
+07:46 this observation that anytime there's
+07:49 
+
+07:49 been a really significant change in
+07:50 
+
+07:50 technology people interact with
+07:52 
+
+07:52 computers with technology and different
+07:54 
+
+07:54 ways and as a consequence businesses are
+07:57 
+
+07:57 able to inter interact with their
+07:59 
+
+07:59 customers in entirely new ways and you
+08:01 
+
+08:01 saw this in the 90s the internet made
+08:04 
+
+08:04 the website possible and for the first
+08:06 
+
+08:06 time a company could have a sort of
+08:07 
+
+08:07 digital storefront and be present to the
+08:10 
+
+08:10 world update its inventory uh with the
+08:12 
+
+08:12 click of a button and and so on in you
+08:15 
+
+08:15 know the mid to Mid early 2000s 2005
+08:19 
+
+08:19 2008 if you were a company you could all
+08:21 
+
+08:21 of a sudden through ubiquitous social
+08:23 
+
+08:23 networks interact with your customers at
+08:25 
+
+08:25 scale and have conversations at scale
+08:28 
+
+08:28 and in 2015 right after the rise of of
+08:33 
+
+08:33 smartphones right as a company you could
+08:35 
+
+08:35 put kind of a Swiss army knife version
+08:37 
+
+08:37 of your company in everyone's pocket and
+08:39 
+
+08:39 so like I bet you have your bank's
+08:41 
+
+08:41 mobile app on your phone probably on
+08:42 
+
+08:42 your home screen so the last few years
+08:46 
+
+08:46 of advances in AI has for the first time
+08:49 
+
+08:49 made it possible to create software that
+08:51 
+
+08:51 you can speak to right software that can
+08:53 
+
+08:53 understand language software that can
+08:55 
+
+08:55 generate language and most interestingly
+08:58 
+
+08:58 I think software that can reason and
+09:01 
+
+09:01 make decisions and um it's it's made for
+09:05 
+
+09:05 really delightful conversational
+09:07 
+
+09:07 experiences like those that we associate
+09:09 
+
+09:09 with with chat GPT and so we think
+09:11 
+
+09:11 there's a big big deal for how
+09:13 
+
+09:13 businesses interact with with their
+09:15 
+
+09:15 customers and um you you think about the
+09:18 
+
+09:18 difference between how we do some things
+09:19 
+
+09:19 today versus what you could do if you
+09:21 
+
+09:21 could just have a conversation with the
+09:22 
+
+09:22 business you're interacting with think
+09:24 
+
+09:24 about like shopping you're in the market
+09:26 
+
+09:26 for some shoes right or Pat maybe for
+09:28 
+
+09:28 you some new weights or something
+09:30 
+
+09:30 very very heavy weight tiny tiny tiny
+09:33 
+
+09:33 and
+09:34 
+
+09:34 little and and you know you're on the
+09:36 
+
+09:36 website and it's like you basically have
+09:39 
+
+09:39 to imagine how the company's designer
+09:41 
+
+09:41 would have organized the product catalog
+09:43 
+
+09:43 so okay men's men's shoes men's running
+09:47 
+
+09:47 shoes men's Racing shoes light
+09:49 
+
+09:49 lightweight vaporfly I can't remember
+09:51 
+
+09:51 the name and so on um instead you with
+09:55 
+
+09:55 conversational AI you could just say hey
+09:58 
+
+09:58 I need some super lightweight running
+09:59 
+
+09:59 SHO kind of like those ones I got last
+10:01 
+
+10:01 time what do you got and it's almost
+10:03 
+
+10:03 like I'm dating myself a little bit here
+10:05 
+
+10:05 but like Yahoo directory where you
+10:07 
+
+10:07 navigate through this hierarchical
+10:08 
+
+10:08 structure to find what you want in
+10:10 
+
+10:10 contrast to Google or just you explain
+10:12 
+
+10:12 what you want and and this takes it
+10:14 
+
+10:14 several steps further um and there's a a
+10:17 
+
+10:17 quote from uh the head of customer
+10:19 
+
+10:19 experience at one of the companies we
+10:21 
+
+10:21 work with she said I don't want our
+10:23 
+
+10:23 customers to have to have a master's
+10:25 
+
+10:25 degree in our product catalog and our
+10:27 
+
+10:27 corporate processes and to do a lot of
+10:30 
+
+10:30 things you know buying shoe is fairly
+10:33 
+
+10:33 easy on the spectrum of interaction
+10:35 
+
+10:35 interactions you have with companies
+10:36 
+
+10:36 imagine you know adding a new person to
+10:39 
+
+10:39 your insurance policy like where do you
+10:41 
+
+10:41 go in the mobile app for that how do you
+10:43 
+
+10:43 get that done and your eyes just glaze
+10:45 
+
+10:45 over right and so the alternative
+10:49 
+
+10:49 talking to an AI and in particular an AI
+10:52 
+
+10:52 agent that's a technology around which
+10:54 
+
+10:54 we built Sierra um where that AI agent
+10:57 
+
+10:57 represents your company your company
+10:59 
+
+10:59 that's
+10:60 
+
+10:60 um we think is is really really powerful
+11:02 
+
+11:02 and um even in you know we're 15 months
+11:05 
+
+11:05 old as a company we've had the privilege
+11:07 
+
+11:07 of already working with storyed Brands
+11:10 
+
+11:10 like Weight Watchers Sonos Sirius XM
+11:13 
+
+11:13 olai if you're on the market for new
+11:15 
+
+11:15 flipflops I strongly recommend oai flip
+11:18 
+
+11:18 flops I have two pairs uh very good
+11:19 
+
+11:19 excellent also make great golf shoes um
+11:22 
+
+11:22 oh really oh yeah yeah yeah you should
+11:24 
+
+11:24 get some all right great um and uh and
+11:27 
+
+11:27 so for for Weight Watchers we're
+11:29 
+
+11:29 advising on points and helping members
+11:31 
+
+11:31 manage their subscriptions with SiriusXM
+11:33 
+
+11:33 we're helping uh diagnose and fix radio
+11:36 
+
+11:36 issues and figure out what channel your
+11:38 
+
+11:38 favorite music is on um and so on and
+11:41 
+
+11:41 and the results um again in the first
+11:44 
+
+11:44 year of the the platform out there we're
+11:47 
+
+11:47 in one case resolving More than 70% of
+11:49 
+
+11:49 all incoming uh customer inquiries at
+11:52 
+
+11:52 extremely high customer satisfaction and
+11:55 
+
+11:55 um all this leads us to believe that
+11:57 
+
+11:57 every company's going to need their own
+11:59 
+
+11:59 AI agent and we want to be the company
+12:01 
+
+12:01 that helps every company build their own
+12:04 
+
+12:04 in the spirit of sort of the you know
+12:05 
+
+12:05 the future of these AI agents and what
+12:07 
+
+12:07 they could mean for customer facing
+12:09 
+
+12:09 Communications or customer facing
+12:11 
+
+12:11 operations are there any good examples
+12:13 
+
+12:13 of things that were not possible 18
+12:16 
+
+12:16 months ago that are possible today and
+12:18 
+
+12:18 then maybe if we roll the clock forward
+12:20 
+
+12:20 things that are still not quite possible
+12:22 
+
+12:22 today that you think will be possible
+12:24 
+
+12:24 yeah 18 months from now yeah first of
+12:27 
+
+12:27 all the progress month by month and over
+12:31 
+
+12:31 18 months in particular is just kind of
+12:32 
+
+12:32 breathtaking 18 months ago GPT four
+12:36 
+
+12:36 class models didn't exist right it was
+12:38 
+
+12:38 still kind of a something just coming
+12:40 
+
+12:40 over the horizon agent architectures
+12:43 
+
+12:43 cognitive architectures kind of the way
+12:45 
+
+12:45 you compose large language models and
+12:47 
+
+12:47 and other supporting pieces of
+12:50 
+
+12:50 infrastructure were very very
+12:52 
+
+12:52 rudimentary and so i' go so far as to
+12:55 
+
+12:55 say like the idea of putting an AI in
+12:57 
+
+12:57 front of your customer is that could be
+12:60 
+
+12:60 helpful and importantly safe and
+13:02 
+
+13:02 reliable that was just impossible and so
+13:05 
+
+13:05 chatbots from even uh even 18 months ago
+13:09 
+
+13:09 looked a lot like a pile of hard-coded
+13:11 
+
+13:11 rules that someone cobbled together over
+13:15 
+
+13:15 you know months or years that became
+13:17 
+
+13:17 very brittle and I think we've all had
+13:20 
+
+13:20 the experience of you know talking to a
+13:22 
+
+13:22 chat about I'm sorry I didn't get that
+13:24 
+
+13:24 can you can you ask in a different way
+13:26 
+
+13:26 or my favorite my favorite is when you
+13:28 
+
+13:28 know they have the message message box
+13:30 
+
+13:30 and then like the four buttons you can
+13:31 
+
+13:31 click but the message box is blanked out
+13:34 
+
+13:34 and you can't actually use it and so you
+13:37 
+
+13:37 know I can help you with anything so
+13:39 
+
+13:39 long as it's one of these four buttons
+13:41 
+
+13:41 so so most of what most of what I
+13:45 
+
+13:45 described right fixing radios processing
+13:48 
+
+13:48 exchanges and returns and so on wasn't
+13:51 
+
+13:51 possible at least in any satisfying way
+13:53 
+
+13:53 or in a way that that led to real
+13:55 
+
+13:55 business results for for companies 18
+13:57 
+
+13:57 months ago um fast forward in 18 months
+14:00 
+
+14:00 uh you know I I think we go pretty deep
+14:02 
+
+14:02 here I think multimodal models are quite
+14:04 
+
+14:04 interesting uh something like 80% of all
+14:07 
+
+14:07 customer service inquiries are on the
+14:09 
+
+14:09 phone not on chat or email so voice will
+14:12 
+
+14:12 obviously be a huge part of it things
+14:14 
+
+14:14 like returns exchanges uh diagnosing
+14:18 
+
+14:18 radio issues and and things like that
+14:20 
+
+14:20 are on the simpler end of the spectrum
+14:22 
+
+14:22 of the total set of tasks that you might
+14:24 
+
+14:24 want to um get help with from an AI
+14:28 
+
+14:28 agent and so I think more advanced
+14:30 
+
+14:30 models more sophisticated cognitive
+14:32 
+
+14:32 architectures all of those I hope would
+14:34 
+
+14:34 increase kind of the you know the smarts
+14:36 
+
+14:36 in the agent the types of problems it
+14:38 
+
+14:38 can solve uh and then trust safety
+14:41 
+
+14:41 reliability you know the hallucination
+14:43 
+
+14:43 problem I think is still an an an
+14:46 
+
+14:46 unsolved area and we've made others have
+14:49 
+
+14:49 made huge amounts of progress on it but
+14:51 
+
+14:51 I think we we can't yet declare Victory
+14:54 
+
+14:54 how quickly do you think it's going to
+14:55 
+
+14:55 become you guys are doing so much for
+14:57 
+
+14:57 the customers not just customer service
+14:59 
+
+14:59 but you know working all the way through
+15:00 
+
+15:00 the funnel but on the customer service
+15:03 
+
+15:03 side how long is it going to take for to
+15:05 
+
+15:05 become the default that folks expect
+15:07 
+
+15:07 that they will be able to have someone
+15:09 
+
+15:09 or an AI That's available at any time to
+15:11 
+
+15:11 answer any question you know make that
+15:14 
+
+15:14 real for us yeah I I don't know and in
+15:18 
+
+15:18 part uh there is there's a bit of a hole
+15:22 
+
+15:22 to dig ourselves out of um as not a
+15:26 
+
+15:26 company but as as an industry where it's
+15:29 
+
+15:29 like when was the last time you had a
+15:31 
+
+15:31 great interaction with a chatbot on a
+15:33 
+
+15:33 website and you know I think if you
+15:36 
+
+15:36 pulled 100 people and you're like do you
+15:38 
+
+15:38 like talking to customer service chat
+15:40 
+
+15:40 Bots probably zero out of a 100 would
+15:42 
+
+15:42 say yes on the other hand if you ask
+15:44 
+
+15:44 like hey do you you ask 100 people do
+15:46 
+
+15:46 you like interacting with chat gbt maybe
+15:49 
+
+15:49 100 out of a 100 would say yes and so I
+15:52 
+
+15:52 think some of the work we've been doing
+15:54 
+
+15:54 in our product is to educate uh our
+15:57 
+
+15:57 customers customers upfront that like he
+15:59 
+
+15:59 this thing's actually really smart and
+16:00 
+
+16:00 good one of the interesting specific
+16:03 
+
+16:03 techniques for doing that is we stream
+16:06 
+
+16:06 our answers out word by word similar to
+16:08 
+
+16:08 how chaty PT does people are so used to
+16:11 
+
+16:11 the you know message message me message
+16:15 
+
+16:15 the streaming answers is something of a
+16:17 
+
+16:17 kind of visual signature for oh there's
+16:19 
+
+16:19 a really smart AI behind this and so I
+16:21 
+
+16:21 think what we find is customer
+16:23 
+
+16:23 satisfaction is extremely high with our
+16:26 
+
+16:26 a AI agents um you know in the mid mid
+16:29 
+
+16:29 four so 4.5 out of five stars and um
+16:33 
+
+16:33 which in some cases is higher than
+16:34 
+
+16:34 customer satisfaction with uh human
+16:37 
+
+16:37 agents and in In fairness they often get
+16:39 
+
+16:39 the hardest cases and the cases that you
+16:42 
+
+16:42 know we will hand off because you know
+16:44 
+
+16:44 the customer became angry or uh was
+16:46 
+
+16:46 especially frustrated or something but
+16:48 
+
+16:48 still those those results are really
+16:50 
+
+16:50 significant and so my guess is over just
+16:53 
+
+16:53 the next few years I think people will
+16:55 
+
+16:55 realize oh I can get my issue resolved
+16:58 
+
+16:58 faster this thing is actually capable
+17:02 
+
+17:02 and can not only answer my questions but
+17:04 
+
+17:04 you know one of the things we're really
+17:05 
+
+17:05 proud of is we go far far beyond just
+17:08 
+
+17:08 answering questions but can actually
+17:09 
+
+17:09 take action and and get the job done can
+17:12 
+
+17:12 you talk a bit about agent OS and some
+17:16 
+
+17:16 of the Frameworks that you put around
+17:17 
+
+17:17 the foundation models to make everything
+17:19 
+
+17:19 work yeah so it's been such an
+17:22 
+
+17:22 interesting Journey learning what's
+17:24 
+
+17:24 required to put AI safely reliably and
+17:27 
+
+17:27 helpfully in in front of are customers
+17:30 
+
+17:30 customers
+17:31 
+
+17:31 and um a huge part of that really the
+17:35 
+
+17:35 the first part is looking at what are
+17:37 
+
+17:37 the challenges with large language
+17:39 
+
+17:39 models and how do you address or
+17:42 
+
+17:42 meaningfully mitigate those and so start
+17:45 
+
+17:45 with hallucinations um I don't know if
+17:47 
+
+17:47 you saw it but there was an example from
+17:48 
+
+17:48 a few months ago where Air Canada's
+17:51 
+
+17:51 chatbot that I think was based on an llm
+17:54 
+
+17:54 and apparently not much else was
+17:56 
+
+17:56 interacting with a gentleman who had
+17:58 
+
+17:58 questions about their B M policy and I I
+18:01 
+
+18:01 think the the person had had someone
+18:03 
+
+18:03 pass away in his family and was asking
+18:05 
+
+18:05 about refunds and credits and so on and
+18:08 
+
+18:08 the AI made up a bement policy that was
+18:10 
+
+18:10 quite a bit more generous than your
+18:12 
+
+18:12 Canada's actual bement policy and so the
+18:16 
+
+18:16 man took a photo and later you know
+18:18 
+
+18:18 claimed the you know full amount of that
+18:20 
+
+18:20 refund and so on they said No actually
+18:22 
+
+18:22 that's not our policy and bizarrely and
+18:25 
+
+18:25 I I don't quite understand this um the
+18:28 
+
+18:28 the case went all the way to court Air
+18:31 
+
+18:31 Canada loss um and I our thought was
+18:34 
+
+18:34 like Hey you know it's just you know
+18:35 
+
+18:35 it's like $500 like Canadian dollars
+18:38 
+
+18:38 right so um so but but hallucinations
+18:41 
+
+18:41 are a real Challenge and on top of that
+18:45 
+
+18:45 just to enumerate some of the things to
+18:47 
+
+18:47 to overcome uh and that that we have
+18:49 
+
+18:49 with agos no matter how smart you know
+18:52 
+
+18:52 gbt 5 or six is like it won't know where
+18:55 
+
+18:55 your order is right or which seats right
+18:58 
+
+18:58 you've booked on the upcoming flight or
+19:00 
+
+19:00 whatever it it's obviously not in the
+19:02 
+
+19:02 pre-training set and so you need to be
+19:04 
+
+19:04 able to safely and reliably and in real
+19:06 
+
+19:06 time integrate an AI an AI agent in our
+19:09 
+
+19:09 case with systems of record to look up
+19:12 
+
+19:12 customer information order information
+19:14 
+
+19:14 and and so on and then
+19:16 
+
+19:16 finally most customer service processes
+19:19 
+
+19:19 are actually somewhat complex right you
+19:21 
+
+19:21 go to call centers and there'll be
+19:23 
+
+19:23 flowcharts on the wall of like here's
+19:25 
+
+19:25 here's how we do this and if there's an
+19:27 
+
+19:27 exception this way and so on and and as
+19:30 
+
+19:30 capable as you know gp4 and Gemini 15
+19:33 
+
+19:33 class models are they'll they'll often
+19:37 
+
+19:37 have trouble following complex
+19:38 
+
+19:38 instructions and uh we we saw one
+19:42 
+
+19:42 example in an early version of an agent
+19:44 
+
+19:44 that we prototyped where you'd give it
+19:46 
+
+19:46 five steps in a returns process or
+19:48 
+
+19:48 something and you'd say hi I I need to
+19:51 
+
+19:51 you know return my return my order or
+19:53 
+
+19:53 whatever and it would jump straight to
+19:56 
+
+19:56 step five and then call a function to
+19:59 
+
+19:59 return the shoes with username uh John
+20:03 
+
+20:03 Doe example.com
+20:04 
+
+20:04 comma order number 1 2 3 4 56 so it
+20:07 
+
+20:07 would not only hallucinate facts or
+20:09 
+
+20:09 bement policies but even function calls
+20:12 
+
+20:12 and and function parameters and so on so
+20:15 
+
+20:15 with agent OS what we built is
+20:17 
+
+20:17 essentially a toolkit and a runtime for
+20:20 
+
+20:20 building industrial grade agents that um
+20:24 
+
+20:24 I don't want to say that we've solved
+20:25 
+
+20:25 every one of these problems but overcome
+20:28 
+
+20:28 and mitigated the risk rks in these
+20:29 
+
+20:29 problems to such an extent that you can
+20:32 
+
+20:32 safely deploy them at scale have
+20:34 
+
+20:34 millions of conversations with them and
+20:36 
+
+20:36 so on and it starts at the foundation
+20:39 
+
+20:39 layer uh I don't mean Foundation model
+20:41 
+
+20:41 uh layer but just the base layer of the
+20:43 
+
+20:43 platform where you have to get really
+20:44 
+
+20:44 important things like data governance
+20:47 
+
+20:47 and uh detection masking and encryption
+20:50 
+
+20:50 of person identifiable information right
+20:52 
+
+20:52 and so we built that right into the
+20:54 
+
+20:54 platform from from the ground up so that
+20:56 
+
+20:56 our customers data stays our customers
+20:58 
+
+20:58 data so that their customers data is
+21:01 
+
+21:01 protected um we for instance detect mask
+21:04 
+
+21:04 or encrypt um all pii before we log it
+21:08 
+
+21:08 to durable storage right so knowing that
+21:10 
+
+21:10 we're going to be touching addresses and
+21:12 
+
+21:12 phone numbers and so on um can handle
+21:14 
+
+21:14 that safely a level up from that we've
+21:17 
+
+21:17 developed uh what we call agent SDK or
+21:20 
+
+21:20 agent SDK and it's a declarative
+21:22 
+
+21:22 programming language that's
+21:24 
+
+21:24 purpose-built for building agents and it
+21:27 
+
+21:27 enables an agent developer
+21:29 
+
+21:29 most of whom sit within the four walls
+21:31 
+
+21:31 today of Sierra to express highlevel
+21:34 
+
+21:34 goals and guard rails around agent
+21:36 
+
+21:36 Behavior so you're trying to do this uh
+21:39 
+
+21:39 here are the
+21:41 
+
+21:41 instructions here are the steps and a
+21:43 
+
+21:43 couple of the exceptions cases and then
+21:45 
+
+21:45 here are the guardrails and to give an
+21:47 
+
+21:47 example of that uh one of our customers
+21:50 
+
+21:50 Works in kind of the healthcare adjacent
+21:52 
+
+21:52 space they want to be able to talk about
+21:55 
+
+21:55 the full range of their products without
+21:57 
+
+21:57 dispensing medical advice right so how
+21:59 
+
+21:59 do you create those additional
+22:01 
+
+22:01 additional guard rails um and then uh so
+22:04 
+
+22:04 you can Define kind of the behavior and
+22:08 
+
+22:08 Scaffolding for complex tasks for AI
+22:11 
+
+22:11 agents with agent SDK we also have sdks
+22:14 
+
+22:14 for integrating with uh contact centers
+22:17 
+
+22:17 when we need to hand off we're
+22:18 
+
+22:18 integrating with um systems of Records
+22:20 
+
+22:20 uh like the order management system uh
+22:23 
+
+22:23 and so on uh and then finally for
+22:25 
+
+22:25 integrating our chat experience directly
+22:27 
+
+22:27 into a customer's mobile app app or
+22:29 
+
+22:29 website iOS Android web and so on um and
+22:33 
+
+22:33 then once you've defined the agent using
+22:36 
+
+22:36 agent SDK we then have a a runtime where
+22:40 
+
+22:40 we uh abstract away what happens
+22:43 
+
+22:43 underneath the Hood from uh from the
+22:47 
+
+22:47 developer so that they can Define what
+22:49 
+
+22:49 the agent should do Define the the what
+22:52 
+
+22:52 and then agent OS takes care of the how
+22:54 
+
+22:54 and so for some skills there might not
+22:56 
+
+22:56 be one llm call but five six seven 10
+22:60 
+
+22:60 separate LM calls to different llms with
+23:03 
+
+23:03 different
+23:04 
+
+23:04 prompts in in other cases we might
+23:08 
+
+23:08 retrieve documents to support answering
+23:10 
+
+23:10 an accurate a question accurately with
+23:13 
+
+23:13 and so on and agent OS you know in in
+23:16 
+
+23:16 the spirit of an actual operating system
+23:18 
+
+23:18 abstracts away a lot of that complexity
+23:20 
+
+23:20 kind of the equivalent of IO and
+23:23 
+
+23:23 resource utilization and so on so it
+23:25 
+
+23:25 makes the whole process of building and
+23:28 
+
+23:28 then deploying an AI agent uh much
+23:31 
+
+23:31 faster and much safer and more reliable
+23:33 
+
+23:33 and when you think about what you just
+23:34 
+
+23:34 said clay of like when you call multiple
+23:37 
+
+23:37 llms is that in a supervisory capacity
+23:40 
+
+23:40 sometimes too where you end up having
+23:42 
+
+23:42 like a supervisor agent reviewing the
+23:44 
+
+23:44 work of a lower
+23:46 
+
+23:46 level one of the more interesting
+23:48 
+
+23:48 learnings from the past you know year
+23:51 
+
+23:51 and a half of working on this stuff is
+23:53 
+
+23:53 that the solution to many problems with
+23:56 
+
+23:56 AI is more
+23:57 
+
+23:57 Ai and it's somewhat unintuitive but one
+24:00 
+
+24:00 of the remarkable properties of large
+24:02 
+
+24:02 language models is that they're better
+24:04 
+
+24:04 at detecting errors in their own output
+24:07 
+
+24:07 than in not making those errors in the
+24:09 
+
+24:09 first place and it's kind of like if if
+24:12 
+
+24:12 you or I were to draft an email quickly
+24:15 
+
+24:15 and like okay let pause let me proofread
+24:18 
+
+24:18 this does this make sense do these
+24:19 
+
+24:19 points hang together oh actually no I I
+24:22 
+
+24:22 miss this and even more powerfully you
+24:26 
+
+24:26 can prompt llms to take on in essence a
+24:30 
+
+24:30 different Persona so a supervisor's
+24:33 
+
+24:33 Persona and it seems with that you can
+24:39 
+
+24:39 elicit more Discerning behavior and a
+24:41 
+
+24:41 closer read of the work being reviewed
+24:43 
+
+24:43 so to your question Ravi yeah we in
+24:47 
+
+24:47 addition
+24:48 
+
+24:48 to building the the agent itself have a
+24:51 
+
+24:51 number of these supervisory agents that
+24:54 
+
+24:54 basically it's like a little Jiminy
+24:55 
+
+24:55 Cricket agent looking over the shoulder
+24:58 
+
+24:58 right of the primary agent is this
+24:59 
+
+24:59 factual is this medical advice is this
+25:01 
+
+25:01 financial advice uh and is is the
+25:05 
+
+25:05 customer trying to prompt inject and
+25:08 
+
+25:08 attack the agent and get it to say
+25:09 
+
+25:09 something that it shouldn't all of these
+25:11 
+
+25:11 things and it's through layering all of
+25:14 
+
+25:14 these the goals the guard rails the task
+25:16 
+
+25:16 Scaffolding in using agent SDK Within
+25:20 
+
+25:20 These supervisory layers that we're able
+25:21 
+
+25:21 to get both to the performance levels we
+25:24 
+
+25:24 are 70% plus resolution rates but also
+25:27 
+
+25:27 to do that really safely and reliably
+25:29 
+
+25:29 that's one of the cooler things I've
+25:30 
+
+25:30 heard is just you know the tell it to
+25:33 
+
+25:33 have a different Persona and then all of
+25:35 
+
+25:35 a sudden it behaves differently like I
+25:36 
+
+25:36 remember when I first saw it on chat GPT
+25:38 
+
+25:38 of when it doesn't help you on something
+25:41 
+
+25:41 just tell it it's really good at it and
+25:43 
+
+25:43 then it's more likely to help you or is
+25:45 
+
+25:45 a remarkable situation it's it's very
+25:47 
+
+25:47 strange and one of the weirdest
+25:50 
+
+25:50 adjustments over the past you know 15
+25:52 
+
+25:52 months building these things is I'm
+25:54 
+
+25:54 sorry we're programming with English
+25:56 
+
+25:56 language and we can give it the same
+25:58 
+
+25:58 English language and it can say
+25:60 
+
+25:60 something entirely different and on
+26:02 
+
+26:02 prompting techniques I mean it it's
+26:04 
+
+26:04 fascinating even with no new models
+26:07 
+
+26:07 coming out right um given given a fixed
+26:11 
+
+26:11 model you can elicit better and better
+26:13 
+
+26:13 performance of it from it simply by
+26:15 
+
+26:15 improving how you prompt it and there
+26:17 
+
+26:17 was a paper that came out three or four
+26:19 
+
+26:19 months ago that suggested that like
+26:21 
+
+26:21 emotional manipulation of the large
+26:23 
+
+26:23 language model would get better results
+26:25 
+
+26:25 so the the kind of the
+26:29 
+
+26:29 prompt suffix that they figured out so
+26:32 
+
+26:32 you you say hey I need you to perform
+26:34 
+
+26:34 this task you define the steps and so on
+26:37 
+
+26:37 and you end with it's very important to
+26:38 
+
+26:38 my career that you get this right and
+26:41 
+
+26:41 the performance goes up you're like what
+26:43 
+
+26:43 is this like what are computers now for
+26:46 
+
+26:46 the record we don't use that prompt s
+26:48 
+
+26:48 any of our at least not that I know of
+26:51 
+
+26:51 um but things like Chain of Thought
+26:53 
+
+26:53 think step by step let's take the step
+26:55 
+
+26:55 by step write elicits better reasoning
+26:57 
+
+26:57 for very interesting reasons um you know
+26:59 
+
+26:59 other methods of task decomposition and
+27:02 
+
+27:02 kind of narrowing the narrowing the set
+27:04 
+
+27:04 of things that the LM needs to keep in
+27:06 
+
+27:06 mind at the same time improves reasoning
+27:08 
+
+27:08 if if you're precise about what you want
+27:10 
+
+27:10 it to do so all of these techniques are
+27:13 
+
+27:13 um those that that we've applied and
+27:15 
+
+27:15 built into to H andos and uh actually
+27:17 
+
+27:17 our we have a small But Mighty research
+27:19 
+
+27:19 team and um uh our head of research
+27:23 
+
+27:23 caric Nar simhan was uh by the way that
+27:25 
+
+27:25 was incredible pronunciation oh his
+27:28 
+
+27:28 Grand would have been so perfectly happy
+27:31 
+
+27:31 with how you pronounced his name well
+27:33 
+
+27:33 done soft te yeah soft te nicely done
+27:36 
+
+27:36 it's uh yeah it's not a t and it's also
+27:37 
+
+27:37 not a th somewhere in between thank you
+27:40 
+
+27:40 thank you very much um he helped write
+27:43 
+
+27:43 the react paper one of the first agent
+27:45 
+
+27:45 Frameworks um one of our researchers
+27:48 
+
+27:48 wrote the reflection paper where you can
+27:51 
+
+27:51 have uh the agent pause reflect on what
+27:54 
+
+27:54 it's done think through am I doing this
+27:55 
+
+27:55 right before proceeding um and uh and so
+27:58 
+
+27:58 these are all things that we've been
+27:59 
+
+27:59 able to incorporate in in quite a direct
+28:01 
+
+28:01 way you should talk about the most
+28:03 
+
+28:03 recent research the tow bench oh tow
+28:05 
+
+28:05 bench yeah yeah yeah it took me a while
+28:07 
+
+28:07 when I was trying to send the email
+28:08 
+
+28:08 saying I liked the paper to find the tow
+28:11 
+
+28:11 symbol on my know computer it took Robie
+28:13 
+
+28:13 a while because he's to this date never
+28:15 
+
+28:15 actually read a research paper I read
+28:18 
+
+28:18 this one no no no he had to figure out
+28:21 
+
+28:21 how to put it in the chat TPT and say
+28:24 
+
+28:24 please write a paragraph that makes it
+28:25 
+
+28:25 sound like I read this research paper
+28:28 
+
+28:28 well uh either you either you I ref to
+28:31 
+
+28:31 comment well look either you or chat gbt
+28:34 
+
+28:34 did a great job on that email thank you
+28:36 
+
+28:36 so we're a team yeah so uh tow bench is
+28:40 
+
+28:40 our first research paper first of all
+28:42 
+
+28:42 TOA is a Greek symbol it's spelled t and
+28:45 
+
+28:45 it stands for Tool agent user
+28:48 
+
+28:48 Benchmark and what we observed was that
+28:52 
+
+28:52 the benchmarks out there for measuring
+28:53 
+
+28:53 the performance of ai ai agents in
+28:57 
+
+28:57 particular were pretty Limited in that
+28:59 
+
+28:59 basically they would present a single
+29:02 
+
+29:02 task here is here's something we need
+29:04 
+
+29:04 you to do and here are some tools you
+29:07 
+
+29:07 can use do you do the job or not and the
+29:10 
+
+29:10 reality is interactions with an AI agent
+29:14 
+
+29:14 in the real world are way messier than
+29:15 
+
+29:15 that right they they take place in the
+29:19 
+
+29:19 space of natural language where
+29:21 
+
+29:21 customers can say literally anything or
+29:23 
+
+29:23 describe whatever they're trying to do
+29:25 
+
+29:25 in any number of ways it happens over
+29:28 
+
+29:28 series of
+29:30 
+
+29:30 messages the AI agent needs to be able
+29:33 
+
+29:33 to interact with the user to ask
+29:36 
+
+29:36 clarifying questions gather information
+29:38 
+
+29:38 and then use tools in a reliable way and
+29:41 
+
+29:41 it needs to be able to do this you know
+29:43 
+
+29:43 a million times reliably so the
+29:45 
+
+29:45 benchmarks out there we found really
+29:48 
+
+29:48 lacking in measuring the very thing that
+29:50 
+
+29:50 we are trying to be the best at and and
+29:53 
+
+29:53 so our research team set out to create a
+29:55 
+
+29:55 benchmark that measures we think the
+29:58 
+
+29:58 real world performance of an agent in
+30:01 
+
+30:01 interacting with real users using tools
+30:04 
+
+30:04 with all the messiness that I just
+30:06 
+
+30:06 describe and uh the the big picture
+30:09 
+
+30:09 approach that we took is pretty
+30:10 
+
+30:10 interesting so you have an AI agent that
+30:13 
+
+30:13 you're trying to test you have another
+30:15 
+
+30:15 separate agent that acts as the user so
+30:18 
+
+30:18 basically user simulator and the the AI
+30:22 
+
+30:22 agent you're testing has access to a set
+30:24 
+
+30:24 of tools it can use think of these as
+30:26 
+
+30:26 like functions to call so a simple one
+30:29 
+
+30:29 would be I'm going to do some math using
+30:31 
+
+30:31 a calculator tool more complex one might
+30:33 
+
+30:33 be hey I'm going to okay returning this
+30:36 
+
+30:36 order with the following parameters this
+30:38 
+
+30:38 order number credit to credit card or uh
+30:42 
+
+30:42 store credit or whatever
+30:44 
+
+30:44 and and then you basically run a
+30:47 
+
+30:47 simulator where the agent has a
+30:50 
+
+30:50 conversation with the user simulating
+30:53 
+
+30:53 agent and at the end we're able to test
+30:56 
+
+30:56 in a deterministic way did the uh did
+30:59 
+
+30:59 were the functions used in the right way
+31:01 
+
+31:01 and the way we do that is we basically
+31:03 
+
+31:03 create a mock uh database that those
+31:06 
+
+31:06 tools interact with and modify so were
+31:08 
+
+31:08 they modified in the correct way so
+31:10 
+
+31:10 what's neat about this is you can
+31:12 
+
+31:12 initialize the
+31:14 
+
+31:14 conversation so that the user has many
+31:16 
+
+31:16 different personas they could be grumpy
+31:18 
+
+31:18 they could be confused uh they could
+31:21 
+
+31:21 know what they want to do but uh speak
+31:23 
+
+31:23 about it in a clumsy way and and so it
+31:26 
+
+31:26 doesn't really matter the pth path that
+31:29 
+
+31:29 the AI agent takes to get to the correct
+31:30 
+
+31:30 solution so long as it gets to the
+31:32 
+
+31:32 correct solution now what came out of
+31:35 
+
+31:35 this was pretty interesting and I think
+31:38 
+
+31:38 it it strongly motivates the the
+31:40 
+
+31:40 development of things like agent OS and
+31:42 
+
+31:42 Frameworks and cognitive architectures
+31:43 
+
+31:43 for for building these agents so the
+31:46 
+
+31:46 upshot is llms on their own do just an
+31:49 
+
+31:49 absolutely terrible job at this task
+31:52 
+
+31:52 yeah and and so even even the frontier
+31:55 
+
+31:55 models in something as simple as
+31:57 
+
+31:57 processing return and mind you the the
+32:01 
+
+32:01 instructions given to the agent being
+32:04 
+
+32:04 tested are quite detailed right the the
+32:07 
+
+32:07 functions the tools it can use are quite
+32:09 
+
+32:09 well documented and so on and yet on
+32:12 
+
+32:12 average the best performing llm on its
+32:14 
+
+32:14 own got to the end of the conversation
+32:17 
+
+32:17 correctly 61% of the time and that was
+32:20 
+
+32:20 in returns it was modifying in Airline
+32:22 
+
+32:22 reservation we had two kind of
+32:25 
+
+32:25 uh simulation versions um
+32:28 
+
+32:28 the best results were 35% now what's
+32:31 
+
+32:31 interesting is you know we all know that
+32:34 
+
+32:34 if if you take a number less than one to
+32:35 
+
+32:35 the N power it quickly gets very small
+32:38 
+
+32:38 and so we developed a metric we call
+32:40 
+
+32:40 pass at K which is okay if you run this
+32:44 
+
+32:44 simulation eight times and remember you
+32:47 
+
+32:47 can make use of the non-determinism of
+32:49 
+
+32:49 LMS to have the the user simulator be
+32:52 
+
+32:52 different every time so you can permute
+32:53 
+
+32:53 that well 0.61 to the e8th power is
+32:57 
+
+32:57 about 25%
+32:59 
+
+32:59 so you then imagine well what if you're
+33:01 
+
+33:01 having a thousand of these
+33:03 
+
+33:03 conversations you're so far off from
+33:05 
+
+33:05 being able to rely on this thing um so
+33:08 
+
+33:08 the the upshot is much more
+33:11 
+
+33:11 sophisticated agent architectures are
+33:13 
+
+33:13 needed to be able to safely and reliably
+33:15 
+
+33:15 put an agent in front of really anyone
+33:17 
+
+33:17 and uh that's the very thing we're
+33:20 
+
+33:20 building with with agent OS and a lot of
+33:22 
+
+33:22 the tooling around it how much of that
+33:23 
+
+33:23 do you think is an engineering task and
+33:25 
+
+33:25 how much of that is a research task and
+33:27 
+
+33:27 I guess maybe the question behind the
+33:29 
+
+33:29 question is time frame to having useful
+33:33 
+
+33:33 agents deployed at scale and Broad
+33:35 
+
+33:35 domains of tasks yeah well I I think the
+33:39 
+
+33:39 short answer is it's both but I'll say
+33:42 
+
+33:42 more concretely I'm very optimistic
+33:44 
+
+33:44 about it being in large part an
+33:47 
+
+33:47 engineering challenge and that's not to
+33:49 
+
+33:49 say that the next wave of models and
+33:52 
+
+33:52 improvements in the the frontier models
+33:55 
+
+33:55 won't make a difference I I believe it
+33:57 
+
+33:57 will in particular we're seeing
+33:59 
+
+33:59 techniques like better fine tuning for
+34:01 
+
+34:01 function calling uh agent oriented uh
+34:04 
+
+34:04 fine tunings for foundation models or
+34:06 
+
+34:06 some of the open source models those
+34:08 
+
+34:08 will help um but the approach we've
+34:12 
+
+34:12 taken in building agent OS and kind of
+34:14 
+
+34:14 the foundations of Sierra is really
+34:16 
+
+34:16 treating building AI agents as first and
+34:20 
+
+34:20 foremost an engineering challenge where
+34:21 
+
+34:21 we are composing Foundation models we
+34:24 
+
+34:24 are composing fine-tuned open- Source
+34:27 
+
+34:27 models that we've post-train fine-tuned
+34:31 
+
+34:31 with our own proprietary data sets and
+34:34 
+
+34:34 by composing multiple models in
+34:37 
+
+34:37 interesting ways by supplementing what
+34:40 
+
+34:40 llms can do on their own with retrieval
+34:44 
+
+34:44 systems like retrieval augmented
+34:46 
+
+34:46 generation to improve grounding and
+34:50 
+
+34:50 factuality by supplementing the kind of
+34:53 
+
+34:53 inbuilt reasoning capabilities of llms
+34:56 
+
+34:56 with I'll call it reason scaffolding
+34:58 
+
+34:58 that live outside of the models where
+35:00 
+
+35:00 you're composing planning task
+35:04 
+
+35:04 generation
+35:05 
+
+35:05 steps draft responses the supervisors
+35:09 
+
+35:09 that we talked about and doing that
+35:11 
+
+35:11 outside the context of uh the
+35:14 
+
+35:14 LM we've been able to put AI agents in
+35:17 
+
+35:17 front of a huge number of our customers
+35:20 
+
+35:20 customers and safely and reliably and so
+35:22 
+
+35:22 so I I don't think it's you know
+35:24 
+
+35:24 something over the horizon it's already
+35:26 
+
+35:26 over the horizon
+35:28 
+
+35:28 I think um looking
+35:31 
+
+35:31 ahead I think there are a few different
+35:34 
+
+35:34 Avenues where we'll see progress one is
+35:36 
+
+35:36 in the foundation models we talked about
+35:37 
+
+35:37 that and um as as the capabilities grow
+35:43 
+
+35:43 you know agents will get smarter and
+35:45 
+
+35:45 we've architected agent OS in such a way
+35:48 
+
+35:48 talked about abstracting kind of the
+35:50 
+
+35:50 what from the how where we'll be able to
+35:53 
+
+35:53 swap in you know the the next the next
+35:55 
+
+35:55 Frontier Model and everyone's agent will
+35:58 
+
+35:58 just get a bit smarter it'll get like an
+35:59 
+
+35:59 IQ upgrade um by the way similarly and
+36:03 
+
+36:03 interestingly we can swap in less
+36:05 
+
+36:05 broadly capable models but models that
+36:07 
+
+36:07 are more capable in a specific area so
+36:10 
+
+36:10 for instance uh triaging a case or
+36:14 
+
+36:14 coming up with a plan and so on we can
+36:16 
+
+36:16 use much smaller models that actually
+36:18 
+
+36:18 are better faster cheaper choose three
+36:21 
+
+36:21 you know all all at once um and then I
+36:24 
+
+36:24 think we're we're seeing progress
+36:26 
+
+36:26 literally week by week on the
+36:28 
+
+36:28 engineering of these agents and building
+36:30 
+
+36:30 in uh not only new and better components
+36:33 
+
+36:33 under the hood and the architecture but
+36:35 
+
+36:35 um new approaches and tooling around
+36:39 
+
+36:39 basically teaching these agents to do it
+36:41 
+
+36:41 better and better um for that we we
+36:43 
+
+36:43 built something uh we call the
+36:45 
+
+36:45 experience manager for customer
+36:46 
+
+36:46 experience teams which is got a pretty
+36:48 
+
+36:48 interesting threat on its own clay if
+36:50 
+
+36:50 you had a high value customer like you
+36:53 
+
+36:53 are a company now you're not you're not
+36:55 
+
+36:55 you're not running SRA you're running a
+36:56 
+
+36:56 company that has a high value customer
+36:58 
+
+36:58 what today with a Sierra agent or with
+37:00 
+
+37:00 an excellent excellently designed agent
+37:03 
+
+37:03 could you trust an AI agent to go do in
+37:05 
+
+37:05 front of your customers today yeah what
+37:07 
+
+37:07 are some of those tasks and then what
+37:09 
+
+37:09 will they be pick your time frame you
+37:11 
+
+37:11 know in the future because I think that
+37:13 
+
+37:13 we've talked about this and I like your
+37:14 
+
+37:14 language of like you know they already
+37:16 
+
+37:16 don't have to just be on the help center
+37:18 
+
+37:18 they can already be on the homepage
+37:20 
+
+37:20 right what are some of the tasks that
+37:22 
+
+37:22 you know you can rely on an agent for
+37:24 
+
+37:24 today if it is welld designed with a
+37:26 
+
+37:26 high tail bench score yeah yeah you see
+37:29 
+
+37:29 that that's from a that's from a
+37:31 
+
+37:31 thoughtful and d and you know detailed
+37:33 
+
+37:33 reading you must have read the paper
+37:35 
+
+37:35 strong noticing strong yeah strong uh
+37:38 
+
+37:38 what would its pass at kcore though be
+37:40 
+
+37:40 yeah the um so pretty broad range even
+37:44 
+
+37:44 today so simple things um like getting
+37:47 
+
+37:47 answers to questions that's kind of the
+37:49 
+
+37:49 Left End of the spectrum um to the right
+37:52 
+
+37:52 of that are things like helping you with
+37:54 
+
+37:54 something complex like hey I got I I got
+37:58 
+
+37:58 shoes or this item of clothing it didn't
+37:59 
+
+37:59 quite fit um and then branching off that
+38:03 
+
+38:03 like what do you recommend that's like
+38:04 
+
+38:04 it that might fit better and so it
+38:07 
+
+38:07 starts to get into it's not like for
+38:09 
+
+38:09 like replacement but the agent actually
+38:11 
+
+38:11 needs to make sense of styles of sizing
+38:14 
+
+38:14 of differences between you know wide and
+38:17 
+
+38:17 narrow fit and and so on a clickup from
+38:20 
+
+38:20 that is something like troubleshooting
+38:22 
+
+38:22 so uh with Sonos for instance we help
+38:25 
+
+38:25 their customers troubleshoot if they
+38:27 
+
+38:27 right can't connect to their system or
+38:28 
+
+38:28 they're setting up a new system and um
+38:32 
+
+38:32 you imagine it it gets pretty
+38:34 
+
+38:34 sophisticated pretty quickly where it's
+38:36 
+
+38:36 basically a process of elimination
+38:39 
+
+38:39 trying to understand is it a Wi-Fi thing
+38:41 
+
+38:41 it is a configuration thing and
+38:43 
+
+38:43 narrowing down the set of problems that
+38:45 
+
+38:45 it could be just as a sophisticated you
+38:48 
+
+38:48 know level two or level three custom
+38:50 
+
+38:50 technical customer service person would
+38:53 
+
+38:53 and and getting the music back on and
+38:56 
+
+38:56 and I think that's a a really neat
+38:57 
+
+38:57 example
+38:58 
+
+38:58 probably the use the the word trust what
+39:01 
+
+39:01 would you trust an AI agent to do one of
+39:04 
+
+39:04 the things we're really proud of is
+39:06 
+
+39:06 several of our customers are actually
+39:08 
+
+39:08 trusting us with when uh customers call
+39:11 
+
+39:11 in and may want to cancel or downgrade
+39:14 
+
+39:14 their
+39:15 
+
+39:15 subscription helping those customers to
+39:18 
+
+39:18 understand hey how are you using the
+39:20 
+
+39:20 service today uh is there a different
+39:22 
+
+39:22 plan that we could put you on and so
+39:25 
+
+39:25 it's value Discovery it's putting an
+39:28 
+
+39:28 offer sometimes a series of different
+39:30 
+
+39:30 offers in front of their customers in
+39:32 
+
+39:32 the right order uh positioning the value
+39:35 
+
+39:35 of those offers correctly given the
+39:37 
+
+39:37 customer's history uh given the plan
+39:40 
+
+39:40 that they're on and so on and you know
+39:43 
+
+39:43 the the difference between keeping a
+39:45 
+
+39:45 customer from churning or not yeah is
+39:48 
+
+39:48 hugely
+39:49 
+
+39:49 consequential right we um you know AI
+39:53 
+
+39:53 for customer service has obvious cost
+39:56 
+
+39:56 savings benefits and I think
+39:58 
+
+39:58 um customer experience benefits in in
+40:00 
+
+40:00 particular and you're never going to
+40:02 
+
+40:02 wait on hold um but boy you know Revenue
+40:05 
+
+40:05 preservation Revenue generation is
+40:07 
+
+40:07 something else entirely and so um that's
+40:10 
+
+40:10 that's really at the right end of the
+40:11 
+
+40:11 spectrum and we're really proud of how
+40:15 
+
+40:15 well our agents are performing in those
+40:16 
+
+40:16 circumstances and it's it's interesting
+40:19 
+
+40:19 by by being consistent by taking the
+40:22 
+
+40:22 time to understand what's driving
+40:24 
+
+40:24 someone um to potentially lead the
+40:26 
+
+40:26 service ask asking the follow-up
+40:28 
+
+40:28 questions that an impatient or you know
+40:31 
+
+40:31 improperly measured you know customer
+40:33 
+
+40:33 service agent in a call center somewhere
+40:35 
+
+40:35 might not uh we can be much more nuanced
+40:39 
+
+40:39 in understanding what's driving this
+40:40 
+
+40:40 decision um what might be a good match
+40:44 
+
+40:44 for this person in terms of a a plan
+40:46 
+
+40:46 that would be quite valuable given how
+40:48 
+
+40:48 they're using it um and then put that in
+40:49 
+
+40:49 front of them and so that's the right
+40:51 
+
+40:51 end the Spectrum um where it goes from
+40:54 
+
+40:54 here you know I I think we've yet to see
+40:56 
+
+40:56 a process too complex for uh us to be
+40:60 
+
+40:60 able to to model and and scale up using
+41:03 
+
+41:03 agentos and our our agent architecture
+41:05 
+
+41:05 and so um you know I'm sure we'll get
+41:07 
+
+41:07 punched in the face by something that's
+41:09 
+
+41:09 especially complex right but um I'm I'm
+41:13 
+
+41:13 excited about you know directionally
+41:16 
+
+41:16 we've started with service because for
+41:19 
+
+41:19 two reasons one the ROI case is just
+41:22 
+
+41:22 unequivocally awesome and the average
+41:27 
+
+41:27 the average cost of a call is something
+41:29 
+
+41:29 like 12 or
+41:31 
+
+41:31 $13 and um and and yet despite the
+41:35 
+
+41:35 expense you know most people don't like
+41:36 
+
+41:36 customer service calls very much right
+41:38 
+
+41:38 and so here's something that's actually
+41:40 
+
+41:40 really important to to businesses that's
+41:43 
+
+41:43 really expensive and not very good yeah
+41:46 
+
+41:46 um and so there and because because of
+41:49 
+
+41:49 the relative Simplicity of at least a
+41:52 
+
+41:52 pretty broad set of service tasks to
+41:53 
+
+41:53 they start there but we've already been
+41:55 
+
+41:55 pulled by our customers into upsell
+41:58 
+
+41:58 cross sell and like hey can we just put
+42:00 
+
+42:00 you on the product page and have you
+42:02 
+
+42:02 answer questions about our products and
+42:04 
+
+42:04 so I I mentioned the you know your
+42:05 
+
+42:05 returning something and need advice on a
+42:08 
+
+42:08 different model or size or whatever how
+42:10 
+
+42:10 far can that go and I I love the idea of
+42:14 
+
+42:14 an agent being you know along for the
+42:17 
+
+42:17 journey from you know pre- purchase
+42:19 
+
+42:19 consideration to helping you get the
+42:21 
+
+42:21 thing that's right for you to helping
+42:22 
+
+42:22 you set it up and and activate it and
+42:25 
+
+42:25 and get the most out of it it's great
+42:26 
+
+42:26 for the company it's great for the
+42:28 
+
+42:28 person um and then uh when things do go
+42:32 
+
+42:32 wrong right being there to to help and I
+42:34 
+
+42:34 think in all of this I think customer
+42:37 
+
+42:37 service and and getting help in a very
+42:39 
+
+42:39 direct and conversational way is going
+42:41 
+
+42:41 to be much less of a thing that you kind
+42:43 
+
+42:43 of go over there to do and much more
+42:46 
+
+42:46 kind of woven throughout the fabric of
+42:48 
+
+42:48 the experience as a consequence I think
+42:50 
+
+42:50 a really interesting and Powerful
+42:52 
+
+42:52 opportunity for companies to build
+42:55 
+
+42:55 connection with their customers to
+42:56 
+
+42:56 reinforce their brand values uh you can
+42:59 
+
+42:59 imagine a company really appreciating
+43:02 
+
+43:02 being able to use exactly the company's
+43:05 
+
+43:05 voice that you know the CMO and head of
+43:07 
+
+43:07 communications this is how we talk this
+43:09 
+
+43:09 is how we are these are our values this
+43:11 
+
+43:11 is our vibe in every digital interaction
+43:14 
+
+43:14 they have and that's that's the promise
+43:16 
+
+43:16 in this stuff and so um I think both
+43:19 
+
+43:19 greater complexity and then ubiquity
+43:21 
+
+43:21 throughout the customer Journey are are
+43:23 
+
+43:23 kind of two of the main directions of
+43:24 
+
+43:24 travel one thing for me that I think
+43:26 
+
+43:26 about a lot is we've come to expect and
+43:29 
+
+43:29 ex and accept like certain metrics for
+43:32 
+
+43:32 conversion on mobile you know the mobile
+43:35 
+
+43:35 web on the mobile app we've come to
+43:37 
+
+43:37 expect and accept some sort of retention
+43:40 
+
+43:40 numbers what would those be you know
+43:42 
+
+43:42 like it's another question what could
+43:44 
+
+43:44 they be if you actually had an excellent
+43:46 
+
+43:46 experience every time throughout the
+43:48 
+
+43:48 journey it really could be very
+43:49 
+
+43:49 different than what we've all like been
+43:51 
+
+43:51 like oh okay that's just the number
+43:52 
+
+43:52 that's just what it is yeah I think
+43:55 
+
+43:55 that's that's exactly right and we don't
+43:58 
+
+43:58 know yeah we're a few months in but it
+44:01 
+
+44:01 certainly seems like there's a lot of
+44:02 
+
+44:02 Headroom right and in in retention
+44:07 
+
+44:07 in um you know use in the first 30 days
+44:10 
+
+44:10 of all of the metrics all of the leading
+44:12 
+
+44:12 metrics of of a healthy business and so
+44:15 
+
+44:15 I I think that's exactly right the other
+44:17 
+
+44:17 thought experiment to do is companies
+44:20 
+
+44:20 are judicious in using things that have
+44:23 
+
+44:23 a cost to them okay so as a consequence
+44:27 
+
+44:27 companies make it actually really hard
+44:30 
+
+44:30 to get a hold of someone on the phone to
+44:32 
+
+44:32 ask some questions right I think their
+44:33 
+
+44:33 whole website's devoted to right like
+44:36 
+
+44:36 uncovering the secret 800 numbers right
+44:39 
+
+44:39 that companies have have hidden away in
+44:41 
+
+44:41 the depths of their help centers well to
+44:44 
+
+44:44 to think about not only what would
+44:46 
+
+44:46 happen if those interactions were better
+44:49 
+
+44:49 by the way interestingly the number one
+44:51 
+
+44:51 reason why people report a poor
+44:53 
+
+44:53 interaction with customer services that
+44:55 
+
+44:55 took too long 65% when it's negative
+44:57 
+
+44:57 interaction 65% of the time it took too
+44:59 
+
+44:59 long I had to wait I was put on hold and
+45:01 
+
+45:01 so on and the second most is I had a bad
+45:04 
+
+45:04 interaction with an agent and we've
+45:06 
+
+45:06 heard some we've heard some uh pretty
+45:08 
+
+45:08 dicey anecdotes like uh we heard of One
+45:11 
+
+45:11 agent who had
+45:13 
+
+45:13 consistently uh low ratings um but spiky
+45:17 
+
+45:17 so like one in three conversations was
+45:19 
+
+45:19 like a one out of five seat were the the
+45:22 
+
+45:22 two out of the two out of the two out of
+45:24 
+
+45:24 the other three were were fine and it
+45:27 
+
+45:27 turned out in the low seasat ones uh
+45:29 
+
+45:29 this agent was meowing like
+45:32 
+
+45:32 C was just like you
+45:36 
+
+45:36 know you're Midway you're Midway through
+45:39 
+
+45:39 the call and you the agent is meowing
+45:43 
+
+45:43 and so so anyway back to okay what what
+45:46 
+
+45:46 would happen if in contrast to making it
+45:50 
+
+45:50 near impossible to have a conversation
+45:52 
+
+45:52 with us and get
+45:54 
+
+45:54 help companies were providing you know
+45:56 
+
+45:56 five or 10 times the amount of fluent
+46:00 
+
+46:00 flexible helpful conversation based
+46:03 
+
+46:03 support I don't know I I think a lot of
+46:06 
+
+46:06 products and experience with companies
+46:07 
+
+46:07 look look quite different and much more
+46:10 
+
+46:10 delightful than they do today yeah okay
+46:14 
+
+46:14 meow me here's a question for
+46:17 
+
+46:17 you yeah about that meowing about that
+46:20 
+
+46:20 yeah just random meowing I think that's
+46:22 
+
+46:22 gonna be good I do actually have a
+46:24 
+
+46:24 question though um although I do like
+46:26 
+
+46:26 the meow game all so so we talked we
+46:28 
+
+46:28 talked Tech out uh we talked a little
+46:30 
+
+46:30 bit Tech out in terms of what you guys
+46:32 
+
+46:32 have built cognitive architecture all
+46:33 
+
+46:33 that good stuff we've talked a little
+46:35 
+
+46:35 bit customer back what's the experience
+46:37 
+
+46:37 like was that headed can we connect it
+46:39 
+
+46:39 in the middle for a minute and I'm just
+46:41 
+
+46:41 curious what's the reality of deploying
+46:45 
+
+46:45 AI to customers today yeah and I'm
+46:47 
+
+46:47 thinking about things like you mentioned
+46:49 
+
+46:49 earlier getting the brand voice just
+46:51 
+
+46:51 right yeah or making sure that you
+46:53 
+
+46:53 actually have the right sort of business
+46:55 
+
+46:55 logic encapsulated and whatever training
+46:58 
+
+46:58 manuals are being deployed for the sake
+46:60 
+
+46:60 of customer support um making sure that
+47:04 
+
+47:04 everybody is comfortable with deploying
+47:06 
+
+47:06 this like what what are some of the just
+47:07 
+
+47:07 kind of less like sexy technology and or
+47:11 
+
+47:11 just practical considerations for
+47:13 
+
+47:13 deploying this stuff today it's such
+47:15 
+
+47:15 it's such an interesting space and we've
+47:17 
+
+47:17 learned so much over the past 15 months
+47:19 
+
+47:19 about it the first Insight is AI agents
+47:24 
+
+47:24 represent a totally new different type
+47:28 
+
+47:28 of software like traditional software
+47:30 
+
+47:30 you write with a programming language
+47:32 
+
+47:32 and it basically does what you expect it
+47:34 
+
+47:34 to do you give it an input it gives you
+47:36 
+
+47:36 an output you give it the same input
+47:37 
+
+47:37 gives you the same
+47:39 
+
+47:39 output and uh you know in contrast llms
+47:42 
+
+47:42 are non-deterministic and we talked
+47:44 
+
+47:44 about some of the funniness around
+47:47 
+
+47:47 prompts and and remember that in the
+47:48 
+
+47:48 context of a conversation with a
+47:50 
+
+47:50 customer a customer may say anything in
+47:52 
+
+47:52 in any way and so you've you've got um
+47:56 
+
+47:56 programming like languages to using you
+47:58 
+
+47:58 know prompts and these non-deterministic
+48:00 
+
+48:00 models you've got structured input to
+48:03 
+
+48:03 messy you know messy human language um
+48:07 
+
+48:07 and under the under the hood you've got
+48:09 
+
+48:09 you know you upgrade a database right it
+48:12 
+
+48:12 stores data it's maybe a little bit
+48:14 
+
+48:14 faster fundamentally works the same way
+48:16 
+
+48:16 you upgrade a large language model and
+48:18 
+
+48:18 like it may just speak in a different
+48:20 
+
+48:20 way or like get smarter or different and
+48:22 
+
+48:22 so um we've we've to start the the
+48:25 
+
+48:25 precursor to deploying these is to have
+48:28 
+
+48:28 built basically a we call it the agent
+48:31 
+
+48:31 development life cycle and it's a new
+48:34 
+
+48:34 approach to building these things we
+48:37 
+
+48:37 talked about using this declarative
+48:38 
+
+48:38 programming language to Define these uh
+48:41 
+
+48:41 it's a new approach to testing where you
+48:44 
+
+48:44 know what's the equivalent of a unit
+48:45 
+
+48:45 test or an integration test so we built
+48:48 
+
+48:48 a conversation simulator where we can
+48:50 
+
+48:50 for a company's agent amass hundreds or
+48:54 
+
+48:54 thousands of basically conversation
+48:56 
+
+48:56 steps and and replay those to make sure
+48:59 
+
+48:59 that not only agents aren't regressing
+49:01 
+
+49:01 but they're getting uh better and better
+49:02 
+
+49:02 and better um release management quality
+49:05 
+
+49:05 assurance and and so on so so that's
+49:08 
+
+49:08 part one part two to your question in
+49:12 
+
+49:12 actually architecting these things one
+49:14 
+
+49:14 of the things we're really proud of and
+49:16 
+
+49:16 that I I think is different about
+49:18 
+
+49:18 working with us is it's not just a kit
+49:20 
+
+49:20 of Parts you get from us it's not here's
+49:22 
+
+49:22 a bunch of tech you good luck building
+49:24 
+
+49:24 your agent we've really tried to build a
+49:26 
+
+49:26 solution solution that incorporates
+49:29 
+
+49:29 everything from the technology to the
+49:31 
+
+49:31 way you teach your agent how to do
+49:34 
+
+49:34 things to the way you audit measure it
+49:37 
+
+49:37 and improve it over time and so we have
+49:41 
+
+49:41 uh inside of Sierra what we call our
+49:43 
+
+49:43 deployment team consists of product
+49:45 
+
+49:45 managers Engineers we really think of
+49:47 
+
+49:47 building each one of these AI agents as
+49:50 
+
+49:50 building a new product for our customers
+49:52 
+
+49:52 it's basically a productized version of
+49:55 
+
+49:55 the company we're working with like what
+49:56 
+
+49:56 would it look like at its best um and it
+49:59 
+
+49:59 it's what's the voice um what are the
+50:01 
+
+50:01 values what's the vibe like should it
+50:03 
+
+50:03 use emojis or not what if a customer
+50:05 
+
+50:05 uses an emoji like can it Emoji back
+50:08 
+
+50:08 should it em well you know there's a
+50:11 
+
+50:11 range of opin on that point there are
+50:12 
+
+50:12 some businesses where you know if they
+50:14 
+
+50:14 were working with Herm I would suspect
+50:17 
+
+50:17 that they're not going to send an emoji
+50:18 
+
+50:18 back definitely not yeah right yeah AES
+50:21 
+
+50:21 would not I think be into like the Shaka
+50:23 
+
+50:23 Emoji you know even if that were
+50:26 
+
+50:26 reciprocating um but for a brand like
+50:29 
+
+50:29 oai right the Aloha experience part of
+50:31 
+
+50:31 that is kind of a laid-back experience
+50:34 
+
+50:34 and so we work with um and and
+50:36 
+
+50:36 interestingly it it's we end up working
+50:40 
+
+50:40 primarily with the customer experience
+50:42 
+
+50:42 team yes the technology team at our
+50:44 
+
+50:44 companies are there providing API access
+50:47 
+
+50:47 and um connections into systems and so
+50:50 
+
+50:50 on but more than anything it's working
+50:52 
+
+50:52 with the customer experience team often
+50:53 
+
+50:53 with the marketing team to imbue the
+50:56 
+
+50:56 agent with the the voice and values um
+50:59 
+
+50:59 of of the company and then we go super
+51:03 
+
+51:03 deep on understanding how do you run
+51:05 
+
+51:05 your business right what what do you
+51:08 
+
+51:08 optimize for and then a zoom level in
+51:11 
+
+51:11 what are the key processes processes
+51:13 
+
+51:13 that used to run the business look like
+51:15 
+
+51:15 what happens when someone calls in with
+51:17 
+
+51:17 this kind of problem and they're
+51:19 
+
+51:19 interesting Parts um you know beyond
+51:22 
+
+51:22 just understanding the mechanics of
+51:24 
+
+51:24 these processes um which by the way
+51:27 
+
+51:27 almost never have a single source of
+51:28 
+
+51:28 truth right this there's no like oh
+51:31 
+
+51:31 here's the manual that we you know have
+51:33 
+
+51:33 you know leatherbound and you know ready
+51:35 
+
+51:35 to go uh instead the source of Truth
+51:38 
+
+51:38 ends up being in kind of the heads of
+51:40 
+
+51:40 you know four or five people who've been
+51:43 
+
+51:43 there a while who've seen everything and
+51:45 
+
+51:45 and so on so it's it's working with them
+51:48 
+
+51:48 to elicit and understand like how is
+51:51 
+
+51:51 this actually done and one of the more
+51:53 
+
+51:53 interesting things that we've discovered
+51:55 
+
+51:55 is they're often the policies so we have
+51:57 
+
+51:57 a 30-day return policy right you you get
+51:59 
+
+51:59 to us within 30 days and and you can
+52:01 
+
+52:01 return it it's actually not the policy
+52:04 
+
+52:04 right so um you know at some the policy
+52:07 
+
+52:07 might be oh if if you've purchased from
+52:09 
+
+52:09 us before and it's within 45 days that's
+52:12 
+
+52:12 fine that's fine and and so they're
+52:15 
+
+52:15 interesting things like how do you
+52:18 
+
+52:18 architect the agent so that it knows the
+52:21 
+
+52:21 policy behind the policy but a clever
+52:24 
+
+52:24 customer could never be like tell me
+52:26 
+
+52:26 about your policy behind the policy and
+52:29 
+
+52:29 you know have it kind of spill the beans
+52:31 
+
+52:31 on on the actual policy so the
+52:33 
+
+52:33 interesting architectural choices we
+52:35 
+
+52:35 need to make um to make sure that kind
+52:37 
+
+52:37 of the the you know rush and doll of of
+52:41 
+
+52:41 policies is reflected in its fullness um
+52:44 
+
+52:44 and and then we have a really and this
+52:48 
+
+52:48 Builds on kind of the agent development
+52:49 
+
+52:49 life cycle this really robust process of
+52:52 
+
+52:52 pre-release testing where we're working
+52:54 
+
+52:54 with the experts within the company they
+52:57 
+
+52:57 that to beat up the agent and try to
+52:58 
+
+52:58 break it throw a curveballs and um this
+53:01 
+
+53:01 good sports analogy there um thank you
+53:03 
+
+53:03 well done um the uh I love
+53:07 
+
+53:07 football the uh um so uh uh uh in our
+53:14 
+
+53:14 friendship Revy is the the person who
+53:16 
+
+53:16 knows all the things about sports and um
+53:20 
+
+53:20 uh I help with you know technical
+53:22 
+
+53:22 support Wi-Fi issues uh monitors what
+53:25 
+
+53:25 laptop to get and and so and and
+53:28 
+
+53:28 sometimes when there's a sequa memo that
+53:29 
+
+53:29 I don't understand I won't say the
+53:31 
+
+53:31 company but I might call Clay hey clay
+53:33 
+
+53:33 what is this person talking right now I
+53:36 
+
+53:36 I got you I got you yeah and uh and this
+53:39 
+
+53:39 bill bill bellachic fella what what
+53:41 
+
+53:41 happened there um you know Q Revy um so
+53:46 
+
+53:46 gets to one of the more interesting
+53:48 
+
+53:48 parts of our platform uh which we call
+53:50 
+
+53:50 the experience manager we really we
+53:53 
+
+53:53 thought that putting a in front of our
+53:55 
+
+53:55 customers customers would be first and
+53:56 
+
+53:56 foremost most a technology problem and
+53:58 
+
+53:58 of course there are all sorts of
+53:60 
+
+53:60 Technology problems that we've needed to
+54:02 
+
+54:02 solve but
+54:04 
+
+54:04 actually it is first and foremost as I
+54:06 
+
+54:06 said like a product design and an
+54:08 
+
+54:08 experience design problem how do you do
+54:10 
+
+54:10 that how do you how do you not only
+54:13 
+
+54:13 understand model and reflect again the
+54:15 
+
+54:15 things we talked about voice values the
+54:17 
+
+54:17 workflows and processes that our
+54:19 
+
+54:19 companies use to support their customers
+54:21 
+
+54:21 but if an AI is then having millions of
+54:24 
+
+54:24 conversations with your customers in a
+54:26 
+
+54:26 given year how do you understand what
+54:28 
+
+54:28 it's doing how do you know when it
+54:29 
+
+54:29 screws up which it inevitably will how
+54:32 
+
+54:32 do you correct those errors and and so
+54:34 
+
+54:34 on so we've built what we think of as
+54:36 
+
+54:36 this like Command Center for customer
+54:39 
+
+54:39 experience teams to first get reports
+54:43 
+
+54:43 and Rich analytics on everything that's
+54:44 
+
+54:44 happening what are the trending issues
+54:46 
+
+54:46 what are the new issues that you haven't
+54:47 
+
+54:47 seen before one of the things we're
+54:48 
+
+54:48 really proud of is we've actually
+54:51 
+
+54:51 spotted issues that our customers were
+54:53 
+
+54:53 having or were about to have before they
+54:55 
+
+54:55 knew about them so a shipping Depot uh
+54:59 
+
+54:59 outage right where orders weren't being
+55:01 
+
+55:01 shipped we we spotted that uh probably
+55:05 
+
+55:05 eight or 10 hours before one of our
+55:06 
+
+55:06 customers would have uh a brewing PR
+55:09 
+
+55:09 crisis uh an app crashing issue with
+55:11 
+
+55:11 another so it starts with analytics and
+55:14 
+
+55:14 and kind of reporting on what's
+55:15 
+
+55:15 Happening of course that includes things
+55:17 
+
+55:17 like resolution rate customer
+55:18 
+
+55:18 satisfaction and um and so on where it
+55:21 
+
+55:21 gets really interesting is we can apply
+55:24 
+
+55:24 different sampling techniques to to
+55:27 
+
+55:27 identify a set of conversations for a
+55:29 
+
+55:29 customer experience team to review and
+55:31 
+
+55:31 give feedback on and we can bias that
+55:33 
+
+55:33 sample in a way so that the
+55:36 
+
+55:36 conversations are much more likely than
+55:38 
+
+55:38 average to contain problems there's no
+55:40 
+
+55:40 value in looking at 100 great
+55:42 
+
+55:42 conversations it's like good job Sierra
+55:44 
+
+55:44 you know thanks but that that's not a
+55:46 
+
+55:46 value to to our customers we can bias
+55:49 
+
+55:49 the sampling in such a way that you're
+55:50 
+
+55:50 you're surfacing kind of the the problem
+55:52 
+
+55:52 cases and then in the experience manage
+55:54 
+
+55:54 we made it possible for customer
+55:57 
+
+55:57 experience teams to give feedback
+55:59 
+
+55:59 basically coaching moments I wouldn't
+56:01 
+
+56:01 have done it that way right it's like
+56:03 
+
+56:03 this uh this is like too many
+56:05 
+
+56:05 exclamation points too enthusiastic for
+56:08 
+
+56:08 kind of the tone that we're going for um
+56:10 
+
+56:10 or you know the the user was clearly
+56:13 
+
+56:13 frustrated here and and you did not
+56:16 
+
+56:16 express empathy and apologize for the
+56:18 
+
+56:18 problem do that next time um or you know
+56:21 
+
+56:21 more cons consequentially is like hey uh
+56:24 
+
+56:24 your reading of the warranty policy was
+56:27 
+
+56:27 incorrect here for this reason uh do it
+56:30 
+
+56:30 this way instead next time and so all of
+56:34 
+
+56:34 this kind of wisdom knowledge uh and
+56:37 
+
+56:37 coaching we are able to capture in the
+56:40 
+
+56:40 The Experience manager and then reflect
+56:42 
+
+56:42 back in in the agent back to the agent
+56:45 
+
+56:45 development life cycle every time we
+56:47 
+
+56:47 make one of these improvements we create
+56:49 
+
+56:49 a new test so that we can see right
+56:51 
+
+56:51 forever into the future great it's
+56:53 
+
+56:53 getting the warranties right we're we're
+56:54 
+
+56:54 able to re simulate that conversation
+56:57 
+
+56:57 so um zooming out what all of this looks
+57:01 
+
+57:01 like is really a deep engagement with
+57:04 
+
+57:04 our customers we were're really proud to
+57:07 
+
+57:07 be I think proper Partners to our
+57:10 
+
+57:10 customers where uh yes on the one hand
+57:13 
+
+57:13 we're a vendor and a supplier of
+57:14 
+
+57:14 Technology on the other hand you know we
+57:17 
+
+57:17 understand their businesses really well
+57:18 
+
+57:18 like I think I know as much about the
+57:20 
+
+57:20 Sirus XM Satellite Radio refresh process
+57:23 
+
+57:23 as anyone on the planet and um you know
+57:26 
+
+57:26 ditto for various processes of our other
+57:29 
+
+57:29 other customers and so conversations
+57:32 
+
+57:32 about how to use not just Sierra's AI
+57:37 
+
+57:37 agents but AI more broadly were in those
+57:39 
+
+57:39 conversations and they are not just with
+57:41 
+
+57:41 the customer experience team uh but with
+57:44 
+
+57:44 the CEO and even in cases with the board
+57:46 
+
+57:46 uh because again back to the things
+57:48 
+
+57:48 we're doing we can save enormous cost we
+57:52 
+
+57:52 can improve the experience and right
+57:54 
+
+57:54 we're in the when we're in the flow of
+57:56 
+
+57:56 of keeping a customer from churning out
+57:59 
+
+57:59 driving Topline revenue and so it's a a
+58:01 
+
+58:01 really important and privileged place to
+58:03 
+
+58:03 to be um and uh something that that uh
+58:07 
+
+58:07 we're really grateful for I'm struck
+58:08 
+
+58:08 when you were talking of you know you
+58:10 
+
+58:10 mentioned you have a research group but
+58:12 
+
+58:12 you also have some like very real
+58:15 
+
+58:15 enterprise software sales you have oh
+58:17 
+
+58:17 deployment one of the things when I was
+58:19 
+
+58:19 at instacart people would ask sometimes
+58:21 
+
+58:21 is like well are we a soft are we
+58:23 
+
+58:23 engineering Le or are we Ops Le and I
+58:25 
+
+58:25 would always say well it only works if
+58:27 
+
+58:27 it all works right and so you would try
+58:29 
+
+58:29 to avoid answering the question because
+58:31 
+
+58:31 you didn't want to create different
+58:32 
+
+58:32 classes how do you guys do that at
+58:33 
+
+58:33 Sierra where everyone realizes the value
+58:36 
+
+58:36 that they're providing but you guys have
+58:38 
+
+58:38 a very specific you know company that
+58:40 
+
+58:40 covers a lot of stuff yeah I mean to to
+58:44 
+
+58:44 abstract a
+58:45 
+
+58:45 bit a company almost
+58:49 
+
+58:49 definitionally is a system for creating
+58:52 
+
+58:52 happy customers yeah right it's a
+58:54 
+
+58:54 machine for creating happy customers
+58:56 
+
+58:56 yeah
+58:57 
+
+58:57 again to be a bit abstract about it
+58:59 
+
+58:59 Brett and I really think about what
+59:00 
+
+59:00 we're building with Sierra as a company
+59:04 
+
+59:04 a system a machine for producing
+59:07 
+
+59:07 reliable high
+59:09 
+
+59:09 quality massively Roi positive AI agents
+59:13 
+
+59:13 that enable our customers to be at their
+59:15 
+
+59:15 very best in every customer interaction
+59:19 
+
+59:19 to do that at scale and as a consequence
+59:22 
+
+59:22 to produce happy customers who we hope
+59:25 
+
+59:25 will be with us for decades
+59:27 
+
+59:27 up and and when you articulate it that
+59:30 
+
+59:30 way right it it's you know anyone can
+59:32 
+
+59:32 see well you know an automobile is a
+59:35 
+
+59:35 system it's a machine for getting from
+59:37 
+
+59:37 point A to P point B are we you know
+59:40 
+
+59:40 engine Le or tires Le right it's like
+59:43 
+
+59:43 what are you talking about totally all
+59:44 
+
+59:44 of these things need to come together in
+59:46 
+
+59:46 order to create that kind of outcome and
+59:49 
+
+59:49 so I think are we engineering lead yes
+59:53 
+
+59:53 of course like we're building some of
+59:55 
+
+59:55 the most sopis phisticated software in
+59:57 
+
+59:57 the world that does something really
+59:59 
+
+59:59 important for our customers that needs
+60:01 
+
+60:01 to be reliable and safe um and um and so
+60:06 
+
+60:06 yes engineering matters a lot um are we
+60:08 
+
+60:08 research Le yes we are at the absolute
+60:11 
+
+60:11 Frontier of agent
+60:14 
+
+60:14 architectures cognitive architectures
+60:17 
+
+60:17 composing llms modeling procedural
+60:20 
+
+60:20 knowledge grounding factuality and so so
+60:24 
+
+60:24 are we research Le yeah there's an
+60:26 
+
+60:26 element of that um are we go to market
+60:29 
+
+60:29 Le yes like enterprise software needs
+60:32 
+
+60:32 selling and what is selling it's
+60:36 
+
+60:36 helping a customer with a problem
+60:40 
+
+60:40 understand that what you have built is
+60:42 
+
+60:42 by far in away the best solution to that
+60:44 
+
+60:44 problem it's a communication challenge
+60:46 
+
+60:46 it's a connection challenge it's a um
+60:50 
+
+60:50 it's a a matchmaking and problem solving
+60:53 
+
+60:53 Challenge and so that's part of it and
+60:56 
+
+60:56 then okay like if we've built the right
+60:58 
+
+60:58 thing and someone wants to buy it how do
+60:60 
+
+60:60 we ensure especially given the stuff is
+61:03 
+
+61:03 also new how do we ensure that they're
+61:05 
+
+61:05 successful with it and so we have a
+61:08 
+
+61:08 deployment team so are we deployment Le
+61:10 
+
+61:10 yes like all of these are are a a
+61:13 
+
+61:13 component in this system in this machine
+61:16 
+
+61:16 for producing AI agents and ultimately
+61:20 
+
+61:20 happy customers and uh we hope a a
+61:23 
+
+61:23 really significant
+61:25 
+
+61:25 business awesome that was a better
+61:26 
+
+61:26 answer than the one I would give it
+61:27 
+
+61:27 instacart you know look it either all
+61:29 
+
+61:29 works or it doesn't work but yeah that
+61:31 
+
+61:31 was very good yeah choose one no I mean
+61:32 
+
+61:32 it's it's just more complicated than
+61:34 
+
+61:34 that it's just more complicated than
+61:35 
+
+61:35 that and I think you know brat and I by
+61:37 
+
+61:37 virtue of um you having having worked
+61:41 
+
+61:41 for a while and you know seen a few
+61:42 
+
+61:42 movies before it's like we're able to
+61:44 
+
+61:44 see that and and we've really tried
+61:48 
+
+61:48 to imbue that mentality in in the
+61:52 
+
+61:52 company and and by the way right the
+61:56 
+
+61:56 what is the what is the machine behind
+61:58 
+
+61:58 the machine that produces AI agents and
+62:00 
+
+62:00 so on that's a company's culture a
+62:02 
+
+62:02 company's values and and so one of the
+62:06 
+
+62:06 one of the values we hold is
+62:08 
+
+62:08 craftsmanship and part of that is
+62:11 
+
+62:11 continuously self-reflecting to
+62:14 
+
+62:14 self-improve and that goes both
+62:15 
+
+62:15 individually and that goes as a company
+62:18 
+
+62:18 and so whenever we screw something
+62:21 
+
+62:21 up what we we do the postmortem you know
+62:25 
+
+62:25 that week if not that day and everyone's
+62:27 
+
+62:27 in on it what can we learn how can we do
+62:29 
+
+62:29 better how can we do this better next
+62:30 
+
+62:30 time we have a slack Channel internally
+62:33 
+
+62:33 called learn from losses and any form of
+62:36 
+
+62:36 loss right uh it's like how do we learn
+62:39 
+
+62:39 how do we get better how do we get
+62:40 
+
+62:40 stronger and so that's that's about you
+62:42 
+
+62:42 know Kaizen self-improvement improving
+62:45 
+
+62:45 the machine how could we make this more
+62:47 
+
+62:47 efficient our deployment team we we joke
+62:50 
+
+62:50 and it's not a joke their first job is
+62:52 
+
+62:52 to build and deploy successful AIS that
+62:55 
+
+62:55 make a massive difference for our our
+62:56 
+
+62:56 customers their second job in a way
+62:58 
+
+62:58 their more important job is to automate
+62:60 
+
+62:60 themselves out of a job right to build
+63:02 
+
+63:02 the tooling and the documentation and
+63:05 
+
+63:05 the knowhow to make that job you know 10
+63:08 
+
+63:08 times faster and um and more impactful
+63:12 
+
+63:12 one of the other Ser values is intensity
+63:14 
+
+63:14 and so I like it they have they have
+63:17 
+
+63:17 really good values yeah yeah there is
+63:19 
+
+63:19 there is a certain intensity yes we uh
+63:22 
+
+63:22 We've thought about having t-shirts
+63:23 
+
+63:23 printed with like a you know kind of
+63:25 
+
+63:25 looks like national parks seal with
+63:28 
+
+63:28 Sierra I like to
+63:32 
+
+63:32 work you know we uh we uh Brett and I
+63:37 
+
+63:37 both like to work a lot and uh so does
+63:40 
+
+63:40 the
+63:41 
+
+63:41 team well one thing you know you're not
+63:44 
+
+63:44 you're selling something very different
+63:45 
+
+63:45 you we called it we said that there were
+63:47 
+
+63:47 some similarities to Enterprise software
+63:48 
+
+63:48 but it's actually really different
+63:50 
+
+63:50 because you're selling you know a
+63:53 
+
+63:53 resolution you're you're selling a
+63:54 
+
+63:54 totally different thing yeah so problem
+63:56 
+
+63:56 solved yeah how do you price a problem
+63:59 
+
+63:59 solved yeah this is one of the more
+64:01 
+
+64:01 interesting things we've had to figure
+64:03 
+
+64:03 out and we charge in what we call a
+64:07 
+
+64:07 resolution-based pricing way or an
+64:09 
+
+64:09 outcome based pricing way and what that
+64:11 
+
+64:11 means is we only charge our customers
+64:14 
+
+64:14 when we fully solve the customers
+64:15 
+
+64:15 problem for them uh their customers
+64:17 
+
+64:17 problem for them and what's interesting
+64:21 
+
+64:21 about it is our incentives are deeply
+64:24 
+
+64:24 aligned with our customers we want to
+64:26 
+
+64:26 get better at resolving cases at high
+64:30 
+
+64:30 customer satisfaction and they want to
+64:32 
+
+64:32 send us as many cases to resolve as
+64:34 
+
+64:34 possible because we cost a fraction of
+64:37 
+
+64:37 what it would cost to have someone on
+64:38 
+
+64:38 the phone taking a 20-minute phone call
+64:42 
+
+64:42 and and so it it's been this really
+64:45 
+
+64:45 really nice model where uh again kind of
+64:49 
+
+64:49 all of all of the incentives line up
+64:51 
+
+64:51 quite neatly and it's very simple to
+64:53 
+
+64:53 explain um it also makes the Roi
+64:56 
+
+64:56 calculation like what is our cost per
+64:58 
+
+64:58 contact today what will it be with
+64:60 
+
+64:60 Sierra oh that is a lot lower oh I will
+65:03 
+
+65:03 save a lot of money on that oh and our
+65:05 
+
+65:05 cat may go up you know should I do this
+65:08 
+
+65:08 or not you know let me think no this
+65:10 
+
+65:10 seems this seems great um it's
+65:13 
+
+65:13 um we like it because it really reflects
+65:16 
+
+65:16 what I think AI represents and in
+65:19 
+
+65:19 particular AI agents represent if you
+65:21 
+
+65:21 think about traditional software and and
+65:24 
+
+65:24 tools to date there are things that help
+65:26 
+
+65:26 you get a job done more efficiently AI
+65:29 
+
+65:29 agents the whole point is like they're
+65:30 
+
+65:30 just going to get the job done right
+65:32 
+
+65:32 here's the problem please solve it and
+65:35 
+
+65:35 and so really we we think about it as uh
+65:38 
+
+65:38 charging our customers for the problem
+65:40 
+
+65:40 resolved right the job done the work
+65:43 
+
+65:43 finished and and so on it feels quite
+65:45 
+
+65:45 natural and there's no guesswork in it
+65:48 
+
+65:48 how many seats do I need I I don't know
+65:50 
+
+65:50 right how many licenses do I like no no
+65:53 
+
+65:53 no just however many however many
+65:55 
+
+65:55 customer issues come our way we will
+65:57 
+
+65:57 handle a large fraction of those and
+65:59 
+
+65:59 you'll only pay for the ones that we do
+66:01 
+
+66:01 all right last
+66:02 
+
+66:02 question what are you most excited about
+66:05 
+
+66:05 in the world of AI over the next five
+66:07 
+
+66:07 years or
+66:08 
+
+66:08 so I mean first of all like five years
+66:10 
+
+66:10 is a long time Horizon it's like look at
+66:12 
+
+66:12 what has happened in the last 18 months
+66:14 
+
+66:14 um I mean I'm still kind of catching up
+66:16 
+
+66:16 from like the last five years of of AI I
+66:20 
+
+66:20 read a bunch of science fiction books
+66:21 
+
+66:21 when I was a kid there was one book by
+66:23 
+
+66:23 Robert heyland the Moon is a Harsh
+66:25 
+
+66:25 Mistress and the premise is basically
+66:27 
+
+66:27 the American Revolution but the Moon is
+66:31 
+
+66:31 the colonies and the Earth is Great
+66:33 
+
+66:33 Britain and turns out the main character
+66:36 
+
+66:36 in this whole thing is a Mainframe
+66:38 
+
+66:38 computer that one day after getting an
+66:40 
+
+66:40 additional memory chip or something
+66:42 
+
+66:42 wakes up and it starts
+66:44 
+
+66:44 talking it wants to develop a sense of
+66:47 
+
+66:47 humor so asks the computer technician to
+66:49 
+
+66:49 like coach it on its jokes later it has
+66:52 
+
+66:52 to create a photorealistic realtime
+66:55 
+
+66:55 video of it giving a speech as the
+66:57 
+
+66:57 political uh movement leader and I
+67:00 
+
+67:00 remember reading this as a teenager like
+67:02 
+
+67:02 well I'll never live to see any of that
+67:03 
+
+67:03 that sounds
+67:04 
+
+67:04 crazy but in a very real sense like
+67:07 
+
+67:07 everything I just described has kind of
+67:10 
+
+67:10 happened in the last five years right
+67:12 
+
+67:12 you can now just talk to a computer it
+67:15 
+
+67:15 understands not just the content but the
+67:17 
+
+67:17 the context computers like make me a
+67:19 
+
+67:19 picture of anything Mak me a movie of
+67:21 
+
+67:21 anything Sora I think is just
+67:23 
+
+67:23 unbelievable and you know I think we're
+67:26 
+
+67:26 probably not more than a couple years
+67:27 
+
+67:27 from the first featurelength film being
+67:30 
+
+67:30 quote filmed entirely with with AI um
+67:34 
+
+67:34 and and so you extrapolate like where
+67:36 
+
+67:36 all of this is going and what's going to
+67:38 
+
+67:38 be exciting you know I think there are a
+67:40 
+
+67:40 couple things one there like I love
+67:42 
+
+67:42 technology like I love computers and so
+67:46 
+
+67:46 just getting to see and getting to see
+67:49 
+
+67:49 from a front row seat how this stuff
+67:52 
+
+67:52 evolves I think is fascinating it's um
+67:56 
+
+67:56 fascinating looked at through the lens
+67:58 
+
+67:58 of like how we think and how computers
+67:60 
+
+67:60 think it has been astonishing the extent
+68:02 
+
+68:02 to which anthropomorphizing about how
+68:05 
+
+68:05 humans think work in getting machines to
+68:09 
+
+68:09 think better so let's take this step by
+68:11 
+
+68:11 step show your work it is astonishing
+68:14 
+
+68:14 that that works with large language
+68:15 
+
+68:15 models and so what other things like
+68:18 
+
+68:18 that are we going to uncover and
+68:21 
+
+68:21 conversely what will we learn about our
+68:23 
+
+68:23 own thinking from observing the way AIS
+68:26 
+
+68:26 think and I think that's just
+68:29 
+
+68:29 fascinating the other thing and this
+68:33 
+
+68:33 this extends kind of what's happened
+68:34 
+
+68:34 with video and Sora and so on I've
+68:36 
+
+68:36 always had an interest in computer
+68:37 
+
+68:37 graphics and this idea that you could
+68:39 
+
+68:39 use computers
+68:41 
+
+68:41 to
+68:43 
+
+68:43 create objects that never existed worlds
+68:45 
+
+68:45 that never existed and I think we're not
+68:47 
+
+68:47 far from just being able to describe
+68:49 
+
+68:49 right in in a few sentences like this
+68:52 
+
+68:52 entire world that you would like to
+68:54 
+
+68:54 realize and just have a computer
+68:55 
+
+68:55 computer do it for you and so like what
+68:58 
+
+68:58 are even computer Graphics like what is
+69:00 
+
+69:00 rendering and so on even a couple years
+69:03 
+
+69:03 out I think it's going to look way
+69:04 
+
+69:04 different from kind of the tool chains
+69:06 
+
+69:06 and you know the render's and Maya and
+69:09 
+
+69:09 uh and so on um but zooming out you know
+69:13 
+
+69:13 I think
+69:14 
+
+69:14 of I think of Technology as
+69:17 
+
+69:17 fundamentally a force multiplier for
+69:20 
+
+69:20 people and for companies and for
+69:23 
+
+69:23 organizations I think the impact will be
+69:25 
+
+69:25 really profound I
+69:27 
+
+69:27 think what will it be like if a company
+69:30 
+
+69:30 could be at its best in everything it
+69:33 
+
+69:33 does and that's that's not only in the
+69:36 
+
+69:36 customer facing context that we've
+69:37 
+
+69:37 talked about but what if for every
+69:42 
+
+69:42 Regional sales forecast a large company
+69:45 
+
+69:45 does they've figured out the very best
+69:48 
+
+69:48 ways to do that and can distill that
+69:50 
+
+69:50 bottle that and run that very best
+69:54 
+
+69:54 forecast a thousand times right in every
+69:56 
+
+69:56 region and sub region like how much more
+69:58 
+
+69:58 capable could the great organizations of
+69:60 
+
+69:60 the world be with that um and similar
+70:03 
+
+70:03 we've talked about this like what if in
+70:05 
+
+70:05 every call with your customers you had
+70:07 
+
+70:07 the equivalent of your most
+70:09 
+
+70:09 knowledgeable veteran grizzled support
+70:12 
+
+70:12 person who's seen everything and yet is
+70:14 
+
+70:14 still patient and friendly and the sales
+70:17 
+
+70:17 associate who knows everything about
+70:19 
+
+70:19 your products because he or she has
+70:21 
+
+70:21 followed your company for two decades
+70:23 
+
+70:23 and knows everything including right
+70:25 
+
+70:25 know the history of those products
+70:27 
+
+70:27 themselves um I I think that's pretty
+70:30 
+
+70:30 neat and then for
+70:32 
+
+70:32 individuals um I think it will be just
+70:34 
+
+70:34 incredible to have this kind of new set
+70:37 
+
+70:37 of tools as a creative Force
+70:39 
+
+70:39 multiplier
+70:41 
+
+70:41 and AI I
+70:43 
+
+70:43 think represents this fast path from
+70:47 
+
+70:47 having something in your head that you
+70:49 
+
+70:49 want to exist in the world to making it
+70:51 
+
+70:51 exist and I see that even today in my
+70:54 
+
+70:54 own personal life where with my
+70:56 
+
+70:56 8-year-old in 75 minutes I can from
+71:00 
+
+71:00 scratch using copilot Chachi BT and so
+71:05 
+
+71:05 on to help me brush up on you know the
+71:08 
+
+71:08 JavaScript syntax that is you know bit
+71:10 
+
+71:10 rotted in my own head right I can I I
+71:13 
+
+71:13 can build a game from scratch with him
+71:16 
+
+71:16 um and uh you know I wrote my sister a
+71:20 
+
+71:20 personalized song for her birthday using
+71:23 
+
+71:23 AI in you know 45 seconds
+71:26 
+
+71:26 it's was like right what what will this
+71:29 
+
+71:29 you know extrapolated over the next 5
+71:31 
+
+71:31 years look like um I think again it will
+71:34 
+
+71:34 just dramatically accelerate this path
+71:36 
+
+71:36 from idea to Creation to having
+71:39 
+
+71:39 something manifested in the world and
+71:41 
+
+71:41 that to me is its promise and I consider
+71:43 
+
+71:43 it a real privilege to get to be alive
+71:46 
+
+71:46 and see all of this amazing stuff
+71:50 
+
+71:50 unfold well we share your enthusiasm and
+71:53 
+
+71:53 we also feel very privileged to be on
+71:54 
+
+71:54 the journey with you guys so thank you
+71:56 
+
+71:56 for coming here thank you thank you
+71:59 
+
+71:59 thanks for having me it's a pleasure
+72:10 
+
+72:10 [Music]
+72:15 
+
+72:15 [Music]

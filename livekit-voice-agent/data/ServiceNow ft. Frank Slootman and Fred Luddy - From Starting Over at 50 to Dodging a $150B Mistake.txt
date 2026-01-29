@@ -1,0 +1,3001 @@
+00:01 [Music]
+00:02 
+
+00:02 it was much more existential than oh you
+00:05 
+
+00:05 know we got some tough challenges on our
+00:07 
+
+00:07 hand I didn't think we were going to
+00:09 
+
+00:09 live through this this is so huge so
+00:13 
+
+00:13 enormous how do you survive this because
+00:15 
+
+00:15 there are no good explanation there are
+00:16 
+
+00:16 no reasonable stories to be told this is
+00:19 
+
+00:19 just
+00:21 
+
+00:21 [Music]
+00:22 
+
+00:22 Insanity welcome to season 2 of Crucible
+00:26 
+
+00:26 moments a podcast about the critical
+00:28 
+
+00:28 Crossroads and inflection points that
+00:30 
+
+00:30 shake some of the world's most
+00:31 
+
+00:31 remarkable companies I'm your host and
+00:34 
+
+00:34 the managing partner of SEO Capital rof
+00:41 
+
+00:41 wam picture the office mail room of the
+00:44 
+
+00:44 1970s in that mail room were stacks of
+00:47 
+
+00:47 typewritten forms a form for expense
+00:50 
+
+00:50 reports a form for vacation days a form
+00:53 
+
+00:53 for purchase orders and so on a few
+00:56 
+
+00:56 decades later a programmer named Fred
+00:59 
+
+00:59 Ludy was determined to reimagine that
+01:02 
+
+01:02 workflow system for the internet age and
+01:05 
+
+01:05 the IT Department's tasked with managing
+01:08 
+
+01:08 it his low code no code solution would
+01:11 
+
+01:11 be able to handle anything from
+01:13 
+
+01:13 reporting a broken laptop to managing
+01:15 
+
+01:15 the world's largest particle physics lab
+01:19 
+
+01:19 today's episode is about service now a
+01:21 
+
+01:21 cloud application platform for digital
+01:24 
+
+01:24 workflows service now evolved from an IT
+01:27 
+
+01:27 service tool into a workflow platform
+01:29 
+
+01:29 that can be used used in any Department
+01:32 
+
+01:32 with this Evolution its market cap has
+01:34 
+
+01:34 grown to over
+01:36 
+
+01:36 $150
+01:38 
+
+01:38 billion difficult questions and hard
+01:41 
+
+01:41 choices shaped service now's Journey how
+01:44 
+
+01:44 does one rebuild their life after
+01:46 
+
+01:46 catastrophe and devise an Innovative
+01:49 
+
+01:49 idea in the process when do you know
+01:52 
+
+01:52 it's time to hand over the role of CEO
+01:54 
+
+01:54 for the good of your own company and how
+01:56 
+
+01:56 do you decide whether to take what seems
+01:58 
+
+01:58 like a once- in a-lifetime offer to sell
+01:59 
+
+01:59 your company
+02:01 
+
+02:01 or take a Gamble and remain
+02:04 
+
+02:04 independent these are The Crucible
+02:06 
+
+02:06 moments that forged service
+02:09 
+
+02:09 now I'm Fred ly and I'm the founder of
+02:12 
+
+02:12 service now my journey into coding was
+02:16 
+
+02:16 really pretty much an unconventional one
+02:18 
+
+02:18 I left home at a very early age right
+02:20 
+
+02:20 around the same time I got my driver's
+02:22 
+
+02:22 license and started working in a factory
+02:26 
+
+02:26 in the office part of the factory a
+02:27 
+
+02:27 machine came down the hallway that was
+02:29 
+
+02:29 wrapped in PL plastic in this clear
+02:31 
+
+02:31 plastic and I didn't even know what the
+02:33 
+
+02:33 machine was but I followed it and it
+02:35 
+
+02:35 went into this room with this white
+02:36 
+
+02:36 raised floor and people were wearing lab
+02:39 
+
+02:39 coats and somehow I knew that that was
+02:42 
+
+02:42 the place where I needed to be for a
+02:44 
+
+02:44 couple of weeks or months I poked around
+02:46 
+
+02:46 and tried to find out what was going on
+02:48 
+
+02:48 in that room and found out that it was a
+02:51 
+
+02:51 computer an HP
+02:53 
+
+02:53 2100c and that there were people
+02:56 
+
+02:56 building applications to do things like
+02:58 
+
+02:58 payroll and order entry
+03:00 
+
+03:00 I found the passion of my life at that
+03:03 
+
+03:03 moment I never really wanted to leave
+03:05 
+
+03:05 that room until I went to a bigger
+03:07 
+
+03:07 computer room and uh that holds true
+03:11 
+
+03:11 [Music]
+03:13 
+
+03:13 today in 1990 Fred became CTO of paragan
+03:18 
+
+03:18 systems a company that built some of the
+03:20 
+
+03:20 first it service management software but
+03:23 
+
+03:23 in 2002 the company faced a major crisis
+03:28 
+
+03:28 the SEC would find the company guilty of
+03:30 
+
+03:30 massive accounting fraud perran went
+03:34 
+
+03:34 bankrupt and several of its toop
+03:36 
+
+03:36 Executives went to prison for fraud
+03:39 
+
+03:39 embezzlement and lying to
+03:41 
+
+03:41 Regulators I had all of my net worth
+03:44 
+
+03:44 tied up in this company and my net worth
+03:48 
+
+03:48 went from 35 million to zero yeah in an
+03:51 
+
+03:51 instant I had fear because I wasn't sure
+03:54 
+
+03:54 what I was going to do next but then
+03:56 
+
+03:56 there was relief because fundamentally I
+03:59 
+
+03:59 didn't like working there the year at
+04:02 
+
+04:02 this point is 2002 you could see on the
+04:05 
+
+04:05 horizon that there is going to be just
+04:07 
+
+04:07 tectonic
+04:08 
+
+04:08 shift servers now kind of sat at the
+04:11 
+
+04:11 intersection of two major Tailwinds my
+04:13 
+
+04:13 name is Pat Grady and I'm a partner at
+04:16 
+
+04:16 sequa Tailwind number one was as simple
+04:18 
+
+04:18 as the cloud transition and the benefits
+04:21 
+
+04:21 that this new business model provided
+04:24 
+
+04:24 for software
+04:27 
+
+04:27 companies the second was a very specific
+04:30 
+
+04:30 F Tailwind which was this thing called
+04:32 
+
+04:32 itol or I which stood for it
+04:36 
+
+04:36 infrastructure library and it was
+04:39 
+
+04:39 basically a language for talking about
+04:42 
+
+04:42 what was happening in it and it
+04:44 
+
+04:44 coincided with this broader transition
+04:47 
+
+04:47 from the heads of it the
+04:50 
+
+04:50 cios being hackers who had sort of
+04:53 
+
+04:53 gotten promoted up into the role to
+04:55 
+
+04:55 being professional business people who
+04:57 
+
+04:57 were more likely to have an MBA than a
+04:59 
+
+04:59 CS degree iil defined different
+05:02 
+
+05:02 processes for running your it
+05:04 
+
+05:04 organization largely break fix change
+05:07 
+
+05:07 management upgrades application
+05:09 
+
+05:09 development Cycles security risk Etc
+05:14 
+
+05:14 nobody to that point had built something
+05:17 
+
+05:17 to this iil standard so there was no set
+05:19 
+
+05:19 of applications available so we ran into
+05:22 
+
+05:22 really I think a a perfect storm if you
+05:25 
+
+05:25 will of Market opportunity the idea for
+05:28 
+
+05:28 service now was that we were going to
+05:30 
+
+05:30 create a a completely extensible low
+05:33 
+
+05:33 code no code platform that would let you
+05:36 
+
+05:36 build applications with a just a tiny
+05:40 
+
+05:40 amount of of technical knowledge we
+05:42 
+
+05:42 really wanted to build something that
+05:45 
+
+05:45 empowered people that had been
+05:47 
+
+05:47 previously intimidated by technology
+05:50 
+
+05:50 Stacks but my heroes were Steve Jobs and
+05:53 
+
+05:53 Bill Gates and Paige and Brin and they
+05:56 
+
+05:56 all started at you know right out of
+05:58 
+
+05:58 puberty right and all of a sudden
+05:60 
+
+06:00 they're building these great
+06:01 
+
+06:01 corporations and I'm thinking what what
+06:03 
+
+06:03 the what the heck am I thinking trying
+06:05 
+
+06:05 to build a company especially starting
+06:06 
+
+06:06 it after
+06:09 
+
+06:09 50 Fred was a founded that had been
+06:12 
+
+06:12 burned before he had a chip in his
+06:14 
+
+06:14 shoulder I'm Doug Leone I'm a partner at
+06:18 
+
+06:18 seoa Capital he wanted to do something
+06:20 
+
+06:20 special one two he had domain expertise
+06:23 
+
+06:23 so he knew what he wanted to build he
+06:25 
+
+06:25 had Crystal Clear Vision those are the
+06:28 
+
+06:28 best kinds of founders
+06:30 
+
+06:30 in 2004 2 weeks before his 50th birthday
+06:34 
+
+06:34 Fred Ludy launched service now from his
+06:36 
+
+06:36 house with no resources and no sales
+06:39 
+
+06:39 team to pitch the product he took to the
+06:41 
+
+06:41 road driving up and down San Diego
+06:44 
+
+06:44 County looking for prospective
+06:46 
+
+06:46 customers I asked people would you
+06:49 
+
+06:49 please use our software for free but I'm
+06:53 
+
+06:53 asking you in return to give us you know
+06:56 
+
+06:56 some kind of feedback on how it's
+06:58 
+
+06:58 working we worked with them on a day in
+07:00 
+
+07:00 day out basis uh because we wanted to
+07:03 
+
+07:03 make sure that they they were properly
+07:05 
+
+07:05 engaged and actually deriving value from
+07:07 
+
+07:07 the software and um this turned out to
+07:10 
+
+07:10 be a a really good way of getting into
+07:12 
+
+07:12 the market so the evolution of the
+07:16 
+
+07:16 service now platform was really inherent
+07:18 
+
+07:18 in its initial design which was based on
+07:21 
+
+07:21 Simplicity and
+07:22 
+
+07:22 approachability and this idea turned out
+07:25 
+
+07:25 to be a fantastic one and a not good at
+07:28 
+
+07:28 all one at the same time
+07:30 
+
+07:30 Time by not good at all I mean that we
+07:34 
+
+07:34 built this platform and it was similar
+07:36 
+
+07:36 like to creating a computer language
+07:38 
+
+07:38 what can it do well it can do anything
+07:40 
+
+07:40 you want well what business problem can
+07:43 
+
+07:43 you solve for me well what business
+07:44 
+
+07:44 problem do you have we'll solve it for
+07:46 
+
+07:46 you so you go around in this circle
+07:48 
+
+07:48 because it didn't solve a specific
+07:50 
+
+07:50 business
+07:51 
+
+07:51 need almost at the outset service now
+07:54 
+
+07:54 faced a crucible decision how do you
+07:57 
+
+07:57 take such a general product to Market do
+07:60 
+
+07:60 you stick to your broader vision of a
+08:01 
+
+08:01 Swiss army knife solution or do you
+08:04 
+
+08:04 frame it as something more
+08:07 
+
+08:07 specific and so even though when I left
+08:10 
+
+08:10 paragan I swore that I would never ever
+08:13 
+
+08:13 ever go back into the IT service
+08:16 
+
+08:16 management area it turns out that my
+08:18 
+
+08:18 definition of never was about 9
+08:21 
+
+08:21 months Fred took service now's broad
+08:25 
+
+08:25 architecture and refined it into a help
+08:27 
+
+08:27 Des replacement tool specifically for it
+08:30 
+
+08:30 departments but Fred also decided on a
+08:33 
+
+08:33 seat-based licensing structure with no
+08:36 
+
+08:36 limit on seats this way a company could
+08:38 
+
+08:38 organically begin using the product
+08:40 
+
+08:40 across the entire office not just it so
+08:45 
+
+08:45 the product that he had built was in his
+08:48 
+
+08:48 words just a forms-based workflow on top
+08:51 
+
+08:51 of a database the specific workflows
+08:54 
+
+08:54 that service now was targeting was the
+08:57 
+
+08:57 resolution and management of help desk
+09:00 
+
+09:00 tickets you join a company you get a
+09:03 
+
+09:03 laptop you have questions you want to be
+09:06 
+
+09:06 integrated to the systems with the
+09:09 
+
+09:09 corporation and what you really need is
+09:11 
+
+09:11 a back and forth forms application to do
+09:15 
+
+09:15 that somebody submits a help Des ticket
+09:18 
+
+09:18 you got to figure out if that incident
+09:20 
+
+09:20 speaks to some sort of underlying issue
+09:22 
+
+09:22 you got to resolve the incident while
+09:24 
+
+09:24 also inspecting the issue and you got to
+09:27 
+
+09:27 keep going until you get it fixed that
+09:29 
+
+09:29 same basic process of managing things
+09:31 
+
+09:31 through a workflow that's the same thing
+09:33 
+
+09:33 that you would do if you were tracking a
+09:35 
+
+09:35 candidate through the candidate pipeline
+09:38 
+
+09:38 it's the same thing you might do if you
+09:39 
+
+09:39 were tracking a prospect through your
+09:42 
+
+09:42 customer pipeline it's the same thing
+09:44 
+
+09:44 you might do if you were processing an
+09:46 
+
+09:46 insurance claim it's eminently more
+09:50 
+
+09:50 extensible eminently more scalable
+09:52 
+
+09:52 eminently more secure and at the same
+09:55 
+
+09:55 time it's more approachable using it as
+09:58 
+
+09:58 a lever to encourage adoption across the
+10:00 
+
+10:00 entire organization was a strategy Fred
+10:03 
+
+10:03 called going
+10:06 
+
+10:06 wide we had a couple of different
+10:08 
+
+10:08 customers that were very much Leading
+10:10 
+
+10:10 Edge in showing us this ability to go
+10:14 
+
+10:14 wide and probably my favorite one is
+10:16 
+
+10:16 CERN which is a particle physics
+10:18 
+
+10:18 laboratory in Europe they offer four or
+10:21 
+
+10:21 5,000 different services to the visiting
+10:23 
+
+10:23 people and it could be anything from
+10:25 
+
+10:25 getting a classroom getting a whiteboard
+10:28 
+
+10:28 complaining that the toilet is is
+10:29 
+
+10:29 leaking or scheduling time on a large
+10:32 
+
+10:32 hron collider to do a particle physics
+10:34 
+
+10:34 experiment and CERN built 4,000 of these
+10:37 
+
+10:37 tiny little applications that serve this
+10:40 
+
+10:40 entire community and they came and
+10:42 
+
+10:42 presented it at our user group meeting
+10:44 
+
+10:44 and I think the people that were most
+10:45 
+
+10:45 Blown Away were those of us that had
+10:47 
+
+10:47 built the platform because we thought my
+10:50 
+
+10:50 God this is awesome that they could
+10:52 
+
+10:52 build these sets of
+10:55 
+
+10:55 applications slowly the company was
+10:57 
+
+10:57 growing gaining Enterprise customer like
+10:60 
+
+10:60 Edmonds and colcom and I would say that
+11:04 
+
+11:04 the thing that told me that the company
+11:07 
+
+11:07 was going to do well was the enthusiasm
+11:10 
+
+11:10 that our customers had to make reference
+11:13 
+
+11:13 calls they said let us talk to your
+11:15 
+
+11:15 prospects they actually asked us if they
+11:18 
+
+11:18 could talk to our prospects and I had
+11:20 
+
+11:20 worked in software companies where
+11:21 
+
+11:21 digging up a reference call could take a
+11:23 
+
+11:23 month because our customers hated us so
+11:27 
+
+11:27 much we kept meeting people from the uh
+11:30 
+
+11:30 VC Community First of all theyd come in
+11:33 
+
+11:33 and assert that they were different then
+11:34 
+
+11:34 they tell us exactly the same story that
+11:36 
+
+11:36 we heard from the prior person and then
+11:39 
+
+11:39 they would say well listen you guys are
+11:40 
+
+11:40 doing great and they say let's keep in
+11:42 
+
+11:42 touch and then they leave and we looked
+11:45 
+
+11:45 at each other my CFO and I thought well
+11:47 
+
+11:47 I'm not sure we're getting any value out
+11:49 
+
+11:49 of these so and Pat started calling like
+11:51 
+
+11:51 oh here's another one of these people
+11:53 
+
+11:53 from Sand Hill Road in 2008 I started
+11:56 
+
+11:56 emailing Fred three out of four emails
+11:59 
+
+11:59 went on answered and then the fourth
+12:00 
+
+12:00 email might have been a polite hey
+12:02 
+
+12:02 thanks for thinking of us but we don't
+12:03 
+
+12:03 need any money sort of thing I think
+12:06 
+
+12:06 during one of those responses he said
+12:09 
+
+12:09 but let me give you a little update on
+12:10 
+
+12:10 the business and the little update on
+12:12 
+
+12:12 the business was a couple of sentences
+12:14 
+
+12:14 that Bas basically painted the picture
+12:16 
+
+12:16 of a business that was thriving and so
+12:19 
+
+12:19 at that point I transitioned from the
+12:22 
+
+12:22 hey do you want to get on the phone
+12:23 
+
+12:23 emails to the hey I'll be in San Diego
+12:26 
+
+12:26 next Tuesday do you want to grab lunch
+12:28 
+
+12:28 and of course if he were to respond then
+12:30 
+
+12:30 I would fly to San Diego for lunch I
+12:32 
+
+12:32 sent him one of those and he responded I
+12:34 
+
+12:34 want to say at 11:30 a.m. on the Tuesday
+12:37 
+
+12:37 that I told him I was going to be there
+12:38 
+
+12:38 and said yeah yeah do you want to swing
+12:39 
+
+12:39 by are you still open and I responded
+12:42 
+
+12:42 immediately and said ah shoot my trip
+12:44 
+
+12:44 got pushed to next week how about same
+12:46 
+
+12:46 time next week and he said okay great so
+12:48 
+
+12:48 Doug and I flew there for for a lunch on
+12:50 
+
+12:50 a Tuesday which was the first time we
+12:51 
+
+12:51 met Fred in person when you talked with
+12:53 
+
+12:53 them and this is the thing that really
+12:54 
+
+12:54 stood out the clarity of thought and the
+12:56 
+
+12:56 focused on first order issues was
+12:58 
+
+12:58 impossible to miss
+12:60 
+
+12:60 he was hungry he worked like mad and he
+13:03 
+
+13:03 was building a great business and so it
+13:06 
+
+13:06 seemed like something we ought to do
+13:08 
+
+13:08 without much thinking and then as the
+13:10 
+
+13:10 conversation progressed Doug has this
+13:13 
+
+13:13 magical way of sort of getting a
+13:15 
+
+13:15 complete picture of a founder and of a
+13:18 
+
+13:18 business not just the stuff that they're
+13:19 
+
+13:19 eager to share but also all the stuff
+13:21 
+
+13:21 that maybe they're not so eager to share
+13:23 
+
+13:23 when we met Fred we gave him the pitch
+13:26 
+
+13:26 of SEO I remember we had T slight pitch
+13:29 
+
+13:29 it talk talked about all the mistakes
+13:31 
+
+13:31 we've made and all the mistakes we
+13:33 
+
+13:33 commit our companies would not make
+13:35 
+
+13:35 again because we've seen those mistakes
+13:38 
+
+13:38 I remember Fred took that slide and kept
+13:40 
+
+13:40 it in this binder and along the way I
+13:44 
+
+13:44 asked them what's the biggest challenge
+13:45 
+
+13:45 you have now is that keeping our systems
+13:47 
+
+13:47 up our data centers are getting
+13:49 
+
+13:49 inundated by volume and I said I know
+13:53 
+
+13:53 just a person that can help you and he
+13:55 
+
+13:55 took the name of the card and I remember
+13:58 
+
+13:58 that I got a call from Fred a week later
+14:00 
+
+14:00 he said you've already helped me more
+14:03 
+
+14:03 than my existing investors have helped
+14:05 
+
+14:05 me up to now and I knew when he said
+14:08 
+
+14:08 that that we had a shot of becoming
+14:09 
+
+14:09 investors in late 2009 Square LED
+14:13 
+
+14:13 service now's $41 million series D round
+14:16 
+
+14:16 service now gained household name
+14:18 
+
+14:18 customers like Deutsche Bank Intel and
+14:21 
+
+14:21 McDonald's the company was an A Tear
+14:24 
+
+14:24 doubling Revenue annually but the
+14:26 
+
+14:26 problems with outages that Fred shared
+14:28 
+
+14:28 with sequ in their first meeting were
+14:31 
+
+14:31 only
+14:32 
+
+14:32 mounting it was clear to us that the
+14:34 
+
+14:34 company was being just buried under its
+14:36 
+
+14:36 its own success the number of customers
+14:40 
+
+14:40 it was getting was too fast and it's
+14:42 
+
+14:42 probably the only time in my life that I
+14:45 
+
+14:45 suggested we slow down growth because I
+14:48 
+
+14:48 didn't think the den management team
+14:50 
+
+14:50 could absorb the volume of business
+14:54 
+
+14:54 coming our way and then Fred a wonderful
+14:57 
+
+14:57 founder you also have a a person that's
+15:00 
+
+15:00 much happier coding than interfacing
+15:03 
+
+15:03 with people and unfortunately as a chief
+15:06 
+
+15:06 executive officer you have to interface
+15:08 
+
+15:08 with people he was a Visionary but just
+15:12 
+
+15:12 left to his own wishes he'd rather be
+15:14 
+
+15:14 left in a corner room and
+15:16 
+
+15:16 code service now was at a Crossroads it
+15:20 
+
+15:20 needed leadership to get to the next
+15:22 
+
+15:22 level where would it come from after
+15:25 
+
+15:25 Sequoia made the investment Doug asks me
+15:28 
+
+15:28 Fred do you want to be the CEO or do you
+15:30 
+
+15:30 want to be the product guy because in
+15:32 
+
+15:32 our experience you can do one but not
+15:36 
+
+15:36 both and Fred will support you in
+15:38 
+
+15:38 whichever path you want to take but I
+15:40 
+
+15:40 don't think you'll have the bandwidth to
+15:42 
+
+15:42 do both and I took this under advisement
+15:45 
+
+15:45 and um and did absolutely
+15:48 
+
+15:48 nothing we did have an idea for a
+15:51 
+
+15:51 process that we could run to help him
+15:53 
+
+15:53 figure it out and so we brought Fred up
+15:55 
+
+15:55 to the Bay Area to meet with a bunch of
+15:57 
+
+15:57 people who were're Executives or
+16:00 
+
+16:00 founders of various shapes and sizes and
+16:03 
+
+16:03 so we wanted Fred to hear all of the
+16:06 
+
+16:06 different sides of the story and all of
+16:08 
+
+16:08 the different pros and cons to the
+16:10 
+
+16:10 various configurations that he could set
+16:12 
+
+16:12 up for himself it was a fairly
+16:14 
+
+16:14 exhausting day for me anyway they put
+16:17 
+
+16:17 together all these meetings we drove all
+16:18 
+
+16:18 over the valley and then that night Doug
+16:21 
+
+16:21 and Fred and I go to dinner and I just
+16:23 
+
+16:23 remember Fred having this big grin on
+16:25 
+
+16:25 his face and we're like Fred what are
+16:27 
+
+16:27 you grinning about he's like I know
+16:29 
+
+16:29 exactly what I want to do we're like
+16:31 
+
+16:31 okay great what do you want to do I
+16:33 
+
+16:33 looked at Doug and he looked at me and I
+16:35 
+
+16:35 said Doug I don't have any of the skills
+16:39 
+
+16:39 that those people have that are CEOs and
+16:42 
+
+16:42 furthermore I have no desire in
+16:45 
+
+16:45 developing them I'm your product guy we
+16:47 
+
+16:47 need to find a
+16:49 
+
+16:49 CEO we went through a really exhaustive
+16:52 
+
+16:52 search to find somebody we wanted a
+16:55 
+
+16:55 mission to find someone that could be
+16:57 
+
+16:57 his business partner someone who
+16:59 
+
+16:59 understood he was coming in as a CEO but
+17:03 
+
+17:03 he would have to partner with Fred not
+17:05 
+
+17:05 in running the business but as a
+17:07 
+
+17:07 business partner and if that marriage
+17:09 
+
+17:09 work we were going to have a home run
+17:11 
+
+17:11 opportunity Doug had a favorite I had a
+17:14 
+
+17:14 favorite we did not have a shared
+17:15 
+
+17:15 favorite we both didn't quite have the
+17:18 
+
+17:18 meeting on the minds and then we came
+17:20 
+
+17:20 across Frank slutman who was then a
+17:23 
+
+17:23 partner an operating partner at Greylock
+17:25 
+
+17:25 and we got wind of the fact that he had
+17:29 
+
+17:29 know that investing was not for him and
+17:31 
+
+17:31 he was looking for a CO job Frank is a
+17:34 
+
+17:34 doer Frank is not you know all sugar
+17:38 
+
+17:38 lollipop and apple pie Frank is a real
+17:40 
+
+17:40 deal when I was first approached by
+17:43 
+
+17:43 Sequoia I was slightly incredulous
+17:46 
+
+17:46 because this was help Des management it
+17:48 
+
+17:48 was the most boring business on the
+17:50 
+
+17:50 planet
+17:51 
+
+17:51 right my name is Frank slman and I was
+17:54 
+
+17:54 the chief executive officer of service
+17:56 
+
+17:56 now when I started making inquiries and
+17:59 
+
+17:59 and yeah everybody kind of replaces that
+18:01 
+
+18:01 software every 3 years and uh eventually
+18:04 
+
+18:04 that will just go away so I was getting
+18:06 
+
+18:06 all these conflicting signals about wow
+18:09 
+
+18:09 is this is this a hot company or is
+18:12 
+
+18:12 this something that is incredibly boring
+18:14 
+
+18:14 and has no real strategic Mojo to it so
+18:18 
+
+18:18 the one thing that stuck out of course
+18:20 
+
+18:20 is the company was growing fast I mean
+18:23 
+
+18:23 velocity is the Mother's Milk of venture
+18:26 
+
+18:26 capital okay I mean when you have
+18:27 
+
+18:27 velocity you got something and when you
+18:29 
+
+18:29 don't have it you got nothing so when
+18:32 
+
+18:32 you have velocity you're going to start
+18:33 
+
+18:33 looking closer and go like what's going
+18:35 
+
+18:35 on here I think what intrigued Frank was
+18:38 
+
+18:38 first of all he really didn't believe
+18:41 
+
+18:41 how well we were doing financially from
+18:42 
+
+18:42 a cash flow positive perspective at this
+18:45 
+
+18:45 age of the company there's high growth
+18:48 
+
+18:48 here there's velocity and there is an
+18:50 
+
+18:50 incredibly passionate customer base
+18:52 
+
+18:52 there as I sort of figured you know what
+18:54 
+
+18:54 I can figure out the rest I think we got
+18:56 
+
+18:56 the most important things covered here
+18:59 
+
+18:59 in 2011 Frank slutman became CEO of
+19:02 
+
+19:02 service now and Fred became Chief
+19:05 
+
+19:05 product officer leadership change is
+19:08 
+
+19:08 always a crucible moment
+19:10 
+
+19:10 because you never know what you're going
+19:12 
+
+19:12 to
+19:14 
+
+19:14 get it's a system full of people and
+19:18 
+
+19:18 even the best and most capable and
+19:21 
+
+19:21 well-intentioned people are still human
+19:23 
+
+19:23 beings and when you throw somebody new
+19:26 
+
+19:26 into the mix no matter how talented that
+19:28 
+
+19:28 person is or how much you might respect
+19:30 
+
+19:30 them disagreements are going to come up
+19:33 
+
+19:33 organ rejection is a possibility and
+19:36 
+
+19:36 there's a lot of work that you have to
+19:38 
+
+19:38 do to get the team to gel the first 90
+19:41 
+
+19:41 to 120 days that Frank was CEO was
+19:44 
+
+19:44 probably the most difficult of my career
+19:46 
+
+19:46 I was used to being a benevolent
+19:49 
+
+19:49 autocrat at the corporation and now I
+19:51 
+
+19:51 had a position where he was in that seat
+19:54 
+
+19:54 Frank is a do something yesterday kind
+19:58 
+
+19:58 of person he doesn't mess around your
+20:01 
+
+20:01 lead follow or get out of the way kind
+20:03 
+
+20:03 of leader there's a new sheriff in town
+20:05 
+
+20:05 moment that does stick out and that was
+20:08 
+
+20:08 this company was based in San Diego but
+20:10 
+
+20:10 then it opened a Bay Area office and
+20:14 
+
+20:14 they had tickets to one of the San Diego
+20:17 
+
+20:17 sports teams but they did not have
+20:18 
+
+20:18 tickets to any of the Bay Area sports
+20:20 
+
+20:20 teams and when Frank found out about
+20:23 
+
+20:23 this he said huh well that's not fair
+20:25 
+
+20:25 that one office has tickets to go to the
+20:28 
+
+20:28 games and the other office doesn't get
+20:30 
+
+20:30 rid of the tickets and a couple weeks
+20:32 
+
+20:32 later he heard that some people had gone
+20:34 
+
+20:34 to the game and he went to the person
+20:36 
+
+20:36 who he deputized to get rid of the
+20:38 
+
+20:38 tickets and he said what happened I
+20:40 
+
+20:40 thought I told you to get rid of the
+20:41 
+
+20:41 tickets and he said well you know people
+20:44 
+
+20:44 were already signed up for the games and
+20:45 
+
+20:45 people really liked them so we decided
+20:48 
+
+20:48 we just keep him through the end of the
+20:49 
+
+20:49 season and Frank said okay you don't
+20:52 
+
+20:52 work here anymore and it's a trivial
+20:55 
+
+20:55 thing but the message that he needed to
+20:58 
+
+20:58 make sure that people heard was when I
+21:00 
+
+21:00 ask you to do something that's not a
+21:03 
+
+21:03 request that's an order I remember
+21:05 
+
+21:05 calling Doug and telling him that I'm
+21:08 
+
+21:08 not sure that this was the right thing
+21:11 
+
+21:11 and his only advice to me was give it 90
+21:13 
+
+21:13 days and I thought well I can do that
+21:16 
+
+21:16 pretty easily early on Frank said well
+21:19 
+
+21:19 this is going to be our number one
+21:20 
+
+21:20 priority he sent this email out to you
+21:22 
+
+21:22 know six or seven people and I said well
+21:24 
+
+21:24 I I disagree I don't this can't be our
+21:26 
+
+21:26 number one priority our number one
+21:27 
+
+21:27 priority should be this
+21:29 
+
+21:29 and he calls me and he said Fred there
+21:31 
+
+21:31 can only be one CEO he said it's okay if
+21:35 
+
+21:35 you don't want me to be the CEO but
+21:37 
+
+21:37 there can only be one CEO and I said you
+21:39 
+
+21:39 know what you're absolutely right there
+21:41 
+
+21:41 is absolutely one CEO and that really
+21:45 
+
+21:45 set the tone for our relationship in
+21:48 
+
+21:48 that if I disagreed with him and it was
+21:50 
+
+21:50 something that was perhaps uh where
+21:53 
+
+21:53 people would get emotional then he and I
+21:55 
+
+21:55 discuss it oneon-one we needed him
+21:59 
+
+21:59 so the question was very much are you
+22:02 
+
+22:02 going to be here or how long are you
+22:03 
+
+22:03 going to be here and there were many
+22:05 
+
+22:05 reasons we needed him because he was he
+22:08 
+
+22:08 was a Visionary he was a driver he was
+22:10 
+
+22:10 an innovator and he knew where all the
+22:12 
+
+22:12 bodies were buried there were a lot of
+22:14 
+
+22:14 reasons why we needed threet in the
+22:16 
+
+22:16 worst way I mean that was just not an
+22:18 
+
+22:18 option at all he had to be
+22:20 
+
+22:20 there what Frank faced is a company
+22:24 
+
+22:24 which had more issues than what I
+22:27 
+
+22:27 understood Maybe maybe anybody
+22:30 
+
+22:30 understood the thing that really scared
+22:32 
+
+22:32 us is that we were a cloud application
+22:36 
+
+22:36 platform at a time when Cloud
+22:39 
+
+22:39 infrastructures didn't exist Fred
+22:41 
+
+22:41 jokingly said when I joined he said oh
+22:44 
+
+22:44 when we first got started you know we uh
+22:47 
+
+22:47 we bought a used Dell server on eBay and
+22:49 
+
+22:49 we stuck it in the closet and that was
+22:51 
+
+22:51 our clout that was the data center or or
+22:54 
+
+22:54 whatever had to you know pretend to be a
+22:56 
+
+22:56 data center Frank realized far more so
+22:59 
+
+22:59 than I did what was going to be
+23:01 
+
+23:01 necessary to build out the resilient and
+23:05 
+
+23:05 scalable architecture that we have today
+23:08 
+
+23:08 we have customers like General Electric
+23:11 
+
+23:11 UBS doac the largest institutions in the
+23:15 
+
+23:15 world who had committed themselves to a
+23:18 
+
+23:18 service now strategy one of the things
+23:20 
+
+23:20 about our system which is different from
+23:23 
+
+23:23 a lot of others is that um our customers
+23:26 
+
+23:26 can't take an outage of even several
+23:28 
+
+23:28 minutes
+23:29 
+
+23:29 and by that I mean several minutes
+23:35 
+
+23:35 ever I remember having a a conversation
+23:38 
+
+23:38 early on with the chief operating
+23:40 
+
+23:40 officer at deuts bank and he said you
+23:42 
+
+23:42 must succeed he says we have no way back
+23:46 
+
+23:46 and you know I'm thinking at the same
+23:47 
+
+23:47 time yeah and we're running on a Dell
+23:49 
+
+23:49 server running out of a closet many days
+23:51 
+
+23:51 we were up and down and sideways that
+23:54 
+
+23:54 after a while became super intense
+23:57 
+
+23:57 because we were not growing up out of
+23:59 
+
+23:59 that situation I had cios from Johnson
+24:03 
+
+24:03 and Johnson would just call up and say
+24:05 
+
+24:05 what in the hell's going on over there
+24:07 
+
+24:07 we didn't even understand the problem so
+24:09 
+
+24:09 people looked at us like you guys don't
+24:11 
+
+24:11 know what you're doing and they were not
+24:13 
+
+24:13 wrong we did not know what we were doing
+24:16 
+
+24:16 I remember Frank telling me that for the
+24:18 
+
+24:18 first year he went to sleep terrified of
+24:21 
+
+24:21 the calls he may get it in the middle of
+24:24 
+
+24:24 the night it was it was much more
+24:26 
+
+24:26 existential than oh you know we got some
+24:28 
+
+24:28 tough just on our hand I I didn't think
+24:31 
+
+24:31 we were going to live through this I
+24:32 
+
+24:32 mean it was one of those things this is
+24:34 
+
+24:34 so huge so enormous right how do you
+24:38 
+
+24:38 survive this right because there are no
+24:40 
+
+24:40 good explanation there are no reasonable
+24:42 
+
+24:42 stories to be told this is just
+24:45 
+
+24:45 Insanity facing potential collapse
+24:49 
+
+24:49 service now needed to figure out how to
+24:51 
+
+24:51 build a reliable Cloud Network we
+24:54 
+
+24:54 started to enlist all kinds of different
+24:56 
+
+24:56 people different resources everybody had
+24:58 
+
+24:58 an opinion everybody had a
+24:60 
+
+24:60 recommendation but it was a discipline
+25:02 
+
+25:02 that was not understood or developed at
+25:04 
+
+25:04 the time we went down this path and we
+25:07 
+
+25:07 had multiple false starts where we said
+25:10 
+
+25:10 this is not going to work and we had to
+25:12 
+
+25:12 part ways with people several times we
+25:16 
+
+25:16 were like looking for water in the
+25:17 
+
+25:17 desert it turns out that in the end our
+25:20 
+
+25:20 VP of engineering that was part of the
+25:22 
+
+25:22 incoming team Dan McGee was an
+25:25 
+
+25:25 incredibly strong process and discipline
+25:28 
+
+25:28 guy and and he really figured out how to
+25:31 
+
+25:31 homogenize the infrastructure meaning
+25:33 
+
+25:33 that everybody ran on exactly the same
+25:36 
+
+25:36 software stack so homogenizing making
+25:40 
+
+25:40 everything absolutely the same in terms
+25:42 
+
+25:42 of patch levels inters levels all these
+25:45 
+
+25:45 different things that process you know
+25:47 
+
+25:47 started to really freeze out you know a
+25:50 
+
+25:50 lot of these problems they were just uh
+25:53 
+
+25:53 completely cookie cutter in the end and
+25:54 
+
+25:54 that helped us really get over this
+25:57 
+
+25:57 chaos and Mayhem that we experienced in
+25:59 
+
+25:59 the early days it went from being the
+26:01 
+
+26:01 absolute worst to being one of the best
+26:03 
+
+26:03 in the industry and also incredibly
+26:05 
+
+26:05 economically viable as well our gross
+26:07 
+
+26:07 margins became very very
+26:10 
+
+26:10 strong among the other issues Frank
+26:12 
+
+26:12 faced were unworkable contracts with
+26:14 
+
+26:14 customers that had to be Rewritten a
+26:17 
+
+26:17 lack of patents for its intellectual
+26:18 
+
+26:18 property that put the company in danger
+26:20 
+
+26:20 of catastrophic lawsuits and the need
+26:23 
+
+26:23 for more talent to fill out every
+26:25 
+
+26:25 Department from sales to research and
+26:27 
+
+26:27 development
+26:29 
+
+26:29 I've been in companies that were
+26:30 
+
+26:30 dramatically overspend and over staffed
+26:32 
+
+26:32 and this one was the exact opposite it
+26:35 
+
+26:35 it was the scariest of scariest
+26:37 
+
+26:37 experiences to see how thin this company
+26:40 
+
+26:40 was on this technical Talent we
+26:43 
+
+26:43 massively backed up the truck it was a
+26:45 
+
+26:45 hiring I it was insane the amount of
+26:47 
+
+26:47 hiring that we did and we actually went
+26:49 
+
+26:49 into a loss making position for a couple
+26:51 
+
+26:51 of quarters you know even though the
+26:53 
+
+26:53 company was massively profitable but for
+26:55 
+
+26:55 the wrong reasons we doubled the the
+26:58 
+
+26:58 size uh of the entire company in terms
+27:00 
+
+27:00 of number of employees in the matter of
+27:02 
+
+27:02 months and uh it shocked the board of
+27:05 
+
+27:05 directors they're like he did
+27:08 
+
+27:08 what uh but you know in hindsight you
+27:11 
+
+27:11 know I would have gone faster if I could
+27:13 
+
+27:13 we would always get up in the morning
+27:15 
+
+27:15 one foot in front of the other we did
+27:17 
+
+27:17 what we had to do however difficult and
+27:19 
+
+27:19 ugly it was uh and confrontational it
+27:21 
+
+27:21 was at times we kept moving in the end
+27:23 
+
+27:23 we solved all these problems they all
+27:25 
+
+27:25 went away so in other words it can be
+27:28 
+
+27:28 done
+27:29 
+
+27:29 in addition to solving some of service
+27:31 
+
+27:31 now's most pressing issues Frank also
+27:33 
+
+27:33 LED an effort to broaden the company's
+27:35 
+
+27:35 product offerings and capitalize on the
+27:38 
+
+27:38 promise that was inherent in Fred's
+27:40 
+
+27:40 initial product design we fairly quickly
+27:44 
+
+27:44 started to look at evolving our
+27:47 
+
+27:47 positioning from help desk replacement
+27:50 
+
+27:50 to what we refer to as the Erp for it
+27:54 
+
+27:54 the idea was that it would have its own
+27:57 
+
+27:57 system of record would have its own
+27:59 
+
+27:59 platform where all the functions of it
+28:01 
+
+28:01 would be you have a single database and
+28:03 
+
+28:03 a fully integrated system that had never
+28:05 
+
+28:05 been done and uh people looked at this
+28:08 
+
+28:08 like what Erp for it what are you
+28:10 
+
+28:10 talking about you're help this
+28:12 
+
+28:12 replacement tool here's the important
+28:14 
+
+28:14 thing now everybody in it is going to be
+28:18 
+
+28:18 licensed on service now not just that
+28:20 
+
+28:20 small group of help desk management
+28:22 
+
+28:22 people we we just said look if you work
+28:24 
+
+28:24 on it and you don't have a log on to the
+28:27 
+
+28:27 system what are you doing
+28:29 
+
+28:29 here now obviously from a business model
+28:31 
+
+28:31 standpoint you know you can now sell you
+28:34 
+
+28:34 know 40 50 times as many licenses to the
+28:36 
+
+28:36 same Customer because we would go in and
+28:39 
+
+28:39 say yeah we're not here to license your
+28:40 
+
+28:40 help Des management staff which is a
+28:42 
+
+28:42 very small group of people we're here to
+28:44 
+
+28:44 license everybody uh including you Mr
+28:46 
+
+28:46 CIO but it was only the beginning
+28:49 
+
+28:49 because we had you know other
+28:51 
+
+28:51 Transformations that were coming after
+28:53 
+
+28:53 that there's no one moment that stands
+28:56 
+
+28:56 out as the moment where we said thank
+28:59 
+
+28:59 goodness Frank is here it was almost all
+29:01 
+
+29:01 of the moments I have the utmost respect
+29:05 
+
+29:05 for Frank and I considered it to be a an
+29:08 
+
+29:08 honor to work for him and I I learned a
+29:10 
+
+29:10 lot from Frank and I'm very very
+29:12 
+
+29:12 appreciative of that relationship that
+29:13 
+
+29:13 we had I remember being at a board
+29:17 
+
+29:17 dinner and Fred and I were talking about
+29:21 
+
+29:21 how great things that worked out with
+29:22 
+
+29:22 Frank and I said thank God we got Frank
+29:26 
+
+29:26 because in my opinion Fred we were 9
+29:28 
+
+29:28 days from going out of
+29:32 
+
+29:32 business with Frank's cleare eyed
+29:34 
+
+29:34 stewardship and Fred's Visionary product
+29:37 
+
+29:37 design service now was growing from a
+29:39 
+
+29:39 help desk replacement tool to the Erp of
+29:42 
+
+29:42 it and then beyond to a multi-use
+29:45 
+
+29:45 platform that was being used across
+29:48 
+
+29:48 every corner of the Enterprise the
+29:50 
+
+29:50 company's success was not going
+29:54 
+
+29:54 unnoticed service now started getting
+29:56 
+
+29:56 unsolicited offers for an an acquisition
+29:59 
+
+29:59 and they were companies large and small
+30:02 
+
+30:02 including Dell and then we did get an
+30:05 
+
+30:05 offer from from VMware and that was an
+30:08 
+
+30:08 exciting thing because VMware at the
+30:10 
+
+30:10 time 2010 was really just on top of the
+30:13 
+
+30:13 world they had a huge market cap they
+30:15 
+
+30:15 were really well revered in the
+30:17 
+
+30:17 technology industry and then I I flew up
+30:19 
+
+30:19 to Palo Alto and met with Carl ebach we
+30:23 
+
+30:23 reached out to service now we realized
+30:26 
+
+30:26 that this could be a very good platform
+30:28 
+
+30:28 for us to have as an asset as we
+30:30 
+
+30:30 continue to build out our management
+30:32 
+
+30:32 approach to how it and service
+30:34 
+
+30:34 management was delivered my name is Carl
+30:37 
+
+30:37 ebach I'm the former president and COO
+30:40 
+
+30:40 of VMware and I'm currently the CEO of
+30:44 
+
+30:44 workday we also knew that at the time
+30:47 
+
+30:47 service now is having some challenges
+30:49 
+
+30:49 with their platform and Technology this
+30:51 
+
+30:51 isn't a time where we were struggling
+30:54 
+
+30:54 greatly we were like we don't know
+30:56 
+
+30:56 whether we can do this you know with the
+30:59 
+
+30:59 level of challenge that we have so
+31:02 
+
+31:02 that's that's when you start
+31:03 
+
+31:03 entertaining these kind of scenarios
+31:05 
+
+31:05 you're like the last thing I want to do
+31:07 
+
+31:07 is fumble this and basically have a
+31:09 
+
+31:09 train wreck on my hands I think we had
+31:12 
+
+31:12 some of the best engineers in the world
+31:14 
+
+31:14 and we could help them modernize the
+31:16 
+
+31:16 product bring stability to it and help
+31:19 
+
+31:19 them scale uh the technology as well one
+31:22 
+
+31:22 day I got a call from Frank slutman
+31:25 
+
+31:25 saying there's an offer in a table to
+31:27 
+
+31:27 buy the company for $2.5
+31:30 
+
+31:30 billion back then multi-billion dollar
+31:33 
+
+31:33 exits were pretty goddamn rare So if
+31:35 
+
+31:35 there's one being offered you don't
+31:37 
+
+31:37 summarily dismiss that when you're a VC
+31:41 
+
+31:41 you're betting on many companies we only
+31:42 
+
+31:42 have one this is not Peter Pan okay this
+31:45 
+
+31:45 is real life at the time I was about 55
+31:49 
+
+31:49 years old I'd been bankrupt twice I had
+31:52 
+
+31:52 a new child so this was a chance to be
+31:54 
+
+31:54 not bankrupt I really had my my heart
+31:58 
+
+31:58 set emotionally on being acquired by
+32:00 
+
+32:00 VMware and then brought it to the board
+32:02 
+
+32:02 and said that's what I would really like
+32:04 
+
+32:04 to do is it' be
+32:06 
+
+32:06 acquired but not everyone was so
+32:09 
+
+32:09 excited this offer was the old holiday
+32:11 
+
+32:11 sneak attack my now wife then girlfriend
+32:14 
+
+32:14 and I Sarah were in New Zealand and we
+32:18 
+
+32:18 went for one of these three-day hikes
+32:19 
+
+32:19 where you just kind of you're just kind
+32:21 
+
+32:21 of off the grid for three days and we
+32:23 
+
+32:23 come back in from this three-day hike
+32:25 
+
+32:25 and I'd had no cell phone reception no
+32:27 
+
+32:27 email service for the first time since
+32:29 
+
+32:29 joining Sequoia and so I was already a
+32:31 
+
+32:31 little bit nervous about what might have
+32:33 
+
+32:33 happened while I was off the grid and so
+32:35 
+
+32:35 as this flood of emails comes back into
+32:37 
+
+32:37 my inbox I see one from Doug where the
+32:39 
+
+32:39 subject line says in all caps where are
+32:41 
+
+32:41 you please and then the body of the
+32:43 
+
+32:43 email was just call me and I asked them
+32:45 
+
+32:45 to put together a
+32:48 
+
+32:48 presentation that we're giving it a wayo
+32:50 
+
+32:50 for $2.5 billion we created 10 slides
+32:54 
+
+32:54 and we sent it to Fred and Frank you
+32:57 
+
+32:57 know Mr Leone always says very nice
+32:59 
+
+32:59 things but he's also very um unambiguous
+33:02 
+
+33:02 at times and he said uh Fred you're
+33:04 
+
+33:04 getting screwed and I thought well if
+33:07 
+
+33:07 this is getting screwed I might I might
+33:10 
+
+33:10 learn to like it and he said I cannot in
+33:13 
+
+33:13 any way support this Doug was the one he
+33:15 
+
+33:15 said Fred you're going to be a 10 bagger
+33:17 
+
+33:17 what's a 10 bagger he goes you're going
+33:18 
+
+33:18 to be worth $ 1010 billion why are you
+33:20 
+
+33:20 selling for $1
+33:21 
+
+33:21 billion you have a CEO and a Founder who
+33:24 
+
+33:24 want to sell the company and investors
+33:26 
+
+33:26 who want to prevent this at all costs
+33:29 
+
+33:29 service now was at a Crossroads that
+33:31 
+
+33:31 would have an enormous impact on the
+33:33 
+
+33:33 company's
+33:35 
+
+33:35 fate I'm on vacation Hawai and for seven
+33:38 
+
+33:38 days my family saw me pacing back and
+33:40 
+
+33:40 forth with a flip phone in my ear we
+33:43 
+
+33:43 were in a situation where we had no
+33:46 
+
+33:46 leverage whatsoever we bought common
+33:48 
+
+33:48 shares from Fred we had no voting rights
+33:51 
+
+33:51 in fact we had no rights as board
+33:53 
+
+33:53 members we can voice our opinion but
+33:56 
+
+33:56 that's where it began and ended and so
+33:58 
+
+33:58 so I tried very hard to find a way
+34:01 
+
+34:01 during a Christmas holiday to stop this
+34:04 
+
+34:04 sale it's right around December 22nd
+34:08 
+
+34:08 23rd and I had taken my son for a walk
+34:12 
+
+34:12 down the horse trail next to our house
+34:14 
+
+34:14 and he's holding on to my little finger
+34:16 
+
+34:16 he's in his onesie you know with his
+34:17 
+
+34:17 footy pajamas and uh I get a call and
+34:21 
+
+34:21 it's it's Doug Leone he goes Fred do you
+34:24 
+
+34:24 want us to write you a check for $100
+34:26 
+
+34:26 million Doug said well I will personally
+34:30 
+
+34:30 buy the shares of anybody who wants to
+34:32 
+
+34:32 sell at this price and people thought
+34:35 
+
+34:35 that was a nice sort of show but that
+34:37 
+
+34:37 also didn't necessarily end the
+34:40 
+
+34:40 conversation because people were still
+34:42 
+
+34:42 inclined to go after the offer again
+34:44 
+
+34:44 this is like a couple days before
+34:46 
+
+34:46 Christmas and I'm like uh no I'm good
+34:50 
+
+34:50 I'm good I remember calling Steve
+34:53 
+
+34:53 bachner was then I believe the CEO of
+34:56 
+
+34:56 Wilson sansini I told Steve Steve they
+34:58 
+
+34:58 want to take an offer and Steve told me
+35:00 
+
+35:00 well no they can't take an offer they
+35:02 
+
+35:02 have a fiduciary duty to shop the
+35:05 
+
+35:05 company around for a a maximum type of
+35:09 
+
+35:09 valuation and so I called a board
+35:11 
+
+35:11 meeting I said we have to shop the
+35:13 
+
+35:13 company around and the then lawyer of
+35:16 
+
+35:16 service now the outside Council said
+35:18 
+
+35:18 Doug only public companies have to be
+35:21 
+
+35:21 shopped around I go shoot uh I got bad
+35:24 
+
+35:24 advice so we ended a board meeting I
+35:26 
+
+35:26 call Steve bachner again Steve they're
+35:28 
+
+35:28 telling me that only public companies
+35:30 
+
+35:30 have to be shopped around he said no no
+35:32 
+
+35:32 private company also have to be shopped
+35:34 
+
+35:34 around I said well how am I going to
+35:36 
+
+35:36 argue this he's going to say public I
+35:38 
+
+35:38 say private I need something
+35:40 
+
+35:40 more and this is where one of those
+35:42 
+
+35:42 breaks of a lifetime happened and so
+35:45 
+
+35:45 Steve said we happen to have hired a
+35:47 
+
+35:47 Wilson sansini as one of our partner The
+35:50 
+
+35:50 Honorable Bill Chandler in a Washington
+35:53 
+
+35:53 DC office who actually wrote the law
+35:56 
+
+35:56 that private companies must be shopped
+35:58 
+
+35:58 around as well I go wow can we get Bill
+36:01 
+
+36:01 Chandler on the phone so Steve Bill
+36:03 
+
+36:03 Chandler and I talk and he confirmed
+36:06 
+
+36:06 everything that Steve bachner said I
+36:08 
+
+36:08 asked Bill whether he'd be available for
+36:10 
+
+36:10 a phone call during a board meeting and
+36:12 
+
+36:12 I called yet another board meeting uh it
+36:15 
+
+36:15 might have been the 23rd of December now
+36:17 
+
+36:17 Doug are you thick you know I I got a
+36:20 
+
+36:20 little abused aren't you listening only
+36:22 
+
+36:22 public companies need to be shopped
+36:24 
+
+36:24 around and I said well I just happen to
+36:26 
+
+36:26 have a on standby
+36:28 
+
+36:28 The Honorable Bill Chandler in
+36:31 
+
+36:31 Washington who actually wrote the law I
+36:33 
+
+36:33 got him on the phone and he explained
+36:36 
+
+36:36 very clearly that it's not just public
+36:38 
+
+36:38 company but private companies also the
+36:40 
+
+36:40 board and the attorney was stunned uh I
+36:44 
+
+36:44 asked if there were any questions of
+36:46 
+
+36:46 Bill there were no questions and I and
+36:48 
+
+36:48 right after I put down the phone I said
+36:51 
+
+36:51 who's going to call Larry Ellison and
+36:53 
+
+36:53 there was silence in the room and I knew
+36:55 
+
+36:55 that then and there I killed the m&a
+37:00 
+
+37:00 transaction I was hyper disappointed
+37:04 
+
+37:04 that we were going to make a our minds
+37:06 
+
+37:06 not to sell to to VMware but in the in
+37:09 
+
+37:09 the back of my mind I knew that it was
+37:11 
+
+37:11 it was the right thing to do I thought
+37:13 
+
+37:13 it was a tremendous if you will jiujitsu
+37:16 
+
+37:16 moov by Doug and the seoa team they knew
+37:19 
+
+37:19 the market they were selling into was
+37:21 
+
+37:21 right for disruption they knew it was a
+37:23 
+
+37:23 very big Market opportunity the total
+37:26 
+
+37:26 addressable Market at the time was quite
+37:28 
+
+37:28 large I think it was super unique and I
+37:31 
+
+37:31 can't recall over my career now spanning
+37:33 
+
+37:33 almost 37 years that this is actually
+37:35 
+
+37:35 happened it's once in 10 careers stories
+37:38 
+
+37:38 that this
+37:40 
+
+37:40 happened just a few months later in June
+37:43 
+
+37:43 of 2012 service now celebrated its IPO
+37:46 
+
+37:46 after Fred Frank and the other members
+37:48 
+
+37:48 of the management team rang the bell at
+37:50 
+
+37:50 the New York Stock Exchange the
+37:51 
+
+37:51 company's value soared 29% by the end of
+37:55 
+
+37:55 that year its market cap was 3.6 $7
+37:58 
+
+37:58 billion over a billion dollar more than
+38:00 
+
+38:00 vmware's offer 2 years later Doug's 10
+38:04 
+
+38:04 bagger prediction came true service now
+38:07 
+
+38:07 reached a market value of $1
+38:11 
+
+38:11 billion I'm glad that he was right about
+38:14 
+
+38:14 the 10 bagger which is a onet of almost
+38:17 
+
+38:17 onet of what we're valued at now selling
+38:19 
+
+38:19 the company to VMware versus living as a
+38:22 
+
+38:22 public company with 150 billion of
+38:24 
+
+38:24 market cap and perhaps living as the con
+38:27 
+
+38:27 iCal example of performance at scale as
+38:31 
+
+38:31 the Enterprise company that all other
+38:32 
+
+38:32 companies admire and look up to and hope
+38:34 
+
+38:34 to someday be like that's a pretty big
+38:36 
+
+38:36 difference I would advise companies that
+38:39 
+
+38:39 receive an acquisition do not get
+38:43 
+
+38:43 Charmed by a number that seems like a
+38:45 
+
+38:45 big number or a number that some model
+38:49 
+
+38:49 says is pay two year forward don't get
+38:52 
+
+38:52 shot by that the only question that
+38:55 
+
+38:55 matters is what can this company be 5
+38:58 
+
+38:58 years from now 7 years from now 10 years
+39:01 
+
+39:01 from now that is the question how big is
+39:03 
+
+39:03 your ambition and let a
+39:07 
+
+39:07 ride today service now is a One-Stop
+39:10 
+
+39:10 shop for cios making work simpler for
+39:13 
+
+39:13 over 7700 companies there is quite
+39:16 
+
+39:16 literally no other software company at
+39:18 
+
+39:18 their scale putting up the sort of
+39:20 
+
+39:20 numbers that they're putting up it's a
+39:21 
+
+39:21 behemoth it's a respected Giant in a
+39:25 
+
+39:25 software industry and when I walked
+39:27 
+
+39:27 iners what it what it is today it's
+39:30 
+
+39:30 mindblowing you know we were uh 250
+39:33 
+
+39:33 people at the time we were doing not
+39:35 
+
+39:35 even 100 million in sales it's doing 10
+39:38 
+
+39:38 billion and still have a lot of you know
+39:41 
+
+39:41 a lot of fuel in the tank to to drive
+39:43 
+
+39:43 the growth of the company sometimes it's
+39:45 
+
+39:45 nice to hear a story like this because
+39:48 
+
+39:48 it's like you had the worst Terror known
+39:50 
+
+39:50 the man and yet here's where we are
+39:52 
+
+39:52 today so it's not just wishful thinking
+39:55 
+
+39:55 these things do really happen so you
+39:58 
+
+39:58 know keep the
+39:59 
+
+39:59 faith Fred ly nailed the product here is
+40:03 
+
+40:03 a guy who dropped out of high school to
+40:07 
+
+40:07 work as a programmer and in his early to
+40:11 
+
+40:11 mid-50s having had literal Decades of
+40:14 
+
+40:14 experience in this market decided that
+40:16 
+
+40:16 he could probably do it better than he'd
+40:18 
+
+40:18 done it before and he absolutely nailed
+40:22 
+
+40:22 it technology that's going to last a
+40:24 
+
+40:24 long time requires extreme Simplicity
+40:28 
+
+40:28 and extreme modularity but I think it's
+40:31 
+
+40:31 probably really the corporate culture
+40:34 
+
+40:34 that has let the company grow through
+40:37 
+
+40:37 now four different CEOs and Branch out
+40:40 
+
+40:40 into the market expanse that it has so
+40:44 
+
+40:44 our corporate culture was always operate
+40:47 
+
+40:47 with great integrity be very honest
+40:50 
+
+40:50 about our capabilities be forthright
+40:53 
+
+40:53 about any shortcomings take
+40:55 
+
+40:55 accountability for when we have made
+40:57 
+
+40:57 mistakes
+40:58 
+
+40:58 and I think that because of that our
+41:00 
+
+41:00 customers have been so willing to work
+41:02 
+
+41:02 with us in good times and in bad and to
+41:05 
+
+41:05 help the company grow we really do form
+41:08 
+
+41:08 a partnership with with our our
+41:11 
+
+41:11 customers so I'm very proud every day to
+41:14 
+
+41:14 be you know associated with service now
+41:16 
+
+41:16 I can't wait for the next 10 or 20 years
+41:23 
+
+41:23 [Music]
+41:28 
+
+41:28 this has been Crucible moments a podcast
+41:31 
+
+41:31 from sequa
+41:33 
+
+41:33 [Music]
+41:41 
+
+41:41 Capital Crucible moments is produced by
+41:44 
+
+41:44 the Epic stories and fox creative
+41:46 
+
+41:46 podcast teams along with seoa
+41:49 
+
+41:49 [Music]
+41:50 
+
+41:50 capital special thanks to Fred buddy
+41:53 
+
+41:53 Frank slutman Pat Grady Doug Leone and
+41:56 
+
+41:56 Carl asbach for sharing their stories
+42:00 
+
+42:00 [Music]

@@ -1,0 +1,525 @@
+00:00 you know I was talking to a founder he gave me the analogy of you know you want the user to almost be like the way that
+00:06 a director would direct the cast and crew of you know change the lighting here like can you say this with a little bit more of an accent there and like
+00:13 almost like natural language the way that a director would direct a cast and crew what do you think is the right way
+00:18 to mold the mold the play i I still think it's showand tell everywhere so I don't think you do everything through
+00:23 text i think it's kind of actually counterintuitive to have to transcribe everything so I think there's a lot of
+00:28 like showing and acting and mimicking or giving a reference just as inspiration in addition to the text um but but the
+00:36 the one thing that's starting to become more clear at least for me is kind of um video generation simulation games
+00:42 they're kind of like the same thing in this new world and what that means is basically you're you're kind of world
+00:48 building you're saying this is the stage these are the assets these are how things are supposed to look and then you shoot in it and they can reshoot and
+00:55 refine and pause and correct something and go back in time and regenerate like I think that's where this is heading and
+01:00 UI is going to be fairly novel [Music]
+01:08 [Music]
+01:19 yeah welcome to training data fresh off of Google IO we're exploring some of the exciting AI updates with three leaders
+01:25 from Google Labs who are the leads on Google's product experiments around generative video computer use and
+01:30 notebook thomas Iljik of Whisk and VO reveals why the future of content isn't just about generation it's about
+01:37 remixable experiences where the line between movies and games blurs and where your creations become starting points
+01:42 for others jaclyn Consulman of Mariner explains how computer use agents will fundamentally change e-commerce by
+01:49 removing human friction from purchasing and Simon Takamina of Notebook LM shares
+01:54 why personalized AI content designed for an audience of one represents a completely new media category you'll
+02:01 discover why these teams feel like a new chapter is starting for AI at Google enjoy the show it's been exciting to see Google's
+02:09 just cooking in AI uh and IO last week was very exciting and it seems like the
+02:14 court of public opinion has just turned on its head so quickly and right now everyone's just like Google's out in
+02:19 front in AI um why do you think that is why did the public opinion change so so quickly i mean the models you know to
+02:25 start with I think they have a big thing to play with good good answer definitely the models and I think just the number
+02:31 of products that we have and seeing all of this uh breakthrough in technology and AI come out into all of those
+02:37 products but also all the net new products that we're launching and the net new experiences um it just it was a
+02:43 lot last week and even not just at IO but like the week leading up to it i think you had a big moment the day
+02:48 before yes yeah I did i did um yeah it's re it's definitely validating to see the
+02:54 you know public opinion on the models and Google's position in AI changing
+03:00 um maybe recently yeah um it does feel to us on the inside at least that it's
+03:05 it's kind of it's it's the it's the result of a lot of work though so it feels like we've been improving to me at
+03:11 least for at least the last three years um in this area of Gen AI um and maybe
+03:16 what we what we're seeing externally is is people seeing what we've been up to it helps that we're number one on many
+03:22 of the leaderboards and it helps that some of the stuff that the models can do is state-of-the-art and I think is only
+03:27 possible with some of the Google models um but I think internally it just feels like the end of chapter one and the
+03:33 start of chapter 2 yeah wonderful um so here's what I'd love to do today we have we have three of the leaders from Google
+03:40 Labs uh in the room with us for those in the audience uh what I'd love to do is spend a little bit of time on each of
+03:47 the topics that you are responsible for and then we can we can round up with some overall thoughts on AI does it
+03:52 sound good the three topics we'll cover um we'll go into Whisk Flow and VO with with Thomas um which is you know
+03:60 Google's video models and kind of creative image generation uh playground
+04:05 for lack of a better word um we'll go into Mariner um Google's computer use agent uh with Jacqueline and then we'll
+04:12 close on notebook with Simon and everyone knows Notebook so that needs no introduction awesome i like that okay uh
+04:19 Thomas let's start with you tell us about the history of you know how you all have been cooking and building and
+04:25 experimenting in the creative image video generation space and how long have you been experimenting with these
+04:30 products and what have been the key milestones so far sure um yeah it's been a really exciting space i think that's a
+04:36 very long question so you know I'll probably rant a little bit um I think the I mean we've had for a long time
+04:42 like good you know imagery models there was like imagen there's been deli obviously externally etc but something like two three years ago is when at
+04:49 least for us in labs when we're thinking about products we had the control net paper for people who remember so it's kind of like how do you how do you take
+04:56 the model and start channeling it where you want so it's not just like a push button thing you can start saying I want the pose to be like this or the scene to
+05:02 be like this that was one and then the second thing was Laura's where like you can kind of show the model a range of things and then suddenly you're able to
+05:08 kind of like you know pull from the image and be like what's the range of possibilities for that particular piece and so that like iteration the sense
+05:15 that you can start controlling the outputs that that felt like the right moment for us to start exploring the creative process when was that probably
+05:22 two and a half to three years ago and so then a lot of you know stumbling and trying things and failing i think we had
+05:28 things where we we trained a bunch of our people internally to see what they could do with confui type workflows um
+05:34 we even had a little you know animation thing going on where we created half an episode with artists um and you know we
+05:41 published I think it's the not so super villain if you want to check it out on YouTube and then more recently we ended
+05:46 up with like a bunch of convictions out of that exercise um so we had things like creation has to be iterative so we
+05:52 need to build kind of these controls next to the models um media comes with the blueprint which is this idea that
+05:59 like if I generate something you're able to kind of pick off where where I left off and then the third one was like it
+06:04 should be show and tell so basically this driving force was um instead of just telling the model with very long
+06:10 prompts I can actually like show you images u you know say like it should look kind of like this and you know we
+06:16 can build off of that so this is where we started with whisk on the consumer side for imagery and flow for everything
+06:22 that's you know high-end film making uh uh exercise yeah really cool and do you
+06:28 imagine whisk and flow will be kind of end consumer products in the kind of you know Google portfolio of you know
+06:35 billion user scale consumer products eventually or how do you is is your playground for kind of testing uh model
+06:41 UX and you know how best to bring this magic to users yeah I think we see it as
+06:47 a spectrum so I think whisk is kind of our play in the you know really consumer space and thinking about like everybody
+06:53 now has this visual language at their fingertips they might not have it necessarily like the most advanced ideas
+06:58 in terms of like storytelling but they can quickly remix each other's things and so we're trying to see what those dynamics look like so I think that's
+07:04 kind of our exploration space with whisk we'll see how it picks up i think a lot of the lessons will probably also
+07:09 graduate in just how we you know deal with user inputs and and treat those
+07:14 across multiple surfaces and then flow is the other side of like you have a vision you know what you want and it's
+07:20 kind of like how do we give you all the all the tools to create you know the the best version of this in video yeah okay
+07:27 super cool um who's the ideal user do you think for for flow and whisk um for
+07:32 for flow I think it's pretty clear for us we're starting with AI filmmakers and the reason is we want to build this kind
+07:38 of a we call it the generative AI camera like you know you're doing world building then you're shooting inside
+07:43 this world how do we actually develop the DSLR camera yeah of of you know generative AI video and then we'll
+07:50 distill kind of the Android version of the pixel you know pixel camera version out of it um whisk is much more consumer
+07:56 there's a wide range of audiences uh you know is it you creating something funny with your friends in a chat is it kind
+08:02 of more you know inside the company you're trying to create some visuals for slides this kind of like all this this
+08:08 whole range that we're exploring we'll see where it lands yeah so cool okay you said AI filmmakers is that a thing are
+08:15 people calling themselves AI film makers now and it does it tend to be existing filmmakers that are you know looking to
+08:21 be more AI savvy or are you seeing you know net new creators come in and try to create feature films i think it's a it's
+08:27 certainly an illde defined term but the reason why I like to say AI filmmakers versus filmmakers is I think if you take
+08:33 the extreme end of the spectrum these are people who need very bespoke tools they have like entire workflows and
+08:38 processes and you need to develop very specific ideas there's one tier under that which maybe I classify as AI
+08:44 filmmaker what potentially is you know previsualizations where you're trying to quickly get like a version out and maybe
+08:50 then you do the full process or people who just don't have the budget so they're like I don't have a $100,000 to
+08:55 you know put my idea out there but now I can at least take a shot at it and so those people are interesting to us because like you can really start from
+09:02 the ground up thinking of like if you had this generative AI camera what would the user flow look like like how would
+09:07 you fit those pieces yeah your um your answer to my initial question of you
+09:12 know the models are the reason that the court of public opinion has flipped so quickly it's been amazing to see VO's
+09:18 progress and and uh VO3 and you know for me I don't I don't know what eval you
+09:24 all look at to look at performance but for me it's the Will Smith spaghetti eating test and like we seem to have
+09:30 passed that so like are we at video AGI or like how do you think about the the quality and the performance and what's ahead there's still some room but it's
+09:38 pretty cool i mean the the GDM team has done really great with V3 it beat I think the joke last week was that it
+09:43 beat V2 in the ranking so it's kind of VO so people were very happy about this good i think it's you know adherance is
+09:50 going up uh yes we don't have the six-finger problem physics are getting pretty good there's still things where
+09:56 like you know if you want to have for example multiple characters and kind of choreograph those characters have like
+10:01 full consistency across multiple scenes like that's where there's still like a lot to come um how do you refine your
+10:07 output can you propagate changes across clips yeah there's going to be still a lot of like improvements but in general
+10:13 yeah a huge step up and the biggest reveal this time was audio so be able to co-generate audio with the video that
+10:19 brings kind of like you know an image is what like a video is more than an image and a video based sound is way more than
+10:24 a regular video um that has opened up like a lot of virality do you think the
+10:31 you know the R&D left to do to make the ideal tool for the craft how much do you think is in the product um and and in
+10:37 the UI and how much do you think is going to need to happen in the model research layer and things like steerability i think it's both but that
+10:44 at least um and you know I'm sure people will have a wide range of opinions but it's almost like we're at a state where
+10:50 everything we imagine in terms of controls I think we have visibility in how they can be built you know you want to have consistency of characters of
+10:57 scenes of location there's like different ideas around this you want to reshoot so that that part I think the part
+11:02 that's hard is still the abstraction of all of it so how do you put this into what are the inputs that you want from
+11:08 users in the context of audio for example where do I define the voice how do I attach the voice to the character
+11:13 how do you find the mannerism how do that propagate so I think there's there's going to be a lot of work in that abstraction layer on top of the
+11:19 models and on top of the controls oh so interesting so you you think most the model kind of R&D is is almost a solved
+11:27 problem is maybe too strong of a word not solved but I think we we know how to do it will happen i think it's pretty
+11:32 clear that it's moving very fast and you know we see a lot of things just like week after week coming up yeah yeah but
+11:37 how we do the connective tissue on top I think is still like very much open and audio is you know one of those new frontiers for example of like should I
+11:44 be talking and driving the audio then changing my voice should I be typing the text how do I do diorization like
+11:50 there's a lot of like what are the inputs how do you give how do you let people mold clay you know with all these
+11:55 models what's your guess for how that future is for how people will mold clay and you know I was talking to a founder
+12:01 he gave me the analogy of you know you want the user to almost be like the way that a director would direct direct the
+12:07 cast and crew of you know change the lighting here like can you say this with a little bit more of an accent there and like almost like natural language the
+12:14 way that a director would direct a cast and crew what do you think is the right way to mold the mold the play i I still
+12:20 think it's show and tell everywhere so I don't think you do everything through text i think it's kind of actually counterintuitive to have to transcribe
+12:26 everything so I think there's a lot of like showing and acting and mimicking or giving a reference just as inspiration
+12:32 in addition to the text yeah um but but the the one thing that's starting to
+12:37 become more clear at least for me is kind of um how do I say it you know the video generation video generation
+12:44 simulation games they're kind of like the same thing in this new world and what that means is basically you're
+12:50 you're kind of world building you're saying this is the stage these are the assets these are how things are supposed to look and then you shoot in it and
+12:56 then you can reshoot and refine and pause and correct something and go back in time and regenerate like I think
+13:02 that's where this is heading and UI is going to be fairly novel you mentioned games i wanted to ask
+13:07 about this it feels to me like you know the existing way that we consume games
+13:13 versus movies is you know is because there's such a tremendous fixed upfront cost of producing a movie um if you
+13:20 imagine that you know in a world where every movie frame is is generated uh not
+13:25 pre-rendered um and that you know entire story arcs can unfold it does feel like the movie and the game worlds start to
+13:33 merge uh how do you think that plays out i think what I mean so for example we
+13:39 have the genie model that's been really interesting so you give an image and you can kind of move your character and the world builds in front of your eyes but
+13:45 what's going to be really interesting is how do you ground it like games are fun because there's like very set constraints movies are good because
+13:51 there's like very small details that matter you know the expression and the moment and the timing and so I think it's all about it's almost about like
+13:57 the constraining of the capabilities towards what we need um so I don't know
+14:03 i think and and I the other thing that strikes me and I think a couple of people on the team is like it's not clear that is we think in terms of these
+14:09 static formats that we have today like an image a video and a game is there something in between almost and what
+14:16 does that mean and kind of you know where is that going to be distributed and interacted with like I can share an
+14:21 image with you but you can instantly turn it into a scene that you're walking into so am I sharing an image or am I
+14:26 sharing an experience um lots of questions I guess and it does feel like you know the story is almost the common
+14:33 thing that makes a game and a movie good so and that's different from an image is just a visual right yeah exactly the
+14:40 setting the constraints the you you define the rules of the game basically and then you let other people enjoy
+14:45 themselves in it really cool um my understanding is that video is still expensive and somewhat slow to generate
+14:53 um is your sense that that's getting solved quickly and like will we have
+14:59 everybody's going to be able to generate you know two-hour films in their you know in their pocket uh in in a couple
+15:05 years time or is your sense that this is a you know longer we got we got a lot of
+15:11 efficiencies that we need to build in order to make this kind of cost practical i think um I mean we've seen
+15:17 in imagery and we've seen in video kind of like the same speed at of cost reductions that we've seen in other places both you know the hardware is
+15:24 getting better i think the efficiency to your point we have like the regular models and then we learn how to distill
+15:29 them to kind of so that they just take less processing to get to whatever you asked for so I'm actually pretty optimistic that you know the costs are
+15:36 just going to keep coming down and the speed is going to increase um kind of align with what we're seeing with other models yeah got it fantastic what do you
+15:43 think is ahead for AI in the in the creative space at least from a Google labs perspective um well we just
+15:50 launched flow so we have a lot of things to do to just like you know deliver on that promise of like keeping you iterating I think that's the first thing
+15:56 refinement of like outputs and like keeping there going there and like insertion editing re-shooting I think is
+16:03 really interesting to us um but I think the holy grail will be some of these new formats and experiences like what does
+16:09 it mean as a creator to share something with you that you can interact with um that's something that we want to explore
+16:15 really cool i want to be able to talk to Will Smith as he's eating the spaghetti maybe he will
+16:21 really cool thank you so much for sharing what you all are doing over in the creative sphere of course okay
+16:26 Jacqueline yes um I would love to talk about computer use and Mariner maybe
+16:32 first off why is why is it called Mariner great question um so we wanted to give the project a name aim that
+16:38 really embodied what we were trying to do with this space which was enable users to just go out and explore enable
+16:44 agents to go out and explore and Mariner is sort of this whimsical open-ended uh name that just sort of embodies the
+16:50 spirit that we have on the team right now i love that you all actually you guys have really good product names
+16:55 across Google Lab these are all really whimsical i'm still trying to get rid of the LM bit on notebook but apart from
+17:01 that silence I'm pretty happy with whisk and flow i think you I think we did decently
+17:07 there we're evolving our approach to naming that's that's what we evolved at IO naming there we go it's a statement
+17:14 improvement yeah oh that's funny um can you say a little bit about how uh Mariner works like is it computer vision
+17:21 model behind the scenes like it just feels like you know pure magic in a box but give us a peek under the hood uh I
+17:27 will take pure magic in a box any day um so the way it works is really leveraging the power of Gemini that's kind of you
+17:34 know it's a it's a action tune model um on a recent version of Gemini but what
+17:40 that means is that we have all of the multimodal capabilities that Gemini gives us so it's able to plan and reason
+17:45 when a user enters in a task we're able to understand that we're able to come up with a plan on how we should actually fulfill that task and then the way it
+17:53 actually works is taking that and understanding the screenshots so this is where the multimodality of the Gemini
+17:58 model really comes in handy um we're able to continue to take screenshots continue down the trajectory of what it
+18:04 is that we're trying to uh achieve from the users task that they gave us um and bring it all together that way yeah got
+18:10 it um super interesting what's the history of the project and and when do you anticipate you'll be rolling it out
+18:16 on mass uh so the project initially started last year um shortly after this
+18:21 time okay actually uh if if we go back at IO last year um we kind of graduated
+18:28 the uh Google AI studio and Gemini API out of the labs team onto um the
+18:34 developer team now and that freed us up to start exploring what we thought was coming next and that happened to be
+18:40 agents that could actually take action on behalf of users not just answer questions or generate um content um so
+18:46 the team started working on it that at that point we started uh grouping up with a bunch of different folks across
+18:52 Google to kind of bring together what we launched in December last year which was project mariner as a chrome extension
+18:58 that took action on your browser um and then we continued to iterate on it based
+19:03 off of a lot of the feedback that we got from the trusted testers of that initial launch so we actually had a large group
+19:08 of trusted testers that we would be talking with regularly and understanding what was working well for them what wasn't um and we took that feedback and
+19:15 iterated on the most recent launch of project mariner which we uh announced last week at Google IO really cool what
+19:21 was some of the feedback and like what do people what what what are the magic sparks um when when people really are
+19:26 like this is a gamechanging product for me yeah great question um so it's funny
+19:32 one of the initial kind of magic moments that everybody had was watching Project Mariner take control of the mouse on the
+19:40 uh browser and being able to click scroll typing text into text boxes actually felt net different when you
+19:46 realized it was an agent doing it um but quickly as you were using the initial version uh the feedback became this is
+19:54 super cool can I please use my browser again like I'd also like to be able to do work uh which makes makes a lot of
+20:01 sense um and so that was one of the the big motivations behind moving towards this idea of users entering a task in
+20:07 the web app that could then uh run in the background like virtual machines okay exactly but one of the key things
+20:14 that we did also try to uh keep true to the initial vision was how can we start
+20:20 to think about bridging the context that a user had on what they were doing in their current uh environment to the task
+20:26 that they were sending to the VM and and Mariner executing in the background um and the way we tried to do that was if
+20:33 you install the companion extension now um it'll actually be able to see all the tabs you have open so when you're giving
+20:39 Project Mariner a task let's say you happen to be looking at a recipe on a recipe site and you're like "Oh wouldn't
+20:44 it be great if I could canonical use case add all these ingredients to my Instacart cart." Um now when you go to
+20:50 Project Mariner you could say "Hey add all the ingredients from this chicken recipe to Instacart and you can select
+20:55 the tab that you have open with that chicken recipe and Mariner will understand that context we'll be able to
+21:00 revisit that site on the VM um and complete the task with the context that you had in your local browser as well."
+21:07 And it's almost super human in a way because as a human I only it's like hard to context switch between browser tabs
+21:13 yes um and and you're able to kind of see everything in the tabs all at once yeah i think a big uh a big net win also
+21:20 was the ability for project mariner to do 10 tasks at once not just one um and
+21:26 that was really a big net unlock um I was using it the other day and uh you know I'd just come back from running an
+21:32 errand and there was a bunch of stuff on my mind that needed to get done and the first thing I did was open up Project
+21:38 Mariner enter in three different tasks for it and then just sent them off to start making progress and I was able to
+21:44 jump back into the document that I happened to be working on and it was this like magic moment of just okay not
+21:50 only is progress being made on these things but I just got it off my mind like I didn't have to keep thinking about it do people want to see the
+21:56 computer mouse moving around first for a while before they're like "Okay I trust that thing to go off and do things for me." If they do they have that
+22:03 opportunity in the current Project Mariner experience you can go into full screen mode you can see the um agent
+22:10 moving around and and clicking on things entering text you could also pause a task at any point and be able to take
+22:16 over it um so having or giving the user the ability to take over and or provide
+22:22 oversight on these tasks is something that we think is still very important when we have an open-ended platform like
+22:28 this or an open-ended experiment like this that uh really lets it up to or leaves it up to the user to um try out
+22:34 different things and what's the user behavior you're seeing like are they like "Please just take the wheel i don't want to deal with it." Or they actually
+22:40 want to you know backseat drive and and watch the agent and make sure it's doing what it's supposed to be doing that's a
+22:45 great uh great question i think it initially watching it is is this fun
+22:50 element but also just it develops a comfort for knowing how the agent is thinking and what it's doing um but one
+22:57 of the pieces of feedback we also got from the initial launch was at the end of a task being complete we just save
+23:04 the entire conversation history and it can get quite long and what users ended up wanting was just a summary of like
+23:10 what did Project Mariner do to complete this task so I can make sure it did it correctly and that really kind of points
+23:16 to the question you're getting at which is I want to just hand the task off to this agent but then I want to be able to just verify what it did at the end of
+23:22 the task not sit there the entire time and watch it yeah yeah so interesting um what do you think are the solved and the
+23:28 unsolved technical problems so far with computer use because computer use still feels like to me we're maybe in the Will
+23:35 Smith you know the spaghetti still sort of disappearing a little bit phase and maybe that's an unfair characterization
+23:40 but I'm curious where you think we are on the the evals and the performance so far for computer use and what are the unsolved problems right now i think
+23:47 that's actually a totally valid comparison um there's a reason we launched this as a research prototype with the experiment label on it right
+23:53 now um I think we've seen really big gains from December to what we launched uh last week uh that said there's
+24:00 definitely still model quality improvements to go i think there's also just application level improvements to
+24:07 go there's more seamlessly being able to have the user uh you know provide context up front which will make the
+24:14 agent more capable of understanding what it is it should be doing um and then there's just more planning and reasoning
+24:20 that we could do like at inference time or at the application layer time um that sort of in addition to the model
+24:26 improvements you know improve system instructions um improve checks and and calls to different models um and then of
+24:32 course right now project mariner entirely completes a task by actuating
+24:38 or taking action on a browser you want an agent that has more skills than that you want an agent that knows when to
+24:44 call the right tools that has memory that's able to um you know take advantage of a lot of the other stuff
+24:50 that we we already see out there so I think it's just integrating a lot of that in and starting to innovate um and
+24:56 and climb on that and then of course right now project mariner it's in the browser um people use computers so you
+25:04 know we call this computer use so there's that entire dimension um as well that uh I think we're going to continue
+25:09 to see innovations in really cool were there any contrarian opinions you all took in in building um Mariner so for
+25:16 example I think some people would have said screenshots it's going to be too slow it's not it's not going to be fast enough you should use the use the
+25:21 website DOM or whatever like any contrarian uh bets you guys made so the
+25:27 reason we went with the screenshot is we wanted to make sure that it was uh a skill that we could develop that could
+25:34 be applied across things that aren't just websites um I think the other
+25:40 aspect of that is like DOM versus accessibility settings or accessibility trees is another um leverage
+25:46 we're kind of betting on this one right now but I would say everything's evolving so we're just willing to take
+25:53 pivots when it if and when it makes sense um yeah makes sense what is it
+25:58 capable of doing it today doing today and um and what is the speed like if I tell it to go you know the canonical go
+26:04 order me a pizza from Domino's um can it do that and how long does it take the speed is definitely an area that we want
+26:10 to keep hill climbing on is what I would say um but it's it's interesting you say that because one of the things that um I
+26:17 so I was recently using uh Mariner to help me complete a task which was come
+26:22 up with Let me take a step back i have a three-year-old at home she is going to be four soon part of that means
+26:29 organizing a birthday party for her and being able to figure out loot bags for kids at a four-year-old's birthday party
+26:35 um this task as you can imagine involves understanding what to put in the loot bag and then actually buying all of
+26:40 those things or like finding links on where to go buy them and I gave Project Mariner this task and it was basically a
+26:47 personal research that turned into an action-taking task which is find me the links and save them
+26:52 and the the thing that really resonated the most with me on that one is as it was performing this task first it you
+26:58 know did a search for good ideas to go in a loot bag and then as it like just remembered those five items that's
+27:05 something any of us could do like that itself wasn't impressive but the first one was I think temporary tattoos so then it started looking for temporary
+27:11 tattoos it found a great link for it instead of having to copy that link and paste it in a doc somewhere else it could just remember it it could remember
+27:17 this like massive URL and then it moved on to the next one and then at the end of these five items it just gave me all
+27:23 five URLs that it had been able to inherently store so when we talk about speed and efficiency I think there's two
+27:29 dimensions one is just the model calls and the you know taking action and like how do we improve it with different tool
+27:34 use um but then the other one is how can agents just do things in a different way that are inherently faster than the way
+27:41 we would do things and I think we're going to continue to see improvements on both dimensions yeah I wish I could
+27:47 remember five URLs oh gosh okay good point um let's see uh what is
+27:54 what do you think is ahead for Mariner where do you see evolving from here i think there's a couple things um number one we had a bunch of announcements last
+28:01 week around Project Mariner like capabilities making their way into different Google products and I think
+28:07 that this is a kind of core capability that you'll start to see emerge everywhere from the Gemini app to AI
+28:13 mode in uh search um so I definitely see a lot more coming to Google products
+28:18 with the stuff that we're doing right now in Project Mariner and kind of paving that path forward and then I think for Project Mariner itself um I
+28:25 actually like to think of things in three categories uh there's the agent itself i think that's going to get
+28:31 smarter that's going to get better that's a better model that's tool use that's memory that's context then there's the environment we talked about
+28:38 how in December it operated on your local desktop in your Chrome browser so that's in the foreground then we moved
+28:44 towards this idea of project mariner operating in virtual machines which meant that it's now operating on VMs i
+28:50 think there's this middle layer which is an agent that can still operate on your device but in the background and there's a bunch of reasons and types of tasks
+28:57 where that becomes a really important kind of way uh for the agent to operate and then of course there's all the other
+29:02 devices um but really what you want is a capable agent that's able to operate in a way that is omnipresent across all
+29:09 your devices locally on VMs um and then the last one is the ecosystem part which is where you start to get into the agent
+29:15 to agent interaction and like how does your agent interact with um all of the uh things that exist outside of the its
+29:23 own world essentially yeah so cool um I think the canonical examples for
+29:29 computer use are you know book me a flight or order me a pizza is that your sense of what computer use agents will
+29:35 actually be really good for or like what do you think i'm sure you spent a lot of time thinking about like what applications will actually be the the
+29:41 bullseye here um where how do you think that shapes out so I think we default to those because they're just easy to
+29:47 understand the like travel planner I mean literally it's a travel agent it couldn't be more analogous when you
+29:53 think of agents right now uh but no the way I like to think about it is um on a spectrum uh where you have tasks that
+29:60 are sort of in what I would consider do it with me where you have your agent alongside and you can easily offload
+30:06 certain tasks to it but it's really working in in unison with you and then
+30:11 you have these like do it for me tasks which is hey I just want to give my agent a bunch of stuff to go do and it
+30:17 will run it in the background um I think part of the reason we see these tasks being used is twofold one um they're
+30:25 just incredibly easy to understand and everybody kind of gets what that use case is and they're usually starting
+30:33 from scratch like there's no context you need up front you can just send an agent out to go do it and the demo as a result
+30:40 is pretty easy to put together yeah um and then the other one is just where the capabilities are at today and so as
+30:46 agents get more capable and you start to have more of these realizations on what they are actually um able to do you'll
+30:52 see much more advanced use cases or much more complex use cases and that also requires a user having more trust that
+30:58 they can give to the agent um so I think that that will evolve over time and we'll see people come up with even more
+31:04 interesting use cases that they're willing to give an agent go to do on their behalf yeah totally it's also
+31:10 going to require I guess it's going to inspire I think a shift in business model right
+31:16 because like if if you have a bunch of agents going off and browsing you know trip planning for example they're not
+31:22 necessarily looking at the ads and you know the first things that show up and so it is I think it's going to create
+31:28 some business model evolution as well i agree i think there's a lot of evolution
+31:34 that's going to happen um across business models across how websites work
+31:40 um across how you know users will always want to use the internet going forward
+31:45 like there's a lot of joy I think we all get in it from content creation to consumption um but there's also a lot of
+31:52 other tasks that uh there's it's just ripe for disruption in a lot of ways yeah yeah like I mean I'm thinking like
+31:58 humans are suboptimal in some ways we we see the ad we get excited distracted and you know I go and buy the dress um and
+32:05 my agent maybe it's maybe I can instruct it to ignore the ads maybe it actually knows like it's going to find the best
+32:11 content regardless of what's what's showing up on the page so it's it's kind of interesting to think about how that
+32:16 future plays out for you know as agents do more of our browsing um it's super interesting i will say that the dress
+32:22 that you know maybe you got distracted i always get distracted by things too and end up purchasing um stuff that gets
+32:28 sent my way but I'm always happy with it by the time I do end up purchasing it so I think that there's like new
+32:34 opportunities to think about how do you actually involve agents in this new sort of business model ecosystem and hence
+32:41 that third bucket of like there's going to be a lot of evolution happening in that space and I think that that's where we need to evolve as an entire ecosystem
+32:48 and it's not just like one player that's going to say this is how it's done um so it's been interesting just uh talking to
+32:53 different companies and different people who are also thinking in that space right now yeah really cool i mean I do
+32:59 think also just as as a user as well you know I often don't buy things on the
+33:04 internet because it's such a pain oh I've definitely dropped off oh man I cannot I I can't navigate this thing
+33:10 either I don't understand it that happens quite a lot or it's just like I've just not got time that happens as
+33:15 well or I'm just I can't be I can't be bothered you know yeah um maybe it's just me but I'm not a fan of shopping
+33:22 let's put it that way in the real world and online um but I'm a fan in what I get you know I'm a fan in the outcome
+33:28 and so I don't know i kind of feel like I I might do more I would probably do more online shopping i think you know if
+33:36 I if I didn't have that barrier of actually having to do the shopping bit i don't know that that would be me though no I agree i mean what's what what's
+33:42 really interesting is uh I don't know about you there's certain stores that I'll go on to and I'll just like
+33:48 accumulate stuff in my cart and I won't want to like pull the trigger until a little bit later on when I've had a
+33:54 chance to think about it um but then I end up with a bunch of like half-built carts across a bunch of different
+33:59 websites and part of me also wonders like is there a world where my agent is that universal cart essentially where
+34:06 I'm like add all this stuff to it or like create this aggregate area of all the items that I might be interested in
+34:12 buying and it can be across any site at this point because the agent represents me um and it can remember which sites to
+34:17 go on and then when I'm ready it's sort of like okay one click like make this entire purchase basically and it can go
+34:23 and and check out on all of the different sites or all the different stores um so that'll be yeah that'll be
+34:28 an interesting area to think about yeah okay what I just heard from you guys is e-commerce conversion is about to get about to skyrocket then i mean it would
+34:35 on my computer it will go up that's all I'm saying i don't know about anyone else yeah also diversity as well you
+34:40 know like I go to the same old sites right but uh I would love suggestions
+34:46 you know yeah so yeah it's like once you've kind of democratized computer use then the laziness of humans to get
+34:52 through checkout is no longer the determining factor of which e-commerce companies will do well it's just like the best product wins it's um so
+34:60 interesting okay cool thank you for sharing you're welcome okay Simon last
+35:06 notebook notebook LM or notebook we'll go with notebook LM we're still notebook i think it's it's been so long now that
+35:12 it's definitely notebook LM there was a period where we were like "Okay is now the time." Yeah you know but but I think
+35:18 we've gone through that multiple hockey stick moments which we can talk about and um yeah it's going to be hard to
+35:24 remove it i like it though i mean you know maybe um maybe every product that
+35:29 is kind of like has an acronym or some weird letters after it and there are a couple of them in the AI space regrets
+35:35 that but at the same time they become part of the team and the identity and totally yeah it's nice i like it i love
+35:40 that okay okay so Notebook LM was you know one of the biggest one of Google's biggest viral hits uh last year or last
+35:48 year it it went viral last year yeah but it been you know the team have been
+35:53 building it for a while before we it took off so totally yeah uh tell me about how it's evolved in the last year
+35:60 yeah yeah well um so firstly the viral moment you know so um my way into
+36:06 Notebook LM was through audio overviews um so me and the team had a kind of we
+36:11 were also exploring the future of content but from a different angle yeah I think and um you know notebook was the
+36:17 the perfect balance of kind of user control but also um the kind of the
+36:24 power of the technology and you know our hypothesis was that there was an opportunity for um personal content so
+36:30 not content that is for everybody actually content that's for um an audience of one maybe two maybe three
+36:37 small group maximum um and that was kind of you know how we how we shaped the product we didn't think it was going to
+36:43 you know looking at the notebook user base back then we didn't we thought that it was a great place to you know kind of
+36:49 like test PMF just kind of iterate on the product but we didn't we were totally unprepared for the massive
+36:55 success of of audio overviews and then through that notebook as well so um it
+37:02 was honestly the first the first couple of months was really just kind of hanging on for dear life um firstly it
+37:08 was making sure that the TPUs don't fully melt as riser i think had a had a gif out back then um but but there was
+37:15 there was also just a lot of a lot of iterations and fixing things and improving things and um you know that
+37:21 that was really the first couple of months i think since since the start of this year maybe we've managed to take stock so at the end of last year we
+37:27 launched the the join mode the ability to join in a podcast and or an audio overview I should say and talk with the
+37:33 hosts and ask questions and all this kind of stuff um but at the start of the year we kind of took stock and we've
+37:39 really been thinking about you know what what is a notebook for the notebook users how are notebook users really
+37:45 leaning into notebooks once they've come in the front door through audio overviews um and we've we've started to think about um and Jacine you kind of
+37:52 touched on this I think you know the the criticality of context in in really enabling these AI systems to be
+37:59 genuinely useful for you um and we found that a lot of users when they're using notebook they use them for these kind of
+38:06 more longer running almost like projects that they have so either their hobbies or if they're in the world of work these
+38:12 these um they they can be ongoing projects or they can be projects with a goal you know like I've got to prepare
+38:19 for a presentation or something like that um and so a lot of what we've been really doing is is retooling you know
+38:25 how we look at notebook and also you know building a strategy as well that leans more into I think those more sort
+38:32 of longer running opportunities that that we see in in the in the notebook user data um of course we've we've done
+38:39 a whole bunch of kind of improvements too so we've just launched um the mobile applications finally so they came out um
+38:46 last Monday um and we also launched international audio overviews as well which was kind of the end it was the end
+38:53 of a long road honestly of upgrading the underlying AI infrastructure and models
+38:59 um away from the very first almost like research grade model that we used for the initial launch to you know native
+39:06 Gemini audio so what you hear now um in the international audio overviews at the very least is native Gemini audio um and
+39:13 that was a big push for many teams ac across labs and also GDM yeah super cool
+39:18 um it feels like audio overview was the the like almost the viral hook um and
+39:24 you guys have been bu building out a lot in almost like the rag UI um and just
+39:30 imagine what that workspace looks like what do you think the actual just audio
+39:35 overview podcast thing becomes and actually I'm curious how you even ended up on the shape of two podcast hosts
+39:41 talking to each other it's just like it's such an engaging format i'm curious how you even landed on that and you know
+39:47 I feel like it's only in its infancy still in terms of I would love you know podcast every morning to pipe me up for
+39:53 my day and things like that and so um how much of your time is thinking about Notebook the kind of rag workspace
+39:60 environment for lack of a better word versus notebook the the kill the podcast killer you know the training data is
+40:05 going to be built on notebook in the future yeah yeah yeah well I hope not um but maybe it can help so the way that
+40:12 we're starting to increasingly look at notebooks um is they're comprised of um kind of three they give you sort of like
+40:18 three superpowers um so one of them is they they help you really accumulate information you know across over time um
+40:26 and that's you know there's a lot of amazing you know underlying database technologies that we apply um that I
+40:33 think you know lean on firstparty Google technologies in a pretty unique way um
+40:38 the second is they bundle in intelligence and when we launched last year um uh we used the old Gemini 1.5
+40:46 Pro model um back at that time but obviously now we've got thinking models and so on um but the third thing is is
+40:53 this ability to um for content and information to be adaptive to your
+40:58 situation and so you know podcasts or audio overviews a conversation it's one
+41:05 form that an the information might take but you can imagine many other forms that that information or knowledge might
+41:11 take as well so you might imagine um it coming at you in the form of a comic book or maybe a short movie or maybe a
+41:19 mind map which we've also launched but you can imagine many other types of of media that fit the right circumstance
+41:25 and form and function um for the moment uh for you to understand information to
+41:31 be able to analyze it make decisions with it kind of do something with it um so that's kind of that's the mindset
+41:37 that I think we have when we're thinking about um uh the different uh you might
+41:42 hear us talk about transforming information from one state to another i think that's a that's a it's a fine word
+41:48 it's a little bit technical to be honest it's more like adapting to you and fitting you i think that's really what we're going for um but in terms of just
+41:56 going back to your actual question around audio overviews and you know where it's going um there is a huge
+42:03 amount I think of of room left in that in that technology so you know I enjoy
+42:09 audio overviews and I use them a fair amount but I also you know every now and
+42:14 then I'll be like "That's weird." You know why did they say that or they've kind of lost the plot there i didn't
+42:20 quite get the right narrative it's it sometimes it it like the uncanny valley or the illusion is broken you know when
+42:26 you're when you're listening to them um and you know while it might seem like there's a small amount of work we might
+42:31 need to do to to kind of to to fix that last step there's actually a ton of work
+42:36 that we've got to do you know and uh and so there's a lot of effort being placed into all of the various components that
+42:43 you'll need to make the the experience feel like something that you know where you suspend your disbelief u more
+42:49 completely um and alongside that you know there are many other different show types um you one of we we've kind of had
+42:56 one show type for a bit too long I think actually um and we're bringing more out
+43:01 um so we're actually working on some really cool things a lot of them inspired by users honestly so one of the things that we saw users do u right back
+43:09 at the start but you can you keep on seeing it is um users putting in their LinkedIn you know they're putting in
+43:15 their LinkedIn well why well number one it's kind of fun to like hear people talk about you but a lot of users are
+43:20 using it to get feedback you know like to to kind of I to understand from from
+43:26 another person's perspective who they may not have access to you know feedback is truly a gift like real feedback is
+43:31 hard to find you know um so you know how would how would somebody else look at me
+43:36 how would somebody else talk about my strengths and how might somebody else talk about areas to improve you know
+43:42 this is something that we see users already using audio overviews to to kind
+43:47 of access that sort of content or sort of information we think we can make that easier for people you know so a lot of a
+43:54 lot of what we're thinking about now are different show types that lean into some of the the more viral successes that
+43:59 we've seen our users you know explore online yeah um and also think about you know brand new formats as well that I
+44:05 think are going to be fun okay so we're going to have training data the the comic the comic strip um I'm not saying
+44:11 we're definitely going to have it but um but I mean it's um I think I think um
+44:17 not everything has a story you know um and so you applying um different
+44:24 adaptations um will almost be sort of context dependent I think but often times it does help you know so one of
+44:30 the things that we were looking at the other day was um we were looking at a 150page uh PhD dissertation on um it was
+44:38 invasive um invasive wolves I think in some part of Europe um and um yeah you
+44:45 could have looked at a mind map you could have looked you could have maybe listened to an audio overview if you had like 10 15 minutes to spare but actually
+44:52 getting a kind of a a comic book rendition of of that PhD was really
+44:57 helpful just to kind of understand the overall narrative within it um so you
+45:02 know we're still working on things like that um but I think there's a lot of there's a lot of opportunity there and
+45:08 of course you know comic books are very similar to storyboards and that intersecting exactly what Thomas is
+45:14 doing too as well so yeah there's a lot of there's a lot of interesting ways that I think Lab's projects intersect
+45:19 and we'll continue to explore them yeah so you create a hero's journey comic book of somebody's LinkedIn uh career
+45:26 arc i mean for an audience of one person and one person only that's probably going to be the most awesome movie that
+45:32 we'll ever ever have seen so maybe yeah maybe yeah yeah that's awesome really cool where do you see the notebook going
+45:38 from here yeah well like I said um we're we're really I think our focus is aside
+45:43 from a whole bunch of different adaptations we're really thinking about how we can be more useful to our users
+45:49 over their more longer running projects um and so both in the world of the
+45:54 knowledge worker but also in the world of students these are our kind of like core users I think um um the project is
+46:01 really the the the an area where those users um both need the most assistance
+46:08 but it's also where um it's also the point of of highest value I think for them right so if you're in the world of
+46:14 work the project is where value accumulates unit of work yeah right it's a real unit of work or we actually call
+46:21 them units of knowledge but it's a great way of putting it um and the same for a student as well you know the project um
+46:27 if if it's a project with a goal passing a test that's a big deal you know or if it's an ongoing lifelong learning thing
+46:33 that's also really important as well so I think really focusing on on on use cases in those domains is something
+46:39 we're we're thinking a lot about i'll say the other thing is you know I think I think one of the things I'm personally
+46:45 very excited about you know I've been in the consumer product space for many many years um and one of the I guess one of
+46:53 the things that we did at Google when we went kind of mobile first in the mobile first era is we moved a lot of our
+46:58 desktop products to mobile and if you look at those mobile products many of them are the desktop products shrunk
+47:04 down to a small screen yep and that's okay you know and I think because we were one of the first because we we
+47:10 built Android and a lot of our big products basically got mobileified at that point we we find it hard to change
+47:17 at that point forwards but I've always been really interested in thinking about if you have a desktop experience what is
+47:23 a companion mobile experience that doesn't have to just be a carbon copy of
+47:28 the desktop experience that maybe leverages the the form factor the sensors you know the the actual the fact
+47:35 that it's on with you all at all times to deliver an additive experience on top
+47:41 of the desktop experience so you know we we've just launched the the mobile experience after a fair amount of time
+47:47 in development it's fair to say um but what I'm really most excited about there is the opportunity to actually iterate
+47:52 on that kind of novel mobile experience um going forward like for example wouldn't it be cool if I was you know
+47:59 maybe I'm in a discussion with some amazing really smart people um and I've popped notebook down and I've opened a
+48:05 voice it's native voice recorder and it's just able to to record the conversation for me and then I can
+48:11 transform that you know at a later date and accumulate them and all this kind of stuff you know that's the thing that
+48:17 it's probably going to be weird if I open my laptop and push record on my laptop but for the mobile device it's
+48:22 the perfect opportunity totally really cool thank you for sharing yeah no worries okay we're gonna close it out
+48:28 with some predictions on on AI as a whole uh please jump in hot takes welcome um let's see let's start with
+48:35 what are your favorite Google Labs projects that we didn't talk about today like what what is under what is the what
+48:41 are the gems right now that you're most excited about the unreleased Google projects that we're not allowed to talk about not the unreleased ones but you
+48:47 guys you guys just announced like likeif 50 things there there has to be others beyond the three we talked about today
+48:52 yeah I have one i think the which is kind of still in this like video and image space but the I think the virtual
+48:58 try on uh stuff that we presented like there's a lot of exploration and I think that one to me is really nice because I
+49:04 think it meets a real direct user need it's a strength of Google obviously we know we have all the inventory and we
+49:10 know how to connect this and it's just so fun to just see things on so I'm very excited about that one i think this has like a a that's my favorite as well
+49:16 that's so funny okay i think that one's a good one stitch I think is really cool to be able to just talk to uh the
+49:23 product and describe what design you want and have it actually come out with that front-end design um I'd been using
+49:28 it a little in dog food before it was launched and so it's just I want to spend more time using it now that it's
+49:35 uh it's actually live really cool what about you uh well mine is going to be
+49:40 Stitch so so I'm going to have to think two votes for Stitch one vote for shopping i'm with you two votes for
+49:47 shopping yeah there we go there we go um what I guess what areas do you think will be hottest in the application space
+49:54 for AI broadly in 2025 like I think coding was you know maybe the breakout application of the last 12 months what
+49:60 do you think will be the breakout application in the next 12 months video i Yeah I think there's like something
+50:05 around like these remixable content you know you generate something I take your
+50:10 thing I just riff off of it there's something around this that I think is going to pop up somewhere i hope it's us
+50:16 uh but that that part feels really interesting it's kind of feel like you know whiskey is heading a bit that way v obviously can power a lot of this in
+50:22 video um I think that's going to be something this year as you look back at you know past predictions of what you
+50:28 thought was going to be interesting in AI where have you gotten been really right and where have you been really wrong we were just we know let's say
+50:34 where we're really wrong all together three two one timing okay say more single time
+50:42 um I think there's been several examples where we've definitely felt like we were on to something and we were on to
+50:48 something we were just too early into the space and so it's been fun to see like projects kind of go on pause or you
+50:55 know stop for a little bit and then some of them are starting to even come back around again at this point and so
+51:01 sometimes we just were a little a little too early um but it just gives us a jump start when the models and the
+51:06 capabilities are ready good problem to have yeah what do you think you've been really right on and like sticking to your convictions on i think this at
+51:13 least for me in my space like the show and tell piece this idea that like you shouldn't you shouldn't ask users to
+51:19 kind of write two pages of text to describe for example an image like the idea is like you should just be able to show and tell like you would do a friend
+51:25 or an artist that's working with you um I think that has stuck and it's kind of moving people away from prompting and
+51:31 towards kind of instructing and relying on the intelligence that lives behind i think that one that one I'm sticking
+51:37 with my guns and I think you're there to stay yeah i mean this is probably obvious at this point but when we all
+51:44 started in labs um there was no Google LLM API google didn't have a functional
+51:52 instruction language model or anything like that um and believe it or not back
+51:57 then in fact I think the the general consensus was that these were not really things that um are easy to build a
+52:05 business around you know because of their cost um and you know I think one of the things that we've all done actually is we we've kind of stuck with
+52:11 the technology and um now it's obvious right um but in the early days it wasn't it certainly was not obvious totally so
+52:18 yeah and we got that bit of timing right yeah yeah yeah inference costs uh just
+52:24 riding that curve and just capabilities up cost down and what what will you build assuming that those curves
+52:30 continue yeah exactly in fact when we joined one of the transitions is right to think inside labs that Josh started
+52:36 actually um and a lot of the docs that we'd write were around well what happens in two years you know and of course yeah
+52:42 that that curve was something that I think inspired a lot of us yeah yeah fantastic thank you all so much for
+52:48 joining to share what you're doing across the creative sphere the you know um computer use sphere and the what what
+52:55 do I call the notebook sphere the podcast killer knowledge
+53:00 let's not say podcast killer um but yeah we can say knowledge uh knowledge
+53:05 creation transformation um space it's just it's really really cool what you all are building and you guys have such
+53:11 a cool job getting to kind of cook in the little test kitchen of Google and thank you for giving a preview of some
+53:16 of the stuff that's uh coming down the pipeline thanks for having us thank you
+53:21 [Music]
+53:28 [Music]
+53:38 [Music]

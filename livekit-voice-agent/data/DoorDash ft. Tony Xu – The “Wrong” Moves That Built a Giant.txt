@@ -1,0 +1,1287 @@
+00:01 besides just the constant Financial
+00:03 stress we had people lose confidence in
+00:06 the company right even internally about
+00:08 maybe a quarter or 20 to 25% of the
+00:10 company voluntarily left over those 3
+00:13 years we were presented with an
+00:14 opportunity to take a large War chest I
+00:18 thought look it's not a guarantee but we
+00:21 get to put aside any concerns of ever
+00:23 having to raise Capital again and we get
+00:25 to just step on the gas and take what we
+00:29 already know is the best product and
+00:30 just brand
+00:33 everywhere welcome to Crucible moments a
+00:36 podcast about the critical Crossroads
+00:39 and inflection points that shaped some
+00:40 of the world's most remarkable companies
+00:43 I'm your host and the managing partner
+00:45 of sequa Capital rof
+00:47 bua Door Dash is synonymous with
+00:50 delivery but this was far from
+00:53 inevitable founded in 2013 as a category
+00:57 Underdog today door Dash operates in
+00:59 over 30 countries with nearly $10
+01:01 billion in annual revenue it has
+01:04 transformed into the global leader in on
+01:07 demand delivery expanding to groceries
+01:09 household items pet food and much more
+01:13 in today's episode we'll look at how
+01:14 door Dash broke into the competitive
+01:16 restaurant delivery category with a
+01:19 non-consensus strategy how they survived
+01:21 3 years of cash scarcity that nearly put
+01:24 them out of business and how difficult
+01:26 decisions made during the pandemic
+01:28 helped propel them to category
+01:30 leadership on a global
+01:36 scale it was the fall of 2012 and
+01:40 actually the premise that got all of us
+01:42 together was really how do we help small
+01:44 businesses my name is Tony Shu I'm the
+01:47 founder and CEO of door Das door das's
+01:50 Journey began at Stanford University
+01:52 Founders Tony Shu Stanley Tang Andy Fang
+01:56 and Evan Moore met in an
+01:57 entrepreneurship class at the Stanford
+01:59 Graduate School business called startup
+02:02 garage the forsome decided to partner on
+02:05 a class project all of us have our own
+02:07 stories and terms of why we have an
+02:09 affinity towards small businesses mine
+02:12 happens to be personal in that I have a
+02:14 connection to a small business that my
+02:16 mom ran I grew up in Illinois and one of
+02:19 the ways in which I hung out with Mom uh
+02:22 as a child was actually working
+02:24 alongside her inside of a Chinese
+02:25 restaurant where she worked in champagne
+02:28 and so I've always had an affinity
+02:29 towards you know how do you help these
+02:32 underdogs who you know don't really view
+02:34 their businesses as a profession they
+02:37 view it really as a lifestyle and how do
+02:38 you help them be
+02:41 successful the idea for door Dash
+02:44 actually didn't come right away I mean
+02:46 we spoke with 3 or 400 small businesses
+02:49 across pretty much every category retail
+02:52 restaurants services and you know the
+02:56 main question we asked them was you know
+02:58 tell us about all of the activities that
+03:00 you do every day I think that it was a
+03:02 lot easier to see a specific problem in
+03:05 plain sight than to you know try our
+03:07 best interpret a generic answer of what
+03:10 might be a challenge for them and so one
+03:12 of the small business owners her name
+03:14 was Khloe she ran a macaroon store uh in
+03:17 paloalto she was a oneperson shop she
+03:20 showed us a booklet of delivery orders
+03:22 that she had refused small businesses
+03:25 don't have the luxury of Turning Away
+03:27 business I would say most people don't
+03:29 have the luxury of tur Away business but
+03:30 for small businesses who on average have
+03:33 17 18 days of cash you really have no
+03:36 luxury to be able to turn away business
+03:38 and so Khloe was turning away you know
+03:41 dozens of orders per week which was very
+03:43 strange and so when we talked to her
+03:46 about it she let us know that they all
+03:47 happened to be delivery orders and as a
+03:49 onep person operation there was no way
+03:51 that she could fulfill those orders and
+03:54 it just occurred to us that it was 2012
+03:57 2013 and it's surprising that she would
+04:00 have to do this on her own you know
+04:02 delivery Is Not A New Concept it's
+04:04 probably been around for hundreds of
+04:06 years yet in 2012 2013 the vast majority
+04:10 of restaurants and certainly the vast
+04:12 majority of retailers did not offer
+04:14 delivery prior to Door Dash there were
+04:17 restaurants that delivered on their own
+04:19 and you would get menus from them and
+04:22 they would be you know placed in the
+04:24 kitchen or you would put them on a
+04:26 magnet on your fridge and you would
+04:29 called all the different restaurants
+04:31 individually to order food and that was
+04:34 generally the way you order delivery I'm
+04:37 Alfred Lynn I am a partner at Sequoia
+04:39 Capital there was a company called
+04:41 GrubHub and another called seamless and
+04:43 they became an order taking platform for
+04:47 some of those restaurants and so they
+04:49 took the order on the web and then they
+04:50 routed it to the restaurant the
+04:52 restaurant still fulfilled the order by
+04:54 making the food and then by delivering
+04:56 it while that was a better experience
+04:59 it's just so limited to the restaurants
+05:01 that would be willing to do their own
+05:03 delivery and door Dash recognized that
+05:06 restaurants wanted to offer delivery but
+05:09 they couldn't afford the delivery staff
+05:12 the founders were accepted to y
+05:13 combinator in the summer of 2013 their
+05:16 pitch was food delivery for every
+05:18 restaurant delivered to customers in
+05:20 under 45 minutes they also had a larger
+05:23 Vision to One Day become the FedEx of
+05:25 local delivering not just food but any
+05:28 item to people's doors but but on demo
+05:30 day when do Dash presented to a room of
+05:32 investors most was
+05:35 skeptical we decided to pass on the seed
+05:38 because we weren't sure whether door
+05:39 Dash would be a mainstream service or
+05:42 whether it was only a service for
+05:43 college students financed by their
+05:45 parents yeah D Das was not the fan
+05:48 favorite at the YC demo day for summer
+05:51 2013 batch I think there were a lot of
+05:54 Skeptics around whether or not delivery
+05:58 in of itself would ever be economical or
+06:01 sustainable as an activity and you know
+06:04 let alone a business I think there were
+06:06 a lot of questions about possible
+06:08 competitive Dynamics heading into the
+06:10 future and D Das you know given that the
+06:13 fact that the four Founders were
+06:15 firsttime founders with only 12 weeks of
+06:18 demonstrable traction didn't really have
+06:21 that much to sway investors in an
+06:25 overwhelming way to be a fan favorite
+06:27 and so we were probably bottom half in
+06:29 in the batch I think what was most
+06:31 important for the four of us at the time
+06:34 and certainly what got us through any
+06:35 initial bouts of rejection was the fact
+06:38 that we really enjoyed working together
+06:40 and we felt first and foremost we owed
+06:42 it to ourselves to answer the question
+06:44 you know is this worth our time is this
+06:46 a product that customers would be
+06:48 willing to pay for would restaurant
+06:50 tours be willing to partner with us and
+06:51 pay us a commission for that partnership
+06:53 and incremental business and finally you
+06:56 know the Dashers the drivers on our
+06:58 Network would we be able to partner with
+07:00 them and actually afford payment that
+07:04 they would find attractive and so those
+07:06 were the questions that really we were
+07:09 pretty maniacally focused on
+07:12 answering despite initial rejection from
+07:15 investors the founders refused to give
+07:18 up our first crisis as a company came in
+07:22 September of 2013 it was the first home
+07:25 football game at Stanford and we had uh
+07:29 very little money I mean days maybe a
+07:31 couple weeks of Runway left in terms of
+07:33 our cash balance and the football game
+07:36 had the effect of just giving door Das a
+07:39 lot of orders now a lot at the time was
+07:42 like 100 orders or something like that
+07:44 and it was certainly a volume that we
+07:46 were not prepared to handle and I
+07:48 remember pretty much anything that could
+07:50 have gone wrong went wrong every single
+07:52 order was late probably by an average of
+07:55 at least 45 minutes some orders were as
+07:58 late as over an hour it was one of the
+08:00 worst days of of certainly the first 100
+08:03 days of of the company's life at the
+08:06 time everyone at the company were the
+08:08 only ones doing deliveries and so we
+08:10 fulfilled all the orders and it was late
+08:13 into the evening and the founders came
+08:15 together and said look if we wanted to
+08:17 do what's right by customers the refund
+08:20 would cost something north of 40% of our
+08:22 bank account and when you have days of
+08:24 Runway that decision seems a bit more
+08:27 consequential
+08:30 it took us maybe 15 seconds to hit the
+08:33 refund button and on top of that we
+08:35 actually stayed up all night and baked
+08:37 cookies that we all delivered before
+08:40 5:00 a.m. before the customers who uh we
+08:42 wronged would wake up and and and
+08:44 hopefully um make right by them to us it
+08:48 was we had a vision of what high
+08:50 standards were we'd rather die trying to
+08:53 achieve Excellence than live to be
+08:56 mediocre I'm very proud that you know
+08:58 that story really became became the
+09:00 centerpiece of what inspired the company
+09:03 value of being customer obsessed not
+09:05 competitor
+09:07 focused there are many things that stood
+09:09 out about Tony and Stanley and Andy they
+09:13 they were outliers they were a group of
+09:16 people that had very sharp insights into
+09:20 the the restaurant industry and in
+09:23 particular Tony had an incredible amount
+09:26 of founder market fit for this business
+09:28 yeah we we passed on the seed but I just
+09:31 there was just a level of effervescence
+09:33 about Tony that I really um liked and so
+09:37 I continue to follow him for a period of
+09:40 time uh and we met with them uh multiple
+09:43 times but the one meeting that I
+09:45 remember most was sitting down with them
+09:47 at dinner at a Chinese restaurant I I
+09:50 believe it was Chef CH in palto he you
+09:54 know in this dinner conversation I sort
+09:56 of was able to see this he thought about
+09:58 things that are very h strategic level
+10:01 and then would break down a an idea or a
+10:04 problem down to smaller and smaller and
+10:07 smaller problems or smaller and smaller
+10:10 ideas that you can go execute on while
+10:12 he didn't use the word at the dinner
+10:14 operating at the lowest level of detail
+10:17 that's what he was doing when he and I
+10:19 were talking at that at that dinner and
+10:23 that was just very impressive to me that
+10:25 he could take a highlevel idea or
+10:27 problem and break it all the way down to
+10:28 its lowest level s and just iterate that
+10:31 again and again and again right after
+10:33 that dinner that I talked about I I
+10:35 immediately brought them in they had
+10:38 also been meeting with other uh firms
+10:41 and their series a was just easier to
+10:43 raise partly because the business was
+10:45 growing and it was it was growing nicely
+10:48 I'm not sure it was easy for me to
+10:50 convince my partners but I think they
+10:52 got tired of me speaking about how I
+10:54 grew up in New York City and in New York
+10:56 City restaurants delivered grocery
+10:58 stores delivered cleaners delivered and
+11:01 why was the rest of the country so
+11:03 backwards that a service like door Das
+11:05 should exist for the rest of the country
+11:07 I think I just wore my partners
+11:10 down in May 2014 sequa LED door das's
+11:14 series a
+11:16 financing you know for the four of us
+11:19 when we were starting door Dash we
+11:21 always had the same vision which was to
+11:23 build this last mile FedEx or the FedEx
+11:26 of locals is what I believe I pitched
+11:29 over 10 years ago at this point and
+11:31 while that Vision has always remained
+11:33 the same it wasn't obvious exactly how
+11:35 we'd get
+11:36 there food delivery is a notoriously
+11:39 difficult business on top of providing
+11:41 an experience where food arrives on time
+11:44 and at the right temperature margins are
+11:46 Raaz thin for a food delivery service to
+11:49 succeed it needs enormous order volume
+11:51 because profitability requires such
+11:53 scale the category can only sustain a
+11:56 few winners door Dash faced an early
+11:59 Crucible moment how to break into the
+12:01 delivery category and differentiate
+12:03 itself from competitors which by this
+12:06 point included Postmates caviar and more
+12:09 Tony and his co-founders needed to
+12:10 develop a strategy for quickly gaining
+12:12 market share and finding product Market
+12:17 fit for companies just getting started
+12:21 how you set them up does matter if you
+12:23 get a right doubling down can carry you
+12:27 really really far and if you get a wrong
+12:30 it can be really painful and take a
+12:31 really long time to fix and in the
+12:34 earliest days we were pretty clear eyed
+12:37 in the sense that the most important
+12:39 thing was to find product Market fit and
+12:41 from a business perspective you know in
+12:43 terms of making deliveries sustainable
+12:45 and economic you need high density to
+12:49 get high density you need to go to a
+12:51 place like New York City but this missed
+12:54 in my opinion completely the perspective
+12:56 from the customer you know in New York
+12:57 City well we can just walk down the
+12:59 stairs or take the elevator down and get
+13:01 whatever we wanted within minutes
+13:04 however that's not true anywhere outside
+13:06 of the city center and so to me if there
+13:09 were ever a place to create a company
+13:11 from scratch or create a category from
+13:14 scratch it would be outside of the city
+13:15 centers I was initially somewhat
+13:19 skeptical about the suburb strategy this
+13:22 was not obvious everyone else um focused
+13:25 on large cities believing if you won the
+13:27 cities you could have a decent business
+13:29 is look I mean a lot of times
+13:31 conventional wisdom is called
+13:33 conventional wisdom because it's correct
+13:35 and we had studied actually the case
+13:38 studies of many companies that had come
+13:40 before us you know web van Cosmo lots of
+13:44 great companies who tried really hard to
+13:46 make similar ideas work in a previous
+13:49 era and it is interesting virtually all
+13:51 of them started in City centers and you
+13:54 know that made sense and in terms of
+13:55 where deliveries were happening kind of
+13:57 naturally it happened in City centers
+13:59 and so the idea to go outside of the
+14:01 city center we recognized was not the
+14:04 most popular idea yet from what we had
+14:07 heard from customers in a place like pal
+14:10 Alto where we started the company or San
+14:12 Jose where you'd have to drive to pretty
+14:15 much get anything that person would tell
+14:17 us over and again how much of a
+14:21 timesaver some would even use the word
+14:22 Lifesaver we were it just kept on
+14:26 repeating itself as the number one thing
+14:28 to focus on they sort of walk me through
+14:31 their logic everybody was going into the
+14:33 cities and every order was not
+14:36 profitable because there is so much
+14:39 competition in the cities and this
+14:41 Insight that it was less competitive in
+14:44 the suburbs and we can make more money
+14:47 in the suburbs it's more valuable for
+14:49 your food to be delivered to you because
+14:51 it's not down the street was in itself
+14:54 compelling he like yeah that's right I
+14:55 have to actually get out of my house get
+14:57 in the car drive a fair distance go pick
+15:00 up the food and bring it back so that
+15:02 Insight was Point number one from a
+15:04 consumer experience it's actually more
+15:06 valuable for a consumer in the suburbs
+15:08 to have their food delivered to them
+15:09 then the second Insight that Tony had
+15:12 which is in almost all small towns there
+15:14 was a main street and I was like really
+15:17 huh and at Stanford off of Stanford
+15:20 there's University Avenue where all the
+15:22 restaurants were in pal Alto there was
+15:25 California Street and so then I sort of
+15:27 went and checked ACH bunch of other
+15:30 places small towns and small cities and
+15:32 it's true that many of the restaurants
+15:34 were Consolidated there were aggregation
+15:37 points there were starting points for
+15:39 for where you can radiate out and that
+15:42 just made the problem of logistics a bit
+15:45 easier than you would have thought if
+15:47 you thought restaurants were randomly
+15:49 dispersed throughout a small town in a
+15:52 small City so with those facts I was
+15:54 convinced then over the years with the
+15:56 data that they showed on their ability
+15:58 to make the subbs more profitable and
+16:01 faster that just that was very
+16:03 convincing time and time again as the
+16:06 entrepreneur you certainly need
+16:07 conviction but you also need evidence
+16:09 along the way to make sure that you're
+16:11 not delusional I think we always saw the
+16:13 the evidence as we rolled out cities
+16:15 number two 3 four five Etc you know the
+16:19 same types of behavior and the same
+16:21 types of responses from customers and
+16:24 Merchants and Dashers that gave us the
+16:27 conviction that we can repeat this
+16:29 across all parts of the US in general I
+16:32 would say door Dash has always been very
+16:34 good at making the right but non obvious
+16:37 decisions and there are lots of examples
+16:39 suburbs is one of them they have a
+16:41 three-sided Marketplace consumer Dashers
+16:44 and Merchants and they chose to be
+16:46 Merchant first which was very clarifying
+16:48 and it's very focusing for the company
+16:50 but it's not necessarily what most
+16:52 companies would pick they would probably
+16:53 have picked consumer first and their
+16:55 focus on Merchants was why they were
+16:58 able to win Merchants over which was
+17:00 then their ability to then provide Mass
+17:05 selection for the customer and so
+17:07 instead of having just a few restaurants
+17:09 in a neighborhood you got all the
+17:11 restaurants in the neighborhood if you
+17:12 have the whole neighborhoods restaurants
+17:14 I'd go to Door Dash the other thing
+17:16 early on that they focused on was this
+17:19 concept of having a accurate delivery
+17:22 time estimate and that seemed like wait
+17:25 why are you focus on that so much and it
+17:28 turns out that getting that time
+17:30 estimate down is really really important
+17:33 to setting customer expectations the
+17:35 other non-obvious thing is when you get
+17:37 the delivery time accuracy right you set
+17:40 the customers expectations but it also
+17:42 allowed us to batch things and much
+17:45 better ways which then led to a much
+17:48 more efficient Dasher operations on the
+17:51 national chains instead of just winning
+17:53 one or two such as McDonald's or
+17:55 Starbucks they wanted to win over the
+17:58 top 100 National chains that allowed
+18:01 them to stay true to who they are which
+18:04 is about providing selection and also
+18:07 having all of them kind of pulled in
+18:10 nationally and made for a much more
+18:13 efficient expansion nationally than
+18:15 going City by city by 2015 the company
+18:19 had hit 1 million deliveries and was
+18:21 operating in 22 us markets door Dash was
+18:24 growing quickly but growth necessitated
+18:27 rounds of financing some of which would
+18:29 bring difficult lessons and test the
+18:32 company's
+18:34 resilience the business continued to
+18:36 grow and grow very very quickly before
+18:38 they went out to raise their series B in
+18:41 2015 we tried to convince Dr Dash to
+18:43 take an offer from Sequoia for 250 to
+18:46 300 million they didn't really laugh at
+18:48 us they did kind of chuckle at the price
+18:50 and then they would later go on to raise
+18:52 that round at $600 million valuation
+18:55 from cler prickets it just happened to
+18:57 be that the series B was a very
+18:59 competitive round that came inbound to
+19:01 us and we received multiple term sheets
+19:04 in half a week and I think the
+19:07 competitive dynamics that that's tends
+19:09 to be how some of these very high
+19:11 valuations come about not everyone was
+19:15 excited about the lofty valuation is
+19:17 this very concerned when a company's
+19:20 valuation grows so quickly and while I
+19:22 had belief in the company I was very
+19:24 very concerned that it would be very
+19:26 hard to clear the $600 million valuation
+19:30 at the next round and I absolutely
+19:32 discussed those concerns with Tony and
+19:35 he had a lot of confidence in the
+19:36 business then and he believed that he
+19:38 can grow into that valuation you know it
+19:40 was a time where it seemed like door
+19:42 Dash could do no wrong and everything
+19:44 was moving up and to the right but on
+19:46 the flip side you know momentum can
+19:47 shift really
+19:50 quickly raising its series a financing
+19:53 had been easy in 2014 as was the series
+19:56 B in 2015 but when Da went out to raise
+19:60 its series C in the first quarter of
+20:03 2016 the sentiment had
+20:05 changed within a matter of 2 or 3 weeks
+20:08 everything went from oh yeah this will
+20:10 be a fairly straightforward financing to
+20:13 continue the company's expansion plans
+20:15 to the industry is toxic and the start
+20:19 of three very very difficult years for
+20:21 the company we just got no after no
+20:24 after no I think some people called food
+20:26 delivery a cash incinerator
+20:29 we were not yet profitable I remember
+20:31 investor perception that you know
+20:34 there's no way that you could ever make
+20:36 money doing last mile delivery you can
+20:39 grow very quickly but there's no way you
+20:41 can do it sustainably and and those
+20:43 became very powerful forces when we look
+20:46 at financials we want to see lots of
+20:49 Revenue in black and lots of profits in
+20:51 green on the bottom line door das's
+20:54 financials were not that much revenue in
+20:57 black but a huge amount of losses in red
+20:60 on the bottom companies like door Das
+21:02 are what I call minimum efficient scale
+21:04 businesses where up to a certain point
+21:06 of scale you're not making money you're
+21:08 investing in the growth of that
+21:10 geography or that product line and if
+21:14 you know how to do that very
+21:15 successfully and build the highest
+21:17 quality product with the highest you
+21:20 know retention and and frequency then
+21:22 you can keep investing and and if you
+21:24 can in parallel improve your unit
+21:26 economics at some point of scale the
+21:28 numbers turn to the other side very
+21:30 quickly but it does take some amount of
+21:32 patience to get there and it does take
+21:35 some amount of capital to get there and
+21:37 even though we always had the formula
+21:39 investor patience during that
+21:41 201617 era uh was fairly thin for
+21:45 companies like ours struggling to raise
+21:47 money door Dash faced a cash
+21:50 crunch I always was nervous and and I
+21:53 think a lot of people involved with door
+21:54 Das was very nervous about you know our
+21:57 our our solvency we were always worried
+21:59 about running out of cash and it and it
+22:01 was you know 3 years of of being worried
+22:04 after dozens of rejections Alfred
+22:06 approached the SE team to make the case
+22:09 that we should lead the round the series
+22:11 C was hard for door Das because they're
+22:14 going to run out of money it was also
+22:16 hard for seoa it was hard for me and
+22:19 didn't really matter how much we love
+22:21 Tony or how much we believe than the
+22:23 market we needed to prove ourselves
+22:26 mathematically uh in spreadsheets that
+22:29 this could be a good business and it was
+22:31 not that easy to do it took three memos
+22:34 to convince the partnership to lead the
+22:37 serc the data that was positive was the
+22:40 customer retention and the cohorts of
+22:42 the retention was really strong you
+22:44 break down the retention and you could
+22:46 see a set of customers that kept
+22:49 ordering more and more and more they
+22:50 were the power users and the power user
+22:53 group was growing and then the order
+22:55 baskets kept growing for those customers
+22:57 and so maybe the first order wasn't
+22:59 profitable but maybe the second or the
+23:01 third or the fourth and all the orders
+23:03 after that were all profitable it was a
+23:05 very stressful time for me and Michael
+23:08 Aon and Matt Hong who were working on
+23:11 the three memos that got us to a
+23:13 decision to make the investment because
+23:15 we just didn't take not for an answer it
+23:18 was strained inside partnership
+23:20 conversations because there were
+23:22 Partners who didn't believe we should do
+23:25 this investment we had to slowly answer
+23:29 for all of their questions their
+23:30 questions were all valid and the best
+23:32 part about Sequoia is we make
+23:34 investments as a team but we also always
+23:37 keep an open mind and so when we were
+23:40 able to answer all the questions we were
+23:42 all on board to make the investment and
+23:44 we made the investment as a team and
+23:46 then we said okay it's all hands on deck
+23:48 to make sure that door Dash becomes a
+23:50 winning company over
+23:52 time door das's serc financing closed in
+23:55 March 2016 securing desperately needed
+23:59 resources but the round came at a cost
+24:03 the headline valuation was slightly
+24:05 above its last round the cap table that
+24:08 we received didn't account for the
+24:10 option pool we had agreed on a headline
+24:12 price then when we did the math for per
+24:14 share price it was a 5% lower per share
+24:18 price than the previous round there was
+24:21 a lot of swirl around the series C being
+24:23 a Down Round even though the headline
+24:26 price is slightly higher and Tony had to
+24:28 go deep deal with that with the
+24:29 employees and forget about the slight
+24:31 down round of 5% why are we even taking
+24:34 a flat round if the business continues
+24:36 to grow and I often tell Founders your
+24:39 traction does not mean an equivalent
+24:41 Traction in valuation especially since
+24:45 you knew that you needed to grow into a
+24:47 prior valuation that you took at the
+24:50 series B but we got the round together
+24:53 and that seemed like it was a good
+24:56 outcome for the company there was this
+24:58 notion and at the time I forget whoever
+25:01 said it um but there is a thought that
+25:04 yeah series C would be the last round we
+25:06 would raise and and of course when you
+25:09 go through that kind of an experience
+25:11 why would you want to raise money again
+25:14 but the company did raise money again
+25:16 this time it wasn't just to keep the
+25:18 lights on it was with a specific goal in
+25:21 mind the tide was turning there was
+25:23 always going to be a large amount of
+25:25 competition and one company would be the
+25:27 leader in this business because you need
+25:30 so much scale you need there to be one
+25:33 to three players at most D Ash was
+25:36 growing and growing fast and so was
+25:40 GrubHub and so was Uber Eats Uber Eats
+25:43 was growing very very quickly and
+25:45 winning against Uber Eats was not easy
+25:47 because Uber had a lot of cash and you
+25:50 were fighting against someone that had a
+25:52 lot more cash than you as much as D Ash
+25:54 raised it was tiny tiny compared to the
+25:57 war chest that Uber had and their
+25:59 ability to direct that at the Uber Eats
+26:02 business so they started thinking about
+26:05 raising a series D to try to win the
+26:08 market these guys have nerves of
+26:11 Steal I remember my first day we had a
+26:14 dashboard and I logged on and I think we
+26:16 did
+26:17 19,35 deliveries and coming from Uber I
+26:20 thought that it must be broken like they
+26:23 forgot a zero or two on the
+26:25 dashboard because we were small we were
+26:28 growing really fast uh it was exciting
+26:31 but it was just a different Universe
+26:34 than I had been at before my name is
+26:36 Keith yelle and I am the chief business
+26:38 officer at doores I was working at Uber
+26:42 at the time as a lawyer and a friend of
+26:46 mine had told me about door Dash and
+26:48 thought it might be a good fit for me
+26:50 both given my experience and because of
+26:52 the culture I'm motivated by wanting to
+26:54 have impact and we were definitely the
+26:57 upand comer GrubHub was maybe eight
+26:60 times our size Uber was well capitalized
+27:03 moving quickly Postmates was about our
+27:06 size maybe a little bigger than us and
+27:07 then caviar was out there so it was
+27:09 hyperco competitive Marketplace so when
+27:11 I joined we had just raised our series C
+27:14 we had adequate Capital but not
+27:17 indefinitely we went out to raise the
+27:20 series D starting in Q4 of 2016 the
+27:24 business was doing well the cohorts
+27:26 looked good if you roll those forward
+27:28 you definitely see a path to
+27:29 profitability or so I thought but it was
+27:32 a very very difficult fundraise yeah I
+27:35 think the series D in many ways was a
+27:37 continuation of the challenges we
+27:40 experienc in the series C six to nine
+27:43 months we heard more NOS than I can
+27:45 count and then we got a term sheet from
+27:48 SoftBank in mid 17 and that was a very
+27:52 exciting thing it was a welcome relief
+27:55 to get the term sheet I think it was a
+27:57 pre-money valuation of maybe 800 50
+27:59 million which was a slight step up from
+28:01 the last round and even though we
+28:03 thought we were worth a little bit more
+28:05 we' kind of learned the lessons from the
+28:06 series B before and a little step up was
+28:08 okay and so that was a happy day to get
+28:11 that in the
+28:13 door but at the same time soft Bank was
+28:17 working on another investment a much
+28:20 larger investment in a different company
+28:23 and so they were somewhat distracted and
+28:25 eventually we found out that the other
+28:27 company that they're working on on was
+28:29 Uber and there was real concern that
+28:32 SoftBank would not close um until they
+28:34 get clarity on what their investment
+28:37 opportunity was going to be in in Uber
+28:39 they were very clear with us that Uber
+28:42 was their priority and they did not want
+28:44 to close our deal unless and until they
+28:46 had cleared the HSR process with with
+28:48 Uber and that process drag on for many
+28:52 many many months the days we were
+28:54 waiting for the soft Bank funding to
+28:56 come through were probably my toughest
+28:58 days at the company was there a time I
+29:00 thought the company might not survive
+29:02 absolutely almost every day from late 17
+29:07 to early
+29:10 18 it was a painful time I mean it was a
+29:13 constant period of stress of not knowing
+29:16 whether or not we could ever raise money
+29:19 Tony would call me almost every night at
+29:20 about 8:00 and we'd kind of go through
+29:23 the options of what we could do to
+29:24 conserve money if there was anything we
+29:26 could do to try to make the round come
+29:28 together more quickly we started making
+29:30 contingency plans that we hoped we'd
+29:31 never have to use but recognizing that
+29:34 we were getting to the point where we're
+29:36 talking about weeks of Runway rather
+29:38 than months or years we put together a
+29:42 plan for who we'd have to let go and
+29:44 what we would have to do which was
+29:46 really to become a niche business we
+29:47 were going to have to become a lot more
+29:49 like caviar looked at the time which was
+29:51 a high basket size high-end restaurants
+29:54 limited selection and a very Niche user
+29:57 base was the the backup plan that we H
+30:00 we would never have to go to because we
+30:02 didn't think that was the winning
+30:03 formula besides just the constant
+30:06 Financial stress we had people lose
+30:08 confidence in the company right even
+30:10 internally about maybe a quarter or 20
+30:13 to 25% of the company voluntarily left
+30:15 over those three years the people that
+30:18 stayed shared a similar mindset and it
+30:20 was people who liked to be the underdog
+30:23 and they wanted to solve the hard
+30:25 problem and that was another core value
+30:28 of that came out of this which was one
+30:30 team one fight because others were
+30:31 better funded or they were bigger than
+30:33 us we had no innate Advantage other than
+30:36 each other and I looked around when we
+30:39 were solving those problems and there's
+30:41 people I want to spend time with and
+30:42 that's still true today and so I think I
+30:44 even recognized it then that I'd rather
+30:46 be the underdog in this fight than a cog
+30:49 and a machine of a fight that seemed
+30:51 like I wouldn't really have a
+30:53 significant impact in the war companies
+30:56 usually take on the ethos of of their
+30:58 found ER and Tony is very frugal person
+31:00 and we always had a very frugal approach
+31:02 I think what shifted was a maniacal
+31:05 focus on the unit economics of the
+31:07 business so we were hyperfocused on
+31:10 shaving every second off we could from
+31:13 the time it took to do deliveries how do
+31:15 we make it more efficient how do we
+31:16 eliminate defects that are a bad
+31:18 customer experience but also really
+31:20 expensive for us before we were cash
+31:22 strap people would come in and say well
+31:24 do you want to focus on growth or do you
+31:25 want to focus on profitability and we
+31:28 quickly realized if we were going to
+31:30 survive this time we had to do both at
+31:31 the same time eventually we just made it
+31:33 a core value it says it's and not or you
+31:35 can't pick or choose we must grow and we
+31:38 must become more profitable as the
+31:40 company worked to stay alive Alfred
+31:43 decided to go out on a Lim once again so
+31:47 since we didn't close the series D at
+31:49 the end of 2017 and it was now 2018 I
+31:52 decided to ask the partnership whether
+31:53 we would consider the series D and Lead
+31:56 it ourselves and I thought I was going
+31:58 to get fired from seoa for going back
+32:01 again and again to propose that we lead
+32:04 the series C for the series D it's like
+32:07 you're going to come back and ask for
+32:08 more money when we just led the series C
+32:11 and you had told us that maybe the
+32:13 company would never have to raise again
+32:15 and you want to invest this large round
+32:16 I thought I was going to get fired
+32:19 again but everybody was quite receptive
+32:21 because the business is growing and
+32:23 doing well and all the metrics were
+32:25 working and so we decided
+32:28 that uh we would consider it it was less
+32:32 than what Tony wanted I think our number
+32:34 our round was 190 million not 250
+32:38 million but it was also more than what
+32:40 we thought the company needed we're
+32:43 waiting for the soft bank money to come
+32:45 in and we're getting down to the felt as
+32:47 they say in poke early we are almost out
+32:49 of cash and then seoa came in with a
+32:51 term sheet of its own and it was
+32:53 slightly less money pre money valuation
+32:55 than soft Bank was and they said let's
+32:58 just take our money and let's go forward
+33:00 and execute and then SoftBank came back
+33:03 and said we're ready to close a Twist
+33:06 the offer from SoftBank was back on the
+33:09 table and so we had two term sheets from
+33:13 two partners we valued SoftBank had been
+33:15 the first to show up but hadn't closed
+33:17 and SEO had backed Us in every round and
+33:21 had really catalyzed the series D coming
+33:24 together and we didn't want to take that
+33:25 much money but they both really wanted
+33:27 us to pick that
+33:32 him this was a crucible decision the
+33:36 total amount on the table was
+33:38 $535 Million door Das needed to decide
+33:41 how much money to take and which partner
+33:44 to choose Tony and I were sitting in the
+33:46 lunchroom and we had decided to take
+33:48 just the Sequoia check and he didn't
+33:50 look like he was feeling very well and I
+33:53 said Tony what's going on and he says I
+33:55 can't explain it but this just doesn't
+33:57 feel right but I'm not sure what else to
+33:59 do and Andy Fang who was one of the
+34:01 other co-founders came by and said why
+34:04 don't we just take both checks at the
+34:06 time it seemed outrageous because it was
+34:07 like half a billion dollars on a sub
+34:10 billion dollar pre-money valuation the
+34:12 delusion would have been crazy the
+34:14 company was going to take a lot of
+34:15 delution the founders also would have
+34:17 lost you know control of the board in
+34:19 terms of the number of seats that the
+34:21 founders would have had access to it was
+34:24 one of these decisions where I knew it
+34:28 would be consequential I think
+34:29 ultimately for me it was thinking about
+34:33 what do we want to be true in 10 plus
+34:36 years if I was just looking at this I
+34:38 think in a very short time period
+34:40 perhaps you know we didn't need to raise
+34:44 the quantum that we did in the series D
+34:46 but when I put things in perspective
+34:48 around we believe we have the leading
+34:50 product we had spent no money on
+34:52 marketing at the time we had over three
+34:55 years of difficulty raising even a
+34:57 dollar when I put all of those things
+34:60 together on one side and I compare it to
+35:03 the amount of you know dilution or cost
+35:05 of the capital that we would have
+35:08 incurred as well as the loss of control
+35:10 on the board do I think that you know we
+35:12 could have created a company that's
+35:14 worth 10 times the cost so to speak of
+35:17 what we gave up and to me it was
+35:19 conviction in in that path we were
+35:22 presented with an opportunity to take a
+35:24 large War chest I mean to me this was
+35:27 just a moment in time where I thought
+35:29 look it's not a guarantee but we get to
+35:32 put aside any concerns of ever having to
+35:34 raise Capital again and we get to just
+35:37 step on the gas and take what we already
+35:40 know is the best product and just bring
+35:42 it
+35:43 everywhere after raising the series D it
+35:46 was pretty obvious to me that the right
+35:48 thing to do was just to take our
+35:50 Playbook everywhere we went from
+35:52 launching maybe a dozen cities a month
+35:55 to launching 3,000 cities in six to 9
+35:59 months it it became this Sprint where we
+36:02 felt like we had created the the leading
+36:05 product in our category and it was time
+36:07 to just bring it to all audiences and
+36:09 see how far we can take it the company
+36:12 knew its numbers and knew its competitor
+36:15 numbers down to a very very fine level
+36:18 of detail Tony was very comfortable
+36:20 raising a large amount of money even
+36:22 though it's a small fraction of what
+36:24 Uber had because he had a particular
+36:27 Insight that for every dollar door Dash
+36:29 spent on customer acquisition they were
+36:32 able to acquire twice as many customers
+36:36 as their competitors they were just a
+36:38 lot more efficient at acquiring
+36:41 customers when you have that kind of
+36:43 Advantage it's almost like saying you
+36:46 can run a 4minute mile when someone else
+36:48 is running a 5 6 7 8 minute mile and
+36:50 it's just a matter of when you want to
+36:52 turn on you know the engines to actually
+36:55 Blow by in the race and that's kind of
+36:58 you know how I felt we were set up and
+37:01 it was against you know the entire field
+37:03 and so once the money came it was just
+37:06 go
+37:08 time in 2019 door Dash surpassed both
+37:12 GrubHub and Uber becoming the US
+37:15 category leader in food delivery but as
+37:17 we all remember early 2020 would bring
+37:21 new
+37:22 challenges when March 2020 rolled around
+37:25 it was not obvious whether or not the
+37:27 pandemic would be a massive headwind or
+37:29 a massive Tailwind for door Dash the
+37:31 pandemic was a time of great emotional
+37:34 twists and turns ups and downs High
+37:36 variance environment and I remember
+37:38 right when shelter and place happened
+37:40 our volume fell absolutely off a cliff
+37:43 and I thought we might go out of
+37:44 business because people weren't sure how
+37:46 Co was transmitted and it might be
+37:48 transmitted through food and so you're
+37:50 definitely not ordering online delivery
+37:53 if you're worried about that so our
+37:54 volume cratered and then almost as
+37:56 quickly as it cratered it doubled in a
+37:59 way that I don't think we were fully
+38:00 prepared for we doubled I think order
+38:04 volume in in a week I I want to say
+38:06 somewhere towards the end of March maybe
+38:09 when you go back in time and see the
+38:11 demand start increasing you realize wait
+38:14 do I need to scale up for not a a 50 or
+38:17 100% increase but now a 200 or 300%
+38:21 increase what do you need to do we need
+38:23 it site stability first and foremost the
+38:26 infrastructure is super sensitive to
+38:28 how many people are ordering at at any
+38:30 given moment and the engineers had been
+38:32 building a business to scale quickly I
+38:34 mean we were doubling every year
+38:35 doubling or more every year so it wasn't
+38:37 like it was a slow growth business but
+38:39 to double and then some almost literally
+38:41 overnight was not something that the
+38:43 infer team had planned on which meant
+38:45 that every Friday at 3:00 the site would
+38:48 go
+38:49 down there just these natural times of
+38:52 the day where you're ordering breakfast
+38:54 natural times of the day where you're
+38:55 ordering lunch and natural times of the
+38:57 day when you're ordering dinner that
+38:59 becomes very very busy do we have enough
+39:01 Dashers can we mobilize enough people in
+39:06 addition to meeting unprecedented demand
+39:08 from customers door Dash had to consider
+39:11 the other two sides of its Marketplace
+39:14 would Dashers be willing to make
+39:15 deliveries would restaurants themselves
+39:18 even survive how should door Dash show
+39:20 up it was the kind of Crucible moment
+39:23 that not only determines your strategy
+39:25 but clarifies your values and what role
+39:28 you want to play in the
+39:30 world a lot of it has to do with what
+39:33 your beliefs and convictions are I think
+39:35 this was true when we thought about how
+39:37 to differentiate our service in the
+39:39 earliest days to how we would show up
+39:41 during the pandemic so how do we secure
+39:44 and also distribute tens of millions of
+39:47 units of PPE to keep all Dasher safe how
+39:50 do we ship no contact delivery how do we
+39:53 make sure that Merchants can get
+39:55 liquidity immediately while keeping all
+39:58 their staff safe how do we make sure
+39:59 that consumers um can get greater access
+40:02 how do we get free lunch to all the
+40:04 schools how do we get free meals at all
+40:07 times to all the the doctors the nurses
+40:10 the staff at all of the largest
+40:12 hospitals we partnered with all of the
+40:14 largest hospitals across the country to
+40:15 do that it it was a very just intense
+40:18 period of time for everyone but it it
+40:21 was also one that it was very easy to
+40:24 know what to do
+40:26 right but there were also so decisions
+40:28 that proved controversial we cut our
+40:31 commissions by half we were the only
+40:33 platform to do this which at the time
+40:35 was controversial internally because we
+40:37 were not yet profitable but this would
+40:39 have been a over $100 million expense at
+40:42 the time I think just about everyone on
+40:44 the management team was against that
+40:46 decision that was a hotly debated topic
+40:48 that maybe I was on the wrong side of
+40:50 history on my take was it's going to
+40:51 cost us I don't know $100 million no
+40:54 one's asking us to do it today and if
+40:57 we're trying to go public that could be
+40:59 you know at a 25x ea multiple you're
+41:02 looking at $2.5 billion in market cap
+41:04 we're shaving off when no one's asking
+41:06 you to do anything differently I was
+41:07 just saying like why don't we wait and
+41:09 see and Tony very thoughtfully listened
+41:12 to the debate and at the end there was
+41:14 absolutely no question in his mind and
+41:17 he correctly said I was I was thinking a
+41:19 little short term which I want to do
+41:21 every now and then and he said this is
+41:23 the right thing to do for our customers
+41:25 and doing the right thing for your
+41:26 customers is never the wrong thing to do
+41:28 for the business and I'll never forget
+41:30 that and I think it really helped not
+41:33 only to keep businesses going at a
+41:35 critical time but also help people in
+41:38 the community view door Das a little
+41:39 differently advertising our competitors
+41:42 I think was a controversial decision
+41:44 internally we spent millions of dollars
+41:47 buying a national TV campaign that was
+41:50 called open for delivery where we
+41:52 highlighted us but all of our
+41:53 competitors as well to tell consumers
+41:56 Nationwide just order we don't care who
+41:58 you order from I think the question was
+42:02 why collaborate across the industry for
+42:05 every single one of these companies it
+42:07 was hard enough as it is we were
+42:09 competing with each other I think all
+42:11 the food delivery companies were making
+42:13 very little margin on each delivery and
+42:16 I think Tony just made this really
+42:19 compelling argument that if we can't
+42:22 collaborate during a crisis like this
+42:24 when are we ever going to collaborate
+42:26 and I think it was question for a hot
+42:29 second and then you heard Tony's
+42:31 compelling argument and his passion for
+42:35 helping the industry and that's the
+42:37 right thing to do and I don't think
+42:39 there was a the a question after after
+42:43 that I remember that when we advertised
+42:46 all of our peers what ended up happening
+42:48 was on social media you saw restaurants
+42:50 also advertising their peers and and
+42:52 they're competitors obviously and and
+42:54 and I just thought it was um you know
+42:56 that was not you know a an outcome that
+42:58 we were forecasting and certainly not
+43:00 why we made the decision but I think
+43:02 sometimes you kind of have to have the
+43:04 courage of your convictions just to make
+43:06 the decision without having any
+43:09 assumption that you'll gain the benefit
+43:13 the pandemic became a a crucible moment
+43:16 for door Dash this was a year where door
+43:18 Dash showed its medal and the ability to
+43:22 go even harder and stronger and take a
+43:25 leadership position across the industry
+43:28 we often use the race car analogy where
+43:32 we talk about how you can't overtake 18
+43:36 cars on a sunny day because everybody is
+43:38 driving a Peak Performance but you can
+43:40 on a rainy day and during this crisis
+43:43 this Health crisis door Dash surpassed
+43:46 all its competition and became a market
+43:48 leader in the food delivery industry I
+43:50 would never say the pandemic cemented
+43:53 door das's Market leadership it helped
+43:55 propeled it to Market leadership but
+43:57 there's nothing that is written in stone
+43:60 in
+44:01 business door Dash has changed a lot
+44:03 over the last four years you know four
+44:07 years ago in 2019 heading into 2020 in
+44:10 the pandemic door Das was largely
+44:12 speaking a one category so restaurant
+44:15 delivery business in one market the
+44:19 United States today we have a portfolio
+44:21 of five businesses so we certainly still
+44:24 have restaurant delivery um in the US we
+44:26 also deliver other categories in the
+44:29 United States whether it's grocery
+44:31 convenience alcohol retail categories in
+44:35 June of 20122 the company began to
+44:37 consider another type of expansion Tony
+44:40 brought up the idea of expanding to
+44:42 Europe planting a flag in a different
+44:45 region of the world and the opportunity
+44:47 in food delivery in Europe was just as
+44:49 big as it is in the United States and we
+44:52 just thought it was a a good idea
+44:54 instead of going to Europe ourselves to
+44:57 do that with a partner I was in in
+44:59 Europe and meeting with various players
+45:02 in the space we felt like we built a
+45:03 pretty good product and wanted to bring
+45:05 that to more geographies and I actually
+45:08 hadn't planned on talking to Vault
+45:10 during that trip because they're pretty
+45:12 small compared to others Walt is a
+45:14 finished delivery company founded in
+45:16 2014 that operates across Europe and in
+45:19 parts of Asia I got a call from a mutual
+45:22 investor and said you're making a huge
+45:24 mistake if you don't stop and talk to
+45:26 these folks I said okay okay I got
+45:29 connected via email and went out and met
+45:32 Mickey in
+45:33 Helsinki our goal was never to get
+45:36 acquired by anyone like our goal was
+45:38 just to build the strongest possible
+45:40 Standalone company that we could you
+45:42 know eventually go for an IPO and
+45:44 continue to build the company as a
+45:46 public company my name is Mickey kusy
+45:48 I'm the co-founder and CEO of Walt in
+45:51 the fall of 2021 we were in the process
+45:53 of uh finishing a new round of financing
+45:55 which was around $1.1 billion
+45:58 uh which is when Keith Yandel the chief
+45:60 business officer of door Dash reached
+46:01 out yeah it took me about five minutes
+46:04 of talking to them to see the cultural
+46:07 alignment just the way they talked about
+46:09 the business was so similar to how we
+46:10 talked about it they came from a
+46:12 customer first mindset they were
+46:13 hyperfocused on retention they had also
+46:15 been cash constrained compared to their
+46:17 peers which led to them having the best
+46:19 retention we had seen by a pretty wide
+46:21 margin and at the time for us the most
+46:25 scarce resource had moved from cash to
+46:28 Executive bandwidth and so we were
+46:29 really looking for a team that we
+46:31 thought could help us from a team
+46:33 perspective as much as anything else and
+46:36 meeting micking I knew immediately that
+46:38 they could uplevel our execution outside
+46:41 of the US I remember telling my co after
+46:43 the meeting with Keith that like man I'd
+46:45 like to hire that guy which is a good
+46:47 signal about you know culture fit we
+46:48 were never really serious about uh
+46:51 proceeding with door Dash we kind of saw
+46:52 that okay this is a learning opportunity
+46:54 but ultimately through that process of
+46:56 getting to know Tony and the door Dash
+46:58 team better and like talking about like
+46:59 you know the industry and what kind of
+47:01 company we wanted to build and so forth
+47:02 we kind of realized that like you know
+47:04 with Walt we could build a leading
+47:06 company in our industry globally but
+47:07 with door Dash we kind of saw the
+47:08 opportunity that we could build the
+47:10 leading company in our industry globally
+47:13 door das's acquisition of Walt closed in
+47:16 June
+47:17 2022 so we had acquired some companies
+47:20 in the past we acquired Cav in 2019 that
+47:23 was a much smaller business we were
+47:25 co-located both in San Francisco there
+47:27 was no time zone differences there were
+47:29 cultural differences but not crossborder
+47:31 cultural differences and V brought all
+47:34 of that complexity of operating in near
+47:36 30 incremental countries across a 9 10
+47:40 hour time difference into Focus for us
+47:42 and it was a a whole different kind of
+47:45 challenge I I was concerned about
+47:47 whether or not we could make the volt
+47:48 partnership successful I mean on the one
+47:51 hand um it was very large in size and I
+47:54 think secondly these types of businesses
+47:56 were they're very local in nature
+47:59 they're very highly operationally
+48:02 complicated um and that's really hard to
+48:05 do country to Country to Country to
+48:07 Country to Country and so there were a
+48:09 lot of risks that presented themselves
+48:11 when it came to partnering with vul it
+48:13 was a very big um partnership especially
+48:16 for a company like door Das that doesn't
+48:18 tend to do much in the world of m&amp;a um
+48:21 but it was one where you were bringing
+48:23 together two very like-minded teams that
+48:27 Co incidentally had gone through very
+48:29 similar challenges I think in how they
+48:31 were kind of forged through the fire of
+48:34 being under resource relative to their
+48:36 peers and and getting to category
+48:38 leadership and then I think you know
+48:40 just two groups of people that had the
+48:43 same vision for what the instate is in
+48:46 terms of what we want to build together
+48:48 but also the same you know beliefs on
+48:51 how we should build the company to get
+48:53 there and I think it's really hard to
+48:55 find those types of you know partnership
+48:58 opportunities and so um we've been
+48:60 thrilled with the partnership um thus
+49:02 far and you know it it certainly was a
+49:06 big move but it was one that um has
+49:08 really paid
+49:09 off there are many lessons from D Ash's
+49:12 story for one for me is to dream with
+49:15 the entrepreneur and I think it it was
+49:18 easy for me and my partners to dismiss
+49:22 door Dash as just a food delivery
+49:25 company but they were already at the
+49:27 seed talking about being the FedEx of
+49:30 local delivery uh all the way back then
+49:33 and instead of you know trying to think
+49:35 small we just think big and to turn down
+49:39 a company like door dash at the seed or
+49:41 the series a purely because you don't
+49:43 believe sometimes you just dream with
+49:46 the entrepreneur and just believe be a
+49:48 believer our demo day pitch of summer
+49:51 2013 it is the same pitch that we have
+49:53 for the company today which is we
+49:55 believe that you know ultimately door
+49:57 Dash um is going to be the
+49:59 infrastructure you know for how all
+50:02 things get moved around inside of a city
+50:04 where we will connect every local
+50:06 consumer to every local business and I
+50:10 think in life the the only real way to
+50:14 grow is to do the thing and take all of
+50:20 that comes from it you know all of the
+50:22 challenges all of the um mistakes that
+50:25 might be made and you know also all of
+50:27 the successes that you may um have from
+50:31 doing those things I'm I'm not sure
+50:33 there's any other way so you know first
+50:36 and foremost when I think about all of
+50:38 the tough times or especially the tough
+50:40 times that dores has had I'm quite
+50:42 grateful for them there was no way that
+50:45 door Dash would be where it is today
+50:47 without those challenges really no way
+50:50 and it's very possible I and I could see
+50:54 in an alternative world where had we not
+50:56 had those challenges that perhaps we
+50:57 wouldn't be in the position that we are
+50:60 in today you know I I I really believe
+51:02 that these you know Championship habits
+51:04 start early and they tend to get built
+51:06 when you have a team around you that
+51:09 really believes in the same things about
+51:11 what Excellence looks like as well as
+51:14 the broad Strokes of how to get there I
+51:16 think the team camaraderie as well as
+51:19 just you know the lessons that we've
+51:21 learned in terms of how do you evaluate
+51:24 some of these very consequential
+51:26 decisions that almost always come with
+51:28 conflict and pain in the short run that
+51:31 is very quantifiable with an unknown
+51:34 gain on the other side that's quite
+51:36 uncertain and I think you know
+51:39 especially as an entrepreneur a lot of
+51:40 times we are a um we're a basket where
+51:43 we only have one thing where we're
+51:45 wholly committed to and so you just got
+51:47 to make it
+51:54 great this has been Crucible moments a
+51:58 podcast from sequa
+52:08 Capital crisal moments is produced by
+52:11 the Epic stories in Vox creative podcast
+52:14 teams along with seoa
+52:17 capital special thanks to Tony Shu
+52:20 Alfred Lyn Keith Yandel and Mickey
+52:23 Koozie for sharing their
+52:25 stories in Dental audio created by 11
+52:28 Labs a seoa partner

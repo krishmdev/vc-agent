@@ -1,0 +1,388 @@
+00:00 If you're in product, if you're in design, if you're in core engineering, you constantly have to make bets as to
+00:05 where AI is going to be six months from now and you're willing to re-evaluate everything six months from now. The good news is that it's only going only to get
+00:11 better. So, it's not like your product's going to get worse 6 months from now, right? And so, for example, one um
+00:17 really interesting thing bet that has paid off is Raj and Raz were very preient about the fact that uh reasoning
+00:24 model is going to get better, right? They'd made this bet in September, right? Just seeing where the world is going.
+00:30 And we architected our system such that the reasoning models would get to shine
+00:35 and that has really played out dividends right now um in the way our entire architecture is set up.
+00:43 [Music]
+00:58 Today we're excited to welcome Anishh and Raj, co-founders of Traversal. Traversal is building AI agents to
+01:04 transform the world of DevOps and site reliability engineering. Today companies have war rooms and armies of DevOps and
+01:10 SRRES, troubleshooting their production failures and fixing them in the codebase. Every minute of production
+01:15 downtime is costly and sometimes life or death. Keeping a company's application running is very hard and valuable work
+01:21 and it's a problem that is only getting worse with the advent of AI generated code and vibe coding. Traversal believes
+01:27 that agents are the scalable solution to the problem and has seen exciting results already from the troubleshooter
+01:32 agents that they've deployed into production. We're excited to have them share more about that vision and their results so far.
+01:40 Anish and Raj, welcome to training data. So wonderful um to have you today. We have been working together for a year
+01:46 and we can't wait to share with our audience how AI and AI agents can transform the
+01:53 worlds of site reliability engineering and and DevOps and somehow we need to weave negronies in the conversation
+01:60 someplace later on but we'll get to that. Let's start with some quick hot takes. Um
+02:06 will DevOps or SR as we know them today even exist five years from now? Yeah,
+02:12 it's a great question. I I think it will but I think it'll look fundamentally different from the way it looks now. And
+02:18 um I think in this world of of DevOps and SR I think healthcare analogies
+02:23 generally fall quite naturally I find and um in this world if you think about healthcare and the mass hierarchy of
+02:30 needs there imagine um the stage one is where let's say you're having a heart attack. You have to solve that right
+02:36 now. Nothing else matters. Nothing matters 5 minutes from now other than solving the heart attack that you're having. Right? And to me that's
+02:42 analogous to dealing with a high severity incident. Mhm. Um and then stage two is where let's say you're
+02:48 dealing with some sort of chronic issue that you face like you know you have sprained ankle or whatever the whatever
+02:56 illness that might be affecting you and it's very hard to plan 3 months in advance because that's something that's
+03:01 just affecting you every day right and I think that's the analogous thing you do in in DevOps is dealing with streams of
+03:08 alerts streams of of checking whether a deployment was safe or not safe right
+03:14 and and then stage Three is where you know I think of it as like life hacking where you're thinking about how do I
+03:19 optimize my sleep and my nutrients so that I have a high quality life that's you know and and fulfilling life right
+03:26 and I think that's the equivalent of like planning out what your next 5 years of infrastructure look like and how you
+03:31 invest in the right places now if I think of what unfortunately people in the devops sur on call engineering space
+03:38 uh live like right now it's like having a heart attack twice a week and dealing with a debilitating chronic condition
+03:44 that you have to handle every day. As I'm listening to you, I'm just trying to picture all the people who I know in
+03:50 DevOps and SRE in scrubs or wearing CGI monitors to life hack like you know
+03:56 their infrastructure. Uh and I think people don't realize it but when you when you make this
+04:02 connection to healthcare you just realize how what we've gotten used to and what life really should be like in
+04:08 this world as we think about the healthcare of large scale software systems. And so I think if traversal
+04:13 does its job right then that first stage and second stage of needs which is uh there's really high severity incidents
+04:20 and that constant pain by death by a thousand cuts should be something that AI and AI agents take care of and DevOps
+04:27 and SR get to deal with the creative fun parts of what is it my infrastructure should look like for the next year for the next 5 years and it becomes a much
+04:33 more fulfilling job and many engineering teams are nowadays um adopting autonomous coding things like cursor
+04:40 Windsurf do you think that's going to have profound impact on how people maintain
+04:46 the reliability of their infrastructure or will it be the case that AI will have
+04:53 a major role to play in fulfilling that vision moving people away from like
+04:58 being the intensive care unit surgeons to being more thoughtful planners. So I
+05:05 think it's going to be there's a short-term answer and there's a long-term answer and I think it becomes
+05:10 in the short term at least it's a tale of two worlds I think. So um there's
+05:15 this because of everything happening in the world of of cursor and wind surf and so on so forth. I think the idea of vibe
+05:22 coding obviously has become very popular right and we can write a prompt or a few prompts and have something stood up that
+05:28 people can use and play with. uh but I think the analogy here is of of fast fashion where you try something on you
+05:36 like it you don't like it you discard it you know start the wear the next thing right and I think in that world actually
+05:42 reliability doesn't really matter because you don't really need to take care of what you've created there's no craft to it you create it you throw it
+05:48 away right and I think um but there's another world which is where you start applying these AI powered software
+05:55 engineering techniques to mission critical systems in payments in financial institution ions in security
+06:01 infrastructure streaming and in that world I think it's going to lead to a
+06:07 major issue. It probably already is and it's only going to get worse in my opinion um because everyone we've seen
+06:13 this with the enterprises we work with everyone is using uh AI powered software engineering tools to guide them as they
+06:19 write code and what you actually find is that it actually even passes their local unit test. So in that local piece of
+06:25 code, everything looks perfect, right? The problem is that in large scale enterprises, things break when different
+06:31 pieces of your system interact in a way you just didn't realize or you didn't couldn't foresee. And when that happens,
+06:36 because all of this code is being written by an AI system, it's very hard to debug it because you just don't have the context anymore. You didn't write it
+06:42 anymore. And I think in that world, unless we find ways of using AI systems to do software maintenance, we're going
+06:47 to be throttled. and either people will disallow AI software engineering tools to be used because there's too much
+06:53 downtime um or something of that form right and I think in that world uh we're
+06:58 going to need new tools and new um software to help maintainance of of such
+07:04 systems and I think that's where traversing can can play a part you definitely have your way with with words and analogy so I love uh the tale of two
+07:11 worlds you either have Louis Vuitton high fashion or you have fast fast fashion with sheen or or or or or
+07:18 something like that. Um but I think we jumped um into uh into the deep end maybe like a bit too quickly. Let's
+07:24 let's go back a few steps and maybe um explain for our audience like what
+07:31 actually uh root cause analysis stand for like what what does it do? Tell us a
+07:36 bit more about this wonderful world of of troubleshooting and root cause analysis. Yeah. So I think um if I just
+07:43 think about the tale of the life cycle of an incident, right? the story of an incident. It always surprisingly looks
+07:48 the same across companies. Uh a customer will log on to a platform, things not
+07:54 working exactly right. Um either it's already been recorded or they make a complaint to customer support. Customer
+07:59 support looks at it and says, "Okay, it's not a user error, it's an actual issue." It escalates in this game of telephone up like five ladders of of
+08:06 different sophistication of engineering organizations uh within an enterprise. At some point it hits the DevOps SR team
+08:13 who look at the issue and decide is this is this worthy of an incident based on
+08:19 the impact of it based on the severity of it the immediiacy of it and if they decide it is worthy of an incident then
+08:24 suddenly chaos ensues right you'll have a slack incident channel that's created there's 30 to 50 people in a channel
+08:30 everyone's kind of implicitly blaming each other for what happened um and a bit of a who done it type thing and
+08:38 almost without fail is the same thing that happens which is there'll be this 10x engineer who's been at the company
+08:43 for got the Christie uh out of Sherlock Holmes of the
+08:50 situation and like aha like they'll figure out exactly what happened right and not clear how they got there but
+08:56 they got there you roll back the the you come up with some sort of hot fix and then everyone kind of it looks for an uh
+09:04 a longer term fix over time right and that's typically how it all plays out and that whole flow is what we call
+09:11 um the life cycle of an incident and root cause analysis in particular, right? Um and I think what I find
+09:17 incredible is that all of observability, right, this these incredible companies have been created, um they're the second
+09:24 largest software spend typically companies have after your cloud spend and yet we're still at the state of root
+09:29 cause analysis. Um but anyways, that that's my take on what RCA looks like nowadays. And tell us maybe like a bit
+09:35 more color on where does root cause analysis live. uh with relations to the
+09:42 plethora of observability tools that companies use today. Why is it that if
+09:47 still the case if this is the number two spend in technology why is it that you
+09:53 have you know 50 people like in a slack channel with a who done it kind of plot.
+09:59 It speaks to the the importance of the problem right and what observability has done is the best they could have done
+10:04 given the technology that was available even like six months ago right which is so if I think what observability is it's
+10:11 fundamentally about the creation of telemetry data it's called melt data so like metrics and events and logs and
+10:16 traces so melt for short and it's about the creation of this data storing it and
+10:21 then providing a nice visualization layer on top of it so people can create the right slices to create little
+10:26 eyeballs in different parts of their system Right. And I think that's what observatory ends at which is a storage and visualization layer because that's
+10:32 all that could have been done. Right. And um the the complex workflow of
+10:38 troubleshooting remains super manual and that just because that was what um that's all we could have done so far. Um
+10:44 and I think the promise of what these AI agent companies can do is that they
+10:51 automate complex workflows that we do on top of software. And to me this problem of troubleshooting root cause analysis
+10:57 is one of the most complex workflows that any set of humans do in software. And I think now there's an opportunity to kind of move up uh in terms of
+11:04 sophistication where we use AI systems to actually automate this workflow versus just stopping at the storage and
+11:10 visualization layer. Can you talk about your product? Uh what is the agent or the agents that you're building to kind
+11:16 of take on this problem and how does it work? Yeah. And if I double agents
+11:22 um so maybe stepping back what what is an agent and it's really an LLM orchestration of tools and in our world
+11:28 those tools might be data fetching tools how to get logs how to get metrics back
+11:35 data processing how to format it in a way that the agent can really process or statistical tools like running anomaly
+11:41 detection and I think really what we're trying to look for here is you need to
+11:47 define the tools rich enough so that an RCA can be expressed as some combination or some sequence of these tool calls.
+11:55 And that's really where a lot of the complexities and the multi- aents come in is how do you piece together these
+12:02 tools to solve these complex tasks and I think at least in our world the data is
+12:08 so big that it needs to be sequential because a single trace might not even fit an LLM context. So you need to know
+12:15 how to slowly just build this context of the LM to get to the root cause and
+12:21 that's why it's really challenging of a problem. Are you mirroring the cognitive architecture of a of a human
+12:27 troubleshooter? Is it is it you know is a map of operations very similar to what a human would be doing or is it very
+12:32 different for an agent? Yeah, I think that's where at least when we were first thinking of the problem, we tried to
+12:38 mimic how an S sur would debug and it was very manual, very sequential where
+12:44 an S sur typically might look at a piece of evidence and then okay, figure out
+12:49 what's the next piece of evidence to look. But a lot of times they make these hops with system knowledge which the
+12:56 agent might not know. And that's really where we used a lot more scale to figure
+13:01 out how to bypass some of this issue of system knowledge. So this agent will
+13:08 basically look in a more systematic fashion of there's this Google S handbook which tells you here's the key
+13:14 golden signals you should be looking at latency error rate. So it looks at this way of kind of health monitoring to
+13:22 piece together how to sequentially search this rich space and it's less
+13:28 about having holes in the reasoning where a human can just immediately get maybe to that hop. The agent is making
+13:35 these sequential flows that get to the answer. Are there particular conditions
+13:40 or environments where this agogentic approach works better or worse? Yeah, I
+13:46 think um fundamentally it's about data access. So what we have found and
+13:52 surprisingly that's what we've found is that we sometimes can add less value in
+13:57 like a series A startup versus as a large enterprise because when you become a large enterprise your um observability
+14:04 is quite mature. So everything is being instrumented in a way where the fundamental data is in place but your
+14:10 teams are very fragmented. So no one team or no one person has enough context to piece together what everything about
+14:16 how to debug, right? And that's why you have these 30 or 50 people in a in a Slack incident room. And so what we
+14:21 fundamentally found is that um the place where we add the most value is when the
+14:27 reasoning steps for this agent to go from a high level trigger to the root cause, those steps can be found in the
+14:33 data, right? It just is too much data for any one human to keep in their head. uh when that data is fundamentally not
+14:40 there then it's when the agent suffers and that tends to not be the case at the enterprise is what we found. Very
+14:46 interesting and and really like somewhat counterintuitive because it's usually the case with startups that the way you
+14:52 choose your design partners or customers you start at smaller companies or mid-market and then you try to graduate
+14:59 your way up to um up to enterprise. And if we're going to use like the L1 to
+15:06 L5 like analogy from self-driving cars, um
+15:12 how close are you uh with having agents correctly get to the root cause of of
+15:19 incidents? Or maybe more broadly like what what counts as success? Like are we trying to get to 100%
+15:26 correct resolution or what even counts as as correct resolution like in this context? Yeah, that's a great question.
+15:33 So, I think there's really two cases here. There's the first case where the root cause fundamentally belongs in the
+15:40 data. So, it's in some log. It's in some PR. And in that case, I would say with traversal, we're at L4. And I won't say
+15:47 L5 because for us, we might be able to flag that problematic PR or that smoking
+15:53 gun log, but then there's still that last smile of the fix and the remediation. And in cases where the fix
+15:60 is not so localized to a specific file or code change where you need to new do
+16:05 basically a bigger systemwide change that's we haven't gotten there but I think that's where it's really exciting
+16:12 to see all the developments with code agents because that's where we can get to that L5. I think for places where the
+16:19 root cause isn't in the data that's where we're more at a L2. I think traversal finds a lot of the important
+16:27 symptoms that really help people debug. But sometimes it's just not in that data and this
+16:33 human kind of needs to make those additional hops to get to the actual root cause. But still the symptoms
+16:40 really help figure out how to make those additional hops. And sometimes right for us when we notice that we can tell
+16:46 customers well maybe you should instrument in this way to make the system more observable across the AI
+16:52 landscape right now there's really interesting kind of AI native companies being formed like yourselves there's
+16:58 also the incumbents that are you know in many cases not asleep at the at the wheel um how how do you think about the
+17:04 incumbent risk here and and why your customers are choosing to go with you yeah I think it's a great question I
+17:10 think the heart of it is observability is expensive, right? It's such an expensive product that people pay for.
+17:17 As a result, it's extremely fragmented, right? You go to any big enterprise, they're using data dog, they're using
+17:22 Splunk, they're using Datrace, they're using Elastic, they're using Graphana, they're using Service Now. I mean, they're using everything, right? And all
+17:28 of them are like encroaching in this game of attrition, right? And the problem is that if you just think about
+17:34 the pricing models in this world, it's all based on the amount of data they store, right? And so as a result, company A is not incentivized to give
+17:41 you better insights from anything that's stored in company B, right? And to debug something, if you just look at any of
+17:47 the the S sur or on call engineers, they're calling upon all five six tools they have access to. And it's that
+17:53 fragmentation of this historical industry, I think, which is going to ideally lead to companies such as ourselves that are somewhat agnostic to
+18:01 where the data is stored at least for now. Uh it gives us the chance. Do you have customers deployed on traversal
+18:06 today and what have you found is the difference between what you kind of expected even coming from an academic
+18:11 background versus what you're actually finding in real world environments? Yeah, it's been it's been quite a journey. I think when we started as one
+18:19 should typically do, we started with like very small companies and um and
+18:24 built something that um worked for them and that typically took the form of we
+18:29 went through the last 100 incidents that they had right in the Slack channels and kind of try to use our brains to figure
+18:34 out what is the meta workflow of how they always debug an incident in that particular company right and in that
+18:41 situation a very popular framework for agents is something called the React framework right and that as a general
+18:47 idea worked. We could somehow imbue the meta workflow into a react agent system
+18:52 and it was able to do really a really good job. Um and then at some point we started you know working towards larger
+18:58 companies that had an actual like large scale observability system thousands of microservices that kind of situation and
+19:06 I think I remember there's very clearly this one week where it was the first time we dealt with that kind of scale
+19:12 and um the second we tried to apply our system on on just some historical
+19:17 instant that happened our accuracy was at 0% and we just it would not move
+19:22 whatever we did to the prompts whatever we did to anything. It was stubbornly at 0%. And that was a a rude awakening. Uh
+19:30 I remember Raj and I had had a negro me.
+19:36 Um and I think at that point we kind of had to think through ways of we made
+19:42 some interesting decisions which played out uh in our in our favor which is we said okay nothing about a specific
+19:49 company will be hardcoded into the prompts right um and nothing about a
+19:57 workflow that humans do there will be hardcoded into the agentic like workflow
+20:02 and and that complexity has to go somewhere All right. And eventually where it went to is computation which in
+20:08 the form in our world takes the form of spending tokens in the problem like using it at inference time. And once we
+20:13 were able to kind of find an architecture that exploited inference time compute which is something now everyone is finding to be important uh
+20:20 accuracy starts shooting up. And what we found then is for if the fundamental answer lies in the data, we get to the
+20:26 answer more than 90% of the time and we get in within two to four minutes, right? And which is amazing because now
+20:32 you just look at these Slack channels, humans are spending most of the time just verifying the answer to what we
+20:37 find versus actually root causing it. And just the time the month-to-month timed resolution has dropped, I'd say,
+20:44 as is the number of people on average in the Slack channel, which are the two things that I think any enterprise cares about. And how do you measure accuracy
+20:51 like in this context? Like for example, there are a lot of companies that focus on LLM valves like does such a thing
+20:58 exist in the world of like SR and root cause analysis or like you know how do you how do you know that you're
+21:04 correctly identifying a root cause? The gold standards honestly trying it on
+21:09 live incidents. I think when you onboard to a customer oftentimes incidents can
+21:15 happen like two to three times a week and in those scenarios you get the best feedback. Maybe it takes a couple of
+21:21 hours for that incident to complete. You look at the postmortem and you can really evaluate it. Um so I think that's
+21:27 one definitive source. There's other subtasks we do for evaluation such as when people are trying to search for
+21:34 specific information from their observability. there's smaller chunks of tasks you need to do to do RCA. So we
+21:41 evaluate on those tasks as well which are just higher volume. Um but
+21:46 ultimately real live incidents are the best way for us to evaluate. Awesome. It
+21:52 sounds like you know you had this uh rude awakening at some point where you deployed the product and it was stuck at
+21:58 0% accuracy before you kind of went back to the drawing board and really reought
+22:03 like the entire architecture. So maybe can you give us like a very quick tour under the covers of how the product
+22:10 works today and kind of what is the magic that enables precise root cause analysis? Well, one
+22:16 important decision we made was we only require readonly access to the data and
+22:21 I think that was a decision basically based on enterprises not wanting to just have yet another tool generate more
+22:28 data. So how do we actually do it? Well, I think there's two phases. there's a offline phase and an online phase. So
+22:35 during this on offline phase, we're really trying to learn this rich dependency map. How do different
+22:42 functions, how do different logs relate to each other? And one way to do that is through LLMs. So LLMs go traverse really
+22:50 understand semantically how these logs different tags within the logs all
+22:55 relate to each other. And then we also use statistics. And statistics comes in
+23:01 when for example there's natural variation in time series and that turns out to leave traces of causality which
+23:08 basically Anish and I worked on in grad school of how do you pull causal relationships out of this data and
+23:15 that's really key to build this rich map. We also use selfplay to basically
+23:20 prioritize certain paths that are very promising for RCA. So now once we've
+23:25 constructed this rich dependency map during the online phase when an actual incident comes to us what this agent is
+23:33 doing is it's using that real-time information and this dependency map to
+23:38 basically figure out what hops to make to do the root cause analysis. How long does it take for the offline part to
+23:45 become effective such that in other words between deploying your solution and the first incident that you can
+23:52 actually troubleshoot how long is that gestation period? It kind of depends on
+23:59 if they want to troubleshoot a live incident or a historical incident. In general, I would say we take about 5 to
+24:07 10 hours to kind of look through all of their codebase, look through their observability, really have that system
+24:13 understanding. Um, for larger customers, it can take a day, but generally 5 to 10
+24:20 hours. So, you've mentioned reasoning and inference time compute a couple times in there. Are you using kind of
+24:26 foundation models and, you know, fine-tuning them for your purposes? are you building a lot of that kind of
+24:32 architecture yourself? Maybe just talk a little bit about you know the architectural decisions you've made.
+24:37 Yeah, one really interesting thing we have learned um is that if you work with enterprises they typically have a
+24:44 existing relationship with a LLM provider. So they might have an enterprise contract with OpenAI or
+24:50 Anthropic and if you try to bring your own model or your own fine-tuned model to them, you're going to be stuck in
+24:56 security hell for about a year. M and so you you have to kind of tie your hands where you say you have to be able to use
+25:01 whichever model I give you. Typically open AI is a pretty safe bet enthropic as well. Um and so then most of the
+25:09 complexity is really about um how do you get the right set of tools that this LLM
+25:14 has access to to orchestrate the RCA step itself. And the other thing you can do is fine-tune within a company's
+25:22 environment. So, you know, let's say they point to their Azure OpenAI um instance, then you can fine-tune that by
+25:28 every time an instant happens, you see how far you got, you saw whatever the pin root cause was, you can see how far
+25:33 away you were, and then the system can fine-tune on on making sure that gaps get smaller and smaller over time,
+25:39 right? So, that's generally how it we've seen it's played out. And you also mentioned that you guys had
+25:46 part of the the architecture here is based on years of your academic research. Can you share a bit more about
+25:53 kind of this interplay between your PhD dissertations and and translating that now into a company? Yeah, actually. So,
+26:01 one thing that's kind of interesting is at least during grad school, I worked um
+26:07 closely with the Broad Institute to basically understand with these um
+26:12 crisper interventions. You have these gene regulatory networks. you do a crisper intervention and you're trying to understand what is the effect of this
+26:19 drug or this knockout experiment on how these genes express and the techniques
+26:26 we developed there for learning that causal structure between genes turns out to be pretty related to this um problem
+26:33 we're facing with production systems where if you think of the nodes of swapping them with genes as
+26:39 microservices and then you're learning okay what happens when I make a PR change or I break this part of the
+26:46 system, how does that percolate, it becomes almost the identical problem? And I think that was honestly by sheer
+26:54 luck. We didn't know that was going to be the case. And only until we got into the weeds of the problem did we realize
+27:00 like, oh wow, we got really lucky that our grad school research played out well
+27:05 here. What have been some other surprises on this journey over the past year, year
+27:12 and a half? Well, for one, I think which is part of why it's been such a joyous thing for us is just how it's like the
+27:19 industrial age of AI. And so I think all of the most interesting innovation I
+27:24 feel is happening at small research focused uh startups such as the ones that we are part of or have the
+27:30 privilege to be a part of. And so I think just having seen the best of research in some of the best
+27:35 universities and now actually seeing how it gets played out in a company, it just feels like this is where all the magical
+27:42 special work is happening. And just I think that was surprising to me coming from a world of academia becoming a professor. I thought that's where all
+27:49 the innovation will be. And so that's been quite surprising. Um honestly I think the other thing that's been quite
+27:55 surprising is just how hungry enterprises are for uh using JVI to solve real problems and you can show
+28:02 that the pace at which you can move with them what typically would take a year or two years to close can you know be
+28:07 rapidly done in a couple of months and so I think the hunger of the market and also the pace of innovation industry has
+28:12 been I think quite surprising. Speaking of the pace of innovation, things are moving like you know so
+28:19 quickly and you have been working on this product for slightly more than a
+28:24 year now. Have you been in situations where you have to go back and rework
+28:29 something? Oh, because now there's MCP or something new on the market that
+28:34 previously you had to engineer yourself, but now it's readily available like off the shelf, so to speak. or or in some
+28:40 ways like how do you futureproof like your architecture and and and and what you're working on? Honestly, I think
+28:46 that is going to be a constant challenge for companies of this generation. If you're in product, if you're in design,
+28:53 if you're in core engineering, you constantly have to make bets as to where AI is going to be 6 months from now and
+28:58 you're willing to re-evaluate everything six months from now. The good news is that it's only going to get better. So, it's not like your product's going to
+29:04 get worse 6 months from now, right? And so for example, one um really interesting thing bet that has paid off
+29:11 is um you know Raj and Raj were very precient about the fact that uh
+29:17 reasoning models going to get better right they' made this bet in September right just seeing where the world is going and we architected our system such
+29:25 that the reasoning models would get to shine and that has really played our dividends right now um in the way our
+29:32 entire architecture is set up and so I think you have to keep making these kinds of six-month bets about where AI
+29:38 is going to be and surf it just right. And I think the companies are able to string together a few of these bets just
+29:43 right, other ones are going to win. Uh I think that's why in my opinion, if you
+29:49 ask me, would you rather be an AI team taking this problem or an observability team? I'm biased, but I'd say I'd rather be an observability an AI team because
+29:57 um you just have to you get more fluent in making these kinds of bets about where things are going. What is your
+30:02 team composition like? How many are researchers? How many come from the domain? Like what I'm curious about this
+30:08 kind what the shape of a AI native agent company will look like more broadly. Yeah, I mean right now I would say we're
+30:15 90% engineers. I mean a lot of people, you know, there's a few of us with PhDs
+30:21 who have done PhDs in machine learning. A large fraction come from like traditional software engineering
+30:28 backgrounds who have been very interested in Genai and have used it in their own life. But I think for some of
+30:34 these things at least the barrier right is lower and you can kind of get everyone's trying to learn how to make
+30:41 an agent. And I think it's not like the old days where you might have needed a
+30:47 PhD to you know write out these gradient updates on this crazy LLM. I think it's
+30:53 a lot more democratized and that reflects in the way we've made the team composition. Um we also have people
+30:59 working with infrastructure. So how do we scale these agents? And I think that's a really interesting problem of
+31:06 to Anisha's point of inference time compute is how do you really get this AI
+31:11 agent to just do a lot more work than a human can possibly do and that involves
+31:17 for us we make thousands of network calls per investigation. So that's reflected in hiring the best
+31:24 infrastructure engineers. And then I think the other part is we have um product managers and some of those folks
+31:31 are coming in the next month. So we're really excited just to bring all of these different peoples with different
+31:37 backgrounds together to solve this hard problem. Yeah. I think one thing that unifies everyone at the company is an
+31:43 excitement for generative AI. And I think because of that they're willing to learn and adapt and throw away things
+31:50 that didn't work versus kind of being stuck in your way. because I think those are the people that are not that's that's the type of culture that is not
+31:55 going to survive in this world because it's just moving too quickly. And if I think about um what it's interesting I
+32:02 think about an AI researcher versus an AI engineer versus an engineer like how do I organize that I I I think it has
+32:09 nothing to do with whether you have a PhD or any sort of credential. It's it's about how experimental are you in the
+32:16 way you think. like how uh willing are you to make little bets and hypotheses about how things can be and then
+32:23 quickly, you know, put that to the test, right? I think that mentality of quick
+32:28 iteration on on a with AI and data is I think what makes someone a good AI researcher or an
+32:34 AI engineer and so it's more a mindset than a than a credential. Speaking of the composition of your team, I find it
+32:40 very interesting that neither one of the two of you or your two other co-founders
+32:45 are actually observability industry insiders and your entire company is very
+32:50 heavy on AI and engineering prowess and honestly like you know quite short on
+32:57 observability like you know domain knowledge and yet you are making waves
+33:03 like you know in this in this domain and and successfully resolving these very complex issues that
+33:09 otherwise take little armies of people scurrying around and dumpster diving to go figure out like what is the smoking
+33:15 gun log. It almost begs the question of what do you think the a future
+33:22 observability or s team at one of your customers might look like today? You
+33:28 mentioned that there are people who have all the insider knowledge like all the tribal knowledge, the intuition they can
+33:34 make these hoops you know from here to there without without data. Is that
+33:40 still a valuable skill set like you know 5 10 years from now or would the
+33:46 observability team look very very different? A couple of answers. One is I
+33:52 think there will be a lot of work to be done about the reliability of AI systems
+33:57 themselves and I think the way you reason about reliability of AI systems will require obviously first principle
+34:04 good S sur principles but also some sort of fluency with AI as well because they'll break in interesting unique ways
+34:10 that we're just not used to and so I think um I think modern SR teams will
+34:15 have to kind of u be fluent in both in some ways which is how do LLMs and AI
+34:21 systems break and also how regular systems break and and marrying those two things with what I think will make you a really good DevOps and SR engineer and
+34:29 also even simple things like I think one really interesting thing that's going to happen is that the data layer of observability is going to fundamentally
+34:35 change as well like the way a log looks like is going to look fundamentally different and a part of being a good SR
+34:42 or DevOps person is knowing how to write a good log right so that over time when incident happens you have the right
+34:48 instrumentation there's an art to instrumenting your system the right way where you're not flooding it with too many logs but just the right amount
+34:54 right and I think the way we will write logs will look fundamentally different as well because it's no longer meant to
+34:60 be scrolled by a human but meant to be consumed by an AI system and that's a very interesting point like how do you
+35:06 rate cursor today on their ability to write good logs I think it does a pretty good job but I mean I think it's better
+35:13 than a human I think the way it can format like humans just make typos and they don't I mean I make I'm really bad
+35:20 at spelling. Like I think cursor does a great job there, but I think a lot of it is still mimicking how traditional
+35:27 logging looks. And I think to Anisha's point, you need less of that. And you really, for example, want to bury as
+35:33 much information in the message field because that's the meat of what is going on. And now when the LM sees that, it
+35:40 can kind of have a better understanding of how to make those hops. But a lot of times people don't like to add so much
+35:46 content because a human can't read such a long error stack trace in a log. We have shorter context windows than than
+35:53 these LLMs. And I think also then connecting with the business logic, right? A lot of times because typically it may not be engineering system is
+35:59 fine, but what it depends on what fine even means for an engineering system. It has to connect to some sort of business
+36:04 logic for it to be healthy or unhealthy. And I think logging in a way that it
+36:09 that connects these two things in the right way is is an art still. Um and I think that will be tough for Corser or
+36:16 any other AI system to do unless they have full understanding of your business logic which might happen. I don't know.
+36:21 Yeah. As you dream about the future of the software engineering market and the role that observability and and
+36:27 traversal will play in that future. You know you started this podcast episode talking about you know people aren't
+36:32 vibes coding a you know payment system or banking system today. Do you think that you know if everything that
+36:38 traversal is building goes right if observability changes in the way you think it might that you know engineers
+36:44 at the largest banks and payments companies and healthcare institutions will be actually vibes coding their
+36:50 their software uh their software programs to some extent yes but and I think what we'll have is just a much
+36:56 better sense of um like did it fulfill some function and
+37:02 that will typically take the form of of unit test in some form M right and just much better at testing. And so as long
+37:08 as it it fulfills some test that code is fine and who cares what was written that code I think that will somehow in my
+37:14 opinion is how software engineering is going to evolve which will be much more about did it fulfill some function versus the way it was written which will
+37:21 be good but as we talked about earlier I think also bad because when systems fail it's because they interact in ways you
+37:28 didn't expect right a lot of times you are failing because a third party that you call upon is not hitting the SLA
+37:34 right and that's just going to happen a lot more I think and it's going to be a lot harder to debug because you don't actually know what was the content of a
+37:40 particular code file. Um, and so I think that that's the the problem that we're going to face and that's why I think
+37:46 products like traversal will have a big part to play is in solving those kinds of issues which is a lot more subtle.
+37:52 Yeah. Because I think that's where humans shine, right? Is right now humans mostly write all of their code. So they
+37:58 have that rich system knowledge. So when they're see an incident, they can short
+38:03 circuit a lot of paths because they already kind of have seen something in the past or they kind of already
+38:09 understand this error message they wrote. But if an AI generated that, they don't have that structural advantage and
+38:16 then you really need a AI troubleshooter. Okay, we're going to close out with some rapid fire questions. You guys ready? Yeah, let's
+38:22 do it. One sentence or one word answers. Uh maybe first what application category
+38:27 do you think will break out for AI in the next 12 months? We'll try to say this in two sentences. Okay. Which is I
+38:34 think anywhere where you're using reasoning models better are where applications are going to shine. And I
+38:40 think diagnostics is one of them. Healthcare being I think a prime example of that. Another startup or a founder
+38:46 that you admire. I would say Deis Hosabus hopefully I didn't butcher the
+38:51 name but I think just amazing researcher. so much foundational work and just always trying to solve the
+38:58 hardest problems. Recommended pieces of content uh how to make yourself smart on
+39:03 AI. My favorite uh article which you can read in five minutes is is is the better
+39:09 lesson by Rich Sutton who won the Nobel Prize last year for his work on reinforcement learning. Um yeah. Any
+39:15 other AI agent companies that you admire? You know, you're one of this very first cohort of truly agent native
+39:20 companies. Any others? Uh aside from the obvious like uh Glean and uh and I mean
+39:28 I would say Perplexity is one for sure that I I think is just doing a fantastic job. Yeah. Favorite new AI applications
+39:34 that you're using in your personal life? I honestly don't use anything other than CHP. Unfortunately the same for me. It's
+39:40 already it's my best friend at this point. Wow. I love it. Uh maybe one last
+39:47 uh question. Will we be vibes coding banking apps, payment systems, healthcare systems in five years time?
+39:53 To a some extent, yes. Wonderful. Thank you so much for joining us today. We really love this conversation and
+39:58 congratulations on what you've built so far at Traversal. Thank you. Thanks so much. [Music]
+40:15 [Music]

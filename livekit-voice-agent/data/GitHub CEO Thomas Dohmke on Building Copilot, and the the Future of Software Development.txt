@@ -1,0 +1,5620 @@
+00:00 the human brain is still so much more
+00:02 
+
+00:02 advanced than than uh the Transformer
+00:05 
+
+00:05 models and the diffusion models and and
+00:07 
+
+00:07 the other types of models that we have
+00:08 
+
+00:08 to image recognition and whatnot that we
+00:10 
+
+00:10 have today um and you know it remains to
+00:12 
+
+00:12 be seen if you can kind of like add that
+00:15 
+
+00:15 sentience piece to it but today I'm I'm
+00:18 
+
+00:18 not seeing it and I haven't seen any
+00:20 
+
+00:20 research that telling me that that's
+00:22 
+
+00:22 coming anytime soon
+00:25 
+
+00:25 [Music]
+00:40 
+
+00:40 hi everyone welcome to training data
+00:43 
+
+00:43 today we host Thomas Dom CEO of GitHub
+00:45 
+
+00:45 Thomas has an ambitious vision for
+00:47 
+
+00:47 enabling a world of 1 billion developers
+00:50 
+
+00:50 and bringing agents through the
+00:51 
+
+00:51 end-to-end developer workflow and into
+00:53 
+
+00:53 adjacent categories like code security
+00:56 
+
+00:56 he even hints at the progress he thinks
+00:58 
+
+00:58 the industry will make on sweet bench
+00:59 
+
+00:59 over the next few years some categories
+01:02 
+
+01:02 he's excited about in AI outside of
+01:04 
+
+01:04 developer tools and whether he thinks a
+01:06 
+
+01:06 new architecture will overtake the
+01:09 
+
+01:09 Transformer today we're so excited to
+01:11 
+
+01:11 introduce our special guest Thomas Dom
+01:14 
+
+01:14 CEO of GitHub hey and thank you so much
+01:16 
+
+01:16 for having me Thomas we're so excited to
+01:18 
+
+01:18 dive into the GitHub and co-pilot story
+01:20 
+
+01:20 in particular today um maybe to kick off
+01:23 
+
+01:23 we'd love to learn a little bit about
+01:24 
+
+01:24 your personal background you have a very
+01:26 
+
+01:26 interesting story having grown up in
+01:28 
+
+01:28 East Berlin before the wall fell um and
+01:31 
+
+01:31 then starting your first company that
+01:33 
+
+01:33 brought you into the United States when
+01:35 
+
+01:35 Microsoft acquired the company how did
+01:37 
+
+01:37 your background and upbringing really
+01:39 
+
+01:39 shape who you are today I think you know
+01:41 
+
+01:41 I'm living a very normal life not the
+01:43 
+
+01:43 American dream in a house with a wife
+01:45 
+
+01:45 and two kids um I think what shaped
+01:47 
+
+01:47 really um my journey was the passion for
+01:50 
+
+01:50 software development early you know when
+01:52 
+
+01:52 I was um uh in 11year old or so it was
+01:55 
+
+01:55 still East Germany and West Germany is
+01:57 
+
+01:57 there was the wall uh between the two
+01:59 
+
+01:59 parts of Berlin and saw computers for
+02:01 
+
+02:01 the first time I couldn't buy one but I
+02:03 
+
+02:03 in school we had one on the geography
+02:04 
+
+02:04 lab and a friend of mine and I we
+02:06 
+
+02:06 started uh uh we know playing with that
+02:09 
+
+02:09 learning to code you had to code to even
+02:11 
+
+02:11 do anything with a machine you know you
+02:13 
+
+02:13 understand some basic to even load a
+02:15 
+
+02:15 program and then as the wall fell I
+02:17 
+
+02:17 bought a Commodore 64 and later my first
+02:19 
+
+02:19 PC a 386 dx40 wow and so I you know as
+02:24 
+
+02:24 as a teenager I spent most of my time uh
+02:27 
+
+02:27 coding and um you know started a company
+02:30 
+
+02:30 it wasn't at that time really a startup
+02:32 
+
+02:32 we just that insurance software as in
+02:34 
+
+02:34 the late 90s that wasn't most of
+02:36 
+
+02:36 insurance agents didn't have software
+02:37 
+
+02:37 yet somewhere working on Main frames and
+02:39 
+
+02:39 others just had you know people in front
+02:41 
+
+02:41 of them and then I moved to South
+02:43 
+
+02:43 Germany to work for Mercedes and then I
+02:45 
+
+02:45 had you know the startup that got
+02:47 
+
+02:47 acquired by Microsoft but it's really
+02:48 
+
+02:48 this passion for doing stuff with
+02:51 
+
+02:51 software being creative with software
+02:52 
+
+02:52 and I think the fascinating thing back
+02:54 
+
+02:54 you know in the '90s and it's still true
+02:55 
+
+02:55 today is that you can start you know uh
+02:58 
+
+02:58 very easily uh there's not a lot of
+02:60 
+
+02:60 capital investment required and um if
+03:03 
+
+03:03 you if you make a mistake you can just
+03:04 
+
+03:04 start from scratch you know and then and
+03:06 
+
+03:06 I think that's what makes this so so so
+03:09 
+
+03:09 cool to build software and that gave you
+03:11 
+
+03:11 the love for building and fixing things
+03:12 
+
+03:12 even today with robotic lawn mowers in
+03:15 
+
+03:15 your own home yes well and it gives me
+03:18 
+
+03:18 the love you know as the CEO of GitHub
+03:20 
+
+03:20 uh to build software for software
+03:22 
+
+03:22 developers I think that's the really
+03:23 
+
+03:23 cool thing about being at GitHub we're
+03:25 
+
+03:25 building the tools that other developers
+03:27 
+
+03:27 are using and we we always say you know
+03:29 
+
+03:29 we put the Developers first and that I
+03:31 
+
+03:31 think is you know the dream job for me I
+03:34 
+
+03:34 get to speak with a lot of developers I
+03:35 
+
+03:35 get to build software for developers and
+03:38 
+
+03:38 um and I get to speak you know to to
+03:40 
+
+03:40 many developers um here in Silicon
+03:42 
+
+03:42 Valley I think what many might not know
+03:44 
+
+03:44 about you outside of Microsoft is that
+03:46 
+
+03:46 you were actually you played a pivotal
+03:48 
+
+03:48 role in um sponsoring Microsoft's
+03:52 
+
+03:52 acquisition of GitHub back in 2018 U can
+03:55 
+
+03:55 you share take us back to that moment
+03:56 
+
+03:56 and share a little bit about what was
+03:58 
+
+03:58 your vision for GitHub back then yeah so
+04:00 
+
+04:00 in 2018 I was a product manager at
+04:02 
+
+04:02 Microsoft working for net Freedman uh
+04:04 
+
+04:04 who at the time was the CVP for mobile
+04:07 
+
+04:07 developer tools and N had the idea of of
+04:10 
+
+04:10 of buying a GitHub um and making GitHub
+04:12 
+
+04:12 part of Microsoft and so he and a few
+04:15 
+
+04:15 folks in his team uh were kind of like
+04:17 
+
+04:17 strategizing of how can we pull that off
+04:20 
+
+04:20 and and Pitch it to SAA and The Bard and
+04:22 
+
+04:22 and as the uh deal um got announced
+04:25 
+
+04:25 actually you know um about six years
+04:26 
+
+04:26 away from that um at the time of this
+04:28 
+
+04:28 recording June 4 2018 is when we
+04:31 
+
+04:31 announced the deal um I became the deal
+04:33 
+
+04:33 integration manager which was was the
+04:35 
+
+04:35 role within Microsoft that runs around
+04:37 
+
+04:37 the whole company making sure all the
+04:40 
+
+04:40 pieces you know from legal to HR
+04:42 
+
+04:42 finances and product and Engineering
+04:44 
+
+04:44 come together to get that deal through
+04:46 
+
+04:46 the regulatory approval and and
+04:47 
+
+04:47 ultimately now uh getting us to a
+04:50 
+
+04:50 successful day Zero which then happened
+04:51 
+
+04:51 in October 2018 and that's that's how
+04:54 
+
+04:54 how ultimately came to
+04:56 
+
+04:56 GitHub um what did you envision GitHub
+04:58 
+
+04:58 becoming um the potential it had as part
+05:01 
+
+05:01 of the GitHub
+05:02 
+
+05:02 Universe I think you know at the time we
+05:04 
+
+05:04 were thinking there's so much potential
+05:06 
+
+05:06 for GitHub that's still uh you know to
+05:09 
+
+05:09 be to be explored and to be realized
+05:11 
+
+05:11 that GitHub uh started in with the first
+05:13 
+
+05:13 commit in in late 2007 uh launched in
+05:16 
+
+05:16 2008 you know very quickly became a new
+05:19 
+
+05:19 way of of developers working together
+05:21 
+
+05:21 you know social coding uh uh was
+05:23 
+
+05:23 invented by by Chris and and the other
+05:25 
+
+05:25 Founders and um it evolved into this
+05:28 
+
+05:28 into two-sided product the home of Open
+05:31 
+
+05:31 Source where many open source developers
+05:32 
+
+05:32 were collaborating and the place where
+05:34 
+
+05:34 many um startups and ultimately
+05:36 
+
+05:36 Enterprises uh were building their
+05:38 
+
+05:38 software and often that you know two-
+05:40 
+
+05:40 seted equation was that this the
+05:42 
+
+05:42 companies wanted to work exactly like
+05:44 
+
+05:44 open source developers work which is
+05:45 
+
+05:45 boundary less you know in the world of
+05:47 
+
+05:47 Open Source you don't really care where
+05:50 
+
+05:50 your collaborator sits where they're
+05:51 
+
+05:51 from what their education is they don't
+05:53 
+
+05:53 sit in an or chart and and you know
+05:56 
+
+05:56 often you don't even know their real
+05:57 
+
+05:57 name all you know is the handle and then
+05:59 
+
+05:59 the code that they want to contribute
+06:01 
+
+06:01 back to the project and I think many
+06:03 
+
+06:03 companies don't have that you have silos
+06:05 
+
+06:05 and you know when you get an email
+06:07 
+
+06:07 you're like wait who is this and why are
+06:09 
+
+06:09 they emailing me and why do you uh why
+06:11 
+
+06:11 do you want to be involved in my project
+06:13 
+
+06:13 and so companies want to burn down these
+06:15 
+
+06:15 these World Gardens and have a similar
+06:17 
+
+06:17 collaboration model and that's what
+06:19 
+
+06:19 GitHub um symbolized you know in 2018
+06:21 
+
+06:21 but there was so much more to do you
+06:23 
+
+06:23 know to provide something like get up
+06:25 
+
+06:25 actions that allows developers not only
+06:27 
+
+06:27 to manage their source code and plan but
+06:29 
+
+06:29 also to build apps and and now
+06:31 
+
+06:31 ultimately with co-pilot to take it even
+06:33 
+
+06:33 a step further um and and making you
+06:35 
+
+06:35 know development a very different
+06:37 
+
+06:37 experience than it was 20 years or 30
+06:39 
+
+06:39 years ago when I started since you
+06:41 
+
+06:41 mentioned co-pilot yeah uh I'm dying to
+06:44 
+
+06:44 ask you about the the behind the scenes
+06:46 
+
+06:46 view yeah on what is you know not only
+06:48 
+
+06:48 the most successful Enterprise AI
+06:50 
+
+06:50 application today but I believe the
+06:52 
+
+06:52 first llm Native application that was
+06:54 
+
+06:54 really built um built and launched like
+06:57 
+
+06:57 I guess was it part of the original
+06:59 
+
+06:59 acquisition thesis at the time that you
+07:01 
+
+07:01 might be able to build something like
+07:02 
+
+07:02 co-pilots eventually who's whose idea
+07:04 
+
+07:04 was it to do something like co-pilots
+07:06 
+
+07:06 and like was it did everyone say yes
+07:08 
+
+07:08 this is going to work or was it was it
+07:10 
+
+07:10 like this is a crazy idea this is a
+07:11 
+
+07:11 moonshot it's never going to work like
+07:13 
+
+07:13 take us back to the origin story so the
+07:15 
+
+07:15 original you know acquisition thesis had
+07:17 
+
+07:17 like a little paragraph in it about AI
+07:20 
+
+07:20 but I think that was more like a
+07:21 
+
+07:21 moonshot than like the pop idea at the
+07:24 
+
+07:24 time what really happened in in mid 2020
+07:27 
+
+07:27 is um that you know Transformer models
+07:30 
+
+07:30 um you know the the paper came out a few
+07:32 
+
+07:32 years before that but the first you know
+07:34 
+
+07:34 really working Transformer models was
+07:35 
+
+07:35 gbd3 uh was about to to launch we got
+07:38 
+
+07:38 Early Access we were lockdown right June
+07:41 
+
+07:41 2020 um on a on a call and um uh one of
+07:45 
+
+07:45 our um um team members ug deore um
+07:48 
+
+07:48 started you know uh typing into things
+07:51 
+
+07:51 into the model and everybody else was
+07:52 
+
+07:52 just looking uh what ug would be doing
+07:54 
+
+07:54 and then then so then in the actual
+07:56 
+
+07:56 question what can we prompted uh to
+07:58 
+
+07:58 write code and uh and can it write
+08:00 
+
+08:00 proper code and I think that was the
+08:01 
+
+08:01 first kind of like aha moment that it
+08:03 
+
+08:03 was actually able uh to to write the the
+08:06 
+
+08:06 real syntax and then then we tried
+08:08 
+
+08:08 different languages and we also found uh
+08:10 
+
+08:10 flaws you know in in the model and so we
+08:12 
+
+08:12 started um you know exploring that
+08:14 
+
+08:14 deeper outset of that of that Zoom call
+08:16 
+
+08:16 in in a research process you know doing
+08:18 
+
+08:18 analysis we asked uh uh you know uh some
+08:20 
+
+08:20 of our staff and principal Engineers to
+08:22 
+
+08:22 submit coding exercises we looked at
+08:24 
+
+08:24 python functions that were you know in
+08:27 
+
+08:27 open source repositories on on on GitHub
+08:29 
+
+08:29 and we work with open AI to uh take gbd3
+08:32 
+
+08:32 and find you in the model to be better
+08:34 
+
+08:34 at these coding tasks and and ultimately
+08:36 
+
+08:36 in August we had a model that was able
+08:38 
+
+08:38 to solve 92% of these coding exercises
+08:42 
+
+08:42 and in fact you know of the Python
+08:43 
+
+08:43 bodies you know that uh we extracted
+08:45 
+
+08:45 from from open source projects it was
+08:47 
+
+08:47 like 52% now naturally that percentage
+08:50 
+
+08:50 is lower because you have less specified
+08:52 
+
+08:52 code than in the coding exercise for an
+08:54 
+
+08:54 interview Loop right but that I think
+08:56 
+
+08:56 gave us this uh this moment of
+08:58 
+
+08:58 confidence saying we can build a product
+09:01 
+
+09:01 around this um the second moment I'd say
+09:03 
+
+09:03 was when we rolled it out uh to our
+09:05 
+
+09:05 internal engineers in early 2021 and uh
+09:08 
+
+09:08 they came back with saying this is this
+09:11 
+
+09:11 is fantastic I think the Net promotor
+09:13 
+
+09:13 score NPS was somewhere in the 70s and
+09:15 
+
+09:15 uh which is you I think for developer
+09:17 
+
+09:17 tools really really good uh most
+09:19 
+
+09:19 developers are skeptical you know don't
+09:21 
+
+09:21 touch my system you know never never
+09:23 
+
+09:23 touch the running system or process um
+09:25 
+
+09:25 and and many folks are you know kind of
+09:26 
+
+09:26 like have have created their Rock setup
+09:29 
+
+09:29 not not only on on their physical desks
+09:31 
+
+09:31 but also on their virtual desk of how
+09:33 
+
+09:33 they want to work and so we were really
+09:34 
+
+09:34 um you know intrigued by the in internal
+09:37 
+
+09:37 responses and then we launched the
+09:39 
+
+09:39 preview and uh um you know the team came
+09:41 
+
+09:41 back and saying it's writing
+09:43 
+
+09:43 25% um of python code in those files
+09:46 
+
+09:46 where where it was enabled and they I
+09:48 
+
+09:48 think we sent them back say go and
+09:50 
+
+09:50 verify the Telemetry that that can't be
+09:52 
+
+09:52 true right like because we couldn't
+09:53 
+
+09:53 believe it initially and then as we we
+09:56 
+
+09:56 saw this progressing um I think in uh my
+09:60 
+
+09:60 first keynote as CEO was in uh June 2022
+10:03 
+
+10:03 so now you know two years ago and I said
+10:05 
+
+10:05 it's writing 40% of the code and I think
+10:07 
+
+10:07 in 5 years it's going to write 80% of
+10:09 
+
+10:09 the codes in those F sprs enabled so it
+10:12 
+
+10:12 happened really organically it wasn't
+10:13 
+
+10:13 like you were sitting in a room
+10:14 
+
+10:14 whiteboarding like co-pilot is going to
+10:16 
+
+10:16 be the next iteration it was like the
+10:18 
+
+10:18 model proved to you how great it was and
+10:20 
+
+10:20 and just seeing the model performance
+10:22 
+
+10:22 and seeing usage like really like it
+10:25 
+
+10:25 organically built up from going back you
+10:27 
+
+10:27 know to the original Theses uh for
+10:28 
+
+10:28 GitHub right we wanted to make make
+10:30 
+
+10:30 developers life easier and as we are
+10:32 
+
+10:32 company building software we have our
+10:34 
+
+10:34 own software developers and Microsoft
+10:36 
+
+10:36 has you know 70,000 or so of of them and
+10:39 
+
+10:39 so we understand uh how software
+10:41 
+
+10:41 developers work because we have so many
+10:42 
+
+10:42 of them and you know we we live the life
+10:45 
+
+10:45 of many of our customers which is we
+10:46 
+
+10:46 have way too many ideas we're moving way
+10:48 
+
+10:48 too slow you know at least in our
+10:50 
+
+10:50 feeling um you know Amazon delivers my P
+10:53 
+
+10:53 package faster then then we're
+10:54 
+
+10:54 implementing some features the also the
+10:56 
+
+10:56 expect expectations have shifted
+10:58 
+
+10:58 significantly but it's it's this the
+11:00 
+
+11:00 backlog is endless and the amount of
+11:03 
+
+11:03 ideas um that we can brainstorm on
+11:05 
+
+11:05 Virtual whiteboards GitHub is a remote
+11:06 
+
+11:06 company so we don't often meet in in
+11:08 
+
+11:08 real physical B in front of real
+11:10 
+
+11:10 physical whiteboards but um and then the
+11:13 
+
+11:13 other side is all the other work that we
+11:14 
+
+11:14 also have to do you know compliance
+11:16 
+
+11:16 security accessibility you know
+11:18 
+
+11:18 Enterprise requirements uh privacy
+11:21 
+
+11:21 regulations uh European you know AI act
+11:25 
+
+11:25 and digital markets act and and all
+11:26 
+
+11:26 these things also cause developer work
+11:28 
+
+11:28 and so we're constant L everybody's
+11:30 
+
+11:30 constantly struggling with the length of
+11:32 
+
+11:32 these backlogs and so if you will the
+11:35 
+
+11:35 intrinsic motivation was let's bring the
+11:37 
+
+11:37 effort down to right software and and
+11:39 
+
+11:39 make it joyful again what do you think
+11:42 
+
+11:42 made co-pilot so good at the time and
+11:44 
+
+11:44 also going forward today obviously GB3
+11:47 
+
+11:47 was great even you know back then but
+11:50 
+
+11:50 also I think a lot of people might not
+11:51 
+
+11:51 know all the value that you have brought
+11:54 
+
+11:54 or GitHub brought in the both public and
+11:56 
+
+11:56 proprietary data around code that GitHub
+11:58 
+
+11:58 owned can can you share a little bit
+11:60 
+
+11:60 more about that and and also how you
+12:01 
+
+12:01 think about that going forward I think
+12:03 
+
+12:03 the key ingredient you know of the
+12:04 
+
+12:04 original co-pilot which was on the auto
+12:07 
+
+12:07 completion right like you would type in
+12:08 
+
+12:08 your editor and it would complete you
+12:10 
+
+12:10 know the next line uh but it could also
+12:12 
+
+12:12 complete multiple lines of code you know
+12:15 
+
+12:15 complex algorithms or simple algorithms
+12:17 
+
+12:17 some of the demos we often chose to
+12:19 
+
+12:19 implement a sorting algorithm like
+12:21 
+
+12:21 bubble sort or prime number detection uh
+12:24 
+
+12:24 and it can just write you know those 10
+12:25 
+
+12:25 lines of Code by just a simple um prompt
+12:28 
+
+12:28 which is a comment in the code or
+12:29 
+
+12:29 writing the method declaration and so
+12:31 
+
+12:31 getting you know into the editor where
+12:33 
+
+12:33 developers already write code not
+12:35 
+
+12:35 changing the way they work but giving
+12:36 
+
+12:36 them you know ideas while they're typing
+12:39 
+
+12:39 I think that was the key moment other
+12:41 
+
+12:41 than obviously the model being good
+12:43 
+
+12:43 enough and an open a ey tuning that
+12:44 
+
+12:44 model uh on on publicly available source
+12:47 
+
+12:47 code from GitHub um you know GitHub
+12:50 
+
+12:50 GitHub didn't give special access to
+12:52 
+
+12:52 openi uh openi was just able to to
+12:55 
+
+12:55 access our source code in the same way
+12:56 
+
+12:56 that you know many other startups are
+12:57 
+
+12:57 now doing that uh either direct access
+13:00 
+
+13:00 you know through API or through archive
+13:02 
+
+13:02 programs like the internet archive and
+13:04 
+
+13:04 the software Heritage um and we have we
+13:07 
+
+13:07 actually have an established partnership
+13:08 
+
+13:08 with them to to stream our open source
+13:11 
+
+13:11 code over there so it can be archived
+13:12 
+
+13:12 you know for for until the end of time
+13:15 
+
+13:15 and so that of course the model got
+13:17 
+
+13:17 tuned to be good enough but then the UI
+13:20 
+
+13:20 and the user the user experience I think
+13:22 
+
+13:22 was crucial it wasn't you know AI is now
+13:24 
+
+13:24 in everybody's mind but the truth is our
+13:27 
+
+13:27 cell phones have you know some kind of
+13:28 
+
+13:28 AI built in for for a long time your
+13:30 
+
+13:30 keyboard is predicting the next word
+13:32 
+
+13:32 with some kind of machine learning
+13:33 
+
+13:33 algorithms your your photo library you
+13:35 
+
+13:35 can just go in there and search for
+13:36 
+
+13:36 license plate and find all the photos of
+13:38 
+
+13:38 the casts that you took to remember what
+13:40 
+
+13:40 the license plate you have um and then
+13:42 
+
+13:42 and that's AI you know image recognition
+13:44 
+
+13:44 but that nobody perceives that as AI
+13:46 
+
+13:46 it's just a cool user feature and so I
+13:48 
+
+13:48 think that also was the the core
+13:50 
+
+13:50 ingredient um of of co-pilot we meeting
+13:52 
+
+13:52 developers where they are and they're
+13:53 
+
+13:53 making their life better and then I
+13:55 
+
+13:55 think you know the name itself um uh was
+13:58 
+
+13:58 also a stroke of Genius
+14:00 
+
+14:00 one of other our other you know
+14:02 
+
+14:02 developers um Alex came up with the idea
+14:05 
+
+14:05 um to to name this co-pilot as Nat uh uh
+14:08 
+
+14:08 is is a a hobby pilot and and so that's
+14:11 
+
+14:11 where the name is coming from so it's
+14:13 
+
+14:13 like you know I'm thinking about what
+14:14 
+
+14:14 could I name this so you know the my my
+14:16 
+
+14:16 boss is the name is is resonating with
+14:19 
+
+14:19 him wow that's so interesting I didn't
+14:21 
+
+14:21 know that um if you could go back to
+14:23 
+
+14:23 2020 2021 is there anything that you
+14:26 
+
+14:26 might do differently you know and
+14:28 
+
+14:28 hindsight you can always move faster and
+14:30 
+
+14:30 and be I think more convicted of of
+14:32 
+
+14:32 those ideas I think in the beginning we
+14:34 
+
+14:34 kept the team intentionally small small
+14:36 
+
+14:36 teams can can move fast um we call this
+14:38 
+
+14:38 how big was the team um I think the
+14:40 
+
+14:40 original staffers were like three people
+14:42 
+
+14:42 but that's obviously uh a staff
+14:44 
+
+14:44 researcher sorry or or principal
+14:46 
+
+14:46 researchers but um I think you know that
+14:48 
+
+14:48 that's cheating a little bit in the
+14:50 
+
+14:50 sense that of course there was a team at
+14:51 
+
+14:51 op uh there was a team in or multiple
+14:54 
+
+14:54 teams in Microsoft both on the research
+14:56 
+
+14:56 side and on the you know inference side
+14:58 
+
+14:58 the model inference side in fact you
+15:00 
+
+15:00 know on the model training side to even
+15:01 
+
+15:01 enable the model so of course in the
+15:03 
+
+15:03 bigger partnership between Microsoft
+15:05 
+
+15:05 open and and GitHub it was a larger team
+15:07 
+
+15:07 but the original paper was written uh by
+15:10 
+
+15:10 by three researchers and and then you
+15:12 
+
+15:12 know 100 people so are mentioned in the
+15:14 
+
+15:14 credits uh and then we move fast with I
+15:16 
+
+15:16 think a stub of five and then I think it
+15:19 
+
+15:19 increased to 10 teams and of course
+15:20 
+
+15:20 today the team is much smaller but we
+15:22 
+
+15:22 still have what we call get up next and
+15:25 
+
+15:25 incubation uh team that now works on on
+15:27 
+
+15:27 co-pilot workspace and iterates on on
+15:29 
+
+15:29 new ideas uh it's almost like you know
+15:31 
+
+15:31 startup incubator within the company and
+15:34 
+
+15:34 they're picking up ideas and the main
+15:35 
+
+15:35 difference to you know our or Mainline
+15:37 
+
+15:37 engineering teams and and product
+15:39 
+
+15:39 management teams are that they got to
+15:41 
+
+15:41 have the mindset that most of their
+15:43 
+
+15:43 ideas will never go into production
+15:45 
+
+15:45 right they it's kind of like this um
+15:47 
+
+15:47 okas won't work uh because your key
+15:49 
+
+15:49 result is to throw away most of their
+15:51 
+
+15:51 ideas and start fresh with another idea
+15:53 
+
+15:53 and I think that's where a lot of the
+15:55 
+
+15:55 Innovation speed is coming from I want
+15:58 
+
+15:58 to go back to what you said a minute ago
+15:59 
+
+15:59 about how you know you handed over you
+16:02 
+
+16:02 know control of the model effectively to
+16:04 
+
+16:04 open AI was it scary CU like the brain
+16:06 
+
+16:06 of your AI application is actually being
+16:08 
+
+16:08 built by another company not you know
+16:10 
+
+16:10 you know like developers under your
+16:12 
+
+16:12 payroll your control like how do you
+16:14 
+
+16:14 think about was it was it an easy
+16:16 
+
+16:16 decision to kind of out like uh to
+16:18 
+
+16:18 partner with uh a different external
+16:20 
+
+16:20 model provider and I'm curious how you
+16:22 
+
+16:22 think about the value that Microsoft and
+16:25 
+
+16:25 GitHub provide to end users versus the
+16:27 
+
+16:27 value that open AI provides to end users
+16:30 
+
+16:30 and then where you seek to to really
+16:32 
+
+16:32 bring bring value to users to me it
+16:35 
+
+16:35 wasn't scary at all I know I'm sure you
+16:37 
+
+16:37 know there were folks in the team and in
+16:39 
+
+16:39 the company that thought we should have
+16:41 
+
+16:41 our own models instead but in reality
+16:43 
+
+16:43 you know if you look at GitHub as a
+16:45 
+
+16:45 company that was born in the cloud of
+16:47 
+
+16:47 course we have always relied on Partners
+16:49 
+
+16:49 to build our stack um you know we have I
+16:52 
+
+16:52 to my memory we never built Hardware
+16:54 
+
+16:54 ourselves um uh and where we have metal
+16:57 
+
+16:57 in in data centers or had metal in data
+16:59 
+
+16:59 centers for a while uh uh the data
+17:01 
+
+17:01 center itself wasn't built by us either
+17:02 
+
+17:02 neither was the CPU and and the memory
+17:05 
+
+17:05 and all and the network infrastructure
+17:07 
+
+17:07 and then even if you go higher in that
+17:09 
+
+17:09 in that stack you know GitHub is is
+17:11 
+
+17:11 built on top of Open Source and so are
+17:13 
+
+17:13 the majority of software applications in
+17:15 
+
+17:15 fact um we love sharing a statistic that
+17:18 
+
+17:18 says 90% of the stack of most of most
+17:20 
+
+17:20 applications even if the application
+17:22 
+
+17:22 itself is closed source is in fact based
+17:24 
+
+17:24 on on the work of of the open source
+17:26 
+
+17:26 Community um you know from the operating
+17:28 
+
+17:28 system the Linux operat system is
+17:29 
+
+17:29 ubiquitous today on on servers to uh
+17:32 
+
+17:32 container technology like Docker and
+17:34 
+
+17:34 kubernetes to thousands sometimes T of
+17:37 
+
+17:37 thousands of Open Source libraries and
+17:39 
+
+17:39 so the model just St flows naturally in
+17:42 
+
+17:42 that stack and you know we uh at
+17:44 
+
+17:44 Microsoft think about this as the
+17:45 
+
+17:45 co-pilot stack with with different
+17:47 
+
+17:47 layers Hardware the model the the curdle
+17:49 
+
+17:49 if you will like the infrastructure
+17:51 
+
+17:51 response to the AI filtering and whatnot
+17:53 
+
+17:53 then you get into the application layer
+17:55 
+
+17:55 uh with the the you know the AI co-pilot
+17:58 
+
+17:58 and then the extensible ility on top of
+18:00 
+
+18:00 that and so if you look at these layers
+18:02 
+
+18:02 in the stack you know Microsoft has
+18:04 
+
+18:04 strengths uh and um and partners um um
+18:08 
+
+18:08 and in fact you know in in some form
+18:10 
+
+18:10 Microsoft is is is um involved in all
+18:13 
+
+18:13 parts of that stack um you know the
+18:14 
+
+18:14 copile PC you know has has a custom uh
+18:17 
+
+18:17 chip that Microsoft is developing uh
+18:20 
+
+18:20 with Partners um you know it has we have
+18:22 
+
+18:22 our own models with 53 and we have
+18:24 
+
+18:24 partnership models with openi but we're
+18:25 
+
+18:25 also hosting Mistral and Lama on AIA uh
+18:28 
+
+18:28 we of course have you know large cloud
+18:30 
+
+18:30 and we have a lot of expertise and
+18:31 
+
+18:31 responsible Ai and then we have lots of
+18:32 
+
+18:32 application we're building ourselves and
+18:34 
+
+18:34 we're enabling uh others you know to to
+18:36 
+
+18:36 to build those applications and so
+18:38 
+
+18:38 two-part questions are always hard for
+18:40 
+
+18:40 me I to forget the second part but I
+18:41 
+
+18:41 think you know that actually describes
+18:43 
+
+18:43 the relationship very well um you know
+18:45 
+
+18:45 it allowed us to move really fast
+18:46 
+
+18:46 because we could rely on Partners like
+18:48 
+
+18:48 open AI not only building gp3 and then
+18:51 
+
+18:51 codex but also then you know in the
+18:53 
+
+18:53 innovating with GP 3.5 and chat GPT GPT
+18:56 
+
+18:56 4 now we have gpt2 40 uh we have micr
+18:59 
+
+18:59 soft you know with with a large
+19:00 
+
+19:00 infrastructure that um builds you know
+19:02 
+
+19:02 supercomputers for training but also
+19:04 
+
+19:04 infrastructure to run inference and you
+19:07 
+
+19:07 know co-pilot today runs in multiple
+19:09 
+
+19:09 data centers spread around the world um
+19:11 
+
+19:11 in different regions so the developers
+19:12 
+
+19:12 that sit in France you now connect to a
+19:15 
+
+19:15 GPU uh to aure instance that's much
+19:18 
+
+19:18 closer to them to enable low latency
+19:20 
+
+19:20 right and so Microsoft gives us a lot of
+19:22 
+
+19:22 infrastructure a lot of expertise and
+19:24 
+
+19:24 responsible Ai and of course a lot of uh
+19:26 
+
+19:26 uh commercial um distribution yeah very
+19:29 
+
+19:29 very complicated layer cake that makes
+19:30 
+
+19:30 the magic come together would GitHub
+19:33 
+
+19:33 ever want to build its own models or
+19:34 
+
+19:34 just use best-in-class models out there
+19:37 
+
+19:37 you know obviously there's always the
+19:39 
+
+19:39 desire of Engineers to build uh their
+19:41 
+
+19:41 own stuff and and I would you know I
+19:43 
+
+19:43 would not deny that we have played with
+19:46 
+
+19:46 own ideas on on models um I think you
+19:49 
+
+19:49 know the almost learning team goes back
+19:51 
+
+19:51 um um almost I think it actually had it
+19:53 
+
+19:53 before Microsoft acquired GitHub um and
+19:56 
+
+19:56 then we obviously have fine tuned models
+19:58 
+
+19:58 um ourselves and we have fine tun models
+20:00 
+
+20:00 with open ey and Azure and we're working
+20:02 
+
+20:02 with customers on them being able to
+20:05 
+
+20:05 customize models um based on the code
+20:07 
+
+20:07 that they have in their repositories and
+20:10 
+
+20:10 you know never say never what the what
+20:11 
+
+20:11 the future may bring but today we're
+20:13 
+
+20:13 really happy with the models that we
+20:15 
+
+20:15 have and we're constantly looking into
+20:17 
+
+20:17 the market of What Not only open ey
+20:18 
+
+20:18 provides to us but also what what others
+20:21 
+
+20:21 have so co-pilots is already one of the
+20:24 
+
+20:24 most successful generative AI
+20:25 
+
+20:25 applications in terms of user scale
+20:28 
+
+20:28 usage Etc what are some of the latest
+20:31 
+
+20:31 metrics you can share and and what are
+20:33 
+
+20:33 the metrics that you're most proud of I
+20:35 
+
+20:35 think the one I'm most proud proud of is
+20:36 
+
+20:36 the developer happiness scores and if
+20:38 
+
+20:38 you look at survey data both the service
+20:40 
+
+20:40 that we have done but also the service
+20:42 
+
+20:42 that now our customers um either
+20:44 
+
+20:44 publishing themselves or bringing back
+20:46 
+
+20:46 to us it's clear that software
+20:48 
+
+20:48 developers after they have tried
+20:49 
+
+20:49 co-pilot after they got over the initial
+20:52 
+
+20:52 adoption hurdle or
+20:53 
+
+20:53 skepticism they most of them love using
+20:56 
+
+20:56 copy and most of them report that they
+20:58 
+
+20:58 are more ful filed you know uh they're
+21:00 
+
+21:00 more satisfied more happy they feel like
+21:03 
+
+21:03 they're requiring less mental energy to
+21:05 
+
+21:05 to get the job done they need to do less
+21:07 
+
+21:07 spoiler plate and I think that alone is
+21:10 
+
+21:10 is really making me happy and um there's
+21:12 
+
+21:12 lots of you know numbers that I can
+21:14 
+
+21:14 throw out but I think the the general
+21:15 
+
+21:15 gist is no matter what developer I talk
+21:17 
+
+21:17 to those that have used co-pilot for a
+21:19 
+
+21:19 while no longer want to work without a
+21:21 
+
+21:21 co-pilot and then the other side is you
+21:24 
+
+21:24 know the productivity metrix of making
+21:26 
+
+21:26 you know developers more productive
+21:28 
+
+21:28 which I think matters to the developers
+21:30 
+
+21:30 too but it also of course matters to
+21:32 
+
+21:32 their management chain and and and their
+21:34 
+
+21:34 leadership and and in the sense of you
+21:36 
+
+21:36 know getting more stuff than delivering
+21:38 
+
+21:38 more value uh to to their end customers
+21:41 
+
+21:41 and so you know today today we're happy
+21:44 
+
+21:44 to say that we have more than 1.8
+21:46 
+
+21:46 million paid subscribers on on copilot
+21:48 
+
+21:48 and more than 50,000
+21:50 
+
+21:50 organizations and um and that really
+21:53 
+
+21:53 makes us happy um at looking looking at
+21:55 
+
+21:55 that growth and you know we here at the
+21:57 
+
+21:57 so's office it feels like we we like a
+21:60 
+
+21:60 high growth startup and and that's a
+22:02 
+
+22:02 good place to be in it's awesome well
+22:05 
+
+22:05 we're still on our wall somewhere um
+22:07 
+
+22:07 actually we know exactly where we'll
+22:08 
+
+22:08 show you me too the creative
+22:11 
+
+22:11 minds yeah um was there anything that
+22:13 
+
+22:13 surprised you in terms of copilot's
+22:15 
+
+22:15 impact after its launch and even today I
+22:17 
+
+22:17 think you know it's the 25% certainly
+22:20 
+
+22:20 surprised us um the quick turnaround
+22:23 
+
+22:23 from the skepticism after we announced
+22:25 
+
+22:25 this uh in June uh 2021 I don't even I
+22:29 
+
+22:29 think we had a very short blog post and
+22:31 
+
+22:31 then just a web page with examples and
+22:33 
+
+22:33 and and animations showing how it would
+22:35 
+
+22:35 work and I think folks were looking at
+22:37 
+
+22:37 this and saying this is like a cool Tech
+22:39 
+
+22:39 demo but it doesn't actually work for me
+22:42 
+
+22:42 and I think the skepticism wasn't was
+22:44 
+
+22:44 that people had seen how GB3 at the time
+22:47 
+
+22:47 would work and they couldn't understand
+22:50 
+
+22:50 until trying it that it has the context
+22:52 
+
+22:52 of whatever you wrote in the file before
+22:54 
+
+22:54 before copilot suggestion comes and it
+22:57 
+
+22:57 considers adjacent tabs and things like
+22:60 
+
+22:60 that and so it magically picks up your
+23:03 
+
+23:03 style and it knows about open source
+23:05 
+
+23:05 libraries that you're using not because
+23:07 
+
+23:07 you have opened those libraries just
+23:08 
+
+23:08 because you have an import statement at
+23:10 
+
+23:10 the top and because the model was
+23:11 
+
+23:11 trained on such a large corpos of data
+23:15 
+
+23:15 that um it can provide you know the
+23:18 
+
+23:18 calls into these open source libraries
+23:20 
+
+23:20 and and so kind of like it feels to you
+23:22 
+
+23:22 that the co-pilot understands more about
+23:24 
+
+23:24 your project than you thought CHP 33 can
+23:27 
+
+23:27 do and I think that's where the original
+23:29 
+
+23:29 major came from the other thing is today
+23:32 
+
+23:32 you know when I observe people using
+23:34 
+
+23:34 co-pilot and and obviously chat GPT
+23:37 
+
+23:37 changed the whole game uh and brought in
+23:39 
+
+23:39 chat as a component we have now copilot
+23:41 
+
+23:41 chat is this natural language component
+23:44 
+
+23:44 and like using not only you know Cod and
+23:47 
+
+23:47 and Commons as a trigger but you know
+23:49 
+
+23:49 English and German and Brazilian
+23:51 
+
+23:51 Portuguese and uh uh we have Demos in
+23:54 
+
+23:54 India where Karen MV one of our folks
+23:56 
+
+23:56 there is demoing this in Hindi and so
+23:59 
+
+23:59 and then you can actually speak into
+24:01 
+
+24:01 into the co-pilot with voice detection
+24:03 
+
+24:03 uh in viral Studio code and then gives
+24:05 
+
+24:05 you the response back also in hindii and
+24:07 
+
+24:07 um and so it's really cool you know for
+24:09 
+
+24:09 anyone that wants to explore coding even
+24:11 
+
+24:11 if they're not fluent in English or in
+24:13 
+
+24:13 programming language um uh my kids are
+24:15 
+
+24:15 using it to find their own bugs in
+24:17 
+
+24:17 Python so they're coming you know
+24:19 
+
+24:19 they're no longer coming to me and it's
+24:21 
+
+24:21 like Daddy you have to find my bug it's
+24:22 
+
+24:22 kind of like well go and find your own
+24:24 
+
+24:24 bug and and and that also obviously uh
+24:27 
+
+24:27 helps them to to to
+24:29 
+
+24:29 you know develop their skills and it's a
+24:31 
+
+24:31 bit like you know um I often talk about
+24:34 
+
+24:34 um you know natural language will
+24:37 
+
+24:37 democratize access to software
+24:38 
+
+24:38 developers but it doesn't mean that
+24:40 
+
+24:40 everybody is immediately a senior or
+24:42 
+
+24:42 principal software developers in the
+24:44 
+
+24:44 same way that just because I buy a
+24:46 
+
+24:46 guitar um I I'm not as good as you know
+24:49 
+
+24:49 Keith Richards uh playing with the
+24:52 
+
+24:52 Rolling Stones right and and if you look
+24:54 
+
+24:54 at you know uh any professional band
+24:57 
+
+24:57 that's touring the world they're all
+24:58 
+
+24:58 still re C over and over again and I
+25:00 
+
+25:00 think this is like this idea that to be
+25:02 
+
+25:02 you know good in a craft you have to
+25:05 
+
+25:05 keep doing it that copilot does not take
+25:07 
+
+25:07 that away it just gives you another tool
+25:09 
+
+25:09 in in your toolbx I really like that
+25:12 
+
+25:12 analogy still believe in teaching your
+25:14 
+
+25:14 kids to code because that's like a
+25:15 
+
+25:15 debate on the internet now oh absolutely
+25:17 
+
+25:17 I mean so first of all you know the the
+25:20 
+
+25:20 human language is not deterministic
+25:22 
+
+25:22 right like you mean different things um
+25:24 
+
+25:24 you can mean different things by saying
+25:26 
+
+25:26 the same sentence and even you know the
+25:28 
+
+25:28 very
+25:30 
+
+25:30 German even the yet well now we can get
+25:34 
+
+25:34 into off topic debates about about yeses
+25:36 
+
+25:36 and knows when you're when you're when
+25:38 
+
+25:38 you're answering an a question with a
+25:41 
+
+25:41 negative in it right like you have not
+25:43 
+
+25:43 been to the grocery store do you answer
+25:45 
+
+25:45 that with yes or with no right and the
+25:47 
+
+25:47 Americans expected no even though you
+25:48 
+
+25:48 mean actually yes to that question but
+25:51 
+
+25:51 like look you know it's um human
+25:52 
+
+25:52 language is not deterministic and so uh
+25:55 
+
+25:55 code is with code you can very precise
+25:57 
+
+25:57 describe what the machine code is an
+25:59 
+
+25:59 abstraction layer on top of you know
+26:01 
+
+26:01 Assembly Language on top of the
+26:03 
+
+26:03 instruction set of the CPU or GPU that
+26:06 
+
+26:06 you know the the the processor or
+26:08 
+
+26:08 manufacturer like Intel or Nvidia has
+26:10 
+
+26:10 created right so it's just another
+26:12 
+
+26:12 abstraction layer human language is
+26:13 
+
+26:13 something completely different it's
+26:15 
+
+26:15 creative and and that's the power but it
+26:18 
+
+26:18 also means that there will be code
+26:20 
+
+26:20 involved one way or another and we're
+26:22 
+
+26:22 moving up the abstraction layer but we
+26:24 
+
+26:24 also spreading the meaning um and that
+26:27 
+
+26:27 that's truly powerful um but also means
+26:30 
+
+26:30 that there will be some conversion to
+26:32 
+
+26:32 code somewhere because the chip itself
+26:34 
+
+26:34 at least you know today uh uh is is
+26:37 
+
+26:37 requiring a deterministic instruction
+26:39 
+
+26:39 set yeah I love that um I'd love to talk
+26:41 
+
+26:41 about the future of co-pilots uh you've
+26:43 
+
+26:43 been announcing new products in Rapid
+26:46 
+
+26:46 Fire succession I think co-pilot X
+26:49 
+
+26:49 co-pilot Enterprise something around
+26:51 
+
+26:51 code security I believe and then uh
+26:54 
+
+26:54 workspaces most most recently can you
+26:56 
+
+26:56 tell us maybe about what each each of
+26:58 
+
+26:58 those things does and how you see them
+26:60 
+
+26:60 all fitting together in the grander
+27:02 
+
+27:02 vision for what you hope co-pilot
+27:03 
+
+27:03 becomes you know what you described with
+27:05 
+
+27:05 all these product names is one of part
+27:07 
+
+27:07 of our um mindset is that momentum is
+27:10 
+
+27:10 our energy in this in this age of AI
+27:12 
+
+27:12 moving fast and iterating Fast is
+27:14 
+
+27:14 crucial and so um you know we are having
+27:17 
+
+27:17 developed co-pilot from this original
+27:19 
+
+27:19 idea of autoc completion by adding chat
+27:21 
+
+27:21 we were developing autoc completion and
+27:23 
+
+27:23 then chat and then uh with chat we also
+27:26 
+
+27:26 announced something what we call copile
+27:28 
+
+27:28 X which the idea was we're bringing AI
+27:31 
+
+27:31 features into every part of the
+27:32 
+
+27:32 developer life cycle we're bringing
+27:34 
+
+27:34 co-pilot wherever developers are so you
+27:36 
+
+27:36 know while we added chat um to the
+27:38 
+
+27:38 editor we also added you know a little
+27:40 
+
+27:40 co-pilot icon into the input field where
+27:42 
+
+27:42 you write your uh commit message and
+27:45 
+
+27:45 that might be trivial right like
+27:46 
+
+27:46 everybody can write a commit message but
+27:48 
+
+27:48 it also means I I reduce my mental
+27:50 
+
+27:50 workload and I redu kind of like the
+27:53 
+
+27:53 bias that I have for the work that
+27:55 
+
+27:55 created myself right like for me
+27:56 
+
+27:56 everything is obvious that I just did
+27:58 
+
+27:58 for the last hour but for you when you
+28:00 
+
+28:00 want to review my my commit or my pull
+28:03 
+
+28:03 request it's not as obvious and so
+28:04 
+
+28:04 having an AI described that in a neutral
+28:07 
+
+28:07 form kind of like an an outset of
+28:08 
+
+28:08 describing what I just did is incredibly
+28:10 
+
+28:10 useful and it just keeps me in my flow
+28:12 
+
+28:12 and we added it to the debugger we added
+28:14 
+
+28:14 it you know to many different part of
+28:16 
+
+28:16 the life cycle already and uh with
+28:18 
+
+28:18 copile Enterprise we we bundled it into
+28:20 
+
+28:20 you know a a higher price um product um
+28:23 
+
+28:23 that uh allows Enterprises to customize
+28:26 
+
+28:26 co-pilot uh based on their institutional
+28:29 
+
+28:29 knowledge and Enterprise here means
+28:31 
+
+28:31 really any company um that has gone for
+28:35 
+
+28:35 more than a few weeks because they all
+28:36 
+
+28:36 immediately build institutional
+28:38 
+
+28:38 knowledge right how we work as a team
+28:40 
+
+28:40 how is our coding practices these are
+28:42 
+
+28:42 the libraries and languages that we use
+28:44 
+
+28:44 and so unless you're a student in a
+28:46 
+
+28:46 university uh that you know gets to have
+28:49 
+
+28:49 the free range of uh Technologies
+28:51 
+
+28:51 available at least when they when the
+28:53 
+
+28:53 professor allows that every time you
+28:55 
+
+28:55 join a company or join a different
+28:56 
+
+28:56 project you have to ramp up again how
+28:58 
+
+28:58 they're doing things and so cobart
+28:60 
+
+28:60 Enterprise lets companies customize the
+29:02 
+
+29:02 co-pilots to their institutional
+29:04 
+
+29:04 knowledge and it makes it really easy
+29:05 
+
+29:05 for me to join that company because I
+29:08 
+
+29:08 can now ask dumb questions without you
+29:10 
+
+29:10 judging me like you know imagine I would
+29:14 
+
+29:14 you know join here my first day was like
+29:16 
+
+29:16 why is Thomas asking all these questions
+29:18 
+
+29:18 shouldn't he already know all that he's
+29:20 
+
+29:20 you know been in professional life for a
+29:22 
+
+29:22 long time that's the challenge that we
+29:23 
+
+29:23 have when we join companies and we have
+29:24 
+
+29:24 the anxiety in our head that we can't
+29:26 
+
+29:26 ask too many questions before Steph says
+29:28 
+
+29:28 what the
+29:29 
+
+29:29 hell right and so that's I think the
+29:32 
+
+29:32 power of of co-pilot Enterprise That's
+29:33 
+
+29:33 The Power of bringing co-pilot into
+29:35 
+
+29:35 every part of the developer life cycle
+29:37 
+
+29:37 and and ultimately into every part of
+29:39 
+
+29:39 the of Our Lives you've also mentioned
+29:42 
+
+29:42 that agents are one of the most
+29:43 
+
+29:43 important next things for GitHub U maybe
+29:46 
+
+29:46 just to set the stage how would you
+29:47 
+
+29:47 describe an agent versus a co-pilot and
+29:50 
+
+29:50 can you give us a teaser for what types
+29:52 
+
+29:52 of agentic capabilities we should expect
+29:54 
+
+29:54 come into co-pilot soon yeah I would say
+29:57 
+
+29:57 you know co-pilot in agents is kind of
+29:59 
+
+29:59 like the same thing an an agent is using
+30:02 
+
+30:02 a model to get a task Done Right
+30:04 
+
+30:04 effectively it's looping with a model to
+30:06 
+
+30:06 to solve something for you and a
+30:08 
+
+30:08 co-pilot is an an agent of agents and it
+30:11 
+
+30:11 has multiple features uh available to it
+30:14 
+
+30:14 you know if you think about autoc
+30:15 
+
+30:15 completion well it's an agent that takes
+30:17 
+
+30:17 every keystroke you did and the context
+30:19 
+
+30:19 that you have in your editor it send it
+30:20 
+
+30:20 to model inference it gets a response
+30:22 
+
+30:22 back it might pick you know the best uh
+30:25 
+
+30:25 uh prediction and then it shows it to
+30:27 
+
+30:27 you and so we going to see more of these
+30:29 
+
+30:29 agents that take over more of our tasks
+30:32 
+
+30:32 and one of them that I'm most excited
+30:34 
+
+30:34 about is you know autofix and and the
+30:36 
+
+30:36 way it works is so you submit a pool
+30:37 
+
+30:37 requests and traditionally um you know
+30:40 
+
+30:40 some security scanning feature uh that
+30:43 
+
+30:43 that you have integrated into your
+30:44 
+
+30:44 pipeline find security vulnerabilities
+30:46 
+
+30:46 let's say you know a SQL injection or
+30:48 
+
+30:48 cite scripting well that's great except
+30:50 
+
+30:50 now now I cost more work for myself it's
+30:53 
+
+30:53 kind of like you have a Roomba but
+30:55 
+
+30:55 instead of vacuum your house it just
+30:57 
+
+30:57 shows you where the dirt is and then you
+30:58 
+
+30:58 have to go and and and vacuum yourself
+31:01 
+
+31:01 on that position so now with autofix
+31:03 
+
+31:03 we're actually not only showing you the
+31:04 
+
+31:04 security vulnerability we're also giving
+31:06 
+
+31:06 you the fix and that uses the AI model
+31:09 
+
+31:09 together with the vulnerability and the
+31:10 
+
+31:10 description and the code to basically
+31:13 
+
+31:13 solve that vulnerability for you and the
+31:15 
+
+31:15 initial results are are really
+31:16 
+
+31:16 impressive with some customers we see
+31:18 
+
+31:18 that we can burn through like 75 80% of
+31:21 
+
+31:21 their open alerts because everybody has
+31:24 
+
+31:24 those alerts and if you don't have any
+31:25 
+
+31:25 alerts right now I bet you you have them
+31:28 
+
+31:28 by mon Monday right that's the challenge
+31:30 
+
+31:30 in in this in this world of software
+31:31 
+
+31:31 security is everything is around us
+31:33 
+
+31:33 moving so fast there's always a new
+31:35 
+
+31:35 version of a uh uh um open source
+31:37 
+
+31:37 Library there's a new version of Linux
+31:39 
+
+31:39 or you know a new windows patch uh
+31:41 
+
+31:41 there's a new device coming uh along the
+31:44 
+
+31:44 way or new new uh Nvidia GPU and so we
+31:46 
+
+31:46 constantly are behind uh just keeping
+31:49 
+
+31:49 our applications up to date you know to
+31:52 
+
+31:52 the to the standard that is expected by
+31:54 
+
+31:54 our our customers and at the same time
+31:55 
+
+31:55 we have to build all that Innovation and
+31:58 
+
+31:58 and that's yeah super interesting cool
+31:59 
+
+31:59 stuff Y what else do you think is
+32:01 
+
+32:01 missing in the product road map like if
+32:03 
+
+32:03 if you could W wave a magic wand like
+32:06 
+
+32:06 what else is there to build that you're
+32:07 
+
+32:07 really excited about I mean I think
+32:09 
+
+32:09 there's still a lot of work to do on
+32:11 
+
+32:11 these agents um I think there's a lot of
+32:13 
+
+32:13 Agents um uh you can you can think about
+32:16 
+
+32:16 you know we we talked a little bit uh or
+32:18 
+
+32:18 you mentioned workpace before what
+32:21 
+
+32:21 co-pilot rockspace does it provides
+32:23 
+
+32:23 different agents to get you from idea to
+32:25 
+
+32:25 your P request to get you from idea to
+32:27 
+
+32:27 the code and the first one is the spec
+32:29 
+
+32:29 agent and what that actually does it
+32:31 
+
+32:31 helps you with your thought process so
+32:33 
+
+32:33 you know you write down an idea
+32:34 
+
+32:34 Implement some feature and it looks at
+32:36 
+
+32:36 your existing code base and it basically
+32:38 
+
+32:38 helps you then to reframe that idea now
+32:40 
+
+32:40 that's not only useful for developer but
+32:42 
+
+32:42 it's actually useful for a product
+32:43 
+
+32:43 manager right because it it may might
+32:45 
+
+32:45 tell you well Thomas this idea is is no
+32:48 
+
+32:48 way you can describe that with a single
+32:50 
+
+32:50 sentence and and a developer cannot
+32:52 
+
+32:52 Implement that in in in just a single
+32:54 
+
+32:54 ticket it needs to be an epic or or
+32:56 
+
+32:56 multiple different users stories right
+32:59 
+
+32:59 and then the next step is the plan agent
+33:01 
+
+33:01 that uh you know helps to figure out
+33:03 
+
+33:03 where to make the changes in the code
+33:04 
+
+33:04 base and and again you can kind of see
+33:07 
+
+33:07 here there's a lot of other benefits you
+33:09 
+
+33:09 get from that because it helps you to
+33:11 
+
+33:11 understand the code base because you
+33:13 
+
+33:13 know most codebases that are older than
+33:15 
+
+33:15 you know a few days have hundreds if not
+33:18 
+
+33:18 thousands of files and as as developers
+33:20 
+
+33:20 you have to navigate all those files and
+33:22 
+
+33:22 even if you have been in a codebase for
+33:23 
+
+33:23 a long time you still might miss out you
+33:25 
+
+33:25 know that one file that you haven't
+33:27 
+
+33:27 touched for for while and and you have
+33:29 
+
+33:29 to add you know a config statement there
+33:31 
+
+33:31 so it helps you understanding the code
+33:32 
+
+33:32 base and then the Implement agent um
+33:34 
+
+33:34 helps you um implementing the code
+33:36 
+
+33:36 change and every step in that way you're
+33:39 
+
+33:39 still in charge you can you know with
+33:42 
+
+33:42 natural language modify the bullet
+33:44 
+
+33:44 points of of each of these agents and
+33:46 
+
+33:46 then obviously you can modify the code
+33:48 
+
+33:48 at the end and so if you look at just
+33:50 
+
+33:50 these three agents you can easily start
+33:51 
+
+33:51 thinking about other agents that you
+33:53 
+
+33:53 might have along the way right for
+33:55 
+
+33:55 example the one that estimates the size
+33:57 
+
+33:57 um of of a ticket the story pointing
+33:59 
+
+33:59 agent as one example or another one is
+34:02 
+
+34:02 that you know once you have implemented
+34:03 
+
+34:03 the file well now you want to build run
+34:05 
+
+34:05 and debug uh the file and maybe you have
+34:07 
+
+34:07 an agent in the future that will just
+34:09 
+
+34:09 automatically fix you know any bugs that
+34:12 
+
+34:12 that were introduced by by the previous
+34:13 
+
+34:13 agents and so I think we're going to
+34:15 
+
+34:15 have more of these building blocks you
+34:17 
+
+34:17 know Lego blocks if you will available
+34:19 
+
+34:19 to us in fact you know uh uh uh you know
+34:22 
+
+34:22 if you look at Lego they have way more
+34:24 
+
+34:24 pieces types of pieces today than they
+34:26 
+
+34:26 used to have the model are much more
+34:28 
+
+34:28 complex and then you know you can uh uh
+34:31 
+
+34:31 buy you know um um NASA rockets and
+34:33 
+
+34:33 whatnot they need different pieces for
+34:35 
+
+34:35 that and I think that's kind of like the
+34:37 
+
+34:37 same way we should think about co-pilots
+34:39 
+
+34:39 they will have more of these building
+34:40 
+
+34:40 blocks that enable us in addition you
+34:43 
+
+34:43 know to more powerful models and a mix
+34:45 
+
+34:45 of models these building blocks will
+34:47 
+
+34:47 enable us to do more increasing
+34:48 
+
+34:48 modularity interesting um where is your
+34:51 
+
+34:51 ambition for GitHub take you or maybe
+34:54 
+
+34:54 even with GitHub co-pilot specifically
+34:55 
+
+34:55 take you as you think about what you
+34:57 
+
+34:57 alluded to from the perspective of
+34:59 
+
+34:59 deepening where you can go with just the
+35:01 
+
+35:01 software engineer to also expanding into
+35:03 
+
+35:03 potentially different personas PMS you
+35:05 
+
+35:05 mentioned maybe an Sr maybe a security
+35:08 
+
+35:08 engineer where does that you know the
+35:10 
+
+35:10 breath also take you yeah I mean first
+35:13 
+
+35:13 of all I think all those R to today are
+35:15 
+
+35:15 already collaborating on GitHub in in
+35:17 
+
+35:17 fact GitHub had always that Mantra that
+35:19 
+
+35:19 we're building GitHub on GitHub and at
+35:22 
+
+35:22 sometimes you know we have pushed it a
+35:23 
+
+35:23 bit too far uh but today you know most
+35:26 
+
+35:26 of um GitHub employees we call them
+35:28 
+
+35:28 Hubers Hubers are you know engaging uh
+35:31 
+
+35:31 on GitHub in GitHub discussions and
+35:32 
+
+35:32 GitHub requests you know our legal
+35:35 
+
+35:35 documentation is is all on GitHub which
+35:37 
+
+35:37 if you think about is actually uh much
+35:39 
+
+35:39 better than than managing red lines in
+35:41 
+
+35:41 word because you have a version history
+35:43 
+
+35:43 and you can see who made what what
+35:44 
+
+35:44 changed it in fact you can kind of see
+35:46 
+
+35:46 uh soon in the future where maybe your
+35:48 
+
+35:48 legal document is explained by a copilot
+35:50 
+
+35:50 in in human language uh you know in
+35:53 
+
+35:53 actual understandable human language not
+35:55 
+
+35:55 the lawyer language right and so um so
+35:57 
+
+35:57 we're using GitHub um you know to run
+35:59 
+
+35:59 our company but yeah we we it's where
+36:02 
+
+36:02 all the developers and all the
+36:03 
+
+36:03 supporting functions collaborate on a
+36:05 
+
+36:05 project so that's I think number one
+36:07 
+
+36:07 number two is we want to democratize
+36:09 
+
+36:09 access to to software development and um
+36:12 
+
+36:12 you know I recently gave a t talk and I
+36:15 
+
+36:15 talked about that I think our goal is uh
+36:17 
+
+36:17 to get to 1 billion uh uh software
+36:19 
+
+36:19 developers on the world now it doesn't
+36:21 
+
+36:21 mean 1 billion professional software
+36:23 
+
+36:23 developers although that might not be a
+36:25 
+
+36:25 bad thing necessarily given the demand
+36:26 
+
+36:26 is still very high and it's it's it's
+36:28 
+
+36:28 sometimes hard to find Qualified
+36:30 
+
+36:30 software developers but it's it's really
+36:32 
+
+36:32 about democratizing access to to writing
+36:35 
+
+36:35 software on these devices that are with
+36:37 
+
+36:37 us you know our mobile phones are you
+36:39 
+
+36:39 know uh a really important part of our
+36:43 
+
+36:43 lives today you can't really imagine
+36:45 
+
+36:45 life uh urban life for sure without a
+36:47 
+
+36:47 mobile phone and so then also being able
+36:49 
+
+36:49 to write little applications or little
+36:51 
+
+36:51 scripts or just you know using natural
+36:53 
+
+36:53 language to control the phone I think is
+36:55 
+
+36:55 incredibly empowering and so bringing
+36:57 
+
+36:57 that into you know 10% of the world's
+36:60 
+
+36:60 population by 2030 so assuming that then
+37:02 
+
+37:02 we 10 billion uh inhabitants on this
+37:06 
+
+37:06 planet uh I think it's going to going to
+37:09 
+
+37:09 create a better world and it's going to
+37:10 
+
+37:10 unlock um creativity everywhere and
+37:12 
+
+37:12 hopefully you know we see cool uh uh
+37:15 
+
+37:15 Venture backed startups in India and in
+37:18 
+
+37:18 in Brazil and and maybe you know the
+37:19 
+
+37:19 next the next uh big tech company is is
+37:21 
+
+37:21 coming from one of those countries uh um
+37:24 
+
+37:24 instead instead of the US West Coast we
+37:26 
+
+37:26 hope so um maybe is zooming out of
+37:28 
+
+37:28 GitHub co-pilot to broader GitHub itself
+37:31 
+
+37:31 GitHub co-pilot itself is driving so
+37:32 
+
+37:32 much Innovation within GitHub but what
+37:34 
+
+37:34 are some of the other key initiatives
+37:36 
+
+37:36 that you're leading across GitHub
+37:38 
+
+37:38 overall as well yeah we already talked a
+37:40 
+
+37:40 little bit about you know autofix and
+37:42 
+
+37:42 security and I think security securing
+37:44 
+
+37:44 the software supply chain is is dear
+37:45 
+
+37:45 near to our hearts um there is there is
+37:48 
+
+37:48 no future of you know human progress and
+37:51 
+
+37:51 with software if you're not also able to
+37:53 
+
+37:53 secure the supply chain you know today
+37:55 
+
+37:55 you know there's this XKCD comic um of
+37:58 
+
+37:58 the internet's infrastructure and
+37:60 
+
+37:60 there's this one building block that
+38:01 
+
+38:01 says you know the guy in Nebraska
+38:04 
+
+38:04 maintaining this one Library alone right
+38:06 
+
+38:06 that's that actually is a is is as funny
+38:08 
+
+38:08 as that is that is a reflection of of
+38:10 
+
+38:10 the software world today so we a have to
+38:12 
+
+38:12 make it sustainable for those
+38:14 
+
+38:14 maintainers uh to to build that software
+38:16 
+
+38:16 and keep it joyful and then also we have
+38:19 
+
+38:19 to make sure that all these building
+38:20 
+
+38:20 blocks that are in our Stacks um that
+38:23 
+
+38:23 have become system critical and to be
+38:24 
+
+38:24 secure and so we're both investing a lot
+38:26 
+
+38:26 in platform security and application
+38:29 
+
+38:29 security and of course you know in our
+38:30 
+
+38:30 security products and I think that's
+38:32 
+
+38:32 going to be crucial uh combined with
+38:35 
+
+38:35 copile and AI to not only create all
+38:37 
+
+38:37 these work items but to also enable
+38:39 
+
+38:39 developers to to burn them down to fix
+38:41 
+
+38:41 all these issues yeah I want to zoom out
+38:44 
+
+38:44 from GitHub for a second and just talk
+38:46 
+
+38:46 about how you see the future of AI and
+38:48 
+
+38:48 coding overall like you mentioned
+38:50 
+
+38:50 there's been a billion casual developers
+38:52 
+
+38:52 around the world like what will it look
+38:54 
+
+38:54 like will will everybody be kind of
+38:56 
+
+38:56 coding applications for themselves to
+38:58 
+
+38:58 use um will there be some number of
+39:00 
+
+39:00 professional developers who are super
+39:03 
+
+39:03 developers like have do you imagine the
+39:04 
+
+39:04 the world looks uh when you so kind of
+39:07 
+
+39:07 democratized the the uh craft of coding
+39:10 
+
+39:10 MH I mean I think it's an incredibly
+39:13 
+
+39:13 creative world in a world where you're
+39:15 
+
+39:15 not um dependent on you know when you're
+39:18 
+
+39:18 a kid on your parents having technical
+39:20 
+
+39:20 knowledge or your school having a
+39:21 
+
+39:21 teacher that knows how to do these
+39:23 
+
+39:23 things so we're going to have much more
+39:25 
+
+39:25 access to those that are interested in
+39:27 
+
+39:27 learning about this
+39:28 
+
+39:28 um you know it's easy today you know to
+39:30 
+
+39:30 take a sheet of paper and and paint
+39:32 
+
+39:32 something uh in every restaurant at
+39:34 
+
+39:34 least you know in this country gives you
+39:36 
+
+39:36 crayons if you come with kids and and a
+39:39 
+
+39:39 coloring sheet um it's Lifesaver
+39:41 
+
+39:41 Lifesaver or you have your mobile phone
+39:43 
+
+39:43 and they use your mobile phone um uh or
+39:46 
+
+39:46 you know it's easy to learn and Easy in
+39:48 
+
+39:48 the sense of accessible to learn a music
+39:50 
+
+39:50 musical instrument and I think it's
+39:52 
+
+39:52 should be easy to learn coding and so
+39:54 
+
+39:54 first of all I think that should be
+39:55 
+
+39:55 something we we are excited about and
+39:57 
+
+39:57 not concerned that we are inflating the
+39:59 
+
+39:59 number of developers because just
+40:01 
+
+40:01 because kids learn it doesn't mean they
+40:02 
+
+40:02 want to become a developer I think
+40:04 
+
+40:04 there's still a world where uh people
+40:06 
+
+40:06 want to do something else in software
+40:08 
+
+40:08 but then if you think you know about
+40:10 
+
+40:10 many other professions physicists um for
+40:12 
+
+40:12 example they use a lot of software you
+40:14 
+
+40:14 know the the first image of a black hole
+40:16 
+
+40:16 was rendered with the help of open
+40:18 
+
+40:18 source project you know the mass
+40:19 
+
+40:19 helicopter uh ran on open source right
+40:22 
+
+40:22 and so yeah it's it's it's space uh and
+40:25 
+
+40:25 it's Space Engineering but they're
+40:26 
+
+40:26 they're using software and they're
+40:27 
+
+40:27 building software and so the profession
+40:29 
+
+40:29 itself is is everywhere every company is
+40:31 
+
+40:31 a software company banks are software
+40:33 
+
+40:33 companies you know energy providers are
+40:35 
+
+40:35 software companies farmers are software
+40:37 
+
+40:37 companies predicting you know what what
+40:39 
+
+40:39 seed to plant this year what the weather
+40:40 
+
+40:40 is going to be like you know what what's
+40:42 
+
+40:42 the soil quality from last year and
+40:45 
+
+40:45 things like that but of course you know
+40:47 
+
+40:47 um that the hobby scenario isn't is also
+40:49 
+
+40:49 important um like you know a tax season
+40:52 
+
+40:52 is over uh here in the United States but
+40:54 
+
+40:54 that doesn't mean that I couldn't think
+40:55 
+
+40:55 about next year to automate a lot of
+40:57 
+
+40:57 that if I only had an AI agent that does
+40:59 
+
+40:59 all that work for me you know and and
+41:01 
+
+41:01 and and downloads all the PDFs and
+41:02 
+
+41:02 extracts all the numbers and I don't
+41:04 
+
+41:04 think we're too far away from that um
+41:07 
+
+41:07 and you know I'm I'm you know now in
+41:09 
+
+41:09 software for for almost uh 30 years or
+41:12 
+
+41:12 almost 30 years and as as a professional
+41:14 
+
+41:14 software developer and you know I don't
+41:16 
+
+41:16 have a lot of time to code um you know I
+41:19 
+
+41:19 have a company inam I have podcasts to
+41:21 
+
+41:21 give
+41:22 
+
+41:22 and and things but the problem today is
+41:25 
+
+41:25 you you find an hour on a weekend and uh
+41:28 
+
+41:28 you have a project and the first 20
+41:30 
+
+41:30 minutes you're spending with updating
+41:31 
+
+41:31 everything to whatever you missed and
+41:34 
+
+41:34 the burden is actually uh the the fun is
+41:36 
+
+41:36 gone to a certain degree um because the
+41:38 
+
+41:38 burden of of maintaining software is so
+41:40 
+
+41:40 high so having something available to
+41:42 
+
+41:42 you that gets you quickly into the Hobby
+41:44 
+
+41:44 and out of the hobby uh um or out of
+41:47 
+
+41:47 that task I think is incredibly
+41:49 
+
+41:49 empowering and and brings the brings the
+41:51 
+
+41:51 fun back and and you know that's where
+41:53 
+
+41:53 the Lego comparison is is so useful
+41:56 
+
+41:56 right because Lego is just incredibly
+41:58 
+
+41:58 accessible and even even if you like the
+42:01 
+
+42:01 best Lego is the one where you don't
+42:02 
+
+42:02 have instructions you just have a table
+42:04 
+
+42:04 full with Lego breaks um uh even in in
+42:08 
+
+42:08 random colors right and then have this
+42:11 
+
+42:11 this excitement of play and you know
+42:13 
+
+42:13 even you know professional workers at
+42:15 
+
+42:15 their offsites or workshops often have
+42:17 
+
+42:17 little gadgets or or bricks on the table
+42:19 
+
+42:19 so you have your F your fingers do
+42:21 
+
+42:21 things while you while you're thinking
+42:22 
+
+42:22 so I think that's where that Ro is
+42:24 
+
+42:24 leading us and we will have you know
+42:26 
+
+42:26 more more access to the technology we
+42:28 
+
+42:28 have more people um that can build
+42:30 
+
+42:30 software that but doesn't mean that
+42:31 
+
+42:31 they're taking jobs away from
+42:32 
+
+42:32 professional software developers on what
+42:34 
+
+42:34 time frame do you think we'll have uh
+42:36 
+
+42:36 coding agents that are as good as maybe
+42:39 
+
+42:39 the average professional software
+42:40 
+
+42:40 developer and and you know there's the
+42:43 
+
+42:43 legend of the 10x software engineer like
+42:45 
+
+42:45 at what point do you think AI will be as
+42:47 
+
+42:47 good as the 10x software engineer in
+42:49 
+
+42:49 capability you know the the the the
+42:52 
+
+42:52 trick in that question is the as good as
+42:55 
+
+42:55 and what does that mean so I think you
+42:56 
+
+42:56 know if is a model today able to write
+43:01 
+
+43:01 better code than the average developer
+43:03 
+
+43:03 if it is prompted in the right way or
+43:05 
+
+43:05 given the right context I'd say we are
+43:06 
+
+43:06 already there on average um because you
+43:10 
+
+43:10 know often you know the model just knows
+43:13 
+
+43:13 more about that whole space than I as a
+43:15 
+
+43:15 human do like and you see that with
+43:17 
+
+43:17 students if they have to implement uh
+43:19 
+
+43:19 you know like a conversion from binary
+43:22 
+
+43:22 to decimal or something like that and
+43:23 
+
+43:23 they might write 100 lines of code and
+43:25 
+
+43:25 then they go and ask Copilot how to do
+43:28 
+
+43:28 that and they get probably an open
+43:29 
+
+43:29 source library and one line of code and
+43:31 
+
+43:31 then you can kind of say well I I'm not
+43:33 
+
+43:33 allowed to use open source and then you
+43:35 
+
+43:35 was probably still get a better code
+43:37 
+
+43:37 than than they would and I think the
+43:39 
+
+43:39 true is the same is true for the
+43:41 
+
+43:41 professional software developer because
+43:43 
+
+43:43 look we're not perfect we are we are
+43:44 
+
+43:44 human and I think that's part of our
+43:46 
+
+43:46 nature that's part of creativity now
+43:49 
+
+43:49 that's the key thing though that the
+43:50 
+
+43:50 model is not creative and the model
+43:52 
+
+43:52 cannot today you know the model cannot
+43:55 
+
+43:55 make decisions for us um or if it does
+43:58 
+
+43:58 make decision it doesn't actually take
+44:00 
+
+44:00 all the constraints into account like if
+44:02 
+
+44:02 you think about software development
+44:05 
+
+44:05 other than writing code which is I think
+44:07 
+
+44:07 the fun part it often means you know I
+44:09 
+
+44:09 take a very complex problem and you
+44:11 
+
+44:11 break it decompose the problem into
+44:13 
+
+44:13 small building blocks you know and the
+44:15 
+
+44:15 the block size is increasing over time
+44:18 
+
+44:18 you know it used to be Auto completion
+44:19 
+
+44:19 used to be just the next word and then
+44:21 
+
+44:21 it was maybe you know full command and
+44:23 
+
+44:23 know it's multiple LS of code and maybe
+44:24 
+
+44:24 it's whole files in the
+44:26 
+
+44:26 future but along that decomposition
+44:28 
+
+44:28 process you still have to make a lot of
+44:30 
+
+44:30 technical decisions what database am I
+44:32 
+
+44:32 using and you know you probably know
+44:33 
+
+44:33 better how many database startups seoa
+44:36 
+
+44:36 has invested in and how many
+44:37 
+
+44:37 infrastructure startups and and how many
+44:39 
+
+44:39 you know serverless startups and and and
+44:41 
+
+44:41 and and and obviously there's all the
+44:43 
+
+44:43 incumbents in in all those spaces and so
+44:45 
+
+44:45 there's a thousand if not 10, decisions
+44:48 
+
+44:48 to be made and the engineer is is the
+44:50 
+
+44:50 systems thinker that that is making
+44:52 
+
+44:52 those decisions or the team the team of
+44:53 
+
+44:53 Engineers and companies I think you know
+44:56 
+
+44:56 the we have been building house houses
+44:58 
+
+44:58 you know as humans for thousands of
+45:01 
+
+45:01 years and if you have ever built a house
+45:04 
+
+45:04 it's still not a solve problem yeah but
+45:08 
+
+45:08 what at what point do you think that
+45:09 
+
+45:09 creativity and that systems thinking
+45:11 
+
+45:11 gets built into co-pilot or do you think
+45:14 
+
+45:14 it never
+45:15 
+
+45:15 does I mean you know it's bit of
+45:17 
+
+45:17 predicting the future I don't know if I
+45:19 
+
+45:19 would say never never say that's a
+45:20 
+
+45:20 dangerous thing on a podcast you know
+45:22 
+
+45:22 you invite me back in three years and
+45:24 
+
+45:24 like well Thomas you know last time we
+45:25 
+
+45:25 asked you about this and clearly happen
+45:27 
+
+45:27 since no I think you know we'll see
+45:30 
+
+45:30 where the research goes and where the
+45:31 
+
+45:31 technology goes in in kind of critical
+45:34 
+
+45:34 thinking and systems thinking and those
+45:36 
+
+45:36 kind of questions also learning you know
+45:38 
+
+45:38 learning uh you you mentioned you're
+45:40 
+
+45:40 two-year-old you're two-year-old and and
+45:42 
+
+45:42 my my kids they learn you know as they
+45:45 
+
+45:45 mimic uh the humans around them they are
+45:47 
+
+45:47 so good at learning language and
+45:49 
+
+45:49 especially in young age you know they
+45:50 
+
+45:50 can learn uh multiple languages mine you
+45:52 
+
+45:52 know speak English and German uh because
+45:54 
+
+45:54 we speak German at home and they don't
+45:56 
+
+45:56 have an ACC in English well they have an
+45:58 
+
+45:58 American accent but they don't have the
+45:60 
+
+45:60 German accent right and they don't have
+46:01 
+
+46:01 an accent in in in in in German either
+46:04 
+
+46:04 and I think you know this the shows like
+46:06 
+
+46:06 that the human brain is still so much
+46:08 
+
+46:08 more advanced than than uh the
+46:10 
+
+46:10 Transformer models and the diffusion
+46:12 
+
+46:12 models and and the other types of models
+46:14 
+
+46:14 that we have to image recognition and
+46:15 
+
+46:15 whatnot that we have today um and you
+46:18 
+
+46:18 know it remains to be seen if we can
+46:19 
+
+46:19 kind of like add that sentience piece to
+46:23 
+
+46:23 it but today I'm I'm not seeing it and I
+46:25 
+
+46:25 haven't seen any research that telling
+46:27 
+
+46:27 me that that's coming anytime soon
+46:29 
+
+46:29 that's a really clear delage Switching
+46:32 
+
+46:32 gears a little bit I we'd love to hear
+46:33 
+
+46:33 your thoughts on the overall ecosystem
+46:35 
+
+46:35 of startups right now ai Coen is the
+46:38 
+
+46:38 hottest category with a lot of ambitious
+46:40 
+
+46:40 Founders and there are so many different
+46:41 
+
+46:41 attempts that they're taking whether
+46:43 
+
+46:43 it's um folks who are trying to build a
+46:45 
+
+46:45 better model folks who are trying to
+46:48 
+
+46:48 build a better IDE folks who uh are
+46:51 
+
+46:51 trying to build kind of an all-in full
+46:53 
+
+46:53 stack engineer as an agent um and you
+46:56 
+
+46:56 know but the big elephant in the room is
+46:58 
+
+46:58 GitHub co-pilot and all the adjacent
+46:60 
+
+46:60 products that you have around it uh with
+47:02 
+
+47:02 co-pilot workspace with co-pilot
+47:04 
+
+47:04 Enterprise with autofix and owning vs
+47:07 
+
+47:07 code as well amongst many other things
+47:10 
+
+47:10 how do you think about what white space
+47:12 
+
+47:12 there is for existing or sorry for new
+47:15 
+
+47:15 Founders and um if you were a Founder
+47:17 
+
+47:17 yourself trying to build in the space
+47:20 
+
+47:20 what would you do I mean I I love
+47:22 
+
+47:22 developer tools so I I probably still do
+47:24 
+
+47:24 developer tools and I'm not sure I would
+47:26 
+
+47:26 worry too much about what's wi space
+47:28 
+
+47:28 which what taken by encampment because
+47:30 
+
+47:30 that can change quickly you know when
+47:32 
+
+47:32 GitHub started Source Forge was the big
+47:35 
+
+47:35 elephant in the room and sour has all
+47:36 
+
+47:36 the open source projects and then came
+47:38 
+
+47:38 get and G recepted that space and then
+47:40 
+
+47:40 the founders uh of GitHub took G and and
+47:43 
+
+47:43 build GitHub and all of a sudden you
+47:45 
+
+47:45 know that elephant in the room was no
+47:46 
+
+47:46 longer the
+47:47 
+
+47:47 elephant and and and I think you know it
+47:50 
+
+47:50 is often fun you know to compete in the
+47:52 
+
+47:52 same space and we love competition
+47:54 
+
+47:54 because it pushes us forward uh you know
+47:56 
+
+47:56 as much it's uh it's boring you know to
+47:59 
+
+47:59 to do a race or you know a game if you
+48:02 
+
+48:02 don't have an opponent and if you don't
+48:03 
+
+48:03 have you know other other teams in the
+48:05 
+
+48:05 league and who would watch uh you know
+48:07 
+
+48:07 the Super Bowl if there's only one
+48:09 
+
+48:09 winning team every year so I think a I
+48:11 
+
+48:11 don't think competition should hold you
+48:13 
+
+48:13 back as a Founder from from going into
+48:15 
+
+48:15 that space I think the software
+48:16 
+
+48:16 development space is is wide open and
+48:19 
+
+48:19 there's lots of problems to solve um
+48:21 
+
+48:21 there's lots of problems in different um
+48:23 
+
+48:23 you know Industries and categories to
+48:26 
+
+48:26 solve you haven't really solved
+48:27 
+
+48:27 modernization of source code you know
+48:29 
+
+48:29 cobal run on Main frames and you can use
+48:32 
+
+48:32 a co-pilot uh and we we are heavily you
+48:34 
+
+48:34 know looking into that and because it's
+48:36 
+
+48:36 such a paino for many Financial Services
+48:38 
+
+48:38 institutions um you know your credit
+48:41 
+
+48:41 cards your your bank account Wall Street
+48:42 
+
+48:42 all that run still cobal on on I haven't
+48:45 
+
+48:45 met a single uh bank that doesn't
+48:47 
+
+48:47 doesn't run some cobal on some Mainframe
+48:50 
+
+48:50 and um what would you do with co-pilot
+48:52 
+
+48:52 and cobal so well today you can ex
+48:54 
+
+48:54 explain that which is you know often
+48:56 
+
+48:56 helpful because the code was written 60
+48:58 
+
+48:58 years ago and so the people that wrote
+48:59 
+
+48:59 that code are retired yeah yeah exactly
+49:02 
+
+49:02 would you rewrite all the code with then
+49:04 
+
+49:04 you can you can ask it to write unit
+49:06 
+
+49:06 tests because nobody wrote unit test in
+49:07 
+
+49:07 the 60s and70s either let alone that
+49:09 
+
+49:09 there were unit testing Frameworks uh uh
+49:12 
+
+49:12 for for those languages like keep in
+49:13 
+
+49:13 mind you know the' 60s that was before
+49:16 
+
+49:16 hard drives right like the you know
+49:18 
+
+49:18 before before we had you know personal
+49:20 
+
+49:20 computers it was a very different world
+49:22 
+
+49:22 back then and of course they those
+49:24 
+
+49:24 companies have done work to modernize to
+49:26 
+
+49:26 a certain degree
+49:27 
+
+49:27 uh but it's far behind Azure software
+49:30 
+
+49:30 development so you can support that
+49:32 
+
+49:32 transformation process today but there
+49:33 
+
+49:33 is we're not not at that point where you
+49:35 
+
+49:35 can just click a button and you have a
+49:37 
+
+49:37 transform the same is true you know for
+49:39 
+
+49:39 many more modern languages you know
+49:41 
+
+49:41 there's large PHP code bases there's lot
+49:43 
+
+49:43 lots of java out there and there's lots
+49:45 
+
+49:45 of optimization that we can take you
+49:47 
+
+49:47 know to just make our existing Stacks
+49:49 
+
+49:49 more efficient um where where agents can
+49:51 
+
+49:51 help um there's lots of you know things
+49:54 
+
+49:54 to improve um in every part of the
+49:56 
+
+49:56 software development life cycle in and
+49:58 
+
+49:58 in this ecosystem around us GitHub you
+50:01 
+
+50:01 know is I I like to think about GitHub
+50:03 
+
+50:03 as you know one planet in this universe
+50:05 
+
+50:05 of of software development tools and
+50:07 
+
+50:07 there's you know smaller planets around
+50:09 
+
+50:09 us and and you know equally or almost
+50:12 
+
+50:12 equal siiz planets uh in in our space
+50:14 
+
+50:14 and we we consider them partners and we
+50:17 
+
+50:17 we're happy that they're there yeah so
+50:19 
+
+50:19 interesting um agents are just pull on
+50:21 
+
+50:21 that thread a little bit it's also an
+50:23 
+
+50:23 area of excitement for us um and um I
+50:26 
+
+50:26 think you know you a lot of the benefit
+50:27 
+
+50:27 of owning so much of the data and
+50:29 
+
+50:29 everything you can do on the post
+50:30 
+
+50:30 trining side openi itself is also
+50:32 
+
+50:32 getting better and better with each new
+50:34 
+
+50:34 model class as are every other um uh
+50:37 
+
+50:37 model company out there would you ever
+50:40 
+
+50:40 want to uh kind of invest into building
+50:42 
+
+50:42 your own agents maybe from scratch by
+50:44 
+
+50:44 building your own gentic models or just
+50:46 
+
+50:46 to partner with some of the others out
+50:48 
+
+50:48 there uh me as GitHub CEO is that you're
+50:52 
+
+50:52 asking yes or me as agent investor you
+50:55 
+
+50:55 as a g CEO
+50:57 
+
+50:57 um yeah I think you know we are we are
+50:59 
+
+50:59 probably doing both um we're we're going
+51:01 
+
+51:01 to we're always you know in a way we
+51:03 
+
+51:03 always have done both things as GitHub
+51:05 
+
+51:05 we have invested into our own things the
+51:07 
+
+51:07 thing that we consider as you know core
+51:10 
+
+51:10 uh part of our platform and of our
+51:12 
+
+51:12 offering you know uh part of our
+51:14 
+
+51:14 Primitives um and we have Partners
+51:16 
+
+51:16 partnered with companies um you know um
+51:19 
+
+51:19 uh just earlier this week we announced
+51:20 
+
+51:20 the partnership with jroo which you know
+51:22 
+
+51:22 covers spary uh artifacts um scanning of
+51:25 
+
+51:25 containers and those kind of things and
+51:27 
+
+51:27 they obviously very naturally in our
+51:29 
+
+51:29 space you know we have the source code
+51:31 
+
+51:31 and what do you do with source code well
+51:32 
+
+51:32 you either compile it into binaries or
+51:34 
+
+51:34 you combine it with binaries before you
+51:36 
+
+51:36 deploy it into the cloud and so there's
+51:38 
+
+51:38 a natural value chain there where you
+51:41 
+
+51:41 know we have you know uh things where we
+51:43 
+
+51:43 invested ourselves things like releases
+51:45 
+
+51:45 that you see on GitHub and packages we
+51:47 
+
+51:47 we own npm uh uh you know the largest
+51:50 
+
+51:50 package package lry in the world for the
+51:52 
+
+51:52 JavaScript ecosystem and nouet um
+51:54 
+
+51:54 through our partners at Microsoft and
+51:56 
+
+51:56 the largest. net reg in the world but
+51:58 
+
+51:58 that doesn't mean that we cannot also
+51:60 
+
+51:60 partner with the jog to ultimately
+52:02 
+
+52:02 enable that that you know secure
+52:04 
+
+52:04 software supply chain uh that I that I
+52:06 
+
+52:06 mentioned earlier and that I think is
+52:07 
+
+52:07 crucial and that figma you know um vers
+52:10 
+
+52:10 cell like there so many other companies
+52:12 
+
+52:12 in in our space that will will play you
+52:15 
+
+52:15 know part in the life cycle and I don't
+52:17 
+
+52:17 see a world where somebody covers all of
+52:21 
+
+52:21 that and can convince every developer
+52:23 
+
+52:23 that using all these tools is better
+52:26 
+
+52:26 than picking
+52:27 
+
+52:27 you know what what analysts might call
+52:29 
+
+52:29 Best of breed and like the tool that I
+52:31 
+
+52:31 consider the best best is all subjective
+52:34 
+
+52:34 anyway right like it's all the does it
+52:36 
+
+52:36 meet the expectations of the developer
+52:38 
+
+52:38 in in in the in their environment yeah
+52:40 
+
+52:40 makes sense that's great advice for
+52:43 
+
+52:43 startup Founders and I think really
+52:44 
+
+52:44 encouraging uh what about for incumbents
+52:47 
+
+52:47 I think you you are such a Beacon of
+52:48 
+
+52:48 Hope for incumbent companies I think
+52:51 
+
+52:51 Saia said in the last earnings call that
+52:53 
+
+52:53 GitHub is now growing 40% year-over year
+52:55 
+
+52:55 thanks to the co-pilot acceler a and so
+52:57 
+
+52:57 like and to your point earlier like you
+52:59 
+
+52:59 feel like you're a young startup again
+53:01 
+
+53:01 like walking into the Sequoia offices
+53:03 
+
+53:03 like what advice do you have for there's
+53:06 
+
+53:06 so many incumbants that are trying to
+53:07 
+
+53:07 reinvent themselves around AI what what
+53:09 
+
+53:09 advice would you give those folks sa
+53:11 
+
+53:11 actually said 45% so we're really
+53:13 
+
+53:13 excited about that all up on our on our
+53:16 
+
+53:16 Revenue Rec 45% you know I got an email
+53:19 
+
+53:19 um from somebody last week who was like
+53:21 
+
+53:21 looking at GitHub and losing the belief
+53:23 
+
+53:23 that large companies cannot move as fast
+53:25 
+
+53:25 as as startup can I think you know the
+53:27 
+
+53:27 key ingredient on this is uh radical F
+53:30 
+
+53:30 focus and and basically focusing on a
+53:32 
+
+53:32 few small things just because you know
+53:35 
+
+53:35 you have a th000 Engineers or or 50,000
+53:37 
+
+53:37 Engineers doesn't doesn't mean you can
+53:39 
+
+53:39 do it all that's just a false uh
+53:42 
+
+53:42 assumption and I think it's in a way
+53:44 
+
+53:44 misleading as you manage larger teams
+53:46 
+
+53:46 you're losing kind of like the the unit
+53:49 
+
+53:49 of of of of side team size that shows
+53:53 
+
+53:53 you how much you can actually get done
+53:54 
+
+53:54 and how much uh friction you have in the
+53:56 
+
+53:56 system if all these teams work on
+53:58 
+
+53:58 different things I think Focus you know
+53:60 
+
+54:00 lots of NOS uh on on all the ideas that
+54:02 
+
+54:02 people have around you and customers uh
+54:05 
+
+54:05 that's I think the the key piece to to
+54:07 
+
+54:07 move really fast and and then obviously
+54:09 
+
+54:09 taking in some strategic bets and
+54:11 
+
+54:11 strategy means you're thinking about it
+54:13 
+
+54:13 as how do I differentiate from others
+54:16 
+
+54:16 you know what makes me specific makes me
+54:19 
+
+54:19 special in this market what lets me uh
+54:22 
+
+54:22 uh charge the prices I want to charge
+54:24 
+
+54:24 and not fight you know a race to the
+54:26 
+
+54:26 bottom and I think that's there kind of
+54:28 
+
+54:28 like thinking about okay you know in
+54:30 
+
+54:30 software we like to think about well if
+54:31 
+
+54:31 I add just three more features then uh
+54:34 
+
+54:34 I'm I'm going to win the space Until you
+54:36 
+
+54:36 realize well everybody else can also add
+54:38 
+
+54:38 those three features right there there's
+54:40 
+
+54:40 almost nothing in in GitHub itself as as
+54:43 
+
+54:43 a platform that you couldn't rebuild
+54:45 
+
+54:45 with significant investment and time but
+54:48 
+
+54:48 I think it's really hard to mimic our
+54:50 
+
+54:50 culture it's really hard to mimic you
+54:52 
+
+54:52 know our experience our Obsession about
+54:55 
+
+54:55 about developers and and ultimately our
+54:58 
+
+54:58 our focus and and the way we're
+54:59 
+
+54:59 approaching these things I guess very
+55:01 
+
+55:01 tactically do you recommend Staffing a
+55:03 
+
+55:03 tiger team to get to the product Market
+55:05 
+
+55:05 fit on AI do you recommend like you know
+55:07 
+
+55:07 pulling half your engineers off whatever
+55:08 
+
+55:08 they're working on and like hey you guys
+55:09 
+
+55:09 are the AI team now we list we got to go
+55:11 
+
+55:11 bigger go home like tactically how do
+55:14 
+
+55:14 you recommend compies well as an
+55:15 
+
+55:15 incumbent you always have the challenge
+55:17 
+
+55:17 that you have to sustain whatever the
+55:18 
+
+55:18 business is you're in and so you can't
+55:20 
+
+55:20 just pull everybody into a new topic uh
+55:22 
+
+55:22 unless you're willing uh you know to uh
+55:25 
+
+55:25 disappoint all the existing customers
+55:27 
+
+55:27 you know no no uh Enterprise business uh
+55:30 
+
+55:30 has not made promises to Enterprise
+55:32 
+
+55:32 customers of what's coming next on their
+55:34 
+
+55:34 road map you know lots of conferences
+55:36 
+
+55:36 including our own is is you know stuff
+55:38 
+
+55:38 they're shipping right now and stuff
+55:39 
+
+55:39 we're announcing for the next six months
+55:41 
+
+55:41 and if you're not delivering on this
+55:42 
+
+55:42 announcement your your customer base is
+55:44 
+
+55:44 not going to be happy and so you can't
+55:46 
+
+55:46 really you know make that drastic move
+55:49 
+
+55:49 uh right away and so we love this idea
+55:51 
+
+55:51 of a tiger team or an incubation team we
+55:54 
+
+55:54 call it get up next and we when we set
+55:56 
+
+55:56 that team up and we actually thought
+55:57 
+
+55:57 they're going to work on projects that
+55:59 
+
+55:59 are like 5 years out or you know in that
+56:02 
+
+56:02 Horizon 3 as space and then it turned
+56:04 
+
+56:04 out well it was more like six months
+56:06 
+
+56:06 ahead of the curve the future comes
+56:08 
+
+56:08 really fast on us and and so as that
+56:10 
+
+56:10 future then comes fast you really also
+56:12 
+
+56:12 need to move fast and handing things
+56:14 
+
+56:14 from the incubation team over over to
+56:17 
+
+56:17 your Mainline engineering team and then
+56:19 
+
+56:19 it's it's all about okay so we have
+56:20 
+
+56:20 funding AI because we're seeing the
+56:22 
+
+56:22 traction there and that means we're
+56:24 
+
+56:24 leaving some of our previous bets um in
+56:26 
+
+56:26 you know keep the lights on mode KY low
+56:29 
+
+56:29 uh um or or you know saying goodbye
+56:32 
+
+56:32 goodbye to these to these ideas and and
+56:35 
+
+56:35 shut them down and I think that's the
+56:36 
+
+56:36 hard part uh of the the Strategic pivot
+56:39 
+
+56:39 and that's easier you know for a startup
+56:41 
+
+56:41 at least it often looks easier from the
+56:43 
+
+56:43 outside when a startup pivots right like
+56:44 
+
+56:44 there's lots of startups on the on the
+56:46 
+
+56:46 wall downstairs that have gone through
+56:47 
+
+56:47 that as well um um but of obviously
+56:51 
+
+56:51 internally is also very hard emotionally
+56:53 
+
+56:53 you're tied to ideas you you know you
+56:55 
+
+56:55 remember the the work shop uh under seoa
+56:58 
+
+56:58 trees uh where you had those ideas and
+56:60 
+
+56:60 then six months later you're realizing
+57:01 
+
+57:01 we never got to product Market fit and
+57:03 
+
+57:03 it's the time is now to move to
+57:05 
+
+57:05 something else so that that is the same
+57:06 
+
+57:06 for large companies as for small
+57:08 
+
+57:08 companies except that small companies uh
+57:11 
+
+57:11 have a have more of a forcing function
+57:12 
+
+57:12 to give up and and move move to
+57:14 
+
+57:14 something else The Innovation and
+57:16 
+
+57:16 success that you've created around
+57:18 
+
+57:18 GitHub NEX is amazing um how does a
+57:21 
+
+57:21 konal an idea start within GitHub NEX
+57:24 
+
+57:24 how do you then resource and invest into
+57:26 
+
+57:26 it and then how do you at what point and
+57:28 
+
+57:28 what's the process in which you decide
+57:30 
+
+57:30 to whether or not something should be
+57:32 
+
+57:32 continued to invest in or or shut down
+57:35 
+
+57:35 entirely so the I think the start is
+57:38 
+
+57:38 always the the you know the employee um
+57:41 
+
+57:41 the hubba that has an idea and and we
+57:43 
+
+57:43 have lots of ideas in the company U we
+57:45 
+
+57:45 do you know hack weeks hackaton Um
+57:48 
+
+57:48 passion projects um whatever you want to
+57:51 
+
+57:51 call it you know 20% time uh and then in
+57:53 
+
+57:53 the next team specifically you know
+57:55 
+
+57:55 there's lots of demo uh um meetings um
+57:58 
+
+57:58 demos and not memos you know it's much
+57:60 
+
+57:60 more useful just show a working
+58:02 
+
+58:02 prototype it's so easy these days you
+58:04 
+
+58:04 know to just use um some design system
+58:07 
+
+58:07 uh react components and and or or figma
+58:10 
+
+58:10 and Stitch something together even
+58:11 
+
+58:11 easier with co-art and then you know
+58:13 
+
+58:13 it's strategic decisions that uh the the
+58:15 
+
+58:15 leaders of of these teams um all the way
+58:18 
+
+58:18 up to me need to make uh you know very
+58:21 
+
+58:21 many ways very similar to any other
+58:23 
+
+58:23 creative industry you know like uh at
+58:26 
+
+58:26 Disney or pix they have to decide which
+58:27 
+
+58:27 movies to produce and and which ones are
+58:30 
+
+58:30 probably not going to to gain traction
+58:31 
+
+58:31 and part of that is customer research um
+58:34 
+
+58:34 talking with developers and that then
+58:36 
+
+58:36 you know keeps going as we go you know
+58:38 
+
+58:38 through the initial idea and the first
+58:40 
+
+58:40 prototype and then going into a
+58:42 
+
+58:42 technical preview and then the preview
+58:44 
+
+58:44 is all about you know that flywheel um
+58:46 
+
+58:46 that feedback loop um with the with the
+58:48 
+
+58:48 people using it and and quickly you see
+58:50 
+
+58:50 you know are they trying it out and then
+58:52 
+
+58:52 they are churning or are they keeping uh
+58:55 
+
+58:55 uh keeping the energy high and then
+58:57 
+
+58:57 keeping the ideas flowing it's great you
+58:58 
+
+58:58 know uh in any in any project if people
+59:01 
+
+59:01 just sending you more ideas and and more
+59:03 
+
+59:03 feedback and I think that's then the
+59:05 
+
+59:05 decision uh whether we keeping that
+59:07 
+
+59:07 project and making it a main project or
+59:09 
+
+59:09 whether we are deciding okay the experi
+59:11 
+
+59:11 rate is over and we learned a lot and we
+59:12 
+
+59:12 moving to the next one and of course
+59:14 
+
+59:14 there's commercial aspects as well um
+59:17 
+
+59:17 maybe uh outside of the world of code
+59:19 
+
+59:19 generation and in anything in your
+59:21 
+
+59:21 current purview what else are you
+59:23 
+
+59:23 excited about in the world of AI in the
+59:24 
+
+59:24 span of one five or 10
+59:27 
+
+59:27 years or outside of
+59:30 
+
+59:30 developers you cheated a little bit on
+59:33 
+
+59:33 me um I mean I think in in the context
+59:36 
+
+59:36 of one year um within the space of
+59:39 
+
+59:39 developers and outside of the space of
+59:40 
+
+59:40 developers I'm excited about agents and
+59:42 
+
+59:42 we're still very early in this journey I
+59:44 
+
+59:44 think we have high expectations of what
+59:46 
+
+59:46 the agents could be maybe too high
+59:49 
+
+59:49 expectations to some degree and so
+59:51 
+
+59:51 things will probably take a little bit
+59:52 
+
+59:52 longer um but I think in the next year
+59:54 
+
+59:54 or so we're going to see more of these
+59:56 
+
+59:56 help us uh within the chat interface and
+59:58 
+
+59:58 outside of the chat interface that will
+60:01 
+
+60:01 will solve tasks for us you know like uh
+60:03 
+
+60:03 I look forward you know to the travel
+60:05 
+
+60:05 agent that often gets demoed uh uh by
+60:07 
+
+60:07 big companies uh to actually materialize
+60:09 
+
+60:09 and it can just go into my chat
+60:11 
+
+60:11 interface and say you know I want to
+60:13 
+
+60:13 have uh Beach vacation uh over spring
+60:16 
+
+60:16 break and then figure out you know when
+60:18 
+
+60:18 spring break actually is because that's
+60:20 
+
+60:20 all on the internet and you know who I
+60:22 
+
+60:22 am what my name is and and what my
+60:24 
+
+60:24 family's names are on their birth dates
+60:26 
+
+60:26 and their passport numbers and so I
+60:27 
+
+60:27 don't have to enter that into a
+60:28 
+
+60:28 cumbersome interface anymore and show me
+60:31 
+
+60:31 the price points and then probably we're
+60:32 
+
+60:32 going to the same hotel as every year
+60:34 
+
+60:34 anyway and so I think that those tribal
+60:36 
+
+60:36 agents um or and those you know kind of
+60:38 
+
+60:38 agents are going to happen in the next
+60:40 
+
+60:40 year plus I think five years is my
+60:42 
+
+60:42 natural language vision and you know
+60:44 
+
+60:44 unlocking the world's knowledge um
+60:47 
+
+60:47 including software developers um to
+60:48 
+
+60:48 everybody in any any language um any
+60:50 
+
+60:50 human language and um maybe that's even
+60:53 
+
+60:53 happening sooner um
+60:57 
+
+60:57 10 years is hard 10 years is so far away
+60:59 
+
+60:59 but I think you know that's the AI of
+61:02 
+
+61:02 things you know the material like the
+61:03 
+
+61:03 mechanical word of AI you know we so
+61:07 
+
+61:07 many things that we do in life you know
+61:10 
+
+61:10 are are you need to grab something or
+61:12 
+
+61:12 you to push something and you know go go
+61:15 
+
+61:15 and check into any hotel there isn't any
+61:17 
+
+61:17 AI involved once you get your room key
+61:20 
+
+61:20 um and maybe the elevator you know has
+61:22 
+
+61:22 some kind of AI because you push a
+61:23 
+
+61:23 button what floor you want to go to in
+61:25 
+
+61:25 to to take elevator SE uh and so you no
+61:27 
+
+61:27 longer push the button within the
+61:28 
+
+61:28 elevator that's an optimization problem
+61:30 
+
+61:30 in itself but I think there's so many
+61:32 
+
+61:32 physical things in life you know and we
+61:34 
+
+61:34 are still not at really self-driving
+61:36 
+
+61:36 cars um we have a dishwasher but I still
+61:39 
+
+61:39 have to put the dishes into the
+61:40 
+
+61:40 dishwasher and out of the dishwasher uh
+61:43 
+
+61:43 it's better with nine and 12 year olds
+61:45 
+
+61:45 than with 2y olds and um there's there's
+61:48 
+
+61:48 so many other things in life where I
+61:49 
+
+61:49 think you know the whether it's a robot
+61:51 
+
+61:51 or some other form of of physical AI uh
+61:54 
+
+61:54 is going to um to take over are some of
+61:56 
+
+61:56 the things that um we consider as chores
+61:59 
+
+61:59 we're really excited to hear that um and
+62:01 
+
+62:01 I think we have a very similar view of
+62:03 
+
+62:03 what will happen one five and 10 years
+62:05 
+
+62:05 from
+62:06 
+
+62:06 now uh who do you admire most in the
+62:08 
+
+62:08 world of AI I think I admire those that
+62:11 
+
+62:11 you know um are building new stuff with
+62:14 
+
+62:14 AI and and software those you know that
+62:17 
+
+62:17 have a dream uh of what what they can
+62:20 
+
+62:20 what they could build um I think those
+62:23 
+
+62:23 that you know obsess about a problem and
+62:25 
+
+62:25 not about the technology you know we're
+62:27 
+
+62:27 talking a lot about AI but at the end of
+62:29 
+
+62:29 the day it's what's problem I solving uh
+62:32 
+
+62:32 for the world and you know there's lots
+62:33 
+
+62:33 of Biotech companies that use AI to try
+62:37 
+
+62:37 to cure di diabetes or or cancer and I'm
+62:40 
+
+62:40 sure there's companies trying to sort of
+62:43 
+
+62:43 climate change uh with technology and I
+62:45 
+
+62:45 think those Builders you know the
+62:47 
+
+62:47 founders those that have um you know Big
+62:50 
+
+62:50 Ideas and that can change the world you
+62:52 
+
+62:52 know those are the ones I admire the
+62:53 
+
+62:53 most and often when I meet with them in
+62:55 
+
+62:55 in their offices you know or on on calls
+62:58 
+
+62:58 I I'm like this is this is so cool like
+63:01 
+
+63:01 and and obviously as GitHub we enabling
+63:03 
+
+63:03 a small small part of that and so we we
+63:06 
+
+63:06 feel really proud of being part of that
+63:08 
+
+63:08 journey and and we're really you know
+63:10 
+
+63:10 excited about you know um um building
+63:12 
+
+63:12 more for
+63:14 
+
+63:14 them um I think you're enabling a huge
+63:16 
+
+63:16 wave of new AI companies especially
+63:18 
+
+63:18 those that are born open source it's
+63:20 
+
+63:20 amazing to see um what advice do you
+63:22 
+
+63:22 have for the founders listening in the
+63:24 
+
+63:24 audience who are building in AI today I
+63:26 
+
+63:26 mean already Sonia ask I think focus is
+63:29 
+
+63:29 everything like it's so easy to get lost
+63:32 
+
+63:32 in you know the all the ideas that you
+63:34 
+
+63:34 can put on a whiteboard and that's the
+63:36 
+
+63:36 danger of a whiteboard that it has
+63:38 
+
+63:38 covers um you know so much space where
+63:40 
+
+63:40 you can put ideas but Focus um
+63:42 
+
+63:42 ultimately is everything you know
+63:43 
+
+63:43 Finding very quick Market validation um
+63:47 
+
+63:47 often you know on the developer space
+63:48 
+
+63:48 that means going and product that growth
+63:51 
+
+63:51 um Enterprise growth can come later but
+63:53 
+
+63:53 like from my experience like there's
+63:55 
+
+63:55 nothing that you know a few excited
+63:57 
+
+63:57 developers spreading the word about your
+63:59 
+
+63:59 product um even though you know the big
+64:02 
+
+64:02 uh Revenue number then later comes from
+64:04 
+
+64:04 from Big Enterprises buying you but the
+64:06 
+
+64:06 reverse is often much harder of going
+64:08 
+
+64:08 Enterprise first and uh you might find
+64:11 
+
+64:11 excited people there as well um but the
+64:12 
+
+64:12 feedback loop is just so different so
+64:15 
+
+64:15 it's Focus it's you know um uh uh trying
+64:18 
+
+64:18 to find that flywheel the product Market
+64:20 
+
+64:20 fit you know and then think think the
+64:23 
+
+64:23 other one is to think big I think it's
+64:25 
+
+64:25 like like it's easy to find small ideas
+64:27 
+
+64:27 on top of you know model today that get
+64:30 
+
+64:30 you know commoditized tomorrow and so
+64:33 
+
+64:33 you have to think forward and that you
+64:35 
+
+64:35 know 10 years is is a long period of
+64:37 
+
+64:37 time but that's you know a good period
+64:38 
+
+64:38 of time for a startup to build something
+64:40 
+
+64:40 that is actually meaningful in this
+64:42 
+
+64:42 world and so you have to think uh big
+64:45 
+
+64:45 you have to you know create a vision
+64:48 
+
+64:48 that may be much larger than the MVP you
+64:51 
+
+64:51 know the first thing the Prototype that
+64:53 
+
+64:53 you're building right now and I think
+64:55 
+
+64:55 that's that's really hard a Founder to
+64:57 
+
+64:57 draft out that vision and then and then
+64:60 
+
+64:60 decompose right then go back to that
+65:01 
+
+65:01 small problem that you can solve right
+65:03 
+
+65:03 now so we'll close with some rapid fire
+65:05 
+
+65:05 questions one word answers uh one word
+65:08 
+
+65:08 answer one word answer you changed the I
+65:11 
+
+65:11 say one sentence if you need it no I say
+65:14 
+
+65:14 I'm going end this yes okay let's go
+65:17 
+
+65:17 okay uh will anyone meaningfully disrupt
+65:19 
+
+65:19 Nvidia and AI chips in the next call it
+65:21 
+
+65:21 5 to 10 years yes in what year will we
+65:24 
+
+65:24 pass the 50% threshold for swe agent
+65:29 
+
+65:29 2025 and what about
+65:31 
+
+65:31 90%
+65:35 
+
+65:35 2028 we'll GitHub primarily that was too
+65:37 
+
+65:37 pessimistic that last
+65:40 
+
+65:40 one we can we'll hold you to it um will
+65:43 
+
+65:43 GitHub primarily be using open or closed
+65:44 
+
+65:44 Source models in the next 5 years both
+65:47 
+
+65:47 where does the majority of value acrew
+65:49 
+
+65:49 in AI models compute infra applications
+65:53 
+
+65:53 a cost the whole
+65:55 
+
+65:55 stack that hyphen in it so it was one
+65:59 
+
+65:59 word is systems thinking and creativity
+66:02 
+
+66:02 going to get baked into the models in
+66:04 
+
+66:04 the next 5
+66:06 
+
+66:06 years
+66:08 
+
+66:08 maybe and will there be a new consensus
+66:11 
+
+66:11 architecture beyond the transformer in
+66:13 
+
+66:13 five years of course yes
+66:16 
+
+66:16 wow why would you think the other way
+66:18 
+
+66:18 around like like that's said that it's a
+66:20 
+
+66:20 much easier bet to think that there will
+66:22 
+
+66:22 be a new architecture because there was
+66:24 
+
+66:24 other architectures before Transformers
+66:25 
+
+66:25 and
+66:26 
+
+66:26 like that doesn't mean it replaces
+66:28 
+
+66:28 Transformers you know your cell phone
+66:31 
+
+66:31 still has a CPU even though gpus are the
+66:33 
+
+66:33 H commodity right now um so I think yeah
+66:35 
+
+66:35 there will be there will be new
+66:37 
+
+66:37 architectures and they might be bigger
+66:38 
+
+66:38 than Transformers today so interesting
+66:40 
+
+66:40 and that bring a lot of new oxygen for
+66:42 
+
+66:42 the builders in the ecosystem and a lot
+66:44 
+
+66:44 of things that would have to get
+66:45 
+
+66:45 reworked rebuilt re architected
+66:48 
+
+66:48 yeah amazing Thomas thank you so much
+66:51 
+
+66:51 for joining us today it's been wonderful
+66:52 
+
+66:52 digging into the history of GitHub the
+66:54 
+
+66:54 birth of GitHub cop
+66:56 
+
+66:56 and um the ambition that you have going
+66:58 
+
+66:58 forward as well thank you yeah thank you
+66:60 
+
+66:60 so much for having me it was so fun to
+67:01 
+
+67:01 talk to you both likewise thank you
+67:04 
+
+67:04 [Music]
+67:11 
+
+67:11 [Music]
+67:21 
+
+67:21 [Music]
