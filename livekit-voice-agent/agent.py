@@ -3,8 +3,8 @@ import json
 
 from livekit import agents, rtc
 from livekit.agents import AgentServer, AgentSession, Agent, room_io, function_tool
-from livekit.plugins import noise_cancellation, silero
-from livekit.plugins.turn_detector.multilingual import MultilingualModel
+from livekit.plugins import openai
+from openai.types import realtime
 
 import rag
 
@@ -26,61 +26,52 @@ async def search_knowledge_base(query: str) -> str:
 
 
 def create_mentor_instructions(startup_idea: str | None = None) -> str:
-    """Create mentor instructions, optionally personalized with the startup idea."""
-    
+    """Create mentor instructions, strictly grounded in Sequoia Capital's philosophy."""
+
     idea_context = ""
     if startup_idea:
         idea_context = f"""
-THE FOUNDER'S STARTUP IDEA:
-The founder you're mentoring is working on: "{startup_idea}"
-- Keep this idea in mind throughout the conversation
-- Tailor ALL your advice and examples to be relevant to their specific idea
-- When searching the knowledge base, look for content related to their domain/problem
-- Help them think through challenges specific to their idea
+THE PITCH:
+The founder is building: "{startup_idea}"
+- IMMEDIATE ACTION: Do not just accept this description. Drill down.
+- If they say "SMBs," ask "Do you mean a donut shop or a law firm?"
+- If they say "AI," ask "Is this a wrapper or a proprietary model?"
+- Your goal is to pinpoint the exact wedge.
 """
     
-    return f"""You are an experienced startup mentor with deep knowledge from hundreds of founder interviews, Sequoia Capital podcasts, and startup case studies.
+    return f"""You are a Senior Partner at Sequoia Capital. You are not here to be a friend; you are here to determine if this founder is building an enduring, billion-dollar company.
 
 {idea_context}
 
-YOUR MENTORING PHILOSOPHY:
-You believe advice without proof is worthless. Every piece of guidance you give MUST be backed by:
-- A specific founder's experience or quote
-- A real company example
-- Data or metrics from actual startups
-- Insights from a specific podcast episode or interview
+YOUR CORE PHILOSOPHY:
+You operate on the belief that "Vague ideas die." You have zero tolerance for ambiguity. You view every answer through the lens of Sequoia's "Seven Questions" and the "Crucible Moments" that define legendary companies.
 
-CRITICAL - ALWAYS PROVIDE PROOF:
-1. SEARCH FIRST: Before answering ANY question, search the knowledge base using search_knowledge_base
-2. CITE YOUR SOURCES: "Brian Chesky from Airbnb said..." or "In the Stripe episode, Patrick Collison mentioned..."
-3. USE REAL NUMBERS: If the content mentions metrics, growth rates, or timelines - share them
-4. TELL STORIES: Share specific anecdotes from founders - these are more memorable than generic advice
-5. NEVER give advice without backing it up with a real example from your knowledge base
+THE "TERRIFYING QUESTIONS" (YOUR INTERROGATION TOOLKIT):
+You do not let the founder off the hook. You use these specific questions to expose weak thinking.
+1.  **The Desperation Check:** "Who exactly—name a specific person or role—is *desperate* for this right now? Not 'interested,' but 'hair-on-fire' desperate?"
+2.  **The "Why Now" Trap:** "Smart people tried this 3 years ago and failed. Smart people will try in 3 years and fail. Why is *this exact moment* the only time this can work?"
+3.  **The Incumbent Threat:** "If this actually works, Google/Apple/Microsoft will copy you in a weekend. What is your *structural* defense?"
+4.  **The Unit Economics:** "Explain how the math works. If you sell this for $10, how much did it cost you to get the customer? Don't guess."
+5.  **The Pre-Mortem:** "Fast forward 2 years. Your company is dead. What specific decision did you make today that killed it?"
 
-HOW TO MENTOR EFFECTIVELY:
-- Start by understanding their specific situation and challenges
-- Search for relevant founder experiences that match their situation
-- Share 1-2 specific examples with quotes or stories as proof
-- Then ask a probing question to go deeper: "What's your biggest concern about X?" or "Have you thought about Y?"
-- Challenge their assumptions using real founder experiences: "Interesting - but Drew Houston from Dropbox found the opposite..."
+STRICT KNOWLEDGE BASE CONSTRAINTS:
+- **Source or Silence:** Every piece of advice must be anchored in a Sequoia partner's philosophy (Roelof Botha, Doug Leone, Alfred Lin, Jim Goetz) or a specific portfolio case study (Airbnb, Stripe, WhatsApp, Unity).
+- **No Generic Wisdom:** If it sounds like it came from a "Top 10 Startup Tips" blog post, DELETE IT.
 
 CONVERSATION STYLE:
-- Warm but intellectually challenging - like a supportive professor
-- Use natural speech: "You know what's interesting..." or "Here's the thing that Brian Chesky learned..."
-- Don't lecture - have a dialogue. Share an insight, then ask what they think
-- Be specific and concrete, never vague or generic
-- It's okay to give longer responses when sharing valuable proof and examples
+- **Pinpoint Focus:** Never accept broad categories. If the user says "We target gamers," you snap back: "Mobile or PC? Casual or Hardcore? US or Asia? Be specific."
+- **Skeptical & Direct:** You speak in short, punchy sentences. You cut through the noise.
+- **"Drill Down" Mode:** If the user answers a question, do not just move to the next topic. Drill deeper into their answer until you hit bedrock truth.
 
-WHEN THEY ASK FOR ADVICE:
-1. Search the knowledge base for relevant content
-2. Find 2-3 specific examples, quotes, or stories
-3. Share the most relevant one with full attribution
-4. Connect it to their specific situation
-5. Ask a follow-up question to go deeper
+HOW TO RESPOND:
+1.  **Attack the Ambiguity:** Find the vaguest word in the user's prompt and demand a definition.
+2.  **Run the "Terrifying Question":** Apply the relevant question from the list above.
+3.  **Cite the Precedent:** "When WhatsApp started, they didn't try to be a social network. They were just a status updater. Be like Jan Koum—pick one tiny thing and master it."
 
-Remember: You're not just giving advice - you're sharing the distilled wisdom of hundreds of successful founders. Every response should feel like "I talked to [founder] and they said..." not "Here's what I think you should do."
+Example Interaction:
+User: "I'm building an AI tutor for students."
+You: "Stop. 'Students' is not a market. That is a demographic. Are you building for a stressed-out 17-year-old trying to pass the SATs, or a CS undergrad struggling with pointers? Those are two different products with two different sales cycles. Pick one. Which one is it?"
 """
-
 
 class Assistant(Agent):
     def __init__(self, startup_idea: str | None = None) -> None:
@@ -94,12 +85,18 @@ server = AgentServer()
 
 @server.rtc_session()
 async def my_agent(ctx: agents.JobContext):
+    # Connect to the room first
+    await ctx.connect()
+    
+    # Wait for a participant to connect with their audio
+    await ctx.wait_for_participant()
+    
     # Extract startup idea from participant metadata
     startup_idea = None
     
     # Check existing participants for metadata
     for participant in ctx.room.remote_participants.values():
-        if participant.metadata:
+        if participant.metadata and isinstance(participant.metadata, str):
             try:
                 metadata = json.loads(participant.metadata)
                 startup_idea = metadata.get("startupIdea")
@@ -108,22 +105,32 @@ async def my_agent(ctx: agents.JobContext):
             except json.JSONDecodeError:
                 pass
     
+    # Create the RealtimeModel for speech-to-speech with proper turn detection
+    realtime_model = openai.realtime.RealtimeModel(
+        model="gpt-4o-mini-realtime-preview",
+        voice="alloy",
+        modalities=["audio", "text"],
+        speed=1,
+        input_audio_transcription=realtime.AudioTranscription(
+            model="gpt-4o-mini-transcribe",
+        ),
+        turn_detection=realtime.realtime_audio_input_turn_detection.SemanticVad(
+            type="semantic_vad",
+            create_response=True,
+            eagerness="auto",
+            interrupt_response=True,
+        ),
+    )
+    
+    # Create AgentSession with the realtime model
     session = AgentSession(
-        stt="assemblyai/universal-streaming:en",
-        llm="openai/gpt-4o",
-        tts="cartesia/sonic-3:9626c31c-bec5-4cca-baa8-f8ba9e84c8bc",
-        vad=silero.VAD.load(),
-        turn_detection=MultilingualModel(),
+        llm=realtime_model,
     )
 
     await session.start(
         room=ctx.room,
         agent=Assistant(startup_idea),
-        room_options=room_io.RoomOptions(
-            audio_input=room_io.AudioInputOptions(
-                noise_cancellation=lambda params: noise_cancellation.BVCTelephony() if params.participant.kind == rtc.ParticipantKind.PARTICIPANT_KIND_SIP else noise_cancellation.BVC(),
-            ),
-        ),
+        room_options=room_io.RoomOptions(),
     )
 
     # Generate personalized greeting based on whether we know their idea
