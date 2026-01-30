@@ -2,6 +2,8 @@
 
 import { create } from "zustand"
 import { persist } from "zustand/middleware"
+import { Module, ModuleId, Question } from "./dashboard-types"
+import { initialModules } from "./dashboard-data"
 
 export type InsightCategory = "problem" | "solution" | "market" | "competition" | "monetization" | "risk" | "customer" | "gtm" | "tech" | "pmf"
 
@@ -94,6 +96,16 @@ interface AppState {
   setVcCallCompleted: (completed: boolean) => void
   customerCallCompleted: boolean
   setCustomerCallCompleted: (completed: boolean) => void
+
+  // New structured dashboard
+  modules: Record<ModuleId, Module>
+  activeModuleId: ModuleId | null
+  expandedModuleId: ModuleId | null
+  setActiveModule: (moduleId: ModuleId | null) => void
+  setExpandedModule: (moduleId: ModuleId | null) => void
+  updateQuestion: (moduleId: ModuleId, questionId: string, value: string | string[]) => void
+  calculateModuleProgress: (moduleId: ModuleId) => number
+  calculateGlobalProgress: () => number
 }
 
 const defaultDashboardCards: DashboardCard[] = [
@@ -239,6 +251,77 @@ export const useAppStore = create<AppState>()(
       setVcCallCompleted: (completed) => set({ vcCallCompleted: completed }),
       customerCallCompleted: false,
       setCustomerCallCompleted: (completed) => set({ customerCallCompleted: completed }),
+
+      // New structured dashboard
+      modules: initialModules,
+      activeModuleId: null,
+      expandedModuleId: null,
+
+      setActiveModule: (moduleId) => set({ activeModuleId: moduleId }),
+
+      setExpandedModule: (moduleId) => set({ expandedModuleId: moduleId }),
+
+      updateQuestion: (moduleId, questionId, value) =>
+        set((state) => {
+          const module = state.modules[moduleId]
+          const updatedSubsections = module.subsections.map((subsection) => ({
+            ...subsection,
+            questions: subsection.questions.map((question) =>
+              question.id === questionId
+                ? {
+                    ...question,
+                    value,
+                    completed: Array.isArray(value)
+                      ? value.some(v => v.trim().length > 0)
+                      : typeof value === 'string' && value.trim().length > 0,
+                  }
+                : question
+            ),
+          }))
+
+          const updatedModule = {
+            ...module,
+            subsections: updatedSubsections,
+          }
+
+          // Calculate progress for this module
+          const allQuestions = updatedSubsections.flatMap(s => s.questions).filter(q => q.type !== 'readonly')
+          const completedQuestions = allQuestions.filter(q => q.completed)
+          const completionPercentage = allQuestions.length > 0
+            ? Math.round((completedQuestions.length / allQuestions.length) * 100)
+            : 0
+
+          return {
+            modules: {
+              ...state.modules,
+              [moduleId]: {
+                ...updatedModule,
+                completionPercentage,
+              },
+            },
+          }
+        }),
+
+      calculateModuleProgress: (moduleId) => {
+        const state = useAppStore.getState()
+        const module = state.modules[moduleId]
+        const allQuestions = module.subsections
+          .flatMap(s => s.questions)
+          .filter(q => q.type !== 'readonly')
+        const completedQuestions = allQuestions.filter(q => q.completed)
+        return allQuestions.length > 0
+          ? Math.round((completedQuestions.length / allQuestions.length) * 100)
+          : 0
+      },
+
+      calculateGlobalProgress: () => {
+        const state = useAppStore.getState()
+        const moduleIds: ModuleId[] = ['founder', 'problem', 'customer', 'product', 'market']
+        const totalProgress = moduleIds.reduce((sum, id) => {
+          return sum + state.modules[id].completionPercentage
+        }, 0)
+        return Math.round(totalProgress / moduleIds.length)
+      },
     }),
     {
       name: "launchpad-storage",
