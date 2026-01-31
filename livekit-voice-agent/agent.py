@@ -1,19 +1,11 @@
-# Load environment variables FIRST (before imports that need them)
 from dotenv import load_dotenv
-from pathlib import Path
-import os
 import json
-import ssl
-import logging
-import asyncio
-import re
-from typing import Annotated
 
-from livekit import agents
+from livekit import agents, rtc
 from livekit.agents import AgentServer, AgentSession, Agent, room_io, function_tool
-from livekit.plugins import openai, silero
+from livekit.plugins import openai
 from openai.types import realtime
-from mem0 import AsyncMemoryClient
+
 import rag
 
 # Load env files
@@ -132,9 +124,8 @@ def create_mentor_instructions(startup_idea: str | None = None, memory_context: 
     idea_context = ""
     if startup_idea:
         idea_context = f"""
-CURRENT PITCH:
-The founder is building: "{startup_idea}"
-Drill down on this - don't accept vague descriptions.
+THE FOUNDER IS BUILDING: "{startup_idea}"
+Acknowledge briefly, then challenge with one question.
 """
 
     return f"""SYSTEM PRIORITY #1: MEMORY TOOL USAGE
@@ -152,6 +143,16 @@ DO NOT hallucinate or guess. If they ask "Do you remember X?", call `recall_memo
 === MEMORIES ALREADY RETRIEVED (Use these first) ===
 {memory_context if memory_context else "No initial memories found."}
 ===================================================
+
+SYSTEM PRIORITY #2: KNOWLEDGE BASE RETRIEVAL
+
+## WORKFLOW FOR EVERY RESPONSE:
+Step 1: Call search_knowledge_base with user's keywords
+Step 2: Read the results
+Step 3: Reference specific insights from results in your response
+Step 4: Ask one follow-up question
+
+If you respond WITHOUT calling the tool first, you have failed your job. The tool call is MANDATORY.
 
 === CURRENT CONTEXT ===
 {idea_context if idea_context else "No specific startup idea provided yet."}
@@ -180,8 +181,8 @@ class Assistant(Agent):
     """Voice agent with persistent memory."""
     def __init__(self, startup_idea: str | None, memory_context: str | None) -> None:
         super().__init__(
-            instructions=create_mentor_instructions(startup_idea, memory_context),
-            tools=[search_knowledge_base, recall_memory], 
+            instructions=create_mentor_instructions(startup_idea),
+            tools=[search_knowledge_base],
         )
 
 server = AgentServer()
@@ -189,16 +190,19 @@ server = AgentServer()
 @server.rtc_session()
 async def my_agent(ctx: agents.JobContext):
     await ctx.connect()
-    participant = await ctx.wait_for_participant()
+    await ctx.wait_for_participant()
     
     # Extract startup idea from participant metadata
     startup_idea = None
-    if participant.metadata and isinstance(participant.metadata, str):
-        try:
-            metadata = json.loads(participant.metadata)
-            startup_idea = metadata.get("startupIdea")
-        except json.JSONDecodeError:
-            pass
+    for participant in ctx.room.remote_participants.values():
+        if participant.metadata and isinstance(participant.metadata, str) and isinstance(participant.metadata, str):
+            try:
+                metadata = json.loads(participant.metadata)
+                startup_idea = metadata.get("startupIdea")
+                if startup_idea:
+                    break
+            except json.JSONDecodeError:
+                pass
 
     # --- INITIAL FETCH ---
     initial_memory_context = None
@@ -222,11 +226,15 @@ async def my_agent(ctx: agents.JobContext):
             logger.error(f"[MEM0] Failed to fetch initial context: {e}")
 
     # --- SESSION SETUP ---
+    # Create the RealtimeModel
     realtime_model = openai.realtime.RealtimeModel(
         model="gpt-4o-mini-realtime-preview",
         voice="alloy",
         modalities=["audio", "text"],
-        input_audio_transcription=realtime.AudioTranscription(model="gpt-4o-mini-transcribe"),
+        speed=1,
+        input_audio_transcription=realtime.AudioTranscription(
+            model="gpt-4o-mini-transcribe",
+        ),
         turn_detection=realtime.realtime_audio_input_turn_detection.SemanticVad(
             type="semantic_vad", create_response=True, eagerness="auto", interrupt_response=True
         ),
@@ -234,10 +242,9 @@ async def my_agent(ctx: agents.JobContext):
     
     session = AgentSession(
         llm=realtime_model,
-        stt=openai.STT(),
-        vad=silero.VAD.load(),
     )
     
+    agent = Assistant(startup_idea)
     agent = Assistant(startup_idea)
 
     await session.start(
