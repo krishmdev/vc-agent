@@ -21,6 +21,7 @@ import { Button } from "@/components/ui/button"
 import { BreadcrumbNav } from "@/components/breadcrumb-nav"
 import { FounderProfileModal } from "@/components/founder-profile-modal"
 import { DashboardCard } from "@/components/dashboard-card"
+import { FloatingMentorButton } from "@/components/floating-mentor-button"
 import { useAppStore } from "@/lib/store"
 import { cn } from "@/lib/utils"
 
@@ -343,6 +344,9 @@ export default function DashboardPage() {
           </div>
         </div>
       </div>
+
+      {/* Floating Mentor Call Button */}
+      <FloatingMentorButton />
     </main>
   )
 }
