@@ -114,7 +114,7 @@ export function FloatingMentorButton({ className }: FloatingMentorButtonProps) {
         return (
             <div
                 className={cn(
-                    "fixed bottom-6 right-6 z-50",
+                    "fixed bottom-6 left-6 z-50",
                     "w-64 bg-card border border-border rounded-2xl shadow-2xl",
                     "animate-in slide-in-from-bottom-4 fade-in duration-300",
                     className
@@ -157,7 +157,7 @@ export function FloatingMentorButton({ className }: FloatingMentorButtonProps) {
         return (
             <div
                 className={cn(
-                    "fixed bottom-6 right-6 z-50",
+                    "fixed bottom-6 left-6 z-50",
                     "w-64 p-4 bg-card border border-destructive/50 rounded-2xl shadow-2xl",
                     className
                 )}
@@ -179,7 +179,7 @@ export function FloatingMentorButton({ className }: FloatingMentorButtonProps) {
             onClick={handleConnect}
             disabled={isConnecting}
             className={cn(
-                "fixed bottom-6 right-6 z-50",
+                "fixed bottom-6 left-6 z-50",
                 "w-14 h-14 rounded-full",
                 "bg-primary text-primary-foreground",
                 "shadow-lg shadow-primary/25",
@@ -198,8 +198,6 @@ export function FloatingMentorButton({ className }: FloatingMentorButtonProps) {
             ) : (
                 <>
                     <Headphones className="w-6 h-6 group-hover:scale-110 transition-transform" />
-                    {/* Pulse ring animation */}
-                    <span className="absolute inset-0 rounded-full bg-primary animate-ping opacity-20" />
                 </>
             )}
         </button>
