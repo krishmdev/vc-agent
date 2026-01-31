@@ -17,8 +17,8 @@ from mem0 import AsyncMemoryClient
 import rag
 
 # Load env files
-env_path_local = Path(__file__).resolve().parent / ".env.local"
-env_path_parent = Path(__file__).resolve().parent.parent / ".env.local"
+env_path_local = Path(__file__).resolve().parent / ".env"
+env_path_parent = Path(__file__).resolve().parent.parent / ".env"
 load_dotenv(env_path_local)
 load_dotenv(env_path_parent)
 
@@ -171,7 +171,7 @@ async def my_agent(ctx: agents.JobContext):
     
     # Extract startup idea from participant metadata
     startup_idea = None
-    if participant.metadata:
+    if participant.metadata and isinstance(participant.metadata, str):
         try:
             metadata = json.loads(participant.metadata)
             startup_idea = metadata.get("startupIdea")

@@ -21,6 +21,8 @@ import { ResourceSidebarDashboard } from "@/components/resource-sidebar-dashboar
 import { useAppStore } from "@/lib/store"
 import { ModuleId } from "@/lib/dashboard-types"
 import { cn } from "@/lib/utils"
+import { ResearchAgentIcon } from "@/components/research-agent-icon"
+import { ResearchChat } from "@/components/research-chat"
 
 export default function DashboardPage() {
   const router = useRouter()
@@ -34,11 +36,49 @@ export default function DashboardPage() {
     calculateGlobalProgress,
   } = useAppStore()
 
+
+
   const [isVisible, setIsVisible] = useState(false)
   const [isFounderModalOpen, setIsFounderModalOpen] = useState(false)
   const [activeQuestionId, setActiveQuestionId] = useState<string | null>(null)
+  
+  // Research Agent State
+  const [isResearchOpen, setIsResearchOpen] = useState(false)
+  const [initialContext, setInitialContext] = useState<{idea?: string, problem?: string, customer?: string, product?: string} | undefined>(undefined)
 
   const globalProgress = calculateGlobalProgress()
+
+  // Compute context for Research Agent
+  useEffect(() => {
+      if (!dashboardUnlocked) return;
+
+      const getAnswer = (moduleId: ModuleId, questionIds: string[]) => {
+            const module = modules[moduleId];
+            if (!module) return null;
+            
+            // Search through all subsections
+            for (const sub of module.subsections) {
+                for (const q of sub.questions) {
+                    if (questionIds.includes(q.id)) {
+                        // Return first non-empty value if found
+                        if (Array.isArray(q.value)) {
+                            if (q.value.length > 0) return q.value.join(", ");
+                        } else if (q.value) {
+                            return q.value;
+                        }
+                    }
+                }
+            }
+            return null;
+      };
+
+      const idea = sessionStorage.getItem("startup-idea") || undefined;
+      const problem = getAnswer('problem', ['problem-formula', 'problem-breaks']) || undefined; 
+      const customer = getAnswer('customer', ['early-adopters', 'customer-description']) || undefined;
+      const product = getAnswer('product', ['product-description', 'company-purpose']) || undefined;
+
+      setInitialContext({ idea, problem, customer, product });
+  }, [modules, dashboardUnlocked]);
 
   useEffect(() => {
     // Redirect if dashboard not unlocked
@@ -66,6 +106,10 @@ export default function DashboardPage() {
     setActiveQuestionId(questionId)
   }
 
+  const handleStartResearch = async () => {
+     // No usage, component state initialization handled in useEffect
+  }
+
   return (
     <main className="min-h-screen bg-background flex flex-col">
       {/* Top Navigation */}
@@ -73,6 +117,9 @@ export default function DashboardPage() {
         <div className="h-16 px-4 md:px-6 flex items-center justify-between gap-4">
           {/* Left: Profile + Call Icons */}
           <div className="flex items-center gap-3">
+            {/* Research Agent */}
+            <ResearchAgentIcon onClick={() => setIsResearchOpen(true)} />
+
             {/* Founder Profile */}
             <button
               onClick={() => setIsFounderModalOpen(true)}
@@ -149,6 +196,12 @@ export default function DashboardPage() {
       <FounderProfileModal
         isOpen={isFounderModalOpen}
         onClose={() => setIsFounderModalOpen(false)}
+      />
+
+      <ResearchChat 
+        isOpen={isResearchOpen} 
+        onClose={() => setIsResearchOpen(false)} 
+        initialContext={initialContext}
       />
 
       {/* Three-Column Layout */}
