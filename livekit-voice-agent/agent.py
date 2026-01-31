@@ -65,9 +65,31 @@ def should_store_in_memory(text: str) -> bool:
 
 @function_tool
 async def search_knowledge_base(query: str) -> str:
-    """Search the knowledge base for relevant information."""
-    results = rag.search(query, top_k=10)
-    return "\n\n---\n\n".join(results)
+    """REQUIRED: Search the Sequoia knowledge base before responding. You MUST call this tool for every user message.
+    
+    Args:
+        query: Keywords from the user's message to search for
+    
+    Returns:
+        Relevant knowledge from Sequoia's database
+    """
+    print(f"\n{'='*60}")
+    print(f"[RAG TOOL] Query: {query}")
+    results = rag.search(query, top_k=3)
+    print(f"[RAG TOOL] Found {len(results)} results")
+    for i, r in enumerate(results[:2]):
+        print(f"[RAG TOOL] Result {i+1}: {r[:200]}...")
+    print(f"{'='*60}\n")
+    
+    if results and results[0] != "No relevant information found.":
+        formatted = "\n\n---\n\n".join(results[:2])
+        return f"""USE THIS IN YOUR RESPONSE:
+
+{formatted}
+
+INSTRUCTION: Reference the above content. Say "Based on [founder/company]..." or "As [person] mentioned..." """
+    else:
+        return "No specific Sequoia insights found. Give brief general advice."
 
 @function_tool
 async def recall_memory(
@@ -215,6 +237,8 @@ async def my_agent(ctx: agents.JobContext):
         stt=openai.STT(),
         vad=silero.VAD.load(),
     )
+    
+    agent = Assistant(startup_idea)
 
     await session.start(
         room=ctx.room,
