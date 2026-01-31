@@ -4,39 +4,41 @@ import { useEffect, useState } from "react"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
 import {
-  Lightbulb,
-  Users,
-  TrendingUp,
   FileText,
   DollarSign,
   User,
-  Package,
-  Target,
-  Cpu,
-  Rocket,
+  Users,
   BookOpen,
   ExternalLink,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { BreadcrumbNav } from "@/components/breadcrumb-nav"
 import { FounderProfileModal } from "@/components/founder-profile-modal"
-import { DashboardCard } from "@/components/dashboard-card"
 import { FloatingMentorButton } from "@/components/floating-mentor-button"
+import { ModuleSidebar } from "@/components/module-sidebar"
+import { ModuleContent } from "@/components/module-content"
+import { ResourceSidebarDashboard } from "@/components/resource-sidebar-dashboard"
 import { useAppStore } from "@/lib/store"
+import { ModuleId } from "@/lib/dashboard-types"
 import { cn } from "@/lib/utils"
 
 export default function DashboardPage() {
   const router = useRouter()
   const {
-    idea,
     dashboardUnlocked,
-    mentorshipCallCompleted,
     vcCallCompleted,
     customerCallCompleted,
-    dashboardCards,
+    modules,
+    expandedModuleId,
+    setExpandedModule,
+    calculateGlobalProgress,
   } = useAppStore()
+
   const [isVisible, setIsVisible] = useState(false)
   const [isFounderModalOpen, setIsFounderModalOpen] = useState(false)
+  const [activeQuestionId, setActiveQuestionId] = useState<string | null>(null)
+
+  const globalProgress = calculateGlobalProgress()
 
   useEffect(() => {
     // Redirect if dashboard not unlocked
@@ -44,33 +46,32 @@ export default function DashboardPage() {
       router.push("/")
       return
     }
+
+    // Set default expanded module to first one (founder)
+    if (!expandedModuleId) {
+      setExpandedModule('founder')
+    }
+
     setTimeout(() => setIsVisible(true), 50)
-  }, [dashboardUnlocked, router])
+  }, [dashboardUnlocked, router, expandedModuleId, setExpandedModule])
 
   if (!dashboardUnlocked) return null
 
-  const cardConfig = [
-    { type: "specs" as const, title: "Product Specs", icon: Package },
-    { type: "customer" as const, title: "Customer Profile", icon: Users },
-    { type: "gtm" as const, title: "Go-to-Market", icon: Rocket },
-    { type: "tech" as const, title: "Tech Stack", icon: Cpu },
-    { type: "pmf" as const, title: "PMF Signals", icon: Target },
-  ]
+  const handleModuleClick = (moduleId: ModuleId) => {
+    setExpandedModule(moduleId)
+    setActiveQuestionId(null) // Reset active question when switching modules
+  }
 
-  const getCardData = (type: string) => {
-    return dashboardCards.find((c) => c.type === type) || {
-      content: "",
-      lastUpdated: null,
-      lastUpdatedSource: null,
-    }
+  const handleQuestionFocus = (questionId: string) => {
+    setActiveQuestionId(questionId)
   }
 
   return (
-    <main className="min-h-screen bg-background">
+    <main className="min-h-screen bg-background flex flex-col">
       {/* Top Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-40 bg-background/80 backdrop-blur-md border-b border-border">
-        <div className="max-w-7xl mx-auto px-4 md:px-6 h-16 flex items-center justify-between gap-4">
-          {/* Left: Logo + Profile + Call Icons */}
+        <div className="h-16 px-4 md:px-6 flex items-center justify-between gap-4">
+          {/* Left: Profile + Call Icons */}
           <div className="flex items-center gap-3">
             {/* Founder Profile */}
             <button
@@ -135,6 +136,7 @@ export default function DashboardPage() {
               onClick={() => router.push("/investor-memo")}
               size="sm"
               className="gap-2"
+              disabled={globalProgress < 100}
             >
               <FileText className="w-4 h-4" />
               <span className="hidden sm:inline">Investor Memo</span>
@@ -149,200 +151,48 @@ export default function DashboardPage() {
         onClose={() => setIsFounderModalOpen(false)}
       />
 
-      {/* Main Content */}
+      {/* Three-Column Layout */}
       <div
         className={cn(
-          "pt-24 pb-12 px-4 md:px-6 max-w-6xl mx-auto",
-          "transition-all duration-500",
-          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          "flex-1 flex mt-16 transition-all duration-500",
+          isVisible ? "opacity-100" : "opacity-0"
         )}
       >
-        {/* Header */}
-        <div className="mb-8 text-center">
-          <h1 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-2">
-            Product Dashboard
-          </h1>
-          <p className="text-muted-foreground max-w-xl mx-auto">
-            Your startup validation hub. Insights update live after each call.
-          </p>
-        </div>
+        {/* Left Sidebar - Module Navigation */}
+        <ModuleSidebar onModuleClick={handleModuleClick} />
 
-        {/* Product Overview - Primary Card */}
-        <div
-          className={cn(
-            "mb-8 p-6 rounded-2xl border-2 border-primary/20 bg-gradient-to-br from-primary/5 via-transparent to-transparent",
-            "transition-all duration-300 hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5"
-          )}
-        >
-          <div className="flex items-start gap-4">
-            <div className="w-14 h-14 rounded-2xl bg-primary/15 flex items-center justify-center flex-shrink-0">
-              <Lightbulb className="w-7 h-7 text-primary" />
-            </div>
-            <div className="flex-1 min-w-0">
-              <div className="flex items-center gap-2 mb-2">
+        {/* Center - Module Content */}
+        <div className="flex-1 bg-background overflow-hidden">
+          {expandedModuleId ? (
+            <ModuleContent
+              module={modules[expandedModuleId]}
+              moduleId={expandedModuleId}
+              onQuestionFocus={handleQuestionFocus}
+            />
+          ) : (
+            <div className="h-full flex items-center justify-center p-8">
+              <div className="text-center space-y-4 max-w-md">
+                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
+                  <FileText className="w-8 h-8 text-primary" />
+                </div>
                 <h2 className="text-xl font-semibold text-foreground">
-                  Product Overview
+                  Welcome to Your Product Dashboard
                 </h2>
-                {mentorshipCallCompleted && (
-                  <span className="px-2 py-0.5 rounded-full text-xs font-medium bg-primary/10 text-primary border border-primary/20">
-                    Validated
-                  </span>
-                )}
+                <p className="text-muted-foreground">
+                  Select a module from the left sidebar to begin structuring your startup
+                  validation journey. Complete each section to build an investor-grade
+                  narrative.
+                </p>
               </div>
-              <p className="text-foreground leading-relaxed text-balance">
-                {idea || "No idea captured yet. Complete the mentorship call to populate your product overview."}
-              </p>
             </div>
-          </div>
+          )}
         </div>
 
-        {/* Insight Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
-          {cardConfig.slice(0, 3).map((config, index) => {
-            const cardData = getCardData(config.type)
-            return (
-              <div
-                key={config.type}
-                className="animate-in fade-in slide-in-from-bottom-4"
-                style={{ animationDelay: `${index * 100}ms`, animationFillMode: "both" }}
-              >
-                <DashboardCard
-                  title={config.title}
-                  content={cardData.content}
-                  icon={config.icon}
-                  lastUpdated={cardData.lastUpdated}
-                  lastUpdatedSource={cardData.lastUpdatedSource}
-                />
-              </div>
-            )
-          })}
-        </div>
-
-        {/* Bottom Row - 2 Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-          {cardConfig.slice(3).map((config, index) => {
-            const cardData = getCardData(config.type)
-            return (
-              <div
-                key={config.type}
-                className="animate-in fade-in slide-in-from-bottom-4"
-                style={{ animationDelay: `${(index + 3) * 100}ms`, animationFillMode: "both" }}
-              >
-                <DashboardCard
-                  title={config.title}
-                  content={cardData.content}
-                  icon={config.icon}
-                  lastUpdated={cardData.lastUpdated}
-                  lastUpdatedSource={cardData.lastUpdatedSource}
-                />
-              </div>
-            )
-          })}
-        </div>
-
-        {/* Call to Action Section */}
-        <div className="bg-card border border-border rounded-2xl p-6">
-          <div className="flex items-center gap-3 mb-4">
-            <TrendingUp className="w-5 h-5 text-primary" />
-            <h2 className="text-lg font-semibold text-foreground">
-              Continue Validating
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {/* VC Call CTA */}
-            <button
-              onClick={() => router.push("/vc-call")}
-              className={cn(
-                "relative p-5 rounded-xl border text-left transition-all duration-300",
-                "hover:shadow-md hover:border-primary/30 group",
-                vcCallCompleted
-                  ? "bg-secondary/30 border-border"
-                  : "bg-gradient-to-br from-amber-500/5 to-transparent border-amber-500/20"
-              )}
-            >
-              {!vcCallCompleted && (
-                <span className="absolute top-3 right-3 w-2.5 h-2.5 bg-primary rounded-full animate-pulse" />
-              )}
-              <div className="flex items-start gap-4">
-                <div
-                  className={cn(
-                    "w-12 h-12 rounded-xl flex items-center justify-center transition-colors",
-                    vcCallCompleted
-                      ? "bg-muted"
-                      : "bg-amber-500/10 group-hover:bg-amber-500/20"
-                  )}
-                >
-                  <DollarSign
-                    className={cn(
-                      "w-6 h-6",
-                      vcCallCompleted ? "text-muted-foreground" : "text-amber-600"
-                    )}
-                  />
-                </div>
-                <div className="flex-1">
-                  <h3 className="font-semibold text-foreground mb-1">
-                    VC Call
-                    {vcCallCompleted && (
-                      <span className="ml-2 text-xs font-normal text-muted-foreground">
-                        Completed
-                      </span>
-                    )}
-                  </h3>
-                  <p className="text-sm text-muted-foreground">
-                    Simulate a pitch meeting with investor-style questions
-                  </p>
-                </div>
-              </div>
-            </button>
-
-            {/* Customer Call CTA */}
-            <button
-              onClick={() => router.push("/customer-call")}
-              className={cn(
-                "relative p-5 rounded-xl border text-left transition-all duration-300",
-                "hover:shadow-md hover:border-primary/30 group",
-                customerCallCompleted
-                  ? "bg-secondary/30 border-border"
-                  : "bg-gradient-to-br from-blue-500/5 to-transparent border-blue-500/20"
-              )}
-            >
-              {!customerCallCompleted && (
-                <span className="absolute top-3 right-3 w-2.5 h-2.5 bg-primary rounded-full animate-pulse" />
-              )}
-              <div className="flex items-start gap-4">
-                <div
-                  className={cn(
-                    "w-12 h-12 rounded-xl flex items-center justify-center transition-colors",
-                    customerCallCompleted
-                      ? "bg-muted"
-                      : "bg-blue-500/10 group-hover:bg-blue-500/20"
-                  )}
-                >
-                  <Users
-                    className={cn(
-                      "w-6 h-6",
-                      customerCallCompleted ? "text-muted-foreground" : "text-blue-600"
-                    )}
-                  />
-                </div>
-                <div className="flex-1">
-                  <h3 className="font-semibold text-foreground mb-1">
-                    Customer Call
-                    {customerCallCompleted && (
-                      <span className="ml-2 text-xs font-normal text-muted-foreground">
-                        Completed
-                      </span>
-                    )}
-                  </h3>
-                  <p className="text-sm text-muted-foreground">
-                    Validate assumptions with customer discovery
-                  </p>
-                </div>
-              </div>
-            </button>
-          </div>
-        </div>
+        {/* Right Sidebar - Sequoia Resources */}
+        <ResourceSidebarDashboard
+          moduleId={expandedModuleId}
+          activeQuestionId={activeQuestionId}
+        />
       </div>
 
       {/* Floating Mentor Call Button */}
