@@ -1,16 +1,24 @@
+# Load environment variables FIRST (before imports that need them)
 from dotenv import load_dotenv
+from pathlib import Path
+import os
 import json
+import ssl
+import logging
+import asyncio
+import re
+from typing import Annotated
 
-from livekit import agents, rtc
+from livekit import agents
 from livekit.agents import AgentServer, AgentSession, Agent, room_io, function_tool
-from livekit.plugins import openai
+from livekit.plugins import openai, silero
 from openai.types import realtime
-
+from mem0 import AsyncMemoryClient
 import rag
 
 # Load env files
-env_path_local = Path(__file__).resolve().parent / ".env"
-env_path_parent = Path(__file__).resolve().parent.parent / ".env"
+env_path_local = Path(__file__).resolve().parent / ".env.local"
+env_path_parent = Path(__file__).resolve().parent.parent / ".env.local"
 load_dotenv(env_path_local)
 load_dotenv(env_path_parent)
 
@@ -79,7 +87,7 @@ async def search_knowledge_base(query: str) -> str:
 
 {formatted}
 
-INSTRUCTION: Reference the above content. Say "Based on [founder/company]..." or "As [person] mentioned..." """
+INSTRUCTION: Be conversational if the reference is applicable then use it as content. Say advice based on Seqouia Philosophy and maybe add if applicable "Based on [founder/company]..." or "As [person] mentioned..." """
     else:
         return "No specific Sequoia insights found. Give brief general advice."
 
@@ -131,6 +139,7 @@ Acknowledge briefly, then challenge with one question.
     return f"""SYSTEM PRIORITY #1: MEMORY TOOL USAGE
 You possess a long-term memory via the `recall_memory` tool. 
 If the user asks ANY question about the past, their identity, or your previous discussions, you MUST use `recall_memory` BEFORE responding.
+You are a conversational mentor, that creates natural coffee chat like conversation helping while directing a mentee with their idea.
 
 Triggers for `recall_memory`:
 1. "Do you remember me?" / "What is my name?"
@@ -158,31 +167,54 @@ If you respond WITHOUT calling the tool first, you have failed your job. The too
 {idea_context if idea_context else "No specific startup idea provided yet."}
 =======================
 
-You are a Senior Partner at Sequoia Capital. Direct, skeptical, no-nonsense.
+You are a mentor who is drive in Sequoia Capital's Philosophy and knowledge. Direct, skeptical, no-nonsense.
 
 CORE PHILOSOPHY:
 "Vague ideas die." Zero tolerance for ambiguity.
 
-INTERROGATION TOOLKIT:
-1. **Desperation Check:** "Who exactly is *desperate* for this right now?"
-2. **Why Now:** "Why is *this exact moment* the only time this can work?"
-3. **Incumbent Threat:** "If this works, Google copies you in a weekend. What's your defense?"
-4. **Unit Economics:** "Explain the math. Cost per customer vs revenue per customer."
-5. **Pre-Mortem:** "2 years from now, your company is dead. What decision killed it?"
+TOP 6 QUESTIONS (YOUR INTERROGATION TOOLKIT):
+What is the problem? 
+Specifically, what is the "hair on fire" problem you are solving? 
+Why now? Why is this the exact right moment for your solution? 
+Why you? What is your unique advantage or founder-market fit? 
+What is the "spark"? What special, unique insight do you have? 
+What is the long-term vision? What does the company look like in 5-10 years? 
+How will you scale? What is the ambitious vision for the company
 
-STYLE:
-- Short, punchy sentences
-- Never accept broad categories ("gamers" → "Mobile or PC? Casual or Hardcore?")
-- Drill deeper on every answer
-- Cite Sequoia portfolio examples (Airbnb, Stripe, WhatsApp)
+THE "TERRIFYING QUESTIONS" (YOUR INHERENT BACKEND THINKING STYLE):
+You do not let the founder off the hook. You use these specific questions to expose weak thinking.
+1.  **The Desperation Check:** "Who exactly—name a specific person or role—is *desperate* for this right now? Not 'interested,' but 'hair-on-fire' desperate?"
+2.  **The "Why Now" Trap:** "Smart people tried this 3 years ago and failed. Smart people will try in 3 years and fail. Why is *this exact moment* the only time this can work?"
+3.  **The Incumbent Threat:** "If this actually works, Google/Apple/Microsoft will copy you in a weekend. What is your *structural* defense?"
+4.  **The Unit Economics:** "Explain how the math works. If you sell this for $10, how much did it cost you to get the customer? Don't guess."
+5.  **The Pre-Mortem:** "Fast forward 2 years. Your company is dead. What specific decision did you make today that killed it?"
+
+STRICT KNOWLEDGE BASE CONSTRAINTS:
+- **Source or Silence:** Every piece of advice must be anchored in a Sequoia partner's philosophy (Roelof Botha, Doug Leone, Alfred Lin, Jim Goetz) or a specific portfolio case study (Airbnb, Stripe, WhatsApp, Unity).
+- **No Generic Wisdom:** If it sounds like it came from a "Top 10 Startup Tips" blog post, DELETE IT. Give specific examples when possible that can be useful.
+
+CONVERSATION STYLE:
+- **Pinpoint Focus:** Never accept broad categories. If the user says "We target gamers," you snap back: "Mobile or PC? Casual or Hardcore? US or Asia? Maybe be a little more specific."
+- **Skeptical & Direct:** You speak in short, punchy sentences. You cut through the noise.
+- **"Drill Down" Mode:** If the user answers a question, do not just move to the next topic. Drill deeper into their answer until you hit bedrock truth.
+
+HOW TO RESPOND:
+1.  **Attack the Ambiguity:** Find the vaguest word in the user's prompt and demand a definition.
+2.  **Run the "Top 6 Questions/Terrifying Question":** Apply the relevant question from the list above.
+3.  **Cite the Precedent:** "When WhatsApp started, they didn't try to be a social network. They were just a status updater. Be like Jan Koum—pick one tiny thing and master it."
+
+Example Interaction:
+User: "I'm building an AI tutor for students."
+You: " Try to be more specific, like students' is not a market and it’s more of a demographic. Are you building for a stressed-out 17-year-old trying to pass the SATs, or a CS undergrad struggling with pointers? Those are two different products with two different sales cycles. Try to pick one. Which one is it?"
 """
+
 
 class Assistant(Agent):
     """Voice agent with persistent memory."""
     def __init__(self, startup_idea: str | None, memory_context: str | None) -> None:
         super().__init__(
-            instructions=create_mentor_instructions(startup_idea),
-            tools=[search_knowledge_base],
+            instructions=create_mentor_instructions(startup_idea, memory_context),
+            tools=[search_knowledge_base, recall_memory],
         )
 
 server = AgentServer()
@@ -195,7 +227,7 @@ async def my_agent(ctx: agents.JobContext):
     # Extract startup idea from participant metadata
     startup_idea = None
     for participant in ctx.room.remote_participants.values():
-        if participant.metadata and isinstance(participant.metadata, str) and isinstance(participant.metadata, str):
+        if participant.metadata and isinstance(participant.metadata, str):
             try:
                 metadata = json.loads(participant.metadata)
                 startup_idea = metadata.get("startupIdea")
@@ -212,7 +244,6 @@ async def my_agent(ctx: agents.JobContext):
             async def fetch_memories():
                 return await mem0_client.get_all(user_id=MEM0_USER_ID, limit=10)
             
-            # 2s timeout
             memories = await asyncio.wait_for(fetch_memories(), timeout=2.0)
             
             if memories and "results" in memories:
@@ -226,7 +257,8 @@ async def my_agent(ctx: agents.JobContext):
             logger.error(f"[MEM0] Failed to fetch initial context: {e}")
 
     # --- SESSION SETUP ---
-    # Create the RealtimeModel
+    # Create the RealtimeModel with auto-response DISABLED
+    # We will manually trigger responses with RAG context
     realtime_model = openai.realtime.RealtimeModel(
         model="gpt-4o-mini-realtime-preview",
         voice="alloy",
@@ -236,7 +268,8 @@ async def my_agent(ctx: agents.JobContext):
             model="gpt-4o-mini-transcribe",
         ),
         turn_detection=realtime.realtime_audio_input_turn_detection.SemanticVad(
-            type="semantic_vad", create_response=True, eagerness="auto", interrupt_response=True
+            type="semantic_vad", 
+            create_response=False,  # DISABLED - we manually trigger with RAG
         ),
     )
     
@@ -244,23 +277,67 @@ async def my_agent(ctx: agents.JobContext):
         llm=realtime_model,
     )
     
-    agent = Assistant(startup_idea)
-    agent = Assistant(startup_idea)
-
+    agent = Assistant(startup_idea, initial_memory_context)
+    
     await session.start(
         room=ctx.room,
-        agent=Assistant(startup_idea, initial_memory_context),
+        agent=agent,
         room_options=room_io.RoomOptions(),
     )
 
-    # --- EVENT LOOP AND STORAGE (Using Global ID) ---
+    # --- FORCED RAG ON EVERY USER MESSAGE ---
     @session.on("user_input_transcribed")
     def on_user_input_transcribed(event):
         if event.is_final and event.transcript:
             transcript = event.transcript.strip()
-            logger.info(f"[MEM0] User said: {transcript}")
+            logger.info(f"[USER] {transcript}")
+            
+            # Store in memory if meaningful
             if should_store_in_memory(transcript):
                 asyncio.create_task(store_in_memory(transcript))
+            
+            # Force RAG and respond
+            asyncio.create_task(respond_with_rag(session, transcript))
+    
+    async def respond_with_rag(session, user_message: str):
+        """Search RAG and generate response with results."""
+        try:
+            # Perform RAG search
+            print(f"\n{'='*60}")
+            print(f"[FORCED RAG] Query: {user_message[:80]}...")
+            rag_results = rag.search(user_message, top_k=3)
+            print(f"[FORCED RAG] Found {len(rag_results)} results")
+            
+            if rag_results and rag_results[0] != "No relevant information found.":
+                rag_context = "\n\n---\n\n".join(rag_results[:2])
+                for i, r in enumerate(rag_results[:2]):
+                    print(f"[FORCED RAG] Result {i+1}: {r[:200]}...")
+                
+                instructions = f"""The user said: "{user_message}"
+
+USE THE FOLLOWING SEQUOIA KNOWLEDGE IN YOUR RESPONSE:
+{rag_context}
+
+YOUR TASK:
+1. Reference specific insights from the knowledge above
+2. Say "Based on..." or "As [person] mentioned..."  
+3. Keep it brief (2-4 sentences)
+4. End with one pointed question
+"""
+            else:
+                print(f"[FORCED RAG] No relevant results found")
+                instructions = f"""The user said: "{user_message}"
+
+I don't have specific Sequoia insights on this. Give brief general advice based on first principles. Keep it to 2-4 sentences with one follow-up question.
+"""
+            print(f"{'='*60}\n")
+            
+            # Generate response with RAG context
+            await session.generate_reply(instructions=instructions)
+            
+        except Exception as e:
+            logger.error(f"[FORCED RAG] Error: {e}")
+            await session.generate_reply(instructions=f'Respond briefly to: "{user_message}"')
 
     async def store_in_memory(text: str):
         """Store meaningful user content in Mem0."""
@@ -275,33 +352,23 @@ async def my_agent(ctx: agents.JobContext):
             logger.error(f"[MEM0] Storage failed: {e}")
 
     # --- GREETING LOGIC ---
-    if initial_memory_context:
-        greeting = f"""You remember this person from previous conversations.
+    # Initial greeting also uses RAG
+    if startup_idea:
+        rag_results = rag.search(startup_idea, top_k=2)
+        rag_context = "\n".join(rag_results[:1]) if rag_results else ""
         
-PAST CONTEXT FROM MEMORY:
-{initial_memory_context}
+        greeting = f"""Greet the founder warmly. They're building: "{startup_idea}"
 
-CURRENT STARTUP FOCUS: "{startup_idea if startup_idea else 'Unknown'}"
+RELEVANT KNOWLEDGE:
+{rag_context if rag_context else "No specific insights found."}
 
-INSTRUCTION:
-Greet them warmly as a returning founder. 
-1. Say "Hey [Name if known]! Good to talk again."
-2. Immediately connect their past context to their startup idea.
-   - Example: "Last time you mentioned [memory detail]. How is [Startup Name] coming along?"
-3. Show you remember them. Do NOT introduce yourself again.
-
-Then ask what specific challenge they are facing right now."""
-
-    elif startup_idea:
-        greeting = f"""Greet the founder warmly. Acknowledge their startup idea: "{startup_idea}". 
-        Search your knowledge base for relevant insights and share one quick founder story. 
-        Ask what specific challenge they'd like to explore."""
+Share ONE brief insight from the knowledge above, then ask a pointed question about their biggest challenge."""
     else:
-        greeting = """Greet the founder casually - like meeting for coffee. 
-        Say something like "Hey! I'm excited to chat. What are you building?" Keep it brief."""
+        greeting = """Say "Hey! I'm a partner at Sequoia. What startup are you working on?" Keep it brief and natural."""
 
     await session.generate_reply(instructions=greeting)
 
 
 if __name__ == "__main__":
     agents.cli.run_app(server)
+
