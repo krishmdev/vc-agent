@@ -101,8 +101,12 @@ interface AppState {
   modules: Record<ModuleId, Module>
   activeModuleId: ModuleId | null
   expandedModuleId: ModuleId | null
+  resourceSidebarOpen: boolean
+  activeResourceQuestionId: string | null
   setActiveModule: (moduleId: ModuleId | null) => void
   setExpandedModule: (moduleId: ModuleId | null) => void
+  toggleResourceSidebar: (isOpen: boolean) => void
+  setActiveResourceQuestion: (questionId: string | null) => void
   updateQuestion: (moduleId: ModuleId, questionId: string, value: string | string[]) => void
   calculateModuleProgress: (moduleId: ModuleId) => number
   calculateGlobalProgress: () => number
@@ -256,10 +260,16 @@ export const useAppStore = create<AppState>()(
       modules: initialModules,
       activeModuleId: null,
       expandedModuleId: null,
+      resourceSidebarOpen: false,
+      activeResourceQuestionId: null,
 
       setActiveModule: (moduleId) => set({ activeModuleId: moduleId }),
 
       setExpandedModule: (moduleId) => set({ expandedModuleId: moduleId }),
+
+      toggleResourceSidebar: (isOpen) => set({ resourceSidebarOpen: isOpen }),
+
+      setActiveResourceQuestion: (questionId) => set({ activeResourceQuestionId: questionId }),
 
       updateQuestion: (moduleId, questionId, value) =>
         set((state) => {

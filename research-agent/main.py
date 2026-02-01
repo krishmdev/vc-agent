@@ -282,6 +282,126 @@ def run_fast_chat_task(task_id: str, session_id: str, user_message: str, context
     except Exception as e:
         print(f"Error in fast chat: {e}")
         active_tasks[task_id] = {"status": "failed", "error": str(e)}
+
+# --- Resource Article Generation Logic ---
+
+class ResourceArticleRequest(BaseModel):
+    question: str
+    module: str
+    context: Optional[str] = None
+
+class ResourceArticleResponse(BaseModel):
+    content: str
+
+@app.post("/generate_resource_article", response_model=ResourceArticleResponse)
+async def generate_resource_article(request: ResourceArticleRequest):
+    try:
+        api_key = os.environ.get("GEMINI_API_KEY")
+        if not api_key:
+            raise HTTPException(status_code=500, detail="API Key missing")
+
+        client = genai.Client(api_key=api_key)
+
+        prompt = f"""
+        You are an expert Sequoia Capital partner and startup mentor.
+        Your goal is to write a rigorous, tactical guide on the following topic: "{request.question}".
+
+        CONTEXT:
+        Module: {request.module}
+        Startup Context: {request.context or 'General early-stage startup'}
+
+        INSTRUCTIONS:
+        1.  **Style:** High-signal, dense, authoritative (Sequoia/Y Combinator style). No fluff.
+        2.  **Structure:**
+            *   **The Principle:** One sentence defining the core insight.
+            *   **Why It Matters:** Why most founders fail here.
+            *   **Tactical Framework:** Step-by-step how to do it.
+            *   **Sequoia Lens:** Reference specific Sequoia concepts (e.g., "Hair on Fire" problem, "Why Now", "Unit Economics").
+            *   **Examples:** Real-world examples (Airbnb, Stripe, Dropbox).
+        3.  **Search:** Use your search tools to find specific Sequoia articles or quotes to reference if relevant.
+        4.  **Length:** ~300-400 words. Markdown format.
+
+        OUTPUT FORMAT:
+        Return ONLY the Markdown article.
+        """
+
+        response = client.models.generate_content(
+            model='gemini-2.0-flash-exp', # Using flash for speed/search
+            contents=prompt,
+            config=types.GenerateContentConfig(
+                tools=[types.Tool(
+                    google_search=types.GoogleSearch()
+                )],
+            )
+        )
+
+        if not response.text:
+            raise HTTPException(status_code=500, detail="Failed to generate content")
+
+        return ResourceArticleResponse(content=response.text)
+
+    except Exception as e:
+        print(f"Error generating resource article: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+class ResourceChatRequest(BaseModel):
+    message: str
+    history: List[Dict[str, str]] # [{"role": "user", "content": "..."}]
+    resource_context: str
+
+class ResourceChatResponse(BaseModel):
+    message: str
+
+@app.post("/resource_chat", response_model=ResourceChatResponse)
+async def resource_chat_endpoint(request: ResourceChatRequest):
+    try:
+        api_key = os.environ.get("GEMINI_API_KEY")
+        if not api_key:
+            raise HTTPException(status_code=500, detail="API Key missing")
+
+        client = genai.Client(api_key=api_key)
+
+        # Build contents
+        contents = []
+        for msg in request.history:
+             role = "user" if msg["role"] == "user" else "model"
+             contents.append(types.Content(
+                role=role,
+                parts=[types.Part.from_text(text=msg["content"])]
+            ))
+
+        # Add current message
+        prompt_text = f"""
+        You are a helpful assistant answering questions about a specific article.
+
+        ARTICLE CONTEXT:
+        {request.resource_context}
+
+        USER QUESTION:
+        {request.message}
+
+        INSTRUCTIONS:
+        - Answer strictly based on the provided article context + your general startup knowledge.
+        - Be concise and helpful.
+        """
+
+        contents.append(types.Content(
+            role="user",
+            parts=[types.Part.from_text(text=prompt_text)]
+        ))
+
+        response = client.models.generate_content(
+            model='gemini-2.0-flash-exp',
+            contents=contents
+        )
+
+        return ResourceChatResponse(message=response.text)
+
+    except Exception as e:
+        print(f"Error in resource chat: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+
 @app.post("/chat", response_model=ChatResponse)
 async def chat_endpoint(request: ChatRequest, background_tasks: BackgroundTasks):
     # 1. Initialize Session if needed

@@ -39,6 +39,7 @@ export interface SequoiaResource {
   type: 'article' | 'framework' | 'example' | 'guidance';
   description: string;
   url?: string;
+  videoUrl?: string; // Optional: YouTube or other video embed URL
   moduleId: ModuleId;
   questionIds?: string[]; // Optional: specific questions this resource relates to
 }

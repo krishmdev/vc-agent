@@ -23,6 +23,7 @@ import { ModuleId } from "@/lib/dashboard-types"
 import { cn } from "@/lib/utils"
 import { ResearchAgentIcon } from "@/components/research-agent-icon"
 import { ResearchChat } from "@/components/research-chat"
+import { ResourceDrawer } from "@/components/resource-drawer"
 
 export default function DashboardPage() {
   const router = useRouter()
@@ -250,6 +251,9 @@ export default function DashboardPage() {
 
       {/* Floating Mentor Call Button */}
       <FloatingMentorButton />
+
+      {/* Resource Drawer */}
+      <ResourceDrawer />
     </main>
   )
 }

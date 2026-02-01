@@ -3,7 +3,7 @@
 import { Question, ModuleId } from "@/lib/dashboard-types"
 import { useAppStore } from "@/lib/store"
 import { cn } from "@/lib/utils"
-import { CheckCircle2, Circle, HelpCircle } from "lucide-react"
+import { CheckCircle2, Circle, HelpCircle, BookOpen } from "lucide-react"
 import { useState, useEffect } from "react"
 
 interface QuestionCardProps {
@@ -14,6 +14,8 @@ interface QuestionCardProps {
 
 export function QuestionCard({ question, moduleId, onFocus }: QuestionCardProps) {
   const updateQuestion = useAppStore((state) => state.updateQuestion)
+  const setActiveResourceQuestion = useAppStore((state) => state.setActiveResourceQuestion)
+  const toggleResourceSidebar = useAppStore((state) => state.toggleResourceSidebar)
   const [localValue, setLocalValue] = useState(question.value)
 
   // Sync local value with store when question changes
@@ -114,11 +116,25 @@ export function QuestionCard({ question, moduleId, onFocus }: QuestionCardProps)
 
         {/* Label and Help Text */}
         <div className="flex-1">
-          <label className="block text-sm font-semibold text-foreground mb-1">
-            {question.label}
-          </label>
+          <div className="flex items-center justify-between gap-4">
+              <label className="block text-sm font-semibold text-foreground mb-1">
+                {question.label}
+              </label>
+
+              <button
+                onClick={() => {
+                    setActiveResourceQuestion(question.id)
+                    toggleResourceSidebar(true)
+                }}
+                className="flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium text-primary bg-primary/10 hover:bg-primary/20 transition-colors shrink-0"
+              >
+                  <BookOpen className="w-3.5 h-3.5" />
+                  <span>Learn More</span>
+              </button>
+          </div>
+
           {question.helpText && (
-            <div className="flex items-start gap-1.5 text-xs text-muted-foreground">
+            <div className="flex items-start gap-1.5 text-xs text-muted-foreground mt-1">
               <HelpCircle className="w-3.5 h-3.5 mt-0.5 shrink-0" />
               <span>{question.helpText}</span>
             </div>
