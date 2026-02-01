@@ -15,7 +15,7 @@ from typing import Annotated
 from livekit import agents
 from livekit.agents import AgentServer, AgentSession, Agent, room_io, function_tool
 from livekit.plugins import google
-import google.genai as genai
+import google.generativeai as genai
 import aiohttp
 from mem0 import AsyncMemoryClient
 import rag
@@ -906,7 +906,17 @@ class Assistant(Agent):
             "strengths": ["Strength 1", "Strength 2", "Strength 3"],
             "gaps": ["Gap 1", "Gap 2", "Gap 3", "Gap 4", "Gap 5"],
             "terrifyingQuestions": ["Unanswered Question 1", "Unanswered Question 2"],
-            "nextSteps": ["Actionable Step 1", "Actionable Step 2", "Actionable Step 3"]
+            "nextSteps": ["Actionable Step 1", "Actionable Step 2", "Actionable Step 3"],
+            "extraction": {{
+                "unique-insight": "What is the secret or unique insight?",
+                "why-you": "Why is this the right founder?",
+                "why-now": "Why is now the right time?",
+                "hair-on-fire": "What is the urgent problem?",
+                "workarounds": "How are people solving it today?",
+                "high-expectation-customer": "Who is the ideal early adopter?",
+                "wedge": "What is the initial product wedge?",
+                "path-to-revenue": "How will this make money/scale?"
+            }}
         }}
         
         TRANSCRIPT:

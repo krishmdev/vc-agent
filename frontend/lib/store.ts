@@ -15,6 +15,7 @@ export interface VCReport {
   gaps: string[]
   terrifyingQuestions: string[]
   nextSteps: string[]
+  extraction: Record<string, string> // New field for auto-filling modules
 }
 
 export interface Insight {

@@ -123,6 +123,11 @@ export default function DashboardPage() {
                 if (data.exists && data.report) {
                     // Update store
                     useAppStore.getState().setVcReport(data.report);
+                    
+                    // Auto-fill modules with extracted data
+                    if (data.report.extraction) {
+                         useAppStore.getState().autoFillModules(data.report.extraction);
+                    }
                 }
             } catch (e) {
                 // ignore
@@ -312,11 +317,15 @@ export default function DashboardPage() {
             <Button
               onClick={() => router.push("/investor-memo")}
               size="sm"
-              className="gap-2"
-              disabled={globalProgress < 100}
+              className={cn(
+                "gap-2 transition-all duration-500",
+                vcReport ? "bg-green-600 hover:bg-green-700 text-white shadow-lg animate-pulse" : ""
+              )}
             >
               <FileText className="w-4 h-4" />
-              <span className="hidden sm:inline">Investor Memo</span>
+              <span className="hidden sm:inline">
+                {vcReport ? "View Investor Memo (Unocked)" : "Investor Memo"}
+              </span>
             </Button>
           </div>
         </div>
