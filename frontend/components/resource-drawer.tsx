@@ -3,7 +3,6 @@
 import { useState, useEffect, useRef } from "react"
 import { useAppStore } from "@/lib/store"
 import { sequoiaResources } from "@/lib/dashboard-data"
-import { SequoiaResource } from "@/lib/dashboard-types"
 import { cn } from "@/lib/utils"
 import {
   X,
@@ -13,14 +12,38 @@ import {
   ExternalLink,
   Send,
   Loader2,
-  ChevronRight,
   MessageSquare,
-  Sparkles
+  Sparkles,
+  PlayCircle,
+  Maximize2,
+  Minimize2
 } from "lucide-react"
 import ReactMarkdown from "react-markdown"
 import { Button } from "@/components/ui/button"
-import { ScrollArea } from "@/components/ui/scroll-area"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+
+// Storage key for persisting generated guides
+const GUIDES_STORAGE_KEY = 'sequoia-ai-guides'
+
+// Helper to load guides from localStorage
+const loadStoredGuides = (): Record<string, string> => {
+  try {
+    const stored = localStorage.getItem(GUIDES_STORAGE_KEY)
+    return stored ? JSON.parse(stored) : {}
+  } catch {
+    return {}
+  }
+}
+
+// Helper to save guide to localStorage
+const saveGuide = (questionId: string, content: string) => {
+  try {
+    const guides = loadStoredGuides()
+    guides[questionId] = content
+    localStorage.setItem(GUIDES_STORAGE_KEY, JSON.stringify(guides))
+  } catch (e) {
+    console.error('Failed to save guide:', e)
+  }
+}
 
 export function ResourceDrawer() {
   const {
@@ -32,16 +55,18 @@ export function ResourceDrawer() {
     expandedModuleId
   } = useAppStore()
 
-  const [activeTab, setActiveTab] = useState<"read" | "watch" | "ask">("read")
   const [aiArticle, setAiArticle] = useState<string | null>(null)
   const [isGenerating, setIsGenerating] = useState(false)
   const [chatMessage, setChatMessage] = useState("")
   const [chatHistory, setChatHistory] = useState<{ role: "user" | "model"; content: string }[]>([])
   const [isChatting, setIsChatting] = useState(false)
+  const [showAiSection, setShowAiSection] = useState(false)
+  const [error, setError] = useState<string | null>(null)
+  const [isExpanded, setIsExpanded] = useState(false)
+  const chatEndRef = useRef<HTMLDivElement>(null)
 
   // Identify the relevant module and question
   const currentModuleId = expandedModuleId || activeModuleId
-  // If activeResourceQuestionId is set, find that question object to get its label
   const currentQuestion = currentModuleId && activeResourceQuestionId
     ? modules[currentModuleId]?.subsections
         .flatMap(s => s.questions)
@@ -59,17 +84,45 @@ export function ResourceDrawer() {
       )
     : relevantResources
 
-  // Separate video vs text resources
-  const articles = displayedResources.filter(r => !r.videoUrl)
-  const videos = displayedResources.filter(r => r.videoUrl)
+  // Separate video vs text resources - strict filtering
+  const articles = displayedResources.filter(r => !r.videoUrl || r.videoUrl.trim() === "")
 
-  // Effect: When active question changes, reset AI state and potentially auto-generate
+  // Videos: EXTREMELY strict - only show if BOTH conditions are met:
+  // 1. Has a valid videoUrl
+  // 2. Has questionIds array that includes the EXACT current question
+  const videos = activeResourceQuestionId
+    ? displayedResources.filter(r => {
+        // Must have valid video URL
+        if (!r.videoUrl || r.videoUrl.trim() === "") return false
+        // Must have questionIds array
+        if (!r.questionIds || !Array.isArray(r.questionIds)) return false
+        // Must include the exact current question
+        return r.questionIds.includes(activeResourceQuestionId)
+      })
+    : [] // No videos if no specific question selected
+
+  // Auto-scroll chat to bottom
+  useEffect(() => {
+    chatEndRef.current?.scrollIntoView({ behavior: "smooth" })
+  }, [chatHistory, isChatting])
+
+  // Effect: Load stored guide when question changes
   useEffect(() => {
     if (resourceSidebarOpen && activeResourceQuestionId) {
-      setAiArticle(null)
       setChatHistory([])
-      // Optional: Auto-generate on open could be enabled here
-      // generateAiGuide()
+      setError(null)
+
+      // Try to load previously generated guide from localStorage
+      const storedGuides = loadStoredGuides()
+      const storedGuide = storedGuides[activeResourceQuestionId]
+
+      if (storedGuide) {
+        setAiArticle(storedGuide)
+        setShowAiSection(true)
+      } else {
+        setAiArticle(null)
+        setShowAiSection(false)
+      }
     }
   }, [activeResourceQuestionId, resourceSidebarOpen])
 
@@ -77,28 +130,41 @@ export function ResourceDrawer() {
     if (!currentQuestion || !currentModuleId) return
 
     setIsGenerating(true)
+    setError(null)
     try {
-        // Construct context from other answers in the module?
-        // For now, simple context
-        const response = await fetch("http://localhost:8000/generate_resource_article", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-                question: currentQuestion.label,
-                module: currentModuleId,
-                context: "Early stage startup validation" // Could grab more state here
-            })
+      const response = await fetch("http://localhost:8000/generate_resource_article", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          question: currentQuestion.label,
+          module: currentModuleId,
+          context: "Early stage startup validation"
         })
+      })
 
-        if (!response.ok) throw new Error("Failed to generate")
+      if (!response.ok) {
+        const errorData = await response.json().catch(() => ({ detail: "Failed to generate" }))
+        throw new Error(errorData.detail || "Failed to generate guide")
+      }
 
-        const data = await response.json()
-        setAiArticle(data.content)
-        setActiveTab("ask") // Switch to AI tab to show result
+      const data = await response.json()
+
+      if (!data?.content) {
+        throw new Error("No content received from server")
+      }
+
+      setAiArticle(data.content)
+      setShowAiSection(true)
+
+      // Save to localStorage for persistence
+      if (activeResourceQuestionId) {
+        saveGuide(activeResourceQuestionId, data.content)
+      }
     } catch (e) {
-        console.error(e)
+      console.error("Error generating guide:", e)
+      setError(e instanceof Error ? e.message : "Failed to generate guide. Please try again.")
     } finally {
-        setIsGenerating(false)
+      setIsGenerating(false)
     }
   }
 
@@ -109,26 +175,38 @@ export function ResourceDrawer() {
     setChatMessage("")
     setChatHistory(prev => [...prev, { role: "user", content: userMsg }])
     setIsChatting(true)
+    setError(null)
 
     try {
-        const response = await fetch("http://localhost:8000/resource_chat", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-                message: userMsg,
-                history: chatHistory,
-                resource_context: aiArticle
-            })
+      const response = await fetch("http://localhost:8000/resource_chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          message: userMsg,
+          history: chatHistory,
+          resource_context: aiArticle
         })
+      })
 
-        if (!response.ok) throw new Error("Failed to chat")
+      if (!response.ok) {
+        const errorData = await response.json().catch(() => ({ detail: "Failed to get response" }))
+        throw new Error(errorData.detail || "Failed to get response")
+      }
 
-        const data = await response.json()
-        setChatHistory(prev => [...prev, { role: "model", content: data.message }])
+      const data = await response.json()
+
+      if (!data?.message) {
+        throw new Error("No response received from server")
+      }
+
+      setChatHistory(prev => [...prev, { role: "model", content: data.message }])
     } catch (e) {
-        console.error(e)
+      console.error("Error in chat:", e)
+      setError(e instanceof Error ? e.message : "Failed to send message. Please try again.")
+      // Remove the user message we just added since it failed
+      setChatHistory(prev => prev.slice(0, -1))
     } finally {
-        setIsChatting(false)
+      setIsChatting(false)
     }
   }
 
@@ -143,237 +221,282 @@ export function ResourceDrawer() {
       />
 
       {/* Drawer */}
-      <div className="fixed inset-y-0 right-0 w-full sm:w-[540px] z-50 bg-background border-l border-border shadow-2xl flex flex-col animate-in slide-in-from-right duration-300">
+      <div className={cn(
+        "fixed inset-y-0 right-0 z-50 bg-background border-l border-border shadow-2xl flex flex-col animate-in slide-in-from-right duration-300 transition-all",
+        isExpanded ? "w-full lg:w-[90%]" : "w-full sm:w-[540px]"
+      )}>
 
         {/* Header */}
         <div className="flex items-center justify-between p-4 border-b border-border">
-            <div className="flex items-center gap-2">
-                <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center">
-                    <BookOpen className="w-4 h-4 text-primary" />
-                </div>
-                <div>
-                    <h2 className="font-semibold text-sm">Sequoia Knowledge Base</h2>
-                    {currentQuestion && (
-                        <p className="text-xs text-muted-foreground truncate max-w-[300px]">
-                            {currentQuestion.label}
-                        </p>
-                    )}
-                </div>
+          <div className="flex items-center gap-2">
+            <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center">
+              <BookOpen className="w-4 h-4 text-primary" />
             </div>
-            <Button variant="ghost" size="icon" onClick={() => toggleResourceSidebar(false)}>
-                <X className="w-4 h-4" />
+            <div>
+              <h2 className="font-semibold text-sm">Sequoia Knowledge Base</h2>
+              {currentQuestion && (
+                <p className="text-xs text-muted-foreground truncate max-w-[300px]">
+                  {currentQuestion.label}
+                </p>
+              )}
+            </div>
+          </div>
+          <div className="flex items-center gap-2">
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={() => setIsExpanded(!isExpanded)}
+              title={isExpanded ? "Minimize" : "Expand"}
+            >
+              {isExpanded ? <Minimize2 className="w-4 h-4" /> : <Maximize2 className="w-4 h-4" />}
             </Button>
+            <Button variant="ghost" size="icon" onClick={() => toggleResourceSidebar(false)}>
+              <X className="w-4 h-4" />
+            </Button>
+          </div>
         </div>
 
-        {/* Content Tabs */}
-        <Tabs value={activeTab} onValueChange={(v: any) => setActiveTab(v)} className="flex-1 flex flex-col min-h-0">
-            <div className="px-4 pt-2 border-b border-border/50">
-                <TabsList className="grid w-full grid-cols-3">
-                    <TabsTrigger value="read" className="gap-2">
-                        <BookOpen className="w-3.5 h-3.5" /> Read
-                    </TabsTrigger>
-                    <TabsTrigger value="watch" className="gap-2">
-                        <Video className="w-3.5 h-3.5" /> Watch
-                    </TabsTrigger>
-                    <TabsTrigger value="ask" className="gap-2">
-                        <Bot className="w-3.5 h-3.5" /> AI Partner
-                    </TabsTrigger>
-                </TabsList>
-            </div>
+        {/* Unified Content Area */}
+        <div className="flex-1 overflow-y-auto">
+          <div className="p-6 space-y-8">
 
-            {/* READ TAB */}
-            <TabsContent value="read" className="flex-1 overflow-hidden data-[state=inactive]:hidden mt-0">
-                <ScrollArea className="h-full p-6">
-                    <div className="space-y-4">
-                        <div className="flex items-center justify-between">
-                            <h3 className="text-lg font-semibold">Recommended Reading</h3>
-                            <span className="text-xs text-muted-foreground">{articles.length} articles</span>
+            {/* Error Display */}
+            {error && (
+              <div className="p-4 rounded-lg bg-destructive/10 border border-destructive/20 text-destructive text-sm">
+                {error}
+              </div>
+            )}
+
+            {/* Articles Section */}
+            {articles.length > 0 && (
+              <section>
+                <div className="flex items-center gap-2 mb-4">
+                  <BookOpen className="w-4 h-4 text-primary" />
+                  <h3 className="text-base font-semibold">Recommended Reading</h3>
+                  <span className="text-xs text-muted-foreground">({articles.length})</span>
+                </div>
+                <div className="space-y-3">
+                  {articles.map(resource => (
+                    <a
+                      key={resource.id}
+                      href={resource.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block group"
+                    >
+                      <div className="p-4 rounded-xl border border-border bg-card hover:border-primary/50 hover:shadow-md transition-all">
+                        <div className="flex items-start justify-between gap-4">
+                          <div className="flex-1">
+                            <h4 className="font-medium text-sm group-hover:text-primary transition-colors mb-1">
+                              {resource.title}
+                            </h4>
+                            <p className="text-xs text-muted-foreground line-clamp-2">
+                              {resource.description}
+                            </p>
+                          </div>
+                          <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary shrink-0 mt-1" />
                         </div>
+                      </div>
+                    </a>
+                  ))}
+                </div>
+              </section>
+            )}
 
-                        {articles.length === 0 ? (
-                            <div className="text-center py-12 text-muted-foreground">
-                                <p>No specific articles found for this section.</p>
-                                <Button variant="link" onClick={() => setActiveTab("ask")}>
-                                    Generate a guide instead?
-                                </Button>
-                            </div>
+            {/* Videos Section - Only show if videos exist */}
+            {videos.length > 0 && (
+              <section>
+                <div className="flex items-center gap-2 mb-4">
+                  <Video className="w-4 h-4 text-primary" />
+                  <h3 className="text-base font-semibold">Masterclass Videos</h3>
+                  <span className="text-xs text-muted-foreground">({videos.length})</span>
+                </div>
+                <div className="space-y-6">
+                  {videos.map(resource => (
+                    <div key={resource.id} className="space-y-3">
+                      <div className="aspect-video rounded-xl overflow-hidden bg-muted border border-border shadow-sm">
+                        {resource.videoUrl ? (
+                          <iframe
+                            src={resource.videoUrl}
+                            title={resource.title}
+                            className="w-full h-full"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                          />
                         ) : (
-                            articles.map(resource => (
-                                <a
-                                    key={resource.id}
-                                    href={resource.url}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="block group"
-                                >
-                                    <div className="p-4 rounded-xl border border-border bg-card hover:border-primary/50 transition-all">
-                                        <div className="flex items-start justify-between gap-4">
-                                            <div>
-                                                <h4 className="font-medium text-sm group-hover:text-primary transition-colors">
-                                                    {resource.title}
-                                                </h4>
-                                                <p className="text-xs text-muted-foreground mt-1 line-clamp-2">
-                                                    {resource.description}
-                                                </p>
-                                            </div>
-                                            <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary shrink-0" />
-                                        </div>
-                                    </div>
-                                </a>
-                            ))
+                          <div className="w-full h-full flex items-center justify-center text-muted-foreground">
+                            <PlayCircle className="w-12 h-12" />
+                          </div>
                         )}
+                      </div>
+                      <div>
+                        <h4 className="font-medium text-sm mb-1">{resource.title}</h4>
+                        <p className="text-xs text-muted-foreground">{resource.description}</p>
+                      </div>
                     </div>
-                </ScrollArea>
-            </TabsContent>
+                  ))}
+                </div>
+              </section>
+            )}
 
-            {/* WATCH TAB */}
-            <TabsContent value="watch" className="flex-1 overflow-hidden data-[state=inactive]:hidden mt-0">
-                <ScrollArea className="h-full p-6">
-                     <div className="space-y-6">
-                        <div className="flex items-center justify-between">
-                            <h3 className="text-lg font-semibold">Masterclass Videos</h3>
-                            <span className="text-xs text-muted-foreground">{videos.length} videos</span>
-                        </div>
+            {/* AI Partner Section */}
+            <section>
+              <div className="flex items-center gap-2 mb-4">
+                <Bot className="w-4 h-4 text-primary" />
+                <h3 className="text-base font-semibold">AI Partner</h3>
+              </div>
 
-                        {videos.length === 0 ? (
-                             <div className="text-center py-12 text-muted-foreground">
-                                <p>No specific videos curated for this section.</p>
-                            </div>
-                        ) : (
-                            videos.map(resource => (
-                                <div key={resource.id} className="space-y-2">
-                                    <div className="aspect-video rounded-xl overflow-hidden bg-muted border border-border">
-                                        {resource.videoUrl ? (
-                                            <iframe
-                                                src={resource.videoUrl}
-                                                title={resource.title}
-                                                className="w-full h-full"
-                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                                allowFullScreen
-                                            />
-                                        ) : (
-                                            <div className="w-full h-full flex items-center justify-center">
-                                                <p>Video not available</p>
-                                            </div>
-                                        )}
-                                    </div>
-                                    <div>
-                                        <h4 className="font-medium text-sm">{resource.title}</h4>
-                                        <p className="text-xs text-muted-foreground">{resource.description}</p>
-                                    </div>
-                                </div>
-                            ))
-                        )}
-                    </div>
-                </ScrollArea>
-            </TabsContent>
-
-            {/* ASK (AI) TAB */}
-            <TabsContent value="ask" className="flex-1 flex flex-col min-h-0 data-[state=inactive]:hidden mt-0">
-                {/* Generated Content Area */}
-                <ScrollArea className="flex-1 p-6">
-                    {!aiArticle ? (
-                        <div className="h-full flex flex-col items-center justify-center text-center space-y-4">
-                            <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                                <Sparkles className="w-6 h-6 text-primary" />
-                            </div>
-                            <div className="space-y-2 max-w-sm">
-                                <h3 className="font-semibold">Generate Tactical Guide</h3>
-                                <p className="text-sm text-muted-foreground">
-                                    Create a custom Sequoia-style guide for "{currentQuestion?.label || 'this topic'}"
-                                </p>
-                            </div>
-                            <Button onClick={generateAiGuide} disabled={isGenerating}>
-                                {isGenerating ? (
-                                    <>
-                                        <Loader2 className="w-4 h-4 mr-2 animate-spin" />
-                                        Researching...
-                                    </>
-                                ) : (
-                                    "Generate Guide"
-                                )}
-                            </Button>
-                        </div>
+              {!showAiSection ? (
+                <div className="p-6 rounded-xl border border-border bg-card space-y-4 text-center">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
+                    <Sparkles className="w-6 h-6 text-primary" />
+                  </div>
+                  <div className="space-y-2">
+                    <h4 className="font-semibold">Generate Tactical Guide</h4>
+                    <p className="text-sm text-muted-foreground max-w-sm mx-auto">
+                      Create a custom Sequoia-style guide for "{currentQuestion?.label || 'this topic'}"
+                    </p>
+                  </div>
+                  <Button onClick={generateAiGuide} disabled={isGenerating} className="mx-auto">
+                    {isGenerating ? (
+                      <>
+                        <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+                        Researching...
+                      </>
                     ) : (
-                        <div className="prose prose-sm dark:prose-invert max-w-none">
-                            <div className="flex items-center justify-between mb-4 pb-4 border-b border-border/50">
-                                <span className="text-xs font-medium text-primary bg-primary/10 px-2 py-1 rounded-full">
-                                    AI Generated Resource
-                                </span>
-                                <Button
-                                    variant="ghost"
-                                    size="sm"
-                                    onClick={generateAiGuide}
-                                    disabled={isGenerating}
-                                    className="h-6 text-xs"
-                                >
-                                    Regenerate
-                                </Button>
-                            </div>
-                            <ReactMarkdown>{aiArticle}</ReactMarkdown>
-
-                            {/* Chat History Display */}
-                            {chatHistory.length > 0 && (
-                                <div className="mt-8 pt-8 border-t border-border space-y-4">
-                                    <h4 className="text-xs font-semibold uppercase text-muted-foreground mb-4">Discussion</h4>
-                                    {chatHistory.map((msg, i) => (
-                                        <div key={i} className={cn(
-                                            "flex gap-3 text-sm",
-                                            msg.role === "user" ? "justify-end" : "justify-start"
-                                        )}>
-                                            <div className={cn(
-                                                "px-4 py-2 rounded-2xl max-w-[85%]",
-                                                msg.role === "user"
-                                                    ? "bg-primary text-primary-foreground rounded-tr-none"
-                                                    : "bg-muted text-foreground rounded-tl-none"
-                                            )}>
-                                                {msg.content}
-                                            </div>
-                                        </div>
-                                    ))}
-                                    {isChatting && (
-                                         <div className="flex gap-3 justify-start">
-                                            <div className="bg-muted px-4 py-2 rounded-2xl rounded-tl-none">
-                                                <Loader2 className="w-4 h-4 animate-spin" />
-                                            </div>
-                                         </div>
-                                    )}
-                                </div>
-                            )}
-                        </div>
+                      <>
+                        <Sparkles className="w-4 h-4 mr-2" />
+                        Generate Guide
+                      </>
                     )}
-                </ScrollArea>
-
-                {/* Chat Input (Only visible if article exists) */}
-                {aiArticle && (
-                    <div className="p-4 border-t border-border bg-background">
-                        <form
-                            onSubmit={(e) => { e.preventDefault(); sendChatMessage(); }}
-                            className="flex items-center gap-2"
-                        >
-                            <div className="flex-1 relative">
-                                <input
-                                    type="text"
-                                    value={chatMessage}
-                                    onChange={(e) => setChatMessage(e.target.value)}
-                                    placeholder="Ask a follow-up question..."
-                                    className="w-full px-4 py-2 pr-10 rounded-full border border-border bg-muted/50 focus:outline-none focus:ring-1 focus:ring-primary text-sm"
-                                    disabled={isChatting}
-                                />
-                            </div>
-                            <Button
-                                type="submit"
-                                size="icon"
-                                className="h-9 w-9 rounded-full"
-                                disabled={!chatMessage.trim() || isChatting}
-                            >
-                                <Send className="w-4 h-4" />
-                            </Button>
-                        </form>
+                  </Button>
+                </div>
+              ) : (
+                <div className="space-y-4">
+                  {/* AI Generated Article */}
+                  <div className="p-6 rounded-xl border border-primary/20 bg-primary/5">
+                    <div className="flex items-center justify-between mb-4 pb-4 border-b border-border/50">
+                      <span className="text-xs font-medium text-primary bg-primary/10 px-3 py-1 rounded-full">
+                        AI Generated Resource
+                      </span>
+                      <Button
+                        variant="ghost"
+                        size="sm"
+                        onClick={generateAiGuide}
+                        disabled={isGenerating}
+                        className="h-7 text-xs"
+                      >
+                        {isGenerating ? (
+                          <Loader2 className="w-3 h-3 mr-1 animate-spin" />
+                        ) : null}
+                        Regenerate
+                      </Button>
                     </div>
+                    <div className="prose prose-sm dark:prose-invert max-w-none
+                      prose-headings:text-foreground prose-headings:font-bold prose-headings:tracking-tight
+                      prose-h2:text-base prose-h2:mt-0 prose-h2:mb-4 prose-h2:border-b prose-h2:border-border/30 prose-h2:pb-2
+                      prose-h3:text-sm prose-h3:mt-5 prose-h3:mb-2
+                      prose-p:text-sm prose-p:leading-relaxed prose-p:mb-4 prose-p:text-muted-foreground
+                      prose-ul:text-sm prose-ul:my-3 prose-ul:space-y-2 prose-ul:list-none prose-ul:pl-0
+                      prose-li:my-0 prose-li:text-muted-foreground prose-li:pl-0
+                      prose-strong:text-foreground prose-strong:font-bold
+                      prose-em:text-muted-foreground prose-em:not-italic
+                      prose-code:text-xs prose-code:bg-muted prose-code:px-1 prose-code:py-0.5 prose-code:rounded">
+                      <ReactMarkdown>{aiArticle || ""}</ReactMarkdown>
+                    </div>
+                  </div>
+
+                  {/* Chat History */}
+                  {chatHistory.length > 0 && (
+                    <div className="space-y-3">
+                      <div className="flex items-center gap-2 text-xs font-semibold uppercase text-muted-foreground">
+                        <MessageSquare className="w-3 h-3" />
+                        Discussion
+                      </div>
+                      {chatHistory.map((msg, i) => (
+                        <div key={i} className={cn(
+                          "flex gap-3",
+                          msg.role === "user" ? "justify-end" : "justify-start"
+                        )}>
+                          <div className={cn(
+                            "px-4 py-2 rounded-2xl max-w-[85%] text-sm",
+                            msg.role === "user"
+                              ? "bg-primary text-primary-foreground rounded-tr-none"
+                              : "bg-muted text-foreground rounded-tl-none"
+                          )}>
+                            {msg.content}
+                          </div>
+                        </div>
+                      ))}
+                      {isChatting && (
+                        <div className="flex gap-3 justify-start">
+                          <div className="bg-muted px-4 py-2 rounded-2xl rounded-tl-none">
+                            <Loader2 className="w-4 h-4 animate-spin" />
+                          </div>
+                        </div>
+                      )}
+                      <div ref={chatEndRef} />
+                    </div>
+                  )}
+                </div>
+              )}
+            </section>
+
+            {/* Empty State */}
+            {articles.length === 0 && videos.length === 0 && !showAiSection && (
+              <div className="text-center py-12 text-muted-foreground">
+                <Sparkles className="w-12 h-12 mx-auto mb-4 opacity-50" />
+                <p className="mb-4">No curated resources found for this section.</p>
+                <Button variant="outline" onClick={generateAiGuide} disabled={isGenerating}>
+                  {isGenerating ? (
+                    <>
+                      <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+                      Generating...
+                    </>
+                  ) : (
+                    <>
+                      <Bot className="w-4 h-4 mr-2" />
+                      Generate AI Guide
+                    </>
+                  )}
+                </Button>
+              </div>
+            )}
+          </div>
+        </div>
+
+        {/* Chat Input (Sticky at bottom when AI article exists) */}
+        {showAiSection && aiArticle && (
+          <div className="p-4 border-t border-border bg-background">
+            <form
+              onSubmit={(e) => { e.preventDefault(); sendChatMessage(); }}
+              className="flex items-center gap-2"
+            >
+              <div className="flex-1 relative">
+                <input
+                  type="text"
+                  value={chatMessage}
+                  onChange={(e) => setChatMessage(e.target.value)}
+                  placeholder="Ask a follow-up question..."
+                  className="w-full px-4 py-2.5 rounded-full border border-border bg-muted/50 focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm"
+                  disabled={isChatting}
+                />
+              </div>
+              <Button
+                type="submit"
+                size="icon"
+                className="h-10 w-10 rounded-full shrink-0"
+                disabled={!chatMessage.trim() || isChatting}
+              >
+                {isChatting ? (
+                  <Loader2 className="w-4 h-4 animate-spin" />
+                ) : (
+                  <Send className="w-4 h-4" />
                 )}
-            </TabsContent>
-        </Tabs>
+              </Button>
+            </form>
+          </div>
+        )}
       </div>
     </>
   )

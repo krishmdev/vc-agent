@@ -1,4 +1,5 @@
 from fastapi import FastAPI, HTTPException, BackgroundTasks
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import os
 import time
@@ -8,9 +9,18 @@ from google import genai
 from google.genai import types
 from dotenv import load_dotenv
 
-load_dotenv(dotenv_path="../.env")
+load_dotenv(dotenv_path="../.env.local")
 
 app = FastAPI()
+
+# Add CORS middleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000", "http://127.0.0.1:3000"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # --- Data Models ---
 
@@ -257,7 +267,7 @@ def run_fast_chat_task(task_id: str, session_id: str, user_message: str, context
         print(f"Starting Fast Chat for task {task_id} (Session {session_id})...")
         
         response = client.models.generate_content(
-            model='gemini-2.0-flash-exp',
+            model='models/gemini-2.5-flash',
             contents=contents,
             config=types.GenerateContentConfig(
                 tools=[types.Tool(
@@ -303,30 +313,46 @@ async def generate_resource_article(request: ResourceArticleRequest):
         client = genai.Client(api_key=api_key)
 
         prompt = f"""
-        You are an expert Sequoia Capital partner and startup mentor.
-        Your goal is to write a rigorous, tactical guide on the following topic: "{request.question}".
+        You are a Sequoia Capital partner. Write a tactical, scannable guide.
+        Topic: "{request.question}"
 
-        CONTEXT:
-        Module: {request.module}
-        Startup Context: {request.context or 'General early-stage startup'}
+        CRITICAL CONSTRAINTS:
+        • **Length:** 150-180 words MAXIMUM. Be ruthlessly concise.
+        • **Style:** Direct. No fluff. Every word must add value.
+        • **Format:** Scannable with clear visual breaks
 
-        INSTRUCTIONS:
-        1.  **Style:** High-signal, dense, authoritative (Sequoia/Y Combinator style). No fluff.
-        2.  **Structure:**
-            *   **The Principle:** One sentence defining the core insight.
-            *   **Why It Matters:** Why most founders fail here.
-            *   **Tactical Framework:** Step-by-step how to do it.
-            *   **Sequoia Lens:** Reference specific Sequoia concepts (e.g., "Hair on Fire" problem, "Why Now", "Unit Economics").
-            *   **Examples:** Real-world examples (Airbnb, Stripe, Dropbox).
-        3.  **Search:** Use your search tools to find specific Sequoia articles or quotes to reference if relevant.
-        4.  **Length:** ~300-400 words. Markdown format.
+        REQUIRED STRUCTURE:
 
-        OUTPUT FORMAT:
-        Return ONLY the Markdown article.
+        ## Core Principle
+        One sentence. The essence.
+
+        **Why Founders Fail**
+        One sentence only. The critical mistake.
+
+        **How to Execute**
+        - **Action 1:** One tactical step (max 8 words)
+        - **Action 2:** One tactical step (max 8 words)
+        - **Action 3:** One tactical step (max 8 words)
+
+        **Key Signal**
+        One sentence. What to measure.
+
+        **Example**
+        One company, one outcome. Max 15 words.
+
+        FORMATTING RULES:
+        - Bold the first word of each bullet
+        - Keep bullets under 10 words each
+        - ONE example only, ultra-brief
+        - Add blank lines between sections
+        - No explanatory text, just facts
+
+        OUTPUT:
+        Return ONLY markdown. Start with ## Core Principle.
         """
 
         response = client.models.generate_content(
-            model='gemini-2.0-flash-exp', # Using flash for speed/search
+            model='models/gemini-2.5-flash', # Using latest Gemini model
             contents=prompt,
             config=types.GenerateContentConfig(
                 tools=[types.Tool(
@@ -391,7 +417,7 @@ async def resource_chat_endpoint(request: ResourceChatRequest):
         ))
 
         response = client.models.generate_content(
-            model='gemini-2.0-flash-exp',
+            model='models/gemini-2.5-flash',
             contents=contents
         )
 
