@@ -115,35 +115,35 @@ export default function DashboardPage() {
     if (!expandedModuleId) {
       setExpandedModule('founder')
     }
-    
+
     // Poll for report if not present (Long Polling)
     if (!vcReport) {
-        // Single separate async check to avoid blocking UI
-        const checkReport = async () => {
-             try {
-                // This request will hang (long poll) on the server until report is ready or timeout
-                const res = await fetch('/api/vc-report');
-                const data = await res.json();
-                if (data.exists && data.report) {
-                    // Update store
-                    useAppStore.getState().setVcReport(data.report);
+      // Single separate async check to avoid blocking UI
+      const checkReport = async () => {
+        try {
+          // This request will hang (long poll) on the server until report is ready or timeout
+          const res = await fetch('/api/vc-report');
+          const data = await res.json();
+          if (data.exists && data.report) {
+            // Update store
+            useAppStore.getState().setVcReport(data.report);
                     
                     // Auto-fill modules with extracted data
                     if (data.report.extraction) {
                          useAppStore.getState().autoFillModules(data.report.extraction);
                     }
-                }
-            } catch (e) {
-                // ignore
-            }
-        };
-        
-        checkReport();
+          }
+        } catch (e) {
+          // ignore
+        }
+      };
+
+      checkReport();
     }
-    
+
     // Auto-open report if available and we just came back
     if (vcReport && !isReportModalOpen) {
-        // Optional: auto-open logic
+      // Optional: auto-open logic
     }
 
     setTimeout(() => setIsVisible(true), 50)
@@ -257,19 +257,19 @@ export default function DashboardPage() {
                 <span className="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 bg-primary rounded-full ring-2 ring-background" />
               )}
             </button>
-            
+
             {/* VC Feedback Button */}
             {vcReport && (
-                 <button
-                  onClick={() => setIsReportModalOpen(true)}
-                  className="relative flex items-center gap-2 px-3 py-1.5 rounded-full hover:bg-secondary transition-colors group text-indigo-600 dark:text-indigo-400"
-                  aria-label="View VC Feedback"
-                >
-                  <Target className="w-4 h-3" />
-                  <span className="text-sm font-medium hidden sm:inline">
-                    View Feedback
-                  </span>
-                </button>
+              <button
+                onClick={() => setIsReportModalOpen(true)}
+                className="relative flex items-center gap-2 px-3 py-1.5 rounded-full hover:bg-secondary transition-colors group text-indigo-600 dark:text-indigo-400"
+                aria-label="View VC Feedback"
+              >
+                <Target className="w-4 h-3" />
+                <span className="text-sm font-medium hidden sm:inline">
+                  View Feedback
+                </span>
+              </button>
             )}
 
             {/* Customer Reach-out */}
@@ -385,7 +385,7 @@ export default function DashboardPage() {
           {/* VC Feedback Banner */}
           {vcReport && (
             <div className="p-6 pb-0">
-               <VCFeedbackCard report={vcReport} />
+              <VCFeedbackCard report={vcReport} />
             </div>
           )}
 
@@ -428,7 +428,7 @@ export default function DashboardPage() {
       <ResourceDrawer />
 
 
-      
+
       <VCReportModal
         isOpen={isReportModalOpen}
         onClose={() => setIsReportModalOpen(false)}
