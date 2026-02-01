@@ -383,42 +383,63 @@ async def generate_resource_article(request: ResourceArticleRequest):
         client = genai.Client(api_key=api_key)
 
         prompt = f"""
-        You are a Sequoia Capital partner. Write a tactical, scannable guide.
-        Topic: "{request.question}"
+        You are a Sequoia Capital partner creating an authoritative, tactical guide on: "{request.question}"
 
-        CRITICAL CONSTRAINTS:
-        • **Length:** 150-180 words MAXIMUM. Be ruthlessly concise.
-        • **Style:** Direct. No fluff. Every word must add value.
-        • **Format:** Scannable with clear visual breaks
+        Format this knowledge base content with the following requirements:
 
-        REQUIRED STRUCTURE:
+        **STRUCTURE:**
+        - Use ## for main section headers (e.g., "## Core Principle")
+        - Use ### for subsection headers only when absolutely necessary
+        - Use **bold** only for key terms and important concepts (2-4 words max)
+        - Separate sections with blank lines for breathing room
+        - Each ## header should stand alone on its own line with one blank line after
 
+        **CONTENT GUIDELINES:**
+        - Keep paragraphs to 2-3 sentences maximum
+        - Use bullet points (-) for lists of items, pitfalls, or non-sequential information
+        - Start each bullet with a **bolded label:** followed by concise explanation (one sentence)
+        - Use numbered lists (1., 2., 3.) only for sequential steps or prioritized actions
+        - Remove redundant phrases and filler words—be direct and punchy
+        - Focus on actionable insights over theory
+        - Avoid nesting lists more than one level deep
+
+        **VISUAL HIERARCHY:**
+        - Main headers should stand alone on their own line
+        - Add one blank line after headers
+        - Add one blank line between distinct sections or paragraphs
+        - Use bullet points to break up walls of text
+        - Keep bold terms short (2-4 words max) for scannable emphasis
+
+        **TONE:**
+        - Direct and punchy
+        - Avoid academic language and unnecessary superlatives
+        - Use active voice
+        - Keep it scannable and easy to digest
+        - Write with authority and precision (Sequoia institutional tone)
+
+        **REQUIRED STRUCTURE (in order):**
         ## Core Principle
-        One sentence. The essence.
+        [2-3 sentence overview with one **key insight** highlighted]
 
-        **Why Founders Fail**
-        One sentence only. The critical mistake.
+        ## Why Founders Fail
+        - **Label:** [Brief explanation]
+        - **Label:** [Brief explanation]
 
-        **How to Execute**
-        - **Action 1:** One tactical step (max 8 words)
-        - **Action 2:** One tactical step (max 8 words)
-        - **Action 3:** One tactical step (max 8 words)
+        ## How to Execute
+        [2-3 sentence intro]
+        1. [Step one - concise]
+        2. [Step two - concise]
 
-        **Key Signal**
-        One sentence. What to measure.
+        ## Key Signal
+        [1-2 sentences on what metric or signal matters most]
 
-        **Example**
-        One company, one outcome. Max 15 words.
+        ## Example
+        [Brief, concrete example illustrating the principle]
 
-        FORMATTING RULES:
-        - Bold the first word of each bullet
-        - Keep bullets under 10 words each
-        - ONE example only, ultra-brief
-        - Add blank lines between sections
-        - No explanatory text, just facts
-
-        OUTPUT:
-        Return ONLY markdown. Start with ## Core Principle.
+        **OUTPUT REQUIREMENTS:**
+        Return ONLY clean markdown formatted content. No preamble, no meta-commentary.
+        Start directly with ## Core Principle.
+        Focus on clarity and scannability. Remove anything that doesn't directly help a founder make decisions.
         """
 
         response = client.models.generate_content(
