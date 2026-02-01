@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useEffect, useState, useRef } from "react"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
 import {
@@ -23,6 +23,8 @@ import { ModuleId } from "@/lib/dashboard-types"
 import { cn } from "@/lib/utils"
 import { ResearchAgentIcon } from "@/components/research-agent-icon"
 import { ResearchChat } from "@/components/research-chat"
+import { CustomerReachoutPopup } from "@/components/customer-reachout-popup"
+import { CustomerResultsModal } from "@/components/customer-results-modal"
 
 export default function DashboardPage() {
   const router = useRouter()
@@ -45,6 +47,15 @@ export default function DashboardPage() {
   // Research Agent State
   const [isResearchOpen, setIsResearchOpen] = useState(false)
   const [initialContext, setInitialContext] = useState<{idea?: string, problem?: string, customer?: string, product?: string} | undefined>(undefined)
+
+  // Customer Reach-out State
+  const [isReachOutPopupOpen, setIsReachOutPopupOpen] = useState(false)
+  const [isResultsModalOpen, setIsResultsModalOpen] = useState(false)
+  const [isSearching, setIsSearching] = useState(false)
+  const [searchResult, setSearchResult] = useState<any>(null)
+  const [searchIcp, setSearchIcp] = useState("")
+  const [searchType, setSearchType] = useState<"B2C" | "B2B">("B2C")
+  const customerButtonRef = useRef<HTMLDivElement>(null)
 
   const globalProgress = calculateGlobalProgress()
 
@@ -110,6 +121,61 @@ export default function DashboardPage() {
      // No usage, component state initialization handled in useEffect
   }
 
+  const handleFindCustomers = async (icp: string, type: "B2C" | "B2B") => {
+    setSearchIcp(icp)
+    setSearchType(type)
+    setIsReachOutPopupOpen(false)
+    setIsResultsModalOpen(true)
+    setIsSearching(true)
+    setSearchResult(null)
+    
+    try {
+        const res = await fetch('/api/customer-reachout', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ icp_description: icp, customer_type: type })
+        });
+        
+        if (!res.ok) {
+            const errorText = await res.text();
+            console.error("API Error details:", errorText);
+            throw new Error(`Start failed: ${res.status} ${res.statusText} - ${errorText}`);
+        }
+        
+        const { task_id } = await res.json();
+        
+        // Polling
+        const poll = setInterval(async () => {
+            try {
+                const pollRes = await fetch(`/api/customer-reachout?taskId=${task_id}`);
+                const data = await pollRes.json();
+                
+                if (data.status === 'completed') {
+                    setSearchResult(data.content);
+                    setIsSearching(false);
+                    clearInterval(poll);
+                } else if (data.status === 'failed') {
+                    console.error("Task failed", data.error);
+                    setIsSearching(false);
+                    clearInterval(poll);
+                }
+            } catch (e) {
+                console.error("Polling error", e);
+                clearInterval(poll);
+            }
+        }, 2000);
+        
+    } catch (error) {
+        console.error("Search failed", error);
+        setIsSearching(false);
+    }
+  }
+
+  const handleRefineSearch = () => {
+      setIsResultsModalOpen(false)
+      setIsReachOutPopupOpen(true)
+  }
+
   return (
     <main className="min-h-screen bg-background flex flex-col">
       {/* Top Navigation */}
@@ -147,22 +213,33 @@ export default function DashboardPage() {
               )}
             </button>
 
-            {/* Customer Call */}
-            <button
-              onClick={() => router.push("/customer-call")}
-              className="relative flex items-center gap-2 px-3 py-1.5 rounded-full hover:bg-secondary transition-colors group"
-              aria-label="Customer Call"
-            >
-              <Users className="w-4 h-4 text-muted-foreground group-hover:text-foreground" />
-              <span className="text-sm text-muted-foreground group-hover:text-foreground hidden sm:inline">
-                Customer Call
-              </span>
-              {!customerCallCompleted && (
-                <span className="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 bg-primary rounded-full ring-2 ring-background" />
-              )}
-            </button>
+            {/* Customer Reach-out */}
+            <div className="relative" ref={customerButtonRef}>
+              <button
+                onClick={() => setIsReachOutPopupOpen(!isReachOutPopupOpen)}
+                className={cn(
+                  "relative flex items-center gap-2 px-3 py-1.5 rounded-full hover:bg-secondary transition-colors group",
+                  isReachOutPopupOpen && "bg-secondary"
+                )}
+                aria-label="Customer Reach-out"
+              >
+                <Users className="w-4 h-4 text-muted-foreground group-hover:text-foreground" />
+                <span className="text-sm text-muted-foreground group-hover:text-foreground hidden sm:inline">
+                  Customer Reach-out
+                </span>
+                {!customerCallCompleted && (
+                  <span className="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 bg-primary rounded-full ring-2 ring-background" />
+                )}
+              </button>
+              
+              <CustomerReachoutPopup 
+                isOpen={isReachOutPopupOpen}
+                onClose={() => setIsReachOutPopupOpen(false)}
+                onFindCustomers={handleFindCustomers}
+                anchorRef={customerButtonRef}
+              />
+            </div>
           </div>
-
           {/* Center: Breadcrumb */}
           <BreadcrumbNav currentStep="dashboard" />
 
@@ -202,6 +279,16 @@ export default function DashboardPage() {
         isOpen={isResearchOpen} 
         onClose={() => setIsResearchOpen(false)} 
         initialContext={initialContext}
+      />
+
+      <CustomerResultsModal
+        isOpen={isResultsModalOpen}
+        onClose={() => setIsResultsModalOpen(false)}
+        isLoading={isSearching}
+        customerType={searchType}
+        icpDescription={searchIcp}
+        results={searchResult}
+        onRefine={handleRefineSearch}
       />
 
       {/* Three-Column Layout */}
