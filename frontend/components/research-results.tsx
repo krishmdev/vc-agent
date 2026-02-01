@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Loader2, AlertTriangle, CheckCircle2, XCircle, TrendingUp, Search } from "lucide-react"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import ReactMarkdown from "react-markdown"
 
 interface ResearchResultsProps {
   isOpen: boolean
@@ -68,8 +69,8 @@ export function ResearchResults({ isOpen, onClose, status, data, error }: Resear
                     <CardHeader>
                        <CardTitle className="text-base">Raw Analysis Output</CardTitle>
                     </CardHeader>
-                    <CardContent className="text-sm text-muted-foreground prose prose-sm dark:prose-invert max-w-none">
-                       <div dangerouslySetInnerHTML={{ __html: data.raw_output.replace(/\n/g, '<br/>') }} />
+                    <CardContent className="text-sm text-muted-foreground prose prose-sm dark:prose-invert max-w-none prose-a:text-primary prose-a:underline hover:prose-a:text-primary/80">
+                       <ReactMarkdown>{data.raw_output}</ReactMarkdown>
                     </CardContent>
                  </Card>
               </div>
@@ -101,9 +102,9 @@ export function ResearchResults({ isOpen, onClose, status, data, error }: Resear
                   <CardHeader>
                     <CardTitle className="text-base">Market Space Assessment</CardTitle>
                   </CardHeader>
-                  <CardContent className="text-sm text-muted-foreground leading-relaxed prose prose-sm dark:prose-invert">
+                  <CardContent className="text-sm text-muted-foreground leading-relaxed prose prose-sm dark:prose-invert max-w-none prose-a:text-primary prose-a:underline hover:prose-a:text-primary/80">
                     {/* Render Markdown-like text safely */}
-                     <div dangerouslySetInnerHTML={{ __html: data.market_assessment?.replace(/\n/g, '<br/>') }} />
+                     <ReactMarkdown>{data.market_assessment}</ReactMarkdown>
                   </CardContent>
                 </Card>
               </TabsContent>
@@ -116,7 +117,9 @@ export function ResearchResults({ isOpen, onClose, status, data, error }: Resear
                    <ul className="space-y-3">
                      {data.evidence_macro?.map((item: string, i: number) => (
                        <li key={i} className="text-sm text-muted-foreground bg-secondary/30 p-3 rounded-md border border-border/50">
-                         {item}
+                         <div className="prose prose-sm dark:prose-invert prose-a:text-primary prose-a:underline">
+                           <ReactMarkdown>{item}</ReactMarkdown>
+                         </div>
                        </li>
                      ))}
                    </ul>
@@ -129,7 +132,9 @@ export function ResearchResults({ isOpen, onClose, status, data, error }: Resear
                    <ul className="space-y-3">
                      {data.evidence_micro?.map((item: string, i: number) => (
                        <li key={i} className="text-sm text-muted-foreground bg-secondary/30 p-3 rounded-md border border-border/50">
-                         "{item}"
+                         <div className="prose prose-sm dark:prose-invert prose-a:text-primary prose-a:underline">
+                            <ReactMarkdown>{"\"" + item + "\""}</ReactMarkdown>
+                         </div>
                        </li>
                      ))}
                    </ul>
@@ -141,8 +146,8 @@ export function ResearchResults({ isOpen, onClose, status, data, error }: Resear
                   <CardHeader>
                      <CardTitle className="text-base text-destructive">Critique</CardTitle>
                   </CardHeader>
-                  <CardContent className="text-sm text-muted-foreground">
-                    <div dangerouslySetInnerHTML={{ __html: data.problem_critique?.replace(/\n/g, '<br/>') }} />
+                  <CardContent className="text-sm text-muted-foreground prose prose-sm dark:prose-invert max-w-none prose-a:underline">
+                    <ReactMarkdown>{data.problem_critique}</ReactMarkdown>
                   </CardContent>
                 </Card>
 
