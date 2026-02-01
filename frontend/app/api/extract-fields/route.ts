@@ -209,7 +209,7 @@ export async function POST(request: NextRequest) {
         // We only call LLM if we have fields that weren't confidently matched
         // AND we have some memories to analyze.
         // Using Gemini instead of OpenAI to avoid rate limits
-        if (lowConfidenceFields.length > 0 && process.env.GOOGLE_API_KEY) {
+        if (lowConfidenceFields.length > 0 && process.env.GEMINI_API_KEY) {
             console.log(`[EXTRACT-FIELDS] ⚠️ ${lowConfidenceFields.length} fields failed local match. Attempting Gemini extraction...`)
 
             // Limit to top 5 missing fields to save tokens/time if list is huge
@@ -229,7 +229,7 @@ If no information is found for a field, omit it.
 Output ONLY valid JSON, no markdown.`
 
             try {
-                const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${process.env.GOOGLE_API_KEY}`, {
+                const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${process.env.GEMINI_API_KEY}`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'

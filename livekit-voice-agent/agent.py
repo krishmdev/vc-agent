@@ -286,6 +286,7 @@ async def my_agent(ctx: agents.JobContext):
         model="gemini-2.5-flash-native-audio-preview-12-2025",
         voice="Puck",
         temperature=0.8,
+        api_key=os.environ.get("GEMINI_API_KEY")
     )
     
     session = AgentSession(
