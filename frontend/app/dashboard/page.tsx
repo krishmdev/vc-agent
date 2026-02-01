@@ -44,10 +44,10 @@ export default function DashboardPage() {
   const [isVisible, setIsVisible] = useState(false)
   const [isFounderModalOpen, setIsFounderModalOpen] = useState(false)
   const [activeQuestionId, setActiveQuestionId] = useState<string | null>(null)
-  
+
   // Research Agent State
   const [isResearchOpen, setIsResearchOpen] = useState(false)
-  const [initialContext, setInitialContext] = useState<{idea?: string, problem?: string, customer?: string, product?: string} | undefined>(undefined)
+  const [initialContext, setInitialContext] = useState<{ idea?: string, problem?: string, customer?: string, product?: string } | undefined>(undefined)
 
   // Customer Reach-out State
   const [isReachOutPopupOpen, setIsReachOutPopupOpen] = useState(false)
@@ -62,34 +62,34 @@ export default function DashboardPage() {
 
   // Compute context for Research Agent
   useEffect(() => {
-      if (!dashboardUnlocked) return;
+    if (!dashboardUnlocked) return;
 
-      const getAnswer = (moduleId: ModuleId, questionIds: string[]) => {
-            const module = modules[moduleId];
-            if (!module) return null;
-            
-            // Search through all subsections
-            for (const sub of module.subsections) {
-                for (const q of sub.questions) {
-                    if (questionIds.includes(q.id)) {
-                        // Return first non-empty value if found
-                        if (Array.isArray(q.value)) {
-                            if (q.value.length > 0) return q.value.join(", ");
-                        } else if (q.value) {
-                            return q.value;
-                        }
-                    }
-                }
+    const getAnswer = (moduleId: ModuleId, questionIds: string[]) => {
+      const module = modules[moduleId];
+      if (!module) return null;
+
+      // Search through all subsections
+      for (const sub of module.subsections) {
+        for (const q of sub.questions) {
+          if (questionIds.includes(q.id)) {
+            // Return first non-empty value if found
+            if (Array.isArray(q.value)) {
+              if (q.value.length > 0) return q.value.join(", ");
+            } else if (q.value) {
+              return q.value;
             }
-            return null;
-      };
+          }
+        }
+      }
+      return null;
+    };
 
-      const idea = sessionStorage.getItem("startup-idea") || undefined;
-      const problem = getAnswer('problem', ['problem-formula', 'problem-breaks']) || undefined; 
-      const customer = getAnswer('customer', ['early-adopters', 'customer-description']) || undefined;
-      const product = getAnswer('product', ['product-description', 'company-purpose']) || undefined;
+    const idea = sessionStorage.getItem("startup-idea") || undefined;
+    const problem = getAnswer('problem', ['problem-formula', 'problem-breaks']) || undefined;
+    const customer = getAnswer('customer', ['early-adopters', 'customer-description']) || undefined;
+    const product = getAnswer('product', ['product-description', 'company-purpose']) || undefined;
 
-      setInitialContext({ idea, problem, customer, product });
+    setInitialContext({ idea, problem, customer, product });
   }, [modules, dashboardUnlocked]);
 
   useEffect(() => {
@@ -119,7 +119,7 @@ export default function DashboardPage() {
   }
 
   const handleStartResearch = async () => {
-     // No usage, component state initialization handled in useEffect
+    // No usage, component state initialization handled in useEffect
   }
 
   const handleFindCustomers = async (icp: string, type: "B2C" | "B2B") => {
@@ -129,52 +129,52 @@ export default function DashboardPage() {
     setIsResultsModalOpen(true)
     setIsSearching(true)
     setSearchResult(null)
-    
+
     try {
-        const res = await fetch('/api/customer-reachout', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ icp_description: icp, customer_type: type })
-        });
-        
-        if (!res.ok) {
-            const errorText = await res.text();
-            console.error("API Error details:", errorText);
-            throw new Error(`Start failed: ${res.status} ${res.statusText} - ${errorText}`);
+      const res = await fetch('/api/customer-reachout', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ icp_description: icp, customer_type: type })
+      });
+
+      if (!res.ok) {
+        const errorText = await res.text();
+        console.error("API Error details:", errorText);
+        throw new Error(`Start failed: ${res.status} ${res.statusText} - ${errorText}`);
+      }
+
+      const { task_id } = await res.json();
+
+      // Polling
+      const poll = setInterval(async () => {
+        try {
+          const pollRes = await fetch(`/api/customer-reachout?taskId=${task_id}`);
+          const data = await pollRes.json();
+
+          if (data.status === 'completed') {
+            setSearchResult(data.content);
+            setIsSearching(false);
+            clearInterval(poll);
+          } else if (data.status === 'failed') {
+            console.error("Task failed", data.error);
+            setIsSearching(false);
+            clearInterval(poll);
+          }
+        } catch (e) {
+          console.error("Polling error", e);
+          clearInterval(poll);
         }
-        
-        const { task_id } = await res.json();
-        
-        // Polling
-        const poll = setInterval(async () => {
-            try {
-                const pollRes = await fetch(`/api/customer-reachout?taskId=${task_id}`);
-                const data = await pollRes.json();
-                
-                if (data.status === 'completed') {
-                    setSearchResult(data.content);
-                    setIsSearching(false);
-                    clearInterval(poll);
-                } else if (data.status === 'failed') {
-                    console.error("Task failed", data.error);
-                    setIsSearching(false);
-                    clearInterval(poll);
-                }
-            } catch (e) {
-                console.error("Polling error", e);
-                clearInterval(poll);
-            }
-        }, 2000);
-        
+      }, 2000);
+
     } catch (error) {
-        console.error("Search failed", error);
-        setIsSearching(false);
+      console.error("Search failed", error);
+      setIsSearching(false);
     }
   }
 
   const handleRefineSearch = () => {
-      setIsResultsModalOpen(false)
-      setIsReachOutPopupOpen(true)
+    setIsResultsModalOpen(false)
+    setIsReachOutPopupOpen(true)
   }
 
   return (
@@ -232,8 +232,8 @@ export default function DashboardPage() {
                   <span className="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 bg-primary rounded-full ring-2 ring-background" />
                 )}
               </button>
-              
-              <CustomerReachoutPopup 
+
+              <CustomerReachoutPopup
                 isOpen={isReachOutPopupOpen}
                 onClose={() => setIsReachOutPopupOpen(false)}
                 onFindCustomers={handleFindCustomers}
@@ -276,9 +276,9 @@ export default function DashboardPage() {
         onClose={() => setIsFounderModalOpen(false)}
       />
 
-      <ResearchChat 
-        isOpen={isResearchOpen} 
-        onClose={() => setIsResearchOpen(false)} 
+      <ResearchChat
+        isOpen={isResearchOpen}
+        onClose={() => setIsResearchOpen(false)}
         initialContext={initialContext}
       />
 
