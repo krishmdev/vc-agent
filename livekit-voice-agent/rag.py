@@ -1,24 +1,30 @@
 """RAG helper module for searching the ChromaDB knowledge base."""
 
-import chromadb
-from chromadb.utils import embedding_functions
+import os
 from pathlib import Path
 
 # Path to ChromaDB storage
 CHROMA_DB_PATH = Path(__file__).parent / "chroma_db"
 
-# Use sentence-transformers for free local embeddings
-EMBEDDING_MODEL = "all-MiniLM-L6-v2"
+# OpenAI embedding model (fast API calls, no local model)
+EMBEDDING_MODEL = "text-embedding-3-small"
 
 
 def get_chroma_client():
     """Get or create ChromaDB client with persistent storage."""
+    import chromadb
     return chromadb.PersistentClient(path=str(CHROMA_DB_PATH))
 
 
 def get_embedding_function():
     """Get the embedding function for ChromaDB."""
-    return embedding_functions.SentenceTransformerEmbeddingFunction(
+    from chromadb.utils import embedding_functions
+    api_key = os.getenv("OPENAI_API_KEY")
+    # ChromaDB requires CHROMA_OPENAI_API_KEY env var
+    if api_key and not os.getenv("CHROMA_OPENAI_API_KEY"):
+        os.environ["CHROMA_OPENAI_API_KEY"] = api_key
+    return embedding_functions.OpenAIEmbeddingFunction(
+        api_key=api_key,
         model_name=EMBEDDING_MODEL
     )
 
