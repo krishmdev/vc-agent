@@ -88,7 +88,7 @@ interface AppState {
   // Navigation state
   dashboardUnlocked: boolean
   unlockDashboard: () => void
-  
+
   // Call states
   mentorshipCallCompleted: boolean
   setMentorshipCallCompleted: (completed: boolean) => void
@@ -279,12 +279,12 @@ export const useAppStore = create<AppState>()(
             questions: subsection.questions.map((question) =>
               question.id === questionId
                 ? {
-                    ...question,
-                    value,
-                    completed: Array.isArray(value)
-                      ? value.some(v => v.trim().length > 0)
-                      : typeof value === 'string' && value.trim().length > 0,
-                  }
+                  ...question,
+                  value,
+                  completed: Array.isArray(value)
+                    ? value.some(v => v.trim().length > 0)
+                    : typeof value === 'string' && value.trim().length > 0,
+                }
                 : question
             ),
           }))
@@ -334,7 +334,7 @@ export const useAppStore = create<AppState>()(
       },
     }),
     {
-      name: "launchpad-storage",
+      name: "launchpad-storage-v2",
     }
   )
 )
