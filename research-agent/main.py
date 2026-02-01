@@ -410,61 +410,66 @@ async def generate_resource_article(request: ResourceArticleRequest):
         prompt = f"""
         You are a Sequoia Capital partner creating an authoritative, tactical guide on: "{request.question}"
 
-        Format this knowledge base content with the following requirements:
+        **CRITICAL FORMATTING RULES:**
 
-        **STRUCTURE:**
-        - Use ## for main section headers (e.g., "## Core Principle")
-        - Use ### for subsection headers only when absolutely necessary
-        - Use **bold** only for key terms and important concepts (2-4 words max)
-        - Separate sections with blank lines for breathing room
-        - Each ## header should stand alone on its own line with one blank line after
+        1. **Headers - Use Bold + Line Break for Maximum Visual Impact:**
+        - Main sections: **Core Principle** (on its own line, followed by blank line)
+        - Subsections: **Why Founders Fail** (on its own line, followed by blank line)
+        - DO NOT use # or ## markdown headers - they render poorly
+        - Headers should be **bolded** and standalone on their own lines
+
+        2. **Inline Bold - Minimize and Be Selective:**
+        - Only bold the first 2-3 words of bullet points (the "label")
+        - Do NOT bold full sentences or long phrases in paragraphs
+        - In paragraphs, bold ONLY critical terms (max 2-4 words, use sparingly)
+
+        3. **Spacing and Breathing Room:**
+        - One blank line after each header
+        - One blank line between distinct sections
+        - One blank line between paragraph and bullet list
+        - Keep paragraphs to 2-3 sentences max
+
+        4. **Lists:**
+        - Use bullet points (•) for non-sequential information
+        - Format: **Label:** Concise explanation in plain text
+        - Only bold the label, keep explanation text normal weight
+        - Numbered lists only for sequential steps
 
         **CONTENT GUIDELINES:**
-        - Keep paragraphs to 2-3 sentences maximum
-        - Use bullet points (-) for lists of items, pitfalls, or non-sequential information
-        - Start each bullet with a **bolded label:** followed by concise explanation (one sentence)
-        - Use numbered lists (1., 2., 3.) only for sequential steps or prioritized actions
-        - Remove redundant phrases and filler words—be direct and punchy
-        - Focus on actionable insights over theory
-        - Avoid nesting lists more than one level deep
+        - Direct, punchy language with Sequoia institutional authority
+        - Active voice, no filler words
+        - Actionable insights over theory
+        - Scannable and digestible
 
-        **VISUAL HIERARCHY:**
-        - Main headers should stand alone on their own line
-        - Add one blank line after headers
-        - Add one blank line between distinct sections or paragraphs
-        - Use bullet points to break up walls of text
-        - Keep bold terms short (2-4 words max) for scannable emphasis
+        **REQUIRED STRUCTURE:**
 
-        **TONE:**
-        - Direct and punchy
-        - Avoid academic language and unnecessary superlatives
-        - Use active voice
-        - Keep it scannable and easy to digest
-        - Write with authority and precision (Sequoia institutional tone)
+        **Core Principle**
 
-        **REQUIRED STRUCTURE (in order):**
-        ## Core Principle
-        [2-3 sentence overview with one **key insight** highlighted]
+        [2-3 sentence overview. Use bold sparingly - only for one key term if absolutely necessary]
 
-        ## Why Founders Fail
-        - **Label:** [Brief explanation]
-        - **Label:** [Brief explanation]
+        **Why Founders Fail**
 
-        ## How to Execute
-        [2-3 sentence intro]
-        1. [Step one - concise]
-        2. [Step two - concise]
+        - **Vague Problem:** Explanation in normal text
+        - **Solving Own Problem:** Explanation in normal text  
+        - **Solution-First Mentality:** Explanation in normal text
 
-        ## Key Signal
-        [1-2 sentences on what metric or signal matters most]
+        **How to Execute**
 
-        ## Example
-        [Brief, concrete example illustrating the principle]
+        [2-3 sentence intro paragraph]
 
-        **OUTPUT REQUIREMENTS:**
-        Return ONLY clean markdown formatted content. No preamble, no meta-commentary.
-        Start directly with ## Core Principle.
-        Focus on clarity and scannability. Remove anything that doesn't directly help a founder make decisions.
+        1. **Step name:** Brief explanation
+        2. **Step name:** Brief explanation
+
+        **Key Signal**
+
+        [1-2 sentences on critical metric/signal]
+
+        **Example**
+
+        Instead of: [vague example]
+        Better: [specific, quantifiable example]
+
+        **OUTPUT:** Return ONLY the formatted content. Start with **Core Principle** immediately.
         """
 
         response = client.models.generate_content(
