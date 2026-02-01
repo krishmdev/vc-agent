@@ -257,7 +257,7 @@ def run_fast_chat_task(task_id: str, session_id: str, user_message: str, context
         print(f"Starting Fast Chat for task {task_id} (Session {session_id})...")
         
         response = client.models.generate_content(
-            model='gemini-3-flash-preview',
+            model='gemini-2.0-flash-exp',
             contents=contents,
             config=types.GenerateContentConfig(
                 tools=[types.Tool(
