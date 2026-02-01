@@ -10,6 +10,8 @@ import {
   Users,
   BookOpen,
   ExternalLink,
+  Presentation,
+  Target,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { BreadcrumbNav } from "@/components/breadcrumb-nav"
@@ -27,11 +29,15 @@ import { ResourceDrawer } from "@/components/resource-drawer"
 import { CustomerReachoutPopup } from "@/components/customer-reachout-popup"
 import { CustomerResultsModal } from "@/components/customer-results-modal"
 
+import { VCReportModal } from "@/components/vc-report-modal"
+import { VCFeedbackCard } from "@/components/vc-feedback-card"
+
 export default function DashboardPage() {
   const router = useRouter()
   const {
     dashboardUnlocked,
     vcCallCompleted,
+    vcReport,
     customerCallCompleted,
     modules,
     expandedModuleId,
@@ -43,6 +49,7 @@ export default function DashboardPage() {
 
   const [isVisible, setIsVisible] = useState(false)
   const [isFounderModalOpen, setIsFounderModalOpen] = useState(false)
+  const [isReportModalOpen, setIsReportModalOpen] = useState(false)
   const [activeQuestionId, setActiveQuestionId] = useState<string | null>(null)
 
   // Research Agent State
@@ -57,6 +64,8 @@ export default function DashboardPage() {
   const [searchIcp, setSearchIcp] = useState("")
   const [searchType, setSearchType] = useState<"B2C" | "B2B">("B2C")
   const customerButtonRef = useRef<HTMLDivElement>(null)
+
+
 
   const globalProgress = calculateGlobalProgress()
 
@@ -99,13 +108,37 @@ export default function DashboardPage() {
       return
     }
 
-    // Set default expanded module to first one (founder)
     if (!expandedModuleId) {
       setExpandedModule('founder')
     }
+    
+    // Poll for report if not present (Long Polling)
+    if (!vcReport) {
+        // Single separate async check to avoid blocking UI
+        const checkReport = async () => {
+             try {
+                // This request will hang (long poll) on the server until report is ready or timeout
+                const res = await fetch('/api/vc-report');
+                const data = await res.json();
+                if (data.exists && data.report) {
+                    // Update store
+                    useAppStore.getState().setVcReport(data.report);
+                }
+            } catch (e) {
+                // ignore
+            }
+        };
+        
+        checkReport();
+    }
+    
+    // Auto-open report if available and we just came back
+    if (vcReport && !isReportModalOpen) {
+        // Optional: auto-open logic
+    }
 
     setTimeout(() => setIsVisible(true), 50)
-  }, [dashboardUnlocked, router, expandedModuleId, setExpandedModule])
+  }, [dashboardUnlocked, router, expandedModuleId, setExpandedModule, vcReport])
 
   if (!dashboardUnlocked) return null
 
@@ -177,6 +210,8 @@ export default function DashboardPage() {
     setIsReachOutPopupOpen(true)
   }
 
+
+
   return (
     <main className="min-h-screen bg-background flex flex-col">
       {/* Top Navigation */}
@@ -207,12 +242,26 @@ export default function DashboardPage() {
             >
               <DollarSign className="w-4 h-4 text-muted-foreground group-hover:text-foreground" />
               <span className="text-sm text-muted-foreground group-hover:text-foreground hidden sm:inline">
-                VC Call
+                {vcCallCompleted ? "Retake Pitch" : "VC Call"}
               </span>
               {!vcCallCompleted && (
                 <span className="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 bg-primary rounded-full ring-2 ring-background" />
               )}
             </button>
+            
+            {/* VC Feedback Button */}
+            {vcReport && (
+                 <button
+                  onClick={() => setIsReportModalOpen(true)}
+                  className="relative flex items-center gap-2 px-3 py-1.5 rounded-full hover:bg-secondary transition-colors group text-indigo-600 dark:text-indigo-400"
+                  aria-label="View VC Feedback"
+                >
+                  <Target className="w-4 h-3" />
+                  <span className="text-sm font-medium hidden sm:inline">
+                    View Feedback
+                  </span>
+                </button>
+            )}
 
             {/* Customer Reach-out */}
             <div className="relative" ref={customerButtonRef}>
@@ -244,8 +293,11 @@ export default function DashboardPage() {
           {/* Center: Breadcrumb */}
           <BreadcrumbNav currentStep="dashboard" />
 
-          {/* Right: Resources + Investor Memo */}
+          {/* Right: Pitch Deck + Resources + Investor Memo */}
           <div className="flex items-center gap-2">
+            {/* Pitch Deck Generator */}
+
+
             <Link
               href="https://www.sequoiacap.com/article/writing-a-business-plan/"
               target="_blank"
@@ -303,7 +355,14 @@ export default function DashboardPage() {
         <ModuleSidebar onModuleClick={handleModuleClick} />
 
         {/* Center - Module Content */}
-        <div className="flex-1 bg-background overflow-hidden">
+        <div className="flex-1 bg-background overflow-hidden flex flex-col">
+          {/* VC Feedback Banner */}
+          {vcReport && (
+            <div className="p-6 pb-0">
+               <VCFeedbackCard report={vcReport} />
+            </div>
+          )}
+
           {expandedModuleId ? (
             <ModuleContent
               module={modules[expandedModuleId]}
@@ -341,6 +400,14 @@ export default function DashboardPage() {
 
       {/* Resource Drawer */}
       <ResourceDrawer />
+
+
+      
+      <VCReportModal
+        isOpen={isReportModalOpen}
+        onClose={() => setIsReportModalOpen(false)}
+        report={vcReport}
+      />
     </main>
   )
 }

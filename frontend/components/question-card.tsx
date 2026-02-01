@@ -13,9 +13,9 @@ interface QuestionCardProps {
 }
 
 export function QuestionCard({ question, moduleId, onFocus }: QuestionCardProps) {
-  const updateQuestion = useAppStore((state) => state.updateQuestion)
-  const setActiveResourceQuestion = useAppStore((state) => state.setActiveResourceQuestion)
-  const toggleResourceSidebar = useAppStore((state) => state.toggleResourceSidebar)
+  const updateQuestion = useAppStore((state: { updateQuestion: any }) => state.updateQuestion)
+  const setActiveResourceQuestion = useAppStore((state: { setActiveResourceQuestion: any }) => state.setActiveResourceQuestion)
+  const toggleResourceSidebar = useAppStore((state: { toggleResourceSidebar: any }) => state.toggleResourceSidebar)
   const [localValue, setLocalValue] = useState(question.value)
 
   // Sync local value with store when question changes
@@ -45,7 +45,6 @@ export function QuestionCard({ question, moduleId, onFocus }: QuestionCardProps)
             onBlur={handleBlur}
             onFocus={onFocus}
             placeholder={question.placeholder}
-            disabled={question.type === 'readonly'}
             className={cn(
               "w-full px-4 py-3 rounded-lg border border-border bg-background",
               "text-sm text-foreground placeholder:text-muted-foreground",
@@ -65,7 +64,6 @@ export function QuestionCard({ question, moduleId, onFocus }: QuestionCardProps)
             onBlur={handleBlur}
             onFocus={onFocus}
             placeholder={question.placeholder}
-            disabled={question.type === 'readonly'}
             rows={question.type === 'structured' ? 3 : 6}
             className={cn(
               "w-full px-4 py-3 rounded-lg border border-border bg-background",

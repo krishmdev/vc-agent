@@ -9,6 +9,14 @@ export type InsightCategory = "problem" | "solution" | "market" | "competition" 
 
 export type CardSource = "mentorship" | "vc" | "customer" | null
 
+export interface VCReport {
+  diagnosis: string
+  strengths: string[]
+  gaps: string[]
+  terrifyingQuestions: string[]
+  nextSteps: string[]
+}
+
 export interface Insight {
   id: string
   category: InsightCategory
@@ -49,7 +57,7 @@ export interface DashboardCard {
   lastUpdatedSource: CardSource
 }
 
-interface AppState {
+export interface AppState {
   // Idea
   idea: string
   setIdea: (idea: string) => void
@@ -66,6 +74,8 @@ interface AppState {
   // VC conversation
   vcMessages: ConversationMessage[]
   addVcMessage: (message: Omit<ConversationMessage, "id" | "timestamp">) => void
+  vcReport: VCReport | null
+  setVcReport: (report: VCReport) => void
 
   // Customer conversation
   customerMessages: ConversationMessage[]
@@ -164,6 +174,8 @@ export const useAppStore = create<AppState>()(
             },
           ],
         })),
+      vcReport: null,
+      setVcReport: (report) => set({ vcReport: report }),
 
       // Customer conversation
       customerMessages: [],
@@ -335,6 +347,11 @@ export const useAppStore = create<AppState>()(
     }),
     {
       name: "launchpad-storage-v2",
+      partialize: (state) => {
+        // Exclude VC state from persistence so it resets on reload/restart
+        const { vcReport, vcCallCompleted, vcMessages, ...rest } = state
+        return rest
+      },
     }
   )
 )

@@ -5,6 +5,7 @@ export async function GET(request: NextRequest) {
   const room = request.nextUrl.searchParams.get("room");
   const username = request.nextUrl.searchParams.get("username");
   const startupIdea = request.nextUrl.searchParams.get("idea");
+  const mode = request.nextUrl.searchParams.get("mode") || "mentor"; // Default to "mentor"
 
   if (!room) {
     return NextResponse.json(
@@ -27,7 +28,10 @@ export async function GET(request: NextRequest) {
   const at = new AccessToken(apiKey, apiSecret, {
     identity: username || `user-${Math.random().toString(36).substring(7)}`,
     ttl: "10m",
-    metadata: startupIdea ? JSON.stringify({ startupIdea }) : undefined,
+    metadata: JSON.stringify({
+      startupIdea: startupIdea || "",
+      agentMode: mode
+    }),
   });
 
   at.addGrant({

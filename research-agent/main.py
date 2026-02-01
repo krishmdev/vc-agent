@@ -10,7 +10,13 @@ import praw
 from typing import Optional, Dict, Any, List
 from google import genai
 from google.genai import types
+
+import sys
 from pathlib import Path
+# Add current directory to path to allow importing slide_generator when running from parent dir
+sys.path.append(str(Path(__file__).resolve().parent))
+
+from slide_generator import generate_pitch_deck_with_manus, generate_slides_with_gemini, prepare_slide_data
 from dotenv import load_dotenv
 
 # Robust .env loading
@@ -65,6 +71,15 @@ class CustomerReachoutRequest(BaseModel):
     customer_type: str  # "B2C" or "B2B"
 
 class CustomerReachoutResponse(BaseModel):
+    task_id: str
+    status: str
+    message: str
+
+class SlideGenerationRequest(BaseModel):
+    modules: Dict[str, Any]  # Dashboard modules data
+    idea: str  # Initial startup idea for fallback
+
+class SlideGenerationResponse(BaseModel):
     task_id: str
     status: str
     message: str
@@ -880,3 +895,74 @@ async def customer_reachout_endpoint(request: CustomerReachoutRequest, backgroun
 @app.get("/health")
 async def health_check():
     return {"status": "ok"}
+
+
+# --- Slide Generation ---
+
+import asyncio
+
+# ...
+
+async def run_slide_generation_task(task_id: str, modules: Dict[str, Any], idea: str):
+    """Background task for generating pitch deck slides."""
+    try:
+        print(f"Starting slide generation for task {task_id}")
+        
+        # Initialize Gemini client
+        api_key = os.environ.get("GEMINI_API_KEY")
+        if not api_key:
+            active_tasks[task_id] = {"status": "failed", "error": "GEMINI_API_KEY not configured"}
+            return
+        
+        gemini_client = genai.Client(api_key=api_key)
+        
+        # Prepare slide data (extracts values, generates fallbacks)
+        # Run in thread to prevent blocking event loop
+        slide_data = await asyncio.to_thread(prepare_slide_data, modules, idea, gemini_client)
+        print(f"Prepared slide data with {len(slide_data)} slides")
+        
+        # Try Manus first, fallback to Gemini
+        result = await generate_pitch_deck_with_manus(modules, idea, gemini_client, slide_data)
+        
+        if result.get("status") == "completed":
+            active_tasks[task_id] = {
+                "status": "completed",
+                "content": json.dumps(result.get("data", {})),
+                "type": result.get("type", "json")
+            }
+        elif result.get("status") == "failed":
+            active_tasks[task_id] = {
+                "status": "failed", 
+                "error": result.get("error", "Unknown error")
+            }
+        else:
+            # Manus returned a task_id for async processing
+            active_tasks[task_id] = {
+                "status": "completed",
+                "content": json.dumps(result),
+                "type": "manus_task"
+            }
+            
+    except Exception as e:
+        print(f"Error in slide generation: {e}")
+        active_tasks[task_id] = {"status": "failed", "error": str(e)}
+
+
+@app.post("/generate-slides", response_model=SlideGenerationResponse)
+async def generate_slides_endpoint(request: SlideGenerationRequest, background_tasks: BackgroundTasks):
+    """Generate a Sequoia-style pitch deck from dashboard data."""
+    task_id = f"slides_{int(time.time())}_{str(uuid.uuid4())[:8]}"
+    active_tasks[task_id] = {"status": "processing"}
+    
+    background_tasks.add_task(
+        run_slide_generation_task,
+        task_id,
+        request.modules,
+        request.idea
+    )
+    
+    return SlideGenerationResponse(
+        task_id=task_id,
+        status="processing",
+        message="Generating pitch deck..."
+    )
