@@ -55,45 +55,46 @@ function VoiceUI({ onStateChange }: { onStateChange?: (speaking: boolean) => voi
   }, [state, onStateChange])
 
   return (
-    <div className="flex flex-col items-center gap-6">
-      <div className="relative">
-        {/* Outer glow */}
-        <div 
-          className={cn(
-            "absolute inset-0 rounded-full transition-all duration-500",
-            state === "speaking" ? "opacity-60 scale-125" : "opacity-30 scale-100"
-          )}
-          style={{
-            background: `radial-gradient(circle, 
-              oklch(0.42 0.1 145 / 0.3) 0%, 
-              oklch(0.42 0.1 145 / 0.1) 50%, 
-              transparent 70%
-            )`,
-          }}
-        />
+    <div className="flex flex-col items-center justify-center gap-6">
+      {/* Same circle design as before connecting */}
+      <div 
+        className={cn(
+          "w-64 h-64 md:w-80 md:h-80 rounded-full flex items-center justify-center relative",
+          "bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/20",
+          "transition-all duration-300",
+          state === "speaking" && "border-primary/40 from-primary/30"
+        )}
+      >
+        {/* Pulse ring when speaking */}
+        {state === "speaking" && (
+          <div className="absolute inset-0 rounded-full border-2 border-primary/30 animate-ping" />
+        )}
         
-        <BarVisualizer
-          state={state}
-          barCount={7}
-          trackRef={audioTrack}
-          className="w-64 h-64 md:w-80 md:h-80"
-          options={{ minHeight: 24 }}
-        />
+        <div className="flex flex-col items-center gap-2">
+          <Phone className={cn(
+            "w-12 h-12 transition-all duration-300",
+            state === "speaking" ? "text-primary scale-110" : "text-primary/60"
+          )} />
+          <span className="text-muted-foreground text-sm">
+            {state === "listening"
+              ? "Listening..."
+              : state === "thinking"
+              ? "Thinking..."
+              : state === "speaking"
+              ? "Mentor speaking..."
+              : "Connected"}
+          </span>
+        </div>
       </div>
       
-      <div className="flex flex-col items-center gap-2">
-        <span className="text-lg font-medium text-foreground">
-          {state === "listening"
-            ? "Listening to you..."
-            : state === "thinking"
-            ? "Thinking..."
-            : state === "speaking"
-            ? "Mentor is speaking..."
-            : "Connected"}
-        </span>
-        <span className="text-sm text-muted-foreground">
-          {state === "listening" && "Share your thoughts"}
-        </span>
+      {/* Hidden audio visualizer for functionality */}
+      <div className="sr-only">
+        <BarVisualizer
+          state={state}
+          barCount={5}
+          trackRef={audioTrack}
+          options={{ minHeight: 10 }}
+        />
       </div>
     </div>
   )
@@ -283,11 +284,27 @@ export default function MentorshipPage() {
                 audio={true}
                 video={false}
                 onDisconnected={endCall}
-                className="flex flex-col items-center"
+                className="flex-1 flex flex-col items-center justify-center h-full w-full"
               >
                 <VoiceUI onStateChange={setIsSpeaking} />
                 <RoomAudioRenderer />
               </LiveKitRoom>
+            ) : callActive && !callEnded && !token ? (
+              // Connecting state - show icon while fetching token
+              <div 
+                className={cn(
+                  "w-64 h-64 md:w-80 md:h-80 rounded-full flex items-center justify-center",
+                  "bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/20",
+                  "transition-all duration-300 animate-pulse"
+                )}
+              >
+                <div className="flex flex-col items-center gap-2">
+                  <Phone className="w-12 h-12 text-primary/60" />
+                  <span className="text-muted-foreground text-sm">
+                    Connecting...
+                  </span>
+                </div>
+              </div>
             ) : (
               <div 
                 className={cn(

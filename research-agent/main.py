@@ -4,12 +4,28 @@ from pydantic import BaseModel
 import os
 import time
 import uuid
+import requests
+import json
+import praw
 from typing import Optional, Dict, Any, List
 from google import genai
 from google.genai import types
+from pathlib import Path
 from dotenv import load_dotenv
 
-load_dotenv(dotenv_path="../.env.local")
+# Robust .env loading
+# 1. Try directory of this script (research-agent/.env)
+script_dir = Path(__file__).resolve().parent
+load_dotenv(dotenv_path=script_dir / ".env")
+
+# 2. Try current working directory (standard behavior)
+load_dotenv()
+
+# 3. Try parent directory (brown-hacks/.env)
+load_dotenv(dotenv_path=script_dir.parent / ".env")
+
+# Debug logs
+print(f"Loading env vars. REDDIT_CLIENT_ID present: {bool(os.environ.get('REDDIT_CLIENT_ID'))}")
 
 app = FastAPI()
 
@@ -43,6 +59,15 @@ class PollResponse(BaseModel):
     status: str  # processing, completed, failed
     content: Optional[str] = None
     error: Optional[str] = None
+
+class CustomerReachoutRequest(BaseModel):
+    icp_description: str
+    customer_type: str  # "B2C" or "B2B"
+
+class CustomerReachoutResponse(BaseModel):
+    task_id: str
+    status: str
+    message: str
 
 # --- In-Memory Stores ---
 # In production, use Redis or Postgres
@@ -578,6 +603,273 @@ async def get_task_status(task_id: str):
         status=task.get("status", "unknown"),
         content=task.get("content"),
         error=task.get("error")
+    )
+
+
+def run_customer_reachout_task(task_id: str, icp_description: str, customer_type: str):
+    try:
+        api_key = os.environ.get("GEMINI_API_KEY")
+        if not api_key:
+            active_tasks[task_id] = {"status": "failed", "error": "GEMINI_API_KEY missing"}
+            return
+
+        client = genai.Client(api_key=api_key)
+        
+        result_data = {}
+
+        if customer_type == "B2C":
+            # --- B2C Pipeline (Reddit API) ---
+            
+            # Step 1: Extract keywords using Gemini
+            keyword_prompt = f"""
+            Extract 3-5 high-relevance search keywords to find Reddit communities for this ICP: "{icp_description}".
+            Make them broad enough to match subreddit names or topics (e.g., "smallbusiness", "marketing", "entrepreneur").
+            Return JSON: `{{"keywords": ["kw1", "kw2"]}}`
+            """
+            
+            kw_resp = client.models.generate_content(
+                model='gemini-2.0-flash',
+                contents=keyword_prompt,
+                config=types.GenerateContentConfig(response_mime_type="application/json")
+            )
+            keywords = json.loads(kw_resp.text).get("keywords", [])
+            
+            forums = []
+            offline_suggestions = []
+
+            # Step 2: Search Reddit using PRAW
+            reddit_client_id = os.environ.get("REDDIT_CLIENT_ID")
+            reddit_client_secret = os.environ.get("REDDIT_CLIENT_SECRET")
+            # Fallback user agent if not set
+            reddit_user_agent = os.environ.get("REDDIT_USER_AGENT", "BrownHacksResearchAgent/1.0")
+
+            if reddit_client_id and reddit_client_secret:
+                try:
+                    reddit = praw.Reddit(
+                        client_id=reddit_client_id,
+                        client_secret=reddit_client_secret,
+                        user_agent=reddit_user_agent,
+                        check_for_updates=False
+                    )
+                    
+                    found_subs = set()
+                    
+                    # Search specifically for subreddits
+                    for kw in keywords:
+                        # search_subreddits returns a generator
+                        results = reddit.subreddits.search(kw, limit=2)
+                        for sub in results:
+                             if sub.display_name not in found_subs:
+                                 found_subs.add(sub.display_name)
+                                 
+                                 # Step 3: Generate Strategy for each found sub using Gemini
+                                 strat_prompt = f"""
+                                 Context: Subreddit r/{sub.display_name} - {sub.public_description[:200]}...
+                                 ICP: {icp_description}
+                                 
+                                 Write a detailed 2-3 sentence authentic outreach strategy for this specific community.
+                                 """
+                                 
+                                 strat_resp = client.models.generate_content(
+                                    model='gemini-2.0-flash',
+                                    contents=strat_prompt
+                                 )
+                                 strategy_text = strat_resp.text.strip()
+                                 
+                                 forums.append({
+                                     "name": f"r/{sub.display_name}",
+                                     "url": f"https://www.reddit.com{sub.url}",
+                                     "strategy": strategy_text
+                                 })
+                                 
+                                 if len(forums) >= 2: # Limit to 2 total across all keywords
+                                     break
+                        if len(forums) >= 2:
+                            break
+                            
+                except Exception as reddit_err:
+                     print(f"Reddit API Error: {reddit_err}")
+                     forums.append({"name": "Reddit API Error", "url": "#", "strategy": "Please check REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET env vars."})
+
+            else:
+                 forums.append({"name": "Config Missing", "url": "#", "strategy": "Please set REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET in .env"})
+
+
+            # Step 4: Generate Offline Suggestions (Gemini)
+            offline_prompt = f"""
+            Based on this ICP: "{icp_description}"
+            Suggest 2-3 specific types of offline places/venues where this person could be found in person.
+            Return JSON: `{{"offline": ["Place 1", "Place 2"]}}`
+            """
+            off_resp = client.models.generate_content(
+                model='gemini-2.0-flash',
+                contents=offline_prompt,
+                config=types.GenerateContentConfig(response_mime_type="application/json")
+            )
+            offline_suggestions = json.loads(off_resp.text).get("offline", [])
+
+            result_data = {
+                "forums": forums,
+                "offline": offline_suggestions
+            }
+
+        elif customer_type == "B2B":
+            # --- B2B Pipeline ---
+            apollo_api_key = os.environ.get("APOLLO_API_KEY")
+            print(f"B2B Pipeline started. APOLLO_API_KEY present: {bool(apollo_api_key)}")
+            
+            # Step 1: Parse ICP to Apollo Params using Gemini
+            parse_prompt = f"""
+            Extract search parameters for Apollo.io API from this ICP: "{icp_description}"
+            
+            Return JSON:
+            {{
+                "job_titles": ["title1", "title2"],
+                "keywords": ["keyword1", "keyword2"],
+                "seniorities": ["manager", "director", "vp", "c_suite"],
+                "industries": ["industry1"],
+                "min_employees": 10,
+                "max_employees": 1000
+            }}
+            """
+            
+            parse_resp = client.models.generate_content(
+                model='gemini-2.0-flash',
+                contents=parse_prompt,
+                config=types.GenerateContentConfig(
+                    response_mime_type="application/json"
+                )
+            )
+            params = json.loads(parse_resp.text)
+            print(f"Parsed ICP params: {params}")
+            
+            contacts = []
+            companies = []
+            
+            if apollo_api_key:
+                headers = {
+                    "Cache-Control": "no-cache",
+                    "Content-Type": "application/json",
+                    "X-Api-Key": apollo_api_key
+                }
+                
+                # People Search
+                try:
+                    people_payload = {
+                        "q_keywords": ",".join(params.get("keywords", [])),
+                        "person_titles": params.get("job_titles", []),
+                        "person_seniorities": params.get("seniorities", []),
+                        "page": 1,
+                        "per_page": 10
+                    }
+                    print(f"Apollo People Search payload: {people_payload}")
+                    p_resp = requests.post("https://api.apollo.io/v1/mixed_people/search", json=people_payload, headers=headers)
+                    print(f"Apollo People Search response status: {p_resp.status_code}")
+                    if p_resp.status_code == 200:
+                        people_data = p_resp.json().get("people", [])
+                        print(f"Apollo found {len(people_data)} people")
+                        for p in people_data:
+                            contacts.append({
+                                "name": f"{p.get('first_name')} {p.get('last_name')}",
+                                "title": p.get("title"),
+                                "company": p.get("organization", {}).get("name"),
+                                "email": p.get("email") or "Not available",
+                                "note": f"Matches {p.get('title')} role"
+                            })
+                    else:
+                        print(f"Apollo People Search error response: {p_resp.text[:500]}")
+                except Exception as e:
+                    print(f"Apollo People Search error: {e}")
+
+                # Organization Search
+                try:
+                    org_payload = {
+                        "q_organization_keyword_tags": params.get("industries", []),
+                        "organization_num_employees_ranges": [f"{params.get('min_employees')},{params.get('max_employees')}"],
+                        "page": 1,
+                        "per_page": 5
+                    }
+                    print(f"Apollo Org Search payload: {org_payload}")
+                    o_resp = requests.post("https://api.apollo.io/v1/mixed_companies/search", json=org_payload, headers=headers)
+                    print(f"Apollo Org Search response status: {o_resp.status_code}")
+                    if o_resp.status_code == 200:
+                        org_data = o_resp.json().get("organizations", [])
+                        print(f"Apollo found {len(org_data)} organizations")
+                        for o in org_data:
+                            companies.append({
+                                "name": o.get("name"),
+                                "industry": o.get("primary_industry", {}).get("industry") or "Unknown",
+                                "size": o.get("estimated_num_employees"),
+                                "location": f"{o.get('city')}, {o.get('country')}",
+                                "website": o.get("website_url"),
+                                "note": "Fits industry and size criteria"
+                            })
+                    else:
+                        print(f"Apollo Org Search error response: {o_resp.text[:500]}")
+                except Exception as e:
+                    print(f"Apollo Org Search error: {e}")
+            
+            # Fallback: Generate sample data using Gemini if Apollo returned nothing
+            if not contacts and not companies:
+                print("Apollo returned no results. Generating sample data with Gemini.")
+                fallback_prompt = f"""
+                Based on this ICP: "{icp_description}"
+                Generate sample B2B target data.
+                
+                Return JSON:
+                {{
+                    "key_contacts": [
+                        {{"name": "Sample Name", "title": "Sample Title", "company": "Sample Company", "email": "sample@example.com", "note": "Generated sample based on ICP"}}
+                    ],
+                    "target_companies": [
+                        {{"name": "Sample Company", "industry": "Sample Industry", "size": 100, "location": "Sample Location", "website": "https://example.com", "note": "Generated sample based on ICP"}}
+                    ]
+                }}
+                """
+                fallback_resp = client.models.generate_content(
+                    model='gemini-2.0-flash',
+                    contents=fallback_prompt,
+                    config=types.GenerateContentConfig(response_mime_type="application/json")
+                )
+                fallback_data = json.loads(fallback_resp.text)
+                contacts = fallback_data.get("key_contacts", [])
+                companies = fallback_data.get("target_companies", [])
+            
+            if not apollo_api_key:
+                 # Mock Data if API Key missing (Graceful degradation)
+                 contacts.append({"name": "No Apollo API Key", "title": "Check .env", "company": "System", "email": "", "note": "Please set APOLLO_API_KEY"})
+                 companies.append({"name": "No Apollo API Key", "industry": "System", "size": 0, "location": "Local", "website": "", "note": "Please set APOLLO_API_KEY"})
+
+            result_data = {
+                "key_contacts": contacts,
+                "target_companies": companies
+            }
+
+        active_tasks[task_id] = {
+            "status": "completed",
+            "content": json.dumps(result_data)
+        }
+
+    except Exception as e:
+        print(f"Error in customer reachout: {e}")
+        active_tasks[task_id] = {"status": "failed", "error": str(e)}
+
+@app.post("/customer-reachout", response_model=CustomerReachoutResponse)
+async def customer_reachout_endpoint(request: CustomerReachoutRequest, background_tasks: BackgroundTasks):
+    task_id = f"reachout_{int(time.time())}_{str(uuid.uuid4())[:8]}"
+    active_tasks[task_id] = {"status": "processing"}
+    
+    background_tasks.add_task(
+        run_customer_reachout_task,
+        task_id,
+        request.icp_description,
+        request.customer_type
+    )
+    
+    return CustomerReachoutResponse(
+        task_id=task_id,
+        status="processing",
+        message="Customer search started"
     )
 
 @app.get("/health")
