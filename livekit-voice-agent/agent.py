@@ -7,6 +7,9 @@ import ssl
 import logging
 import asyncio
 import re
+
+# Disable ChromaDB Telemetry
+os.environ["ANONYMIZED_TELEMETRY"] = "False"
 from typing import Annotated
 
 from livekit import agents
@@ -270,6 +273,8 @@ async def my_agent(ctx: agents.JobContext):
         turn_detection=realtime.realtime_audio_input_turn_detection.SemanticVad(
             type="semantic_vad", 
             create_response=False,  # DISABLED - we manually trigger with RAG
+            eagerness="high",  # Less sensitive - waits longer for user to finish
+            silence_duration_ms=100,  # Wait 500ms of silence before considering turn complete
         ),
     )
     
