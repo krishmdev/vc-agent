@@ -4,8 +4,15 @@ import os
 import re
 import json
 from pathlib import Path
+from dotenv import load_dotenv
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 import rag
+
+# Load environment variables
+env_path_local = Path(__file__).resolve().parent / ".env.local"
+env_path_parent = Path(__file__).resolve().parent.parent / ".env.local"
+load_dotenv(env_path_local)
+load_dotenv(env_path_parent)
 
 # Only process txt files (podcast transcripts)
 SUPPORTED_EXTENSIONS = {".txt"}
@@ -220,16 +227,30 @@ def ingest_files():
     if all_chunks:
         print(f"\nAdding {len(all_chunks)} total chunks to ChromaDB...")
         
-        # Add in batches
-        batch_size = 100
+        # Smaller batches to avoid rate limits
+        import time
+        batch_size = 50
         for i in range(0, len(all_chunks), batch_size):
             batch_end = min(i + batch_size, len(all_chunks))
-            collection.add(
-                documents=all_chunks[i:batch_end],
-                ids=all_ids[i:batch_end],
-                metadatas=all_metadatas[i:batch_end]
-            )
-            if (i // batch_size + 1) % 10 == 0:
+            
+            # Retry with backoff on rate limit
+            for attempt in range(5):
+                try:
+                    collection.add(
+                        documents=all_chunks[i:batch_end],
+                        ids=all_ids[i:batch_end],
+                        metadatas=all_metadatas[i:batch_end]
+                    )
+                    break
+                except Exception as e:
+                    if "429" in str(e) or "rate" in str(e).lower():
+                        wait_time = 2 ** attempt
+                        print(f"  Rate limited, waiting {wait_time}s...")
+                        time.sleep(wait_time)
+                    else:
+                        raise
+            
+            if (i // batch_size + 1) % 20 == 0:
                 print(f"  Added {batch_end}/{len(all_chunks)} chunks...")
         
         print(f"\n✓ Successfully indexed {len(all_chunks)} chunks!")
