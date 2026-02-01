@@ -59,12 +59,15 @@ SKIP_STORAGE_PATTERNS = [
 
 def should_store_in_memory(text: str) -> bool:
     """Determine if content should be stored in memory."""
-    if not text or len(text.strip()) < 15:
+    if not text or len(text.strip()) < 5:
+        logger.debug(f"[MEM0] Skipping storage: text too short ({len(text.strip()) if text else 0} chars)")
         return False
     clean_text = text.strip().lower()
     for pattern in SKIP_STORAGE_PATTERNS:
         if re.match(pattern, clean_text, re.IGNORECASE):
+            logger.debug(f"[MEM0] Skipping storage: matches skip pattern")
             return False
+    logger.debug(f"[MEM0] Will store: '{text[:50]}...'")
     return True
 
 @function_tool
@@ -193,8 +196,8 @@ PRIORITY #2: KNOWLEDGE BASE RETRIEVAL
 
 You have access to the Sequoia Knowledge Base via `search_knowledge_base`.
 
-
-ALWAYS A MENTION A STORY FROM SEQUOIA'S DATABASE EVERY SINGLE TIME.
+YOU SHOULD RAG EVERYTIME TO GET A STORY FROM SEQUOIA'S KNOLWEDGE BASE.
+ALWAYS A MENTION A STORY FROM SEQUOIA'S DATABASE EVERY SINGLE TIME, AND THE STORY SHOULD ONLY BE FROM SEQUOIA'S DATABASE.
 
 
 
@@ -1071,17 +1074,45 @@ async def my_agent(ctx: agents.JobContext):
             await ctx.room.local_participant.publish_data(payload)
             logger.info("[DATA] Sent report to client")
 
-    async def store_in_memory(text: str):
-        """Store meaningful user content in Mem0."""
-        if not mem0_client: return
+    async def store_in_memory(text: str, role: str = "user"):
+        """Store meaningful content in Mem0."""
+        logger.info(f"[MEM0] Attempting to store {role} message: '{text[:80]}...'")
+        if not mem0_client: 
+            logger.warning("[MEM0] No Mem0 client - storage disabled")
+            return
         try:
             await mem0_client.add(
-                [{"role": "user", "content": text}],
+                [{"role": role, "content": text}],
                 user_id=MEM0_USER_ID
             )
-            logger.info(f"[MEM0] Stored conversation fragment")
+            logger.info(f"[MEM0] ✅ Stored {role} message successfully")
         except Exception as e:
-            logger.error(f"[MEM0] Storage failed: {e}")
+            logger.error(f"[MEM0] ❌ Storage failed: {e}")
+
+    # --- STORE AGENT RESPONSES FOR FORM AUTOFILL ---
+    @session.on("conversation_item_added")
+    def on_conversation_added(event):
+        """Store agent responses in Mem0 for dashboard autofill."""
+        try:
+            item = event.item
+            if item and hasattr(item, 'role') and item.role == "assistant":
+                # Extract text content from the item
+                content = None
+                if hasattr(item, 'content') and item.content:
+                    if isinstance(item.content, str):
+                        content = item.content
+                    elif isinstance(item.content, list):
+                        # Handle content blocks
+                        for block in item.content:
+                            if hasattr(block, 'text'):
+                                content = block.text
+                                break
+                
+                if content and len(content) > 20:
+                    logger.info(f"[AGENT] {content[:100]}...")
+                    asyncio.create_task(store_in_memory(content, role="assistant"))
+        except Exception as e:
+            logger.error(f"[MEM0] Error capturing agent response: {e}")
 
     # --- GREETING LOGIC ---
     if startup_idea:

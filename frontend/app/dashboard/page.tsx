@@ -10,6 +10,8 @@ import {
   Users,
   BookOpen,
   ExternalLink,
+  Loader2,
+  RefreshCw,
   Presentation,
   Target,
 } from "lucide-react"
@@ -43,6 +45,8 @@ export default function DashboardPage() {
     expandedModuleId,
     setExpandedModule,
     calculateGlobalProgress,
+    autofillFromMemories,
+    isAutofilling,
   } = useAppStore()
 
 
@@ -298,11 +302,24 @@ export default function DashboardPage() {
           {/* Center: Breadcrumb */}
           <BreadcrumbNav currentStep="dashboard" />
 
-          {/* Right: Pitch Deck + Resources + Investor Memo */}
+          {/* Right: Sync + Resources + Investor Memo */}
           <div className="flex items-center gap-2">
-            {/* Pitch Deck Generator */}
-
-
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => autofillFromMemories()}
+              disabled={isAutofilling}
+              className="gap-2"
+            >
+              {isAutofilling ? (
+                <Loader2 className="w-4 h-4 animate-spin" />
+              ) : (
+                <RefreshCw className="w-4 h-4" />
+              )}
+              <span className="hidden md:inline">
+                {isAutofilling ? "Syncing..." : "Sync Voice Chat"}
+              </span>
+            </Button>
             <Link
               href="https://www.sequoiacap.com/article/writing-a-business-plan/"
               target="_blank"

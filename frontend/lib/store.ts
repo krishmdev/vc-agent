@@ -121,6 +121,8 @@ export interface AppState {
   updateQuestion: (moduleId: ModuleId, questionId: string, value: string | string[]) => void
   calculateModuleProgress: (moduleId: ModuleId) => number
   calculateGlobalProgress: () => number
+  autofillFromMemories: () => Promise<void>
+  isAutofilling: boolean
 }
 
 const defaultDashboardCards: DashboardCard[] = [
@@ -344,6 +346,98 @@ export const useAppStore = create<AppState>()(
           return sum + state.modules[id].completionPercentage
         }, 0)
         return Math.round(totalProgress / moduleIds.length)
+      },
+
+      // Autofill from Mem0 memories
+      isAutofilling: false,
+      autofillFromMemories: async () => {
+        set({ isAutofilling: true })
+        try {
+          // Step 1: Fetch memories from Mem0
+          console.log('[AUTOFILL] Fetching memories...')
+          const memoriesRes = await fetch('/api/memories')
+          const memoriesData = await memoriesRes.json()
+
+          if (!memoriesData.memories || memoriesData.memories.length === 0) {
+            console.log('[AUTOFILL] No memories found')
+            set({ isAutofilling: false })
+            return
+          }
+          console.log(`[AUTOFILL] Found ${memoriesData.memories.length} memories`)
+
+          // Step 2: Extract fields using Gemini
+          console.log('[AUTOFILL] Extracting fields...')
+          const extractRes = await fetch('/api/extract-fields', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ memories: memoriesData.memories })
+          })
+          const extractData = await extractRes.json()
+
+          console.log('[AUTOFILL] Extract response:', JSON.stringify(extractData))
+
+          if (!extractData.fields || extractData.fields.length === 0) {
+            console.log('[AUTOFILL] No fields extracted')
+            set({ isAutofilling: false })
+            return
+          }
+          console.log(`[AUTOFILL] Extracted ${extractData.fields.length} fields:`, extractData.fields)
+
+          // Step 3: Update store with extracted fields - use set() directly for each update
+          for (const field of extractData.fields) {
+            const { moduleId, questionId, value } = field
+            if (moduleId && questionId && value) {
+              console.log(`[AUTOFILL] Setting ${moduleId}.${questionId} = "${value.substring(0, 50)}..."`)
+
+              // Directly update the state for each field
+              set((state) => {
+                const module = state.modules[moduleId as ModuleId]
+                if (!module) {
+                  console.log(`[AUTOFILL] Module ${moduleId} not found`)
+                  return state
+                }
+
+                const updatedSubsections = module.subsections.map((subsection) => ({
+                  ...subsection,
+                  questions: subsection.questions.map((question) =>
+                    question.id === questionId
+                      ? {
+                        ...question,
+                        value,
+                        completed: true,
+                      }
+                      : question
+                  ),
+                }))
+
+                const allQuestions = updatedSubsections.flatMap(s => s.questions).filter(q => q.type !== 'readonly')
+                const completedQuestions = allQuestions.filter(q => q.completed)
+                const completionPercentage = allQuestions.length > 0
+                  ? Math.round((completedQuestions.length / allQuestions.length) * 100)
+                  : 0
+
+                console.log(`[AUTOFILL] Updated ${moduleId}.${questionId}, new completion: ${completionPercentage}%`)
+
+                return {
+                  modules: {
+                    ...state.modules,
+                    [moduleId]: {
+                      ...module,
+                      subsections: updatedSubsections,
+                      completionPercentage,
+                    },
+                  },
+                }
+              })
+            }
+          }
+
+          console.log('[AUTOFILL] Complete!')
+        } catch (error) {
+          console.error('[AUTOFILL] Error:', error)
+        } finally {
+          set({ isAutofilling: false })
+        }
       },
     }),
     {
