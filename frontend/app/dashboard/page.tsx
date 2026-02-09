@@ -307,7 +307,11 @@ export default function DashboardPage() {
             <Button
               variant="outline"
               size="sm"
-              onClick={() => autofillFromMemories()}
+              onClick={() => {
+                console.log("Sync button clicked");
+                // alert("Starting Sync..."); // visual debugging
+                autofillFromMemories();
+              }}
               disabled={isAutofilling}
               className="gap-2"
             >

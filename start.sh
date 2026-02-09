@@ -26,7 +26,7 @@ trap cleanup SIGINT SIGTERM
 # Start Research Agent (FastAPI backend)
 echo "${BLUE}[1/3]${NC} Starting Research Agent on port 8000..."
 cd "$SCRIPT_DIR/research-agent"
-uv run uvicorn main:app --reload --port 8000 &
+uvicorn main:app --reload --port 8000 &
 RESEARCH_PID=$!
 
 # Start LiveKit Voice Agent

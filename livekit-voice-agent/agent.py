@@ -970,7 +970,8 @@ async def my_agent(ctx: agents.JobContext):
     agent_mode = "mentor"
     
     for participant in ctx.room.remote_participants.values():
-        if participant.metadata:
+        # Guard for console mode where metadata may be a MagicMock
+        if participant.metadata and isinstance(participant.metadata, str):
             try:
                 metadata = json.loads(participant.metadata)
                 startup_idea = metadata.get("startupIdea")
