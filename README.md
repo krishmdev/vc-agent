@@ -10,10 +10,15 @@ pitch, and a printable investment memo — all powered by a fleet of AI agents.
 
 > Built at Brown Hacks 2026.
 
+## 🎥 Demo
+
+Watch a walkthrough of Launchpad: **[Loom demo »](https://www.loom.com/share/8702524fdef44b14936edce3c784a8de)**
+
 ---
 
 ## Table of contents
 
+- [Demo](#-demo)
 - [What it does](#what-it-does)
 - [The Sequoia validation framework](#the-sequoia-validation-framework)
 - [Architecture](#architecture)
