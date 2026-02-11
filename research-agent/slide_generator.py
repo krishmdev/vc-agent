@@ -2,19 +2,18 @@
 Slide Generator Module - Generates Sequoia-style pitch decks using Manus 1.6 API
 """
 
-import os
-import json
-import requests
 import asyncio
-from typing import Optional, Dict, Any
-from google import genai
+import json
+import os
+from typing import Any, Dict, Optional
+
+import httpx
 from google.genai import types
 
-# Manus API configuration
+import settings
+
+# Manus API configuration (key loaded lazily)
 MANUS_API_URL = os.environ.get("MANUS_API_URL", "https://api.manus.im/v1")
-# Manus API configuration
-MANUS_API_URL = os.environ.get("MANUS_API_URL", "https://api.manus.im/v1")
-# Key loaded lazily
 
 
 # Slide structure for Sequoia-style pitch deck
@@ -55,7 +54,7 @@ def extract_dashboard_values(modules: Dict[str, Any]) -> Dict[str, str]:
     return values
 
 
-def generate_fallback_content(idea: str, field_name: str, gemini_client) -> str:
+async def generate_fallback_content(idea: str, field_name: str, gemini_client) -> str:
     """
     Use Gemini to generate content for a missing field based on the initial idea.
     """
@@ -69,30 +68,32 @@ def generate_fallback_content(idea: str, field_name: str, gemini_client) -> str:
     """
     
     try:
-        response = gemini_client.models.generate_content(
-            model='gemini-2.0-flash',
+        response = await gemini_client.aio.models.generate_content(
+            model=settings.UTILITY_MODEL,
             contents=prompt,
             config=types.GenerateContentConfig(
                 temperature=0.7,
                 max_output_tokens=200
             )
         )
-        return response.text.strip()
+        return (response.text or "").strip()
     except Exception as e:
         print(f"Fallback generation error for {field_name}: {e}")
         return ""
 
 
-def prepare_slide_data(
+async def prepare_slide_data(
     modules: Dict[str, Any], 
     idea: str,
     gemini_client
 ) -> Dict[str, Any]:
     """
     Prepare slide data by extracting dashboard values and filling gaps with AI.
+    Missing fields are generated concurrently.
     """
     values = extract_dashboard_values(modules)
     slide_data = {}
+    missing = []
     
     for slide in SLIDE_STRUCTURE:
         slide_content = {
@@ -105,12 +106,16 @@ def prepare_slide_data(
             if field in values and values[field]:
                 slide_content["data"][field] = values[field]
             elif idea:
-                # Generate fallback content
-                fallback = generate_fallback_content(idea, field, gemini_client)
-                if fallback:
-                    slide_content["data"][field] = f"[AI Generated] {fallback}"
+                missing.append((slide_content, field))
         
         slide_data[f"slide_{slide['number']}"] = slide_content
+
+    fallbacks = await asyncio.gather(
+        *(generate_fallback_content(idea, field, gemini_client) for _, field in missing)
+    )
+    for (slide_content, field), fallback in zip(missing, fallbacks):
+        if fallback:
+            slide_content["data"][field] = f"[AI Generated] {fallback}"
     
     return slide_data
 
@@ -164,7 +169,8 @@ async def generate_pitch_deck_with_manus(
     modules: Dict[str, Any],
     idea: str,
     gemini_client,
-    slide_data: Optional[Dict[str, Any]] = None
+    slide_data: Optional[Dict[str, Any]] = None,
+    http: Optional[httpx.AsyncClient] = None,
 ) -> Dict[str, Any]:
     """
     Generate a pitch deck using Manus 1.6 API with Nano Banana Pro.
@@ -173,7 +179,7 @@ async def generate_pitch_deck_with_manus(
     """
     # Prepare slide data checking...
     if not slide_data:
-        slide_data = prepare_slide_data(modules, idea, gemini_client)
+        slide_data = await prepare_slide_data(modules, idea, gemini_client)
     
     # Generate Manus prompt
     prompt = generate_manus_prompt(slide_data, idea)
@@ -189,7 +195,6 @@ async def generate_pitch_deck_with_manus(
     # Call Manus API
     try:
         print(f"Calling Manus API at {MANUS_API_URL}/tasks")
-        print(f"Using API Key: {manus_api_key[:5]}...{manus_api_key[-5:] if manus_api_key else 'None'}")
         
         headers = {
             "Authorization": f"Bearer {manus_api_key}",
@@ -202,12 +207,11 @@ async def generate_pitch_deck_with_manus(
             "output_format": "pptx"
         }
         
-        response = requests.post(
-            f"{MANUS_API_URL}/tasks",
-            headers=headers,
-            json=payload,
-            timeout=120
-        )
+        if http is None:
+            async with httpx.AsyncClient() as client:
+                response = await client.post(f"{MANUS_API_URL}/tasks", headers=headers, json=payload, timeout=120)
+        else:
+            response = await http.post(f"{MANUS_API_URL}/tasks", headers=headers, json=payload, timeout=120)
         
         print(f"Manus Response Status: {response.status_code}")
         
@@ -264,9 +268,8 @@ Generate all 12 slides following Sequoia's style:
 """
     
     try:
-        response = await asyncio.to_thread(
-            gemini_client.models.generate_content,
-            model='gemini-2.0-flash',
+        response = await gemini_client.aio.models.generate_content(
+            model=settings.UTILITY_MODEL,
             contents=prompt,
             config=types.GenerateContentConfig(
                 response_mime_type="application/json",
