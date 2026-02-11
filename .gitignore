@@ -38,3 +38,12 @@ coverage/
 
 # Misc
 *.pem
+
+# Local model artifacts (make models), offline data, test output
+.models/
+.data/
+.next-offline/
+test-results/
+playwright-report/
+.pytest_cache/
+.ruff_cache/
