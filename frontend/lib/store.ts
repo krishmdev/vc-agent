@@ -123,6 +123,8 @@ export interface AppState {
   calculateGlobalProgress: () => number
   autofillFromMemories: () => Promise<void>
   isAutofilling: boolean
+  // Fill empty answers from a VC report's extraction ({ questionId: text })
+  autoFillModules: (extraction: Record<string, string>) => void
 }
 
 const defaultDashboardCards: DashboardCard[] = [
@@ -135,7 +137,7 @@ const defaultDashboardCards: DashboardCard[] = [
 
 export const useAppStore = create<AppState>()(
   persist(
-    (set) => ({
+    (set, get) => ({
       // Idea
       idea: "",
       setIdea: (idea) => set({ idea }),
@@ -328,7 +330,7 @@ export const useAppStore = create<AppState>()(
         }),
 
       calculateModuleProgress: (moduleId) => {
-        const state = useAppStore.getState()
+        const state = get()
         const module = state.modules[moduleId]
         const allQuestions = module.subsections
           .flatMap(s => s.questions)
@@ -340,12 +342,23 @@ export const useAppStore = create<AppState>()(
       },
 
       calculateGlobalProgress: () => {
-        const state = useAppStore.getState()
+        const state = get()
         const moduleIds: ModuleId[] = ['founder', 'problem', 'customer', 'product', 'market']
         const totalProgress = moduleIds.reduce((sum, id) => {
           return sum + state.modules[id].completionPercentage
         }, 0)
         return Math.round(totalProgress / moduleIds.length)
+      },
+
+      autoFillModules: (extraction) => {
+        const { modules, updateQuestion } = get()
+        for (const [questionId, value] of Object.entries(extraction || {})) {
+          if (!value || !value.trim()) continue
+          for (const [moduleId, module] of Object.entries(modules) as [ModuleId, Module][]) {
+            const question = module.subsections.flatMap((s) => s.questions).find((q) => q.id === questionId)
+            if (question && !question.value) updateQuestion(moduleId, questionId, value)
+          }
+        }
       },
 
       // Autofill from Mem0 memories
@@ -442,7 +455,7 @@ export const useAppStore = create<AppState>()(
     }),
     {
       name: "launchpad-storage-v2",
-      partialize: (state) => {
+      partialize: (state: AppState) => {
         // Exclude VC state from persistence so it resets on reload/restart
         const { vcReport, vcCallCompleted, vcMessages, ...rest } = state
         return rest

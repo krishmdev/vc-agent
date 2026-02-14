@@ -27,7 +27,7 @@ export default function InvestorMemoPage() {
     if (!module) return null
     
     for (const subsection of module.subsections) {
-      const question = subsection.questions.find(q => q.id === questionId)
+      const question = subsection.questions.find((q) => q.id === questionId)
       if (question && question.value) {
         if (Array.isArray(question.value)) return question.value.join(", ")
         return question.value
