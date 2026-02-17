@@ -125,3 +125,14 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  /* Superscript citation marker: [cite: 3] in reports, [n] in knowledge-base answers */
+  .cite-chip {
+    @apply relative -top-[0.45em] mx-px inline-flex h-4 min-w-4 items-center justify-center rounded-sm bg-primary/10 px-1 font-mono text-[0.65rem] leading-none font-medium text-primary no-underline transition-colors hover:bg-primary hover:text-primary-foreground;
+  }
+  /* A retrieved Sequoia source: podcast transcript or sequoiacap.com article */
+  .source-tag {
+    @apply inline-flex max-w-full items-center gap-1.5 rounded-md border border-border bg-background px-2 py-1 text-xs text-foreground/80;
+  }
+}
