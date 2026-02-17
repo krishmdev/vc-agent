@@ -13,6 +13,8 @@ import "@livekit/components-styles";
 import { Phone, PhoneOff, X, Headphones } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useAppStore } from "@/lib/store";
+import { OFFLINE } from "@/lib/mode";
+import { TextAgentChat } from "@/components/text-agent-chat";
 
 interface FloatingMentorButtonProps {
     className?: string;
@@ -66,9 +68,13 @@ export function FloatingMentorButton({ className }: FloatingMentorButtonProps) {
     const [error, setError] = useState<string | null>(null);
 
     // Generate a unique room name for this call
-    const roomName = `mentor-quickcall-${Date.now()}`;
+    const [roomName] = useState(() => `mentor-quickcall-${Date.now()}`);
 
     const handleConnect = async () => {
+        if (OFFLINE) {
+            setIsOpen(true);
+            return;
+        }
         setIsConnecting(true);
         setError(null);
 
@@ -108,6 +114,29 @@ export function FloatingMentorButton({ className }: FloatingMentorButtonProps) {
         console.error("Device error:", failure);
         setError(`Microphone error: ${failure?.toString() || "Unknown error"}`);
     }, []);
+
+    if (OFFLINE && isOpen) {
+        return (
+            <div
+                data-testid="mentor-chat-panel"
+                className={cn(
+                    "fixed bottom-4 left-4 right-4 z-50 sm:right-auto sm:left-6 sm:bottom-6",
+                    "sm:w-[420px] shadow-2xl rounded-2xl",
+                    "animate-in slide-in-from-bottom-4 fade-in duration-300",
+                    className
+                )}
+            >
+                <button
+                    onClick={handleDisconnect}
+                    className="absolute -top-3 -right-3 z-10 rounded-full border border-border bg-card p-1.5 shadow hover:bg-secondary"
+                    aria-label="Close mentor chat"
+                >
+                    <X className="w-4 h-4 text-muted-foreground" />
+                </button>
+                <TextAgentChat mode="mentor" idea={idea || undefined} compact className="h-[min(560px,calc(100vh-6rem))]" />
+            </div>
+        );
+    }
 
     // If expanded and connected, show the call UI
     if (isOpen && token && url) {
@@ -191,7 +220,7 @@ export function FloatingMentorButton({ className }: FloatingMentorButtonProps) {
                 isConnecting && "animate-pulse",
                 className
             )}
-            aria-label="Call mentor"
+            aria-label={OFFLINE ? "Chat with mentor" : "Call mentor"}
         >
             {isConnecting ? (
                 <div className="w-5 h-5 border-2 border-primary-foreground/30 border-t-primary-foreground rounded-full animate-spin" />

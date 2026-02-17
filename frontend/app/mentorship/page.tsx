@@ -9,6 +9,8 @@ import { StepIndicator } from "@/components/step-indicator"
 import { ResourceSidebar } from "@/components/resource-sidebar"
 import { useAppStore } from "@/lib/store"
 import { cn } from "@/lib/utils"
+import { OFFLINE } from "@/lib/mode"
+import { TextAgentChat } from "@/components/text-agent-chat"
 import {
   LiveKitRoom,
   useVoiceAssistant,
@@ -186,7 +188,7 @@ export default function MentorshipPage() {
   }, [roomName, idea])
 
   const startCall = useCallback(async () => {
-    await fetchToken()
+    if (!OFFLINE) await fetchToken()
     setCallActive(true)
     setCallDuration(0)
   }, [fetchToken])
@@ -260,7 +262,7 @@ export default function MentorshipPage() {
         {/* Center Content */}
         <div className="flex-1 flex flex-col items-center justify-center p-6 relative">
           {/* Idea context card */}
-          {idea && (
+          {idea && !(OFFLINE && callActive) && (
             <div 
               className={cn(
                 "absolute top-24 left-1/2 -translate-x-1/2 max-w-md w-full",
@@ -275,8 +277,14 @@ export default function MentorshipPage() {
           )}
 
           {/* Voice Interface */}
-          <div className="flex-1 flex items-center justify-center">
-            {callActive && !callEnded && token && wsUrl ? (
+          <div className="flex-1 flex items-center justify-center w-full">
+            {OFFLINE && callActive && !callEnded ? (
+              <TextAgentChat
+                mode="mentor"
+                idea={idea || undefined}
+                className="w-full max-w-2xl h-[min(600px,calc(100vh-14rem))]"
+              />
+            ) : callActive && !callEnded && token && wsUrl ? (
               <LiveKitRoom
                 token={token}
                 serverUrl={wsUrl}
@@ -316,7 +324,7 @@ export default function MentorshipPage() {
                 <div className="flex flex-col items-center gap-2">
                   <Phone className="w-12 h-12 text-primary/60" />
                   <span className="text-muted-foreground text-sm">
-                    {callEnded ? "Call ended" : "Ready to connect"}
+                    {callEnded ? "Call ended" : OFFLINE ? "Ready to chat" : "Ready to connect"}
                   </span>
                 </div>
               </div>
@@ -333,7 +341,7 @@ export default function MentorshipPage() {
                   className="gap-2 rounded-full px-8"
                 >
                   <Phone className="w-4 h-4" />
-                  Start Mentorship Call
+                  {OFFLINE ? "Start Mentor Chat" : "Start Mentorship Call"}
                 </Button>
               ) : (
                 <Button
@@ -343,7 +351,7 @@ export default function MentorshipPage() {
                   className="gap-2 rounded-full px-8"
                 >
                   <PhoneOff className="w-4 h-4" />
-                  End Call
+                  {OFFLINE ? "End Chat" : "End Call"}
                 </Button>
               )}
             </div>

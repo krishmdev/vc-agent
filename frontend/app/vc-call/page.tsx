@@ -6,7 +6,7 @@ import Link from "next/link"
 import { ArrowRight, Phone, PhoneOff, DollarSign } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { StepIndicator } from "@/components/step-indicator"
-import { useAppStore } from "@/lib/store"
+import { useAppStore, type VCReport } from "@/lib/store"
 import { cn } from "@/lib/utils"
 import {
   LiveKitRoom,
@@ -17,6 +17,8 @@ import {
 } from "@livekit/components-react"
 import "@livekit/components-styles"
 import { Loader2 } from "lucide-react"
+import { OFFLINE } from "@/lib/mode"
+import { TextAgentChat } from "@/components/text-agent-chat"
 
 function VoiceUI({ onStateChange }: { onStateChange?: (speaking: boolean) => void }) {
   const { state, audioTrack } = useVoiceAssistant()
@@ -121,8 +123,11 @@ export default function VcCallPage() {
     idea, 
     setIdea,
     setVcCallCompleted,
+    setVcReport,
+    autoFillModules,
     dashboardUnlocked 
   } = useAppStore()
+  const [reportRequested, setReportRequested] = useState(false)
 
   const [isVisible, setIsVisible] = useState(false)
   const [callActive, setCallActive] = useState(false)
@@ -176,7 +181,7 @@ export default function VcCallPage() {
   }, [roomName, idea])
 
   const startCall = useCallback(async () => {
-    await fetchToken()
+    if (!OFFLINE) await fetchToken()
     setCallActive(true)
     setCallDuration(0)
   }, [fetchToken])
@@ -240,7 +245,7 @@ export default function VcCallPage() {
         {/* Center Content */}
         <div className="flex-1 flex flex-col items-center justify-center p-6 relative">
           {/* Idea context card */}
-          {idea && (
+          {idea && !(OFFLINE && callActive) && (
             <div 
               className={cn(
                 "absolute top-24 left-1/2 -translate-x-1/2 max-w-md w-full",
@@ -258,8 +263,36 @@ export default function VcCallPage() {
           )}
 
           {/* Voice Interface */}
-          <div className="flex-1 flex items-center justify-center">
-            {callActive && !callEnded && token && wsUrl ? (
+          <div className="flex-1 flex flex-col items-center justify-center w-full gap-4">
+            {OFFLINE && callActive && !callEnded ? (
+              <>
+                <TextAgentChat
+                  mode="vc"
+                  idea={idea || undefined}
+                  reportRequested={reportRequested}
+                  onReport={(report) => {
+                    if (report) {
+                      const vcReport = report as unknown as VCReport
+                      setVcReport(vcReport)
+                      if (vcReport.extraction) autoFillModules(vcReport.extraction)
+                    }
+                    endCall()
+                    router.push("/dashboard")
+                  }}
+                  className="w-full max-w-2xl h-[min(560px,calc(100vh-16rem))]"
+                />
+                <Button
+                  onClick={() => setReportRequested(true)}
+                  variant="destructive"
+                  size="lg"
+                  disabled={reportRequested}
+                  className="gap-2 rounded-full px-8"
+                >
+                  {reportRequested ? <Loader2 className="w-4 h-4 animate-spin" /> : <PhoneOff className="w-4 h-4" />}
+                  End Pitch
+                </Button>
+              </>
+            ) : callActive && !callEnded && token && wsUrl ? (
               <LiveKitRoom
                 token={token}
                 serverUrl={wsUrl}
@@ -322,7 +355,7 @@ export default function VcCallPage() {
                   className="gap-2 rounded-full px-8 bg-indigo-600 hover:bg-indigo-700 text-white"
                 >
                   <Phone className="w-4 h-4" />
-                  Start VC Pitch
+                  {OFFLINE ? "Start Text Pitch" : "Start VC Pitch"}
                 </Button>
             </div>
           )}
