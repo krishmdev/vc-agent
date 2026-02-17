@@ -78,11 +78,11 @@ export default function DashboardPage() {
     if (!dashboardUnlocked) return;
 
     const getAnswer = (moduleId: ModuleId, questionIds: string[]) => {
-      const module = modules[moduleId];
-      if (!module) return null;
+      const mod = modules[moduleId];
+      if (!mod) return null;
 
       // Search through all subsections
-      for (const sub of module.subsections) {
+      for (const sub of mod.subsections) {
         for (const q of sub.questions) {
           if (questionIds.includes(q.id)) {
             // Return first non-empty value if found
@@ -409,7 +409,7 @@ export default function DashboardPage() {
                   Welcome to Your Product Dashboard
                 </h2>
                 <p className="text-muted-foreground">
-                  Select a module from the left sidebar to begin structuring your startup
+                  Select a mod from the left sidebar to begin structuring your startup
                   validation journey. Complete each section to build an investor-grade
                   narrative.
                 </p>

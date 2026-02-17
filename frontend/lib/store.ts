@@ -290,8 +290,8 @@ export const useAppStore = create<AppState>()(
 
       updateQuestion: (moduleId, questionId, value) =>
         set((state) => {
-          const module = state.modules[moduleId]
-          const updatedSubsections = module.subsections.map((subsection) => ({
+          const mod = state.modules[moduleId]
+          const updatedSubsections = mod.subsections.map((subsection) => ({
             ...subsection,
             questions: subsection.questions.map((question) =>
               question.id === questionId
@@ -331,8 +331,8 @@ export const useAppStore = create<AppState>()(
 
       calculateModuleProgress: (moduleId) => {
         const state = get()
-        const module = state.modules[moduleId]
-        const allQuestions = module.subsections
+        const mod = state.modules[moduleId]
+        const allQuestions = mod.subsections
           .flatMap(s => s.questions)
           .filter(q => q.type !== 'readonly')
         const completedQuestions = allQuestions.filter(q => q.completed)
@@ -354,8 +354,8 @@ export const useAppStore = create<AppState>()(
         const { modules, updateQuestion } = get()
         for (const [questionId, value] of Object.entries(extraction || {})) {
           if (!value || !value.trim()) continue
-          for (const [moduleId, module] of Object.entries(modules) as [ModuleId, Module][]) {
-            const question = module.subsections.flatMap((s) => s.questions).find((q) => q.id === questionId)
+          for (const [moduleId, mod] of Object.entries(modules) as [ModuleId, Module][]) {
+            const question = mod.subsections.flatMap((s) => s.questions).find((q) => q.id === questionId)
             if (question && !question.value) updateQuestion(moduleId, questionId, value)
           }
         }
@@ -404,13 +404,13 @@ export const useAppStore = create<AppState>()(
 
               // Directly update the state for each field
               set((state) => {
-                const module = state.modules[moduleId as ModuleId]
-                if (!module) {
+                const mod = state.modules[moduleId as ModuleId]
+                if (!mod) {
                   console.log(`[AUTOFILL] Module ${moduleId} not found`)
                   return state
                 }
 
-                const updatedSubsections = module.subsections.map((subsection) => ({
+                const updatedSubsections = mod.subsections.map((subsection) => ({
                   ...subsection,
                   questions: subsection.questions.map((question) =>
                     question.id === questionId

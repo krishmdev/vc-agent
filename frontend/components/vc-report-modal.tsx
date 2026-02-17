@@ -29,7 +29,7 @@ export function VCReportModal({ isOpen, onClose, report }: VCReportModalProps) {
             Sequoia Partner Feedback
           </DialogTitle>
           <DialogDescription>
-            A candid analysis of your pitch based on Sequoia's evaluation framework.
+            A candid analysis of your pitch based on Sequoia&apos;s evaluation framework.
           </DialogDescription>
         </DialogHeader>
 
@@ -42,7 +42,7 @@ export function VCReportModal({ isOpen, onClose, report }: VCReportModalProps) {
                 The Hard Truth (Diagnosis)
               </h3>
               <p className="text-indigo-800 dark:text-indigo-200 text-lg leading-relaxed font-medium">
-                "{report.diagnosis}"
+                &ldquo;{report.diagnosis}&rdquo;
               </p>
             </div>
 
@@ -51,7 +51,7 @@ export function VCReportModal({ isOpen, onClose, report }: VCReportModalProps) {
               <div>
                 <h3 className="text-sm font-semibold text-green-700 dark:text-green-400 uppercase tracking-wider mb-4 flex items-center gap-2">
                   <CheckCircle className="w-4 h-4" />
-                  What's Working (Strengths)
+                  What&apos;s Working (Strengths)
                 </h3>
                 <ul className="space-y-3">
                   {report.strengths.map((strength, i) => (
@@ -88,12 +88,12 @@ export function VCReportModal({ isOpen, onClose, report }: VCReportModalProps) {
             <div>
               <h3 className="text-sm font-semibold text-red-700 dark:text-red-400 uppercase tracking-wider mb-4 flex items-center gap-2">
                 <HelpCircle className="w-4 h-4" />
-                Unanswered "Terrifying Questions"
+                Unanswered &ldquo;Terrifying Questions&rdquo;
               </h3>
               <div className="grid gap-3">
                 {report.terrifyingQuestions.map((question, i) => (
                   <div key={i} className="bg-background border border-border p-4 rounded-lg shadow-sm">
-                    <p className="font-medium text-foreground">"{question}"</p>
+                    <p className="font-medium text-foreground">&ldquo;{question}&rdquo;</p>
                   </div>
                 ))}
               </div>

@@ -23,10 +23,10 @@ export default function InvestorMemoPage() {
 
   // Helper to get value securely
   const getValue = (moduleId: ModuleId, questionId: string) => {
-    const module = modules[moduleId]
-    if (!module) return null
+    const mod = modules[moduleId]
+    if (!mod) return null
     
-    for (const subsection of module.subsections) {
+    for (const subsection of mod.subsections) {
       const question = subsection.questions.find((q) => q.id === questionId)
       if (question && question.value) {
         if (Array.isArray(question.value)) return question.value.join(", ")

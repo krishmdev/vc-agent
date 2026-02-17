@@ -37,9 +37,9 @@ export function ModuleSidebar({ onModuleClick }: ModuleSidebarProps) {
       <nav className="flex-1 overflow-y-auto p-4">
         <div className="space-y-2">
           {moduleOrder.map((moduleId, index) => {
-            const module = modules[moduleId]
+            const mod = modules[moduleId]
             const isExpanded = expandedModuleId === moduleId
-            const IconComponent = (LucideIcons as any)[module.icon] || LucideIcons.Circle
+            const IconComponent = (LucideIcons as any)[mod.icon] || LucideIcons.Circle
 
             return (
               <button
@@ -74,14 +74,14 @@ export function ModuleSidebar({ onModuleClick }: ModuleSidebarProps) {
                           isExpanded ? "text-foreground" : "text-foreground/80"
                         )}
                       >
-                        {module.title}
+                        {mod.title}
                       </span>
-                      {module.completionPercentage === 100 && (
+                      {mod.completionPercentage === 100 && (
                         <LucideIcons.CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
                       )}
                     </div>
                     <p className="text-xs text-muted-foreground line-clamp-2 mb-2">
-                      {module.description}
+                      {mod.description}
                     </p>
 
                     {/* Progress Bar */}
@@ -90,15 +90,15 @@ export function ModuleSidebar({ onModuleClick }: ModuleSidebarProps) {
                         <div
                           className={cn(
                             "h-full transition-all duration-300 rounded-full",
-                            module.completionPercentage === 100
+                            mod.completionPercentage === 100
                               ? "bg-primary"
                               : "bg-primary/60"
                           )}
-                          style={{ width: `${module.completionPercentage}%` }}
+                          style={{ width: `${mod.completionPercentage}%` }}
                         />
                       </div>
                       <span className="text-xs font-medium text-muted-foreground shrink-0">
-                        {module.completionPercentage}%
+                        {mod.completionPercentage}%
                       </span>
                     </div>
                   </div>

@@ -62,7 +62,7 @@ export function ResearchResults({ isOpen, onClose, status, data, error }: Resear
                        Analysis Format Issue
                     </p>
                     <p className="text-xs opacity-90 mt-1">
-                      The research agent produced a response but it wasn't in the expected structured format. The raw analysis is shown below.
+                      The research agent produced a response but it wasn&apos;t in the expected structured format. The raw analysis is shown below.
                     </p>
                  </div>
                  <Card>
@@ -156,7 +156,7 @@ export function ResearchResults({ isOpen, onClose, status, data, error }: Resear
                      <CardTitle className="text-base text-primary">Revised Problem Statement</CardTitle>
                   </CardHeader>
                   <CardContent className="text-sm font-medium">
-                     "{data.refined_problem_statement}"
+                     &ldquo;{data.refined_problem_statement}&rdquo;
                   </CardContent>
                 </Card>
               </TabsContent>

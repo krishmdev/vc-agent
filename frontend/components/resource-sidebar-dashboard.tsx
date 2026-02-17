@@ -136,7 +136,7 @@ export function ResourceSidebarDashboard({ moduleId, activeQuestionId }: Resourc
       {/* Footer */}
       <div className="p-4 border-t border-border/50">
         <p className="text-xs text-muted-foreground leading-relaxed">
-          These resources are curated from Sequoia Capital's pitch deck guidance and
+          These resources are curated from Sequoia Capital&apos;s pitch deck guidance and
           investment framework
         </p>
       </div>

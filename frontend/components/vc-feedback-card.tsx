@@ -24,7 +24,7 @@ export function VCFeedbackCard({ report }: VCFeedbackCardProps) {
             The Hard Truth
           </h4>
           <p className="text-indigo-800 dark:text-indigo-200 text-lg leading-relaxed font-medium">
-            "{report.diagnosis}"
+            &ldquo;{report.diagnosis}&rdquo;
           </p>
         </div>
 
