@@ -209,7 +209,7 @@ export async function POST(request: NextRequest) {
         // We only call LLM if we have fields that weren't confidently matched
         // AND we have some memories to analyze.
         // Using Gemini instead of OpenAI to avoid rate limits
-        if (lowConfidenceFields.length > 0 && process.env.GEMINI_API_KEY) {
+        if (lowConfidenceFields.length > 0 && process.env.GEMINI_API_KEY && process.env.NEXT_PUBLIC_VC_AGENT_MODE !== 'offline') {
             console.log(`[EXTRACT-FIELDS] ⚠️ ${lowConfidenceFields.length} fields failed local match. Attempting Gemini extraction...`)
 
             // Limit to top 5 missing fields to save tokens/time if list is huge

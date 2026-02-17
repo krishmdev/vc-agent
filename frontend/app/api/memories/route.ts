@@ -1,9 +1,23 @@
 import { NextRequest, NextResponse } from 'next/server'
+import { AGENT_SERVICE_URL } from '@/lib/services'
 
 const MEM0_API_KEY = process.env.MEM0_API_KEY
 const MEM0_USER_ID = process.env.MEM0_USER_ID || 'sequoia-mentor-agent'
 
+// Offline mode reads the local SQLite store through the voice agent server instead of Mem0.
+async function offlineMemories() {
+    try {
+        const response = await fetch(`${AGENT_SERVICE_URL}/memories?user_id=${encodeURIComponent(MEM0_USER_ID)}`)
+        const data = await response.json()
+        return NextResponse.json({ memories: data.memories ?? [] })
+    } catch (error) {
+        return NextResponse.json({ memories: [], error: String(error) })
+    }
+}
+
 export async function GET(request: NextRequest) {
+    if (process.env.NEXT_PUBLIC_VC_AGENT_MODE === 'offline') return offlineMemories()
+
     console.log('[MEMORIES API] Starting fetch...')
     console.log('[MEMORIES API] MEM0_API_KEY present:', !!MEM0_API_KEY)
     console.log('[MEMORIES API] MEM0_USER_ID:', MEM0_USER_ID)

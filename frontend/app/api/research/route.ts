@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
-// Proxy to Python Backend
-const RESEARCH_SERVICE_URL = "http://127.0.0.1:8000";
+import { RESEARCH_SERVICE_URL } from "@/lib/services";
 
 export async function POST(req: NextRequest) {
   try {
