@@ -18,14 +18,31 @@ import {
   Maximize2,
   Minimize2
 } from "lucide-react"
-import ReactMarkdown from "react-markdown"
 import { Button } from "@/components/ui/button"
+import { MarkdownReport } from "@/components/markdown-report"
+import { OFFLINE } from "@/lib/mode"
+
+interface KbCitation {
+  n: number
+  source: string
+  type: string
+  url: string | null
+  snippet: string
+}
+
+interface StoredGuide {
+  content: string
+  citations: KbCitation[]
+}
+
+// Guides cite retrieved passages as [1], [2]; MarkdownReport links "[cite: n]" markers.
+const toCiteMarkers = (text: string) => text.replace(/\[(\d+(?:\s*,\s*\d+)*)\](?!\()/g, "[cite: $1]")
 
 // Storage key for persisting generated guides
 const GUIDES_STORAGE_KEY = 'sequoia-ai-guides'
 
-// Helper to load guides from localStorage
-const loadStoredGuides = (): Record<string, string> => {
+// Helper to load guides from localStorage (older entries are plain strings)
+const loadStoredGuides = (): Record<string, StoredGuide | string> => {
   try {
     const stored = localStorage.getItem(GUIDES_STORAGE_KEY)
     return stored ? JSON.parse(stored) : {}
@@ -35,7 +52,7 @@ const loadStoredGuides = (): Record<string, string> => {
 }
 
 // Helper to save guide to localStorage
-const saveGuide = (questionId: string, content: string) => {
+const saveGuide = (questionId: string, content: StoredGuide) => {
   try {
     const guides = loadStoredGuides()
     guides[questionId] = content
@@ -58,7 +75,8 @@ export function ResourceDrawer() {
   const [aiArticle, setAiArticle] = useState<string | null>(null)
   const [isGenerating, setIsGenerating] = useState(false)
   const [chatMessage, setChatMessage] = useState("")
-  const [chatHistory, setChatHistory] = useState<{ role: "user" | "model"; content: string }[]>([])
+  const [citations, setCitations] = useState<KbCitation[]>([])
+  const [chatHistory, setChatHistory] = useState<{ role: "user" | "model"; content: string; citations?: KbCitation[] }[]>([])
   const [isChatting, setIsChatting] = useState(false)
   const [showAiSection, setShowAiSection] = useState(false)
   const [error, setError] = useState<string | null>(null)
@@ -117,10 +135,13 @@ export function ResourceDrawer() {
       const storedGuide = storedGuides[activeResourceQuestionId]
 
       if (storedGuide) {
-        setAiArticle(storedGuide)
+        const guide = typeof storedGuide === "string" ? { content: storedGuide, citations: [] } : storedGuide
+        setAiArticle(guide.content)
+        setCitations(guide.citations)
         setShowAiSection(true)
       } else {
         setAiArticle(null)
+        setCitations([])
         setShowAiSection(false)
       }
     }
@@ -132,7 +153,7 @@ export function ResourceDrawer() {
     setIsGenerating(true)
     setError(null)
     try {
-      const response = await fetch("http://localhost:8000/generate_resource_article", {
+      const response = await fetch("/api/resource-article", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -154,11 +175,12 @@ export function ResourceDrawer() {
       }
 
       setAiArticle(data.content)
+      setCitations(data.citations ?? [])
       setShowAiSection(true)
 
       // Save to localStorage for persistence
       if (activeResourceQuestionId) {
-        saveGuide(activeResourceQuestionId, data.content)
+        saveGuide(activeResourceQuestionId, { content: data.content, citations: data.citations ?? [] })
       }
     } catch (e) {
       console.error("Error generating guide:", e)
@@ -178,12 +200,12 @@ export function ResourceDrawer() {
     setError(null)
 
     try {
-      const response = await fetch("http://localhost:8000/resource_chat", {
+      const response = await fetch("/api/resource-chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           message: userMsg,
-          history: chatHistory,
+          history: chatHistory.map(({ role, content }) => ({ role, content })),
           resource_context: aiArticle
         })
       })
@@ -199,7 +221,7 @@ export function ResourceDrawer() {
         throw new Error("No response received from server")
       }
 
-      setChatHistory(prev => [...prev, { role: "model", content: data.message }])
+      setChatHistory(prev => [...prev, { role: "model", content: data.message, citations: data.citations ?? [] }])
     } catch (e) {
       console.error("Error in chat:", e)
       setError(e instanceof Error ? e.message : "Failed to send message. Please try again.")
@@ -354,7 +376,7 @@ export function ResourceDrawer() {
                   <div className="space-y-2">
                     <h4 className="font-semibold">Generate Tactical Guide</h4>
                     <p className="text-sm text-muted-foreground max-w-sm mx-auto">
-                      Create a custom Sequoia-style guide for "{currentQuestion?.label || 'this topic'}"
+                      Create a custom Sequoia-style guide for &ldquo;{currentQuestion?.label || 'this topic'}&rdquo;
                     </p>
                   </div>
                   <Button onClick={generateAiGuide} disabled={isGenerating} className="mx-auto">
@@ -392,19 +414,12 @@ export function ResourceDrawer() {
                         Regenerate
                       </Button>
                     </div>
-                    <div className="prose prose-sm dark:prose-invert max-w-none
-                      prose-headings:text-foreground prose-headings:font-bold prose-headings:tracking-tight
-                      prose-h2:text-base prose-h2:mt-0 prose-h2:mb-4 prose-h2:border-b prose-h2:border-border/30 prose-h2:pb-2
-                      prose-h3:text-sm prose-h3:mt-5 prose-h3:mb-2
-                      prose-p:text-sm prose-p:leading-relaxed prose-p:mb-4 prose-p:text-muted-foreground
-                      prose-ul:text-sm prose-ul:my-3 prose-ul:space-y-2 prose-ul:list-none prose-ul:pl-0
-                      prose-li:my-0 prose-li:text-muted-foreground prose-li:pl-0
-                      prose-strong:text-foreground prose-strong:font-bold
-                      prose-em:text-muted-foreground prose-em:not-italic
-                      prose-code:text-xs prose-code:bg-muted prose-code:px-1 prose-code:py-0.5 prose-code:rounded">
-                      <ReactMarkdown>{aiArticle || ""}</ReactMarkdown>
+                    <div data-testid="kb-guide" className="text-sm">
+                      <MarkdownReport content={toCiteMarkers(aiArticle || "")} variant="compact" idPrefix="kb" />
                     </div>
                   </div>
+
+                  {citations.length > 0 && <KbSources citations={citations} idPrefix="kb" />}
 
                   {/* Chat History */}
                   {chatHistory.length > 0 && (
@@ -424,7 +439,12 @@ export function ResourceDrawer() {
                               ? "bg-primary text-primary-foreground rounded-tr-none"
                               : "bg-muted text-foreground rounded-tl-none"
                           )}>
-                            {msg.content}
+                            {msg.role === "user" ? msg.content : (
+                              <>
+                                <MarkdownReport content={toCiteMarkers(msg.content)} variant="compact" idPrefix={`kbc${i}`} className="[&_p:last-child]:mb-0" />
+                                {msg.citations && msg.citations.length > 0 && <KbSources citations={msg.citations} idPrefix={`kbc${i}`} dense />}
+                              </>
+                            )}
                           </div>
                         </div>
                       ))}
@@ -499,5 +519,34 @@ export function ResourceDrawer() {
         )}
       </div>
     </>
+  )
+}
+
+function KbSources({ citations, idPrefix, dense }: { citations: KbCitation[]; idPrefix: string; dense?: boolean }) {
+  return (
+    <section data-testid="kb-sources" aria-label="Sources from the Sequoia knowledge base" className={cn(dense ? "mt-3" : "rounded-xl border border-border bg-card p-4")}>
+      <h4 className="mb-2.5 flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+        <span>Sequoia knowledge base</span>
+        {!dense && OFFLINE && <span className="normal-case tracking-normal font-normal">local MiniLM index</span>}
+      </h4>
+      <ol className="space-y-2">
+        {citations.map((c) => (
+          <li key={c.n} id={`${idPrefix}-src-${c.n}`} className="flex scroll-mt-20 gap-2.5 rounded-lg p-1 target:bg-primary/10">
+            <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded bg-primary/10 font-mono text-[0.7rem] font-medium text-primary">{c.n}</span>
+            <div className="min-w-0 flex-1">
+              <div className="flex items-baseline gap-2">
+                {c.url ? (
+                  <a href={c.url} target="_blank" rel="noopener noreferrer" className="truncate text-sm font-medium text-foreground hover:text-primary">{c.source}</a>
+                ) : (
+                  <span className="truncate text-sm font-medium text-foreground">{c.source}</span>
+                )}
+                <span className="shrink-0 text-[0.7rem] text-muted-foreground">{c.type === "website" ? "sequoiacap.com" : "Podcast transcript"}</span>
+              </div>
+              {!dense && <p className="mt-0.5 line-clamp-2 text-xs text-muted-foreground">{c.snippet}</p>}
+            </div>
+          </li>
+        ))}
+      </ol>
+    </section>
   )
 }
