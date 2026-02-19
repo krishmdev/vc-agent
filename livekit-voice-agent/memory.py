@@ -6,10 +6,12 @@ Mem0's AsyncMemoryClient. LocalMemoryStore implements the same three calls on SQ
 offline mode.
 
 The one real difference: Mem0 runs an LLM over each message to extract facts, while the local
-store keeps the founder's own statements verbatim and ignores assistant turns. Search is a
-small BM25 over those statements.
+store keeps the founder's own statements verbatim and ignores assistant turns. Search ranks those
+statements by MiniLM cosine similarity (the same pinned local embedder as the knowledge base)
+plus a small BM25 term, so "pricing" finds "we charge $300 a month".
 """
 
+import array
 import asyncio
 import math
 import sqlite3
@@ -36,14 +38,22 @@ CREATE TABLE IF NOT EXISTS memories (
     user_id TEXT NOT NULL,
     memory TEXT NOT NULL,
     role TEXT NOT NULL,
-    created_at REAL NOT NULL
+    created_at REAL NOT NULL,
+    embedding BLOB
 );
 CREATE INDEX IF NOT EXISTS memories_user ON memories(user_id, created_at);
 """
 
 
+# Minimum MiniLM cosine for a memory to match when no query term overlaps. Short topical queries
+# ("pricing", "first customers") score about 0.2-0.4 against a multi-clause founder statement;
+# unrelated queries score below 0.
+MIN_SIMILARITY = 0.2
+
+
 class LocalMemoryStore:
-    def __init__(self, path: Path | str) -> None:
+    def __init__(self, path: Path | str, embedder=None) -> None:
+        self.embedder = embedder
         self.path = Path(path)
         self.path.parent.mkdir(parents=True, exist_ok=True)
         with self._connect() as db:
@@ -75,9 +85,12 @@ class LocalMemoryStore:
                 if exists:
                     continue
                 mem_id = str(uuid.uuid4())
+                vector = None
+                if self.embedder is not None:
+                    vector = array.array("f", self.embedder.embed_query(text)).tobytes()
                 db.execute(
-                    "INSERT INTO memories VALUES (?, ?, ?, ?, ?)",
-                    (mem_id, user_id, text, "user", time.time()),
+                    "INSERT INTO memories VALUES (?, ?, ?, ?, ?, ?)",
+                    (mem_id, user_id, text, "user", time.time(), vector),
                 )
                 results.append({"id": mem_id, "memory": text, "event": "ADD"})
         return {"results": results}
@@ -94,8 +107,9 @@ class LocalMemoryStore:
         with self._connect() as db:
             rows = db.execute("SELECT * FROM memories WHERE user_id = ?", (user_id,)).fetchall()
         q = set(tokens(query))
-        if not rows or not q:
+        if not rows or not (q or self.embedder):
             return {"results": []}
+        qvec = self.embedder.embed_query(query) if self.embedder is not None else None
         docs = [tokens(r["memory"]) for r in rows]
         avg_len = sum(len(d) for d in docs) / len(docs) or 1.0
         df = {t: sum(1 for d in docs if t in d) for t in q}
@@ -109,8 +123,12 @@ class LocalMemoryStore:
                     continue
                 idf = math.log(1 + (len(docs) - df[t] + 0.5) / (df[t] + 0.5))
                 score += idf * tf * (k1 + 1) / (tf + k1 * (1 - b + b * len(doc) / avg_len))
-            if score > 0:
-                scored.append((score, row["created_at"], row))
+            similarity = 0.0
+            if qvec is not None and row["embedding"]:
+                mvec = array.array("f", row["embedding"])
+                similarity = sum(a * b for a, b in zip(qvec, mvec))  # both unit-normalized
+            if score > 0 or similarity >= MIN_SIMILARITY:
+                scored.append((similarity + 0.1 * score, row["created_at"], row))
         scored.sort(key=lambda s: (s[0], s[1]), reverse=True)
         return {"results": [self._row(r, s) for s, _, r in scored[:limit]]}
 
@@ -127,7 +145,9 @@ class LocalMemoryStore:
 def make_memory_store() -> MemoryStore | None:
     """Offline: SQLite. Live: Mem0 cloud if MEM0_API_KEY is set, otherwise memory is off."""
     if config.OFFLINE or config.MEMORY_BACKEND == "local":
-        return LocalMemoryStore(config.MEMORY_DB)
+        from embeddings import MiniLMEmbedder
+
+        return LocalMemoryStore(config.MEMORY_DB, embedder=MiniLMEmbedder())
     api_key = config.key("MEM0_API_KEY")
     if not api_key:
         return None

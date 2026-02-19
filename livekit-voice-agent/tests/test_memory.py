@@ -39,3 +39,14 @@ async def test_persists_across_instances(tmp_path):
     path = tmp_path / "mem.sqlite3"
     await LocalMemoryStore(path).add([{"role": "user", "content": "Pricing is usage based."}], user_id="u")
     assert (await LocalMemoryStore(path).get_all(user_id="u"))["results"][0]["memory"] == "Pricing is usage based."
+
+
+async def test_semantic_search_matches_without_shared_words(tmp_path):
+    from embeddings import MiniLMEmbedder
+
+    store = LocalMemoryStore(tmp_path / "sem.sqlite3", embedder=MiniLMEmbedder())
+    await store.add([{"role": "user", "content": "We plan to charge each clinic $300 a month."}], user_id="u")
+    await store.add([{"role": "user", "content": "My cofounder used to run a dog shelter."}], user_id="u")
+    found = await store.search("pricing", user_id="u")
+    assert found["results"][0]["memory"] == "We plan to charge each clinic $300 a month."
+    assert (await store.search("quantum cryptography research", user_id="u"))["results"] == []
