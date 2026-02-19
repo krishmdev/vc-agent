@@ -104,4 +104,7 @@ async def my_agent(ctx: agents.JobContext):
 
 
 if __name__ == "__main__":
+    if config.OFFLINE:
+        # Refuse before cli.run_app registers the worker with LiveKit Cloud.
+        raise SystemExit("agent.py is the live LiveKit worker; in offline mode run `uvicorn server:app` instead.")
     agents.cli.run_app(server)

@@ -92,3 +92,13 @@ def test_embedder_families_live_side_by_side(tmp_path):
 def test_missing_index_says_how_to_build(tmp_path):
     with pytest.raises(rag.IndexNotBuilt, match="make index"):
         rag.KnowledgeBase(ToyEmbedder(slug="minilm-l6-v2"), db_path=tmp_path).search("x")
+
+
+def test_search_follows_a_generation_swap_by_another_process(tmp_path):
+    emb = ToyEmbedder()
+    rag.build_generation(emb, *corpus(tag="old"), db_path=tmp_path, progress=lambda *_: None)
+    kb = rag.KnowledgeBase(emb, db_path=tmp_path)
+    assert " old " in kb.search("airbnb", top_k=1)[0].text
+    # A rebuild (e.g. `make index-offline` while the server runs) deletes the cached collection.
+    rag.build_generation(emb, *corpus(tag="new"), db_path=tmp_path, progress=lambda *_: None)
+    assert " new " in kb.search("airbnb", top_k=1)[0].text

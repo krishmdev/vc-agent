@@ -159,16 +159,26 @@ class KnowledgeBase:
     def count(self) -> int:
         return self._active().count()
 
-    def search(self, query: str, top_k: int = 4) -> list[Hit]:
+    def _query(self, vector: list[float], top_k: int):
         collection = self._active()
         n = min(top_k, collection.count())
         if n == 0:
+            return None
+        return collection.query(query_embeddings=[vector], n_results=n, include=["documents", "metadatas", "distances"])
+
+    def search(self, query: str, top_k: int = 4) -> list[Hit]:
+        vector = self.embedder.embed_query(query)
+        try:
+            res = self._query(vector, top_k)
+        except Exception as exc:
+            # An ingest in another process may have swapped the pointer and deleted the collection
+            # we had cached. Re-read the pointer once. (Still: run ingest with services stopped.)
+            if "does not exist" not in str(exc) and "not found" not in str(exc).lower():
+                raise
+            self._collection = self._collection_name = None
+            res = self._query(vector, top_k)
+        if res is None:
             return []
-        res = collection.query(
-            query_embeddings=[self.embedder.embed_query(query)],
-            n_results=n,
-            include=["documents", "metadatas", "distances"],
-        )
         hits = []
         for doc, meta, dist in zip(res["documents"][0], res["metadatas"][0], res["distances"][0]):
             meta = meta or {}
