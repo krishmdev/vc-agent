@@ -26,7 +26,7 @@ if not OFFLINE:
 
 DIAGNOSTICS = os.environ.get("VC_AGENT_DIAGNOSTICS") == "1"
 
-# The voice agent's HTTP server owns the Sequoia knowledge base (Chroma + embedder).
+# The voice-agent package owns the knowledge base (Chroma + embedder); its server.py serves it.
 KB_SERVICE_URL = os.environ.get("KB_SERVICE_URL", "http://127.0.0.1:8001").rstrip("/")
 
 FRONTEND_ORIGINS = [

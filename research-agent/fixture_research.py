@@ -14,6 +14,7 @@ from pathlib import Path
 
 import settings
 from research_providers import ProgressFn, ResearchError
+from prompts import prompt_sha256
 from textutil import best_sentences, jaccard
 
 FOLLOW_UP_MATCH = 0.5
@@ -59,16 +60,21 @@ class FixtureResearchProvider:
             settings.FIXTURE_REPLAY_SECONDS if replay_seconds is None else replay_seconds
         )
 
-    def select(self, context: str) -> tuple[Fixture, bool]:
+    def select(self, context: str, prompt: str | None = None) -> tuple[Fixture, str]:
+        """Pick a recording. The match is "exact" only when the prompt the app built hashes to the
+        recorded prompt; "same_idea" when the idea matches but other context (dashboard answers,
+        history) differs; otherwise "nearest" by word overlap with the idea."""
         idea = idea_from_context(context)
         for fx in self.fixtures:
             if _normalize(fx.idea) == _normalize(idea):
-                return fx, True
+                if prompt is not None and prompt_sha256(prompt) == fx.data["prompt_sha256"]:
+                    return fx, "exact"
+                return fx, "same_idea"
         best = max(self.fixtures, key=lambda fx: jaccard(fx.idea, idea))
-        return best, False
+        return best, "nearest"
 
     async def deep_research(self, prompt: str, *, context: str, on_progress: ProgressFn) -> str:
-        fx, exact = self.select(context)
+        fx, match = self.select(context, prompt)
         data = fx.data
         window = max(self.replay_seconds, 0.0)
 
@@ -86,15 +92,18 @@ class FixtureResearchProvider:
             on_progress("running", entry["note"])
         await asyncio.sleep(max(window - elapsed, 0.0))
 
-        if exact:
+        recorded = f"recorded on {data['recorded_at'][:10]} with `{data['agent']}`"
+        if match == "exact":
+            banner = f"> Offline mode: replaying the exact deep-research recording for this prompt, {recorded}."
+        elif match == "same_idea":
             banner = (
-                f"> Offline mode: replaying a deep-research report recorded on "
-                f"{data['recorded_at'][:10]} with `{data['agent']}`."
+                f"> Offline mode: same idea, different context. This is the report {recorded} for the "
+                "idea alone; your dashboard answers were not part of that run."
             )
         else:
             banner = (
-                "> Offline mode: there is no recording for this exact idea, so this is the recorded "
-                f"report for the closest sample idea: \"{fx.idea}\"."
+                "> Offline mode: there is no recording for this idea, so this is the recorded report "
+                f"for the closest sample idea: \"{fx.idea}\"."
             )
         return f"{banner}\n\n{data['report']}"
 

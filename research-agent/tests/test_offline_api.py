@@ -72,7 +72,7 @@ def test_research_replays_through_queued_running_completed(client):
     assert final["status"] == "completed" and final["provider"] == "fixture"
     assert "running" in seen
     assert final["progress"][-1] == fx.data["progress"][-1]["note"]  # recorded notes replayed in order
-    assert final["content"].startswith("> Offline mode: replaying a deep-research report recorded on")
+    assert final["content"].startswith("> Offline mode: replaying the exact deep-research recording for this prompt")
     assert fx.data["report"] in final["content"]
 
     follow = client.post(
@@ -81,6 +81,13 @@ def test_research_replays_through_queued_running_completed(client):
     answer, _ = poll(client, follow["task_id"])
     assert answer["kind"] == "follow_up"
     assert answer["content"] == fx.data["follow_ups"][0]["answer"]
+
+
+def test_same_idea_with_extra_context_is_not_labelled_exact(client):
+    fx = FIXTURES[1]
+    start = client.post("/chat", json={"message": FIRST_MESSAGE, "idea": fx.idea, "customer": "Hardware teams in Shenzhen"}).json()
+    final, _ = poll(client, start["task_id"])
+    assert final["content"].startswith("> Offline mode: same idea, different context.")
 
 
 def test_unknown_idea_uses_the_closest_recording_and_says_so(client):

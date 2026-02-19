@@ -5,8 +5,10 @@ searches), so only run this when the fixtures need refreshing:
 
     cd research-agent && uv run python scripts/record_research_fixtures.py [--only SLUG] [--force]
 
-The prompt is built exactly the way the app builds its first research turn, and its sha256 is
-stored so the replay can tell an exact recording from a nearest-idea fallback.
+The prompt is built exactly the way the app builds its first research turn for an idea with no
+dashboard answers yet, and its sha256 is stored. The replay labels a run "exact" only when the
+app's prompt hashes to the same value; the same idea with extra context is labelled as such, and
+any other idea falls back to the nearest sample with a banner saying so.
 """
 
 import argparse

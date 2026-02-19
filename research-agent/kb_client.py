@@ -1,8 +1,9 @@
-"""Client for the Sequoia knowledge base served by the voice agent (livekit-voice-agent/server.py).
+"""Client for the Sequoia knowledge base, served over HTTP by livekit-voice-agent/server.py.
 
-The voice agent process owns the Chroma collections and the embedder, so the research agent
-never loads an embedding model or touches Chroma directly. Which collection answers (OpenAI
-embeddings in live mode, local MiniLM in offline mode) is decided by that process.
+The voice-agent package owns the Chroma collections and the embedder; its server.py and the
+LiveKit worker (agent.py) both read them in-process. The research agent never loads an
+embedding model or touches Chroma. Which collection answers (OpenAI embeddings in live mode,
+local MiniLM offline) is decided by the voice-agent server's mode.
 """
 
 from dataclasses import dataclass
