@@ -1,7 +1,11 @@
 import { AccessToken } from "livekit-server-sdk";
 import { NextRequest, NextResponse } from "next/server";
+import { isOffline } from "@/lib/services";
 
 export async function GET(request: NextRequest) {
+  if (isOffline()) {
+    return NextResponse.json({ error: "Voice calls are off in offline mode; use the text chat." }, { status: 409 });
+  }
   const room = request.nextUrl.searchParams.get("room");
   const username = request.nextUrl.searchParams.get("username");
   const startupIdea = request.nextUrl.searchParams.get("idea");

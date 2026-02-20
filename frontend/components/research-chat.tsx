@@ -128,6 +128,11 @@ export function ResearchChat({ isOpen, onClose, initialContext }: ResearchChatPr
     const tick = async () => {
       try {
         const res = await fetch(`/api/research?taskId=${currentTaskId}&action=status`)
+        if (res.status >= 400 && res.status < 500) {
+          // The task no longer exists (tasks live in memory; a restart drops them).
+          if (!cancelled) fail("Research was interrupted, so the task is gone. Start it again.")
+          return
+        }
         if (!res.ok) throw new Error(`status ${res.status}`)
         const data = await res.json()
         if (cancelled) return

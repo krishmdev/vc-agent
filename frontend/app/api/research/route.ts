@@ -38,11 +38,9 @@ export async function GET(req: NextRequest) {
 
     try {
         const response = await fetch(`${RESEARCH_SERVICE_URL}/chat/status/${taskId}`);
-        if (!response.ok) {
-             throw new Error(`Service error: ${response.statusText}`);
-        }
-        const data = await response.json();
-        return NextResponse.json(data);
+        const data = await response.json().catch(() => ({ detail: response.statusText }));
+        // Pass the status through: a 404 means the task is gone (e.g. the agent restarted).
+        return NextResponse.json(data, { status: response.status });
     } catch (error: any) {
         console.error("Polling Error:", error);
         return NextResponse.json({ error: "Failed to poll status" }, { status: 500 });

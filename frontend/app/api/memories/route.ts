@@ -1,5 +1,5 @@
-import { NextRequest, NextResponse } from 'next/server'
-import { AGENT_SERVICE_URL } from '@/lib/services'
+import { NextResponse } from 'next/server'
+import { AGENT_SERVICE_URL, isOffline } from '@/lib/services'
 
 const MEM0_API_KEY = process.env.MEM0_API_KEY
 const MEM0_USER_ID = process.env.MEM0_USER_ID || 'sequoia-mentor-agent'
@@ -15,8 +15,8 @@ async function offlineMemories() {
     }
 }
 
-export async function GET(request: NextRequest) {
-    if (process.env.NEXT_PUBLIC_VC_AGENT_MODE === 'offline') return offlineMemories()
+export async function GET() {
+    if (isOffline()) return offlineMemories()
 
     console.log('[MEMORIES API] Starting fetch...')
     console.log('[MEMORIES API] MEM0_API_KEY present:', !!MEM0_API_KEY)
