@@ -1,0 +1,81 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  python:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: "0.9.28"
+      - run: cd livekit-voice-agent && uv sync --frozen
+      - run: cd research-agent && uv sync --frozen
+      - name: Pinned models (models.lock)
+        run: make models
+      - name: Ruff
+        run: research-agent/.venv/bin/ruff check .
+      - name: Tests (sockets disabled except localhost, no keys)
+        run: make test
+
+  frontend:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: cd frontend && npm ci --no-audit --no-fund
+      - run: cd frontend && npx eslint . && npx tsc --noEmit
+      - name: Live build
+        run: cd frontend && npx next build
+      - name: Offline build
+        run: cd frontend && NEXT_PUBLIC_VC_AGENT_MODE=offline NEXT_DIST_DIR=.next-offline npx next build
+
+  offline-index:
+    # Network-allowed setup: fetch the pinned MiniLM files and embed the 11,741 chunks.
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: "0.9.28"
+      - run: cd livekit-voice-agent && uv sync --frozen
+      - run: make models
+      - run: make index-offline
+      - run: tar -czf offline-index.tgz livekit-voice-agent/chroma_db
+      - uses: actions/upload-artifact@v4
+        with:
+          name: offline-index
+          path: offline-index.tgz
+          retention-days: 7
+
+  e2e-offline:
+    needs: offline-index
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: offline-index
+      - run: tar -xzf offline-index.tgz && rm offline-index.tgz
+      - run: docker build -t vc-agent-e2e -f ci/e2e.Dockerfile ci
+      - name: Setup phase (network allowed)
+        run: docker run --rm -v "$PWD:/work" vc-agent-e2e make deps models build-offline
+      - name: Runtime phase (--network none, no keys)
+        run: docker run --rm --network none -v "$PWD:/work" vc-agent-e2e make e2e-offline
+      - name: Companion check (network allowed, canaries must connect)
+        run: docker run --rm -v "$PWD:/work" vc-agent-e2e make egress-companion
+      - if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: |
+            frontend/playwright-report
+            frontend/test-results
