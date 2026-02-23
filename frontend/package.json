@@ -69,6 +69,7 @@
   "devDependencies": {
     "@playwright/test": "1.63.0",
     "@tailwindcss/postcss": "^4.1.9",
+    "@types/dom-mediacapture-record": "1.0.22",
     "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",
