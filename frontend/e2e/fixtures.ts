@@ -4,7 +4,7 @@ const LOCAL = new Set(["127.0.0.1", "localhost"])
 
 // Browser-side egress block: anything that isn't localhost is aborted and recorded.
 export const test = base.extend<{ blockedRequests: string[] }>({
-  blockedRequests: async ({ context }, use) => {
+  blockedRequests: async ({ context }, provide) => {
     const blocked: string[] = []
     await context.route("**/*", (route) => {
       const url = new URL(route.request().url())
@@ -12,7 +12,7 @@ export const test = base.extend<{ blockedRequests: string[] }>({
       blocked.push(url.href)
       return route.abort()
     })
-    await use(blocked)
+    await provide(blocked)
   },
 })
 
