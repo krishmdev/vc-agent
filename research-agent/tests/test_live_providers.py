@@ -56,5 +56,6 @@ async def test_gemini_guide_prompt_includes_numbered_passages():
     out = await writer.write_guide("How do I find early users?", passages)
     assert out.endswith("[1].")
     assert "[1] Airbnb (transcript)\nThey met hosts in person." in seen["contents"]
+    assert seen["config"].tools is None  # Search would drop the [n] citations
     assert citations_for(passages)[0]["snippet"] == "They met hosts in person."
     assert sources_block([]) == ""

@@ -68,12 +68,13 @@ class GeminiGuideWriter:
         self.model = model
 
     async def write_guide(self, question: str, passages: list[Passage]) -> str:
+        # With the Google Search tool attached, Gemini drops the [n] citations to our excerpts
+        # (checked 2026-03-01), so Search is only used when the knowledge base returned nothing.
+        tools = None if passages else [types.Tool(google_search=types.GoogleSearch())]
         response = await self._client.aio.models.generate_content(
             model=self.model,
             contents=build_guide_prompt(question, sources_block(passages)),
-            config=types.GenerateContentConfig(
-                tools=[types.Tool(google_search=types.GoogleSearch())],
-            ),
+            config=types.GenerateContentConfig(tools=tools),
         )
         if not response.text:
             raise RuntimeError("Failed to generate content")

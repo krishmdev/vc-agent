@@ -236,9 +236,11 @@ def build_guide_prompt(question: str, sources_block: str) -> str:
 
         {sources_block}
 
-        Ground the guide in these excerpts wherever they apply. When a sentence uses one, put its
-        number in square brackets right after it, e.g. [2]. Name the founder or company when you
-        use their story. Only use the numbers listed above.
+        Ground the guide in these excerpts wherever they apply and name the founder or company
+        when you use their story. CITATIONS ARE REQUIRED: every sentence or bullet that draws on an
+        excerpt must end with that excerpt's number in square brackets, for example
+        "Clay's founders sold to the first users by hand [2]." Use at least two different
+        excerpts, and only the numbers listed above.
         """
     return f"""
         You are a Sequoia Capital partner creating an authoritative, tactical guide on: "{question}"
@@ -303,5 +305,5 @@ def build_guide_prompt(question: str, sources_block: str) -> str:
         Better: [specific, quantifiable example]
 
         {grounding}
-        **OUTPUT:** Return ONLY the formatted content. Start with **Core Principle** immediately.
+        **OUTPUT:** Return ONLY the formatted content. Start with **Core Principle** immediately.{" Keep the [n] citations." if sources_block else ""}
         """
