@@ -70,7 +70,10 @@ async def fetch_initial_memories(limit: int = 10, timeout: float = 2.0) -> str |
     if not store:
         return None
     try:
-        memories = await asyncio.wait_for(store.get_all(user_id=MEM0_USER_ID, limit=limit), timeout=timeout)
+        # Mem0's v2 API rejects get_all without filters (HTTP 400); the local store ignores them.
+        memories = await asyncio.wait_for(
+            store.get_all(user_id=MEM0_USER_ID, limit=limit, filters={"user_id": MEM0_USER_ID}), timeout=timeout
+        )
     except asyncio.TimeoutError:
         logger.warning("[MEM0] Initial fetch timed out - proceeding without priming")
         return None
