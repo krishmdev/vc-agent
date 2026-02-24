@@ -27,7 +27,13 @@ def overlap_score(query_tokens: set[str], text: str) -> float:
     return distinct + hits / (len(toks) + 5)
 
 
+_MARKUP = re.compile(r">>|^#+\s*|\*\*|__|\[(?:Music|Applause|Laughter)\]", re.MULTILINE | re.IGNORECASE)
+
+
 def sentences(text: str) -> list[str]:
+    # Transcripts carry caption speaker marks (">>") and articles carry markdown; neither reads
+    # well inside a quote.
+    text = _MARKUP.sub(" ", text)
     text = re.sub(r"\s+", " ", text).strip()
     return [s.strip() for s in _SENTENCE_SPLIT.split(text) if s.strip()]
 
@@ -37,8 +43,9 @@ def best_sentences(
 ) -> list[str]:
     q = set(tokens(query))
     candidates = [s for s in sentences(text) if min_len <= len(s) <= max_len]
-    ranked = sorted(candidates, key=lambda s: overlap_score(q, s), reverse=True)
-    return ranked[:k]
+    scored = [(overlap_score(q, s), s) for s in candidates]
+    ranked = sorted((pair for pair in scored if pair[0] > 0), key=lambda pair: pair[0], reverse=True)
+    return [s for _, s in ranked[:k]]
 
 
 def jaccard(a: str, b: str) -> float:

@@ -130,6 +130,8 @@ class ExtractiveGuideWriter:
             if not sents:
                 continue
             quote = sents[1] if i == lead_n and len(sents) > 1 else sents[0]
+            if lead and quote == lead[0]:
+                continue
             lines.append(f"- **{_short(passages[i - 1].source)}:** \"{quote}\" [{i}]")
         lines += [
             "",

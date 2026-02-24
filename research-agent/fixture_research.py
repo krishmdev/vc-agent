@@ -83,9 +83,15 @@ class FixtureResearchProvider:
         on_progress("running", f"Deep research started ({data['agent']}, recorded {data['recorded_at'][:10]})")
 
         duration = max(float(data.get("duration_s") or 1.0), 1.0)
+        progress = data.get("progress", [])
+        # Polling the interactions API only returns the thought/search steps once the run is done,
+        # so recorded notes all carry the completion time. Then there's no timing to replay and the
+        # notes are spread evenly instead.
+        timed = len({entry["t"] for entry in progress}) > 1
         elapsed = window * 0.1
-        for entry in data.get("progress", []):
-            target = window * 0.1 + window * 0.85 * min(float(entry["t"]) / duration, 1.0)
+        for i, entry in enumerate(progress):
+            share = float(entry["t"]) / duration if timed else (i + 1) / (len(progress) + 1)
+            target = window * 0.1 + window * 0.85 * min(share, 1.0)
             if target > elapsed:
                 await asyncio.sleep(target - elapsed)
                 elapsed = target

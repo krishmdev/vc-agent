@@ -98,7 +98,7 @@ def test_unknown_idea_uses_the_closest_recording_and_says_so(client):
 
 
 def test_guide_is_grounded_in_kb_passages_with_citations(client):
-    body = client.post("/generate_resource_article", json={"question": "How do I find my first customers?", "module": "customer"}).json()
+    body = client.post("/generate_resource_article", json={"question": "How do founders find their first customers in person?", "module": "customer"}).json()
     assert body["writer"] == "extractive"
     assert body["embedder_id"] == "local-onnx/test/-/384/p0"
     assert [c["n"] for c in body["citations"]] == [1, 2]
