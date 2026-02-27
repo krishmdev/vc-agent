@@ -11,53 +11,8 @@
     "held": true,
     "holder": "planetary-fabric",
     "pid": 60965,
-    "cmd": [
-      "bash",
-      "-c",
-      "cd /Users/krish/Developer/portfolio/planetary-health && KEEP=1 scripts/run-e2e.sh > .data/run1.log 2>&1; echo \"E2E_EXIT=$?\" >> .data/run1.log; while [ -f .data/hold ]; do sleep 5; done"
-    ],
     "started": "2026-03-01T13:30:41-0400"
   },
-  "docker_ps": [
-    "compassionate_curie\thyperledger/fabric-ccenv:3.1\tUp 10 seconds",
-    "summerand-pipeline-demo-1\tsummerand-pipeline-demo\tUp 13 seconds",
-    "summerand-api-demo-1\tsummerand-api-demo\tUp 13 seconds",
-    "summerand-postgres-1\tpostgres:16\tUp 25 seconds (healthy)",
-    "summerand-redpanda-1\tredpandadata/redpanda:v26.2.3\tUp 25 seconds (healthy)",
-    "orderer2.example.com\thyperledger/fabric-orderer:latest\tUp 4 hours",
-    "orderer4.example.com\thyperledger/fabric-orderer:latest\tUp 4 hours",
-    "peer0.org2.example.com\thyperledger/fabric-peer:latest\tUp 4 hours",
-    "peer0.org1.example.com\thyperledger/fabric-peer:latest\tUp 4 hours",
-    "orderer.example.com\thyperledger/fabric-orderer:latest\tUp 4 hours",
-    "orderer3.example.com\thyperledger/fabric-orderer:latest\tUp 4 hours",
-    "ca_org1\thyperledger/fabric-ca:latest\tUp 4 hours",
-    "ca_orderer\thyperledger/fabric-ca:latest\tUp 4 hours",
-    "ca_org2\thyperledger/fabric-ca:latest\tUp 4 hours",
-    "leasing-edge-1\talpine/socat:1.8.0.3\tUp 15 hours",
-    "leasing-postgres-1\tpostgres:17.11-alpine\tUp 15 hours (healthy)",
-    "leasing-mailpit-1\taxllent/mailpit:v1.31.2\tUp 15 hours (healthy)",
-    "creative-ai-local-postgres-1\tpostgres:16\tUp 3 weeks (healthy)"
-  ],
-  "top_cpu": [
-    "PID  %CPU %MEM COMM",
-    "24526 536.9 10.7 /System/Library/Frameworks/Virtualization.framework/Versions/A/XPCServices/com.apple.Virtualization.VirtualMachine.xpc/Contents/MacOS/com.apple.Virtualization.VirtualMachine",
-    "81400  75.6  0.5 /opt/homebrew/Cellar/python@3.11/3.11.13/Frameworks/Python.framework/Versions/3.11/Resources/Python.app/Contents/MacOS/Python",
-    "81409  58.6  0.4 /opt/homebrew/Cellar/python@3.11/3.11.13/Frameworks/Python.framework/Versions/3.11/Resources/Python.app/Contents/MacOS/Python",
-    "33318  27.7  1.2 /System/Library/PrivateFrameworks/MediaAnalysis.framework/Versions/A/mediaanalysisd",
-    "80488  14.1  0.1 /System/Library/PrivateFrameworks/XprotectFramework.framework/Versions/A/XPCServices/XprotectService.xpc/Contents/MacOS/XprotectService",
-    "79117  12.0  0.7 /Applications/ChatGPT.app/Contents/Frameworks/Codex Framework.framework/Versions/152.0.7977.83/Helpers/Codex (Renderer).app/Contents/MacOS/Codex (Renderer)",
-    "95384   9.4  0.4 /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Support/mds_stores"
-  ],
-  "top_mem": [
-    "PID  %CPU %MEM COMM",
-    "24526 536.9 10.7 /System/Library/Frameworks/Virtualization.framework/Versions/A/XPCServices/com.apple.Virtualization.VirtualMachine.xpc/Contents/MacOS/com.apple.Virtualization.VirtualMachine",
-    "45263   7.0  2.2 claude",
-    " 7836   3.7  1.3 /Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
-    "33318  27.7  1.1 /System/Library/PrivateFrameworks/MediaAnalysis.framework/Versions/A/mediaanalysisd",
-    "80801   3.3  0.8 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/152.0.7977.83/Helpers/Google Chrome Helper (Renderer).app/Contents/MacOS/Google Chrome Helper (Renderer)",
-    "79117  12.0  0.7 /Applications/ChatGPT.app/Contents/Frameworks/Codex Framework.framework/Versions/152.0.7977.83/Helpers/Codex (Renderer).app/Contents/MacOS/Codex (Renderer)",
-    "81328   0.0  0.6 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/152.0.7977.83/Helpers/Google Chrome Helper (Renderer).app/Contents/MacOS/Google Chrome Helper (Renderer)"
-  ],
   "extra": {
     "runs": "live research, guides, mem0, livekit voice, offline e2e",
     "research_agent": "deep-research-pro-preview-12-2025",
