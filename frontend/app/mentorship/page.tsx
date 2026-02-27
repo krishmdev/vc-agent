@@ -236,7 +236,9 @@ export default function MentorshipPage() {
           </Link>
 
           {/* Step Indicator */}
-          <StepIndicator steps={steps} />
+          <div className="hidden sm:block">
+            <StepIndicator steps={steps} />
+          </div>
 
           {/* Call status */}
           <div className="flex items-center gap-3">
@@ -260,7 +262,7 @@ export default function MentorshipPage() {
         )}
       >
         {/* Center Content */}
-        <div className="flex-1 flex flex-col items-center justify-center p-6 relative">
+        <div className="flex-1 min-w-0 flex flex-col items-center justify-center p-4 sm:p-6 relative">
           {/* Idea context card */}
           {idea && !(OFFLINE && callActive) && (
             <div 

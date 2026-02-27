@@ -117,7 +117,7 @@ export function MarkdownReport({ content, variant = "report", idPrefix = "r", cl
   return (
     <div className={cn("text-[0.95rem]", className)}>
       {sections.length > 1 && (
-        <nav aria-label="Report sections" className="sticky top-0 z-10 -mx-1 mb-6 flex gap-1.5 overflow-x-auto bg-card/95 px-1 py-2 backdrop-blur">
+        <nav aria-label="Report sections" className="sticky -top-4 z-10 -mx-5 mb-6 flex gap-1.5 overflow-x-auto border-b border-border bg-card px-5 py-2.5 md:-top-6 md:-mx-7 md:px-7">
           {sections.map((s) => (
             <a
               key={s}
