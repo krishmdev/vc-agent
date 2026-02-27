@@ -1,0 +1,22 @@
+{
+  "backend": "AsyncMemoryClient",
+  "user_id": "vc-agent-smoke-1790162841",
+  "add": {
+    "results": [
+      {
+        "message": "Memory processing has been queued for background execution",
+        "status": "PENDING",
+        "event_id": "1c18130e-f07b-43e2-bb36-63ec0f75a4df"
+      }
+    ],
+    "relations": []
+  },
+  "add_s": 0.63,
+  "get_all_memories": [
+    "User plans to charge each veterinary clinic $300 per month for the software"
+  ],
+  "search_pricing": [
+    "User plans to charge each veterinary clinic $300 per month for the software"
+  ],
+  "cleaned_up": true
+}

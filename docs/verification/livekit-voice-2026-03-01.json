@@ -1,0 +1,37 @@
+{
+  "room": "smoke-1790180346",
+  "mode": "mentor",
+  "voice_model": "gemini-2.5-flash-native-audio-preview-12-2025",
+  "agent_joined_s": 10.57,
+  "first_agent_audio_s": 41.26,
+  "agent_audio_seconds_before_question": 0.0,
+  "agent_audio_seconds_total": 27.6,
+  "question_sent_at_s": 12.33,
+  "transcripts": [
+    {
+      "t": 16.53,
+      "from": "smoke-founder",
+      "final": "true",
+      "text": "HI"
+    },
+    {
+      "t": 23.19,
+      "from": "smoke-founder",
+      "final": "true",
+      "text": "building practice management software for independent vet clinic."
+    },
+    {
+      "t": 31.79,
+      "from": "smoke-founder",
+      "final": "true",
+      "text": "How did the find its first customers and what should I learn from that?"
+    },
+    {
+      "t": 75.34,
+      "from": "agent-AJ_LXbv8xtZvvaw",
+      "final": "true",
+      "text": "Hey! Interesting space with your vertical SaaS for vet clinics. You know, Airbnb's journey is classic Sequoia thinking. When they started, there was this temptation to just expand to hotels, like traditional online travel sites. But co-founder Brian Chesky focused on a \"differentiated product\" and a \"niche category.\" He asked: \"Why do you deserve to exist?\" That clarity is what matters. So, for your vet software, who is the single most painful customer persona, and what \"hair-on-fire\" problem are you 10x better at solving than the competition?"
+    }
+  ],
+  "note": "Only final transcript segments kept; the founder audio is macOS say output of a fixed question."
+}

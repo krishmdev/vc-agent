@@ -1,0 +1,30 @@
+{
+  "chat_response_ms": 48.9,
+  "idea": "A subscription service that refurbishes and leases used lab equipment to early-stage biotech startups.",
+  "statuses": [
+    "queued",
+    "running",
+    "completed"
+  ],
+  "provider": "gemini",
+  "elapsed_s": 202.2,
+  "max_progress_notes_seen": 12,
+  "health_probes": 41,
+  "health_ms_median": 19.8,
+  "health_ms_max": 314.0,
+  "report_chars": 19711,
+  "report_has_market_assessment": true,
+  "error": null,
+  "guide": {
+    "ms": 12436,
+    "writer": "gemini",
+    "embedder_id": "local-onnx/all-MiniLM-L6-v2/1110a243fdf4/384/pe3a7a5f4",
+    "citations": [
+      "Building the Sales \u2018System of Action\u2019 with AI ft Clay\u2019s Kareem Amin",
+      "Why Businesses Are Rejecting the AI They\u2019ve Asked For ft Agency CEO Elias Torres",
+      "Clay\u2019s Kareem Amin on Building the Sales \u2018System of Action\u2019 with AI",
+      "How AI is Reinventing Software Business Models ft. Bret Taylor of Sierra"
+    ],
+    "cites_used": []
+  }
+}

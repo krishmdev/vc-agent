@@ -1,105 +1,67 @@
-# Launchpad — Voice Agent (Sequoia Startup Mentor)
+# Launchpad voice agent
 
-A real‑time voice AI that acts as a **Sequoia Capital partner**, drawing wisdom
-from 100+ Sequoia podcast transcripts and articles. It runs two personas — a warm
-**mentor** and a skeptical **VC** — grounded in a RAG knowledge base and backed by
-long‑term memory. Part of the [Launchpad](../README.md) platform.
+The Sequoia mentor and VC personas, their tools, the knowledge base, and long-term memory. Part
+of [Launchpad](../README.md).
 
-Built with **LiveKit Agents**, **Google Gemini Live** (native audio), **ChromaDB**,
-and **Mem0**.
+Two entry points share the same agent code (`mentor.py`, `personas.py`):
 
-## Features
+- `agent.py` is the LiveKit worker. It runs a real-time voice session on Gemini native audio
+  (`gemini-2.5-flash-native-audio-preview-12-2025`; voice Puck for the mentor, Kore for the VC),
+  with no separate STT/TTS. An earlier hackathon version used GPT-4o, AssemblyAI and Cartesia;
+  none of that is used any more.
+- `server.py` (port 8001) serves `POST /kb/search` for the research agent, `GET /memories`, and
+  `WS /ws/chat`. The WebSocket is a text transport that runs the same `Assistant` and tools
+  inside a livekit-agents `AgentSession`: a scripted LLM (`scripted_llm.py`) in offline mode,
+  Gemini Flash as a text model in live mode.
 
-- **Real‑time voice** via **Gemini Live** (`gemini-2.5-flash-native-audio-preview-12-2025`)
-  — native speech in/out, low latency, no separate STT/TTS stack.
-- **Two personas** (selected via LiveKit room metadata):
-  - **Mentor** (voice: *Puck*) — relaxed but sharp; always grounds advice in a real
-    story from the knowledge base.
-  - **VC** (voice: *Kore*) — runs a high‑stakes pitch simulation and delivers a
-    pass/fail verdict.
-- **RAG** (`search_knowledge_base` tool) — semantic search over a **ChromaDB**
-  vector store built from Sequoia transcripts + scraped articles, embedded with
-  **OpenAI `text-embedding-3-small`**.
-- **Long‑term memory** (`recall_memory` tool) — **Mem0** stores meaningful things
-  the founder says across sessions and primes each new call with prior context.
-- **Post‑call VC report** — on request, summarizes the pitch into a structured
-  report (`gemini-2.0-flash-lite-preview-02-05`) and POSTs it to the frontend at
-  `http://localhost:3000/api/vc-report`.
+## Tools and memory
 
-## Prerequisites
+- `search_knowledge_base` does semantic search over the Sequoia collection (`rag.py`). The query
+  runs in a thread so it doesn't block the audio loop.
+- `recall_memory` searches long-term memory. Sessions are also primed with recent memories, and
+  meaningful founder turns are written back. The backend comes from `memory.make_memory_store()`:
+  Mem0 cloud in live mode (`MEM0_API_KEY`), or `LocalMemoryStore` (SQLite, same
+  `add` / `get_all` / `search` calls) offline or with `VC_AGENT_MEMORY=local`.
+- The post-call VC report is written by `gemini-2.5-flash-lite` in live mode, or assembled from
+  the founder's own sentences offline (`offline_report.py`). It's posted to the frontend's
+  `/api/vc-report`.
 
-- **Python 3.13+**
-- **[uv](https://docs.astral.sh/uv/)** for dependency management
-- A **LiveKit Cloud** project
-- API keys: **Gemini** (voice + reports), **OpenAI** (RAG embeddings), **Mem0**
-  (optional — memory)
+## Knowledge base
 
-## Setup
-
-### 1. Install
+`data/` holds 116 Sequoia podcast transcripts and `sequoia_data.json` (scraped sequoiacap.com
+pages). `ingest.py` cleans them, dedupes repeated pages, and chunks them (2,000 characters with
+400 overlap, 11,741 chunks).
 
 ```bash
 uv sync
+uv run python model_store.py fetch        # all-MiniLM-L6-v2 at the revision in ../models.lock
+uv run python ingest.py --embedder local  # offline collection, no network
+uv run python ingest.py --embedder openai # text-embedding-3-small, needs OPENAI_API_KEY
 ```
 
-### 2. Configure environment
+Each build is a new collection tagged with its `embedder_id`, made active by an atomic pointer
+swap once every chunk is embedded. A failed build is deleted. Queries against a collection built
+by another embedder are refused. Stop the servers before rebuilding.
 
-Create `.env.local` here (or use the shared `.env.local` at the repo root — both
-are loaded):
-
-```env
-LIVEKIT_URL=wss://your-project.livekit.cloud
-LIVEKIT_API_KEY=your-api-key
-LIVEKIT_API_SECRET=your-api-secret
-
-GEMINI_API_KEY=your-gemini-key      # real-time audio + report generation
-OPENAI_API_KEY=your-openai-key      # ChromaDB embeddings (RAG)
-MEM0_API_KEY=your-mem0-key          # optional; long-term memory
-```
-
-> If `MEM0_API_KEY` is omitted, the agent still runs — memory features are simply
-> disabled.
-
-### 3. Build the knowledge base
-
-The Sequoia source data ships in `data/` (100+ `.txt` transcripts + `sequoia_data.json`).
-Run the ingestion script once to chunk, embed, and index it into ChromaDB
-(`chroma_db/` is created locally and git‑ignored):
+## Run
 
 ```bash
-uv run ingest.py
+uv run uvicorn server:app --port 8001   # KB search + text chat (needed in both modes)
+uv run agent.py dev                      # LiveKit worker (live mode only; refuses offline)
+uv run agent.py console                  # talk to it in the terminal
 ```
 
-### 4. Run the agent
+Env (`.env.local` here or at the repo root; ignored in offline mode): `LIVEKIT_URL`,
+`LIVEKIT_API_KEY`, `LIVEKIT_API_SECRET`, `GEMINI_API_KEY`, `OPENAI_API_KEY` (OpenAI collection),
+`MEM0_API_KEY`, plus `KB_EMBEDDER=openai|local`.
 
-```bash
-uv run agent.py dev        # run as a LiveKit worker (used by the web app)
-# or
-uv run agent.py console    # talk to it directly in your terminal
-```
+## Tests
 
-## Project structure
+`uv run pytest` (sockets disabled except localhost). Covers the local memory store, index
+generations (including a provider failure halfway through a build, and a swap by another
+process), and the text transport end to end: knowledge-base citation, memory stored in one
+conversation and recalled in the next, and the VC report.
 
-- `agent.py` — agent logic, mentor/VC personas, memory + RAG tools, Gemini Live
-  session, and post‑call report generation.
-- `rag.py` — ChromaDB client + semantic `search()` over the `knowledge_base` collection.
-- `ingest.py` — cleans, chunks (2000/400), and indexes `data/` into ChromaDB.
-- `data/` — Sequoia podcast transcripts and `sequoia_data.json` (scraped articles).
-
-## How it works
-
-1. **Ingestion** — `ingest.py` cleans transcripts/articles, splits them into
-   overlapping chunks, and indexes them in ChromaDB using OpenAI embeddings.
-2. **Session start** — the web app mints a LiveKit token embedding
-   `{ startupIdea, agentMode }`; the agent reads it to pick the persona and voice,
-   and primes context from Mem0.
-3. **Per turn** — the agent retrieves relevant Sequoia insights via RAG and recalls
-   prior context via Mem0, then responds in Gemini Live's native voice. Meaningful
-   user statements are written back to Mem0.
-4. **VC report** — when the client sends a `generate_report` data message, the
-   agent produces a structured report (diagnosis, strengths, gaps, "terrifying
-   questions", next steps, extracted fields) and POSTs it to the dashboard.
-
-> **History note:** an earlier version of this agent used OpenAI GPT‑4o with
-> AssemblyAI (STT) and Cartesia (TTS). The current implementation uses **Gemini
-> Live** for native real‑time audio; OpenAI is now used only for RAG embeddings.
+`scripts/voice_smoke.py` is the live headless check: it joins a LiveKit room as a founder,
+plays a WAV question, and records the agent's audio and transcriptions. See
+[docs/verification.md](../docs/verification.md).

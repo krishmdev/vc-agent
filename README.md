@@ -1,429 +1,286 @@
-# 🚀 Launchpad
+# Launchpad (VC Agent)
 
-**A platform to help prefounders become founders.**
+**A platform to help prefounders become founders.** Won first place at Brown Hacks 2026.
 
-Launchpad is an AI‑guided startup‑validation studio built around Sequoia Capital's
-evaluation methodology. It walks an aspiring founder from a raw idea to an
-investor‑ready story through a voice mentorship call, a structured 5‑tier
-validation dashboard, live market research, customer discovery, a simulated VC
-pitch, and a printable investment memo — all powered by a fleet of AI agents.
+Launchpad is a startup-validation studio built around Sequoia Capital's evaluation methodology.
+It takes an aspiring founder from a raw idea to an investor-ready story through a mentorship
+conversation with an AI Sequoia partner, a 5-tier validation dashboard, deep market research,
+customer discovery, a simulated VC pitch, and a printable investment memo.
 
-> Built at Brown Hacks 2026.
+The mentor and the VC are real-time voice agents: LiveKit with Gemini native audio, grounded in
+a ChromaDB index of Sequoia podcast transcripts and articles, with long-term memory in Mem0. The
+market research is a FastAPI service driving Gemini's Deep Research agent. Everything also runs
+in an offline mode with no keys and no network, which is how the tests and CI exercise it.
 
-## 🎥 Demo
+Demo walkthrough: **[Loom](https://www.loom.com/share/8702524fdef44b14936edce3c784a8de)**
 
-Watch a walkthrough of Launchpad: **[Loom demo »](https://www.loom.com/share/8702524fdef44b14936edce3c784a8de)**
-
----
-
-## Table of contents
-
-- [Demo](#-demo)
-- [What it does](#what-it-does)
-- [The Sequoia validation framework](#the-sequoia-validation-framework)
-- [Architecture](#architecture)
-- [The user journey](#the-user-journey)
-- [Repository layout](#repository-layout)
-- [The three services](#the-three-services)
-  - [1. Frontend (Next.js)](#1-frontend-nextjs)
-  - [2. Research Agent (FastAPI)](#2-research-agent-fastapi)
-  - [3. LiveKit Voice Agent](#3-livekit-voice-agent)
-- [Getting started](#getting-started)
-- [Environment variables](#environment-variables)
-- [API reference](#api-reference)
-- [Tech stack](#tech-stack)
-- [Notes & caveats](#notes--caveats)
-
----
+| Research report (offline replay) | Mentor chat, offline text mode |
+|---|---|
+| ![Research panel with a replayed deep-research report and citation links](docs/screenshots/research-report.png) | ![Mentor chat on a phone, answering with a Sequoia knowledge-base citation](docs/screenshots/mentor-chat-mobile.png) |
 
 ## What it does
 
-Launchpad turns the intimidating "how do I know if my idea is any good?" problem
-into a guided, opinionated workflow. Instead of a blank pitch‑deck template, it
-gives founders:
-
-- 🎙️ **A voice mentor** — talk to an AI Sequoia partner that grounds its advice in
-  real founder stories (Airbnb, Nvidia, Stripe‑era PayPal, DoorDash, and 100+
-  "Crucible Moments" / "Training Data" podcast transcripts).
-- 🧭 **A validation dashboard** — 5 tiers × 4 questions modeled on how top‑tier
-  investors actually pressure‑test an early company.
-- 🔬 **Deep market research** — an autonomous research agent that produces a
-  sourced, investor‑grade market assessment and answers follow‑ups.
-- 🎯 **Customer discovery** — automatically finds B2C communities (Reddit) or B2B
-  leads (Apollo.io) matching your ideal customer profile.
-- 🧠 **Memory‑driven auto‑fill** — insights spoken during voice calls are stored
-  in long‑term memory and used to auto‑populate dashboard fields.
-- 🦈 **A VC pitch simulator** — pitch a skeptical AI partner, then receive a blunt
-  post‑call report (diagnosis, strengths, gaps, "terrifying questions", next steps).
-- 📄 **An investment memo & pitch deck** — compile everything into a printable
-  Sequoia‑style memo and a generated 12‑slide deck.
-
----
+- **Mentor call.** Talk to an AI Sequoia partner that grounds its advice in real founder stories
+  (Airbnb, DoorDash, Nvidia, and 100+ *Crucible Moments* and *Training Data* transcripts). It
+  searches the knowledge base on every turn and remembers what you told it in earlier calls.
+- **Validation dashboard.** 5 tiers of 4 questions each, modeled on how investors pressure-test
+  an early company. Each question has a resource drawer with curated Sequoia reading and an AI
+  guide that cites the knowledge-base passages it used.
+- **Deep market research.** The first turn runs Gemini's Deep Research agent (about 3 to 6
+  minutes) and returns a sourced market assessment; follow-ups use Gemini Flash with Search.
+- **Customer discovery.** Finds B2C communities (Reddit) or B2B leads (Apollo) for your ideal
+  customer profile.
+- **Memory-driven autofill.** What you say in calls is stored in long-term memory and mapped onto
+  the dashboard fields.
+- **VC pitch simulator.** Pitch a skeptical partner, then get a post-call report (diagnosis,
+  strengths, gaps, unanswered "terrifying questions", next steps) that also fills in the
+  dashboard.
+- **Investment memo and pitch deck.** Everything compiles into a printable memo and a generated
+  12-slide deck.
 
 ## The Sequoia validation framework
 
-The dashboard is organized into five tiers, each with four probing questions
-(defined in `frontend/lib/dashboard-data.ts`):
+The dashboard is organized into five tiers, each with four questions
+(`frontend/lib/dashboard-data.ts`):
 
 | Tier | Module | Focus |
 |-----:|--------|-------|
-| **1** | **Right to Exist** (founder) | Unique insight, why *you*, why *now*, commitment |
-| **2** | **Problem Urgency** (problem) | Hair‑on‑fire problem, current workarounds, cost of inaction |
-| **3** | **Customer Clarity** (customer) | High‑expectation customer, reachability, buyer vs. user |
-| **4** | **Solution Differentiation** (product) | Eureka moment, different‑not‑just‑better, the wedge |
-| **5** | **Business Viability** (market) | Willingness to pay, path to revenue, defensibility, plan to win |
-
-Progress is tracked per‑module and globally, and the answers feed the research
-agent, the investor memo, and the pitch deck generator.
-
----
+| 1 | Right to Exist (founder) | Unique insight, why you, why now, commitment |
+| 2 | Problem Urgency (problem) | Hair-on-fire problem, current workarounds, cost of inaction |
+| 3 | Customer Clarity (customer) | High-expectation customer, reachability, buyer vs. user |
+| 4 | Solution Differentiation (product) | Eureka moment, different not just better, the wedge |
+| 5 | Business Viability (market) | Willingness to pay, path to revenue, defensibility, plan to win |
 
 ## Architecture
 
-Launchpad is a three‑service system: a Next.js frontend, a Python FastAPI
-research backend, and a Python LiveKit voice agent. Multiple AI providers sit
-behind them (Google Gemini, OpenAI embeddings, Mem0, plus Reddit / Apollo /
-Manus data APIs).
-
 ```mermaid
-graph TD
-    User([Founder])
+graph LR
+    User([Founder]) --> FE
 
-    subgraph Frontend["Frontend — Next.js 16 · :3000"]
-        Pages["Pages: / · /mentorship · /dashboard · /vc-call · /investor-memo"]
-        APIRoutes["API routes: /api/token · /api/research · /api/customer-reachout · /api/vc-report · /api/memories · /api/extract-fields"]
-        Store["Zustand persisted store"]
+    subgraph FE["Next.js 16 frontend :3000"]
+        Pages["/ · /mentorship · /dashboard · /vc-call · /investor-memo"]
+        Routes["API routes: token, research, resource-article, memories, vc-report, ..."]
     end
 
-    subgraph Research["Research Agent — FastAPI · :8000"]
-        Chat["/chat (deep research + fast chat)"]
-        Reach["/customer-reachout (B2C/B2B)"]
-        Resource["/generate_resource_article · /resource_chat"]
-        Slides["/generate-slides"]
+    subgraph RA["Research agent (FastAPI) :8000"]
+        Chat["/chat + /chat/status: task polling"]
+        Guides["/generate_resource_article: KB-grounded guides"]
+        Reach["/customer-reachout · /generate-slides"]
     end
 
-    subgraph Voice["LiveKit Voice Agent — Python worker"]
-        Persona["Mentor / VC personas (Gemini Live)"]
-        RAG["RAG over Sequoia knowledge base (ChromaDB)"]
+    subgraph VA["Voice agent package (livekit-voice-agent)"]
+        Worker["agent.py: LiveKit worker, Gemini native audio"]
+        Server["server.py :8001: KB search, text chat, memories"]
+        Core["mentor.py + personas.py: Assistant, tools, memory capture"]
+        KB[("ChromaDB: Sequoia KB, one collection per embedder")]
     end
 
-    LiveKitCloud[["LiveKit Cloud"]]
-    Gemini[["Google Gemini"]]
-    OpenAI[["OpenAI embeddings"]]
-    Mem0[["Mem0 memory"]]
-    DataAPIs[["Reddit · Apollo · Manus"]]
-
-    User --> Pages
-    Pages --> Store
-    Pages --> APIRoutes
-
-    APIRoutes -->|proxy| Chat
-    APIRoutes -->|proxy| Reach
-    APIRoutes -->|mint JWT| LiveKitCloud
-    APIRoutes --> Mem0
-    APIRoutes --> Gemini
-
-    Pages -->|WebRTC audio| LiveKitCloud
-    LiveKitCloud <--> Voice
-
-    Chat --> Gemini
-    Reach --> Gemini
-    Reach --> DataAPIs
-    Resource --> Gemini
-    Slides --> Gemini
-    Slides --> DataAPIs
-
-    Persona --> Gemini
-    RAG --> OpenAI
-    Voice --> Mem0
-    Voice -->|POST report| APIRoutes
+    Routes -->|proxy| Chat
+    Routes -->|proxy| Guides
+    Guides -->|httpx| Server
+    Pages -->|WebRTC audio| LK[["LiveKit Cloud"]]
+    LK <--> Worker
+    Pages -. offline: WebSocket text chat .-> Server
+    Worker --> Core
+    Server --> Core
+    Core --> KB
+    Core --> Mem[["Mem0 (live) / SQLite (offline)"]]
+    Chat --> Gem[["Gemini Deep Research / Flash"]]
+    Worker --> GemLive[["Gemini native audio"]]
 ```
 
----
+- The **frontend** mints LiveKit tokens with `{startupIdea, agentMode}` in the metadata, proxies
+  the research agent, and long-polls for the VC report.
+- The **research agent** runs long jobs as tracked asyncio tasks. `/chat` returns a `task_id`
+  right away, and `/chat/status/{id}` reports `queued`, `running` (with progress notes),
+  `completed` or `failed`. All provider calls are async: `google-genai`'s `client.aio`, `httpx`
+  for Apollo and Manus, and PRAW in the threadpool.
+- The **voice-agent package** owns the knowledge base. The LiveKit worker and `server.py` both
+  use the same `Assistant` class, persona prompts and tools (`search_knowledge_base`,
+  `recall_memory`). `server.py` also serves `/kb/search`, which the research agent's guides use,
+  and a text-chat WebSocket that runs the agent inside a real livekit-agents `AgentSession`.
+- **Knowledge base.** 116 transcripts and 635 deduplicated sequoiacap.com pages, chunked into
+  11,741 chunks of 2,000 characters with 400 overlap. Each index build is a new Chroma collection
+  tagged with its `embedder_id` (`provider/model/revision/dim/preprocessing-hash`). A pointer
+  file is swapped atomically only after every chunk is embedded, and queries refuse a collection
+  built by a different embedder, so OpenAI and MiniLM vectors never mix.
 
-## The user journey
+## Live mode and offline mode
 
-1. **Idea (`/`)** — the founder types their startup idea. It's saved to the store
-   and the dashboard is unlocked. *"Step 1 of 4: Clarify your idea."*
-2. **Mentorship call (`/mentorship`)** — a real‑time voice conversation with an AI
-   Sequoia mentor. Advice is grounded in the RAG knowledge base and insights are
-   saved to long‑term memory.
-3. **Dashboard (`/dashboard`)** — the hub. Answer the 5‑tier framework, and from
-   here launch:
-   - **Deep research** on your problem space,
-   - **Customer reach‑out** (B2C communities or B2B leads),
-   - **Sync Voice Chat** to auto‑fill fields from your call memories,
-   - **AI resource guides** for any question,
-   - the **VC pitch call**.
-4. **VC pitch (`/vc-call`)** — pitch a skeptical AI partner. On "End Pitch" the
-   agent generates a candid report that is displayed *and* used to auto‑fill
-   dashboard fields.
-5. **Investor memo (`/investor-memo`)** — everything compiles into a printable,
-   confidential‑style investment memo. (A 12‑slide pitch deck can also be
-   generated via the research backend.)
+`VC_AGENT_MODE` picks the providers at startup. Offline mode never reads provider keys, doesn't
+load `.env` files in the Python services, and makes no network calls.
 
----
+| | Live (`VC_AGENT_MODE=live`, default) | Offline (`VC_AGENT_MODE=offline`) |
+|---|---|---|
+| Deep research | Gemini `deep-research-pro-preview-12-2025` | `FixtureResearchProvider`: replays one of 3 recorded real runs through the same task/status flow, with a banner saying whether it's the exact recorded prompt, the same idea with different context, or the nearest sample idea |
+| Research follow-ups | `gemini-2.5-flash` + Google Search | the recorded follow-up if the question matches, else sentences quoted from the report |
+| KB embeddings | OpenAI `text-embedding-3-small` collection (`KB_EMBEDDER=local` also works) | local `all-MiniLM-L6-v2` (ONNX, pinned by revision and sha256 in `models.lock`) |
+| Resource guides | Gemini writing from the retrieved passages with `[n]` citations; Google Search only when the KB returns nothing | extractive: quoted, cited sentences from the retrieved passages |
+| Memory | Mem0 cloud (`AsyncMemoryClient`) | `LocalMemoryStore`: SQLite with the same `add` / `get_all` / `search` calls, ranked by MiniLM similarity |
+| Mentor / VC conversation | LiveKit voice, Gemini native audio | text chat panel over a WebSocket to `server.py`, same `Assistant` and tools inside an `AgentSession`, driven by a scripted LLM |
+| Customer reach-out, pitch deck | Reddit / Apollo / Manus + Gemini | turned off, with a message saying so |
+
+The frontend picks its widgets from `NEXT_PUBLIC_VC_AGENT_MODE`, which Next inlines at build
+time, so offline builds go to `frontend/.next-offline`. Server routes also check
+`VC_AGENT_MODE` at runtime and fail closed (`/api/token` returns 409 offline).
+
+## Quickstart (offline, no keys)
+
+Needs `uv` (0.9), Node 22 with npm, and `make`.
+
+```bash
+make setup           # network needed once: locked deps, Chromium, pinned MiniLM into .models/, offline build
+make index-offline   # embed the knowledge base locally (about 4.5 minutes on an M1 Pro)
+make demo            # http://127.0.0.1:3000
+```
+
+Try one of the three recorded sample ideas (listed in
+`research-agent/scripts/record_research_fixtures.py`), for example *"Practice-management
+software for independent veterinary clinics that automates appointment reminders, inventory
+reordering, and pet-insurance claims."*
+
+Tests:
+
+```bash
+make test lint       # pytest with sockets disabled (except localhost), ruff, eslint, tsc
+make e2e-offline     # Playwright: journey + egress canaries (run inside a network sandbox)
+```
+
+The e2e is only meaningful with the network actually blocked. Its egress spec asks each backend
+process type (the Next.js server, the research agent, the voice-agent server) to connect to
+external hosts from inside itself, and fails if any connection succeeds. In CI it runs in a
+`--network none` container (`.github/workflows/ci.yml`, `ci/e2e.Dockerfile`). On macOS, wrap
+the whole process tree with `sandbox-exec`, using a profile that denies `network-outbound`
+except `localhost`. `make egress-companion` runs the same probes unsandboxed and expects them to
+connect, which shows the check isn't vacuous. Results are in
+[docs/verification.md](docs/verification.md).
+
+## Live setup
+
+```bash
+cp .env.template .env.local      # fill in the keys (also read by the frontend from frontend/.env.local)
+make setup
+make index-live                  # OpenAI embeddings, about $0.11; or run with KB_EMBEDDER=local
+zsh start.sh                     # frontend :3000, research agent :8000, KB server :8001, LiveKit worker
+```
+
+`start.sh` expects `uv` and `npm` on your `PATH` and runs uvicorn without `--reload`. Stop the
+services before rebuilding an index; queries retry once after a swap, but a rebuild isn't
+meant to happen under load.
+
+### Environment variables
+
+| Variable | Used by | Purpose |
+|----------|---------|---------|
+| `LIVEKIT_URL`, `LIVEKIT_API_KEY`, `LIVEKIT_API_SECRET` | frontend token route, voice agent | LiveKit Cloud |
+| `GEMINI_API_KEY` | all three services | research, guides, voice, reports, extraction |
+| `OPENAI_API_KEY` | voice agent | OpenAI embedding collection |
+| `MEM0_API_KEY`, `MEM0_USER_ID` | voice agent, frontend | long-term memory (default user `sequoia-mentor-agent`) |
+| `REDDIT_CLIENT_ID`, `REDDIT_CLIENT_SECRET`, `REDDIT_USER_AGENT` | research agent | B2C discovery (PRAW) |
+| `APOLLO_API_KEY` | research agent | B2B discovery |
+| `MANUS_API_KEY` | research agent | pitch deck (falls back to Gemini) |
+| `VC_AGENT_MODE` | all | `live` (default) or `offline` |
+| `NEXT_PUBLIC_VC_AGENT_MODE` | frontend build | `offline` swaps voice widgets for the text chat |
+| `KB_EMBEDDER` | voice agent | `openai` (live default) or `local` |
+| `RESEARCH_SERVICE_URL`, `AGENT_SERVICE_URL`, `KB_SERVICE_URL` | frontend, research agent | service URLs (defaults: 127.0.0.1:8000 / :8001) |
+| `VC_AGENT_DIAGNOSTICS` | all | `1` exposes the `/_diag` egress and provider endpoints |
+
+Missing Reddit, Apollo or Manus keys fall back to placeholder messages or Gemini samples, and a
+missing `MEM0_API_KEY` turns memory off in live mode.
 
 ## Repository layout
 
 ```
-brown-hacks/
-├── start.sh                 # Boots all three services at once
-├── .env.template            # All required API keys
-├── package.json             # (root helper dep only)
-│
-├── frontend/                # Next.js 16 app (App Router, React 19)
-│   ├── app/                 # Pages + API routes
-│   ├── components/          # Feature + shadcn/ui components
-│   └── lib/                 # Zustand store, dashboard schema, utils
-│
-├── research-agent/          # FastAPI backend (port 8000)
-│   ├── main.py              # Endpoints: chat, customer-reachout, resources, slides
-│   ├── slide_generator.py   # Sequoia-style pitch deck generation
-│   └── test_endpoints.py    # pytest tests (mocked Gemini)
-│
-└── livekit-voice-agent/     # LiveKit voice agent (mentor + VC personas)
-    ├── agent.py             # Agent logic, personas, memory, RAG tools
-    ├── rag.py               # ChromaDB semantic search
-    ├── ingest.py            # Builds the vector DB from data/
-    └── data/                # 100+ Sequoia podcast transcripts + sequoia_data.json
+├── Makefile, models.lock, start.sh, scripts/run-offline.sh
+├── frontend/              Next.js 16 app (App Router, React 19, Tailwind 4, shadcn/ui)
+│   ├── app/               pages and API routes
+│   ├── components/        feature components (text-agent-chat, research-chat, resource-drawer, ...)
+│   └── e2e/               Playwright offline journey, egress canaries, screenshots
+├── research-agent/        FastAPI service
+│   ├── main.py            routes and task lifecycle
+│   ├── research_providers.py, fixture_research.py, guides.py, kb_client.py
+│   ├── fixtures/research/ three recorded deep-research runs
+│   └── scripts/record_research_fixtures.py
+└── livekit-voice-agent/
+    ├── agent.py           LiveKit worker
+    ├── server.py          KB search, text chat WebSocket, memories
+    ├── mentor.py, personas.py, scripted_llm.py, offline_report.py
+    ├── rag.py, embeddings.py, ingest.py, model_store.py, memory.py
+    └── data/              Sequoia transcripts and scraped articles
 ```
-
----
-
-## The three services
-
-### 1. Frontend (Next.js)
-
-A **Next.js 16** App Router app (React 19, TypeScript) styled with **Tailwind CSS v4**
-and **shadcn/ui** ("new‑york" style, Sequoia‑inspired earthy‑green palette). Client
-state lives in a persisted **Zustand** store (`launchpad-storage-v2`).
-
-**Pages**
-
-| Route | Purpose |
-|-------|---------|
-| `/` | Landing + idea input |
-| `/mentorship` | AI mentor voice call (LiveKit, `mode=mentor`) |
-| `/dashboard` | Main 5‑tier validation hub + feature launchers |
-| `/vc-call` | VC pitch voice call (LiveKit, `mode=vc`) → generates report |
-| `/investor-memo` | Printable compiled investment memo |
-
-**API routes** (all secrets stay server‑side — see [API reference](#api-reference))
-proxy to the research backend, mint LiveKit tokens, store/poll the VC report,
-fetch Mem0 memories, and map memories onto dashboard fields via Jaccard
-similarity with a Gemini fallback.
-
-The voice UI uses `@livekit/components-react` (`LiveKitRoom`, `useVoiceAssistant`,
-`BarVisualizer`) in audio‑only mode. The agent persona is selected by embedding
-`{ startupIdea, agentMode }` into the LiveKit token metadata.
-
-```bash
-cd frontend
-npm install
-npm run dev        # http://localhost:3000  (Turbopack disabled: TURBOPACK=0)
-```
-
-### 2. Research Agent (FastAPI)
-
-A **FastAPI** service (port **8000**) that orchestrates Google Gemini and
-third‑party data APIs. All long‑running work runs as background tasks with a
-task‑id + polling pattern; sessions and tasks are held in in‑memory dicts.
-
-Capabilities:
-
-- **Market research chat** (`/chat`) — the first turn runs a **Deep Research**
-  agent (`deep-research-pro-preview-12-2025`) that produces a structured, sourced
-  "Problem Space Assessment" as a Senior Market Researcher / early‑stage investor.
-  Follow‑up turns use **`gemini-2.5-flash` with Google Search grounding** for fast
-  answers.
-- **Customer reach‑out** (`/customer-reachout`):
-  - **B2C** → Gemini extracts keywords, **PRAW** searches relevant subreddits, and
-    Gemini writes a tailored outreach strategy per community + offline venue ideas.
-  - **B2B** → Gemini parses the ICP into **Apollo.io** search params, queries
-    Apollo for people + organizations, and falls back to Gemini‑generated sample
-    leads if Apollo returns nothing.
-- **Resource guides** (`/generate_resource_article`, `/resource_chat`) — generate
-  and chat about tactical, Sequoia‑partner‑style startup guides.
-- **Pitch deck** (`/generate-slides`) — assembles a 12‑slide Sequoia‑style deck
-  from the dashboard answers, filling gaps with Gemini, via the **Manus** API
-  (`nano_banana_pro`, `.pptx`) with a structured‑JSON Gemini fallback
-  (`gemini-2.0-flash`).
-
-```bash
-cd research-agent
-python -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
-uvicorn main:app --reload --port 8000
-pytest                       # runs mocked endpoint tests
-```
-
-### 3. LiveKit Voice Agent
-
-A **LiveKit Agents** worker that runs a real‑time, low‑latency voice conversation
-using **Google Gemini Live** (`gemini-2.5-flash-native-audio-preview-12-2025`,
-native audio in/out). It has two personas selected via room metadata:
-
-- **Mentor** (voice: *Puck*) — a warm‑but‑sharp Sequoia partner who always grounds
-  advice in a real story pulled from the knowledge base.
-- **VC** (voice: *Kore*) — a skeptical partner running a high‑stakes pitch
-  simulation, ending with a pass/fail verdict.
-
-Under the hood it combines three tools/systems:
-
-- **RAG** (`search_knowledge_base`) — semantic search over a **ChromaDB** vector
-  store built from 100+ Sequoia podcast transcripts and scraped Sequoia articles,
-  embedded with **OpenAI `text-embedding-3-small`**.
-- **Long‑term memory** (`recall_memory`) — **Mem0** stores meaningful things the
-  founder says across sessions and primes each new call with prior context.
-- **Post‑call report** — when the VC page requests it (via a LiveKit data message),
-  the agent summarizes the pitch into a structured report
-  (`gemini-2.0-flash-lite-preview-02-05`) and POSTs it to the frontend's
-  `/api/vc-report`.
-
-```bash
-cd livekit-voice-agent
-uv sync
-uv run ingest.py             # one-time: build the ChromaDB vector store from data/
-uv run agent.py dev          # run as a LiveKit worker
-# or:
-uv run agent.py console      # talk to it directly in your terminal
-```
-
----
-
-## Getting started
-
-### Prerequisites
-
-- **Node.js** 18+ and **npm** (frontend)
-- **Python 3.13+** and **[uv](https://docs.astral.sh/uv/)** (voice agent)
-- **Python 3.10+** (research agent — `uvicorn`, `praw`, `google-genai`)
-- A **LiveKit Cloud** project
-- API keys: **Google Gemini**, **OpenAI**, **Mem0**, and (optional) **Reddit**,
-  **Apollo.io**, **Manus**
-
-### Quick start
-
-```bash
-git clone https://github.com/Brown-Hacks-2026/brown-hacks.git
-cd brown-hacks
-
-# 1. Configure secrets
-cp .env.template .env         # fill in your keys
-#    Also create frontend/.env.local and livekit-voice-agent/.env.local
-#    (or a shared .env.local at the repo root — see notes below)
-
-# 2. Install dependencies (once)
-cd frontend && npm install && cd ..
-cd research-agent && pip install -r requirements.txt && cd ..
-cd livekit-voice-agent && uv sync && uv run ingest.py && cd ..
-
-# 3. Boot everything
-zsh start.sh
-```
-
-`start.sh` launches all three services and wires up graceful shutdown:
-
-| Service | Where |
-|---------|-------|
-| Frontend | http://localhost:3000 |
-| Research Agent | http://localhost:8000 |
-| LiveKit Voice Agent | background worker (connects to LiveKit Cloud) |
-
-> **Note:** `start.sh` is a `zsh` script and expects `uvicorn`, `uv`, and `npm` on
-> your `PATH`. On first run, make sure you've built the ChromaDB store with
-> `uv run ingest.py` inside `livekit-voice-agent/`.
-
----
-
-## Environment variables
-
-All keys live in `.env.template` at the repo root. Each service loads env files
-defensively (checking its own directory, the CWD, and the repo root), so a single
-root `.env` / `.env.local` generally works — but the frontend reads `.env.local`
-and the Python services also look for `.env` / `.env.local`.
-
-| Variable | Used by | Purpose |
-|----------|---------|---------|
-| `LIVEKIT_URL` | frontend token route, voice agent | LiveKit Cloud project URL (`wss://…`) |
-| `LIVEKIT_API_KEY` | frontend token route, voice agent | LiveKit auth |
-| `LIVEKIT_API_SECRET` | frontend token route, voice agent | LiveKit auth |
-| `GEMINI_API_KEY` | all three services | Gemini deep research, chat, reports, extraction |
-| `OPENAI_API_KEY` | voice agent (RAG) | Embeddings for ChromaDB (`text-embedding-3-small`) |
-| `MEM0_API_KEY` | voice agent, frontend | Long‑term memory (Mem0) |
-| `MEM0_USER_ID` | frontend | Mem0 user id (default `sequoia-mentor-agent`) |
-| `REDDIT_CLIENT_ID` | research agent | B2C customer discovery (PRAW) |
-| `REDDIT_CLIENT_SECRET` | research agent | B2C customer discovery (PRAW) |
-| `REDDIT_USER_AGENT` | research agent | Optional; defaults to `BrownHacksResearchAgent/1.0` |
-| `APOLLO_API_KEY` | research agent | B2B lead discovery (Apollo.io) |
-| `MANUS_API_KEY` | research agent | Optional; pitch‑deck generation (falls back to Gemini) |
-| `RESEARCH_SERVICE_URL` | frontend | Optional; research backend base URL (defaults to `http://127.0.0.1:8000`) |
-
-Every integration **degrades gracefully**: missing Reddit/Apollo/Manus keys fall
-back to Gemini‑generated samples or helpful placeholder messages, and a missing
-`MEM0_API_KEY` simply disables memory.
-
----
 
 ## API reference
 
-### Research Agent (`:8000`)
+Research agent (`:8000`):
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| `POST` | `/chat` | Start a research turn (deep research on turn 1, fast chat after). Returns `task_id`. |
-| `GET` | `/chat/status/{task_id}` | Poll a chat/reach‑out/slide task for `processing`/`completed`/`failed`. |
-| `POST` | `/customer-reachout` | Find B2C communities or B2B leads for an ICP. Returns `task_id`. |
-| `POST` | `/generate_resource_article` | Generate a tactical startup guide (synchronous). |
-| `POST` | `/resource_chat` | Chat about a generated guide (synchronous). |
-| `POST` | `/generate-slides` | Generate a 12‑slide pitch deck from dashboard modules. Returns `task_id`. |
-| `GET` | `/health` | Health check. |
+| `POST` | `/chat` | Start a research turn (deep research first, fast follow-ups after). Returns `task_id`. |
+| `GET` | `/chat/status/{task_id}` | `queued` / `running` / `completed` / `failed`, with progress notes and elapsed time. 404 once the task is gone. |
+| `POST` | `/customer-reachout` | B2C communities or B2B leads for an ICP. Returns `task_id`. |
+| `POST` | `/generate_resource_article` | KB-grounded guide with `citations`. |
+| `POST` | `/resource_chat` | Follow-up about a guide, with citations. |
+| `POST` | `/generate-slides` | 12-slide deck from dashboard modules. Returns `task_id`. |
+| `GET` | `/health` | Health and mode. |
 
-### Frontend API routes (`:3000/api`)
+Voice-agent server (`:8001`): `POST /kb/search`, `WS /ws/chat?mode=mentor|vc&idea=...`,
+`GET /memories`, `GET /health`.
 
-| Method | Route | Description |
-|--------|-------|-------------|
-| `GET` | `/api/token` | Mints a LiveKit JWT with persona metadata (`room`, `mode`, `idea`). |
-| `POST` / `GET` | `/api/research` | Proxies to the research agent's `/chat` + status. |
-| `POST` / `GET` | `/api/customer-reachout` | Proxies to the research agent's reach‑out + status. |
-| `POST` / `GET` | `/api/vc-report` | Stores the VC report (from the agent) / long‑polls for it. |
-| `GET` | `/api/memories` | Fetches the founder's memories from Mem0. |
-| `POST` | `/api/extract-fields` | Maps memory text onto the 20 dashboard fields (Jaccard + Gemini fallback). |
+Frontend routes (`:3000/api`): `token`, `research`, `customer-reachout`, `resource-article`,
+`resource-chat`, `vc-report`, `memories`, `extract-fields`, and `diag/egress` (diagnostics only).
 
----
+## Verification status
 
-## Tech stack
+Details and result files: [docs/verification.md](docs/verification.md).
 
-**Frontend** — Next.js 16 (App Router) · React 19 · TypeScript · Tailwind CSS v4 ·
-shadcn/ui + Radix · Zustand · LiveKit React components · react‑markdown · Recharts ·
-Lucide.
+- **Verified offline, in CI's container setup and locally under a sandbox.** The journey from
+  idea to research report, the KB-cited guide, and mentor chat with a recalled memory, with every
+  backend process shown unable to reach the network.
+- **Verified live once (2026-03-01).** Three Gemini deep-research runs, plus one through the
+  running server with its `/health` latency measured. KB-grounded Gemini guides. A Mem0 cloud
+  add/search round trip. A headless LiveKit voice session in which Gemini native audio heard a
+  spoken question, called the KB tool, and answered aloud from the Airbnb transcript.
+- **Not verified in CI.** Real LiveKit audio, Gemini native-audio behavior, Gemini deep-research
+  quality, and Mem0 cloud. The offline text path shares the `Assistant`, tools, personas and
+  memory capture with voice, but not the realtime native-audio turn loop.
+- **Not verified at all.** The OpenAI-embedding collection (the available key has no credits),
+  the browser microphone path, and Reddit/Apollo/Manus.
 
-**Research Agent** — FastAPI · Uvicorn · Google Gemini (`google-genai`) with Google
-Search grounding · PRAW (Reddit) · Apollo.io · Manus (Nano Banana Pro) · pytest.
+## Notes and limitations
 
-**Voice Agent** — LiveKit Agents · Google Gemini Live (native audio) · ChromaDB ·
-OpenAI embeddings · LangChain text splitters · Mem0 · uv.
+- **In-memory state.** Research tasks and chat sessions live in the research agent's process
+  memory, and `/api/vc-report` keeps the last report in a module variable. After a restart, a
+  poll returns 404 (the panel says the research was interrupted), and a follow-up question
+  starts a fresh, paid deep-research run.
+- **Live research progress.** Gemini's interactions API only returns the thought and search
+  steps once a run finishes, so live mode shows elapsed time until then.
+- **Offline answers are scripted.** The offline mentor quotes retrieved passages and asks the
+  next question from the persona prompt; it doesn't reason. The offline VC report is assembled
+  from the founder's own sentences.
+- **Preview models.** `deep-research-pro-preview-12-2025` and
+  `gemini-2.5-flash-native-audio-preview-12-2025` are preview IDs. `gemini-2.0-flash`, which
+  the hackathon code used for reach-out, slides and reports, is already retired; those paths now
+  use 2.5 models.
+- **The scraped Sequoia data** (`livekit-voice-agent/data/sequoia_data.json`) includes some
+  off-site pages; ingest skips navigation, people pages and duplicate URLs.
 
----
+## Team
 
-## Notes & caveats
+Built at Brown Hacks 2026 by:
 
-This is a **hackathon build** — a few things are optimized for the demo rather than
-production:
+- **Akshay Irudayaraj**: module-based dashboard UI, the Gemini deep-research agent and its
+  citations, customer reach-out, VC call and investor memo, the single start script, docs.
+- **Meghanadh Vasireddy**: the original RAG mentor agent, realtime voice integration and
+  prompts, Gemini integration, memory-driven autofill for the VC flow.
+- **Vedant Sangireddy**: the Sequoia resource drawer, tactical AI guides, and video resources.
+- **Krish Maheshwari**: Mem0 persistent memory for the voice agent (priming, recall tool,
+  storage), dashboard question updates. After the hackathon: the offline composition, async
+  research agent, embedder-tagged knowledge base, local memory store, text transport, e2e tests,
+  CI and these docs.
 
-- **In‑memory state.** The research agent keeps chat sessions and tasks in Python
-  dicts, and `/api/vc-report` stores the report in a module‑level variable. State
-  resets on restart (use Redis/Postgres for production).
-- **Hard‑coded local URLs.** The frontend proxy routes default to
-  `http://127.0.0.1:8000`, and `resource-drawer.tsx` calls `http://localhost:8000`
-  directly. Set `RESEARCH_SERVICE_URL` and parameterize the resource drawer before
-  deploying.
-- **Voice agent README is partly stale.** `livekit-voice-agent/README.md` describes
-  an earlier OpenAI GPT‑4o + AssemblyAI + Cartesia pipeline; the current `agent.py`
-  uses **Gemini Live** for real‑time audio (OpenAI is still used only for RAG
-  embeddings). Follow the setup in *this* README.
-- **Preview model IDs.** The code pins several preview Gemini models
-  (`deep-research-pro-preview-12-2025`, `gemini-2.5-flash-native-audio-preview-12-2025`,
-  etc.). Adjust these if they're unavailable on your API tier.
-- **Minor copy typos** exist in some dashboard buttons (e.g. "Unocked").
+Some resource-drawer and research commits were made by Google's Jules coding agent and are
+attributed to it in the history.
+
+## License
+
+[MIT](LICENSE)
