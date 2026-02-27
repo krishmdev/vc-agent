@@ -124,7 +124,8 @@ class ExtractiveGuideWriter:
         picks = [(i, best_sentences(question, _body(p.text), k=2)) for i, p in enumerate(passages, 1)]
         lead_n, lead = next(((i, s) for i, s in picks if s), (1, []))
         lines = ["**Core Principle**", ""]
-        lines.append(f"{lead[0]} [{lead_n}]" if lead else f"{_snippet(passages[0].text)} [1]")
+        lead_source = _short(passages[lead_n - 1].source)
+        lines.append(f'From "{lead_source}": {lead[0]} [{lead_n}]' if lead else f"{_snippet(passages[0].text)} [1]")
         lines += ["", "**What founders in the knowledge base said**", ""]
         for i, sents in picks:
             if not sents:
