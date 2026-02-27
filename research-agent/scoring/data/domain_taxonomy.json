@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "domains": {
+    "ai-ml": ["foundation-models", "ml-ops", "ml-infra", "computer-vision", "nlp", "reinforcement-learning", "agentic-ai"],
+    "data-infra": ["warehouse", "etl", "observability", "streaming", "lakehouse", "vector-db"],
+    "devtools": ["ide", "language", "framework", "ci-cd", "devx", "low-code"],
+    "security": ["appsec", "identity", "network-sec", "sast", "compliance", "cloud-sec"],
+    "cloud-infra": ["kubernetes", "serverless", "edge", "cdn", "multicloud", "platform-eng"],
+    "hardware": ["semiconductors", "iot", "wearables", "electronics", "embedded"],
+    "telecom": ["5g", "voice", "connectivity", "satellite-comms"],
+    "space-aerospace": ["satellites", "launch", "space-resources", "defense-tech"],
+    "fintech": ["payments", "banking", "lending", "crypto", "insurance", "fraud", "wealth"],
+    "healthcare": ["clinical-trials", "ehr", "genomics", "drug-discovery", "medical-imaging", "digital-health", "bio-tools"],
+    "robotics": ["industrial", "autonomous-vehicles", "drones", "surgical", "humanoid"],
+    "quantum": ["quantum-hardware", "quantum-software", "quantum-sensing", "error-correction"],
+    "enterprise-saas": ["hr", "sales-ops", "finance-ops", "legal", "marketing-ops", "procurement", "proptech", "logistics-supply-chain"],
+    "consumer": ["social", "gaming", "edtech", "marketplace", "creator-tools", "wellness"],
+    "climate-energy": ["carbon", "batteries", "grid", "agtech", "materials"],
+    "other": []
+  },
+  "adjacency": {
+    "ai-ml": ["data-infra", "devtools", "robotics"],
+    "data-infra": ["ai-ml", "devtools", "cloud-infra"],
+    "devtools": ["ai-ml", "data-infra", "cloud-infra"],
+    "security": ["cloud-infra", "devtools"],
+    "cloud-infra": ["data-infra", "security", "devtools", "telecom"],
+    "hardware": ["robotics", "telecom", "ai-ml"],
+    "telecom": ["cloud-infra", "hardware", "space-aerospace"],
+    "space-aerospace": ["hardware", "telecom", "robotics"],
+    "fintech": ["enterprise-saas", "ai-ml"],
+    "healthcare": ["ai-ml", "robotics", "consumer"],
+    "robotics": ["ai-ml", "hardware", "healthcare"],
+    "quantum": ["ai-ml", "hardware"],
+    "enterprise-saas": ["fintech", "ai-ml"],
+    "consumer": ["enterprise-saas", "ai-ml", "healthcare"],
+    "climate-energy": ["robotics", "ai-ml", "hardware"]
+  }
+}

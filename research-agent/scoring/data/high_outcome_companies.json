@@ -1,0 +1,5554 @@
+{
+  "companies": [
+    {
+      "name": "stripe",
+      "aliases": [
+        "stripe inc",
+        "stripe payments"
+      ],
+      "tier": 1,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$50B+",
+      "inflection_year": 2016,
+      "category": "fintech"
+    },
+    {
+      "name": "openai",
+      "aliases": [
+        "openai inc",
+        "open ai",
+        "chatgpt"
+      ],
+      "tier": 1,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$50B+",
+      "inflection_year": 2022,
+      "category": "ai/ml"
+    },
+    {
+      "name": "anthropic",
+      "aliases": [
+        "anthropic pbc",
+        "claude ai"
+      ],
+      "tier": 1,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$50B+",
+      "inflection_year": 2023,
+      "category": "ai/ml"
+    },
+    {
+      "name": "spacex",
+      "aliases": [
+        "space exploration technologies",
+        "space x"
+      ],
+      "tier": 1,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$50B+",
+      "inflection_year": 2012,
+      "category": "space"
+    },
+    {
+      "name": "meta",
+      "aliases": [
+        "meta platforms",
+        "facebook",
+        "facebook inc",
+        "fb"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$50B+",
+      "inflection_year": 2007,
+      "category": "consumer"
+    },
+    {
+      "name": "google",
+      "aliases": [
+        "alphabet",
+        "alphabet inc",
+        "google llc",
+        "googl"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$50B+",
+      "inflection_year": 2002,
+      "category": "consumer"
+    },
+    {
+      "name": "amazon",
+      "aliases": [
+        "amazon.com",
+        "amazon inc",
+        "amzn",
+        "aws",
+        "amazon web services",
+        "amazon web services aws",
+        "aws cloud"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$50B+",
+      "inflection_year": 1999,
+      "category": "commerce"
+    },
+    {
+      "name": "apple",
+      "aliases": [
+        "apple inc",
+        "aapl"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$50B+",
+      "inflection_year": 2007,
+      "category": "consumer"
+    },
+    {
+      "name": "microsoft",
+      "aliases": [
+        "microsoft corporation",
+        "msft"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$50B+",
+      "inflection_year": 1990,
+      "category": "enterprise saas"
+    },
+    {
+      "name": "nvidia",
+      "aliases": [
+        "nvidia corporation",
+        "nvda"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$50B+",
+      "inflection_year": 2016,
+      "category": "deeptech"
+    },
+    {
+      "name": "tesla",
+      "aliases": [
+        "tesla inc",
+        "tesla motors",
+        "tsla"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$50B+",
+      "inflection_year": 2013,
+      "category": "transportation"
+    },
+    {
+      "name": "uber",
+      "aliases": [
+        "uber technologies",
+        "uber inc"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$50B+",
+      "inflection_year": 2013,
+      "category": "transportation"
+    },
+    {
+      "name": "airbnb",
+      "aliases": [
+        "airbnb inc",
+        "air bnb"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$50B+",
+      "inflection_year": 2012,
+      "category": "marketplace"
+    },
+    {
+      "name": "snowflake",
+      "aliases": [
+        "snowflake inc",
+        "snowflake computing"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$50B+",
+      "inflection_year": 2018,
+      "category": "data/analytics"
+    },
+    {
+      "name": "databricks",
+      "aliases": [
+        "databricks inc"
+      ],
+      "tier": 1,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$50B+",
+      "inflection_year": 2019,
+      "category": "data/analytics"
+    },
+    {
+      "name": "palantir",
+      "aliases": [
+        "palantir technologies",
+        "pltr"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$50B+",
+      "inflection_year": 2014,
+      "category": "data/analytics"
+    },
+    {
+      "name": "shopify",
+      "aliases": [
+        "shopify inc",
+        "shop"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$50B+",
+      "inflection_year": 2014,
+      "category": "commerce"
+    },
+    {
+      "name": "salesforce",
+      "aliases": [
+        "salesforce inc",
+        "salesforce.com",
+        "crm"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$50B+",
+      "inflection_year": 2006,
+      "category": "enterprise saas"
+    },
+    {
+      "name": "servicenow",
+      "aliases": [
+        "servicenow inc",
+        "service now",
+        "now"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$50B+",
+      "inflection_year": 2013,
+      "category": "enterprise saas"
+    },
+    {
+      "name": "crowdstrike",
+      "aliases": [
+        "crowdstrike holdings",
+        "crowd strike",
+        "crwd"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$50B+",
+      "inflection_year": 2017,
+      "category": "security"
+    },
+    {
+      "name": "palo alto networks",
+      "aliases": [
+        "palo alto networks inc",
+        "panw"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$50B+",
+      "inflection_year": 2013,
+      "category": "security"
+    },
+    {
+      "name": "cloudflare",
+      "aliases": [
+        "cloudflare inc",
+        "net"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2017,
+      "category": "cloud/infrastructure"
+    },
+    {
+      "name": "datadog",
+      "aliases": [
+        "datadog inc",
+        "ddog"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2018,
+      "category": "devops"
+    },
+    {
+      "name": "twilio",
+      "aliases": [
+        "twilio inc",
+        "twlo"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2015,
+      "category": "communication"
+    },
+    {
+      "name": "square",
+      "aliases": [
+        "block inc",
+        "block",
+        "square inc",
+        "sq"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$50B+",
+      "inflection_year": 2014,
+      "category": "fintech"
+    },
+    {
+      "name": "paypal",
+      "aliases": [
+        "paypal holdings",
+        "paypal inc",
+        "pypl"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$50B+",
+      "inflection_year": 2005,
+      "category": "fintech"
+    },
+    {
+      "name": "doordash",
+      "aliases": [
+        "doordash inc",
+        "door dash",
+        "dash"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$50B+",
+      "inflection_year": 2018,
+      "category": "marketplace"
+    },
+    {
+      "name": "coinbase",
+      "aliases": [
+        "coinbase global",
+        "coinbase inc",
+        "coin"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$50B+",
+      "inflection_year": 2017,
+      "category": "crypto/web3"
+    },
+    {
+      "name": "robinhood",
+      "aliases": [
+        "robinhood markets",
+        "robinhood inc",
+        "hood"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2018,
+      "category": "fintech"
+    },
+    {
+      "name": "instacart",
+      "aliases": [
+        "maplebear inc",
+        "instacart inc"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2018,
+      "category": "marketplace"
+    },
+    {
+      "name": "pinterest",
+      "aliases": [
+        "pinterest inc",
+        "pins"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2013,
+      "category": "consumer"
+    },
+    {
+      "name": "snap",
+      "aliases": [
+        "snap inc",
+        "snapchat"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2014,
+      "category": "consumer"
+    },
+    {
+      "name": "spotify",
+      "aliases": [
+        "spotify technology",
+        "spotify ab",
+        "spot"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$50B+",
+      "inflection_year": 2013,
+      "category": "consumer"
+    },
+    {
+      "name": "netflix",
+      "aliases": [
+        "netflix inc",
+        "nflx"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$50B+",
+      "inflection_year": 2009,
+      "category": "consumer"
+    },
+    {
+      "name": "zoom",
+      "aliases": [
+        "zoom video communications",
+        "zoom inc",
+        "zm"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$50B+",
+      "inflection_year": 2019,
+      "category": "communication"
+    },
+    {
+      "name": "slack",
+      "aliases": [
+        "slack technologies"
+      ],
+      "tier": 1,
+      "outcome": "Acquisition",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2015,
+      "category": "communication"
+    },
+    {
+      "name": "github",
+      "aliases": [
+        "github inc"
+      ],
+      "tier": 1,
+      "outcome": "Acquisition",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2013,
+      "category": "developer tools"
+    },
+    {
+      "name": "figma",
+      "aliases": [
+        "figma inc"
+      ],
+      "tier": 1,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2020,
+      "category": "design/creative"
+    },
+    {
+      "name": "canva",
+      "aliases": [
+        "canva pty ltd",
+        "canva inc"
+      ],
+      "tier": 1,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2018,
+      "category": "design/creative"
+    },
+    {
+      "name": "bytedance",
+      "aliases": [
+        "bytedance ltd",
+        "tiktok",
+        "byte dance"
+      ],
+      "tier": 1,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$50B+",
+      "inflection_year": 2017,
+      "category": "consumer"
+    },
+    {
+      "name": "discord",
+      "aliases": [
+        "discord inc"
+      ],
+      "tier": 1,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2019,
+      "category": "communication"
+    },
+    {
+      "name": "notion",
+      "aliases": [
+        "notion labs",
+        "notion inc"
+      ],
+      "tier": 1,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2020,
+      "category": "enterprise saas"
+    },
+    {
+      "name": "rivian",
+      "aliases": [
+        "rivian automotive",
+        "rivian inc",
+        "rivn"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$50B+",
+      "inflection_year": 2020,
+      "category": "transportation"
+    },
+    {
+      "name": "lucid motors",
+      "aliases": [
+        "lucid group",
+        "lucid inc",
+        "lcid"
+      ],
+      "tier": 1,
+      "outcome": "SPAC",
+      "peak_valuation_bucket": "$50B+",
+      "inflection_year": 2020,
+      "category": "transportation"
+    },
+    {
+      "name": "mongodb",
+      "aliases": [
+        "mongodb inc",
+        "mongo",
+        "mdb"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2015,
+      "category": "data/analytics"
+    },
+    {
+      "name": "elastic",
+      "aliases": [
+        "elastic nv",
+        "elasticsearch",
+        "estc"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2015,
+      "category": "data/analytics"
+    },
+    {
+      "name": "confluent",
+      "aliases": [
+        "confluent inc",
+        "apache kafka",
+        "cflt"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2018,
+      "category": "data/analytics"
+    },
+    {
+      "name": "hashicorp",
+      "aliases": [
+        "hashicorp inc",
+        "hcp"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2018,
+      "category": "devops"
+    },
+    {
+      "name": "gitlab",
+      "aliases": [
+        "gitlab inc",
+        "gtlb"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2018,
+      "category": "developer tools"
+    },
+    {
+      "name": "atlassian",
+      "aliases": [
+        "atlassian corporation",
+        "team"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$50B+",
+      "inflection_year": 2010,
+      "category": "developer tools"
+    },
+    {
+      "name": "okta",
+      "aliases": [
+        "okta inc",
+        "okta"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2017,
+      "category": "security"
+    },
+    {
+      "name": "zscaler",
+      "aliases": [
+        "zscaler inc",
+        "zs"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2017,
+      "category": "security"
+    },
+    {
+      "name": "fortinet",
+      "aliases": [
+        "fortinet inc",
+        "ftnt"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$50B+",
+      "inflection_year": 2012,
+      "category": "security"
+    },
+    {
+      "name": "roblox",
+      "aliases": [
+        "roblox corporation",
+        "rblx"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2018,
+      "category": "consumer"
+    },
+    {
+      "name": "unity",
+      "aliases": [
+        "unity technologies",
+        "unity software",
+        "u"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2016,
+      "category": "developer tools"
+    },
+    {
+      "name": "cloudflare",
+      "aliases": [
+        "cloudflare inc"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2017,
+      "category": "cloud/infrastructure"
+    },
+    {
+      "name": "dropbox",
+      "aliases": [
+        "dropbox inc",
+        "dbx"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2011,
+      "category": "cloud/infrastructure"
+    },
+    {
+      "name": "docusign",
+      "aliases": [
+        "docusign inc",
+        "docu"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2016,
+      "category": "enterprise saas"
+    },
+    {
+      "name": "splunk",
+      "aliases": [
+        "splunk inc",
+        "splk"
+      ],
+      "tier": 1,
+      "outcome": "Acquisition",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2012,
+      "category": "data/analytics"
+    },
+    {
+      "name": "workday",
+      "aliases": [
+        "workday inc",
+        "wday"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$50B+",
+      "inflection_year": 2010,
+      "category": "enterprise saas"
+    },
+    {
+      "name": "veeva systems",
+      "aliases": [
+        "veeva",
+        "veev"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2012,
+      "category": "health/biotech"
+    },
+    {
+      "name": "hubspot",
+      "aliases": [
+        "hubspot inc",
+        "hubs"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2014,
+      "category": "enterprise saas"
+    },
+    {
+      "name": "dynatrace",
+      "aliases": [
+        "dynatrace inc",
+        "dt"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2017,
+      "category": "devops"
+    },
+    {
+      "name": "twitter",
+      "aliases": [
+        "twitter inc",
+        "x corp",
+        "x"
+      ],
+      "tier": 1,
+      "outcome": "Acquisition",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2011,
+      "category": "consumer"
+    },
+    {
+      "name": "linkedin",
+      "aliases": [
+        "linkedin corporation"
+      ],
+      "tier": 1,
+      "outcome": "Acquisition",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2010,
+      "category": "consumer"
+    },
+    {
+      "name": "whatsapp",
+      "aliases": [
+        "whatsapp inc"
+      ],
+      "tier": 1,
+      "outcome": "Acquisition",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2012,
+      "category": "communication"
+    },
+    {
+      "name": "instagram",
+      "aliases": [
+        "instagram inc"
+      ],
+      "tier": 1,
+      "outcome": "Acquisition",
+      "peak_valuation_bucket": "$50B+",
+      "inflection_year": 2012,
+      "category": "consumer"
+    },
+    {
+      "name": "youtube",
+      "aliases": [
+        "youtube llc"
+      ],
+      "tier": 1,
+      "outcome": "Acquisition",
+      "peak_valuation_bucket": "$50B+",
+      "inflection_year": 2006,
+      "category": "consumer"
+    },
+    {
+      "name": "wiz",
+      "aliases": [
+        "wiz inc",
+        "wiz.io"
+      ],
+      "tier": 1,
+      "outcome": "Acquisition",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2022,
+      "category": "security"
+    },
+    {
+      "name": "adyen",
+      "aliases": [
+        "adyen nv"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$50B+",
+      "inflection_year": 2015,
+      "category": "fintech"
+    },
+    {
+      "name": "klarna",
+      "aliases": [
+        "klarna bank ab",
+        "klarna inc"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2018,
+      "category": "fintech"
+    },
+    {
+      "name": "plaid",
+      "aliases": [
+        "plaid inc"
+      ],
+      "tier": 1,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2019,
+      "category": "fintech"
+    },
+    {
+      "name": "chime",
+      "aliases": [
+        "chime financial",
+        "chime inc"
+      ],
+      "tier": 1,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2019,
+      "category": "fintech"
+    },
+    {
+      "name": "nubank",
+      "aliases": [
+        "nu holdings",
+        "nu",
+        "nubank sa"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2018,
+      "category": "fintech"
+    },
+    {
+      "name": "toast",
+      "aliases": [
+        "toast inc",
+        "tost"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2019,
+      "category": "fintech"
+    },
+    {
+      "name": "affirm",
+      "aliases": [
+        "affirm holdings",
+        "affirm inc",
+        "afrm"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2019,
+      "category": "fintech"
+    },
+    {
+      "name": "marqeta",
+      "aliases": [
+        "marqeta inc",
+        "mq"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2019,
+      "category": "fintech"
+    },
+    {
+      "name": "scale ai",
+      "aliases": [
+        "scale ai inc",
+        "scaleai"
+      ],
+      "tier": 1,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2020,
+      "category": "ai/ml"
+    },
+    {
+      "name": "flexport",
+      "aliases": [
+        "flexport inc"
+      ],
+      "tier": 1,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2019,
+      "category": "commerce"
+    },
+    {
+      "name": "relativity space",
+      "aliases": [
+        "relativity space inc"
+      ],
+      "tier": 1,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "space"
+    },
+    {
+      "name": "anduril",
+      "aliases": [
+        "anduril industries",
+        "anduril inc"
+      ],
+      "tier": 1,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2021,
+      "category": "deeptech"
+    },
+    {
+      "name": "reddit",
+      "aliases": [
+        "reddit inc"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2017,
+      "category": "consumer"
+    },
+    {
+      "name": "asana",
+      "aliases": [
+        "asana inc",
+        "asan"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2018,
+      "category": "enterprise saas"
+    },
+    {
+      "name": "uipath",
+      "aliases": [
+        "uipath inc",
+        "ui path",
+        "path"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2019,
+      "category": "ai/ml"
+    },
+    {
+      "name": "snowflake",
+      "aliases": [
+        "snowflake inc"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$50B+",
+      "inflection_year": 2018,
+      "category": "data/analytics"
+    },
+    {
+      "name": "amd",
+      "aliases": [
+        "advanced micro devices",
+        "amd inc"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$50B+",
+      "inflection_year": 2017,
+      "category": "deeptech"
+    },
+    {
+      "name": "arm",
+      "aliases": [
+        "arm holdings",
+        "arm ltd"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$50B+",
+      "inflection_year": 2012,
+      "category": "deeptech"
+    },
+    {
+      "name": "epic games",
+      "aliases": [
+        "epic games inc",
+        "fortnite",
+        "unreal engine"
+      ],
+      "tier": 1,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2018,
+      "category": "consumer"
+    },
+    {
+      "name": "rippling",
+      "aliases": [
+        "rippling inc"
+      ],
+      "tier": 1,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2022,
+      "category": "hr/workforce"
+    },
+    {
+      "name": "revolut",
+      "aliases": [
+        "revolut ltd",
+        "revolut inc"
+      ],
+      "tier": 1,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2019,
+      "category": "fintech"
+    },
+    {
+      "name": "brex",
+      "aliases": [
+        "brex inc"
+      ],
+      "tier": 1,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2019,
+      "category": "fintech"
+    },
+    {
+      "name": "miro",
+      "aliases": [
+        "miro inc",
+        "realtimeboard"
+      ],
+      "tier": 1,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2021,
+      "category": "enterprise saas"
+    },
+    {
+      "name": "celonis",
+      "aliases": [
+        "celonis se",
+        "celonis inc"
+      ],
+      "tier": 1,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2020,
+      "category": "enterprise saas"
+    },
+    {
+      "name": "coreweave",
+      "aliases": [
+        "coreweave inc"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2023,
+      "category": "cloud/infrastructure"
+    },
+    {
+      "name": "pantera",
+      "aliases": [
+        "pantera capital"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2017,
+      "category": "crypto/web3"
+    },
+    {
+      "name": "mistral ai",
+      "aliases": [
+        "mistral",
+        "mistral ai inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2024,
+      "category": "ai/ml"
+    },
+    {
+      "name": "cohere",
+      "aliases": [
+        "cohere inc",
+        "cohere ai"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2023,
+      "category": "ai/ml"
+    },
+    {
+      "name": "hugging face",
+      "aliases": [
+        "huggingface",
+        "hugging face inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2022,
+      "category": "ai/ml"
+    },
+    {
+      "name": "perplexity",
+      "aliases": [
+        "perplexity ai",
+        "perplexity inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2024,
+      "category": "ai/ml"
+    },
+    {
+      "name": "runway",
+      "aliases": [
+        "runway ml",
+        "runway ai",
+        "runwayml"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2023,
+      "category": "ai/ml"
+    },
+    {
+      "name": "stability ai",
+      "aliases": [
+        "stability ai ltd",
+        "stable diffusion"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2022,
+      "category": "ai/ml"
+    },
+    {
+      "name": "inflection ai",
+      "aliases": [
+        "inflection",
+        "inflection ai inc"
+      ],
+      "tier": 2,
+      "outcome": "Acquisition",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2023,
+      "category": "ai/ml"
+    },
+    {
+      "name": "adept ai",
+      "aliases": [
+        "adept",
+        "adept ai labs"
+      ],
+      "tier": 3,
+      "outcome": "Acquisition",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2023,
+      "category": "ai/ml"
+    },
+    {
+      "name": "character ai",
+      "aliases": [
+        "character.ai",
+        "character technologies"
+      ],
+      "tier": 2,
+      "outcome": "Acquisition",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2023,
+      "category": "ai/ml"
+    },
+    {
+      "name": "together ai",
+      "aliases": [
+        "together",
+        "together computer"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2023,
+      "category": "ai/ml"
+    },
+    {
+      "name": "anyscale",
+      "aliases": [
+        "anyscale inc",
+        "ray"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2022,
+      "category": "ai/ml"
+    },
+    {
+      "name": "weights & biases",
+      "aliases": [
+        "wandb",
+        "weights and biases"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2021,
+      "category": "ai/ml"
+    },
+    {
+      "name": "deepmind",
+      "aliases": [
+        "google deepmind",
+        "deepmind technologies"
+      ],
+      "tier": 1,
+      "outcome": "Acquisition",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2014,
+      "category": "ai/ml"
+    },
+    {
+      "name": "cruise",
+      "aliases": [
+        "cruise llc",
+        "cruise automation",
+        "gm cruise"
+      ],
+      "tier": 2,
+      "outcome": "Acquisition",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2018,
+      "category": "transportation"
+    },
+    {
+      "name": "waymo",
+      "aliases": [
+        "waymo llc"
+      ],
+      "tier": 1,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2018,
+      "category": "transportation"
+    },
+    {
+      "name": "aurora innovation",
+      "aliases": [
+        "aurora",
+        "aurora inc",
+        "aur"
+      ],
+      "tier": 2,
+      "outcome": "SPAC",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2020,
+      "category": "transportation"
+    },
+    {
+      "name": "nuro",
+      "aliases": [
+        "nuro inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "transportation"
+    },
+    {
+      "name": "lyft",
+      "aliases": [
+        "lyft inc"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2015,
+      "category": "transportation"
+    },
+    {
+      "name": "rappi",
+      "aliases": [
+        "rappi inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2019,
+      "category": "marketplace"
+    },
+    {
+      "name": "gopuff",
+      "aliases": [
+        "gopuff inc",
+        "go puff"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2020,
+      "category": "marketplace"
+    },
+    {
+      "name": "getir",
+      "aliases": [
+        "getir inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "marketplace"
+    },
+    {
+      "name": "faire",
+      "aliases": [
+        "faire inc",
+        "faire wholesale"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2020,
+      "category": "marketplace"
+    },
+    {
+      "name": "bolt",
+      "aliases": [
+        "bolt financial",
+        "bolt inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "fintech"
+    },
+    {
+      "name": "gusto",
+      "aliases": [
+        "gusto inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2017,
+      "category": "hr/workforce"
+    },
+    {
+      "name": "deel",
+      "aliases": [
+        "deel inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "hr/workforce"
+    },
+    {
+      "name": "remote",
+      "aliases": [
+        "remote.com",
+        "remote inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "hr/workforce"
+    },
+    {
+      "name": "lattice",
+      "aliases": [
+        "lattice inc",
+        "lattice hq"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2020,
+      "category": "hr/workforce"
+    },
+    {
+      "name": "airtable",
+      "aliases": [
+        "airtable inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2020,
+      "category": "enterprise saas"
+    },
+    {
+      "name": "monday.com",
+      "aliases": [
+        "monday",
+        "mondaycom",
+        "mndy"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2019,
+      "category": "enterprise saas"
+    },
+    {
+      "name": "clickup",
+      "aliases": [
+        "clickup inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "enterprise saas"
+    },
+    {
+      "name": "linear",
+      "aliases": [
+        "linear inc",
+        "linear app"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2022,
+      "category": "developer tools"
+    },
+    {
+      "name": "retool",
+      "aliases": [
+        "retool inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "developer tools"
+    },
+    {
+      "name": "vercel",
+      "aliases": [
+        "vercel inc",
+        "zeit"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "developer tools"
+    },
+    {
+      "name": "supabase",
+      "aliases": [
+        "supabase inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2022,
+      "category": "developer tools"
+    },
+    {
+      "name": "planetscale",
+      "aliases": [
+        "planetscale inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2022,
+      "category": "developer tools"
+    },
+    {
+      "name": "postman",
+      "aliases": [
+        "postman inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2020,
+      "category": "developer tools"
+    },
+    {
+      "name": "snyk",
+      "aliases": [
+        "snyk ltd",
+        "snyk inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2020,
+      "category": "security"
+    },
+    {
+      "name": "sentinelone",
+      "aliases": [
+        "sentinelone inc",
+        "sentinel one",
+        "s"
+      ],
+      "tier": 2,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2019,
+      "category": "security"
+    },
+    {
+      "name": "lacework",
+      "aliases": [
+        "lacework inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "security"
+    },
+    {
+      "name": "1password",
+      "aliases": [
+        "1password inc",
+        "agilebits",
+        "one password"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "security"
+    },
+    {
+      "name": "abnormal security",
+      "aliases": [
+        "abnormal security inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2022,
+      "category": "security"
+    },
+    {
+      "name": "orca security",
+      "aliases": [
+        "orca security inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2021,
+      "category": "security"
+    },
+    {
+      "name": "netskope",
+      "aliases": [
+        "netskope inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2020,
+      "category": "security"
+    },
+    {
+      "name": "illumiio",
+      "aliases": [
+        "illumio inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2019,
+      "category": "security"
+    },
+    {
+      "name": "drata",
+      "aliases": [
+        "drata inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2022,
+      "category": "security"
+    },
+    {
+      "name": "vanta",
+      "aliases": [
+        "vanta inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2022,
+      "category": "legal/compliance"
+    },
+    {
+      "name": "gong",
+      "aliases": [
+        "gong.io",
+        "gong inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2020,
+      "category": "enterprise saas"
+    },
+    {
+      "name": "highspot",
+      "aliases": [
+        "highspot inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2021,
+      "category": "enterprise saas"
+    },
+    {
+      "name": "outreach",
+      "aliases": [
+        "outreach.io",
+        "outreach inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2020,
+      "category": "enterprise saas"
+    },
+    {
+      "name": "amplitude",
+      "aliases": [
+        "amplitude inc",
+        "ampl"
+      ],
+      "tier": 2,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2019,
+      "category": "data/analytics"
+    },
+    {
+      "name": "fivetran",
+      "aliases": [
+        "fivetran inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2020,
+      "category": "data/analytics"
+    },
+    {
+      "name": "dbt labs",
+      "aliases": [
+        "dbt",
+        "fishtown analytics"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "data/analytics"
+    },
+    {
+      "name": "starburst",
+      "aliases": [
+        "starburst data",
+        "starburst inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2021,
+      "category": "data/analytics"
+    },
+    {
+      "name": "hex",
+      "aliases": [
+        "hex technologies",
+        "hex inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2022,
+      "category": "data/analytics"
+    },
+    {
+      "name": "monte carlo",
+      "aliases": [
+        "monte carlo data",
+        "monte carlo inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2021,
+      "category": "data/analytics"
+    },
+    {
+      "name": "motherduck",
+      "aliases": [
+        "motherduck inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2023,
+      "category": "data/analytics"
+    },
+    {
+      "name": "samsara",
+      "aliases": [
+        "samsara inc",
+        "iot"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2019,
+      "category": "cloud/infrastructure"
+    },
+    {
+      "name": "contentful",
+      "aliases": [
+        "contentful inc",
+        "contentful gmbh"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2020,
+      "category": "developer tools"
+    },
+    {
+      "name": "stripe atlas",
+      "aliases": [],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2018,
+      "category": "fintech"
+    },
+    {
+      "name": "mercury",
+      "aliases": [
+        "mercury inc",
+        "mercury bank"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2022,
+      "category": "fintech"
+    },
+    {
+      "name": "ramp",
+      "aliases": [
+        "ramp financial",
+        "ramp inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2022,
+      "category": "fintech"
+    },
+    {
+      "name": "navan",
+      "aliases": [
+        "navan inc",
+        "tripactions"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "fintech"
+    },
+    {
+      "name": "wise",
+      "aliases": [
+        "wise plc",
+        "transferwise"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2017,
+      "category": "fintech"
+    },
+    {
+      "name": "checkout.com",
+      "aliases": [
+        "checkout",
+        "checkout.com inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2020,
+      "category": "fintech"
+    },
+    {
+      "name": "melio",
+      "aliases": [
+        "melio payments",
+        "melio inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "fintech"
+    },
+    {
+      "name": "tipalti",
+      "aliases": [
+        "tipalti inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "fintech"
+    },
+    {
+      "name": "rapyd",
+      "aliases": [
+        "rapyd financial",
+        "rapyd inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "fintech"
+    },
+    {
+      "name": "zip",
+      "aliases": [
+        "zip co",
+        "quadpay"
+      ],
+      "tier": 3,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2020,
+      "category": "fintech"
+    },
+    {
+      "name": "razorpay",
+      "aliases": [
+        "razorpay inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2020,
+      "category": "fintech"
+    },
+    {
+      "name": "opendoor",
+      "aliases": [
+        "opendoor technologies",
+        "open"
+      ],
+      "tier": 2,
+      "outcome": "SPAC",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2018,
+      "category": "real estate"
+    },
+    {
+      "name": "compass",
+      "aliases": [
+        "compass inc",
+        "urban compass"
+      ],
+      "tier": 2,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2018,
+      "category": "real estate"
+    },
+    {
+      "name": "procore",
+      "aliases": [
+        "procore technologies",
+        "pcor"
+      ],
+      "tier": 2,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2018,
+      "category": "enterprise saas"
+    },
+    {
+      "name": "bill.com",
+      "aliases": [
+        "bill holdings",
+        "bill",
+        "bill.com holdings"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2018,
+      "category": "fintech"
+    },
+    {
+      "name": "braze",
+      "aliases": [
+        "braze inc",
+        "appboy",
+        "brze"
+      ],
+      "tier": 2,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2019,
+      "category": "enterprise saas"
+    },
+    {
+      "name": "segment",
+      "aliases": [
+        "segment.io",
+        "segment inc"
+      ],
+      "tier": 2,
+      "outcome": "Acquisition",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2018,
+      "category": "data/analytics"
+    },
+    {
+      "name": "twitch",
+      "aliases": [
+        "twitch interactive",
+        "twitch.tv"
+      ],
+      "tier": 2,
+      "outcome": "Acquisition",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2013,
+      "category": "consumer"
+    },
+    {
+      "name": "waze",
+      "aliases": [
+        "waze inc"
+      ],
+      "tier": 2,
+      "outcome": "Acquisition",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2011,
+      "category": "consumer"
+    },
+    {
+      "name": "nest",
+      "aliases": [
+        "nest labs"
+      ],
+      "tier": 2,
+      "outcome": "Acquisition",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2012,
+      "category": "consumer"
+    },
+    {
+      "name": "ring",
+      "aliases": [
+        "ring inc",
+        "ring doorbell"
+      ],
+      "tier": 2,
+      "outcome": "Acquisition",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2017,
+      "category": "consumer"
+    },
+    {
+      "name": "tableau",
+      "aliases": [
+        "tableau software"
+      ],
+      "tier": 1,
+      "outcome": "Acquisition",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2012,
+      "category": "data/analytics"
+    },
+    {
+      "name": "mulesoft",
+      "aliases": [
+        "mulesoft inc"
+      ],
+      "tier": 2,
+      "outcome": "Acquisition",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2016,
+      "category": "cloud/infrastructure"
+    },
+    {
+      "name": "demandbase",
+      "aliases": [
+        "demandbase inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2020,
+      "category": "enterprise saas"
+    },
+    {
+      "name": "auth0",
+      "aliases": [
+        "auth0 inc"
+      ],
+      "tier": 2,
+      "outcome": "Acquisition",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2019,
+      "category": "security"
+    },
+    {
+      "name": "sumo logic",
+      "aliases": [
+        "sumo logic inc"
+      ],
+      "tier": 2,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2018,
+      "category": "data/analytics"
+    },
+    {
+      "name": "new relic",
+      "aliases": [
+        "new relic inc",
+        "newr"
+      ],
+      "tier": 2,
+      "outcome": "Acquisition",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2014,
+      "category": "devops"
+    },
+    {
+      "name": "pagerduty",
+      "aliases": [
+        "pagerduty inc",
+        "pager duty",
+        "pd"
+      ],
+      "tier": 2,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2017,
+      "category": "devops"
+    },
+    {
+      "name": "launchdarkly",
+      "aliases": [
+        "launchdarkly inc",
+        "launch darkly"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2021,
+      "category": "developer tools"
+    },
+    {
+      "name": "harness",
+      "aliases": [
+        "harness inc",
+        "harness.io"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "devops"
+    },
+    {
+      "name": "jfrog",
+      "aliases": [
+        "jfrog ltd",
+        "frog"
+      ],
+      "tier": 2,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2018,
+      "category": "devops"
+    },
+    {
+      "name": "grafana labs",
+      "aliases": [
+        "grafana",
+        "grafana labs inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "devops"
+    },
+    {
+      "name": "chronosphere",
+      "aliases": [
+        "chronosphere inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2022,
+      "category": "devops"
+    },
+    {
+      "name": "lightstep",
+      "aliases": [
+        "lightstep inc"
+      ],
+      "tier": 3,
+      "outcome": "Acquisition",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2021,
+      "category": "devops"
+    },
+    {
+      "name": "github copilot",
+      "aliases": [],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2022,
+      "category": "ai/ml"
+    },
+    {
+      "name": "jasper",
+      "aliases": [
+        "jasper ai",
+        "jasper inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2022,
+      "category": "ai/ml"
+    },
+    {
+      "name": "glean",
+      "aliases": [
+        "glean technologies",
+        "glean inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2023,
+      "category": "ai/ml"
+    },
+    {
+      "name": "cursor",
+      "aliases": [
+        "anysphere",
+        "cursor ai"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2024,
+      "category": "ai/ml"
+    },
+    {
+      "name": "replit",
+      "aliases": [
+        "replit inc",
+        "repl.it"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2022,
+      "category": "developer tools"
+    },
+    {
+      "name": "lambdalabs",
+      "aliases": [
+        "lambda",
+        "lambda labs",
+        "lambda inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2023,
+      "category": "cloud/infrastructure"
+    },
+    {
+      "name": "crusoe energy",
+      "aliases": [
+        "crusoe",
+        "crusoe energy systems"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2023,
+      "category": "climate/energy"
+    },
+    {
+      "name": "applied intuition",
+      "aliases": [
+        "applied intuition inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2022,
+      "category": "transportation"
+    },
+    {
+      "name": "woven planet",
+      "aliases": [
+        "woven by toyota"
+      ],
+      "tier": 2,
+      "outcome": "Acquisition",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "transportation"
+    },
+    {
+      "name": "joby aviation",
+      "aliases": [
+        "joby",
+        "joby inc",
+        "joby"
+      ],
+      "tier": 2,
+      "outcome": "SPAC",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "transportation"
+    },
+    {
+      "name": "archer aviation",
+      "aliases": [
+        "archer",
+        "achr"
+      ],
+      "tier": 2,
+      "outcome": "SPAC",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "transportation"
+    },
+    {
+      "name": "zipline",
+      "aliases": [
+        "zipline international",
+        "zipline inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2020,
+      "category": "robotics"
+    },
+    {
+      "name": "vast data",
+      "aliases": [
+        "vast data inc",
+        "vast"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2022,
+      "category": "cloud/infrastructure"
+    },
+    {
+      "name": "aiven",
+      "aliases": [
+        "aiven inc",
+        "aiven oy"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2021,
+      "category": "cloud/infrastructure"
+    },
+    {
+      "name": "cockroach labs",
+      "aliases": [
+        "cockroachdb",
+        "cockroach labs inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2020,
+      "category": "data/analytics"
+    },
+    {
+      "name": "timescale",
+      "aliases": [
+        "timescale inc",
+        "timescaledb"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2021,
+      "category": "data/analytics"
+    },
+    {
+      "name": "neon",
+      "aliases": [
+        "neon inc",
+        "neon database",
+        "neon.tech"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2023,
+      "category": "data/analytics"
+    },
+    {
+      "name": "singlestore",
+      "aliases": [
+        "singlestore inc",
+        "memsql"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2021,
+      "category": "data/analytics"
+    },
+    {
+      "name": "pinecone",
+      "aliases": [
+        "pinecone systems",
+        "pinecone inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2023,
+      "category": "ai/ml"
+    },
+    {
+      "name": "weaviate",
+      "aliases": [
+        "weaviate inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2023,
+      "category": "ai/ml"
+    },
+    {
+      "name": "chroma",
+      "aliases": [
+        "chroma inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2023,
+      "category": "ai/ml"
+    },
+    {
+      "name": "sambanova systems",
+      "aliases": [
+        "sambanova",
+        "sambanova inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "ai/ml"
+    },
+    {
+      "name": "cerebras systems",
+      "aliases": [
+        "cerebras",
+        "cerebras inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "ai/ml"
+    },
+    {
+      "name": "groq",
+      "aliases": [
+        "groq inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2024,
+      "category": "ai/ml"
+    },
+    {
+      "name": "d-id",
+      "aliases": [
+        "d-id inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2023,
+      "category": "ai/ml"
+    },
+    {
+      "name": "synthesia",
+      "aliases": [
+        "synthesia inc",
+        "synthesia ltd"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2023,
+      "category": "ai/ml"
+    },
+    {
+      "name": "eleven labs",
+      "aliases": [
+        "elevenlabs",
+        "eleven labs inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2024,
+      "category": "ai/ml"
+    },
+    {
+      "name": "midjourney",
+      "aliases": [
+        "midjourney inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2023,
+      "category": "ai/ml"
+    },
+    {
+      "name": "pika",
+      "aliases": [
+        "pika labs",
+        "pika inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2024,
+      "category": "ai/ml"
+    },
+    {
+      "name": "suno",
+      "aliases": [
+        "suno ai",
+        "suno inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2024,
+      "category": "ai/ml"
+    },
+    {
+      "name": "harvey ai",
+      "aliases": [
+        "harvey",
+        "harvey inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2024,
+      "category": "legal/compliance"
+    },
+    {
+      "name": "clio",
+      "aliases": [
+        "clio inc",
+        "themis solutions"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "legal/compliance"
+    },
+    {
+      "name": "ironclad",
+      "aliases": [
+        "ironclad inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2021,
+      "category": "legal/compliance"
+    },
+    {
+      "name": "relativity",
+      "aliases": [
+        "relativity kcura",
+        "relativity inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2019,
+      "category": "legal/compliance"
+    },
+    {
+      "name": "alchemy",
+      "aliases": [
+        "alchemy inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "crypto/web3"
+    },
+    {
+      "name": "chainalysis",
+      "aliases": [
+        "chainalysis inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "crypto/web3"
+    },
+    {
+      "name": "fireblocks",
+      "aliases": [
+        "fireblocks inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "crypto/web3"
+    },
+    {
+      "name": "opensea",
+      "aliases": [
+        "opensea inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "crypto/web3"
+    },
+    {
+      "name": "dapper labs",
+      "aliases": [
+        "dapper labs inc",
+        "flow blockchain"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "crypto/web3"
+    },
+    {
+      "name": "consensys",
+      "aliases": [
+        "consensys inc",
+        "metamask"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "crypto/web3"
+    },
+    {
+      "name": "circle",
+      "aliases": [
+        "circle internet financial",
+        "usdc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "crypto/web3"
+    },
+    {
+      "name": "kraken",
+      "aliases": [
+        "kraken exchange",
+        "payward inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2017,
+      "category": "crypto/web3"
+    },
+    {
+      "name": "tempus",
+      "aliases": [
+        "tempus ai",
+        "tempus labs"
+      ],
+      "tier": 2,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2020,
+      "category": "health/biotech"
+    },
+    {
+      "name": "insitro",
+      "aliases": [
+        "insitro inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2021,
+      "category": "health/biotech"
+    },
+    {
+      "name": "recursion pharmaceuticals",
+      "aliases": [
+        "recursion",
+        "rxrx"
+      ],
+      "tier": 2,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2020,
+      "category": "health/biotech"
+    },
+    {
+      "name": "ro",
+      "aliases": [
+        "ro health",
+        "roman health"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2020,
+      "category": "health/biotech"
+    },
+    {
+      "name": "devoted health",
+      "aliases": [
+        "devoted health inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "health/biotech"
+    },
+    {
+      "name": "cerebral",
+      "aliases": [
+        "cerebral inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2021,
+      "category": "health/biotech"
+    },
+    {
+      "name": "hims & hers",
+      "aliases": [
+        "hims",
+        "hers",
+        "hims & hers health"
+      ],
+      "tier": 2,
+      "outcome": "SPAC",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2020,
+      "category": "health/biotech"
+    },
+    {
+      "name": "nuvemshop",
+      "aliases": [
+        "nuvemshop inc",
+        "tiendanube"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2021,
+      "category": "commerce"
+    },
+    {
+      "name": "bolt (ecommerce)",
+      "aliases": [
+        "bolt checkout"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2021,
+      "category": "commerce"
+    },
+    {
+      "name": "faire",
+      "aliases": [
+        "faire wholesale inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2020,
+      "category": "commerce"
+    },
+    {
+      "name": "sendbird",
+      "aliases": [
+        "sendbird inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2021,
+      "category": "communication"
+    },
+    {
+      "name": "loom",
+      "aliases": [
+        "loom inc"
+      ],
+      "tier": 3,
+      "outcome": "Acquisition",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2021,
+      "category": "communication"
+    },
+    {
+      "name": "calendly",
+      "aliases": [
+        "calendly inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "enterprise saas"
+    },
+    {
+      "name": "webflow",
+      "aliases": [
+        "webflow inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "design/creative"
+    },
+    {
+      "name": "framer",
+      "aliases": [
+        "framer inc",
+        "framer b.v."
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2023,
+      "category": "design/creative"
+    },
+    {
+      "name": "lottie",
+      "aliases": [
+        "lottiefiles",
+        "lottie inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2022,
+      "category": "design/creative"
+    },
+    {
+      "name": "spline",
+      "aliases": [
+        "spline inc",
+        "spline.design"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2023,
+      "category": "design/creative"
+    },
+    {
+      "name": "relativity space",
+      "aliases": [
+        "relativity space inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "space"
+    },
+    {
+      "name": "rocket lab",
+      "aliases": [
+        "rocket lab usa",
+        "rklb"
+      ],
+      "tier": 2,
+      "outcome": "SPAC",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2019,
+      "category": "space"
+    },
+    {
+      "name": "planet labs",
+      "aliases": [
+        "planet",
+        "planet labs pbc",
+        "pl"
+      ],
+      "tier": 2,
+      "outcome": "SPAC",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2018,
+      "category": "space"
+    },
+    {
+      "name": "astra",
+      "aliases": [
+        "astra space",
+        "astr"
+      ],
+      "tier": 3,
+      "outcome": "SPAC",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2021,
+      "category": "space"
+    },
+    {
+      "name": "axiom space",
+      "aliases": [
+        "axiom",
+        "axiom space inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2022,
+      "category": "space"
+    },
+    {
+      "name": "vast",
+      "aliases": [
+        "vast space"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2023,
+      "category": "space"
+    },
+    {
+      "name": "figure ai",
+      "aliases": [
+        "figure",
+        "figure robotics"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2024,
+      "category": "robotics"
+    },
+    {
+      "name": "boston dynamics",
+      "aliases": [
+        "boston dynamics inc"
+      ],
+      "tier": 2,
+      "outcome": "Acquisition",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2017,
+      "category": "robotics"
+    },
+    {
+      "name": "symbotic",
+      "aliases": [
+        "symbotic inc",
+        "sym"
+      ],
+      "tier": 2,
+      "outcome": "SPAC",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "robotics"
+    },
+    {
+      "name": "locus robotics",
+      "aliases": [
+        "locus robotics inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2021,
+      "category": "robotics"
+    },
+    {
+      "name": "covariant",
+      "aliases": [
+        "covariant ai",
+        "covariant inc"
+      ],
+      "tier": 3,
+      "outcome": "Acquisition",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2022,
+      "category": "robotics"
+    },
+    {
+      "name": "physical intelligence",
+      "aliases": [
+        "physical intelligence inc",
+        "pi"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2024,
+      "category": "robotics"
+    },
+    {
+      "name": "applovin",
+      "aliases": [
+        "applovin corporation",
+        "app"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$50B+",
+      "inflection_year": 2018,
+      "category": "consumer"
+    },
+    {
+      "name": "duolingo",
+      "aliases": [
+        "duolingo inc",
+        "duol"
+      ],
+      "tier": 2,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2019,
+      "category": "education"
+    },
+    {
+      "name": "coursera",
+      "aliases": [
+        "coursera inc",
+        "cour"
+      ],
+      "tier": 2,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2018,
+      "category": "education"
+    },
+    {
+      "name": "masterclass",
+      "aliases": [
+        "masterclass inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2020,
+      "category": "education"
+    },
+    {
+      "name": "guild education",
+      "aliases": [
+        "guild",
+        "guild inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "education"
+    },
+    {
+      "name": "andela",
+      "aliases": [
+        "andela inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2021,
+      "category": "education"
+    },
+    {
+      "name": "form energy",
+      "aliases": [
+        "form energy inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2022,
+      "category": "climate/energy"
+    },
+    {
+      "name": "quantumscape",
+      "aliases": [
+        "quantumscape corporation",
+        "qs"
+      ],
+      "tier": 2,
+      "outcome": "SPAC",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2020,
+      "category": "climate/energy"
+    },
+    {
+      "name": "northvolt",
+      "aliases": [
+        "northvolt ab"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "climate/energy"
+    },
+    {
+      "name": "redwood materials",
+      "aliases": [
+        "redwood materials inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "climate/energy"
+    },
+    {
+      "name": "commonwealth fusion",
+      "aliases": [
+        "commonwealth fusion systems",
+        "cfs"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2022,
+      "category": "climate/energy"
+    },
+    {
+      "name": "sila nanotechnologies",
+      "aliases": [
+        "sila nano",
+        "sila inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "climate/energy"
+    },
+    {
+      "name": "twelve",
+      "aliases": [
+        "twelve inc",
+        "opus 12"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2022,
+      "category": "climate/energy"
+    },
+    {
+      "name": "helion energy",
+      "aliases": [
+        "helion",
+        "helion energy inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2023,
+      "category": "climate/energy"
+    },
+    {
+      "name": "first solar",
+      "aliases": [
+        "first solar inc",
+        "fslr"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2006,
+      "category": "climate/energy"
+    },
+    {
+      "name": "enphase energy",
+      "aliases": [
+        "enphase",
+        "enph"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2018,
+      "category": "climate/energy"
+    },
+    {
+      "name": "wefox",
+      "aliases": [
+        "wefox group"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "fintech"
+    },
+    {
+      "name": "flutterwave",
+      "aliases": [
+        "flutterwave inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "fintech"
+    },
+    {
+      "name": "chipper cash",
+      "aliases": [
+        "chipper cash inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2021,
+      "category": "fintech"
+    },
+    {
+      "name": "mambu",
+      "aliases": [
+        "mambu gmbh"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "fintech"
+    },
+    {
+      "name": "thought machine",
+      "aliases": [
+        "thought machine group"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "fintech"
+    },
+    {
+      "name": "marqeta",
+      "aliases": [
+        "marqeta inc"
+      ],
+      "tier": 2,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2019,
+      "category": "fintech"
+    },
+    {
+      "name": "faire",
+      "aliases": [
+        "faire inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "commerce"
+    },
+    {
+      "name": "pacaso",
+      "aliases": [
+        "pacaso inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2021,
+      "category": "real estate"
+    },
+    {
+      "name": "loft",
+      "aliases": [
+        "loft inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2021,
+      "category": "real estate"
+    },
+    {
+      "name": "divvy homes",
+      "aliases": [
+        "divvy",
+        "divvy homes inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2021,
+      "category": "real estate"
+    },
+    {
+      "name": "offerpad",
+      "aliases": [
+        "offerpad solutions",
+        "opad"
+      ],
+      "tier": 3,
+      "outcome": "SPAC",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2020,
+      "category": "real estate"
+    },
+    {
+      "name": "benchling",
+      "aliases": [
+        "benchling inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "health/biotech"
+    },
+    {
+      "name": "color health",
+      "aliases": [
+        "color",
+        "color genomics"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "health/biotech"
+    },
+    {
+      "name": "olive ai",
+      "aliases": [
+        "olive",
+        "olive ai inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "health/biotech"
+    },
+    {
+      "name": "viz.ai",
+      "aliases": [
+        "viz ai inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2021,
+      "category": "health/biotech"
+    },
+    {
+      "name": "butterfly network",
+      "aliases": [
+        "butterfly network inc",
+        "bfly"
+      ],
+      "tier": 2,
+      "outcome": "SPAC",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2020,
+      "category": "health/biotech"
+    },
+    {
+      "name": "noom",
+      "aliases": [
+        "noom inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2020,
+      "category": "health/biotech"
+    },
+    {
+      "name": "cityblock health",
+      "aliases": [
+        "cityblock",
+        "cityblock health inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "health/biotech"
+    },
+    {
+      "name": "sentry",
+      "aliases": [
+        "sentry.io",
+        "sentry inc",
+        "functional software"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2019,
+      "category": "developer tools"
+    },
+    {
+      "name": "airbyte",
+      "aliases": [
+        "airbyte inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2022,
+      "category": "data/analytics"
+    },
+    {
+      "name": "materialize",
+      "aliases": [
+        "materialize inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2022,
+      "category": "data/analytics"
+    },
+    {
+      "name": "immuta",
+      "aliases": [
+        "immuta inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2021,
+      "category": "data/analytics"
+    },
+    {
+      "name": "cribl",
+      "aliases": [
+        "cribl inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2022,
+      "category": "data/analytics"
+    },
+    {
+      "name": "terraform industries",
+      "aliases": [
+        "terraform industries inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2024,
+      "category": "climate/energy"
+    },
+    {
+      "name": "fleetzero",
+      "aliases": [
+        "fleetzero inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2023,
+      "category": "climate/energy"
+    },
+    {
+      "name": "apptio",
+      "aliases": [
+        "apptio inc"
+      ],
+      "tier": 2,
+      "outcome": "Acquisition",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2016,
+      "category": "enterprise saas"
+    },
+    {
+      "name": "qualtrics",
+      "aliases": [
+        "qualtrics international",
+        "xm"
+      ],
+      "tier": 1,
+      "outcome": "Acquisition",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2017,
+      "category": "enterprise saas"
+    },
+    {
+      "name": "nuance communications",
+      "aliases": [
+        "nuance",
+        "nuan"
+      ],
+      "tier": 1,
+      "outcome": "Acquisition",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2014,
+      "category": "ai/ml"
+    },
+    {
+      "name": "vmware",
+      "aliases": [
+        "vmware inc",
+        "vmw"
+      ],
+      "tier": 1,
+      "outcome": "Acquisition",
+      "peak_valuation_bucket": "$50B+",
+      "inflection_year": 2006,
+      "category": "cloud/infrastructure"
+    },
+    {
+      "name": "red hat",
+      "aliases": [
+        "red hat inc",
+        "redhat"
+      ],
+      "tier": 1,
+      "outcome": "Acquisition",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2010,
+      "category": "cloud/infrastructure"
+    },
+    {
+      "name": "docker",
+      "aliases": [
+        "docker inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2015,
+      "category": "devops"
+    },
+    {
+      "name": "terraform",
+      "aliases": [
+        "hashicorp terraform"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2017,
+      "category": "devops"
+    },
+    {
+      "name": "elastic",
+      "aliases": [
+        "elastic nv"
+      ],
+      "tier": 2,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2015,
+      "category": "data/analytics"
+    },
+    {
+      "name": "palantir",
+      "aliases": [
+        "palantir technologies"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$50B+",
+      "inflection_year": 2014,
+      "category": "data/analytics"
+    },
+    {
+      "name": "c3.ai",
+      "aliases": [
+        "c3 ai",
+        "c3.ai inc",
+        "ai"
+      ],
+      "tier": 2,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2019,
+      "category": "ai/ml"
+    },
+    {
+      "name": "databricks",
+      "aliases": [
+        "databricks inc"
+      ],
+      "tier": 1,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$50B+",
+      "inflection_year": 2019,
+      "category": "data/analytics"
+    },
+    {
+      "name": "tanium",
+      "aliases": [
+        "tanium inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2017,
+      "category": "security"
+    },
+    {
+      "name": "darktrace",
+      "aliases": [
+        "darktrace plc",
+        "dark"
+      ],
+      "tier": 2,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2019,
+      "category": "security"
+    },
+    {
+      "name": "rapid7",
+      "aliases": [
+        "rapid7 inc",
+        "rpd"
+      ],
+      "tier": 2,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2016,
+      "category": "security"
+    },
+    {
+      "name": "cyberark",
+      "aliases": [
+        "cyberark software",
+        "cybr"
+      ],
+      "tier": 2,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2015,
+      "category": "security"
+    },
+    {
+      "name": "sailpoint",
+      "aliases": [
+        "sailpoint technologies"
+      ],
+      "tier": 2,
+      "outcome": "Acquisition",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2017,
+      "category": "security"
+    },
+    {
+      "name": "materialise",
+      "aliases": [
+        "materialise nv"
+      ],
+      "tier": 3,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2015,
+      "category": "deeptech"
+    },
+    {
+      "name": "desktop metal",
+      "aliases": [
+        "desktop metal inc",
+        "dm"
+      ],
+      "tier": 2,
+      "outcome": "SPAC",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2020,
+      "category": "deeptech"
+    },
+    {
+      "name": "rigetti computing",
+      "aliases": [
+        "rigetti",
+        "rgti"
+      ],
+      "tier": 2,
+      "outcome": "SPAC",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "deeptech"
+    },
+    {
+      "name": "ionq",
+      "aliases": [
+        "ionq inc"
+      ],
+      "tier": 2,
+      "outcome": "SPAC",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "deeptech"
+    },
+    {
+      "name": "zapier",
+      "aliases": [
+        "zapier inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2018,
+      "category": "enterprise saas"
+    },
+    {
+      "name": "freshworks",
+      "aliases": [
+        "freshworks inc",
+        "freshdesk",
+        "frsh"
+      ],
+      "tier": 2,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2018,
+      "category": "enterprise saas"
+    },
+    {
+      "name": "zendesk",
+      "aliases": [
+        "zendesk inc",
+        "zen"
+      ],
+      "tier": 1,
+      "outcome": "Acquisition",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2014,
+      "category": "enterprise saas"
+    },
+    {
+      "name": "intercom",
+      "aliases": [
+        "intercom inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2018,
+      "category": "enterprise saas"
+    },
+    {
+      "name": "sprinklr",
+      "aliases": [
+        "sprinklr inc",
+        "cxm"
+      ],
+      "tier": 2,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2018,
+      "category": "enterprise saas"
+    },
+    {
+      "name": "contentstack",
+      "aliases": [
+        "contentstack inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2021,
+      "category": "enterprise saas"
+    },
+    {
+      "name": "sanity",
+      "aliases": [
+        "sanity.io",
+        "sanity inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2022,
+      "category": "developer tools"
+    },
+    {
+      "name": "algolia",
+      "aliases": [
+        "algolia inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2019,
+      "category": "developer tools"
+    },
+    {
+      "name": "twilio segment",
+      "aliases": [
+        "segment"
+      ],
+      "tier": 2,
+      "outcome": "Acquisition",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2019,
+      "category": "data/analytics"
+    },
+    {
+      "name": "mapbox",
+      "aliases": [
+        "mapbox inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2019,
+      "category": "developer tools"
+    },
+    {
+      "name": "plaid",
+      "aliases": [
+        "plaid inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2019,
+      "category": "fintech"
+    },
+    {
+      "name": "wolt",
+      "aliases": [
+        "wolt enterprises"
+      ],
+      "tier": 2,
+      "outcome": "Acquisition",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2020,
+      "category": "marketplace"
+    },
+    {
+      "name": "delivery hero",
+      "aliases": [
+        "delivery hero se",
+        "dher"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2017,
+      "category": "marketplace"
+    },
+    {
+      "name": "grab",
+      "aliases": [
+        "grab holdings",
+        "grab inc"
+      ],
+      "tier": 1,
+      "outcome": "SPAC",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2018,
+      "category": "marketplace"
+    },
+    {
+      "name": "gojek",
+      "aliases": [
+        "goto group",
+        "gojek inc"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2018,
+      "category": "marketplace"
+    },
+    {
+      "name": "coupang",
+      "aliases": [
+        "coupang inc",
+        "cpng"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$50B+",
+      "inflection_year": 2018,
+      "category": "commerce"
+    },
+    {
+      "name": "meesho",
+      "aliases": [
+        "meesho inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "commerce"
+    },
+    {
+      "name": "zepto",
+      "aliases": [
+        "zepto inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2023,
+      "category": "commerce"
+    },
+    {
+      "name": "swiggy",
+      "aliases": [
+        "swiggy inc",
+        "bundl technologies"
+      ],
+      "tier": 2,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2019,
+      "category": "marketplace"
+    },
+    {
+      "name": "zomato",
+      "aliases": [
+        "zomato ltd"
+      ],
+      "tier": 2,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2019,
+      "category": "marketplace"
+    },
+    {
+      "name": "etsy",
+      "aliases": [
+        "etsy inc"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2013,
+      "category": "marketplace"
+    },
+    {
+      "name": "poshmark",
+      "aliases": [
+        "poshmark inc"
+      ],
+      "tier": 2,
+      "outcome": "Acquisition",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2018,
+      "category": "marketplace"
+    },
+    {
+      "name": "depop",
+      "aliases": [
+        "depop ltd"
+      ],
+      "tier": 3,
+      "outcome": "Acquisition",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2020,
+      "category": "marketplace"
+    },
+    {
+      "name": "vinted",
+      "aliases": [
+        "vinted uab"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "marketplace"
+    },
+    {
+      "name": "mercado libre",
+      "aliases": [
+        "mercadolibre",
+        "meli"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$50B+",
+      "inflection_year": 2015,
+      "category": "marketplace"
+    },
+    {
+      "name": "zillow",
+      "aliases": [
+        "zillow group",
+        "z",
+        "zg"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2012,
+      "category": "real estate"
+    },
+    {
+      "name": "redfin",
+      "aliases": [
+        "redfin corporation",
+        "rdfn"
+      ],
+      "tier": 2,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2016,
+      "category": "real estate"
+    },
+    {
+      "name": "better.com",
+      "aliases": [
+        "better",
+        "better home & finance"
+      ],
+      "tier": 2,
+      "outcome": "SPAC",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2020,
+      "category": "real estate"
+    },
+    {
+      "name": "propertyguru",
+      "aliases": [
+        "propertyguru group"
+      ],
+      "tier": 3,
+      "outcome": "SPAC",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2020,
+      "category": "real estate"
+    },
+    {
+      "name": "relativity6",
+      "aliases": [
+        "relativity6 inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2022,
+      "category": "ai/ml"
+    },
+    {
+      "name": "labelbox",
+      "aliases": [
+        "labelbox inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2022,
+      "category": "ai/ml"
+    },
+    {
+      "name": "snorkel ai",
+      "aliases": [
+        "snorkel",
+        "snorkel ai inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2022,
+      "category": "ai/ml"
+    },
+    {
+      "name": "dataiku",
+      "aliases": [
+        "dataiku inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2020,
+      "category": "ai/ml"
+    },
+    {
+      "name": "domino data lab",
+      "aliases": [
+        "domino data",
+        "dominodatalab"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2020,
+      "category": "ai/ml"
+    },
+    {
+      "name": "tecton",
+      "aliases": [
+        "tecton ai",
+        "tecton inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2022,
+      "category": "ai/ml"
+    },
+    {
+      "name": "modal",
+      "aliases": [
+        "modal labs",
+        "modal inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2024,
+      "category": "cloud/infrastructure"
+    },
+    {
+      "name": "fly.io",
+      "aliases": [
+        "fly io",
+        "fly.io inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2022,
+      "category": "cloud/infrastructure"
+    },
+    {
+      "name": "render",
+      "aliases": [
+        "render inc",
+        "render.com"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2022,
+      "category": "cloud/infrastructure"
+    },
+    {
+      "name": "pulumi",
+      "aliases": [
+        "pulumi inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2022,
+      "category": "devops"
+    },
+    {
+      "name": "temporal",
+      "aliases": [
+        "temporal technologies",
+        "temporal.io"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2022,
+      "category": "developer tools"
+    },
+    {
+      "name": "prefect",
+      "aliases": [
+        "prefect.io",
+        "prefect inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2022,
+      "category": "data/analytics"
+    },
+    {
+      "name": "dagster",
+      "aliases": [
+        "dagster labs",
+        "elementl"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2023,
+      "category": "data/analytics"
+    },
+    {
+      "name": "matillion",
+      "aliases": [
+        "matillion inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2021,
+      "category": "data/analytics"
+    },
+    {
+      "name": "kopari beauty",
+      "aliases": [
+        "kopari"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2020,
+      "category": "commerce"
+    },
+    {
+      "name": "allbirds",
+      "aliases": [
+        "allbirds inc",
+        "bird"
+      ],
+      "tier": 2,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2018,
+      "category": "commerce"
+    },
+    {
+      "name": "warby parker",
+      "aliases": [
+        "warby parker inc",
+        "wrby"
+      ],
+      "tier": 2,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2015,
+      "category": "commerce"
+    },
+    {
+      "name": "glossier",
+      "aliases": [
+        "glossier inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2018,
+      "category": "commerce"
+    },
+    {
+      "name": "rent the runway",
+      "aliases": [
+        "rent the runway inc",
+        "rent"
+      ],
+      "tier": 2,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2018,
+      "category": "commerce"
+    },
+    {
+      "name": "stitch fix",
+      "aliases": [
+        "stitch fix inc",
+        "sfix"
+      ],
+      "tier": 2,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2016,
+      "category": "commerce"
+    },
+    {
+      "name": "thrasio",
+      "aliases": [
+        "thrasio inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "commerce"
+    },
+    {
+      "name": "pipe",
+      "aliases": [
+        "pipe technologies",
+        "pipe inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "fintech"
+    },
+    {
+      "name": "carta",
+      "aliases": [
+        "carta inc",
+        "eshares"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2019,
+      "category": "fintech"
+    },
+    {
+      "name": "brex",
+      "aliases": [
+        "brex inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2019,
+      "category": "fintech"
+    },
+    {
+      "name": "yotpo",
+      "aliases": [
+        "yotpo inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2020,
+      "category": "commerce"
+    },
+    {
+      "name": "attentive",
+      "aliases": [
+        "attentive mobile",
+        "attentive inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "enterprise saas"
+    },
+    {
+      "name": "klaviyo",
+      "aliases": [
+        "klaviyo inc",
+        "kvyo"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2020,
+      "category": "enterprise saas"
+    },
+    {
+      "name": "amplitude",
+      "aliases": [
+        "amplitude inc"
+      ],
+      "tier": 2,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2019,
+      "category": "data/analytics"
+    },
+    {
+      "name": "mixpanel",
+      "aliases": [
+        "mixpanel inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2017,
+      "category": "data/analytics"
+    },
+    {
+      "name": "heap",
+      "aliases": [
+        "heap inc"
+      ],
+      "tier": 3,
+      "outcome": "Acquisition",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2020,
+      "category": "data/analytics"
+    },
+    {
+      "name": "fullstory",
+      "aliases": [
+        "fullstory inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2021,
+      "category": "data/analytics"
+    },
+    {
+      "name": "contentful",
+      "aliases": [
+        "contentful inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2020,
+      "category": "enterprise saas"
+    },
+    {
+      "name": "cypress.io",
+      "aliases": [
+        "cypress",
+        "cypress.io inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2021,
+      "category": "developer tools"
+    },
+    {
+      "name": "sourcegraph",
+      "aliases": [
+        "sourcegraph inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2021,
+      "category": "developer tools"
+    },
+    {
+      "name": "nx",
+      "aliases": [
+        "nrwl",
+        "nx.dev"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2022,
+      "category": "developer tools"
+    },
+    {
+      "name": "stytch",
+      "aliases": [
+        "stytch inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2022,
+      "category": "security"
+    },
+    {
+      "name": "teleport",
+      "aliases": [
+        "teleport inc",
+        "gravitational"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2022,
+      "category": "security"
+    },
+    {
+      "name": "tailscale",
+      "aliases": [
+        "tailscale inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2022,
+      "category": "security"
+    },
+    {
+      "name": "ngrok",
+      "aliases": [
+        "ngrok inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2022,
+      "category": "developer tools"
+    },
+    {
+      "name": "gitpod",
+      "aliases": [
+        "gitpod inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2022,
+      "category": "developer tools"
+    },
+    {
+      "name": "mux",
+      "aliases": [
+        "mux inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2021,
+      "category": "developer tools"
+    },
+    {
+      "name": "telnyx",
+      "aliases": [
+        "telnyx inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2021,
+      "category": "communication"
+    },
+    {
+      "name": "vonage",
+      "aliases": [
+        "vonage holdings"
+      ],
+      "tier": 2,
+      "outcome": "Acquisition",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2016,
+      "category": "communication"
+    },
+    {
+      "name": "messagebird",
+      "aliases": [
+        "messagebird bv",
+        "bird"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "communication"
+    },
+    {
+      "name": "wix",
+      "aliases": [
+        "wix.com",
+        "wix ltd"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$10B-$50B",
+      "inflection_year": 2014,
+      "category": "design/creative"
+    },
+    {
+      "name": "squarespace",
+      "aliases": [
+        "squarespace inc",
+        "sqsp"
+      ],
+      "tier": 2,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2016,
+      "category": "design/creative"
+    },
+    {
+      "name": "legalzoom",
+      "aliases": [
+        "legalzoom.com",
+        "lz"
+      ],
+      "tier": 2,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2018,
+      "category": "legal/compliance"
+    },
+    {
+      "name": "litify",
+      "aliases": [
+        "litify inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2021,
+      "category": "legal/compliance"
+    },
+    {
+      "name": "litera",
+      "aliases": [
+        "litera microsystems"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2020,
+      "category": "legal/compliance"
+    },
+    {
+      "name": "parallel domain",
+      "aliases": [
+        "parallel domain inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2022,
+      "category": "ai/ml"
+    },
+    {
+      "name": "shield ai",
+      "aliases": [
+        "shield ai inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2022,
+      "category": "deeptech"
+    },
+    {
+      "name": "skydio",
+      "aliases": [
+        "skydio inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2022,
+      "category": "robotics"
+    },
+    {
+      "name": "saronic",
+      "aliases": [
+        "saronic technologies"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2024,
+      "category": "deeptech"
+    },
+    {
+      "name": "axiom space",
+      "aliases": [
+        "axiom"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2022,
+      "category": "space"
+    },
+    {
+      "name": "vannevar labs",
+      "aliases": [
+        "vannevar labs inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2023,
+      "category": "deeptech"
+    },
+    {
+      "name": "hadrian",
+      "aliases": [
+        "hadrian automation",
+        "hadrian inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2023,
+      "category": "deeptech"
+    },
+    {
+      "name": "epirus",
+      "aliases": [
+        "epirus inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2022,
+      "category": "deeptech"
+    },
+    {
+      "name": "axiom",
+      "aliases": [
+        "axiom inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2022,
+      "category": "devops"
+    },
+    {
+      "name": "verkada",
+      "aliases": [
+        "verkada inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "security"
+    },
+    {
+      "name": "island",
+      "aliases": [
+        "island technology",
+        "island inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2023,
+      "category": "security"
+    },
+    {
+      "name": "torq",
+      "aliases": [
+        "torq inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2023,
+      "category": "security"
+    },
+    {
+      "name": "semgrep",
+      "aliases": [
+        "semgrep inc",
+        "r2c"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2023,
+      "category": "security"
+    },
+    {
+      "name": "chainguard",
+      "aliases": [
+        "chainguard inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2023,
+      "category": "security"
+    },
+    {
+      "name": "coder",
+      "aliases": [
+        "coder inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2022,
+      "category": "developer tools"
+    },
+    {
+      "name": "doppler",
+      "aliases": [
+        "doppler inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2022,
+      "category": "developer tools"
+    },
+    {
+      "name": "resend",
+      "aliases": [
+        "resend inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2024,
+      "category": "developer tools"
+    },
+    {
+      "name": "cal.com",
+      "aliases": [
+        "cal.com inc",
+        "calendso"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2023,
+      "category": "developer tools"
+    },
+    {
+      "name": "inngest",
+      "aliases": [
+        "inngest inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2024,
+      "category": "developer tools"
+    },
+    {
+      "name": "upstash",
+      "aliases": [
+        "upstash inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2023,
+      "category": "cloud/infrastructure"
+    },
+    {
+      "name": "cloudinary",
+      "aliases": [
+        "cloudinary inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2019,
+      "category": "developer tools"
+    },
+    {
+      "name": "lightspark",
+      "aliases": [
+        "lightspark inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2023,
+      "category": "crypto/web3"
+    },
+    {
+      "name": "phantom",
+      "aliases": [
+        "phantom technologies"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2022,
+      "category": "crypto/web3"
+    },
+    {
+      "name": "worldcoin",
+      "aliases": [
+        "worldcoin foundation",
+        "tools for humanity"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2023,
+      "category": "crypto/web3"
+    },
+    {
+      "name": "abridge",
+      "aliases": [
+        "abridge ai",
+        "abridge inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2024,
+      "category": "health/biotech"
+    },
+    {
+      "name": "spring health",
+      "aliases": [
+        "spring health inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2022,
+      "category": "health/biotech"
+    },
+    {
+      "name": "sword health",
+      "aliases": [
+        "sword health inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2022,
+      "category": "health/biotech"
+    },
+    {
+      "name": "commure",
+      "aliases": [
+        "commure inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2023,
+      "category": "health/biotech"
+    },
+    {
+      "name": "waymark",
+      "aliases": [
+        "waymark inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2023,
+      "category": "health/biotech"
+    },
+    {
+      "name": "loyal",
+      "aliases": [
+        "loyal for dogs",
+        "loyal inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2024,
+      "category": "health/biotech"
+    },
+    {
+      "name": "electric hydrogen",
+      "aliases": [
+        "electric hydrogen inc",
+        "eh2"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2023,
+      "category": "climate/energy"
+    },
+    {
+      "name": "fervo energy",
+      "aliases": [
+        "fervo energy inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2023,
+      "category": "climate/energy"
+    },
+    {
+      "name": "antora energy",
+      "aliases": [
+        "antora energy inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2024,
+      "category": "climate/energy"
+    },
+    {
+      "name": "watershed",
+      "aliases": [
+        "watershed technology",
+        "watershed inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2022,
+      "category": "climate/energy"
+    },
+    {
+      "name": "persefoni",
+      "aliases": [
+        "persefoni ai",
+        "persefoni inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2022,
+      "category": "climate/energy"
+    },
+    {
+      "name": "workato",
+      "aliases": [
+        "workato inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2020,
+      "category": "enterprise saas"
+    },
+    {
+      "name": "celigo",
+      "aliases": [
+        "celigo inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2021,
+      "category": "enterprise saas"
+    },
+    {
+      "name": "tray.io",
+      "aliases": [
+        "tray.io inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2021,
+      "category": "enterprise saas"
+    },
+    {
+      "name": "vgs",
+      "aliases": [
+        "very good security",
+        "vgs inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2021,
+      "category": "security"
+    },
+    {
+      "name": "onespan",
+      "aliases": [
+        "onespan inc",
+        "vasco"
+      ],
+      "tier": 3,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2018,
+      "category": "security"
+    },
+    {
+      "name": "hive",
+      "aliases": [
+        "hive ai",
+        "thehive.ai"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2022,
+      "category": "ai/ml"
+    },
+    {
+      "name": "voyageai",
+      "aliases": [
+        "voyage ai"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2024,
+      "category": "ai/ml"
+    },
+    {
+      "name": "writer",
+      "aliases": [
+        "writer inc",
+        "writer.com"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2023,
+      "category": "ai/ml"
+    },
+    {
+      "name": "coactive ai",
+      "aliases": [
+        "coactive",
+        "coactive ai inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2023,
+      "category": "ai/ml"
+    },
+    {
+      "name": "unstructured",
+      "aliases": [
+        "unstructured.io",
+        "unstructured inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2024,
+      "category": "ai/ml"
+    },
+    {
+      "name": "patronus ai",
+      "aliases": [
+        "patronus",
+        "patronus ai inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2024,
+      "category": "ai/ml"
+    },
+    {
+      "name": "langchain",
+      "aliases": [
+        "langchain inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2024,
+      "category": "ai/ml"
+    },
+    {
+      "name": "llamaindex",
+      "aliases": [
+        "llamaindex inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$200M-$1B",
+      "inflection_year": 2024,
+      "category": "ai/ml"
+    },
+    {
+      "name": "infleqtion",
+      "aliases": [
+        "coldquanta",
+        "coldquanta inc",
+        "infleqtion inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2024,
+      "category": "deeptech"
+    },
+    {
+      "name": "hydrograph clean power",
+      "aliases": [
+        "hydrograph clean power inc",
+        "hydrograph"
+      ],
+      "tier": 3,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$200M-$1B",
+      "environment_type": "technical_materials_company",
+      "role_qualifier": "technical/product/research/materials/commercialization roles only",
+      "inflection_year": null,
+      "category": "climate/energy"
+    },
+    {
+      "name": "source photonics",
+      "aliases": [
+        "source photonics inc"
+      ],
+      "tier": 3,
+      "outcome": "Acquisition",
+      "peak_valuation_bucket": "$200M-$1B",
+      "environment_type": "technical_hardware_company",
+      "role_qualifier": "technical/product/research/telecom/optical roles only",
+      "inflection_year": null,
+      "category": "communication"
+    },
+    {
+      "name": "tantalus systems",
+      "aliases": [
+        "tantalus systems corp",
+        "tantalus"
+      ],
+      "tier": 3,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$200M-$1B",
+      "environment_type": "technical_grid_company",
+      "role_qualifier": "technical/product/engineering/grid/utility roles only",
+      "inflection_year": null,
+      "category": "climate/energy"
+    },
+    {
+      "name": "yahoo",
+      "aliases": [
+        "yahoo inc",
+        "yahoo!",
+        "yahoo.com"
+      ],
+      "tier": 1,
+      "outcome": "Acquisition",
+      "peak_valuation_bucket": "$10B-$50B",
+      "scoring_tier_override": 3,
+      "environment_type": "public_technical_platform",
+      "role_qualifier": "technical/product/growth/marketplace/media-platform roles only",
+      "inflection_year": 1998,
+      "category": "consumer"
+    },
+    {
+      "name": "ibm",
+      "aliases": [
+        "international business machines",
+        "ibm corporation",
+        "ibm research"
+      ],
+      "tier": 3,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$50B+",
+      "scoring_tier_override": 3,
+      "environment_type": "legacy_technical_incumbent",
+      "role_qualifier": "technical/product/research roles only",
+      "inflection_year": null,
+      "category": "cloud/infrastructure"
+    },
+    {
+      "name": "oracle",
+      "aliases": [
+        "oracle corporation",
+        "orcl",
+        "oracle database",
+        "oracle cloud"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$50B+",
+      "scoring_tier_override": 2,
+      "environment_type": "legacy_technical_incumbent",
+      "role_qualifier": "technical/product/infrastructure roles only",
+      "inflection_year": null,
+      "category": "enterprise saas"
+    },
+    {
+      "name": "cisco",
+      "aliases": [
+        "cisco systems",
+        "cisco systems inc",
+        "csco"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$50B+",
+      "scoring_tier_override": 2,
+      "environment_type": "legacy_technical_incumbent",
+      "role_qualifier": "technical/product/infrastructure/security roles only",
+      "inflection_year": null,
+      "category": "cloud/infrastructure"
+    },
+    {
+      "name": "adobe",
+      "aliases": [
+        "adobe inc",
+        "adobe systems",
+        "adbe"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$50B+",
+      "scoring_tier_override": 2,
+      "environment_type": "legacy_technical_incumbent",
+      "role_qualifier": "technical/product/design-platform roles only",
+      "inflection_year": null,
+      "category": "design/creative"
+    },
+    {
+      "name": "intel",
+      "aliases": [
+        "intel corporation",
+        "intc"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$50B+",
+      "scoring_tier_override": 2,
+      "environment_type": "legacy_technical_incumbent",
+      "role_qualifier": "technical/product/research/semiconductor roles only",
+      "inflection_year": null,
+      "category": "deeptech"
+    },
+    {
+      "name": "nasa",
+      "aliases": [
+        "national aeronautics and space administration",
+        "nasa - national aeronautics and space administration"
+      ],
+      "tier": 3,
+      "outcome": "Government",
+      "peak_valuation_bucket": null,
+      "scoring_tier_override": 3,
+      "environment_type": "public_research_technical_environment",
+      "role_qualifier": "technical/research/aerospace/space roles only",
+      "inflection_year": null,
+      "category": "space"
+    },
+    {
+      "name": "dow",
+      "aliases": [
+        "dow inc",
+        "the dow chemical company",
+        "dow chemical"
+      ],
+      "tier": 3,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$10B-$50B",
+      "scoring_tier_override": 3,
+      "environment_type": "legacy_technical_incumbent",
+      "role_qualifier": "technical/product/research/materials roles only",
+      "inflection_year": null,
+      "category": "climate/energy"
+    },
+    {
+      "name": "sas",
+      "aliases": [
+        "sas institute",
+        "sas institute inc"
+      ],
+      "tier": 3,
+      "outcome": "Private",
+      "peak_valuation_bucket": null,
+      "scoring_tier_override": 3,
+      "environment_type": "legacy_technical_incumbent",
+      "role_qualifier": "technical/product/data/analytics roles only",
+      "inflection_year": null,
+      "category": "data/analytics"
+    },
+    {
+      "name": "at&t",
+      "aliases": [
+        "att",
+        "at and t",
+        "at&t inc",
+        "american telephone and telegraph"
+      ],
+      "tier": 3,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$50B+",
+      "scoring_tier_override": 3,
+      "environment_type": "legacy_technical_incumbent",
+      "role_qualifier": "technical/product/network/telecom roles only",
+      "inflection_year": null,
+      "category": "communication"
+    },
+    {
+      "name": "ca technologies",
+      "aliases": [
+        "ca inc",
+        "computer associates",
+        "ca technologies inc"
+      ],
+      "tier": 1,
+      "outcome": "Acquisition",
+      "peak_valuation_bucket": "$10B-$50B",
+      "scoring_tier_override": 2,
+      "environment_type": "legacy_technical_incumbent",
+      "role_qualifier": "technical/product/infrastructure/software roles only",
+      "inflection_year": 2018,
+      "category": "enterprise saas"
+    },
+    {
+      "name": "ebay",
+      "aliases": [
+        "ebay inc",
+        "ebay.com"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$10B-$50B",
+      "scoring_tier_override": 1,
+      "environment_type": "public_technical_platform",
+      "role_qualifier": "technical/product/marketplace/growth roles only",
+      "inflection_year": 1999,
+      "category": "marketplace"
+    },
+    {
+      "name": "ge healthcare",
+      "aliases": [
+        "ge health care",
+        "ge healthcare technologies",
+        "ge healthcare technologies inc"
+      ],
+      "tier": 3,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$10B-$50B",
+      "scoring_tier_override": 3,
+      "environment_type": "legacy_technical_incumbent",
+      "role_qualifier": "technical/product/medical-device/healthcare roles only",
+      "inflection_year": null,
+      "category": "health/biotech"
+    },
+    {
+      "name": "formlabs",
+      "aliases": [
+        "formlabs inc"
+      ],
+      "tier": 2,
+      "outcome": "Private",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2021,
+      "category": "deeptech"
+    },
+    {
+      "name": "ncino",
+      "aliases": [
+        "ncino inc",
+        "n cino"
+      ],
+      "tier": 2,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$1B-$10B",
+      "inflection_year": 2020,
+      "category": "fintech"
+    },
+    {
+      "name": "fico",
+      "aliases": [
+        "fair isaac",
+        "fair isaac corporation",
+        "fico inc"
+      ],
+      "tier": 1,
+      "outcome": "IPO",
+      "peak_valuation_bucket": "$50B+",
+      "scoring_tier_override": 2,
+      "environment_type": "legacy_technical_incumbent",
+      "role_qualifier": "technical/product/data/analytics/risk roles only",
+      "inflection_year": null,
+      "category": "data/analytics"
+    }
+  ],
+  "metadata": {
+    "version": "1.0.0",
+    "last_updated": "2026-04-30",
+    "total_companies": 465,
+    "tier_breakdown": {
+      "tier_1": "~100 companies - IPO or $10B+ valuation",
+      "tier_2": "~140 companies - $1B-$10B valuation or strong acquisition ($500M+)",
+      "tier_3": "~150 companies - $200M-$1B valuation, strong vertical reputation"
+    },
+    "categories": [
+      "fintech",
+      "cloud/infrastructure",
+      "ai/ml",
+      "enterprise saas",
+      "consumer",
+      "marketplace",
+      "security",
+      "health/biotech",
+      "deeptech",
+      "developer tools",
+      "data/analytics",
+      "commerce",
+      "hr/workforce",
+      "legal/compliance",
+      "design/creative",
+      "devops",
+      "communication",
+      "transportation",
+      "real estate",
+      "education",
+      "crypto/web3",
+      "robotics",
+      "space",
+      "climate/energy"
+    ],
+    "outcome_types": [
+      "IPO",
+      "Acquisition",
+      "Private",
+      "SPAC",
+      "Government"
+    ],
+    "peak_valuation_buckets": [
+      "$50B+",
+      "$10B-$50B",
+      "$1B-$10B",
+      "$200M-$1B"
+    ]
+  }
+}

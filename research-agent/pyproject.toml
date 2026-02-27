@@ -10,6 +10,7 @@ dependencies = [
     "pydantic==2.13.5",
     "httpx==0.28.1",
     "praw==8.0.3",
+    "rapidfuzz==3.14.6",
 ]
 
 [dependency-groups]
