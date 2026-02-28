@@ -1,0 +1,23 @@
+{
+  "id": "roommate-bills-founder",
+  "synthetic": true,
+  "note": "Fictional founder for offline demos and tests. Employers marked (fictional) don't exist.",
+  "name": "Juniper Ashdown",
+  "current_title": "Founder",
+  "experience": [
+    {"company": "Splitsy (fictional)", "title": "Founder", "start_date": "2026-01", "end_date": null},
+    {"company": "Plaid", "title": "Software Engineering Intern", "start_date": "2025-06", "end_date": "2025-08"},
+    {"company": "Campus Dining Services (fictional)", "title": "Student Coordinator", "start_date": "2024-09", "end_date": "2025-05"}
+  ],
+  "education": [
+    {"school": "Ohio State University", "degree": "BS", "major": "Economics"}
+  ],
+  "company": {
+    "name": "Splitsy (fictional)",
+    "description": "An app for college students that splits and tracks shared rent, grocery, and utility bills between roommates and settles up automatically each month.",
+    "industry": "Consumer payments",
+    "raise_amount": 120000,
+    "raise_date": "2025-11-01"
+  },
+  "as_of": "2026-03-01"
+}

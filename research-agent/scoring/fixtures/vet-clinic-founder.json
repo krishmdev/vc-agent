@@ -1,0 +1,42 @@
+{
+  "id": "vet-clinic-founder",
+  "synthetic": true,
+  "note": "Fictional founder for offline demos and tests. Employers marked (fictional) don't exist.",
+  "name": "Wren Castellano",
+  "current_title": "Founder & CEO",
+  "experience": [
+    {
+      "company": "Pawsight",
+      "title": "Founder & CEO",
+      "start_date": "2025-03",
+      "end_date": null
+    },
+    {
+      "company": "Toast",
+      "title": "Senior Software Engineer",
+      "start_date": "2016-02",
+      "end_date": "2021-06"
+    },
+    {
+      "company": "Kennelwise Veterinary Software (fictional)",
+      "title": "Software Engineer",
+      "start_date": "2013-07",
+      "end_date": "2016-01"
+    }
+  ],
+  "education": [
+    {
+      "school": "University of Washington",
+      "degree": "BS",
+      "major": "Computer Science"
+    }
+  ],
+  "company": {
+    "name": "Pawsight",
+    "description": "Practice-management software for independent veterinary clinics that automates appointment reminders, inventory reordering, and pet-insurance claims.",
+    "industry": "Health software",
+    "raise_amount": 650000,
+    "raise_date": "2026-02-17"
+  },
+  "as_of": "2026-03-01"
+}

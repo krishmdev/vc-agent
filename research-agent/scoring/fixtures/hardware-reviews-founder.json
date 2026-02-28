@@ -1,0 +1,24 @@
+{
+  "id": "hardware-reviews-founder",
+  "synthetic": true,
+  "note": "Fictional founder for offline demos and tests. Employers marked (fictional) don't exist.",
+  "name": "Idris Moncrieff-Hale",
+  "current_title": "Co-Founder",
+  "experience": [
+    {"company": "Benchmark Review Co (fictional)", "title": "Co-Founder", "start_date": "2025-01", "end_date": null},
+    {"company": "Anduril", "title": "Director of Hardware Engineering", "start_date": "2019-04", "end_date": "2024-11"},
+    {"company": "Solderbench (fictional)", "title": "Co-Founder", "start_date": "2016-09", "end_date": "2018-12"},
+    {"company": "SpaceX", "title": "Hardware Engineer", "start_date": "2012-06", "end_date": "2016-08"}
+  ],
+  "education": [
+    {"school": "Georgia Institute of Technology", "degree": "PhD", "major": "Electrical Engineering"}
+  ],
+  "company": {
+    "name": "Benchmark Review Co (fictional)",
+    "description": "A marketplace that matches retired hardware engineers with early-stage hardware startups for paid, hourly design reviews of circuits, PCB layouts and firmware.",
+    "industry": "Marketplace",
+    "raise_amount": 900000,
+    "raise_date": "2026-01-15"
+  },
+  "as_of": "2026-03-01"
+}

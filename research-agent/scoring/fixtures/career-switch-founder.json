@@ -1,0 +1,23 @@
+{
+  "id": "career-switch-founder",
+  "synthetic": true,
+  "note": "Fictional founder for offline demos and tests: strong pedigree, building outside it.",
+  "name": "Soren Pikeford",
+  "current_title": "Founder",
+  "experience": [
+    {"company": "Loamline (fictional)", "title": "Founder", "start_date": "2026-02", "end_date": null},
+    {"company": "Stripe", "title": "Director of Engineering, Fraud", "start_date": "2014-05", "end_date": "2025-12"},
+    {"company": "Google", "title": "Software Engineer", "start_date": "2009-08", "end_date": "2014-04"}
+  ],
+  "education": [
+    {"school": "Stanford University", "degree": "MS", "major": "Computer Science"}
+  ],
+  "company": {
+    "name": "Loamline (fictional)",
+    "description": "Soil-sensor subscriptions for small organic farms that tell growers when to irrigate and fertilize.",
+    "industry": "Agriculture",
+    "raise_amount": 400000,
+    "raise_date": "2026-02-25"
+  },
+  "as_of": "2026-03-01"
+}
