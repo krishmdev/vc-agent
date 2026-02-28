@@ -2,7 +2,8 @@
 
 Recent raise (up to 10), a small raise (up to 3), a founding title (3), and a prior role that
 ended in the last six months (2). Not part of the 0-100 composite, same as in sierra-demo; it's
-shown separately. `as_of` replaces `datetime.now()` so a score is reproducible.
+shown separately. The caller passes `as_of` (sierra-demo read the wall clock) so a score is
+reproducible.
 """
 
 import json
@@ -30,13 +31,13 @@ def _parse_date(date_str: str | None) -> datetime | None:
 
 class TimingScorer:
 
-    def score(self, person: dict, filing: dict | None, as_of: datetime | None = None) -> dict:
+    def score(self, person: dict, filing: dict | None, *, as_of: datetime) -> dict:
         if filing is None:
             return {"timing_score": 0.0, "timing_signals": []}
 
         points = 0.0
         signals: list[str] = []
-        now = as_of or datetime.now()
+        now = as_of
 
         # --- Signature recency (up to +10) ---
         sig_date = _parse_date(filing.get("signature_date"))

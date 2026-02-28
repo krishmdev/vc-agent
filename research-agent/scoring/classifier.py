@@ -3,16 +3,22 @@
 Two classifiers produce the same tag shape:
 
 - GeminiDomainClassifier (live): sierra-demo's prompt and validation, run on gemini-2.5-flash.
-- KeywordDomainClassifier (offline): deterministic phrase matching against a lexicon for each
-  (domain, subdomain). It's cruder than the model; it exists so offline mode and the tests can
-  run the full scorer with no network, and every tag it emits names the phrases that caused it.
+  If the call or the JSON fails, it falls back to the keyword classifier and says so, instead of
+  sierra-demo's silent "other".
+- RecordedDomainClassifier (offline): replays Gemini classifications recorded for the sample
+  founders, keyed by sha256 of the exact classifier input, and uses the keyword classifier on a
+  miss.
+- KeywordDomainClassifier: deterministic phrase matching against a lexicon for each
+  (domain, subdomain). Cruder than the model; every tag names the phrases that caused it.
 
 Tags: {primary_domain, primary_subdomain, secondary_subdomains, keywords, reason,
-classification_confidence}.
+classification_confidence, source}, where source is gemini, recorded, keyword or
+fallback_error.
 """
 
 from __future__ import annotations
 
+import hashlib
 import json
 import re
 from functools import cache
@@ -116,8 +122,18 @@ def validate(parsed: Any) -> dict:
 def low_confidence_company(tags: dict, evidence_level: str) -> dict:
     """sierra-demo doesn't trust a narrow company domain inferred from a name or industry alone."""
     out = dict(OTHER_TAGS)
-    out.update(reason=f"{evidence_level} evidence", evidence_level=evidence_level, tentative_tags=tags, keywords=tags.get("keywords") or [])
+    out.update(
+        reason=f"{evidence_level} evidence",
+        evidence_level=evidence_level,
+        tentative_tags=tags,
+        keywords=tags.get("keywords") or [],
+        source=tags.get("source"),
+    )
     return out
+
+
+def input_key(kind: str, input_text: str) -> str:
+    return hashlib.sha256(f"{kind}:{input_text}".encode()).hexdigest()
 
 
 class DomainClassifier(Protocol):
@@ -261,7 +277,7 @@ class KeywordDomainClassifier:
             if hits:
                 matched[pair] = hits
         if not matched:
-            return dict(OTHER_TAGS)
+            return {**OTHER_TAGS, "source": "keyword"}
         domain_score: dict[str, int] = {}
         for (domain, _), hits in matched.items():
             domain_score[domain] = domain_score.get(domain, 0) + len(hits)
@@ -287,7 +303,7 @@ class KeywordDomainClassifier:
                 "reason": "matched " + ", ".join(matched[primary][:3]),
                 "classification_confidence": "high" if hit_count >= 3 else "medium",
             }
-        )
+        ) | {"source": "keyword"}
 
     async def classify_founder(self, profile: dict, matched_categories: list[dict] | None, entity_name: str | None) -> dict:
         hints: dict[str, int] = {}
@@ -353,26 +369,67 @@ class GeminiDomainClassifier:
             client = genai.Client(api_key=api_key)
         self._client = client
         self.model = model
+        self.fallback = KeywordDomainClassifier()
 
-    async def _classify(self, kind: str, input_text: str) -> dict:
+    async def classify_text(self, kind: str, input_text: str) -> dict:
         from google.genai import types
 
-        try:
-            response = await self._client.aio.models.generate_content(
-                model=self.model,
-                contents=gemini_prompt(kind, input_text),
-                config=types.GenerateContentConfig(response_mime_type="application/json", max_output_tokens=512),
-            )
-            return validate(json.loads(response.text or "null"))
-        except Exception:
-            # sierra-demo's behavior: a failed or malformed classification counts as "other".
-            return dict(OTHER_TAGS)
+        response = await self._client.aio.models.generate_content(
+            model=self.model,
+            contents=gemini_prompt(kind, input_text),
+            config=types.GenerateContentConfig(response_mime_type="application/json", max_output_tokens=512),
+        )
+        parsed = json.loads(response.text or "")
+        if not isinstance(parsed, dict):
+            raise ValueError("classification is not a JSON object")
+        return {**validate(parsed), "source": "gemini", "model": self.model}
 
     async def classify_founder(self, profile: dict, matched_categories: list[dict] | None, entity_name: str | None) -> dict:
-        return await self._classify("founder", founder_input_text(profile, matched_categories, entity_name))
+        try:
+            return await self.classify_text("founder", founder_input_text(profile, matched_categories, entity_name))
+        except Exception as exc:
+            tags = await self.fallback.classify_founder(profile, matched_categories, entity_name)
+            return {**tags, "source": "fallback_error", "error": f"{type(exc).__name__}: {exc}"[:200]}
 
     async def classify_company(self, company: dict, evidence_level: str) -> dict:
-        tags = await self._classify("company", company_input_text(company, evidence_level))
+        try:
+            tags = await self.classify_text("company", company_input_text(company, evidence_level))
+        except Exception as exc:
+            tags = await self.fallback.classify_company(company, "medium")
+            tags = {**tags, "source": "fallback_error", "error": f"{type(exc).__name__}: {exc}"[:200]}
         if evidence_level in {"weak", "name_only"}:
             return low_confidence_company(tags, evidence_level)
         return {**tags, "evidence_level": evidence_level}
+
+
+class RecordedDomainClassifier:
+    """Offline: replay recorded Gemini tags on an exact input match, else the keyword lexicon."""
+
+    name = "recorded+keyword"
+
+    def __init__(self, recordings: dict[str, dict]) -> None:
+        self.recordings = recordings
+        self.fallback = KeywordDomainClassifier()
+
+    @classmethod
+    def from_file(cls, path: Path) -> "RecordedDomainClassifier":
+        data = json.loads(path.read_text()) if path.exists() else {"recordings": {}}
+        return cls(data.get("recordings", {}))
+
+    def _replay(self, kind: str, input_text: str) -> dict | None:
+        rec = self.recordings.get(input_key(kind, input_text))
+        if not rec:
+            return None
+        return {**validate(rec["tags"]), "source": "recorded", "model": rec.get("model"), "recorded_at": rec.get("recorded_at")}
+
+    async def classify_founder(self, profile: dict, matched_categories: list[dict] | None, entity_name: str | None) -> dict:
+        replayed = self._replay("founder", founder_input_text(profile, matched_categories, entity_name))
+        return replayed or await self.fallback.classify_founder(profile, matched_categories, entity_name)
+
+    async def classify_company(self, company: dict, evidence_level: str) -> dict:
+        replayed = self._replay("company", company_input_text(company, evidence_level))
+        if replayed is None:
+            return await self.fallback.classify_company(company, evidence_level)
+        if evidence_level in {"weak", "name_only"}:
+            return low_confidence_company(replayed, evidence_level)
+        return {**replayed, "evidence_level": evidence_level}

@@ -175,10 +175,11 @@ async def evaluate_founder(
     company: dict | None,
     *,
     classifier: DomainClassifier,
-    as_of: date | datetime | None = None,
+    as_of: date,
 ) -> dict:
-    """Score one founder. `company`: {name, description, industry, raise_amount, raise_date}."""
-    as_of_dt = datetime.combine(as_of, datetime.min.time()) if isinstance(as_of, date) and not isinstance(as_of, datetime) else as_of
+    """Score one founder as of a given date. `company`: {name, description, industry,
+    raise_amount, raise_date}. The date is required: timing depends on it."""
+    as_of_dt = datetime.combine(as_of, datetime.min.time()) if not isinstance(as_of, datetime) else as_of
     sg_scorer = SeenGreatnessScorer()
     sg = sg_scorer.score(profile)
     matched_categories = sg_scorer.matched_categories(profile)
@@ -226,8 +227,12 @@ async def evaluate_founder(
     ]
     return {
         "engine": ENGINE,
-        "classifier": classifier.name,
-        "as_of": (as_of_dt or datetime.now()).date().isoformat(),
+        "classifier": {
+            "name": classifier.name,
+            "founder_source": founder_tags.get("source"),
+            "company_source": company_tags.get("source") if company else None,
+        },
+        "as_of": as_of_dt.date().isoformat(),
         "founder": {"name": profile.get("name") or "", "synthetic": bool(profile.get("synthetic"))},
         "company": company,
         "composite": {"score": composite, "max": 100, **verdict(composite)},

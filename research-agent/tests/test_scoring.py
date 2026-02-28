@@ -1,7 +1,7 @@
 """Founder scoring engine.
 
-The first block is sierra-demo's own scorer tests (synthetic inline profiles), ported to check
-the port gives the same numbers. The rest covers what's new here: the offline keyword
+The first block is sierra-demo's own scorer tests (backend/tests/scoring at sierra-demo commit
+c1e4568; synthetic inline profiles), ported to check the port gives the same numbers. The rest covers what's new here: the offline keyword
 classifier, evidence and advice, as_of, and the four synthetic fixture founders.
 """
 
@@ -14,7 +14,18 @@ from types import SimpleNamespace as NS
 import pytest
 
 from scoring import evaluate_founder, verdict
-from scoring.classifier import OTHER_TAGS, GeminiDomainClassifier, KeywordDomainClassifier, validate
+import hashlib
+import re
+
+from scoring.classifier import (
+    OTHER_TAGS,
+    GeminiDomainClassifier,
+    KeywordDomainClassifier,
+    RecordedDomainClassifier,
+    company_input_text,
+    input_key,
+    validate,
+)
 from scoring.domain_fit import DomainFitScorer, company_evidence_level
 from scoring.horsepower import HorsepowerScorer
 from scoring.registry import CompanyRegistry, default_registry
@@ -308,8 +319,45 @@ def test_gemini_classifier_validates_and_fails_closed():
     assert "Output strict JSON only" in calls[0]["contents"]
 
     bad = GeminiDomainClassifier("k", client=client("not json"))
-    assert run(bad.classify_founder({"experience": []}, None, None)) == OTHER_TAGS
+    fallback = run(bad.classify_founder({"experience": [{"title": "Hardware Engineer", "company": "X"}]}, None, None))
+    # No silent "other": the keyword classifier answers and the tags say why.
+    assert fallback["source"] == "fallback_error" and "JSONDecodeError" in fallback["error"]
+    assert fallback["primary_domain"] == "hardware"
     assert validate({"primary_domain": "fintech", "primary_subdomain": "not-a-subdomain"}) == OTHER_TAGS
+
+
+def test_recorded_classifier_replays_exact_inputs_only():
+    company = {"name": "Splitsy", "description": "An app that splits rent and bills between roommates each month"}
+    key = input_key("company", company_input_text(company, "medium"))
+    recorded = RecordedDomainClassifier({key: {
+        "tags": {"primary_domain": "fintech", "primary_subdomain": "payments", "keywords": ["bill-splitting"]},
+        "model": "gemini-2.5-flash", "recorded_at": "2026-03-01",
+    }})
+    hit = run(recorded.classify_company(company, "medium"))
+    assert (hit["source"], hit["primary_subdomain"], hit["model"]) == ("recorded", "payments", "gemini-2.5-flash")
+    miss = run(recorded.classify_company({**company, "description": company["description"] + "."}, "medium"))
+    assert miss["source"] == "keyword"
+
+
+def test_scoring_package_never_reads_the_clock():
+    for path in (Path(__file__).resolve().parents[1] / "scoring").glob("*.py"):
+        code = path.read_text()
+        assert not re.search(r"\.(now|today|utcnow)\(", code), path.name
+
+
+SIERRA_DATA_SHA256 = {
+    # sierra-demo c1e4568 backend/high_outcome_companies.json and backend/data/*.json
+    "high_outcome_companies.json": "10dc77d0693dfcd42c68f1c02b477f429c88e35c0a1b5ef033946dcb7b56d825",
+    "domain_taxonomy.json": "01af6fc1a6b302f9dd69a24911d248e9221bb75e6c45c857ef878bae34d88e94",
+    # keyword_synonyms.json differs from sierra's 1b4680... only by the "cd" backtick fix.
+    "keyword_synonyms.json": "c621e00681805e297ad6c8072207ed5a26a210bdea8016ace000afb01ebf32f0",
+}
+
+
+def test_copied_data_matches_the_stamped_sierra_files():
+    data = Path(__file__).resolve().parents[1] / "scoring" / "data"
+    for name, digest in SIERRA_DATA_SHA256.items():
+        assert hashlib.sha256((data / name).read_bytes()).hexdigest() == digest, name
 
 
 def load(fixture_id):
@@ -361,7 +409,8 @@ def test_evaluation_is_deterministic_and_self_consistent():
     composite = sum(s["score"] for s in a["signals"] if s["in_composite"])
     assert a["composite"]["score"] == pytest.approx(composite, abs=0.01)
     assert all(0 <= s["percent"] <= 100 for s in a["signals"])
-    assert a["classifier"] == "keyword-lexicon" and a["founder"]["synthetic"] is True
+    assert a["classifier"] == {"name": "keyword-lexicon", "founder_source": "keyword", "company_source": "keyword"}
+    assert a["founder"]["synthetic"] is True
 
 
 def test_default_registry_is_shared():

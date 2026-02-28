@@ -8,7 +8,6 @@ from __future__ import annotations
 
 import json
 import re
-from datetime import date
 from typing import Any
 
 
@@ -146,8 +145,3 @@ def _date_from_exp(exp: dict, kind: str) -> str | None:
         if value and value.lower() not in {"present", "now", "current", "none", "null", "?"}:
             return value
     return None
-
-
-def current_year_month() -> str:
-    today = date.today()
-    return f"{today.year}-{today.month:02d}"
