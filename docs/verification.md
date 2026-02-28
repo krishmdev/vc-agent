@@ -35,13 +35,18 @@ loop (audio in, VAD/turn detection, audio out). That part is only covered by the
 |---|---|---|---|
 | Deep research, recorded as fixtures | `deep-research-pro-preview-12-2025` | 3 runs, 234–244 s each, 159k–198k input tokens, 8.6k–11.9k output, 14.9k–20.2k thought tokens, 13–15 searches | `research-agent/fixtures/research/*.json` |
 | Follow-up answers for the fixtures | `gemini-2.5-flash` + Google Search | 3 answers recorded | same files |
-| Deep research through the running server | `POST /chat`, then polling `/chat/status` | queued → running → completed in 202 s, 19.7k-char report. 41 `/health` probes during the run: median 19.8 ms, max 314 ms, so the handlers weren't blocking | `verification/live-research-2026-03-01.json` |
-| KB-grounded guides | `gemini-2.5-flash` with 4 retrieved passages | 2 guides; they cited excerpts [2],[4] and [1]–[4]. With the Google Search tool attached, Gemini dropped every citation marker, so Search is now only used when the KB returns nothing | `verification/live-guides-2026-03-01.jsonl` |
-| Mem0 cloud | `AsyncMemoryClient` through `memory.make_memory_store()` | add queued, fact extracted ("User plans to charge each veterinary clinic $300 per month…"), found by `search("pricing")`; test user deleted afterwards. Also found that `get_all` without `filters` returns HTTP 400, so session priming had been failing; fixed | `verification/mem0-2026-03-01.json` |
-| LiveKit voice session, headless | LiveKit Cloud + `gemini-2.5-flash-native-audio-preview-12-2025` | `scripts/voice_smoke.py` joined a fresh room as a founder, played a synthesized question, and listened. Agent joined, heard the question (transcript: "How did the find its first customers…"), called `search_knowledge_base` ("Airbnb first customers acquisition strategy"), wrote to Mem0, and answered aloud: 27.6 s of agent audio, answer grounded in the Airbnb/Brian Chesky transcript | `verification/livekit-voice-2026-03-01.json` |
+| Deep research through the running server | `research-agent/scripts/live_smoke_research.py`: `POST /chat`, then polling `/chat/status` | queued → running → completed in 202 s, 19.7k-char report. 41 `/health` probes during the run: median 19.8 ms, max 314 ms, so the handlers weren't blocking | `verification/live-research-2026-03-01.json` |
+| KB-grounded guides | `research-agent/scripts/live_guides.py`, `gemini-2.5-flash` with 4 retrieved passages | 2 guides; they cited excerpts [2],[4] and [1]–[4]. With the Google Search tool attached, Gemini dropped every citation marker, so Search is now only used when the KB returns nothing | `verification/live-guides-2026-03-01.jsonl` |
+| Mem0 cloud | `livekit-voice-agent/scripts/mem0_smoke.py`, `AsyncMemoryClient` through `memory.make_memory_store()` | add queued, fact extracted ("User plans to charge each veterinary clinic $300 per month…"), found by `search("pricing")`; test user deleted afterwards. Also found that `get_all` without `filters` returns HTTP 400, so session priming had been failing; fixed | `verification/mem0-2026-03-01.json` |
+| LiveKit voice session, headless | LiveKit Cloud + `gemini-2.5-flash-native-audio-preview-12-2025` | `scripts/voice_smoke.py` joined a fresh room as a founder, played a synthesized question, and listened. Agent joined, heard the question (transcript: "How did the find its first customers…"), called `search_knowledge_base` ("Airbnb first customers acquisition strategy"), wrote to Mem0, and answered aloud: 27.6 s of agent audio, answer grounded in the Airbnb/Brian Chesky transcript. The tool calls and Mem0 writes are in the worker log, not the JSON | `verification/livekit-voice-2026-03-01.json`, `verification/livekit-voice-2026-03-01.worker.log` |
 
 The voice run used `KB_EMBEDDER=local` (the MiniLM collection) and a throwaway Mem0 user id,
-deleted afterwards.
+deleted afterwards. That run's JSON was reduced to final transcript segments by a one-off filter
+at the time (the `note` field in the file says so); `voice_smoke.py` now keeps only final
+segments itself. The worker log file holds only the tool, memory and transcript lines for the
+smoke window. The research, guide and Mem0 driver scripts were committed after those runs,
+written from the commands used. The research file's early `guide` block, from before the
+citation fix, was removed; `live-guides-2026-03-01.jsonl` has the guide results.
 
 Rough spend (an estimate, not a bill): four deep-research runs at roughly $1 each at Pro-tier
 token prices, plus a few cents of Flash, native audio and Mem0.

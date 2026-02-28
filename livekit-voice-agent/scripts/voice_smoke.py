@@ -7,7 +7,8 @@ records how much agent audio arrived and the agent's transcriptions, and prints 
 
     uv run python scripts/voice_smoke.py --wav question.wav --idea "..." [--out result.json]
 
-The WAV must be 16-bit mono PCM (make one with `say` + `afconvert` on macOS).
+The WAV must be 48 kHz, 16-bit, mono PCM (on macOS: `say -o q.aiff "..."` then
+`afconvert -f WAVE -d LEI16@48000 -c 1 q.aiff q.wav`). Only final transcript segments are kept.
 """
 
 import argparse
@@ -72,7 +73,7 @@ async def main() -> int:
     async def on_text(reader: rtc.TextStreamReader, identity: str):
         text = await reader.read_all()
         attrs = reader.info.attributes or {}
-        if text.strip():
+        if text.strip() and attrs.get("lk.transcription_final") == "true":
             transcripts.append({"t": round(time.monotonic() - started, 2), "from": identity, "final": attrs.get("lk.transcription_final"), "text": text})
 
     room.register_text_stream_handler("lk.transcription", lambda r, i: asyncio.ensure_future(on_text(r, i)))
@@ -92,8 +93,10 @@ async def main() -> int:
     greeting_audio = stats["audio_seconds"]
 
     with wave.open(args.wav, "rb") as wav:
-        rate, pcm = wav.getframerate(), wav.readframes(wav.getnframes())
-    assert rate == 48000 and len(pcm) % 2 == 0, "WAV must be 48 kHz 16-bit mono"
+        rate, channels, width = wav.getframerate(), wav.getnchannels(), wav.getsampwidth()
+        pcm = wav.readframes(wav.getnframes())
+    if (rate, channels, width) != (48000, 1, 2):
+        raise SystemExit(f"WAV must be 48 kHz, mono, 16-bit; got {rate} Hz, {channels} ch, {8 * width}-bit")
     spoke_at = round(time.monotonic() - started, 2)
     step = 480 * 2
     for i in range(0, len(pcm) - step, step):

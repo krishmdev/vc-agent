@@ -113,7 +113,7 @@ class LocalMemoryStore:
         docs = [tokens(r["memory"]) for r in rows]
         avg_len = sum(len(d) for d in docs) / len(docs) or 1.0
         df = {t: sum(1 for d in docs if t in d) for t in q}
-        k1, b = 1.2, 0.75
+        k1, length_norm = 1.2, 0.75
         scored = []
         for row, doc in zip(rows, docs):
             score = 0.0
@@ -122,7 +122,7 @@ class LocalMemoryStore:
                 if not tf:
                     continue
                 idf = math.log(1 + (len(docs) - df[t] + 0.5) / (df[t] + 0.5))
-                score += idf * tf * (k1 + 1) / (tf + k1 * (1 - b + b * len(doc) / avg_len))
+                score += idf * tf * (k1 + 1) / (tf + k1 * (1 - length_norm + length_norm * len(doc) / avg_len))
             similarity = 0.0
             if qvec is not None and row["embedding"]:
                 mvec = array.array("f", row["embedding"])
