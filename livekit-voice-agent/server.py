@@ -20,7 +20,7 @@ import logging
 import os
 from contextlib import asynccontextmanager
 
-from fastapi import FastAPI, HTTPException, WebSocket, WebSocketDisconnect
+from fastapi import FastAPI, HTTPException, Request, WebSocket, WebSocketDisconnect
 from fastapi.middleware.cors import CORSMiddleware
 from livekit.agents import AgentSession
 from livekit.agents.voice.run_result import ChatMessageEvent, FunctionCallEvent, FunctionCallOutputEvent
@@ -66,10 +66,21 @@ async def lifespan(app: FastAPI):
     yield
 
 
+ALLOWED_ORIGINS = {
+    o.strip() for o in os.environ.get("FRONTEND_ORIGINS", "http://localhost:3000,http://127.0.0.1:3000").split(",") if o.strip()
+}
+
+
+def origin_allowed(origin: str | None) -> bool:
+    """Browsers always send Origin on WebSocket and cross-site requests. Server-to-server calls
+    (the research agent, Next.js route handlers) send none and are allowed."""
+    return origin is None or origin in ALLOWED_ORIGINS
+
+
 app = FastAPI(lifespan=lifespan)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=os.environ.get("FRONTEND_ORIGINS", "http://localhost:3000,http://127.0.0.1:3000").split(","),
+    allow_origins=sorted(ALLOWED_ORIGINS),
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -95,11 +106,14 @@ async def kb_search(req: SearchRequest):
 
 
 @app.get("/memories")
-async def memories(user_id: str = MEM0_USER_ID, limit: int = 50):
+async def memories(request: Request, user_id: str = MEM0_USER_ID, limit: int = 50):
+    # Another site open in the same browser must not be able to read the founder's memories.
+    if not origin_allowed(request.headers.get("origin")):
+        raise HTTPException(status_code=403, detail="origin not allowed")
     store = memory_store()
     if store is None:
         return {"memories": [], "error": "memory disabled"}
-    data = await store.get_all(user_id=user_id, limit=limit)
+    data = await store.get_all(user_id=user_id, limit=limit, filters={"user_id": user_id})
     return {"memories": data.get("results", [])}
 
 
@@ -184,6 +198,10 @@ class TextConversation:
 
 @app.websocket("/ws/chat")
 async def chat(ws: WebSocket, mode: str = "mentor", idea: str | None = None):
+    # Without this, any page the founder visits could open a conversation on their keys.
+    if not origin_allowed(ws.headers.get("origin")):
+        await ws.close(code=1008)
+        return
     await ws.accept()
     conv = TextConversation(mode, idea)
     try:

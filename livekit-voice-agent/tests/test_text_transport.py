@@ -97,3 +97,15 @@ def test_kb_search_endpoint_returns_structured_hits(client):
     body = client.post("/kb/search", json={"query": "first customers", "top_k": 2}).json()
     assert body["embedder_id"] == "stub/kb/-/0/p0"
     assert body["results"][1]["url"] == "https://sequoiacap.com/article/stripe"
+
+
+def test_foreign_origins_are_rejected(client):
+    from starlette.websockets import WebSocketDisconnect
+
+    with pytest.raises(WebSocketDisconnect):
+        with client.websocket_connect("/ws/chat?mode=mentor", headers={"origin": "https://evil.example"}) as ws:
+            ws.receive_json()
+    assert client.get("/memories", headers={"origin": "https://evil.example"}).status_code == 403
+    assert client.get("/memories", headers={"origin": "http://127.0.0.1:3000"}).status_code == 200
+    with client.websocket_connect("/ws/chat?mode=mentor", headers={"origin": "http://127.0.0.1:3000"}) as ws:
+        assert ws.receive_json()["type"] == "agent_message"
