@@ -1,6 +1,6 @@
 "use client"
 
-import { ModuleId, SequoiaResource } from "@/lib/dashboard-types"
+import { ModuleId } from "@/lib/dashboard-types"
 import { sequoiaResources } from "@/lib/dashboard-data"
 import { cn } from "@/lib/utils"
 import { FileText, Box, BookOpen, Lightbulb, ExternalLink } from "lucide-react"

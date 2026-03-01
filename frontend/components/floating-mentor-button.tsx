@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useState } from "react";
 import {
     LiveKitRoom,
     useVoiceAssistant,
@@ -10,7 +10,7 @@ import {
 } from "@livekit/components-react";
 import { MediaDeviceFailure } from "livekit-client";
 import "@livekit/components-styles";
-import { Phone, PhoneOff, X, Headphones } from "lucide-react";
+import { PhoneOff, X, Headphones } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useAppStore } from "@/lib/store";
 import { OFFLINE } from "@/lib/mode";

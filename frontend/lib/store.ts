@@ -2,7 +2,7 @@
 
 import { create } from "zustand"
 import { persist } from "zustand/middleware"
-import { Module, ModuleId, Question } from "./dashboard-types"
+import { Module, ModuleId } from "./dashboard-types"
 import { initialModules } from "./dashboard-data"
 
 export type InsightCategory = "problem" | "solution" | "market" | "competition" | "monetization" | "risk" | "customer" | "gtm" | "tech" | "pmf"

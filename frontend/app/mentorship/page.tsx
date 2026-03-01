@@ -16,8 +16,7 @@ import {
   useVoiceAssistant,
   BarVisualizer,
   RoomAudioRenderer,
-  DisconnectButton,
-} from "@livekit/components-react"
+  } from "@livekit/components-react"
 import "@livekit/components-styles"
 
 // Resources that appear during the call

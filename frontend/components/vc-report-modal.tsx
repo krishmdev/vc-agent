@@ -7,7 +7,6 @@ import {
   DialogDescription,
 } from "@/components/ui/dialog"
 import { ScrollArea } from "@/components/ui/scroll-area"
-import { Button } from "@/components/ui/button"
 import { AlertTriangle, CheckCircle, Target, HelpCircle, ArrowRight } from "lucide-react"
 import { VCReport } from "@/lib/store"
 

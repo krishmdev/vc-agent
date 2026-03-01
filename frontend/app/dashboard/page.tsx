@@ -12,7 +12,6 @@ import {
   ExternalLink,
   Loader2,
   RefreshCw,
-  Presentation,
   Target,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"

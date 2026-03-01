@@ -30,7 +30,6 @@ export async function POST(req: NextRequest) {
 export async function GET(req: NextRequest) {
     const { searchParams } = new URL(req.url);
     const taskId = searchParams.get('taskId');
-    const action = searchParams.get('action'); // 'status'
 
     if (!taskId) {
         return NextResponse.json({ error: "Missing taskId" }, { status: 400 });

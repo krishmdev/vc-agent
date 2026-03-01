@@ -216,7 +216,7 @@ Research agent (`:8000`):
 | Method | Endpoint | Description |
 |--------|----------|-------------|
 | `POST` | `/chat` | Start a research turn (deep research first, fast follow-ups after). Returns `task_id`. |
-| `GET` | `/chat/status/{task_id}` | `queued` / `running` / `completed` / `failed`, with progress notes and elapsed time. 404 once the task is gone. |
+| `GET` | `/chat/status/{task_id}` | `queued` / `running` / `completed` / `failed`, with progress notes and elapsed time. 404 after a restart, or an hour after the task finished. |
 | `POST` | `/customer-reachout` | B2C communities or B2B leads for an ICP. Returns `task_id`. |
 | `POST` | `/generate_resource_article` | KB-grounded guide with `citations`. |
 | `POST` | `/resource_chat` | Follow-up about a guide, with citations. |
@@ -249,8 +249,8 @@ Details and result files: [docs/verification.md](docs/verification.md).
 ## Notes and limitations
 
 - **In-memory state.** Research tasks and chat sessions live in the research agent's process
-  memory, and `/api/vc-report` keeps the last report in a module variable. After a restart, a
-  poll returns 404 (the panel says the research was interrupted), and a follow-up question
+  memory, and `/api/vc-report` keeps the last report in a module variable. Finished tasks are
+  kept for an hour. After a restart, a poll returns 404 (the panel says the research was interrupted), and a follow-up question
   starts a fresh, paid deep-research run.
 - **Live research progress.** Gemini's interactions API only returns the thought and search
   steps once a run finishes, so live mode shows elapsed time until then.
