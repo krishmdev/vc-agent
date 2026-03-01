@@ -141,3 +141,20 @@ async def test_event_loop_stays_free_while_research_runs():
         ticks += 1
     assert time.monotonic() - started >= 1.4
     assert ticks >= 20
+
+
+def test_follow_up_during_first_turn_is_rejected(client):
+    fx = FIXTURES[0]
+    start = client.post("/chat", json={"message": FIRST_MESSAGE, "idea": fx.idea}).json()
+    again = client.post("/chat", json={"message": "and competitors?", "session_id": start["session_id"], "idea": fx.idea})
+    assert again.status_code == 409
+    poll(client, start["task_id"])
+    assert client.post("/chat", json={"message": "and competitors?", "session_id": start["session_id"], "idea": fx.idea}).status_code == 200
+
+
+def test_finished_tasks_are_evicted_after_the_ttl():
+    main.active_tasks.clear()
+    main.active_tasks["old"] = {"status": "completed", "started": 0.0, "finished": 0.0}
+    main.active_tasks["running"] = {"status": "running", "started": 0.0}
+    main.evict_tasks(now=main.TASK_TTL_S + 1)
+    assert list(main.active_tasks) == ["running"]

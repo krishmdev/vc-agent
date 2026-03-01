@@ -102,8 +102,12 @@ class SlideGenerationResponse(BaseModel):
 # In production, use Redis or Postgres
 chat_sessions: Dict[str, List[Dict[str, str]]] = {}  # session_id -> history [{role: user/assistant, content: ...}]
 active_tasks: Dict[str, Dict[str, Any]] = {}  # task_id -> {status, content, progress, ...}
+sessions_in_flight: set[str] = set()  # sessions whose first (deep research) turn is still running
 
 MAX_PROGRESS_NOTES = 12
+# Finished tasks are dropped after an hour, and the oldest go first past this many.
+TASK_TTL_S = 3600
+MAX_TASKS = 500
 
 # Deep research can run for many minutes, longer than a request cycle, so jobs are plain asyncio
 # tasks on the server's loop. Keep references so they aren't garbage collected mid-run.
@@ -116,7 +120,21 @@ def start_job(coro) -> None:
     job.add_done_callback(running_jobs.discard)
 
 
+def evict_tasks(now: float | None = None) -> None:
+    now = time.monotonic() if now is None else now
+    done = [tid for tid, t in active_tasks.items() if t["status"] in ("completed", "failed")]
+    for tid in done:
+        if now - active_tasks[tid].get("finished", now) > TASK_TTL_S:
+            del active_tasks[tid]
+    overflow = len(active_tasks) - MAX_TASKS
+    if overflow > 0:
+        finished = sorted((t.get("finished", t["started"]), tid) for tid, t in active_tasks.items() if t["status"] in ("completed", "failed"))
+        for _, tid in finished[:overflow]:
+            del active_tasks[tid]
+
+
 def new_task(prefix: str, kind: str, provider: str | None = None) -> str:
+    evict_tasks()
     task_id = f"{prefix}_{int(time.time())}_{str(uuid.uuid4())[:8]}"
     active_tasks[task_id] = {
         "status": "queued",
@@ -130,6 +148,8 @@ def new_task(prefix: str, kind: str, provider: str | None = None) -> str:
 
 def update_task(task_id: str, **fields: Any) -> None:
     active_tasks[task_id].update(fields)
+    if fields.get("status") in ("completed", "failed"):
+        active_tasks[task_id]["finished"] = time.monotonic()
 
 
 def gemini_client() -> genai.Client | None:
@@ -151,6 +171,7 @@ async def run_research_turn(task_id: str, session_id: str, user_message: str, co
     try:
         history = chat_sessions.get(session_id, [])
         if first_turn:
+            sessions_in_flight.add(session_id)
             prompt = build_deep_research_prompt(history, context, user_message)
             print(f"Starting deep research for task {task_id} (session {session_id}) via {research.name}")
             content = await research.deep_research(prompt, context=context, on_progress=on_progress)
@@ -165,6 +186,8 @@ async def run_research_turn(task_id: str, session_id: str, user_message: str, co
     except Exception as e:
         print(f"Error in research turn: {e}")
         update_task(task_id, status="failed", error=str(e))
+    finally:
+        sessions_in_flight.discard(session_id)
 
 
 @app.post("/chat", response_model=ChatResponse)
@@ -174,6 +197,9 @@ async def chat_endpoint(request: ChatRequest):
         chat_sessions[session_id] = []
 
     context_str = build_context(request.idea, request.problem, request.customer, request.product)
+    # A follow-up sent before the first turn finishes would otherwise start a second paid run.
+    if session_id in sessions_in_flight:
+        raise HTTPException(status_code=409, detail="The first research turn for this session is still running")
 
     # First turn runs the deep research agent; later turns are fast grounded follow-ups.
     first_turn = len(chat_sessions[session_id]) == 0
