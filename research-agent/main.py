@@ -22,6 +22,8 @@ sys.path.append(str(Path(__file__).resolve().parent))
 
 import settings  # noqa: E402
 from diagnostics import probe_egress  # noqa: E402
+from founder_api import make_domain_classifier  # noqa: E402
+from founder_api import router as founder_router  # noqa: E402
 from guides import citations_for, make_guide_writer  # noqa: E402
 from kb_client import KnowledgeBaseClient, KnowledgeBaseUnavailable  # noqa: E402
 from prompts import build_context, build_deep_research_prompt  # noqa: E402
@@ -36,6 +38,7 @@ from slide_generator import (  # noqa: E402
 async def lifespan(app: FastAPI):
     app.state.research = make_research_provider()
     app.state.guides = make_guide_writer()
+    app.state.classifier = make_domain_classifier()
     app.state.kb = KnowledgeBaseClient(settings.KB_SERVICE_URL)
     app.state.http = httpx.AsyncClient(timeout=30)
     print(f"research agent mode={settings.MODE} research={app.state.research.name}")
@@ -45,6 +48,7 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(lifespan=lifespan)
+app.include_router(founder_router)
 
 app.add_middleware(
     CORSMiddleware,
@@ -607,6 +611,7 @@ if settings.DIAGNOSTICS:
             "mode": settings.MODE,
             "research": app.state.research.name,
             "guides": app.state.guides.name if app.state.guides else None,
+            "classifier": app.state.classifier.name,
             "kb_service": settings.KB_SERVICE_URL,
             "gemini_key_visible": bool(os.environ.get("GEMINI_API_KEY")),
         }

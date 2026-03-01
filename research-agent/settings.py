@@ -47,6 +47,11 @@ FIXTURE_DIR = Path(os.environ.get("RESEARCH_FIXTURE_DIR", HERE / "fixtures" / "r
 FIXTURE_REPLAY_SECONDS = float(os.environ.get("RESEARCH_FIXTURE_REPLAY_SECONDS", "8"))
 
 
+# Offline founder scores for submitted profiles are computed as of this date, so they're
+# reproducible; sample founders use the date stored in their fixture. Live mode uses today.
+SCORING_AS_OF = os.environ.get("SCORING_AS_OF", "2026-03-01")
+
+
 def gemini_api_key() -> str | None:
     if OFFLINE:
         return None
