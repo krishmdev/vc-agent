@@ -88,7 +88,6 @@ function CallControls({ onLeave }: { onLeave: () => void }) {
         // Fire and forget - tell agent to generate
         const payload = new TextEncoder().encode(JSON.stringify({ type: "generate_report" }))
         await room.localParticipant.publishData(payload, { reliable: true })
-        console.log("Requested report generation...")
       }
     } catch (e) {
       console.error("Error asking for report:", e)

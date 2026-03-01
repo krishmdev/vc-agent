@@ -308,7 +308,6 @@ export default function DashboardPage() {
               variant="outline"
               size="sm"
               onClick={() => {
-                console.log("Sync button clicked");
                 // alert("Starting Sync..."); // visual debugging
                 autofillFromMemories();
               }}

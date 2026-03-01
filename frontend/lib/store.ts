@@ -367,19 +367,15 @@ export const useAppStore = create<AppState>()(
         set({ isAutofilling: true })
         try {
           // Step 1: Fetch memories from Mem0
-          console.log('[AUTOFILL] Fetching memories...')
           const memoriesRes = await fetch('/api/memories')
           const memoriesData = await memoriesRes.json()
 
           if (!memoriesData.memories || memoriesData.memories.length === 0) {
-            console.log('[AUTOFILL] No memories found')
             set({ isAutofilling: false })
             return
           }
-          console.log(`[AUTOFILL] Found ${memoriesData.memories.length} memories`)
 
           // Step 2: Extract fields using Gemini
-          console.log('[AUTOFILL] Extracting fields...')
           const extractRes = await fetch('/api/extract-fields', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -387,26 +383,21 @@ export const useAppStore = create<AppState>()(
           })
           const extractData = await extractRes.json()
 
-          console.log('[AUTOFILL] Extract response:', JSON.stringify(extractData))
 
           if (!extractData.fields || extractData.fields.length === 0) {
-            console.log('[AUTOFILL] No fields extracted')
             set({ isAutofilling: false })
             return
           }
-          console.log(`[AUTOFILL] Extracted ${extractData.fields.length} fields:`, extractData.fields)
 
           // Step 3: Update store with extracted fields - use set() directly for each update
           for (const field of extractData.fields) {
             const { moduleId, questionId, value } = field
             if (moduleId && questionId && value) {
-              console.log(`[AUTOFILL] Setting ${moduleId}.${questionId} = "${value.substring(0, 50)}..."`)
 
               // Directly update the state for each field
               set((state) => {
                 const mod = state.modules[moduleId as ModuleId]
                 if (!mod) {
-                  console.log(`[AUTOFILL] Module ${moduleId} not found`)
                   return state
                 }
 
@@ -429,7 +420,6 @@ export const useAppStore = create<AppState>()(
                   ? Math.round((completedQuestions.length / allQuestions.length) * 100)
                   : 0
 
-                console.log(`[AUTOFILL] Updated ${moduleId}.${questionId}, new completion: ${completionPercentage}%`)
 
                 return {
                   modules: {
@@ -445,7 +435,6 @@ export const useAppStore = create<AppState>()(
             }
           }
 
-          console.log('[AUTOFILL] Complete!')
         } catch (error) {
           console.error('[AUTOFILL] Error:', error)
         } finally {

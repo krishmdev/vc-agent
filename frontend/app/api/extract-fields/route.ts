@@ -149,11 +149,9 @@ function calculateJaccardIndex(textA: string, keywords: string[]): number {
 }
 
 export async function POST(request: NextRequest) {
-    console.log('[EXTRACT-FIELDS] Starting robust field extraction...')
 
     try {
         const { memories } = await request.json()
-        console.log('[EXTRACT-FIELDS] Received memories count:', memories?.length || 0)
 
         if (!memories || memories.length === 0) {
             return NextResponse.json({ fields: [] })
@@ -194,7 +192,6 @@ export async function POST(request: NextRequest) {
             // Threshold for "Good Enough" without LLM
             // 0.2 Jaccard is decent for short text. 
             if (bestScore >= 0.25) {
-                console.log(`[EXTRACT-FIELDS] ✅ Matched ${field.questionId} (Score: ${bestScore.toFixed(2)})`)
                 extractedFields.push({
                     moduleId: field.moduleId,
                     questionId: field.questionId,
@@ -211,7 +208,6 @@ export async function POST(request: NextRequest) {
         // AND we have some memories to analyze.
         // Using Gemini instead of OpenAI to avoid rate limits
         if (lowConfidenceFields.length > 0 && process.env.GEMINI_API_KEY && !isOffline()) {
-            console.log(`[EXTRACT-FIELDS] ⚠️ ${lowConfidenceFields.length} fields failed local match. Attempting Gemini extraction...`)
 
             // Limit to top 5 missing fields to save tokens/time if list is huge
             const targetFields = lowConfidenceFields.slice(0, 5)
@@ -252,7 +248,6 @@ Output ONLY valid JSON, no markdown.`
                         if (value && typeof value === 'string' && value.length > 5 && value !== "not found") {
                             const fieldDef = FIELD_SCHEMA.find(f => f.questionId === key)
                             if (fieldDef) {
-                                console.log(`[EXTRACT-FIELDS] ✨ Gemini extracted ${key}`)
                                 extractedFields.push({
                                     moduleId: fieldDef.moduleId,
                                     questionId: key,
@@ -269,7 +264,6 @@ Output ONLY valid JSON, no markdown.`
             }
         }
 
-        console.log(`[EXTRACT-FIELDS] Total fields extracted: ${extractedFields.length}`)
         return NextResponse.json({ fields: extractedFields })
     } catch (error) {
         console.error('[EXTRACT-FIELDS] Error:', error)

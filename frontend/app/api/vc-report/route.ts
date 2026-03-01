@@ -9,7 +9,6 @@ export async function POST(req: Request) {
   try {
     const body = await req.json();
     storedReport = body;
-    console.log("[API] Received VC Report:", body ? "Success" : "Empty");
     return NextResponse.json({ success: true });
   } catch (e) {
     console.error("[API] Failed to parse report:", e);

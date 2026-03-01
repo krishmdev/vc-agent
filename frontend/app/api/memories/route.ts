@@ -18,9 +18,6 @@ async function offlineMemories() {
 export async function GET() {
     if (isOffline()) return offlineMemories()
 
-    console.log('[MEMORIES API] Starting fetch...')
-    console.log('[MEMORIES API] MEM0_API_KEY present:', !!MEM0_API_KEY)
-    console.log('[MEMORIES API] MEM0_USER_ID:', MEM0_USER_ID)
 
     if (!MEM0_API_KEY) {
         console.error('[MEMORIES API] No MEM0_API_KEY found in env!')
@@ -30,7 +27,6 @@ export async function GET() {
     try {
         // Use GET with query params to fetch all memories for user
         const url = `https://api.mem0.ai/v1/memories/?user_id=${encodeURIComponent(MEM0_USER_ID)}&page_size=50`
-        console.log('[MEMORIES API] Fetching from:', url)
 
         const response = await fetch(url, {
             method: 'GET',
@@ -40,7 +36,6 @@ export async function GET() {
             },
         })
 
-        console.log('[MEMORIES API] Response status:', response.status)
 
         if (!response.ok) {
             const error = await response.text()
@@ -49,8 +44,6 @@ export async function GET() {
         }
 
         const data = await response.json()
-        console.log('[MEMORIES API] Raw response keys:', Object.keys(data))
-        console.log('[MEMORIES API] Raw response preview:', JSON.stringify(data).slice(0, 500))
 
         // Extract the memories from the response - try different formats
         let memories = []
@@ -62,10 +55,8 @@ export async function GET() {
             memories = data.memories
         }
 
-        console.log('[MEMORIES API] Extracted memories count:', memories.length)
 
         if (memories.length > 0) {
-            console.log('[MEMORIES API] First memory sample:', JSON.stringify(memories[0]).slice(0, 300))
         }
 
         return NextResponse.json({ memories })

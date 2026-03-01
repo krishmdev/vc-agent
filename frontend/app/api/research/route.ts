@@ -37,7 +37,7 @@ export async function GET(req: NextRequest) {
     }
 
     try {
-        const response = await fetch(`${RESEARCH_SERVICE_URL}/chat/status/${taskId}`);
+        const response = await fetch(`${RESEARCH_SERVICE_URL}/chat/status/${encodeURIComponent(taskId)}`);
         const data = await response.json().catch(() => ({ detail: response.statusText }));
         // Pass the status through: a 404 means the task is gone (e.g. the agent restarted).
         return NextResponse.json(data, { status: response.status });

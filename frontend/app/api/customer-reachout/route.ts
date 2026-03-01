@@ -36,7 +36,7 @@ export async function GET(req: NextRequest) {
     }
 
     try {
-        const response = await fetch(`${RESEARCH_SERVICE_URL}/chat/status/${taskId}`);
+        const response = await fetch(`${RESEARCH_SERVICE_URL}/chat/status/${encodeURIComponent(taskId)}`);
         if (!response.ok) {
              throw new Error(`Service error: ${response.statusText}`);
         }
