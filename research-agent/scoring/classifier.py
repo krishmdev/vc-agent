@@ -377,7 +377,13 @@ class GeminiDomainClassifier:
         response = await self._client.aio.models.generate_content(
             model=self.model,
             contents=gemini_prompt(kind, input_text),
-            config=types.GenerateContentConfig(response_mime_type="application/json", max_output_tokens=512),
+            # Thinking tokens count against max_output_tokens on 2.5 models; with sierra-demo's 512
+            # cap the JSON came back truncated, so thinking is off for this small labeling call.
+            config=types.GenerateContentConfig(
+                response_mime_type="application/json",
+                max_output_tokens=512,
+                thinking_config=types.ThinkingConfig(thinking_budget=0),
+            ),
         )
         parsed = json.loads(response.text or "")
         if not isinstance(parsed, dict):
