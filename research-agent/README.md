@@ -1,7 +1,7 @@
 # Launchpad research agent
 
-FastAPI service (port 8000) for market research, KB-grounded resource guides, customer
-discovery and pitch decks. Part of [Launchpad](../README.md).
+FastAPI service (port 8000) for market research, resource guides grounded in the knowledge base,
+customer discovery, and pitch decks. Part of [Launchpad](../README.md).
 
 - `/chat`: the first turn runs Gemini's Deep Research agent (`deep-research-pro-preview-12-2025`)
   with the team's "Problem Space Specialist" prompt (`prompts.py`); later turns use

@@ -1,16 +1,15 @@
 # Launchpad (VC Agent)
 
-**A platform to help prefounders become founders.** Won first place at Brown Hacks 2026.
+Launchpad won first place at Brown Hacks 2026. It helps prefounders work through a startup idea.
 
-Launchpad is a startup-validation studio built around Sequoia Capital's evaluation methodology.
-It takes an aspiring founder from a raw idea to an investor-ready story through a mentorship
-conversation with an AI Sequoia partner, a 5-tier validation dashboard, deep market research,
-customer discovery, a simulated VC pitch, and a printable investment memo.
+Launchpad uses Sequoia Capital's evaluation methodology to take an idea through a mentor
+conversation, a 5-tier validation dashboard, market research, customer discovery, a simulated VC
+pitch, and a printable investment memo. The aim is an investor-ready story.
 
-The mentor and the VC are real-time voice agents: LiveKit with Gemini native audio, grounded in
-a ChromaDB index of Sequoia podcast transcripts and articles, with long-term memory in Mem0. The
-market research is a FastAPI service driving Gemini's Deep Research agent. Everything also runs
-in an offline mode with no keys and no network, which is how the tests and CI exercise it.
+The mentor and VC voice agents use LiveKit and Gemini native audio. They search a ChromaDB index
+of Sequoia podcast transcripts and articles and use Mem0 for long-term memory. A FastAPI service
+runs Gemini Deep Research for market research. The tests and CI use an offline mode that needs no
+keys or network.
 
 Demo walkthrough: **[Loom](https://www.loom.com/share/8702524fdef44b14936edce3c784a8de)**
 
@@ -105,6 +104,56 @@ graph LR
   file is swapped atomically only after every chunk is embedded, and queries refuse a collection
   built by a different embedder, so OpenAI and MiniLM vectors never mix.
 
+## Founder score
+
+The dashboard's **Founder Score** panel scores the founder, not the idea. It uses one of four
+fictional samples or a profile you enter. Its engine is ported from sierra-demo, a pipeline
+Krish built with Akshay Irudayaraj to rank early-stage founders from SEC Form D filings. The
+port lives in `research-agent/scoring/` as a plain Python package (no web framework, settings,
+or clock).
+
+Four signals add up to a raw 0-100 score. Each point traces to a line of evidence:
+
+| Signal | Max | What it reads |
+|---|---|---|
+| Seen greatness | 35 | Roles at companies in a hand-built registry of 465 high-outcome companies, weighted by tier, seniority, and how early the founder joined; prior-founder and small-company-builder bonuses |
+| Horsepower | 30 | Duration-weighted title level (a 6-level hierarchy with technical-role modifiers), degree and school, and the climb across the last three roles |
+| Domain fit | 30 | Founder and company tagged in a 15-domain taxonomy and compared in seven tiers from a perfect subdomain match down to adjacent domains, with a keyword-overlap adjustment |
+| Sacrifice | 5 | The seniority left behind to start the company |
+| Timing | 15 | Raise recency and size, a founding title, a recent departure. Shown, not summed, as in sierra-demo |
+
+Bands: 60 and up is "strong", 45-59 "secondary", below 45 "filter", sierra-demo's starting points.
+
+Domain tags come from Gemini in live mode (sierra-demo's prompt and settings). Offline, the sample
+founders replay Gemini tags recorded for their exact inputs
+(`research-agent/scoring/recordings/classifications.json`, made by
+`scripts/record_classifications.py`), and anything else goes through a keyword lexicon over the
+same taxonomy. The scorecard says which source each tag came from.
+
+Endpoints: `GET /founder/samples`, `GET /founder/samples/{id}/score`, `POST /founder/score`
+(profile, optional company, `as_of`). Offline scores are computed as of a fixed date so they are
+reproducible; live mode uses the founder's date.
+
+Where the port deviates from sierra-demo, and why:
+
+- Stock-ticker aliases in the registry ("team" for Atlassian, "open" for Opendoor) only match
+  when written in capitals, and an alias can't take over another company's name.
+- Schools must match the founder-school list or an explicit alias exactly; sierra-demo's
+  substring and fuzzy match also credited Smith College ("mit"), Penn State and Northeastern.
+- A raise dated after `as_of` isn't counted as fresh.
+- A current role with no end date counts up to `as_of` in the horsepower weighting instead of
+  being dropped.
+- Experience is sorted (current roles first, then newest) before scoring, since the scorers read
+  the first entry as the founding role.
+- A failed or out-of-taxonomy Gemini classification falls back to the keyword lexicon and is
+  labelled `fallback_error`, instead of becoming "other" silently.
+- Company evidence comes from what the founder writes (a description of 8+ words is "medium"),
+  not from Form D, website and PDL enrichment.
+
+The registry lists 13 companies twice with conflicting tiers. As in sierra-demo, the later
+entry wins. The score reads a resume, not a person. It reflects what an investor skimming the
+profile would notice first.
+
 ## Live mode and offline mode
 
 `VC_AGENT_MODE` picks the providers at startup. Offline mode never reads provider keys, doesn't
@@ -146,9 +195,9 @@ make test lint       # pytest with sockets disabled (except localhost), ruff, es
 make e2e-offline     # Playwright: journey + egress canaries (run inside a network sandbox)
 ```
 
-The e2e is only meaningful with the network actually blocked. Its egress spec asks each backend
-process type (the Next.js server, the research agent, the voice-agent server) to connect to
-external hosts from inside itself, and fails if any connection succeeds. In CI it runs in a
+The e2e needs a blocked network to test offline behavior. Its egress spec asks each backend
+process (the Next.js server, research agent, and voice-agent server) to connect to external
+hosts, then fails if any connection succeeds. In CI it runs in a
 `--network none` container (`.github/workflows/ci.yml`, `ci/e2e.Dockerfile`). On macOS, wrap
 the whole process tree with `sandbox-exec`, using a profile that denies `network-outbound`
 except `localhost`. `make egress-companion` runs the same probes unsandboxed and expects them to
@@ -249,9 +298,9 @@ Details and result files: [docs/verification.md](docs/verification.md).
 ## Notes and limitations
 
 - **In-memory state.** Research tasks and chat sessions live in the research agent's process
-  memory, and `/api/vc-report` keeps the last report in a module variable. Finished tasks are
-  kept for an hour. After a restart, a poll returns 404 (the panel says the research was interrupted), and a follow-up question
-  starts a fresh, paid deep-research run.
+  memory, and `/api/vc-report` keeps the last report in a module variable. Finished tasks remain
+  for an hour. After a restart, a poll returns 404 and the panel says the research was
+  interrupted. A follow-up question then starts a fresh, paid deep-research run.
 - **Live research progress.** Gemini's interactions API only returns the thought and search
   steps once a run finishes, so live mode shows elapsed time until then.
 - **Offline answers are scripted.** The offline mentor quotes retrieved passages and asks the
@@ -275,8 +324,10 @@ Built at Brown Hacks 2026 by:
 - **Vedant Sangireddy**: the Sequoia resource drawer, tactical AI guides, and video resources.
 - **Krish Maheshwari**: Mem0 persistent memory for the voice agent (priming, recall tool,
   storage), dashboard question updates. After the hackathon: the offline composition, async
-  research agent, embedder-tagged knowledge base, local memory store, text transport, e2e tests,
-  CI and these docs.
+  research agent, embedder-tagged knowledge base, local memory store, text transport, the founder
+  score port, e2e tests, CI and these docs.
+
+The founder-scoring engine comes from sierra-demo by Krish Maheshwari and Akshay Irudayaraj.
 
 Some resource-drawer and research commits were made by Google's Jules coding agent and are
 attributed to it in the history.

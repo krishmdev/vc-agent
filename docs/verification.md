@@ -1,8 +1,8 @@
 # Verification
 
-What was checked, how, and what wasn't. All runs were on 2026-03-01 on an M1 Pro MacBook
-(macOS 26), with the result files in [`verification/`](verification/) and a host manifest in
-[`verification/manifest-2026-03-01.json`](verification/manifest-2026-03-01.json).
+This log lists what was checked and what remains unverified. All runs took place on 2026-03-01
+on an M1 Pro MacBook (macOS 26). Result files are in [`verification/`](verification/), with a
+host manifest in [`verification/manifest-2026-03-01.json`](verification/manifest-2026-03-01.json).
 
 ## Offline mode (no keys, no network)
 
@@ -16,40 +16,49 @@ What was checked, how, and what wasn't. All runs were on 2026-03-01 on an M1 Pro
 | Canary companion | `make egress-companion` (same spec, unsandboxed, `EXPECT_EGRESS=open`) | all 12 probes connected, so the offline result isn't vacuous |
 | Fixture prompts | test recomputes the app's first-turn prompt for each sample idea and compares its sha256 with the recording | all 3 match |
 
-The e2e journey: submit a sample idea, chat with the mentor (the answer carries a Sequoia KB
-citation and the founder's pricing statement lands in the local memory store, which starts
-empty), open the research panel (queued, then running with the recorded progress notes, then
-the rendered report with its exact-recording banner and `[cite: n]` links), generate a resource
-guide in the drawer (numbered Sequoia sources), then ask the floating mentor what was said about
-pricing (it recalls "$300 a month" and cites the KB). The browser also aborts and records any
-non-localhost request; none were made.
+The e2e journey submits a sample idea, then chats with the mentor. The answer cites the Sequoia
+knowledge base, and the founder's pricing statement is saved in the initially empty local memory
+store. The research panel moves from queued to running with recorded progress notes, then shows
+the report with its exact-recording banner and `[cite: n]` links. The resource drawer produces a
+guide with numbered Sequoia sources. Finally, the floating mentor recalls "$300 a month" and cites
+the knowledge base. The browser aborts and records non-localhost requests; it made none.
 
-What the offline path shares with voice: the `Assistant` class, persona prompts, both tools,
-memory capture, and the report builder all run inside a real livekit-agents `AgentSession`
-(text mode) with a scripted LLM. What it does not exercise: the realtime native-audio turn
-loop (audio in, VAD/turn detection, audio out). That part is only covered by the live run below.
+The offline path runs the same `Assistant` class, persona prompts, tools, memory capture, and
+report builder inside a livekit-agents `AgentSession` in text mode, with a scripted LLM. It does
+not exercise the real-time native-audio loop (audio input, VAD and turn detection, or audio
+output). Only the live run below covers that path.
 
 ## Live runs (Krish's keys)
 
 | What | Model / service | Result | File |
 |---|---|---|---|
-| Deep research, recorded as fixtures | `deep-research-pro-preview-12-2025` | 3 runs, 234–244 s each, 159k–198k input tokens, 8.6k–11.9k output, 14.9k–20.2k thought tokens, 13–15 searches | `research-agent/fixtures/research/*.json` |
+| Deep research, recorded as fixtures | `deep-research-pro-preview-12-2025` | 3 runs, 234-244 s each, 159k-198k input tokens, 8.6k-11.9k output, 14.9k-20.2k thought tokens, 13-15 searches | `research-agent/fixtures/research/*.json` |
 | Follow-up answers for the fixtures | `gemini-2.5-flash` + Google Search | 3 answers recorded | same files |
 | Deep research through the running server | `research-agent/scripts/live_smoke_research.py`: `POST /chat`, then polling `/chat/status` | queued → running → completed in 202 s, 19.7k-char report. 41 `/health` probes during the run: median 19.8 ms, max 314 ms, so the handlers weren't blocking | `verification/live-research-2026-03-01.json` |
-| KB-grounded guides | `research-agent/scripts/live_guides.py`, `gemini-2.5-flash` with 4 retrieved passages | 2 guides; they cited excerpts [2],[4] and [1]–[4]. With the Google Search tool attached, Gemini dropped every citation marker, so Search is now only used when the KB returns nothing | `verification/live-guides-2026-03-01.jsonl` |
+| KB-grounded guides | `research-agent/scripts/live_guides.py`, `gemini-2.5-flash` with 4 retrieved passages | 2 guides; they cited excerpts [2],[4] and [1]-[4]. With the Google Search tool attached, Gemini dropped every citation marker, so Search is now only used when the KB returns nothing | `verification/live-guides-2026-03-01.jsonl` |
 | Mem0 cloud | `livekit-voice-agent/scripts/mem0_smoke.py`, `AsyncMemoryClient` through `memory.make_memory_store()` | add queued, fact extracted ("User plans to charge each veterinary clinic $300 per month…"), found by `search("pricing")`; test user deleted afterwards. Also found that `get_all` without `filters` returns HTTP 400, so session priming had been failing; fixed | `verification/mem0-2026-03-01.json` |
-| LiveKit voice session, headless | LiveKit Cloud + `gemini-2.5-flash-native-audio-preview-12-2025` | `scripts/voice_smoke.py` joined a fresh room as a founder, played a synthesized question, and listened. Agent joined, heard the question (transcript: "How did the find its first customers…"), called `search_knowledge_base` ("Airbnb first customers acquisition strategy"), wrote to Mem0, and answered aloud: 27.6 s of agent audio, answer grounded in the Airbnb/Brian Chesky transcript. The tool calls and Mem0 writes are in the worker log, not the JSON | `verification/livekit-voice-2026-03-01.json`, `verification/livekit-voice-2026-03-01.worker.log` |
+| Founder-score domain tags, recorded | `research-agent/scripts/record_classifications.py`, `gemini-3-flash-preview` at temperature 0.1, thinking off (sierra-demo's classification settings) | 8 classifications (founder and company for the four fictional sample founders), recorded 2026-03-02 after 503 retries; the file header pins model, temperature, prompt and taxonomy hashes | `research-agent/scoring/recordings/classifications.json` |
+| LiveKit voice session, headless | LiveKit Cloud + `gemini-2.5-flash-native-audio-preview-12-2025` | `scripts/voice_smoke.py` joined a fresh room as a founder, played a synthesized question, and listened. Agent joined, heard the question (transcript: "How did the find its first customers…"), called `search_knowledge_base` ("Airbnb first customers acquisition strategy"), wrote to Mem0, and answered aloud: 27.6 s of agent audio, answer grounded in the Airbnb/Brian Chesky transcript. The tool calls and Mem0 writes are in the worker log, not the JSON | `verification/livekit-voice-2026-03-01.json`, `verification/livekit-voice-2026-03-01.worker.txt` |
 
 The voice run used `KB_EMBEDDER=local` (the MiniLM collection) and a throwaway Mem0 user id,
-deleted afterwards. That run's JSON was reduced to final transcript segments by a one-off filter
-at the time (the `note` field in the file says so); `voice_smoke.py` now keeps only final
-segments itself. The worker log file holds only the tool, memory and transcript lines for the
-smoke window. The research, guide and Mem0 driver scripts were committed after those runs,
-written from the commands used. The research file's early `guide` block, from before the
-citation fix, was removed; `live-guides-2026-03-01.jsonl` has the guide results.
+which was deleted afterwards. A one-off filter reduced that run's JSON to final transcript
+segments at the time, as noted in the file. `voice_smoke.py` now keeps only final segments itself.
+The worker log contains only tool, memory, and transcript lines from the smoke window. The
+research, guide, and Mem0 driver scripts were committed after those runs, based on the commands
+used. The research file's early `guide` block, created before the citation fix, was removed;
+`live-guides-2026-03-01.jsonl` has the guide results.
 
-Rough spend (an estimate, not a bill): four deep-research runs at roughly $1 each at Pro-tier
-token prices, plus a few cents of Flash, native audio and Mem0.
+Estimated spend, not a bill: four deep-research runs at roughly $1 each at Pro-tier token prices,
+plus a few cents for Flash, native audio, and Mem0.
+
+Founder-score sample scorecards, offline with the recorded tags: `research-agent/scripts/sample_scores.py`
+writes `verification/founder-samples-offline.json`; the same values are pinned in
+`research-agent/tests/test_founder_api.py`. The keyword-lexicon path (no recordings) gives
+different domain-fit scores and is pinned separately in `tests/test_scoring.py`.
+
+An earlier attempt on 2026-03-01 used `gemini-2.5-flash` with thinking on; with a 512-token cap
+the JSON came back truncated. sierra-demo itself turns thinking off for flash models, which the
+port now does too.
 
 ## Not verified
 

@@ -1,7 +1,7 @@
 # Launchpad voice agent
 
-The Sequoia mentor and VC personas, their tools, the knowledge base, and long-term memory. Part
-of [Launchpad](../README.md).
+This service contains the Sequoia mentor and VC personas, their tools, the knowledge base, and
+long-term memory. It is part of [Launchpad](../README.md).
 
 Two entry points share the same agent code (`mentor.py`, `personas.py`):
 

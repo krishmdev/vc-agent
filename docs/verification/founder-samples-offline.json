@@ -1,0 +1,86 @@
+{
+  "engine": "sierra-demo founder scoring, ported",
+  "mode": "offline",
+  "samples": [
+    {
+      "id": "career-switch-founder",
+      "name": "Soren Pikeford",
+      "synthetic": true,
+      "as_of": "2026-03-01",
+      "classifier": {
+        "name": "recorded+keyword",
+        "founder_source": "recorded",
+        "company_source": "recorded"
+      },
+      "composite": 52.25,
+      "band": "secondary",
+      "signals": {
+        "seen_greatness": 27.25,
+        "horsepower": 20.0,
+        "domain_fit": 0.0,
+        "sacrifice": 5.0,
+        "timing": 15.0
+      }
+    },
+    {
+      "id": "hardware-reviews-founder",
+      "name": "Idris Moncrieff-Hale",
+      "synthetic": true,
+      "as_of": "2026-03-01",
+      "classifier": {
+        "name": "recorded+keyword",
+        "founder_source": "recorded",
+        "company_source": "recorded"
+      },
+      "composite": 85.95,
+      "band": "strong",
+      "signals": {
+        "seen_greatness": 32.95,
+        "horsepower": 21.0,
+        "domain_fit": 28.0,
+        "sacrifice": 4.0,
+        "timing": 11.0
+      }
+    },
+    {
+      "id": "roommate-bills-founder",
+      "name": "Juniper Ashdown",
+      "synthetic": true,
+      "as_of": "2026-03-01",
+      "classifier": {
+        "name": "recorded+keyword",
+        "founder_source": "recorded",
+        "company_source": "recorded"
+      },
+      "composite": 30.1,
+      "band": "filter",
+      "signals": {
+        "seen_greatness": 5.1,
+        "horsepower": 4.0,
+        "domain_fit": 18.0,
+        "sacrifice": 3.0,
+        "timing": 6.0
+      }
+    },
+    {
+      "id": "vet-clinic-founder",
+      "name": "Wren Castellano",
+      "synthetic": true,
+      "as_of": "2026-03-01",
+      "classifier": {
+        "name": "recorded+keyword",
+        "founder_source": "recorded",
+        "company_source": "recorded"
+      },
+      "composite": 55.7,
+      "band": "secondary",
+      "signals": {
+        "seen_greatness": 12.7,
+        "horsepower": 14.0,
+        "domain_fit": 25.0,
+        "sacrifice": 4.0,
+        "timing": 15.0
+      }
+    }
+  ]
+}

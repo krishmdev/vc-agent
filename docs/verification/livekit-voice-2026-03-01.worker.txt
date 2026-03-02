@@ -1,0 +1,30 @@
+# livekit-voice-agent worker log, 2026-03-01 12:16-12:21 EDT (three voice_smoke.py runs).
+# Only tool, memory and transcript lines are kept (grep for RAG TOOL, MEM0, USER, received job).
+2026-03-01 12:16:40,341 - livekit.agents - INFO - received job request
+2026-03-01 12:16:46,664 - memory_voice_agent - INFO - [RAG TOOL] Query: vertical saas
+2026-03-01 12:16:47,714 - memory_voice_agent - INFO - [RAG TOOL] Found 3 results
+2026-03-01 12:16:48,106 - memory_voice_agent - INFO - [MEM0 TOOL] Agent requested memory recall for: 'founder startup idea'
+2026-03-01 12:17:01,080 - memory_voice_agent - INFO - [USER] Hi, I'm building practice management software for independence red clinics.
+2026-03-01 12:17:01,941 - memory_voice_agent - INFO - [MEM0] Stored user message
+2026-03-01 12:17:30,077 - memory_voice_agent - INFO - [USER] find its first customers and what should I learn from that?
+2026-03-01 12:17:30,689 - memory_voice_agent - INFO - [MEM0] Stored assistant message
+2026-03-01 12:17:30,853 - memory_voice_agent - INFO - [MEM0] Stored user message
+2026-03-01 12:17:59,336 - livekit.agents - INFO - received job request
+2026-03-01 12:18:08,493 - memory_voice_agent - INFO - [RAG TOOL] Query: vertical SaaS strategy
+2026-03-01 12:18:12,431 - memory_voice_agent - INFO - [RAG TOOL] Found 3 results
+2026-03-01 12:18:15,961 - memory_voice_agent - INFO - [USER] Hi, I'm building practice management software for independent clinics.
+2026-03-01 12:18:16,548 - memory_voice_agent - INFO - [MEM0] Stored user message
+2026-03-01 12:18:24,800 - memory_voice_agent - INFO - [USER] How did Arabian be find its first customers and what should I learn from that?
+2026-03-01 12:18:24,806 - memory_voice_agent - INFO - [RAG TOOL] Query: Airbnb early customer acquisition strategy Sequoia
+2026-03-01 12:18:24,855 - memory_voice_agent - INFO - [RAG TOOL] Found 3 results
+2026-03-01 12:18:25,498 - memory_voice_agent - INFO - [MEM0] Stored user message
+2026-03-01 12:18:54,538 - memory_voice_agent - INFO - [MEM0] Stored assistant message
+2026-03-01 12:19:08,082 - livekit.agents - INFO - received job request
+2026-03-01 12:19:23,377 - memory_voice_agent - INFO - [USER] HI
+2026-03-01 12:19:30,063 - memory_voice_agent - INFO - [USER] building practice management software for independent vet clinic.
+2026-03-01 12:19:30,769 - memory_voice_agent - INFO - [MEM0] Stored user message
+2026-03-01 12:19:38,570 - memory_voice_agent - INFO - [USER] How did the find its first customers and what should I learn from that?
+2026-03-01 12:19:38,639 - memory_voice_agent - INFO - [RAG TOOL] Query: Airbnb first customers acquisition strategy
+2026-03-01 12:19:40,960 - memory_voice_agent - INFO - [MEM0] Stored user message
+2026-03-01 12:19:46,138 - memory_voice_agent - INFO - [RAG TOOL] Found 3 results
+2026-03-01 12:20:23,057 - memory_voice_agent - INFO - [MEM0] Stored assistant message
