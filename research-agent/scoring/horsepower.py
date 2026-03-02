@@ -5,7 +5,6 @@ sierra-demo's horsepower_scorer."""
 from __future__ import annotations
 
 import re
-from difflib import SequenceMatcher
 
 from .profile import (
     duration_months,
@@ -91,17 +90,37 @@ def _norm_school(value: str) -> str:
     return re.sub(r"[^a-z0-9 ]+", " ", value.lower()).strip()
 
 
+# Common alternate names for schools on the list. sierra-demo matched by substring and a fuzzy
+# ratio, which also credited Smith College ("mit"), Penn State, Northeastern ("northwestern"),
+# Harvard Extension and a bare "University". Here a school must match a list entry or one of these
+# aliases exactly after normalization.
+SCHOOL_ALIASES = {
+    "stanford graduate school of business": "stanford university",
+    "harvard business school": "harvard university",
+    "harvard college": "harvard university",
+    "mit sloan school of management": "massachusetts institute of technology",
+    "massachusetts institute of technology mit": "massachusetts institute of technology",
+    "the wharton school": "university of pennsylvania",
+    "wharton school of the university of pennsylvania": "university of pennsylvania",
+    "university of michigan ann arbor": "university of michigan",
+    "university of illinois urbana champaign": "university of illinois",
+    "university of illinois at urbana champaign": "university of illinois",
+    "university of washington seattle": "university of washington",
+    "uc berkeley haas": "university of california berkeley",
+    "iit bombay": "indian institute of technology",
+    "iit delhi": "indian institute of technology",
+    "iit madras": "indian institute of technology",
+    "iit kanpur": "indian institute of technology",
+    "iit kharagpur": "indian institute of technology",
+}
+_FOUNDER_SCHOOLS = {re.sub(r"\s+", " ", re.sub(r"[^a-z0-9 ]+", " ", s.lower())).strip() for s in TOP_SCHOOLS}
+
+
 def _is_founder_school(school: str) -> bool:
-    normalized = _norm_school(school)
+    normalized = re.sub(r"\s+", " ", _norm_school(school))
     if not normalized:
         return False
-    for candidate in TOP_SCHOOLS:
-        cand = _norm_school(candidate)
-        if cand and (cand in normalized or normalized in cand):
-            return True
-        if cand and SequenceMatcher(None, normalized, cand).ratio() >= 0.85:
-            return True
-    return False
+    return normalized in _FOUNDER_SCHOOLS or normalized in SCHOOL_ALIASES
 
 
 def _degree_kind(degree: str) -> str:
@@ -116,7 +135,9 @@ def _degree_kind(degree: str) -> str:
 
 
 class HorsepowerScorer:
-    def score(self, profile: dict, company_tags: dict | None = None) -> dict:
+    def score(self, profile: dict, company_tags: dict | None = None, as_of: str | None = None) -> dict:
+        """`as_of` (YYYY-MM) closes open-ended roles for duration weighting. sierra-demo dropped a
+        current role with no end date from the weighting; here it counts up to `as_of`."""
         experience = get_experience(profile)
         education = get_education(profile)
         classified = []
@@ -141,7 +162,7 @@ class HorsepowerScorer:
                 "base_level": base_level,
                 "role_modifier": modifier,
                 "start_date": get_start_date(exp),
-                "end_date": get_end_date(exp),
+                "end_date": get_end_date(exp) or (as_of if get_start_date(exp) else None),
             }
             classified.append(item)
             months = duration_months(item["start_date"], item["end_date"])

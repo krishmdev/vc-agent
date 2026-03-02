@@ -16,7 +16,7 @@ from datetime import date, datetime
 from .classifier import DomainClassifier
 from .domain_fit import DomainFitScorer, company_evidence_level
 from .horsepower import HorsepowerScorer
-from .profile import get_experience, get_title
+from .profile import get_company_name, get_experience, get_title
 from .sacrifice import SacrificeScorer
 from .seen_greatness import SeenGreatnessScorer
 from .timing import TimingScorer
@@ -52,7 +52,18 @@ def _tag(tags: dict) -> str:
     return f"{d}/{s}" if s else d
 
 
-def seen_greatness_evidence(sg: dict) -> list[dict]:
+def display_names(profile: dict, registry) -> dict[str, str]:
+    """Registry names are lowercase ("openai", "jfrog"); show the founder's own spelling."""
+    names: dict[str, str] = {}
+    for exp in get_experience(profile):
+        raw = get_company_name(exp)
+        matched, _, _ = registry.match(raw)
+        if matched:
+            names.setdefault(matched["name"], raw)
+    return names
+
+
+def seen_greatness_evidence(sg: dict, names: dict[str, str]) -> list[dict]:
     b = sg["breakdown"]
     best: dict[str, dict] = {}
     for item in b["considered"]:
@@ -65,7 +76,7 @@ def seen_greatness_evidence(sg: dict) -> list[dict]:
         inflection = f", inflection {item['inflection_year']}" if item.get("inflection_year") else ""
         out.append({
             "text": (
-                f"{item['company'].title()} (tier {item['tier']}{inflection}): {item['title']}{joined}. "
+                f"{names.get(item['company'], item['company'])} (tier {item['tier']}{inflection}): {item['title']}{joined}. "
                 f"{_fmt(item['base_points'])} base x {_fmt(item['seniority_multiplier'])} seniority x "
                 f"{_fmt(item['earliness_multiplier'])} earliness = {_fmt(item['points'])}"
             ),
@@ -75,7 +86,7 @@ def seen_greatness_evidence(sg: dict) -> list[dict]:
     for item in b["considered"]:
         if item.get("skipped"):
             reason = "not a technical role at a technical company" if item["skipped"] == "role_qualifier" else "title not recognized"
-            out.append({"text": f"{item['company'].title()}: {item['title']} not counted ({reason})", "source": "registry", "points": 0})
+            out.append({"text": f"{names.get(item['company'], item['company'])}: {item['title']} not counted ({reason})", "source": "registry", "points": 0})
     if b["prior_founder_bonus"]:
         out.append({"text": f"Prior founder role ({b['prior_founder_kind']}): +{_fmt(b['prior_founder_bonus'])}", "source": "profile", "points": b["prior_founder_bonus"]})
     if b["small_co_builder_bonus"]:
@@ -189,7 +200,7 @@ async def evaluate_founder(
     founder_tags = await classifier.classify_founder(profile, matched_categories, entity)
     company_tags = await classifier.classify_company(company, company_evidence_level(company)) if company else {}
     df = DomainFitScorer().score(profile, company, founder_tags, company_tags)
-    hp = HorsepowerScorer().score(profile, company_tags=company_tags)
+    hp = HorsepowerScorer().score(profile, company_tags=company_tags, as_of=as_of_dt.strftime("%Y-%m"))
     sac = SacrificeScorer().score(profile, filing={"entity_name": entity} if entity else None)
     filing = None
     if company and (company.get("raise_date") or company.get("raise_amount")):
@@ -206,7 +217,7 @@ async def evaluate_founder(
     }
     composite = round(sum(scores[k] for k in ("seen_greatness", "horsepower", "domain_fit", "sacrifice")), 2)
     evidence = {
-        "seen_greatness": seen_greatness_evidence(sg),
+        "seen_greatness": seen_greatness_evidence(sg, display_names(profile, sg_scorer.registry)),
         "horsepower": horsepower_evidence(hp),
         "domain_fit": domain_fit_evidence(df),
         "sacrifice": sacrifice_evidence(sac),
@@ -221,6 +232,8 @@ async def evaluate_founder(
             "max": MAXIMA[key],
             "percent": round(100 * scores[key] / MAXIMA[key], 1),
             "in_composite": key != "timing",
+            # A 0 for domain fit without a company, or timing without a raise, means "not scored".
+            "scored": not ((key == "domain_fit" and not company) or (key == "timing" and not filing)),
             "evidence": evidence[key],
         }
         for key in MAXIMA
@@ -235,7 +248,7 @@ async def evaluate_founder(
         "as_of": as_of_dt.date().isoformat(),
         "founder": {"name": profile.get("name") or "", "synthetic": bool(profile.get("synthetic"))},
         "company": company,
-        "composite": {"score": composite, "max": 100, **verdict(composite)},
+        "composite": {"score": composite, "max": 100, **verdict(composite), "thresholds": {"strong": STRONG, "secondary": SECONDARY}},
         "signals": signals,
         "advice": advice(scores, df),
         "tags": {"founder": founder_tags, "company": company_tags},

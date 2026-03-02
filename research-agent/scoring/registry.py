@@ -4,6 +4,16 @@ The list (data/high_outcome_companies.json, 465 companies) is hand-built: a comp
 because it's a recognized founder factory, not because it's large. Matching is exact on the
 normalized name or an alias, else a rapidfuzz ratio >= 85 on names that share a non-generic
 token. Short names (3 characters or fewer) only match exactly.
+
+Two deviations from sierra-demo, both in code so the data file stays byte-identical:
+- Stock-ticker aliases (a single token of 4 characters or fewer that isn't the company's own
+  name: "team" for Atlassian, "frog" for JFrog, "open", "dash", "z") only match when the input
+  is written in capitals, like a ticker. Otherwise "Team Rubicon" or "Open Road" matched.
+- An alias can't take over another company's canonical name ("segment" is Segment, not an alias
+  of Twilio Segment). sierra-demo's index was last-write-wins across names and aliases alike.
+
+The file lists 13 companies twice with conflicting data (plaid as tier 1 and tier 2, for
+example). For those the later entry wins, as in sierra-demo, so scores stay comparable.
 """
 
 from __future__ import annotations
@@ -30,13 +40,7 @@ LEGAL_SUFFIXES = {
 }
 GENERIC_MATCH_WORDS = {"technologies", "technology", "systems", "holdings", "labs", "group"}
 SHORT_ALIAS_MAX_LEN = 3
-TECHNICAL_ROLE_WORDS = {
-    "engineer", "engineering", "scientist", "research", "researcher", "developer",
-    "product", "platform", "infrastructure", "infra", "security", "technical",
-    "technology", "data", "analytics", "semiconductor", "hardware", "software",
-    "architect", "cloud", "network", "telecom", "medical", "device", "aerospace",
-    "space", "materials", "risk",
-}
+TICKER_ALIAS_MAX_LEN = 4
 
 
 def normalize_company_name(name: str) -> str:
@@ -45,8 +49,8 @@ def normalize_company_name(name: str) -> str:
     return " ".join(tokens)
 
 
-def _tokens(name: str) -> set[str]:
-    return set(normalize_company_name(name).split())
+def is_ticker_alias(alias: str, company_name: str) -> bool:
+    return " " not in alias and len(alias) <= TICKER_ALIAS_MAX_LEN and alias != normalize_company_name(company_name)
 
 
 class CompanyRegistry:
@@ -54,14 +58,22 @@ class CompanyRegistry:
         self.path = Path(path)
         self.companies = self._load()
         self.alias_index: dict[str, dict] = {}
+        self.ticker_index: dict[str, dict] = {}
         self.aliases: list[tuple[str, dict]] = []
         for company in self.companies:
-            names = [company.get("name", "")] + list(company.get("aliases") or [])
-            for name in names:
-                normalized = normalize_company_name(name)
+            normalized = normalize_company_name(company.get("name", ""))
+            if normalized:
+                self.alias_index[normalized] = company  # later duplicates win, as in sierra-demo
+                self.aliases.append((normalized, company))
+        for company in self.companies:
+            for alias in company.get("aliases") or []:
+                normalized = normalize_company_name(alias)
                 if not normalized:
                     continue
-                self.alias_index[normalized] = company
+                if is_ticker_alias(normalized, company.get("name", "")):
+                    self.ticker_index.setdefault(normalized, company)
+                    continue
+                self.alias_index.setdefault(normalized, company)
                 self.aliases.append((normalized, company))
 
     def _load(self) -> list[dict]:
@@ -77,6 +89,9 @@ class CompanyRegistry:
         exact = self.alias_index.get(normalized)
         if exact:
             return exact, 100.0, "exact"
+        stripped = (name or "").strip()
+        if stripped.isupper() and normalized in self.ticker_index:
+            return self.ticker_index[normalized], 100.0, "ticker"
 
         name_tokens = set(normalized.split())
         if len(normalized) <= SHORT_ALIAS_MAX_LEN:

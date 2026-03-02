@@ -43,7 +43,9 @@ class TimingScorer:
         sig_date = _parse_date(filing.get("signature_date"))
         if sig_date:
             days_ago = (now - sig_date).days
-            if days_ago <= 30:
+            if days_ago < 0:
+                signals.append(f"Raise dated {-days_ago}d in the future; not counted")
+            elif days_ago <= 30:
                 points += 10
                 signals.append(f"Filing signed {days_ago}d ago (fresh)")
             elif days_ago <= 90:
@@ -57,7 +59,7 @@ class TimingScorer:
             amount = 0
         if 0 < amount < 500_000:
             points += 3
-            signals.append(f"Small raise (${amount:,}) — pre-seed signal")
+            signals.append(f"Small raise (${amount:,}), a pre-seed signal")
         elif 500_000 <= amount <= 1_000_000:
             points += 2
             signals.append(f"Seed-range raise (${amount:,})")

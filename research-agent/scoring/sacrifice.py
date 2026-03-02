@@ -43,8 +43,6 @@ class SacrificeScorer:
 
         if founding_idx is not None:
             prior = self._prior_role_by_dates(experience, founding_idx) or self._prior_role_by_order(experience, founding_idx)
-        elif len(experience) >= 2:
-            prior = experience[1]
 
         prior_company_name = get_company_name(prior) if prior else ""
         matched, match_score, match_method = self.registry.match(prior_company_name) if prior_company_name else (None, 0.0, "none")
