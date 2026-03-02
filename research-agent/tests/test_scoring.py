@@ -514,3 +514,12 @@ def test_evaluation_is_deterministic_and_self_consistent():
 
 def test_default_registry_is_shared():
     assert default_registry() is default_registry()
+
+
+def test_duplicate_companies_resolve_like_sierra_demo():
+    # "elastic" is listed twice. The later entry wins for keys both entries share (the name and
+    # "elastic nv"); aliases only the first entry has still point to it, as in sierra-demo.
+    registry = CompanyRegistry()
+    first, second = [c for c in registry.companies if c["name"] == "elastic"]
+    assert registry.match("Elastic")[0] is second and registry.match("Elastic NV")[0] is second
+    assert registry.match("Elasticsearch")[0] is first and registry.match("ESTC")[0] is first

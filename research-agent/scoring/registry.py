@@ -10,10 +10,12 @@ Two deviations from sierra-demo, both in code so the data file stays byte-identi
   name: "team" for Atlassian, "frog" for JFrog, "open", "dash", "z") only match when the input
   is written in capitals, like a ticker. Otherwise "Team Rubicon" or "Open Road" matched.
 - An alias can't take over another company's canonical name ("segment" is Segment, not an alias
-  of Twilio Segment). sierra-demo's index was last-write-wins across names and aliases alike.
+  of Twilio Segment). Otherwise the index is last-write-wins, as in sierra-demo.
 
-The file lists 13 companies twice with conflicting data (plaid as tier 1 and tier 2, for
-example). For those the later entry wins, as in sierra-demo, so scores stay comparable.
+The file lists 13 companies more than once; 4 of them with conflicting tiers (elastic, plaid,
+marqeta, brex). The later entry wins for any key both entries share, as in sierra-demo, so
+scores stay comparable; an alias only the earlier entry lists ("elasticsearch") still points to
+the earlier entry.
 """
 
 from __future__ import annotations
@@ -60,20 +62,24 @@ class CompanyRegistry:
         self.alias_index: dict[str, dict] = {}
         self.ticker_index: dict[str, dict] = {}
         self.aliases: list[tuple[str, dict]] = []
+        canonical = {normalize_company_name(c.get("name", "")) for c in self.companies} - {""}
+        # Same order as sierra-demo (each company's name, then its aliases) so fuzzy ties resolve
+        # the same way. Later entries overwrite earlier ones, as in sierra-demo, except that an
+        # alias never overwrites a canonical name and tickers live in their own index.
         for company in self.companies:
-            normalized = normalize_company_name(company.get("name", ""))
-            if normalized:
-                self.alias_index[normalized] = company  # later duplicates win, as in sierra-demo
-                self.aliases.append((normalized, company))
-        for company in self.companies:
+            name = normalize_company_name(company.get("name", ""))
+            if name:
+                self.alias_index[name] = company
+                self.aliases.append((name, company))
             for alias in company.get("aliases") or []:
                 normalized = normalize_company_name(alias)
-                if not normalized:
+                if not normalized or normalized == name:
                     continue
                 if is_ticker_alias(normalized, company.get("name", "")):
-                    self.ticker_index.setdefault(normalized, company)
+                    self.ticker_index[normalized] = company
                     continue
-                self.alias_index.setdefault(normalized, company)
+                if normalized not in canonical:
+                    self.alias_index[normalized] = company
                 self.aliases.append((normalized, company))
 
     def _load(self) -> list[dict]:
