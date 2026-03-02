@@ -16,7 +16,7 @@ export function ModuleSidebar({ onModuleClick }: ModuleSidebarProps) {
   const moduleOrder: ModuleId[] = ['founder', 'problem', 'customer', 'product', 'market']
 
   return (
-    <div className="w-64 bg-card border-r border-border/50 flex flex-col h-full">
+    <div className="hidden md:flex w-64 shrink-0 bg-card border-r border-border/50 flex-col h-full">
       {/* Global Progress */}
       <div className="p-6 border-b border-border/50">
         <div className="space-y-2">

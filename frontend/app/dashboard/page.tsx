@@ -227,9 +227,9 @@ export default function DashboardPage() {
     <main className="min-h-screen bg-background flex flex-col">
       {/* Top Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-40 bg-background/80 backdrop-blur-md border-b border-border">
-        <div className="h-16 px-4 md:px-6 flex items-center justify-between gap-4">
+        <div className="h-16 px-3 md:px-6 flex items-center justify-between gap-3 overflow-x-auto">
           {/* Left: Profile + Call Icons */}
-          <div className="flex items-center gap-3">
+          <div className="flex shrink-0 items-center gap-1 sm:gap-3">
             {/* Research Agent */}
             <ResearchAgentIcon onClick={() => setIsResearchOpen(true)} />
 
@@ -264,7 +264,7 @@ export default function DashboardPage() {
             {vcReport && (
               <button
                 onClick={() => setIsReportModalOpen(true)}
-                className="relative flex items-center gap-2 px-3 py-1.5 rounded-full hover:bg-secondary transition-colors group text-indigo-600 dark:text-indigo-400"
+                className="relative flex items-center gap-2 px-3 py-1.5 rounded-full hover:bg-secondary transition-colors group text-primary"
                 aria-label="View VC Feedback"
               >
                 <Target className="w-4 h-3" />
@@ -312,7 +312,7 @@ export default function DashboardPage() {
             </div>
           </div>
           {/* Center: Breadcrumb */}
-          <BreadcrumbNav currentStep="dashboard" />
+          <div className="hidden lg:block"><BreadcrumbNav currentStep="dashboard" /></div>
 
           {/* Right: Sync + Resources + Investor Memo */}
           <div className="flex items-center gap-2">
@@ -339,7 +339,7 @@ export default function DashboardPage() {
               href="https://www.sequoiacap.com/article/writing-a-business-plan/"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+              className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
             >
               <BookOpen className="w-4 h-4" />
               <span className="hidden md:inline">Resources</span>
@@ -356,7 +356,7 @@ export default function DashboardPage() {
             >
               <FileText className="w-4 h-4" />
               <span className="hidden sm:inline">
-                {vcReport ? "View Investor Memo (Unocked)" : "Investor Memo"}
+                {vcReport ? "View Investor Memo (Unlocked)" : "Investor Memo"}
               </span>
             </Button>
           </div>
@@ -398,7 +398,23 @@ export default function DashboardPage() {
         <ModuleSidebar onModuleClick={handleModuleClick} />
 
         {/* Center - Module Content */}
-        <div className="flex-1 bg-background overflow-hidden flex flex-col">
+        <div className="flex-1 min-w-0 bg-background overflow-hidden flex flex-col">
+          {/* Below md the sidebar is hidden; tiers become a row of chips */}
+          <nav aria-label="Validation tiers" className="md:hidden flex gap-2 overflow-x-auto border-b border-border px-4 py-2">
+            {(['founder', 'problem', 'customer', 'product', 'market'] as ModuleId[]).map((id, i) => (
+              <button
+                key={id}
+                onClick={() => handleModuleClick(id)}
+                aria-current={expandedModuleId === id ? "true" : undefined}
+                className={cn(
+                  "shrink-0 rounded-full border px-3 py-1 text-xs font-medium",
+                  expandedModuleId === id ? "border-primary bg-primary text-primary-foreground" : "border-border text-muted-foreground"
+                )}
+              >
+                Tier {i + 1} · {modules[id].completionPercentage}%
+              </button>
+            ))}
+          </nav>
           {/* VC Feedback Banner */}
           {vcReport && (
             <div className="p-6 pb-0">

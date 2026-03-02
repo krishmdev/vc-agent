@@ -33,7 +33,7 @@ export function ResourceSidebarDashboard({ moduleId, activeQuestionId }: Resourc
 
   if (!moduleId || displayedResources.length === 0) {
     return (
-      <div className="w-80 bg-card border-l border-border/50 flex flex-col h-full">
+      <div className="hidden lg:flex w-80 shrink-0 bg-card border-l border-border/50 flex-col h-full">
         <div className="p-6 border-b border-border/50">
           <h3 className="font-semibold text-sm text-foreground">Sequoia Resources</h3>
         </div>
@@ -52,7 +52,7 @@ export function ResourceSidebarDashboard({ moduleId, activeQuestionId }: Resourc
   }
 
   return (
-    <div className="w-80 bg-card border-l border-border/50 flex flex-col h-full">
+    <div className="hidden lg:flex w-80 shrink-0 bg-card border-l border-border/50 flex-col h-full">
       {/* Header */}
       <div className="p-6 border-b border-border/50">
         <div className="flex items-center gap-2 mb-1">
