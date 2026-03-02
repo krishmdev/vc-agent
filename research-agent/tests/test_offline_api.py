@@ -158,3 +158,15 @@ def test_finished_tasks_are_evicted_after_the_ttl():
     main.active_tasks["running"] = {"status": "running", "started": 0.0}
     main.evict_tasks(now=main.TASK_TTL_S + 1)
     assert list(main.active_tasks) == ["running"]
+
+
+def test_guide_snippets_are_plain_text_and_headings_need_bullets():
+    import asyncio
+
+    from guides import ExtractiveGuideWriter, _snippet
+    from kb_client import Passage
+
+    assert _snippet("[From: X]\n**Bold** words with a [link](https://example.com) and `code`.") == "Bold words with a link and code."
+    one = [Passage("[From: A]\nFounders should meet their first customers in person.", "A", "website", None, 0.5)]
+    guide = asyncio.run(ExtractiveGuideWriter().write_guide("How do founders meet customers?", one))
+    assert "What founders in the knowledge base said" not in guide

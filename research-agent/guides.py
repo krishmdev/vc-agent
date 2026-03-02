@@ -5,6 +5,7 @@ knowledge base, number them, and have the writer cite them as [n]. Live mode wri
 offline mode assembles the guide from the retrieved sentences with no language model.
 """
 
+import re
 from typing import Protocol
 
 from google import genai
@@ -38,8 +39,12 @@ def _body(text: str) -> str:
     return text.strip()
 
 
+_MARKDOWN = re.compile(r"!?\[([^\]]*)\]\([^)]*\)|[*_`#>]+|\[\d+\]")
+
+
 def _snippet(text: str, limit: int = 220) -> str:
-    body = " ".join(_body(text).split())
+    # Plain text for the source card: link text kept, markdown marks and URLs dropped.
+    body = " ".join(_MARKDOWN.sub(lambda m: m.group(1) or "", _body(text)).split())
     return body if len(body) <= limit else body[: limit - 1].rsplit(" ", 1)[0] + "…"
 
 
@@ -126,14 +131,16 @@ class ExtractiveGuideWriter:
         lines = ["**Core Principle**", ""]
         lead_source = _short(passages[lead_n - 1].source)
         lines.append(f'From "{lead_source}": {lead[0]} [{lead_n}]' if lead else f"{_snippet(passages[0].text)} [1]")
-        lines += ["", "**What founders in the knowledge base said**", ""]
+        bullets = []
         for i, sents in picks:
             if not sents:
                 continue
             quote = sents[1] if i == lead_n and len(sents) > 1 else sents[0]
             if lead and quote == lead[0]:
                 continue
-            lines.append(f"- **{_short(passages[i - 1].source)}:** \"{quote}\" [{i}]")
+            bullets.append(f"- **{_short(passages[i - 1].source)}:** \"{quote}\" [{i}]")
+        if bullets:
+            lines += ["", "**What founders in the knowledge base said**", "", *bullets]
         lines += [
             "",
             "**Key Signal**",
