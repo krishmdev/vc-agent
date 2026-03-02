@@ -112,6 +112,8 @@ Krish built with Akshay Irudayaraj to rank early-stage founders from SEC Form D 
 port lives in `research-agent/scoring/` as a plain Python package (no web framework, settings,
 or clock).
 
+![Founder scorecard for a fictional sample founder: composite against the 45 and 60 bands, a five-axis radar, and per-signal evidence](docs/screenshots/founder-score-desktop.png)
+
 Four signals add up to a raw 0-100 score. Each point traces to a line of evidence:
 
 | Signal | Max | What it reads |

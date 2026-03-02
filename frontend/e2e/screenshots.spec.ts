@@ -42,3 +42,16 @@ test("mobile: mentor text chat", async ({ page }) => {
   await toDashboard(page)
   await page.screenshot({ path: out("mentor-chat-mobile.png") })
 })
+
+for (const [label, width, height] of [["desktop", 1440, 900], ["mobile", 390, 844]] as const) {
+  test(`${label}: founder scorecard`, async ({ page }) => {
+    await page.setViewportSize({ width, height })
+    await toDashboard(page)
+    await page.getByRole("button", { name: "End Chat" }).click()
+    await page.getByRole("button", { name: "Build your dashboard" }).click()
+    await page.getByRole("button", { name: "Founder score" }).click()
+    await page.getByTestId("sample-hardware-reviews-founder").click()
+    await expect(page.getByTestId("founder-radar")).toBeVisible()
+    await page.screenshot({ path: out(`founder-score-${label}.png`) })
+  })
+}

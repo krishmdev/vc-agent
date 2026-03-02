@@ -23,8 +23,9 @@ const SOURCE_LABEL: Record<TagSource, string> = {
   fallback_error: "keyword lexicon (Gemini call failed)",
 }
 
+// Up to two decimals, no trailing zeros: 85.95 stays 85.95 rather than rounding to 86.0.
 function fmt(n: number) {
-  return Number.isInteger(n) ? String(n) : n.toFixed(1)
+  return String(Number(n.toFixed(2)))
 }
 
 function RadarTooltip({ active, payload }: { active?: boolean; payload?: { payload: { label: string; score: number; max: number; percent: number; summed: boolean } }[] }) {
@@ -46,15 +47,17 @@ function SignalRadar({ signals }: { signals: Signal[] }) {
     <figure data-testid="founder-radar" aria-label="Signal radar, each axis as a percent of its maximum">
       <div className="h-64 w-full">
         <ResponsiveContainer>
-          <RadarChart data={data} outerRadius="72%" margin={{ top: 8, right: 24, bottom: 8, left: 24 }}>
+          <RadarChart data={data} outerRadius="68%" margin={{ top: 24, right: 24, bottom: 8, left: 24 }}>
             <PolarGrid stroke="var(--border)" />
             <PolarAngleAxis
               dataKey="label"
-              tick={({ payload, x, y, textAnchor }) => {
+              tick={({ payload, x, y, textAnchor, index }) => {
                 const item = data.find((d) => d.label === payload.value)
+                // The top axis label sits above its vertex instead of on it.
+                const lift = index === 0 ? -20 : 0
                 return (
                   <text x={x} y={y} textAnchor={textAnchor} className="fill-muted-foreground text-[11px]">
-                    <tspan x={x} dy="0">{payload.value}</tspan>
+                    <tspan x={x} dy={lift}>{payload.value}</tspan>
                     <tspan x={x} dy="13" className="fill-foreground font-medium">
                       {item ? (item.scored ? `${fmt(item.score)}/${item.max}` : "not scored") : ""}
                       {item && !item.summed ? " *" : ""}
@@ -142,10 +145,10 @@ export function FounderScorecardView({ card }: { card: Scorecard }) {
       </header>
 
       <section className={cn("rounded-xl border p-4", band.ring)} data-testid="founder-composite">
-        <div className="flex items-end justify-between gap-4">
+        <div className="flex flex-wrap items-end justify-between gap-x-4 gap-y-1">
           <div>
             <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">Composite</p>
-            <p className="font-serif text-4xl font-semibold tabular-nums text-foreground">
+            <p className="whitespace-nowrap font-serif text-4xl font-semibold tabular-nums text-foreground">
               {fmt(card.composite.score)}
               <span className="text-lg text-muted-foreground"> / 100</span>
             </p>

@@ -135,7 +135,7 @@ export function FounderScorePanel({ isOpen, onClose }: { isOpen: boolean; onClos
   }
 
   return (
-    <div role="dialog" aria-label="Founder score" data-testid="founder-score-panel" className="fixed inset-y-0 right-0 z-50 flex w-full flex-col border-l border-border bg-background shadow-2xl md:w-[680px] lg:w-[860px]">
+    <div role="dialog" aria-label="Founder score" data-testid="founder-score-panel" className="fixed inset-y-0 right-0 z-[60] flex w-full flex-col border-l border-border bg-background shadow-2xl md:w-[680px] lg:w-[860px]">
       <div className="flex h-14 shrink-0 items-center justify-between border-b border-border bg-secondary/30 px-4">
         <div className="flex items-center gap-2">
           {scorecard && (
