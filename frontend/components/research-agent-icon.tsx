@@ -16,8 +16,8 @@ export function ResearchAgentIcon({ onClick, isLoading = false }: ResearchAgentI
         <TooltipTrigger asChild>
           <Button
             variant="ghost"
-            size="icon"
-            className="relative w-9 h-9 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors"
+            aria-label="Deep Research Agent"
+            className="relative h-9 w-9 gap-1.5 rounded-full bg-primary/10 px-0 transition-colors hover:bg-primary/20 md:w-auto md:px-3"
             onClick={onClick}
           >
             {isLoading ? (
@@ -25,7 +25,7 @@ export function ResearchAgentIcon({ onClick, isLoading = false }: ResearchAgentI
             ) : (
               <Search className="w-4 h-4 text-primary" />
             )}
-            <span className="sr-only">Deep Research Agent</span>
+            <span aria-hidden className="hidden text-sm font-medium text-primary md:inline">Research</span>
           </Button>
         </TooltipTrigger>
         <TooltipContent>

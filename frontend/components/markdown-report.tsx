@@ -75,7 +75,7 @@ export function MarkdownReport({ content, variant = "report", idPrefix = "r", cl
     h1: ({ children }) => (
       <h2
         id={`${idPrefix}-${slug(textOf(children))}`}
-        className="scroll-mt-4 font-serif text-xl md:text-2xl font-semibold text-foreground mt-10 first:mt-0 mb-4 pb-2 border-b border-border"
+        className="scroll-mt-20 font-serif text-xl md:text-2xl font-semibold text-foreground mt-10 first:mt-0 mb-4 pb-2 border-b border-border"
       >
         {children}
       </h2>
@@ -117,32 +117,36 @@ export function MarkdownReport({ content, variant = "report", idPrefix = "r", cl
   return (
     <div className={cn("text-[0.95rem]", className)}>
       {sections.length > 1 && (
-        <nav aria-label="Report sections" className="sticky -top-4 z-10 -mx-5 mb-6 flex gap-1.5 overflow-x-auto border-b border-border bg-card px-5 py-2.5 md:-top-6 md:-mx-7 md:px-7">
+        <nav aria-label="Report sections" className="sticky -top-4 z-10 -mx-5 mb-6 border-b border-border bg-card md:-top-6 md:-mx-7">
+          {/* The right edge fades so a clipped chip reads as "scroll for more". */}
+          <div className="flex snap-x snap-mandatory scroll-px-5 gap-1.5 overflow-x-auto px-5 py-2.5 [mask-image:linear-gradient(to_right,black_calc(100%-2.5rem),transparent)] md:scroll-px-7 md:px-7">
           {sections.map((s) => (
             <a
               key={s}
               href={`#${idPrefix}-${slug(s)}`}
-              className="shrink-0 rounded-full border border-border px-3 py-1 text-xs font-medium text-muted-foreground hover:border-primary/40 hover:text-foreground"
+              className="shrink-0 snap-start rounded-full border border-border px-3 py-1 text-xs font-medium text-muted-foreground hover:border-primary/40 hover:text-foreground"
             >
               {headingLabel(s)}
             </a>
           ))}
           {sources.length > 0 && (
-            <a href={`#${idPrefix}-sources`} className="shrink-0 rounded-full border border-border px-3 py-1 text-xs font-medium text-muted-foreground hover:border-primary/40 hover:text-foreground">
+            <a href={`#${idPrefix}-sources`} className="shrink-0 snap-start rounded-full border border-border px-3 py-1 text-xs font-medium text-muted-foreground hover:border-primary/40 hover:text-foreground">
               Sources ({sources.length})
             </a>
           )}
+          <span aria-hidden className="w-6 shrink-0" />
+          </div>
         </nav>
       )}
 
       <ReactMarkdown components={components}>{body}</ReactMarkdown>
 
       {sources.length > 0 && (
-        <section id={`${idPrefix}-sources`} className="scroll-mt-4 mt-10 border-t border-border pt-5">
+        <section id={`${idPrefix}-sources`} className="scroll-mt-20 mt-10 border-t border-border pt-5">
           <h2 className="mb-3 text-xs font-semibold uppercase tracking-wider text-muted-foreground">Sources</h2>
           <ol className="grid gap-x-6 gap-y-1.5 sm:grid-cols-2">
             {sources.map((s) => (
-              <li key={s.n} id={`${idPrefix}-src-${s.n}`} className="flex scroll-mt-16 items-baseline gap-2 text-sm target:rounded target:bg-primary/10">
+              <li key={s.n} id={`${idPrefix}-src-${s.n}`} className="flex scroll-mt-20 items-baseline gap-2 text-sm target:rounded target:bg-primary/10">
                 <span className="w-6 shrink-0 text-right font-mono text-xs text-muted-foreground">{s.n}</span>
                 <a href={s.url} target="_blank" rel="noopener noreferrer" className="flex min-w-0 items-center gap-1 text-foreground/80 hover:text-primary">
                   <span className="truncate">{s.label}</span>
