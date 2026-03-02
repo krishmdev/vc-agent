@@ -13,6 +13,7 @@ import {
   Loader2,
   RefreshCw,
   Target,
+  Gauge,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { BreadcrumbNav } from "@/components/breadcrumb-nav"
@@ -27,6 +28,7 @@ import { cn } from "@/lib/utils"
 import { ResearchAgentIcon } from "@/components/research-agent-icon"
 import { ResearchChat } from "@/components/research-chat"
 import { ResourceDrawer } from "@/components/resource-drawer"
+import { FounderScorePanel } from "@/components/founder-score-panel"
 import { CustomerReachoutPopup } from "@/components/customer-reachout-popup"
 import { CustomerResultsModal } from "@/components/customer-results-modal"
 
@@ -57,6 +59,7 @@ export default function DashboardPage() {
 
   // Research Agent State
   const [isResearchOpen, setIsResearchOpen] = useState(false)
+  const [isFounderScoreOpen, setIsFounderScoreOpen] = useState(false)
   const [initialContext, setInitialContext] = useState<{ idea?: string, problem?: string, customer?: string, product?: string } | undefined>(undefined)
 
   // Customer Reach-out State
@@ -271,6 +274,16 @@ export default function DashboardPage() {
               </button>
             )}
 
+            {/* Founder score */}
+            <button
+              onClick={() => setIsFounderScoreOpen(true)}
+              className="relative flex items-center gap-2 px-3 py-1.5 rounded-full hover:bg-secondary transition-colors group"
+              aria-label="Founder score"
+            >
+              <Gauge className="w-4 h-4 text-muted-foreground group-hover:text-foreground" />
+              <span className="text-sm text-muted-foreground group-hover:text-foreground hidden sm:inline">Founder Score</span>
+            </button>
+
             {/* Customer Reach-out */}
             <div className="relative" ref={customerButtonRef}>
               <button
@@ -355,6 +368,8 @@ export default function DashboardPage() {
         isOpen={isFounderModalOpen}
         onClose={() => setIsFounderModalOpen(false)}
       />
+
+      <FounderScorePanel isOpen={isFounderScoreOpen} onClose={() => setIsFounderScoreOpen(false)} />
 
       <ResearchChat
         isOpen={isResearchOpen}
