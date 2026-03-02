@@ -28,9 +28,11 @@ Two entry points share the same agent code (`mentor.py`, `personas.py`):
 
 ## Knowledge base
 
-`data/` holds 116 Sequoia podcast transcripts and `sequoia_data.json` (scraped sequoiacap.com
-pages). `ingest.py` cleans them, dedupes repeated pages, and chunks them (2,000 characters with
-400 overlap, 11,741 chunks).
+`data/` holds 116 Sequoia podcast transcripts and `sequoia_data.json` (712 crawled sequoiacap.com
+pages, pruned of off-site and bio pages; see [DATA_NOTICE](../DATA_NOTICE), this content is not
+MIT). `ingest.py` keeps only Sequoia hosts, skips team, careers, legal and short pages, drops
+pages whose URL (without tracking parameters) or cleaned text repeats one already kept, and chunks
+the remaining 499 pages and the transcripts (2,000 characters with 400 overlap, 9,025 chunks).
 
 ```bash
 uv sync

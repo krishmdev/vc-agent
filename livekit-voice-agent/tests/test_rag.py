@@ -102,3 +102,15 @@ def test_search_follows_a_generation_swap_by_another_process(tmp_path):
     # A rebuild (e.g. `make index-offline` while the server runs) deletes the cached collection.
     rag.build_generation(emb, *corpus(tag="new"), db_path=tmp_path, progress=lambda *_: None)
     assert " new " in kb.search("airbnb", top_k=1)[0].text
+
+
+def test_committed_crawl_holds_only_sequoia_content_pages():
+    import json
+    from urllib.parse import urlparse
+
+    import ingest
+
+    pages = json.loads(ingest.SEQUOIA_JSON.read_text(encoding="utf-8"))["pages"]
+    hosts = {urlparse(p["url"]).netloc for p in pages}
+    assert hosts <= ingest.CONTENT_HOSTS
+    assert not [p["url"] for p in pages if urlparse(p["url"]).path.startswith("/people/")]

@@ -1,0 +1,18 @@
+Data notice
+
+The MIT license in LICENSE covers the code in this repository. It does not cover the third-party
+content in livekit-voice-agent/data/:
+
+- The podcast transcripts (livekit-voice-agent/data/*.txt) are transcripts of Sequoia Capital
+  podcast episodes. The words belong to Sequoia Capital and the people speaking in them.
+- sequoia_data.json is a January 2026 crawl of pages on sequoiacap.com. That content is copyright
+  Sequoia Capital and its authors.
+
+This material is included only so the demo and its offline tests can run against a real knowledge
+base, for demonstration and research use. It is not relicensed, and none of it is endorsed by
+Sequoia Capital. If you are a rights holder and want something removed, open an issue.
+
+The crawl was pruned before it was committed here: 906 pages became 712. Off-site pages the crawler
+followed (okta.com and its subdomains), the jobs and partner-login portals, mailto: entries and
+the /people/ team bios were dropped. The bios were never indexed, and they are personal pages
+about real people, so they are not kept. The pruning rule is recorded in the file's crawl_info.

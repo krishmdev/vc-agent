@@ -9,6 +9,7 @@ import hashlib
 import json
 import re
 from pathlib import Path
+from urllib.parse import urlparse
 
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
@@ -25,6 +26,7 @@ SUPPORTED_EXTENSIONS = {".txt"}
 # Path to data directory
 DATA_DIR = config.DATA_DIR
 SEQUOIA_JSON = DATA_DIR / "sequoia_data.json"
+CONTENT_HOSTS = {"sequoiacap.com", "www.sequoiacap.com", "arc.sequoiacap.com", "ampersand.sequoiacap.com"}
 
 
 def clean_transcript(text: str) -> str:
@@ -99,6 +101,9 @@ def extract_sequoia_articles():
         title = page.get('title', '')
         markdown = page.get('markdown', '')
         
+        # Only Sequoia's own content pages; the crawl also wandered into okta.com and login portals.
+        if urlparse(url).netloc not in CONTENT_HOSTS:
+            continue
         # Skip non-content pages
         if any(re.search(p, url, re.I) for p in skip_patterns):
             continue

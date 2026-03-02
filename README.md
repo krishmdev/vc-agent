@@ -98,8 +98,8 @@ graph LR
   use the same `Assistant` class, persona prompts and tools (`search_knowledge_base`,
   `recall_memory`). `server.py` also serves `/kb/search`, which the research agent's guides use,
   and a text-chat WebSocket that runs the agent inside a real livekit-agents `AgentSession`.
-- **Knowledge base.** 116 transcripts and 635 deduplicated sequoiacap.com pages, chunked into
-  11,741 chunks of 2,000 characters with 400 overlap. Each index build is a new Chroma collection
+- **Knowledge base.** 116 transcripts and 499 sequoiacap.com pages, chunked into
+  9,025 chunks of 2,000 characters with 400 overlap. Each index build is a new Chroma collection
   tagged with its `embedder_id` (`provider/model/revision/dim/preprocessing-hash`). A pointer
   file is swapped atomically only after every chunk is embedded, and queries refuse a collection
   built by a different embedder, so OpenAI and MiniLM vectors never mix.
@@ -348,4 +348,6 @@ attributed to it in the history.
 
 ## License
 
-[MIT](LICENSE)
+The code is [MIT](LICENSE). The transcripts and the sequoiacap.com crawl in
+`livekit-voice-agent/data/` are not: they are copyright Sequoia Capital and the speakers and
+authors, and are included only for the demo and research use. See [DATA_NOTICE](DATA_NOTICE).
