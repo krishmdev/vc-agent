@@ -12,6 +12,8 @@ interface Message {
   content: string
   id: string
   failed?: boolean
+  busy?: boolean // a 409: the first research turn is still running
+  kind?: string // deep_research | follow_up, from the task
 }
 
 interface TaskState {
@@ -109,12 +111,20 @@ export function ResearchChat({ isOpen, onClose, initialContext }: ResearchChatPr
   const [sessionId, setSessionId] = useState<string | null>(null)
   const [lastRequest, setLastRequest] = useState<string | null>(null)
   const scrollRef = useRef<HTMLDivElement>(null)
+  const lastReportRef = useRef<HTMLElement | null>(null)
   const started = useRef(false)
+  const [queued, setQueued] = useState<string | null>(null)
   const isLoading = currentTaskId !== null || task !== null
 
   useEffect(() => {
-    scrollRef.current?.scrollIntoView({ behavior: "smooth", block: "end" })
-  }, [messages.length])
+    const last = messages[messages.length - 1]
+    // A new report scrolls to its top so it reads from the start; anything else to the bottom.
+    if (last?.role === "assistant" && !last.failed && !last.busy) {
+      lastReportRef.current?.scrollIntoView({ behavior: "smooth", block: "start" })
+    } else {
+      scrollRef.current?.scrollIntoView({ behavior: "smooth", block: "end" })
+    }
+  }, [messages])
 
   const fail = useCallback((text: string) => {
     setMessages((prev) => [...prev, { role: "assistant", content: text, id: `err-${Date.now()}`, failed: true }])
@@ -137,7 +147,7 @@ export function ResearchChat({ isOpen, onClose, initialContext }: ResearchChatPr
         const data = await res.json()
         if (cancelled) return
         if (data.status === "completed") {
-          setMessages((prev) => [...prev, { role: "assistant", content: data.content, id: currentTaskId }])
+          setMessages((prev) => [...prev.filter((m) => !m.busy), { role: "assistant", content: data.content, id: currentTaskId, kind: data.kind }])
           setTask(null)
           setCurrentTaskId(null)
         } else if (data.status === "failed") {
@@ -174,7 +184,11 @@ export function ResearchChat({ isOpen, onClose, initialContext }: ResearchChatPr
           headers: { "Content-Type": "application/json" },
         })
         if (res.status === 409) {
-          fail("Research is still running for this idea. Wait for the report, then ask your follow-up.")
+          // Not an error: the deep-research turn is still running. Park the question and send it
+          // when that run finishes.
+          setTask(null)
+          setQueued(text)
+          setMessages((prev) => [...prev, { role: "assistant", content: "Still researching. Your question will be sent when the report is ready.", id: `busy-${Date.now()}`, busy: true }])
           return
         }
         if (!res.ok) throw new Error("Failed to send message")
@@ -188,6 +202,17 @@ export function ResearchChat({ isOpen, onClose, initialContext }: ResearchChatPr
     },
     [fail, initialContext, sessionId]
   )
+
+  // Resend a parked question once nothing is running here; the delay keeps a run this panel
+  // doesn't track (another tab, a reload) from turning into a tight 409 loop.
+  useEffect(() => {
+    if (!queued || isLoading) return
+    const timer = setTimeout(() => {
+      setQueued(null)
+      handleSendMessage(queued, true)
+    }, 10_000)
+    return () => clearTimeout(timer)
+  }, [queued, isLoading, handleSendMessage])
 
   // Start the first research turn when the panel opens with an idea.
   useEffect(() => {
@@ -242,6 +267,10 @@ export function ResearchChat({ isOpen, onClose, initialContext }: ResearchChatPr
                   <User className="h-4 w-4" />
                 </div>
               </div>
+            ) : msg.busy ? (
+              <p key={msg.id} role="status" data-testid="research-busy" className="flex items-center gap-2 rounded-xl border border-border bg-card px-4 py-3 text-sm text-muted-foreground">
+                <Loader2 className="h-4 w-4 animate-spin" aria-hidden /> {msg.content}
+              </p>
             ) : msg.failed ? (
               <div key={msg.id} role="alert" className="flex items-start gap-3 rounded-xl border border-destructive/30 bg-destructive/5 p-4 text-sm">
                 <AlertCircle className="mt-0.5 h-4 w-4 shrink-0 text-destructive" />
@@ -256,12 +285,17 @@ export function ResearchChat({ isOpen, onClose, initialContext }: ResearchChatPr
                 )}
               </div>
             ) : (
-              <article key={msg.id} data-testid="research-report" className="rounded-xl border border-border bg-card p-5 md:p-7">
+              <article
+                key={msg.id}
+                ref={(el) => { if (el) lastReportRef.current = el }}
+                data-testid="research-report"
+                className="scroll-mt-4 rounded-xl border border-border bg-card p-5 md:p-7"
+              >
                 <MarkdownReport content={msg.content} idPrefix={`m${msg.id.replace(/\W/g, "")}`} variant={msg.content.length > 3000 ? "report" : "compact"} />
-                <p data-testid="research-provenance" className="mt-6 border-t border-border pt-3 text-[11px] leading-relaxed text-muted-foreground">
+                {msg.kind === "deep_research" && <p data-testid="research-provenance" className="mt-6 border-t border-border pt-3 text-[11px] leading-relaxed text-muted-foreground">
                   Written by Gemini Deep Research. Numbered links point to the pages it cited for a claim; the rest is model-written
                   analysis. Nobody has fact-checked it, so check the sources before relying on a number.
-                </p>
+                </p>}
               </article>
             )
           )}
