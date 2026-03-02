@@ -4,6 +4,7 @@ import { DM_Sans, Fraunces } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 import { OfflineBanner } from '@/components/offline-banner'
+import { OFFLINE } from '@/lib/mode'
 
 const dmSans = DM_Sans({ subsets: ["latin"], weight: ["400", "500", "600", "700"], variable: "--font-dm-sans" });
 const fraunces = Fraunces({ subsets: ["latin"], weight: ["400", "500", "600", "700"], variable: "--font-fraunces" });
@@ -37,11 +38,15 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${dmSans.variable} ${fraunces.variable}`}>
-      <body className="font-sans antialiased">
+    <html
+      lang="en"
+      className={`${dmSans.variable} ${fraunces.variable}`}
+      style={{ ["--banner-h" as string]: OFFLINE ? "2rem" : "0px" }}
+    >
+      <body className="font-sans antialiased pb-[var(--banner-h)]">
         {children}
         <OfflineBanner />
-        <Analytics />
+        {!OFFLINE && <Analytics />}
       </body>
     </html>
   )

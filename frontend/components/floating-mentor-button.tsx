@@ -120,7 +120,7 @@ export function FloatingMentorButton({ className }: FloatingMentorButtonProps) {
             <div
                 data-testid="mentor-chat-panel"
                 className={cn(
-                    "fixed bottom-4 left-4 right-4 z-50 sm:right-auto sm:left-6 sm:bottom-6",
+                    "fixed bottom-[calc(1rem+var(--banner-h))] left-4 right-4 z-50 sm:right-auto sm:left-6 sm:bottom-[calc(1.5rem+var(--banner-h))]",
                     "sm:w-[420px] shadow-2xl rounded-2xl",
                     "animate-in slide-in-from-bottom-4 fade-in duration-300",
                     className
@@ -143,7 +143,7 @@ export function FloatingMentorButton({ className }: FloatingMentorButtonProps) {
         return (
             <div
                 className={cn(
-                    "fixed bottom-6 left-6 z-50",
+                    "fixed bottom-[calc(1.5rem+var(--banner-h))] left-6 z-50",
                     "w-64 bg-card border border-border rounded-2xl shadow-2xl",
                     "animate-in slide-in-from-bottom-4 fade-in duration-300",
                     className
@@ -186,7 +186,7 @@ export function FloatingMentorButton({ className }: FloatingMentorButtonProps) {
         return (
             <div
                 className={cn(
-                    "fixed bottom-6 left-6 z-50",
+                    "fixed bottom-[calc(1.5rem+var(--banner-h))] left-6 z-50",
                     "w-64 p-4 bg-card border border-destructive/50 rounded-2xl shadow-2xl",
                     className
                 )}
@@ -208,7 +208,7 @@ export function FloatingMentorButton({ className }: FloatingMentorButtonProps) {
             onClick={handleConnect}
             disabled={isConnecting}
             className={cn(
-                "fixed bottom-6 left-6 z-50",
+                "fixed bottom-[calc(1.5rem+var(--banner-h))] left-6 z-50",
                 "w-14 h-14 rounded-full",
                 "bg-primary text-primary-foreground",
                 "shadow-lg shadow-primary/25",

@@ -370,7 +370,7 @@ export default function MentorshipPage() {
       {callEnded && (
         <div 
           className={cn(
-            "fixed bottom-0 left-0 right-0 z-50",
+            "fixed bottom-[var(--banner-h)] left-0 right-0 z-50",
             "bg-gradient-to-t from-primary/10 via-background to-transparent",
             "border-t border-primary/20",
             "animate-in slide-in-from-bottom duration-500"

@@ -367,7 +367,7 @@ export default function VcCallPage() {
       {callEnded && (
         <div 
           className={cn(
-            "fixed bottom-0 left-0 right-0 z-50",
+            "fixed bottom-[var(--banner-h)] left-0 right-0 z-50",
             "bg-gradient-to-t from-background via-background to-transparent",
             "border-t border-border",
             "animate-in slide-in-from-bottom duration-500"
