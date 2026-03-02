@@ -24,7 +24,7 @@ models: ## all-MiniLM-L6-v2 at the revision in models.lock, into .models/
 	cd $(VOICE) && .venv/bin/python model_store.py fetch
 
 index-offline: ## MiniLM knowledge-base collection (no network); stop the servers first
-	cd $(VOICE) && VC_AGENT_MODE=offline HF_HUB_OFFLINE=1 .venv/bin/python ingest.py --embedder local
+	cd $(VOICE) && VC_AGENT_MODE=offline HF_HUB_OFFLINE=1 KB_EMBED_THREADS=$${KB_EMBED_THREADS:-0} .venv/bin/python ingest.py --embedder local
 
 index-live: ## OpenAI text-embedding-3-small collection (needs OPENAI_API_KEY, about $0.11)
 	cd $(VOICE) && .venv/bin/python ingest.py --embedder openai

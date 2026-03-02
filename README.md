@@ -248,6 +248,7 @@ meant to happen under load.
 | `VC_AGENT_MODE` | all | `live` (default) or `offline` |
 | `NEXT_PUBLIC_VC_AGENT_MODE` | frontend build | `offline` swaps voice widgets for the text chat |
 | `KB_EMBEDDER` | voice agent | `openai` (live default) or `local` |
+| `KB_EMBED_THREADS` | voice agent | ONNX threads for the local MiniLM embedder: 2 by default, `make index-offline` uses 0 (all cores) |
 | `RESEARCH_SERVICE_URL`, `AGENT_SERVICE_URL`, `KB_SERVICE_URL` | frontend, research agent | service URLs (defaults: 127.0.0.1:8000 / :8001) |
 | `VC_AGENT_DIAGNOSTICS` | all | `1` exposes the `/_diag` egress and provider endpoints |
 | `ALLOWED_HOSTS` | research agent, voice agent | Host headers the APIs answer (default `127.0.0.1,localhost`); anything else gets a 400 |

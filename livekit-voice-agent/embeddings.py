@@ -57,7 +57,9 @@ class MiniLMEmbedder:
 
         root = verified_model_dir()
         opts = ort.SessionOptions()
-        opts.intra_op_num_threads = int(os.environ.get("KB_EMBED_THREADS", "0"))
+        # Two threads by default: the server embeds one short query at a time and shares the
+        # machine with the other services. `make index-offline` sets 0 (all cores) for the bulk run.
+        opts.intra_op_num_threads = int(os.environ.get("KB_EMBED_THREADS", "2"))
         return ort.InferenceSession(str(root / "onnx" / "model.onnx"), opts, providers=["CPUExecutionProvider"])
 
     @cached_property
