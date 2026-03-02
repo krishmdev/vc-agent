@@ -1,14 +1,15 @@
 "use client"
 
 import { PolarAngleAxis, PolarGrid, PolarRadiusAxis, Radar, RadarChart, ResponsiveContainer, Tooltip } from "recharts"
-import { BadgeCheck, CircleDashed, CircleMinus, Info, Lightbulb } from "lucide-react"
+import { BadgeCheck, ChevronRight, CircleDashed, CircleMinus, Info, Lightbulb } from "lucide-react"
 import type { Scorecard, Signal, TagSource } from "@/lib/founder-score"
 import { cn } from "@/lib/utils"
 
 // One series, one hue: the theme's chart-2 green passes the mark checks on the card surface
-// (the darker primary is kept for text). Timing is drawn in a muted tone because it isn't summed.
+// (the darker primary is kept for text). Timing isn't summed, so it's off the radar and its bar is
+// hatched in the same green instead of a second, low-contrast hue.
 const MARK = "#3e8343"
-const MUTED_MARK = "#bfac83"
+const HATCH = `repeating-linear-gradient(135deg, ${MARK} 0 3px, transparent 3px 6px)`
 
 const BAND = {
   strong: { icon: BadgeCheck, text: "text-primary", ring: "border-primary/30 bg-primary/5" },
@@ -41,10 +42,13 @@ function RadarTooltip({ active, payload }: { active?: boolean; payload?: { paylo
   )
 }
 
-function SignalRadar({ signals }: { signals: Signal[] }) {
-  const data = signals.map((s) => ({ label: s.label, percent: s.percent, score: s.score, max: s.max, summed: s.in_composite, scored: s.scored }))
+function SignalRadar({ signals, describedBy }: { signals: Signal[]; describedBy: string }) {
+  const data = signals
+    .filter((s) => s.in_composite)
+    .map((s) => ({ label: s.label, percent: s.percent, score: s.score, max: s.max, summed: true, scored: s.scored }))
+  const timing = signals.find((s) => !s.in_composite)
   return (
-    <figure data-testid="founder-radar" aria-label="Signal radar, each axis as a percent of its maximum">
+    <figure data-testid="founder-radar" aria-label="The four composite signals, each as a percent of its maximum" aria-describedby={describedBy}>
       <div className="h-64 w-full">
         <ResponsiveContainer>
           <RadarChart data={data} outerRadius="68%" margin={{ top: 24, right: 24, bottom: 8, left: 24 }}>
@@ -60,7 +64,6 @@ function SignalRadar({ signals }: { signals: Signal[] }) {
                     <tspan x={x} dy={lift}>{payload.value}</tspan>
                     <tspan x={x} dy="13" className="fill-foreground font-medium">
                       {item ? (item.scored ? `${fmt(item.score)}/${item.max}` : "not scored") : ""}
-                      {item && !item.summed ? " *" : ""}
                     </tspan>
                   </text>
                 )
@@ -68,27 +71,40 @@ function SignalRadar({ signals }: { signals: Signal[] }) {
             />
             <PolarRadiusAxis domain={[0, 100]} tick={false} axisLine={false} tickCount={5} />
             <Radar dataKey="percent" stroke={MARK} strokeWidth={2} fill={MARK} fillOpacity={0.14} dot={{ r: 4, fill: MARK, strokeWidth: 2, stroke: "var(--card)" }} isAnimationActive={false} />
-            <Tooltip content={<RadarTooltip />} />
+            <Tooltip content={<RadarTooltip />} position={{ x: 8, y: 8 }} wrapperStyle={{ pointerEvents: "none" }} cursor={false} />
           </RadarChart>
         </ResponsiveContainer>
       </div>
-      <figcaption className="text-center text-[11px] text-muted-foreground">Each axis is the signal as a percent of its maximum. * Timing is shown but not summed.</figcaption>
+      <figcaption className="text-center text-[11px] text-muted-foreground">Each axis is a composite signal as a percent of its maximum.</figcaption>
+      {timing && (
+        <p data-testid="founder-timing-stat" className="mt-2 text-center text-xs text-muted-foreground">
+          Timing (not in the composite):{" "}
+          <span className="font-mono text-foreground">{timing.scored ? `${fmt(timing.score)}/${timing.max}` : "not scored"}</span>
+        </p>
+      )}
     </figure>
   )
 }
 
 function CompositeTrack({ score, strong, secondary }: { score: number; strong: number; secondary: number }) {
   return (
-    <div className="mt-3" aria-hidden>
-      <div className="relative h-2 rounded-full bg-muted">
+    <div className="mt-3">
+      <p className="sr-only">
+        Bands: below {secondary} is filter, {secondary} to {strong} is secondary, {strong} and up is strong.
+      </p>
+      <div className="relative h-2 overflow-hidden rounded-full" aria-hidden>
+        <div className="absolute inset-y-0 left-0 bg-muted" style={{ width: `${secondary}%` }} />
+        <div className="absolute inset-y-0 bg-muted/60" style={{ left: `${secondary}%`, width: `${strong - secondary}%` }} />
+        <div className="absolute inset-y-0 right-0 bg-primary/10" style={{ left: `${strong}%` }} />
         <div className="absolute inset-y-0 left-0 rounded-full" style={{ width: `${Math.min(score, 100)}%`, background: MARK }} />
-        {[secondary, strong].map((t) => (
-          <div key={t} className="absolute -top-1 h-4 w-0.5 bg-foreground/50" style={{ left: `${t}%` }} />
-        ))}
       </div>
-      <div className="relative mt-1 h-4 text-[10px] text-muted-foreground">
-        <span className="absolute -translate-x-1/2" style={{ left: `${secondary}%` }}>{secondary} secondary</span>
-        <span className="absolute -translate-x-1/2" style={{ left: `${strong + 8}%` }}>{strong} strong</span>
+      <div className="relative h-4" aria-hidden>
+        {[secondary, strong].map((t) => (
+          <span key={t} className="absolute top-0 -translate-x-1/2 text-[10px] text-muted-foreground" style={{ left: `${t}%` }}>
+            <span className="mx-auto block h-1.5 w-px bg-foreground/50" />
+            {t === strong ? `${t} strong` : `${t} secondary`}
+          </span>
+        ))}
       </div>
     </div>
   )
@@ -109,10 +125,11 @@ function SignalRow({ signal }: { signal: Signal }) {
         </span>
       </div>
       <div className="mt-1.5 h-1.5 rounded-full bg-muted">
-        <div className="h-full rounded-full" style={{ width: `${signal.percent}%`, background: signal.in_composite ? MARK : MUTED_MARK, minWidth: signal.score > 0 ? 4 : 0 }} />
+        <div className="h-full rounded-full" style={{ width: `${signal.percent}%`, background: signal.in_composite ? MARK : HATCH, minWidth: signal.score > 0 ? 4 : 0 }} />
       </div>
       <details className="group mt-2" open={signal.in_composite && signal.key === "seen_greatness"}>
-        <summary className="cursor-pointer select-none text-xs text-muted-foreground hover:text-foreground">
+        <summary className="flex cursor-pointer select-none list-none items-center gap-1 text-xs text-foreground/80 hover:text-foreground [&::-webkit-details-marker]:hidden">
+          <ChevronRight className="h-3.5 w-3.5 transition-transform group-open:rotate-90" aria-hidden />
           Evidence ({signal.evidence.length})
         </summary>
         <ul className="mt-2 space-y-1.5 border-l-2 border-border pl-3" data-testid="signal-evidence">
@@ -164,9 +181,9 @@ export function FounderScorecardView({ card }: { card: Scorecard }) {
 
       <div className="grid gap-4 md:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)]">
         <div className="rounded-xl border border-border bg-card p-3">
-          <SignalRadar signals={card.signals} />
+          <SignalRadar signals={card.signals} describedBy="founder-signal-list" />
         </div>
-        <ul className="divide-y divide-border rounded-xl border border-border bg-card px-4">
+        <ul id="founder-signal-list" className="divide-y divide-border rounded-xl border border-border bg-card px-4">
           {card.signals.map((s) => (
             <SignalRow key={s.key} signal={s} />
           ))}

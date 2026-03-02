@@ -20,7 +20,8 @@ test("founder score: sample founder scorecard, then the founder's own profile", 
   await expect(card.getByTestId("synthetic-badge")).toHaveText("Fictional sample founder")
   await expect(card.getByTestId("founder-composite")).toContainText("/ 100")
   await expect(card.getByTestId("founder-composite")).toContainText(/Strong|Secondary|Below the bar/)
-  for (const axis of AXES) await expect(card.getByTestId("founder-radar")).toContainText(axis)
+  for (const axis of AXES.slice(0, 4)) await expect(card.getByTestId("founder-radar")).toContainText(axis)
+  await expect(card.getByTestId("founder-timing-stat")).toContainText("Timing (not in the composite)")
   for (const key of ["seen_greatness", "horsepower", "domain_fit", "sacrifice", "timing"]) {
     await expect(card.getByTestId(`signal-${key}`)).toBeVisible()
   }
