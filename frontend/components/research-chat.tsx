@@ -258,6 +258,10 @@ export function ResearchChat({ isOpen, onClose, initialContext }: ResearchChatPr
             ) : (
               <article key={msg.id} data-testid="research-report" className="rounded-xl border border-border bg-card p-5 md:p-7">
                 <MarkdownReport content={msg.content} idPrefix={`m${msg.id.replace(/\W/g, "")}`} variant={msg.content.length > 3000 ? "report" : "compact"} />
+                <p data-testid="research-provenance" className="mt-6 border-t border-border pt-3 text-[11px] leading-relaxed text-muted-foreground">
+                  Written by Gemini Deep Research. Numbered links point to the pages it cited for a claim; the rest is model-written
+                  analysis. Nobody has fact-checked it, so check the sources before relying on a number.
+                </p>
               </article>
             )
           )}

@@ -43,6 +43,7 @@ test("idea to research report, KB-cited guide, and mentor chat with recalled mem
   // The idea was submitted verbatim with no dashboard answers, so the prompt hash matches.
   await expect(report).toContainText("Offline mode: replaying the exact deep-research recording for this prompt")
   await expect(report.locator(".cite-chip").first()).toBeVisible()
+  await expect(report.getByTestId("research-provenance")).toContainText("Nobody has fact-checked it")
   await panel.getByRole("button", { name: "Close research panel" }).click()
 
   // 3. Resource drawer: guide grounded in retrieved Sequoia passages, with numbered citations

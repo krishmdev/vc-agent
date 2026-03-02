@@ -299,6 +299,10 @@ Details and result files: [docs/verification.md](docs/verification.md).
 
 ## Notes and limitations
 
+- **Research reports aren't fact-checked.** Deep-research output is model-written analysis with
+  inline source links. The links show which page a claim came from; the panel says so under
+  every report, and nothing checks the claims against those pages.
+
 - **In-memory state.** Research tasks and chat sessions live in the research agent's process
   memory, and `/api/vc-report` keeps the last report in a module variable. Finished tasks remain
   for an hour. After a restart, a poll returns 404 and the panel says the research was
