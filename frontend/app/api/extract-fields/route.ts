@@ -131,9 +131,7 @@ function calculateJaccardIndex(textA: string, keywords: string[]): number {
 
     let intersection = 0
     tokensB.forEach(t => {
-        // Check for partial matches or exact matches in the text tokens
-        // For robustness, if a keyword is "market size", we check if tokensA has "market" AND "size"? 
-        // Or simplified: just bag of words intersection.
+        // Single-word keywords match tokens; phrases fall back to a substring check below.
         if (tokensA.has(t)) {
             intersection++
         } else {

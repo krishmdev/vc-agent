@@ -108,7 +108,7 @@ async def search_knowledge_base(query: str) -> str:
 
 {formatted}
 
-INSTRUCTION: Be conversational if the reference is applicable then use it as content. Say advice based on Seqouia Philosophy and maybe add if applicable "Based on [founder/company]..." or "As [person] mentioned..." """
+INSTRUCTION: Be conversational if the reference is applicable then use it as content. Say advice based on Sequoia Philosophy and maybe add if applicable "Based on [founder/company]..." or "As [person] mentioned..." """
     else:
         return "No specific Sequoia insights found. Give brief general advice."
 

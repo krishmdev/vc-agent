@@ -48,7 +48,8 @@ FIXTURE_REPLAY_SECONDS = float(os.environ.get("RESEARCH_FIXTURE_REPLAY_SECONDS",
 
 
 # Offline founder scores for submitted profiles are computed as of this date, so they're
-# reproducible; sample founders use the date stored in their fixture. Live mode uses today.
+# reproducible; sample founders use the date stored in their fixture. Live requests must send
+# as_of (the browser sends the founder's local date).
 SCORING_AS_OF = os.environ.get("SCORING_AS_OF", "2026-03-01")
 
 
