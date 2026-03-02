@@ -270,11 +270,13 @@ export function ResourceDrawer() {
               size="icon"
               onClick={() => setIsExpanded(!isExpanded)}
               title={isExpanded ? "Minimize" : "Expand"}
+              aria-label={isExpanded ? "Shrink the resource panel" : "Expand the resource panel"}
+              aria-pressed={isExpanded}
             >
-              {isExpanded ? <Minimize2 className="w-4 h-4" /> : <Maximize2 className="w-4 h-4" />}
+              {isExpanded ? <Minimize2 className="w-4 h-4" aria-hidden /> : <Maximize2 className="w-4 h-4" aria-hidden />}
             </Button>
-            <Button variant="ghost" size="icon" onClick={() => toggleResourceSidebar(false)}>
-              <X className="w-4 h-4" />
+            <Button variant="ghost" size="icon" onClick={() => toggleResourceSidebar(false)} aria-label="Close resource panel">
+              <X className="w-4 h-4" aria-hidden />
             </Button>
           </div>
         </div>
