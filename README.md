@@ -145,15 +145,23 @@ Where the port deviates from sierra-demo, and why:
 - A raise dated after `as_of` isn't counted as fresh.
 - A current role with no end date counts up to `as_of` in the horsepower weighting instead of
   being dropped.
-- Experience is sorted (current roles first, then newest) before scoring, since the scorers read
-  the first entry as the founding role.
+- Experience is sorted before scoring, since the scorers read the first entry as the founding
+  role: roles without an end date come first (founder titles ahead of the rest), then past roles
+  newest first.
+- When the profile has no current title, timing reads the first role's title for its "founding
+  title" signal.
+- The `cd` keyword synonym had a stray backtick ("cont`inuous-deployment") in sierra-demo's data;
+  the copy here fixes it. It's the only change to the copied data files.
 - A failed or out-of-taxonomy Gemini classification falls back to the keyword lexicon and is
   labelled `fallback_error`, instead of becoming "other" silently.
 - Company evidence comes from what the founder writes (a description of 8+ words is "medium"),
   not from Form D, website and PDL enrichment.
 
-The registry lists 13 companies twice with conflicting tiers. As in sierra-demo, the later
-entry wins. The score reads a resume, not a person. It reflects what an investor skimming the
+The registry lists 13 companies more than once, 4 of them with conflicting tiers (elastic,
+plaid, marqeta, brex). As in sierra-demo, the later entry wins for any name or alias both
+entries share. Timing's "left a job in the last six months" point reads the first role's end
+date, which after sorting is the current role, so it almost never fires; sierra-demo behaves the
+same way. The score reads a resume, not a person. It reflects what an investor skimming the
 profile would notice first.
 
 ## Live mode and offline mode

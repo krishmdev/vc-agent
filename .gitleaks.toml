@@ -1,0 +1,7 @@
+# Default gitleaks rules, plus one allowlisted file.
+[extend]
+useDefault = true
+
+[allowlist]
+description = "models.lock holds sha256 digests of pinned model files (keys like tokenizer.json), not secrets"
+paths = ['''^models\.lock$''']
