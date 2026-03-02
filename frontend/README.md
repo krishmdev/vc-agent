@@ -11,14 +11,14 @@ Next.js 16 (App Router, React 19, TypeScript, Tailwind CSS 4, shadcn/ui). Part o
 | `/vc-call` | VC pitch, then the post-call report |
 | `/investor-memo` | Printable memo |
 
-API routes under `app/api/` keep secrets server-side. `token` mints LiveKit JWTs with
+API routes under `app/api/` keep secrets on the server. `token` mints LiveKit JWTs with
 `{startupIdea, agentMode}` metadata. `research`, `customer-reachout`, `resource-article` and
 `resource-chat` proxy the research agent. `vc-report` holds the latest report for long polling.
 `memories` reads Mem0 (or the local store through the voice-agent server when offline).
 `extract-fields` maps memories onto dashboard questions. `diag/egress` is the network canary,
 served only when `VC_AGENT_DIAGNOSTICS=1`.
 
-State is a persisted Zustand store (`lib/store.ts`); the dashboard schema is in
+The persisted Zustand store holds app state (`lib/store.ts`); the dashboard schema is in
 `lib/dashboard-data.ts`.
 
 ## Modes

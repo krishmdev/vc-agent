@@ -9,8 +9,6 @@ import { cn } from "@/lib/utils"
 // (the darker primary is kept for text). Timing is drawn in a muted tone because it isn't summed.
 const MARK = "#3e8343"
 const MUTED_MARK = "#bfac83"
-const STRONG = 60
-const SECONDARY = 45
 
 const BAND = {
   strong: { icon: BadgeCheck, text: "text-primary", ring: "border-primary/30 bg-primary/5" },
@@ -43,7 +41,7 @@ function RadarTooltip({ active, payload }: { active?: boolean; payload?: { paylo
 }
 
 function SignalRadar({ signals }: { signals: Signal[] }) {
-  const data = signals.map((s) => ({ label: s.label, percent: s.percent, score: s.score, max: s.max, summed: s.in_composite }))
+  const data = signals.map((s) => ({ label: s.label, percent: s.percent, score: s.score, max: s.max, summed: s.in_composite, scored: s.scored }))
   return (
     <figure data-testid="founder-radar" aria-label="Signal radar, each axis as a percent of its maximum">
       <div className="h-64 w-full">
@@ -58,7 +56,7 @@ function SignalRadar({ signals }: { signals: Signal[] }) {
                   <text x={x} y={y} textAnchor={textAnchor} className="fill-muted-foreground text-[11px]">
                     <tspan x={x} dy="0">{payload.value}</tspan>
                     <tspan x={x} dy="13" className="fill-foreground font-medium">
-                      {item ? `${fmt(item.score)}/${item.max}` : ""}
+                      {item ? (item.scored ? `${fmt(item.score)}/${item.max}` : "not scored") : ""}
                       {item && !item.summed ? " *" : ""}
                     </tspan>
                   </text>
@@ -76,18 +74,18 @@ function SignalRadar({ signals }: { signals: Signal[] }) {
   )
 }
 
-function CompositeTrack({ score }: { score: number }) {
+function CompositeTrack({ score, strong, secondary }: { score: number; strong: number; secondary: number }) {
   return (
     <div className="mt-3" aria-hidden>
       <div className="relative h-2 rounded-full bg-muted">
         <div className="absolute inset-y-0 left-0 rounded-full" style={{ width: `${Math.min(score, 100)}%`, background: MARK }} />
-        {[SECONDARY, STRONG].map((t) => (
+        {[secondary, strong].map((t) => (
           <div key={t} className="absolute -top-1 h-4 w-0.5 bg-foreground/50" style={{ left: `${t}%` }} />
         ))}
       </div>
       <div className="relative mt-1 h-4 text-[10px] text-muted-foreground">
-        <span className="absolute -translate-x-1/2" style={{ left: `${SECONDARY}%` }}>45 secondary</span>
-        <span className="absolute -translate-x-1/2" style={{ left: `${STRONG + 8}%` }}>60 strong</span>
+        <span className="absolute -translate-x-1/2" style={{ left: `${secondary}%` }}>{secondary} secondary</span>
+        <span className="absolute -translate-x-1/2" style={{ left: `${strong + 8}%` }}>{strong} strong</span>
       </div>
     </div>
   )
@@ -100,9 +98,10 @@ function SignalRow({ signal }: { signal: Signal }) {
         <span className="text-sm font-medium text-foreground">
           {signal.label}
           {!signal.in_composite && <span className="ml-2 text-xs font-normal text-muted-foreground">not in composite</span>}
+          {!signal.scored && <span className="ml-2 text-xs font-normal text-muted-foreground">not scored</span>}
         </span>
         <span className="font-mono text-sm tabular-nums text-foreground">
-          {fmt(signal.score)}
+          {signal.scored ? fmt(signal.score) : "–"}
           <span className="text-muted-foreground"> / {signal.max}</span>
         </span>
       </div>
@@ -156,7 +155,7 @@ export function FounderScorecardView({ card }: { card: Scorecard }) {
             {card.composite.label}
           </p>
         </div>
-        <CompositeTrack score={card.composite.score} />
+        <CompositeTrack score={card.composite.score} strong={card.composite.thresholds.strong} secondary={card.composite.thresholds.secondary} />
         <p className="mt-1 text-xs text-muted-foreground">Seen greatness + horsepower + domain fit + sacrifice, each capped.</p>
       </section>
 

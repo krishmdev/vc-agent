@@ -1,4 +1,5 @@
 import { create } from "zustand"
+import { OFFLINE } from "@/lib/mode"
 
 // Mirrors research-agent/founder_api.py's Scorecard.
 export type SignalKey = "seen_greatness" | "horsepower" | "domain_fit" | "sacrifice" | "timing"
@@ -17,13 +18,14 @@ export interface Signal {
   max: number
   percent: number
   in_composite: boolean
+  scored: boolean
   evidence: Evidence[]
 }
 
 export interface DomainTags {
   primary_domain: string
   primary_subdomain: string
-  source?: TagSource | null
+  source: TagSource
   model?: string | null
   recorded_at?: string | null
   error?: string | null
@@ -43,7 +45,13 @@ export interface Scorecard {
   as_of: string
   founder: { name: string; synthetic: boolean }
   company: CompanyInput | null
-  composite: { score: number; max: number; band: "strong" | "secondary" | "filter"; label: string }
+  composite: {
+    score: number
+    max: number
+    band: "strong" | "secondary" | "filter"
+    label: string
+    thresholds: { strong: number; secondary: number }
+  }
   signals: Signal[]
   advice: string[]
   tags: { founder: DomainTags; company: DomainTags | null }
@@ -95,6 +103,11 @@ async function readJson<T>(res: Response): Promise<T> {
   return data as T
 }
 
+function localDate() {
+  const d = new Date()
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`
+}
+
 export const fetchSamples = () => fetch("/api/founder-score/samples").then((r) => readJson<SampleFounder[]>(r))
 export const fetchSampleScore = (id: string) =>
   fetch(`/api/founder-score/samples/${encodeURIComponent(id)}`).then((r) => readJson<Scorecard>(r))
@@ -102,5 +115,6 @@ export const scoreProfile = (profile: ProfileInput, company: CompanyInput | null
   fetch("/api/founder-score", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ profile, company }),
+    // Live scores use the founder's date; offline mode pins it server-side for reproducibility.
+    body: JSON.stringify({ profile, company, ...(OFFLINE ? {} : { as_of: localDate() }) }),
   }).then((r) => readJson<Scorecard>(r))

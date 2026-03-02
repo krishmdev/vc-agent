@@ -1,27 +1,13 @@
 import { NextRequest, NextResponse } from "next/server";
 
-import { RESEARCH_SERVICE_URL } from "@/lib/services";
+import { RESEARCH_SERVICE_URL, proxyJson } from "@/lib/services";
 
 export async function POST(req: NextRequest) {
   try {
-    const body = await req.json();
-    // body: { message, session_id, idea, problem... }
-
-    const response = await fetch(`${RESEARCH_SERVICE_URL}/chat`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(body),
-    });
-
-    if (!response.ok) {
-        throw new Error(`Research service error: ${response.statusText}`);
-    }
-
-    const data = await response.json();
-    return NextResponse.json(data);
-  } catch (error: any) {
+    const { status, data } = await proxyJson(`${RESEARCH_SERVICE_URL}/chat`, await req.json());
+    // Pass 4xx through (409: the first research turn for this session is still running).
+    return NextResponse.json(data, { status });
+  } catch (error) {
     console.error("Research Agent Proxy Error:", error);
     return NextResponse.json({ error: "Failed to communicate with research agent" }, { status: 500 });
   }

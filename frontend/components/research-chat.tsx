@@ -173,6 +173,10 @@ export function ResearchChat({ isOpen, onClose, initialContext }: ResearchChatPr
           body: JSON.stringify({ message: text, session_id: sessionId, ...initialContext }),
           headers: { "Content-Type": "application/json" },
         })
+        if (res.status === 409) {
+          fail("Research is still running for this idea. Wait for the report, then ask your follow-up.")
+          return
+        }
         if (!res.ok) throw new Error("Failed to send message")
         const data = await res.json()
         setSessionId(data.session_id)
