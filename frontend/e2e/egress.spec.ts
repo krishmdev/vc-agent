@@ -3,9 +3,10 @@ import { expect, test } from "@playwright/test"
 // Every backend process type answers from inside its own process. Under the sandbox all probes
 // must fail; EXPECT_EGRESS=open is the companion check, run unsandboxed, proving the probe works.
 const expectOpen = process.env.EXPECT_EGRESS === "open"
+const RESEARCH_URL = `http://127.0.0.1:${process.env.E2E_RESEARCH_PORT ?? "8000"}`
 const PROBES = [
   { name: "Next.js server runtime", url: "http://127.0.0.1:3000/api/diag/egress" },
-  { name: "research agent (FastAPI)", url: "http://127.0.0.1:8000/_diag/egress" },
+  { name: "research agent (FastAPI)", url: `${RESEARCH_URL}/_diag/egress` },
   { name: "voice agent server (mentor transport)", url: "http://127.0.0.1:8001/_diag/egress" },
 ]
 
@@ -22,7 +23,7 @@ for (const probe of PROBES) {
 }
 
 test("offline providers are active and no keys are visible", async ({ request }) => {
-  const research = await (await request.get("http://127.0.0.1:8000/_diag/providers")).json()
+  const research = await (await request.get(`${RESEARCH_URL}/_diag/providers`)).json()
   expect(research).toMatchObject({
     mode: "offline",
     research: "fixture",
