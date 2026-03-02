@@ -4,6 +4,10 @@ Recent raise (up to 10), a small raise (up to 3), a founding title (3), and a pr
 ended in the last six months (2). Not part of the 0-100 composite, same as in sierra-demo; it's
 shown separately. The caller passes `as_of` (sierra-demo read the wall clock) so a score is
 reproducible.
+
+Without a raise (`filing is None`) the score is 0 and the title and departure points are skipped
+too. That guard is sierra-demo's, but its founders all came from Form D filings, so it never ran
+there; here it runs for every profile entered without a raise.
 """
 
 import json

@@ -2,7 +2,8 @@
 
 Two classifiers produce the same tag shape:
 
-- GeminiDomainClassifier (live): sierra-demo's prompt and validation, run on gemini-2.5-flash.
+- GeminiDomainClassifier (live): sierra-demo's prompt, model (gemini-3-flash-preview, temperature
+  0.1) and validation.
   If the call or the JSON fails, it falls back to the keyword classifier and says so, instead of
   sierra-demo's silent "other".
 - RecordedDomainClassifier (offline): replays Gemini classifications recorded for the sample

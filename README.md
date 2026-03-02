@@ -142,7 +142,14 @@ Where the port deviates from sierra-demo, and why:
   when written in capitals, and an alias can't take over another company's name.
 - Schools must match the founder-school list or an explicit alias exactly; sierra-demo's
   substring and fuzzy match also credited Smith College ("mit"), Penn State and Northeastern.
-- A raise dated after `as_of` isn't counted as fresh.
+- A raise dated after `as_of` isn't counted as fresh. The API goes further and refuses (422) a
+  role or raise that starts after `as_of`, and a raise above $1T.
+- With no raise date or amount, timing is 0, so the founding-title (+3) and recent-departure (+2)
+  points are not given either. sierra-demo has the same guard (no filing, no timing), but it only
+  scored founders it found through Form D filings, so its founders always had a raise and never
+  reached it. The dashboard form has no raise fields, so a profile entered there always gets
+  timing 0; only the API (`company.raise_date`, `raise_amount`) and the sample founders set it.
+  Timing is not part of the composite.
 - A current role with no end date counts up to `as_of` in the horsepower weighting instead of
   being dropped.
 - Experience is sorted before scoring, since the scorers read the first entry as the founding
