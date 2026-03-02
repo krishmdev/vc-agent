@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useState, useCallback } from "react"
+import { useCallback, useEffect, useRef, useState } from "react"
 import { useRouter } from "next/navigation"
 import Link from "next/link"
 import { ArrowRight, Phone, PhoneOff } from "lucide-react"
@@ -10,7 +10,7 @@ import { ResourceSidebar } from "@/components/resource-sidebar"
 import { useAppStore } from "@/lib/store"
 import { cn } from "@/lib/utils"
 import { OFFLINE } from "@/lib/mode"
-import { TextAgentChat } from "@/components/text-agent-chat"
+import { TextAgentChat, type Citation } from "@/components/text-agent-chat"
 import {
   LiveKitRoom,
   useVoiceAssistant,
@@ -122,6 +122,7 @@ export default function MentorshipPage() {
     title: string
     type: "article" | "framework" | "example" | "metric"
     description: string
+    url?: string
   }>>([])
   const [callDuration, setCallDuration] = useState(0)
   
@@ -148,9 +149,32 @@ export default function MentorshipPage() {
     return () => clearInterval(interval)
   }, [callActive, callEnded])
 
-  // Add resources progressively during the call
+  // Offline, the sidebar lists the knowledge-base sources the mentor actually cited.
+  const citedRef = useRef(new Set<string>())
+  const addCitations = useCallback(
+    (citations: Citation[]) => {
+      const fresh = citations
+        .filter((c) => !citedRef.current.has(c.source))
+        .map((c) => ({
+          id: `kb-${c.source}`,
+          title: c.source,
+          type: "article" as const,
+          description: c.url ? "Sequoia article cited by the mentor" : "Sequoia podcast transcript cited by the mentor",
+          url: c.url ?? undefined,
+        }))
+      if (!fresh.length) return
+      fresh.forEach(({ id, ...resource }) => {
+        citedRef.current.add(id.slice(3))
+        addResource(resource)
+      })
+      setDisplayedResources((prev) => [...prev, ...fresh])
+    },
+    [addResource],
+  )
+
+  // Live calls: add resources progressively during the call
   useEffect(() => {
-    if (!callActive || callEnded) return
+    if (OFFLINE || !callActive || callEnded) return
 
     const timeouts: NodeJS.Timeout[] = []
     
@@ -283,6 +307,7 @@ export default function MentorshipPage() {
               <TextAgentChat
                 mode="mentor"
                 idea={idea || undefined}
+                onCitations={addCitations}
                 className="w-full max-w-2xl h-[min(600px,calc(100vh-14rem))]"
               />
             ) : callActive && !callEnded && token && wsUrl ? (

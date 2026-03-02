@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils"
 
 type Mode = "mentor" | "vc"
 
-interface Citation {
+export interface Citation {
   source: string
   url: string | null
 }
@@ -30,6 +30,8 @@ interface TextAgentChatProps {
   // VC mode: called with the post-call report once the agent has written it.
   onReport?: (report: Record<string, unknown> | null) => void
   reportRequested?: boolean
+  // Called with the knowledge-base sources an agent turn cited.
+  onCitations?: (citations: Citation[]) => void
 }
 
 type Status = "connecting" | "ready" | "waiting" | "error" | "closed"
@@ -44,7 +46,7 @@ function dedupe(citations: Citation[] = []) {
   return citations.filter((c) => (seen.has(c.source) ? false : (seen.add(c.source), true)))
 }
 
-export function TextAgentChat({ mode, idea, className, compact, onReport, reportRequested }: TextAgentChatProps) {
+export function TextAgentChat({ mode, idea, className, compact, onReport, reportRequested, onCitations }: TextAgentChatProps) {
   const [turns, setTurns] = useState<ChatTurn[]>([])
   const [status, setStatus] = useState<Status>("connecting")
   const [error, setError] = useState<string | null>(null)
@@ -54,9 +56,11 @@ export function TextAgentChat({ mode, idea, className, compact, onReport, report
   const endRef = useRef<HTMLDivElement>(null)
   const inputRef = useRef<HTMLInputElement>(null)
   const onReportRef = useRef(onReport)
+  const onCitationsRef = useRef(onCitations)
   useEffect(() => {
     onReportRef.current = onReport
-  }, [onReport])
+    onCitationsRef.current = onCitations
+  }, [onReport, onCitations])
 
   useEffect(() => {
     const params = new URLSearchParams({ mode })
@@ -73,6 +77,7 @@ export function TextAgentChat({ mode, idea, className, compact, onReport, report
           ...prev,
           { id: `a-${prev.length}`, role: "agent", text: msg.text, citations: msg.citations, tools: msg.tools, memories: msg.memories },
         ])
+        if (msg.citations?.length) onCitationsRef.current?.(dedupe(msg.citations))
         setStatus("ready")
       } else if (msg.type === "vc_report") {
         onReportRef.current?.(msg.data ?? null)

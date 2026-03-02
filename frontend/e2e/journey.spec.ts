@@ -26,6 +26,8 @@ test("idea to research report, KB-cited guide, and mentor chat with recalled mem
   await mentor.getByRole("button", { name: "Send message" }).click()
   const firstAnswer = mentor.getByTestId("agent-turn").nth(1)
   await expect(firstAnswer.getByTestId("kb-citations")).toBeVisible()
+  const cited = (await firstAnswer.locator(".source-tag").first().textContent())?.trim()
+  await expect(page.getByRole("complementary").filter({ hasText: "Referenced Resources" })).toContainText(cited!)
   const stored = await (await request.get("http://127.0.0.1:8001/memories")).json()
   expect(stored.memories.map((m: { memory: string }) => m.memory)).toEqual([
     "We plan to charge each clinic $300 a month, and our first customers are independent vet clinics in Ohio.",
