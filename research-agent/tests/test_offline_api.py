@@ -48,7 +48,7 @@ def poll(client, task_id, timeout=10):
     while time.time() < deadline:
         body = client.get(f"/chat/status/{task_id}").json()
         seen.append(body["status"])
-        if body["status"] in ("completed", "failed"):
+        if body["status"] in main.TERMINAL:
             return body, seen
         time.sleep(0.05)
     raise AssertionError(f"task did not finish: {seen[-5:]}")
@@ -158,6 +158,43 @@ def test_finished_tasks_are_evicted_after_the_ttl():
     main.active_tasks["running"] = {"status": "running", "started": 0.0}
     main.evict_tasks(now=main.TASK_TTL_S + 1)
     assert list(main.active_tasks) == ["running"]
+
+
+def test_running_jobs_are_cancelled_at_shutdown():
+    fx = FIXTURES[0]
+    with TestClient(main.app, base_url="http://127.0.0.1") as c:
+        start = c.post("/chat", json={"message": FIRST_MESSAGE, "idea": fx.idea}).json()
+        assert main.active_tasks[start["task_id"]]["status"] not in main.TERMINAL
+    task = main.active_tasks[start["task_id"]]
+    assert task["status"] == "cancelled" and "Cancelled" in task["error"]
+    assert not main.running_jobs and start["session_id"] not in main.sessions_in_flight
+
+
+def test_new_work_is_refused_past_the_running_cap(client, monkeypatch):
+    monkeypatch.setattr(main, "MAX_RUNNING_JOBS", 0)
+    r = client.post("/chat", json={"message": FIRST_MESSAGE, "idea": FIXTURES[0].idea})
+    assert r.status_code == 503
+
+
+def test_jobs_running_past_the_backstop_are_cancelled(client):
+    start = client.post("/chat", json={"message": FIRST_MESSAGE, "idea": FIXTURES[0].idea}).json()
+    # On the server's loop, where the job runs; Task.cancel isn't thread-safe.
+    client.portal.call(lambda: main.evict_tasks(now=time.monotonic() + main.RUNNING_TTL_S + 1))
+    body, _ = poll(client, start["task_id"])
+    assert body["status"] == "cancelled"
+
+
+def test_idle_chat_sessions_are_evicted():
+    main.chat_sessions.clear()
+    main.session_touched.clear()
+    main.chat_sessions.update({"idle": [], "fresh": [], "busy": []})
+    main.session_touched.update({"idle": 0.0, "fresh": main.SESSION_TTL_S, "busy": 0.0})
+    main.sessions_in_flight.add("busy")
+    try:
+        main.evict_sessions(now=main.SESSION_TTL_S + 1)
+    finally:
+        main.sessions_in_flight.discard("busy")
+    assert sorted(main.chat_sessions) == ["busy", "fresh"]
 
 
 def test_guide_snippets_are_plain_text_and_headings_need_bullets():

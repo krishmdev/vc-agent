@@ -44,6 +44,12 @@ async def lifespan(app: FastAPI):
     app.state.http = httpx.AsyncClient(timeout=30)
     print(f"research agent mode={settings.MODE} research={app.state.research.name}")
     yield
+    # Shutdown: cancel jobs still running (a live deep-research job also cancels its remote run)
+    # and wait for them, so none is left writing to a closed client.
+    jobs = list(running_jobs)
+    for job in jobs:
+        job.cancel()
+    await asyncio.gather(*jobs, return_exceptions=True)
     await app.state.kb.aclose()
     await app.state.http.aclose()
 
@@ -111,36 +117,79 @@ active_tasks: Dict[str, Dict[str, Any]] = {}  # task_id -> {status, content, pro
 sessions_in_flight: set[str] = set()  # sessions whose first (deep research) turn is still running
 
 MAX_PROGRESS_NOTES = 12
+TERMINAL = ("completed", "failed", "cancelled")
 # Finished tasks are dropped after an hour, and the oldest go first past this many.
 TASK_TTL_S = 3600
 MAX_TASKS = 500
+# At most this many jobs run at once; past it new work gets a 503. A job still running after
+# RUNNING_TTL_S is cancelled (the provider's own timeout is 30 minutes, so this is a backstop).
+MAX_RUNNING_JOBS = 16
+RUNNING_TTL_S = 2 * 3600
+# Chat histories idle this long are dropped, and the least recently used go first past the cap.
+SESSION_TTL_S = 6 * 3600
+MAX_SESSIONS = 500
+session_touched: Dict[str, float] = {}
 
 # Deep research can run for many minutes, longer than a request cycle, so jobs are plain asyncio
 # tasks on the server's loop. Keep references so they aren't garbage collected mid-run.
 running_jobs: set[asyncio.Task] = set()
+jobs_by_task: Dict[str, asyncio.Task] = {}
 
 
-def start_job(coro) -> None:
-    job = asyncio.create_task(coro)
+def start_job(task_id: str, coro) -> None:
+    async def guarded():
+        try:
+            await coro
+        except asyncio.CancelledError:
+            if active_tasks.get(task_id, {}).get("status") not in TERMINAL:
+                update_task(task_id, status="cancelled", error="Cancelled before it finished: the server stopped or the job ran too long.")
+            raise
+
+    job = asyncio.create_task(guarded())
     running_jobs.add(job)
-    job.add_done_callback(running_jobs.discard)
+    jobs_by_task[task_id] = job
+
+    def done(j: asyncio.Task) -> None:
+        running_jobs.discard(j)
+        jobs_by_task.pop(task_id, None)
+
+    job.add_done_callback(done)
 
 
 def evict_tasks(now: float | None = None) -> None:
     now = time.monotonic() if now is None else now
-    done = [tid for tid, t in active_tasks.items() if t["status"] in ("completed", "failed")]
-    for tid in done:
-        if now - active_tasks[tid].get("finished", now) > TASK_TTL_S:
-            del active_tasks[tid]
+    for tid, t in list(active_tasks.items()):
+        if t["status"] in TERMINAL:
+            if now - t.get("finished", now) > TASK_TTL_S:
+                del active_tasks[tid]
+        elif now - t["started"] > RUNNING_TTL_S and tid in jobs_by_task:
+            jobs_by_task[tid].cancel()  # the job marks itself cancelled
     overflow = len(active_tasks) - MAX_TASKS
     if overflow > 0:
-        finished = sorted((t.get("finished", t["started"]), tid) for tid, t in active_tasks.items() if t["status"] in ("completed", "failed"))
+        finished = sorted((t.get("finished", t["started"]), tid) for tid, t in active_tasks.items() if t["status"] in TERMINAL)
         for _, tid in finished[:overflow]:
             del active_tasks[tid]
+    evict_sessions(now)
+
+
+def evict_sessions(now: float) -> None:
+    idle = [sid for sid in chat_sessions if sid not in sessions_in_flight]
+    for sid in idle:
+        if now - session_touched.get(sid, now) > SESSION_TTL_S:
+            chat_sessions.pop(sid, None)
+            session_touched.pop(sid, None)
+    overflow = len(chat_sessions) - MAX_SESSIONS
+    if overflow > 0:
+        oldest = sorted((session_touched.get(sid, 0.0), sid) for sid in chat_sessions if sid not in sessions_in_flight)
+        for _, sid in oldest[:overflow]:
+            chat_sessions.pop(sid, None)
+            session_touched.pop(sid, None)
 
 
 def new_task(prefix: str, kind: str, provider: str | None = None) -> str:
     evict_tasks()
+    if len(running_jobs) >= MAX_RUNNING_JOBS:
+        raise HTTPException(status_code=503, detail="Too many jobs running; try again in a few minutes")
     task_id = f"{prefix}_{int(time.time())}_{str(uuid.uuid4())[:8]}"
     active_tasks[task_id] = {
         "status": "queued",
@@ -153,9 +202,12 @@ def new_task(prefix: str, kind: str, provider: str | None = None) -> str:
 
 
 def update_task(task_id: str, **fields: Any) -> None:
-    active_tasks[task_id].update(fields)
-    if fields.get("status") in ("completed", "failed"):
-        active_tasks[task_id]["finished"] = time.monotonic()
+    task = active_tasks.get(task_id)
+    if task is None:  # evicted while the job ran
+        return
+    task.update(fields)
+    if fields.get("status") in TERMINAL:
+        task["finished"] = time.monotonic()
 
 
 def gemini_client() -> genai.Client | None:
@@ -169,7 +221,9 @@ async def run_research_turn(task_id: str, session_id: str, user_message: str, co
     research = app.state.research
 
     def on_progress(stage: str, note: str | None = None) -> None:
-        task = active_tasks[task_id]
+        task = active_tasks.get(task_id)
+        if task is None:
+            return
         task["status"] = stage
         if note:
             task["progress"] = (task["progress"] + [note])[-MAX_PROGRESS_NOTES:]
@@ -186,8 +240,10 @@ async def run_research_turn(task_id: str, session_id: str, user_message: str, co
             content = await research.follow_up(history, user_message, context)
 
         update_task(task_id, status="completed", content=content)
-        chat_sessions[session_id].append({"role": "user", "content": user_message})
-        chat_sessions[session_id].append({"role": "assistant", "content": content})
+        session = chat_sessions.setdefault(session_id, [])
+        session.append({"role": "user", "content": user_message})
+        session.append({"role": "assistant", "content": content})
+        session_touched[session_id] = time.monotonic()
     except Exception as e:
         print(f"Error in research turn: {e}")
         update_task(task_id, status="failed", error=str(e))
@@ -198,8 +254,8 @@ async def run_research_turn(task_id: str, session_id: str, user_message: str, co
 @app.post("/chat", response_model=ChatResponse)
 async def chat_endpoint(request: ChatRequest):
     session_id = request.session_id or str(uuid.uuid4())
-    if session_id not in chat_sessions:
-        chat_sessions[session_id] = []
+    chat_sessions.setdefault(session_id, [])
+    session_touched[session_id] = time.monotonic()
 
     context_str = build_context(request.idea, request.problem, request.customer, request.product)
     # A follow-up sent before the first turn finishes would otherwise start a second paid run.
@@ -211,7 +267,7 @@ async def chat_endpoint(request: ChatRequest):
     task_id = new_task("msg", "deep_research" if first_turn else "follow_up", app.state.research.name)
     if first_turn:
         sessions_in_flight.add(session_id)  # before the job starts, so a quick follow-up sees it
-    start_job(run_research_turn(task_id, session_id, request.message, context_str, first_turn))
+    start_job(task_id, run_research_turn(task_id, session_id, request.message, context_str, first_turn))
 
     return ChatResponse(
         session_id=session_id,
@@ -541,7 +597,7 @@ async def run_customer_reachout_task(task_id: str, icp_description: str, custome
 @app.post("/customer-reachout", response_model=CustomerReachoutResponse)
 async def customer_reachout_endpoint(request: CustomerReachoutRequest):
     task_id = new_task("reachout", "reachout")
-    start_job(run_customer_reachout_task(task_id, request.icp_description, request.customer_type))
+    start_job(task_id, run_customer_reachout_task(task_id, request.icp_description, request.customer_type))
 
     return CustomerReachoutResponse(
         task_id=task_id,
@@ -594,7 +650,7 @@ async def run_slide_generation_task(task_id: str, modules: Dict[str, Any], idea:
 async def generate_slides_endpoint(request: SlideGenerationRequest):
     """Generate a Sequoia-style pitch deck from dashboard data."""
     task_id = new_task("slides", "slides")
-    start_job(run_slide_generation_task(task_id, request.modules, request.idea))
+    start_job(task_id, run_slide_generation_task(task_id, request.modules, request.idea))
 
     return SlideGenerationResponse(
         task_id=task_id,

@@ -92,7 +92,10 @@ graph LR
   the research agent, and long-polls for the VC report.
 - The **research agent** runs long jobs as tracked asyncio tasks. `/chat` returns a `task_id`
   right away, and `/chat/status/{id}` reports `queued`, `running` (with progress notes),
-  `completed` or `failed`. All provider calls are async: `google-genai`'s `client.aio`, `httpx`
+  `completed`, `failed` or `cancelled`. At most 16 jobs run at once (then 503), a job still
+  running after two hours or at shutdown is cancelled, and a cancelled or timed-out live deep
+  research run is also cancelled on Gemini's side. Finished tasks and idle chat histories are
+  evicted after a TTL. All provider calls are async: `google-genai`'s `client.aio`, `httpx`
   for Apollo and Manus, and PRAW in the threadpool.
 - The **voice-agent package** owns the knowledge base. The LiveKit worker and `server.py` both
   use the same `Assistant` class, persona prompts and tools (`search_knowledge_base`,

@@ -18,7 +18,7 @@ interface Message {
 }
 
 interface TaskState {
-  status: "queued" | "running" | "completed" | "failed" | string
+  status: "queued" | "running" | "completed" | "failed" | "cancelled" | string
   kind?: string
   provider?: string
   progress: string[]
@@ -151,8 +151,8 @@ export function ResearchChat({ isOpen, onClose, initialContext }: ResearchChatPr
           setMessages((prev) => [...prev.filter((m) => !m.busy), { role: "assistant", content: data.content, id: currentTaskId, kind: data.kind }])
           setTask(null)
           setCurrentTaskId(null)
-        } else if (data.status === "failed") {
-          fail(data.error || "Research failed.")
+        } else if (data.status === "failed" || data.status === "cancelled") {
+          fail(data.error || (data.status === "cancelled" ? "Research was cancelled." : "Research failed."))
         } else {
           setTask({ status: data.status, kind: data.kind, provider: data.provider, progress: data.progress ?? [], elapsedS: data.elapsed_s })
         }

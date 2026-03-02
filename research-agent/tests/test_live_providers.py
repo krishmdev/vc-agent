@@ -8,8 +8,14 @@ from research_providers import GeminiResearchProvider, progress_notes
 
 
 class FakeInteractions:
-    def __init__(self):
+    def __init__(self, finish_after=3):
         self.polls = 0
+        self.finish_after = finish_after
+        self.cancelled = []
+
+    async def cancel(self, interaction_id):
+        self.cancelled.append(interaction_id)
+        return NS(status="cancelled")
 
     async def create(self, **kwargs):
         assert kwargs["background"] is True
@@ -21,7 +27,7 @@ class FakeInteractions:
         steps = [NS(type="thought", summary=[NS(text="Mapping the landscape")])]
         if self.polls >= 2:
             steps.append(NS(type="google_search_call", arguments=NS(queries=["vet software market size"])))
-        if self.polls < 3:
+        if self.polls < self.finish_after:
             return NS(status="in_progress", steps=steps, output_text="", errors=None)
         return NS(status="completed", steps=steps, output_text="# MARKET SPACE ASSESSMENT", errors=None)
 
@@ -37,6 +43,35 @@ async def test_deep_research_polls_asynchronously_and_reports_progress():
     assert "Mapping the landscape" in notes
     assert "Searching: vet software market size" in notes
     assert notes.count("Mapping the landscape") == 1  # each note reported once across polls
+
+
+async def test_timed_out_deep_research_is_cancelled_remotely():
+    import pytest
+
+    from research_providers import ResearchError
+
+    provider = GeminiResearchProvider("test-key", poll_interval=0, timeout_s=0)
+    fake = FakeInteractions(finish_after=99)
+    provider._client = NS(aio=NS(interactions=fake))
+    with pytest.raises(ResearchError, match="timed out"):
+        await provider.deep_research("prompt", context="Idea: x", on_progress=lambda s, n: None)
+    assert fake.cancelled == ["int-1"]
+
+
+async def test_cancelled_job_cancels_the_remote_run():
+    import asyncio
+
+    provider = GeminiResearchProvider("test-key", poll_interval=0.01)
+    fake = FakeInteractions(finish_after=10**9)
+    provider._client = NS(aio=NS(interactions=fake))
+    job = asyncio.create_task(provider.deep_research("prompt", context="Idea: x", on_progress=lambda s, n: None))
+    await asyncio.sleep(0.05)
+    job.cancel()
+    try:
+        await job
+    except asyncio.CancelledError:
+        pass
+    assert fake.cancelled == ["int-1"]
 
 
 def test_progress_notes_ignore_unknown_steps():

@@ -79,6 +79,21 @@ class GeminiResearchProvider:
         )
         interaction_id = interaction.id
         on_progress("running", f"Deep research started ({self.agent})")
+        try:
+            return await self._poll(interaction_id, on_progress)
+        except (ResearchError, asyncio.CancelledError):
+            # Timed out here, or the job was cancelled (server shutdown): stop the remote run so it
+            # doesn't keep researching, and billing, after nobody is waiting for it.
+            await self._cancel_remote(interaction_id)
+            raise
+
+    async def _cancel_remote(self, interaction_id: str) -> None:
+        try:
+            await asyncio.wait_for(asyncio.shield(self._client.aio.interactions.cancel(interaction_id)), timeout=10)
+        except Exception as e:  # already finished, or the API is unreachable; nothing else to do
+            print(f"Could not cancel deep research {interaction_id}: {e}")
+
+    async def _poll(self, interaction_id: str, on_progress: ProgressFn) -> str:
         started = time.monotonic()
         seen = 0
         while True:

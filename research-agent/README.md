@@ -6,7 +6,8 @@ customer discovery, and pitch decks. Part of [Launchpad](../README.md).
 - `/chat`: the first turn runs Gemini's Deep Research agent (`deep-research-pro-preview-12-2025`)
   with the team's "Problem Space Specialist" prompt (`prompts.py`); later turns use
   `gemini-2.5-flash` with Google Search. Jobs are asyncio tasks; poll `/chat/status/{task_id}`
-  for `queued`, `running` (with progress notes), `completed` or `failed`.
+  for `queued`, `running` (with progress notes), `completed`, `failed` or `cancelled` (shutdown,
+  the two-hour backstop; a live run is cancelled on Gemini's side too).
 - `/generate_resource_article`, `/resource_chat`: retrieve passages from the Sequoia knowledge
   base (via `KB_SERVICE_URL`, the voice agent's `server.py`) and write a guide that cites them as
   `[n]`. The response includes `citations`.

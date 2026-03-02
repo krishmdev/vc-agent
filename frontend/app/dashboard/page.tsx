@@ -200,7 +200,7 @@ export default function DashboardPage() {
             setSearchResult(data.content);
             setIsSearching(false);
             clearInterval(poll);
-          } else if (data.status === 'failed') {
+          } else if (data.status === 'failed' || data.status === 'cancelled') {
             console.error("Task failed", data.error);
             setIsSearching(false);
             clearInterval(poll);
