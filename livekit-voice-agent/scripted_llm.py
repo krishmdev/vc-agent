@@ -43,6 +43,14 @@ def parse_kb_output(output: str) -> list[dict[str, Any]]:
     return passages
 
 
+_MARKDOWN = re.compile(r"!?\[([^\]]*)\]\([^)]*\)|[*_`#>]+")
+
+
+def _plain(text: str) -> str:
+    """Knowledge-base text without markdown marks or link URLs, so quotes read as plain speech."""
+    return _MARKDOWN.sub(lambda m: m.group(1) or "", text)
+
+
 def parse_memory_output(output: str) -> list[str]:
     if "No memories found" in output or "Unable to access memory" in output:
         return []
@@ -139,11 +147,14 @@ class ScriptedLLM(llm.LLM):
 
         if kb:
             top = kb[0]
-            quote = next(iter(best_sentences(message, top["text"], k=1, min_len=40, max_len=260)), None)
+            title = top["source"].strip().rstrip(".!?:;, ")
+            quote = next(iter(best_sentences(message, _plain(top["text"]), k=1, min_len=40, max_len=260)), None)
             if quote:
-                parts.append(f'There\'s a story in the Sequoia library that fits. From "{top["source"]}": "{quote}"')
+                if quote[-1] not in ".!?":
+                    quote += "."
+                parts.append(f'There\'s a story in the Sequoia library that fits. From "{title}": "{quote}"')
             else:
-                parts.append(f'The closest thing in the Sequoia library is "{top["source"]}".')
+                parts.append(f'The closest thing in the Sequoia library is "{title}."')
 
         questions = PERSONA_QUESTION.findall(instructions)
         if questions:

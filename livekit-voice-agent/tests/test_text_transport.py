@@ -50,6 +50,7 @@ def test_mentor_turn_cites_the_knowledge_base(client):
         assert [t["name"] for t in reply["tools"]] == ["search_knowledge_base"]
         assert reply["citations"][0]["source"] == "Airbnb ft Brian Chesky"
         assert "Airbnb ft Brian Chesky" in reply["text"]
+        assert '.".' not in reply["text"] and ".." not in reply["text"]
         assert reply["text"].rstrip().endswith("?")  # a follow-up question from the persona prompt
 
 
@@ -109,3 +110,9 @@ def test_foreign_origins_are_rejected(client):
     assert client.get("/memories", headers={"origin": "http://127.0.0.1:3000"}).status_code == 200
     with client.websocket_connect("/ws/chat?mode=mentor", headers={"origin": "http://127.0.0.1:3000"}) as ws:
         assert ws.receive_json()["type"] == "agent_message"
+
+
+def test_quoted_knowledge_base_text_is_plain():
+    from scripted_llm import _plain
+
+    assert _plain("**Go** to [the hosts](https://example.com) in `person`.") == "Go to the hosts in person."
