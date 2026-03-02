@@ -40,6 +40,10 @@ MEMORY_DB = Path(os.environ.get("VC_AGENT_MEMORY_DB", HERE / ".data" / "memory.s
 # Mem0 user id shared with the frontend's /api/memories route.
 MEMORY_USER_ID = os.environ.get("MEM0_USER_ID", "sequoia-mentor-agent")
 
+# Host headers the service answers to. It listens on 127.0.0.1; this stops DNS-rebinding pages
+# from reaching it under another name. Add a hostname here when deploying behind a proxy.
+ALLOWED_HOSTS = [h.strip() for h in os.environ.get("ALLOWED_HOSTS", "127.0.0.1,localhost").split(",") if h.strip()]
+
 FRONTEND_URL = os.environ.get("FRONTEND_URL", "http://localhost:3000").rstrip("/")
 REPORT_MODEL = os.environ.get("VC_REPORT_MODEL", "gemini-2.5-flash-lite")
 VOICE_MODEL = os.environ.get("VOICE_MODEL", "gemini-2.5-flash-native-audio-preview-12-2025")

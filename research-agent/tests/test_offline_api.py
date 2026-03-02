@@ -37,7 +37,7 @@ def kb_transport(status=200):
 
 @pytest.fixture
 def client():
-    with TestClient(main.app) as c:
+    with TestClient(main.app, base_url="http://127.0.0.1") as c:
         main.app.state.kb = KnowledgeBaseClient("http://kb.test", transport=kb_transport())
         yield c
 
@@ -170,3 +170,8 @@ def test_guide_snippets_are_plain_text_and_headings_need_bullets():
     one = [Passage("[From: A]\nFounders should meet their first customers in person.", "A", "website", None, 0.5)]
     guide = asyncio.run(ExtractiveGuideWriter().write_guide("How do founders meet customers?", one))
     assert "What founders in the knowledge base said" not in guide
+
+
+def test_foreign_host_header_is_refused(client):
+    assert client.get("/founder/samples").status_code == 200
+    assert client.get("/founder/samples", headers={"host": "attacker.example"}).status_code == 400

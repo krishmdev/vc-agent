@@ -35,13 +35,13 @@ def client(tmp_path, monkeypatch):
     monkeypatch.setattr(config, "MEMORY_DB", tmp_path / "memory.sqlite3")
     monkeypatch.setattr(rag, "get_knowledge_base", lambda: StubKB())
     mentor.memory_store.cache_clear()
-    with TestClient(server.app) as c:
+    with TestClient(server.app, base_url="http://127.0.0.1") as c:
         yield c
     mentor.memory_store.cache_clear()
 
 
 def test_mentor_turn_cites_the_knowledge_base(client):
-    with client.websocket_connect("/ws/chat?mode=mentor&idea=Vet%20clinic%20software") as ws:
+    with client.websocket_connect("ws://127.0.0.1/ws/chat?mode=mentor&idea=Vet%20clinic%20software") as ws:
         greeting = ws.receive_json()
         assert greeting["type"] == "agent_message" and "Interesting space" in greeting["text"]
 
@@ -55,7 +55,7 @@ def test_mentor_turn_cites_the_knowledge_base(client):
 
 
 def test_memory_is_stored_and_recalled_across_conversations(client):
-    with client.websocket_connect("/ws/chat?mode=mentor") as ws:
+    with client.websocket_connect("ws://127.0.0.1/ws/chat?mode=mentor") as ws:
         ws.receive_json()
         ws.send_json({"type": "user_message", "text": "We plan to charge each clinic $300 a month for the software."})
         ws.receive_json()
@@ -63,7 +63,7 @@ def test_memory_is_stored_and_recalled_across_conversations(client):
     stored = client.get("/memories").json()["memories"]
     assert [m["memory"] for m in stored] == ["We plan to charge each clinic $300 a month for the software."]
 
-    with client.websocket_connect("/ws/chat?mode=mentor") as ws:
+    with client.websocket_connect("ws://127.0.0.1/ws/chat?mode=mentor") as ws:
         ws.receive_json()
         ws.send_json({"type": "user_message", "text": "What did I tell you about pricing per month?"})
         reply = ws.receive_json()
@@ -81,7 +81,7 @@ def test_vc_report_is_built_from_the_transcript(client, monkeypatch):
     async def fake_post(self):
         return None
 
-    with client.websocket_connect("/ws/chat?mode=vc&idea=Vet%20software") as ws:
+    with client.websocket_connect("ws://127.0.0.1/ws/chat?mode=vc&idea=Vet%20software") as ws:
         assert "Pitch me" in ws.receive_json()["text"]
         ws.send_json({"type": "user_message", "text": "Clinics lose hours every week reconciling insurance claims by hand. We charge $300 a month."})
         ws.receive_json()
@@ -104,11 +104,11 @@ def test_foreign_origins_are_rejected(client):
     from starlette.websockets import WebSocketDisconnect
 
     with pytest.raises(WebSocketDisconnect):
-        with client.websocket_connect("/ws/chat?mode=mentor", headers={"origin": "https://evil.example"}) as ws:
+        with client.websocket_connect("ws://127.0.0.1/ws/chat?mode=mentor", headers={"origin": "https://evil.example"}) as ws:
             ws.receive_json()
     assert client.get("/memories", headers={"origin": "https://evil.example"}).status_code == 403
     assert client.get("/memories", headers={"origin": "http://127.0.0.1:3000"}).status_code == 200
-    with client.websocket_connect("/ws/chat?mode=mentor", headers={"origin": "http://127.0.0.1:3000"}) as ws:
+    with client.websocket_connect("ws://127.0.0.1/ws/chat?mode=mentor", headers={"origin": "http://127.0.0.1:3000"}) as ws:
         assert ws.receive_json()["type"] == "agent_message"
 
 
@@ -116,3 +116,7 @@ def test_quoted_knowledge_base_text_is_plain():
     from scripted_llm import _plain
 
     assert _plain("**Go** to [the hosts](https://example.com) in `person`.") == "Go to the hosts in person."
+
+
+def test_foreign_host_header_is_refused(client):
+    assert client.post("/kb/search", json={"query": "first customers"}, headers={"host": "attacker.example"}).status_code == 400

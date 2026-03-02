@@ -250,6 +250,7 @@ meant to happen under load.
 | `KB_EMBEDDER` | voice agent | `openai` (live default) or `local` |
 | `RESEARCH_SERVICE_URL`, `AGENT_SERVICE_URL`, `KB_SERVICE_URL` | frontend, research agent | service URLs (defaults: 127.0.0.1:8000 / :8001) |
 | `VC_AGENT_DIAGNOSTICS` | all | `1` exposes the `/_diag` egress and provider endpoints |
+| `ALLOWED_HOSTS` | research agent, voice agent | Host headers the APIs answer (default `127.0.0.1,localhost`); anything else gets a 400 |
 
 Missing Reddit, Apollo or Manus keys fall back to placeholder messages or Gemini samples, and a
 missing `MEM0_API_KEY` turns memory off in live mode.

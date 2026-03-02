@@ -37,6 +37,10 @@ FRONTEND_ORIGINS = [
     if o.strip()
 ]
 
+# Host headers the service answers to. It listens on 127.0.0.1; this stops DNS-rebinding pages
+# from reaching it under another name. Add a hostname here when deploying behind a proxy.
+ALLOWED_HOSTS = [h.strip() for h in os.environ.get("ALLOWED_HOSTS", "127.0.0.1,localhost").split(",") if h.strip()]
+
 DEEP_RESEARCH_AGENT = os.environ.get("DEEP_RESEARCH_AGENT", "deep-research-pro-preview-12-2025")
 CHAT_MODEL = os.environ.get("RESEARCH_CHAT_MODEL", "gemini-2.5-flash")
 # gemini-2.0-flash, which the reach-out and slide code originally used, has been retired.
