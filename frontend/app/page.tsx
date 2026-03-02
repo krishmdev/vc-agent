@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 import { useRouter } from "next/navigation"
 import { IdeaInputBubble } from "@/components/idea-input-bubble"
 import { useAppStore } from "@/lib/store"
@@ -11,7 +11,14 @@ export default function LandingPage() {
   const [isTransitioning, setIsTransitioning] = useState(false)
   const bubbleRef = useRef<HTMLDivElement>(null)
   const router = useRouter()
-  const idea = ""; // Declare the idea variable
+  // Set when a later step (dashboard, memo) sent a visitor here because nothing is started yet.
+  const [redirected, setRedirected] = useState(false)
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search)
+    if (params.get("start") !== "1") return
+    setRedirected(true) // eslint-disable-line react-hooks/set-state-in-effect -- reads the URL once after mount
+    window.history.replaceState(null, "", "/")
+  }, [])
 
   const handleStartMentorship = async () => {
     if (!localIdea.trim()) return // Use localIdea for validation
@@ -115,6 +122,12 @@ export default function LandingPage() {
           </h1>
         </div>
 
+        {redirected && (
+          <p role="status" data-testid="start-notice" className="-mt-6 mb-6 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-sm text-foreground">
+            Start with your idea. Describe it here and the dashboard unlocks.
+          </p>
+        )}
+
         {/* Idea Input Bubble */}
         <IdeaInputBubble
           value={localIdea}
@@ -144,7 +157,7 @@ export default function LandingPage() {
       </div>
 
       {/* Decorative elements */}
-      <div className="absolute bottom-8 left-8 text-muted-foreground/40 font-mono text-xs hidden md:block">
+      <div aria-hidden className="absolute top-8 left-8 text-muted-foreground/40 font-mono text-xs hidden md:block">
         From idea to validation
       </div>
     </main>

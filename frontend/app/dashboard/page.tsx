@@ -111,7 +111,7 @@ export default function DashboardPage() {
   useEffect(() => {
     // Redirect if dashboard not unlocked
     if (!dashboardUnlocked) {
-      router.push("/")
+      router.replace("/?start=1")
       return
     }
 
@@ -250,14 +250,14 @@ export default function DashboardPage() {
             <button
               onClick={() => router.push("/vc-call")}
               className="relative flex items-center gap-2 px-3 py-1.5 rounded-full hover:bg-secondary transition-colors group"
-              aria-label="VC Call"
+              aria-label={vcCallCompleted ? "Retake VC pitch" : "VC Call (not done yet)"}
             >
               <DollarSign className="w-4 h-4 text-muted-foreground group-hover:text-foreground" />
               <span className="text-sm text-muted-foreground group-hover:text-foreground hidden sm:inline">
                 {vcCallCompleted ? "Retake Pitch" : "VC Call"}
               </span>
               {!vcCallCompleted && (
-                <span className="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 bg-primary rounded-full ring-2 ring-background" />
+                <span title="Not done yet" className="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 bg-primary rounded-full ring-2 ring-background" />
               )}
             </button>
 
@@ -293,14 +293,14 @@ export default function DashboardPage() {
                   "relative flex items-center gap-2 px-3 py-1.5 rounded-full hover:bg-secondary transition-colors group",
                   isReachOutPopupOpen && "bg-secondary"
                 )}
-                aria-label="Customer Reach-out"
+                aria-label={customerCallCompleted ? "Customer Reach-out" : "Customer Reach-out (not done yet)"}
               >
                 <Users className="w-4 h-4 text-muted-foreground group-hover:text-foreground" />
                 <span className="text-sm text-muted-foreground group-hover:text-foreground hidden sm:inline">
                   Customer Reach-out
                 </span>
                 {!customerCallCompleted && (
-                  <span className="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 bg-primary rounded-full ring-2 ring-background" />
+                  <span title="Not done yet" className="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 bg-primary rounded-full ring-2 ring-background" />
                 )}
               </button>
 
@@ -311,9 +311,14 @@ export default function DashboardPage() {
                 anchorRef={customerButtonRef}
               />
             </div>
+            {(!vcCallCompleted || !customerCallCompleted) && (
+              <span aria-hidden className="hidden xl:flex shrink-0 items-center gap-1.5 text-xs text-muted-foreground">
+                <span className="w-2 h-2 rounded-full bg-primary" /> not done yet
+              </span>
+            )}
           </div>
           {/* Center: Breadcrumb */}
-          <div className="hidden lg:block"><BreadcrumbNav currentStep="dashboard" /></div>
+          <div className="hidden 2xl:block"><BreadcrumbNav currentStep="dashboard" /></div>
 
           {/* Right: Sync + Resources + Investor Memo */}
           <div className="flex items-center gap-2">

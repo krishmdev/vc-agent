@@ -15,7 +15,7 @@ export default function InvestorMemoPage() {
   useEffect(() => {
     setMounted(true)
     if (!dashboardUnlocked) {
-      router.push("/")
+      router.replace("/?start=1")
     }
   }, [dashboardUnlocked, router])
 

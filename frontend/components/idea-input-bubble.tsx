@@ -54,7 +54,7 @@ export function IdeaInputBubble({ value, onChange, onSubmit, disabled }: IdeaInp
         {/* Header */}
         <div className="flex items-center gap-2 mb-4">
           <Sparkles className="w-5 h-5 text-primary" />
-          <span className="text-sm font-medium text-muted-foreground">
+          <span id="idea-label" className="text-sm font-medium text-muted-foreground">
             What&apos;s your startup idea?
           </span>
         </div>
@@ -66,12 +66,13 @@ export function IdeaInputBubble({ value, onChange, onSubmit, disabled }: IdeaInp
           onFocus={() => setIsFocused(true)}
           onBlur={() => setIsFocused(false)}
           onKeyDown={handleKeyDown}
+          aria-labelledby="idea-label"
           placeholder="Describe your idea in a few sentences. What problem does it solve? Who is it for?"
           className="
             w-full h-[140px] min-h-[140px] max-h-[140px] resize-none border-0 p-0
             text-base md:text-lg leading-relaxed
             bg-transparent placeholder:text-muted-foreground/50
-            focus-visible:ring-0 focus-visible:ring-offset-0
+            rounded-md focus-visible:ring-2 focus-visible:ring-ring/60 focus-visible:ring-offset-4 focus-visible:ring-offset-card
             overflow-y-auto
           "
           style={{ width: '100%' }}
