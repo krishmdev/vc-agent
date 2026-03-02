@@ -50,10 +50,24 @@ def valid_partial_date(value: Optional[str]) -> Optional[str]:
     """YYYY, YYYY-MM or YYYY-MM-DD, and a real calendar date."""
     if value is None:
         return None
-    parts = value.split("-")
-    padded = "-".join(parts + ["01"] * (3 - len(parts)))
-    date.fromisoformat(padded)
+    period_start(value)
     return value
+
+
+def period_start(value: str) -> date:
+    """First day of a partial date: 2020 -> 2020-01-01, 2020-05 -> 2020-05-01."""
+    parts = value.split("-")
+    return date.fromisoformat("-".join(parts + ["01"] * (3 - len(parts))))
+
+
+def period_end(value: str) -> date:
+    """Last day of a partial date: 2020 -> 2020-12-31, 2020-02 -> 2020-02-29."""
+    parts = value.split("-")
+    if len(parts) == 3:
+        return date.fromisoformat(value)
+    year, month = int(parts[0]), int(parts[1]) if len(parts) == 2 else 12
+    first_of_next = date(year + (month == 12), month % 12 + 1, 1)
+    return date.fromordinal(first_of_next.toordinal() - 1)
 
 
 def normalize_order(profile: dict) -> dict:
@@ -83,7 +97,8 @@ class ExperienceIn(BaseModel):
 
     @model_validator(mode="after")
     def start_before_end(self):
-        if self.start_date and self.end_date and self.start_date[:7] > self.end_date[:7]:
+        # A role can start and end inside the same period ("2020-06" to "2020" is fine).
+        if self.start_date and self.end_date and period_start(self.start_date) > period_end(self.end_date):
             raise ValueError("start_date is after end_date")
         return self
 
@@ -105,7 +120,8 @@ class CompanyIn(BaseModel):
     name: str = Field(..., min_length=1, max_length=160)
     description: str = Field("", max_length=1500)
     industry: str = Field("", max_length=120)
-    raise_amount: Optional[int] = Field(None, ge=0)
+    # Capped at $1T: anything larger is a typo, and it would only ever max out the timing signal.
+    raise_amount: Optional[int] = Field(None, ge=0, le=1_000_000_000_000)
     raise_date: Optional[str] = Field(None, pattern=DATE_PATTERN)
 
     _dates = field_validator("raise_date")(valid_partial_date)
@@ -260,4 +276,22 @@ async def score_profile(body: ScoreRequest, request: Request):
     company = body.company.model_dump() if body.company else None
     if body.as_of is None and not settings.OFFLINE:
         raise HTTPException(status_code=422, detail="as_of is required in live mode")
-    return await score(request, profile, company, body.as_of or offline_as_of())
+    as_of = body.as_of or offline_as_of()
+    future = future_dates(body, as_of)
+    if future:
+        raise HTTPException(status_code=422, detail=f"Dates after the scoring date ({as_of.isoformat()}): {', '.join(future)}")
+    return await score(request, profile, company, as_of)
+
+
+def future_dates(body: ScoreRequest, as_of: date) -> list[str]:
+    """Dates that start after as_of. The signals count tenure and time since a raise up to as_of,
+    so a future date would score as negative time; it is refused rather than clipped."""
+    found = []
+    for i, role in enumerate(body.profile.experience):
+        for field in ("start_date", "end_date"):
+            value = getattr(role, field)
+            if value and period_start(value) > as_of:
+                found.append(f"experience[{i}].{field}={value}")
+    if body.company and body.company.raise_date and period_start(body.company.raise_date) > as_of:
+        found.append(f"company.raise_date={body.company.raise_date}")
+    return found

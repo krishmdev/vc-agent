@@ -148,6 +148,30 @@ def test_impossible_dates_are_rejected(client, role):
     assert client.post("/founder/score", json={"profile": {**PROFILE, "experience": [role]}}).status_code == 422
 
 
+def test_dates_compare_as_periods_not_strings(client):
+    # "2020-06" to "2020" is a role inside 2020; the old string comparison refused it.
+    role = {"company": "X", "title": "Engineer", "start_date": "2020-06", "end_date": "2020"}
+    assert client.post("/founder/score", json={"profile": {**PROFILE, "experience": [role]}}).status_code == 200
+    assert founder_api.period_end("2024-02") == founder_api.period_end("2024-02-29")
+
+
+@pytest.mark.parametrize(
+    "body",
+    [
+        {"profile": {**PROFILE, "experience": [{"company": "X", "title": "CEO", "start_date": "2027-01"}]}},
+        {"profile": PROFILE, "company": {"name": "X", "raise_date": "2026-10"}},
+    ],
+)
+def test_dates_after_the_scoring_date_are_refused(client, body):
+    r = client.post("/founder/score", json={**body, "as_of": "2026-03-02"})
+    assert r.status_code == 422 and "after the scoring date" in r.json()["detail"]
+
+
+def test_raise_amount_is_capped(client):
+    body = {"profile": PROFILE, "company": {"name": "X", "raise_amount": 10**13}}
+    assert client.post("/founder/score", json=body).status_code == 422
+
+
 def test_absurd_as_of_is_rejected(client):
     assert client.post("/founder/score", json={"profile": PROFILE, "as_of": "1850-01-01"}).status_code == 422
 

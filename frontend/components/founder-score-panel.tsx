@@ -20,6 +20,7 @@ import { OfflineChip } from "@/components/offline-chip"
 function friendly(e: unknown): string {
   const msg = e instanceof Error ? e.message : String(e)
   if (/reachable|fetch|network/i.test(msg)) return "The scoring service isn't reachable. Check that the research agent is running, then try again."
+  if (/after the scoring date/i.test(msg)) return "A date is in the future. Scores are computed as of today, so roles and raises can't start later than that."
   if (/422|invalid|date|pattern/i.test(msg)) return "Something in the form doesn't parse. Dates are YYYY or YYYY-MM, and a role can't end before it starts."
   return "Scoring didn't finish. Try again."
 }
