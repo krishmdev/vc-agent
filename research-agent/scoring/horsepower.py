@@ -112,6 +112,22 @@ SCHOOL_ALIASES = {
     "iit madras": "indian institute of technology",
     "iit kanpur": "indian institute of technology",
     "iit kharagpur": "indian institute of technology",
+    "iit roorkee": "indian institute of technology",
+    "iit guwahati": "indian institute of technology",
+    "carnegie mellon": "carnegie mellon university",
+    "stanford gsb": "stanford university",
+    "stanford school of engineering": "stanford university",
+    "mit sloan": "massachusetts institute of technology",
+    "harvard university graduate school of arts and sciences": "harvard university",
+    "university of california at berkeley": "university of california berkeley",
+    "uc berkeley college of engineering": "university of california berkeley",
+    "georgia institute of technology atlanta": "georgia institute of technology",
+    "eth z rich": "eth zurich",
+    "nus": "national university of singapore",
+    "university of illinois at urbana champaign uiuc": "university of illinois",
+    "uiuc": "university of illinois",
+    "ut austin": "university of texas at austin",
+    "uw madison": "university of wisconsin madison",
 }
 _FOUNDER_SCHOOLS = {re.sub(r"\s+", " ", re.sub(r"[^a-z0-9 ]+", " ", s.lower())).strip() for s in TOP_SCHOOLS}
 

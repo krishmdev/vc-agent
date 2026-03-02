@@ -457,7 +457,11 @@ def test_school_lookalikes_are_not_founder_schools(school):
     assert HorsepowerScorer().score({"education": [{"school": school, "degree": "MS"}]})["hp_education_bonus"] == 2
 
 
-@pytest.mark.parametrize("school", ["MIT", "Stanford University", "Harvard Business School", "University of California, Berkeley", "IIT Bombay"])
+@pytest.mark.parametrize(
+    "school",
+    ["MIT", "Stanford University", "Harvard Business School", "University of California, Berkeley", "IIT Bombay",
+     "Carnegie Mellon", "Stanford GSB", "ETH Zürich", "UIUC"],
+)
 def test_listed_schools_and_aliases_are_founder_schools(school):
     assert HorsepowerScorer().score({"education": [{"school": school, "degree": "MS"}]})["hp_education_bonus"] == 4
 
