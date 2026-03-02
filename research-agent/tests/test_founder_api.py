@@ -157,3 +157,15 @@ def test_non_synthetic_fixture_is_refused(tmp_path, monkeypatch):
     monkeypatch.setattr(founder_api, "FIXTURE_DIR", tmp_path)
     with pytest.raises(RuntimeError, match="not marked synthetic"):
         founder_api.load_samples()
+
+
+def test_undated_founding_role_is_the_current_role(client):
+    roles = [
+        {"company": "Stripe", "title": "Staff Software Engineer", "start_date": "2015-02", "end_date": "2025-11"},
+        {"company": "Ledgerline", "title": "Founder & CEO"},  # typed without dates
+    ]
+    card = client.post("/founder/score", json={"profile": {**PROFILE, "experience": roles}, "company": COMPANY}).json()
+    sg = next(s for s in card["signals"] if s["key"] == "seen_greatness")
+    sac = next(s for s in card["signals"] if s["key"] == "sacrifice")
+    assert not any("Prior founder" in e["text"] for e in sg["evidence"])  # not a prior founding
+    assert sac["score"] == 5  # left Stripe (tier 0) to found Ledgerline

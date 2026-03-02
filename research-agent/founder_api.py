@@ -21,6 +21,7 @@ from pydantic import BaseModel, Field, field_validator, model_validator
 
 import settings
 from scoring import evaluate_founder
+from scoring.profile import is_founder_title
 from scoring.classifier import (
     CLASSIFIER_MODEL,
     DomainClassifier,
@@ -56,7 +57,8 @@ def valid_partial_date(value: Optional[str]) -> Optional[str]:
 
 
 def normalize_order(profile: dict) -> dict:
-    """Current roles first, then by start date descending, undated last; ties keep their order.
+    """Current roles first (any role without an end date, dated or not; founder titles ahead of
+    the rest), then past roles by start date descending. Ties keep the submitted order.
 
     sierra-demo's scorers read experience[0] as the current (founding) role and the entries after
     it as prior roles, so the same resume listed in a different order scored differently. The
@@ -64,7 +66,7 @@ def normalize_order(profile: dict) -> dict:
     """
     roles = list(profile.get("experience") or [])
     roles.sort(key=lambda e: e.get("start_date") or "", reverse=True)  # stable, also with reverse
-    roles.sort(key=lambda e: 0 if e.get("start_date") and not e.get("end_date") else 1 if e.get("start_date") else 2)
+    roles.sort(key=lambda e: (1 if e.get("end_date") else 0, 0 if e.get("end_date") or is_founder_title(e.get("title") or "") else 1))
     return {**profile, "experience": roles}
 
 
