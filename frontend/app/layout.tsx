@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { DM_Sans, Fraunces } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
+import { OfflineBanner } from '@/components/offline-banner'
 
 const dmSans = DM_Sans({ subsets: ["latin"], weight: ["400", "500", "600", "700"], variable: "--font-dm-sans" });
 const fraunces = Fraunces({ subsets: ["latin"], weight: ["400", "500", "600", "700"], variable: "--font-fraunces" });
@@ -39,6 +40,7 @@ export default function RootLayout({
     <html lang="en" className={`${dmSans.variable} ${fraunces.variable}`}>
       <body className="font-sans antialiased">
         {children}
+        <OfflineBanner />
         <Analytics />
       </body>
     </html>

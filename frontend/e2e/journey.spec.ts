@@ -7,6 +7,7 @@ test("idea to research report, KB-cited guide, and mentor chat with recalled mem
 
   // 1. Submit an idea
   await page.goto("/")
+  await expect(page.getByTestId("offline-banner")).toContainText("research replays recorded Gemini runs")
   await page.getByPlaceholder(/Describe your idea/).fill(SAMPLE_IDEA)
   await page.getByRole("button", { name: "Start Mentorship" }).click()
   await expect(page).toHaveURL(/\/mentorship/)
