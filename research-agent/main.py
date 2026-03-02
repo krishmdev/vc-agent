@@ -175,7 +175,6 @@ async def run_research_turn(task_id: str, session_id: str, user_message: str, co
     try:
         history = chat_sessions.get(session_id, [])
         if first_turn:
-            sessions_in_flight.add(session_id)
             prompt = build_deep_research_prompt(history, context, user_message)
             print(f"Starting deep research for task {task_id} (session {session_id}) via {research.name}")
             content = await research.deep_research(prompt, context=context, on_progress=on_progress)
@@ -208,6 +207,8 @@ async def chat_endpoint(request: ChatRequest):
     # First turn runs the deep research agent; later turns are fast grounded follow-ups.
     first_turn = len(chat_sessions[session_id]) == 0
     task_id = new_task("msg", "deep_research" if first_turn else "follow_up", app.state.research.name)
+    if first_turn:
+        sessions_in_flight.add(session_id)  # before the job starts, so a quick follow-up sees it
     start_job(run_research_turn(task_id, session_id, request.message, context_str, first_turn))
 
     return ChatResponse(

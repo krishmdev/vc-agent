@@ -301,29 +301,60 @@ def test_timing_uses_as_of_not_the_clock():
     assert late["timing_score"] == 5.0
 
 
-def test_gemini_classifier_validates_and_fails_closed():
-    calls = []
-
-    def client(text):
-        async def generate_content(**kwargs):
+def fake_client(text=None, delay=0.0, calls=None):
+    async def generate_content(**kwargs):
+        if calls is not None:
             calls.append(kwargs)
-            return NS(text=text)
-        return NS(aio=NS(models=NS(generate_content=generate_content)))
+        if delay:
+            await asyncio.sleep(delay)
+        return NS(text=text)
+    return NS(aio=NS(models=NS(generate_content=generate_content)))
 
-    good = GeminiDomainClassifier("k", client=client(json.dumps({
+
+def test_gemini_classifier_validates_and_labels_failures():
+    calls = []
+    good = GeminiDomainClassifier("k", client=fake_client(json.dumps({
         "primary_domain": "fintech", "primary_subdomain": "payments",
         "secondary_subdomains": [{"domain": "made-up", "subdomain": "x"}], "keywords": ["Split Bills"], "classification_confidence": "high",
-    })))
+    }), calls=calls))
     tags_ = run(good.classify_company({"name": "Splitsy", "description": "An app that splits rent and bills between roommates each month"}, "medium"))
-    assert (tags_["primary_domain"], tags_["secondary_subdomains"], tags_["keywords"]) == ("fintech", [], ["split-bills"])
+    assert (tags_["primary_domain"], tags_["secondary_subdomains"], tags_["keywords"], tags_["source"]) == ("fintech", [], ["split-bills"], "gemini")
     assert "Output strict JSON only" in calls[0]["contents"]
+    config = calls[0]["config"]
+    assert config.temperature == 0.1 and config.thinking_config.thinking_budget == 0  # sierra's flash settings
 
-    bad = GeminiDomainClassifier("k", client=client("not json"))
-    fallback = run(bad.classify_founder({"experience": [{"title": "Hardware Engineer", "company": "X"}]}, None, None))
+    founder = {"experience": [{"title": "Hardware Engineer", "company": "X"}]}
+    bad_json = run(GeminiDomainClassifier("k", client=fake_client("not json")).classify_founder(founder, None, None))
     # No silent "other": the keyword classifier answers and the tags say why.
-    assert fallback["source"] == "fallback_error" and "JSONDecodeError" in fallback["error"]
-    assert fallback["primary_domain"] == "hardware"
+    assert bad_json["source"] == "fallback_error" and "JSONDecodeError" in bad_json["error"]
+    assert bad_json["primary_domain"] == "hardware"
+
+    off_taxonomy = run(GeminiDomainClassifier("k", client=fake_client(json.dumps({"primary_domain": "biotech", "primary_subdomain": "x"}))).classify_founder(founder, None, None))
+    assert off_taxonomy["source"] == "fallback_error" and "out_of_taxonomy biotech/x" in off_taxonomy["error"]
+
+    slow = run(GeminiDomainClassifier("k", client=fake_client("{}", delay=1.0), timeout_s=0.05).classify_founder(founder, None, None))
+    assert slow["source"] == "fallback_error" and "TimeoutError" in slow["error"]
     assert validate({"primary_domain": "fintech", "primary_subdomain": "not-a-subdomain"}) == OTHER_TAGS
+
+
+def test_pro_models_keep_thinking():
+    calls = []
+    run(GeminiDomainClassifier("k", model="gemini-3.1-pro-preview", client=fake_client("{}", calls=calls)).classify_founder({"experience": []}, None, None))
+    assert calls[0]["config"].thinking_config is None
+
+
+def test_recordings_are_refused_when_missing_or_stale(tmp_path):
+    from scoring.classifier import StaleRecordings, recording_header
+
+    with pytest.raises(StaleRecordings, match="missing"):
+        RecordedDomainClassifier.from_file(tmp_path / "none.json")
+    stale = tmp_path / "stale.json"
+    stale.write_text(json.dumps({"header": {**recording_header(), "taxonomy_sha256": "old"}, "recordings": {}}))
+    with pytest.raises(StaleRecordings, match="taxonomy_sha256"):
+        RecordedDomainClassifier.from_file(stale)
+    fresh = tmp_path / "fresh.json"
+    fresh.write_text(json.dumps({"header": recording_header(), "recordings": {}}))
+    assert RecordedDomainClassifier.from_file(fresh).recordings == {}
 
 
 def test_recorded_classifier_replays_exact_inputs_only():
@@ -384,9 +415,77 @@ def test_hardware_founder_numbers_trace_to_the_registry():
     assert sg["seen_greatness"]["score"] == pytest.approx(17.7 + 7.452 + 7.8, abs=0.01)
     assert sg["domain_fit"]["score"] == 30
     assert sg["sacrifice"]["score"] == 4  # left Anduril (tier 1)
-    assert r["composite"] == {"score": pytest.approx(87.95, abs=0.01), "max": 100, "band": "strong", "label": "Strong: surface for partner review"}
+    assert r["composite"]["score"] == pytest.approx(87.95, abs=0.01)
+    assert (r["composite"]["band"], r["composite"]["thresholds"]) == ("strong", {"strong": 60.0, "secondary": 45.0})
     texts = [e["text"] for e in sg["seen_greatness"]["evidence"]]
     assert texts[0].startswith("Anduril (tier 1, inflection 2021): Director of Hardware Engineering, joined 2019. 10 base x 1.5 seniority x 1.18 earliness = 17.7")
+
+
+KEYWORD_PATH = {
+    # Offline keyword-lexicon path only. The API's offline samples use recorded Gemini tags instead,
+    # pinned in test_founder_api.py.
+    "vet-clinic-founder": (60.7, "strong"),
+    "hardware-reviews-founder": (87.95, "strong"),
+    "roommate-bills-founder": (15.1, "filter"),
+    "career-switch-founder": (52.25, "secondary"),
+}
+
+
+@pytest.mark.parametrize(("fixture_id", "expected"), KEYWORD_PATH.items())
+def test_keyword_path_composites_are_pinned(fixture_id, expected):
+    r = score_fixture(fixture_id)
+    assert (r["composite"]["score"], r["composite"]["band"]) == (pytest.approx(expected[0], abs=0.01), expected[1])
+    assert r["classifier"]["founder_source"] == "keyword"
+
+
+@pytest.mark.parametrize(
+    ("raw", "expected"),
+    [("Team Rubicon", None), ("team", None), ("TEAM", "atlassian"), ("Open Road", None), ("OPEN", "opendoor"),
+     ("bird", None), ("frog", None), ("JFrog", "jfrog"), ("Segment", "segment"), ("Twilio Segment", "twilio segment")],
+)
+def test_ticker_aliases_need_capitals_and_names_beat_aliases(raw, expected):
+    matched, _, _ = CompanyRegistry().match(raw)
+    assert (matched["name"] if matched else None) == expected
+
+
+@pytest.mark.parametrize(
+    "school",
+    ["Smith College", "Penn State University", "University of British Columbia", "Columbia College Chicago", "Cornell College",
+     "Harvard Extension School", "Stanford Online", "Northeastern University", "University"],
+)
+def test_school_lookalikes_are_not_founder_schools(school):
+    assert HorsepowerScorer().score({"education": [{"school": school, "degree": "MS"}]})["hp_education_bonus"] == 2
+
+
+@pytest.mark.parametrize("school", ["MIT", "Stanford University", "Harvard Business School", "University of California, Berkeley", "IIT Bombay"])
+def test_listed_schools_and_aliases_are_founder_schools(school):
+    assert HorsepowerScorer().score({"education": [{"school": school, "degree": "MS"}]})["hp_education_bonus"] == 4
+
+
+def test_future_raise_date_is_not_fresh():
+    person = {"current_title": "Engineer", "experience": []}
+    result = TimingScorer().score(person, {"signature_date": "2026-10-15", "total_amount_sold": 0}, as_of=datetime(2026, 9, 1))
+    assert result["timing_score"] == 0 and "future" in result["timing_signals"][0]
+
+
+def test_ongoing_role_counts_up_to_as_of():
+    profile = {"experience": [
+        {"title": "VP Engineering", "company": "SmallCo", "start_date": "2020-01"},
+        {"title": "Software Engineer", "company": "OtherCo", "start_date": "2018-01", "end_date": "2019-12"},
+    ]}
+    result = HorsepowerScorer().score(profile, as_of="2025-12")
+    # 72 months at level 5 and 24 months at level 2.5 (engineer + 0.5): (360 + 60) / 96 = 4.375
+    assert result["hp_date_handling"] == "duration_weighted"
+    assert result["hp_weighted_level"] == pytest.approx(4.375)
+
+
+def test_evidence_uses_the_founders_spelling_of_companies():
+    r = run(evaluate_founder(
+        {"experience": [{"company": "NewCo", "title": "Founder"}, {"company": "OpenAI", "title": "Research Scientist", "start_date": "2019", "end_date": "2023"}]},
+        None, classifier=KeywordDomainClassifier(), as_of=date(2026, 9, 1),
+    ))
+    assert r["signals"][0]["evidence"][0]["text"].startswith("OpenAI (tier 0")
+    assert {s["key"]: s["scored"] for s in r["signals"]} == {"seen_greatness": True, "horsepower": True, "domain_fit": False, "sacrifice": True, "timing": False}
 
 
 def test_fixture_bands_cover_all_three_outcomes():

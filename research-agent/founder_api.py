@@ -11,16 +11,23 @@ without a key.
 """
 
 import json
+import os
 from datetime import date
 from pathlib import Path
 from typing import Literal, Optional
 
 from fastapi import APIRouter, HTTPException, Request
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator, model_validator
 
 import settings
 from scoring import evaluate_founder
-from scoring.classifier import DomainClassifier, GeminiDomainClassifier, KeywordDomainClassifier, RecordedDomainClassifier
+from scoring.classifier import (
+    CLASSIFIER_MODEL,
+    DomainClassifier,
+    GeminiDomainClassifier,
+    KeywordDomainClassifier,
+    RecordedDomainClassifier,
+)
 
 SCORING_DIR = Path(__file__).resolve().parent / "scoring"
 FIXTURE_DIR = SCORING_DIR / "fixtures"
@@ -31,9 +38,34 @@ DATE_PATTERN = r"^\d{4}(-\d{2}(-\d{2})?)?$"
 
 def make_domain_classifier() -> DomainClassifier:
     if settings.OFFLINE:
+        # Raises if the recordings are missing or stale; offline sample scores depend on them.
         return RecordedDomainClassifier.from_file(RECORDINGS)
     key = settings.gemini_api_key()
-    return GeminiDomainClassifier(key, model=settings.UTILITY_MODEL) if key else KeywordDomainClassifier()
+    model = os.environ.get("CLASSIFIER_MODEL", CLASSIFIER_MODEL)
+    return GeminiDomainClassifier(key, model=model) if key else KeywordDomainClassifier()
+
+
+def valid_partial_date(value: Optional[str]) -> Optional[str]:
+    """YYYY, YYYY-MM or YYYY-MM-DD, and a real calendar date."""
+    if value is None:
+        return None
+    parts = value.split("-")
+    padded = "-".join(parts + ["01"] * (3 - len(parts)))
+    date.fromisoformat(padded)
+    return value
+
+
+def normalize_order(profile: dict) -> dict:
+    """Current roles first, then by start date descending, undated last; ties keep their order.
+
+    sierra-demo's scorers read experience[0] as the current (founding) role and the entries after
+    it as prior roles, so the same resume listed in a different order scored differently. The
+    order is normalized here and the engine is left as ported.
+    """
+    roles = list(profile.get("experience") or [])
+    roles.sort(key=lambda e: e.get("start_date") or "", reverse=True)  # stable, also with reverse
+    roles.sort(key=lambda e: 0 if e.get("start_date") and not e.get("end_date") else 1 if e.get("start_date") else 2)
+    return {**profile, "experience": roles}
 
 
 # --- request models ---
@@ -44,6 +76,14 @@ class ExperienceIn(BaseModel):
     title: str = Field(..., max_length=160)
     start_date: Optional[str] = Field(None, pattern=DATE_PATTERN)
     end_date: Optional[str] = Field(None, pattern=DATE_PATTERN)
+
+    _dates = field_validator("start_date", "end_date")(valid_partial_date)
+
+    @model_validator(mode="after")
+    def start_before_end(self):
+        if self.start_date and self.end_date and self.start_date[:7] > self.end_date[:7]:
+            raise ValueError("start_date is after end_date")
+        return self
 
 
 class EducationIn(BaseModel):
@@ -66,11 +106,14 @@ class CompanyIn(BaseModel):
     raise_amount: Optional[int] = Field(None, ge=0)
     raise_date: Optional[str] = Field(None, pattern=DATE_PATTERN)
 
+    _dates = field_validator("raise_date")(valid_partial_date)
+
 
 class ScoreRequest(BaseModel):
     profile: FounderProfileIn
     company: Optional[CompanyIn] = None
-    as_of: Optional[date] = None
+    # Required in live mode (the browser sends the founder's date); offline defaults to SCORING_AS_OF.
+    as_of: Optional[date] = Field(None, ge=date(1990, 1, 1), le=date(2100, 12, 31))
 
 
 # --- response models ---
@@ -92,7 +135,13 @@ class Signal(BaseModel):
     max: int
     percent: float
     in_composite: bool
+    scored: bool
     evidence: list[Evidence]
+
+
+class Thresholds(BaseModel):
+    strong: float
+    secondary: float
 
 
 class Composite(BaseModel):
@@ -100,6 +149,7 @@ class Composite(BaseModel):
     max: int
     band: Literal["strong", "secondary", "filter"]
     label: str
+    thresholds: Thresholds
 
 
 class SubdomainRef(BaseModel):
@@ -114,7 +164,7 @@ class DomainTags(BaseModel):
     keywords: list[str] = []
     reason: str = ""
     classification_confidence: str = "low"
-    source: Optional[TagSource] = None
+    source: TagSource
     model: Optional[str] = None
     recorded_at: Optional[str] = None
     error: Optional[str] = None
@@ -173,15 +223,13 @@ def load_samples() -> dict[str, dict]:
     return samples
 
 
-def default_as_of() -> date:
-    if settings.OFFLINE:
-        return date.fromisoformat(settings.SCORING_AS_OF)
-    return date.today()
+def offline_as_of() -> date:
+    return date.fromisoformat(settings.SCORING_AS_OF)
 
 
 async def score(request: Request, profile: dict, company: Optional[dict], as_of: date) -> dict:
     tags_company = {k: v for k, v in (company or {}).items() if v not in (None, "")} or None
-    result = await evaluate_founder(profile, tags_company, classifier=request.app.state.classifier, as_of=as_of)
+    result = await evaluate_founder(normalize_order(profile), tags_company, classifier=request.app.state.classifier, as_of=as_of)
     tags = result["tags"]
     if not tags.get("company"):
         tags["company"] = None
@@ -208,4 +256,6 @@ async def score_sample(sample_id: str, request: Request):
 async def score_profile(body: ScoreRequest, request: Request):
     profile = body.profile.model_dump()
     company = body.company.model_dump() if body.company else None
-    return await score(request, profile, company, body.as_of or default_as_of())
+    if body.as_of is None and not settings.OFFLINE:
+        raise HTTPException(status_code=422, detail="as_of is required in live mode")
+    return await score(request, profile, company, body.as_of or offline_as_of())
