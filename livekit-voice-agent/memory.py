@@ -39,7 +39,8 @@ CREATE TABLE IF NOT EXISTS memories (
     memory TEXT NOT NULL,
     role TEXT NOT NULL,
     created_at REAL NOT NULL,
-    embedding BLOB
+    embedding BLOB,
+    embedder_id TEXT
 );
 CREATE INDEX IF NOT EXISTS memories_user ON memories(user_id, created_at);
 """
@@ -58,6 +59,9 @@ class LocalMemoryStore:
         self.path.parent.mkdir(parents=True, exist_ok=True)
         with self._connect() as db:
             db.executescript(_SCHEMA)
+            columns = {r["name"] for r in db.execute("PRAGMA table_info(memories)")}
+            if "embedder_id" not in columns:  # a store written before vectors were tagged
+                db.execute("ALTER TABLE memories ADD COLUMN embedder_id TEXT")
 
     def _connect(self) -> sqlite3.Connection:
         db = sqlite3.connect(self.path, timeout=10)
@@ -85,12 +89,14 @@ class LocalMemoryStore:
                 if exists:
                     continue
                 mem_id = str(uuid.uuid4())
-                vector = None
+                vector = embedder_id = None
                 if self.embedder is not None:
                     vector = array.array("f", self.embedder.embed_query(text)).tobytes()
+                    embedder_id = self.embedder.embedder_id
                 db.execute(
-                    "INSERT INTO memories VALUES (?, ?, ?, ?, ?, ?)",
-                    (mem_id, user_id, text, "user", time.time(), vector),
+                    "INSERT INTO memories (id, user_id, memory, role, created_at, embedding, embedder_id)"
+                    " VALUES (?, ?, ?, ?, ?, ?, ?)",
+                    (mem_id, user_id, text, "user", time.time(), vector, embedder_id),
                 )
                 results.append({"id": mem_id, "memory": text, "event": "ADD"})
         return {"results": results}
@@ -124,9 +130,12 @@ class LocalMemoryStore:
                 idf = math.log(1 + (len(docs) - df[t] + 0.5) / (df[t] + 0.5))
                 score += idf * tf * (k1 + 1) / (tf + k1 * (1 - length_norm + length_norm * len(doc) / avg_len))
             similarity = 0.0
-            if qvec is not None and row["embedding"]:
+            # Vectors from another embedder (or an untagged older row) aren't comparable; those
+            # rows fall back to the lexical score alone.
+            if qvec is not None and row["embedding"] and row["embedder_id"] == self.embedder.embedder_id:
                 mvec = array.array("f", row["embedding"])
-                similarity = sum(a * b for a, b in zip(qvec, mvec))  # both unit-normalized
+                if len(mvec) == len(qvec):
+                    similarity = sum(a * b for a, b in zip(qvec, mvec))  # both unit-normalized
             if score > 0 or similarity >= MIN_SIMILARITY:
                 scored.append((similarity + 0.1 * score, row["created_at"], row))
         scored.sort(key=lambda s: (s[0], s[1]), reverse=True)

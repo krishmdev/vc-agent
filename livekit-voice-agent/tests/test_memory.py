@@ -50,3 +50,38 @@ async def test_semantic_search_matches_without_shared_words(tmp_path):
     found = await store.search("pricing", user_id="u")
     assert found["results"][0]["memory"] == "We plan to charge each clinic $300 a month."
     assert (await store.search("quantum cryptography research", user_id="u"))["results"] == []
+
+
+class FixedEmbedder:
+    """Every text maps to the same unit vector, so any stored vector with this id matches."""
+
+    def __init__(self, embedder_id, dim):
+        self.embedder_id, self.dim = embedder_id, dim
+
+    def embed_query(self, text):
+        return [1.0] + [0.0] * (self.dim - 1)
+
+
+async def test_vectors_from_another_embedder_are_not_compared(tmp_path):
+    path = tmp_path / "mixed.sqlite3"
+    await LocalMemoryStore(path, embedder=FixedEmbedder("a/model/-/4/p", 4)).add(
+        [{"role": "user", "content": "We sell to dentists."}], user_id="u"
+    )
+    same = LocalMemoryStore(path, embedder=FixedEmbedder("a/model/-/4/p", 4))
+    assert (await same.search("zebra", user_id="u"))["results"]  # matched by vector alone
+    other = LocalMemoryStore(path, embedder=FixedEmbedder("b/model/-/8/p", 8))
+    assert (await other.search("zebra", user_id="u"))["results"] == []
+    assert (await other.search("dentists", user_id="u"))["results"]  # lexical still works
+
+
+async def test_an_untagged_older_store_is_migrated(tmp_path):
+    import sqlite3
+
+    path = tmp_path / "old.sqlite3"
+    db = sqlite3.connect(path)
+    db.execute("CREATE TABLE memories (id TEXT PRIMARY KEY, user_id TEXT NOT NULL, memory TEXT NOT NULL, role TEXT NOT NULL, created_at REAL NOT NULL, embedding BLOB)")
+    db.execute("INSERT INTO memories VALUES ('1', 'u', 'We sell to dentists.', 'user', 0, NULL)")
+    db.commit()
+    db.close()
+    store = LocalMemoryStore(path, embedder=FixedEmbedder("a/model/-/4/p", 4))
+    assert (await store.search("dentists", user_id="u"))["results"][0]["memory"] == "We sell to dentists."
