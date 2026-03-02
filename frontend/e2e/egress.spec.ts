@@ -23,7 +23,13 @@ for (const probe of PROBES) {
 
 test("offline providers are active and no keys are visible", async ({ request }) => {
   const research = await (await request.get("http://127.0.0.1:8000/_diag/providers")).json()
-  expect(research).toMatchObject({ mode: "offline", research: "fixture", guides: "extractive", gemini_key_visible: false })
+  expect(research).toMatchObject({
+    mode: "offline",
+    research: "fixture",
+    guides: "extractive",
+    classifier: "recorded+keyword",
+    gemini_key_visible: false,
+  })
   const agent = await (await request.get("http://127.0.0.1:8001/_diag/providers")).json()
   expect(agent).toMatchObject({ mode: "offline", text_llm: "ScriptedLLM", memory: "LocalMemoryStore" })
   expect(agent.embedder_id).toMatch(/^local-onnx\/all-MiniLM-L6-v2\//)
