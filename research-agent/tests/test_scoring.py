@@ -527,3 +527,12 @@ def test_duplicate_companies_resolve_like_sierra_demo():
     first, second = [c for c in registry.companies if c["name"] == "elastic"]
     assert registry.match("Elastic")[0] is second and registry.match("Elastic NV")[0] is second
     assert registry.match("Elasticsearch")[0] is first and registry.match("ESTC")[0] is first
+
+
+def test_no_overlap_advice_when_the_company_domain_is_unknown():
+    r = run(evaluate_founder(
+        {"experience": [{"company": "NewCo", "title": "Founder"}, {"company": "Ledger Co", "title": "Accountant", "start_date": "2019", "end_date": "2024"}]},
+        {"name": "NewCo", "industry": "Other"}, classifier=KeywordDomainClassifier(), as_of=date(2026, 9, 1),
+    ))
+    assert not any("barely overlaps" in tip for tip in r["advice"])
+    assert any("description is thin" in tip for tip in r["advice"])

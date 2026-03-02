@@ -158,8 +158,10 @@ def sacrifice_evidence(sac: dict) -> list[dict]:
 
 def advice(scores: dict[str, float], df: dict) -> list[str]:
     tips = []
-    if scores["domain_fit"] < 10:
-        c_tag = _tag(df["breakdown"].get("company_tags") or {})
+    c_tags = df["breakdown"].get("company_tags") or {}
+    # "Barely overlaps with other" says nothing; the thin-description tip below covers that case.
+    if scores["domain_fit"] < 10 and c_tags.get("primary_domain") not in (None, "", "other"):
+        c_tag = _tag(c_tags)
         tips.append(
             f"Your background barely overlaps with {c_tag}. Expect \"why you?\" early in every pitch; "
             "have a concrete answer (customers you've worked with, data you have, a problem you lived)."

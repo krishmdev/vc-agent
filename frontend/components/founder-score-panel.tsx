@@ -14,6 +14,15 @@ import {
 } from "@/lib/founder-score"
 import { useAppStore } from "@/lib/store"
 import { cn } from "@/lib/utils"
+import { OfflineChip } from "@/components/offline-chip"
+
+// Server and network errors in words a founder can act on.
+function friendly(e: unknown): string {
+  const msg = e instanceof Error ? e.message : String(e)
+  if (/reachable|fetch|network/i.test(msg)) return "The scoring service isn't reachable. Check that the research agent is running, then try again."
+  if (/422|invalid|date|pattern/i.test(msg)) return "Something in the form doesn't parse. Dates are YYYY or YYYY-MM, and a role can't end before it starts."
+  return "Scoring didn't finish. Try again."
+}
 
 const inputCls =
   "w-full rounded-md border border-border bg-background px-2.5 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-primary/40"
@@ -31,6 +40,7 @@ function ProfileForm({ onScored }: { onScored: () => void }) {
   const [error, setError] = useState<string | null>(null)
 
   const update = (i: number, patch: Partial<ExperienceInput>) => setRoles((rs) => rs.map((r, j) => (j === i ? { ...r, ...patch } : r)))
+  const hasRole = roles.some((r) => r.title.trim() && r.company.trim())
 
   const submit = async () => {
     setBusy(true)
@@ -51,7 +61,7 @@ function ProfileForm({ onScored }: { onScored: () => void }) {
       setScorecard(card, { kind: "profile" })
       onScored()
     } catch (e) {
-      setError(e instanceof Error ? e.message : "Scoring failed")
+      setError(friendly(e))
     } finally {
       setBusy(false)
     }
@@ -74,12 +84,24 @@ function ProfileForm({ onScored }: { onScored: () => void }) {
       <fieldset className="space-y-2">
         <legend className="text-xs font-medium text-foreground">Prior roles</legend>
         {roles.map((r, i) => (
-          <div key={i} className="grid grid-cols-2 gap-2 rounded-lg border border-border p-2 sm:grid-cols-[1.3fr_1.2fr_0.7fr_0.7fr_auto]">
-            <input aria-label={`Role ${i + 1} title`} className={inputCls} placeholder="Title" value={r.title} onChange={(e) => update(i, { title: e.target.value })} />
-            <input aria-label={`Role ${i + 1} company`} className={inputCls} placeholder="Company" value={r.company} onChange={(e) => update(i, { company: e.target.value })} />
-            <input aria-label={`Role ${i + 1} start`} className={inputCls} placeholder="Start" value={r.start_date} onChange={(e) => update(i, { start_date: e.target.value })} />
-            <input aria-label={`Role ${i + 1} end`} className={inputCls} placeholder="End" value={r.end_date} onChange={(e) => update(i, { end_date: e.target.value })} />
-            <Button type="button" variant="ghost" size="icon" aria-label={`Remove role ${i + 1}`} disabled={roles.length === 1} onClick={() => setRoles((rs) => rs.filter((_, j) => j !== i))}>
+          <div key={i} className="grid grid-cols-2 gap-2 rounded-lg border border-border p-2 sm:grid-cols-[1.3fr_1.2fr_0.7fr_0.7fr_auto] sm:items-end">
+            <label className="col-span-2 text-[11px] font-medium text-muted-foreground sm:col-span-1">
+              Title
+              <input aria-label={`Role ${i + 1} title`} className={cn(inputCls, "mt-0.5")} placeholder="Senior Engineer" value={r.title} onChange={(e) => update(i, { title: e.target.value })} />
+            </label>
+            <label className="col-span-2 text-[11px] font-medium text-muted-foreground sm:col-span-1">
+              Company
+              <input aria-label={`Role ${i + 1} company`} className={cn(inputCls, "mt-0.5")} placeholder="Company" value={r.company} onChange={(e) => update(i, { company: e.target.value })} />
+            </label>
+            <label className="text-[11px] font-medium text-muted-foreground">
+              Start
+              <input aria-label={`Role ${i + 1} start`} className={cn(inputCls, "mt-0.5")} placeholder="2019" inputMode="numeric" value={r.start_date} onChange={(e) => update(i, { start_date: e.target.value })} />
+            </label>
+            <label className="text-[11px] font-medium text-muted-foreground">
+              End
+              <input aria-label={`Role ${i + 1} end`} className={cn(inputCls, "mt-0.5")} placeholder="blank if current" inputMode="numeric" value={r.end_date} onChange={(e) => update(i, { end_date: e.target.value })} />
+            </label>
+            <Button type="button" variant="ghost" size="icon" className="col-span-2 justify-self-end sm:col-span-1" aria-label={`Remove role ${i + 1}`} disabled={roles.length === 1} onClick={() => setRoles((rs) => rs.filter((_, j) => j !== i))}>
               <Trash2 className="h-4 w-4" />
             </Button>
           </div>
@@ -95,13 +117,20 @@ function ProfileForm({ onScored }: { onScored: () => void }) {
         <input aria-label="Major" className={inputCls} placeholder="Major" value={major} onChange={(e) => setMajor(e.target.value)} />
       </fieldset>
       {error && (
-        <p role="alert" className="flex items-center gap-2 text-sm text-destructive">
-          <AlertCircle className="h-4 w-4" /> {error}
-        </p>
+        <div role="alert" className="flex items-start gap-2 rounded-lg border border-destructive/30 bg-destructive/5 px-3 py-2 text-sm">
+          <AlertCircle className="mt-0.5 h-4 w-4 shrink-0 text-destructive" />
+          <span className="flex-1 text-foreground/85">{error}</span>
+          <Button type="submit" variant="outline" size="sm" className="h-7">Retry</Button>
+        </div>
       )}
-      <Button type="submit" disabled={busy} className="gap-2">
-        {busy && <Loader2 className="h-4 w-4 animate-spin" />} Score my profile
-      </Button>
+      <div className="flex flex-wrap items-center gap-3">
+        <Button type="submit" disabled={busy || !hasRole} aria-describedby="founder-form-hint" className="gap-2">
+          {busy && <Loader2 className="h-4 w-4 animate-spin" />} Score my profile
+        </Button>
+        {!hasRole && (
+          <span id="founder-form-hint" className="text-xs text-muted-foreground">Add at least one role with a title and a company.</span>
+        )}
+      </div>
     </form>
   )
 }
@@ -117,7 +146,7 @@ export function FounderScorePanel({ isOpen, onClose }: { isOpen: boolean; onClos
     if (!isOpen || samples) return
     fetchSamples()
       .then(setSamples)
-      .catch((e) => setError(e instanceof Error ? e.message : "Couldn't load sample founders"))
+      .catch((e) => setError(friendly(e)))
   }, [isOpen, samples])
 
   if (!isOpen) return null
@@ -128,7 +157,7 @@ export function FounderScorePanel({ isOpen, onClose }: { isOpen: boolean; onClos
     try {
       setScorecard(await fetchSampleScore(id), { kind: "sample", id })
     } catch (e) {
-      setError(e instanceof Error ? e.message : "Scoring failed")
+      setError(friendly(e))
     } finally {
       setLoadingId(null)
     }
@@ -144,7 +173,7 @@ export function FounderScorePanel({ isOpen, onClose }: { isOpen: boolean; onClos
             </Button>
           )}
           <div>
-            <h3 className="text-sm font-semibold">Founder score</h3>
+            <h3 className="flex items-center gap-2 text-sm font-semibold">Founder score <OfflineChip /></h3>
             <p className="text-xs text-muted-foreground">Seen greatness, horsepower, domain fit, sacrifice</p>
           </div>
         </div>
@@ -163,12 +192,25 @@ export function FounderScorePanel({ isOpen, onClose }: { isOpen: boolean; onClos
           <FounderScorecardView card={scorecard} key={subject?.kind === "sample" ? subject.id : "profile"} />
         ) : (
           <>
-            <div role="tablist" aria-label="Who to score" className="mb-4 inline-flex rounded-lg border border-border p-0.5">
+            <div
+              role="tablist"
+              aria-label="Who to score"
+              className="mb-4 inline-flex rounded-lg border border-border p-0.5"
+              onKeyDown={(e) => {
+                if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return
+                const next = tab === "samples" ? "profile" : "samples"
+                setTab(next)
+                document.getElementById(`founder-tab-${next}`)?.focus()
+              }}
+            >
               {(["samples", "profile"] as const).map((t) => (
                 <button
                   key={t}
+                  id={`founder-tab-${t}`}
                   role="tab"
                   aria-selected={tab === t}
+                  aria-controls={`founder-tabpanel-${t}`}
+                  tabIndex={tab === t ? 0 : -1}
                   onClick={() => setTab(t)}
                   className={cn("rounded-md px-3 py-1.5 text-sm", tab === t ? "bg-primary text-primary-foreground" : "text-muted-foreground hover:text-foreground")}
                 >
@@ -177,7 +219,7 @@ export function FounderScorePanel({ isOpen, onClose }: { isOpen: boolean; onClos
               ))}
             </div>
             {tab === "samples" ? (
-              <div className="space-y-3">
+              <div className="space-y-3" role="tabpanel" id="founder-tabpanel-samples" aria-labelledby="founder-tab-samples">
                 <p className="text-sm text-muted-foreground">Fictional founders, one for each recorded sample idea, to show how the score reads.</p>
                 {!samples && !error && (
                   <p className="flex items-center gap-2 text-sm text-muted-foreground">
@@ -207,7 +249,9 @@ export function FounderScorePanel({ isOpen, onClose }: { isOpen: boolean; onClos
                 </ul>
               </div>
             ) : (
-              <ProfileForm onScored={() => undefined} />
+              <div role="tabpanel" id="founder-tabpanel-profile" aria-labelledby="founder-tab-profile">
+                <ProfileForm onScored={() => undefined} />
+              </div>
             )}
           </>
         )}
