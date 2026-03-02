@@ -146,15 +146,17 @@ class TextConversation:
         self.session = AgentSession(llm=self.llm)
         attach_memory_handlers(self.session, self.agent, voice=False)
 
-        @self.session.on("conversation_item_added")
         def _capture(event):
             if getattr(event.item, "role", None) == "assistant":
                 self._greeting.put_nowait(event.item.text_content or "")
 
+        # Only the greeting is read from this queue; later turns come from session.run's events.
+        self.session.on("conversation_item_added", _capture)
         await self.session.start(self.agent)
         handle = self.session.generate_reply(instructions=greeting_instructions(self.idea, self.mode))
         await handle
         text = await asyncio.wait_for(self._greeting.get(), timeout=30)
+        self.session.off("conversation_item_added", _capture)
         return {"type": "agent_message", "text": text, "citations": [], "tools": [], "memories": []}
 
     async def send(self, text: str) -> dict:
