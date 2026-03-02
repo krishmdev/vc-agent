@@ -18,6 +18,8 @@ import { TextAgentChat } from "@/components/text-agent-chat";
 
 interface FloatingMentorButtonProps {
     className?: string;
+    // Hide the idle button while another panel or modal covers the page.
+    hidden?: boolean;
 }
 
 function ActiveCallUI({ onEnd }: { onEnd: () => void }) {
@@ -59,7 +61,7 @@ function ActiveCallUI({ onEnd }: { onEnd: () => void }) {
     );
 }
 
-export function FloatingMentorButton({ className }: FloatingMentorButtonProps) {
+export function FloatingMentorButton({ className, hidden }: FloatingMentorButtonProps) {
     const { idea } = useAppStore();
     const [isOpen, setIsOpen] = useState(false);
     const [isConnecting, setIsConnecting] = useState(false);
@@ -203,6 +205,7 @@ export function FloatingMentorButton({ className }: FloatingMentorButtonProps) {
     }
 
     // Idle state - floating button
+    if (hidden) return null;
     return (
         <button
             onClick={handleConnect}

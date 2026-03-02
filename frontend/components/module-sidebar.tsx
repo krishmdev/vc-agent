@@ -34,7 +34,8 @@ export function ModuleSidebar({ onModuleClick }: ModuleSidebarProps) {
       </div>
 
       {/* Module Navigation */}
-      <nav className="flex-1 overflow-y-auto p-4">
+      {/* Bottom padding clears the floating mentor button that sits over this column. */}
+      <nav className="flex-1 overflow-y-auto p-4 pb-24">
         <div className="space-y-2">
           {moduleOrder.map((moduleId, index) => {
             const mod = modules[moduleId]

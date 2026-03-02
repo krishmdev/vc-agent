@@ -48,6 +48,7 @@ export default function DashboardPage() {
     calculateGlobalProgress,
     autofillFromMemories,
     isAutofilling,
+    resourceSidebarOpen,
   } = useAppStore()
 
 
@@ -438,7 +439,7 @@ export default function DashboardPage() {
                   Welcome to Your Product Dashboard
                 </h2>
                 <p className="text-muted-foreground">
-                  Select a mod from the left sidebar to begin structuring your startup
+                  Select a module from the left sidebar to begin structuring your startup
                   validation journey. Complete each section to build an investor-grade
                   narrative.
                 </p>
@@ -455,7 +456,9 @@ export default function DashboardPage() {
       </div>
 
       {/* Floating Mentor Call Button */}
-      <FloatingMentorButton />
+      <FloatingMentorButton
+        hidden={isResearchOpen || isFounderScoreOpen || isFounderModalOpen || isResultsModalOpen || isReportModalOpen || resourceSidebarOpen}
+      />
 
       {/* Resource Drawer */}
       <ResourceDrawer />
