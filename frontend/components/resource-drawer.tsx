@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from "react"
 import { useAppStore } from "@/lib/store"
 import { sequoiaResources } from "@/lib/dashboard-data"
 import { cn } from "@/lib/utils"
+import { OfflineChip } from "@/components/offline-chip"
 import {
   X,
   BookOpen,
@@ -255,7 +256,7 @@ export function ResourceDrawer() {
               <BookOpen className="w-4 h-4 text-primary" />
             </div>
             <div>
-              <h2 className="font-semibold text-sm">Sequoia Knowledge Base</h2>
+              <h2 className="flex items-center gap-2 font-semibold text-sm">Sequoia Knowledge Base <OfflineChip /></h2>
               {currentQuestion && (
                 <p className="text-xs text-muted-foreground truncate max-w-[300px]">
                   {currentQuestion.label}

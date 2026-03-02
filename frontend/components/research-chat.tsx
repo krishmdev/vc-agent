@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { MarkdownReport } from "@/components/markdown-report"
 import { cn } from "@/lib/utils"
+import { OfflineChip } from "@/components/offline-chip"
 
 interface Message {
   role: "user" | "assistant"
@@ -240,7 +241,7 @@ export function ResearchChat({ isOpen, onClose, initialContext }: ResearchChatPr
             <Sparkles className="h-4 w-4 text-primary" />
           </div>
           <div>
-            <h3 className="text-sm font-semibold">Problem Space Specialist</h3>
+            <h3 className="flex items-center gap-2 text-sm font-semibold">Problem Space Specialist <OfflineChip /></h3>
             <p className="text-xs text-muted-foreground">Deep Research Agent</p>
           </div>
         </div>
