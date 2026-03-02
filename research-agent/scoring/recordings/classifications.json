@@ -1,0 +1,240 @@
+{
+  "schema": 1,
+  "header": {
+    "model": "gemini-3-flash-preview",
+    "temperature": 0.1,
+    "prompt_sha256": "1a46bd161776176698aac5e9bb41b6754a648d4f5d7b3b5eeab1fa5b0a778d3f",
+    "taxonomy_sha256": "01af6fc1a6b302f9dd69a24911d248e9221bb75e6c45c857ef878bae34d88e94"
+  },
+  "recordings": {
+    "5d0e6b54ff5c4777882d5b0c9c2246cdc04ff48ae65d1ef32bad20d49834dd96": {
+      "fixture": "career-switch-founder",
+      "kind": "founder",
+      "model": "gemini-3-flash-preview",
+      "recorded_at": "2026-03-02T04:45:29+00:00",
+      "tags": {
+        "primary_domain": "fintech",
+        "primary_subdomain": "fraud",
+        "secondary_subdomains": [
+          {
+            "domain": "fintech",
+            "subdomain": "payments"
+          }
+        ],
+        "keywords": [
+          "fraud-detection",
+          "payment-systems",
+          "engineering-leadership",
+          "distributed-systems",
+          "computer-science"
+        ],
+        "reason": "stripe-fraud-leadership",
+        "classification_confidence": "high"
+      }
+    },
+    "9f3263e3a07e6220abbe616f445d9c62f3d0373303cd4b5cce5020d9b5735ba5": {
+      "fixture": "career-switch-founder",
+      "kind": "company",
+      "model": "gemini-3-flash-preview",
+      "recorded_at": "2026-03-02T04:45:29+00:00",
+      "tags": {
+        "primary_domain": "climate-energy",
+        "primary_subdomain": "agtech",
+        "secondary_subdomains": [
+          {
+            "domain": "hardware",
+            "subdomain": "iot"
+          },
+          {
+            "domain": "hardware",
+            "subdomain": "embedded"
+          }
+        ],
+        "keywords": [
+          "soil-sensors",
+          "precision-agriculture",
+          "irrigation-management",
+          "organic-farming",
+          "smart-fertilization",
+          "iot-sensors"
+        ],
+        "reason": "agtech-iot",
+        "classification_confidence": "high"
+      }
+    },
+    "ddf49fc8fc676f84e6a060ce1640a8188e391a4cf51798b0c72de11e4e9c180b": {
+      "fixture": "hardware-reviews-founder",
+      "kind": "founder",
+      "model": "gemini-3-flash-preview",
+      "recorded_at": "2026-03-02T04:45:29+00:00",
+      "tags": {
+        "primary_domain": "hardware",
+        "primary_subdomain": "electronics",
+        "secondary_subdomains": [
+          {
+            "domain": "space-aerospace",
+            "subdomain": "defense-tech"
+          },
+          {
+            "domain": "space-aerospace",
+            "subdomain": "launch"
+          },
+          {
+            "domain": "hardware",
+            "subdomain": "embedded"
+          }
+        ],
+        "keywords": [
+          "hardware-engineering",
+          "electrical-engineering",
+          "defense-technology",
+          "aerospace-systems",
+          "pcb-design",
+          "embedded-systems"
+        ],
+        "reason": "hardware leadership",
+        "classification_confidence": "high"
+      }
+    },
+    "be2d43e6bfe7d55dfdfeb757553f88de1d66639bf5572cb4318df1a70466ea32": {
+      "fixture": "hardware-reviews-founder",
+      "kind": "company",
+      "model": "gemini-3-flash-preview",
+      "recorded_at": "2026-03-02T04:45:29+00:00",
+      "tags": {
+        "primary_domain": "consumer",
+        "primary_subdomain": "marketplace",
+        "secondary_subdomains": [
+          {
+            "domain": "hardware",
+            "subdomain": "electronics"
+          },
+          {
+            "domain": "hardware",
+            "subdomain": "embedded"
+          }
+        ],
+        "keywords": [
+          "hardware-engineering",
+          "design-review",
+          "pcb-layout",
+          "expert-network",
+          "circuit-design",
+          "firmware-consulting"
+        ],
+        "reason": "expert marketplace",
+        "classification_confidence": "high"
+      }
+    },
+    "6751390d7f24056056094092c72b5f399cf73cacca1ae79afd99a126992a3c5c": {
+      "fixture": "roommate-bills-founder",
+      "kind": "founder",
+      "model": "gemini-3-flash-preview",
+      "recorded_at": "2026-03-02T04:45:29+00:00",
+      "tags": {
+        "primary_domain": "fintech",
+        "primary_subdomain": "banking",
+        "secondary_subdomains": [
+          {
+            "domain": "enterprise-saas",
+            "subdomain": "finance-ops"
+          }
+        ],
+        "keywords": [
+          "financial-technology",
+          "api-infrastructure",
+          "economics",
+          "software-engineering",
+          "banking-data"
+        ],
+        "reason": "plaid experience",
+        "classification_confidence": "medium"
+      }
+    },
+    "d8d2cf8cfefb9748eb7a1bd0a2cd9c07bf05e2c606c01e6b9757d29f67b7123d": {
+      "fixture": "roommate-bills-founder",
+      "kind": "company",
+      "model": "gemini-3-flash-preview",
+      "recorded_at": "2026-03-02T04:45:29+00:00",
+      "tags": {
+        "primary_domain": "fintech",
+        "primary_subdomain": "payments",
+        "secondary_subdomains": [
+          {
+            "domain": "consumer",
+            "subdomain": "marketplace"
+          }
+        ],
+        "keywords": [
+          "bill-splitting",
+          "shared-expenses",
+          "automated-settlement",
+          "peer-to-peer-payments",
+          "expense-tracking",
+          "student-finance"
+        ],
+        "reason": "consumer payments",
+        "classification_confidence": "high"
+      }
+    },
+    "08f3c168f81982734fecc3ed14af50f9d98a7d62448a8e239dd1d5185e809a74": {
+      "fixture": "vet-clinic-founder",
+      "kind": "founder",
+      "model": "gemini-3-flash-preview",
+      "recorded_at": "2026-03-02T04:45:29+00:00",
+      "tags": {
+        "primary_domain": "fintech",
+        "primary_subdomain": "payments",
+        "secondary_subdomains": [
+          {
+            "domain": "healthcare",
+            "subdomain": "digital-health"
+          },
+          {
+            "domain": "enterprise-saas",
+            "subdomain": "finance-ops"
+          }
+        ],
+        "keywords": [
+          "point-of-sale",
+          "payment-processing",
+          "vertical-saas",
+          "veterinary-software",
+          "software-engineering"
+        ],
+        "reason": "fintech experience",
+        "classification_confidence": "high"
+      }
+    },
+    "e713d56746516bf4c492f0ce6a3c03665cc112ab864d2b52e4b8a3d78f655dcd": {
+      "fixture": "vet-clinic-founder",
+      "kind": "company",
+      "model": "gemini-3-flash-preview",
+      "recorded_at": "2026-03-02T04:45:29+00:00",
+      "tags": {
+        "primary_domain": "healthcare",
+        "primary_subdomain": "digital-health",
+        "secondary_subdomains": [
+          {
+            "domain": "fintech",
+            "subdomain": "insurance"
+          },
+          {
+            "domain": "enterprise-saas",
+            "subdomain": "logistics-supply-chain"
+          }
+        ],
+        "keywords": [
+          "veterinary-software",
+          "practice-management",
+          "appointment-automation",
+          "inventory-management",
+          "pet-insurance-claims",
+          "health-tech"
+        ],
+        "reason": "veterinary-practice-management",
+        "classification_confidence": "high"
+      }
+    }
+  }
+}

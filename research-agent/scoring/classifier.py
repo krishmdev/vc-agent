@@ -18,6 +18,7 @@ fallback_error.
 
 from __future__ import annotations
 
+import asyncio
 import hashlib
 import json
 import re
@@ -134,6 +135,28 @@ def low_confidence_company(tags: dict, evidence_level: str) -> dict:
 
 def input_key(kind: str, input_text: str) -> str:
     return hashlib.sha256(f"{kind}:{input_text}".encode()).hexdigest()
+
+
+# sierra-demo's classification call: its flash model at temperature 0.1, thinking off on flash
+# models (pro models require thinking), 512 output tokens.
+CLASSIFIER_MODEL = "gemini-3-flash-preview"
+CLASSIFIER_TEMPERATURE = 0.1
+CLASSIFIER_TIMEOUT_S = 20.0
+
+
+def recording_header(model: str = CLASSIFIER_MODEL) -> dict:
+    """What a recording depends on; a file recorded under different values is stale."""
+    prompts = gemini_prompt("founder", "{input}") + gemini_prompt("company", "{input}")
+    return {
+        "model": model,
+        "temperature": CLASSIFIER_TEMPERATURE,
+        "prompt_sha256": hashlib.sha256(prompts.encode()).hexdigest(),
+        "taxonomy_sha256": hashlib.sha256((DATA_DIR / "domain_taxonomy.json").read_bytes()).hexdigest(),
+    }
+
+
+class StaleRecordings(RuntimeError):
+    pass
 
 
 class DomainClassifier(Protocol):
@@ -359,36 +382,46 @@ Output strict JSON only:
 }}"""
 
 
+class OutOfTaxonomy(ValueError):
+    pass
+
+
 class GeminiDomainClassifier:
     name = "gemini"
 
-    def __init__(self, api_key: str, model: str = "gemini-2.5-flash", client: Any = None) -> None:
+    def __init__(self, api_key: str, model: str = CLASSIFIER_MODEL, client: Any = None, timeout_s: float = CLASSIFIER_TIMEOUT_S) -> None:
         if client is None:
             from google import genai
 
             client = genai.Client(api_key=api_key)
         self._client = client
         self.model = model
+        self.timeout_s = timeout_s
         self.fallback = KeywordDomainClassifier()
 
     async def classify_text(self, kind: str, input_text: str) -> dict:
         from google.genai import types
 
-        response = await self._client.aio.models.generate_content(
-            model=self.model,
-            contents=gemini_prompt(kind, input_text),
-            # Thinking tokens count against max_output_tokens on 2.5 models; with sierra-demo's 512
-            # cap the JSON came back truncated, so thinking is off for this small labeling call.
-            config=types.GenerateContentConfig(
-                response_mime_type="application/json",
-                max_output_tokens=512,
-                thinking_config=types.ThinkingConfig(thinking_budget=0),
+        config: dict[str, Any] = {
+            "response_mime_type": "application/json",
+            "max_output_tokens": 512,
+            "temperature": CLASSIFIER_TEMPERATURE,
+        }
+        if "flash" in self.model.lower():
+            config["thinking_config"] = types.ThinkingConfig(thinking_budget=0)
+        response = await asyncio.wait_for(
+            self._client.aio.models.generate_content(
+                model=self.model, contents=gemini_prompt(kind, input_text), config=types.GenerateContentConfig(**config)
             ),
+            timeout=self.timeout_s,
         )
         parsed = json.loads(response.text or "")
         if not isinstance(parsed, dict):
             raise ValueError("classification is not a JSON object")
-        return {**validate(parsed), "source": "gemini", "model": self.model}
+        tags = validate(parsed)
+        if tags["primary_domain"] == "other" and str(parsed.get("primary_domain") or "other") != "other":
+            raise OutOfTaxonomy(f"out_of_taxonomy {parsed.get('primary_domain')}/{parsed.get('primary_subdomain')}")
+        return {**tags, "source": "gemini", "model": self.model}
 
     async def classify_founder(self, profile: dict, matched_categories: list[dict] | None, entity_name: str | None) -> dict:
         try:
@@ -419,7 +452,15 @@ class RecordedDomainClassifier:
 
     @classmethod
     def from_file(cls, path: Path) -> "RecordedDomainClassifier":
-        data = json.loads(path.read_text()) if path.exists() else {"recordings": {}}
+        """Refuses a missing file or one recorded under a different model, prompt or taxonomy."""
+        if not path.exists():
+            raise StaleRecordings(f"{path} is missing; run scripts/record_classifications.py (live, network)")
+        data = json.loads(path.read_text())
+        expected = recording_header()
+        header = data.get("header") or {}
+        stale = {k: (header.get(k), v) for k, v in expected.items() if header.get(k) != v}
+        if stale:
+            raise StaleRecordings(f"{path} was recorded under different settings: {stale}")
         return cls(data.get("recordings", {}))
 
     def _replay(self, kind: str, input_text: str) -> dict | None:

@@ -6,7 +6,7 @@
   "current_title": "Founder & CEO",
   "experience": [
     {
-      "company": "Pawsight",
+      "company": "Pawsight (fictional)",
       "title": "Founder & CEO",
       "start_date": "2025-03",
       "end_date": null
@@ -32,7 +32,7 @@
     }
   ],
   "company": {
-    "name": "Pawsight",
+    "name": "Pawsight (fictional)",
     "description": "Practice-management software for independent veterinary clinics that automates appointment reminders, inventory reordering, and pet-insurance claims.",
     "industry": "Health software",
     "raise_amount": 650000,
