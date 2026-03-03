@@ -2,19 +2,22 @@
 
 This log lists what was checked and what remains unverified. Live runs took place on 2026-03-01
 (the founder-score tag recording on 2026-03-02) on an M1 Pro MacBook (macOS 26); the offline
-counts below are from the 2026-03-02 runs at commit 07765cf. Result files are in [`verification/`](verification/), with a
+counts below are from the 2026-03-02 runs at commit 023820f (later commits touch only docs and
+`scripts/sample_scores.py`). Result files are in [`verification/`](verification/), with a
 host manifest in [`verification/manifest-2026-03-01.json`](verification/manifest-2026-03-01.json).
 
 ## Offline mode (no keys, no network)
 
 | Check | How | Result |
 |---|---|---|
-| Python tests | `make test`: pytest with `pytest-socket` (`--disable-socket`, localhost only), `VC_AGENT_MODE=offline`, keys removed | voice agent 17 passed, research agent 116 passed |
+| Python tests | `make test`: pytest with `pytest-socket` (`--disable-socket`, localhost only), `VC_AGENT_MODE=offline`, keys removed | voice agent 22 passed, research agent 135 passed |
 | Frontend | `npx eslint .`, `npx tsc --noEmit`, `next build` (live and offline bundles) | 0 lint errors (existing code has warnings), both builds pass |
 | Offline e2e, macOS | `offline-run make e2e-offline`: the whole process tree (Next.js, FastAPI research agent, voice-agent server, Playwright and Chromium) under a `sandbox-exec` profile that denies outbound network except localhost, with provider keys unset and HF offline | 6 passed (egress x4, journey, founder score) |
 | Offline e2e, Linux | fresh `git clone`, then `docker run … make deps models build-offline` (network allowed), then `docker run --network none … make test lint e2e-offline`, i.e. what the CI job does | tests 17 + 116, lint clean, e2e 6 passed |
 | Egress canaries | `e2e/egress.spec.ts` asks each backend process type (Next.js server runtime, research agent, voice-agent server) to open TCP connections to 1.1.1.1, api.openai.com, generativelanguage.googleapis.com and huggingface.co from inside that process | under the sandbox every connect failed with EPERM; in the `--network none` container with ENETUNREACH / DNS failure |
 | Canary companion | `make egress-companion` (same spec, unsandboxed, `EXPECT_EGRESS=open`) | all 12 probes connected, so the offline result isn't vacuous |
+| Offline index | `make index-offline` after pruning the crawl (see DATA_NOTICE): 116 transcripts and 499 sequoiacap.com pages | 9,025 chunks embedded with pinned MiniLM in 3 min 1 s on all cores; the new generation became active through the pointer swap |
+| Founder samples | `scripts/sample_scores.py` rerun against the current code | output identical to `verification/founder-samples-offline.json` |
 | Fixture prompts | test recomputes the app's first-turn prompt for each sample idea and compares its sha256 with the recording | all 3 match |
 
 The e2e journey submits a sample idea, then chats with the mentor. The answer cites the Sequoia
@@ -41,7 +44,8 @@ output). Only the live run below covers that path.
 | Founder-score domain tags, recorded | `research-agent/scripts/record_classifications.py`, `gemini-3-flash-preview` at temperature 0.1, thinking off (sierra-demo's classification settings) | 8 classifications (founder and company for the four fictional sample founders), recorded 2026-03-02 after 503 retries; the file header pins model, temperature, prompt and taxonomy hashes | `research-agent/scoring/recordings/classifications.json` |
 | LiveKit voice session, headless | LiveKit Cloud + `gemini-2.5-flash-native-audio-preview-12-2025` | `scripts/voice_smoke.py` joined a fresh room as a founder, played a synthesized question, and listened. Agent joined, heard the question (transcript: "How did the find its first customers…"), called `search_knowledge_base` ("Airbnb first customers acquisition strategy"), wrote to Mem0, and answered aloud: 27.6 s of agent audio, answer grounded in the Airbnb/Brian Chesky transcript. The tool calls and Mem0 writes are in the worker log, not the JSON | `verification/livekit-voice-2026-03-01.json`, `verification/livekit-voice-2026-03-01.worker.txt` |
 
-The voice run used `KB_EMBEDDER=local` (the MiniLM collection) and a throwaway Mem0 user id,
+The voice run used `KB_EMBEDDER=local` (the MiniLM collection, then the 11,741-chunk index built
+before the crawl was pruned of off-site pages) and a throwaway Mem0 user id,
 which was deleted afterwards. A one-off filter reduced that run's JSON to final transcript
 segments at the time, as noted in the file. `voice_smoke.py` now keeps only final segments itself.
 The worker log contains only tool, memory, and transcript lines from the smoke window. The
@@ -74,6 +78,8 @@ port now does too.
 - **Live research progress.** Polling the interactions API only returns thought and search steps
   once a run completes, so live mode shows elapsed time until the report arrives, and the
   recorded notes all carry the completion timestamp. The offline replay spreads them evenly.
+- **Cancelling a live deep-research run.** On timeout or job cancellation the provider calls
+  `interactions.cancel`. That is tested against a fake client only; no live run was cancelled.
 - **GitHub Actions.** The workflow's steps were run locally (same container, same commands), but
   the workflow itself hasn't run on GitHub yet.
 - Customer reach-out (Reddit, Apollo) and pitch-deck generation (Manus) weren't exercised; no
