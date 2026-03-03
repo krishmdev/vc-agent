@@ -2,7 +2,7 @@
 
 This log lists what was checked and what remains unverified. Live runs took place on 2026-03-01
 (the founder-score tag recording on 2026-03-02) on an M1 Pro MacBook (macOS 26); the offline
-counts below are from the 2026-03-02 runs at commit 023820f (later commits touch only docs and
+counts below are from the 2026-03-02 runs at commit d707b0d (later commits touch only docs and
 `scripts/sample_scores.py`). Result files are in [`verification/`](verification/), with a
 host manifest in [`verification/manifest-2026-03-01.json`](verification/manifest-2026-03-01.json).
 
@@ -13,7 +13,7 @@ host manifest in [`verification/manifest-2026-03-01.json`](verification/manifest
 | Python tests | `make test`: pytest with `pytest-socket` (`--disable-socket`, localhost only), `VC_AGENT_MODE=offline`, keys removed | voice agent 22 passed, research agent 135 passed |
 | Frontend | `npx eslint .`, `npx tsc --noEmit`, `next build` (live and offline bundles) | 0 lint errors (existing code has warnings), both builds pass |
 | Offline e2e, macOS | `offline-run make e2e-offline`: the whole process tree (Next.js, FastAPI research agent, voice-agent server, Playwright and Chromium) under a `sandbox-exec` profile that denies outbound network except localhost, with provider keys unset and HF offline | 6 passed (egress x4, journey, founder score) |
-| Offline e2e, Linux | fresh `git clone` of 023820f, then `docker run … make deps models build-offline index-offline` (network allowed), then `docker run --network none … make test lint e2e-offline`, i.e. what the CI job does | index 9,025 chunks, tests 22 + 135, lint clean, e2e 6 passed |
+| Offline e2e, Linux | fresh `git clone` of d707b0d, then `docker run … make deps models build-offline index-offline` (network allowed), then `docker run --network none … make test lint e2e-offline`, i.e. what the CI job does | index 9,025 chunks, tests 22 + 135, lint clean, e2e 6 passed |
 | Egress canaries | `e2e/egress.spec.ts` asks each backend process type (Next.js server runtime, research agent, voice-agent server) to open TCP connections to 1.1.1.1, api.openai.com, generativelanguage.googleapis.com and huggingface.co from inside that process | under the sandbox every connect failed with EPERM; in the `--network none` container with ENETUNREACH / DNS failure |
 | Canary companion | `make egress-companion` (same spec, unsandboxed, `EXPECT_EGRESS=open`) | all 12 probes connected, so the offline result isn't vacuous |
 | Offline index | `make index-offline` after pruning the crawl (see DATA_NOTICE): 116 transcripts and 499 sequoiacap.com pages | 9,025 chunks embedded with pinned MiniLM in 3 min 1 s on all cores; the new generation became active through the pointer swap |
