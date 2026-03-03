@@ -59,8 +59,12 @@ async def store_in_memory(text: str, role: str = "user") -> None:
     if not store:
         return
     try:
-        await store.add([{"role": role, "content": text}], user_id=MEM0_USER_ID)
-        logger.info(f"[MEM0] Stored {role} message")
+        result = await store.add([{"role": role, "content": text}], user_id=MEM0_USER_ID)
+        # Say what actually happened: the local store keeps founder statements only, and Mem0
+        # extracts its own facts (or none) from a message.
+        added = result.get("results") if isinstance(result, dict) else None
+        count = f"{len(added)} new memories" if isinstance(added, list) else "sent"
+        logger.info(f"[MEMORY] {type(store).__name__}: {role} message, {count}")
     except Exception as e:
         logger.error(f"[MEM0] Storage failed: {e}")
 
