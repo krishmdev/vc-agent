@@ -176,8 +176,12 @@ profile would notice first.
 
 ## Live mode and offline mode
 
-`VC_AGENT_MODE` picks the providers at startup. Offline mode never reads provider keys, doesn't
-load `.env` files in the Python services, and makes no network calls.
+`VC_AGENT_MODE` picks the providers at startup. Offline mode doesn't use provider keys and
+makes no network calls. The Python services skip their `.env` files, and their key getters
+(`config.key`, `settings.gemini_api_key`) return nothing even if a key is in the environment.
+The Next routes check `isOffline()` before any provider call or token mint. The Reddit, Apollo
+and Manus code reads its keys from the environment directly, but that code is only reached in
+live mode. The `/_diag` canary reports whether a Gemini key is visible, which is its job.
 
 | | Live (`VC_AGENT_MODE=live`, default) | Offline (`VC_AGENT_MODE=offline`) |
 |---|---|---|
