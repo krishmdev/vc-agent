@@ -2,9 +2,9 @@
 
 Launchpad won first place at Brown Hacks 2026. It helps prefounders work through a startup idea.
 
-Launchpad uses Sequoia Capital's evaluation methodology to take an idea through a mentor
-conversation, a 5-tier validation dashboard, market research, customer discovery, a simulated VC
-pitch, and a printable investment memo. The aim is an investor-ready story.
+Launchpad uses Sequoia Capital's evaluation methodology to guide a founder through a mentor
+conversation, a 5-tier validation dashboard, market research, customer discovery, and a simulated
+VC pitch. It then produces a printable investment memo.
 
 The mentor and VC voice agents use LiveKit and Gemini native audio. They search a ChromaDB index
 of Sequoia podcast transcripts and articles and use Mem0 for long-term memory. A FastAPI service
