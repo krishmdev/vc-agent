@@ -6,6 +6,7 @@ signal scores the README's founder-score section refers to.
     VC_AGENT_MODE=offline uv run python scripts/sample_scores.py > ../docs/verification/founder-samples-offline.json
 """
 
+import contextlib
 import json
 import os
 import sys
@@ -18,7 +19,9 @@ from fastapi.testclient import TestClient  # noqa: E402
 
 import main  # noqa: E402
 
-with TestClient(main.app) as client:
+# 127.0.0.1 because the app only answers ALLOWED_HOSTS; the startup banner goes to stderr so
+# stdout stays JSON.
+with contextlib.redirect_stdout(sys.stderr), TestClient(main.app, base_url="http://127.0.0.1") as client:
     rows = []
     for sample in client.get("/founder/samples").json():
         card = client.get(f"/founder/samples/{sample['id']}/score").json()
