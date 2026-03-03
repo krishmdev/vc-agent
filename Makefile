@@ -29,8 +29,12 @@ index-offline: ## MiniLM knowledge-base collection (no network); stop the server
 index-live: ## OpenAI text-embedding-3-small collection (needs OPENAI_API_KEY, about $0.11)
 	cd $(VOICE) && .venv/bin/python ingest.py --embedder openai
 
-build-offline:
-	cd $(FRONTEND) && NEXT_PUBLIC_VC_AGENT_MODE=offline NEXT_DIST_DIR=.next-offline npx next build
+build-offline: ## needs the network once: next/font downloads the Google fonts at build time
+	@# That download fails now and then (fonts.gstatic.com timeouts), so try up to three times.
+	cd $(FRONTEND) && for attempt in 1 2 3; do \
+	  NEXT_PUBLIC_VC_AGENT_MODE=offline NEXT_DIST_DIR=.next-offline npx next build && exit 0; \
+	  echo "next build failed (attempt $$attempt of 3)"; sleep 5; \
+	done; exit 1
 
 demo: ## offline stack on localhost:3000
 	./scripts/run-offline.sh
