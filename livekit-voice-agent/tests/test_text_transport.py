@@ -116,6 +116,7 @@ def test_quoted_knowledge_base_text_is_plain():
     from scripted_llm import _plain
 
     assert _plain("**Go** to [the hosts](https://example.com) in `person`.") == "Go to the hosts in person."
+    assert _plain("It grew.\n#### Airbnb Trends: #Ransackgate\n**Brian Chesky:** Trust is hard.") == "It grew.\n\nBrian Chesky: Trust is hard."
 
 
 def test_foreign_host_header_is_refused(client):

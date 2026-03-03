@@ -40,11 +40,17 @@ def _body(text: str) -> str:
 
 
 _MARKDOWN = re.compile(r"!?\[([^\]]*)\]\([^)]*\)|[*_`#>]+|\[\d+\]")
+_HEADING = re.compile(r"^\s*#{1,6}\s.*$", re.M)
+
+
+def _prose(text: str) -> str:
+    """Passage body as plain prose: heading lines dropped (they have no end punctuation and would
+    run into the next sentence), link text kept, markdown marks and URLs removed."""
+    return _MARKDOWN.sub(lambda m: m.group(1) or "", _HEADING.sub("", _body(text)))
 
 
 def _snippet(text: str, limit: int = 220) -> str:
-    # Plain text for the source card: link text kept, markdown marks and URLs dropped.
-    body = " ".join(_MARKDOWN.sub(lambda m: m.group(1) or "", _body(text)).split())
+    body = " ".join(_prose(text).split())
     return body if len(body) <= limit else body[: limit - 1].rsplit(" ", 1)[0] + "…"
 
 
@@ -126,7 +132,7 @@ class ExtractiveGuideWriter:
                 "**Core Principle**\n\nThe offline knowledge base returned nothing for this "
                 "question. Try rephrasing it with a company or founder name."
             )
-        picks = [(i, best_sentences(question, _body(p.text), k=2)) for i, p in enumerate(passages, 1)]
+        picks = [(i, best_sentences(question, _prose(p.text), k=2)) for i, p in enumerate(passages, 1)]
         lead_n, lead = next(((i, s) for i, s in picks if s), (1, []))
         lines = ["**Core Principle**", ""]
         lead_source = _short(passages[lead_n - 1].source)
@@ -155,7 +161,7 @@ class ExtractiveGuideWriter:
     async def answer(self, message, history, article, passages) -> str:
         found = []
         for i, p in enumerate(passages, 1):
-            for s in best_sentences(message, _body(p.text), k=1):
+            for s in best_sentences(message, _prose(p.text), k=1):
                 found.append(f"{s} [{i}]")
         if not found:
             return "I couldn't find anything in the offline knowledge base for that question."

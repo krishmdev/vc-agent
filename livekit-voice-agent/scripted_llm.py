@@ -44,11 +44,14 @@ def parse_kb_output(output: str) -> list[dict[str, Any]]:
 
 
 _MARKDOWN = re.compile(r"!?\[([^\]]*)\]\([^)]*\)|[*_`#>]+")
+_HEADING = re.compile(r"^\s*#{1,6}\s.*$", re.M)
 
 
 def _plain(text: str) -> str:
-    """Knowledge-base text without markdown marks or link URLs, so quotes read as plain speech."""
-    return _MARKDOWN.sub(lambda m: m.group(1) or "", text)
+    """Knowledge-base text without headings, markdown marks or link URLs, so a quote reads as
+    speech. Heading lines are dropped: they have no end punctuation and would run into the next
+    sentence."""
+    return _MARKDOWN.sub(lambda m: m.group(1) or "", _HEADING.sub("", text))
 
 
 def parse_memory_output(output: str) -> list[str]:
